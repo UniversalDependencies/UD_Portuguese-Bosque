@@ -20,7 +20,9 @@ http://ufal.mff.cuni.cz/interset ... Interset was used to convert POS tags and f
   year      = {2002},
   title     = {{{``}Floresta sint{\'a}(c)tica{''}:} a treebank for {P}ortuguese},
   booktitle = {Proceedings of the 3rd International Conference on Language Resources and Evaluation (LREC)},
-  pages     = {1968--1703},
+  address   = {Las Palmas, Spain},
+  pages     = {1698--1703},
+  url       = {http://www.lrec-conf.org/proceedings/lrec2002/sumarios/1.htm}
 }
 
 === Machine-readable metadata =================================================
