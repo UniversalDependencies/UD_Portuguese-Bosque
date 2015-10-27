@@ -31,5 +31,5 @@ Data source: automatic
 Data available since: UD v1.2
 License: CC BY-NC-SA 3.0
 Genre: news
-Contributors: Zeman, Daniel; Popel, Martin
+Contributors: Zeman, Daniel; Popel, Martin; Mareček, David
 ===============================================================================
