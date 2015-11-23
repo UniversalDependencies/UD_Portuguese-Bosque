@@ -25,6 +25,18 @@ http://ufal.mff.cuni.cz/interset ... Interset was used to convert POS tags and f
   url       = {http://www.lrec-conf.org/proceedings/lrec2002/sumarios/1.htm}
 }
 
+
+
+Changelog
+
+2016-11-15 v1.2
+  * "US$" and similar words are now SYM, not NOUN.
+  *  Recognized some determiners that were mistakenly tagged PRON.
+2015-11-15 v1.2
+  * Copied from HamleDT 3.0 and slightly improved.
+
+
+
 === Machine-readable metadata =================================================
 Documentation status: stub
 Data source: automatic
