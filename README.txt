@@ -29,7 +29,7 @@ http://ufal.mff.cuni.cz/interset ... Interset was used to convert POS tags and f
 
 Changelog
 
-2016-11-15 v1.2
+2016-05-15 v1.3
   * "US$" and similar words are now SYM, not NOUN.
   *  Recognized some determiners that were mistakenly tagged PRON.
 2015-11-15 v1.2
