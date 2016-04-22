@@ -30,8 +30,10 @@ http://ufal.mff.cuni.cz/interset ... Interset was used to convert POS tags and f
 Changelog
 
 2016-05-15 v1.3
+  * Split underscore-glued multi-word tokens.
   * "US$" and similar words are now SYM, not NOUN.
   *  Recognized some determiners that were mistakenly tagged PRON.
+  * Copulas with clausal complements are now heads.
 2015-11-15 v1.2
   * Copied from HamleDT 3.0 and slightly improved.
 
