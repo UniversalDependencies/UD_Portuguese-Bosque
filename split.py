@@ -1,4 +1,4 @@
-# removed sentences that are invalid and split them into DEVEL and
+# remove sentences that are invalid and split them into DEVEL and
 # TRAIN sets, according the percentages train_frac, devel_frac.
 
 import random
