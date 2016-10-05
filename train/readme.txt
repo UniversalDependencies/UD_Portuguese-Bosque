@@ -12,6 +12,9 @@ To train treeler:
 The following is an email exchange with Lluis Padro with some
 information about what to expect while training treeler:
 
+Note: Label Attachment Score (LAS): % of tokens for which a system has
+predicted the correct HEAD and DEPREL
+
 - - -
 
 The output will be the folder $LANG/maps with all the maps, and a sent
