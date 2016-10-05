@@ -27,7 +27,7 @@ How to reproduce:
 7. If you are unable to execute these steps, the directory
    pregenerated/ contains a version of those files.
 
-7. To train treeler, see train/readme.txt
+8. To train treeler, see train/readme.txt
 
 This script was developed under Ubuntu 14.04, the following are the
 programs and their versions used:
