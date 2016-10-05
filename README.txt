@@ -28,3 +28,12 @@ How to reproduce:
    pregenerated/ contains a version of those files.
 
 7. To train treeler, see train/readme.txt
+
+This script was developed under Ubuntu 14.04, the following are the
+programs and their versions used:
+
+awk: GNU Awk 4.0.1
+python: Python 2.7.6
+perl: perl v5.18.2
+bash: GNU bash, version 4.3.11(1)-release
+grep: grep (GNU grep) 2.16

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 for f in 7.5/*.udep.conll; do
     perl conll_convert_tags_from_uposf.pl $f > 7.5-fl/`basename $f`;
 done
