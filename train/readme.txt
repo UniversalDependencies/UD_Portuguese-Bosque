@@ -87,3 +87,26 @@ Your corpus looks nice, except for a couple of things
 
   Btw, it takes a long time to train... expect it to take a few days
   on an average desktop machine
+
+- - -
+
+[...] at each epoch you get a line like
+
+ARPerc[dep1] : it 1 validation results : sentences 1722  tokens 36107 uas 87.1022  las 85.2882  lacc 94.7296
+
+
+  you need to check for the best "las" (labelled atachment score).
+
+ideally, you shoud redirect the stderr of the trainer to a file, so
+you later can analyze the evolution in epochs
+
+So, launch the training like:
+
+   my-training-script.sh  &> training.txt
+
+
+And then, at any moment, you can do
+
+   cat training.txt | grep validation
+
+to check how many epochs passed and how is LAS evolving.
