@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # set language
 LANG=pt
 FREELINGDIR=~/bin/freeling-4.0/
