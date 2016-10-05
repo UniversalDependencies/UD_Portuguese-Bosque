@@ -1,3 +1,6 @@
+# removed sentences that are invalid and split them into DEVEL and
+# TRAIN sets, according the percentages train_frac, devel_frac.
+
 import random
 import sys
 import math
@@ -20,7 +23,7 @@ train_frac = .9
 devel_frac = .1
 
 if len(sys.argv) != 4:
-    print "Usage:\n\n\tclean.py <original> <devel> <train>\n";
+    print "Usage:\n\n\tsplit.py <original> <devel> <train>\n";
     sys.exit(1)
 
 with open(sys.argv[1], 'r') as f:
