@@ -27,6 +27,12 @@ Label Accuracy (LACC):
 Parsey McParseface reports the following numbers for unlabelled
 attachment score for ENGLISH: news 94.15, web 89.08, questions 94.77.
 
+For Portuguese: 
+
+Language 	#tok 	POS 	fPOS 	Morph 	UAS 	LAS
+Portuguese-BR 	29438 	97.07% 	97.07% 	99.91% 	87.91% 	85.44%
+Portuguese 	6262 	96.81% 	90.67% 	94.22% 	85.12% 	81.28%
+
 - - -
 
 The output will be the folder $LANG/maps with all the maps, and a sent
