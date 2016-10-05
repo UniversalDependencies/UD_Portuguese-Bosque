@@ -25,7 +25,7 @@ Label Accuracy (LACC):
 – % of tokens with correct DEPREL 
 
 Parsey McParseface reports the following numbers for unlabelled
-attachment score: news 94.15, web 89.08, questions 94.77.
+attachment score for ENGLISH: news 94.15, web 89.08, questions 94.77.
 
 - - -
 
