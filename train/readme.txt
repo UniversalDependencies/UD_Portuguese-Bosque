@@ -12,8 +12,26 @@ To train treeler:
 The following is an email exchange with Lluis Padro with some
 information about what to expect while training treeler:
 
-Note: Label Attachment Score (LAS): % of tokens for which a system has
-predicted the correct HEAD and DEPREL
+Note: 
+
+Label Attachment Score (LAS): 
+- % of tokens for which a system has predicted the correct HEAD and
+DEPREL
+
+Unlabeled Attachment Score (UAS):  
+– % of tokens with correct HEAD
+
+Label Accuracy (LACC):  
+– % of tokens with correct DEPREL 
+
+Parsey McParseface reports the following numbers for unlabelled
+attachment score for ENGLISH: news 94.15, web 89.08, questions 94.77.
+
+For Portuguese: 
+
+Language 	#tok 	POS 	fPOS 	Morph 	UAS 	LAS
+Portuguese-BR 	29438 	97.07% 	97.07% 	99.91% 	87.91% 	85.44%
+Portuguese 	6262 	96.81% 	90.67% 	94.22% 	85.12% 	81.28%
 
 - - -
 
