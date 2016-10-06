@@ -37,3 +37,10 @@ python: Python 2.7.6
 perl: perl v5.18.2
 bash: GNU bash, version 4.3.11(1)-release
 grep: grep (GNU grep) 2.16
+
+Reporting issues we follow:
+
+[1] bosque_CP.udep.conll.gz Bick's version of European Portuguese part of Bosque 7.5 UD annotated, available at http://www.linguateca.pt/Floresta/ficheiros/bosque_CP.udep.conll.gz
+[2]bosque_CF.udep.conll.gz ick's version of Brazilian Portuguese part of Bosque 7.5 UD annotated, available at http://www.linguateca.pt/Floresta/ficheiros/bosque_CF.udep.conll.gz
+[3] Dan Zeman's version of Bosque CoNLL (7.3), available at https://github.com/UniversalDependencies/UD_Portuguese
+[4] Linguateca Version of Bosque CoNLL (7.3), http://www.linguateca.pt/floresta/CoNLL-X/
