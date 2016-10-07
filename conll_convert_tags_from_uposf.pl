@@ -24,12 +24,24 @@ use freeling;
 my $FREELINGDIR = "/home/fcbr/bin/freeling-4.0";
 my $DATA = $FREELINGDIR."/share/freeling/";
 my $LANG="pt";
+my $PUNCT = $DATA."common/punct.dat";
 
 my $ts = new freeling::tagset($DATA.$LANG."/tagset.dat");
 
 my $tagset1 = 'pt::freeling';
 
 my $c = new Lingua::Interset::Converter ('to' => $tagset1, 'from' => 'mul::uposf');
+
+my %punct_conversion;
+
+open(my $ph, '<:encoding(UTF-8)', $PUNCT) or die "Could not open '$PUNCT' $!";
+while (my $row = <$ph>)
+{
+    chomp $row;
+    my @punct = split ' ', $row;
+    $punct_conversion{$punct[1]} = $punct[2];
+}
+close($ph);
 
 # Read the CoNLL-U file from STDIN or from files given as arguments.
 while(<>)
@@ -45,9 +57,15 @@ while(<>)
         if (scalar @f eq 8)
         {
             my $tag = "$f[3]\t$f[5]";
-
+            my $lemma = $f[2];
             my $ftag1 = $c->convert($tag);
             # print "< $tag # $ftag1\n";
+
+            if ($ftag1 eq 'Fz')
+            {
+                $ftag1 = $punct_conversion{$lemma}
+                if exists $punct_conversion{$lemma};
+            }
 
             my $msd = $ts->get_msd_string($ftag1);
             my $ftag2 = $ts->msd_to_tag('', $msd);
