@@ -69,6 +69,12 @@ while(<>)
 
             my $msd = $ts->get_msd_string($ftag1);
             my $ftag2 = $ts->msd_to_tag('', $msd);
+
+            if ($ftag2 =~ /^NP/)
+            {
+                $ftag2 = 'NP00000';
+            }
+
             my $short = $ts->get_short_tag($ftag2);
 
             if ($ftag2 eq 'Z0') { $ftag2 = 'Z'; }
