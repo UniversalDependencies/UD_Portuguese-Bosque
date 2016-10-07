@@ -72,6 +72,7 @@ while(<>)
             my $short = $ts->get_short_tag($ftag2);
 
             if ($ftag2 eq 'Z0') { $ftag2 = 'Z'; }
+            if ($short eq 'Z0') { $short = 'Z'; }
             
             $f[3] = $short;
             $f[4] = $ftag2;
