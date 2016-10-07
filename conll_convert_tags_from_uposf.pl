@@ -70,6 +70,8 @@ while(<>)
             my $msd = $ts->get_msd_string($ftag1);
             my $ftag2 = $ts->msd_to_tag('', $msd);
             my $short = $ts->get_short_tag($ftag2);
+
+            if ($ftag2 eq 'Z0') { $ftag2 = 'Z'; }
             
             $f[3] = $short;
             $f[4] = $ftag2;
