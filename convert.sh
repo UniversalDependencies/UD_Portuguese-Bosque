@@ -1,8 +1,12 @@
 #!/bin/bash
 
+pushd bosque-ud
+. ./fix-errors.sh
+popd
+
 if [ ! -d bosque-ud-fl ]; then mkdir bosque-ud-fl; fi
 
-for f in bosque-ud/*.udep.conll; do
+for f in bosque-ud/*.udep.workaround.conll; do
     perl conll_convert_tags_from_uposf.pl $f > bosque-ud-fl/`basename $f`;
 done
 

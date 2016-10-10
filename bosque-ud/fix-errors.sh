@@ -1,7 +1,8 @@
+# make sure that the final result is placed on
+# bosque_C{P,F}.udep.workaround.conll and does NOT update the original
+
 # fix issue #2
-# commenting out this for now as there is no consensus on how to
-# handle this
-# cat bosque_CP.udep.conll | sed -e 's/Gender=None/Gender=Com/' > tmp && mv tmp bosque_CP.udep.conll
-# cat bosque_CF.udep.conll | sed -e 's/Gender=None/Gender=Com/' > tmp && mv tmp bosque_CF.udep.conll
+cat bosque_CP.udep.conll | sed -e 's/Gender=None/Gender=Fem,Masc/' > tmp && mv tmp bosque_CP.udep.workaround.conll
+cat bosque_CF.udep.conll | sed -e 's/Gender=None/Gender=Fem,Masc/' > tmp && mv tmp bosque_CF.udep.workaround.conll
 
 
