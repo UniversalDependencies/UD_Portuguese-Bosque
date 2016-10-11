@@ -5,4 +5,6 @@
 cat bosque_CP.udep.conll | sed -e 's/Gender=None/Gender=Fem,Masc/' > tmp && mv tmp bosque_CP.udep.workaround.conll
 cat bosque_CF.udep.conll | sed -e 's/Gender=None/Gender=Fem,Masc/' > tmp && mv tmp bosque_CF.udep.workaround.conll
 
-
+# fix issue 24
+cat bosque_CP.udep.workaround.conll | sed -e 's/Number=None/Number=Sing,Plur/' > tmp && mv tmp bosque_CP.udep.workaround.conll
+cat bosque_CF.udep.workaround.conll | sed -e 's/Number=None/Number=Sing,Plur/' > tmp && mv tmp bosque_CF.udep.workaround.conll
