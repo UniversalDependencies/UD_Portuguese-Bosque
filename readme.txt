@@ -19,7 +19,18 @@ How to reproduce:
 
    freeling.tokens palavras.tokens: to be used in comparing the
    differences between PALAVRAS and Freeling tokenization and PoS
-   tagging.
+   tagging.  Boths files have the following format:
+
+   <WORD-FORM> <LEMMA> <EAGLES tag>
+
+   Sentences are separated by blank spaces.  The original of the files
+   are:
+
+   freeling.tokens: we extracted the sentences from the CONLL files
+   (text attribute of the <s> tags.) and ran through Freeling.
+
+   palavras.tokens: we take the CONLL, converted to EAGLES tags, and
+   extracted the relevant columns.
 
 6. If you are unable to execute these steps, the directory
    pregenerated/ contains a version of those files.
