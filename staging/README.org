@@ -1,0 +1,44 @@
+#+Title: UD Portuguese Corpus for CONLL 2017
+
+
+O diretório sample contém
+
+raw/
+
+100 textos do Amazonia selecionados aleatoriamente.  Nestes textos fiz
+as seguintes mudancas:
+
+- removi os caracteres '¶';
+- substitui «» por "";
+- converti de Latin-1 para UTF-8
+
+split/
+
+os mesmos textos "raw", mas separados em sentencas (via Freeling 4.0).
+Isto porque o Syntaxnet nao faz sentence split.
+
+sytaxnet/
+
+os textos de split/ processados pelo Syntaxnet (Parsey Universal).
+
+Nos tres casos o nome do arquivo e' a ID do <ext> no arquivo
+overblog.txt que voce enviou + extensao.
+
+Inclui tambem os scripts e programas usados para selecionar
+aleatoriamente os textos, limpa-los, separar as sentencas, e rodar o
+Syntaxnet caso alguem tenha curiosidade.
+
+Ja' antecipo alguns problemas encontrados: precisaremos enfrentar o
+problema da formatacao dos textos do Amazonia.  Veja por exemplo o
+texto 1431.o-dragao-punk-na-terra-do-sol.ext.txt cuja quebra de linhas
+nao e' consistente com os a maioria dos outros textos (onde a quebra
+de linha acontece no fim do paragrafo).
+
+Temos muitos poemas tambem, como 2500.os-significados.ext.txt e
+4684.evite-procrastinar.ext.txt.  Nao sei se vale a pena comparar o
+PALAVRAS e o Syntaxnet para estes tipo de texto.
+
+Podemos tentar consertar casos como o 1431 acima e excluir coisas como
+os poemas manualmente, mas como sao mais de 4000 textos, o trabalho
+sera' grande.  Ou podemos deixar como esta'.
+
