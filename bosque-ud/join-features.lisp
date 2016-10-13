@@ -1,7 +1,8 @@
 (ql:quickload :split-sequence)
+(ql:quickload :alexandria)
 
 (defpackage :join-features
-  (:use :cl :split-sequence))
+  (:use :cl :split-sequence :alexandria))
 
 (in-package :join-features)
 
@@ -21,12 +22,13 @@
           (dolist (fstr features)
             (let ((f (split-sequence #\= fstr)))
               (push (cadr f) (gethash (car f) features-map))))
-          (maphash 
-           (lambda (k v)
-             (push (format nil "~a=~a" k 
-                           (mapconcat (reverse (remove-duplicates v :test #'equal)) ",")) new-features))
-           features-map)
-          (mapconcat new-features "|"))
+          (let ((sorted-keys (sort (hash-table-keys features-map) #'string-lessp)))
+            (dolist (k sorted-keys)
+              (push (format nil "~a=~a" k 
+                            (mapconcat (reverse (remove-duplicates (gethash k features-map) 
+                                                                   :test #'equal)) ",")) new-features)))
+
+          (mapconcat (reverse new-features) "|"))
         features-string)))
 
 (defun fix-line (line)
