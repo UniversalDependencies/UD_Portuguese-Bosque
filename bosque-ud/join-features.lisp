@@ -25,8 +25,8 @@
           (let ((sorted-keys (sort (hash-table-keys features-map) #'string-lessp)))
             (dolist (k sorted-keys)
               (push (format nil "~a=~a" k 
-                            (mapconcat (reverse (remove-duplicates (gethash k features-map) 
-                                                                   :test #'equal)) ",")) new-features)))
+                            (mapconcat (sort (remove-duplicates (gethash k features-map) 
+                                                                :test #'equal) #'string-lessp) ",")) new-features)))
 
           (mapconcat (reverse new-features) "|"))
         features-string)))
