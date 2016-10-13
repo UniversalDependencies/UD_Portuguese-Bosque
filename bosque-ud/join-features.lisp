@@ -38,6 +38,9 @@
           (let* ((features (elt cols 5))
                  (joined (join-features features)))
             (setf (elt cols 5) joined)
+            (dotimes (n (length cols))
+              (when (= 0 (length (elt cols n)))
+                (setf (elt cols n) "_")))
             (mapconcat cols '(#\tab))))
         line)))
 
