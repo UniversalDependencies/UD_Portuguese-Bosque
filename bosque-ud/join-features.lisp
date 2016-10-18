@@ -17,18 +17,21 @@
   (let ((features-map (make-hash-table :test #'equal))
         (features (split-sequence #\| features-string))
         (new-features nil))
-    (if (> (length features) 1)
+    (if (and (not (string-equal "_" features-string)) (> (length features) 0))
         (progn
           (dolist (fstr features)
-            (let ((f (split-sequence #\= fstr)))
-              (push (cadr f) (gethash (car f) features-map))))
+            (when (> (length fstr) 0)
+             (let* ((f (split-sequence #\= fstr))
+                    (name (car f))
+                    (value (split-sequence #\, (cadr f))))
+               (setf (gethash name features-map) (append value (gethash name features-map))))))
           (let ((sorted-keys (sort (hash-table-keys features-map) #'string-lessp)))
             (dolist (k sorted-keys)
               (push (format nil "~a=~a" k 
                             (mapconcat (sort (remove-duplicates (gethash k features-map) 
                                                                 :test #'equal) #'string-lessp) ",")) new-features)))
-
-          (mapconcat (reverse new-features) "|"))
+          
+          (if new-features (mapconcat (reverse new-features) "|") "_"))
         features-string)))
 
 (defun fix-line (line)
