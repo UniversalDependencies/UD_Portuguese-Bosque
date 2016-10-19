@@ -1,0 +1,43 @@
+
+This is an improved version of Bosque 7.5 UD, originally available
+from Linguateca at the following URLs:
+
+http://www.linguateca.pt/Floresta/ficheiros/bosque_CP.udep.conll.gz
+http://www.linguateca.pt/Floresta/ficheiros/bosque_CF.udep.conll.gz
+
+Issues found in the original Bosque 7.5 UD have been opened as issues
+in this project, with the prefix [bosque-ud]; they have been either
+fixed at the source (PALAVRAS and/or UD conversion), workarounds have
+been provided by the script "fix-errors.sh". 
+
+Manually editing the file is discouraged and should only be made as a
+last resort. 
+
+
+
+
+For reference:
+
+1. bosque_CP.udep.conll.gz Bick's version of European Portuguese part
+   of Bosque 7.5 UD annotated, available at
+   http://www.linguateca.pt/Floresta/ficheiros/bosque_CP.udep.conll.gz
+
+2. bosque_CF.udep.conll.gz ick's version of Brazilian Portuguese part
+   of Bosque 7.5 UD annotated, available at
+   http://www.linguateca.pt/Floresta/ficheiros/bosque_CF.udep.conll.gz
+
+3. Dan Zeman's version of Bosque CoNLL (7.3), available at
+   https://github.com/UniversalDependencies/UD_Portuguese
+
+4. Linguateca Version of Bosque CoNLL (7.3),
+   http://www.linguateca.pt/floresta/CoNLL-X/
+
+
+--- Machine readable metadata ---
+Documentation status: partial
+Data source: semi-automatic
+Data available since: UD v1.0
+License: CC BY-SA 4.0
+Genre: news blog 
+Contributors: Freitas, Claudia; Bick, Eckhard; Rademaker, Alexandre; Chalub, Fabricio; Real, Livy; Paiva, Valeria
+Contact: arademaker@gmail.com
