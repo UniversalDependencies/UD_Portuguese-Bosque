@@ -11,7 +11,7 @@ Lemmatization rules = ?
 
 Examples
 
-clitic pronouns: se, me, te, lhe including reflexive pronouns
+clitic pronouns: se, me, te, lhe (including reflexive pronouns)
 
 demonstrative pronouns: isto, esse, aquilo
 
