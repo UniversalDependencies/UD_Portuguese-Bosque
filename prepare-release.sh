@@ -18,3 +18,4 @@ cat bosque_C{F,P}.udep.workaround.conll | grep -v "^#</s>" | sed -e 's/#<s\(.*\)
 cat pt.conllu | sed '/./,$!d' > tmp && mv tmp pt.conllu
 
 # remove empty line after the comment (flagged by the validation tool)
+python3 fix-comments.py pt.conllu > tmp && mv tmp pt.conllu
