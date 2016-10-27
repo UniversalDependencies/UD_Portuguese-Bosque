@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # remove sentences that are invalid and split them into DEVEL and
 # TRAIN sets, according the percentages train_frac, devel_frac.
 
@@ -23,7 +25,7 @@ train_frac = .9
 devel_frac = .1
 
 if len(sys.argv) != 4:
-    print "Usage:\n\n\tsplit.py <original> <devel> <train>\n";
+    print ("Usage:\n\n\tsplit2.py <original> <devel> <train>\n")
     sys.exit(1)
 
 with open(sys.argv[1], 'r') as f:
@@ -35,17 +37,18 @@ with open(sys.argv[1], 'r') as f:
             valid_sents.append (sent)
 
     devel_len = math.floor(len(valid_sents)*devel_frac)
-    shuffled_ids = range(0,len(valid_sents))
+    shuffled_ids = list(range(0,len(valid_sents)))
     random.shuffle(shuffled_ids)
 
+    devel_ids = shuffled_ids[0:devel_len]
+    train_ids = shuffled_ids[devel_len:]
+
     with open(sys.argv[2], 'w') as devfile:
-        with open(sys.argv[3], 'w') as trainfile:
-            c = 0
-            for id in shuffled_ids:
-                if (c < devel_len):
-                    devfile.write(valid_sents[id])
-                    devfile.write('\n\n')
-                else:
-                    trainfile.write(valid_sents[id])
-                    trainfile.write('\n\n')
-                c = c + 1
+        for id in devel_ids:
+            devfile.write(valid_sents[id])
+            devfile.write('\n\n')
+            
+    with open(sys.argv[3], 'w') as trainfile:
+        for id in train_ids:
+            trainfile.write(valid_sents[id])
+            trainfile.write('\n\n')

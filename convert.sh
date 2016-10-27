@@ -20,7 +20,7 @@ done
 grep -v "^<" bosque-ud-fl/bosque-with-tags.conll | cat -s - > bosque-ud-fl/bosque.conll
 grep "^<s" bosque-ud-fl/bosque-with-tags.conll | sed -e "s/\(.*\)text=\"\(.*\)\">/\2\n/" > bosque-ud-fl/bosque-sentences.txt
 
-python split.py bosque-ud-fl/bosque.conll bosque-ud-fl/devel.conll bosque-ud-fl/train.conll
+python3 split2.py bosque-ud-fl/bosque.conll bosque-ud-fl/devel.conll bosque-ud-fl/train.conll
 
 ~/bin/freeling-4.0/bin/analyze -f pt.cfg < bosque-ud-fl/bosque-sentences.txt > bosque-ud-fl/bosque-sentences.freeling.txt
 
