@@ -6,6 +6,16 @@
 
 (in-package :join-features)
 
+(defmacro with-open-files (args &body body)
+  (case (length args)
+    ((0)
+     `(progn ,@body))
+    ((1)
+     `(with-open-file ,(first args) ,@body))
+    (t `(with-open-file ,(first args)
+	  (with-open-files
+	      ,(rest args) ,@body)))))
+
 ;; https://groups.google.com/forum/#!topic/comp.lang.lisp/LXG1U7YuILU
 (defun mapconcat (list delim)
   (reduce (lambda (x y)
@@ -48,8 +58,8 @@
         line)))
 
 (defun execute (infile outfile)
-  (with-open-file (in infile :direction :input)
-    (with-open-file (out outfile :direction :output :if-exists :supersede)
-      (loop for line = (read-line in nil)
-         while line do
-           (write-line (fix-line line) out)))))
+  (with-open-files ((in infile :direction :input)
+		    (out outfile :direction :output :if-exists :supersede))
+    (loop for line = (read-line in nil)
+	  while line do
+	  (write-line (fix-line line) out))))
