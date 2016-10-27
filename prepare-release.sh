@@ -11,7 +11,7 @@ if [ ! -e bosque_CF.udep.workaround.conll ]; then
 fi
 
 # remove </s> tags, and fix the <s> comments.
-cat bosque_C{F,P}.udep.workaround.conll | grep -v "^#</s>" | sed -e 's/#<s\(.*\)>/#\1/' | cat -s > pt.conllu
+cat bosque_C{F,P}.udep.workaround.conll | grep -v "^#<ext" | grep -v "^#</ext>" | grep -v "^#</s>" | sed -e 's/#<s\(.*\)>/#\1/' | cat -s > pt.conllu
 
 # remove leading whitespace
 # http://www.linuxhowtos.org/System/sedoneliner.htm?ref=news.rdf

@@ -11,7 +11,7 @@ import sys
 import math
 
 def valid_sentence(sent):
-    return True
+    return len(sent) > 1
 
 dev_frac = .8
 test_frac = .1
