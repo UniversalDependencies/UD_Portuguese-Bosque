@@ -10,5 +10,5 @@ sbcl --noinform --noprint --non-interactive --load join-features.lisp --eval '(i
 if [ -e "tmp1" ]; then mv tmp1 bosque_CP.udep.workaround.conll; fi
 if [ -e "tmp2" ]; then mv tmp2 bosque_CF.udep.workaround.conll; fi
 
-cat bosque_CF.udep.workaround.conll | sed 's/^</#</' | cat -s > tmp && mv tmp bosque_CF.udep.workaround.conll
-cat bosque_CP.udep.workaround.conll | sed 's/^</#</' | cat -s > tmp && mv tmp bosque_CP.udep.workaround.conll
+cat bosque_CF.udep.workaround.conll | sed 's/^</\n#</' | cat -s > tmp && mv tmp bosque_CF.udep.workaround.conll
+cat bosque_CP.udep.workaround.conll | sed 's/^</\n#</' | cat -s > tmp && mv tmp bosque_CP.udep.workaround.conll
