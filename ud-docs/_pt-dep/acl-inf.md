@@ -3,6 +3,12 @@ layout: relation
 title: 'acl:inf'
 shortdef: 'acl:inf'
 ---
+This relation is a language-specific subtype of `acl`. There are also 2 other language-specific subtypes of `acl`: `acl:part`, `acl:relcl`.
 
-This document is a placeholder for the language-specific documentation
-for `acl:inf`.
+`acl:inf` stands for infinitive clauses that modify a nominal. 
+
+Example: 
+
+"Não tenho nada a perder"
+
+acl:inf(nada,perder)
