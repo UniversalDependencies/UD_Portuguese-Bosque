@@ -48,3 +48,5 @@
     (with-open-file (out outfile :direction :output :if-exists :supersede)
       (length (mapc (lambda (x) (print-sentence x out)) 
                     (mapcar #'extract-words sentences))))))
+
+;; http://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/lang/lisp/code/tools/src_cmp/mkant/sc.cl
