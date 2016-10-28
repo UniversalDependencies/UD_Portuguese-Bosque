@@ -50,3 +50,4 @@
                     (mapcar #'extract-words sentences))))))
 
 ;; http://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/lang/lisp/code/tools/src_cmp/mkant/sc.cl
+;; https://github.com/froydnj/diff
