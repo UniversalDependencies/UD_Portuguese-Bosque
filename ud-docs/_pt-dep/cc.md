@@ -39,11 +39,11 @@ cc(chegou, E)
 
 Note that when many elements are coordinated, the `conj` relation holds between the connective and the first element of the conjunction.
 
-<div id="punct1" class="sd-parse">
+~~~ sdparse
 Aqui era o quarto pobre , simples , limpo e acolhedor.
 amod(quarto, pobre)
 conj(pobre, simples)
 conj(pobre, limpo)
 conj(pobre, acolhedor)
 cc(pobre, e)
-</div>
+~~~
