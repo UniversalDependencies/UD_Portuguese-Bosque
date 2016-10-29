@@ -16,4 +16,5 @@ cat pt.conllu | sed '/./,$!d' > tmp && mv tmp pt.conllu
 python3 fix-comments.py pt.conllu > tmp && mv tmp pt.conllu
 
 # split pt.conllu in dev/test/train, using the percentages specified in the split3.py file
-python3 split3.py pt.conllu pt-ud-dev.conllu pt-ud-test.conllu pt-ud-train.conllu
+python3 split3.py pt.conllu release/pt-ud-dev.conllu release/pt-ud-test.conllu release/pt-ud-train.conllu
+rm pt.conllu

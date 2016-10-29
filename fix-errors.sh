@@ -8,5 +8,5 @@ sbcl --noinform --noprint --non-interactive --load join-features.lisp --eval '(i
 		
 if [ -e "tmp" ]; then mv tmp bosque.udep.workaround.conll; fi
 
-cat bosque.udep.workaround.conll | sed 's/^</\n#</' | cat -s > tmp && mv tmp bosque.udep.workaround.conll
+cat bosque.udep.workaround.conll | sed 's/^</\#</' | cat -s > tmp && mv tmp bosque.udep.workaround.conll
 
