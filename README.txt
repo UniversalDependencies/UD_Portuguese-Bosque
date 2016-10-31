@@ -70,6 +70,8 @@ See file LICENSE.txt
 
 REFERENCES
 
+- https://github.com/own-pt/bosque-UD (development of this corpus)
+
 - http://www.linguateca.pt/Floresta/ (Floresta Treebank repository)
 
 - http://visl.sdu.dk/tagset_cg_general.pdf (non-UD tags in field 4)
