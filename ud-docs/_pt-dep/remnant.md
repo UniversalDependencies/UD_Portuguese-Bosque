@@ -4,12 +4,13 @@ title: 'remnant'
 shortdef: 'remnant in ellipsis'
 ---
 
-The `remnant` relation is used to provide a satisfactory treatment of ellipsis (in
-the case of gapping and stripping, where a predicational or verbal
-head gets elided). This is something that was lacking in earlier versions
-of SD and provides a basis for being able to reconstruct dependencies
-in the enhanced representation of UD. 
-In particular, the goal was to achieve this *without* having to postulate empty nodes in the basic representation.
+The `remnant` relation is used to provide a satisfactory treatment of
+ellipsis (in the case of gapping and stripping, where a predicational
+or verbal head gets elided). This is something that was lacking in
+earlier versions of SD and provides a basis for being able to
+reconstruct dependencies in the enhanced representation of UD.  In
+particular, the goal was to achieve this *without* having to postulate
+empty nodes in the basic representation.
 
 To develop motivation, consider first a sentence without ellipsis:
 
@@ -26,7 +27,8 @@ case(Praga-9, para-8)
 nmod(foi-7, Praga-9)
 ~~~
 
-The question is then how to treat: *Maria foi para Paris e Miriam para Praga*
+The question is then how to treat the sentence "Maria foi para Paris e
+Miriam para Praga"
 
 ~~~ sdparse
 Maria foi para Paris e Miriam para Praga
@@ -38,9 +40,23 @@ cc(foi-2, e-5)
 case(Praga-8, para-7)
 ~~~
 
-One option would be to pretend that there is an empty verb and to have the final elements be dependents of it: *Maria foi para Paris e Miriam ∅ para Praga*. This analysis has some appeal but also has some problems and at any rate stops the basic dependency graph from being simply a tree of dependencies over the words of a sentence. A second option is to simply promote the final elements and to have them as dependents of the main verb of the sentence (*foi-2*) or of *root-0*. But then (in general) one loses the ability to successfully reconstruct the correct predicate-argument structure of the sentence from the basic dependency representation.
+One option would be to pretend that there is an empty verb and to have
+the final elements be dependents of it: *Maria foi para Paris e Miriam
+∅ para Praga*. This analysis has some appeal but also has some
+problems and at any rate stops the basic dependency graph from being
+simply a tree of dependencies over the words of a sentence. A second
+option is to simply promote the final elements and to have them as
+dependents of the main verb of the sentence (*foi-2*) or of
+*root-0*. But then (in general) one loses the ability to successfully
+reconstruct the correct predicate-argument structure of the sentence
+from the basic dependency representation.
 
-Therefore, UD adopts an analysis that notes that in ellipsis a `remnant` corresponds to a *correlate* in a preceding clause. The `remnant` relation connects each remnant to its correlate in the basic dependency representation. This is then a sufficient representation to reconstruct the predicate-argument structure in the enhanced representation. So, for this example, we have:
+Therefore, UD adopts an analysis that notes that in ellipsis a
+`remnant` corresponds to a *correlate* in a preceding clause. The
+`remnant` relation connects each remnant to its correlate in the basic
+dependency representation. This is then a sufficient representation to
+reconstruct the predicate-argument structure in the enhanced
+representation. So, for this example, we have:
 
 ~~~ sdparse
 Maria foi para Paris e Miriam para Praga
@@ -78,7 +94,11 @@ remnant(%-7, %-2)
 remnant(Clinton, Bush)
 ~~~
 
-The `remnant` relation is used when no predicational material is present. In contrast, in right-node-raising (RNR) and VP-ellipsis constructions in which some kind of predicational or verbal material is still present, the `remnant` relation is not used. In RNR, the verbs are coordinated and the object is a [dobj]() of the first verb:
+The `remnant` relation is used when no predicational material is
+present. In contrast, in right-node-raising (RNR) and VP-ellipsis
+constructions in which some kind of predicational or verbal material
+is still present, the `remnant` relation is not used. In RNR, the
+verbs are coordinated and the object is a [dobj]() of the first verb:
 
 ~~~ sdparse
 João comprou e comeu uma maçã
