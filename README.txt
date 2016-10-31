@@ -1,11 +1,11 @@
 The CG-converted UD Portuguese treebank is originally based on an
-improved and enriched version of the 7.4. dependency version of the
+improved and enriched version of the 7.4 dependency version of the
 revised Bosque part of the Floresta Sintá(c)tica treebank
 (cf. Linguateca.pt). 7.4 was in 2006-2008 aligned with a new live run
 with the PALAVRAS parser in order to propagate morphological features
 from unambiguous to ambiguous words, and to add what the Floresta team
 called "searchables", i.e. tags for features distributed across
-several tokens, such as np definiteness and complex tenses. The public
+several tokens, such as NP definiteness and complex tenses. The public
 treebank only used this for the constituent version, which was the one
 actively revised by the Floresta team until 2008 (Linguateca.pt
 version 8.0).
