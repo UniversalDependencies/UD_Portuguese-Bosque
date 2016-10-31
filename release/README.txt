@@ -15,6 +15,15 @@ http://www.linguateca.pt/Floresta/ficheiros/bosque_CF.udep.conll.gz
   url       = {http://www.lrec-conf.org/proceedings/lrec2002/sumarios/1.htm}
 }
 
+The main conversion was performed by Eckhard Bick.  It was revised by:
+
+- Eckhard Bick
+- Fabricio Chalub
+- Claudia Freitas
+- Valeria Paiva
+- Alexandre Rademaker
+- Livy Real
+
 Changelog:
 
 2016-10-31 v1.4
