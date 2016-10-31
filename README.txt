@@ -50,7 +50,7 @@ from an underspecified UD tag, e.g. the core clause arguments
 
 CONTRIBUTORS
 
-The conversion was implemented by Eckhard Bick, and revised by:
+The conversion was implemented by Eckhard Bick and revised by:
 
 - Claudia Freitas
 - Eckhard Bick
