@@ -28,7 +28,7 @@ grammatically feminine, without any relation to sex.
 
 * _<b>casa</b>_ "house"
 
-### `Unsp`: unespecified
+### `Unsp`: unspecified
 
 `Unsp` is used to tag words that can be masculine or feminine when the context is not enough to make clear its gender.
 
