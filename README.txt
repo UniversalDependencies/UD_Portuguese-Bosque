@@ -1,50 +1,107 @@
-The UD Portuguese treebank is based on the Bosque part of the Floresta Sintá(c)tica project.
-The data were used in the CoNLL-X Shared Task in dependency parsing (2006); the CoNLL version
-was taken and converted to the Prague dependency style as a part of HamleDT (since 2011).
-Later versions of HamleDT added a conversion to the Stanford dependencies (2014) and to
-Universal Dependencies (HamleDT 3.0, 2015). The conversion path from the original Bosque still
-goes through the CoNLL-X format and the Prague dependencies, which may occasionally lead to
-loss of information. The first release of Universal Dependencies that includes this treebank
-is UD v1.2 in November 2015. It is essentially the HamleDT conversion but the data is not
-identical to HamleDT 3.0 because the conversion procedure has been further improved.
+The CG-converted UD Portuguese treebank is originally based on an
+improved and enriched version of the 7.4. dependency version of the
+revised Bosque part of the Floresta Sintá(c)tica treebank
+(cf. Linguateca.pt). 7.4 was in 2006-2008 aligned with a new live run
+with the PALAVRAS parser in order to propagate morphological features
+from unambiguous to ambiguous words, and to add what the Floresta team
+called "searchables", i.e. tags for features distributed across
+several tokens, such as np definiteness and complex tenses. The public
+treebank only used this for the constituent version, which was the one
+actively revised by the Floresta team until 2008 (Linguateca.pt
+version 8.0).
 
-References:
+Since 2008 Eckhard Bick has maintained an experimental version of the
+dependency Bosque for semantic and other research, and made further
+revisions to it, which were not aligned with either the constituent
+version or the published 7.4 dependency version. In the beginning of
+2016, Eckhard Bick wrote UD conversion rules for Constraint Grammar
+input, and applied these to the updated version of the dependency
+Bosque (Linguateca.pt version 7.5 of March 2016).
 
-http://www.linguateca.pt/Floresta/principal.html ... Floresta Sintá(c)tica
-http://ufal.mff.cuni.cz/hamledt ... HamleDT
-http://ufal.mff.cuni.cz/treex ... Treex is the software used for conversion
-http://ufal.mff.cuni.cz/interset ... Interset was used to convert POS tags and features
+In a team effort in October 2016, Alexandre Rademaker, Cláudia
+Freitas, Fabricio Chalub, Valeria de Paiva and Livy Maria Real Coelho,
+aiming at full compatibility with ConLL UD specifications,
+consistency-checked and discussed the 7.5 UD Bosque, leading to a
+further round of manual treebank corrections and conversion rule
+changes by Eckhard Bick. The conversion grammar ultimately used
+contained some 530 rules. Of these 70 were simple feature mapping
+rules, and 130 were local MWE splitting rules, assigning internal
+structure, POS and features to MWE's from Bosque. The remainder of the
+rules handle UD-specific dependency and function label changes in a
+context-dependent fashion, the main issues being raising of copula
+dependents to subject complements, inversion of prepositional
+dependency and a change from syntactic to semantic verb chain
+dependency.
 
-@inproceedings{pt,
-  author    = {Susana Afonso and Eckhard Bick and Renato Haber and Diana Santos},
-  year      = {2002},
-  title     = {{{``}Floresta sint{\'a}(c)tica{''}:} a treebank for {P}ortuguese},
-  booktitle = {Proceedings of the 3rd International Conference on Language Resources and Evaluation (LREC)},
-  address   = {Las Palmas, Spain},
-  pages     = {1698--1703},
-  url       = {http://www.lrec-conf.org/proceedings/lrec2002/sumarios/1.htm}
-}
+The new UD treebank retains the additional tags for NP definiteness
+and complex tenses, as well as the original syntactic functions tags
+and secondary morphological tags. This way, the treebank retains its
+original linguistic focus in addition to the machine learning uses
+targeted by the ConLL UD format. For instance, conjuncts and roots
+still feature a direct function tag (e.g. a verb complement role for a
+conjunct or "question" for a root. In cases, where UD does not
+distinguish between form and function, e.g. n/np adverbial modifiers,
+where UD "duplicates" noun POS as 'nmod' function, the Bosque function
+tag for free adverbial, adject or adverbial object is retained in
+field 4 (@tags). Finally, some lost valency relations may be recovered
+from an underspecified UD tag, e.g. the core clause arguments
+"prepositional object" ('gostar de ARG') and valency-bound adverbial
+('morar em ARG').
 
+CONTRIBUTORS
 
+The conversion was implemented by Eckhard Bick, and revised by:
 
-Changelog
+- Claudia Freitas
+- Eckhard Bick
+- Fabricio Chalub
+- Alexandre Rademaker
+- Livy Real
+- Valeria Paiva
 
-2016-05-15 v1.3
-  * Split underscore-glued multi-word tokens.
-  * "US$" and similar words are now SYM, not NOUN.
-  *  Recognized some determiners that were mistakenly tagged PRON.
-  * Copulas with clausal complements are now heads.
-2015-11-15 v1.2
-  * Copied from HamleDT 3.0 and slightly improved.
+CHANGELOG
 
+2016-10-31 v1.4
+  * Initial UD release.
 
+LICENSE
 
-=== Machine-readable metadata =================================================
-Documentation status: stub
-Data source: automatic
-Data available since: UD v1.2
-License: CC BY-NC-SA 3.0
-Genre: news
-Contributors: Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André
-Contact: zeman@ufal.mff.cuni.cz
-===============================================================================
+See file LICENSE.txt
+
+REFERENCES
+
+- http://www.linguateca.pt/Floresta/ (Floresta Treebank repository)
+
+- http://visl.sdu.dk/tagset_cg_general.pdf (non-UD tags in field 4)
+
+- http://visl.sdu.dk/constraint_grammar.html (cg3 compiler used for
+  the conversion grammar)
+
+- http://visl.sdu.dk/visl/pt/parsing/automatic/ (PALAVRAS parser used
+  to create input trees for the manually revised Bosque treebank)
+
+- Afonso, Susana, Eckhard Bick, Renato Haber & Diana Santos (2002),
+  Floresta sintá(c)tica: a treebank for Portuguese
+  <http://visl.sdu.dk/%7Eeckhard/pdf/AfonsoetalLREC2002.ps.pdf>, In
+  /Proceedings of LREC'2002, Las Palmas/. pp. 1698-1703, Paris: ELRA
+
+- Freitas, Cláudia & Rocha, Paulo & Bick, Eckhard (2008), "Floresta
+  Sintá(c)tica: Bigger, Thicker and Easier", in: António Teixeira et
+  al. (eds.) /Computational Processing of the Portuguese Language/
+  (Proceedings of PROPOR 2008, Aveiro, Sept. 8th-10th, 2008),
+  pp.216-219. Springer
+
+- Bick, Eckhard (2014). PALAVRAS, a Constraint Grammar-based Parsing
+  System for Portuguese. In: Tony Berber Sardinha & Thelma de Lurdes
+  São Bento Ferreira (eds.), /Working with Portuguese Corpora/, pp
+  279-302. London/New York:Bloomsburry Academic. ISBN
+  978-1-4411-9050-5
+
+--- Machine readable metadata ---
+Documentation status: partial
+Data source: semi-automatic
+Data available since: UD v1.4
+License: CC BY-SA 4.0
+Genre: news blog 
+Contributors: Freitas, Claudia; Bick, Eckhard; Chalub, Fabricio; Rademaker, Alexandre; Real, Livy; Paiva, Valeria
+Contact: arademaker@gmail.com
