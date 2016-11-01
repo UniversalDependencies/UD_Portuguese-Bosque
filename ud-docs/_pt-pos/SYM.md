@@ -1,45 +1,35 @@
 ---
 layout: postag
-title: 'VERB'
-shortdef: 'verb'
+title: 'SYM'
+shortdef: 'symbol'
 ---
 
 ### Definition
 
-A verb is a member of the syntactic class of words that typically
-signal events and actions, can constitute a minimal predicate in a
-clause, and govern the number and types of other constituents which
-may occur in the clause. Verbs are often associated with grammatical
-categories like tense, mood, aspect and voice, which can either be
-expressed inflectionally or using auxilliary verbs or particles.
+A symbol is a word-like entity that differs from ordinary words by
+form, function, or both.
 
-Note that the `VERB` tag covers main verbs _(content verbs)_ and
-_copulas_ but it does not cover _auxiliary verbs_, for which there is
-the [AUX]() tag. Auxiliares are verbs that are used in verb phrases expressing only grammatical function (as tense or mood) and do not have semantic contente. For example, _ia fazer_ and _começou a fazer_, where "ir"  and "começar" are auxiliaries.
+Many symbols are or contain special non-alphanumeric characters,
+similarly to [punctuation](PUNCT).  What makes them different from
+punctuation is that they can be substituted by normal words.  This
+involves all currency symbols, e.g. _$ 75_ is identical to
+_seventy-five dollars_.
 
+Mathematical operators form another group of symbols.
 
-Note that we can have more than one auxiliary in a verbal phrase: _parece estar a influenciar_, where "parece" and "estar" should be tagged as auxiliaries.
+Another group of symbols is emoticons and emoji.
 
+Strings that consists entirely of alphanumeric characters are not
+symbols but they may be [proper nouns](PROPN): _130XE_, _DC10_; others
+may be tagged `PROPN` (rather than `SYM`) even if they contain special
+characters: _DC-10_. Similarly, abbreviations for single words are not symbols but are assigned the part of speech of the full form. For example, _Sr._ (senhor), _kg_ (kilograma), _km_ (quilômetro), _Dr_ (doutor) should be tagged [nouns](NOUN). Acronyms for proper names such as _PT_ and _IBM_ should be tagged as [proper nouns](PROPN).
 
-Note that _participles_ are word forms that may share properties and
-usage of adjectives and verbs. Depending on language and context, they
-may be classified as either `VERB` or [ADJ]().
-
-_Gerunds_ and _infinitives_ are classified as `VERB`.
-
-<!-- Note that there are verb forms such as _transgressives_ or _adverbial
-participles_ that share properties and usage of adverbs and
-verbs. Depending on language and context, they may be classified as
-either `VERB` or [ADV](). -->
+Characters used as bullets in itemized lists _(•, ‣)_ and parentheses are not symbols,
+they are punctuation.
 
 ### Examples
 
-- _correr, comer_
-- _correu, comia_
-- _correndo, comendo_
-
-<!--
-### References
-
-- [Loos, Eugene E., et al. 2003. Glossary of linguistic terms: What is a verb?](http://www-01.sil.org/linguistics/GlossaryOfLinguisticTerms/WhatIsAVerbLinguistics.htm)
-- [Wikipedia](http://en.wikipedia.org/wiki/Verb) -->
+- _$, %, §, ©_
+- _+, −, ×, ÷, =, <, >_
+- :), ♥‿♥, 😝
+- _john.doe@universal.org, http://universaldependencies.org/, 1-800-COMPANY_
