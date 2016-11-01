@@ -17,6 +17,7 @@ _§_, which are instead tagged as [SYM]().
 - Period: _<b>.</b>_
 - Comma: _<b>,</b>_
 - Parentheses: _<b>()</b>_
+- Quotes: _<b>«, », "</b>_
  
 ### References
 
