@@ -7,7 +7,7 @@ shortdef: 'adverb'
 
 ### Definition
 
-Adverbs are words that typically modify [verbs](VERB) for such categories as time, place, direction or manner. They may also modify [adjectives](ADJ) (as in _<b>claramente</b> falso_ "clearly fake"), other adverbs (as in _<b>muito brevemente</b>_ "very briefly") or even [nouns](NOUN) / [pronouns](PRON) (as in _<b>apenas</b> você_ "only you").
+Adverbs are words that typically modify [verbs](VERB) for such categories as time, place, direction or manner. They may also modify [adjectives](ADJ) (as in _<b>claramente</b> falso_ "clearly false"), other adverbs (as in _<b>muito brevemente</b>_ "very briefly") or even [nouns](NOUN) / [pronouns](PRON) (as in _<b>apenas</b> você_ "only you").
 
 
 ### Examples
@@ -18,6 +18,6 @@ Adverbs are words that typically modify [verbs](VERB) for such categories as tim
 - _amanhã_ "tomorrow"
 - _acima, abaixo_ "up, down"
 - interrogative or exclamative adverbs: _onde, quando, como, por que_ "where, when, how, why"
-- demonstrative adverbs: _aqui, ali, agora, depois_ "here, there, now, then"
+- demonstrative adverbs: _aqui, ali, agora, depois_ "here, there, now, after"
 - totality adverbs: _sempre_ "always"
-- negative adverbs: _nunca_ "never"
+- negative adverbs: _nunca, sem_ "never, without"
