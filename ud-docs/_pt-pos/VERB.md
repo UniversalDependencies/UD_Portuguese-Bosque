@@ -15,7 +15,10 @@ expressed inflectionally or using auxilliary verbs or particles.
 
 Note that the `VERB` tag covers main verbs _(content verbs)_ and
 _copulas_ but it does not cover _auxiliary verbs_, for which there is
-the [AUX]() tag. Auxiliares are verbs that are used in verb phrases expressing only grammatical function (as tense or mood) and do not have semantic contente. For example, _ia fazer_ and _começou a fazer_, where "ir"  and "começar" are auxiliaries.
+the [AUX]() tag. Auxiliares are verbs that are used in verb phrases expressing 
+only grammatical function (as tense or mood) and do not have semantic content. 
+For example, _ia fazer_ ("go to do") and _começou a fazer_ ("begin to do"), 
+where "ir/go"  and "começar/begin" are auxiliaries.
 
 
 Note that we can have more than one auxiliary in a verbal phrase: _parece estar a influenciar_, where "parece" and "estar" should be tagged as auxiliaries.
