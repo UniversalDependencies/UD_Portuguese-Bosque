@@ -17,10 +17,11 @@ _(IV)_. Other words functioning as determiners (including quantifiers
 such as _muito_ and _pouco_) are tagged [DET]().
 
 Note that there are words that may be traditionally called numerals in
-some languages (e.g. Czech and Portuguese) but which are not tagged `NUM`. Such
-non-cardinal numerals belong to other parts of speech in our universal
-tagging scheme, based mainly on syntactic criteria: are [adjectives](ADJ) _(primeiro, segundo, terceiro)_ (ordinal numerals) or [adverbs](ADV) (
-_mais_uma_vez_ "once more"; _pela_primeira_vez_ ("for the first time").
+some languages (e.g. Czech and Portuguese) but which are not tagged `NUM`. 
+Such non-cardinal numerals belong to other parts of speech in the universal
+tagging scheme, based mainly on syntactic criteria. 
+These are [adjectives](ADJ) _(primeiro, segundo, terceiro)_ (ordinal numerals) 
+or [adverbs](ADV) (_mais_uma_vez_ "once more"; _pela_primeira_vez_ "for the first time").
 
 ### Examples
 
