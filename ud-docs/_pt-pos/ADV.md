@@ -16,7 +16,7 @@ Adverbs are words that typically modify [verbs](VERB) for such categories as tim
 - _bem_ "well"
 - _exatamente_ "exactly"
 - _amanhã_ "tomorrow"
-- _acima, abaixo_ "up, down"
+- _acima, abaixo_ "above, below"
 - interrogative or exclamative adverbs: _onde, quando, como, por que_ "where, when, how, why"
 - demonstrative adverbs: _aqui, ali, agora, depois_ "here, there, now, after"
 - totality adverbs: _sempre_ "always"
