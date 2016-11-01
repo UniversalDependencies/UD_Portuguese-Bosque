@@ -22,14 +22,19 @@ Another group of symbols is emoticons and emoji.
 Strings that consists entirely of alphanumeric characters are not
 symbols but they may be [proper nouns](PROPN): _130XE_, _DC10_; others
 may be tagged `PROPN` (rather than `SYM`) even if they contain special
-characters: _DC-10_. Similarly, abbreviations for single words are not symbols but are assigned the part of speech of the full form. For example, _Sr._ (senhor), _kg_ (kilograma), _km_ (quilômetro), _Dr_ (doutor) should be tagged [nouns](NOUN). Acronyms for proper names such as _PT_ and _IBM_ should be tagged as [proper nouns](PROPN).
+characters: _DC-10_. Similarly, abbreviations for single words are not
+symbols but are assigned the part of speech of the full form. For
+example, _Sr._ (senhor), _kg_ (kilograma), _km_ (quilômetro), _Dr_
+(doutor) should be tagged [nouns](NOUN). Acronyms for proper names
+such as _PT_ and _IBM_ should be tagged as [proper nouns](PROPN).
 
-Characters used as bullets in itemized lists _(•, ‣)_ and parentheses are not symbols,
-they are punctuation.
+Characters used as bullets in itemized lists _(•, ‣)_ and parentheses
+are not symbols, they are punctuation.
 
 ### Examples
 
-- _$, %, §, ©_
-- _+, −, ×, ÷, =, <, >_
-- :), ♥‿♥, 😝
-- _john.doe@universal.org, http://universaldependencies.org/, 1-800-COMPANY_
+- _$_, _%_, _§_, _©_
+- _+_, _−_, _×_, _÷_, _=_, _<_, _>_
+- _:)_, _♥‿♥_, 😝
+- _john.doe@universal.org_, _http://universaldependencies.org/_,
+  _1-800-COMPANY_
