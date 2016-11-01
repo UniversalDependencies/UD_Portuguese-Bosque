@@ -13,7 +13,9 @@ Note that `PROPN` is only used for the subclass of nouns that are used
 as names and that often exhibit special syntactic properties. When other
 phrases or sentences are used as names, the component words retain
 their original tags. For example, in _Cat on a Hot Tin Roof_, _Cat_ is
-[NOUN](), _on_ is [ADP](), _a_ is [DET](), etc. However, for now, the Portuguese corpora are not consistently annotated as this, many proper nouns that are also mwe are not split.
+[NOUN](), _on_ is [ADP](), _a_ is [DET](), etc. 
+However, for now, the Portuguese corpora are not very consistently annotated, as many proper nouns (that are  mwes)
+are not split.
 
 
 Acronyms of proper nouns, such as _EUA_ and _NATO_, should be tagged `PROPN`.
