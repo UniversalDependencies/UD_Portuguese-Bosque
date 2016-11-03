@@ -13,7 +13,7 @@ non-core (oblique) argument or adjunct.
 This means that it functionally corresponds to an adverbial when it attaches to a verb, adjective or other adverb.
 But when attaching to a noun, it corresponds to an attribute, or genitive complement (the terms are less standardized here).
 
-We differentiate adverbials realized by noun phrases or adpositional phrases (`nmod` as in "Na noite passa, eu nadei") from adverbials realized as adverbs (`advmod` as in "Ontem, eu nadei").
+We differentiate adverbials realized by noun phrases or adpositional phrases (`nmod` as in "Na noite passada, eu nadei") from adverbials realized as adverbs (`advmod` as in "Ontem, eu nadei").
 
 ~~~ sdparse
 "PT no governo"
