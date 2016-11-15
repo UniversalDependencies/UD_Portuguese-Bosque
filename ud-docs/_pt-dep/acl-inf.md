@@ -11,7 +11,6 @@ This relation is a language-specific subtype of `acl`. There are also
 
 Example: 
 
-
 ~~~ sdparse
 Não tenho nada a perder.
 acl:inf(nada,perder)
