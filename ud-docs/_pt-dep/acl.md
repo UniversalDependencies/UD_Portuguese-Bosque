@@ -21,7 +21,7 @@ acl(defesa, parecida)
 ~~~
 
 ~~~ sdparse
-O caso nasceu de uma «vendetta», obra de um certo Francesco Farina, dono do Modena, um time rebaixado à 3ª divisão.
+O caso nasceu de uma "vendetta", obra de um certo Francesco Farina, dono do Modena, um time rebaixado à 3ª divisão.
 acl(time, rebaixado)
 ~~~
 
