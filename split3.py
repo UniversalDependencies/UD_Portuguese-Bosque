@@ -13,9 +13,9 @@ import math
 def valid_sentence(sent):
     return len(sent) > 1
 
-dev_frac = .8
+dev_frac = .1
 test_frac = .1
-train_frac = .1
+train_frac = .8
 
 if len(sys.argv) != 5:
     print ("Usage:\n\n\tsplit3.py <original> <dev> <test> <train>\n")
