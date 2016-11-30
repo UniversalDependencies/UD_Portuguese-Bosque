@@ -8,8 +8,8 @@
 (defun fix-misc (token)
   (let ((misc (slot-value token 'misc)))
     (when (and 
-           (string= (slot-value token 'lemma) "o")
-           (string= misc "MWE=o_que"))
+           (string-equal (slot-value token 'lemma) "o")
+           (string-equal misc "MWE=o_que"))
       (setf (slot-value token 'upostag) "PRON")
       (setf (slot-value token 'xpostag) "_")
       (setf (slot-value token 'misc) "_"))))
