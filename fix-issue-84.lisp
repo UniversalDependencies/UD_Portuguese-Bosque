@@ -15,9 +15,9 @@
    (let ((t1 (car tokens))
          (t2 (cdr tokens)))
      (when (and 
-            (string= (slot-value t1 'lemma) "por")
-            (string= (slot-value t2 'lemma) "cento")
-            (string= (slot-value t1 'misc) "MWE=por_cento"))
+            (string-equal (slot-value t1 'lemma) "por")
+            (string-equal (slot-value t2 'lemma) "cento")
+            (string-equal (slot-value t1 'misc) "MWE=por_cento"))
        (setf (slot-value t1 'upostag) "ADP")
        (setf (slot-value t1 'xpostag) "_")
        (setf (slot-value t1 'misc) (format nil "MWE=por_cento|MWEPOS=NOUN"))
