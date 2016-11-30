@@ -1,4 +1,4 @@
-;; fix for issue #90
+;; fix for issue #84
 
 (ql:quickload :cl-conllu)
 (ql:quickload :alexandria)
