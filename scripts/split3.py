@@ -17,8 +17,8 @@ dev_frac = .1
 test_frac = .1
 train_frac = .8
 
-if len(sys.argv) != 5:
-    print ("Usage:\n\n\tsplit3.py <original> <dev> <test> <train>\n")
+if len(sys.argv) != 6:
+    print ("Usage:\n\n\tsplit3.py <original> <dev> <test> <train> <shuffle|seq>\n")
     sys.exit(1)
 
 with open(sys.argv[1], 'r') as f:
@@ -36,7 +36,12 @@ with open(sys.argv[1], 'r') as f:
     print ("dev = {} ({}), test = {} ({}), train = {} ({})\n".format(dev_frac, dev_len, test_frac, test_len, train_frac, train_len))
 
     shuffled_ids = list(range(0,len(valid_sents)))
-    random.shuffle(shuffled_ids)
+    if (sys.argv[5] == 'shuffle'):
+        random.shuffle(shuffled_ids)
+    else:
+        if (sys.argv[5] != 'seq'):
+            print ("last argument should be 'shuffle' or 'seq'")
+            sys.exit(1)
 
     dev_ids = shuffled_ids[0:dev_len]
     test_ids = shuffled_ids[dev_len:dev_len+test_len]
