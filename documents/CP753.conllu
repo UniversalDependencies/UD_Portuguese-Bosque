@@ -24,8 +24,8 @@
 19	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
 20	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@<SC	_	0	root	_	_
 21	de	de	ADP	<sam->|PRP|@COM	_	22	case	_	MWE=do_que
-22	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	25	mwe	_	_
-23	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	22	mwe	_	_
+22	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	25	fixed	_	_
+23	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	22	fixed	_	_
 24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	adopção	adopção	NOUN	<first-cjt>|<np-def>|N|F|S|@KOMP<	Gender=Fem|Number=Sing	20	nmod	_	_
 26	de	de	ADP	PRP|@N<	_	28	case	_	_
@@ -54,7 +54,7 @@
 13	igreja	igreja	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	_
 14	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	direito	direito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	dobj	_	_
+16	direito	direito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
 17	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 18	independentemente	independentemente	ADV	ADV|@<ADVL	_	14	advmod	_	_
 19	de	de	ADP	<sam->|PRP|@A<	_	21	case	_	_
@@ -68,7 +68,7 @@
 27	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_
 28	fiéis	fiel	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	_
 29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	necessário	necessário	ADJ	<n>|<np-def>|ADJ|M|S|@<ACC	Gender=Masc|Number=Sing	25	dobj	_	_
+30	necessário	necessário	ADJ	<n>|<np-def>|ADJ|M|S|@<ACC	Gender=Masc|Number=Sing	25	obj	_	_
 31	para	para	ADP	<first-cjt>|PRP|@N<	_	33	case	_	_
 32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 33	culto	culto	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	_
@@ -82,11 +82,11 @@
 41	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	43	det	_	_
 42	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur	43	det	_	_
 43	ministros	ministro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	39	nmod	_	_
-44	e	e	CONJ	<co-postnom>|KC|@CO	_	33	cc	_	_
+44	e	e	CCONJ	<co-postnom>|KC|@CO	_	33	cc	_	_
 45	para	para	ADP	<cjt>|PRP|@N<	_	46	mark	_	_
 46	satisfazer	satisfazer	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	conj	_	_
 47	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	48	det	_	_
-48	fins	fim	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	46	dobj	_	_
+48	fins	fim	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	46	obj	_	_
 49	próprios	próprio	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	48	amod	_	_
 50	»	»	PUNCT	PU|@PU	_	14	punct	_	_
 51	...	...	PUNCT	PU|@PU	_	9	punct	_	_
@@ -101,7 +101,7 @@
 3	que	que	ADV	<foc>|ADV|@ADVL>	_	4	mark	_	_
 4	faz	fazer	VERB	<mv>|V|PR|3S|IND|@FS-UTT	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
 5	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	7	det	_	MWE=todos_os
-6	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	mwe	_	_
+6	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	fixed	_	_
 7	meses	mês	NOUN	<np-def>|N|M|P|@<ADVL	Gender=Masc|Number=Plur	4	nmod	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Igreja	Igreja	PROPN	PROP|F|S|@<SUBJ	Gender=Fem|Number=Sing	4	nsubj	_	MWE=Igreja_do_Reino_de_Deus
@@ -131,7 +131,7 @@
 12	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	envelope	envelope	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
 14	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-15	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	25	dobj	_	_
+15	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	25	obj	_	_
 16	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
 17	obreiros	obreiro	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	25	nsubj	_	_
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
@@ -142,7 +142,7 @@
 23	atentos	atento	ADJ	ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	17	amod	_	_
 24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 25	recolhem	recolher	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_
-26	e	e	CONJ	<co-vfin>|KC|@CO	_	25	cc	_	_
+26	e	e	CCONJ	<co-vfin>|KC|@CO	_	25	cc	_	_
 27	controlam	controlar	VERB	<mv>|<cjt>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	conj	_	_
 28	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
@@ -168,7 +168,7 @@
 15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 16	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_
 17	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur	18	det	_	_
-18	contribuições	contribuição	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	dobj	_	_
+18	contribuições	contribuição	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	obj	_	_
 19	para	para	ADP	PRP|@N<	_	21	case	_	_
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	igreja	igreja	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_

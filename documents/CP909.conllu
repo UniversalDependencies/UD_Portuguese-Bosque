@@ -25,7 +25,7 @@
 2	Metropolitana	Metropolitana	PROPN	PROP|@N<	Number=Sing	1	name	_	_
 3	já	já	ADV	ADV|@ADVL>	_	4	advmod	_	_
 4	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	mesa	mesa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	dobj	_	_
+5	mesa	mesa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
 6	eleita	eleger	VERB	<mv>|V|PCP|F|S|@ICL-<OC	Gender=Fem|Number=Sing|VerbForm=Part	4	xcomp	_	_
 
 # text A Assembleia da Área Metropolitana de Lisboa (AML) continua a debater-se com o problema da falta de instalações, mas pelo menos já tem mesa.
@@ -47,7 +47,7 @@
 12	continua	continuar	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
 13	a	a	ADP	PRP|@PRT-AUX<	_	14	nmod	_	_
 14	debater-	debater	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-15	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	14	dobj	_	_
+15	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	14	obj	_	_
 16	com	com	ADP	PRP|@<ADVL	_	18	case	_	_
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	problema	problema	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
@@ -57,13 +57,13 @@
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	instalações	instalação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	21	nmod	_	_
 24	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-25	mas	mas	CONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	_
+25	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	_
 26	por	por	ADP	<sam->|PRP|@N<	_	28	case	_	_
 27	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	30	nmod	_	_
 29	já	já	ADV	ADV|@ADVL>	_	30	advmod	_	_
 30	tem	ter	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_
-31	mesa	mesa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	30	dobj	_	_
+31	mesa	mesa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	30	obj	_	_
 32	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text A eleição decorreu ontem, num acto com algumas peripécias, mas sem grandes surpresas, já que se cumpriu o acordo previamente estabelecido entre a CDU e o PS.
@@ -83,23 +83,23 @@
 10	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	11	det	_	_
 11	peripécias	peripécia	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	_
 12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-13	mas	mas	CONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+13	mas	mas	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
 14	sem	sem	ADP	<cjt>|PRP|@N<ARG	_	16	case	_	_
 15	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	16	amod	_	_
 16	surpresas	surpresa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	conj	_	_
 17	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 18	já	já	ADV	ADV|@SUB	_	21	mark	_	MWE=já_que
-19	que	que	SCONJ	KS|@A<	_	18	mwe	_	_
+19	que	que	SCONJ	KS|@A<	_	18	fixed	_	_
 20	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	21	nsubj	_	_
 21	cumpriu	cumprir	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	acordo	acordo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	21	dobj	_	_
+23	acordo	acordo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	21	obj	_	_
 24	previamente	previamente	ADV	ADV|@ADVL>	_	25	advmod	_	_
 25	estabelecido	estabelecer	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	23	acl	_	_
 26	entre	entre	ADP	PRP|@<ADVL	_	28	case	_	_
 27	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
 28	CDU	CDU	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	_
-29	e	e	CONJ	<co-prparg>|KC|@CO	_	28	cc	_	_
+29	e	e	CCONJ	<co-prparg>|KC|@CO	_	28	cc	_	_
 30	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	PS	PS	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	28	conj	_	_
 32	.	.	PUNCT	PU|@PU	_	3	punct	_	_

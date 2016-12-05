@@ -53,7 +53,7 @@
 # id 3300
 1	há	haver	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	número	número	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	dobj	_	_
+3	número	número	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
 4	cada	cada	ADP	PRP|@>A	_	5	case	_	MWE=cada_vez
 5	vez	vez	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
 6	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
@@ -65,15 +65,15 @@
 12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	eventos	evento	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
 14	desportivos	desportivo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	_
-15	e	e	CONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
 16	isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	17	nsubj	_	_
 17	faz	fazer	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
 18	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	17	xcomp	_	_
 19	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
-20	probabilidades	probabilidade	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	18	dobj	_	_
+20	probabilidades	probabilidade	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	18	obj	_	_
 21	de	de	ADP	PRP|@N<	_	22	mark	_	_
 22	seleccionar	seleccionar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	acl	_	_
-23	atletas	atleta	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	22	dobj	_	_
+23	atletas	atleta	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	22	obj	_	_
 24	com	com	ADP	PRP|@N<	_	26	case	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	constituição	constituição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
@@ -126,8 +126,8 @@
 37	potencialmente	potencialmente	ADV	ADV|@>A	_	38	advmod	_	_
 38	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	20	acl:relcl	_	_
 39	de	de	ADP	<sam->|PRP|@COM	_	40	case	_	MWE=do_que
-40	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	45	mwe	_	_
-41	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	40	mwe	_	_
+40	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	45	fixed	_	_
+41	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	40	fixed	_	_
 42	em	em	ADP	<first-cjt>|PRP|@KOMP<	_	45	case	_	_
 43	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	45	det	_	_
 44	outro	outro	DET	<diff>|<KOMP>|DET|M|S|@>N	Gender=Masc|Number=Sing	45	det	_	_
@@ -182,8 +182,8 @@
 8	campeãs	campeã	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
 9	chinesas	chinês	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	8	amod	_	_
 10	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-11	por	por	ADP	PRP|@ADVL>	_	16	cc	_	MWE=por_exemplo|MWEPOS=CONJ
-12	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	11	mwe	_	_
+11	por	por	ADP	PRP|@ADVL>	_	16	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
+12	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	11	fixed	_	_
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 14	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
 15	absolutamente	absolutamente	ADV	ADV|@<ADVL	_	16	advmod	_	_
@@ -202,7 +202,7 @@
 5	elas	ele	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_
 6	correm	correr	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	maratona	maratona	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	dobj	_	_
+8	maratona	maratona	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
 9	por	por	ADP	PRP|@N<	_	10	case	_	_
 10	dia	dia	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
 11	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
@@ -217,7 +217,7 @@
 20	mês	mês	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
 21	!	!	PUNCT	PU|@PU	_	6	punct	_	_
 22	--	--	PUNCT	PU|@PU	_	18	punct	_	_
-23	e	e	CONJ	<co-fcl>|<co-fmv>|<co-vfin>|KC|@CO	_	6	cc	_	_
+23	e	e	CCONJ	<co-fcl>|<co-fmv>|<co-vfin>|KC|@CO	_	6	cc	_	_
 24	durante	durante	ADP	<first-cjt>|PRP|@ADVL>	_	25	case	_	_
 25	cinco	cinco	NUM	<card>|NUM|F|P|@P<	_	34	nmod	_	_
 26	a	a	ADP	PRP|@P<	_	28	case	_	_

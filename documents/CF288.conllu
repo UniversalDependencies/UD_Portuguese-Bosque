@@ -31,11 +31,11 @@
 9	quadro	quadro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 10	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	11	advmod	_	_
 11	claro	claro	ADJ	<first-cjt>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	_
-12	e	e	CONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
 13	definido	definir	VERB	<cjt>|V|PCP|M|S|@N<	Gender=Masc|Number=Sing|VerbForm=Part	11	conj	_	_
 14	de	de	ADP	<sam->|PRP|@COM	_	15	case	_	MWE=do_que
-15	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	17	mwe	_	_
-16	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	15	mwe	_	_
+15	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	17	fixed	_	_
+16	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	15	fixed	_	_
 17	o	o	DET	<first-cjt>|<dem>|DET|M|S|@KOMP<	Gender=Masc|Number=Sing|PronType=Dem	11	advmod	_	_
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
@@ -67,7 +67,7 @@
 17	José	José	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	16	appos	_	MWE=José_Sarney
 18	Sarney	Sarney	PROPN	PROP|@N<	Number=Sing	17	name	_	_
 19	encontra-	encontrar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-20	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	dobj	_	_
+20	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
 21	por	por	ADP	<sam->|PRP|@N<	_	23	case	_	_
 22	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	_
@@ -76,7 +76,7 @@
 26	afastada	afastar	VERB	<mv>|V|PCP|F|S|@ICL-<OC	Gender=Fem|Number=Sing|VerbForm=Part	19	xcomp	_	_
 27	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 28	abrindo	abrir	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	19	advcl	_	_
-29	espaço	espaço	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	28	dobj	_	_
+29	espaço	espaço	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	28	obj	_	_
 30	para	para	ADP	PRP|@N<ARG	_	36	mark	_	_
 31	que	que	SCONJ	KS|@SUB	_	36	mark	_	_
 32	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
@@ -117,7 +117,7 @@
 16	Justiça	Justiça	PROPN	PROP|@P<	Number=Sing	13	nmod	_	_
 17	acate	acatar	VERB	<first-cjt>|<mv>|V|PR|3S|SUBJ|@FS-<SC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	denúncia	denúncia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	dobj	_	_
+19	denúncia	denúncia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
 20	de	de	ADP	PRP|@N<ARG	_	21	case	_	_
 21	estelionato	estelionato	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
 22	apresentada	apresentar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	21	acl	_	_
@@ -129,7 +129,7 @@
 28	contra	contra	ADP	PRP|@N<	_	29	case	_	_
 29	Orestes	Orestes	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	MWE=Orestes_Quércia
 30	Quércia	Quércia	PROPN	PROP|@N<	Number=Sing	29	name	_	_
-31	e	e	CONJ	<co-fcl>|<co-vfin>|KC|@CO	_	17	cc	_	_
+31	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	17	cc	_	_
 32	que	que	SCONJ	KS|@SUB	_	43	mark	_	_
 33	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 34	em	em	ADP	<sam->|PRP|@ADVL>	_	36	case	_	_
@@ -187,7 +187,7 @@
 19	inviabilizar	inviabilizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	dep	_	_
 20	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 21	eventual	eventual	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	22	amod	_	_
-22	candidatura	candidatura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	dobj	_	_
+22	candidatura	candidatura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
 23	Sarney	Sarney	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	22	appos	_	_
 24	por	por	ADP	PRP|@<ADVL	_	25	case	_	_
 25	falta	falta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
@@ -200,9 +200,9 @@
 32	como	como	ADV	<co-fcl>|<rel>|ADV|@CO	_	8	cc	_	_
 33	também	também	ADV	ADV|@ADVL>	_	34	advmod	_	_
 34	há	haver	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
-35	informações	informação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	34	dobj	_	_
+35	informações	informação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	34	obj	_	_
 36	dando	dar	VERB	<mv>|V|GER|@ICL-N<	VerbForm=Ger	35	acl	_	_
-37	conta	conta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	36	dobj	_	_
+37	conta	conta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	36	obj	_	_
 38	de	de	ADP	PRP|@N<ARG	_	45	mark	_	_
 39	que	que	SCONJ	KS|@SUB	_	45	mark	_	_
 40	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
@@ -212,7 +212,7 @@
 44	breve	breve	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	45	nmod	_	_
 45	anunciar	anunciar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	37	acl	_	_
 46	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing	47	det	_	_
-47	apoio	apoio	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	45	dobj	_	_
+47	apoio	apoio	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	45	obj	_	_
 48	a	a	ADP	PRP|@N<	_	49	case	_	_
 49	Fernando	Fernando	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	47	nmod	_	MWE=Fernando_Henrique_Cardoso
 50	Henrique	Henrique	PROPN	PROP|@N<	Number=Sing	49	name	_	_

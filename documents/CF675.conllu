@@ -7,7 +7,7 @@
 2	negócios	negócio	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	foram	ser	AUX	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	aux	_	_
 4	iniciados	iniciar	VERB	<mv>|<first-cjt>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-5	ou	ou	CONJ	<co-pcp>|<co-aux<>|KC|@CO	_	4	cc	_	_
+5	ou	ou	CCONJ	<co-pcp>|<co-aux<>|KC|@CO	_	4	cc	_	_
 6	fechados	fechar	VERB	<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	4	parataxis	_	_
 7	durante	durante	ADP	PRP|@<ADVL	_	9	case	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
@@ -24,11 +24,11 @@
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	Paraíba	Paraíba	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 5	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-6	por	por	ADP	PRP|@ADVL>	_	9	cc	_	MWE=por_exemplo|MWEPOS=CONJ
-7	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	6	mwe	_	_
+6	por	por	ADP	PRP|@ADVL>	_	9	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
+7	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	6	fixed	_	_
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	venderam	vender	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
-10	abacaxi	abacaxi	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	9	dobj	_	_
+10	abacaxi	abacaxi	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	9	obj	_	_
 11	a	a	ADP	PRP|@<PIV	_	13	case	_	_
 12	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	grupo	grupo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
@@ -70,15 +70,15 @@
 18	acertou	acertar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 19	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 20	joint	joint	NOUN	N|@>N	_	21	compound	_	MWE=joint_venture
-21	venture	venture	NOUN	N|@<ACC	_	18	dobj	_	_
+21	venture	venture	NOUN	N|@<ACC	_	18	obj	_	_
 22	com	com	ADP	PRP|@N<	_	24	case	_	_
 23	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	empresário	empresário	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
 25	português	português	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	24	amod	_	_
 26	para	para	ADP	PRP|@N<	_	27	mark	_	_
 27	produzir	produzir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	acl	_	_
-28	melão	melão	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	27	dobj	_	_
-29	e	e	CONJ	<co-acc>|KC|@CO	_	28	cc	_	_
+28	melão	melão	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	27	obj	_	_
+29	e	e	CCONJ	<co-acc>|KC|@CO	_	28	cc	_	_
 30	uva	uva	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	conj	_	_
 31	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
@@ -95,7 +95,7 @@
 6	negociações	negociação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
 7	para	para	ADP	PRP|@N<ARG	_	8	mark	_	_
 8	instalar	instalar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	_
-9	unidades	unidade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	dobj	_	_
+9	unidades	unidade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	_
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	beneficiamento	beneficiamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
 12	de	de	ADP	PRP|@N<ARG	_	13	case	_	_

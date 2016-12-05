@@ -32,7 +32,7 @@
 27	CCB	CCB	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
 28	,	,	PUNCT	PU|@PU	_	30	punct	_	_
 29	630	630	NUM	<card>|NUM|M|P|@>N	_	30	nummod	_	_
-30	telefones	telefone	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	21	dobj	_	_
+30	telefones	telefone	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	21	obj	_	_
 31	directos	directo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	30	amod	_	_
 32	,	,	PUNCT	PU|@PU	_	30	punct	_	_
 33	25	25	NUM	<card>|NUM|M|P|@>N	_	34	nummod	_	_
@@ -42,7 +42,7 @@
 37	aparelhos	aparelho	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	30	conj	_	_
 38	de	de	ADP	PRP|@N<	_	39	case	_	_
 39	telex	telex	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	37	nmod	_	_
-40	e	e	CONJ	<co-acc>|KC|@CO	_	30	cc	_	_
+40	e	e	CCONJ	<co-acc>|KC|@CO	_	30	cc	_	_
 41	350	350	NUM	<card>|NUM|F|P|@>N	_	42	nummod	_	_
 42	máquinas	máquinas	NOUN	<cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	30	conj	_	MWE=máquinas_de_escrever
 43	de	de	ADP	PRP|@N<	_	44	case	_	_
@@ -59,7 +59,7 @@
 54	usem	usar	VERB	<mv>|V|PR|3P|SUBJ|@FS-N<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	51	acl:relcl	_	_
 55	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	_	_
 56	respectivo	respectivo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	57	amod	_	_
-57	computador	computador	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	54	dobj	_	_
+57	computador	computador	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	54	obj	_	_
 58	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text À primeira vista, se compararmos os números -- de jornalistas e de telefones, por exemplo --, não parece estar garantido de antemão que, nas horas de ponta, se evitem os «engarrafamentos».
@@ -74,16 +74,16 @@
 5	se	se	SCONJ	KS|@SUB	_	6	mark	_	_
 6	compararmos	comparar	VERB	<mv>|V|FUT|1P|SUBJ|@FS-ADVL>	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	23	advcl	_	_
 7	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
-8	números	número	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	dobj	_	_
+8	números	número	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	obj	_	_
 9	--	--	PUNCT	PU|@PU	_	11	punct	_	_
 10	de	de	ADP	<first-cjt>|PRP|@N<PRED	_	11	case	_	_
 11	jornalistas	jornalista	NOUN	<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	8	nmod	_	_
-12	e	e	CONJ	<co-n<pred>|<co-pred>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	11	cc	_	_
 13	de	de	ADP	<cjt>|PRP|@N<PRED	_	14	case	_	_
 14	telefones	telefone	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
 15	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-16	por	por	ADP	PRP|@P<	_	14	cc	_	MWE=por_exemplo|MWEPOS=CONJ
-17	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	16	mwe	_	_
+16	por	por	ADP	PRP|@P<	_	14	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
+17	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	16	fixed	_	_
 18	--	--	PUNCT	PU|@PU	_	11	punct	_	_
 19	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 20	não	não	ADV	ADV|@ADVL>	_	23	neg	_	_
@@ -100,7 +100,7 @@
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
 32	ponta	ponta	NOUN	N|@P<	_	30	nmod	_	_
 33	,	,	PUNCT	PU|@PU	_	30	punct	_	_
-34	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	35	dobj	_	_
+34	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	35	obj	_	_
 35	evitem	evitar	VERB	<cjt>|<mv>|<se-passive>|V|PR|3P|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	dep	_	_
 36	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_
 37	«	«	PUNCT	PU|@PU	_	38	punct	_	_

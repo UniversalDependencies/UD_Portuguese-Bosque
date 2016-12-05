@@ -38,10 +38,10 @@
 9	ontem	ontem	ADV	ADV|@P<	_	7	advmod	_	_
 10	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 11	nada	nada	PRON	<quant>|INDP|M|S|@>A	Gender=Masc|Number=Sing|PronType=Ind	12	nmod:npmod	_	_
-12	menos	menos	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ACC	_	3	dobj	_	_
+12	menos	menos	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ACC	_	3	obj	_	_
 13	de	de	ADP	<sam->|PRP|@COM	_	14	case	_	MWE=do_que
-14	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	17	mwe	_	_
-15	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	14	mwe	_	_
+14	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	17	fixed	_	_
+15	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	14	fixed	_	_
 16	oito	oito	NUM	<card>|NUM|F|P|@>N	_	17	nummod	_	_
 17	detenções	detenção	NOUN	<first-cjt>|<np-def>|N|F|P|@KOMP<	Gender=Fem|Number=Plur	12	nmod	_	_
 18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
@@ -73,7 +73,7 @@
 4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 5	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	6	nsubj	_	_
 6	teve	ter	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	_	_
-7	início	início	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	dobj	_	_
+7	início	início	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
 8	cerca	cerca	ADV	ADV|@<ADVL	_	6	advmod	_	MWE=cerca_de
 9	de	de	ADP	PRP|@A<	_	11	case	_	_
 10	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
@@ -81,7 +81,7 @@
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 13	visou	visar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 14	detectar	detectar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	13	xcomp	_	_
-15	indícios	indício	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	dobj	_	_
+15	indícios	indício	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	tráfico	tráfico	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
 18	de	de	ADP	PRP|@N<ARG	_	19	case	_	_
@@ -103,7 +103,7 @@
 8	agentes	agente	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
 9	detiveram	deter	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 10	três	três	NUM	<card>|NUM|M|P|@>N	_	11	nummod	_	_
-11	homens	homem	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	9	dobj	_	_
+11	homens	homem	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	9	obj	_	_
 12	(	(	PUNCT	PU|@PU	_	14	punct	_	_
 13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	estucador	estucador	NOUN	<first-cjt>|<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	11	appos	_	_
@@ -115,7 +115,7 @@
 20	padeiro	padeiro	NOUN	<cjt>|<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	14	conj	_	_
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
 22	19	19	NUM	<card>|NUM|M|P|@P<	_	20	nmod	_	_
-23	e	e	CONJ	<co-app>|KC|@CO	_	14	cc	_	_
+23	e	e	CCONJ	<co-app>|KC|@CO	_	14	cc	_	_
 24	um	um	NUM	<card>|NUM|M|S|@>N	_	25	nummod	_	_
 25	empregado	empregado	NOUN	<cjt>|<np-def>|N|M|S|@APP	Gender=Masc|Number=Sing	14	conj	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
@@ -123,7 +123,7 @@
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	24	24	NUM	<card>|NUM|M|P|@P<	_	25	nmod	_	_
 30	)	)	PUNCT	PU|@PU	_	14	punct	_	_
-31	e	e	CONJ	<co-acc>|KC|@CO	_	11	cc	_	_
+31	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	_
 32	três	três	NUM	<card>|NUM|F|P|@>N	_	33	nummod	_	_
 33	mulheres	mulher	NOUN	<cjt>|<np-def>|N|F|P|@ACC>	Gender=Fem|Number=Plur	11	conj	_	_
 34	(	(	PUNCT	PU|@PU	_	36	punct	_	_
@@ -137,7 +137,7 @@
 42	estudante	estudante	NOUN	<cjt>|<np-idf>|N|F|S|@ICL-APP	Gender=Fem|Number=Sing	36	conj	_	_
 43	de	de	ADP	PRP|@N<	_	44	case	_	_
 44	16	16	NUM	<card>|NUM|F|P|@P<	_	42	nmod	_	_
-45	e	e	CONJ	<co-app>|KC|@CO	_	36	cc	_	_
+45	e	e	CCONJ	<co-app>|KC|@CO	_	36	cc	_	_
 46	uma	um	NUM	<card>|NUM|F|S|@>N	_	47	nummod	_	_
 47	tecedeira	tecedeira	NOUN	<cjt>|<np-def>|N|F|S|@ICL-APP	Gender=Fem|Number=Sing	36	conj	_	_
 48	de	de	ADP	PRP|@N<	_	49	case	_	_

@@ -19,7 +19,7 @@
 14	recebam	receber	VERB	<mv>|V|PR|3P|SUBJ|@FS-P<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_
 15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 16	menor	pequeno	ADJ	<KOMP>|<COMP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	17	amod	_	_
-17	volume	volume	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	dobj	_	_
+17	volume	volume	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
 18	de	de	ADP	PRP|@N<	_	19	case	_	_
 19	capitais	capital	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
 20	externos	externo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	19	amod	_	_
@@ -29,8 +29,8 @@
 24	(	(	PUNCT	PU|@PU	_	25	punct	_	_
 25	aplicados	aplicar	VERB	<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	19	acl	_	_
 26	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-27	por	por	ADP	PRP|@<ADVL	_	25	cc	_	MWE=por_exemplo|MWEPOS=CONJ
-28	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	27	mwe	_	_
+27	por	por	ADP	PRP|@<ADVL	_	25	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
+28	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	27	fixed	_	_
 29	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 30	em	em	ADP	PRP|@<ADVL	_	31	case	_	_
 31	eurobônus	eurobônus	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	_
@@ -102,7 +102,7 @@
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	houve	haver	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	saída	saída	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	dobj	_	_
+8	saída	saída	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	US$	US$	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
 11	100	100	NUM	<card>|NUM|M|P|@>N	_	12	nummod	_	_
@@ -142,7 +142,7 @@
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	Bolsas	bolsa	NOUN	<prop>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	_
 13	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-14	mas	mas	CONJ	<co-piv>|KC|@CO	_	9	cc	_	_
+14	mas	mas	CCONJ	<co-piv>|KC|@CO	_	9	cc	_	_
 15	sim	sim	ADV	<cjt>|<Es>|ADV|@<ADVL	_	9	conj	_	_
 16	de	de	ADP	<cjt>|PRP|@<PIV	_	17	case	_	_
 17	operações	operação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	conj	_	_
@@ -155,7 +155,7 @@
 24	tendo	ter	VERB	<mv>|V|GER|@ICL-N<	VerbForm=Ger	23	acl	_	_
 25	como	como	ADP	<prd>|PRP|@<OC	_	26	case	_	_
 26	lastro	lastro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	xcomp	_	_
-27	ações	ação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	24	dobj	_	_
+27	ações	ação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	24	obj	_	_
 28	)	)	PUNCT	PU|@PU	_	23	punct	_	_
 29	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
@@ -174,7 +174,7 @@
 8	mercado	mercado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 9	acionário	acionário	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	8	amod	_	_
 10	crescerá	crescer	VERB	<mv>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	ccomp	_	_
-11	e	e	CONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+11	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	custódia	custódia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_

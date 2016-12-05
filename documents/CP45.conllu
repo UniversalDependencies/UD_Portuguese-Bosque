@@ -4,16 +4,16 @@
 # sent_id CP45-1
 # id 254
 1	Dezena	Dezena	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	3	det	_	MWE=Dezena_de
-2	de	de	ADP	PRP|@A<	_	1	mwe	_	_
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	timorenses	timorenses	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
-4	e	e	CONJ	<co-subj>|KC|@CO	_	3	cc	_	_
+4	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
 5	portugueses	português	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	conj	_	_
 6	«	«	PUNCT	PU|@PU	_	7	punct	_	_
 7	ocupam	ocupar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	»	»	PUNCT	PU|@PU	_	7	punct	_	_
 9	pacificamente	pacificamente	ADV	ADV|@<ADVL	_	7	advmod	_	_
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	pavilhão	pavilhão	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	dobj	_	_
+11	pavilhão	pavilhão	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
 12	indonésio	indonésio	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	15	det	_	_
@@ -58,7 +58,7 @@
 8	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	MPLA	MPLA	NOUN	N|@P<	_	6	nmod	_	_
 10	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-11	e	e	CONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+11	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
 12	Jonas	Jonas	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	MWE=Jonas_Savimbi
 13	Savimbi	Savimbi	PROPN	PROP|@N<	Number=Sing	12	name	_	_
 14	,	,	PUNCT	PU|@PU	_	15	punct	_	_
@@ -68,7 +68,7 @@
 18	Unita	Unita	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
 19	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 20	encontram-	encontrar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-21	se	se	PRON	<refl>|PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	dobj	_	_
+21	se	se	PRON	<refl>|PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	obj	_	_
 22	em	em	ADP	<sam->|PRP|@<ADVL	_	24	case	_	_
 23	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	24	det	_	_
 24	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
@@ -95,7 +95,7 @@
 3	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
 4	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	ccomp	_	_
 5	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
-6	eleições	eleição	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	dobj	_	_
+6	eleições	eleição	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
 7	presidenciais	presidencial	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	6	amod	_	_
 8	se	se	SCONJ	KS|@SUB	_	9	mark	_	_
 9	fizer	fazer	VERB	<mv>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	advcl	_	_
@@ -118,11 +118,11 @@
 2	Presidente	presidente	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	cancela	cancelar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	6	det	_	MWE=todos_os
-5	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	mwe	_	_
-6	compromissos	compromisso	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	dobj	_	_
-7	e	e	CONJ	<co-vfin>|KC|@CO	_	3	cc	_	_
+5	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	fixed	_	_
+6	compromissos	compromisso	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
+7	e	e	CCONJ	<co-vfin>|KC|@CO	_	3	cc	_	_
 8	fecha-	fechar	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
-9	se	se	PRON	<obj>|PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	dobj	_	_
+9	se	se	PRON	<obj>|PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
 10	em	em	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	12	det	_	_
 12	Casa	Casa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	MWE=Casa_Branca

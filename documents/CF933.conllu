@@ -8,7 +8,7 @@
 3	não	não	ADV	ADV|@ADVL>	_	4	neg	_	_
 4	proíbe	proibir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	gravidez	gravidez	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	dobj	_	_
+6	gravidez	gravidez	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
 7	pós-menopausa	pós-menopausa	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	6	nmod:npmod	_	_
 
 # text Editor-assistente de Ciência
@@ -80,11 +80,11 @@
 24	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	23	name	_	_
 25	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 26	França	França	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	23	appos	_	_
-27	e	e	CONJ	<co-pred>|KC|@CO	_	23	cc	_	_
+27	e	e	CCONJ	<co-pred>|KC|@CO	_	23	cc	_	_
 28	Itália	Itália	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	23	appos	_	_
 29	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-30	por	por	ADP	PRP|@<ADVL	_	23	cc	_	MWE=por_exemplo|MWEPOS=CONJ
-31	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	30	mwe	_	_
+30	por	por	ADP	PRP|@<ADVL	_	23	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
+31	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	30	fixed	_	_
 32	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text Mas, como nesses países, os avanços nas pesquisas médicas tornaram os códigos de ética ultrapassados.
@@ -92,7 +92,7 @@
 # source CETENFolha n=933 cad=Mais! sec=nd sem=94b
 # sent_id CF933-6
 # id 3949
-1	Mas	mas	CONJ	KC|@CO	_	14	cc	_	_
+1	Mas	mas	CCONJ	KC|@CO	_	14	cc	_	_
 2	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 3	como	como	ADP	<com>|PRP|@ADVL>	_	6	case	_	_
 4	em	em	ADP	<sam->|PRP|@P<	_	6	case	_	_
@@ -107,7 +107,7 @@
 13	médicas	médico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	12	amod	_	_
 14	tornaram	tornar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
-16	códigos	código	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	dobj	_	_
+16	códigos	código	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
 17	de	de	ADP	PRP|@N<	_	18	case	_	_
 18	ética	ética	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
 19	ultrapassados	ultrapassar	VERB	<mv>|V|PCP|M|P|@ICL-<OC	Gender=Masc|Number=Plur|VerbForm=Part	14	xcomp	_	_
@@ -124,7 +124,7 @@
 4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	gravidez	gravidez	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 6	pós-menopausa	pós-menopausa	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	5	nmod:npmod	_	_
-7	e	e	CONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+7	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	uso	uso	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
 10	de	de	ADP	PRP|@N<ARG	_	11	case	_	_
@@ -134,7 +134,7 @@
 14	abortados	abortar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	13	acl	_	_
 15	(	(	PUNCT	PU|@PU	_	16	punct	_	_
 16	veja	ver	VERB	<mv>|V|PR|2S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	24	dep	_	_
-17	texto	texto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	dobj	_	_
+17	texto	texto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	_
 18	a	a	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	pág.	pág.	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
