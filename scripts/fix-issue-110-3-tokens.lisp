@@ -1,5 +1,6 @@
 (ql:quickload :cl-conllu)
 (ql:quickload :alexandria)
+(ql:quickload :cl-fad)
 
 (in-package :cl-conllu)
 
@@ -8,19 +9,25 @@
      on list
      collect (list x y z)))
 
-(defun isolated-tree (t1 t2 t3)
-  "T1 T2 T3 form an isolated three. In other words, T1 points outside T2
-and T3, and T2 and T3 should either point at T1 or each other."
+;; NB: this doesn't check if t1 t2 t3 actually form a tree, but it
+;; works for us since there are other checks later in the pipeline
+;; that do check this---and we have the assumption that we are
+;; receiving a well formed CoNLL anyway.  Also this could be more
+;; elegantly implemented as a lowest common ancestor / search
+;; operation, since eventually we'll need an implementation that
+;; supports a varying number of nodes.
+(defun isolated? (t1 t2 t3)
+  "T1 T2 T3 are isolated. In other words, T1 points outside T2 and T3,
+and T2 and T3 should either point at T1 or each other."
   (let ((id1 (slot-value t1 'id))
         (id2 (slot-value t2 'id))
         (id3 (slot-value t3 'id))
         (h1 (slot-value t1 'head))
         (h2 (slot-value t2 'head))
         (h3 (slot-value t3 'head)))
-    (and (not (eq h1 id2))
-         (not (eq h1 id3))
-         (or (eq h3 id1) (eq h3 id2))
-         (or (eq h2 id1) (eq h2 id3)))))
+    (and (not (member h1 (list id2 id3)))
+         (member h2 `(,id1 ,id3))
+         (member h3 `(,id1 ,id2)))))
 
 (defun fix-mwe (tokens mwe sent-id)
   (when tokens
@@ -31,8 +38,7 @@ and T3, and T2 and T3 should either point at T1 or each other."
       (when (and 
              t1 t2 t3
              (string-equal (slot-value t1 'misc) (format nil "MWE=~a" mwe)))
-
-        (if (isolated-tree t1 t2 t3)
+        (if (isolated? t1 t2 t3)
             (progn 
               (setf (slot-value t1 'upostag) "NOUN")
               (setf (slot-value t1 'xpostag) "_")
@@ -111,3 +117,8 @@ and T3, and T2 and T3 should either point at T1 or each other."
 
 ;; to replicate
 ;; (write-conllu (fix-corpus (read-conllu "bosque.udep.conll")) "bosque.fixed")
+(defun run ()
+  (dolist (f (cl-fad:list-directory #p "documents/"))
+    (write-conllu (fix-corpus (read-conllu f)) f)))
+;; and then concatenate all documents/* into bosque.udep.conll (via
+;; join-documents.sh)
