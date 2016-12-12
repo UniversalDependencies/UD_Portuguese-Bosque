@@ -39,6 +39,7 @@ ID3.  DEP-T2-T1 is the new dependency relation between T2 and T1."
         (setf (slot-value t1 'xpostag) "_")
         (setf (slot-value t2 'upostag) "VERB")
         (setf (slot-value t2 'xpostag) "_")
+        (setf (slot-value t2 'lemma) "ser")
 
         (setf (slot-value t1 'misc) (format nil "MWE=ou_seja|MWEPOS=CCONJ"))))))
 
@@ -67,8 +68,8 @@ ID3.  DEP-T2-T1 is the new dependency relation between T2 and T1."
   (mapc (lambda (s) (mapc #'fix-ou-seja (collect-next-element (sentence-tokens s)))) sentences)
   (mapc (lambda (s) (mapc #'fix-isto-e (collect-next-element (sentence-tokens s)))) sentences))
 
-;; to replicate
-(dolist (f (cl-fad:list-directory #p "documents/"))
-  (write-conllu (fix-corpus (read-conllu f)) f))
+(defun run ()
+  (dolist (f (cl-fad:list-directory #p "documents/"))
+    (write-conllu (fix-corpus (read-conllu f)) f)))
 ;; and then concatenate all documents/* into bosque.udep.conll (via
 ;; join-documents.sh)
