@@ -39,7 +39,7 @@
     (setf (slot-value (car tokens) 'head) (car external-connection))
     (setf (slot-value (car tokens) 'deprel) (cdr external-connection)))
   (mapc (lambda (tk)
-          (setf (slot-value tk 'head) (slot-value (first tokens) 'id))
+          (setf (slot-value tk 'head) (slot-value (car tokens) 'id))
           (setf (slot-value tk 'deprel) deprel))
         (cdr tokens)))
 
