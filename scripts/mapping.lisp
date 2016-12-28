@@ -63,3 +63,22 @@
 	(mapping (cdr new) rest matriz (cons (cons (car new) best) map)))))
 
 
+
+
+
+;;;
+
+(defun range (n)
+  (loop for x from 0 to (1- n) collect x))
+
+
+(defun transform-preferences (matriz)
+  (let* ((dim (array-dimensions matriz)) 
+	 (out (make-array dim :initial-element nil)))
+    (dotimes (row (car dim) out)
+      (let ((s (sort (loop for col from 0 to (1- (cadr dim)) collect (cons col (aref matriz row col)))
+		     #'< :key #'cdr)))
+	(mapc (lambda (a b)
+		(setf (aref out row b) (car a)))
+	      s (range (cadr dim)))))))
+
