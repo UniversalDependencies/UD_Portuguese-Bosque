@@ -1,7 +1,7 @@
 
 ;; To be added to mapping.lisp
 ;;
-;; STABLE MATCHING: BEGIN - STILL NOT WORKING
+;; STABLE MATCHING: BEGIN - WORKING VERSION
 ;;
 ;; See: https://en.wikipedia.org/wiki/Stable_marriage_problem
 ;; 
