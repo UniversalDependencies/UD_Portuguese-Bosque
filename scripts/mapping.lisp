@@ -72,7 +72,7 @@
   (loop for x from 0 to (1- n) collect x))
 
 
-(defun transform-preferences (matriz)
+(defun transform-to-mens-preferences (matriz)
   (let* ((dim (array-dimensions matriz)) 
 	 (out (make-array dim :initial-element nil)))
     (dotimes (row (car dim) out)
@@ -83,3 +83,26 @@
 		  #'< :key #'cdr)
 	    (range (cadr dim))))))
 
+(defun mens-preference-matrix->mens-preference-list-of-lists (matriz)
+  (let* ((dim (array-dimensions matriz))
+	 (preference-list->man
+	  (lambda (index pref-list)
+	    (let ((pointer ...))
+	      (cons index (cons pointer pref-list))))))
+    (loop for row from 0 to (1- (car dim))
+       collect
+	 (mapcar preference-list->man
+		 (loop for col from 0 to (1- (cadr dim))
+		      (collect
+			  (aref matriz row col)))))))
+    
+
+
+
+(defun test ()
+  (let* ((dim '(3 4))
+	 (matriz (make-array dim :initial-contents
+			      '((4 2 7 10)
+				(3 1 0 4)
+				(5 10 9 1)) )))
+    (transform-preferences matriz)))
