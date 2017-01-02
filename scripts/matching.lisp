@@ -49,14 +49,14 @@
 	  (update-proposal-list! candidate-pair)
 	  (let ((updated-proposing-men
 		 (insert-proponent candidate-pair (remaining-proposing-men proposing-men))))
-	    (if (eq updated-proposing-men nil)
+	    (if (null updated-proposing-men)
 		matching
 		(matching-round updated-proposing-men matching)))) ; candidate-pair was rejected my candidate in favour of proponent, so he returns to the candidate-pair structure
 	(progn
 	  (update-proposal-list! proponent)
 	  (let ((updated-proposing-men
 		 (insert-proponent proponent (remaining-proposing-men proposing-men))))
-	    (if (eq updated-proposing-men nil)
+	    (if (null updated-proposing-men)
 		matching
 		(matching-round updated-proposing-men matching))))))) ;; If proponent was rejected, he'll still be at proposing-men, unless he was already rejected by every (acceptable) woman
 
@@ -78,7 +78,7 @@
 (defun insert-proponent (man proposing-men)
   ;; Returns proposing-men structure with man inserted
   ;; if man is actually a nil (or a woman) [which may happen if the woman was single], returns proposing-men
-  (if (or (eq man nil) (eq (get-next-proposal-list man) nil))
+  (if (or (null man) (null (get-next-proposal-list man)))
       ;; A man won't return to the proponent list if i) he isn't a man at all; or ii) he has already proposed to every (acceptable) woman
       proposing-men
       (cons man proposing-men)))
@@ -96,7 +96,7 @@
   ;; This function is called when man1 is rejected by his most-preferred-woman-that-hasn't-rejected-him-yet.
   ;; We just need to move one step down in his preference order
   ;; Returns man
-  (if (not (eq man1 nil))
+  (if man1
       (let ((current-most-preferred (cadr man1)))
 	(progn
 	  (setf (cadr man1) (cdr current-most-preferred))
@@ -127,8 +127,7 @@
   ;; Gets woman's pair in this matching
   ;; If there's none, will return nil [or herself?]
   (let ((womans-match-index (aref (cdr matching) (car woman))))
-    (if (eq womans-match-index nil)
-	nil
+    (if womans-match-index
 	(find-person-with-index womans-match-index *men*))))
 
 (defun update-matching! (woman1 man2 matching)
