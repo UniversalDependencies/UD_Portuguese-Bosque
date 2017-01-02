@@ -28,10 +28,10 @@
 23	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 24	em	em	ADP	<sam->|PRP|@<ADVL	_	26	case	_	_
 25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	tarde	tarde	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+26	tarde	tarde	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	ChangedBy=Issue137
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
 28	quinta-feira	quinta-feira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	_
-29	passada	passar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	28	acl	_	_
+29	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	28	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	ministro	ministro	NOUN	N|@SUBJ>	_	38	nsubj	_	MWE=ministro_dos_Negócios_Estrangeiros
@@ -48,7 +48,7 @@
 43	,	,	PUNCT	PU|@PU	_	42	punct	_	_
 44	com	com	ADP	PRP|@<ADVL	_	46	case	_	_
 45	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_
-46	argumento	argumento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	38	nmod	_	_
+46	argumento	argumento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	38	obl	_	ChangedBy=Issue137
 47	de	de	ADP	PRP|@N<ARG	_	50	mark	_	_
 48	«	«	PUNCT	PU|@PU	_	51	punct	_	_
 49	estar	estar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	51	cop	_	_
@@ -92,7 +92,7 @@
 # source CETEMPúblico n=995 sec=pol sem=91b
 # sent_id CP995-2
 # id 5110
-1	Conhecido	conhecer	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	dep	_	_
+1	Conhecido	conhecido	ADJ	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing	9	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 2	por	por	ADP	PRP|@PASS	_	4	case	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 4	vizinhos	vizinho	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl:agent	_	_
@@ -102,7 +102,7 @@
 8	foi	ir	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux	_	_
 9	acenando	acenar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
 10	até	até	ADP	PRP|@<ADVL	_	12	mark	_	_
-11	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obj	_	_
+11	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl	_	ChangedBy=Issue135
 12	instalar	instalar	VERB	<mv>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	9	advcl	_	_
 13	mesmo	mesmo	ADV	<quant>|ADV|@>A	_	14	advmod	_	_
 14	junto	junto	ADV	ADV|@<ADVL	_	12	advmod	_	_
@@ -119,26 +119,26 @@
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	longe	longe	ADV	ADV|@ADVL	_	0	root	_	_
 3	de	de	ADP	PRP|@A<	_	4	case	_	_
-4	Guilherme	Guilherme	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	MWE=Guilherme_Oliveira_Martins
-5	Oliveira	Oliveira	PROPN	PROP|@N<	Number=Sing	4	flat:name	_	_
-6	Martins	Martins	PROPN	PROP|@N<	Number=Sing	4	flat:name	_	_
+4	Guilherme	Guilherme	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=Guilherme_Oliveira_Martins|MWEPOS=PROPN
+5	Oliveira	Oliveira	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
+6	Martins	Martins	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 7	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	assessor	assessor	NOUN	<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	4	appos	_	_
 10	político	político	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
-12	Mário	Mário	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	MWE=Mário_Soares
-13	Soares	Soares	PROPN	PROP|@N<	Number=Sing	12	flat:name	_	_
+12	Mário	Mário	PROPN	_	Gender=Masc|Number=Sing	9	nmod	_	ChangedBy=Issue119|MWE=Mário_Soares|MWEPOS=PROPN
+13	Soares	Soares	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 15	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	16	nsubj	_	_
 16	deixará	deixar	VERB	<mv>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	acl:relcl	_	_
 17	Belém	Belém	PROPN	PROP|M/F|S|@<ACC	Gender=Unsp|Number=Sing	16	obj	_	_
 18	em	em	ADP	PRP|@<ADVL	_	19	case	_	_
-19	Setembro	setembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
+19	Setembro	setembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	ChangedBy=Issue137
 20	para	para	ADP	PRP|@<ADVL	_	21	mark	_	_
 21	assumir	assumir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	advcl	_	_
 22	por	por	ADP	PRP|@<ADVL	_	23	case	_	_
-23	inteiro	inteiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
+23	inteiro	inteiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	21	obl	_	ChangedBy=Issue137
 24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 25	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	26	det	_	_
 26	condição	condição	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	21	obj	_	_
@@ -147,8 +147,8 @@
 29	deputado	deputado	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
 30	por	por	ADP	<sam->|PRP|@N<	_	32	case	_	_
 31	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	Partido	Partido	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	MWE=Partido_Socialista
-33	Socialista	Socialista	PROPN	PROP|@N<	Number=Sing	32	flat:name	_	_
+32	Partido	Partido	PROPN	_	Gender=Masc|Number=Sing	29	nmod	_	ChangedBy=Issue119|MWE=Partido_Socialista|MWEPOS=PROPN
+33	Socialista	Socialista	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
 34	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text Há muito frequentador do local (os pais possuem uma residência em ...Boliqueime), Oliveira Martins tem visto os Tomates a transformarem-se na moda do Verão algarvio.
@@ -173,15 +173,15 @@
 15	Boliqueime	Boliqueime	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	9	nmod	_	_
 16	)	)	PUNCT	PU|@PU	_	9	punct	_	_
 17	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-18	Oliveira	Oliveira	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	21	nsubj	_	MWE=Oliveira_Martins
-19	Martins	Martins	PROPN	PROP|@N<	Number=Sing	18	flat:name	_	_
+18	Oliveira	Oliveira	PROPN	_	Gender=Masc|Number=Sing	21	nsubj	_	ChangedBy=Issue119|MWE=Oliveira_Martins|MWEPOS=PROPN
+19	Martins	Martins	PROPN	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
 20	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	_	_
 21	visto	ver	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	0	root	_	_
 22	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
 23	Tomates	Tomates	PROPN	<first-cjt>|PROP|M|P|@<ACC	Gender=Masc|Number=Plur	21	obj	_	_
 24	a	a	ADP	<cjt>|PRP|@<SA	_	25	mark	_	_
 25	transformarem-	transformar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	23	conj	_	_
-26	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	obj	_	_
+26	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	expl	_	ChangedBy=Issue135
 27	em	em	ADP	<sam->|PRP|@<PIV	_	29	case	_	_
 28	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
 29	moda	moda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	_
@@ -224,8 +224,8 @@
 1	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	filho	filho	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
-4	Marcelo	Marcelo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	MWE=Marcelo_Rebelo
-5	Rebelo	Rebelo	PROPN	PROP|@N<	Number=Sing	4	flat:name	_	_
+4	Marcelo	Marcelo	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=Marcelo_Rebelo|MWEPOS=PROPN
+5	Rebelo	Rebelo	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	Sousa	Sousa	PROPN	PROP|@P<	Number=Sing	4	nmod	_	_
 8	fazia	fazer	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -235,8 +235,8 @@
 12	ex-comissário	ex-comissário	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
 13	de	de	ADP	PRP|@N<	_	15	case	_	_
 14	«	«	PUNCT	PU|@PU	_	15	punct	_	_
-15	Lisboa	Lisboa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	MWE=Lisboa_94
-16	94	94	PROPN	PROP|@N<	Number=Sing	15	flat:name	_	_
+15	Lisboa	Lisboa	PROPN	_	Gender=Fem|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=Lisboa_94|MWEPOS=PROPN
+16	94	94	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 17	»	»	PUNCT	PU|@PU	_	15	punct	_	_
 18	promovia	promover	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	conj	_	_
 19	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
@@ -268,8 +268,8 @@
 11	discreto	discreto	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	12	amod	_	_
 12	centrista	centrista	ADJ	<n>|<np-def>|ADJ|M|S|@<SUBJ	Gender=Masc|Number=Sing	8	nsubj	_	_
 13	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-14	Fausto	Fausto	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	12	appos	_	MWE=Fausto_Quadros
-15	Quadros	Quadros	PROPN	PROP|@N<	Number=Sing	14	flat:name	_	_
+14	Fausto	Fausto	PROPN	_	Gender=Masc|Number=Sing	12	appos	_	ChangedBy=Issue119|MWE=Fausto_Quadros|MWEPOS=PROPN
+15	Quadros	Quadros	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 17	além	além	ADV	ADV|@<ADVL	_	8	advmod	_	MWE=além_de
 18	de	de	ADP	PRP|@A<	_	20	case	_	_
@@ -280,8 +280,8 @@
 23	Comissão	comissão	NOUN	N|@P<	_	20	nmod	_	_
 24	Europeia	europeia	ADJ	ADJ|@N<	_	23	amod	_	_
 25	,	,	PUNCT	PU|@PU	_	26	punct	_	_
-26	João	João	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	20	appos	_	MWE=João_Vale
-27	Vale	Vale	PROPN	PROP|@N<	Number=Sing	26	flat:name	_	_
+26	João	João	PROPN	_	Gender=Masc|Number=Sing	20	appos	_	ChangedBy=Issue119|MWE=João_Vale|MWEPOS=PROPN
+27	Vale	Vale	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	Almeida	Almeida	PROPN	PROP|@P<	Number=Sing	26	nmod	_	_
 30	.	.	PUNCT	PU|@PU	_	8	punct	_	_

@@ -7,7 +7,7 @@
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3	Com	com	ADP	PRP|@ADVL>	_	5	case	_	_
 4	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
-5	afluxo	afluxo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
+5	afluxo	afluxo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue137
 6	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 7	recorde	recorde	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	appos	_	_
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
@@ -36,7 +36,7 @@
 10	nunca	nunca	ADV	ADV|@ADVL>	_	11	advmod	_	_
 11	houve	haver	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	ccomp	_	_
 12	em	em	ADP	PRP|@<ADVL	_	13	case	_	_
-13	Delegação	delegação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+13	Delegação	delegação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137
 14	nenhuma	nenhum	DET	<quant>|DET|F|S|@N<	Gender=Fem|Number=Sing	13	det	_	_
 15	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 16	uma	um	NUM	<card>|NUM|F|S|@>N	_	19	nummod	_	_
@@ -54,7 +54,7 @@
 28	verificou	verificar	VERB	<mv>|V|PS|3S|IND|@FS-KOMP<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	ccomp	_	_
 29	em	em	ADP	<sam->|PRP|@<ADVL	_	31	case	_	_
 30	estas	este	DET	<-sam>|DET|@>N	_	31	det	_	_
-31	Eleições	eleição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	nmod	_	_
+31	Eleições	eleição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	obl	_	ChangedBy=Issue137
 32	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text Isto significa que os Barmens não estão esquecidos.
@@ -69,7 +69,7 @@
 5	Barmens	barmen	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
 6	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
 7	estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-8	esquecidos	esquecer	VERB	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	2	dep	_	_
+8	esquecidos	esquecido	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	2	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text Continuo a dizer que acho bem que os Barmens saibam que a Delegação está aberta para todos eles,e gostaria imenso que eles aparecessem em vez de uma vez por mês, dez vezes porque temos todas as condições criadas para os receber.
@@ -91,7 +91,7 @@
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Delegação	delegação	NOUN	<prop>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
 14	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
-15	aberta	abrir	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	10	dep	_	_
+15	aberta	aberto	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	10	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 16	para	para	ADP	PRP|@<ADVL	_	18	case	_	_
 17	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	18	det	_	_
 18	eles	eles	PRON	PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	nmod	_	_
@@ -155,25 +155,25 @@
 3	52.500	52.500	NUM	<card>|NUM|M|P|@>N	_	4	nummod	_	_
 4	contos	conto	NOUN	<first-cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	1	appos	_	_
 5	)	)	PUNCT	PU|@PU	_	4	punct	_	_
-6	Nelson	Nelson	PROPN	<cjt>|PROP|M|S|@NPHR	Gender=Masc|Number=Sing	1	conj	_	MWE=Nelson_Brás
-7	Brás	Brás	PROPN	PROP|@N<	Number=Sing	6	flat:name	_	_
+6	Nelson	Nelson	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|MWE=Nelson_Brás|MWEPOS=PROPN
+7	Brás	Brás	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-9	Sílvia	Sílvia	PROPN	<cjt>|PROP|F|S|@NPHR	Gender=Fem|Number=Sing	1	conj	_	MWE=Sílvia_Henriques
-10	Henriques	Henriques	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	_
+9	Sílvia	Sílvia	PROPN	_	Gender=Fem|Number=Sing	1	conj	_	ChangedBy=Issue119|MWE=Sílvia_Henriques|MWEPOS=PROPN
+10	Henriques	Henriques	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 11	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-12	Pedro	Pedro	PROPN	<cjt>|PROP|M|S|@NPHR	Gender=Masc|Number=Sing	1	conj	_	MWE=Pedro_Caravana
-13	Caravana	Caravana	PROPN	PROP|@N<	Number=Sing	12	flat:name	_	_
+12	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|MWE=Pedro_Caravana|MWEPOS=PROPN
+13	Caravana	Caravana	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-15	Michel	Michel	PROPN	<cjt>|PROP|M|S|@NPHR	Gender=Masc|Number=Sing	1	conj	_	MWE=Michel_Almeida
-16	Almeida	Almeida	PROPN	PROP|@N<	Number=Sing	15	flat:name	_	_
+15	Michel	Michel	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|MWE=Michel_Almeida|MWEPOS=PROPN
+16	Almeida	Almeida	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 17	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-18	Guilherme	Guilherme	PROPN	<cjt>|PROP|M|S|@NPHR	Gender=Masc|Number=Sing	1	conj	_	MWE=Guilherme_Bentes
-19	Bentes	Bentes	PROPN	PROP|@N<	Number=Sing	18	flat:name	_	_
+18	Guilherme	Guilherme	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|MWE=Guilherme_Bentes|MWEPOS=PROPN
+19	Bentes	Bentes	PROPN	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
 20	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-21	Pedro	Pedro	PROPN	<cjt>|PROP|M|S|@NPHR	Gender=Masc|Number=Sing	1	conj	_	MWE=Pedro_Soares
-22	Soares	Soares	PROPN	PROP|@N<	Number=Sing	21	flat:name	_	_
+21	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|MWE=Pedro_Soares|MWEPOS=PROPN
+22	Soares	Soares	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	e	e	CCONJ	<co-utt>|KC|@CO	_	1	cc	_	_
-24	Filipa	Filipa	PROPN	<cjt>|PROP|F|S|@NPHR	Gender=Fem|Number=Sing	1	conj	_	MWE=Filipa_Cavalleri
-25	Cavalleri	Cavalleri	PROPN	PROP|@N<	Number=Sing	24	flat:name	_	_
+24	Filipa	Filipa	PROPN	_	Gender=Fem|Number=Sing	1	conj	_	ChangedBy=Issue119|MWE=Filipa_Cavalleri|MWEPOS=PROPN
+25	Cavalleri	Cavalleri	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
 26	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

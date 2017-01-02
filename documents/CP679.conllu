@@ -14,7 +14,7 @@
 9	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 10	com	com	ADP	PRP|@<ADVL	_	12	case	_	_
 11	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
-12	bolsas	bolsa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
+12	bolsas	bolsa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obl	_	ChangedBy=Issue137
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	Londres	Londres	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 15	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	_
@@ -22,7 +22,7 @@
 17	(	(	PUNCT	PU|@PU	_	20	punct	_	_
 18	Frankfurt	Frankfurt	PROPN	PROP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing	20	nsubj	_	_
 19	esteve	estar	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	cop	_	_
-20	encerrada	encerrar	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	5	dep	_	_
+20	encerrada	encerrado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	5	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 21	)	)	PUNCT	PU|@PU	_	20	punct	_	_
 22	a	a	ADP	PRP|@N<	_	23	mark	_	_
 23	beneficiarem	beneficiar	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	12	acl	_	_
@@ -77,7 +77,7 @@
 10	marcos	marco	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	_
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 12	aproximando-	aproximar	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|GER|@ICL-<ADVL	VerbForm=Ger	3	advcl	_	_
-13	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obj	_	_
+13	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl	_	ChangedBy=Issue135
 14	cautelosamente	cautelosamente	ADV	ADV|@<ADVL	_	12	advmod	_	_
 15	de	de	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	18	case	_	_
 16	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
@@ -150,7 +150,7 @@
 19	Paris	Paris	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	16	nmod	_	_
 20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 21	valorizou-	valorizar	VERB	<mv>|<hyphen>|<se-passive>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	advcl	_	_
-22	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	obj	_	_
+22	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	expl	_	ChangedBy=Issue135
 23	1,43	1,43	NUM	<card>|NUM|M|P|@>N	_	24	nummod	_	_
 24	por	por	ADP	_	Gender=Masc|Number=Sing	21	nmod	_	MWE=por_cento|MWEPOS=NOUN
 25	cento	cento	NUM	_	Gender=Masc|Number=Sing	24	compound	_	_
@@ -168,7 +168,7 @@
 5	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 6	por	por	ADP	PRP|@ADVL>	_	8	case	_	_
 7	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing	8	det	_	_
-8	lado	lado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
+8	lado	lado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue137
 9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 10	encerrou	encerrar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 11	em	em	ADP	<sam->|PRP|@<SA	_	14	case	_	_
@@ -184,8 +184,8 @@
 21	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	contrário	contrário	NOUN	N|@P<	_	10	nmod	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
-24	Hong	Hong	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	22	nmod	_	MWE=Hong_Kong
-25	Kong	Kong	PROPN	PROP|@N<	Number=Sing	24	flat:name	_	_
+24	Hong	Hong	PROPN	_	Gender=Unsp|Number=Sing	22	nmod	_	ChangedBy=Issue119|MWE=Hong_Kong|MWEPOS=PROPN
+25	Kong	Kong	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
 26	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 27	que	que	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	28	nsubj	_	_
 28	terminou	terminar	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	acl:relcl	_	_
@@ -199,31 +199,31 @@
 # source CETEMPúblico n=679 sec=eco sem=95a
 # sent_id CP679-6
 # id 3512
-1	Wall	Wall	PROPN	PROP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing	9	nsubj	_	MWE=Wall_Street
-2	Street	Street	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
+1	Wall	Wall	PROPN	_	Gender=Unsp|Number=Sing	9	nsubj	_	ChangedBy=Issue119|MWE=Wall_Street|MWEPOS=PROPN
+2	Street	Street	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 4	a	a	ADP	PRP|@ADVL>	_	5	case	_	_
-5	meio	meio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
+5	meio	meio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
 6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	sessão	sessão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 9	encontrava-	encontrar	VERB	<mv>|<hyphen>|<se-passive>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-10	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
+10	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	expl	_	ChangedBy=Issue135
 11	em	em	ADP	PRP|@<OA	_	12	case	_	_
 12	alta	alta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
 13	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 14	com	com	ADP	PRP|@<ADVL	_	16	case	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	índice	índice	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
-17	Dow	Dow	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	16	appos	_	MWE=Dow_Jones
-18	Jones	Jones	PROPN	PROP|@N<	Number=Sing	17	flat:name	_	_
+16	índice	índice	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
+17	Dow	Dow	PROPN	_	Gender=Masc|Number=Sing	16	appos	_	ChangedBy=Issue119|MWE=Dow_Jones|MWEPOS=PROPN
+18	Jones	Jones	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	a	a	ADP	PRP|@N<	_	20	mark	_	_
 20	cotar-	cotar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	16	acl	_	_
-21	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obj	_	_
+21	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	expl	_	ChangedBy=Issue135
 22	em	em	ADP	<sam->|PRP|@<ADVL	_	25	case	_	_
 23	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
 24	4493,85	4493,85	NUM	<card>|NUM|M|P|@>N	_	25	nummod	_	_
-25	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
+25	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	obl	_	ChangedBy=Issue137
 26	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 27	mais	mais	ADV	<setop>|ADV|@>A	_	28	advmod	_	_
 28	2,77	2,77	NUM	<card>|NUM|M|P|@>N	_	29	nummod	_	_

@@ -80,8 +80,8 @@
 33	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	32	fixed	_	_
 34	,	,	PUNCT	PU|@PU	_	33	punct	_	_
 35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
-36	Jerónimo	Jerónimo	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	MWE=Jerónimo_Martins
-37	Martins	Martins	PROPN	PROP|@N<	Number=Sing	36	flat:name	_	_
+36	Jerónimo	Jerónimo	PROPN	_	Gender=Fem|Number=Sing	21	nmod	_	ChangedBy=Issue119|MWE=Jerónimo_Martins|MWEPOS=PROPN
+37	Martins	Martins	PROPN	_	Number=Sing	36	flat:name	_	ChangedBy=Issue119
 38	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text Uma possibilidade entretanto desmentida pelo grupo presidido por Soares dos Santos.
@@ -115,10 +115,10 @@
 4	falso	falso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	19	ccomp	_	_
 5	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Jerónimo	Jerónimo	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	MWE=Jerónimo_Martins
-8	Martins	Martins	PROPN	PROP|@N<	Number=Sing	7	flat:name	_	_
+7	Jerónimo	Jerónimo	PROPN	_	Gender=Fem|Number=Sing	10	nsubj	_	ChangedBy=Issue119|MWE=Jerónimo_Martins|MWEPOS=PROPN
+8	Martins	Martins	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	esteja	estar	VERB	<mv>|V|PR|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
-10	interessada	interessar	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	4	dep	_	_
+10	interessada	interessado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	4	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 11	em	em	ADP	<sam->|PRP|@<PIV	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	13	det	_	_
 13	compra	compra	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
@@ -138,29 +138,29 @@
 27	empresa	empresa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
 28	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
-# text No lado das subidas, destaca-se ainda o comportamento do Banco Totta &amp; Açores que, ao contrário dos restantes títulos do sector bancário, encerrou a ganhar 3,41 por cento.
+# text No lado das subidas, destaca-se ainda o comportamento do Banco Totta & Açores que, ao contrário dos restantes títulos do sector bancário, encerrou a ganhar 3,41 por cento.
 # forest 1
 # source CETEMPúblico n=41 sec=eco sem=98a
 # sent_id CP41-5
 # id 237
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	lado	lado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+3	lado	lado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	6	det	_	_
 6	subidas	subida	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 8	destaca-	destacar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+9	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl	_	ChangedBy=Issue135
 10	ainda	ainda	ADV	ADV|@<ADVL	_	8	advmod	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	comportamento	comportamento	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	8	nsubj	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	Banco	Banco	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	MWE=Banco_Totta_&amp;_Açores
-16	Totta	Totta	PROPN	PROP|@N<	Number=Sing	15	flat:name	_	_
-17	&amp;	&amp;	PROPN	PROP|@N<	Number=Sing	15	flat:name	_	_
-18	Açores	Açores	PROPN	PROP|@N<	Number=Sing	15	flat:name	_	_
+15	Banco	Banco	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=Banco_Totta_&_Açores|MWEPOS=PROPN
+16	Totta	Totta	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
+17	&	&	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
+18	Açores	Açores	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 19	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	33	nsubj	_	_
 20	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 21	a	a	ADP	<sam->|PRP|@N<	_	23	case	_	_
@@ -189,7 +189,7 @@
 # sent_id CP41-6
 # id 238
 1	Movimentaram-	movimentar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-2	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	obj	_	_
+2	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	expl	_	ChangedBy=Issue135
 3	cerca	cerca	ADV	ADV|@>A	_	5	advmod	_	MWE=cerca_de
 4	de	de	ADP	<prp>|PRP|@A<	_	3	case	_	_
 5	285	285	NUM	<card>|NUM|M|P|@>A	_	6	dep	_	_
@@ -198,12 +198,12 @@
 8	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 9	com	com	ADP	PRP|@<ADVL	_	11	case	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	cotação	cotação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+11	cotação	cotação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue137
 12	de	de	ADP	PRP|@N<ARG	_	13	case	_	_
 13	fecho	fecho	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 14	a	a	ADP	PRP|@N<	_	15	mark	_	_
 15	situar-	situar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	acl	_	_
-16	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	obj	_	_
+16	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	expl	_	ChangedBy=Issue135
 17	em	em	ADP	<sam->|PRP|@<SA	_	20	case	_	_
 18	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
 19	4359	4359	NUM	<card>|NUM|M|P|@>N	_	20	nummod	_	_
@@ -218,11 +218,11 @@
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	_
 2	Alguma	algum	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	3	det	_	_
 3	coisa	coisa	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
-4	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+4	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	expl	_	ChangedBy=Issue135
 5	passa	passar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	a	a	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	8	det	_	_
-8	volta	volta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+8	volta	volta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137
 9	de	de	ADP	<sam->|PRP|@N<ARG	_	11	case	_	_
 10	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_
 11	papel	papel	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_

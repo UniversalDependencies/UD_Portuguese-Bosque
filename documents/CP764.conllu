@@ -3,8 +3,8 @@
 # source CETEMPúblico n=764 sec=clt sem=94a
 # sent_id CP764-1
 # id 3919
-1	Sérgio	Sérgio	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	MWE=Sérgio_Godinho
-2	Godinho	Godinho	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
+1	Sérgio	Sérgio	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Sérgio_Godinho|MWEPOS=PROPN
+2	Godinho	Godinho	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 
 # text «Tenho uma maneira de não responder que é em si uma resposta»
 # forest 1
@@ -53,9 +53,9 @@
 9	feito	fazer	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	4	parataxis	_	_
 10	em	em	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
 11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	Canadá	Canadá	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
+12	Canadá	Canadá	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
 13	com	com	ADP	PRP|@<ADVL	_	14	case	_	_
-14	canções	canção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	_
+14	canções	canção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	obl	_	ChangedBy=Issue137
 15	compostas	compor	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	14	acl	_	_
 16	antes	antes	ADV	ADV|@<ADVL	_	15	advmod	_	_
 17	de	de	ADP	<sam->|PRP|@A<	_	19	case	_	_
@@ -78,7 +78,7 @@
 6	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	7	advmod	_	_
 7	política	político	ADJ	<COMP>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	_
 8	em	em	ADP	PRP|@<ADVL	_	9	case	_	_
-9	consequência	consequência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+9	consequência	consequência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	acontecimentos	acontecimento	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
@@ -86,7 +86,7 @@
 14	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 15	por	por	ADP	PRP|@<ADVL	_	17	case	_	_
 16	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	questão	questão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+17	questão	questão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
 18	de	de	ADP	<first-cjt>|PRP|@N<	_	19	case	_	_
 19	sensibilidade	sensibilidade	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
 20	a	a	ADP	<sam->|PRP|@N<	_	22	case	_	_
@@ -130,14 +130,14 @@
 # id 3925
 1	Podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	dizer-	dizer	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf|Voice=Pass	0	root	_	_
-3	se	se	PRON	PERS|F|3P|ACC|@ACC-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	2	dep	_	_
+3	se	se	PRON	PERS|F|3P|ACC|@ACC-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	2	expl	_	ChangedBy=Issue133|SUBJ_INDEF
 4	coisas	coisa	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	2	nsubj:pass	_	_
 5	muito	muito	ADV	<quant>|ADV|@>A	_	6	advmod	_	_
 6	válidas	válido	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	4	amod	_	_
 7	politicamente	politicamente	ADV	ADV|@A<	_	6	advmod	_	_
 8	com	com	ADP	PRP|@<ADVL	_	10	case	_	_
 9	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	linguagem	linguagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+10	linguagem	linguagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	ChangedBy=Issue137
 11	pobre	pobre	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
 12	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
 13	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	15	nsubj	_	_
@@ -162,7 +162,7 @@
 7	isso	isso	PRON	<dem>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Dem	6	obj	_	_
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
 9	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	linguagem	linguagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+10	linguagem	linguagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue137
 11	musical	musical	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
 12	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
 13	poética	poético	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	conj	_	_

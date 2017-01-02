@@ -8,9 +8,9 @@
 3	morador	morador	ADJ	<n>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 4	antigo	antigo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
-6	Lambari	Lambari	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	MWE=Lambari_d'_Oeste
-7	d'	d'	PROPN	PROP|@N<	Number=Sing	6	flat:name	_	_
-8	Oeste	Oeste	PROPN	PROP|@N<	Number=Sing	6	flat:name	_	_
+6	Lambari	Lambari	PROPN	_	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue119|MWE=Lambari_d'_Oeste|MWEPOS=PROPN
+7	d'	d'	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
+8	Oeste	Oeste	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text Os três cortadores de cana eram de Alagoas e estavam na cidade havia 15 dias.
@@ -33,7 +33,7 @@
 13	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	cop	_	_
 14	havia	há	ADP	PRP|@<ADVL	_	16	case	_	_
 15	15	15	NUM	<card>|NUM|M|P|@>N	_	16	nummod	_	_
-16	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	_
+16	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	ChangedBy=Issue137
 17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text Lambari d'Oeste (5.000 habitantes) virou município há dois anos.
@@ -41,9 +41,9 @@
 # source CETENFolha n=269 cad=Cotidiano sec=soc sem=94a
 # sent_id CF269-3
 # id 1132
-1	Lambari	Lambari	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	MWE=Lambari_d'_Oeste
-2	d'	d'	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
-3	Oeste	Oeste	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
+1	Lambari	Lambari	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	_	ChangedBy=Issue119|MWE=Lambari_d'_Oeste|MWEPOS=PROPN
+2	d'	d'	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
+3	Oeste	Oeste	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 4	(	(	PUNCT	PU|@PU	_	6	punct	_	_
 5	5.000	5.000	NUM	<card>|NUM|M|P|@>N	_	6	nummod	_	_
 6	habitantes	habitante	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	1	appos	_	_
@@ -52,6 +52,6 @@
 9	município	município	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
 10	há	há	ADP	PRP|@<ADVL	_	12	case	_	_
 11	dois	dois	NUM	<card>|NUM|M|P|@>N	_	12	nummod	_	_
-12	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
+12	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	ChangedBy=Issue137
 13	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 

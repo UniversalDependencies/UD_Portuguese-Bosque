@@ -17,7 +17,7 @@
 1	A	a	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 3	15	15	NUM	<card>|NUM|M|P|@>N	_	4	nummod	_	_
-4	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	33	nmod	_	_
+4	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	33	obl	_	ChangedBy=Issue137
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	Pedro	Pedro	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	33	nsubj	_	_
 7	,	,	PUNCT	PU|@PU	_	9	punct	_	_
@@ -50,7 +50,7 @@
 34	e	e	CCONJ	<co-pcv>|KC|@CO	_	33	cc	_	_
 35	absolvido	absolver	VERB	<mv>|<cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	33	conj	_	_
 36	de	de	ADP	PRP|@ADVL>	_	37	case	_	_
-37	assalto	assalto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	_
+37	assalto	assalto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	obl	_	ChangedBy=Issue137
 38	a	a	ADP	PRP|@N<	_	40	case	_	_
 39	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
 40	estabelecimento	estabelecimento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	37	nmod	_	_
@@ -67,7 +67,7 @@
 4	noites	noite	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
 5	em	em	ADP	<first-cjt>|<sam->|PRP|@<ADVL	_	7	case	_	_
 6	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	esquadras	esquadra	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
+7	esquadras	esquadra	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	obl	_	ChangedBy=Issue137
 8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	PSP	PSP	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
@@ -131,9 +131,9 @@
 34	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	35	nsubj	_	_
 35	andam	andar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	_	_
 36	sempre	sempre	ADV	ADV|@ADVL>	_	37	advmod	_	_
-37	juntos	juntar	VERB	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	35	dep	_	_
+37	juntos	junto	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	35	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 38	e	e	CCONJ	<co-postnom>|<co-fmc>|<co-vfin>|KC|@CO	_	35	cc	_	_
-39	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	40	obj	_	_
+39	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	40	expl	_	ChangedBy=Issue135
 40	defendem	defender	VERB	<cjt>|<mv>|<se-passive>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	conj	_	_
 41	uns	um	PRON	<quant>|DET|M|P|@<SUBJ	Gender=Masc|Number=Plur	40	nsubj	_	_
 42	a	a	ADP	<sam->|PRP|@<PIV	_	44	case	_	_
@@ -163,8 +163,8 @@
 7	dedicado	dedicar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
 8	a	a	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	10	case	_	_
 9	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
-10	South	South	PROPN	<first-cjt>|PROP|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	MWE=South_Ges
-11	Ges	Ges	PROPN	PROP|@N<	Number=Sing	10	flat:name	_	_
+10	South	South	PROPN	_	Gender=Masc|Number=Plur	7	nmod	_	ChangedBy=Issue119|MWE=South_Ges|MWEPOS=PROPN
+11	Ges	Ges	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
 12	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	grupo	grupo	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	appos	_	_

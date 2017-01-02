@@ -8,7 +8,7 @@
 3	para	para	ADP	PRP|@<ADVL	_	6	case	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 5	«	«	PUNCT	PU|@PU	_	6	punct	_	_
-6	Mundial	Mundial	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
+6	Mundial	Mundial	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137
 7	»	»	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text Vialli e Lentini de fora
@@ -27,8 +27,8 @@
 # source CETEMPúblico n=675 sec=des sem=94a
 # sent_id CP675-3
 # id 3492
-1	Arrigo	Arrigo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	MWE=Arrigo_Sacchi
-2	Sacchi	Sacchi	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
+1	Arrigo	Arrigo	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	ChangedBy=Issue119|MWE=Arrigo_Sacchi|MWEPOS=PROPN
+2	Sacchi	Sacchi	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 4	seleccionador	seleccionador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
 5	nacional	nacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
@@ -64,11 +64,11 @@
 # id 3493
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	atacantes	atacante	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
-3	Gianluca	Gianluca	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	2	appos	_	MWE=Gianluca_Vialli
-4	Vialli	Vialli	PROPN	PROP|@N<	Number=Sing	3	flat:name	_	_
+3	Gianluca	Gianluca	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Gianluca_Vialli|MWEPOS=PROPN
+4	Vialli	Vialli	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 5	e	e	CCONJ	<co-postnom>|KC|@CO	_	3	cc	_	_
-6	Gianluigi	Gianluigi	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	3	nmod:npmod	_	MWE=Gianluigi_Lentini
-7	Lentini	Lentini	PROPN	PROP|@N<	Number=Sing	6	flat:name	_	_
+6	Gianluigi	Gianluigi	PROPN	_	Gender=Masc|Number=Sing	3	nmod:npmod	_	ChangedBy=Issue119|MWE=Gianluigi_Lentini|MWEPOS=PROPN
+7	Lentini	Lentini	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	ficaram	ficar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9	de	de	ADP	PRP|@<SA	_	10	case	_	MWE=de_fora
 10	fora	fora	ADV	ADV|@P<	_	8	advmod	_	_
@@ -110,10 +110,10 @@
 29	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 30	com	com	ADP	PRP|@<ADVL	_	32	case	_	_
 31	sete	sete	NUM	<card>|NUM|M|P|@>N	_	32	nummod	_	_
-32	futebolistas	futebolista	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	_
+32	futebolistas	futebolista	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	obl	_	ChangedBy=Issue137
 33	,	,	PUNCT	PU|@PU	_	34	punct	_	_
 34	seguindo-	seguir	VERB	<mv>|<hyphen>|<se-passive>|V|GER|@ICL-<ADVL	VerbForm=Ger	24	advcl	_	_
-35	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	obj	_	_
+35	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	expl	_	ChangedBy=Issue135
 36	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
 37	Parma	Parma	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	34	nsubj	_	_
 38	,	,	PUNCT	PU|@PU	_	34	punct	_	_
@@ -121,7 +121,7 @@
 40	cinco	cinco	NUM	<card>|NUM|M|P|@P<	_	37	nmod	_	_
 41	,	,	PUNCT	PU|@PU	_	34	punct	_	_
 42	a	a	ADP	PRP|@<ADVL	_	43	case	_	_
-43	Juventus	Juventus	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	34	nmod	_	_
+43	Juventus	Juventus	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	34	obl	_	ChangedBy=Issue137
 44	e	e	CCONJ	<co-prparg>|KC|@CO	_	43	cc	_	_
 45	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_
 46	Lázio	Lázio	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	43	conj	_	MWE=Lázio_de_Roma

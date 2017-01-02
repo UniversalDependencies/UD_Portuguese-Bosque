@@ -13,7 +13,7 @@
 8	conduzir	conduzir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 9	a	a	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	11	case	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	desaparecimento	desaparecimento	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+11	desaparecimento	desaparecimento	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	ENDA	ENDA	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
@@ -65,7 +65,7 @@
 20	participantes	participante	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
 21	em	em	ADP	<sam->|PRP|@<ADVL	_	23	case	_	_
 22	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	encontro	encontro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
+23	encontro	encontro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	ChangedBy=Issue137
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
 25	dirigentes	dirigente	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	_
 26	associativos	associativo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	25	amod	_	_
@@ -131,7 +131,7 @@
 4	com	com	ADP	PRP|@<ADVL	_	7	case	_	_
 5	o	o	NOUN	<np-idf>|N|M|S|@>N	Gender=Masc|Number=Sing	7	compound	_	_
 6	máximo	grande	ADJ	<SUP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	7	amod	_	_
-7	rigor	rigor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
+7	rigor	rigor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	custos	custo	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
 10	médios	médio	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	9	amod	_	_
@@ -141,9 +141,9 @@
 14	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 15	conforme	conforme	ADP	PRP|@<ADVL	_	17	case	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	região	região	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+17	região	região	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
 18	onde	onde	ADV	<rel>|ADV|@ADVL>	_	20	advmod	_	_
-19	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obj	_	_
+19	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	expl	_	ChangedBy=Issue135
 20	encontra	encontrar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	_
 21	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 22	pois	pois	SCONJ	KS|@ADVL>	_	25	advmod	_	_
@@ -158,8 +158,8 @@
 31	»	»	PUNCT	PU|@PU	_	2	punct	_	_
 32	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 33	esclareceu	esclarecer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-34	Miguel	Miguel	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	33	nsubj	_	MWE=Miguel_Rodrigues
-35	Rodrigues	Rodrigues	PROPN	PROP|@N<	Number=Sing	34	flat:name	_	_
+34	Miguel	Miguel	PROPN	_	Gender=Masc|Number=Sing	33	nsubj	_	ChangedBy=Issue119|MWE=Miguel_Rodrigues|MWEPOS=PROPN
+35	Rodrigues	Rodrigues	PROPN	_	Number=Sing	34	flat:name	_	ChangedBy=Issue119
 36	,	,	PUNCT	PU|@PU	_	33	punct	_	_
 37	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	40	nsubj	_	_
 38	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	cop	_	_
@@ -192,7 +192,7 @@
 9	realizado	realizar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl:relcl	_	_
 10	com	com	ADP	PRP|@<ADVL	_	12	case	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	apoio	apoio	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
+12	apoio	apoio	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
 13	de	de	ADP	<sam->|PRP|@N<ARG	_	15	case	_	_
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	Conselho	Conselho	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	MWE=Conselho_de_Reitores
@@ -235,7 +235,7 @@
 2	em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	_
 3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 4	próximo	próximo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	5	amod	_	_
-5	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
+5	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137
 6	25	25	NUM	<card>|NUM|M|S|@N<	_	5	nummod	_	_
 7	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
@@ -243,7 +243,7 @@
 10	associativos	associativo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	9	amod	_	_
 11	irão	ir	AUX	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	aux	_	_
 12	reunir-	reunir	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-13	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	obj	_	_
+13	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	expl	_	ChangedBy=Issue135
 14	com	com	ADP	PRP|@<PIV	_	16	case	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	ministro	ministro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_

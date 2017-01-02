@@ -23,8 +23,8 @@
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	coleção	coleção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
-9	Takeo	Takeo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	MWE=Takeo_Hirata
-10	Hirata	Hirata	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	_
+9	Takeo	Takeo	PROPN	_	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue119|MWE=Takeo_Hirata|MWEPOS=PROPN
+10	Hirata	Hirata	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 11	para	para	ADP	PRP|@N<	_	13	case	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	biblioteca	biblioteca	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
@@ -41,7 +41,7 @@
 24	palestra	palestra	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	21	obj	_	_
 25	em	em	ADP	<sam->|PRP|@<ADVL	_	27	case	_	_
 26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	Fiesp	Fiesp	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
+27	Fiesp	Fiesp	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	ChangedBy=Issue137
 28	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text Takuo Hirano e Tetsuyuki Hirano, pai e filho, vieram falar sobre o novo conceito de design que estão desenvolvendo.
@@ -49,11 +49,11 @@
 # source CETENFolha n=337 cad=Ilustrada sec=nd sem=94b
 # sent_id CF337-4
 # id 1393
-1	Takuo	Takuo	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	MWE=Takuo_Hirano
-2	Hirano	Hirano	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
+1	Takuo	Takuo	PROPN	_	Gender=Masc|Number=Sing	11	nsubj	_	ChangedBy=Issue119|MWE=Takuo_Hirano|MWEPOS=PROPN
+2	Hirano	Hirano	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
-4	Tetsuyuki	Tetsuyuki	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	nsubj	_	MWE=Tetsuyuki_Hirano
-5	Hirano	Hirano	PROPN	PROP|@N<	Number=Sing	4	flat:name	_	_
+4	Tetsuyuki	Tetsuyuki	PROPN	_	Gender=Masc|Number=Sing	1	nsubj	_	ChangedBy=Issue119|MWE=Tetsuyuki_Hirano|MWEPOS=PROPN
+5	Hirano	Hirano	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 7	pai	pai	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
 8	e	e	CCONJ	<co-pred>|KC|@CO	_	7	cc	_	_
@@ -84,10 +84,10 @@
 5	empresa	empresa	NOUN	<np-idf>|N|F|S|@A<	Gender=Fem|Number=Sing	1	nmod:npmod	_	_
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Hirano	Hirano	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	5	appos	_	MWE=Hirano_Design_International_Inc.
-9	Design	Design	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
-10	International	International	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
-11	Inc.	Inc.	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
+8	Hirano	Hirano	PROPN	_	Gender=Fem|Number=Sing	5	appos	_	ChangedBy=Issue119|MWE=Hirano_Design_International_Inc.|MWEPOS=PROPN
+9	Design	Design	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
+10	International	International	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
+11	Inc.	Inc.	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 12	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 13	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	14	nsubj	_	_
 14	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_

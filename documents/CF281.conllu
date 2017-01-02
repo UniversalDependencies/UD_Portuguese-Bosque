@@ -29,10 +29,10 @@
 11	holandesas	holandês	ADJ	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	7	nmod	_	_
 12	em	em	ADP	PRP|@<ADVL	_	14	case	_	_
 13	dois	dois	NUM	<card>|NUM|M|P|@>N	_	14	nummod	_	_
-14	remates	remate	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+14	remates	remate	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue137
 15	realizados	realizar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	14	acl	_	_
 16	em	em	ADP	PRP|@<ADVL	_	17	case	_	_
-17	SP	SP	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
+17	SP	SP	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue137
 
 # text Na semana passada, o mercado de gado leiteiro foi marcado por uma surpresa: o gado girolando atingiu preço superior ao holandês puro-sangue nos leilões.
 # forest 1
@@ -41,8 +41,8 @@
 # id 1180
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-4	passada	passar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	_	_
+3	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
+4	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	3	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	mercado	mercado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj:pass	_	_
@@ -53,7 +53,7 @@
 12	marcado	marcar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 13	por	por	ADP	PRP|@<ADVL	_	15	case	_	_
 14	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	surpresa	surpresa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+15	surpresa	surpresa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
 16	:	:	PUNCT	PU|@PU	_	12	punct	_	_
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	gado	gado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
@@ -67,7 +67,7 @@
 26	puro-sangue	puro-sangue	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	25	amod	_	_
 27	em	em	ADP	<sam->|PRP|@<ADVL	_	29	case	_	_
 28	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
-29	leilões	leilão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
+29	leilões	leilão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	obl	_	ChangedBy=Issue137
 30	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text Dia 19 último, o 2º Special Girolando atingiu a média de R$ 3.600 por 44 fêmeas.
@@ -81,8 +81,8 @@
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 6	2º	2º	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	7	amod	_	_
-7	Special	Special	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	MWE=Special_Girolando
-8	Girolando	Girolando	PROPN	PROP|@N<	Number=Sing	7	flat:name	_	_
+7	Special	Special	PROPN	_	Gender=Masc|Number=Sing	9	nsubj	_	ChangedBy=Issue119|MWE=Special_Girolando|MWEPOS=PROPN
+8	Girolando	Girolando	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	atingiu	atingir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	média	média	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
@@ -91,7 +91,7 @@
 14	3.600	3.600	NUM	<card>|NUM|M|P|@N<	_	13	nummod	_	_
 15	por	por	ADP	PRP|@<ADVL	_	17	case	_	_
 16	44	44	NUM	<card>|NUM|F|P|@>N	_	17	nummod	_	_
-17	fêmeas	fêmea	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	_
+17	fêmeas	fêmea	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	9	obl	_	ChangedBy=Issue137
 18	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text Dois dias depois, o Salute Milk, baixou a média para R$ 3.000 na venda de metade das 30 vacas holandesas que foram apresentadas para negócio.
@@ -104,8 +104,8 @@
 3	depois	depois	ADV	ADV|@N<	_	2	advmod	_	_
 4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Salute	Salute	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	MWE=Salute_Milk
-7	Milk	Milk	PROPN	PROP|@N<	Number=Sing	6	flat:name	_	_
+6	Salute	Salute	PROPN	_	Gender=Masc|Number=Sing	9	nsubj	_	ChangedBy=Issue119|MWE=Salute_Milk|MWEPOS=PROPN
+7	Milk	Milk	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 9	baixou	baixar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
@@ -115,7 +115,7 @@
 14	3.000	3.000	NUM	<card>|NUM|M|P|@N<	_	13	nummod	_	_
 15	em	em	ADP	<sam->|PRP|@<ADVL	_	17	case	_	_
 16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	venda	venda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+17	venda	venda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	ChangedBy=Issue137
 18	de	de	ADP	PRP|@N<	_	19	case	_	_
 19	metade	metade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
 20	de	de	ADP	PRP|@N<ARG	_	23	case	_	_
@@ -127,6 +127,6 @@
 26	foram	ser	AUX	<aux>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	27	aux:pass	_	_
 27	apresentadas	apresentar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	23	acl:relcl	_	_
 28	para	para	ADP	PRP|@<ADVL	_	29	case	_	_
-29	negócio	negócio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
+29	negócio	negócio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	obl	_	ChangedBy=Issue137
 30	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 

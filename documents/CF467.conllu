@@ -120,11 +120,11 @@
 1	E	e	CCONJ	KC|@CO	_	5	cc	_	_
 2	como	como	ADV	<interr>|ADV|@ADVL>	_	5	advmod	_	_
 3	você	você	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
-4	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+4	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	expl	_	ChangedBy=Issue135
 5	sente	sentir	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	como	como	ADP	<prd>|PRP|@<ADVL	_	8	case	_	_
 7	«	«	PUNCT	PU|@PU	_	8	punct	_	_
-8	estrela	estrela	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+8	estrela	estrela	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	cinema	cinema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
 11	»	»	PUNCT	PU|@PU	_	8	punct	_	_
@@ -189,8 +189,8 @@
 9	muito	muito	ADV	<quant>|ADV|@>A	_	10	advmod	_	_
 10	pobre	pobre	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	5	amod	_	_
 11	de	de	ADP	PRP|@N<PRED	_	12	case	_	_
-12	Nova	Nova	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	MWE=Nova_York
-13	York	York	PROPN	PROP|@N<	Number=Sing	12	flat:name	_	_
+12	Nova	Nova	PROPN	_	Gender=Fem|Number=Sing	5	nmod	_	ChangedBy=Issue119|MWE=Nova_York|MWEPOS=PROPN
+13	York	York	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text Você não pode imaginar que quão longe eu venho.
@@ -326,7 +326,7 @@
 13	não	não	ADV	_	Polarity=Neg	14	advmod	_	_
 14	precisam	precisar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
 15	ficar	ficar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	14	xcomp	_	_
-16	presas	prender	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	15	dep	_	_
+16	presas	preso	ADJ	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur	15	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 17	lá	lá	ADV	ADV|@<ADVL	_	16	advmod	_	_
 18	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 19	que	que	SCONJ	KS|@SUB	_	20	mark	_	_
@@ -366,16 +366,16 @@
 # id 1985
 1	Até	até	ADV	ADV|@>A	_	3	advmod	_	_
 2	em	em	ADP	PRP|@ADVL>	_	3	case	_	_
-3	Hollywood	Hollywood	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
+3	Hollywood	Hollywood	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	_
 7	como	como	ADP	<com>|PRP|@N<	_	8	case	_	_
-8	Sonia	Sonia	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	MWE=Sonia_Braga
-9	Braga	Braga	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
+8	Sonia	Sonia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	_	ChangedBy=Issue119|MWE=Sonia_Braga|MWEPOS=PROPN
+9	Braga	Braga	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	e	e	CCONJ	KC|@CO	_	8	cc	_	_
-11	Andy	Andy	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	MWE=Andy_Garcia
-12	Garcia	Garcia	PROPN	PROP|@N<	Number=Sing	11	flat:name	_	_
+11	Andy	Andy	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue119|MWE=Andy_Garcia|MWEPOS=PROPN
+12	Garcia	Garcia	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 13	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text Quando eu era criança, tinha vergonha de ser latina.

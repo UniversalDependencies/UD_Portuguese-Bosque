@@ -9,7 +9,7 @@
 4	admirar	admirar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	xcomp	_	_
 5	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
 6	Hollywood	Hollywood	PROPN	PROP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing	8	nsubj	_	_
-7	se	se	PRON	PERS|M/F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+7	se	se	PRON	PERS|M/F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	8	expl	_	ChangedBy=Issue135
 8	interesse	interessar	VERB	<mv>|<se-passive>|V|PR|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	csubj	_	_
 9	por	por	ADP	PRP|@<PIV	_	11	case	_	_
 10	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_
@@ -19,12 +19,12 @@
 14	após	após	ADP	PRP|@<ADVL	_	17	case	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 16	relativo	relativo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	17	amod	_	_
-17	insucesso	insucesso	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+17	insucesso	insucesso	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 18	de	de	ADP	PRP|@N<	_	20	case	_	_
 19	«	«	PUNCT	PU|@PU	_	20	punct	_	_
-20	Super	Super	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	MWE=Super_Mario_Bros.
-21	Mario	Mario	PROPN	PROP|@N<	Number=Sing	20	flat:name	_	_
-22	Bros.	Bros.	PROPN	PROP|@N<	Number=Sing	20	flat:name	_	_
+20	Super	Super	PROPN	_	Gender=Masc|Number=Sing	17	nmod	_	ChangedBy=Issue119|MWE=Super_Mario_Bros.|MWEPOS=PROPN
+21	Mario	Mario	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
+22	Bros.	Bros.	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 23	»	»	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text O volume financeiro em entradas de cinema atinge 5000 milhões de dólares, enquanto o mercado dos videojogos vale 13 mil milhões de dólares anuais (7000 milhões gastos em salas de jogos e mais 6000 milhões em videojogos domésticos).
@@ -63,7 +63,7 @@
 29	milhões	milhão	NOUN	<first-cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	23	appos	_	_
 30	gastos	gastar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	29	acl	_	_
 31	em	em	ADP	PRP|@<ADVL	_	32	case	_	_
-32	salas	sala	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	30	nmod	_	_
+32	salas	sala	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	30	obl	_	ChangedBy=Issue137
 33	de	de	ADP	PRP|@N<	_	34	case	_	_
 34	jogos	jogo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	_
 35	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	29	cc	_	_
@@ -86,7 +86,7 @@
 3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	segundo	segundo	ADP	PRP|@ADVL>	_	6	case	_	_
-6	dados	dado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	21	nmod	_	_
+6	dados	dado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	21	obl	_	ChangedBy=Issue137
 7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	editora	editora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
@@ -94,10 +94,10 @@
 11	citados	citar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	6	acl	_	_
 12	em	em	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
 13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	revista	revista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+14	revista	revista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137
 15	«	«	PUNCT	PU|@PU	_	16	punct	_	_
-16	Business	Business	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	14	appos	_	MWE=Business_Week
-17	Week	Week	PROPN	PROP|@N<	Number=Sing	16	flat:name	_	_
+16	Business	Business	PROPN	_	Gender=Fem|Number=Sing	14	appos	_	ChangedBy=Issue119|MWE=Business_Week|MWEPOS=PROPN
+17	Week	Week	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
 18	»	»	PUNCT	PU|@PU	_	16	punct	_	_
 19	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 20	foram	ser	AUX	<aux>|V|MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pqp|VerbForm=Fin	21	aux:pass	_	_
@@ -108,13 +108,13 @@
 25	cópias	cópia	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	23	nmod	_	_
 26	de	de	ADP	PRP|@N<	_	28	case	_	_
 27	«	«	PUNCT	PU|@PU	_	28	punct	_	_
-28	Street	Street	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	25	nmod	_	MWE=Street_Fighter
-29	Fighter	Fighter	PROPN	PROP|@N<	Number=Sing	28	flat:name	_	_
+28	Street	Street	PROPN	_	Gender=Unsp|Number=Sing	25	nmod	_	ChangedBy=Issue119|MWE=Street_Fighter|MWEPOS=PROPN
+29	Fighter	Fighter	PROPN	_	Number=Sing	28	flat:name	_	ChangedBy=Issue119
 30	»	»	PUNCT	PU|@PU	_	28	punct	_	_
 31	em	em	ADP	PRP|@<ADVL	_	34	case	_	_
 32	todo	todo	PRON	INDP|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	34	dep	_	_
 33	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-34	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
+34	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	obl	_	ChangedBy=Issue137
 35	,	,	PUNCT	PU|@PU	_	36	punct	_	_
 36	havendo	haver	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	21	advcl	_	_
 37	25	25	NUM	<card>|NUM|M|P|@>N	_	38	nummod	_	_
@@ -169,8 +169,8 @@
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	empresa	empresa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	Kenzo	Kenzo	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	3	appos	_	MWE=Kenzo_Tsujimoto
-9	Tsujimoto	Tsujimoto	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
+8	Kenzo	Kenzo	PROPN	_	Gender=Masc|Number=Sing	3	appos	_	ChangedBy=Issue119|MWE=Kenzo_Tsujimoto|MWEPOS=PROPN
+9	Tsujimoto	Tsujimoto	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 11	«	«	PUNCT	PU|@PU	_	24	punct	_	_
 12	o	o	PRON	<dem>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	24	nsubj	_	_
@@ -179,7 +179,7 @@
 15	ganha	ganhar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_
 16	em	em	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	produção	produção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+18	produção	produção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue137
 19	de	de	ADP	<sam->|PRP|@N<ARG	_	21	case	_	_
 20	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	filme	filme	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
@@ -199,7 +199,7 @@
 35	videojogos	videojogo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	34	obj	_	_
 36	em	em	ADP	<sam->|PRP|@<ADVL	_	38	case	_	_
 37	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
-38	futuro	futuro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	34	nmod	_	_
+38	futuro	futuro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	34	obl	_	ChangedBy=Issue137
 39	»	»	PUNCT	PU|@PU	_	24	punct	_	_
 40	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 

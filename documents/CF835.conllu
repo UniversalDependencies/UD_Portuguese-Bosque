@@ -10,8 +10,8 @@
 5	almoçar	almoçar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 6	em	em	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
 7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Esplanada	Esplanada	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	MWE=Esplanada_Grill
-9	Grill	Grill	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
+8	Esplanada	Esplanada	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	ChangedBy=Issue119|MWE=Esplanada_Grill|MWEPOS=PROPN
+9	Grill	Grill	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 11	refeições	refeição	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	8	appos	_	_
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
@@ -34,7 +34,7 @@
 5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 6	«	«	PUNCT	PU|@PU	_	8	punct	_	_
 7	bom	bom	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	8	amod	_	_
-8	atendimento	atendimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
+8	atendimento	atendimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 9	»	»	PUNCT	PU|@PU	_	8	punct	_	_
 10	a	a	ADP	<sam->|PRP|@P<	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
@@ -55,19 +55,19 @@
 # sent_id CF835-3
 # id 3520
 1	E	e	CCONJ	KC|@CO	_	3	cc	_	_
-2	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	3	obj	_	_
+2	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	3	expl	_	ChangedBy=Issue135
 3	encontram	encontrar	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	a	a	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	noite	noite	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+6	noite	noite	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
 7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
 8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	bar	bar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
+9	bar	bar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 10	Cabral	Cabral	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	9	appos	_	_
 11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 12	embora	embora	SCONJ	KS|@SUB	_	15	mark	_	_
 13	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
-14	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	15	obj	_	_
+14	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	15	expl	_	ChangedBy=Issue135
 15	conheçam	conhecer	VERB	<mv>|<se-passive>|V|PR|3P|SUBJ|@FS-<ADVL	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
 16	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
@@ -91,23 +91,23 @@
 3	têm	ter	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
 5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Cabral	Cabral	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
+6	Cabral	Cabral	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 8	aberto	abrir	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	6	acl	_	_
 9	em	em	ADP	<sam->|PRP|@<ADVL	_	11	case	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	final	final	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+11	final	final	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	1992	1992	NUM	<year>|<card>|<date>|NUM|M|P|@P<	_	11	nmod	_	_
 14	em	em	ADP	<sam->|PRP|@<ADVL	_	16	case	_	_
 15	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	travessa	travessa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
+16	travessa	travessa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	ChangedBy=Issue137
 17	escondida	esconder	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	16	acl	_	_
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	avenida	avenida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
-21	Cidade	Cidade	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	20	appos	_	MWE=Cidade_Jardim
-22	Jardim	Jardim	PROPN	PROP|@N<	Number=Sing	21	flat:name	_	_
+21	Cidade	Cidade	PROPN	_	Gender=Fem|Number=Sing	20	appos	_	ChangedBy=Issue119|MWE=Cidade_Jardim|MWEPOS=PROPN
+22	Jardim	Jardim	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 24	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	25	det	_	_
 25	meca	meca	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
@@ -118,8 +118,8 @@
 # source CETENFolha n=835 cad=Revista Folha sec=nd sem=94b
 # sent_id CF835-6
 # id 3523
-1	Luciano	Luciano	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	MWE=Luciano_Huck
-2	Huck	Huck	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
+1	Luciano	Luciano	PROPN	_	Gender=Masc|Number=Sing	16	nsubj	_	ChangedBy=Issue119|MWE=Luciano_Huck|MWEPOS=PROPN
+2	Huck	Huck	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 4	22	22	NUM	<card>|NUM|M|P|@N<PRED	_	1	appos	_	_
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -210,13 +210,13 @@
 7	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
 9	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	gasto	gasto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
+10	gasto	gasto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137
 11	médio	médio	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	_
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	US$	US$	SYM	_	Gender=Masc|Number=Plur	10	nmod	_	_
 14	30	30	NUM	<card>|NUM|M|P|@N<	_	13	nummod	_	_
 15	por	por	ADP	PRP|@<ADVL	_	16	case	_	_
-16	noite	noite	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+16	noite	noite	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue137
 17	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 18	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
 19	falam	falar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
@@ -228,8 +228,8 @@
 25	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 26	como	como	ADV	<rel>|ADV|@ADVL>	_	27	advmod	_	_
 27	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	advcl	_	_
-28	Rubinho	Rubinho	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	27	nsubj	_	MWE=Rubinho_Gimenes
-29	Gimenes	Gimenes	PROPN	PROP|@N<	Number=Sing	28	flat:name	_	_
+28	Rubinho	Rubinho	PROPN	_	Gender=Masc|Number=Sing	27	nsubj	_	ChangedBy=Issue119|MWE=Rubinho_Gimenes|MWEPOS=PROPN
+29	Gimenes	Gimenes	PROPN	_	Number=Sing	28	flat:name	_	ChangedBy=Issue119
 30	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 31	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	cop	_	_
 32	«	«	PUNCT	PU|@PU	_	33	punct	_	_
@@ -268,8 +268,8 @@
 3	corretor	corretor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
 5	seguros	seguro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
-6	Kiko	Kiko	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	5	appos	_	MWE=Kiko_Villela
-7	Villela	Villela	PROPN	PROP|@N<	Number=Sing	6	flat:name	_	_
+6	Kiko	Kiko	PROPN	_	Gender=Masc|Number=Sing	5	appos	_	ChangedBy=Issue119|MWE=Kiko_Villela|MWEPOS=PROPN
+7	Villela	Villela	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 9	22	22	NUM	<card>|NUM|M|P|@N<PRED	_	5	appos	_	_
 10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
@@ -285,7 +285,7 @@
 2	economia	economia	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
 3	em	em	ADP	<sam->|PRP|@<ADVL	_	5	case	_	_
 4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Faap	Faap	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+5	Faap	Faap	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue137
 6	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 7	Kiko	Kiko	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 8	espera	esperar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -311,9 +311,9 @@
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 2	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	imprescindível	imprescindível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	9	ccomp	_	_
-4	hoje	hoje	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	3	nmod	_	MWE=hoje_em_dia
-5	em	em	ADP	PRP|@N<	_	6	case	_	_
-6	dia	dia	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
+4	hoje	hoje	PROPN	_	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue119|MWE=Hoje_em_dia|MWEPOS=PROPN
+5	em	em	PROPN	_	_	4	flat:name	_	ChangedBy=Issue119
+6	dia	dia	PROPN	_	Gender=Masc|Number=Sing	4	flat:name	_	ChangedBy=Issue119
 7	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 9	regulamenta	regulamentar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -333,7 +333,7 @@
 7	interessante	interessante	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	6	amod	_	_
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
 9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
+10	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	plínios	plínio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
@@ -350,7 +350,7 @@
 24	entre	entre	ADP	PRP|@<ADVL	_	25	case	_	_
 25	jovens	jovem	ADJ	ADJ|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	_
 26	em	em	ADP	PRP|@<ADVL	_	27	case	_	_
-27	bares	bar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	_
+27	bares	bar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	obl	_	ChangedBy=Issue137
 28	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text Em vez de mandar um papel pelo garçom com cantadas escritas, o plínio liga para a plínia de sua predileção e pronto -- está feito o contato imediato.
@@ -384,7 +384,7 @@
 24	pronto	pronto	INTJ	IN|@ADVL>	_	27	discourse	_	_
 25	--	--	PUNCT	PU|@PU	_	16	punct	_	_
 26	está	estar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	_	_
-27	feito	fazer	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	16	dep	_	_
+27	feito	feito	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	16	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	contato	contato	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	27	nsubj	_	_
 30	imediato	imediato	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	29	amod	_	_

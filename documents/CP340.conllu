@@ -5,7 +5,7 @@
 # id 1769
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	esta	este	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
-3	avenida	avenida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
+3	avenida	avenida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	ChangedBy=Issue137
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
 5	luxo	luxo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
@@ -16,7 +16,7 @@
 11	canal	canal	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl:agent	_	_
 12	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 13	perfilam-	perfilar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-14	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	13	obj	_	_
+14	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	13	expl	_	ChangedBy=Issue135
 15	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 16	de	de	ADP	PRP|@>N	_	18	case	_	MWE=de_um_lado
 17	um	um	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	18	det	_	_
@@ -38,7 +38,7 @@
 33	operam	operar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	_	_
 34	em	em	ADP	<sam->|PRP|@<ADVL	_	36	case	_	_
 35	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
-36	capital	capital	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
+36	capital	capital	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	33	obl	_	ChangedBy=Issue137
 37	de	de	ADP	<sam->|PRP|@N<	_	39	case	_	_
 38	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 39	Vestefália	Vestefália	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	_
@@ -58,8 +58,8 @@
 53	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 54	Gucci	Gucci	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	50	appos	_	_
 55	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-56	Van	Van	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	50	appos	_	MWE=Van_Cleef
-57	Cleef	Cleef	PROPN	PROP|@N<	Number=Sing	56	flat:name	_	_
+56	Van	Van	PROPN	_	Gender=Fem|Number=Sing	50	appos	_	ChangedBy=Issue119|MWE=Van_Cleef|MWEPOS=PROPN
+57	Cleef	Cleef	PROPN	_	Number=Sing	56	flat:name	_	ChangedBy=Issue119
 58	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 59	etc.	etc.	ADV	ADV|M|S|@APP	_	50	advmod	_	_
 
@@ -74,7 +74,7 @@
 4	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
 5	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
 6	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur	7	det	_	_
-7	montras	montra	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
+7	montras	montra	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	obl	_	ChangedBy=Issue137
 8	conjuntos	conjunto	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	pulseiras	pulseira	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	_
@@ -117,7 +117,7 @@
 2	a	a	ADP	PRP|@<PIV	_	3	case	_	_
 3	dinheiro	dinheiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 4	em	em	ADP	PRP|@<ADVL	_	5	case	_	_
-5	Düsseldorf	Düsseldorf	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
+5	Düsseldorf	Düsseldorf	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137
 6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	cidade	cidade	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	5	appos	_	_

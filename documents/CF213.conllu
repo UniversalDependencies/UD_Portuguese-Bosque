@@ -10,20 +10,20 @@
 5	aluguel	aluguel	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 6	de	de	ADP	PRP|@N<ARG	_	8	case	_	_
 7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Uno	Uno	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	MWE=Uno_Mille
-9	Mille	Mille	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
+8	Uno	Uno	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	ChangedBy=Issue119|MWE=Uno_Mille|MWEPOS=PROPN
+9	Mille	Mille	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	sai	sair	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 11	por	por	ADP	PRP|@<ADVL	_	12	case	_	_
 12	R$	R$	SYM	_	Gender=Masc|Number=Plur	10	nmod	_	_
 13	63	63	NUM	<card>|NUM|M|P|@N<	_	12	nummod	_	_
 14	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 15	com	com	ADP	PRP|@<ADVL	_	16	case	_	_
-16	quilometragem	quilometragem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
+16	quilometragem	quilometragem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	ChangedBy=Issue137
 17	livre	livre	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	16	amod	_	_
 18	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 19	em	em	ADP	<sam->|PRP|@<ADVL	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	Avis	Avis	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
+21	Avis	Avis	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	ChangedBy=Issue137
 22	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text Na locadora Clean Car a diária do mesmo carro sai por R$ 72 com limite de 200 quilômetros por dia.
@@ -33,9 +33,9 @@
 # id 909
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	locadora	locadora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-4	Clean	Clean	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	3	appos	_	MWE=Clean_Car
-5	Car	Car	PROPN	PROP|@N<	Number=Sing	4	flat:name	_	_
+3	locadora	locadora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
+4	Clean	Clean	PROPN	_	Gender=Fem|Number=Sing	3	appos	_	ChangedBy=Issue119|MWE=Clean_Car|MWEPOS=PROPN
+5	Car	Car	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	diária	diária	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
 8	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
@@ -47,7 +47,7 @@
 14	R$	R$	SYM	_	Gender=Masc|Number=Plur	12	nmod	_	_
 15	72	72	NUM	<card>|NUM|M|P|@N<	_	14	nummod	_	_
 16	com	com	ADP	PRP|@<ADVL	_	17	case	_	_
-17	limite	limite	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
+17	limite	limite	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137
 18	de	de	ADP	PRP|@N<	_	20	case	_	_
 19	200	200	NUM	<card>|NUM|M|P|@>N	_	20	nummod	_	_
 20	quilômetros	quilômetro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
@@ -86,7 +86,7 @@
 # id 911
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	promoção	promoção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+3	promoção	promoção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue137
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	cliente	cliente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 6	ganha	ganhar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_

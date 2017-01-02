@@ -8,6 +8,8 @@ Pronouns are words that substitute for nouns or noun phrases, whose meaning is r
 
 Lemmatization rules = ?
 
+The possessive pronoun 'dele' (en = his) is tokenized as 'de' + 'ele' since in Portuguese it can be analysed as such. With this analysis, we keep the parallelism between other possessive constructions: de você (yours), de mim (mine). 
+
 
 Examples
 

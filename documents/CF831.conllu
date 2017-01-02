@@ -19,8 +19,8 @@
 14	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 15	Derlan	Derlan	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 16	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-17	Marcus	Marcus	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	MWE=Marcus_Vinícius
-18	Vinícius	Vinícius	PROPN	PROP|@N<	Number=Sing	17	flat:name	_	_
+17	Marcus	Marcus	PROPN	_	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue119|MWE=Marcus_Vinícius|MWEPOS=PROPN
+18	Vinícius	Vinícius	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
 20	Anderson	Anderson	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 21	;	;	PUNCT	PU|@PU	_	7	punct	_	_
@@ -28,8 +28,8 @@
 23	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 24	Juliano	Juliano	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 25	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
-26	Anderson	Anderson	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	MWE=Anderson_Leão
-27	Leão	Leão	PROPN	PROP|@N<	Number=Sing	26	flat:name	_	_
+26	Anderson	Anderson	PROPN	_	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue119|MWE=Anderson_Leão|MWEPOS=PROPN
+27	Leão	Leão	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 28	;	;	PUNCT	PU|@PU	_	7	punct	_	_
 29	Ricardinho	Ricardinho	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 30	,	,	PUNCT	PU|@PU	_	7	punct	_	_
@@ -50,7 +50,7 @@
 5	junta	junta	ADJ	<mente>|ADJ|F|S|@<ADVL	Gender=Fem|Number=Sing	4	advmod	_	_
 6	há	há	ADP	PRP|@<ADVL	_	8	case	_	_
 7	pouco	pouco	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	8	det	_	_
-8	tempo	tempo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
+8	tempo	tempo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
 9	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text O atacante Nílson e meia Anderson Leão chegaram agora ao time e o ponta-direita Ricardinho, o meia Juliano e o zagueiro Derlan foram promovidos no final de 93.
@@ -63,8 +63,8 @@
 3	Nílson	Nílson	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	appos	_	_
 4	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
 5	meia	meia	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
-6	Anderson	Anderson	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	5	appos	_	MWE=Anderson_Leão
-7	Leão	Leão	PROPN	PROP|@N<	Number=Sing	6	flat:name	_	_
+6	Anderson	Anderson	PROPN	_	Gender=Masc|Number=Sing	5	appos	_	ChangedBy=Issue119|MWE=Anderson_Leão|MWEPOS=PROPN
+7	Leão	Leão	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	chegaram	chegar	VERB	<first-cjt>|<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 9	agora	agora	ADV	<kc>|ADV|@<ADVL	_	8	advmod	_	_
 10	a	a	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	12	case	_	_
@@ -86,7 +86,7 @@
 26	promovidos	promover	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	8	conj	_	_
 27	em	em	ADP	<sam->|PRP|@<ADVL	_	29	case	_	_
 28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	final	final	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
+29	final	final	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	obl	_	ChangedBy=Issue137
 30	de	de	ADP	PRP|@N<	_	31	case	_	_
 31	93	93	NUM	<card>|NUM|M|P|@P<	_	29	nmod	_	_
 32	.	.	PUNCT	PU|@PU	_	8	punct	_	_
@@ -138,16 +138,16 @@
 6	clube	clube	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 7	há	há	ADP	PRP|@<ADVL	_	9	case	_	_
 8	dez	dez	NUM	<card>|NUM|M|P|@>N	_	9	nummod	_	_
-9	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+9	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue137
 10	e	e	CCONJ	<co-sta>|KC|@CO	_	3	cc	_	_
 11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 12	em	em	ADP	PRP|@ADVL>	_	13	case	_	_
-13	novembro	novembro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
+13	novembro	novembro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue137
 14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15	foi	ir	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
 16	para	para	ADP	PRP|@<ADVL	_	18	case	_	_
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	equipe	equipe	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+18	equipe	equipe	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue137
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	juniores	júnior	ADJ	ADJ|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	_
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
@@ -165,7 +165,7 @@
 6	hoje	hoje	ADV	ADV|@<ADVL	_	2	advmod	_	_
 7	contra	contra	ADP	PRP|@<ADVL	_	9	case	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	Corinthians	Corinthians	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+9	Corinthians	Corinthians	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue137
 10	:	:	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text «Estamos muito motivados.
@@ -176,7 +176,7 @@
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	Estamos	estar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_
 3	muito	muito	ADV	<quant>|ADV|@>A	_	4	advmod	_	_
-4	motivados	motivar	VERB	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
+4	motivados	motivado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	0	root	_	ChangedBy=Issue141|ChangedBy=Issue91
 5	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text A casa vai estar cheia e nós vamos mostrar porque viemos disputar a Copa», afirma.
@@ -210,7 +210,7 @@
 # id 3503
 1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	futuro	futuro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+3	futuro	futuro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	plano	plano	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
@@ -218,7 +218,7 @@
 8	continuar	continuar	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	0	root	_	_
 9	em	em	ADP	<sam->|PRP|@<ADVL	_	11	case	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Cruzeiro	Cruzeiro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+11	Cruzeiro	Cruzeiro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 12	:	:	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text «Não quero subir muito agora e quebrar a cara depois.»

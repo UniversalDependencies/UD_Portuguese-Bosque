@@ -11,7 +11,7 @@
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	segunda-feira	segunda-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+9	segunda-feira	segunda-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137
 10	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 12	mesma	mesmo	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	13	det	_	_
@@ -21,8 +21,8 @@
 16	como	como	ADV	<interr>|ADV|@ADVL>	_	17	advmod	_	_
 17	acabou	acabar	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	ccomp	_	_
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	Grande	Grande	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	17	nsubj	_	MWE=Grande_Prêmio
-20	Prêmio	Prêmio	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
+19	Grande	Grande	PROPN	_	Gender=Masc|Number=Sing	17	nsubj	_	ChangedBy=Issue119|MWE=Grande_Prêmio|MWEPOS=PROPN
+20	Prêmio	Prêmio	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
 21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
 22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
@@ -30,7 +30,7 @@
 25	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	26	nsubj	_	_
 26	aconteceu	acontecer	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	acl:relcl	_	_
 27	domingo	domingo	NOUN	<np-idf>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	26	nmod	_	_
-28	passado	passar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	27	acl	_	_
+28	passado	passado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	27	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 29	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text Era «Senna erra e Schumacher vence» (em «O Globo», a frase ficou pouco maior que isso).
@@ -40,17 +40,17 @@
 # id 2804
 1	Era	ser	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
-3	Senna	Senna	PROPN	PROP|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	MWE=Senna_erra_e_Schumacher_vence
-4	erra	erra	PROPN	PROP|@N<	Number=Sing	3	flat:name	_	_
-5	e	e	PROPN	PROP|@N<	Number=Sing	3	flat:name	_	_
-6	Schumacher	Schumacher	PROPN	PROP|@N<	Number=Sing	3	flat:name	_	_
-7	vence	vence	PROPN	PROP	Number=Sing	3	flat:name	_	_
+3	Senna	Senna	PROPN	_	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Senna_erra_e_Schumacher_vence|MWEPOS=PROPN
+4	erra	erra	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
+5	e	e	CCONJ	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
+6	Schumacher	Schumacher	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
+7	vence	vence	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 8	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 9	(	(	PUNCT	PU|@PU	_	18	punct	_	_
 10	em	em	ADP	PRP|@ADVL>	_	12	case	_	_
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	_
-12	O	O	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	MWE=O_Globo
-13	Globo	Globo	PROPN	PROP|@N<	Number=Sing	12	flat:name	_	_
+12	O	O	DET	_	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue119|MWE=O_Globo|MWEPOS=PROPN
+13	Globo	Globo	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	»	»	PUNCT	PU|@PU	_	12	punct	_	_
 15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
@@ -70,7 +70,7 @@
 # id 2805
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
-3	constatação	constatação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	_
+3	constatação	constatação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	ChangedBy=Issue137
 4	enviesada	enviesar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	_	_
 5	de	de	ADP	PRP|@N<ARG	_	10	mark	_	_
 6	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
@@ -114,8 +114,8 @@
 44	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
 45	vitória	vitória	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	43	obj	_	_
 46	de	de	ADP	PRP|@N<	_	47	case	_	_
-47	Ayrton	Ayrton	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	45	nmod	_	MWE=Ayrton_Senna
-48	Senna	Senna	PROPN	PROP|@N<	Number=Sing	47	flat:name	_	_
+47	Ayrton	Ayrton	PROPN	_	Gender=Masc|Number=Sing	45	nmod	_	ChangedBy=Issue119|MWE=Ayrton_Senna|MWEPOS=PROPN
+48	Senna	Senna	PROPN	_	Number=Sing	47	flat:name	_	ChangedBy=Issue119
 49	em	em	ADP	PRP|@N<ARG	_	50	case	_	_
 50	Interlagos	Interlagos	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	45	nmod	_	_
 51	.	.	PUNCT	PU|@PU	_	22	punct	_	_
@@ -143,7 +143,7 @@
 16	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 17	em	em	ADP	<sam->|PRP|@ADVL>	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	direção	direção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	31	nmod	_	_
+19	direção	direção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	31	obl	_	ChangedBy=Issue137
 20	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
 21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 22	melhor	bom	ADJ	<SUP>|<KOMP>|<COMP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	23	amod	_	_
@@ -160,7 +160,7 @@
 33	consagração	consagração	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	31	obj	_	_
 34	em	em	ADP	<sam->|PRP|@<ADVL	_	36	case	_	_
 35	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-36	autódromo	autódromo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
+36	autódromo	autódromo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	31	obl	_	ChangedBy=Issue137
 37	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text E que só Schumacher acreditava em sua possibilidade de vencer.
@@ -196,7 +196,7 @@
 9	estava	estar	VERB	<mv>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	advcl	_	_
 10	em	em	ADP	<first-cjt>|PRP|@<ADVL	_	12	case	_	_
 11	segundo	segundo	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	12	amod	_	_
-12	lugar	lugar	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
+12	lugar	lugar	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
 13	e	e	CCONJ	<co-advl>|KC|@CO	_	12	cc	_	_
 14	com	com	ADP	<cjt>|PRP|@<ADVL	_	16	case	_	_
 15	poucas	pouco	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	16	det	_	_
@@ -264,7 +264,7 @@
 25	imprensa	imprensa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	_
 26	em	em	ADP	<sam->|PRP|@<ADVL	_	28	case	_	_
 27	essas	esse	DET	<-sam>|<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	28	det	_	_
-28	horas	hora	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	16	nmod	_	_
+28	horas	hora	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	16	obl	_	ChangedBy=Issue137
 29	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text A imprensa já se esqueceu de que os oligopólios são o vilão da URV e do plano FHC.
@@ -275,7 +275,7 @@
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	imprensa	imprensa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	já	já	ADV	ADV|@ADVL>	_	5	advmod	_	_
-4	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+4	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	expl	_	ChangedBy=Issue135
 5	esqueceu	esquecer	VERB	<mv>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	de	de	ADP	PRP|@<PIV	_	12	mark	_	_
 7	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
@@ -308,7 +308,7 @@
 7	indexador	indexador	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 8	há	há	ADP	PRP|@<ADVL	_	10	case	_	_
 9	um	um	NUM	<card>|NUM|M|S|@>N	_	10	nummod	_	_
-10	mês	mês	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
+10	mês	mês	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	ministro	ministro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
@@ -400,7 +400,7 @@
 5	demitida	demitir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 6	durante	durante	ADP	PRP|@<ADVL	_	8	case	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	exercício	exercício	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
+8	exercício	exercício	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
 9	de	de	ADP	<sam->|PRP|@N<ARG	_	11	case	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	cargo	cargo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
@@ -409,7 +409,7 @@
 14	estabilidade	estabilidade	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	obj	_	_
 15	por	por	ADP	PRP|@<ADVL	_	17	case	_	_
 16	um	um	NUM	<card>|NUM|M|S|@>N	_	17	nummod	_	_
-17	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
+17	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue137
 18	após	após	ADP	PRP|@N<	_	20	case	_	_
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	exercício	exercício	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
@@ -431,7 +431,7 @@
 6	jornal	jornal	NOUN	<np-def>|N|M|S|@ACC>	Gender=Masc|Number=Sing	13	obj	_	_
 7	sob	sob	ADP	PRP|@ADVL>	_	9	case	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	perspectiva	perspectiva	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
+9	perspectiva	perspectiva	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	ChangedBy=Issue137
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	leitor	leitor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
@@ -451,7 +451,7 @@
 26	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 27	a	a	ADP	<sam->|PRP|@<ADVL	_	29	case	_	_
 28	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
-29	domingos	domingo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	_
+29	domingos	domingo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	obl	_	ChangedBy=Issue137
 30	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	noticiário	noticiário	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	25	obj	_	_
@@ -473,7 +473,7 @@
 4	enviadas	enviar	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	0	root	_	_
 5	para	para	ADP	PRP|@<ADVL	_	7	case	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	al.	al.	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+7	al.	al.	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	ChangedBy=Issue137
 8	Barão	barão	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	7	nmod:npmod	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	Limeira	Limeira	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	8	nmod	_	_
@@ -483,8 +483,8 @@
 14	8º	8º	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	15	amod	_	_
 15	andar	andar	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	7	appos	_	_
 16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-17	São	São	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	appos	_	MWE=São_Paulo
-18	Paulo	Paulo	PROPN	PROP|@N<	Number=Sing	17	flat:name	_	_
+17	São	São	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
+18	Paulo	Paulo	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	(	(	PUNCT	PU|@PU	_	20	punct	_	_
 20	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	17	appos	_	_
 21	)	)	PUNCT	PU|@PU	_	20	punct	_	_
@@ -493,8 +493,8 @@
 24	01202-001	01202-001	NUM	<card>|NUM|M|P|@N<	_	23	nummod	_	_
 25	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 26	a.c.	a.c.	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	7	appos	_	_
-27	Junia	Junia	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	26	appos	_	MWE=Junia_Nogueira
-28	Nogueira	Nogueira	PROPN	PROP|@N<	Number=Sing	27	flat:name	_	_
+27	Junia	Junia	PROPN	_	Gender=Fem|Number=Sing	26	appos	_	ChangedBy=Issue119|MWE=Junia_Nogueira|MWEPOS=PROPN
+28	Nogueira	Nogueira	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
 29	de	de	ADP	PRP|@N<	_	30	case	_	_
 30	Sá/Ombudsman	Sá/Ombudsman	PROPN	PROP|@P<	Number=Sing	27	nmod	_	_
 31	.	.	PUNCT	PU|@PU	_	4	punct	_	_
@@ -505,7 +505,7 @@
 # sent_id CF670-17
 # id 2819
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
-2	contatos	contato	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
+2	contatos	contato	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obl	_	ChangedBy=Issue137
 3	telefônicos	telefônico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
 4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 5	ligue	ligar	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -514,12 +514,12 @@
 8	)	)	PUNCT	PU|@PU	_	7	punct	_	_
 9	224-3896	224-3896	NUM	<card>|NUM|M/F|P|@<ACC	_	5	obj	_	_
 10	entre	entre	ADP	PRP|@<ADVL	_	11	case	_	_
-11	14h	14h	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
+11	14h	14h	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obl	_	ChangedBy=Issue137
 12	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
 13	18h	18h	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	conj	_	_
 14	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 15	de	de	ADP	PRP|@<ADVL	_	16	case	_	_
-16	segunda	segunda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+16	segunda	segunda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	sexta-feira	sexta-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 19	.	.	PUNCT	PU|@PU	_	5	punct	_	_

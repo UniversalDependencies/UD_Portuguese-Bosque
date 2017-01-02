@@ -9,7 +9,7 @@
 4	regra	regra	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
 6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	trabalho	trabalho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
+7	trabalho	trabalho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 
 # text Conhecer as normas de etiqueta empresarial e ser mais cordial são requisitos para o sucesso dos executivos
 # forest 1
@@ -89,7 +89,7 @@
 24	exigir	exigir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	advcl	_	_
 25	funcionários	funcionário	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	24	obj	_	_
 26	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	27	advmod	_	_
-27	abertos	abrir	VERB	<mv>|<first-cjt>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	25	acl	_	_
+27	abertos	aberto	ADJ	<mv>|<first-cjt>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	25	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 28	a	a	ADP	<sam->|PRP|@A<ADVL	_	30	case	_	_
 29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	diálogo	diálogo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
@@ -154,8 +154,8 @@
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
 33	marketing	marketing	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
 34	pessoal	pessoal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	33	amod	_	_
-35	Otto	Otto	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	33	appos	_	MWE=Otto_Reiter
-36	Reiter	Reiter	PROPN	PROP|@N<	Number=Sing	35	flat:name	_	_
+35	Otto	Otto	PROPN	_	Gender=Masc|Number=Sing	33	appos	_	ChangedBy=Issue119|MWE=Otto_Reiter|MWEPOS=PROPN
+36	Reiter	Reiter	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
 37	,	,	PUNCT	PU|@PU	_	38	punct	_	_
 38	69	69	NUM	<card>|NUM|M|P|@N<PRED	_	33	appos	_	_
 39	.	.	PUNCT	PU|@PU	_	29	punct	_	_
@@ -210,7 +210,7 @@
 16	maneiras	maneira	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	13	nmod	_	_
 17	em	em	ADP	<sam->|PRP|@<ADVL	_	19	case	_	_
 18	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-19	negócios	negócio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
+19	negócios	negócio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	obl	_	ChangedBy=Issue137
 20	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text No Brasil, essa atitude ainda depende da iniciativa de cada um.
@@ -220,7 +220,7 @@
 # id 3644
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+3	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
 6	atitude	atitude	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
@@ -230,7 +230,7 @@
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	iniciativa	iniciativa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 12	de	de	ADP	PRP|@N<ARG	_	13	case	_	_
-13	cada	cada	PRON	DET|M|S|@P<	Gender=Masc|Number=Sing	11	det	_	MWE=cada_um
-14	um	um	DET	<arti>|DET|M|S|@A<	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	fixed	_	_
+13	cada	cada	PROPN	_	Gender=Masc|Number=Sing	11	det	_	ChangedBy=Issue119|MWE=Cada_um|MWEPOS=PROPN
+14	um	um	PROPN	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	flat:name	_	ChangedBy=Issue119
 15	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 

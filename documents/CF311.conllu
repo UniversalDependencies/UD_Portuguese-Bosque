@@ -10,17 +10,17 @@
 5	para	para	ADP	PRP|@<ACC	_	6	case	_	_
 6	Páscoa	Páscoa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 
-# text A «Ráscal Pizza &amp; Cozinha» criou um cardápio especial para o almoço da Páscoa de amanhã, com uma massa com um recheio e um molho à base de peixes.
+# text A «Ráscal Pizza & Cozinha» criou um cardápio especial para o almoço da Páscoa de amanhã, com uma massa com um recheio e um molho à base de peixes.
 # forest 1
 # source CETENFolha n=311 cad=Cotidiano sec=soc sem=94b
 # sent_id CF311-3
 # id 1292
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
-3	Ráscal	Ráscal	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	MWE=Ráscal_Pizza_&amp;_Cozinha
-4	Pizza	Pizza	PROPN	PROP|@N<	Number=Sing	3	flat:name	_	_
-5	&amp;	&amp;	PROPN	PROP|@N<	Number=Sing	3	flat:name	_	_
-6	Cozinha	Cozinha	PROPN	PROP|@N<	Number=Sing	3	flat:name	_	_
+3	Ráscal	Ráscal	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	_	ChangedBy=Issue119|MWE=Ráscal_Pizza_&_Cozinha|MWEPOS=PROPN
+4	Pizza	Pizza	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
+5	&	&	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
+6	Cozinha	Cozinha	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 7	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 8	criou	criar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
@@ -58,7 +58,7 @@
 # id 1293
 1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	preço	preço	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
+3	preço	preço	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
 5	CR$	CR$	SYM	_	Gender=Masc|Number=Plur	3	nmod	_	_
 6	6.200	6.200	NUM	<card>|NUM|M|P|@N<	_	5	nummod	_	_
@@ -66,11 +66,11 @@
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	clientes	cliente	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
 10	poderão	poder	AUX	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	aux	_	_
-11	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	obj	_	_
+11	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	expl	_	ChangedBy=Issue135
 12	servir	servir	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 13	a	a	ADP	<sam->|PRP|@<ADVL	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	vontade	vontade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+15	vontade	vontade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
 16	de	de	ADP	<sam->|PRP|@<PIV	_	18	case	_	_
 17	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	ravióli	ravióli	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
@@ -98,7 +98,7 @@
 11	preparado	preparar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
 12	a	a	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
 13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	base	base	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+14	base	base	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	vitela	vitela	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
 17	.	.	PUNCT	PU|@PU	_	7	punct	_	_
@@ -114,11 +114,11 @@
 4	inugurada	inaugurar	VERB	<mv>|<pass>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 5	por	por	ADP	PRP|@PASS	_	7	case	_	_
 6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	Grupo	Grupo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	obl:agent	_	MWE=Grupo_Viena
-8	Viena	Viena	PROPN	PROP|@N<	Number=Sing	7	flat:name	_	_
+7	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	4	obl:agent	_	ChangedBy=Issue119|MWE=Grupo_Viena|MWEPOS=PROPN
+8	Viena	Viena	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	há	há	ADP	PRP|@<ADVL	_	11	case	_	_
 10	dois	dois	NUM	<card>|NUM|M|P|@>N	_	11	nummod	_	_
-11	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
+11	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	ChangedBy=Issue137
 12	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
 13	oferece	oferecer	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 14	21	21	NUM	<card>|NUM|M|P|@>N	_	15	nummod	_	_

@@ -12,7 +12,7 @@
 7	ficheiros	ficheiro	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	obj	_	_
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	Internet	Internet	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+10	Internet	Internet	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue137
 11	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text O FTP é uma forma especial de fazer «login» noutro local da Internet com o objectivo de carregar ou enviar ficheiros.
@@ -39,7 +39,7 @@
 17	Internet	Internet	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
 18	com	com	ADP	PRP|@<ADVL	_	20	case	_	_
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	objectivo	objectivo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+20	objectivo	objectivo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 21	de	de	ADP	PRP|@N<ARG	_	22	mark	_	_
 22	carregar	carregar	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	20	acl	_	_
 23	ou	ou	CCONJ	<co-inf>|KC|@CO	_	22	cc	_	_
@@ -154,7 +154,7 @@
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Gopher	Gopher	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	difundiram-	difundir	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	obj	_	_
+4	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	expl	_	ChangedBy=Issue135
 5	muito	muito	ADV	<quant>|ADV|@>A	_	6	advmod	_	_
 6	rapidamente	rapidamente	ADV	ADV|@<ADVL	_	3	advmod	_	_
 7	através	através	ADV	ADV|@<ADVL	_	3	advmod	_	_
@@ -164,7 +164,7 @@
 11	em	em	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
 12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
 13	últimos	último	ADJ	<NUM-ord>|ADJ|M|P|@>N	Gender=Masc|Number=Plur	14	amod	_	_
-14	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+14	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue137
 15	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 16	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
 17	estão	estar	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
@@ -178,9 +178,9 @@
 25	através	através	ADV	ADV|@<ADVL	_	24	advmod	_	_
 26	de	de	ADP	<sam->|PRP|@A<	_	28	case	_	_
 27	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-28	World	World	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	MWE=World_Wide_Web
-29	Wide	Wide	PROPN	PROP|@N<	Number=Sing	28	flat:name	_	_
-30	Web	Web	PROPN	PROP|@N<	Number=Sing	28	flat:name	_	_
+28	World	World	PROPN	_	Gender=Fem|Number=Sing	25	nmod	_	ChangedBy=Issue119|MWE=World_Wide_Web|MWEPOS=PROPN
+29	Wide	Wide	PROPN	_	Number=Sing	28	flat:name	_	ChangedBy=Issue119
+30	Web	Web	PROPN	_	Number=Sing	28	flat:name	_	ChangedBy=Issue119
 31	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text Contudo, existem ainda milhares de Servidores Gopher na Internet, que deverão subsistir por mais algum tempo.
@@ -194,11 +194,11 @@
 4	ainda	ainda	ADV	ADV|@<ADVL	_	3	advmod	_	_
 5	milhares	milhar	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	3	nsubj	_	_
 6	de	de	ADP	PRP|@N<ARG	_	7	case	_	_
-7	Servidores	Servidores	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	MWE=Servidores_Gopher
-8	Gopher	Gopher	PROPN	PROP|@N<	Number=Sing	7	flat:name	_	_
+7	Servidores	Servidores	PROPN	_	Gender=Masc|Number=Plur	5	nmod	_	ChangedBy=Issue119|MWE=Servidores_Gopher|MWEPOS=PROPN
+8	Gopher	Gopher	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	em	em	ADP	<sam->|PRP|@<ADVL	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	Internet	Internet	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+11	Internet	Internet	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
 12	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 13	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	15	nsubj	_	_
 14	deverão	dever	AUX	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	15	aux	_	_
@@ -206,7 +206,7 @@
 16	por	por	ADP	PRP|@<ADVL	_	19	case	_	_
 17	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing	19	det	_	_
 18	algum	algum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	19	det	_	_
-19	tempo	tempo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
+19	tempo	tempo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue137
 20	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text Hipertexto

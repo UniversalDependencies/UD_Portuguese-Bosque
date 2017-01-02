@@ -5,8 +5,8 @@
 # id 4250
 1	Maastricht	Maastricht	PROPN	PROP|M/F|S|@NPHR	Gender=Unsp|Number=Sing	0	root	_	_
 2	em	em	ADP	PRP|@N<	_	3	case	_	_
-3	São	São	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	MWE=São_Bento
-4	Bento	Bento	PROPN	PROP|@N<	Number=Sing	3	flat:name	_	_
+3	São	São	PROPN	_	Gender=Masc|Number=Sing	1	nmod	_	ChangedBy=Issue119|MWE=São_Bento|MWEPOS=PROPN
+4	Bento	Bento	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 5	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 6	quando	quando	ADV	<first-cjt>|<interr>|ADV|@N<PRED	_	1	advmod	_	_
 7	e	e	CCONJ	KC|@CO	_	6	cc	_	_
@@ -19,7 +19,7 @@
 # id 4251
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	entrada	entrada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	58	nmod	_	_
+3	entrada	entrada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	58	obl	_	ChangedBy=Issue137
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Tratado	Tratado	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	MWE=Tratado_de_Maastricht
@@ -36,7 +36,7 @@
 17	para	para	ADP	PRP|@<ADVL	_	20	case	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	próxima	próximo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_
-20	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+20	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue137
 21	--	--	PUNCT	PU|@PU	_	22	punct	_	_
 22	depois	depois	ADV	ADV|@<ADVL	_	15	advmod	_	_
 23	de	de	ADP	PRP|@A<ARG	_	29	mark	_	_
@@ -69,7 +69,7 @@
 50	«	«	PUNCT	PU|@PU	_	51	punct	_	_
 51	timing	timing	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	44	conj	_	_
 52	»	»	PUNCT	PU|@PU	_	51	punct	_	_
-53	adequado	adequar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	51	acl	_	_
+53	adequado	adequado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	51	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 54	a	a	ADP	<sam->|PRP|@<PIV	_	57	case	_	_
 55	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
 56	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	57	det	_	_
@@ -78,7 +78,7 @@
 59	imediatamente	imediatamente	ADV	ADV|@<ADVL	_	58	advmod	_	_
 60	a	a	ADP	<sam->|PRP|@<ADVL	_	62	case	_	_
 61	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	62	det	_	_
-62	ordem	ordem	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	58	nmod	_	_
+62	ordem	ordem	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	58	obl	_	ChangedBy=Issue137
 63	de	de	ADP	PRP|@N<ARG	_	65	case	_	_
 64	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	65	det	_	_
 65	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	62	nmod	_	_
@@ -97,12 +97,12 @@
 6	nomeadamente	nomeadamente	ADV	ADV|@>P	_	9	advmod	_	_
 7	sobre	sobre	ADP	PRP|@<ADVL	_	9	case	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	necessidade	necessidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+9	necessidade	necessidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
 10	de	de	ADP	PRP|@N<	_	11	mark	_	_
 11	proceder	proceder	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	acl	_	_
 12	a	a	ADP	PRP|@<ADVL	_	14	case	_	_
 13	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	revisão	revisão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+14	revisão	revisão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137
 15	constitucional	constitucional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	amod	_	_
 16	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	17	nsubj	_	_
 17	compatibilize	compatibilizar	VERB	<mv>|V|PR|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_
@@ -113,7 +113,7 @@
 22	Constituição	Constituição	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
 23	com	com	ADP	PRP|@<ADVL	_	25	case	_	_
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	texto	texto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
+25	texto	texto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	ChangedBy=Issue137
 26	de	de	ADP	<sam->|PRP|@N<	_	28	case	_	_
 27	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	Tratado	Tratado	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	_
@@ -124,8 +124,8 @@
 # source CETEMPúblico n=827 sec=pol sem=92a
 # sent_id CP827-4
 # id 4253
-1	Hoje	hoje	ADP	PRP|@ADVL>	_	2	case	_	MWE=Hoje_mesmo
-2	mesmo	mesmo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
+1	Hoje	hoje	PROPN	_	_	6	nmod	_	ChangedBy=Issue119|MWE=Hoje_mesmo|MWEPOS=PROPN
+2	mesmo	mesmo	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	Parlamento	Parlamento	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_

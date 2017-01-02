@@ -40,7 +40,7 @@
 35	para	para	ADP	PRP|@<ADVL	_	38	case	_	_
 36	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
 37	«	«	PUNCT	PU|@PU	_	38	punct	_	_
-38	quota	quota	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	34	nmod	_	_
+38	quota	quota	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	34	obl	_	ChangedBy=Issue137
 39	equivalente	equivalente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	38	amod	_	_
 40	a	a	ADP	PRP|@A<	_	42	case	_	_
 41	0,5	0,5	NUM	<card>|NUM|M|P|@>N	_	42	nummod	_	_
@@ -75,7 +75,7 @@
 6	proposto	propor	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
 7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
 8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	ponto	ponto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
+9	ponto	ponto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	ChangedBy=Issue137
 10	3	3	NUM	<card>|NUM|M|S|@N<	_	9	nummod	_	_
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -96,7 +96,7 @@
 27	radicada	radicar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	23	acl	_	_
 28	em	em	ADP	<sam->|PRP|@<ADVL	_	30	case	_	_
 29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
+30	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	obl	_	ChangedBy=Issue137
 31	»	»	PUNCT	PU|@PU	_	23	punct	_	_
 32	,	,	PUNCT	PU|@PU	_	34	punct	_	_
 33	a	a	ADP	PRP|@N<PRED	_	34	mark	_	_
@@ -115,7 +115,7 @@
 46	dotação	dotação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	44	obj	_	_
 47	«	«	PUNCT	PU|@PU	_	49	punct	_	_
 48	para	para	ADP	PRP|@<ADVL	_	49	case	_	_
-49	fins	fim	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	44	nmod	_	_
+49	fins	fim	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	44	obl	_	ChangedBy=Issue137
 50	religiosos	religioso	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	49	amod	_	_
 51	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	50	cc	_	_
 52	de	de	ADP	<cjt>|PRP|@N<	_	53	case	_	_
@@ -164,8 +164,8 @@
 18	faz	fazer	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
 19	a	a	ADP	<sam->|PRP|@<PIV	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	Igreja	Igreja	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	MWE=Igreja_Católica
-22	Católica	Católica	PROPN	PROP|@N<	Number=Sing	21	flat:name	_	_
+21	Igreja	Igreja	PROPN	_	Gender=Fem|Number=Sing	18	nmod	_	ChangedBy=Issue119|MWE=Igreja_Católica|MWEPOS=PROPN
+22	Católica	Católica	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 24	de	de	ADP	PRP|@<ADVL	_	25	case	_	MWE=de_acordo
 25	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
@@ -231,7 +231,7 @@
 6	em	em	ADP	PRP|@ADVL>	_	9	case	_	_
 7	ambos	ambos	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	9	det	_	_
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
-9	países	país	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
+9	países	país	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	ChangedBy=Issue137
 10	optou-	optar	VERB	<mv>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 11	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	10	nsubj	_	_
 12	por	por	ADP	<sam->|PRP|@<PIV	_	14	case	_	_
@@ -244,7 +244,7 @@
 19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	declaração	declaração	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
+22	declaração	declaração	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	ChangedBy=Issue137
 23	de	de	ADP	PRP|@N<ARG	_	24	case	_	_
 24	rendimentos	rendimento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
 25	,	,	PUNCT	PU|@PU	_	18	punct	_	_

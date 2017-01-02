@@ -6,7 +6,7 @@
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	4	det	_	_
 3	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	4	det	_	_
-4	globalidade	globalidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
+4	globalidade	globalidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	ChangedBy=Issue137
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
 7	respostas	resposta	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	8	nsubj	_	_
@@ -22,11 +22,11 @@
 17	entre	entre	ADP	PRP|@N<	_	18	case	_	_
 18	os	o	PRON	<dem>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Dem	16	det	_	_
 19	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	21	nsubj	_	_
-20	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	21	obj	_	_
+20	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	21	expl	_	ChangedBy=Issue135
 21	interessam	interessar	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_
 22	por	por	ADP	<sam->|PRP|@<ADVL	_	24	case	_	_
 23	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	24	det	_	_
-24	sorte	sorte	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
+24	sorte	sorte	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	ChangedBy=Issue137
 25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
 26	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
 27	bichos	bicho	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	_
@@ -38,8 +38,8 @@
 # sent_id CP130-2
 # id 669
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
-2	Jorge	Jorge	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	MWE=Jorge_Rocha
-3	Rocha	Rocha	PROPN	PROP|@N<	Number=Sing	2	flat:name	_	_
+2	Jorge	Jorge	PROPN	_	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue119|MWE=Jorge_Rocha|MWEPOS=PROPN
+3	Rocha	Rocha	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
 4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	inquérito	inquérito	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -120,7 +120,7 @@
 # id 671
 1	De	de	ADP	PRP|@ADVL>	_	3	case	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	modo	modo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
+3	modo	modo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	ChangedBy=Issue137
 4	geral	geral	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
 5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
@@ -160,17 +160,17 @@
 10	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
 11	normalmente	normalmente	ADV	ADV|@<ADVL	_	13	advmod	_	_
 12	mais	mais	ADV	<quant>|ADV|@>A	_	13	advmod	_	_
-13	maltratados	maltratar	VERB	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	39	dep	_	_
+13	maltratados	maltratado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	39	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15	pois	pois	ADV	<kc>|ADV|@ADVL>	_	21	advmod	_	_
 16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 17	em	em	ADP	PRP|@ADVL>	_	19	case	_	_
 18	certa	certo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	19	det	_	_
-19	medida	medida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
+19	medida	medida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	ChangedBy=Issue137
 20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 21	entram	entrar	VERB	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	_	_
 22	em	em	ADP	PRP|@<ADVL	_	23	case	_	_
-23	concorrência	concorrência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
+23	concorrência	concorrência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	ChangedBy=Issue137
 24	com	com	ADP	PRP|@N<ARG	_	26	case	_	_
 25	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
 26	pessoas	pessoa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	23	nmod	_	_
@@ -183,7 +183,7 @@
 33	ruído	ruído	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	32	obj	_	_
 34	em	em	ADP	<sam->|PRP|@<ADVL	_	36	case	_	_
 35	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_
-36	prédios	prédio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	_
+36	prédios	prédio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	32	obl	_	ChangedBy=Issue137
 37	»	»	PUNCT	PU|@PU	_	13	punct	_	_
 38	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 39	observa	observar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -197,8 +197,8 @@
 47	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
 48	Porto	Porto	PROPN	PROP|@P<	Number=Sing	45	nmod	_	_
 49	,	,	PUNCT	PU|@PU	_	39	punct	_	_
-50	Vítor	Vítor	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	41	appos	_	MWE=Vítor_Aires
-51	Aires	Aires	PROPN	PROP|@N<	Number=Sing	50	flat:name	_	_
+50	Vítor	Vítor	PROPN	_	Gender=Masc|Number=Sing	41	appos	_	ChangedBy=Issue119|MWE=Vítor_Aires|MWEPOS=PROPN
+51	Aires	Aires	PROPN	_	Number=Sing	50	flat:name	_	ChangedBy=Issue119
 52	.	.	PUNCT	PU|@PU	_	39	punct	_	_
 
 # text «Nos concelhos rurais, essa concorrência não existe e os bichos mantêm, até, determinadas funções úteis, como a guarda ou a caça».
@@ -209,7 +209,7 @@
 1	«	«	PUNCT	PU|@PU	_	10	punct	_	_
 2	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	concelhos	concelho	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
+4	concelhos	concelho	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	ChangedBy=Issue137
 5	rurais	rural	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	4	amod	_	_
 6	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 7	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	8	det	_	_

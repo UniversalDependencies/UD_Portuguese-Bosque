@@ -27,13 +27,13 @@
 22	objectivo	objectivo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	_
 23	perseguido	perseguir	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	22	acl	_	_
 24	mantém-	manter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-25	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	obj	_	_
+25	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	expl	_	ChangedBy=Issue135
 26	:	:	PUNCT	PU|@PU	_	24	punct	_	_
 27	prosseguir	prosseguir	VERB	<mv>|V|INF|@ICL-APP	VerbForm=Inf	22	dep	_	_
 28	em	em	ADP	<sam->|PRP|@<ADVL	_	31	case	_	_
 29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 30	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing	31	det	_	_
-31	protesto	protesto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
+31	protesto	protesto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	obl	_	ChangedBy=Issue137
 32	contra	contra	ADP	PRP|@N<	_	33	case	_	_
 33	o	o	PRON	<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	31	det	_	_
 34	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	35	nsubj	_	_
@@ -56,7 +56,7 @@
 # sent_id CP267-2
 # id 1421
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
-2	declarações	declaração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	19	nmod	_	_
+2	declarações	declaração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	19	obl	_	ChangedBy=Issue137
 3	a	a	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	PÚBLICO	Público	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
@@ -93,7 +93,7 @@
 36	remetendo	remeter	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	19	advcl	_	_
 37	para	para	ADP	PRP|@<ADVL	_	39	case	_	_
 38	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	_	_
-39	resultados	resultado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	36	nmod	_	_
+39	resultados	resultado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	36	obl	_	ChangedBy=Issue137
 40	de	de	ADP	PRP|@N<	_	42	case	_	_
 41	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
 42	reunião	reunião	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	39	nmod	_	_
@@ -102,7 +102,7 @@
 45	juntar	juntar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	42	acl:relcl	_	_
 46	em	em	ADP	<sam->|PRP|@<ADVL	_	48	case	_	_
 47	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
-48	Porto	Porto	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	45	nmod	_	_
+48	Porto	Porto	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	45	obl	_	ChangedBy=Issue137
 49	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_
 50	governador	governador	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	45	obj	_	_
 51	civil	civil	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	50	amod	_	_
@@ -123,8 +123,8 @@
 66	Ourense	Ourense	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	59	appos	_	_
 67	)	)	PUNCT	PU|@PU	_	66	punct	_	_
 68	e	e	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	50	cc	_	_
-69	Marques	Marques	PROPN	<cjt>|PROP|F|S|@<ACC	Gender=Fem|Number=Sing	50	conj	_	MWE=Marques_Seabra
-70	Seabra	Seabra	PROPN	PROP|@N<	Number=Sing	69	flat:name	_	_
+69	Marques	Marques	PROPN	_	Gender=Fem|Number=Sing	50	conj	_	ChangedBy=Issue119|MWE=Marques_Seabra|MWEPOS=PROPN
+70	Seabra	Seabra	PROPN	_	Number=Sing	69	flat:name	_	ChangedBy=Issue119
 71	,	,	PUNCT	PU|@PU	_	72	punct	_	_
 72	responsável	responsável	ADJ	<cjt>|<n>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	69	amod	_	_
 73	de	de	ADP	<sam->|PRP|@A<	_	75	case	_	_
@@ -134,7 +134,7 @@
 77	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	45	cc	_	_
 78	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	80	nsubj	_	_
 79	está	estar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	80	cop	_	_
-80	prevista	prever	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	45	acl:relcl	_	_
+80	prevista	previsto	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	45	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue91
 81	para	para	ADP	PRP|@<ADVL	_	82	case	_	_
 82	sexta-feira	sexta-feira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	80	nmod	_	_
 83	,	,	PUNCT	PU|@PU	_	80	punct	_	_
@@ -161,7 +161,7 @@
 9	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	10	det	_	_
 10	barragem	barragem	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl:agent	_	_
 11	estarão	estar	VERB	<mv>|V|FUT|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	cop	_	_
-12	dispostos	dispor	VERB	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	4	dep	_	_
+12	dispostos	disposto	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	4	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 13	a	a	ADP	PRP|@<PIV	_	14	mark	_	_
 14	permitir	permitir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	xcomp	_	_
 15	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
@@ -179,28 +179,28 @@
 27	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	29	nsubj	_	_
 28	irá	ir	AUX	<aux>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	aux	_	_
 29	ficar	ficar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	acl:relcl	_	_
-30	submersa	submergir	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	29	dep	_	_
+30	submersa	submerso	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	29	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 31	por	por	ADP	<sam->|PRP|@PASS	_	33	case	_	_
 32	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	33	det	_	_
 33	albufeira	albufeira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	30	obl:agent	_	_
 34	,	,	PUNCT	PU|@PU	_	40	punct	_	_
-35	logo	logo	ADP	PRP|@ADVL>	_	36	case	_	MWE=logo_que
-36	que	que	PRON	INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	45	nmod	_	_
+35	logo	logo	PROPN	_	_	45	nmod	_	ChangedBy=Issue119|MWE=Logo_que|MWEPOS=PROPN
+36	que	que	PROPN	_	Gender=Masc|Number=Sing|PronType=Ind	35	flat:name	_	ChangedBy=Issue119
 37	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 38	«	«	PUNCT	PU|@PU	_	45	punct	_	_
 39	arbitragem	arbitragem	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	45	nsubj:pass	_	_
 40	acordada	acordar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	39	acl	_	_
 41	entre	entre	ADP	PRP|@<ADVL	_	43	case	_	_
 42	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	43	det	_	_
-43	partes	parte	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	40	nmod	_	_
+43	partes	parte	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	40	obl	_	ChangedBy=Issue137
 44	seja	ser	AUX	<aux>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	aux:pass	_	_
 45	assumida	assumir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	30	advcl	_	_
 46	em	em	ADP	PRP|@<ADVL	_	47	case	_	_
-47	documento	documento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	45	nmod	_	_
+47	documento	documento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	45	obl	_	ChangedBy=Issue137
 48	assinado	assinar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	47	acl	_	_
 49	perante	perante	ADP	PRP|@<ADVL	_	51	case	_	_
 50	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_
-51	notário	notário	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	48	nmod	_	_
+51	notário	notário	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	48	obl	_	ChangedBy=Issue137
 52	»	»	PUNCT	PU|@PU	_	45	punct	_	_
 53	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

@@ -13,7 +13,7 @@
 8	entre	entre	ADP	PRP|@<ADVL	_	9	case	_	MWE=entre_si
 9	si	si	PRON	<refl>|PERS|3S|PIV|@P<	Number=Sing|Person=3|PronType=Prs	7	nmod	_	_
 10	sem	sem	ADP	PRP|@<ADVL	_	12	mark	_	_
-11	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	obj	_	_
+11	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	expl	_	ChangedBy=Issue135
 12	terem	ter	VERB	<mv>|<se-passive>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	7	advcl	_	_
 13	em	em	ADP	PRP|@<ADVL	_	14	case	_	MWE=em_conta
 14	conta	conta	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
@@ -59,7 +59,7 @@
 6	ruas	rua	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	10	nsubj	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	Aveiro	Aveiro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
-9	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	10	obj	_	_
+9	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	10	expl	_	ChangedBy=Issue135
 10	transformarem	transformar	VERB	<mv>|<se-passive>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	3	acl	_	_
 11	em	em	ADP	<sam->|PRP|@<PIV	_	13	case	_	_
 12	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -114,12 +114,12 @@
 # id 1501
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	acordo	acordo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
+3	acordo	acordo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	ChangedBy=Issue137
 4	estabelecido	estabelecer	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	TV	TV	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	23	nsubj	_	MWE=TV_Cabo
-8	Cabo	Cabo	PROPN	PROP|@N<	Number=Sing	7	flat:name	_	_
+7	TV	TV	PROPN	_	Gender=Fem|Number=Sing	23	nsubj	_	ChangedBy=Issue119|MWE=TV_Cabo|MWEPOS=PROPN
+8	Cabo	Cabo	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	Mondego	Mondego	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	7	nmod	_	_
 10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 11	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	12	nsubj	_	_
@@ -146,18 +146,18 @@
 32	instaladas	instalar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	29	acl	_	_
 33	por	por	ADP	PRP|@PASS	_	35	case	_	_
 34	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	35	det	_	_
-35	Portugal	Portugal	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	32	obl:agent	_	MWE=Portugal_Telecom
-36	Telecom	Telecom	PROPN	PROP|@N<	Number=Sing	35	flat:name	_	_
+35	Portugal	Portugal	PROPN	_	Gender=Fem|Number=Sing	32	obl:agent	_	ChangedBy=Issue119|MWE=Portugal_Telecom|MWEPOS=PROPN
+36	Telecom	Telecom	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
 37	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 38	enquanto	enquanto	ADV	<rel>|ADV|@ADVL>	_	42	advmod	_	_
 39	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	Pluricanal	Pluricanal	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	42	nsubj	_	_
-41	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	42	obj	_	_
+41	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	42	expl	_	ChangedBy=Issue135
 42	servirá	servir	VERB	<mv>|<se-passive>|V|FUT|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	23	advcl	_	_
 43	,	,	PUNCT	PU|@PU	_	42	punct	_	_
 44	mediante	mediante	ADP	PRP|@<ADVL	_	46	case	_	_
 45	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
-46	comparticipação	comparticipação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	42	nmod	_	_
+46	comparticipação	comparticipação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	42	obl	_	ChangedBy=Issue137
 47	financeira	financeiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	46	amod	_	_
 48	,	,	PUNCT	PU|@PU	_	42	punct	_	_
 49	de	de	ADP	<sam->|PRP|@<PIV	_	51	case	_	_
@@ -176,13 +176,13 @@
 # id 1502
 1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	presidente	presidente	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	_
+3	presidente	presidente	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	30	obl	_	ChangedBy=Issue137
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	6	det	_	_
 6	autarquia	autarquia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	Celso	Celso	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	3	appos	_	MWE=Celso_Santos
-9	Santos	Santos	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
+8	Celso	Celso	PROPN	_	Gender=Masc|Number=Sing	3	appos	_	ChangedBy=Issue119|MWE=Celso_Santos|MWEPOS=PROPN
+9	Santos	Santos	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 11	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
 12	acordo	acordo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	30	nsubj	_	_
@@ -197,7 +197,7 @@
 21	alargado	alargar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	20	acl	_	_
 22	a	a	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	24	case	_	_
 23	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	24	det	_	_
-24	EDP	EDP	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
+24	EDP	EDP	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	ChangedBy=Issue137
 25	e	e	CCONJ	<co-advl>|KC|@CO	_	24	cc	_	_
 26	a	a	ADP	<sam->|<cjt>|PRP|@<ADVL	_	28	case	_	_
 27	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	28	det	_	_

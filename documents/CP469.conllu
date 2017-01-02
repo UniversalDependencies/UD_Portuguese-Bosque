@@ -60,7 +60,7 @@
 55	de	de	ADP	<sam->|PRP|@N<	_	57	case	_	_
 56	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	_	_
 57	Mondego	mondego	NOUN	N|@P<	_	54	nmod	_	_
-58	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	59	obj	_	_
+58	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	59	expl	_	ChangedBy=Issue135
 59	encontrar	encontrar	VERB	<cjt>|<mv>|<se-passive>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	37	conj	_	_
 60	ausente	ausente	ADJ	<n>|ADJ|M|S|@<OC	Gender=Masc|Number=Sing	59	xcomp	_	_
 61	em	em	ADP	<sam->|PRP|@A<	_	63	case	_	_
@@ -81,8 +81,8 @@
 6	Profesores	Profesores	PROPN	PROP|@P<	Number=Sing	3	nmod	_	_
 7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
 8	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Região	Região	PROPN	PROP|@P<	Number=Sing	6	nmod	_	MWE=Região_Centro
-10	Centro	Centro	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	_
+9	Região	Região	PROPN	_	Number=Sing	6	nmod	_	ChangedBy=Issue119|MWE=Região_Centro|MWEPOS=PROPN
+10	Centro	Centro	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 11	(	(	PUNCT	PU|@PU	_	12	punct	_	_
 12	SPRC	SPRC	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	3	appos	_	_
 13	)	)	PUNCT	PU|@PU	_	12	punct	_	_
@@ -163,8 +163,8 @@
 21	3º	3º	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
 22	ciclo	ciclo	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
-24	Santa	Santa	PROPN	PROP|@P<	Number=Sing	19	nmod	_	MWE=Santa_Clara
-25	Clara	Clara	PROPN	PROP|@N<	Number=Sing	24	flat:name	_	_
+24	Santa	Santa	PROPN	_	Number=Sing	19	nmod	_	ChangedBy=Issue119|MWE=Santa_Clara|MWEPOS=PROPN
+25	Clara	Clara	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
 26	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 27	em	em	ADP	<sam->|PRP|@N<PRED	_	29	case	_	_
 28	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
@@ -185,8 +185,8 @@
 1	Só	só	ADV	ADV|@ADVL>	_	6	advmod	_	_
 2	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
 3	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
-4	EB	eb	NOUN	N|@>N	_	5	compound	_	MWE=EB_2,3
-5	2,3	2,3	NOUN	N|@SUBJ>	_	6	nsubj	_	_
+4	EB	eb	PROPN	_	_	6	nsubj	_	ChangedBy=Issue119|MWE=EB_2,3|MWEPOS=PROPN
+5	2,3	2,3	PROPN	_	_	4	flat:name	_	ChangedBy=Issue119
 6	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	protocolo	protocolo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
@@ -227,7 +227,7 @@
 17	e	e	CCONJ	<co-postnom>|KC|@CO	_	15	cc	_	_
 18	sem	sem	ADP	<cjt>|PRP|@N<	_	19	case	_	_
 19	formação	formação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
-20	adequada	adequar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	19	acl	_	_
+20	adequada	adequado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	19	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 21	a	a	ADP	<sam->|PRP|@<PIV	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	situação	situação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_

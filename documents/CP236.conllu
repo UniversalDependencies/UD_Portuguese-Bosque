@@ -25,7 +25,7 @@
 20	pois	pois	ADV	ADV|@<ADVL	_	19	advmod	_	_
 21	a	a	ADP	<sam->|PRP|@<ADVL	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	23	det	_	_
-23	espera	espera	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
+23	espera	espera	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	ChangedBy=Issue137
 24	de	de	ADP	<first-cjt>|PRP|@N<ARG	_	25	case	_	_
 25	iniciativas	iniciativa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	23	nmod	_	_
 26	válidas	válido	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	25	amod	_	_
@@ -56,7 +56,7 @@
 51	estudado	estudar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	23	acl	_	_
 52	com	com	ADP	PRP|@<ADVL	_	54	case	_	_
 53	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	54	det	_	_
-54	meios	meio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	51	nmod	_	_
+54	meios	meio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	51	obl	_	ChangedBy=Issue137
 55	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	59	obj	_	_
 56	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	59	det	_	_
 57	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	59	det	_	_
@@ -140,8 +140,8 @@
 9	Associação	Associação	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	MWE=Associação_dos_Arqueólogos_Portugueses
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	Arqueólogos	Arqueólogos	PROPN	PROP|@P<	Number=Sing	9	nmod	_	MWE=Arqueólogos_Portugueses
-13	Portugueses	Portugueses	PROPN	PROP|@N<	Number=Sing	12	flat:name	_	_
+12	Arqueólogos	Arqueólogos	PROPN	_	Number=Sing	9	nmod	_	ChangedBy=Issue119|MWE=Arqueólogos_Portugueses|MWEPOS=PROPN
+13	Portugueses	Portugueses	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 
 # text Membro do Conselho Permanente da Union Internationale des Sciences Pré et ProtoHistoriques (UISPP)
 # forest 1
@@ -155,13 +155,13 @@
 5	Permanente	Permanente	PROPN	PROP|@N<	Number=Sing	4	flat:name	_	_
 6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	8	det	_	_
-8	Union	Union	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	MWE=Union_Internationale
-9	Internationale	Internationale	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
+8	Union	Union	PROPN	_	Gender=Fem|Number=Sing	4	nmod	_	ChangedBy=Issue119|MWE=Union_Internationale|MWEPOS=PROPN
+9	Internationale	Internationale	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	des	des	ADP	PRP|@N<	_	11	case	_	_
-11	Sciences	Sciences	PROPN	PROP|@P<	Number=Sing	8	nmod	_	MWE=Sciences_Pré_et_ProtoHistoriques
-12	Pré	Pré	PROPN	PROP|@N<	Number=Sing	11	flat:name	_	_
-13	et	et	PROPN	PROP|@N<	Number=Sing	11	flat:name	_	_
-14	ProtoHistoriques	ProtoHistoriques	PROPN	PROP|@N<	Number=Sing	11	flat:name	_	_
+11	Sciences	Sciences	PROPN	_	Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=Sciences_Pré_et_ProtoHistoriques|MWEPOS=PROPN
+12	Pré	Pré	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
+13	et	et	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
+14	ProtoHistoriques	ProtoHistoriques	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 15	(	(	PUNCT	PU|@PU	_	16	punct	_	_
 16	UISPP	UISPP	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	8	appos	_	_
 17	)	)	PUNCT	PU|@PU	_	16	punct	_	_

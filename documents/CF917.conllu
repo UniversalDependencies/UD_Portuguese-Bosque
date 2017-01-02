@@ -14,8 +14,8 @@
 # source CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id CF917-2
 # id 3873
-1	Stephen	Stephen	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	MWE=Stephen_Freehill
-2	Freehill	Freehill	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
+1	Stephen	Stephen	PROPN	_	Gender=Masc|Number=Sing	9	nsubj	_	ChangedBy=Issue119|MWE=Stephen_Freehill|MWEPOS=PROPN
+2	Freehill	Freehill	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 4	16	16	NUM	<card>|NUM|M|P|@N<PRED	_	1	appos	_	_
 5	(	(	PUNCT	PU|@PU	_	6	punct	_	_
@@ -31,7 +31,7 @@
 15	Cingapura	Cingapura	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
 16	para	para	ADP	PRP|@<ADVL	_	18	case	_	_
 17	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	audiência	audiência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+18	audiência	audiência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	ChangedBy=Issue137
 19	preliminar	preliminar	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	18	amod	_	_
 20	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
@@ -61,9 +61,9 @@
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 8	como	como	ADP	<com>|PRP|@<ADVL	_	10	case	_	_
 9	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	10	det	_	_
-10	compatriota	compatriota	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
-11	Michael	Michael	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	10	appos	_	MWE=Michael_Fay
-12	Fay	Fay	PROPN	PROP|@N<	Number=Sing	11	flat:name	_	_
+10	compatriota	compatriota	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
+11	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	10	appos	_	ChangedBy=Issue119|MWE=Michael_Fay|MWEPOS=PROPN
+12	Fay	Fay	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 13	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 14	18	18	NUM	<first-cjt>|<card>|NUM|M|P|@N<PRED	_	10	appos	_	_
 15	,	,	PUNCT	PU|@PU	_	14	punct	_	_
@@ -71,7 +71,7 @@
 17	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	mesma	mesmo	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	20	det	_	_
-20	ocasião	ocasião	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
+20	ocasião	ocasião	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	ChangedBy=Issue137
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text Fay foi punido com quatro vergastadas e agora cumpre pena de prisão.
@@ -125,8 +125,8 @@
 13	base	base	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
 14	aérea	aéreo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
-16	Al	Al	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	MWE=Al_Anad
-17	Anad	Anad	PROPN	PROP|@N<	Number=Sing	16	flat:name	_	_
+16	Al	Al	PROPN	_	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue119|MWE=Al_Anad|MWEPOS=PROPN
+17	Anad	Anad	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
 18	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	principal	principal	ADJ	<n>|<SUP>|<np-def>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	13	amod	_	_
@@ -146,7 +146,7 @@
 4	a	a	ADP	PRP|@<ADVL	_	7	case	_	_
 5	apenas	apenas	ADV	ADV|@>N	_	7	advmod	_	_
 6	50	50	NUM	<card>|NUM|M|P|@>N	_	7	nummod	_	_
-7	km	km	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+7	km	km	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue137
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	Áden	Áden	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 10	,	,	PUNCT	PU|@PU	_	12	punct	_	_
@@ -167,7 +167,7 @@
 3	começou	começar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	há	há	ADP	PRP|@<ADVL	_	6	case	_	_
 5	13	13	NUM	<card>|NUM|M|P|@>N	_	6	nummod	_	_
-6	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+6	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue137
 7	por	por	ADP	PRP|@<ADVL	_	8	case	_	MWE=por_causa_de
 8	causa	causa	NOUN	N|@P<	_	3	nmod	_	_
 9	de	de	ADP	PRP|@N<	_	11	case	_	_
@@ -176,9 +176,9 @@
 12	entre	entre	ADP	PRP|@N<	_	14	case	_	_
 13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	presidente	presidente	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
-15	Ali	Ali	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	14	appos	_	MWE=Ali_Abdulllah_Saleh
-16	Abdulllah	Abdulllah	PROPN	PROP|@N<	Number=Sing	15	flat:name	_	_
-17	Saleh	Saleh	PROPN	PROP|@N<	Number=Sing	15	flat:name	_	_
+15	Ali	Ali	PROPN	_	Gender=Masc|Number=Sing	14	appos	_	ChangedBy=Issue119|MWE=Ali_Abdulllah_Saleh|MWEPOS=PROPN
+16	Abdulllah	Abdulllah	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
+17	Saleh	Saleh	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 18	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	_
 19	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing	20	det	_	_
 20	vice	vice	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	conj	_	_

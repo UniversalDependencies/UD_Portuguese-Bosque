@@ -7,8 +7,8 @@
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	Lisboa	Lisboa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 4	apoiam	apoiar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	Jorge	Jorge	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	MWE=Jorge_Coroado
-6	Coroado	Coroado	PROPN	PROP|@N<	Number=Sing	5	flat:name	_	_
+5	Jorge	Jorge	PROPN	_	Gender=Masc|Number=Sing	4	obj	_	ChangedBy=Issue119|MWE=Jorge_Coroado|MWEPOS=PROPN
+6	Coroado	Coroado	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119
 
 # text O Conselho de Arbitragem da Associação de Futebol de Lisboa apoiou ontem Jorge Coroado e contestou a Comissão de Arbitragem da Liga Portuguesa de Futebol Profissional, que excluiu aquele árbitro do jogo FC Porto-V.Guimarães depois de ter montado um esquema para culpar Coroado de fugas de informação.
 # forest 1
@@ -28,8 +28,8 @@
 11	Lisboa	Lisboa	PROPN	PROP|@P<	Number=Sing	9	nmod	_	_
 12	apoiou	apoiar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 13	ontem	ontem	ADV	ADV|@<ADVL	_	12	advmod	_	_
-14	Jorge	Jorge	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	MWE=Jorge_Coroado
-15	Coroado	Coroado	PROPN	PROP|@N<	Number=Sing	14	flat:name	_	_
+14	Jorge	Jorge	PROPN	_	Gender=Masc|Number=Sing	12	obj	_	ChangedBy=Issue119|MWE=Jorge_Coroado|MWEPOS=PROPN
+15	Coroado	Coroado	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
 17	contestou	contestar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
@@ -41,8 +41,8 @@
 24	Liga	Liga	PROPN	PROP|@P<	Number=Sing	21	nmod	_	_
 25	Portuguesa	Portuguesa	PROPN	PROP|@N<	Number=Sing	24	flat:name	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
-27	Futebol	Futebol	PROPN	PROP|@P<	Number=Sing	24	nmod	_	MWE=Futebol_Profissional
-28	Profissional	Profissional	PROPN	PROP|@N<	Number=Sing	27	flat:name	_	_
+27	Futebol	Futebol	PROPN	_	Number=Sing	24	nmod	_	ChangedBy=Issue119|MWE=Futebol_Profissional|MWEPOS=PROPN
+28	Profissional	Profissional	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
 29	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 30	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	31	nsubj	_	_
 31	excluiu	excluir	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	acl:relcl	_	_
@@ -51,8 +51,8 @@
 34	de	de	ADP	<sam->|PRP|@<OA	_	36	case	_	_
 35	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
 36	jogo	jogo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
-37	FC	FC	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	36	appos	_	MWE=FC_Porto
-38	Porto	Porto	PROPN	PROP|@N<	Number=Sing	37	flat:name	_	_
+37	FC	FC	PROPN	_	Gender=Masc|Number=Sing	36	appos	_	ChangedBy=Issue119|MWE=FC_Porto|MWEPOS=PROPN
+38	Porto	Porto	PROPN	_	Number=Sing	37	flat:name	_	ChangedBy=Issue119
 39	-	-	PUNCT	PU|@PU	_	31	punct	_	_
 40	V.Guimarães	V.Guimarães	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	37	nmod:npmod	_	_
 41	depois	depois	ADV	ADV|@<ADVL	_	31	advmod	_	_
@@ -92,7 +92,7 @@
 15	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
 16	não	não	ADV	_	Polarity=Neg	18	advmod	_	_
 17	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	_
-18	prevista	prever	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	14	dep	_	_
+18	prevista	previsto	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	14	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 19	em	em	ADP	<sam->|PRP|@<ADVL	_	21	case	_	_
 20	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_
 21	normas	norma	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_

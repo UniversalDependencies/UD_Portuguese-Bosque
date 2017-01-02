@@ -15,8 +15,8 @@
 10	com	com	ADP	PRP|@N<	_	12	case	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	presidente	presidente	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
-13	Nelson	Nelson	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	12	appos	_	MWE=Nelson_Mandela
-14	Mandela	Mandela	PROPN	PROP|@N<	Number=Sing	13	flat:name	_	_
+13	Nelson	Nelson	PROPN	_	Gender=Masc|Number=Sing	12	appos	_	ChangedBy=Issue119|MWE=Nelson_Mandela|MWEPOS=PROPN
+14	Mandela	Mandela	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 17	próprio	próprio	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	18	amod	_	_
@@ -46,19 +46,19 @@
 # id 3108
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	tesoureira	tesoureira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
+3	tesoureira	tesoureira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	ChangedBy=Issue137
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	campanha	campanha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	Lula	Lula	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
 9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-10	Tatau	Tatau	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	3	appos	_	MWE=Tatau_Godinho
-11	Godinho	Godinho	PROPN	PROP|@N<	Number=Sing	10	flat:name	_	_
+10	Tatau	Tatau	PROPN	_	Gender=Fem|Number=Sing	3	appos	_	ChangedBy=Issue119|MWE=Tatau_Godinho|MWEPOS=PROPN
+11	Godinho	Godinho	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
 12	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 13	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
 14	custos	custo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj	_	_
-15	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	obj	_	_
+15	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	expl	_	ChangedBy=Issue135
 16	resumem	resumir	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 17	a	a	ADP	<sam->|PRP|@<PIV	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
@@ -70,7 +70,7 @@
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	candidato	candidato	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	26	nsubj	_	_
 26	ficou	ficar	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	advcl	_	_
-27	hospedado	hospedar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	26	dep	_	_
+27	hospedado	hospedado	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	26	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 28	em	em	ADP	<sam->|PRP|@<ADVL	_	30	case	_	_
 29	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	casa	casa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
@@ -87,8 +87,8 @@
 41	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
 42	Sul	Sul	PROPN	PROP|@P<	Number=Sing	39	nmod	_	_
 43	,	,	PUNCT	PU|@PU	_	44	punct	_	_
-44	Antônio	Antônio	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	33	appos	_	MWE=Antônio_Amaral
-45	Amaral	Amaral	PROPN	PROP|@N<	Number=Sing	44	flat:name	_	_
+44	Antônio	Antônio	PROPN	_	Gender=Masc|Number=Sing	33	appos	_	ChangedBy=Issue119|MWE=Antônio_Amaral|MWEPOS=PROPN
+45	Amaral	Amaral	PROPN	_	Number=Sing	44	flat:name	_	ChangedBy=Issue119
 46	de	de	ADP	PRP|@N<	_	47	case	_	_
 47	Sampaio	Sampaio	PROPN	PROP|@P<	Number=Sing	44	nmod	_	_
 48	.	.	PUNCT	PU|@PU	_	16	punct	_	_

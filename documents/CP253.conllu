@@ -5,13 +5,13 @@
 # id 1362
 1	A	a	ADP	PRP|@ADVL>	_	3	case	_	_
 2	45	45	NUM	<card>|NUM|M|P|@>N	_	3	nummod	_	_
-3	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	_
+3	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	obl	_	ChangedBy=Issue137
 4	de	de	ADP	PRP|@N<	_	3	nmod	_	_
 5	governação	governação	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	3	nmod:npmod	_	_
 6	de	de	ADP	<sam->|PRP|@N<ARG	_	8	case	_	_
 7	o	o	DET	<-sam>|<artd>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Partido	Partido	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	MWE=Partido_Nacional
-9	Nacional	Nacional	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
+8	Partido	Partido	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	ChangedBy=Issue119|MWE=Partido_Nacional|MWEPOS=PROPN
+9	Nacional	Nacional	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 11	quatro	quatro	NUM	<card>|NUM|M|P|@N<PRED	_	3	appos	_	_
 12	de	de	ADP	<sam->|PRP|@A<	_	14	case	_	_
@@ -21,14 +21,14 @@
 16	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	batuta	batuta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
 18	de	de	ADP	PRP|@N<	_	19	case	_	_
-19	Frederik	Frederik	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	MWE=Frederik_Willem
-20	Willem	Willem	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
+19	Frederik	Frederik	PROPN	_	Gender=Masc|Number=Sing	17	nmod	_	ChangedBy=Issue119|MWE=Frederik_Willem|MWEPOS=PROPN
+20	Willem	Willem	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
 22	Klerk	Klerk	PROPN	PROP|@P<	Number=Sing	19	nmod	_	_
 23	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 24	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	aux	_	_
 25	seguir-	seguir	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-26	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	obj	_	_
+26	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	expl	_	ChangedBy=Issue135
 27	agora	agora	ADV	<kc>|ADV|@<ADVL	_	25	advmod	_	_
 28	um	um	DET	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	período	período	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	25	nsubj	_	_
@@ -38,9 +38,9 @@
 33	política	político	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	32	amod	_	_
 34	de	de	ADP	<sam->|PRP|@N<	_	36	case	_	_
 35	o	o	DET	<-sam>|<artd>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-36	Congresso	Congresso	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	MWE=Congresso_Nacional_Africano
-37	Nacional	Nacional	PROPN	PROP|@N<	Number=Sing	36	flat:name	_	_
-38	Africano	Africano	PROPN	PROP|@N<	Number=Sing	36	flat:name	_	_
+36	Congresso	Congresso	PROPN	_	Gender=Masc|Number=Sing	32	nmod	_	ChangedBy=Issue119|MWE=CONGRESSO_Nacional_Africano|MWEPOS=PROPN
+37	Nacional	Nacional	PROPN	_	Number=Sing	36	flat:name	_	ChangedBy=Issue119
+38	Africano	Africano	PROPN	_	Number=Sing	36	flat:name	_	ChangedBy=Issue119
 39	(	(	PUNCT	PU|@PU	_	40	punct	_	_
 40	ANC	ANC	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	36	appos	_	_
 41	)	)	PUNCT	PU|@PU	_	40	punct	_	_
@@ -77,8 +77,8 @@
 13	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	liderança	liderança	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
-16	Nelson	Nelson	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	MWE=Nelson_Mandela
-17	Mandela	Mandela	PROPN	PROP|@N<	Number=Sing	16	flat:name	_	_
+16	Nelson	Nelson	PROPN	_	Gender=Masc|Number=Sing	14	nmod	_	ChangedBy=Issue119|MWE=Nelson_Mandela|MWEPOS=PROPN
+17	Mandela	Mandela	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
 18	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 19	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	aux	_	_
 20	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	ccomp	_	_
@@ -93,7 +93,7 @@
 29	votos	voto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	_
 30	em	em	ADP	<sam->|PRP|@<ADVL	_	32	case	_	_
 31	as	o	DET	<-sam>|<artd>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_
-32	eleições	eleição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	20	nmod	_	_
+32	eleições	eleição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	20	obl	_	ChangedBy=Issue137
 33	de	de	ADP	PRP|@N<	_	34	case	_	_
 34	Abril	abril	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	32	nmod:tmod	_	_
 35	para	para	ADP	PRP|@N<	_	37	case	_	_
@@ -112,7 +112,7 @@
 4	vêem	ver	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	em	em	ADP	PRP|@<ADVL	_	7	case	_	_
 6	semelhante	semelhante	DET	<diff>|DET|F|S|@>N	Gender=Fem|Number=Sing	7	det	_	_
-7	vantagem	vantagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+7	vantagem	vantagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	ChangedBy=Issue137
 8	o	o	DET	<artd>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	perigo	perigo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
 10	de	de	ADP	PRP|@N<	_	12	case	_	_
@@ -131,7 +131,7 @@
 23	durante	durante	ADP	PRP|@<ADVL	_	26	case	_	_
 24	as	o	DET	<artd>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
 25	próximas	próximo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	26	amod	_	_
-26	semanas	semana	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
+26	semanas	semana	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	obl	_	ChangedBy=Issue137
 27	preveja	prever	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
 28	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
 29	representação	representação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	27	obj	_	_
