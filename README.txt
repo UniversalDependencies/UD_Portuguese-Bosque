@@ -104,6 +104,6 @@ Documentation status: partial
 Data source: semi-automatic
 Data available since: UD v1.4
 License: CC BY-SA 4.0
-Genre: news blog 
-Contributors: Freitas, Claudia; Bick, Eckhard; Chalub, Fabricio; Rademaker, Alexandre; Real, Livy; Paiva, Valeria
+Genre: news blog
+Contributors: Freitas, Cláudia; Bick, Eckhard; Chalub, Fabricio; Rademaker, Alexandre; Real, Livy; de Paiva, Valeria
 Contact: arademaker@gmail.com
