@@ -43,7 +43,6 @@
 
 
 ;; STABLE MATCHING: BEGIN 
-;;
 ;; See: https://en.wikipedia.org/wiki/Stable_marriage_problem
 
 (defun stable-matching (men women)
@@ -81,8 +80,6 @@
 	      (format *standard-output* "w:~a rejected m:~a ~%" a-woman a-man))))
     (incf (gethash a-man proposal 0))))
 
-
-;; STABLE MATCHING: END
 
 (defun difference (new old)
   (let ((filename #P"mapping.dump"))
