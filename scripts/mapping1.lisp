@@ -1,4 +1,5 @@
 
+(ql:quickload :cl-ppcre)
 (ql:quickload :cl-conllu)
 (ql:quickload :cl-store)
 (ql:quickload :alexandria)
@@ -13,7 +14,7 @@
   (loop for x from 0 to (1- n) collect x))
 
 
-(defun matriz-to-preferences-m (matriz)
+(defun matrix-to-preferences-m (matriz)
   (destructuring-bind (rows cols)
       (array-dimensions matriz)
     (let* ((out (make-array (list rows cols) :initial-element nil))
@@ -27,7 +28,7 @@
 	      ids)))))
 
 
-(defun matriz-to-preferences-w (matriz)
+(defun matrix-to-preferences-w (matriz)
   (destructuring-bind (rows cols)
       (array-dimensions matriz)
     (let ((out (make-array (list cols rows) :initial-element nil))
@@ -43,6 +44,7 @@
 
 
 ;; STABLE MATCHING: BEGIN 
+;;
 ;; See: https://en.wikipedia.org/wiki/Stable_marriage_problem
 
 (defun stable-matching (men women)
@@ -54,32 +56,35 @@
 	(husband (make-hash-table))	; by woman
 	(proposal (make-hash-table))	; by man
 	(a-man (pop free) (pop free))
-	(a-woman (gethash a-man proposal 0)
-		 (gethash a-man proposal 0)))
+	(a-woman (aref men a-man (gethash a-man proposal 0))
+		 (aref men a-man (gethash a-man proposal 0))))
        ((or (null free)
-	    (> count 50)
+	    ;; (> count 50)
 	    (> (gethash a-man proposal 0) max-w))
 	(values husband wife))
-    (format *standard-output* "~%proposals: ~a ~%husband: ~a ~%"
-	    (alexandria:hash-table-alist proposal)
-	    (alexandria:hash-table-alist husband))
+    ;; (format *standard-output* "~%proposals: ~a ~%husband: ~a ~%"
+    ;; 	    (alexandria:hash-table-alist proposal)
+    ;; 	    (alexandria:hash-table-alist husband))
     (if (not (gethash a-woman husband nil))
 	(progn
-	  (format *standard-output* "w:~a single accepted m:~a ~%" a-woman a-man)
+	  ;; (format *standard-output* "w:~a single accepted m:~a ~%" a-woman a-man)
 	  (setf (gethash a-woman husband) a-man
 		(gethash a-man wife) a-woman))
 	(let ((partner (gethash a-woman husband)))
 	  (if (< (aref women a-woman a-man)
 		 (aref women a-woman partner))
 	      (progn
-		(format *standard-output* "w:~a changed m:~a -> m:~a ~%" a-woman partner a-man)
+		;; (format *standard-output* "w:~a changed m:~a -> m:~a ~%" a-woman partner a-man)
 		(push partner free)
 		(setf (gethash a-woman husband) a-man
 		      (gethash a-man wife) a-woman)
 		(remhash partner wife))
-	      (format *standard-output* "w:~a rejected m:~a ~%" a-woman a-man))))
+	      ;; (format *standard-output* "w:~a rejected m:~a ~%" a-woman a-man)
+	      )))
     (incf (gethash a-man proposal 0))))
 
+
+;; STABLE MATCHING: END
 
 (defun difference (new old)
   (let ((filename #P"mapping.dump"))
@@ -102,7 +107,16 @@
     (print "data loaded")
     (setf distances (difference new old))
     (print "distances computed")
-    (stable-matching (matriz-to-preferences-m distances)
-		     (matriz-to-preferences-w distances))))
+    (stable-matching (matrix-to-preferences-m distances)
+		     (matrix-to-preferences-w distances))))
 
+;; (defun distance-list (a-hash len filename)
+;;   ;; From a matching hash (let's say, `wife`), saves in a filenamed `filename` a list of distance values in the matching
+;;   (loop for i below 
 
+(defun find-singles (partners-hash length)
+  (let ((singles ()))
+    (dotimes (x length)
+      (if (null (gethash x partners-hash))
+	  (push x singles)))
+    singles))

@@ -267,3 +267,24 @@
     (setf men (transform-to-mens-preferences distances))
     (setf women (transform-to-womens-preferences distances))
     (stable-matching men women)))
+
+(defun find-singles (partner-array length)
+  (let ((singles ()))
+    (dotimes (x length)
+      (if (null (aref partner-array x))
+	  (push x singles)))
+    singles))
+
+(defun distance-list (partners-array distance-matrix)
+  ;; From a matching array (let's say, `wife`), get distances
+  (let ((length (car (array-dimensions partners-array)))
+	(distance-string ""))
+    (dotimes (x length distance-string)
+      (if (aref partners-array x)
+	  (setq distance-string
+		(concatenate 'string
+			     (concatenate 'string
+					  distance-string
+					  (format nil "~a" (list x (aref partners-array x) (aref distance-matrix x (aref partners-array x)))))
+			     ","))))))
+
