@@ -1,12 +1,12 @@
 
 (ql:quickload :cl-conllu)
 (ql:quickload :cl-store)
+(ql:quickload :alexandria)
 
 (defpackage :test
   (:use :cl :cl-ppcre :cl-conllu :cl-store))
 
 (in-package :test)
-
 
 (defun range (n)
   (loop for x from 0 to (1- n) collect x))
@@ -218,9 +218,6 @@
     (cons mens-matches womens-matches)))
 
 
-
-
-
 (defun stable-matching (men women)
   ;; Gale-Shapley algorithm for stable matchings
   ;;
@@ -231,6 +228,30 @@
 
 
 ;; STABLE MATCHING: END
+
+(defun find-singles (partner-array length)
+  (let ((singles ()))
+    (dotimes (x length)
+      (if (null (aref partner-array x))
+	  (push x singles)))
+    singles))
+
+(defun distance-list (partners-array distance-matrix)
+  ;; From a matching array (let's say, `wife`), get distances
+  (let ((length (car (array-dimensions partners-array)))
+	(distance-string ""))
+    (dotimes (x length distance-string)
+      (if (aref partners-array x)
+	  (setq distance-string
+		(concatenate 'string
+			     (concatenate 'string
+					  distance-string
+					  (format nil "~a" (list x
+								 (aref partners-array x)
+								 (aref distance-matrix x
+								       (aref partners-array x)))))
+			     ","))))))
+
 
 
 (defun test-matching ()
@@ -258,33 +279,32 @@
 
 
 (defun execute ()
-  (let (distances men women old new)
-    (setf old (read-conllu #P"../bosque-ud.conllu"))
-    (setf new (read-conllu #P"../../UD_Portuguese/bosque-old.conllu"))
-    (print "data loaded")
-    (setf distances (difference new old))
-    (print "distances matrix computed")
-    (setf men (transform-to-mens-preferences distances))
-    (setf women (transform-to-womens-preferences distances))
-    (stable-matching men women)))
-
-(defun find-singles (partner-array length)
-  (let ((singles ()))
-    (dotimes (x length)
-      (if (null (aref partner-array x))
-	  (push x singles)))
-    singles))
-
-(defun distance-list (partners-array distance-matrix)
-  ;; From a matching array (let's say, `wife`), get distances
-  (let ((length (car (array-dimensions partners-array)))
-	(distance-string ""))
-    (dotimes (x length distance-string)
-      (if (aref partners-array x)
-	  (setq distance-string
-		(concatenate 'string
-			     (concatenate 'string
-					  distance-string
-					  (format nil "~a" (list x (aref partners-array x) (aref distance-matrix x (aref partners-array x)))))
-			     ","))))))
+  (let* ((new (read-conllu #P"bosque-ud.conllu"))  ; man
+	 (old (read-conllu #P"bosque-old.conllu")) ; woman
+	 (distances (difference new old))
+	 (hist (make-hash-table))
+	 (men (transform-to-mens-preferences distances))
+	 (women (transform-to-womens-preferences distances))
+	 (matching (stable-matching men women)))
+    (with-open-file (out "mapping.report" :direction :output :if-exists :supersede)
+      (format out "~a~%~a ~a~%~%" (alexandria:hash-table-alist hist) (length new) (length old))
+      (dolist (obj (sort (remove-if (lambda (obj) (equal (nth 4 obj) 0))
+			       (mapcar (lambda (v)
+					 (let ((m (nth v new)))
+					   (if (aref (car matching) v)
+					       (let ((w (nth (aref (car matching) v) old))
+						     (d (aref distances v (aref (car matching) v))))
+						 (incf (gethash d hist 0))
+						 (list v (aref (car matching) v)
+						       (cl-conllu:sentence-meta-value m "sent_id")
+						       (cl-conllu:sentence-meta-value w "sent_id")
+						       d
+						       (sentence->text m)
+						       (sentence->text w)))
+					       (list v "-"
+						     (cl-conllu:sentence-meta-value m "sent_id")
+						     "-" -1 (sentence->text m) "-"))))
+				       (range (1- (length (car matching))))))
+			 #'> :key (lambda (obj) (nth 4 obj))))
+	(format out "~a ~a ~a ~a ~a~%~a~%~a~%")))))
 
