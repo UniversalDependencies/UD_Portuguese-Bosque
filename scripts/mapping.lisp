@@ -287,8 +287,8 @@
 	 (women (transform-to-womens-preferences distances))
 	 (matching (stable-matching men women)))
     (with-open-file (out "mapping.report" :direction :output :if-exists :supersede)
-      (format out "~a~%~a ~a~%~%" (alexandria:hash-table-alist hist) (length new) (length old))
-      (dolist (obj (sort (remove-if (lambda (obj) (equal (nth 4 obj) 0))
+      (format out "~:{[~a ~a ~a ~a ~a]~%~a~%~a~%~%~}"
+	      (sort (remove-if (lambda (obj) (equal (nth 4 obj) 0))
 			       (mapcar (lambda (v)
 					 (let ((m (nth v new)))
 					   (if (aref (car matching) v)
@@ -305,6 +305,6 @@
 						     (cl-conllu:sentence-meta-value m "sent_id")
 						     "-" -1 (sentence->text m) "-"))))
 				       (range (1- (length (car matching))))))
-			 #'> :key (lambda (obj) (nth 4 obj))))
-	(format out "~a ~a ~a ~a ~a~%~a~%~a~%")))))
+		    #'> :key (lambda (obj) (nth 4 obj))))
+      (format out "~a~%~a ~a~%~%" (alexandria:hash-table-alist hist) (length new) (length old)))))
 
