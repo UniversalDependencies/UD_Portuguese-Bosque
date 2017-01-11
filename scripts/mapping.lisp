@@ -254,16 +254,6 @@
 
 
 
-(defun test-matching ()
-  (let ((men (list (cons 0 (cons '(0 1 2) '(0 1 2)))
-		   (cons 1 (cons '(0 1 2) '(0 1 2)))
-		   (cons 2 (cons '(0 2 1) '(0 2 1)))))
-	(women (list (cons 0 (make-array 3 :initial-contents '(0 1 2)))
-		     (cons 1 (make-array 3 :initial-contents '(0 2 1)))
-		     (cons 2 (make-array 3 :initial-contents '(0 1 2))))))
-    (stable-matching men women)))
-
-
 (defun difference (new old)
   (let ((filename #P"mapping.dump"))
     (if (probe-file filename)
