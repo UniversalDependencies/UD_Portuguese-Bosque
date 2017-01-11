@@ -99,6 +99,10 @@
 # source CETEMPúblico n=23 sec=pol sem=94b
 # sent_id CP23-6
 # id 125
+# d2d: cc(jejum,e) -> cc(homilias,e)  #106
+# d2d: punct(jejum,,) -> punct(missas,,)  #106
+# d2d: cc(pobres,e) -> cc(oprimidos,e)  #106
+# d2d: punct(jejum,,) -> punct(orações,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Conferência	Conferência	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	MWE=Conferência_Haitiana
 3	Haitiana	Haitiana	PROPN	PROP|@N<	Number=Sing	2	flat:name	_	_
@@ -119,15 +123,15 @@
 18	crime	crime	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
 19	com	com	ADP	PRP|@<ADVL	_	20	case	_	_
 20	jejum	jejum	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue137
-21	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 22	orações	oração	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	20	conj	_	_
-23	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
 24	missas	missa	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	20	conj	_	_
 25	a	a	ADP	<sam->|PRP|@N<	_	27	case	_	_
 26	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	ar	ar	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
 28	livre	livre	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	27	amod	_	_
-29	e	e	CCONJ	<co-vfin>|KC|@CO	_	20	cc	_	_
+29	e	e	CCONJ	<co-vfin>|KC|@CO	_	30	cc	_	d2d:#106
 30	homilias	homilia	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	20	conj	_	_
 31	em	em	ADP	PRP|@ADVL>	_	32	case	_	_
 32	que	que	PRON	<rel>|INDP|F|P|@P<	Gender=Fem|Number=Plur|PronType=Rel	50	nmod	_	_
@@ -144,7 +148,7 @@
 43	«	«	PUNCT	PU|@PU	_	45	punct	_	_
 44	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	45	det	_	_
 45	pobres	pobre	ADJ	<first-cjt>|<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	41	nmod	_	_
-46	e	e	CCONJ	<co-prparg>|KC|@CO	_	45	cc	_	_
+46	e	e	CCONJ	<co-prparg>|KC|@CO	_	47	cc	_	d2d:#106
 47	oprimidos	oprimir	VERB	<n>|<cjt>|V|PCP|M|P|@P<	Gender=Masc|Number=Plur|VerbForm=Part	45	conj	_	_
 48	»	»	PUNCT	PU|@PU	_	45	punct	_	_
 49	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	50	aux:pass	_	_

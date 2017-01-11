@@ -3,13 +3,15 @@
 # source CETEMPúblico n=771 sec=des sem=93b
 # sent_id CP771-1
 # id 3951
+# d2d: punct(treinador-jogador,,) -> punct(possível,,)  #106
+# d2d: cc(treinador-jogador,mas) -> cc(possível,mas)  #106
 1	Mark	Mark	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Mark_Miller|MWEPOS=PROPN
 2	Miller	Miller	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	é	ser	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	treinador-jogador	treinador-jogador	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-7	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	5	cc	_	_
+6	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+7	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 8	é	ser	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
 9	possível	possível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	5	conj	_	_
 10	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
@@ -70,6 +72,7 @@
 # source CETEMPúblico n=771 sec=des sem=93b
 # sent_id CP771-3
 # id 3953
+# d2d: cc(elegante,e) -> cc(melhor,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	jogos	jogo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	obl	_	ChangedBy=Issue137
@@ -90,7 +93,7 @@
 18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	jogador	jogador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	15	appos	_	_
 20	elegante	elegante	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
-21	e	e	CCONJ	<co-postnom>|KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	<co-postnom>|KC|@CO	_	24	cc	_	d2d:#106
 22	talvez	talvez	ADV	ADV|@>A	_	24	advmod	_	_
 23	o	o	DET	<artd>|ART|M|S|@>A	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	dep	_	_
 24	melhor	bom	ADJ	<cjt>|<KOMP>|<SUP>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	20	conj	_	_
@@ -104,6 +107,9 @@
 # source CETEMPúblico n=771 sec=des sem=93b
 # sent_id CP771-4
 # id 3954
+# d2d: cc(Caucchi,e) -> cc(Buttigieg,e)  #106
+# d2d: cc(Cluett,e) -> cc(Buhagiar,e)  #106
+# d2d: punct(Cluett,,) -> punct(Caucchi,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	3	det	_	_
 3	internacionais	internacional	ADJ	<n>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
@@ -112,14 +118,14 @@
 6	(	(	PUNCT	PU|@PU	_	7	punct	_	_
 7	guarda-redes	guarda-redes	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	appos	_	_
 8	)	)	PUNCT	PU|@PU	_	7	punct	_	_
-9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	Caucchi	Caucchi	PROPN	<cjt>|<first-cjt>|PROP|M|S|@<SC	Gender=Masc|Number=Sing	5	conj	_	_
-11	e	e	CCONJ	<co-sc>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-sc>|KC|@CO	_	12	cc	_	d2d:#106
 12	Buttigieg	Buttigieg	PROPN	<cjt>|PROP|M|S|@<SC	Gender=Masc|Number=Sing	10	conj	_	_
 13	(	(	PUNCT	PU|@PU	_	14	punct	_	_
 14	defesas	defender	VERB	<mv>|V|PCP|F|P|@ICL-N<PRED	Gender=Fem|Number=Plur|VerbForm=Part	10	acl	_	_
 15	)	)	PUNCT	PU|@PU	_	14	punct	_	_
-16	e	e	CCONJ	<co-sc>|KC|@CO	_	5	cc	_	_
+16	e	e	CCONJ	<co-sc>|KC|@CO	_	17	cc	_	d2d:#106
 17	Buhagiar	Buhagiar	PROPN	<cjt>|PROP|M|S|@<SC	Gender=Masc|Number=Sing	5	conj	_	_
 18	(	(	PUNCT	PU|@PU	_	20	punct	_	_
 19	normalmente	normalmente	ADV	ADV|@>N	_	20	advmod	_	_

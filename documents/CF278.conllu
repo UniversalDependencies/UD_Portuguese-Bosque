@@ -54,10 +54,11 @@
 # source CETENFolha n=278 cad=Brasil sec=pol sem=94b
 # sent_id CF278-3
 # id 1170
+# d2d: cc(continente,e) -> cc(país,e)  #106
 1	É	ser	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	continente	continente	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-4	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+4	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	d2d:#106
 5	é	ser	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
 6	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	país	país	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	3	conj	_	_
@@ -71,17 +72,20 @@
 # source CETENFolha n=278 cad=Brasil sec=pol sem=94b
 # sent_id CF278-4
 # id 1171
+# d2d: punct(barco,,) -> punct(avião,,)  #106
+# d2d: punct(barco,,) -> punct(meios,,)  #106
+# d2d: punct(barco,,) -> punct(caminhão,,)  #106
 1	Vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 3	real	real	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
 4	chegando	chegar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	2	advcl	_	_
 5	de	de	ADP	PRP|@<ADVL	_	6	case	_	_
 6	barco	barco	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
-7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 8	caminhão	caminhão	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	conj	_	_
-9	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	avião	avião	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	conj	_	_
-11	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 12	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	14	det	_	_
 13	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
 14	meios	meio	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	conj	_	_

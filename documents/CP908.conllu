@@ -3,6 +3,8 @@
 # source CETEMPúblico n=908 sec=nd sem=96b
 # sent_id CP908-1
 # id 4680
+# d2d: punct(Claritromicina,,) -> punct(Metronizadol,,)  #106
+# d2d: cc(Claritromicina,e) -> cc(Amoxilina,e)  #106
 1	A	a	ADP	PRP|@ADVL>	_	2	case	_	MWE=A_par_de
 2	par	par	NOUN	N|@P<	_	10	nmod	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
@@ -20,9 +22,9 @@
 15	entre	entre	ADP	PRP|@P<	_	17	case	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	Claritromicina	Claritromicina	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 19	Metronizadol	Metronizadol	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	17	conj	_	_
-20	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	_
+20	e	e	CCONJ	<co-prparg>|KC|@CO	_	21	cc	_	d2d:#106
 21	Amoxilina	Amoxilina	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	17	conj	_	_
 22	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 23	prescritos	prescrever	VERB	<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	13	acl	_	_
@@ -37,6 +39,7 @@
 # source CETEMPúblico n=908 sec=nd sem=96b
 # sent_id CP908-2
 # id 4681
+# d2d: cc(incorrecto,e) -> cc(disseminado,e)  #106
 1	É	é	ADP	PRP|@ADVL>	_	2	case	_	MWE=É_que
 2	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 3	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	_	_
@@ -48,7 +51,7 @@
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	tratamento	tratamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 11	incorrecto	incorrecto	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	_
-12	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	d2d:#106
 13	disseminado	disseminar	VERB	<mv>|<cjt>|V|PCP|M|S|@N<	Gender=Masc|Number=Sing|VerbForm=Part	11	conj	_	_
 14	a	a	ADP	<sam->|PRP|@<ADVL	_	16	case	_	_
 15	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_

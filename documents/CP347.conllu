@@ -3,13 +3,16 @@
 # source CETEMPúblico n=347 sec=des sem=97b
 # sent_id CP347-1
 # id 1812
+# d2d: cc(lutaram,mas) -> cc(conseguiram,mas)  #106
+# d2d: cc(Faro,e) -> cc(Lisboa,e)  #106
+# d2d: punct(lutaram,,) -> punct(conseguiram,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	leões	leão	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
 4	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 5	de	de	ADP	<first-cjt>|PRP|@N<	_	6	case	_	_
 6	Faro	Faro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
-7	e	e	CCONJ	<co-postnom>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	d2d:#106
 8	de	de	ADP	<cjt>|PRP|@N<	_	9	case	_	_
 9	Lisboa	Lisboa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	ChangedBy=Issue149
 10	lutaram	lutar	VERB	<mv>|<first-cjt>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -21,8 +24,8 @@
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	São	São	PROPN	_	Number=Sing	15	nmod	_	ChangedBy=Issue119|MWE=São_Luiz|MWEPOS=PROPN
 18	Luiz	Luiz	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
-19	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-20	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+19	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+20	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 21	não	não	ADV	_	Polarity=Neg	22	advmod	_	_
 22	conseguiram	conseguir	VERB	<cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_
 23	marcar	marcar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	22	xcomp	_	_
@@ -33,6 +36,7 @@
 # source CETEMPúblico n=347 sec=des sem=97b
 # sent_id CP347-2
 # id 1813
+# d2d: cc(longe,e) -> cc(refugiou-,e)  #106
 1	Os	o	PRON	<dem>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Dem	8	nsubj	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -46,7 +50,7 @@
 11	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	12	amod	_	_
 12	forma	forma	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 13	física	físico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	_
-14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	8	cc	_	_
+14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	25	cc	_	d2d:#106
 15	a	a	ADP	<sam->|PRP|@ADVL>	_	16	case	_	MWE=a_partir_de
 16	partir	partir	NOUN	N|@P<	_	25	nmod	_	_
 17	de	de	ADP	PRP|@N<	_	20	case	_	_
@@ -71,6 +75,7 @@
 # source CETEMPúblico n=347 sec=des sem=97b
 # sent_id CP347-3
 # id 1814
+# d2d: cc(mostrar,mas) -> cc(faltou-,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Sporting	Sporting	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	dominou	dominar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -83,7 +88,7 @@
 10	pormenores	pormenor	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	9	obj	_	_
 11	interessantes	interessante	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	10	amod	_	_
 12	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-13	mas	mas	CCONJ	<co-vfin>|KC|@CO	_	9	cc	_	_
+13	mas	mas	CCONJ	<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
 14	faltou-	faltar	VERB	<mv>|<cjt>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	_	ChangedBy=Issue149
 15	lhes	eles	PRON	PERS|M|3P|DAT|@<DAT	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	14	iobj	_	_
 16	inteligência	inteligência	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	14	nsubj	_	_
@@ -123,6 +128,8 @@
 # source CETEMPúblico n=347 sec=des sem=97b
 # sent_id CP347-5
 # id 1816
+# d2d: cc(4x4x2,mas) -> cc(novidades,mas)  #106
+# d2d: punct(4x4x2,,) -> punct(novidades,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Sporting	Sporting	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	iniciou	iniciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -134,8 +141,8 @@
 9	4x4x2	4x4x2	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	Octávio	Octávio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
-12	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-13	mas	mas	CCONJ	<co-advl>|KC|@CO	_	9	cc	_	_
+12	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+13	mas	mas	CCONJ	<co-advl>|KC|@CO	_	16	cc	_	d2d:#106
 14	com	com	ADP	<cjt>|PRP|@<ADVL	_	16	case	_	_
 15	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	16	det	_	_
 16	novidades	novidade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	conj	_	_

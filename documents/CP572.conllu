@@ -86,6 +86,9 @@
 # source CETEMPúblico n=572 sec=nd sem=91b
 # sent_id CP572-3
 # id 2968
+# d2d: cc(entrámos,e) -> cc(viemos,e)  #106
+# d2d: punct(entrámos,,) -> punct(demos,,)  #106
+# d2d: punct(entrámos,,) -> punct(tomámos,,)  #106
 1	«	«	PUNCT	PU|@PU	_	11	punct	_	_
 2	Em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -97,18 +100,18 @@
 9	]	_	PUNCT	PU|@PU	_	7	punct	_	_
 10	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 11	entrámos	entrar	VERB	<mv>|<first-cjt>|V|PS|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	33	ccomp	_	_
-12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 13	tomámos	tomar	VERB	<mv>|<cjt>|V|PS|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	11	conj	_	_
 14	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	bica	bica	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	obj	_	_
-16	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	demos	dar	VERB	<mv>|<cjt>|V|PS|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	11	conj	_	_
 18	umas	um	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	19	det	_	_
 19	palmadas	palmada	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	17	obj	_	_
 20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
 21	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
 22	costas	costa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	obl	_	ChangedBy=Issue137
-23	e	e	CCONJ	<co-vfin>|KC|@CO	_	11	cc	_	_
+23	e	e	CCONJ	<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 24	viemos	vir	VERB	<mv>|<cjt>|V|PS|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	11	conj	_	_
 25	embora	embora	ADV	ADV|@<SA	_	24	advmod	_	_
 26	,	,	PUNCT	PU|@PU	_	11	punct	_	_
@@ -134,6 +137,11 @@
 # source CETEMPúblico n=572 sec=nd sem=91b
 # sent_id CP572-4
 # id 2969
+# d2d: cc(desapareceu,e) -> cc(diminuíram,e)  #106
+# d2d: cc(PCP,e) -> cc(CDS,e)  #106
+# d2d: cc(desconhecemos,como) -> cc(ignoramos,como)  #106
+# d2d: cc(quem,e) -> cc(partidos,e)  #106
+# d2d: punct(desconhecemos,,) -> punct(ignoramos,,)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	só	só	ADV	ADV|@ADVL>	_	4	advmod	_	_
@@ -146,12 +154,12 @@
 10	a	a	ADP	<sam->|PRP|@N<ARG	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	imprensa	imprensa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
-13	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-14	como	como	ADV	<co-fcl>|<kc>|ADV|@CO	_	4	cc	_	_
+13	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+14	como	como	ADV	<co-fcl>|<kc>|ADV|@CO	_	15	cc	_	d2d:#106
 15	ignoramos	ignorar	VERB	<mv>|<cjt>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	conj	_	_
 16	quem	quem	PRON	<first-cjt>|<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	17	nsubj	_	_
 17	vai	ir	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	_	_
-18	e	e	CCONJ	<co-vfin>|KC|@CO	_	16	cc	_	_
+18	e	e	CCONJ	<co-vfin>|KC|@CO	_	21	cc	_	d2d:#106
 19	de	de	ADP	<cjt>|PRP|@SUBJ>	_	21	case	_	_
 20	que	que	DET	DET|M|P|@>N	Gender=Masc|Number=Plur	21	det	_	_
 21	partidos	partido	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	conj	_	_
@@ -172,10 +180,10 @@
 36	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 37	Comissão	Comissão	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	32	nmod	_	_
 38	]	_	PUNCT	PU|@PU	_	32	punct	_	_
-39	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	26	cc	_	_
+39	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	45	cc	_	d2d:#106
 40	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
 41	PCP	PCP	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	45	nsubj	_	_
-42	e	e	CCONJ	<co-subj>|KC|@CO	_	41	cc	_	_
+42	e	e	CCONJ	<co-subj>|KC|@CO	_	44	cc	_	d2d:#106
 43	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	CDS	CDS	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	41	conj	_	_
 45	diminuíram	diminuir	VERB	<cjt>|<mv>|V|PS|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
@@ -188,23 +196,27 @@
 # source CETEMPúblico n=572 sec=nd sem=91b
 # sent_id CP572-5
 # id 2970
+# d2d: cc(aproxima-,e) -> cc(vacinar,e)  #106
+# d2d: punct(aproxima-,,) -> punct(vacinar,,)  #106
+# d2d: punct(aproxima-,,) -> punct(vacinar,,)  #106
+# d2d: punct(aproxima-,,) -> punct(há,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	data	data	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	aproxima-	aproximar	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp	_	_
 4	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	expl	_	ChangedBy=Issue135
-5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	há	haver	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 7	pequenas	pequeno	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	8	amod	_	_
 8	coisas	coisa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	6	obj	_	_
 9	a	a	ADP	PRP|@N<	_	10	mark	_	_
 10	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
-11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 12	como	como	ADP	<com>|PRP|@N<PRED	_	15	case	_	_
 13	por	por	ADP	PRP|@>N	_	15	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
 14	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	13	fixed	_	_
 15	vacinas	vacina	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-17	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+16	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+17	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 18	não	não	ADV	_	Polarity=Neg	22	advmod	_	_
 19	podemos	poder	AUX	<cjt>|<aux>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	22	aux	_	_
 20	estar	estar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	22	aux	_	_

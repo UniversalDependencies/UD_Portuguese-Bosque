@@ -33,6 +33,8 @@
 # source CETEMPúblico n=180 sec=clt-soc sem=94a
 # sent_id CP180-2
 # id 963
+# d2d: cc(consistência,e) -> cc(facilidade,e)  #106
+# d2d: cc(acesso,e) -> cc(aprendizagem,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_vez_de
 2	vez	vez	NOUN	N|@P<	_	14	nmod	_	_
 3	de	de	ADP	PRP|@N<	_	4	mark	_	_
@@ -51,12 +53,12 @@
 16	consistência	consistência	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
 17	de	de	ADP	PRP|@N<	_	18	case	_	_
 18	funcionamento	funcionamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
-19	e	e	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	_
+19	e	e	CCONJ	<co-acc>|KC|@CO	_	21	cc	_	d2d:#106
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	facilidade	facilidade	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	conj	_	_
 22	de	de	ADP	<first-cjt>|PRP|@N<	_	23	case	_	_
 23	acesso	acesso	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
-24	e	e	CCONJ	<co-postnom>|KC|@CO	_	23	cc	_	_
+24	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	d2d:#106
 25	de	de	ADP	<cjt>|PRP|@N<	_	26	case	_	_
 26	aprendizagem	aprendizagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	23	conj	_	ChangedBy=Issue149
 27	.	.	PUNCT	PU|@PU	_	14	punct	_	_
@@ -66,6 +68,7 @@
 # source CETEMPúblico n=180 sec=clt-soc sem=94a
 # sent_id CP180-3
 # id 964
+# d2d: cc(Windows,e) -> cc(Macintosh,e)  #106
 1	Um	um	NUM	<card>|NUM|M|S|@SC>	_	9	xcomp	_	_
 2	de	de	ADP	<sam->|PRP|@A<	_	4	case	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -85,7 +88,7 @@
 17	versões	versão	NOUN	<meta>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	ChangedBy=Issue137
 18	para	para	ADP	<first-cjt>|PRP|@N<	_	19	case	_	_
 19	Windows	Windows	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
-20	e	e	CCONJ	<co-postnom>|KC|@CO	_	19	cc	_	_
+20	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	d2d:#106
 21	para	para	ADP	<cjt>|PRP|@N<	_	22	case	_	_
 22	Macintosh	Macintosh	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	19	conj	_	ChangedBy=Issue149
 23	.	.	PUNCT	PU|@PU	_	9	punct	_	_
@@ -237,12 +240,16 @@
 # source CETEMPúblico n=180 sec=clt-soc sem=94a
 # sent_id CP180-8
 # id 969
+# d2d: punct(Foi,,) -> punct(o,,)  #106
+# d2d: punct(Foi,,) -> punct(o,,)  #106
+# d2d: punct(Foi,,) -> punct(o,,)  #106
+# d2d: cc(Foi,e) -> cc(o,e)  #106
 1	Foi	ir	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+2	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 3	de	de	ADP	<sam->|PRP|@<ADVL	_	5	case	_	_
 4	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
 5	três	três	NUM	<card>|<np-def>|NUM|M|P|@P<	_	1	nmod	_	_
-6	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 7	o	o	PRON	<dem>|DET|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Dem	1	xcomp	_	_
 8	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	9	nsubj	_	_
 9	teve	ter	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	_	_
@@ -250,8 +257,8 @@
 11	alteração	alteração	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
 12	mais	mais	ADV	<quant>|ADV|@>A	_	13	advmod	_	_
 13	radical	radical	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
-14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
-15	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
+15	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 16	por	por	ADP	PRP|@ADVL>	_	17	case	_	_
 17	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	20	nmod	_	_
 18	,	,	PUNCT	PU|@PU	_	17	punct	_	_

@@ -41,6 +41,7 @@
 # source CETEMPúblico n=142 sec=nd sem=98a
 # sent_id CP142-3
 # id 733
+# d2d: cc(doença,ou) -> cc(velhice,ou)  #106
 1	até	até	ADP	PRP|@ADVL>	_	2	case	_	_
 2	agora	agora	ADV	<kc>|ADV|@P<	_	6	advmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -49,7 +50,7 @@
 6	morriam	morrer	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 7	de	de	ADP	<first-cjt>|PRP|@<PIV	_	8	case	_	_
 8	doença	doença	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
-9	ou	ou	CCONJ	<co-piv>|KC|@CO	_	8	cc	_	_
+9	ou	ou	CCONJ	<co-piv>|KC|@CO	_	11	cc	_	d2d:#106
 10	de	de	ADP	<cjt>|PRP|@<PIV	_	11	case	_	_
 11	velhice	velhice	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	conj	_	ChangedBy=Issue149
 12	.	.	PUNCT	PU|@PU	_	6	punct	_	_
@@ -59,21 +60,26 @@
 # source CETEMPúblico n=142 sec=nd sem=98a
 # sent_id CP142-4
 # id 734
+# d2d: cc(casas,e) -> cc(telhados,e)  #106
+# d2d: cc(Homens,e) -> cc(pás,e)  #106
+# d2d: punct(cavavam,,) -> punct(descarregavam,,)  #106
+# d2d: punct(cavavam,,) -> punct(descarregavam,,)  #106
+# d2d: cc(cavavam,e) -> cc(descarregavam,e)  #106
 1	Homens	homem	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	pás	pá	NOUN	<cjt>|<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	1	conj	_	_
 4	cavavam	cavar	VERB	<first-cjt>|<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 5	ontem	ontem	ADV	ADV|@<ADVL	_	4	advmod	_	_
 6	freneticamente	freneticamente	ADV	ADV|@<ADVL	_	4	advmod	_	_
-7	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 8	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
 9	já	já	ADV	ADV|@ADVL>	_	11	advmod	_	_
 10	tinha	ter	AUX	<aux>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	aux	_	_
 11	passado	passar	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	4	advcl	_	_
 12	um	um	NUM	<card>|NUM|M|S|@>N	_	13	nummod	_	_
 13	dia	dia	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	11	nsubj	_	_
-14	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 16	camiões	camião	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	17	nsubj	_	_
 17	descarregavam	descarregar	VERB	<cjt>|<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	conj	_	_
 18	cimento	cimento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	obj	_	_
@@ -87,7 +93,7 @@
 26	casas	casa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	23	nmod	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
 28	argila	argila	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	_
-29	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	_
+29	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	d2d:#106
 30	telhados	telhado	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	26	conj	_	_
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
 32	chapa	chapa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	nmod	_	_

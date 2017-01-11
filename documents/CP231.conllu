@@ -22,6 +22,10 @@
 # source CETEMPúblico n=231 sec=soc sem=94b
 # sent_id CP231-3
 # id 1234
+# d2d: punct(insalubridade,,) -> punct(penosidade,,)  #106
+# d2d: cc(horas,e) -> cc(ajudas,e)  #106
+# d2d: cc(pagamento,e) -> cc(reposição,e)  #106
+# d2d: cc(insalubridade,e) -> cc(risco,e)  #106
 1	Cerca	cerca	ADV	ADV|@>A	_	3	advmod	_	MWE=Cerca_de
 2	de	de	ADP	<prp>|PRP|@A<	_	1	case	_	_
 3	três	três	NUM	<card>|NUM|F|P|@>N	_	4	nummod	_	_
@@ -53,13 +57,13 @@
 29	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	30	det	_	_
 30	horas	hora	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	27	nmod	_	_
 31	extraordinárias	extraordinário	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	30	amod	_	_
-32	e	e	CCONJ	<co-postnom>|KC|@CO	_	30	cc	_	_
+32	e	e	CCONJ	<co-postnom>|KC|@CO	_	35	cc	_	d2d:#106
 33	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	35	case	_	_
 34	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	35	det	_	_
 35	ajudas	ajuda	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	30	conj	_	_
 36	de	de	ADP	PRP|@N<	_	37	case	_	_
 37	custo	custo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	_
-38	e	e	CCONJ	<co-acc>|KC|@CO	_	27	cc	_	_
+38	e	e	CCONJ	<co-acc>|KC|@CO	_	40	cc	_	d2d:#106
 39	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	reposição	reposição	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	27	conj	_	_
 41	de	de	ADP	<sam->|PRP|@N<ARG	_	43	case	_	_
@@ -67,9 +71,9 @@
 43	subsídio	subsídio	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	_
 44	de	de	ADP	PRP|@N<	_	45	case	_	_
 45	insalubridade	insalubridade	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	43	nmod	_	_
-46	,	,	PUNCT	PU|@PU	_	45	punct	_	_
+46	,	,	PUNCT	PU|@PU	_	47	punct	_	d2d:#106
 47	penosidade	penosidade	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	45	conj	_	_
-48	e	e	CCONJ	<co-prparg>|KC|@CO	_	45	cc	_	_
+48	e	e	CCONJ	<co-prparg>|KC|@CO	_	49	cc	_	d2d:#106
 49	risco	risco	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	45	conj	_	_
 50	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
@@ -78,6 +82,7 @@
 # source CETEMPúblico n=231 sec=soc sem=94b
 # sent_id CP231-4
 # id 1235
+# d2d: cc(promessas,e) -> cc(nim,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	fim	fim	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
@@ -86,7 +91,7 @@
 6	com	com	ADP	PRP|@<PIV	_	8	case	_	_
 7	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	8	det	_	_
 8	promessas	promessa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
-9	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 10	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	_
 12	nim	nim	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	conj	_	_

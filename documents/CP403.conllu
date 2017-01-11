@@ -65,6 +65,10 @@
 # source CETEMPúblico n=403 sec=pol sem=93a
 # sent_id CP403-3
 # id 2100
+# d2d: punct(falso,,) -> punct(associa,,)  #106
+# d2d: punct(falso,») -> punct(associa,»)  #106
+# d2d: cc(falso,e) -> cc(abusivo,e)  #106
+# d2d: cc(falso,e) -> cc(associa,e)  #106
 1	De	de	ADP	PRP|@ADVL>	_	2	case	_	MWE=De_acordo
 2	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
 3	com	com	ADP	<first-cjt>|PRP|@P<	_	5	case	_	_
@@ -86,9 +90,9 @@
 19	«	«	PUNCT	PU|@PU	_	21	punct	_	_
 20	completamente	completamente	ADV	ADV|@>A	_	21	advmod	_	_
 21	falso	falso	ADJ	<first-cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-22	e	e	CCONJ	<co-sc>|KC|@CO	_	21	cc	_	_
+22	e	e	CCONJ	<co-sc>|KC|@CO	_	23	cc	_	d2d:#106
 23	abusivo	abusivo	ADJ	<cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	21	conj	_	_
-24	»	»	PUNCT	PU|@PU	_	21	punct	_	_
+24	»	»	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
 25	porque	porque	SCONJ	KS|@SUB	_	30	mark	_	_
 26	«	«	PUNCT	PU|@PU	_	30	punct	_	_
 27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
@@ -100,8 +104,8 @@
 33	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
 34	partidos	partido	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	30	nmod	_	_
 35	»	»	PUNCT	PU|@PU	_	30	punct	_	_
-36	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-37	e	e	CCONJ	<co-x>|<co-fmc>|<co-vfin>|KC|@CO	_	21	cc	_	_
+36	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
+37	e	e	CCONJ	<co-x>|<co-fmc>|<co-vfin>|KC|@CO	_	38	cc	_	d2d:#106
 38	associa	associar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	conj	_	_
 39	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
 40	teor	teor	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	38	obj	_	_

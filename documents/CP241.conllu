@@ -66,6 +66,11 @@
 # source CETEMPúblico n=241 sec=clt sem=98b &L
 # sent_id CP241-3
 # id 1277
+# d2d: punct(Toni,,) -> punct(Jorge,,)  #106
+# d2d: punct(Toni,,) -> punct(Cristóvão,,)  #106
+# d2d: punct(Toni,,) -> punct(César,,)  #106
+# d2d: cc(Toni,e) -> cc(Jorginho,e)  #106
+# d2d: punct(Toni,,) -> punct(Ronaldo,,)  #106
 1	Compõem	compor	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	grupo	grupo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
@@ -79,19 +84,19 @@
 11	(	(	PUNCT	PU|@PU	_	12	punct	_	_
 12	violão	violão	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	appos	_	_
 13	)	)	PUNCT	PU|@PU	_	12	punct	_	_
-14	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	César	César	PROPN	_	Gender=Masc|Number=Sing	10	conj	_	ChangedBy=Issue119|MWE=César_Faria|MWEPOS=PROPN
 16	Faria	Faria	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 17	(	(	PUNCT	PU|@PU	_	18	punct	_	_
 18	violino	violino	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	15	appos	_	_
 19	)	)	PUNCT	PU|@PU	_	18	punct	_	_
-20	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	Jorge	Jorge	PROPN	_	Gender=Masc|Number=Sing	10	conj	_	ChangedBy=Issue119|MWE=Jorge_Filho|MWEPOS=PROPN
 22	Filho	Filho	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	(	(	PUNCT	PU|@PU	_	24	punct	_	_
 24	cavaquinho	cavaquinho	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	21	appos	_	_
 25	)	)	PUNCT	PU|@PU	_	24	punct	_	_
-26	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 27	Ronaldo	Ronaldo	PROPN	<cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	10	conj	_	_
 28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
 29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
@@ -99,13 +104,13 @@
 31	(	(	PUNCT	PU|@PU	_	32	punct	_	_
 32	bandolim	bandolim	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	27	appos	_	_
 33	)	)	PUNCT	PU|@PU	_	32	punct	_	_
-34	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+34	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 35	Cristóvão	Cristóvão	PROPN	_	Gender=Masc|Number=Sing	10	conj	_	ChangedBy=Issue119|MWE=Cristóvão_Bastos|MWEPOS=PROPN
 36	Bastos	Bastos	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
 37	(	(	PUNCT	PU|@PU	_	38	punct	_	_
 38	piano	piano	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	35	appos	_	_
 39	)	)	PUNCT	PU|@PU	_	38	punct	_	_
-40	e	e	CCONJ	<co-app>|<co-postnom>|KC|@CO	_	10	cc	_	_
+40	e	e	CCONJ	<co-app>|<co-postnom>|KC|@CO	_	41	cc	_	d2d:#106
 41	Jorginho	Jorginho	PROPN	<cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	10	conj	_	_
 42	de	de	ADP	<sam->|PRP|@N<	_	44	case	_	_
 43	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
@@ -120,6 +125,7 @@
 # source CETEMPúblico n=241 sec=clt sem=98b
 # sent_id CP241-4
 # id 1278
+# d2d: cc(alma,e) -> cc(virtuosismo,e)  #106
 1	Hoje	hoje	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	_
 2	e	e	CCONJ	KC|@CO	_	1	cc	_	_
 3	sábado	sábado	NOUN	<np-idf>|N|M|S|@ADVL	Gender=Masc|Number=Sing	1	nmod	_	_
@@ -140,7 +146,7 @@
 18	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	20	det	_	MWE=toda_a
 19	a	o	DET	<artd>|DET|F|S|@A<	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	fixed	_	_
 20	alma	alma	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	obj	_	_
-21	e	e	CCONJ	<co-acc>|KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	<co-acc>|KC|@CO	_	22	cc	_	d2d:#106
 22	virtuosismo	virtuosismo	NOUN	<cjt>|<np-idf>|N|M|S|@ACC>	Gender=Masc|Number=Sing	20	conj	_	_
 23	de	de	ADP	PRP|@N<	_	25	case	_	_
 24	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
@@ -191,6 +197,9 @@
 # source CETEMPúblico n=241 sec=clt sem=98b
 # sent_id CP241-7
 # id 1281
+# d2d: cc(Brasil,e) -> cc(Portugal,e)  #106
+# d2d: punct(Brasil,,) -> punct(África,,)  #106
+# d2d: cc(Miguel,e) -> cc(Agustina,e)  #106
 1	a	a	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	4	det	_	_
 3	17	17	NUM	<card>|NUM|F|P|@>N	_	4	nummod	_	_
@@ -228,7 +237,7 @@
 35	João	João	PROPN	_	Gender=Masc|Number=Sing	29	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=João_Guimarães_Rosa|MWEPOS=PROPN
 36	Guimarães	Guimarães	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
 37	Rosa	Rosa	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
-38	e	e	CCONJ	<co-prparg>|KC|@CO	_	29	cc	_	_
+38	e	e	CCONJ	<co-prparg>|KC|@CO	_	39	cc	_	d2d:#106
 39	Agustina	Agustina	PROPN	_	Gender=Fem|Number=Sing	29	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Agustina_Bessa-Luís|MWEPOS=PROPN
 40	Bessa-Luís	Bessa-Luís	PROPN	_	Number=Sing	39	flat:name	_	ChangedBy=Issue119
 41	surgirão	surgir	VERB	<mv>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	22	acl:relcl	_	_
@@ -246,9 +255,9 @@
 53	de	de	ADP	<sam->|PRP|@N<	_	55	case	_	_
 54	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
 55	Brasil	Brasil	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	51	nmod	_	_
-56	,	,	PUNCT	PU|@PU	_	55	punct	_	_
+56	,	,	PUNCT	PU|@PU	_	57	punct	_	d2d:#106
 57	África	África	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	55	conj	_	_
-58	e	e	CCONJ	<co-prparg>|KC|@CO	_	55	cc	_	_
+58	e	e	CCONJ	<co-prparg>|KC|@CO	_	59	cc	_	d2d:#106
 59	Portugal	Portugal	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	55	conj	_	_
 60	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
@@ -257,6 +266,7 @@
 # source CETEMPúblico n=241 sec=clt sem=98b &E
 # sent_id CP241-8
 # id 1282
+# d2d: cc(encenação,e) -> cc(cenografia,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	direcção	direcção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	musical	musical	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -267,7 +277,7 @@
 8	e	e	CCONJ	<co-fcl>|KC|@CO	_	6	cc	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	encenação	encenação	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	remnant	_	_
-11	e	e	CCONJ	<co-subj>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-subj>|KC|@CO	_	12	cc	_	d2d:#106
 12	cenografia	cenografia	NOUN	<cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	conj	_	ChangedBy=Issue149
 13	de	de	ADP	PRP|@<SC	_	14	case	_	_
 14	José	José	PROPN	_	Gender=Masc|Number=Sing	5	remnant	_	ChangedBy=Issue119|MWE=José_Caldas_Neto|MWEPOS=PROPN
@@ -280,6 +290,7 @@
 # source CETEMPúblico n=241 sec=clt sem=98b
 # sent_id CP241-9
 # id 1283
+# d2d: cc(Marta,e) -> cc(Pedro,e)  #106
 1	A	a	ADP	PRP|@ADVL>	_	2	case	_	_
 2	estes	este	PRON	<dem>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Dem	3	nmod	_	_
 3	juntarão-	juntar	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -297,7 +308,7 @@
 15	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 16	Marcelo	Marcelo	PROPN	_	Gender=Masc|Number=Sing	13	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Marcelo_Lafontana|MWEPOS=PROPN
 17	Lafontana	Lafontana	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
-18	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	_
+18	e	e	CCONJ	<co-postnom>|KC|@CO	_	19	cc	_	d2d:#106
 19	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	13	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Pedro_Ribeiro|MWEPOS=PROPN
 20	Ribeiro	Ribeiro	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
@@ -307,6 +318,8 @@
 # source CETEMPúblico n=241 sec=clt sem=98b
 # sent_id CP241-10
 # id 1284
+# d2d: cc(domingo,e) -> cc(fim-de-semana,e)  #106
+# d2d: cc(11,e) -> cc(12,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	espectáculo	espectáculo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	repete	repetir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -315,14 +328,14 @@
 6	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	8	det	_	_
 7	mesma	mesmo	DET	DET|F|S|@>N	Gender=Fem|Number=Sing	8	det	_	_
 8	hora	hora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
-9	e	e	CCONJ	<co-advl>|KC|@CO	_	4	cc	_	_
+9	e	e	CCONJ	<co-advl>|KC|@CO	_	12	cc	_	d2d:#106
 10	em	em	ADP	<sam->|<cjt>|PRP|@<ADVL	_	12	case	_	_
 11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	fim-de-semana	fim-de-semana	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	conj	_	_
 13	seguinte	seguinte	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	12	amod	_	_
 14	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 15	11	11	NUM	<cjt>|<card>|<first-cjt>|NUM|M|S|@APP	_	12	appos	_	_
-16	e	e	CCONJ	<co-prparg>|KC|@CO	_	15	cc	_	_
+16	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	d2d:#106
 17	12	12	NUM	<card>|NUM|M|S|@APP	_	15	conj	_	ChangedBy=Issue149
 18	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 19	também	também	ADV	ADV|@>A	_	22	advmod	_	_

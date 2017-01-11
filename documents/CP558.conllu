@@ -3,6 +3,9 @@
 # source CETEMPúblico n=558 sec=pol sem=97b
 # sent_id CP558-1
 # id 2896
+# d2d: punct(comer,,) -> punct(fumar,,)  #106
+# d2d: cc(comer,ou) -> cc(ter,ou)  #106
+# d2d: punct(comer,,) -> punct(ouvir,,)  #106
 1	Nono	nono	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	2	amod	_	_
 2	mês	mês	NOUN	<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	35	nmod	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -22,12 +25,12 @@
 17	abstêm	abster	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
 18	de	de	ADP	<first-cjt>|PRP|@<PIV	_	19	mark	_	_
 19	comer	comer	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	17	xcomp	_	_
-20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	fumar	fumar	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	19	conj	_	_
-22	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+22	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 23	ouvir	ouvir	VERB	<first-cjt>|<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	19	conj	_	_
 24	música	música	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	23	obj	_	_
-25	ou	ou	CCONJ	<co-piv>|KC|@CO	_	19	cc	_	_
+25	ou	ou	CCONJ	<co-piv>|KC|@CO	_	27	cc	_	d2d:#106
 26	de	de	ADP	<cjt>|PRP|@<PIV	_	27	mark	_	_
 27	ter	ter	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	conj	_	_
 28	relações	relação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	27	obj	_	_
@@ -68,6 +71,8 @@
 # source CETEMPúblico n=558 sec=pol sem=97b
 # sent_id CP558-3
 # id 2898
+# d2d: cc(explosões,e) -> cc(massacres,e)  #106
+# d2d: cc(causaram,e) -> cc(traumatizaram,e)  #106
 1	Há	há	ADP	PRP|@ADVL>	_	3	case	_	_
 2	onze	onze	NUM	<card>|NUM|M|P|@>N	_	3	nummod	_	_
 3	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	obl	_	ChangedBy=Issue137
@@ -76,7 +81,7 @@
 6	em	em	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
-9	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	_
+9	e	e	CCONJ	<co-subj>|KC|@CO	_	10	cc	_	d2d:#106
 10	massacres	massacre	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	conj	_	_
 11	em	em	ADP	PRP|@N<	_	12	case	_	_
 12	zonas	zona	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	_
@@ -87,7 +92,7 @@
 17	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	_
 18	400	400	NUM	<card>|NUM|M|P|@>N	_	19	nummod	_	_
 19	mortos	morto	ADJ	<n>|<np-def>|ADJ|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
-20	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	_
+20	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	21	cc	_	d2d:#106
 21	traumatizaram	traumatizar	VERB	<mv>|<cjt>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	conj	_	ChangedBy=Issue149
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	cidade	cidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	21	obj	_	_

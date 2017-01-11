@@ -11,6 +11,8 @@
 # source CETENFolha n=275 cad=Cotidiano sec=soc sem=94b
 # sent_id CF275-2
 # id 1155
+# d2d: punct(sofá,,) -> punct(cinzeiro,,)  #106
+# d2d: cc(cinco,e) -> cc(doze,e)  #106
 1	Aposto	apostar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	boneca	boneca	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
@@ -22,7 +24,7 @@
 9	crianças	criança	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	7	nmod	_	_
 10	entre	entre	ADP	PRP|@N<	_	14	case	_	_
 11	cinco	cinco	NUM	<first-cjt>|<card>|NUM|M|P|@>N	_	14	nummod	_	_
-12	e	e	CCONJ	<co-prenom>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-prenom>|KC|@CO	_	13	cc	_	d2d:#106
 13	doze	doze	NUM	<cjt>|<card>|NUM|M|P|@>N	_	11	conj	_	_
 14	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
 15	ainda	ainda	ADV	ADV|@ADVL>	_	17	advmod	_	_
@@ -43,7 +45,7 @@
 30	de	de	ADP	PRP|@A<	_	32	case	_	_
 31	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	sofá	sofá	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	_
-33	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+33	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 34	em	em	ADP	<sam->|<cjt>|PRP|@<ADVL	_	36	case	_	_
 35	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
 36	cinzeiro	cinzeiro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	32	conj	_	_
@@ -62,6 +64,7 @@
 # source CETENFolha n=275 cad=Cotidiano sec=soc sem=94b
 # sent_id CF275-3
 # id 1156
+# d2d: cc(monstros,e) -> cc(morcegos,e)  #106
 1	Mighty	Mighty	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Mighty_Max|MWEPOS=PROPN
 2	Max	Max	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
@@ -74,7 +77,7 @@
 10	convive	conviver	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
 11	com	com	ADP	PRP|@<PIV	_	12	case	_	_
 12	monstros	monstro	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
-13	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	d2d:#106
 14	morcegos	morcego	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	conj	_	_
 15	em	em	ADP	PRP|@<ADVL	_	17	case	_	_
 16	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
@@ -162,6 +165,7 @@
 # source CETENFolha n=275 cad=Cotidiano sec=soc sem=94b
 # sent_id CF275-7
 # id 1160
+# d2d: cc(motor,e) -> cc(chassis,e)  #106
 1	Trata-	tratar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	_	ChangedBy=Issue135
 3	de	de	ADP	<sam->|PRP|@<PIV	_	5	case	_	_
@@ -172,7 +176,7 @@
 8	com	com	ADP	PRP|@N<	_	9	case	_	_
 9	motor	motor	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 10	Toyota	Toyota	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	9	appos	_	_
-11	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	_
+11	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 12	chassis	chassi	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	conj	_	_
 13	Lola	Lola	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	12	appos	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_

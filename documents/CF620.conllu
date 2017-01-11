@@ -3,6 +3,8 @@
 # source CETENFolha n=620 cad=Informática sec=com sem=94a
 # sent_id CF620-1
 # id 2611
+# d2d: cc(parte,ou) -> cc(todo,ou)  #106
+# d2d: cc(selecionar,e) -> cc(levar,e)  #106
 1	Assim	assim	ADV	<kc>|ADV|@ADVL>	_	14	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	se	se	SCONJ	KS|@SUB	_	6	mark	_	_
@@ -19,10 +21,10 @@
 14	selecionar	selecionar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 15	parte	parte	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	_
-17	ou	ou	CCONJ	<co-acc>|KC|@CO	_	15	cc	_	_
+17	ou	ou	CCONJ	<co-acc>|KC|@CO	_	18	cc	_	d2d:#106
 18	todo	todo	PRON	<cjt>|<quant>|DET|M|S|@<ACC	Gender=Masc|Number=Sing	15	conj	_	_
 19	)	)	PUNCT	PU|@PU	_	17	punct	_	_
-20	e	e	CCONJ	<co-sta>|KC|@CO	_	14	cc	_	_
+20	e	e	CCONJ	<co-sta>|KC|@CO	_	21	cc	_	d2d:#106
 21	levar	levar	VERB	<cjt>|<mv>|V|INF|@FS-STA	VerbForm=Inf	14	conj	_	ChangedBy=Issue149
 22	o	o	PRON	_	Gender=Masc|Number=Sing	23	det	_	_
 23	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	25	nsubj:pass	_	_
@@ -45,6 +47,7 @@
 # source CETENFolha n=620 cad=Informática sec=com sem=94a
 # sent_id CF620-2
 # id 2612
+# d2d: cc(arquivos,e) -> cc(aplicações,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	arquivos	arquivo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj:pass	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -65,7 +68,7 @@
 18	uso	uso	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	_
 19	de	de	ADP	PRP|@N<ARG	_	20	case	_	_
 20	arquivos	arquivo	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	_
-21	e	e	CCONJ	<co-prparg>|KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	<co-prparg>|KC|@CO	_	22	cc	_	d2d:#106
 22	aplicações	aplicação	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	20	conj	_	_
 23	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 

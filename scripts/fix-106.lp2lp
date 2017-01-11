@@ -1,0 +1,87 @@
+% BASIC RULE SYNTAX
+%
+% [Gov Dep ('newDepType')] : [ condition1 condition2 condition3... ]
+% where each condition is:
+%
+% [ Gov Dep ("depType") ]  - there is a dependency from Gov to Dep (any direction)
+% [ Gov Dep ("depType>") ] - there is a dependency from Gov to Dep and it goes to the right
+% [ Dep Gov ("<depType") ] - there is a dependency from Gov to Dep and it goes to the left (notice the reversal of Dep/Gov - is that a good idea?)
+% [ Gov-"someregexp" Dep ("depType") ] - as above, but Gov is restricted to be a token matching the regexp
+%
+% Gov and Dep are given as variables (start with letter, then letters and digits and underscores...
+
+% Word order syntax
+%  W1..W2    - W2 must come later than W1 in word order
+
+% MACRO syntax
+% you can define macros for lists of words etc
+% copula = "am|are|is|be|was|were|'m|'re|'s|s|seem|seems|seemed|appear|appears|appeared|stay|stays|stayed|remain|remains|remained|resemble|resembles|resembled|become|becomes|became"
+%...and use anywhere where you would use a regexp
+%  [2-copula 3 ("predadj>")]   - note that no quotes are around the macro here
+
+% ORIGIN marking
+%
+% a condition can be marked as the origin of a new relation
+% that marks that relation as the origin in the MISC field of the output
+% and also can marked as "consumed" in the data source
+%
+% @[1 2 ("depType")]
+%
+
+% NEGATION syntax
+%
+% a condition can be negated:
+% ![1 2 ("depType")] - there is not a depType dependency from 1 to 2
+
+
+% STRATUM SYNTAX
+%
+% Each rule now looks by default into dependencies on stratum S and generates
+% dependencies into stratum S+1. Each right-hand condition by default looks
+% for dependencies in stratum S, but can optionally look into any lower
+% stratum.
+%
+% If no strata are defined, the rules by default looks into stratum 0 which is
+% where the initial parse is imported and generates dependencies into stratum
+% 0+1, that is, 1.
+%
+% 1::[G D ('Dep2')] : [ [G X ("X1")] [X D ("X2")] ]
+% ^
+% ^--- the stratum at which the right-hand side conditions look by default
+%      so this rule will look into stratum 1 and generate dependencies into
+%      stratum 2
+%
+%
+% 1::[G D ('Dep2')] : [ [G X ("X1")] 0::[X D ("X2")] ]
+%                                      ^
+% -----------------------------------^
+% |- this specifies that this particular condition looks into stratum 0
+% rather than stratum 1 which is the default for this particular rule
+% naturally, you can only refer to strata at or below the current one
+
+% Direct prolog rules
+%
+% For more special purposes, a rule can be defined straight in Prolog like such:
+% 
+% %%plrule: rule(NewGov, NewDep, 'dtype', OldGov, OldDep, 'olddtype', Stratum, "Comment") :- any prolog code on a single line.
+%
+
+
+%%%% Some examples
+
+% Rewrite rules for UD ver 1 -> UD ver 2
+
+% The two rules below rehang punct and cc from the head of the coordination to the first conjunct which follows them
+% These rules were created like so:
+%   1) generated the normal code for [ [ CONJHEAD PUNCT ("punct") ] [CONJHEAD CONJUNCT ("conj") ] CONJHEAD..PUNCT PUNCT..CONJUNCT ] 
+%   2) added the \+ ( ... ) block at the end which basically says there is no intervening CONJUNCT, ie the punct will hang on the one which immediately follows
+
+%%plrule: rule(TCONJUNCT,TPUNCT,'punct',OG,OD,OT,1,"#106") :- dependency(TCONJHEAD,TCONJUNCT,LT2,0),accepts('^(conj)$',LT2), TCONJUNCT \= TCONJHEAD, dependency(TCONJHEAD,TPUNCT,LT3,0),accepts('^(punct)$',LT3), OG=TCONJHEAD,OD=TPUNCT,OT=LT3, TCONJHEAD \= TCONJUNCT, TPUNCT \= TCONJUNCT, TPUNCT \= TCONJHEAD, tokenOrder(TCONJHEAD,TPUNCT), tokenOrder(TPUNCT,TCONJUNCT), \+ ( dependency(TCONJHEAD,TCONJUNCTINB,LT1,0),accepts('^(conj)$',LT1), tokenOrder(TCONJUNCTINB,TCONJUNCT), tokenOrder(TPUNCT,TCONJUNCTINB), TCONJHEAD \= TCONJUNCTINB, TPUNCT \= TCONJUNCTINB ).
+
+%%plrule: rule(TCONJUNCT,TPUNCT,'cc',OG,OD,OT,1,"#106") :- dependency(TCONJHEAD,TCONJUNCT,LT2,0),accepts('^(conj)$',LT2), TCONJUNCT \= TCONJHEAD, dependency(TCONJHEAD,TPUNCT,LT3,0),accepts('^(cc)$',LT3), OG=TCONJHEAD,OD=TPUNCT,OT=LT3, TCONJHEAD \= TCONJUNCT, TPUNCT \= TCONJUNCT, TPUNCT \= TCONJHEAD, tokenOrder(TCONJHEAD,TPUNCT), tokenOrder(TPUNCT,TCONJUNCT), \+ ( dependency(TCONJHEAD,TCONJUNCTINB,LT1,0),accepts('^(conj)$',LT1), tokenOrder(TCONJUNCTINB,TCONJUNCT), tokenOrder(TPUNCT,TCONJUNCTINB), TCONJHEAD \= TCONJUNCTINB, TPUNCT \= TCONJUNCTINB ).
+
+
+
+
+% to reproduce, do the following:
+% for f in ~/repos/bosque-UD/documents/*; do ./dtree_dep2dep.sh -r fix-106.lp2lp < $f > tmp && mv tmp $f; done

@@ -11,6 +11,8 @@
 # source CETEMPúblico n=906 sec=soc sem=94a
 # sent_id CP906-2
 # id 4672
+# d2d: cc(ninguém,nem) -> cc(estrelas,nem)  #106
+# d2d: punct(ninguém,,) -> punct(estrelas,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	sismo	sismo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -21,8 +23,8 @@
 8	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
 9	poupou	poupar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 10	ninguém	ninguém	PRON	<first-cjt>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	9	obj	_	_
-11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-12	nem	nem	CCONJ	<co-acc>|KC|@CO	_	10	cc	_	_
+11	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+12	nem	nem	CCONJ	<co-acc>|KC|@CO	_	15	cc	_	d2d:#106
 13	mesmo	mesmo	ADV	ADV|@>N	_	15	advmod	_	_
 14	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
 15	estrelas	estrela	NOUN	<cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	conj	_	_
@@ -33,18 +35,23 @@
 # source CETEMPúblico n=906 sec=soc sem=94a &E
 # sent_id CP906-3
 # id 4673
+# d2d: cc(Oliver,e) -> cc(Mae,e)  #106
+# d2d: cc(fracturou,e) -> cc(perderam,e)  #106
+# d2d: cc(cabeça,e) -> cc(dedos,e)  #106
+# d2d: cc(perderam,mas) -> cc(literalmente,mas)  #106
+# d2d: punct(fracturou,,) -> punct(ficou,,)  #106
 1	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Michael_Jackson|MWEPOS=PROPN
 2	Jackson	Jackson	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	fracturou	fracturar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	cabeça	cabeça	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
-6	e	e	CCONJ	<co-acc>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-acc>|KC|@CO	_	8	cc	_	d2d:#106
 7	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
 8	dedos	dedo	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	conj	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	mãos	mão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	_
-12	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	cantora	cantora	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj	_	_
 15	Dolly	Dolly	PROPN	_	Gender=Fem|Number=Sing	14	appos	_	ChangedBy=Issue119|MWE=Dolly_parton|MWEPOS=PROPN
@@ -52,18 +59,18 @@
 17	ficou	ficar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
 18	sem	sem	ADP	PRP|@<SC	_	19	case	_	_
 19	nariz	nariz	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	xcomp	_	_
-20	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+20	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	28	cc	_	d2d:#106
 21	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
 22	actores	actor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	28	nsubj	_	_
 23	Oliver	Oliver	PROPN	_	Gender=Masc|Number=Sing	22	appos	_	ChangedBy=Issue119|MWE=Oliver_Hardy|MWEPOS=PROPN
 24	Hardy	Hardy	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119
-25	e	e	CCONJ	<co-postnom>|KC|@CO	_	23	cc	_	_
+25	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	d2d:#106
 26	Mae	Mae	PROPN	_	Gender=Masc|Number=Sing	23	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Mae_West|MWEPOS=PROPN
 27	West	West	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 28	perderam	perder	VERB	<first-cjt>|<mv>|<cjt>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
 29	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	cabeça	cabeça	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	obj	_	_
-31	mas	mas	CCONJ	<co-cjt>|KC|@CO	_	28	cc	_	_
+31	mas	mas	CCONJ	<co-cjt>|KC|@CO	_	33	cc	_	d2d:#106
 32	não	não	ADV	_	Polarity=Neg	33	advmod	_	_
 33	literalmente	literalmente	ADV	<cjt>|ADV|@FS-STA	_	28	conj	_	_
 34	.	.	PUNCT	PU|@PU	_	3	punct	_	_
@@ -110,6 +117,7 @@
 # source CETEMPúblico n=906 sec=soc sem=94a
 # sent_id CP906-5
 # id 4675
+# d2d: cc(manteve,e) -> cc(desmoronou,e)  #106
 1	Sylvester	Sylvester	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	ChangedBy=Issue119|MWE=Sylvester_Stallone|MWEPOS=PROPN
 2	Stallone	Stallone	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_
@@ -121,7 +129,7 @@
 9	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	expl	_	ChangedBy=Issue135
 10	manteve	manter	VERB	<first-cjt>|<mv>|<se-passive>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	_	_
 11	impassível	impassível	ADJ	ADJ|F|S|@<OC	Gender=Fem|Number=Sing	10	xcomp	_	_
-12	e	e	CCONJ	<co-postnom>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+12	e	e	CCONJ	<co-postnom>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 13	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
 14	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	expl	_	ChangedBy=Issue135
 15	desmoronou	desmoronar	VERB	<cjt>|<mv>|<se-passive>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_
@@ -136,11 +144,13 @@
 # source CETEMPúblico n=906 sec=soc sem=94a
 # sent_id CP906-6
 # id 4676
+# d2d: cc(carne,e) -> cc(osso,e)  #106
+# d2d: cc(osso,como) -> cc(cera,como)  #106
 1	Em	em	ADP	PRP|@PRED>	_	2	case	_	MWE=Em_carne_e_osso
 2	carne	carne	NOUN	N|@P<	_	11	nmod	_	_
-3	e	e	CCONJ	KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	KC|@CO	_	4	cc	_	d2d:#106
 4	osso	osso	NOUN	N|@P<	_	2	conj	_	ChangedBy=Issue149
-5	como	como	ADV	<kc>|ADV|@CO	_	4	cc	_	_
+5	como	como	ADV	<kc>|ADV|@CO	_	7	cc	_	d2d:#106
 6	em	em	ADP	PRP|@ADVL>	_	7	case	_	_
 7	cera	cera	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	conj	_	ChangedBy=Issue149
 8	,	,	PUNCT	PU|@PU	_	2	punct	_	_

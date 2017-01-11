@@ -10,6 +10,9 @@
 # source CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
 # sent_id CF931-2
 # id 3939
+# d2d: cc(vem,mas) -> cc(compensa,mas)  #106
+# d2d: punct(vem,,) -> punct(compensa,,)  #106
+# d2d: punct(vem,,) -> punct(compensa,,)  #106
 1	Cheia	cheio	ADJ	<cjt>|ADJ|F|S|@PRED>	Gender=Fem|Number=Sing	14	amod	_	_
 2	de	de	ADP	PRP|@A<	_	3	case	_	_
 3	energia	energia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
@@ -33,14 +36,14 @@
 21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	gravação	gravação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
-24	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+24	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 25	de	de	ADP	PRP|@N<PRED	_	28	case	_	_
 26	quase	quase	ADV	<quant>|ADV|@>N	_	28	advmod	_	_
 27	15	15	NUM	<card>|NUM|M|P|@>N	_	28	nummod	_	_
 28	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	_
 29	atrás	atrás	ADV	ADV|@N<	_	28	advmod	_	_
-30	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-31	mas	mas	CCONJ	<co-sta>|KC|@CO	_	14	cc	_	_
+30	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
+31	mas	mas	CCONJ	<co-sta>|KC|@CO	_	32	cc	_	d2d:#106
 32	compensa	compensar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_
 33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	sonoridade	sonoridade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	32	obj	_	_
@@ -90,13 +93,15 @@
 # source CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
 # sent_id CF931-4
 # id 3941
+# d2d: cc(resistência,e) -> cc(repetição,e)  #106
+# d2d: cc(Tchaikovsky,e) -> cc(Strauss,e)  #106
 1	Em	em	ADP	<sam->|<first-cjt>|PRP|@ADVL>	_	2	case	_	_
 2	isto	isto	PRON	<-sam>|<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	14	nmod	_	_
 3	também	também	ADV	ADV|@>A	_	6	advmod	_	_
 4	em	em	ADP	<sam->|<cjt>|PRP|@ADVL>	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	resistência	resistência	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
-7	e	e	CCONJ	KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	KC|@CO	_	8	cc	_	d2d:#106
 8	repetição	repetição	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	Beethoven	Beethoven	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
@@ -115,7 +120,7 @@
 23	Tchaikovsky	Tchaikovsky	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
 24	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 25	Scriabin	Scriabin	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	23	conj	_	ChangedBy=Issue149
-26	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	_
+26	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	d2d:#106
 27	Strauss	Strauss	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	23	conj	_	ChangedBy=Issue149
 28	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
@@ -124,6 +129,8 @@
 # source CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
 # sent_id CF931-5
 # id 3942
+# d2d: punct(substituir,,) -> punct(ter,,)  #106
+# d2d: cc(substituir,ou) -> cc(ter,ou)  #106
 1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 2	poderia	poder	AUX	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	_	_
 3	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
@@ -135,8 +142,8 @@
 9	:	:	PUNCT	PU|@PU	_	3	punct	_	_
 10	substituir	substituir	VERB	<mv>|<first-cjt>|V|INF|@ICL-N<PRED	VerbForm=Inf	4	acl	_	_
 11	Beethoven	Beethoven	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
-12	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-13	ou	ou	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	10	cc	_	_
+12	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
+13	ou	ou	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	14	cc	_	d2d:#106
 14	ter	ter	VERB	<mv>|<cjt>|V|INF|@ICL-N<PRED	VerbForm=Inf	10	conj	_	_
 15	por	por	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_

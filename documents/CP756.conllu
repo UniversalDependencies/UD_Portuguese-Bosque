@@ -100,6 +100,9 @@
 # source CETEMPúblico n=756 sec=clt sem=95a
 # sent_id CP756-3
 # id 3890
+# d2d: cc(Canzone,e) -> cc(In,e)  #106
+# d2d: punct(Wolfgang,») -> punct(Luigi,»)  #106
+# d2d: cc(Wolfgang,e) -> cc(Luigi,e)  #106
 1	A	a	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	enquadrar	enquadrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	advcl	_	_
 3	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
@@ -114,8 +117,8 @@
 12	/	/	PUNCT	PU|@PU	_	9	punct	_	_
 13	Das	Das	PROPN	_	Number=Sing	9	parataxis	_	ChangedBy=Issue119|MWE=Das_Eismeer|MWEPOS=PROPN
 14	Eismeer	Eismeer	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
-15	»	»	PUNCT	PU|@PU	_	7	punct	_	_
-16	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	_
+15	»	»	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+16	e	e	CCONJ	<co-postnom>|KC|@CO	_	18	cc	_	d2d:#106
 17	de	de	ADP	<cjt>|PRP|@N<	_	18	case	_	_
 18	Luigi	Luigi	PROPN	_	Gender=Masc|Number=Sing	7	conj	_	ChangedBy=Issue119|MWE=Luigi_Nono|MWEPOS=PROPN
 19	Nono	Nono	PROPN	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
@@ -143,7 +146,7 @@
 41	a	a	DET	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119
 42	tre	tre	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119
 43	cori	cori	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119
-44	e	e	CCONJ	<co-pred>|KC|@CO	_	40	cc	_	_
+44	e	e	CCONJ	<co-pred>|KC|@CO	_	45	cc	_	d2d:#106
 45	In	In	PROPN	_	Gender=Fem|Number=Sing	40	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=In_Ecclesiis|MWEPOS=PROPN
 46	Ecclesiis	Ecclesiis	PROPN	_	Number=Sing	45	flat:name	_	ChangedBy=Issue119
 47	)	)	PUNCT	PU|@PU	_	40	punct	_	_
@@ -162,19 +165,21 @@
 # source CETEMPúblico n=756 sec=clt sem=95a
 # sent_id CP756-4
 # id 3891
+# d2d: cc(passagem,e) -> cc(vivência,e)  #106
+# d2d: cc(Luigi,e) -> cc(Giovanni,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	relação	relação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3	entre	entre	ADP	PRP|@N<ARG	_	4	case	_	_
 4	Luigi	Luigi	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=Luigi_Nono|MWEPOS=PROPN
 5	Nono	Nono	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
-6	e	e	CCONJ	<co-prparg>|KC|@CO	_	4	cc	_	_
+6	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	d2d:#106
 7	Giovanni	Giovanni	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Giovanni_Gabrieli|MWEPOS=PROPN
 8	Gabrieli	Gabrieli	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	ultrapassa	ultrapassar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 11	simples	simples	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	12	amod	_	_
 12	passagem	passagem	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
-13	e	e	CCONJ	<co-acc>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-acc>|KC|@CO	_	14	cc	_	d2d:#106
 14	vivência	vivência	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	conj	_	_
 15	em	em	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_

@@ -81,6 +81,7 @@
 # source CETEMPúblico n=29 sec=clt sem=96a
 # sent_id CP29-3
 # id 168
+# d2d: cc(examinar,e) -> cc(colher,e)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	equipa	equipa	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -98,7 +99,7 @@
 15	examinar	examinar	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
 16	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
 17	vítimas	vítima	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	15	obj	_	_
-18	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	15	cc	_	_
+18	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	19	cc	_	d2d:#106
 19	colher	colher	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	conj	_	_
 20	amostras	amostra	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	19	obj	_	_
 21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
@@ -108,6 +109,10 @@
 # source CETEMPúblico n=29 sec=clt sem=96a
 # sent_id CP29-4
 # id 169
+# d2d: punct(capital,,) -> punct(capital,,)  #106
+# d2d: cc(capital,nem) -> cc(capital,nem)  #106
+# d2d: punct(capital,,) -> punct(capital,,)  #106
+# d2d: cc(evacuem,e) -> cc(alertem,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	_
 3	gabonês	gabonês	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -147,10 +152,10 @@
 37	de	de	ADP	<sam->|PRP|@N<	_	39	case	_	_
 38	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	39	det	_	_
 39	província	província	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	_
-40	,	,	PUNCT	PU|@PU	_	36	punct	_	_
+40	,	,	PUNCT	PU|@PU	_	46	punct	_	d2d:#106
 41	Makokou	Makokou	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	36	appos	_	_
-42	,	,	PUNCT	PU|@PU	_	36	punct	_	_
-43	nem	nem	CCONJ	<co-advl>|KC|@CO	_	36	cc	_	_
+42	,	,	PUNCT	PU|@PU	_	46	punct	_	d2d:#106
+43	nem	nem	CCONJ	<co-advl>|KC|@CO	_	46	cc	_	d2d:#106
 44	para	para	ADP	<cjt>|PRP|@<ADVL	_	46	case	_	_
 45	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
 46	capital	capital	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	36	conj	_	_
@@ -158,7 +163,7 @@
 48	,	,	PUNCT	PU|@PU	_	49	punct	_	_
 49	Libreville	Libreville	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	46	appos	_	_
 50	,	,	PUNCT	PU|@PU	_	49	punct	_	_
-51	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	30	cc	_	_
+51	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	53	cc	_	d2d:#106
 52	que	que	SCONJ	KS|@SUB	_	53	mark	_	_
 53	alertem	alertar	VERB	<cjt>|<mv>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	conj	_	_
 54	para	para	ADP	PRP|@<ADVL	_	57	case	_	_
@@ -190,6 +195,10 @@
 # source CETEMPúblico n=29 sec=clt sem=96a
 # sent_id CP29-5
 # id 170
+# d2d: cc(sangue,e) -> cc(excrementos,e)  #106
+# d2d: cc(toquem,e) -> cc(evitem,e)  #106
+# d2d: cc(doentes,nem) -> cc(mortos,nem)  #106
+# d2d: punct(sangue,,) -> punct(vómitos,,)  #106
 1	Recomenda-	recomendar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	_
 3	ainda	ainda	ADV	ADV|@<ADVL	_	1	advmod	_	_
@@ -207,11 +216,11 @@
 15	em	em	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	17	case	_	_
 16	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
 17	doentes	doente	ADJ	<first-cjt>|<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
-18	nem	nem	CCONJ	<co-advl>|KC|@CO	_	17	cc	_	_
+18	nem	nem	CCONJ	<co-advl>|KC|@CO	_	21	cc	_	d2d:#106
 19	em	em	ADP	<sam->|<cjt>|PRP|@<ADVL	_	21	case	_	_
 20	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
 21	mortos	morto	ADJ	<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	17	conj	_	_
-22	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	9	cc	_	_
+22	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 23	que	que	SCONJ	KS|@SUB	_	24	mark	_	_
 24	evitem	evitar	VERB	<mv>|<cjt>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
@@ -220,9 +229,9 @@
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 29	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	30	det	_	_
 30	sangue	sangue	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
-31	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+31	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 32	vómitos	vómito	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	30	conj	_	_
-33	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	_
+33	e	e	CCONJ	<co-prparg>|KC|@CO	_	34	cc	_	d2d:#106
 34	excrementos	excremento	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	30	conj	_	_
 35	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

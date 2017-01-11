@@ -15,8 +15,9 @@
 # source CETEMPúblico n=207 sec=clt sem=97b
 # sent_id CP207-2
 # id 1115
+# d2d: cc(Drosnin,e) -> cc(muitos,e)  #106
 1	Drosnin	Drosnin	PROPN	<first-cjt>|PROP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing	8	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	muitos	muito	PRON	<cjt>|<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur	1	conj	_	_
 4	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
@@ -89,6 +90,10 @@
 # source CETEMPúblico n=207 sec=clt sem=97b
 # sent_id CP207-5
 # id 1118
+# d2d: cc(demonstram,como) -> cc(ver,como)  #106
+# d2d: punct(demonstram,,) -> punct(baseiam,,)  #106
+# d2d: punct(demonstram,,) -> punct(ver,,)  #106
+# d2d: cc(demonstram,como) -> cc(baseiam,como)  #106
 1	não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	só	só	ADV	ADV|@CO	_	7	cc	_	_
 3	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
@@ -97,16 +102,16 @@
 6	não	não	ADV	_	Polarity=Neg	7	advmod	_	_
 7	demonstram	demonstrar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	nada	nada	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	7	obj	_	_
-9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-10	como	como	ADV	<co-fcl>|<kc>|ADV|@CO	_	7	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
+10	como	como	ADV	<co-fcl>|<kc>|ADV|@CO	_	14	cc	_	d2d:#106
 11	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
 12	conclusões	conclusão	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	14	nsubj	_	_
 13	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	14	expl	_	ChangedBy=Issue135
 14	baseiam	basear	VERB	<cjt>|<mv>|<se-passive>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
 15	em	em	ADP	PRP|@<PIV	_	16	case	_	_
 16	falácias	falácia	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	14	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-18	como	como	ADV	<co-fcl>|<kc>|ADV|@CO	_	7	cc	_	_
+17	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
+18	como	como	ADV	<co-fcl>|<kc>|ADV|@CO	_	25	cc	_	d2d:#106
 19	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	21	det	_	MWE=todo_o
 20	o	o	DET	<artd>|DET|M|S|@A<	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	fixed	_	_
 21	processo	processo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	25	nsubj	_	_
@@ -152,6 +157,7 @@
 # source CETEMPúblico n=207 sec=clt sem=97b
 # sent_id CP207-7
 # id 1120
+# d2d: punct(simplificações,,) -> punct(adaptação,,)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	3	det	_	_
 3	descrição	descrição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	ChangedBy=Issue137
@@ -161,7 +167,7 @@
 7	realizo	realizar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	9	det	_	_
 9	simplificações	simplificação	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	7	obj	_	_
-10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+10	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 11	bem	bem	ADP	PRP|@CO	_	12	case	_	MWE=bem_como
 12	como	como	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
 13	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
@@ -198,6 +204,8 @@
 # source CETEMPúblico n=207 sec=clt sem=97b
 # sent_id CP207-9
 # id 1122
+# d2d: punct(vogais,,) -> punct(espaços,,)  #106
+# d2d: cc(vogais,e) -> cc(pontuação,e)  #106
 1	Passo	passo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	2	2	NUM	<card>|NUM|M|S|@N<	_	1	nummod	_	_
 3	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -205,9 +213,9 @@
 5	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	7	det	_	MWE=todas_as
 6	as	o	DET	<artd>|DET|F|P|@A<	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	fixed	_	_
 7	vogais	vogal	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	obj	_	_
-8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	espaços	espaço	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	conj	_	_
-10	e	e	CCONJ	<co-acc>|KC|@CO	_	7	cc	_	_
+10	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	d2d:#106
 11	pontuação	pontuação	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	conj	_	_
 12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 13	ficando	ficar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	4	advcl	_	_
@@ -243,6 +251,7 @@
 # source CETEMPúblico n=207 sec=clt sem=97b &E
 # sent_id CP207-11
 # id 1124
+# d2d: punct(7ª,,) -> punct(14ª,,)  #106
 1	Passo	passo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	4	4	NUM	<card>|NUM|M|S|@N<	_	1	nummod	_	_
 3	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -278,7 +287,7 @@
 33	7	7	NUM	<card>|NUM|M|P|@P<	_	31	nmod	_	_
 34	(	(	PUNCT	PU|@PU	_	35	punct	_	_
 35	7ª	7ª	ADJ	<cjt>|<NUM-ord>|<first-cjt>|ADJ|F|S|@APP	Gender=Fem|Number=Sing	28	dep	_	_
-36	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+36	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
 37	14ª	14ª	ADJ	<cjt>|<NUM-ord>|ADJ|F|S|@APP	Gender=Fem|Number=Sing	35	conj	_	_
 38	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 39	etc.	etc.	ADV	ADV|@APP	_	35	advmod	_	_
@@ -297,6 +306,8 @@
 # source CETEMPúblico n=207 sec=clt sem=97b
 # sent_id CP207-12
 # id 1125
+# d2d: cc(pegue,e) -> cc(tente,e)  #106
+# d2d: cc(uma,ou) -> cc(várias,ou)  #106
 1	Passo	passo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	5	5	NUM	<card>|NUM|M|S|@N<	_	1	nummod	_	_
 3	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -305,11 +316,11 @@
 6	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	8	det	_	_
 7	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	8	amod	_	_
 8	cadeia	cadeia	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
-9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	d2d:#106
 10	tente	tentar	VERB	<mv>|<cjt>|V|PR|3S|SUBJ|@FS-N<PRED	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 11	construir	construir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	10	xcomp	_	_
 12	uma	um	NUM	<first-cjt>|<card>|NUM|F|S|@>N	_	15	nummod	_	_
-13	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	12	cc	_	_
+13	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	14	cc	_	d2d:#106
 14	várias	várias	DET	<cjt>|<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	12	conj	_	_
 15	palavras	palavra	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	11	obj	_	_
 16	com	com	ADP	PRP|@N<	_	17	case	_	_

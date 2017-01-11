@@ -30,10 +30,11 @@
 # source CETEMPúblico n=518 sec=des sem=92b
 # sent_id CP518-2
 # id 2710
+# d2d: cc(boas,e) -> cc(más,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	etapas	etapa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	13	nsubj	_	_
 3	boas	bom	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	2	amod	_	_
-4	e	e	CCONJ	<co-postnom>|KC|@CO	_	3	cc	_	_
+4	e	e	CCONJ	<co-postnom>|KC|@CO	_	5	cc	_	d2d:#106
 5	más	má	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	3	conj	_	_
 6	por	por	ADP	PRP|@ADVL>	_	7	case	_	_
 7	que	que	PRON	<rel>|INDP|F|P|@P<	Gender=Fem|Number=Plur|PronType=Rel	12	nmod	_	_
@@ -60,6 +61,7 @@
 # source CETEMPúblico n=518 sec=des sem=92b
 # sent_id CP518-3
 # id 2711
+# d2d: cc(enfrentar,e) -> cc(prosseguir,e)  #106
 1	Isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	conj	_	MWE=isto_é|MWEPOS=CCONJ
 2	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -73,7 +75,7 @@
 11	enfrentar	enfrentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	advcl	_	_
 12	essas	esse	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	13	det	_	_
 13	circunstâncias	circunstância	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	11	obj	_	_
-14	e	e	CCONJ	<co-prparg>|<co-inf>|KC|@CO	_	11	cc	_	_
+14	e	e	CCONJ	<co-prparg>|<co-inf>|KC|@CO	_	15	cc	_	d2d:#106
 15	prosseguir	prosseguir	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	conj	_	_
 16	sem	sem	ADP	PRP|@<ADVL	_	17	case	_	_
 17	apego	apego	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue137
@@ -142,6 +144,7 @@
 # source CETEMPúblico n=518 sec=des sem=92b
 # sent_id CP518-6
 # id 2714
+# d2d: cc(justo,e) -> cc(abrangente,e)  #106
 1	Claro	claro	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	4	mark	_	_
 3	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	_	_
@@ -150,7 +153,7 @@
 6	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	amor	amor	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
 8	justo	justo	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	_
-9	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	d2d:#106
 10	totalmente	totalmente	ADV	<quant>|ADV|@>A	_	11	advmod	_	_
 11	abrangente	abrangente	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	8	conj	_	_
 12	,	,	PUNCT	PU|@PU	_	14	punct	_	_
@@ -209,14 +212,16 @@
 # source CETEMPúblico n=518 sec=des sem=92b
 # sent_id CP518-8
 # id 2716
+# d2d: punct(revolta,,) -> punct(desânimo,,)  #106
+# d2d: cc(revolta,nem) -> cc(tristeza,nem)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	<first-cjt>|KS|@<ACC	_	2	obj	_	_
 4	sentir	sentir	VERB	<cjt>|<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	3	conj	_	_
 5	revolta	revolta	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 7	desânimo	desânimo	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	conj	_	_
-8	nem	nem	CCONJ	<co-acc>|KC|@CO	_	5	cc	_	_
+8	nem	nem	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	d2d:#106
 9	tristeza	tristeza	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	conj	_	_
 10	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 11	devendo	dever	AUX	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	12	aux	_	_

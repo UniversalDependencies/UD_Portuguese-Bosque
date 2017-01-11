@@ -44,6 +44,9 @@
 # source CETENFolha n=380 cad=Dinheiro sec=eco sem=94b
 # sent_id CF380-3
 # id 1581
+# d2d: cc(esquerda,e) -> cc(direita,e)  #106
+# d2d: cc(empresários,e) -> cc(membros,e)  #106
+# d2d: punct(intelectuais,,) -> punct(eleitores,,)  #106
 1	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	quando	quando	ADV	<rel>|ADV|@ADVL>	_	13	advmod	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -82,9 +85,9 @@
 36	intelectuais	intelectual	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	35	obj	_	_
 37	de	de	ADP	PRP|@N<	_	38	case	_	_
 38	esquerda	esquerda	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	_
-39	e	e	CCONJ	<co-prparg>|KC|@CO	_	38	cc	_	_
+39	e	e	CCONJ	<co-prparg>|KC|@CO	_	40	cc	_	d2d:#106
 40	direita	direita	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	38	conj	_	_
-41	,	,	PUNCT	PU|@PU	_	36	punct	_	_
+41	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
 42	eleitores	eleitor	NOUN	<cjt>|<np-idf>|N|M|P|@ACC>	Gender=Masc|Number=Plur	36	conj	_	_
 43	de	de	ADP	PRP|@N<	_	44	case	_	_
 44	Lula	Lula	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	42	nmod	_	_
@@ -104,7 +107,7 @@
 58	liberais	liberal	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	57	amod	_	_
 59	,	,	PUNCT	PU|@PU	_	48	punct	_	_
 60	jornalistas	jornalista	ADJ	ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	55	amod	_	_
-61	e	e	CCONJ	<co-postnom>|KC|@CO	_	55	cc	_	_
+61	e	e	CCONJ	<co-postnom>|KC|@CO	_	62	cc	_	d2d:#106
 62	membros	membro	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	55	conj	_	ChangedBy=Issue149
 63	de	de	ADP	<sam->|PRP|@N<	_	65	case	_	_
 64	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	65	det	_	_

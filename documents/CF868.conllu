@@ -31,6 +31,13 @@
 # source CETENFolha n=868 cad=Cotidiano sec=soc sem=94a &D &L
 # sent_id CF868-2
 # id 3665
+# d2d: punct(balas,,) -> punct(camisinhas,,)  #106
+# d2d: punct(balas,,) -> punct(camisinhas,,)  #106
+# d2d: punct(balas,,) -> punct(cigarros,,)  #106
+# d2d: punct(balas,,) -> punct(remédios,,)  #106
+# d2d: punct(balas,,) -> punct(remédios,,)  #106
+# d2d: punct(balas,,) -> punct(chocolates,,)  #106
+# d2d: cc(balas,e) -> cc(camisinhas,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	banheiro	banheiro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137
@@ -39,22 +46,22 @@
 6	funcionário	funcionário	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 7	vende	vender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	balas	bala	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	7	obj	_	_
-9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	cigarros	cigarro	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	8	conj	_	_
-11	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 12	chocolates	chocolate	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	8	conj	_	_
-13	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 14	água	água	NOUN	_	Gender=Masc|Number=Sing	8	obj	_	MWE=água_mineral|MWEPOS=NOUN
 15	mineral	mineral	ADJ	_	Gender=Masc|Number=Sing	14	compound	_	_
-16	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	remédios	remédio	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	8	conj	_	_
 18	(	(	PUNCT	PU|@PU	_	19	punct	_	_
 19	Engov	Engov	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	17	appos	_	_
 20	)	)	PUNCT	PU|@PU	_	19	punct	_	_
-21	e	e	CCONJ	<co-acc>|KC|@CO	_	8	cc	_	_
-22	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+21	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	d2d:#106
+22	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 23	claro	claro	ADJ	ADJ|M|S|@<ADVL	Gender=Masc|Number=Sing	8	advmod	_	_
-24	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+24	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 25	camisinhas	camisinha	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	conj	_	_
 26	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 

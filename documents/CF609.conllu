@@ -42,6 +42,8 @@
 # source CETENFolha n=609 cad=Esporte sec=des sem=94b
 # sent_id CF609-4
 # id 2565
+# d2d: cc(Sei,mas) -> cc(evolução,mas)  #106
+# d2d: punct(Sei,,) -> punct(evolução,,)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
 2	Sei	saber	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	17	ccomp	_	_
 3	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
@@ -51,8 +53,8 @@
 7	tudo	tudo	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	6	obj	_	_
 8	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	9	obj	_	_
 9	posso	poder	VERB	<mv>|V|PR|1S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
-10	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-11	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+10	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
+11	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
 12	estou	estar	VERB	<mv>|<cjt>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	cop	_	_
 13	em	em	ADP	PRP|@<SA	_	14	case	_	_
 14	evolução	evolução	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	conj	_	_
@@ -66,6 +68,7 @@
 # source CETENFolha n=609 cad=Esporte sec=des sem=94b
 # sent_id CF609-5
 # id 2566
+# d2d: cc(torcida,e) -> cc(imprensa,e)  #106
 1	Folha	Folha	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	o	o	PRON	_	Gender=Masc|Number=Sing	4	det	_	_
@@ -81,7 +84,7 @@
 13	de	de	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	torcida	torcida	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-16	e	e	CCONJ	<co-piv>|KC|@CO	_	15	cc	_	_
+16	e	e	CCONJ	<co-piv>|KC|@CO	_	19	cc	_	d2d:#106
 17	de	de	ADP	<cjt>|<sam->|PRP|@<PIV	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	imprensa	imprensa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_

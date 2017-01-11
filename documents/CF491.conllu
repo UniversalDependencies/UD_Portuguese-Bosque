@@ -28,6 +28,11 @@
 # source CETENFolha n=491 cad=Brasil sec=pol sem=94a
 # sent_id CF491-2
 # id 2068
+# d2d: punct(vias,,) -> punct(cachoeiras,,)  #106
+# d2d: punct(vias,,) -> punct(lagos,,)  #106
+# d2d: cc(local,e) -> cc(internacional,e)  #106
+# d2d: punct(vias,,) -> punct(reservas,,)  #106
+# d2d: punct(vias,,) -> punct(rios,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	mapas	mapa	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	13	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -55,14 +60,14 @@
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
 26	tráfego	tráfego	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
 27	local	local	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	26	amod	_	_
-28	e	e	CCONJ	<co-postnom>|KC|@CO	_	27	cc	_	_
+28	e	e	CCONJ	<co-postnom>|KC|@CO	_	29	cc	_	d2d:#106
 29	internacional	internacional	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	27	conj	_	_
 30	)	)	PUNCT	PU|@PU	_	22	punct	_	_
-31	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+31	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 32	rios	rio	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	conj	_	_
-33	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+33	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
 34	lagos	lago	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	conj	_	_
-35	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 36	cachoeiras	cachoeira	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	17	conj	_	_
 37	,	,	PUNCT	PU|@PU	_	40	punct	_	_
 38	montanhas	montanha	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	17	conj	_	_
@@ -75,7 +80,7 @@
 45	,	,	PUNCT	PU|@PU	_	40	punct	_	_
 46	parques	parque	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	conj	_	_
 47	nacionais	nacional	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	46	amod	_	_
-48	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+48	,	,	PUNCT	PU|@PU	_	49	punct	_	d2d:#106
 49	reservas	reserva	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	17	conj	_	_
 50	de	de	ADP	PRP|@N<	_	51	case	_	_
 51	gás	gás	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	49	nmod	_	_

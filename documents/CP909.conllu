@@ -33,6 +33,8 @@
 # source CETEMPúblico n=909 sec=soc sem=92a
 # sent_id CP909-4
 # id 4686
+# d2d: cc(debater-,mas) -> cc(tem,mas)  #106
+# d2d: punct(debater-,,) -> punct(tem,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Assembleia	Assembleia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	MWE=Assembleia_da_Área_Metropolitana_de_Lisboa
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -56,8 +58,8 @@
 21	falta	falta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	instalações	instalação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	21	nmod	_	_
-24	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-25	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	_
+24	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
+25	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	30	cc	_	d2d:#106
 26	por	por	ADP	<sam->|PRP|@N<	_	28	case	_	_
 27	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	30	nmod	_	_
@@ -71,6 +73,10 @@
 # source CETEMPúblico n=909 sec=soc sem=92a
 # sent_id CP909-5
 # id 4687
+# d2d: punct(peripécias,,) -> punct(cumpriu,,)  #106
+# d2d: cc(peripécias,mas) -> cc(surpresas,mas)  #106
+# d2d: cc(CDU,e) -> cc(PS,e)  #106
+# d2d: punct(peripécias,,) -> punct(surpresas,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	eleição	eleição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	decorreu	decorrer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -82,12 +88,12 @@
 9	com	com	ADP	<first-cjt>|PRP|@N<	_	11	case	_	_
 10	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	11	det	_	_
 11	peripécias	peripécia	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	_
-12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-13	mas	mas	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+12	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+13	mas	mas	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	d2d:#106
 14	sem	sem	ADP	<cjt>|PRP|@N<ARG	_	16	case	_	_
 15	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	16	amod	_	_
 16	surpresas	surpresa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	conj	_	_
-17	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 18	já	já	ADV	ADV|@SUB	_	21	mark	_	MWE=já_que
 19	que	que	SCONJ	KS|@A<	_	18	fixed	_	_
 20	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	21	nsubj	_	_
@@ -99,7 +105,7 @@
 26	entre	entre	ADP	PRP|@<ADVL	_	28	case	_	_
 27	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
 28	CDU	CDU	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	25	obl	_	ChangedBy=Issue137
-29	e	e	CCONJ	<co-prparg>|KC|@CO	_	28	cc	_	_
+29	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	d2d:#106
 30	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	PS	PS	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	28	conj	_	_
 32	.	.	PUNCT	PU|@PU	_	3	punct	_	_

@@ -3,6 +3,7 @@
 # source CETEMPúblico n=859 sec=clt-soc sem=93a
 # sent_id CP859-1
 # id 4416
+# d2d: cc(supercomputadores,e) -> cc(tecnologias,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 2	futuros	futuro	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	4	amod	_	_
 3	«	«	PUNCT	PU|@PU	_	4	punct	_	_
@@ -30,7 +31,7 @@
 25	imagens	imagens	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
 26	em	em	ADP	<first-cjt>|PRP|@N<	_	27	case	_	_
 27	supercomputadores	supercomputador	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	_
-28	e	e	CCONJ	<co-postnom>|KC|@CO	_	27	cc	_	_
+28	e	e	CCONJ	<co-postnom>|KC|@CO	_	31	cc	_	d2d:#106
 29	em	em	ADP	<sam->|<cjt>|PRP|@N<	_	31	case	_	_
 30	outras	outro	DET	<-sam>|<diff>|DET|F|P|@>N	Gender=Fem|Number=Plur	31	det	_	_
 31	tecnologias	tecnologia	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	27	conj	_	ChangedBy=Issue149
@@ -43,12 +44,16 @@
 # source CETEMPúblico n=859 sec=clt-soc sem=93a
 # sent_id CP859-2
 # id 4417
+# d2d: punct(IBM,,) -> punct(Siemens,,)  #106
+# d2d: cc(Hitachi,e) -> cc(Texas,e)  #106
+# d2d: cc(IBM,e) -> cc(Toshiba,e)  #106
+# d2d: cc(NEC,e) -> cc(American,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	aliança	aliança	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	36	nsubj:pass	_	_
 3	entre	entre	ADP	PRP|@N<ARG	_	5	case	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	Hitachi	Hitachi	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
-6	e	e	CCONJ	<co-prparg>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	d2d:#106
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	Texas	Texas	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	5	conj	_	_
 9	--	--	PUNCT	PU|@PU	_	13	punct	_	_
@@ -62,9 +67,9 @@
 17	de	de	ADP	<sam->|PRP|@N<	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	IBM	IBM	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
-20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	Siemens	siemens	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	conj	_	_
-22	e	e	CCONJ	<co-prparg>|KC|@CO	_	19	cc	_	_
+22	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	d2d:#106
 23	Toshiba	Toshiba	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	19	conj	_	_
 24	anunciada	anunciar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	16	acl	_	_
 25	em	em	ADP	PRP|@<ADVL	_	26	case	_	_
@@ -86,7 +91,7 @@
 41	como	como	ADV	<cjt>|<prp>|<rel>|ADV|@N<PRED	_	39	advmod	_	_
 42	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
 43	NEC	NEC	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	41	nmod	_	_
-44	e	e	CCONJ	<co-n<pred>|KC|@CO	_	43	cc	_	_
+44	e	e	CCONJ	<co-n<pred>|KC|@CO	_	46	cc	_	d2d:#106
 45	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
 46	American	American	PROPN	_	Gender=Fem|Number=Sing	43	conj	_	ChangedBy=Issue119|MWE=American_Telephone_and_Telegraph|MWEPOS=PROPN
 47	Telephone	Telephone	PROPN	_	Number=Sing	46	flat:name	_	ChangedBy=Issue119

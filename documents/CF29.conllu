@@ -142,6 +142,9 @@
 # source CETENFolha n=29 cad=Mais! sec=nd sem=94a &W &L
 # sent_id CF29-8
 # id 118
+# d2d: punct(pescadores,,) -> punct(lojistas,,)  #106
+# d2d: cc(pescadores,e) -> cc(nativos,e)  #106
+# d2d: punct(pescadores,,) -> punct(propietários,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	ação	ação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj:pass	_	_
 3	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
@@ -149,13 +152,13 @@
 5	movida	mover	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 6	por	por	ADP	PRP|@PASS	_	7	case	_	_
 7	pescadores	pescador	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obl:agent	_	_
-8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	lojistas	lojista	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	conj	_	_
-10	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+10	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 11	propietários	proprietário	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	conj	_	_
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	terra	terra	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
-14	e	e	CCONJ	<co-pred>|KC|@CO	_	7	cc	_	_
+14	e	e	CCONJ	<co-pred>|KC|@CO	_	15	cc	_	d2d:#106
 15	nativos	nativo	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	conj	_	_
 16	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
@@ -164,6 +167,8 @@
 # source CETENFolha n=29 cad=Mais! sec=nd sem=94a &E
 # sent_id CF29-9
 # id 119
+# d2d: cc(mais,mas) -> cc(menor,mas)  #106
+# d2d: punct(mais,,) -> punct(menor,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	valor	valor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	é	ser	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -177,8 +182,8 @@
 11	por	por	ADP	PRP|@PASS	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Exxon	Exxon	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	obl:agent	_	_
-14	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-15	mas	mas	CCONJ	<co-fcl>|KC|@CO	_	4	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+15	mas	mas	CCONJ	<co-fcl>|KC|@CO	_	16	cc	_	d2d:#106
 16	menor	pequeno	ADJ	<cjt>|<KOMP>|<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	4	conj	_	_
 17	que	que	SCONJ	KS|@KOMP<	_	16	dep	_	_
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_

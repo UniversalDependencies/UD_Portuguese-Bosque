@@ -102,12 +102,14 @@
 # source CETENFolha n=877 cad=Cotidiano sec=soc sem=94a
 # sent_id CF877-5
 # id 3701
+# d2d: cc(tomba,e) -> cc(causa,e)  #106
+# d2d: cc(morte,e) -> cc(engarrafamento,e)  #106
 1	Caminhão	caminhão	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	tomba	tombar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	e	e	CCONJ	<co-sta>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-sta>|KC|@CO	_	4	cc	_	d2d:#106
 4	causa	causar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 5	morte	morte	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
-6	e	e	CCONJ	<co-acc>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-acc>|KC|@CO	_	7	cc	_	d2d:#106
 7	engarrafamento	engarrafamento	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	conj	_	_
 
 # text O tombamento de um caminhão no km 226 da pista Rio-São Paulo da via Dutra às 5h de ontem provocou engarrafamento na rodovia.

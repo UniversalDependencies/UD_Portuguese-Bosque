@@ -3,6 +3,12 @@
 # source CETEMPúblico n=277 sec=des sem=95b &L
 # sent_id CP277-1
 # id 1484
+# d2d: punct(Alemanha,,) -> punct(Estónia,,)  #106
+# d2d: punct(Alemanha,,) -> punct(Polónia,,)  #106
+# d2d: cc(Alemanha,e) -> cc(Suiça,e)  #106
+# d2d: punct(Alemanha,,) -> punct(Bielorússia,,)  #106
+# d2d: punct(Alemanha,,) -> punct(Rússia,,)  #106
+# d2d: punct(Alemanha,,) -> punct(Holanda,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	equipa	equipa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	masculina	masculino	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -29,17 +35,17 @@
 24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
 25	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	26	det	_	_
 26	Alemanha	Alemanha	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
-27	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+27	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
 28	Bielorússia	Bielorússia	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	26	conj	_	_
-29	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+29	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
 30	Estónia	Estónia	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	26	conj	_	_
-31	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+31	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 32	Rússia	Rússia	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	26	conj	_	_
-33	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+33	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
 34	Holanda	Holanda	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	26	conj	_	_
-35	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 36	Polónia	Polónia	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	26	conj	_	_
-37	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	_
+37	e	e	CCONJ	<co-prparg>|KC|@CO	_	38	cc	_	d2d:#106
 38	Suiça	Suiça	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	26	conj	_	_
 39	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -48,6 +54,8 @@
 # source CETEMPúblico n=277 sec=des sem=95b
 # sent_id CP277-2
 # id 1485
+# d2d: cc(Sobem,e) -> cc(descem,e)  #106
+# d2d: cc(Sobem,e) -> cc(escapará,e)  #106
 1	Sobem	subir	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	a	a	ADP	<sam->|PRP|@<SA	_	4	case	_	_
 3	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	4	det	_	_
@@ -61,12 +69,12 @@
 11	duas	dois	NUM	<card>|NUM|F|P|@>N	_	13	nummod	_	_
 12	primeiras	primeiro	ADJ	<NUM-ord>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	13	amod	_	_
 13	equipas	equipa	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	1	nsubj	_	_
-14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 15	descem	descer	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
 16	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_
 17	duas	dois	NUM	<card>|NUM|F|P|@>N	_	18	nummod	_	_
 18	últimas	última	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	15	nsubj	_	_
-19	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|<co-cu>|KC|@CO	_	1	cc	_	_
+19	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|<co-cu>|KC|@CO	_	22	cc	_	d2d:#106
 20	Portugal	Portugal	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj	_	_
 21	dificilmente	dificilmente	ADV	ADV|@ADVL>	_	22	advmod	_	_
 22	escapará	escapar	VERB	<cjt>|<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	conj	_	_
@@ -80,6 +88,7 @@
 # source CETEMPúblico n=277 sec=des sem=95b
 # sent_id CP277-3
 # id 1486
+# d2d: cc(alemã,e) -> cc(russa,e)  #106
 1	É	é	ADP	PRP|@ADVL>	_	2	case	_	MWE=É_que
 2	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -94,7 +103,7 @@
 12	como	como	ADP	<com>|PRP|@N<	_	14	case	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	alemã	alemã	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
-15	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	_
+15	e	e	CCONJ	<co-postnom>|KC|@CO	_	17	cc	_	d2d:#106
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	russa	russa	NOUN	<cjt>|<np-def>|N|F|S|@N<	Gender=Fem|Number=Sing	14	conj	_	_
 18	estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	_
@@ -108,6 +117,10 @@
 # source CETEMPúblico n=277 sec=des sem=95b &L
 # sent_id CP277-4
 # id 1487
+# d2d: punct(Mário,,) -> punct(F.,,)  #106
+# d2d: cc(Mário,e) -> cc(Luís,e)  #106
+# d2d: punct(Mário,,) -> punct(F.,,)  #106
+# d2d: punct(Mário,,) -> punct(José,,)  #106
 1	Portugal	Portugal	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	alinha	alinhar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	com	com	ADP	PRP|@<PIV	_	4	case	_	_
@@ -117,7 +130,7 @@
 7	(	(	PUNCT	PU|@PU	_	8	punct	_	_
 8	Benfica	Benfica	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	4	appos	_	_
 9	)	)	PUNCT	PU|@PU	_	8	punct	_	_
-10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+10	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 11	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	_	_
 12	recentemente	recentemente	ADV	ADV|@ADVL>	_	13	advmod	_	_
 13	deixou	deixar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl:relcl	_	_
@@ -127,7 +140,7 @@
 17	em	em	ADP	PRP|@<OA	_	19	case	_	_
 18	7614	7614	NUM	<card>|NUM|M|P|@>N	_	19	nummod	_	_
 19	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	13	nmod	_	_
-20	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	F.	F.	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=F._Nuno_Fernandes|MWEPOS=PROPN
 22	Nuno	Nuno	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	Fernandes	Fernandes	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
@@ -138,7 +151,7 @@
 28	7381	7381	NUM	<card>|NUM|M|P|@>N	_	29	nummod	_	_
 29	pontos	ponto	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	25	conj	_	_
 30	)	)	PUNCT	PU|@PU	_	25	punct	_	_
-31	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+31	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 32	José	José	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=José_Durão|MWEPOS=PROPN
 33	Durão	Durão	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
 34	(	(	PUNCT	PU|@PU	_	35	punct	_	_
@@ -149,7 +162,7 @@
 39	6614	6614	NUM	<card>|NUM|M|P|@>N	_	40	nummod	_	_
 40	pontos	ponto	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	35	conj	_	_
 41	)	)	PUNCT	PU|@PU	_	35	punct	_	_
-42	e	e	CCONJ	<co-prparg>|KC|@CO	_	4	cc	_	_
+42	e	e	CCONJ	<co-prparg>|KC|@CO	_	43	cc	_	d2d:#106
 43	Luís	Luís	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Luís_Herédio_Costa|MWEPOS=PROPN
 44	Herédio	Herédio	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
 45	Costa	Costa	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
@@ -166,6 +179,13 @@
 # source CETEMPúblico n=277 sec=des sem=95b
 # sent_id CP277-5
 # id 1488
+# d2d: punct(Bielorússia,,) -> punct(Holanda,,)  #106
+# d2d: punct(Bielorússia,,) -> punct(Rússia,,)  #106
+# d2d: punct(Bielorússia,,) -> punct(França,,)  #106
+# d2d: punct(Bielorússia,,) -> punct(Alemanha,,)  #106
+# d2d: cc(Bielorússia,e) -> cc(Ucrânia,e)  #106
+# d2d: punct(Bielorússia,,) -> punct(Polónia,,)  #106
+# d2d: punct(Bielorússia,,) -> punct(Grã-Bretanha,,)  #106
 1	Ao	ao	ADP	PRP|@ADVL>	_	3	case	_	MWE=Ao_mesmo_tempo
 2	mesmo	mesmo	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
 3	tempo	tempo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
@@ -180,19 +200,19 @@
 12	envolvendo	envolver	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	4	advcl	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	Bielorússia	Bielorússia	PROPN	<first-cjt>|PROP|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	_
-15	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+15	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 16	França	França	PROPN	<cjt>|PROP|F|S|@<ACC	Gender=Fem|Number=Sing	14	conj	_	_
-17	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	Grã-Bretanha	Grã-Bretanha	PROPN	<cjt>|PROP|F|S|@<ACC	Gender=Fem|Number=Sing	14	conj	_	_
-19	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	Alemanha	Alemanha	PROPN	<cjt>|PROP|F|S|@<ACC	Gender=Fem|Number=Sing	14	conj	_	_
-21	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 22	Holanda	Holanda	PROPN	<cjt>|PROP|F|S|@<ACC	Gender=Fem|Number=Sing	14	conj	_	_
-23	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
 24	Polónia	Polónia	PROPN	<cjt>|PROP|F|S|@<ACC	Gender=Fem|Number=Sing	14	conj	_	_
-25	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 26	Rússia	Rússia	PROPN	<cjt>|PROP|F|S|@<ACC	Gender=Fem|Number=Sing	14	conj	_	_
-27	e	e	CCONJ	<co-acc>|KC|@CO	_	14	cc	_	_
+27	e	e	CCONJ	<co-acc>|KC|@CO	_	28	cc	_	d2d:#106
 28	Ucrânia	Ucrânia	PROPN	<cjt>|PROP|F|S|@<ACC	Gender=Fem|Number=Sing	14	conj	_	_
 29	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 30	com	com	ADP	PRP|@<ADVL	_	32	case	_	_
@@ -210,6 +230,7 @@
 # source CETEMPúblico n=277 sec=des sem=95b
 # sent_id CP277-6
 # id 1489
+# d2d: cc(belgas,e) -> cc(suiças,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	selecção	selecção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
 3	feminina	feminino	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -236,7 +257,7 @@
 24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 25	com	com	ADP	PRP|@<PIV	_	26	case	_	_
 26	belgas	belga	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	_
-27	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	_
+27	e	e	CCONJ	<co-prparg>|KC|@CO	_	28	cc	_	d2d:#106
 28	suiças	suiça	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	26	conj	_	_
 29	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
@@ -245,6 +266,8 @@
 # source CETEMPúblico n=277 sec=des sem=95b
 # sent_id CP277-7
 # id 1490
+# d2d: cc(subirá,mas) -> cc(favorita,mas)  #106
+# d2d: punct(subirá,,) -> punct(favorita,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	equipa	equipa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	vencedora	vencedor	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -253,8 +276,8 @@
 6	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	8	det	_	_
 7	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	8	amod	_	_
 8	liga	liga	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
-9	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 11	para	para	ADP	PRP|@ADVL>	_	13	case	_	_
 12	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	13	det	_	_
 13	posição	posição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
@@ -269,6 +292,9 @@
 # source CETEMPúblico n=277 sec=des sem=95b &L
 # sent_id CP277-8
 # id 1491
+# d2d: cc(Sandra,e) -> cc(Catarina,e)  #106
+# d2d: punct(Sandra,,) -> punct(Sónia,,)  #106
+# d2d: punct(Sandra,,) -> punct(Mónica,,)  #106
 1	Portugal	Portugal	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	alinha	alinhar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	com	com	ADP	PRP|@<PIV	_	4	case	_	_
@@ -280,7 +306,7 @@
 9	5218	5218	NUM	<card>|NUM|M|P|@>N	_	10	nummod	_	_
 10	pontos	ponto	NOUN	<first-cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	7	appos	_	_
 11	)	)	PUNCT	PU|@PU	_	7	punct	_	_
-12	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 13	Sónia	Sónia	PROPN	_	Gender=Fem|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Sónia_Machado|MWEPOS=PROPN
 14	Machado	Machado	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	(	(	PUNCT	PU|@PU	_	16	punct	_	_
@@ -289,7 +315,7 @@
 18	5061	5061	NUM	<card>|NUM|F|P|@>N	_	19	nummod	_	_
 19	p	p	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	16	conj	_	_
 20	)	)	PUNCT	PU|@PU	_	19	punct	_	_
-21	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 22	Mónica	Mónica	PROPN	_	Gender=Fem|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Mónica_Sousa|MWEPOS=PROPN
 23	Sousa	Sousa	PROPN	_	Number=Sing	22	flat:name	_	ChangedBy=Issue119
 24	(	(	PUNCT	PU|@PU	_	25	punct	_	_
@@ -299,7 +325,7 @@
 28	5122	5122	NUM	<card>|NUM|M|P|@>N	_	29	nummod	_	_
 29	pontos	ponto	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	25	conj	_	_
 30	)	)	PUNCT	PU|@PU	_	25	punct	_	_
-31	e	e	CCONJ	<co-prparg>|KC|@CO	_	4	cc	_	_
+31	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	d2d:#106
 32	Catarina	Catarina	PROPN	_	Gender=Fem|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Catarina_Rafael|MWEPOS=PROPN
 33	Rafael	Rafael	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
 34	(	(	PUNCT	PU|@PU	_	35	punct	_	_

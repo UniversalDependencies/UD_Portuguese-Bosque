@@ -14,6 +14,7 @@
 # source CETEMPúblico n=665 sec=soc sem=96a
 # sent_id CP665-2
 # id 3453
+# d2d: cc(Coral,e) -> cc(Orquestra,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	XVIII	XVIII	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue119|MWE=XVIII_Festival_Internacional|MWEPOS=PROPN
 3	Festival	Festival	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -44,7 +45,7 @@
 28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
 29	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	Porto	Porto	PROPN	PROP|@P<	Number=Sing	27	nmod	_	_
-31	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	_
+31	e	e	CCONJ	<co-postnom>|KC|@CO	_	34	cc	_	d2d:#106
 32	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	34	case	_	_
 33	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	Orquestra	Orquestra	PROPN	_	Gender=Fem|Number=Sing	22	conj	_	ChangedBy=Issue119|MWE=Orquestra_Esproarte|MWEPOS=PROPN
@@ -68,6 +69,10 @@
 # source CETEMPúblico n=665 sec=soc sem=96a &L
 # sent_id CP665-3
 # id 3454
+# d2d: punct(Rui,,) -> punct(Isabel,,)  #106
+# d2d: cc(Rui,e) -> cc(Helena,e)  #106
+# d2d: punct(Rui,,) -> punct(Thomas,,)  #106
+# d2d: punct(Rui,,) -> punct(Oliveira,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	espectáculo	espectáculo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	conta	contar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -80,25 +85,25 @@
 10	(	(	PUNCT	PU|@PU	_	11	punct	_	_
 11	tenor	tenor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	8	appos	_	_
 12	)	)	PUNCT	PU|@PU	_	11	punct	_	_
-13	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 14	Oliveira	Oliveira	PROPN	_	Gender=Masc|Number=Sing	8	conj	_	ChangedBy=Issue119|MWE=Oliveira_Lopes|MWEPOS=PROPN
 15	Lopes	Lopes	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	_
 17	barítono	barítono	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	14	appos	_	_
 18	)	)	PUNCT	PU|@PU	_	17	punct	_	_
-19	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	Thomas	Thomas	PROPN	_	Gender=Masc|Number=Sing	8	conj	_	ChangedBy=Issue119|MWE=Thomas_Gal|MWEPOS=PROPN
 21	Gal	Gal	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 22	(	(	PUNCT	PU|@PU	_	23	punct	_	_
 23	piano	piano	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	20	appos	_	_
 24	)	)	PUNCT	PU|@PU	_	23	punct	_	_
-25	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 26	Isabel	Isabel	PROPN	_	Gender=Masc|Number=Sing	8	conj	_	ChangedBy=Issue119|MWE=Isabel_Sá|MWEPOS=PROPN
 27	Sá	Sá	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 28	(	(	PUNCT	PU|@PU	_	29	punct	_	_
 29	harpa	harpa	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	26	appos	_	_
 30	)	)	PUNCT	PU|@PU	_	29	punct	_	_
-31	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	_
+31	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	d2d:#106
 32	Helena	Helena	PROPN	_	Gender=Fem|Number=Sing	8	conj	_	ChangedBy=Issue119|MWE=Helena_Sofia_Pereira|MWEPOS=PROPN
 33	Sofia	Sofia	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
 34	Pereira	Pereira	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
@@ -112,6 +117,8 @@
 # source CETEMPúblico n=665 sec=soc sem=96a
 # sent_id CP665-4
 # id 3455
+# d2d: punct(Sinfonia,») -> punct(cantata,»)  #106
+# d2d: cc(Sinfonia,e) -> cc(cantata,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	músicos	músico	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	irão	ir	AUX	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
@@ -143,8 +150,8 @@
 29	«	«	PUNCT	PU|@PU	_	30	punct	_	_
 30	Sinfonia	Sinfonia	PROPN	_	Gender=Fem|Number=Sing	18	obj	_	ChangedBy=Issue119|MWE=Sinfonia_Simples|MWEPOS=PROPN
 31	Simples	Simples	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
-32	»	»	PUNCT	PU|@PU	_	30	punct	_	_
-33	e	e	CCONJ	<co-cjt>|<co-acc>|KC|@CO	_	30	cc	_	_
+32	»	»	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
+33	e	e	CCONJ	<co-cjt>|<co-acc>|KC|@CO	_	35	cc	_	d2d:#106
 34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
 35	cantata	cantata	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	30	conj	_	_
 36	«	«	PUNCT	PU|@PU	_	37	punct	_	_
@@ -183,6 +190,7 @@
 # source CETEMPúblico n=665 sec=soc sem=96a
 # sent_id CP665-6
 # id 3457
+# d2d: cc(Elsa,e) -> cc(Wagner,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	3	det	_	_
 3	sede	sede	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	ChangedBy=Issue137
@@ -223,7 +231,7 @@
 38	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 39	Ana	Ana	PROPN	_	Gender=Fem|Number=Sing	33	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Ana_Ferraz|MWEPOS=PROPN
 40	Ferraz	Ferraz	PROPN	_	Number=Sing	39	flat:name	_	ChangedBy=Issue119
-41	e	e	CCONJ	<co-prparg>|KC|@CO	_	33	cc	_	_
+41	e	e	CCONJ	<co-prparg>|KC|@CO	_	42	cc	_	d2d:#106
 42	Wagner	Wagner	PROPN	_	Gender=Masc|Number=Sing	33	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Wagner_Dinis|MWEPOS=PROPN
 43	Dinis	Dinis	PROPN	_	Number=Sing	42	flat:name	_	ChangedBy=Issue119
 44	.	.	PUNCT	PU|@PU	_	13	punct	_	_

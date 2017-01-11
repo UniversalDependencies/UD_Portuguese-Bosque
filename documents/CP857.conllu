@@ -3,6 +3,9 @@
 # source CETEMPúblico n=857 sec=soc sem=93a
 # sent_id CP857-1
 # id 4401
+# d2d: punct(álcool,,) -> punct(café,,)  #106
+# d2d: cc(álcool,e) -> cc(medicamentos,e)  #106
+# d2d: punct(álcool,,) -> punct(tabaco,,)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	MWE=Por_outro_lado
 2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
 3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
@@ -27,11 +30,11 @@
 22	como	como	ADP	<com>|PRP|@N<	_	24	case	_	_
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	álcool	álcool	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
-25	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 26	tabaco	tabaco	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	conj	_	_
-27	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+27	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
 28	café	café	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	conj	_	_
-29	e	e	CCONJ	<co-postnom>|KC|@CO	_	24	cc	_	_
+29	e	e	CCONJ	<co-postnom>|KC|@CO	_	31	cc	_	d2d:#106
 30	certos	certos	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	31	det	_	_
 31	medicamentos	medicamento	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	24	conj	_	_
 32	.	.	PUNCT	PU|@PU	_	17	punct	_	_
@@ -41,6 +44,7 @@
 # source CETEMPúblico n=857 sec=soc sem=93a
 # sent_id CP857-2
 # id 4402
+# d2d: cc(álcool,ou) -> cc(nicotina,ou)  #106
 1	Mais	mais	ADV	<setop>|ADV|@>A	_	2	advmod	_	_
 2	um	um	NUM	<card>|NUM|M|S|@>N	_	3	nummod	_	_
 3	argumento	argumento	NOUN	<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
@@ -60,7 +64,7 @@
 17	de	de	ADP	PRP|@N<	_	19	case	_	_
 18	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	álcool	álcool	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
-20	ou	ou	CCONJ	<co-advl>|KC|@CO	_	19	cc	_	_
+20	ou	ou	CCONJ	<co-advl>|KC|@CO	_	23	cc	_	d2d:#106
 21	de	de	ADP	<cjt>|<sam->|PRP|@<ADVL	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	nicotina	nicotina	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	conj	_	_
@@ -137,6 +141,10 @@
 # source CETEMPúblico n=857 sec=soc sem=93a
 # sent_id CP857-5
 # id 4405
+# d2d: cc(quebrava,e) -> cc(acompanhadas,e)  #106
+# d2d: punct(quebrava,,) -> punct(acompanhadas,,)  #106
+# d2d: punct(quebrava,,) -> punct(acompanhadas,,)  #106
+# d2d: punct(quebrava,,) -> punct(acompanhadas,,)  #106
 1	Vantagens	vantagem	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3	quebrava	quebrar	VERB	<mv>|<first-cjt>|V|IMPF|3S|IND|@FS-APP	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	dep	_	_
@@ -150,15 +158,15 @@
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	_
 12	dealers	dealer	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	_
 13	»	»	PUNCT	PU|@PU	_	12	punct	_	_
-14	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 15	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	18	nsubj	_	_
 16	deixavam	deixar	AUX	<aux>|V|IMPF|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	18	aux	_	_
 17	de	de	ADP	PRP|@PRT-AUX<	_	18	nmod	_	_
 18	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	12	acl:relcl	_	_
 19	lucros	lucro	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	18	obj	_	_
-20	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-21	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
-22	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
+21	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	35	cc	_	d2d:#106
+22	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 23	como	como	SCONJ	KS|@SUB	_	26	mark	_	_
 24	seria	ser	VERB	<mv>|V|COND|3S|@FS-ADVL>	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	26	cop	_	_
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
@@ -196,6 +204,9 @@
 # source CETEMPúblico n=857 sec=soc sem=93a
 # sent_id CP857-7
 # id 4407
+# d2d: cc(pó,ou) -> cc(comprimidos,ou)  #106
+# d2d: punct(pó,,) -> punct(açúcar,,)  #106
+# d2d: punct(pó,,) -> punct(talco,,)  #106
 1	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	parte	parte	NOUN	<np-def>|N|F|S|@ADVL>	Gender=Fem|Number=Sing	7	nmod	_	_
@@ -212,11 +223,11 @@
 14	de	de	ADP	PRP|@<PIV	_	15	case	_	_
 15	lâmpadas	lâmpada	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	13	nmod	_	_
 16	fluorescentes	fluorescente	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	15	amod	_	_
-17	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	talco	talco	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	conj	_	_
-19	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	açúcar	açúcar	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	conj	_	_
-21	ou	ou	CCONJ	<co-n<pred>|KC|@CO	_	12	cc	_	_
+21	ou	ou	CCONJ	<co-n<pred>|KC|@CO	_	22	cc	_	d2d:#106
 22	comprimidos	comprimir	VERB	<cjt>|V|PCP|M|P|@P<	Gender=Masc|Number=Plur|VerbForm=Part	12	conj	_	_
 23	;	;	PUNCT	PU|@PU	_	7	punct	_	_
 
@@ -245,6 +256,8 @@
 # source CETEMPúblico n=857 sec=soc sem=93a
 # sent_id CP857-9
 # id 4409
+# d2d: cc(overdose,e) -> cc(doenças,e)  #106
+# d2d: punct(overdose,») -> punct(doenças,»)  #106
 1	Isto	isto	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	diminuiria	diminuir	VERB	<first-cjt>|<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -256,8 +269,8 @@
 9	por	por	ADP	<first-cjt>|PRP|@N<	_	11	case	_	_
 10	«	«	PUNCT	PU|@PU	_	11	punct	_	_
 11	overdose	overdose	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
-12	»	»	PUNCT	PU|@PU	_	11	punct	_	_
-13	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+12	»	»	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+13	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	d2d:#106
 14	de	de	ADP	<cjt>|PRP|@N<	_	16	case	_	_
 15	outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Gender=Fem|Number=Plur	16	det	_	_
 16	doenças	doença	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	conj	_	ChangedBy=Issue149

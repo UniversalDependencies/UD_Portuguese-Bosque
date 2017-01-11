@@ -3,12 +3,15 @@
 # source CETEMPúblico n=283 sec=soc sem=97a
 # sent_id CP283-1
 # id 1522
+# d2d: cc(refutaram,mas) -> cc(fizeram,mas)  #106
+# d2d: cc(comerciantes,e) -> cc(moradores,e)  #106
+# d2d: punct(refutaram,,) -> punct(fizeram,,)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	reunião	reunião	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	24	obl	_	ChangedBy=Issue137
 4	com	com	ADP	PRP|@N<	_	5	case	_	_
 5	comerciantes	comerciante	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
-6	e	e	CCONJ	<co-prparg>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	d2d:#106
 7	moradores	morador	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	conj	_	_
 8	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	11	det	_	_
@@ -73,8 +76,8 @@
 68	banho-maria	banho-maria	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	65	nmod	_	_
 69	»	»	PUNCT	PU|@PU	_	68	punct	_	_
 70	--	--	PUNCT	PU|@PU	_	65	punct	_	_
-71	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-72	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	_
+71	,	,	PUNCT	PU|@PU	_	73	punct	_	d2d:#106
+72	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	73	cc	_	d2d:#106
 73	fizeram	fazer	VERB	<cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	24	conj	_	_
 74	depender	depender	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	73	xcomp	_	_
 75	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	76	det	_	_

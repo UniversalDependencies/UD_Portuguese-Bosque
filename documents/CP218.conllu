@@ -3,13 +3,16 @@
 # source CETEMPúblico n=218 sec=clt sem=98a
 # sent_id CP218-1
 # id 1178
+# d2d: punct(administração,,) -> punct(Antena,,)  #106
+# d2d: cc(administração,e) -> cc(Antena,e)  #106
+# d2d: punct(administração,,) -> punct(Antena,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	actual	actual	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	administração	administração	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	27	nsubj	_	_
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	6	det	_	_
 6	TVI	TVI	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
 8	presidida	presidir	VERB	<first-cjt>|<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	_	_
 9	por	por	ADP	<first-cjt>|PRP|@PASS	_	10	case	_	_
 10	Miguel	Miguel	PROPN	_	Gender=Masc|Number=Sing	8	obl:agent	_	ChangedBy=Issue119|MWE=Miguel_Paes|MWEPOS=PROPN
@@ -23,8 +26,8 @@
 18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	grupo	grupo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
 20	SOCI	SOCI	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	19	appos	_	_
-21	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-22	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
+21	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+22	e	e	CCONJ	<co-subj>|KC|@CO	_	24	cc	_	d2d:#106
 23	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
 24	Antena	Antena	PROPN	_	Gender=Fem|Number=Sing	3	conj	_	ChangedBy=Issue119|MWE=Antena_3|MWEPOS=PROPN
 25	3	3	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
@@ -99,6 +102,8 @@
 # source CETEMPúblico n=218 sec=clt sem=98a
 # sent_id CP218-3
 # id 1180
+# d2d: cc(o,e) -> cc(o,e)  #106
+# d2d: cc(Media,e) -> cc(Antena,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	essa	esse	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
 3	assembleia	assembleia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue137
@@ -123,7 +128,7 @@
 22	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	23	det	_	_
 23	Media	Media	PROPN	_	Gender=Masc|Number=Sing	20	nmod	_	ChangedBy=Issue119|MWE=Media_Capital|MWEPOS=PROPN
 24	Capital	Capital	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119
-25	e	e	CCONJ	<co-postnom>|KC|@CO	_	23	cc	_	_
+25	e	e	CCONJ	<co-postnom>|KC|@CO	_	28	cc	_	d2d:#106
 26	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	28	case	_	_
 27	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	28	det	_	_
 28	Antena	Antena	PROPN	_	Gender=Fem|Number=Sing	23	conj	_	ChangedBy=Issue119|MWE=Antena_3|MWEPOS=PROPN
@@ -135,7 +140,7 @@
 34	privada	privado	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	33	amod	_	_
 35	espanhola	espanhola	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	33	nmod:npmod	_	_
 36	)	)	PUNCT	PU|@PU	_	33	punct	_	_
-37	e	e	CCONJ	<co-app>|KC|@CO	_	20	cc	_	_
+37	e	e	CCONJ	<co-app>|KC|@CO	_	38	cc	_	d2d:#106
 38	o	o	DET	<cjt>|<dem>|DET|M|S|@APP	Gender=Masc|Number=Sing|PronType=Dem	20	conj	_	_
 39	de	de	ADP	<sam->|PRP|@N<	_	41	case	_	_
 40	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_

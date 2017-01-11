@@ -3,6 +3,7 @@
 # source CETEMPúblico n=951 sec=nd sem=98a
 # sent_id CP951-1
 # id 4900
+# d2d: cc(entidades,e) -> cc(governo,e)  #106
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	_
 2	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -39,7 +40,7 @@
 34	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_
 35	entidades	entidade	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	32	nmod	_	_
 36	locais	local	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	35	amod	_	_
-37	e	e	CCONJ	<co-prparg>|KC|@CO	_	35	cc	_	_
+37	e	e	CCONJ	<co-prparg>|KC|@CO	_	39	cc	_	d2d:#106
 38	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
 39	governo	governo	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	35	conj	_	_
 40	central	central	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	39	amod	_	_
@@ -81,6 +82,7 @@
 # source CETEMPúblico n=951 sec=nd sem=98a
 # sent_id CP951-3
 # id 4902
+# d2d: cc(ministérios,e) -> cc(municípios,e)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	Há	haver	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
 3	que	que	ADP	PRP|@PRT-AUX<	_	4	nmod	_	_
@@ -91,7 +93,7 @@
 8	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
 9	diversos	diverso	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	10	amod	_	_
 10	ministérios	ministério	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	_
-11	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 12	municípios	município	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	conj	_	_
 13	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -100,6 +102,10 @@
 # source CETEMPúblico n=951 sec=nd sem=98a
 # sent_id CP951-4
 # id 4903
+# d2d: cc(têm,mas) -> cc(têm,mas)  #106
+# d2d: punct(têm,,) -> punct(têm,,)  #106
+# d2d: cc(ministérios,e) -> cc(autarquias,e)  #106
+# d2d: punct(têm,,) -> punct(têm,,)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -108,16 +114,16 @@
 6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
 7	diversos	diverso	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	8	amod	_	_
 8	ministérios	ministério	NOUN	<first-cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	29	nsubj	_	_
-9	e	e	CCONJ	<co-subj>|KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	<co-subj>|KC|@CO	_	11	cc	_	d2d:#106
 10	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
 11	autarquias	autarquia	NOUN	<cjt>|<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	8	conj	_	_
 12	têm	ter	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp	_	_
 13	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
 14	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur	15	det	_	_
 15	programas	programa	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	obj	_	_
-16	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-17	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
-18	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
+17	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	d2d:#106
+18	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 19	por	por	ADP	PRP|@ADVL>	_	20	case	_	MWE=por_vezes
 20	vezes	vezes	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	_
 21	,	,	PUNCT	PU|@PU	_	20	punct	_	_

@@ -20,6 +20,7 @@
 # source CETEMPúblico n=752 sec=clt-soc sem=95a
 # sent_id CP752-2
 # id 3861
+# d2d: cc(carregar,ou) -> cc(enviar,ou)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	FTP	FTP	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 3	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
@@ -42,7 +43,7 @@
 20	objectivo	objectivo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 21	de	de	ADP	PRP|@N<ARG	_	22	mark	_	_
 22	carregar	carregar	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	20	acl	_	_
-23	ou	ou	CCONJ	<co-inf>|KC|@CO	_	22	cc	_	_
+23	ou	ou	CCONJ	<co-inf>|KC|@CO	_	24	cc	_	d2d:#106
 24	enviar	enviar	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	22	conj	_	_
 25	ficheiros	ficheiro	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	22	obj	_	_
 26	.	.	PUNCT	PU|@PU	_	5	punct	_	_
@@ -151,6 +152,8 @@
 # source CETEMPúblico n=752 sec=clt-soc sem=95a
 # sent_id CP752-7
 # id 3866
+# d2d: punct(difundiram-,,) -> punct(suplantados,,)  #106
+# d2d: cc(difundiram-,mas) -> cc(suplantados,mas)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Gopher	Gopher	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	difundiram-	difundir	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -165,8 +168,8 @@
 12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
 13	últimos	último	ADJ	<NUM-ord>|ADJ|M|P|@>N	Gender=Masc|Number=Plur	14	amod	_	_
 14	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue137
-15	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-16	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+15	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+16	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 17	estão	estar	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
 18	a	a	ADP	PRP|@PRT-AUX<	_	20	nmod	_	_
 19	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	20	aux:pass	_	_

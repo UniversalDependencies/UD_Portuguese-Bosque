@@ -3,6 +3,7 @@
 # source CETENFolha n=613 cad=Brasil sec=pol sem=94b
 # sent_id CF613-1
 # id 2578
+# d2d: cc(impedimento,ou) -> cc(vacância,ou)  #106
 1	No	no	ADP	PRP|@ADVL>	_	2	case	_	MWE=No_caso_de
 2	caso	caso	NOUN	N|@P<	_	28	nmod	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -13,7 +14,7 @@
 8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	República	república	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
-11	ou	ou	CCONJ	<co-prparg>|<co-postnom>|KC|@CO	_	4	cc	_	_
+11	ou	ou	CCONJ	<co-prparg>|<co-postnom>|KC|@CO	_	13	cc	_	d2d:#106
 12	de	de	ADP	<cjt>|PRP|@P<	_	13	case	_	_
 13	vacância	vacância	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	conj	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
@@ -103,6 +104,8 @@
 # source CETENFolha n=613 cad=Brasil sec=pol sem=94b
 # sent_id CF613-4
 # id 2581
+# d2d: punct(Senado,,) -> punct(Supremo,,)  #106
+# d2d: cc(Senado,e) -> cc(Supremo,e)  #106
 1	Ficando	ficar	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	24	advcl	_	_
 2	novamente	novamente	ADV	ADV|@<ADVL	_	1	advmod	_	_
 3	vago	vago	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	1	xcomp	_	_
@@ -114,8 +117,8 @@
 9	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	11	case	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	Senado	senado	NOUN	<first-cjt>|<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
-12	e	e	CCONJ	<co-postnom>|<co-prparg>|KC|@CO	_	11	cc	_	_
-13	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+12	e	e	CCONJ	<co-postnom>|<co-prparg>|KC|@CO	_	18	cc	_	d2d:#106
+13	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 14	sucessivamente	sucessivamente	ADV	ADV|@<ADVL	_	11	advmod	_	_
 15	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 16	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	18	case	_	_

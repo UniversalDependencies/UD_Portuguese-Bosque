@@ -3,6 +3,10 @@
 # source CETEMPúblico n=19 sec=pol sem=98a
 # sent_id CP19-1
 # id 100
+# d2d: cc(Ciência,e) -> cc(Tecnologia,e)  #106
+# d2d: cc(ausência,e) -> cc(recrutamento,e)  #106
+# d2d: punct(ausência,,) -> punct(recrutamento,,)  #106
+# d2d: cc(recrutamento,e) -> cc(contribuição,e)  #106
 1	Durante	durante	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	análise	análise	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
@@ -29,12 +33,12 @@
 24	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
 25	quadros	quadro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
 26	técnicos	técnico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	25	amod	_	_
-27	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-28	e	e	CCONJ	<co-subj>|KC|@CO	_	17	cc	_	_
+27	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
+28	e	e	CCONJ	<co-subj>|KC|@CO	_	31	cc	_	d2d:#106
 29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 30	fraco	fraco	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	31	amod	_	_
 31	recrutamento	recrutamento	NOUN	<cjt>|<first-cjt>|<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	17	conj	_	_
-32	e	e	CCONJ	<co-cjt>|<co-subj>|KC|@CO	_	31	cc	_	_
+32	e	e	CCONJ	<co-cjt>|<co-subj>|KC|@CO	_	34	cc	_	d2d:#106
 33	pouca	pouco	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	34	det	_	_
 34	contribuição	contribuição	NOUN	<cjt>|<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	31	conj	_	_
 35	em	em	ADP	<sam->|PRP|@N<	_	37	case	_	_
@@ -43,7 +47,7 @@
 38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	40	det	_	_
 40	Ciência	ciência	NOUN	<first-cjt>|<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	37	nmod	_	_
-41	e	e	CCONJ	<co-prparg>|KC|@CO	_	40	cc	_	_
+41	e	e	CCONJ	<co-prparg>|KC|@CO	_	42	cc	_	d2d:#106
 42	Tecnologia	tecnologia	NOUN	<cjt>|<prop>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	40	conj	_	_
 43	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 

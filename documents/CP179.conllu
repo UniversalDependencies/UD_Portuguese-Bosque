@@ -3,9 +3,10 @@
 # source CETEMPúblico n=179 sec=des sem=96a
 # sent_id CP179-1
 # id 952
+# d2d: cc(atleta,e) -> cc(técnico,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	atleta	atleta	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
-3	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	6	cc	_	d2d:#106
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 5	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	6	det	_	_
 6	técnico	técnico	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
@@ -100,6 +101,7 @@
 # source CETEMPúblico n=179 sec=des sem=96a
 # sent_id CP179-4
 # id 955
+# d2d: cc(calor,e) -> cc(humidade,e)  #106
 1	Fernanda	Fernanda	PROPN	_	Gender=Fem|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Fernanda_Ribeiro|MWEPOS=PROPN
 2	Ribeiro	Ribeiro	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
@@ -119,7 +121,7 @@
 17	--	--	PUNCT	PU|@PU	_	16	punct	_	_
 18	muito	muito	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	19	det	_	_
 19	calor	calor	NOUN	<first-cjt>|<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	9	appos	_	_
-20	e	e	CCONJ	<co-app>|KC|@CO	_	19	cc	_	_
+20	e	e	CCONJ	<co-app>|KC|@CO	_	21	cc	_	d2d:#106
 21	humidade	humidade	NOUN	<cjt>|<np-idf>|N|F|S|@APP	Gender=Fem|Number=Sing	19	conj	_	_
 22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
@@ -128,6 +130,7 @@
 # source CETEMPúblico n=179 sec=des sem=96a
 # sent_id CP179-5
 # id 956
+# d2d: cc(igual,e) -> cc(preocupa,e)  #106
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	_
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	clima	clima	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -135,7 +138,7 @@
 5	igual	igual	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 6	para	para	ADP	PRP|@<ADVL	_	7	case	_	_
 7	todos	todo	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
-8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	5	cc	_	_
+8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	d2d:#106
 9	não	não	ADV	_	Polarity=Neg	11	advmod	_	_
 10	me	eu	PRON	<refl>|PERS|F|1S|ACC|@ACC>	Case=Acc|Gender=Fem|Number=Sing|Person=1|PronType=Prs	11	obj	_	_
 11	preocupa	preocupar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
@@ -160,6 +163,10 @@
 # source CETEMPúblico n=179 sec=des sem=96a
 # sent_id CP179-7
 # id 958
+# d2d: punct(Claro,,) -> punct(paciência,,)  #106
+# d2d: punct(Claro,,) -> punct(paciência,,)  #106
+# d2d: punct(Claro,,) -> punct(paciência,,)  #106
+# d2d: cc(Claro,mas) -> cc(paciência,mas)  #106
 1	Claro	claro	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	3	mark	_	_
 3	preferia	preferir	VERB	<mv>|V|IMPF|1S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	1	csubj	_	_
@@ -173,13 +180,13 @@
 11	encontramos	encontrar	VERB	<mv>|V|PR|1P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_
 12	em	em	ADP	PRP|@<ADVL	_	13	case	_	_
 13	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue137
-14	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-15	mas	mas	CCONJ	<co-acl>|KC|@CO	_	1	cc	_	_
-16	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+15	mas	mas	CCONJ	<co-acl>|KC|@CO	_	21	cc	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 17	não	não	ADV	_	Polarity=Neg	19	advmod	_	_
 18	sendo	ser	VERB	<mv>|V|GER|@ADVL>	VerbForm=Ger	19	cop	_	_
 19	possível	possível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	21	dep	_	_
-20	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	paciência	paciência	NOUN	<cjt>|<np-idf>|N|F|S|@ADVL	Gender=Fem|Number=Sing	1	conj	_	_
 22	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 23	»	»	PUNCT	PU|@PU	_	1	punct	_	_
@@ -232,6 +239,10 @@
 # source CETEMPúblico n=179 sec=des sem=96a
 # sent_id CP179-10
 # id 961
+# d2d: cc(apresentam,e) -> cc(repetiram,e)  #106
+# d2d: cc(altos,e) -> cc(baixos,e)  #106
+# d2d: cc(sei,e) -> cc(apresentam,e)  #106
+# d2d: cc(10.000m,ou) -> cc(maratona,ou)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 2	[	[	PUNCT	PU|@PU	_	3	punct	_	_
 3	sul-africana	sul-africana	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	5	amod	_	_
@@ -243,17 +254,17 @@
 9	escolherá	escolher	VERB	<mv>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	ccomp	_	_
 10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
 11	10.000m	10.000m	NUM	<first-cjt>|<card>|<np-def>|NUM|M|P|@<ACC	_	9	obj	_	_
-12	ou	ou	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	_
+12	ou	ou	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	maratona	maratona	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	conj	_	_
-15	e	e	CCONJ	<co-fcl>|<co-subj>|KC|@CO	_	7	cc	_	_
+15	e	e	CCONJ	<co-fcl>|<co-subj>|KC|@CO	_	18	cc	_	d2d:#106
 16	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
 17	chinesas	chinês	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	18	nsubj	_	_
 18	apresentam	apresentar	VERB	<first-cjt>|<mv>|<cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
 19	altos	alto	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	18	obj	_	_
-20	e	e	CCONJ	<co-acc>|KC|@CO	_	19	cc	_	_
+20	e	e	CCONJ	<co-acc>|KC|@CO	_	21	cc	_	d2d:#106
 21	baixos	baixo	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	19	conj	_	_
-22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	_
+22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 23	nunca	nunca	ADV	ADV|@ADVL>	_	24	advmod	_	_
 24	repetiram	repetir	VERB	<cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	conj	_	_
 25	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_

@@ -3,6 +3,8 @@
 # source CETEMPúblico n=519 sec=eco sem=92b
 # sent_id CP519-1
 # id 2717
+# d2d: cc(precisa,e) -> cc(argumentar,e)  #106
+# d2d: punct(precisa,,) -> punct(argumentar,,)  #106
 1	Até	até	ADP	PRP|@ADVL>	_	2	case	_	_
 2	lá	lá	ADV	ADV|@P<	_	11	advmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -20,8 +22,8 @@
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	Ocidente	Ocidente	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
-18	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	_
-19	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+18	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	42	cc	_	d2d:#106
+19	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
 20	se	se	SCONJ	KS|@>S	_	22	fixed	_	MWE=se_bem_que
 21	bem	bem	ADV	ADV|@S<	_	20	fixed	_	_
 22	que	que	SCONJ	KS|@SUB	_	24	mark	_	_
@@ -79,6 +81,8 @@
 # source CETEMPúblico n=519 sec=eco sem=92b
 # sent_id CP519-2
 # id 2718
+# d2d: punct(democracia,,) -> punct(Estado,,)  #106
+# d2d: cc(democracia,e) -> cc(respeito,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	encontro	encontro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
@@ -127,13 +131,13 @@
 46	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	48	case	_	_
 47	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
 48	democracia	democracia	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	45	nmod	_	_
-49	,	,	PUNCT	PU|@PU	_	48	punct	_	_
+49	,	,	PUNCT	PU|@PU	_	52	punct	_	d2d:#106
 50	de	de	ADP	<cjt>|PRP|@N<	_	52	case	_	_
 51	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_
 52	Estado	estado	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	48	conj	_	_
 53	de	de	ADP	PRP|@N<	_	54	case	_	MWE=de_direito
 54	direito	direito	NOUN	N|@P<	_	52	nmod	_	_
-55	e	e	CCONJ	<co-postnom>|KC|@CO	_	48	cc	_	_
+55	e	e	CCONJ	<co-postnom>|KC|@CO	_	58	cc	_	d2d:#106
 56	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	58	case	_	_
 57	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	det	_	_
 58	respeito	respeito	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	48	conj	_	_

@@ -15,6 +15,7 @@
 # source CETENFolha n=621 cad=Mundo sec=pol sem=94b
 # sent_id CF621-2
 # id 2614
+# d2d: cc(negro,e) -> cc(desempregado,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	operário	operário	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -22,7 +23,7 @@
 5	construção	construção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 6	civil	civil	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	_
 7	negro	negro	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
-8	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	d2d:#106
 9	desempregado	desempregado	ADJ	<cjt>|V|PCP|M|S|@N<	Gender=Masc|Number=Sing	7	conj	_	ChangedBy=Issue141|ChangedBy=Issue91
 10	Rodney	Rodney	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Rodney_King|MWEPOS=PROPN
 11	King	King	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
@@ -65,6 +66,8 @@
 # source CETENFolha n=621 cad=Mundo sec=pol sem=94b
 # sent_id CF621-3
 # id 2615
+# d2d: cc(mortes,e) -> cc(US$,e)  #106
+# d2d: punct(mortes,,) -> punct(feridos,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	absolvição	absolvição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
 3	em	em	ADP	PRP|@N<	_	4	case	_	_
@@ -87,10 +90,10 @@
 20	em	em	ADP	PRP|@<PIV	_	22	case	_	_
 21	58	58	NUM	<card>|NUM|F|P|@>N	_	22	nummod	_	_
 22	mortes	morte	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	19	nmod	_	_
-23	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 24	4.000	4.000	NUM	<card>|NUM|M|P|@>N	_	25	nummod	_	_
 25	feridos	ferir	VERB	<cjt>|<n>|V|PCP|M|P|@P<	Gender=Masc|Number=Plur|VerbForm=Part	22	conj	_	_
-26	e	e	CCONJ	<co-prparg>|KC|@CO	_	22	cc	_	_
+26	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	d2d:#106
 27	US$	US$	SYM	_	Gender=Masc|Number=Plur	22	conj	_	_
 28	1	1	NUM	<card>|NUM|M|S|@>N	_	29	nummod	_	_
 29	bilhão	bilhão	NOUN	<np-def>|N|M|S|@N<	Gender=Masc|Number=Sing	27	nmod:npmod	_	_

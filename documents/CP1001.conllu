@@ -41,14 +41,18 @@
 # source CETEMPúblico n=1001 sec=nd sem=91b
 # sent_id CP1001-3
 # id 5137
+# d2d: punct(Holanda,,) -> punct(Itália,,)  #106
+# d2d: punct(Holanda,,) -> punct(Bélgica,,)  #106
+# d2d: cc(Holanda,e) -> cc(Espanha,e)  #106
+# d2d: cc(mil,e) -> cc(mil,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	Holanda	Holanda	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	ChangedBy=Issue137
-4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 5	Bélgica	Bélgica	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	3	conj	_	_
-6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 7	Itália	Itália	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	3	conj	_	_
-8	e	e	CCONJ	<co-prparg>|KC|@CO	_	3	cc	_	_
+8	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	d2d:#106
 9	Espanha	Espanha	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	3	conj	_	_
 10	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
@@ -57,7 +61,7 @@
 14	entre	entre	ADP	PRP|@<ADVL	_	20	case	_	_
 15	250	250	NUM	<card>|NUM|M|P|@>A	_	16	dep	_	_
 16	mil	mil	NUM	<first-cjt>|<card>|NUM|M|P|@>N	_	20	nummod	_	_
-17	e	e	CCONJ	<co-n>|<co-prenom>|KC|@CO	_	16	cc	_	_
+17	e	e	CCONJ	<co-n>|<co-prenom>|KC|@CO	_	19	cc	_	d2d:#106
 18	300	300	NUM	<card>|NUM|M|P|@>A	_	19	dep	_	_
 19	mil	mil	NUM	<cjt>|<card>|NUM|M|P|@>N	_	16	conj	_	_
 20	muçulmanos	muçulmano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	13	obl	_	ChangedBy=Issue137

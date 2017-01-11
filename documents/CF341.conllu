@@ -25,6 +25,8 @@
 # source CETENFolha n=341 cad=Cotidiano sec=soc sem=94b
 # sent_id CF341-2
 # id 1410
+# d2d: punct(caminhões,,) -> punct(ônibus,,)  #106
+# d2d: cc(caminhões,e) -> cc(trator,e)  #106
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	_
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	aumento	aumento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -45,10 +47,10 @@
 18	comprar	comprar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	ccomp	_	_
 19	três	três	NUM	<card>|NUM|M|P|@>N	_	20	nummod	_	_
 20	caminhões	caminhão	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	18	obj	_	_
-21	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 22	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	ônibus	ônibus	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	conj	_	_
-24	e	e	CCONJ	<co-acc>|KC|@CO	_	20	cc	_	_
+24	e	e	CCONJ	<co-acc>|KC|@CO	_	26	cc	_	d2d:#106
 25	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	trator	trator	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	conj	_	_
 27	»	»	PUNCT	PU|@PU	_	7	punct	_	_

@@ -14,6 +14,8 @@
 # source CETEMPúblico n=977 sec=clt-soc sem=92a
 # sent_id CP977-2
 # id 5029
+# d2d: punct(Associação,,) -> punct(União,,)  #106
+# d2d: cc(Associação,e) -> cc(União,e)  #106
 1	Duas	dois	NUM	<card>|NUM|F|P|@>N	_	2	nummod	_	_
 2	organizações	organização	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	28	nsubj	_	_
 3	francesas	francês	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	2	amod	_	_
@@ -25,11 +27,11 @@
 9	Consumidores	Consumidores	PROPN	PROP|@N<	Number=Sing	6	flat:name	_	_
 10	(	(	PUNCT	PU|@PU	_	11	punct	_	_
 11	AFOC	AFOC	PROPN	<first-cjt>|PROP|F|S|@APP	Gender=Fem|Number=Sing	6	appos	_	_
-12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 13	Altos	Altos	PROPN	_	Gender=Masc|Number=Plur	11	appos	_	ChangedBy=Issue119|MWE=Altos_Alpes|MWEPOS=PROPN
 14	Alpes	Alpes	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	)	)	PUNCT	PU|@PU	_	11	punct	_	_
-16	e	e	CCONJ	<co-app>|KC|@CO	_	6	cc	_	_
+16	e	e	CCONJ	<co-app>|KC|@CO	_	18	cc	_	d2d:#106
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	União	União	PROPN	_	Gender=Fem|Number=Sing	6	conj	_	ChangedBy=Issue119|MWE=União_Departamental|MWEPOS=PROPN
 19	Departamental	Departamental	PROPN	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
@@ -110,6 +112,8 @@
 # source CETEMPúblico n=977 sec=clt-soc sem=92a
 # sent_id CP977-4
 # id 5031
+# d2d: cc(informação,e) -> cc(esclarecimento,e)  #106
+# d2d: cc(envolver-,e) -> cc(organizar,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Consumidores	Consumidores	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	MWE=Consumidores_sem_Fronteiras
 3	sem	sem	PROPN	PROP|@N<	Number=Sing	2	flat:name	_	_
@@ -129,13 +133,13 @@
 17	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
 18	litígios	litígio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	15	nmod	_	_
 19	transfronteiriços	transfronteiriço	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	18	amod	_	_
-20	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	11	cc	_	_
+20	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	21	cc	_	d2d:#106
 21	organizar	organizar	VERB	<cjt>|<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	11	conj	_	_
 22	acções	acção	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	21	obj	_	_
 23	conjuntas	conjunto	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	22	amod	_	_
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
 25	informação	informação	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	_
-26	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	_
+26	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	d2d:#106
 27	esclarecimento	esclarecimento	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	25	conj	_	_
 28	a	a	ADP	<sam->|PRP|@N<	_	30	case	_	_
 29	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_

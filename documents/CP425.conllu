@@ -3,6 +3,7 @@
 # source CETEMPúblico n=425 sec=pol sem=98a
 # sent_id CP425-1
 # id 2228
+# d2d: cc(EUA,e) -> cc(Grã-Bretanha,e)  #106
 1	Outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	2	det	_	_
 2	declaração	declaração	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	7	punct	_	_
@@ -31,7 +32,7 @@
 26	Rússia	Rússia	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	22	conj	_	ChangedBy=Issue149
 27	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 28	China	China	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	22	conj	_	ChangedBy=Issue149
-29	e	e	CCONJ	<co-app>|KC|@CO	_	22	cc	_	_
+29	e	e	CCONJ	<co-app>|KC|@CO	_	30	cc	_	d2d:#106
 30	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	22	conj	_	ChangedBy=Issue149
 31	)	)	PUNCT	PU|@PU	_	22	punct	_	_
 32	.	.	PUNCT	PU|@PU	_	15	punct	_	_
@@ -110,6 +111,8 @@
 # source CETEMPúblico n=425 sec=pol sem=98a
 # sent_id CP425-4
 # id 2231
+# d2d: punct(alcance,,) -> punct(estado,,)  #106
+# d2d: cc(alcance,e) -> cc(recebeu,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	assessor	assessor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	ChangedBy=Issue137
@@ -136,7 +139,7 @@
 24	de	de	ADP	PRP|@N<	_	26	case	_	_
 25	2500	2500	NUM	<card>|<year>|<date>|NUM|M|S|<card>|P|@>	_	26	dep	_	_
 26	metros	metro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	_
-27	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+27	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 28	em	em	ADP	<cjt>|<sam->|PRP|@N<PRED	_	31	case	_	_
 29	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 30	«	«	PUNCT	PU|@PU	_	31	punct	_	_
@@ -145,7 +148,7 @@
 33	de	de	ADP	PRP|@N<	_	34	case	_	_
 34	desenvolvimento	desenvolvimento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
 35	»	»	PUNCT	PU|@PU	_	31	punct	_	_
-36	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	23	cc	_	_
+36	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	40	cc	_	d2d:#106
 37	cuja	cujo	DET	<rel>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Rel	38	det	_	_
 38	produção	produção	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	40	nsubj	_	_
 39	já	já	ADV	ADV|@ADVL>	_	40	advmod	_	_
@@ -162,6 +165,8 @@
 # source CETEMPúblico n=425 sec=pol sem=98a
 # sent_id CP425-5
 # id 2232
+# d2d: cc(EUA,e) -> cc(Canadá,e)  #106
+# d2d: punct(EUA,,) -> punct(Japão,,)  #106
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	_
 2	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	sanções	sanção	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	6	nsubj	_	_
@@ -190,9 +195,9 @@
 26	por	por	ADP	<sam->|PRP|@PASS	_	28	case	_	_
 27	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_
 28	EUA	EUA	PROPN	<first-cjt>|PROP|M|P|@P<	Gender=Masc|Number=Plur	22	obl:agent	_	_
-29	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+29	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
 30	Japão	Japão	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	28	conj	_	_
-31	e	e	CCONJ	<co-prparg>|KC|@CO	_	28	cc	_	_
+31	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	d2d:#106
 32	Canadá	Canadá	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	28	conj	_	_
 33	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 

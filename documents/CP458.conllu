@@ -11,10 +11,11 @@
 # source CETEMPúblico n=458 sec=clt sem=95b
 # sent_id CP458-2
 # id 2417
+# d2d: cc(identidade,e) -> cc(fisionomia,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
 2	Confundir	confundir	VERB	<mv>|V|INF|@ICL-UTT	VerbForm=Inf	0	root	_	_
 3	identidade	identidade	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
-4	e	e	CCONJ	<co-acc>|KC|@CO	_	3	cc	_	_
+4	e	e	CCONJ	<co-acc>|KC|@CO	_	5	cc	_	d2d:#106
 5	fisionomia	fisionomia	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	conj	_	_
 6	:	:	PUNCT	PU|@PU	_	2	punct	_	_
 7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
@@ -28,6 +29,7 @@
 # source CETEMPúblico n=458 sec=clt sem=95b
 # sent_id CP458-3
 # id 2418
+# d2d: cc(domínio,e) -> cc(controle,e)  #106
 1	Uma	uma	ADP	PRP|@ADVL>	_	2	case	_	MWE=Uma_vez
 2	vez	vez	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
 3	em	em	ADP	PRP|@ADVL>	_	4	case	_	_
@@ -51,7 +53,7 @@
 21	implica	implicar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_
 22	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	domínio	domínio	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	21	obj	_	_
-24	e	e	CCONJ	<co-acc>|KC|@CO	_	23	cc	_	_
+24	e	e	CCONJ	<co-acc>|KC|@CO	_	26	cc	_	d2d:#106
 25	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	controle	controle	NOUN	<cjt>|<np-idf>|N|M|S|@ACC>	Gender=Masc|Number=Sing	23	conj	_	_
 27	socialmente	socialmente	ADV	ADV|@>A	_	28	advmod	_	_
@@ -63,6 +65,12 @@
 # source CETEMPúblico n=458 sec=clt sem=95b
 # sent_id CP458-4
 # id 2419
+# d2d: punct(o,,) -> punct(o,,)  #106
+# d2d: cc(orgânico,e) -> cc(objecto,e)  #106
+# d2d: cc(coordenadas,e) -> cc(parâmetros,e)  #106
+# d2d: cc(metodológicos,e) -> cc(cronológicos,e)  #106
+# d2d: cc(o,e) -> cc(o,e)  #106
+# d2d: punct(orgânico,,) -> punct(objecto,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	presentes	presente	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	3	amod	_	_
 3	autores	autor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	20	nsubj	_	_
@@ -73,11 +81,11 @@
 8	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
 9	coordenadas	coordenada	NOUN	<first-cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	_
 10	teóricas	teórico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	9	amod	_	_
-11	e	e	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	_
+11	e	e	CCONJ	<co-acc>|KC|@CO	_	13	cc	_	d2d:#106
 12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	parâmetros	parâmetro	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	9	conj	_	_
 14	metodológicos	metodológico	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	_
-15	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	_
+15	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	d2d:#106
 16	cronológicos	cronológico	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	14	conj	_	_
 17	de	de	ADP	PRP|@N<	_	18	case	_	_
 18	Foucault	Foucault	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
@@ -105,8 +113,8 @@
 40	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	42	nsubj	_	_
 41	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	42	cop	_	_
 42	orgânico	orgânico	ADJ	<first-cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	39	acl:relcl	_	_
-43	,	,	PUNCT	PU|@PU	_	42	punct	_	_
-44	e	e	CCONJ	<co-sc>|KC|@CO	_	42	cc	_	_
+43	,	,	PUNCT	PU|@PU	_	47	punct	_	d2d:#106
+44	e	e	CCONJ	<co-sc>|KC|@CO	_	47	cc	_	d2d:#106
 45	como	como	ADP	<prd>|PRP|@COM	_	46	case	_	_
 46	tal	tal	PRON	<KOMP>|<diff>|DET|M|S|@P<	Gender=Masc|Number=Sing	47	nmod	_	_
 47	objecto	objecto	NOUN	<cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	42	conj	_	_
@@ -114,8 +122,8 @@
 49	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_
 50	saber	saber	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	47	nmod	_	_
 51	exacto	exacto	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	50	amod	_	_
-52	,	,	PUNCT	PU|@PU	_	39	punct	_	_
-53	e	e	CCONJ	<co-prparg>|KC|@CO	_	39	cc	_	_
+52	,	,	PUNCT	PU|@PU	_	54	punct	_	d2d:#106
+53	e	e	CCONJ	<co-prparg>|KC|@CO	_	54	cc	_	d2d:#106
 54	o	o	PRON	<cjt>|<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	39	conj	_	_
 55	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	57	nsubj	_	_
 56	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	57	cop	_	_
@@ -140,6 +148,10 @@
 # source CETEMPúblico n=458 sec=clt sem=95b
 # sent_id CP458-5
 # id 2420
+# d2d: cc(rosto,e) -> cc(poder,e)  #106
+# d2d: cc(singular,e) -> cc(autêntico,e)  #106
+# d2d: cc(maior,ou) -> cc(menor,ou)  #106
+# d2d: punct(rosto,,) -> punct(preceitos,,)  #106
 1	Trata-	tratar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	expl	_	ChangedBy=Issue135
 3	de	de	ADP	PRP|@<PIV	_	5	case	_	_
@@ -171,15 +183,15 @@
 29	vigiar	vigiar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	27	acl	_	_
 30	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 31	maior	grande	ADJ	<KOMP>|<first-cjt>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	34	amod	_	_
-32	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	31	cc	_	_
+32	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	33	cc	_	d2d:#106
 33	menor	pequeno	ADJ	<cjt>|<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	31	conj	_	_
 34	conformidade	conformidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	29	obj	_	_
 35	entre	entre	ADP	PRP|@N<	_	36	case	_	_
 36	rosto	rosto	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	nmod	_	_
-37	,	,	PUNCT	PU|@PU	_	36	punct	_	_
+37	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
 38	preceitos	preceito	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	36	conj	_	_
 39	éticos	ético	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	38	amod	_	_
-40	e	e	CCONJ	<co-prparg>|KC|@CO	_	36	cc	_	_
+40	e	e	CCONJ	<co-prparg>|KC|@CO	_	41	cc	_	d2d:#106
 41	poder	poder	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	36	conj	_	_
 42	social	social	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	41	amod	_	_
 43	,	,	PUNCT	PU|@PU	_	36	punct	_	_
@@ -193,7 +205,7 @@
 51	que	que	SCONJ	KS|@SUB	_	53	mark	_	_
 52	seja	ser	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	53	cop	_	_
 53	singular	singular	ADJ	<first-cjt>|<n>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	50	ccomp	_	_
-54	e	e	CCONJ	<co-sc>|KC|@CO	_	53	cc	_	_
+54	e	e	CCONJ	<co-sc>|KC|@CO	_	55	cc	_	d2d:#106
 55	autêntico	autêntico	ADJ	<cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	53	conj	_	_
 56	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -202,6 +214,9 @@
 # source CETEMPúblico n=458 sec=clt sem=95b &E
 # sent_id CP458-6
 # id 2421
+# d2d: cc(normas,e) -> cc(práticas,e)  #106
+# d2d: punct(normas,,) -> punct(práticas,,)  #106
+# d2d: cc(inversa,e) -> cc(complementarmente,e)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	verdade	verdade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 3	subjectiva	subjectivo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -210,12 +225,12 @@
 6	de	de	ADP	PRP|@A<	_	7	case	_	_
 7	normas	norma	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
 8	sociais	social	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
-9	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	_
+9	e	e	CCONJ	<co-prparg>|KC|@CO	_	15	cc	_	d2d:#106
 10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 11	inversa	inverso	ADJ	<first-cjt>|<Em>|<mente>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	15	amod	_	_
-12	e	e	CCONJ	<co-prenom>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-prenom>|KC|@CO	_	13	cc	_	d2d:#106
 13	complementarmente	complementarmente	ADV	<cjt>|ADV|@>N	_	11	conj	_	_
-14	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	práticas	prática	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	7	conj	_	_
 16	sociais	social	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	15	amod	_	_
 17	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	18	nsubj	_	_

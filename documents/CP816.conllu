@@ -26,6 +26,7 @@
 # source CETEMPúblico n=816 sec=clt sem=96a
 # sent_id CP816-2
 # id 4206
+# d2d: cc(primeiro,e) -> cc(sucedido,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Ilhéu	Ilhéu	PROPN	_	Gender=Fem|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=Ilhéu_Editora|MWEPOS=PROPN
 3	Editora	Editora	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -67,7 +68,7 @@
 39	de	de	ADP	<sam->|PRP|@N<	_	45	case	_	_
 40	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	45	det	_	_
 41	primeiro	primeiro	ADJ	<NUM-ord>|<first-cjt>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	45	amod	_	_
-42	e	e	CCONJ	<co-prenom>|KC|@CO	_	41	cc	_	_
+42	e	e	CCONJ	<co-prenom>|KC|@CO	_	44	cc	_	d2d:#106
 43	bem	bem	ADV	<quant>|ADV|@>A	_	44	advmod	_	_
 44	sucedido	sucedido	ADJ	<cjt>|V|PCP|M|S|@>N	Gender=Masc|Number=Sing	41	conj	_	ChangedBy=Issue141|ChangedBy=Issue91
 45	livro	livro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	38	nmod	_	_
@@ -125,6 +126,7 @@
 # source CETEMPúblico n=816 sec=clt sem=96a
 # sent_id CP816-3
 # id 4207
+# d2d: cc(mil,e) -> cc(mil,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Francisco	Francisco	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=Francisco_Manso|MWEPOS=PROPN
 3	Manso	Manso	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -142,7 +144,7 @@
 15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
 16	250	250	NUM	<card>|<np-def>|NUM|M|P|@>A	_	17	dep	_	_
 17	mil	mil	NUM	<first-cjt>|<card>|NUM|M|P|@>N	_	21	nummod	_	_
-18	e	e	CCONJ	<co-n>|<co-prenom>|KC|@CO	_	17	cc	_	_
+18	e	e	CCONJ	<co-n>|<co-prenom>|KC|@CO	_	20	cc	_	d2d:#106
 19	300	300	NUM	<card>|NUM|M|P|@>A	_	20	dep	_	_
 20	mil	mil	NUM	<cjt>|<card>|NUM|M|P|@>N	_	17	conj	_	_
 21	contos	conto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
@@ -165,20 +167,25 @@
 # source CETEMPúblico n=816 sec=clt sem=96a
 # sent_id CP816-4
 # id 4208
+# d2d: cc(Brasil,e) -> cc(Cabo,e)  #106
+# d2d: cc(IPACA,e) -> cc(organismos,e)  #106
+# d2d: cc(públicos,e) -> cc(privados,e)  #106
+# d2d: cc(Brasil,e) -> cc(entidades,e)  #106
+# d2d: punct(IPACA,,) -> punct(RTP,,)  #106
 1	Portugal	Portugal	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
 2	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 3	através	através	ADV	ADV|@ADVL>	_	17	advmod	_	_
 4	de	de	ADP	<sam->|PRP|@A<	_	6	case	_	_
 5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	IPACA	IPACA	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
-7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 8	RTP	RTP	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	_
-9	e	e	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	_
+9	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 10	vários	vários	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	12	det	_	_
 11	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	12	det	_	_
 12	organismos	organismo	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	conj	_	_
 13	públicos	público	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	12	amod	_	_
-14	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	_
+14	e	e	CCONJ	<co-postnom>|KC|@CO	_	15	cc	_	d2d:#106
 15	privados	privado	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	conj	_	_
 16	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 17	assegura	assegurar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -195,11 +202,11 @@
 28	a	a	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	30	case	_	_
 29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	Brasil	Brasil	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
-31	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	_
+31	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	d2d:#106
 32	Cabo	Cabo	PROPN	_	Gender=Masc|Number=Sing	30	conj	_	ChangedBy=Issue119|MWE=Cabo_Verde|MWEPOS=PROPN
 33	Verde	Verde	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
 34	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-35	e	e	CCONJ	<co-piv>|KC|@CO	_	30	cc	_	_
+35	e	e	CCONJ	<co-piv>|KC|@CO	_	38	cc	_	d2d:#106
 36	ainda	ainda	ADV	ADV|@>P	_	38	advmod	_	_
 37	a	a	ADP	<cjt>|PRP|@<PIV	_	38	case	_	_
 38	entidades	entidade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	30	conj	_	_

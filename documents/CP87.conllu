@@ -14,6 +14,7 @@
 # source CETEMPúblico n=87 sec=nd sem=91b
 # sent_id CP87-2
 # id 469
+# d2d: cc(diplomáticas,e) -> cc(industriais,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	pediu	pedir	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	ccomp	_	_
@@ -41,7 +42,7 @@
 25	fontes	fonte	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	24	nsubj	_	_
 26	diplomáticas	diplomático	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	25	amod	_	_
 27	comunitárias	comunitário	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	26	conj	_	_
-28	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	_
+28	e	e	CCONJ	<co-postnom>|KC|@CO	_	29	cc	_	d2d:#106
 29	industriais	industrial	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	26	conj	_	_
 30	citadas	citar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	25	acl	_	_
 31	por	por	ADP	PRP|@PASS	_	33	case	_	_
@@ -54,6 +55,8 @@
 # source CETEMPúblico n=87 sec=nd sem=91b &W
 # sent_id CP87-3
 # id 470
+# d2d: punct(advogam,,) -> punct(ameaçam,,)  #106
+# d2d: cc(advogam,e) -> cc(ameaçam,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	britânicos	britânico	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	advogam	advogar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -62,7 +65,7 @@
 6	substânca	substânca	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	25	nsubj	_	_
 7	em	em	ADP	PRP|@N<	_	8	case	_	MWE=em_questão
 8	questão	questão	NOUN	N|@P<	_	6	nmod	_	_
-9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	ciclamato	ciclamato	NOUN	<np-def>|N|M|S|@APP	Gender=Masc|Number=Sing	6	appos	_	_
 12	--	--	PUNCT	PU|@PU	_	16	punct	_	_
@@ -83,7 +86,7 @@
 27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	ser	ser	NOUN	_	Gender=Masc|Number=Sing	25	nmod	_	MWE=ser_humano|MWEPOS=NOUN
 29	humano	humano	ADJ	_	Gender=Masc|Number=Sing	28	compound	_	_
-30	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+30	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	31	cc	_	d2d:#106
 31	ameaçam	ameaçar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 32	vetar	vetar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	31	xcomp	_	_
 33	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
@@ -119,9 +122,10 @@
 # source CETEMPúblico n=87 sec=nd sem=91b
 # sent_id CP87-4
 # id 471
+# d2d: cc(França,e) -> cc(Grécia,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	França	França	PROPN	<first-cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
-3	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	d2d:#106
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	Grécia	Grécia	PROPN	<cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
 6	apoiam	apoiar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -134,6 +138,7 @@
 # source CETEMPúblico n=87 sec=nd sem=91b
 # sent_id CP87-5
 # id 472
+# d2d: cc(Estados,e) -> cc(Grã-Bretanha,e)  #106
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	tipo	tipo	NOUN	<meta>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj:pass	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -144,7 +149,7 @@
 8	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	Estados	Estados	PROPN	<first-cjt>|PROP|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	MWE=Estados_Unidos
 10	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	_
-11	e	e	CCONJ	<co-advl>|KC|@CO	_	9	cc	_	_
+11	e	e	CCONJ	<co-advl>|KC|@CO	_	14	cc	_	d2d:#106
 12	em	em	ADP	<sam->|<cjt>|PRP|@<ADVL	_	14	case	_	_
 13	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	14	det	_	_
 14	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
@@ -171,6 +176,7 @@
 # source CETEMPúblico n=87 sec=nd sem=91b
 # sent_id CP87-6
 # id 473
+# d2d: cc(atrofia,e) -> cc(degeneração,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
 3	--	--	PUNCT	PU|@PU	_	6	punct	_	_
@@ -210,7 +216,7 @@
 37	a	a	ADP	<sam->|PRP|@<PIV	_	39	case	_	_
 38	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	39	det	_	_
 39	atrofia	atrofia	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	31	nmod	_	_
-40	e	e	CCONJ	<co-prparg>|KC|@CO	_	39	cc	_	_
+40	e	e	CCONJ	<co-prparg>|KC|@CO	_	41	cc	_	d2d:#106
 41	degeneração	degeneração	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	39	conj	_	_
 42	testicular	testicular	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	41	amod	_	_
 43	.	.	PUNCT	PU|@PU	_	15	punct	_	_

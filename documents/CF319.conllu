@@ -30,14 +30,16 @@
 # source CETENFolha n=319 cad=Esporte sec=des sem=94a
 # sent_id CF319-15
 # id 1323
+# d2d: cc(dominou,mas) -> cc(perdeu,mas)  #106
+# d2d: punct(dominou,,) -> punct(perdeu,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Brasil	Brasil	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	dominou	dominar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	jogo	jogo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 6	inteiro	inteiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	_
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+7	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 9	perdeu	perder	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
 10	diversas	diversos	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	11	det	_	_
 11	chances	chance	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	9	obj	_	_
@@ -58,16 +60,19 @@
 # source CETENFolha n=319 cad=Esporte sec=des sem=94a
 # sent_id CF319-17
 # id 1325
+# d2d: cc(avançaram,e) -> cc(neutralizaram,e)  #106
+# d2d: cc(Dahlin,e) -> cc(Kennet,e)  #106
+# d2d: cc(Aldair,e) -> cc(Márcio,e)  #106
 1	Aldair	Aldair	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	Márcio	Márcio	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Márcio_Santos|MWEPOS=PROPN
 4	Santos	Santos	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 5	avançaram	avançar	VERB	<first-cjt>|<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 6	pouco	pouco	ADV	<quant>|ADV|@<ADVL	_	5	advmod	_	_
-7	e	e	CCONJ	<co-sta>|KC|@CO	_	5	cc	_	_
+7	e	e	CCONJ	<co-sta>|KC|@CO	_	8	cc	_	d2d:#106
 8	neutralizaram	neutralizar	VERB	<cjt>|<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	5	conj	_	_
 9	Dahlin	Dahlin	PROPN	<first-cjt>|PROP|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
-10	e	e	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	_
+10	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	d2d:#106
 11	Kennet	Kennet	PROPN	_	Gender=Masc|Number=Sing	9	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Kennet_Andersson|MWEPOS=PROPN
 12	Andersson	Andersson	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 

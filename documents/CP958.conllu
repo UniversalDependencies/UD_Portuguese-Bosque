@@ -3,6 +3,11 @@
 # source CETEMPúblico n=958 sec=nd sem=92a
 # sent_id CP958-1
 # id 4933
+# d2d: cc(pai,e) -> cc(filho,e)  #106
+# d2d: punct(Charlton,,) -> punct(Fraser,,)  #106
+# d2d: cc(Charlton,e) -> cc(Fraser,e)  #106
+# d2d: cc(cobiça,e) -> cc(vingança,e)  #106
+# d2d: cc(revelou-,e) -> cc(justifica,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	trabalho	trabalho	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj	_	_
 3	em	em	ADP	PRP|@N<	_	4	case	_	_
@@ -11,15 +16,15 @@
 6	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
 7	Hestons	Hestons	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
 8	pai	pai	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	7	nmod:npmod	_	_
-9	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	<co-postnom>|KC|@CO	_	10	cc	_	d2d:#106
 10	filho	filho	NOUN	<cjt>|<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	8	conj	_	_
 11	(	(	PUNCT	PU|@PU	_	12	punct	_	_
 12	Charlton	Charlton	PROPN	<first-cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	7	appos	_	_
 13	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	intérprete	intérprete	NOUN	<first-cjt>|<np-def>|N|M|S|@APP	Gender=Masc|Number=Sing	12	appos	_	_
-16	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-17	e	e	CCONJ	<co-app>|KC|@CO	_	12	cc	_	_
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+17	e	e	CCONJ	<co-app>|KC|@CO	_	18	cc	_	d2d:#106
 18	Fraser	Fraser	PROPN	<cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	12	conj	_	_
 19	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
@@ -41,7 +46,7 @@
 36	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	advcl	_	_
 37	pouco	pouco	PRON	<quant>|DET|M|S|@<ACC	Gender=Masc|Number=Sing	36	obj	_	_
 38	vimos	ver	VERB	<mv>|V|PS|1P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	30	acl:relcl	_	_
-39	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	_
+39	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	40	cc	_	d2d:#106
 40	justifica	justificar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_
 41	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
 42	interesse	interesse	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	40	obj	_	_
@@ -78,7 +83,7 @@
 73	intriga	intriga	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	70	nmod	_	_
 74	de	de	ADP	PRP|@N<	_	75	case	_	_
 75	cobiça	cobiça	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	73	nmod	_	_
-76	e	e	CCONJ	<co-prparg>|KC|@CO	_	75	cc	_	_
+76	e	e	CCONJ	<co-prparg>|KC|@CO	_	77	cc	_	d2d:#106
 77	vingança	vingança	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	75	conj	_	_
 78	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 

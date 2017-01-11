@@ -3,6 +3,14 @@
 # source CETEMPúblico n=407 sec=clt sem=98a &W
 # sent_id CP407-1
 # id 2122
+# d2d: punct(Vitorino,.) -> punct(Temas,.)  #106
+# d2d: punct(Vitorino,,) -> punct(Temas,,)  #106
+# d2d: punct(Vitorino,,) -> punct(Vitorino,,)  #106
+# d2d: punct(Vitorino,,) -> punct(Vitorino,,)  #106
+# d2d: punct(Vitorino,») -> punct(Temas,»)  #106
+# d2d: cc(Vitorino,e) -> cc(Vitorino,e)  #106
+# d2d: punct(Vitorino,,) -> punct(Vitorino,,)  #106
+# d2d: punct(Vitorino,,) -> punct(Temas,,)  #106
 1	Com	com	ADP	<first-cjt>|PRP|@PRED>	_	3	case	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	carteira	carteira	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	84	nmod	_	_
@@ -20,30 +28,30 @@
 15	«	«	PUNCT	PU|@PU	_	16	punct	_	_
 16	Vitorino	Vitorino	PROPN	_	Gender=Masc|Number=Sing	3	appos	_	ChangedBy=Issue119|MWE=Vitorino_Nemésio|MWEPOS=PROPN
 17	Nemésio	Nemésio	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
-18	.	.	PUNCT	PU|@PU	_	16	punct	_	_
+18	.	.	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 19	A	A	PROPN	PROP|@N<	Number=Sing	16	parataxis	_	MWE=A_Obra_e_o_Homem
 20	Obra	Obra	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
 21	e	e	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
 22	o	o	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
 23	Homem	Homem	PROPN	PROP	Number=Sing	19	flat:name	_	_
-24	»	»	PUNCT	PU|@PU	_	16	punct	_	_
+24	»	»	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 25	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 26	ed.	ed.	NOUN	<first-cjt>|<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	16	appos	_	_
 27	Arcádia	Arcádia	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	26	appos	_	_
-28	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+28	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 29	1978	1978	NUM	<year>|<card>|<date>|NUM|M|S|@N<PRED	_	16	appos	_	_
-30	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+30	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 31	«	«	PUNCT	PU|@PU	_	32	punct	_	_
 32	Temas	Temas	PROPN	_	Gender=Masc|Number=Sing	16	conj	_	ChangedBy=Issue119|MWE=Temas_Nemesianos|MWEPOS=PROPN
 33	Nemesianos	Nemesianos	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
 34	»	»	PUNCT	PU|@PU	_	32	punct	_	_
-35	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 36	ed.	ed.	NOUN	<cjt>|<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	32	appos	_	_
 37	Angra	Angra	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	36	appos	_	_
-38	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+38	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 39	1981	1981	NUM	<year>|<card>|<date>|NUM|M|S|@N<PRED	_	32	appos	_	_
-40	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-41	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	16	cc	_	_
+40	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
+41	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	43	cc	_	d2d:#106
 42	«	«	PUNCT	PU|@PU	_	43	punct	_	_
 43	Vitorino	Vitorino	PROPN	_	Gender=Masc|Number=Sing	16	conj	_	ChangedBy=Issue119|MWE=Vitorino_Nemésio_--|MWEPOS=PROPN
 44	Nemésio	Nemésio	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
@@ -123,6 +131,8 @@
 # source CETEMPúblico n=407 sec=clt sem=98a
 # sent_id CP407-3
 # id 2124
+# d2d: cc(David,e) -> cc(Maria,e)  #106
+# d2d: cc(Teoria,e) -> cc(Literatura,e)  #106
 1	Actualmente	actualmente	ADV	ADV|@>A	_	3	advmod	_	_
 2	a	a	ADP	PRP|@PRED>	_	3	mark	_	_
 3	leccionar	leccionar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	57	dep	_	_
@@ -130,7 +140,7 @@
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	Literatura	Literatura	PROPN	PROP|@P<	Number=Sing	4	nmod	_	_
-8	e	e	CCONJ	<co-acc>|KC|@CO	_	4	cc	_	_
+8	e	e	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	d2d:#106
 9	Literatura	Literatura	PROPN	_	Gender=Fem|Number=Sing	4	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Literatura_Portuguesa|MWEPOS=PROPN
 10	Portuguesa	Portuguesa	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 11	em	em	ADP	<sam->|PRP|@<ADVL	_	13	case	_	_
@@ -173,7 +183,7 @@
 48	,	,	PUNCT	PU|@PU	_	57	punct	_	_
 49	Fátima	Fátima	PROPN	_	Gender=Fem|Number=Sing	41	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Fátima_Morna|MWEPOS=PROPN
 50	Morna	Morna	PROPN	_	Number=Sing	49	flat:name	_	ChangedBy=Issue119
-51	e	e	CCONJ	<co-prparg>|KC|@CO	_	41	cc	_	_
+51	e	e	CCONJ	<co-prparg>|KC|@CO	_	52	cc	_	d2d:#106
 52	Maria	Maria	PROPN	_	Gender=Fem|Number=Sing	41	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Maria_Margarida_Maia_Gouveia|MWEPOS=PROPN
 53	Margarida	Margarida	PROPN	_	Number=Sing	52	flat:name	_	ChangedBy=Issue119
 54	Maia	Maia	PROPN	_	Number=Sing	52	flat:name	_	ChangedBy=Issue119

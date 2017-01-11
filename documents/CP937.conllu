@@ -93,6 +93,11 @@
 # source CETEMPúblico n=937 sec=soc sem=97a
 # sent_id CP937-5
 # id 4824
+# d2d: punct(reformada,,) -> punct(estudante,,)  #106
+# d2d: punct(estucador,,) -> punct(padeiro,,)  #106
+# d2d: cc(estucador,e) -> cc(empregado,e)  #106
+# d2d: cc(reformada,e) -> cc(tecedeira,e)  #106
+# d2d: cc(homens,e) -> cc(mulheres,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	2	case	_	_
 2	um	um	NUM	<-sam>|<card>|NUM|M|S|@P<	_	9	nmod	_	_
 3	de	de	ADP	<sam->|PRP|@A<	_	5	case	_	_
@@ -110,12 +115,12 @@
 15	de	de	ADP	PRP|@N<	_	17	case	_	_
 16	56	56	NUM	<card>|NUM|M|P|@>N	_	17	nummod	_	_
 17	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	padeiro	padeiro	NOUN	<cjt>|<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	14	conj	_	_
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
 22	19	19	NUM	<card>|NUM|M|P|@P<	_	20	nmod	_	_
-23	e	e	CCONJ	<co-app>|KC|@CO	_	14	cc	_	_
+23	e	e	CCONJ	<co-app>|KC|@CO	_	25	cc	_	d2d:#106
 24	um	um	NUM	<card>|NUM|M|S|@>N	_	25	nummod	_	_
 25	empregado	empregado	NOUN	<cjt>|<np-def>|N|M|S|@APP	Gender=Masc|Number=Sing	14	conj	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
@@ -123,7 +128,7 @@
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	24	24	NUM	<card>|NUM|M|P|@P<	_	25	nmod	_	_
 30	)	)	PUNCT	PU|@PU	_	14	punct	_	_
-31	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	_
+31	e	e	CCONJ	<co-acc>|KC|@CO	_	33	cc	_	d2d:#106
 32	três	três	NUM	<card>|NUM|F|P|@>N	_	33	nummod	_	_
 33	mulheres	mulher	NOUN	<cjt>|<np-def>|N|F|P|@ACC>	Gender=Fem|Number=Plur	11	conj	_	_
 34	(	(	PUNCT	PU|@PU	_	36	punct	_	_
@@ -132,12 +137,12 @@
 37	de	de	ADP	PRP|@N<	_	39	case	_	_
 38	50	50	NUM	<card>|NUM|M|P|@>N	_	39	nummod	_	_
 39	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	36	nmod	_	_
-40	,	,	PUNCT	PU|@PU	_	36	punct	_	_
+40	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
 41	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
 42	estudante	estudante	NOUN	<cjt>|<np-idf>|N|F|S|@ICL-APP	Gender=Fem|Number=Sing	36	conj	_	_
 43	de	de	ADP	PRP|@N<	_	44	case	_	_
 44	16	16	NUM	<card>|NUM|F|P|@P<	_	42	nmod	_	_
-45	e	e	CCONJ	<co-app>|KC|@CO	_	36	cc	_	_
+45	e	e	CCONJ	<co-app>|KC|@CO	_	47	cc	_	d2d:#106
 46	uma	um	NUM	<card>|NUM|F|S|@>N	_	47	nummod	_	_
 47	tecedeira	tecedeira	NOUN	<cjt>|<np-def>|N|F|S|@ICL-APP	Gender=Fem|Number=Sing	36	conj	_	_
 48	de	de	ADP	PRP|@N<	_	49	case	_	_

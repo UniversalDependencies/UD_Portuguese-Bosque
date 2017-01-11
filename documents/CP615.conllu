@@ -77,6 +77,8 @@
 # source CETEMPúblico n=615 sec=eco sem=96a
 # sent_id CP615-3
 # id 3209
+# d2d: punct(diminuem,,) -> punct(eliminam,,)  #106
+# d2d: cc(diminuem,mas) -> cc(eliminam,mas)  #106
 1	Isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	6	conj	_	MWE=isto_é|MWEPOS=CCONJ
 2	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -90,8 +92,8 @@
 11	a	a	ADP	PRP|@N<	_	12	mark	_	_
 12	cobrar	cobrar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	10	acl	_	_
 13	diminuem	diminuir	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_
-14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-15	mas	mas	CCONJ	<co-vfin>|KC|@CO	_	13	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+15	mas	mas	CCONJ	<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 16	não	não	ADV	_	Polarity=Neg	17	advmod	_	_
 17	eliminam	eliminar	VERB	<mv>|<cjt>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
 18	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
@@ -178,6 +180,8 @@
 # source CETEMPúblico n=615 sec=eco sem=96a
 # sent_id CP615-7
 # id 3213
+# d2d: cc(valor,e) -> cc(percentagem,e)  #106
+# d2d: punct(valor,,) -> punct(percentagem,,)  #106
 1	Pais	Pais	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Pais_Antunes|MWEPOS=PROPN
 2	Antunes	Antunes	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	entende	entender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -225,8 +229,8 @@
 45	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_
 46	valor	valor	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	43	nmod	_	_
 47	fixo	fixo	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	46	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
-48	,	,	PUNCT	PU|@PU	_	46	punct	_	_
-49	e	e	CCONJ	<co-piv>|KC|@CO	_	46	cc	_	_
+48	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
+49	e	e	CCONJ	<co-piv>|KC|@CO	_	53	cc	_	d2d:#106
 50	não	não	ADV	ADV|@>A	_	53	neg	_	_
 51	a	a	ADP	<cjt>|PRP|@<PIV	_	53	case	_	_
 52	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	53	det	_	_

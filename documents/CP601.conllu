@@ -3,6 +3,13 @@
 # source CETEMPúblico n=601 sec=soc sem=93b
 # sent_id CP601-1
 # id 3115
+# d2d: cc(conclusão,e) -> cc(trajecto,e)  #106
+# d2d: cc(conclusão,e) -> cc(conclusão,e)  #106
+# d2d: cc(conclusão,e) -> cc(conclusão,e)  #106
+# d2d: cc(variante,e) -> cc(ponte,e)  #106
+# d2d: punct(conclusão,,) -> punct(conclusão,,)  #106
+# d2d: cc(Chaves,e) -> cc(Verin,e)  #106
+# d2d: cc(ponte,e) -> cc(ponte,e)  #106
 1	Quanto	quanto	ADV	ADV|@ADVL>	_	9	advmod	_	MWE=Quanto_a
 2	a	a	ADP	PRP|@A<	_	3	case	_	_
 3	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
@@ -32,7 +39,7 @@
 27	-	-	PUNCT	PU|@PU	_	28	punct	_	_
 28	Valença	Valença	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	26	nmod:npmod	_	_
 29	--	--	PUNCT	PU|@PU	_	30	punct	_	_
-30	e	e	CCONJ	<co-sc>|KC|@CO	_	22	cc	_	_
+30	e	e	CCONJ	<co-sc>|KC|@CO	_	34	cc	_	d2d:#106
 31	bem	bem	ADV	<quant>|ADV|@>A	_	32	advmod	_	_
 32	assim	assim	ADV	<kc>|ADV|@>N	_	34	advmod	_	_
 33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
@@ -50,7 +57,7 @@
 45	com	com	ADP	PRP|@<ADVL	_	46	case	_	_
 46	José	José	PROPN	_	Gender=Masc|Number=Sing	44	nmod	_	ChangedBy=Issue119|MWE=José_Borrell|MWEPOS=PROPN
 47	Borrell	Borrell	PROPN	_	Number=Sing	46	flat:name	_	ChangedBy=Issue119
-48	e	e	CCONJ	<co-prparg>|KC|@CO	_	41	cc	_	_
+48	e	e	CCONJ	<co-prparg>|KC|@CO	_	50	cc	_	d2d:#106
 49	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_
 50	ponte	ponte	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	41	conj	_	_
 51	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	54	obj	_	_
@@ -68,7 +75,7 @@
 63	auto-estrada	auto-estrada	NOUN	<cjt>|<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	22	conj	_	_
 64	Famalicão	Famalicão	PROPN	<first-cjt>|PROP|F|S|@N<	Gender=Fem|Number=Sing	63	appos	_	_
 65	Guimarães	Guimarães	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	64	nmod	_	_
-66	e	e	CCONJ	<co-sc>|<co-prparg>|<co-cu>|KC|@CO	_	22	cc	_	_
+66	e	e	CCONJ	<co-sc>|<co-prparg>|<co-cu>|KC|@CO	_	69	cc	_	d2d:#106
 67	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	_	_
 68	restante	restante	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	69	amod	_	_
 69	trajecto	trajecto	NOUN	<cjt>|<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	22	conj	_	_
@@ -85,13 +92,13 @@
 80	aí	aí	ADV	<-sam>|ADV|@P<	_	74	advmod	_	_
 81	até	até	ADP	<cjt>|PRP|@P<	_	82	case	_	_
 82	Chaves	Chaves	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	80	nmod	_	_
-83	e	e	CCONJ	<co-prparg>|KC|@CO	_	82	cc	_	_
+83	e	e	CCONJ	<co-prparg>|KC|@CO	_	84	cc	_	d2d:#106
 84	Verin	Verin	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	82	conj	_	ChangedBy=Issue149
 85	(	(	PUNCT	PU|@PU	_	86	punct	_	_
 86	IP3	IP3	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	84	appos	_	_
 87	)	)	PUNCT	PU|@PU	_	86	punct	_	_
-88	,	,	PUNCT	PU|@PU	_	22	punct	_	_
-89	e	e	CCONJ	<co-sc>|<co-cu>|KC|@CO	_	22	cc	_	_
+88	,	,	PUNCT	PU|@PU	_	92	punct	_	d2d:#106
+89	e	e	CCONJ	<co-sc>|<co-cu>|KC|@CO	_	92	cc	_	d2d:#106
 90	ainda	ainda	ADV	ADV|@>N	_	92	advmod	_	_
 91	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	92	det	_	_
 92	conclusão	conclusão	NOUN	<cjt>|<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	22	conj	_	_
@@ -118,7 +125,7 @@
 113	Póvoa	Póvoa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	110	nmod	_	MWE=Póvoa_de_Varzim
 114	de	de	ADP	PRP|@N<	_	115	case	_	_
 115	Varzim	Varzim	PROPN	PROP|@P<	Number=Sing	113	nmod	_	_
-116	e	e	CCONJ	<co-n<pred>|KC|@CO	_	110	cc	_	_
+116	e	e	CCONJ	<co-n<pred>|KC|@CO	_	119	cc	_	d2d:#106
 117	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	119	det	_	_
 118	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	119	amod	_	_
 119	ponte	ponte	NOUN	<cjt>|<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	110	conj	_	_

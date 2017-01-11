@@ -38,6 +38,7 @@
 # source CETENFolha n=201 cad=Brasil sec=pol sem=94b
 # sent_id CF201-2
 # id 860
+# d2d: cc(educação,e) -> cc(habitação,e)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	desvinculação	desvinculação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	ChangedBy=Issue137
@@ -63,7 +64,7 @@
 23	Orçamento	orçamento	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
 24	em	em	ADP	PRP|@<ADVL	_	25	case	_	_
 25	educação	educação	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	ChangedBy=Issue137
-26	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	_
+26	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	d2d:#106
 27	habitação	habitação	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	25	conj	_	_
 28	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
@@ -115,9 +116,10 @@
 # source CETENFolha n=201 cad=Brasil sec=pol sem=94b
 # sent_id CF201-4
 # id 862
+# d2d: cc(Estados,e) -> cc(municípios,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Estados	estado	NOUN	<first-cjt>|<prop>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
-3	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	d2d:#106
 4	municípios	município	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	conj	_	_
 5	têm	ter	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
 6	que	que	SCONJ	KS|@PRT-AUX<	_	7	mark	_	_

@@ -13,12 +13,13 @@
 # source CETENFolha n=150 cad=Opinião sec=opi sem=94b
 # sent_id CF150-3
 # id 589
+# d2d: cc(trancos,e) -> cc(barrancos,e)  #106
 1	Rio	Rio	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	MWE=Rio_De_Janeiro
 2	De	De	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 3	Janeiro	Janeiro	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 4	Aos	aos	ADP	PRP|@ADVL>	_	5	case	_	MWE=Aos_trancos_e_barrancos
 5	trancos	trancos	NOUN	N|@P<	_	15	nmod	_	_
-6	e	e	CCONJ	KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	KC|@CO	_	7	cc	_	d2d:#106
 7	barrancos	barrancos	NOUN	N|@P<	_	5	conj	_	ChangedBy=Issue149
 8	eis	eis	ADP	PRP|@ADVL>	_	9	case	_	MWE=eis_que
 9	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
@@ -45,6 +46,8 @@
 # source CETENFolha n=150 cad=Opinião sec=opi sem=94b
 # sent_id CF150-4
 # id 590
+# d2d: cc(hiperinflação,e) -> cc(descontrole,e)  #106
+# d2d: punct(ameaça,,) -> punct(possibilidade,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	panorama	panorama	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -53,11 +56,11 @@
 6	ameaça	ameaça	NOUN	<first-cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	4	appos	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	greve	greve	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
-9	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	possibilidade	possibilidade	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	6	conj	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	hiperinflação	hiperinflação	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
-13	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	d2d:#106
 14	descontrole	descontrole	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	conj	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	preços	preço	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	_
@@ -78,6 +81,7 @@
 # source CETENFolha n=150 cad=Opinião sec=opi sem=94b
 # sent_id CF150-5
 # id 591
+# d2d: cc(gostaria,e) -> cc(pasmem,e)  #106
 1	Exercendo	exercer	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	13	advcl	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	direito	direito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
@@ -97,7 +101,7 @@
 17	contra	contra	ADP	PRP|@<ADVL	_	19	case	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	maré	maré	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	ChangedBy=Issue137
-20	e	e	CCONJ	_	_	13	cc	_	_
+20	e	e	CCONJ	_	_	21	cc	_	d2d:#106
 21	pasmem	pasmar	VERB	<mv>|V|PR|3P|SUBJ|@FS-STA	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	ChangedBy=Issue149
 22	manifestar	manifestar	VERB	_	VerbForm=Inf	21	ccomp	_	_
 23	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	24	det	_	_

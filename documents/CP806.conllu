@@ -55,6 +55,8 @@
 # source CETEMPúblico n=806 sec=des sem=95b
 # sent_id CP806-4
 # id 4129
+# d2d: cc(angariou,mas) -> cc(isso,mas)  #106
+# d2d: punct(angariou,,) -> punct(isso,,)  #106
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
 3	presença	presença	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	obl	_	ChangedBy=Issue137
@@ -88,8 +90,8 @@
 31	«	«	PUNCT	PU|@PU	_	32	punct	_	_
 32	ranking	ranking	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	obl	_	ChangedBy=Issue137
 33	»	»	PUNCT	PU|@PU	_	32	punct	_	_
-34	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-35	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	_
+34	,	,	PUNCT	PU|@PU	_	39	punct	_	d2d:#106
+35	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	39	cc	_	d2d:#106
 36	não	não	ADV	ADV|@ADVL>	_	39	neg	_	_
 37	é	ser	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	cop	_	_
 38	só	só	ADV	ADV|@>N	_	39	advmod	_	_
@@ -109,6 +111,7 @@
 # source CETEMPúblico n=806 sec=des sem=95b
 # sent_id CP806-5
 # id 4130
+# d2d: cc(Michael,e) -> cc(Thomas,e)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 3	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	4	advmod	_	_
@@ -146,7 +149,7 @@
 35	8º	8º	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	36	amod	_	_
 36	ATP	ATP	PROPN	<first-cjt>|PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	32	appos	_	_
 37	)	)	PUNCT	PU|@PU	_	36	punct	_	_
-38	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	_
+38	e	e	CCONJ	<co-prparg>|KC|@CO	_	39	cc	_	d2d:#106
 39	Thomas	Thomas	PROPN	_	Gender=Masc|Number=Sing	32	conj	_	ChangedBy=Issue119|MWE=Thomas_Enqvist|MWEPOS=PROPN
 40	Enqvist	Enqvist	PROPN	_	Number=Sing	39	flat:name	_	ChangedBy=Issue119
 41	(	(	PUNCT	PU|@PU	_	43	punct	_	_
@@ -194,6 +197,9 @@
 # source CETEMPúblico n=806 sec=des sem=95b
 # sent_id CP806-7
 # id 4132
+# d2d: cc(Gigi,e) -> cc(checo,e)  #106
+# d2d: cc(título,e) -> cc(cheque,e)  #106
+# d2d: punct(6-4,,) -> punct(6-4,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	conjunto	conjunto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	norte-americano	norte-americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -203,20 +209,20 @@
 7	norte-americana	norte-americana	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	8	amod	_	_
 8	Gigi	Gigi	PROPN	_	Gender=Fem|Number=Sing	4	obj	_	ChangedBy=Issue119|MWE=Gigi_Fernandez|MWEPOS=PROPN
 9	Fernandez	Fernandez	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
-10	e	e	CCONJ	<co-acc>|KC|@CO	_	8	cc	_	_
+10	e	e	CCONJ	<co-acc>|KC|@CO	_	12	cc	_	d2d:#106
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	checo	checo	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	conj	_	_
 13	Cyril	Cyril	PROPN	_	Gender=Masc|Number=Sing	12	appos	_	ChangedBy=Issue119|MWE=Cyril_Suk|MWEPOS=PROPN
 14	Suk	Suk	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	por	por	ADP	PRP|@<ADVL	_	16	case	_	_
 16	6-4	6-4	NUM	<card>|<first-cjt>|NUM|M|P|@P<	_	4	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	6-4	6-4	NUM	<cjt>|<card>|NUM|M|P|@P<	_	16	conj	_	_
 19	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 20	conquistando	conquistar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	4	advcl	_	_
 21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	título	título	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
-23	e	e	CCONJ	<co-acc>|KC|@CO	_	22	cc	_	_
+23	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	d2d:#106
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	cheque	cheque	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	conj	_	_
 26	de	de	ADP	PRP|@N<	_	28	case	_	_
@@ -229,6 +235,7 @@
 # source CETEMPúblico n=806 sec=des sem=95b
 # sent_id CP806-8
 # id 4133
+# d2d: cc(divertir-,e) -> cc(ficaríamos,e)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 2	Tínhamos	ter	AUX	<aux>|V|IMPF|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	3	aux	_	_
 3	decidido	decidir	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	24	ccomp	_	_
@@ -240,7 +247,7 @@
 9	íamos	ir	AUX	<first-cjt>|<aux>|V|IMPF|1P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	10	aux	_	_
 10	divertir-	divertir	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	3	ccomp	_	_
 11	nos	nós	PRON	<refl>|PERS|M|1P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=1|PronType=Prs	10	obj	_	_
-12	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	10	cc	_	_
+12	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 13	que	que	SCONJ	KS|@SUB	_	15	mark	_	_
 14	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
 15	ficaríamos	ficar	VERB	<cjt>|<mv>|V|COND|1P|@FS-<ACC	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin	10	conj	_	_

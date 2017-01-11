@@ -3,11 +3,12 @@
 # source CETENFolha n=456 cad=Brasil sec=pol sem=94a
 # sent_id CF456-1
 # id 1918
+# d2d: cc(sai,e) -> cc(assusta,e)  #106
 1	Collor	Collor	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	sai	sair	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	para	para	ADP	PRP|@<ADVL	_	4	mark	_	_
 4	jantar	jantar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	advcl	_	_
-5	e	e	CCONJ	<co-sta>|KC|@CO	_	2	cc	_	_
+5	e	e	CCONJ	<co-sta>|KC|@CO	_	7	cc	_	d2d:#106
 6	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl	_	ChangedBy=Issue135
 7	assusta	assustar	VERB	<cjt>|<mv>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 8	com	com	ADP	PRP|@<PIV	_	9	case	_	_
@@ -18,14 +19,16 @@
 # source CETENFolha n=456 cad=Brasil sec=pol sem=94a
 # sent_id CF456-2
 # id 1919
+# d2d: cc(fala,mas) -> cc(posa,mas)  #106
+# d2d: punct(fala,,) -> punct(posa,,)  #106
 1	Ex-presidente	ex-presidente	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	fala	falar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	a	a	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	imprensa	imprensa	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+7	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 9	posa	posar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 10	para	para	ADP	PRP|@<PIV	_	11	case	_	_
 11	fotos	foto	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	_
@@ -35,15 +38,17 @@
 # source CETENFolha n=456 cad=Brasil sec=pol sem=94a
 # sent_id CF456-5
 # id 1920
+# d2d: cc(ex-presidente,e) -> cc(secretário,e)  #106
+# d2d: punct(ex-presidente,,) -> punct(mulher,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ex-presidente	ex-presidente	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
 3	Fernando	Fernando	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Fernando_Collor|MWEPOS=PROPN
 4	Collor	Collor	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
-5	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 6	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	7	det	_	_
 7	mulher	mulher	NOUN	<cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
 8	Rosane	Rosane	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	7	appos	_	_
-9	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+9	e	e	CCONJ	<co-subj>|KC|@CO	_	11	cc	_	d2d:#106
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	secretário	secretário	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
 12	Luís	Luís	PROPN	_	Gender=Masc|Number=Sing	11	appos	_	ChangedBy=Issue119|MWE=Luís_Carlos_Chaves|MWEPOS=PROPN
@@ -76,6 +81,7 @@
 # source CETENFolha n=456 cad=Brasil sec=pol sem=94a
 # sent_id CF456-6
 # id 1921
+# d2d: cc(Collor,e) -> cc(Rosane,e)  #106
 1	Durante	durante	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	jantar	jantar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	ChangedBy=Issue137
@@ -91,7 +97,7 @@
 13	a	o	PRON	<-sam>|DET|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	Collor	Collor	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
-16	e	e	CCONJ	<co-prparg>|KC|@CO	_	15	cc	_	_
+16	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	d2d:#106
 17	Rosane	Rosane	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	ChangedBy=Issue149
 18	tiraram	tirar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 19	fotos	foto	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	18	obj	_	_

@@ -3,6 +3,7 @@
 # source CETEMPúblico n=795 sec=eco sem=93a
 # sent_id CP795-1
 # id 4070
+# d2d: cc(jogos,e) -> cc(jogadores,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	exercício	exercício	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<ARG	_	5	case	_	_
@@ -22,7 +23,7 @@
 17	de	de	ADP	<first-cjt>|PRP|@N<	_	19	case	_	_
 18	«	«	PUNCT	PU|@PU	_	19	punct	_	_
 19	jogos	jogo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
-20	e	e	CCONJ	<co-postnom>|KC|@CO	_	19	cc	_	_
+20	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	d2d:#106
 21	de	de	ADP	<cjt>|PRP|@N<	_	22	case	_	_
 22	jogadores	jogador	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	19	conj	_	ChangedBy=Issue149
 23	»	»	PUNCT	PU|@PU	_	19	punct	_	_
@@ -33,6 +34,10 @@
 # source CETEMPúblico n=795 sec=eco sem=93a
 # sent_id CP795-2
 # id 4071
+# d2d: cc(organizações,e) -> cc(governos,e)  #106
+# d2d: punct(complexos,,) -> punct(subtis,,)  #106
+# d2d: cc(complexos,e) -> cc(sobrepostos,e)  #106
+# d2d: punct(complexos,,) -> punct(simultâneos,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	autores	autor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
@@ -61,18 +66,18 @@
 26	em	em	ADP	<sam->|<first-cjt>|PRP|@N<	_	28	case	_	_
 27	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
 28	organizações	organização	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	25	nmod	_	_
-29	e	e	CCONJ	<co-postnom>|KC|@CO	_	28	cc	_	_
+29	e	e	CCONJ	<co-postnom>|KC|@CO	_	32	cc	_	d2d:#106
 30	em	em	ADP	<sam->|<cjt>|PRP|@N<	_	32	case	_	_
 31	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
 32	governos	governo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	28	conj	_	_
 33	como	como	ADP	<prd>|PRP|@<OC	_	35	case	_	_
 34	«	«	PUNCT	PU|@PU	_	35	punct	_	_
 35	complexos	complexo	ADJ	<first-cjt>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	23	xcomp	_	_
-36	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+36	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
 37	subtis	subtil	ADJ	<cjt>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	35	conj	_	_
-38	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+38	,	,	PUNCT	PU|@PU	_	39	punct	_	d2d:#106
 39	simultâneos	simultâneo	ADJ	<cjt>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	35	conj	_	_
-40	e	e	CCONJ	KC|@CO	_	35	cc	_	_
+40	e	e	CCONJ	KC|@CO	_	41	cc	_	d2d:#106
 41	sobrepostos	sobrepor	VERB	<cjt>|V|PCP|M|P|@P<	Gender=Masc|Number=Plur|VerbForm=Part	35	conj	_	_
 42	»	»	PUNCT	PU|@PU	_	35	punct	_	_
 43	.	.	PUNCT	PU|@PU	_	9	punct	_	_
@@ -103,12 +108,13 @@
 # source CETEMPúblico n=795 sec=eco sem=93a
 # sent_id CP795-4
 # id 4073
+# d2d: punct(explícitas,,) -> punct(outras,,)  #106
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	_
 2	Algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	3	det	_	_
 3	regras	regra	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj	_	_
 4	são	ser	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 5	explícitas	explícito	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 7	outras	outro	DET	<cjt>|<KOMP>|<diff>|<first-cjt>|DET|F|P|@FS-STA	Gender=Fem|Number=Plur	5	conj	_	_
 8	implícitas	implícito	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	7	xcomp	_	_
 9	;	;	PUNCT	PU|@PU	_	5	punct	_	_
@@ -118,20 +124,23 @@
 # source CETEMPúblico n=795 sec=eco sem=93a
 # sent_id CP795-5
 # id 4074
+# d2d: punct(claras,;) -> punct(algumas,;)  #106
+# d2d: punct(claras,,) -> punct(outras,,)  #106
+# d2d: punct(claras,,) -> punct(outras,,)  #106
 1	algumas	algum	PRON	<quant>|DET|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
 2	são	ser	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 3	muito	muito	ADV	<quant>|ADV|@>A	_	4	advmod	_	_
 4	claras	claro	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
-5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	outras	outro	DET	<cjt>|<KOMP>|<diff>|<first-cjt>|DET|F|P|@FS-STA	Gender=Fem|Number=Plur	4	conj	_	_
 7	um	um	ADP	PRP|@>A	_	8	case	_	MWE=um_tanto
 8	tanto	tanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
 9	nebulosas	nebuloso	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	6	xcomp	_	_
-10	;	;	PUNCT	PU|@PU	_	4	punct	_	_
+10	;	;	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 11	algumas	algum	DET	<cjt>|<quant>|<first-cjt>|DET|F|P|@FS-STA	Gender=Fem|Number=Plur	4	conj	_	_
 12	bastante	bastante	ADV	<quant>|ADV|@>A	_	13	advmod	_	_
 13	estáveis	estável	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	11	xcomp	_	_
-14	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	outras	outro	DET	<cjt>|<KOMP>|<diff>|<first-cjt>|DET|F|P|@FS-STA	Gender=Fem|Number=Plur	4	conj	_	_
 16	sempre	sempre	ADV	ADV|@<ADVL	_	15	advmod	_	_
 17	em	em	ADP	PRP|@<SC	_	18	case	_	_
@@ -162,8 +171,10 @@
 # source CETEMPúblico n=795 sec=eco sem=93a
 # sent_id CP795-7
 # id 4076
+# d2d: cc(retirámos,e) -> cc(adaptámos,e)  #106
+# d2d: cc(Mintzberg,e) -> cc(Quinn,e)  #106
 1	Mintzberg	Mintzberg	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	Quinn	Quinn	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149
 4	identificam	identificar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
@@ -180,7 +191,7 @@
 16	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur	17	det	_	MWE=os_quais
 17	quais	qual	PRON	DET|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	_
 18	retirámos	retirar	VERB	<mv>|<first-cjt>|V|PS|1P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	9	acl:relcl	_	_
-19	e	e	CCONJ	<co-vfin>|KC|@CO	_	18	cc	_	_
+19	e	e	CCONJ	<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 20	adaptámos	adaptar	VERB	<mv>|<cjt>|V|PS|1P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	18	conj	_	_
 21	os	o	PRON	<dem>|DET|M|P|@<ACC	Gender=Masc|Number=Plur|PronType=Dem	18	obj	_	_
 22	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	23	obj	_	_
@@ -196,6 +207,7 @@
 # source CETEMPúblico n=795 sec=eco sem=93a
 # sent_id CP795-8
 # id 4077
+# d2d: cc(envolvido,e) -> cc(onde,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	essencial	essencial	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -216,7 +228,7 @@
 18	quem	quem	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	20	nsubj	_	_
 19	está	estar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
 20	envolvido	envolvido	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	17	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
-21	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 22	onde	onde	ADV	<rel>|ADV|@SA>	_	20	conj	_	_
 23	está	estar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_
 24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
@@ -232,6 +244,7 @@
 # source CETEMPúblico n=795 sec=eco sem=93a
 # sent_id CP795-9
 # id 4078
+# d2d: cc(conhecer,e) -> cc(souber,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	gestão	gestão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	MWE=de_topo
@@ -253,7 +266,7 @@
 19	os	eles	PRON	PERS|M|3P|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	obj	_	_
 20	conhecer	conhecer	VERB	<first-cjt>|<mv>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	advcl	_	_
 21	bem	bem	ADV	<quant>|ADV|@<ADVL	_	20	advmod	_	_
-22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	_
+22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	d2d:#106
 23	souber	saber	VERB	<cjt>|<mv>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	conj	_	_
 24	«	«	PUNCT	PU|@PU	_	25	punct	_	_
 25	joga-	jogar	VERB	<mv>|<cjt>|<hyphen>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	conj	_	_

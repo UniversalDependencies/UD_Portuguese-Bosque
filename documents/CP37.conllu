@@ -15,19 +15,22 @@
 # source CETEMPúblico n=37 sec=clt sem=98b
 # sent_id CP37-2
 # id 219
+# d2d: punct(formada,,) -> punct(conseguiria,,)  #106
+# d2d: cc(formada,mas) -> cc(conseguiria,mas)  #106
+# d2d: cc(ler,e) -> cc(escrever,e)  #106
 1	Sou	ser	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	cop	_	_
 2	formada	formar	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
 3	em	em	ADP	PRP|@<PIV	_	4	case	_	_
 4	Direito	Direito	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
-5	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-6	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+5	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
+6	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	8	cc	_	d2d:#106
 7	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
 8	conseguiria	conseguir	VERB	<mv>|<cjt>|V|COND|1S|@FS-STA	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin	2	conj	_	_
 9	ensinar	ensinar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	8	xcomp	_	_
 10	alguém	alguém	PRON	INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	9	obj	_	_
 11	a	a	ADP	<first-cjt>|PRP|@<PIV	_	12	mark	_	_
 12	ler	ler	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	xcomp	_	_
-13	e	e	CCONJ	<co-piv>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-piv>|KC|@CO	_	15	cc	_	d2d:#106
 14	a	a	ADP	<cjt>|PRP|@<PIV	_	15	mark	_	_
 15	escrever	escrever	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	conj	_	ChangedBy=Issue149
 16	.	.	PUNCT	PU|@PU	_	2	punct	_	_
@@ -37,6 +40,8 @@
 # source CETEMPúblico n=37 sec=clt sem=98b
 # sent_id CP37-3
 # id 220
+# d2d: punct(dei,,) -> punct(tenho,,)  #106
+# d2d: cc(dei,mas) -> cc(tenho,mas)  #106
 1	Nunca	nunca	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	dei	dar	VERB	<mv>|<first-cjt>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -44,8 +49,8 @@
 5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	7	det	_	_
 7	vida	vida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	ChangedBy=Issue137
-8	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-9	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+8	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
+9	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	d2d:#106
 10	tenho	ter	VERB	<mv>|<cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	_	_
 11	pena	pena	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
 12	,	,	PUNCT	PU|@PU	_	10	punct	_	_

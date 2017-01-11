@@ -3,6 +3,9 @@
 # source CETENFolha n=428 cad=Informática sec=com sem=94a
 # sent_id CF428-1
 # id 1785
+# d2d: punct(computadores,,) -> punct(CD-ROM,,)  #106
+# d2d: cc(computadores,e) -> cc(linhas,e)  #106
+# d2d: punct(computadores,,) -> punct(modem,,)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
 2	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	3	det	_	_
 3	cidades	cidade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	obl	_	ChangedBy=Issue137
@@ -26,11 +29,11 @@
 21	escolas	escola	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
 22	incorporam	incorporar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 23	computadores	computador	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	22	obj	_	_
-24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+24	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 25	CD-ROM	cd-rom	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	_
-26	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 27	modem	modem	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	_
-28	e	e	CCONJ	<co-acc>|KC|@CO	_	23	cc	_	_
+28	e	e	CCONJ	<co-acc>|KC|@CO	_	29	cc	_	d2d:#106
 29	linhas	linha	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	23	conj	_	_
 30	telefônicas	telefônico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	29	amod	_	_
 31	para	para	ADP	PRP|@<ADVL	_	32	mark	_	_

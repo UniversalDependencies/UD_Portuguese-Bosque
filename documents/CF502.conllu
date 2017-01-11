@@ -18,9 +18,10 @@
 # source CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id CF502-2
 # id 2112
+# d2d: cc(músico,e) -> cc(humorista,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	músico	músico	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
-3	e	e	CCONJ	KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	KC|@CO	_	4	cc	_	d2d:#106
 4	humorista	humorista	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
 5	Juca	Juca	PROPN	_	Gender=Fem|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Juca_Chaves|MWEPOS=PROPN
 6	Chaves	Chaves	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119
@@ -145,6 +146,8 @@
 # source CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id CF502-7
 # id 2117
+# d2d: punct(Assembléia,,) -> punct(Senado,,)  #106
+# d2d: cc(Assembléia,ou) -> cc(Senado,ou)  #106
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 3	55	55	NUM	<card>|NUM|M|P|@>N	_	4	nummod	_	_
@@ -157,12 +160,12 @@
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	Assembléia	Assembléia	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	MWE=Assembléia_Legislativa
 12	Legislativa	Legislativa	PROPN	PROP|@N<	Number=Sing	11	flat:name	_	_
-13	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 14	Câmara	Câmara	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	MWE=Câmara_dos_Deputados
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
 17	Deputados	Deputados	PROPN	PROP|@P<	Number=Sing	14	nmod	_	_
-18	ou	ou	CCONJ	KC|@CO	_	11	cc	_	_
+18	ou	ou	CCONJ	KC|@CO	_	19	cc	_	d2d:#106
 19	Senado	senado	NOUN	<cjt>|<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	conj	_	_
 20	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 

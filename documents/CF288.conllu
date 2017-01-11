@@ -20,6 +20,7 @@
 # source CETENFolha n=288 cad=Opinião sec=opi sem=94b
 # sent_id CF288-3
 # id 1205
+# d2d: cc(claro,e) -> cc(definido,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	corrida	corrida	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	sucessória	sucessório	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -31,7 +32,7 @@
 9	quadro	quadro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 10	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	11	advmod	_	_
 11	claro	claro	ADJ	<first-cjt>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	_
-12	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	d2d:#106
 13	definido	definir	VERB	<cjt>|V|PCP|M|S|@N<	Gender=Masc|Number=Sing|VerbForm=Part	11	conj	_	_
 14	de	de	ADP	<sam->|PRP|@COM	_	15	case	_	MWE=do_que
 15	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	17	fixed	_	_
@@ -99,6 +100,8 @@
 # source CETENFolha n=288 cad=Opinião sec=opi sem=94b
 # sent_id CF288-5
 # id 1207
+# d2d: cc(acate,e) -> cc(renuncie,e)  #106
+# d2d: punct(acate,,) -> punct(renuncie,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	única	único	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	alternativa	alternativa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
@@ -129,9 +132,9 @@
 28	contra	contra	ADP	PRP|@N<	_	29	case	_	_
 29	Orestes	Orestes	PROPN	_	Gender=Masc|Number=Sing	25	nmod	_	ChangedBy=Issue119|MWE=Orestes_Quércia|MWEPOS=PROPN
 30	Quércia	Quércia	PROPN	_	Number=Sing	29	flat:name	_	ChangedBy=Issue119
-31	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	17	cc	_	_
+31	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	43	cc	_	d2d:#106
 32	que	que	SCONJ	KS|@SUB	_	43	mark	_	_
-33	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+33	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 34	em	em	ADP	<sam->|PRP|@ADVL>	_	36	case	_	_
 35	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	36	det	_	_
 36	caso	caso	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	43	obl	_	ChangedBy=Issue137
@@ -166,6 +169,8 @@
 # source CETENFolha n=288 cad=Opinião sec=opi sem=94b
 # sent_id CF288-7
 # id 1209
+# d2d: punct(tramitação,,) -> punct(há,,)  #106
+# d2d: cc(tramitação,como) -> cc(há,como)  #106
 1	Não	não	ADV	ADV|@>A	_	2	advmod	_	MWE=Não_só
 2	só	só	ADV	ADV|@CO	_	8	cc	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -196,8 +201,8 @@
 28	até	até	ADP	PRP|@N<	_	30	case	_	_
 29	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_
 30	eleições	eleição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	27	nmod	_	_
-31	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-32	como	como	ADV	<co-fcl>|<rel>|ADV|@CO	_	8	cc	_	_
+31	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
+32	como	como	ADV	<co-fcl>|<rel>|ADV|@CO	_	34	cc	_	d2d:#106
 33	também	também	ADV	ADV|@ADVL>	_	34	advmod	_	_
 34	há	haver	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
 35	informações	informação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	34	obj	_	_

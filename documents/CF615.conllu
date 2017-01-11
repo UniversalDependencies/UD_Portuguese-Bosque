@@ -3,6 +3,8 @@
 # source CETENFolha n=615 cad=Cotidiano sec=soc sem=94b
 # sent_id CF615-1
 # id 2591
+# d2d: cc(hospitais,e) -> cc(unidades,e)  #106
+# d2d: cc(ampliação,ou) -> cc(reforma,ou)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	secretário	secretário	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
@@ -20,12 +22,12 @@
 15	atrás	atrás	ADV	ADV|@<ADVL	_	9	advmod	_	_
 16	para	para	ADP	PRP|@<ADVL	_	17	case	_	_
 17	ampliação	ampliação	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	ChangedBy=Issue137
-18	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	_
+18	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	19	cc	_	d2d:#106
 19	reforma	reforma	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	conj	_	_
 20	em	em	ADP	PRP|@N<	_	22	case	_	_
 21	dez	dez	NUM	<card>|NUM|M|P|@>N	_	22	nummod	_	_
 22	hospitais	hospital	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
-23	e	e	CCONJ	<co-prparg>|KC|@CO	_	22	cc	_	_
+23	e	e	CCONJ	<co-prparg>|KC|@CO	_	24	cc	_	d2d:#106
 24	unidades	unidade	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	conj	_	_
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
 26	saúde	saúde	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
@@ -36,13 +38,16 @@
 # source CETENFolha n=615 cad=Cotidiano sec=soc sem=94b &L
 # sent_id CF615-2
 # id 2592
+# d2d: cc(reformas,e) -> cc(ampliações,e)  #106
+# d2d: cc(Tatuapé,e) -> cc(Tide,e)  #106
+# d2d: punct(Tatuapé,,) -> punct(Vila,,)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	2	case	_	_
 2	elas	elas	PRON	PERS|F|3P|NOM/PIV|@P<	Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	nmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
 6	reformas	reforma	NOUN	<first-cjt>|<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	4	nsubj	_	_
-7	e	e	CCONJ	KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	KC|@CO	_	8	cc	_	d2d:#106
 8	ampliações	ampliação	NOUN	<cjt>|<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	6	conj	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
@@ -55,7 +60,7 @@
 17	7,4	7,4	NUM	<card>|NUM|M|P|@>N	_	18	nummod	_	_
 18	milhões	milhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	16	nmod:npmod	_	_
 19	)	)	PUNCT	PU|@PU	_	16	punct	_	_
-20	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	Vila	Vila	PROPN	_	Gender=Masc|Number=Sing	14	conj	_	ChangedBy=Issue119|MWE=Vila_Nova_Cachoeirinha|MWEPOS=PROPN
 22	Nova	Nova	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	Cachoeirinha	Cachoeirinha	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
@@ -64,7 +69,7 @@
 26	17	17	NUM	<card>|NUM|M|P|@>N	_	27	nummod	_	_
 27	milhões	milhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	25	nmod:npmod	_	_
 28	)	)	PUNCT	PU|@PU	_	25	punct	_	_
-29	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	_
+29	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	d2d:#106
 30	Tide	Tide	PROPN	_	Gender=Masc|Number=Sing	14	conj	_	ChangedBy=Issue119|MWE=Tide_Setubal|MWEPOS=PROPN
 31	Setubal	Setubal	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 32	(	(	PUNCT	PU|@PU	_	33	punct	_	_
@@ -79,6 +84,7 @@
 # source CETENFolha n=615 cad=Cotidiano sec=soc sem=94b
 # sent_id CF615-3
 # id 2593
+# d2d: cc(levantou,e) -> cc(liberados,e)  #106
 1	Raia	raia	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	ainda	ainda	ADV	ADV|@<ADVL	_	2	advmod	_	_
@@ -95,7 +101,7 @@
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	rede	rede	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
-17	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	7	cc	_	_
+17	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 18	que	que	SCONJ	KS|@SUB	_	24	mark	_	_
 19	US$	US$	SYM	_	Gender=Masc|Number=Plur	24	nsubj:pass	_	_
 20	3	3	NUM	<card>|NUM|M|P|@>N	_	21	nummod	_	_

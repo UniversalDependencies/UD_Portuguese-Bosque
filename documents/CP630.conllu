@@ -26,6 +26,9 @@
 # source CETEMPúblico n=630 sec=nd sem=95a
 # sent_id CP630-3
 # id 3285
+# d2d: cc(cor,ou) -> cc(raça,ou)  #106
+# d2d: cc(tem,e) -> cc(lutar,e)  #106
+# d2d: punct(precioso,,) -> punct(inestimável,,)  #106
 1	1	1	NUM	NUM|@ADVL>	_	7	nmod	_	_
 2	--	--	PUNCT	PU|@PU	_	7	punct	_	_
 3	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -34,7 +37,7 @@
 6	um	um	DET	<quant>|ART|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	bem	bem	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 8	precioso	precioso	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	_
-9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	inestimável	inestimável	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	8	conj	_	_
 11	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 12	a	a	ADP	PRP|@N<	_	13	case	_	_
@@ -45,7 +48,7 @@
 17	humano	humano	ADJ	_	Gender=Masc|Number=Sing	16	compound	_	_
 18	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
 19	direito	direito	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
-20	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	_
+20	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 21	por	por	ADP	PRP|@ADVL>	_	22	case	_	MWE=por_que
 22	que	que	PRON	INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	24	nmod	_	_
 23	deve	dever	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
@@ -55,7 +58,7 @@
 27	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
 28	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	29	det	_	_
 29	cor	cor	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	_
-30	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	29	cc	_	_
+30	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	d2d:#106
 31	raça	raça	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	29	conj	_	_
 32	(	(	PUNCT	PU|@PU	_	7	punct	_	_
 33	...	...	PUNCT	PU|@PU	_	7	punct	_	_

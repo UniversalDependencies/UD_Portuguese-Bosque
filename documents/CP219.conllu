@@ -48,20 +48,24 @@
 # source CETEMPúblico n=219 sec=clt sem=95b &W
 # sent_id CP219-3
 # id 1184
+# d2d: cc(maridos,e) -> cc(mulheres,e)  #106
+# d2d: cc(actores,mas) -> cc(maridos,mas)  #106
+# d2d: cc(maridos,e) -> cc(amigos,e)  #106
+# d2d: punct(actores,,) -> punct(maridos,,)  #106
 1	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
 2	as	o	PRON	<dem>|DET|F|P|@<SC	Gender=Fem|Number=Plur|PronType=Dem	0	root	_	_
 3	que	que	PRON	<rel>|INDP|F|P|@ACC>	Gender=Fem|Number=Plur|PronType=Rel	4	obj	_	_
 4	procuram	procurar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
 5	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
 6	actores	actor	NOUN	<first-cjt>|<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	4	nsubj	_	_
-7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-8	mas	mas	CCONJ	<co-acc>|KC|@CO	_	6	cc	_	_
+7	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
+8	mas	mas	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	d2d:#106
 9	também	também	ADV	ADV|@>N	_	11	advmod	_	_
 10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
 11	maridos	marido	NOUN	<cjt>|<first-cjt>|<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	6	conj	_	_
-12	e	e	CCONJ	<co-cjt>|<co-acc>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-cjt>|<co-acc>|KC|@CO	_	13	cc	_	d2d:#106
 13	mulheres	mulher	NOUN	<cjt>|<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	11	conj	_	_
-14	e	e	CCONJ	<co-cjt>|<co-acc>|KC|@CO	_	11	cc	_	_
+14	e	e	CCONJ	<co-cjt>|<co-acc>|KC|@CO	_	15	cc	_	d2d:#106
 15	amigos	amigo	NOUN	<cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	11	conj	_	_
 16	;	;	PUNCT	PU|@PU	_	2	punct	_	_
 17	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_
@@ -81,6 +85,7 @@
 # source CETEMPúblico n=219 sec=clt sem=95b
 # sent_id CP219-4
 # id 1185
+# d2d: cc(Cartier-Bresson,ou) -> cc(Dennis,ou)  #106
 1	Estas	este	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	2	det	_	_
 2	imagens	imagem	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	20	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|F|P|@ACC>	Gender=Fem|Number=Plur|PronType=Rel	4	obj	_	_
@@ -93,7 +98,7 @@
 10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 11	Eve	Eve	PROPN	_	Gender=Fem|Number=Sing	6	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Eve_Arnold|MWEPOS=PROPN
 12	Arnold	Arnold	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
-13	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	_
+13	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	d2d:#106
 14	Dennis	Dennis	PROPN	_	Gender=Masc|Number=Sing	6	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Dennis_Stock|MWEPOS=PROPN
 15	Stock	Stock	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	,	,	PUNCT	PU|@PU	_	18	punct	_	_

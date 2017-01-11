@@ -3,6 +3,8 @@
 # source CETEMPúblico n=419 sec=soc sem=95a
 # sent_id CP419-1
 # id 2200
+# d2d: cc(banca,e) -> cc(sistema,e)  #106
+# d2d: punct(impor,,) -> punct(controlar,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	estará	estar	VERB	<mv>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_
@@ -15,12 +17,12 @@
 10	directo	directo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	12	amod	_	_
 11	sobre	sobre	ADP	PRP|@<ACC	_	12	case	_	_
 12	Gibraltar	Gibraltar	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	6	nmod	_	_
-13	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 14	para	para	ADP	<cjt>|PRP|@<PIV	_	15	mark	_	_
 15	controlar	controlar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	conj	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	banca	banca	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
-18	e	e	CCONJ	<co-acc>|KC|@CO	_	17	cc	_	_
+18	e	e	CCONJ	<co-acc>|KC|@CO	_	20	cc	_	d2d:#106
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	sistema	sistema	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	conj	_	_
 21	legal	legal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	20	amod	_	_
@@ -61,6 +63,7 @@
 # source CETEMPúblico n=419 sec=soc sem=95a
 # sent_id CP419-2
 # id 2201
+# d2d: punct(concretização,,) -> punct(tema,,)  #106
 1	Funcionários	funcionário	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -90,7 +93,7 @@
 27	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
 28	União	União	PROPN	_	Gender=Fem|Number=Sing	25	nmod	_	ChangedBy=Issue119|MWE=União_Europeia|MWEPOS=PROPN
 29	Europeia	Europeia	PROPN	_	Number=Sing	28	flat:name	_	ChangedBy=Issue119
-30	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+30	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 31	bem	bem	ADP	PRP|@CO	_	32	case	_	MWE=bem_como
 32	como	como	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
 33	sobre	sobre	ADP	<cjt>|PRP|@N<	_	35	case	_	_
@@ -220,9 +223,10 @@
 # source CETEMPúblico n=419 sec=soc sem=95a
 # sent_id CP419-5
 # id 2204
+# d2d: cc(decepadas,e) -> cc(recoladas,e)  #106
 1	Pernas	perna	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	decepadas	decepar	VERB	<mv>|<first-cjt>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	1	acl	_	_
-3	e	e	CCONJ	<co-postnom>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-postnom>|KC|@CO	_	4	cc	_	d2d:#106
 4	recoladas	recolar	VERB	<mv>|<cjt>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	2	conj	_	_
 
 # text Um miúdo de três anos cujas pernas foram cortadas por uma ceifeira-debulhadora foi operado para a reimplantação dos dois membros e recupera no Hospital Rei Eduardo VIII em Durban, África do Sul, informou ontem fonte hospitalar.
@@ -230,6 +234,7 @@
 # source CETEMPúblico n=419 sec=soc sem=95a
 # sent_id CP419-6
 # id 2205
+# d2d: cc(operado,e) -> cc(recupera,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	miúdo	miúdo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj:pass	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
@@ -251,7 +256,7 @@
 19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
 20	dois	dois	NUM	<card>|NUM|M|P|@>N	_	21	nummod	_	_
 21	membros	membro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
-22	e	e	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	_
+22	e	e	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	d2d:#106
 23	recupera	recuperar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_
 24	em	em	ADP	<sam->|PRP|@<ADVL	_	26	case	_	_
 25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
@@ -278,6 +283,7 @@
 # source CETEMPúblico n=419 sec=soc sem=95a
 # sent_id CP419-7
 # id 2206
+# d2d: cc(atropelado,e) -> cc(cortou,e)  #106
 1	Amos	Amos	PROPN	_	Gender=Masc|Number=Plur	3	nsubj	_	ChangedBy=Issue119|MWE=Amos_Mosea|MWEPOS=PROPN
 2	Mosea	Mosea	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	brincava	brincar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -318,7 +324,7 @@
 38	por	por	ADP	PRP|@PASS	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	ceifeira-debulhadora	ceifeira-debulhadora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	37	obl:agent	_	_
-41	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	37	cc	_	_
+41	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	43	cc	_	d2d:#106
 42	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	43	iobj	_	_
 43	cortou	cortar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	37	conj	_	_
 44	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	49	det	_	_

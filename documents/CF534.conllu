@@ -3,6 +3,8 @@
 # source CETENFolha n=534 cad=Empregos sec=eco sem=94a
 # sent_id CF534-1
 # id 2239
+# d2d: cc(pontos,e) -> cc(atributos,e)  #106
+# d2d: cc(experiência,e) -> cc(formação,e)  #106
 1	O	o	PRON	_	Gender=Masc|Number=Sing	2	det	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	5	nsubj:pass	_	_
 3	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
@@ -24,12 +26,12 @@
 19	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	experiência	experiência	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
-22	e	e	CCONJ	<co-postnom>|KC|@CO	_	21	cc	_	_
+22	e	e	CCONJ	<co-postnom>|KC|@CO	_	25	cc	_	d2d:#106
 23	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	25	case	_	_
 24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	formação	formação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	conj	_	_
 26	acadêmica	acadêmico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	25	amod	_	_
-27	e	e	CCONJ	<co-sc>|KC|@CO	_	17	cc	_	_
+27	e	e	CCONJ	<co-sc>|KC|@CO	_	29	cc	_	d2d:#106
 28	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
 29	atributos	atributo	NOUN	<cjt>|<np-def>|N|M|P|@<SC	Gender=Masc|Number=Plur	17	conj	_	_
 30	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	32	nsubj	_	_
@@ -47,6 +49,10 @@
 # source CETENFolha n=534 cad=Empregos sec=eco sem=94a
 # sent_id CF534-2
 # id 2240
+# d2d: cc(área,e) -> cc(descrição,e)  #106
+# d2d: punct(área,,) -> punct(qualificações,,)  #106
+# d2d: punct(área,,) -> punct(qualificações,,)  #106
+# d2d: punct(área,,) -> punct(qualificações,,)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Laerte	Laerte	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue119|MWE=Laerte_Leite_Cordeiro|MWEPOS=PROPN
 3	Leite	Leite	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -72,16 +78,16 @@
 23	interesse	interesse	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
 24	(	(	PUNCT	PU|@PU	_	25	punct	_	_
 25	administrativa	administrativo	ADJ	<first-cjt>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	20	amod	_	_
-26	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 27	contábil	contábil	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	25	amod	_	_
-28	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+28	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 29	financeira	financeiro	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	25	amod	_	_
 30	etc.	etc.	ADV	ADV|@<ADVL	_	25	advmod	_	_
 31	)	)	PUNCT	PU|@PU	_	25	punct	_	_
-32	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+32	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 33	qualificações	qualificação	NOUN	<cjt>|<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	20	conj	_	_
 34	profissionais	profissional	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	33	amod	_	_
-35	e	e	CCONJ	<co-n<pred>|KC|@CO	_	20	cc	_	_
+35	e	e	CCONJ	<co-n<pred>|KC|@CO	_	36	cc	_	d2d:#106
 36	descrição	descrição	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	20	conj	_	_
 37	de	de	ADP	<sam->|PRP|@N<ARG	_	39	case	_	_
 38	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_

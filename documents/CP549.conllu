@@ -20,6 +20,11 @@
 # source CETEMPúblico n=549 sec=pol sem=91b
 # sent_id CP549-2
 # id 2860
+# d2d: cc(aquilo,e) -> cc(o,e)  #106
+# d2d: punct(aquilo,,) -> punct(o,,)  #106
+# d2d: punct(aquilo,,) -> punct(receptividade,,)  #106
+# d2d: cc(aquilo,mas) -> cc(receptividade,mas)  #106
+# d2d: punct(aquilo,,) -> punct(o,,)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	só	só	ADV	ADV|@>A	_	4	advmod	_	_
 3	por	por	ADP	<first-cjt>|PRP|@UTT	_	4	case	_	_
@@ -36,8 +41,8 @@
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	PCP	PCP	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-18	mas	mas	CCONJ	<co-utt>|KC|@CO	_	4	cc	_	_
+17	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+18	mas	mas	CCONJ	<co-utt>|KC|@CO	_	22	cc	_	d2d:#106
 19	também	também	ADV	ADV|@>A	_	22	advmod	_	_
 20	por	por	ADP	<sam->|<cjt>|PRP|@UTT	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
@@ -51,10 +56,10 @@
 29	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	aux	_	_
 30	a	a	ADP	PRP|@PRT-AUX<	_	31	nmod	_	_
 31	encontrar	encontrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	acl:relcl	_	_
-32	e	e	CCONJ	<co-utt>|KC|@CO	_	4	cc	_	_
-33	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+32	e	e	CCONJ	<co-utt>|KC|@CO	_	37	cc	_	d2d:#106
+33	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
 34	sobretudo	sobretudo	ADV	ADV|@>A	_	37	advmod	_	_
-35	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
 36	por	por	ADP	<sam->|<cjt>|PRP|@UTT	_	37	case	_	_
 37	o	o	PRON	<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing	4	conj	_	_
 38	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	43	obj	_	_

@@ -3,6 +3,7 @@
 # source CETENFolha n=336 cad=Informática sec=com sem=94a
 # sent_id CF336-1
 # id 1389
+# d2d: cc(programas,e) -> cc(redes,e)  #106
 1	Curiosamente	curiosamente	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	quanto	quanto	ADV	ADV|@ADVL>	_	11	advmod	_	MWE=quanto_mais
@@ -10,7 +11,7 @@
 5	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
 6	novos	novo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	7	amod	_	_
 7	programas	programa	NOUN	<first-cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	11	nsubj	_	_
-8	e	e	CCONJ	<co-subj>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-subj>|KC|@CO	_	9	cc	_	d2d:#106
 9	redes	rede	NOUN	<cjt>|<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	conj	_	_
 10	«	«	PUNCT	PU|@PU	_	11	punct	_	_
 11	facilitam	facilitar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
@@ -39,6 +40,9 @@
 # source CETENFolha n=336 cad=Informática sec=com sem=94a
 # sent_id CF336-2
 # id 1390
+# d2d: cc(mandar,e) -> cc(receber,e)  #106
+# d2d: cc(fax,e) -> cc(mensagens,e)  #106
+# d2d: cc(bancos,e) -> cc(serviços,e)  #106
 1	Hoje	hoje	PROPN	_	Gender=Masc|Number=Sing	10	nmod	_	ChangedBy=Issue119|MWE=Hoje_em_dia|MWEPOS=PROPN
 2	em	em	PROPN	_	_	1	flat:name	_	ChangedBy=Issue119
 3	dia	dia	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -67,10 +71,10 @@
 26	cadeira	cadeira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
 27	:	:	PUNCT	PU|@PU	_	10	punct	_	_
 28	mandar	mandar	VERB	<mv>|<first-cjt>|V|INF|@ICL-N<PRED	VerbForm=Inf	15	acl	_	_
-29	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	28	cc	_	_
+29	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	30	cc	_	d2d:#106
 30	receber	receber	VERB	<mv>|<cjt>|V|INF|@ICL-N<PRED	VerbForm=Inf	28	conj	_	_
 31	fax	fax	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	30	obj	_	_
-32	e	e	CCONJ	<co-acc>|KC|@CO	_	31	cc	_	_
+32	e	e	CCONJ	<co-acc>|KC|@CO	_	33	cc	_	d2d:#106
 33	mensagens	mensagem	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	31	conj	_	_
 34	eletrônicas	eletrônico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	33	amod	_	_
 35	,	,	PUNCT	PU|@PU	_	36	punct	_	_
@@ -87,7 +91,7 @@
 46	bancos	bancos	NOUN	_	Gender=Masc|Number=Plur	45	obj	_	MWE=bancos_de_dados|MWEPOS=NOUN
 47	de	de	ADP	_	_	46	compound	_	_
 48	dados	dados	NOUN	_	_	46	compound	_	_
-49	e	e	CCONJ	<co-acc>|KC|@CO	_	46	cc	_	_
+49	e	e	CCONJ	<co-acc>|KC|@CO	_	53	cc	_	d2d:#106
 50	dezena	dezena	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	53	det	_	MWE=dezena_de
 51	de	de	ADP	PRP|@A<	_	50	fixed	_	_
 52	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	53	det	_	_

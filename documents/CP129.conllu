@@ -3,6 +3,8 @@
 # source CETEMPúblico n=129 sec=des sem=92b
 # sent_id CP129-1
 # id 659
+# d2d: punct(representou,,) -> punct(dispensado,,)  #106
+# d2d: cc(representou,mas) -> cc(dispensado,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	jogador	jogador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	representou	representar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -14,8 +16,8 @@
 9	Associação	Associação	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	MWE=Associação_Desportiva_Ovarense
 10	Desportiva	Desportiva	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	_
 11	Ovarense	Ovarense	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	_
-12	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-13	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+13	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 14	foi	ir	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux	_	_
 15	dispensado	dispensar	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	3	conj	_	_
 16	em	em	ADP	<sam->|PRP|@<ADVL	_	17	case	_	MWE=em_virtude_de
@@ -67,6 +69,7 @@
 # source CETEMPúblico n=129 sec=des sem=92b
 # sent_id CP129-2
 # id 660
+# d2d: cc(Terrence,e) -> cc(Ruben,e)  #106
 1	Sprewer	Sprewer	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	irá	ir	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux	_	_
 3	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
@@ -90,7 +93,7 @@
 21	época	época	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	ChangedBy=Issue137
 22	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	21	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 23	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-24	e	e	CCONJ	<co-postnom>|<co-vfin>|KC|@CO	_	14	cc	_	_
+24	e	e	CCONJ	<co-postnom>|<co-vfin>|KC|@CO	_	25	cc	_	d2d:#106
 25	Ruben	Ruben	PROPN	_	Gender=Masc|Number=Sing	14	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Ruben_Cotton|MWEPOS=PROPN
 26	Cotton	Cotton	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
 27	,	,	PUNCT	PU|@PU	_	25	punct	_	_
@@ -122,24 +125,31 @@
 # source CETEMPúblico n=129 sec=des sem=92b &L
 # sent_id CP129-3
 # id 661
+# d2d: punct(Alexandre,,) -> punct(Caetano,,)  #106
+# d2d: cc(Alexandre,e) -> cc(Henrique,e)  #106
+# d2d: punct(Alexandre,,) -> punct(Paulo,,)  #106
+# d2d: punct(Alexandre,,) -> punct(Rui,,)  #106
+# d2d: punct(Alexandre,,) -> punct(Moutinho,,)  #106
+# d2d: punct(Alexandre,,) -> punct(Nunes,,)  #106
+# d2d: punct(Alexandre,,) -> punct(José,,)  #106
 1	Alexandre	Alexandre	PROPN	_	Gender=Masc|Number=Sing	21	nsubj	_	ChangedBy=Issue119|MWE=Alexandre_Dias|MWEPOS=PROPN
 2	Dias	Dias	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
-3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	d2d:#106
 4	Caetano	Caetano	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149
-5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	Moutinho	Moutinho	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149
-7	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 8	Nunes	Nunes	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149
-9	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Paulo_Duarte|MWEPOS=PROPN
 11	Duarte	Duarte	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
-12	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 13	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Rui_Santos|MWEPOS=PROPN
 14	Santos	Santos	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
-15	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+15	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 16	José	José	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=José_Ruivo|MWEPOS=PROPN
 17	Ruivo	Ruivo	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
-18	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+18	e	e	CCONJ	<co-subj>|KC|@CO	_	19	cc	_	d2d:#106
 19	Henrique	Henrique	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Henrique_Silva|MWEPOS=PROPN
 20	Silva	Silva	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
 21	completam	completar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -161,6 +171,7 @@
 # source CETEMPúblico n=129 sec=des sem=92b
 # sent_id CP129-4
 # id 662
+# d2d: cc(ronda,e) -> cc(garantir,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	orçamento	orçamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	para	para	ADP	PRP|@N<	_	6	case	_	_
@@ -172,7 +183,7 @@
 9	25	25	NUM	<card>|NUM|M|P|@>N	_	11	nummod	_	_
 10	mil	mil	NUM	<card>|NUM|M|P|@>N	_	11	nummod	_	_
 11	contos	conto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	obj	_	_
-12	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	_
+12	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 14	principal	principal	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	15	amod	_	_
 15	objectivo	objectivo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
@@ -236,6 +247,7 @@
 # source CETEMPúblico n=129 sec=des sem=92b
 # sent_id CP129-6
 # id 664
+# d2d: cc(condições,e) -> cc(ritmo,e)  #106
 1	Segundo	segundo	ADP	<rel>|PRP|@ADVL>	PronType=Rel	2	case	_	_
 2	responsáveis	responsável	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	ChangedBy=Issue137
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -251,7 +263,7 @@
 13	deficientes	deficiente	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	14	amod	_	_
 14	condições	condição	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	_
 15	físicas	físico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	14	amod	_	_
-16	e	e	CCONJ	<co-advo>|KC|@CO	_	14	cc	_	_
+16	e	e	CCONJ	<co-advo>|KC|@CO	_	18	cc	_	d2d:#106
 17	sem	sem	ADP	<cjt>|PRP|@<OA	_	18	case	_	_
 18	ritmo	ritmo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	conj	_	_
 19	competitivo	competitivo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	18	amod	_	_
@@ -262,6 +274,9 @@
 # source CETEMPúblico n=129 sec=des sem=92b
 # sent_id CP129-7
 # id 665
+# d2d: punct(tem,,) -> punct(fazer,,)  #106
+# d2d: cc(tem,e) -> cc(fazer,e)  #106
+# d2d: punct(tem,,) -> punct(mede,,)  #106
 1	Deshon	Deshon	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue119|MWE=Deshon_Washington|MWEPOS=PROPN
 2	Washington	Washington	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	12	punct	_	_
@@ -278,12 +293,12 @@
 14	anos	ano	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	obj	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	idade	idade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	mede	medir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	_	_
 19	2,02	2,02	NUM	<card>|NUM|M|P|@>N	_	20	nummod	_	_
 20	metros	metro	NOUN	<np-def>|N|M|P|@<SA	Gender=Masc|Number=Plur	18	nmod	_	_
-21	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-22	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
+21	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+22	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 23	vai	ir	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
 24	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	12	conj	_	_
 25	dupla	duplo	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
@@ -300,6 +315,15 @@
 # source CETEMPúblico n=129 sec=des sem=92b &L
 # sent_id CP129-8
 # id 666
+# d2d: punct(Catarino,,) -> punct(Paulo,,)  #106
+# d2d: punct(Catarino,,) -> punct(Renato,,)  #106
+# d2d: punct(Catarino,,) -> punct(Mourinho,,)  #106
+# d2d: punct(Catarino,,) -> punct(Alex,,)  #106
+# d2d: cc(Catarino,e) -> cc(Pinto,e)  #106
+# d2d: punct(Catarino,,) -> punct(João,,)  #106
+# d2d: punct(Catarino,,) -> punct(Moreira,,)  #106
+# d2d: punct(Catarino,,) -> punct(Traylor,,)  #106
+# d2d: punct(Catarino,,) -> punct(Rebelo,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	técnico	técnico	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -324,29 +348,29 @@
 22	(	(	PUNCT	PU|@PU	_	23	punct	_	_
 23	ex-Esgueira	ex-esgueira	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	21	appos	_	_
 24	)	)	PUNCT	PU|@PU	_	23	punct	_	_
-25	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 26	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	21	conj	_	ChangedBy=Issue119|MWE=Paulo_Sousa|MWEPOS=PROPN
 27	Sousa	Sousa	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 28	(	(	PUNCT	PU|@PU	_	29	punct	_	_
 29	ex-Salesianos	ex-salesianos	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	26	appos	_	_
 30	)	)	PUNCT	PU|@PU	_	29	punct	_	_
-31	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+31	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 32	Rebelo	Rebelo	PROPN	<cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	21	conj	_	_
-33	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+33	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
 34	Traylor	Traylor	PROPN	<cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	21	conj	_	_
-35	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 36	Moreira	Moreira	PROPN	<cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	21	conj	_	_
-37	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+37	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
 38	Mourinho	Mourinho	PROPN	<cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	21	conj	_	_
-39	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+39	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 40	Alex	Alex	PROPN	_	Gender=Masc|Number=Sing	21	conj	_	ChangedBy=Issue119|MWE=Alex_Pires|MWEPOS=PROPN
 41	Pires	Pires	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119
-42	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+42	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 43	Renato	Renato	PROPN	<cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	21	conj	_	_
-44	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+44	,	,	PUNCT	PU|@PU	_	45	punct	_	d2d:#106
 45	João	João	PROPN	_	Gender=Masc|Number=Sing	21	conj	_	ChangedBy=Issue119|MWE=João_Miguel|MWEPOS=PROPN
 46	Miguel	Miguel	PROPN	_	Number=Sing	45	flat:name	_	ChangedBy=Issue119
-47	e	e	CCONJ	<co-app>|KC|@CO	_	21	cc	_	_
+47	e	e	CCONJ	<co-app>|KC|@CO	_	48	cc	_	d2d:#106
 48	Pinto	Pinto	PROPN	<cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	21	conj	_	_
 49	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 

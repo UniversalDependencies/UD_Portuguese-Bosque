@@ -137,6 +137,9 @@
 # source CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
 # sent_id CF905-6
 # id 3816
+# d2d: punct(deu,,) -> punct(substituído,,)  #106
+# d2d: punct(deu,,) -> punct(saiu,,)  #106
+# d2d: cc(deu,mas) -> cc(saiu,mas)  #106
 1	Arnold	Arnold	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Arnold_Schwarzenegger|MWEPOS=PROPN
 2	Schwarzenegger	Schwarzenegger	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	deu	dar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -144,7 +147,7 @@
 5	como	como	ADP	<prd>|PRP|@<ADVL	_	6	case	_	_
 6	ator	ator	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 7	principal	principal	ADJ	<SUP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
-8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 9	foi	ser	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	_	_
 10	substituído	substituir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	conj	_	_
 11	por	por	ADP	PRP|@<PIV	_	12	case	_	_
@@ -153,8 +156,8 @@
 14	há	há	ADP	PRP|@<ADVL	_	16	case	_	_
 15	dois	dois	NUM	<card>|NUM|M|P|@>N	_	16	nummod	_	_
 16	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	ChangedBy=Issue137
-17	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-18	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|<co-fcl>|KC|@CO	_	3	cc	_	_
+17	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+18	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|<co-fcl>|KC|@CO	_	22	cc	_	d2d:#106
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	projeto	projeto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj	_	_
 21	nunca	nunca	ADV	ADV|@ADVL>	_	22	advmod	_	_

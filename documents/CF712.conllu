@@ -3,6 +3,7 @@
 # source CETENFolha n=712 cad=Agrofolha sec=agr sem=94b
 # sent_id CF712-1
 # id 2985
+# d2d: cc(hectares,e) -> cc(hectares,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	produtor	produtor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	iniciou	iniciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -18,7 +19,7 @@
 13	hectares	hectare	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	amendoim	amendoim	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
-16	e	e	CCONJ	<co-prparg>|KC|@CO	_	13	cc	_	_
+16	e	e	CCONJ	<co-prparg>|KC|@CO	_	18	cc	_	d2d:#106
 17	240	240	NUM	<card>|NUM|M|P|@>N	_	18	nummod	_	_
 18	hectares	hectare	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	13	conj	_	_
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
@@ -30,6 +31,7 @@
 # source CETENFolha n=712 cad=Agrofolha sec=agr sem=94b
 # sent_id CF712-2
 # id 2986
+# d2d: cc(ha,e) -> cc(ha,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	93	93	NUM	<card>|NUM|M|S|@P<	_	5	nmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -39,7 +41,7 @@
 7	ha	ha	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	obj	_	_
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	amendoim	amendoim	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
-10	e	e	CCONJ	<co-acc>|KC|@CO	_	7	cc	_	_
+10	e	e	CCONJ	<co-acc>|KC|@CO	_	12	cc	_	d2d:#106
 11	97	97	NUM	<card>|NUM|M|P|@>N	_	12	nummod	_	_
 12	ha	ha	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	conj	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
@@ -51,6 +53,9 @@
 # source CETENFolha n=712 cad=Agrofolha sec=agr sem=94b
 # sent_id CF712-3
 # id 2987
+# d2d: punct(conseguiu,,) -> punct(construindo,,)  #106
+# d2d: cc(conseguiu,e) -> cc(tem,e)  #106
+# d2d: cc(camionetes,e) -> cc(trator,e)  #106
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	dinheiro	dinheiro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
@@ -62,20 +67,20 @@
 9	comprar	comprar	VERB	<first-cjt>|<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	8	xcomp	_	_
 10	duas	dois	NUM	<card>|NUM|F|P|@>N	_	11	nummod	_	_
 11	camionetes	camionete	NOUN	<first-cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	9	obj	_	_
-12	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-acc>|KC|@CO	_	14	cc	_	d2d:#106
 13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	trator	trator	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	conj	_	_
 15	de	de	ADP	PRP|@N<	_	17	case	_	_
 16	150	150	NUM	<card>|NUM|M|P|@>N	_	17	nummod	_	_
 17	Hp	hp	NOUN	<prop>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	está	estar	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
 20	construindo	construir	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	8	conj	_	_
 21	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	casa	casa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
 23	em	em	ADP	PRP|@<ADVL	_	24	case	_	_
 24	Pontal	pontal	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	ChangedBy=Issue137
-25	e	e	CCONJ	<co-sta>|KC|@CO	_	8	cc	_	_
+25	e	e	CCONJ	<co-sta>|KC|@CO	_	27	cc	_	d2d:#106
 26	ainda	ainda	ADV	ADV|@ADVL>	_	27	advmod	_	_
 27	tem	ter	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
 28	para	para	ADP	PRP|@<ADVL	_	29	mark	_	_
@@ -116,6 +121,7 @@
 # source CETENFolha n=712 cad=Agrofolha sec=agr sem=94b
 # sent_id CF712-5
 # id 2989
+# d2d: cc(Trabalho,e) -> cc(tive,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
 2	Trabalho	trabalhar	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	com	com	ADP	<first-cjt>|PRP|@<PIV	_	4	case	_	_
@@ -123,7 +129,7 @@
 5	há	há	ADP	PRP|@<ADVL	_	7	case	_	_
 6	27	27	NUM	<card>|NUM|M|P|@>N	_	7	nummod	_	_
 7	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	obl	_	ChangedBy=Issue137
-8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	d2d:#106
 9	sempre	sempre	ADV	ADV|@ADVL>	_	10	advmod	_	_
 10	tive	ter	VERB	<mv>|<cjt>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	conj	_	_
 11	lucro	lucro	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
@@ -154,13 +160,14 @@
 # source CETENFolha n=712 cad=Agrofolha sec=agr sem=94b
 # sent_id CF712-7
 # id 2991
+# d2d: cc(%,e) -> cc(%,e)  #106
 1	Hoje	hoje	ADV	ADV|@ADVL>	_	3	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	varia	variar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	entre	entre	ADP	PRP|@<ADVL	_	6	case	_	_
 5	12	12	NUM	<card>|NUM|M|P|@>N	_	6	nummod	_	_
 6	%	%	SYM	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
-7	e	e	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	d2d:#106
 8	15	15	NUM	<card>|NUM|M|P|@>N	_	9	nummod	_	_
 9	%	%	SYM	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	conj	_	_
 10	»	»	PUNCT	PU|@PU	_	3	punct	_	_

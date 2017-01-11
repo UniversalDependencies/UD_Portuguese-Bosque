@@ -3,6 +3,11 @@
 # source CETENFolha n=156 cad=Imóveis sec=eco sem=94a	&D
 # sent_id CF156-1
 # id 658
+# d2d: punct(captador,,) -> punct(suportes,,)  #106
+# d2d: cc(captador,e) -> cc(conector,e)  #106
+# d2d: punct(captador,,) -> punct(cabo,,)  #106
+# d2d: punct(captador,,) -> punct(malha,,)  #106
+# d2d: punct(captador,,) -> punct(tubo,,)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Milton	Milton	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	ChangedBy=Issue119|MWE=Milton_Julio_Zanluqui|MWEPOS=PROPN
 3	Julio	Julio	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -48,22 +53,22 @@
 43	tipo	tipo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	_
 44	terminal	terminal	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	43	nmod:npmod	_	_
 45	aéreo	aéreo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	43	amod	_	_
-46	,	,	PUNCT	PU|@PU	_	40	punct	_	_
+46	,	,	PUNCT	PU|@PU	_	47	punct	_	d2d:#106
 47	cabo	cabo	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	40	conj	_	_
 48	de	de	ADP	PRP|@N<	_	49	case	_	_
 49	cobre	cobre	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	47	nmod	_	_
-50	,	,	PUNCT	PU|@PU	_	40	punct	_	_
+50	,	,	PUNCT	PU|@PU	_	51	punct	_	d2d:#106
 51	suportes	suporte	NOUN	<cjt>|<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	40	conj	_	_
 52	isoladores	isolador	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	51	amod	_	_
-53	,	,	PUNCT	PU|@PU	_	40	punct	_	_
+53	,	,	PUNCT	PU|@PU	_	54	punct	_	d2d:#106
 54	tubo	tubo	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	40	conj	_	_
 55	de	de	ADP	PRP|@N<	_	56	case	_	_
 56	proteção	proteção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	54	nmod	_	_
-57	,	,	PUNCT	PU|@PU	_	40	punct	_	_
+57	,	,	PUNCT	PU|@PU	_	58	punct	_	d2d:#106
 58	malha	malha	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	40	conj	_	_
 59	de	de	ADP	PRP|@N<	_	60	case	_	_
 60	aterramento	aterramento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	58	nmod	_	_
-61	e	e	CCONJ	<co-n<pred>|KC|@CO	_	40	cc	_	_
+61	e	e	CCONJ	<co-n<pred>|KC|@CO	_	62	cc	_	d2d:#106
 62	conector	conector	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	40	conj	_	_
 63	de	de	ADP	PRP|@N<	_	64	case	_	_
 64	medição	medição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	62	nmod	_	_
@@ -74,14 +79,16 @@
 # source CETENFolha n=156 cad=Imóveis sec=eco sem=94a
 # sent_id CF156-2
 # id 659
+# d2d: punct(envolve,») -> punct(indicado,»)  #106
+# d2d: cc(envolve,e) -> cc(indicado,e)  #106
 1	Esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	equipamento	equipamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 4	envolve	envolver	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	»	»	PUNCT	PU|@PU	_	4	punct	_	_
+5	»	»	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	prédio	prédio	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
-8	e	e	CCONJ	<co-sta>|KC|@CO	_	4	cc	_	_
+8	e	e	CCONJ	<co-sta>|KC|@CO	_	10	cc	_	d2d:#106
 9	é	ser	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_
 10	indicado	indicar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	conj	_	_
 11	para	para	ADP	PRP|@<ADVL	_	12	case	_	_

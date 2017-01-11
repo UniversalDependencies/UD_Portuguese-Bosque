@@ -3,6 +3,7 @@
 # source CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # sent_id CF219-1
 # id 942
+# d2d: cc(três,ou) -> cc(quatro,ou)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	proposta	proposta	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	plausível	plausível	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -16,7 +17,7 @@
 11	determinado	determinar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
 12	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 13	três	três	NUM	<first-cjt>|<card>|NUM|M|P|@>N	_	16	nummod	_	_
-14	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	13	cc	_	_
+14	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	15	cc	_	d2d:#106
 15	quatro	quatro	NUM	<cjt>|<card>|NUM|M|P|@>N	_	13	conj	_	_
 16	meses	mês	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	10	appos	_	_
 17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
@@ -68,6 +69,9 @@
 # source CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # sent_id CF219-3
 # id 944
+# d2d: cc(emenda,e) -> cc(Orçamento,e)  #106
+# d2d: punct(emenda,,) -> punct(Orçamento,,)  #106
+# d2d: punct(emenda,,) -> punct(Orçamento,,)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	hipótese	hipótese	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
@@ -94,11 +98,11 @@
 24	Social	Social	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
 26	Emergência	Emergência	PROPN	PROP|@P<	Number=Sing	23	nmod	_	_
-27	e	e	CCONJ	<co-x>|KC|@CO	_	18	cc	_	_
-28	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+27	e	e	CCONJ	<co-x>|KC|@CO	_	33	cc	_	d2d:#106
+28	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 29	em	em	ADP	PRP|@<ADVL	_	30	case	_	MWE=em_seguida
 30	seguida	seguida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
-31	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+31	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 33	Orçamento	orçamento	NOUN	<cjt>|<prop>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	conj	_	_
 34	federal	federal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	33	amod	_	_

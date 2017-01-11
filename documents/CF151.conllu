@@ -116,6 +116,7 @@
 # source CETENFolha n=151 cad=Ilustrada sec=nd sem=94b
 # sent_id CF151-13
 # id 606
+# d2d: cc(par,e) -> cc(camisinhas,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	camelô	camelô	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	cearense	cearense	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -128,7 +129,7 @@
 10	par	par	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	6	appos	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	joelheiras	joelheira	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	_
-13	e	e	CCONJ	<co-n<pred>|KC|@CO	_	10	cc	_	_
+13	e	e	CCONJ	<co-n<pred>|KC|@CO	_	15	cc	_	d2d:#106
 14	45	45	NUM	<card>|NUM|F|P|@>N	_	15	nummod	_	_
 15	camisinhas	camisinha	NOUN	<cjt>|<np-def>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	10	conj	_	_
 16	!	!	PUNCT	PU|@PU	_	4	punct	_	_
@@ -179,13 +180,15 @@
 # source CETENFolha n=151 cad=Ilustrada sec=nd sem=94b &L
 # sent_id CF151-18
 # id 611
+# d2d: cc(Balança,e) -> cc(Peru,e)  #106
+# d2d: punct(Balança,,) -> punct(Sacode,,)  #106
 1	Balança	Balança	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Balança_Rolha|MWEPOS=PROPN
 2	Rolha	Rolha	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
-3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	d2d:#106
 4	Sacode	Sacode	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Sacode_a_Rosquinha|MWEPOS=PROPN
 5	a	a	DET	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	Rosquinha	Rosquinha	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
-7	e	e	CCONJ	<co-acc>|KC|@CO	_	1	cc	_	_
+7	e	e	CCONJ	<co-acc>|KC|@CO	_	8	cc	_	d2d:#106
 8	Peru	Peru	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Peru_Esperto|MWEPOS=PROPN
 9	Esperto	Esperto	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 
@@ -326,9 +329,10 @@
 # source CETENFolha n=151 cad=Ilustrada sec=nd sem=94b
 # sent_id CF151-29
 # id 622
+# d2d: cc(mole,mas) -> cc(sobe,mas)  #106
 1	É	ser	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-EXC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
 2	mole	mole	ADJ	ADJ|M/F|S|@<SC	Gender=Unsp|Number=Sing	0	root	_	_
-3	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+3	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	d2d:#106
 4	sobe	subir	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-EXC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 5	!	!	PUNCT	PU|@PU	_	2	punct	_	_
 
@@ -460,10 +464,11 @@
 # source CETENFolha n=151 cad=Ilustrada sec=nd sem=94b
 # sent_id CF151-39
 # id 632
+# d2d: cc(Scala,e) -> cc(Monte,e)  #106
 1	Antes	antes	ADV	ADV|@ADVL>	_	9	advmod	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Scala	Scala	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
-4	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
+4	e	e	CCONJ	<co-subj>|KC|@CO	_	6	cc	_	d2d:#106
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Monte	Monte	PROPN	_	Gender=Masc|Number=Sing	3	conj	_	ChangedBy=Issue119|MWE=Monte_líbano|MWEPOS=PROPN
 7	líbano	líbano	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
@@ -548,6 +553,7 @@
 # source CETENFolha n=151 cad=Ilustrada sec=nd sem=94b
 # sent_id CF151-44
 # id 637
+# d2d: cc(sei,mas) -> cc(parece,mas)  #106
 1	E	e	CCONJ	KC|@CO	_	3	cc	_	_
 2	eu	eu	PRON	PERS|M|1S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
 3	sei	saber	VERB	<first-cjt>|<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -555,7 +561,7 @@
 5	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
 6	tudo	tudo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	7	det	_	_
 7	bofe	bofe	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	3	ccomp	_	_
-8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 9	parece	parecer	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 10	tudo	tudo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	11	det	_	_
 11	gay	gay	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	9	xcomp	_	_

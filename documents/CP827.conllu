@@ -3,13 +3,14 @@
 # source CETEMPúblico n=827 sec=pol sem=92a
 # sent_id CP827-1
 # id 4250
+# d2d: cc(quando,e) -> cc(como,e)  #106
 1	Maastricht	Maastricht	PROPN	PROP|M/F|S|@NPHR	Gender=Unsp|Number=Sing	0	root	_	_
 2	em	em	ADP	PRP|@N<	_	3	case	_	_
 3	São	São	PROPN	_	Gender=Masc|Number=Sing	1	nmod	_	ChangedBy=Issue119|MWE=São_Bento|MWEPOS=PROPN
 4	Bento	Bento	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 5	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 6	quando	quando	ADV	<first-cjt>|<interr>|ADV|@N<PRED	_	1	advmod	_	_
-7	e	e	CCONJ	KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	KC|@CO	_	8	cc	_	d2d:#106
 8	como	como	ADV	<interr>|ADV|@N<PRED	_	6	conj	_	ChangedBy=Issue149
 
 # text Com a entrada do Tratado de Maastricht na Assembleia da República prevista já para a próxima semana-- depois de o Conselho de Ministros ter decidido ontem o envio de uma proposta de resolução para ratificação parlamentar--, o debate sobre o processo e o «timing» adequado à sua aprovação passou imediatamente à ordem do dia.
@@ -17,6 +18,7 @@
 # source CETEMPúblico n=827 sec=pol sem=92a
 # sent_id CP827-2
 # id 4251
+# d2d: cc(debate,e) -> cc(timing,e)  #106
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	entrada	entrada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	58	obl	_	ChangedBy=Issue137
@@ -64,7 +66,7 @@
 45	sobre	sobre	ADP	PRP|@N<	_	47	case	_	_
 46	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 47	processo	processo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	44	nmod	_	_
-48	e	e	CCONJ	<co-subj>|KC|@CO	_	44	cc	_	_
+48	e	e	CCONJ	<co-subj>|KC|@CO	_	51	cc	_	d2d:#106
 49	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_
 50	«	«	PUNCT	PU|@PU	_	51	punct	_	_
 51	timing	timing	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	44	conj	_	_

@@ -3,6 +3,7 @@
 # source CETENFolha n=461 cad=Brasil sec=pol sem=94a
 # sent_id CF461-1
 # id 1940
+# d2d: cc(calça,e) -> cc(camisa,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Luiz	Luiz	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	ChangedBy=Issue119|MWE=Luiz_Estevão|MWEPOS=PROPN
 3	Estevão	Estevão	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -14,7 +15,7 @@
 9	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	calça	calça	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
 11	marinho	marinho	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	_
-12	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	_
+12	e	e	CCONJ	<co-prparg>|KC|@CO	_	13	cc	_	d2d:#106
 13	camisa	camisa	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	conj	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	algodão	algodão	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
@@ -61,6 +62,8 @@
 # source CETENFolha n=461 cad=Brasil sec=pol sem=94a
 # sent_id CF461-3
 # id 1942
+# d2d: cc(advogados,e) -> cc(pessoas,e)  #106
+# d2d: punct(advogados,,) -> punct(políticos,,)  #106
 1	Collor	Collor	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	recebia	receber	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 3	telefonemas	telefonema	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
@@ -71,11 +74,11 @@
 8	de	de	ADP	<first-cjt>|<sam->|PRP|@N<PRED	_	10	case	_	_
 9	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
 10	advogados	advogado	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
-11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 12	de	de	ADP	<cjt>|PRP|@N<PRED	_	13	case	_	_
 13	políticos	político	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	conj	_	_
 14	amigos	amigo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	_
-15	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	10	cc	_	_
+15	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	17	cc	_	d2d:#106
 16	de	de	ADP	<cjt>|PRP|@N<PRED	_	17	case	_	_
 17	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	conj	_	_
 18	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	19	nsubj	_	_

@@ -3,6 +3,7 @@
 # source CETEMPúblico n=376 sec=pol sem=94a
 # sent_id CP376-1
 # id 1964
+# d2d: cc(perseguições,e) -> cc(ataques,e)  #106
 1	Desde	desde	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Verão	verão	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137
@@ -28,7 +29,7 @@
 23	a	a	ADP	<sam->|PRP|@<PIV	_	25	case	_	_
 24	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
 25	perseguições	perseguição	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
-26	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	_
+26	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	d2d:#106
 27	ataques	ataque	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	conj	_	_
 28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
 29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
@@ -45,6 +46,8 @@
 # source CETEMPúblico n=376 sec=pol sem=94a
 # sent_id CP376-2
 # id 1965
+# d2d: cc(vilas,e) -> cc(aldeias,e)  #106
+# d2d: cc(abandonado,e) -> cc(dirijam,e)  #106
 1	Calcula-	calcular	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	_
 3	que	que	SCONJ	KS|@SUB	_	1	mark	_	_
@@ -58,9 +61,9 @@
 11	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
 12	suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur	13	det	_	_
 13	vilas	vila	NOUN	<first-cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
-14	e	e	CCONJ	<co-acc>|KC|@CO	_	13	cc	_	_
+14	e	e	CCONJ	<co-acc>|KC|@CO	_	15	cc	_	d2d:#106
 15	aldeias	aldeia	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	13	conj	_	_
-16	e	e	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+16	e	e	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 17	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	18	expl	_	ChangedBy=Issue135
 18	dirijam	dirigir	VERB	<cjt>|<mv>|<se-passive>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
 19	para	para	ADP	PRP|@<OA	_	20	case	_	_
@@ -76,6 +79,13 @@
 # source CETEMPúblico n=376 sec=pol sem=94a
 # sent_id CP376-3
 # id 1966
+# d2d: cc(quilómetros,e) -> cc(aldeias,e)  #106
+# d2d: cc(animais,e) -> cc(plantas,e)  #106
+# d2d: punct(pântanos,,) -> punct(culturas,,)  #106
+# d2d: punct(pântanos,,) -> punct(lagos,,)  #106
+# d2d: punct(pântanos,,) -> punct(rios,,)  #106
+# d2d: punct(quilómetros,,) -> punct(animais,,)  #106
+# d2d: punct(quilómetros,,) -> punct(populações,,)  #106
 1	Já	já	ADV	ADV|@>A	_	3	advmod	_	_
 2	em	em	ADP	PRP|@ADVL>	_	3	case	_	_
 3	território	território	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
@@ -106,7 +116,7 @@
 28	trás	trás	ADV	ADV|@P<	_	26	advmod	_	_
 29	:	:	PUNCT	PU|@PU	_	5	punct	_	_
 30	quilómetros	quilómetro	NOUN	<first-cjt>|<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	24	appos	_	_
-31	e	e	CCONJ	<co-app>|KC|@CO	_	30	cc	_	_
+31	e	e	CCONJ	<co-app>|KC|@CO	_	48	cc	_	d2d:#106
 32	quilómetros	quilómetro	NOUN	<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	30	appos	_	_
 33	de	de	ADP	PRP|@N<	_	34	case	_	_
 34	terrenos	terreno	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	30	nmod	_	_
@@ -115,22 +125,22 @@
 37	anteriormente	anteriormente	ADV	ADV|@ADVL>	_	38	advmod	_	_
 38	existiam	existir	VERB	<mv>|V|IMPF|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	34	acl:relcl	_	_
 39	pântanos	pântano	NOUN	<first-cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	38	nsubj	_	_
-40	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+40	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
 41	rios	rio	NOUN	<cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	39	conj	_	_
-42	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+42	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 43	lagos	lago	NOUN	<cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	39	conj	_	_
-44	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+44	,	,	PUNCT	PU|@PU	_	45	punct	_	d2d:#106
 45	culturas	cultura	NOUN	<cjt>|<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	39	conj	_	_
 46	agrícolas	agrícola	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	45	amod	_	_
 47	;	;	PUNCT	PU|@PU	_	5	punct	_	_
 48	aldeias	aldeia	NOUN	<cjt>|<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	30	conj	_	_
 49	destruídas	destruir	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	48	acl	_	_
-50	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+50	,	,	PUNCT	PU|@PU	_	51	punct	_	d2d:#106
 51	populações	população	NOUN	<cjt>|<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	30	conj	_	_
 52	massacradas	massacrar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	51	acl	_	_
-53	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+53	,	,	PUNCT	PU|@PU	_	54	punct	_	d2d:#106
 54	animais	animal	NOUN	<cjt>|<first-cjt>|<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	30	conj	_	_
-55	e	e	CCONJ	KC|@CO	_	54	cc	_	_
+55	e	e	CCONJ	KC|@CO	_	56	cc	_	d2d:#106
 56	plantas	planta	NOUN	<np-idf>|<cjt>|N|F|P|@APP	Gender=Fem|Number=Plur	54	conj	_	_
 57	mortos	morrer	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	54	acl	_	_
 58	em	em	ADP	PRP|@<ADVL	_	59	case	_	_

@@ -86,6 +86,9 @@
 # source CETENFolha n=876 cad=Caderno Especial sec=nd sem=94b
 # sent_id CF876-7
 # id 3696
+# d2d: cc(fiscais,e) -> cc(financeiros,e)  #106
+# d2d: punct(proteção,,) -> punct(regimes,,)  #106
+# d2d: cc(proteção,e) -> cc(incentivos,e)  #106
 1	1)	1	NUM	<card>|NUM|M/F|S|@NPHR	_	0	root	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	esgotamento	esgotamento	NOUN	<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	1	parataxis	_	_
@@ -105,7 +108,7 @@
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	competição	competição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
 19	externa	externo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	18	amod	_	_
-20	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	regimes	regime	NOUN	<cjt>|<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	15	conj	_	_
 22	especiais	especial	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	21	amod	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
@@ -114,11 +117,11 @@
 26	bens	bem	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
 28	capital	capital	ADJ	ADJ|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
-29	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	15	cc	_	_
+29	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	31	cc	_	d2d:#106
 30	generosos	generoso	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	31	amod	_	_
 31	incentivos	incentivo	NOUN	<cjt>|<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	15	conj	_	_
 32	fiscais	fiscal	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	31	amod	_	_
-33	e	e	CCONJ	<co-postnom>|KC|@CO	_	32	cc	_	_
+33	e	e	CCONJ	<co-postnom>|KC|@CO	_	34	cc	_	d2d:#106
 34	financeiros	financeiro	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	32	conj	_	_
 35	;	;	PUNCT	PU|@PU	_	1	punct	_	_
 

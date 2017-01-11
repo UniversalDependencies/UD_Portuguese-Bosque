@@ -71,6 +71,9 @@
 # source CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # sent_id CF679-6
 # id 2853
+# d2d: punct(McDonald's,,) -> punct(Água,,)  #106
+# d2d: cc(McDonald's,e) -> cc(Localiza,e)  #106
+# d2d: punct(McDonald's,,) -> punct(Multicoisas,,)  #106
 1	Trata-	tratar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	_	ChangedBy=Issue135
 3	de	de	ADP	<sam->|PRP|@<PIV	_	5	case	_	_
@@ -88,13 +91,13 @@
 15	redes	rede	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	obl	_	ChangedBy=Issue137
 16	como	como	ADP	<com>|PRP|@N<	_	17	case	_	_
 17	McDonald's	McDonald's	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 19	Água	Água	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	17	conj	_	MWE=Água_de_Cheiro
 20	de	de	ADP	PRP|@N<	_	21	case	_	_
 21	Cheiro	Cheiro	PROPN	PROP|@P<	Number=Sing	19	nmod	_	_
-22	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+22	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 23	Multicoisas	Multicoisas	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	17	conj	_	_
-24	e	e	CCONJ	<co-subj>|KC|@CO	_	17	cc	_	_
+24	e	e	CCONJ	<co-subj>|KC|@CO	_	25	cc	_	d2d:#106
 25	Localiza	Localiza	PROPN	<cjt>|PROP|F|S|@N<	Gender=Fem|Number=Sing	17	conj	_	_
 26	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -103,6 +106,7 @@
 # source CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # sent_id CF679-7
 # id 2854
+# d2d: cc(atenuado,e) -> cc(melhorado,e)  #106
 1	Já	já	ADV	ADV|@ADVL>	_	3	advmod	_	_
 2	bastante	bastante	ADV	<quant>|ADV|@ADVL>	_	3	advmod	_	_
 3	difundidos	difundido	ADJ	<mv>|V|PCP|M|P|@ICL-PRED>	Gender=Masc|Number=Plur	11	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
@@ -115,7 +119,7 @@
 10	têm	ter	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
 11	atenuado	atenuar	VERB	<mv>|<first-cjt>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	0	root	_	_
 12	problemas	problema	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	11	obj	_	_
-13	e	e	CCONJ	<co-pcp>|<co-aux<>|KC|@CO	_	11	cc	_	_
+13	e	e	CCONJ	<co-pcp>|<co-aux<>|KC|@CO	_	14	cc	_	d2d:#106
 14	melhorado	melhorar	VERB	<mv>|<cjt>|V|PCP|@ICL-AUX<	VerbForm=Part	11	conj	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 16	tradicionalmente	tradicionalmente	ADV	ADV|@>A	_	17	advmod	_	_
@@ -131,6 +135,9 @@
 # source CETENFolha n=679 cad=Tudo sec=nd sem=94b &W
 # sent_id CF679-8
 # id 2855
+# d2d: cc(ganham,e) -> cc(ter,e)  #106
+# d2d: punct(produtos,,) -> punct(prazos,,)  #106
+# d2d: cc(produtos,e) -> cc(estratégias,e)  #106
 1	Atuando	atuar	VERB	<mv>|<cjt>|V|GER|@ICL-STA	VerbForm=Ger	0	root	_	_
 2	em	em	ADP	PRP|@<ADVL	_	3	case	_	_
 3	conjunto	conjunto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137
@@ -139,7 +146,7 @@
 6	franqueados	franqueado	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
 7	ganham	ganhar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
 8	força	força	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
-9	e	e	CCONJ	<co-sta>|KC|@CO	_	7	cc	_	_
+9	e	e	CCONJ	<co-sta>|KC|@CO	_	12	cc	_	d2d:#106
 10	passam	passar	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
 11	a	a	ADP	PRP|@PRT-AUX<	_	12	nmod	_	_
 12	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	conj	_	ChangedBy=Issue149
@@ -156,11 +163,11 @@
 23	definicão	definição	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
 25	produtos	produto	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	_
-26	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 27	prazos	prazo	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	conj	_	_
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	pagamento	pagamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
-30	e	e	CCONJ	<co-as<>|KC|@CO	_	25	cc	_	_
+30	e	e	CCONJ	<co-as<>|KC|@CO	_	31	cc	_	d2d:#106
 31	estratégias	estratégia	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	25	conj	_	_
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
 33	propaganda	propaganda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	31	nmod	_	_

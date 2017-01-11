@@ -3,10 +3,15 @@
 # source CETENFolha n=385 cad=Brasil sec=pol sem=94a &L
 # sent_id CF385-1
 # id 1600
+# d2d: punct(Márcia,,) -> punct(Aluizio,,)  #106
+# d2d: cc(Márcia,e) -> cc(Aluizio,e)  #106
+# d2d: cc(Serpa,e) -> cc(Teixeira,e)  #106
+# d2d: punct(Márcia,,) -> punct(Paulo,,)  #106
+# d2d: punct(Márcia,,) -> punct(Paulo,,)  #106
 1	Além	além	ADV	ADV|@ADVL>	_	10	advmod	_	MWE=Além_de
 2	de	de	ADP	PRP|@A<	_	3	case	_	_
 3	Serpa	Serpa	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
-4	e	e	CCONJ	<co-prparg>|KC|@CO	_	3	cc	_	_
+4	e	e	CCONJ	<co-prparg>|KC|@CO	_	5	cc	_	d2d:#106
 5	Teixeira	Teixeira	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	conj	_	ChangedBy=Issue149
 6	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 7	já	já	ADV	ADV|@ADVL>	_	10	advmod	_	_
@@ -22,19 +27,19 @@
 17	Viana	Viana	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 18	(	(	PUNCT	PU|@PU	_	19	punct	_	_
 19	federal	federal	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	15	amod	_	_
-20	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
 21	PDT	PDT	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	15	appos	_	_
 22	)	)	PUNCT	PU|@PU	_	19	punct	_	_
-23	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
 24	Paulo	Paulo	PROPN	<cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	15	conj	_	MWE=Paulo_de_Almeida
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
 26	Almeida	Almeida	PROPN	PROP|@P<	Number=Sing	24	nmod	_	_
 27	(	(	PUNCT	PU|@PU	_	28	punct	_	_
 28	federal	federal	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	24	amod	_	_
-29	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+29	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 30	PSD	PSD	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	24	appos	_	_
 31	)	)	PUNCT	PU|@PU	_	28	punct	_	_
-32	e	e	CCONJ	<co-postnom>|KC|@CO	_	15	cc	_	_
+32	e	e	CCONJ	<co-postnom>|KC|@CO	_	33	cc	_	d2d:#106
 33	Aluizio	Aluizio	PROPN	<cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	15	conj	_	MWE=Aluizio_de_Castro
 34	de	de	ADP	PRP|@N<	_	35	case	_	_
 35	Castro	Castro	PROPN	PROP|@P<	Number=Sing	33	nmod	_	_
@@ -81,6 +86,8 @@
 # source CETENFolha n=385 cad=Brasil sec=pol sem=94a
 # sent_id CF385-3
 # id 1602
+# d2d: cc(votos,e) -> cc(93,e)  #106
+# d2d: punct(votos,,) -> punct(93,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tribunal	tribunal	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	anulou	anular	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -91,10 +98,10 @@
 8	Cerqueira	Cerqueira	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	(	(	PUNCT	PU|@PU	_	10	punct	_	_
 10	federal	federal	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	7	amod	_	_
-11	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 12	PP	pp	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	7	appos	_	_
 13	)	)	PUNCT	PU|@PU	_	10	punct	_	_
-14	e	e	CCONJ	<co-acc>|KC|@CO	_	5	cc	_	_
+14	e	e	CCONJ	<co-acc>|KC|@CO	_	15	cc	_	d2d:#106
 15	93	93	NUM	<cjt>|<Eg>|<card>|NUM|M|P|@<ACC	_	5	conj	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	Emir	Emir	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue119|MWE=Emir_Larangeira|MWEPOS=PROPN

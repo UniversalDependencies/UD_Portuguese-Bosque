@@ -56,22 +56,26 @@
 # source CETEMPúblico n=861 sec=soc sem=93b
 # sent_id CP861-3
 # id 4425
+# d2d: punct(continua,,) -> punct(torna,,)  #106
+# d2d: punct(continua,,) -> punct(bate,,)  #106
+# d2d: cc(continua,e) -> cc(barrentas,e)  #106
+# d2d: punct(continua,,) -> punct(barrentas,,)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	mar	mar	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 4	continua	continuar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	ccomp	_	_
 5	mau	mau	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	4	xcomp	_	_
-6	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 7	bate	bater	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 8	muito	muito	ADV	<quant>|ADV|@<ADVL	_	7	advmod	_	_
 9	ali	ali	ADV	ADV|@<ADVL	_	7	advmod	_	_
-10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-11	e	e	CCONJ	<co-acc>|<co-vfin>|<co-fcl>|KC|@CO	_	4	cc	_	_
+10	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+11	e	e	CCONJ	<co-acc>|<co-vfin>|<co-fcl>|KC|@CO	_	15	cc	_	d2d:#106
 12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
 13	águas	água	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	15	nsubj	_	_
 14	estão	estar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
 15	barrentas	barrento	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	4	conj	_	_
-16	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 17	o	o	PRON	_	Gender=Masc|Number=Sing	18	det	_	_
 18	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	19	nsubj	_	_
 19	torna	tornar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_

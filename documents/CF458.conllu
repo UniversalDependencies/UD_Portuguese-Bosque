@@ -3,6 +3,9 @@
 # source CETENFolha n=458 cad=Dinheiro sec=eco sem=94b
 # sent_id CF458-1
 # id 1925
+# d2d: cc(estrutura,e) -> cc(número,e)  #106
+# d2d: cc(beleza,e) -> cc(cirurgia,e)  #106
+# d2d: punct(beleza,,) -> punct(medicina,,)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	presidente	presidente	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	ChangedBy=Issue137
@@ -25,7 +28,7 @@
 20	ter	ter	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	18	advcl	_	_
 21	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	22	det	_	_
 22	estrutura	estrutura	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
-23	e	e	CCONJ	<co-acc>|KC|@CO	_	22	cc	_	_
+23	e	e	CCONJ	<co-acc>|KC|@CO	_	24	cc	_	d2d:#106
 24	número	número	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	conj	_	_
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
 26	produtos	produto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	_
@@ -33,10 +36,10 @@
 28	clínicas	clínica	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	26	nmod	_	_
 29	de	de	ADP	PRP|@N<	_	30	case	_	_
 30	beleza	beleza	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	_
-31	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+31	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 32	medicina	medicina	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	conj	_	_
 33	estética	estético	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	32	amod	_	_
-34	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	_
+34	e	e	CCONJ	<co-prparg>|KC|@CO	_	35	cc	_	d2d:#106
 35	cirurgia	cirurgia	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	conj	_	_
 36	plástica	plástico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	35	amod	_	_
 37	.	.	PUNCT	PU|@PU	_	18	punct	_	_
@@ -65,6 +68,7 @@
 # source CETENFolha n=458 cad=Dinheiro sec=eco sem=94b
 # sent_id CF458-3
 # id 1927
+# d2d: cc(possui,e) -> cc(fabrica,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	empresa	empresa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	possui	possuir	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -73,7 +77,7 @@
 6	em	em	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	França	França	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
-9	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+9	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	d2d:#106
 10	fabrica	fabricar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	equipamentos	equipamento	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	obj	_	_
@@ -88,6 +92,8 @@
 # source CETENFolha n=458 cad=Dinheiro sec=eco sem=94b
 # sent_id CF458-4
 # id 1928
+# d2d: cc(institutos,e) -> cc(consumidor,e)  #106
+# d2d: punct(institutos,)) -> punct(consumidor,))  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	produtos	produto	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -95,8 +101,8 @@
 5	(	(	PUNCT	PU|@PU	_	7	punct	_	_
 6	para	para	ADP	<first-cjt>|PRP|@<ADVL	_	7	case	_	_
 7	institutos	instituto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
-8	)	)	PUNCT	PU|@PU	_	7	punct	_	_
-9	e	e	CCONJ	<co-advl>|KC|@CO	_	7	cc	_	_
+8	)	)	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
+9	e	e	CCONJ	<co-advl>|KC|@CO	_	12	cc	_	d2d:#106
 10	para	para	ADP	<cjt>|PRP|@<ADVL	_	12	case	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	consumidor	consumidor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	conj	_	ChangedBy=Issue149

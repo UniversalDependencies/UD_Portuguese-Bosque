@@ -58,16 +58,19 @@
 # source CETENFolha n=283 cad=Esporte sec=des sem=94a
 # sent_id CF283-5
 # id 1189
+# d2d: punct(casa,,) -> punct(assistência,,)  #106
+# d2d: cc(casa,e) -> cc(passe,e)  #106
+# d2d: punct(casa,,) -> punct(carro,,)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	garantiram	garantir	VERB	<mv>|V|PS/MQP|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	19	ccomp	_	_
 4	casa	casa	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
-5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	carro	carro	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	conj	_	_
-7	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 8	assistência	assistência	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	conj	_	_
 9	médica	médico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	_
-10	e	e	CCONJ	<co-acc>|KC|@CO	_	4	cc	_	_
+10	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	d2d:#106
 11	passe	passe	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	conj	_	_
 12	livre	livre	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
 13	depois	depois	ADV	ADV|@ADVL>	_	19	advmod	_	_

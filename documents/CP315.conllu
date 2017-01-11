@@ -50,6 +50,7 @@
 # source CETEMPúblico n=315 sec=soc sem=96b
 # sent_id CP315-3
 # id 1656
+# d2d: cc(adiantando,e) -> cc(esclarecendo,e)  #106
 1	Agora	agora	ADV	<kc>|ADV|@ADVL>	_	18	advmod	_	_
 2	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
 3	só	só	ADV	ADV|@ADVL>	_	5	advmod	_	_
@@ -90,7 +91,7 @@
 38	de	de	ADP	<sam->|PRP|@N<ARG	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	duna	duna	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	37	nmod	_	_
-41	e	e	CCONJ	<co-icl>|<co-ger>|KC|@CO	_	25	cc	_	_
+41	e	e	CCONJ	<co-icl>|<co-ger>|KC|@CO	_	42	cc	_	d2d:#106
 42	esclarecendo	esclarecer	VERB	<cjt>|<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	25	conj	_	_
 43	que	que	SCONJ	KS|@SUB	_	49	mark	_	_
 44	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
@@ -132,6 +133,7 @@
 # source CETEMPúblico n=315 sec=soc sem=96b
 # sent_id CP315-4
 # id 1657
+# d2d: cc(Lisboa,e) -> cc(Vale,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	licença	licença	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj:pass	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -147,7 +149,7 @@
 13	DRARN	DRARN	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	10	obl:agent	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	Lisboa	Lisboa	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
-16	e	e	CCONJ	<co-prparg>|KC|@CO	_	15	cc	_	_
+16	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	d2d:#106
 17	Vale	Vale	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	conj	_	ChangedBy=Issue149|MWE=Vale_do_Tejo
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
@@ -179,6 +181,8 @@
 # source CETEMPúblico n=315 sec=soc sem=96b
 # sent_id CP315-6
 # id 1659
+# d2d: punct(conceder,,) -> punct(renovado,,)  #106
+# d2d: cc(conceder,mas) -> cc(renovado,mas)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
 3	momento	momento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue137
@@ -196,8 +200,8 @@
 15	de	de	ADP	PRP|@N<ARG	_	16	case	_	_
 16	domínio	domínio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
 17	público	público	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	16	amod	_	_
-18	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-19	mas	mas	CCONJ	<co-sta>|<co-vfin>|KC|@CO	_	10	cc	_	_
+18	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+19	mas	mas	CCONJ	<co-sta>|<co-vfin>|KC|@CO	_	21	cc	_	d2d:#106
 20	tem	ter	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	_	_
 21	renovado	renovar	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	10	conj	_	_
 22	licenças	licença	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	21	obj	_	_

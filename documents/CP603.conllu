@@ -3,6 +3,7 @@
 # source CETEMPúblico n=603 sec=opi sem=98b
 # sent_id CP603-1
 # id 3124
+# d2d: cc(investimentos,e) -> cc(responsabilidades,e)  #106
 1	Sem	sem	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	entrar	entrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	advcl	_	_
 3	em	em	ADP	PRP|@<SA	_	4	case	_	_
@@ -32,7 +33,7 @@
 27	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 28	em	em	ADP	PRP|@<ADVL	_	29	case	_	_
 29	investimentos	investimento	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	26	obl	_	ChangedBy=Issue137
-30	e	e	CCONJ	<co-prparg>|KC|@CO	_	29	cc	_	_
+30	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	d2d:#106
 31	responsabilidades	responsabilidade	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	29	conj	_	_
 32	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 33	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
@@ -79,30 +80,38 @@
 # source CETEMPúblico n=603 sec=opi sem=98b &L
 # sent_id CP603-3
 # id 3126
+# d2d: cc(investiram,e) -> cc(têm,e)  #106
+# d2d: punct(Grupo,,) -> punct(Petrogal,,)  #106
+# d2d: punct(Grupo,,) -> punct(Tertir,,)  #106
+# d2d: punct(Grupo,,) -> punct(TAP-Air,,)  #106
+# d2d: punct(Grupo,,) -> punct(Somec,,)  #106
+# d2d: punct(Grupo,,) -> punct(Salvador,,)  #106
+# d2d: punct(Grupo,,) -> punct(Marconi,,)  #106
+# d2d: cc(Grupo,e) -> cc(Soares,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Grupo	Grupo	PROPN	_	Gender=Masc|Number=Sing	31	nsubj	_	ChangedBy=Issue119|MWE=Grupo_Champalimaud|MWEPOS=PROPN
 3	Champalimaud	Champalimaud	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
-4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	Petrogal	Petrogal	PROPN	<cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
-7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	TAP-Air	TAP-Air	PROPN	_	Gender=Masc|Number=Plur	2	conj	_	ChangedBy=Issue119|MWE=TAP-Air_Portugal|MWEPOS=PROPN
 10	Portugal	Portugal	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
-11	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Marconi	Marconi	PROPN	<cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
-14	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	Salvador	Salvador	PROPN	_	Gender=Fem|Number=Sing	2	conj	_	ChangedBy=Issue119|MWE=Salvador_Caetano|MWEPOS=PROPN
 17	Caetano	Caetano	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
-18	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	Tertir	Tertir	PROPN	<cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
-21	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	Somec	Somec	PROPN	<cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
-24	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+24	e	e	CCONJ	<co-subj>|KC|@CO	_	26	cc	_	d2d:#106
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Soares	Soares	PROPN	<cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	MWE=Soares_da_Costa
 27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
@@ -115,7 +124,7 @@
 34	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	36	nsubj	_	_
 35	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@ADVL>	_	36	advmod	_	_
 36	investiram	investir	VERB	<first-cjt>|<mv>|V|PS|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	33	acl:relcl	_	_
-37	e	e	CCONJ	<co-postnom>|<co-fmc>|<co-vfin>|KC|@CO	_	36	cc	_	_
+37	e	e	CCONJ	<co-postnom>|<co-fmc>|<co-vfin>|KC|@CO	_	44	cc	_	d2d:#106
 38	,	,	PUNCT	PU|@PU	_	39	punct	_	_
 39	presume-	presumir	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	advcl	_	_
 40	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	39	nsubj	_	_
@@ -132,6 +141,8 @@
 # source CETEMPúblico n=603 sec=opi sem=98b
 # sent_id CP603-4
 # id 3127
+# d2d: cc(passageiros,e) -> cc(mercadorias,e)  #106
+# d2d: cc(Portline,e) -> cc(Transinsular,e)  #106
 1	Se	se	SCONJ	KS|@SUB	_	73	mark	_	_
 2	a	a	ADP	PRP|@ADVL>	_	3	case	_	_
 3	isto	isto	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	73	nmod	_	_
@@ -144,7 +155,7 @@
 10	perdido	perder	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	73	ccomp	_	_
 11	--	--	PUNCT	PU|@PU	_	12	punct	_	_
 12	passageiros	passageiro	NOUN	<first-cjt>|<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	6	appos	_	_
-13	e	e	CCONJ	<co-app>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-app>|KC|@CO	_	19	cc	_	d2d:#106
 14	mercadorias	mercadoria	NOUN	<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	12	appos	_	_
 15	em	em	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
@@ -154,7 +165,7 @@
 20	em	em	ADP	<sam->|<first-cjt>|PRP|@N<	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	Portline	Portline	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
-23	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	_
+23	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	d2d:#106
 24	em	em	ADP	<sam->|<cjt>|PRP|@N<	_	26	case	_	_
 25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Transinsular	Transinsular	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	22	conj	_	_

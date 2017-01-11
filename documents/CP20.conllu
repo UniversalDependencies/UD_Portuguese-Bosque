@@ -97,6 +97,8 @@
 # source CETEMPúblico n=20 sec=pol sem=96a
 # sent_id CP20-4
 # id 105
+# d2d: cc(ocupará,e) -> cc(terá,e)  #106
+# d2d: cc(Defesa,e) -> cc(Relações,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	processo	processo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	4	nsubj	_	_
@@ -107,12 +109,12 @@
 8	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	10	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	10	det	_	_
 10	Defesa	Defesa	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
-11	e	e	CCONJ	<co-postnom>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	d2d:#106
 12	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	14	case	_	_
 13	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	14	det	_	_
 14	Relações	Relações	PROPN	_	Gender=Fem|Number=Plur	10	conj	_	ChangedBy=Issue119|MWE=Relações_Exteriores|MWEPOS=PROPN
 15	Exteriores	Exteriores	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
-16	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	4	cc	_	_
+16	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	19	cc	_	d2d:#106
 17	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	19	nsubj	_	_
 18	não	não	ADV	_	Polarity=Neg	19	advmod	_	_
 19	terá	ter	VERB	<cjt>|<mv>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	conj	_	_

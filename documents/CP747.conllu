@@ -83,6 +83,10 @@
 # source CETEMPúblico n=747 sec=soc sem=98a
 # sent_id CP747-3
 # id 3837
+# d2d: cc(liquído,e) -> cc(gasoso,e)  #106
+# d2d: punct(permite,,) -> punct(relaciona-,,)  #106
+# d2d: cc(permite,e) -> cc(relaciona-,e)  #106
+# d2d: punct(permite,,) -> punct(relaciona-,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tema	tema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -111,12 +115,12 @@
 26	estados	estado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	21	nmod	_	_
 27	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 28	liquído	liquído	ADJ	<first-cjt>|ADJ|M|S|@APP	Gender=Masc|Number=Sing	26	dep	_	_
-29	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+29	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 30	físico	físico	ADJ	ADJ|M|S|@APP	Gender=Masc|Number=Sing	28	conj	_	ChangedBy=Issue149
-31	e	e	CCONJ	<co-app>|KC|@CO	_	28	cc	_	_
+31	e	e	CCONJ	<co-app>|KC|@CO	_	32	cc	_	d2d:#106
 32	gasoso	gasoso	ADJ	ADJ|M|S|@APP	Gender=Masc|Number=Sing	28	conj	_	ChangedBy=Issue149
-33	,	,	PUNCT	PU|@PU	_	18	punct	_	_
-34	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	_
+33	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+34	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	36	cc	_	d2d:#106
 35	obviamente	obviamente	ADV	ADV|@ADVL>	_	36	advmod	_	_
 36	relaciona-	relacionar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
 37	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	expl	_	ChangedBy=Issue135
@@ -132,6 +136,9 @@
 # source CETEMPúblico n=747 sec=soc sem=98a
 # sent_id CP747-4
 # id 3838
+# d2d: cc(artes,e) -> cc(ciências,e)  #106
+# d2d: cc(ópera,e) -> cc(fotografia,e)  #106
+# d2d: cc(termodinâmica,e) -> cc(relações,e)  #106
 1	Sendo	ser	VERB	<mv>|<first-cjt>|V|GER|@ICL-PRED>	VerbForm=Ger	11	cop	_	_
 2	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 3	além	além	ADV	ADV|@>N	_	11	advmod	_	MWE=além_de
@@ -139,7 +146,7 @@
 5	crítico	crítico	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	ópera	ópera	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
-8	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	d2d:#106
 9	fotografia	fotografia	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	conj	_	_
 10	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 11	professor	professor	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	37	dep	_	_
@@ -157,13 +164,13 @@
 23	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
 24	objectos	objecto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	21	nmod	_	_
 25	moleculares	molecular	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	24	amod	_	_
-26	e	e	CCONJ	<co-postnom>|KC|@CO	_	21	cc	_	_
+26	e	e	CCONJ	<co-postnom>|KC|@CO	_	29	cc	_	d2d:#106
 27	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	29	case	_	_
 28	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_
 29	relações	relação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	21	conj	_	_
 30	entre	entre	ADP	PRP|@N<ARG	_	31	case	_	_
 31	artes	arte	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	29	nmod	_	_
-32	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	_
+32	e	e	CCONJ	<co-prparg>|KC|@CO	_	33	cc	_	d2d:#106
 33	ciências	ciência	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	31	conj	_	_
 34	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 35	Calado	Calado	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	37	nsubj	_	_

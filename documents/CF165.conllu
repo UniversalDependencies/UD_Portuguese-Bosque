@@ -48,6 +48,11 @@
 # source CETENFolha n=165 cad=Cotidiano sec=soc sem=94b
 # sent_id CF165-3
 # id 694
+# d2d: cc(médico,e) -> cc(odontológico,e)  #106
+# d2d: punct(ensino,,) -> punct(uniforme,,)  #106
+# d2d: cc(ensino,e) -> cc(tratamento,e)  #106
+# d2d: punct(ensino,,) -> punct(material,,)  #106
+# d2d: punct(ensino,,) -> punct(alimentação,,)  #106
 1	Como	como	ADP	<com>|PRP|@ADVL>	_	5	case	_	_
 2	em	em	ADP	<sam->|PRP|@P<	_	5	case	_	_
 3	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
@@ -61,20 +66,20 @@
 11	gratuitamente	gratuitamente	ADV	ADV|@<ADVL	_	10	advmod	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	ensino	ensino	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
-14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	material	material	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	conj	_	_
 17	didático	didático	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	16	amod	_	_
-18	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	uniforme	uniforme	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	conj	_	_
-21	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	alimentação	alimentação	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	conj	_	_
-24	e	e	CCONJ	<co-acc>|KC|@CO	_	13	cc	_	_
+24	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	d2d:#106
 25	tratamento	tratamento	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	conj	_	_
 26	médico	médico	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	25	amod	_	_
-27	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	_
+27	e	e	CCONJ	<co-postnom>|KC|@CO	_	28	cc	_	d2d:#106
 28	odontológico	odontológico	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	26	conj	_	_
 29	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 

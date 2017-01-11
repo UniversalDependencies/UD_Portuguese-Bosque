@@ -3,6 +3,7 @@
 # source CETEMPúblico n=667 sec=des sem=98a
 # sent_id CP667-1
 # id 3461
+# d2d: cc(individual,e) -> cc(atenta,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	treinador	treinador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	portista	portista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -11,7 +12,7 @@
 6	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	marcação	marcação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 8	individual	individual	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	_
-9	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	d2d:#106
 10	muito	muito	ADV	<quant>|ADV|@>A	_	11	advmod	_	_
 11	atenta	atento	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	conj	_	_
 12	sobre	sobre	ADP	PRP|@N<	_	14	case	_	_
@@ -90,11 +91,14 @@
 # source CETEMPúblico n=667 sec=des sem=98a
 # sent_id CP667-4
 # id 3464
+# d2d: cc(segundo,e) -> cc(terceiro,e)  #106
+# d2d: punct(concentração,,) -> punct(número,,)  #106
+# d2d: cc(concentração,e) -> cc(número,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	concentração	concentração	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	_
 3	defensiva	defensivo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
-4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-5	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+4	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
+5	e	e	CCONJ	<co-subj>|KC|@CO	_	7	cc	_	d2d:#106
 6	consequente	consequente	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	7	amod	_	_
 7	número	número	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
@@ -106,7 +110,7 @@
 14	originar	originar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 16	segundo	segundo	ADJ	<first-cjt>|<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	19	amod	_	_
-17	e	e	CCONJ	<co-prenom>|KC|@CO	_	16	cc	_	_
+17	e	e	CCONJ	<co-prenom>|KC|@CO	_	18	cc	_	d2d:#106
 18	terceiro	terceiro	ADJ	<cjt>|<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	16	conj	_	_
 19	golos	golo	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
 20	portistas	portista	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	19	amod	_	_

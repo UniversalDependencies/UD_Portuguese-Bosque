@@ -28,6 +28,11 @@
 # source CETENFolha n=863 cad=Ilustrada sec=nd sem=94a &E
 # sent_id CF863-2
 # id 3646
+# d2d: cc(clássica,nem) -> cc(modernista,nem)  #106
+# d2d: punct(clássica,,) -> punct(sugerida,,)  #106
+# d2d: cc(figuração,e) -> cc(abstração,e)  #106
+# d2d: punct(clássica,--) -> punct(modernista,--)  #106
+# d2d: cc(clássica,mas) -> cc(sugerida,mas)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	solução	solução	NOUN	<first-cjt>|<np-def>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 3	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	4	obj	_	_
@@ -37,7 +42,7 @@
 7	equilíbrio	equilíbrio	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
 8	entre	entre	ADP	PRP|@N<	_	9	case	_	_
 9	figuração	figuração	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
-10	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	_
+10	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	d2d:#106
 11	abstração	abstração	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
 12	em	em	ADP	PRP|@N<ARG	_	19	mark	_	_
 13	que	que	PRON	<rel>|INDP|M|S|@SUB	Gender=Masc|Number=Sing|PronType=Rel	19	mark	_	_
@@ -49,16 +54,16 @@
 19	clássica	clássico	ADJ	<first-cjt>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	7	amod	_	_
 20	(	(	PUNCT	PU|@PU	_	21	punct	_	_
 21	pers	per	NOUN	<first-cjt>|<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	19	appos	_	_
-22	--	--	PUNCT	PU|@PU	_	19	punct	_	_
+22	--	--	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 23	pectiva	pectivo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	21	amod	_	_
 24	)	)	PUNCT	PU|@PU	_	21	punct	_	_
-25	nem	nem	CCONJ	<parkc-2>|<co-sc>|KC|@CO	_	19	cc	_	_
+25	nem	nem	CCONJ	<parkc-2>|<co-sc>|KC|@CO	_	26	cc	_	d2d:#106
 26	modernista	modernista	ADJ	<cjt>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	19	conj	_	_
 27	(	(	PUNCT	PU|@PU	_	28	punct	_	_
 28	planificada	planificar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	26	acl	_	_
 29	)	)	PUNCT	PU|@PU	_	28	punct	_	_
-30	,	,	PUNCT	PU|@PU	_	19	punct	_	_
-31	mas	mas	CCONJ	<co-sc>|KC|@CO	_	19	cc	_	_
+30	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
+31	mas	mas	CCONJ	<co-sc>|KC|@CO	_	32	cc	_	d2d:#106
 32	sugerida	sugerir	VERB	<cjt>|<mv>|V|PCP|F|S|@<SC	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	19	conj	_	_
 33	por	por	ADP	<cjt>|PRP|@PASS	_	34	case	_	_
 34	jogos	jogo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	32	obl:agent	_	_
@@ -95,6 +100,7 @@
 # source CETENFolha n=863 cad=Ilustrada sec=nd sem=94a
 # sent_id CF863-4
 # id 3648
+# d2d: cc(Baselitz,e) -> cc(Kirkeby,e)  #106
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	cinco	cinco	NUM	<card>|<np-def>|NUM|M|P|@P<	_	10	nmod	_	_
@@ -102,7 +108,7 @@
 5	Baselitz	Baselitz	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 7	Immendorff	Immendorff	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue149
-8	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	_
+8	e	e	CCONJ	<co-subj>|KC|@CO	_	9	cc	_	d2d:#106
 9	Kirkeby	Kirkeby	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue149
 10	fizeram	fazer	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 11	melhor	melhor	ADV	<KOMP>|<SUP>|<COMP>|ADV|@<ADVL	_	10	advmod	_	_
@@ -146,13 +152,14 @@
 # source CETENFolha n=863 cad=Ilustrada sec=nd sem=94a
 # sent_id CF863-6
 # id 3650
+# d2d: punct(instrutiva,;) -> punct(mostrar,;)  #106
 1	Tanta	tanto	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	2	det	_	_
 2	coincidência	coincidência	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	só	só	ADV	ADV|@ADVL>	_	6	advmod	_	_
 4	pode	poder	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
 5	ser	ser	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	cop	_	_
 6	instrutiva	instrutivo	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
-7	;	;	PUNCT	PU|@PU	_	6	punct	_	_
+7	;	;	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 8	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
 9	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	conj	_	_
 10	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	_	9	advmod	_	_

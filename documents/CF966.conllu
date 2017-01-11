@@ -3,6 +3,8 @@
 # source CETENFolha n=966 cad=Agrofolha sec=agr sem=94b
 # sent_id CF966-1
 # id 4088
+# d2d: punct(produtividade,,) -> punct(informações,,)  #106
+# d2d: cc(produtividade,além) -> cc(informações,além)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	Normalmente	normalmente	ADV	ADV|@ADVL>	_	4	advmod	_	_
 3	nós	nós	PRON	PERS|M/F|1P|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_
@@ -15,8 +17,8 @@
 10	em	em	ADP	PRP|@N<	_	12	case	_	_
 11	cada	cada	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	12	det	_	_
 12	região	região	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
-13	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-14	além	além	ADV	ADV|@CO	_	9	cc	_	MWE=além_de
+13	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+14	além	além	ADV	ADV|@CO	_	16	cc	_	MWE=além_de|d2d:#106
 15	de	de	ADP	PRP|@A<	_	16	case	_	_
 16	informações	informação	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	conj	_	_
 17	de	de	ADP	PRP|@N<	_	18	case	_	_
@@ -53,6 +55,7 @@
 # source CETENFolha n=966 cad=Agrofolha sec=agr sem=94b
 # sent_id CF966-3
 # id 4090
+# d2d: cc(áreas,e) -> cc(culturas,e)  #106
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	estima	estimar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	em	em	ADP	PRP|@<PIV	_	5	case	_	_
@@ -65,7 +68,7 @@
 10	classificar	classificar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 11	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
 12	áreas	área	NOUN	<first-cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
-13	e	e	CCONJ	KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	KC|@CO	_	14	cc	_	d2d:#106
 14	culturas	cultura	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	conj	_	_
 15	plantadas	plantar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	12	acl	_	_
 16	em	em	ADP	PRP|@<ADVL	_	18	case	_	_

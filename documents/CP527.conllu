@@ -38,6 +38,7 @@
 # source CETEMPúblico n=527 sec=des sem=97b
 # sent_id CP527-2
 # id 2755
+# d2d: cc(custou,e) -> cc(demorou,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	jovem	jovem	ADJ	<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -58,7 +59,7 @@
 18	600	600	NUM	<card>|NUM|M|P|@>N	_	20	nummod	_	_
 19	mil	mil	NUM	<card>|NUM|M|P|@>N	_	20	nummod	_	_
 20	contos	conto	NOUN	<np-def>|N|M|P|@<SA	Gender=Masc|Number=Plur	12	nmod	_	_
-21	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
+21	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 22	demorou	demorar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	_	_
 23	a	a	ADP	PRP|@<ADVL	_	24	mark	_	_
 24	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	_
@@ -90,9 +91,12 @@
 # source CETEMPúblico n=527 sec=des sem=97b
 # sent_id CP527-4
 # id 2757
+# d2d: punct(opção,,) -> punct(ter,,)  #106
+# d2d: cc(opção,mas) -> cc(ter,mas)  #106
+# d2d: cc(Souness,e) -> cc(futebol,e)  #106
 1	com	com	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Souness	Souness	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
-3	e	e	CCONJ	<co-prparg>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	d2d:#106
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 5	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	6	det	_	_
 6	futebol	futebol	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	conj	_	_
@@ -106,8 +110,8 @@
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 15	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	16	amod	_	_
 16	opção	opção	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
-17	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	_
-18	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+17	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
+18	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
 19	provavelmente	provavelmente	ADV	ADV|@ADVL>	_	24	advmod	_	_
 20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 21	acabará	acabar	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	24	aux	_	_
@@ -126,6 +130,8 @@
 # source CETEMPúblico n=527 sec=des sem=97b
 # sent_id CP527-5
 # id 2758
+# d2d: punct(liberta,,) -> punct(joga,,)  #106
+# d2d: cc(liberta,e) -> cc(favorece,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	treinador	treinador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	inglês	inglês	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -133,7 +139,7 @@
 5	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	_	4	advmod	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	equipa	equipa	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
-8	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	joga	jogar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 10	com	com	ADP	PRP|@<ADVL	_	12	case	_	_
 11	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|P|@>N	Gender=Fem|Number=Plur	12	det	_	_
@@ -141,7 +147,7 @@
 13	em	em	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	área	área	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-16	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+16	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 17	favorece	favorecer	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	ponta-de-lança	ponta-de-lança	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	obj	_	_
@@ -196,6 +202,7 @@
 # source CETEMPúblico n=527 sec=des sem=97b
 # sent_id CP527-7
 # id 2760
+# d2d: cc(holandês,e) -> cc(jogo,e)  #106
 1	Era	ser	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	dupla	dupla	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
@@ -210,7 +217,7 @@
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	holandês	holandês	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
-15	e	e	CCONJ	<co-prparg>|<co-postnom>|KC|@CO	_	14	cc	_	_
+15	e	e	CCONJ	<co-prparg>|<co-postnom>|KC|@CO	_	17	cc	_	d2d:#106
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	jogo	jogo	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	conj	_	_
 18	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	19	advmod	_	_
@@ -226,12 +233,14 @@
 # source CETEMPúblico n=527 sec=des sem=97b
 # sent_id CP527-8
 # id 2761
+# d2d: cc(Funcionou,e) -> cc(ganhar,e)  #106
+# d2d: cc(golos,e) -> cc(um,e)  #106
 1	Funcionou	funcionar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	a	a	ADP	<sam->|PRP|@N<	_	5	case	_	_
 3	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
 4	mil	mil	ADP	PRP|@N<	_	5	case	_	_
 5	maravilhas	maravilhas	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
-6	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+6	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	d2d:#106
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	Boavista	Boavista	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 9	acabou	acabar	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux	_	_
@@ -246,7 +255,7 @@
 18	golos	golo	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	obl	_	ChangedBy=Issue137
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	Sanchez	Sanchez	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
-21	e	e	CCONJ	<co-prparg>|KC|@CO	_	18	cc	_	_
+21	e	e	CCONJ	<co-prparg>|KC|@CO	_	22	cc	_	d2d:#106
 22	um	um	NUM	<cjt>|<card>|NUM|M|S|@P<	_	18	conj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	Nuno	Nuno	PROPN	_	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue119|MWE=Nuno_Gomes|MWEPOS=PROPN

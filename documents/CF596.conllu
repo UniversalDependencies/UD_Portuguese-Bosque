@@ -3,6 +3,9 @@
 # source CETENFolha n=596 cad=Cotidiano sec=soc sem=94b
 # sent_id CF596-1
 # id 2503
+# d2d: punct(avenida,,) -> punct(via,,)  #106
+# d2d: cc(avenida,e) -> cc(chegada,e)  #106
+# d2d: punct(avenida,,) -> punct(represa,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	percurso	percurso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -20,13 +23,13 @@
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	avenida	avenida	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
 17	Bandeirantes	Bandeirantes	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	16	appos	_	_
-18	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 19	via	via	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	conj	_	_
 20	Anchieta	Anchieta	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	19	appos	_	_
-21	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 22	represa	represa	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	conj	_	_
 23	Billings	Billings	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	22	appos	_	_
-24	e	e	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	_
+24	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	d2d:#106
 25	chegada	chegada	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	conj	_	_
 26	em	em	ADP	<sam->|PRP|@N<	_	28	case	_	_
 27	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_

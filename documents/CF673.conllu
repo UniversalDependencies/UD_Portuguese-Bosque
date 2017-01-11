@@ -3,6 +3,8 @@
 # source CETENFolha n=673 cad=Esporte sec=des sem=94a
 # sent_id CF673-1
 # id 2827
+# d2d: cc(começou,mas) -> cc(acordou,mas)  #106
+# d2d: punct(começou,,) -> punct(acordou,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	São	São	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
 3	Paulo	Paulo	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -11,8 +13,8 @@
 6	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	7	amod	_	_
 7	tempo	tempo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
 8	apático	apático	ADJ	ADJ|M|S|@<OC	Gender=Masc|Number=Sing	4	xcomp	_	_
-9	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-10	mas	mas	CCONJ	<co-sta>|KC|@CO	_	4	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
+10	mas	mas	CCONJ	<co-sta>|KC|@CO	_	11	cc	_	d2d:#106
 11	acordou	acordar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
 12	a	a	ADP	<sam->|PRP|@<ADVL	_	15	case	_	_
 13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
@@ -60,6 +62,7 @@
 # source CETENFolha n=673 cad=Esporte sec=des sem=94a
 # sent_id CF673-3
 # id 2829
+# d2d: cc(marcar,e) -> cc(anulou,e)  #106
 1	A	a	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=A_partir_de
 2	partir	partir	NOUN	N|@P<	_	13	nmod	_	_
 3	de	de	ADP	PRP|@N<	_	6	case	_	_
@@ -75,7 +78,7 @@
 13	marcar	marcar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 14	sob	sob	ADP	PRP|@<ADVL	_	15	case	_	_
 15	pressão	pressão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	ChangedBy=Issue137
-16	e	e	CCONJ	<co-sta>|KC|@CO	_	13	cc	_	_
+16	e	e	CCONJ	<co-sta>|KC|@CO	_	17	cc	_	d2d:#106
 17	anulou	anular	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	conj	_	_
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	adversário	adversário	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	obj	_	_
@@ -86,13 +89,14 @@
 # source CETENFolha n=673 cad=Esporte sec=des sem=94a
 # sent_id CF673-4
 # id 2830
+# d2d: cc(conseguia,e) -> cc(perdia,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Boca	Boca	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 4	conseguia	conseguir	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 5	sair	sair	VERB	<cjt>|<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	dep	_	_
 6	jogando	jogar	VERB	<mv>|<first-cjt>|V|GER|@ICL-<ACC	VerbForm=Ger	4	obj	_	_
-7	e	e	CCONJ	<co-sta>|KC|@CO	_	4	cc	_	_
+7	e	e	CCONJ	<co-sta>|KC|@CO	_	8	cc	_	d2d:#106
 8	perdia	perder	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	conj	_	_
 9	bolas	bola	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	_
 10	em	em	ADP	PRP|@<ADVL	_	12	case	_	_

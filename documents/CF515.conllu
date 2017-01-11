@@ -3,12 +3,13 @@
 # source CETENFolha n=515 cad=Esporte sec=des sem=94b
 # sent_id CF515-1
 # id 2166
+# d2d: cc(Telê,e) -> cc(Cruyff,e)  #106
 1	Ex-jogadores	ex-jogador	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	elogiam	elogiar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 4	colunistas	colunista	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
 5	Telê	Telê	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	4	appos	_	_
-6	e	e	CCONJ	<co-postnom>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	d2d:#106
 7	Cruyff	Cruyff	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue149
 
 # text A escolha dos técnicos Johan Cruyff, do Barcelona da Espanha, e Telê Santana, bicampeão mundial pelo São Paulo, como colunistas da Folha durante a Copa dos EUA recebeu elogios de ex-jogadores da seleção brasileira.
@@ -16,6 +17,8 @@
 # source CETENFolha n=515 cad=Esporte sec=des sem=94b
 # sent_id CF515-3
 # id 2167
+# d2d: cc(Johan,e) -> cc(Telê,e)  #106
+# d2d: punct(Johan,,) -> punct(Telê,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	escolha	escolha	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	38	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -30,8 +33,8 @@
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	Espanha	Espanha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
-15	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-16	e	e	CCONJ	<co-postnom>|KC|@CO	_	6	cc	_	_
+15	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+16	e	e	CCONJ	<co-postnom>|KC|@CO	_	17	cc	_	d2d:#106
 17	Telê	Telê	PROPN	_	Gender=Masc|Number=Sing	6	conj	_	ChangedBy=Issue119|MWE=Telê_Santana|MWEPOS=PROPN
 18	Santana	Santana	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
@@ -68,6 +71,7 @@
 # source CETENFolha n=515 cad=Esporte sec=des sem=94b
 # sent_id CF515-4
 # id 2168
+# d2d: cc(história,e) -> cc(cenário,e)  #106
 1	Todos	todo	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	lembraram	lembrar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -82,7 +86,7 @@
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	futebol	futebol	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
-15	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+15	e	e	CCONJ	<co-postnom>|KC|@CO	_	18	cc	_	d2d:#106
 16	em	em	ADP	<cjt>|<sam->|PRP|@N<	_	18	case	_	_
 17	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	cenário	cenário	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	conj	_	_

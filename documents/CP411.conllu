@@ -97,6 +97,9 @@
 # source CETEMPúblico n=411 sec=eco sem=92a
 # sent_id CP411-3
 # id 2148
+# d2d: punct(culturas,,) -> punct(leite,,)  #106
+# d2d: cc(culturas,e) -> cc(tabaco,e)  #106
+# d2d: punct(culturas,,) -> punct(carne,,)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
 2	E	e	CCONJ	KC|@CO	_	10	cc	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -132,16 +135,16 @@
 33	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	_	_
 34	culturas	cultura	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	31	nmod	_	_
 35	arvenses	arvense	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	34	amod	_	_
-36	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+36	,	,	PUNCT	PU|@PU	_	39	punct	_	d2d:#106
 37	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	39	case	_	_
 38	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
 39	leite	leite	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	34	conj	_	_
-40	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+40	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 41	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	43	case	_	_
 42	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
 43	carne	carne	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	34	conj	_	_
 44	bovina	bovino	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	43	amod	_	_
-45	e	e	CCONJ	<co-postnom>|KC|@CO	_	34	cc	_	_
+45	e	e	CCONJ	<co-postnom>|KC|@CO	_	48	cc	_	d2d:#106
 46	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	48	case	_	_
 47	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
 48	tabaco	tabaco	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	34	conj	_	_
@@ -170,6 +173,7 @@
 # source CETEMPúblico n=411 sec=eco sem=92a
 # sent_id CP411-5
 # id 2150
+# d2d: cc(séria,e) -> cc(profícua,e)  #106
 1	mostrou	mostrar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -190,7 +194,7 @@
 18	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	discussão	discussão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
 20	séria	sério	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	_
-21	e	e	CCONJ	<co-postnom>|KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	d2d:#106
 22	profícua	profícuo	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	20	conj	_	_
 23	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -320,6 +324,7 @@
 # source CETEMPúblico n=411 sec=eco sem=92a
 # sent_id CP411-9
 # id 2154
+# d2d: cc(protegia,e) -> cc(penalizava,e)  #106
 1	e	e	CCONJ	KC|@CO	_	8	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	homem	homem	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
@@ -342,7 +347,7 @@
 20	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_
 21	explorações	exploração	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	19	obj	_	_
 22	extensivas	extensivo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	21	amod	_	_
-23	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	19	cc	_	_
+23	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	29	cc	_	d2d:#106
 24	que	que	SCONJ	KS|@SUB	_	29	mark	_	_
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	documento	documento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	29	nsubj	_	_

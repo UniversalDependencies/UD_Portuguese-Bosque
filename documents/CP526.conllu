@@ -3,6 +3,7 @@
 # source CETEMPúblico n=526 sec=clt-soc sem=95a
 # sent_id CP526-1
 # id 2750
+# d2d: cc(empresas,ou) -> cc(organismos,ou)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	1990	1990	NUM	<year>|<card>|<date>|NUM|M|S|@P<	_	4	nmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -18,7 +19,7 @@
 13	por	por	ADP	PRP|@<PIV	_	15	case	_	_
 14	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	15	amod	_	_
 15	empresas	empresa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
-16	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	15	cc	_	_
+16	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	d2d:#106
 17	organismos	organismo	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	conj	_	_
 18	públicos	público	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	17	amod	_	_
 19	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	20	nsubj	_	_
@@ -107,6 +108,8 @@
 # source CETEMPúblico n=526 sec=clt-soc sem=95a
 # sent_id CP526-3
 # id 2752
+# d2d: cc(máquinas,e) -> cc(as,e)  #106
+# d2d: punct(máquinas,») -> punct(as,»)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 2	duas	dois	NUM	<card>|NUM|F|P|@>N	_	4	nummod	_	_
 3	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	4	amod	_	_
@@ -122,13 +125,13 @@
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	multiprocessamento	multiprocessamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 15	vectorial	vectorial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	_
-16	»	»	PUNCT	PU|@PU	_	12	punct	_	_
+16	»	»	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 17	(	(	PUNCT	PU|@PU	_	20	punct	_	_
 18	como	como	ADP	<com>|PRP|@N<PRED	_	20	case	_	_
 19	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	20	det	_	_
 20	Cray	Cray	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
 21	)	)	PUNCT	PU|@PU	_	20	punct	_	_
-22	e	e	CCONJ	<co-sc>|KC|@CO	_	12	cc	_	_
+22	e	e	CCONJ	<co-sc>|KC|@CO	_	23	cc	_	d2d:#106
 23	as	a	PRON	<cjt>|<dem>|DET|F|P|@<SC	Gender=Fem|Number=Plur|PronType=Dem	12	conj	_	_
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
 25	processamento	processamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
@@ -155,6 +158,8 @@
 # source CETEMPúblico n=526 sec=clt-soc sem=95a
 # sent_id CP526-4
 # id 2753
+# d2d: cc(surgidas,e) -> cc(generalizadas,e)  #106
+# d2d: cc(utilizam,e) -> cc(existir,e)  #106
 1	Ao	ao	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Ao_contrário_de
 2	contrário	contrário	NOUN	N|@P<	_	56	nmod	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
@@ -171,7 +176,7 @@
 14	mesma	mesmo	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	15	det	_	_
 15	memória	memória	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	_
 16	--	--	PUNCT	PU|@PU	_	17	punct	_	_
-17	e	e	CCONJ	<co-fcl>|<co-advl>|KC|@CO	_	12	cc	_	_
+17	e	e	CCONJ	<co-fcl>|<co-advl>|KC|@CO	_	29	cc	_	d2d:#106
 18	onde	onde	ADV	<rel>|ADV|@ADVL>	_	29	advmod	_	_
 19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 20	em	em	ADP	<sam->|PRP|@ADVL>	_	22	case	_	_
@@ -199,7 +204,7 @@
 42	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	43	det	_	_
 43	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	40	obl	_	ChangedBy=Issue137
 44	60	60	NUM	<card>|NUM|M|P|@N<	_	43	nummod	_	_
-45	e	e	CCONJ	<co-icl>|<co-pred>|KC|@CO	_	40	cc	_	_
+45	e	e	CCONJ	<co-icl>|<co-pred>|KC|@CO	_	46	cc	_	d2d:#106
 46	generalizadas	generalizado	ADJ	<cjt>|<mv>|V|PCP|F|P|@ICL-N<PRED	Gender=Fem|Number=Plur	40	conj	_	ChangedBy=Issue141|ChangedBy=Issue91
 47	em	em	ADP	<sam->|PRP|@<ADVL	_	49	case	_	_
 48	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_

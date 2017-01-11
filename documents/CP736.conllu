@@ -66,6 +66,8 @@
 # source CETEMPúblico n=736 sec=des sem=93b
 # sent_id CP736-3
 # id 3777
+# d2d: cc(holandeses,e) -> cc(ingleses,e)  #106
+# d2d: cc(empatem,e) -> cc(vençam,e)  #106
 1	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
 2	claro	claro	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
@@ -78,10 +80,10 @@
 10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 11	caso	caso	SCONJ	KS|@SUB	_	15	mark	_	_
 12	holandeses	holandês	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	15	nsubj	_	_
-13	e	e	CCONJ	<co-subj>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-subj>|KC|@CO	_	14	cc	_	d2d:#106
 14	ingleses	inglês	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	conj	_	_
 15	empatem	empatar	VERB	<first-cjt>|<mv>|V|PR|3P|SUBJ|@FS-<ADVL	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	_
-16	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	_
+16	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 17	polacos	polaco	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	18	nsubj	_	_
 18	vençam	vençer	VERB	<cjt>|<mv>|V|PR|3P|SUBJ|@FS-<ADVL	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	conj	_	_
 19	noruegueses	norueguês	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	18	obj	_	_
@@ -109,6 +111,7 @@
 # source CETEMPúblico n=736 sec=des sem=93b
 # sent_id CP736-5
 # id 3779
+# d2d: cc(equipas,e) -> cc(a,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	decisão	decisão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -132,7 +135,7 @@
 21	com	com	ADP	PRP|@<ADVL	_	23	case	_	_
 22	14	14	NUM	<card>|NUM|M|P|@>N	_	23	nummod	_	_
 23	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obl	_	ChangedBy=Issue137
-24	e	e	CCONJ	<co-advl>|KC|@CO	_	13	cc	_	_
+24	e	e	CCONJ	<co-advl>|KC|@CO	_	25	cc	_	d2d:#106
 25	a	a	ADP	<cjt>|PRP|@<ADVL	_	13	conj	_	_
 26	ser	ser	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	27	cop	_	_
 27	preciso	preciso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	13	conj	_	_
@@ -177,21 +180,24 @@
 # source CETEMPúblico n=736 sec=des sem=93b
 # sent_id CP736-8
 # id 3782
+# d2d: cc(República,e) -> cc(Dinamarca,e)  #106
+# d2d: punct(ocupam,,) -> punct(corrida,,)  #106
+# d2d: cc(ocupam,mas) -> cc(corrida,mas)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	MWE=Para_já
 2	já	já	ADV	ADV|@P<	_	9	advmod	_	_
 3	República	República	PROPN	<first-cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	MWE=República_da_Irlanda
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	Irlanda	Irlanda	PROPN	PROP|@P<	Number=Sing	3	nmod	_	_
-7	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
+7	e	e	CCONJ	<co-subj>|KC|@CO	_	8	cc	_	d2d:#106
 8	Dinamarca	Dinamarca	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	conj	_	ChangedBy=Issue149
 9	ocupam	ocupar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 11	dois	dois	NUM	<card>|NUM|M|P|@>N	_	13	nummod	_	_
 12	primeiros	primeiro	ADJ	<NUM-ord>|ADJ|M|P|@>N	Gender=Masc|Number=Plur	13	amod	_	_
 13	lugares	lugar	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	9	obj	_	_
-14	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-15	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+15	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	Espanha	Espanha	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
 18	ainda	ainda	ADV	ADV|@ADVL>	_	22	advmod	_	_
@@ -242,6 +248,8 @@
 # source CETEMPúblico n=736 sec=des sem=93b
 # sent_id CP736-10
 # id 3784
+# d2d: cc(Eire,e) -> cc(Dinamarca,e)  #106
+# d2d: cc(vença,e) -> cc(derrote,e)  #106
 1	A	a	ADP	PRP|@>S	_	4	fixed	_	MWE=a_não_ser_que|MWEPOS=SCONJ
 2	não	não	ADV	ADV|@ADVL>	_	3	fixed	_	_
 3	ser	ser	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	fixed	_	_
@@ -252,7 +260,7 @@
 8	hoje	hoje	ADV	ADV|@<ADVL	_	7	advmod	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Espanha	Espanha	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
-11	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	7	cc	_	_
+11	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Dinamarca	Dinamarca	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	_
 14	derrote	derrotar	VERB	<cjt>|<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
@@ -264,7 +272,7 @@
 20	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 21	ficando	ficar	VERB	<cjt>|<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	7	conj	_	_
 22	Eire	Eire	PROPN	<first-cjt>|PROP|F|S|@<SUBJ	Gender=Fem|Number=Sing	21	nsubj	_	_
-23	e	e	CCONJ	<co-subj>|KC|@CO	_	22	cc	_	_
+23	e	e	CCONJ	<co-subj>|KC|@CO	_	24	cc	_	d2d:#106
 24	Dinamarca	Dinamarca	PROPN	PROP|F|S|@<SUBJ	Gender=Fem|Number=Sing	22	conj	_	ChangedBy=Issue149
 25	de	de	ADP	PRP|@<ADVL	_	26	case	_	MWE=de_imediato
 26	imediato	imediato	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_

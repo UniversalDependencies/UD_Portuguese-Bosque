@@ -20,6 +20,7 @@
 # source CETEMPúblico n=884 sec=clt sem=92b
 # sent_id CP884-2
 # id 4538
+# d2d: cc(simpático,e) -> cc(prestável,e)  #106
 1	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	pacato	pacato	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	cidadão	cidadão	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
@@ -33,7 +34,7 @@
 11	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	homem	homem	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	3	appos	_	_
 13	simpático	simpático	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	12	amod	_	_
-14	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	_
+14	e	e	CCONJ	<co-postnom>|KC|@CO	_	15	cc	_	d2d:#106
 15	prestável	prestável	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	13	conj	_	_
 16	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 17	guarda	guardar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -97,9 +98,10 @@
 # source CETEMPúblico n=884 sec=clt sem=92b
 # sent_id CP884-5
 # id 4541
+# d2d: cc(Jeff,e) -> cc(Alan,e)  #106
 1	Jeff	Jeff	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Jeff_Goldblum|MWEPOS=PROPN
 2	Goldblum	Goldblum	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
-3	e	e	CCONJ	KC|@CO	_	1	cc	_	_
+3	e	e	CCONJ	KC|@CO	_	4	cc	_	d2d:#106
 4	Alan	Alan	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Alan_Bates|MWEPOS=PROPN
 5	Bates	Bates	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	em	em	ADP	PRP|@N<	_	7	case	_	_
@@ -132,16 +134,19 @@
 # source CETEMPúblico n=884 sec=clt sem=92b
 # sent_id CP884-8
 # id 4544
+# d2d: punct(Jeff,,) -> punct(Alan,,)  #106
+# d2d: cc(Jeff,e) -> cc(Jean-Pierre,e)  #106
+# d2d: punct(Jeff,,) -> punct(Kathy,,)  #106
 1	Com	com	ADP	PRP|@UTT	_	2	case	_	_
 2	Jeff	Jeff	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Jeff_Goldblum|MWEPOS=PROPN
 3	Goldblum	Goldblum	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
-4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 5	Alan	Alan	PROPN	_	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Alan_Bates|MWEPOS=PROPN
 6	Bates	Bates	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119
-7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 8	Kathy	Kathy	PROPN	_	Gender=Fem|Number=Sing	2	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Kathy_Baker|MWEPOS=PROPN
 9	Baker	Baker	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
-10	e	e	CCONJ	<co-prparg>|KC|@CO	_	2	cc	_	_
+10	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	d2d:#106
 11	Jean-Pierre	Jean-Pierre	PROPN	_	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Jean-Pierre_Cassel|MWEPOS=PROPN
 12	Cassel	Cassel	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 

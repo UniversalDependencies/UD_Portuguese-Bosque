@@ -27,6 +27,8 @@
 # source CETENFolha n=83 cad=Brasil sec=pol sem=94b
 # sent_id CF83-2
 # id 317
+# d2d: cc(multas,e) -> cc(juros,e)  #106
+# d2d: punct(multas,,) -> punct(correção,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	caso	caso	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -71,10 +73,10 @@
 42	devido	devido	ADP	PRP|@N<	_	44	case	_	_
 43	,	,	PUNCT	PU|@PU	_	44	punct	_	_
 44	multas	multa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	41	nmod	_	_
-45	,	,	PUNCT	PU|@PU	_	44	punct	_	_
+45	,	,	PUNCT	PU|@PU	_	46	punct	_	d2d:#106
 46	correção	correção	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	44	conj	_	_
 47	monetária	monetário	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	46	amod	_	_
-48	e	e	CCONJ	<co-vfin>|KC|@CO	_	44	cc	_	_
+48	e	e	CCONJ	<co-vfin>|KC|@CO	_	49	cc	_	d2d:#106
 49	juros	juros	NOUN	_	Gender=Masc|Number=Plur	44	conj	_	MWE=juros_de_mora|MWEPOS=NOUN
 50	de	de	ADP	_	_	49	compound	_	_
 51	mora	mora	NOUN	_	_	49	compound	_	_
@@ -100,6 +102,7 @@
 # source CETENFolha n=83 cad=Brasil sec=pol sem=94b
 # sent_id CF83-3
 # id 318
+# d2d: cc(pianista,e) -> cc(sócio,e)  #106
 1	Essas	esse	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	2	det	_	_
 2	empresas	empresa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -129,7 +132,7 @@
 27	João	João	PROPN	_	Gender=Masc|Number=Sing	26	appos	_	ChangedBy=Issue119|MWE=João_Carlos_Martins|MWEPOS=PROPN
 28	Carlos	Carlos	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
 29	Martins	Martins	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
-30	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	_
+30	e	e	CCONJ	<co-postnom>|KC|@CO	_	33	cc	_	d2d:#106
 31	de	de	ADP	<cjt>|PRP|@N<	_	33	case	_	_
 32	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	33	det	_	_
 33	sócio	sócio	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	conj	_	_

@@ -28,6 +28,7 @@
 # source CETEMPúblico n=867 sec=soc sem=93a
 # sent_id CP867-2
 # id 4448
+# d2d: cc(descoberta,e) -> cc(massificação,e)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 2	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	turismo	turismo	NOUN	<np-idf>|N|M|S|@ACC>	Gender=Masc|Number=Sing	17	obj	_	_
@@ -38,7 +39,7 @@
 8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	diferença	diferença	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
-11	e	e	CCONJ	<co-acc>|KC|@CO	_	7	cc	_	_
+11	e	e	CCONJ	<co-acc>|KC|@CO	_	14	cc	_	d2d:#106
 12	não	não	ADV	ADV|@>N	_	14	neg	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	massificação	massificação	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	conj	_	_
@@ -59,6 +60,9 @@
 # source CETEMPúblico n=867 sec=soc sem=93a
 # sent_id CP867-3
 # id 4449
+# d2d: cc(turismo,e) -> cc(agro-turismo,e)  #106
+# d2d: cc(turismo,e) -> cc(aproveitamento,e)  #106
+# d2d: punct(turismo,,) -> punct(turismo,,)  #106
 1	Além	além	ADV	ADV|@ADVL>	_	16	advmod	_	MWE=Além_de
 2	de	de	ADP	PRP|@A<	_	4	case	_	_
 3	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -77,12 +81,12 @@
 16	oferece	oferecer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 17	turismo	turismo	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	_
 18	rural	rural	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	_
-19	e	e	CCONJ	<co-acc>|KC|@CO	_	17	cc	_	_
+19	e	e	CCONJ	<co-acc>|KC|@CO	_	20	cc	_	d2d:#106
 20	agro-turismo	agro-turismo	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	conj	_	_
-21	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 22	turismo	turismo	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	conj	_	_
 23	cinegético	cinegético	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	22	amod	_	_
-24	e	e	CCONJ	<co-acc>|KC|@CO	_	17	cc	_	_
+24	e	e	CCONJ	<co-acc>|KC|@CO	_	26	cc	_	d2d:#106
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	aproveitamento	aproveitamento	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	conj	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
@@ -106,6 +110,9 @@
 # source CETEMPúblico n=867 sec=soc sem=93a
 # sent_id CP867-4
 # id 4450
+# d2d: punct(riqueza,,) -> punct(artesanato,,)  #106
+# d2d: cc(riqueza,e) -> cc(gastronomia,e)  #106
+# d2d: punct(riqueza,,) -> punct(cultura,,)  #106
 1	E	e	CCONJ	KC|@CO	_	21	cc	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	riqueza	riqueza	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	21	nsubj	_	_
@@ -114,15 +121,15 @@
 6	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	7	det	_	_
 7	património	património	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 8	construído	construir	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	7	acl	_	_
-9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	cultura	cultura	NOUN	<cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	conj	_	_
 12	musical	musical	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
 13	regional	regional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
-14	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	artesanato	artesanato	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	conj	_	_
-17	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
+17	e	e	CCONJ	<co-subj>|KC|@CO	_	19	cc	_	d2d:#106
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	gastronomia	gastronomia	NOUN	<cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	conj	_	_
 20	tradicional	tradicional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	_

@@ -3,6 +3,7 @@
 # source CETEMPúblico n=659 sec=des sem=97a
 # sent_id CP659-1
 # id 3426
+# d2d: punct(7-6,,) -> punct(6-4,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	norte-americano	norte-americano	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj:pass	_	_
 3	Pete	Pete	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Pete_Sampras|MWEPOS=PROPN
@@ -27,7 +28,7 @@
 22	(	(	PUNCT	PU|@PU	_	23	punct	_	_
 23	7-5	7-5	NUM	<card>|NUM|M|P|@A<	_	21	dep	_	_
 24	)	)	PUNCT	PU|@PU	_	23	punct	_	_
-25	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 26	6-4	6-4	NUM	<card>|<cjt>|NUM|M|P|@P<	_	21	conj	_	_
 27	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 28	o	o	PRON	_	Gender=Masc|Number=Sing	29	det	_	_
@@ -75,6 +76,7 @@
 # source CETEMPúblico n=659 sec=des sem=97a
 # sent_id CP659-2
 # id 3427
+# d2d: punct(6-3,,) -> punct(6-2,,)  #106
 1	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	13	nsubj:pass	_	ChangedBy=Issue119|MWE=Michael_Chang|MWEPOS=PROPN
 2	Chang	Chang	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -102,7 +104,7 @@
 25	parciais	parcial	ADJ	<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	13	nmod	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
 27	6-3	6-3	NUM	<card>|<first-cjt>|NUM|M|P|@P<	_	25	nmod	_	_
-28	,	,	PUNCT	PU|@PU	_	27	punct	_	_
+28	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
 29	6-2	6-2	NUM	<cjt>|<card>|NUM|M|P|@P<	_	27	conj	_	_
 30	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
@@ -141,6 +143,11 @@
 # source CETEMPúblico n=659 sec=des sem=97a
 # sent_id CP659-4
 # id 3429
+# d2d: punct(6-1,,) -> punct(3-6,,)  #106
+# d2d: cc(afastado,e) -> cc(eliminado,e)  #106
+# d2d: cc(6-1,e) -> cc(6-4,e)  #106
+# d2d: punct(afastado,,) -> punct(eliminado,,)  #106
+# d2d: punct(7-5,,) -> punct(6-3,,)  #106
 1	Andrei	Andrei	PROPN	_	Gender=Masc|Number=Sing	11	nsubj:pass	_	ChangedBy=Issue119|MWE=Andrei_Medvedev|MWEPOS=PROPN
 2	Medvedev	Medvedev	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -157,10 +164,10 @@
 14	Draper	Draper	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	por	por	ADP	PRP|@<ADVL	_	16	case	_	_
 16	7-5	7-5	NUM	<card>|<first-cjt>|NUM|M|P|@P<	_	11	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	6-3	6-3	NUM	<cjt>|<card>|NUM|M|P|@P<	_	16	conj	_	_
-19	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-20	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	_
+19	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
+20	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	30	cc	_	d2d:#106
 21	Félix	Félix	PROPN	_	Gender=Masc|Number=Sing	30	nsubj:pass	_	ChangedBy=Issue119|MWE=Félix_Mantilla|MWEPOS=PROPN
 22	Mantilla	Mantilla	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	(	(	PUNCT	PU|@PU	_	24	punct	_	_
@@ -176,9 +183,9 @@
 33	Rafter	Rafter	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
 34	por	por	ADP	PRP|@<ADVL	_	35	case	_	_
 35	6-1	6-1	NUM	<card>|<first-cjt>|NUM|M|P|@P<	_	30	nmod	_	_
-36	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+36	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
 37	3-6	3-6	NUM	<cjt>|<card>|NUM|M|P|@P<	_	35	conj	_	_
-38	e	e	CCONJ	<co-prparg>|KC|@CO	_	35	cc	_	_
+38	e	e	CCONJ	<co-prparg>|KC|@CO	_	39	cc	_	d2d:#106
 39	6-4	6-4	NUM	<cjt>|<card>|NUM|M|P|@P<	_	35	conj	_	_
 40	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 

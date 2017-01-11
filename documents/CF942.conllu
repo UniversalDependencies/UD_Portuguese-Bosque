@@ -15,6 +15,7 @@
 # source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
 # sent_id CF942-2
 # id 3985
+# d2d: punct(atriz,,) -> punct(loira,,)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	Olhos	Olhos	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	MWE=Olhos_de_Serpente
@@ -40,7 +41,7 @@
 23	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 24	falsa	falso	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	25	amod	_	_
 25	atriz	atriz	NOUN	<first-cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	18	appos	_	_
-26	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
 27	falsa	falso	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	28	amod	_	_
 28	loira	loiro	ADJ	<cjt>|<n>|<np-idf>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	25	conj	_	_
 29	,	,	PUNCT	PU|@PU	_	25	punct	_	_
@@ -129,6 +130,7 @@
 # source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
 # sent_id CF942-6
 # id 3989
+# d2d: cc(Madonna,e) -> cc(James,e)  #106
 1	Eddie	Eddie	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 2	(	(	PUNCT	PU|@PU	_	3	punct	_	_
 3	Harvey	Harvey	PROPN	_	Gender=Masc|Number=Sing	1	appos	_	ChangedBy=Issue119|MWE=Harvey_Keitel|MWEPOS=PROPN
@@ -147,7 +149,7 @@
 16	crise	crise	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
 17	(	(	PUNCT	PU|@PU	_	18	punct	_	_
 18	Madonna	Madonna	PROPN	<first-cjt>|PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	11	appos	_	_
-19	e	e	CCONJ	<co-pred>|KC|@CO	_	18	cc	_	_
+19	e	e	CCONJ	<co-pred>|KC|@CO	_	20	cc	_	d2d:#106
 20	James	James	PROPN	_	Gender=Masc|Number=Sing	18	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=James_Russo|MWEPOS=PROPN
 21	Russo	Russo	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 22	)	)	PUNCT	PU|@PU	_	18	punct	_	_
@@ -158,6 +160,7 @@
 # source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b &D
 # sent_id CF942-7
 # id 3990
+# d2d: cc(crise,e) -> cc(resiste,e)  #106
 1	Eddie	Eddie	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 2	também	também	ADV	ADV|@ADVL>	_	5	advmod	_	_
 3	está	estar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
@@ -175,7 +178,7 @@
 15	Abel	Abel	PROPN	_	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue119|MWE=Abel_Ferrara|MWEPOS=PROPN
 16	Ferrara	Ferrara	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 17	)	)	PUNCT	PU|@PU	_	10	punct	_	_
-18	e	e	CCONJ	<co-sta>|KC|@CO	_	5	cc	_	_
+18	e	e	CCONJ	<co-sta>|KC|@CO	_	20	cc	_	d2d:#106
 19	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
 20	resiste	resistir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
 21	a	a	ADP	<sam->|PRP|@<PIV	_	23	case	_	_

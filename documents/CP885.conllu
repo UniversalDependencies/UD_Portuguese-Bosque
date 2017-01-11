@@ -44,13 +44,15 @@
 # source CETEMPúblico n=885 sec=pol sem=96b
 # sent_id CP885-2
 # id 4546
+# d2d: cc(Fernandes,e) -> cc(Celeste,e)  #106
+# d2d: punct(Fernandes,,) -> punct(Luís,,)  #106
 1	«	«	PUNCT	PU|@PU	_	12	punct	_	_
 2	Fernandes	Fernandes	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue119|MWE=Fernandes_Thomaz|MWEPOS=PROPN
 3	Thomaz	Thomaz	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
-4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 5	Luís	Luís	PROPN	_	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Luís_Queiró|MWEPOS=PROPN
 6	Queiró	Queiró	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119
-7	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+7	e	e	CCONJ	<co-subj>|KC|@CO	_	8	cc	_	d2d:#106
 8	Celeste	Celeste	PROPN	_	Gender=Fem|Number=Sing	2	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Celeste_Cardona|MWEPOS=PROPN
 9	Cardona	Cardona	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
@@ -124,6 +126,9 @@
 # source CETEMPúblico n=885 sec=pol sem=96b
 # sent_id CP885-5
 # id 4549
+# d2d: cc(presidente,e) -> cc(concelhia,e)  #106
+# d2d: punct(presidente,,) -> punct(concelhia,,)  #106
+# d2d: punct(presidente,,) -> punct(concelhia,,)  #106
 1	Sílvio	Sílvio	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Sílvio_Cervan|MWEPOS=PROPN
 2	Cervan	Cervan	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	conseguiu	conseguir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -140,13 +145,13 @@
 14	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 15	Sá	Sá	PROPN	_	Gender=Masc|Number=Sing	8	appos	_	ChangedBy=Issue119|MWE=Sá_Correia|MWEPOS=PROPN
 16	Correia	Correia	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
-17	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 18	próximo	próximo	ADV	ADV|@N<PRED	_	15	advmod	_	MWE=próximo_de
 19	de	de	ADP	PRP|@A<	_	20	case	_	_
 20	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue119|MWE=Paulo_Portas|MWEPOS=PROPN
 21	Portas	Portas	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
-22	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-23	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	_
+22	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
+23	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	d2d:#106
 24	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	26	case	_	_
 25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	concelhia	concelhia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	conj	_	_

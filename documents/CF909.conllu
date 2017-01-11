@@ -57,6 +57,9 @@
 # source CETENFolha n=909 cad=Brasil sec=pol sem=94b
 # sent_id CF909-3
 # id 3829
+# d2d: cc(conversar,ou) -> cc(reprimir,ou)  #106
+# d2d: punct(conversar,,) -> punct(reprimir,,)  #106
+# d2d: cc(conversar,e) -> cc(convencê-,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Guarda	Guarda	PROPN	_	Gender=Fem|Number=Sing	9	nsubj	_	ChangedBy=Issue119|MWE=Guarda_Nacional|MWEPOS=PROPN
 3	Nacional	Nacional	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -69,7 +72,7 @@
 10	com	com	ADP	PRP|@<PIV	_	12	case	_	_
 11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	índios	índio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
-13	e	e	CCONJ	<co-vfin>|KC|@CO	_	9	cc	_	_
+13	e	e	CCONJ	<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 14	a	a	ADP	PRP|@<ADVL	_	15	mark	_	_
 15	convencê-	convencer	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	9	conj	_	ChangedBy=Issue149
 16	los	eles	PRON	PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	obj	_	_
@@ -79,8 +82,8 @@
 20	papel	papel	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
 21	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
 22	ela	ela	PRON	<-sam>|PERS|F|3S|NOM/PIV|@P<	Gender=Fem|Number=Sing|Person=3|PronType=Prs	20	nmod	_	_
-23	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-24	ou	ou	CCONJ	_	_	9	cc	_	MWE=ou_seja|MWEPOS=CCONJ
+23	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+24	ou	ou	CCONJ	_	_	27	cc	_	MWE=ou_seja|MWEPOS=CCONJ|d2d:#106
 25	seja	ser	VERB	_	Gender=Fem|Number=Sing	24	fixed	_	_
 26	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 27	reprimir	reprimir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	conj	_	ChangedBy=Issue149

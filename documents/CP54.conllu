@@ -74,9 +74,10 @@
 # source CETEMPúblico n=54 sec=soc sem=95b
 # sent_id CP54-4
 # id 308
+# d2d: cc(1960,e) -> cc(1991,e)  #106
 1	entre	entre	ADP	PRP|@ADVL>	_	2	case	_	_
 2	1960	1960	NUM	<year>|<first-cjt>|<card>|<date>|NUM|M|S|@P<	_	13	nmod	_	_
-3	e	e	CCONJ	<co-prparg>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-prparg>|KC|@CO	_	4	cc	_	d2d:#106
 4	1991	1991	NUM	<cjt>|<year>|<card>|<date>|NUM|M|S|@P<	_	2	conj	_	_
 5	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
@@ -132,6 +133,9 @@
 # source CETEMPúblico n=54 sec=soc sem=95b
 # sent_id CP54-6
 # id 310
+# d2d: cc(Filipa,e) -> cc(Isabel,e)  #106
+# d2d: cc(sociólogas,e) -> cc(geógrafas,e)  #106
+# d2d: cc(Ana,e) -> cc(Cristina,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
 2	Os	Os	PROPN	_	Gender=Masc|Number=Sing	22	nsubj:pass	_	ChangedBy=Issue119|MWE=Os_Padrões_Recentes|MWEPOS=PROPN
 3	Padrões	Padrões	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -161,16 +165,16 @@
 27	Nunes	Nunes	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	Almeida	Almeida	PROPN	PROP|@P<	Number=Sing	26	conj	_	ChangedBy=Issue149
-30	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	_
+30	e	e	CCONJ	<co-postnom>|KC|@CO	_	31	cc	_	d2d:#106
 31	Cristina	Cristina	PROPN	_	Gender=Fem|Number=Sing	26	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Cristina_Ferreira|MWEPOS=PROPN
 32	Ferreira	Ferreira	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119
-33	e	e	CCONJ	<co-pass>|KC|@CO	_	25	cc	_	_
+33	e	e	CCONJ	<co-pass>|KC|@CO	_	36	cc	_	d2d:#106
 34	por	por	ADP	<sam->|<cjt>|PRP|@PASS	_	36	case	_	_
 35	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	36	det	_	_
 36	geógrafas	geógrafa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	25	conj	_	_
 37	Filipa	Filipa	PROPN	_	Gender=Fem|Number=Sing	36	appos	_	ChangedBy=Issue119|MWE=Filipa_Ferrão|MWEPOS=PROPN
 38	Ferrão	Ferrão	PROPN	_	Number=Sing	37	flat:name	_	ChangedBy=Issue119
-39	e	e	CCONJ	<co-postnom>|KC|@CO	_	37	cc	_	_
+39	e	e	CCONJ	<co-postnom>|KC|@CO	_	40	cc	_	d2d:#106
 40	Isabel	Isabel	PROPN	_	Gender=Fem|Number=Sing	37	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Isabel_Margarida_André|MWEPOS=PROPN
 41	Margarida	Margarida	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119
 42	André	André	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119
@@ -181,6 +185,7 @@
 # source CETEMPúblico n=54 sec=soc sem=95b
 # sent_id CP54-7
 # id 311
+# d2d: cc(recente,e) -> cc(vertiginosa,e)  #106
 1	Editado	editar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	18	dep	_	_
 2	por	por	ADP	PRP|@PASS	_	4	case	_	_
 3	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	4	det	_	_
@@ -204,7 +209,7 @@
 21	«	«	PUNCT	PU|@PU	_	22	punct	_	_
 22	queda	queda	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
 23	recente	recente	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
-24	e	e	CCONJ	<co-postnom>|KC|@CO	_	23	cc	_	_
+24	e	e	CCONJ	<co-postnom>|KC|@CO	_	25	cc	_	d2d:#106
 25	vertiginosa	vertiginoso	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	conj	_	_
 26	de	de	ADP	<sam->|PRP|@N<	_	28	case	_	_
 27	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	28	det	_	_

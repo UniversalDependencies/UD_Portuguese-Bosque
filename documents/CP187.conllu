@@ -3,6 +3,9 @@
 # source CETEMPúblico n=187 sec=pol sem=94b
 # sent_id CP187-1
 # id 1001
+# d2d: cc(Presidente,mas) -> cc(obcecados,mas)  #106
+# d2d: punct(Presidente,,) -> punct(obcecados,,)  #106
+# d2d: cc(Nobel,e) -> cc(mexicano,e)  #106
 1	Não	não	ADV	_	Polarity=Neg	45	advmod	_	_
 2	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	de	de	ADP	PRP|@SC>	_	4	mark	_	_
@@ -55,8 +58,8 @@
 50	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	51	det	_	_
 51	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	48	nmod	_	MWE=Estados_Unidos
 52	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	51	flat:name	_	_
-53	,	,	PUNCT	PU|@PU	_	48	punct	_	_
-54	mas	mas	CCONJ	<co-subj>|<co-vfin>|KC|@CO	_	48	cc	_	_
+53	,	,	PUNCT	PU|@PU	_	59	punct	_	d2d:#106
+54	mas	mas	CCONJ	<co-subj>|<co-vfin>|KC|@CO	_	59	cc	_	d2d:#106
 55	sobretudo	sobretudo	ADV	ADV|@>N	_	59	advmod	_	_
 56	esses	esse	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	59	det	_	_
 57	dois	dois	NUM	<card>|NUM|M|P|@>N	_	59	nummod	_	_
@@ -73,7 +76,7 @@
 68	Gabriel	Gabriel	PROPN	_	Gender=Masc|Number=Sing	66	appos	_	ChangedBy=Issue119|MWE=Gabriel_García_Márquez|MWEPOS=PROPN
 69	García	García	PROPN	_	Number=Sing	68	flat:name	_	ChangedBy=Issue119
 70	Márquez	Márquez	PROPN	_	Number=Sing	68	flat:name	_	ChangedBy=Issue119
-71	e	e	CCONJ	<co-sc>|KC|@CO	_	66	cc	_	_
+71	e	e	CCONJ	<co-sc>|KC|@CO	_	73	cc	_	d2d:#106
 72	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	73	det	_	_
 73	mexicano	mexicano	NOUN	<cjt>|<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	66	conj	_	_
 74	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	73	appos	_	ChangedBy=Issue119|MWE=Carlos_Fuentes|MWEPOS=PROPN
@@ -94,6 +97,11 @@
 # source CETEMPúblico n=187 sec=pol sem=94b
 # sent_id CP187-2
 # id 1002
+# d2d: cc(acreditou,e) -> cc(deu-,e)  #106
+# d2d: punct(acreditou,,) -> punct(deu-,,)  #106
+# d2d: cc(tem,e) -> cc(defende,e)  #106
+# d2d: punct(acreditou,,) -> punct(deu-,,)  #106
+# d2d: cc(Cuba,e) -> cc(Estados,e)  #106
 1	Toda	todo	DET	DET|F|S|@>N	Gender=Fem|Number=Sing	3	det	_	MWE=Toda_a
 2	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	gente	gente	PRON	INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Ind	4	nsubj	_	_
@@ -101,7 +109,7 @@
 5	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
 6	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
 7	reunião	reunião	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj:pass	_	_
-8	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	84	punct	_	d2d:#106
 9	realizada	realizar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	7	acl	_	_
 10	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
 11	plena	pleno	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	12	amod	_	_
@@ -125,11 +133,11 @@
 29	aberta	abrir	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	28	acl	_	_
 30	entre	entre	ADP	PRP|@<ADVL	_	31	case	_	_
 31	Cuba	Cuba	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	29	obl	_	ChangedBy=Issue137
-32	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	_
+32	e	e	CCONJ	<co-prparg>|KC|@CO	_	34	cc	_	d2d:#106
 33	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
 34	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	31	conj	_	ChangedBy=Issue149|MWE=Estados_Unidos
 35	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	34	flat:name	_	_
-36	e	e	CCONJ	<co-fcl>|<co-pcv>|KC|@CO	_	4	cc	_	_
+36	e	e	CCONJ	<co-fcl>|<co-pcv>|KC|@CO	_	84	cc	_	d2d:#106
 37	,	,	PUNCT	PU|@PU	_	38	punct	_	_
 38	dada	dar	VERB	<mv>|V|PCP|F|S|@ICL-ADVL>	Gender=Fem|Number=Sing|VerbForm=Part	84	advcl	_	_
 39	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
@@ -146,7 +154,7 @@
 50	estreita	estreito	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	49	amod	_	_
 51	com	com	ADP	PRP|@N<ARG	_	52	case	_	_
 52	Castro	Castro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	49	nmod	_	_
-53	e	e	CCONJ	<co-fcl>|KC|@CO	_	47	cc	_	_
+53	e	e	CCONJ	<co-fcl>|KC|@CO	_	55	cc	_	d2d:#106
 54	Fuentes	Fuentes	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	55	nsubj	_	_
 55	defende	defender	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	47	conj	_	_
 56	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	_	_
@@ -176,7 +184,7 @@
 80	poderoso	poderoso	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	81	amod	_	_
 81	vizinho	vizinho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	72	nmod	_	_
 82	--	--	PUNCT	PU|@PU	_	47	punct	_	_
-83	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+83	,	,	PUNCT	PU|@PU	_	84	punct	_	d2d:#106
 84	deu-	dar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
 85	se	se	PRON	PERS|M|3S|ACC|@<SUBJ	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	84	nsubj	_	_
 86	como	como	ADP	<prd>|PRP|@<ADVL	_	87	case	_	_

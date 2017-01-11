@@ -3,11 +3,17 @@
 # source CETEMPúblico n=326 sec=des sem=94b &L
 # sent_id CP326-1
 # id 1712
+# d2d: cc(impediu,mas) -> cc(obstáculo,mas)  #106
+# d2d: punct(Pedro,,) -> punct(Carlos,,)  #106
+# d2d: cc(Pedro,e) -> cc(Carlos,e)  #106
+# d2d: punct(Pedro,,) -> punct(Luís,,)  #106
+# d2d: cc(quente,e) -> cc(húmido,e)  #106
+# d2d: punct(impediu,,) -> punct(obstáculo,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tempo	tempo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 4	quente	quente	ADJ	<cjt>|<first-cjt>|ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	2	amod	_	_
-5	e	e	CCONJ	<co-pred>|KC|@CO	_	4	cc	_	_
+5	e	e	CCONJ	<co-pred>|KC|@CO	_	6	cc	_	d2d:#106
 6	húmido	húmido	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue149
 7	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 8	impediu	impedir	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -16,8 +22,8 @@
 11	de	de	ADP	PRP|@N<ARG	_	13	case	_	_
 12	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	13	amod	_	_
 13	marcas	marca	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	_
-14	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-15	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	8	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+15	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 16	não	não	ADV	ADV|@ADVL>	_	18	neg	_	_
 17	foi	ser	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	cop	_	_
 18	obstáculo	obstáculo	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	8	conj	_	_
@@ -45,10 +51,10 @@
 40	(	(	PUNCT	PU|@PU	_	41	punct	_	_
 41	31m31s	31m31s	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	32	appos	_	_
 42	)	)	PUNCT	PU|@PU	_	41	punct	_	_
-43	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+43	,	,	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
 44	Luís	Luís	PROPN	_	Gender=Masc|Number=Sing	32	conj	_	ChangedBy=Issue119|MWE=Luís_Vieira|MWEPOS=PROPN
 45	Vieira	Vieira	PROPN	_	Number=Sing	44	flat:name	_	ChangedBy=Issue119
-46	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+46	,	,	PUNCT	PU|@PU	_	57	punct	_	d2d:#106
 47	de	de	ADP	<cjt>|<sam->|PRP|@N<PRED	_	49	case	_	_
 48	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
 49	AA	AA	PROPN	_	Gender=Fem|Number=Sing	44	nmod	_	ChangedBy=Issue119|MWE=AA_Peniche_Óptica_2000|MWEPOS=PROPN
@@ -58,7 +64,7 @@
 53	(	(	PUNCT	PU|@PU	_	54	punct	_	_
 54	31m55s	31m55s	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	44	appos	_	_
 55	)	)	PUNCT	PU|@PU	_	54	punct	_	_
-56	e	e	CCONJ	<co-app>|KC|@CO	_	32	cc	_	_
+56	e	e	CCONJ	<co-app>|KC|@CO	_	57	cc	_	d2d:#106
 57	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	32	conj	_	ChangedBy=Issue119|MWE=Carlos_Almeida|MWEPOS=PROPN
 58	Almeida	Almeida	PROPN	_	Number=Sing	57	flat:name	_	ChangedBy=Issue119
 59	,	,	PUNCT	PU|@PU	_	62	punct	_	_
@@ -76,6 +82,9 @@
 # source CETEMPúblico n=326 sec=des sem=94b
 # sent_id CP326-2
 # id 1713
+# d2d: punct(Umbelina,,) -> punct(Luísa,,)  #106
+# d2d: cc(Umbelina,e) -> cc(Luísa,e)  #106
+# d2d: cc(267ª,e) -> cc(veterana,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	senhoras	senhora	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	obl	_	ChangedBy=Issue137
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -99,12 +108,12 @@
 21	de	de	ADP	<sam->|PRP|@A<	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	geral	geral	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
-24	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	20	cc	_	_
+24	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	26	cc	_	d2d:#106
 25	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	26	amod	_	_
 26	veterana	veterano	ADJ	<cjt>|<n>|<np-idf>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	20	conj	_	_
 27	)	)	PUNCT	PU|@PU	_	20	punct	_	_
-28	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-29	e	e	CCONJ	<co-acc>|KC|@CO	_	12	cc	_	_
+28	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
+29	e	e	CCONJ	<co-acc>|KC|@CO	_	30	cc	_	d2d:#106
 30	Luísa	Luísa	PROPN	_	Gender=Fem|Number=Sing	12	conj	_	ChangedBy=Issue119|MWE=Luísa_Almeida|MWEPOS=PROPN
 31	Almeida	Almeida	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 32	,	,	PUNCT	PU|@PU	_	35	punct	_	_
@@ -188,6 +197,9 @@
 # source CETEMPúblico n=326 sec=des sem=94b
 # sent_id CP326-6
 # id 1717
+# d2d: cc(frequentes,e) -> cc(dificultam,e)  #106
+# d2d: cc(dificultam,e) -> cc(falseiam,e)  #106
+# d2d: cc(individuais,e) -> cc(colectivas,e)  #106
 1	Casos	caso	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 2	semelhantes	semelhante	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	1	amod	_	_
 3	a	a	ADP	PRP|@A<	_	4	case	_	_
@@ -204,9 +216,9 @@
 14	efectuam	efectuar	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_
 15	em	em	ADP	PRP|@<ADVL	_	16	case	_	_
 16	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	ChangedBy=Issue137
-17	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	6	cc	_	_
+17	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 18	dificultam	dificultar	VERB	<mv>|<cjt>|<first-cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
-19	e	e	CCONJ	<co-vfin>|KC|@CO	_	18	cc	_	_
+19	e	e	CCONJ	<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 20	falseiam	falsear	VERB	<mv>|<cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	elaboração	elaboração	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	18	obj	_	_
@@ -214,7 +226,7 @@
 24	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
 25	classificações	classificação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
 26	individuais	individual	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	25	amod	_	_
-27	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	_
+27	e	e	CCONJ	<co-postnom>|KC|@CO	_	28	cc	_	d2d:#106
 28	colectivas	colectivo	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	26	conj	_	_
 29	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

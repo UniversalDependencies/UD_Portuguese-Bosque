@@ -3,6 +3,13 @@
 # source CETEMPúblico n=146 sec=nd sem=91b
 # sent_id CP146-1
 # id 752
+# d2d: punct(penso,,) -> punct(fardado,,)  #106
+# d2d: cc(franciscanas,e) -> cc(linguagem,e)  #106
+# d2d: cc(comparação,e) -> cc(relação,e)  #106
+# d2d: cc(entende,e) -> cc(venera,e)  #106
+# d2d: cc(venera,e) -> cc(ama,e)  #106
+# d2d: punct(comparação,,) -> punct(relação,,)  #106
+# d2d: cc(franciscanas,e) -> cc(barbas,e)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	2	case	_	_
 2	mim	eu	PRON	PERS|M/F|1S|PIV|@P<	Gender=Unsp|Number=Sing|Person=1|PronType=Prs	4	nmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -15,8 +22,8 @@
 10	(	(	PUNCT	PU|@PU	_	13	punct	_	_
 11	...	...	PUNCT	PU|@PU	_	4	punct	_	_
 12	)	)	PUNCT	PU|@PU	_	4	punct	_	_
-13	e	e	CCONJ	<co-subj>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
-14	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+13	e	e	CCONJ	<co-subj>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
+14	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 15	muito	muito	ADV	<quant>|ADV|@>A	_	16	advmod	_	_
 16	menos	menos	ADV	<quant>|ADV|@>A	_	22	advmod	_	_
 17	em	em	ADP	<cjt>|<sam->|PRP|@<SUBJ	_	18	case	_	MWE=em_relação_a
@@ -34,7 +41,7 @@
 29	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	31	det	_	_
 30	o	o	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	obl	_	ChangedBy=Issue137
-32	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+32	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 33	sempre	sempre	ADV	ADV|@ADVL>	_	36	advmod	_	_
 34	a	a	ADP	PRP|@ADVL>	_	35	case	_	MWE=a_rigor
 35	rigor	rigor	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	36	nmod	_	_
@@ -42,10 +49,10 @@
 37	,	,	PUNCT	PU|@PU	_	36	punct	_	_
 38	de	de	ADP	<first-cjt>|PRP|@FS-N<PRED	_	39	case	_	_
 39	franciscanas	franciscanas	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	25	nmod	_	_
-40	e	e	CCONJ	<co-prenom>|KC|@CO	_	39	cc	_	_
+40	e	e	CCONJ	<co-prenom>|KC|@CO	_	42	cc	_	d2d:#106
 41	respeitáveis	respeitável	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	42	amod	_	_
 42	barbas	barba	NOUN	<cjt>|<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	39	conj	_	_
-43	e	e	CCONJ	<co-cjt>|<co-pred>|KC|@CO	_	39	cc	_	_
+43	e	e	CCONJ	<co-cjt>|<co-pred>|KC|@CO	_	45	cc	_	d2d:#106
 44	de	de	ADP	<cjt>|PRP|@FS-N<PRED	_	45	case	_	_
 45	linguagem	linguagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	39	conj	_	_
 46	tão	tão	ADV	<dem>|<quant>|ADV|@>A	_	47	advmod	_	_
@@ -58,12 +65,12 @@
 53	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	54	det	_	_
 54	terra	terra	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	51	nmod	_	_
 55	entende	entender	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-KOMP<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	47	ccomp	_	_
-56	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	55	cc	_	_
+56	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	60	cc	_	d2d:#106
 57	o	o	NOUN	N|@>N	_	58	compound	_	MWE=o_povo
 58	povo	povo	NOUN	N|@SUBJ>	_	60	nsubj	_	_
 59	cubano	cubano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	58	amod	_	_
 60	venera	venerar	VERB	<mv>|<first-cjt>|<cjt>|V|PR|3S|IND|@FS-KOMP<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	55	conj	_	_
-61	e	e	CCONJ	<co-vfin>|KC|@CO	_	60	cc	_	_
+61	e	e	CCONJ	<co-vfin>|KC|@CO	_	62	cc	_	d2d:#106
 62	ama	amar	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-KOMP<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	60	conj	_	_
 63	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -72,6 +79,14 @@
 # source CETEMPúblico n=146 sec=nd sem=91b
 # sent_id CP146-2
 # id 753
+# d2d: punct(bem-estar,,) -> punct(solidariedade,,)  #106
+# d2d: punct(jogo,,) -> punct(prostituição,,)  #106
+# d2d: cc(maiores,e) -> cc(notáveis,e)  #106
+# d2d: cc(artes,e) -> cc(letras,e)  #106
+# d2d: punct(tristeza,,) -> punct(indigência,,)  #106
+# d2d: cc(repressão,e) -> cc(berço,e)  #106
+# d2d: cc(sociais,e) -> cc(indignas,e)  #106
+# d2d: cc(bem-estar,e) -> cc(cultura,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Cuba	Cuba	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	53	obl	_	ChangedBy=Issue137
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -88,7 +103,7 @@
 14	para	para	ADP	PRP|@N<	_	15	case	_	_
 15	uns	um	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur	12	det	_	_
 16	tantos	tanto	DET	<quant>|DET|M|P|@N<	Gender=Masc|Number=Plur	15	det	_	_
-17	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 18	de	de	ADP	<cjt>|PRP|@N<	_	20	case	_	_
 19	negra	negro	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_
 20	prostituição	prostituição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
@@ -100,16 +115,16 @@
 26	atroz	atroz	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	27	amod	_	_
 27	repressão	repressão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	_
 28	capitalista	capitalista	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	27	amod	_	_
-29	e	e	CCONJ	KC|@CO	_	27	cc	_	_
+29	e	e	CCONJ	KC|@CO	_	30	cc	_	d2d:#106
 30	berço	berço	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	27	conj	_	ChangedBy=Issue149
 31	de	de	ADP	<sam->|PRP|@N<	_	36	case	_	_
 32	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	36	det	_	_
 33	maiores	grande	ADJ	<first-cjt>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	36	amod	_	_
-34	e	e	CCONJ	<co-prenom>|KC|@CO	_	33	cc	_	_
+34	e	e	CCONJ	<co-prenom>|KC|@CO	_	35	cc	_	d2d:#106
 35	notáveis	notável	ADJ	<cjt>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	33	conj	_	_
 36	desigualdades	desigualdade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	30	nmod	_	_
 37	sociais	social	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	36	amod	_	_
-38	e	e	CCONJ	<co-postnom>|KC|@CO	_	37	cc	_	_
+38	e	e	CCONJ	<co-postnom>|KC|@CO	_	39	cc	_	d2d:#106
 39	indignas	indigno	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	37	conj	_	_
 40	de	de	ADP	PRP|@A<	_	42	case	_	_
 41	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	42	det	_	_
@@ -203,7 +218,7 @@
 129	em	em	ADP	<sam->|<first-cjt>|PRP|@N<	_	131	case	_	_
 130	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	131	det	_	_
 131	artes	arte	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	127	nmod	_	_
-132	e	e	CCONJ	<co-postnom>|<co-advl>|KC|@CO	_	131	cc	_	_
+132	e	e	CCONJ	<co-postnom>|<co-advl>|KC|@CO	_	135	cc	_	d2d:#106
 133	em	em	ADP	<sam->|<cjt>|PRP|@N<	_	135	case	_	_
 134	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	135	det	_	_
 135	letras	letra	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	131	conj	_	_
@@ -212,10 +227,10 @@
 138	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	139	det	_	_
 139	bem-estar	bem-estar	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	147	nsubj	_	_
 140	social	social	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	139	amod	_	_
-141	,	,	PUNCT	PU|@PU	_	139	punct	_	_
+141	,	,	PUNCT	PU|@PU	_	143	punct	_	d2d:#106
 142	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	143	det	_	_
 143	solidariedade	solidariedade	NOUN	<cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	139	conj	_	_
-144	e	e	CCONJ	<co-subj>|KC|@CO	_	139	cc	_	_
+144	e	e	CCONJ	<co-subj>|KC|@CO	_	146	cc	_	d2d:#106
 145	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	146	det	_	_
 146	cultura	cultura	NOUN	<cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	139	conj	_	_
 147	ocupam	ocupar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	94	conj	_	_
@@ -224,7 +239,7 @@
 150	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	152	case	_	_
 151	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	152	det	_	_
 152	tristeza	tristeza	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	149	nmod	_	_
-153	,	,	PUNCT	PU|@PU	_	152	punct	_	_
+153	,	,	PUNCT	PU|@PU	_	156	punct	_	d2d:#106
 154	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	156	case	_	_
 155	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	156	det	_	_
 156	indigência	indigência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	152	conj	_	_

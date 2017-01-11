@@ -16,6 +16,8 @@
 # source CETEMPúblico n=801 sec=soc sem=92a
 # sent_id CP801-2
 # id 4102
+# d2d: cc(realidade,e) -> cc(sistema,e)  #106
+# d2d: punct(realidade,,) -> punct(problema,,)  #106
 1	Temos	ter	AUX	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	prestado	prestar	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	0	root	_	_
 3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -28,11 +30,11 @@
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	realidade	realidade	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 12	física	físico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
-13	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	problema	problema	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	conj	_	_
 16	ambiental	ambiental	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	amod	_	_
-17	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
+17	e	e	CCONJ	<co-prparg>|KC|@CO	_	19	cc	_	d2d:#106
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	sistema	sistema	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	conj	_	_
 20	político	político	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
@@ -43,6 +45,9 @@
 # source CETEMPúblico n=801 sec=soc sem=92a
 # sent_id CP801-3
 # id 4103
+# d2d: cc(problema,ou) -> cc(agricultura,ou)  #106
+# d2d: cc(problema,mas) -> cc(governos,mas)  #106
+# d2d: punct(problema,,) -> punct(governos,,)  #106
 1	Se	se	SCONJ	KS|@SUB	_	2	mark	_	_
 2	pegarmos	pegar	VERB	<mv>|V|FUT|1P|SUBJ|@FS-ADVL>	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	20	advcl	_	_
 3	em	em	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -67,13 +72,13 @@
 22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	problema	problema	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
 24	ambiental	ambiental	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	23	amod	_	_
-25	ou	ou	CCONJ	<co-piv>|KC|@CO	_	23	cc	_	_
+25	ou	ou	CCONJ	<co-piv>|KC|@CO	_	28	cc	_	d2d:#106
 26	de	de	ADP	<cjt>|PRP|@<PIV	_	28	case	_	_
 27	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
 28	agricultura	agricultura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	23	conj	_	_
 29	subdesenvolvida	subdesenvolvido	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	28	amod	_	_
-30	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-31	mas	mas	CCONJ	<co-piv>|<co-cu>|KC|@CO	_	23	cc	_	_
+30	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
+31	mas	mas	CCONJ	<co-piv>|<co-cu>|KC|@CO	_	34	cc	_	d2d:#106
 32	de	de	ADP	<cjt>|<sam->|PRP|@<PIV	_	34	case	_	_
 33	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
 34	governos	governo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	23	conj	_	_
@@ -110,6 +115,7 @@
 # source CETEMPúblico n=801 sec=soc sem=92a
 # sent_id CP801-5
 # id 4105
+# d2d: cc(conseguem,e) -> cc(vivem,e)  #106
 1	Curiosamente	curiosamente	ADV	ADV|@ADVL>	_	20	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	_
@@ -134,7 +140,7 @@
 22	se	se	PRON	PERS|F|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	21	expl	_	ChangedBy=Issue135
 23	em	em	ADP	PRP|@<ADVL	_	24	case	_	_
 24	alimentos	alimento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	21	obl	_	ChangedBy=Issue137
-25	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	_
+25	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	26	cc	_	d2d:#106
 26	vivem	viver	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	conj	_	_
 27	de	de	ADP	<sam->|PRP|@<PIV	_	29	case	_	_
 28	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
@@ -239,6 +245,7 @@
 # source CETEMPúblico n=801 sec=soc sem=92a
 # sent_id CP801-10
 # id 4110
+# d2d: cc(África,como) -> cc(Índia,como)  #106
 1	Muita	muito	PRON	<quant>|DET|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj:pass	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	essa	esse	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_
@@ -257,7 +264,7 @@
 16	tanto	tanto	ADV	<quant>|<KOMP>|<COMP>|ADV|@CO	_	19	cc	_	_
 17	em	em	ADP	<first-cjt>|PRP|@N<PRED	_	18	case	_	_
 18	África	África	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
-19	como	como	ADV	<co-advl>|ADV|@CO	_	18	cc	_	_
+19	como	como	ADV	<co-advl>|ADV|@CO	_	22	cc	_	d2d:#106
 20	em	em	ADP	<sam->|<first-cjt>|PRP|@P<	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	Índia	Índia	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	18	conj	_	ChangedBy=Issue149
@@ -272,13 +279,14 @@
 # source CETEMPúblico n=801 sec=soc sem=92a
 # sent_id CP801-11
 # id 4111
+# d2d: cc(subnutrição,e) -> cc(fome,e)  #106
 1	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	causa	causa	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 4	maciça	maciço	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	_
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	subnutrição	subnutrição	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
-7	e	e	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	d2d:#106
 8	fome	fome	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	_
 9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

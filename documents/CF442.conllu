@@ -3,6 +3,12 @@
 # source CETENFolha n=442 cad=Brasil sec=pol sem=94b &D
 # sent_id CF442-1
 # id 1847
+# d2d: punct(aplica-,,) -> punct(avalia-,,)  #106
+# d2d: cc(aplica-,e) -> cc(aplica,e)  #106
+# d2d: punct(aplica-,,) -> punct(avalia-,,)  #106
+# d2d: punct(aplica-,,) -> punct(avalia-,,)  #106
+# d2d: punct(aplica-,,) -> punct(aplica,,)  #106
+# d2d: punct(aplica-,,) -> punct(aplica,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	modo	modo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	mark	_	_
@@ -16,28 +22,28 @@
 11	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	reajuste	reajuste	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	9	obj	_	_
 13	de	de	ADP	PRP|@N<	_	18	case	_	_
-14	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 15	digamos	dizer	VERB	<mv>|V|PR|1P|SUBJ|@FS-N<PRED	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_
-16	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 17	40	40	NUM	<card>|NUM|M|P|@>N	_	18	nummod	_	_
 18	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
 19	;	;	PUNCT	PU|@PU	_	5	punct	_	_
 20	em	em	ADP	PRP|@ADVL>	_	21	case	_	MWE=em_seguida
 21	seguida	seguida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
-22	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+22	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 23	avalia-	avaliar	VERB	<mv>|<cjt>|<hyphen>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
 24	se	se	PRON	PERS|F|3S|ACC|@<SUBJ	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	23	nsubj	_	_
 25	qual	qual	PRON	<rel>|DET|F|S|@SC>	Gender=Fem|Number=Sing|PronType=Rel	27	xcomp	_	_
 26	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	inflação	inflação	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	23	nsubj	_	_
 28	diária	diário	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	27	amod	_	_
-29	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+29	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
 30	digamos	dizer	VERB	<cjt>|<mv>|V|PR|1P|SUBJ|@FS-N<PRED	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_
 31	de	de	ADP	PRP|@<ADVL	_	33	case	_	_
 32	1,5	1,5	NUM	<card>|NUM|M|P|@>N	_	33	nummod	_	_
 33	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	30	nmod	_	_
-34	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-35	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
+34	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
+35	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	38	cc	_	d2d:#106
 36	aí	aí	ADV	<kc>|ADV|@ADVL>	_	38	advmod	_	_
 37	se	se	PRON	PERS|M|3S|ACC|@SUBJ>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	nsubj	_	_
 38	aplica	aplicar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
@@ -150,6 +156,9 @@
 # source CETENFolha n=442 cad=Brasil sec=pol sem=94b
 # sent_id CF442-6
 # id 1852
+# d2d: cc(oficialize,e) -> cc(universalize,e)  #106
+# d2d: cc(acostuma,como) -> cc(exercer,como)  #106
+# d2d: punct(acostuma,,) -> punct(exercer,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	generalização	generalização	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<ARG	_	5	case	_	_
@@ -161,8 +170,8 @@
 9	acostuma	acostumar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	economia	economia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
-12	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-13	como	como	ADV	<co-sta>|<kc>|ADV|@CO	_	9	cc	_	_
+12	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+13	como	como	ADV	<co-sta>|<kc>|ADV|@CO	_	16	cc	_	d2d:#106
 14	passa	passar	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
 15	a	a	ADP	PRP|@PRT-AUX<	_	16	mark	_	_
 16	exercer	exercer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	conj	_	_
@@ -172,7 +181,7 @@
 20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj	_	_
 22	oficialize	oficializar	VERB	<first-cjt>|<mv>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl	_	_
-23	e	e	CCONJ	<co-prparg>|<co-vfin>|KC|@CO	_	22	cc	_	_
+23	e	e	CCONJ	<co-prparg>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 24	universalize	universalizar	VERB	<cjt>|<mv>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	conj	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	prática	prática	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_

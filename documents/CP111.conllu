@@ -3,6 +3,18 @@
 # source CETEMPúblico n=111 sec=pol sem=93b &L
 # sent_id CP111-1
 # id 565
+# d2d: cc(35,e) -> cc(40,e)  #106
+# d2d: punct(Wang,,) -> punct(Bao,,)  #106
+# d2d: punct(Wang,,) -> punct(Bao,,)  #106
+# d2d: cc(Wang,e) -> cc(Bao,e)  #106
+# d2d: punct(Wang,,) -> punct(Reng,,)  #106
+# d2d: punct(Wang,,) -> punct(Bao,,)  #106
+# d2d: punct(Wang,,) -> punct(Reng,,)  #106
+# d2d: punct(Wang,,) -> punct(Liu,,)  #106
+# d2d: punct(Wang,,) -> punct(Reng,,)  #106
+# d2d: cc(Wang,e) -> cc(Liu,e)  #106
+# d2d: punct(Wang,,) -> punct(Reng,,)  #106
+# d2d: punct(Wang,,) -> punct(Bao,,)  #106
 1	Outros	outro	DET	<diff>|DET|M|P|@>N	Gender=Masc|Number=Plur	2	det	_	_
 2	dissidentes	dissidente	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj	_	_
 3	conhecidos	conhecido	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	2	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
@@ -20,14 +32,14 @@
 15	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
 16	Wang	Wang	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Wang_Juntao|MWEPOS=PROPN
 17	Juntao	Juntao	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
-18	e	e	CCONJ	<co-sc>|KC|@CO	_	16	cc	_	_
+18	e	e	CCONJ	<co-sc>|KC|@CO	_	40	cc	_	d2d:#106
 19	Chen	Chen	PROPN	_	Gender=Masc|Number=Sing	16	xcomp	_	ChangedBy=Issue119|MWE=Chen_Zimin|MWEPOS=PROPN
 20	Zimin	Zimin	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
 21	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 22	jornalistas	jornalista	ADJ	ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	16	amod	_	_
 23	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 24	35	35	NUM	<first-cjt>|<card>|NUM|M|P|@>N	_	27	nummod	_	_
-25	e	e	CCONJ	<co-prenom>|KC|@CO	_	24	cc	_	_
+25	e	e	CCONJ	<co-prenom>|KC|@CO	_	26	cc	_	d2d:#106
 26	40	40	NUM	<cjt>|<card>|NUM|M|P|@>N	_	24	conj	_	_
 27	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	16	appos	_	_
 28	,	,	PUNCT	PU|@PU	_	27	punct	_	_
@@ -41,34 +53,34 @@
 36	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	31	nmod	_	_
 37	de	de	ADP	PRP|@N<	_	38	case	_	_
 38	prisão	prisão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	_
-39	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+39	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 40	Liu	Liu	PROPN	_	Gender=Masc|Number=Sing	16	conj	_	ChangedBy=Issue119|MWE=Liu_Gang|MWEPOS=PROPN
 41	Gang	Gang	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119
-42	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+42	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
 43	estudante	estudante	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	40	appos	_	_
-44	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+44	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
 45	32	32	NUM	<card>|NUM|M|P|@>N	_	46	nummod	_	_
 46	anos	ano	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	40	appos	_	_
-47	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+47	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
 48	condenado	condenar	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	40	acl	_	_
 49	a	a	ADP	PRP|@<PIV	_	51	case	_	_
 50	seis	seis	NUM	<card>|NUM|M|P|@>N	_	51	nummod	_	_
 51	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	48	nmod	_	_
-52	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+52	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
 53	Reng	Reng	PROPN	_	Gender=Masc|Number=Sing	16	conj	_	ChangedBy=Issue119|MWE=Reng_Wanding|MWEPOS=PROPN
 54	Wanding	Wanding	PROPN	_	Number=Sing	53	flat:name	_	ChangedBy=Issue119
-55	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+55	,	,	PUNCT	PU|@PU	_	67	punct	_	d2d:#106
 56	operário	operário	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	53	appos	_	_
-57	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+57	,	,	PUNCT	PU|@PU	_	67	punct	_	d2d:#106
 58	48	48	NUM	<card>|NUM|M|P|@>N	_	59	nummod	_	_
 59	anos	ano	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	53	appos	_	_
-60	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+60	,	,	PUNCT	PU|@PU	_	67	punct	_	d2d:#106
 61	condenado	condenar	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	53	acl	_	_
 62	a	a	ADP	PRP|@<PIV	_	64	case	_	_
 63	sete	sete	NUM	<card>|NUM|M|P|@>N	_	64	nummod	_	_
 64	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	61	nmod	_	_
-65	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-66	e	e	CCONJ	<co-sc>|KC|@CO	_	16	cc	_	_
+65	,	,	PUNCT	PU|@PU	_	67	punct	_	d2d:#106
+66	e	e	CCONJ	<co-sc>|KC|@CO	_	67	cc	_	d2d:#106
 67	Bao	Bao	PROPN	_	Gender=Masc|Number=Sing	16	conj	_	ChangedBy=Issue119|MWE=Bao_Tong|MWEPOS=PROPN
 68	Tong	Tong	PROPN	_	Number=Sing	67	flat:name	_	ChangedBy=Issue119
 69	,	,	PUNCT	PU|@PU	_	71	punct	_	_

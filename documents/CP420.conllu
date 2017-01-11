@@ -3,6 +3,9 @@
 # source CETEMPúblico n=420 sec=pol sem=93b
 # sent_id CP420-1
 # id 2210
+# d2d: punct(norte-americanos,,) -> punct(italianos,,)  #106
+# d2d: cc(norte-americanos,e) -> cc(soldados,e)  #106
+# d2d: punct(norte-americanos,,) -> punct(paquistaneses,,)  #106
 1	Pouco	pouco	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	7	nmod	_	MWE=Pouco_a_pouco
 2	a	a	ADP	PRP|@N<	_	3	case	_	_
 3	pouco	pouco	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
@@ -21,11 +24,11 @@
 16	ali	ali	ADV	ADV|@P<	_	17	advmod	_	_
 17	levara	levar	VERB	<mv>|V|MQP|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	12	acl:relcl	_	_
 18	norte-americanos	norte-americano	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	17	obj	_	_
-19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	paquistaneses	paquistanês	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	18	conj	_	_
-21	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 22	italianos	italiano	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	18	conj	_	_
-23	e	e	CCONJ	<co-acc>|KC|@CO	_	18	cc	_	_
+23	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	d2d:#106
 24	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	25	det	_	_
 25	soldados	soldado	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	18	conj	_	_
 26	de	de	ADP	PRP|@N<	_	28	case	_	_
@@ -53,6 +56,8 @@
 # source CETEMPúblico n=420 sec=pol sem=93b
 # sent_id CP420-2
 # id 2211
+# d2d: cc(força,e) -> cc(milícias,e)  #106
+# d2d: cc(nacionalista,e) -> cc(paladino,e)  #106
 1	E	e	CCONJ	KC|@CO	_	12	cc	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	situação	situação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
@@ -77,7 +82,7 @@
 22	força	força	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
 23	expedicionária	expedicionário	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
 24	estrangeira	estrangeiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
-25	e	e	CCONJ	<co-prparg>|KC|@CO	_	22	cc	_	_
+25	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	d2d:#106
 26	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_
 27	milícias	milícia	NOUN	<cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	conj	_	_
 28	locais	local	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	27	amod	_	_
@@ -97,7 +102,7 @@
 42	por	por	ADP	PRP|@<PIV	_	44	case	_	_
 43	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	nacionalista	nacionalista	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	41	nmod	_	_
-45	e	e	CCONJ	<co-prparg>|KC|@CO	_	44	cc	_	_
+45	e	e	CCONJ	<co-prparg>|KC|@CO	_	47	cc	_	d2d:#106
 46	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 47	paladino	paladino	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	44	conj	_	_
 48	de	de	ADP	<sam->|PRP|@N<	_	50	case	_	_
@@ -120,19 +125,27 @@
 # source CETEMPúblico n=420 sec=pol sem=93b
 # sent_id CP420-4
 # id 2213
+# d2d: punct(ataque,,) -> punct(operação,,)  #106
+# d2d: cc(ataque,e) -> cc(operação,e)  #106
+# d2d: cc(fotógrafo,e) -> cc(operador,e)  #106
+# d2d: punct(ataque,,) -> punct(operação,,)  #106
+# d2d: cc(fotógrafo,e) -> cc(outro,e)  #106
+# d2d: punct(fotógrafo,,) -> punct(operador,,)  #106
+# d2d: punct(fotógrafo,,) -> punct(operador,,)  #106
+# d2d: punct(fotógrafo,,) -> punct(outro,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ataque	ataque	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	21	nsubj	_	_
 3	aéreo	aéreo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
 5	ontem	ontem	ADV	ADV|@P<	_	2	advmod	_	_
-6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 7	em	em	ADP	PRP|@ADVL>	_	8	case	_	_
 8	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	9	nmod	_	_
 9	participaram	participar	VERB	<first-cjt>|<mv>|V|PS|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	_	_
 10	nove	nove	NUM	<card>|NUM|M|P|@>N	_	11	nummod	_	_
 11	helicópteros	helicóptero	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	9	nsubj	_	_
-12	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-13	e	e	CCONJ	<co-subj>|<co-vfin>|KC|@CO	_	2	cc	_	_
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+13	e	e	CCONJ	<co-subj>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	operação	operação	NOUN	<cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
 16	terrestre	terrestre	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	_
@@ -162,8 +175,8 @@
 40	de	de	ADP	<first-cjt>|PRP|@N<PRED	_	42	case	_	_
 41	22	22	NUM	<card>|NUM|M|P|@>N	_	42	nummod	_	_
 42	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	36	nmod	_	_
-43	,	,	PUNCT	PU|@PU	_	29	punct	_	_
-44	e	e	CCONJ	<co-acc>|KC|@CO	_	29	cc	_	_
+43	,	,	PUNCT	PU|@PU	_	45	punct	_	d2d:#106
+44	e	e	CCONJ	<co-acc>|KC|@CO	_	45	cc	_	d2d:#106
 45	outro	outro	PRON	<cjt>|<KOMP>|<diff>|DET|M|S|@<ACC	Gender=Masc|Number=Sing	29	conj	_	_
 46	de	de	ADP	<sam->|PRP|@N<	_	48	case	_	_
 47	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
@@ -188,11 +201,11 @@
 66	mais	mais	ADV	<setop>|ADV|M|S|@>A	_	67	advmod	_	_
 67	um	um	NUM	<card>|NUM|M|S|@>N	_	68	nummod	_	_
 68	fotógrafo	fotógrafo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	64	nmod	_	_
-69	,	,	PUNCT	PU|@PU	_	68	punct	_	_
+69	,	,	PUNCT	PU|@PU	_	76	punct	_	d2d:#106
 70	Hos	Hos	PROPN	_	Gender=Masc|Number=Sing	68	appos	_	ChangedBy=Issue119|MWE=Hos_Maina|MWEPOS=PROPN
 71	Maina	Maina	PROPN	_	Number=Sing	70	flat:name	_	ChangedBy=Issue119
-72	,	,	PUNCT	PU|@PU	_	68	punct	_	_
-73	e	e	CCONJ	<co-postnom>|KC|@CO	_	68	cc	_	_
+72	,	,	PUNCT	PU|@PU	_	76	punct	_	d2d:#106
+73	e	e	CCONJ	<co-postnom>|KC|@CO	_	76	cc	_	d2d:#106
 74	de	de	ADP	<cjt>|PRP|@N<	_	76	case	_	_
 75	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	76	det	_	_
 76	operador	operador	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	68	conj	_	_

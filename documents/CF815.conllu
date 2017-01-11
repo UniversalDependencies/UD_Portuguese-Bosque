@@ -3,6 +3,10 @@
 # source CETENFolha n=815 cad=Cotidiano sec=soc sem=94a
 # sent_id CF815-1
 # id 3430
+# d2d: cc(procurador,e) -> cc(Ary,e)  #106
+# d2d: punct(procurador,,) -> punct(inspetores,,)  #106
+# d2d: cc(procurador,e) -> cc(peritos,e)  #106
+# d2d: punct(procurador,,) -> punct(delegados,,)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	2	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@P<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	dep	_	_
 3	denunciados	denunciar	VERB	<mv>|<n>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	_	_
@@ -19,18 +23,18 @@
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	Nascimento	Nascimento	PROPN	PROP|@P<	Number=Sing	13	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 18	26	26	NUM	<card>|NUM|M|P|@>N	_	19	nummod	_	_
 19	delegados	delegado	NOUN	<cjt>|<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	9	conj	_	_
-20	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	inspetores	inspetor	NOUN	<cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	9	conj	_	_
-22	e	e	CCONJ	<co-subj>|KC|@CO	_	9	cc	_	_
+22	e	e	CCONJ	<co-subj>|KC|@CO	_	23	cc	_	d2d:#106
 23	peritos	perito	NOUN	<cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	9	conj	_	_
 24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
 25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Polícia	Polícia	PROPN	_	Gender=Fem|Number=Sing	23	nmod	_	ChangedBy=Issue119|MWE=Polícia_Civil|MWEPOS=PROPN
 27	Civil	Civil	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
-28	e	e	CCONJ	<co-subj>|KC|@CO	_	9	cc	_	_
+28	e	e	CCONJ	<co-subj>|KC|@CO	_	29	cc	_	d2d:#106
 29	Ary	Ary	PROPN	_	Gender=Masc|Number=Sing	9	conj	_	ChangedBy=Issue119|MWE=Ary_Chagas|MWEPOS=PROPN
 30	Chagas	Chagas	PROPN	_	Number=Sing	29	flat:name	_	ChangedBy=Issue119
 31	de	de	ADP	PRP|@N<	_	32	case	_	_

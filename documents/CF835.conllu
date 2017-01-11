@@ -201,13 +201,18 @@
 # source CETENFolha n=835 cad=Revista Folha sec=nd sem=94b
 # sent_id CF835-8
 # id 3525
+# d2d: cc(cerveja,e) -> cc(batidas,e)  #106
+# d2d: cc(Pedem,e) -> cc(falam,e)  #106
+# d2d: punct(Pedem,,) -> punct(falam,,)  #106
+# d2d: punct(Pedem,,) -> punct(falam,,)  #106
+# d2d: punct(cerveja,,) -> punct(tequila,,)  #106
 1	Pedem	pedir	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	cerveja	cerveja	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
-3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	d2d:#106
 4	tequila	tequila	NOUN	<np-idf>|<cjt>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	conj	_	_
-5	e	e	CCONJ	<co-acc>|KC|@CO	_	2	cc	_	_
+5	e	e	CCONJ	<co-acc>|KC|@CO	_	6	cc	_	d2d:#106
 6	batidas	bater	VERB	<cjt>|V|PCP|F|P|@<ACC	Gender=Fem|Number=Plur|VerbForm=Part	2	conj	_	_
-7	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
 9	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	gasto	gasto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137
@@ -217,8 +222,8 @@
 14	30	30	NUM	<card>|NUM|M|P|@N<	_	13	nummod	_	_
 15	por	por	ADP	PRP|@<ADVL	_	16	case	_	_
 16	noite	noite	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue137
-17	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-18	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+17	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
+18	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	19	cc	_	d2d:#106
 19	falam	falar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
 20	mal	mal	ADV	ADV|@<ADVL	_	19	advmod	_	_
 21	de	de	ADP	<sam->|PRP|@<PIV	_	23	case	_	_

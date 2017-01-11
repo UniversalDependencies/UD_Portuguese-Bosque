@@ -67,13 +67,15 @@
 # source CETENFolha n=552 cad=Ilustrada sec=nd sem=94b
 # sent_id CF552-3
 # id 2312
+# d2d: punct(Chinon,») -> punct(Saumur-Champigny,»)  #106
+# d2d: cc(Chinon,e) -> cc(Saumur-Champigny,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	Chinon	Chinon	PROPN	_	Gender=Masc|Number=Sing	17	nsubj:pass	_	ChangedBy=Issue119|MWE=Chinon_Les_Granges|MWEPOS=PROPN
 4	Les	Les	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 5	Granges	Granges	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
-6	»	»	PUNCT	PU|@PU	_	3	punct	_	_
-7	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
+6	»	»	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+7	e	e	CCONJ	<co-subj>|KC|@CO	_	9	cc	_	d2d:#106
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	Saumur-Champigny	Saumur-Champigny	PROPN	_	Gender=Masc|Number=Sing	3	conj	_	ChangedBy=Issue119|MWE=Saumur-Champigny_«Domaine|MWEPOS=PROPN
 10	«Domaine	«Domaine	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
@@ -91,6 +93,9 @@
 # source CETENFolha n=552 cad=Ilustrada sec=nd sem=94b
 # sent_id CF552-4
 # id 2313
+# d2d: cc(tem,e) -> cc(evolui,e)  #106
+# d2d: cc(aroma,e) -> cc(sabor,e)  #106
+# d2d: cc(sério,e) -> cc(tânico,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	Les	Les	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=Les_Granges|MWEPOS=PROPN
@@ -98,12 +103,12 @@
 5	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 6	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	aroma	aroma	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
-8	e	e	CCONJ	<co-acc>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	d2d:#106
 9	sabor	sabor	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	conj	_	_
 10	marcado	marcar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	7	acl	_	_
 11	por	por	ADP	PRP|@PASS	_	12	case	_	_
 12	morangos	morango	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl:agent	_	_
-13	e	e	CCONJ	<co-sta>|KC|@CO	_	6	cc	_	_
+13	e	e	CCONJ	<co-sta>|KC|@CO	_	14	cc	_	d2d:#106
 14	evolui	evoluir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
 15	bem	bem	ADV	<quant>|ADV|@<ADVL	_	14	advmod	_	_
 16	em	em	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
@@ -120,7 +125,7 @@
 27	é	ser	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	cop	_	_
 28	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	29	advmod	_	_
 29	sério	sério	ADJ	<first-cjt>|<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	6	conj	_	_
-30	e	e	CCONJ	<co-sc>|KC|@CO	_	29	cc	_	_
+30	e	e	CCONJ	<co-sc>|KC|@CO	_	34	cc	_	d2d:#106
 31	(	(	PUNCT	PU|@PU	_	32	punct	_	_
 32	levemente	levemente	ADV	ADV|@>A	_	34	advmod	_	_
 33	)	)	PUNCT	PU|@PU	_	32	punct	_	_

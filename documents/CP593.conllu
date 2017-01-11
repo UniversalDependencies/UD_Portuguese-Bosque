@@ -3,6 +3,7 @@
 # source CETEMPúblico n=593 sec=clt sem=93a
 # sent_id CP593-1
 # id 3081
+# d2d: cc(longa,e) -> cc(agitada,e)  #106
 1	McCartney	McCartney	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	MWE=de_volta
 3	volta	volta	NOUN	N|@P<	_	1	nmod	_	_
@@ -10,7 +11,7 @@
 5	em	em	ADP	<sam->|PRP|@N<PRED	_	10	case	_	_
 6	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 7	longa	longo	ADJ	<first-cjt>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	10	amod	_	_
-8	e	e	CCONJ	<co-prenom>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-prenom>|KC|@CO	_	9	cc	_	d2d:#106
 9	agitada	agitar	VERB	<cjt>|V|PCP|F|S|@>N	Gender=Fem|Number=Sing|VerbForm=Part	7	conj	_	_
 10	digressão	digressão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 11	mundial	mundial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
@@ -20,17 +21,21 @@
 # source CETEMPúblico n=593 sec=clt sem=93a
 # sent_id CP593-3
 # id 3082
+# d2d: cc(ficado,mas) -> cc(deixam,mas)  #106
+# d2d: cc(aspecto,e) -> cc(ar,e)  #106
+# d2d: punct(ficado,,) -> punct(ama-,,)  #106
+# d2d: cc(ficado,e) -> cc(ama-,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	cabelo	cabelo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	terá	ter	AUX	<first-cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
 4	ficado	ficar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	0	root	_	_
 5	grisalho	grisalho	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	4	xcomp	_	_
-6	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+6	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 8	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	10	det	_	_
 9	bom	bom	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	10	amod	_	_
 10	aspecto	aspecto	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	_
-11	e	e	CCONJ	<co-subj>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-subj>|KC|@CO	_	13	cc	_	d2d:#106
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	ar	ar	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	conj	_	_
 14	agaiatado	agaiatar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	13	acl	_	_
@@ -41,8 +46,8 @@
 19	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur	21	det	_	_
 20	50	50	NUM	<card>|NUM|M|P|@>N	_	21	nummod	_	_
 21	anos	ano	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	17	nsubj	_	_
-22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
-23	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	32	cc	_	d2d:#106
+23	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 24	muito	muito	ADV	<quant>|ADV|@>A	_	25	advmod	_	_
 25	provavelmente	provavelmente	ADV	ADV|@ADVL>	_	32	advmod	_	_
 26	,	,	PUNCT	PU|@PU	_	25	punct	_	_

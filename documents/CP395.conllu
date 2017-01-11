@@ -3,13 +3,18 @@
 # source CETEMPúblico n=395 sec=clt sem=92b &L
 # sent_id CP395-1
 # id 2063
+# d2d: cc(curtas,e) -> cc(médias,e)  #106
+# d2d: punct(Black,,) -> punct(Aspen,,)  #106
+# d2d: punct(Black,,) -> punct(Face,,)  #106
+# d2d: cc(Black,e) -> cc(Das,e)  #106
+# d2d: punct(Black,») -> punct(Aspen,»)  #106
 1	Dentro	dentro	ADV	ADV|@ADVL>	_	17	advmod	_	MWE=Dentro_de
 2	de	de	ADP	PRP|@A<	_	4	case	_	_
 3	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 4	filmes	filme	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	_
 5	(	(	PUNCT	PU|@PU	_	9	punct	_	_
 6	curtas	curto	ADJ	<first-cjt>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	9	amod	_	_
-7	e	e	CCONJ	<co-prenom>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-prenom>|KC|@CO	_	8	cc	_	d2d:#106
 8	médias	médio	ADJ	<cjt>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	6	conj	_	_
 9	metragens	metragem	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	4	appos	_	_
 10	de	de	ADP	PRP|@N<	_	12	case	_	_
@@ -27,14 +32,14 @@
 22	«	«	PUNCT	PU|@PU	_	23	punct	_	_
 23	Black	Black	PROPN	_	Gender=Masc|Number=Sing	20	nmod	_	ChangedBy=Issue119|MWE=Black_Harvest|MWEPOS=PROPN
 24	Harvest	Harvest	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119
-25	»	»	PUNCT	PU|@PU	_	23	punct	_	_
+25	»	»	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
 27	Bob	Bob	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	ChangedBy=Issue119|MWE=Bob_Connoly|MWEPOS=PROPN
 28	Connoly	Connoly	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
 29	(	(	PUNCT	PU|@PU	_	30	punct	_	_
 30	Austrália	Austrália	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	23	appos	_	_
 31	)	)	PUNCT	PU|@PU	_	30	punct	_	_
-32	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+32	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
 33	«	«	PUNCT	PU|@PU	_	34	punct	_	_
 34	Aspen	Aspen	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	23	conj	_	_
 35	»	»	PUNCT	PU|@PU	_	34	punct	_	_
@@ -44,7 +49,7 @@
 39	(	(	PUNCT	PU|@PU	_	40	punct	_	_
 40	EUA	EUA	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	34	appos	_	_
 41	)	)	PUNCT	PU|@PU	_	40	punct	_	_
-42	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+42	,	,	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
 43	«	«	PUNCT	PU|@PU	_	44	punct	_	_
 44	Face	Face	PROPN	_	Gender=Masc|Number=Sing	23	conj	_	ChangedBy=Issue119|MWE=Face_Value|MWEPOS=PROPN
 45	Value	Value	PROPN	_	Number=Sing	44	flat:name	_	ChangedBy=Issue119
@@ -57,7 +62,7 @@
 52	(	(	PUNCT	PU|@PU	_	53	punct	_	_
 53	Holanda	Holanda	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	44	appos	_	_
 54	)	)	PUNCT	PU|@PU	_	53	punct	_	_
-55	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	_
+55	e	e	CCONJ	<co-prparg>|KC|@CO	_	57	cc	_	d2d:#106
 56	«	«	PUNCT	PU|@PU	_	57	punct	_	_
 57	Das	Das	PROPN	_	Gender=Masc|Number=Sing	23	conj	_	ChangedBy=Issue119|MWE=Das_Ungehobelte_Pack|MWEPOS=PROPN
 58	Ungehobelte	Ungehobelte	PROPN	_	Number=Sing	57	flat:name	_	ChangedBy=Issue119
@@ -76,9 +81,10 @@
 # source CETEMPúblico n=395 sec=clt sem=92b
 # sent_id CP395-2
 # id 2064
+# d2d: punct(retrospectiva,/) -> punct(concurso,/)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	retrospectiva	retrospectiva	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
-3	/	/	PUNCT	PU|@PU	_	2	punct	_	_
+3	/	/	PUNCT	PU|@PU	_	4	punct	_	d2d:#106
 4	concurso	concurso	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	cinema	cinema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
@@ -113,6 +119,7 @@
 # source CETEMPúblico n=395 sec=clt sem=92b
 # sent_id CP395-3
 # id 2065
+# d2d: punct(experimentais,,) -> punct(radicais,,)  #106
 1	Outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Gender=Fem|Number=Plur	3	det	_	_
 2	quatro	quatro	NUM	<card>|NUM|F|P|@>N	_	3	nummod	_	_
 3	obras	obra	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
@@ -137,7 +144,7 @@
 22	suecos	sueco	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	21	amod	_	_
 23	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	24	advmod	_	_
 24	experimentais	experimental	ADJ	<first-cjt>|<COMP>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	21	amod	_	_
-25	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 26	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	27	advmod	_	_
 27	radicais	radical	ADJ	<cjt>|<COMP>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	24	conj	_	_
 28	,	,	PUNCT	PU|@PU	_	24	punct	_	_
@@ -202,13 +209,16 @@
 # source CETEMPúblico n=395 sec=clt sem=92b
 # sent_id CP395-5
 # id 2067
+# d2d: cc(60,e) -> cc(70,e)  #106
+# d2d: cc(ritmo,e) -> cc(raizes,e)  #106
+# d2d: cc(filmes,e) -> cc(noticiários,e)  #106
 1	«	«	PUNCT	PU|@PU	_	15	punct	_	_
 2	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 3	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 4	décadas	década	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	15	obl	_	ChangedBy=Issue137
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	60	60	NUM	<first-cjt>|<card>|NUM|F|P|@P<	_	4	nmod	_	_
-7	e	e	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	d2d:#106
 8	70	70	NUM	<cjt>|<card>|NUM|F|P|@P<	_	6	conj	_	_
 9	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
@@ -220,7 +230,7 @@
 16	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	ritmo	ritmo	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	15	obj	_	_
 18	diferente	diferente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	_
-19	e	e	CCONJ	<co-acc>|KC|@CO	_	17	cc	_	_
+19	e	e	CCONJ	<co-acc>|KC|@CO	_	20	cc	_	d2d:#106
 20	raizes	raiz	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	17	conj	_	_
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
 22	produção	produção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
@@ -245,7 +255,7 @@
 41	de	de	ADP	<first-cjt>|PRP|@N<ARG	_	42	case	_	_
 42	filmes	filme	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	40	nmod	_	_
 43	curtos	curto	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	42	amod	_	_
-44	e	e	CCONJ	<co-postnom>|KC|@CO	_	42	cc	_	_
+44	e	e	CCONJ	<co-postnom>|KC|@CO	_	46	cc	_	d2d:#106
 45	de	de	ADP	<cjt>|PRP|@N<	_	46	case	_	_
 46	noticiários	noticiário	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	42	conj	_	_
 47	antes	antes	ADV	ADV|@N<	_	37	advmod	_	_

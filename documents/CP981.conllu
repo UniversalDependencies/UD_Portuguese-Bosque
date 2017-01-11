@@ -23,11 +23,14 @@
 # source CETEMPúblico n=981 sec=clt sem=98b
 # sent_id CP981-2
 # id 5046
+# d2d: cc(Hillary,e) -> cc(Bill,e)  #106
+# d2d: cc(ter,e) -> cc(quem,e)  #106
+# d2d: cc(bom,ou) -> cc(mau,ou)  #106
 1	«	«	PUNCT	PU|@PU	_	10	punct	_	_
 2	Eles	ele	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
 3	[	[	PUNCT	PU|@PU	_	4	punct	_	_
 4	Hillary	Hillary	PROPN	<first-cjt>|PROP|F|S|@APP	Gender=Fem|Number=Sing	10	appos	_	_
-5	e	e	CCONJ	<co-app>|KC|@CO	_	4	cc	_	_
+5	e	e	CCONJ	<co-app>|KC|@CO	_	6	cc	_	d2d:#106
 6	Bill	Bill	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Bill_Clinton|MWEPOS=PROPN
 7	Clinton	Clinton	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	]	_	PUNCT	PU|@PU	_	4	punct	_	_
@@ -37,7 +40,7 @@
 12	espécie	espécie	NOUN	<meta>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	acordo	acordo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
-15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 16	quem	quem	PRON	<interr>|INDP|M/F|P|@SC>	Gender=Unsp|Number=Plur|PronType=Int	10	conj	_	_
 17	somos	ser	VERB	<cjt>|<mv>|V|PR|1P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	cop	_	_
 18	nós	nós	PRON	PERS|M/F|1P|NOM|@<SUBJ	Case=Nom|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	16	nsubj	_	_
@@ -46,7 +49,7 @@
 21	se	se	SCONJ	KS|@SUB	_	23	mark	_	_
 22	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_
 23	bom	bom	ADJ	<first-cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	20	ccomp	_	_
-24	ou	ou	CCONJ	<co-sc>|KC|@CO	_	23	cc	_	_
+24	ou	ou	CCONJ	<co-sc>|KC|@CO	_	25	cc	_	d2d:#106
 25	mau	mau	ADJ	<cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	23	conj	_	_
 26	?	?	PUNCT	PU|@PU	_	10	punct	_	_
 
@@ -55,6 +58,8 @@
 # source CETEMPúblico n=981 sec=clt sem=98b
 # sent_id CP981-3
 # id 5047
+# d2d: punct(sexo,,) -> punct(relação,,)  #106
+# d2d: cc(sexo,como) -> cc(relação,como)  #106
 1	Acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	4	mark	_	_
 3	eles	ele	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
@@ -66,8 +71,8 @@
 9	a	a	ADP	PRP|@N<	_	11	case	_	_
 10	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	sexo	sexo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
-12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-13	como	como	ADV	<co-postnom>|<kc>|ADV|@CO	_	11	cc	_	_
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+13	como	como	ADV	<co-postnom>|<kc>|ADV|@CO	_	15	cc	_	d2d:#106
 14	em	em	ADP	<cjt>|<sam->|PRP|@N<	_	15	case	_	MWE=em_relação_a
 15	relação	relação	NOUN	N|@P<	_	11	conj	_	_
 16	a	a	ADP	PRP|@N<	_	18	case	_	_
@@ -87,6 +92,7 @@
 # source CETEMPúblico n=981 sec=clt sem=98b &E
 # sent_id CP981-4
 # id 5048
+# d2d: cc(liga,e) -> cc(descobre,e)  #106
 1	Talvez	talvez	ADV	ADV|@ADVL>	_	44	advmod	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Presidente	Presidente	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	44	nsubj	_	_
@@ -97,7 +103,7 @@
 8	televisão	televisão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
 9	de	de	ADP	PRP|@<ADVL	_	10	case	_	MWE=de_manhã
 10	manhã	manhã	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
-11	e	e	CCONJ	<co-advl>|<co-vfin>|KC|@CO	_	6	cc	_	_
+11	e	e	CCONJ	<co-advl>|<co-vfin>|KC|@CO	_	12	cc	_	d2d:#106
 12	descobre	descobrir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
 13	que	que	SCONJ	KS|@SUB	_	24	mark	_	_
 14	apesar	apesar	ADV	ADV|@ADVL>	_	24	advmod	_	MWE=apesar_de

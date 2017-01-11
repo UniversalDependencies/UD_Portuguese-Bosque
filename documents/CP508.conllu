@@ -53,12 +53,13 @@
 # source CETEMPúblico n=508 sec=pol sem=92a
 # sent_id CP508-2
 # id 2670
+# d2d: cc(candidato,e) -> cc(notam,e)  #106
 1	Cosic	Cosic	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 2	era	ser	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 4	único	único	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	5	amod	_	_
 5	candidato	candidato	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-6	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	d2d:#106
 7	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
 8	diplomatas	diplomata	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
 9	ocidentais	ocidental	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	8	amod	_	_
@@ -102,6 +103,7 @@
 # source CETEMPúblico n=508 sec=pol sem=92a
 # sent_id CP508-3
 # id 2671
+# d2d: cc(subir,e) -> cc(palco,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	contestação	contestação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
 3	a	a	ADP	PRP|@N<	_	4	case	_	_
@@ -111,7 +113,7 @@
 7	subir	subir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 8	de	de	ADP	PRP|@<ADVL	_	9	case	_	_
 9	tom	tom	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137
-10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	_
+10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	25	cc	_	d2d:#106
 11	ontem	ontem	ADV	ADV|@ADVL>	_	25	advmod	_	_
 12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 13	por	por	ADP	<sam->|PRP|@ADVL>	_	16	case	_	_
@@ -140,6 +142,8 @@
 # source CETEMPúblico n=508 sec=pol sem=92a
 # sent_id CP508-4
 # id 2672
+# d2d: punct(afastamento,,) -> punct(formação,,)  #106
+# d2d: cc(afastamento,e) -> cc(realização,e)  #106
 1	Mais	mais	ADV	ADV|@>A	_	3	advmod	_	MWE=Mais_de
 2	de	de	ADP	<prp>|PRP|@A<	_	1	case	_	_
 3	dez	dez	NUM	<card>|NUM|M/F|P|@>N	_	5	nummod	_	_
@@ -151,7 +155,7 @@
 9	afastamento	afastamento	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	Milosevic	Milosevic	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
-12	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	formação	formação	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	conj	_	_
 15	de	de	ADP	PRP|@N<	_	17	case	_	_
@@ -160,7 +164,7 @@
 18	de	de	ADP	PRP|@N<	_	19	case	_	_
 19	salvação	salvação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
 20	nacional	nacional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	_
-21	e	e	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	_
+21	e	e	CCONJ	<co-acc>|KC|@CO	_	23	cc	_	d2d:#106
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	realização	realização	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	conj	_	_
 24	de	de	ADP	PRP|@N<ARG	_	25	case	_	_
@@ -172,14 +176,16 @@
 # source CETEMPúblico n=508 sec=pol sem=92a
 # sent_id CP508-5
 # id 2673
+# d2d: punct(Decretaram,,) -> punct(ocupam,,)  #106
+# d2d: cc(Decretaram,e) -> cc(prometem,e)  #106
 1	Decretaram	decretar	VERB	<mv>|<first-cjt>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	greve	greve	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
-4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 5	ocupam	ocupar	VERB	<mv>|<cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
 6	três	três	NUM	<card>|NUM|F|P|@>N	_	7	nummod	_	_
 7	faculdades	faculdade	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	_
-8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 9	prometem	prometer	VERB	<mv>|<cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
 10	resistir	resistir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	9	xcomp	_	_
 11	até	até	ADP	PRP|@<ADVL	_	14	case	_	_

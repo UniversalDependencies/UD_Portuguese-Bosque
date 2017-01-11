@@ -3,6 +3,9 @@
 # source CETENFolha n=64 cad=Agrofolha sec=agr sem=94b
 # sent_id CF64-1
 # id 240
+# d2d: cc(unidades,e) -> cc(rodovias,e)  #106
+# d2d: cc(recuperação,além) -> cc(incentivo,além)  #106
+# d2d: punct(recuperação,,) -> punct(incentivo,,)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	tanto	tanto	PRON	<quant>|<KOMP>|<COMP>|DET|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 3	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -18,12 +21,12 @@
 13	armazenadoras	armazenadora	NOUN	<np-idf>|N|F|P|@N<	Gender=Fem|Number=Plur	12	nmod:npmod	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	cereais	cereal	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
-16	e	e	CCONJ	KC|@CO	_	12	cc	_	_
+16	e	e	CCONJ	KC|@CO	_	19	cc	_	d2d:#106
 17	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	19	case	_	_
 18	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
 19	rodovias	rodovia	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	12	conj	_	ChangedBy=Issue149
-20	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-21	além	além	ADV	ADV|@CO	_	10	cc	_	MWE=além_de
+20	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+21	além	além	ADV	ADV|@CO	_	24	cc	_	MWE=além_de|d2d:#106
 22	de	de	ADP	PRP|@A<	_	21	nmod	_	_
 23	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	incentivo	incentivo	NOUN	<cjt>|<np-def>|N|M|S|@KOMP<	Gender=Masc|Number=Sing	10	conj	_	_
@@ -64,6 +67,9 @@
 # source CETENFolha n=64 cad=Agrofolha sec=agr sem=94b
 # sent_id CF64-3
 # id 242
+# d2d: cc(seguras,e) -> cc(atuais,e)  #106
+# d2d: cc(oferecer,e) -> cc(desenvolver,e)  #106
+# d2d: cc(acondicionamento,e) -> cc(embalagem,e)  #106
 1	A	a	ADP	<sam->|<first-cjt>|PRP|@STA	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	horticultores	horticultor	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
@@ -74,7 +80,7 @@
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	mercado	mercado	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
 10	seguras	seguro	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	15	amod	_	_
-11	e	e	CCONJ	<co-postnom>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-postnom>|KC|@CO	_	12	cc	_	d2d:#106
 12	atuais	atual	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	10	conj	_	_
 13	para	para	ADP	PRP|@<ACC	_	15	case	_	_
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
@@ -82,14 +88,14 @@
 16	de	de	ADP	<sam->|PRP|@N<ARG	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	produção	produção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
-19	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	6	cc	_	_
+19	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	20	cc	_	d2d:#106
 20	desenvolver	desenvolver	VERB	<mv>|<cjt>|V|INF|@ICL-<SUBJ	VerbForm=Inf	6	conj	_	_
 21	novas	novo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	22	amod	_	_
 22	alternativas	alternativa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	20	obj	_	_
 23	para	para	ADP	PRP|@N<	_	25	case	_	_
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	acondicionamento	acondicionamento	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	_
-26	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	_
+26	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	d2d:#106
 27	embalagem	embalagem	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	25	conj	_	_
 28	de	de	ADP	<sam->|PRP|@N<ARG	_	30	case	_	_
 29	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_

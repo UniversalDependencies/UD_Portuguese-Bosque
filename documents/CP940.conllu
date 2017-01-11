@@ -3,6 +3,7 @@
 # source CETEMPúblico n=940 sec=eco sem=93a
 # sent_id CP940-1
 # id 4833
+# d2d: cc(Marconi,e) -> cc(CN,e)  #106
 1	O	o	DET	<first-cjt>|<artd>|ART|M|S|@SUBJ>	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	nsubj	_	_
 2	apurou	apurar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	também	também	ADV	ADV|@<ADVL	_	2	advmod	_	_
@@ -12,7 +13,7 @@
 7	entre	entre	ADP	PRP|@N<	_	9	case	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Marconi	Marconi	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
-10	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	_
+10	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	CN	CN	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
 13	sobre	sobre	ADP	PRP|@N<ARG	_	15	case	_	_
@@ -56,6 +57,8 @@
 # source CETEMPúblico n=940 sec=eco sem=93a
 # sent_id CP940-3
 # id 4835
+# d2d: punct(assumir,,) -> punct(manifestado,,)  #106
+# d2d: cc(assumir,e) -> cc(manifestado,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Telecom	Telecom	PROPN	_	Gender=Fem|Number=Sing	7	nsubj	_	ChangedBy=Issue119|MWE=Telecom_Portugal|MWEPOS=PROPN
 3	Portugal	Portugal	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -80,8 +83,8 @@
 22	por	por	ADP	_	Gender=Masc|Number=Sing	19	nmod	_	MWE=por_cento|MWEPOS=NOUN
 23	cento	cento	NUM	_	Gender=Masc|Number=Sing	22	compound	_	_
 24	--	--	PUNCT	PU|@PU	_	17	punct	_	_
-25	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	_
-26	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+25	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	33	cc	_	d2d:#106
+26	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 27	em	em	ADP	PRP|@ADVL>	_	28	case	_	MWE=em_contrapartida
 28	contrapartida	contrapartida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
 29	,	,	PUNCT	PU|@PU	_	28	punct	_	_
@@ -111,6 +114,8 @@
 # source CETEMPúblico n=940 sec=eco sem=93a
 # sent_id CP940-4
 # id 4836
+# d2d: punct(Telecom,,) -> punct(TLP,,)  #106
+# d2d: cc(Telecom,e) -> cc(Marconi,e)  #106
 1	Actualmente	actualmente	ADV	ADV|@ADVL>	_	9	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -129,11 +134,11 @@
 16	por	por	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	Telecom	Telecom	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
-19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 20	por	por	ADP	<sam->|<cjt>|PRP|@<PIV	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	TLP	TLP	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	conj	_	_
-23	e	e	CCONJ	<co-piv>|KC|@CO	_	18	cc	_	_
+23	e	e	CCONJ	<co-piv>|KC|@CO	_	26	cc	_	d2d:#106
 24	por	por	ADP	<sam->|<cjt>|PRP|@<PIV	_	26	case	_	_
 25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Marconi	Marconi	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	18	conj	_	_

@@ -3,6 +3,10 @@
 # source CETEMPúblico n=221 sec=soc sem=96a &L
 # sent_id CP221-1
 # id 1192
+# d2d: cc(Bob,e) -> cc(João,e)  #106
+# d2d: punct(Bob,,) -> punct(Pedro,,)  #106
+# d2d: cc(sax,e) -> cc(voz,e)  #106
+# d2d: punct(Bob,,) -> punct(Carlo,,)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	quarteto	quarteto	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	31	nsubj	_	_
 3	formado	formar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	_	_
@@ -12,22 +16,22 @@
 7	(	(	PUNCT	PU|@PU	_	8	punct	_	_
 8	sax	sax	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	appos	_	_
 9	alto	alto	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	8	amod	_	_
-10	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	8	cc	_	_
+10	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	11	cc	_	d2d:#106
 11	voz	voz	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	8	conj	_	_
 12	)	)	PUNCT	PU|@PU	_	8	punct	_	_
-13	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 14	Carlo	Carlo	PROPN	_	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue119|MWE=Carlo_Morena|MWEPOS=PROPN
 15	Morena	Morena	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	_
 17	piano	piano	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	14	appos	_	_
 18	)	)	PUNCT	PU|@PU	_	17	punct	_	_
-19	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue119|MWE=Pedro_Gonçalves|MWEPOS=PROPN
 21	Gonçalves	Gonçalves	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 22	(	(	PUNCT	PU|@PU	_	23	punct	_	_
 23	contrabaixo	contrabaixo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	20	appos	_	_
 24	)	)	PUNCT	PU|@PU	_	23	punct	_	_
-25	e	e	CCONJ	<co-prparg>|KC|@CO	_	5	cc	_	_
+25	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	d2d:#106
 26	João	João	PROPN	_	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue119|MWE=João_Silvestre|MWEPOS=PROPN
 27	Silvestre	Silvestre	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 28	(	(	PUNCT	PU|@PU	_	29	punct	_	_
@@ -61,6 +65,8 @@
 # source CETEMPúblico n=221 sec=soc sem=96a
 # sent_id CP221-2
 # id 1193
+# d2d: cc(23h,e) -> cc(01h.,e)  #106
+# d2d: cc(liderada,e) -> cc(voz,e)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	autêntica	autêntico	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	6	amod	_	_
@@ -92,7 +98,7 @@
 29	trombonista	trombonista	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	obl:agent	_	_
 30	Claus	Claus	PROPN	_	Gender=Masc|Number=Sing	29	appos	_	ChangedBy=Issue119|MWE=Claus_Nymark|MWEPOS=PROPN
 31	Nymark	Nymark	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
-32	e	e	CCONJ	<co-icl>|KC|@CO	_	26	cc	_	_
+32	e	e	CCONJ	<co-icl>|KC|@CO	_	35	cc	_	d2d:#106
 33	com	com	ADP	<cjt>|PRP|@ICL-N<	_	35	case	_	_
 34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
 35	voz	voz	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	26	conj	_	_
@@ -119,6 +125,6 @@
 56	a	a	ADP	<sam->|PRP|@N<PRED	_	58	case	_	_
 57	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	58	det	_	_
 58	23h	23h	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	6	nmod	_	_
-59	e	e	CCONJ	<co-prparg>|KC|@CO	_	58	cc	_	_
+59	e	e	CCONJ	<co-prparg>|KC|@CO	_	60	cc	_	d2d:#106
 60	01h.	01h.	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	58	conj	_	ChangedBy=Issue149
 

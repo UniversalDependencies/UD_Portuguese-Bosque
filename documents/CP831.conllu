@@ -13,6 +13,8 @@
 # source CETEMPúblico n=831 sec=pol sem=93a
 # sent_id CP831-2
 # id 4281
+# d2d: punct(deputados,,) -> punct(jornalistas,,)  #106
+# d2d: cc(deputados,e) -> cc(amigos,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	irrequieto	irrequieto	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	José	José	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=José_Magalhães|MWEPOS=PROPN
@@ -20,9 +22,9 @@
 5	resolveu	resolver	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	brindar	brindar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	5	xcomp	_	_
 7	deputados	deputado	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	obj	_	_
-8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	jornalistas	jornalista	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	conj	_	_
-10	e	e	CCONJ	<co-acc>|KC|@CO	_	7	cc	_	_
+10	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	d2d:#106
 11	amigos	amigo	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	conj	_	_
 12	com	com	ADP	PRP|@<ADVL	_	14	case	_	_
 13	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
@@ -37,6 +39,7 @@
 # source CETEMPúblico n=831 sec=pol sem=93a
 # sent_id CP831-3
 # id 4282
+# d2d: cc(conhecidos,e) -> cc(verberados,e)  #106
 1	Uma	um	NUM	<card>|NUM|F|S|@>N	_	2	nummod	_	_
 2	disquete	disquete	NOUN	<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	com	com	ADP	PRP|@N<	_	5	case	_	_
@@ -52,7 +55,7 @@
 13	com	com	ADP	PRP|@N<	_	19	case	_	_
 14	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
 15	conhecidos	conhecido	ADJ	<mv>|<first-cjt>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	19	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
-16	e	e	CCONJ	KC|@CO	_	15	cc	_	_
+16	e	e	CCONJ	KC|@CO	_	18	cc	_	d2d:#106
 17	altamente	altamente	ADV	<quant>|ADV|@ADVL>	_	18	advmod	_	_
 18	verberados	verberar	VERB	<mv>|<cjt>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	15	conj	_	_
 19	erros	erro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
@@ -87,8 +90,9 @@
 # source CETEMPúblico n=831 sec=pol sem=93a
 # sent_id CP831-4
 # id 4283
+# d2d: cc(Uso,e) -> cc(difusão,e)  #106
 1	Uso	uso	NOUN	<first-cjt>|<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
-2	e	e	CCONJ	KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	KC|@CO	_	3	cc	_	d2d:#106
 3	difusão	difusão	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	1	conj	_	ChangedBy=Issue149
 4	livres	livre	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	1	amod	_	_
 5	.	.	PUNCT	PU|@PU	_	1	punct	_	_
@@ -98,8 +102,11 @@
 # source CETEMPúblico n=831 sec=pol sem=93a
 # sent_id CP831-5
 # id 4284
+# d2d: cc(todo,e) -> cc(qualquer,e)  #106
+# d2d: cc(boa,ou) -> cc(má,ou)  #106
+# d2d: cc(Pirateada,e) -> cc(distribuída,e)  #106
 1	Pirateada	piratear	VERB	<mv>|<first-cjt>|V|PCP|F|S|@ICL-UTT	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-2	e	e	CCONJ	KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	KC|@CO	_	3	cc	_	d2d:#106
 3	distribuída	distribuir	VERB	<mv>|<cjt>|V|PCP|F|S|@ICL-UTT	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	1	conj	_	_
 4	gratuitamente	gratuitamente	ADV	ADV|@<ADVL	_	3	advmod	_	_
 5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
@@ -112,13 +119,13 @@
 12	Magalhães	Magalhães	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 13	a	a	ADP	PRP|@<PIV	_	17	case	_	_
 14	todo	todo	DET	<first-cjt>|<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	17	det	_	_
-15	e	e	CCONJ	<co-prenom>|KC|@CO	_	14	cc	_	_
+15	e	e	CCONJ	<co-prenom>|KC|@CO	_	16	cc	_	d2d:#106
 16	qualquer	qualquer	DET	<cjt>|<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	14	conj	_	_
 17	interessado	interessado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 18	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 19	de	de	ADP	PRP|@N<PRED	_	23	case	_	_
 20	boa	bom	ADJ	<first-cjt>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	23	amod	_	_
-21	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	20	cc	_	_
+21	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	22	cc	_	d2d:#106
 22	má	mau	ADJ	<cjt>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	conj	_	_
 23	fé	fé	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
 24	»	»	PUNCT	PU|@PU	_	1	punct	_	_

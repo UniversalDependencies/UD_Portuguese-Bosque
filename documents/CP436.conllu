@@ -28,6 +28,8 @@
 # source CETEMPúblico n=436 sec=clt sem=92b
 # sent_id CP436-2
 # id 2293
+# d2d: cc(pagaram,e) -> cc(acabaram,e)  #106
+# d2d: cc(ameaça,mas) -> cc(cai,mas)  #106
 1	Por	por	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Por_causa_de
 2	causa	causa	NOUN	N|@P<	_	26	nmod	_	_
 3	de	de	ADP	PRP|@N<	_	6	case	_	_
@@ -45,7 +47,7 @@
 15	ameaça	ameaçar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_
 16	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
 17	cai	cair	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	_	_
-18	mas	mas	CCONJ	<co-postnom>|<co-vfin>|KC|@CO	_	15	cc	_	_
+18	mas	mas	CCONJ	<co-postnom>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 19	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
 20	cai	cair	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	conj	_	_
 21	,	,	PUNCT	PU|@PU	_	20	punct	_	_
@@ -62,7 +64,7 @@
 32	em	em	ADP	<sam->|PRP|@<ADVL	_	34	case	_	_
 33	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	local	local	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	28	obl	_	ChangedBy=Issue137
-35	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	26	cc	_	_
+35	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	36	cc	_	d2d:#106
 36	acabaram	acabar	VERB	<cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
 37	em	em	ADP	<sam->|PRP|@<PIV	_	38	case	_	_
 38	outro	outro	PRON	<-sam>|<diff>|DET|M|S|@P<	Gender=Masc|Number=Sing	36	nmod	_	_
@@ -78,18 +80,21 @@
 # source CETEMPúblico n=436 sec=clt sem=92b
 # sent_id CP436-3
 # id 2294
+# d2d: punct(cheio,,) -> punct(tente,,)  #106
+# d2d: punct(cheio,,) -> punct(tente,,)  #106
+# d2d: punct(cheio,») -> punct(tente,»)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	Está	estar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 3	tudo	tudo	PRON	<quant>|INDP|M|S|@<SUBJ	Gender=Masc|Number=Sing|PronType=Ind	4	nsubj	_	_
 4	cheio	cheio	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	7	ccomp	_	_
-5	»	»	PUNCT	PU|@PU	_	4	punct	_	_
-6	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+5	»	»	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
+6	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 7	diziam	dizer	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 8	elementos	elemento	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	7	nsubj	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	organização	organização	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
-12	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 13	«	«	PUNCT	PU|@PU	_	14	punct	_	_
 14	tente	tentar	VERB	<mv>|<cjt>|V|PR|3S|SUBJ|@FS-ACC>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 15	em	em	ADP	<sam->|PRP|@<ADVL	_	17	case	_	_

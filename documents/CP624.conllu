@@ -3,6 +3,7 @@
 # source CETEMPúblico n=624 sec=clt-soc sem=92a
 # sent_id CP624-1
 # id 3254
+# d2d: cc(bem,ou) -> cc(mal,ou)  #106
 1	Quanto	quanto	ADV	ADV|@ADVL>	_	9	advmod	_	MWE=Quanto_a
 2	a	a	ADP	PRP|@A<	_	3	case	_	_
 3	queijos	queijo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	_
@@ -13,7 +14,7 @@
 8	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
 9	dizer	dizer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 10	bem	bem	ADV	<first-cjt>|<quant>|ADV|@<ADVL	_	9	advmod	_	_
-11	ou	ou	CCONJ	<co-advl>|KC|@CO	_	10	cc	_	_
+11	ou	ou	CCONJ	<co-advl>|KC|@CO	_	12	cc	_	d2d:#106
 12	mal	mal	ADV	<cjt>|ADV|@<ADVL	_	10	conj	_	_
 13	:	:	PUNCT	PU|@PU	_	9	punct	_	_
 
@@ -34,6 +35,10 @@
 # source CETEMPúblico n=624 sec=clt-soc sem=92a
 # sent_id CP624-3
 # id 3256
+# d2d: punct(borbas,,) -> punct(Paulo,,)  #106
+# d2d: cc(vinho,e) -> cc(espumante,e)  #106
+# d2d: cc(borbas,e) -> cc(Bairrada,e)  #106
+# d2d: cc(borbas,e) -> cc(reguengos,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	vinhos	vinho	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	ChangedBy=Issue137
@@ -45,11 +50,11 @@
 9	:	:	PUNCT	PU|@PU	_	6	punct	_	_
 10	uns	um	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	11	det	_	_
 11	borbas	borba	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ADVL	Gender=Fem|Number=Plur	6	nmod	_	_
-12	e	e	CCONJ	<co-advl>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-advl>|KC|@CO	_	14	cc	_	d2d:#106
 13	uns	um	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	14	det	_	_
 14	reguengos	reguengo	ADJ	<cjt>|<np-idf>|ADJ|M|P|@<ADVL	Gender=Masc|Number=Plur	11	conj	_	_
 15	razoáveis	razoável	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	14	amod	_	_
-16	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 17	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	Paulo	Paulo	PROPN	<cjt>|PROP|M|S|@<ADVL	Gender=Masc|Number=Sing	11	conj	_	MWE=Paulo_da_Silva
 19	de	de	ADP	<sam->|PRP|@N<	_	21	case	_	_
@@ -58,12 +63,12 @@
 22	(	(	PUNCT	PU|@PU	_	23	punct	_	_
 23	Colares	Colares	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	18	appos	_	_
 24	)	)	PUNCT	PU|@PU	_	23	punct	_	_
-25	e	e	CCONJ	<co-advl>|KC|@CO	_	11	cc	_	_
+25	e	e	CCONJ	<co-advl>|KC|@CO	_	27	cc	_	d2d:#106
 26	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	27	det	_	_
 27	Bairrada	Bairrada	PROPN	<cjt>|PROP|M|S|@<ADVL	Gender=Masc|Number=Sing	11	conj	_	_
 28	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 29	vinho	vinho	NOUN	<cjt>|<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	27	appos	_	_
-30	e	e	CCONJ	<co-pred>|KC|@CO	_	29	cc	_	_
+30	e	e	CCONJ	<co-pred>|KC|@CO	_	31	cc	_	d2d:#106
 31	espumante	espumante	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	29	conj	_	ChangedBy=Issue149
 32	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
@@ -72,15 +77,18 @@
 # source CETEMPúblico n=624 sec=clt-soc sem=92a
 # sent_id CP624-4
 # id 3257
+# d2d: punct(Azeite,,) -> punct(frutos,,)  #106
+# d2d: punct(Azeite,,) -> punct(creme,,)  #106
+# d2d: cc(Azeite,e) -> cc(ovelhas,e)  #106
 1	Azeite	azeite	NOUN	<first-cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
-2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+2	,	,	PUNCT	PU|@PU	_	3	punct	_	d2d:#106
 3	creme	creme	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	_
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
 5	castanha	castanha	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
-6	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 7	frutos	fruto	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	1	conj	_	_
 8	secos	seco	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	7	amod	_	_
-9	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+9	e	e	CCONJ	<co-subj>|KC|@CO	_	11	cc	_	d2d:#106
 10	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	11	det	_	_
 11	ovelhas	ovelha	NOUN	<cjt>|<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	1	conj	_	_
 12	concluíam	concluir	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -114,6 +122,7 @@
 # source CETEMPúblico n=624 sec=clt-soc sem=92a
 # sent_id CP624-7
 # id 3260
+# d2d: cc(professores,e) -> cc(alunos,e)  #106
 1	Depois	depois	ADV	ADV|@ADVL>	_	6	advmod	_	_
 2	de	de	ADP	PRP|@A<	_	4	case	_	_
 3	três	três	NUM	<card>|NUM|M|P|@>N	_	4	nummod	_	_
@@ -132,7 +141,7 @@
 16	sobretudo	sobretudo	ADV	ADV|@>A	_	18	advmod	_	_
 17	entre	entre	ADP	PRP|@<ADVL	_	18	case	_	_
 18	professores	professor	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	obl	_	ChangedBy=Issue137
-19	e	e	CCONJ	<co-prparg>|KC|@CO	_	18	cc	_	_
+19	e	e	CCONJ	<co-prparg>|KC|@CO	_	20	cc	_	d2d:#106
 20	alunos	aluno	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	18	conj	_	_
 21	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
@@ -141,6 +150,8 @@
 # source CETEMPúblico n=624 sec=clt-soc sem=92a
 # sent_id CP624-8
 # id 3261
+# d2d: punct(brilho,,) -> punct(dimensões,,)  #106
+# d2d: cc(brilho,nem) -> cc(dimensões,nem)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	primeiros	primeiro	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	estavam	estar	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_
@@ -158,8 +169,8 @@
 15	ostentar	ostentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	brilho	brilho	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	15	obj	_	_
-18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-19	nem	nem	CCONJ	<co-acc>|KC|@CO	_	17	cc	_	_
+18	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+19	nem	nem	CCONJ	<co-acc>|KC|@CO	_	21	cc	_	d2d:#106
 20	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_
 21	dimensões	dimensão	NOUN	<cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	17	conj	_	_
 22	,	,	PUNCT	PU|@PU	_	24	punct	_	_
@@ -173,6 +184,7 @@
 # source CETEMPúblico n=624 sec=clt-soc sem=92a
 # sent_id CP624-9
 # id 3262
+# d2d: cc(um,e) -> cc(sinal,e)  #106
 1	Foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	_
 2	um	um	NUM	<first-cjt>|<card>|NUM|M|S|@<SC	_	0	root	_	_
 3	de	de	ADP	<sam->|PRP|@A<	_	6	case	_	_
@@ -194,7 +206,7 @@
 19	agricultura	agricultura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue137
 20	francesa	francês	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	_
 21	--	--	PUNCT	PU|@PU	_	18	punct	_	_
-22	e	e	CCONJ	<co-sc>|KC|@CO	_	2	cc	_	_
+22	e	e	CCONJ	<co-sc>|KC|@CO	_	25	cc	_	d2d:#106
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 24	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	25	amod	_	_
 25	sinal	sinal	NOUN	<cjt>|<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	2	conj	_	_

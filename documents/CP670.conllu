@@ -127,6 +127,8 @@
 # source CETEMPúblico n=670 sec=eco sem=96a
 # sent_id CP670-4
 # id 3475
+# d2d: cc(requisitos,e) -> cc(capitais,e)  #106
+# d2d: punct(requisitos,,) -> punct(fundos,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	concurso	concurso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj:pass	_	_
 3	público	público	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -155,10 +157,10 @@
 26	dimensão	dimensão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
 28	activos	ativo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	26	nmod	_	_
-29	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+29	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
 30	fundos	fundo	NOUN	<cjt>|<np-idf>|N|M|P|@ACC>	Gender=Masc|Number=Plur	24	conj	_	_
 31	próprios	próprio	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	30	amod	_	_
-32	e	e	CCONJ	<co-acc>|KC|@CO	_	24	cc	_	_
+32	e	e	CCONJ	<co-acc>|KC|@CO	_	33	cc	_	d2d:#106
 33	capitais	capital	NOUN	<cjt>|<np-idf>|N|M|P|@ACC>	Gender=Masc|Number=Plur	24	conj	_	_
 34	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 35	estipulados	estipular	VERB	<cjt>|<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	33	acl	_	_
@@ -183,6 +185,8 @@
 # source CETEMPúblico n=670 sec=eco sem=96a
 # sent_id CP670-5
 # id 3476
+# d2d: punct(Inspector-geral,,) -> punct(director-geral,,)  #106
+# d2d: cc(Inspector-geral,e) -> cc(presidente,e)  #106
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	concurso	concurso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	terá	ter	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -200,13 +204,13 @@
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
 17	Finanças	finanças	NOUN	N|@P<	_	14	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	director-geral	director-geral	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	conj	_	MWE=director-geral_do_Tesouro
 21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
 22	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	Tesouro	tesouro	NOUN	N|@P<	_	20	nmod	_	_
-24	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	_
+24	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	d2d:#106
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	presidente	presidente	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	conj	_	_
 27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_

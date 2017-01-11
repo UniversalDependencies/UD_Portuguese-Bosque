@@ -3,8 +3,9 @@
 # source CETENFolha n=321 cad=Esporte sec=des sem=94b
 # sent_id CF321-1
 # id 1332
+# d2d: cc(Sampras,e) -> cc(Stich,e)  #106
 1	Sampras	Sampras	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	Stich	Stich	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149
 4	são	ser	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_
 5	derrotados	derrotar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
@@ -36,9 +37,11 @@
 # source CETENFolha n=321 cad=Esporte sec=des sem=94b
 # sent_id CF321-4
 # id 1334
+# d2d: cc(Pete,e) -> cc(Michael,e)  #106
+# d2d: cc(marroquino,e) -> cc(haitiano,e)  #106
 1	Pete	Pete	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=Pete_Sampras|MWEPOS=PROPN
 2	Sampras	Sampras	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
-3	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	d2d:#106
 4	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Michael_Stich|MWEPOS=PROPN
 5	Stich	Stich	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	perderam	perder	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
@@ -64,7 +67,7 @@
 26	marroquino	marroquino	NOUN	<first-cjt>|<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	23	appos	_	_
 27	Karim	Karim	PROPN	_	Gender=Masc|Number=Sing	26	appos	_	ChangedBy=Issue119|MWE=Karim_Alami|MWEPOS=PROPN
 28	Alami	Alami	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
-29	e	e	CCONJ	<co-n<pred>|KC|@CO	_	26	cc	_	_
+29	e	e	CCONJ	<co-n<pred>|KC|@CO	_	31	cc	_	d2d:#106
 30	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	haitiano	haitiano	NOUN	<cjt>|<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	26	conj	_	_
 32	Ronald	Ronald	PROPN	_	Gender=Masc|Number=Sing	31	appos	_	ChangedBy=Issue119|MWE=Ronald_Agenor|MWEPOS=PROPN
@@ -76,6 +79,7 @@
 # source CETENFolha n=321 cad=Esporte sec=des sem=94b
 # sent_id CF321-5
 # id 1335
+# d2d: cc(6/1,e) -> cc(6/1,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	único	único	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	favorito	favorito	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -94,7 +98,7 @@
 16	Jarryd	Jarryd	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 17	por	por	ADP	PRP|@<ADVL	_	18	case	_	_
 18	6/1	6/1	NUM	<first-cjt>|<card>|NUM|M|P|@P<	_	11	nmod	_	_
-19	e	e	CCONJ	<co-prparg>|KC|@CO	_	18	cc	_	_
+19	e	e	CCONJ	<co-prparg>|KC|@CO	_	20	cc	_	d2d:#106
 20	6/1	6/1	NUM	<cjt>|<card>|NUM|M|P|@P<	_	18	conj	_	_
 21	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
@@ -113,12 +117,13 @@
 # source CETENFolha n=321 cad=Esporte sec=des sem=94b
 # sent_id CF321-7
 # id 1337
+# d2d: cc(anos,e) -> cc(número,e)  #106
 1	Alami	Alami	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
 2	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 3	de	de	ADP	<first-cjt>|PRP|@N<PRED	_	5	case	_	_
 4	20	20	NUM	<card>|NUM|M|P|@>N	_	5	nummod	_	_
 5	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	_
-6	e	e	CCONJ	<co-n<pred>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-n<pred>|KC|@CO	_	7	cc	_	d2d:#106
 7	número	número	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	conj	_	_
 8	204	204	NUM	<card>|NUM|M|P|@N<	_	7	nummod	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
