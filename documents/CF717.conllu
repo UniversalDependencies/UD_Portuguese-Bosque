@@ -79,6 +79,8 @@
 # source CETENFolha n=717 cad=Esporte sec=des sem=94a
 # sent_id CF717-3
 # id 3015
+# d2d: cc(reservas,e) -> cc(componentes,e)  #106
+# d2d: cc(Viola,e) -> cc(Ronaldão,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	reservas	reserva	NOUN	<first-cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	18	nsubj:pass	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -86,9 +88,9 @@
 5	seleção	seleção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 6	brasileira	brasileiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	_
 7	Viola	Viola	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	2	appos	_	_
-8	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	d2d:#106
 9	Ronaldão	Ronaldão	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	7	conj	_	ChangedBy=Issue149
-10	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+10	e	e	CCONJ	<co-subj>|KC|@CO	_	12	cc	_	d2d:#106
 11	vários	vários	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	12	det	_	_
 12	componentes	componente	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	conj	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
@@ -104,10 +106,11 @@
 # source CETENFolha n=717 cad=Esporte sec=des sem=94a
 # sent_id CF717-4
 # id 3016
+# d2d: cc(Viola,ou) -> cc(Ronaldão,ou)  #106
 1	«	«	PUNCT	PU|@PU	_	11	punct	_	_
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Viola	Viola	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
-4	ou	ou	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
+4	ou	ou	CCONJ	<co-subj>|KC|@CO	_	6	cc	_	d2d:#106
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Ronaldão	Ronaldão	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	conj	_	_
 7	seria	ser	VERB	<mv>|V|COND|3S|@FS-ACC>	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	cop	_	_

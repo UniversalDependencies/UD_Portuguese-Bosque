@@ -3,6 +3,13 @@
 # source CETEMPúblico n=646 sec=nd sem=95b
 # sent_id CP646-1
 # id 3364
+# d2d: cc(organização,e) -> cc(gestão,e)  #106
+# d2d: punct(lotaria,,) -> punct(apostas,,)  #106
+# d2d: cc(lotaria,e) -> cc(lotaria,e)  #106
+# d2d: punct(lotaria,,) -> punct(lotaria,,)  #106
+# d2d: punct(lotaria,,) -> punct(lotaria,,)  #106
+# d2d: cc(totobola,e) -> cc(joker,e)  #106
+# d2d: punct(lotaria,,) -> punct(lotaria,,)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	desempenho	desempenho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	25	obl	_	ChangedBy=Issue137
@@ -41,7 +48,7 @@
 36	de	de	ADP	<sam->|PRP|@A<	_	38	case	_	_
 37	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
 38	organização	organização	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	32	nmod	_	_
-39	e	e	CCONJ	<co-prparg>|KC|@CO	_	38	cc	_	_
+39	e	e	CCONJ	<co-prparg>|KC|@CO	_	40	cc	_	d2d:#106
 40	gestão	gestão	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	38	conj	_	_
 41	,	,	PUNCT	PU|@PU	_	43	punct	_	_
 42	a	a	ADP	PRP|@N<PRED	_	43	case	_	_
@@ -52,22 +59,22 @@
 47	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
 48	lotaria	lotaria	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	38	nmod	_	_
 49	nacional	nacional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	48	amod	_	_
-50	,	,	PUNCT	PU|@PU	_	48	punct	_	_
+50	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
 51	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	53	case	_	_
 52	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	53	det	_	_
 53	apostas	aposta	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	48	conj	_	_
 54	mútuas	mútuo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	53	amod	_	_
 55	(	(	PUNCT	PU|@PU	_	56	punct	_	_
 56	totobola	totobola	NOUN	<cjt>|<first-cjt>|<np-idf>|N|F|S|@APP	Gender=Fem|Number=Sing	53	appos	_	_
-57	,	,	PUNCT	PU|@PU	_	48	punct	_	_
+57	,	,	PUNCT	PU|@PU	_	70	punct	_	d2d:#106
 58	totoloto	totoloto	NOUN	<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	56	conj	_	ChangedBy=Issue149
-59	e	e	CCONJ	<co-vfin>|KC|@CO	_	56	cc	_	_
+59	e	e	CCONJ	<co-vfin>|KC|@CO	_	60	cc	_	d2d:#106
 60	joker	joker	NOUN	<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	56	conj	_	ChangedBy=Issue149
 61	)	)	PUNCT	PU|@PU	_	56	punct	_	_
-62	e	e	CCONJ	<co-postnom>|KC|@CO	_	48	cc	_	_
-63	,	,	PUNCT	PU|@PU	_	48	punct	_	_
+62	e	e	CCONJ	<co-postnom>|KC|@CO	_	70	cc	_	d2d:#106
+63	,	,	PUNCT	PU|@PU	_	70	punct	_	d2d:#106
 64	agora	agora	ADV	<kc>|ADV|@>A	_	70	advmod	_	_
-65	,	,	PUNCT	PU|@PU	_	48	punct	_	_
+65	,	,	PUNCT	PU|@PU	_	70	punct	_	d2d:#106
 66	também	também	ADV	ADV|@>A	_	70	advmod	_	_
 67	,	,	PUNCT	PU|@PU	_	70	punct	_	_
 68	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	70	case	_	_
@@ -86,6 +93,7 @@
 # source CETEMPúblico n=646 sec=nd sem=95b
 # sent_id CP646-2
 # id 3365
+# d2d: cc(enfermos,e) -> cc(expostos,e)  #106
 1	Foi	foi	ADV	<foc>|ADV|@ADVL>	_	17	mark	_	_
 2	D.Maria	D.Maria	PROPN	_	Gender=Fem|Number=Sing	17	nsubj	_	ChangedBy=Issue119|MWE=D.Maria_I|MWEPOS=PROPN
 3	I	I	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -125,7 +133,7 @@
 37	reais	real	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	36	amod	_	_
 38	de	de	ADP	PRP|@N<	_	39	case	_	_
 39	enfermos	enfermo	ADJ	<first-cjt>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	36	nmod	_	_
-40	e	e	CCONJ	<co-prparg>|KC|@CO	_	39	cc	_	_
+40	e	e	CCONJ	<co-prparg>|KC|@CO	_	41	cc	_	d2d:#106
 41	expostos	expor	VERB	<cjt>|V|PCP|M|P|@P<	Gender=Masc|Number=Plur|VerbForm=Part	39	conj	_	_
 42	»	»	PUNCT	PU|@PU	_	36	punct	_	_
 43	.	.	PUNCT	PU|@PU	_	17	punct	_	_
@@ -161,6 +169,7 @@
 # source CETEMPúblico n=646 sec=nd sem=95b
 # sent_id CP646-4
 # id 3367
+# d2d: cc(recebe,e) -> cc(fica,e)  #106
 1	Actualmente	actualmente	ADV	ADV|@ADVL>	_	12	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	de	de	ADP	PRP|@ADVL>	_	4	case	_	MWE=de_acordo
@@ -182,7 +191,7 @@
 19	de	de	ADP	<sam->|PRP|@N<	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	lotaria	lotaria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
-22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
+22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	25	cc	_	d2d:#106
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	25	nsubj	_	_
 25	fica	ficar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	_	_

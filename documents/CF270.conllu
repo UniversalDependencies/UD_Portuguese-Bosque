@@ -3,11 +3,12 @@
 # source CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # sent_id CF270-1
 # id 1133
+# d2d: cc(assistemática,e) -> cc(voltada,e)  #106
 1	Tal	tal	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	2	det	_	_
 2	cobertura	cobertura	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 4	assistemática	assistemática	NOUN	<first-cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	2	appos	_	_
-5	e	e	CCONJ	KC|@CO	_	4	cc	_	_
+5	e	e	CCONJ	KC|@CO	_	6	cc	_	d2d:#106
 6	voltada	voltar	VERB	<mv>|<cjt>|V|PCP|F|S|@N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	4	conj	_	_
 7	para	para	ADP	PRP|@<SA	_	8	mark	_	_
 8	buscar	buscar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
@@ -30,6 +31,8 @@
 # source CETENFolha n=270 cad=Cotidiano sec=soc sem=94a &E
 # sent_id CF270-2
 # id 1134
+# d2d: punct(intencional,,) -> punct(há,,)  #106
+# d2d: cc(intencional,mas) -> cc(há,mas)  #106
 1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 2	estamos	estar	AUX	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	_
 3	concluindo	concluir	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
@@ -38,8 +41,8 @@
 6	comportamento	comportamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 7	é	ser	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
 8	intencional	intencional	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	ccomp	_	_
-9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-10	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	8	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
+10	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	13	cc	_	d2d:#106
 11	sim	sim	ADV	<Es>|ADV|@ADVL>	_	13	advmod	_	_
 12	que	que	SCONJ	KS|@SUB	_	13	mark	_	_
 13	há	haver	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
@@ -70,12 +73,14 @@
 # source CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # sent_id CF270-3
 # id 1135
+# d2d: punct(políticos,,) -> punct(sociais,,)  #106
+# d2d: cc(políticos,e) -> cc(econômicos,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	agentes	agente	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
 3	políticos	político	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
-4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 5	sociais	social	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	3	conj	_	_
-6	e	e	CCONJ	<co-postnom>|KC|@CO	_	3	cc	_	_
+6	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	d2d:#106
 7	econômicos	econômico	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	3	conj	_	_
 8	também	também	ADV	ADV|@ADVL>	_	12	advmod	_	_
 9	têm	ter	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
@@ -104,6 +109,8 @@
 # source CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # sent_id CF270-4
 # id 1136
+# d2d: cc(sabemos,mas) -> cc(esperamos,mas)  #106
+# d2d: punct(sabemos,,) -> punct(esperamos,,)  #106
 1	Que	que	SCONJ	KS|@SUB	_	7	mark	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	democracia	democracia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -113,8 +120,8 @@
 7	corporativa	corporativo	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	9	ccomp	_	_
 8	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
 9	sabemos	saber	VERB	<first-cjt>|<mv>|V|PR|1P|IND|@FS-EXC	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-11	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
+10	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
+11	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	d2d:#106
 12	esperamos	esperar	VERB	<cjt>|<mv>|V|PR|1P|IND|@FS-EXC	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	conj	_	_
 13	que	que	SCONJ	KS|@SUB	_	19	mark	_	_
 14	não	não	ADV	_	Polarity=Neg	19	advmod	_	_

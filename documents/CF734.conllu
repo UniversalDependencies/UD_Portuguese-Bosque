@@ -3,6 +3,11 @@
 # source CETENFolha n=734 cad=Turismo sec=soc sem=94a
 # sent_id CF734-1
 # id 3079
+# d2d: cc(ovo,e) -> cc(manteiga,e)  #106
+# d2d: cc(fazem,e) -> cc(dar,e)  #106
+# d2d: punct(quiche,:) -> punct(mostrar,:)  #106
+# d2d: punct(quiche,,) -> punct(político,,)  #106
+# d2d: cc(quiche,mas) -> cc(político,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tema	tema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -12,11 +17,11 @@
 7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 8	simples	simples	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	9	amod	_	_
 9	quiche	quiche	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
-10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-11	mas	mas	CCONJ	<co-sta>|KC|@CO	_	9	cc	_	_
+10	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
+11	mas	mas	CCONJ	<co-sta>|KC|@CO	_	13	cc	_	d2d:#106
 12	era	ser	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	cop	_	_
 13	político	político	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	9	conj	_	_
-14	:	:	PUNCT	PU|@PU	_	9	punct	_	_
+14	:	:	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	mostrar	mostrar	VERB	<mv>|<cjt>|V|INF|@ICL-N<PRED	VerbForm=Inf	9	conj	_	_
 16	a	a	ADP	<sam->|PRP|@<PIV	_	19	case	_	_
 17	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
@@ -25,13 +30,13 @@
 20	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
 21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	ovo	ovo	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	26	nsubj	_	_
-23	e	e	CCONJ	<co-subj>|KC|@CO	_	22	cc	_	_
+23	e	e	CCONJ	<co-subj>|KC|@CO	_	25	cc	_	d2d:#106
 24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	manteiga	manteiga	NOUN	<cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	conj	_	_
 26	fazem	fazer	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	_	_
 27	pratos	prato	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	26	obj	_	_
 28	deliciosos	delicioso	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	27	amod	_	_
-29	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	26	cc	_	_
+29	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	37	cc	_	d2d:#106
 30	que	que	SCONJ	KS|@SUB	_	37	mark	_	_
 31	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 32	patrulha	patrulha	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	37	nsubj	_	_
@@ -54,12 +59,13 @@
 # source CETENFolha n=734 cad=Turismo sec=soc sem=94a
 # sent_id CF734-2
 # id 3080
+# d2d: cc(falou,e) -> cc(catequizou,e)  #106
 1	Marcella	Marcella	PROPN	_	Gender=Fem|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Marcella_Hazan|MWEPOS=PROPN
 2	Hazan	Hazan	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	falou	falar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	sobre	sobre	ADP	<first-cjt>|PRP|@<PIV	_	5	case	_	_
 5	alcachofras	alcachofra	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
-6	e	e	CCONJ	<co-sta>|KC|@CO	_	3	cc	_	_
+6	e	e	CCONJ	<co-sta>|KC|@CO	_	7	cc	_	d2d:#106
 7	catequizou	catequizar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	público	público	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
@@ -90,6 +96,8 @@
 # source CETENFolha n=734 cad=Turismo sec=soc sem=94a
 # sent_id CF734-3
 # id 3081
+# d2d: cc(codornas,e) -> cc(cuscuz,e)  #106
+# d2d: cc(ensinou,e) -> cc(incentivava,e)  #106
 1	Patricia	Patricia	PROPN	_	Gender=Fem|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Patricia_Wells|MWEPOS=PROPN
 2	Wells	Wells	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	ensinou	ensinar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -98,10 +106,10 @@
 6	de	de	ADP	PRP|@N<ARG	_	7	case	_	_
 7	codornas	codorna	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
 8	marinadas	marinar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	7	acl	_	_
-9	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	_
+9	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	d2d:#106
 10	cuscuz	cuscuz	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	conj	_	_
 11	marroquino	marroquino	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	_
-12	e	e	CCONJ	<co-sta>|KC|@CO	_	3	cc	_	_
+12	e	e	CCONJ	<co-sta>|KC|@CO	_	13	cc	_	d2d:#106
 13	incentivava	incentivar	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	conj	_	_
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	público	público	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	obj	_	_

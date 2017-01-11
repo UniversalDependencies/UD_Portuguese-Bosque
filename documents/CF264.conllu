@@ -33,6 +33,8 @@
 # source CETENFolha n=264 cad=Ilustrada sec=nd sem=94b
 # sent_id CF264-3
 # id 1112
+# d2d: cc(entrega,ou) -> cc(foge,ou)  #106
+# d2d: punct(entrega,,) -> punct(foge,,)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
 2	Procure	procurar	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	saber	saber	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
@@ -40,8 +42,8 @@
 5	você	você	PRON	PERS|M/F|3S|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
 6	se	se	PRON	PERS|M/F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	7	obj	_	_
 7	entrega	entregar	VERB	<first-cjt>|<mv>|<se-passive>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
-8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-9	ou	ou	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	7	cc	_	_
+8	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
+9	ou	ou	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	12	cc	_	d2d:#106
 10	se	se	SCONJ	KS|@SUB	_	12	mark	_	_
 11	você	você	PRON	PERS|M/F|3S|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
 12	foge	fugir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
@@ -55,6 +57,7 @@
 # source CETENFolha n=264 cad=Ilustrada sec=nd sem=94b
 # sent_id CF264-4
 # id 1113
+# d2d: cc(grande,nem) -> cc(pequeno,nem)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	faça	fazer	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -68,7 +71,7 @@
 11	não	não	ADV	_	Polarity=Neg	13	advmod	_	_
 12	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
 13	grande	grande	ADJ	<first-cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	advcl	_	_
-14	nem	nem	CCONJ	<co-sc>|KC|@CO	_	13	cc	_	_
+14	nem	nem	CCONJ	<co-sc>|KC|@CO	_	15	cc	_	d2d:#106
 15	pequeno	pequeno	ADJ	<cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	13	conj	_	_
 16	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

@@ -43,6 +43,8 @@
 # source CETEMPúblico n=502 sec=nd sem=95a
 # sent_id CP502-3
 # id 2637
+# d2d: punct(ganhando,,) -> punct(chateando-,,)  #106
+# d2d: cc(mandou,e) -> cc(retomará,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	próprio	próprio	DET	<ident>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
 3	professor	professor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
@@ -76,7 +78,7 @@
 31	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 32	politiquice	politiquice	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	nmod	_	_
 33	--	--	PUNCT	PU|@PU	_	21	punct	_	_
-34	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	_
+34	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	35	cc	_	d2d:#106
 35	retomará	retomar	VERB	<cjt>|<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	conj	_	_
 36	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 37	carreira	carreira	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	35	obj	_	_
@@ -84,7 +86,7 @@
 39	ganhando	ganhar	VERB	<first-cjt>|<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	35	advcl	_	_
 40	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
 41	dobro	dobro	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	39	obj	_	_
-42	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+42	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 43	chateando-	chatear	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|GER|@ICL-<ADVL	VerbForm=Ger	39	conj	_	_
 44	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	43	expl	_	ChangedBy=Issue135
 45	por	por	ADP	<sam->|PRP|@<ADVL	_	47	case	_	_
@@ -97,6 +99,7 @@
 # source CETEMPúblico n=502 sec=nd sem=95a
 # sent_id CP502-4
 # id 2638
+# d2d: cc(humildes,mas) -> cc(honrados,mas)  #106
 1	Resta	restar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	por	por	ADP	PRP|@<ADVL	_	4	case	_	MWE=por_exclusão
@@ -109,7 +112,7 @@
 10	pobrezinhos	pobrezinho	ADJ	<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	_
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 12	humildes	humilde	ADJ	<first-cjt>|ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	10	amod	_	_
-13	mas	mas	CCONJ	<co-pred>|KC|@CO	_	12	cc	_	_
+13	mas	mas	CCONJ	<co-pred>|KC|@CO	_	14	cc	_	d2d:#106
 14	honrados	honrar	VERB	<cjt>|V|PCP|M|P|@N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	12	conj	_	_
 15	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -118,6 +121,8 @@
 # source CETEMPúblico n=502 sec=nd sem=95a
 # sent_id CP502-5
 # id 2639
+# d2d: punct(querido,,) -> punct(ultrapassado,,)  #106
+# d2d: cc(querido,mas) -> cc(ultrapassado,mas)  #106
 1	Modelo	modelo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	muito	muito	ADV	<quant>|ADV|@ADVL>	_	3	advmod	_	_
 3	querido	querido	ADJ	<mv>|<first-cjt>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	1	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
@@ -126,8 +131,8 @@
 6	dr.	dr.	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 7	Álvaro	Álvaro	PROPN	_	Gender=Masc|Number=Sing	6	appos	_	ChangedBy=Issue119|MWE=Álvaro_Cunhal|MWEPOS=PROPN
 8	Cunhal	Cunhal	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
-9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-10	mas	mas	CCONJ	<co-icl>|<co-postnom>|KC|@CO	_	3	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
+10	mas	mas	CCONJ	<co-icl>|<co-postnom>|KC|@CO	_	12	cc	_	d2d:#106
 11	completamente	completamente	ADV	ADV|@ADVL>	_	12	advmod	_	_
 12	ultrapassado	ultrapassar	VERB	<mv>|<cjt>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	3	conj	_	_
 13	.	.	PUNCT	PU|@PU	_	1	punct	_	_

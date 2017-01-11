@@ -16,6 +16,7 @@
 # source CETENFolha n=92 cad=Ilustrada sec=nd sem=94a &E
 # sent_id CF92-2
 # id 351
+# d2d: cc(ex-presidente,mas) -> cc(espécie,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	senador	senador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
 3	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
@@ -25,7 +26,7 @@
 7	como	como	ADP	<first-cjt>|<prd>|PRP|@<ADVL	_	8	case	_	_
 8	ex-presidente	ex-presidente	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
 9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-10	mas	mas	CCONJ	<co-advl>|<co-acl>|KC|@CO	_	8	cc	_	_
+10	mas	mas	CCONJ	<co-advl>|<co-acl>|KC|@CO	_	13	cc	_	d2d:#106
 11	como	como	ADP	<cjt>|<prd>|PRP|@<ADVL	_	13	case	_	_
 12	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	espécie	espécie	NOUN	<meta>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	conj	_	ChangedBy=Issue149
@@ -104,12 +105,14 @@
 # source CETENFolha n=92 cad=Ilustrada sec=nd sem=94a &D
 # sent_id CF92-7
 # id 355
+# d2d: punct(familiar,,) -> punct(benigno,,)  #106
+# d2d: punct(familiar,,) -> punct(coloquial,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tom	tom	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	27	nsubj	_	_
 3	familiar	familiar	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
-4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 5	coloquial	coloquial	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	conj	_	_
-6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 7	benigno	benigno	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	conj	_	_
 8	de	de	ADP	PRP|@N<	_	10	case	_	_
 9	suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur	10	det	_	_
@@ -143,6 +146,8 @@
 # source CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # sent_id CF92-8
 # id 356
+# d2d: punct(toma,,) -> punct(difícil,,)  #106
+# d2d: cc(toma,e) -> cc(difícil,e)  #106
 1	Como	como	ADP	<prd>|PRP|@ADVL>	_	2	case	_	_
 2	cronista	cronista	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -154,8 +159,8 @@
 9	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
 10	indignar	indignar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 11	ninguém	ninguém	PRON	INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	10	obj	_	_
-12	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-13	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	5	cc	_	_
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+13	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 14	é	ser	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
 15	difícil	difícil	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	5	conj	_	_
 16	antipatizar	antipatizar	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	15	csubj	_	_

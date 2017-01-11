@@ -79,6 +79,7 @@
 # source CETENFolha n=562 cad=Cotidiano sec=soc sem=94a
 # sent_id CF562-4
 # id 2347
+# d2d: cc(começa,e) -> cc(vai,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	etapa	etapa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -87,7 +88,7 @@
 6	programa	programa	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 7	começa	começar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	hoje	hoje	ADV	ADV|@<ADVL	_	7	advmod	_	_
-9	e	e	CCONJ	<co-sta>|KC|@CO	_	7	cc	_	_
+9	e	e	CCONJ	<co-sta>|KC|@CO	_	10	cc	_	d2d:#106
 10	vai	ir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
 11	até	até	ADP	PRP|@<ADVL	_	13	case	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -120,6 +121,8 @@
 # source CETENFolha n=562 cad=Cotidiano sec=soc sem=94a
 # sent_id CF562-6
 # id 2349
+# d2d: cc(enrijecimento,e) -> cc(perda,e)  #106
+# d2d: punct(enrijecimento,,) -> punct(debilidade,,)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	novo	novo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	protocolo	protocolo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
@@ -160,13 +163,13 @@
 38	causa	causar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	acl:relcl	_	_
 39	enrijecimento	enrijecimento	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	38	obj	_	_
 40	muscular	muscular	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	39	amod	_	_
-41	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+41	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
 42	debilidade	debilidade	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	39	conj	_	_
 43	de	de	ADP	<sam->|PRP|@N<	_	45	case	_	_
 44	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	45	det	_	_
 45	funções	função	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	42	nmod	_	_
 46	motoras	motor	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	45	amod	_	_
-47	e	e	CCONJ	<co-acc>|KC|@CO	_	39	cc	_	_
+47	e	e	CCONJ	<co-acc>|KC|@CO	_	48	cc	_	d2d:#106
 48	perda	perda	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	39	conj	_	_
 49	parcial	parcial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	48	amod	_	_
 50	de	de	ADP	<sam->|PRP|@N<	_	52	case	_	_

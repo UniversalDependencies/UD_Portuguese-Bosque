@@ -37,6 +37,9 @@
 # source CETEMPúblico n=356 sec=eco sem=91b
 # sent_id CP356-2
 # id 1869
+# d2d: cc(Barros,e) -> cc(Sérgio,e)  #106
+# d2d: punct(Barros,,) -> punct(Miranda,,)  #106
+# d2d: cc(apresentada,e) -> cc(subscrita,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	resolução	resolução	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj:pass	_	_
 3	aprovada	aprovar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	_	_
@@ -54,7 +57,7 @@
 15	coligação	coligação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	esquerda	esquerda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
-18	e	e	CCONJ	<co-pcv>|<co-icl>|KC|@CO	_	9	cc	_	_
+18	e	e	CCONJ	<co-pcv>|<co-icl>|KC|@CO	_	19	cc	_	d2d:#106
 19	subscrita	subscrever	VERB	<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	9	conj	_	ChangedBy=Issue149
 20	por	por	ADP	PRP|@PASS	_	23	case	_	_
 21	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
@@ -64,12 +67,12 @@
 25	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 26	Barros	Barros	PROPN	_	Gender=Fem|Number=Sing	23	appos	_	ChangedBy=Issue119|MWE=Barros_Moura|MWEPOS=PROPN
 27	Moura	Moura	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
-28	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+28	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
 29	Miranda	Miranda	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	26	conj	_	ChangedBy=Issue149|MWE=Miranda_da_Silva
 30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
 31	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 32	Silva	Silva	PROPN	PROP|@P<	Number=Sing	29	nmod	_	_
-33	e	e	CCONJ	<co-app>|KC|@CO	_	26	cc	_	_
+33	e	e	CCONJ	<co-app>|KC|@CO	_	34	cc	_	d2d:#106
 34	Sérgio	Sérgio	PROPN	_	Gender=Masc|Number=Sing	26	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Sérgio_Ribeiro|MWEPOS=PROPN
 35	Ribeiro	Ribeiro	PROPN	_	Number=Sing	34	flat:name	_	ChangedBy=Issue119
 36	.	.	PUNCT	PU|@PU	_	9	punct	_	_
@@ -79,6 +82,9 @@
 # source CETEMPúblico n=356 sec=eco sem=91b
 # sent_id CP356-3
 # id 1870
+# d2d: cc(convenções,e) -> cc(recomendações,e)  #106
+# d2d: punct(apretechada,,) -> punct(níveis,,)  #106
+# d2d: cc(apretechada,e) -> cc(situação,e)  #106
 1	Considerando	considerar	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	24	advcl	_	_
 2	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -87,13 +93,13 @@
 6	tecnologicamente	tecnologicamente	ADV	ADV|@ADVL>	_	8	advmod	_	_
 7	bem	bem	ADV	<quant>|ADV|@ADVL>	_	8	advmod	_	_
 8	apretechada	apretechado	ADJ	<first-cjt>|<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	1	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
-9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 10	com	com	ADP	<cjt>|PRP|@ICL-<SC	_	12	case	_	_
 11	elevados	elevar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
 12	níveis	nível	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	conj	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	produtividade	produtividade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-15	e	e	CCONJ	<co-icl>|<co-sc>|KC|@CO	_	8	cc	_	_
+15	e	e	CCONJ	<co-icl>|<co-sc>|KC|@CO	_	19	cc	_	d2d:#106
 16	com	com	ADP	<cjt>|PRP|@ICL-<SC	_	19	case	_	_
 17	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 18	excelente	excelente	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	19	amod	_	_
@@ -131,7 +137,7 @@
 50	base	base	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	48	obl	_	ChangedBy=Issue137
 51	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	52	det	_	_
 52	convenções	convenção	NOUN	<first-cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	48	obj	_	_
-53	e	e	CCONJ	<co-acc>|KC|@CO	_	52	cc	_	_
+53	e	e	CCONJ	<co-acc>|KC|@CO	_	54	cc	_	d2d:#106
 54	recomendações	recomendação	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	52	conj	_	_
 55	de	de	ADP	<sam->|PRP|@N<	_	57	case	_	_
 56	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_

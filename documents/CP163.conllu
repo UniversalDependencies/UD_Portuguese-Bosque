@@ -19,6 +19,8 @@
 # source CETEMPúblico n=163 sec=soc sem=94b &W
 # sent_id CP163-2
 # id 861
+# d2d: punct(aprovado,,) -> punct(acontecer,,)  #106
+# d2d: cc(aprovado,mas) -> cc(acontecer,mas)  #106
 1	Armindo	Armindo	PROPN	_	Gender=Masc|Number=Sing	11	nsubj	_	ChangedBy=Issue119|MWE=Armindo_Cordeiro|MWEPOS=PROPN
 2	Cordeiro	Cordeiro	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -36,8 +38,8 @@
 15	sido	ser	AUX	<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	16	aux:pass	_	_
 16	aprovado	aprovar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	xcomp	_	_
 17	nenhum	nenhum	PRON	<quant>|DET|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	_
-18	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-19	mas	mas	CCONJ	<co-icl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	_
+18	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+19	mas	mas	CCONJ	<co-icl>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 20	que	que	SCONJ	KS|@SUB	_	24	mark	_	_
 21	tal	tal	ADV	<dem>|<quant>|ADV|@SUBJ>	_	24	nsubj	_	_
 22	virá	vir	AUX	<cjt>|<aux>|V|FUT|3S|IND|@ICL-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	24	aux	_	_
@@ -84,6 +86,9 @@
 # source CETEMPúblico n=163 sec=soc sem=94b &E
 # sent_id CP163-3
 # id 862
+# d2d: cc(moradores,e) -> cc(lojistas,e)  #106
+# d2d: cc(destruído,mas) -> cc(ampliado,mas)  #106
+# d2d: punct(destruído,,) -> punct(ampliado,,)  #106
 1	Também	também	ADV	ADV|@>N	_	2	advmod	_	_
 2	Armindo	Armindo	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Armindo_Cordeiro|MWEPOS=PROPN
 3	Cordeiro	Cordeiro	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -99,8 +104,8 @@
 13	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
 14	será	ser	AUX	<first-cjt>|<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	aux:pass	_	_
 15	destruído	destruir	VERB	<first-cjt>|<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	ccomp	_	_
-16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
-17	mas	mas	CCONJ	<co-aux<>|<co-pcp>|KC|@CO	_	15	cc	_	_
+16	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+17	mas	mas	CCONJ	<co-aux<>|<co-pcp>|KC|@CO	_	21	cc	_	d2d:#106
 18	por	por	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	contrário	contrário	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
@@ -114,7 +119,7 @@
 28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
 29	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
 30	moradores	morador	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	27	nmod	_	_
-31	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	_
+31	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	d2d:#106
 32	lojistas	lojista	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	30	conj	_	_
 33	de	de	ADP	<sam->|PRP|@N<	_	35	case	_	_
 34	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	35	det	_	_
@@ -126,11 +131,14 @@
 # source CETEMPúblico n=163 sec=soc sem=94b &W
 # sent_id CP163-4
 # id 863
+# d2d: cc(marginais,e) -> cc(toxicodependentes,e)  #106
+# d2d: cc(desleixo,e) -> cc(degradação,e)  #106
+# d2d: cc(tem,e) -> cc(transformar-,e)  #106
 1	Acabará	acabar	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 2	com	com	ADP	PRP|@<PIV	_	4	case	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	desleixo	desleixo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
-5	e	e	CCONJ	<co-prparg>|KC|@CO	_	4	cc	_	_
+5	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	d2d:#106
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	degradação	degradação	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	conj	_	_
 8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
@@ -148,7 +156,7 @@
 20	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	_	_
 21	muito	muito	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	22	det	_	_
 22	tempo	tempo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
-23	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	_
+23	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	26	cc	_	d2d:#106
 24	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	26	nsubj	_	_
 25	poderá	poder	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	26	aux	_	_
 26	transformar-	transformar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	conj	_	_
@@ -157,7 +165,7 @@
 29	poiso	poiso	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
 30	de	de	ADP	PRP|@N<	_	31	case	_	_
 31	marginais	marginal	ADJ	<first-cjt>|ADJ|M/F|P|@P<	Gender=Unsp|Number=Plur	29	nmod	_	_
-32	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	_
+32	e	e	CCONJ	<co-prparg>|KC|@CO	_	33	cc	_	d2d:#106
 33	toxicodependentes	toxicodependente	NOUN	<cjt>|<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	31	conj	_	_
 34	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

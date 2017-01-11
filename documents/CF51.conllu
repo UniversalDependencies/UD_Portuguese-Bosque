@@ -3,6 +3,7 @@
 # source CETENFolha n=51 cad=Ilustrada sec=nd sem=94b
 # sent_id CF51-1
 # id 202
+# d2d: cc(estranho,e) -> cc(delicioso,e)  #106
 1	Aquele	aquele	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	pensamento	pensamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	provocou-	provocar	VERB	<mv>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -10,7 +11,7 @@
 5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	arrepio	arrepio	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 7	estranho	estranho	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
-8	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	d2d:#106
 9	delicioso	delicioso	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	conj	_	_
 10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
@@ -19,11 +20,14 @@
 # source CETENFolha n=51 cad=Ilustrada sec=nd sem=94b &D
 # sent_id CF51-2
 # id 203
+# d2d: punct(falei,,) -> punct(visualizei,,)  #106
+# d2d: cc(falei,mas) -> cc(visualizei,mas)  #106
+# d2d: cc(envergando,e) -> cc(confrontando-,e)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	falei	falar	VERB	<mv>|<first-cjt>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 3	nada	nada	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	2	obj	_	_
-4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-5	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+4	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
+5	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	6	cc	_	d2d:#106
 6	visualizei	visualizar	VERB	<mv>|<cjt>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	conj	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	Sra.	Sra.	PROPN	_	Gender=Fem|Number=Sing	6	obj	_	ChangedBy=Issue119|MWE=Sra._oke|MWEPOS=PROPN
@@ -55,7 +59,7 @@
 34	de	de	ADP	PRP|@N<	_	36	case	_	_
 35	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	36	det	_	_
 36	antepassada	antepassado	ADJ	<n>|<np-def>|ADJ|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
-37	e	e	CCONJ	<co-icl>|<co-fmc>|<co-vfin>|KC|@CO	_	31	cc	_	_
+37	e	e	CCONJ	<co-icl>|<co-fmc>|<co-vfin>|KC|@CO	_	38	cc	_	d2d:#106
 38	confrontando-	confrontar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|GER|@ICL-<ADVL	VerbForm=Ger	31	conj	_	_
 39	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	expl	_	ChangedBy=Issue135
 40	,	,	PUNCT	PU|@PU	_	31	punct	_	_

@@ -59,6 +59,7 @@
 # source CETENFolha n=915 cad=Mundo sec=pol sem=94b
 # sent_id CF915-3
 # id 3864
+# d2d: cc(terá,e) -> cc(ficará,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	homem	homem	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	4	nsubj	_	_
@@ -70,7 +71,7 @@
 9	direito	direito	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
 10	a	a	ADP	PRP|@N<	_	11	case	_	_
 11	fiança	fiança	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
-12	e	e	CCONJ	<co-sta>|KC|@CO	_	8	cc	_	_
+12	e	e	CCONJ	<co-sta>|KC|@CO	_	13	cc	_	d2d:#106
 13	ficará	ficar	VERB	<cjt>|<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	conj	_	_
 14	preso	preso	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	13	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 15	por	por	ADP	<sam->|PRP|@N<	_	17	case	_	_
@@ -98,8 +99,12 @@
 # source CETENFolha n=915 cad=Mundo sec=pol sem=94b
 # sent_id CF915-4
 # id 3865
+# d2d: punct(Lituânia,,) -> punct(Ucrânia,,)  #106
+# d2d: cc(Lituânia,e) -> cc(Ucrânia,e)  #106
+# d2d: cc(Lituânia,e) -> cc(Ucrânia,e)  #106
+# d2d: punct(Lituânia,,) -> punct(Ucrânia,,)  #106
 1	Lituânia	Lituânia	PROPN	<first-cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	Ucrânia	Ucrânia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	1	conj	_	ChangedBy=Issue149
 4	elogiam	elogiar	VERB	<first-cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
@@ -109,11 +114,11 @@
 9	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	Lituânia	Lituânia	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
-12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 13	Algirdas	Algirdas	PROPN	_	Gender=Masc|Number=Sing	11	appos	_	ChangedBy=Issue119|MWE=Algirdas_Zebrauskas|MWEPOS=PROPN
 14	Zebrauskas	Zebrauskas	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
-15	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-16	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+15	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
+16	e	e	CCONJ	<co-postnom>|KC|@CO	_	19	cc	_	d2d:#106
 17	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	Ucrânia	Ucrânia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	11	conj	_	_

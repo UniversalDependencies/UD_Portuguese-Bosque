@@ -3,12 +3,14 @@
 # source CETENFolha n=359 cad=Dinheiro sec=eco sem=94b
 # sent_id CF359-1
 # id 1489
+# d2d: punct(respeitáveis,,) -> punct(bastam,,)  #106
+# d2d: cc(respeitáveis,mas) -> cc(bastam,mas)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	avais	aval	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	são	ser	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 4	respeitáveis	respeitável	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
-5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-6	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+5	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
+6	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	8	cc	_	d2d:#106
 7	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
 8	bastam	bastar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 9	.	.	PUNCT	PU|@PU	_	4	punct	_	_
@@ -18,6 +20,7 @@
 # source CETENFolha n=359 cad=Dinheiro sec=eco sem=94b
 # sent_id CF359-2
 # id 1490
+# d2d: cc(contas,e) -> cc(raciocínios,e)  #106
 1	Tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
 2	que	que	SCONJ	KS|@PRT-AUX<	_	4	mark	_	_
 3	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl	_	ChangedBy=Issue135
@@ -25,7 +28,7 @@
 5	através	através	ADV	ADV|@<ADVL	_	4	advmod	_	_
 6	de	de	ADP	<first-cjt>|PRP|@A<	_	7	case	_	_
 7	contas	conta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
-8	e	e	CCONJ	<co-a<>|<co-postad>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-a<>|<co-postad>|KC|@CO	_	10	cc	_	d2d:#106
 9	de	de	ADP	<cjt>|PRP|@A<	_	10	case	_	_
 10	raciocínios	raciocínio	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	conj	_	ChangedBy=Issue149
 11	que	que	SCONJ	KS|@SUB	_	14	mark	_	_
@@ -40,6 +43,7 @@
 # source CETENFolha n=359 cad=Dinheiro sec=eco sem=94b
 # sent_id CF359-3
 # id 1491
+# d2d: cc(raciocínio,e) -> cc(contas,e)  #106
 1	Como	como	SCONJ	KS|@SUB	_	4	mark	_	_
 2	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 3	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	_	_
@@ -54,7 +58,7 @@
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	raciocínio	raciocínio	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_
 14	(	(	PUNCT	PU|@PU	_	15	punct	_	_
-15	e	e	CCONJ	<co-acc>|KC|@CO	_	13	cc	_	_
+15	e	e	CCONJ	<co-acc>|KC|@CO	_	17	cc	_	d2d:#106
 16	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
 17	contas	conta	NOUN	<cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	13	conj	_	_
 18	)	)	PUNCT	PU|@PU	_	15	punct	_	_

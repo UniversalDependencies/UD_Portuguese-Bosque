@@ -89,6 +89,9 @@
 # source CETEMPúblico n=1003 sec=soc sem=98b
 # sent_id CP1003-3
 # id 5145
+# d2d: punct(apropria,,) -> punct(reenvia,,)  #106
+# d2d: cc(apropria,e) -> cc(reenvia,e)  #106
+# d2d: punct(longe,,) -> punct(um,,)  #106
 1	João	João	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=João_Cutileiro|MWEPOS=PROPN
 2	Cutileiro	Cutileiro	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -109,8 +112,8 @@
 18	fontanários	fontanário	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	conj	_	_
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	jardins	jardim	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	_
-21	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-22	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	10	cc	_	_
+21	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+22	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 23	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	24	obj	_	_
 24	reenvia	reenviar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
 25	para	para	ADP	PRP|@<ADVL	_	29	case	_	_
@@ -126,7 +129,7 @@
 35	,	,	PUNCT	PU|@PU	_	37	punct	_	_
 36	mais	mais	ADV	<KOMP>|<quant>|ADV|@>A	_	37	advmod	_	_
 37	longe	longe	ADV	<first-cjt>|ADV|@N<PRED	_	29	advmod	_	_
-38	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+38	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 39	em	em	ADP	<sam->|<cjt>|PRP|@N<PRED	_	40	case	_	_
 40	um	um	NUM	<-sam>|NUM|M|S|@P<	_	37	conj	_	_
 41	de	de	ADP	<sam->|PRP|@A<	_	43	case	_	_
@@ -167,6 +170,7 @@
 # source CETEMPúblico n=1003 sec=soc sem=98b
 # sent_id CP1003-5
 # id 5147
+# d2d: cc(debruçar-,e) -> cc(espreitar,e)  #106
 1	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 3	única	único	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	4	amod	_	_
@@ -185,7 +189,7 @@
 16	a	a	ADP	PRP|@<PIV	_	17	mark	_	_
 17	debruçar-	debruçar	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	15	xcomp	_	_
 18	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	expl	_	ChangedBy=Issue135
-19	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	17	cc	_	_
+19	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	20	cc	_	d2d:#106
 20	espreitar	espreitar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	conj	_	_
 21	para	para	ADP	PRP|@<ADVL	_	23	case	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
@@ -200,6 +204,9 @@
 # source CETEMPúblico n=1003 sec=soc sem=98b
 # sent_id CP1003-6
 # id 5148
+# d2d: cc(tomar,e) -> cc(associar,e)  #106
+# d2d: punct(tomar,,) -> punct(associar,,)  #106
+# d2d: cc(volume,e) -> cc(massa,e)  #106
 1	Poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux	_	_
 2	assim	assim	ADV	<kc>|ADV|@ADVL>	_	3	advmod	_	_
 3	tomar	tomar	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
@@ -211,14 +218,14 @@
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	volume	volume	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 11	sugerido	sugerir	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
-12	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	_
+12	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	d2d:#106
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	massa	massa	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	conj	_	_
 15	de	de	ADP	PRP|@N<ARG	_	17	case	_	_
 16	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
 17	bolas	bola	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	14	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-19	e	e	CCONJ	<co-inf>|<co-icl>|KC|@CO	_	3	cc	_	_
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+19	e	e	CCONJ	<co-inf>|<co-icl>|KC|@CO	_	20	cc	_	d2d:#106
 20	associar	associar	VERB	<mv>|<cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	3	conj	_	_
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	caixa	caixa	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
@@ -248,9 +255,10 @@
 # source CETEMPúblico n=1003 sec=soc sem=98b
 # sent_id CP1003-7
 # id 5149
+# d2d: cc(Manuel,e) -> cc(Rui,e)  #106
 1	Manuel	Manuel	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	ChangedBy=Issue119|MWE=Manuel_Rosa|MWEPOS=PROPN
 2	Rosa	Rosa	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
-3	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	d2d:#106
 4	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Rui_Sanches|MWEPOS=PROPN
 5	Sanches	Sanches	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
@@ -292,6 +300,7 @@
 # source CETEMPúblico n=1003 sec=soc sem=98b
 # sent_id CP1003-9
 # id 5151
+# d2d: punct(corpo,,) -> punct(força,,)  #106
 1	mas	mas	CCONJ	KC|@CO	_	8	cc	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	coluna	coluna	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
@@ -305,7 +314,7 @@
 11	corpo	corpo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
 12	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	13	obj	_	_
 13	sustenta	sustentar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
-14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 15	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	força	força	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	conj	_	_
@@ -418,6 +427,7 @@
 # source CETEMPúblico n=1003 sec=soc sem=98b
 # sent_id CP1003-13
 # id 5155
+# d2d: cc(ferido,e) -> cc(morre,e)  #106
 1	Estátua	estátua	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	(	(	PUNCT	PU|@PU	_	6	punct	_	_
 3	porque	porque	SCONJ	KS|@SUB	_	6	mark	_	_
@@ -434,7 +444,7 @@
 14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15	é	ser	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
 16	ferido	ferir	VERB	<first-cjt>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	1	parataxis	_	_
-17	e	e	CCONJ	<co-vp>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	_
+17	e	e	CCONJ	<co-vp>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 18	morre	morrer	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_
 19	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -443,12 +453,13 @@
 # source CETEMPúblico n=1003 sec=soc sem=98b
 # sent_id CP1003-14
 # id 5156
+# d2d: punct(possíveis,,) -> punct(acontecer,,)  #106
 1	Todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	3	det	_	MWE=Todas_as
 2	as	o	DET	<artd>|DET|F|P|@A<	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	1	fixed	_	_
 3	interpretações	interpretação	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj	_	_
 4	são	ser	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 5	possíveis	possível	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 7	tudo	tudo	PRON	<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	9	nsubj	_	_
 8	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
 9	acontecer	acontecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	conj	_	_

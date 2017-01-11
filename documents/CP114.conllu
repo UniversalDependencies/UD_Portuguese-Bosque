@@ -27,6 +27,12 @@
 # source CETEMPúblico n=114 sec=clt sem=94a
 # sent_id CP114-4
 # id 580
+# d2d: punct(amigos,,) -> punct(voz,,)  #106
+# d2d: cc(amigos,e) -> cc(anedota,e)  #106
+# d2d: punct(amigos,,) -> punct(anedota,,)  #106
+# d2d: punct(amigos,,) -> punct(anedota,,)  #106
+# d2d: cc(equívocos,e) -> cc(falta,e)  #106
+# d2d: punct(amigos,,) -> punct(voz,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	Fados	Fados	PROPN	_	Gender=Masc|Number=Plur	18	nsubj	_	ChangedBy=Issue119|MWE=Fados_d'Aquém_e_d'Além-Mar|MWEPOS=PROPN
@@ -52,27 +58,27 @@
 23	confrangedora	confrangedor	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
 25	equívocos	equívoco	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
-26	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	_
+26	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	d2d:#106
 27	falta	falta	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	25	conj	_	_
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	preparação	preparação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
 30	onde	onde	ADV	<rel>|ADV|@ADVL>	_	31	advmod	_	_
 31	couberam	caber	VERB	<mv>|V|PS|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	acl:relcl	_	_
 32	amigos	amigo	NOUN	<first-cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	31	nsubj	_	_
-33	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+33	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 34	muito	muito	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	35	det	_	_
 35	Fernando	Fernando	PROPN	_	Gender=Masc|Number=Sing	32	nsubj	_	ChangedBy=Issue119|MWE=Fernando_Pessoa|MWEPOS=PROPN
 36	Pessoa	Pessoa	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
-37	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+37	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 38	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 39	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	40	amod	_	_
 40	voz	voz	NOUN	<cjt>|<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	32	conj	_	_
-41	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+41	,	,	PUNCT	PU|@PU	_	48	punct	_	d2d:#106
 42	de	de	ADP	PRP|@N<PRED	_	43	case	_	_
 43	Rita	Rita	PROPN	_	Gender=Fem|Number=Sing	40	nmod	_	ChangedBy=Issue119|MWE=Rita_Guerra|MWEPOS=PROPN
 44	Guerra	Guerra	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
-45	,	,	PUNCT	PU|@PU	_	32	punct	_	_
-46	e	e	CCONJ	<co-subj>|KC|@CO	_	32	cc	_	_
+45	,	,	PUNCT	PU|@PU	_	48	punct	_	d2d:#106
+46	e	e	CCONJ	<co-subj>|KC|@CO	_	48	cc	_	d2d:#106
 47	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
 48	anedota	anedota	NOUN	<cjt>|<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	32	conj	_	_
 49	brasileira	brasileiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	48	amod	_	_

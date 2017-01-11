@@ -31,6 +31,8 @@
 # source CETEMPúblico n=988 sec=clt sem=93a
 # sent_id CP988-2
 # id 5074
+# d2d: punct(Pedro,,) -> punct(Maria,,)  #106
+# d2d: cc(Maria,e) -> cc(Palmira,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	concerto	concerto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
@@ -48,13 +50,13 @@
 15	(	(	PUNCT	PU|@PU	_	16	punct	_	_
 16	violoncelo	violoncelo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	13	appos	_	_
 17	)	)	PUNCT	PU|@PU	_	16	punct	_	_
-18	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 19	Maria	Maria	PROPN	<cjt>|<first-cjt>|PROP|F|S|@N<	Gender=Fem|Number=Sing	13	conj	_	MWE=Maria_do_Rosário_Ferreira
 20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	Rosário	Rosário	PROPN	_	Number=Sing	19	nmod	_	ChangedBy=Issue119|MWE=Rosário_Ferreira|MWEPOS=PROPN
 23	Ferreira	Ferreira	PROPN	_	Number=Sing	22	flat:name	_	ChangedBy=Issue119
-24	e	e	CCONJ	<co-postnom>|KC|@CO	_	19	cc	_	_
+24	e	e	CCONJ	<co-postnom>|KC|@CO	_	25	cc	_	d2d:#106
 25	Palmira	Palmira	PROPN	_	Gender=Fem|Number=Sing	19	conj	_	ChangedBy=Issue119|MWE=Palmira_Troufa|MWEPOS=PROPN
 26	Troufa	Troufa	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
 27	(	(	PUNCT	PU|@PU	_	28	punct	_	_
@@ -67,6 +69,7 @@
 # source CETEMPúblico n=988 sec=clt sem=93a
 # sent_id CP988-3
 # id 5075
+# d2d: punct(Paço,,) -> punct(21h45,,)  #106
 1	Em	em	ADP	<sam->|<first-cjt>|PRP|@UTT	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Paço	Paço	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	0	root	_	MWE=Paço_dos_Duques_de_Bragança
@@ -75,7 +78,7 @@
 6	Duques	Duques	PROPN	PROP|@P<	Number=Sing	3	nmod	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	Bragança	Bragança	PROPN	PROP|@P<	Number=Sing	6	nmod	_	_
-9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 10	a	a	ADP	<sam->|<cjt>|PRP|@UTT	_	12	case	_	_
 11	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
 12	21h45	21h45	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	conj	_	_

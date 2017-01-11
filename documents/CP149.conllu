@@ -162,12 +162,13 @@
 # source CETEMPúblico n=149 sec=soc sem=94b
 # sent_id CP149-7
 # id 771
+# d2d: cc(homem,e) -> cc(casal,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	reféns	refém	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	homem	homem	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	2	appos	_	_
-6	e	e	CCONJ	<co-n<pred>|<co-postnom>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-n<pred>|<co-postnom>|KC|@CO	_	8	cc	_	d2d:#106
 7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	casal	casal	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	conj	_	_
 9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -189,6 +190,7 @@
 # source CETEMPúblico n=149 sec=soc sem=94b &W
 # sent_id CP149-8
 # id 772
+# d2d: cc(Hofheim,e) -> cc(Wiesbade,e)  #106
 1	Após	após	ADP	PRP|@ADVL>	_	3	case	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	perseguição	perseguição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue137
@@ -210,7 +212,7 @@
 19	autoestrada	autoestrada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
 20	entre	entre	ADP	PRP|@N<	_	21	case	_	_
 21	Hofheim	Hofheim	PROPN	<first-cjt>|PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	19	nmod	_	_
-22	e	e	CCONJ	<co-prparg>|KC|@CO	_	21	cc	_	_
+22	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	d2d:#106
 23	Wiesbade	Wiesbade	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	21	conj	_	ChangedBy=Issue149
 24	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
@@ -292,6 +294,9 @@
 # source CETEMPúblico n=149 sec=soc sem=94b
 # sent_id CP149-11
 # id 775
+# d2d: punct(soldado,,) -> punct(suíço,,)  #106
+# d2d: cc(soldado,e) -> cc(suíço,e)  #106
+# d2d: cc(homicídio,e) -> cc(assalto,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	dois	dois	NUM	<card>|NUM|M|P|@>N	_	3	nummod	_	_
 3	criminosos	criminoso	NOUN	<n>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	28	nsubj	_	_
@@ -312,8 +317,8 @@
 18	de	de	ADP	PRP|@N<	_	20	case	_	_
 19	32	32	NUM	<card>|NUM|M|P|@>N	_	20	nummod	_	_
 20	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	_
-21	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-22	e	e	CCONJ	<co-n<pred>|KC|@CO	_	7	cc	_	_
+21	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+22	e	e	CCONJ	<co-n<pred>|KC|@CO	_	24	cc	_	d2d:#106
 23	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	suíço	suíço	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	7	conj	_	_
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
@@ -335,7 +340,7 @@
 41	acusados	acusar	VERB	<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	_	_
 42	de	de	ADP	PRP|@<PIV	_	43	case	_	_
 43	homicídio	homicídio	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	41	nmod	_	_
-44	e	e	CCONJ	<co-prparg>|KC|@CO	_	43	cc	_	_
+44	e	e	CCONJ	<co-prparg>|KC|@CO	_	45	cc	_	d2d:#106
 45	assalto	assalto	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	43	conj	_	_
 46	a	a	ADP	<sam->|PRP|@N<	_	48	case	_	_
 47	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	48	det	_	_

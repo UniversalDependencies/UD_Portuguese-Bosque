@@ -48,6 +48,9 @@
 # source CETENFolha n=102 cad=Brasil sec=pol sem=94a
 # sent_id CF102-2
 # id 390
+# d2d: cc(Cali,e) -> cc(Medellín,e)  #106
+# d2d: cc(Máfia,e) -> cc(cartéis,e)  #106
+# d2d: punct(Máfia,,) -> punct(Yakuza,,)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	números	número	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	31	obl	_	ChangedBy=Issue137
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -62,16 +65,16 @@
 12	como	como	ADP	<com>|PRP|@N<	_	14	case	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	Máfia	máfia	NOUN	<first-cjt>|<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
-15	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+15	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	Yakuza	Yakuza	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	14	conj	_	_
 18	japonesa	japonês	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	17	amod	_	_
-19	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	_
+19	e	e	CCONJ	<co-postnom>|KC|@CO	_	21	cc	_	d2d:#106
 20	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
 21	cartéis	cartel	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	conj	_	_
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	Cali	Cali	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
-24	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	_
+24	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	d2d:#106
 25	Medellín	Medellín	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	23	conj	_	_
 26	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 27	em	em	ADP	<sam->|PRP|@<ADVL	_	29	case	_	_

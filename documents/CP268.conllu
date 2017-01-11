@@ -63,6 +63,7 @@
 # source CETEMPúblico n=268 sec=soc sem=93a
 # sent_id CP268-3
 # id 1425
+# d2d: cc(ruído,e) -> cc(perturbação,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	comunicado	comunicar	VERB	<mv>|V|PCP|M|S|@ICL-P<	Gender=Masc|Number=Sing|VerbForm=Part	6	advcl	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -83,7 +84,7 @@
 18	também	também	ADV	ADV|@>A	_	20	advmod	_	_
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	ruído	ruído	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
-21	e	e	CCONJ	<co-prparg>|KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	<co-prparg>|KC|@CO	_	22	cc	_	d2d:#106
 22	perturbação	perturbação	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	conj	_	_
 23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
 24	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	25	det	_	_
@@ -155,6 +156,7 @@
 # source CETEMPúblico n=268 sec=soc sem=93a
 # sent_id CP268-5
 # id 1427
+# d2d: cc(lei,e) -> cc(realidade,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	18	cc	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	faltas	falta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
@@ -163,7 +165,7 @@
 6	entre	entre	ADP	PRP|@N<	_	8	case	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	lei	lei	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
-9	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	d2d:#106
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	realidade	realidade	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	conj	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
@@ -180,6 +182,7 @@
 # source CETEMPúblico n=268 sec=soc sem=93a
 # sent_id CP268-6
 # id 1428
+# d2d: cc(brinquedos,ou) -> cc(artifícios,ou)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	22	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
 2	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -208,7 +211,7 @@
 26	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 27	considerados	considerar	VERB	<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	25	acl	_	_
 28	brinquedos	brinquedo	NOUN	<first-cjt>|<np-idf>|N|M|P|@<OC	Gender=Masc|Number=Plur	27	xcomp	_	_
-29	ou	ou	CCONJ	<co-oc>|KC|@CO	_	28	cc	_	_
+29	ou	ou	CCONJ	<co-oc>|KC|@CO	_	30	cc	_	d2d:#106
 30	artifícios	artifício	NOUN	<cjt>|<np-idf>|N|M|P|@<OC	Gender=Masc|Number=Plur	28	conj	_	_
 31	pirotécnicos	pirotécnico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	30	amod	_	_
 32	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	34	nsubj	_	_
@@ -228,14 +231,16 @@
 # source CETEMPúblico n=268 sec=soc sem=93a
 # sent_id CP268-7
 # id 1429
+# d2d: punct(Encontram-,,) -> punct(proibido,,)  #106
+# d2d: cc(Encontram-,e) -> cc(proibido,e)  #106
 1	Encontram-	encontrar	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	<refl>|PERS|M/F|3P|ACC|@<ACC	Case=Acc|Gender=Unsp|Number=Plur|Person=3|PronType=Prs	1	obj	_	_
 3	em	em	ADP	PRP|@<ADVL	_	6	case	_	_
 4	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	6	det	_	MWE=todo_o
 5	o	o	DET	<artd>|DET|M|S|@A<	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	fixed	_	_
 6	lado	lado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137
-7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
-8	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
+8	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 9	em	em	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_

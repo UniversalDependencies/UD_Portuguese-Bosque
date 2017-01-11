@@ -13,6 +13,8 @@
 # source CETEMPúblico n=245 sec=eco sem=94a
 # sent_id CP245-2
 # id 1317
+# d2d: cc(produtos,e) -> cc(remunerações,e)  #106
+# d2d: punct(produtos,,) -> punct(taxas,,)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	esta	este	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
 3	onda	onda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	ChangedBy=Issue137
@@ -46,12 +48,12 @@
 31	tantos	tanto	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	32	det	_	_
 32	produtos	produto	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	29	nmod	_	_
 33	novos	novo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	32	amod	_	_
-34	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+34	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 35	taxas	taxa	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	32	conj	_	_
 36	de	de	ADP	PRP|@N<	_	37	case	_	_
 37	juro	juro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	_
 38	irrecusáveis	irrecusável	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	37	amod	_	_
-39	e	e	CCONJ	<co-prparg>|<co-sc>|KC|@CO	_	32	cc	_	_
+39	e	e	CCONJ	<co-prparg>|<co-sc>|KC|@CO	_	40	cc	_	d2d:#106
 40	remunerações	remuneração	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	32	conj	_	_
 41	estonteantes	estonteante	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	40	amod	_	_
 42	.	.	PUNCT	PU|@PU	_	18	punct	_	_
@@ -61,6 +63,7 @@
 # source CETEMPúblico n=245 sec=eco sem=94a
 # sent_id CP245-3
 # id 1318
+# d2d: cc(ficam,e) -> cc(entram,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	turbilhão	turbilhão	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
@@ -75,7 +78,7 @@
 12	instituições	instituição	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	13	nsubj	_	_
 13	ficam	ficar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-KOMP<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
 14	abananadas	abananado	ADJ	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur	13	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
-15	e	e	CCONJ	<co-komp<>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	_
+15	e	e	CCONJ	<co-komp<>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 16	entram	entrar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-KOMP<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
 17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 18	olimpicamente	olimpicamente	ADV	ADV|@<ADVL	_	16	advmod	_	_
@@ -121,6 +124,7 @@
 # source CETEMPúblico n=245 sec=eco sem=94a
 # sent_id CP245-5
 # id 1320
+# d2d: cc(foi,e) -> cc(encontrou,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	relato	relato	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
@@ -140,7 +144,7 @@
 17	de	de	ADP	_	_	16	compound	_	_
 18	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	compound	_	_
 19	correio	correio	NOUN	_	_	16	compound	_	_
-20	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	13	cc	_	_
+20	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 21	lá	lá	ADV	ADV|@ADVL>	_	22	advmod	_	_
 22	encontrou	encontrar	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	conj	_	_
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
@@ -166,6 +170,8 @@
 # source CETEMPúblico n=245 sec=eco sem=94a
 # sent_id CP245-6
 # id 1321
+# d2d: punct(Parecia,,) -> punct(colocou,,)  #106
+# d2d: cc(Parecia,mas) -> cc(colocou,mas)  #106
 1	Parecia	parecer	VERB	<mv>|<first-cjt>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 2	um	um	DET	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	MWE=um_pouco
 3	pouco	pouco	DET	DET|M|S|@>A	Gender=Masc|Number=Sing	4	advmod	_	_
@@ -174,8 +180,8 @@
 6	tão	tão	ADV	<dem>|ADV|@>A	_	7	advmod	_	_
 7	pouca	pouco	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	8	det	_	_
 8	coisa	coisa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue137
-9	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
+10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	d2d:#106
 11	logo	logo	ADV	<kc>|ADV|@ADVL>	_	13	advmod	_	_
 12	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	13	nsubj	_	_
 13	colocou	colocar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	_	_
@@ -312,6 +318,7 @@
 # source CETEMPúblico n=245 sec=eco sem=94a
 # sent_id CP245-11
 # id 1326
+# d2d: cc(nomeado,ou) -> cc(banco,ou)  #106
 1	se	se	SCONJ	KS|@SUB	_	4	mark	_	_
 2	tinha	ter	AUX	<first-cjt>|<aux>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_
 3	sido	ser	AUX	<aux>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	4	aux:pass	_	_
@@ -323,7 +330,7 @@
 9	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	11	det	_	_
 10	aquela	aquele	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_
 11	gente	gente	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
-12	ou	ou	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	4	cc	_	_
+12	ou	ou	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 13	se	se	SCONJ	KS|@SUB	_	16	mark	_	_
 14	era	ser	VERB	<mv>|<cjt>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	cop	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_

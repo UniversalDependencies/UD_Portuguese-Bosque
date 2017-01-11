@@ -3,6 +3,7 @@
 # source CETEMPúblico n=169 sec=nd sem=91b
 # sent_id CP169-1
 # id 888
+# d2d: cc(teatro,e) -> cc(cinema,e)  #106
 1	P.	p.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	Qual	qual	PRON	<interr>|DET|F|S|@SC>	Gender=Fem|Number=Sing|PronType=Int	1	parataxis	_	_
@@ -13,7 +14,7 @@
 8	trabalhar	trabalhar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	_
 9	em	em	ADP	<first-cjt>|PRP|@<ADVL	_	10	case	_	_
 10	teatro	teatro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
-11	e	e	CCONJ	<co-advl>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-advl>|KC|@CO	_	13	cc	_	d2d:#106
 12	em	em	ADP	<cjt>|PRP|@<ADVL	_	13	case	_	_
 13	cinema	cinema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	conj	_	ChangedBy=Issue149
 14	?	?	PUNCT	PU|@PU	_	1	punct	_	_
@@ -23,6 +24,10 @@
 # source CETEMPúblico n=169 sec=nd sem=91b
 # sent_id CP169-2
 # id 889
+# d2d: punct(tenta-,--) -> punct(cria-,--)  #106
+# d2d: cc(tempo,e) -> cc(momento,e)  #106
+# d2d: punct(tenta-,,) -> punct(cria-,,)  #106
+# d2d: punct(tempo,,) -> punct(momento,,)  #106
 1	R.	r.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	6	punct	_	_
 3	Em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	_
@@ -36,17 +41,17 @@
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	espectáculo	espectáculo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
-14	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	cria-	criar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
 16	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	15	nsubj	_	_
 17	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	tempo	tempo	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	15	obj	_	_
-19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
-20	e	e	CCONJ	<co-acc>|KC|@CO	_	18	cc	_	_
+19	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
+20	e	e	CCONJ	<co-acc>|KC|@CO	_	23	cc	_	d2d:#106
 21	não	não	ADV	ADV|@>N	_	23	neg	_	_
 22	um	um	NUM	<card>|NUM|M|S|@>N	_	23	nummod	_	_
 23	momento	momento	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	conj	_	_
-24	--	--	PUNCT	PU|@PU	_	6	punct	_	_
+24	--	--	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 25	cria-	criar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
 26	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	25	nsubj	_	_
 27	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
@@ -84,6 +89,7 @@
 # source CETEMPúblico n=169 sec=nd sem=91b
 # sent_id CP169-5
 # id 891
+# d2d: cc(trabalha-,e) -> cc(reduzido,e)  #106
 1	Devido	devido	ADV	ADV|@ADVL>	_	10	advmod	_	MWE=Devido_a
 2	a	a	ADP	PRP|@A<	_	4	case	_	_
 3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -98,7 +104,7 @@
 12	momento	momento	NOUN	<np-idf>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	10	nmod	_	_
 13	a	a	ADP	PRP|@N<	_	14	case	_	_
 14	momento	momento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
-15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 16	um	um	NUM	<card>|NUM|M|S|@>N	_	17	nummod	_	_
 17	momento	momento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj:pass	_	_
 18	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_

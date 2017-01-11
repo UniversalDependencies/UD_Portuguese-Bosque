@@ -23,6 +23,13 @@
 # source CETEMPúblico n=237 sec=pol sem=96a
 # sent_id CP237-2
 # id 1258
+# d2d: punct(debate,,) -> punct(papel,,)  #106
+# d2d: punct(debate,,) -> punct(posição,,)  #106
+# d2d: cc(debate,ou) -> cc(dimensão,ou)  #106
+# d2d: cc(económica,e) -> cc(política,e)  #106
+# d2d: cc(europeia,e) -> cc(portuguesa,e)  #106
+# d2d: cc(debate,e) -> cc(papel,e)  #106
+# d2d: punct(debate,,) -> punct(papel,,)  #106
 1	Incluirá	incluir	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	naturalmente	naturalmente	ADV	ADV|@<ADVL	_	1	advmod	_	_
@@ -37,9 +44,9 @@
 12	uma	um	DET	<-sam>|ART|@>N	PronType=Art	13	det	_	_
 13	perspectiva	perspectiva	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
 14	europeia	europeu	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	_
-15	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	_
+15	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	d2d:#106
 16	portuguesa	português	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	conj	_	_
-17	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	posição	posição	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	conj	_	_
 20	europeia	europeu	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	_
@@ -47,10 +54,10 @@
 22	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	23	det	_	_
 23	economia	economia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
 24	mundial	mundial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
-25	e	e	CCONJ	<co-acc>|KC|@CO	_	6	cc	_	_
-26	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+25	e	e	CCONJ	<co-acc>|KC|@CO	_	30	cc	_	d2d:#106
+26	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
 27	ainda	ainda	ADV	ADV|@<ADVL	_	1	advmod	_	_
-28	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+28	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
 29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	papel	papel	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	conj	_	_
 31	de	de	ADP	<sam->|PRP|@N<	_	33	case	_	_
@@ -68,11 +75,11 @@
 43	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	44	det	_	_
 44	economia	economia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	38	nmod	_	_
 45	internacional	internacional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	44	amod	_	_
-46	ou	ou	CCONJ	<co-acc>|KC|@CO	_	6	cc	_	_
+46	ou	ou	CCONJ	<co-acc>|KC|@CO	_	48	cc	_	d2d:#106
 47	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
 48	dimensão	dimensão	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	conj	_	_
 49	económica	económico	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	48	amod	_	_
-50	e	e	CCONJ	<co-postnom>|KC|@CO	_	49	cc	_	_
+50	e	e	CCONJ	<co-postnom>|KC|@CO	_	51	cc	_	d2d:#106
 51	política	político	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	49	conj	_	_
 52	de	de	ADP	<sam->|PRP|@N<	_	54	case	_	_
 53	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	54	det	_	_
@@ -85,6 +92,7 @@
 # source CETEMPúblico n=237 sec=pol sem=96a
 # sent_id CP237-3
 # id 1259
+# d2d: cc(Alan,e) -> cc(Pedro,e)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	participantes	participante	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obl	_	ChangedBy=Issue137
@@ -114,7 +122,7 @@
 27	Jorge	Jorge	PROPN	_	Gender=Masc|Number=Sing	6	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Jorge_Jardim_Gonçalves|MWEPOS=PROPN
 28	Jardim	Jardim	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
 29	Gonçalves	Gonçalves	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
-30	e	e	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	_
+30	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	d2d:#106
 31	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	6	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Pedro_Ferraz|MWEPOS=PROPN
 32	Ferraz	Ferraz	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119
 33	de	de	ADP	<sam->|PRP|@N<	_	35	case	_	_
@@ -127,6 +135,7 @@
 # source CETEMPúblico n=237 sec=pol sem=96a &W
 # sent_id CP237-4
 # id 1260
+# d2d: cc(cultura,e) -> cc(história,e)  #106
 1	Finalmente	finalmente	ADV	ADV|@ADVL>	_	7	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
@@ -157,7 +166,7 @@
 28	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	30	det	_	_
 29	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	30	det	_	_
 30	cultura	cultura	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
-31	e	e	CCONJ	<co-postnom>|KC|@CO	_	30	cc	_	_
+31	e	e	CCONJ	<co-postnom>|KC|@CO	_	35	cc	_	d2d:#106
 32	de	de	ADP	<cjt>|<first-cjt>|<sam->|PRP|@N<	_	35	case	_	_
 33	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	35	det	_	_
 34	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	35	det	_	_
@@ -169,6 +178,9 @@
 # source CETEMPúblico n=237 sec=pol sem=96a
 # sent_id CP237-5
 # id 1261
+# d2d: cc(Alain,ou) -> cc(Marcelo,ou)  #106
+# d2d: punct(Alain,,) -> punct(Susan,,)  #106
+# d2d: punct(Alain,,) -> punct(Edgar,,)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	responder	responder	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	advcl	_	_
 3	a	a	ADP	<sam->|PRP|@<PIV	_	5	case	_	_
@@ -191,13 +203,13 @@
 20	como	como	ADP	<com>|PRP|@N<	_	21	case	_	_
 21	Alain	Alain	PROPN	_	Gender=Masc|Number=Sing	19	nmod	_	ChangedBy=Issue119|MWE=Alain_Finkielkraut|MWEPOS=PROPN
 22	Finkielkraut	Finkielkraut	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
-23	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
 24	Edgar	Edgar	PROPN	_	Gender=Masc|Number=Sing	21	conj	_	ChangedBy=Issue119|MWE=Edgar_Morin|MWEPOS=PROPN
 25	Morin	Morin	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
-26	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 27	Susan	Susan	PROPN	_	Gender=Fem|Number=Sing	21	conj	_	ChangedBy=Issue119|MWE=Susan_Sontag|MWEPOS=PROPN
 28	Sontag	Sontag	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
-29	ou	ou	CCONJ	KC|@CO	_	21	cc	_	_
+29	ou	ou	CCONJ	KC|@CO	_	30	cc	_	d2d:#106
 30	Marcelo	Marcelo	PROPN	_	Gender=Masc|Number=Sing	21	conj	_	ChangedBy=Issue119|MWE=Marcelo_Rebelo|MWEPOS=PROPN
 31	Rebelo	Rebelo	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
@@ -209,12 +221,16 @@
 # source CETEMPúblico n=237 sec=pol sem=96a
 # sent_id CP237-6
 # id 1262
+# d2d: punct(falarão,,) -> punct(abordará,,)  #106
+# d2d: cc(falarão,e) -> cc(abordará,e)  #106
+# d2d: cc(André,e) -> cc(Victor,e)  #106
+# d2d: punct(André,,) -> punct(Peter,,)  #106
 1	André	André	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	ChangedBy=Issue119|MWE=André_Glucksman|MWEPOS=PROPN
 2	Glucksman	Glucksman	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
-3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	d2d:#106
 4	Peter	Peter	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Peter_Schneider|MWEPOS=PROPN
 5	Schneider	Schneider	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
-6	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+6	e	e	CCONJ	<co-subj>|KC|@CO	_	7	cc	_	d2d:#106
 7	Victor	Victor	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Victor_Cunha_Rego|MWEPOS=PROPN
 8	Cunha	Cunha	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	Rego	Rego	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
@@ -222,8 +238,8 @@
 11	de	de	ADP	<first-cjt>|PRP|@<PIV	_	12	case	_	_
 12	cultura	cultura	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
 13	europeia	europeu	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	_
-14	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	americano	americano	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
 18	Simon	Simon	PROPN	_	Gender=Masc|Number=Sing	17	appos	_	ChangedBy=Issue119|MWE=Simon_Shama|MWEPOS=PROPN

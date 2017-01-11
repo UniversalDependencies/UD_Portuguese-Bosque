@@ -3,6 +3,9 @@
 # source CETENFolha n=3 cad=Esporte sec=des sem=94b
 # sent_id CF3-1
 # id 16
+# d2d: cc(frigobar,e) -> cc(telefone,e)  #106
+# d2d: punct(frigobar,,) -> punct(televisão,,)  #106
+# d2d: punct(frigobar,,) -> punct(televisão,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	jogadores	jogador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	expl	_	ChangedBy=Issue135
@@ -18,12 +21,12 @@
 13	equipados	equipar	VERB	<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	8	acl	_	_
 14	com	com	ADP	PRP|@<PIV	_	15	case	_	_
 15	frigobar	frigobar	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 17	ar	ar	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	MWE=ar_condicionado
 18	condicionado	condicionado	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	_
-19	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	televisão	televisão	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
-21	e	e	CCONJ	<co-prparg>|KC|@CO	_	15	cc	_	_
+21	e	e	CCONJ	<co-prparg>|KC|@CO	_	22	cc	_	d2d:#106
 22	telefone	telefone	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	conj	_	_
 23	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -60,12 +63,13 @@
 # source CETENFolha n=3 cad=Esporte sec=des sem=94b
 # sent_id CF3-3
 # id 18
+# d2d: cc(Maurício,e) -> cc(Paulão,e)  #106
 1	Além	além	ADV	ADV|@ADVL>	_	12	advmod	_	MWE=Além_de
 2	de	de	ADP	PRP|@A<	_	3	case	_	_
 3	Maurício	Maurício	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5	Carlão	Carlão	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	conj	_	ChangedBy=Issue149
-6	e	e	CCONJ	<co-prparg>|KC|@CO	_	3	cc	_	_
+6	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	d2d:#106
 7	Paulão	Paulão	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	conj	_	ChangedBy=Issue149
 8	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_

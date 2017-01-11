@@ -3,6 +3,9 @@
 # source CETEMPúblico n=698 sec=pol sem=92a &L
 # sent_id CP698-1
 # id 3605
+# d2d: punct(telefones,,) -> punct(faxes,,)  #106
+# d2d: punct(telefones,,) -> punct(aparelhos,,)  #106
+# d2d: cc(telefones,e) -> cc(máquinas,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	responsáveis	responsável	ADJ	<n>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	21	nsubj	_	_
 3	por	por	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -34,15 +37,15 @@
 29	630	630	NUM	<card>|NUM|M|P|@>N	_	30	nummod	_	_
 30	telefones	telefone	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	21	obj	_	_
 31	directos	directo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	30	amod	_	_
-32	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+32	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
 33	25	25	NUM	<card>|NUM|M|P|@>N	_	34	nummod	_	_
 34	faxes	faxes	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	30	conj	_	_
-35	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
 36	cinco	cinco	NUM	<card>|NUM|M|P|@>N	_	37	nummod	_	_
 37	aparelhos	aparelho	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	30	conj	_	_
 38	de	de	ADP	PRP|@N<	_	39	case	_	_
 39	telex	telex	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	37	nmod	_	_
-40	e	e	CCONJ	<co-acc>|KC|@CO	_	30	cc	_	_
+40	e	e	CCONJ	<co-acc>|KC|@CO	_	42	cc	_	d2d:#106
 41	350	350	NUM	<card>|NUM|F|P|@>N	_	42	nummod	_	_
 42	máquinas	máquinas	NOUN	_	Gender=Fem|Number=Plur	30	conj	_	MWE=máquinas_de_escrever|MWEPOS=NOUN
 43	de	de	ADP	_	_	42	compound	_	_
@@ -67,6 +70,7 @@
 # source CETEMPúblico n=698 sec=pol sem=92a
 # sent_id CP698-2
 # id 3606
+# d2d: cc(jornalistas,e) -> cc(telefones,e)  #106
 1	À	à	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	23	nmod	_	MWE=À_primeira_vista
 2	primeira	primeira	ADP	PRP|@N<	_	3	case	_	_
 3	vista	vista	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
@@ -78,7 +82,7 @@
 9	--	--	PUNCT	PU|@PU	_	11	punct	_	_
 10	de	de	ADP	<first-cjt>|PRP|@N<PRED	_	11	case	_	_
 11	jornalistas	jornalista	NOUN	<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	8	nmod	_	_
-12	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	14	cc	_	d2d:#106
 13	de	de	ADP	<cjt>|PRP|@N<PRED	_	14	case	_	_
 14	telefones	telefone	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	conj	_	ChangedBy=Issue149
 15	,	,	PUNCT	PU|@PU	_	6	punct	_	_

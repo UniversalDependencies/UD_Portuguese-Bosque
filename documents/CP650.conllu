@@ -26,6 +26,7 @@
 # source CETEMPúblico n=650 sec=eco sem=94b
 # sent_id CP650-3
 # id 3388
+# d2d: cc(manter,e) -> cc(manter,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Estados	Estados	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	MWE=Estados_Unidos
 3	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	2	flat:name	_	_
@@ -49,7 +50,7 @@
 21	inflação	inflação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
 22	sob	sob	ADP	PRP|@<OC	_	23	case	_	_
 23	controlo	controlo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	xcomp	_	_
-24	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	19	cc	_	_
+24	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	25	cc	_	d2d:#106
 25	manter	manter	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	conj	_	_
 26	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	ritmo	ritmo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	25	obj	_	_
@@ -176,6 +177,9 @@
 # source CETEMPúblico n=650 sec=eco sem=94b
 # sent_id CP650-6
 # id 3391
+# d2d: cc(aumento,e) -> cc(quedas,e)  #106
+# d2d: cc(teve,mas) -> cc(receia,mas)  #106
+# d2d: punct(teve,,) -> punct(receia,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	OCDE	OCDE	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	considera	considerar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -192,8 +196,8 @@
 14	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 15	bom	bom	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	16	amod	_	_
 16	desempenho	desempenho	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	obj	_	_
-17	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-18	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	_
+17	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
+18	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	19	cc	_	d2d:#106
 19	receia	recear	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
 20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	aumento	aumento	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	19	obj	_	_
@@ -201,7 +205,7 @@
 23	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
 24	tensões	tensão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	21	nmod	_	_
 25	inflacionistas	inflacionista	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	24	amod	_	_
-26	e	e	CCONJ	<co-acc>|KC|@CO	_	21	cc	_	_
+26	e	e	CCONJ	<co-acc>|KC|@CO	_	28	cc	_	d2d:#106
 27	novas	novo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	28	amod	_	_
 28	quedas	queda	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	21	conj	_	_
 29	de	de	ADP	<sam->|PRP|@N<	_	31	case	_	_

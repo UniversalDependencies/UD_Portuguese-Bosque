@@ -33,6 +33,8 @@
 # source CETEMPúblico n=311 sec=soc sem=91b
 # sent_id CP311-2
 # id 1640
+# d2d: punct(onde,,) -> punct(como,,)  #106
+# d2d: cc(onde,e) -> cc(quem,e)  #106
 1	Quanto	quanto	ADV	ADV|@ADVL>	_	27	advmod	_	MWE=Quanto_a
 2	a	a	ADP	PRP|@A<	_	6	case	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
@@ -62,9 +64,9 @@
 27	sabe	saber	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 28	»	»	PUNCT	PU|@PU	_	27	punct	_	_
 29	onde	onde	ADV	<first-cjt>|<interr>|ADV|@ADVL>	_	36	advmod	_	_
-30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+30	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 31	como	como	ADV	<cjt>|<interr>|ADV|@ADVL>	_	29	conj	_	_
-32	e	e	CCONJ	KC|@CO	_	29	cc	_	_
+32	e	e	CCONJ	KC|@CO	_	34	cc	_	d2d:#106
 33	por	por	ADP	<cjt>|PRP|@ADVL>	_	34	case	_	_
 34	quem	quem	PRON	<interr>|INDP|M/F|S/P|@P<	Gender=Unsp|Number=Unsp|PronType=Int	29	conj	_	_
 35	foram	ser	AUX	<aux>|V|PS|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	36	aux:pass	_	_

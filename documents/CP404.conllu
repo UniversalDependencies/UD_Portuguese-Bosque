@@ -215,6 +215,8 @@
 # source CETEMPúblico n=404 sec=nd sem=92a
 # sent_id CP404-6
 # id 2106
+# d2d: cc(Bee,e) -> cc(Tina,e)  #106
+# d2d: punct(Bee,,) -> punct(Queen,,)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	colectâneas	colectânea	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	15	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -223,9 +225,9 @@
 6	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
 7	Bee	Bee	PROPN	_	Gender=Masc|Number=Plur	4	nmod	_	ChangedBy=Issue119|MWE=Bee_Gees|MWEPOS=PROPN
 8	Gees	Gees	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
-9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	Queen	Queen	PROPN	<cjt>|PROP|M|P|@P<	Gender=Masc|Number=Plur	7	conj	_	_
-11	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	_
+11	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 12	Tina	Tina	PROPN	_	Gender=Fem|Number=Sing	7	conj	_	ChangedBy=Issue119|MWE=Tina_Turner|MWEPOS=PROPN
 13	Turner	Turner	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	também	também	ADV	ADV|@ADVL>	_	15	advmod	_	_
@@ -272,6 +274,8 @@
 # source CETEMPúblico n=404 sec=nd sem=92a
 # sent_id CP404-8
 # id 2108
+# d2d: cc(disco,mas) -> cc(consta,mas)  #106
+# d2d: punct(disco,,) -> punct(consta,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	álbum	álbum	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -285,8 +289,8 @@
 11	disco	disco	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	platina	platina	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
-14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-15	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+15	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 16	ainda	ainda	ADV	ADV|@>A	_	17	advmod	_	_
 17	não	não	ADV	_	Polarity=Neg	18	advmod	_	_
 18	consta	constar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_

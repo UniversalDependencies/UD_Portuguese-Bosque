@@ -51,6 +51,9 @@
 # source CETEMPúblico n=770 sec=des sem=91b &W
 # sent_id CP770-2
 # id 3949
+# d2d: cc(Pinto,e) -> cc(Octávio,e)  #106
+# d2d: cc(impávido,e) -> cc(sereno,e)  #106
+# d2d: cc(cabeçada,e) -> cc(murro,e)  #106
 1	Assim	assim	ADV	<kc>|ADV|@ADVL>	_	41	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	em	em	ADP	<sam->|<first-cjt>|PRP|@PRED>	_	7	case	_	_
@@ -97,7 +100,7 @@
 44	a	a	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	46	case	_	_
 45	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
 46	cabeçada	cabeçada	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	43	obl	_	ChangedBy=Issue137
-47	e	e	CCONJ	<co-advl>|KC|@CO	_	46	cc	_	_
+47	e	e	CCONJ	<co-advl>|KC|@CO	_	49	cc	_	d2d:#106
 48	a	a	ADP	<cjt>|PRP|@<ADVL	_	49	case	_	_
 49	murro	murro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	46	conj	_	_
 50	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	52	det	_	_
@@ -118,7 +121,7 @@
 65	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	71	nsubj	_	_
 66	,	,	PUNCT	PU|@PU	_	54	punct	_	_
 67	impávido	impávido	ADJ	<first-cjt>|ADJ|M|S|@PRED>	Gender=Masc|Number=Sing	71	amod	_	_
-68	e	e	CCONJ	<co-pred>|KC|@CO	_	67	cc	_	_
+68	e	e	CCONJ	<co-pred>|KC|@CO	_	69	cc	_	d2d:#106
 69	sereno	sereno	ADJ	<cjt>|ADJ|M|S|@PRED>	Gender=Masc|Number=Sing	67	conj	_	_
 70	,	,	PUNCT	PU|@PU	_	71	punct	_	_
 71	comandou	comandar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	63	acl:relcl	_	_
@@ -140,7 +143,7 @@
 87	de	de	ADP	<sam->|PRP|@N<	_	89	case	_	_
 88	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	89	det	_	_
 89	Costa	Costa	PROPN	PROP|@P<	Number=Sing	86	nmod	_	_
-90	e	e	CCONJ	<co-subj>|KC|@CO	_	86	cc	_	_
+90	e	e	CCONJ	<co-subj>|KC|@CO	_	91	cc	_	d2d:#106
 91	Octávio	Octávio	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	86	conj	_	ChangedBy=Issue149
 92	mostravam	mostrar	VERB	<mv>|V|IMPF|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	81	acl:relcl	_	_
 93	estar	estar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	92	xcomp	_	_
@@ -158,6 +161,10 @@
 # source CETEMPúblico n=770 sec=des sem=91b
 # sent_id CP770-3
 # id 3950
+# d2d: cc(afastou-,e) -> cc(aparecer,e)  #106
+# d2d: punct(afastou-,,) -> punct(aparecer,,)  #106
+# d2d: cc(Gomes,e) -> cc(Madjer,e)  #106
+# d2d: cc(contratado,e) -> cc(propôs,e)  #106
 1	Quando	quando	ADV	<ks>|<rel>|ADV|@ADVL>	_	4	advmod	_	_
 2	Quinito	Quinito	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
 3	foi	ser	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
@@ -166,7 +173,7 @@
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	FC	FC	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	ChangedBy=Issue119|MWE=FC_Porto|MWEPOS=PROPN
 8	Porto	Porto	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
-9	e	e	CCONJ	<co-advl>|<co-vfin>|KC|@CO	_	4	cc	_	_
+9	e	e	CCONJ	<co-advl>|<co-vfin>|KC|@CO	_	11	cc	_	d2d:#106
 10	se	se	PRON	PERS|M|3S|ACC|@DAT>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	iobj	_	_
 11	propôs	propor	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
 12	recuperar	recuperar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	11	xcomp	_	_
@@ -175,7 +182,7 @@
 15	outros	outro	PRON	<diff>|<KOMP>|<np-idf>|DET|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
 16	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 17	Gomes	Gomes	PROPN	<first-cjt>|PROP|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
-18	e	e	CCONJ	<co-acc>|KC|@CO	_	17	cc	_	_
+18	e	e	CCONJ	<co-acc>|KC|@CO	_	19	cc	_	d2d:#106
 19	Madjer	Madjer	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	17	conj	_	ChangedBy=Issue149
 20	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
@@ -184,8 +191,8 @@
 24	Palmela	Palmela	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	22	nmod	_	_
 25	afastou-	afastar	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 26	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	expl	_	ChangedBy=Issue135
-27	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	25	cc	_	_
-28	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+27	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	36	cc	_	d2d:#106
+28	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 29	em	em	ADP	<sam->|PRP|@ADVL>	_	32	case	_	_
 30	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_
 31	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur	32	det	_	_

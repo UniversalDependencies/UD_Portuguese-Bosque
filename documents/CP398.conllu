@@ -15,6 +15,7 @@
 # source CETEMPúblico n=398 sec=clt sem=97a
 # sent_id CP398-2
 # id 2080
+# d2d: cc(transmitir,e) -> cc(resultam,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	peça	peça	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	47	nsubj	_	_
 3	«	«	PUNCT	PU|@PU	_	4	punct	_	_
@@ -52,7 +53,7 @@
 35	futuro	futuro	PROPN	PROP|@N<	Number=Sing	34	flat:name	_	_
 36	?	?	PROPN	PROP|@N<	Number=Sing	34	flat:name	_	_
 37	»	»	PUNCT	PU|@PU	_	34	punct	_	_
-38	e	e	CCONJ	<co-fcl>|<co-postnom>|KC|@CO	_	23	cc	_	_
+38	e	e	CCONJ	<co-fcl>|<co-postnom>|KC|@CO	_	40	cc	_	d2d:#106
 39	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	40	nsubj	_	_
 40	resultam	resultar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_
 41	de	de	ADP	PRP|@<ADVL	_	42	case	_	_
@@ -73,6 +74,8 @@
 # source CETEMPúblico n=398 sec=clt sem=97a
 # sent_id CP398-3
 # id 2081
+# d2d: punct(a,,) -> punct(Antena,,)  #106
+# d2d: cc(Antena,e) -> cc(Rádio,e)  #106
 1	--	--	PUNCT	PU|@PU	_	4	punct	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 3	duas	dois	NUM	<card>|NUM|F|P|@>N	_	4	nummod	_	_
@@ -86,7 +89,7 @@
 11	--	--	PUNCT	PU|@PU	_	12	punct	_	_
 12	Antena	Antena	PROPN	_	Gender=Fem|Number=Sing	4	appos	_	ChangedBy=Issue119|MWE=Antena_1|MWEPOS=PROPN
 13	1	1	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
-14	e	e	CCONJ	<co-app>|KC|@CO	_	12	cc	_	_
+14	e	e	CCONJ	<co-app>|KC|@CO	_	15	cc	_	d2d:#106
 15	Rádio	Rádio	PROPN	_	Gender=Masc|Number=Sing	12	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Rádio_Renascença|MWEPOS=PROPN
 16	Renascença	Renascença	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 17	--	--	PUNCT	PU|@PU	_	12	punct	_	_
@@ -128,7 +131,7 @@
 53	,	,	PUNCT	PU|@PU	_	49	punct	_	_
 54	rádio	rádio	NOUN	<first-cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	51	appos	_	_
 55	privada	privado	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	54	amod	_	_
-56	,	,	PUNCT	PU|@PU	_	51	punct	_	_
+56	,	,	PUNCT	PU|@PU	_	58	punct	_	d2d:#106
 57	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	58	det	_	_
 58	Antena	Antena	PROPN	_	Gender=Fem|Number=Sing	51	conj	_	ChangedBy=Issue119|MWE=Antena_1|MWEPOS=PROPN
 59	1	1	PROPN	_	Number=Sing	58	flat:name	_	ChangedBy=Issue119
@@ -144,13 +147,15 @@
 # source CETEMPúblico n=398 sec=clt sem=97a
 # sent_id CP398-4
 # id 2082
+# d2d: cc(princípio,e) -> cc(fim,e)  #106
+# d2d: punct(princípio,,) -> punct(meio,,)  #106
 1	--	--	PUNCT	PU|@PU	_	3	punct	_	_
 2	tudo	tudo	PRON	<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	3	nsubj	_	_
 3	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	princípio	princípio	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
-5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	meio	meio	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	conj	_	_
-7	e	e	CCONJ	<co-acc>|KC|@CO	_	4	cc	_	_
+7	e	e	CCONJ	<co-acc>|KC|@CO	_	8	cc	_	d2d:#106
 8	fim	fim	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	conj	_	_
 9	;	;	PUNCT	PU|@PU	_	3	punct	_	_
 
@@ -196,6 +201,11 @@
 # source CETEMPúblico n=398 sec=clt sem=97a
 # sent_id CP398-6
 # id 2084
+# d2d: punct(academismo,») -> punct(montagem,»)  #106
+# d2d: punct(academismo,,) -> punct(soporífero,,)  #106
+# d2d: punct(afirmações,,) -> punct(referência,,)  #106
+# d2d: punct(academismo,,) -> punct(montagem,,)  #106
+# d2d: cc(afirmações,e) -> cc(referência,e)  #106
 1	de	de	ADP	PRP|@ADVL>	_	4	case	_	_
 2	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	4	det	_	MWE=toda_a
 3	a	o	DET	<artd>|DET|F|S|@A<	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	fixed	_	_
@@ -223,8 +233,8 @@
 25	de	de	ADP	PRP|@N<	_	27	case	_	_
 26	«	«	PUNCT	PU|@PU	_	27	punct	_	_
 27	academismo	academismo	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
-28	»	»	PUNCT	PU|@PU	_	27	punct	_	_
-29	,	,	PUNCT	PU|@PU	_	27	punct	_	_
+28	»	»	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
+29	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 30	«	«	PUNCT	PU|@PU	_	31	punct	_	_
 31	montagem	montagem	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	conj	_	_
 32	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	33	nsubj	_	_
@@ -233,12 +243,12 @@
 35	a	a	ADP	PRP|@<ADVL	_	40	case	_	_
 36	desejar	desejar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	dep	_	_
 37	»	»	PUNCT	PU|@PU	_	31	punct	_	_
-38	,	,	PUNCT	PU|@PU	_	27	punct	_	_
+38	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 39	«	«	PUNCT	PU|@PU	_	40	punct	_	_
 40	soporífero	soporífero	ADJ	<cjt>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	27	conj	_	_
 41	»	»	PUNCT	PU|@PU	_	40	punct	_	_
-42	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-43	e	e	CCONJ	<co-acc>|KC|@CO	_	24	cc	_	_
+42	,	,	PUNCT	PU|@PU	_	45	punct	_	d2d:#106
+43	e	e	CCONJ	<co-acc>|KC|@CO	_	45	cc	_	d2d:#106
 44	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
 45	referência	referência	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	conj	_	_
 46	a	a	ADP	<sam->|PRP|@N<	_	49	case	_	_

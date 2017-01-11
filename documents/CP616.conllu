@@ -54,6 +54,13 @@
 # source CETEMPúblico n=616 sec=eco sem=95a
 # sent_id CP616-2
 # id 3217
+# d2d: cc(apresentar,e) -> cc(apresentarem,e)  #106
+# d2d: punct(empresas,,) -> punct(comércio,,)  #106
+# d2d: punct(apresentar,-) -> punct(apresentarem,-)  #106
+# d2d: cc(cinco,e) -> cc(os,e)  #106
+# d2d: cc(empresas,e) -> cc(serviços,e)  #106
+# d2d: punct(industriais,,) -> punct(construção,,)  #106
+# d2d: cc(empresas,e) -> cc(exportadoras,e)  #106
 1	Analisando	analisar	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	7	advcl	_	_
 2	estes	este	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	_
 3	dados	dado	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	1	obj	_	_
@@ -76,16 +83,16 @@
 20	(	(	PUNCT	PU|@PU	_	21	punct	_	_
 21	empresas	empresa	NOUN	<first-cjt>|<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	19	appos	_	_
 22	industriais	industrial	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	21	amod	_	_
-23	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 24	de	de	ADP	<cjt>|PRP|@N<	_	25	case	_	_
 25	construção	construção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	conj	_	_
-26	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 27	comércio	comércio	NOUN	<cjt>|<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	21	conj	_	_
-28	e	e	CCONJ	<co-app>|KC|@CO	_	21	cc	_	_
+28	e	e	CCONJ	<co-app>|KC|@CO	_	29	cc	_	d2d:#106
 29	serviços	serviço	NOUN	<cjt>|<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	21	conj	_	_
 30	,	,	PUNCT	PU|@PU	_	37	punct	_	_
 31	exportadoras	exportadora	ADJ	<cjt>|ADJ|F|P|@APP	Gender=Fem|Number=Plur	21	conj	_	_
-32	e	e	CCONJ	<co-app>|KC|@CO	_	21	cc	_	_
+32	e	e	CCONJ	<co-app>|KC|@CO	_	34	cc	_	d2d:#106
 33	não	não	ADV	_	Polarity=Neg	34	advmod	_	_
 34	exportadoras	exportadora	ADJ	<cjt>|ADJ|F|P|@APP	Gender=Fem|Number=Plur	21	conj	_	_
 35	)	)	PUNCT	PU|@PU	_	21	punct	_	_
@@ -128,12 +135,12 @@
 72	relação	relação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	70	obj	_	_
 73	encargos	encargo	NOUN	<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	72	nmod:npmod	_	_
 74	financeiros	financeiros	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	72	amod	_	_
-75	-	-	PUNCT	PU|@PU	_	70	punct	_	_
+75	-	-	PUNCT	PU|@PU	_	100	punct	_	d2d:#106
 76	vendas	venda	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	72	appos	_	_
 77	entre	entre	ADP	PRP|@N<	_	83	case	_	_
 78	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	83	det	_	_
 79	cinco	cinco	NUM	<first-cjt>|<card>|NUM|M|P|@>N	_	83	nummod	_	_
-80	e	e	CCONJ	<co-prenom>|KC|@CO	_	79	cc	_	_
+80	e	e	CCONJ	<co-prenom>|KC|@CO	_	81	cc	_	d2d:#106
 81	os	o	DET	<cjt>|<artd>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	79	conj	_	_
 82	dez	dez	NUM	<card>|NUM|M|P|@>N	_	83	nummod	_	_
 83	por	por	ADP	_	Gender=Masc|Number=Sing	76	nmod	_	MWE=por_cento|MWEPOS=NOUN
@@ -149,7 +156,7 @@
 93	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	94	det	_	_
 94	industriais	industrial	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	91	nmod	_	_
 95	)	)	PUNCT	PU|@PU	_	87	punct	_	_
-96	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	70	cc	_	_
+96	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	100	cc	_	d2d:#106
 97	18	18	NUM	<card>|NUM|M|P|@>N	_	98	nummod	_	_
 98	por	por	ADP	_	Gender=Masc|Number=Sing	100	nsubj	_	MWE=por_cento|MWEPOS=NOUN
 99	cento	cento	NUM	_	Gender=Masc|Number=Sing	98	compound	_	_

@@ -3,6 +3,8 @@
 # source CETENFolha n=382 cad=Brasil sec=pol sem=94a
 # sent_id CF382-1
 # id 1586
+# d2d: cc(passado,e) -> cc(feito,e)  #106
+# d2d: punct(passado,,) -> punct(feito,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tucano	tucano	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	tem	ter	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
@@ -16,8 +18,8 @@
 11	em	em	ADP	PRP|@<ADVL	_	13	case	_	_
 12	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing	13	det	_	_
 13	quarto	quarto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
-14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
-15	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	26	cc	_	d2d:#106
+15	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 16	a	a	ADP	<sam->|PRP|@N<	_	18	case	_	_
 17	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	contrário	contrário	NOUN	N|@P<	_	26	nmod	_	_
@@ -96,11 +98,13 @@
 # source CETENFolha n=382 cad=Brasil sec=pol sem=94a
 # sent_id CF382-5
 # id 1590
+# d2d: punct(boa,,) -> punct(pouca,,)  #106
+# d2d: cc(boa,mas) -> cc(pouca,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 2	É	ser	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	boa	bom	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
-4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-5	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+4	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
+5	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	d2d:#106
 6	é	ser	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
 7	pouca	pouco	PRON	<quant>|DET|F|S|@<SC	Gender=Fem|Number=Sing	3	conj	_	_
 8	»	»	PUNCT	PU|@PU	_	3	punct	_	_

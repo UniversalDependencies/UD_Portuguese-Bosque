@@ -66,6 +66,8 @@
 # source CETEMPúblico n=748 sec=eco sem=91b
 # sent_id CP748-2
 # id 3840
+# d2d: punct(Banco,,) -> punct(sociedade,,)  #106
+# d2d: cc(Banco,e) -> cc(Banco,e)  #106
 1	De	de	ADP	PRP|@ADVL>	_	2	case	_	MWE=De_acordo
 2	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
 3	com	com	ADP	PRP|@P<	_	5	case	_	_
@@ -81,14 +83,14 @@
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
 15	Açores	Açores	PROPN	PROP|@P<	Number=Sing	11	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	sociedade	sociedade	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	conj	_	_
 19	Espírito	Espírito	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	18	appos	_	MWE=Espírito_Santo-sociedade
 20	Santo-sociedade	Santo-sociedade	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
 22	investimentos	investimentos	PROPN	PROP|@P<	Number=Sing	19	nmod	_	_
-23	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	_
+23	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	d2d:#106
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	Banco	Banco	PROPN	_	Gender=Masc|Number=Sing	11	conj	_	ChangedBy=Issue119|MWE=Banco_Pinto_&_Sotto_Mayor|MWEPOS=PROPN
 26	Pinto	Pinto	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
@@ -175,6 +177,11 @@
 # source CETEMPúblico n=748 sec=eco sem=91b &W
 # sent_id CP748-5
 # id 3843
+# d2d: punct(distribuidos,,) -> punct(realiazação,,)  #106
+# d2d: punct(agro-pecuária,,) -> punct(cimentos,,)  #106
+# d2d: cc(distribuidos,e) -> cc(realiazação,e)  #106
+# d2d: punct(agro-pecuária,,) -> punct(basaltos,,)  #106
+# d2d: punct(agro-pecuária,,) -> punct(basaltos,,)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	João	João	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue119|MWE=João_Bernardo_Rodrigues|MWEPOS=PROPN
 3	Bernardo	Bernardo	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -203,21 +210,21 @@
 26	»	»	PUNCT	PU|@PU	_	19	punct	_	_
 27	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 28	distribuidos	distribuir	VERB	<first-cjt>|<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	23	acl	_	_
-29	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+29	,	,	PUNCT	PU|@PU	_	46	punct	_	d2d:#106
 30	entre	entre	ADP	PRP|@<ADVL	_	31	case	_	_
 31	outros	outro	PRON	<diff>|<KOMP>|DET|M|P|@P<	Gender=Masc|Number=Plur	28	nmod	_	_
 32	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 33	por	por	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	35	case	_	_
 34	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
 35	agro-pecuária	agro-pecuária	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	_
-36	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+36	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 37	construção	construção	NOUN	_	Gender=Masc|Number=Sing	35	nmod	_	MWE=construção_civil|MWEPOS=NOUN
 38	civil	civil	ADJ	_	Gender=Masc|Number=Sing	37	compound	_	_
-39	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+39	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 40	basaltos	basalto	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	35	conj	_	_
-41	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+41	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
 42	cimentos	cimento	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	35	conj	_	_
-43	e	e	CCONJ	<co-icl>|<co-pred>|KC|@CO	_	28	cc	_	_
+43	e	e	CCONJ	<co-icl>|<co-pred>|KC|@CO	_	46	cc	_	d2d:#106
 44	para	para	ADP	<cjt>|PRP|@ICL-N<PRED	_	46	case	_	_
 45	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
 46	realiazação	realização	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	conj	_	_

@@ -3,6 +3,8 @@
 # source CETEMPúblico n=224 sec=soc sem=92b
 # sent_id CP224-1
 # id 1207
+# d2d: cc(inaugurada,e) -> cc(localizada,e)  #106
+# d2d: cc(armas,e) -> cc(rosto,e)  #106
 1	Seriam	ser	VERB	<mv>|V|COND|3P|@FS-STA	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	2	cop	_	_
 2	9h30	9h30	NOUN	<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
 3	quando	quando	ADV	<rel>|ADV|@ADVL>	_	16	advmod	_	_
@@ -24,7 +26,7 @@
 19	em	em	ADP	<sam->|PRP|@N<	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	21	det	_	_
 21	mão	mão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
-22	e	e	CCONJ	<co-prparg>|KC|@CO	_	18	cc	_	_
+22	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	d2d:#106
 23	rosto	rosto	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	conj	_	_
 24	coberto	cobrir	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	23	acl	_	_
 25	a	a	ADP	<sam->|PRP|@<ADVL	_	27	case	_	_
@@ -40,7 +42,7 @@
 35	dependência	dependência	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	30	appos	_	_
 36	recentemente	recentemente	ADV	ADV|@ADVL>	_	37	advmod	_	_
 37	inaugurada	inaugurar	VERB	<first-cjt>|<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	35	acl	_	_
-38	e	e	CCONJ	<co-icl>|<co-postnom>|KC|@CO	_	37	cc	_	_
+38	e	e	CCONJ	<co-icl>|<co-postnom>|KC|@CO	_	39	cc	_	d2d:#106
 39	localizada	localizar	VERB	<cjt>|<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	37	conj	_	_
 40	em	em	ADP	<sam->|PRP|@<ADVL	_	42	mark	_	_
 41	a	o	DET	<artd>|<-sam>|ART|@>N	Definite=Def|PronType=Art	43	det	_	_
@@ -118,6 +120,10 @@
 # source CETEMPúblico n=224 sec=soc sem=92b
 # sent_id CP224-3
 # id 1209
+# d2d: punct(fugiram,,) -> punct(tomaram,,)  #106
+# d2d: cc(fugiram,e) -> cc(tomaram,e)  #106
+# d2d: punct(fugiram,,) -> punct(tomaram,,)  #106
+# d2d: punct(fugiram,,) -> punct(tomaram,,)  #106
 1	Após	após	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	verificarem	verificar	VERB	<mv>|<cjt>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	13	advcl	_	_
 3	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
@@ -138,11 +144,11 @@
 18	automóvel	automóvel	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue137
 19	Citröen	Citröen	PROPN	_	Gender=Masc|Number=Sing	18	appos	_	ChangedBy=Issue119|MWE=Citröen_AX|MWEPOS=PROPN
 20	AX	AX	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
-21	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 22	de	de	ADP	PRP|@N<PRED	_	23	case	_	_
 23	cor	cor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
 24	branca	branco	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
-25	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 26	cujas	cujo	DET	<rel>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Rel	27	det	_	_
 27	letras	letra	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	32	nsubj	_	_
 28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
@@ -150,8 +156,8 @@
 30	matrícula	matrícula	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
 31	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	cop	_	_
 32	AJ	AJ	PROPN	PROP|F|S|@<SC	Gender=Fem|Number=Sing	18	acl:relcl	_	_
-33	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-34	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	_
+33	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
+34	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	35	cc	_	d2d:#106
 35	tomaram	tomar	VERB	<cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	13	conj	_	_
 36	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 37	estrada	estrada	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	35	obj	_	_

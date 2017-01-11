@@ -54,6 +54,7 @@
 # source CETEMPúblico n=494 sec=eco sem=94a
 # sent_id CP494-2
 # id 2592
+# d2d: cc(primeiro-ministro,e) -> cc(ministro,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	advertência	advertência	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj:pass	_	_
 3	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
@@ -85,7 +86,7 @@
 29	primeiro-ministro	primeiro-ministro	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
 30	Morihiro	Morihiro	PROPN	_	Gender=Masc|Number=Sing	29	appos	_	ChangedBy=Issue119|MWE=Morihiro_Hosokawa|MWEPOS=PROPN
 31	Hosokawa	Hosokawa	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
-32	e	e	CCONJ	<co-prparg>|KC|@CO	_	29	cc	_	_
+32	e	e	CCONJ	<co-prparg>|KC|@CO	_	34	cc	_	d2d:#106
 33	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	ministro	ministro	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	29	conj	_	MWE=ministro_das_Finanças
 35	de	de	ADP	<sam->|PRP|@N<	_	37	case	_	_
@@ -112,6 +113,10 @@
 # source CETEMPúblico n=494 sec=eco sem=94a
 # sent_id CP494-4
 # id 2594
+# d2d: punct(ano,,) -> punct(ritmo,,)  #106
+# d2d: punct(afluir,,) -> punct(reforçar,,)  #106
+# d2d: cc(afluir,e) -> cc(reforçar,e)  #106
+# d2d: cc(ano,mas) -> cc(ritmo,mas)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	investimentos	investimento	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
 3	estrangeiros	estrangeiro	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
@@ -124,8 +129,8 @@
 10	a	a	ADP	<sam->|PRP|@<SA	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	China	China	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
-13	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-14	mas	mas	CCONJ	<co-advl>|KC|@CO	_	9	cc	_	_
+13	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+14	mas	mas	CCONJ	<co-advl>|KC|@CO	_	17	cc	_	d2d:#106
 15	a	a	ADP	<cjt>|PRP|@<ADVL	_	17	case	_	_
 16	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	ritmo	ritmo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	conj	_	_
@@ -136,8 +141,8 @@
 22	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	21	fixed	_	_
 23	em	em	ADP	<first-cjt>|PRP|@KOMP<	_	24	case	_	_
 24	1993	1993	NUM	<year>|<card>|<date>|NUM|M|S|@P<	_	19	nmod	_	_
-25	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-26	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	_
+25	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
+26	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	30	cc	_	d2d:#106
 27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	30	nsubj	_	_
 29	vai	ir	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux	_	_

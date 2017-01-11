@@ -113,6 +113,7 @@
 # source CETENFolha n=958 cad=Caderno Especial sec=nd sem=94a
 # sent_id CF958-6
 # id 4052
+# d2d: cc(claras,e) -> cc(definidas,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	governo	governo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
 3	como	como	ADP	<com>|PRP|@N<	_	5	case	_	_
@@ -125,7 +126,7 @@
 10	ter	ter	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	9	xcomp	_	_
 11	metas	meta	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
 12	claras	claro	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	11	amod	_	_
-13	e	e	CCONJ	<co-postnom>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	d2d:#106
 14	definidas	definir	VERB	<cjt>|V|PCP|F|P|@N<	Gender=Fem|Number=Plur|VerbForm=Part	12	conj	_	_
 15	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 16	»	»	PUNCT	PU|@PU	_	9	punct	_	_
@@ -166,6 +167,7 @@
 # source CETENFolha n=958 cad=Caderno Especial sec=nd sem=94a
 # sent_id CF958-9
 # id 4055
+# d2d: cc(evangélicos,e) -> cc(ponto,e)  #106
 1	Mesmo	mesmo	ADV	<quant>|ADV|@>A	_	2	advmod	_	_
 2	criticado	criticar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	5	dep	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -179,7 +181,7 @@
 11	de	de	ADP	PRP|@N<	_	13	case	_	_
 12	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	evangélicos	evangélico	ADJ	<first-cjt>|<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
-14	e	e	CCONJ	<co-advl>|KC|@CO	_	13	cc	_	_
+14	e	e	CCONJ	<co-advl>|KC|@CO	_	17	cc	_	d2d:#106
 15	de	de	ADP	<cjt>|PRP|@<ADVL	_	17	case	_	_
 16	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing	17	det	_	_
 17	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	MWE=ponto_de_vista|MWEPOS=NOUN
@@ -228,17 +230,20 @@
 # source CETENFolha n=958 cad=Caderno Especial sec=nd sem=94a
 # sent_id CF958-12
 # id 4058
+# d2d: punct(fala,,) -> punct(mostra,,)  #106
+# d2d: cc(fala,mas) -> cc(mostra,mas)  #106
+# d2d: cc(idéias,e) -> cc(programa,e)  #106
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	fala	falar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	4	mark	_	_
 4	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
 5	idéias	idéia	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
-6	e	e	CCONJ	<co-acc>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	d2d:#106
 7	não	não	ADV	ADV|@>N	_	9	neg	_	_
 8	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	programa	programa	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	conj	_	_
-10	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-11	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	2	cc	_	_
+10	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+11	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 12	muitas	muitas	ADP	PRP|@ADVL>	_	13	case	_	MWE=muitas_vezes
 13	vezes	vezes	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	_
 14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
@@ -278,12 +283,14 @@
 # source CETENFolha n=958 cad=Caderno Especial sec=nd sem=94a
 # sent_id CF958-14
 # id 4060
+# d2d: cc(profundas,e) -> cc(melhores,e)  #106
+# d2d: punct(direto,,) -> punct(atacante,,)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 2	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
 3	foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	5	advmod	_	_
 5	direto	direto	ADJ	<first-cjt>|<COMP>|ADJ|M|S|@SC>	Gender=Masc|Number=Sing	10	xcomp	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 7	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	8	advmod	_	_
 8	atacante	atacante	NOUN	<cjt>|<np-idf>|N|M|S|@SC>	Gender=Masc|Number=Sing	5	conj	_	_
 9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -291,7 +298,7 @@
 11	respostas	resposta	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
 12	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	13	advmod	_	_
 13	profundas	profundo	ADJ	<first-cjt>|<COMP>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	11	amod	_	_
-14	e	e	CCONJ	KC|@CO	_	13	cc	_	_
+14	e	e	CCONJ	KC|@CO	_	15	cc	_	d2d:#106
 15	melhores	bom	ADJ	<cjt>|<KOMP>|<SUP>|<COMP>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	13	conj	_	_
 16	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

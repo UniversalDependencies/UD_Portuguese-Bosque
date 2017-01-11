@@ -3,6 +3,8 @@
 # source CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # sent_id CF796-1
 # id 3343
+# d2d: punct(Philips,,) -> punct(Wapsa,,)  #106
+# d2d: cc(Philips,e) -> cc(NGK,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Kodak	Kodak	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	ainda	ainda	ADV	ADV|@ADVL>	_	6	advmod	_	_
@@ -16,9 +18,9 @@
 11	para	para	ADP	PRP|@N<	_	13	case	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Philips	Philips	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
-14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	Wapsa	Wapsa	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	13	conj	_	_
-16	e	e	CCONJ	<co-prparg>|KC|@CO	_	13	cc	_	_
+16	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	d2d:#106
 17	NGK	NGK	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	13	conj	_	_
 18	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 19	entre	entre	ADP	PRP|@<ADVL	_	21	case	_	_
@@ -31,6 +33,7 @@
 # source CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # sent_id CF796-2
 # id 3344
+# d2d: cc(copiadoras,e) -> cc(equipamentos,e)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	divisão	divisão	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
@@ -47,7 +50,7 @@
 14	administração	administração	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	copiadoras	copiadora	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	14	nmod	_	_
-17	e	e	CCONJ	<co-prparg>|KC|@CO	_	16	cc	_	_
+17	e	e	CCONJ	<co-prparg>|KC|@CO	_	19	cc	_	d2d:#106
 18	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	24	det	_	_
 19	equipamentos	equipamento	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	conj	_	_
 20	de	de	ADP	PRP|@N<	_	21	case	_	_
@@ -75,13 +78,14 @@
 # source CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # sent_id CF796-4
 # id 3346
+# d2d: cc(produtos,e) -> cc(serviços,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Galan	Galan	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
 5	novos	novo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	6	amod	_	_
 6	produtos	produto	NOUN	<first-cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
-7	e	e	CCONJ	KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	KC|@CO	_	8	cc	_	d2d:#106
 8	serviços	serviço	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	conj	_	_
 9	acrescentarão	acrescentar	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 10	10	10	NUM	<card>|NUM|M|P|@>N	_	11	nummod	_	_

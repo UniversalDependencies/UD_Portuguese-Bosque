@@ -63,6 +63,7 @@
 # source CETEMPúblico n=35 sec=pol sem=93b
 # sent_id CP35-3
 # id 205
+# d2d: cc(Israel,e) -> cc(vizinhos,e)  #106
 1	que	que	DET	<interr>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Int	2	det	_	_
 2	tipo	tipo	NOUN	<meta>|<np-idf>|N|M|S|@ACC>	Gender=Masc|Number=Sing	8	obj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -73,7 +74,7 @@
 8	estabelecer	estabelecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 9	entre	entre	ADP	PRP|@<ADVL	_	10	case	_	_
 10	Israel	Israel	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
-11	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	d2d:#106
 12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
 13	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur	14	det	_	_
 14	vizinhos	vizinho	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	conj	_	_
@@ -85,6 +86,8 @@
 # source CETEMPúblico n=35 sec=pol sem=93b
 # sent_id CP35-4
 # id 206
+# d2d: cc(Jordânia,e) -> cc(Israel,e)  #106
+# d2d: punct(Jordânia,,) -> punct(territórios,,)  #106
 1	Será	ser	VERB	<mv>|V|FUT|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	cop	_	_
 2	prematuro	prematuro	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 3	falar	falar	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	2	csubj	_	_
@@ -95,12 +98,12 @@
 8	entre	entre	ADP	PRP|@N<	_	10	case	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Jordânia	Jordânia	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
-11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	territórios	território	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	conj	_	_
 14	palestinianos	palestiniano	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	_
 15	autónomos	autónomo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	_
-16	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	_
+16	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	d2d:#106
 17	Israel	Israel	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	10	conj	_	_
 18	?	?	PUNCT	PU|@PU	_	2	punct	_	_
 
@@ -150,6 +153,8 @@
 # source CETEMPúblico n=35 sec=pol sem=93b
 # sent_id CP35-7
 # id 209
+# d2d: cc(agricultura,e) -> cc(indústria,e)  #106
+# d2d: cc(Ocidente,como) -> cc(Oriente,como)  #106
 1	Fundamental	fundamental	ADJ	ADJ|F|S|@SC>	Gender=Fem|Number=Sing	0	root	_	_
 2	para	para	ADP	PRP|@A<	_	4	case	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -164,7 +169,7 @@
 12	tanto	tanto	ADV	<quant>|ADV|@CO	_	14	cc	_	_
 13	a	a	ADP	<first-cjt>|PRP|@N<	_	14	case	_	_
 14	Ocidente	ocidente	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
-15	como	como	ADV	<co-postnom>|<rel>|ADV|@CO	_	14	cc	_	_
+15	como	como	ADV	<co-postnom>|<rel>|ADV|@CO	_	17	cc	_	d2d:#106
 16	a	a	ADP	<cjt>|PRP|@N<	_	17	case	_	_
 17	Oriente	oriente	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	conj	_	ChangedBy=Issue149
 18	--	--	PUNCT	PU|@PU	_	19	punct	_	_
@@ -186,7 +191,7 @@
 34	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	36	det	_	_
 35	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	36	det	_	_
 36	agricultura	agricultura	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	32	nmod	_	_
-37	e	e	CCONJ	<co-postnom>|KC|@CO	_	36	cc	_	_
+37	e	e	CCONJ	<co-postnom>|KC|@CO	_	40	cc	_	d2d:#106
 38	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	40	det	_	_
 40	indústria	indústria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	36	conj	_	_
@@ -201,6 +206,7 @@
 # source CETEMPúblico n=35 sec=pol sem=93b
 # sent_id CP35-8
 # id 210
+# d2d: cc(milhões,e) -> cc(criação,e)  #106
 1	Outra	outro	PRON	<diff>|DET|F|S|@SC>	Gender=Fem|Number=Sing	0	root	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	4	det	_	_
@@ -217,7 +223,7 @@
 14	visitantes	visitante	NOUN	<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	12	nmod	_	_
 15	por	por	ADP	PRP|@N<	_	16	case	_	_
 16	ano	ano	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
-17	e	e	CCONJ	<co-acc>|KC|@CO	_	12	cc	_	_
+17	e	e	CCONJ	<co-acc>|KC|@CO	_	19	cc	_	d2d:#106
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	criação	criação	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	conj	_	_
 20	de	de	ADP	<first-cjt>|PRP|@N<	_	22	case	_	_

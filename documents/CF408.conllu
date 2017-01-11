@@ -3,19 +3,23 @@
 # source CETENFolha n=408 cad=Esporte sec=des sem=94b
 # sent_id CF408-1
 # id 1695
+# d2d: punct(foram,,) -> punct(encontrado,,)  #106
+# d2d: punct(foram,,) -> punct(encontrado,,)  #106
+# d2d: cc(foram,mas) -> cc(encontrado,mas)  #106
+# d2d: punct(foram,,) -> punct(encontrado,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	policiais	policial	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	foram	ir	VERB	<first-cjt>|<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 4	a	a	ADP	PRP|@<SA	_	6	case	_	_
 5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	casa	casa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 8	indicada	indicar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	_	_
 9	por	por	ADP	PRP|@PASS	_	12	case	_	_
 10	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
 11	duas	dois	NUM	<card>|NUM|F|P|@>N	_	12	nummod	_	_
 12	mulheres	mulher	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	8	obl:agent	_	_
-13	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 14	onde	onde	ADV	<rel>|ADV|@SA>	_	6	advmod	_	_
 15	estariam	estar	VERB	<mv>|V|COND|3P|@FS-N<PRED	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	14	cop	_	_
 16	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	17	det	_	_
@@ -23,8 +27,8 @@
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	quadrilha	quadrilha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
-21	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-22	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+21	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
+22	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	25	cc	_	d2d:#106
 23	nada	nada	PRON	<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	25	nsubj:pass	_	_
 24	foi	ser	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	aux:pass	_	_
 25	encontrado	encontrar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	conj	_	_
@@ -71,6 +75,7 @@
 # source CETENFolha n=408 cad=Esporte sec=des sem=94b
 # sent_id CF408-4
 # id 1698
+# d2d: cc(pequeno,e) -> cc(permaneceu,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	quarto	quarto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	em	em	ADP	PRP|@N<ARG	_	5	mark	_	_
@@ -78,7 +83,7 @@
 5	ficou	ficar	VERB	<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl	_	_
 6	era	ser	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	cop	_	_
 7	pequeno	pequeno	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	d2d:#106
 9	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	10	det	_	_
 10	porta	porta	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
 11	permaneceu	permanecer	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	_	_

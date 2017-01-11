@@ -3,6 +3,10 @@
 # source CETENFolha n=968 cad=Informática sec=com sem=94a
 # sent_id CF968-1
 # id 4093
+# d2d: cc(Xerox,e) -> cc(Pennant,e)  #106
+# d2d: punct(Xerox,,) -> punct(QMS,,)  #106
+# d2d: punct(Xerox,,) -> punct(Digital,,)  #106
+# d2d: punct(Xerox,,) -> punct(Kodak,,)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	6	case	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
 3	mais	mais	ADV	ADV|@>N	_	6	advmod	_	MWE=mais_de
@@ -19,13 +23,13 @@
 14	como	como	ADP	<com>|PRP|@N<	_	16	case	_	_
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	Xerox	Xerox	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	Kodak	Kodak	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	16	conj	_	_
-19	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	QMS	QMS	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	16	conj	_	_
-21	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 22	Digital	Digital	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	16	conj	_	_
-23	e	e	CCONJ	<co-postnom>|<co-subj>|KC|@CO	_	16	cc	_	_
+23	e	e	CCONJ	<co-postnom>|<co-subj>|KC|@CO	_	24	cc	_	d2d:#106
 24	Pennant	Pennant	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	16	conj	_	_
 25	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 26	empresa	empresa	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	24	appos	_	_
@@ -44,6 +48,8 @@
 # source CETENFolha n=968 cad=Informática sec=com sem=94a
 # sent_id CF968-2
 # id 4094
+# d2d: cc(frente,e) -> cc(verso,e)  #106
+# d2d: cc(1.560,e) -> cc(1.565,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Kodak	Kodak	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -55,7 +61,7 @@
 9	impressoras/copiadoras	impressoras/copiadoras	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
 10	ColorEdge	ColorEdge	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	9	appos	_	_
 11	1.560	1.560	NUM	<first-cjt>|<card>|NUM|F|P|@N<	_	9	nummod	_	_
-12	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	d2d:#106
 13	1.565	1.565	NUM	<cjt>|<card>|NUM|F|P|@N<	_	11	conj	_	_
 14	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 15	capazes	capaz	ADJ	ADJ|F|P|@N<PRED	Gender=Fem|Number=Plur	9	amod	_	_
@@ -64,7 +70,7 @@
 18	em	em	ADP	PRP|@<ADVL	_	19	case	_	_
 19	cores	cor	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	17	obl	_	ChangedBy=Issue137
 20	frente	frente	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
-21	e	e	CCONJ	KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	KC|@CO	_	22	cc	_	d2d:#106
 22	verso	verso	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	conj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	documentos	documento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
@@ -78,14 +84,16 @@
 # source CETENFolha n=968 cad=Informática sec=com sem=94a
 # sent_id CF968-3
 # id 4095
+# d2d: punct(brochuras,,) -> punct(folhetos,,)  #106
+# d2d: punct(brochuras,,) -> punct(folhetos,,)  #106
 1	Podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	produzir	produzir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 3	pequenas	pequeno	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	4	amod	_	_
 4	brochuras	brochura	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
-5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 6	mala	mala	NOUN	_	_	4	obj	_	MWE=mala_direta|MWEPOS=NOUN
 7	direta	direta	ADJ	_	_	6	compound	_	_
-8	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	folhetos	folheto	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	conj	_	_
 10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 11	realizando	realizar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	2	advcl	_	_

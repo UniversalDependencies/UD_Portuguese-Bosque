@@ -3,6 +3,8 @@
 # source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a &D
 # sent_id CF260-1
 # id 1095
+# d2d: punct(psicologismos,,) -> punct(literatices,,)  #106
+# d2d: punct(psicologismos,,) -> punct(antropologismos,,)  #106
 1	Metáforas	metáfora	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
 2	em	em	ADP	PRP|@N<	_	3	case	_	_
 3	política	política	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
@@ -15,9 +17,9 @@
 10	aí	aí	ADV	<first-cjt>|<-sam>|ADV|@<ADVL	_	7	advmod	_	_
 11	tantos	tanto	DET	<quant>|<KOMP>|<COMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	12	det	_	_
 12	psicologismos	psicologismo	NOUN	<cjt>|<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	conj	_	_
-13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 14	antropologismos	antropologismo	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	conj	_	_
-15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+15	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 16	literatices	literatice	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	conj	_	_
 17	...	...	PUNCT	PU|@PU	_	7	punct	_	_
 18	)	)	PUNCT	PU|@PU	_	10	punct	_	_
@@ -27,6 +29,8 @@
 # source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a #E
 # sent_id CF260-2
 # id 1096
+# d2d: cc(moralismo,mas) -> cc(amoralidade,mas)  #106
+# d2d: punct(moralismo,,) -> punct(amoralidade,,)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	respeito	respeito	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137
 3	a	a	ADP	<sam->|PRP|@N<ARG	_	5	case	_	_
@@ -50,8 +54,8 @@
 21	de	de	ADP	<first-cjt>|PRP|@<PIV	_	23	case	_	_
 22	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing	23	det	_	_
 23	moralismo	moralismo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
-24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-25	mas	mas	CCONJ	<co-piv>|KC|@CO	_	23	cc	_	_
+24	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
+25	mas	mas	CCONJ	<co-piv>|KC|@CO	_	28	cc	_	d2d:#106
 26	de	de	ADP	<cjt>|PRP|@<PIV	_	28	case	_	_
 27	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	28	det	_	_
 28	amoralidade	amoralidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	conj	_	_
@@ -62,6 +66,7 @@
 # source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a
 # sent_id CF260-3
 # id 1097
+# d2d: cc(antena,e) -> cc(imprensa,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	mal	mal	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	residia	residir	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -97,7 +102,7 @@
 33	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	iobj	_	_
 34	pusesse	pôr	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	acl:relcl	_	_
 35	termo	termo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	34	obj	_	_
-36	e	e	CCONJ	<co-n<pred>|<co-vfin>|KC|@CO	_	30	cc	_	_
+36	e	e	CCONJ	<co-n<pred>|<co-vfin>|KC|@CO	_	39	cc	_	d2d:#106
 37	sem	sem	ADP	<cjt>|PRP|@N<PRED	_	39	case	_	_
 38	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 39	imprensa	imprensa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	conj	_	_
@@ -155,6 +160,7 @@
 # source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a
 # sent_id CF260-5
 # id 1099
+# d2d: cc(governar,e) -> cc(servir,e)  #106
 1	Também	também	ADV	ADV|@ADVL>	_	4	advmod	_	_
 2	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 3	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	iobj	_	_
@@ -172,7 +178,7 @@
 15	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
 16	não	não	ADV	_	Polarity=Neg	17	advmod	_	_
 17	governar	governar	VERB	<first-cjt>|<mv>|V|INF|@ICL-<SC	VerbForm=Inf	9	acl:relcl	_	_
-18	e	e	CCONJ	<co-icl>|KC|@CO	_	17	cc	_	_
+18	e	e	CCONJ	<co-icl>|KC|@CO	_	20	cc	_	d2d:#106
 19	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
 20	servir	servir	VERB	<cjt>|<mv>|V|INF|@ICL-<SC	VerbForm=Inf	17	conj	_	_
 21	a	a	ADP	<sam->|PRP|@<PIV	_	23	case	_	_
@@ -185,6 +191,8 @@
 # source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a
 # sent_id CF260-6
 # id 1100
+# d2d: cc(boca,e) -> cc(limites,e)  #106
+# d2d: punct(boca,,) -> punct(limites,,)  #106
 1	Que	que	SCONJ	KS|@SUB	_	3	mark	_	_
 2	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
 3	faça	fazer	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -212,8 +220,8 @@
 25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
 26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	urna	urna	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
-28	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-29	e	e	CCONJ	<co-advl>|KC|@CO	_	24	cc	_	_
+28	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
+29	e	e	CCONJ	<co-advl>|KC|@CO	_	32	cc	_	d2d:#106
 30	em	em	ADP	<cjt>|<sam->|PRP|@<ADVL	_	32	case	_	_
 31	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
 32	limites	limite	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	conj	_	_

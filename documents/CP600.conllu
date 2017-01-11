@@ -3,6 +3,7 @@
 # source CETEMPúblico n=600 sec=soc sem=95a
 # sent_id CP600-1
 # id 3108
+# d2d: cc(sindicato,e) -> cc(ministério,e)  #106
 1	José	José	PROPN	_	Number=Sing	0	root	_	ChangedBy=Issue119|MWE=José_Calçada|MWEPOS=PROPN
 2	Calçada	Calçada	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	--	--	PUNCT	PU|@PU	_	1	punct	_	_
@@ -11,7 +12,7 @@
 6	entre	entre	ADP	PRP|@N<ARG	_	8	case	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	sindicato	sindicato	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
-9	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	d2d:#106
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	ministério	ministério	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	conj	_	_
 12	não	não	ADV	_	Polarity=Neg	13	advmod	_	_
@@ -61,6 +62,9 @@
 # source CETEMPúblico n=600 sec=soc sem=95a
 # sent_id CP600-4
 # id 3111
+# d2d: punct(feito,,) -> punct(tivemos,,)  #106
+# d2d: cc(feito,mas) -> cc(tivemos,mas)  #106
+# d2d: punct(feito,,) -> punct(tivemos,,)  #106
 1	Isto	isto	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj:pass	_	_
 2	já	já	ADV	ADV|@ADVL>	_	4	advmod	_	_
 3	foi	ser	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
@@ -68,7 +72,7 @@
 5	por	por	ADP	PRP|@PASS	_	7	case	_	_
 6	variadíssimos	variadíssimo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	7	amod	_	_
 7	faxes	faxes	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl:agent	_	_
-8	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 9	através	através	ADV	ADV|@<ADVL	_	4	advmod	_	_
 10	de	de	ADP	PRP|@A<	_	11	case	_	_
 11	contactos	contacto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
@@ -77,8 +81,8 @@
 14	Janeiro	janeiro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod:tmod	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	94	94	NUM	<card>|NUM|M|S|@P<	_	14	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-18	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+17	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+18	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 19	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
 20	tivemos	ter	VERB	<cjt>|<mv>|V|PS|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	4	conj	_	_
 21	,	,	PUNCT	PU|@PU	_	20	punct	_	_
@@ -93,13 +97,14 @@
 # source CETEMPúblico n=600 sec=soc sem=95a
 # sent_id CP600-5
 # id 3112
+# d2d: punct(natureza,,) -> punct(oficiosos,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	contactos	contacto	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj	_	_
 3	--	--	PUNCT	PU|@PU	_	5	punct	_	_
 4	de	de	ADP	<first-cjt>|PRP|@N<PRED	_	5	case	_	_
 5	natureza	natureza	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 6	informal	informal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	_
-7	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 8	nem	nem	ADP	PRP|@>A	_	9	case	_	MWE=nem_sequer
 9	sequer	sequer	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
 10	oficiosos	oficioso	ADJ	<cjt>|ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	5	conj	_	_

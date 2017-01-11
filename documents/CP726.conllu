@@ -18,13 +18,15 @@
 # source CETEMPúblico n=726 sec=pol sem=96a
 # sent_id CP726-2
 # id 3734
+# d2d: cc(brilhante,e) -> cc(colorido,e)  #106
+# d2d: cc(Milosevic,e) -> cc(partido,e)  #106
 1	Apesar	apesar	ADV	ADV|@ADVL>	_	11	advmod	_	MWE=Apesar_de
 2	de	de	ADP	PRP|@A<	_	3	mark	_	_
 3	parecer	parecer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_
 4	paradoxal	paradoxal	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	xcomp	_	_
 5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 6	Milosevic	Milosevic	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
-7	e	e	CCONJ	<co-subj>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-subj>|KC|@CO	_	10	cc	_	d2d:#106
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 9	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	10	det	_	_
 10	partido	partido	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	conj	_	_
@@ -60,7 +62,7 @@
 40	revelar-	revelar	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	37	acl:relcl	_	_
 41	se	se	PRON	<obj>|PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	40	obj	_	_
 42	brilhante	brilhante	ADJ	<first-cjt>|ADJ|M|S|@<OC	Gender=Masc|Number=Sing	40	xcomp	_	_
-43	e	e	CCONJ	<co-oc>|KC|@CO	_	42	cc	_	_
+43	e	e	CCONJ	<co-oc>|KC|@CO	_	44	cc	_	d2d:#106
 44	colorido	colorir	VERB	<cjt>|V|PCP|M|S|@<OC	Gender=Masc|Number=Sing|VerbForm=Part	42	conj	_	_
 45	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
@@ -69,10 +71,14 @@
 # source CETEMPúblico n=726 sec=pol sem=96a
 # sent_id CP726-3
 # id 3735
+# d2d: punct(conseguiram,,) -> punct(tem,,)  #106
+# d2d: cc(conseguiram,e) -> cc(tem,e)  #106
+# d2d: cc(antigos,e) -> cc(reformados,e)  #106
+# d2d: punct(conseguiram,,) -> punct(tem,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
 2	antigos	antigo	ADJ	<first-cjt>|ADJ|M|P|@>N	Gender=Masc|Number=Plur	10	amod	_	_
 3	(	(	PUNCT	PU|@PU	_	4	punct	_	_
-4	e	e	CCONJ	<co-prenom>|KC|@CO	_	2	cc	_	_
+4	e	e	CCONJ	<co-prenom>|KC|@CO	_	7	cc	_	d2d:#106
 5	agora	agora	ADV	<kc>|ADV|@>A	_	7	advmod	_	_
 6	«	«	PUNCT	PU|@PU	_	7	punct	_	_
 7	reformados	reformar	VERB	<cjt>|V|PCP|M|P|@>N	Gender=Masc|Number=Plur|VerbForm=Part	2	conj	_	_
@@ -89,12 +95,12 @@
 18	países	país	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	obl	_	ChangedBy=Issue137
 19	(	(	PUNCT	PU|@PU	_	20	punct	_	_
 20	Hungria	Hungria	PROPN	<first-cjt>|PROP|F|S|@APP	Gender=Fem|Number=Sing	18	appos	_	_
-21	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 22	Polónia	Polónia	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	20	appos	_	_
-23	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 24	Bulgária	Bulgária	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	20	appos	_	_
 25	)	)	PUNCT	PU|@PU	_	20	punct	_	_
-26	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	_
+26	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	31	cc	_	d2d:#106
 27	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
 28	opção	opção	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	31	nsubj	_	_
 29	política	político	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	28	amod	_	_
@@ -123,6 +129,7 @@
 # source CETEMPúblico n=726 sec=pol sem=96a
 # sent_id CP726-4
 # id 3736
+# d2d: cc(ele,e) -> cc(regime,e)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	saber	saber	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	38	advcl	_	_
 3	que	que	SCONJ	KS|@SUB	_	4	mark	_	_
@@ -164,7 +171,7 @@
 39	que	que	SCONJ	KS|@SUB	_	52	mark	_	_
 40	ele	ele	PRON	<first-cjt>|PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	52	nsubj	_	_
 41	próprio	próprio	DET	<ident>|DET|M|S|@N<	Gender=Masc|Number=Sing	40	det	_	_
-42	e	e	CCONJ	<co-subj>|KC|@CO	_	40	cc	_	_
+42	e	e	CCONJ	<co-subj>|KC|@CO	_	45	cc	_	d2d:#106
 43	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
 44	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	45	det	_	_
 45	regime	regime	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	40	conj	_	_

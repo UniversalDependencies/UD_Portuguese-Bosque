@@ -3,9 +3,13 @@
 # source CETEMPúblico n=963 sec=soc sem=94a
 # sent_id CP963-1
 # id 4947
+# d2d: cc(Orlando,e) -> cc(José,e)  #106
+# d2d: punct(sacos-cama,,) -> punct(roupa,,)  #106
+# d2d: punct(sacos-cama,,) -> punct(comida,,)  #106
+# d2d: cc(sacos-cama,e) -> cc(dinheiro,e)  #106
 1	Orlando	Orlando	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=Orlando_Miguel|MWEPOS=PROPN
 2	Miguel	Miguel	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
-3	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	d2d:#106
 4	José	José	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=José_Pedro|MWEPOS=PROPN
 5	Pedro	Pedro	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	partiram	partir	VERB	<first-cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -14,11 +18,11 @@
 9	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 10	levaram	levar	VERB	<cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	parataxis	_	_
 11	sacos-cama	sacos-cama	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
-12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 13	roupa	roupa	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	conj	_	_
-14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	comida	comer	VERB	<cjt>|V|PCP|F|S|@<ACC	Gender=Fem|Number=Sing|VerbForm=Part	11	conj	_	_
-16	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	_
+16	e	e	CCONJ	<co-acc>|KC|@CO	_	18	cc	_	d2d:#106
 17	algum	algum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	18	det	_	_
 18	dinheiro	dinheiro	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	conj	_	_
 19	.	.	PUNCT	PU|@PU	_	6	punct	_	_
@@ -28,6 +32,7 @@
 # source CETEMPúblico n=963 sec=soc sem=94a
 # sent_id CP963-2
 # id 4948
+# d2d: cc(preocupassem,e) -> cc(fugir,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	primeiro	primeiro	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	deixou	deixar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -41,7 +46,7 @@
 11	não	não	ADV	_	Polarity=Neg	13	advmod	_	_
 12	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	13	expl	_	ChangedBy=Issue135
 13	preocupassem	preocupar	VERB	<first-cjt>|<mv>|<se-passive>|V|IMPF|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	ccomp	_	_
-14	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	13	cc	_	_
+14	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 15	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
 16	não	não	ADV	_	Polarity=Neg	18	advmod	_	_
 17	ia	ir	AUX	<cjt>|<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	18	aux	_	_

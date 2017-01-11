@@ -85,6 +85,9 @@
 # source CETEMPúblico n=800 sec=pol sem=94b
 # sent_id CP800-3
 # id 4098
+# d2d: punct(demissão,,) -> punct(venda,,)  #106
+# d2d: punct(demissão,,) -> punct(venda,,)  #106
+# d2d: cc(demissão,e) -> cc(venda,e)  #106
 1	E	e	CCONJ	KC|@CO	_	6	cc	_	_
 2	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 3	de	de	ADP	PRP|@ADVL>	_	4	case	_	_
@@ -114,11 +117,11 @@
 27	chefe	chefe	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	redacção	redacção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
-30	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+30	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 31	Joaquim	Joaquim	PROPN	_	Gender=Masc|Number=Sing	27	appos	_	ChangedBy=Issue119|MWE=Joaquim_Rita|MWEPOS=PROPN
 32	Rita	Rita	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119
-33	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-34	e	e	CCONJ	<co-prparg>|KC|@CO	_	24	cc	_	_
+33	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+34	e	e	CCONJ	<co-prparg>|KC|@CO	_	36	cc	_	d2d:#106
 35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
 36	venda	venda	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	conj	_	_
 37	,	,	PUNCT	PU|@PU	_	39	punct	_	_
@@ -143,12 +146,14 @@
 # source CETEMPúblico n=800 sec=pol sem=94b
 # sent_id CP800-4
 # id 4099
+# d2d: cc(João,e) -> cc(Norberto,e)  #106
+# d2d: cc(amealhou,e) -> cc(malas,e)  #106
 1	Márcio	Márcio	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	amealhou	amealhar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	70	70	NUM	<card>|NUM|M|P|@>A	_	4	dep	_	_
 4	mil	mil	NUM	<card>|NUM|M|P|@>N	_	5	nummod	_	_
 5	contos	conto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
-6	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+6	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 7	está	estar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
 8	de	de	ADP	PRP|@<SC	_	9	case	_	_
 9	malas	mala	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	2	conj	_	_
@@ -170,7 +175,7 @@
 25	João	João	PROPN	_	Gender=Masc|Number=Sing	17	obl:agent	_	ChangedBy=Issue119|MWE=João_Alves_Costa|MWEPOS=PROPN
 26	Alves	Alves	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
 27	Costa	Costa	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
-28	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	_
+28	e	e	CCONJ	<co-prparg>|KC|@CO	_	29	cc	_	d2d:#106
 29	Norberto	Norberto	PROPN	_	Gender=Masc|Number=Sing	25	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Norberto_Santos|MWEPOS=PROPN
 30	Santos	Santos	PROPN	_	Number=Sing	29	flat:name	_	ChangedBy=Issue119
 31	.	.	PUNCT	PU|@PU	_	2	punct	_	_

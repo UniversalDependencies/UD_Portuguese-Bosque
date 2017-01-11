@@ -3,12 +3,15 @@
 # source CETENFolha n=630 cad=Cotidiano sec=soc sem=94b
 # sent_id CF630-1
 # id 2648
+# d2d: cc(matou,e) -> cc(deixou,e)  #106
+# d2d: cc(caminhão,e) -> cc(ônibus,e)  #106
+# d2d: punct(estudantes,,) -> punct(motoristas,,)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	acidente	acidente	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
 3	envolvendo	envolver	VERB	<mv>|V|GER|@ICL-N<	VerbForm=Ger	2	acl	_	_
 4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	caminhão	caminhão	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
-6	e	e	CCONJ	<co-acc>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-acc>|KC|@CO	_	8	cc	_	d2d:#106
 7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	ônibus	ônibus	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	conj	_	_
 9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
@@ -20,10 +23,10 @@
 15	matou	matar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 16	16	16	NUM	<card>|NUM|M|P|@>N	_	17	nummod	_	_
 17	estudantes	estudante	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	15	obj	_	_
-18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	três	três	NUM	<card>|NUM|M|P|@>N	_	20	nummod	_	_
 20	motoristas	motorista	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	17	conj	_	_
-21	e	e	CCONJ	<co-sta>|KC|@CO	_	15	cc	_	_
+21	e	e	CCONJ	<co-sta>|KC|@CO	_	22	cc	_	d2d:#106
 22	deixou	deixar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	_	_
 23	nove	nove	NUM	<card>|NUM|M|P|@>N	_	24	nummod	_	_
 24	feridos	ferir	VERB	<mv>|<n>|V|PCP|M|P|@ICL-<ACC	Gender=Masc|Number=Plur|VerbForm=Part	22	xcomp	_	_

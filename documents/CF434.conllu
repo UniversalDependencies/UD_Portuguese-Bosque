@@ -3,13 +3,17 @@
 # source CETENFolha n=434 cad=Dinheiro sec=eco sem=94b
 # sent_id CF434-1
 # id 1814
+# d2d: punct(Banco,,) -> punct(FMI,,)  #106
+# d2d: cc(avaliadas,e) -> cc(monitoradas,e)  #106
+# d2d: cc(ter,e) -> cc(ter,e)  #106
+# d2d: cc(Banco,e) -> cc(Gatt,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 2	Banco	Banco	PROPN	_	Gender=Masc|Number=Sing	11	nsubj	_	ChangedBy=Issue119|MWE=Banco_Mundial|MWEPOS=PROPN
 3	Mundial	Mundial	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
-4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	FMI	FMI	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
-7	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+7	e	e	CCONJ	<co-subj>|KC|@CO	_	9	cc	_	d2d:#106
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	Gatt	Gatt	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
 10	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
@@ -26,7 +30,7 @@
 21	públicas	público	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	20	amod	_	_
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	decisão	decisão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
-24	e	e	CCONJ	<co-vp>|KC|@CO	_	15	cc	_	_
+24	e	e	CCONJ	<co-vp>|KC|@CO	_	25	cc	_	d2d:#106
 25	ter	ter	VERB	<cjt>|<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	conj	_	_
 26	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	transparência	transparência	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	25	obj	_	_
@@ -34,7 +38,7 @@
 29	para	para	ADP	PRP|@A<	_	31	mark	_	_
 30	serem	ser	AUX	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	31	aux	_	_
 31	avaliadas	avaliar	VERB	<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	28	advcl	_	_
-32	e	e	CCONJ	<co-vp>|<co-pcv>|KC|@CO	_	31	cc	_	_
+32	e	e	CCONJ	<co-vp>|<co-pcv>|KC|@CO	_	33	cc	_	d2d:#106
 33	monitoradas	monitorar	VERB	<cjt>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	31	conj	_	ChangedBy=Issue149
 34	por	por	ADP	PRP|@PASS	_	36	case	_	_
 35	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_
@@ -46,6 +50,8 @@
 # source CETENFolha n=434 cad=Dinheiro sec=eco sem=94b
 # sent_id CF434-2
 # id 1815
+# d2d: cc(constituiu,e) -> cc(organizou,e)  #106
+# d2d: punct(constituiu,,) -> punct(iniciou,,)  #106
 1	Recentemente	recentemente	ADV	ADV|@ADVL>	_	6	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -63,14 +69,14 @@
 15	sobre	sobre	ADP	PRP|@N<ARG	_	17	case	_	_
 16	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur	17	det	_	_
 17	projetos	projeto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 19	iniciou	iniciar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
 20	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 21	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	22	amod	_	_
 22	política	política	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	informações	informação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
-25	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|<co-fcl>|KC|@CO	_	6	cc	_	_
+25	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|<co-fcl>|KC|@CO	_	28	cc	_	d2d:#106
 26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	Gatt	Gatt	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	28	nsubj	_	_
 28	organizou	organizar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_

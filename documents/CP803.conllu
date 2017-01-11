@@ -88,6 +88,13 @@
 # source CETEMPúblico n=803 sec=pol sem=97a
 # sent_id CP803-3
 # id 4116
+# d2d: punct(posições,,) -> punct(cidade,,)  #106
+# d2d: punct(posições,,) -> punct(cidade,,)  #106
+# d2d: punct(tomaram,,) -> punct(prepara,,)  #106
+# d2d: cc(posições,e) -> cc(cidade,e)  #106
+# d2d: cc(tomaram,e) -> cc(prepara,e)  #106
+# d2d: cc(Kisangani,e) -> cc(Bukavu,e)  #106
+# d2d: cc(soldados,e) -> cc(mercenários,e)  #106
 1	Só	só	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	rumores	rumor	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
@@ -98,7 +105,7 @@
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	militares	militar	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
 10	tomaram	tomar	VERB	<first-cjt>|<mv>|V|PS|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
-11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
 12	com	com	ADP	PRP|@<ADVL	_	14	case	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	ajuda	ajuda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	ChangedBy=Issue137
@@ -109,7 +116,7 @@
 19	(	(	PUNCT	PU|@PU	_	20	punct	_	_
 20	hutus	hutu	NOUN	<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	17	appos	_	_
 21	)	)	PUNCT	PU|@PU	_	20	punct	_	_
-22	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	_
+22	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	d2d:#106
 23	mercenários	mercenário	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	conj	_	_
 24	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 25	posições	posição	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
@@ -122,11 +129,11 @@
 32	estrada	estrada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	27	obl	_	ChangedBy=Issue137
 33	para	para	ADP	PRP|@N<	_	34	case	_	_
 34	sudeste	sudeste	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	_
-35	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
 36	para	para	ADP	PRP|@N<PRED	_	37	case	_	_
 37	Walikale	Walikale	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	32	nmod	_	_
-38	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-39	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	_
+38	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+39	e	e	CCONJ	<co-acc>|KC|@CO	_	41	cc	_	d2d:#106
 40	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
 41	cidade	cidade	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	25	conj	_	_
 42	de	de	ADP	PRP|@N<	_	43	case	_	_
@@ -135,7 +142,7 @@
 45	a	a	ADP	PRP|@N<PRED	_	46	case	_	_
 46	Leste	leste	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	43	nmod	_	_
 47	,	,	PUNCT	PU|@PU	_	46	punct	_	_
-48	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	10	cc	_	_
+48	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	53	cc	_	d2d:#106
 49	que	que	SCONJ	KS|@SUB	_	53	mark	_	_
 50	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
 51	aviação	aviação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	53	nsubj	_	_
@@ -148,7 +155,7 @@
 58	situada	situar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	56	acl	_	_
 59	entre	entre	ADP	PRP|@<SA	_	60	case	_	_
 60	Kisangani	Kisangani	PROPN	<first-cjt>|PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	58	nmod	_	_
-61	e	e	CCONJ	<co-prparg>|KC|@CO	_	60	cc	_	_
+61	e	e	CCONJ	<co-prparg>|KC|@CO	_	62	cc	_	d2d:#106
 62	Bukavu	Bukavu	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	60	conj	_	ChangedBy=Issue149
 63	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

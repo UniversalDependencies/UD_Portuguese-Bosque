@@ -45,6 +45,9 @@
 # source CETENFolha n=215 cad=Brasil sec=pol sem=94b
 # sent_id CF215-2
 # id 919
+# d2d: cc(20,e) -> cc(24,e)  #106
+# d2d: punct(20,,) -> punct(22,,)  #106
+# d2d: punct(20,,) -> punct(21,,)  #106
 1	Parágrafo	parágrafo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	4º	4º	ADJ	<NUM-ord>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 3	--	--	PUNCT	PU|@PU	_	1	punct	_	_
@@ -61,11 +64,11 @@
 14	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
 15	arts.	art	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	13	obj	_	_
 16	20	20	NUM	<first-cjt>|<card>|NUM|M|P|@N<	_	15	nummod	_	_
-17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	21	21	NUM	<cjt>|<card>|NUM|M|P|@N<	_	16	conj	_	_
-19	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	22	22	NUM	<cjt>|<card>|NUM|M|P|@N<	_	16	conj	_	_
-21	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	_
+21	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	d2d:#106
 22	24	24	NUM	<cjt>|<card>|NUM|M|P|@N<	_	16	conj	_	_
 23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
 24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_

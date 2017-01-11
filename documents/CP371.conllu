@@ -37,6 +37,7 @@
 # source CETEMPúblico n=371 sec=soc sem=94b
 # sent_id CP371-2
 # id 1942
+# d2d: cc(políticas,e) -> cc(sociais,e)  #106
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	acordo	acordo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	surge	surgir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -45,7 +46,7 @@
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	pressões	pressão	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
 8	políticas	político	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
-9	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	<co-postnom>|KC|@CO	_	10	cc	_	d2d:#106
 10	sociais	social	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	8	conj	_	_
 11	para	para	ADP	PRP|@N<	_	12	mark	_	_
 12	resolver	resolver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
@@ -83,6 +84,9 @@
 # source CETEMPúblico n=371 sec=soc sem=94b
 # sent_id CP371-3
 # id 1943
+# d2d: cc(favorecido,e) -> cc(procedido,e)  #106
+# d2d: cc(Fundo,e) -> cc(empresa,e)  #106
+# d2d: punct(Fundo,,) -> punct(Caixa,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Urbanização	Urbanização	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj:pass	_	MWE=Urbanização_da_Bela_Vista
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -123,13 +127,13 @@
 38	actual	actual	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	39	amod	_	_
 39	IGAPHE	IGAPHE	PROPN	<first-cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	31	appos	_	_
 40	)	)	PUNCT	PU|@PU	_	39	punct	_	_
-41	,	,	PUNCT	PU|@PU	_	31	punct	_	_
+41	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 42	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
 43	Caixa	Caixa	PROPN	_	Gender=Fem|Number=Sing	31	conj	_	ChangedBy=Issue119|MWE=Caixa_Geral|MWEPOS=PROPN
 44	Geral	Geral	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
 45	de	de	ADP	PRP|@N<	_	46	case	_	_
 46	Depósitos	Depósitos	PROPN	PROP|@P<	Number=Sing	43	nmod	_	_
-47	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	_
+47	e	e	CCONJ	<co-prparg>|KC|@CO	_	49	cc	_	d2d:#106
 48	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
 49	empresa	empresa	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	31	conj	_	_
 50	construtora	construtora	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	49	amod	_	_
@@ -152,7 +156,7 @@
 67	de	de	ADP	PRP|@N<ARG	_	69	case	_	_
 68	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	69	det	_	_
 69	terreno	terreno	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	66	nmod	_	_
-70	e	e	CCONJ	<co-pcv>|<co-icl>|KC|@CO	_	64	cc	_	_
+70	e	e	CCONJ	<co-pcv>|<co-icl>|KC|@CO	_	71	cc	_	d2d:#106
 71	procedido	proceder	VERB	<mv>|<cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	64	conj	_	ChangedBy=Issue149
 72	a	a	ADP	<sam->|PRP|@<PIV	_	74	case	_	_
 73	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	74	det	_	_

@@ -3,6 +3,7 @@
 # source CETENFolha n=674 cad=Mundo sec=pol sem=94a
 # sent_id CF674-1
 # id 2831
+# d2d: cc(Nagi,e) -> cc(Basseem,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	autor	autor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -12,7 +13,7 @@
 7	Nagi	Nagi	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Nagi_Mohamed_Mustafa|MWEPOS=PROPN
 8	Mohamed	Mohamed	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	Mustafa	Mustafa	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
-10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	_
+10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	líder	líder	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
@@ -81,8 +82,11 @@
 # source CETENFolha n=674 cad=Mundo sec=pol sem=94a
 # sent_id CF674-3
 # id 2833
+# d2d: punct(tentaram,,) -> punct(estava,,)  #106
+# d2d: cc(Khalil,e) -> cc(Mustafa,e)  #106
+# d2d: cc(tentaram,mas) -> cc(estava,mas)  #106
 1	Khalil	Khalil	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
-2	e	e	CCONJ	KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	KC|@CO	_	3	cc	_	d2d:#106
 3	Mustafa	Mustafa	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	1	conj	_	ChangedBy=Issue149
 4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 5	disfarçados	disfarçar	VERB	<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	_	_
@@ -93,8 +97,8 @@
 10	um	um	NUM	<card>|NUM|M|S|@>N	_	11	nummod	_	_
 11	dia	dia	NOUN	<np-def>|N|M|S|@>A	Gender=Masc|Number=Sing	12	nmod:npmod	_	_
 12	antes	antes	ADV	ADV|@<ADVL	_	8	advmod	_	_
-13	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-14	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	_
+13	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+14	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 15	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
 16	não	não	ADV	_	Polarity=Neg	17	advmod	_	_
 17	estava	estar	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	conj	_	_

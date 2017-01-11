@@ -146,6 +146,7 @@
 # source CETEMPúblico n=123 sec=clt sem=93b
 # sent_id CP123-7
 # id 628
+# d2d: cc(ameaçador,e) -> cc(desregrado,e)  #106
 1	No	no	ADP	PRP|@ADVL>	_	2	case	_	MWE=No_caso_de
 2	caso	caso	NOUN	N|@P<	_	16	nmod	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -167,7 +168,7 @@
 19	perfil	perfil	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	16	xcomp	_	_
 20	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 21	ameaçador	ameaçador	ADJ	<first-cjt>|ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	19	amod	_	_
-22	e	e	CCONJ	<co-sc>|KC|@CO	_	21	cc	_	_
+22	e	e	CCONJ	<co-sc>|KC|@CO	_	23	cc	_	d2d:#106
 23	desregrado	desregrar	VERB	<cjt>|V|PCP|M|S|@N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	21	conj	_	_
 24	como	como	ADP	<com>|PRP|@A<	_	26	case	_	_
 25	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
@@ -180,6 +181,12 @@
 # source CETEMPúblico n=123 sec=clt sem=93b
 # sent_id CP123-8
 # id 629
+# d2d: cc(jarro,e) -> cc(soporíferos,e)  #106
+# d2d: punct(Foi,,) -> punct(aconteceu,,)  #106
+# d2d: punct(Mulheres,») -> punct(Ata,»)  #106
+# d2d: cc(Mulheres,e) -> cc(Kika,e)  #106
+# d2d: cc(Foi,e) -> cc(aconteceu,e)  #106
+# d2d: punct(Mulheres,,) -> punct(Ata,,)  #106
 1	Foi	ir	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	n'	n	ADP	PRP|@<SA	_	4	case	_	_
 3	«	«	PUNCT	PU|@PU	_	4	punct	_	_
@@ -189,8 +196,8 @@
 7	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	Desejo	Desejo	PROPN	PROP|@P<	Number=Sing	4	nmod	_	_
 9	»	»	PUNCT	PU|@PU	_	4	punct	_	_
-10	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-11	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+10	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
+11	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	d2d:#106
 12	depois	depois	ADV	ADV|@ADVL>	_	13	advmod	_	_
 13	aconteceu	acontecer	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	_	_
 14	«	«	PUNCT	PU|@PU	_	15	punct	_	_
@@ -203,7 +210,7 @@
 21	Ataque	Ataque	PROPN	PROP|@N<	Number=Sing	20	flat:name	_	_
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	Nervos	Nervos	PROPN	PROP|@P<	Number=Sing	20	nmod	_	_
-24	»	»	PUNCT	PU|@PU	_	15	punct	_	_
+24	»	»	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
 25	--	--	PUNCT	PU|@PU	_	26	punct	_	_
 26	dormiu	dormir	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	_	_
 27	durante	durante	ADP	PRP|@<ADVL	_	29	case	_	_
@@ -218,16 +225,16 @@
 36	sumo	sumo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	nmod	_	_
 37	de	de	ADP	PRP|@N<	_	38	case	_	_
 38	tomate	tomate	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	36	nmod	_	_
-39	e	e	CCONJ	<co-prparg>|<co-fmc>|<co-vfin>|KC|@CO	_	34	cc	_	_
+39	e	e	CCONJ	<co-prparg>|<co-fmc>|<co-vfin>|KC|@CO	_	40	cc	_	d2d:#106
 40	soporíferos	soporífero	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	34	conj	_	_
 41	--	--	PUNCT	PU|@PU	_	26	punct	_	_
-42	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+42	,	,	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
 43	«	«	PUNCT	PU|@PU	_	44	punct	_	_
 44	Ata	Ata	PROPN	_	Gender=Masc|Number=Sing	15	conj	_	ChangedBy=Issue119|MWE=Ata_-me_!|MWEPOS=PROPN
 45	-me	-me	PROPN	_	Number=Sing	44	flat:name	_	ChangedBy=Issue119
 46	!	!	PROPN	_	Number=Sing	44	flat:name	_	ChangedBy=Issue119
 47	»	»	PUNCT	PU|@PU	_	44	punct	_	_
-48	e	e	CCONJ	<co-subj>|KC|@CO	_	15	cc	_	_
+48	e	e	CCONJ	<co-subj>|KC|@CO	_	57	cc	_	d2d:#106
 49	agora	agora	ADV	<kc>|ADV|@>N	_	57	advmod	_	_
 50	,	,	PUNCT	PU|@PU	_	52	punct	_	_
 51	em	em	ADP	PRP|@>N	_	52	case	_	_

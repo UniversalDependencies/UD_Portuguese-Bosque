@@ -3,12 +3,14 @@
 # source CETEMPúblico n=829 sec=des sem=94a
 # sent_id CP829-1
 # id 4270
+# d2d: cc(Ligier-Renault,e) -> cc(Sauber-Mercedes,e)  #106
+# d2d: punct(Ligier-Renault,,) -> punct(Lotus-Mugen-Honda,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Ligier-Renault	Ligier-Renault	PROPN	<first-cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
-3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+3	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	Lotus-Mugen-Honda	Lotus-Mugen-Honda	PROPN	<cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
-6	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+6	e	e	CCONJ	<co-subj>|KC|@CO	_	8	cc	_	d2d:#106
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	Sauber-Mercedes	Sauber-Mercedes	PROPN	<cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
 9	sucederão	suceder	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -73,6 +75,7 @@
 # source CETEMPúblico n=829 sec=des sem=94a
 # sent_id CP829-3
 # id 4272
+# d2d: cc(McLaren-Peugeot,e) -> cc(Sauber-Mercedes,e)  #106
 1	Paralelamente	paralelamente	ADV	ADV|@ADVL>	_	22	advmod	_	_
 2	a	a	ADP	<sam->|PRP|@A<	_	4	case	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -85,7 +88,7 @@
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	Mika	Mika	PROPN	_	Gender=Masc|Number=Sing	9	nmod	_	ChangedBy=Issue119|MWE=Mika_Hakkinen|MWEPOS=PROPN
 12	Hakkinen	Hakkinen	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
-13	e	e	CCONJ	<co-subj>|KC|@CO	_	9	cc	_	_
+13	e	e	CCONJ	<co-subj>|KC|@CO	_	15	cc	_	d2d:#106
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	Sauber-Mercedes	Sauber-Mercedes	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	conj	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
@@ -146,24 +149,30 @@
 # source CETEMPúblico n=829 sec=des sem=94a
 # sent_id CP829-4
 # id 4273
+# d2d: punct(Frentzen,,) -> punct(Panis,,)  #106
+# d2d: cc(Panis,e) -> cc(Bernard,e)  #106
+# d2d: punct(Frentzen,,) -> punct(Irvine,,)  #106
+# d2d: punct(Frentzen,,) -> punct(Irvine,,)  #106
+# d2d: cc(1m21,64s,e) -> cc(1m22,24s,e)  #106
+# d2d: punct(Frentzen,,) -> punct(Panis,,)  #106
 1	Frentzen	Frentzen	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	31	nsubj	_	_
 2	(	(	PUNCT	PU|@PU	_	3	punct	_	_
 3	Sauber-Mercedes	Sauber-Mercedes	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	1	appos	_	_
 4	)	)	PUNCT	PU|@PU	_	3	punct	_	_
-5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 6	com	com	ADP	<first-cjt>|PRP|@N<PRED	_	7	case	_	_
 7	1m20,02s	1m20,02s	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	_
-8	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	Irvine	Irvine	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	_
 10	(	(	PUNCT	PU|@PU	_	11	punct	_	_
 11	Jordan-Hart	Jordan-Hart	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	9	appos	_	_
 12	)	)	PUNCT	PU|@PU	_	11	punct	_	_
-13	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 14	com	com	ADP	<cjt>|PRP|@N<PRED	_	15	case	_	_
 15	1m20,14s	1m20,14s	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	Panis	Panis	PROPN	<cjt>|<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	_
-18	e	e	CCONJ	<co-subj>|KC|@CO	_	17	cc	_	_
+18	e	e	CCONJ	<co-subj>|KC|@CO	_	19	cc	_	d2d:#106
 19	Bernard	Bernard	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	conj	_	_
 20	(	(	PUNCT	PU|@PU	_	21	punct	_	_
 21	Ligier-Renault	Ligier-Renault	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	17	appos	_	_
@@ -173,7 +182,7 @@
 25	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 26	com	com	ADP	<cjt>|PRP|@N<PRED	_	27	case	_	_
 27	1m21,64s	1m21,64s	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	conj	_	_
-28	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	_
+28	e	e	CCONJ	<co-prparg>|KC|@CO	_	29	cc	_	d2d:#106
 29	1m22,24s	1m22,24s	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	27	conj	_	_
 30	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 31	seguiram-	seguir	VERB	<mv>|<hyphen>|<se-passive>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_

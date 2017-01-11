@@ -15,6 +15,8 @@
 # source CETENFolha n=650 cad=Esporte sec=des sem=94a
 # sent_id CF650-3
 # id 2717
+# d2d: punct(anos,,) -> punct(m,,)  #106
+# d2d: cc(m,e) -> cc(kg,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	atacante	atacante	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
 3	Ana	Ana	PROPN	_	Gender=Fem|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Ana_Moser|MWEPOS=PROPN
@@ -22,10 +24,10 @@
 5	(	(	PUNCT	PU|@PU	_	7	punct	_	_
 6	26	26	NUM	<card>|NUM|M|P|@>N	_	7	nummod	_	_
 7	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	2	appos	_	_
-8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 9	1,85	1,85	NUM	<card>|NUM|M|P|@>N	_	10	nummod	_	_
 10	m	m	NOUN	<cjt>|<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	7	conj	_	_
-11	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	13	cc	_	d2d:#106
 12	70	70	NUM	<card>|NUM|M|P|@>N	_	13	nummod	_	_
 13	kg	kg	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	10	conj	_	ChangedBy=Issue149
 14	)	)	PUNCT	PU|@PU	_	7	punct	_	_

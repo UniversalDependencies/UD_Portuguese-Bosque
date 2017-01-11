@@ -66,6 +66,9 @@
 # source CETEMPúblico n=466 sec=clt sem=97a
 # sent_id CP466-5
 # id 2465
+# d2d: cc(casado,e) -> cc(tenha,e)  #106
+# d2d: cc(casado,nem) -> cc(tenha,nem)  #106
+# d2d: punct(casado,,) -> punct(tenha,,)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	texto	texto	NOUN	<first-cjt>|<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	em	em	ADP	<sam->|PRP|@N<	_	4	case	_	MWE=em_torno_de
@@ -91,10 +94,10 @@
 23	não	não	ADV	_	Polarity=Neg	25	advmod	_	_
 24	seja	ser	VERB	<first-cjt>|<mv>|V|PR|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_
 25	casado	casado	ADJ	<mv>|<first-cjt>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	21	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue91
-26	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-27	nem	nem	CCONJ	<co-sc>|KC|@CO	_	25	cc	_	_
+26	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
+27	nem	nem	CCONJ	<co-sc>|KC|@CO	_	30	cc	_	d2d:#106
 28	maricas	maricas	NOUN	<np-idf>|N|M|S|@ICL-<SC	Gender=Masc|Number=Sing	25	dep	_	_
-29	e	e	CCONJ	<co-postnom>|<co-fmc>|<co-vfin>|KC|@CO	_	25	cc	_	_
+29	e	e	CCONJ	<co-postnom>|<co-fmc>|<co-vfin>|KC|@CO	_	30	cc	_	d2d:#106
 30	tenha	ter	VERB	<cjt>|<mv>|V|PR|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	conj	_	_
 31	emprego	emprego	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	30	obj	_	_
 32	.	.	PUNCT	PU|@PU	_	2	punct	_	_

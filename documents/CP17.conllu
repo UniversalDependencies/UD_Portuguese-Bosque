@@ -3,6 +3,7 @@
 # source CETEMPúblico n=17 sec=des sem=93a
 # sent_id CP17-1
 # id 87
+# d2d: cc(Nova,e) -> cc(Lion,e)  #106
 1	Tal	tal	ADP	PRP|@COM	_	2	case	_	MWE=Tal_como
 2	como	como	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
 3	em	em	ADP	<first-cjt>|<sam->|PRP|@ADVL>	_	6	case	_	_
@@ -20,7 +21,7 @@
 15	em	em	ADP	PRP|@<ADVL	_	16	case	_	_
 16	Nova	Nova	PROPN	_	Gender=Fem|Number=Sing	14	nmod	_	ChangedBy=Issue119|MWE=Nova_Iorque|MWEPOS=PROPN
 17	Iorque	Iorque	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
-18	e	e	CCONJ	<co-prparg>|KC|@CO	_	16	cc	_	_
+18	e	e	CCONJ	<co-prparg>|KC|@CO	_	19	cc	_	d2d:#106
 19	Lion	Lion	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	16	conj	_	ChangedBy=Issue149
 20	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 21	Kasparov	Kasparov	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj	_	_
@@ -49,6 +50,10 @@
 # source CETEMPúblico n=17 sec=des sem=93a
 # sent_id CP17-2
 # id 88
+# d2d: cc(Kasparov,e) -> cc(Short,e)  #106
+# d2d: cc(declarou,e) -> cc(acusou,e)  #106
+# d2d: punct(declarou,,) -> punct(acusou,,)  #106
+# d2d: cc(superior,e) -> cc(rondava,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	FIDE	FIDE	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	11	punct	_	_
@@ -69,11 +74,11 @@
 18	direitos	direito	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	15	obj	_	_
 19	em	em	ADP	PRP|@<ADVL	_	20	case	_	_
 20	tribunal	tribunal	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue137
-21	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-22	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	_
+21	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
+22	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	d2d:#106
 23	acusou	acusar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
 24	Kasparov	Kasparov	PROPN	<first-cjt>|PROP|M|S|@<ACC	Gender=Masc|Number=Sing	23	obj	_	_
-25	e	e	CCONJ	<co-acc>|KC|@CO	_	24	cc	_	_
+25	e	e	CCONJ	<co-acc>|KC|@CO	_	26	cc	_	d2d:#106
 26	Short	Short	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	24	conj	_	ChangedBy=Issue149
 27	de	de	ADP	PRP|@<PIV	_	28	mark	_	_
 28	privilegiarem	privilegiar	VERB	<cjt>|<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	23	xcomp	_	_
@@ -100,7 +105,7 @@
 49	organizar	organizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	42	advcl	_	_
 50	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
 51	final	final	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	49	obj	_	_
-52	e	e	CCONJ	<co-postnom>|KC|@CO	_	39	cc	_	_
+52	e	e	CCONJ	<co-postnom>|KC|@CO	_	54	cc	_	d2d:#106
 53	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	54	nsubj	_	_
 54	rondava	rondar	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	39	conj	_	_
 55	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	58	det	_	_
@@ -162,6 +167,7 @@
 # source CETEMPúblico n=17 sec=des sem=93a
 # sent_id CP17-4
 # id 90
+# d2d: cc(Karpov,e) -> cc(Timman,e)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	MWE=Por_outro_lado
 2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
 3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
@@ -194,7 +200,7 @@
 30	final	final	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	27	obj	_	_
 31	entre	entre	ADP	PRP|@N<	_	32	case	_	_
 32	Karpov	Karpov	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	_
-33	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	_
+33	e	e	CCONJ	<co-prparg>|KC|@CO	_	34	cc	_	d2d:#106
 34	Timman	Timman	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	32	conj	_	ChangedBy=Issue149
 35	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 

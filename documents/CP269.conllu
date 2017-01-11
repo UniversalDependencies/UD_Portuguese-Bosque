@@ -3,6 +3,10 @@
 # source CETEMPúblico n=269 sec=pol sem=93a
 # sent_id CP269-1
 # id 1431
+# d2d: cc(soldados,e) -> cc(organizações,e)  #106
+# d2d: cc(cidades,e) -> cc(visitas,e)  #106
+# d2d: cc(Baidoa,e) -> cc(Bali-Dogle,e)  #106
+# d2d: punct(soldados,,) -> punct(orfanatos,,)  #106
 1	Hoje	hoje	ADV	ADV|@ADVL>	_	4	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	Bush	Bush	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
@@ -14,16 +18,16 @@
 9	cidades	cidade	NOUN	<first-cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	Baidoa	Baidoa	PROPN	<first-cjt>|PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	9	nmod	_	_
-12	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
+12	e	e	CCONJ	<co-prparg>|KC|@CO	_	13	cc	_	d2d:#106
 13	Bali-Dogle	Bali-Dogle	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	11	conj	_	ChangedBy=Issue149
-14	e	e	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	_
+14	e	e	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	d2d:#106
 15	mais	muito	DET	<KOMP>|<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	16	det	_	_
 16	visitas	visita	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	9	conj	_	_
 17	a	a	ADP	PRP|@N<	_	18	case	_	_
 18	soldados	soldado	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
-19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	orfanatos	orfanato	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	18	conj	_	_
-21	e	e	CCONJ	<co-prparg>|KC|@CO	_	18	cc	_	_
+21	e	e	CCONJ	<co-prparg>|KC|@CO	_	22	cc	_	d2d:#106
 22	organizações	organização	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	18	conj	_	_
 23	humanitárias	humanitário	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	22	amod	_	_
 24	.	.	PUNCT	PU|@PU	_	4	punct	_	_
@@ -33,6 +37,7 @@
 # source CETEMPúblico n=269 sec=pol sem=93a
 # sent_id CP269-2
 # id 1432
+# d2d: cc(tentou,e) -> cc(obedeceu,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	único	único	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	incidente	incidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
@@ -53,7 +58,7 @@
 18	em	em	ADP	<sam->|PRP|@<SA	_	20	case	_	_
 19	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	20	det	_	_
 20	instalações	instalação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	nmod	_	_
-21	e	e	CCONJ	<co-advl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	_
+21	e	e	CCONJ	<co-advl>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	d2d:#106
 22	não	não	ADV	_	Polarity=Neg	23	advmod	_	_
 23	obedeceu	obedecer	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	conj	_	_
 24	a	a	ADP	<sam->|PRP|@<PIV	_	26	case	_	_
@@ -82,20 +87,23 @@
 # source CETEMPúblico n=269 sec=pol sem=93a
 # sent_id CP269-3
 # id 1433
+# d2d: cc(disparou,mas) -> cc(avançar,mas)  #106
+# d2d: punct(disparou,,) -> punct(avançar,,)  #106
+# d2d: cc(avançar,e) -> cc(atingido,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	soldado	soldado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	disparou	disparar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	para	para	ADP	PRP|@ADVL>	_	6	case	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	ar	ar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue137
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+7	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
+8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	d2d:#106
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	indivíduo	indivíduo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
 11	continuou	continuar	AUX	<first-cjt>|<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux	_	_
 12	a	a	ADP	PRP|@PRT-AUX<	_	13	nmod	_	_
 13	avançar	avançar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	conj	_	_
-14	e	e	CCONJ	<co-vp>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	_
+14	e	e	CCONJ	<co-vp>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 15	foi	ser	AUX	<cjt>|<aux>|V|PS|3S|IND|@ICL-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux:pass	_	_
 16	atingido	atingir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	conj	_	_
 17	mortalmente	mortalmente	ADV	ADV|@<ADVL	_	16	advmod	_	_

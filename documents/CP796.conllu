@@ -39,6 +39,9 @@
 # source CETEMPúblico n=796 sec=nd sem=93a
 # sent_id CP796-2
 # id 4080
+# d2d: punct(União,,) -> punct(Movimento,,)  #106
+# d2d: punct(União,,) -> punct(sindicato,,)  #106
+# d2d: cc(União,e) -> cc(Comités,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	União	União	PROPN	_	Gender=Fem|Number=Sing	31	nsubj	_	ChangedBy=Issue119|MWE=União_Nacional|MWEPOS=PROPN
 3	Nacional	Nacional	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -47,7 +50,7 @@
 6	Estudantes	Estudantes	PROPN	PROP|@P<	Number=Sing	2	nmod	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	França	França	PROPN	PROP|@P<	Number=Sing	6	nmod	_	_
-9	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	sindicato	sindicato	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	MWE=sindicato_dos_Professores_do_Ensino_Superior
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
@@ -57,13 +60,13 @@
 16	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	Ensino	Ensino	NOUN	_	Number=Sing	14	nmod	_	MWE=ensino_superior|MWEPOS=NOUN
 18	Superior	Superior	ADJ	_	Number=Sing	17	compound	_	_
-19	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	Movimento	Movimento	PROPN	_	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue119|MWE=Movimento_22|MWEPOS=PROPN
 22	22	22	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	Março	Março	PROPN	PROP|@P<	Number=Sing	21	nmod	_	_
-25	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+25	e	e	CCONJ	<co-subj>|KC|@CO	_	27	cc	_	d2d:#106
 26	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
 27	Comités	Comités	PROPN	<cjt>|PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	conj	_	MWE=Comités_de_Acção_Liceal
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
@@ -196,6 +199,7 @@
 # source CETEMPúblico n=796 sec=nd sem=93a
 # sent_id CP796-8
 # id 4086
+# d2d: cc(agitando,e) -> cc(gritando,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	manifestantes	manifestante	ADJ	<n>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	reagem	reagir	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -206,7 +210,7 @@
 8	agitando	agitar	VERB	<first-cjt>|<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	3	advcl	_	_
 9	lenços	lenço	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	8	obj	_	_
 10	brancos	branco	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	9	amod	_	_
-11	e	e	CCONJ	<co-icl>|<co-ger>|KC|@CO	_	8	cc	_	_
+11	e	e	CCONJ	<co-icl>|<co-ger>|KC|@CO	_	12	cc	_	d2d:#106
 12	gritando	gritar	VERB	<cjt>|<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	8	conj	_	_
 13	«	«	PUNCT	PU|@PU	_	14	punct	_	_
 14	Adeus	adeus	INTJ	<first-cjt>|IN|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_

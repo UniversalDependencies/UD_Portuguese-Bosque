@@ -22,6 +22,10 @@
 # source CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id CF409-2
 # id 1702
+# d2d: punct(refinamento,,) -> punct(comunicação,,)  #106
+# d2d: cc(refinamento,e) -> cc(inteligência,e)  #106
+# d2d: cc(refinamento,além) -> cc(comunicação,além)  #106
+# d2d: cc(segurança,e) -> cc(pompa,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	16	cc	_	_
 2	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	16	nsubj	_	ChangedBy=Issue119|MWE=Michael_Tilson_Thomas|MWEPOS=PROPN
 3	Tilson	Tilson	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -33,7 +37,7 @@
 9	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	segurança	segurança	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue137
 11	natural	natural	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
-12	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	_
+12	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	d2d:#106
 13	nenhuma	nenhum	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	14	det	_	_
 14	pompa	pompa	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	conj	_	_
 15	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -59,10 +63,10 @@
 35	tempo	tempo	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	24	acl:relcl	_	_
 36	de	de	ADP	PRP|@N<	_	37	case	_	_
 37	refinamento	refinamento	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	_
-38	e	e	CCONJ	<co-prparg>|KC|@CO	_	37	cc	_	_
+38	e	e	CCONJ	<co-prparg>|KC|@CO	_	39	cc	_	d2d:#106
 39	inteligência	inteligência	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	37	conj	_	_
-40	,	,	PUNCT	PU|@PU	_	37	punct	_	_
-41	além	além	ADV	ADV|@CO	_	37	cc	_	MWE=além_de
+40	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
+41	além	além	ADV	ADV|@CO	_	43	cc	_	MWE=além_de|d2d:#106
 42	de	de	ADP	PRP|@A<	_	43	case	_	_
 43	comunicação	comunicação	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	37	conj	_	_
 44	.	.	PUNCT	PU|@PU	_	16	punct	_	_
@@ -72,8 +76,10 @@
 # source CETENFolha n=409 cad=Ilustrada sec=nd sem=94a &D
 # sent_id CF409-3
 # id 1703
+# d2d: punct(Simpático,,) -> punct(fluente,,)  #106
+# d2d: punct(Simpático,,) -> punct(vontade,,)  #106
 1	Simpático	simpático	ADJ	<first-cjt>|ADJ|M|S|@PRED>	Gender=Masc|Number=Sing	29	amod	_	_
-2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+2	,	,	PUNCT	PU|@PU	_	3	punct	_	d2d:#106
 3	fluente	fluente	ADJ	<cjt>|ADJ|M|S|@PRED>	Gender=Masc|Number=Sing	1	conj	_	_
 4	(	(	PUNCT	PU|@PU	_	7	punct	_	_
 5	com	com	ADP	PRP|@A<	_	7	case	_	_
@@ -81,7 +87,7 @@
 7	palavras	palavra	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
 8	também	também	ADV	ADV|@N<	_	7	advmod	_	_
 9	)	)	PUNCT	PU|@PU	_	7	punct	_	_
-10	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+10	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 11	a	a	ADP	<cjt>|<sam->|PRP|@PRED>	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	vontade	vontade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	conj	_	_
@@ -122,10 +128,12 @@
 # source CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id CF409-4
 # id 1704
+# d2d: cc(simples,nem) -> cc(beethoveniano,nem)  #106
+# d2d: punct(simples,,) -> punct(beethoveniano,,)  #106
 1	Nem	nem	CCONJ	<parkc-1>|KC|@CO	_	2	cc	_	_
 2	simples	simples	ADJ	<first-cjt>|ADJ|M|S|@SC>	Gender=Masc|Number=Sing	0	root	_	_
-3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-4	nem	nem	CCONJ	<parkc-2>|KC|@CO	_	2	cc	_	_
+3	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
+4	nem	nem	CCONJ	<parkc-2>|KC|@CO	_	7	cc	_	d2d:#106
 5	muito	muito	ADV	<quant>|ADV|@>A	_	6	advmod	_	_
 6	menos	menos	ADV	<quant>|<KOMP>|<COMP>|ADV|@>N	_	7	advmod	_	_
 7	beethoveniano	beethoveniano	ADJ	<cjt>|<n>|<np-idf>|ADJ|M|S|@SC>	Gender=Masc|Number=Sing	2	conj	_	_
@@ -157,6 +165,8 @@
 # source CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id CF409-6
 # id 1706
+# d2d: cc(longe,mas) -> cc(deixa,mas)  #106
+# d2d: punct(longe,,) -> punct(deixa,,)  #106
 1	Está	estar	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
 2	longe	longe	ADV	ADV|@<SA	_	0	root	_	_
 3	de	de	ADP	PRP|@A<ARG	_	6	mark	_	_
@@ -165,8 +175,8 @@
 6	melhor	bom	ADJ	<KOMP>|<SUP>|<n>|<np-def>|<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	2	amod	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	Tchaikovski	Tchaikovski	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
-9	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	diabolismo	diabolismo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
@@ -185,6 +195,8 @@
 # source CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id CF409-7
 # id 1707
+# d2d: cc(dedos,e) -> cc(medo,e)  #106
+# d2d: punct(dedos,,) -> punct(afinadíssimo,,)  #106
 1	Diabolismo	diabolismo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	falta	faltar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -200,9 +212,9 @@
 13	de	de	ADP	<first-cjt>|PRP|@N<	_	15	case	_	_
 14	mil	mil	NUM	<card>|NUM|M|P|@>N	_	15	nummod	_	_
 15	dedos	dedo	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	afinadíssimo	afinadíssimo	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	conj	_	_
-18	e	e	CCONJ	<co-postnom>|<co-sc>|KC|@CO	_	15	cc	_	_
+18	e	e	CCONJ	<co-postnom>|<co-sc>|KC|@CO	_	20	cc	_	d2d:#106
 19	sem	sem	ADP	<cjt>|PRP|@N<	_	20	case	_	_
 20	medo	medo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	conj	_	_
 21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
@@ -215,15 +227,17 @@
 # source CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id CF409-8
 # id 1708
+# d2d: cc(brutalidade,ou) -> cc(agressividade,ou)  #106
+# d2d: punct(brutalidade,,) -> punct(impaciência,,)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	2	cc	_	_
 2	toca	tocar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	também	também	ADV	ADV|@<ADVL	_	2	advmod	_	_
 4	com	com	ADP	PRP|@<ADVL	_	6	case	_	_
 5	certa	certo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	6	det	_	_
 6	brutalidade	brutalidade	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	ChangedBy=Issue137
-7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 8	impaciência	impaciência	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	_
-9	ou	ou	CCONJ	KC|@CO	_	6	cc	_	_
+9	ou	ou	CCONJ	KC|@CO	_	10	cc	_	d2d:#106
 10	agressividade	agressividade	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	_
 11	com	com	ADP	PRP|@N<	_	13	case	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_

@@ -57,12 +57,15 @@
 # source CETEMPúblico n=631 sec=clt sem=98b
 # sent_id CP631-5
 # id 3290
+# d2d: punct(cozinha,,) -> punct(telefonaram-,,)  #106
+# d2d: cc(cozinha,e) -> cc(telefonaram-,e)  #106
+# d2d: punct(cozinha,,) -> punct(telefonaram-,,)  #106
 1	Eu	eu	PRON	PERS|F|1S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
 2	estava	estar	VERB	<first-cjt>|<mv>|V|IMPF|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	5	cop	_	_
 3	em	em	ADP	<sam->|PRP|@<SA	_	5	case	_	_
 4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	cozinha	cozinha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 7	onde	onde	ADV	<rel>|ADV|@ADVL>	_	12	advmod	_	_
 8	quase	quase	ADV	<quant>|ADV|@>N	_	9	advmod	_	_
 9	tudo	tudo	PRON	<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	12	nsubj	_	_
@@ -72,8 +75,8 @@
 13	em	em	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	aquela	aquele	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	15	det	_	_
 15	casa	casa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-17	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	5	cc	_	_
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+17	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 18	telefonaram-	telefonar	VERB	<mv>|<cjt>|<hyphen>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
 19	me	eu	PRON	<refl>|PERS|F|1S|ACC|@<ACC	Case=Acc|Gender=Fem|Number=Sing|Person=1|PronType=Prs	18	obj	_	_
 20	.	.	PUNCT	PU|@PU	_	5	punct	_	_
@@ -83,8 +86,14 @@
 # source CETEMPúblico n=631 sec=clt sem=98b
 # sent_id CP631-6
 # id 3291
+# d2d: cc(Atendi,mas) -> cc(ouvi,mas)  #106
+# d2d: punct(agradeci,,) -> punct(cortês,,)  #106
+# d2d: cc(Atendi,e) -> cc(ouvi,e)  #106
+# d2d: punct(agradeci,,) -> punct(dei,,)  #106
+# d2d: punct(Atendi,,) -> punct(fez-,,)  #106
+# d2d: punct(Atendi,,) -> punct(sei,,)  #106
 1	Atendi	atender	VERB	<mv>|<first-cjt>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
-2	e	e	CCONJ	<co-vfin>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 3	creio	crer	VERB	<first-cjt>|<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	dep	_	_
 4	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
 5	falou	falar	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	ccomp	_	_
@@ -98,7 +107,7 @@
 13	sei	saber	VERB	<mv>|V|PS|1S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	advcl	_	_
 14	inglês	inglês	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	obj	_	_
 15	--	--	PUNCT	PU|@PU	_	13	punct	_	_
-16	mas	mas	CCONJ	<co-cu>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+16	mas	mas	CCONJ	<co-cu>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 17	quando	quando	ADV	<rel>|ADV|@ADVL>	_	18	advmod	_	_
 18	ouvi	ouvir	VERB	<cjt>|<mv>|V|PS|1S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	24	advcl	_	_
 19	'	'	PUNCT	PU|@PU	_	20	punct	_	_
@@ -109,7 +118,7 @@
 24	ouvi	ouvir	VERB	<first-cjt>|<cjt>|<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	1	conj	_	_
 25	mais	mais	ADV	<setop>|ADV|@>N	_	26	advmod	_	MWE=mais_nada
 26	nada	nada	PRON	INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	24	obj	_	_
-27	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+27	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
 28	fez-	fazer	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	_	_
 29	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	expl	_	ChangedBy=Issue135
 30	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
@@ -117,16 +126,16 @@
 32	em	em	ADP	<sam->|PRP|@<OA	_	34	case	_	_
 33	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	cabeça	cabeça	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	_
-35	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
 36	não	não	ADV	_	Polarity=Neg	37	advmod	_	_
 37	sei	saber	VERB	<cjt>|<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	1	conj	_	_
 38	se	se	SCONJ	KS|@SUB	_	39	mark	_	_
 39	agradeci	agradecer	VERB	<first-cjt>|<mv>|V|PS|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	37	ccomp	_	_
-40	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+40	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 41	se	se	SCONJ	KS|@SUB	_	43	mark	_	_
 42	fui	ser	VERB	<cjt>|<mv>|V|PS|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	43	cop	_	_
 43	cortês	cortês	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	39	conj	_	_
-44	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+44	,	,	PUNCT	PU|@PU	_	46	punct	_	d2d:#106
 45	se	se	SCONJ	KS|@SUB	_	46	mark	_	_
 46	dei	dar	VERB	<cjt>|<mv>|V|PS|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	39	conj	_	_
 47	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
@@ -138,14 +147,19 @@
 # source CETEMPúblico n=631 sec=clt sem=98b
 # sent_id CP631-7
 # id 3292
+# d2d: cc(gritei,e) -> cc(apareceu,e)  #106
+# d2d: cc(gritei,e) -> cc(correr,e)  #106
+# d2d: punct(gritei,!) -> punct(apareceu,!)  #106
+# d2d: punct(gritei,:) -> punct(apareceu,:)  #106
+# d2d: punct(gritei,,) -> punct(apareceu,,)  #106
 1	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	2	advmod	_	_
 2	desliguei	desligar	VERB	<mv>|V|PS|1S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	advcl	_	_
 3	gritei	gritar	VERB	<mv>|<first-cjt>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
-4	:	:	PUNCT	PU|@PU	_	3	punct	_	_
+4	:	:	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 5	Noooobel	Noooobel	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
-6	!	!	PUNCT	PU|@PU	_	3	punct	_	_
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+6	!	!	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+7	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 9	toda	todo	DET	DET|F|S|@>N	Gender=Fem|Number=Sing	11	det	_	MWE=toda_a
 10	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	gente	gente	PRON	INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Ind	16	nsubj	_	_
@@ -154,7 +168,7 @@
 14	em	em	ADP	PRP|@<SA	_	15	case	_	MWE=em_casa
 15	casa	casa	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
 16	apareceu	aparecer	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
-17	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+17	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 18	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
 19	cães	cão	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	22	nsubj	_	_
 20	começaram	começar	AUX	<cjt>|<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	aux	_	_
@@ -190,12 +204,13 @@
 # source CETEMPúblico n=631 sec=clt sem=98b
 # sent_id CP631-9
 # id 3294
+# d2d: cc(tinha,e) -> cc(dizia,e)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 4	tinha	ter	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 5	moedas	moeda	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
-6	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+6	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 7	eu	eu	PRON	PERS|F|1S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
 8	só	só	ADV	ADV|@ADVL>	_	9	advmod	_	_
 9	dizia	dizer	VERB	<cjt>|<mv>|V|IMPF|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	conj	_	_
@@ -261,11 +276,13 @@
 # source CETEMPúblico n=631 sec=clt sem=98b
 # sent_id CP631-13
 # id 3297
+# d2d: punct(felicitei,,) -> punct(carinhosa,,)  #106
+# d2d: cc(felicitei,nem) -> cc(carinhosa,nem)  #106
 1	nem	nem	ADV	<kc>|ADV|@CO	_	3	cc	_	_
 2	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
 3	felicitei	felicitar	VERB	<first-cjt>|<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
-4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-5	nem	nem	ADV	<co-fcl>|<kc>|ADV|@CO	_	3	cc	_	_
+4	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
+5	nem	nem	ADV	<co-fcl>|<kc>|ADV|@CO	_	7	cc	_	d2d:#106
 6	fui	ser	VERB	<cjt>|<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	7	cop	_	_
 7	carinhosa	carinhoso	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	3	conj	_	_
 8	..	..	PUNCT	PU|@PU	_	3	punct	_	_

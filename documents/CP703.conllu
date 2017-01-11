@@ -3,11 +3,12 @@
 # source CETEMPúblico n=703 sec=clt sem=97b
 # sent_id CP703-1
 # id 3612
+# d2d: cc(filtros,e) -> cc(tipo,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	aparecimento	aparecimento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	28	nsubj	_	_
 3	de	de	ADP	<first-cjt>|PRP|@N<	_	4	case	_	_
 4	filtros	filtro	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
-5	e	e	CCONJ	<co-postnom>|KC|@CO	_	4	cc	_	_
+5	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	d2d:#106
 6	de	de	ADP	<cjt>|PRP|@N<	_	8	case	_	_
 7	certo	certo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	8	det	_	_
 8	tipo	tipo	NOUN	<cjt>|<meta>|<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	conj	_	_
@@ -63,6 +64,8 @@
 # source CETEMPúblico n=703 sec=clt sem=97b
 # sent_id CP703-2
 # id 3613
+# d2d: punct(irritante,,) -> punct(difícil,,)  #106
+# d2d: cc(irritante,e) -> cc(difícil,e)  #106
 1	Até	até	ADP	PRP|@ADVL>	_	4	case	_	_
 2	a	a	ADP	<sam->|PRP|@P<	_	4	case	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -81,8 +84,8 @@
 16	era	ser	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	18	cop	_	_
 17	extremamente	extremamente	ADV	<quant>|ADV|@>A	_	18	advmod	_	_
 18	irritante	irritante	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-19	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	_
-20	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+19	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	27	cc	_	d2d:#106
+20	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 21	em	em	ADP	PRP|@ADVL>	_	22	case	_	_
 22	consequência	consequência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
 23	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
@@ -100,6 +103,11 @@
 # source CETEMPúblico n=703 sec=clt sem=97b
 # sent_id CP703-3
 # id 3614
+# d2d: cc(ficava-,e) -> cc(depositava-,e)  #106
+# d2d: cc(realizava,e) -> cc(ficava-,e)  #106
+# d2d: punct(realizava,,) -> punct(ficava-,,)  #106
+# d2d: cc(garganta,e) -> cc(boca,e)  #106
+# d2d: punct(realizava,,) -> punct(ficava-,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	parte	parte	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -107,14 +115,14 @@
 5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
 6	fumadores	fumador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
 7	realizava	realizar	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 9	assim	assim	ADV	<kc>|ADV|@<ADVL	_	7	advmod	_	_
-10	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+10	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 11	apenas	apenas	ADV	<rel>|ADV|@>A	_	12	advmod	_	_
 12	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	inalação	inalação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
 14	parcial	parcial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	_
-15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	_
+15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 17	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	18	amod	_	_
 18	parte	parte	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
@@ -128,13 +136,13 @@
 26	vias	via	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
 27	respiratórias	respiratório	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	26	amod	_	_
 28	superiores	alto	ADJ	<KOMP>|<COMP>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	26	amod	_	_
-29	e	e	CCONJ	<co-cjt>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	_
+29	e	e	CCONJ	<co-cjt>|<co-fmc>|<co-vfin>|KC|@CO	_	30	cc	_	d2d:#106
 30	depositava-	depositar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	conj	_	_
 31	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	30	expl	_	ChangedBy=Issue135
 32	em	em	ADP	<first-cjt>|<sam->|PRP|@<OA	_	34	case	_	_
 33	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	garganta	garganta	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	30	nmod	_	_
-35	e	e	CCONJ	<co-advo>|KC|@CO	_	34	cc	_	_
+35	e	e	CCONJ	<co-advo>|KC|@CO	_	38	cc	_	d2d:#106
 36	em	em	ADP	<sam->|<cjt>|PRP|@<OA	_	38	case	_	_
 37	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
 38	boca	boca	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	34	conj	_	_
@@ -145,6 +153,7 @@
 # source CETEMPúblico n=703 sec=clt sem=97b
 # sent_id CP703-4
 # id 3615
+# d2d: cc(fixava,e) -> cc(surgiam,e)  #106
 1	Era	era	ADV	<foc>|ADV|@ADVL>	_	5	advmod	_	_
 2	aí	aí	ADV	<kc>|ADV|@ADVL>	_	5	advmod	_	_
 3	que	que	ADV	<foc>|ADV|@ADVL>	_	5	mark	_	_
@@ -157,7 +166,7 @@
 10	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
 11	substâncias	substância	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	_
 12	cancerígenas	cancerígeno	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	11	amod	_	_
-13	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	5	cc	_	_
+13	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	d2d:#106
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 15	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	16	amod	_	_
 16	parte	parte	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	23	nsubj	_	_
@@ -178,12 +187,13 @@
 # source CETEMPúblico n=703 sec=clt sem=97b
 # sent_id CP703-5
 # id 3616
+# d2d: cc(filtros,e) -> cc(tabacos,e)  #106
 1	Foi	foi	ADV	<foc>|ADV|@ADVL>	_	16	mark	_	_
 2	quando	quando	ADV	<rel>|ADV|@ADVL>	_	3	advmod	_	_
 3	apareceram	aparecer	VERB	<mv>|V|PS|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	advcl	_	_
 4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
 5	filtros	filtro	NOUN	<first-cjt>|<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	3	nsubj	_	_
-6	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-subj>|KC|@CO	_	8	cc	_	d2d:#106
 7	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
 8	tabacos	tabaco	NOUN	<cjt>|<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	5	conj	_	_
 9	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	10	advmod	_	_

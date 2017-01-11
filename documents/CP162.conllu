@@ -59,6 +59,9 @@
 # source CETEMPúblico n=162 sec=pol sem=93b
 # sent_id CP162-5
 # id 858
+# d2d: cc(esgotada,e) -> cc(esfomeada,e)  #106
+# d2d: cc(Adia,mas) -> cc(resolve,mas)  #106
+# d2d: punct(Adia,,) -> punct(resolve,,)  #106
 1	Adia	adiar	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	sofrimento	sofrimento	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
@@ -66,10 +69,10 @@
 5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	população	população	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 7	esgotada	esgotar	VERB	<mv>|<first-cjt>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
-8	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	d2d:#106
 9	esfomeada	esfomear	VERB	<mv>|<cjt>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	7	conj	_	_
-10	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-11	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+10	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
+11	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
 12	não	não	ADV	_	Polarity=Neg	14	advmod	_	_
 13	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	obj	_	_
 14	resolve	resolver	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
@@ -82,6 +85,7 @@
 # source CETEMPúblico n=162 sec=pol sem=93b
 # sent_id CP162-6
 # id 859
+# d2d: cc(prolongar,e) -> cc(alimentar,e)  #106
 1	Crescem	crescer	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	receios	receio	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	1	nsubj	_	_
@@ -94,7 +98,7 @@
 10	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	guerra	guerra	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
 12	devastadora	devastador	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
-13	e	e	CCONJ	<co-icl>|KC|@CO	_	9	cc	_	_
+13	e	e	CCONJ	<co-icl>|KC|@CO	_	14	cc	_	d2d:#106
 14	alimentar	alimentar	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	9	conj	_	_
 15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
 16	florescentes	florescente	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	17	amod	_	_

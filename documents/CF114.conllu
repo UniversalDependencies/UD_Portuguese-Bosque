@@ -25,6 +25,7 @@
 # source CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id CF114-2
 # id 443
+# d2d: cc(filiais,ou) -> cc(representantes,ou)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	empresa	empresa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	norte-americana	norte-americana	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -36,7 +37,7 @@
 9	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
 10	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
 11	filiais	filial	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
-12	ou	ou	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	_
+12	ou	ou	CCONJ	<co-acc>|KC|@CO	_	13	cc	_	d2d:#106
 13	representantes	representante	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	11	conj	_	_
 14	em	em	ADP	<sam->|PRP|@<ADVL	_	16	case	_	_
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
@@ -78,6 +79,7 @@
 # source CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id CF114-5
 # id 446
+# d2d: cc(começou,e) -> cc(terminou,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	ação	ação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<ARG	_	5	case	_	_
@@ -89,7 +91,7 @@
 9	16h30	16h30	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	6	obl	_	ChangedBy=Issue137
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	anteontem	anteontem	ADV	ADV|@P<	_	9	advmod	_	_
-12	e	e	CCONJ	<co-sta>|KC|@CO	_	6	cc	_	_
+12	e	e	CCONJ	<co-sta>|KC|@CO	_	14	cc	_	d2d:#106
 13	só	só	ADV	ADV|@ADVL>	_	14	advmod	_	_
 14	terminou	terminar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
 15	ontem	ontem	ADV	ADV|@<ADVL	_	14	advmod	_	_
@@ -119,6 +121,8 @@
 # source CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id CF114-7
 # id 448
+# d2d: punct(levantou,,) -> punct(acredita,,)  #106
+# d2d: cc(levantou,mas) -> cc(acredita,mas)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	PF	PF	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	ainda	ainda	ADV	ADV|@>A	_	4	advmod	_	_
@@ -130,8 +134,8 @@
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	golpe	golpe	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
-12	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-13	mas	mas	CCONJ	<co-sta>|KC|@CO	_	5	cc	_	_
+12	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
+13	mas	mas	CCONJ	<co-sta>|KC|@CO	_	14	cc	_	d2d:#106
 14	acredita	acreditar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
 15	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
 16	por	por	ADP	<sam->|PRP|@N<	_	18	case	_	_

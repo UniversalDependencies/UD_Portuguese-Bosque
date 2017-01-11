@@ -3,8 +3,9 @@
 # source CETEMPúblico n=273 sec=eco sem=94b
 # sent_id CP273-1
 # id 1450
+# d2d: cc(Japão,e) -> cc(EUA,e)  #106
 1	Japão	Japão	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	EUA	EUA	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	1	conj	_	ChangedBy=Issue149
 4	negoceiam	negociar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 
@@ -68,6 +69,12 @@
 # source CETEMPúblico n=273 sec=eco sem=94b
 # sent_id CP273-3
 # id 1452
+# d2d: cc(automóvel,e) -> cc(mercados,e)  #106
+# d2d: cc(telecomunicações,e) -> cc(satélites,e)  #106
+# d2d: punct(telecomunicações,,) -> punct(equipamento,,)  #106
+# d2d: punct(afirmou,,) -> punct(adiantou,,)  #106
+# d2d: punct(telecomunicações,,) -> punct(computadores,,)  #106
+# d2d: cc(afirmou,mas) -> cc(adiantou,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ministro	ministro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	MWE=ministro_das_Finanças
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -85,8 +92,8 @@
 15	atitude	atitude	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	obj	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	Washington	Washington	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-19	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+19	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 20	adiantou	adiantar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	_	_
 21	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
@@ -114,7 +121,7 @@
 44	automóvel	automóvel	NOUN	<first-cjt>|<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	36	appos	_	_
 45	,	,	PUNCT	PU|@PU	_	55	punct	_	_
 46	seguros	seguro	NOUN	<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	44	conj	_	ChangedBy=Issue149
-47	e	e	CCONJ	<co-app>|KC|@CO	_	44	cc	_	_
+47	e	e	CCONJ	<co-app>|KC|@CO	_	48	cc	_	d2d:#106
 48	mercados	mercado	NOUN	<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	44	conj	_	ChangedBy=Issue149
 49	públicos	público	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	48	amod	_	_
 50	em	em	ADP	<sam->|PRP|@N<	_	52	case	_	_
@@ -123,12 +130,12 @@
 53	de	de	ADP	<sam->|PRP|@N<	_	55	case	_	_
 54	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	55	det	_	_
 55	telecomunicações	telecomunicação	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	52	nmod	_	_
-56	,	,	PUNCT	PU|@PU	_	55	punct	_	_
+56	,	,	PUNCT	PU|@PU	_	57	punct	_	d2d:#106
 57	equipamento	equipamento	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	55	conj	_	_
 58	médico	médico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	57	amod	_	_
-59	,	,	PUNCT	PU|@PU	_	55	punct	_	_
+59	,	,	PUNCT	PU|@PU	_	60	punct	_	d2d:#106
 60	computadores	computador	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	55	conj	_	_
-61	e	e	CCONJ	<co-prparg>|KC|@CO	_	55	cc	_	_
+61	e	e	CCONJ	<co-prparg>|KC|@CO	_	62	cc	_	d2d:#106
 62	satélites	satélite	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	55	conj	_	_
 63	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 

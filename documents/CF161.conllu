@@ -3,6 +3,9 @@
 # source CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id CF161-1
 # id 671
+# d2d: cc(novo,e) -> cc(barato,e)  #106
+# d2d: cc(Stan,e) -> cc(pianistas,e)  #106
+# d2d: punct(novo,,) -> punct(talentoso,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	impacto	impacto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	30	nsubj	_	_
 3	provocado	provocar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	_	_
@@ -25,7 +28,7 @@
 20	por	por	ADP	<first-cjt>|PRP|@PASS	_	21	case	_	_
 21	Stan	Stan	PROPN	_	Gender=Masc|Number=Sing	19	obl:agent	_	ChangedBy=Issue119|MWE=Stan_Kenton|MWEPOS=PROPN
 22	Kenton	Kenton	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
-23	e	e	CCONJ	<co-pass>|KC|@CO	_	21	cc	_	_
+23	e	e	CCONJ	<co-pass>|KC|@CO	_	26	cc	_	d2d:#106
 24	até	até	ADV	ADV|@>A	_	26	advmod	_	_
 25	por	por	ADP	<cjt>|PRP|@PASS	_	26	case	_	_
 26	pianistas	pianista	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	21	conj	_	_
@@ -45,9 +48,9 @@
 40	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
 41	músico	músico	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	39	obj	_	_
 42	novo	novo	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	41	amod	_	_
-43	,	,	PUNCT	PU|@PU	_	42	punct	_	_
+43	,	,	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
 44	talentoso	talentoso	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	42	conj	_	_
-45	e	e	CCONJ	<co-postnom>|KC|@CO	_	42	cc	_	_
+45	e	e	CCONJ	<co-postnom>|KC|@CO	_	46	cc	_	d2d:#106
 46	barato	barato	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	42	conj	_	_
 47	para	para	ADP	PRP|@<ADVL	_	48	mark	_	_
 48	compor	compor	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	39	advcl	_	_
@@ -67,15 +70,17 @@
 # source CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id CF161-2
 # id 672
+# d2d: cc(jovem,e) -> cc(barato,e)  #106
+# d2d: punct(jovem,,) -> punct(talentoso,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 2	jovem	jovem	ADJ	<n>|<first-cjt>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	11	amod	_	_
 3	(	(	PUNCT	PU|@PU	_	5	punct	_	_
 4	34	34	NUM	<card>|NUM|M|P|@>N	_	5	nummod	_	_
 5	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@A<	Gender=Masc|Number=Plur	2	nmod:npmod	_	_
 6	)	)	PUNCT	PU|@PU	_	5	punct	_	_
-7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 8	talentoso	talentoso	ADJ	<cjt>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	2	conj	_	_
-9	e	e	CCONJ	<co-prenom>|KC|@CO	_	2	cc	_	_
+9	e	e	CCONJ	<co-prenom>|KC|@CO	_	10	cc	_	d2d:#106
 10	barato	barato	ADJ	<cjt>|ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	2	conj	_	_
 11	Mancini	Mancini	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 12	entrou	entrar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -142,13 +147,15 @@
 # source CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id CF161-5
 # id 675
+# d2d: cc(sólida,e) -> cc(longa,e)  #106
+# d2d: cc(comédias,e) -> cc(dramas,e)  #106
 1	De	de	ADP	PRP|@ADVL>	_	3	case	_	_
 2	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
 3	modo	modo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue137
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 6	sólida	sólido	ADJ	<first-cjt>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	9	amod	_	_
-7	e	e	CCONJ	<co-prenom>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-prenom>|KC|@CO	_	8	cc	_	d2d:#106
 8	longa	longo	ADJ	<cjt>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	6	conj	_	_
 9	parceria	parceria	NOUN	<com>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
 10	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	expl	_	ChangedBy=Issue135
@@ -156,7 +163,7 @@
 12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 13	alternando	alternar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	11	advcl	_	_
 14	comédias	comédia	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	13	obj	_	_
-15	e	e	CCONJ	<co-acc>|KC|@CO	_	14	cc	_	_
+15	e	e	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	d2d:#106
 16	dramas	drama	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	conj	_	_
 17	cuja	cujo	DET	<rel>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Rel	18	det	_	_
 18	qualidade	qualidade	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
@@ -247,6 +254,8 @@
 # source CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id CF161-8
 # id 678
+# d2d: punct(Moonriver,») -> punct(Days,»)  #106
+# d2d: cc(Moonriver,e) -> cc(Days,e)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	2	case	_	_
 2	duas	dois	NUM	<card>|NUM|F|P|@P<	_	25	nmod	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -254,8 +263,8 @@
 5	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 6	«	«	PUNCT	PU|@PU	_	7	punct	_	_
 7	Moonriver	Moonriver	PROPN	<first-cjt>|PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	4	appos	_	_
-8	»	»	PUNCT	PU|@PU	_	7	punct	_	_
-9	e	e	CCONJ	KC|@CO	_	7	cc	_	_
+8	»	»	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
+9	e	e	CCONJ	KC|@CO	_	11	cc	_	d2d:#106
 10	«	«	PUNCT	PU|@PU	_	11	punct	_	_
 11	Days	Days	PROPN	_	Gender=Fem|Number=Sing	7	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Days_of_Wine_and_Roses|MWEPOS=PROPN
 12	of	of	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119

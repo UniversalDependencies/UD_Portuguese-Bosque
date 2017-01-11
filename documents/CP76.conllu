@@ -3,6 +3,8 @@
 # source CETEMPúblico n=76 sec=des sem=94b
 # sent_id CP76-1
 # id 409
+# d2d: punct(ex-jogador,,) -> punct(ex-seleccionador,,)  #106
+# d2d: cc(ex-jogador,e) -> cc(coordenador,e)  #106
 1	Observador	observador	NOUN	<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	33	nmod	_	_
 2	privilegiado	privilegiar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -12,10 +14,10 @@
 7	Platini	Platini	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 9	ex-jogador	ex-jogador	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	appos	_	_
-10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+10	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 11	ex-seleccionador	ex-seleccionador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	9	conj	_	ChangedBy=Issue149
 12	nacional	nacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
-13	e	e	CCONJ	<co-pred>|KC|@CO	_	9	cc	_	_
+13	e	e	CCONJ	<co-pred>|KC|@CO	_	15	cc	_	d2d:#106
 14	actual	actual	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	15	amod	_	_
 15	coordenador	coordenador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	9	conj	_	ChangedBy=Issue149
 16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
@@ -57,6 +59,7 @@
 # source CETEMPúblico n=76 sec=des sem=94b
 # sent_id CP76-2
 # id 410
+# d2d: cc(comparações,e) -> cc(previsões,e)  #106
 1	Por	por	ADV	ADV|@ADVL>	_	14	advmod	_	MWE=Por_entre
 2	entre	entre	ADP	PRP|@A<	_	3	case	_	_
 3	críticas	crítica	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	1	nmod	_	_
@@ -73,7 +76,7 @@
 14	faz	fazer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 15	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	16	det	_	_
 16	comparações	comparação	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	14	obj	_	_
-17	e	e	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	_
+17	e	e	CCONJ	<co-acc>|KC|@CO	_	18	cc	_	d2d:#106
 18	previsões	previsão	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	16	conj	_	_
 19	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 

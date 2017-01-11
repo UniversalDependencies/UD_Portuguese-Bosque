@@ -3,17 +3,20 @@
 # source CETEMPúblico n=431 sec=pol sem=92a
 # sent_id CP431-1
 # id 2260
+# d2d: cc(centenas,e) -> cc(meia,e)  #106
+# d2d: cc(ver,e) -> cc(aplaudir,e)  #106
+# d2d: punct(ver,,) -> punct(ouvir,,)  #106
 1	Três	três	NUM	<card>|NUM|F|P|@>N	_	2	nummod	_	_
 2	centenas	centena	NOUN	<first-cjt>|<np-def>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
-3	e	e	CCONJ	<co-utt>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-utt>|KC|@CO	_	4	cc	_	d2d:#106
 4	meia	meia	NOUN	<cjt>|<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	2	conj	_	_
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	nmod	_	_
 7	a	a	ADP	PRP|@N<	_	8	mark	_	_
 8	ver	ver	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	_
-9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	ouvir	ouvir	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	8	conj	_	_
-11	e	e	CCONJ	<co-inf>|KC|@CO	_	8	cc	_	_
+11	e	e	CCONJ	<co-inf>|KC|@CO	_	12	cc	_	d2d:#106
 12	aplaudir	aplaudir	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	8	conj	_	_
 13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	espectáculo	espectáculo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
@@ -30,6 +33,7 @@
 # source CETEMPúblico n=431 sec=pol sem=92a
 # sent_id CP431-2
 # id 2261
+# d2d: cc(sentaram-,e) -> cc(levantaram-,e)  #106
 1	Ontem	ontem	ADV	ADV|@ADVL>	_	15	advmod	_	_
 2	a	a	ADP	<sam->|PRP|@A<	_	4	case	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -52,7 +56,7 @@
 20	de	de	ADP	PRP|@N<	_	22	case	_	_
 21	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
 22	estudantes	estudante	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	_
-23	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	_
+23	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 24	levantaram-	levantar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	15	conj	_	_
 25	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	24	expl	_	ChangedBy=Issue135
 26	para	para	ADP	PRP|@<ADVL	_	27	mark	_	_
@@ -90,8 +94,10 @@
 # source CETEMPúblico n=431 sec=pol sem=92a
 # sent_id CP431-3
 # id 2262
+# d2d: cc(trajes,e) -> cc(panos,e)  #106
+# d2d: cc(Crianças,e) -> cc(adultos,e)  #106
 1	Crianças	criança	NOUN	<first-cjt>|<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	adultos	adulto	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	1	conj	_	_
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
@@ -102,7 +108,7 @@
 10	com	com	ADP	PRP|@<ADVL	_	12	case	_	_
 11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	trajes	traje	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obl	_	ChangedBy=Issue137
-13	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	d2d:#106
 14	panos	pano	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	conj	_	_
 15	coloridos	colorir	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	14	acl	_	_
 16	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	21	obj	_	_
@@ -118,6 +124,7 @@
 # source CETEMPúblico n=431 sec=pol sem=92a
 # sent_id CP431-4
 # id 2263
+# d2d: cc(poeta,e) -> cc(cântico,e)  #106
 1	Leu-	ler	VERB	<mv>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -126,7 +133,7 @@
 6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	Costa	Costa	PROPN	PROP|@P<	Number=Sing	5	nmod	_	_
-9	e	e	CCONJ	<co-acc>|KC|@CO	_	4	cc	_	_
+9	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	d2d:#106
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	cântico	cântico	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	conj	_	_
 12	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	15	obj	_	_
@@ -185,10 +192,12 @@
 # source CETEMPúblico n=431 sec=pol sem=92a
 # sent_id CP431-6
 # id 2265
+# d2d: punct(lacónicas,,) -> punct(fizeram,,)  #106
+# d2d: cc(lacónicas,mas) -> cc(fizeram,mas)  #106
 1	Palavras	palavra	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	lacónicas	lacónico	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	1	amod	_	_
-3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-4	mas	mas	CCONJ	KC|@CO	_	2	cc	_	_
+3	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
+4	mas	mas	CCONJ	KC|@CO	_	6	cc	_	d2d:#106
 5	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	6	nsubj	_	_
 6	fizeram	fazer	VERB	<mv>|<cjt>|V|PS|3P|IND|@N<	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
 7	explodir	explodir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	6	xcomp	_	_
@@ -219,6 +228,8 @@
 # source CETEMPúblico n=431 sec=pol sem=92a
 # sent_id CP431-8
 # id 2267
+# d2d: cc(composto,e) -> cc(ensaiado,e)  #106
+# d2d: cc(música,e) -> cc(emoção,e)  #106
 1	Depois	depois	ADV	ADV|@ADVL>	_	11	advmod	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	_
@@ -226,7 +237,7 @@
 5	cúmulo	cúmulo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue137
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	música	música	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
-8	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	d2d:#106
 9	emoção	emoção	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	conj	_	_
 10	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 11	cantou-	cantar	VERB	<mv>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -239,7 +250,7 @@
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	hino	hino	NOUN	<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	14	appos	_	_
 20	composto	compor	VERB	<mv>|<first-cjt>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	19	acl	_	_
-21	e	e	CCONJ	<co-postnom>|KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	d2d:#106
 22	ensaiado	ensaiar	VERB	<mv>|<cjt>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	20	conj	_	_
 23	para	para	ADP	PRP|@<ADVL	_	25	case	_	_
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
@@ -257,9 +268,10 @@
 # source CETEMPúblico n=431 sec=pol sem=92a
 # sent_id CP431-9
 # id 2268
+# d2d: cc(Venham,e) -> cc(juntem-,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
 2	Venham	vir	VERB	<mv>|<first-cjt>|V|PR|3P|SUBJ|@FS-STA	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	e	e	CCONJ	<co-vfin>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-vfin>|KC|@CO	_	4	cc	_	d2d:#106
 4	juntem-	juntar	VERB	<mv>|<hyphen>|<se-passive>|<cjt>|V|PR|3P|SUBJ|@FS-STA	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 5	se	se	PRON	PERS|M/F|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Unsp|Number=Plur|Person=3|PronType=Prs	4	expl	_	ChangedBy=Issue135
 6	a	a	ADP	<sam->|PRP|@<PIV	_	8	case	_	_
@@ -317,6 +329,7 @@
 # source CETEMPúblico n=431 sec=pol sem=92a
 # sent_id CP431-14
 # id 2273
+# d2d: cc(soluçou,e) -> cc(chorou,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	local	local	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue137
@@ -332,7 +345,7 @@
 13	de	de	ADP	PRP|@<ADVL	_	14	case	_	_
 14	guerreiro	guerreiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137
 15	soluçou	soluçar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-16	e	e	CCONJ	<co-vfin>|KC|@CO	_	15	cc	_	_
+16	e	e	CCONJ	<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 17	chorou	chorar	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	_	_
 18	abraçado	abraçar	VERB	<mv>|V|PCP|M|S|@ICL-<PRED	Gender=Masc|Number=Sing|VerbForm=Part	15	dep	_	_
 19	a	a	ADP	<sam->|PRP|@<ADVL	_	21	case	_	_

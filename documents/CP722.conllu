@@ -112,6 +112,10 @@
 # source CETEMPúblico n=722 sec=soc sem=95b
 # sent_id CP722-4
 # id 3712
+# d2d: cc(reis,e) -> cc(senhores,e)  #106
+# d2d: punct(continuam,,) -> punct(vão,,)  #106
+# d2d: punct(valia,,) -> punct(fica-,,)  #106
+# d2d: cc(continuam,mas) -> cc(vão,mas)  #106
 1	Fiéis	fiel	ADJ	<first-cjt>|ADJ|M|P|@PRED>	Gender=Masc|Number=Plur	11	amod	_	_
 2	a	a	ADP	<sam->|PRP|@A<	_	6	case	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
@@ -125,8 +129,8 @@
 11	continuam	continuar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	ingleses	inglês	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	11	nsubj	_	_
-14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-15	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+15	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 16	longe	longe	ADV	ADV|@SA>	_	17	advmod	_	_
 17	vão	ir	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
 18	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
@@ -142,7 +146,7 @@
 28	valia	valer	VERB	<mv>|<first-cjt>|V|IMPF|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	24	acl:relcl	_	_
 29	285	285	NUM	<card>|NUM|M|P|@>N	_	30	nummod	_	_
 30	escudos	escudo	NOUN	<np-def>|N|M|P|@<ADVL	Gender=Masc|Number=Plur	28	nmod	_	_
-31	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+31	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 32	hoje	hoje	ADV	ADV|@ADVL>	_	33	advmod	_	_
 33	fica-	ficar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	conj	_	_
 34	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	33	expl	_	ChangedBy=Issue135
@@ -154,7 +158,7 @@
 40	figura	figura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	39	obj	_	_
 41	de	de	ADP	PRP|@N<	_	42	case	_	_
 42	reis	rei	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	40	nmod	_	_
-43	e	e	CCONJ	<co-prparg>|KC|@CO	_	42	cc	_	_
+43	e	e	CCONJ	<co-prparg>|KC|@CO	_	44	cc	_	d2d:#106
 44	senhores	senhor	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	42	conj	_	_
 45	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 

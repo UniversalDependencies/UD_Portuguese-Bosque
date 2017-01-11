@@ -15,8 +15,9 @@
 # source CETENFolha n=826 cad=Dinheiro sec=eco sem=94b
 # sent_id CF826-3
 # id 3475
+# d2d: cc(Bancos,e) -> cc(financeiras,e)  #106
 1	Bancos	banco	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	financeiras	financeiro	ADJ	<cjt>|<n>|ADJ|F|P|@SUBJ>	Gender=Fem|Number=Plur	1	conj	_	_
 4	receberam	receber	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 5	bem	bem	ADV	<quant>|ADV|@<ADVL	_	4	advmod	_	_
@@ -68,6 +69,7 @@
 # source CETENFolha n=826 cad=Dinheiro sec=eco sem=94b &W
 # sent_id CF826-6
 # id 3478
+# d2d: cc(aplicações,e) -> cc(empréstimos,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	juro	juro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	flutante	flutuante	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -81,7 +83,7 @@
 11	de	de	ADP	PRP|@N<	_	13	case	_	_
 12	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
 13	aplicações	aplicação	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	_
-14	e	e	CCONJ	KC|@CO	_	13	cc	_	_
+14	e	e	CCONJ	KC|@CO	_	15	cc	_	d2d:#106
 15	empréstimos	empréstimo	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	conj	_	_
 16	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

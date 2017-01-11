@@ -140,18 +140,22 @@
 # source CETEMPúblico n=333 sec=soc sem=93b
 # sent_id CP333-5
 # id 1742
+# d2d: punct(Rússia,,) -> punct(Itália,,)  #106
+# d2d: punct(Rússia,,) -> punct(Áustria,,)  #106
+# d2d: cc(Rússia,e) -> cc(Suíça,e)  #106
+# d2d: punct(Rússia,,) -> punct(Alemanha,,)  #106
 1	Equipas	equipa	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	16	nsubj	_	_
 2	propostas	propor	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	1	acl	_	_
 3	por	por	ADP	PRP|@PASS	_	5	case	_	_
 4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	Rússia	Rússia	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	2	obl:agent	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 7	Áustria	Áustria	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
-8	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	Itália	Itália	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
-10	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+10	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 11	Alemanha	Alemanha	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
-12	e	e	CCONJ	<co-prparg>|KC|@CO	_	5	cc	_	_
+12	e	e	CCONJ	<co-prparg>|KC|@CO	_	13	cc	_	d2d:#106
 13	Suíça	Suíça	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
 14	estavam	estar	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	16	cop	_	_
 15	a	a	ADP	PRP|@<SA	_	16	case	_	MWE=a_postos
@@ -168,6 +172,7 @@
 # source CETEMPúblico n=333 sec=soc sem=93b
 # sent_id CP333-6
 # id 1743
+# d2d: cc(era,e) -> cc(fizera,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	7	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	estado	estado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj:pass	_	_
@@ -190,7 +195,7 @@
 20	para	para	ADP	PRP|@<ADVL	_	21	mark	_	_
 21	encontrar	encontrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	advcl	_	_
 22	sobreviventes	sobrevivente	NOUN	<np-idf>|N|M/F|P|@<ACC	Gender=Unsp|Number=Plur	21	obj	_	_
-23	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	17	cc	_	_
+23	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	28	cc	_	d2d:#106
 24	que	que	SCONJ	KS|@SUB	_	28	mark	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Índia	Índia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	28	nsubj	_	_

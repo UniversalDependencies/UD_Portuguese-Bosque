@@ -33,6 +33,12 @@
 # source CETENFolha n=520 cad=Informática sec=com sem=94a
 # sent_id CF520-2
 # id 2184
+# d2d: punct(medicina,,) -> punct(veterinária,,)  #106
+# d2d: punct(medicina,,) -> punct(odontologia,,)  #106
+# d2d: punct(medicina,,) -> punct(engenharia,,)  #106
+# d2d: punct(medicina,,) -> punct(arquitetura,,)  #106
+# d2d: punct(medicina,,) -> punct(urbanismo,,)  #106
+# d2d: cc(medicina,e) -> cc(direito,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Conia	Conia	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	terá	ter	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -44,17 +50,17 @@
 9	áreas	área	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	6	nmod	_	_
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	medicina	medicina	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
-12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 13	odontologia	odontologia	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	conj	_	_
-14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	veterinária	veterinária	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	conj	_	_
-16	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	arquitetura	arquitetura	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	conj	_	_
-18	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 19	urbanismo	urbanismo	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	conj	_	_
-20	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	engenharia	engenharia	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	conj	_	_
-22	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
+22	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	d2d:#106
 23	direito	direito	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	conj	_	_
 24	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

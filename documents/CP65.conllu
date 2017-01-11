@@ -29,14 +29,17 @@
 # source CETEMPúblico n=65 sec=pol sem=95b
 # sent_id CP65-3
 # id 355
+# d2d: cc(pontes,e) -> cc(estradas,e)  #106
+# d2d: punct(inaugurou,,) -> punct(capaz,,)  #106
+# d2d: cc(inaugurou,mas) -> cc(capaz,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Governo	Governo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	inaugurou	inaugurar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	pontes	ponte	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	3	obj	_	_
-5	e	e	CCONJ	<co-acc>|KC|@CO	_	4	cc	_	_
+5	e	e	CCONJ	<co-acc>|KC|@CO	_	6	cc	_	d2d:#106
 6	estradas	estrada	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	conj	_	_
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+7	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
+8	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	d2d:#106
 9	«	«	PUNCT	PU|@PU	_	12	punct	_	_
 10	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
 11	foi	ser	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	cop	_	_

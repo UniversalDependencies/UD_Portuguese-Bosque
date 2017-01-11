@@ -3,6 +3,9 @@
 # source CETENFolha n=608 cad=Dinheiro sec=eco sem=94b
 # sent_id CF608-1
 # id 2558
+# d2d: punct(carteiros,,) -> punct(agências,,)  #106
+# d2d: cc(carteiros,e) -> cc(postos,e)  #106
+# d2d: cc(carteiros,além) -> cc(postos,além)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	folhetos	folheto	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	terão	ter	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -32,9 +35,9 @@
 27	e	e	CCONJ	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 28	Telégrafos	Telégrafos	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 29	)	)	PUNCT	PU|@PU	_	24	punct	_	_
-30	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+30	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 31	agências	agência	NOUN	<cjt>|<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	19	conj	_	_
-32	e	e	CCONJ	<co-n<pred>|KC|@CO	_	19	cc	_	_
+32	e	e	CCONJ	<co-n<pred>|KC|@CO	_	33	cc	_	d2d:#106
 33	postos	posto	NOUN	<cjt>|<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	19	conj	_	_
 34	de	de	ADP	PRP|@N<	_	35	case	_	_
 35	atendimentos	atendimento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	33	nmod	_	_
@@ -49,7 +52,7 @@
 44	Econômica	Econômica	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
 45	Federal	Federal	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
 46	,	,	PUNCT	PU|@PU	_	43	punct	_	_
-47	além	além	ADV	ADV|@CO	_	19	cc	_	MWE=além_de
+47	além	além	ADV	ADV|@CO	_	49	cc	_	MWE=além_de|d2d:#106
 48	de	de	ADP	PRP|@A<	_	47	nmod	_	_
 49	postos	posto	NOUN	<cjt>|<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	19	conj	_	_
 50	lotéricos	lotérico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	49	amod	_	_
@@ -118,6 +121,7 @@
 # source CETENFolha n=608 cad=Dinheiro sec=eco sem=94b
 # sent_id CF608-5
 # id 2562
+# d2d: cc(folhetos,e) -> cc(cartazes,e)  #106
 1	Essa	esse	PRON	<dem>|DET|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	_	_
 2	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -126,7 +130,7 @@
 6	em	em	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
 8	folhetos	folheto	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
-9	e	e	CCONJ	KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	KC|@CO	_	10	cc	_	d2d:#106
 10	cartazes	cartaz	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	conj	_	_
 11	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

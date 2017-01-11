@@ -15,6 +15,9 @@
 # source CETEMPúblico n=335 sec=clt sem=97b
 # sent_id CP335-2
 # id 1749
+# d2d: punct(realizado,,) -> punct(baseado,,)  #106
+# d2d: cc(realizado,e) -> cc(baseado,e)  #106
+# d2d: punct(realizado,,) -> punct(baseado,,)  #106
 1	--	--	PUNCT	PU|@PU	_	28	punct	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	The	The	PROPN	_	Gender=Masc|Number=Sing	28	nsubj	_	ChangedBy=Issue119|MWE=The_Edge|MWEPOS=PROPN
@@ -27,11 +30,11 @@
 10	neozelandês	neozelandês	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl:agent	_	_
 11	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
 12	Hollywood	Hollywood	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137
-13	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 14	Lee	Lee	PROPN	_	Gender=Masc|Number=Sing	10	appos	_	ChangedBy=Issue119|MWE=Lee_Tamahori|MWEPOS=PROPN
 15	Tamahori	Tamahori	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
-16	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-17	e	e	CCONJ	<co-icl>|<co-pred>|KC|@CO	_	7	cc	_	_
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+17	e	e	CCONJ	<co-icl>|<co-pred>|KC|@CO	_	18	cc	_	d2d:#106
 18	baseado	basear	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	7	conj	_	_
 19	em	em	ADP	<sam->|PRP|@<PIV	_	21	case	_	_
 20	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
@@ -50,10 +53,11 @@
 # source CETEMPúblico n=335 sec=clt sem=97b
 # sent_id CP335-3
 # id 1750
+# d2d: cc(Anthony,e) -> cc(Alec,e)  #106
 1	Junta	juntar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	Anthony	Anthony	PROPN	_	Gender=Masc|Number=Sing	1	obj	_	ChangedBy=Issue119|MWE=Anthony_Hopkins|MWEPOS=PROPN
 3	Hopkins	Hopkins	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
-4	e	e	CCONJ	<co-acc>|KC|@CO	_	2	cc	_	_
+4	e	e	CCONJ	<co-acc>|KC|@CO	_	5	cc	_	d2d:#106
 5	Alec	Alec	PROPN	_	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Alec_Baldwin|MWEPOS=PROPN
 6	Baldwin	Baldwin	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119
 7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
@@ -73,12 +77,14 @@
 # source CETEMPúblico n=335 sec=clt sem=97b
 # sent_id CP335-4
 # id 1751
+# d2d: cc(bilionário,e) -> cc(pensa,e)  #106
+# d2d: punct(bilionário,,) -> punct(pensa,,)  #106
 1	Hopkins	Hopkins	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	é	ser	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 3	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	bilionário	bilionário	ADJ	<n>|<np-idf>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-6	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+5	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
+6	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	d2d:#106
 7	pensa	pensar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 8	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
 9	Baldwin	Baldwin	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
@@ -118,10 +124,15 @@
 # source CETEMPúblico n=335 sec=clt sem=97b
 # sent_id CP335-5
 # id 1752
+# d2d: cc(disciplina,e) -> cc(economia,e)  #106
+# d2d: punct(que,,) -> punct(contrário,,)  #106
+# d2d: cc(divertidos,e) -> cc(exercícios,e)  #106
+# d2d: punct(divertidos,») -> punct(exercícios,»)  #106
+# d2d: cc(disciplina,e) -> cc(tudo,e)  #106
 1	Hopkins	Hopkins	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	41	nsubj	_	_
 2	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	<first-cjt>|KS|@ACC>	_	41	obj	_	_
-4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 5	a	a	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	contrário	contrário	NOUN	N|@P<	_	3	conj	_	_
@@ -141,16 +152,16 @@
 21	tinta	tinta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
 22	a	a	ADP	PRP|@N<	_	23	mark	_	_
 23	secar	secar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	acl	_	_
-24	»	»	PUNCT	PU|@PU	_	18	punct	_	_
-25	e	e	CCONJ	<co-sc>|KC|@CO	_	18	cc	_	_
+24	»	»	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
+25	e	e	CCONJ	<co-sc>|KC|@CO	_	28	cc	_	d2d:#106
 26	«	«	PUNCT	PU|@PU	_	28	punct	_	_
 27	bons	bom	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	28	amod	_	_
 28	exercícios	exercício	NOUN	<cjt>|<np-idf>|N|M|P|@ICL-<SC	Gender=Masc|Number=Plur	18	conj	_	_
 29	de	de	ADP	PRP|@N<	_	30	case	_	_
 30	disciplina	disciplina	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	_
-31	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	_
+31	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	d2d:#106
 32	economia	economia	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	conj	_	_
-33	e	e	CCONJ	<co-sc>|KC|@CO	_	30	cc	_	_
+33	e	e	CCONJ	<co-sc>|KC|@CO	_	34	cc	_	d2d:#106
 34	tudo	tudo	PRON	<cjt>|<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	30	conj	_	MWE=tudo_isso
 35	isso	isso	PRON	<dem>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Dem	34	fixed	_	_
 36	»	»	PUNCT	PU|@PU	_	28	punct	_	_
@@ -249,6 +260,8 @@
 # source CETEMPúblico n=335 sec=clt sem=97b
 # sent_id CP335-9
 # id 1756
+# d2d: cc(J.F.K.,e) -> cc(Assassinos,e)  #106
+# d2d: punct(J.F.K.,») -> punct(Assassinos,»)  #106
 1	Não	não	ADV	ADV|@ADVL>	_	5	neg	_	_
 2	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
 3	ser	ser	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	cop	_	_
@@ -282,8 +295,8 @@
 31	de	de	ADP	<first-cjt>|PRP|@A<	_	33	case	_	_
 32	«	«	PUNCT	PU|@PU	_	33	punct	_	_
 33	J.F.K.	J.F.K.	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	_
-34	»	»	PUNCT	PU|@PU	_	33	punct	_	_
-35	e	e	CCONJ	<co-a<>|KC|@CO	_	33	cc	_	_
+34	»	»	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
+35	e	e	CCONJ	<co-a<>|KC|@CO	_	38	cc	_	d2d:#106
 36	de	de	ADP	<cjt>|PRP|@A<	_	38	case	_	_
 37	«	«	PUNCT	PU|@PU	_	38	punct	_	_
 38	Assassinos	Assassinos	PROPN	_	Gender=Masc|Number=Sing	33	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Assassinos_Natos|MWEPOS=PROPN

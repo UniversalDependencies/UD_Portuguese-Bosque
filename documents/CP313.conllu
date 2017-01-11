@@ -3,6 +3,7 @@
 # source CETEMPúblico n=313 sec=nd sem=97a
 # sent_id CP313-1
 # id 1644
+# d2d: punct(Venda,,) -> punct(publicidade,,)  #106
 1	Tabaco	tabaco	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	em	em	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -10,7 +11,7 @@
 5	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 6	Venda	venda	NOUN	<first-cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	1	appos	_	_
 7	limitada	limitar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
-8	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	publicidade	publicidade	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	6	conj	_	_
 10	livre	livre	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	9	amod	_	_
 
@@ -19,6 +20,7 @@
 # source CETEMPúblico n=313 sec=nd sem=97a
 # sent_id CP313-2
 # id 1645
+# d2d: cc(medicamentos,e) -> cc(alimentos,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Food	Food	PROPN	_	Gender=Fem|Number=Sing	24	nsubj	_	ChangedBy=Issue119|MWE=Food_and_Drug_Administration|MWEPOS=PROPN
 3	and	and	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -35,7 +37,7 @@
 14	fiscaliza	fiscalizar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
 15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	medicamentos	medicamento	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
-17	e	e	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	_
+17	e	e	CCONJ	<co-acc>|KC|@CO	_	19	cc	_	d2d:#106
 18	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
 19	alimentos	alimento	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	conj	_	_
 20	--	--	PUNCT	PU|@PU	_	11	punct	_	_
@@ -102,6 +104,9 @@
 # source CETEMPúblico n=313 sec=nd sem=97a
 # sent_id CP313-4
 # id 1647
+# d2d: cc(saúde,e) -> cc(crianças,e)  #106
+# d2d: cc(regulamentar,e) -> cc(proteger,e)  #106
+# d2d: cc(vida,e) -> cc(perspectiva,e)  #106
 1	Citado	citar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	dep	_	_
 2	por	por	ADP	PRP|@PASS	_	4	case	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -125,7 +130,7 @@
 21	para	para	ADP	<first-cjt>|PRP|@N<	_	23	case	_	_
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	saúde	saúde	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
-24	e	e	CCONJ	<co-n<>|<co-postnom>|KC|@CO	_	23	cc	_	_
+24	e	e	CCONJ	<co-n<>|<co-postnom>|KC|@CO	_	27	cc	_	d2d:#106
 25	para	para	ADP	<cjt>|PRP|@N<	_	27	case	_	_
 26	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_
 27	crianças	criança	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	23	conj	_	_
@@ -149,7 +154,7 @@
 45	de	de	ADP	<sam->|PRP|@N<	_	47	case	_	_
 46	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 47	tabaco	tabaco	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	44	nmod	_	_
-48	e	e	CCONJ	<co-icl>|KC|@CO	_	42	cc	_	_
+48	e	e	CCONJ	<co-icl>|KC|@CO	_	49	cc	_	d2d:#106
 49	proteger	proteger	VERB	<mv>|<cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	42	conj	_	_
 50	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	52	det	_	_
 51	nossas	nosso	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur	52	det	_	_
@@ -159,7 +164,7 @@
 55	vida	vida	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	49	nmod	_	_
 56	de	de	ADP	PRP|@N<	_	57	case	_	_
 57	dependência	dependência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	55	nmod	_	_
-58	e	e	CCONJ	<co-piv>|KC|@CO	_	55	cc	_	_
+58	e	e	CCONJ	<co-piv>|KC|@CO	_	61	cc	_	d2d:#106
 59	de	de	ADP	<cjt>|<sam->|PRP|@<PIV	_	61	case	_	_
 60	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	61	det	_	_
 61	perspectiva	perspectiva	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	55	conj	_	_

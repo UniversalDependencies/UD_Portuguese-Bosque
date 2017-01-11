@@ -72,6 +72,8 @@
 # source CETENFolha n=508 cad=Ilustrada sec=nd sem=94a
 # sent_id CF508-5
 # id 2141
+# d2d: punct(fiscalização,,) -> punct(consulta,,)  #106
+# d2d: cc(fiscalização,e) -> cc(assistência,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	CNDA	CNDA	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	29	nsubj:pass	_	_
 3	(	(	PUNCT	PU|@PU	_	4	punct	_	_
@@ -87,9 +89,9 @@
 13	por	por	ADP	<sam->|PRP|@<PIV	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	fiscalização	fiscalização	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	consulta	consulta	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
-18	e	e	CCONJ	KC|@CO	_	15	cc	_	_
+18	e	e	CCONJ	KC|@CO	_	19	cc	_	d2d:#106
 19	assistência	assistência	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
 20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
 21	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_

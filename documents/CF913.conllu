@@ -3,8 +3,9 @@
 # source CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id CF913-1
 # id 3845
+# d2d: cc(Impostos,E) -> cc(Tarifas,E)  #106
 1	Impostos	imposto	NOUN	<first-cjt>|<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
-2	E	e	CCONJ	KC|@CO	_	1	cc	_	_
+2	E	e	CCONJ	KC|@CO	_	3	cc	_	d2d:#106
 3	Tarifas	tarifa	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	1	conj	_	ChangedBy=Issue149
 
 # text O governo vai usar a URV para corrigir impostos, garantiu FHC.
@@ -31,6 +32,8 @@
 # source CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id CF913-3
 # id 3847
+# d2d: cc(produzida,e) -> cc(mesmo,e)  #106
+# d2d: punct(produzida,,) -> punct(mesmo,,)  #106
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	_
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	URV	URV	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj:pass	_	_
@@ -39,8 +42,8 @@
 6	por	por	ADP	PRP|@PASS	_	8	case	_	_
 7	três	três	NUM	<card>|NUM|M|P|@>N	_	8	nummod	_	_
 8	índices	índice	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obl:agent	_	_
-9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	5	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 11	um	um	NUM	<card>|NUM|M|S|@SUBJ>	_	17	nsubj	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
@@ -76,6 +79,8 @@
 # source CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id CF913-5
 # id 3849
+# d2d: punct(fixadas,,) -> punct(terão,,)  #106
+# d2d: cc(fixadas,mas) -> cc(terão,mas)  #106
 1	Quanto	quanto	ADV	ADV|@ADVL>	_	9	advmod	_	MWE=Quanto_a
 2	a	a	ADP	PRP|@A<	_	4	case	_	_
 3	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
@@ -91,8 +96,8 @@
 13	evitar	evitar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	advcl	_	_
 14	reajustes	reajuste	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	13	obj	_	_
 15	diários	diário	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	14	amod	_	_
-16	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-17	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+17	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 18	terão	ter	VERB	<mv>|<cjt>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	9	conj	_	_
 19	correções	correção	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	18	obj	_	_
 20	periódicas	periódico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	19	amod	_	_
@@ -287,6 +292,8 @@
 # source CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id CF913-14
 # id 3858
+# d2d: cc(pensam,mas) -> cc(menor,mas)  #106
+# d2d: punct(pensam,,) -> punct(menor,,)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	pessoas	pessoa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
@@ -295,8 +302,8 @@
 6	recebem	receber	VERB	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
 7	US$	US$	SYM	_	Gender=Masc|Number=Plur	6	obj	_	_
 8	80	80	NUM	<card>|NUM|M|P|@N<	_	7	nummod	_	_
-9	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 11	30	30	NUM	<card>|NUM|M|P|@>N	_	12	nummod	_	_
 12	dias	dia	NOUN	<np-def>|N|M|P|@>A	Gender=Masc|Number=Plur	13	nmod:npmod	_	_
 13	depois	depois	ADV	ADV|@ADVL>	_	18	advmod	_	_

@@ -3,6 +3,9 @@
 # source CETENFolha n=496 cad=Esporte sec=des sem=94a
 # sent_id CF496-1
 # id 2087
+# d2d: cc(inteligente,e) -> cc(agressivo,e)  #106
+# d2d: punct(inteligente,,) -> punct(veloz,,)  #106
+# d2d: cc(sólido,e) -> cc(inteligente,e)  #106
 1	Teremos	ter	VERB	<mv>|V|FUT|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	então	então	ADV	<kc>|ADV|@<ADVL	_	1	advmod	_	_
@@ -18,12 +21,12 @@
 13	a	a	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	zaga	zaga	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-16	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	_
+16	e	e	CCONJ	<co-postnom>|KC|@CO	_	18	cc	_	d2d:#106
 17	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	18	advmod	_	_
 18	inteligente	inteligente	ADJ	<cjt>|<first-cjt>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	conj	_	_
-19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	veloz	veloz	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	18	conj	_	_
-21	e	e	CCONJ	KC|@CO	_	18	cc	_	_
+21	e	e	CCONJ	KC|@CO	_	22	cc	_	d2d:#106
 22	agressivo	agressivo	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	18	conj	_	_
 23	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 24	em	em	ADP	<sam->|<cjt>|PRP|@N<PRED	_	26	case	_	_
@@ -39,21 +42,25 @@
 # source CETENFolha n=496 cad=Esporte sec=des sem=94a
 # sent_id CF496-2
 # id 2088
+# d2d: cc(Zagalo,e) -> cc(Parreira,e)  #106
+# d2d: punct(defendem,,) -> punct(revela,,)  #106
+# d2d: cc(defendem,mas) -> cc(revela,mas)  #106
+# d2d: cc(defesa,e) -> cc(ataque,e)  #106
 1	Teremos	ter	VERB	<mv>|V|FUT|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	balanço	balanço	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
 4	entre	entre	ADP	PRP|@N<	_	5	case	_	_
 5	defesa	defesa	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
-6	e	e	CCONJ	<co-prparg>|KC|@CO	_	5	cc	_	_
+6	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	d2d:#106
 7	ataque	ataque	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	conj	_	_
 8	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	13	obj	_	_
 9	tanto	tanto	CCONJ	<quant>|<parkc-1>|<KOMP>|KC|@CO	_	10	cc	_	_
 10	Zagalo	Zagalo	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
-11	e	e	CCONJ	<co-subj>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-subj>|KC|@CO	_	12	cc	_	d2d:#106
 12	Parreira	Parreira	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	conj	_	ChangedBy=Issue149
 13	defendem	defender	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_
-14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-15	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	13	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+15	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 16	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	20	obj	_	_
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	time	time	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_

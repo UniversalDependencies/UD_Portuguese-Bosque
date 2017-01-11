@@ -29,6 +29,7 @@
 # source CETENFolha n=37 cad=Brasil sec=pol sem=94b
 # sent_id CF37-2
 # id 152
+# d2d: cc(mineralógico,e) -> cc(topográfico,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	missão	missão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
@@ -75,7 +76,7 @@
 44	completo	completo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	45	amod	_	_
 45	mapeamento	mapeamento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	43	obj	_	_
 46	mineralógico	mineralógico	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	45	amod	_	_
-47	e	e	CCONJ	<co-postnom>|KC|@CO	_	46	cc	_	_
+47	e	e	CCONJ	<co-postnom>|KC|@CO	_	48	cc	_	d2d:#106
 48	topográfico	topográfico	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	46	conj	_	_
 49	de	de	ADP	<sam->|PRP|@N<ARG	_	51	case	_	_
 50	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_
@@ -113,6 +114,8 @@
 # source CETENFolha n=37 cad=Brasil sec=pol sem=94b &W
 # sent_id CF37-4
 # id 154
+# d2d: cc(civis,e) -> cc(militares,e)  #106
+# d2d: cc(Organização,e) -> cc(Nasa,e)  #106
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	_	_
 2	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_
 3	patrocinado	patrocinar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
@@ -124,7 +127,7 @@
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	Mísseis	Mísseis	PROPN	_	Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=Mísseis_Balísticos|MWEPOS=PROPN
 11	Balísticos	Balísticos	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
-12	e	e	CCONJ	<co-pass>|<co-prparg>|KC|@CO	_	6	cc	_	_
+12	e	e	CCONJ	<co-pass>|<co-prparg>|KC|@CO	_	15	cc	_	d2d:#106
 13	por	por	ADP	<sam->|<cjt>|PRP|@PASS	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	Nasa	Nasa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	_
@@ -139,7 +142,7 @@
 24	com	com	ADP	PRP|@N<	_	25	case	_	_
 25	fins	fim	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
 26	civis	civil	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	25	amod	_	_
-27	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	_
+27	e	e	CCONJ	<co-postnom>|KC|@CO	_	28	cc	_	d2d:#106
 28	militares	militar	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	26	conj	_	_
 29	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

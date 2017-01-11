@@ -52,6 +52,8 @@
 # source CETEMPúblico n=309 sec=des sem=95a
 # sent_id CP309-2
 # id 1632
+# d2d: cc(totais,ou) -> cc(parciais,ou)  #106
+# d2d: cc(fará,e) -> cc(saberá,e)  #106
 1	Como	como	ADP	<ks>|<rel>|PRP|@ADVL>	PronType=Rel	3	mark	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	há	haver	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	_	_
@@ -60,7 +62,7 @@
 6	existem	existir	VERB	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
 7	roturas	rotura	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	6	nsubj	_	_
 8	totais	total	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
-9	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	_
+9	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	10	cc	_	d2d:#106
 10	parciais	parcial	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	8	conj	_	_
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
@@ -73,7 +75,7 @@
 19	agora	agora	ADV	<kc>|ADV|@<ADVL	_	18	advmod	_	_
 20	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	artroscopia	artroscopia	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	18	obj	_	_
-22	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	18	cc	_	_
+22	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	26	cc	_	d2d:#106
 23	só	só	ADV	ADV|@>A	_	24	advmod	_	_
 24	depois	depois	ADV	ADV|@ADVL>	_	26	advmod	_	_
 25	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	26	nsubj	_	_
@@ -92,12 +94,13 @@
 # source CETEMPúblico n=309 sec=des sem=95a
 # sent_id CP309-3
 # id 1633
+# d2d: cc(quando,ou) -> cc(onde,ou)  #106
 1	Também	também	ADV	ADV|@ADVL>	_	4	advmod	_	_
 2	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 3	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	_	_
 4	sabe	saber	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	quando	quando	ADV	<interr>|ADV|@ADVL>	_	8	advmod	_	_
-6	ou	ou	CCONJ	KC|@CO	_	5	cc	_	_
+6	ou	ou	CCONJ	KC|@CO	_	7	cc	_	d2d:#106
 7	onde	onde	ADV	<interr>|ADV|@ADVL>	_	5	conj	_	ChangedBy=Issue149
 8	ocorrerá	ocorrer	VERB	<mv>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	ccomp	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
@@ -154,14 +157,16 @@
 # source CETEMPúblico n=309 sec=des sem=95a
 # sent_id CP309-6
 # id 1636
+# d2d: cc(ir,mas) -> cc(tempo,mas)  #106
+# d2d: punct(ir,,) -> punct(tempo,,)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 2	Pode	poder	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
 3	ir	ir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 4	até	até	ADP	PRP|@<SA	_	6	case	_	_
 5	seis	seis	NUM	<card>|NUM|M|P|@>N	_	6	nummod	_	_
 6	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	3	cc	_	_
+7	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+8	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 9	se	se	SCONJ	KS|@SUB	_	12	mark	_	_
 10	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
 11	for	ser	VERB	<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	cop	_	_

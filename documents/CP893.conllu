@@ -57,6 +57,8 @@
 # source CETEMPúblico n=893 sec=nd sem=98a
 # sent_id CP893-3
 # id 4580
+# d2d: punct(citava,,) -> punct(divulgou,,)  #106
+# d2d: cc(citava,mas) -> cc(divulgou,mas)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	notícia	notícia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	citava	citar	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -65,8 +67,8 @@
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	indústria	indústria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 8	automóvel	automóvel	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	7	nmod:npmod	_	_
-9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+9	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 11	ainda	ainda	ADV	ADV|@>N	_	12	advmod	_	_
 12	nenhuma	nenhum	PRON	<quant>|<np-idf>|DET|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
@@ -142,6 +144,7 @@
 # source CETEMPúblico n=893 sec=nd sem=98a
 # sent_id CP893-6
 # id 4583
+# d2d: cc(Nacional,e) -> cc(troféus,e)  #106
 1	Jorge	Jorge	PROPN	_	Gender=Masc|Number=Sing	25	nsubj	_	ChangedBy=Issue119|MWE=Jorge_Petiz|MWEPOS=PROPN
 2	Petiz	Petiz	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -189,7 +192,7 @@
 45	para	para	ADP	PRP|@A<	_	47	case	_	_
 46	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 47	Nacional	Nacional	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	44	nmod	_	_
-48	e	e	CCONJ	<co-prparg>|KC|@CO	_	47	cc	_	_
+48	e	e	CCONJ	<co-prparg>|KC|@CO	_	49	cc	_	d2d:#106
 49	troféus	troféu	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	47	conj	_	_
 50	monomarca	monomarca	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	49	amod	_	_
 51	e	e	CCONJ	<co-postnom>|KC|@CO	_	50	cc	_	_

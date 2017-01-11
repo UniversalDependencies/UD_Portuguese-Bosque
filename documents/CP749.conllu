@@ -62,6 +62,9 @@
 # source CETEMPúblico n=749 sec=pol sem=95b
 # sent_id CP749-4
 # id 3847
+# d2d: punct(político,,) -> punct(presidente,,)  #106
+# d2d: punct(político,,) -> punct(vereador,,)  #106
+# d2d: punct(político,,) -> punct(deputado,,)  #106
 1	Fernando	Fernando	PROPN	_	Gender=Masc|Number=Sing	18	nsubj	_	ChangedBy=Issue119|MWE=Fernando_Ká|MWEPOS=PROPN
 2	Ká	Ká	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -94,15 +97,15 @@
 30	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	ccomp	_	_
 31	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	político	político	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	30	obj	_	_
-33	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+33	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 34	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	deputado	deputado	NOUN	<cjt>|<np-idf>|N|M|S|@ACC>	Gender=Masc|Number=Sing	32	conj	_	_
-36	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+36	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
 37	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 38	presidente	presidente	NOUN	<cjt>|<np-idf>|N|M|S|@ACC>	Gender=Masc|Number=Sing	32	conj	_	_
 39	de	de	ADP	PRP|@N<	_	40	case	_	_
 40	câmara	câmara	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	38	nmod	_	_
-41	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+41	,	,	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
 42	sequer	sequer	ADV	ADV|@>N	_	44	advmod	_	_
 43	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	vereador	vereador	NOUN	<cjt>|<np-idf>|N|M|S|@ACC>	Gender=Masc|Number=Sing	32	conj	_	_
@@ -114,6 +117,7 @@
 # source CETEMPúblico n=749 sec=pol sem=95b
 # sent_id CP749-5
 # id 3848
+# d2d: cc(acusa,e) -> cc(prepara,e)  #106
 1	Deputado	deputado	NOUN	<cjt>|<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	13	nmod	_	_
 2	suplente	suplente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -140,7 +144,7 @@
 24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
 25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	comunidade	comunidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
-27	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	_
+27	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	28	cc	_	d2d:#106
 28	prepara	preparar	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
 29	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	campanha	campanha	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	obj	_	_

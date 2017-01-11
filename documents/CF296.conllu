@@ -3,6 +3,7 @@
 # source CETENFolha n=296 cad=Cotidiano sec=soc sem=94b &L
 # sent_id CF296-1
 # id 1237
+# d2d: cc(São,e) -> cc(Bahia,e)  #106
 1	Além	além	ADV	ADV|@ADVL>	_	6	advmod	_	MWE=Além_de
 2	de	de	ADP	PRP|@A<	_	3	case	_	_
 3	Brasília	Brasília	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
@@ -50,7 +51,7 @@
 45	Grosso	Grosso	PROPN	_	Number=Sing	44	flat:name	_	ChangedBy=Issue119
 46	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 47	Amazonas	Amazonas	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	conj	_	ChangedBy=Issue149
-48	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	_
+48	e	e	CCONJ	<co-prparg>|KC|@CO	_	49	cc	_	d2d:#106
 49	Bahia	Bahia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	conj	_	ChangedBy=Issue149
 50	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
@@ -138,6 +139,8 @@
 # source CETENFolha n=296 cad=Cotidiano sec=soc sem=94b
 # sent_id CF296-5
 # id 1241
+# d2d: punct(atrasados,,) -> punct(correr,,)  #106
+# d2d: cc(atrasados,e) -> cc(correr,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	relógios	relógio	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj:pass	_	_
 3	serão	ser	AUX	<first-cjt>|<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	_	_
@@ -147,8 +150,8 @@
 7	meia-noite	meia-noite	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	ChangedBy=Issue137
 8	para	para	ADP	PRP|@<ADVL	_	9	case	_	_
 9	23h	23h	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obl	_	ChangedBy=Issue137
-10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-11	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+10	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+11	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	trens	trem	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj	_	_
 14	continuarão	continuar	AUX	<cjt>|<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	16	aux	_	_
@@ -167,6 +170,7 @@
 # source CETENFolha n=296 cad=Cotidiano sec=soc sem=94b
 # sent_id CF296-6
 # id 1242
+# d2d: cc(Norte-Sul,e) -> cc(Leste-Oeste,e)  #106
 1	Isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	vale	valer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	para	para	ADP	PRP|@<ADVL	_	5	case	_	_
@@ -176,7 +180,7 @@
 7	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
 8	linhas	linha	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
 9	Norte-Sul	norte-sul	NOUN	<first-cjt>|<prop>|<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	8	nmod:npmod	_	_
-10	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	_
+10	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	d2d:#106
 11	Leste-Oeste	leste-oeste	NOUN	<cjt>|<prop>|<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	9	conj	_	_
 12	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
@@ -185,6 +189,9 @@
 # source CETENFolha n=296 cad=Cotidiano sec=soc sem=94b
 # sent_id CF296-7
 # id 1243
+# d2d: cc(fechando,e) -> cc(afetado,e)  #106
+# d2d: punct(fechando,;) -> punct(funciona,;)  #106
+# d2d: punct(fechando,,) -> punct(afetado,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	metrô	metrô	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 3	Paulista	paulista	NOUN	<prop>|<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	2	nmod:npmod	_	_
@@ -193,8 +200,8 @@
 6	a	a	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
 7	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
 8	20h30	20h30	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obl	_	ChangedBy=Issue137
-9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	5	cc	_	_
-10	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
+10	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 11	portanto	portanto	ADV	<kc>|ADV|@ADVL>	_	15	advmod	_	_
 12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 13	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
@@ -203,7 +210,7 @@
 16	por	por	ADP	PRP|@<ADVL	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	mudança	mudança	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue137
-19	;	;	PUNCT	PU|@PU	_	5	punct	_	_
+19	;	;	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 20	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
 21	outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Gender=Fem|Number=Plur	22	det	_	_
 22	linhas	linha	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	26	nsubj	_	_

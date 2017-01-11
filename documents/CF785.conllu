@@ -63,11 +63,13 @@
 # source CETENFolha n=785 cad=Brasil sec=pol sem=94b
 # sent_id CF785-3
 # id 3295
+# d2d: punct(explica,,) -> punct(garante,,)  #106
+# d2d: cc(explica,mas) -> cc(garante,mas)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	explica	explicar	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	como	como	ADV	<interr>|ADV|@<ADVL	_	2	advmod	_	_
-4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-5	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	2	cc	_	_
+4	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
+5	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	6	cc	_	d2d:#106
 6	garante	garantir	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 7	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
 8	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
@@ -100,6 +102,7 @@
 # source CETENFolha n=785 cad=Brasil sec=pol sem=94b
 # sent_id CF785-5
 # id 3297
+# d2d: cc(fazenda,e) -> cc(cabeças,e)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	_
 2	Hoje	hoje	ADV	ADV|@ADVL>	_	4	advmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -107,7 +110,7 @@
 5	só	só	ADV	ADV|@>N	_	7	advmod	_	_
 6	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	fazenda	fazenda	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
-8	e	e	CCONJ	<co-acc>|KC|@CO	_	7	cc	_	_
+8	e	e	CCONJ	<co-acc>|KC|@CO	_	13	cc	_	d2d:#106
 9	pouco	pouco	DET	<quant>|DET|M|S|@>A	Gender=Masc|Number=Sing	13	advmod	_	_
 10	mais	mais	ADV	ADV|@>N	_	13	advmod	_	MWE=mais_de
 11	de	de	ADP	PRP|@A<	_	10	nmod	_	_
@@ -122,6 +125,8 @@
 # source CETENFolha n=785 cad=Brasil sec=pol sem=94b
 # sent_id CF785-6
 # id 3298
+# d2d: punct(remédios,,) -> punct(feira,,)  #106
+# d2d: cc(remédios,e) -> cc(dinheiro,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	5	cc	_	_
 2	tudo	tudo	PRON	<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	5	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	4	obj	_	_
@@ -137,9 +142,9 @@
 13	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	14	nsubj	_	_
 14	recebe	receber	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
 15	remédios	remédio	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
-16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	feira	feira	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	conj	_	_
-18	e	e	CCONJ	<co-acc>|KC|@CO	_	15	cc	_	_
+18	e	e	CCONJ	<co-acc>|KC|@CO	_	19	cc	_	d2d:#106
 19	dinheiro	dinheiro	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	15	conj	_	_
 20	quando	quando	ADV	<rel>|ADV|@ADVL>	_	22	advmod	_	_
 21	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	_	_

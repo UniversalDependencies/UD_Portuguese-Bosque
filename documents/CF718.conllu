@@ -3,6 +3,8 @@
 # source CETENFolha n=718 cad=Mundo sec=pol sem=94a
 # sent_id CF718-1
 # id 3017
+# d2d: punct(sujeito,,) -> punct(expositor,,)  #106
+# d2d: punct(sujeito,,) -> punct(persuasivo,,)  #106
 1	Esteve	estar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	ccomp	_	_
 2	assim	assim	ADV	<kc>|ADV|@<ADVL	_	1	advmod	_	_
 3	com	com	ADP	PRP|@<PIV	_	5	case	_	_
@@ -18,10 +20,10 @@
 13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	sujeito	sujeito	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	appos	_	_
 15	sutil	sutil	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	_
-16	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 17	bom	bom	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	18	amod	_	_
 18	expositor	expositor	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	14	conj	_	_
-19	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 20	muito	muito	ADV	<quant>|ADV|@>A	_	21	advmod	_	_
 21	persuasivo	persuasivo	ADJ	<cjt>|ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	14	conj	_	_
 22	»	»	PUNCT	PU|@PU	_	14	punct	_	_
@@ -63,6 +65,13 @@
 # source CETENFolha n=718 cad=Mundo sec=pol sem=94a
 # sent_id CF718-3
 # id 3019
+# d2d: cc(Corria,e) -> cc(inteligente,e)  #106
+# d2d: punct(Corria,;) -> punct(consistente,;)  #106
+# d2d: punct(Corria,,) -> punct(consistente,,)  #106
+# d2d: punct(Corria,,) -> punct(consistente,,)  #106
+# d2d: cc(Corria,nem) -> cc(inteligente,nem)  #106
+# d2d: cc(inteligente,nem) -> cc(consistente,nem)  #106
+# d2d: punct(Corria,;) -> punct(inteligente,;)  #106
 1	Corria	correr	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	piada	piada	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	1	nsubj	_	_
@@ -76,21 +85,21 @@
 11	para	para	ADP	PRP|@<SC	_	13	mark	_	_
 12	ser	ser	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	cop	_	_
 13	consistente	consistente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	9	amod	_	_
-14	;	;	PUNCT	PU|@PU	_	1	punct	_	_
+14	;	;	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 15	Dennis	Dennis	PROPN	_	Gender=Masc|Number=Sing	22	nsubj	_	ChangedBy=Issue119|MWE=Dennis_Robertson|MWEPOS=PROPN
 16	Robertson	Robertson	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
-17	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 18	outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	19	det	_	_
 19	estrela	estrela	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	15	appos	_	_
-20	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 21	era	ser	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	cop	_	_
 22	consistente	consistente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	1	conj	_	_
 23	demais	demais	ADV	<quant>|ADV|@A<	_	22	advmod	_	_
 24	para	para	ADP	PRP|@<SC	_	26	mark	_	_
 25	ser	ser	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	26	cop	_	_
 26	inteligente	inteligente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	22	amod	_	_
-27	;	;	PUNCT	PU|@PU	_	1	punct	_	_
-28	e	e	CCONJ	<co-fcl>|KC|@CO	_	1	cc	_	_
+27	;	;	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+28	e	e	CCONJ	<co-fcl>|KC|@CO	_	41	cc	_	d2d:#106
 29	Lionel	Lionel	PROPN	_	Gender=Masc|Number=Sing	41	nsubj	_	ChangedBy=Issue119|MWE=Lionel_Robbins|MWEPOS=PROPN
 30	Robbins	Robbins	PROPN	_	Number=Sing	29	flat:name	_	ChangedBy=Issue119
 31	,	,	PUNCT	PU|@PU	_	34	punct	_	_
@@ -102,9 +111,9 @@
 37	,	,	PUNCT	PU|@PU	_	34	punct	_	_
 38	não	não	ADV	_	Polarity=Neg	41	advmod	_	_
 39	era	ser	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	41	cop	_	_
-40	nem	nem	CCONJ	<co-sc>|<parkc-1>|KC|@CO	_	1	cc	_	_
+40	nem	nem	CCONJ	<co-sc>|<parkc-1>|KC|@CO	_	41	cc	_	d2d:#106
 41	inteligente	inteligente	ADJ	<first-cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	1	conj	_	_
-42	nem	nem	CCONJ	<parkc-2>|KC|@CO	_	41	cc	_	_
+42	nem	nem	CCONJ	<parkc-2>|KC|@CO	_	43	cc	_	d2d:#106
 43	consistente	consistente	ADJ	<cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	41	conj	_	_
 44	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

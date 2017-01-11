@@ -57,6 +57,7 @@
 # source CETENFolha n=81 cad=Opinião sec=opi sem=94b
 # sent_id CF81-5
 # id 306
+# d2d: cc(centro,e) -> cc(radicais,e)  #106
 1	Mostrou	mostrar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -79,7 +80,7 @@
 20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	centro	centro	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	ChangedBy=Issue137
 22	nacionalista	nacionalista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	amod	_	_
-23	e	e	CCONJ	<co-prparg>|KC|@CO	_	21	cc	_	_
+23	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	d2d:#106
 24	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
 25	radicais	radical	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	21	conj	_	_
 26	de	de	ADP	<sam->|PRP|@N<	_	28	case	_	_
@@ -105,13 +106,14 @@
 # source CETENFolha n=81 cad=Opinião sec=opi sem=94b
 # sent_id CF81-7
 # id 308
+# d2d: cc(coração,e) -> cc(cérebro,e)  #106
 1	Eram	ser	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	retrato	retrato	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 4	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	6	case	_	_
 5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	coração	coração	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
-7	e	e	CCONJ	<co-postnom>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-postnom>|KC|@CO	_	10	cc	_	d2d:#106
 8	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	10	case	_	_
 9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	cérebro	cérebro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	conj	_	_
@@ -134,6 +136,7 @@
 # source CETENFolha n=81 cad=Opinião sec=opi sem=94b
 # sent_id CF81-9
 # id 310
+# d2d: cc(professor,e) -> cc(senador,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tancredismo	tancredismo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	concedeu	conceder	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -144,7 +147,7 @@
 8	teórico	teórico	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 10	professor	professor	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	8	appos	_	_
-11	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 12	senador	senador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	conj	_	ChangedBy=Issue149
 13	Fernando	Fernando	PROPN	_	Gender=Masc|Number=Sing	12	appos	_	ChangedBy=Issue119|MWE=Fernando_Henrique_Cardoso|MWEPOS=PROPN
 14	Henrique	Henrique	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
@@ -167,6 +170,10 @@
 # source CETENFolha n=81 cad=Opinião sec=opi sem=94b
 # sent_id CF81-10
 # id 311
+# d2d: punct(autoritarismo,,) -> punct(oportunismo,,)  #106
+# d2d: cc(autoritarismo,e) -> cc(fisiologismo,e)  #106
+# d2d: cc(cerne,e) -> cc(base,e)  #106
+# d2d: punct(autoritarismo,,) -> punct(clientelismo,,)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	prática	prática	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	ChangedBy=Issue137
@@ -177,7 +184,7 @@
 8	constituir	constituir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	acl:relcl	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	cerne	cerne	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
-11	e	e	CCONJ	<co-acc>|KC|@CO	_	10	cc	_	_
+11	e	e	CCONJ	<co-acc>|KC|@CO	_	13	cc	_	d2d:#106
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	base	base	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	conj	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
@@ -190,13 +197,13 @@
 21	condenavam	condenar	VERB	<mv>|V|IMPF|3P|IND|@FS-<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	17	dep	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	autoritarismo	autoritarismo	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	21	obj	_	_
-24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+24	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	oportunismo	oportunismo	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	_
-27	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+27	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	clientelismo	clientelismo	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	_
-30	e	e	CCONJ	<co-acc>|KC|@CO	_	23	cc	_	_
+30	e	e	CCONJ	<co-acc>|KC|@CO	_	32	cc	_	d2d:#106
 31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	fisiologismo	fisiologismo	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	_
 33	.	.	PUNCT	PU|@PU	_	17	punct	_	_
@@ -206,6 +213,7 @@
 # source CETENFolha n=81 cad=Opinião sec=opi sem=94b
 # sent_id CF81-11
 # id 312
+# d2d: cc(estratos,e) -> cc(intelectuais,e)  #106
 1	Ostentavam	ostentar	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	patamar	patamar	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
@@ -220,7 +228,7 @@
 12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	estratos	estrato	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
 14	médios	médio	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	_
-15	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	_
+15	e	e	CCONJ	<co-postnom>|KC|@CO	_	18	cc	_	d2d:#106
 16	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	18	case	_	_
 17	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
 18	intelectuais	intelectual	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	13	conj	_	_

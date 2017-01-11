@@ -3,6 +3,8 @@
 # source CETEMPúblico n=75 sec=clt sem=95b
 # sent_id CP75-1
 # id 405
+# d2d: cc(jornalistas,e) -> cc(comunicação,e)  #106
+# d2d: punct(jornalistas,,) -> punct(comunicação,,)  #106
 1	P.	p.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	...	...	PUNCT	PU|@PU	_	1	punct	_	_
@@ -20,8 +22,8 @@
 15	em	em	ADP	<sam->|PRP|@<PIV	_	17	case	_	_
 16	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
 17	jornalistas	jornalista	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-19	e	e	CCONJ	<co-prparg>|<co-advl>|KC|@CO	_	17	cc	_	_
+18	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+19	e	e	CCONJ	<co-prparg>|<co-advl>|KC|@CO	_	22	cc	_	d2d:#106
 20	em	em	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	22	det	_	_
 22	comunicação	comunicação	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	conj	_	_
@@ -40,12 +42,13 @@
 # source CETEMPúblico n=75 sec=clt sem=95b
 # sent_id CP75-2
 # id 406
+# d2d: cc(generalizo,mas) -> cc(houve,mas)  #106
 1	R.	r.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	...	...	PUNCT	PU|@PU	_	1	punct	_	_
 4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
 5	generalizo	generalizar	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
-6	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	5	cc	_	_
+6	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	7	cc	_	d2d:#106
 7	houve	haver	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
 8	aspectos	aspecto	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	obj	_	_
 9	em	em	ADP	<sam->|PRP|@<ADVL	_	11	case	_	_
@@ -98,6 +101,7 @@
 # source CETEMPúblico n=75 sec=clt sem=95b &D
 # sent_id CP75-4
 # id 408
+# d2d: cc(primeiro,nem) -> cc(último,nem)  #106
 1	Enganei-	enganar	VERB	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 2	me	eu	PRON	<refl>|PERS|M/F|1S|ACC|@<ACC	Case=Acc|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	1	obj	_	_
 3	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -106,7 +110,7 @@
 6	nem	nem	CCONJ	<co-vfin>|KC|@CO	_	9	cc	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	primeiro	primeiro	ADJ	<first-cjt>|<NUM-ord>|<n>|<np-def>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	5	xcomp	_	_
-9	nem	nem	CCONJ	<co-sc>|KC|@CO	_	8	cc	_	_
+9	nem	nem	CCONJ	<co-sc>|KC|@CO	_	11	cc	_	d2d:#106
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	último	último	ADJ	<cjt>|<NUM-ord>|<n>|<np-def>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	8	conj	_	_
 12	,	,	PUNCT	PU|@PU	_	5	punct	_	_

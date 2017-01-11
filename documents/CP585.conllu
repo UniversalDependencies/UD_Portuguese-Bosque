@@ -3,13 +3,14 @@
 # source CETEMPúblico n=585 sec=nd sem=98b
 # sent_id CP585-1
 # id 3033
+# d2d: punct(tenho,,) -> punct(acredito,,)  #106
 1	R.	r.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	Não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 4	tenho	ter	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
 5	sentimentos	sentimento	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	obj	_	_
 6	religiosos	religioso	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	5	amod	_	_
-7	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 8	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
 9	acredito	acreditar	VERB	<mv>|<cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	conj	_	_
 10	em	em	ADP	<sam->|PRP|@<PIV	_	12	case	_	_
@@ -72,6 +73,7 @@
 # source CETEMPúblico n=585 sec=nd sem=98b
 # sent_id CP585-5
 # id 3037
+# d2d: cc(mim,mas) -> cc(eles,mas)  #106
 1	Tenho	ter	AUX	<aux>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	dito	dizer	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	0	root	_	_
 3	a	a	ADP	<sam->|PRP|@<PIV	_	5	case	_	_
@@ -89,7 +91,7 @@
 15	por	por	ADP	<first-cjt>|PRP|@<ADVL	_	16	case	_	_
 16	mim	eu	PRON	PERS|M/F|1S|PIV|@P<	Gender=Unsp|Number=Sing|Person=1|PronType=Prs	8	nmod	_	_
 17	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-18	mas	mas	CCONJ	<co-advl>|KC|@CO	_	16	cc	_	_
+18	mas	mas	CCONJ	<co-advl>|KC|@CO	_	20	cc	_	d2d:#106
 19	por	por	ADP	<cjt>|PRP|@<ADVL	_	20	case	_	_
 20	eles	ele	PRON	PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	conj	_	ChangedBy=Issue149
 21	.	.	PUNCT	PU|@PU	_	2	punct	_	_
@@ -99,12 +101,13 @@
 # source CETEMPúblico n=585 sec=nd sem=98b
 # sent_id CP585-6
 # id 3038
+# d2d: cc(continua,e) -> cc(ter,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	vida	vida	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	continua	continuar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	com	com	ADP	PRP|@<ADVL	_	5	case	_	_
 5	eles	ele	PRON	PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nmod	_	_
-6	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+6	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	d2d:#106
 7	são	são	ADV	<foc>|ADV|@ADVL>	_	11	advmod	_	_
 8	eles	ele	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	_
 9	que	que	ADV	<foc>|ADV|@ADVL>	_	11	mark	_	_
@@ -144,6 +147,9 @@
 # source CETEMPúblico n=585 sec=nd sem=98b
 # sent_id CP585-9
 # id 3041
+# d2d: cc(recordarão,ou) -> cc(não,ou)  #106
+# d2d: punct(recordarão,--) -> punct(não,--)  #106
+# d2d: cc(fui,e) -> cc(recordarão,e)  #106
 1	O	o	PRON	<artd>|DET|M|S|@SUBJ>	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	nsubj	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	3	nsubj	_	_
 3	ficar	ficar	VERB	<mv>|V|FUT|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	acl:relcl	_	_
@@ -156,13 +162,13 @@
 10	o	o	PRON	<-sam>|<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
 11	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	12	obj	_	_
 12	fui	ser	VERB	<first-cjt>|<mv>|V|PS|1S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	10	acl:relcl	_	_
-13	e	e	CCONJ	<co-fcl>|<co-postnom>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-fcl>|<co-postnom>|KC|@CO	_	17	cc	_	d2d:#106
 14	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	17	obj	_	_
 15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	outros	outro	PRON	<diff>|<KOMP>|<np-def>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur	17	nsubj	_	_
 17	recordarão	recordar	VERB	<mv>|<cjt>|<first-cjt>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_
-18	--	--	PUNCT	PU|@PU	_	17	punct	_	_
-19	ou	ou	CCONJ	KC|@CO	_	17	cc	_	_
+18	--	--	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+19	ou	ou	CCONJ	KC|@CO	_	20	cc	_	d2d:#106
 20	não	não	ADV	<cjt>|ADV|@FS-N<	_	17	conj	_	_
 21	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 

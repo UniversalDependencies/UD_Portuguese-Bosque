@@ -60,9 +60,10 @@
 # source CETEMPúblico n=589 sec=pol sem=93a
 # sent_id CP589-4
 # id 3063
+# d2d: cc(refrescante,e) -> cc(estival,e)  #106
 1	Suficientemente	suficientemente	ADV	<quant>|ADV|@>A	_	2	advmod	_	_
 2	refrescante	refrescante	ADJ	<first-cjt>|ADJ|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
-3	e	e	CCONJ	<co-utt>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-utt>|KC|@CO	_	4	cc	_	d2d:#106
 4	estival	estival	ADJ	<cjt>|ADJ|M|S|@NPHR	Gender=Masc|Number=Sing	2	conj	_	_
 5	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
@@ -90,11 +91,13 @@
 # source CETEMPúblico n=589 sec=pol sem=93a
 # sent_id CP589-12
 # id 3065
+# d2d: cc(livro,e) -> cc(recria,e)  #106
+# d2d: cc(Hammet,e) -> cc(Chandler,e)  #106
 1	É	ser	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 3	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	4	amod	_	_
 4	livro	livro	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-5	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+5	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	6	cc	_	d2d:#106
 6	recria	recriar	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 7	«	«	PUNCT	PU|@PU	_	9	punct	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
@@ -114,7 +117,7 @@
 22	tradição	tradição	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	18	obj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	Hammet	Hammet	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	_
-25	e	e	CCONJ	<co-prparg>|KC|@CO	_	24	cc	_	_
+25	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	d2d:#106
 26	Chandler	Chandler	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	24	conj	_	ChangedBy=Issue149
 27	»	»	PUNCT	PU|@PU	_	22	punct	_	_
 28	.	.	PUNCT	PU|@PU	_	4	punct	_	_
@@ -124,6 +127,11 @@
 # source CETEMPúblico n=589 sec=pol sem=93a
 # sent_id CP589-13
 # id 3066
+# d2d: cc(Marlow,e) -> cc(Spade,e)  #106
+# d2d: punct(fazer,,) -> punct(erguer,,)  #106
+# d2d: cc(contado,e) -> cc(sabor,e)  #106
+# d2d: cc(fazer,mas) -> cc(erguer,mas)  #106
+# d2d: cc(pungente,e) -> cc(autêntico,e)  #106
 1	Criou	criar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	personagem	personagem	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
@@ -148,10 +156,10 @@
 22	contraponto	contraponto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	Marlow	Marlow	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	_
-25	e	e	CCONJ	<co-prparg>|KC|@CO	_	24	cc	_	_
+25	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	d2d:#106
 26	Spade	Spade	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	24	conj	_	ChangedBy=Issue149
-27	mas	mas	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	20	cc	_	_
-28	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+27	mas	mas	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	31	cc	_	d2d:#106
+28	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 29	sim	sim	ADV	ADV|@ADVL>	_	31	advmod	_	_
 30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 31	erguer	erguer	VERB	<cjt>|<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	20	conj	_	_
@@ -167,12 +175,12 @@
 41	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
 42	ritmo	ritmo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	39	obl	_	ChangedBy=Issue137
 43	imparável	imparável	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	42	amod	_	_
-44	e	e	CCONJ	<co-icl>|<co-postnom>|KC|@CO	_	39	cc	_	_
+44	e	e	CCONJ	<co-icl>|<co-postnom>|KC|@CO	_	47	cc	_	d2d:#106
 45	com	com	ADP	<cjt>|PRP|@ICL-N<	_	47	case	_	_
 46	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 47	sabor	sabor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	39	conj	_	_
 48	pungente	pungente	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	47	amod	_	_
-49	e	e	CCONJ	<co-postnom>|KC|@CO	_	48	cc	_	_
+49	e	e	CCONJ	<co-postnom>|KC|@CO	_	50	cc	_	d2d:#106
 50	autêntico	autêntico	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	48	conj	_	_
 51	»	»	PUNCT	PU|@PU	_	19	punct	_	_
 52	.	.	PUNCT	PU|@PU	_	1	punct	_	_

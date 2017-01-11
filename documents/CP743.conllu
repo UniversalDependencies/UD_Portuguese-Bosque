@@ -54,6 +54,9 @@
 # source CETEMPúblico n=743 sec=clt sem=92b
 # sent_id CP743-2
 # id 3820
+# d2d: punct(situação,,) -> punct(desconhecimento,,)  #106
+# d2d: punct(situação,,) -> punct(desconhecimento,,)  #106
+# d2d: cc(situação,e) -> cc(desconhecimento,e)  #106
 1	De	de	ADP	PRP|@>A	_	3	case	_	MWE=De_um_lado
 2	um	um	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
 3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
@@ -64,12 +67,12 @@
 8	geográfica	geográfico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	periferia	periferia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
-11	e	e	CCONJ	<co-utt>|KC|@CO	_	7	cc	_	_
-12	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+11	e	e	CCONJ	<co-utt>|KC|@CO	_	19	cc	_	d2d:#106
+12	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 13	de	de	ADP	<sam->|PRP|@>A	_	15	case	_	_
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	outro	outro	PRON	<diff>|<KOMP>|<np-def>|DET|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 17	por	por	ADP	<sam->|<cjt>|PRP|@UTT	_	19	case	_	_
 18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	desconhecimento	desconhecimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	conj	_	_
@@ -90,6 +93,8 @@
 # source CETEMPúblico n=743 sec=clt sem=92b &E
 # sent_id CP743-3
 # id 3821
+# d2d: cc(informar,e) -> cc(estimular,e)  #106
+# d2d: cc(pós,e) -> cc(neo-modernismo,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Encontros	Encontros	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	MWE=Encontros_Acarte
 3	Acarte	Acarte	PROPN	PROP|@N<	Number=Sing	2	flat:name	_	_
@@ -104,7 +109,7 @@
 12	informar	informar	VERB	<mv>|<first-cjt>|V|INF|@ICL-APP	VerbForm=Inf	10	dep	_	_
 13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	público	público	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
-15	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	12	cc	_	_
+15	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	16	cc	_	d2d:#106
 16	estimular	estimular	VERB	<mv>|<cjt>|V|INF|@ICL-APP	VerbForm=Inf	12	conj	_	_
 17	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
 18	autores	autor	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	obj	_	_
@@ -122,7 +127,7 @@
 30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
 31	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	pós	pós	PART	<first-cjt>|EC|M|S|@P<	Gender=Masc|Number=Sing	29	dep	_	_
-33	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	_
+33	e	e	CCONJ	<co-prparg>|KC|@CO	_	34	cc	_	d2d:#106
 34	neo-modernismo	neo-modernismo	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	32	conj	_	_
 35	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -131,14 +136,16 @@
 # source CETEMPúblico n=743 sec=clt sem=92b
 # sent_id CP743-4
 # id 3822
+# d2d: cc(enjeita,mas) -> cc(recusa,mas)  #106
+# d2d: punct(enjeita,,) -> punct(recusa,,)  #106
 1	Sasportes	Sasportes	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	enjeita	enjeitar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	responsabilidade	responsabilidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 6	pedagógica	pedagógico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	_
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+7	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+8	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 9	recusa	recusar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
 11	exercícios	exercício	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	9	obj	_	_
@@ -222,6 +229,7 @@
 # source CETEMPúblico n=743 sec=clt sem=92b
 # sent_id CP743-8
 # id 3826
+# d2d: cc(tem,e) -> cc(creio,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	público	público	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -233,7 +241,7 @@
 9	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	11	obj	_	_
 10	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	iobj	_	_
 11	interessa	interessar	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
-12	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+12	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
 13	não	não	ADV	_	Polarity=Neg	14	advmod	_	_
 14	creio	crer	VERB	<cjt>|<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	_
 15	que	que	SCONJ	KS|@SUB	_	17	mark	_	_

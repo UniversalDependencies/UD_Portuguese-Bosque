@@ -30,8 +30,11 @@
 # source CETENFolha n=550 cad=Brasil sec=pol sem=94b
 # sent_id CF550-2
 # id 2306
+# d2d: cc(Controlam,ou) -> cc(influentes,ou)  #106
+# d2d: cc(o,e) -> cc(bancários,e)  #106
+# d2d: punct(o,,) -> punct(o,,)  #106
 1	Controlam	controlar	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	ou	ou	CCONJ	<co-sta>|KC|@CO	_	1	cc	_	_
+2	ou	ou	CCONJ	<co-sta>|KC|@CO	_	4	cc	_	d2d:#106
 3	são	ser	VERB	<mv>|<cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 4	influentes	influente	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	1	conj	_	_
 5	em	em	ADP	PRP|@<ADVL	_	6	case	_	_
@@ -46,12 +49,12 @@
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	metroviários	metroviário	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	13	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	o	o	PRON	<cjt>|<Eg>|<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	13	conj	_	_
 19	de	de	ADP	<sam->|PRP|@N<	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	Sabesp	Sabesp	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
-22	e	e	CCONJ	<co-advl>|KC|@CO	_	13	cc	_	_
+22	e	e	CCONJ	<co-advl>|KC|@CO	_	23	cc	_	d2d:#106
 23	bancários	bancário	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	conj	_	_
 24	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -60,6 +63,8 @@
 # source CETENFolha n=550 cad=Brasil sec=pol sem=94b
 # sent_id CF550-3
 # id 2307
+# d2d: cc(Betim,e) -> cc(Bahia,e)  #106
+# d2d: punct(Betim,,) -> punct(Ribeirão,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	sindicatos	sindicato	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	26	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -70,14 +75,14 @@
 8	(	(	PUNCT	PU|@PU	_	9	punct	_	_
 9	MG	MG	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	appos	_	_
 10	)	)	PUNCT	PU|@PU	_	9	punct	_	_
-11	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 12	de	de	ADP	<cjt>|PRP|@N<	_	13	case	_	_
 13	Ribeirão	Ribeirão	PROPN	_	Gender=Masc|Number=Sing	7	conj	_	ChangedBy=Issue119|MWE=Ribeirão_Preto|MWEPOS=PROPN
 14	Preto	Preto	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	(	(	PUNCT	PU|@PU	_	16	punct	_	_
 16	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	13	appos	_	_
 17	)	)	PUNCT	PU|@PU	_	16	punct	_	_
-18	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	_
+18	e	e	CCONJ	<co-postnom>|KC|@CO	_	21	cc	_	d2d:#106
 19	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	Bahia	Bahia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	conj	_	_

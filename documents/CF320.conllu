@@ -3,6 +3,8 @@
 # source CETENFolha n=320 cad=Dinheiro sec=eco sem=94b
 # sent_id CF320-1
 # id 1329
+# d2d: punct(estuda,,) -> punct(emitidos,,)  #106
+# d2d: cc(estuda,mas) -> cc(emitidos,mas)  #106
 1	Antonio	Antonio	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	ChangedBy=Issue119|MWE=Antonio_Jorge|MWEPOS=PROPN
 2	Jorge	Jorge	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -20,8 +22,8 @@
 15	estuda	estudar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	conversão	conversão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
-18	,	,	PUNCT	PU|@PU	_	15	punct	_	_
-19	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	15	cc	_	_
+18	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+19	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	27	cc	_	d2d:#106
 20	que	que	SCONJ	KS|@SUB	_	27	mark	_	_
 21	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
 22	carnês	carnê	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	27	nsubj:pass	_	_

@@ -101,6 +101,10 @@
 # source CETEMPúblico n=388 sec=eco sem=93a &W
 # sent_id CP388-6
 # id 2023
+# d2d: punct(atingida,,) -> punct(alcançado,,)  #106
+# d2d: punct(atingida,,) -> punct(alcançado,,)  #106
+# d2d: punct(atingida,,) -> punct(alcançado,,)  #106
+# d2d: cc(atingida,mas) -> cc(alcançado,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Governo	Governo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	socialista	socialista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -117,7 +121,7 @@
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	16	det	_	_
 16	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 18	depois	depois	ADV	ADV|@<ADVL	_	9	advmod	_	_
 19	de	de	ADP	PRP|@A<	_	22	case	_	_
 20	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
@@ -126,9 +130,9 @@
 23	em	em	ADP	<sam->|PRP|@N<	_	25	case	_	_
 24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	economia	economia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	_
-26	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-27	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
-28	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
+27	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	33	cc	_	d2d:#106
+28	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 29	supreendentemente	supreendentemente	ADV	ADV|@ADVL>	_	33	advmod	_	_
 30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 31	foi	ser	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	aux:pass	_	_
@@ -165,6 +169,8 @@
 # source CETEMPúblico n=388 sec=eco sem=93a &W
 # sent_id CP388-8
 # id 2025
+# d2d: cc(chamado,e) -> cc(começarem,e)  #106
+# d2d: cc(libra,e) -> cc(lira,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Banco	Banco	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj:pass	_	MWE=Banco_de_Espanha
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -173,7 +179,7 @@
 6	chamado	chamar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 7	a	a	ADP	PRP|@<PIV	_	8	mark	_	_
 8	intervir	intervir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
-9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	6	cc	_	_
+9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	d2d:#106
 10	começarem	começar	VERB	<mv>|<cjt>|<nil>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
 11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	rumores	rumor	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	10	nsubj	_	_
@@ -188,7 +194,7 @@
 21	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	libra	libra	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
-24	e	e	CCONJ	<co-postnom>|KC|@CO	_	23	cc	_	_
+24	e	e	CCONJ	<co-postnom>|KC|@CO	_	27	cc	_	d2d:#106
 25	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	27	case	_	_
 26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	lira	lira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	conj	_	_
@@ -283,6 +289,8 @@
 # source CETEMPúblico n=388 sec=eco sem=93a
 # sent_id CP388-11
 # id 2028
+# d2d: punct(acelerada,,) -> punct(lenta,,)  #106
+# d2d: cc(acelerada,e) -> cc(lenta,e)  #106
 1	Tão	tão	ADV	<dem>|<quant>|ADV|@>A	_	2	advmod	_	_
 2	periclitante	periclitante	ADJ	ADJ|M/F|S|@NPHR	Gender=Unsp|Number=Sing	0	root	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -313,8 +321,8 @@
 28	economias	economia	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	25	obl	_	ChangedBy=Issue137
 29	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	30	advmod	_	_
 30	fortes	forte	ADJ	<COMP>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	28	amod	_	_
-31	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-32	e	e	CCONJ	<co-icl>|<co-vfin>|KC|@CO	_	25	cc	_	_
+31	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
+32	e	e	CCONJ	<co-icl>|<co-vfin>|KC|@CO	_	34	cc	_	d2d:#106
 33	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	34	advmod	_	_
 34	lenta	lento	ADJ	<cjt>|<COMP>|ADJ|F|S|@ICL-N<	Gender=Fem|Number=Sing	25	conj	_	_
 35	para	para	ADP	PRP|@A<	_	36	case	_	_

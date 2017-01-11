@@ -23,6 +23,8 @@
 # source CETENFolha n=575 cad=Caderno Especial sec=nd sem=94a
 # sent_id CF575-2
 # id 2397
+# d2d: punct(empresa,,) -> punct(terrenos,,)  #106
+# d2d: cc(empresa,e) -> cc(pontos,e)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	2	case	_	_
 2	eles	eles	PRON	PERS|M|3P|NOM/PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nmod	_	_
 3	estavam	estar	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -30,9 +32,9 @@
 5	empresa	empresa	NOUN	<first-cjt>|<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	3	nsubj	_	_
 6	Óticas	Óticas	PROPN	_	Gender=Fem|Number=Sing	5	appos	_	ChangedBy=Issue119|MWE=Óticas_Trevo|MWEPOS=PROPN
 7	Trevo	Trevo	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
-8	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	terrenos	terreno	NOUN	<cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	5	conj	_	_
-10	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	_
+10	e	e	CCONJ	<co-subj>|KC|@CO	_	11	cc	_	d2d:#106
 11	pontos	ponto	NOUN	<cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	5	conj	_	_
 12	comerciais	comercial	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	11	amod	_	_
 13	em	em	ADP	PRP|@N<	_	14	case	_	_

@@ -86,6 +86,8 @@
 # source CETEMPúblico n=513 sec=eco sem=92a
 # sent_id CP513-5
 # id 2693
+# d2d: punct(quebra,,) -> punct(aumento,,)  #106
+# d2d: cc(desemprego,e) -> cc(inflação,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	indicadores	indicador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	apontam	apontar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -96,14 +98,14 @@
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	actividade	actividade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
 10	económica	económico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	9	amod	_	_
-11	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 12	para	para	ADP	<cjt>|PRP|@<PIV	_	14	case	_	_
 13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	aumento	aumento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	conj	_	_
 15	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	17	case	_	_
 16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	desemprego	desemprego	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
-18	e	e	CCONJ	<co-postnom>|KC|@CO	_	17	cc	_	_
+18	e	e	CCONJ	<co-postnom>|KC|@CO	_	21	cc	_	d2d:#106
 19	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	inflação	inflação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	conj	_	_
@@ -114,6 +116,9 @@
 # source CETEMPúblico n=513 sec=eco sem=92a
 # sent_id CP513-6
 # id 2694
+# d2d: cc(aperto,e) -> cc(diminuição,e)  #106
+# d2d: cc(gastos,e) -> cc(oferta,e)  #106
+# d2d: cc(gastos,e) -> cc(actividade,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	acordo	acordo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	inclui	incluir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -121,18 +126,18 @@
 5	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	6	amod	_	_
 6	aperto	aperto	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 7	fiscal	fiscal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
-8	e	e	CCONJ	<co-acc>|KC|@CO	_	6	cc	_	_
+8	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	d2d:#106
 9	logo	logo	ADV	<kc>|ADV|@>N	_	11	advmod	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	diminuição	diminuição	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	conj	_	_
 12	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	14	case	_	_
 13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
 14	gastos	gasto	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
-15	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	_
+15	e	e	CCONJ	<co-postnom>|KC|@CO	_	18	cc	_	d2d:#106
 16	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	actividade	actividade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	conj	_	_
-19	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	_
+19	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	d2d:#106
 20	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	oferta	oferta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	conj	_	_

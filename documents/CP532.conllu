@@ -67,6 +67,8 @@
 # source CETEMPúblico n=532 sec=soc sem=98a
 # sent_id CP532-2
 # id 2785
+# d2d: cc(igreja,ou) -> cc(comunidade,ou)  #106
+# d2d: cc(religiosos,ou) -> cc(beneficência,ou)  #106
 1	De	de	ADP	PRP|@ADVL>	_	2	case	_	MWE=De_acordo
 2	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
 3	com	com	ADP	PRP|@N<	_	5	case	_	_
@@ -90,7 +92,7 @@
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 22	«	«	PUNCT	PU|@PU	_	23	punct	_	_
 23	igreja	igreja	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
-24	ou	ou	CCONJ	<co-acc>|KC|@CO	_	23	cc	_	_
+24	ou	ou	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	d2d:#106
 25	comunidade	comunidade	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	23	conj	_	_
 26	religiosa	religioso	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	25	amod	_	_
 27	radicada	radicar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	23	acl	_	_
@@ -117,7 +119,7 @@
 48	para	para	ADP	PRP|@<ADVL	_	49	case	_	_
 49	fins	fim	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	44	obl	_	ChangedBy=Issue137
 50	religiosos	religioso	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	49	amod	_	_
-51	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	50	cc	_	_
+51	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	53	cc	_	d2d:#106
 52	de	de	ADP	<cjt>|PRP|@N<	_	53	case	_	_
 53	beneficência	beneficência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	50	conj	_	_
 54	»	»	PUNCT	PU|@PU	_	49	punct	_	_
@@ -199,13 +201,14 @@
 # source CETEMPúblico n=532 sec=soc sem=98a
 # sent_id CP532-6
 # id 2789
+# d2d: cc(Espanha,e) -> cc(Itália,e)  #106
 1	foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	_
 2	essa	esse	PRON	<dem>|DET|F|S|@<SC	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	opção	opção	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	2	nsubj	_	_
 5	em	em	ADP	PRP|@<ADVL	_	6	case	_	_
 6	Espanha	Espanha	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
-7	e	e	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	d2d:#106
 8	Itália	Itália	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	ChangedBy=Issue149
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 10	países	país	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	6	appos	_	_
@@ -223,6 +226,7 @@
 # source CETEMPúblico n=532 sec=soc sem=98a
 # sent_id CP532-7
 # id 2790
+# d2d: punct(0,8,,) -> punct(0,523,,)  #106
 1	Desde	desde	ADV	ADV|@ADVL>	_	10	advmod	_	MWE=Desde_há
 2	há	há	ADP	PRP|@A<	_	4	case	_	_
 3	poucos	pouco	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	4	det	_	_
@@ -260,7 +264,7 @@
 35	0,8	0,8	NUM	<first-cjt>|<card>|NUM|M|P|@APP	_	33	appos	_	_
 36	em	em	ADP	PRP|@A<	_	37	case	_	_
 37	Espanha	Espanha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	35	nmod	_	_
-38	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+38	,	,	PUNCT	PU|@PU	_	39	punct	_	d2d:#106
 39	0,523	0,523	NUM	<cjt>|<card>|NUM|M|P|@APP	_	35	conj	_	_
 40	em	em	ADP	PRP|@A<	_	41	case	_	_
 41	Itália	Itália	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	39	nmod	_	_

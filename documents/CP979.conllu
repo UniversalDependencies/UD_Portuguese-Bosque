@@ -3,6 +3,9 @@
 # source CETEMPúblico n=979 sec=pol sem=95a
 # sent_id CP979-1
 # id 5037
+# d2d: cc(candidatos,e) -> cc(eleitores,e)  #106
+# d2d: cc(participação,e) -> cc(competências,e)  #106
+# d2d: punct(participação,,) -> punct(possibilidade,,)  #106
 1	São	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
 2	três	três	NUM	<card>|NUM|M|P|@<SC	_	0	root	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
@@ -20,7 +23,7 @@
 15	processo	processo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	paz	paz	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
-18	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	possibilidade	possibilidade	NOUN	<cjt>|<np-def>|N|F|S|@APP	Gender=Fem|Number=Sing	9	conj	_	_
 21	de	de	ADP	PRP|@N<	_	20	nmod	_	_
@@ -31,10 +34,10 @@
 26	Oriental	Oriental	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
 27	serem	ser	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	28	cop	_	_
 28	candidatos	candidato	NOUN	<first-cjt>|<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	20	dep	_	_
-29	e	e	CCONJ	<co-sc>|KC|@CO	_	28	cc	_	_
+29	e	e	CCONJ	<co-sc>|KC|@CO	_	30	cc	_	d2d:#106
 30	eleitores	eleitor	NOUN	<cjt>|<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	28	conj	_	_
 31	,	,	PUNCT	PU|@PU	_	35	punct	_	_
-32	e	e	CCONJ	<co-app>|KC|@CO	_	9	cc	_	_
+32	e	e	CCONJ	<co-app>|KC|@CO	_	35	cc	_	d2d:#106
 33	ainda	ainda	ADV	ADV|@>N	_	35	advmod	_	_
 34	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_
 35	competências	competência	NOUN	<cjt>|<np-def>|N|F|P|@APP	Gender=Fem|Number=Plur	9	conj	_	_
@@ -49,6 +52,8 @@
 # source CETEMPúblico n=979 sec=pol sem=95a
 # sent_id CP979-2
 # id 5038
+# d2d: punct(semanas,,) -> punct(Jericó,,)  #106
+# d2d: cc(semanas,e) -> cc(Jericó,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	chefe	chefe	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -82,8 +87,8 @@
 31	de	de	ADP	PRP|@A<	_	33	case	_	_
 32	duas	dois	NUM	<card>|NUM|F|P|@>N	_	33	nummod	_	_
 33	semanas	semana	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	30	nmod	_	_
-34	,	,	PUNCT	PU|@PU	_	33	punct	_	_
-35	e	e	CCONJ	<co-advl>|KC|@CO	_	33	cc	_	_
+34	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+35	e	e	CCONJ	<co-advl>|KC|@CO	_	41	cc	_	d2d:#106
 36	por	por	ADP	<sam->|PRP|@N<	_	39	case	_	_
 37	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 38	primeira	primeira	ADP	PRP|@N<	_	39	case	_	_
@@ -97,6 +102,9 @@
 # source CETEMPúblico n=979 sec=pol sem=95a
 # sent_id CP979-3
 # id 5039
+# d2d: cc(tentar,mas) -> cc(hesitará,mas)  #106
+# d2d: punct(tentar,,) -> punct(hesitará,,)  #106
+# d2d: cc(retirada,e) -> cc(realização,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	cimeira	cimeira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
@@ -130,14 +138,14 @@
 31	de	de	ADP	<sam->|PRP|@N<	_	33	case	_	_
 32	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	Cisjordânia	Cisjordânia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	29	nmod	_	_
-34	e	e	CCONJ	<co-postnom>|KC|@CO	_	23	cc	_	_
+34	e	e	CCONJ	<co-postnom>|KC|@CO	_	37	cc	_	d2d:#106
 35	para	para	ADP	<cjt>|PRP|@N<	_	37	case	_	_
 36	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 37	realização	realização	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	conj	_	_
 38	de	de	ADP	PRP|@N<ARG	_	39	case	_	_
 39	eleições	eleição	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	37	nmod	_	_
-40	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-41	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
+40	,	,	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
+41	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	44	cc	_	d2d:#106
 42	Rabin	Rabin	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	44	nsubj	_	_
 43	provavelmente	provavelmente	ADV	ADV|@ADVL>	_	44	advmod	_	_
 44	hesitará	hesitar	VERB	<cjt>|<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_
@@ -219,6 +227,7 @@
 # source CETEMPúblico n=979 sec=pol sem=95a
 # sent_id CP979-5
 # id 5041
+# d2d: cc(prisão,e) -> cc(independência,e)  #106
 1	Arafat	Arafat	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	receia	recear	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	7	mark	_	_
@@ -228,7 +237,7 @@
 7	sinónimo	sinónimo	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	2	ccomp	_	_
 8	de	de	ADP	<first-cjt>|PRP|@N<	_	9	case	_	_
 9	prisão	prisão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
-10	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	_
+10	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	d2d:#106
 11	não	não	ADV	ADV|@>P	_	13	neg	_	_
 12	de	de	ADP	<cjt>|PRP|@N<	_	13	case	_	_
 13	independência	independência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	ChangedBy=Issue149

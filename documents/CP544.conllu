@@ -27,6 +27,10 @@
 # source CETEMPúblico n=544 sec=com sem=98a
 # sent_id CP544-2
 # id 2835
+# d2d: cc(profissionais,e) -> cc(universitários,e)  #106
+# d2d: cc(futebol,e) -> cc(basebol,e)  #106
+# d2d: punct(futebol,,) -> punct(hóquei,,)  #106
+# d2d: punct(futebol,,) -> punct(basquetebol,,)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 3	«	«	PUNCT	PU|@PU	_	4	punct	_	_
@@ -47,15 +51,15 @@
 18	de	de	ADP	PRP|@N<	_	19	case	_	_
 19	jogos	jogo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
 20	profissionais	profissional	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	19	amod	_	_
-21	e	e	CCONJ	<co-postnom>|KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	d2d:#106
 22	universitários	universitário	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	20	conj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	futebol	futebol	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
-25	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 26	basquetebol	basquetebol	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	conj	_	_
-27	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+27	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
 28	hóquei	hóquei	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	conj	_	_
-29	e	e	CCONJ	<co-prparg>|KC|@CO	_	24	cc	_	_
+29	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	d2d:#106
 30	basebol	basebol	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	conj	_	_
 31	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
@@ -64,6 +68,8 @@
 # source CETEMPúblico n=544 sec=com sem=98a
 # sent_id CP544-3
 # id 2836
+# d2d: cc(1000,e) -> cc(5000,e)  #106
+# d2d: cc(abrir,e) -> cc(depositar,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	apostadores	apostador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
 3	teriam	ter	AUX	<first-cjt>|<aux>|V|COND|3P|@FS-STA	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	5	aux	_	_
@@ -71,12 +77,12 @@
 5	abrir	abrir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 6	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	conta	conta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	_
-8	e	e	CCONJ	<co-sta>|<co-inf>|KC|@CO	_	5	cc	_	_
+8	e	e	CCONJ	<co-sta>|<co-inf>|KC|@CO	_	9	cc	_	d2d:#106
 9	depositar	depositar	VERB	<cjt>|<mv>|V|INF|3S|@FS-STA	Number=Sing|Person=3|VerbForm=Inf	5	conj	_	_
 10	aí	aí	ADV	<kc>|ADV|@<ADVL	_	9	advmod	_	_
 11	entre	entre	ADP	PRP|@<ACC	_	15	case	_	_
 12	1000	1000	NUM	<card>|<year>|<first-cjt>|<date>|NUM|M|S|<card>|P|@>	_	15	dep	_	_
-13	e	e	CCONJ	<co-prenom>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-prenom>|KC|@CO	_	14	cc	_	d2d:#106
 14	5000	5000	NUM	<card>|NUM|M|P|@>N	_	12	conj	_	ChangedBy=Issue149
 15	dólares	dólar	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	_
@@ -92,6 +98,8 @@
 # source CETEMPúblico n=544 sec=com sem=98a
 # sent_id CP544-4
 # id 2837
+# d2d: cc(dez,e) -> cc(50,e)  #106
+# d2d: cc(telefone,ou) -> cc(Internet,ou)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	apostas	aposta	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	18	nsubj	_	_
 3	sobre	sobre	ADP	PRP|@N<	_	5	case	_	_
@@ -104,7 +112,7 @@
 10	feitas	fazer	VERB	<mv>|V|PCP|F|P|@ICL-N<PRED	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	acl	_	_
 11	por	por	ADP	<first-cjt>|PRP|@PASS	_	12	case	_	_
 12	telefone	telefone	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl:agent	_	_
-13	ou	ou	CCONJ	<co-pass>|KC|@CO	_	12	cc	_	_
+13	ou	ou	CCONJ	<co-pass>|KC|@CO	_	16	cc	_	d2d:#106
 14	por	por	ADP	<sam->|<cjt>|PRP|@PASS	_	16	case	_	_
 15	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	Internet	Internet	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	conj	_	_
@@ -112,7 +120,7 @@
 18	custavam	custar	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 19	entre	entre	ADP	PRP|@<ADVL	_	23	case	_	_
 20	dez	dez	NUM	<first-cjt>|<card>|NUM|M|P|@>N	_	23	nummod	_	_
-21	e	e	CCONJ	<co-prenom>|KC|@CO	_	20	cc	_	_
+21	e	e	CCONJ	<co-prenom>|KC|@CO	_	22	cc	_	d2d:#106
 22	50	50	NUM	<cjt>|<card>|NUM|M|P|@>N	_	20	conj	_	_
 23	dólares	dólar	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	18	obl	_	ChangedBy=Issue137
 24	(	(	PUNCT	PU|@PU	_	25	punct	_	_
@@ -138,6 +146,7 @@
 # source CETEMPúblico n=544 sec=com sem=98a
 # sent_id CP544-5
 # id 2838
+# d2d: cc(depositados,ou) -> cc(enviados,ou)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	eventuais	eventual	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	3	amod	_	_
 3	ganhos	ganho	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj:pass	_	_
@@ -150,7 +159,7 @@
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	apostadores	apostador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
-13	ou	ou	CCONJ	<co-sta>|<co-pcv>|KC|@CO	_	5	cc	_	_
+13	ou	ou	CCONJ	<co-sta>|<co-pcv>|KC|@CO	_	14	cc	_	d2d:#106
 14	enviados	enviar	VERB	<cjt>|<mv>|V|PCP|M|P|@FS-STA	Gender=Masc|Number=Plur|VerbForm=Part	5	conj	_	_
 15	por	por	ADP	PRP|@<ADVL	_	16	case	_	_
 16	correio	correio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	ChangedBy=Issue137
@@ -161,6 +170,7 @@
 # source CETEMPúblico n=544 sec=com sem=98a
 # sent_id CP544-6
 # id 2839
+# d2d: cc(pena,e) -> cc(multa,e)  #106
 1	Cada	cada	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=Cada_um|MWEPOS=PROPN
 2	um	um	PROPN	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	1	flat:name	_	ChangedBy=Issue119
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -178,7 +188,7 @@
 15	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	prisão	prisão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
-18	e	e	CCONJ	<co-piv>|KC|@CO	_	11	cc	_	_
+18	e	e	CCONJ	<co-piv>|KC|@CO	_	21	cc	_	d2d:#106
 19	a	a	ADP	<cjt>|PRP|@<PIV	_	21	case	_	_
 20	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	multa	multa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	conj	_	_

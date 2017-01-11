@@ -3,6 +3,9 @@
 # source CETENFolha n=532 cad=Cotidiano sec=soc sem=94a
 # sent_id CF532-1
 # id 2228
+# d2d: cc(retardo,e) -> cc(alterações,e)  #106
+# d2d: cc(isolamento,e) -> cc(agressividade,e)  #106
+# d2d: punct(retardo,,) -> punct(desenvolvimento,,)  #106
 1	Crianças	criança	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	10	nsubj	_	_
 2	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	3	advmod	_	_
 3	velhas	velho	ADJ	<COMP>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	1	amod	_	_
@@ -15,11 +18,11 @@
 10	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 11	retardo	retardo	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
 12	mental	mental	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
-13	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 14	desenvolvimento	desenvolvimento	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	conj	_	_
 15	motor	motor	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	_
 16	prejudicado	prejudicar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	14	acl	_	_
-17	e	e	CCONJ	<co-acc>|KC|@CO	_	11	cc	_	_
+17	e	e	CCONJ	<co-acc>|KC|@CO	_	18	cc	_	d2d:#106
 18	alterações	alteração	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	11	conj	_	_
 19	significativas	significativo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	18	amod	_	_
 20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
@@ -27,7 +30,7 @@
 22	comportamento	comportamento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
 23	(	(	PUNCT	PU|@PU	_	24	punct	_	_
 24	isolamento	isolamento	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	22	appos	_	_
-25	e	e	CCONJ	<co-pred>|KC|@CO	_	24	cc	_	_
+25	e	e	CCONJ	<co-pred>|KC|@CO	_	26	cc	_	d2d:#106
 26	agressividade	agressividade	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	24	conj	_	ChangedBy=Issue149
 27	)	)	PUNCT	PU|@PU	_	24	punct	_	_
 28	.	.	PUNCT	PU|@PU	_	10	punct	_	_
@@ -58,6 +61,8 @@
 # source CETENFolha n=532 cad=Cotidiano sec=soc sem=94a
 # sent_id CF532-3
 # id 2230
+# d2d: cc(piora,e) -> cc(agitação,e)  #106
+# d2d: cc(concentração,e) -> cc(memória,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	adultos	adulto	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	6	nsubj	_	_
@@ -71,11 +76,11 @@
 11	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	concentração	concentração	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
-14	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	_
+14	e	e	CCONJ	<co-postnom>|KC|@CO	_	17	cc	_	d2d:#106
 15	de	de	ADP	<cjt>|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	memória	memória	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	conj	_	_
-18	e	e	CCONJ	<co-acc>|KC|@CO	_	10	cc	_	_
+18	e	e	CCONJ	<co-acc>|KC|@CO	_	21	cc	_	d2d:#106
 19	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 20	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	21	amod	_	_
 21	agitação	agitação	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	conj	_	_

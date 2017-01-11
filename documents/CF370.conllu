@@ -28,6 +28,9 @@
 # source CETENFolha n=370 cad=Dinheiro sec=eco sem=94b
 # sent_id CF370-2
 # id 1536
+# d2d: punct(anunciou,,) -> punct(iguais,,)  #106
+# d2d: punct(anunciou,,) -> punct(iguais,,)  #106
+# d2d: cc(anunciou,mas) -> cc(iguais,mas)  #106
 1	Dallari	Dallari	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 2	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 3	após	após	ADP	PRP|@ADVL>	_	4	case	_	_
@@ -42,15 +45,15 @@
 12	«	«	PUNCT	PU|@PU	_	19	punct	_	_
 13	para	para	ADP	PRP|@ADVL>	_	14	case	_	_
 14	janeiro	janeiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	ChangedBy=Issue137
-15	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+15	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
 16	não	não	ADV	_	Polarity=Neg	19	advmod	_	_
 17	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	19	nsubj	_	_
 18	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
 19	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	ccomp	_	_
 20	mais	mais	ADV	<setop>|ADV|@>N	_	21	advmod	_	MWE=mais_nada
 21	nada	nada	PRON	INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	19	obj	_	_
-22	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-23	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+22	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
+23	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	29	cc	_	d2d:#106
 24	em	em	ADP	PRP|@ADVL>	_	25	case	_	_
 25	fevereiro	fevereiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	_
 26	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_

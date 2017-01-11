@@ -75,6 +75,11 @@
 # source CETENFolha n=163 cad=Dinheiro sec=eco sem=94a
 # sent_id CF163-5
 # id 688
+# d2d: cc(cumprir,e) -> cc(superar,e)  #106
+# d2d: punct(cumprir,,) -> punct(superar,,)  #106
+# d2d: cc(competitividade,e) -> cc(satisfação,e)  #106
+# d2d: cc(praticando,e) -> cc(obtendo,e)  #106
+# d2d: punct(competitividade,,) -> punct(lucratividade,,)  #106
 1	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	cliente	cliente	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	1	nsubj	_	_
@@ -86,8 +91,8 @@
 9	teremos	ter	AUX	<aux>|V|FUT|1P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	11	aux	_	_
 10	de	de	ADP	PRP|@PRT-AUX<	_	11	nmod	_	_
 11	cumprir	cumprir	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	7	acl:relcl	_	_
-12	e	e	CCONJ	<co-inf>|KC|@CO	_	11	cc	_	_
-13	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+12	e	e	CCONJ	<co-inf>|KC|@CO	_	17	cc	_	d2d:#106
+13	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 14	até	até	ADP	PRP|@ADVL>	_	15	case	_	MWE=até_mesmo
 15	mesmo	mesmo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
 16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
@@ -98,7 +103,7 @@
 21	em	em	ADP	PRP|@<ADVL	_	23	case	_	_
 22	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	23	det	_	_
 23	plenitude	plenitude	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	ChangedBy=Issue137
-24	e	e	CCONJ	<co-icl>|<co-ger>|KC|@CO	_	19	cc	_	_
+24	e	e	CCONJ	<co-icl>|<co-ger>|KC|@CO	_	25	cc	_	d2d:#106
 25	obtendo	obter	VERB	<cjt>|<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	19	conj	_	_
 26	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 27	assim	assim	ADV	<kc>|ADV|@<ADVL	_	25	advmod	_	_
@@ -109,9 +114,9 @@
 32	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	34	nsubj	_	_
 33	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	34	cop	_	_
 34	competitividade	competitividade	NOUN	<first-cjt>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	30	acl:relcl	_	_
-35	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 36	lucratividade	lucratividade	NOUN	<cjt>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	34	conj	_	_
-37	e	e	CCONJ	<co-sc>|KC|@CO	_	34	cc	_	_
+37	e	e	CCONJ	<co-sc>|KC|@CO	_	38	cc	_	d2d:#106
 38	satisfação	satisfação	NOUN	<cjt>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	34	conj	_	_
 39	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -120,14 +125,16 @@
 # source CETENFolha n=163 cad=Dinheiro sec=eco sem=94a
 # sent_id CF163-6
 # id 689
+# d2d: punct(respeito,,) -> punct(atenção,,)  #106
+# d2d: cc(respeito,e) -> cc(ética,e)  #106
 1	Entendemos	entender	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	21	mark	_	_
 3	palavras	palavra	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	21	nsubj	_	_
 4	como	como	ADP	<com>|PRP|@N<	_	5	case	_	_
 5	respeito	respeito	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 7	atenção	atenção	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
-8	e	e	CCONJ	KC|@CO	_	5	cc	_	_
+8	e	e	CCONJ	KC|@CO	_	9	cc	_	d2d:#106
 9	ética	ética	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
 10	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 11	incluindo	incluir	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	21	advcl	_	_

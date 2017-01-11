@@ -13,12 +13,14 @@
 # source CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # sent_id CF714-3
 # id 2996
+# d2d: punct(político,,) -> punct(social,,)  #106
+# d2d: cc(político,e) -> cc(econômico,e)  #106
 1	Existe	existir	VERB	<mv>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	ambiente	ambiente	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	1	nsubj	_	_
 3	político	político	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
-4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 5	social	social	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	conj	_	_
-6	e	e	CCONJ	<co-postnom>|KC|@CO	_	3	cc	_	_
+6	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	d2d:#106
 7	econômico	econômico	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	conj	_	_
 8	para	para	ADP	PRP|@N<	_	10	mark	_	_
 9	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	10	nsubj	_	_
@@ -54,6 +56,8 @@
 # source CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # sent_id CF714-5
 # id 2998
+# d2d: cc(inflação,e) -> cc(desemprego,e)  #106
+# d2d: cc(vigoroso,e) -> cc(democrático,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	termos	termo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	obl	_	ChangedBy=Issue137
 3	políticos	político	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
@@ -69,7 +73,7 @@
 13	Estado	estado	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137
 14	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	15	advmod	_	_
 15	vigoroso	vigoroso	ADJ	<first-cjt>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	13	amod	_	_
-16	e	e	CCONJ	KC|@CO	_	15	cc	_	_
+16	e	e	CCONJ	KC|@CO	_	17	cc	_	d2d:#106
 17	democrático	democrático	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	conj	_	_
 18	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 19	em	em	ADP	PRP|@<ADVL	_	21	case	_	_
@@ -79,7 +83,7 @@
 23	enfrentar	enfrentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	acl	_	_
 24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	inflação	inflação	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	23	obj	_	_
-26	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	_
+26	e	e	CCONJ	<co-acc>|KC|@CO	_	28	cc	_	d2d:#106
 27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	desemprego	desemprego	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	25	conj	_	_
 29	.	.	PUNCT	PU|@PU	_	7	punct	_	_
@@ -89,6 +93,8 @@
 # source CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # sent_id CF714-6
 # id 2999
+# d2d: cc(reorientar,e) -> cc(contribuir,e)  #106
+# d2d: cc(emprego,e) -> cc(riqueza,e)  #106
 1	Pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@ACC>	Case=Acc|Gender=Unsp|PronType=Prs	3	obj	_	_
 3	reorientar	reorientar	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
@@ -97,7 +103,7 @@
 6	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	7	amod	_	_
 7	produção	produção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 8	industrial	industrial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	_
-9	e	e	CCONJ	<co-inf>|<co-sta>|KC|@CO	_	3	cc	_	_
+9	e	e	CCONJ	<co-inf>|<co-sta>|KC|@CO	_	10	cc	_	d2d:#106
 10	contribuir	contribuir	VERB	<cjt>|V|INF|@ICL-PMV	VerbForm=Inf	3	conj	_	_
 11	para	para	ADP	PRP|@<PIV	_	13	case	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
@@ -105,7 +111,7 @@
 14	de	de	ADP	<cjt>|PRP|@KOMP<	_	16	case	_	_
 15	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing	16	det	_	_
 16	emprego	emprego	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
-17	e	e	CCONJ	KC|@CO	_	16	cc	_	_
+17	e	e	CCONJ	KC|@CO	_	18	cc	_	d2d:#106
 18	riqueza	riqueza	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	16	conj	_	_
 19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 20	consequência	consequência	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	13	appos	_	_

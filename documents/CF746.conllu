@@ -3,6 +3,8 @@
 # source CETENFolha n=746 cad=Dinheiro sec=eco sem=94a
 # sent_id CF746-1
 # id 3125
+# d2d: cc(gastaram,e) -> cc(influenciaram,e)  #106
+# d2d: cc(4,e) -> cc(12,e)  #106
 1	Todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	3	det	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	anunciantes	anunciante	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	13	nsubj	_	_
@@ -34,7 +36,7 @@
 29	idade	idade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
 30	entre	entre	ADP	PRP|@N<	_	34	case	_	_
 31	4	4	NUM	<first-cjt>|<card>|NUM|M|P|@>N	_	34	nummod	_	_
-32	e	e	CCONJ	KC|@CO	_	31	cc	_	_
+32	e	e	CCONJ	KC|@CO	_	33	cc	_	d2d:#106
 33	12	12	NUM	<cjt>|<card>|NUM|M|P|@>N	_	31	conj	_	_
 34	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	27	nmod	_	_
 35	gastaram	gastar	VERB	<first-cjt>|<mv>|V|PS/MQP|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	17	acl:relcl	_	_
@@ -50,7 +52,7 @@
 45	suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur	47	det	_	_
 46	próprias	próprio	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	47	amod	_	_
 47	mesadas	mesada	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	40	nmod	_	_
-48	e	e	CCONJ	<co-n<pred>|KC|@CO	_	35	cc	_	_
+48	e	e	CCONJ	<co-n<pred>|KC|@CO	_	49	cc	_	d2d:#106
 49	influenciaram	influenciar	VERB	<cjt>|<mv>|V|PS/MQP|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	35	conj	_	_
 50	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur	51	det	_	_
 51	famílias	família	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	49	obj	_	_
@@ -67,6 +69,7 @@
 # source CETENFolha n=746 cad=Dinheiro sec=eco sem=94a
 # sent_id CF746-2
 # id 3126
+# d2d: cc(pais,ou) -> cc(parentes,ou)  #106
 1	Tanto	tanto	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing	2	det	_	_
 2	dinheiro	dinheiro	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	parece	parecer	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
@@ -88,7 +91,7 @@
 19	crianças	criança	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	17	nmod	_	_
 20	denunciando	denunciar	VERB	<mv>|V|GER|@ICL-N<	VerbForm=Ger	19	acl	_	_
 21	pais	pai	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	20	obj	_	_
-22	ou	ou	CCONJ	KC|@CO	_	21	cc	_	_
+22	ou	ou	CCONJ	KC|@CO	_	23	cc	_	d2d:#106
 23	parentes	parente	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	21	conj	_	_
 24	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	25	nsubj	_	_
 25	preferiram	preferir	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	21	acl:relcl	_	_
@@ -115,13 +118,15 @@
 # source CETENFolha n=746 cad=Dinheiro sec=eco sem=94a
 # sent_id CF746-3
 # id 3127
+# d2d: cc(jornalista,e) -> cc(vice-presidente,e)  #106
+# d2d: punct(jornalista,,) -> punct(publicitário,,)  #106
 1	Helcio	Helcio	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	ChangedBy=Issue119|MWE=Helcio_Emerich|MWEPOS=PROPN
 2	Emerich	Emerich	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 4	jornalista	jornalista	NOUN	<first-cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	publicitário	publicitário	NOUN	<cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	4	conj	_	_
-7	e	e	CCONJ	KC|@CO	_	4	cc	_	_
+7	e	e	CCONJ	KC|@CO	_	8	cc	_	d2d:#106
 8	vice-presidente	vice-presidente	NOUN	<cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	4	conj	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_

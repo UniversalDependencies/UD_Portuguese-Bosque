@@ -28,6 +28,7 @@
 # source CETEMPúblico n=900 sec=clt-soc sem=94a
 # sent_id CP900-2
 # id 4635
+# d2d: cc(importante,e) -> cc(quer,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	contexto	contexto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
 3	onde	onde	ADV	<rel>|ADV|@ADVL>	_	7	advmod	_	_
@@ -37,7 +38,7 @@
 7	passam	passar	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
 8	é	ser	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
 9	importante	importante	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	25	ccomp	_	_
-10	e	e	CCONJ	<co-fcl>|<co-fmv>|<co-vfin>|KC|@CO	_	9	cc	_	_
+10	e	e	CCONJ	<co-fcl>|<co-fmv>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
 11	nada	nada	PRON	<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	14	nsubj	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 13	isto	isto	PRON	<-sam>|<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	11	nmod	_	_
@@ -61,6 +62,10 @@
 # source CETEMPúblico n=900 sec=clt-soc sem=94a
 # sent_id CP900-3
 # id 4636
+# d2d: cc(há,por) -> cc(contar,por)  #106
+# d2d: cc(há,e) -> cc(contar,e)  #106
+# d2d: punct(há,,) -> punct(contar,,)  #106
+# d2d: punct(há,,) -> punct(contar,,)  #106
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	_
 2	Mas	mas	CCONJ	KC|@CO	_	40	cc	_	_
 3	o	o	PRON	<dem>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	40	nsubj	_	_
@@ -72,10 +77,10 @@
 9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 10	quando	quando	ADV	<rel>|ADV|@ADVL>	_	11	advmod	_	_
 11	há	haver	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-SC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	dep	_	_
-12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-13	por	por	ADP	PRP|@<ADVL	_	11	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
+12	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+13	por	por	ADP	PRP|@<ADVL	_	27	cc	_	MWE=por_exemplo|MWEPOS=CCONJ|d2d:#106
 14	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	13	fixed	_	_
-15	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+15	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 16	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	criança	criança	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	obj	_	_
 18	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	22	nsubj	_	_
@@ -83,7 +88,7 @@
 20	em	em	ADP	<sam->|PRP|@<SA	_	22	case	_	_
 21	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	incubadora	incubadora	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
-23	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	11	cc	_	_
+23	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	27	cc	_	d2d:#106
 24	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	27	nsubj	_	_
 25	não	não	ADV	_	Polarity=Neg	27	advmod	_	_
 26	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-SC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	aux	_	_
@@ -164,6 +169,7 @@
 # source CETEMPúblico n=900 sec=clt-soc sem=94a
 # sent_id CP900-7
 # id 4640
+# d2d: punct(deixa,,) -> punct(aumenta,,)  #106
 1	«	«	PUNCT	PU|@PU	_	21	punct	_	_
 2	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	droga	droga	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	21	nsubj	_	_
@@ -172,7 +178,7 @@
 6	deixa	deixar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_
 7	ligeiramente	ligeiramente	ADV	ADV|@ADVL>	_	8	advmod	_	_
 8	sedados	sedar	VERB	<mv>|V|PCP|M|P|@ICL-<OC	Gender=Masc|Number=Plur|VerbForm=Part	6	xcomp	_	_
-9	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 10	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	11	nsubj	_	_
 11	aumenta	aumentar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
@@ -206,6 +212,9 @@
 # source CETEMPúblico n=900 sec=clt-soc sem=94a
 # sent_id CP900-8
 # id 4641
+# d2d: punct(Há,,) -> punct(existe,,)  #106
+# d2d: cc(Há,e) -> cc(existe,e)  #106
+# d2d: punct(Há,,) -> punct(existe,,)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
 2	Há	haver	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	também	também	ADV	ADV|@<ADVL	_	2	advmod	_	_
@@ -216,12 +225,12 @@
 8	libertação	libertação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
 9	de	de	ADP	PRP|@N<ARG	_	10	case	_	_
 10	oxitocina	oxitocina	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
-11	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 12	como	como	ADP	<com>|PRP|@N<PRED	_	14	case	_	_
 13	certos	certos	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	14	det	_	_
 14	neurolépticos	neuroléptico	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
-15	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-16	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	2	cc	_	_
+15	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+16	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 17	existe	existir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 18	também	também	ADV	ADV|@<ADVL	_	17	advmod	_	_
 19	oxitocina	oxitocina	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	17	nsubj	_	_

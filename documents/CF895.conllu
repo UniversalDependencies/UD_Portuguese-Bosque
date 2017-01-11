@@ -3,14 +3,16 @@
 # source CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # sent_id CF895-1
 # id 3769
+# d2d: punct(tem,,) -> punct(ter,,)  #106
+# d2d: cc(tem,nem) -> cc(ter,nem)  #106
 1	Como	como	SCONJ	KS|@SUB	_	5	mark	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
 5	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	advcl	_	_
 6	recursos	recurso	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	obj	_	_
-7	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-8	nem	nem	CCONJ	<co-advl>|<co-vfin>|KC|@CO	_	5	cc	_	_
+7	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
+8	nem	nem	CCONJ	<co-advl>|<co-vfin>|KC|@CO	_	10	cc	_	d2d:#106
 9	vai	ir	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
 10	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	conj	_	_
 11	para	para	ADP	PRP|@<ADVL	_	12	case	_	_
@@ -42,6 +44,8 @@
 # source CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # sent_id CF895-2
 # id 3770
+# d2d: punct(educação,,) -> punct(saúde,,)  #106
+# d2d: punct(educação,,) -> punct(previdência,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	problema	problema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -57,11 +61,11 @@
 13	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	educação	educação	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 17	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	saúde	saúde	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
-20	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+20	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 21	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	previdência	previdência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
@@ -73,6 +77,7 @@
 # source CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # sent_id CF895-3
 # id 3771
+# d2d: cc(gratuita,e) -> cc(obrigatória,e)  #106
 1	Excetuada	excetuar	VERB	<mv>|V|PCP|F|S|@ICL-ADVL>	Gender=Fem|Number=Sing|VerbForm=Part	21	advcl	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	educação	educação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
@@ -85,7 +90,7 @@
 10	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
 11	ser	ser	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	12	cop	_	_
 12	gratuita	gratuito	ADJ	<first-cjt>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	3	acl:relcl	_	_
-13	e	e	CCONJ	<co-sc>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-sc>|KC|@CO	_	14	cc	_	d2d:#106
 14	obrigatória	obrigatório	ADJ	<cjt>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	12	conj	_	_
 15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 16	para	para	ADP	PRP|@ADVL>	_	19	case	_	_

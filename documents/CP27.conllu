@@ -3,6 +3,7 @@
 # source CETEMPúblico n=27 sec=des sem=92a
 # sent_id CP27-1
 # id 150
+# d2d: cc(tripulantes,e) -> cc(passageiros,e)  #106
 1	A	a	ADV	ADV|@ADVL>	_	22	advmod	_	MWE=A_bordo
 2	bordo	bordo	ADP	PRP|@A<	_	5	case	_	_
 3	de	de	ADP	<sam->|PRP|@P<	_	5	case	_	_
@@ -20,7 +21,7 @@
 15	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 16	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
 17	tripulantes	tripulante	NOUN	<first-cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	22	nsubj	_	_
-18	e	e	CCONJ	<co-subj>|KC|@CO	_	17	cc	_	_
+18	e	e	CCONJ	<co-subj>|KC|@CO	_	19	cc	_	d2d:#106
 19	passageiros	passageiro	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	17	conj	_	_
 20	tiveram	ter	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	aux	_	_
 21	que	que	SCONJ	KS|@PRT-AUX<	_	22	mark	_	_
@@ -83,6 +84,7 @@
 # source CETEMPúblico n=27 sec=des sem=92a
 # sent_id CP27-3
 # id 152
+# d2d: cc(aguardadas,e) -> cc(permaneceu,e)  #106
 1	Desde	desde	ADP	PRP|@ADVL>	_	4	case	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 3	10	10	NUM	<card>|NUM|F|P|@>N	_	4	nummod	_	_
@@ -101,7 +103,7 @@
 16	eram	ser	VERB	<first-cjt>|<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	17	cop	_	_
 17	aguardadas	aguardar	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	0	root	_	_
 18	ansiosamente	ansiosamente	ADV	ADV|@<ADVL	_	17	advmod	_	_
-19	e	e	CCONJ	<co-fcl>|<co-advl>|KC|@CO	_	17	cc	_	_
+19	e	e	CCONJ	<co-fcl>|<co-advl>|KC|@CO	_	26	cc	_	d2d:#106
 20	por	por	ADP	PRP|@ADVL>	_	22	case	_	_
 21	três	três	NUM	<card>|NUM|F|P|@>N	_	22	nummod	_	_
 22	horas	hora	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	26	obl	_	ChangedBy=Issue137
@@ -180,6 +182,8 @@
 # source CETEMPúblico n=27 sec=des sem=92a
 # sent_id CP27-5
 # id 154
+# d2d: cc(telefones,e) -> cc(máquinas,e)  #106
+# d2d: cc(restaurantes,e) -> cc(correios,e)  #106
 1	Várias	várias	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	2	det	_	_
 2	tendas	tenda	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
 3	ofereciam	oferecer	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -199,7 +203,7 @@
 17	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 18	serviços	serviço	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	conj	_	ChangedBy=Issue149
 19	bancários	bancário	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	18	amod	_	_
-20	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	_
+20	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	d2d:#106
 21	de	de	ADP	PRP|@P<	_	22	case	_	_
 22	correios	correio	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	conj	_	ChangedBy=Issue149
 23	enquanto	enquanto	ADV	<rel>|ADV|@ADVL>	_	35	advmod	_	_
@@ -217,7 +221,7 @@
 35	instalavam	instalar	VERB	<mv>|V|IMPF|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	advcl	_	_
 36	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_
 37	telefones	telefone	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	35	obj	_	_
-38	e	e	CCONJ	<co-acc>|KC|@CO	_	37	cc	_	_
+38	e	e	CCONJ	<co-acc>|KC|@CO	_	39	cc	_	d2d:#106
 39	máquinas	máquina	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	37	conj	_	_
 40	de	de	ADP	PRP|@N<	_	41	case	_	_
 41	fax	fax	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	39	nmod	_	_

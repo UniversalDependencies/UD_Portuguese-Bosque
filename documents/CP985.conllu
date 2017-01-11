@@ -3,6 +3,11 @@
 # source CETEMPúblico n=985 sec=clt sem=96a
 # sent_id CP985-1
 # id 5059
+# d2d: punct(terá,,) -> punct(incidido,,)  #106
+# d2d: cc(terá,ou) -> cc(incidido,ou)  #106
+# d2d: punct(terá,,) -> punct(incidido,,)  #106
+# d2d: cc(Camões,e) -> cc(Petrarca,e)  #106
+# d2d: cc(ligações,e) -> cc(luz,e)  #106
 1	Eduardo	Eduardo	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Eduardo_Lourenço|MWEPOS=PROPN
 2	Lourenço	Lourenço	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	fechou	fechar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -54,9 +59,9 @@
 49	ligações	ligação	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	46	nmod	_	_
 50	entre	entre	ADP	PRP|@N<	_	51	case	_	_
 51	Camões	Camões	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	49	nmod	_	_
-52	e	e	CCONJ	<co-prparg>|KC|@CO	_	51	cc	_	_
+52	e	e	CCONJ	<co-prparg>|KC|@CO	_	53	cc	_	d2d:#106
 53	Petrarca	Petrarca	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	51	conj	_	ChangedBy=Issue149
-54	e	e	CCONJ	<co-postnom>|KC|@CO	_	49	cc	_	_
+54	e	e	CCONJ	<co-postnom>|KC|@CO	_	57	cc	_	d2d:#106
 55	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	57	case	_	_
 56	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
 57	luz	luz	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	49	conj	_	_
@@ -65,10 +70,10 @@
 60	sobre	sobre	ADP	PRP|@ADVL>	_	61	case	_	_
 61	ambos	ambos	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur	67	nmod	_	_
 62	terá	ter	VERB	<mv>|<cjt>|<first-cjt>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	57	acl:relcl	_	_
-63	,	,	PUNCT	PU|@PU	_	62	punct	_	_
-64	ou	ou	CCONJ	<co-pcv>|KC|@CO	_	62	cc	_	_
+63	,	,	PUNCT	PU|@PU	_	67	punct	_	d2d:#106
+64	ou	ou	CCONJ	<co-pcv>|KC|@CO	_	67	cc	_	d2d:#106
 65	não	não	ADV	_	Polarity=Neg	62	advmod	_	_
-66	,	,	PUNCT	PU|@PU	_	62	punct	_	_
+66	,	,	PUNCT	PU|@PU	_	67	punct	_	d2d:#106
 67	incidido	incidir	VERB	<mv>|<cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	62	conj	_	_
 68	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

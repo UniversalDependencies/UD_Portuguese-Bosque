@@ -3,6 +3,9 @@
 # source CETEMPúblico n=727 sec=pol sem=96a
 # sent_id CP727-1
 # id 3737
+# d2d: cc(dito,e) -> cc(vez,e)  #106
+# d2d: cc(quando,mas) -> cc(será,mas)  #106
+# d2d: punct(quando,,) -> punct(será,,)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	3	case	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	promessas	promessa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	_
@@ -28,8 +31,8 @@
 23	tenha	ter	AUX	<first-cjt>|<aux>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
 24	dito	dizer	VERB	<mv>|<pc-subj>|V|PCP|@ICL-AUX<	VerbForm=Part	12	advcl	_	_
 25	quando	quando	ADV	<first-cjt>|<interr>|ADV|@<ACC	_	24	obj	_	_
-26	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-27	mas	mas	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	_
+26	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
+27	mas	mas	CCONJ	<co-acc>|KC|@CO	_	31	cc	_	d2d:#106
 28	apenas	apenas	ADV	ADV|@ADVL>	_	31	advmod	_	_
 29	que	que	SCONJ	KS|@SUB	_	31	mark	_	_
 30	não	não	ADV	_	Polarity=Neg	31	advmod	_	_
@@ -38,7 +41,7 @@
 33	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	totalidade	totalidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	31	obl	_	ChangedBy=Issue137
 35	,	,	PUNCT	PU|@PU	_	41	punct	_	_
-36	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	24	cc	_	_
+36	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	41	cc	_	d2d:#106
 37	não	não	ADV	ADV|@ADVL>	_	41	neg	_	_
 38	seja	ser	VERB	<cjt>|<mv>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	cop	_	_
 39	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
@@ -155,16 +158,20 @@
 # source CETEMPúblico n=727 sec=pol sem=96a
 # sent_id CP727-7
 # id 3743
+# d2d: cc(Irão,e) -> cc(haverá,e)  #106
+# d2d: cc(terrorismo,e) -> cc(banditismo,e)  #106
+# d2d: punct(Daguestão,,) -> punct(Karachaevo-Tcherkéssia,,)  #106
+# d2d: cc(Daguestão,e) -> cc(repúblicas,e)  #106
 1	Irão	ir	VERB	<mv>|<first-cjt>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 2	até	até	ADP	PRP|@<SA	_	5	case	_	_
 3	a	a	ADP	<first-cjt>|<sam->|PRP|@P<	_	5	case	_	_
 4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	Daguestão	Daguestão	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 7	a	a	ADP	<cjt>|<sam->|PRP|@P<	_	9	case	_	_
 8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	Karachaevo-Tcherkéssia	Karachaevo-Tcherkéssia	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	conj	_	_
-10	e	e	CCONJ	<co-prparg>|KC|@CO	_	5	cc	_	_
+10	e	e	CCONJ	<co-prparg>|KC|@CO	_	13	cc	_	d2d:#106
 11	a	a	ADP	<cjt>|PRP|@P<	_	13	case	_	_
 12	outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Gender=Fem|Number=Plur	13	det	_	_
 13	repúblicas	república	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	conj	_	_
@@ -179,10 +186,10 @@
 22	as	elas	PRON	PERS|F|3P|ACC|@ACC>	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	23	obj	_	_
 23	ocupar	ocupar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_
 24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-25	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	1	cc	_	_
+25	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	26	cc	_	d2d:#106
 26	haverá	haver	VERB	<mv>|<cjt>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	conj	_	_
 27	terrorismo	terrorismo	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	26	obj	_	_
-28	e	e	CCONJ	<co-acc>|KC|@CO	_	27	cc	_	_
+28	e	e	CCONJ	<co-acc>|KC|@CO	_	29	cc	_	d2d:#106
 29	banditismo	banditismo	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	27	conj	_	_
 30	internacional	internacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	27	amod	_	_
 31	»	»	PUNCT	PU|@PU	_	1	punct	_	_

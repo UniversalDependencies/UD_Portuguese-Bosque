@@ -89,6 +89,11 @@
 # source CETENFolha n=740 cad=Dinheiro sec=eco sem=94b &E
 # sent_id CF740-4
 # id 3106
+# d2d: cc(desleal,e) -> cc(ilícita,e)  #106
+# d2d: cc(querem,ou) -> cc(autorizam,ou)  #106
+# d2d: cc(ocasional,e) -> cc(tiver,e)  #106
+# d2d: cc(querem,ou) -> cc(autorizam,ou)  #106
+# d2d: cc(nomes,e) -> cc(endereços,e)  #106
 1	Ou	ou	CCONJ	_	_	23	cc	_	MWE=ou_seja|MWEPOS=CCONJ
 2	seja	ser	VERB	_	Gender=Fem|Number=Sing	1	fixed	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -98,7 +103,7 @@
 7	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
 8	for	ser	VERB	<first-cjt>|<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	cop	_	_
 9	ocasional	ocasional	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	23	advcl	_	_
-10	e	e	CCONJ	<co-advl>|KC|@CO	_	9	cc	_	_
+10	e	e	CCONJ	<co-advl>|KC|@CO	_	11	cc	_	d2d:#106
 11	tiver	ter	VERB	<cjt>|<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	conj	_	_
 12	realmente	realmente	ADV	ADV|@<ADVL	_	11	advmod	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
@@ -116,7 +121,7 @@
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	concorrência	concorrência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
 27	desleal	desleal	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	26	amod	_	_
-28	e	e	CCONJ	<co-postnom>|KC|@CO	_	27	cc	_	_
+28	e	e	CCONJ	<co-postnom>|KC|@CO	_	29	cc	_	d2d:#106
 29	ilícita	ilícito	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	27	conj	_	_
 30	perante	perante	ADP	PRP|@N<	_	32	case	_	_
 31	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
@@ -137,12 +142,12 @@
 46	sobre	sobre	ADP	PRP|@<PIV	_	48	mark	_	_
 47	se	se	SCONJ	KS|@SUB	_	48	mark	_	_
 48	querem	querer	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-P<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	45	xcomp	_	_
-49	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	48	cc	_	_
+49	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	56	cc	_	d2d:#106
 50	não	não	ADV	ADV|@<PIV	_	48	advmod	_	_
 51	receber	receber	VERB	<mv>|V|INF|@ICL-ACC>	VerbForm=Inf	48	xcomp	_	_
 52	tais	tal	DET	<dem>|<KOMP>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	53	det	_	_
 53	propostas	proposta	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	51	obj	_	_
-54	ou	ou	CCONJ	<co-prparg>|<co-fcl>|KC|@CO	_	48	cc	_	_
+54	ou	ou	CCONJ	<co-prparg>|<co-fcl>|KC|@CO	_	56	cc	_	d2d:#106
 55	se	se	SCONJ	KS|@SUB	_	56	mark	_	_
 56	autorizam	autorizar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-P<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	48	conj	_	_
 57	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	58	det	_	_
@@ -150,7 +155,7 @@
 59	de	de	ADP	PRP|@N<ARG	_	61	case	_	_
 60	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur	61	det	_	_
 61	nomes	nome	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	58	nmod	_	_
-62	e	e	CCONJ	KC|@CO	_	61	cc	_	_
+62	e	e	CCONJ	KC|@CO	_	63	cc	_	d2d:#106
 63	endereços	endereço	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	61	conj	_	_
 64	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 

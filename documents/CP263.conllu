@@ -31,6 +31,7 @@
 # source CETEMPúblico n=263 sec=clt sem=93a
 # sent_id CP263-3
 # id 1401
+# d2d: cc(Kingsley,e) -> cc(Albert,e)  #106
 1	Pense-	pensar	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@VOC	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	_	ChangedBy=Issue136|SUBJ_INDEF
 3	em	em	ADP	PRP|@<PIV	_	4	case	_	_
@@ -39,7 +40,7 @@
 6	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 7	Malcolm	Malcolm	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Malcolm_Bradbury|MWEPOS=PROPN
 8	Bradbury	Bradbury	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
-9	e	e	CCONJ	<co-prparg>|KC|@CO	_	4	cc	_	_
+9	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	d2d:#106
 10	Albert	Albert	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Albert_Finney|MWEPOS=PROPN
 11	Finney	Finney	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
 12	.	.	PUNCT	PU|@PU	_	1	punct	_	_
@@ -61,6 +62,8 @@
 # source CETEMPúblico n=263 sec=clt sem=93a
 # sent_id CP263-5
 # id 1403
+# d2d: punct(escreveu,,) -> punct(adaptou,,)  #106
+# d2d: cc(adaptou,e) -> cc(interpretou,e)  #106
 1	Pense-	pensar	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@VOC	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	_	ChangedBy=Issue136|SUBJ_INDEF
 3	em	em	ADP	<sam->|PRP|@<PIV	_	5	case	_	_
@@ -77,12 +80,12 @@
 14	Man	Man	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 15	»	»	PUNCT	PU|@PU	_	12	punct	_	_
 16	--	--	PUNCT	PU|@PU	_	12	punct	_	_
-17	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 18	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	21	obj	_	_
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	segundo	segundo	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	21	nsubj	_	_
 21	adaptou	adaptar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	_	_
-22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	21	cc	_	_
+22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	25	cc	_	d2d:#106
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 24	terceiro	terceiro	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	25	nsubj	_	_
 25	interpretou	interpretar	VERB	<mv>|V|PS|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	conj	_	ChangedBy=Issue149
@@ -93,6 +96,9 @@
 # source CETEMPúblico n=263 sec=clt sem=93a
 # sent_id CP263-6
 # id 1404
+# d2d: cc(enredo,e) -> cc(maneira,e)  #106
+# d2d: punct(enredo,,) -> punct(maneira,,)  #106
+# d2d: punct(enredo,,) -> punct(maneira,,)  #106
 1	Pense-	pensar	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@VOC	Case=Acc|Gender=Unsp|PronType=Prs	1	expl	_	ChangedBy=Issue136|SUBJ_INDEF
 3	em	em	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	5	case	_	_
@@ -105,13 +111,13 @@
 10	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	herói	herói	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 12	desfeito	desfazer	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	11	acl	_	_
-13	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	anti-herói	anti-herói	NOUN	<np-def>|N|M|S|@APP	Gender=Masc|Number=Sing	11	appos	_	_
 16	Maurice	Maurice	PROPN	_	Gender=Masc|Number=Sing	15	appos	_	ChangedBy=Issue119|MWE=Maurice_Allington|MWEPOS=PROPN
 17	Allington	Allington	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
-18	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-19	e	e	CCONJ	<co-piv>|<co-advl>|KC|@CO	_	5	cc	_	_
+18	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+19	e	e	CCONJ	<co-piv>|<co-advl>|KC|@CO	_	22	cc	_	d2d:#106
 20	em	em	ADP	<sam->|<cjt>|PRP|@<PIV	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	22	det	_	_
 22	maneira	maneira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
@@ -151,6 +157,9 @@
 # source CETEMPúblico n=263 sec=clt sem=93a
 # sent_id CP263-8
 # id 1406
+# d2d: punct(estreou,,) -> punct(ligou,,)  #106
+# d2d: cc(estreou,e) -> cc(ligou,e)  #106
+# d2d: punct(estreou,,) -> punct(ligou,,)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	série	série	NOUN	<first-cjt>|<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
@@ -166,12 +175,12 @@
 13	a	a	ADP	<sam->|PRP|@A<	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	15	det	_	_
 15	noite	noite	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-16	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 17	em	em	ADP	<sam->|PRP|@<ADVL	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	19	det	_	_
 19	TV2	TV2	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137
-20	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-21	e	e	CCONJ	<co-postnom>|<co-advl>|KC|@CO	_	11	cc	_	_
+20	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
+21	e	e	CCONJ	<co-postnom>|<co-advl>|KC|@CO	_	26	cc	_	d2d:#106
 22	a	a	ADP	<sam->|PRP|@PIV>	_	24	case	_	_
 23	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	24	det	_	_
 24	qual	qual	PRON	<rel>|<np-def>|DET|F|S|@P<	Gender=Fem|Number=Sing|PronType=Rel	26	nmod	_	_

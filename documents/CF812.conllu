@@ -49,6 +49,7 @@
 # source CETENFolha n=812 cad=Opinião sec=opi sem=94b
 # sent_id CF812-4
 # id 3421
+# d2d: cc(publicar,e) -> cc(concluiu,e)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	2	case	_	MWE=Por_que
 2	que	que	PRON	INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	4	nmod	_	_
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
@@ -64,7 +65,7 @@
 13	Nordeste	nordeste	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 14	sobre	sobre	ADP	PRP|@N<	_	15	case	_	_
 15	ela	ela	PRON	PERS|F|3S|NOM/PIV|@P<	Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	nmod	_	_
-16	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	4	cc	_	_
+16	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 17	concluiu	concluir	VERB	<cjt>|<mv>|V|PS|3S|IND|@ICL-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
 18	por	por	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
@@ -101,6 +102,8 @@
 # source CETENFolha n=812 cad=Opinião sec=opi sem=94b
 # sent_id CF812-6
 # id 3423
+# d2d: cc(leite,e) -> cc(estradas,e)  #106
+# d2d: punct(leite,,) -> punct(estradas,,)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	comporta	comportar	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	4	det	_	_
@@ -139,8 +142,8 @@
 36	alimentam	alimentar	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	_	_
 37	de	de	ADP	PRP|@<PIV	_	38	case	_	_
 38	lixo	lixo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	36	nmod	_	_
-39	,	,	PUNCT	PU|@PU	_	30	punct	_	_
-40	e	e	CCONJ	<co-acc>|KC|@CO	_	30	cc	_	_
+39	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+40	e	e	CCONJ	<co-acc>|KC|@CO	_	41	cc	_	d2d:#106
 41	estradas	estrada	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	30	conj	_	_
 42	para	para	ADP	PRP|@N<	_	43	mark	_	_
 43	desenvolver	desenvolver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	41	acl	_	_

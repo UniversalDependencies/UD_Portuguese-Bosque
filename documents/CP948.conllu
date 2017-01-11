@@ -3,6 +3,9 @@
 # source CETEMPúblico n=948 sec=soc sem=91b
 # sent_id CP948-1
 # id 4881
+# d2d: punct(semana,,) -> punct(dias,,)  #106
+# d2d: cc(semana,e) -> cc(dias,e)  #106
+# d2d: cc(Japão,e) -> cc(Comunidade,e)  #106
 1	Aparentemente	aparentemente	ADV	ADV|@>A	_	2	advmod	_	_
 2	imparável	imparável	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	33	amod	_	_
 3	em	em	ADP	<sam->|PRP|@A<	_	6	case	_	_
@@ -36,7 +39,7 @@
 31	entre	entre	ADP	PRP|@<ADVL	_	33	case	_	_
 32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 33	Japão	Japão	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	30	obl	_	ChangedBy=Issue137
-34	e	e	CCONJ	<co-prparg>|KC|@CO	_	33	cc	_	_
+34	e	e	CCONJ	<co-prparg>|KC|@CO	_	36	cc	_	d2d:#106
 35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
 36	Comunidade	Comunidade	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	33	conj	_	MWE=Comunidade_Europeia
 37	Europeia	Europeia	PROPN	PROP|@N<	Number=Sing	36	flat:name	_	_
@@ -55,8 +58,8 @@
 50	partir	partir	NOUN	N|@P<	_	40	nmod	_	_
 51	de	de	ADP	PRP|@N<	_	52	case	_	_
 52	1992	1992	NUM	<year>|<card>|<date>|NUM|M|S|@P<	_	50	nmod	_	_
-53	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-54	e	e	CCONJ	<co-advl>|KC|@CO	_	25	cc	_	_
+53	,	,	PUNCT	PU|@PU	_	56	punct	_	d2d:#106
+54	e	e	CCONJ	<co-advl>|KC|@CO	_	56	cc	_	d2d:#106
 55	dois	dois	NUM	<card>|NUM|M|P|@>N	_	56	nummod	_	_
 56	dias	dia	NOUN	<cjt>|<np-def>|N|M|P|@<ADVL	Gender=Masc|Number=Plur	25	conj	_	_
 57	depois	depois	ADV	ADV|@N<	_	56	advmod	_	_
@@ -94,6 +97,8 @@
 # source CETEMPúblico n=948 sec=soc sem=91b
 # sent_id CP948-2
 # id 4882
+# d2d: cc(factura,e) -> cc(tem,e)  #106
+# d2d: punct(construiu,,) -> punct(encarna,,)  #106
 1	Soichiro	Soichiro	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Soichiro_Honda|MWEPOS=PROPN
 2	Honda	Honda	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_
@@ -103,7 +108,7 @@
 7	construiu	construir	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	acl:relcl	_	_
 8	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	império	império	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
-10	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+10	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 11	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	12	nsubj	_	_
 12	encarna	encarnar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
 13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
@@ -137,7 +142,7 @@
 41	milhões	milhão	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	37	obj	_	_
 42	de	de	ADP	PRP|@N<ARG	_	43	case	_	_
 43	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	41	nmod	_	_
-44	e	e	CCONJ	<co-postnom>|<co-vfin>|KC|@CO	_	37	cc	_	_
+44	e	e	CCONJ	<co-postnom>|<co-vfin>|KC|@CO	_	45	cc	_	d2d:#106
 45	tem	ter	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	conj	_	_
 46	13	13	NUM	<card>|NUM|M|P|@>N	_	47	nummod	_	_
 47	milhões	milhão	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	45	obj	_	_

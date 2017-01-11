@@ -19,6 +19,7 @@
 # source CETENFolha n=764 cad=Opinião sec=opi sem=94b
 # sent_id CF764-3
 # id 3208
+# d2d: cc(instabilidade,ou) -> cc(ameaça,ou)  #106
 1	De	de	ADP	PRP|@ADVL>	_	2	case	_	MWE=De_acordo
 2	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 3	com	com	ADP	PRP|@A<	_	5	case	_	_
@@ -38,7 +39,7 @@
 17	momentos	momento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	obl	_	ChangedBy=Issue137
 18	de	de	ADP	<first-cjt>|PRP|@N<	_	19	case	_	_
 19	instabilidade	instabilidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
-20	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	19	cc	_	_
+20	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	d2d:#106
 21	de	de	ADP	<cjt>|PRP|@N<	_	22	case	_	_
 22	ameaça	ameaça	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	conj	_	ChangedBy=Issue149
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
@@ -50,11 +51,13 @@
 # source CETENFolha n=764 cad=Opinião sec=opi sem=94b
 # sent_id CF764-4
 # id 3209
+# d2d: cc(condenar,e) -> cc(executar,e)  #106
+# d2d: cc(sensação,e) -> cc(debilidade,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	sensação	sensação	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
 4	insegurança	insegurança	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
-5	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+5	e	e	CCONJ	<co-subj>|KC|@CO	_	7	cc	_	d2d:#106
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	debilidade	debilidade	NOUN	<cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
 8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
@@ -103,7 +106,7 @@
 51	,	,	PUNCT	PU|@PU	_	46	punct	_	_
 52	de	de	ADP	PRP|@N<PRED	_	53	mark	_	_
 53	condenar	condenar	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	45	acl	_	_
-54	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	53	cc	_	_
+54	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	55	cc	_	d2d:#106
 55	executar	executar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	53	conj	_	_
 56	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur	57	det	_	_
 57	adversários	adversário	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	55	obj	_	_
@@ -138,6 +141,10 @@
 # source CETENFolha n=764 cad=Opinião sec=opi sem=94b
 # sent_id CF764-6
 # id 3211
+# d2d: cc(filmado,e) -> cc(transmitido,e)  #106
+# d2d: cc(chocante,mas) -> cc(constitui,mas)  #106
+# d2d: cc(chocante,e) -> cc(foi,e)  #106
+# d2d: punct(chocante,,) -> punct(constitui,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	bárbaro	bárbaro	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	linchamento	linchamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
@@ -155,14 +162,14 @@
 15	sido	ser	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	17	cop	_	_
 16	particularmente	particularmente	ADV	<quant>|ADV|@>A	_	17	advmod	_	_
 17	chocante	chocante	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-18	e	e	CCONJ	<co-sta>|KC|@CO	_	17	cc	_	_
+18	e	e	CCONJ	<co-sta>|KC|@CO	_	22	cc	_	d2d:#106
 19	sem	sem	ADP	PRP|@ADVL>	_	20	case	_	_
 20	dúvida	dúvida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	ChangedBy=Issue137
 21	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	obj	_	_
 22	foi	ser	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	conj	_	_
 23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 24	filmado	filmar	VERB	<first-cjt>|<mv>|V|PCP|M|S|@ICL-<ADVL	Gender=Masc|Number=Sing|VerbForm=Part	22	advcl	_	_
-25	e	e	CCONJ	<co-icl>|KC|@CO	_	24	cc	_	_
+25	e	e	CCONJ	<co-icl>|KC|@CO	_	26	cc	_	d2d:#106
 26	transmitido	transmitir	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-<ADVL	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	24	conj	_	_
 27	por	por	ADP	PRP|@PASS	_	29	case	_	_
 28	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
@@ -172,8 +179,8 @@
 32	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 33	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	34	det	_	_
 34	brutalidade	brutalidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	26	obl	_	ChangedBy=Issue137
-35	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-36	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|<co-fcl>|KC|@CO	_	17	cc	_	_
+35	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
+36	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|<co-fcl>|KC|@CO	_	37	cc	_	d2d:#106
 37	constitui	constituir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	_	_
 38	apenas	apenas	ADV	ADV|@>N	_	43	advmod	_	_
 39	mais	mais	ADV	<setop>|ADV|@>A	_	40	advmod	_	_

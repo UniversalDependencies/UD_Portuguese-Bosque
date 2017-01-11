@@ -3,6 +3,7 @@
 # source CETEMPúblico n=126 sec=pol sem=93b &W
 # sent_id CP126-1
 # id 638
+# d2d: cc(oito,e) -> cc(dez,e)  #106
 1	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	3	advmod	_	_
 2	me	eu	PRON	<refl>|PERS|M/F|1S|ACC|@ACC>	Case=Acc|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
 3	convenci	convencer	VERB	<mv>|V|PS|1S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	20	advcl	_	_
@@ -30,7 +31,7 @@
 25	grupos	grupo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
 27	oito	oito	NUM	<first-cjt>|<card>|NUM|M|P|@P<	_	25	nmod	_	_
-28	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	_
+28	e	e	CCONJ	<co-prparg>|KC|@CO	_	29	cc	_	d2d:#106
 29	dez	dez	NUM	<cjt>|<card>|NUM|M|P|@P<	_	27	conj	_	_
 30	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
@@ -39,6 +40,7 @@
 # source CETEMPúblico n=126 sec=pol sem=93b
 # sent_id CP126-2
 # id 639
+# d2d: punct(insignificantes,,) -> punct(resultou,,)  #106
 1	(	(	PUNCT	PU|@PU	_	12	punct	_	_
 2	...	...	PUNCT	PU|@PU	_	12	punct	_	_
 3	)	)	PUNCT	PU|@PU	_	12	punct	_	_
@@ -51,7 +53,7 @@
 10	haviam	haver	AUX	<first-cjt>|<aux>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	12	aux	_	_
 11	sido	ser	VERB	<mv>|<mqpc-ind>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	12	cop	_	_
 12	insignificantes	insignificante	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
-13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+13	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 14	95	95	NUM	<card>|NUM|M|P|@>N	_	15	nummod	_	_
 15	por	por	ADP	_	Gender=Masc|Number=Sing	21	nsubj	_	MWE=por_cento|MWEPOS=NOUN
 16	cento	cento	NUM	_	Gender=Masc|Number=Sing	15	compound	_	_
@@ -105,11 +107,13 @@
 # source CETEMPúblico n=126 sec=pol sem=93b
 # sent_id CP126-4
 # id 641
+# d2d: cc(descer,e) -> cc(atreviam,e)  #106
+# d2d: punct(descer,,) -> punct(atreviam,,)  #106
 1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 2	podíamos	poder	AUX	<first-cjt>|<aux>|V|IMPF|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	3	aux	_	_
 3	descer	descer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-5	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+4	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+5	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 6	eles	eles	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
 7	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
 8	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	expl	_	ChangedBy=Issue135
@@ -123,6 +127,8 @@
 # source CETEMPúblico n=126 sec=pol sem=93b
 # sent_id CP126-5
 # id 642
+# d2d: cc(fome,e) -> cc(sede,e)  #106
+# d2d: punct(força,,) -> punct(fome,,)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	foi	ir	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -130,12 +136,12 @@
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	7	det	_	_
 7	armas	arma	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	4	nmod	_	_
-8	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 9	mas	mas	CCONJ	<co-fcl>|<co-sc>|KC|@CO	_	2	cc	_	_
 10	sim	sim	ADV	ADV|@>N	_	12	advmod	_	_
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	fome	fome	NOUN	<first-cjt>|<cjt>|<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	4	conj	_	_
-13	e	e	CCONJ	<co-sc>|KC|@CO	_	12	cc	_	_
+13	e	e	CCONJ	<co-sc>|KC|@CO	_	15	cc	_	d2d:#106
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	sede	sede	NOUN	<cjt>|<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	12	conj	_	_
 16	,	,	PUNCT	PU|@PU	_	4	punct	_	_

@@ -28,6 +28,9 @@
 # source CETENFolha n=602 cad=Brasil sec=pol sem=94a
 # sent_id CF602-2
 # id 2530
+# d2d: punct(governador,,) -> punct(mulher,,)  #106
+# d2d: punct(governador,,) -> punct(mulher,,)  #106
+# d2d: cc(governador,e) -> cc(mulher,e)  #106
 1	A	a	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	22h43	22h43	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	19	obl	_	ChangedBy=Issue137
@@ -38,11 +41,11 @@
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	São	São	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
 10	Paulo	Paulo	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
-11	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 12	Mário	Mário	PROPN	_	Gender=Masc|Number=Sing	6	appos	_	ChangedBy=Issue119|MWE=Mário_Covas|MWEPOS=PROPN
 13	Covas	Covas	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
-14	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-15	e	e	CCONJ	<co-subj>|KC|@CO	_	6	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+15	e	e	CCONJ	<co-subj>|KC|@CO	_	17	cc	_	d2d:#106
 16	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	17	det	_	_
 17	mulher	mulher	NOUN	<cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	conj	_	_
 18	Lila	Lila	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	17	appos	_	_
@@ -76,6 +79,7 @@
 # source CETENFolha n=602 cad=Brasil sec=pol sem=94a
 # sent_id CF602-4
 # id 2532
+# d2d: cc(estanho,e) -> cc(cassiterita,e)  #106
 1	José	José	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=José_Carlos_Araújo|MWEPOS=PROPN
 2	Carlos	Carlos	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	Araújo	Araújo	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -108,7 +112,7 @@
 30	minérios	minério	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	28	nmod	_	_
 31	principalmente	principalmente	ADV	ADV|@>N	_	32	advmod	_	_
 32	estanho	estanho	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	30	appos	_	_
-33	e	e	CCONJ	KC|@CO	_	32	cc	_	_
+33	e	e	CCONJ	KC|@CO	_	34	cc	_	d2d:#106
 34	cassiterita	cassiterita	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	32	conj	_	ChangedBy=Issue149
 35	em	em	ADP	<sam->|PRP|@N<	_	37	case	_	_
 36	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_

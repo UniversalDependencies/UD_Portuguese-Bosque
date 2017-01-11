@@ -3,8 +3,10 @@
 # source CETENFolha n=509 cad=Dinheiro sec=eco sem=94b
 # sent_id CF509-1
 # id 2142
+# d2d: cc(FHC,e) -> cc(Malan,e)  #106
+# d2d: cc(gastou,e) -> cc(comprados,e)  #106
 1	FHC	FHC	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	Malan	Malan	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149
 4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
 5	esclareceram	esclarecer	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
@@ -17,7 +19,7 @@
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
 14	gastou	gastar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	_	_
-15	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	14	cc	_	_
+15	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 16	quando	quando	DET	<interr>|<quant>|DET|M|S|@ADVL>	Gender=Masc|Number=Sing|PronType=Int	18	advmod	_	_
 17	foram	ser	AUX	<cjt>|<aux>|V|PS/MQP|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	18	aux:pass	_	_
 18	comprados	comprar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	14	conj	_	_
@@ -30,6 +32,8 @@
 # source CETENFolha n=509 cad=Dinheiro sec=eco sem=94b
 # sent_id CF509-2
 # id 2143
+# d2d: punct(Espiridião,,) -> punct(Ronan,,)  #106
+# d2d: cc(Espiridião,e) -> cc(Gilberto,e)  #106
 1	Ainda	ainda	ADV	ADV|@>A	_	2	advmod	_	MWE=Ainda_assim
 2	assim	assim	ADV	ADV|@ADVL>	_	18	advmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -63,13 +67,13 @@
 31	(	(	PUNCT	PU|@PU	_	32	punct	_	_
 32	PPR-SC	PPR-SC	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	29	appos	_	_
 33	)	)	PUNCT	PU|@PU	_	32	punct	_	_
-34	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+34	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 35	Ronan	Ronan	PROPN	_	Gender=Masc|Number=Sing	29	conj	_	ChangedBy=Issue119|MWE=Ronan_Tito|MWEPOS=PROPN
 36	Tito	Tito	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
 37	(	(	PUNCT	PU|@PU	_	38	punct	_	_
 38	PMDB-MG	PMDB-MG	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	35	appos	_	_
 39	)	)	PUNCT	PU|@PU	_	38	punct	_	_
-40	e	e	CCONJ	<co-postnom>|KC|@CO	_	29	cc	_	_
+40	e	e	CCONJ	<co-postnom>|KC|@CO	_	41	cc	_	d2d:#106
 41	Gilberto	Gilberto	PROPN	_	Gender=Masc|Number=Sing	29	conj	_	ChangedBy=Issue119|MWE=Gilberto_Miranda|MWEPOS=PROPN
 42	Miranda	Miranda	PROPN	_	Number=Sing	41	flat:name	_	ChangedBy=Issue119
 43	(	(	PUNCT	PU|@PU	_	44	punct	_	_
@@ -101,8 +105,9 @@
 # source CETENFolha n=509 cad=Dinheiro sec=eco sem=94b
 # sent_id CF509-4
 # id 2145
+# d2d: cc(FHC,e) -> cc(Malan,e)  #106
 1	FHC	FHC	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
-2	e	e	CCONJ	<co-subj>|KC|@CO	_	1	cc	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	Malan	Malan	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149
 4	deverão	dever	AUX	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	5	aux	_	_
 5	defender	defender	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_

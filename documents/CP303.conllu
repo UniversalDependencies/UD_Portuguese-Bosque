@@ -15,9 +15,10 @@
 # source CETEMPúblico n=303 sec=clt sem=94a
 # sent_id CP303-2
 # id 1607
+# d2d: cc(actor,e) -> cc(realizador,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	actor	actor	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	27	nsubj	_	_
-3	e	e	CCONJ	<co-subj>|KC|@CO	_	2	cc	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	d2d:#106
 4	realizador	realizador	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
 5	norte-americano	norte-americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
 6	Clint	Clint	PROPN	_	Gender=Masc|Number=Sing	4	appos	_	ChangedBy=Issue119|MWE=Clint_Eastwood|MWEPOS=PROPN
@@ -66,6 +67,8 @@
 # source CETEMPúblico n=303 sec=clt sem=94a
 # sent_id CP303-3
 # id 1608
+# d2d: punct(franceses,,) -> punct(russos,,)  #106
+# d2d: punct(franceses,,) -> punct(asiáticos,,)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	conferência	conferência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	24	obl	_	ChangedBy=Issue137
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -110,9 +113,9 @@
 42	de	de	ADP	PRP|@N<	_	43	case	_	_
 43	filmes	filme	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	41	nmod	_	_
 44	franceses	francês	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	43	amod	_	_
-45	,	,	PUNCT	PU|@PU	_	44	punct	_	_
+45	,	,	PUNCT	PU|@PU	_	46	punct	_	d2d:#106
 46	asiáticos	asiático	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	44	conj	_	_
-47	,	,	PUNCT	PU|@PU	_	44	punct	_	_
+47	,	,	PUNCT	PU|@PU	_	48	punct	_	d2d:#106
 48	russos	russo	NOUN	<cjt>|<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	44	conj	_	_
 49	»	»	PUNCT	PU|@PU	_	41	punct	_	_
 50	entrasse	entrar	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	36	ccomp	_	_
@@ -146,6 +149,10 @@
 # source CETEMPúblico n=303 sec=clt sem=94a
 # sent_id CP303-5
 # id 1610
+# d2d: punct(disse,,) -> punct(projecta,,)  #106
+# d2d: cc(disse,e) -> cc(projecta,e)  #106
+# d2d: punct(disse,,) -> punct(projecta,,)  #106
+# d2d: punct(disse,,) -> punct(projecta,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	actor	actor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	disse	dizer	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -159,19 +166,19 @@
 11	on	on	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 12	Henrietta	Henrietta	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 13	»	»	PUNCT	PU|@PU	_	8	punct	_	_
-14	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+14	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	filme	filme	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	8	appos	_	_
 17	realizado	realizar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	acl	_	_
 18	por	por	ADP	PRP|@PASS	_	19	case	_	_
 19	James	James	PROPN	_	Gender=Masc|Number=Sing	17	obl:agent	_	ChangedBy=Issue119|MWE=James_Keach|MWEPOS=PROPN
 20	Keach	Keach	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
-21	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 22	com	com	ADP	PRP|@N<PRED	_	23	case	_	_
 23	Robert	Robert	PROPN	_	Gender=Masc|Number=Sing	16	nmod	_	ChangedBy=Issue119|MWE=Robert_Duvall|MWEPOS=PROPN
 24	Duvall	Duvall	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119
-25	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-26	e	e	CCONJ	<co-sta>|<co-vfin>|KC|@CO	_	3	cc	_	_
+25	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+26	e	e	CCONJ	<co-sta>|<co-vfin>|KC|@CO	_	27	cc	_	d2d:#106
 27	projecta	projectar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 28	rodar	rodar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	27	xcomp	_	_
 29	«	«	PUNCT	PU|@PU	_	30	punct	_	_

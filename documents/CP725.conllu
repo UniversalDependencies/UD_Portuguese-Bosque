@@ -3,12 +3,13 @@
 # source CETEMPúblico n=725 sec=pol sem=95b
 # sent_id CP725-1
 # id 3727
+# d2d: punct(constatação,,) -> punct(diferença,,)  #106
 1	'R.'	r.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	constatação	constatação	NOUN	<first-cjt>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	1	parataxis	_	_
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	diferença	diferença	NOUN	<cjt>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	5	conj	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	MWE=de_estilo
@@ -35,6 +36,9 @@
 # source CETEMPúblico n=725 sec=pol sem=95b
 # sent_id CP725-3
 # id 3729
+# d2d: cc(ter,nem) -> cc(terei,nem)  #106
+# d2d: cc(ter,nem) -> cc(tido,nem)  #106
+# d2d: punct(ter,,) -> punct(terei,,)  #106
 1	Acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -48,11 +52,11 @@
 11	não	não	ADV	ADV|@P<	_	13	advmod	_	_
 12	vou	ir	AUX	<first-cjt>|<aux>|V|PR|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	13	aux	_	_
 13	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	ccomp	_	_
-14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-15	nem	nem	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	13	cc	_	_
+14	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+15	nem	nem	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 16	terei	ter	VERB	<mv>|<cjt>|V|FUT|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	13	conj	_	_
 17	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-18	nem	nem	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	13	cc	_	_
+18	nem	nem	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 19	tenho	ter	AUX	<first-cjt>|<aux>|V|PR|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	20	aux	_	_
 20	tido	ter	VERB	<cjt>|<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	13	conj	_	_
 21	.	.	PUNCT	PU|@PU	_	1	punct	_	_
@@ -90,6 +94,9 @@
 # source CETEMPúblico n=725 sec=pol sem=95b
 # sent_id CP725-5
 # id 3731
+# d2d: cc(pessoas,e) -> cc(ter,e)  #106
+# d2d: cc(perfil,e) -> cc(adequação,e)  #106
+# d2d: cc(ter,ou) -> cc(ter,ou)  #106
 1	Acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	28	mark	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -107,7 +114,7 @@
 15	sobre	sobre	ADP	<cjt>|PRP|@<ADVL	_	17	case	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	perfil	perfil	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	conj	_	_
-18	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	_
+18	e	e	CCONJ	<co-prparg>|KC|@CO	_	21	cc	_	d2d:#106
 19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 20	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	21	det	_	_
 21	adequação	adequação	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	conj	_	_
@@ -121,11 +128,11 @@
 29	com	com	ADP	<first-cjt>|PRP|@<ADVL	_	31	case	_	_
 30	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_
 31	pessoas	pessoa	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	obl	_	ChangedBy=Issue137
-32	e	e	CCONJ	<co-advl>|KC|@CO	_	31	cc	_	_
+32	e	e	CCONJ	<co-advl>|KC|@CO	_	35	cc	_	d2d:#106
 33	não	não	ADV	_	Polarity=Neg	35	advmod	_	_
 34	com	com	ADP	<cjt>|PRP|@<ADVL	_	35	mark	_	_
 35	ter	ter	VERB	<mv>|<cjt>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	31	conj	_	_
-36	ou	ou	CCONJ	<co-inf>|KC|@CO	_	35	cc	_	_
+36	ou	ou	CCONJ	<co-inf>|KC|@CO	_	38	cc	_	d2d:#106
 37	não	não	ADV	_	Polarity=Neg	38	advmod	_	_
 38	ter	ter	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	35	conj	_	_
 39	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_

@@ -27,6 +27,9 @@
 # source CETENFolha n=754 cad=Opinião sec=opi sem=94b &E &D
 # sent_id CF754-2
 # id 3161
+# d2d: cc(burocracia,e) -> cc(praga,e)  #106
+# d2d: cc(PT,mas) -> cc(democracia,mas)  #106
+# d2d: punct(Empreiteiras,,) -> punct(financiamentos,,)  #106
 1	Além	além	ADV	ADV|@ADVL>	_	11	advmod	_	MWE=Além_de
 2	de	de	ADP	PRP|@A<	_	3	mark	_	_
 3	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_
@@ -43,7 +46,7 @@
 14	CPIs	cpi	NOUN	<prop>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	11	obj	_	_
 15	sobre	sobre	ADP	PRP|@N<	_	16	case	_	_
 16	Empreiteiras	empreiteira	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	14	nmod	_	_
-17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	financiamentos	financiamento	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	conj	_	_
 19	eleitorais	eleitoral	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	18	amod	_	_
 20	e	e	CCONJ	<co-prparg>|KC|@CO	_	16	cc	_	_
@@ -66,7 +69,7 @@
 37	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	39	case	_	_
 38	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 39	burocracia	burocracia	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	_
-40	e	e	CCONJ	<co-postnom>|KC|@CO	_	39	cc	_	_
+40	e	e	CCONJ	<co-postnom>|KC|@CO	_	43	cc	_	d2d:#106
 41	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	43	case	_	_
 42	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
 43	praga	praga	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	39	conj	_	_
@@ -86,7 +89,7 @@
 57	apenas	apenas	ADV	ADV|@>N	_	59	advmod	_	_
 58	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	59	det	_	_
 59	PT	PT	PROPN	<first-cjt>|PROP|M|S|@<ACC	Gender=Masc|Number=Sing	55	obj	_	_
-60	mas	mas	CCONJ	<co-acc>|KC|@CO	_	59	cc	_	_
+60	mas	mas	CCONJ	<co-acc>|KC|@CO	_	62	cc	_	d2d:#106
 61	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	62	det	_	_
 62	democracia	democracia	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	59	conj	_	_
 63	.	.	PUNCT	PU|@PU	_	11	punct	_	_
@@ -96,6 +99,13 @@
 # source CETENFolha n=754 cad=Opinião sec=opi sem=94b
 # sent_id CF754-3
 # id 3162
+# d2d: cc(ponta,e) -> cc(é,e)  #106
+# d2d: punct(ponta,,) -> punct(taxa,,)  #106
+# d2d: cc(miséria,e) -> cc(violência,e)  #106
+# d2d: punct(ponta,,) -> punct(taxa,,)  #106
+# d2d: punct(ponta,:) -> punct(taxa,:)  #106
+# d2d: cc(seriedade,e) -> cc(compromisso,e)  #106
+# d2d: punct(ponta,,) -> punct(é,,)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	7	cc	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	roubalheira	roubalheira	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -108,22 +118,22 @@
 10	«	«	PUNCT	PU|@PU	_	11	punct	_	_
 11	lamaçal	lamaçal	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 12	»	»	PUNCT	PU|@PU	_	11	punct	_	_
-13	:	:	PUNCT	PU|@PU	_	7	punct	_	_
+13	:	:	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	problema	problema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	25	nsubj	_	_
 16	essencial	essencial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	amod	_	_
-17	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+17	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_
 20	delinquência	delinquência	NOUN	<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	15	appos	_	_
-21	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 22	é	ser	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_
 23	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 24	baixa	baixo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	25	amod	_	_
 25	taxa	taxa	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	7	conj	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
 27	seriedade	seriedade	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	_
-28	e	e	CCONJ	KC|@CO	_	27	cc	_	_
+28	e	e	CCONJ	KC|@CO	_	29	cc	_	d2d:#106
 29	compromisso	compromisso	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	conj	_	_
 30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
 31	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
@@ -140,10 +150,10 @@
 42	vistos	visto	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	40	amod	_	_
 43	de	de	ADP	PRP|@N<	_	44	case	_	_
 44	miséria	miséria	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	40	nmod	_	_
-45	e	e	CCONJ	<co-prparg>|KC|@CO	_	44	cc	_	_
+45	e	e	CCONJ	<co-prparg>|KC|@CO	_	46	cc	_	d2d:#106
 46	violência	violência	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	44	conj	_	_
-47	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	_
-48	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+47	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	54	cc	_	d2d:#106
+48	,	,	PUNCT	PU|@PU	_	54	punct	_	d2d:#106
 49	como	como	ADV	<rel>|ADV|@ADVL>	_	50	advmod	_	_
 50	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	advcl	_	_
 51	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_

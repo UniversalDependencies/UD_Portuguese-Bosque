@@ -3,6 +3,10 @@
 # source CETEMPúblico n=745 sec=des sem=98a
 # sent_id CP745-1
 # id 3832
+# d2d: punct(estreia,,) -> punct(cc,,)  #106
+# d2d: cc(estreia,e) -> cc(cc,e)  #106
+# d2d: cc(entregou,e) -> cc(convicto,e)  #106
+# d2d: punct(entregou,,) -> punct(convicto,,)  #106
 1	Após	após	ADP	PRP|@ADVL>	_	2	case	_	_
 2	negociações	negociação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	15	obl	_	ChangedBy=Issue137
 3	com	com	ADP	PRP|@N<	_	6	case	_	_
@@ -31,7 +35,7 @@
 26	a	a	ADP	<first-cjt>|PRP|@<PIV	_	27	case	_	_
 27	Felisberto	Felisberto	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue119|MWE=Felisberto_Teixeira|MWEPOS=PROPN
 28	Teixeira	Teixeira	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
-29	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+29	,	,	PUNCT	PU|@PU	_	47	punct	_	d2d:#106
 30	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	31	nsubj	_	_
 31	conta	contar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_
 32	também	também	ADV	ADV|@<ADVL	_	31	advmod	_	_
@@ -47,7 +51,7 @@
 42	(	(	PUNCT	PU|@PU	_	43	punct	_	_
 43	FNM	FNM	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	38	appos	_	_
 44	)	)	PUNCT	PU|@PU	_	43	punct	_	_
-45	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	_
+45	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	47	cc	_	d2d:#106
 46	está	estar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	47	cop	_	_
 47	convicto	convicto	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	15	conj	_	_
 48	que	que	SCONJ	KS|@SUB	_	51	mark	_	_
@@ -64,8 +68,8 @@
 59	que	que	SCONJ	KS|@SUB	_	72	mark	_	_
 60	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	61	det	_	_
 61	estreia	estreia	NOUN	<first-cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	72	nsubj	_	_
-62	,	,	PUNCT	PU|@PU	_	61	punct	_	_
-63	e	e	CCONJ	<co-subj>|KC|@CO	_	61	cc	_	_
+62	,	,	PUNCT	PU|@PU	_	68	punct	_	d2d:#106
+63	e	e	CCONJ	<co-subj>|KC|@CO	_	68	cc	_	d2d:#106
 64	muito	muito	ADV	<quant>|ADV|@>A	_	65	advmod	_	_
 65	especialmente	especialmente	ADV	ADV|@>A	_	68	advmod	_	_
 66	em	em	ADP	<cjt>|PRP|@SUBJ>	_	68	case	_	_

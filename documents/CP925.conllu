@@ -3,20 +3,26 @@
 # source CETEMPúblico n=925 sec=soc sem=92a
 # sent_id CP925-1
 # id 4759
+# d2d: punct(refere-,,) -> punct(constata,,)  #106
+# d2d: punct(revolta,,) -> punct(refugia,,)  #106
+# d2d: cc(refere-,e) -> cc(constata,e)  #106
+# d2d: punct(refere-,,) -> punct(constata,,)  #106
+# d2d: punct(revolta,,) -> punct(adapta,,)  #106
+# d2d: cc(física,ou) -> cc(psicológica,ou)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	texto	texto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	refere-	referir	VERB	<mv>|<first-cjt>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	se	se	PRON	<refl>|PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
-5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 6	nomeadamente	nomeadamente	ADV	ADV|@>P	_	10	advmod	_	_
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 8	a	a	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	10	case	_	_
 9	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
 10	especificidades	especificidade	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	estes	este	DET	<-sam>|<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	13	det	_	_
 13	reclusos	recluso	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
-14	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+14	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 15	constata	constatar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 16	que	que	SCONJ	KS|@SUB	_	36	mark	_	_
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
@@ -46,11 +52,11 @@
 41	ora	ora	ADV	<kc>|ADV|@ADVL>	_	43	advmod	_	_
 42	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	43	expl	_	ChangedBy=Issue135
 43	revolta	revoltar	VERB	<first-cjt>|<mv>|<se-passive>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	acl:relcl	_	_
-44	,	,	PUNCT	PU|@PU	_	43	punct	_	_
+44	,	,	PUNCT	PU|@PU	_	47	punct	_	d2d:#106
 45	ora	ora	ADV	<kc>|ADV|@ADVL>	_	47	advmod	_	_
 46	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	47	expl	_	ChangedBy=Issue135
 47	adapta	adaptar	VERB	<cjt>|<mv>|<se-passive>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	conj	_	_
-48	,	,	PUNCT	PU|@PU	_	43	punct	_	_
+48	,	,	PUNCT	PU|@PU	_	51	punct	_	d2d:#106
 49	ora	ora	ADV	<kc>|ADV|@ADVL>	_	51	advmod	_	_
 50	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	51	expl	_	ChangedBy=Issue135
 51	refugia	refugiar	VERB	<cjt>|<mv>|<se-passive>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	conj	_	_
@@ -58,7 +64,7 @@
 53	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	_	_
 54	doença	doença	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	51	obl	_	ChangedBy=Issue137
 55	física	físico	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	54	amod	_	_
-56	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	55	cc	_	_
+56	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	57	cc	_	d2d:#106
 57	psicológica	psicológico	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	55	conj	_	_
 58	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
@@ -99,13 +105,14 @@
 # source CETEMPúblico n=925 sec=soc sem=92a
 # sent_id CP925-3
 # id 4761
+# d2d: cc(estudos,e) -> cc(planeamento,e)  #106
 1	--	--	PUNCT	PU|@PU	_	2	punct	_	_
 2	interroga	interrogar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	divisão	divisão	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	2	nsubj	_	_
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	estudos	estudo	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
-7	e	e	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	_
+7	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	d2d:#106
 8	planeamento	planeamento	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	conj	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_

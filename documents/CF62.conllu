@@ -3,11 +3,12 @@
 # source CETENFolha n=62 cad=Imóveis sec=eco sem=94b
 # sent_id CF62-1
 # id 235
+# d2d: cc(italianos,e) -> cc(belgas,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	ele	ele	PRON	PERS|M|3S|NOM|@P<	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nmod	_	_
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	italianos	italiano	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
-5	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	_
+5	e	e	CCONJ	<co-subj>|KC|@CO	_	6	cc	_	d2d:#106
 6	belgas	belga	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	conj	_	_
 7	já	já	ADV	ADV|@ADVL>	_	8	advmod	_	_
 8	descobriram	descobrir	VERB	<mv>|V|MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pqp|VerbForm=Fin	0	root	_	_
@@ -27,6 +28,9 @@
 # source CETENFolha n=62 cad=Imóveis sec=eco sem=94b
 # sent_id CF62-2
 # id 236
+# d2d: cc(julho,e) -> cc(janeiro,e)  #106
+# d2d: punct(comprou,,) -> punct(aluga,,)  #106
+# d2d: cc(comprou,mas) -> cc(aluga,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	_
 2	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	diplomata	diplomata	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -41,10 +45,10 @@
 12	férias	féria	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	julho	julho	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod:tmod	_	_
-15	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	_
+15	e	e	CCONJ	<co-prparg>|KC|@CO	_	16	cc	_	d2d:#106
 16	janeiro	janeiro	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	conj	_	_
-17	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-18	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	7	cc	_	_
+17	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+18	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	24	cc	_	d2d:#106
 19	fora	fora	ADV	ADV|@ADVL>	_	24	advmod	_	_
 20	de	de	ADP	<sam->|PRP|@A<	_	22	case	_	_
 21	esse	esse	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	22	det	_	_

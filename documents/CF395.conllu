@@ -38,11 +38,13 @@
 # source CETENFolha n=395 cad=Opinião sec=opi sem=94a
 # sent_id CF395-4
 # id 1641
+# d2d: punct(acho,,) -> punct(preciso,,)  #106
+# d2d: cc(acho,mas) -> cc(preciso,mas)  #106
 1	Eu	eu	PRON	PERS|M|1S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
 2	também	também	ADV	ADV|@ADVL>	_	3	advmod	_	_
 3	acho	achar	VERB	<first-cjt>|<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-5	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	3	cc	_	_
+4	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
+5	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	d2d:#106
 6	é	ser	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
 7	preciso	preciso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	conj	_	_
 8	avisar	avisar	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	7	csubj	_	_
@@ -58,6 +60,7 @@
 # source CETENFolha n=395 cad=Opinião sec=opi sem=94a
 # sent_id CF395-5
 # id 1642
+# d2d: cc(rápida,e) -> cc(incondicionalmente,e)  #106
 1	Nunca	nunca	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	vi	ver	VERB	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 3	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -66,7 +69,7 @@
 6	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	expl	_	ChangedBy=Issue135
 7	tão	tão	ADV	<quant>|<KOMP>|ADV|@>A	_	8	advmod	_	_
 8	rápida	rápido	ADV	<first-cjt>|<Em>|<mente>|ADV|@<ADVL	_	5	advmod	_	_
-9	e	e	CCONJ	KC|@CO	_	8	cc	_	_
+9	e	e	CCONJ	KC|@CO	_	10	cc	_	d2d:#106
 10	incondicionalmente	incondicionalmente	ADV	<cjt>|ADV|@<ADVL	_	8	conj	_	_
 11	como	como	ADV	<rel>|ADV|@ADVL>	_	15	advmod	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -80,6 +83,8 @@
 # source CETENFolha n=395 cad=Opinião sec=opi sem=94a
 # sent_id CF395-6
 # id 1643
+# d2d: cc(militância,e) -> cc(simpatizantes,e)  #106
+# d2d: punct(militância,,) -> punct(quadros,,)  #106
 1	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
 2	notável	notável	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -88,11 +93,11 @@
 6	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	militância	militância	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
-9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 10	de	de	ADP	<cjt>|PRP|@N<	_	11	case	_	_
 11	quadros	quadro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	conj	_	_
 12	dirigentes	dirigente	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	11	amod	_	_
-13	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	_
+13	e	e	CCONJ	<co-postnom>|KC|@CO	_	15	cc	_	d2d:#106
 14	de	de	ADP	<cjt>|PRP|@N<	_	15	case	_	_
 15	simpatizantes	simpatizante	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	conj	_	_
 16	em	em	ADP	PRP|@<ADVL	_	17	case	_	MWE=em_geral

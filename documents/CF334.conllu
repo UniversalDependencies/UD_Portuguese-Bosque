@@ -87,6 +87,8 @@
 # source CETENFolha n=334 cad=Cotidiano sec=soc sem=94b
 # sent_id CF334-3
 # id 1383
+# d2d: cc(envio,e) -> cc(passeatas,e)  #106
+# d2d: punct(envio,,) -> punct(plantio,,)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Curitiba	Curitiba	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -97,11 +99,11 @@
 8	envio	envio	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
 9	de	de	ADP	PRP|@N<ARG	_	10	case	_	_
 10	fax	fax	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
-11	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 12	plantio	plantio	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	conj	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	árvores	árvore	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
-15	e	e	CCONJ	<co-acc>|KC|@CO	_	8	cc	_	_
+15	e	e	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	d2d:#106
 16	passeatas	passeata	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	conj	_	_
 17	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
@@ -144,6 +146,8 @@
 # source CETENFolha n=334 cad=Cotidiano sec=soc sem=94b
 # sent_id CF334-5
 # id 1385
+# d2d: cc(Delegacia,e) -> cc(Instituro,e)  #106
+# d2d: cc(trabalho,e) -> cc(identidade,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	plantão	plantão	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	ChangedBy=Issue137
 3	especial	especial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -156,7 +160,7 @@
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	Trabalho	Trabalho	PROPN	PROP|@P<	Number=Sing	8	nmod	_	_
-13	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	_
+13	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	d2d:#106
 14	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	16	case	_	_
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	Instituro	Instituro	PROPN	_	Gender=Masc|Number=Sing	8	conj	_	ChangedBy=Issue119|MWE=Instituro_Pedro_Melo|MWEPOS=PROPN
@@ -166,7 +170,7 @@
 20	carteiras	carteira	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	19	obj	_	_
 21	de	de	ADP	<first-cjt>|PRP|@N<	_	22	case	_	_
 22	trabalho	trabalho	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
-23	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	_
+23	e	e	CCONJ	<co-postnom>|KC|@CO	_	25	cc	_	d2d:#106
 24	de	de	ADP	<cjt>|PRP|@N<	_	25	case	_	_
 25	identidade	identidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	conj	_	ChangedBy=Issue149
 26	para	para	ADP	PRP|@<ADVL	_	27	case	_	_

@@ -3,6 +3,10 @@
 # source CETENFolha n=505 cad=Informática sec=com sem=94a
 # sent_id CF505-1
 # id 2128
+# d2d: cc(textos,e) -> cc(vídeos,e)  #106
+# d2d: cc(táticas,além) -> cc(textos,além)  #106
+# d2d: cc(fotos,e) -> cc(mapas,e)  #106
+# d2d: punct(táticas,,) -> punct(textos,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	programa	programa	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 3	sobre	sobre	ADP	PRP|@N<	_	5	case	_	_
@@ -19,7 +23,7 @@
 14	tem	ter	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	parataxis	_	_
 15	900	900	NUM	<card>|NUM|F|P|@>N	_	16	nummod	_	_
 16	fotos	foto	NOUN	<first-cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	14	obj	_	_
-17	e	e	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	_
+17	e	e	CCONJ	<co-acc>|KC|@CO	_	19	cc	_	d2d:#106
 18	140	140	NUM	<card>|NUM|M|P|@>N	_	19	nummod	_	_
 19	mapas	mapa	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	conj	_	_
 20	de	de	ADP	PRP|@N<	_	21	case	_	_
@@ -33,11 +37,11 @@
 28	em	em	ADP	<sam->|PRP|@<ADVL	_	30	case	_	_
 29	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	guerra	guerra	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	27	obl	_	ChangedBy=Issue137
-31	,	,	PUNCT	PU|@PU	_	26	punct	_	_
-32	além	além	ADV	ADV|@CO	_	26	cc	_	MWE=além_de
+31	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
+32	além	além	ADV	ADV|@CO	_	34	cc	_	MWE=além_de|d2d:#106
 33	de	de	ADP	PRP|@A<	_	32	nmod	_	_
 34	textos	texto	NOUN	<cjt>|<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	26	conj	_	_
-35	e	e	CCONJ	KC|@CO	_	34	cc	_	_
+35	e	e	CCONJ	KC|@CO	_	36	cc	_	d2d:#106
 36	vídeos	vídeo	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	34	conj	_	_
 37	de	de	ADP	PRP|@N<	_	38	case	_	_
 38	gravações	gravação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	34	nmod	_	_
@@ -49,6 +53,7 @@
 # source CETENFolha n=505 cad=Informática sec=com sem=94a
 # sent_id CF505-2
 # id 2129
+# d2d: cc(programa,e) -> cc(passeio,e)  #106
 1	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	2	nsubj	_	_
 2	prefere	preferir	VERB	<mv>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	csubj	_	_
 3	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
@@ -72,7 +77,7 @@
 21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	programa	programa	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
 23	Apollo	Apollo	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	22	appos	_	_
-24	e	e	CCONJ	<co-acc>|KC|@CO	_	22	cc	_	_
+24	e	e	CCONJ	<co-acc>|KC|@CO	_	26	cc	_	d2d:#106
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	passeio	passeio	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	conj	_	_
 27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_

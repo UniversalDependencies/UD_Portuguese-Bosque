@@ -3,6 +3,7 @@
 # source CETENFolha n=476 cad=Turismo sec=soc sem=94a
 # sent_id CF476-1
 # id 2013
+# d2d: cc(chegou,e) -> cc(inaugurou,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	sequência	sequência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
@@ -18,7 +19,7 @@
 13	a	a	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	15	case	_	_
 14	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
 15	Índias	índia	NOUN	<first-cjt>|<prop>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
-16	e	e	CCONJ	<co-sta>|KC|@CO	_	12	cc	_	_
+16	e	e	CCONJ	<co-sta>|KC|@CO	_	17	cc	_	d2d:#106
 17	inaugurou	inaugurar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	_	_
 18	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	nova	nova	NOUN	N|F|S|@>N	Gender=Fem|Number=Sing	20	compound	_	_
@@ -30,6 +31,7 @@
 # source CETENFolha n=476 cad=Turismo sec=soc sem=94a
 # sent_id CF476-2
 # id 2014
+# d2d: cc(cantou,e) -> cc(registrou,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 3	Os	Os	PROPN	_	Gender=Masc|Number=Plur	10	nmod	_	ChangedBy=Issue119|MWE=Os_Lusíadas|MWEPOS=PROPN
@@ -44,7 +46,7 @@
 12	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	13	amod	_	_
 13	epopéia	epopéia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
 14	portuguesa	português	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	_
-15	e	e	CCONJ	<co-sta>|KC|@CO	_	10	cc	_	_
+15	e	e	CCONJ	<co-sta>|KC|@CO	_	17	cc	_	d2d:#106
 16	a	ela	PRON	PERS|F|3S|ACC|@ACC>	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	obj	_	_
 17	registrou	registrar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_
 18	em	em	ADP	PRP|@<ADVL	_	19	case	_	_
@@ -56,6 +58,12 @@
 # source CETENFolha n=476 cad=Turismo sec=soc sem=94a
 # sent_id CF476-3
 # id 2015
+# d2d: punct(Ptolomeu,,) -> punct(passaram,,)  #106
+# d2d: cc(Ptolomeu,e) -> cc(passaram,e)  #106
+# d2d: punct(Ptolomeu,,) -> punct(passaram,,)  #106
+# d2d: punct(Ptolomeu,,) -> punct(passaram,,)  #106
+# d2d: punct(Ptolomeu,,) -> punct(passaram,,)  #106
+# d2d: punct(Ptolomeu,/) -> punct(passaram,/)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
 2	Eu	eu	PRON	PERS|M|1S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
 3	sou	ser	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -76,15 +84,15 @@
 18	nunca	nunca	ADV	ADV|@ADVL>	_	34	advmod	_	_
 19	a	a	ADP	PRP|@ADVL>	_	20	case	_	_
 20	Ptolomeu	Ptolomeu	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	34	nmod	_	_
-21	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 22	Pompônio	Pompônio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
-23	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 24	Estrabo	Estrabo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
-25	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-26	/	/	PUNCT	PU|@PU	_	20	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
+26	/	/	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 27	Plínio	Plínio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
-28	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-29	e	e	CCONJ	<co-prparg>|KC|@CO	_	20	cc	_	_
+28	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
+29	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	d2d:#106
 30	quantos	quanto	PRON	<rel>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	31	nsubj	_	_
 31	passaram	passar	VERB	<mv>|<cjt>|V|PS/MQP|3P|IND|@P<	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	20	conj	_	_
 32	,	,	PUNCT	PU|@PU	_	34	punct	_	_
@@ -98,6 +106,7 @@
 # source CETENFolha n=476 cad=Turismo sec=soc sem=94a
 # sent_id CF476-4
 # id 2016
+# d2d: cc(Noruega,e) -> cc(Suécia,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	cabo	cabo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -137,7 +146,7 @@
 37	em	em	ADP	<sam->|PRP|@<ADVL	_	39	case	_	_
 38	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 39	Noruega	Noruega	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	36	obl	_	ChangedBy=Issue137
-40	e	e	CCONJ	KC|@CO	_	39	cc	_	_
+40	e	e	CCONJ	KC|@CO	_	41	cc	_	d2d:#106
 41	Suécia	Suécia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	39	conj	_	ChangedBy=Issue149
 42	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
@@ -146,6 +155,8 @@
 # source CETENFolha n=476 cad=Turismo sec=soc sem=94a
 # sent_id CF476-5
 # id 2017
+# d2d: cc(maior,e) -> cc(menor,e)  #106
+# d2d: cc(capo,ou) -> cc(promontório,ou)  #106
 1	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	mesmo	mesmo	PRON	<diff>|<KOMP>|<np-def>|DET|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
@@ -153,7 +164,7 @@
 5	capo	capo	NOUN	<first-cjt>|<np-idf>|N|M|S|@KOMP<	Gender=Masc|Number=Sing	3	nmod	_	_
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 7	cabedelo	cabedelo	NOUN	<np-idf>|N|M|S|@KOMP<	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue149
-8	ou	ou	CCONJ	KC|@CO	_	5	cc	_	_
+8	ou	ou	CCONJ	KC|@CO	_	9	cc	_	d2d:#106
 9	promontório	promontório	NOUN	<np-idf>|N|M|S|@KOMP<	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue149
 10	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 11	extensão	extensão	NOUN	<first-cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	5	conj	_	ChangedBy=Issue149
@@ -163,7 +174,7 @@
 15	que	que	SCONJ	KS|@COM	_	17	mark	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	ponta	ponta	NOUN	<first-cjt>|<np-def>|N|F|S|@KOMP<	Gender=Fem|Number=Sing	14	nmod	_	_
-18	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	_
+18	e	e	CCONJ	<co-postnom>|KC|@CO	_	19	cc	_	d2d:#106
 19	menor	pequeno	ADJ	<cjt>|<KOMP>|<COMP>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	conj	_	_
 20	que	que	SCONJ	KS|@COM	_	22	mark	_	_
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
