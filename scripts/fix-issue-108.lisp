@@ -7,9 +7,6 @@
 (defun find-token (id tokens)
   (find id tokens :key (lambda (tk) (slot-value tk 'id))))
 
-(defun verb? (token)
-  (member (slot-value token 'upostag) '("AUX" "VERB") :test #'string=))
-
 (defun head-of (token tokens)
   (find-token (slot-value token 'head) tokens))
 
@@ -18,15 +15,19 @@
                       (split-sequence #\| (slot-value token 'feats)))))
     (format nil "~{~a~^|~}" (sort (append features `(,(format nil "~a=~a" key value))) #'string<))))
 
+(defun append-misc (key value token)
+  (let ((features (if (string= "_" (slot-value token 'misc)) nil
+                      (split-sequence #\| (slot-value token 'misc)))))
+    (format nil "~{~a~^|~}" (sort (append features `(,(format nil "~a=~a" key value))) #'string<))))
+
 (defun fix-neg (tokens)
   (mapc (lambda (tk)
           (when
               (and (string-equal (slot-value tk 'lemma) "não")
                    (string= (slot-value tk 'deprel) "neg"))
-            (when (verb? (head-of tk tokens))
-              (setf (slot-value tk 'deprel) "advmod")
-              (setf (slot-value tk 'xpostag) "_")
-              (setf (slot-value tk 'feats) (append-feature "Polarity" "Neg" tk)))))
+            (setf (slot-value tk 'misc) (append-misc "ChangedBy" "Issue108" tk))
+            (setf (slot-value tk 'deprel) "advmod")
+            (setf (slot-value tk 'feats) (append-feature "Polarity" "Neg" tk))))
         tokens))
 
 (defun fix-corpus (sentences)
