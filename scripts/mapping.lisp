@@ -299,3 +299,20 @@
 		    #'> :key (lambda (obj) (nth 4 obj))))
       (format out "~a~%~a ~a~%~%" (alexandria:hash-table-alist hist) (length new) (length old)))))
 
+(defun sent-id->sentence (sentence-list)
+  (let ((sentence-hash (make-hash-table :test 'equal)))
+    (dolist (x sentence-list)
+      (setf (gethash (sentence-meta-value x "sent_id") sentence-hash) x))
+    sentence-hash))
+
+(defun create-new-sent-id->old-sentence (matching old new)
+  (let ((new-sent-id->old-sentence-text (make-hash-table :test 'equal))
+	(matching-array (car matching))
+	(old-sent-id->sentence (sent-id->sentence old))
+	(old-array (make-array (length old) :initial-contents old))
+	(new-array (make-array (length new) :initial-contents new))) 
+    (dotimes (x (length matching-array))
+      (unless (null (aref matching-array x))	      
+	(setf (gethash (sentence-meta-value (aref new-array x) "sent_id") new-sent-id->old-sentence-text) (gethash (sentence-meta-value (aref old-array (aref matching-array x)) "sent_id") old-sent-id->sentence)))) 
+    new-sent-id->old-sentence-text))
+
