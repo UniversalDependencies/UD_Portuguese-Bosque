@@ -1,4 +1,3 @@
-
 (ql:quickload :cl-conllu)
 (ql:quickload :cl-store)
 (ql:quickload :alexandria)
@@ -220,7 +219,6 @@
 
 (defun stable-matching (men women)
   ;; Gale-Shapley algorithm for stable matchings
-  ;;
   (let ((matching (empty-matching men women)))
     (setq *men* men)
     (setq *women* women)
@@ -230,33 +228,15 @@
 ;; STABLE MATCHING: END
 
 (defun find-singles (matching)
-  ;; We assume that if there are more men than women, then there's no single women (and vice-versa)
-  (let ((partner-array
-	  (if (> (length (car matching)) (length (cdr matching)))
-	      (car matching)
-	      (cdr matching)))
-	 (singles ()))
-    (dotimes (x (length partner-array))
+  ;; We assume that if there are more men than women, then there's no
+  ;; single women (and vice-versa)
+  (let ((partner-array (if (> (length (car matching)) (length (cdr matching)))
+			   (car matching)
+			   (cdr matching)))
+	(singles nil))
+    (dotimes (x (length partner-array) singles)
       (if (null (aref partner-array x))
-	  (push x singles)))
-    singles))
-
-(defun distance-list (partners-array distance-matrix)
-  ;; From a matching array (let's say, `wife`), get distances
-  (let ((length (car (array-dimensions partners-array)))
-	(distance-string ""))
-    (dotimes (x length distance-string)
-      (if (aref partners-array x)
-	  (setq distance-string
-		(concatenate 'string
-			     (concatenate 'string
-					  distance-string
-					  (format nil "~a" (list x
-								 (aref partners-array x)
-								 (aref distance-matrix x
-								       (aref partners-array x)))))
-			     ","))))))
-
+	  (push x singles)))))
 
 
 (defun difference (new old)
@@ -272,43 +252,6 @@
 				       (make-array (length data) :initial-contents data))))
 			filename))))
 
-
-(defun execute ()
-  (let* ((new (read-conllu #P"bosque-ud.conllu"))  ; man
-	 (old (read-conllu #P"bosque-old.conllu")) ; woman
-	 (distances (difference new old))
-	 (hist (make-hash-table))
-	 (men (transform-to-mens-preferences distances))
-	 (women (transform-to-womens-preferences distances))
-	 (matching (stable-matching men women)))
-    (with-open-file (out "mapping.report" :direction :output :if-exists :supersede)
-      (format out "~:{[~a ~a ~a ~a ~a]~%~a~%~a~%~%~}"
-	      (sort (remove-if (lambda (obj) (null (nth 4 obj)))
-			       (mapcar (lambda (v)
-					 (let ((m (nth v new))
-					       (wix (aref (car matching) v))
-					       (w nil)
-					       (wid nil)
-					       (ws nil)
-					       (d nil))
-					   (if wix
-					       (setf w   (nth wix old)
-						     wid (cl-conllu:sentence-meta-value w "sent_id")
-						     ws  (sentence->text w)
-						     d   (aref distances v wix)))
-					   (incf (gethash d hist 0))
-					   (list v wix (cl-conllu:sentence-meta-value m "sent_id")
-						 wid d
-						 (sentence->text m) ws)))
-				       (range (1- (length (car matching))))))
-		    #'> :key (lambda (obj) (nth 4 obj))))
-      (format out "~a~%~a ~a~%~%" (alexandria:hash-table-alist hist) (length new) (length old)))))
-
-(defun sent-id->sentence (sentence-list)
-  (let ((sentence-hash (make-hash-table :test 'equal)))
-    (dolist (x sentence-list)
-      (setf (gethash (sentence-meta-value x "sent_id") sentence-hash) x))
-    sentence-hash))
 
 (defun create-new-sent-id->old-sentence (matching old new)
   (let ((new-sent-id->old-sentence-text (make-hash-table :test 'equal))
@@ -326,54 +269,99 @@
 	     (car (read-conllu "empty-sentence.tmp"))))))
     new-sent-id->old-sentence-text))
 
-(defun preprocessing-write-matched-old-files ()
-  (let* ((new (read-conllu #P"bosque-ud.conllu"))  ; man
-	 (old (read-conllu #P"bosque-old.conllu")) ; woman
-	 (distances (difference new old))
-	 (men (transform-to-mens-preferences distances))
-	 (women (transform-to-womens-preferences distances))
-	 (matching (stable-matching men women)))
-    (defvar *sent-id->old-sentence* (create-new-sent-id->old-sentence matching old new))))
 
-(defun find-match (sentence)
-  ;; Input: sentence object from "new" database
-  ;; Output: matched sentence object from "old" database; if there's no match, an "empty" sentence
-  (gethash (sentence-meta-value sentence "sent_id") *sent-id->old-sentence*))
-
-(defun write-matched-old-files ()
+(defun write-matched-old-files (tb)
   ;; For each file in directory, write a new file (called *.old) such that,
   ;; for each sentence in file, this new file has its matches, in order.
-  (preprocessing-write-matched-old-files)
-  (let ((paths
-	 (directory (make-pathname :name :wild :type "conllu"
-				   :defaults #P"../documents/"))))
-    (mapc
-     (lambda (file-path)
-       (let ((sentences (read-conllu file-path)))
-	 (with-open-file (outstream
-			  (format nil "~aold/~a" (directory-namestring file-path) (file-namestring file-path))
-			  :direction :output :if-exists :supersede)
-	   (mapc (lambda (sentence)
-		   (let ((sentence-match (find-match sentence)))
-		     (setf (sentence-meta sentence-match)
-			   (reverse (cons (cons "matching_new_id" (sentence-meta-value sentence "sent_id")) (reverse (sentence-meta sentence-match)))))
-		     (write-sentence sentence-match outstream)
-		     (format outstream "~%")))
-		 sentences))))
-     paths)))
+  (let ((paths (directory (make-pathname :name :wild :type "conllu"
+					 :defaults #P"../documents/"))))
+    (mapc (lambda (file-path)
+	    (let ((sentences (read-conllu file-path)))
+	      (with-open-file (outstream
+			       (format nil "~aold/~a"
+				       (directory-namestring file-path)
+				       (file-namestring file-path))
+			       :direction :output :if-exists :supersede)
+		(mapc (lambda (sentence)
+			(let ((sentence-match (gethash (sentence-meta-value sentence "sent_id") tb)))
+			  (push (cons "new_sent_id" (sentence-meta-value sentence "sent_id"))
+				(sentence-meta sentence-match))
+			  (write-sentence sentence-match outstream)
+			  (princ #\Newline outstream)))
+		      sentences))))
+	  paths)))
 
-(defun write-single ()
-  (let* ((new (read-conllu #P"bosque-ud.conllu"))  ; man
+
+(defun write-single (matching new)
+  (with-open-file (outstream "../documents/old/single.conllu"
+			     :direction :output :if-exists :supersede)
+    (mapc
+     (lambda (sentence-index)
+       (write-sentence (nth sentence-index new) outstream)
+       (princ #\Newline outstream))
+     (find-singles matching))))
+
+
+(defun report-match (new old distances matching)
+  (let* ((hist (make-hash-table))
+	 (data (mapcar (lambda (v)
+			 (let ((m (nth v new))
+			       (wix (aref (car matching) v))
+			       (w nil)
+			       (wid nil)
+			       (ws nil)
+			       (d nil))
+			   (if wix
+			       (setf w   (nth wix old)
+				     wid (cl-conllu:sentence-meta-value w "sent_id")
+				     ws  (sentence->text w)
+				     d   (aref distances v wix)))
+			   (incf (gethash d hist 0))
+			   (list v wix (cl-conllu:sentence-meta-value m "sent_id")
+				 wid d
+				 (sentence->text m) ws)))
+		       (range (1- (length (car matching)))))))
+    (with-open-file (out "mapping.report" :direction :output :if-exists :supersede)
+      (format out "~:{[~a ~a ~a ~a ~a]~%~a~%~a~%~%~}"
+	      (sort (remove-if (lambda (obj) (null (nth 4 obj))) data)
+		    #'> :key (lambda (obj) (nth 4 obj))))
+      (format out "~a~%~a ~a~%~%" (alexandria:hash-table-alist hist) (length new) (length old)))))
+
+
+
+(defun fix-old-ids (prefix sentences)
+  (mapc (lambda (s) 
+            (setf (cdr (assoc "sent_id" (sentence-meta s) :test #'equal))
+                  (format nil "~a#~a" prefix (sentence-meta-value s "sent_id")))) 
+	sentences))
+
+
+(defun prepare-files ()
+  (let ((path-old #P"~/work/UD_Portuguese/")
+	(path-new #P"~/work/bosque-UD/documents/"))
+    (write-conllu
+	   (reduce (lambda (a b)
+		     (append a (fix-old-ids b (read-conllu (merge-pathnames path-old b)))))
+		   '("pt-ud-dev.conllu" "pt-ud-test.conllu" "pt-ud-train.conllu")
+		   :initial-value nil)
+	   "bosque-old.conllu")
+    (write-conllu
+	   (reduce (lambda (a b)
+		     (append a (read-conllu b)))
+		   (directory (merge-pathnames path-new "*.conllu"))
+		   :initial-value nil)
+	   "bosque-new.conllu")))
+
+
+(defun execute ()
+  (let* ((new (read-conllu #P"bosque-new.conllu")) ; man
 	 (old (read-conllu #P"bosque-old.conllu")) ; woman
 	 (distances (difference new old))
 	 (men (transform-to-mens-preferences distances))
 	 (women (transform-to-womens-preferences distances))
-	 (matching (stable-matching men women)))
-    (with-open-file (outstream "../documents/old/single.conllu"
-			       :direction :output :if-exists :supersede)
-      (mapc
-       (lambda (sentence-index)
-	 (write-sentence (nth sentence-index new)
-			 outstream)
-	 (format outstream "~%"))
-       (find-singles matching)))))
+	 (matching (stable-matching men women))
+	 (tb (create-new-sent-id->old-sentence matching old new)))
+    (report-match new old distances matching)
+    (write-matched-old-files tb)
+    (write-single matching new)))
+
