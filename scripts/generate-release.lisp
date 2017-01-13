@@ -13,15 +13,16 @@
   (format nil "~{~a~^|~}" (remove-if (lambda (x) (string-equal key (car (split-sequence #\= x)))) (split-sequence #\| features))))
 
 (defun remove-d2d (misc)
-  (format nil "~{~a~^|~}" (remove-if (lambda (x) (string-equal "d2d" (car (split-sequence #\: x)))) (split-sequence #\| misc)))
-)
+  (format nil "~{~a~^|~}" (remove-if (lambda (x) (string-equal "d2d" (car (split-sequence #\: x)))) (split-sequence #\| misc))))
 
 (defun prepare-for-release (conll)
   "Remove ChangedBy from MISC.  Remove dep2dep annotations from MISC and metadata"
   (dolist (s conll)
     (dolist (tk (sentence-tokens s))
       (setf (slot-value tk 'misc) (remove-d2d (slot-value tk 'misc)))
-      (setf (slot-value tk 'misc) (remove-feature "ChangedBy" (slot-value tk 'misc))))
+      (setf (slot-value tk 'misc) (remove-feature "ChangedBy" (slot-value tk 'misc)))
+      (when (or (= 0 (length (slot-value tk 'misc))) (null (slot-value tk 'misc)))
+        (setf (slot-value tk 'misc) "_")))
     (setf (sentence-meta s)
           (remove "d2d:" (sentence-meta s) :test #'string= :key #'car)))
   conll)
