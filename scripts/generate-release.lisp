@@ -32,11 +32,12 @@ sentence ids listed in the file IDS, saving the output in OUTPUT."
   (let ((ids (read-file ids))
         (sentences (make-hash-table :test #'equal)))
     (dolist (f (cl-fad:list-directory dir))
-      (dolist (s (prepare-for-release (read-conllu f)))
-        (setf (gethash (sentence-meta-value s "sent_id") sentences) s)))
+      (unless (cl-fad:directory-exists-p f)
+        (dolist (s (prepare-for-release (read-conllu f)))
+          (setf (gethash (sentence-meta-value s "sent_id") sentences) s))))
     (write-conllu (mapcar (lambda (x) (gethash x sentences)) ids) output)))
 
-;;(release #p"documents/" #p"ids-dev.txt" #p"pt_bosque-ud-dev.conllu")
-;;(release #p"documents/" #p"ids-test.txt" #p"pt_bosque-ud-test.conllu")
-;;(release #p"documents/" #p"ids-train.txt" #p"pt_bosque-ud-train.conllu")
+(release #p"documents/" #p"pt-ud-dev.txt" #p"pt_bosque-ud-dev.conllu")
+(release #p"documents/" #p"pt-ud-test.txt" #p"pt_bosque-ud-test.conllu")
+(release #p"documents/" #p"pt-ud-train.txt" #p"pt_bosque-ud-train.conllu")
 
