@@ -355,6 +355,8 @@
 			  :direction :output :if-exists :supersede)
 	   (mapc (lambda (sentence)
 		   (let ((sentence-match (find-match sentence)))
+		     (setf (sentence-meta sentence-match)
+			   (reverse (cons (cons "matching_new_id" (sentence-meta-value sentence "sent_id")) (reverse (sentence-meta sentence-match)))))
 		     (write-sentence sentence-match outstream)
 		     (format outstream "~%")))
 		 sentences))))
