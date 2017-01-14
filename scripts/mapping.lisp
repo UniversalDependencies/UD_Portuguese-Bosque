@@ -10,6 +10,68 @@
 (defun range (n)
   (loop for x from 0 to (1- n) collect x))
 
+;; (defun matrix-to-preferences-m (matriz)
+;;   (destructuring-bind (rows cols)
+;;       (array-dimensions matriz)
+;;     (let* ((out (make-array (list rows cols) :initial-element nil))
+;; 	   (ids (range cols)))
+;;       (dotimes (row rows out)
+;; 	(mapc (lambda (a b)
+;; 		(setf (aref out row b) (car a)))
+;; 	      (sort (loop for col from 0 to (1- cols)
+;; 			  collect (cons col (aref matriz row col)))
+;; 		    #'< :key #'cdr)
+;; 	      ids)))))
+
+;; (defun matrix-to-preferences-w (matriz)
+;;   (destructuring-bind (rows cols)
+;;       (array-dimensions matriz)
+;;     (let ((out (make-array (list cols rows) :initial-element nil))
+;; 	  (ids (range rows)))
+;;       (dotimes (col cols out)
+;; 	(mapc (lambda (a b)
+;; 		(setf (aref out col (car a)) b))
+;; 	      (sort (loop for row from 0 to (1- rows)
+;; 			  collect (cons row (aref matriz row col)))
+;; 		    #'< :key #'cdr)
+;; 	      ids)))))
+
+;; (defun stable-matching (men women)
+;;   (do* ((max-m (1- (array-dimension men 0)))
+;; 	(max-w (1- (array-dimension women 0)))
+;; 	(free (range max-m))
+;; 	(count 0 (1+ count))
+;; 	(wife (make-hash-table))	; by man
+;; 	(husband (make-hash-table))	; by woman
+;; 	(proposal (make-hash-table))	; by man
+;; 	(a-man (pop free) (pop free))
+;; 	(a-woman (aref men a-man (gethash a-man proposal 0))
+;; 		 (aref men a-man (gethash a-man proposal 0))))
+;;        ((or (null free)
+;; 	    ;; (> count 50)
+;; 	    (> (gethash a-man proposal 0) max-w))
+;; 	(values husband wife))
+;;     ;; (format *standard-output* "~%proposals: ~a ~%husband: ~a ~%"
+;;     ;; 	    (alexandria:hash-table-alist proposal)
+;;     ;; 	    (alexandria:hash-table-alist husband))
+;;     (if (not (gethash a-woman husband nil))
+;; 	(progn
+;; 	  ;; (format *standard-output* "w:~a single accepted m:~a ~%" a-woman a-man)
+;; 	  (setf (gethash a-woman husband) a-man
+;; 		(gethash a-man wife) a-woman))
+;; 	(let ((partner (gethash a-woman husband)))
+;; 	  (if (< (aref women a-woman a-man)
+;; 		 (aref women a-woman partner))
+;; 	      (progn
+;; 		;; (format *standard-output* "w:~a changed m:~a -> m:~a ~%" a-woman partner a-man)
+;; 		(push partner free)
+;; 		(setf (gethash a-woman husband) a-man
+;; 		      (gethash a-man wife) a-woman)
+;; 		(remhash partner wife))
+;; 	      ;; (format *standard-output* "w:~a rejected m:~a ~%" a-woman a-man)
+;; 	      )))
+;;     (incf (gethash a-man proposal 0))))
+
 
 (defun transform-to-mens-preference-matrix (matriz)
   (let* ((dim (array-dimensions matriz)) 
@@ -227,16 +289,7 @@
 
 ;; STABLE MATCHING: END
 
-(defun find-singles (matching)
-  ;; We assume that if there are more men than women, then there's no
-  ;; single women (and vice-versa)
-  (let ((partner-array (if (> (length (car matching)) (length (cdr matching)))
-			   (car matching)
-			   (cdr matching)))
-	(singles nil))
-    (dotimes (x (length partner-array) singles)
-      (if (null (aref partner-array x))
-	  (push x singles)))))
+
 
 
 (defun difference (new old)
@@ -258,48 +311,42 @@
 	(matching-array (car matching))
 	(old-array (make-array (length old) :initial-contents old))
 	(new-array (make-array (length new) :initial-contents new))) 
-    (dotimes (x (length matching-array))
-      (setf
-       (gethash (sentence-meta-value (aref new-array x) "sent_id") new-sent-id->old-sentence-text)
-       (if (aref matching-array x)
-	   (aref old-array (aref matching-array x))
-	   (progn
-	     (with-open-file (stream "empty-sentence.tmp" :direction :output :if-exists :supersede)
-	       (format stream "~a" "# empty_sentence _"))
-	     (car (read-conllu "empty-sentence.tmp"))))))
-    new-sent-id->old-sentence-text))
+    (dotimes (x (length matching-array) new-sent-id->old-sentence-text)
+      (setf (gethash (sentence-meta-value (aref new-array x) "sent_id")
+		     new-sent-id->old-sentence-text)
+	    (if (aref matching-array x)
+		(aref old-array (aref matching-array x)))))))
 
 
 (defun write-matched-old-files (tb)
-  ;; For each file in directory, write a new file (called *.old) such that,
-  ;; for each sentence in file, this new file has its matches, in order.
-  (let ((paths (directory (make-pathname :name :wild :type "conllu"
-					 :defaults #P"../documents/"))))
-    (mapc (lambda (file-path)
-	    (let ((sentences (read-conllu file-path)))
-	      (with-open-file (outstream
-			       (format nil "~aold/~a"
-				       (directory-namestring file-path)
-				       (file-namestring file-path))
-			       :direction :output :if-exists :supersede)
-		(mapc (lambda (sentence)
-			(let ((sentence-match (gethash (sentence-meta-value sentence "sent_id") tb)))
-			  (push (cons "new_sent_id" (sentence-meta-value sentence "sent_id"))
-				(sentence-meta sentence-match))
-			  (write-sentence sentence-match outstream)
-			  (princ #\Newline outstream)))
-		      sentences))))
-	  paths)))
+  (dolist (fn (directory (make-pathname :name :wild :type "conllu"
+					:defaults #P"../documents/")))
+    (write-conllu (mapcar (lambda (sentence)
+			    (let* ((id (sentence-meta-value sentence "sent_id"))
+				   (ns (or (gethash id tb)
+					   (make-instance 'sentence))))
+			      (push (cons "new_sent_id" id) (sentence-meta ns))
+			      ns))
+			  (read-conllu fn))
+		  (make-pathname :directory (append (pathname-directory fn) (list "old"))
+				 :defaults fn))))
+
+
+(defun find-singles (matching)
+  ;; We assume that if there are more men than women, then there's no
+  ;; single women (and vice-versa)
+  (let ((partner-array (if (> (length (car matching)) (length (cdr matching)))
+			   (car matching)
+			   (cdr matching)))
+	(singles nil))
+    (dotimes (x (length partner-array) singles)
+      (if (null (aref partner-array x))
+	  (push x singles)))))
 
 
 (defun write-single (matching new)
-  (with-open-file (outstream "../documents/old/single.conllu"
-			     :direction :output :if-exists :supersede)
-    (mapc
-     (lambda (sentence-index)
-       (write-sentence (nth sentence-index new) outstream)
-       (princ #\Newline outstream))
-     (find-singles matching))))
+  (write-conllu (mapcar (lambda (idx) (nth idx new)) (find-singles matching))
+		"../documents/old/single.conllu"))
 
 
 (defun report-match (new old distances matching)
@@ -310,7 +357,7 @@
 			       (w nil)
 			       (wid nil)
 			       (ws nil)
-			       (d nil))
+			       (d -1))
 			   (if wix
 			       (setf w   (nth wix old)
 				     wid (cl-conllu:sentence-meta-value w "sent_id")
@@ -323,7 +370,7 @@
 		       (range (1- (length (car matching)))))))
     (with-open-file (out "mapping.report" :direction :output :if-exists :supersede)
       (format out "~:{[~a ~a ~a ~a ~a]~%~a~%~a~%~%~}"
-	      (sort (remove-if (lambda (obj) (null (nth 4 obj))) data)
+	      (sort (remove-if (lambda (obj) (= (nth 4 obj) 0)) data)
 		    #'> :key (lambda (obj) (nth 4 obj))))
       (format out "~a~%~a ~a~%~%" (alexandria:hash-table-alist hist) (length new) (length old)))))
 
