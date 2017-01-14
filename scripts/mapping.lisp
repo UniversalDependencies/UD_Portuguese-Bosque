@@ -333,15 +333,12 @@
 
 
 (defun find-singles (matching)
-  ;; We assume that if there are more men than women, then there's no
-  ;; single women (and vice-versa)
-  (let ((partner-array (if (> (length (car matching)) (length (cdr matching)))
-			   (car matching)
-			   (cdr matching)))
-	(singles nil))
-    (dotimes (x (length partner-array) singles)
-      (if (null (aref partner-array x))
-	  (push x singles)))))
+  (let ((partner (if (> (length (car matching)) (length (cdr matching)))
+		     (car matching)
+		     (cdr matching))))
+    (loop for x below (length partner)
+	  when (null (aref partner x)) 
+	  collect x)))
 
 
 (defun write-single (matching new)
