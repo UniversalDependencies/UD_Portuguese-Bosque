@@ -306,7 +306,7 @@
 			filename))))
 
 
-(defun create-new-sent-id->old-sentence (matching old new)
+(defun create-new-sent-id->old-sentence (matching old new distances)
   (let ((new-sent-id->old-sentence-text (make-hash-table :test 'equal))
 	(matching-array (car matching))
 	(old-array (make-array (length old) :initial-contents old))
@@ -315,7 +315,9 @@
       (setf (gethash (sentence-meta-value (aref new-array x) "sent_id")
 		     new-sent-id->old-sentence-text)
 	    (if (aref matching-array x)
-		(aref old-array (aref matching-array x)))))))
+		(list
+		 (aref old-array (aref matching-array x))
+		 (aref distances x (aref matching-array x))))))))
 
 
 (defun write-matched-old-files (tb)
@@ -323,9 +325,12 @@
 					:defaults #P"../documents/")))
     (write-conllu (mapcar (lambda (sentence)
 			    (let* ((id (sentence-meta-value sentence "sent_id"))
-				   (ns (or (gethash id tb)
-					   (make-instance 'sentence))))
+				   (ns (or (car (gethash id tb))
+					   (make-instance 'sentence)))
+				   (dist (or (cadr (gethash id tb))
+					     nil)))
 			      (push (cons "new_sent_id" id) (sentence-meta ns))
+			      (push (cons "distance_from_new" dist) (sentence-meta ns))
 			      ns))
 			  (read-conllu fn))
 		  (make-pathname :directory (append (pathname-directory fn) (list "old"))
@@ -404,7 +409,7 @@
 	 (men (transform-to-mens-preferences distances))
 	 (women (transform-to-womens-preferences distances))
 	 (matching (stable-matching men women))
-	 (tb (create-new-sent-id->old-sentence matching old new)))
+	 (tb (create-new-sent-id->old-sentence matching old new distances)))
     (report-match new old distances matching)
     (write-matched-old-files tb)
     (write-single matching new)))
