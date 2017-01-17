@@ -1,11 +1,12 @@
 # distance_from_new 0
 # new_sent_id CP385-1
-# sent_id pt-s2003
+# sent_id pt-ud-train.conllu#s2003/pt
 # orig_file_sentence 021#3
 1	Mais	mais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	MWE=Mais_de|MWEPOS=ADV
 2	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
 3	mil	mil	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	4	nummod	_	_
 4	professores	professor	NOUN	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
+5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
 6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	Fenprof	Fenprof	PROPN	prop|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
@@ -14,7 +15,7 @@
 
 # distance_from_new 0
 # new_sent_id CP385-2
-# sent_id pt-s2004
+# sent_id pt-ud-train.conllu#s2004/pt
 # orig_file_sentence 021#4
 1	«	«	PUNCT	punc	_	8	punct	_	_
 2	Estrutura	estrutura	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nsubj	_	_
@@ -26,9 +27,9 @@
 8	brincadeira	brincadeira	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
 9	»	»	PUNCT	punc	_	8	punct	_	_
 
-# distance_from_new 0
+# distance_from_new 2
 # new_sent_id CP385-4
-# sent_id pt-s2005
+# sent_id pt-ud-train.conllu#s2005/pt
 # orig_file_sentence 021#5
 1	«	«	PUNCT	punc	_	20	punct	_	_
 2	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -43,8 +44,9 @@
 11	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	colegas	colega	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
 13	,	,	PUNCT	punc	_	14	punct	_	_
-14	prejudica-	prejudicar	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
-15	me	eu	PRON	pron-pers|F|1S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=1|PronType=Prs	14	dobj	_	_
+14-15	prejudica-me	_	_	_	_	_	_	_	_
+14	prejudica	prejudicar	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
+15	-me	eu	PRON	pron-pers|F|1S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=1|PronType=Prs	14	dobj	_	_
 16	a	a	ADP	prp	AdpType=Prep	17	case	_	_
 17	mim	eu	PRON	pron-pers|F|1S|PIV	Case=Acc|Gender=Fem|Number=Sing|Person=1|PrepCase=Pre|PronType=Prs	14	iobj	_	_
 18	»	»	PUNCT	punc	_	20	punct	_	_
@@ -65,14 +67,16 @@
 33	preparava	preparar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	advcl	_	_
 34	para	para	ADP	prp	AdpType=Prep	35	mark	_	_
 35	participar	participar	VERB	v-inf	VerbForm=Inf	33	xcomp	_	_
+36-37	na	_	_	_	_	_	_	_	_
 36	em	em	ADP	prp|<sam->	AdpType=Prep	38	case	_	_
 37	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
 38	manifestação	manifestação	NOUN	n|F|S	Gender=Fem|Number=Sing	35	dobj	_	_
 39	organizada	organizar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	38	acl	_	_
+40-41	pela	_	_	_	_	_	_	_	_
 40	por	por	ADP	prp|<sam->	AdpType=Prep	42	case	_	_
 41	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
 42	Federação	Federação	PROPN	prop|F|S	_	39	dobj	_	MWE=Federação_Nacional_de_Professores|MWEPOS=PROPN
-43	Nacional	Nacional	PROPN	PROPN	_	42	name	_	_
+43	Nacional	Nacional	ADJ	PROPN	_	42	amod	_	_
 44	de	de	ADP	ADP	AdpType=Prep	45	case	_	_
 45	Professores	Professores	PROPN	PROPN	_	42	name	_	_
 46	(	(	PUNCT	punc	_	42	punct	_	_
