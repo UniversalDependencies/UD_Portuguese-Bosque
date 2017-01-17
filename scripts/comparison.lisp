@@ -23,20 +23,22 @@
 		     :name (pathname-name file-new)
 		     :type (pathname-type file-new)))))
 	      (mapc (lambda (new-sentence old-sentence)
-		      (let ((distance (sentence-meta-value old-sentence "distance_from_new")))
-			(when (and
-			       (equal distance 0)
-			       (not (equal
-				    (mapcar (lambda (tk) (token-form tk))
-					    (sentence-tokens new-sentence))
-				    (mapcar (lambda (tk) (token-form tk))
-					    (sentence-tokens old-sentence)))))
-			  (format out
-				  "~a~%Distance: ~a~%~a~%~a~%~%"
-				  (sentence-meta-value new-sentence "sent_id")
-				  distance
-				  (sentence->text new-sentence)
-				  (sentence->text old-sentence)))))
+		      (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new") :junk-allowed t)))
+			(if distance
+			    ;; Distance may be null if new-sentence is single
+			    (when (and
+				   (equal distance 0)
+				   (not (equal
+					 (mapcar (lambda (tk) (token-form tk))
+						 (sentence-tokens new-sentence))
+					 (mapcar (lambda (tk) (token-form tk))
+						 (sentence-tokens old-sentence)))))
+			      (format out
+				      "~a~%Distance: ~a~%~a~%~a~%~%"
+				      (sentence-meta-value new-sentence "sent_id")
+				      distance
+				      (sentence->text new-sentence)
+				      (sentence->text old-sentence))))))
 		    new-sentences-list
 		    old-sentences-list)))
 	  (directory #P"../documents/*.conllu"))))
@@ -50,10 +52,10 @@
 				      :name (pathname-name file-new)
 				      :type (pathname-type file-new)))))
 	    (mapc (lambda (new-sentence old-sentence)
-		    (let ((distance (sentence-meta-value old-sentence "distance_from_new")))
+		    (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new") :junk-allowed t)))
 		      (when (and
 			     (equal distance 0)
-			     (equal ;; Redundant, because sanity test was ok! We can take out this clause
+			     (equal ;; Redundant, because sanity test was ok! We can delete this form
 			      (mapcar (lambda (tk) (token-form tk))
 				      (sentence-tokens new-sentence))
 			      (mapcar (lambda (tk) (token-form tk))
@@ -70,8 +72,9 @@
 		  new-sentences-list
 		  old-sentences-list)
 	    (write-conllu new-sentences-list
-			  (make-pathname
-			   :directory (append (pathname-directory file-new) (list "modified"))
-			   :name (pathname-name file-new)
-			   :type (pathname-type file-new)))))
+			  file-new)))
+			  ;; (make-pathname
+			   ;; :directory (pathname-directory file-new)
+			   ;; :name (pathname-name file-new)
+			   ;; :type (pathname-type file-new)))))
 	(directory #P"../documents/*.conllu")))
