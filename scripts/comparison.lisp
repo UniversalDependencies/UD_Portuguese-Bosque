@@ -53,28 +53,81 @@
 				      :type (pathname-type file-new)))))
 	    (mapc (lambda (new-sentence old-sentence)
 		    (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new") :junk-allowed t)))
-		      (when (and
+		      (if (and
 			     (equal distance 0)
 			     (equal ;; Redundant, because sanity test was ok! We can delete this form
 			      (mapcar (lambda (tk) (token-form tk))
 				      (sentence-tokens new-sentence))
 			      (mapcar (lambda (tk) (token-form tk))
 				      (sentence-tokens old-sentence))))			  
-			(mapc
-			 (lambda (mtk)
-			   (unless (find-if (lambda (x)
-					      (and
-					       (eq (mtoken-start x) (mtoken-start mtk))
-					       (eq (mtoken-end x) (mtoken-end mtk))))
-					    (sentence-mtokens new-sentence))
-			     (push mtk (sentence-mtokens new-sentence))))
-			 (sentence-mtokens old-sentence)))))
+			(insert-mtokens new-sentence (sentence-mtokens old-sentence)))))
 		  new-sentences-list
 		  old-sentences-list)
-	    (write-conllu new-sentences-list
-			  file-new)))
-			  ;; (make-pathname
-			   ;; :directory (pathname-directory file-new)
-			   ;; :name (pathname-name file-new)
-			   ;; :type (pathname-type file-new)))))
+	    (write-conllu new-sentences-list file-new)))
 	(directory #P"../documents/*.conllu")))
+
+(defun import-mwe-if-same-tokens ()
+  ;; If there is a mtoken which corresponds to tokens t1, ..., tn, and these tokens "are" in new-sentence, then we import them (if there's a token whose id and form are the same, we say the token from 'old sentence' "is" there)
+  (mapc (lambda (file-new)
+	  (let ((new-sentences-list (read-conllu file-new))
+		(old-sentences-list (read-conllu
+				     (make-pathname
+				      :directory (append (pathname-directory file-new) (list "old"))
+				      :name (pathname-name file-new)
+				      :type (pathname-type file-new)))))
+	    (mapc (lambda (new-sentence old-sentence)
+		    (mapc (lambda (mtk)
+			    (if (every
+				 (lambda (old-tk)
+				   (let ((new-tk (find (token-id old-tk) (sentence-tokens new-sentence) :key 'token-id)))
+				     (if new-tk
+					 (equal (token-form old-tk) (token-form new-tk)))))
+				 (mtoken->tokens old-sentence mtk))
+				(insert-mtoken new-sentence mtk)))
+			  (sentence-mtokens old-sentence)))
+		  new-sentences-list
+		  old-sentences-list)
+	    (write-conllu new-sentences-list file-new)))
+	(directory #P"../documents/*.conllu")))
+
+(defun find-unimported-mwe ()
+  (mapc (lambda (file-new)
+	  (let ((new-sentences-list (read-conllu file-new))
+		(old-sentences-list (read-conllu
+				     (make-pathname
+				      :directory (append (pathname-directory file-new) (list "old"))
+				      :name (pathname-name file-new)
+				      :type (pathname-type file-new)))))
+	    (mapc (lambda (new-sentence old-sentence)
+		    (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new") :junk-allowed t)))
+		      (mapc
+		       (lambda (mtk)
+			 (unless (find-if (lambda (x)
+					    (and
+					     (eq (mtoken-start x) (mtoken-start mtk))
+					     (eq (mtoken-end x) (mtoken-end mtk))))
+					  (sentence-mtokens new-sentence))
+			   ;; (push mtk (sentence-mtokens new-sentence))))
+			   (format t "~a~t~a~t~a~t - Distance is:~t~a~%" (sentence-meta-value new-sentence "sent_id") (mtoken-form mtk) (mtoken-start mtk) distance)))
+		       (sentence-mtokens old-sentence))))
+		  new-sentences-list
+		  old-sentences-list)))
+	(directory #P"../documents/*.conllu")))
+
+(defun see-mwe-cases ()
+  (let ((mwe nil))
+    (mapc
+     (lambda (file)
+       (mapc (lambda (sentence)
+	       (mapc (lambda (mtk)
+		       (push (list
+			      :mtoken (mtoken-form mtk)
+			      :tokens (mapcar #'token-form (mtoken->tokens sentence mtk))
+			      :file (sentence-meta-value sentence "sent_id"))
+			     mwe))
+		     (sentence-mtokens sentence)))
+	     (read-conllu file)))
+     (directory #P"../documents/*.conllu"))
+    (remove-duplicates mwe :test #'equal :key (lambda (x) (getf x :mtoken)))))
+
+;; awk '$1 ~ /\-/ { print $2}'  *.conllu | sort | uniq -c
