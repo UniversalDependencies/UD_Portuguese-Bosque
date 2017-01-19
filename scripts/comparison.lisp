@@ -130,4 +130,12 @@
      (directory #P"../documents/*.conllu"))
     (remove-duplicates mwe :test #'equal :key (lambda (x) (getf x :mtoken)))))
 
+(defun run-scripts ()
+  (sanity-test)
+  (if (with-open-file (out "sanity.report")
+	(read-line out nil))
+      (princ "WARNING: Found CONLLu matchings of 0 distance which have different tokens! See sanity.report"))
+  (import-mimport-mtokens-from-0-distance))
+
+    
 ;; awk '$1 ~ /\-/ { print $2}'  *.conllu | sort | uniq -c
