@@ -90,6 +90,34 @@
 	    (write-conllu new-sentences-list file-new)))
 	(directory #P"../documents/*.conllu")))
 
+(defun get-contractions ()
+  (let ((contraction-list (see-mwe-cases)))
+    (mapc (lambda (file-new)
+	    (let ((sentence-list (read-conllu file-new)))
+	      (mapc (lambda (sentence)
+		      (let ((contraction-tokens nil)
+			    (contraction-start nil))
+			(dolist (tk (sentence-tokens sentence))
+			  (if contraction-tokens
+			      (and (push (token-form tk) contraction-tokens)
+				   (if (member "<-sam>" (split "\\|" (token-xpostag tk)) :test 'equal)
+				       (let ((contraction
+					      (find (reverse contraction-tokens) contraction-list :key (lambda (x) (getf x :tokens)) :test 'equal)))
+					 (if contraction
+					     (insert-mtoken sentence
+							    (make-instance 'mtoken
+									   :start contraction-start
+									   :end (token-id tk)
+									   :form (getf contraction :mtoken))))
+					 (setf contraction-tokens nil)
+					 (setf contraction-start nil))))
+			      (when (member "<sam->" (split "\\|" (token-xpostag tk)) :test 'equal)
+				(push (token-form tk) contraction-tokens)
+				(setf contraction-start (token-id tk)))))))
+		    sentence-list)
+	      (write-conllu sentence-list file-new)))
+    (directory #P"../documents/*.conllu"))))
+
 (defun find-unimported-mwe ()
   (mapc (lambda (file-new)
 	  (let ((new-sentences-list (read-conllu file-new))
@@ -127,7 +155,7 @@
 			     mwe))
 		     (sentence-mtokens sentence)))
 	     (read-conllu file)))
-     (directory #P"../documents/*.conllu"))
+     (directory #P"../documents/old/*.conllu"))
     (remove-duplicates mwe :test #'equal :key (lambda (x) (getf x :mtoken)))))
 
 (defun run-scripts ()
@@ -135,7 +163,7 @@
   (if (with-open-file (out "sanity.report")
 	(read-line out nil))
       (princ "WARNING: Found CONLLu matchings of 0 distance which have different tokens! See sanity.report"))
-  (import-mimport-mtokens-from-0-distance))
+  (import-mtokens-from-0-distance))
 
     
 ;; awk '$1 ~ /\-/ { print $2}'  *.conllu | sort | uniq -c
