@@ -76,14 +76,37 @@
 				      :name (pathname-name file-new)
 				      :type (pathname-type file-new)))))
 	    (mapc (lambda (new-sentence old-sentence)
+		    ;; (mapc (lambda (mtk)
+		    ;; 	    (if (every
+		    ;; 		 (lambda (old-tk)
+		    ;; 		   (let ((new-tk (find (token-id old-tk) (sentence-tokens new-sentence) :key 'token-id)))
+		    ;; 		     (if new-tk
+		    ;; 			 (equal (string-trim "-" (token-form old-tk)) (string-trim "-" (token-form new-tk))))))
+		    ;; 		 (mtoken->tokens old-sentence mtk))
+		    ;; 		(insert-mtoken new-sentence mtk)))
+		    ;; 	  (sentence-mtokens old-sentence)))
 		    (mapc (lambda (mtk)
-			    (if (every
-				 (lambda (old-tk)
-				   (let ((new-tk (find (token-id old-tk) (sentence-tokens new-sentence) :key 'token-id)))
-				     (if new-tk
-					 (equal (token-form old-tk) (token-form new-tk)))))
-				 (mtoken->tokens old-sentence mtk))
-				(insert-mtoken new-sentence mtk)))
+			    (let ((found? nil))
+			      (dolist (x '(0 1 2 3 -1 -2 -3))
+				(unless found?
+				  (when (every
+					 (lambda (old-tk)
+					   (let ((new-tk (find
+							  (+ x (token-id old-tk))
+							  (sentence-tokens new-sentence)
+							  :key 'token-id)))
+					     (if new-tk
+						 (equal
+						  (string-trim "-" (token-form old-tk))
+						  (string-trim "-" (token-form new-tk))))))
+					 (mtoken->tokens old-sentence mtk))
+				    (insert-mtoken
+				     new-sentence
+				     (make-instance 'mtoken
+						    :start (+ x (mtoken-start mtk))
+						    :end (+ x (mtoken-end mtk))
+						    :form (mtoken-form mtk)))
+				    (setf found? t))))))
 			  (sentence-mtokens old-sentence)))
 		  new-sentences-list
 		  old-sentences-list)
@@ -118,29 +141,31 @@
 	      (write-conllu sentence-list file-new)))
     (directory #P"../documents/*.conllu"))))
 
-(defun find-unimported-mwe ()
-  (mapc (lambda (file-new)
-	  (let ((new-sentences-list (read-conllu file-new))
-		(old-sentences-list (read-conllu
-				     (make-pathname
-				      :directory (append (pathname-directory file-new) (list "old"))
-				      :name (pathname-name file-new)
-				      :type (pathname-type file-new)))))
-	    (mapc (lambda (new-sentence old-sentence)
-		    (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new") :junk-allowed t)))
-		      (mapc
-		       (lambda (mtk)
-			 (unless (find-if (lambda (x)
-					    (and
-					     (eq (mtoken-start x) (mtoken-start mtk))
-					     (eq (mtoken-end x) (mtoken-end mtk))))
-					  (sentence-mtokens new-sentence))
-			   ;; (push mtk (sentence-mtokens new-sentence))))
-			   (format t "~a~t~a~t~a~t - Distance is:~t~a~%" (sentence-meta-value new-sentence "sent_id") (mtoken-form mtk) (mtoken-start mtk) distance)))
-		       (sentence-mtokens old-sentence))))
-		  new-sentences-list
-		  old-sentences-list)))
-	(directory #P"../documents/*.conllu")))
+;; (defun find-unimported-mwe ()
+;;   (mapc (lambda (file-new)
+;; 	  (let ((new-sentences-list (read-conllu file-new))
+;; 		(old-sentences-list (read-conllu
+;; 				     (make-pathname
+;; 				      :directory (append (pathname-directory file-new) (list "old"))
+;; 				      :name (pathname-name file-new)
+;; 				      :type (pathname-type file-new)))))
+;; 	    (mapc (lambda (new-sentence old-sentence)
+;; 		    (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new") :junk-allowed t)))
+;; 		      (mapc
+;; 		       (lambda (mtk)
+;; 			 (let ((found? nil))
+;; 			   (dolist (x '(0 1 2 3 -1 -2 -3))
+;; 			     (unless (or found? (find-if (lambda (x)
+;; 					    (and ;; ......
+;; 					     (eq (mtoken-start x) (mtoken-start mtk))
+;; 					     (eq (mtoken-end x) (mtoken-end mtk))))
+;; 					  (sentence-mtokens new-sentence))
+;; 			   ;; (push mtk (sentence-mtokens new-sentence))))
+;; 			   (format t "~a~t~a~t~a~t - Distance is:~t~a~%" (sentence-meta-value new-sentence "sent_id") (mtoken-form mtk) (mtoken-start mtk) distance)))
+;; 		       (sentence-mtokens old-sentence))))
+;; 		  new-sentences-list
+;; 		  old-sentences-list)))
+;; 	(directory #P"../documents/*.conllu")))
 
 (defun see-mwe-cases ()
   (let ((mwe nil))
@@ -157,6 +182,31 @@
 	     (read-conllu file)))
      (directory #P"../documents/old/*.conllu"))
     (remove-duplicates mwe :test #'equal :key (lambda (x) (getf x :mtoken)))))
+
+;; (defun find-untokenized-contractions ()
+;;   ;; Finding untokenized contractions at our corpus that are already treated as "
+;;   (mapc (lambda (file-new)
+;; 	  (let ((new-sentences-list (read-conllu file-new))
+;; 		(old-sentences-list (read-conllu
+;; 				     (make-pathname
+;; 				      :directory (append (pathname-directory file-new) (list "old"))
+;; 				      :name (pathname-name file-new)
+;; 				      :type (pathname-type file-new)))))
+;; 	    (mapc (lambda (new-sentence old-sentence)
+;; 		      (mapc
+;; 		       (lambda (mtk)
+;; 			 (unless (find-if (lambda (x)
+;; 					    (and
+;; 					     (eq (mtoken-start x) (mtoken-start mtk))
+;; 					     (eq (mtoken-end x) (mtoken-end mtk))))
+;; 					  (sentence-mtokens new-sentence))
+;; 			   ;; (push mtk (sentence-mtokens new-sentence))))
+;; 			   (format t "~a~t~a~t~a~t - Distance is:~t~a~%" (sentence-meta-value new-sentence "sent_id") (mtoken-form mtk) (mtoken-start mtk) distance)))
+;; 		       (sentence-mtokens old-sentence))))
+;; 		  new-sentences-list
+;; 		  old-sentences-list)))
+;; 	(read-conllu file)))
+;; (directory #P"../documents/old/*.conllu"))
 
 (defun run-scripts ()
   (sanity-test)
