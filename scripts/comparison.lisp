@@ -1,18 +1,22 @@
 ;; File for improving our dataset using information from the other one
 ;; e.g. putting multiword tokens in our files
 
+;; README:
+;; Call (run-scripts) in order to import MWE.
+;; Call (find-unimported-mwe) to see what is missing
+
+
+;; Brainstorming:
 ;; See which contractions exist in order to put multiwork tokens where we can't just map directly
+;; Perhaps use metadata `text` in order to check if the sentence needs multitokens? It may be difficult.
 
-;; Perhaps use metadata `text` in order to check if the sentence needs multitokens?
 
-;; (defun execute ()
-;;   (sanity-test) ;;
 
 (load "mapping.lisp")
 
 (defun sanity-test ()
   ;; Do distance 0 matches indeed have the same tokens?
-  ;; Yes! sanity.report ends up empty
+  ;; Error in CF8-1 at "old" corpus, but that's it.
   (with-open-file (out "sanity.report" :direction :output :if-exists :supersede)
     (mapc (lambda (file-new)
 	    (let ((new-sentences-list (read-conllu file-new))
@@ -23,7 +27,8 @@
 		     :name (pathname-name file-new)
 		     :type (pathname-type file-new)))))
 	      (mapc (lambda (new-sentence old-sentence)
-		      (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new") :junk-allowed t)))
+		      (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new")
+						     :junk-allowed t)))
 			(if distance
 			    ;; Distance may be null if new-sentence is single
 			    (when (and
@@ -52,7 +57,8 @@
 				      :name (pathname-name file-new)
 				      :type (pathname-type file-new)))))
 	    (mapc (lambda (new-sentence old-sentence)
-		    (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new") :junk-allowed t)))
+		    (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new")
+						   :junk-allowed t)))
 		      (if (and
 			     (equal distance 0)
 			     (equal ;; Redundant, because sanity test was ok! We can delete this form
@@ -67,7 +73,8 @@
 	(directory #P"../documents/*.conllu")))
 
 (defun import-mwe-if-same-tokens ()
-  ;; If there is a mtoken which corresponds to tokens t1, ..., tn, and these tokens "are" in new-sentence, then we import them (if there's a token whose id and form are the same, we say the token from 'old sentence' "is" there)
+  ;; If there is a mtoken which corresponds to tokens t1, ..., tn, and these tokens "are" in new-sentence,
+  ;; then we import them (if there's a token whose id and form are the same, we say the token from 'old sentence' "is" there)
   (mapc (lambda (file-new)
 	  (let ((new-sentences-list (read-conllu file-new))
 		(old-sentences-list (read-conllu
@@ -76,15 +83,6 @@
 				      :name (pathname-name file-new)
 				      :type (pathname-type file-new)))))
 	    (mapc (lambda (new-sentence old-sentence)
-		    ;; (mapc (lambda (mtk)
-		    ;; 	    (if (every
-		    ;; 		 (lambda (old-tk)
-		    ;; 		   (let ((new-tk (find (token-id old-tk) (sentence-tokens new-sentence) :key 'token-id)))
-		    ;; 		     (if new-tk
-		    ;; 			 (equal (string-trim "-" (token-form old-tk)) (string-trim "-" (token-form new-tk))))))
-		    ;; 		 (mtoken->tokens old-sentence mtk))
-		    ;; 		(insert-mtoken new-sentence mtk)))
-		    ;; 	  (sentence-mtokens old-sentence)))
 		    (mapc (lambda (mtk)
 			    (let ((found? nil))
 			      (dolist (x '(0 1 2 3 -1 -2 -3))
@@ -125,7 +123,9 @@
 			      (and (push (token-form tk) contraction-tokens)
 				   (if (member "<-sam>" (split "\\|" (token-xpostag tk)) :test 'equal)
 				       (let ((contraction
-					      (find (reverse contraction-tokens) contraction-list :key (lambda (x) (getf x :tokens)) :test 'equal)))
+					      (find (reverse contraction-tokens) contraction-list
+						    :key (lambda (x) (getf x :tokens))
+						    :test 'equal)))
 					 (if contraction
 					     (insert-mtoken sentence
 							    (make-instance 'mtoken
@@ -141,31 +141,41 @@
 	      (write-conllu sentence-list file-new)))
     (directory #P"../documents/*.conllu"))))
 
-;; (defun find-unimported-mwe ()
-;;   (mapc (lambda (file-new)
-;; 	  (let ((new-sentences-list (read-conllu file-new))
-;; 		(old-sentences-list (read-conllu
-;; 				     (make-pathname
-;; 				      :directory (append (pathname-directory file-new) (list "old"))
-;; 				      :name (pathname-name file-new)
-;; 				      :type (pathname-type file-new)))))
-;; 	    (mapc (lambda (new-sentence old-sentence)
-;; 		    (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new") :junk-allowed t)))
-;; 		      (mapc
-;; 		       (lambda (mtk)
-;; 			 (let ((found? nil))
-;; 			   (dolist (x '(0 1 2 3 -1 -2 -3))
-;; 			     (unless (or found? (find-if (lambda (x)
-;; 					    (and ;; ......
-;; 					     (eq (mtoken-start x) (mtoken-start mtk))
-;; 					     (eq (mtoken-end x) (mtoken-end mtk))))
-;; 					  (sentence-mtokens new-sentence))
-;; 			   ;; (push mtk (sentence-mtokens new-sentence))))
-;; 			   (format t "~a~t~a~t~a~t - Distance is:~t~a~%" (sentence-meta-value new-sentence "sent_id") (mtoken-form mtk) (mtoken-start mtk) distance)))
-;; 		       (sentence-mtokens old-sentence))))
-;; 		  new-sentences-list
-;; 		  old-sentences-list)))
-;; 	(directory #P"../documents/*.conllu")))
+(defun find-unimported-mwe ()
+  (mapc (lambda (file-new)
+	  (let ((new-sentences-list (read-conllu file-new))
+		(old-sentences-list (read-conllu
+				     (make-pathname
+				      :directory (append (pathname-directory file-new) (list "old"))
+				      :name (pathname-name file-new)
+				      :type (pathname-type file-new)))))
+	    (mapc (lambda (new-sentence old-sentence)
+		    (let ((distance (parse-integer (sentence-meta-value old-sentence "distance_from_new")
+						   :junk-allowed t)))
+		      (mapc
+		       (lambda (mtk)
+			 (let ((found? nil))
+			   (dolist (y '(0 1 2 3 -1 -2 -3))
+			     (unless (or found?
+					 (and (find-if (lambda (x)
+							 (and
+							  (eq (+ y (mtoken-start x))
+							      (mtoken-start mtk))
+							  (eq (+ y (mtoken-end x))
+							      (mtoken-end mtk))))
+						       (sentence-mtokens new-sentence))
+					      (setf found? t)))))
+			   (unless found?
+			     (format t "~a~t~a~t Start token at old: ~a~t Distance is:~t~a~%"
+				     (sentence-meta-value new-sentence "sent_id")
+				     (mtoken-form mtk)
+				     (mtoken-start mtk)
+				     distance))))
+		       (sentence-mtokens old-sentence))))
+		  new-sentences-list
+		  old-sentences-list)))
+	(directory #P"../documents/*.conllu"))
+  ())
 
 (defun see-mwe-cases ()
   (let ((mwe nil))
@@ -183,37 +193,14 @@
      (directory #P"../documents/old/*.conllu"))
     (remove-duplicates mwe :test #'equal :key (lambda (x) (getf x :mtoken)))))
 
-;; (defun find-untokenized-contractions ()
-;;   ;; Finding untokenized contractions at our corpus that are already treated as "
-;;   (mapc (lambda (file-new)
-;; 	  (let ((new-sentences-list (read-conllu file-new))
-;; 		(old-sentences-list (read-conllu
-;; 				     (make-pathname
-;; 				      :directory (append (pathname-directory file-new) (list "old"))
-;; 				      :name (pathname-name file-new)
-;; 				      :type (pathname-type file-new)))))
-;; 	    (mapc (lambda (new-sentence old-sentence)
-;; 		      (mapc
-;; 		       (lambda (mtk)
-;; 			 (unless (find-if (lambda (x)
-;; 					    (and
-;; 					     (eq (mtoken-start x) (mtoken-start mtk))
-;; 					     (eq (mtoken-end x) (mtoken-end mtk))))
-;; 					  (sentence-mtokens new-sentence))
-;; 			   ;; (push mtk (sentence-mtokens new-sentence))))
-;; 			   (format t "~a~t~a~t~a~t - Distance is:~t~a~%" (sentence-meta-value new-sentence "sent_id") (mtoken-form mtk) (mtoken-start mtk) distance)))
-;; 		       (sentence-mtokens old-sentence))))
-;; 		  new-sentences-list
-;; 		  old-sentences-list)))
-;; 	(read-conllu file)))
-;; (directory #P"../documents/old/*.conllu"))
-
 (defun run-scripts ()
   (sanity-test)
   (if (with-open-file (out "sanity.report")
 	(read-line out nil))
       (princ "WARNING: Found CONLLu matchings of 0 distance which have different tokens! See sanity.report"))
-  (import-mtokens-from-0-distance))
+  (import-mtokens-from-0-distance)
+  (import-mwe-if-same-tokens)
+  (get-contractions))
 
     
 ;; awk '$1 ~ /\-/ { print $2}'  *.conllu | sort | uniq -c
