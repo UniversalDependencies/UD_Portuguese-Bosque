@@ -1,6 +1,9 @@
 ;; File for improving our dataset using information from the other one
 ;; e.g. putting multiword tokens in our files
 
+;; At this moment, gets "easy" multitoken words from the "old" corpus and generates multitoken words by itself from Palavras' tags for contractions
+
+
 ;; README:
 ;; Call (run-scripts) in order to import MWE.
 ;; Call (find-unimported-mwe) to see what is missing
@@ -215,4 +218,3 @@
 
     
 ;; awk '$1 ~ /\-/ { print $2}'  *.conllu | sort | uniq -c
-;; (reduce (lambda (x y) (regex-replace-all (car y) x (cadr y)))   '(("á" "a") ("é" "e") ("í" "i") ("ó" "o") ("ú" "u")) :initial-value "áéíóú" )
