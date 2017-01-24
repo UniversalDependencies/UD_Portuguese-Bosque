@@ -75,7 +75,13 @@
 (defun import-mwe-if-same-tokens ()
   ;; If there is a mtoken which corresponds to tokens t1, ..., tn, and these tokens "are" in new-sentence,
   ;; then we import them (if there's a token whose id and form are the same, we say the token from 'old sentence' "is" there)
-  (mapc (lambda (file-new)
+  (let ((accent-substitution-list '(("á" "a") ("é" "e") ("í" "i") ("ó" "o") ("ú" "u")
+				    ("â" "a") ("ê" "e") ("ô" "o")
+				    ("à" "a")
+				    ("Á" "A") ("É" "E") ("Í" "I") ("Ó" "O") ("Ú" "U")
+				    ("Â" "A") ("Ê" "E") ("Ô" "O")
+				    ("À" "A"))))
+    (mapc (lambda (file-new)
 	  (let ((new-sentences-list (read-conllu file-new))
 		(old-sentences-list (read-conllu
 				     (make-pathname
@@ -95,8 +101,12 @@
 							  :key 'token-id)))
 					     (if new-tk
 						 (equal
-						  (string-trim "-" (token-form old-tk))
-						  (string-trim "-" (token-form new-tk))))))
+						  (reduce (lambda (x y) (regex-replace-all (car y) x (cadr y)))
+							  accent-substitution-list
+							  :initial-value (string-trim "-" (token-form old-tk)))
+						  (reduce (lambda (x y) (regex-replace-all (car y) x (cadr y)))
+							  accent-substitution-list
+							  :initial-value (string-trim "-" (token-form new-tk)))))))
 					 (mtoken->tokens old-sentence mtk))
 				    (insert-mtoken
 				     new-sentence
@@ -109,7 +119,7 @@
 		  new-sentences-list
 		  old-sentences-list)
 	    (write-conllu new-sentences-list file-new)))
-	(directory #P"../documents/*.conllu")))
+	(directory #P"../documents/*.conllu"))))
 
 (defun get-contractions ()
   (let ((contraction-list (see-mwe-cases)))
@@ -142,6 +152,7 @@
     (directory #P"../documents/*.conllu"))))
 
 (defun find-unimported-mwe ()
+  (format t "sent_id ~t mtoken form ~t mtoken start ~t distance ~%")
   (mapc (lambda (file-new)
 	  (let ((new-sentences-list (read-conllu file-new))
 		(old-sentences-list (read-conllu
@@ -166,7 +177,7 @@
 						       (sentence-mtokens new-sentence))
 					      (setf found? t)))))
 			   (unless found?
-			     (format t "~a~t~a~t Start token at old: ~a~t Distance is:~t~a~%"
+			     (format t "~a~t~a~t~a~t Distance is:~t~a~%"
 				     (sentence-meta-value new-sentence "sent_id")
 				     (mtoken-form mtk)
 				     (mtoken-start mtk)
@@ -204,3 +215,4 @@
 
     
 ;; awk '$1 ~ /\-/ { print $2}'  *.conllu | sort | uniq -c
+;; (reduce (lambda (x y) (regex-replace-all (car y) x (cadr y)))   '(("á" "a") ("é" "e") ("í" "i") ("ó" "o") ("ú" "u")) :initial-value "áéíóú" )
