@@ -413,9 +413,9 @@
 8	homens	homem	NOUN	<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
 9	e	e	CCONJ	<co-fcl>|KC|@CO	_	8	cc	_	_
 10	12,5	12,5	NUM	<card>|NUM|M|P|@>N	_	11	nummod	_	_
-11	milhões	milhão	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	remnant	_	_
+11	milhões	milhão	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 12	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-13	mulheres	mulher	NOUN	<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	8	remnant	_	_
+13	mulheres	mulher	NOUN	<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	8	conj	_	_
 14	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text O homem fuma entre 11 e 20 cigarros por dia e a mulher, entre 5 e 10.
@@ -435,12 +435,12 @@
 10	dia	dia	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	_
 11	e	e	CCONJ	<co-fcl>|KC|@CO	_	3	cc	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	mulher	mulher	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	remnant	_	_
-14	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+13	mulher	mulher	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	conj	_	_
+14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15	entre	entre	ADP	PRP|@<ACC	_	16	case	_	_
-16	5	5	NUM	<first-cjt>|<Eg>|NUM|M|P|@P<	_	8	remnant	_	_
+16	5	5	NUM	<first-cjt>|<Eg>|NUM|M|P|@P<	_	13	orphan	_	_
 17	e	e	CCONJ	<co-prparg>|KC|@CO	_	16	cc	_	_
-18	10	10	NUM	<cjt>|<Eg>|NUM|M|P|@P<	_	8	remnant	_	_
+18	10	10	NUM	<cjt>|<Eg>|NUM|M|P|@P<	_	16	conj	_	_
 19	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text PF prende dois por cobrar ágio
@@ -2627,7 +2627,7 @@
 27	programa	programa	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	24	obj	_	_
 28	de	de	ADP	PRP|@N<	_	30	case	_	_
 29	«	«	PUNCT	PU|@PU	_	30	punct	_	_
-30	Parceria	Parceria	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	MWE=Parceria_pela_Paz
+30	Parceria	Parceria	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	MWE=Parceria_pela_Paz|MWEPOS=PROPN
 31	por	por	ADP	<sam->|PRP|@N<	_	33	case	_	_
 32	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	Paz	Paz	PROPN	PROP|@N<	Number=Sing	30	flat:name	_	_
