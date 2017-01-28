@@ -1,14 +1,13 @@
-# text Os outros operadores são os membros negociadores (intervêm na negociação em bolsa, introduzindo directamente no sistema ofertas de compra ou de venda) e os membros compensadores, que além de as funções dos anteriores, participam, designadamente, nos procedimentos de liquidação de contratos nas datas de vencimento e no processo de constituição, substituição, redução e libertação de garantias.
-# forest 1
-# source CETEMPúblico n=200 sec=eco sem=96a
-# sent_id CP200-1
-# id 1073
-# d2d: cc(datas,e) -> cc(processo,e)  #106
-# d2d: punct(constituição,,) -> punct(substituição,,)  #106
-# d2d: cc(constituição,e) -> cc(libertação,e)  #106
-# d2d: punct(constituição,,) -> punct(redução,,)  #106
-# d2d: cc(compra,ou) -> cc(venda,ou)  #106
-# d2d: cc(membros,e) -> cc(membros,e)  #106
+# text = Os outros operadores são os membros negociadores (intervêm na negociação em bolsa, introduzindo directamente no sistema ofertas de compra ou de venda) e os membros compensadores, que além de as funções dos anteriores, participam, designadamente, nos procedimentos de liquidação de contratos nas datas de vencimento e no processo de constituição, substituição, redução e libertação de garantias.
+# source = CETEMPúblico n=200 sec=eco sem=96a
+# sent_id = CP200-1
+# id = 1073
+# d2d = cc(datas,e) -> cc(processo,e)  #106
+# d2d = punct(constituição,,) -> punct(substituição,,)  #106
+# d2d = cc(constituição,e) -> cc(libertação,e)  #106
+# d2d = punct(constituição,,) -> punct(redução,,)  #106
+# d2d = cc(compra,ou) -> cc(venda,ou)  #106
+# d2d = cc(membros,e) -> cc(membros,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	outros	outro	DET	<diff>|DET|M|P|@>N	Gender=Masc|Number=Plur	3	det	_	_
 3	operadores	operador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
@@ -82,11 +81,10 @@
 71	garantias	garantia	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	63	nmod	_	_
 72	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# text O futuro sobre OT-10 (uma taxa de juro de longo prazo) conta, à partida, com nove «market makers», significativamente mais do que os cinco que cumprirão indêntica função para o futuro sobre o PSI-20 (um índice bolsista calculado para uma carteira de 20 títulos).
-# forest 1
-# source CETEMPúblico n=200 sec=eco sem=96a &E
-# sent_id CP200-2
-# id 1074
+# text = O futuro sobre OT-10 (uma taxa de juro de longo prazo) conta, à partida, com nove «market makers», significativamente mais do que os cinco que cumprirão indêntica função para o futuro sobre o PSI-20 (um índice bolsista calculado para uma carteira de 20 títulos).
+# source = CETEMPúblico n=200 sec=eco sem=96a &E
+# sent_id = CP200-2
+# id = 1074
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	futuro	futuro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
 3	sobre	sobre	ADP	PRP|@N<	_	4	case	_	_
@@ -144,12 +142,11 @@
 55	)	)	PUNCT	PU|@PU	_	46	punct	_	_
 56	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
-# text O contrato sobre a Lisbor a três meses (taxa de juro de curto prazo, correspondente à média das taxas praticadas no mercado monetário interbancário) só começará a ser negociado no início de Julho mas já tem garantidos seis «market makers».
-# forest 1
-# source CETEMPúblico n=200 sec=eco sem=96a
-# sent_id CP200-3
-# id 1075
-# d2d: cc(negociado,mas) -> cc(tem,mas)  #106
+# text = O contrato sobre a Lisbor a três meses (taxa de juro de curto prazo, correspondente à média das taxas praticadas no mercado monetário interbancário) só começará a ser negociado no início de Julho mas já tem garantidos seis «market makers».
+# source = CETEMPúblico n=200 sec=eco sem=96a
+# sent_id = CP200-3
+# id = 1075
+# d2d = cc(negociado,mas) -> cc(tem,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	contrato	contrato	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	35	nsubj:pass	_	_
 3	sobre	sobre	ADP	PRP|@N<	_	5	case	_	_

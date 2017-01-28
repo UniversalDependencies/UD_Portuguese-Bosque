@@ -1,20 +1,18 @@
-# text Metalúrgico rompe negociação
-# forest 1
-# source CETENFolha n=120 cad=Brasil sec=pol sem=94a
-# sent_id CF120-1
-# id 466
+# text = Metalúrgico rompe negociação
+# source = CETENFolha n=120 cad=Brasil sec=pol sem=94a
+# sent_id = CF120-1
+# id = 466
 1	Metalúrgico	metalúrgico	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	rompe	romper	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	negociação	negociação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 
-# text Os metalúrgicos do Estado de São Paulo da base da Força Sindical (data-base em novembro) romperam negociação com os setores de autopeças, forjaria e parafusos e preparam greve.
-# forest 1
-# source CETENFolha n=120 cad=Brasil sec=pol sem=94a
-# sent_id CF120-3
-# id 467
-# d2d: cc(romperam,e) -> cc(preparam,e)  #106
-# d2d: punct(autopeças,,) -> punct(forjaria,,)  #106
-# d2d: cc(autopeças,e) -> cc(parafusos,e)  #106
+# text = Os metalúrgicos do Estado de São Paulo da base da Força Sindical (data-base em novembro) romperam negociação com os setores de autopeças, forjaria e parafusos e preparam greve.
+# source = CETENFolha n=120 cad=Brasil sec=pol sem=94a
+# sent_id = CF120-3
+# id = 467
+# d2d = cc(romperam,e) -> cc(preparam,e)  #106
+# d2d = punct(autopeças,,) -> punct(forjaria,,)  #106
+# d2d = cc(autopeças,e) -> cc(parafusos,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	metalúrgicos	metalúrgico	ADJ	<n>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	21	nsubj	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -51,14 +49,13 @@
 34	greve	greve	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	33	obj	_	_
 35	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
-# text Os empresários ofereceram 10,4 % em novembro para São Paulo, Osasco e Guarulhos e 6 % mais 6,27 % em março para o interior.
-# forest 1
-# source CETENFolha n=120 cad=Brasil sec=pol sem=94a &E
-# sent_id CF120-4
-# id 468
-# d2d: cc(São,e) -> cc(Guarulhos,e)  #106
-# d2d: cc(%,e) -> cc(março,e)  #106
-# d2d: punct(%,,) -> punct(março,,)  #106
+# text = Os empresários ofereceram 10,4 % em novembro para São Paulo, Osasco e Guarulhos e 6 % mais 6,27 % em março para o interior.
+# source = CETENFolha n=120 cad=Brasil sec=pol sem=94a &E
+# sent_id = CF120-4
+# id = 468
+# d2d = cc(São,e) -> cc(Guarulhos,e)  #106
+# d2d = cc(%,e) -> cc(março,e)  #106
+# d2d = punct(%,,) -> punct(março,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	empresários	empresário	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	ofereceram	oferecer	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
@@ -86,11 +83,10 @@
 25	interior	interior	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	conj	_	_
 26	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# text A categoria pede 69,69%.
-# forest 1
-# source CETENFolha n=120 cad=Brasil sec=pol sem=94a
-# sent_id CF120-5
-# id 469
+# text = A categoria pede 69,69%.
+# source = CETENFolha n=120 cad=Brasil sec=pol sem=94a
+# sent_id = CF120-5
+# id = 469
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	categoria	categoria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	pede	pedir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -98,12 +94,11 @@
 5	%	%	SYM	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
 6	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# text O Sindicato dos Metalúrgicos do Rio e do Grande Rio (data-base em outubro) se reúne hoje com representantes da Firjan (federação das indústrias do Rio) pela primeira vez desde o início da greve da categoria, na terça-feira.
-# forest 1
-# source CETENFolha n=120 cad=Brasil sec=pol sem=94a
-# sent_id CF120-6
-# id 470
-# d2d: cc(Rio,e) -> cc(Grande,e)  #106
+# text = O Sindicato dos Metalúrgicos do Rio e do Grande Rio (data-base em outubro) se reúne hoje com representantes da Firjan (federação das indústrias do Rio) pela primeira vez desde o início da greve da categoria, na terça-feira.
+# source = CETENFolha n=120 cad=Brasil sec=pol sem=94a
+# sent_id = CF120-6
+# id = 470
+# d2d = cc(Rio,e) -> cc(Grande,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Sindicato	Sindicato	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	MWE=Sindicato_dos_Metalúrgicos
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -158,12 +153,11 @@
 52	terça-feira	terça-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	obl	_	ChangedBy=Issue137
 53	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
-# text O sindicato pede 99% e os empresários oferecem 13,56%.
-# forest 1
-# source CETENFolha n=120 cad=Brasil sec=pol sem=94a
-# sent_id CF120-7
-# id 471
-# d2d: cc(pede,e) -> cc(oferecem,e)  #106
+# text = O sindicato pede 99% e os empresários oferecem 13,56%.
+# source = CETENFolha n=120 cad=Brasil sec=pol sem=94a
+# sent_id = CF120-7
+# id = 471
+# d2d = cc(pede,e) -> cc(oferecem,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	sindicato	sindicato	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	pede	pedir	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -177,12 +171,11 @@
 11	%	%	SYM	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	9	obj	_	_
 12	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# text A greve «por empresa» atingia ontem sete empresas e 12 mil empregados.
-# forest 1
-# source CETENFolha n=120 cad=Brasil sec=pol sem=94a
-# sent_id CF120-8
-# id 472
-# d2d: cc(empresas,e) -> cc(empregados,e)  #106
+# text = A greve «por empresa» atingia ontem sete empresas e 12 mil empregados.
+# source = CETENFolha n=120 cad=Brasil sec=pol sem=94a
+# sent_id = CF120-8
+# id = 472
+# d2d = cc(empresas,e) -> cc(empregados,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	greve	greve	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
 3	«	«	PUNCT	PU|@PU	_	5	punct	_	_
