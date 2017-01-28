@@ -26,11 +26,14 @@
     (let ((current 0)
 	  (text (sentence-meta-value s "text")))
       (dolist (tks (collect-next-element (sentence-tokens s)))
+	;;(format t "[~a]~%" (subseq text current))
 	(let* ((prev (car tks))
 	       (tk (cdr tks))
 	       (pos (when tk (search (token-form tk) text :start2 current))))
-          (when pos (setf current (+ (length (token-form tk)) pos)))
-          (when (and pos
+	  ;;(when pos (format t "c=~a p=~a ~a ~a~%" current pos (token-form prev) (token-form tk)))
+	  (when (and pos (string-equal "PUNCT" (token-upostag tk)))
+	    (setf current (1+ pos)))
+	  (when (and pos
                      (string-equal "PUNCT" (token-upostag tk))
                      (> pos 0)
                      (not (eq #\space (elt text (- pos 1)))))
@@ -44,7 +47,8 @@
 	  (text (sentence-meta-value s "text")))
       (dolist (tk (sentence-tokens s))
 	(let ((pos (when tk (search (token-form tk) text :start2 current))))
-          (when pos (setf current (+ (length (token-form tk)) pos)))
+	  (when (and pos (string-equal "PUNCT" (token-upostag tk)))
+	    (setf current (1+ pos)))
           (when (and pos
                      (string-equal "PUNCT" (token-upostag tk))
 		     (< (+ pos (length (token-form tk))) (length text))
