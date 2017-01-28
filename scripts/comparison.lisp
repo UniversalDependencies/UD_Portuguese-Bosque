@@ -1,18 +1,16 @@
-;; File for improving our dataset using information from the other one
-;; e.g. putting multiword tokens in our files
 
-;; At this moment, gets "easy" multitoken words from the "old" corpus and generates multitoken words by itself from Palavras' tags for contractions
-
+;; At this moment, gets "easy" multitoken words from the "old" corpus
+;; and generates multitoken words by itself from Palavras' tags for
+;; contractions
 
 ;; README:
 ;; Call (run-scripts) in order to import MWE.
 ;; Call (find-unimported-mwe) to see what is missing
 
-
-;; Brainstorming:
-;; See which contractions exist in order to put multiwork tokens where we can't just map directly
-;; Perhaps use metadata `text` in order to check if the sentence needs multitokens? It may be difficult.
-
+;; Brainstorming: See which contractions exist in order to put
+;; multiwork tokens where we can't just map directly Perhaps use
+;; metadata `text` in order to check if the sentence needs
+;; multitokens? It may be difficult.
 
 
 (load "mapping.lisp")
