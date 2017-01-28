@@ -6,7 +6,7 @@
 2	Askew	Askew	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 4	com	com	ADP	PRP|@N<PRED	_	6	case	_	_
-5	20	20	NUM	<card>|NUM|M|P|@>N	_	6	nummod	_	_
+5	20	20	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
 6	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	_
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 8	liderou	liderar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -62,7 +62,7 @@
 14	encontro	encontro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 15	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 16	com	com	ADP	PRP|@N<PRED	_	18	case	_	_
-17	24	24	NUM	<card>|NUM|M|P|@>N	_	18	nummod	_	_
+17	24	24	NUM	<card>|NUM|M|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
 18	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
 19	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
@@ -113,7 +113,7 @@
 14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 15	seguem	seguir	VERB	<mv>|<cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
 16	com	com	ADP	PRP|@<ADVL	_	18	case	_	_
-17	cinco	cinco	NUM	<card>|NUM|F|P|@>N	_	18	nummod	_	_
+17	cinco	cinco	NUM	<card>|NUM|F|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
 18	derrotas	derrota	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	15	obl	_	ChangedBy=Issue137
 19	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
@@ -135,8 +135,8 @@
 3	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	organizar	organizar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	3	xcomp	_	_
 5	em	em	ADP	PRP|@<ADVL	_	6	case	_	_
-6	1997	1997	NUM	<year>|<card>|<date>|NUM|M|S|@P<	_	4	nmod	_	_
-7	um	um	NUM	<card>|NUM|M|S|@>N	_	8	nummod	_	_
+6	1997	1997	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	4	nmod	_	ChangedBy=Issue168
+7	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	8	nummod	_	ChangedBy=Issue168
 8	Grande	Grande	PROPN	_	Gender=Masc|Number=Sing	4	obj	_	ChangedBy=Issue119|MWE=Grande_Prémio|MWEPOS=PROPN
 9	Prémio	Prémio	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
@@ -150,7 +150,7 @@
 18	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 19	que	que	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	20	nsubj	_	_
 20	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_
-21	4,83	4,83	NUM	<card>|NUM|M|P|@>N	_	22	nummod	_	_
+21	4,83	4,83	NUM	<card>|NUM|M|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168
 22	km	km	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	20	obj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	perímetro	perímetro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	_
@@ -186,7 +186,7 @@
 16	seria	ser	AUX	<cjt>|<aux>|V|COND|3S|@FS-N<PRED	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	aux:pass	_	_
 17	terminado	terminar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	conj	_	_
 18	em	em	ADP	PRP|@<SA	_	19	case	_	_
-19	1996	1996	NUM	<year>|<card>|<date>|NUM|M|S|@P<	_	17	nmod	_	_
+19	1996	1996	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	17	nmod	_	ChangedBy=Issue168
 20	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 21	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
 22	autoridades	autoridade	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	23	nsubj	_	_
@@ -194,7 +194,7 @@
 24	gastar	gastar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	23	xcomp	_	_
 25	cerca	cerca	ADV	ADV|@>A	_	27	advmod	_	MWE=cerca_de
 26	de	de	ADP	<prp>|PRP|@A<	_	25	case	_	_
-27	30	30	NUM	<card>|NUM|M|P|@>N	_	28	nummod	_	_
+27	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	28	nummod	_	ChangedBy=Issue168
 28	milhões	milhão	NOUN	<np-def>|N|M|P|@<ADVL	Gender=Masc|Number=Plur	24	nmod	_	_
 29	de	de	ADP	PRP|@N<ARG	_	30	case	_	_
 30	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	28	nmod	_	_
@@ -236,8 +236,8 @@
 30	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
 31	presença	presença	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	29	obj	_	_
 32	de	de	ADP	PRP|@N<	_	35	case	_	_
-33	200	200	NUM	<card>|NUM|M|P|@>N	_	35	nummod	_	_
-34	mil	mil	NUM	<card>|NUM|M|P|@>N	_	35	nummod	_	_
+33	200	200	NUM	<card>|NUM|M|P|@>N	NumType=Card	35	nummod	_	ChangedBy=Issue168
+34	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	35	nummod	_	ChangedBy=Issue168
 35	espectadores	espectador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	31	nmod	_	_
 36	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 

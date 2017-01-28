@@ -11,7 +11,7 @@
 7	todos	todo	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
 8	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 9	com	com	ADP	PRP|@N<PRED	_	11	case	_	_
-10	126	126	NUM	<card>|NUM|F|P|@>N	_	11	nummod	_	_
+10	126	126	NUM	<card>|NUM|F|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168
 11	vítimas	vítima	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
 12	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
@@ -25,7 +25,7 @@
 4	seguir	seguir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 5	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 6	com	com	ADP	PRP|@N<PRED	_	7	case	_	_
-7	46	46	NUM	<card>|NUM|F|P|@P<	_	4	nmod	_	_
+7	46	46	NUM	<card>|NUM|F|P|@P<	NumType=Card	4	nmod	_	ChangedBy=Issue168
 8	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Freddy está na rabeira, com 37.
@@ -39,7 +39,7 @@
 5	rabeira	rabeira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
 6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 7	com	com	ADP	PRP|@N<PRED	_	8	case	_	_
-8	37	37	NUM	<card>|NUM|F|P|@P<	_	5	nmod	_	_
+8	37	37	NUM	<card>|NUM|F|P|@P<	NumType=Card	5	nmod	_	ChangedBy=Issue168
 9	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Coincidentemente, Jason também levou o maior número de balas (132), contra 27 de Michael Myers e apenas seis de Freddy Krueger.
@@ -58,17 +58,17 @@
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	balas	bala	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	_
 11	(	(	PUNCT	PU|@PU	_	12	punct	_	_
-12	132	132	NUM	<card>|NUM|F|P|@N<PRED	_	8	appos	_	_
+12	132	132	NUM	<card>|NUM|F|P|@N<PRED	NumType=Card	8	appos	_	ChangedBy=Issue168
 13	)	)	PUNCT	PU|@PU	_	12	punct	_	_
 14	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 15	contra	contra	ADP	PRP|@<ADVL	_	16	case	_	_
-16	27	27	NUM	<first-cjt>|<card>|NUM|F|P|@P<	_	5	nmod	_	_
+16	27	27	NUM	<first-cjt>|<card>|NUM|F|P|@P<	NumType=Card	5	nmod	_	ChangedBy=Issue168
 17	de	de	ADP	PRP|@N<	_	18	case	_	_
 18	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	16	nmod	_	ChangedBy=Issue119|MWE=Michael_Myers|MWEPOS=PROPN
 19	Myers	Myers	PROPN	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
 20	e	e	CCONJ	<co-prparg>|KC|@CO	_	22	cc	_	d2d:#106
 21	apenas	apenas	ADV	ADV|@>A	_	22	advmod	_	_
-22	seis	seis	NUM	<cjt>|<card>|NUM|F|P|@P<	_	16	conj	_	_
+22	seis	seis	NUM	<cjt>|<card>|NUM|F|P|@P<	NumType=Card	16	conj	_	ChangedBy=Issue168
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	Freddy	Freddy	PROPN	_	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue119|MWE=Freddy_Krueger|MWEPOS=PROPN
 25	Krueger	Krueger	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
