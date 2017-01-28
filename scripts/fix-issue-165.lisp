@@ -18,7 +18,7 @@
                                                           (format nil "~a=~a" key value)
                                                           (format nil "~a" value)))) #'string<))))
 
-(defun fix (sentences)
+(defun fix-before (sentences)
   (dolist (s sentences)
     (let ((current 0)
 	  (text (sentence-meta-value s "text")))
@@ -32,8 +32,23 @@
 	    (setf (token-misc prev) (append-feature "SpaceAfter" "No" (token-misc prev))))))))
   sentences)
 
+(defun fix-after (sentences)
+  (dolist (s sentences)
+    (let ((current 0)
+	  (text (sentence-meta-value s "text")))
+      (dolist (tk (sentence-tokens s))
+	(let ((pos (when tk (search (token-form tk) text :start2 current))))
+	  (when (and pos
+		     (string-equal "PUNCT" (token-upostag tk))
+		     (< pos (1- (length text)))
+		     (not (eq #\space (elt text (+ pos 1)))))
+	    (setf current (+ (length (token-form tk)) pos))
+	    (setf (token-misc tk) (append-feature "ChangedBy" "Issue165" (token-misc tk)))
+	    (setf (token-misc tk) (append-feature "SpaceAfter" "No" (token-misc tk))))))))
+  sentences)
+
 (defun run ()
   (dolist (f (directory "documents/*.conllu"))
-    (write-conllu (fix (read-conllu f)) f)))
+    (write-conllu (fix-after (fix-before (read-conllu f))) f)))
 
 
