@@ -8,7 +8,7 @@
 1	Não	não	INTJ	IN|@ADVL>	Polarity=Neg	7	advmod	_	ChangedBy=Issue108|ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	não	não	ADV	ADV|@ADVL>	Polarity=Neg	7	advmod	_	ChangedBy=Issue108
-4	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	ChangedBy=Issue167
 5	mais	mais	ADV	<setop>|ADV|@>A	_	6	advmod	_	_
 6	uma	um	NUM	<card>|<nil>|NUM|F|S|@>N	NumType=Card	7	nummod	_	ChangedBy=Issue168
 7	caso	caso	NOUN	<first-cjt>|<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
@@ -35,7 +35,7 @@
 # d2d = cc(um,mas) -> cc(três,mas)  #106
 # d2d = cc(real,e) -> cc(exemplo,e)  #106
 1	Esta	este	PRON	<dem>|DET|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	_	_
-2	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 3	bem	bem	ADV	<quant>|ADV|@>A	_	4	advmod	_	_
 4	real	real	ADJ	<first-cjt>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 5	e	e	CCONJ	<co-sc>|KC|@CO	_	7	cc	_	d2d:#106
@@ -60,7 +60,7 @@
 23	descobre	descobrir	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_
 24	que	que	SCONJ	KS|@SUB	_	31	mark	_	_
 25	não	não	ADV	ADV|@ADVL>	Polarity=Neg	31	advmod	_	ChangedBy=Issue108
-26	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	_
+26	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	ChangedBy=Issue167
 27	um	um	NUM	<first-cjt>|<card>|NUM|M|S|@>N	NumType=Card	31	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
 29	mas	mas	CCONJ	<co-prenom>|KC|@CO	_	30	cc	_	d2d:#106
@@ -95,7 +95,7 @@
 # source = CETEMPúblico n=832 sec=soc sem=98a
 # sent_id = CP832-4
 # id = 4290
-1	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	caso	caso	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 4-5	da	_	_	_	_	_	_	_	_
@@ -117,7 +117,7 @@
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	choque	choque	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
-4	foi	ser	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	_
+4	foi	ser	AUX	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	ChangedBy=Issue167
 5-6	na	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@<SA	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
@@ -200,13 +200,13 @@
 # d2d = cc(gémeos,mas) -> cc(gémeos,mas)  #106
 # d2d = punct(gémeos,,) -> punct(gémeos,,)  #106
 1	Não	não	ADV	ADV|@ADVL>	Polarity=Neg	3	advmod	_	ChangedBy=Issue108
-2	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 3	caso	caso	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 4	para	para	ADP	PRP|@N<	_	5	case	_	_
 5	menos	pouco	PRON	<quant>|<KOMP>|<COMP>|DET|M/F|S/P|@P<	Gender=Unsp|Number=Unsp	3	det	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 7	pois	pois	SCONJ	KS|@SUB	_	9	mark	_	_
-8	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	ChangedBy=Issue167
 9	gémeos	gémeo	NOUN	<first-cjt>|<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	3	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 11	mas	mas	CCONJ	<co-sc>|KC|@CO	_	18	cc	_	d2d:#106
@@ -246,7 +246,7 @@
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	d2d:#106
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	João	João	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
-6	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+6	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	ChangedBy=Issue167
 7	quase	quase	ADV	<quant>|ADV|@>A	_	8	advmod	_	_
 8	inseparáveis	inseparável	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
@@ -285,7 +285,7 @@
 # d2d = cc(ela,e) -> cc(ele,e)  #106
 # d2d = cc(preguiça,e) -> cc(disposição,e)  #106
 # d2d = cc(independência,e) -> cc(competência,e)  #106
-1	São	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+1	São	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	muito	muito	ADV	<quant>|ADV|@>A	_	3	advmod	_	_
 3	diferentes	diferente	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
@@ -339,7 +339,7 @@
 5	notou	notar	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
 6	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
 7	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
-8	era	ser	VERB	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	cop	_	_
+8	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	cop	_	ChangedBy=Issue167
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	irmã	irmã	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	2	ccomp	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -363,7 +363,7 @@
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Inês	Inês	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	ser	ser	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	5	cop	_	_
+4	ser	ser	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	5	cop	_	ChangedBy=Issue167
 5	arquitecta	arquitecta	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	3	dep	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7	enquanto	enquanto	ADV	ADV|@SUB	_	12	mark	_	MWE=enquanto_que
