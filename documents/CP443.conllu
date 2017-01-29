@@ -11,12 +11,12 @@
 7	0,55	0,55	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	nummod	_	ChangedBy=Issue168
 8	por	por	ADP	_	Gender=Masc|Number=Sing	5	nmod	_	MWE=por_cento|MWEPOS=NOUN
 9	cento	cento	NUM	_	Gender=Masc|Number=Sing	8	compound	_	_
-10	(	(	PUNCT	PU|@PU	_	13	punct	_	_
+10	(	(	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
 11	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	12	advmod	_	_
 12	2,05	2,05	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168
 13	por	por	ADP	_	Gender=Masc|Number=Sing	8	nmod:npmod	_	MWE=por_cento|MWEPOS=NOUN
-14	cento	cento	NUM	_	Gender=Masc|Number=Sing	13	compound	_	_
-15	)	)	PUNCT	PU|@PU	_	13	punct	_	_
+14	cento	cento	NUM	_	Gender=Masc|Number=Sing	13	compound	_	ChangedBy=Issue165|SpaceAfter=No
+15	)	)	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 17	com	com	ADP	PRP|@<ADVL	_	20	case	_	_
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
@@ -26,7 +26,7 @@
 22	a	a	ADP	PRP|@N<	_	23	mark	_	_
 23	atingir	atingir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	acl	_	_
 24	376,82	376,82	NUM	<card>|NUM|M|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168
-25	pontos	ponto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	23	obj	_	_
+25	pontos	ponto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	23	obj	_	ChangedBy=Issue165|SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A alta madrilena foi causada pela abertura em alta de Wall Street e pela subida dos mercados obrigacionistas, que compensaram os sustos com o anúncio da demissão do general russo Alexander Lebed.
@@ -57,7 +57,7 @@
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
 20	mercados	mercado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
-21	obrigacionistas	obrigacionista	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	20	amod	_	_
+21	obrigacionistas	obrigacionista	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	20	amod	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 23	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	24	nsubj	_	_
 24	compensaram	compensar	VERB	<mv>|V|PS|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	20	acl:relcl	_	_
@@ -76,7 +76,7 @@
 35	general	general	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	_
 36	russo	russo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	35	amod	_	_
 37	Alexander	Alexander	PROPN	_	Gender=Masc|Number=Sing	35	appos	_	ChangedBy=Issue119|MWE=Alexander_Lebed|MWEPOS=PROPN
-38	Lebed	Lebed	PROPN	_	Number=Sing	37	flat:name	_	ChangedBy=Issue119
+38	Lebed	Lebed	PROPN	_	Number=Sing	37	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 39	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O volume de negócios da sessão de ontem 31,2 milhões de contos.
@@ -96,7 +96,7 @@
 10	31,2	31,2	NUM	<card>|NUM|M|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168
 11	milhões	milhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	2	nmod:npmod	_	_
 12	de	de	ADP	PRP|@N<ARG	_	13	case	_	_
-13	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
+13	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Em Frankfurt, registou-se uma subida de 0,05 por cento, com o índice DAX a fechar a 2.176,26 pontos, devido à baixa que atingiu Wall Street na quarta-feira.
@@ -104,7 +104,7 @@
 # sent_id = CP443-4
 # id = 2330
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
-2	Frankfurt	Frankfurt	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
+2	Frankfurt	Frankfurt	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	registou-	registar	VERB	<mv>|<hyphen>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 5	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	expl	_	ChangedBy=Issue135
@@ -113,8 +113,8 @@
 8	de	de	ADP	PRP|@N<	_	10	case	_	_
 9	0,05	0,05	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	nummod	_	ChangedBy=Issue168
 10	por	por	ADP	_	Gender=Masc|Number=Sing	7	nmod	_	MWE=por_cento|MWEPOS=NOUN
-11	cento	cento	NUM	_	Gender=Masc|Number=Sing	10	compound	_	_
-12	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+11	cento	cento	NUM	_	Gender=Masc|Number=Sing	10	compound	_	ChangedBy=Issue165|SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 13	com	com	ADP	PRP|@<ADVL	_	15	case	_	_
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	índice	índice	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
@@ -123,7 +123,7 @@
 18	fechar	fechar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	acl	_	_
 19	a	a	ADP	PRP|@<ADVL	_	21	case	_	_
 20	2.176,26	2.176,26	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	ChangedBy=Issue168
-21	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	18	obl	_	ChangedBy=Issue137
+21	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	18	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 23	devido	devido	ADV	ADV|@<ADVL	_	18	advmod	_	MWE=devido_a
 24	a	a	ADP	PRP|@A<	_	26	case	_	_
@@ -135,8 +135,8 @@
 30	Street	Street	PROPN	_	Number=Sing	29	flat:name	_	ChangedBy=Issue119
 31	em	em	ADP	<sam->|PRP|@<ADVL	_	33	case	_	_
 32	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	quarta-feira	quarta-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	obl	_	ChangedBy=Issue137
-34	.	.	PUNCT	PU|@PU	_	4	punct	_	_
+33	quarta-feira	quarta-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+34	.	.	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 
 # text = Nos mercados orientais, Tóquio foi a excepção e, ao meio da manhã, a bolsa tendia para uma alta marginal, com o índice Nikkei a marcar 12,07 pontos no fim da sessão da manhã.
 # source = CETEMPúblico n=443 sec=eco sem=96b
@@ -148,13 +148,13 @@
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	mercados	mercado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
-4	orientais	oriental	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	3	amod	_	_
+4	orientais	oriental	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	3	amod	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 6	Tóquio	Tóquio	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
 7	foi	ser	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	excepção	excepção	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
-10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	21	cc	_	d2d:#106
+10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	21	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
 11	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 12-13	ao	_	_	_	_	_	_	_	_
 12	a	a	ADP	<sam->|PRP|@ADVL>	_	14	case	_	_
@@ -163,7 +163,7 @@
 15-16	da	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	manhã	manhã	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
+17	manhã	manhã	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	bolsa	bolsa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	21	nsubj	_	_
@@ -171,7 +171,7 @@
 22	para	para	ADP	PRP|@<SA	_	24	case	_	_
 23	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
 24	alta	alta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
-25	marginal	marginal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	24	amod	_	_
+25	marginal	marginal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	24	amod	_	ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 27	com	com	ADP	PRP|@<ADVL	_	29	case	_	_
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
@@ -192,7 +192,7 @@
 41-42	da	_	_	_	_	_	_	_	_
 41	de	de	ADP	<sam->|PRP|@N<	_	43	case	_	_
 42	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
-43	manhã	manhã	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	40	nmod	_	_
+43	manhã	manhã	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	40	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 44	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = As baixas dos demais mercados marcaram uma tendência.
@@ -208,7 +208,7 @@
 6	mercados	mercado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
 7	marcaram	marcar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 8	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	tendência	tendência	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
+9	tendência	tendência	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	ChangedBy=Issue165|SpaceAfter=No
 10	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Em Hong-Kong, no entanto, houve uma quebra e o índice Hang-Seng atingiu 61 pontos negativos, com uma subida posterior para 46 pontos.
@@ -217,12 +217,12 @@
 # id = 2333
 # d2d = cc(houve,e) -> cc(atingiu,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
-2	Hong-Kong	Hong-Kong	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
+2	Hong-Kong	Hong-Kong	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4-5	no	_	_	_	_	_	_	_	_
 4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+6	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 8	houve	haver	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
@@ -234,7 +234,7 @@
 15	atingiu	atingir	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	_	_
 16	61	61	NUM	<card>|NUM|M|P|@>N	NumType=Card	17	nummod	_	ChangedBy=Issue168
 17	pontos	ponto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	15	obj	_	_
-18	negativos	negativo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	17	amod	_	_
+18	negativos	negativo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 20	com	com	ADP	PRP|@<ADVL	_	22	case	_	_
 21	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
@@ -242,7 +242,7 @@
 23	posterior	posterior	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
 24	para	para	ADP	PRP|@N<	_	26	case	_	_
 25	46	46	NUM	<card>|NUM|M|P|@>N	NumType=Card	26	nummod	_	ChangedBy=Issue168
-26	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
+26	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Singapura também fechou com uma ligeira baixa de 2,54 pontos.
@@ -258,6 +258,6 @@
 7	baixa	baixo	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	6	nmod:npmod	_	_
 8	de	de	ADP	PRP|@N<	_	10	case	_	_
 9	2,54	2,54	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	nummod	_	ChangedBy=Issue168
-10	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	_
+10	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

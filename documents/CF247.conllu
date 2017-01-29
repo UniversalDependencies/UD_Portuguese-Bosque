@@ -16,7 +16,7 @@
 11-12	dos	_	_	_	_	_	_	_	_
 11	de	de	ADP	<sam->|PRP|@N<ARG	_	13	case	_	_
 12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
-13	aluguéis	aluguel	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
+13	aluguéis	aluguel	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = «Pode ser pela média, pelo pico ou outro critério qualquer.»
@@ -25,13 +25,13 @@
 # id = 1050
 # d2d = punct(média,,) -> punct(pico,,)  #106
 # d2d = cc(média,ou) -> cc(critério,ou)  #106
-1	«	«	PUNCT	PU|@PU	_	3	punct	_	_
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
 3	ser	ser	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 4-5	pela	_	_	_	_	_	_	_	_
 4	por	por	ADP	<first-cjt>|<sam->|PRP|@<ADVL	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	média	média	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
+6	média	média	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 8-9	pelo	_	_	_	_	_	_	_	_
 8	por	por	ADP	<cjt>|<sam->|PRP|@<ADVL	_	10	case	_	_
@@ -40,8 +40,8 @@
 11	ou	ou	CCONJ	<co-advl>|KC|@CO	_	13	cc	_	d2d:#106
 12	outro	outro	DET	<diff>|<KOMP>|DET|M|S|@>N	Gender=Masc|Number=Sing	13	det	_	_
 13	critério	critério	NOUN	<cjt>|<np-idf>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	6	conj	_	_
-14	qualquer	qualquer	DET	<quant>|DET|M|S|@N<	Gender=Masc|Number=Sing	13	det	_	_
-15	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+14	qualquer	qualquer	DET	<quant>|DET|M|S|@N<	Gender=Masc|Number=Sing	13	det	_	ChangedBy=Issue165|SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O advogado Waldir de Arruda Miranda Carneiro, especializado em locação diz que a conversão espontânea pode ser interessante dependendo da negociação entre as partes.
@@ -54,7 +54,7 @@
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
 5	Arruda	Arruda	PROPN	_	Number=Sing	3	nmod	_	ChangedBy=Issue119|MWE=Arruda_Miranda_Carneiro|MWEPOS=PROPN
 6	Miranda	Miranda	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119
-7	Carneiro	Carneiro	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119
+7	Carneiro	Carneiro	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 9	especializado	especializar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
 10	em	em	ADP	PRP|@<PIV	_	11	case	_	_
@@ -74,14 +74,14 @@
 23	negociação	negociação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
 24	entre	entre	ADP	PRP|@N<	_	26	case	_	_
 25	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
-26	partes	parte	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	23	nmod	_	_
+26	partes	parte	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	23	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = «Se o inquilino conseguir um bom desconto na hora da mudança do aluguel de cruzeiros reais para URV é negócio para ele», diz.
 # source = CETENFolha n=247 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF247-4
 # id = 1052
-1	«	«	PUNCT	PU|@PU	_	24	punct	_	_
+1	«	«	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Se	se	SCONJ	KS|@SUB	_	5	mark	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	inquilino	inquilino	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -109,10 +109,10 @@
 23	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	_	_
 24	negócio	negócio	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	29	ccomp	_	_
 25	para	para	ADP	PRP|@N<	_	26	case	_	_
-26	ele	ele	PRON	PERS|M|3S|NOM/PIV|@P<	Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nmod	_	_
-27	»	»	PUNCT	PU|@PU	_	24	punct	_	_
+26	ele	ele	PRON	PERS|M|3S|NOM/PIV|@P<	Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+27	»	»	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-29	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+29	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 30	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 
 # text = Isso porque ninguém sabe quais serão os critérios da conversão automática, explica.
@@ -131,8 +131,8 @@
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	conversão	conversão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
-12	automática	automático	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
+12	automática	automático	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-14	explica	explicar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+14	explica	explicar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 15	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 

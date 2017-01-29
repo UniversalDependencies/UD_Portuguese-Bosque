@@ -3,7 +3,7 @@
 # sent_id = CF609-1
 # id = 2563
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
-2	jogador	jogador	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
+2	jogador	jogador	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	falta	faltar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	entrosamento	entrosamento	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	4	nsubj	_	_
@@ -34,7 +34,7 @@
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 16	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing	18	det	_	_
 17	baixo	baixo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	18	amod	_	_
-18	desempenho	desempenho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
+18	desempenho	desempenho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = «Sei que não estou rendendo tudo que posso, mas estou em evolução», disse.
@@ -43,7 +43,7 @@
 # id = 2565
 # d2d = cc(Sei,mas) -> cc(evolução,mas)  #106
 # d2d = punct(Sei,,) -> punct(evolução,,)  #106
-1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Sei	saber	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	17	ccomp	_	_
 3	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
 4	não	não	ADV	_	Polarity=Neg	6	advmod	_	_
@@ -51,15 +51,15 @@
 6	rendendo	render	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	2	ccomp	_	_
 7	tudo	tudo	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	6	obj	_	_
 8	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	9	obj	_	_
-9	posso	poder	VERB	<mv>|V|PR|1S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
+9	posso	poder	VERB	<mv>|V|PR|1S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 11	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
 12	estou	estar	VERB	<mv>|<cjt>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	cop	_	_
 13	em	em	ADP	PRP|@<SA	_	14	case	_	_
-14	evolução	evolução	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	conj	_	_
-15	»	»	PUNCT	PU|@PU	_	2	punct	_	_
+14	evolução	evolução	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	conj	_	ChangedBy=Issue165|SpaceAfter=No
+15	»	»	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-17	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+17	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 18	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Folha -- O que você acha das críticas que vem recebendo da torcida e da imprensa?
@@ -88,6 +88,6 @@
 17-18	da	_	_	_	_	_	_	_	_
 17	de	de	ADP	<cjt>|<sam->|PRP|@<PIV	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	imprensa	imprensa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
+19	imprensa	imprensa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	ChangedBy=Issue165|SpaceAfter=No
 20	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 

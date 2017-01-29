@@ -5,18 +5,18 @@
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	acordo	acordo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	inclui	incluir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	votar	votar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	3	xcomp	_	_
+4	votar	votar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	3	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	sem	sem	ADP	PRP|@<ADVL	_	8	case	_	_
 7	novas	novo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	8	amod	_	_
-8	emendas	emenda	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obl	_	ChangedBy=Issue137
+8	emendas	emenda	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	projeto	projeto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	Orçamento	Orçamento	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 14	para	para	ADP	PRP|@N<	_	15	case	_	_
-15	95	95	NUM	<card>|NUM|M|P|@P<	NumType=Card	13	nmod	_	ChangedBy=Issue168
+15	95	95	NUM	<card>|NUM|M|P|@P<	NumType=Card	13	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 16	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Os líderes acertaram que, havendo quorum, o Orçamento de 95 só não será votado hoje se não ficar pronta a publicação do parecer aprovado na Comissão Mista de Orçamento, acolhendo cerca de R$ 2,5 bilhões em emendas.
@@ -26,10 +26,10 @@
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	líderes	líder	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	acertaram	acertar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
-4	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
+4	que	que	SCONJ	KS|@SUB	_	16	mark	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 6	havendo	haver	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	16	advcl	_	_
-7	quorum	quorum	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
+7	quorum	quorum	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	Orçamento	orçamento	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj:pass	_	_
@@ -57,7 +57,7 @@
 30	Comissão	Comissão	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	MWE=Comissão_Mista
 31	Mista	Mista	PROPN	PROP|@N<	Number=Sing	30	flat:name	_	_
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
-33	Orçamento	Orçamento	PROPN	PROP|@P<	Number=Sing	30	nmod	_	_
+33	Orçamento	Orçamento	PROPN	PROP|@P<	Number=Sing	30	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 35	acolhendo	acolher	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	27	advcl	_	_
 36	cerca	cerca	ADV	ADV|@>N	_	38	advmod	_	MWE=cerca_de
@@ -66,6 +66,6 @@
 39	2,5	2,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	40	nummod	_	ChangedBy=Issue168
 40	bilhões	bilhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	38	nmod:npmod	_	_
 41	em	em	ADP	PRP|@<ADVL	_	42	case	_	_
-42	emendas	emenda	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	35	obl	_	ChangedBy=Issue137
+42	emendas	emenda	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	35	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 43	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

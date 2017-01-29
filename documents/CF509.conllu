@@ -8,11 +8,11 @@
 2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	Malan	Malan	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149
 4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
-5	esclareceram	esclarecer	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
+5	esclareceram	esclarecer	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7	até	até	ADP	PRP|@<ADVL	_	9	case	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	momento	momento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
+9	momento	momento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 11	quanto	quanto	PRON	<interr>|<quant>|DET|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Int	14	obj	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -23,7 +23,7 @@
 17	foram	ser	AUX	<cjt>|<aux>|V|PS/MQP|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	18	aux:pass	_	_
 18	comprados	comprar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	14	conj	_	_
 19	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
-20	papéis	papel	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	18	nsubj:pass	_	_
+20	papéis	papel	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	18	nsubj:pass	_	ChangedBy=Issue165|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Ainda assim, só o anúncio de que as garantias serão adquiridas junto ao mercado poderá elevar os gastos com as futuras compras, raciocinam senadores como Espiridião Amin (PPR-SC), Ronan Tito (PMDB-MG) e Gilberto Miranda (PMDB-AM).
@@ -33,7 +33,7 @@
 # d2d = punct(Espiridião,,) -> punct(Ronan,,)  #106
 # d2d = cc(Espiridião,e) -> cc(Gilberto,e)  #106
 1	Ainda	ainda	ADV	ADV|@>A	_	2	advmod	_	MWE=Ainda_assim
-2	assim	assim	ADV	ADV|@ADVL>	_	18	advmod	_	_
+2	assim	assim	ADV	ADV|@ADVL>	_	18	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	só	só	ADV	ADV|@>N	_	6	advmod	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
@@ -56,28 +56,28 @@
 21	com	com	ADP	PRP|@N<	_	24	case	_	_
 22	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
 23	futuras	futuro	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	24	amod	_	_
-24	compras	compra	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	20	nmod	_	_
+24	compras	compra	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 26	raciocinam	raciocinar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 27	senadores	senador	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	26	nsubj	_	_
 28	como	como	ADP	<com>|PRP|@N<	_	29	case	_	_
 29	Espiridião	Espiridião	PROPN	_	Gender=Masc|Number=Sing	27	nmod	_	ChangedBy=Issue119|MWE=Espiridião_Amin|MWEPOS=PROPN
 30	Amin	Amin	PROPN	_	Number=Sing	29	flat:name	_	ChangedBy=Issue119
-31	(	(	PUNCT	PU|@PU	_	32	punct	_	_
-32	PPR-SC	PPR-SC	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	29	appos	_	_
-33	)	)	PUNCT	PU|@PU	_	32	punct	_	_
+31	(	(	PUNCT	PU|@PU	_	32	punct	_	ChangedBy=Issue165|SpaceAfter=No
+32	PPR-SC	PPR-SC	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	29	appos	_	ChangedBy=Issue165|SpaceAfter=No
+33	)	)	PUNCT	PU|@PU	_	32	punct	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 35	Ronan	Ronan	PROPN	_	Gender=Masc|Number=Sing	29	conj	_	ChangedBy=Issue119|MWE=Ronan_Tito|MWEPOS=PROPN
 36	Tito	Tito	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
-37	(	(	PUNCT	PU|@PU	_	38	punct	_	_
-38	PMDB-MG	PMDB-MG	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	35	appos	_	_
+37	(	(	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
+38	PMDB-MG	PMDB-MG	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	35	appos	_	ChangedBy=Issue165|SpaceAfter=No
 39	)	)	PUNCT	PU|@PU	_	38	punct	_	_
 40	e	e	CCONJ	<co-postnom>|KC|@CO	_	41	cc	_	d2d:#106
 41	Gilberto	Gilberto	PROPN	_	Gender=Masc|Number=Sing	29	conj	_	ChangedBy=Issue119|MWE=Gilberto_Miranda|MWEPOS=PROPN
 42	Miranda	Miranda	PROPN	_	Number=Sing	41	flat:name	_	ChangedBy=Issue119
-43	(	(	PUNCT	PU|@PU	_	44	punct	_	_
-44	PMDB-AM	PMDB-AM	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	41	appos	_	_
-45	)	)	PUNCT	PU|@PU	_	44	punct	_	_
+43	(	(	PUNCT	PU|@PU	_	44	punct	_	ChangedBy=Issue165|SpaceAfter=No
+44	PMDB-AM	PMDB-AM	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	41	appos	_	ChangedBy=Issue165|SpaceAfter=No
+45	)	)	PUNCT	PU|@PU	_	44	punct	_	ChangedBy=Issue165|SpaceAfter=No
 46	.	.	PUNCT	PU|@PU	_	26	punct	_	_
 
 # text = Assessores da equipe econômica já têm pronta parte da argumentação.
@@ -97,7 +97,7 @@
 10-11	da	_	_	_	_	_	_	_	_
 10	de	de	ADP	PRP|@N<	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	argumentação	argumentação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+12	argumentação	argumentação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 13	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = FHC e Malan deverão defender que o uso das reservas foi necessário para salvar o acordo da dívida, sem o qual o país não normalizará suas relações financeiras internacionais.
@@ -126,7 +126,7 @@
 18-19	da	_	_	_	_	_	_	_	_
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	dívida	dívida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
+20	dívida	dívida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 22	sem	sem	ADP	PRP|@N<PRED	_	28	mark	_	_
 23	o	o	DET	DET|M|S|@>N	Gender=Masc|Number=Sing	24	det	_	MWE=o_qual
@@ -138,7 +138,7 @@
 29	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur	30	det	_	_
 30	relações	relação	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	28	obj	_	_
 31	financeiras	financeiro	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	30	amod	_	_
-32	internacionais	internacional	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	30	amod	_	_
+32	internacionais	internacional	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	30	amod	_	ChangedBy=Issue165|SpaceAfter=No
 33	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Para explicar as compras em sigilo, o argumento é justamente a necessidade de evitar o encarecimento dos papéis.
@@ -150,7 +150,7 @@
 3	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 4	compras	compra	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
 5	em	em	ADP	PRP|@<ADVL	_	6	case	_	_
-6	sigilo	sigilo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue137
+6	sigilo	sigilo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	argumento	argumento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
@@ -165,7 +165,7 @@
 18-19	dos	_	_	_	_	_	_	_	_
 18	de	de	ADP	<sam->|PRP|@N<ARG	_	20	case	_	_
 19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
-20	papéis	papel	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
+20	papéis	papel	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = O acordo da dívida implica a troca dos papéis atuais por uma combinação de cinco tipos diferentes de novos papéis.
@@ -195,7 +195,7 @@
 19	diferentes	diferente	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	18	amod	_	_
 20	de	de	ADP	PRP|@N<	_	22	case	_	_
 21	novos	novo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	22	amod	_	_
-22	papéis	papel	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	_
+22	papéis	papel	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 23	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = A operação dará um desconto inicial de US$ 4,3 bilhões sobre o valor do débito.
@@ -218,7 +218,7 @@
 14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	débito	débito	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
+16	débito	débito	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 17	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Essas condições, para renegociar US$ 35 bilhões, foram aprovadas pelo Senado no final de 93.
@@ -226,13 +226,13 @@
 # sent_id = CF509-8
 # id = 2149
 1	Essas	esse	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	2	det	_	_
-2	condições	condição	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	11	nsubj:pass	_	_
+2	condições	condição	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	11	nsubj:pass	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 4	para	para	ADP	PRP|@ADVL>	_	5	mark	_	_
 5	renegociar	renegociar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	_
 6	US$	US$	SYM	_	Gender=Masc|Number=Plur	5	obj	_	_
 7	35	35	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	nummod	_	ChangedBy=Issue168
-8	bilhões	bilhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	6	nmod:npmod	_	_
+8	bilhões	bilhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	6	nmod:npmod	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 10	foram	ser	AUX	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	11	aux:pass	_	_
 11	aprovadas	aprovar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
@@ -245,6 +245,6 @@
 16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	final	final	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue137
 18	de	de	ADP	PRP|@N<	_	19	case	_	_
-19	93	93	NUM	<card>|NUM|M|P|@P<	NumType=Card	17	nmod	_	ChangedBy=Issue168
+19	93	93	NUM	<card>|NUM|M|P|@P<	NumType=Card	17	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 20	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 

@@ -3,10 +3,10 @@
 # sent_id = CP335-1
 # id = 1748
 1	Temporada	temporada	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
-2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
+2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	made	made	X	_	Gender=Fem|Number=Sing	1	amod	_	MWE=made_in_USA|MWEPOS=ADJ
 4	in	in	X	_	_	3	flat:foreign	_	_
-5	USA	usa	X	_	_	3	flat:foreign	_	_
+5	USA	usa	X	_	_	3	flat:foreign	_	ChangedBy=Issue165|SpaceAfter=No
 6	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = -- «The Edge», realizado por um neozelandês em Hollywood, Lee Tamahori, e baseado numa peça de David Mamet, acabou de estrear.«The Edge», realizado por um neozelandês em Hollywood, Lee Tamahori, e baseado numa peça de David Mamet, acabou de estrear.
@@ -17,20 +17,20 @@
 # d2d = cc(realizado,e) -> cc(baseado,e)  #106
 # d2d = punct(realizado,,) -> punct(baseado,,)  #106
 1	--	--	PUNCT	PU|@PU	_	28	punct	_	_
-2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
+2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	The	The	PROPN	_	Gender=Masc|Number=Sing	28	nsubj	_	ChangedBy=Issue119|MWE=The_Edge|MWEPOS=PROPN
-4	Edge	Edge	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
-5	»	»	PUNCT	PU|@PU	_	3	punct	_	_
+4	Edge	Edge	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+5	»	»	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 7	realizado	realizar	VERB	<first-cjt>|<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	_	_
 8	por	por	ADP	<first-cjt>|PRP|@PASS	_	10	case	_	_
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	neozelandês	neozelandês	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl:agent	_	_
 11	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
-12	Hollywood	Hollywood	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137
+12	Hollywood	Hollywood	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 14	Lee	Lee	PROPN	_	Gender=Masc|Number=Sing	10	appos	_	ChangedBy=Issue119|MWE=Lee_Tamahori|MWEPOS=PROPN
-15	Tamahori	Tamahori	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
+15	Tamahori	Tamahori	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 17	e	e	CCONJ	<co-icl>|<co-pred>|KC|@CO	_	18	cc	_	d2d:#106
 18	baseado	basear	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	7	conj	_	_
@@ -40,12 +40,12 @@
 21	peça	peça	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	David	David	PROPN	_	Gender=Masc|Number=Sing	21	nmod	_	ChangedBy=Issue119|MWE=David_Mamet|MWEPOS=PROPN
-24	Mamet	Mamet	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119
+24	Mamet	Mamet	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 26	acabou	acabar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	aux	_	_
 27	de	de	ADP	PRP|@PRT-AUX<	_	28	nmod	_	_
-28	estrear	estrear	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-29	.	.	PUNCT	PU|@PU	_	28	punct	_	_
+28	estrear	estrear	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 
 # text = Junta Anthony Hopkins e Alec Baldwin no Alaska, depois de um desastre de avião.
 # source = CETEMPúblico n=335 sec=clt sem=97b
@@ -61,7 +61,7 @@
 7-8	no	_	_	_	_	_	_	_	_
 7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
 8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	Alaska	Alaska	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137
+9	Alaska	Alaska	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 11	depois	depois	ADV	ADV|@<ADVL	_	1	advmod	_	_
 12-13	dum	_	_	_	_	_	_	_	_
@@ -69,7 +69,7 @@
 13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	desastre	desastre	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
-16	avião	avião	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
+16	avião	avião	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 17	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Hopkins é um bilionário, e pensa que Baldwin, um fotógrafo de moda, está a dormir com a sua mulher, Elle MacPherson, «top model» a tentar que a sua carreira cinematográfica pegue.
@@ -81,17 +81,17 @@
 1	Hopkins	Hopkins	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	é	ser	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 3	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	bilionário	bilionário	ADJ	<n>|<np-idf>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+4	bilionário	bilionário	ADJ	<n>|<np-idf>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 6	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	d2d:#106
 7	pensa	pensar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 8	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
-9	Baldwin	Baldwin	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
+9	Baldwin	Baldwin	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 11	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	fotógrafo	fotógrafo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	9	appos	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
-14	moda	moda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+14	moda	moda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 16	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
 17	a	a	ADP	PRP|@PRT-AUX<	_	18	nmod	_	_
@@ -99,14 +99,14 @@
 19	com	com	ADP	PRP|@<ADVL	_	22	case	_	_
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 21	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	22	det	_	_
-22	mulher	mulher	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	ChangedBy=Issue137
+22	mulher	mulher	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 24	Elle	Elle	PROPN	_	Gender=Fem|Number=Sing	22	appos	_	ChangedBy=Issue119|MWE=Elle_MacPherson|MWEPOS=PROPN
-25	MacPherson	MacPherson	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
+25	MacPherson	MacPherson	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-27	«	«	PUNCT	PU|@PU	_	29	punct	_	_
+27	«	«	PUNCT	PU|@PU	_	29	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	top	top	X	_	_	22	appos	_	MWE=top_model|MWEPOS=NOUN
-29	model	model	X	_	_	28	flat:foreign	_	_
+29	model	model	X	_	_	28	flat:foreign	_	ChangedBy=Issue165|SpaceAfter=No
 30	»	»	PUNCT	PU|@PU	_	29	punct	_	_
 31	a	a	ADP	PRP|@N<	_	32	mark	_	_
 32	tentar	tentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	acl	_	_
@@ -115,7 +115,7 @@
 35	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	36	det	_	_
 36	carreira	carreira	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	38	nsubj	_	_
 37	cinematográfica	cinematográfico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	36	amod	_	_
-38	pegue	pegar	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	ccomp	_	_
+38	pegue	pegar	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
 39	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Hopkins diz que, ao contrário dos seus filmes anteriores, que «eram tão divertidos quanto ver tinta a secar» e «bons exercícios de disciplina e economia e tudo isso», este é um filme do tipo que lhe apetece fazer agora -- acção.
@@ -129,7 +129,7 @@
 # d2d = cc(disciplina,e) -> cc(tudo,e)  #106
 1	Hopkins	Hopkins	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	41	nsubj	_	_
 2	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	que	que	SCONJ	<first-cjt>|KS|@ACC>	_	41	obj	_	_
+3	que	que	SCONJ	<first-cjt>|KS|@ACC>	_	41	obj	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 5-6	ao	_	_	_	_	_	_	_	_
 5	a	a	ADP	<sam->|PRP|@N<	_	7	case	_	_
@@ -140,10 +140,10 @@
 9	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
 10	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur	11	det	_	_
 11	filmes	filme	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	_
-12	anteriores	anterior	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	11	amod	_	_
+12	anteriores	anterior	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	11	amod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 14	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	18	nsubj	_	_
-15	«	«	PUNCT	PU|@PU	_	18	punct	_	_
+15	«	«	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	eram	ser	VERB	<cjt>|<mv>|V|IMPF|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	18	cop	_	_
 17	tão	tão	ADV	<quant>|<KOMP>|ADV|@>A	_	18	advmod	_	_
 18	divertidos	divertido	ADJ	<mv>|<first-cjt>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	11	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue91
@@ -151,10 +151,10 @@
 20	ver	ver	VERB	<cjt>|<mv>|V|INF|@ICL-KOMP<	VerbForm=Inf	17	dep	_	_
 21	tinta	tinta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
 22	a	a	ADP	PRP|@N<	_	23	mark	_	_
-23	secar	secar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	acl	_	_
+23	secar	secar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	acl	_	ChangedBy=Issue165|SpaceAfter=No
 24	»	»	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
 25	e	e	CCONJ	<co-sc>|KC|@CO	_	28	cc	_	d2d:#106
-26	«	«	PUNCT	PU|@PU	_	28	punct	_	_
+26	«	«	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 27	bons	bom	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	28	amod	_	_
 28	exercícios	exercício	NOUN	<cjt>|<np-idf>|N|M|P|@ICL-<SC	Gender=Masc|Number=Plur	18	conj	_	_
 29	de	de	ADP	PRP|@N<	_	30	case	_	_
@@ -163,8 +163,8 @@
 32	economia	economia	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	conj	_	_
 33	e	e	CCONJ	<co-sc>|KC|@CO	_	34	cc	_	d2d:#106
 34	tudo	tudo	PRON	<cjt>|<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	30	conj	_	MWE=tudo_isso
-35	isso	isso	PRON	<dem>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Dem	34	fixed	_	_
-36	»	»	PUNCT	PU|@PU	_	28	punct	_	_
+35	isso	isso	PRON	<dem>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Dem	34	fixed	_	ChangedBy=Issue165|SpaceAfter=No
+36	»	»	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 38	este	este	PRON	<dem>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	41	nsubj	_	_
 39	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	cop	_	_
@@ -180,24 +180,24 @@
 48	fazer	fazer	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	47	xcomp	_	_
 49	agora	agora	ADV	<kc>|ADV|@<ADVL	_	48	advmod	_	_
 50	--	--	PUNCT	PU|@PU	_	48	punct	_	_
-51	acção	acção	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	44	appos	_	_
+51	acção	acção	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	44	appos	_	ChangedBy=Issue165|SpaceAfter=No
 52	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = -- «U-Turn», de Oliver Stone, com Sean Penn, também acabou de ser distribuído nos ecrãs americanos.
 # source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-6
 # id = 1753
-1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
-2	U-Turn	U-Turn	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj:pass	_	_
-3	»	»	PUNCT	PU|@PU	_	2	punct	_	_
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
+2	U-Turn	U-Turn	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj:pass	_	ChangedBy=Issue165|SpaceAfter=No
+3	»	»	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 5	de	de	ADP	PRP|@N<PRED	_	6	case	_	_
 6	Oliver	Oliver	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=Oliver_Stone|MWEPOS=PROPN
-7	Stone	Stone	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
+7	Stone	Stone	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 9	com	com	ADP	PRP|@N<PRED	_	10	case	_	_
 10	Sean	Sean	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=Sean_Penn|MWEPOS=PROPN
-11	Penn	Penn	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
+11	Penn	Penn	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 13	também	também	ADV	ADV|@ADVL>	_	17	advmod	_	_
 14	acabou	acabar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux	_	_
@@ -208,7 +208,7 @@
 18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
 19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
 20	ecrãs	ecrã	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obl	_	ChangedBy=Issue137
-21	americanos	americano	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	20	amod	_	_
+21	americanos	americano	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	20	amod	_	ChangedBy=Issue165|SpaceAfter=No
 22	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Penn tem um problema no seu carro que o obriga a parar numa pequena cidade de loucos no meio do Arizona.
@@ -243,7 +243,7 @@
 23-24	do	_	_	_	_	_	_	_	_
 23	de	de	ADP	PRP|@N<	_	25	case	_	_
 24	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	Arizona	Arizona	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	_
+25	Arizona	Arizona	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = De lá não vai conseguir sair.
@@ -255,7 +255,7 @@
 3	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
 4	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
 5	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-6	sair	sair	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	5	xcomp	_	_
+6	sair	sair	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	5	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 7	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Não vai ser um filme que obrigará Stone a pedir desculpa a dezenas de pessoas nas próximas dezenas de anos, como ele ainda hoje anda a fazer depois de «J.F. K .» e de «Assassinos Natos».
@@ -284,7 +284,7 @@
 18	próximas	próximo	ADJ	<n>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	21	amod	_	_
 19	dezena	dezena	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	21	det	_	MWE=dezena_de
 20	de	de	ADP	PRP|@A<	_	21	fixed	_	_
-21	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
+21	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 23	como	como	ADV	<rel>|ADV|@ADVL>	_	29	advmod	_	_
 24	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
@@ -295,14 +295,14 @@
 29	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	advcl	_	_
 30	depois	depois	ADV	ADV|@<ADVL	_	29	advmod	_	_
 31	de	de	ADP	<first-cjt>|PRP|@A<	_	33	case	_	_
-32	«	«	PUNCT	PU|@PU	_	33	punct	_	_
-33	J.F.K.	J.F.K.	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	_
+32	«	«	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
+33	J.F.K.	J.F.K.	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 34	»	»	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
 35	e	e	CCONJ	<co-a<>|KC|@CO	_	38	cc	_	d2d:#106
 36	de	de	ADP	<cjt>|PRP|@A<	_	38	case	_	_
-37	«	«	PUNCT	PU|@PU	_	38	punct	_	_
+37	«	«	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
 38	Assassinos	Assassinos	PROPN	_	Gender=Masc|Number=Sing	33	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Assassinos_Natos|MWEPOS=PROPN
-39	Natos	Natos	PROPN	_	Number=Sing	38	flat:name	_	ChangedBy=Issue119
-40	»	»	PUNCT	PU|@PU	_	38	punct	_	_
+39	Natos	Natos	PROPN	_	Number=Sing	38	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+40	»	»	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
 41	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 

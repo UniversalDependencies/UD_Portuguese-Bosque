@@ -24,10 +24,10 @@
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	Museu	Museu	PROPN	_	Gender=Masc|Number=Sing	8	obj	_	ChangedBy=Issue119|MWE=Museu_Victor_Meirelles|MWEPOS=PROPN
 13	Victor	Victor	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
-14	Meirelles	Meirelles	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
+14	Meirelles	Meirelles	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 16	em	em	ADP	PRP|@<ADVL	_	17	case	_	_
-17	Florianópolis	Florianópolis	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
+17	Florianópolis	Florianópolis	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 18	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O museu funciona na casa em que nasceu Meirelles, autor do quadro «A Primeira Missa no Brasil», sua obra mais famosa.
@@ -44,27 +44,27 @@
 7	em	em	ADP	PRP|@N<ARG	_	9	mark	_	_
 8	que	que	PRON	<rel>|INDP|F|S|@SUB	Gender=Fem|Number=Sing|PronType=Rel	9	mark	_	_
 9	nasceu	nascer	VERB	<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
-10	Meirelles	Meirelles	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	9	nsubj	_	_
+10	Meirelles	Meirelles	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	9	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 12	autor	autor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	appos	_	_
 13-14	do	_	_	_	_	_	_	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	quadro	quadro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
-16	«	«	PUNCT	PU|@PU	_	17	punct	_	_
+16	«	«	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
 17	A	A	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	15	appos	_	MWE=A_Primeira_Missa
 18	Primeira	Primeira	PROPN	PROP|@N<	Number=Sing	17	flat:name	_	_
 19	Missa	Missa	PROPN	PROP|@N<	Number=Sing	17	flat:name	_	_
 20-21	no	_	_	_	_	_	_	_	_
 20	em	em	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Brasil	Brasil	PROPN	PROP|@P<	Number=Sing	17	nmod	_	_
-23	»	»	PUNCT	PU|@PU	_	17	punct	_	_
+22	Brasil	Brasil	PROPN	PROP|@P<	Number=Sing	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+23	»	»	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 25	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	26	det	_	_
 26	obra	obra	NOUN	<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	15	appos	_	_
 27	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	28	advmod	_	_
-28	famosa	famoso	ADJ	<COMP>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	26	amod	_	_
+28	famosa	famoso	ADJ	<COMP>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	26	amod	_	ChangedBy=Issue165|SpaceAfter=No
 29	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O prédio foi restaurado.
@@ -74,7 +74,7 @@
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	prédio	prédio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
 3	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
-4	restaurado	restaurar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+4	restaurado	restaurar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 5	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Rio Grande do Sul
@@ -101,11 +101,11 @@
 6	Escolar	Escolar	PROPN	PROP|@N<	Number=Sing	5	flat:name	_	_
 7	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	_	_
 8	lançada	lançar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
-9	anteontem	anteontem	ADV	ADV|@<ADVL	_	8	advmod	_	_
+9	anteontem	anteontem	ADV	ADV|@<ADVL	_	8	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 11	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
 12	Porto	Porto	PROPN	_	Gender=Masc|Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=Porto_Alegre|MWEPOS=PROPN
-13	Alegre	Alegre	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
+13	Alegre	Alegre	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O autor do projeto, vereador Isaac Ainhorn (PDT), disse que o objetivo é orientar os estudantes sobre segurança pessoal, no segurança no trânsito e prevenção contra as drogas.
@@ -118,14 +118,14 @@
 3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	projeto	projeto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+5	projeto	projeto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 7	vereador	vereador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	appos	_	_
 8	Isaac	Isaac	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	ChangedBy=Issue119|MWE=Isaac_Ainhorn|MWEPOS=PROPN
 9	Ainhorn	Ainhorn	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
-10	(	(	PUNCT	PU|@PU	_	11	punct	_	_
-11	PDT	PDT	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	8	appos	_	_
-12	)	)	PUNCT	PU|@PU	_	11	punct	_	_
+10	(	(	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
+11	PDT	PDT	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	8	appos	_	ChangedBy=Issue165|SpaceAfter=No
+12	)	)	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 14	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 15	que	que	SCONJ	KS|@SUB	_	19	mark	_	_
@@ -137,7 +137,7 @@
 21	estudantes	estudante	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	19	obj	_	_
 22	sobre	sobre	ADP	PRP|@<ADVL	_	23	case	_	_
 23	segurança	segurança	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	ChangedBy=Issue137
-24	pessoal	pessoal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
+24	pessoal	pessoal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 26-27	no	_	_	_	_	_	_	_	_
 26	em	em	ADP	<sam->|PRP|@<ADVL	_	28	case	_	_
@@ -151,6 +151,6 @@
 33	prevenção	prevenção	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	28	conj	_	_
 34	contra	contra	ADP	PRP|@N<	_	36	case	_	_
 35	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	_	_
-36	drogas	droga	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	33	nmod	_	_
+36	drogas	droga	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	33	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 37	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 

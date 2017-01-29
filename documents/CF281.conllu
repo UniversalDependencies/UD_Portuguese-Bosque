@@ -42,7 +42,7 @@
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
-4	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	3	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+4	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	3	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	mercado	mercado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj:pass	_	_
@@ -53,7 +53,7 @@
 12	marcado	marcar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 13	por	por	ADP	PRP|@<ADVL	_	15	case	_	_
 14	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	surpresa	surpresa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
+15	surpresa	surpresa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 16	:	:	PUNCT	PU|@PU	_	12	punct	_	_
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	gado	gado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
@@ -69,7 +69,7 @@
 27-28	nos	_	_	_	_	_	_	_	_
 27	em	em	ADP	<sam->|PRP|@<ADVL	_	29	case	_	_
 28	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
-29	leilões	leilão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	obl	_	ChangedBy=Issue137
+29	leilões	leilão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 30	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Dia 19 último, o 2º Special Girolando atingiu a média de R$ 3.600 por 44 fêmeas.
@@ -78,7 +78,7 @@
 # id = 1181
 1	Dia	dia	NOUN	<np-idf>|N|M|S|@ADVL>	Gender=Masc|Number=Sing	9	nmod	_	_
 2	19	19	NUM	<card>|NUM|M|P|@N<	NumType=Card	1	nummod	_	ChangedBy=Issue168
-3	último	último	ADJ	<NUM-ord>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
+3	último	último	ADJ	<NUM-ord>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 6	2º	2º	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	7	amod	_	_
@@ -92,8 +92,8 @@
 14	3.600	3.600	NUM	<card>|NUM|M|P|@N<	NumType=Card	13	nummod	_	ChangedBy=Issue168
 15	por	por	ADP	PRP|@<ADVL	_	17	case	_	_
 16	44	44	NUM	<card>|NUM|F|P|@>N	NumType=Card	17	nummod	_	ChangedBy=Issue168
-17	fêmeas	fêmea	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	9	obl	_	ChangedBy=Issue137
-18	.	.	PUNCT	PU|@PU	_	9	punct	_	_
+17	fêmeas	fêmea	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	9	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+18	.	.	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 
 # text = Dois dias depois, o Salute Milk, baixou a média para R$ 3.000 na venda de metade das 30 vacas holandesas que foram apresentadas para negócio.
 # source = CETENFolha n=281 cad=Agrofolha sec=agr sem=94a
@@ -101,11 +101,11 @@
 # id = 1182
 1	Dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	dias	dia	NOUN	<np-def>|N|M|P|@ADVL>	Gender=Masc|Number=Plur	9	nmod	_	_
-3	depois	depois	ADV	ADV|@N<	_	2	advmod	_	_
+3	depois	depois	ADV	ADV|@N<	_	2	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Salute	Salute	PROPN	_	Gender=Masc|Number=Sing	9	nsubj	_	ChangedBy=Issue119|MWE=Salute_Milk|MWEPOS=PROPN
-7	Milk	Milk	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
+7	Milk	Milk	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 9	baixou	baixar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
@@ -129,6 +129,6 @@
 26	foram	ser	AUX	<aux>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	27	aux:pass	_	_
 27	apresentadas	apresentar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	23	acl:relcl	_	_
 28	para	para	ADP	PRP|@<ADVL	_	29	case	_	_
-29	negócio	negócio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	obl	_	ChangedBy=Issue137
-30	.	.	PUNCT	PU|@PU	_	9	punct	_	_
+29	negócio	negócio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 

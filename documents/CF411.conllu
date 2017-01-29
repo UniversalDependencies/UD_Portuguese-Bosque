@@ -4,7 +4,7 @@
 # id = 1713
 # d2d = cc(guerras,e) -> cc(Primeira,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
-2	1920	1920	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	16	nmod	_	ChangedBy=Issue168
+2	1920	1920	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	16	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	sujeição	sujeição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
@@ -26,7 +26,7 @@
 19	liderados	liderar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	18	acl	_	_
 20	por	por	ADP	PRP|@PASS	_	21	case	_	_
 21	Mustafá	Mustafá	PROPN	_	Gender=Masc|Number=Sing	19	obl:agent	_	ChangedBy=Issue119|MWE=Mustafá_Kemal|MWEPOS=PROPN
-22	Kemal	Kemal	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
+22	Kemal	Kemal	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 24	militar	militar	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	21	appos	_	_
 25	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	26	nsubj	_	_
@@ -42,7 +42,7 @@
 33	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	Primeira	Primeira	PROPN	_	Gender=Fem|Number=Sing	29	conj	_	ChangedBy=Issue119|MWE=Primeira_Guerra_Mundial|MWEPOS=PROPN
 35	Guerra	Guerra	PROPN	_	Number=Sing	34	flat:name	_	ChangedBy=Issue119
-36	Mundial	Mundial	PROPN	_	Number=Sing	34	flat:name	_	ChangedBy=Issue119
+36	Mundial	Mundial	PROPN	_	Number=Sing	34	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 37	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Já em Ancara que se tornaria capital Kemal presidiu a grande Assembléia Nacional.
@@ -61,7 +61,7 @@
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 11	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	12	amod	_	_
 12	Assembléia	Assembléia	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	MWE=Assembléia_Nacional
-13	Nacional	Nacional	PROPN	PROP|@N<	Number=Sing	12	flat:name	_	_
+13	Nacional	Nacional	PROPN	PROP|@N<	Number=Sing	12	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Eleito presidente e primeiro-ministro, ele cuidou pessoalmente das operações militares durante as guerras grego-turcas (1920-22).
@@ -72,7 +72,7 @@
 1	Eleito	eleger	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	7	dep	_	_
 2	presidente	presidente	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
 3	e	e	CCONJ	<co-acc>|KC|@CO	_	4	cc	_	d2d:#106
-4	primeiro-ministro	primeiro-ministro	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	conj	_	_
+4	primeiro-ministro	primeiro-ministro	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 6	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
 7	cuidou	cuidar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -86,9 +86,9 @@
 14	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
 15	guerras	guerra	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	7	obl	_	ChangedBy=Issue137
 16	grego-turcas	grego-turcas	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	15	amod	_	_
-17	(	(	PUNCT	PU|@PU	_	18	punct	_	_
-18	1920-22	1920-22	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	15	appos	_	ChangedBy=Issue168
-19	)	)	PUNCT	PU|@PU	_	18	punct	_	_
+17	(	(	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
+18	1920-22	1920-22	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	15	appos	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+19	)	)	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 20	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Depois do tratado de paz de 1923, aboliu o califato, a poligamia, substituiu práticas legais islâmicas por outras de inspiração européia, adotou o alfabeto romano e o calendário gregoriano e concedeu às mulheres direito de voto.
@@ -108,14 +108,14 @@
 5	de	de	ADP	PRP|@N<ARG	_	6	case	_	_
 6	paz	paz	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 7	de	de	ADP	PRP|@N<ARG	_	8	case	_	_
-8	1923	1923	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	4	nmod	_	ChangedBy=Issue168
+8	1923	1923	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	4	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 10	aboliu	abolir	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	califato	califato	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
+12	califato	califato	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	poligamia	poligamia	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	conj	_	_
+15	poligamia	poligamia	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	conj	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	substituiu	substituir	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_
 18	práticas	prática	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	17	obj	_	_
@@ -125,7 +125,7 @@
 22	outras	outro	PRON	<KOMP>|<diff>|DET|F|P|@P<	Gender=Fem|Number=Plur	17	nmod	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	inspiração	inspiração	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	_
-25	européia	europeu	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	24	amod	_	_
+25	européia	europeu	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	24	amod	_	ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 27	adotou	adotar	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
@@ -143,6 +143,6 @@
 39	mulheres	mulher	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	36	nmod	_	_
 40	direito	direito	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	36	obj	_	_
 41	de	de	ADP	PRP|@N<	_	42	case	_	_
-42	voto	voto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	_
+42	voto	voto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 43	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 

@@ -10,12 +10,12 @@
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	John	John	PROPN	_	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue119|MWE=John_Cassavettes|MWEPOS=PROPN
 7	Cassavettes	Cassavettes	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
-8	(	(	PUNCT	PU|@PU	_	9	punct	_	_
-9	1929-89	1929-89	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	3	appos	_	ChangedBy=Issue168
-10	)	)	PUNCT	PU|@PU	_	9	punct	_	_
+8	(	(	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
+9	1929-89	1929-89	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	3	appos	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+10	)	)	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 12	por	por	ADP	PRP|@ADVL>	_	17	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
-13	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	fixed	_	_
+13	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	ator	ator	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
@@ -29,13 +29,13 @@
 24-25	da	_	_	_	_	_	_	_	_
 24	de	de	ADP	PRP|@A<	_	26	case	_	_
 25	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	câmera	câmera	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
+26	câmera	câmera	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 28	baseado	basear	VERB	<mv>|V|PCP|M|S|@ICL-<ADVL	Gender=Masc|Number=Sing|VerbForm=Part	17	advcl	_	_
 29-30	no	_	_	_	_	_	_	_	_
 29	em	em	ADP	<sam->|PRP|@<PIV	_	31	case	_	_
 30	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
-31	improviso	improviso	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	28	nmod	_	_
+31	improviso	improviso	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	28	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 32	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Cada hesitação, cada silêncio, cada desvio do olhar era um ganho na contabilidade do sublime que o diretor-autor planejava.
@@ -45,10 +45,10 @@
 # d2d = punct(hesitação,,) -> punct(desvio,,)  #106
 # d2d = punct(hesitação,,) -> punct(silêncio,,)  #106
 1	Cada	cada	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	2	det	_	_
-2	hesitação	hesitação	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	_
+2	hesitação	hesitação	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 4	cada	cada	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	5	det	_	_
-5	silêncio	silêncio	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
+5	silêncio	silêncio	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 7	cada	cada	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	8	det	_	_
 8	desvio	desvio	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
@@ -70,6 +70,6 @@
 21	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	24	obj	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	diretor-autor	diretor-autor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	_
-24	planejava	planejar	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	acl:relcl	_	_
+24	planejava	planejar	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 

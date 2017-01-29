@@ -7,7 +7,7 @@
 3	padece	padecer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	de	de	ADP	PRP|@<PIV	_	5	case	_	_
 5	males	mal	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
-6	profundos	profundo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	5	amod	_	_
+6	profundos	profundo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
 7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Mas está correto o conselheiro Paulo Planet Buarque.
@@ -21,7 +21,7 @@
 5	conselheiro	conselheiro	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	3	nsubj	_	_
 6	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	5	appos	_	ChangedBy=Issue119|MWE=Paulo_Planet_Buarque|MWEPOS=PROPN
 7	Planet	Planet	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
-8	Buarque	Buarque	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
+8	Buarque	Buarque	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Analisado isoladamente, é um imposto democrático e que, se levado à sua consequência lógica, o Imposto Único, poderia consumar a revolução tributária que o país deseja e precisa.
@@ -33,14 +33,14 @@
 # d2d = punct(democrático,,) -> punct(consumar,,)  #106
 # d2d = cc(deseja,e) -> cc(precisa,e)  #106
 1	Analisado	analisar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	6	dep	_	_
-2	isoladamente	isoladamente	ADV	ADV|@<ADVL	_	1	advmod	_	_
+2	isoladamente	isoladamente	ADV	ADV|@<ADVL	_	1	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 4	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
 5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	imposto	imposto	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 7	democrático	democrático	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
 8	e	e	CCONJ	<co-postnom>|KC|@CO	_	24	cc	_	d2d:#106
-9	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	24	nsubj	_	_
+9	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	24	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 11	se	se	SCONJ	<first-cjt>|KS|@ADVL>	_	24	advmod	_	_
 12	levado	levar	VERB	<mv>|V|PCP|M|S|@ICL-ADVL>	Gender=Masc|Number=Sing|VerbForm=Part	24	advcl	_	_
@@ -49,11 +49,11 @@
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 15	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	16	det	_	_
 16	consequência	consequência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
-17	lógica	lógico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	16	amod	_	_
+17	lógica	lógico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	16	amod	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	Imposto	Imposto	PROPN	_	Gender=Masc|Number=Sing	16	appos	_	ChangedBy=Issue119|MWE=Imposto_Único|MWEPOS=PROPN
-21	Único	Único	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
+21	Único	Único	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
 23	poderia	poder	AUX	<aux>|<cjt>|V|COND|3S|@FS-N<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	24	aux	_	_
 24	consumar	consumar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	conj	_	_
@@ -65,7 +65,7 @@
 30	país	país	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	31	nsubj	_	_
 31	deseja	desejar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	acl:relcl	_	_
 32	e	e	CCONJ	KC|@CO	_	33	cc	_	d2d:#106
-33	precisa	precisar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	conj	_	_
+33	precisa	precisar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	conj	_	ChangedBy=Issue165|SpaceAfter=No
 34	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = MARCOS CINTRA CAVALCANTI DE ALBUQUERQUE, 48, doutor em economia pela Universidade de Harvard (EUA), é vereador da cidade de São Paulo pelo PL e professor da Fundação Getúlio Vargas (SP).
@@ -77,9 +77,9 @@
 2	CINTRA	CINTRA	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 3	CAVALCANTI	CAVALCANTI	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 4	De	De	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
-5	ALBUQUERQUE	ALBUQUERQUE	PROPN	PROP	Number=Sing	1	flat:name	_	_
+5	ALBUQUERQUE	ALBUQUERQUE	PROPN	PROP	Number=Sing	1	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-7	48	48	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	appos	_	ChangedBy=Issue168
+7	48	48	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	appos	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	doutor	doutor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
 10	em	em	ADP	PRP|@N<	_	11	case	_	_
@@ -90,9 +90,9 @@
 14	Universidade	universidade	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	Harvard	Harvard	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
-17	(	(	PUNCT	PU|@PU	_	18	punct	_	_
-18	EUA	EUA	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	16	appos	_	_
-19	)	)	PUNCT	PU|@PU	_	18	punct	_	_
+17	(	(	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
+18	EUA	EUA	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	16	appos	_	ChangedBy=Issue165|SpaceAfter=No
+19	)	)	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 21	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_
 22	vereador	vereador	NOUN	<first-cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
@@ -115,9 +115,9 @@
 36	Fundação	Fundação	PROPN	_	Gender=Fem|Number=Sing	33	nmod	_	ChangedBy=Issue119|MWE=Fundação_Getúlio_Vargas|MWEPOS=PROPN
 37	Getúlio	Getúlio	PROPN	_	Number=Sing	36	flat:name	_	ChangedBy=Issue119
 38	Vargas	Vargas	PROPN	_	Number=Sing	36	flat:name	_	ChangedBy=Issue119
-39	(	(	PUNCT	PU|@PU	_	40	punct	_	_
-40	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	36	appos	_	_
-41	)	)	PUNCT	PU|@PU	_	40	punct	_	_
+39	(	(	PUNCT	PU|@PU	_	40	punct	_	ChangedBy=Issue165|SpaceAfter=No
+40	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	36	appos	_	ChangedBy=Issue165|SpaceAfter=No
+41	)	)	PUNCT	PU|@PU	_	40	punct	_	ChangedBy=Issue165|SpaceAfter=No
 42	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = Foi secretário do Planejamento e de Privatização e Parceria do município de São Paulo (administração Paulo Maluf).
@@ -143,10 +143,10 @@
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	São	São	PROPN	_	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
 16	Paulo	Paulo	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
-17	(	(	PUNCT	PU|@PU	_	18	punct	_	_
+17	(	(	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 18	administração	administração	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	15	appos	_	_
 19	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	18	appos	_	ChangedBy=Issue119|MWE=Paulo_Maluf|MWEPOS=PROPN
-20	Maluf	Maluf	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
-21	)	)	PUNCT	PU|@PU	_	18	punct	_	_
+20	Maluf	Maluf	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+21	)	)	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 22	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

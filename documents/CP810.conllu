@@ -3,9 +3,9 @@
 # sent_id = CP810-1
 # id = 4166
 # d2d = cc(dentro,e) -> cc(fora,e)  #106
-1	«	«	PUNCT	PU|@PU	_	2	punct	_	_
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Doutor	doutor	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	Dinis	Dinis	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	dep	_	_
+3	Dinis	Dinis	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	dep	_	ChangedBy=Issue165|SpaceAfter=No
 4	»	»	PUNCT	PU|@PU	_	2	punct	_	_
 5	dava	dar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 6	consultas	consulta	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	_
@@ -48,7 +48,7 @@
 14	Hospital	Hospital	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	MWE=Hospital_de_Santa_Maria
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	Santa	Santa	PROPN	_	Number=Sing	14	nmod	_	ChangedBy=Issue119|MWE=Santa_Maria|MWEPOS=PROPN
-17	Maria	Maria	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
+17	Maria	Maria	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 18	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O «doutor Dinis», segundo a Polícia Judiciária, chegou a dar consultas no estabelecimento de saúde lisboeta e a encaminhar pacientes para especialistas a quem convenceu da condição de colega.
@@ -57,15 +57,15 @@
 # id = 4169
 # d2d = cc(dar,e) -> cc(encaminhar,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-2	«	«	PUNCT	PU|@PU	_	3	punct	_	_
+2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	doutor	doutor	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
-4	Dinis	Dinis	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	3	dep	_	_
-5	»	»	PUNCT	PU|@PU	_	3	punct	_	_
+4	Dinis	Dinis	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	3	dep	_	ChangedBy=Issue165|SpaceAfter=No
+5	»	»	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 7	segundo	segundo	ADP	PRP|@ADVL>	_	9	case	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Polícia	Polícia	PROPN	_	Gender=Fem|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=Polícia_Judiciária|MWEPOS=PROPN
-10	Judiciária	Judiciária	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
+10	Judiciária	Judiciária	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 12	chegou	chegar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	_	_
 13	a	a	ADP	PRP|@<ADVL	_	14	mark	_	_
@@ -92,7 +92,7 @@
 32	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	condição	condição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	30	nmod	_	_
 34	de	de	ADP	PRP|@N<	_	35	case	_	_
-35	colega	colega	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	33	nmod	_	_
+35	colega	colega	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	33	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 36	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O director de Santa Maria admitiu ontem ter sido detectado um indivíduo que se fazia passar por médico, imediatamente «entregue» às autoridades, mas garantiu desconhecer que ele desse consultas.
@@ -119,16 +119,16 @@
 15	fazia	fazer	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	acl:relcl	_	_
 16	passar	passar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	15	xcomp	_	_
 17	por	por	ADP	PRP|@<PIV	_	18	case	_	_
-18	médico	médico	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
+18	médico	médico	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
-20	«	«	PUNCT	PU|@PU	_	22	punct	_	_
+20	«	«	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
 21	imediatamente	imediatamente	ADV	ADV|@ADVL>	_	22	advmod	_	_
-22	entregue	entregar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	12	acl	_	_
+22	entregue	entregar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	12	acl	_	ChangedBy=Issue165|SpaceAfter=No
 23	»	»	PUNCT	PU|@PU	_	22	punct	_	_
 24-25	às	_	_	_	_	_	_	_	_
 24	a	a	ADP	<sam->|PRP|@<PIV	_	26	case	_	_
 25	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
-26	autoridades	autoridade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
+26	autoridades	autoridade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
 28	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	29	cc	_	d2d:#106
 29	garantiu	garantir	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
@@ -136,6 +136,6 @@
 31	que	que	SCONJ	KS|@SUB	_	33	mark	_	_
 32	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	nsubj	_	_
 33	desse	dar	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	ccomp	_	_
-34	consultas	consulta	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	33	obj	_	_
+34	consultas	consulta	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	33	obj	_	ChangedBy=Issue165|SpaceAfter=No
 35	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
