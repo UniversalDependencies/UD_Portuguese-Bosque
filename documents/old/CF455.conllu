@@ -1,69 +1,71 @@
-# distance_from_new = 0
-# new_sent_id = CF455-1
-# sent_id = pt-ud-train.conllu#s6958/pt
-# orig_file_sentence = 070#58
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	financiamento	financiamento	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubjpass	_	_
-3	público	público	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
-4	seria	ser	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	5	auxpass	_	_
-5	baseado	basear	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-6	em	em	ADP	prp	AdpType=Prep	7	case	_	_
-7	fundos	fundo	NOUN	n|M|P	Gender=Masc|Number=Plur	5	dobj	_	_
-8	sociais	social	ADJ	adj|M|P	Gender=Masc|Number=Plur	7	amod	_	_
-9	(	(	PUNCT	punc	_	7	punct	_	_
-10	FGTS	FGTS	PROPN	prop|M|P	Gender=Masc|Number=Plur	7	nmod	_	_
-11	,	,	PUNCT	punc	_	7	punct	_	_
-12	FAT	FAT	PROPN	prop|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-13	)	)	PUNCT	punc	_	7	punct	_	_
-14	,	,	PUNCT	punc	_	7	punct	_	_
+# text = O financiamento público seria baseado em fundos sociais (FGTS, FAT), na atração de recursos de pensão e nas parcerias com a iniciativa privada.
+# forest 1
+# source CETENFolha n=455 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF455-1
+# id 1916
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	financiamento	financiamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	público	público	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
+4	seria	ser	VERB	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+5	baseado	basear	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	4	ccomp	_	_
+6	em	em	ADP	<first-cjt>|PRP|@<PIV	_	7	case	_	_
+7	fundos	fundo	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obj	_	_
+8	sociais	social	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	7	amod	_	_
+9	(	(	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+10	FGTS	FGTS	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	7	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+12	FAT	FAT	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
+13	)	)	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 15-16	na	_	_	_	_	_	_	_	_
-15	em	em	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	atração	atração	NOUN	n|F|S	Gender=Fem|Number=Sing	7	conj	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	recursos	recurso	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-21	pensão	pensão	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-22	e	e	CONJ	conj-c|<co-piv>	_	7	cc	_	_
+15	em	em	ADP	<sam->|<cjt>|PRP|@<PIV	_	17	case	_	_
+16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	atração	atração	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	conj	_	_
+18	de	de	ADP	PRP|@N<	_	19	case	_	_
+19	recursos	recurso	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
+20	de	de	ADP	PRP|@N<	_	21	case	_	_
+21	pensão	pensão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
+22	e	e	CCONJ	<co-piv>|KC|@CO	_	25	cc	_	_
 23-24	nas	_	_	_	_	_	_	_	_
-23	em	em	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
-25	parcerias	parceria	NOUN	n|F|P	Gender=Fem|Number=Plur	7	conj	_	_
-26	com	com	ADP	prp	AdpType=Prep	28	case	_	_
-27	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-28	iniciativa	iniciativa	NOUN	n|F|S	Gender=Fem|Number=Sing	25	nmod	_	_
-29	privada	privado	ADJ	adj|F|S	Gender=Fem|Number=Sing	28	amod	_	_
-30	.	.	PUNCT	punc	_	5	punct	_	_
+23	em	em	ADP	<sam->|<cjt>|PRP|@<PIV	_	25	case	_	_
+24	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
+25	parcerias	parceria	NOUN	<com>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	7	conj	_	_
+26	com	com	ADP	PRP|@N<	_	28	case	_	_
+27	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+28	iniciativa	iniciativa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	_
+29	privada	privado	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF455-2
-# sent_id = pt-ud-train.conllu#s6959/pt
-# orig_file_sentence = 070#59
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	taxação	taxação	NOUN	n|F|S	Gender=Fem|Number=Sing	24	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-4	grandes	grande	ADJ	adj|F|P	Gender=Fem|Number=Plur	5	amod	_	_
-5	fortunas	fortuna	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-6	e	e	CONJ	conj-c|<co-subj>	_	2	cc	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	dinheiro	dinheiro	NOUN	n|M|S	Gender=Masc|Number=Sing	2	conj	_	_
-9	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-10	privatização	privatização	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-11	--	--	PUNCT	punc	_	10	punct	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	estatais	estatal	NOUN	n|F|P	Gender=Fem|Number=Plur	10	nmod	_	_
-14	não-estratégicas	não-estratégico	ADJ	adj|F|P	Gender=Fem|Number=Plur	13	amod	_	_
-15	(	(	PUNCT	punc	_	10	punct	_	_
-16	exclui	excluir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	parataxis	_	_
-17	minérios	minério	NOUN	n|M|P	Gender=Masc|Number=Plur	16	dobj	_	_
-18	,	,	PUNCT	punc	_	17	punct	_	_
-19	petróleo	petróleo	NOUN	n|M|S	Gender=Masc|Number=Sing	17	conj	_	_
-20	e	e	CONJ	conj-c|<co-acc>	_	17	cc	_	_
-21	telecomunicações	telecomunicação	NOUN	n|F|P	Gender=Fem|Number=Plur	17	conj	_	_
-22	)	)	PUNCT	punc	_	10	punct	_	_
-23	,	,	PUNCT	punc	_	24	punct	_	_
-24	complementaria	complementar	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
-25	esses	esse	DET	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	26	det	_	_
-26	fundos	fundo	NOUN	n|M|P	Gender=Masc|Number=Plur	24	dobj	_	_
-27	.	.	PUNCT	punc	_	24	punct	_	_
+# text = A taxação de grandes fortunas e o dinheiro de privatização -- de estatais não-estratégicas (exclui minérios, petróleo e telecomunicações), complementaria esses fundos.
+# forest 1
+# source CETENFolha n=455 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF455-2
+# id 1917
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	taxação	taxação	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	24	nsubj	_	_
+3	de	de	ADP	PRP|@N<ARG	_	5	case	_	_
+4	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	5	amod	_	_
+5	fortunas	fortuna	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
+6	e	e	CCONJ	<co-subj>|KC|@CO	_	8	cc	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	dinheiro	dinheiro	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
+9	de	de	ADP	PRP|@N<	_	10	case	_	_
+10	privatização	privatização	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
+11	--	--	PUNCT	PU|@PU	_	10	punct	_	_
+12	de	de	ADP	PRP|@N<PRED	_	13	case	_	_
+13	estatais	estatal	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	_
+14	não-estratégicas	não-estratégico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	13	amod	_	_
+15	(	(	PUNCT	PU|@PU	_	10	punct	_	SpaceAfter=No
+16	exclui	excluir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	parataxis	_	_
+17	minérios	minério	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	obj	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+19	petróleo	petróleo	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	conj	_	_
+20	e	e	CCONJ	<co-acc>|KC|@CO	_	21	cc	_	_
+21	telecomunicações	telecomunicação	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	17	conj	_	SpaceAfter=No
+22	)	)	PUNCT	PU|@PU	_	10	punct	_	SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+24	complementaria	complementar	VERB	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+25	esses	esse	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	26	det	_	_
+26	fundos	fundo	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	24	obj	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 

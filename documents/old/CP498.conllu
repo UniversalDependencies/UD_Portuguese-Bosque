@@ -1,62 +1,66 @@
-# distance_from_new = 0
-# new_sent_id = CP498-1
-# sent_id = pt-ud-train.conllu#s2618/pt
-# orig_file_sentence = 027#18
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	mar	mar	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-3	.	.	PUNCT	punc	_	2	punct	_	_
+# text = O mar.
+# forest 1
+# source CETEMPúblico n=498 sec=nd sem=94b
+# sent_id = CP498-1
+# id 2619
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	mar	mar	NOUN	<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP498-2
-# sent_id = pt-ud-train.conllu#s2619/pt
-# orig_file_sentence = 027#19
-1	Tudo	tudo	PRON	pron-indp|<rel>|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Rel	4	nsubj	_	MWE=Tudo_o_que|MWEPOS=PRON
-2	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	compound	_	_
-3	que	que	SCONJ	SCONJ	_	1	compound	_	_
-4	tenha	ter	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	a	a	ADP	prp	AdpType=Prep	6	mark	_	_
-6	ver	ver	VERB	v-inf	VerbForm=Inf	4	xcomp	_	_
-7	com	com	ADP	prp	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	mar	mar	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
-10	,	,	PUNCT	punc	_	4	punct	_	_
+# text = Tudo o que tenha a ver com o mar, no mar, ao pé do mar.
+# forest 1
+# source CETEMPúblico n=498 sec=nd sem=94b
+# sent_id = CP498-2
+# id 2620
+1	Tudo	tudo	PRON	<rel>|<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|NumType=Card|PronType=Rel	4	nsubj	_	MWE=Tudo_o_que|MWEPOS=PRON
+2	o	o	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	1	compound	_	_
+3	que	que	SCONJ	<dem>|INDP|M|S|@N<	_	1	compound	_	_
+4	tenha	ter	VERB	<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	a	a	ADP	PRP|@PRT-AUX<	_	6	mark	_	_
+6	ver	ver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
+7	com	com	ADP	PRP|@<PIV	_	9	case	_	_
+8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	mar	mar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 11-12	no	_	_	_	_	_	_	_	_
-11	em	em	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	mar	mar	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-14	,	,	PUNCT	punc	_	4	punct	_	_
+11	em	em	ADP	<sam->|PRP|@<ADVL	_	13	case	_	_
+12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	mar	mar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 15-16	ao	_	_	_	_	_	_	_	_
-15	a	a	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-16	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-17	pé	pé	NOUN	NOUN	_	15	mwe	_	_
+15	a	a	ADP	<sam->|PRP|@N<	_	20	case	_	_
+16	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+17	pé	pé	NOUN	N|@P<	_	15	fixed	_	_
 18-19	do	_	_	_	_	_	_	_	_
-18	de	de	ADP	ADP	AdpType=Prep	16	mwe	_	_
-19	o	o	DET	art|<artd>|<-sam>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	mar	mar	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-21	.	.	PUNCT	punc	_	4	punct	_	_
+18	de	de	ADP	PRP|@N<	_	15	fixed	_	_
+19	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	mar	mar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP498-3
-# sent_id = pt-ud-train.conllu#s2620/pt
-# orig_file_sentence = 027#20
-1	Quem	quem	PRON	pron-indp|<interr>|M/F|S	Number=Sing|PronType=Int	4	nsubj	_	_
-2	é	é	NOUN	adv|<foc>	_	4	cc	_	MWE=é_que|MWEPOS=ADV
-3	que	que	SCONJ	SCONJ	_	2	mwe	_	_
-4	espera	esperar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	não	não	ADV	adv	_	6	neg	_	_
-6	encontrar	encontrar	VERB	v-inf	VerbForm=Inf	4	xcomp	_	_
+# text = Quem é que espera não encontrar nestas férias?
+# forest 1
+# source CETEMPúblico n=498 sec=nd sem=94b
+# sent_id = CP498-3
+# id 2621
+1	Quem	quem	PRON	<interr>|INDP|M/F|S|@SUBJ>	Number=Sing|PronType=Int	4	nsubj	_	_
+2	é	é	NOUN	PRP|@ADVL>	_	4	advmod	_	MWE=é_que|MWEPOS=ADV
+3	que	que	SCONJ	N|M|S|@P<	_	2	fixed	_	_
+4	espera	esperar	VERB	<mv>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	não	não	ADV	_	Polarity=Neg	6	advmod	_	_
+6	encontrar	encontrar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	4	xcomp	_	_
 7-8	nestas	_	_	_	_	_	_	_	_
-7	em	em	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	estas	este	DET	pron-det|<-sam>|<dem>|F|P	Gender=Fem|Number=Plur|PronType=Dem	9	det	_	_
-9	férias	férias	NOUN	n|F|P	Gender=Fem|Number=Plur	6	nmod	_	_
-10	?	?	PUNCT	punc	_	4	punct	_	_
+7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
+8	estas	este	DET	<-sam>|<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	9	det	_	_
+9	férias	férias	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	6	obl	_	SpaceAfter=No
+10	?	?	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP498-4
-# sent_id = pt-ud-train.conllu#s2621/pt
-# orig_file_sentence = 027#21
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-2	meu	meu	DET	pron-det|<poss|1S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs	3	det	_	_
-3	porteiro	porteiro	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-4	.	.	PUNCT	punc	_	3	punct	_	_
+# text = O meu porteiro.
+# forest 1
+# source CETEMPúblico n=498 sec=nd sem=94b
+# sent_id = CP498-4
+# id 2622
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs	3	det	_	_
+3	porteiro	porteiro	NOUN	<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

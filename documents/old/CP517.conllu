@@ -1,250 +1,256 @@
-# distance_from_new = 2
-# new_sent_id = CP517-2
-# sent_id = pt-ud-train.conllu#s2702/pt
-# orig_file_sentence = 028#2
-1	João	João	PROPN	prop|M|S	_	0	root	_	MWE=João_Pinto|MWEPOS=PROPN
-2	Pinto	Pinto	PROPN	PROPN	_	1	name	_	_
-3	--	--	PUNCT	punc	_	1	punct	_	_
-4	António	António	PROPN	prop|M|S	_	8	nsubj	_	MWE=António_Oliveira|MWEPOS=PROPN
-5	Oliveira	Oliveira	PROPN	PROPN	_	4	name	_	_
-6	não	não	ADV	adv	_	9	neg	_	_
-7	lhe	ele	PRON	pron-pers|M|3S|DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	dobj	_	_
-8	deverá	dever	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	parataxis	_	_
-9	fazer	fazer	VERB	v-inf	VerbForm=Inf	8	xcomp	_	_
-10	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-11	mesma	mesmo	DET	pron-det|<diff>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	12	det	_	_
-12	surpresa	surpresa	NOUN	n|F|S	Gender=Fem|Number=Sing	9	dobj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	Carlos	Carlos	PROPN	prop|M|S	_	12	nmod	_	MWE=Carlos_Queiroz|MWEPOS=PROPN
-15	Queiroz	Queiroz	PROPN	PROPN	_	14	name	_	_
-16	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	29	nsubj	_	_
-17	,	,	PUNCT	punc	_	29	punct	_	_
-18	para	para	ADP	prp	AdpType=Prep	19	case	_	_
-19	admiração	admiração	NOUN	n|F|S	Gender=Fem|Number=Sing	29	nmod	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-21	todos	todo	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	19	det	_	_
-22	,	,	PUNCT	punc	_	29	punct	_	_
-23	em	em	ADP	prp	AdpType=Prep	24	case	_	_
-24	Junho	junho	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
+# text = João Pinto -- António Oliveira não lhe deverá fazer a mesma surpresa de Carlos Queiroz que, para admiração de todos, em Junho deste ano o remeteu para o banco dos suplentes no encontro com a Estónia, de apuramento para o «Mundial» dos Estados Unidos, trocando-o por Abel Xavier.
+# forest 1
+# source CETEMPúblico n=517 sec=des sem=94b
+# sent_id = CP517-2
+# id 2703
+1	João	João	PROPN	_	_	0	root	_	MWE=João_Pinto|MWEPOS=PROPN
+2	Pinto	Pinto	PROPN	_	_	1	flat	_	_
+3	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+4	António	António	PROPN	_	_	8	nsubj	_	MWE=António_Oliveira|MWEPOS=PROPN
+5	Oliveira	Oliveira	PROPN	_	_	4	flat	_	_
+6	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
+7	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
+8	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	parataxis	_	_
+9	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
+10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+11	mesma	mesmo	DET	<diff>|<KOMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	12	det	_	_
+12	surpresa	surpresa	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	Carlos	Carlos	PROPN	_	_	12	nmod	_	MWE=Carlos_Queiroz|MWEPOS=PROPN
+15	Queiroz	Queiroz	PROPN	_	_	14	flat	_	_
+16	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	29	nsubj	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+18	para	para	ADP	PRP|@ADVL>	_	19	case	_	_
+19	admiração	admiração	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	29	obl	_	_
+20	de	de	ADP	PRP|@N<	_	21	case	_	_
+21	todos	todo	DET	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	19	det	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+23	em	em	ADP	PRP|@ADVL>	_	24	case	_	_
+24	Junho	junho	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	obl	_	_
 25-26	deste	_	_	_	_	_	_	_	_
-25	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	este	este	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	27	det	_	_
-27	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nmod	_	_
-28	o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	dobj	_	_
-29	remeteu	remeter	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl	_	_
-30	para	para	ADP	prp	AdpType=Prep	32	case	_	_
-31	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	banco	banco	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
+25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
+26	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	27	det	_	_
+27	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
+28	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	obj	_	_
+29	remeteu	remeter	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	acl	_	_
+30	para	para	ADP	PRP|@<OA	_	32	case	_	_
+31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	banco	banco	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	29	obl	_	_
 33-34	dos	_	_	_	_	_	_	_	_
-33	de	de	ADP	prp|<sam->	AdpType=Prep	35	case	_	_
-34	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_
-35	suplentes	suplente	NOUN	n|M|P	Gender=Masc|Number=Plur	32	nmod	_	_
+33	de	de	ADP	<sam->|PRP|@N<	_	35	case	_	_
+34	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_
+35	suplentes	suplente	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	_
 36-37	no	_	_	_	_	_	_	_	_
-36	em	em	ADP	prp|<sam->	AdpType=Prep	38	case	_	_
-37	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
-38	encontro	encontro	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
-39	com	com	ADP	prp	AdpType=Prep	41	case	_	_
-40	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	Estónia	Estónia	PROPN	prop|F|S	Gender=Fem|Number=Sing	38	nmod	_	_
-42	,	,	PUNCT	punc	_	38	punct	_	_
-43	de	de	ADP	prp	AdpType=Prep	44	case	_	_
-44	apuramento	apuramento	NOUN	n|M|S	Gender=Masc|Number=Sing	38	nmod	_	_
-45	para	para	ADP	prp	AdpType=Prep	48	case	_	_
-46	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
-47	«	«	PUNCT	punc	_	48	punct	_	_
-48	Mundial	mundial	ADJ	adj|<prop>|<n>|M|S	Gender=Masc|Number=Sing	44	amod	_	_
-49	»	»	PUNCT	punc	_	48	punct	_	_
+36	em	em	ADP	<sam->|PRP|@<ADVL	_	38	case	_	_
+37	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+38	encontro	encontro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	29	obl	_	_
+39	com	com	ADP	PRP|@N<	_	41	case	_	_
+40	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+41	Estónia	Estónia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	38	nmod	_	SpaceAfter=No
+42	,	,	PUNCT	PU|@PU	_	38	punct	_	_
+43	de	de	ADP	PRP|@N<PRED	_	44	case	_	_
+44	apuramento	apuramento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	38	nmod	_	_
+45	para	para	ADP	PRP|@N<	_	48	case	_	_
+46	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
+47	«	«	PUNCT	PU|@PU	_	48	punct	_	SpaceAfter=No
+48	Mundial	mundial	ADJ	<prop>|<n>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	44	amod	_	SpaceAfter=No
+49	»	»	PUNCT	PU|@PU	_	48	punct	_	_
 50-51	dos	_	_	_	_	_	_	_	_
-50	de	de	ADP	prp|<sam->	AdpType=Prep	52	case	_	_
-51	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_
-52	Estados	Estados	PROPN	prop|M|P	_	48	nmod	_	MWE=Estados_Unidos|MWEPOS=PROPN
-53	Unidos	Unidos	PROPN	PROPN	_	52	name	_	_
-54	,	,	PUNCT	punc	_	29	punct	_	_
+50	de	de	ADP	<sam->|PRP|@N<	_	52	case	_	_
+51	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_
+52	Estados	Estados	PROPN	PROP|M|P|@P<	_	48	nmod	_	MWE=Estados_Unidos|MWEPOS=PROPN
+53	Unidos	Unidos	PROPN	PROP|@N<	_	52	flat	_	SpaceAfter=No
+54	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 55-56	trocando-o	_	_	_	_	_	_	_	_
 55	trocando	trocar	VERB	v-ger|<hyfen>	Hyph=Yes|VerbForm=Ger	29	advcl	_	_
-56	-o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	55	dobj	_	_
-57	por	por	ADP	prp	AdpType=Prep	58	case	_	_
-58	Abel	Abel	PROPN	prop|M|S	_	55	iobj	_	MWE=Abel_Xavier|MWEPOS=PROPN
-59	Xavier	Xavier	PROPN	PROPN	_	58	name	_	_
-60	.	.	PUNCT	punc	_	1	punct	_	_
+56	-o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	55	obj	_	_
+57	por	por	ADP	PRP|@<PIV	_	58	case	_	_
+58	Abel	Abel	PROPN	_	_	55	iobj	_	MWE=Abel_Xavier|MWEPOS=PROPN
+59	Xavier	Xavier	PROPN	_	_	58	flat	_	SpaceAfter=No
+60	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP517-3
-# sent_id = pt-ud-train.conllu#s2703/pt
-# orig_file_sentence = 028#3
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	capitão	capitão	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nsubj	_	_
-3	portista	portista	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
-4	continua	continuar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = O capitão portista continua numa forma excelente e, apesar dos anos, não perdeu a velocidade, percorrendo o seu flanco com grande à-vontade.
+# forest 1
+# source CETEMPúblico n=517 sec=des sem=94b
+# sent_id = CP517-3
+# id 2704
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	capitão	capitão	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	portista	portista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
+4	continua	continuar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5-6	numa	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	uma	um	DET	art|<-sam>|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	forma	forma	NOUN	n|F|S	Gender=Fem|Number=Sing	4	dobj	_	_
-8	excelente	excelente	ADJ	adj|F|S	Gender=Fem|Number=Sing	7	amod	_	_
-9	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	4	cc	_	_
-10	,	,	PUNCT	punc	_	17	punct	_	_
-11	apesar	apesar	ADV	prp|<sam->	AdpType=Prep	14	case	_	MWE=apesar_de|MWEPOS=ADP
+5	em	em	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	7	case	_	_
+6	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	forma	forma	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obj	_	_
+8	excelente	excelente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	_
+9	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+11	apesar	apesar	ADV	ADV|@ADVL>	_	14	case	_	MWE=apesar_de|MWEPOS=ADP
 12-13	dos	_	_	_	_	_	_	_	_
-12	de	de	ADP	ADP	AdpType=Prep	11	mwe	_	_
-13	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
-14	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-15	,	,	PUNCT	punc	_	17	punct	_	_
-16	não	não	ADV	adv	_	17	neg	_	_
-17	perdeu	perder	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
-18	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	velocidade	velocidade	NOUN	n|F|S	Gender=Fem|Number=Sing	17	dobj	_	_
-20	,	,	PUNCT	punc	_	17	punct	_	_
-21	percorrendo	percorrer	VERB	v-ger	VerbForm=Ger	17	advcl	_	_
-22	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-23	seu	seu	DET	pron-det|<poss|3S>|<si>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	24	det	_	_
-24	flanco	flanco	NOUN	n|M|S	Gender=Masc|Number=Sing	21	dobj	_	_
-25	com	com	ADP	prp	AdpType=Prep	27	case	_	_
-26	grande	grande	ADJ	adj|M|S	Gender=Masc|Number=Sing	27	amod	_	_
-27	à-vontade	à-vontade	NOUN	n|M|S	Gender=Masc|Number=Sing	21	nmod	_	_
-28	.	.	PUNCT	punc	_	4	punct	_	_
+12	de	de	ADP	PRP|@A<	_	11	fixed	_	_
+13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+14	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obl	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+16	não	não	ADV	_	Polarity=Neg	17	advmod	_	_
+17	perdeu	perder	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
+18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	velocidade	velocidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+21	percorrendo	percorrer	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	17	advcl	_	_
+22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+23	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	24	det	_	_
+24	flanco	flanco	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	21	obj	_	_
+25	com	com	ADP	PRP|@<ADVL	_	27	case	_	_
+26	grande	grande	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	27	amod	_	_
+27	à-vontade	à-vontade	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	21	obl	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP517-4
-# sent_id = pt-ud-train.conllu#s2704/pt
-# orig_file_sentence = 028#4
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	jovem	jovem	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	sportinguista	sportinguista	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
-4	Nélson	Nélson	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-5	terá	ter	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	mark	_	_
-7	esperar	esperar	VERB	v-inf	VerbForm=Inf	5	xcomp	_	_
-8	.	.	PUNCT	punc	_	5	punct	_	_
+# text = O jovem sportinguista Nélson terá de esperar.
+# forest 1
+# source CETEMPúblico n=517 sec=des sem=94b
+# sent_id = CP517-4
+# id 2705
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	jovem	jovem	ADJ	<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	sportinguista	sportinguista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
+4	Nélson	Nélson	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	nmod	_	_
+5	terá	ter	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+6	de	de	ADP	PRP|@PRT-AUX<	_	7	mark	_	_
+7	esperar	esperar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP517-6
-# sent_id = pt-ud-train.conllu#s2705/pt
-# orig_file_sentence = 028#5
-1	Hélder	Hélder	PROPN	prop|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	--	--	PUNCT	punc	_	1	punct	_	_
-3	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	central	central	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
-5	benfiquista	benfiquista	ADJ	adj|F|S	Gender=Fem|Number=Sing	4	amod	_	_
-6	terá	ter	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	parataxis	_	_
-7	mais	muito	DET	pron-det|<quant>|<KOMP>|F|P	Degree=Cmp|Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	_
-8	dificuldades	dificuldade	NOUN	n|F|P	Gender=Fem|Number=Plur	6	dobj	_	_
-9	em	em	ADP	prp	AdpType=Prep	10	mark	_	_
-10	conseguir	conseguir	VERB	v-inf	VerbForm=Inf	8	acl	_	_
-11	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-12	«	«	PUNCT	punc	_	13	punct	_	_
-13	cadeira	cadeira	NOUN	n|F|S	Gender=Fem|Number=Sing	10	dobj	_	_
-14	»	»	PUNCT	punc	_	13	punct	_	_
+# text = Hélder -- O central benfiquista terá mais dificuldades em conseguir uma «cadeira» no «onze» do seu clube -- onde os lugares parecem estar destinados à dupla brasileira Mozer / Paulão -- do que na equipa nacional.
+# forest 1
+# source CETEMPúblico n=517 sec=des sem=94b
+# sent_id = CP517-6
+# id 2706
+1	Hélder	Hélder	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	central	central	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
+5	benfiquista	benfiquista	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	_
+6	terá	ter	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	parataxis	_	_
+7	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|P|@>N	Degree=Cmp|Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	_
+8	dificuldades	dificuldade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	6	obj	_	_
+9	em	em	ADP	PRP|@N<	_	10	mark	_	_
+10	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
+11	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+12	«	«	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
+13	cadeira	cadeira	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	SpaceAfter=No
+14	»	»	PUNCT	PU|@PU	_	13	punct	_	_
 15-16	no	_	_	_	_	_	_	_	_
-15	em	em	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-16	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	advmod	_	_
-17	«	«	PUNCT	punc	_	18	punct	_	_
-18	onze	onze	NUM	num|<card>|<n>|M|P	Gender=Masc|Number=Plur|NumType=Card	10	advmod	_	_
-19	»	»	PUNCT	punc	_	18	punct	_	_
+15	em	em	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
+16	o	o	DET	<-sam>|<artd>|ART|M|S|@>A	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	advmod	_	_
+17	«	«	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
+18	onze	onze	NUM	<card>|<n>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	10	advmod	_	SpaceAfter=No
+19	»	»	PUNCT	PU|@PU	_	18	punct	_	_
 20-21	do	_	_	_	_	_	_	_	_
-20	de	de	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-21	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-22	seu	seu	DET	pron-det|<poss|3S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	_	_
-23	clube	clube	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
-24	--	--	PUNCT	punc	_	23	punct	_	_
-25	onde	onde	ADV	adv|<rel>|<ks>	PronType=Rel	30	advmod	_	_
-26	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
-27	lugares	lugar	NOUN	n|M|P	Gender=Masc|Number=Plur	28	nsubj	_	_
-28	parecem	parecer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	acl	_	_
-29	estar	estar	VERB	v-inf	VerbForm=Inf	30	cop	_	_
-30	destinados	destinar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	28	xcomp	_	_
+20	de	de	ADP	<sam->|PRP|@A<	_	23	case	_	_
+21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+22	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	23	det	_	_
+23	clube	clube	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	_
+24	--	--	PUNCT	PU|@PU	_	23	punct	_	_
+25	onde	onde	ADV	<rel>|ADV|@ADVL>	PronType=Rel	30	advmod	_	_
+26	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
+27	lugares	lugar	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	28	nsubj	_	_
+28	parecem	parecer	VERB	<aux>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	acl	_	_
+29	estar	estar	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	30	cop	_	_
+30	destinados	destinar	VERB	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	28	xcomp	_	_
 31-32	à	_	_	_	_	_	_	_	_
-31	a	a	ADP	prp|<sam->	AdpType=Prep	33	case	_	_
-32	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	dupla	dupla	NOUN	n|F|S	Gender=Fem|Number=Sing	30	dobj	_	_
-34	brasileira	brasileiro	ADJ	adj|F|S	Gender=Fem|Number=Sing	33	amod	_	_
-35	Mozer	Mozer	PROPN	prop|M|S	Gender=Masc|Number=Sing	33	nmod	_	_
-36	/	/	SYM	punc	_	33	cc	_	_
-37	Paulão	Paulão	PROPN	prop|M|S	Gender=Masc|Number=Sing	33	nmod	_	_
-38	--	--	PUNCT	punc	_	23	punct	_	_
+31	a	a	ADP	<sam->|PRP|@<PIV	_	33	case	_	_
+32	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+33	dupla	dupla	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	30	obj	_	_
+34	brasileira	brasileiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	33	amod	_	_
+35	Mozer	Mozer	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	33	nmod	_	_
+36	/	/	PUNCT	PU|@PU	_	37	punct	_	_
+37	Paulão	Paulão	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	35	conj	_	_
+38	--	--	PUNCT	PU|@PU	_	23	punct	_	_
 39-40	do	_	_	_	_	_	_	_	_
-39	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-40	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-41	que	que	SCONJ	SCONJ	_	39	mwe	_	_
+39	de	de	ADP	<sam->|PRP|@COM	_	8	case	_	_
+40	o	o	DET	<dem>|<-sam>|DET|M|S|@P<	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+41	que	que	SCONJ	<rel>|INDP|M|S|@N<	_	39	fixed	_	_
 42-43	na	_	_	_	_	_	_	_	_
-42	em	em	ADP	prp|<sam->	AdpType=Prep	44	case	_	_
-43	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	44	det	_	_
-44	equipa	equipa	NOUN	n|F|S	Gender=Fem|Number=Sing	40	nmod	_	_
-45	nacional	nacional	ADJ	adj|F|S	Gender=Fem|Number=Sing	44	amod	_	_
-46	.	.	PUNCT	punc	_	1	punct	_	_
+42	em	em	ADP	<sam->|<first-cjt>|PRP|@KOMP<	_	44	case	_	_
+43	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	44	det	_	_
+44	equipa	equipa	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	39	obl	_	_
+45	nacional	nacional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	44	amod	_	SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP517-7
-# sent_id = pt-ud-train.conllu#s2706/pt
-# orig_file_sentence = 028#6
-1	Uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	situação	situação	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-3	complicada	complicar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
-4	porque	porque	SCONJ	conj-s	_	8	mark	_	_
-5	Hélder	Hélder	PROPN	prop|M|S	Gender=Masc|Number=Sing	8	nsubj	_	_
-6	se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	iobj	_	_
-7	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
-8	mostrado	mostrar	VERB	v-pcp	VerbForm=Part	2	acl	_	_
-9	,	,	PUNCT	punc	_	8	punct	_	_
+# text = Uma situação complicada porque Hélder se tem mostrado, neste início do campeonato, como um dos melhores jogadores do Benfica.
+# forest 1
+# source CETEMPúblico n=517 sec=des sem=94b
+# sent_id = CP517-7
+# id 2707
+1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	situação	situação	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+3	complicada	complicar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
+4	porque	porque	SCONJ	KS|@SUB	_	7	mark	_	_
+5	Hélder	Hélder	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
+6	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	iobj	_	_
+7	tem	ter	VERB	<aux>|<se-passive>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
+8	mostrado	mostrar	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	7	ccomp	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 10-11	neste	_	_	_	_	_	_	_	_
-10	em	em	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	este	este	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
-12	início	início	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
+10	em	em	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
+11	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
+12	início	início	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	_
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	campeonato	campeonato	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-16	,	,	PUNCT	punc	_	8	punct	_	_
-17	como	como	ADV	adv|<prp>	_	18	cop	_	_
-18	um	um	NUM	num|<card>|<n>|M|S	Gender=Masc|Number=Sing|NumType=Card	8	xcomp	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	campeonato	campeonato	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+17	como	como	ADV	<prd>|PRP|@<OC	_	18	cop	_	_
+18	um	um	NUM	<card>|<n>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	8	xcomp	_	_
 19-20	dos	_	_	_	_	_	_	_	_
-19	de	de	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-20	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
-21	melhores	bom	ADJ	adj|<KOMP>|<SUP>|M|P	Degree=Sup|Gender=Masc|Number=Plur	22	amod	_	_
-22	jogadores	jogador	NOUN	n|M|P	Gender=Masc|Number=Plur	18	nmod	_	_
+19	de	de	ADP	<sam->|PRP|@A<	_	22	case	_	_
+20	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+21	melhores	bom	ADJ	<KOMP>|<SUP>|<COMP>|ADJ|M|P|@>N	Degree=Sup|Gender=Masc|Number=Plur	22	amod	_	_
+22	jogadores	jogador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	18	obl	_	_
 23-24	do	_	_	_	_	_	_	_	_
-23	de	de	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	Benfica	Benfica	PROPN	prop|M|S	Gender=Masc|Number=Sing	22	nmod	_	_
-26	.	.	PUNCT	punc	_	2	punct	_	_
+23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
+24	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+25	Benfica	Benfica	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP517-8
-# sent_id = pt-ud-train.conllu#s2707/pt
-# orig_file_sentence = 028#7
-1	Se	se	SCONJ	conj-s	_	12	mark	_	_
-2	,	,	PUNCT	punc	_	12	punct	_	_
-3	como	como	ADP	prp	AdpType=Prep	5	mark	_	_
-4	se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	5	nsubj	_	_
-5	prevê	prever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
-6	,	,	PUNCT	punc	_	12	punct	_	_
-7	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Irlanda	Irlanda	PROPN	prop|F|S	_	12	nsubj	_	MWE=Irlanda_do_Norte|MWEPOS=PROPN
+# text = Se, como se prevê, a Irlanda do Norte jogar com dois pontas-de-lança, Hélder terá funções de marcação e aí deve jogar mais em antecipação para evitar descuidos por alguma lentidão.
+# forest 1
+# source CETEMPúblico n=517 sec=des sem=94b
+# sent_id = CP517-8
+# id 2708
+1	Se	se	SCONJ	KS|@SUB	_	12	mark	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+3	como	como	ADP	<rel>|ADV|@ADVL>	_	5	mark	_	_
+4	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs	5	nsubj	_	_
+5	prevê	prever	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Irlanda	Irlanda	PROPN	PROP|F|S|@SUBJ>	_	12	nsubj	_	MWE=Irlanda_do_Norte|MWEPOS=PROPN
 9-10	do	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Norte	Norte	PROPN	PROPN	_	8	name	_	_
-12	jogar	jogar	VERB	v-inf|3S	Number=Sing|Person=3|VerbForm=Inf	18	advcl	_	_
-13	com	com	ADP	prp	AdpType=Prep	15	case	_	_
-14	dois	dois	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	15	nummod	_	_
-15	pontas-de-lança	ponta-de-lança	NOUN	n|F|P	Gender=Fem|Number=Plur	12	nmod	_	_
-16	,	,	PUNCT	punc	_	18	punct	_	_
-17	Hélder	Hélder	PROPN	prop|M|S	Gender=Masc|Number=Sing	18	nsubj	_	_
-18	terá	ter	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-19	funções	função	NOUN	n|F|P	Gender=Fem|Number=Plur	18	dobj	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-21	marcação	marcação	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-22	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	18	cc	_	_
-23	aí	aí	ADV	adv|<kc>	_	25	advmod	_	_
-24	deve	dever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
-25	jogar	jogar	VERB	v-inf	VerbForm=Inf	24	xcomp	_	_
-26	mais	muito	PRON	pron-det|<quant>|<KOMP>|M/F|S/P	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	25	advmod	_	_
-27	em	em	ADP	prp	AdpType=Prep	26	case	_	_
-28	antecipação	antecipação	NOUN	n|F|S	Gender=Fem|Number=Sing	26	nmod	_	_
-29	para	para	ADP	prp	AdpType=Prep	30	mark	_	_
-30	evitar	evitar	VERB	v-inf	VerbForm=Inf	25	advcl	_	_
-31	descuidos	descuido	NOUN	n|M|P	Gender=Masc|Number=Plur	30	dobj	_	_
-32	por	por	ADP	prp	AdpType=Prep	34	case	_	_
-33	alguma	algum	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	34	det	_	_
-34	lentidão	lentidão	NOUN	n|F|S	Gender=Fem|Number=Sing	31	nmod	_	_
-35	.	.	PUNCT	punc	_	18	punct	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Norte	Norte	PROPN	PROP|@P<	_	8	flat	_	_
+12	jogar	jogar	VERB	<mv>|V|INF|3S|@ICL-ADVL>	Number=Sing|Person=3|VerbForm=Inf	18	advcl	_	_
+13	com	com	ADP	PRP|@<ADVL	_	15	case	_	_
+14	dois	dois	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	15	nummod	_	_
+15	pontas-de-lança	ponta-de-lança	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	12	obl	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+17	Hélder	Hélder	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
+18	terá	ter	VERB	<first-cjt>|<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+19	funções	função	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	18	obj	_	_
+20	de	de	ADP	PRP|@N<	_	21	case	_	_
+21	marcação	marcação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
+22	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	_
+23	aí	aí	ADV	<kc>|ADV|@ADVL>	_	25	advmod	_	_
+24	deve	dever	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
+25	jogar	jogar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	24	xcomp	_	_
+26	mais	muito	PRON	<quant>|<KOMP>|DET|M/F|S/P|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	25	advmod	_	_
+27	em	em	ADP	PRP|@<ADVL	_	26	case	_	_
+28	antecipação	antecipação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	obl	_	_
+29	para	para	ADP	PRP|@<ADVL	_	30	mark	_	_
+30	evitar	evitar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	25	advcl	_	_
+31	descuidos	descuido	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	30	obj	_	_
+32	por	por	ADP	PRP|@N<	_	34	case	_	_
+33	alguma	algum	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	34	det	_	_
+34	lentidão	lentidão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	31	nmod	_	SpaceAfter=No
+35	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 

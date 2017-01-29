@@ -1,82 +1,86 @@
-# distance_from_new = 0
-# new_sent_id = CF231-1
-# sent_id = pt-ud-train.conllu#s6038/pt
-# orig_file_sentence = 061#38
-1	Romênia	Romênia	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nsubj	_	_
-2	teme	temer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	cansaço	cansaço	NOUN	n|M|S	Gender=Masc|Number=Sing	2	dobj	_	_
-4	provocado	provocar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
-5	por	por	ADP	prp	AdpType=Prep	6	case	_	_
-6	viagens	viagem	NOUN	n|F|P	Gender=Fem|Number=Plur	4	nmod	_	_
+# text = Romênia teme cansaço provocado por viagens
+# forest 1
+# source CETENFolha n=231 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF231-1
+# id 996
+1	Romênia	Romênia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
+2	teme	temer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	cansaço	cansaço	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
+4	provocado	provocar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
+5	por	por	ADP	PRP|@<ADVL	_	6	case	_	_
+6	viagens	viagem	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obl	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF231-3
-# sent_id = pt-ud-train.conllu#s6039/pt
-# orig_file_sentence = 061#39
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	adversário	adversário	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
-3	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	7	dobj	_	_
-4	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-5	romenos	romeno	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nsubj	_	_
-6	mais	mais	ADV	adv	_	7	advmod	_	_
-7	temem	temer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
-8	não	não	ADV	adv	_	11	neg	_	_
-9	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
-10	nenhuma	nenhum	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
-11	seleção	seleção	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-12	,	,	PUNCT	punc	_	11	punct	_	_
-13	mas	mas	CONJ	conj-c|<co-sc>	_	11	cc	_	_
-14	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	cansaço	cansaço	NOUN	n|M|S	Gender=Masc|Number=Sing	11	conj	_	_
-16	.	.	PUNCT	punc	_	11	punct	_	_
+# text = O adversário que os romenos mais temem não é nenhuma seleção, mas o cansaço.
+# forest 1
+# source CETENFolha n=231 cad=Caderno Especial sec=nd sem=94b &E
+# sent_id = CF231-3
+# id 997
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	adversário	adversário	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
+3	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	7	obj	_	_
+4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	romenos	romeno	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
+6	mais	mais	ADV	<KOMP>|<quant>|ADV|@ADVL>	_	7	advmod	_	_
+7	temem	temer	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
+8	não	não	ADV	ADV|@ADVL>	Polarity=Neg	11	advmod	_	_
+9	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+10	nenhuma	nenhum	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
+11	seleção	seleção	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+13	mas	mas	CCONJ	<co-fcl>|<co-sc>|KC|@CO	_	15	cc	_	_
+14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	cansaço	cansaço	NOUN	<cjt>|<np-def>|N|M|S|@FS-STA	Gender=Masc|Number=Sing	11	conj	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF231-4
-# sent_id = pt-ud-train.conllu#s6040/pt
-# orig_file_sentence = 061#40
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	fuso	fuso	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nsubj	_	_
-3	horário	horário	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
-4	será	ser	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	cop	_	_
-5	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-6	duro	duro	ADJ	adj|M|S	Gender=Masc|Number=Sing	7	amod	_	_
-7	obstáculo	obstáculo	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-8	.	.	PUNCT	punc	_	7	punct	_	_
+# text = O fuso horário será um duro obstáculo.
+# forest 1
+# source CETENFolha n=231 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF231-4
+# id 998
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	fuso	fuso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
+3	horário	horário	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
+4	será	ser	AUX	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	cop	_	_
+5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+6	duro	duro	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	7	amod	_	_
+7	obstáculo	obstáculo	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF231-5
-# sent_id = pt-ud-train.conllu#s6041/pt
-# orig_file_sentence = 061#41
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	tabela	tabela	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nsubj	_	_
+# text = A tabela da primeira fase prevê uma viagem Los AngelesDetroitLos Angeles para a seleção romena, num espaço de oito dias, na primeira fase.
+# forest 1
+# source CETENFolha n=231 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF231-5
+# id 999
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	tabela	tabela	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-5	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	6	amod	_	_
-6	fase	fase	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-7	prevê	prever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-8	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	viagem	viagem	NOUN	n|F|S	Gender=Fem|Number=Sing	7	dobj	_	_
-10	Los	Los	DET	prop|F|S	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	MWE=Los_AngelesDetroitLos_Angeles|MWEPOS=PROPN
-11	AngelesDetroitLos	AngelesDetroitLos	PROPN	PROPN	_	9	nmod	_	_
-12	Angeles	Angeles	PROPN	PROPN	_	11	name	_	_
-13	para	para	ADP	prp	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	seleção	seleção	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-16	romena	romeno	ADJ	adj|F|S	Gender=Fem|Number=Sing	15	amod	_	_
-17	,	,	PUNCT	punc	_	7	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+5	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	6	amod	_	_
+6	fase	fase	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+7	prevê	prever	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	viagem	viagem	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
+10	Los	Los	DET	_	Gender=Masc|Number=Plur|PronType=Art	11	det	_	MWE=Los_AngelesDetroitLos_Angeles|MWEPOS=PROPN
+11	AngelesDetroitLos	AngelesDetroitLos	PROPN	_	_	9	nmod	_	_
+12	Angeles	Angeles	PROPN	_	_	11	flat	_	_
+13	para	para	ADP	PRP|@<ADVL	_	15	case	_	_
+14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	seleção	seleção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	_
+16	romena	romeno	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 18-19	num	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp	AdpType=Prep	20	case	_	_
-19	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	espaço	espaço	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-21	de	de	ADP	prp	AdpType=Prep	23	case	_	_
-22	oito	oito	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	23	nummod	_	_
-23	dias	dia	NOUN	n|M|P	Gender=Masc|Number=Plur	20	nmod	_	_
-24	,	,	PUNCT	punc	_	7	punct	_	_
+18	em	em	ADP	PRP|@<ADVL	_	20	case	_	_
+19	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	espaço	espaço	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	_
+21	de	de	ADP	PRP|@N<	_	23	case	_	_
+22	oito	oito	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	23	nummod	_	_
+23	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 25-26	na	_	_	_	_	_	_	_	_
-25	em	em	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-26	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-27	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	28	amod	_	_
-28	fase	fase	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-29	.	.	PUNCT	punc	_	7	punct	_	_
+25	em	em	ADP	<sam->|PRP|@<ADVL	_	28	case	_	_
+26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+27	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	28	amod	_	_
+28	fase	fase	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 

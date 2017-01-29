@@ -1,265 +1,275 @@
-# distance_from_new = 0
-# new_sent_id = CP784-1
-# sent_id = pt-ud-train.conllu#s4020/pt
-# orig_file_sentence = 041#20
-1	Não	não	ADV	adv	_	2	neg	_	_
-2	existe	existir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	pois	pois	SCONJ	conj-s	_	2	advmod	_	_
-5	,	,	PUNCT	punc	_	2	punct	_	_
-6	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	conceito	conceito	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-8	«	«	PUNCT	punc	_	7	punct	_	_
-9	operacional	operacional	ADJ	adj|M|S	Gender=Masc|Number=Sing	7	amod	_	_
-10	»	»	PUNCT	punc	_	7	punct	_	_
-11	de	de	ADP	pp	AdpType=Prep	7	advmod	_	MWE=de_urgência|MWEPOS=ADV
-12	urgência	urgência	NOUN	NOUN	_	11	mwe	_	_
-13	,	,	PUNCT	punc	_	2	punct	_	_
-14	como	como	ADP	prp|<rel>	AdpType=Prep|PronType=Rel	16	mark	_	_
-15	bem	bem	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	16	advmod	_	_
-16	atestam	atestar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	_	_
-17	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_
-18	urgências	urgência	NOUN	n|F|P	Gender=Fem|Number=Plur	16	nsubj	_	_
+# text = Não existe, pois, um conceito «operacional» de urgência, como bem atestam as urgências dos hospitais.
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a
+# sent_id = CP784-1
+# id 4022
+1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
+2	existe	existir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	pois	pois	SCONJ	KS|@<ADVL	_	2	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+6	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	conceito	conceito	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	2	nsubj	_	_
+8	«	«	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+9	operacional	operacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	SpaceAfter=No
+10	»	»	PUNCT	PU|@PU	_	7	punct	_	_
+11	de	de	ADP	PRP|@N<	_	7	advmod	_	MWE=de_urgência|MWEPOS=ADV
+12	urgência	urgência	NOUN	N|@P<	_	11	fixed	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+14	como	como	ADP	<rel>|<com>|ADV|@ADVL>	PronType=Rel	16	mark	_	_
+15	bem	bem	ADV	<quant>|ADV|@ADVL>	NumType=Card|PronType=Ind,Neg,Tot	16	advmod	_	_
+16	atestam	atestar	VERB	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	advcl	_	_
+17	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_
+18	urgências	urgência	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	16	nsubj	_	_
 19-20	dos	_	_	_	_	_	_	_	_
-19	de	de	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-21	hospitais	hospital	NOUN	n|M|P	Gender=Masc|Number=Plur	18	nmod	_	_
-22	.	.	PUNCT	punc	_	2	punct	_	_
+19	de	de	ADP	<sam->|PRP|@N<	_	21	case	_	_
+20	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
+21	hospitais	hospital	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP784-2
-# sent_id = pt-ud-train.conllu#s4021/pt
-# orig_file_sentence = 041#21
-1	Para	para	ADP	prp	AdpType=Prep	3	case	_	_
-2	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
-3	médicos	médico	NOUN	n|M|P	Gender=Masc|Number=Plur	9	nmod	_	_
-4	,	,	PUNCT	punc	_	9	punct	_	_
+# text = Para os médicos, no entanto, há prioridades de actuação, como estas que figuram no «Textbook of Surgery» (vários autores, coordenação de David C. Sabiston, editado em inglês pela W. B. Saunders):
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a
+# sent_id = CP784-2
+# id 4023
+1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
+2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+3	médicos	médico	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 5-6	no	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-7	entanto	entanto	NOUN	NOUN	_	5	mwe	_	_
-8	,	,	PUNCT	punc	_	9	punct	_	_
-9	há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-10	prioridades	prioridade	NOUN	n|F|P	Gender=Fem|Number=Plur	9	dobj	_	_
-11	de	de	ADP	prp	AdpType=Prep	12	case	_	_
-12	actuação	actuação	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-13	,	,	PUNCT	punc	_	10	punct	_	_
-14	como	como	ADV	adv|<rel>	PronType=Rel	15	cop	_	_
-15	estas	este	PRON	pron-det|<dem>|F|P	Gender=Fem|Number=Plur|PronType=Dem	10	advmod	_	_
-16	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	17	nsubj	_	_
-17	figuram	figurar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_
+5	en	en	ADP	prp|<sam->	_	9	case	_	_
+6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+7	entanto	entanto	NOUN	N|M|S|@P<	_	5	fixed	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+9	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	prioridades	prioridade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	9	obj	_	_
+11	de	de	ADP	PRP|@N<	_	12	case	_	_
+12	actuação	actuação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+14	como	como	ADV	<com>|PRP|@N<PRED	PronType=Rel	15	cop	_	_
+15	estas	este	PRON	<dem>|DET|F|P|@P<	Gender=Fem|Number=Plur|PronType=Dem	10	advmod	_	_
+16	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	17	nsubj	_	_
+17	figuram	figurar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_
 18-19	no	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-20	«	«	PUNCT	punc	_	21	punct	_	_
-21	Textbook	Textbook	PROPN	prop|M|S	_	17	nmod	_	MWE=Textbook_of_Surgery|MWEPOS=PROPN
-22	of	of	PROPN	PROPN	_	21	name	_	_
-23	Surgery	Surgery	PROPN	PROPN	_	21	name	_	_
-24	»	»	PUNCT	punc	_	21	punct	_	_
-25	(	(	PUNCT	punc	_	21	punct	_	_
-26	vários	vários	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	27	det	_	_
-27	autores	autor	NOUN	n|M|P	Gender=Masc|Number=Plur	21	nmod	_	_
-28	,	,	PUNCT	punc	_	27	punct	_	_
-29	coordenação	coordenação	NOUN	n|F|S	Gender=Fem|Number=Sing	27	conj	_	_
-30	de	de	ADP	prp	AdpType=Prep	31	case	_	_
-31	David	David	PROPN	prop|M|S	_	29	nmod	_	MWE=David_C._Sabiston|MWEPOS=PROPN
-32	C.	C.	PROPN	PROPN	_	31	name	_	_
-33	Sabiston	Sabiston	PROPN	PROPN	_	31	name	_	_
-34	,	,	PUNCT	punc	_	27	punct	_	_
-35	editado	editar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	27	conj	_	_
-36	em	em	ADP	prp	AdpType=Prep	37	case	_	_
-37	inglês	inglês	NOUN	n|M|S	Gender=Masc|Number=Sing	35	nmod	_	_
+18	em	em	ADP	<sam->|PRP|@<SA	_	21	case	_	_
+19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+20	«	«	PUNCT	PU|@PU	_	21	punct	_	SpaceAfter=No
+21	Textbook	Textbook	PROPN	_	_	17	obl	_	MWE=Textbook_of_Surgery|MWEPOS=PROPN
+22	of	of	PROPN	_	_	21	flat	_	_
+23	Surgery	Surgery	PROPN	_	_	21	flat	_	SpaceAfter=No
+24	»	»	PUNCT	PU|@PU	_	21	punct	_	_
+25	(	(	PUNCT	PU|@PU	_	21	punct	_	SpaceAfter=No
+26	vários	vários	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	27	det	_	_
+27	autores	autor	NOUN	<first-cjt>|<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	21	nmod	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+29	coordenação	coordenação	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	27	conj	_	_
+30	de	de	ADP	PRP|@N<	_	31	case	_	_
+31	David	David	PROPN	_	_	29	nmod	_	MWE=David_C._Sabiston|MWEPOS=PROPN
+32	C.	C.	PROPN	_	_	31	flat	_	_
+33	Sabiston	Sabiston	PROPN	_	_	31	flat	_	SpaceAfter=No
+34	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+35	editado	editar	VERB	<cjt>|<mv>|V|PCP|M|S|@N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	27	conj	_	_
+36	em	em	ADP	PRP|@<ADVL	_	37	case	_	_
+37	inglês	inglês	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	obl	_	_
 38-39	pela	_	_	_	_	_	_	_	_
-38	por	por	ADP	prp|<sam->	AdpType=Prep	40	case	_	_
-39	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
-40	W.	W.	PROPN	prop|F|S	_	35	dobj	_	MWE=W._B._Saunders|MWEPOS=PROPN
-41	B.	B.	PROPN	PROPN	_	40	name	_	_
-42	Saunders	Saunders	PROPN	PROPN	_	40	name	_	_
-43	)	)	PUNCT	punc	_	21	punct	_	_
-44	:	:	PUNCT	punc	_	9	punct	_	_
+38	por	por	ADP	<sam->|<cjt>|PRP|@PASS	_	40	case	_	_
+39	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
+40	W.	W.	PROPN	_	_	35	obj	_	MWE=W._B._Saunders|MWEPOS=PROPN
+41	B.	B.	PROPN	_	_	40	flat	_	_
+42	Saunders	Saunders	PROPN	_	_	40	flat	_	SpaceAfter=No
+43	)	)	PUNCT	PU|@PU	_	21	punct	_	SpaceAfter=No
+44	:	:	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP784-3
-# sent_id = pt-ud-train.conllu#s4022/pt
-# orig_file_sentence = 041#22
-1	«	«	PUNCT	punc	_	3	punct	_	_
-2	1ª	1ª	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
-3	Prioridade	prioridade	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-4	--	--	PUNCT	punc	_	3	punct	_	_
-5	situações	situação	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nmod	_	_
-6	exigentes	exigente	ADJ	adj|F|P	Gender=Fem|Number=Plur	5	amod	_	_
-7	:	:	PUNCT	punc	_	5	punct	_	_
-8	situações	situação	NOUN	n|F|P	Gender=Fem|Number=Plur	5	appos	_	_
-9	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	10	advmod	_	_
-10	ameaçadoras	ameaçador	ADJ	adj|F|P	Gender=Fem|Number=Plur	8	amod	_	_
-11	para	para	ADP	prp	AdpType=Prep	13	case	_	_
-12	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	vida	vida	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-14	e	e	CONJ	conj-c|<co-postnom>	_	10	cc	_	_
-15	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	16	nsubj	_	_
-16	necessitam	necessitar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
-17	de	de	ADP	prp	AdpType=Prep	18	case	_	_
-18	intervenção	intervenção	NOUN	n|F|S	Gender=Fem|Number=Sing	16	dobj	_	_
-19	instantânea	instantâneo	ADJ	adj|F|S	Gender=Fem|Number=Sing	18	amod	_	_
-20	.	.	PUNCT	punc	_	3	punct	_	_
+# text = «1ª Prioridade -- situações exigentes: situações mais ameaçadoras para a vida e que necessitam de intervenção instantânea.
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a
+# sent_id = CP784-3
+# id 4024
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+2	1ª	1ª	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
+3	Prioridade	prioridade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+4	--	--	PUNCT	PU|@PU	_	3	punct	_	_
+5	situações	situação	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	3	nmod	_	_
+6	exigentes	exigente	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	5	amod	_	SpaceAfter=No
+7	:	:	PUNCT	PU|@PU	_	5	punct	_	_
+8	situações	situação	NOUN	<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	5	appos	_	_
+9	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	10	advmod	_	_
+10	ameaçadoras	ameaçador	ADJ	<first-cjt>|<COMP>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	8	amod	_	_
+11	para	para	ADP	PRP|@A<	_	13	case	_	_
+12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	vida	vida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	_
+14	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	_
+15	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	16	nsubj	_	_
+16	necessitam	necessitar	VERB	<cjt>|<mv>|V|PR|3P|IND|@N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
+17	de	de	ADP	PRP|@<PIV	_	18	case	_	_
+18	intervenção	intervenção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	16	obj	_	_
+19	instantânea	instantâneo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	18	amod	_	SpaceAfter=No
+20	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP784-4
-# sent_id = pt-ud-train.conllu#s4023/pt
-# orig_file_sentence = 041#23
-1	Exemplo	exemplo	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	:	:	PUNCT	punc	_	1	punct	_	_
-3	fractura	fractura	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
+# text = Exemplo: fractura da laringe com obstrução respiratória completa.
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a
+# sent_id = CP784-4
+# id 4025
+1	Exemplo	exemplo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
+3	fractura	fractura	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	1	nmod	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	laringe	laringe	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-7	com	com	ADP	prp	AdpType=Prep	8	case	_	_
-8	obstrução	obstrução	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-9	respiratória	respiratório	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
-10	completa	completo	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
-11	.	.	PUNCT	punc	_	1	punct	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	laringe	laringe	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+7	com	com	ADP	PRP|@N<	_	8	case	_	_
+8	obstrução	obstrução	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+9	respiratória	respiratório	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	_
+10	completa	completo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP784-5
-# sent_id = pt-ud-train.conllu#s4024/pt
-# orig_file_sentence = 041#24
-1	2ª	2ª	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	_
-2	Prioridade	prioridade	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-3	--	--	PUNCT	punc	_	2	punct	_	_
-4	situações	situação	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-5	emergentes	emergente	ADJ	adj|F|P	Gender=Fem|Number=Plur	4	amod	_	_
-6	:	:	PUNCT	punc	_	4	punct	_	_
-7	situações	situação	NOUN	n|F|P	Gender=Fem|Number=Plur	4	appos	_	_
-8	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	9	nsubj	_	_
-9	exigem	exigir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
-10	intervenção	intervenção	NOUN	n|F|S	Gender=Fem|Number=Sing	9	dobj	_	_
-11	imediata	imediato	ADJ	adj|F|S	Gender=Fem|Number=Sing	10	amod	_	_
+# text = 2ª Prioridade -- situações emergentes: situações que exigem intervenção imediata num período de poucos minutos.
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a
+# sent_id = CP784-5
+# id 4026
+1	2ª	2ª	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	_
+2	Prioridade	prioridade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+3	--	--	PUNCT	PU|@PU	_	2	punct	_	_
+4	situações	situação	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	2	nmod	_	_
+5	emergentes	emergente	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	4	amod	_	SpaceAfter=No
+6	:	:	PUNCT	PU|@PU	_	4	punct	_	_
+7	situações	situação	NOUN	<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	4	appos	_	_
+8	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	9	nsubj	_	_
+9	exigem	exigir	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
+10	intervenção	intervenção	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
+11	imediata	imediato	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
 12-13	num	_	_	_	_	_	_	_	_
-12	em	em	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	um	um	DET	art|<-sam>|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	período	período	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-15	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-16	poucos	pouco	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	17	det	_	_
-17	minutos	minuto	NOUN	n|M|P	Gender=Masc|Number=Plur	14	nmod	_	_
-18	.	.	PUNCT	punc	_	2	punct	_	_
+12	em	em	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	período	período	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
+15	de	de	ADP	PRP|@N<	_	17	case	_	_
+16	poucos	pouco	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	17	det	_	_
+17	minutos	minuto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP784-6
-# sent_id = pt-ud-train.conllu#s4025/pt
-# orig_file_sentence = 041#25
-1	Exemplo	exemplo	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	:	:	PUNCT	punc	_	1	punct	_	_
-3	pneumotórax	pneumotórax	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	tensão	tensão	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	[	[	PUNCT	punc	_	3	punct	_	_
-7	ar	ar	NOUN	n|M|S	Gender=Masc|Number=Sing	3	appos	_	_
-8	dentro	dentro	ADV	prp|<sam->	AdpType=Prep	11	case	_	MWE=dentro_de|MWEPOS=ADP
+# text = Exemplo: pneumotórax de tensão [ar dentro da cavidade pleural a comprimir os pulmões e o coração, eventualmente].
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a
+# sent_id = CP784-6
+# id 4027
+1	Exemplo	exemplo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
+3	pneumotórax	pneumotórax	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	nmod	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	tensão	tensão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+6	[	[	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+7	ar	ar	NOUN	<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	3	appos	_	_
+8	dentro	dentro	ADV	ADV|@N<	_	11	case	_	MWE=dentro_de|MWEPOS=ADP
 9-10	da	_	_	_	_	_	_	_	_
-9	de	de	ADP	ADP	AdpType=Prep	8	mwe	_	_
-10	a	o	DET	art|<artd>|<-sam>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	cavidade	cavidade	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-12	pleural	pleural	ADJ	adj|F|S	Gender=Fem|Number=Sing	11	amod	_	_
-13	a	a	ADP	prp	AdpType=Prep	14	mark	_	_
-14	comprimir	comprimir	VERB	v-inf	VerbForm=Inf	7	acl	_	_
-15	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
-16	pulmões	pulmão	NOUN	n|M|P	Gender=Masc|Number=Plur	14	dobj	_	_
-17	e	e	CONJ	conj-c|<co-acc>	_	16	cc	_	_
-18	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	coração	coração	NOUN	n|M|S	Gender=Masc|Number=Sing	16	conj	_	_
-20	,	,	PUNCT	punc	_	19	punct	_	_
-21	eventualmente	eventualmente	ADV	adv	_	19	advmod	_	_
-22	]	]	PUNCT	punc	_	3	punct	_	_
-23	.	.	PUNCT	punc	_	1	punct	_	_
+9	de	de	ADP	PRP|@A<	_	8	fixed	_	_
+10	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	cavidade	cavidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
+12	pleural	pleural	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
+13	a	a	ADP	PRP|@N<	_	14	mark	_	_
+14	comprimir	comprimir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
+15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
+16	pulmões	pulmão	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
+17	e	e	CCONJ	<co-acc>|KC|@CO	_	19	cc	_	_
+18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	coração	coração	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	conj	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+21	eventualmente	eventualmente	ADV	ADV|@N<	_	19	advmod	_	SpaceAfter=No
+22	]	]	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP784-7
-# sent_id = pt-ud-train.conllu#s4026/pt
-# orig_file_sentence = 041#26
-1	3ª	3ª	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	_
-2	Prioridade	prioridade	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-3	--	--	PUNCT	punc	_	2	punct	_	_
-4	situações	situação	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-5	urgentes	urgente	ADJ	adj|F|P	Gender=Fem|Number=Plur	4	amod	_	_
-6	:	:	PUNCT	punc	_	4	punct	_	_
-7	situações	situação	NOUN	n|F|P	Gender=Fem|Number=Plur	4	appos	_	_
-8	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	9	nsubj	_	_
-9	necessitam	necessitar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	intervenção	intervenção	NOUN	n|F|S	Gender=Fem|Number=Sing	9	dobj	_	_
-12	dentro	dentro	ADV	prp|<sam->	AdpType=Prep	16	case	_	MWE=dentro_de|MWEPOS=ADP
+# text = 3ª Prioridade -- situações urgentes: situações que necessitam de intervenção dentro da primeira hora.
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a
+# sent_id = CP784-7
+# id 4028
+1	3ª	3ª	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	_
+2	Prioridade	prioridade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+3	--	--	PUNCT	PU|@PU	_	2	punct	_	_
+4	situações	situação	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	2	nmod	_	_
+5	urgentes	urgente	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	4	amod	_	SpaceAfter=No
+6	:	:	PUNCT	PU|@PU	_	4	punct	_	_
+7	situações	situação	NOUN	<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	4	appos	_	_
+8	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	9	nsubj	_	_
+9	necessitam	necessitar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
+10	de	de	ADP	PRP|@<PIV	_	11	case	_	_
+11	intervenção	intervenção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obj	_	_
+12	dentro	dentro	ADV	ADV|@N<	_	16	case	_	MWE=dentro_de|MWEPOS=ADP
 13-14	da	_	_	_	_	_	_	_	_
-13	de	de	ADP	ADP	AdpType=Prep	12	mwe	_	_
-14	a	o	DET	art|<artd>|<-sam>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-15	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	16	amod	_	_
-16	hora	hora	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-17	.	.	PUNCT	punc	_	2	punct	_	_
+13	de	de	ADP	PRP|@A<	_	12	fixed	_	_
+14	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+15	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	16	amod	_	_
+16	hora	hora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP784-8
-# sent_id = pt-ud-train.conllu#s4027/pt
-# orig_file_sentence = 041#27
-1	Exemplo	exemplo	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	:	:	PUNCT	punc	_	1	punct	_	_
-3	hemoperitoneu	hemoperitoneu	NOUN	n|<DERP>|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-4	devido	devido	ADJ	prp	AdpType=Prep	6	case	_	MWE=devido_a|MWEPOS=ADP
-5	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	mwe	_	_
-6	hemorragia	hemorragia	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-7	intra-abdominal	intra-abdominal	ADJ	adj|F|S	Gender=Fem|Number=Sing	6	amod	_	_
-8	contínua	contínuo	ADJ	adj|F|S	Gender=Fem|Number=Sing	6	amod	_	_
-9	[	[	PUNCT	punc	_	6	punct	_	_
-10	lesão	lesão	NOUN	n|F|S	Gender=Fem|Number=Sing	6	appos	_	_
-11	dentro	dentro	ADV	prp|<sam->	AdpType=Prep	14	case	_	MWE=dentro_de|MWEPOS=ADP
+# text = Exemplo: hemoperitoneu devido a hemorragia intra-abdominal contínua [lesão dentro da cavidade abdominal a sangrar continuamente].
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a
+# sent_id = CP784-8
+# id 4029
+1	Exemplo	exemplo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
+3	hemoperitoneu	hemoperitoneu	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	nmod	_	_
+4	devido	devido	ADJ	ADV|@N<	_	6	case	_	MWE=devido_a|MWEPOS=ADP
+5	a	a	DET	PRP|@A<	Gender=Fem|Number=Sing|PronType=Art	4	fixed	_	_
+6	hemorragia	hemorragia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+7	intra-abdominal	intra-abdominal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	6	amod	_	_
+8	contínua	contínuo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	6	amod	_	_
+9	[	[	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+10	lesão	lesão	NOUN	<np-idf>|N|F|S|@APP	Gender=Fem|Number=Sing	6	appos	_	_
+11	dentro	dentro	ADV	ADV|@N<	_	14	case	_	MWE=dentro_de|MWEPOS=ADP
 12-13	da	_	_	_	_	_	_	_	_
-12	de	de	ADP	ADP	AdpType=Prep	11	mwe	_	_
-13	a	o	DET	art|<artd>|<-sam>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	cavidade	cavidade	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-15	abdominal	abdominal	ADJ	adj|F|S	Gender=Fem|Number=Sing	14	amod	_	_
-16	a	a	ADP	prp	AdpType=Prep	17	mark	_	_
-17	sangrar	sangrar	VERB	v-inf	VerbForm=Inf	10	acl	_	_
-18	continuamente	continuamente	ADV	adv	_	17	advmod	_	_
-19	]	]	PUNCT	punc	_	6	punct	_	_
-20	.	.	PUNCT	punc	_	1	punct	_	_
+12	de	de	ADP	PRP|@A<	_	11	fixed	_	_
+13	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	cavidade	cavidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
+15	abdominal	abdominal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	amod	_	_
+16	a	a	ADP	PRP|@N<	_	17	mark	_	_
+17	sangrar	sangrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	acl	_	_
+18	continuamente	continuamente	ADV	ADV|@<ADVL	_	17	advmod	_	SpaceAfter=No
+19	]	]	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+20	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP784-9
-# sent_id = pt-ud-train.conllu#s4028/pt
-# orig_file_sentence = 041#28
-1	4ª	4ª	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	_
-2	Prioridade	prioridade	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-3	--	--	PUNCT	punc	_	2	punct	_	_
-4	situações	situação	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-5	deferíveis	deferível	ADJ	adj|F|P	Gender=Fem|Number=Plur	4	amod	_	_
-6	:	:	PUNCT	punc	_	4	punct	_	_
-7	situações	situação	NOUN	n|F|P	Gender=Fem|Number=Plur	4	appos	_	_
-8	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	9	nsubj	_	_
-9	podem	poder	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
-10	ou	ou	CONJ	conj-c|<co-vfin>	_	9	cc	_	_
-11	não	não	ADV	adv|<Eg>	_	9	conj	_	_
-12	ser	ser	VERB	v-inf	VerbForm=Inf	14	cop	_	_
-13	imediatamente	imediatamente	ADV	adv	_	14	advmod	_	_
-14	evidentes	evidente	ADJ	adj|F|P	Gender=Fem|Number=Plur	9	xcomp	_	_
-15	,	,	PUNCT	punc	_	9	punct	_	_
-16	mas	mas	CONJ	conj-c|<co-postnom>	_	9	cc	_	_
-17	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	18	nsubj	_	_
-18	necessitarão	necessitar	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	9	conj	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-20	tratamento	tratamento	NOUN	n|M|S	Gender=Masc|Number=Sing	18	dobj	_	_
-21	subsequente	subsequente	ADJ	adj|M|S	Gender=Masc|Number=Sing	20	amod	_	_
-22	.	.	PUNCT	punc	_	2	punct	_	_
+# text = 4ª Prioridade -- situações deferíveis: situações que podem ou não ser imediatamente evidentes, mas que necessitarão de tratamento subsequente.
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a &E
+# sent_id = CP784-9
+# id 4030
+1	4ª	4ª	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	_
+2	Prioridade	prioridade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+3	--	--	PUNCT	PU|@PU	_	2	punct	_	_
+4	situações	situação	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	2	nmod	_	_
+5	deferíveis	deferível	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	4	amod	_	SpaceAfter=No
+6	:	:	PUNCT	PU|@PU	_	4	punct	_	_
+7	situações	situação	NOUN	<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	4	appos	_	_
+8	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	9	nsubj	_	_
+9	podem	poder	VERB	<first-cjt>|<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
+10	ou	ou	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	11	cc	_	_
+11	não	não	ADV	<cjt>|<Eg>|ADV|@FS-N<	Polarity=Neg	9	conj	_	_
+12	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	cop	_	_
+13	imediatamente	imediatamente	ADV	ADV|@<ADVL	_	14	advmod	_	_
+14	evidentes	evidente	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	9	xcomp	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+16	mas	mas	CCONJ	<co-fcl>|<co-postnom>|KC|@CO	_	18	cc	_	_
+17	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	18	nsubj	_	_
+18	necessitarão	necessitar	VERB	<cjt>|<mv>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	9	conj	_	_
+19	de	de	ADP	PRP|@<PIV	_	20	case	_	_
+20	tratamento	tratamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obj	_	_
+21	subsequente	subsequente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	20	amod	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP784-10
-# sent_id = pt-ud-train.conllu#s4029/pt
-# orig_file_sentence = 041#29
-1	Exemplo	exemplo	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	:	:	PUNCT	punc	_	1	punct	_	_
-3	ruptura	ruptura	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
+# text = Exemplo: ruptura da uretra.»
+# forest 1
+# source CETEMPúblico n=784 sec=soc sem=96a
+# sent_id = CP784-10
+# id 4031
+1	Exemplo	exemplo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
+3	ruptura	ruptura	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	1	nmod	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	uretra	uretra	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-7	.	.	PUNCT	punc	_	1	punct	_	_
-8	»	»	PUNCT	punc	_	1	punct	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	uretra	uretra	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	1	punct	_	SpaceAfter=No
+8	»	»	PUNCT	PU|@PU	_	1	punct	_	_
 

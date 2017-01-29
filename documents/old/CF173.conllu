@@ -1,78 +1,81 @@
-# distance_from_new = 0
-# new_sent_id = CF173-1
-# sent_id = pt-ud-train.conllu#s5772/pt
-# orig_file_sentence = 058#72
-1	«	«	PUNCT	punc	_	5	punct	_	_
-2	Nenhum	nenhum	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	3	det	_	_
-3	eleitor	eleitor	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-4	evangélico	evangélico	ADJ	adj|M|S	Gender=Masc|Number=Sing	3	amod	_	_
-5	deve	dever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	ccomp	_	_
-6	se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	7	iobj	_	_
-7	sentir	sentir	VERB	v-inf	VerbForm=Inf	5	xcomp	_	_
-8	culpado	culpar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	7	xcomp	_	_
-9	por	por	ADP	prp	AdpType=Prep	10	mark	_	_
-10	ter	ter	VERB	v-inf	VerbForm=Inf	8	xcomp	_	_
-11	opinião	opinião	NOUN	n|F|S	Gender=Fem|Number=Sing	10	dobj	_	_
-12	diferente	diferente	ADJ	adj|F|S	Gender=Fem|Number=Sing	11	amod	_	_
-13	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-14	seu	seu	DET	pron-det|<poss|3S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	_	_
-15	pastor	pastor	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-16	ou	ou	CONJ	conj-c|<co-prparg>	_	15	cc	_	_
-17	líder	líder	NOUN	n|M|S	Gender=Masc|Number=Sing	15	conj	_	_
-18	espiritual	espiritual	ADJ	adj|M|S	Gender=Masc|Number=Sing	17	amod	_	_
-19	»	»	PUNCT	punc	_	5	punct	_	_
-20	,	,	PUNCT	punc	_	21	punct	_	_
-21	diz	dizer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-22	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	cartilha	cartilha	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nsubj	_	_
-24	.	.	PUNCT	punc	_	21	punct	_	_
+# text = «Nenhum eleitor evangélico deve se sentir culpado por ter opinião diferente de seu pastor ou líder espiritual», diz a cartilha.
+# forest 1
+# source CETENFolha n=173 cad=Brasil sec=pol sem=94b
+# sent_id = CF173-1
+# id 730
+1	«	«	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+2	Nenhum	nenhum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	3	det	_	_
+3	eleitor	eleitor	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+4	evangélico	evangélico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
+5	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	ccomp	_	_
+6	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	7	iobj	_	_
+7	sentir	sentir	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
+8	culpado	culpar	VERB	<mv>|V|PCP|M|S|@ICL-<OC	Gender=Masc|Number=Sing|VerbForm=Part	7	xcomp	_	_
+9	por	por	ADP	PRP|@<PIV	_	10	mark	_	_
+10	ter	ter	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	xcomp	_	_
+11	opinião	opinião	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
+12	diferente	diferente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
+13	de	de	ADP	PRP|@A<	_	15	case	_	_
+14	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	_	_
+15	pastor	pastor	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	_
+16	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	_
+17	líder	líder	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	conj	_	_
+18	espiritual	espiritual	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	SpaceAfter=No
+19	»	»	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+21	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	cartilha	cartilha	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	21	nsubj	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF173-2
-# sent_id = pt-ud-train.conllu#s5773/pt
-# orig_file_sentence = 058#73
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	texto	texto	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	defende	defender	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	voto	voto	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-6	para	para	ADP	prp	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Presidência	presidência	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-9	baseado	basear	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
-10	em	em	ADP	prp	AdpType=Prep	11	case	_	_
-11	programas	programa	NOUN	n|M|P	Gender=Masc|Number=Plur	9	dobj	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	governo	governo	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-14	.	.	PUNCT	punc	_	3	punct	_	_
+# text = O texto defende o voto para a Presidência baseado em programas de governo.
+# forest 1
+# source CETENFolha n=173 cad=Brasil sec=pol sem=94b
+# sent_id = CF173-2
+# id 731
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	texto	texto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	defende	defender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	voto	voto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
+6	para	para	ADP	PRP|@N<	_	8	case	_	_
+7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Presidência	presidência	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+9	baseado	basear	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
+10	em	em	ADP	PRP|@<PIV	_	11	case	_	_
+11	programas	programa	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obj	_	_
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	governo	governo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF173-3
-# sent_id = pt-ud-train.conllu#s5774/pt
-# orig_file_sentence = 058#74
-1	E	e	CONJ	conj-c	_	2	cc	_	_
-2	condena	condenar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	disseminação	disseminação	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	boatos	boato	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nmod	_	_
-7	,	,	PUNCT	punc	_	2	punct	_	_
-8	como	como	ADV	adv|<rel>|<prp>	PronType=Rel	9	mark	_	_
-9	os	o	PRON	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	2	advmod	_	_
-10	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	11	nsubj	_	_
-11	atingiram	atingir	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	9	acl	_	_
-12	Luiz	Luiz	PROPN	prop|M|S	_	11	dobj	_	MWE=Luiz_Inácio_Lula_da_Silva|MWEPOS=PROPN
-13	Inácio	Inácio	PROPN	PROPN	_	12	name	_	_
-14	Lula	Lula	PROPN	PROPN	_	12	name	_	_
+# text = E condena a disseminação de boatos, como os que atingiram Luiz Inácio Lula da Silva na eleição de 89.
+# forest 1
+# source CETENFolha n=173 cad=Brasil sec=pol sem=94b
+# sent_id = CF173-3
+# id 732
+1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
+2	condena	condenar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	disseminação	disseminação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	boatos	boato	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+8	como	como	ADV	<com>|PRP|@N<PRED	PronType=Rel	9	mark	_	_
+9	os	o	PRON	<first-cjt>|<dem>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Dem	2	advmod	_	_
+10	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	11	nsubj	_	_
+11	atingiram	atingir	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	9	acl	_	_
+12	Luiz	Luiz	PROPN	_	_	11	obj	_	MWE=Luiz_Inácio_Lula_da_Silva|MWEPOS=PROPN
+13	Inácio	Inácio	PROPN	_	_	12	flat	_	_
+14	Lula	Lula	PROPN	_	_	12	flat	_	_
 15-16	da	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	Silva	Silva	PROPN	PROPN	_	12	name	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	Silva	Silva	PROPN	PROP|@P<	_	12	flat	_	_
 18-19	na	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	eleição	eleição	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	89	89	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	20	nummod	_	_
-23	.	.	PUNCT	punc	_	2	punct	_	_
+18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	eleição	eleição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	_
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	89	89	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	20	nummod	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

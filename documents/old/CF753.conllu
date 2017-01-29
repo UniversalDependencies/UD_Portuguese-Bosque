@@ -1,269 +1,279 @@
-# distance_from_new = 0
-# new_sent_id = CF753-1
-# sent_id = pt-ud-train.conllu#s8192/pt
-# orig_file_sentence = 082#92
-1	Caixa	caixa	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nsubj	_	_
-2	resgata	resgatar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	década	década	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-5	perdida	perder	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	Elvis	Elvis	PROPN	prop|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
+# text = Caixa resgata a década perdida de Elvis
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-1
+# id 3150
+1	Caixa	caixa	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
+2	resgata	resgatar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	década	década	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+5	perdida	perder	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	Elvis	Elvis	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF753-2
-# sent_id = pt-ud-train.conllu#s8193/pt
-# orig_file_sentence = 082#93
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
-2	cinco	cinco	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
-3	CDs	CDs	PROPN	prop|M|P	Gender=Masc|Number=Plur	12	nsubj	_	_
-4	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-5	«	«	PUNCT	punc	_	6	punct	_	_
-6	Elvis:	Elvis:	PROPN	prop|M|S	_	3	nmod	_	MWE=Elvis:_From_Nashville_To_Memphis|MWEPOS=PROPN
-7	From	From	PROPN	PROPN	_	6	name	_	_
-8	Nashville	Nashville	PROPN	PROPN	_	6	name	_	_
-9	To	To	PROPN	PROPN	_	6	name	_	_
-10	Memphis	Memphis	PROPN	PROPN	_	6	name	_	_
-11	»	»	PUNCT	punc	_	6	punct	_	_
-12	trazem	trazer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-13	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	essencial	essencial	NOUN	n|M|S	Gender=Masc|Number=Sing	12	dobj	_	_
+# text = Os cinco CDs de «Elvis: From Nashville To Memphis» trazem o essencial do cantor na década de 60
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-2
+# id 3151
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+2	cinco	cinco	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
+3	CDs	CDs	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
+4	de	de	ADP	PRP|@N<	_	6	case	_	_
+5	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+6	Elvis:	Elvis:	PROPN	PROP|M|S|@P<	_	3	nmod	_	MWE=Elvis:_From_Nashville_To_Memphis|MWEPOS=PROPN
+7	From	From	PROPN	PROP|@N<	_	6	flat	_	_
+8	Nashville	Nashville	PROPN	PROP|@N<	_	6	flat	_	_
+9	To	To	PROPN	PROP|@N<	_	6	flat	_	_
+10	Memphis	Memphis	PROPN	PROP	_	6	flat	_	SpaceAfter=No
+11	»	»	PUNCT	PU|@PU	_	6	punct	_	_
+12	trazem	trazer	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	essencial	essencial	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
 15-16	do	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	cantor	cantor	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	cantor	cantor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
 18-19	na	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	década	década	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	60	60	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	20	nummod	_	_
+18	em	em	ADP	<sam->|PRP|@<ACC	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	década	década	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	60	60	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	20	nummod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF753-5
-# sent_id = pt-ud-train.conllu#s8194/pt
-# orig_file_sentence = 082#94
-1	John	John	PROPN	prop|M|S	_	3	nsubj	_	MWE=John_Lennon|MWEPOS=PROPN
-2	Lennon	Lennon	PROPN	PROPN	_	1	name	_	_
-3	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	certa	certo	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
-5	vez	vez	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	:	:	PUNCT	punc	_	3	punct	_	_
+# text = John Lennon disse certa vez:
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-5
+# id 3152
+1	John	John	PROPN	_	_	3	nsubj	_	MWE=John_Lennon|MWEPOS=PROPN
+2	Lennon	Lennon	PROPN	_	_	1	flat	_	_
+3	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	certa	certo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
+5	vez	vez	NOUN	<np-idf>|N|F|S|@<ADVL	Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No
+6	:	:	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF753-6
-# sent_id = pt-ud-train.conllu#s8195/pt
-# orig_file_sentence = 082#95
-1	«	«	PUNCT	punc	_	3	punct	_	_
-2	Elvis	Elvis	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	morreu	morrer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	quando	quando	ADV	adv|<rel>|<ks>	PronType=Rel	5	advmod	_	_
-5	entrou	entrar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
-6	para	para	ADP	prp	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	exército	exército	NOUN	n|M|S	Gender=Masc|Number=Sing	5	dobj	_	_
-9	»	»	PUNCT	punc	_	3	punct	_	_
-10	.	.	PUNCT	punc	_	3	punct	_	_
+# text = «Elvis morreu quando entrou para o exército».
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-6
+# id 3153
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+2	Elvis	Elvis	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	morreu	morrer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	quando	quando	ADV	<rel>|ADV|@ADVL>	PronType=Rel	5	advmod	_	_
+5	entrou	entrar	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
+6	para	para	ADP	PRP|@<PIV	_	8	case	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	exército	exército	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+9	»	»	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF753-7
-# sent_id = pt-ud-train.conllu#s8196/pt
-# orig_file_sentence = 082#96
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	caixa	caixa	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nsubj	_	_
-3	com	com	ADP	prp	AdpType=Prep	6	case	_	_
-4	cinco	cinco	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
-5	«	«	PUNCT	punc	_	6	punct	_	_
-6	CDs	CD	NOUN	n|M|P	Gender=Masc|Number=Plur	2	nmod	_	_
-7	Elvis:	Elvis:	PROPN	prop|M|S	_	6	nmod	_	MWE=Elvis:_From_Nashville_To_Memphis|MWEPOS=PROPN
-8	From	From	PROPN	PROPN	_	7	name	_	_
-9	Nashville	Nashville	PROPN	PROPN	_	7	name	_	_
-10	To	To	PROPN	PROPN	_	7	name	_	_
-11	Memphis	Memphis	PROPN	PROPN	_	7	name	_	_
-12	»	»	PUNCT	punc	_	6	punct	_	_
-13	enterra	enterrar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-14	em	em	ADP	adv	AdpType=Prep	13	advmod	_	MWE=em_parte|MWEPOS=ADV
-15	parte	parte	NOUN	NOUN	_	14	mwe	_	_
-16	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-17	velho	velho	ADJ	adj|M|S	Gender=Masc|Number=Sing	18	amod	_	_
-18	mito	mito	NOUN	n|M|S	Gender=Masc|Number=Sing	13	dobj	_	_
-19	explicitado	explicitar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	_	_
+# text = A caixa com cinco «CDs Elvis: From Nashville To Memphis» enterra em parte o velho mito explicitado pelo beatle.
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-7
+# id 3154
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	caixa	caixa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj	_	_
+3	com	com	ADP	PRP|@N<	_	6	case	_	_
+4	cinco	cinco	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
+5	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+6	CDs	CD	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
+7	Elvis:	Elvis:	PROPN	PROP|M|S|@N<	_	6	nmod	_	MWE=Elvis:_From_Nashville_To_Memphis|MWEPOS=PROPN
+8	From	From	PROPN	PROP|@N<	_	7	flat	_	_
+9	Nashville	Nashville	PROPN	PROP|@N<	_	7	flat	_	_
+10	To	To	PROPN	PROP|@N<	_	7	flat	_	_
+11	Memphis	Memphis	PROPN	PROP	_	7	flat	_	SpaceAfter=No
+12	»	»	PUNCT	PU|@PU	_	6	punct	_	_
+13	enterra	enterrar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+14	em	em	ADP	PRP|@<ADVL	_	13	advmod	_	MWE=em_parte|MWEPOS=ADV
+15	parte	parte	NOUN	N|F|S|@P<	_	14	fixed	_	_
+16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+17	velho	velho	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	18	amod	_	_
+18	mito	mito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	obj	_	_
+19	explicitado	explicitar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	_	_
 20-21	pelo	_	_	_	_	_	_	_	_
-20	por	por	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	beatle	beatle	NOUN	n|M|S	Gender=Masc|Number=Sing	19	dobj	_	_
-23	.	.	PUNCT	punc	_	13	punct	_	_
+20	por	por	ADP	PRP|@PASS	_	22	case	_	_
+21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	beatle	beatle	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obj	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF753-8
-# sent_id = pt-ud-train.conllu#s8197/pt
-# orig_file_sentence = 082#97
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	pacote	pacote	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	traz	trazer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
-5	gravações	gravação	NOUN	n|F|P	Gender=Fem|Number=Plur	3	dobj	_	_
-6	essenciais	essencial	ADJ	adj|F|P	Gender=Fem|Number=Plur	5	amod	_	_
+# text = O pacote traz as gravações essenciais do cantor na década de 60, exatamente depois de sua baixa no exército norte-americano, em 6 de março de 1960.
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-8
+# id 3155
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	pacote	pacote	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	traz	trazer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+5	gravações	gravação	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	3	obj	_	_
+6	essenciais	essencial	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	5	amod	_	_
 7-8	do	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	cantor	cantor	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	cantor	cantor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 10-11	na	_	_	_	_	_	_	_	_
-10	em	em	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	década	década	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	60	60	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-15	,	,	PUNCT	punc	_	12	punct	_	_
-16	exatamente	exatamente	ADV	adv	_	17	advmod	_	_
-17	depois	depois	ADV	adv	_	12	advmod	_	_
-18	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-19	sua	seu	DET	pron-det|<poss|3S>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	_	_
-20	baixa	baixa	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
+10	em	em	ADP	<sam->|PRP|@N<	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	década	década	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	60	60	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+16	exatamente	exatamente	ADV	ADV|@>A	_	17	advmod	_	_
+17	depois	depois	ADV	ADV|@N<PRED	_	12	advmod	_	_
+18	de	de	ADP	PRP|@A<	_	20	case	_	_
+19	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	_	_
+20	baixa	baixa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	_
 21-22	no	_	_	_	_	_	_	_	_
-21	em	em	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	exército	exército	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-24	norte-americano	norte-americano	ADJ	adj|M|S	Gender=Masc|Number=Sing	23	amod	_	_
-25	,	,	PUNCT	punc	_	20	punct	_	_
-26	em	em	ADP	prp	AdpType=Prep	27	case	_	_
-27	6	6	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	20	nummod	_	_
-28	de	de	ADP	prp	AdpType=Prep	29	case	_	_
-29	março	março	NOUN	n|M|S	Gender=Masc|Number=Sing	27	nmod	_	_
-30	de	de	ADP	prp	AdpType=Prep	31	case	_	_
-31	1960	1960	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	29	nummod	_	_
-32	.	.	PUNCT	punc	_	3	punct	_	_
+21	em	em	ADP	<sam->|PRP|@N<	_	23	case	_	_
+22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	exército	exército	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
+24	norte-americano	norte-americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	23	amod	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+26	em	em	ADP	PRP|@N<PRED	_	27	case	_	_
+27	6	6	NUM	<card>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	20	nummod	_	_
+28	de	de	ADP	PRP|@N<	_	29	case	_	_
+29	março	março	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
+30	de	de	ADP	PRP|@N<	_	31	case	_	_
+31	1960	1960	NUM	<year>|<card>|<date>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	29	nummod	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CF753-9
-# sent_id = pt-ud-train.conllu#s8198/pt
-# orig_file_sentence = 082#98
-1	Esses	esse	PRON	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	4	nsubj	_	_
-2	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
-3	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
-5	em	em	ADP	prp	AdpType=Prep	6	case	_	_
-6	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	8	nmod	_	_
-7	Elvis	Elvis	PROPN	prop|M|S	Gender=Masc|Number=Sing	8	nsubj	_	_
-8	deixou	deixar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl	_	_
-9	de	de	ADP	prp	AdpType=Prep	12	mark	_	_
-10	ser	ser	VERB	v-inf	VerbForm=Inf	12	cop	_	_
-11	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	rei	rei	NOUN	n|M|S	Gender=Masc|Number=Sing	8	xcomp	_	_
+# text = Esses são os anos em que Elvis deixou de ser o rei do rock'n'roll para tornar-se o símbolo pré-fabricado duma geração que sonhava com Honolulu e pracinhas.
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-9
+# id 3156
+1	Esses	esse	PRON	<dem>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Dem	4	nsubj	_	_
+2	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	anos	ano	NOUN	<np-def>|N|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
+5	em	em	ADP	PRP|@N<ARG	_	6	case	_	_
+6	que	que	PRON	<rel>|INDP|M|S|@SUB	Gender=Masc|Number=Sing|PronType=Rel	8	nmod	_	_
+7	Elvis	Elvis	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
+8	deixou	deixar	VERB	<aux>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl	_	_
+9	de	de	ADP	PRP|@PRT-AUX<	_	12	mark	_	_
+10	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	12	cop	_	_
+11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	rei	rei	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	8	xcomp	_	_
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	rock'n'roll	rock\'n\'roll	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-16	para	para	ADP	prp	AdpType=Prep	20	case	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	rock'n'roll	rock\'n\'roll	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
+16	para	para	ADP	PRP|@<ADVL	_	20	case	_	_
 17-18	tornar-se	_	_	_	_	_	_	_	_
-17	tornar	tornar	VERB	v-inf|<hyfen>	Hyph=Yes|VerbForm=Inf	20	cop	_	_
-18	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	20	dobj	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	símbolo	símbolo	NOUN	n|M|S	Gender=Masc|Number=Sing	12	advcl	_	_
-21	pré-fabricado	pré-fabricado	ADJ	adj|M|S	Gender=Masc|Number=Sing	20	amod	_	_
+17	tornar	tornar	AUX	v-inf|<hyfen>	Hyph=Yes|VerbForm=Inf	20	cop	_	_
+18	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	20	obj	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	símbolo	símbolo	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	12	advcl	_	_
+21	pré-fabricado	pré-fabricado	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	20	amod	_	_
 22-23	duma	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp	AdpType=Prep	24	case	_	_
-23	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	geração	geração	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-25	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	26	nsubj	_	_
-26	sonhava	sonhar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	24	acl	_	_
-27	com	com	ADP	prp	AdpType=Prep	28	case	_	_
-28	Honolulu	Honolulu	PROPN	prop|M|S	Gender=Masc|Number=Sing	26	dobj	_	_
-29	e	e	CONJ	conj-c|<co-prparg>	_	28	cc	_	_
-30	pracinhas	pracinha	NOUN	n|M|P	Gender=Masc|Number=Plur	28	conj	_	_
-31	.	.	PUNCT	punc	_	4	punct	_	_
+22	de	de	ADP	PRP|@N<	_	24	case	_	_
+23	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	geração	geração	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
+25	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	26	nsubj	_	_
+26	sonhava	sonhar	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	24	acl	_	_
+27	com	com	ADP	PRP|@<PIV	_	28	case	_	_
+28	Honolulu	Honolulu	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	26	obj	_	_
+29	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	_
+30	pracinhas	pracinha	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	28	conj	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF753-10
-# sent_id = pt-ud-train.conllu#s8199/pt
-# orig_file_sentence = 082#99
+# text = Nessa época, o cantor forjou alguns de seus maiores sucessos como, para ficar num só exemplo, «It's Now or Never».
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-10
+# id 3157
 1-2	Nessa	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	essa	esse	DET	pron-det|<-sam>|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
-3	época	época	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-4	,	,	PUNCT	punc	_	7	punct	_	_
-5	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	cantor	cantor	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nsubj	_	_
-7	forjou	forjar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-8	alguns	algum	PRON	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	7	dobj	_	_
-9	de	de	ADP	prp	AdpType=Prep	12	case	_	_
-10	seus	seu	DET	pron-det|<poss|3S>|M|P	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	_	_
-11	maiores	grande	ADJ	adj|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur	12	amod	_	_
-12	sucessos	sucesso	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
-13	como	como	ADV	adv|<rel>|<prp>	PronType=Rel	12	advmod	_	_
-14	,	,	PUNCT	punc	_	13	punct	_	_
-15	para	para	ADP	prp	AdpType=Prep	16	mark	_	_
-16	ficar	ficar	VERB	v-inf	VerbForm=Inf	13	advcl	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	essa	esse	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
+3	época	época	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cantor	cantor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
+7	forjou	forjar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	alguns	algum	PRON	<quant>|DET|M|P|@<ACC	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	7	obj	_	_
+9	de	de	ADP	PRP|@N<	_	12	case	_	_
+10	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	12	det	_	_
+11	maiores	grande	ADJ	<KOMP>|<COMP>|ADJ|M|P|@>N	Degree=Cmp|Gender=Masc|Number=Plur	12	amod	_	_
+12	sucessos	sucesso	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
+13	como	como	ADV	<com>|PRP|@N<	PronType=Rel	12	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+15	para	para	ADP	PRP|@>N	_	16	mark	_	_
+16	ficar	ficar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	advcl	_	_
 17-18	num	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-18	um	um	DET	art|<-sam>|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-19	só	só	ADJ	adj|M|S	Gender=Masc|Number=Sing	20	amod	_	_
-20	exemplo	exemplo	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-21	,	,	PUNCT	punc	_	13	punct	_	_
-22	«	«	PUNCT	punc	_	13	punct	_	_
-23	It's	It\'s	PROPN	prop|M|S	_	13	nsubj	_	MWE=It's_Now_or_Never|MWEPOS=PROPN
-24	Now	Now	PROPN	PROPN	_	23	name	_	_
-25	or	or	PROPN	PROPN	_	23	name	_	_
-26	Never	Never	PROPN	PROPN	_	23	name	_	_
-27	»	»	PUNCT	punc	_	13	punct	_	_
-28	.	.	PUNCT	punc	_	7	punct	_	_
+17	em	em	ADP	<sam->|PRP|@<SA	_	20	case	_	_
+18	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+19	só	só	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	20	amod	_	_
+20	exemplo	exemplo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+22	«	«	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
+23	It's	It\'s	PROPN	_	_	13	nsubj	_	MWE=It's_Now_or_Never|MWEPOS=PROPN
+24	Now	Now	PROPN	_	_	23	flat	_	_
+25	or	or	PROPN	_	_	23	flat	_	_
+26	Never	Never	PROPN	_	_	23	flat	_	SpaceAfter=No
+27	»	»	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF753-11
-# sent_id = pt-ud-train.conllu#s8200/pt
-# orig_file_sentence = 082#100
-1	Também	também	ADV	adv	_	8	advmod	_	_
+# text = Também nesse período Elvis Aaron Presley sucumbiu ao monstro chamado Elvis Presley.
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-11
+# id 3158
+1	Também	também	ADV	ADV|@>A	_	8	advmod	_	_
 2-3	nesse	_	_	_	_	_	_	_	_
-2	em	em	ADP	prp|<sam->	AdpType=Prep	1	case	_	_
-3	esse	esse	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
-4	período	período	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-5	Elvis	Elvis	PROPN	prop|M|S	_	8	nsubj	_	MWE=Elvis_Aaron_Presley|MWEPOS=PROPN
-6	Aaron	Aaron	PROPN	PROPN	_	5	name	_	_
-7	Presley	Presley	PROPN	PROPN	_	5	name	_	_
-8	sucumbiu	sucumbir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	em	em	ADP	<sam->|PRP|@ADVL>	_	1	case	_	_
+3	esse	esse	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
+4	período	período	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	_
+5	Elvis	Elvis	PROPN	_	_	8	nsubj	_	MWE=Elvis_Aaron_Presley|MWEPOS=PROPN
+6	Aaron	Aaron	PROPN	_	_	5	flat	_	_
+7	Presley	Presley	PROPN	_	_	5	flat	_	_
+8	sucumbiu	sucumbir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9-10	ao	_	_	_	_	_	_	_	_
-9	a	a	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	monstro	monstro	NOUN	n|M|S	Gender=Masc|Number=Sing	8	dobj	_	_
-12	chamado	chamado	ADJ	adj|M|S	Gender=Masc|Number=Sing	11	amod	_	_
-13	Elvis	Elvis	PROPN	prop|M|S	_	11	nmod	_	MWE=Elvis_Presley|MWEPOS=PROPN
-14	Presley	Presley	PROPN	PROPN	_	13	name	_	_
-15	.	.	PUNCT	punc	_	8	punct	_	_
+9	a	a	ADP	<sam->|PRP|@<PIV	_	11	case	_	_
+10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	monstro	monstro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obj	_	_
+12	chamado	chamado	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
+13	Elvis	Elvis	PROPN	_	_	11	nmod	_	MWE=Elvis_Presley|MWEPOS=PROPN
+14	Presley	Presley	PROPN	_	_	13	flat	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF753-12
-# sent_id = pt-ud-train.conllu#s8201/pt
-# orig_file_sentence = 083#1
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	cantor	cantor	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	não	não	ADV	adv	_	5	neg	_	_
-4	esteve	estar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_
-5	livre	livre	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = O cantor não esteve livre do assédio e do culto de seus fãs nem mesmo durante os dois anos em que esteve ligado ao exército.
+# forest 1
+# source CETENFolha n=753 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF753-12
+# id 3159
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cantor	cantor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
+4	esteve	estar	AUX	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_
+5	livre	livre	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 6-7	do	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	assédio	assédio	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-9	e	e	CONJ	conj-c|<co-postad>	_	8	cc	_	_
+6	de	de	ADP	<first-cjt>|<sam->|PRP|@A<	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	assédio	assédio	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	_
+9	e	e	CCONJ	<co-a<>|<co-postad>|KC|@CO	_	12	cc	_	_
 10-11	do	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	culto	culto	NOUN	n|M|S	Gender=Masc|Number=Sing	8	conj	_	_
-13	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-14	seus	seu	DET	pron-det|<poss|3S>|M|P	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	_	_
-15	fãs	fã	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nmod	_	_
-16	nem	nem	NOUN	adv	_	5	advmod	_	MWE=nem_mesmo|MWEPOS=ADV
-17	mesmo	mesmo	ADJ	ADJ	_	16	mwe	_	_
-18	durante	durante	ADP	prp	AdpType=Prep	16	case	_	_
-19	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-20	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	21	nummod	_	_
-21	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	16	nmod	_	_
-22	em	em	ADP	prp	AdpType=Prep	23	case	_	_
-23	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	25	nmod	_	_
-24	esteve	estar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	cop	_	_
-25	ligado	ligar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	21	acl	_	_
+10	de	de	ADP	<cjt>|<sam->|PRP|@A<	_	12	case	_	_
+11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	culto	culto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	conj	_	_
+13	de	de	ADP	PRP|@N<	_	15	case	_	_
+14	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	_	_
+15	fãs	fã	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
+16	nem	nem	NOUN	PRP|@>A	_	5	advmod	_	MWE=nem_mesmo|MWEPOS=ADV
+17	mesmo	mesmo	ADJ	N|M|S|@P<	_	16	fixed	_	_
+18	durante	durante	ADP	PRP|@<ADVL	_	16	case	_	_
+19	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
+20	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	21	nummod	_	_
+21	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	obl	_	_
+22	em	em	ADP	PRP|@N<ARG	_	23	case	_	_
+23	que	que	PRON	<rel>|INDP|M|P|@SUB	Gender=Masc|Number=Plur|PronType=Rel	25	nmod	_	_
+24	esteve	estar	AUX	<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	cop	_	_
+25	ligado	ligar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	21	acl	_	_
 26-27	ao	_	_	_	_	_	_	_	_
-26	a	a	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-27	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	exército	exército	NOUN	n|M|S	Gender=Masc|Number=Sing	25	dobj	_	_
-29	.	.	PUNCT	punc	_	5	punct	_	_
+26	a	a	ADP	<sam->|PRP|@<PIV	_	28	case	_	_
+27	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	exército	exército	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	25	obj	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 

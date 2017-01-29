@@ -1,229 +1,235 @@
-# distance_from_new = 0
-# new_sent_id = CP131-1
-# sent_id = pt-ud-train.conllu#s674/pt
-# orig_file_sentence = 007#74
-1	Atrás	atrás	NOUN	prp	_	3	case	_	MWE=Atrás_de|MWEPOS=ADP
-2	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-3	Kerrigan	Kerrigan	PROPN	prop|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
+# text = Atrás de Kerrigan na lista das grandes favoritas está a japonesa Yuka Stao, quarta nos «Mundiais» e que nos últimos tempos bateu patinadoras de grande nome como a alemã Tanja Szewczenko e a canadiana Josée Chouinard.
+# forest 1
+# source CETEMPúblico n=131 sec=des sem=94a
+# sent_id = CP131-1
+# id 674
+1	Atrás	atrás	NOUN	ADV|@SA>	_	3	case	_	MWE=Atrás_de|MWEPOS=ADP
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	Kerrigan	Kerrigan	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	_
 4-5	na	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
-6	lista	lista	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
+4	em	em	ADP	<sam->|PRP|@ADVL>	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
+6	lista	lista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	_
 7-8	das	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-8	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	10	det	_	_
-9	grandes	grande	ADJ	adj|F|P	Gender=Fem|Number=Plur	10	amod	_	_
-10	favoritas	favorito	ADJ	adj|F|P	Gender=Fem|Number=Plur	6	amod	_	_
-11	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-12	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	japonesa	japonesa	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nsubj	_	_
-14	Yuka	Yuka	PROPN	prop|M|S	_	13	nmod	_	MWE=Yuka_Stao|MWEPOS=PROPN
-15	Stao	Stao	PROPN	PROPN	_	14	name	_	_
-16	,	,	PUNCT	punc	_	13	punct	_	_
-17	quarta	quarto	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	13	amod	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+8	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	10	det	_	_
+9	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	10	amod	_	_
+10	favoritas	favorito	ADJ	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	6	amod	_	_
+11	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	japonesa	japonesa	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	11	nsubj	_	_
+14	Yuka	Yuka	PROPN	_	_	13	nmod	_	MWE=Yuka_Stao|MWEPOS=PROPN
+15	Stao	Stao	PROPN	_	_	14	flat	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+17	quarta	quarto	ADJ	<first-cjt>|<NUM-ord>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing|NumType=Ord	13	amod	_	_
 18-19	nos	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-19	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-20	«	«	PUNCT	punc	_	21	punct	_	_
-21	Mundiais	Mundiais	PROPN	prop|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-22	»	»	PUNCT	punc	_	21	punct	_	_
-23	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	17	cc	_	_
-24	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	29	nsubj	_	_
+18	em	em	ADP	<sam->|PRP|@A<	_	21	case	_	_
+19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
+20	«	«	PUNCT	PU|@PU	_	21	punct	_	SpaceAfter=No
+21	Mundiais	Mundiais	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	17	obl	_	SpaceAfter=No
+22	»	»	PUNCT	PU|@PU	_	21	punct	_	_
+23	e	e	CCONJ	<co-fmc>|<co-vfin>|<co-fcl>|KC|@CO	_	29	cc	_	_
+24	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	29	nsubj	_	_
 25-26	nos	_	_	_	_	_	_	_	_
-25	em	em	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-26	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_
-27	últimos	último	ADJ	adj|<NUM-ord>|M|P	Gender=Masc|Number=Plur|NumType=Ord	28	amod	_	_
-28	tempos	tempo	NOUN	n|M|P	Gender=Masc|Number=Plur	29	nmod	_	_
-29	bateu	bater	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	conj	_	_
-30	patinadoras	patinador	NOUN	n|F|P	Gender=Fem|Number=Plur	29	dobj	_	_
-31	de	de	ADP	prp	AdpType=Prep	33	case	_	_
-32	grande	grande	ADJ	adj|M|S	Gender=Masc|Number=Sing	33	amod	_	_
-33	nome	nome	NOUN	n|M|S	Gender=Masc|Number=Sing	30	nmod	_	_
-34	como	como	ADV	adv|<rel>|<prp>	PronType=Rel	30	advmod	_	_
-35	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
-36	alemã	alemão	NOUN	n|F|S	Gender=Fem|Number=Sing	34	nsubj	_	_
-37	Tanja	Tanja	PROPN	prop|F|S	_	36	nmod	_	MWE=Tanja_Szewczenko|MWEPOS=PROPN
-38	Szewczenko	Szewczenko	PROPN	PROPN	_	37	name	_	_
-39	e	e	CONJ	conj-c	_	36	cc	_	_
-40	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	canadiana	canadiana	NOUN	n|F|S	Gender=Fem|Number=Sing	36	conj	_	_
-42	Josée	Josée	PROPN	prop|F|S	_	41	nmod	_	MWE=Josée_Chouinard|MWEPOS=PROPN
-43	Chouinard	Chouinard	PROPN	PROPN	_	42	name	_	_
-44	.	.	PUNCT	punc	_	11	punct	_	_
+25	em	em	ADP	<sam->|PRP|@ADVL>	_	28	case	_	_
+26	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_
+27	últimos	último	ADJ	<NUM-ord>|ADJ|M|P|@>N	Gender=Masc|Number=Plur|NumType=Ord	28	amod	_	_
+28	tempos	tempo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	29	obl	_	_
+29	bateu	bater	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	conj	_	_
+30	patinadoras	patinador	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	29	obj	_	_
+31	de	de	ADP	PRP|@N<	_	33	case	_	_
+32	grande	grande	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	33	amod	_	_
+33	nome	nome	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	_
+34	como	como	ADV	<com>|PRP|@N<	PronType=Rel	30	advmod	_	_
+35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
+36	alemã	alemão	NOUN	<first-cjt>|<np-def>|N|F|S|@N<	Gender=Fem|Number=Sing	34	nsubj	_	_
+37	Tanja	Tanja	PROPN	_	_	36	nmod	_	MWE=Tanja_Szewczenko|MWEPOS=PROPN
+38	Szewczenko	Szewczenko	PROPN	_	_	37	flat	_	_
+39	e	e	CCONJ	<co-postnom>|KC|@CO	_	41	cc	_	_
+40	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+41	canadiana	canadiana	NOUN	<cjt>|<np-def>|N|F|S|@N<	Gender=Fem|Number=Sing	36	conj	_	_
+42	Josée	Josée	PROPN	_	_	41	nmod	_	MWE=Josée_Chouinard|MWEPOS=PROPN
+43	Chouinard	Chouinard	PROPN	_	_	42	flat	_	SpaceAfter=No
+44	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP131-2
-# sent_id = pt-ud-train.conllu#s675/pt
-# orig_file_sentence = 007#75
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	China	China	PROPN	prop|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	aposta	apostar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	tudo	tudo	PRON	pron-indp|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	3	dobj	_	_
-5	em	em	ADP	prp	AdpType=Prep	6	case	_	_
-6	Chen	Chen	PROPN	prop|F|S	_	3	dobj	_	MWE=Chen_Lu|MWEPOS=PROPN
-7	Lu	Lu	PROPN	PROPN	_	6	name	_	_
-8	,	,	PUNCT	punc	_	6	punct	_	_
-9	terceira	terceiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	10	advmod	_	_
-10	classificada	classificar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
+# text = A China aposta tudo em Chen Lu, terceira classificada nos últimos dois «Mundiais», apontada como a atleta que melhor alia a técnica e a beleza.
+# forest 1
+# source CETEMPúblico n=131 sec=des sem=94a
+# sent_id = CP131-2
+# id 675
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	China	China	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	aposta	apostar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	tudo	tudo	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	3	obj	_	_
+5	em	em	ADP	PRP|@<PIV	_	6	case	_	_
+6	Chen	Chen	PROPN	_	_	3	obj	_	MWE=Chen_Lu|MWEPOS=PROPN
+7	Lu	Lu	PROPN	_	_	6	flat	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+9	terceira	terceiro	ADJ	<mente>|<NUM-ord>|ADJ|F|S|@>A	Gender=Fem|Number=Sing|NumType=Ord	10	advmod	_	_
+10	classificada	classificar	VERB	<mv>|<first-cjt>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
 11-12	nos	_	_	_	_	_	_	_	_
-11	em	em	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-12	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
-13	últimos	último	ADJ	adj|<NUM-ord>|M|P	Gender=Masc|Number=Plur|NumType=Ord	16	amod	_	_
-14	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	16	nummod	_	_
-15	«	«	PUNCT	punc	_	16	punct	_	_
-16	Mundiais	Mundiais	PROPN	prop|M|P	Gender=Masc|Number=Plur	10	nmod	_	_
-17	»	»	PUNCT	punc	_	16	punct	_	_
-18	,	,	PUNCT	punc	_	10	punct	_	_
-19	apontada	apontar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	10	conj	_	_
-20	como	como	ADV	adv	_	19	advmod	_	_
-21	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	atleta	atleta	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nsubj	_	_
-23	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	25	nsubj	_	_
-24	melhor	melhor	ADV	adv	_	25	advmod	_	_
-25	alia	aliar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl	_	_
-26	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	técnica	técnica	NOUN	n|F|S	Gender=Fem|Number=Sing	25	dobj	_	_
-28	e	e	CONJ	conj-c|<co-acc>	_	27	cc	_	_
-29	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
-30	beleza	beleza	NOUN	n|F|S	Gender=Fem|Number=Sing	27	conj	_	_
-31	.	.	PUNCT	punc	_	3	punct	_	_
+11	em	em	ADP	<sam->|PRP|@A<ADVL	_	16	case	_	_
+12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
+13	últimos	último	ADJ	<NUM-ord>|ADJ|M|P|@>N	Gender=Masc|Number=Plur|NumType=Ord	16	amod	_	_
+14	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	16	nummod	_	_
+15	«	«	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+16	Mundiais	Mundiais	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	SpaceAfter=No
+17	»	»	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+19	apontada	apontar	VERB	<cjt>|<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	10	conj	_	_
+20	como	como	ADV	<prd>|PRP|@<SC	_	19	advmod	_	_
+21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	atleta	atleta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nsubj	_	_
+23	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	25	nsubj	_	_
+24	melhor	melhor	ADV	ADV|@ADVL>	_	25	advmod	_	_
+25	alia	aliar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	acl	_	_
+26	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	técnica	técnica	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	25	obj	_	_
+28	e	e	CCONJ	<co-acc>|KC|@CO	_	30	cc	_	_
+29	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
+30	beleza	beleza	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	27	conj	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP131-3
-# sent_id = pt-ud-train.conllu#s676/pt
-# orig_file_sentence = 007#76
-1	Só	só	ADV	adv	_	2	advmod	_	_
-2	depois	depois	ADV	adv	_	3	advmod	_	_
-3	surge	surgir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	Tonya	Tonya	PROPN	prop|F|S	_	3	nsubj	_	MWE=Tonya_Harding|MWEPOS=PROPN
-5	Harding	Harding	PROPN	PROPN	_	4	name	_	_
-6	,	,	PUNCT	punc	_	4	punct	_	_
-7	campeã	campeão	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
+# text = Só depois surge Tonya Harding, campeã dos Estados Unidos.
+# forest 1
+# source CETEMPúblico n=131 sec=des sem=94a
+# sent_id = CP131-3
+# id 676
+1	Só	só	ADV	ADV|@>A	_	2	advmod	_	_
+2	depois	depois	ADV	ADV|@ADVL>	_	3	advmod	_	_
+3	surge	surgir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	Tonya	Tonya	PROPN	_	_	3	nsubj	_	MWE=Tonya_Harding|MWEPOS=PROPN
+5	Harding	Harding	PROPN	_	_	4	flat	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+7	campeã	campeão	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	4	nmod	_	_
 8-9	dos	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
-10	Estados	Estados	PROPN	prop|M|P	_	7	nmod	_	MWE=Estados_Unidos|MWEPOS=PROPN
-11	Unidos	Unidos	PROPN	PROPN	_	10	name	_	_
-12	.	.	PUNCT	punc	_	3	punct	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	Estados	Estados	PROPN	PROP|M|P|@P<	_	7	nmod	_	MWE=Estados_Unidos|MWEPOS=PROPN
+11	Unidos	Unidos	PROPN	PROP|@N<	_	10	flat	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP131-4
-# sent_id = pt-ud-train.conllu#s677/pt
-# orig_file_sentence = 007#77
-1	E	e	CONJ	conj-c	_	5	cc	_	_
-2	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-3	grande	grande	ADJ	adj|F|S	Gender=Fem|Number=Sing	4	amod	_	_
-4	dúvida	dúvida	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nsubj	_	_
-5	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	se	se	SCONJ	conj-s	_	19	mark	_	_
-7	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
-8	suspeitas	suspeita	NOUN	n|F|P	Gender=Fem|Number=Plur	19	nsubj	_	_
+# text = E a grande dúvida é se as suspeitas da agressão à sua rival serão um «handicap» ou uma motivação.
+# forest 1
+# source CETEMPúblico n=131 sec=des sem=94a
+# sent_id = CP131-4
+# id 677
+1	E	e	CCONJ	KC|@CO	_	5	cc	_	_
+2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+3	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	4	amod	_	_
+4	dúvida	dúvida	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
+5	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	se	se	SCONJ	KS|@SUB	_	19	mark	_	_
+7	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
+8	suspeitas	suspeita	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	19	nsubj	_	_
 9-10	da	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	11	det	_	_
-11	agressão	agressão	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	11	det	_	_
+11	agressão	agressão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 12-13	à	_	_	_	_	_	_	_	_
-12	a	a	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	15	det	_	_
-14	sua	seu	DET	pron-det|<poss|3S>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	_	_
-15	rival	rival	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-16	serão	ser	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	19	cop	_	_
-17	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-18	«	«	PUNCT	punc	_	19	punct	_	_
-19	handicap	handicap	NOUN	n|M|S	Gender=Masc|Number=Sing	5	ccomp	_	_
-20	»	»	PUNCT	punc	_	19	punct	_	_
-21	ou	ou	CONJ	conj-c|<co-sc>	_	19	cc	_	_
-22	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	motivação	motivação	NOUN	n|F|S	Gender=Fem|Number=Sing	19	conj	_	_
-24	.	.	PUNCT	punc	_	5	punct	_	_
+12	a	a	ADP	<sam->|PRP|@N<	_	15	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	15	det	_	_
+14	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	15	det	_	_
+15	rival	rival	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+16	serão	ser	AUX	<mv>|V|FUT|3P|IND|@FS-<SC	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	19	cop	_	_
+17	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+18	«	«	PUNCT	PU|@PU	_	19	punct	_	SpaceAfter=No
+19	handicap	handicap	NOUN	<first-cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	5	ccomp	_	SpaceAfter=No
+20	»	»	PUNCT	PU|@PU	_	23	punct	_	_
+21	ou	ou	CCONJ	<co-sc>|KC|@CO	_	23	cc	_	_
+22	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	motivação	motivação	NOUN	<cjt>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	19	conj	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP131-5
-# sent_id = pt-ud-train.conllu#s678/pt
-# orig_file_sentence = 007#78
-1	Com	com	ADP	prp	AdpType=Prep	3	case	_	_
-2	28	28	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
-3	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	34	nmod	_	_
-4	e	e	CONJ	conj-c	_	3	cc	_	_
-5	tecnicamente	tecnicamente	ADV	adv	_	6	advmod	_	_
-6	ultrapassada	ultrapassar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	3	conj	_	_
-7	por	por	ADP	prp	AdpType=Prep	10	case	_	_
-8	todas	todo	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	10	det	_	_
-9	estas	este	DET	pron-det|<dem>|F|P	Gender=Fem|Number=Plur|PronType=Dem	10	det	_	_
-10	jovens	jovem	ADJ	adj|<n>|F|P	Gender=Fem|Number=Plur	6	dobj	_	_
-11	,	,	PUNCT	punc	_	10	punct	_	_
-12	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	14	nsubj	_	_
-13	não	não	ADV	adv	_	14	neg	_	_
-14	teriam	ter	VERB	v-fin|COND|3P	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	10	acl	_	_
-15	mais	mais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	17	advmod	_	MWE=mais_de|MWEPOS=ADV
-16	de	de	ADP	ADP	AdpType=Prep	15	mwe	_	_
-17	dez	dez	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
-18	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	14	dobj	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-20	idade	idade	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nmod	_	_
-21	quando	quando	ADV	adv|<rel>|<ks>	PronType=Rel	22	advmod	_	_
-22	conquistou	conquistar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
-23	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-24	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	26	det	_	_
-25	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	26	amod	_	_
-26	medalha	medalha	NOUN	n|F|S	Gender=Fem|Number=Sing	22	dobj	_	_
-27	de	de	ADP	prp	AdpType=Prep	28	case	_	_
-28	ouro	ouro	NOUN	n|M|S	Gender=Masc|Number=Sing	26	nmod	_	_
-29	olímpica	olímpico	ADJ	adj|F|S	Gender=Fem|Number=Sing	28	amod	_	_
-30	,	,	PUNCT	punc	_	22	punct	_	_
-31	em	em	ADP	prp	AdpType=Prep	32	case	_	_
-32	Sarajevo/84	Sarajevo/84	PROPN	prop|M/F|S	Number=Sing	22	nmod	_	_
-33	,	,	PUNCT	punc	_	34	punct	_	_
-34	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-35	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
-36	«	«	PUNCT	punc	_	37	punct	_	_
-37	senhora	senhor	NOUN	n|F|S	Gender=Fem|Number=Sing	34	nsubj	_	_
-38	patinagem	patinagem	NOUN	n|F|S	Gender=Fem|Number=Sing	37	nmod	_	_
-39	»	»	PUNCT	punc	_	37	punct	_	_
-40	Katarina	Katarina	PROPN	prop|F|S	_	37	nmod	_	MWE=Katarina_Witt|MWEPOS=PROPN
-41	Witt	Witt	PROPN	PROPN	_	40	name	_	_
-42	,	,	PUNCT	punc	_	37	punct	_	_
-43	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
-44	mulher	homem	NOUN	n|F|S	Gender=Fem|Number=Sing	37	nmod	_	_
-45	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	46	nsubj	_	_
-46	explicou	explicar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	44	acl	_	_
-47	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
-48	facto	facto	NOUN	n|M|S	Gender=Masc|Number=Sing	46	dobj	_	_
-49	de	de	ADP	prp	AdpType=Prep	52	case	_	_
-50	ser	ser	VERB	v-inf	VerbForm=Inf	52	cop	_	_
-51	«	«	PUNCT	punc	_	52	punct	_	_
-52	sexy	sexy	ADJ	adj|F|S	Gender=Fem|Number=Sing	48	acl	_	_
-53	»	»	PUNCT	punc	_	52	punct	_	_
-54	em	em	ADP	prp	AdpType=Prep	55	case	_	_
-55	pista	pista	NOUN	n|F|S	Gender=Fem|Number=Sing	52	nmod	_	_
+# text = Com 28 anos e tecnicamente ultrapassada por todas estas jovens, que não teriam mais de dez anos de idade quando conquistou a sua primeira medalha de ouro olímpica, em Sarajevo/84, está a «senhora patinagem» Katarina Witt, a mulher que explicou o facto de ser «sexy» em pista da seguinte forma:
+# forest 1
+# source CETEMPúblico n=131 sec=des sem=94a
+# sent_id = CP131-5
+# id 678
+1	Com	com	ADP	<first-cjt>|PRP|@PRED>	_	3	case	_	_
+2	28	28	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
+3	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	34	obl	_	_
+4	e	e	CCONJ	<co-pred>|KC|@CO	_	6	cc	_	_
+5	tecnicamente	tecnicamente	ADV	ADV|@ADVL>	_	6	advmod	_	_
+6	ultrapassada	ultrapassar	VERB	<cjt>|<mv>|V|PCP|F|S|@PRED>	Gender=Fem|Number=Sing|VerbForm=Part	3	conj	_	_
+7	por	por	ADP	<cjt>|PRP|@PASS	_	10	case	_	_
+8	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	10	det	_	_
+9	estas	este	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	10	det	_	_
+10	jovens	jovem	ADJ	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	6	obj	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+12	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	14	nsubj	_	_
+13	não	não	ADV	_	Polarity=Neg	14	advmod	_	_
+14	teriam	ter	VERB	<cjt>|<mv>|V|COND|3P|@FS-N<PRED	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	10	acl	_	_
+15	mais	mais	ADV	ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	17	advmod	_	MWE=mais_de|MWEPOS=ADV
+16	de	de	ADP	<prp>|PRP|@A<	_	15	fixed	_	_
+17	dez	dez	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
+18	anos	ano	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
+19	de	de	ADP	PRP|@N<	_	20	case	_	_
+20	idade	idade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
+21	quando	quando	ADV	<rel>|ADV|@ADVL>	PronType=Rel	22	advmod	_	_
+22	conquistou	conquistar	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	_
+23	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+24	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	26	det	_	_
+25	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	26	amod	_	_
+26	medalha	medalha	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	22	obj	_	_
+27	de	de	ADP	PRP|@N<	_	28	case	_	_
+28	ouro	ouro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
+29	olímpica	olímpico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	28	amod	_	SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+31	em	em	ADP	PRP|@<ADVL	_	32	case	_	_
+32	Sarajevo/84	Sarajevo/84	PROPN	PROP|M|S|@P<	Number=Sing	22	obl	_	SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+34	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+36	«	«	PUNCT	PU|@PU	_	37	punct	_	SpaceAfter=No
+37	senhora	senhor	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	34	nsubj	_	_
+38	patinagem	patinagem	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	37	nmod	_	SpaceAfter=No
+39	»	»	PUNCT	PU|@PU	_	37	punct	_	_
+40	Katarina	Katarina	PROPN	_	_	37	nmod	_	MWE=Katarina_Witt|MWEPOS=PROPN
+41	Witt	Witt	PROPN	_	_	40	flat	_	SpaceAfter=No
+42	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+43	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
+44	mulher	homem	NOUN	<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	37	nmod	_	_
+45	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	46	nsubj	_	_
+46	explicou	explicar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	44	acl	_	_
+47	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
+48	facto	facto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	46	obj	_	_
+49	de	de	ADP	PRP|@N<ARG	_	52	case	_	_
+50	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	52	cop	_	_
+51	«	«	PUNCT	PU|@PU	_	52	punct	_	SpaceAfter=No
+52	sexy	sexy	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	48	acl	_	SpaceAfter=No
+53	»	»	PUNCT	PU|@PU	_	52	punct	_	_
+54	em	em	ADP	PRP|@<ADVL	_	55	case	_	_
+55	pista	pista	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	52	obl	_	_
 56-57	da	_	_	_	_	_	_	_	_
-56	de	de	ADP	prp|<sam->	AdpType=Prep	59	case	_	_
-57	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	59	det	_	_
-58	seguinte	seguinte	ADJ	adj|F|S	Gender=Fem|Number=Sing	59	amod	_	_
-59	forma	forma	NOUN	n|F|S	Gender=Fem|Number=Sing	46	nmod	_	_
-60	:	:	PUNCT	punc	_	34	punct	_	_
+56	de	de	ADP	<sam->|PRP|@<ADVL	_	59	case	_	_
+57	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	59	det	_	_
+58	seguinte	seguinte	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	59	amod	_	_
+59	forma	forma	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	46	obl	_	SpaceAfter=No
+60	:	:	PUNCT	PU|@PU	_	34	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP131-6
-# sent_id = pt-ud-train.conllu#s679/pt
-# orig_file_sentence = 007#79
-1	«	«	PUNCT	punc	_	6	punct	_	_
-2	Antes	antes	ADV	adv	_	6	advmod	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	mark	_	_
-4	entrar	entrar	VERB	v-inf	VerbForm=Inf	2	advcl	_	_
-5	,	,	PUNCT	punc	_	6	punct	_	_
-6	escolho	escolher	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	homem	homem	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
+# text = «Antes de entrar, escolho um homem na assistência e danço só para ele.»
+# forest 1
+# source CETEMPúblico n=131 sec=des sem=94a
+# sent_id = CP131-6
+# id 679
+1	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+2	Antes	antes	ADV	ADV|@ADVL>	_	6	advmod	_	_
+3	de	de	ADP	PRP|@A<ARG	_	4	mark	_	_
+4	entrar	entrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+6	escolho	escolher	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	homem	homem	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
 9-10	na	_	_	_	_	_	_	_	_
-9	em	em	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	11	det	_	_
-11	assistência	assistência	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-12	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	6	cc	_	_
-13	danço	dançar	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	conj	_	_
-14	só	só	ADV	adv	_	13	advmod	_	_
-15	para	para	ADP	prp	AdpType=Prep	14	case	_	_
-16	ele	ele	PRON	pron-pers|M|3S|PIV	Case=Acc|Gender=Masc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	14	nmod	_	_
-17	.	.	PUNCT	punc	_	6	punct	_	_
-18	»	»	PUNCT	punc	_	6	punct	_	_
+9	em	em	ADP	<sam->|PRP|@<ADVL	_	11	case	_	_
+10	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	11	det	_	_
+11	assistência	assistência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+12	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	_
+13	danço	dançar	VERB	<mv>|<cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	conj	_	_
+14	só	só	ADV	ADV|@>A	_	13	advmod	_	_
+15	para	para	ADP	PRP|@<ADVL	_	14	case	_	_
+16	ele	ele	PRON	PERS|M|3S|PIV|@P<	Case=Acc|Gender=Masc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	14	obl	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+18	»	»	PUNCT	PU|@PU	_	6	punct	_	_
 

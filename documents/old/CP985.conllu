@@ -1,230 +1,235 @@
-# distance_from_new = 0
-# new_sent_id = CP985-1
-# sent_id = pt-ud-test.conllu#s15/pt
-# orig_file_sentence = 001#15
-1	Eduardo	Eduardo	PROPN	prop|M|S	_	3	nsubj	_	MWE=Eduardo_Lourenço|MWEPOS=PROPN
-2	Lourenço	Lourenço	PROPN	PROPN	_	1	name	_	_
-3	fechou	fechar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	,	,	PUNCT	punc	_	3	punct	_	_
+# text = Eduardo Lourenço fechou, na sexta-feira, ao fim da tarde, os trabalhos da VI Reunião Internacional de Camonistas, que decorreu durante quatro dias na Universidade de Coimbra, com uma inspirada «lição de encerramento» em torno das ligações entre Camões e Petrarca e da luz platónica que sobre ambos terá, ou não, incidido.
+# source = CETEMPúblico n=985 sec=clt sem=96a
+# sent_id = CP985-1
+# id = 5059
+# d2d = punct(terá,,) -> punct(incidido,,)  #106
+# d2d = cc(terá,ou) -> cc(incidido,ou)  #106
+# d2d = punct(terá,,) -> punct(incidido,,)  #106
+# d2d = cc(Camões,e) -> cc(Petrarca,e)  #106
+# d2d = cc(ligações,e) -> cc(luz,e)  #106
+1	Eduardo	Eduardo	PROPN	_	_	3	nsubj	_	MWE=Eduardo_Lourenço|MWEPOS=PROPN
+2	Lourenço	Lourenço	PROPN	_	_	1	flat	_	_
+3	fechou	fechar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5-6	na	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	sexta-feira	sexta-feira	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-8	,	,	PUNCT	punc	_	7	punct	_	_
+5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	sexta-feira	sexta-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9-10	ao	_	_	_	_	_	_	_	_
-9	a	a	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-11	fim	fim	NOUN	NOUN	_	9	mwe	_	_
+9	a	a	ADP	<sam->|PRP|@N<	_	7	case	_	_
+10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+11	fim	fim	NOUN	N|M|S|@P<	_	9	fixed	_	_
 12-13	da	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-14	tarde	tarde	ADV	ADV	_	10	mwe	_	_
-15	,	,	PUNCT	punc	_	7	punct	_	_
-16	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
-17	trabalhos	trabalho	NOUN	n|M|P	Gender=Masc|Number=Plur	3	dobj	_	_
+12	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+13	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+14	tarde	tarde	ADV	N|F|S|@P<	_	9	fixed	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+16	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	trabalhos	trabalho	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
 18-19	da	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	VI	VI	ADJ	prop|F|S	NumForm=Roman|NumType=Ord	17	nmod	_	MWE=VI_Reunião_Internacional_de_Camonistas|MWEPOS=PROPN
-21	Reunião	Reunião	PROPN	PROPN	_	20	name	_	_
-22	Internacional	Internacional	PROPN	PROPN	_	20	name	_	_
-23	de	de	ADP	ADP	AdpType=Prep	24	case	_	_
-24	Camonistas	Camonistas	PROPN	PROPN	_	20	name	_	_
-25	,	,	PUNCT	punc	_	20	punct	_	_
-26	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	27	nsubj	_	_
-27	decorreu	decorrer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	acl	_	_
-28	durante	durante	ADP	prp	AdpType=Prep	30	case	_	_
-29	quatro	quatro	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	30	nummod	_	_
-30	dias	dia	NOUN	n|M|P	Gender=Masc|Number=Plur	27	nmod	_	_
+18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	VI	VI	PROPN	_	_	17	nmod	_	MWE=VI_Reunião_Internacional_de_Camonistas|MWEPOS=PROPN
+21	Reunião	Reunião	PROPN	_	_	20	flat	_	_
+22	Internacional	Internacional	PROPN	_	_	20	flat	_	_
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	Camonistas	Camonistas	PROPN	PROP|@P<	_	20	flat	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+26	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	27	nsubj	_	_
+27	decorreu	decorrer	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	acl	_	_
+28	durante	durante	ADP	PRP|@<ADVL	_	30	case	_	_
+29	quatro	quatro	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	30	nummod	_	_
+30	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	27	obl	_	_
 31-32	na	_	_	_	_	_	_	_	_
-31	em	em	ADP	prp|<sam->	AdpType=Prep	33	case	_	_
-32	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	Universidade	Universidade	PROPN	prop|F|S	_	27	nmod	_	MWE=Universidade_de_Coimbra|MWEPOS=PROPN
-34	de	de	ADP	ADP	AdpType=Prep	35	case	_	_
-35	Coimbra	Coimbra	PROPN	PROPN	_	33	name	_	_
-36	,	,	PUNCT	punc	_	20	punct	_	_
-37	com	com	ADP	prp	AdpType=Prep	41	case	_	_
-38	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-39	inspirada	inspirar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	41	acl	_	_
-40	«	«	PUNCT	punc	_	41	punct	_	_
-41	lição	lição	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-42	de	de	ADP	prp	AdpType=Prep	43	case	_	_
-43	encerramento	encerramento	NOUN	n|M|S	Gender=Masc|Number=Sing	41	nmod	_	_
-44	»	»	PUNCT	punc	_	41	punct	_	_
-45	em	em	ADP	prp|<sam->	AdpType=Prep	49	case	_	MWE=em_torno_de|MWEPOS=ADP
-46	torno	torno	NOUN	NOUN	_	45	mwe	_	_
+31	em	em	ADP	<sam->|PRP|@<ADVL	_	33	case	_	_
+32	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+33	Universidade	Universidade	PROPN	PROP|F|S|@P<	_	27	obl	_	MWE=Universidade_de_Coimbra|MWEPOS=PROPN
+34	de	de	ADP	PRP|@N<	_	35	case	_	_
+35	Coimbra	Coimbra	PROPN	PROP|@P<	_	33	flat	_	SpaceAfter=No
+36	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+37	com	com	ADP	PRP|@<ADVL	_	41	case	_	_
+38	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+39	inspirada	inspirar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	41	acl	_	_
+40	«	«	PUNCT	PU|@PU	_	41	punct	_	SpaceAfter=No
+41	lição	lição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
+42	de	de	ADP	PRP|@N<	_	43	case	_	_
+43	encerramento	encerramento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	41	nmod	_	SpaceAfter=No
+44	»	»	PUNCT	PU|@PU	_	41	punct	_	_
+45	em	em	ADP	<first-cjt>|<sam->|PRP|@N<	_	49	case	_	MWE=em_torno_de|MWEPOS=ADP
+46	torno	torno	NOUN	N|@P<	_	45	fixed	_	_
 47-48	das	_	_	_	_	_	_	_	_
-47	de	de	ADP	ADP	AdpType=Prep	45	mwe	_	_
-48	as	o	DET	art|<artd>|<-sam>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	49	det	_	_
-49	ligações	ligação	NOUN	n|F|P	Gender=Fem|Number=Plur	41	nmod	_	_
-50	entre	entre	ADP	prp	AdpType=Prep	51	case	_	_
-51	Camões	Camões	PROPN	prop|M|S	Gender=Masc|Number=Sing	49	nmod	_	_
-52	e	e	CONJ	conj-c|<co-prparg>	_	51	cc	_	_
-53	Petrarca	Petrarca	PROPN	prop|M|S	Gender=Masc|Number=Sing	51	conj	_	_
-54	e	e	CONJ	conj-c|<co-postnom>	_	49	cc	_	_
+47	de	de	ADP	PRP|@N<	_	45	fixed	_	_
+48	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	49	det	_	_
+49	ligações	ligação	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	41	nmod	_	_
+50	entre	entre	ADP	PRP|@N<	_	51	case	_	_
+51	Camões	Camões	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	49	nmod	_	_
+52	e	e	CCONJ	<co-prparg>|KC|@CO	_	53	cc	_	_
+53	Petrarca	Petrarca	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	51	conj	_	_
+54	e	e	CCONJ	<co-postnom>|KC|@CO	_	57	cc	_	_
 55-56	da	_	_	_	_	_	_	_	_
-55	de	de	ADP	prp|<sam->	AdpType=Prep	57	case	_	_
-56	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
-57	luz	luz	NOUN	n|F|S	Gender=Fem|Number=Sing	49	conj	_	_
-58	platónica	platónico	ADJ	adj|F|S	Gender=Fem|Number=Sing	57	amod	_	_
-59	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	67	nsubj	_	_
-60	sobre	sobre	ADP	prp	AdpType=Prep	61	case	_	_
-61	ambos	ambos	PRON	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	67	advmod	_	_
-62	terá	ter	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	67	aux	_	_
-63	,	,	PUNCT	punc	_	67	punct	_	_
-64	ou	ou	CONJ	conj-c|<co-pcv>	_	67	cc	_	_
-65	não	não	ADV	adv|<Es>	_	67	conj	_	_
-66	,	,	PUNCT	punc	_	67	punct	_	_
-67	incidido	incidir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	57	acl	_	_
-68	.	.	PUNCT	punc	_	3	punct	_	_
+55	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	57	case	_	_
+56	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
+57	luz	luz	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	49	conj	_	_
+58	platónica	platónico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	57	amod	_	_
+59	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	62	nsubj	_	_
+60	sobre	sobre	ADP	PRP|@ADVL>	_	61	case	_	_
+61	ambos	ambos	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	62	advmod	_	_
+62	terá	ter	VERB	<mv>|<cjt>|<first-cjt>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	57	acl	_	SpaceAfter=No
+63	,	,	PUNCT	PU|@PU	_	65	punct	_	_
+64	ou	ou	CCONJ	<co-pcv>|KC|@CO	_	65	cc	_	_
+65	não	não	ADV	_	Polarity=Neg	62	conj	_	SpaceAfter=No
+66	,	,	PUNCT	PU|@PU	_	62	punct	_	_
+67	incidido	incidir	VERB	<mv>|<cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	62	ccomp	_	SpaceAfter=No
+68	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP985-2
-# sent_id = pt-ud-test.conllu#s16/pt
-# orig_file_sentence = 001#16
-1	Aníbal	Aníbal	PROPN	prop|M|S	_	21	nsubj	_	MWE=Aníbal_Pinto_de_Castro|MWEPOS=PROPN
-2	Pinto	Pinto	PROPN	PROPN	_	1	name	_	_
-3	de	de	ADP	ADP	AdpType=Prep	4	case	_	_
-4	Castro	Castro	PROPN	PROPN	_	1	name	_	_
-5	,	,	PUNCT	punc	_	1	punct	_	_
-6	organizador	organizador	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
+# text = Aníbal Pinto de Castro, organizador do encontro, obrigado pela função a proferir algumas palavras finais, confessou o quanto lhe parecia «sacrílego» falar após a intervenção do recém-galardoado com o Prémio Camões.
+# source = CETEMPúblico n=985 sec=clt sem=96a
+# sent_id = CP985-2
+# id = 5060
+1	Aníbal	Aníbal	PROPN	_	_	21	nsubj	_	MWE=Aníbal_Pinto_de_Castro|MWEPOS=PROPN
+2	Pinto	Pinto	PROPN	_	_	1	flat	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	Castro	Castro	PROPN	PROP|@P<	_	1	flat	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+6	organizador	organizador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	nmod	_	_
 7-8	do	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	encontro	encontro	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-10	,	,	PUNCT	punc	_	1	punct	_	_
-11	obrigado	obrigar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	encontro	encontro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+11	obrigado	obrigar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
 12-13	pela	_	_	_	_	_	_	_	_
-12	por	por	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	função	função	NOUN	n|F|S	Gender=Fem|Number=Sing	11	iobj	_	_
-15	a	a	ADP	prp	AdpType=Prep	16	mark	_	_
-16	proferir	proferir	VERB	v-inf	VerbForm=Inf	11	xcomp	_	_
-17	algumas	algum	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	18	det	_	_
-18	palavras	palavra	NOUN	n|F|P	Gender=Fem|Number=Plur	16	dobj	_	_
-19	finais	final	ADJ	adj|F|P	Gender=Fem|Number=Plur	18	amod	_	_
-20	,	,	PUNCT	punc	_	1	punct	_	_
-21	confessou	confessar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-22	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	quanto	quanto	PRON	pron-det|<interr>|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Int	27	advmod	_	_
-24	lhe	ele	PRON	pron-pers|M|3S|DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	dobj	_	_
-25	parecia	parecer	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	27	cop	_	_
-26	«	«	PUNCT	punc	_	27	punct	_	_
-27	sacrílego	sacrílego	ADJ	adj|M|S	Gender=Masc|Number=Sing	21	ccomp	_	_
-28	»	»	PUNCT	punc	_	27	punct	_	_
-29	falar	falar	VERB	v-inf	VerbForm=Inf	27	csubj	_	_
-30	após	após	ADP	prp	AdpType=Prep	32	case	_	_
-31	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
-32	intervenção	intervenção	NOUN	n|F|S	Gender=Fem|Number=Sing	29	nmod	_	_
+12	por	por	ADP	<sam->|PRP|@PASS	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	função	função	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	iobj	_	_
+15	a	a	ADP	PRP|@<PIV	_	16	mark	_	_
+16	proferir	proferir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	xcomp	_	_
+17	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	18	det	_	_
+18	palavras	palavra	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	16	obj	_	_
+19	finais	final	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	18	amod	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+21	confessou	confessar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	quanto	quanto	PRON	<interr>|<quant>|<np-def>|DET|M|S|@ADVL>	Gender=Masc|Number=Sing|NumType=Card|PronType=Int	27	advmod	_	_
+24	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	obj	_	_
+25	parecia	parecer	AUX	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	27	cop	_	_
+26	«	«	PUNCT	PU|@PU	_	27	punct	_	SpaceAfter=No
+27	sacrílego	sacrílego	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	21	ccomp	_	SpaceAfter=No
+28	»	»	PUNCT	PU|@PU	_	27	punct	_	_
+29	falar	falar	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	27	csubj	_	_
+30	após	após	ADP	PRP|@<ADVL	_	32	case	_	_
+31	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
+32	intervenção	intervenção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	obl	_	_
 33-34	do	_	_	_	_	_	_	_	_
-33	de	de	ADP	prp|<sam->	AdpType=Prep	35	case	_	_
-34	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
-35	recém-galardoado	recém-galardoar	ADV	adv	_	32	advmod	_	_
-36	com	com	ADP	prp	AdpType=Prep	38	case	_	_
-37	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
-38	Prémio	Prémio	PROPN	prop|M|S	_	35	nmod	_	MWE=Prémio_Camões|MWEPOS=PROPN
-39	Camões	Camões	PROPN	PROPN	_	38	name	_	_
-40	.	.	PUNCT	punc	_	21	punct	_	_
+33	de	de	ADP	<sam->|PRP|@N<ARG	_	35	case	_	_
+34	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
+35	recém-galardoado	recém-galardoar	ADV	<mv>|ADV|@P<	_	32	advmod	_	_
+36	com	com	ADP	PRP|@<ADVL	_	38	case	_	_
+37	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+38	Prémio	Prémio	PROPN	_	_	35	obl	_	MWE=Prémio_Camões|MWEPOS=PROPN
+39	Camões	Camões	PROPN	_	_	38	flat	_	SpaceAfter=No
+40	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP985-3
-# sent_id = pt-ud-test.conllu#s17/pt
-# orig_file_sentence = 001#17
-1	É	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	de	de	ADP	prp	AdpType=Prep	3	mark	_	_
-3	crer	crer	VERB	v-inf	VerbForm=Inf	1	ccomp	_	_
-4	que	que	SCONJ	conj-s	_	5	mark	_	_
-5	estivesse	estar	VERB	v-fin|IMPF|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	_	_
-6	a	a	ADP	prp	AdpType=Prep	8	mark	_	_
-7	ser	ser	VERB	v-inf	VerbForm=Inf	8	cop	_	_
-8	sincero	sincero	ADJ	adj|M|S	Gender=Masc|Number=Sing	5	xcomp	_	_
-9	.	.	PUNCT	punc	_	1	punct	_	_
+# text = É de crer que estivesse a ser sincero.
+# source = CETEMPúblico n=985 sec=clt sem=96a
+# sent_id = CP985-3
+# id = 5061
+1	É	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	de	de	ADP	PRP|@<SC	_	3	mark	_	_
+3	crer	crer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	ccomp	_	_
+4	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
+5	estivesse	estar	VERB	<aux>|V|IMPF|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	_	_
+6	a	a	ADP	PRP|@PRT-AUX<	_	8	mark	_	_
+7	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	cop	_	_
+8	sincero	sincero	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	5	xcomp	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP985-4
-# sent_id = pt-ud-test.conllu#s18/pt
-# orig_file_sentence = 001#18
-1	Eduardo	Eduardo	PROPN	prop|M|S	_	3	nsubj	_	MWE=Eduardo_Lourenço|MWEPOS=PROPN
-2	Lourenço	Lourenço	PROPN	PROPN	_	1	name	_	_
-3	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	,	,	PUNCT	punc	_	3	punct	_	_
-5	de	de	ADP	pp	AdpType=Prep	3	advmod	_	MWE=de_facto|MWEPOS=ADV
-6	facto	facto	NOUN	NOUN	_	5	mwe	_	_
-7	,	,	PUNCT	punc	_	3	punct	_	_
-8	esse	esse	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
-9	dom	dom	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-10	,	,	PUNCT	punc	_	9	punct	_	_
-11	tão	tão	ADV	adv|<dem>|<quant>	PronType=Dem	12	advmod	_	_
-12	contraditório	contraditório	ADJ	adj|M|S	Gender=Masc|Number=Sing	9	amod	_	_
-13	com	com	ADP	prp	AdpType=Prep	17	case	_	_
-14	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-15	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	17	det	_	_
-16	proverbial	proverbial	ADJ	adj|F|S	Gender=Fem|Number=Sing	17	amod	_	_
-17	modéstia	modéstia	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-18	,	,	PUNCT	punc	_	9	punct	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	mark	_	_
-20	dar	dar	VERB	v-inf	VerbForm=Inf	9	acl	_	_
-21	a	a	ADP	prp	AdpType=Prep	24	mark	_	_
-22	tudo	tudo	PRON	pron-indp|<rel>|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Rel	24	nsubj	_	MWE=tudo_quanto|MWEPOS=PRON
-23	quanto	quanto	ADV	ADV	NumType=Card|PronType=Rel	22	compound	_	_
-24	escreve	escrever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	ccomp	_	_
-25	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	tom	tom	NOUN	n|M|S	Gender=Masc|Number=Sing	20	iobj	_	_
-27	definitivo	definitivo	ADJ	adj|M|S	Gender=Masc|Number=Sing	26	amod	_	_
-28	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Eduardo Lourenço tem, de facto, esse dom, tão contraditório com a sua proverbial modéstia, de dar a tudo quanto escreve um tom definitivo.
+# source = CETEMPúblico n=985 sec=clt sem=96a
+# sent_id = CP985-4
+# id = 5062
+1	Eduardo	Eduardo	PROPN	_	_	3	nsubj	_	MWE=Eduardo_Lourenço|MWEPOS=PROPN
+2	Lourenço	Lourenço	PROPN	_	_	1	flat	_	_
+3	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+5	de	de	ADP	PRP|@<ADVL	_	3	advmod	_	MWE=de_facto|MWEPOS=ADV
+6	facto	facto	NOUN	N|M|S|@P<	_	5	fixed	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+8	esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
+9	dom	dom	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+11	tão	tão	ADV	<dem>|<quant>|ADV|@>A	PronType=Dem	12	advmod	_	_
+12	contraditório	contraditório	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	9	amod	_	_
+13	com	com	ADP	PRP|@A<	_	17	case	_	_
+14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+15	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	17	det	_	_
+16	proverbial	proverbial	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	17	amod	_	_
+17	modéstia	modéstia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+19	de	de	ADP	PRP|@N<	_	20	mark	_	_
+20	dar	dar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	acl	_	_
+21	a	a	ADP	PRP|@<PIV	_	24	mark	_	_
+22	tudo	tudo	PRON	<rel>|<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|NumType=Card|PronType=Rel	24	nsubj	_	MWE=tudo_quanto|MWEPOS=PRON
+23	quanto	quanto	ADV	<rel>|<quant>|DET|M|S|@N<|<MWE2>	Gender=Masc|Number=Sing|NumType=Card|PronType=Rel	22	compound	_	_
+24	escreve	escrever	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	ccomp	_	_
+25	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	tom	tom	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	iobj	_	_
+27	definitivo	definitivo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	26	amod	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP985-5
-# sent_id = pt-ud-test.conllu#s19/pt
-# orig_file_sentence = 001#19
-1	Provoca	provocar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	em	em	ADP	prp	AdpType=Prep	5	mark	_	_
-3	quem	quem	PRON	pron-indp|<rel>|M/F|S	Number=Sing|PronType=Rel	5	nsubj	_	_
-4	o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	dobj	_	_
-5	ouve	ouvir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	sensação	sensação	NOUN	n|F|S	Gender=Fem|Number=Sing	1	iobj	_	_
-8	de	de	ADP	prp	AdpType=Prep	15	mark	_	_
-9	que	que	SCONJ	conj-s	_	15	mark	_	_
-10	aquilo	aquilo	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	15	nsubj	_	_
-11	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	12	dobj	_	_
-12	diz	dizer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl	_	_
-13	,	,	PUNCT	punc	_	15	punct	_	_
-14	o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	dobj	_	_
-15	diz	dizer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
+# text = Provoca em quem o ouve a sensação de que aquilo que diz, o diz da forma mais justa, se não da única forma justa.
+# source = CETEMPúblico n=985 sec=clt sem=96a
+# sent_id = CP985-5
+# id = 5063
+1	Provoca	provocar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	em	em	ADP	PRP|@<PIV	_	5	mark	_	_
+3	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Number=Sing|PronType=Rel	5	nsubj	_	_
+4	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+5	ouve	ouvir	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	sensação	sensação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	iobj	_	_
+8	de	de	ADP	PRP|@N<ARG	_	15	mark	_	_
+9	que	que	SCONJ	KS|@SUB	_	15	mark	_	_
+10	aquilo	aquilo	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	15	nsubj	_	_
+11	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	12	obj	_	_
+12	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+14	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	obj	_	_
+15	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
 16-17	da	_	_	_	_	_	_	_	_
-16	de	de	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	forma	forma	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-19	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	20	advmod	_	_
-20	justa	justo	ADJ	adj|F|S	Gender=Fem|Number=Sing	18	amod	_	_
-21	,	,	PUNCT	punc	_	15	punct	_	_
-22	se	se	SCONJ	conj-s	_	15	advmod	_	_
-23	não	não	ADV	adv	_	22	neg	_	_
+16	de	de	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
+17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	forma	forma	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	_
+19	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	20	advmod	_	_
+20	justa	justo	ADJ	<COMP>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	18	amod	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+22	se	se	SCONJ	<first-cjt>|KS|@<ADVL	_	15	advmod	_	_
+23	não	não	ADV	<cjt>|ADV|@<ADVL	Polarity=Neg	22	advmod	_	_
 24-25	da	_	_	_	_	_	_	_	_
-24	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-25	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-26	única	único	ADJ	adj|F|S	Gender=Fem|Number=Sing	27	amod	_	_
-27	forma	forma	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-28	justa	justo	ADJ	adj|F|S	Gender=Fem|Number=Sing	27	amod	_	_
-29	.	.	PUNCT	punc	_	1	punct	_	_
+24	de	de	ADP	<cjt>|<sam->|PRP|@<ADVL	_	27	case	_	_
+25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+26	única	único	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	27	amod	_	_
+27	forma	forma	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	_
+28	justa	justo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	27	amod	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP985-6
-# sent_id = pt-ud-test.conllu#s20/pt
-# orig_file_sentence = 001#20
-1	Um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	2	nummod	_	_
-2	talento	talento	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-3	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
-4	,	,	PUNCT	punc	_	8	punct	_	_
-5	por	por	ADP	prp	AdpType=Prep	6	case	_	_
-6	norma	norma	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-7	,	,	PUNCT	punc	_	8	punct	_	_
-8	cabe	caber	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
-9	apenas	apenas	ADV	adv	_	12	advmod:emph	_	_
+# text = Um talento que, por norma, cabe apenas aos poetas.
+# source = CETEMPúblico n=985 sec=clt sem=96a
+# sent_id = CP985-6
+# id = 5064
+1	Um	um	NUM	<card>|NUM|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card	2	nummod	_	_
+2	talento	talento	NOUN	<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+3	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+5	por	por	ADP	PRP|@ADVL>	_	6	case	_	_
+6	norma	norma	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+8	cabe	caber	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
+9	apenas	apenas	ADV	ADV|@>P	_	12	advmod:emph	_	_
 10-11	aos	_	_	_	_	_	_	_	_
-10	a	a	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	poetas	poeta	NOUN	n|M|P	Gender=Masc|Number=Plur	8	dobj	_	_
-13	.	.	PUNCT	punc	_	2	punct	_	_
+10	a	a	ADP	<sam->|PRP|@<PIV	_	12	case	_	_
+11	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+12	poetas	poeta	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obj	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

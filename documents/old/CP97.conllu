@@ -1,191 +1,198 @@
-# distance_from_new = 0
-# new_sent_id = CP97-1
-# sent_id = pt-ud-train.conllu#s510/pt
-# orig_file_sentence = 006#10
-1	Mas	mas	CONJ	conj-c	_	9	cc	_	_
-2	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-3	primeiro	primeiro	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	_
-4	grande	grande	ADJ	adj|M|S	Gender=Masc|Number=Sing	5	amod	_	_
-5	atleta	atleta	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nsubj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	Moniz	Moniz	PROPN	prop|M|S	_	5	nmod	_	MWE=Moniz_Pereira|MWEPOS=PROPN
-8	Pereira	Pereira	PROPN	PROPN	_	7	name	_	_
-9	veio	vir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	Viseu	Viseu	PROPN	prop|M/F|S	Number=Sing	9	nmod	_	_
-12	,	,	PUNCT	punc	_	11	punct	_	_
+# text = Mas o primeiro grande atleta de Moniz Pereira veio de Viseu, no interior nortenho, com muito frio no Inverno e muito calor no Verão.
+# forest 1
+# source CETEMPúblico n=97 sec=des sem=92a
+# sent_id = CP97-1
+# id 510
+1	Mas	mas	CCONJ	KC|@CO	_	9	cc	_	_
+2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+3	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	_
+4	grande	grande	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	5	amod	_	_
+5	atleta	atleta	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	Moniz	Moniz	PROPN	_	_	5	nmod	_	MWE=Moniz_Pereira|MWEPOS=PROPN
+8	Pereira	Pereira	PROPN	_	_	7	flat	_	_
+9	veio	vir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+10	de	de	ADP	PRP|@<SA	_	11	case	_	_
+11	Viseu	Viseu	PROPN	PROP|M/F|S|@P<	Number=Sing	9	obl	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 13-14	no	_	_	_	_	_	_	_	_
-13	em	em	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	interior	interior	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-16	nortenho	nortenho	ADJ	adj|M|S	Gender=Masc|Number=Sing	15	amod	_	_
-17	,	,	PUNCT	punc	_	11	punct	_	_
-18	com	com	ADP	prp	AdpType=Prep	20	case	_	_
-19	muito	muito	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	20	advmod	_	_
-20	frio	frio	ADJ	adj|M|S	Gender=Masc|Number=Sing	11	amod	_	_
+13	em	em	ADP	<sam->|PRP|@N<PRED	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	interior	interior	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
+16	nortenho	nortenho	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	amod	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+18	com	com	ADP	PRP|@N<PRED	_	20	case	_	_
+19	muito	muito	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	20	advmod	_	_
+20	frio	frio	ADJ	<first-cjt>|<n>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	11	amod	_	_
 21-22	no	_	_	_	_	_	_	_	_
-21	em	em	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	Inverno	Inverno	PROPN	prop|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-24	e	e	CONJ	conj-c	_	20	cc	_	_
-25	muito	muito	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	26	advmod	_	_
-26	calor	calor	NOUN	n|M|S	Gender=Masc|Number=Sing	20	conj	_	_
+21	em	em	ADP	<sam->|PRP|@N<	_	23	case	_	_
+22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	Inverno	Inverno	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
+24	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	_
+25	muito	muito	ADV	<quant>|ADV|@>N	NumType=Card|PronType=Ind,Neg,Tot	26	advmod	_	_
+26	calor	calor	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	conj	_	_
 27-28	no	_	_	_	_	_	_	_	_
-27	em	em	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	Verão	Verão	PROPN	prop|M|S	Gender=Masc|Number=Sing	26	nmod	_	_
-30	.	.	PUNCT	punc	_	9	punct	_	_
+27	em	em	ADP	<sam->|PRP|@N<	_	29	case	_	_
+28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	Verão	Verão	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP97-2
-# sent_id = pt-ud-train.conllu#s511/pt
-# orig_file_sentence = 006#11
+# text = Numa freguesia rural às portas da cidade, Vildemoinhos, nasceu e fez as primeiras corridas aquele que viria a ganhar a maratona de Los Angeles em 1984: Carlos Lopes.
+# forest 1
+# source CETEMPúblico n=97 sec=des sem=92a
+# sent_id = CP97-2
+# id 511
 1-2	Numa	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	uma	um	DET	art|<-sam>|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	freguesia	freguesia	NOUN	n|F|S	Gender=Fem|Number=Sing	14	nmod	_	_
-4	rural	rural	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	freguesia	freguesia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obl	_	_
+4	rural	rural	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	_
 5-6	às	_	_	_	_	_	_	_	_
-5	a	a	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	7	det	_	_
-7	portas	porta	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nmod	_	_
+5	a	a	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	7	det	_	_
+7	portas	porta	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
 8-9	da	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	10	det	_	_
-10	cidade	cidade	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-11	,	,	PUNCT	punc	_	3	punct	_	_
-12	Vildemoinhos	Vildemoinhos	PROPN	prop|M/F|S	Number=Sing	3	appos	_	_
-13	,	,	PUNCT	punc	_	3	punct	_	_
-14	nasceu	nascer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-15	e	e	CONJ	conj-c|<co-vfin>	_	14	cc	_	_
-16	fez	fazer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	conj	_	_
-17	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
-18	primeiras	primeiro	ADJ	adj|<NUM-ord>|F|P	Gender=Fem|Number=Plur|NumType=Ord	19	amod	_	_
-19	corridas	corrida	NOUN	n|F|P	Gender=Fem|Number=Plur	16	dobj	_	_
-20	aquele	aquele	PRON	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	14	nsubj	_	_
-21	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	22	nsubj	_	_
-22	viria	vir	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	20	acl	_	_
-23	a	a	ADP	prp	AdpType=Prep	24	mark	_	_
-24	ganhar	ganhar	VERB	v-inf	VerbForm=Inf	22	xcomp	_	_
-25	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	maratona	maratona	NOUN	n|F|S	Gender=Fem|Number=Sing	24	dobj	_	_
-27	de	de	ADP	prp	AdpType=Prep	29	case	_	_
-28	Los	Los	DET	prop|M|S	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	MWE=Los_Angeles|MWEPOS=PROPN
-29	Angeles	Angeles	PROPN	PROPN	_	26	nmod	_	_
-30	em	em	ADP	prp	AdpType=Prep	31	case	_	_
-31	1984	1984	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	26	nummod	_	_
-32	:	:	PUNCT	punc	_	20	punct	_	_
-33	Carlos	Carlos	PROPN	prop|M|S	_	20	appos	_	MWE=Carlos_Lopes|MWEPOS=PROPN
-34	Lopes	Lopes	PROPN	PROPN	_	33	name	_	_
-35	.	.	PUNCT	punc	_	14	punct	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	10	det	_	_
+10	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+12	Vildemoinhos	Vildemoinhos	PROPN	PROP|F|S|@APP	Number=Sing	3	appos	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+14	nasceu	nascer	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+15	e	e	CCONJ	<co-vfin>|KC|@CO	_	16	cc	_	_
+16	fez	fazer	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	conj	_	_
+17	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
+18	primeiras	primeiro	ADJ	<NUM-ord>|ADJ|F|P|@>N	Gender=Fem|Number=Plur|NumType=Ord	19	amod	_	_
+19	corridas	corrida	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	16	obj	_	_
+20	aquele	aquele	PRON	<dem>|DET|M|S|@<SUBJ	Gender=Masc|Number=Sing|PronType=Dem	14	nsubj	_	_
+21	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	22	nsubj	_	_
+22	viria	vir	VERB	<aux>|V|COND|3S|@FS-N<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	20	acl	_	_
+23	a	a	ADP	PRP|@PRT-AUX<	_	24	mark	_	_
+24	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	xcomp	_	_
+25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	maratona	maratona	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
+27	de	de	ADP	PRP|@N<	_	29	case	_	_
+28	Los	Los	DET	_	Gender=Masc|Number=Plur|PronType=Art	29	det	_	MWE=Los_Angeles|MWEPOS=PROPN
+29	Angeles	Angeles	PROPN	_	_	26	nmod	_	_
+30	em	em	ADP	PRP|@N<	_	31	case	_	_
+31	1984	1984	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	26	nummod	_	SpaceAfter=No
+32	:	:	PUNCT	PU|@PU	_	20	punct	_	_
+33	Carlos	Carlos	PROPN	_	_	20	appos	_	MWE=Carlos_Lopes|MWEPOS=PROPN
+34	Lopes	Lopes	PROPN	_	_	33	flat	_	SpaceAfter=No
+35	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP97-3
-# sent_id = pt-ud-train.conllu#s512/pt
-# orig_file_sentence = 006#12
-1	Lopes	Lopes	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	corria	correr	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+# text = Lopes corria na infância pelas hortas, competia com amigos quando iam a festas na aldeia vizinha, atravessava velozmente vinhas e castanhais.
+# forest 1
+# source CETEMPúblico n=97 sec=des sem=92a
+# sent_id = CP97-3
+# id 512
+1	Lopes	Lopes	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	corria	correr	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 3-4	na	_	_	_	_	_	_	_	_
-3	em	em	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
-5	infância	infância	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+3	em	em	ADP	<sam->|PRP|@<ADVL	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
+5	infância	infância	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	_
 6-7	pelas	_	_	_	_	_	_	_	_
-6	por	por	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	8	det	_	_
-8	hortas	horta	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-9	,	,	PUNCT	punc	_	2	punct	_	_
-10	competia	competir	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	conj	_	_
-11	com	com	ADP	prp	AdpType=Prep	12	case	_	_
-12	amigos	amigo	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
-13	quando	quando	ADV	adv|<rel>|<ks>	PronType=Rel	14	advmod	_	_
-14	iam	ir	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	advcl	_	_
-15	a	a	ADP	prp	AdpType=Prep	16	case	_	_
-16	festas	festa	NOUN	n|F|P	Gender=Fem|Number=Plur	14	nmod	_	_
+6	por	por	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
+7	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	8	det	_	_
+8	hortas	horta	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	obl	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+10	competia	competir	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	conj	_	_
+11	com	com	ADP	PRP|@<PIV	_	12	case	_	_
+12	amigos	amigo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obj	_	_
+13	quando	quando	ADV	<rel>|ADV|@ADVL>	PronType=Rel	14	advmod	_	_
+14	iam	ir	VERB	<mv>|V|IMPF|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	advcl	_	_
+15	a	a	ADP	PRP|@<SA	_	16	case	_	_
+16	festas	festa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	14	obl	_	_
 17-18	na	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	19	det	_	_
-19	aldeia	aldeia	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-20	vizinha	vizinho	ADJ	adj|F|S	Gender=Fem|Number=Sing	19	amod	_	_
-21	,	,	PUNCT	punc	_	2	punct	_	_
-22	atravessava	atravessar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	conj	_	_
-23	velozmente	velozmente	ADV	adv	_	22	advmod	_	_
-24	vinhas	vinha	NOUN	n|F|P	Gender=Fem|Number=Plur	22	dobj	_	_
-25	e	e	CONJ	conj-c|<co-acc>	_	24	cc	_	_
-26	castanhais	castanhal	NOUN	n|M|P	Gender=Masc|Number=Plur	24	conj	_	_
-27	.	.	PUNCT	punc	_	2	punct	_	_
+17	em	em	ADP	<sam->|PRP|@N<	_	19	case	_	_
+18	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	19	det	_	_
+19	aldeia	aldeia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
+20	vizinha	vizinho	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+22	atravessava	atravessar	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	conj	_	_
+23	velozmente	velozmente	ADV	ADV|@<ADVL	_	22	advmod	_	_
+24	vinhas	vinha	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	22	obj	_	_
+25	e	e	CCONJ	<co-acc>|KC|@CO	_	26	cc	_	_
+26	castanhais	castanhal	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	24	conj	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP97-4
-# sent_id = pt-ud-train.conllu#s513/pt
-# orig_file_sentence = 006#13
-1	E	e	CONJ	conj-c	_	2	cc	_	_
-2	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-3	sempre	sempre	ADV	adv	_	2	advmod	_	_
-4	ele	ele	PRON	pron-pers|M|3S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
-5	quem	quem	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	6	nsubj	_	_
-6	ganhava	ganhar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	acl	_	_
-7	.	.	PUNCT	punc	_	2	punct	_	_
+# text = E era sempre ele quem ganhava.
+# forest 1
+# source CETEMPúblico n=97 sec=des sem=92a
+# sent_id = CP97-4
+# id 513
+1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
+2	era	ser	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+3	sempre	sempre	ADV	ADV|@<ADVL	_	2	advmod	_	_
+4	ele	ele	PRON	PERS|M|3S|NOM|@<SUBJ	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+5	quem	quem	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	6	nsubj	_	_
+6	ganhava	ganhar	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	acl	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP97-5
-# sent_id = pt-ud-train.conllu#s514/pt
-# orig_file_sentence = 006#14
+# text = Na terra natal foi torneiro-mecânico, teve vida dura, até que um dia deu nas vistas nos crosses nortenhos.
+# forest 1
+# source CETEMPúblico n=97 sec=des sem=92a
+# sent_id = CP97-5
+# id 514
 1-2	Na	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
-3	terra	terra	NOUN	n|F|S	_	6	nmod	_	MWE=terra_natal|MWEPOS=NOUN
-4	natal	natal	NOUN	NOUN	_	3	compound	_	_
-5	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	_
-6	torneiro-mecânico	torneiro-mecânico	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-7	,	,	PUNCT	punc	_	6	punct	_	_
-8	teve	ter	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
-9	vida	vida	NOUN	n|F|S	Gender=Fem|Number=Sing	8	dobj	_	_
-10	dura	duro	ADJ	adj|F|S	Gender=Fem|Number=Sing	9	amod	_	_
-11	,	,	PUNCT	punc	_	6	punct	_	_
-12	até	até	ADP	prp	AdpType=Prep	16	mark	_	_
-13	que	que	SCONJ	conj-s	_	16	mark	_	_
-14	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	15	nummod	_	_
-15	dia	dia	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-16	deu	dar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
+3	terra	terra	NOUN	_	_	6	obl	_	MWE=terra_natal|MWEPOS=NOUN
+4	natal	natal	NOUN	_	_	3	compound	_	_
+5	foi	ser	AUX	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	_
+6	torneiro-mecânico	torneiro-mecânico	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+8	teve	ter	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
+9	vida	vida	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
+10	dura	duro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	9	amod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+12	até	até	ADP	PRP|@<ADVL	_	16	mark	_	_
+13	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
+14	um	um	NUM	<card>|NUM|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card	15	nummod	_	_
+15	dia	dia	NOUN	<np-def>|N|M|S|@ADVL>	Gender=Masc|Number=Sing	16	obl	_	_
+16	deu	dar	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	advcl	_	_
 17-18	nas	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	19	det	_	_
-19	vistas	vista	NOUN	n|F|P	Gender=Fem|Number=Plur	16	dobj	_	_
+17	em	em	ADP	<sam->|PRP|@<PIV	_	19	case	_	_
+18	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	19	det	_	_
+19	vistas	vista	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	16	obj	_	_
 20-21	nos	_	_	_	_	_	_	_	_
-20	em	em	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
-22	crosses	crosse	NOUN	n|M|P	Gender=Masc|Number=Plur	16	nmod	_	_
-23	nortenhos	nortenho	ADJ	adj|M|P	Gender=Masc|Number=Plur	22	amod	_	_
-24	.	.	PUNCT	punc	_	6	punct	_	_
+20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
+21	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+22	crosses	crosse	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	obl	_	_
+23	nortenhos	nortenho	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	22	amod	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 4
-# new_sent_id = CP97-6
-# sent_id = pt-ud-train.conllu#s515/pt
-# orig_file_sentence = 006#15
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Sporting	Sporting	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3-4	contratou-o	_	_	_	_	_	_	_	_
+# text = O Sporting contratou-o, trouxe-o para Lisboa.
+# forest 1
+# source CETEMPúblico n=97 sec=des sem=92a
+# sent_id = CP97-6
+# id 515
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Sporting	Sporting	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3-4	contratou-o	_	_	_	_	_	_	_	SpaceAfter=No
 3	contratou	contratar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	-o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	dobj	_	_
-5	,	,	PUNCT	punc	_	3	punct	_	_
+4	-o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 6-7	trouxe-o	_	_	_	_	_	_	_	_
 6	trouxe	trazer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
-7	-o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	dobj	_	_
-8	para	para	ADP	prp	AdpType=Prep	9	case	_	_
-9	Lisboa	Lisboa	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-10	.	.	PUNCT	punc	_	3	punct	_	_
+7	-o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
+8	para	para	ADP	PRP|@<ADVL	_	9	case	_	_
+9	Lisboa	Lisboa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP97-7
-# sent_id = pt-ud-train.conllu#s516/pt
-# orig_file_sentence = 006#16
-1	E	e	CONJ	conj-c	_	6	cc	_	_
-2	Moniz	Moniz	PROPN	prop|M|S	_	4	nsubj	_	MWE=Moniz_Pereira|MWEPOS=PROPN
-3	Pereira	Pereira	PROPN	PROPN	_	2	name	_	_
-4	começou	começar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-5	a	a	ADP	prp	AdpType=Prep	6	mark	_	_
-6-7	treiná-lo	_	_	_	_	_	_	_	_
-6	treiná	treinar	VERB	v-inf	VerbForm=Inf	4	xcomp	_	_
-7	-lo	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	dobj	_	_
-8	.	.	PUNCT	punc	_	4	punct	_	_
+# text = E Moniz Pereira começou a treinar-lo.
+# forest 1
+# source CETEMPúblico n=97 sec=des sem=92a
+# sent_id = CP97-7
+# id 516
+1	E	e	CCONJ	KC|@CO	_	6	cc	_	_
+2	Moniz	Moniz	PROPN	_	_	4	nsubj	_	MWE=Moniz_Pereira|MWEPOS=PROPN
+3	Pereira	Pereira	PROPN	_	_	2	flat	_	_
+4	começou	começar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	a	a	ADP	PRP|@PRT-AUX<	_	6	mark	_	_
+6-7	treinar-lo	_	_	_	_	_	_	_	SpaceAfter=No
+6	treinar	treinar	VERB	v-inf	VerbForm=Inf	4	xcomp	_	_
+7	-lo	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
+8	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

@@ -1,121 +1,125 @@
-# distance_from_new = 0
-# new_sent_id = CF648-1
-# sent_id = pt-ud-train.conllu#s7748/pt
-# orig_file_sentence = 078#48
-1	Não	não	ADV	adv	_	2	neg	_	_
-2	há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	diferença	diferença	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-4	essencial	essencial	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
-5	entre	entre	ADP	prp	AdpType=Prep	7	case	_	_
-6	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	armas	arma	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nmod	_	_
-8	individuais	individual	ADJ	adj|F|P	Gender=Fem|Number=Plur	7	amod	_	_
+# text = Não há diferença essencial entre as armas individuais do tráfico e as do Exército.
+# forest 1
+# source CETENFolha n=648 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF648-1
+# id 2706
+1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
+2	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	diferença	diferença	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+4	essencial	essencial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	_
+5	entre	entre	ADP	PRP|@N<	_	7	case	_	_
+6	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+7	armas	arma	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
+8	individuais	individual	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
 9-10	do	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	tráfico	tráfico	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-12	e	e	CONJ	conj-c|<co-prparg>	_	7	cc	_	_
-13	as	o	PRON	pron-det|<dem>|<Eg>|F|P	Gender=Fem|Number=Plur|PronType=Dem	7	conj	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	tráfico	tráfico	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
+12	e	e	CCONJ	<co-prparg>|KC|@CO	_	13	cc	_	_
+13	as	o	PRON	<cjt>|<Eg>|<dem>|DET|F|P|@P<	Gender=Fem|Number=Plur|PronType=Dem	7	conj	_	_
 14-15	do	_	_	_	_	_	_	_	_
-14	de	de	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-15	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	Exército	exército	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	13	nmod	_	_
-17	.	.	PUNCT	punc	_	2	punct	_	_
+14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
+15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	Exército	exército	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF648-2
-# sent_id = pt-ud-train.conllu#s7749/pt
-# orig_file_sentence = 078#49
-1	Elas	elas	PRON	pron-pers|F|3P|NOM	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
-2	pertencem	pertencer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	basicamente	basicamente	ADV	adv	_	2	advmod	_	_
+# text = Elas pertencem basicamente à categoria «fuzil automático», isto é, um híbrido surgido na Segunda Guerra entre os tradicionais fuzis e metralhadoras de mão ou submetralhadoras.
+# forest 1
+# source CETENFolha n=648 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF648-2
+# id 2707
+1	Elas	elas	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	pertencem	pertencer	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	basicamente	basicamente	ADV	ADV|@<ADVL	_	2	advmod	_	_
 4-5	à	_	_	_	_	_	_	_	_
-4	a	a	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	categoria	categoria	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-7	«	«	PUNCT	punc	_	6	punct	_	_
-8	fuzil	fuzil	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-9	automático	automático	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
-10	»	»	PUNCT	punc	_	6	punct	_	_
-11	,	,	PUNCT	punc	_	6	punct	_	_
-12	isto	isto	NOUN	adv|<kc>	_	6	advmod	_	MWE=isto_é|MWEPOS=ADV
-13	é	é	NOUN	NOUN	_	12	mwe	_	_
-14	,	,	PUNCT	punc	_	6	punct	_	_
-15	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	híbrido	híbrido	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	6	amod	_	_
-17	surgido	surgir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	16	acl	_	_
+4	a	a	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	categoria	categoria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obj	_	_
+7	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+8	fuzil	fuzil	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	6	nmod	_	_
+9	automático	automático	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No
+10	»	»	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+12	isto	isto	NOUN	_	_	6	advmod	_	MWE=isto_é|MWEPOS=ADV
+13	é	é	NOUN	_	_	12	fixed	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	híbrido	híbrido	ADJ	<n>|<np-idf>|ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	6	amod	_	_
+17	surgido	surgir	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	16	acl	_	_
 18-19	na	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	Segunda	Segunda	PROPN	prop|F|S	_	17	nmod	_	MWE=Segunda_Guerra|MWEPOS=PROPN
-21	Guerra	Guerra	PROPN	PROPN	_	20	name	_	_
-22	entre	entre	ADP	prp	AdpType=Prep	25	case	_	_
-23	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
-24	tradicionais	tradicional	ADJ	adj|M|P	Gender=Masc|Number=Plur	25	amod	_	_
-25	fuzis	fuzil	NOUN	n|M|P	Gender=Masc|Number=Plur	16	nmod	_	_
-26	e	e	CONJ	conj-c|<co-prparg>	_	25	cc	_	_
-27	metralhadoras	metralhadora	NOUN	n|F|P	Gender=Fem|Number=Plur	25	conj	_	_
-28	de	de	ADP	prp	AdpType=Prep	29	case	_	_
-29	mão	mão	NOUN	n|F|S	Gender=Fem|Number=Sing	27	nmod	_	_
-30	ou	ou	CONJ	conj-c|<co-prparg>	_	29	cc	_	_
-31	submetralhadoras	submetralhadora	NOUN	n|<DERP>|F|P	Gender=Fem|Number=Plur	29	conj	_	_
-32	.	.	PUNCT	punc	_	2	punct	_	_
+18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Segunda	Segunda	PROPN	PROP|F|S|@P<	_	17	obl	_	MWE=Segunda_Guerra|MWEPOS=PROPN
+21	Guerra	Guerra	PROPN	PROP|@N<	_	20	flat	_	_
+22	entre	entre	ADP	PRP|@N<	_	25	case	_	_
+23	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
+24	tradicionais	tradicional	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	25	amod	_	_
+25	fuzis	fuzil	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
+26	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	_
+27	metralhadoras	metralhadora	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	25	conj	_	_
+28	de	de	ADP	PRP|@N<	_	29	case	_	_
+29	mão	mão	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
+30	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	_
+31	submetralhadoras	submetralhadora	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	29	conj	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF648-3
-# sent_id = pt-ud-train.conllu#s7750/pt
-# orig_file_sentence = 078#50
-1	Fuzis	fuzil	NOUN	n|M|P	Gender=Masc|Number=Plur	2	nsubj	_	_
-2	disparam	disparar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	munição	munição	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-4	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
-5	poderosa	poderoso	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
-6	e	e	CONJ	conj-c	_	3	cc	_	_
-7	a	a	ADP	prp	AdpType=Prep	9	case	_	_
-8	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	alcance	alcance	NOUN	n|M|S	Gender=Masc|Number=Sing	3	conj	_	_
-10	maior	grande	ADJ	adj|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing	9	amod	_	_
-11	,	,	PUNCT	punc	_	9	punct	_	_
-12	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-13	até	até	ADV	adv	_	15	advmod	_	_
-14	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	15	nummod	_	_
-15	quilômetro	quilômetro	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-16	.	.	PUNCT	punc	_	2	punct	_	_
+# text = Fuzis disparam munição mais poderosa e a um alcance maior, de até um quilômetro.
+# forest 1
+# source CETENFolha n=648 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF648-3
+# id 2708
+1	Fuzis	fuzil	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
+2	disparam	disparar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	munição	munição	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+4	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
+5	poderosa	poderoso	ADJ	<COMP>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	_
+6	e	e	CCONJ	KC|@CO	_	9	cc	_	_
+7	a	a	ADP	PRP|@N<	_	9	case	_	_
+8	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	alcance	alcance	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	conj	_	_
+10	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|M|S|@N<	Degree=Cmp|Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+12	de	de	ADP	PRP|@N<PRED	_	15	case	_	_
+13	até	até	ADV	ADV|@>N	_	15	advmod	_	_
+14	um	um	NUM	<card>|NUM|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card	15	nummod	_	_
+15	quilômetro	quilômetro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CF648-4
-# sent_id = pt-ud-train.conllu#s7751/pt
-# orig_file_sentence = 078#51
-1	Já	já	ADV	adv	_	4	advmod	_	_
-2	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
-3	submetralhadoras	submetralhadora	NOUN	n|<DERP>|F|P	Gender=Fem|Number=Plur	4	nsubj	_	_
-4	disparam	disparar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	balas	bala	NOUN	n|F|P	Gender=Fem|Number=Plur	4	dobj	_	_
-6	semelhantes	semelhante	ADJ	adj|F|P	Gender=Fem|Number=Plur	5	amod	_	_
+# text = Já as submetralhadoras disparam balas semelhantes às dos revólveres, mas podem fazer-lo em rajadas, a um alcance curto, de dezenas de metros.
+# forest 1
+# source CETENFolha n=648 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF648-4
+# id 2709
+1	Já	já	ADV	ADV|@ADVL>	_	4	advmod	_	_
+2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+3	submetralhadoras	submetralhadora	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
+4	disparam	disparar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	balas	bala	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
+6	semelhantes	semelhante	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	5	amod	_	_
 7-8	às	_	_	_	_	_	_	_	_
-7	a	a	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-8	as	o	PRON	pron-det|<-sam>|F|P	Gender=Fem|Number=Plur	6	advmod	_	_
+7	a	a	ADP	<sam->|PRP|@A<	_	8	case	_	_
+8	as	o	PRON	<-sam>|DET|F|P|@P<	Gender=Fem|Number=Plur	6	advmod	_	_
 9-10	dos	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
-11	revólveres	revólver	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
-12	,	,	PUNCT	punc	_	4	punct	_	_
-13	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	4	cc	_	_
-14	podem	poder	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
-15-16	fazê-lo	_	_	_	_	_	_	_	_
-15	fazê	fazer	VERB	v-inf|<hyfen>	Hyph=Yes|VerbForm=Inf	14	xcomp	_	_
-16	-lo	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	dobj	_	_
-17	em	em	ADP	prp	AdpType=Prep	18	case	_	_
-18	rajadas	rajada	NOUN	n|F|P	Gender=Fem|Number=Plur	15	nmod	_	_
-19	,	,	PUNCT	punc	_	14	punct	_	_
-20	a	a	ADP	prp	AdpType=Prep	22	case	_	_
-21	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	alcance	alcance	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-23	curto	curto	ADJ	adj|M|S	Gender=Masc|Number=Sing	22	amod	_	_
-24	,	,	PUNCT	punc	_	22	punct	_	_
-25	de	de	ADP	prp	AdpType=Prep	26	case	_	_
-26	dezenas	dezena	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	22	det	_	_
-27	de	de	ADP	prp	AdpType=Prep	28	case	_	_
-28	metros	metro	NOUN	n|M|P	Gender=Masc|Number=Plur	26	nmod	_	_
-29	.	.	PUNCT	punc	_	4	punct	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	revólveres	revólver	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+13	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	_
+14	podem	poder	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+15-16	fazer-lo	_	_	_	_	_	_	_	_
+15	fazer	fazer	VERB	v-inf|<hyfen>	Hyph=Yes|VerbForm=Inf	14	xcomp	_	_
+16	-lo	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	obj	_	_
+17	em	em	ADP	PRP|@<ADVL	_	18	case	_	_
+18	rajadas	rajada	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	15	obl	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+20	a	a	ADP	PRP|@<ADVL	_	22	case	_	_
+21	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	alcance	alcance	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	_
+23	curto	curto	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	22	amod	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+25	de	de	ADP	PRP|@N<PRED	_	26	case	_	_
+26	dezenas	dezena	DET	<quant>|DET|F|S|@P<	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	22	det	_	_
+27	de	de	ADP	PRP|@N<	_	28	case	_	_
+28	metros	metro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	26	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

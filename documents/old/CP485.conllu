@@ -1,154 +1,162 @@
-# distance_from_new = 0
-# new_sent_id = CP485-1
-# sent_id = pt-ud-train.conllu#s2555/pt
-# orig_file_sentence = 026#55
-1	Há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	,	,	PUNCT	punc	_	1	punct	_	_
-3	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	1	cc	_	_
-4	todas	todo	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
-5	elas	ele	PRON	pron-pers|F|3P|NOM	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
-6	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-7	já	já	ADV	adv	_	8	advmod	_	_
-8	transpostas	transpor	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	1	conj	_	_
-9	para	para	ADP	prp	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	direito	direito	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-12	nacional	nacional	ADJ	adj|M|S	Gender=Masc|Number=Sing	11	amod	_	_
-13	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Há, mas todas elas estão já transpostas para o direito nacional.
+# forest 1
+# source CETEMPúblico n=485 sec=nd sem=92b
+# sent_id = CP485-1
+# id 2556
+1	Há	haver	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+3	mas	mas	CCONJ	<co-vfin>|KC|@CO	_	8	cc	_	_
+4	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
+5	elas	ele	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
+6	estão	estar	AUX	<mv>|<cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+7	já	já	ADV	ADV|@ADVL>	_	8	advmod	_	_
+8	transpostas	transpor	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	1	conj	_	_
+9	para	para	ADP	PRP|@<ADVL	_	11	case	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	direito	direito	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	_
+12	nacional	nacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP485-2
-# sent_id = pt-ud-train.conllu#s2556/pt
-# orig_file_sentence = 026#56
+# text = Referem-se a normas de segurança e de saúde e higiene, regras de iluminação, etc.
+# forest 1
+# source CETEMPúblico n=485 sec=nd sem=92b
+# sent_id = CP485-2
+# id 2557
 1-2	Referem-se	_	_	_	_	_	_	_	_
 1	Referem	Referir	VERB	v-fin|<hyfen>|PR|3P|IND	Hyph=Yes|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	-se	se	PRON	pron-pers|M/F|3P|ACC	Case=Acc|Number=Plur|Person=3|PronType=Prs	1	dobj	_	_
-3	a	a	ADP	prp	AdpType=Prep	4	case	_	_
-4	normas	norma	NOUN	n|F|P	Gender=Fem|Number=Plur	1	iobj	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	segurança	segurança	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	e	e	CONJ	conj-c|<co-postnom>	_	6	cc	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	saúde	saúde	NOUN	n|F|S	Gender=Fem|Number=Sing	6	conj	_	_
-10	e	e	CONJ	conj-c|<co-prparg>	_	9	cc	_	_
-11	higiene	higiene	NOUN	n|F|S	Gender=Fem|Number=Sing	9	conj	_	_
-12	,	,	PUNCT	punc	_	4	punct	_	_
-13	regras	regra	NOUN	n|F|P	Gender=Fem|Number=Plur	4	conj	_	_
-14	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-15	iluminação	iluminação	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nmod	_	_
-16	,	,	PUNCT	punc	_	1	punct	_	_
-17	etc.	etc.	ADV	adv|M|S	_	1	advmod	_	_
+2	-se	se	PRON	pron-pers|M/F|3P|ACC	Case=Acc|Number=Plur|Person=3|PronType=Prs	1	obj	_	_
+3	a	a	ADP	PRP|@<PIV	_	4	case	_	_
+4	normas	norma	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	1	iobj	_	_
+5	de	de	ADP	<first-cjt>|PRP|@N<	_	6	case	_	_
+6	segurança	segurança	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+7	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	_
+8	de	de	ADP	<cjt>|PRP|@N<	_	9	case	_	_
+9	saúde	saúde	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	_
+10	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
+11	higiene	higiene	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+13	regras	regra	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	conj	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	iluminação	iluminação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+17	etc.	etc.	ADV	ADV|M|S|@<ADVL	Gender=Masc|Number=Sing	1	advmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP485-3
-# sent_id = pt-ud-train.conllu#s2557/pt
-# orig_file_sentence = 026#57
-1	As	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
-2	questões	questão	NOUN	n|F|P	Gender=Fem|Number=Plur	5	nsubj	_	_
-3	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	4	advmod	_	_
-4	complicadas	complicar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	_	_
-5	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	ainda	ainda	ADV	adv	_	5	advmod	_	_
-7	sobre	sobre	ADP	prp	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	mesa	mesa	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-10	.	.	PUNCT	punc	_	5	punct	_	_
+# text = As questões mais complicadas estão ainda sobre a mesa.
+# forest 1
+# source CETEMPúblico n=485 sec=nd sem=92b
+# sent_id = CP485-3
+# id 2558
+1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	questões	questão	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj	_	_
+3	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	4	advmod	_	_
+4	complicadas	complicar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	_	_
+5	estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	ainda	ainda	ADV	ADV|@<ADVL	_	5	advmod	_	_
+7	sobre	sobre	ADP	PRP|@<SA	_	9	case	_	_
+8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	mesa	mesa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP485-4
-# sent_id = pt-ud-train.conllu#s2558/pt
-# orig_file_sentence = 026#58
-1	É	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-2	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	caso	caso	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = É o caso da organização do tempo de trabalho e disposições sobre mulheres grávidas, cuja aprovação não se espera para a presidência britânica, não entrando, assim, em vigor a 1 de Janeiro de 1993.
+# forest 1
+# source CETEMPúblico n=485 sec=nd sem=92b
+# sent_id = CP485-4
+# id 2559
+1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	caso	caso	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	organização	organização	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	organização	organização	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 7-8	do	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	tempo	tempo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	trabalho	trabalho	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-12	e	e	CONJ	conj-c|<co-prparg>	_	6	cc	_	_
-13	disposições	disposição	NOUN	n|F|P	Gender=Fem|Number=Plur	6	conj	_	_
-14	sobre	sobre	ADP	prp	AdpType=Prep	15	case	_	_
-15	mulheres	mulher	NOUN	n|F|P	Gender=Fem|Number=Plur	13	nmod	_	_
-16	grávidas	grávido	ADJ	adj|F|P	Gender=Fem|Number=Plur	15	amod	_	_
-17	,	,	PUNCT	punc	_	6	punct	_	_
-18	cuja	cujo	DET	pron-det|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	19	det	_	_
-19	aprovação	aprovação	NOUN	n|F|S	Gender=Fem|Number=Sing	22	dobj	_	_
-20	não	não	ADV	adv	_	22	neg	_	_
-21	se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	22	nsubj	_	_
-22	espera	esperar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
-23	para	para	ADP	prp	AdpType=Prep	25	case	_	_
-24	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	presidência	presidência	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-26	britânica	britânico	ADJ	adj|F|S	Gender=Fem|Number=Sing	25	amod	_	_
-27	,	,	PUNCT	punc	_	6	punct	_	_
-28	não	não	ADV	adv	_	29	neg	_	_
-29	entrando	entrar	VERB	v-ger	VerbForm=Ger	6	acl	_	_
-30	,	,	PUNCT	punc	_	29	punct	_	_
-31	assim	assim	ADV	adv|<kc>	_	29	advmod	_	_
-32	,	,	PUNCT	punc	_	29	punct	_	_
-33	em	em	ADP	pp	AdpType=Prep	29	advmod	_	MWE=em_vigor|MWEPOS=ADV
-34	vigor	vigor	NOUN	NOUN	_	33	mwe	_	_
-35	a	a	ADP	prp	AdpType=Prep	36	case	_	_
-36	1	1	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	29	advmod	_	_
-37	de	de	ADP	prp	AdpType=Prep	38	case	_	_
-38	Janeiro	janeiro	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	36	nmod	_	_
-39	de	de	ADP	prp	AdpType=Prep	40	case	_	_
-40	1993	1993	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	38	nummod	_	_
-41	.	.	PUNCT	punc	_	3	punct	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	tempo	tempo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	trabalho	trabalho	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
+12	e	e	CCONJ	<co-prparg>|KC|@CO	_	13	cc	_	_
+13	disposições	disposição	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	6	conj	_	_
+14	sobre	sobre	ADP	PRP|@N<	_	15	case	_	_
+15	mulheres	mulher	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	13	nmod	_	_
+16	grávidas	grávido	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	15	amod	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+18	cuja	cujo	DET	<rel>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Rel	19	det	_	_
+19	aprovação	aprovação	NOUN	<np-idf>|N|F|S|@ACC>	Gender=Fem|Number=Sing	22	obj	_	_
+20	não	não	ADV	_	Polarity=Neg	22	advmod	_	_
+21	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs	22	nsubj	_	_
+22	espera	esperar	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
+23	para	para	ADP	PRP|@<ADVL	_	25	case	_	_
+24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	presidência	presidência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	_
+26	britânica	britânico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	25	amod	_	SpaceAfter=No
+27	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+28	não	não	ADV	_	Polarity=Neg	29	advmod	_	_
+29	entrando	entrar	VERB	<mv>|V|GER|@ICL-N<PRED	VerbForm=Ger	6	acl	_	SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+31	assim	assim	ADV	<kc>|ADV|@<ADVL	_	29	advmod	_	SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+33	em	em	ADP	PRP|@<ADVL	_	29	advmod	_	MWE=em_vigor|MWEPOS=ADV
+34	vigor	vigor	NOUN	N|M|S|@P<	_	33	fixed	_	_
+35	a	a	ADP	PRP|@<ADVL	_	36	case	_	_
+36	1	1	NUM	<card>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	29	advmod	_	_
+37	de	de	ADP	PRP|@A<	_	38	case	_	_
+38	Janeiro	janeiro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	36	obl	_	_
+39	de	de	ADP	PRP|@N<	_	40	case	_	_
+40	1993	1993	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	38	nummod	_	SpaceAfter=No
+41	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP485-5
-# sent_id = pt-ud-train.conllu#s2559/pt
-# orig_file_sentence = 026#59
-1	Às	às	ADP	adv	AdpType=Preppron|Definite=Def	4	advmod	_	MWE=Às_vezes|MWEPOS=ADV
-2	vezes	vezes	NOUN	NOUN	_	1	mwe	_	_
-3	,	,	PUNCT	punc	_	4	punct	_	_
-4	pensa	pensar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	que	que	SCONJ	conj-s	_	11	mark	_	_
-6	isto	isto	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	11	nsubj	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	imagem	imagem	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-9	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-10	empresa	empresa	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-11	passa	passar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
-12	também	também	ADV	adv	_	11	advmod	_	_
-13	por	por	ADP	prp	AdpType=Prep	16	case	_	_
-14	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-15	boa	bom	ADJ	adj|F|S	Gender=Fem|Number=Sing	16	amod	_	_
-16	auditoria	auditoria	NOUN	n|F|S	Gender=Fem|Number=Sing	11	dobj	_	_
-17	e	e	CONJ	conj-c|<co-vfin>	_	11	cc	_	_
-18	que	que	SCONJ	conj-s	_	24	mark	_	_
-19	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
-20	empresas	empresa	NOUN	n|F|P	Gender=Fem|Number=Plur	24	nsubj	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	auditoria	auditoria	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-23	estrangeiras	estrangeiro	ADJ	adj|F|P	Gender=Fem|Number=Plur	22	amod	_	_
-24	dão	dar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
-25	melhor	bom	ADJ	adj|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing	26	amod	_	_
-26	nome	nome	NOUN	n|M|S	Gender=Masc|Number=Sing	24	dobj	_	_
-27	.	.	PUNCT	punc	_	4	punct	_	_
+# text = Às vezes, pensa que isto de imagem de empresa passa também por uma boa auditoria e que as empresas de auditoria estrangeiras dão melhor nome.
+# forest 1
+# source CETEMPúblico n=485 sec=nd sem=92b
+# sent_id = CP485-5
+# id 2560
+1-2	Às	_	_	_	_	_	_	_	_
+1	A	a	ADP	prp|<sam->	_	5	case	_	_
+2	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+3	vezes	vezes	NOUN	NOUN	_	1	fixed	_	SpaceAfter=No
+4	,	,	PUNCT	punc	_	5	punct	_	_
+5	pensa	pensar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	que	que	SCONJ	conj-s	_	12	mark	_	_
+7	isto	isto	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	12	nsubj	_	_
+8	de	de	ADP	prp	_	9	case	_	_
+9	imagem	imagem	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
+10	de	de	ADP	prp	_	11	case	_	_
+11	empresa	empresa	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
+12	passa	passar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_
+13	também	também	ADV	adv	_	12	advmod	_	_
+14	por	por	ADP	prp	_	17	case	_	_
+15	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+16	boa	bom	ADJ	adj|F|S	Gender=Fem|Number=Sing	17	amod	_	_
+17	auditoria	auditoria	NOUN	n|F|S	Gender=Fem|Number=Sing	12	obj	_	_
+18	e	e	CCONJ	conj-c|<co-vfin>	_	25	cc	_	_
+19	que	que	SCONJ	conj-s	_	25	mark	_	_
+20	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_
+21	empresas	empresa	NOUN	n|F|P	Gender=Fem|Number=Plur	25	nsubj	_	_
+22	de	de	ADP	prp	_	23	case	_	_
+23	auditoria	auditoria	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nmod	_	_
+24	estrangeiras	estrangeiro	ADJ	adj|F|P	Gender=Fem|Number=Plur	23	amod	_	_
+25	dão	dar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	conj	_	_
+26	melhor	bom	ADJ	adj|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing	27	amod	_	_
+27	nome	nome	NOUN	n|M|S	Gender=Masc|Number=Sing	25	obj	_	SpaceAfter=No
+28	.	.	PUNCT	punc	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP485-6
-# sent_id = pt-ud-train.conllu#s2560/pt
-# orig_file_sentence = 026#60
-1	Poderá	poder	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-2	recorrer	recorrer	VERB	v-inf	VerbForm=Inf	1	xcomp	_	_
-3	a	a	ADP	prp	AdpType=Prep	4	case	_	_
-4	elas	ele	PRON	pron-pers|F|3P|PIV	Case=Acc|Gender=Fem|Number=Plur|Person=3|PrepCase=Pre|PronType=Prs	2	dobj	_	_
-5	,	,	PUNCT	punc	_	1	punct	_	_
-6	mesmo	mesmo	ADJ	adv|<quant>	NumType=Card	10	advmod	_	MWE=mesmo_que|MWEPOS=ADV
-7	que	que	SCONJ	SCONJ	_	6	mwe	_	_
-8	não	não	ADV	adv	_	10	neg	_	_
-9	estejam	estar	VERB	v-fin|PR|3P|SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
-10	sediadas	sediar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	2	advcl	_	_
-11	em	em	ADP	prp	AdpType=Prep	12	case	_	_
-12	Portugal	Portugal	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-13	?	?	PUNCT	punc	_	1	punct	_	_
+# text = Poderá recorrer a elas, mesmo que não estejam sediadas em Portugal?
+# forest 1
+# source CETEMPúblico n=485 sec=nd sem=92b
+# sent_id = CP485-6
+# id 2561
+1	Poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+2	recorrer	recorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	_
+3	a	a	ADP	PRP|@<PIV	_	4	case	_	_
+4	elas	ele	PRON	PERS|F|3P|PIV|@P<	Case=Acc|Gender=Fem|Number=Plur|Person=3|PrepCase=Pre|PronType=Prs	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+6	mesmo	mesmo	ADJ	PRP|@ADVL>	NumType=Card	10	advmod	_	MWE=mesmo_que|MWEPOS=ADV
+7	que	que	SCONJ	N|M|S|@P<	_	6	fixed	_	_
+8	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
+9	estejam	estar	AUX	<mv>|V|PR|3P|SUBJ|@FS-<ADVL	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
+10	sediadas	sediar	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	2	advcl	_	_
+11	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
+12	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	SpaceAfter=No
+13	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 

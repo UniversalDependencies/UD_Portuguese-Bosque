@@ -1,194 +1,199 @@
-# distance_from_new = 2
-# new_sent_id = CP139-1
-# sent_id = pt-ud-train.conllu#s715/pt
-# orig_file_sentence = 008#15
-1	mais	mais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	MWE=mais_de|MWEPOS=ADV
-2	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-3	mil	mil	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	4	nummod	_	_
-4	casais	casal	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nsubj	_	_
+# text = mais de mil casais tinham-se oferecido, até quinta-feira à noite, para recolher provisoriamente refugiados, sobretudo crianças.
+# forest 1
+# source CETEMPúblico n=139 sec=soc sem=92b
+# sent_id = CP139-1
+# id 716
+1	mais	mais	ADV	ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	MWE=mais_de|MWEPOS=ADV
+2	de	de	ADP	<prp>|PRP|@A<	_	1	fixed	_	_
+3	mil	mil	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	4	nummod	_	_
+4	casais	casal	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
 5-6	tinham-se	_	_	_	_	_	_	_	_
-5	tinham	ter	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	7	aux	_	_
-6	-se	se	PRON	pron-pers|<refl>|M|3P|ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	7	dobj	_	_
-7	oferecido	oferecer	VERB	v-pcp	VerbForm=Part	0	root	_	_
-8	,	,	PUNCT	punc	_	7	punct	_	_
-9	até	até	ADP	prp	AdpType=Prep	10	case	_	_
-10	quinta-feira	quinta-feira	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
+5	tinham	ter	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+6	-se	se	PRON	pron-pers|<refl>|M|3P|ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	7	obj	_	_
+7	oferecido	oferecer	VERB	<mv>|<se-passive>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	5	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+9	até	até	ADP	PRP|@<ADVL	_	10	case	_	_
+10	quinta-feira	quinta-feira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	_
 11-12	à	_	_	_	_	_	_	_	_
-11	a	a	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	13	det	_	_
-13	noite	noite	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-14	,	,	PUNCT	punc	_	7	punct	_	_
-15	para	para	ADP	prp	AdpType=Prep	16	mark	_	_
-16	recolher	recolher	VERB	v-inf	VerbForm=Inf	7	advcl	_	_
-17	provisoriamente	provisoriamente	ADV	adv	_	16	advmod	_	_
-18	refugiados	refugiado	NOUN	n|M|P	Gender=Masc|Number=Plur	16	dobj	_	_
-19	,	,	PUNCT	punc	_	18	punct	_	_
-20	sobretudo	sobretudo	ADV	adv	_	21	advmod	_	_
-21	crianças	criança	NOUN	n|F|P	Gender=Fem|Number=Plur	18	nmod	_	_
-22	.	.	PUNCT	punc	_	7	punct	_	_
+11	a	a	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	13	det	_	_
+13	noite	noite	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+15	para	para	ADP	PRP|@<ADVL	_	16	mark	_	_
+16	recolher	recolher	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	advcl	_	_
+17	provisoriamente	provisoriamente	ADV	ADV|@<ADVL	_	16	advmod	_	_
+18	refugiados	refugiado	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	obj	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+20	sobretudo	sobretudo	ADV	ADV|@>N	_	21	advmod	_	_
+21	crianças	criança	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	18	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP139-2
-# sent_id = pt-ud-train.conllu#s716/pt
-# orig_file_sentence = 008#16
-1	«	«	PUNCT	punc	_	29	punct	_	_
-2	Mas	mas	CONJ	conj-c	_	19	cc	_	_
-3	hoje	hoje	ADV	adv	_	19	advmod	_	_
-4	[	[	PUNCT	punc	_	16	punct	_	_
-5	ontem	ontem	ADV	adv	_	19	advmod	_	_
-6	]	]	PUNCT	punc	_	16	punct	_	_
-7	,	,	PUNCT	punc	_	16	punct	_	_
-8	quando	quando	ADV	adv|<rel>|<ks>	PronType=Rel	9	advmod	_	_
-9	perceberam	perceber	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	19	advcl	_	_
-10	que	que	SCONJ	conj-s	_	12	mark	_	_
-11	não	não	ADV	adv	_	12	neg	_	_
-12	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	ccomp	_	_
-13	para	para	ADP	prp	AdpType=Prep	14	mark	_	_
-14	adoptar	adoptar	VERB	v-inf	VerbForm=Inf	12	ccomp	_	_
-15	,	,	PUNCT	punc	_	16	punct	_	_
-16	começaram	começar	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	29	ccomp	_	_
-17	também	também	ADV	adv	_	19	advmod	_	_
-18	a	a	ADP	prp	AdpType=Prep	19	mark	_	_
-19	aparecer	aparecer	VERB	v-inf	VerbForm=Inf	16	xcomp	_	_
-20	pessoas	pessoa	NOUN	n|F|P	Gender=Fem|Number=Plur	16	nsubj	_	_
-21	interessadas	interessar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	20	acl	_	_
-22	em	em	ADP	prp	AdpType=Prep	23	mark	_	_
-23	receber	receber	VERB	v-inf	VerbForm=Inf	21	xcomp	_	_
-24	também	também	ADV	adv	_	26	advmod	_	_
-25	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
-26	mães	pai	NOUN	n|F|P	Gender=Fem|Number=Plur	23	dobj	_	_
-27	»	»	PUNCT	punc	_	29	punct	_	_
-28	,	,	PUNCT	punc	_	29	punct	_	_
-29	explicou	explicar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-30	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
-31	fonte	fonte	NOUN	n|F|S	Gender=Fem|Number=Sing	29	nsubj	_	_
+# text = «Mas hoje [ontem], quando perceberam que não era para adoptar, começaram também a aparecer pessoas interessadas em receber também as mães», explicou uma fonte do Fórum Estudante, que está a organizar a Missão Crescer em Esperança.
+# forest 1
+# source CETEMPúblico n=139 sec=soc sem=92b
+# sent_id = CP139-2
+# id 717
+1	«	«	PUNCT	PU|@PU	_	29	punct	_	SpaceAfter=No
+2	Mas	mas	CCONJ	KC|@CO	_	19	cc	_	_
+3	hoje	hoje	ADV	ADV|@ADVL>	_	19	advmod	_	_
+4	[	[	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+5	ontem	ontem	ADV	ADV|@ADVL>	_	19	advmod	_	SpaceAfter=No
+6	]	]	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+8	quando	quando	ADV	<rel>|ADV|@ADVL>	PronType=Rel	9	advmod	_	_
+9	perceberam	perceber	VERB	<mv>|V|PS|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	19	advcl	_	_
+10	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
+11	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
+12	era	ser	VERB	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	ccomp	_	_
+13	para	para	ADP	PRP|@<SC	_	14	mark	_	_
+14	adoptar	adoptar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	ccomp	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+16	começaram	começar	VERB	<aux>|V|PS|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	29	ccomp	_	_
+17	também	também	ADV	ADV|@ADVL>	_	19	advmod	_	_
+18	a	a	ADP	PRP|@PRT-AUX<	_	19	mark	_	_
+19	aparecer	aparecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
+20	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	16	nsubj	_	_
+21	interessadas	interessar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	20	acl	_	_
+22	em	em	ADP	PRP|@<PIV	_	23	mark	_	_
+23	receber	receber	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	xcomp	_	_
+24	também	também	ADV	ADV|@>N	_	26	advmod	_	_
+25	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
+26	mães	pai	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	23	obj	_	SpaceAfter=No
+27	»	»	PUNCT	PU|@PU	_	29	punct	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+29	explicou	explicar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+30	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+31	fonte	fonte	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	29	nsubj	_	_
 32-33	do	_	_	_	_	_	_	_	_
-32	de	de	ADP	prp|<sam->	AdpType=Prep	34	case	_	_
-33	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-34	Fórum	Fórum	PROPN	prop|M|S	_	31	nmod	_	MWE=Fórum_Estudante|MWEPOS=PROPN
-35	Estudante	Estudante	PROPN	PROPN	_	34	name	_	_
-36	,	,	PUNCT	punc	_	34	punct	_	_
-37	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	38	nsubj	_	_
-38	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	acl	_	_
-39	a	a	ADP	prp	AdpType=Prep	40	mark	_	_
-40	organizar	organizar	VERB	v-inf	VerbForm=Inf	38	xcomp	_	_
-41	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
-42	Missão	Missão	PROPN	prop|F|S	_	40	dobj	_	MWE=Missão_Crescer_em_Esperança|MWEPOS=PROPN
-43	Crescer	Crescer	PROPN	PROPN	_	42	name	_	_
-44	em	em	ADP	ADP	AdpType=Prep	45	case	_	_
-45	Esperança	Esperança	PROPN	PROPN	_	42	name	_	_
-46	.	.	PUNCT	punc	_	29	punct	_	_
+32	de	de	ADP	<sam->|PRP|@N<	_	34	case	_	_
+33	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	Fórum	Fórum	PROPN	_	_	31	nmod	_	MWE=Fórum_Estudante|MWEPOS=PROPN
+35	Estudante	Estudante	PROPN	_	_	34	flat	_	SpaceAfter=No
+36	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+37	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	38	nsubj	_	_
+38	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	acl	_	_
+39	a	a	ADP	PRP|@PRT-AUX<	_	40	mark	_	_
+40	organizar	organizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	38	xcomp	_	_
+41	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
+42	Missão	Missão	PROPN	_	_	40	obj	_	MWE=Missão_Crescer_em_Esperança|MWEPOS=PROPN
+43	Crescer	Crescer	PROPN	_	_	42	flat	_	_
+44	em	em	ADP	PRP|@N<	_	45	case	_	_
+45	Esperança	Esperança	PROPN	PROP|@P<	_	42	flat	_	SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP139-3
-# sent_id = pt-ud-train.conllu#s717/pt
-# orig_file_sentence = 008#17
+# text = Nas instalações do Instituto da Juventude, «o telefone não pára de tocar».
+# forest 1
+# source CETEMPúblico n=139 sec=soc sem=92b
+# sent_id = CP139-3
+# id 718
 1-2	Nas	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	3	det	_	_
-3	instalações	instalação	NOUN	n|F|P	Gender=Fem|Number=Plur	17	nmod	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	3	det	_	_
+3	instalações	instalação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	obl	_	_
 4-5	do	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Instituto	Instituto	PROPN	prop|M|S	_	3	nmod	_	MWE=Instituto_da_Juventude|MWEPOS=PROPN
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Instituto	Instituto	PROPN	PROP|M|S|@P<	_	3	nmod	_	MWE=Instituto_da_Juventude|MWEPOS=PROPN
 7-8	da	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Juventude	Juventude	PROPN	PROPN	_	6	name	_	_
-10	,	,	PUNCT	punc	_	15	punct	_	_
-11	«	«	PUNCT	punc	_	15	punct	_	_
-12	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	telefone	telefone	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nsubj	_	_
-14	não	não	ADV	adv	_	17	neg	_	_
-15	pára	parar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	mark	_	_
-17	tocar	tocar	VERB	v-inf	VerbForm=Inf	15	xcomp	_	_
-18	»	»	PUNCT	punc	_	15	punct	_	_
-19	.	.	PUNCT	punc	_	15	punct	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Juventude	Juventude	PROPN	PROP|@P<	_	6	flat	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+11	«	«	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	telefone	telefone	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
+14	não	não	ADV	_	Polarity=Neg	17	advmod	_	_
+15	pára	parar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+16	de	de	ADP	PRP|@PRT-AUX<	_	17	mark	_	_
+17	tocar	tocar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	xcomp	_	SpaceAfter=No
+18	»	»	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP139-4
-# sent_id = pt-ud-train.conllu#s718/pt
-# orig_file_sentence = 008#18
-1	Também	também	ADV	adv	_	15	advmod	_	_
+# text = Também na Madeira, a delegação da Cáritas no Funchal tem recebido inúmeras solicitações de famílias do arquipélago dispostas a receber crianças da Bósnia.
+# forest 1
+# source CETEMPúblico n=139 sec=soc sem=92b
+# sent_id = CP139-4
+# id 719
+1	Também	também	ADV	ADV|@>A	_	15	advmod	_	_
 2-3	na	_	_	_	_	_	_	_	_
-2	em	em	ADP	prp|<sam->	AdpType=Prep	1	case	_	_
-3	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
-4	Madeira	Madeira	PROPN	prop|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-5	,	,	PUNCT	punc	_	15	punct	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	delegação	delegação	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nsubj	_	_
+2	em	em	ADP	<sam->|PRP|@ADVL>	_	1	case	_	_
+3	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
+4	Madeira	Madeira	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	delegação	delegação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	_
 8-9	da	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	10	det	_	_
-10	Cáritas	Cáritas	PROPN	prop|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	10	det	_	_
+10	Cáritas	Cáritas	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
 11-12	no	_	_	_	_	_	_	_	_
-11	em	em	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	Funchal	Funchal	PROPN	prop|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-14	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
-15	recebido	receber	VERB	v-pcp	VerbForm=Part	0	root	_	_
-16	inúmeras	inúmero	ADJ	adj|F|P	Gender=Fem|Number=Plur	17	amod	_	_
-17	solicitações	solicitação	NOUN	n|F|P	Gender=Fem|Number=Plur	15	dobj	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	famílias	família	NOUN	n|F|P	Gender=Fem|Number=Plur	17	nmod	_	_
+11	em	em	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	Funchal	Funchal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
+14	tem	ter	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+15	recebido	receber	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	14	ccomp	_	_
+16	inúmeras	inúmero	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	17	amod	_	_
+17	solicitações	solicitação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	15	obj	_	_
+18	de	de	ADP	PRP|@N<	_	19	case	_	_
+19	famílias	família	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	17	nmod	_	_
 20-21	do	_	_	_	_	_	_	_	_
-20	de	de	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	arquipélago	arquipélago	NOUN	n|M|S	Gender=Masc|Number=Sing	19	nmod	_	_
-23	dispostas	dispor	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	22	acl	_	_
-24	a	a	ADP	prp	AdpType=Prep	25	mark	_	_
-25	receber	receber	VERB	v-inf	VerbForm=Inf	23	xcomp	_	_
-26	crianças	criança	NOUN	n|F|P	Gender=Fem|Number=Plur	25	dobj	_	_
+20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
+21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	arquipélago	arquipélago	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
+23	dispostas	dispor	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	22	acl	_	_
+24	a	a	ADP	PRP|@<PIV	_	25	mark	_	_
+25	receber	receber	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	23	xcomp	_	_
+26	crianças	criança	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	25	obj	_	_
 27-28	da	_	_	_	_	_	_	_	_
-27	de	de	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-28	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	29	det	_	_
-29	Bósnia	Bósnia	PROPN	prop|F|S	Gender=Fem|Number=Sing	26	nmod	_	_
-30	.	.	PUNCT	punc	_	15	punct	_	_
+27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
+28	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	29	det	_	_
+29	Bósnia	Bósnia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP139-5
-# sent_id = pt-ud-train.conllu#s719/pt
-# orig_file_sentence = 008#19
-1	Apesar	apesar	ADV	prp|<sam->	AdpType=Prep	5	case	_	MWE=Apesar_de|MWEPOS=ADP
+# text = Apesar dos muitos pedidos de adopção, as pessoas estão a ser informadas que as crianças apenas serão recolhidas temporariamente, «entre nove a doze meses», segundo o «Jornal da Madeira».
+# forest 1
+# source CETEMPúblico n=139 sec=soc sem=92b &W
+# sent_id = CP139-5
+# id 720
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	5	case	_	MWE=Apesar_de|MWEPOS=ADP
 2-3	dos	_	_	_	_	_	_	_	_
-2	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-3	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-4	muitos	muito	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
-5	pedidos	pedido	NOUN	n|M|P	Gender=Masc|Number=Plur	14	nmod	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	adopção	adopção	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-8	,	,	PUNCT	punc	_	14	punct	_	_
-9	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
-10	pessoas	pessoa	NOUN	n|F|P	Gender=Fem|Number=Plur	14	nsubjpass	_	_
-11	estão	estar	AUX	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
-12	a	a	ADP	prp	AdpType=Prep	14	mark	_	_
-13	ser	ser	VERB	v-inf	VerbForm=Inf	14	auxpass	_	_
-14	informadas	informar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	0	root	_	_
-15	que	que	SCONJ	conj-s	_	20	mark	_	_
-16	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
-17	crianças	criança	NOUN	n|F|P	Gender=Fem|Number=Plur	20	nsubjpass	_	_
-18	apenas	apenas	ADV	adv	_	20	advmod	_	_
-19	serão	ser	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	20	auxpass	_	_
-20	recolhidas	recolher	VERB	v-pcp|<corr|recohidas>|F|P	Gender=Fem|Number=Plur|VerbForm=Part	14	ccomp	_	_
-21	temporariamente	temporariamente	ADV	adv	_	20	advmod	_	_
-22	,	,	PUNCT	punc	_	20	punct	_	_
-23	«	«	PUNCT	punc	_	20	punct	_	_
-24	entre	entre	ADP	prp	AdpType=Prep	25	case	_	_
-25	nove	nove	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	20	advmod	_	_
-26	a	a	ADP	prp	AdpType=Prep	28	case	_	_
-27	doze	doze	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	28	nummod	_	_
-28	meses	mês	NOUN	n|M|P	Gender=Masc|Number=Plur	25	nmod	_	_
-29	»	»	PUNCT	punc	_	20	punct	_	_
-30	,	,	PUNCT	punc	_	14	punct	_	_
-31	segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	34	case	_	_
-32	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-33	«	«	PUNCT	punc	_	34	punct	_	_
-34	Jornal	Jornal	PROPN	prop|M|S	_	14	nmod	_	MWE=Jornal_da_Madeira|MWEPOS=PROPN
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+4	muitos	muito	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
+5	pedidos	pedido	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	obl	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	adopção	adopção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+9	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+10	pessoas	pessoa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	13	nsubj	_	_
+11	estão	estar	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
+12	a	a	ADP	PRP|@PRT-AUX<	_	13	mark	_	_
+13	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+14	informadas	informar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	13	ccomp	_	_
+15	que	que	SCONJ	KS|@SUB	_	19	mark	_	_
+16	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
+17	crianças	criança	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	19	nsubj	_	_
+18	apenas	apenas	ADV	ADV|@ADVL>	_	20	advmod	_	_
+19	serão	ser	VERB	<aux>|V|FUT|3P|IND|@FS-<PIV	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	14	ccomp	_	_
+20	recolhidas	recolher	VERB	<mv>|<pass>|<error>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	19	ccomp	_	_
+21	temporariamente	temporariamente	ADV	ADV|@<ADVL	_	20	advmod	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+23	«	«	PUNCT	PU|@PU	_	19	punct	_	SpaceAfter=No
+24	entre	entre	ADP	<first-cjt>|PRP|@<ADVL	_	25	case	_	_
+25	nove	nove	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	20	advmod	_	_
+26	a	a	ADP	PRP|@P<	_	28	case	_	_
+27	doze	doze	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	28	nummod	_	_
+28	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	obl	_	SpaceAfter=No
+29	»	»	PUNCT	PU|@PU	_	19	punct	_	SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+31	segundo	segundo	ADP	<rel>|PRP|@<ADVL	PronType=Rel	34	case	_	_
+32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+33	«	«	PUNCT	PU|@PU	_	34	punct	_	SpaceAfter=No
+34	Jornal	Jornal	PROPN	PROP|M|S|@P<	_	14	obl	_	MWE=Jornal_da_Madeira|MWEPOS=PROPN
 35-36	da	_	_	_	_	_	_	_	_
-35	de	de	ADP	prp|<sam->	AdpType=Prep	37	case	_	_
-36	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
-37	Madeira	Madeira	PROPN	PROPN	_	34	name	_	_
-38	»	»	PUNCT	punc	_	34	punct	_	_
-39	.	.	PUNCT	punc	_	14	punct	_	_
+35	de	de	ADP	<sam->|PRP|@N<	_	37	case	_	_
+36	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+37	Madeira	Madeira	PROPN	PROP|@P<	_	34	flat	_	SpaceAfter=No
+38	»	»	PUNCT	PU|@PU	_	34	punct	_	SpaceAfter=No
+39	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 

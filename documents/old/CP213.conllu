@@ -1,340 +1,354 @@
-# distance_from_new = 0
-# new_sent_id = CP213-1
-# sent_id = pt-ud-train.conllu#s1157/pt
-# orig_file_sentence = 012#57
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	peça	peça	NOUN	n|F|S	Gender=Fem|Number=Sing	23	nsubj	_	_
+# text = A peça do jovem dramaturgo Sergi Belbel (Prémio Nacional da Literatura Catalã em 91, 92 e 93) tem muito de futurista.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-1
+# id 1158
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	peça	peça	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	23	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-5	jovem	jovem	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
-6	dramaturgo	dramaturgo	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-7	Sergi	Sergi	PROPN	prop|M|S	_	6	nmod	_	MWE=Sergi_Belbel|MWEPOS=PROPN
-8	Belbel	Belbel	PROPN	PROPN	_	7	name	_	_
-9	(	(	PUNCT	punc	_	6	punct	_	_
-10	Prémio	Prémio	PROPN	prop|M|S	_	6	appos	_	MWE=Prémio_Nacional|MWEPOS=PROPN
-11	Nacional	Nacional	ADJ	PROPN	_	10	amod	_	_
+3	de	de	ADP	PRP|@N<	_	6	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+5	jovem	jovem	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	6	amod	_	_
+6	dramaturgo	dramaturgo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+7	Sergi	Sergi	PROPN	_	_	6	nmod	_	MWE=Sergi_Belbel|MWEPOS=PROPN
+8	Belbel	Belbel	PROPN	_	_	7	flat	_	_
+9	(	(	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+10	Prémio	Prémio	PROPN	_	_	6	appos	_	MWE=Prémio_Nacional|MWEPOS=PROPN
+11	Nacional	Nacional	PROPN	_	_	10	flat	_	_
 12-13	da	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	14	det	_	_
-14	Literatura	literatura	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-15	Catalã	catalão	ADJ	adj|<prop>|F|S	Gender=Fem|Number=Sing	14	amod	_	_
-16	em	em	ADP	prp	AdpType=Prep	17	case	_	_
-17	91	91	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	10	nummod	_	_
-18	,	,	PUNCT	punc	_	17	punct	_	_
-19	92	92	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	17	conj	_	_
-20	e	e	CONJ	conj-c|<co-prparg>	_	17	cc	_	_
-21	93	93	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	17	conj	_	_
-22	)	)	PUNCT	punc	_	6	punct	_	_
-23	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-24	muito	muito	PRON	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	23	dobj	_	_
-25	de	de	ADP	prp	AdpType=Prep	26	case	_	_
-26	futurista	futurista	ADJ	adj|F|S	Gender=Fem|Number=Sing	24	amod	_	_
-27	.	.	PUNCT	punc	_	23	punct	_	_
+12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	14	det	_	_
+14	Literatura	literatura	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
+15	Catalã	catalão	ADJ	<prop>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	amod	_	_
+16	em	em	ADP	PRP|@N<	_	17	case	_	_
+17	91	91	NUM	<first-cjt>|<card>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	10	nummod	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+19	92	92	NUM	<cjt>|<card>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	17	conj	_	_
+20	e	e	CCONJ	<co-prparg>|KC|@CO	_	21	cc	_	_
+21	93	93	NUM	<cjt>|<card>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	17	conj	_	SpaceAfter=No
+22	)	)	PUNCT	PU|@PU	_	6	punct	_	_
+23	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+24	muito	muito	PRON	<quant>|DET|M|S|@<ACC	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	23	obj	_	_
+25	de	de	ADP	PRP|@N<	_	26	case	_	_
+26	futurista	futurista	ADJ	ADJ|F|S|@P<	Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-2
-# sent_id = pt-ud-train.conllu#s1158/pt
-# orig_file_sentence = 012#58
-1	Mas	mas	CONJ	conj-c	_	11	cc	_	_
-2	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	futuro	futuro	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	6	dobj	_	_
-6	fala	falar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl	_	_
-7	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
-8	mais	mais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	11	advmod	_	MWE=mais_ou_menos|MWEPOS=ADV
-9	ou	ou	CONJ	CONJ	_	8	mwe	_	_
-10	menos	menos	ADV	ADV	NumType=Card|PronType=Ind,Neg,Tot	8	mwe	_	_
-11	próximo	próximo	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
-12	.	.	PUNCT	punc	_	11	punct	_	_
+# text = Mas o futuro de que fala é mais ou menos próximo.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-2
+# id 1159
+1	Mas	mas	CCONJ	KC|@CO	_	11	cc	_	_
+2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	futuro	futuro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
+4	de	de	ADP	PRP|@PIV>	_	5	case	_	_
+5	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	6	obj	_	_
+6	fala	falar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl	_	_
+7	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+8	mais	mais	ADV	N|M|S|@>A	NumType=Card|PronType=Ind,Neg,Tot	11	advmod	_	MWE=mais_ou_menos|MWEPOS=ADV
+9	ou	ou	CCONJ	PRP|@N<	_	8	fixed	_	_
+10	menos	menos	ADV	N|M|S|@P<	NumType=Card|PronType=Ind,Neg,Tot	8	fixed	_	_
+11	próximo	próximo	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-3
-# sent_id = pt-ud-train.conllu#s1159/pt
-# orig_file_sentence = 012#59
-1	Repressão	repressão	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nsubj	_	_
-2	,	,	PUNCT	punc	_	1	punct	_	_
-3	discriminação	discriminação	NOUN	n|F|S	Gender=Fem|Number=Sing	1	conj	_	_
-4	,	,	PUNCT	punc	_	1	punct	_	_
-5	transgressão	transgressão	NOUN	n|F|S	Gender=Fem|Number=Sing	1	conj	_	_
-6	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-7	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
-8	molas	mola	NOUN	n|F|P	Gender=Fem|Number=Plur	0	root	_	_
+# text = Repressão, discriminação, transgressão são as molas da comédia posta em cena por Inês Câmara Pestana.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-3
+# id 1160
+1	Repressão	repressão	NOUN	<first-cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+3	discriminação	discriminação	NOUN	<cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+5	transgressão	transgressão	NOUN	<cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	1	conj	_	_
+6	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+7	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
+8	molas	mola	NOUN	<np-def>|N|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
 9-10	da	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	11	det	_	_
-11	comédia	comédia	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-12	posta	pôr	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	_	_
-13	em	em	ADP	prp	AdpType=Prep	14	case	_	_
-14	cena	cena	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-15	por	por	ADP	prp	AdpType=Prep	16	case	_	_
-16	Inês	Inês	PROPN	prop|F|S	_	12	dobj	_	MWE=Inês_Câmara_Pestana|MWEPOS=PROPN
-17	Câmara	Câmara	PROPN	PROPN	_	16	name	_	_
-18	Pestana	Pestana	PROPN	PROPN	_	16	name	_	_
-19	.	.	PUNCT	punc	_	8	punct	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	11	det	_	_
+11	comédia	comédia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
+12	posta	pôr	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	_	_
+13	em	em	ADP	PRP|@<SA	_	14	case	_	_
+14	cena	cena	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
+15	por	por	ADP	PRP|@PASS	_	16	case	_	_
+16	Inês	Inês	PROPN	_	_	12	obj	_	MWE=Inês_Câmara_Pestana|MWEPOS=PROPN
+17	Câmara	Câmara	PROPN	_	_	16	flat	_	_
+18	Pestana	Pestana	PROPN	_	_	16	flat	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-4
-# sent_id = pt-ud-train.conllu#s1160/pt
-# orig_file_sentence = 012#60
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	repressor	repressor	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	apela	apelar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	para	para	ADP	prp	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	transgressor	transgressor	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
-7	e	e	CONJ	conj-c|<co-advl>	_	3	cc	_	_
-8	vice-versa	vice-versa	ADV	adv	_	3	conj	_	_
-9	.	.	PUNCT	punc	_	3	punct	_	_
+# text = O repressor apela para o transgressor e vice-versa.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-4
+# id 1161
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	repressor	repressor	ADJ	<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	apela	apelar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	para	para	ADP	PRP|@<SA	_	6	case	_	_
+5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	transgressor	transgressor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	_
+7	e	e	CCONJ	<co-fcl>|<co-advl>|KC|@CO	_	8	cc	_	_
+8	vice-versa	vice-versa	ADV	<cjt>|ADV|@FS-STA	_	3	conj	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-5
-# sent_id = pt-ud-train.conllu#s1161/pt
-# orig_file_sentence = 012#61
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	repressão	repressão	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nsubj	_	_
+# text = A repressão do tabagismo, por exemplo, atrai a transgressão.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-5
+# id 1162
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	repressão	repressão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	tabagismo	tabagismo	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	,	,	PUNCT	punc	_	10	punct	_	_
-7	por	por	ADP	adv	AdpType=Prep	10	advmod	_	MWE=por_exemplo|MWEPOS=ADV
-8	exemplo	exemplo	NOUN	NOUN	_	7	mwe	_	_
-9	,	,	PUNCT	punc	_	10	punct	_	_
-10	atrai	atrair	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-11	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	transgressão	transgressão	NOUN	n|F|S	Gender=Fem|Number=Sing	10	dobj	_	_
-13	.	.	PUNCT	punc	_	10	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<ARG	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	tabagismo	tabagismo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+7	por	por	ADP	PRP|@ADVL>	_	10	advmod	_	MWE=por_exemplo|MWEPOS=ADV
+8	exemplo	exemplo	NOUN	N|M|S|@P<	_	7	fixed	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+10	atrai	atrair	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	transgressão	transgressão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-6
-# sent_id = pt-ud-train.conllu#s1162/pt
-# orig_file_sentence = 012#62
-1	E	e	CONJ	conj-c	_	7	cc	_	_
-2	é	é	ADV	adv|<foc>	_	7	cc	_	_
+# text = E é dessa transgressão que nasce o espectáculo cruel do Teatro do Século.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-6
+# id 1163
+1	E	e	CCONJ	KC|@CO	_	7	cc	_	_
+2	é	é	ADV	<foc>|ADV|@ADVL>	_	7	advmod	_	_
 3-4	dessa	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	essa	esse	DET	pron-det|<-sam>|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
-5	transgressão	transgressão	NOUN	n|F|S	Gender=Fem|Number=Sing	7	dobj	_	_
-6	que	que	ADV	adv|<foc>	_	7	cc	_	_
-7	nasce	nascer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-8	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	espectáculo	espectáculo	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nsubj	_	_
-10	cruel	cruel	ADJ	adj|M|S	Gender=Masc|Number=Sing	9	amod	_	_
+3	de	de	ADP	<sam->|PRP|@PIV>	_	5	case	_	_
+4	essa	esse	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
+5	transgressão	transgressão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obj	_	_
+6	que	que	ADV	<foc>|ADV|@ADVL>	_	7	advmod	_	_
+7	nasce	nascer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	espectáculo	espectáculo	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	7	nsubj	_	_
+10	cruel	cruel	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	_
 11-12	do	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	Teatro	Teatro	PROPN	prop|M|S	_	9	nmod	_	MWE=Teatro_do_Século|MWEPOS=PROPN
+11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	Teatro	Teatro	PROPN	PROP|M|S|@P<	_	9	nmod	_	MWE=Teatro_do_Século|MWEPOS=PROPN
 14-15	do	_	_	_	_	_	_	_	_
-14	de	de	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-15	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	Século	Século	PROPN	PROPN	_	13	name	_	_
-17	.	.	PUNCT	punc	_	7	punct	_	_
+14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
+15	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	Século	Século	PROPN	PROP|@P<	_	13	flat	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-7
-# sent_id = pt-ud-train.conllu#s1163/pt
-# orig_file_sentence = 012#63
-1	Uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-2	verdadeira	verdadeiro	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
-3	dança	dança	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
+# text = Uma verdadeira dança da morte.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-7
+# id 1164
+1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	verdadeira	verdadeiro	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
+3	dança	dança	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
-6	morte	morte	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-7	.	.	PUNCT	punc	_	3	punct	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
+6	morte	morte	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-8
-# sent_id = pt-ud-train.conllu#s1164/pt
-# orig_file_sentence = 012#64
-1	Ou	ou	CONJ	conj-c	_	4	cc	_	_
+# text = Ou da vida tomada como um desporto de altíssima competição.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-8
+# id 1165
+1	Ou	ou	CCONJ	KC|@CO	_	4	cc	_	_
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
-4	vida	vida	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-5	tomada	tomar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	_
-6	como	como	ADV	adv|<rel>	PronType=Rel	8	cop	_	_
-7	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	desporto	desporto	NOUN	n|M|S	Gender=Masc|Number=Sing	5	advmod	_	_
-9	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-10	altíssima	alto	ADJ	adj|F|S	Gender=Fem|Number=Sing	11	amod	_	_
-11	competição	competição	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-12	.	.	PUNCT	punc	_	4	punct	_	_
+2	de	de	ADP	<sam->|PRP|@UTT	_	4	case	_	_
+3	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
+4	vida	vida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
+5	tomada	tomar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	_
+6	como	como	ADV	<prd>|PRP|@<ADVL	PronType=Rel	8	cop	_	_
+7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	desporto	desporto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	advmod	_	_
+9	de	de	ADP	PRP|@N<	_	11	case	_	_
+10	altíssima	alto	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	11	amod	_	_
+11	competição	competição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-9
-# sent_id = pt-ud-train.conllu#s1165/pt
-# orig_file_sentence = 012#65
-1	É	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
-2	proibido	proibir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-3	fumar	fumar	VERB	v-inf	VerbForm=Inf	2	csubj	_	_
-4	.	.	PUNCT	punc	_	2	punct	_	_
+# text = É proibido fumar.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-9
+# id 1166
+1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	proibido	proibir	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+3	fumar	fumar	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	2	csubj	_	SpaceAfter=No
+4	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP213-10
-# sent_id = pt-ud-train.conllu#s1166/pt
-# orig_file_sentence = 012#66
-1	Mas	mas	CONJ	conj-c	_	5	cc	_	_
-2	toda	toda	PRON	pron-indp|F|S	Gender=Fem|Number=Sing|PronType=Ind	5	nsubj	_	MWE=toda_a_gente|MWEPOS=PRON
-3	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	compound	_	_
-4	gente	gente	PRON	PRON	Gender=Fem|Number=Sing|PronType=Ind	2	compound	_	_
-5	fuma	fumar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	(	(	PUNCT	punc	_	5	punct	_	_
-7	às	às	ADP	adv	AdpType=Preppron|Definite=Def	5	advmod	_	MWE=às_escondidas|MWEPOS=ADV
-8	escondidas	escondidas	NOUN	NOUN	_	7	mwe	_	_
-9	)	)	PUNCT	punc	_	5	punct	_	_
-10	incluindo	incluir	VERB	v-ger	VerbForm=Ger	5	advcl	_	_
-11	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	proibicionistas	proibicionista	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
-13	.	.	PUNCT	punc	_	5	punct	_	_
+# text = Mas toda a gente fuma (às escondidas) incluindo os proibicionistas.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-10
+# id 1167
+1	Mas	mas	CCONJ	KC|@CO	_	5	cc	_	_
+2	toda	toda	PRON	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	5	nsubj	_	MWE=toda_a_gente|MWEPOS=PRON
+3	a	a	DET	<artd>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	2	compound	_	_
+4	gente	gente	PRON	INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Ind	2	compound	_	_
+5	fuma	fumar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	(	(	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+7-8	às	_	_	_	_	_	_	_	_
+7	a	a	ADP	<sam->|PRP|@N<	_	5	case	_	_
+8	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+9	escondidas	escondidas	NOUN	N|F|P|@P<	_	7	fixed	_	SpaceAfter=No
+10	)	)	PUNCT	PU|@PU	_	5	punct	_	_
+11	incluindo	incluir	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	5	advcl	_	_
+12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+13	proibicionistas	proibicionista	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	11	obj	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-11
-# sent_id = pt-ud-train.conllu#s1167/pt
-# orig_file_sentence = 012#67
-1	Se	se	SCONJ	conj-s	_	37	mark	_	_
-2	,	,	PUNCT	punc	_	37	punct	_	_
-3	espectador	espectador	NOUN	n|M|S	Gender=Masc|Number=Sing	37	dep	_	_
-4	distraído	distrair	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
-5	,	,	PUNCT	punc	_	37	punct	_	_
-6	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
-7	nomes	nome	NOUN	n|M|P	Gender=Masc|Number=Plur	37	nsubj	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	actores	actor	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nmod	_	_
-10	como	como	ADV	adv|<rel>	PronType=Rel	7	advmod	_	_
-11	Teresa	Teresa	PROPN	prop|F|S	_	10	nsubj	_	MWE=Teresa_Roby|MWEPOS=PROPN
-12	Roby	Roby	PROPN	PROPN	_	11	name	_	_
-13	,	,	PUNCT	punc	_	11	punct	_	_
-14	Inês	Inês	PROPN	prop|F|S	_	11	conj	_	MWE=Inês_Câmara_Pestana|MWEPOS=PROPN
-15	Câmara	Câmara	PROPN	PROPN	_	14	name	_	_
-16	Pestana	Pestana	PROPN	PROPN	_	14	name	_	_
-17	,	,	PUNCT	punc	_	11	punct	_	_
-18	António	António	PROPN	prop|M|S	_	11	conj	_	MWE=António_Filipe|MWEPOS=PROPN
-19	Filipe	Filipe	PROPN	PROPN	_	18	name	_	_
-20	,	,	PUNCT	punc	_	11	punct	_	_
-21	Elisabete	Elisabete	PROPN	prop|F|S	_	11	conj	_	MWE=Elisabete_Piecho|MWEPOS=PROPN
-22	Piecho	Piecho	PROPN	PROPN	_	21	name	_	_
-23	,	,	PUNCT	punc	_	11	punct	_	_
-24	Manuela	Manuela	PROPN	prop|F|S	_	11	conj	_	MWE=Manuela_Pedroso|MWEPOS=PROPN
-25	Pedroso	Pedroso	PROPN	PROPN	_	24	name	_	_
-26	,	,	PUNCT	punc	_	11	punct	_	_
-27	Marina	Marina	PROPN	prop|M|S	_	11	conj	_	MWE=Marina_Albuquerque|MWEPOS=PROPN
-28	Albuquerque	Albuquerque	PROPN	PROPN	_	27	name	_	_
-29	,	,	PUNCT	punc	_	11	punct	_	_
-30	Orlando	Orlando	PROPN	prop|M|S	_	11	conj	_	MWE=Orlando_Ségio|MWEPOS=PROPN
-31	Ségio	Ségio	PROPN	PROPN	_	30	name	_	_
-32	e	e	CONJ	conj-c	_	11	cc	_	_
-33	Rui	Rui	PROPN	prop|M|S	_	11	conj	_	MWE=Rui_David|MWEPOS=PROPN
-34	David	David	PROPN	PROPN	_	33	name	_	_
-35	não	não	ADV	adv	_	37	neg	_	_
-36	te	tu	PRON	pron-pers|M|2S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=2|PronType=Prs	37	dobj	_	_
-37	dizem	dizer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	40	advcl	_	_
-38	nada	nada	PRON	pron-indp|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	37	iobj	_	_
-39	,	,	PUNCT	punc	_	40	punct	_	_
-40	aproveita	aproveitar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-41	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
-42	noite	noite	NOUN	n|F|S	Gender=Fem|Number=Sing	40	dobj	_	_
-43	de	de	ADP	prp	AdpType=Prep	44	case	_	_
-44	hoje	hoje	ADV	adv	_	42	advmod	_	_
-45	(	(	PUNCT	punc	_	42	punct	_	_
+# text = Se, espectador distraído, os nomes de actores como Teresa Roby, Inês Câmara Pestana, António Filipe, Elisabete Piecho, Manuela Pedroso, Marina Albuquerque, Orlando Ségio e Rui David não te dizem nada, aproveita a noite de hoje (às 22h) para ir à Rua do Século ver o prodígio duma companhia em que os actores parecem ligados à corrente.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-11
+# id 1168
+1	Se	se	SCONJ	<first-cjt>|KS|@ADVL>	_	37	mark	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+3	espectador	espectador	NOUN	<np-idf>|N|M|S|@VOC	Gender=Masc|Number=Sing	37	dep	_	_
+4	distraído	distrair	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	nomes	nome	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	37	nsubj	_	_
+8	de	de	ADP	PRP|@N<ARG	_	9	case	_	_
+9	actores	actor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	_
+10	como	como	ADV	<com>|PRP|@N<	PronType=Rel	7	advmod	_	_
+11	Teresa	Teresa	PROPN	_	_	10	nsubj	_	MWE=Teresa_Roby|MWEPOS=PROPN
+12	Roby	Roby	PROPN	_	_	11	flat	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+14	Inês	Inês	PROPN	_	_	11	conj	_	MWE=Inês_Câmara_Pestana|MWEPOS=PROPN
+15	Câmara	Câmara	PROPN	_	_	14	flat	_	_
+16	Pestana	Pestana	PROPN	_	_	14	flat	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+18	António	António	PROPN	_	_	11	conj	_	MWE=António_Filipe|MWEPOS=PROPN
+19	Filipe	Filipe	PROPN	_	_	18	flat	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+21	Elisabete	Elisabete	PROPN	_	_	11	conj	_	MWE=Elisabete_Piecho|MWEPOS=PROPN
+22	Piecho	Piecho	PROPN	_	_	21	flat	_	SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+24	Manuela	Manuela	PROPN	_	_	11	conj	_	MWE=Manuela_Pedroso|MWEPOS=PROPN
+25	Pedroso	Pedroso	PROPN	_	_	24	flat	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	_
+27	Marina	Marina	PROPN	_	_	11	conj	_	MWE=Marina_Albuquerque|MWEPOS=PROPN
+28	Albuquerque	Albuquerque	PROPN	_	_	27	flat	_	SpaceAfter=No
+29	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+30	Orlando	Orlando	PROPN	_	_	11	conj	_	MWE=Orlando_Ségio|MWEPOS=PROPN
+31	Ségio	Ségio	PROPN	_	_	30	flat	_	_
+32	e	e	CCONJ	KC|@CO	_	33	cc	_	_
+33	Rui	Rui	PROPN	_	_	11	conj	_	MWE=Rui_David|MWEPOS=PROPN
+34	David	David	PROPN	_	_	33	flat	_	_
+35	não	não	ADV	_	Polarity=Neg	37	advmod	_	_
+36	te	tu	PRON	<refl>|PERS|M|2S|ACC|@DAT>	Case=Acc|Gender=Masc|Number=Sing|Person=2|PronType=Prs	37	obj	_	_
+37	dizem	dizer	VERB	<mv>|V|PR|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	40	advcl	_	_
+38	nada	nada	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	37	iobj	_	SpaceAfter=No
+39	,	,	PUNCT	PU|@PU	_	40	punct	_	_
+40	aproveita	aproveitar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+41	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
+42	noite	noite	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	40	obj	_	_
+43	de	de	ADP	PRP|@N<	_	44	case	_	_
+44	hoje	hoje	ADV	ADV|@P<	_	42	advmod	_	_
+45	(	(	PUNCT	PU|@PU	_	42	punct	_	SpaceAfter=No
 46-47	às	_	_	_	_	_	_	_	_
-46	a	a	ADP	prp|<sam->	AdpType=Prep	48	case	_	_
-47	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	48	det	_	_
-48	22h	22h	NOUN	n|F|P	Gender=Fem|Number=Plur	42	nmod	_	_
-49	)	)	PUNCT	punc	_	42	punct	_	_
-50	para	para	ADP	prp	AdpType=Prep	51	mark	_	_
-51	ir	ir	VERB	v-inf	VerbForm=Inf	40	advcl	_	_
+46	a	a	ADP	<sam->|PRP|@N<	_	48	case	_	_
+47	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	48	det	_	_
+48	22h	22h	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	42	nmod	_	SpaceAfter=No
+49	)	)	PUNCT	PU|@PU	_	42	punct	_	_
+50	para	para	ADP	PRP|@<ADVL	_	51	mark	_	_
+51	ir	ir	VERB	<aux>|V|INF|@ICL-P<	VerbForm=Inf	40	advcl	_	_
 52-53	à	_	_	_	_	_	_	_	_
-52	a	a	ADP	prp|<sam->	AdpType=Prep	54	case	_	_
-53	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	54	det	_	_
-54	Rua	Rua	PROPN	prop|F|S	_	58	nmod	_	MWE=Rua_do_Século|MWEPOS=PROPN
+52	a	a	ADP	<sam->|PRP|@SA>	_	54	case	_	_
+53	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	54	det	_	_
+54	Rua	Rua	PROPN	PROP|F|S|@P<	_	58	obl	_	MWE=Rua_do_Século|MWEPOS=PROPN
 55-56	do	_	_	_	_	_	_	_	_
-55	de	de	ADP	prp|<sam->	AdpType=Prep	57	case	_	_
-56	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	_	_
-57	Século	Século	PROPN	PROPN	_	54	name	_	_
-58	ver	ver	VERB	v-inf	VerbForm=Inf	51	xcomp	_	_
-59	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_
-60	prodígio	prodígio	NOUN	n|M|S	Gender=Masc|Number=Sing	58	dobj	_	_
+55	de	de	ADP	<sam->|PRP|@N<	_	57	case	_	_
+56	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	_	_
+57	Século	Século	PROPN	PROP|@P<	_	54	flat	_	_
+58	ver	ver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	51	xcomp	_	_
+59	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_
+60	prodígio	prodígio	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	58	obj	_	_
 61-62	duma	_	_	_	_	_	_	_	_
-61	de	de	ADP	prp	AdpType=Prep	63	case	_	_
-62	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	63	det	_	_
-63	companhia	companhia	NOUN	n|F|S	Gender=Fem|Number=Sing	60	nmod	_	_
-64	em	em	ADP	prp	AdpType=Prep	65	case	_	_
-65	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	69	nmod	_	_
-66	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	67	det	_	_
-67	actores	actor	NOUN	n|M|P	Gender=Masc|Number=Plur	69	nsubj	_	_
-68	parecem	parecer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	69	cop	_	_
-69	ligados	ligar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	63	acl	_	_
+61	de	de	ADP	PRP|@N<	_	63	case	_	_
+62	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	63	det	_	_
+63	companhia	companhia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	60	nmod	_	_
+64	em	em	ADP	PRP|@ADVL>	_	65	case	_	_
+65	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	69	obl	_	_
+66	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	67	det	_	_
+67	actores	actor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	69	nsubj	_	_
+68	parecem	parecer	AUX	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	69	cop	_	_
+69	ligados	ligar	VERB	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	63	acl	_	_
 70-71	à	_	_	_	_	_	_	_	_
-70	a	a	ADP	prp|<sam->	AdpType=Prep	72	case	_	_
-71	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	72	det	_	_
-72	corrente	corrente	NOUN	n|F|S	Gender=Fem|Number=Sing	69	dobj	_	_
-73	.	.	PUNCT	punc	_	40	punct	_	_
+70	a	a	ADP	<sam->|PRP|@<PIV	_	72	case	_	_
+71	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	72	det	_	_
+72	corrente	corrente	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	69	obj	_	SpaceAfter=No
+73	.	.	PUNCT	PU|@PU	_	40	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP213-12
-# sent_id = pt-ud-train.conllu#s1168/pt
-# orig_file_sentence = 012#68
-1	Porque	porque	SCONJ	conj-s	_	5	mark	_	_
-2	corrente	corrente	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nsubj	_	_
-3	magnética	magnético	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
-4	não	não	ADV	adv	_	5	neg	_	_
-5	falta	faltar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = Porque corrente magnética não falta à encenadora, que, em espectáculos como «Crimes e Interlúdios», «Carícias», «Kvetch» e «Zucco», fez do Teatro do Século uma referência incontornável no panorama do teatro português nos anos 90.
+# forest 1
+# source CETEMPúblico n=213 sec=soc sem=95a
+# sent_id = CP213-12
+# id 1169
+1	Porque	porque	SCONJ	KS|@SUB	_	5	mark	_	_
+2	corrente	corrente	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	magnética	magnético	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
+4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
+5	falta	faltar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6-7	à	_	_	_	_	_	_	_	_
-6	a	a	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	8	det	_	_
-8	encenadora	encenadora	NOUN	n|F|S	Gender=Fem|Number=Sing	5	dobj	_	_
-9	,	,	PUNCT	punc	_	8	punct	_	_
-10	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	33	nsubj	_	_
-11	,	,	PUNCT	punc	_	33	punct	_	_
-12	em	em	ADP	prp	AdpType=Prep	13	case	_	_
-13	espectáculos	espectáculo	NOUN	n|M|P	Gender=Masc|Number=Plur	33	nmod	_	_
-14	como	como	ADV	adv|<rel>	PronType=Rel	13	advmod	_	_
-15	«	«	PUNCT	punc	_	16	punct	_	_
-16	Crimes	Crimes	PROPN	prop|M|S	_	14	nsubj	_	MWE=Crimes_e_Interlúdios|MWEPOS=PROPN
-17	e	e	CONJ	CONJ	_	16	cc	_	_
-18	Interlúdios	Interlúdios	PROPN	PROPN	_	16	conj	_	_
-19	»	»	PUNCT	punc	_	16	punct	_	_
-20	,	,	PUNCT	punc	_	16	punct	_	_
-21	«	«	PUNCT	punc	_	16	punct	_	_
-22	Carícias	Carícias	PROPN	prop|M|S	Gender=Masc|Number=Sing	16	conj	_	_
-23	»	»	PUNCT	punc	_	16	punct	_	_
-24	,	,	PUNCT	punc	_	16	punct	_	_
-25	«	«	PUNCT	punc	_	16	punct	_	_
-26	Kvetch	Kvetch	PROPN	prop|M|S	Gender=Masc|Number=Sing	16	conj	_	_
-27	»	»	PUNCT	punc	_	16	punct	_	_
-28	e	e	CONJ	conj-c	_	16	cc	_	_
-29	«	«	PUNCT	punc	_	16	punct	_	_
-30	Zucco	Zucco	PROPN	prop|M|S	Gender=Masc|Number=Sing	16	conj	_	_
-31	»	»	PUNCT	punc	_	16	punct	_	_
-32	,	,	PUNCT	punc	_	33	punct	_	_
-33	fez	fazer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl	_	_
+6	a	a	ADP	<sam->|PRP|@<PIV	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	8	det	_	_
+8	encenadora	encenadora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+10	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	33	nsubj	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	33	punct	_	_
+12	em	em	ADP	PRP|@ADVL>	_	13	case	_	_
+13	espectáculos	espectáculo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	33	obl	_	_
+14	como	como	ADV	<com>|PRP|@N<	PronType=Rel	13	advmod	_	_
+15	«	«	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+16	Crimes	Crimes	PROPN	<first-cjt>|PROP|M|S|@P<	_	14	nsubj	_	MWE=Crimes_e_Interlúdios|MWEPOS=PROPN
+17	e	e	CCONJ	PROP|@N<	_	18	cc	_	_
+18	Interlúdios	Interlúdios	PROPN	PROP|@N<	_	16	conj	_	SpaceAfter=No
+19	»	»	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+21	«	«	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
+22	Carícias	Carícias	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	16	conj	_	SpaceAfter=No
+23	»	»	PUNCT	PU|@PU	_	26	punct	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+25	«	«	PUNCT	PU|@PU	_	26	punct	_	SpaceAfter=No
+26	Kvetch	Kvetch	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	16	conj	_	SpaceAfter=No
+27	»	»	PUNCT	PU|@PU	_	30	punct	_	_
+28	e	e	CCONJ	KC|@CO	_	30	cc	_	_
+29	«	«	PUNCT	PU|@PU	_	30	punct	_	SpaceAfter=No
+30	Zucco	Zucco	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	16	conj	_	SpaceAfter=No
+31	»	»	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	33	punct	_	_
+33	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl	_	_
 34-35	do	_	_	_	_	_	_	_	_
-34	de	de	ADP	prp|<sam->	AdpType=Prep	36	case	_	_
-35	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-36	Teatro	Teatro	PROPN	prop|M|S	_	33	dobj	_	MWE=Teatro_do_Século|MWEPOS=PROPN
+34	de	de	ADP	<sam->|PRP|@<PIV	_	36	case	_	_
+35	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	Teatro	Teatro	PROPN	PROP|M|S|@P<	_	33	obj	_	MWE=Teatro_do_Século|MWEPOS=PROPN
 37-38	do	_	_	_	_	_	_	_	_
-37	de	de	ADP	prp|<sam->	AdpType=Prep	39	case	_	_
-38	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
-39	Século	Século	PROPN	PROPN	_	36	name	_	_
-40	uma	um	NUM	num|<card>|F|S	Gender=Fem|Number=Sing|NumType=Card	41	nummod	_	_
-41	referência	referência	NOUN	n|F|S	Gender=Fem|Number=Sing	33	dobj	_	_
-42	incontornável	incontornável	ADJ	adj|F|S	Gender=Fem|Number=Sing	41	amod	_	_
+37	de	de	ADP	<sam->|PRP|@N<	_	39	case	_	_
+38	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
+39	Século	Século	PROPN	PROP|@P<	_	36	flat	_	_
+40	uma	um	NUM	<card>|NUM|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card	41	nummod	_	_
+41	referência	referência	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	33	obj	_	_
+42	incontornável	incontornável	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	41	amod	_	_
 43-44	no	_	_	_	_	_	_	_	_
-43	em	em	ADP	prp|<sam->	AdpType=Prep	45	case	_	_
-44	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
-45	panorama	panorama	NOUN	n|M|S	Gender=Masc|Number=Sing	41	nmod	_	_
+43	em	em	ADP	<sam->|PRP|@N<	_	45	case	_	_
+44	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	panorama	panorama	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	41	nmod	_	_
 46-47	do	_	_	_	_	_	_	_	_
-46	de	de	ADP	prp|<sam->	AdpType=Prep	48	case	_	_
-47	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
-48	teatro	teatro	NOUN	n|M|S	Gender=Masc|Number=Sing	45	nmod	_	_
-49	português	português	ADJ	adj|M|S	Gender=Masc|Number=Sing	48	amod	_	_
+46	de	de	ADP	<sam->|PRP|@N<	_	48	case	_	_
+47	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
+48	teatro	teatro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	45	nmod	_	_
+49	português	português	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	48	amod	_	_
 50-51	nos	_	_	_	_	_	_	_	_
-50	em	em	ADP	prp|<sam->	AdpType=Prep	52	case	_	_
-51	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_
-52	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	45	nmod	_	_
-53	90	90	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	52	nummod	_	_
-54	.	.	PUNCT	punc	_	5	punct	_	_
+50	em	em	ADP	<sam->|PRP|@N<	_	52	case	_	_
+51	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_
+52	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	45	nmod	_	_
+53	90	90	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	52	nummod	_	SpaceAfter=No
+54	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 

@@ -1,129 +1,135 @@
-# distance_from_new = 0
-# new_sent_id = CP830-1
-# sent_id = pt-ud-train.conllu#s4272/pt
-# orig_file_sentence = 043#72
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	maioria	maioria	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nsubj	_	_
+# text = A maioria das queixas, verdade seja dita, não tinham nada de transcendente ou desconhecido.
+# forest 1
+# source CETEMPúblico n=830 sec=nd sem=93a
+# sent_id = CP830-1
+# id 4274
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	maioria	maioria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
 3-4	das	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
-5	queixas	queixa	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-6	,	,	PUNCT	punc	_	12	punct	_	_
-7	verdade	verdade	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nsubjpass	_	_
-8	seja	ser	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	auxpass	_	_
-9	dita	dizer	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	12	advcl	_	_
-10	,	,	PUNCT	punc	_	12	punct	_	_
-11	não	não	ADV	adv	_	12	neg	_	_
-12	tinham	ter	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-13	nada	nada	PRON	pron-indp|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	12	dobj	_	_
-14	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-15	transcendente	transcendente	ADJ	adj|M|S	Gender=Masc|Number=Sing	13	amod	_	_
-16	ou	ou	CONJ	conj-c|<co-prparg>	_	15	cc	_	_
-17	desconhecido	desconhecer	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	15	conj	_	_
-18	.	.	PUNCT	punc	_	12	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+5	queixas	queixa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+7	verdade	verdade	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
+8	seja	ser	VERB	<aux>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
+9	dita	dizer	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	8	ccomp	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+11	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
+12	tinham	ter	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+13	nada	nada	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	12	obj	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	transcendente	transcendente	ADJ	<first-cjt>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	13	amod	_	_
+16	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	_
+17	desconhecido	desconhecer	VERB	<cjt>|V|PCP|M|S|@P<	Gender=Masc|Number=Sing|VerbForm=Part	15	conj	_	SpaceAfter=No
+18	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP830-2
-# sent_id = pt-ud-train.conllu#s4273/pt
-# orig_file_sentence = 043#73
-1	Repetiam	repetir	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-2	que	que	SCONJ	conj-s	_	7	mark	_	_
-3	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
-4	missas	missa	NOUN	n|F|P	Gender=Fem|Number=Plur	7	nsubj	_	_
-5	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-6	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	chatice	chatice	NOUN	n|F|S	Gender=Fem|Number=Sing	1	ccomp	_	_
-8	e	e	CONJ	conj-c|<co-vfin>	_	7	cc	_	_
-9	que	que	SCONJ	conj-s	_	12	mark	_	_
-10	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
-11	homilias	homilia	NOUN	n|F|P	Gender=Fem|Number=Plur	12	nsubj	_	_
-12	oscilam	oscilar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
-13	entre	entre	ADP	prp	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	horror	horror	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-16	e	e	CONJ	conj-c|<co-prparg>	_	15	cc	_	_
-17	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	banalidade	banalidade	NOUN	n|F|S	Gender=Fem|Number=Sing	15	conj	_	_
-19	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Repetiam que as missas são uma chatice e que as homilias oscilam entre o horror e a banalidade.
+# forest 1
+# source CETEMPúblico n=830 sec=nd sem=93a
+# sent_id = CP830-2
+# id 4275
+1	Repetiam	repetir	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+2	que	que	SCONJ	KS|@SUB	_	7	mark	_	_
+3	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
+4	missas	missa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
+5	são	ser	AUX	<first-cjt>|<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+6	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	chatice	chatice	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	1	ccomp	_	_
+8	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	12	cc	_	_
+9	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
+10	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
+11	homilias	homilia	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	12	nsubj	_	_
+12	oscilam	oscilar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+13	entre	entre	ADP	PRP|@<ADVL	_	15	case	_	_
+14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	horror	horror	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	_
+16	e	e	CCONJ	<co-prparg>|KC|@CO	_	18	cc	_	_
+17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	banalidade	banalidade	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP830-3
-# sent_id = pt-ud-train.conllu#s4274/pt
-# orig_file_sentence = 043#74
-1	Algumas	algum	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	2	det	_	_
-2	pessoas	pessoa	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nsubj	_	_
-3	atribuíam	atribuir	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+# text = Algumas pessoas atribuíam à miséria litúrgica a suposta descida na prática religiosa.
+# forest 1
+# source CETEMPúblico n=830 sec=nd sem=93a
+# sent_id = CP830-3
+# id 4276
+1	Algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	2	det	_	_
+2	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
+3	atribuíam	atribuir	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 4-5	à	_	_	_	_	_	_	_	_
-4	a	a	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	miséria	miséria	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-7	litúrgica	litúrgico	ADJ	adj|F|S	Gender=Fem|Number=Sing	6	amod	_	_
-8	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-9	suposta	supor	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	10	acl	_	_
-10	descida	descida	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
+4	a	a	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	miséria	miséria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obj	_	_
+7	litúrgica	litúrgico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	6	amod	_	_
+8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+9	suposta	supor	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	10	acl	_	_
+10	descida	descida	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 11-12	na	_	_	_	_	_	_	_	_
-11	em	em	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	prática	prática	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-14	religiosa	religioso	ADJ	adj|F|S	Gender=Fem|Number=Sing	13	amod	_	_
-15	.	.	PUNCT	punc	_	3	punct	_	_
+11	em	em	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	prática	prática	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
+14	religiosa	religioso	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP830-4
-# sent_id = pt-ud-train.conllu#s4275/pt
-# orig_file_sentence = 043#75
-1	Conclusão	conclusão	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	porventura	porventura	ADV	adv	_	4	advmod	_	_
-3	demasiado	demasiado	ADV	adv	_	4	advmod	_	_
-4	linear	linear	ADJ	adj|F|S	Gender=Fem|Number=Sing	1	amod	_	_
-5	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Conclusão porventura demasiado linear.
+# forest 1
+# source CETEMPúblico n=830 sec=nd sem=93a
+# sent_id = CP830-4
+# id 4277
+1	Conclusão	conclusão	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+2	porventura	porventura	ADV	ADV|@>A	_	4	advmod	_	_
+3	demasiado	demasiado	ADV	ADV|@>A	_	4	advmod	_	_
+4	linear	linear	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	SpaceAfter=No
+5	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP830-5
-# sent_id = pt-ud-train.conllu#s4276/pt
-# orig_file_sentence = 043#76
-1	Insistiam	insistir	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-2	em	em	ADP	prp	AdpType=Prep	15	mark	_	_
-3	que	que	SCONJ	conj-s	_	15	mark	_	_
-4	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-5	jovens	jovem	ADJ	adj|<n>|M|P	Gender=Masc|Number=Plur	15	nsubj	_	_
+# text = Insistiam em que os jovens dos 18 aos 25 anos já não aturavam o que os pais tinham aguentado.
+# forest 1
+# source CETEMPúblico n=830 sec=nd sem=93a
+# sent_id = CP830-5
+# id 4278
+1	Insistiam	insistir	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+2	em	em	ADP	PRP|@<PIV	_	15	mark	_	_
+3	que	que	SCONJ	KS|@SUB	_	15	mark	_	_
+4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	jovens	jovem	ADJ	<n>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	15	nsubj	_	_
 6-7	dos	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-7	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-8	18	18	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	7	nummod	_	_
+6	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	7	case	_	_
+7	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+8	18	18	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	7	nummod	_	_
 9-10	aos	_	_	_	_	_	_	_	_
-9	a	a	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-10	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-11	25	25	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-12	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nmod	_	_
-13	já	já	ADV	adv	_	15	advmod	_	MWE=já_não|MWEPOS=ADV
-14	não	não	PART	PART	Negative=Neg	13	mwe	_	_
-15	aturavam	aturar	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	ccomp	_	_
-16	o	o	DET	pron-indp|<rel>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	dobj	_	MWE=o_que|MWEPOS=PRON
-17	que	que	SCONJ	SCONJ	_	16	compound	_	_
-18	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-19	pais	pai	NOUN	n|M|P	Gender=Masc|Number=Plur	21	nsubj	_	_
-20	tinham	ter	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	21	aux	_	_
-21	aguentado	aguentar	VERB	v-pcp	VerbForm=Part	15	ccomp	_	_
-22	.	.	PUNCT	punc	_	1	punct	_	_
+9	a	a	ADP	<sam->|<cjt>|PRP|@P<	_	12	case	_	_
+10	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+11	25	25	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+12	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	7	obl	_	_
+13	já	já	ADV	PRP|@ADVL>	_	15	advmod	_	MWE=já_não|MWEPOS=ADV
+14	não	não	PART	_	Polarity=Neg	13	fixed	_	_
+15	aturavam	aturar	VERB	<mv>|V|IMPF|3P|IND|@FS-P<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	ccomp	_	_
+16	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	21	obj	_	MWE=o_que|MWEPOS=PRON
+17	que	que	SCONJ	<rel>|INDP|M|S|@ACC>	_	16	compound	_	_
+18	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
+19	pais	pai	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	20	nsubj	_	_
+20	tinham	ter	VERB	<aux>|V|IMPF|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	15	ccomp	_	_
+21	aguentado	aguentar	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	20	ccomp	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP830-6
-# sent_id = pt-ud-train.conllu#s4277/pt
-# orig_file_sentence = 043#77
-1	o	o	DET	pron-indp|<rel>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	nsubj	_	MWE=o_que|MWEPOS=PRON
-2	que	que	SCONJ	SCONJ	_	1	compound	_	_
-3	,	,	PUNCT	punc	_	8	punct	_	_
-4	sendo	ser	VERB	v-ger	VerbForm=Ger	6	cop	_	_
-5	talvez	talvez	ADV	adv	_	6	advmod	_	_
-6	verdade	verdade	NOUN	n|F|S	Gender=Fem|Number=Sing	8	advcl	_	_
-7	,	,	PUNCT	punc	_	8	punct	_	_
-8	esquece	esquecer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	que	que	SCONJ	conj-s	_	11	mark	_	_
-10	também	também	ADV	adv	_	11	advmod	_	_
-11	há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_
-12	jovens	jovem	ADJ	adj|<n>|M/F|P	Number=Plur	11	dobj	_	_
-13	para	para	ADP	prp	AdpType=Prep	14	case	_	_
-14	tudo	tudo	PRON	pron-indp|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	12	nmod	_	_
-15	.	.	PUNCT	punc	_	8	punct	_	_
+# text = o que, sendo talvez verdade, esquece que também há jovens para tudo.
+# forest 1
+# source CETEMPúblico n=830 sec=nd sem=93a
+# sent_id = CP830-6
+# id 4279
+1	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	8	nsubj	_	MWE=o_que|MWEPOS=PRON
+2	que	que	SCONJ	<rel>|INDP|M|S|@SUBJ>	_	1	compound	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+4	sendo	ser	AUX	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	6	cop	_	_
+5	talvez	talvez	ADV	ADV|@<ADVL	_	6	advmod	_	_
+6	verdade	verdade	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	8	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+8	esquece	esquecer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
+10	também	também	ADV	ADV|@ADVL>	_	11	advmod	_	_
+11	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_
+12	jovens	jovem	ADJ	<n>|ADJ|M/F|P|@<ACC	Number=Plur	11	obj	_	_
+13	para	para	ADP	PRP|@N<	_	14	case	_	_
+14	tudo	tudo	PRON	<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	12	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 

@@ -1,176 +1,186 @@
-# distance_from_new = 0
-# new_sent_id = CF853-1
-# sent_id = pt-ud-train.conllu#s8636/pt
-# orig_file_sentence = 087#36
-1	«	«	PUNCT	punc	_	8	punct	_	_
-2	Adventure	Adventure	PROPN	prop|M|S	_	8	nsubj	_	MWE=Adventure_in_Castle|MWEPOS=PROPN
-3	in	in	ADP	ADP	AdpType=Prep	4	case	_	_
-4	Castle	Castle	PROPN	PROPN	_	2	name	_	_
-5	»	»	PUNCT	punc	_	8	punct	_	_
-6	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-7	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	programa	programa	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-9	para	para	ADP	prp	AdpType=Prep	10	mark	_	_
-10	aprender	aprender	VERB	v-inf	VerbForm=Inf	8	acl	_	_
-11	matemática	matemática	NOUN	n|F|S	Gender=Fem|Number=Sing	10	dobj	_	_
-12	.	.	PUNCT	punc	_	8	punct	_	_
+# text = «Adventure in Castle» é um programa para aprender matemática.
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-1
+# id 3594
+1	«	«	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
+2	Adventure	Adventure	PROPN	_	_	8	nsubj	_	MWE=Adventure_in_Castle|MWEPOS=PROPN
+3	in	in	ADP	_	_	4	case	_	_
+4	Castle	Castle	PROPN	_	_	2	flat	_	SpaceAfter=No
+5	»	»	PUNCT	PU|@PU	_	8	punct	_	_
+6	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	programa	programa	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+9	para	para	ADP	PRP|@N<	_	10	mark	_	_
+10	aprender	aprender	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
+11	matemática	matemática	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF853-2
-# sent_id = pt-ud-train.conllu#s8637/pt
-# orig_file_sentence = 087#37
-1	Em	em	ADP	prp	AdpType=Prep	2	case	_	_
-2	inglês	inglês	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-3	,	,	PUNCT	punc	_	4	punct	_	_
-4	traz	trazer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	noções	noção	NOUN	n|F|P	Gender=Fem|Number=Plur	4	dobj	_	_
-6	sobre	sobre	ADP	prp	AdpType=Prep	7	case	_	_
-7	cálculos	cálculo	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	soma	soma	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-10	,	,	PUNCT	punc	_	9	punct	_	_
-11	subtração	subtração	NOUN	n|F|S	Gender=Fem|Number=Sing	9	conj	_	_
-12	,	,	PUNCT	punc	_	9	punct	_	_
-13	multiplicação	multiplicação	NOUN	n|F|S	Gender=Fem|Number=Sing	9	conj	_	_
-14	e	e	CONJ	conj-c|<co-prparg>	_	9	cc	_	_
-15	divisão	divisão	NOUN	n|F|S	Gender=Fem|Number=Sing	9	conj	_	_
-16	.	.	PUNCT	punc	_	4	punct	_	_
+# text = Em inglês, traz noções sobre cálculos de soma, subtração, multiplicação e divisão.
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-2
+# id 3595
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
+2	inglês	inglês	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+4	traz	trazer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	noções	noção	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
+6	sobre	sobre	ADP	PRP|@N<	_	7	case	_	_
+7	cálculos	cálculo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
+9	soma	soma	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+11	subtração	subtração	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+13	multiplicação	multiplicação	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
+14	e	e	CCONJ	<co-prparg>|KC|@CO	_	15	cc	_	_
+15	divisão	divisão	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF853-3
-# sent_id = pt-ud-train.conllu#s8638/pt
-# orig_file_sentence = 087#38
-1	Custa	custar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	US$	US$	SYM	n|<prop>|M|P	Gender=Masc|Number=Plur	1	dobj	_	_
-3	49	49	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
-4	,	,	PUNCT	punc	_	1	punct	_	_
+# text = Custa US$ 49, na Brasoftware.
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-3
+# id 3596
+1	Custa	custar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	US$	US$	SYM	_	Gender=Masc|Number=Plur	1	obj	_	_
+3	49	49	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5-6	na	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Brasoftware	Brasoftware	PROPN	prop|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-8	.	.	PUNCT	punc	_	1	punct	_	_
+5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Brasoftware	Brasoftware	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF853-4
-# sent_id = pt-ud-train.conllu#s8639/pt
-# orig_file_sentence = 087#39
-1	Tel.	tel.	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	(011)	\(011\)	NUM	num|M|S	Gender=Masc|Number=Sing|NumType=Card	1	nummod	_	MWE=(011)_253-1588|MWEPOS=NUM
-3	253-1588	253-1588	NUM	NUM	NumForm=Digit|NumType=Card	2	compound	_	_
-4	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Tel. (011) 253-1588.
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-4
+# id 3597
+1	Tel.	tel.	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	(011)	\(011\)	NUM	PRP|@N<	Gender=Masc|Number=Sing	1	nummod	_	MWE=(011)_253-1588|MWEPOS=NUM
+3	253-1588	253-1588	NUM	NUM|@A<	NumForm=Digit|NumType=Card	2	compound	_	SpaceAfter=No
+4	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF853-5
-# sent_id = pt-ud-train.conllu#s8640/pt
-# orig_file_sentence = 087#40
-1	«	«	PUNCT	punc	_	9	punct	_	_
-2	Journey	Journey	PROPN	prop|M|S	_	9	nsubj	_	MWE=Journey_in_the_Universe|MWEPOS=PROPN
-3	in	in	ADP	ADP	AdpType=Prep	4	case	_	_
-4	the	the	PROPN	PROPN	_	2	name	_	_
-5	Universe	Universe	PROPN	PROPN	_	4	name	_	_
-6	»	»	PUNCT	punc	_	9	punct	_	_
-7	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
-8	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	programa	programa	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-10	em	em	ADP	prp	AdpType=Prep	11	case	_	_
-11	inglês	inglês	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-12	,	,	PUNCT	punc	_	9	punct	_	_
-13	voltado	voltar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	9	acl	_	_
-14	para	para	ADP	prp	AdpType=Prep	15	case	_	_
-15	crianças	criança	NOUN	n|F|P	Gender=Fem|Number=Plur	13	nmod	_	_
-16	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	17	nsubj	_	_
-17	querem	querer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_
-18	aprender	aprender	VERB	v-inf	VerbForm=Inf	17	xcomp	_	_
-19	noções	noção	NOUN	n|F|P	Gender=Fem|Number=Plur	18	dobj	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-21	astronomia	astronomia	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-22	.	.	PUNCT	punc	_	9	punct	_	_
+# text = «Journey in the Universe» é um programa em inglês, voltado para crianças que querem aprender noções de astronomia.
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-5
+# id 3598
+1	«	«	PUNCT	PU|@PU	_	9	punct	_	SpaceAfter=No
+2	Journey	Journey	PROPN	_	_	9	nsubj	_	MWE=Journey_in_the_Universe|MWEPOS=PROPN
+3	in	in	ADP	_	_	4	case	_	_
+4	the	the	PROPN	_	_	2	flat	_	_
+5	Universe	Universe	PROPN	_	_	4	flat	_	SpaceAfter=No
+6	»	»	PUNCT	PU|@PU	_	9	punct	_	_
+7	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	programa	programa	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+10	em	em	ADP	PRP|@N<	_	11	case	_	_
+11	inglês	inglês	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+13	voltado	voltar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	9	acl	_	_
+14	para	para	ADP	PRP|@<SA	_	15	case	_	_
+15	crianças	criança	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	13	obl	_	_
+16	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	17	nsubj	_	_
+17	querem	querer	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_
+18	aprender	aprender	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	17	xcomp	_	_
+19	noções	noção	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	18	obj	_	_
+20	de	de	ADP	PRP|@N<	_	21	case	_	_
+21	astronomia	astronomia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF853-6
-# sent_id = pt-ud-train.conllu#s8641/pt
-# orig_file_sentence = 087#41
-1	Está	estar	AUX	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
-2	sendo	ser	VERB	v-ger	VerbForm=Ger	3	auxpass	_	_
-3	vendido	vender	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+# text = Está sendo vendido na Brasoftware em promoção.
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-6
+# id 3599
+1	Está	estar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
+2	sendo	ser	VERB	<aux>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
+3	vendido	vender	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	2	ccomp	_	_
 4-5	na	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	Brasoftware	Brasoftware	PROPN	prop|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-7	em	em	ADP	prp	AdpType=Prep	8	case	_	_
-8	promoção	promoção	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-9	.	.	PUNCT	punc	_	3	punct	_	_
+4	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Brasoftware	Brasoftware	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
+7	em	em	ADP	PRP|@<ADVL	_	8	case	_	_
+8	promoção	promoção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF853-7
-# sent_id = pt-ud-train.conllu#s8642/pt
-# orig_file_sentence = 087#42
-1	Sai	sair	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	de	de	ADP	prp	AdpType=Prep	3	case	_	_
-3	US$	US$	SYM	n|M|P	Gender=Masc|Number=Plur	1	dobj	_	_
-4	79	79	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
-5	por	por	ADP	prp	AdpType=Prep	6	case	_	_
-6	US$	US$	SYM	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-7	49	49	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
-8	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Sai de US$ 79 por US$ 49.
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-7
+# id 3600
+1	Sai	sair	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	de	de	ADP	PRP|@<PIV	_	3	case	_	_
+3	US$	US$	SYM	_	Gender=Masc|Number=Plur	1	obj	_	_
+4	79	79	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
+5	por	por	ADP	PRP|@<ADVL	_	6	case	_	_
+6	US$	US$	SYM	_	Gender=Masc|Number=Plur	3	nmod	_	_
+7	49	49	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF853-8
-# sent_id = pt-ud-train.conllu#s8643/pt
-# orig_file_sentence = 087#43
-1	«	«	PUNCT	punc	_	9	punct	_	_
-2	MacMillan	MacMillan	PROPN	prop|M|S	_	9	nsubj	_	MWE=MacMillan_Dictionary_for_Children|MWEPOS=PROPN
-3	Dictionary	Dictionary	PROPN	PROPN	_	2	name	_	_
-4	for	for	PROPN	PROPN	_	2	name	_	_
-5	Children	Children	PROPN	PROPN	_	2	name	_	_
-6	»	»	PUNCT	punc	_	9	punct	_	_
-7	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
-8	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	dicionário	dicionário	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	inglês	inglês	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-12	em	em	ADP	prp	AdpType=Prep	13	case	_	_
-13	CD-ROM	cD-ROM	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-14	.	.	PUNCT	punc	_	9	punct	_	_
+# text = «MacMillan Dictionary for Children» é um dicionário de inglês em CD-ROM.
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-8
+# id 3601
+1	«	«	PUNCT	PU|@PU	_	9	punct	_	SpaceAfter=No
+2	MacMillan	MacMillan	PROPN	_	_	9	nsubj	_	MWE=MacMillan_Dictionary_for_Children|MWEPOS=PROPN
+3	Dictionary	Dictionary	PROPN	_	_	2	flat	_	_
+4	for	for	PROPN	_	_	2	flat	_	_
+5	Children	Children	PROPN	_	_	2	flat	_	SpaceAfter=No
+6	»	»	PUNCT	PU|@PU	_	9	punct	_	_
+7	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	dicionário	dicionário	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	inglês	inglês	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
+12	em	em	ADP	PRP|@N<	_	13	case	_	_
+13	CD-ROM	cD-ROM	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF853-9
-# sent_id = pt-ud-train.conllu#s8644/pt
-# orig_file_sentence = 087#44
-1	Conta	contar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	com	com	ADP	prp	AdpType=Prep	3	case	_	_
-3	recursos	recurso	NOUN	n|M|P	Gender=Masc|Number=Plur	1	dobj	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	figuras	figura	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nmod	_	_
-6	e	e	CONJ	conj-c|<co-prparg>	_	5	cc	_	_
-7	sons	som	NOUN	n|M|P	Gender=Masc|Number=Plur	5	conj	_	_
-8	,	,	PUNCT	punc	_	3	punct	_	_
-9	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
-10	mostram	mostrar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl	_	_
-11	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	significado	significado	NOUN	n|M|S	Gender=Masc|Number=Sing	10	dobj	_	_
+# text = Conta com recursos de figuras e sons, que mostram o significado das palavras.
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-9
+# id 3602
+1	Conta	contar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	com	com	ADP	PRP|@<PIV	_	3	case	_	_
+3	recursos	recurso	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obj	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	figuras	figura	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
+6	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	_
+7	sons	som	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+9	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
+10	mostram	mostrar	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl	_	_
+11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	significado	significado	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
 13-14	das	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
-15	palavras	palavra	NOUN	n|F|P	Gender=Fem|Number=Plur	12	nmod	_	_
-16	.	.	PUNCT	punc	_	1	punct	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
+15	palavras	palavra	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF853-10
-# sent_id = pt-ud-train.conllu#s8645/pt
-# orig_file_sentence = 087#45
-1	Custa	custar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	US$	US$	SYM	n|<prop>|M|P	Gender=Masc|Number=Plur	1	dobj	_	_
-3	45	45	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
+# text = Custa US$ 45 na Multimídia Center (tel 011 959-2650).
+# forest 1
+# source CETENFolha n=853 cad=Informática sec=com sem=94b
+# sent_id = CF853-10
+# id 3603
+1	Custa	custar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	US$	US$	SYM	_	Gender=Masc|Number=Plur	1	obj	_	_
+3	45	45	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
 4-5	na	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	Multimídia	Multimídia	PROPN	prop|F|S	_	1	nmod	_	MWE=Multimídia_Center|MWEPOS=PROPN
-7	Center	Center	PROPN	PROPN	_	6	name	_	_
-8	(	(	PUNCT	punc	_	6	punct	_	_
-9	tel	tel	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-10	011	011	NUM	num|<card>|M/F|P	NumForm=Digit|NumType=Card	9	nummod	_	MWE=011_959-2650|MWEPOS=NUM
-11	959-2650	959-2650	NUM	NUM	NumForm=Digit|NumType=Card	10	compound	_	_
-12	)	)	PUNCT	punc	_	6	punct	_	_
-13	.	.	PUNCT	punc	_	1	punct	_	_
+4	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Multimídia	Multimídia	PROPN	_	_	1	obl	_	MWE=Multimídia_Center|MWEPOS=PROPN
+7	Center	Center	PROPN	_	_	6	flat	_	_
+8	(	(	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+9	tel	tel	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	6	nmod	_	_
+10	011	011	NUM	PRP|@N<	NumForm=Digit|NumType=Card	9	nummod	_	MWE=011_959-2650|MWEPOS=NUM
+11	959-2650	959-2650	NUM	NUM|@A<	NumForm=Digit|NumType=Card	10	compound	_	SpaceAfter=No
+12	)	)	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

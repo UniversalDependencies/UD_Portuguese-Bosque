@@ -1,159 +1,167 @@
-# distance_from_new = 0
-# new_sent_id = CF822-1
-# sent_id = pt-ud-train.conllu#s8500/pt
-# orig_file_sentence = 085#100
-1	G.	G.	PROPN	prop|M|S	_	3	nsubj	_	MWE=G._Love|MWEPOS=PROPN
-2	Love	Love	PROPN	PROPN	_	1	name	_	_
-3	canta	cantar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	blues	blues	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
+# text = G. Love canta blues
+# forest 1
+# source CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF822-1
+# id 3458
+1	G.	G.	PROPN	_	_	3	nsubj	_	MWE=G._Love|MWEPOS=PROPN
+2	Love	Love	PROPN	_	_	1	flat	_	_
+3	canta	cantar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	blues	blues	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 
-# distance_from_new = 1
-# new_sent_id = CF822-2
-# sent_id = pt-ud-train.conllu#s8501/pt
-# orig_file_sentence = 086#1
+# text = ?:? Jazz rap?
+# forest 1
+# source CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF822-2
+# id 3459
 1	?:?	?:?	PUNCT	punc	_	2	punct	_	_
 2	Jazz	jazz	NOUN	n|M|S	_	0	root	_	MWE=Jazz_rap|MWEPOS=NOUN
-3	rap	rap	NOUN	NOUN	_	2	compound	_	_
+3	rap	rap	NOUN	NOUN	_	2	compound	_	SpaceAfter=No
 4	?	?	PUNCT	punc	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF822-3
-# sent_id = pt-ud-train.conllu#s8502/pt
-# orig_file_sentence = 086#2
-1	Esqueça	esquecer	VERB	v-fin|PR|1/3S|SUBJ	Mood=Sub|Number=Sing|Person=1,3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Esqueça.
+# forest 1
+# source CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF822-3
+# id 3460
+1	Esqueça	esquecer	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=1,3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CF822-4
-# sent_id = pt-ud-train.conllu#s8503/pt
-# orig_file_sentence = 086#3
-1	Ou	ou	CONJ	adv|<kc>	_	5	advmod	_	MWE=Ou_melhor|MWEPOS=ADV
-2	melhor	melhor	NOUN	NOUN	_	1	mwe	_	_
-3	,	,	PUNCT	punc	_	5	punct	_	_
-4	não	não	ADV	adv	_	5	neg	_	_
-5	esqueça	esquecer	VERB	v-fin|PR|1/3S|SUBJ	Mood=Sub|Number=Sing|Person=1,3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	porque	porque	SCONJ	conj-s	_	9	mark	_	_
-7	ainda	ainda	ADV	adv	_	9	advmod	_	_
-8	se	se	PRON	pron-pers|<refl>|M/F|3S|ACC	Case=Acc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	9	nsubj	_	_
-9	faz	fazer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_
-10	muita	muito	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
-11	coisa	coisa	NOUN	n|F|S	Gender=Fem|Number=Sing	9	dobj	_	_
-12	boa	bom	ADJ	adj|F|S	Gender=Fem|Number=Sing	11	amod	_	_
-13	,	,	PUNCT	punc	_	5	punct	_	_
-14	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	5	cc	_	_
-15	deixe	deixar	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	mark	_	_
-17	querer	querer	VERB	v-inf	VerbForm=Inf	15	xcomp	_	_
-18	ser	ser	VERB	v-inf	VerbForm=Inf	19	cop	_	_
-19	bacana	bacana	ADJ	adj|F|S	Gender=Fem|Number=Sing	17	xcomp	_	_
+# text = Ou melhor, não esqueça porque ainda se faz muita coisa boa, mas deixe de querer ser bacana citando-o como a última tendência.
+# forest 1
+# source CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF822-4
+# id 3461
+1	Ou	ou	CCONJ	PRP|@ADVL>	_	5	advmod	_	MWE=Ou_melhor|MWEPOS=ADV
+2	melhor	melhor	NOUN	N|M|S|@P<	_	1	fixed	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
+5	esqueça	esquecer	VERB	<mv>|<first-cjt>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=1,3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	porque	porque	SCONJ	KS|@SUB	_	9	mark	_	_
+7	ainda	ainda	ADV	ADV|@ADVL>	_	9	advmod	_	_
+8	se	se	PRON	PERS|M/F|3S|ACC|@SUBJ>	Case=Acc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	9	nsubj	_	_
+9	faz	fazer	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_
+10	muita	muito	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
+11	coisa	coisa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
+12	boa	bom	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+14	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	_
+15	deixe	deixar	VERB	<cjt>|<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+16	de	de	ADP	PRP|@PRT-AUX<	_	17	mark	_	_
+17	querer	querer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	xcomp	_	_
+18	ser	ser	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	19	cop	_	_
+19	bacana	bacana	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	17	xcomp	_	_
 20-21	citando-o	_	_	_	_	_	_	_	_
 20	citando	citar	VERB	v-ger|<hyfen>	Hyph=Yes|VerbForm=Ger	19	advcl	_	_
 21	-o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	iobj	_	_
-22	como	como	ADV	adv|<rel>	PronType=Rel	25	cop	_	_
-23	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-24	última	último	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	25	amod	_	_
-25	tendência	tendência	NOUN	n|F|S	Gender=Fem|Number=Sing	20	xcomp	_	_
-26	.	.	PUNCT	punc	_	5	punct	_	_
+22	como	como	ADV	<prd>|PRP|@<OC	PronType=Rel	25	cop	_	_
+23	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+24	última	último	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	25	amod	_	_
+25	tendência	tendência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	xcomp	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF822-5
-# sent_id = pt-ud-train.conllu#s8504/pt
-# orig_file_sentence = 086#4
-1	Para	para	ADP	prp	AdpType=Prep	3	case	_	_
-2	aquele	aquele	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
-3	verniz	verniz	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-4	atualizador	atualizador	ADJ	adj|<DERS>|M|S	Gender=Masc|Number=Sing	3	amod	_	_
-5	,	,	PUNCT	punc	_	6	punct	_	_
-6	passe	passar	VERB	v-fin|PR|1/3S|SUBJ	Mood=Sub|Number=Sing|Person=1,3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	desde	desde	NOUN	adv	_	6	advmod	_	MWE=desde_já|MWEPOS=ADV
-8	já	já	ADV	ADV	_	7	mwe	_	_
-9	a	a	ADP	prp	AdpType=Prep	10	mark	_	_
-10	usar	usar	VERB	v-inf	VerbForm=Inf	6	xcomp	_	_
-11	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	expressão	expressão	NOUN	n|F|S	Gender=Fem|Number=Sing	10	dobj	_	_
-13	«	«	PUNCT	punc	_	12	punct	_	_
-14	blues	blues	NOUN	n|F|S	_	12	nmod	_	MWE=blues_rap|MWEPOS=NOUN
-15	rap	rap	NOUN	NOUN	_	14	compound	_	_
-16	»	»	PUNCT	punc	_	12	punct	_	_
-17	.	.	PUNCT	punc	_	6	punct	_	_
+# text = Para aquele verniz atualizador, passe desde já a usar a expressão «blues rap».
+# forest 1
+# source CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF822-5
+# id 3462
+1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
+2	aquele	aquele	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	verniz	verniz	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
+4	atualizador	atualizador	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+6	passe	passar	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=1,3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	desde	desde	NOUN	PRP|@<ADVL	_	6	advmod	_	MWE=desde_já|MWEPOS=ADV
+8	já	já	ADV	ADV|@P<	_	7	fixed	_	_
+9	a	a	ADP	PRP|@<PIV	_	10	mark	_	_
+10	usar	usar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
+11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	expressão	expressão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
+13	«	«	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
+14	blues	blues	NOUN	_	_	12	nmod	_	MWE=blues_rap|MWEPOS=NOUN
+15	rap	rap	NOUN	_	_	14	compound	_	SpaceAfter=No
+16	»	»	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF822-6
-# sent_id = pt-ud-train.conllu#s8505/pt
-# orig_file_sentence = 086#5
-1	E	e	CONJ	conj-c	_	8	cc	_	_
-2	,	,	PUNCT	punc	_	8	punct	_	_
-3	para	para	ADP	prp	AdpType=Prep	5	case	_	_
-4	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	efeito	efeito	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-6	extra	extra	ADJ	adj|M|S	Gender=Masc|Number=Sing	5	amod	_	_
-7	,	,	PUNCT	punc	_	8	punct	_	_
-8	cite	citar	VERB	v-fin|PR|1/3S|SUBJ	Mood=Sub|Number=Sing|Person=1,3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	G.	G.	PROPN	prop|M|S	_	8	dobj	_	MWE=G._Love|MWEPOS=PROPN
-10	Love	Love	PROPN	PROPN	_	9	name	_	_
-11	and	and	CONJ	conj-c|<co-acc>	_	9	cc	_	_
-12	Special	Special	PROPN	prop|M|S	_	9	conj	_	MWE=Special_Sauce|MWEPOS=PROPN
-13	Sauce	Sauce	PROPN	PROPN	_	12	name	_	_
-14	.	.	PUNCT	punc	_	8	punct	_	_
+# text = E, para um efeito extra, cite G. Love and Special Sauce.
+# forest 1
+# source CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF822-6
+# id 3463
+1	E	e	CCONJ	KC|@CO	_	8	cc	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+3	para	para	ADP	PRP|@ADVL>	_	5	case	_	_
+4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	efeito	efeito	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	_
+6	extra	extra	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+8	cite	citar	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=1,3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	G.	G.	PROPN	_	_	8	obj	_	MWE=G._Love|MWEPOS=PROPN
+10	Love	Love	PROPN	_	_	9	flat	_	_
+11	and	and	CCONJ	<co-acc>|KC|@CO	_	12	cc	_	_
+12	Special	Special	PROPN	_	_	9	conj	_	MWE=Special_Sauce|MWEPOS=PROPN
+13	Sauce	Sauce	PROPN	_	_	12	flat	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF822-7
-# sent_id = pt-ud-train.conllu#s8506/pt
-# orig_file_sentence = 086#6
-1	Seu	seu	DET	pron-det|<poss|3S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	_	_
-2	álbum	álbum	NOUN	n|M|S	Gender=Masc|Number=Sing	13	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	estréia	estréia	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-5	,	,	PUNCT	punc	_	4	punct	_	_
-6	lançado	lançar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	_	_
+# text = Seu álbum de estréia, lançado no último verão americano, causou pouco ou nenhum impacto na parada.
+# forest 1
+# source CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF822-7
+# id 3464
+1	Seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	_	_
+2	álbum	álbum	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	estréia	estréia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+6	lançado	lançar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	_	_
 7-8	no	_	_	_	_	_	_	_	_
-7	em	em	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-9	último	último	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	10	amod	_	_
-10	verão	verão	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-11	americano	americano	ADJ	adj|M|S	Gender=Masc|Number=Sing	10	amod	_	_
-12	,	,	PUNCT	punc	_	4	punct	_	_
-13	causou	causar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-14	pouco	pouco	PRON	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	17	nmod	_	_
-15	ou	ou	CONJ	conj-c|<co-prenom>	_	14	cc	_	_
-16	nenhum	nenhum	PRON	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	14	conj	_	_
-17	impacto	impacto	NOUN	n|M|S	Gender=Masc|Number=Sing	13	dobj	_	_
+7	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
+8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+9	último	último	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	10	amod	_	_
+10	verão	verão	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
+11	americano	americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+13	causou	causar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+14	pouco	pouco	PRON	<first-cjt>|<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	17	nmod	_	_
+15	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	16	cc	_	_
+16	nenhum	nenhum	PRON	<cjt>|<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	14	conj	_	_
+17	impacto	impacto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	obj	_	_
 18-19	na	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	parada	parada	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-21	.	.	PUNCT	punc	_	13	punct	_	_
+18	em	em	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	parada	parada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF822-8
-# sent_id = pt-ud-train.conllu#s8507/pt
-# orig_file_sentence = 086#7
-1	Mas	mas	CONJ	conj-c	_	15	cc	_	_
-2	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-3	boa	bom	ADJ	adj|F|S	Gender=Fem|Number=Sing	4	amod	_	_
-4	escavação	escavação	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nsubj	_	_
+# text = Mas uma boa escavação nas seções de críticas de revistas de música importadas revela a verdadeira adoração que G. Love estimulou entre os jornalistas especializados.
+# forest 1
+# source CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF822-8
+# id 3465
+1	Mas	mas	CCONJ	KC|@CO	_	15	cc	_	_
+2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+3	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	4	amod	_	_
+4	escavação	escavação	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
 5-6	nas	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	seções	seção	NOUN	n|F|P	Gender=Fem|Number=Plur	4	nmod	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	críticas	crítica	NOUN	n|F|P	Gender=Fem|Number=Plur	7	nmod	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	revistas	revista	NOUN	n|F|P	Gender=Fem|Number=Plur	7	nmod	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	música	música	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-14	importadas	importar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	13	acl	_	_
-15	revela	revelar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-16	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-17	verdadeira	verdadeiro	ADJ	adj|F|S	Gender=Fem|Number=Sing	18	amod	_	_
-18	adoração	adoração	NOUN	n|F|S	Gender=Fem|Number=Sing	15	dobj	_	_
-19	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	22	dobj	_	_
-20	G.	G.	PROPN	prop|M|S	_	22	nsubj	_	MWE=G._Love|MWEPOS=PROPN
-21	Love	Love	PROPN	PROPN	_	20	name	_	_
-22	estimulou	estimular	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	acl	_	_
-23	entre	entre	ADP	prp	AdpType=Prep	25	case	_	_
-24	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
-25	jornalistas	jornalista	NOUN	n|M|P	Gender=Masc|Number=Plur	22	nmod	_	_
-26	especializados	especializar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	25	acl	_	_
-27	.	.	PUNCT	punc	_	15	punct	_	_
+5	em	em	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+7	seções	seção	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	4	nmod	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
+9	críticas	crítica	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	7	nmod	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	revistas	revista	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	7	nmod	_	_
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	música	música	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+14	importadas	importar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	13	acl	_	_
+15	revela	revelar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+17	verdadeira	verdadeiro	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	18	amod	_	_
+18	adoração	adoração	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
+19	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	22	obj	_	_
+20	G.	G.	PROPN	_	_	22	nsubj	_	MWE=G._Love|MWEPOS=PROPN
+21	Love	Love	PROPN	_	_	20	flat	_	_
+22	estimulou	estimular	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	acl	_	_
+23	entre	entre	ADP	PRP|@<ADVL	_	25	case	_	_
+24	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
+25	jornalistas	jornalista	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	obl	_	_
+26	especializados	especializar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	25	acl	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 

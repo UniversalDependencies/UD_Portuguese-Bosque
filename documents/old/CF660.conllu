@@ -1,117 +1,120 @@
-# distance_from_new = 0
-# new_sent_id = CF660-1
-# sent_id = pt-ud-train.conllu#s7799/pt
-# orig_file_sentence = 078#99
-1	Pesquisa	pesquisa	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nsubj	_	_
+# text = Pesquisa da Cia. City de Desenvolvimento mostra que os empresários procuram locais com infra-estrutura, facilidade de acesso, boa oferta de mão-de-obra, próximos de São Paulo e das rodovias e longe de movimentos sindicais.
+# forest 1
+# source CETENFolha n=660 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF660-1
+# id 2757
+1	Pesquisa	pesquisa	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	Cia.	Cia.	PROPN	prop|F|S	_	1	nmod	_	MWE=Cia._City_de_Desenvolvimento|MWEPOS=PROPN
-5	City	City	PROPN	PROPN	_	4	name	_	_
-6	de	de	ADP	ADP	AdpType=Prep	7	case	_	_
-7	Desenvolvimento	Desenvolvimento	PROPN	PROPN	_	4	name	_	_
-8	mostra	mostrar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	que	que	SCONJ	conj-s	_	12	mark	_	_
-10	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
-11	empresários	empresário	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nsubj	_	_
-12	procuram	procurar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_
-13	locais	local	NOUN	n|M|P	Gender=Masc|Number=Plur	12	dobj	_	_
-14	com	com	ADP	prp	AdpType=Prep	15	case	_	_
-15	infra-estrutura	infra-estrutura	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nmod	_	_
-16	,	,	PUNCT	punc	_	15	punct	_	_
-17	facilidade	facilidade	NOUN	n|F|S	Gender=Fem|Number=Sing	15	conj	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	acesso	acesso	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-20	,	,	PUNCT	punc	_	15	punct	_	_
-21	boa	bom	ADJ	adj|F|S	Gender=Fem|Number=Sing	22	amod	_	_
-22	oferta	oferta	NOUN	n|F|S	Gender=Fem|Number=Sing	15	conj	_	_
-23	de	de	ADP	prp	AdpType=Prep	24	case	_	_
-24	mão-de-obra	mão-de-obra	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-25	,	,	PUNCT	punc	_	12	punct	_	_
-26	próximos	próximo	ADV	adv	_	12	advmod	_	_
-27	de	de	ADP	prp	AdpType=Prep	28	case	_	_
-28	São	São	PROPN	prop|M|S	_	26	nmod	_	MWE=São_Paulo|MWEPOS=PROPN
-29	Paulo	Paulo	PROPN	PROPN	_	28	name	_	_
-30	e	e	CONJ	conj-c|<co-postad>	_	28	cc	_	_
+2	de	de	ADP	<sam->|PRP|@N<ARG	_	4	case	_	_
+3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Cia.	Cia.	PROPN	_	_	1	nmod	_	MWE=Cia._City_de_Desenvolvimento|MWEPOS=PROPN
+5	City	City	PROPN	_	_	4	flat	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	Desenvolvimento	Desenvolvimento	PROPN	PROP|@P<	_	4	flat	_	_
+8	mostra	mostrar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
+10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	empresários	empresário	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
+12	procuram	procurar	VERB	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_
+13	locais	local	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	obj	_	_
+14	com	com	ADP	PRP|@N<	_	15	case	_	_
+15	infra-estrutura	infra-estrutura	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+17	facilidade	facilidade	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
+18	de	de	ADP	PRP|@N<	_	19	case	_	_
+19	acesso	acesso	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+21	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	22	amod	_	_
+22	oferta	oferta	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	mão-de-obra	mão-de-obra	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+26	próximos	próximo	ADV	<first-cjt>|ADV|@<ADVL	_	12	advmod	_	_
+27	de	de	ADP	<first-cjt>|PRP|@A<	_	28	case	_	_
+28	São	São	PROPN	_	_	26	obl	_	MWE=São_Paulo|MWEPOS=PROPN
+29	Paulo	Paulo	PROPN	_	_	28	flat	_	_
+30	e	e	CCONJ	<co-a<>|<co-postad>|KC|@CO	_	33	cc	_	_
 31-32	das	_	_	_	_	_	_	_	_
-31	de	de	ADP	prp|<sam->	AdpType=Prep	33	case	_	_
-32	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	_	_
-33	rodovias	rodovia	NOUN	n|F|P	Gender=Fem|Number=Plur	28	conj	_	_
-34	e	e	CONJ	conj-c|<co-advl>	_	26	cc	_	_
-35	longe	longe	ADV	adv	_	26	conj	_	_
-36	de	de	ADP	prp	AdpType=Prep	37	case	_	_
-37	movimentos	movimento	NOUN	n|M|P	Gender=Masc|Number=Plur	35	nmod	_	_
-38	sindicais	sindical	ADJ	adj|M|P	Gender=Masc|Number=Plur	37	amod	_	_
-39	.	.	PUNCT	punc	_	8	punct	_	_
+31	de	de	ADP	<cjt>|<sam->|PRP|@A<	_	33	case	_	_
+32	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	_	_
+33	rodovias	rodovia	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	conj	_	_
+34	e	e	CCONJ	<co-advl>|KC|@CO	_	35	cc	_	_
+35	longe	longe	ADV	<cjt>|ADV|@<ADVL	_	26	conj	_	_
+36	de	de	ADP	PRP|@A<	_	37	case	_	_
+37	movimentos	movimento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	35	obl	_	_
+38	sindicais	sindical	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	37	amod	_	SpaceAfter=No
+39	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF660-2
-# sent_id = pt-ud-train.conllu#s7800/pt
-# orig_file_sentence = 078#100
-1	«	«	PUNCT	punc	_	16	punct	_	_
-2	Temos	ter	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	ccomp	_	_
-3	problemas	problema	NOUN	n|M|P	Gender=Masc|Number=Plur	2	dobj	_	_
-4	com	com	ADP	prp	AdpType=Prep	5	case	_	_
-5	clientes	cliente	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-6	e	e	CONJ	conj-c	_	5	cc	_	_
-7	fornecedores	fornecedor	NOUN	n|M|P	Gender=Masc|Number=Plur	5	conj	_	_
-8	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
-9	não	não	ADV	adv	_	10	neg	_	_
-10	conseguem	conseguir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	_
-11	encontrar	encontrar	VERB	v-inf	VerbForm=Inf	10	xcomp	_	_
-12	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	empresa	empresa	NOUN	n|F|S	Gender=Fem|Number=Sing	11	dobj	_	_
-14	»	»	PUNCT	punc	_	16	punct	_	_
-15	,	,	PUNCT	punc	_	16	punct	_	_
-16	afirma	afirmar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-17	Sérgio	Sérgio	PROPN	prop|M|S	_	16	nsubj	_	MWE=Sérgio_Ueta|MWEPOS=PROPN
-18	Ueta	Ueta	PROPN	PROPN	_	17	name	_	_
-19	,	,	PUNCT	punc	_	17	punct	_	_
-20	gerente	gerente	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-21	administrativo	administrativo	ADJ	adj|M|S	Gender=Masc|Number=Sing	20	amod	_	_
+# text = «Temos problemas com clientes e fornecedores que não conseguem encontrar a empresa», afirma Sérgio Ueta, gerente administrativo da Ueta Indústria e Comércio de Aparelhos Eletrônicos.
+# forest 1
+# source CETENFolha n=660 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF660-2
+# id 2758
+1	«	«	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+2	Temos	ter	VERB	<mv>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	ccomp	_	_
+3	problemas	problema	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
+4	com	com	ADP	PRP|@N<	_	5	case	_	_
+5	clientes	cliente	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+6	e	e	CCONJ	KC|@CO	_	7	cc	_	_
+7	fornecedores	fornecedor	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	conj	_	_
+8	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
+9	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
+10	conseguem	conseguir	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	_
+11	encontrar	encontrar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	10	xcomp	_	_
+12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	empresa	empresa	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	obj	_	SpaceAfter=No
+14	»	»	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+16	afirma	afirmar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+17	Sérgio	Sérgio	PROPN	_	_	16	nsubj	_	MWE=Sérgio_Ueta|MWEPOS=PROPN
+18	Ueta	Ueta	PROPN	_	_	17	flat	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+20	gerente	gerente	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	17	nmod	_	_
+21	administrativo	administrativo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	20	amod	_	_
 22-23	da	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	Ueta	Ueta	PROPN	prop|F|S	_	20	nmod	_	MWE=Ueta_Indústria_e_Comércio_de_Aparelhos_Eletrônicos|MWEPOS=PROPN
-25	Indústria	Indústria	PROPN	PROPN	_	24	name	_	_
-26	e	e	CONJ	CONJ	_	24	cc	_	_
-27	Comércio	Comércio	PROPN	PROPN	_	24	conj	_	_
-28	de	de	ADP	ADP	AdpType=Prep	29	case	_	_
-29	Aparelhos	Aparelhos	PROPN	PROPN	_	24	name	_	_
-30	Eletrônicos	Eletrônicos	PROPN	PROPN	_	29	name	_	_
-31	.	.	PUNCT	punc	_	16	punct	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	Ueta	Ueta	PROPN	_	_	20	nmod	_	MWE=Ueta_Indústria_e_Comércio_de_Aparelhos_Eletrônicos|MWEPOS=PROPN
+25	Indústria	Indústria	PROPN	_	_	24	flat	_	_
+26	e	e	CCONJ	_	_	27	cc	_	_
+27	Comércio	Comércio	PROPN	_	_	24	conj	_	_
+28	de	de	ADP	PRP|@N<	_	29	case	_	_
+29	Aparelhos	Aparelhos	PROPN	PROP|@P<	_	24	flat	_	_
+30	Eletrônicos	Eletrônicos	PROPN	PROP|@N<	_	29	flat	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF660-3
-# sent_id = pt-ud-train.conllu#s7801/pt
-# orig_file_sentence = 079#1
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	empresa	empresa	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nsubj	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	com	com	ADP	prp	AdpType=Prep	5	case	_	_
-5	sede	sede	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	em	em	ADP	prp	AdpType=Prep	7	case	_	_
-7	Caieiras	caieira	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-8	(	(	PUNCT	punc	_	7	punct	_	_
-9	35	35	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
-10	km	km	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nmod	_	_
-11	a	a	ADP	prp	AdpType=Prep	12	case	_	_
-12	norte	norte	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	SP	SP	PROPN	prop|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-15	)	)	PUNCT	punc	_	7	punct	_	_
-16	,	,	PUNCT	punc	_	2	punct	_	_
-17	pretende	pretender	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-18	se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	19	dobj	_	_
-19	mudar	mudar	VERB	v-inf	VerbForm=Inf	17	xcomp	_	_
-20	para	para	ADP	prp	AdpType=Prep	22	case	_	_
-21	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Empresarial	Empresarial	PROPN	prop|M|S	_	19	nmod	_	MWE=Empresarial_Jaraguá|MWEPOS=PROPN
-23	Jaraguá	Jaraguá	PROPN	PROPN	_	22	name	_	_
-24	,	,	PUNCT	punc	_	22	punct	_	_
-25	onde	onde	ADV	adv|<rel>|<ks>	PronType=Rel	26	advmod	_	_
-26	adquiriu	adquirir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl	_	_
-27	6.000	6.000	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	28	nummod	_	_
-28	m2	m2	NOUN	n|M|P	Gender=Masc|Number=Plur	26	dobj	_	_
-29	.	.	PUNCT	punc	_	17	punct	_	_
+# text = A empresa, com sede em Caieiras (35 km a norte de SP), pretende se mudar para o Empresarial Jaraguá, onde adquiriu 6.000 m2.
+# forest 1
+# source CETENFolha n=660 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF660-3
+# id 2759
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	empresa	empresa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	com	com	ADP	PRP|@N<PRED	_	5	case	_	_
+5	sede	sede	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+6	em	em	ADP	PRP|@N<	_	7	case	_	_
+7	Caieiras	caieira	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
+8	(	(	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+9	35	35	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
+10	km	km	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	7	nmod	_	_
+11	a	a	ADP	PRP|@N<	_	12	case	_	_
+12	norte	norte	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	SP	SP	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No
+15	)	)	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+17	pretende	pretender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+18	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	19	obj	_	_
+19	mudar	mudar	VERB	<mv>|<se-passive>|V|INF|@ICL-<ACC	VerbForm=Inf	17	xcomp	_	_
+20	para	para	ADP	PRP|@<OA	_	22	case	_	_
+21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	Empresarial	Empresarial	PROPN	_	_	19	obl	_	MWE=Empresarial_Jaraguá|MWEPOS=PROPN
+23	Jaraguá	Jaraguá	PROPN	_	_	22	flat	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+25	onde	onde	ADV	<rel>|ADV|@ADVL>	PronType=Rel	26	advmod	_	_
+26	adquiriu	adquirir	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl	_	_
+27	6.000	6.000	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	28	nummod	_	_
+28	m2	m2	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	26	obj	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 

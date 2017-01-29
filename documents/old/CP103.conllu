@@ -1,240 +1,246 @@
-# distance_from_new = 0
-# new_sent_id = CP103-1
-# sent_id = pt-ud-train.conllu#s537/pt
-# orig_file_sentence = 006#37
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	fogo	fogo	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	consumiu	consumir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	inúmeros	inúmero	ADJ	adj|M|P	Gender=Masc|Number=Plur	5	amod	_	_
-5	fardos	fardo	NOUN	n|M|P	Gender=Masc|Number=Plur	3	dobj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	bacalhau	bacalhau	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-8	,	,	PUNCT	punc	_	5	punct	_	_
-9	dois	dois	NUM	num|<card>|M/F|P	Number=Plur|NumType=Card	5	conj	_	_
+# text = O fogo consumiu inúmeros fardos de bacalhau, dois dos três túneis de secagem artificial, alguns compressores, duas carrinhas utilizadas no transporte dos trabalhadores da fábrica e um carro de marca «Triumph», propriedade do comendador.
+# forest 1
+# source CETEMPúblico n=103 sec=soc sem=93a
+# sent_id = CP103-1
+# id 537
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	fogo	fogo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	consumiu	consumir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	inúmeros	inúmero	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	5	amod	_	_
+5	fardos	fardo	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	bacalhau	bacalhau	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+9	dois	dois	NUM	<cjt>|<card>|NUM|M|P|@<ACC	Number=Plur|NumType=Card	5	conj	_	_
 10-11	dos	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-11	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
-12	três	três	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	13	nummod	_	_
-13	túneis	túnel	NOUN	n|M|P	Gender=Masc|Number=Plur	9	nmod	_	_
-14	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-15	secagem	secagem	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nmod	_	_
-16	artificial	artificial	ADJ	adj|F|S	Gender=Fem|Number=Sing	15	amod	_	_
-17	,	,	PUNCT	punc	_	5	punct	_	_
-18	alguns	algum	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	19	det	_	_
-19	compressores	compressor	NOUN	n|M|P	Gender=Masc|Number=Plur	5	conj	_	_
-20	,	,	PUNCT	punc	_	5	punct	_	_
-21	duas	dois	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	22	nummod	_	_
-22	carrinhas	carrinha	NOUN	n|F|P	Gender=Fem|Number=Plur	5	conj	_	_
-23	utilizadas	utilizar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	22	acl	_	_
+10	de	de	ADP	<sam->|PRP|@A<	_	13	case	_	_
+11	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+12	três	três	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	13	nummod	_	_
+13	túneis	túnel	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obl	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	secagem	secagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
+16	artificial	artificial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+18	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	19	det	_	_
+19	compressores	compressor	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	conj	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+21	duas	dois	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	22	nummod	_	_
+22	carrinhas	carrinha	NOUN	<cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	conj	_	_
+23	utilizadas	utilizar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	22	acl	_	_
 24-25	no	_	_	_	_	_	_	_	_
-24	em	em	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	transporte	transporte	NOUN	n|M|S	Gender=Masc|Number=Sing	23	nmod	_	_
+24	em	em	ADP	<sam->|PRP|@<ADVL	_	26	case	_	_
+25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	transporte	transporte	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	_
 27-28	dos	_	_	_	_	_	_	_	_
-27	de	de	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-28	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
-29	trabalhadores	trabalhador	NOUN	n|M|P	Gender=Masc|Number=Plur	26	nmod	_	_
+27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
+28	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
+29	trabalhadores	trabalhador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	26	nmod	_	_
 30-31	da	_	_	_	_	_	_	_	_
-30	de	de	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-31	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	32	det	_	_
-32	fábrica	fábrica	NOUN	n|F|S	Gender=Fem|Number=Sing	29	nmod	_	_
-33	e	e	CONJ	conj-c|<co-acc>	_	5	cc	_	_
-34	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
-35	carro	carro	NOUN	n|M|S	Gender=Masc|Number=Sing	5	conj	_	_
-36	de	de	ADP	pp	AdpType=Prep	35	advmod	_	MWE=de_marca|MWEPOS=ADV
-37	marca	marca	NOUN	NOUN	_	36	mwe	_	_
-38	«	«	PUNCT	punc	_	35	punct	_	_
-39	Triumph	Triumph	PROPN	prop|M|S	Gender=Masc|Number=Sing	35	nmod	_	_
-40	»	»	PUNCT	punc	_	35	punct	_	_
-41	,	,	PUNCT	punc	_	35	punct	_	_
-42	propriedade	propriedade	NOUN	n|F|S	Gender=Fem|Number=Sing	35	nmod	_	_
+30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
+31	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	32	det	_	_
+32	fábrica	fábrica	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	nmod	_	_
+33	e	e	CCONJ	<co-acc>|KC|@CO	_	35	cc	_	_
+34	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
+35	carro	carro	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	conj	_	_
+36	de	de	ADP	PRP|@N<	_	35	advmod	_	MWE=de_marca|MWEPOS=ADV
+37	marca	marca	NOUN	N|@P<	_	36	fixed	_	_
+38	«	«	PUNCT	PU|@PU	_	35	punct	_	SpaceAfter=No
+39	Triumph	Triumph	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	35	nmod	_	SpaceAfter=No
+40	»	»	PUNCT	PU|@PU	_	35	punct	_	SpaceAfter=No
+41	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+42	propriedade	propriedade	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	35	nmod	_	_
 43-44	do	_	_	_	_	_	_	_	_
-43	de	de	ADP	prp|<sam->	AdpType=Prep	45	case	_	_
-44	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
-45	comendador	comendador	NOUN	n|M|S	Gender=Masc|Number=Sing	42	nmod	_	_
-46	.	.	PUNCT	punc	_	3	punct	_	_
+43	de	de	ADP	<sam->|PRP|@N<	_	45	case	_	_
+44	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	comendador	comendador	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	42	nmod	_	SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP103-2
-# sent_id = pt-ud-train.conllu#s538/pt
-# orig_file_sentence = 006#38
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	armazéns	armazém	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nsubjpass	_	_
-3	e	e	CONJ	conj-c|<co-subj>	_	2	cc	_	_
-4	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	habitação	habitação	NOUN	n|F|S	Gender=Fem|Number=Sing	2	conj	_	_
-6	contíguas	contíguo	ADJ	adj|F|P	Gender=Fem|Number=Plur	2	amod	_	_
+# text = Os armazéns e uma habitação contíguas à empresa foram também danificados pelo sinistro.
+# forest 1
+# source CETEMPúblico n=103 sec=soc sem=93a
+# sent_id = CP103-2
+# id 538
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	armazéns	armazém	NOUN	<first-cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	_
+4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	habitação	habitação	NOUN	<cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
+6	contíguas	contíguo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	2	amod	_	_
 7-8	à	_	_	_	_	_	_	_	_
-7	a	a	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
-9	empresa	empresa	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-10	foram	ser	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	auxpass	_	_
-11	também	também	ADV	adv	_	12	advmod	_	_
-12	danificados	danificar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
+7	a	a	ADP	<sam->|PRP|@A<	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
+9	empresa	empresa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+10	foram	ser	VERB	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+11	também	também	ADV	ADV|@ADVL>	_	12	advmod	_	_
+12	danificados	danificar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	10	ccomp	_	_
 13-14	pelo	_	_	_	_	_	_	_	_
-13	por	por	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	sinistro	sinistro	NOUN	n|M|S	Gender=Masc|Number=Sing	12	dobj	_	_
-16	.	.	PUNCT	punc	_	12	punct	_	_
+13	por	por	ADP	PRP|@PASS	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	sinistro	sinistro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obj	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP103-3
-# sent_id = pt-ud-train.conllu#s539/pt
-# orig_file_sentence = 006#39
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	prejuizos	prejuízo	NOUN	n|<new>|M|P	Gender=Masc|Number=Plur	9	nsubj	_	_
-3	,	,	PUNCT	punc	_	4	punct	_	_
-4	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-5	Gonçalves	Gonçalves	PROPN	prop|M|S	_	4	nsubj	_	MWE=Gonçalves_Gomes|MWEPOS=PROPN
-6	Gomes	Gomes	PROPN	PROPN	_	5	name	_	_
-7	,	,	PUNCT	punc	_	4	punct	_	_
-8	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
-9	cobertos	cobrir	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	4	ccomp	_	_
+# text = Os prejuizos, disse Gonçalves Gomes, estão cobertos pelo seguro, mas ascendem a centenas de milhar de contos.
+# forest 1
+# source CETEMPúblico n=103 sec=soc sem=93a &W
+# sent_id = CP103-3
+# id 539
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	prejuizos	prejuízo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+4	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	Gonçalves	Gonçalves	PROPN	_	_	4	nsubj	_	MWE=Gonçalves_Gomes|MWEPOS=PROPN
+6	Gomes	Gomes	PROPN	_	_	5	flat	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+8	estão	estar	AUX	<first-cjt>|<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	cobertos	cobrir	VERB	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	4	ccomp	_	_
 10-11	pelo	_	_	_	_	_	_	_	_
-10	por	por	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	seguro	seguro	NOUN	n|M|S	Gender=Masc|Number=Sing	9	dobj	_	_
-13	,	,	PUNCT	punc	_	9	punct	_	_
-14	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	9	cc	_	_
-15	ascendem	ascender	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
-16	a	a	ADP	prp	AdpType=Prep	17	case	_	_
-17	centenas	centena	NOUN	n|F|P	Gender=Fem|Number=Plur	15	nmod	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	milhar	milhar	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-21	contos	conto	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-22	.	.	PUNCT	punc	_	4	punct	_	_
+10	por	por	ADP	PRP|@PASS	_	12	case	_	_
+11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	seguro	seguro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+14	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	_
+15	ascendem	ascender	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
+16	a	a	ADP	PRP|@<ADVL	_	17	case	_	_
+17	centenas	centena	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	15	obl	_	_
+18	de	de	ADP	PRP|@N<ARG	_	19	case	_	_
+19	milhar	milhar	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
+20	de	de	ADP	PRP|@N<ARG	_	21	case	_	_
+21	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP103-4
-# sent_id = pt-ud-train.conllu#s540/pt
-# orig_file_sentence = 006#40
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	bacalhau	bacalhau	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
-3	queimado	queimar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
-4	estava	estar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	_	_
-5	já	já	ADV	adv|<premod>	_	6	advmod	_	_
-6	embalado	embalar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-7	em	em	ADP	prp	AdpType=Prep	8	case	_	_
-8	fardos	fardo	NOUN	n|M|P	Gender=Masc|Number=Plur	6	nmod	_	_
-9	ou	ou	CONJ	conj-c|<co-sc>	_	6	cc	_	_
-10	disposto	dispor	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	6	conj	_	_
+# text = O bacalhau queimado estava já embalado em fardos ou disposto nos tabuleiros de secagem e pertencia a lotes de produção da empresa, sendo o peixe importado da Noruega e Dinamarca.
+# forest 1
+# source CETEMPúblico n=103 sec=soc sem=93a
+# sent_id = CP103-4
+# id 540
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	bacalhau	bacalhau	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
+3	queimado	queimar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
+4	estava	estar	AUX	<mv>|<first-cjt>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	_	_
+5	já	já	ADV	<premod>|ADV|@<ADVL	_	6	advmod	_	_
+6	embalado	embalar	VERB	<first-cjt>|<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+7	em	em	ADP	PRP|@<ADVL	_	8	case	_	_
+8	fardos	fardo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	_
+9	ou	ou	CCONJ	<co-icl>|<co-sc>|KC|@CO	_	10	cc	_	_
+10	disposto	dispor	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	6	conj	_	_
 11-12	nos	_	_	_	_	_	_	_	_
-11	em	em	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
-13	tabuleiros	tabuleiro	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nmod	_	_
-14	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-15	secagem	secagem	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nmod	_	_
-16	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	6	cc	_	_
-17	pertencia	pertencer	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	conj	_	_
-18	a	a	ADP	prp	AdpType=Prep	19	case	_	_
-19	lotes	lote	NOUN	n|M|P	Gender=Masc|Number=Plur	17	dobj	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-21	produção	produção	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
+11	em	em	ADP	<sam->|PRP|@<ADVL	_	13	case	_	_
+12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+13	tabuleiros	tabuleiro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	secagem	secagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
+16	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	_
+17	pertencia	pertencer	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	conj	_	_
+18	a	a	ADP	PRP|@<PIV	_	19	case	_	_
+19	lotes	lote	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obj	_	_
+20	de	de	ADP	PRP|@N<ARG	_	21	case	_	_
+21	produção	produção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
 22-23	da	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	24	det	_	_
-24	empresa	empresa	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nmod	_	_
-25	,	,	PUNCT	punc	_	6	punct	_	_
-26	sendo	ser	VERB	v-ger	VerbForm=Ger	6	advcl	_	_
-27	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	peixe	peixe	NOUN	n|M|S	Gender=Masc|Number=Sing	26	nsubj	_	_
-29	importado	importar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	28	acl	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	24	det	_	_
+24	empresa	empresa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+26	sendo	ser	VERB	<mv>|<cjt>|V|GER|@ICL-<ADVL	VerbForm=Ger	6	advcl	_	_
+27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	peixe	peixe	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	26	nsubj	_	_
+29	importado	importar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	28	acl	_	_
 30-31	da	_	_	_	_	_	_	_	_
-30	de	de	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-31	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	32	det	_	_
-32	Noruega	Noruega	PROPN	prop|F|S	Gender=Fem|Number=Sing	29	nmod	_	_
-33	e	e	CONJ	conj-c|<co-prparg>	_	32	cc	_	_
-34	Dinamarca	Dinamarca	PROPN	prop|F|S	Gender=Fem|Number=Sing	32	conj	_	_
-35	.	.	PUNCT	punc	_	6	punct	_	_
+30	de	de	ADP	<sam->|PRP|@<ADVL	_	32	case	_	_
+31	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	32	det	_	_
+32	Noruega	Noruega	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	29	obl	_	_
+33	e	e	CCONJ	<co-prparg>|KC|@CO	_	34	cc	_	_
+34	Dinamarca	Dinamarca	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	32	conj	_	SpaceAfter=No
+35	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP103-5
-# sent_id = pt-ud-train.conllu#s541/pt
-# orig_file_sentence = 006#41
-1	Apesar	apesar	ADV	prp|<sam->	AdpType=Prep	13	mark	_	MWE=Apesar_de|MWEPOS=ADP
+# text = Apesar da quantidade de bacalhau consumida pelas chamas ter sido elevada, Gonçalves Gomes afirmou que não irá acontecer qualquer «desestabilização do abastecimento do mercado».
+# forest 1
+# source CETEMPúblico n=103 sec=soc sem=93a
+# sent_id = CP103-5
+# id 541
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	12	mark	_	MWE=Apesar_de|MWEPOS=ADP
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-3	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
-4	quantidade	quantidade	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nsubjpass	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	bacalhau	bacalhau	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-7	consumida	consumir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	_
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
+4	quantidade	quantidade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
+5	de	de	ADP	PRP|@N<ARG	_	6	case	_	_
+6	bacalhau	bacalhau	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
+7	consumida	consumir	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	_
 8-9	pelas	_	_	_	_	_	_	_	_
-8	por	por	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	10	det	_	_
-10	chamas	chama	NOUN	n|F|P	Gender=Fem|Number=Plur	7	dobj	_	_
-11	ter	ter	AUX	v-inf	VerbForm=Inf	13	aux	_	_
-12	sido	ser	VERB	v-pcp	VerbForm=Part	13	auxpass	_	_
-13	elevada	elevar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	17	advcl	_	_
-14	,	,	PUNCT	punc	_	17	punct	_	_
-15	Gonçalves	Gonçalves	PROPN	prop|M|S	_	17	nsubj	_	MWE=Gonçalves_Gomes|MWEPOS=PROPN
-16	Gomes	Gomes	PROPN	PROPN	_	15	name	_	_
-17	afirmou	afirmar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-18	que	que	SCONJ	conj-s	_	20	mark	_	_
-19	não	não	ADV	adv	_	21	neg	_	_
-20	irá	ir	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	ccomp	_	_
-21	acontecer	acontecer	VERB	v-inf	VerbForm=Inf	20	xcomp	_	_
-22	qualquer	qualquer	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	24	det	_	_
-23	«	«	PUNCT	punc	_	24	punct	_	_
-24	desestabilização	desestabilização	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nsubj	_	_
+8	por	por	ADP	PRP|@PASS	_	10	case	_	_
+9	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	10	det	_	_
+10	chamas	chama	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	7	obj	_	_
+11	ter	ter	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	12	aux	_	_
+12	sido	ser	VERB	<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	17	advcl	_	_
+13	elevada	elevar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	12	ccomp	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+15	Gonçalves	Gonçalves	PROPN	_	_	17	nsubj	_	MWE=Gonçalves_Gomes|MWEPOS=PROPN
+16	Gomes	Gomes	PROPN	_	_	15	flat	_	_
+17	afirmou	afirmar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+18	que	que	SCONJ	KS|@SUB	_	20	mark	_	_
+19	não	não	ADV	_	Polarity=Neg	21	advmod	_	_
+20	irá	ir	VERB	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	ccomp	_	_
+21	acontecer	acontecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	xcomp	_	_
+22	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	24	det	_	_
+23	«	«	PUNCT	PU|@PU	_	24	punct	_	SpaceAfter=No
+24	desestabilização	desestabilização	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	20	nsubj	_	_
 25-26	do	_	_	_	_	_	_	_	_
-25	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	abastecimento	abastecimento	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nmod	_	_
+25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
+26	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	abastecimento	abastecimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
 28-29	do	_	_	_	_	_	_	_	_
-28	de	de	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	mercado	mercado	NOUN	n|M|S	Gender=Masc|Number=Sing	27	nmod	_	_
-31	»	»	PUNCT	punc	_	24	punct	_	_
-32	.	.	PUNCT	punc	_	17	punct	_	_
+28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
+29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	mercado	mercado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	SpaceAfter=No
+31	»	»	PUNCT	PU|@PU	_	24	punct	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP103-6
-# sent_id = pt-ud-train.conllu#s542/pt
-# orig_file_sentence = 006#42
-1	Quanto	quanto	ADV	prp|<sam->	AdpType=Prep	4	case	_	MWE=Quanto_a|MWEPOS=ADP
+# text = Quanto à Empresa de Pesca de Viana estará garantida a continuidade da laboração, embora a níveis de produção mais reduzidos, já que só poderá ser utilizado o único túnel de secagem artificial poupado no incêndio.
+# forest 1
+# source CETEMPúblico n=103 sec=soc sem=93a
+# sent_id = CP103-6
+# id 542
+1	Quanto	quanto	ADV	ADV|@ADVL>	_	4	case	_	MWE=Quanto_a|MWEPOS=ADP
 2-3	à	_	_	_	_	_	_	_	_
-2	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	1	mwe	_	_
-3	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
-4	Empresa	Empresa	PROPN	prop|F|S	_	10	nmod	_	MWE=Empresa_de_Pesca_de_Viana|MWEPOS=PROPN
-5	de	de	ADP	ADP	AdpType=Prep	6	case	_	_
-6	Pesca	Pesca	PROPN	PROPN	_	4	name	_	_
-7	de	de	ADP	ADP	AdpType=Prep	8	case	_	_
-8	Viana	Viana	PROPN	PROPN	_	4	name	_	_
-9	estará	estar	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	cop	_	_
-10	garantida	garantir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-11	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	continuidade	continuidade	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nsubj	_	_
+2	a	a	DET	PRP|@A<	Gender=Fem|Number=Sing|PronType=Art	1	fixed	_	_
+3	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
+4	Empresa	Empresa	PROPN	PROP|F|S|@P<	_	10	obl	_	MWE=Empresa_de_Pesca_de_Viana|MWEPOS=PROPN
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	Pesca	Pesca	PROPN	PROP|@P<	_	4	flat	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	Viana	Viana	PROPN	PROP|@P<	_	4	flat	_	_
+9	estará	estar	AUX	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	cop	_	_
+10	garantida	garantir	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	continuidade	continuidade	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	10	nsubj	_	_
 13-14	da	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	15	det	_	_
-15	laboração	laboração	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-16	,	,	PUNCT	punc	_	15	punct	_	_
-17	embora	embora	SCONJ	conj-s|<prp>	_	15	nmod	_	_
-18	a	a	ADP	prp	AdpType=Prep	19	case	_	_
-19	níveis	nível	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-21	produção	produção	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-22	mais	mais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	23	advmod	_	_
-23	reduzidos	reduzir	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	21	acl	_	_
-24	,	,	PUNCT	punc	_	17	punct	_	_
-25	já	já	ADV	conj-s	_	30	mark	_	MWE=já_que|MWEPOS=SCONJ
-26	que	que	SCONJ	SCONJ	_	25	mwe	_	_
-27	só	só	ADV	adv	_	30	advmod	_	_
-28	poderá	poder	AUX	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	30	aux	_	_
-29	ser	ser	VERB	v-inf	VerbForm=Inf	30	auxpass	_	_
-30	utilizado	utilizar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	17	advcl	_	_
-31	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
-32	único	único	ADJ	adj|M|S	Gender=Masc|Number=Sing	33	amod	_	_
-33	túnel	túnel	NOUN	n|M|S	Gender=Masc|Number=Sing	30	nsubjpass	_	_
-34	de	de	ADP	prp	AdpType=Prep	35	case	_	_
-35	secagem	secagem	NOUN	n|F|S	Gender=Fem|Number=Sing	33	nmod	_	_
-36	artificial	artificial	ADJ	adj|F|S	Gender=Fem|Number=Sing	35	amod	_	_
-37	poupado	poupar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	35	acl	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	15	det	_	_
+15	laboração	laboração	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+17	embora	embora	SCONJ	<first-cjt>|KS|@N<PRED	_	15	nmod	_	_
+18	a	a	ADP	PRP|@<SA	_	19	case	_	_
+19	níveis	nível	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obl	_	_
+20	de	de	ADP	PRP|@N<	_	21	case	_	_
+21	produção	produção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
+22	mais	mais	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	23	advmod	_	_
+23	reduzidos	reduzir	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	21	acl	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+25	já	já	ADV	ADV|@SUB	_	29	mark	_	MWE=já_que|MWEPOS=SCONJ
+26	que	que	SCONJ	KS|@A<	_	25	fixed	_	_
+27	só	só	ADV	ADV|@ADVL>	_	30	advmod	_	_
+28	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	aux	_	_
+29	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	17	advcl	_	_
+30	utilizado	utilizar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	29	ccomp	_	_
+31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
+32	único	único	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	33	amod	_	_
+33	túnel	túnel	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	29	nsubj	_	_
+34	de	de	ADP	PRP|@N<	_	35	case	_	_
+35	secagem	secagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
+36	artificial	artificial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	35	amod	_	_
+37	poupado	poupar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	35	acl	_	_
 38-39	no	_	_	_	_	_	_	_	_
-38	em	em	ADP	prp|<sam->	AdpType=Prep	40	case	_	_
-39	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
-40	incêndio	incêndio	NOUN	n|M|S	Gender=Masc|Number=Sing	37	nmod	_	_
-41	.	.	PUNCT	punc	_	10	punct	_	_
+38	em	em	ADP	<sam->|PRP|@<ADVL	_	40	case	_	_
+39	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
+40	incêndio	incêndio	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	37	obl	_	SpaceAfter=No
+41	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 

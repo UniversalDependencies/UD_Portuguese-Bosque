@@ -1,156 +1,160 @@
-# distance_from_new = 0
-# new_sent_id = CP692-1
-# sent_id = pt-ud-train.conllu#s3565/pt
-# orig_file_sentence = 036#65
-1	Presidente	presidente	NOUN	n|M|S	_	0	root	_	MWE=Presidente_da_AR|MWEPOS=NOUN
+# text = Presidente da AR atento às dúvidas legais
+# forest 1
+# source CETEMPúblico n=692 sec=pol sem=92a
+# sent_id = CP692-1
+# id 3567
+1	Presidente	presidente	NOUN	<np-idf>|N|M|S|@NPHR	_	0	root	_	MWE=Presidente_da_AR|MWEPOS=NOUN
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	AR	AR	NOUN	NOUN	_	1	compound	_	_
-5	atento	atento	ADJ	adj|M|S	Gender=Masc|Number=Sing	1	amod	_	_
+2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
+3	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	AR	AR	NOUN	N|@P<	_	1	compound	_	_
+5	atento	atento	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 6-7	às	_	_	_	_	_	_	_	_
-6	a	a	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
-8	dúvidas	dúvida	NOUN	n|F|P	Gender=Fem|Number=Plur	5	nmod	_	_
-9	legais	legal	ADJ	adj|F|P	Gender=Fem|Number=Plur	8	amod	_	_
+6	a	a	ADP	<sam->|PRP|@A<	_	8	case	_	_
+7	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
+8	dúvidas	dúvida	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obl	_	_
+9	legais	legal	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	8	amod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP692-2
-# sent_id = pt-ud-train.conllu#s3566/pt
-# orig_file_sentence = 036#66
-1	Barbosa	Barbosa	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	pede	pedir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	pareceres	parecer	NOUN	n|M|P	Gender=Masc|Number=Plur	2	dobj	_	_
-4	sobre	sobre	ADP	prp	AdpType=Prep	5	case	_	_
-5	multas	multa	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nmod	_	_
+# text = Barbosa pede pareceres sobre multas do PSD
+# forest 1
+# source CETEMPúblico n=692 sec=pol sem=92a
+# sent_id = CP692-2
+# id 3568
+1	Barbosa	Barbosa	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	pede	pedir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	pareceres	parecer	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
+4	sobre	sobre	ADP	PRP|@N<	_	5	case	_	_
+5	multas	multa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
 6-7	do	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	PSD	PSD	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	PSD	PSD	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP692-3
-# sent_id = pt-ud-train.conllu#s3567/pt
-# orig_file_sentence = 036#67
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Presidente	presidente	NOUN	n|<prop>|M|S	_	9	nsubj	_	MWE=Presidente_da_Assembleia_da_República|MWEPOS=NOUN
+# text = O Presidente da Assembleia da República solicitou a vários juristas ligados ao seu gabinete que se pronunciem sobre a legalidade da forma como tem sido descontada no vencimento de deputados do PSD a quantia correspondente às multas aplicadas por faltas de comparência.
+# forest 1
+# source CETEMPúblico n=692 sec=pol sem=92a
+# sent_id = CP692-3
+# id 3569
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Presidente	presidente	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	_	9	nsubj	_	MWE=Presidente_da_Assembleia_da_República|MWEPOS=NOUN
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Assembleia	Assembleia	NOUN	NOUN	_	2	compound	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Assembleia	Assembleia	NOUN	N|@P<	_	2	compound	_	_
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	República	República	NOUN	NOUN	_	2	compound	_	_
-9	solicitou	solicitar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-10	a	a	ADP	prp	AdpType=Prep	12	case	_	_
-11	vários	vários	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	12	det	_	_
-12	juristas	jurista	NOUN	n|M|P	Gender=Masc|Number=Plur	9	iobj	_	_
-13	ligados	ligar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	República	República	NOUN	N|@P<	_	2	compound	_	_
+9	solicitou	solicitar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+10	a	a	ADP	PRP|@<PIV	_	12	case	_	_
+11	vários	vários	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	12	det	_	_
+12	juristas	jurista	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	iobj	_	_
+13	ligados	ligar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
 14-15	ao	_	_	_	_	_	_	_	_
-14	a	a	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-15	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-16	seu	seu	DET	pron-det|<poss|3S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	_	_
-17	gabinete	gabinete	NOUN	n|M|S	Gender=Masc|Number=Sing	13	dobj	_	_
-18	que	que	SCONJ	conj-s	_	20	mark	_	_
-19	se	se	PRON	pron-pers|M|3P|ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	dobj	_	_
-20	pronunciem	pronunciar	VERB	v-fin|PR|3P|SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
-21	sobre	sobre	ADP	prp	AdpType=Prep	23	case	_	_
-22	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	legalidade	legalidade	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
+14	a	a	ADP	<sam->|PRP|@<PIV	_	17	case	_	_
+15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+16	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	17	det	_	_
+17	gabinete	gabinete	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obj	_	_
+18	que	que	SCONJ	KS|@SUB	_	20	mark	_	_
+19	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	obj	_	_
+20	pronunciem	pronunciar	VERB	<mv>|<se-passive>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
+21	sobre	sobre	ADP	PRP|@<ADVL	_	23	case	_	_
+22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	legalidade	legalidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	obl	_	_
 24-25	da	_	_	_	_	_	_	_	_
-24	de	de	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	forma	forma	NOUN	n|F|S	Gender=Fem|Number=Sing	23	nmod	_	_
-27	como	como	ADV	adv|<rel>	PronType=Rel	30	advmod	_	_
-28	tem	ter	AUX	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux	_	_
-29	sido	ser	VERB	v-pcp	VerbForm=Part	30	auxpass	_	_
-30	descontada	descontar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	26	acl	_	_
+24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
+25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	forma	forma	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
+27	como	como	ADV	<rel>|ADV|@ADVL>	PronType=Rel	30	advmod	_	_
+28	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux	_	_
+29	sido	ser	VERB	<aux>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	26	acl	_	_
+30	descontada	descontar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	29	ccomp	_	_
 31-32	no	_	_	_	_	_	_	_	_
-31	em	em	ADP	prp|<sam->	AdpType=Prep	33	case	_	_
-32	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
-33	vencimento	vencimento	NOUN	n|M|S	Gender=Masc|Number=Sing	30	nmod	_	_
-34	de	de	ADP	prp	AdpType=Prep	35	case	_	_
-35	deputados	deputado	NOUN	n|M|P	Gender=Masc|Number=Plur	33	nmod	_	_
+31	em	em	ADP	<sam->|PRP|@<ADVL	_	33	case	_	_
+32	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
+33	vencimento	vencimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	30	obl	_	_
+34	de	de	ADP	PRP|@N<	_	35	case	_	_
+35	deputados	deputado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	33	nmod	_	_
 36-37	do	_	_	_	_	_	_	_	_
-36	de	de	ADP	prp|<sam->	AdpType=Prep	38	case	_	_
-37	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
-38	PSD	PSD	PROPN	prop|M|S	Gender=Masc|Number=Sing	35	nmod	_	_
-39	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
-40	quantia	quantia	NOUN	n|F|S	Gender=Fem|Number=Sing	30	nsubjpass	_	_
-41	correspondente	correspondente	ADJ	adj|F|S	Gender=Fem|Number=Sing	40	amod	_	_
+36	de	de	ADP	<sam->|PRP|@N<	_	38	case	_	_
+37	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+38	PSD	PSD	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	_
+39	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
+40	quantia	quantia	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	29	nsubj	_	_
+41	correspondente	correspondente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	40	amod	_	_
 42-43	às	_	_	_	_	_	_	_	_
-42	a	a	ADP	prp|<sam->	AdpType=Prep	44	case	_	_
-43	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	_	_
-44	multas	multa	NOUN	n|F|P	Gender=Fem|Number=Plur	41	nmod	_	_
-45	aplicadas	aplicar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	44	acl	_	_
-46	por	por	ADP	prp	AdpType=Prep	47	case	_	_
-47	faltas	falta	NOUN	n|F|P	Gender=Fem|Number=Plur	45	dobj	_	_
-48	de	de	ADP	prp	AdpType=Prep	49	case	_	_
-49	comparência	comparência	NOUN	n|F|S	Gender=Fem|Number=Sing	47	nmod	_	_
-50	.	.	PUNCT	punc	_	9	punct	_	_
+42	a	a	ADP	<sam->|PRP|@A<	_	44	case	_	_
+43	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	_	_
+44	multas	multa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	41	obl	_	_
+45	aplicadas	aplicar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	44	acl	_	_
+46	por	por	ADP	PRP|@PASS	_	47	case	_	_
+47	faltas	falta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	45	obj	_	_
+48	de	de	ADP	PRP|@N<	_	49	case	_	_
+49	comparência	comparência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	47	nmod	_	SpaceAfter=No
+50	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP692-4
-# sent_id = pt-ud-train.conllu#s3568/pt
-# orig_file_sentence = 036#68
-1	Barbosa	Barbosa	PROPN	prop|M|S	_	5	nsubj	_	MWE=Barbosa_de_Melo|MWEPOS=PROPN
-2	de	de	ADP	ADP	AdpType=Prep	3	case	_	_
-3	Melo	Melo	PROPN	PROPN	_	1	name	_	_
-4	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_
-5	sensível	sensível	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Barbosa de Melo foi sensível às reclamações dalguns parlamentares da maioria que a ele se dirigiram pondo em causa tais descontos sem deles terem sido previamente informados e, segundo o PÚBLICO apurou, admitiu mesmo vir a solicitar um parecer à Procuradoria Geral da República.
+# forest 1
+# source CETEMPúblico n=692 sec=pol sem=92a
+# sent_id = CP692-4
+# id 3570
+1	Barbosa	Barbosa	PROPN	PROP|M|S|@SUBJ>	_	5	nsubj	_	MWE=Barbosa_de_Melo|MWEPOS=PROPN
+2	de	de	ADP	PRP|@N<	_	3	case	_	_
+3	Melo	Melo	PROPN	PROP|@P<	_	1	flat	_	_
+4	foi	ser	AUX	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_
+5	sensível	sensível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 6-7	às	_	_	_	_	_	_	_	_
-6	a	a	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
-8	reclamações	reclamação	NOUN	n|F|P	Gender=Fem|Number=Plur	5	nmod	_	_
+6	a	a	ADP	<sam->|PRP|@A<	_	8	case	_	_
+7	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
+8	reclamações	reclamação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obl	_	_
 9-10	dalguns	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-10	alguns	algum	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
-11	parlamentares	parlamentar	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
+9	de	de	ADP	PRP|@N<	_	11	case	_	_
+10	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
+11	parlamentares	parlamentar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
 12-13	da	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	maioria	maioria	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-15	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	19	nsubj	_	_
-16	a	a	ADP	prp	AdpType=Prep	17	case	_	_
-17	ele	ele	PRON	pron-pers|M|3S|PIV	Case=Acc|Gender=Masc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	19	iobj	_	_
-18	se	se	PRON	pron-pers|<refl>|M|3P|ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	19	dobj	_	_
-19	dirigiram	dirigir	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
-20	pondo	pôr	VERB	v-ger	VerbForm=Ger	19	advcl	_	_
-21	em	em	ADP	pp	AdpType=Prep	20	advmod	_	MWE=em_causa|MWEPOS=ADV
-22	causa	causa	NOUN	NOUN	_	21	mwe	_	_
-23	tais	tal	DET	pron-det|<dem>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur|PronType=Dem	24	det	_	_
-24	descontos	desconto	NOUN	n|M|P	Gender=Masc|Number=Plur	20	dobj	_	_
-25	sem	sem	ADP	prp	AdpType=Prep	31	mark	_	_
+12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	maioria	maioria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+15	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	19	nsubj	_	_
+16	a	a	ADP	PRP|@PIV>	_	17	case	_	_
+17	ele	ele	PRON	PERS|M|3S|PIV|@P<	Case=Acc|Gender=Masc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	19	iobj	_	_
+18	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	19	obj	_	_
+19	dirigiram	dirigir	VERB	<mv>|<se-passive>|V|PS|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
+20	pondo	pôr	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	19	advcl	_	_
+21	em	em	ADP	PRP|@<OA	_	20	advmod	_	MWE=em_causa|MWEPOS=ADV
+22	causa	causa	NOUN	N|F|S|@P<	_	21	fixed	_	_
+23	tais	tal	DET	<dem>|<KOMP>|DET|M|P|@>N	Degree=Cmp|Gender=Masc|Number=Plur|PronType=Dem	24	det	_	_
+24	descontos	desconto	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	20	obj	_	_
+25	sem	sem	ADP	PRP|@<ADVL	_	29	mark	_	_
 26-27	deles	_	_	_	_	_	_	_	_
-26	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-27	eles	ele	PRON	pron-pers|<-sam>|M|3P|PIV	Case=Acc|Gender=Masc|Number=Plur|Person=3|PrepCase=Pre|PronType=Prs	31	dobj	_	_
-28	terem	ter	AUX	v-inf|3P	Number=Plur|Person=3|VerbForm=Inf	31	aux	_	_
-29	sido	ser	VERB	v-pcp	VerbForm=Part	31	auxpass	_	_
-30	previamente	previamente	ADV	adv	_	31	advmod	_	_
-31	informados	informar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	20	advcl	_	_
-32	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	5	cc	_	_
-33	,	,	PUNCT	punc	_	39	punct	_	_
-34	segundo	segundo	ADP	prp	AdpType=Prep	37	mark	_	_
-35	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-36	PÚBLICO	Público	PROPN	prop|M|S	Gender=Masc|Number=Sing	37	nsubj	_	_
-37	apurou	apurar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	advcl	_	_
-38	,	,	PUNCT	punc	_	39	punct	_	_
-39	admitiu	admitir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
-40	mesmo	mesmo	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	39	advmod	_	_
-41	vir	vir	VERB	v-inf	VerbForm=Inf	39	xcomp	_	_
-42	a	a	ADP	prp	AdpType=Prep	43	mark	_	_
-43	solicitar	solicitar	VERB	v-inf	VerbForm=Inf	41	xcomp	_	_
-44	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
-45	parecer	parecer	NOUN	n|M|S	Gender=Masc|Number=Sing	43	dobj	_	_
+26	de	de	ADP	<sam->|PRP|@PIV>	_	27	case	_	_
+27	eles	ele	PRON	<-sam>|PERS|M|3P|PIV|@P<	Case=Acc|Gender=Masc|Number=Plur|Person=3|PrepCase=Pre|PronType=Prs	31	obj	_	_
+28	terem	ter	AUX	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	29	aux	_	_
+29	sido	ser	VERB	<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	20	advcl	_	_
+30	previamente	previamente	ADV	ADV|@ADVL>	_	31	advmod	_	_
+31	informados	informar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	29	ccomp	_	_
+32	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	39	cc	_	SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+34	segundo	segundo	ADP	PRP|@ADVL>	_	37	mark	_	_
+35	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	PÚBLICO	Público	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	37	nsubj	_	_
+37	apurou	apurar	VERB	<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	advcl	_	SpaceAfter=No
+38	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+39	admitiu	admitir	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
+40	mesmo	mesmo	ADV	<quant>|ADV|@<ADVL	NumType=Card|PronType=Ind,Neg,Tot	39	advmod	_	_
+41	vir	vir	VERB	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	39	xcomp	_	_
+42	a	a	ADP	PRP|@PRT-AUX<	_	43	mark	_	_
+43	solicitar	solicitar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	41	xcomp	_	_
+44	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	parecer	parecer	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	43	obj	_	_
 46-47	à	_	_	_	_	_	_	_	_
-46	a	a	ADP	prp|<sam->	AdpType=Prep	48	case	_	_
-47	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
-48	Procuradoria	Procuradoria	PROPN	prop|F|S	_	43	dobj	_	MWE=Procuradoria_Geral_da_República|MWEPOS=PROPN
-49	Geral	Geral	PROPN	PROPN	_	48	name	_	_
+46	a	a	ADP	<sam->|PRP|@<PIV	_	48	case	_	_
+47	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
+48	Procuradoria	Procuradoria	PROPN	_	_	43	obj	_	MWE=Procuradoria_Geral_da_República|MWEPOS=PROPN
+49	Geral	Geral	PROPN	_	_	48	flat	_	_
 50-51	da	_	_	_	_	_	_	_	_
-50	de	de	ADP	prp|<sam->	AdpType=Prep	52	case	_	_
-51	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
-52	República	República	PROPN	PROPN	_	48	name	_	_
-53	.	.	PUNCT	punc	_	5	punct	_	_
+50	de	de	ADP	<sam->|PRP|@N<	_	52	case	_	_
+51	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
+52	República	República	PROPN	PROP|@P<	_	48	flat	_	SpaceAfter=No
+53	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 

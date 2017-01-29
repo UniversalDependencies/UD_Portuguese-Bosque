@@ -1,241 +1,252 @@
-# distance_from_new = 0
-# new_sent_id = CF81-1
-# sent_id = pt-ud-train.conllu#s5344/pt
-# orig_file_sentence = 054#44
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	castelo	castelo	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	cartas	carta	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-5	ruiu	ruir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	logo	logo	ADV	adv|<kc>	_	5	advmod	_	_
-7	.	.	PUNCT	punc	_	5	punct	_	_
+# text = O castelo de cartas ruiu logo.
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-1
+# id 302
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	castelo	castelo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	cartas	carta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
+5	ruiu	ruir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	logo	logo	ADV	<kc>|ADV|@<ADVL	_	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-2
-# sent_id = pt-ud-train.conllu#s5345/pt
-# orig_file_sentence = 054#45
-1	Há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	esquerda	esquerda	NOUN	n|F|S	Gender=Fem|Number=Sing	1	dobj	_	_
-4	reformista	reformista	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
+# text = Há uma esquerda reformista no PSDB.
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-2
+# id 303
+1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	esquerda	esquerda	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
+4	reformista	reformista	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	_
 5-6	no	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	PSDB	PSDB	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-8	.	.	PUNCT	punc	_	1	punct	_	_
+5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
+6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	PSDB	PSDB	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-3
-# sent_id = pt-ud-train.conllu#s5346/pt
-# orig_file_sentence = 054#46
-1	Mas	mas	CONJ	conj-c	_	6	cc	_	_
-2	ela	ela	PRON	pron-pers|F|3S|NOM	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
-3	parece	parecer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	ser	ser	VERB	v-inf	VerbForm=Inf	6	cop	_	_
-5	mera	mero	ADJ	adj|F|S	Gender=Fem|Number=Sing	6	amod	_	_
-6	exceção	exceção	NOUN	n|F|S	Gender=Fem|Number=Sing	3	xcomp	_	_
-7	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Mas ela parece ser mera exceção.
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-3
+# id 304
+1	Mas	mas	CCONJ	KC|@CO	_	6	cc	_	_
+2	ela	ela	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	parece	parecer	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	cop	_	_
+5	mera	mero	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	6	amod	_	_
+6	exceção	exceção	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	3	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-4
-# sent_id = pt-ud-train.conllu#s5347/pt
-# orig_file_sentence = 054#47
-1	Agora	agora	ADV	adv|<kc>	_	5	advmod	_	_
-2	,	,	PUNCT	punc	_	5	punct	_	_
-3	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	partido	partido	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-5	retirou	retirar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	máscara	máscara	NOUN	n|F|S	Gender=Fem|Number=Sing	5	dobj	_	_
-8	.	.	PUNCT	punc	_	5	punct	_	_
+# text = Agora, o partido retirou a máscara.
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-4
+# id 305
+1	Agora	agora	ADV	<kc>|ADV|@ADVL>	_	5	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	partido	partido	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+5	retirou	retirar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	máscara	máscara	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-5
-# sent_id = pt-ud-train.conllu#s5348/pt
-# orig_file_sentence = 054#48
-1	Mostrou	mostrar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-2	que	que	SCONJ	conj-s	_	18	mark	_	_
-3	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	maioria	maioria	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nsubj	_	_
+# text = Mostrou que a maioria dos seus políticos profissionais cuja respeitabilidade não pode ser posta em dúvida oscilava entre o centro nacionalista e os radicais do PMDB.
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-5
+# id 306
+1	Mostrou	mostrar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
+3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	maioria	maioria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	18	nsubj	_	_
 5-6	dos	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-6	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
-7	seus	seu	DET	pron-det|<poss|3S>|M|P	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	_	_
-8	políticos	político	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nmod	_	_
-9	profissionais	profissional	ADJ	adj|M|P	Gender=Masc|Number=Plur	8	amod	_	_
-10	cuja	cujo	DET	pron-det|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	11	det	_	_
-11	respeitabilidade	respeitabilidade	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nsubjpass	_	_
-12	não	não	ADV	adv	_	15	neg	_	_
-13	pode	poder	AUX	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
-14	ser	ser	VERB	v-inf	VerbForm=Inf	15	auxpass	_	_
-15	posta	pôr	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	8	acl	_	_
-16	em	em	ADP	prp	AdpType=Prep	17	case	_	_
-17	dúvida	dúvida	NOUN	n|F|S	Gender=Fem|Number=Sing	15	dobj	_	_
-18	oscilava	oscilar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	ccomp	_	_
-19	entre	entre	ADP	prp	AdpType=Prep	21	case	_	_
-20	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	centro	centro	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
-22	nacionalista	nacionalista	ADJ	adj|M|S	Gender=Masc|Number=Sing	21	amod	_	_
-23	e	e	CONJ	conj-c|<co-prparg>	_	21	cc	_	_
-24	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
-25	radicais	radical	NOUN	n|M|P	Gender=Masc|Number=Plur	21	conj	_	_
+5	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+6	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
+7	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	8	det	_	_
+8	políticos	político	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
+9	profissionais	profissional	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	8	amod	_	_
+10	cuja	cujo	DET	<rel>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Rel	11	det	_	_
+11	respeitabilidade	respeitabilidade	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	_
+12	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
+13	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
+14	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	8	acl	_	_
+15	posta	pôr	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	14	ccomp	_	_
+16	em	em	ADP	PRP|@<PIV	_	17	case	_	_
+17	dúvida	dúvida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obj	_	_
+18	oscilava	oscilar	VERB	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	ccomp	_	_
+19	entre	entre	ADP	PRP|@<ADVL	_	21	case	_	_
+20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	centro	centro	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	_
+22	nacionalista	nacionalista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	amod	_	_
+23	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	_
+24	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
+25	radicais	radical	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	21	conj	_	_
 26-27	do	_	_	_	_	_	_	_	_
-26	de	de	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-27	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	PMDB	PMDB	PROPN	prop|M|S	Gender=Masc|Number=Sing	25	nmod	_	_
-29	.	.	PUNCT	punc	_	1	punct	_	_
+26	de	de	ADP	<sam->|PRP|@N<	_	28	case	_	_
+27	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	PMDB	PMDB	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-6
-# sent_id = pt-ud-train.conllu#s5349/pt
-# orig_file_sentence = 054#49
-1	Considerados	considerar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	5	advcl	_	_
-2	globalmente	globalmente	ADV	adv	_	1	advmod	_	_
-3	,	,	PUNCT	punc	_	5	punct	_	_
-4	não	não	ADV	adv	_	5	neg	_	_
-5	faziam	fazer	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-6	diferença	diferença	NOUN	n|F|S	Gender=Fem|Number=Sing	5	dobj	_	_
-7	.	.	PUNCT	punc	_	5	punct	_	_
+# text = Considerados globalmente, não faziam diferença.
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-6
+# id 307
+1	Considerados	considerar	VERB	<mv>|V|PCP|M|P|@ICL-PRED>	Gender=Masc|Number=Plur|VerbForm=Part	5	advcl	_	_
+2	globalmente	globalmente	ADV	ADV|@<ADVL	_	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
+5	faziam	fazer	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+6	diferença	diferença	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-7
-# sent_id = pt-ud-train.conllu#s5350/pt
-# orig_file_sentence = 054#50
-1	Eram	ser	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
-2	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	retrato	retrato	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Eram o retrato do coração e do cérebro deste partido.
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-7
+# id 308
+1	Eram	ser	AUX	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
+2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	retrato	retrato	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 4-5	do	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	coração	coração	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
-7	e	e	CONJ	conj-c|<co-postnom>	_	6	cc	_	_
+4	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	coração	coração	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
+7	e	e	CCONJ	<co-postnom>|KC|@CO	_	10	cc	_	_
 8-9	do	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	cérebro	cérebro	NOUN	n|M|S	Gender=Masc|Number=Sing	6	conj	_	_
+8	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	10	case	_	_
+9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	cérebro	cérebro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	conj	_	_
 11-12	deste	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	este	este	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	13	det	_	_
-13	partido	partido	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-14	.	.	PUNCT	punc	_	3	punct	_	_
+11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	13	det	_	_
+13	partido	partido	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-8
-# sent_id = pt-ud-train.conllu#s5351/pt
-# orig_file_sentence = 054#51
-1	Nada	nada	PRON	pron-indp|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	0	root	_	_
-2	mais	mais	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	1	det	_	_
-3	!	!	PUNCT	punc	_	1	punct	_	_
+# text = Nada mais!
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-8
+# id 309
+1	Nada	nada	PRON	<quant>|INDP|M|S|@NPHR	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	0	root	_	_
+2	mais	mais	DET	<quant>|DET|M|S|@N<	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	1	det	_	SpaceAfter=No
+3	!	!	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-9
-# sent_id = pt-ud-train.conllu#s5352/pt
-# orig_file_sentence = 054#52
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	tancredismo	tancredismo	NOUN	n|<DERS>|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	concedeu	conceder	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+# text = O tancredismo concedeu ao seu principal teórico, professor e senador Fernando Henrique Cardoso, a oportunidade de esboçar a filosofia política do mudancismo.
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-9
+# id 310
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	tancredismo	tancredismo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	concedeu	conceder	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4-5	ao	_	_	_	_	_	_	_	_
-4	a	a	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-6	seu	seu	DET	pron-det|<poss|3S>|<si>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	8	det	_	_
-7	principal	principal	ADJ	adj|<SUP>|M|S	Degree=Sup|Gender=Masc|Number=Sing	8	amod	_	_
-8	teórico	teórico	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-9	,	,	PUNCT	punc	_	8	punct	_	_
-10	professor	professor	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-11	e	e	CONJ	conj-c|<co-prparg>	_	10	cc	_	_
-12	senador	senador	NOUN	n|M|S	Gender=Masc|Number=Sing	10	conj	_	_
-13	Fernando	Fernando	PROPN	prop|M|S	_	12	nmod	_	MWE=Fernando_Henrique_Cardoso|MWEPOS=PROPN
-14	Henrique	Henrique	PROPN	PROPN	_	13	name	_	_
-15	Cardoso	Cardoso	PROPN	PROPN	_	13	name	_	_
-16	,	,	PUNCT	punc	_	8	punct	_	_
-17	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	oportunidade	oportunidade	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	mark	_	_
-20	esboçar	esboçar	VERB	v-inf	VerbForm=Inf	18	acl	_	_
-21	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	filosofia	filosofia	NOUN	n|F|S	Gender=Fem|Number=Sing	20	dobj	_	_
-23	política	político	ADJ	adj|F|S	Gender=Fem|Number=Sing	22	amod	_	_
+4	a	a	ADP	<sam->|PRP|@<PIV	_	8	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+6	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	8	det	_	_
+7	principal	principal	ADJ	<SUP>|ADJ|M|S|@>N	Degree=Sup|Gender=Masc|Number=Sing	8	amod	_	_
+8	teórico	teórico	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+10	professor	professor	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	8	nmod	_	_
+11	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	_
+12	senador	senador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	conj	_	_
+13	Fernando	Fernando	PROPN	_	_	12	nmod	_	MWE=Fernando_Henrique_Cardoso|MWEPOS=PROPN
+14	Henrique	Henrique	PROPN	_	_	13	flat	_	_
+15	Cardoso	Cardoso	PROPN	_	_	13	flat	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	oportunidade	oportunidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
+19	de	de	ADP	PRP|@N<	_	20	mark	_	_
+20	esboçar	esboçar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	18	acl	_	_
+21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	filosofia	filosofia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
+23	política	político	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
 24-25	do	_	_	_	_	_	_	_	_
-24	de	de	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	mudancismo	mudancismo	NOUN	n|<DERS>|M|S	Gender=Masc|Number=Sing	22	nmod	_	_
-27	.	.	PUNCT	punc	_	3	punct	_	_
+24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
+25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	mudancismo	mudancismo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-10
-# sent_id = pt-ud-train.conllu#s5353/pt
-# orig_file_sentence = 054#53
+# text = Na prática, os que iriam constituir o cerne e a base do partido iam mais longe: condenavam o autoritarismo, o oportunismo, o clientelismo e o fisiologismo.
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-10
+# id 311
 1-2	Na	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	prática	prática	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-4	,	,	PUNCT	punc	_	17	punct	_	_
-5	os	o	PRON	pron-det|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur	17	nsubj	_	_
-6	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	7	nsubj	_	_
-7	iriam	ir	VERB	v-fin|COND|3P	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	5	acl	_	_
-8	constituir	constituir	VERB	v-inf	VerbForm=Inf	7	xcomp	_	_
-9	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	cerne	cerne	NOUN	n|M|S	Gender=Masc|Number=Sing	8	dobj	_	_
-11	e	e	CONJ	conj-c|<co-acc>	_	10	cc	_	_
-12	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	base	base	NOUN	n|F|S	Gender=Fem|Number=Sing	10	conj	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	prática	prática	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+5	os	o	PRON	<artd>|DET|M|P|@SUBJ>	Definite=Def|Gender=Masc|Number=Plur	17	nsubj	_	_
+6	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	7	nsubj	_	_
+7	iriam	ir	VERB	<aux>|V|COND|3P|@FS-N<	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	5	acl	_	_
+8	constituir	constituir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
+9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	cerne	cerne	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
+11	e	e	CCONJ	<co-acc>|KC|@CO	_	13	cc	_	_
+12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	base	base	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	conj	_	_
 14-15	do	_	_	_	_	_	_	_	_
-14	de	de	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-15	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	partido	partido	NOUN	n|M|S	Gender=Masc|Number=Sing	13	nmod	_	_
-17	iam	ir	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-18	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	19	advmod	_	_
-19	longe	longe	ADV	adv	_	17	advmod	_	_
-20	:	:	PUNCT	punc	_	17	punct	_	_
-21	condenavam	condenar	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	17	advcl	_	_
-22	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	autoritarismo	autoritarismo	NOUN	n|M|S	Gender=Masc|Number=Sing	21	dobj	_	_
-24	,	,	PUNCT	punc	_	23	punct	_	_
-25	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	oportunismo	oportunismo	NOUN	n|M|S	Gender=Masc|Number=Sing	23	conj	_	_
-27	,	,	PUNCT	punc	_	23	punct	_	_
-28	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	clientelismo	clientelismo	NOUN	n|M|S	Gender=Masc|Number=Sing	23	conj	_	_
-30	e	e	CONJ	conj-c|<co-acc>	_	23	cc	_	_
-31	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	fisiologismo	fisiologismo	NOUN	n|<DERS>|M|S	Gender=Masc|Number=Sing	23	conj	_	_
-33	.	.	PUNCT	punc	_	17	punct	_	_
+14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
+15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	partido	partido	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
+17	iam	ir	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+18	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	19	advmod	_	_
+19	longe	longe	ADV	ADV|@<SA	_	17	advmod	_	SpaceAfter=No
+20	:	:	PUNCT	PU|@PU	_	17	punct	_	_
+21	condenavam	condenar	VERB	<mv>|V|IMPF|3P|IND|@FS-<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	17	advcl	_	_
+22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	autoritarismo	autoritarismo	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	21	obj	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	oportunismo	oportunismo	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	SpaceAfter=No
+27	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	clientelismo	clientelismo	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	_
+30	e	e	CCONJ	<co-acc>|KC|@CO	_	32	cc	_	_
+31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	fisiologismo	fisiologismo	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	SpaceAfter=No
+33	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF81-11
-# sent_id = pt-ud-train.conllu#s5354/pt
-# orig_file_sentence = 054#54
-1	Ostentavam	ostentar	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-2	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	patamar	patamar	NOUN	n|M|S	Gender=Masc|Number=Sing	1	dobj	_	_
-4	aparentemente	aparentemente	ADV	adv	_	5	advmod	_	_
-5	sólido	sólido	ADJ	adj|M|S	Gender=Masc|Number=Sing	3	amod	_	_
-6	,	,	PUNCT	punc	_	5	punct	_	_
-7	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
-8	evidenciava	evidenciar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	acl	_	_
-9	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	radicalidade	radicalidade	NOUN	n|F|S	Gender=Fem|Number=Sing	8	dobj	_	_
+# text = Ostentavam um patamar aparentemente sólido, que evidenciava a radicalidade dos estratos médios e dos intelectuais envolvidos na rejeição do «status quo».
+# forest 1
+# source CETENFolha n=81 cad=Opinião sec=opi sem=94b
+# sent_id = CF81-11
+# id 312
+1	Ostentavam	ostentar	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	patamar	patamar	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
+4	aparentemente	aparentemente	ADV	ADV|@>A	_	5	advmod	_	_
+5	sólido	sólido	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+7	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
+8	evidenciava	evidenciar	VERB	<mv>|V|IMPF|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	acl	_	_
+9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	radicalidade	radicalidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
 11-12	dos	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
-13	estratos	estrato	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nmod	_	_
-14	médios	médio	ADJ	adj|M|P	Gender=Masc|Number=Plur	13	amod	_	_
-15	e	e	CONJ	conj-c|<co-postnom>	_	13	cc	_	_
+11	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	13	case	_	_
+12	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+13	estratos	estrato	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
+14	médios	médio	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	_
+15	e	e	CCONJ	<co-postnom>|KC|@CO	_	18	cc	_	_
 16-17	dos	_	_	_	_	_	_	_	_
-16	de	de	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
-18	intelectuais	intelectual	NOUN	n|M|P	Gender=Masc|Number=Plur	13	conj	_	_
-19	envolvidos	envolver	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	18	acl	_	_
+16	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	18	case	_	_
+17	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
+18	intelectuais	intelectual	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	13	conj	_	_
+19	envolvidos	envolver	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	18	acl	_	_
 20-21	na	_	_	_	_	_	_	_	_
-20	em	em	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	rejeição	rejeição	NOUN	n|F|S	Gender=Fem|Number=Sing	19	dobj	_	_
+20	em	em	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
+21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	rejeição	rejeição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obj	_	_
 23-24	do	_	_	_	_	_	_	_	_
-23	de	de	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-24	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-25	«	«	PUNCT	punc	_	26	punct	_	_
-26	status	status	NOUN	n|M|S	_	22	nmod	_	MWE=status_quo|MWEPOS=NOUN
-27	quo	quo	NOUN	NOUN	_	26	compound	_	_
-28	»	»	PUNCT	punc	_	26	punct	_	_
-29	.	.	PUNCT	punc	_	1	punct	_	_
+23	de	de	ADP	<sam->|PRP|@N<ARG	_	26	case	_	_
+24	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+25	«	«	PUNCT	PU|@PU	_	26	punct	_	SpaceAfter=No
+26	status	status	NOUN	_	_	22	nmod	_	MWE=status_quo|MWEPOS=NOUN
+27	quo	quo	NOUN	_	_	26	compound	_	SpaceAfter=No
+28	»	»	PUNCT	PU|@PU	_	26	punct	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

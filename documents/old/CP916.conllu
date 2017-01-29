@@ -1,85 +1,89 @@
-# distance_from_new = 0
-# new_sent_id = CP916-1
-# sent_id = pt-ud-train.conllu#s4714/pt
-# orig_file_sentence = 048#14
-1	Choque	choque	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	frontal	frontal	ADJ	adj|M|S	Gender=Masc|Number=Sing	1	amod	_	_
+# text = Choque frontal
+# forest 1
+# source CETEMPúblico n=916 sec=clt sem=93a
+# sent_id = CP916-1
+# id 4716
+1	Choque	choque	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	frontal	frontal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP916-2
-# sent_id = pt-ud-train.conllu#s4715/pt
-# orig_file_sentence = 048#15
-1	António	António	PROPN	prop|M|S	_	0	root	_	MWE=António_Granado|MWEPOS=PROPN
-2	Granado	Granado	PROPN	PROPN	_	1	name	_	_
-3	,	,	PUNCT	punc	_	1	punct	_	_
-4	em	em	ADP	prp	AdpType=Prep	5	case	_	_
-5	Boston	Boston	PROPN	prop|M/F|S	Number=Sing	1	nmod	_	_
+# text = António Granado, em Boston
+# forest 1
+# source CETEMPúblico n=916 sec=clt sem=93a
+# sent_id = CP916-2
+# id 4717
+1	António	António	PROPN	_	_	0	root	_	MWE=António_Granado|MWEPOS=PROPN
+2	Granado	Granado	PROPN	_	_	1	flat	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+4	em	em	ADP	PRP|@N<PRED	_	5	case	_	_
+5	Boston	Boston	PROPN	PROP|M|S|@P<	Number=Sing	1	nmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP916-3
-# sent_id = pt-ud-train.conllu#s4716/pt
-# orig_file_sentence = 048#16
-1	Foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	auxpass	_	_
-2	descoberto	descobrir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-3	em	em	ADP	prp	AdpType=Prep	4	case	_	_
-4	22	22	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	2	advmod	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	Março	março	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
+# text = Foi descoberto em 22 de Março deste ano por astrónomos americanos, quando um rasto da sua cauda foi avistado na atmosfera de Júpiter.
+# forest 1
+# source CETEMPúblico n=916 sec=clt sem=93a
+# sent_id = CP916-3
+# id 4718
+1	Foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	descoberto	descobrir	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	1	ccomp	_	_
+3	em	em	ADP	PRP|@<ADVL	_	4	case	_	_
+4	22	22	NUM	<card>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	2	advmod	_	_
+5	de	de	ADP	PRP|@A<	_	6	case	_	_
+6	Março	março	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
 7-8	deste	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	este	este	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
-9	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-10	por	por	ADP	prp	AdpType=Prep	11	case	_	_
-11	astrónomos	astrónomo	NOUN	n|M|P	Gender=Masc|Number=Plur	2	dobj	_	_
-12	americanos	americano	ADJ	adj|M|P	Gender=Masc|Number=Plur	11	amod	_	_
-13	,	,	PUNCT	punc	_	2	punct	_	_
-14	quando	quando	ADV	adv|<rel>|<ks>	PronType=Rel	22	advmod	_	_
-15	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	rasto	rasto	NOUN	n|M|S	Gender=Masc|Number=Sing	22	nsubjpass	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
+9	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
+10	por	por	ADP	PRP|@PASS	_	11	case	_	_
+11	astrónomos	astrónomo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	obj	_	_
+12	americanos	americano	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	11	amod	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+14	quando	quando	ADV	<rel>|ADV|@ADVL>	PronType=Rel	22	advmod	_	_
+15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	rasto	rasto	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	21	nsubj	_	_
 17-18	da	_	_	_	_	_	_	_	_
-17	de	de	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-18	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-19	sua	seu	DET	pron-det|<poss|3S>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	_	_
-20	cauda	cauda	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-21	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	auxpass	_	_
-22	avistado	avistar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	2	advcl	_	_
+17	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
+18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+19	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	20	det	_	_
+20	cauda	cauda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
+21	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
+22	avistado	avistar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	21	ccomp	_	_
 23-24	na	_	_	_	_	_	_	_	_
-23	em	em	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	atmosfera	atmosfera	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-26	de	de	ADP	prp	AdpType=Prep	27	case	_	_
-27	Júpiter	Júpiter	PROPN	prop|M|S	Gender=Masc|Number=Sing	25	nmod	_	_
-28	.	.	PUNCT	punc	_	2	punct	_	_
+23	em	em	ADP	<sam->|PRP|@<ADVL	_	25	case	_	_
+24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	atmosfera	atmosfera	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	_
+26	de	de	ADP	PRP|@N<	_	27	case	_	_
+27	Júpiter	Júpiter	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP916-4
-# sent_id = pt-ud-train.conllu#s4717/pt
-# orig_file_sentence = 048#17
-1	Em	em	ADP	prp	AdpType=Prep	2	case	_	_
-2	Julho	julho	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
+# text = Em Julho do próximo ano, muitos dos telescópios do mundo inteiro vão querer assistir ao seu fim.
+# forest 1
+# source CETEMPúblico n=916 sec=clt sem=93a
+# sent_id = CP916-4
+# id 4719
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
+2	Julho	julho	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-5	próximo	próximo	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
-6	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-7	,	,	PUNCT	punc	_	16	punct	_	_
-8	muitos	muito	PRON	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	16	nsubj	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+5	próximo	próximo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	6	amod	_	_
+6	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+8	muitos	muito	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	16	nsubj	_	_
 9-10	dos	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
-11	telescópios	telescópio	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	telescópios	telescópio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
 12-13	do	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	mundo	mundo	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-15	inteiro	inteiro	ADJ	adj|M|S	Gender=Masc|Number=Sing	14	amod	_	_
-16	vão	ir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-17	querer	querer	VERB	v-inf	VerbForm=Inf	16	xcomp	_	_
-18	assistir	assistir	VERB	v-inf	VerbForm=Inf	17	xcomp	_	_
+12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
+15	inteiro	inteiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	_
+16	vão	ir	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+17	querer	querer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
+18	assistir	assistir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	17	xcomp	_	_
 19-20	ao	_	_	_	_	_	_	_	_
-19	a	a	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-20	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-21	seu	seu	DET	pron-det|<poss|3S>|<si>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	22	det	_	_
-22	fim	fim	NOUN	n|M|S	Gender=Masc|Number=Sing	18	dobj	_	_
-23	.	.	PUNCT	punc	_	16	punct	_	_
+19	a	a	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
+20	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+21	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	22	det	_	_
+22	fim	fim	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obj	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 

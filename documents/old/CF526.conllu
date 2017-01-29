@@ -1,79 +1,83 @@
-# distance_from_new = 0
-# new_sent_id = CF526-1
-# sent_id = pt-ud-train.conllu#s7249/pt
-# orig_file_sentence = 073#49
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	governo	governo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
+# text = O governo do Estado diz que a greve é ilegal.
+# forest 1
+# source CETENFolha n=526 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF526-1
+# id 2207
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Estado	estado	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	diz	dizer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	que	que	SCONJ	conj-s	_	11	mark	_	_
-8	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	greve	greve	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nsubj	_	_
-10	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
-11	ilegal	ilegal	ADJ	adj|F|S	Gender=Fem|Number=Sing	6	ccomp	_	_
-12	.	.	PUNCT	punc	_	6	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
+8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	greve	greve	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
+10	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+11	ilegal	ilegal	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	6	ccomp	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF526-2
-# sent_id = pt-ud-train.conllu#s7250/pt
-# orig_file_sentence = 073#50
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	professores	professor	NOUN	n|M|P	Gender=Masc|Number=Plur	14	nsubj	_	_
+# text = Os professores da UFPB (Universidade Federal da Paraíba) também entraram em greve geral ontem.
+# forest 1
+# source CETENFolha n=526 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF526-2
+# id 2208
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	professores	professor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	14	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	UFPB	UFPB	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	(	(	PUNCT	punc	_	5	punct	_	_
-7	Universidade	Universidade	PROPN	prop|F|S	_	5	name	_	MWE=Universidade_Federal_da_Paraíba|MWEPOS=PROPN
-8	Federal	Federal	PROPN	PROPN	_	7	name	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	UFPB	UFPB	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+6	(	(	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+7	Universidade	Universidade	PROPN	_	_	5	flat	_	MWE=Universidade_Federal_da_Paraíba|MWEPOS=PROPN
+8	Federal	Federal	PROPN	_	_	7	flat	_	_
 9-10	da	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	Paraíba	Paraíba	PROPN	PROPN	_	7	name	_	_
-12	)	)	PUNCT	punc	_	5	punct	_	_
-13	também	também	ADV	adv	_	14	advmod	_	_
-14	entraram	entrar	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
-15	em	em	ADP	prp	AdpType=Prep	16	case	_	_
-16	greve	greve	NOUN	n|F|S	_	14	nmod	_	MWE=greve_geral|MWEPOS=NOUN
-17	geral	geral	NOUN	NOUN	_	16	compound	_	_
-18	ontem	ontem	ADV	adv	_	14	advmod	_	_
-19	.	.	PUNCT	punc	_	14	punct	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Paraíba	Paraíba	PROPN	PROP|@P<	_	7	flat	_	SpaceAfter=No
+12	)	)	PUNCT	PU|@PU	_	5	punct	_	_
+13	também	também	ADV	ADV|@ADVL>	_	14	advmod	_	_
+14	entraram	entrar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+15	em	em	ADP	PRP|@<SA	_	16	case	_	_
+16	greve	greve	NOUN	_	_	14	obl	_	MWE=greve_geral|MWEPOS=NOUN
+17	geral	geral	NOUN	_	_	16	compound	_	_
+18	ontem	ontem	ADV	ADV|@<ADVL	_	14	advmod	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF526-3
-# sent_id = pt-ud-train.conllu#s7251/pt
-# orig_file_sentence = 073#51
-1	Eles	eles	PRON	pron-pers|M|3P|NOM	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
-2	reivindicam	reivindicar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	105	105	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	4	nummod	_	_
-4	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	2	dobj	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	reposição	reposição	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	perdas	perda	NOUN	n|F|P	Gender=Fem|Number=Plur	6	nmod	_	_
-9	salariais	salarial	ADJ	adj|F|P	Gender=Fem|Number=Plur	8	amod	_	_
-10	.	.	PUNCT	punc	_	2	punct	_	_
+# text = Eles reivindicam 105 % de reposição de perdas salariais.
+# forest 1
+# source CETENFolha n=526 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF526-3
+# id 2209
+1	Eles	eles	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	reivindicam	reivindicar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	105	105	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	4	nummod	_	_
+4	%	%	SYM	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	reposição	reposição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+7	de	de	ADP	PRP|@N<ARG	_	8	case	_	_
+8	perdas	perda	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	6	nmod	_	_
+9	salariais	salarial	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	8	amod	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF526-4
-# sent_id = pt-ud-train.conllu#s7252/pt
-# orig_file_sentence = 073#52
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	funcionários	funcionário	NOUN	n|M|P	Gender=Masc|Number=Plur	6	nsubj	_	_
+# text = Os funcionários da universidade estão em greve desde o último dia 19.
+# forest 1
+# source CETENFolha n=526 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF526-4
+# id 2210
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	funcionários	funcionário	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	universidade	universidade	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	em	em	ADP	prp	AdpType=Prep	8	case	_	_
-8	greve	greve	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-9	desde	desde	ADP	prp	AdpType=Prep	12	case	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-11	último	último	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	12	amod	_	_
-12	dia	dia	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-13	19	19	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-14	.	.	PUNCT	punc	_	6	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	universidade	universidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+6	estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	em	em	ADP	PRP|@<SA	_	8	case	_	_
+8	greve	greve	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+9	desde	desde	ADP	PRP|@<ADVL	_	12	case	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+11	último	último	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	12	amod	_	_
+12	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
+13	19	19	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

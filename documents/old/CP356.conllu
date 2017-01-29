@@ -1,329 +1,338 @@
-# distance_from_new = 0
-# new_sent_id = CP356-1
-# sent_id = pt-ud-train.conllu#s1867/pt
-# orig_file_sentence = 019#67
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Parlamento	Parlamento	PROPN	prop|M|S	_	4	nsubj	_	MWE=Parlamento_Europeu|MWEPOS=PROPN
-3	Europeu	Europeu	PROPN	PROPN	_	2	name	_	_
-4	condenou	condenar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-5	ontem	ontem	ADV	adv	_	4	advmod	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	decisão	decisão	NOUN	n|F|S	Gender=Fem|Number=Sing	4	dobj	_	_
-8	anunciada	anunciar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	7	acl	_	_
+# text = O Parlamento Europeu condenou ontem a decisão anunciada pela multinacional Seagate de encerrar a fábrica de Palmela, que irá provocar o despedimento de 850 trabalhadores.
+# forest 1
+# source CETEMPúblico n=356 sec=eco sem=91b
+# sent_id = CP356-1
+# id 1868
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Parlamento	Parlamento	PROPN	_	_	4	nsubj	_	MWE=Parlamento_Europeu|MWEPOS=PROPN
+3	Europeu	Europeu	PROPN	_	_	2	flat	_	_
+4	condenou	condenar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	ontem	ontem	ADV	ADV|@<ADVL	_	4	advmod	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	decisão	decisão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
+8	anunciada	anunciar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	7	acl	_	_
 9-10	pela	_	_	_	_	_	_	_	_
-9	por	por	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	multinacional	multinacional	ADJ	adj|<n>|F|S	Gender=Fem|Number=Sing	8	dobj	_	_
-12	Seagate	Seagate	PROPN	prop|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	mark	_	_
-14	encerrar	encerrar	VERB	v-inf	VerbForm=Inf	7	acl	_	_
-15	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	fábrica	fábrica	NOUN	n|F|S	Gender=Fem|Number=Sing	14	dobj	_	_
-17	de	de	ADP	prp	AdpType=Prep	18	case	_	_
-18	Palmela	Palmela	PROPN	prop|M/F|S	Number=Sing	16	nmod	_	_
-19	,	,	PUNCT	punc	_	7	punct	_	_
-20	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	21	nsubj	_	_
-21	irá	ir	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	acl	_	_
-22	provocar	provocar	VERB	v-inf	VerbForm=Inf	21	xcomp	_	_
-23	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	despedimento	despedimento	NOUN	n|M|S	Gender=Masc|Number=Sing	22	dobj	_	_
-25	de	de	ADP	prp	AdpType=Prep	27	case	_	_
-26	850	850	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	27	nummod	_	_
-27	trabalhadores	trabalhador	NOUN	n|M|P	Gender=Masc|Number=Plur	24	nmod	_	_
-28	.	.	PUNCT	punc	_	4	punct	_	_
+9	por	por	ADP	PRP|@PASS	_	11	case	_	_
+10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	multinacional	multinacional	ADJ	<n>|<np-def>|ADJ|F|S|@P<	Gender=Fem|Number=Sing	8	obj	_	_
+12	Seagate	Seagate	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	11	nmod	_	_
+13	de	de	ADP	PRP|@N<ARG	_	14	mark	_	_
+14	encerrar	encerrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
+15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	fábrica	fábrica	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
+17	de	de	ADP	PRP|@N<	_	18	case	_	_
+18	Palmela	Palmela	PROPN	PROP|M/F|S|@P<	Number=Sing	16	nmod	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+20	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	21	nsubj	_	_
+21	irá	ir	VERB	<aux>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	acl	_	_
+22	provocar	provocar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	xcomp	_	_
+23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	despedimento	despedimento	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	obj	_	_
+25	de	de	ADP	PRP|@N<	_	27	case	_	_
+26	850	850	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	27	nummod	_	_
+27	trabalhadores	trabalhador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP356-2
-# sent_id = pt-ud-train.conllu#s1868/pt
-# orig_file_sentence = 019#68
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	resolução	resolução	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nsubj	_	_
-3	aprovada	aprovar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
+# text = A resolução aprovada pelos deputados europeus foi apresentada pelo grupo da coligação de esquerda e subscrita pelos três deputados comunistas, Barros Moura, Miranda da Silva e Sérgio Ribeiro.
+# forest 1
+# source CETEMPúblico n=356 sec=eco sem=91b
+# sent_id = CP356-2
+# id 1869
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	resolução	resolução	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
+3	aprovada	aprovar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
 4-5	pelos	_	_	_	_	_	_	_	_
-4	por	por	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-6	deputados	deputado	NOUN	n|M|P	Gender=Masc|Number=Plur	3	dobj	_	_
-7	europeus	europeu	ADJ	adj|M|P	Gender=Masc|Number=Plur	6	amod	_	_
-8	foi	ser	AUX	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux	_	_
-9	apresentada	apresentar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+4	por	por	ADP	PRP|@PASS	_	6	case	_	_
+5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	deputados	deputado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obj	_	_
+7	europeus	europeu	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	6	amod	_	_
+8	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	apresentada	apresentar	AUX	<mv>|<first-cjt>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	8	aux	_	_
 10-11	pelo	_	_	_	_	_	_	_	_
-10	por	por	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	grupo	grupo	NOUN	n|M|S	Gender=Masc|Number=Sing	9	dobj	_	_
+10	por	por	ADP	PRP|@PASS	_	12	case	_	_
+11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	grupo	grupo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obj	_	_
 13-14	da	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	coligação	coligação	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-17	esquerda	esquerda	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-18	e	e	CONJ	conj-c|<co-pcv>	_	9	cc	_	_
-19	subscrita	subscrever	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	9	conj	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	coligação	coligação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	esquerda	esquerda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+18	e	e	CCONJ	<co-pcv>|<co-icl>|KC|@CO	_	19	cc	_	_
+19	subscrita	subscrever	AUX	<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	9	conj	_	_
 20-21	pelos	_	_	_	_	_	_	_	_
-20	por	por	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-21	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
-22	três	três	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	23	nummod	_	_
-23	deputados	deputado	NOUN	n|M|P	Gender=Masc|Number=Plur	19	dobj	_	_
-24	comunistas	comunista	ADJ	adj|M|P	Gender=Masc|Number=Plur	23	amod	_	_
-25	,	,	PUNCT	punc	_	23	punct	_	_
-26	Barros	Barros	PROPN	prop|F|S	_	23	appos	_	MWE=Barros_Moura|MWEPOS=PROPN
-27	Moura	Moura	PROPN	PROPN	_	26	name	_	_
-28	,	,	PUNCT	punc	_	26	punct	_	_
-29	Miranda	Miranda	PROPN	prop|F|S	_	26	conj	_	MWE=Miranda_da_Silva|MWEPOS=PROPN
+20	por	por	ADP	PRP|@PASS	_	23	case	_	_
+21	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
+22	três	três	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	23	nummod	_	_
+23	deputados	deputado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	19	obj	_	_
+24	comunistas	comunista	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	23	amod	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+26	Barros	Barros	PROPN	_	_	23	appos	_	MWE=Barros_Moura|MWEPOS=PROPN
+27	Moura	Moura	PROPN	_	_	26	flat	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+29	Miranda	Miranda	PROPN	PROP|F|S|@APP	_	26	conj	_	MWE=Miranda_da_Silva|MWEPOS=PROPN
 30-31	da	_	_	_	_	_	_	_	_
-30	de	de	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-31	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
-32	Silva	Silva	PROPN	PROPN	_	29	name	_	_
-33	e	e	CONJ	conj-c|<co-app>	_	26	cc	_	_
-34	Sérgio	Sérgio	PROPN	prop|M|S	_	26	conj	_	MWE=Sérgio_Ribeiro|MWEPOS=PROPN
-35	Ribeiro	Ribeiro	PROPN	PROPN	_	34	name	_	_
-36	.	.	PUNCT	punc	_	9	punct	_	_
+30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
+31	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
+32	Silva	Silva	PROPN	PROP|@P<	_	29	flat	_	_
+33	e	e	CCONJ	<co-app>|KC|@CO	_	34	cc	_	_
+34	Sérgio	Sérgio	PROPN	_	_	26	conj	_	MWE=Sérgio_Ribeiro|MWEPOS=PROPN
+35	Ribeiro	Ribeiro	PROPN	_	_	34	flat	_	SpaceAfter=No
+36	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP356-3
-# sent_id = pt-ud-train.conllu#s1869/pt
-# orig_file_sentence = 019#69
-1	Considerando	considerar	VERB	v-ger	VerbForm=Ger	24	advcl	_	_
-2	que	que	SCONJ	conj-s	_	8	mark	_	_
-3	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	fábrica	fábrica	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nsubj	_	_
-5	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-6	tecnologicamente	tecnologicamente	ADV	adv	_	8	advmod	_	_
-7	bem	bem	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	8	advmod	_	_
-8	apretechada	apretechar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	1	ccomp	_	_
-9	,	,	PUNCT	punc	_	8	punct	_	_
-10	com	com	ADP	prp	AdpType=Prep	12	case	_	_
-11	elevados	elevar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
-12	níveis	nível	NOUN	n|M|P	Gender=Masc|Number=Plur	8	conj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	produtividade	produtividade	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-15	e	e	CONJ	conj-c|<co-sc>	_	8	cc	_	_
-16	com	com	ADP	prp	AdpType=Prep	19	case	_	_
-17	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-18	excelente	excelente	ADJ	adj|F|S	Gender=Fem|Number=Sing	19	amod	_	_
-19	situação	situação	NOUN	n|F|S	Gender=Fem|Number=Sing	8	conj	_	_
-20	financeira	financeiro	ADJ	adj|F|S	Gender=Fem|Number=Sing	19	amod	_	_
-21	,	,	PUNCT	punc	_	24	punct	_	_
-22	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
-23	parlamentares	parlamentar	NOUN	n|M|P	Gender=Masc|Number=Plur	24	nsubj	_	_
-24	insistiram	insistir	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+# text = Considerando que a fábrica está tecnologicamente bem apretechada, com elevados níveis de produtividade e com uma excelente situação financeira, os parlamentares insistiram na necessidade da Comunidade e dos estados-membros exigirem aos parceiros comerciais, respeito das condições sociais mínimas, tendo por base as convenções e recomendações da Organização Internacional do Trabalho (OIT).
+# forest 1
+# source CETEMPúblico n=356 sec=eco sem=91b
+# sent_id = CP356-3
+# id 1870
+1	Considerando	considerar	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	24	advcl	_	_
+2	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
+3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	fábrica	fábrica	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
+5	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+6	tecnologicamente	tecnologicamente	ADV	ADV|@ADVL>	_	8	advmod	_	_
+7	bem	bem	ADV	<quant>|ADV|@ADVL>	NumType=Card|PronType=Ind,Neg,Tot	8	advmod	_	_
+8	apretechada	apretechar	VERB	<first-cjt>|<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	1	ccomp	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+10	com	com	ADP	<cjt>|PRP|@ICL-<SC	_	12	case	_	_
+11	elevados	elevar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
+12	níveis	nível	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	conj	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	produtividade	produtividade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+15	e	e	CCONJ	<co-icl>|<co-sc>|KC|@CO	_	19	cc	_	_
+16	com	com	ADP	<cjt>|PRP|@ICL-<SC	_	19	case	_	_
+17	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+18	excelente	excelente	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	19	amod	_	_
+19	situação	situação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	conj	_	_
+20	financeira	financeiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+22	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
+23	parlamentares	parlamentar	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	24	nsubj	_	_
+24	insistiram	insistir	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 25-26	na	_	_	_	_	_	_	_	_
-25	em	em	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	necessidade	necessidade	NOUN	n|F|S	Gender=Fem|Number=Sing	24	dobj	_	_
+25	em	em	ADP	<sam->|PRP|@<PIV	_	27	case	_	_
+26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	necessidade	necessidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	obj	_	_
 28-29	da	_	_	_	_	_	_	_	_
-28	de	de	ADP	prp|<sam->	AdpType=Prep	35	mark	_	_
-29	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
-30	Comunidade	Comunidade	PROPN	prop|F|S	Gender=Fem|Number=Sing	35	nsubj	_	_
-31	e	e	CONJ	conj-c|<co-postnom>	_	30	cc	_	_
+28	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	35	mark	_	_
+29	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
+30	Comunidade	Comunidade	PROPN	<first-cjt>|PROP|F|S|@<SUBJ	Gender=Fem|Number=Sing	35	nsubj	_	_
+31	e	e	CCONJ	<co-subj>|<co-postnom>|KC|@CO	_	34	cc	_	_
 32-33	dos	_	_	_	_	_	_	_	_
-32	de	de	ADP	prp|<sam->	AdpType=Prep	34	case	_	_
-33	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
-34	estados-membros	estados-membro	NOUN	n|M|P	Gender=Masc|Number=Plur	30	conj	_	_
-35	exigirem	exigir	VERB	v-inf|3P	Number=Plur|Person=3|VerbForm=Inf	27	acl	_	_
+32	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	34	case	_	_
+33	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
+34	estados-membros	estados-membro	NOUN	<first-cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	30	conj	_	_
+35	exigirem	exigir	VERB	<cjt>|<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	27	acl	_	_
 36-37	aos	_	_	_	_	_	_	_	_
-36	a	a	ADP	prp|<sam->	AdpType=Prep	38	case	_	_
-37	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_
-38	parceiros	parceiro	NOUN	n|M|P	Gender=Masc|Number=Plur	35	dobj	_	_
-39	comerciais	comercial	ADJ	adj|M|P	Gender=Masc|Number=Plur	38	amod	_	_
-40	,	,	PUNCT	punc	_	35	punct	_	_
-41	respeito	respeito	NOUN	n|M|S	Gender=Masc|Number=Sing	35	dobj	_	_
+36	a	a	ADP	<sam->|PRP|@<PIV	_	38	case	_	_
+37	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_
+38	parceiros	parceiro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	35	obj	_	_
+39	comerciais	comercial	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	38	amod	_	SpaceAfter=No
+40	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+41	respeito	respeito	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	35	obj	_	_
 42-43	das	_	_	_	_	_	_	_	_
-42	de	de	ADP	prp|<sam->	AdpType=Prep	44	case	_	_
-43	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	_	_
-44	condições	condição	NOUN	n|F|P	Gender=Fem|Number=Plur	41	nmod	_	_
-45	sociais	social	ADJ	adj|F|P	Gender=Fem|Number=Plur	44	amod	_	_
-46	mínimas	pequeno	ADJ	adj|F|P	Gender=Fem|Number=Plur	44	amod	_	_
-47	,	,	PUNCT	punc	_	35	punct	_	_
-48	tendo	ter	VERB	v-ger	VerbForm=Ger	35	advcl	_	_
-49	por	por	ADP	prp	AdpType=Prep	50	case	_	_
-50	base	base	NOUN	n|F|S	Gender=Fem|Number=Sing	48	nmod	_	_
-51	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	52	det	_	_
-52	convenções	convenção	NOUN	n|F|P	Gender=Fem|Number=Plur	48	dobj	_	_
-53	e	e	CONJ	conj-c|<co-acc>	_	52	cc	_	_
-54	recomendações	recomendação	NOUN	n|F|P	Gender=Fem|Number=Plur	52	conj	_	_
+42	de	de	ADP	<sam->|PRP|@N<ARG	_	44	case	_	_
+43	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	_	_
+44	condições	condição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	41	nmod	_	_
+45	sociais	social	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	44	amod	_	_
+46	mínimas	pequeno	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	44	amod	_	SpaceAfter=No
+47	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+48	tendo	ter	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	35	advcl	_	_
+49	por	por	ADP	PRP|@<ADVL	_	50	case	_	_
+50	base	base	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	48	obl	_	_
+51	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	52	det	_	_
+52	convenções	convenção	NOUN	<first-cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	48	obj	_	_
+53	e	e	CCONJ	<co-acc>|KC|@CO	_	54	cc	_	_
+54	recomendações	recomendação	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	52	conj	_	_
 55-56	da	_	_	_	_	_	_	_	_
-55	de	de	ADP	prp|<sam->	AdpType=Prep	57	case	_	_
-56	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
-57	Organização	Organização	PROPN	prop|F|S	_	52	nmod	_	MWE=Organização_Internacional_do_Trabalho|MWEPOS=PROPN
-58	Internacional	Internacional	PROPN	PROPN	_	57	name	_	_
+55	de	de	ADP	<sam->|PRP|@N<	_	57	case	_	_
+56	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
+57	Organização	Organização	PROPN	_	_	52	nmod	_	MWE=Organização_Internacional_do_Trabalho|MWEPOS=PROPN
+58	Internacional	Internacional	PROPN	_	_	57	flat	_	_
 59-60	do	_	_	_	_	_	_	_	_
-59	de	de	ADP	prp|<sam->	AdpType=Prep	61	case	_	_
-60	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	61	det	_	_
-61	Trabalho	Trabalho	PROPN	PROPN	_	57	name	_	_
-62	(	(	PUNCT	punc	_	57	punct	_	_
-63	OIT	OIT	PROPN	prop|F|S	Gender=Fem|Number=Sing	57	name	_	_
-64	)	)	PUNCT	punc	_	57	punct	_	_
-65	.	.	PUNCT	punc	_	24	punct	_	_
+59	de	de	ADP	<sam->|PRP|@N<	_	61	case	_	_
+60	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	61	det	_	_
+61	Trabalho	Trabalho	PROPN	PROP|@P<	_	57	flat	_	_
+62	(	(	PUNCT	PU|@PU	_	57	punct	_	SpaceAfter=No
+63	OIT	OIT	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	57	flat	_	SpaceAfter=No
+64	)	)	PUNCT	PU|@PU	_	57	punct	_	SpaceAfter=No
+65	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP356-4
-# sent_id = pt-ud-train.conllu#s1870/pt
-# orig_file_sentence = 019#70
-1	França	França	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nsubj	_	_
-2	decreta	decretar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	embargo	embargo	NOUN	n|M|S	Gender=Masc|Number=Sing	2	dobj	_	_
+# text = França decreta embargo ao Haiti
+# forest 1
+# source CETEMPúblico n=356 sec=eco sem=91b
+# sent_id = CP356-4
+# id 1871
+1	França	França	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
+2	decreta	decretar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	embargo	embargo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
 4-5	ao	_	_	_	_	_	_	_	_
-4	a	a	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Haiti	Haiti	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	dobj	_	_
+4	a	a	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Haiti	Haiti	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obj	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP356-5
-# sent_id = pt-ud-train.conllu#s1871/pt
-# orig_file_sentence = 019#71
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	França	França	PROPN	prop|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	em	em	ADP	prp	AdpType=Prep	7	mark	_	MWE=em_vias_de|MWEPOS=ADP
-5	vias	vias	NOUN	NOUN	_	4	mwe	_	_
-6	de	de	ADP	ADP	AdpType=Prep	4	mwe	_	_
-7	tomar	tomar	VERB	v-inf	VerbForm=Inf	3	ccomp	_	_
-8	medidas	medida	NOUN	n|F|P	Gender=Fem|Number=Plur	7	dobj	_	_
-9	para	para	ADP	prp	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	concretização	concretização	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
+# text = A França está em vias de tomar medidas para a concretização dum embargo comercial ao Haiti, tendo já pedido aos seus parceiros comunitários que acompanhem Paris na tomada destas medidas.
+# forest 1
+# source CETEMPúblico n=356 sec=eco sem=91b
+# sent_id = CP356-5
+# id 1872
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	França	França	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	em	em	ADP	PRP|@<SC	_	7	mark	_	MWE=em_vias_de|MWEPOS=ADP
+5	vias	vias	NOUN	N|@P<	_	4	fixed	_	_
+6	de	de	ADP	PRP|@N<	_	4	fixed	_	_
+7	tomar	tomar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	ccomp	_	_
+8	medidas	medida	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	7	obj	_	_
+9	para	para	ADP	PRP|@N<	_	11	case	_	_
+10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	concretização	concretização	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 12-13	dum	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-13	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	embargo	embargo	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-15	comercial	comercial	ADJ	adj|M|S	Gender=Masc|Number=Sing	14	amod	_	_
+12	de	de	ADP	PRP|@N<ARG	_	14	case	_	_
+13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	embargo	embargo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
+15	comercial	comercial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	_
 16-17	ao	_	_	_	_	_	_	_	_
-16	a	a	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	Haiti	Haiti	PROPN	prop|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-19	,	,	PUNCT	punc	_	3	punct	_	_
-20	tendo	ter	VERB	v-ger	VerbForm=Ger	22	aux	_	_
-21	já	já	ADV	adv	_	22	advmod	_	_
-22	pedido	pedir	VERB	v-pcp	VerbForm=Part	3	advcl	_	_
+16	a	a	ADP	<sam->|PRP|@N<	_	18	case	_	_
+17	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	Haiti	Haiti	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+20	tendo	ter	VERB	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	3	advcl	_	_
+21	já	já	ADV	ADV|@ADVL>	_	22	advmod	_	_
+22	pedido	pedir	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	20	ccomp	_	_
 23-24	aos	_	_	_	_	_	_	_	_
-23	a	a	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-24	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
-25	seus	seu	DET	pron-det|<poss|3S>|M|P	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	_	_
-26	parceiros	parceiro	NOUN	n|M|P	Gender=Masc|Number=Plur	22	iobj	_	_
-27	comunitários	comunitário	ADJ	adj|M|P	Gender=Masc|Number=Plur	26	amod	_	_
-28	que	que	SCONJ	conj-s	_	29	mark	_	_
-29	acompanhem	acompanhar	VERB	v-fin|PR|3P|SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	ccomp	_	_
-30	Paris	Paris	PROPN	prop|M/F|S	Number=Sing	29	dobj	_	_
+23	a	a	ADP	<sam->|PRP|@<PIV	_	26	case	_	_
+24	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
+25	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	_	_
+26	parceiros	parceiro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	iobj	_	_
+27	comunitários	comunitário	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	26	amod	_	_
+28	que	que	SCONJ	KS|@SUB	_	29	mark	_	_
+29	acompanhem	acompanhar	VERB	<mv>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	ccomp	_	_
+30	Paris	Paris	PROPN	PROP|M/F|S|@<ACC	Number=Sing	29	obj	_	_
 31-32	na	_	_	_	_	_	_	_	_
-31	em	em	ADP	prp|<sam->	AdpType=Prep	33	case	_	_
-32	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	tomada	tomada	NOUN	n|F|S	Gender=Fem|Number=Sing	29	nmod	_	_
+31	em	em	ADP	<sam->|PRP|@<ADVL	_	33	case	_	_
+32	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+33	tomada	tomada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	obl	_	_
 34-35	destas	_	_	_	_	_	_	_	_
-34	de	de	ADP	prp|<sam->	AdpType=Prep	36	case	_	_
-35	estas	este	DET	pron-det|<-sam>|<dem>|F|P	Gender=Fem|Number=Plur|PronType=Dem	36	det	_	_
-36	medidas	medida	NOUN	n|F|P	Gender=Fem|Number=Plur	33	nmod	_	_
-37	.	.	PUNCT	punc	_	3	punct	_	_
+34	de	de	ADP	<sam->|PRP|@N<ARG	_	36	case	_	_
+35	estas	este	DET	<-sam>|<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	36	det	_	_
+36	medidas	medida	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	33	nmod	_	SpaceAfter=No
+37	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP356-6
-# sent_id = pt-ud-train.conllu#s1872/pt
-# orig_file_sentence = 019#72
-1	Um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	porta-voz	porta-voz	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nsubj	_	_
+# text = Um porta-voz do ministério francês precisou ainda que o Governo está em vias de congelar todos os bens públicos haitianos.
+# forest 1
+# source CETEMPúblico n=356 sec=eco sem=91b
+# sent_id = CP356-6
+# id 1873
+1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	porta-voz	porta-voz	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	ministério	ministério	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	francês	francês	ADJ	adj|M|S	Gender=Masc|Number=Sing	5	amod	_	_
-7	precisou	precisar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-8	ainda	ainda	ADV	adv	_	7	advmod	_	_
-9	que	que	SCONJ	conj-s	_	12	mark	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Governo	Governo	PROPN	prop|M|S	Gender=Masc|Number=Sing	12	nsubj	_	_
-12	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
-13	em	em	ADP	prp	AdpType=Prep	16	mark	_	MWE=em_vias_de|MWEPOS=ADP
-14	vias	vias	NOUN	NOUN	_	13	mwe	_	_
-15	de	de	ADP	ADP	AdpType=Prep	13	mwe	_	_
-16	congelar	congelar	VERB	v-inf	VerbForm=Inf	12	ccomp	_	_
-17	todos	todo	DET	pron-det|<quant>|M|P	PronType=Art	19	det	_	MWE=todos_os|MWEPOS=DET
-18	os	o	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-19	bens	bem	NOUN	n|M|P	Gender=Masc|Number=Plur	16	dobj	_	_
-20	públicos	público	ADJ	adj|M|P	Gender=Masc|Number=Plur	19	amod	_	_
-21	haitianos	haitiano	NOUN	n|M|P	Gender=Masc|Number=Plur	19	nmod	_	_
-22	.	.	PUNCT	punc	_	7	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	ministério	ministério	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	francês	francês	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	_
+7	precisou	precisar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	ainda	ainda	ADV	ADV|@<ADVL	_	7	advmod	_	_
+9	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Governo	Governo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
+12	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
+13	em	em	ADP	PRP|@<SC	_	16	mark	_	MWE=em_vias_de|MWEPOS=ADP
+14	vias	vias	NOUN	N|@P<	_	13	fixed	_	_
+15	de	de	ADP	PRP|@N<	_	13	fixed	_	_
+16	congelar	congelar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	ccomp	_	_
+17	todos	todo	DET	<quant>|DET|M|P|@>N	PronType=Art	19	det	_	MWE=todos_os|MWEPOS=DET
+18	os	o	DET	<artd>|DET|M|P|@A<	Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
+19	bens	bem	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	obj	_	_
+20	públicos	público	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	19	amod	_	_
+21	haitianos	haitiano	NOUN	<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	19	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP356-7
-# sent_id = pt-ud-train.conllu#s1873/pt
-# orig_file_sentence = 019#73
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	ministro	ministro	NOUN	n|M|S	_	10	nsubj	_	MWE=ministro_dos_Negócios_Estrangeiros|MWEPOS=NOUN
+# text = O ministro dos Negócios Estrangeiros, Roland Dumas anunciou ontem, que a França vai aplicar as decisões tomadas pela Organização dos Estados Americanos (OEA).
+# forest 1
+# source CETEMPúblico n=356 sec=eco sem=91b
+# sent_id = CP356-7
+# id 1874
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	ministro	ministro	NOUN	N|@SUBJ>	_	10	nsubj	_	MWE=ministro_dos_Negócios_Estrangeiros|MWEPOS=NOUN
 3-4	dos	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-5	Negócios	Negócios	NOUN	NOUN	_	2	compound	_	_
-6	Estrangeiros	Estrangeiros	NOUN	NOUN	_	2	compound	_	_
-7	,	,	PUNCT	punc	_	2	punct	_	_
-8	Roland	Roland	PROPN	prop|M|S	_	2	appos	_	MWE=Roland_Dumas|MWEPOS=PROPN
-9	Dumas	Dumas	PROPN	PROPN	_	8	name	_	_
-10	anunciou	anunciar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-11	ontem	ontem	ADV	adv	_	10	advmod	_	_
-12	,	,	PUNCT	punc	_	10	punct	_	_
-13	que	que	SCONJ	conj-s	_	16	mark	_	_
-14	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	França	França	PROPN	prop|F|S	Gender=Fem|Number=Sing	16	nsubj	_	_
-16	vai	ir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
-17	aplicar	aplicar	VERB	v-inf	VerbForm=Inf	16	xcomp	_	_
-18	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
-19	decisões	decisão	NOUN	n|F|P	Gender=Fem|Number=Plur	17	dobj	_	_
-20	tomadas	tomar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	19	acl	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	Negócios	Negócios	NOUN	N|@P<	_	2	compound	_	_
+6	Estrangeiros	Estrangeiros	NOUN	ADJ|@N<	_	2	compound	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+8	Roland	Roland	PROPN	_	_	2	appos	_	MWE=Roland_Dumas|MWEPOS=PROPN
+9	Dumas	Dumas	PROPN	_	_	8	flat	_	_
+10	anunciou	anunciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+11	ontem	ontem	ADV	ADV|@<ADVL	_	10	advmod	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+13	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
+14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	França	França	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
+16	vai	ir	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
+17	aplicar	aplicar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
+18	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
+19	decisões	decisão	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	17	obj	_	_
+20	tomadas	tomar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	19	acl	_	_
 21-22	pela	_	_	_	_	_	_	_	_
-21	por	por	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	Organização	Organização	PROPN	prop|F|S	_	20	dobj	_	MWE=Organização_dos_Estados_Americanos|MWEPOS=PROPN
+21	por	por	ADP	PRP|@PASS	_	23	case	_	_
+22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	Organização	Organização	PROPN	PROP|F|S|@P<	_	20	obj	_	MWE=Organização_dos_Estados_Americanos|MWEPOS=PROPN
 24-25	dos	_	_	_	_	_	_	_	_
-24	de	de	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
-26	Estados	Estados	PROPN	PROPN	_	23	name	_	_
-27	Americanos	Americanos	PROPN	PROPN	_	26	name	_	_
-28	(	(	PUNCT	punc	_	23	punct	_	_
-29	OEA	OEA	PROPN	prop|F|S	Gender=Fem|Number=Sing	23	name	_	_
-30	)	)	PUNCT	punc	_	23	punct	_	_
-31	.	.	PUNCT	punc	_	10	punct	_	_
+24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
+25	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
+26	Estados	Estados	PROPN	PROP|@P<	_	23	flat	_	_
+27	Americanos	Americanos	PROPN	PROP|@N<	_	26	flat	_	_
+28	(	(	PUNCT	PU|@PU	_	23	punct	_	SpaceAfter=No
+29	OEA	OEA	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	23	flat	_	SpaceAfter=No
+30	)	)	PUNCT	PU|@PU	_	23	punct	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP356-8
-# sent_id = pt-ud-train.conllu#s1874/pt
-# orig_file_sentence = 019#74
-1	Decisões	decisão	NOUN	n|F|P	Gender=Fem|Number=Plur	0	root	_	_
-2	estas	este	DET	pron-det|<dem>|F|P	Gender=Fem|Number=Plur|PronType=Dem	1	det	_	_
-3	referentes	referente	ADJ	adj|M|P	Gender=Masc|Number=Plur	1	amod	_	_
+# text = Decisões estas referentes à imposição dum embargo comercial, até que o presidente do Haiti, Jean-Bertand Aristide volte ao poder.
+# forest 1
+# source CETEMPúblico n=356 sec=eco sem=91b
+# sent_id = CP356-8
+# id 1875
+1	Decisões	decisão	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
+2	estas	este	DET	<dem>|DET|F|P|@N<	Gender=Fem|Number=Plur|PronType=Dem	1	det	_	_
+3	referentes	referente	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	1	amod	_	_
 4-5	à	_	_	_	_	_	_	_	_
-4	a	a	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	imposição	imposição	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
+4	a	a	ADP	<sam->|PRP|@A<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	imposição	imposição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
 7-8	dum	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-8	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	embargo	embargo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-10	comercial	comercial	ADJ	adj|M|S	Gender=Masc|Number=Sing	9	amod	_	_
-11	,	,	PUNCT	punc	_	6	punct	_	_
-12	até	até	ADP	prp	AdpType=Prep	22	mark	_	_
-13	que	que	SCONJ	conj-s	_	22	mark	_	_
-14	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	presidente	presidente	NOUN	n|M|S	Gender=Masc|Number=Sing	22	nsubj	_	_
+7	de	de	ADP	PRP|@N<ARG	_	9	case	_	_
+8	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	embargo	embargo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
+10	comercial	comercial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+12	até	até	ADP	PRP|@N<ARG	_	22	mark	_	_
+13	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
+14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj	_	_
 16-17	do	_	_	_	_	_	_	_	_
-16	de	de	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	Haiti	Haiti	PROPN	prop|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-19	,	,	PUNCT	punc	_	15	punct	_	_
-20	Jean-Bertand	Jean-Bertand	PROPN	prop|M|S	_	15	appos	_	MWE=Jean-Bertand_Aristide|MWEPOS=PROPN
-21	Aristide	Aristide	PROPN	PROPN	_	20	name	_	_
-22	volte	voltar	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
+16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
+17	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	Haiti	Haiti	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+20	Jean-Bertand	Jean-Bertand	PROPN	_	_	15	appos	_	MWE=Jean-Bertand_Aristide|MWEPOS=PROPN
+21	Aristide	Aristide	PROPN	_	_	20	flat	_	_
+22	volte	voltar	VERB	<mv>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
 23-24	ao	_	_	_	_	_	_	_	_
-23	a	a	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	poder	poder	NOUN	n|M|S	Gender=Masc|Number=Sing	22	nmod	_	_
-26	.	.	PUNCT	punc	_	1	punct	_	_
+23	a	a	ADP	<sam->|PRP|@<SA	_	25	case	_	_
+24	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+25	poder	poder	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	22	obl	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP356-9
-# sent_id = pt-ud-train.conllu#s1875/pt
-# orig_file_sentence = 019#75
-1	FMI	FMI	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	define	definir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	plano	plano	NOUN	n|M|S	Gender=Masc|Number=Sing	2	dobj	_	_
-4	para	para	ADP	prp	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
+# text = FMI define plano para o Brasil
+# forest 1
+# source CETEMPúblico n=356 sec=eco sem=91b
+# sent_id = CP356-9
+# id 1876
+1	FMI	FMI	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	define	definir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	plano	plano	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
+4	para	para	ADP	PRP|@N<	_	6	case	_	_
+5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 

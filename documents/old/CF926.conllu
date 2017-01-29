@@ -1,107 +1,112 @@
-# distance_from_new = 0
-# new_sent_id = CF926-1
-# sent_id = pt-ud-dev.conllu#s160/pt
-# orig_file_sentence = 002#60
-1	Segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	3	case	_	_
-2	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	cônsul	cônsul	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-4	,	,	PUNCT	punc	_	6	punct	_	_
-5	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	_	_
-6	crescente	crescente	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
-7	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	pressão	pressão	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
+# text = Segundo o cônsul, era crescente a pressão do Congresso norte-americano sobre o Departamento de Estado para que se adotasse uma política idêntica à do Brasil.
+# forest 1
+# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF926-1
+# id 3918
+1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	3	case	_	_
+2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	cônsul	cônsul	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+5	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	_	_
+6	crescente	crescente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	pressão	pressão	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	6	nsubj	_	_
 9-10	do	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Congresso	congresso	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-12	norte-americano	norte-americano	ADJ	adj|M|S	Gender=Masc|Number=Sing	11	amod	_	_
-13	sobre	sobre	ADP	prp	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	Departamento	Departamento	PROPN	prop|M|S	_	8	nmod	_	MWE=Departamento_de_Estado|MWEPOS=PROPN
-16	de	de	ADP	ADP	AdpType=Prep	17	case	_	_
-17	Estado	Estado	PROPN	PROPN	_	15	name	_	_
-18	para	para	ADP	prp	AdpType=Prep	21	mark	_	_
-19	que	que	SCONJ	conj-s	_	21	mark	_	_
-20	se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	21	nsubj	_	_
-21	adotasse	adotar	VERB	v-fin|IMPF|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	acl	_	_
-22	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	política	política	NOUN	n|F|S	Gender=Fem|Number=Sing	21	dobj	_	_
-24	idêntica	idêntico	ADJ	adj|F|S	Gender=Fem|Number=Sing	23	amod	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Congresso	congresso	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+12	norte-americano	norte-americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
+13	sobre	sobre	ADP	PRP|@N<	_	15	case	_	_
+14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	Departamento	Departamento	PROPN	PROP|M|S|@P<	_	8	nmod	_	MWE=Departamento_de_Estado|MWEPOS=PROPN
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	Estado	Estado	PROPN	PROP|@P<	_	15	flat	_	_
+18	para	para	ADP	PRP|@N<ARG	_	21	mark	_	_
+19	que	que	SCONJ	KS|@SUB	_	21	mark	_	_
+20	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs	21	nsubj	_	_
+21	adotasse	adotar	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	acl	_	_
+22	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	política	política	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	21	obj	_	_
+24	idêntica	idêntico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
 25-26	à	_	_	_	_	_	_	_	_
-25	a	a	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-26	a	o	PRON	pron-det|<-sam>|F|S	Gender=Fem|Number=Sing	24	advmod	_	_
+25	a	a	ADP	<sam->|PRP|@A<	_	26	case	_	_
+26	a	o	PRON	<-sam>|DET|F|S|@P<	Gender=Fem|Number=Sing	24	advmod	_	_
 27-28	do	_	_	_	_	_	_	_	_
-27	de	de	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	26	nmod	_	_
-30	.	.	PUNCT	punc	_	6	punct	_	_
+27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
+28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF926-2
-# sent_id = pt-ud-dev.conllu#s161/pt
-# orig_file_sentence = 002#61
-1	«	«	PUNCT	punc	_	2	punct	_	_
-2	Queremos	querer	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	dar	dar	VERB	v-inf	VerbForm=Inf	2	xcomp	_	_
-4	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	visto	visto	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-6	por	por	ADP	prp	AdpType=Prep	8	case	_	_
-7	dez	dez	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
-8	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-9	.	.	PUNCT	punc	_	2	punct	_	_
+# text = «Queremos dar um visto por dez anos.
+# forest 1
+# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF926-2
+# id 3919
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+2	Queremos	querer	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	dar	dar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
+4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	visto	visto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
+6	por	por	ADP	PRP|@<ADVL	_	8	case	_	_
+7	dez	dez	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
+8	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF926-3
-# sent_id = pt-ud-dev.conllu#s162/pt
-# orig_file_sentence = 002#62
-1	É	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-2	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	_
-3	eficiente	eficiente	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = É mais eficiente do que por apenas quatro anos.
+# forest 1
+# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF926-3
+# id 3920
+1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	_
+3	eficiente	eficiente	ADJ	<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 4-5	do	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-6	que	que	SCONJ	SCONJ	_	4	mwe	_	_
-7	por	por	ADP	prp	AdpType=Prep	10	case	_	_
-8	apenas	apenas	ADV	adv	_	10	advmod	_	_
-9	quatro	quatro	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
-10	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-11	.	.	PUNCT	punc	_	3	punct	_	_
+4	de	de	ADP	<sam->|PRP|@COM	_	3	case	_	_
+5	o	o	DET	<dem>|<-sam>|DET|M|S|@P<	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+6	que	que	SCONJ	<rel>|INDP|M|S|@N<	_	4	fixed	_	_
+7	por	por	ADP	<first-cjt>|PRP|@KOMP<	_	10	case	_	_
+8	apenas	apenas	ADV	ADV|@>N	_	10	advmod	_	_
+9	quatro	quatro	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
+10	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF926-4
-# sent_id = pt-ud-dev.conllu#s163/pt
-# orig_file_sentence = 002#63
-1	Estamos	estar	AUX	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	_
-2	sendo	ser	VERB	v-ger	VerbForm=Ger	3	auxpass	_	_
-3	forçados	forçar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-4	,	,	PUNCT	punc	_	3	punct	_	_
+# text = Estamos sendo forçados, ao invés, a reduzir o prazo para três meses.
+# forest 1
+# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF926-4
+# id 3921
+1	Estamos	estar	AUX	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	_	_
+2	sendo	ser	VERB	<aux>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
+3	forçados	forçar	VERB	<mv>|<pass>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	2	ccomp	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 5-6	ao	_	_	_	_	_	_	_	_
-5	a	a	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-7	invés	invés	NOUN	NOUN	_	5	mwe	_	_
-8	,	,	PUNCT	punc	_	3	punct	_	_
-9	a	a	ADP	prp	AdpType=Prep	10	mark	_	_
-10	reduzir	reduzir	VERB	v-inf	VerbForm=Inf	3	advcl	_	_
-11	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	prazo	prazo	NOUN	n|M|S	Gender=Masc|Number=Sing	10	dobj	_	_
-13	para	para	ADP	prp	AdpType=Prep	15	case	_	_
-14	três	três	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	15	nummod	_	_
-15	meses	mês	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
-16	.	.	PUNCT	punc	_	3	punct	_	_
+5	a	a	ADP	<sam->|PRP|@N<	_	3	case	_	_
+6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+7	invés	invés	NOUN	N|M|S|@P<	_	5	fixed	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+9	a	a	ADP	PRP|@<ADVL	_	10	mark	_	_
+10	reduzir	reduzir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	_
+11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	prazo	prazo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
+13	para	para	ADP	PRP|@<PIV	_	15	case	_	_
+14	três	três	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	15	nummod	_	_
+15	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obj	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF926-5
-# sent_id = pt-ud-dev.conllu#s164/pt
-# orig_file_sentence = 002#64
-1	É	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-2	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	situação	situação	NOUN	n|F|S	Gender=Fem|Number=Sing	7	ccomp	_	_
-4	absurda	absurdo	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
-5	»	»	PUNCT	punc	_	7	punct	_	_
-6	,	,	PUNCT	punc	_	7	punct	_	_
-7	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-8	Taylor	Taylor	PROPN	prop|M|S	Gender=Masc|Number=Sing	7	nsubj	_	_
-9	,	,	PUNCT	punc	_	8	punct	_	_
-10	49	49	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
-11	.	.	PUNCT	punc	_	7	punct	_	_
+# text = É uma situação absurda», disse Taylor, 49.
+# forest 1
+# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF926-5
+# id 3922
+1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	situação	situação	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	7	ccomp	_	_
+4	absurda	absurdo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No
+5	»	»	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+7	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	Taylor	Taylor	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	7	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+10	49	49	NUM	<card>|NUM|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 

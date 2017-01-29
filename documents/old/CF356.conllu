@@ -1,69 +1,71 @@
-# distance_from_new = 0
-# new_sent_id = CF356-1
-# sent_id = pt-ud-train.conllu#s6519/pt
-# orig_file_sentence = 066#19
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Coprotest	Coprotest	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
-4	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	versão	versão	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-6	revista	rever	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	5	acl	_	_
-7	e	e	CONJ	conj-c|<co-postnom>	_	6	cc	_	_
-8	melhorada	melhorar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	6	conj	_	_
+# text = O Coprotest é uma versão revista e melhorada das anti-higiênicas e pouco seguras latinhas para coleta de fezes para exames parasitológicos.
+# forest 1
+# source CETENFolha n=356 cad=Tudo sec=nd sem=94b
+# sent_id = CF356-1
+# id 1477
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Coprotest	Coprotest	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	versão	versão	NOUN	<meta>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
+6	revista	rever	VERB	<mv>|<first-cjt>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	5	acl	_	_
+7	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	_
+8	melhorada	melhorar	VERB	<mv>|<cjt>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	6	conj	_	_
 9-10	das	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-10	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
-11	anti-higiênicas	anti-higiênico	ADJ	adj|F|P	Gender=Fem|Number=Plur	10	amod	_	_
-12	e	e	CONJ	conj-c|<co-prparg>	_	10	cc	_	_
-13	pouco	pouco	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	14	advmod	_	_
-14	seguras	seguro	ADJ	adj|F|P	Gender=Fem|Number=Plur	10	conj	_	_
-15	latinhas	latinha	NOUN	n|F|P	Gender=Fem|Number=Plur	5	nmod	_	_
-16	para	para	ADP	prp	AdpType=Prep	17	case	_	_
-17	coleta	coleta	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	fezes	fez	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-20	para	para	ADP	prp	AdpType=Prep	21	case	_	_
-21	exames	exame	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-22	parasitológicos	parasitológico	ADJ	adj|M|P	Gender=Masc|Number=Plur	21	amod	_	_
-23	.	.	PUNCT	punc	_	5	punct	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+10	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
+11	anti-higiênicas	anti-higiênico	ADJ	<first-cjt>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	10	amod	_	_
+12	e	e	CCONJ	<co-prenom>|KC|@CO	_	14	cc	_	_
+13	pouco	pouco	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	14	advmod	_	_
+14	seguras	seguro	ADJ	<cjt>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	10	conj	_	_
+15	latinhas	latinha	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
+16	para	para	ADP	PRP|@N<	_	17	case	_	_
+17	coleta	coleta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+18	de	de	ADP	PRP|@N<	_	19	case	_	_
+19	fezes	fez	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
+20	para	para	ADP	PRP|@N<	_	21	case	_	_
+21	exames	exame	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
+22	parasitológicos	parasitológico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	21	amod	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF356-2
-# sent_id = pt-ud-train.conllu#s6520/pt
-# orig_file_sentence = 066#20
-1	«	«	PUNCT	punc	_	23	punct	_	_
-2	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	produto	produto	NOUN	n|M|S	Gender=Masc|Number=Sing	23	nsubj	_	_
-4	não	não	ADV	adv	_	5	neg	_	_
-5	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	advcl	_	_
-6	similares	similar	NOUN	n|M|P	Gender=Masc|Number=Plur	5	dobj	_	_
-7	em	em	ADP	prp	AdpType=Prep	10	case	_	_
-8	todo	todo	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	10	det	_	_
-9	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	mundo	mundo	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-11	e	e	CONJ	conj-c	_	5	cc	_	_
-12	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
-13	sendo	ser	VERB	v-ger	VerbForm=Ger	5	conj	_	_
-14	muito	muito	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	15	advmod	_	_
-15	bem	bem	NOUN	adv	_	13	advmod	_	MWE=bem_aceito|MWEPOS=ADV
-16	aceito	aceito	NOUN	NOUN	_	15	mwe	_	_
+# text = «O produto não tem similares em todo o mundo e está sendo muito bem aceito nos Estados Unidos», afirma Adolfo Moruzzi, 49, diretor da NL.
+# forest 1
+# source CETENFolha n=356 cad=Tudo sec=nd sem=94b
+# sent_id = CF356-2
+# id 1478
+1	«	«	PUNCT	PU|@PU	_	23	punct	_	SpaceAfter=No
+2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	produto	produto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj	_	_
+4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
+5	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	advcl	_	_
+6	similares	similar	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	obj	_	_
+7	em	em	ADP	PRP|@<ADVL	_	10	case	_	_
+8	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	10	det	_	_
+9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	_
+11	e	e	CCONJ	<co-x>|KC|@CO	_	12	cc	_	_
+12	está	estar	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+13	sendo	ser	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	12	ccomp	_	_
+14	muito	muito	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	15	advmod	_	_
+15	bem	bem	NOUN	_	_	13	advmod	_	MWE=bem_aceito|MWEPOS=ADV
+16	aceito	aceito	NOUN	_	_	15	fixed	_	_
 17-18	nos	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-19	Estados	Estados	PROPN	prop|M|P	_	13	nmod	_	MWE=Estados_Unidos|MWEPOS=PROPN
-20	Unidos	Unidos	PROPN	PROPN	_	19	name	_	_
-21	»	»	PUNCT	punc	_	23	punct	_	_
-22	,	,	PUNCT	punc	_	23	punct	_	_
-23	afirma	afirmar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-24	Adolfo	Adolfo	PROPN	prop|M|S	_	23	nsubj	_	MWE=Adolfo_Moruzzi|MWEPOS=PROPN
-25	Moruzzi	Moruzzi	PROPN	PROPN	_	24	name	_	_
-26	,	,	PUNCT	punc	_	24	punct	_	_
-27	49	49	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	24	nummod	_	_
-28	,	,	PUNCT	punc	_	24	punct	_	_
-29	diretor	diretor	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nmod	_	_
+17	em	em	ADP	<sam->|PRP|@<ADVL	_	19	case	_	_
+18	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
+19	Estados	Estados	PROPN	PROP|M|P|@P<	_	13	obl	_	MWE=Estados_Unidos|MWEPOS=PROPN
+20	Unidos	Unidos	PROPN	PROP|@N<	_	19	flat	_	SpaceAfter=No
+21	»	»	PUNCT	PU|@PU	_	23	punct	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+23	afirma	afirmar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+24	Adolfo	Adolfo	PROPN	_	_	23	nsubj	_	MWE=Adolfo_Moruzzi|MWEPOS=PROPN
+25	Moruzzi	Moruzzi	PROPN	_	_	24	flat	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+27	49	49	NUM	<card>|NUM|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card	24	nummod	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+29	diretor	diretor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	24	nmod	_	_
 30-31	da	_	_	_	_	_	_	_	_
-30	de	de	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-31	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
-32	NL	NL	PROPN	prop|F|S	Gender=Fem|Number=Sing	29	nmod	_	_
-33	.	.	PUNCT	punc	_	23	punct	_	_
+30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
+31	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
+32	NL	NL	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	29	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 

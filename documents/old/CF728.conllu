@@ -1,78 +1,80 @@
-# distance_from_new = 0
-# new_sent_id = CF728-1
-# sent_id = pt-ud-train.conllu#s8100/pt
-# orig_file_sentence = 081#100
-1	Gianetti	Gianetti	PROPN	prop|M|S	_	5	nsubj	_	MWE=Gianetti_da_Fonseca|MWEPOS=PROPN
+# text = Gianetti da Fonseca afirmou que a avaliação tem que ser feita por «pares» (pesquisadores da mesma área), que não façam parte do grupo analisado.
+# forest 1
+# source CETENFolha n=728 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF728-1
+# id 3058
+1	Gianetti	Gianetti	PROPN	PROP|M|S|@SUBJ>	_	5	nsubj	_	MWE=Gianetti_da_Fonseca|MWEPOS=PROPN
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	Fonseca	Fonseca	PROPN	PROPN	_	1	name	_	_
-5	afirmou	afirmar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	que	que	SCONJ	conj-s	_	12	mark	_	_
-7	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	avaliação	avaliação	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nsubjpass	_	_
-9	tem	ter	AUX	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-10	que	que	SCONJ	conj-s	_	12	mark	_	_
-11	ser	ser	VERB	v-inf	VerbForm=Inf	12	auxpass	_	_
-12	feita	fazer	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	5	xcomp	_	_
-13	por	por	ADP	prp	AdpType=Prep	15	case	_	_
-14	«	«	PUNCT	punc	_	15	punct	_	_
-15	pares	par	NOUN	n|M|P	Gender=Masc|Number=Plur	12	dobj	_	_
-16	»	»	PUNCT	punc	_	15	punct	_	_
-17	(	(	PUNCT	punc	_	15	punct	_	_
-18	pesquisadores	pesquisador	NOUN	n|M|P	Gender=Masc|Number=Plur	15	nmod	_	_
+2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
+3	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Fonseca	Fonseca	PROPN	PROP|@P<	_	1	flat	_	_
+5	afirmou	afirmar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
+7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	avaliação	avaliação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
+9	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+10	que	que	SCONJ	KS|@PRT-AUX<	_	11	mark	_	_
+11	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
+12	feita	fazer	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	11	ccomp	_	_
+13	por	por	ADP	PRP|@PASS	_	15	case	_	_
+14	«	«	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+15	pares	par	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	obj	_	SpaceAfter=No
+16	»	»	PUNCT	PU|@PU	_	15	punct	_	_
+17	(	(	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+18	pesquisadores	pesquisador	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	15	nmod	_	_
 19-20	da	_	_	_	_	_	_	_	_
-19	de	de	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-20	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-21	mesma	mesmo	DET	pron-det|<diff>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	22	det	_	_
-22	área	área	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nmod	_	_
-23	)	)	PUNCT	punc	_	15	punct	_	_
-24	,	,	PUNCT	punc	_	15	punct	_	_
-25	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	27	nsubj	_	_
-26	não	não	ADV	adv	_	27	neg	_	_
-27	façam	fazer	VERB	v-fin|PR|3P|SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_
-28	parte	parte	NOUN	n|F|S	Gender=Fem|Number=Sing	27	dobj	_	_
+19	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
+20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+21	mesma	mesmo	DET	<diff>|<KOMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	22	det	_	_
+22	área	área	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No
+23	)	)	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+25	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	27	nsubj	_	_
+26	não	não	ADV	_	Polarity=Neg	27	advmod	_	_
+27	façam	fazer	VERB	<mv>|V|PR|3P|SUBJ|@FS-N<PRED	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl	_	_
+28	parte	parte	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	27	obj	_	_
 29-30	do	_	_	_	_	_	_	_	_
-29	de	de	ADP	prp|<sam->	AdpType=Prep	31	case	_	_
-30	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
-31	grupo	grupo	NOUN	n|M|S	Gender=Masc|Number=Sing	28	nmod	_	_
-32	analisado	analisar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	31	acl	_	_
-33	.	.	PUNCT	punc	_	5	punct	_	_
+29	de	de	ADP	PRP|@N<	_	31	case	_	_
+30	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	grupo	grupo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	28	nmod	_	_
+32	analisado	analisar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	31	acl	_	SpaceAfter=No
+33	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF728-3
-# sent_id = pt-ud-train.conllu#s8101/pt
-# orig_file_sentence = 082#1
-1	«	«	PUNCT	punc	_	3	punct	_	_
-2	Me	eu	PRON	pron-pers|M/F|1S|ACC	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	dobj	_	_
-3	parece	parecer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	que	que	SCONJ	conj-s	_	5	mark	_	_
-5	há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	csubj	_	_
-6	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	acordo	acordo	NOUN	n|M|S	Gender=Masc|Number=Sing	5	dobj	_	_
-8	quanto	quanto	ADV	prp	AdpType=Prep	10	mark	_	MWE=quanto_a|MWEPOS=ADP
-9	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	mwe	_	_
-10	especializar	especializar	VERB	v-inf	VerbForm=Inf	7	acl	_	_
-11	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	centros	centro	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
-13	vocacionados	vocacionar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
-14	para	para	ADP	prp	AdpType=Prep	16	case	_	_
-15	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	pesquisa	pesquisa	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-17	e	e	CONJ	conj-c|<co-inf>	_	10	cc	_	_
-18	não	não	ADV	adv	_	19	neg	_	_
-19	tentar	tentar	VERB	v-inf	VerbForm=Inf	10	conj	_	_
-20	fazer	fazer	VERB	v-inf	VerbForm=Inf	19	xcomp	_	_
-21	que	que	SCONJ	conj-s	_	28	mark	_	_
-22	todos	todo	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	24	det	_	_
-23	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
-24	centros	centro	NOUN	n|M|P	Gender=Masc|Number=Plur	28	nsubj	_	_
+# text = «Me parece que há um acordo quanto a especializar os centros vocacionados para a pesquisa e não tentar fazer que todos os centros do país façam pesquisa.»
+# forest 1
+# source CETENFolha n=728 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF728-3
+# id 3059
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+2	Me	eu	PRON	<refl>|PERS|M/F|1S|ACC|@ACC>	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
+3	parece	parecer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
+5	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	csubj	_	_
+6	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	acordo	acordo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
+8	quanto	quanto	ADV	ADV|@N<	_	10	mark	_	MWE=quanto_a|MWEPOS=ADP
+9	a	a	DET	PRP|@A<	Gender=Fem|Number=Sing|PronType=Art	8	fixed	_	_
+10	especializar	especializar	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
+11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+12	centros	centro	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	obj	_	_
+13	vocacionados	vocacionar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
+14	para	para	ADP	PRP|@<ADVL	_	16	case	_	_
+15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	pesquisa	pesquisa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	_
+17	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	19	cc	_	_
+18	não	não	ADV	_	Polarity=Neg	19	advmod	_	_
+19	tentar	tentar	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	10	conj	_	_
+20	fazer	fazer	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	19	xcomp	_	_
+21	que	que	SCONJ	KS|@SUB	_	28	mark	_	_
+22	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	24	det	_	_
+23	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
+24	centros	centro	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	28	nsubj	_	_
 25-26	do	_	_	_	_	_	_	_	_
-25	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nmod	_	_
-28	façam	fazer	VERB	v-fin|PR|3P|SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	ccomp	_	_
-29	pesquisa	pesquisa	NOUN	n|F|S	Gender=Fem|Number=Sing	28	dobj	_	_
-30	.	.	PUNCT	punc	_	3	punct	_	_
-31	»	»	PUNCT	punc	_	3	punct	_	_
+25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
+26	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
+28	façam	fazer	VERB	<mv>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	ccomp	_	_
+29	pesquisa	pesquisa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	obj	_	SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+31	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 

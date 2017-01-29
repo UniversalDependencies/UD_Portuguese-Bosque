@@ -1,180 +1,184 @@
-# distance_from_new = 0
-# new_sent_id = CF706-1
-# sent_id = pt-ud-train.conllu#s8000/pt
-# orig_file_sentence = 080#100
-1	As	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
-2	negociações	negociação	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nsubj	_	_
-3	para	para	ADP	prp	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	volta	volta	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	Mansell	Mansell	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
+# text = As negociações para a volta de Mansell à F-1 tiveram início logo após as 500 Milhas de Indianápolis, realizada no mês passado, e continuaram durante as 200 Milhas de Milwaukee, disputada no último dia 5, quando recebeu a visita dalguns engenheiros da Williams.
+# forest 1
+# source CETENFolha n=706 cad=Esporte sec=des sem=94b
+# sent_id = CF706-1
+# id 2958
+1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	negociações	negociação	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	11	nsubj	_	_
+3	para	para	ADP	PRP|@N<ARG	_	5	case	_	_
+4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	volta	volta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	Mansell	Mansell	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 8-9	à	_	_	_	_	_	_	_	_
-8	a	a	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	F-1	F-1	PROPN	prop|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-11	tiveram	ter	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
-12	início	início	NOUN	n|M|S	Gender=Masc|Number=Sing	11	dobj	_	_
-13	logo	logo	ADV	adv|<kc>	_	11	advmod	_	_
-14	após	após	ADP	prp	AdpType=Prep	13	case	_	_
-15	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
-16	500	500	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	17	nummod	_	_
-17	Milhas	milha	NOUN	n|<prop>|F|P	Gender=Fem|Number=Plur	13	nmod	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	Indianápolis	Indianápolis	PROPN	prop|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-20	,	,	PUNCT	punc	_	17	punct	_	_
-21	realizada	realizar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	17	acl	_	_
+8	a	a	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	F-1	F-1	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+11	tiveram	ter	VERB	<first-cjt>|<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+12	início	início	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_
+13	logo	logo	ADV	<kc>|ADV|@>A	_	11	advmod	_	_
+14	após	após	ADP	PRP|@<ADVL	_	13	case	_	_
+15	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
+16	500	500	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	17	nummod	_	_
+17	Milhas	milha	NOUN	<prop>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	13	obl	_	_
+18	de	de	ADP	PRP|@N<	_	19	case	_	_
+19	Indianápolis	Indianápolis	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+21	realizada	realizar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	17	acl	_	_
 22-23	no	_	_	_	_	_	_	_	_
-22	em	em	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	mês	mês	NOUN	n|M|S	Gender=Masc|Number=Sing	21	nmod	_	_
-25	passado	passar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	24	acl	_	_
-26	,	,	PUNCT	punc	_	17	punct	_	_
-27	e	e	CONJ	conj-c	_	11	cc	_	_
-28	continuaram	continuar	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	11	conj	_	_
-29	durante	durante	ADP	prp	AdpType=Prep	32	case	_	_
-30	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_
-31	200	200	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	32	nummod	_	_
-32	Milhas	milha	NOUN	n|<prop>|F|P	Gender=Fem|Number=Plur	28	nmod	_	_
-33	de	de	ADP	prp	AdpType=Prep	34	case	_	_
-34	Milwaukee	Milwaukee	PROPN	prop|M|S	Gender=Masc|Number=Sing	32	nmod	_	_
-35	,	,	PUNCT	punc	_	32	punct	_	_
-36	disputada	disputar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	32	acl	_	_
+22	em	em	ADP	<sam->|PRP|@<ADVL	_	24	case	_	_
+23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	mês	mês	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	obl	_	_
+25	passado	passar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	24	acl	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+27	e	e	CCONJ	<co-sta>|KC|@CO	_	28	cc	_	_
+28	continuaram	continuar	VERB	<cjt>|<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	11	conj	_	_
+29	durante	durante	ADP	PRP|@<ADVL	_	32	case	_	_
+30	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_
+31	200	200	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	32	nummod	_	_
+32	Milhas	milha	NOUN	<prop>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	obl	_	_
+33	de	de	ADP	PRP|@N<	_	34	case	_	_
+34	Milwaukee	Milwaukee	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No
+35	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+36	disputada	disputar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	32	acl	_	_
 37-38	no	_	_	_	_	_	_	_	_
-37	em	em	ADP	prp|<sam->	AdpType=Prep	40	case	_	_
-38	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
-39	último	último	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	40	amod	_	_
-40	dia	dia	NOUN	n|M|S	Gender=Masc|Number=Sing	36	nmod	_	_
-41	5	5	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	40	nummod	_	_
-42	,	,	PUNCT	punc	_	40	punct	_	_
-43	quando	quando	ADV	adv|<rel>|<ks>	PronType=Rel	44	advmod	_	_
-44	recebeu	receber	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	40	acl	_	_
-45	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
-46	visita	visita	NOUN	n|F|S	Gender=Fem|Number=Sing	44	dobj	_	_
+37	em	em	ADP	<sam->|PRP|@<ADVL	_	40	case	_	_
+38	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
+39	último	último	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	40	amod	_	_
+40	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	36	obl	_	_
+41	5	5	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	40	nummod	_	SpaceAfter=No
+42	,	,	PUNCT	PU|@PU	_	40	punct	_	_
+43	quando	quando	ADV	<rel>|ADV|@ADVL>	PronType=Rel	44	advmod	_	_
+44	recebeu	receber	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	40	acl	_	_
+45	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
+46	visita	visita	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	44	obj	_	_
 47-48	dalguns	_	_	_	_	_	_	_	_
-47	de	de	ADP	prp	AdpType=Prep	49	case	_	_
-48	alguns	algum	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	49	det	_	_
-49	engenheiros	engenheiro	NOUN	n|M|P	Gender=Masc|Number=Plur	46	nmod	_	_
+47	de	de	ADP	PRP|@N<	_	49	case	_	_
+48	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	49	det	_	_
+49	engenheiros	engenheiro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	46	nmod	_	_
 50-51	da	_	_	_	_	_	_	_	_
-50	de	de	ADP	prp|<sam->	AdpType=Prep	52	case	_	_
-51	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
-52	Williams	Williams	PROPN	prop|F|S	Gender=Fem|Number=Sing	49	nmod	_	_
-53	.	.	PUNCT	punc	_	11	punct	_	_
+50	de	de	ADP	<sam->|PRP|@N<	_	52	case	_	_
+51	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
+52	Williams	Williams	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	49	nmod	_	SpaceAfter=No
+53	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF706-2
-# sent_id = pt-ud-train.conllu#s8001/pt
-# orig_file_sentence = 081#1
-1	Quinto	quinto	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	2	amod	_	_
-2	colocado	colocar	VERB	v-pcp|<n>|M|S	Gender=Masc|Number=Sing|VerbForm=Part	14	advcl	_	_
+# text = Quinto colocado no Mundial de F-Indy, com 46 pontos, Mansell disse que pretende continuar a correr na categoria até o final da temporada, condição que ele impôs a Frank Williams para voltar à equipe pela qual ganhou o título mundial de 1992.
+# forest 1
+# source CETENFolha n=706 cad=Esporte sec=des sem=94b
+# sent_id = CF706-2
+# id 2959
+1	Quinto	quinto	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	2	amod	_	_
+2	colocado	colocar	VERB	<mv>|<n>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	14	advcl	_	_
 3-4	no	_	_	_	_	_	_	_	_
-3	em	em	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Mundial	Mundial	PROPN	prop|M|S	_	2	nmod	_	MWE=Mundial_de_F-Indy|MWEPOS=PROPN
-6	de	de	ADP	ADP	AdpType=Prep	7	case	_	_
-7	F-Indy	F-Indy	PROPN	PROPN	_	5	name	_	_
-8	,	,	PUNCT	punc	_	5	punct	_	_
-9	com	com	ADP	prp	AdpType=Prep	11	case	_	_
-10	46	46	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
-11	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-12	,	,	PUNCT	punc	_	5	punct	_	_
-13	Mansell	Mansell	PROPN	prop|M|S	Gender=Masc|Number=Sing	14	nsubj	_	_
-14	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-15	que	que	SCONJ	conj-s	_	16	mark	_	_
-16	pretende	pretender	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
-17	continuar	continuar	VERB	v-inf	VerbForm=Inf	16	xcomp	_	_
-18	a	a	ADP	prp	AdpType=Prep	19	mark	_	_
-19	correr	correr	VERB	v-inf	VerbForm=Inf	17	xcomp	_	_
+3	em	em	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Mundial	Mundial	PROPN	PROP|M|S|@P<	_	2	nmod	_	MWE=Mundial_de_F-Indy|MWEPOS=PROPN
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	F-Indy	F-Indy	PROPN	PROP|@P<	_	5	flat	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+9	com	com	ADP	PRP|@N<PRED	_	11	case	_	_
+10	46	46	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
+11	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+13	Mansell	Mansell	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
+14	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+15	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
+16	pretende	pretender	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
+17	continuar	continuar	VERB	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	16	xcomp	_	_
+18	a	a	ADP	PRP|@PRT-AUX<	_	19	mark	_	_
+19	correr	correr	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	17	xcomp	_	_
 20-21	na	_	_	_	_	_	_	_	_
-20	em	em	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	categoria	categoria	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-23	até	até	ADP	prp	AdpType=Prep	25	case	_	_
-24	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	final	final	NOUN	n|M|S	Gender=Masc|Number=Sing	19	nmod	_	_
+20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
+21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	categoria	categoria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	_
+23	até	até	ADP	PRP|@<ADVL	_	25	case	_	_
+24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+25	final	final	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	_
 26-27	da	_	_	_	_	_	_	_	_
-26	de	de	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-27	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-28	temporada	temporada	NOUN	n|F|S	Gender=Fem|Number=Sing	25	nmod	_	_
-29	,	,	PUNCT	punc	_	14	punct	_	_
-30	condição	condição	NOUN	n|F|S	Gender=Fem|Number=Sing	14	nmod	_	_
-31	que	que	SCONJ	conj-s	_	33	mark	_	_
-32	ele	ele	PRON	pron-pers|M|3S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	nsubj	_	_
-33	impôs	impor	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	acl	_	_
-34	a	a	ADP	prp	AdpType=Prep	35	case	_	_
-35	Frank	Frank	PROPN	prop|M|S	_	33	dobj	_	MWE=Frank_Williams|MWEPOS=PROPN
-36	Williams	Williams	PROPN	PROPN	_	35	name	_	_
-37	para	para	ADP	prp	AdpType=Prep	38	mark	_	_
-38	voltar	voltar	VERB	v-inf	VerbForm=Inf	33	advcl	_	_
+26	de	de	ADP	<sam->|PRP|@N<	_	28	case	_	_
+27	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+28	temporada	temporada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No
+29	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+30	condição	condição	NOUN	<np-idf>|N|F|S|@S<	Gender=Fem|Number=Sing	14	obl	_	_
+31	que	que	SCONJ	KS|@SUB	_	33	mark	_	_
+32	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	nsubj	_	_
+33	impôs	impor	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	acl	_	_
+34	a	a	ADP	PRP|@<PIV	_	35	case	_	_
+35	Frank	Frank	PROPN	_	_	33	obj	_	MWE=Frank_Williams|MWEPOS=PROPN
+36	Williams	Williams	PROPN	_	_	35	flat	_	_
+37	para	para	ADP	PRP|@<ADVL	_	38	mark	_	_
+38	voltar	voltar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	advcl	_	_
 39-40	à	_	_	_	_	_	_	_	_
-39	a	a	ADP	prp|<sam->	AdpType=Prep	41	case	_	_
-40	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	equipe	equipe	NOUN	n|F|S	Gender=Fem|Number=Sing	38	dobj	_	_
+39	a	a	ADP	<sam->|PRP|@<PIV	_	41	case	_	_
+40	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+41	equipe	equipe	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	38	obj	_	_
 42-43	pela	_	_	_	_	_	_	_	_
-42	por	por	ADP	prp|<sam->	AdpType=Prep	44	case	_	_
-43	a	o	DET	pron-indp|<-sam>|<rel>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	mark	_	MWE=a_qual|MWEPOS=PRON
-44	qual	qual	PRON	PRON	Gender=Fem|Number=Sing|PronType=Rel	41	compound	_	_
-45	ganhou	ganhar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	44	acl	_	_
-46	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
-47	título	título	NOUN	n|M|S	Gender=Masc|Number=Sing	45	dobj	_	_
-48	mundial	mundial	ADJ	adj|M|S	Gender=Masc|Number=Sing	47	amod	_	_
-49	de	de	ADP	prp	AdpType=Prep	50	case	_	_
-50	1992	1992	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	47	nummod	_	_
-51	.	.	PUNCT	punc	_	14	punct	_	_
+42	por	por	ADP	<sam->|PRP|@N<ARG	_	44	case	_	_
+43	a	o	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	44	mark	_	MWE=a_qual|MWEPOS=PRON
+44	qual	qual	PRON	DET|F|S|@SUB	Gender=Fem|Number=Sing|PronType=Rel	41	compound	_	_
+45	ganhou	ganhar	VERB	<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	44	acl	_	_
+46	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
+47	título	título	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	45	obj	_	_
+48	mundial	mundial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	47	amod	_	_
+49	de	de	ADP	PRP|@N<	_	50	case	_	_
+50	1992	1992	NUM	<year>|<card>|<date>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	47	nummod	_	SpaceAfter=No
+51	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF706-3
-# sent_id = pt-ud-train.conllu#s8002/pt
-# orig_file_sentence = 081#2
+# text = Nos últimos dias, aumentaram as especulações sobre quem ocuparia o lugar de Mansell na Newmann/Hass.
+# forest 1
+# source CETENFolha n=706 cad=Esporte sec=des sem=94b
+# sent_id = CF706-3
+# id 2960
 1-2	Nos	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-2	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-3	últimos	último	ADJ	adj|<NUM-ord>|M|P	Gender=Masc|Number=Plur|NumType=Ord	4	amod	_	_
-4	dias	dia	NOUN	n|M|P	Gender=Masc|Number=Plur	6	nmod	_	_
-5	,	,	PUNCT	punc	_	6	punct	_	_
-6	aumentaram	aumentar	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
-7	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
-8	especulações	especulação	NOUN	n|F|P	Gender=Fem|Number=Plur	6	nsubj	_	_
-9	sobre	sobre	ADP	prp	AdpType=Prep	11	mark	_	_
-10	quem	quem	PRON	pron-indp|<interr>|M/F|S	Number=Sing|PronType=Int	11	nsubj	_	_
-11	ocuparia	ocupar	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	acl	_	_
-12	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	lugar	lugar	NOUN	n|M|S	Gender=Masc|Number=Sing	11	dobj	_	_
-14	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-15	Mansell	Mansell	PROPN	prop|M|S	Gender=Masc|Number=Sing	13	nmod	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
+2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+3	últimos	último	ADJ	<NUM-ord>|ADJ|M|P|@>N	Gender=Masc|Number=Plur|NumType=Ord	4	amod	_	_
+4	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+6	aumentaram	aumentar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+7	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
+8	especulações	especulação	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	6	nsubj	_	_
+9	sobre	sobre	ADP	PRP|@N<ARG	_	11	mark	_	_
+10	quem	quem	PRON	<interr>|INDP|M/F|S|@SUBJ>	Number=Sing|PronType=Int	11	nsubj	_	_
+11	ocuparia	ocupar	VERB	<mv>|V|COND|3S|@FS-P<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	acl	_	_
+12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	lugar	lugar	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	Mansell	Mansell	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
 16-17	na	_	_	_	_	_	_	_	_
-16	em	em	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	Newmann/Hass	Newmann/Hass	PROPN	prop|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-19	.	.	PUNCT	punc	_	6	punct	_	_
+16	em	em	ADP	<sam->|PRP|@<ACC	_	18	case	_	_
+17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	Newmann/Hass	Newmann/Hass	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF706-4
-# sent_id = pt-ud-train.conllu#s8003/pt
-# orig_file_sentence = 081#3
-1	O	o	DET	art|<artd>|<Eg>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	0	root	_	_
-2	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	_
-3	cotado	cotar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
+# text = O mais cotado na bolsa de apostas é o brasileiro Raul Boesel, que ontem não consegui terminar a corrida em Detroit.
+# forest 1
+# source CETENFolha n=706 cad=Esporte sec=des sem=94b &W
+# sent_id = CF706-4
+# id 2961
+1	O	o	DET	<artd>|<Eg>|ART|M|S|@SC>	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	0	root	_	_
+2	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	_
+3	cotado	cotar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
 4-5	na	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	bolsa	bolsa	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	apostas	aposta	NOUN	n|F|P	Gender=Fem|Number=Plur	6	nmod	_	_
-9	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	brasileiro	brasileiro	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nsubj	_	_
-12	Raul	Raul	PROPN	prop|M|S	_	11	nmod	_	MWE=Raul_Boesel|MWEPOS=PROPN
-13	Boesel	Boesel	PROPN	PROPN	_	12	name	_	_
-14	,	,	PUNCT	punc	_	12	punct	_	_
-15	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	18	nsubj	_	_
-16	ontem	ontem	ADV	adv	_	18	advmod	_	_
-17	não	não	ADV	adv	_	18	neg	_	_
-18	consegui	conseguir	VERB	v-fin|<ALT>|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|Typo=Yes|VerbForm=Fin	12	acl	_	_
-19	terminar	terminar	VERB	v-inf	VerbForm=Inf	18	xcomp	_	_
-20	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	corrida	corrida	NOUN	n|F|S	Gender=Fem|Number=Sing	19	dobj	_	_
-22	em	em	ADP	prp	AdpType=Prep	23	case	_	_
-23	Detroit	Detroit	PROPN	prop|M|S	Gender=Masc|Number=Sing	19	nmod	_	_
-24	.	.	PUNCT	punc	_	1	punct	_	_
+4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	bolsa	bolsa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	apostas	aposta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	6	nmod	_	_
+9	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	brasileiro	brasileiro	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	1	nsubj	_	_
+12	Raul	Raul	PROPN	_	_	11	nmod	_	MWE=Raul_Boesel|MWEPOS=PROPN
+13	Boesel	Boesel	PROPN	_	_	12	flat	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+15	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	18	nsubj	_	_
+16	ontem	ontem	ADV	ADV|@ADVL>	_	18	advmod	_	_
+17	não	não	ADV	_	Polarity=Neg	18	advmod	_	_
+18	consegui	conseguir	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|Typo=Yes|VerbForm=Fin	12	acl	_	_
+19	terminar	terminar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	18	xcomp	_	_
+20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	corrida	corrida	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
+22	em	em	ADP	PRP|@<ACC	_	23	case	_	_
+23	Detroit	Detroit	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

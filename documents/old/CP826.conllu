@@ -1,256 +1,263 @@
-# distance_from_new = 2
-# new_sent_id = CP826-1
-# sent_id = pt-ud-train.conllu#s4241/pt
-# orig_file_sentence = 043#41
-1	Voltando	voltar	VERB	v-ger	VerbForm=Ger	22	advcl	_	_
-2	a	a	ADP	prp	AdpType=Prep	3	mark	_	_
+# text = Voltando a mostrar-se particularmente à vontade em condições de pouca aderência, o brasileiro Ayrton Senna (McLaren/Ford) conseguiu ontem o melhor tempo na primeira sessão de qualificação para o Grande Prémio da Europa que amanhã se disputa em Donington (Inglaterra).
+# forest 1
+# source CETEMPúblico n=826 sec=des sem=93a
+# sent_id = CP826-1
+# id 4243
+1	Voltando	voltar	VERB	<aux>|V|GER|@ICL-PRED>	VerbForm=Ger	22	advcl	_	_
+2	a	a	ADP	PRP|@PRT-AUX<	_	3	mark	_	_
 3-4	mostrar-se	_	_	_	_	_	_	_	_
 3	mostrar	mostrar	VERB	v-inf|<hyfen>	Hyph=Yes|VerbForm=Inf	1	xcomp	_	_
 4	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	3	iobj	_	_
-5	particularmente	particularmente	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	8	advmod:emph	_	_
+5	particularmente	particularmente	ADV	<quant>|ADV|@>P	NumType=Card|PronType=Ind,Neg,Tot	8	advmod:emph	_	_
 6-7	à	_	_	_	_	_	_	_	_
-6	a	a	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	vontade	vontade	NOUN	n|F|S	Gender=Fem|Number=Sing	3	xcomp	_	_
-9	em	em	ADP	prp	AdpType=Prep	10	case	_	_
-10	condições	condição	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nmod	_	_
-11	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-12	pouca	pouco	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	13	det	_	_
-13	aderência	aderência	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-14	,	,	PUNCT	punc	_	22	punct	_	_
-15	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	brasileiro	brasileiro	NOUN	n|M|S	Gender=Masc|Number=Sing	22	nsubj	_	_
-17	Ayrton	Ayrton	PROPN	prop|M|S	_	16	nmod	_	MWE=Ayrton_Senna|MWEPOS=PROPN
-18	Senna	Senna	PROPN	PROPN	_	17	name	_	_
-19	(	(	PUNCT	punc	_	16	punct	_	_
-20	McLaren/Ford	McLaren/Ford	PROPN	prop|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-21	)	)	PUNCT	punc	_	16	punct	_	_
-22	conseguiu	conseguir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-23	ontem	ontem	ADV	adv	_	22	advmod	_	_
-24	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-25	melhor	bom	ADJ	adj|<KOMP>|<SUP>|M|S	Degree=Sup|Gender=Masc|Number=Sing	26	amod	_	_
-26	tempo	tempo	NOUN	n|M|S	Gender=Masc|Number=Sing	22	dobj	_	_
+6	a	a	ADP	<sam->|PRP|@<OC	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	vontade	vontade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	xcomp	_	_
+9	em	em	ADP	PRP|@<ADVL	_	10	case	_	_
+10	condições	condição	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	3	obl	_	_
+11	de	de	ADP	PRP|@N<	_	13	case	_	_
+12	pouca	pouco	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	13	det	_	_
+13	aderência	aderência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	brasileiro	brasileiro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj	_	_
+17	Ayrton	Ayrton	PROPN	_	_	16	nmod	_	MWE=Ayrton_Senna|MWEPOS=PROPN
+18	Senna	Senna	PROPN	_	_	17	flat	_	_
+19	(	(	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+20	McLaren/Ford	McLaren/Ford	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
+21	)	)	PUNCT	PU|@PU	_	16	punct	_	_
+22	conseguiu	conseguir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+23	ontem	ontem	ADV	ADV|@<ADVL	_	22	advmod	_	_
+24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+25	melhor	bom	ADJ	<SUP>|<KOMP>|<COMP>|ADJ|M|S|@>N	Degree=Sup|Gender=Masc|Number=Sing	26	amod	_	_
+26	tempo	tempo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	obj	_	_
 27-28	na	_	_	_	_	_	_	_	_
-27	em	em	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-28	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
-29	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	30	amod	_	_
-30	sessão	sessão	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-31	de	de	ADP	prp	AdpType=Prep	32	case	_	_
-32	qualificação	qualificação	NOUN	n|F|S	Gender=Fem|Number=Sing	30	nmod	_	_
-33	para	para	ADP	prp	AdpType=Prep	35	case	_	_
-34	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
-35	Grande	Grande	ADJ	prop|M|S	Gender=Masc|Number=Sing	32	nmod	_	MWE=Grande_Prémio_da_Europa|MWEPOS=PROPN
-36	Prémio	Prémio	PROPN	PROPN	_	35	name	_	_
+27	em	em	ADP	<sam->|PRP|@<OA	_	30	case	_	_
+28	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
+29	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	30	amod	_	_
+30	sessão	sessão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	_
+31	de	de	ADP	PRP|@N<	_	32	case	_	_
+32	qualificação	qualificação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	nmod	_	_
+33	para	para	ADP	PRP|@N<	_	35	case	_	_
+34	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
+35	Grande	Grande	ADJ	_	Gender=Masc|Number=Sing	32	nmod	_	MWE=Grande_Prémio_da_Europa|MWEPOS=PROPN
+36	Prémio	Prémio	PROPN	_	_	35	flat	_	_
 37-38	da	_	_	_	_	_	_	_	_
-37	de	de	ADP	prp|<sam->	AdpType=Prep	39	case	_	_
-38	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
-39	Europa	Europa	PROPN	PROPN	_	35	name	_	_
-40	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	43	nsubj	_	_
-41	amanhã	amanhã	ADV	adv	_	43	advmod	_	_
-42	se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	43	dobj	_	_
-43	disputa	disputar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	acl	_	_
-44	em	em	ADP	prp	AdpType=Prep	45	case	_	_
-45	Donington	Donington	PROPN	prop|M/F|S	Number=Sing	43	nmod	_	_
-46	(	(	PUNCT	punc	_	45	punct	_	_
-47	Inglaterra	Inglaterra	PROPN	prop|F|S	Gender=Fem|Number=Sing	45	nmod	_	_
-48	)	)	PUNCT	punc	_	45	punct	_	_
-49	.	.	PUNCT	punc	_	22	punct	_	_
+37	de	de	ADP	<sam->|PRP|@N<	_	39	case	_	_
+38	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+39	Europa	Europa	PROPN	PROP|@P<	_	35	flat	_	_
+40	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	43	nsubj	_	_
+41	amanhã	amanhã	ADV	ADV|@ADVL>	_	43	advmod	_	_
+42	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	43	obj	_	_
+43	disputa	disputar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	acl	_	_
+44	em	em	ADP	PRP|@<ADVL	_	45	case	_	_
+45	Donington	Donington	PROPN	PROP|M|S|@P<	Number=Sing	43	obl	_	_
+46	(	(	PUNCT	PU|@PU	_	45	punct	_	SpaceAfter=No
+47	Inglaterra	Inglaterra	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	45	nmod	_	SpaceAfter=No
+48	)	)	PUNCT	PU|@PU	_	45	punct	_	SpaceAfter=No
+49	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP826-2
-# sent_id = pt-ud-train.conllu#s4242/pt
-# orig_file_sentence = 043#42
+# text = No entanto, a luta pela «pole position» não está ainda terminada, com o francês Alain Prost (Williams/Renault) a prometer dar luta ao brasileiro, hoje, na derradeira sessão de qualificação.
+# forest 1
+# source CETEMPúblico n=826 sec=des sem=93a
+# sent_id = CP826-2
+# id 4244
 1-2	No	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
+1	En	en	ADP	prp|<sam->	_	16	case	_	_
 2	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-3	entanto	entanto	NOUN	NOUN	_	1	mwe	_	_
+3	entanto	entanto	NOUN	NOUN	_	1	fixed	_	SpaceAfter=No
 4	,	,	PUNCT	punc	_	16	punct	_	_
 5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	luta	luta	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nsubj	_	_
 7-8	pela	_	_	_	_	_	_	_	_
-7	por	por	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
+7	por	por	ADP	prp|<sam->	_	10	case	_	_
 8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-9	«	«	PUNCT	punc	_	10	punct	_	_
+9	«	«	PUNCT	punc	_	10	punct	_	SpaceAfter=No
 10	pole	pole	NOUN	n|F|S	_	6	nmod	_	MWE=pole_position|MWEPOS=NOUN
-11	position	position	NOUN	NOUN	_	10	compound	_	_
+11	position	position	NOUN	NOUN	_	10	compound	_	SpaceAfter=No
 12	»	»	PUNCT	punc	_	10	punct	_	_
-13	não	não	ADV	adv	_	16	neg	_	_
-14	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
+13	não	não	ADV	adv	Polarity=Neg	16	advmod	_	_
+14	está	estar	AUX	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
 15	ainda	ainda	ADV	adv	_	16	advmod	_	_
-16	terminada	terminar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+16	terminada	terminar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	SpaceAfter=No
 17	,	,	PUNCT	punc	_	16	punct	_	_
-18	com	com	ADP	prp	AdpType=Prep	20	case	_	_
+18	com	com	ADP	prp	_	20	case	_	_
 19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	francês	francês	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
+20	francês	francês	NOUN	n|M|S	Gender=Masc|Number=Sing	16	obl	_	_
 21	Alain	Alain	PROPN	prop|M|S	_	20	nmod	_	MWE=Alain_Prost|MWEPOS=PROPN
-22	Prost	Prost	PROPN	PROPN	_	21	name	_	_
-23	(	(	PUNCT	punc	_	20	punct	_	_
-24	Williams/Renault	Williams/Renault	PROPN	prop|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
+22	Prost	Prost	PROPN	PROPN	_	21	flat	_	_
+23	(	(	PUNCT	punc	_	20	punct	_	SpaceAfter=No
+24	Williams/Renault	Williams/Renault	PROPN	prop|F|S	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No
 25	)	)	PUNCT	punc	_	20	punct	_	_
-26	a	a	ADP	prp	AdpType=Prep	27	mark	_	_
+26	a	a	ADP	prp	_	27	mark	_	_
 27	prometer	prometer	VERB	v-inf	VerbForm=Inf	20	acl	_	_
 28	dar	dar	VERB	v-inf	VerbForm=Inf	27	xcomp	_	_
-29	luta	luta	NOUN	n|F|S	Gender=Fem|Number=Sing	28	dobj	_	_
+29	luta	luta	NOUN	n|F|S	Gender=Fem|Number=Sing	28	obj	_	_
 30-31	ao	_	_	_	_	_	_	_	_
-30	a	a	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
+30	a	a	ADP	prp|<sam->	_	32	case	_	_
 31	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	brasileiro	brasileiro	NOUN	n|M|S	Gender=Masc|Number=Sing	28	dobj	_	_
+32	brasileiro	brasileiro	NOUN	n|M|S	Gender=Masc|Number=Sing	28	obj	_	SpaceAfter=No
 33	,	,	PUNCT	punc	_	28	punct	_	_
-34	hoje	hoje	ADV	adv	_	28	advmod	_	_
+34	hoje	hoje	ADV	adv	_	28	advmod	_	SpaceAfter=No
 35	,	,	PUNCT	punc	_	28	punct	_	_
 36-37	na	_	_	_	_	_	_	_	_
-36	em	em	ADP	prp|<sam->	AdpType=Prep	39	case	_	_
+36	em	em	ADP	prp|<sam->	_	39	case	_	_
 37	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 38	derradeira	derradeiro	ADJ	adj|F|S	Gender=Fem|Number=Sing	39	amod	_	_
-39	sessão	sessão	NOUN	n|F|S	Gender=Fem|Number=Sing	28	nmod	_	_
-40	de	de	ADP	prp	AdpType=Prep	41	case	_	_
-41	qualificação	qualificação	NOUN	n|F|S	Gender=Fem|Number=Sing	39	nmod	_	_
+39	sessão	sessão	NOUN	n|F|S	Gender=Fem|Number=Sing	28	obl	_	_
+40	de	de	ADP	prp	_	41	case	_	_
+41	qualificação	qualificação	NOUN	n|F|S	Gender=Fem|Number=Sing	39	nmod	_	SpaceAfter=No
 42	.	.	PUNCT	punc	_	16	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP826-3
-# sent_id = pt-ud-train.conllu#s4243/pt
-# orig_file_sentence = 043#43
-1	Aquilo	aquilo	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	6	nsubjpass	_	_
-2	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	5	dobj	_	_
-3	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	pilotos	piloto	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nsubj	_	_
-5	temiam	temer	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	acl	_	_
-6-7	confirmou-se	_	_	_	_	_	_	_	_
+# text = Aquilo que os pilotos temiam confirmou-se, com um primeiro dia de treinos muito chuvoso, a dificultar as suas tentativas de qualificação.
+# forest 1
+# source CETEMPúblico n=826 sec=des sem=93a
+# sent_id = CP826-3
+# id 4245
+1	Aquilo	aquilo	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	6	nsubj:pass	_	_
+2	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	5	obj	_	_
+3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	pilotos	piloto	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
+5	temiam	temer	VERB	<mv>|V|IMPF|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	acl	_	_
+6-7	confirmou-se	_	_	_	_	_	_	_	SpaceAfter=No
 6	confirmou	confirmar	VERB	v-fin|<hyfen>|PS|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	auxpass:reflex	_	_
-8	,	,	PUNCT	punc	_	6	punct	_	_
-9	com	com	ADP	prp	AdpType=Prep	12	case	_	_
-10	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-11	primeiro	primeiro	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	12	amod	_	_
-12	dia	dia	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	treinos	treino	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nmod	_	_
-15	muito	muito	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	16	advmod	_	_
-16	chuvoso	chuvoso	ADJ	adj|M|S	Gender=Masc|Number=Sing	12	amod	_	_
-17	,	,	PUNCT	punc	_	12	punct	_	_
-18	a	a	ADP	prp	AdpType=Prep	19	mark	_	_
-19	dificultar	dificultar	VERB	v-inf	VerbForm=Inf	12	acl	_	_
-20	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
-21	suas	seu	DET	pron-det|<poss|3S>|<si>|F|P	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	22	det	_	_
-22	tentativas	tentativa	NOUN	n|F|P	Gender=Fem|Number=Plur	19	dobj	_	_
-23	de	de	ADP	prp	AdpType=Prep	24	case	_	_
-24	qualificação	qualificação	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-25	.	.	PUNCT	punc	_	6	punct	_	_
+7	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl:pass	_	_
+8	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+9	com	com	ADP	PRP|@<ADVL	_	12	case	_	_
+10	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+11	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	12	amod	_	_
+12	dia	dia	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	treinos	treino	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
+15	muito	muito	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	16	advmod	_	_
+16	chuvoso	chuvoso	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	12	amod	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+18	a	a	ADP	PRP|@N<PRED	_	19	mark	_	_
+19	dificultar	dificultar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	acl	_	_
+20	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
+21	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	22	det	_	_
+22	tentativas	tentativa	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	19	obj	_	_
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	qualificação	qualificação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP826-4
-# sent_id = pt-ud-train.conllu#s4244/pt
-# orig_file_sentence = 043#44
-1	Prost	Prost	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	começou	começar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	por	por	ADP	prp	AdpType=Prep	7	mark	_	_
-4	ser	ser	VERB	v-inf	VerbForm=Inf	7	cop	_	_
-5	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	advmod	_	_
-6	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	7	advmod	_	_
-7	rápido	rápido	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	2	xcomp	_	_
-8	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	2	cc	_	_
-9	resolveu	resolver	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
-10	recolher	recolher	VERB	v-inf	VerbForm=Inf	9	xcomp	_	_
+# text = Prost começou por ser o mais rápido mas resolveu recolher às «boxes», aguardando por um final de sessão com menos água.
+# forest 1
+# source CETEMPúblico n=826 sec=des sem=93a
+# sent_id = CP826-4
+# id 4246
+1	Prost	Prost	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	começou	começar	VERB	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	por	por	ADP	PRP|@PRT-AUX<	_	7	mark	_	_
+4	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	cop	_	_
+5	o	o	DET	<artd>|ART|M|S|@>A	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	advmod	_	_
+6	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	7	advmod	_	_
+7	rápido	rápido	ADJ	<n>|<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	2	xcomp	_	_
+8	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
+9	resolveu	resolver	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+10	recolher	recolher	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	9	xcomp	_	_
 11-12	às	_	_	_	_	_	_	_	_
-11	a	a	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-12	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
-13	«	«	PUNCT	punc	_	14	punct	_	_
-14	boxes	boxe	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nmod	_	_
-15	»	»	PUNCT	punc	_	14	punct	_	_
-16	,	,	PUNCT	punc	_	10	punct	_	_
-17	aguardando	aguardar	VERB	v-ger	VerbForm=Ger	10	advcl	_	_
-18	por	por	ADP	prp	AdpType=Prep	20	case	_	_
-19	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	final	final	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	sessão	sessão	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-23	com	com	ADP	prp	AdpType=Prep	25	case	_	_
-24	menos	pouco	DET	pron-det|<quant>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	25	det	_	_
-25	água	água	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-26	.	.	PUNCT	punc	_	2	punct	_	_
+11	a	a	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
+12	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+13	«	«	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+14	boxes	boxe	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	SpaceAfter=No
+15	»	»	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+17	aguardando	aguardar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	10	advcl	_	_
+18	por	por	ADP	PRP|@<ADVL	_	20	case	_	_
+19	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	final	final	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	_
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	sessão	sessão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
+23	com	com	ADP	PRP|@N<	_	25	case	_	_
+24	menos	pouco	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	25	det	_	_
+25	água	água	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP826-5
-# sent_id = pt-ud-train.conllu#s4245/pt
-# orig_file_sentence = 043#45
-1	Pouco	pouco	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	2	advmod	_	_
-2	depois	depois	ADV	adv	_	6	advmod	_	_
-3	,	,	PUNCT	punc	_	6	punct	_	_
-4	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	vez	vez	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-7	de	de	ADP	prp	AdpType=Prep	9	mark	_	_
-8	Senna	Senna	PROPN	prop|M|S	Gender=Masc|Number=Sing	9	nsubj	_	_
-9	bater	bater	VERB	v-inf|3S	Number=Sing|Person=3|VerbForm=Inf	6	acl	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-11	seu	seu	DET	pron-det|<poss|3S>|<si>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	12	det	_	_
-12	tempo	tempo	NOUN	n|M|S	Gender=Masc|Number=Sing	9	dobj	_	_
-13	.	.	PUNCT	punc	_	6	punct	_	_
+# text = Pouco depois, era a vez de Senna bater o seu tempo.
+# forest 1
+# source CETEMPúblico n=826 sec=des sem=93a
+# sent_id = CP826-5
+# id 4247
+1	Pouco	pouco	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	2	advmod	_	_
+2	depois	depois	ADV	ADV|@ADVL>	_	6	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+4	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	vez	vez	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
+7	de	de	ADP	PRP|@N<	_	9	mark	_	_
+8	Senna	Senna	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
+9	bater	bater	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	6	acl	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+11	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	12	det	_	_
+12	tempo	tempo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 4
-# new_sent_id = CP826-6
-# sent_id = pt-ud-train.conllu#s4246/pt
-# orig_file_sentence = 043#46
-1	«	«	PUNCT	punc	_	20	punct	_	_
-2	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	chuva	chuva	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nsubj	_	_
+# text = «A chuva serve-nos perfeitamente porque 'esconde' as diferenças de potência dos motores», regozijou-se, apesar de considerar as condições perigosas:
+# forest 1
+# source CETEMPúblico n=826 sec=des sem=93a
+# sent_id = CP826-6
+# id 4248
+1	«	«	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	chuva	chuva	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 4-5	serve-nos	_	_	_	_	_	_	_	_
 4	serve	servir	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	_	_
-5	-nos	nós	PRON	pron-pers|M/F|1P|ACC	Case=Acc|Number=Plur|Person=1|PronType=Prs	4	dobj	_	_
-6	perfeitamente	perfeitamente	ADV	adv	_	4	advmod	_	_
-7	porque	porque	SCONJ	conj-s	_	9	mark	_	_
-8	'	'	PUNCT	punc	_	9	punct	_	_
-9	esconde	esconder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
-10	'	'	PUNCT	punc	_	9	punct	_	_
-11	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
-12	diferenças	diferença	NOUN	n|F|P	Gender=Fem|Number=Plur	9	dobj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	potência	potência	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
+5	-nos	nós	PRON	pron-pers|M/F|1P|ACC	Case=Acc|Number=Plur|Person=1|PronType=Prs	4	obj	_	_
+6	perfeitamente	perfeitamente	ADV	ADV|@<ADVL	_	4	advmod	_	_
+7	porque	porque	SCONJ	KS|@SUB	_	9	mark	_	_
+8	'	'	PUNCT	PU|@PU	_	9	punct	_	SpaceAfter=No
+9	esconde	esconder	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	SpaceAfter=No
+10	'	'	PUNCT	PU|@PU	_	9	punct	_	_
+11	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
+12	diferenças	diferença	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	9	obj	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	potência	potência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 15-16	dos	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
-17	motores	motor	NOUN	n|M|P	Gender=Masc|Number=Plur	14	nmod	_	_
-18	»	»	PUNCT	punc	_	20	punct	_	_
-19	,	,	PUNCT	punc	_	20	punct	_	_
-20-21	regozijou-se	_	_	_	_	_	_	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	motores	motor	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No
+18	»	»	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+20-21	regozijou-se	_	_	_	_	_	_	_	SpaceAfter=No
 20	regozijou	regozijar	VERB	v-fin|<hyfen>|PS|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-21	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	dobj	_	_
-22	,	,	PUNCT	punc	_	20	punct	_	_
-23	apesar	apesar	ADV	prp	AdpType=Prep	25	mark	_	MWE=apesar_de|MWEPOS=ADP
-24	de	de	ADP	ADP	AdpType=Prep	23	mwe	_	_
-25	considerar	considerar	VERB	v-inf	VerbForm=Inf	20	advcl	_	_
-26	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_
-27	condições	condição	NOUN	n|F|P	Gender=Fem|Number=Plur	25	iobj	_	_
-28	perigosas	perigoso	ADJ	adj|F|P	Gender=Fem|Number=Plur	25	xcomp	_	_
-29	:	:	PUNCT	punc	_	20	punct	_	_
+21	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obj	_	_
+22	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+23	apesar	apesar	ADV	ADV|@<ADVL	_	25	mark	_	MWE=apesar_de|MWEPOS=ADP
+24	de	de	ADP	PRP|@A<	_	23	fixed	_	_
+25	considerar	considerar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	advcl	_	_
+26	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_
+27	condições	condição	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	25	iobj	_	_
+28	perigosas	perigoso	ADJ	ADJ|F|P|@<OC	Gender=Fem|Number=Plur	25	xcomp	_	SpaceAfter=No
+29	:	:	PUNCT	PU|@PU	_	20	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP826-7
-# sent_id = pt-ud-train.conllu#s4247/pt
-# orig_file_sentence = 043#47
-1	«	«	PUNCT	punc	_	16	punct	_	_
-2	Embora	embora	SCONJ	conj-s	_	7	mark	_	_
-3	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	pista	pista	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nsubj	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	Donington	Donington	PROPN	prop|M/F|S	Number=Sing	4	nmod	_	_
-7	tenha	ter	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	_	_
-8	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	drenagem	drenagem	NOUN	n|F|S	Gender=Fem|Number=Sing	7	dobj	_	_
-10	melhor	bom	ADJ	adj|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	9	amod	_	_
-11	que	que	SCONJ	conj-s	_	12	cop	_	_
-12	a	a	DET	pron-det|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	10	nmod	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	Interlagos	Interlagos	PROPN	prop|M/F|S	Number=Sing	12	nmod	_	_
-15	,	,	PUNCT	punc	_	16	punct	_	_
-16	acho	achar	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-17	que	que	SCONJ	conj-s	_	22	mark	_	_
-18	correr	correr	VERB	v-inf	VerbForm=Inf	22	csubj	_	_
-19	aqui	aqui	ADV	adv	_	18	advmod	_	_
-20	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_
-21	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	22	advmod	_	_
-22	perigoso	perigoso	ADJ	adj|M|S	Gender=Masc|Number=Sing	16	ccomp	_	_
-23	»	»	PUNCT	punc	_	16	punct	_	_
-24	.	.	PUNCT	punc	_	16	punct	_	_
+# text = «Embora a pista de Donington tenha uma drenagem melhor que a de Interlagos, acho que correr aqui é mais perigoso».
+# forest 1
+# source CETEMPúblico n=826 sec=des sem=93a
+# sent_id = CP826-7
+# id 4249
+1	«	«	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+2	Embora	embora	SCONJ	KS|@SUB	_	7	mark	_	_
+3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	pista	pista	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	Donington	Donington	PROPN	PROP|M/F|S|@P<	Number=Sing	4	nmod	_	_
+7	tenha	ter	VERB	<mv>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	_	_
+8	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	drenagem	drenagem	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
+10	melhor	bom	ADJ	<KOMP>|<COMP>|ADJ|F|S|@N<	Degree=Cmp|Gender=Fem|Number=Sing	9	amod	_	_
+11	que	que	SCONJ	KS|@COM	_	12	cop	_	_
+12	a	a	DET	<first-cjt>|<dem>|DET|F|S|@KOMP<	Gender=Fem|Number=Sing|PronType=Dem	10	nmod	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	Interlagos	Interlagos	PROPN	PROP|M/F|S|@P<	Number=Sing	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+16	acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+17	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
+18	correr	correr	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	22	csubj	_	_
+19	aqui	aqui	ADV	ADV|@<ADVL	_	18	advmod	_	_
+20	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	_
+21	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	22	advmod	_	_
+22	perigoso	perigoso	ADJ	<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	16	ccomp	_	SpaceAfter=No
+23	»	»	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 

@@ -1,34 +1,36 @@
-# distance_from_new = 0
-# new_sent_id = CP250-1
-# sent_id = pt-ud-train.conllu#s1344/pt
-# orig_file_sentence = 014#44
-1	Pinto	Pinto	PROPN	prop|M|S	_	7	nsubj	_	MWE=Pinto_de_Sousa|MWEPOS=PROPN
-2	de	de	ADP	ADP	AdpType=Prep	3	case	_	_
-3	Sousa	Sousa	PROPN	PROPN	_	1	name	_	_
-4	já	já	ADV	adv	_	7	advmod	_	MWE=já_não|MWEPOS=ADV
-5	não	não	PART	PART	Negative=Neg	4	mwe	_	_
-6	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-7	candidato	candidato	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Pinto de Sousa já não é candidato à presidência da Liga
+# forest 1
+# source CETEMPúblico ext n=250 sec=des sem=96b
+# sent_id = CP250-1
+# id 1345
+1	Pinto	Pinto	PROPN	PROP|M|S|@SUBJ>	_	7	nsubj	_	MWE=Pinto_de_Sousa|MWEPOS=PROPN
+2	de	de	ADP	PRP|@N<	_	3	case	_	_
+3	Sousa	Sousa	PROPN	PROP|@P<	_	1	flat	_	_
+4	já	já	ADV	_	_	7	advmod	_	MWE=já_não|MWEPOS=ADV
+5	não	não	PART	_	Polarity=Neg	4	fixed	_	_
+6	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+7	candidato	candidato	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 8-9	à	_	_	_	_	_	_	_	_
-8	a	a	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	pron-det|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing	10	det	_	_
-10	presidência	presidência	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
+8	a	a	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing	10	det	_	_
+10	presidência	presidência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
 11-12	da	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	a	o	DET	pron-det|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing	13	det	_	_
-13	Liga	liga	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
+11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	a	o	DET	<-sam>|<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing	13	det	_	_
+13	Liga	liga	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP250-2
-# sent_id = pt-ud-train.conllu#s1345/pt
-# orig_file_sentence = 014#45
-1	Benfica	Benfica	PROPN	prop|M|S	Gender=Masc|Number=Sing	4	nsubj	_	_
-2	e	e	CONJ	conj-c|<co-subj>	_	1	cc	_	_
-3	Sporting	Sporting	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	conj	_	_
-4	dizem	dizer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	não	não	ADV	adv	_	4	dobj	_	_
+# text = Benfica e Sporting dizem não às eleições
+# forest 1
+# source CETEMPúblico ext n=250 sec=des sem=96b
+# sent_id = CP250-2
+# id 1346
+1	Benfica	Benfica	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
+3	Sporting	Sporting	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	_
+4	dizem	dizer	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	não	não	ADV	ADV|@<ACC	Polarity=Neg	4	obj	_	_
 6-7	às	_	_	_	_	_	_	_	_
-6	a	a	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	as	o	DET	pron-det|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur	8	det	_	_
-8	eleições	eleição	NOUN	n|F|P	Gender=Fem|Number=Plur	4	dobj	_	_
+6	a	a	ADP	<sam->|PRP|@<PIV	_	8	case	_	_
+7	as	o	DET	<-sam>|<artd>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur	8	det	_	_
+8	eleições	eleição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obj	_	_
 

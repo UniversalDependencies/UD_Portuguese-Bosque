@@ -1,22 +1,24 @@
-# distance_from_new = 0
-# new_sent_id = CF18-1
-# sent_id = pt-ud-train.conllu#s5113/pt
-# orig_file_sentence = 052#13
-1	Talvez	talvez	ADV	adv	_	5	advmod	_	_
-2	isto	isto	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	_	_
-3	seja	ser	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
-4	muito	muito	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
-5	barulho	barulho	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-6	por	por	ADP	prp	AdpType=Prep	7	case	_	_
-7	nada	nada	PRON	pron-indp|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	nmod	_	_
-8	.	.	PUNCT	punc	_	5	punct	_	_
+# text = Talvez isto seja muito barulho por nada.
+# forest 1
+# source CETENFolha n=18 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF18-1
+# id 71
+1	Talvez	talvez	ADV	ADV|@ADVL>	_	5	advmod	_	_
+2	isto	isto	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	_	_
+3	seja	ser	AUX	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	muito	muito	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
+5	barulho	barulho	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+6	por	por	ADP	PRP|@N<	_	7	case	_	_
+7	nada	nada	PRON	<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF18-2
-# sent_id = pt-ud-train.conllu#s5114/pt
-# orig_file_sentence = 052#14
-1	Original	original	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	:	:	PUNCT	punc	_	1	punct	_	_
-3	Cícero	Cícero	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-4	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Original: Cícero.
+# forest 1
+# source CETENFolha n=18 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF18-2
+# id 72
+1	Original	original	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
+3	Cícero	Cícero	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
+4	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

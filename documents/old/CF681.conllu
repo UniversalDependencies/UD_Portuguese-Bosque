@@ -1,163 +1,171 @@
-# distance_from_new = 0
-# new_sent_id = CF681-1
-# sent_id = pt-ud-train.conllu#s7901/pt
-# orig_file_sentence = 080#1
-1	Ceará	Ceará	PROPN	prop|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Ceará
+# forest 1
+# source CETENFolha n=681 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF681-1
+# id 2859
+1	Ceará	Ceará	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF681-2
-# sent_id = pt-ud-train.conllu#s7902/pt
-# orig_file_sentence = 080#2
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	líder	líder	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nsubj	_	_
-3	Tasso	Tasso	PROPN	prop|M|S	_	2	nmod	_	MWE=Tasso_Jereissati|MWEPOS=PROPN
-4	Jereissati	Jereissati	PROPN	PROPN	_	3	name	_	_
-5	(	(	PUNCT	punc	_	2	punct	_	_
-6	PSDB	PSDB	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-7	)	)	PUNCT	punc	_	2	punct	_	_
-8	passou	passar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-9	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-10	61	61	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
-11	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	8	dobj	_	_
-12	para	para	ADP	prp	AdpType=Prep	14	case	_	_
-13	58	58	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	_
-14	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	11	nmod	_	_
-15	,	,	PUNCT	punc	_	8	punct	_	_
-16	perdendo	perder	VERB	v-ger	VerbForm=Ger	8	advcl	_	_
-17	três	três	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
-18	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	16	dobj	_	_
-19	percentuais	percentual	ADJ	adj|M|P	Gender=Masc|Number=Plur	18	amod	_	_
-20	em	em	ADP	prp|<ALT>	AdpType=Prep	25	case	_	MWE=em_relação_a|MWEPOS=ADP
-21	relação	relação	NOUN	NOUN	_	20	mwe	_	_
+# text = O líder Tasso Jereissati (PSDB) passou de 61 % para 58 %, perdendo três pontos percentuais em relação à última pesquisa.
+# forest 1
+# source CETENFolha n=681 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF681-2
+# id 2860
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	líder	líder	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
+3	Tasso	Tasso	PROPN	_	_	2	nmod	_	MWE=Tasso_Jereissati|MWEPOS=PROPN
+4	Jereissati	Jereissati	PROPN	_	_	3	flat	_	_
+5	(	(	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+6	PSDB	PSDB	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+7	)	)	PUNCT	PU|@PU	_	2	punct	_	_
+8	passou	passar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	de	de	ADP	PRP|@<PIV	_	11	case	_	_
+10	61	61	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
+11	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obj	_	_
+12	para	para	ADP	PRP|@P<	_	14	case	_	_
+13	58	58	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	_
+14	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+16	perdendo	perder	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	8	advcl	_	_
+17	três	três	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
+18	pontos	ponto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	obj	_	_
+19	percentuais	percentual	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	18	amod	_	_
+20	em	em	ADP	PRP|@N<	_	25	case	_	MWE=em_relação_a|MWEPOS=ADP
+21	relação	relação	NOUN	N|@P<	_	20	fixed	_	_
 22-23	à	_	_	_	_	_	_	_	_
-22	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	mwe	_	_
-23	a	o	DET	art|<ALT>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art|Typo=Yes	25	det	_	_
-24	última	último	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	25	amod	_	_
-25	pesquisa	pesquisa	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nmod	_	_
-26	.	.	PUNCT	punc	_	8	punct	_	_
+22	a	a	DET	PRP|@N<	Gender=Fem|Number=Sing|PronType=Art	20	fixed	_	_
+23	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art|Typo=Yes	25	det	_	_
+24	última	último	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	25	amod	_	_
+25	pesquisa	pesquisa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF681-3
-# sent_id = pt-ud-train.conllu#s7903/pt
-# orig_file_sentence = 080#3
-1	Não	não	ADV	adv	_	3	neg	_	_
-2	deve	dever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	haver	haver	VERB	v-inf	VerbForm=Inf	2	xcomp	_	_
-4	segundo	segundo	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	_
-5	turno	turno	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
+# text = Não deve haver segundo turno no Estado.
+# forest 1
+# source CETENFolha n=681 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF681-3
+# id 2861
+1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
+2	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	_
+4	segundo	segundo	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	_
+5	turno	turno	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 6-7	no	_	_	_	_	_	_	_	_
-6	em	em	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Estado	estado	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
-9	.	.	PUNCT	punc	_	2	punct	_	_
+6	em	em	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF681-4
-# sent_id = pt-ud-train.conllu#s7904/pt
-# orig_file_sentence = 080#4
-1	Mato	Mato	PROPN	prop|M|S	_	0	root	_	MWE=Mato_Grosso_do_Sul|MWEPOS=PROPN
-2	Grosso	Grosso	PROPN	PROPN	_	1	name	_	_
+# text = Mato Grosso do Sul
+# forest 1
+# source CETENFolha n=681 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF681-4
+# id 2862
+1	Mato	Mato	PROPN	_	_	0	root	_	MWE=Mato_Grosso_do_Sul|MWEPOS=PROPN
+2	Grosso	Grosso	PROPN	_	_	1	flat	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Sul	Sul	PROPN	PROPN	_	1	name	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Sul	Sul	PROPN	PROP|@P<	_	1	flat	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF681-5
-# sent_id = pt-ud-train.conllu#s7905/pt
-# orig_file_sentence = 080#5
-1	Wilson	Wilson	PROPN	prop|M|S	_	6	nsubj	_	MWE=Wilson_Barbosa|MWEPOS=PROPN
-2	Barbosa	Barbosa	PROPN	PROPN	_	1	name	_	_
-3	(	(	PUNCT	punc	_	1	punct	_	_
-4	PMDB	PMDB	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-5	)	)	PUNCT	punc	_	1	punct	_	_
-6	subiu	subir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	seis	seis	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
-8	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	6	dobj	_	_
-9	,	,	PUNCT	punc	_	6	punct	_	_
-10	atingindo	atingir	VERB	v-ger	VerbForm=Ger	6	advcl	_	_
-11	55	55	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-12	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
-13	.	.	PUNCT	punc	_	6	punct	_	_
+# text = Wilson Barbosa (PMDB) subiu seis pontos, atingindo 55 %.
+# forest 1
+# source CETENFolha n=681 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF681-5
+# id 2863
+1	Wilson	Wilson	PROPN	_	_	6	nsubj	_	MWE=Wilson_Barbosa|MWEPOS=PROPN
+2	Barbosa	Barbosa	PROPN	_	_	1	flat	_	_
+3	(	(	PUNCT	PU|@PU	_	1	punct	_	SpaceAfter=No
+4	PMDB	PMDB	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
+5	)	)	PUNCT	PU|@PU	_	1	punct	_	_
+6	subiu	subir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	seis	seis	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
+8	pontos	ponto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	obj	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+10	atingindo	atingir	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	6	advcl	_	_
+11	55	55	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+12	%	%	SYM	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	obj	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF681-6
-# sent_id = pt-ud-train.conllu#s7906/pt
-# orig_file_sentence = 080#6
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	candidato	candidato	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nsubj	_	_
-3	também	também	ADV	adv	_	5	advmod	_	_
-4	deve	dever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	vencer	vencer	VERB	v-inf	VerbForm=Inf	4	xcomp	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	eleição	eleição	NOUN	n|F|S	Gender=Fem|Number=Sing	5	dobj	_	_
+# text = O candidato também deve vencer a eleição no primeiro turno.
+# forest 1
+# source CETENFolha n=681 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF681-6
+# id 2864
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	candidato	candidato	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	também	também	ADV	ADV|@ADVL>	_	5	advmod	_	_
+4	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	vencer	vencer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	eleição	eleição	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	_
 8-9	no	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-9	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-10	primeiro	primeiro	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	11	amod	_	_
-11	turno	turno	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-12	.	.	PUNCT	punc	_	4	punct	_	_
+8	em	em	ADP	<sam->|PRP|@<ADVL	_	11	case	_	_
+9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+10	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	11	amod	_	_
+11	turno	turno	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF681-7
-# sent_id = pt-ud-train.conllu#s7907/pt
-# orig_file_sentence = 080#7
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	margem	margem	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	erro	erro	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
+# text = A margem de erro da pesquisa Datafolha é de 3,0 pontos percentuais, para mais ou para menos, exceto no Distrito Federal, que é de 4,0 pontos.
+# forest 1
+# source CETENFolha n=681 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF681-7
+# id 2865
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	margem	margem	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	erro	erro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 5-6	da	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	pesquisa	pesquisa	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-8	Datafolha	Datafolha	PROPN	prop|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-9	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
-10	de	de	ADP	prp	AdpType=Prep	12	case	_	_
-11	3,0	3,0	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-12	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
-13	percentuais	percentual	ADJ	adj|M|P	Gender=Masc|Number=Plur	12	amod	_	_
-14	,	,	PUNCT	punc	_	12	punct	_	_
-15	para	para	ADP	prp	AdpType=Prep	16	case	_	_
-16	mais	muito	PRON	pron-det|<quant>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	12	advmod	_	_
-17	ou	ou	CONJ	conj-c|<co-advl>	_	16	cc	_	_
-18	para	para	ADP	prp	AdpType=Prep	19	case	_	_
-19	menos	pouco	PRON	pron-det|<quant>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	16	conj	_	_
-20	,	,	PUNCT	punc	_	12	punct	_	_
-21	exceto	exceto	ADP	prp	AdpType=Prep	24	case	_	_
+5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	pesquisa	pesquisa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+8	Datafolha	Datafolha	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	7	nmod	_	_
+9	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
+10	de	de	ADP	PRP|@<SC	_	12	case	_	_
+11	3,0	3,0	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+12	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	0	root	_	_
+13	percentuais	percentual	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	12	amod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+15	para	para	ADP	<first-cjt>|PRP|@<ADVL	_	16	case	_	_
+16	mais	muito	PRON	<quant>|<KOMP>|<COMP>|DET|M|P|@P<	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	12	advmod	_	_
+17	ou	ou	CCONJ	<co-advl>|KC|@CO	_	19	cc	_	_
+18	para	para	ADP	<cjt>|PRP|@<ADVL	_	19	case	_	_
+19	menos	pouco	PRON	<quant>|<KOMP>|<COMP>|DET|M|P|@P<	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	16	conj	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+21	exceto	exceto	ADP	PRP|@<ADVL	_	24	case	_	_
 22-23	no	_	_	_	_	_	_	_	_
-22	em	em	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	Distrito	Distrito	PROPN	prop|M|S	_	12	nmod	_	MWE=Distrito_Federal|MWEPOS=PROPN
-25	Federal	Federal	PROPN	PROPN	_	24	name	_	_
-26	,	,	PUNCT	punc	_	24	punct	_	_
-27	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	31	nsubj	_	_
-28	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	_
-29	de	de	ADP	prp	AdpType=Prep	31	case	_	_
-30	4,0	4,0	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	31	nummod	_	_
-31	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	24	acl	_	_
-32	.	.	PUNCT	punc	_	12	punct	_	_
+22	em	em	ADP	<sam->|PRP|@P<	_	24	case	_	_
+23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	Distrito	Distrito	PROPN	PROP|M|S|@P<	_	12	obl	_	MWE=Distrito_Federal|MWEPOS=PROPN
+25	Federal	Federal	PROPN	PROP|@N<	_	24	flat	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+27	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	31	nsubj	_	_
+28	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	_
+29	de	de	ADP	PRP|@<SC	_	31	case	_	_
+30	4,0	4,0	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	31	nummod	_	_
+31	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	acl	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF681-8
-# sent_id = pt-ud-train.conllu#s7908/pt
-# orig_file_sentence = 080#8
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	direção	direção	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nsubj	_	_
+# text = A direção do datafolha é dos sociólogos Antonio Manuel Teixeira Mendes e Gustavo Venturi.
+# forest 1
+# source CETENFolha n=681 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF681-8
+# id 2866
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	direção	direção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	datafolha	datafolha	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	datafolha	datafolha	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+6	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
 7-8	dos	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
-9	sociólogos	sociólogo	NOUN	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
-10	Antonio	Antonio	PROPN	prop|M|S	_	9	nmod	_	MWE=Antonio_Manuel_Teixeira_Mendes|MWEPOS=PROPN
-11	Manuel	Manuel	PROPN	PROPN	_	10	name	_	_
-12	Teixeira	Teixeira	PROPN	PROPN	_	10	name	_	_
-13	Mendes	Mendes	PROPN	PROPN	_	10	name	_	_
-14	e	e	CONJ	conj-c|<co-postnom>	_	10	cc	_	_
-15	Gustavo	Gustavo	PROPN	prop|M|S	_	10	conj	_	MWE=Gustavo_Venturi|MWEPOS=PROPN
-16	Venturi	Venturi	PROPN	PROPN	_	15	name	_	_
-17	.	.	PUNCT	punc	_	9	punct	_	_
+7	de	de	ADP	<sam->|PRP|@<SC	_	9	case	_	_
+8	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+9	sociólogos	sociólogo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	0	root	_	_
+10	Antonio	Antonio	PROPN	_	_	9	nmod	_	MWE=Antonio_Manuel_Teixeira_Mendes|MWEPOS=PROPN
+11	Manuel	Manuel	PROPN	_	_	10	flat	_	_
+12	Teixeira	Teixeira	PROPN	_	_	10	flat	_	_
+13	Mendes	Mendes	PROPN	_	_	10	flat	_	_
+14	e	e	CCONJ	<co-postnom>|KC|@CO	_	15	cc	_	_
+15	Gustavo	Gustavo	PROPN	_	_	10	conj	_	MWE=Gustavo_Venturi|MWEPOS=PROPN
+16	Venturi	Venturi	PROPN	_	_	15	flat	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 

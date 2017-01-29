@@ -1,49 +1,51 @@
-# distance_from_new = 0
-# new_sent_id = CP619-1
-# sent_id = pt-ud-train.conllu#s3234/pt
-# orig_file_sentence = 033#34
-1	Homem	homem	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	morto	morrer	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
-3	a	a	ADP	prp	AdpType=Prep	4	case	_	_
-4	tiro	tiro	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
+# text = Homem morto a tiro
+# forest 1
+# source CETEMPúblico n=619 sec=soc sem=91b
+# sent_id = CP619-1
+# id 3235
+1	Homem	homem	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	morto	morrer	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
+3	a	a	ADP	PRP|@<ADVL	_	4	case	_	_
+4	tiro	tiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP619-2
-# sent_id = pt-ud-train.conllu#s3235/pt
-# orig_file_sentence = 033#35
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Polícia	Polícia	PROPN	prop|F|S	_	4	nsubj	_	MWE=Polícia_Judiciária|MWEPOS=PROPN
-3	Judiciária	Judiciária	PROPN	PROPN	_	2	name	_	_
-4	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	a	a	ADP	prp	AdpType=Prep	6	mark	_	_
-6	investigar	investigar	VERB	v-inf	VerbForm=Inf	4	xcomp	_	_
-7	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	morte	morte	NOUN	n|F|S	Gender=Fem|Number=Sing	6	dobj	_	_
-9	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-10	José	José	PROPN	prop|M|S	_	8	nmod	_	MWE=José_António_Tomé|MWEPOS=PROPN
-11	António	António	PROPN	PROPN	_	10	name	_	_
-12	Tomé	Tomé	PROPN	PROPN	_	10	name	_	_
-13	,	,	PUNCT	punc	_	10	punct	_	_
-14	de	de	ADP	prp	AdpType=Prep	16	case	_	_
-15	39	39	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	16	nummod	_	_
-16	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nmod	_	_
-17	,	,	PUNCT	punc	_	10	punct	_	_
-18	cujo	cujo	DET	pron-det|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	19	det	_	_
-19	corpo	corpo	NOUN	n|M|S	Gender=Masc|Number=Sing	21	nsubjpass	_	_
-20	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	auxpass	_	_
-21	encontrado	encontrar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
-22	,	,	PUNCT	punc	_	21	punct	_	_
-23	ontem	ontem	ADV	adv	_	21	advmod	_	_
-24	de	de	ADP	pp	AdpType=Prep	23	advmod	_	MWE=de_madrugada|MWEPOS=ADV
-25	madrugada	madrugada	NOUN	NOUN	_	24	mwe	_	_
-26	,	,	PUNCT	punc	_	21	punct	_	_
-27	em	em	ADP	prp	AdpType=Prep	28	case	_	_
-28	Trovões	Trovões	PROPN	prop|M/F|S/P	_	21	nmod	_	_
-29	,	,	PUNCT	punc	_	28	punct	_	_
-30	S.João	S.João	PROPN	prop|M|S	_	28	nmod	_	MWE=S.João_da_Pesqueira|MWEPOS=PROPN
+# text = A Polícia Judiciária está a investigar a morte de José António Tomé, de 39 anos, cujo corpo foi encontrado, ontem de madrugada, em Trovões, S.João da Pesqueira.
+# forest 1
+# source CETEMPúblico n=619 sec=soc sem=91b
+# sent_id = CP619-2
+# id 3236
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Polícia	Polícia	PROPN	_	_	4	nsubj	_	MWE=Polícia_Judiciária|MWEPOS=PROPN
+3	Judiciária	Judiciária	PROPN	_	_	2	flat	_	_
+4	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	a	a	ADP	PRP|@PRT-AUX<	_	6	mark	_	_
+6	investigar	investigar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
+7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	morte	morte	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
+9	de	de	ADP	PRP|@N<	_	10	case	_	_
+10	José	José	PROPN	_	_	8	nmod	_	MWE=José_António_Tomé|MWEPOS=PROPN
+11	António	António	PROPN	_	_	10	flat	_	_
+12	Tomé	Tomé	PROPN	_	_	10	flat	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+14	de	de	ADP	PRP|@N<PRED	_	16	case	_	_
+15	39	39	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	16	nummod	_	_
+16	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+18	cujo	cujo	DET	<rel>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Rel	19	det	_	_
+19	corpo	corpo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
+20	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	acl	_	_
+21	encontrado	encontrar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	20	ccomp	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+23	ontem	ontem	ADV	ADV|@<ADVL	_	21	advmod	_	_
+24	de	de	ADP	PRP|@A<	_	23	advmod	_	MWE=de_madrugada|MWEPOS=ADV
+25	madrugada	madrugada	NOUN	N|F|S|@P<	_	24	fixed	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+27	em	em	ADP	PRP|@<ADVL	_	28	case	_	_
+28	Trovões	Trovões	PROPN	PROP|M|S|@P<	_	21	obl	_	SpaceAfter=No
+29	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+30	S.João	S.João	PROPN	PROP|M|S|@N<PRED	_	28	nmod	_	MWE=S.João_da_Pesqueira|MWEPOS=PROPN
 31-32	da	_	_	_	_	_	_	_	_
-31	de	de	ADP	prp|<sam->	AdpType=Prep	33	case	_	_
-32	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	Pesqueira	Pesqueira	PROPN	PROPN	_	30	name	_	_
-34	.	.	PUNCT	punc	_	4	punct	_	_
+31	de	de	ADP	<sam->|PRP|@N<	_	33	case	_	_
+32	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+33	Pesqueira	Pesqueira	PROPN	PROP|@P<	_	30	flat	_	SpaceAfter=No
+34	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

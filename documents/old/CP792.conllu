@@ -1,118 +1,121 @@
-# distance_from_new = 2
-# new_sent_id = CP792-1
-# sent_id = pt-ud-train.conllu#s4058/pt
-# orig_file_sentence = 041#58
-1	Entretanto	entretanto	ADV	adv|<kc>	_	5	advmod	_	_
-2	,	,	PUNCT	punc	_	5	punct	_	_
-3	Couto	Couto	PROPN	prop|M|S	_	5	nsubj	_	MWE=Couto_Ferreira|MWEPOS=PROPN
-4	Ferreira	Ferreira	PROPN	PROPN	_	3	name	_	_
-5	apresentava	apresentar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-6	ontem	ontem	ADV	adv	_	5	advmod	_	_
-7	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-8	alto	alto	ADJ	adj|M|S	Gender=Masc|Number=Sing	9	amod	_	_
-9	teor	teor	NOUN	n|M|S	Gender=Masc|Number=Sing	5	dobj	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	ácido	ácido	NOUN	n|M|S	_	9	nmod	_	MWE=ácido_úrico|MWEPOS=NOUN
-12	úrico	úrico	NOUN	NOUN	_	11	compound	_	_
+# text = Entretanto, Couto Ferreira apresentava ontem um alto teor de ácido úrico no sangue e encontrava-se em acelerado emagrecimento, segundo informou o director-clínico do Hospital Prisional S.João de Deus, Manuel Pinéu.
+# forest 1
+# source CETEMPúblico n=792 sec=soc sem=95a
+# sent_id = CP792-1
+# id 4060
+1	Entretanto	entretanto	ADV	<kc>|ADV|@ADVL>	_	5	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+3	Couto	Couto	PROPN	_	_	5	nsubj	_	MWE=Couto_Ferreira|MWEPOS=PROPN
+4	Ferreira	Ferreira	PROPN	_	_	3	flat	_	_
+5	apresentava	apresentar	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+6	ontem	ontem	ADV	ADV|@<ADVL	_	5	advmod	_	_
+7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	alto	alto	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	9	amod	_	_
+9	teor	teor	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
+10	de	de	ADP	PRP|@N<ARG	_	11	case	_	_
+11	ácido	ácido	NOUN	_	_	9	nmod	_	MWE=ácido_úrico|MWEPOS=NOUN
+12	úrico	úrico	NOUN	_	_	11	compound	_	_
 13-14	no	_	_	_	_	_	_	_	_
-13	em	em	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	sangue	sangue	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-16	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	5	cc	_	_
+13	em	em	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	sangue	sangue	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
+16	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	_
 17-18	encontrava-se	_	_	_	_	_	_	_	_
 17	encontrava	encontrar	VERB	v-fin|<hyfen>|IMPF|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	conj	_	_
-18	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	17	dobj	_	_
-19	em	em	ADP	prp	AdpType=Prep	21	case	_	_
-20	acelerado	acelerar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	21	acl	_	_
-21	emagrecimento	emagrecimento	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-22	,	,	PUNCT	punc	_	5	punct	_	_
-23	segundo	segundo	ADP	prp	AdpType=Prep	24	mark	_	_
-24	informou	informar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	_
-25	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	director-clínico	director-clínico	NOUN	n|M|S	_	24	nsubj	_	MWE=director-clínico_do_Hospital_Prisional_S.João_de_Deus|MWEPOS=NOUN
+18	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	17	obj	_	_
+19	em	em	ADP	PRP|@<OA	_	21	case	_	_
+20	acelerado	acelerar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	21	acl	_	_
+21	emagrecimento	emagrecimento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+23	segundo	segundo	ADP	PRP|@<ADVL	_	24	mark	_	_
+24	informou	informar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	_
+25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	director-clínico	director-clínico	NOUN	<np-def>|N|M|S|@<SUBJ	_	24	nsubj	_	MWE=director-clínico_do_Hospital_Prisional_S.João_de_Deus|MWEPOS=NOUN
 27-28	do	_	_	_	_	_	_	_	_
-27	de	de	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	Hospital	Hospital	NOUN	NOUN	_	26	compound	_	_
-30	Prisional	Prisional	NOUN	NOUN	_	26	compound	_	_
-31	S.João	S.João	NOUN	NOUN	_	26	compound	_	_
-32	de	de	ADP	ADP	AdpType=Prep	33	case	_	_
-33	Deus	Deus	NOUN	NOUN	_	26	compound	_	_
-34	,	,	PUNCT	punc	_	26	punct	_	_
-35	Manuel	Manuel	PROPN	prop|M|S	_	26	appos	_	MWE=Manuel_Pinéu|MWEPOS=PROPN
-36	Pinéu	Pinéu	PROPN	PROPN	_	35	name	_	_
-37	.	.	PUNCT	punc	_	5	punct	_	_
+27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
+28	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	Hospital	Hospital	NOUN	N|@P<	_	26	compound	_	_
+30	Prisional	Prisional	NOUN	ADJ|@N<	_	26	compound	_	_
+31	S.João	S.João	NOUN	ADJ|@N<	_	26	compound	_	_
+32	de	de	ADP	PRP|@N<	_	33	case	_	_
+33	Deus	Deus	NOUN	N|@P<	_	26	compound	_	SpaceAfter=No
+34	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+35	Manuel	Manuel	PROPN	_	_	26	appos	_	MWE=Manuel_Pinéu|MWEPOS=PROPN
+36	Pinéu	Pinéu	PROPN	_	_	35	flat	_	SpaceAfter=No
+37	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP792-2
-# sent_id = pt-ud-train.conllu#s4059/pt
-# orig_file_sentence = 041#59
-1	«	«	PUNCT	punc	_	33	punct	_	_
-2	Por	por	ADP	pp	AdpType=Prep	11	advmod	_	MWE=Por_agora|MWEPOS=ADV
-3	agora	agora	ADV	ADV	_	2	mwe	_	_
-4	,	,	PUNCT	punc	_	11	punct	_	_
-5	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
-6	alterações	alteração	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nsubj	_	_
-7	registadas	registar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	6	acl	_	_
-8	ainda	ainda	ADV	adv	_	9	advmod	_	_
-9	não	não	ADV	adv	_	11	neg	_	_
-10	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
-11	irreversíveis	irreversível	ADJ	adj|F|P	Gender=Fem|Number=Plur	33	ccomp	_	_
-12	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	11	cc	_	_
-13	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	presença	presença	NOUN	n|F|S	Gender=Fem|Number=Sing	25	nsubj	_	_
+# text = «Por agora, as alterações registadas ainda não são irreversíveis mas a presença dum elevado teor de ácido úrico no sangue pode ter consequências a nível renal», frisou o citado médico.
+# forest 1
+# source CETEMPúblico n=792 sec=soc sem=95a
+# sent_id = CP792-2
+# id 4061
+1	«	«	PUNCT	PU|@PU	_	33	punct	_	SpaceAfter=No
+2	Por	por	ADP	PRP|@ADVL>	_	11	advmod	_	MWE=Por_agora|MWEPOS=ADV
+3	agora	agora	ADV	N|F|S|@P<	_	2	fixed	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+5	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
+6	alterações	alteração	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	11	nsubj	_	_
+7	registadas	registar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	6	acl	_	_
+8	ainda	ainda	ADV	ADV|@>A	_	9	advmod	_	_
+9	não	não	ADV	_	Polarity=Neg	11	advmod	_	_
+10	são	ser	AUX	<first-cjt>|<mv>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+11	irreversíveis	irreversível	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	33	ccomp	_	_
+12	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	25	cc	_	_
+13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	presença	presença	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	25	nsubj	_	_
 15-16	dum	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp	AdpType=Prep	18	case	_	_
-16	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-17	elevado	elevar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	_	_
-18	teor	teor	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-20	ácido	ácido	NOUN	n|M|S	_	18	nmod	_	MWE=ácido_úrico|MWEPOS=NOUN
-21	úrico	úrico	NOUN	NOUN	_	20	compound	_	_
+15	de	de	ADP	PRP|@N<	_	18	case	_	_
+16	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+17	elevado	elevar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	_	_
+18	teor	teor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
+19	de	de	ADP	PRP|@N<ARG	_	20	case	_	_
+20	ácido	ácido	NOUN	_	_	18	nmod	_	MWE=ácido_úrico|MWEPOS=NOUN
+21	úrico	úrico	NOUN	_	_	20	compound	_	_
 22-23	no	_	_	_	_	_	_	_	_
-22	em	em	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	sangue	sangue	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-25	pode	poder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
-26	ter	ter	VERB	v-inf	VerbForm=Inf	25	xcomp	_	_
-27	consequências	consequência	NOUN	n|F|P	Gender=Fem|Number=Plur	26	dobj	_	_
-28	a	a	ADP	prp	AdpType=Prep	29	case	_	_
-29	nível	nível	NOUN	n|M|S	Gender=Masc|Number=Sing	27	nmod	_	_
-30	renal	renal	ADJ	adj|M|S	Gender=Masc|Number=Sing	29	amod	_	_
-31	»	»	PUNCT	punc	_	33	punct	_	_
-32	,	,	PUNCT	punc	_	33	punct	_	_
-33	frisou	frisar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-34	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-35	citado	citar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	36	acl	_	_
-36	médico	médico	NOUN	n|M|S	Gender=Masc|Number=Sing	33	nsubj	_	_
-37	.	.	PUNCT	punc	_	33	punct	_	_
+22	em	em	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	sangue	sangue	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
+25	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+26	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	xcomp	_	_
+27	consequências	consequência	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	26	obj	_	_
+28	a	a	ADP	PRP|@N<	_	29	case	_	_
+29	nível	nível	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
+30	renal	renal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	29	amod	_	SpaceAfter=No
+31	»	»	PUNCT	PU|@PU	_	33	punct	_	SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	33	punct	_	_
+33	frisou	frisar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+34	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+35	citado	citar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	36	acl	_	_
+36	médico	médico	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	33	nsubj	_	SpaceAfter=No
+37	.	.	PUNCT	PU|@PU	_	33	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP792-3
-# sent_id = pt-ud-train.conllu#s4060/pt
-# orig_file_sentence = 041#60
-1	Couto	Couto	PROPN	prop|M|S	_	3	nsubj	_	MWE=Couto_Ferreira|MWEPOS=PROPN
-2	Ferreira	Ferreira	PROPN	PROPN	_	1	name	_	_
+# text = Couto Ferreira encontra-se a ser acompanhado pelo médico mas recusou qualquer tipo de tratamento, caso entre em coma.
+# forest 1
+# source CETEMPúblico n=792 sec=soc sem=95a
+# sent_id = CP792-3
+# id 4062
+1	Couto	Couto	PROPN	_	_	3	nsubj	_	MWE=Couto_Ferreira|MWEPOS=PROPN
+2	Ferreira	Ferreira	PROPN	_	_	1	flat	_	_
 3-4	encontra-se	_	_	_	_	_	_	_	_
 3	encontra	encontrar	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	iobj	_	_
-5	a	a	ADP	prp	AdpType=Prep	7	mark	_	_
-6	ser	ser	VERB	v-inf	VerbForm=Inf	7	auxpass	_	_
-7	acompanhado	acompanhar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	3	xcomp	_	_
+5	a	a	ADP	PRP|@<OC	_	6	mark	_	_
+6	ser	ser	VERB	<aux>|V|INF|@ICL-P<	VerbForm=Inf	3	xcomp	_	_
+7	acompanhado	acompanhar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	6	ccomp	_	_
 8-9	pelo	_	_	_	_	_	_	_	_
-8	por	por	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	médico	médico	NOUN	n|M|S	Gender=Masc|Number=Sing	7	dobj	_	_
-11	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	3	cc	_	_
-12	recusou	recusar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
-13	qualquer	qualquer	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	14	det	_	_
-14	tipo	tipo	NOUN	n|M|S	Gender=Masc|Number=Sing	12	dobj	_	_
-15	de	de	ADP	prp	AdpType=Prep	16	case	_	_
-16	tratamento	tratamento	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-17	,	,	PUNCT	punc	_	12	punct	_	_
-18	caso	caso	SCONJ	conj-s	_	19	mark	_	_
-19	entre	entrar	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
-20	em	em	ADP	prp	AdpType=Prep	21	case	_	_
-21	coma	coma	NOUN	n|M|S	Gender=Masc|Number=Sing	19	nmod	_	_
-22	.	.	PUNCT	punc	_	3	punct	_	_
+8	por	por	ADP	PRP|@PASS	_	10	case	_	_
+9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	médico	médico	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obj	_	_
+11	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
+12	recusou	recusar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
+13	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	14	det	_	_
+14	tipo	tipo	NOUN	<meta>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
+15	de	de	ADP	PRP|@N<	_	16	case	_	_
+16	tratamento	tratamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+18	caso	caso	SCONJ	KS|@SUB	_	19	mark	_	_
+19	entre	entrar	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
+20	em	em	ADP	PRP|@<SA	_	21	case	_	_
+21	coma	coma	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

@@ -1,81 +1,83 @@
-# distance_from_new = 0
-# new_sent_id = CF719-1
-# sent_id = pt-ud-train.conllu#s8062/pt
-# orig_file_sentence = 081#62
-1	Durante	durante	ADP	prp	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	negociação	negociação	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-4	,	,	PUNCT	punc	_	11	punct	_	_
-5	ontem	ontem	ADV	adv	_	11	advmod	_	_
+# text = Durante a negociação, ontem à tarde, Muller telefonou para o presidente do São Paulo, Fernando Casal de Rey, e se lamentou.
+# forest 1
+# source CETENFolha n=719 cad=Esporte sec=des sem=94a
+# sent_id = CF719-1
+# id 3020
+1	Durante	durante	ADP	PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	negociação	negociação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+5	ontem	ontem	ADV	ADV|@ADVL>	_	11	advmod	_	_
 6-7	à	_	_	_	_	_	_	_	_
-6	a	a	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	tarde	tarde	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-9	,	,	PUNCT	punc	_	11	punct	_	_
-10	Muller	Muller	PROPN	prop|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
-11	telefonou	telefonar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-12	para	para	ADP	prp	AdpType=Prep	14	case	_	_
-13	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	presidente	presidente	NOUN	n|M|S	Gender=Masc|Number=Sing	11	dobj	_	_
+6	a	a	ADP	<sam->|PRP|@A<	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	tarde	tarde	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+10	Muller	Muller	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
+11	telefonou	telefonar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+12	para	para	ADP	<first-cjt>|PRP|@<PIV	_	14	case	_	_
+13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	presidente	presidente	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obj	_	_
 15-16	do	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	São	São	PROPN	prop|M|S	_	14	nmod	_	MWE=São_Paulo|MWEPOS=PROPN
-18	Paulo	Paulo	PROPN	PROPN	_	17	name	_	_
-19	,	,	PUNCT	punc	_	14	punct	_	_
-20	Fernando	Fernando	PROPN	prop|M|S	_	14	appos	_	MWE=Fernando_Casal_de_Rey|MWEPOS=PROPN
-21	Casal	Casal	PROPN	PROPN	_	20	name	_	_
-22	de	de	ADP	ADP	AdpType=Prep	23	case	_	_
-23	Rey	Rey	PROPN	PROPN	_	20	name	_	_
-24	,	,	PUNCT	punc	_	14	punct	_	_
-25	e	e	CONJ	conj-c	_	11	cc	_	_
-26	se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	27	dobj	_	_
-27	lamentou	lamentar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
-28	.	.	PUNCT	punc	_	11	punct	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	São	São	PROPN	_	_	14	nmod	_	MWE=São_Paulo|MWEPOS=PROPN
+18	Paulo	Paulo	PROPN	_	_	17	flat	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+20	Fernando	Fernando	PROPN	_	_	14	appos	_	MWE=Fernando_Casal_de_Rey|MWEPOS=PROPN
+21	Casal	Casal	PROPN	_	_	20	flat	_	_
+22	de	de	ADP	PRP|@N<	_	23	case	_	_
+23	Rey	Rey	PROPN	PROP|@P<	_	20	flat	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+25	e	e	CCONJ	<co-sta>|KC|@CO	_	27	cc	_	_
+26	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	27	obj	_	_
+27	lamentou	lamentar	VERB	<cjt>|<mv>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF719-2
-# sent_id = pt-ud-train.conllu#s8063/pt
-# orig_file_sentence = 081#63
-1	«	«	PUNCT	punc	_	3	punct	_	_
-2	Ele	ele	PRON	pron-pers|M|3S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
-3	reclamou	reclamar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	ccomp	_	_
-4	de	de	ADP	prp	AdpType=Prep	8	mark	_	_
-5	que	que	SCONJ	conj-s	_	8	mark	_	_
-6	não	não	ADV	adv	_	8	neg	_	_
-7	lhe	ele	PRON	pron-pers|M/F|3S|DAT	Case=Dat|Number=Sing|Person=3|PronType=Prs	8	dobj	_	_
-8	pagariam	pagar	VERB	v-fin|COND|3P	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	3	ccomp	_	_
-9	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	prometido	prometido	NOUN	n|M|S	Gender=Masc|Number=Sing	8	dobj	_	_
-11	,	,	PUNCT	punc	_	8	punct	_	_
-12	não	não	ADV	adv	_	14	neg	_	_
-13	lhe	ele	PRON	pron-pers|M/F|3S|DAT	Case=Dat|Number=Sing|Person=3|PronType=Prs	14	dobj	_	_
-14	dariam	dar	VERB	v-fin|COND|3P	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	8	conj	_	_
-15	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	carro	carro	NOUN	n|M|S	Gender=Masc|Number=Sing	14	dobj	_	_
-17	e	e	CONJ	conj-c|<co-vfin>	_	8	cc	_	_
-18	que	que	SCONJ	conj-s	_	20	mark	_	_
-19	só	só	ADV	adv	_	20	advmod	_	_
-20	bancariam	bancar	VERB	v-fin|COND|3P	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	8	conj	_	_
-21	seis	seis	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
-22	meses	mês	NOUN	n|M|P	Gender=Masc|Number=Plur	20	dobj	_	_
-23	de	de	ADP	prp	AdpType=Prep	24	case	_	_
-24	aluguel	aluguel	NOUN	n|M|S	Gender=Masc|Number=Sing	22	nmod	_	_
-25	de	de	ADP	prp	AdpType=Prep	27	case	_	_
-26	sua	seu	DET	pron-det|<poss|3S>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	27	det	_	_
-27	casa	casa	NOUN	n|F|S	Gender=Fem|Number=Sing	24	nmod	_	_
-28	e	e	CONJ	conj-c|<co-acc>	_	22	cc	_	_
-29	não	não	ADV	adv	_	32	advmod	_	_
-30	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
-31	quatro	quatro	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	32	nummod	_	_
-32	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	22	conj	_	_
-33	,	,	PUNCT	punc	_	20	punct	_	_
-34	como	como	ADV	adv|<rel>|<ks>	PronType=Rel	35	advmod	_	_
-35	esperava	esperar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	advcl	_	_
-36	»	»	PUNCT	punc	_	3	punct	_	_
-37	,	,	PUNCT	punc	_	38	punct	_	_
-38	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-39	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
-40	dirigente	dirigente	NOUN	n|M|S	Gender=Masc|Number=Sing	38	nsubj	_	_
-41	.	.	PUNCT	punc	_	38	punct	_	_
+# text = «Ele reclamou de que não lhe pagariam o prometido, não lhe dariam um carro e que só bancariam seis meses de aluguel de sua casa e não os quatro anos, como esperava», disse o dirigente.
+# forest 1
+# source CETENFolha n=719 cad=Esporte sec=des sem=94a &E
+# sent_id = CF719-2
+# id 3021
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+2	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	reclamou	reclamar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	ccomp	_	_
+4	de	de	ADP	PRP|@<PIV	_	8	mark	_	_
+5	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
+6	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
+7	lhe	ele	PRON	PERS|M/F|3S|DAT|@DAT>	Case=Dat|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+8	pagariam	pagar	VERB	<first-cjt>|<mv>|V|COND|3P|@FS-P<	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	3	ccomp	_	_
+9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	prometido	prometido	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+12	não	não	ADV	_	Polarity=Neg	14	advmod	_	_
+13	lhe	ele	PRON	PERS|M/F|3S|DAT|@DAT>	Case=Dat|Number=Sing|Person=3|PronType=Prs	14	obj	_	_
+14	dariam	dar	VERB	<cjt>|<mv>|V|COND|3P|@FS-P<	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	8	conj	_	_
+15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	carro	carro	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
+17	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	20	cc	_	_
+18	que	que	SCONJ	KS|@SUB	_	20	mark	_	_
+19	só	só	ADV	ADV|@ADVL>	_	20	advmod	_	_
+20	bancariam	bancar	VERB	<cjt>|<mv>|V|COND|3P|@FS-P<	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	8	conj	_	_
+21	seis	seis	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
+22	meses	mês	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	20	obj	_	_
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	aluguel	aluguel	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	_
+25	de	de	ADP	PRP|@N<ARG	_	27	case	_	_
+26	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	27	det	_	_
+27	casa	casa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
+28	e	e	CCONJ	<co-acc>|KC|@CO	_	32	cc	_	_
+29	não	não	ADV	ADV|@>N	Polarity=Neg	32	advmod	_	_
+30	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
+31	quatro	quatro	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	32	nummod	_	_
+32	anos	ano	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	22	conj	_	SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+34	como	como	ADV	<rel>|ADV|@ADVL>	PronType=Rel	35	advmod	_	_
+35	esperava	esperar	VERB	<mv>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	advcl	_	SpaceAfter=No
+36	»	»	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+37	,	,	PUNCT	PU|@PU	_	38	punct	_	_
+38	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+39	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
+40	dirigente	dirigente	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	38	nsubj	_	SpaceAfter=No
+41	.	.	PUNCT	PU|@PU	_	38	punct	_	_
 

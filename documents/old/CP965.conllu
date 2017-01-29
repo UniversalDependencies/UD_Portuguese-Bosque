@@ -1,99 +1,103 @@
-# distance_from_new = 0
-# new_sent_id = CP965-1
-# sent_id = pt-ud-train.conllu#s4951/pt
-# orig_file_sentence = 050#51
-1	3	3	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
-2	milhões	milhão	NOUN	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
-3	de	de	ADP	prp	AdpType=Prep	2	nmod	_	_
-4	contos	conto	NOUN	n|M|P	Gender=Masc|Number=Plur	3	dep	_	_
-5	.	.	PUNCT	punc	_	2	punct	_	_
+# text = 3 milhões de contos.
+# forest 1
+# source CETEMPúblico n=965 sec=nd sem=91a
+# sent_id = CP965-1
+# id 4953
+1	3	3	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
+2	milhões	milhão	NOUN	<np-def>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
+3	de	de	ADP	PRP|@N<ARG	_	2	nmod	_	_
+4	contos	conto	NOUN	<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	3	dep	_	SpaceAfter=No
+5	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP965-2
-# sent_id = pt-ud-train.conllu#s4952/pt
-# orig_file_sentence = 050#52
-1	Don	Don	PROPN	prop|M|S	_	0	root	_	MWE=Don_Juan|MWEPOS=PROPN
-2	Juan	Juan	PROPN	PROPN	_	1	name	_	_
-3	século	século	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-4	XX	XX	ADJ	adj|<prop>|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	1	amod	_	_
+# text = Don Juan século XX
+# forest 1
+# source CETEMPúblico n=965 sec=nd sem=91a
+# sent_id = CP965-2
+# id 4954
+1	Don	Don	PROPN	_	_	0	root	_	MWE=Don_Juan|MWEPOS=PROPN
+2	Juan	Juan	PROPN	_	_	1	flat	_	_
+3	século	século	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	1	nmod	_	_
+4	XX	XX	ADJ	<prop>|<NUM-ord>|ADJ|M|S|@N<	Gender=Masc|Number=Sing|NumType=Ord	1	amod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP965-3
-# sent_id = pt-ud-train.conllu#s4953/pt
-# orig_file_sentence = 050#53
-1	Robert	Robert	PROPN	prop|M|S	_	13	nsubjpass	_	MWE=Robert_Koch|MWEPOS=PROPN
-2	Koch	Koch	PROPN	PROPN	_	1	name	_	_
-3	,	,	PUNCT	punc	_	1	punct	_	_
-4	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Don	Don	PROPN	prop|M|S	_	1	nmod	_	MWE=Don_Juan|MWEPOS=PROPN
-6	Juan	Juan	PROPN	PROPN	_	5	name	_	_
-7	norte-americano	norte-americano	ADJ	adj|M|S	Gender=Masc|Number=Sing	5	amod	_	_
-8	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-9	51	51	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
-10	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-11	,	,	PUNCT	punc	_	1	punct	_	_
-12	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	auxpass	_	_
-13	desmascarado	desmascarar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-14	e	e	CONJ	conj-c|<co-pcv>	_	13	cc	_	_
-15	preso	prender	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	13	ccomp	_	_
-16	depois	depois	ADV	adv	_	13	advmod	_	_
-17	de	de	ADP	prp	AdpType=Prep	19	mark	_	_
-18	ter	ter	VERB	v-inf	VerbForm=Inf	19	aux	_	_
-19	burlado	burlar	VERB	v-pcp	VerbForm=Part	16	advcl	_	_
-20	mais	mais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	22	advmod	_	MWE=mais_de|MWEPOS=ADV
-21	de	de	ADP	ADP	AdpType=Prep	20	mwe	_	_
-22	200	200	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	23	nummod	_	_
-23	mulheres	mulher	NOUN	n|F|P	Gender=Fem|Number=Plur	19	dobj	_	_
-24	com	com	ADP	prp	AdpType=Prep	25	case	_	_
-25	promessas	promessa	NOUN	n|F|P	Gender=Fem|Number=Plur	19	nmod	_	_
-26	de	de	ADP	prp	AdpType=Prep	27	case	_	_
-27	casamento	casamento	NOUN	n|M|S	Gender=Masc|Number=Sing	25	nmod	_	_
-28	.	.	PUNCT	punc	_	13	punct	_	_
+# text = Robert Koch, um Don Juan norte-americano de 51 anos, foi desmascarado e preso depois de ter burlado mais de 200 mulheres com promessas de casamento.
+# forest 1
+# source CETEMPúblico n=965 sec=nd sem=91a
+# sent_id = CP965-3
+# id 4955
+1	Robert	Robert	PROPN	_	_	12	nsubj	_	MWE=Robert_Koch|MWEPOS=PROPN
+2	Koch	Koch	PROPN	_	_	1	flat	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Don	Don	PROPN	_	_	1	nmod	_	MWE=Don_Juan|MWEPOS=PROPN
+6	Juan	Juan	PROPN	_	_	5	flat	_	_
+7	norte-americano	norte-americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	_
+8	de	de	ADP	PRP|@N<	_	10	case	_	_
+9	51	51	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
+10	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+12	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+13	desmascarado	desmascarar	VERB	<mv>|<first-cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	12	ccomp	_	_
+14	e	e	CCONJ	<co-pcv>|<co-aux<>|KC|@CO	_	13	cc	_	_
+15	preso	prender	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	13	ccomp	_	_
+16	depois	depois	ADV	ADV|@ADVL>	_	13	advmod	_	_
+17	de	de	ADP	PRP|@A<ARG	_	18	mark	_	_
+18	ter	ter	VERB	<aux>|V|INF|@ICL-P<	VerbForm=Inf	16	advcl	_	_
+19	burlado	burlar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	18	ccomp	_	_
+20	mais	mais	ADV	ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	22	advmod	_	MWE=mais_de|MWEPOS=ADV
+21	de	de	ADP	<prp>|PRP|@A<	_	20	fixed	_	_
+22	200	200	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	23	nummod	_	_
+23	mulheres	mulher	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	19	obj	_	_
+24	com	com	ADP	PRP|@<ADVL	_	25	case	_	_
+25	promessas	promessa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	19	obl	_	_
+26	de	de	ADP	PRP|@N<	_	27	case	_	_
+27	casamento	casamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP965-4
-# sent_id = pt-ud-train.conllu#s4954/pt
-# orig_file_sentence = 050#54
+# text = Fazia-se passar por um viúvo rico, propriétario de fábricas e sedento de carinho, e, depois de conseguir que as suas «presas» lhe confiassem grandes quantias em dinheiro e jóias, desaparecia sem deixar rasto.
+# forest 1
+# source CETEMPúblico n=965 sec=nd sem=91a
+# sent_id = CP965-4
+# id 4956
 1-2	Fazia-se	_	_	_	_	_	_	_	_
 1	Fazia	fazer	VERB	v-fin|<hyfen>|IMPF|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-2	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	dobj	_	_
-3	passar	passar	VERB	v-inf	VerbForm=Inf	1	xcomp	_	_
-4	por	por	ADP	prp	AdpType=Prep	6	case	_	_
-5	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	viúvo	viúvo	NOUN	n|M|S	Gender=Masc|Number=Sing	3	iobj	_	_
-7	rico	rico	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
-8	,	,	PUNCT	punc	_	6	punct	_	_
-9	propriétario	propriétario	NOUN	n|<DERS>|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	fábricas	fábrica	NOUN	n|F|P	Gender=Fem|Number=Plur	9	nmod	_	_
-12	e	e	CONJ	conj-c|<co-pred>	_	9	cc	_	_
-13	sedento	sedento	ADJ	adj|M|S	Gender=Masc|Number=Sing	9	conj	_	_
-14	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-15	carinho	carinho	NOUN	n|M|S	Gender=Masc|Number=Sing	13	nmod	_	_
-16	,	,	PUNCT	punc	_	1	punct	_	_
-17	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	1	cc	_	_
-18	,	,	PUNCT	punc	_	37	punct	_	_
-19	depois	depois	ADV	adv	_	37	advmod	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	mark	_	_
-21	conseguir	conseguir	VERB	v-inf	VerbForm=Inf	19	advcl	_	_
-22	que	que	SCONJ	conj-s	_	29	mark	_	_
-23	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
-24	suas	seu	DET	pron-det|<poss|3S>|F|P	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	_	_
-25	«	«	PUNCT	punc	_	26	punct	_	_
-26	presas	presa	NOUN	n|F|P	Gender=Fem|Number=Plur	29	nsubj	_	_
-27	»	»	PUNCT	punc	_	26	punct	_	_
-28	lhe	ele	PRON	pron-pers|M|3S|DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	dobj	_	_
-29	confiassem	confiar	VERB	v-fin|IMPF|3P|SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	21	ccomp	_	_
-30	grandes	grande	ADJ	adj|F|P	Gender=Fem|Number=Plur	31	amod	_	_
-31	quantias	quantia	NOUN	n|F|P	Gender=Fem|Number=Plur	29	dobj	_	_
-32	em	em	ADP	pp	AdpType=Prep	31	advmod	_	MWE=em_dinheiro|MWEPOS=ADV
-33	dinheiro	dinheiro	NOUN	NOUN	_	32	mwe	_	_
-34	e	e	CONJ	conj-c|<co-prparg>	_	32	cc	_	_
-35	jóias	jóia	NOUN	n|F|P	Gender=Fem|Number=Plur	32	conj	_	_
-36	,	,	PUNCT	punc	_	37	punct	_	_
-37	desaparecia	desaparecer	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	conj	_	_
-38	sem	sem	ADP	prp	AdpType=Prep	39	mark	_	_
-39	deixar	deixar	VERB	v-inf	VerbForm=Inf	37	advcl	_	_
-40	rasto	rasto	NOUN	n|M|S	Gender=Masc|Number=Sing	39	dobj	_	_
-41	.	.	PUNCT	punc	_	1	punct	_	_
+2	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
+3	passar	passar	VERB	<mv>|<se-passive>|V|INF|@ICL-<ACC	VerbForm=Inf	1	xcomp	_	_
+4	por	por	ADP	PRP|@<PIV	_	6	case	_	_
+5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	viúvo	viúvo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	iobj	_	_
+7	rico	rico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+9	propriétario	propriétario	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	6	nmod	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	fábricas	fábrica	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	_
+12	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	13	cc	_	_
+13	sedento	sedento	ADJ	<cjt>|ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	9	conj	_	_
+14	de	de	ADP	PRP|@A<	_	15	case	_	_
+15	carinho	carinho	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+17	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	37	cc	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+19	depois	depois	ADV	ADV|@ADVL>	_	37	advmod	_	_
+20	de	de	ADP	PRP|@A<ARG	_	21	mark	_	_
+21	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	advcl	_	_
+22	que	que	SCONJ	KS|@SUB	_	29	mark	_	_
+23	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
+24	suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	26	det	_	_
+25	«	«	PUNCT	PU|@PU	_	26	punct	_	SpaceAfter=No
+26	presas	presa	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	29	nsubj	_	SpaceAfter=No
+27	»	»	PUNCT	PU|@PU	_	26	punct	_	_
+28	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	obj	_	_
+29	confiassem	confiar	VERB	<mv>|V|IMPF|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	21	ccomp	_	_
+30	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	31	amod	_	_
+31	quantias	quantia	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	29	obj	_	_
+32	em	em	ADP	PRP|@N<	_	31	advmod	_	MWE=em_dinheiro|MWEPOS=ADV
+33	dinheiro	dinheiro	NOUN	N|@P<	_	32	fixed	_	_
+34	e	e	CCONJ	<co-prparg>|KC|@CO	_	35	cc	_	_
+35	jóias	jóia	NOUN	<cjt>|<np-idf>|N|F|P|@N<	Gender=Fem|Number=Plur	32	conj	_	SpaceAfter=No
+36	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+37	desaparecia	desaparecer	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	conj	_	_
+38	sem	sem	ADP	PRP|@<ADVL	_	39	mark	_	_
+39	deixar	deixar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	37	advcl	_	_
+40	rasto	rasto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	39	obj	_	SpaceAfter=No
+41	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

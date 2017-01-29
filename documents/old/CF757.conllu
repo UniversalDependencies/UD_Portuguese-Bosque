@@ -1,180 +1,189 @@
-# distance_from_new = 0
-# new_sent_id = CF757-1
-# sent_id = pt-ud-train.conllu#s8215/pt
-# orig_file_sentence = 083#15
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Número	número	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	0	root	_	_
-3	32	32	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
+# text = O Número 32
+# forest 1
+# source CETENFolha n=757 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF757-1
+# id 3173
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Número	número	NOUN	<prop>|<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+3	32	32	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF757-2
-# sent_id = pt-ud-train.conllu#s8216/pt
-# orig_file_sentence = 083#16
-1	...	...	PUNCT	punc	_	17	punct	_	_
-2	casos	caso	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nsubjpass	_	_
-3	positivos	positivo	ADJ	adj|M|P	Gender=Masc|Number=Plur	2	amod	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	dengue	dengue	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	em	em	ADP	prp	AdpType=Prep	7	case	_	_
-7	Monte	Monte	PROPN	prop|M|S	_	2	nmod	_	MWE=Monte_Aprazível|MWEPOS=PROPN
-8	Aprazível	Aprazível	PROPN	PROPN	_	7	name	_	_
-9	(	(	PUNCT	punc	_	7	punct	_	_
-10	38	38	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
-11	km	km	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nmod	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	Rio	Rio	PROPN	prop|M|S	_	11	nmod	_	MWE=Rio_Preto-SP|MWEPOS=PROPN
-14	Preto-SP	Preto-SP	PROPN	PROPN	_	13	name	_	_
-15	)	)	PUNCT	punc	_	7	punct	_	_
-16	foram	ser	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	17	auxpass	_	_
-17	divulgados	divulgar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-18	ontem	ontem	ADV	adv	_	17	advmod	_	_
+# text = ... casos positivos de dengue em Monte Aprazível (38 km de Rio Preto-SP) foram divulgados ontem pelo Ersa (Escritório Regional de Saúde) de Rio Preto.
+# forest 1
+# source CETENFolha n=757 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF757-2
+# id 3174
+1	...	...	PUNCT	PU|@PU	_	16	punct	_	_
+2	casos	caso	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj	_	_
+3	positivos	positivo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	dengue	dengue	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	em	em	ADP	PRP|@N<	_	7	case	_	_
+7	Monte	Monte	PROPN	_	_	2	nmod	_	MWE=Monte_Aprazível|MWEPOS=PROPN
+8	Aprazível	Aprazível	PROPN	_	_	7	flat	_	_
+9	(	(	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+10	38	38	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
+11	km	km	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	7	nmod	_	_
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	Rio	Rio	PROPN	_	_	11	nmod	_	MWE=Rio_Preto-SP|MWEPOS=PROPN
+14	Preto-SP	Preto-SP	PROPN	_	_	13	flat	_	SpaceAfter=No
+15	)	)	PUNCT	PU|@PU	_	7	punct	_	_
+16	foram	ser	VERB	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+17	divulgados	divulgar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	16	ccomp	_	_
+18	ontem	ontem	ADV	ADV|@<ADVL	_	17	advmod	_	_
 19-20	pelo	_	_	_	_	_	_	_	_
-19	por	por	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	Ersa	Ersa	PROPN	prop|M|S	Gender=Masc|Number=Sing	17	dobj	_	_
-22	(	(	PUNCT	punc	_	21	punct	_	_
-23	Escritório	Escritório	PROPN	prop|M|S	_	21	name	_	MWE=Escritório_Regional_de_Saúde|MWEPOS=PROPN
-24	Regional	Regional	PROPN	PROPN	_	23	name	_	_
-25	de	de	ADP	ADP	AdpType=Prep	26	case	_	_
-26	Saúde	Saúde	PROPN	PROPN	_	23	name	_	_
-27	)	)	PUNCT	punc	_	21	punct	_	_
-28	de	de	ADP	prp	AdpType=Prep	29	case	_	_
-29	Rio	Rio	PROPN	prop|M|S	_	21	nmod	_	MWE=Rio_Preto|MWEPOS=PROPN
-30	Preto	Preto	PROPN	PROPN	_	29	name	_	_
-31	.	.	PUNCT	punc	_	17	punct	_	_
+19	por	por	ADP	PRP|@PASS	_	21	case	_	_
+20	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	Ersa	Ersa	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	17	obj	_	_
+22	(	(	PUNCT	PU|@PU	_	21	punct	_	SpaceAfter=No
+23	Escritório	Escritório	PROPN	_	_	21	flat	_	MWE=Escritório_Regional_de_Saúde|MWEPOS=PROPN
+24	Regional	Regional	PROPN	_	_	23	flat	_	_
+25	de	de	ADP	PRP|@N<	_	26	case	_	_
+26	Saúde	Saúde	PROPN	PROP|@P<	_	23	flat	_	SpaceAfter=No
+27	)	)	PUNCT	PU|@PU	_	21	punct	_	_
+28	de	de	ADP	PRP|@N<	_	29	case	_	_
+29	Rio	Rio	PROPN	_	_	21	nmod	_	MWE=Rio_Preto|MWEPOS=PROPN
+30	Preto	Preto	PROPN	_	_	29	flat	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF757-3
-# sent_id = pt-ud-train.conllu#s8217/pt
-# orig_file_sentence = 083#17
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	região	região	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	vive	viver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	epidemia	epidemia	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
+# text = A região vive uma epidemia da doença.
+# forest 1
+# source CETENFolha n=757 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF757-3
+# id 3175
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	região	região	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	vive	viver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	epidemia	epidemia	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	doença	doença	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-9	.	.	PUNCT	punc	_	3	punct	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	doença	doença	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF757-4
-# sent_id = pt-ud-train.conllu#s8218/pt
-# orig_file_sentence = 083#18
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	cidade	cidade	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	Monte	Monte	PROPN	prop|M|S	_	2	nmod	_	MWE=Monte_Aprazível|MWEPOS=PROPN
-5	Aprazível	Aprazível	PROPN	PROPN	_	4	name	_	_
-6	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	68	68	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
-8	casos	caso	NOUN	n|M|P	Gender=Masc|Number=Plur	6	dobj	_	_
-9	confirmados	confirmar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	8	acl	_	_
-10	.	.	PUNCT	punc	_	6	punct	_	_
+# text = A cidade de Monte Aprazível tem 68 casos confirmados.
+# forest 1
+# source CETENFolha n=757 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF757-4
+# id 3176
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	cidade	cidade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	Monte	Monte	PROPN	_	_	2	nmod	_	MWE=Monte_Aprazível|MWEPOS=PROPN
+5	Aprazível	Aprazível	PROPN	_	_	4	flat	_	_
+6	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	68	68	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
+8	casos	caso	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	obj	_	_
+9	confirmados	confirmar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	8	acl	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF757-5
-# sent_id = pt-ud-train.conllu#s8219/pt
-# orig_file_sentence = 083#19
-1	Rio	Rio	PROPN	prop|M|S	_	3	nsubj	_	MWE=Rio_Preto|MWEPOS=PROPN
-2	Preto	Preto	PROPN	PROPN	_	1	name	_	_
-3	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	três	três	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
-5	casos	caso	NOUN	n|M|P	Gender=Masc|Number=Plur	3	dobj	_	_
-6	positivos	positivo	ADJ	adj|M|P	Gender=Masc|Number=Plur	5	amod	_	_
-7	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Rio Preto tem três casos positivos.
+# forest 1
+# source CETENFolha n=757 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF757-5
+# id 3177
+1	Rio	Rio	PROPN	_	_	3	nsubj	_	MWE=Rio_Preto|MWEPOS=PROPN
+2	Preto	Preto	PROPN	_	_	1	flat	_	_
+3	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	três	três	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
+5	casos	caso	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
+6	positivos	positivo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	5	amod	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF757-6
-# sent_id = pt-ud-train.conllu#s8220/pt
-# orig_file_sentence = 083#20
-1	Policiais	policial	NOUN	n|M|P	Gender=Masc|Number=Plur	6	nsubj	_	_
-2	Federais	federal	ADJ	adj|<prop>|M|P	Gender=Masc|Number=Plur	1	amod	_	_
+# text = Policiais Federais do MS entram em greve
+# forest 1
+# source CETENFolha n=757 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF757-6
+# id 3178
+1	Policiais	policial	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
+2	Federais	federal	ADJ	<prop>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	1	amod	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	MS	MS	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-6	entram	entrar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	em	em	ADP	prp	AdpType=Prep	8	case	_	_
-8	greve	greve	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	MS	MS	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
+6	entram	entrar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	em	em	ADP	PRP|@<SA	_	8	case	_	_
+8	greve	greve	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF757-7
-# sent_id = pt-ud-train.conllu#s8221/pt
-# orig_file_sentence = 083#21
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	policiais	policial	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nsubj	_	_
-3	federais	federal	ADJ	adj|M|P	Gender=Masc|Number=Plur	2	amod	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	Mato	Mato	PROPN	prop|M|S	_	2	nmod	_	MWE=Mato_Grosso_do_Sul|MWEPOS=PROPN
-6	Grosso	Grosso	PROPN	PROPN	_	5	name	_	_
+# text = Os policiais federais de Mato Grosso do Sul entraram em greve ontem, em adesão ao movimento iniciado no Distrito Federal.
+# forest 1
+# source CETENFolha n=757 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF757-7
+# id 3179
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	policiais	policial	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
+3	federais	federal	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	Mato	Mato	PROPN	_	_	2	nmod	_	MWE=Mato_Grosso_do_Sul|MWEPOS=PROPN
+6	Grosso	Grosso	PROPN	_	_	5	flat	_	_
 7-8	do	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	Sul	Sul	PROPN	PROPN	_	5	name	_	_
-10	entraram	entrar	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
-11	em	em	ADP	prp	AdpType=Prep	12	case	_	_
-12	greve	greve	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-13	ontem	ontem	ADV	adv	_	10	advmod	_	_
-14	,	,	PUNCT	punc	_	10	punct	_	_
-15	em	em	ADP	prp	AdpType=Prep	16	case	_	_
-16	adesão	adesão	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	Sul	Sul	PROPN	PROP|@P<	_	5	flat	_	_
+10	entraram	entrar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+11	em	em	ADP	PRP|@<SA	_	12	case	_	_
+12	greve	greve	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	_
+13	ontem	ontem	ADV	ADV|@<ADVL	_	10	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+15	em	em	ADP	PRP|@<ADVL	_	16	case	_	_
+16	adesão	adesão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	_
 17-18	ao	_	_	_	_	_	_	_	_
-17	a	a	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	movimento	movimento	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-20	iniciado	iniciar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	19	acl	_	_
+17	a	a	ADP	<sam->|PRP|@N<	_	19	case	_	_
+18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	movimento	movimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
+20	iniciado	iniciar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	19	acl	_	_
 21-22	no	_	_	_	_	_	_	_	_
-21	em	em	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	Distrito	Distrito	PROPN	prop|M|S	_	20	nmod	_	MWE=Distrito_Federal|MWEPOS=PROPN
-24	Federal	Federal	PROPN	PROPN	_	23	name	_	_
-25	.	.	PUNCT	punc	_	10	punct	_	_
+21	em	em	ADP	<sam->|PRP|@<ADVL	_	23	case	_	_
+22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	Distrito	Distrito	PROPN	PROP|M|S|@P<	_	20	obl	_	MWE=Distrito_Federal|MWEPOS=PROPN
+24	Federal	Federal	PROPN	PROP|@N<	_	23	flat	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF757-8
-# sent_id = pt-ud-train.conllu#s8222/pt
-# orig_file_sentence = 083#22
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	reivindicação	reivindicação	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nsubj	_	_
-3	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	equiparação	equiparação	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-6	salarial	salarial	ADJ	adj|F|S	Gender=Fem|Number=Sing	5	amod	_	_
-7	com	com	ADP	prp	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Polícia	Polícia	PROPN	prop|F|S	_	5	nmod	_	MWE=Polícia_Civil|MWEPOS=PROPN
-10	Civil	Civil	PROPN	PROPN	_	9	name	_	_
+# text = A reivindicação é de equiparação salarial com a Polícia Civil do DF, o que representaria um reajuste de 300 %.
+# forest 1
+# source CETENFolha n=757 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF757-8
+# id 3180
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	reivindicação	reivindicação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	de	de	ADP	PRP|@<SC	_	5	case	_	_
+5	equiparação	equiparação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
+6	salarial	salarial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	_
+7	com	com	ADP	PRP|@N<	_	9	case	_	_
+8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Polícia	Polícia	PROPN	_	_	5	nmod	_	MWE=Polícia_Civil|MWEPOS=PROPN
+10	Civil	Civil	PROPN	_	_	9	flat	_	_
 11-12	do	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	DF	DF	PROPN	prop|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-14	,	,	PUNCT	punc	_	5	punct	_	_
-15	o	o	DET	pron-indp|<rel>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	nsubj	_	MWE=o_que|MWEPOS=PRON
-16	que	que	SCONJ	SCONJ	_	15	compound	_	_
-17	representaria	representar	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	5	advcl	_	_
-18	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	reajuste	reajuste	NOUN	n|M|S	Gender=Masc|Number=Sing	17	dobj	_	_
-20	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-21	300	300	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
-22	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	19	nmod	_	_
-23	.	.	PUNCT	punc	_	5	punct	_	_
+11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	DF	DF	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+15	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	17	nsubj	_	MWE=o_que|MWEPOS=PRON
+16	que	que	SCONJ	<rel>|INDP|M|S|@SUBJ>	_	15	compound	_	_
+17	representaria	representar	VERB	<mv>|V|COND|3S|@FS-S<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	5	advcl	_	_
+18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	reajuste	reajuste	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	obj	_	_
+20	de	de	ADP	PRP|@N<	_	22	case	_	_
+21	300	300	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
+22	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF757-9
-# sent_id = pt-ud-train.conllu#s8223/pt
-# orig_file_sentence = 083#23
-1	Em	em	ADP	prp	AdpType=Prep	2	case	_	_
-2	Mato	Mato	PROPN	prop|M|S	_	8	nmod	_	MWE=Mato_Grosso|MWEPOS=PROPN
-3	Grosso	Grosso	PROPN	PROPN	_	2	name	_	_
-4	,	,	PUNCT	punc	_	8	punct	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	paralisação	paralisação	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nsubj	_	_
-7	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-8	prevista	prever	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-9	para	para	ADP	prp	AdpType=Prep	10	mark	_	_
-10	começar	começar	VERB	v-inf	VerbForm=Inf	8	xcomp	_	_
-11	hoje	hoje	ADV	adv	_	10	advmod	_	_
-12	.	.	PUNCT	punc	_	8	punct	_	_
+# text = Em Mato Grosso, a paralisação está prevista para começar hoje.
+# forest 1
+# source CETENFolha n=757 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF757-9
+# id 3181
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
+2	Mato	Mato	PROPN	_	_	8	obl	_	MWE=Mato_Grosso|MWEPOS=PROPN
+3	Grosso	Grosso	PROPN	_	_	2	flat	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	paralisação	paralisação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
+7	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	prevista	prever	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+9	para	para	ADP	PRP|@<PIV	_	10	mark	_	_
+10	começar	começar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	xcomp	_	_
+11	hoje	hoje	ADV	ADV|@<ADVL	_	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 

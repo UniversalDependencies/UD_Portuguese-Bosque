@@ -1,206 +1,211 @@
-# distance_from_new = 0
-# new_sent_id = CP119-1
-# sent_id = pt-ud-train.conllu#s603/pt
-# orig_file_sentence = 007#3
-1	A	a	ADP	prp	AdpType=Prep	2	case	_	_
-2	norte	norte	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	Porto	Porto	PROPN	prop|M|S	_	2	nmod	_	MWE=Porto_Dinheiro|MWEPOS=PROPN
-5	Dinheiro	Dinheiro	PROPN	PROPN	_	4	name	_	_
-6	,	,	PUNCT	punc	_	16	punct	_	_
+# text = A norte de Porto Dinheiro, na Lourinhã, elementos da Guarda Fiscal apreenderam, cerca das 4h30 de ontem, uma traineira (presumivelmente registada no porto de Peniche) que transportava 138 caixas de tabaco americano, com valor da ordem dos 22.500 contos.
+# forest 1
+# source CETEMPúblico n=119 sec=soc sem=92a
+# sent_id = CP119-1
+# id 603
+1	A	a	ADP	PRP|@ADVL>	_	2	case	_	_
+2	norte	norte	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	Porto	Porto	PROPN	_	_	2	nmod	_	MWE=Porto_Dinheiro|MWEPOS=PROPN
+5	Dinheiro	Dinheiro	PROPN	_	_	4	flat	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 7-8	na	_	_	_	_	_	_	_	_
-7	em	em	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
-9	Lourinhã	Lourinhã	PROPN	prop|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-10	,	,	PUNCT	punc	_	16	punct	_	_
-11	elementos	elemento	NOUN	n|M|P	Gender=Masc|Number=Plur	16	nsubj	_	_
+7	em	em	ADP	<sam->|PRP|@ADVL>	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
+9	Lourinhã	Lourinhã	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+11	elementos	elemento	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj	_	_
 12-13	da	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	14	det	_	_
-14	Guarda	Guarda	PROPN	prop|F|S	_	11	nmod	_	MWE=Guarda_Fiscal|MWEPOS=PROPN
-15	Fiscal	Fiscal	PROPN	PROPN	_	14	name	_	_
-16	apreenderam	apreender	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-17	,	,	PUNCT	punc	_	16	punct	_	_
-18	cerca	cerca	ADV	prp|<sam->	AdpType=Prep	20	case	_	MWE=cerca_de|MWEPOS=ADP
+12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	14	det	_	_
+14	Guarda	Guarda	PROPN	_	_	11	nmod	_	MWE=Guarda_Fiscal|MWEPOS=PROPN
+15	Fiscal	Fiscal	PROPN	_	_	14	flat	_	_
+16	apreenderam	apreender	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+18	cerca	cerca	ADV	ADV|@<ADVL	_	20	case	_	MWE=cerca_de|MWEPOS=ADP
 19-20	das	_	_	_	_	_	_	_	_
-19	de	de	ADP	ADP	AdpType=Prep	18	mwe	_	_
-20	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	16	det	_	_
-21	4h30	4h30	ADV	adv	_	20	advmod	_	_
-22	de	de	ADP	prp	AdpType=Prep	23	case	_	_
-23	ontem	ontem	ADV	adv	_	21	advmod	_	_
-24	,	,	PUNCT	punc	_	16	punct	_	_
-25	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	traineira	traineira	NOUN	n|F|S	Gender=Fem|Number=Sing	16	dobj	_	_
-27	(	(	PUNCT	punc	_	26	punct	_	_
-28	presumivelmente	presumivelmente	ADV	adv	_	29	advmod	_	_
-29	registada	registar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	26	acl	_	_
+19	de	de	ADP	PRP|@A<	_	18	fixed	_	_
+20	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	16	det	_	_
+21	4h30	4h30	ADV	ADV|@P<	_	20	advmod	_	_
+22	de	de	ADP	PRP|@A<	_	23	case	_	_
+23	ontem	ontem	ADV	ADV|@P<	_	21	advmod	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+25	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	traineira	traineira	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	obj	_	_
+27	(	(	PUNCT	PU|@PU	_	26	punct	_	SpaceAfter=No
+28	presumivelmente	presumivelmente	ADV	ADV|@ADVL>	_	29	advmod	_	_
+29	registada	registar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	26	acl	_	_
 30-31	no	_	_	_	_	_	_	_	_
-30	em	em	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-31	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	porto	porto	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
-33	de	de	ADP	prp	AdpType=Prep	34	case	_	_
-34	Peniche	Peniche	PROPN	prop|M|S	Gender=Masc|Number=Sing	32	nmod	_	_
-35	)	)	PUNCT	punc	_	26	punct	_	_
-36	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	37	nsubj	_	_
-37	transportava	transportar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	acl	_	_
-38	138	138	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	39	nummod	_	_
-39	caixas	caixa	NOUN	n|F|P	Gender=Fem|Number=Plur	37	dobj	_	_
-40	de	de	ADP	prp	AdpType=Prep	41	case	_	_
-41	tabaco	tabaco	NOUN	n|M|S	Gender=Masc|Number=Sing	39	nmod	_	_
-42	americano	americano	ADJ	adj|M|S	Gender=Masc|Number=Sing	41	amod	_	_
-43	,	,	PUNCT	punc	_	39	punct	_	_
-44	com	com	ADP	prp	AdpType=Prep	45	case	_	_
-45	valor	valor	NOUN	n|M|S	Gender=Masc|Number=Sing	39	nmod	_	_
+30	em	em	ADP	<sam->|PRP|@<ADVL	_	32	case	_	_
+31	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	porto	porto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	29	obl	_	_
+33	de	de	ADP	PRP|@N<	_	34	case	_	_
+34	Peniche	Peniche	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	SpaceAfter=No
+35	)	)	PUNCT	PU|@PU	_	26	punct	_	_
+36	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	37	nsubj	_	_
+37	transportava	transportar	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	acl	_	_
+38	138	138	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	39	nummod	_	_
+39	caixas	caixa	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	37	obj	_	_
+40	de	de	ADP	PRP|@N<	_	41	case	_	_
+41	tabaco	tabaco	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	39	nmod	_	_
+42	americano	americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	41	amod	_	SpaceAfter=No
+43	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+44	com	com	ADP	PRP|@N<PRED	_	45	case	_	_
+45	valor	valor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	39	nmod	_	_
 46-47	da	_	_	_	_	_	_	_	_
-46	de	de	ADP	prp|<sam->	AdpType=Prep	48	case	_	_
-47	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	48	det	_	_
-48	ordem	ordem	NOUN	n|F|S	Gender=Fem|Number=Sing	45	nmod	_	_
+46	de	de	ADP	<sam->|PRP|@N<	_	48	case	_	_
+47	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	48	det	_	_
+48	ordem	ordem	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	45	nmod	_	_
 49-50	dos	_	_	_	_	_	_	_	_
-49	de	de	ADP	prp|<sam->	AdpType=Prep	52	case	_	_
-50	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_
-51	22.500	22.500	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	52	nummod	_	_
-52	contos	conto	NOUN	n|M|P	Gender=Masc|Number=Plur	48	nmod	_	_
-53	.	.	PUNCT	punc	_	16	punct	_	_
+49	de	de	ADP	<sam->|PRP|@N<ARG	_	52	case	_	_
+50	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_
+51	22.500	22.500	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	52	nummod	_	_
+52	contos	conto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	48	nmod	_	SpaceAfter=No
+53	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP119-2
-# sent_id = pt-ud-train.conllu#s604/pt
-# orig_file_sentence = 007#4
+# text = Na sequência da operação foram detidos quatro indivíduos, entre os quais o mestre da embarcação, a qual foi, também, apreendida.
+# forest 1
+# source CETEMPúblico n=119 sec=soc sem=92a
+# sent_id = CP119-2
+# id 604
 1-2	Na	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
-3	sequência	sequência	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
+3	sequência	sequência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
-6	operação	operação	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-7	foram	ir	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-8	detidos	deter	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	7	ccomp	_	_
-9	quatro	quatro	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
-10	indivíduos	indivíduo	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nsubj	_	_
-11	,	,	PUNCT	punc	_	10	punct	_	_
-12	entre	entre	ADP	prp	AdpType=Prep	13	case	_	_
-13	os	os	DET	pron-indp|<rel>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	nmod	_	MWE=os_quais|MWEPOS=PRON
-14	quais	quais	PRON	PRON	Gender=Masc|Number=Plur|PronType=Rel	13	compound	_	_
-15	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	mestre	mestre	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
+6	operação	operação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+7	foram	ir	VERB	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	detidos	deter	VERB	<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	7	ccomp	_	_
+9	quatro	quatro	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
+10	indivíduos	indivíduo	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	7	nsubj	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+12	entre	entre	ADP	PRP|@>N	_	13	case	_	_
+13	os	os	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	16	nmod	_	MWE=os_quais|MWEPOS=PRON
+14	quais	quais	PRON	DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	13	compound	_	_
+15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	mestre	mestre	NOUN	<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	nmod	_	_
 17-18	da	_	_	_	_	_	_	_	_
-17	de	de	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	19	det	_	_
-19	embarcação	embarcação	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-20	,	,	PUNCT	punc	_	19	punct	_	_
-21	a	a	DET	pron-indp|<rel>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	nsubj	_	MWE=a_qual|MWEPOS=PRON
-22	qual	qual	PRON	PRON	Gender=Fem|Number=Sing|PronType=Rel	21	compound	_	_
-23	foi	ir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	acl	_	_
-24	,	,	PUNCT	punc	_	23	punct	_	_
-25	também	também	ADV	adv	_	27	advmod	_	_
-26	,	,	PUNCT	punc	_	23	punct	_	_
-27	apreendida	apreender	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	23	ccomp	_	_
-28	.	.	PUNCT	punc	_	7	punct	_	_
+17	de	de	ADP	<sam->|PRP|@N<	_	19	case	_	_
+18	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	19	det	_	_
+19	embarcação	embarcação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+21	a	a	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	23	nsubj	_	MWE=a_qual|MWEPOS=PRON
+22	qual	qual	PRON	DET|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	21	compound	_	_
+23	foi	ir	VERB	<aux>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	acl	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+25	também	também	ADV	ADV|@ADVL>	_	27	advmod	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+27	apreendida	apreender	VERB	<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	23	ccomp	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP119-3
-# sent_id = pt-ud-train.conllu#s605/pt
-# orig_file_sentence = 007#5
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	GF	GF	PROPN	prop|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	confiscou	confiscar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	ainda	ainda	ADV	adv	_	6	advmod	_	_
-5	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	viatura	viatura	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-7	ligeira	ligeiro	ADJ	adj|F|S	Gender=Fem|Number=Sing	6	amod	_	_
-8	de	de	ADP	pp	AdpType=Prep	6	advmod	_	MWE=de_marca|MWEPOS=ADV
-9	marca	marca	NOUN	NOUN	_	8	mwe	_	_
-10	Bedford	Bedford	PROPN	prop|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-11	,	,	PUNCT	punc	_	6	punct	_	_
-12	envolvida	envolver	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
+# text = A GF confiscou ainda uma viatura ligeira de marca Bedford, envolvida na rede de contrabando, ontem descoberta.
+# forest 1
+# source CETEMPúblico n=119 sec=soc sem=92a
+# sent_id = CP119-3
+# id 605
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	GF	GF	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	confiscou	confiscar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	ainda	ainda	ADV	ADV|@>N	_	6	advmod	_	_
+5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	viatura	viatura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
+7	ligeira	ligeiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	6	amod	_	_
+8	de	de	ADP	PRP|@N<	_	6	advmod	_	MWE=de_marca|MWEPOS=ADV
+9	marca	marca	NOUN	N|@P<	_	8	fixed	_	_
+10	Bedford	Bedford	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+12	envolvida	envolver	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
 13-14	na	_	_	_	_	_	_	_	_
-13	em	em	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	15	det	_	_
-15	rede	rede	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-17	contrabando	contrabando	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-18	,	,	PUNCT	punc	_	15	punct	_	_
-19	ontem	ontem	ADV	adv	_	20	advmod	_	_
-20	descoberta	descobrir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	15	acl	_	_
-21	.	.	PUNCT	punc	_	3	punct	_	_
+13	em	em	ADP	<sam->|PRP|@<ADVL	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	15	det	_	_
+15	rede	rede	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	contrabando	contrabando	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+19	ontem	ontem	ADV	ADV|@ADVL>	_	20	advmod	_	_
+20	descoberta	descobrir	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	15	acl	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP119-4
-# sent_id = pt-ud-train.conllu#s606/pt
-# orig_file_sentence = 007#6
-1	Quantidade	quantidade	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nsubj	_	_
-2	idêntica	idêntico	ADJ	adj|F|S	Gender=Fem|Number=Sing	1	amod	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	tabaco	tabaco	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-5	--	--	PUNCT	punc	_	1	punct	_	_
-6	seis	seis	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	7	nummod	_	_
-7	caixas	caixa	NOUN	n|F|P	Gender=Fem|Number=Plur	1	nmod	_	_
-8	de	de	ADP	pp	AdpType=Prep	7	advmod	_	MWE=de_marca|MWEPOS=ADV
-9	marca	marca	NOUN	NOUN	_	8	mwe	_	_
-10	Camel	Camel	PROPN	prop|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-11	e	e	CONJ	conj-c	_	7	cc	_	_
-12	124	124	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	7	conj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	Winston	Winston	PROPN	prop|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-15	--	--	PUNCT	punc	_	1	punct	_	_
-16	foi	ir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-17	aprendida	aprender	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	16	ccomp	_	_
-18	,	,	PUNCT	punc	_	16	punct	_	_
+# text = Quantidade idêntica de tabaco -- seis caixas de marca Camel e 124 de Winston -- foi aprendida, na madrugada de terça-feira, na zona de Vila do Bispo, por elementos do comando da Guarda Fiscal do Algarve.
+# forest 1
+# source CETEMPúblico n=119 sec=soc sem=92a
+# sent_id = CP119-4
+# id 606
+1	Quantidade	quantidade	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
+2	idêntica	idêntico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
+3	de	de	ADP	PRP|@N<ARG	_	4	case	_	_
+4	tabaco	tabaco	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
+5	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+6	seis	seis	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	7	nummod	_	_
+7	caixas	caixa	NOUN	<first-cjt>|<np-def>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	1	nmod	_	_
+8	de	de	ADP	PRP|@N<	_	7	advmod	_	MWE=de_marca|MWEPOS=ADV
+9	marca	marca	NOUN	N|@P<	_	8	fixed	_	_
+10	Camel	Camel	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	8	nmod	_	_
+11	e	e	CCONJ	<co-n<pred>|KC|@CO	_	12	cc	_	_
+12	124	124	NUM	<cjt>|<card>|NUM|F|P|@N<PRED	Gender=Fem|Number=Plur|NumType=Card	7	conj	_	_
+13	de	de	ADP	PRP|@A<	_	14	case	_	_
+14	Winston	Winston	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	_
+15	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+16	foi	ir	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+17	aprendida	aprender	VERB	<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	16	ccomp	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 19-20	na	_	_	_	_	_	_	_	_
-19	em	em	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	21	det	_	_
-21	madrugada	madrugada	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-22	de	de	ADP	prp	AdpType=Prep	23	case	_	_
-23	terça-feira	terça-feira	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nmod	_	_
-24	,	,	PUNCT	punc	_	16	punct	_	_
+19	em	em	ADP	<sam->|PRP|@<ADVL	_	21	case	_	_
+20	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	21	det	_	_
+21	madrugada	madrugada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	_
+22	de	de	ADP	PRP|@N<	_	23	case	_	_
+23	terça-feira	terça-feira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 25-26	na	_	_	_	_	_	_	_	_
-25	em	em	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	27	det	_	_
-27	zona	zona	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-28	de	de	ADP	prp	AdpType=Prep	29	case	_	_
-29	Vila	Vila	PROPN	prop|F|S	_	27	nmod	_	MWE=Vila_do_Bispo|MWEPOS=PROPN
+25	em	em	ADP	<sam->|PRP|@<ADVL	_	27	case	_	_
+26	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	27	det	_	_
+27	zona	zona	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	_
+28	de	de	ADP	PRP|@N<	_	29	case	_	_
+29	Vila	Vila	PROPN	PROP|F|S|@P<	_	27	nmod	_	MWE=Vila_do_Bispo|MWEPOS=PROPN
 30-31	do	_	_	_	_	_	_	_	_
-30	de	de	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-31	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	Bispo	Bispo	PROPN	PROPN	_	29	name	_	_
-33	,	,	PUNCT	punc	_	16	punct	_	_
-34	por	por	ADP	prp	AdpType=Prep	35	case	_	_
-35	elementos	elemento	NOUN	n|M|P	Gender=Masc|Number=Plur	17	dobj	_	_
+30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
+31	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	Bispo	Bispo	PROPN	PROP|@P<	_	29	flat	_	SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+34	por	por	ADP	PRP|@PASS	_	35	case	_	_
+35	elementos	elemento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obj	_	_
 36-37	do	_	_	_	_	_	_	_	_
-36	de	de	ADP	prp|<sam->	AdpType=Prep	38	case	_	_
-37	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
-38	comando	comando	NOUN	n|M|S	Gender=Masc|Number=Sing	35	nmod	_	_
+36	de	de	ADP	<sam->|PRP|@N<	_	38	case	_	_
+37	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+38	comando	comando	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	_
 39-40	da	_	_	_	_	_	_	_	_
-39	de	de	ADP	prp|<sam->	AdpType=Prep	41	case	_	_
-40	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	41	det	_	_
-41	Guarda	Guarda	PROPN	prop|F|S	_	38	nmod	_	MWE=Guarda_Fiscal|MWEPOS=PROPN
-42	Fiscal	Fiscal	PROPN	PROPN	_	41	name	_	_
+39	de	de	ADP	<sam->|PRP|@N<	_	41	case	_	_
+40	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	41	det	_	_
+41	Guarda	Guarda	PROPN	_	_	38	nmod	_	MWE=Guarda_Fiscal|MWEPOS=PROPN
+42	Fiscal	Fiscal	PROPN	_	_	41	flat	_	_
 43-44	do	_	_	_	_	_	_	_	_
-43	de	de	ADP	prp	AdpType=Prep	45	case	_	_
-44	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
-45	Algarve	Algarve	PROPN	prop|M|S	Gender=Masc|Number=Sing	41	nmod	_	_
-46	.	.	PUNCT	punc	_	16	punct	_	_
+43	de	de	ADP	PRP|@N<	_	45	case	_	_
+44	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	Algarve	Algarve	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	41	nmod	_	SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP119-5
-# sent_id = pt-ud-train.conllu#s607/pt
-# orig_file_sentence = 007#7
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	mercadoria	mercadoria	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nsubj	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	proveniente	proveniente	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
+# text = A mercadoria, proveniente dum desembarque, foi encontrada numa carrinha suspeita.
+# forest 1
+# source CETEMPúblico n=119 sec=soc sem=92a
+# sent_id = CP119-5
+# id 607
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	mercadoria	mercadoria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	proveniente	proveniente	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	2	amod	_	_
 5-6	dum	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-6	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	desembarque	desembarque	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-8	,	,	PUNCT	punc	_	2	punct	_	_
-9	foi	ir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-10	encontrada	encontrar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	9	ccomp	_	_
+5	de	de	ADP	PRP|@A<	_	7	case	_	_
+6	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	desembarque	desembarque	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+9	foi	ir	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+10	encontrada	encontrar	VERB	<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	9	ccomp	_	_
 11-12	numa	_	_	_	_	_	_	_	_
-11	em	em	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	uma	um	DET	art|<-sam>|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	carrinha	carrinha	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-14	suspeita	suspeito	ADJ	adj|F|S	Gender=Fem|Number=Sing	13	amod	_	_
-15	.	.	PUNCT	punc	_	9	punct	_	_
+11	em	em	ADP	<sam->|PRP|@<ADVL	_	13	case	_	_
+12	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	carrinha	carrinha	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	_
+14	suspeita	suspeito	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 

@@ -1,165 +1,170 @@
-# distance_from_new = 2
-# new_sent_id = CF181-1
-# sent_id = pt-ud-train.conllu#s5802/pt
-# orig_file_sentence = 059#2
-1	De	de	ADP	adv	AdpType=Prep	13	advmod	_	MWE=De_acordo|MWEPOS=ADV
-2	acordo	acordo	NOUN	NOUN	_	1	mwe	_	_
-3	com	com	ADP	prp	AdpType=Prep	4	case	_	_
-4	Maluf	Maluf	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-5	,	,	PUNCT	punc	_	13	punct	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	equipe	equipe	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nsubj	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	elaboração	elaboração	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
+# text = De acordo com Maluf, a equipe de elaboração do programa terá 30 dias para trabalhar e o nome mais cotado para coordená-la é o do presidente nacional do PFL, Jorge Bornhausen.
+# forest 1
+# source CETENFolha n=181 cad=Brasil sec=pol sem=94b
+# sent_id = CF181-1
+# id 760
+1	De	de	ADP	PRP|@ADVL>	_	13	advmod	_	MWE=De_acordo|MWEPOS=ADV
+2	acordo	acordo	NOUN	N|M|S|@P<	_	1	fixed	_	_
+3	com	com	ADP	PRP|@A<	_	4	case	_	_
+4	Maluf	Maluf	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	equipe	equipe	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
+9	elaboração	elaboração	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
 10-11	do	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	programa	programa	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-13	terá	ter	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-14	30	30	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	15	nummod	_	_
-15	dias	dia	NOUN	n|M|P	Gender=Masc|Number=Plur	13	dobj	_	_
-16	para	para	ADP	prp	AdpType=Prep	17	mark	_	_
-17	trabalhar	trabalhar	VERB	v-inf	VerbForm=Inf	13	advcl	_	_
-18	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	13	cc	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	nome	nome	NOUN	n|M|S	Gender=Masc|Number=Sing	27	nsubj	_	_
-21	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	22	advmod	_	_
-22	cotado	cotar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	20	acl	_	_
-23	para	para	ADP	prp	AdpType=Prep	24	mark	_	_
+10	de	de	ADP	<sam->|PRP|@N<ARG	_	12	case	_	_
+11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	programa	programa	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
+13	terá	ter	VERB	<first-cjt>|<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+14	30	30	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	15	nummod	_	_
+15	dias	dia	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	13	obj	_	_
+16	para	para	ADP	PRP|@<ADVL	_	17	mark	_	_
+17	trabalhar	trabalhar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	advcl	_	_
+18	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	27	cc	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	nome	nome	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	27	nsubj	_	_
+21	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	22	advmod	_	_
+22	cotado	cotar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	20	acl	_	_
+23	para	para	ADP	PRP|@N<	_	24	mark	_	_
 24-25	coordená-la	_	_	_	_	_	_	_	_
 24	coordená	coordenar	VERB	v-inf|<hyfen>	Hyph=Yes|VerbForm=Inf	20	acl	_	_
-25	-la	ela	PRON	pron-pers|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	24	dobj	_	_
-26	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	_	_
-27	o	o	PRON	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	13	conj	_	_
+25	-la	ela	PRON	pron-pers|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	24	obj	_	_
+26	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	cop	_	_
+27	o	o	PRON	<dem>|DET|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Dem	13	conj	_	_
 28-29	do	_	_	_	_	_	_	_	_
-28	de	de	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	presidente	presidente	NOUN	n|M|S	Gender=Masc|Number=Sing	27	nmod	_	_
-31	nacional	nacional	ADJ	adj|M|S	Gender=Masc|Number=Sing	30	amod	_	_
+28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
+29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	presidente	presidente	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
+31	nacional	nacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	30	amod	_	_
 32-33	do	_	_	_	_	_	_	_	_
-32	de	de	ADP	prp|<sam->	AdpType=Prep	34	case	_	_
-33	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-34	PFL	PFL	PROPN	prop|M|S	Gender=Masc|Number=Sing	30	nmod	_	_
-35	,	,	PUNCT	punc	_	34	punct	_	_
-36	Jorge	Jorge	PROPN	prop|M|S	_	34	name	_	MWE=Jorge_Bornhausen|MWEPOS=PROPN
-37	Bornhausen	Bornhausen	PROPN	PROPN	_	36	name	_	_
-38	.	.	PUNCT	punc	_	13	punct	_	_
+32	de	de	ADP	<sam->|PRP|@N<	_	34	case	_	_
+33	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	PFL	PFL	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	SpaceAfter=No
+35	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+36	Jorge	Jorge	PROPN	_	_	34	flat	_	MWE=Jorge_Bornhausen|MWEPOS=PROPN
+37	Bornhausen	Bornhausen	PROPN	_	_	36	flat	_	SpaceAfter=No
+38	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF181-2
-# sent_id = pt-ud-train.conllu#s5803/pt
-# orig_file_sentence = 059#3
-1	Segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	2	case	_	_
-2	ele	ele	PRON	pron-pers|M|3S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	nmod	_	_
-3	,	,	PUNCT	punc	_	12	punct	_	_
-4	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	parte	parte	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nsubjpass	_	_
-6	econômica	econômico	ADJ	adj|F|S	Gender=Fem|Number=Sing	5	amod	_	_
+# text = Segundo ele, a parte econômica do programa poderá ser elaborada pelo ex-ministro da Fazenda Gustavo Krause (PFL-PE).
+# forest 1
+# source CETENFolha n=181 cad=Brasil sec=pol sem=94b
+# sent_id = CF181-2
+# id 761
+1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	2	case	_	_
+2	ele	ele	PRON	PERS|M|3S|NOM|@P<	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obl	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	parte	parte	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
+6	econômica	econômico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	_
 7-8	do	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	programa	programa	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-10	poderá	poder	AUX	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux	_	_
-11	ser	ser	VERB	v-inf	VerbForm=Inf	12	auxpass	_	_
-12	elaborada	elaborar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+7	de	de	ADP	PRP|@N<	_	9	case	_	_
+8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	programa	programa	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
+10	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	aux	_	_
+11	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+12	elaborada	elaborar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	11	ccomp	_	_
 13-14	pelo	_	_	_	_	_	_	_	_
-13	por	por	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	ex-ministro	ex-ministro	NOUN	n|M|S	Gender=Masc|Number=Sing	12	dobj	_	_
+13	por	por	ADP	PRP|@PASS	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	ex-ministro	ex-ministro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obj	_	_
 16-17	da	_	_	_	_	_	_	_	_
-16	de	de	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	Fazenda	Fazenda	PROPN	prop|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-19	Gustavo	Gustavo	PROPN	prop|M|S	_	18	nmod	_	MWE=Gustavo_Krause|MWEPOS=PROPN
-20	Krause	Krause	PROPN	PROPN	_	19	name	_	_
-21	(	(	PUNCT	punc	_	18	punct	_	_
-22	PFL-PE	PFL-PE	PROPN	prop|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
-23	)	)	PUNCT	punc	_	18	punct	_	_
-24	.	.	PUNCT	punc	_	12	punct	_	_
+16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
+17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	Fazenda	Fazenda	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+19	Gustavo	Gustavo	PROPN	_	_	18	nmod	_	MWE=Gustavo_Krause|MWEPOS=PROPN
+20	Krause	Krause	PROPN	_	_	19	flat	_	_
+21	(	(	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
+22	PFL-PE	PFL-PE	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No
+23	)	)	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF181-3
-# sent_id = pt-ud-train.conllu#s5804/pt
-# orig_file_sentence = 059#4
-1	Segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	2	case	_	_
-2	Maluf	Maluf	PROPN	prop|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-3	,	,	PUNCT	punc	_	11	punct	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	programa	programa	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	governo	governo	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-8	seria	ser	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	cop	_	_
-9	«	«	PUNCT	punc	_	11	punct	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	ponto	ponto	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	convergência	convergência	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-14	»	»	PUNCT	punc	_	11	punct	_	_
-15	para	para	ADP	prp	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	discussão	discussão	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-18	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-19	futura	futuro	ADJ	adj|F|S	Gender=Fem|Number=Sing	20	amod	_	_
-20	aliança	aliança	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-21	eleitoral	eleitoral	ADJ	adj|F|S	Gender=Fem|Number=Sing	20	amod	_	_
+# text = Segundo Maluf, o programa de governo seria «o ponto de convergência» para a discussão uma futura aliança eleitoral na sucessão presidencial.
+# forest 1
+# source CETENFolha n=181 cad=Brasil sec=pol sem=94b
+# sent_id = CF181-3
+# id 762
+1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	2	case	_	_
+2	Maluf	Maluf	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	programa	programa	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	governo	governo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
+8	seria	ser	AUX	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	cop	_	_
+9	«	«	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	ponto	ponto	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	convergência	convergência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No
+14	»	»	PUNCT	PU|@PU	_	11	punct	_	_
+15	para	para	ADP	PRP|@<ADVL	_	17	case	_	_
+16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	discussão	discussão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	_
+18	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+19	futura	futuro	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_
+20	aliança	aliança	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	17	nmod	_	_
+21	eleitoral	eleitoral	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	20	amod	_	_
 22-23	na	_	_	_	_	_	_	_	_
-22	em	em	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	sucessão	sucessão	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-25	presidencial	presidencial	ADJ	adj|F|S	Gender=Fem|Number=Sing	24	amod	_	_
-26	.	.	PUNCT	punc	_	11	punct	_	_
+22	em	em	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	sucessão	sucessão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
+25	presidencial	presidencial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF181-4
-# sent_id = pt-ud-train.conllu#s5805/pt
-# orig_file_sentence = 059#5
-1	«	«	PUNCT	punc	_	4	punct	_	_
-2	Será	ser	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_
-3	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	programa	programa	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-5	capaz	capaz	ADJ	adj|M|S	Gender=Masc|Number=Sing	4	amod	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	mark	_	_
-7	unir	unir	VERB	v-inf	VerbForm=Inf	5	advcl	_	_
-8	todas	todo	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	9	det	_	_
-9	forças	força	NOUN	n|F|P	Gender=Fem|Number=Plur	7	dobj	_	_
-10	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	11	nsubj	_	_
-11	querem	querer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl	_	_
-12	levar	levar	VERB	v-inf	VerbForm=Inf	11	xcomp	_	_
-13	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	12	dobj	_	_
-15	para	para	ADP	prp	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	Primeiro	Primeiro	ADJ	prop|M|S	Gender=Masc|Number=Sing	12	nmod	_	MWE=Primeiro_Mundo|MWEPOS=PROPN
-18	Mundo	Mundo	PROPN	PROPN	_	17	name	_	_
-19	.	.	PUNCT	punc	_	4	punct	_	_
+# text = «Será um programa capaz de unir todas forças que querem levar o Brasil para o Primeiro Mundo.
+# forest 1
+# source CETENFolha n=181 cad=Brasil sec=pol sem=94b
+# sent_id = CF181-4
+# id 763
+1	«	«	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
+2	Será	ser	AUX	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_
+3	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	programa	programa	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+5	capaz	capaz	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
+6	de	de	ADP	PRP|@A<ARG	_	7	mark	_	_
+7	unir	unir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	advcl	_	_
+8	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	9	det	_	_
+9	forças	força	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	7	obj	_	_
+10	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	11	nsubj	_	_
+11	querem	querer	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl	_	_
+12	levar	levar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	11	xcomp	_	_
+13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	Brasil	Brasil	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
+15	para	para	ADP	PRP|@<ADVL	_	17	case	_	_
+16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	Primeiro	Primeiro	ADJ	_	Gender=Masc|Number=Sing	12	obl	_	MWE=Primeiro_Mundo|MWEPOS=PROPN
+18	Mundo	Mundo	PROPN	_	_	17	flat	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF181-5
-# sent_id = pt-ud-train.conllu#s5806/pt
-# orig_file_sentence = 059#6
-1	Um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	programa	programa	NOUN	n|M|S	Gender=Masc|Number=Sing	23	dobj	_	_
-3	capaz	capaz	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	mark	_	_
-5	combater	combater	VERB	v-inf	VerbForm=Inf	3	advcl	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	inflação	inflação	NOUN	n|F|S	Gender=Fem|Number=Sing	5	dobj	_	_
-8	,	,	PUNCT	punc	_	7	punct	_	_
-9	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	desemprego	desemprego	NOUN	n|M|S	Gender=Masc|Number=Sing	7	conj	_	_
-11	e	e	CONJ	conj-c|<co-postnom>	_	3	cc	_	_
-12	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	_	_
-13	abra	abrir	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
-14	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	corrente	corrente	NOUN	n|F|S	Gender=Fem|Number=Sing	13	dobj	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-17	investimentos	investimento	NOUN	n|M|P	Gender=Masc|Number=Plur	15	nmod	_	_
-18	para	para	ADP	prp	AdpType=Prep	20	case	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	13	nmod	_	_
-21	»	»	PUNCT	punc	_	23	punct	_	_
-22	,	,	PUNCT	punc	_	23	punct	_	_
-23	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-24	Maluf	Maluf	PROPN	prop|M|S	Gender=Masc|Number=Sing	23	nsubj	_	_
-25	.	.	PUNCT	punc	_	23	punct	_	_
+# text = Um programa capaz de combater a inflação, o desemprego e que abra uma corrente de investimentos para o país», disse Maluf.
+# forest 1
+# source CETENFolha n=181 cad=Brasil sec=pol sem=94b
+# sent_id = CF181-5
+# id 764
+1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	programa	programa	NOUN	<first-cjt>|<np-idf>|N|M|S|@ACC>	Gender=Masc|Number=Sing	23	obj	_	_
+3	capaz	capaz	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
+4	de	de	ADP	PRP|@A<ARG	_	5	mark	_	_
+5	combater	combater	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	inflação	inflação	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	desemprego	desemprego	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	conj	_	_
+11	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	_
+12	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	_	_
+13	abra	abrir	VERB	<cjt>|<mv>|V|PR|3S|SUBJ|@N<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+14	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	corrente	corrente	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	obj	_	_
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	investimentos	investimento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	nmod	_	_
+18	para	para	ADP	PRP|@<ACC	_	20	case	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	SpaceAfter=No
+21	»	»	PUNCT	PU|@PU	_	23	punct	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+23	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+24	Maluf	Maluf	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	23	nsubj	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 

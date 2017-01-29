@@ -1,126 +1,132 @@
-# distance_from_new = 0
-# new_sent_id = CF340-1
-# sent_id = pt-ud-train.conllu#s6445/pt
-# orig_file_sentence = 065#45
-1	Luis	Luis	PROPN	prop|M|S	_	5	nsubj	_	MWE=Luis_Oca|MWEPOS=PROPN
-2	Oca	Oca	PROPN	PROPN	_	1	name	_	_
-3	a	a	ADP	prp	AdpType=Prep	5	advmod	_	_
-4	se	se	PRON	pron-pers|<obj>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	dobj	_	_
-5	suicida	suicidar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = Luis Oca a se suicida na França
+# forest 1
+# source CETENFolha n=340 cad=Esporte sec=des sem=94b
+# sent_id = CF340-1
+# id 1403
+1	Luis	Luis	PROPN	_	_	5	nsubj	_	MWE=Luis_Oca|MWEPOS=PROPN
+2	Oca	Oca	PROPN	_	_	1	flat	_	_
+3	a	a	ADP	PRP|@ADVL>	_	5	advmod	_	_
+4	se	se	PRON	<obj>|PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+5	suicida	suicidar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6-7	na	_	_	_	_	_	_	_	_
-6	em	em	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	França	França	PROPN	prop|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
+6	em	em	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	França	França	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF340-2
-# sent_id = pt-ud-train.conllu#s6446/pt
-# orig_file_sentence = 065#46
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	ciclista	ciclista	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nsubj	_	_
-3	espanhol	espanhol	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
-4	,	,	PUNCT	punc	_	2	punct	_	_
-5	48	48	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
-6	,	,	PUNCT	punc	_	2	punct	_	_
-7	se	se	PRON	pron-pers|<obj>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	dobj	_	_
-8	suicidou	suicidar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-9	em	em	ADP	prp	AdpType=Prep	10	case	_	_
-10	Caupenne	Caupenne	PROPN	prop|M|S	_	8	nmod	_	MWE=Caupenne_d'Armagnac|MWEPOS=PROPN
-11	d'Armagnac	d\'Armagnac	PROPN	PROPN	_	10	name	_	_
-12	,	,	PUNCT	punc	_	8	punct	_	_
+# text = O ciclista espanhol, 48, se suicidou em Caupenne d'Armagnac, no sul da França com um tiro.
+# forest 1
+# source CETENFolha n=340 cad=Esporte sec=des sem=94b
+# sent_id = CF340-2
+# id 1404
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	ciclista	ciclista	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
+3	espanhol	espanhol	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+5	48	48	NUM	<card>|NUM|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+7	se	se	PRON	<obj>|PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+8	suicidou	suicidar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	em	em	ADP	PRP|@<ADVL	_	10	case	_	_
+10	Caupenne	Caupenne	PROPN	_	_	8	obl	_	MWE=Caupenne_d'Armagnac|MWEPOS=PROPN
+11	d'Armagnac	d\'Armagnac	PROPN	_	_	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 13-14	no	_	_	_	_	_	_	_	_
-13	em	em	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	sul	sul	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
+13	em	em	ADP	<sam->|PRP|@<ADVL	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	sul	sul	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	_
 16-17	da	_	_	_	_	_	_	_	_
-16	de	de	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	França	França	PROPN	prop|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-19	com	com	ADP	prp	AdpType=Prep	21	case	_	_
-20	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	21	nummod	_	_
-21	tiro	tiro	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-22	.	.	PUNCT	punc	_	8	punct	_	_
+16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
+17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	França	França	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+19	com	com	ADP	PRP|@<ADVL	_	21	case	_	_
+20	um	um	NUM	<card>|NUM|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card	21	nummod	_	_
+21	tiro	tiro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 1
-# new_sent_id = CF340-3
-# sent_id = pt-ud-train.conllu#s6447/pt
-# orig_file_sentence = 065#47
-1	Em	em	ADP	prp	AdpType=Prep	2	case	_	_
-2	1973	1973	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	5	advmod	_	_
-3	,	,	PUNCT	punc	_	5	punct	_	_
+# text = Em 1973, Oca¤a venceu a Volta da França, a maior competição do gênero no mundo.
+# forest 1
+# source CETENFolha n=340 cad=Esporte sec=des sem=94b
+# sent_id = CF340-3
+# id 1405
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
+2	1973	1973	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 4	Oca¤a	Oca¤a	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-5	venceu	vencer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Volta	Volta	PROPN	prop|F|S	_	5	dobj	_	MWE=Volta_da_França|MWEPOS=PROPN
+5	venceu	vencer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Volta	Volta	PROPN	PROP|F|S|@<ACC	_	5	obj	_	MWE=Volta_da_França|MWEPOS=PROPN
 8-9	da	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	França	França	PROPN	PROPN	_	7	name	_	_
-11	,	,	PUNCT	punc	_	7	punct	_	_
-12	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-13	maior	grande	ADJ	adj|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	14	amod	_	_
-14	competição	competição	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	França	França	PROPN	PROP|@P<	_	7	flat	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+13	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	14	amod	_	_
+14	competição	competição	NOUN	<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	7	nmod	_	_
 15-16	do	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	gênero	gênero	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
+15	de	de	ADP	<sam->|PRP|@N<ARG	_	17	case	_	_
+16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	gênero	gênero	NOUN	<meta>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
 18-19	no	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	mundo	mundo	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-21	.	.	PUNCT	punc	_	5	punct	_	_
+18	em	em	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF340-4
-# sent_id = pt-ud-train.conllu#s6448/pt
-# orig_file_sentence = 065#48
-1	Goleiro	goleiro	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	morre	morrer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	após	após	ADP	prp	AdpType=Prep	4	mark	_	_
-4	bater	bater	VERB	v-inf	VerbForm=Inf	2	advcl	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	cabeça	cabeça	NOUN	n|F|S	Gender=Fem|Number=Sing	4	dobj	_	_
+# text = Goleiro morre após bater a cabeça
+# forest 1
+# source CETENFolha n=340 cad=Esporte sec=des sem=94b
+# sent_id = CF340-4
+# id 1406
+1	Goleiro	goleiro	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	morre	morrer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	após	após	ADP	PRP|@<ADVL	_	4	mark	_	_
+4	bater	bater	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	advcl	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	cabeça	cabeça	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF340-5
-# sent_id = pt-ud-train.conllu#s6449/pt
-# orig_file_sentence = 065#49
-1	Piotr	Piotr	PROPN	prop|M|S	_	15	nsubj	_	MWE=Piotr_Wator|MWEPOS=PROPN
-2	Wator	Wator	PROPN	PROPN	_	1	name	_	_
-3	,	,	PUNCT	punc	_	1	punct	_	_
-4	21	21	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	1	nummod	_	_
-5	,	,	PUNCT	punc	_	1	punct	_	_
+# text = Piotr Wator, 21, do Gajowianka, da 3ª divisão, morreu domingo durante partida, em Cracovia.
+# forest 1
+# source CETENFolha n=340 cad=Esporte sec=des sem=94b
+# sent_id = CF340-5
+# id 1407
+1	Piotr	Piotr	PROPN	_	_	15	nsubj	_	MWE=Piotr_Wator|MWEPOS=PROPN
+2	Wator	Wator	PROPN	_	_	1	flat	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+4	21	21	NUM	<card>|NUM|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card	1	nummod	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 6-7	do	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Gajowianka	Gajowianka	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-9	,	,	PUNCT	punc	_	1	punct	_	_
+6	de	de	ADP	<sam->|PRP|@N<PRED	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Gajowianka	Gajowianka	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 10-11	da	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-12	3ª	3ª	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	13	amod	_	_
-13	divisão	divisão	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-14	,	,	PUNCT	punc	_	1	punct	_	_
-15	morreu	morrer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-16	domingo	domingo	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-17	durante	durante	ADP	prp	AdpType=Prep	18	case	_	_
-18	partida	partida	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-19	,	,	PUNCT	punc	_	15	punct	_	_
-20	em	em	ADP	prp	AdpType=Prep	21	case	_	_
-21	Cracovia	Cracovia	PROPN	prop|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-22	.	.	PUNCT	punc	_	15	punct	_	_
+10	de	de	ADP	<sam->|PRP|@N<PRED	_	13	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+12	3ª	3ª	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	13	amod	_	_
+13	divisão	divisão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+15	morreu	morrer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+16	domingo	domingo	NOUN	<np-idf>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	15	obl	_	_
+17	durante	durante	ADP	PRP|@<ADVL	_	18	case	_	_
+18	partida	partida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+20	em	em	ADP	PRP|@<ADVL	_	21	case	_	_
+21	Cracovia	Cracovia	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF340-6
-# sent_id = pt-ud-train.conllu#s6450/pt
-# orig_file_sentence = 065#50
-1	Wator	Wator	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-2	se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	dobj	_	_
-3	chocou	chocar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	com	com	ADP	prp	AdpType=Prep	6	case	_	_
-5	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	companheiro	companheiro	NOUN	n|M|S	Gender=Masc|Number=Sing	3	iobj	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	equipe	equipe	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-9	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Wator se chocou com um companheiro de equipe.
+# forest 1
+# source CETENFolha n=340 cad=Esporte sec=des sem=94b
+# sent_id = CF340-6
+# id 1408
+1	Wator	Wator	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
+3	chocou	chocar	VERB	<mv>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	com	com	ADP	PRP|@<PIV	_	6	case	_	_
+5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	companheiro	companheiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	iobj	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	equipe	equipe	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
