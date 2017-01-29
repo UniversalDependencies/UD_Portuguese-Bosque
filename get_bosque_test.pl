@@ -36,11 +36,8 @@ foreach my $file (@files)
     my @outfile = ();
     while(<FILE>)
     {
-        # Other tools expect a different format of sentence ids in the data, so that's what we will output.
-        s/sent_id\s*=\s*/sent_id /;
-        s/text\s*=\s*/text /;
         push(@sentence, $_);
-        if(m/^\#\s*sent_id\s*(.+)/)
+        if(m/^\#\s*sent_id\s*=\s*(.+)/)
         {
             $id = $1;
             $id =~ s/\r?\n$//;

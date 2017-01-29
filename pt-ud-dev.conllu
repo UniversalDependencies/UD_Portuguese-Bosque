@@ -1,8 +1,7 @@
 # text = É dele o segundo lugar do Smirnoff International Fashion Awards, disputado anteontem em Dublin.
-# forest 1
-# source CETENFolha n=892 cad=Ilustrada sec=nd sem=94a
+# source = CETENFolha n=892 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF892-3
-# id 3759
+# id = 3759
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 2-3	dele	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@<SC	_	3	case	_	_
@@ -25,19 +24,20 @@
 18	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Um Godard intergaláctico
-# forest 1
-# source CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
+# source = CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
 # sent_id = CF893-1
-# id 3760
+# id = 3760
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Godard	Godard	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	intergaláctico	intergaláctico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
 
 # text = «Alphaville» é uma mistura de ficção científica, filme noir, e a irreverência das histórias em quadrinhos.
-# forest 1
-# source CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
+# source = CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
 # sent_id = CF893-2
-# id 3761
+# id = 3761
+# d2d = punct(ficção,,) -> punct(irreverência,,)  #106
+# d2d = cc(ficção,e) -> cc(irreverência,e)  #106
+# d2d = punct(ficção,,) -> punct(filme,,)  #106
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
 2	Alphaville	Alphaville	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	SpaceAfter=No
 3	»	»	PUNCT	PU|@PU	_	6	punct	_	_
@@ -63,10 +63,10 @@
 22	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = A história narra a ida dum agente secreto à desumana cidade futurista de Alphaville, controlada por um cérebro eletrônico que baniu totalmente os conceitos de amor e solidariedade.
-# forest 1
-# source CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
+# source = CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
 # sent_id = CF893-3
-# id 3762
+# id = 3762
+# d2d = cc(amor,e) -> cc(solidariedade,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	história	história	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	narra	narrar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -103,10 +103,9 @@
 32	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Para construir o ambiente futurista do filme, Godard recorreu quase que totalmente à fotografia.
-# forest 1
-# source CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
+# source = CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
 # sent_id = CF893-4
-# id 3763
+# id = 3763
 1	Para	para	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	construir	construir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -129,10 +128,9 @@
 18	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = A câmera de Raoul Coutard conseguiu transformar Paris numa cidade gélida, sem contar a ousadia de montar sequências inteiras em negativo.
-# forest 1
-# source CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
+# source = CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
 # sent_id = CF893-5
-# id 3764
+# id = 3764
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	câmera	câmera	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -160,10 +158,9 @@
 24	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O experimentalismo do filme não esconde sua proposição simbólica, a alienação na sociedade tecnológica.
-# forest 1
-# source CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
+# source = CETENFolha n=893 cad=TV Folha sec=clt-soc sem=94b
 # sent_id = CF893-6
-# id 3765
+# id = 3765
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	experimentalismo	experimentalismo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -186,10 +183,9 @@
 18	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Audiência na Justiça do Pará discute diploma
-# forest 1
-# source CETENFolha n=894 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=894 cad=Brasil sec=pol sem=94a
 # sent_id = CF894-1
-# id 3766
+# id = 3766
 1	Audiência	audiência	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
 2-3	na	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -203,10 +199,9 @@
 9	diploma	diploma	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
 
 # text = Uma audiência hoje na 7ª Junta da Justiça do Trabalho em Belém reabre a discussão sobre a obrigatoriedade do diploma específico para o exercício do jornalismo.
-# forest 1
-# source CETENFolha n=894 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=894 cad=Brasil sec=pol sem=94a
 # sent_id = CF894-3
-# id 3767
+# id = 3767
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	audiência	audiência	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
 3	hoje	hoje	ADV	ADV|@ADVL>	_	16	advmod	_	_
@@ -246,10 +241,9 @@
 32	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = O Sindicato dos Jornalistas do Pará exige a demissão dos cerca de 150 jornalistas irregulares (que não têm curso universitário de Jornalismo) das empresas de Belém.
-# forest 1
-# source CETENFolha n=894 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=894 cad=Brasil sec=pol sem=94a
 # sent_id = CF894-4
-# id 3768
+# id = 3768
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Sindicato	Sindicato	PROPN	PROP|M|S|@SUBJ>	_	9	nsubj	_	MWE=Sindicato_dos_Jornalistas|MWEPOS=PROPN
 3-4	dos	_	_	_	_	_	_	_	_
@@ -289,10 +283,11 @@
 33	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Como o Estado não tem recursos, nem vai ter para todos, o atendimento acaba deixando de fora justamente os mais pobres, que não conseguem acesso aos serviços públicos.
-# forest 1
-# source CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF895-1
-# id 3769
+# id = 3769
+# d2d = punct(tem,,) -> punct(ter,,)  #106
+# d2d = cc(tem,nem) -> cc(ter,nem)  #106
 1	Como	como	SCONJ	KS|@SUB	_	5	mark	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -329,10 +324,11 @@
 33	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = O problema é político porque envolve, por exemplo, a gratuidade da educação, da saúde, da previdência mínima.
-# forest 1
-# source CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF895-2
-# id 3770
+# id = 3770
+# d2d = punct(educação,,) -> punct(saúde,,)  #106
+# d2d = punct(educação,,) -> punct(previdência,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	problema	problema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -363,10 +359,10 @@
 25	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Excetuada a educação básica de primeiro grau, que deve ser gratuita e obrigatória, para todo o resto é preciso discriminar quem pode pagar.
-# forest 1
-# source CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF895-3
-# id 3771
+# id = 3771
+# d2d = cc(gratuita,e) -> cc(obrigatória,e)  #106
 1	Excetuada	excetuar	VERB	<mv>|V|PCP|F|S|@ICL-ADVL>	Gender=Fem|Number=Sing|VerbForm=Part	21	advcl	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	educação	educação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
@@ -395,10 +391,9 @@
 26	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = Dados do IBGE (Instituto Brasileiro de Geografia e Estatística), de 1989, mostram que 30,6 milhões de brasileiros.
-# forest 1
-# source CETENFolha n=896 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=896 cad=Brasil sec=pol sem=94b
 # sent_id = CF896-1
-# id 3772
+# id = 3772
 1	Dados	dado	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	17	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -425,10 +420,9 @@
 23	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Dos fumantes, 18,1 milhões são homens e 12,5 milhões, mulheres.
-# forest 1
-# source CETENFolha n=896 cad=Brasil sec=pol sem=94b &E
+# source = CETENFolha n=896 cad=Brasil sec=pol sem=94b &E
 # sent_id = CF896-2
-# id 3773
+# id = 3773
 1-2	Dos	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
@@ -446,10 +440,10 @@
 14	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O homem fuma entre 11 e 20 cigarros por dia e a mulher, entre 5 e 10.
-# forest 1
-# source CETENFolha n=896 cad=Brasil sec=pol sem=94b &E
+# source = CETENFolha n=896 cad=Brasil sec=pol sem=94b &E
 # sent_id = CF896-3
-# id 3774
+# id = 3774
+# d2d = cc(11,e) -> cc(20,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	homem	homem	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	fuma	fumar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -471,10 +465,9 @@
 19	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = PF prende dois por cobrar ágio
-# forest 1
-# source CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-1
-# id 3775
+# id = 3775
 1	PF	PF	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	prende	prender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	dois	dois	NUM	<card>|NUM|M|P|@<ACC	Gender=Masc|Number=Plur|NumType=Card	2	obj	_	_
@@ -483,20 +476,18 @@
 6	ágio	ágio	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
 
 # text = Da FT
-# forest 1
-# source CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-2
-# id 3776
+# id = 3776
 1-2	Da	_	_	_	_	_	_	_	_
 1	De	de	ADP	<first-cjt>|<sam->|PRP|@STA	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	FT	FT	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
 
 # text = A PF (Polícia Federal) indiciou ontem duas pessoas por vender carro com ágio.
-# forest 1
-# source CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-3
-# id 3777
+# id = 3777
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	PF	PF	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
 3	(	(	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
@@ -515,10 +506,10 @@
 16	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Foram indiciados o dono da revendedora 3.000 Automóveis (Leonardo Romanioli Filho) e o vendedor Luís Silveira, da concessionária Frame.
-# forest 1
-# source CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-4
-# id 3778
+# id = 3778
+# d2d = cc(dono,e) -> cc(vendedor,e)  #106
 1	Foram	ser	VERB	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
 2	indiciados	indiciar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	1	ccomp	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -548,10 +539,9 @@
 25	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Os dois foram presos quando o taxista José Fioravanti, 61, foi entregar US$ 1.000 a Romanioli como ágio da compra dum Santana Quantum.
-# forest 1
-# source CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-5
-# id 3779
+# id = 3779
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	dois	dois	NUM	<card>|<np-def>|NUM|M|P|@SUBJ>	Gender=Masc|Number=Plur|NumType=Card	3	nsubj	_	_
 3	foram	ser	VERB	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
@@ -584,10 +574,9 @@
 28	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ele estava acompanhados de três agentes da PF.
-# forest 1
-# source CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-6
-# id 3780
+# id = 3780
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 2	estava	estar	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
 3	acompanhados	acompanhar	VERB	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
@@ -601,10 +590,9 @@
 10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Um deles era seu filho, Sérgio Fioravanti.
-# forest 1
-# source CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-7
-# id 3781
+# id = 3781
 1	Um	um	NUM	<card>|NUM|M|S|@SUBJ>	Gender=Masc|Number=Sing|NumType=Card	6	nsubj	_	_
 2-3	deles	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	3	case	_	_
@@ -618,20 +606,18 @@
 10	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Tabela ganha mais informações
-# forest 1
-# source CETENFolha n=898 cad=Tudo sec=nd sem=94b
+# source = CETENFolha n=898 cad=Tudo sec=nd sem=94b
 # sent_id = CF898-1
-# id 3782
+# id = 3782
 1	Tabela	tabela	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	ganha	ganhar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|P|@>N	Degree=Cmp|Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	4	det	_	_
 4	informações	informação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
 
 # text = A partir desta edição, a tabela com o levantamento dos indicadores Folha-Sebrae passa a incluir a comparação da capacidade ocupada no mês pesquisado com o mesmo mês no ano anterior.
-# forest 1
-# source CETENFolha n=898 cad=Tudo sec=nd sem=94b
+# source = CETENFolha n=898 cad=Tudo sec=nd sem=94b
 # sent_id = CF898-3
-# id 3783
+# id = 3783
 1	A	a	ADP	<sam->|PRP|@ADVL>	_	5	case	_	MWE=A_partir_de|MWEPOS=ADP
 2	partir	partir	NOUN	N|@P<	_	1	fixed	_	_
 3-4	desta	_	_	_	_	_	_	_	_
@@ -676,10 +662,9 @@
 37	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = O uso da comparação anualizada permite verificar a variação da atividade industrial sem a influência de fatores sazonais.
-# forest 1
-# source CETENFolha n=898 cad=Tudo sec=nd sem=94b
+# source = CETENFolha n=898 cad=Tudo sec=nd sem=94b
 # sent_id = CF898-4
-# id 3784
+# id = 3784
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	uso	uso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -705,10 +690,9 @@
 21	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Com a inclusão de mais esse dado comparativo, a tabela fica mais completa.
-# forest 1
-# source CETENFolha n=898 cad=Tudo sec=nd sem=94b
+# source = CETENFolha n=898 cad=Tudo sec=nd sem=94b
 # sent_id = CF898-5
-# id 3785
+# id = 3785
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	inclusão	inclusão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obl	_	_
@@ -726,10 +710,9 @@
 15	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Ela tem também textos com explicações sobre cada item pesquisado.
-# forest 1
-# source CETENFolha n=898 cad=Tudo sec=nd sem=94b
+# source = CETENFolha n=898 cad=Tudo sec=nd sem=94b
 # sent_id = CF898-6
-# id 3786
+# id = 3786
 1	Ela	ela	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	também	também	ADV	ADV|@<ADVL	_	2	advmod	_	_
@@ -743,10 +726,9 @@
 11	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = A versão mais corrente sobre o início do enriquecimento de Quércia é de que ele comprou terrenos em áreas de periferia que seriam beneficiadas pelos projetos de melhoria urbana da Prefeitura.
-# forest 1
-# source CETENFolha n=899 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=899 cad=Brasil sec=pol sem=94b
 # sent_id = CF899-1
-# id 3787
+# id = 3787
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	versão	versão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj	_	_
 3	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	4	advmod	_	_
@@ -787,10 +769,9 @@
 35	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Na sua administração, executou um plano viário com largas avenidas interligando os bairros, que provocaram um boom imobiliário.
-# forest 1
-# source CETENFolha n=899 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=899 cad=Brasil sec=pol sem=94b
 # sent_id = CF899-2
-# id 3788
+# id = 3788
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -816,10 +797,9 @@
 22	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Nicolau diz que hoje o produtor de leite C recebe US$ 0,22, enquanto o custo está em US$ 0,24.
-# forest 1
-# source CETENFolha n=900 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=900 cad=Mundo sec=pol sem=94b
 # sent_id = CF900-1
-# id 3789
+# id = 3789
 1	Nicolau	Nicolau	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
@@ -843,10 +823,9 @@
 21	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Dallari orientou os produtores a negociarem com a indústria.
-# forest 1
-# source CETENFolha n=900 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=900 cad=Mundo sec=pol sem=94b
 # sent_id = CF900-2
-# id 3790
+# id = 3790
 1	Dallari	Dallari	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	orientou	orientar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -859,10 +838,10 @@
 10	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Esses aspectos podem ser observados nos relatos das pacientes: «quando tenho que arrumar a casa e não estou com vontade, escuto vozes que me incentivam a começar a tarefa.
-# forest 1
-# source CETENFolha n=901 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=901 cad=Mais! sec=nd sem=94b
 # sent_id = CF901-1
-# id 3791
+# id = 3791
+# d2d = cc(arrumar,e) -> cc(vontade,e)  #106
 1	Esses	esse	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_
 2	aspectos	aspecto	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
@@ -902,10 +881,11 @@
 35	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Depois dum tempo, as vozes aumentam e acabo ficando atordoada e não consigo terminar o que comecei».
-# forest 1
-# source CETENFolha n=901 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=901 cad=Mais! sec=nd sem=94b
 # sent_id = CF901-2
-# id 3792
+# id = 3792
+# d2d = cc(aumentam,e) -> cc(ficando,e)  #106
+# d2d = cc(aumentam,e) -> cc(consigo,e)  #106
 1	Depois	depois	ADV	ADV|@ADVL>	_	8	advmod	_	_
 2-3	dum	_	_	_	_	_	_	_	_
 2	de	de	ADP	PRP|@A<	_	4	case	_	_
@@ -930,10 +910,10 @@
 21	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Estes problemas não são frequentes nos homens, pois além de terem uma possibilidade menor de casarem e terem filhos, esses não são os tipos de papéis socialmente esperados para o sexo masculino.
-# forest 1
-# source CETENFolha n=901 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=901 cad=Mais! sec=nd sem=94b
 # sent_id = CF901-3
-# id 3793
+# id = 3793
+# d2d = cc(casarem,e) -> cc(terem,e)  #106
 1	Estes	este	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_
 2	problemas	problema	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
 3	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
@@ -973,10 +953,9 @@
 36	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Pedro Ivo, 63, tel. 289-3609)
-# forest 1
-# source CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF902-1
-# id 3794
+# id = 3794
 1	Pedro	Pedro	PROPN	_	_	0	root	_	MWE=Pedro_Ivo|MWEPOS=PROPN
 2	Ivo	Ivo	PROPN	_	_	1	flat	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -987,10 +966,10 @@
 8	)	)	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = O restaurante, especializado em carnes e saladas, oferecerá uma garrafa de champanhe espanhol para os casais na noite do dia 12.
-# forest 1
-# source CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF902-2
-# id 3795
+# id = 3795
+# d2d = cc(carnes,e) -> cc(saladas,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	restaurante	restaurante	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -1021,10 +1000,9 @@
 26	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Quem não quiser beber durante o jantar, poderá levar o champanhe para casa.
-# forest 1
-# source CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF902-3
-# id 3796
+# id = 3796
 1	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Number=Sing|PronType=Rel	3	nsubj	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	quiser	querer	VERB	<mv>|V|FUT|3S|SUBJ|@FS-SUBJ>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	csubj	_	_
@@ -1042,10 +1020,9 @@
 15	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Preço: 18 URVs (por pessoa)
-# forest 1
-# source CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF902-4
-# id 3797
+# id = 3797
 1	Preço	preço	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3	18	18	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	4	nummod	_	_
@@ -1056,10 +1033,9 @@
 8	)	)	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Horário: no dia 12, das 19h ao último cliente
-# forest 1
-# source CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF902-5
-# id 3798
+# id = 3798
 1	Horário	horário	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3-4	no	_	_	_	_	_	_	_	_
@@ -1079,29 +1055,26 @@
 14	cliente	cliente	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	_
 
 # text = Cartões: aceita todos
-# forest 1
-# source CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF902-6
-# id 3799
+# id = 3799
 1	Cartões	cartão	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3	aceita	aceitar	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl	_	_
 4	todos	todo	PRON	<quant>|DET|M|P|@<ACC	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	3	obj	_	_
 
 # text = Estacionamento com manobrista
-# forest 1
-# source CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=902 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF902-7
-# id 3800
+# id = 3800
 1	Estacionamento	estacionamento	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	com	com	ADP	PRP|@N<	_	3	case	_	_
 3	manobrista	manobrista	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = Em entrevista à Folha por telefone, de Londres, o estilista diz que moda hoje não é se preocupar com marcas:
-# forest 1
-# source CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
+# source = CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF903-1
-# id 3801
+# id = 3801
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	entrevista	entrevista	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obl	_	_
 3-4	à	_	_	_	_	_	_	_	_
@@ -1129,10 +1102,11 @@
 24	:	:	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = «As pessoas estão cansadas do hype que se cria em torno das roupas, dos estilistas e do luxo abusivo.
-# forest 1
-# source CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
+# source = CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF903-2
-# id 3802
+# id = 3802
+# d2d = punct(roupas,,) -> punct(estilistas,,)  #106
+# d2d = cc(roupas,e) -> cc(luxo,e)  #106
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
 2	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	pessoas	pessoa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj	_	_
@@ -1165,20 +1139,18 @@
 26	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Conforto é fundamental.
-# forest 1
-# source CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
+# source = CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF903-3
-# id 3803
+# id = 3803
 1	Conforto	conforto	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	fundamental	fundamental	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Eu não me associo com moda.
-# forest 1
-# source CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
+# source = CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF903-4
-# id 3804
+# id = 3804
 1	Eu	eu	PRON	PERS|M|1S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
 2	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 3	me	eu	PRON	<refl>|PERS|M|1S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=1|PronType=Prs|Reflex=Yes	4	obj	_	_
@@ -1188,10 +1160,10 @@
 7	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Para mim roupa e moda são coisas diferentes».
-# forest 1
-# source CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
+# source = CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF903-5
-# id 3805
+# id = 3805
+# d2d = cc(roupa,e) -> cc(moda,e)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	mim	eu	PRON	PERS|M|1S|PIV|@P<	Case=Acc|Gender=Masc|Number=Sing|Person=1|PrepCase=Pre|PronType=Prs	7	obl	_	_
 3	roupa	roupa	NOUN	<first-cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -1204,10 +1176,9 @@
 10	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Folha -- o que a mulher precisa hoje, em termos de roupas?
-# forest 1
-# source CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
+# source = CETENFolha n=903 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF903-6
-# id 3806
+# id = 3806
 1	Folha	Folha	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	7	obj	_	MWE=o_que|MWEPOS=PRON
@@ -1224,10 +1195,10 @@
 14	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Desorganização e violência marcam torneio que consolida o 'efeito Copa'.
-# forest 1
-# source CETENFolha n=904 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=904 cad=Esporte sec=des sem=94a
 # sent_id = CF904-1
-# id 3807
+# id = 3807
+# d2d = cc(Desorganização,e) -> cc(violência,e)  #106
 1	Desorganização	desorganização	NOUN	<first-cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
 3	violência	violência	NOUN	<cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	1	conj	_	_
@@ -1243,10 +1214,10 @@
 13	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Aumento no número de passes e lançamentos aproxima futebol brasileiro do praticado no Mundial dos EUA
-# forest 1
-# source CETENFolha n=904 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=904 cad=Esporte sec=des sem=94a
 # sent_id = CF904-2
-# id 3808
+# id = 3808
+# d2d = cc(passes,e) -> cc(lançamentos,e)  #106
 1	Aumento	aumento	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
 2-3	no	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -1273,10 +1244,10 @@
 20	EUA	EUA	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
 
 # text = Os clubes de futebol do Brasil estão valorizando cada vez mais a posse de bola e a utilização de lançamentos como armas para se chegar ao ataque.
-# forest 1
-# source CETENFolha n=904 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=904 cad=Esporte sec=des sem=94a
 # sent_id = CF904-5
-# id 3809
+# id = 3809
+# d2d = cc(posse,e) -> cc(utilização,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	clubes	clube	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -1311,10 +1282,9 @@
 30	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = É o que confirmam as estatísticas do Campeonato Brasileiro, encerrado ontem com o novo título palmeirense.
-# forest 1
-# source CETENFolha n=904 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=904 cad=Esporte sec=des sem=94a
 # sent_id = CF904-6
-# id 3810
+# id = 3810
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
 2	o	o	PRON	<dem>|DET|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	4	obj	_	_
@@ -1337,10 +1307,9 @@
 19	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Emily Lloyd vai ser a desbocada punk «Tank Girl», dos gibis ingleses.
-# forest 1
-# source CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF905-1
-# id 3811
+# id = 3811
 1	Emily	Emily	PROPN	_	_	3	nsubj	_	MWE=Emily_Lloyd|MWEPOS=PROPN
 2	Lloyd	Lloyd	PROPN	_	_	1	flat	_	_
 3	vai	ir	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -1361,10 +1330,9 @@
 17	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ainda na Inglaterra, Spielberg negocia os direitos da série de «TV Doctor Who».
-# forest 1
-# source CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF905-2
-# id 3812
+# id = 3812
 1	Ainda	ainda	ADV	ADV|@>A	_	7	advmod	_	_
 2-3	na	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@ADVL>	_	1	case	_	_
@@ -1388,10 +1356,9 @@
 19	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Chris Columbus está ligado à adaptação dos super-heróis «Quarteto Fantástico», que inauguraram a era Marvel nos gibis há 30 anos.
-# forest 1
-# source CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF905-3
-# id 3813
+# id = 3813
 1	Chris	Chris	PROPN	_	_	4	nsubj	_	MWE=Chris_Columbus|MWEPOS=PROPN
 2	Columbus	Columbus	PROPN	_	_	1	flat	_	_
 3	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -1424,10 +1391,9 @@
 27	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Mas o orçamento de US$ 5 milhões insinua que a informação não é séria.
-# forest 1
-# source CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF905-4
-# id 3814
+# id = 3814
 1	Mas	mas	CCONJ	KC|@CO	_	8	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	orçamento	orçamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
@@ -1445,10 +1411,9 @@
 15	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = São comuns casos como a filmagem do gibi «Sargento Rock», que teve os direitos comprados por Joel Silver há cinco anos.
-# forest 1
-# source CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF905-5
-# id 3815
+# id = 3815
 1	São	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
 2	comuns	comum	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
 3	casos	caso	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	2	nsubj	_	_
@@ -1478,10 +1443,12 @@
 26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Arnold Schwarzenegger deu entrevistas como ator principal, foi substituído por Bruce Willis há dois anos, mas o projeto nunca saiu do papel.
-# forest 1
-# source CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=905 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF905-6
-# id 3816
+# id = 3816
+# d2d = punct(deu,,) -> punct(substituído,,)  #106
+# d2d = punct(deu,,) -> punct(saiu,,)  #106
+# d2d = cc(deu,mas) -> cc(saiu,mas)  #106
 1	Arnold	Arnold	PROPN	_	_	3	nsubj	_	MWE=Arnold_Schwarzenegger|MWEPOS=PROPN
 2	Schwarzenegger	Schwarzenegger	PROPN	_	_	1	flat	_	_
 3	deu	dar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -1511,10 +1478,10 @@
 26	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Na campanha eleitoral, Alencar e Nilo estiveram em lados opostos quanto à ação das Forças Armadas no combate ao crime.
-# forest 1
-# source CETENFolha n=906 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=906 cad=Brasil sec=pol sem=94a
 # sent_id = CF906-1
-# id 3817
+# id = 3817
+# d2d = cc(Alencar,e) -> cc(Nilo,e)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -1549,10 +1516,9 @@
 27	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Alencar defendeu a adoção do estado de defesa, que prevê a suspensão de garantias individuais.
-# forest 1
-# source CETENFolha n=906 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=906 cad=Brasil sec=pol sem=94a
 # sent_id = CF906-2
-# id 3818
+# id = 3818
 1	Alencar	Alencar	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	defendeu	defender	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -1574,10 +1540,9 @@
 18	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Trata-se, segundo ele, dum «instrumento de defesa da democracia».
-# forest 1
-# source CETENFolha n=906 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=906 cad=Brasil sec=pol sem=94a
 # sent_id = CF906-3
-# id 3819
+# id = 3819
 1-2	Trata-se	_	_	_	_	_	_	_	SpaceAfter=No
 1	Trata	tratar	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	-se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	1	nsubj	_	_
@@ -1600,10 +1565,9 @@
 17	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Ao contrário, nesta situação econômica de extrema gravidade, todos gostariam de ajudar o país.
-# forest 1
-# source CETENFolha n=907 cad=Dinheiro sec=eco sem=94b
+# source = CETENFolha n=907 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF907-1
-# id 3820
+# id = 3820
 1-2	Ao	_	_	_	_	_	_	_	_
 1	A	a	ADP	prp|<sam->	_	14	case	_	_
 2	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
@@ -1627,10 +1591,12 @@
 19	.	.	PUNCT	punc	_	14	punct	_	_
 
 # text = Para isso, porém, é necessário que o nosso Banco Central busque não a «independência» do Tesouro, que é impossível, mas que deixe de «quebrar-lo» com a sua política agressiva de juros.
-# forest 1
-# source CETENFolha n=907 cad=Dinheiro sec=eco sem=94b
+# source = CETENFolha n=907 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF907-2
-# id 3821
+# id = 3821
+# d2d = punct(busque,,) -> punct(quebrar-,,)  #106
+# d2d = cc(busque,mas) -> cc(quebrar-,mas)  #106
+# d2d = punct(busque,,) -> punct(quebrar-,,)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	7	obl	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	7	punct	_	_
@@ -1677,10 +1643,9 @@
 42	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Promoção do Dia das Mães começa com desfiles
-# forest 1
-# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF908-1
-# id 3822
+# id = 3822
 1	Promoção	promoção	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<ARG	_	4	case	_	_
@@ -1695,10 +1660,9 @@
 10	desfiles	desfile	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	_
 
 # text = O shopping West Plaza já começou sua promoção de Dia das Mães.
-# forest 1
-# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF908-3
-# id 3823
+# id = 3823
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	shopping	shopping	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3	West	West	PROPN	_	_	2	nmod	_	MWE=West_Plaza|MWEPOS=PROPN
@@ -1716,10 +1680,9 @@
 14	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Diariamente, está promovendo desfiles de moda para seus consumidores.
-# forest 1
-# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF908-4
-# id 3824
+# id = 3824
 1	Diariamente	diariamente	ADV	ADV|@ADVL>	_	4	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 3	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -1733,10 +1696,9 @@
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Os desfiles, com roupas a venda no próprio shopping, visam orientar o consumidor a respeito da moda.
-# forest 1
-# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF908-5
-# id 3825
+# id = 3825
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	desfiles	desfile	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	13	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -1763,10 +1725,9 @@
 22	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Estilistas estarão à disposição dos clientes.
-# forest 1
-# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF908-6
-# id 3826
+# id = 3826
 1	Estilistas	estilista	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	estarão	estar	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 3-4	à	_	_	_	_	_	_	_	_
@@ -1780,10 +1741,9 @@
 9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Segundo ele, isso aconteceu após a prisão de soldados venezuelanos em território brasileiro, em fevereiro de 1993.
-# forest 1
-# source CETENFolha n=909 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=909 cad=Brasil sec=pol sem=94b
 # sent_id = CF909-1
-# id 3827
+# id = 3827
 1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	2	case	_	_
 2	ele	ele	PRON	PERS|M|3S|NOM|@P<	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obl	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -1806,10 +1766,9 @@
 20	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = «Depois desse incidente, as Forças Armadas venezuelanas tiveram de esfriar suas ações na fronteira com o Brasil.
-# forest 1
-# source CETENFolha n=909 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=909 cad=Brasil sec=pol sem=94b
 # sent_id = CF909-2
-# id 3828
+# id = 3828
 1	«	«	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
 2	Depois	depois	ADV	ADV|@ADVL>	_	13	advmod	_	_
 3-4	desse	_	_	_	_	_	_	_	_
@@ -1836,10 +1795,12 @@
 22	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = A Guarda Nacional da Venezuela passou a conversar com os índios e a convencê-los de fazer o papel dela, ou seja, reprimir os garimpeiros», diz Altino.
-# forest 1
-# source CETENFolha n=909 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=909 cad=Brasil sec=pol sem=94b
 # sent_id = CF909-3
-# id 3829
+# id = 3829
+# d2d = cc(conversar,ou) -> cc(reprimir,ou)  #106
+# d2d = punct(conversar,,) -> punct(reprimir,,)  #106
+# d2d = cc(conversar,e) -> cc(convencê-,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Guarda	Guarda	PROPN	_	_	7	nsubj	_	MWE=Guarda_Nacional|MWEPOS=PROPN
 3	Nacional	Nacional	PROPN	_	_	2	flat	_	_
@@ -1879,10 +1840,9 @@
 34	.	.	PUNCT	PU|@PU	_	32	punct	_	_
 
 # text = A maioria dos bons jogadores brasileiros atuava em clubes profissionais, filiados à FBF.
-# forest 1
-# source CETENFolha n=910 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=910 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF910-1
-# id 3830
+# id = 3830
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	maioria	maioria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
 3-4	dos	_	_	_	_	_	_	_	_
@@ -1904,10 +1864,9 @@
 17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Não houve acordo para uma trégua durante a Copa.
-# forest 1
-# source CETENFolha n=910 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=910 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF910-2
-# id 3831
+# id = 3831
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	houve	haver	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	acordo	acordo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
@@ -1920,10 +1879,9 @@
 10	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = A solução foi negociar diretamente com os jogadores.
-# forest 1
-# source CETENFolha n=910 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=910 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF910-3
-# id 3832
+# id = 3832
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	solução	solução	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -1935,10 +1893,11 @@
 9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A CBD aliciou Leônidas (Vasco), Luizinho e Waldemar de Brito (São Paulo), entre outros.
-# forest 1
-# source CETENFolha n=910 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=910 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF910-4
-# id 3833
+# id = 3833
+# d2d = punct(Leônidas,,) -> punct(Luizinho,,)  #106
+# d2d = cc(Luizinho,e) -> cc(Waldemar,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	CBD	CBD	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	aliciou	aliciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -1962,10 +1921,9 @@
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Era uma época em que os cariocas imperavam em campo e fora dele.
-# forest 1
-# source CETENFolha n=911 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=911 cad=Esporte sec=des sem=94b
 # sent_id = CF911-1
-# id 3834
+# id = 3834
 1	Era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	época	época	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
@@ -1984,10 +1942,9 @@
 15	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Por razões que a própria razão desconhece, no sorteio do local do jogo decisivo, a bolinha quase sempre apontava o assustador estádio de São Januário.
-# forest 1
-# source CETENFolha n=911 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=911 cad=Esporte sec=des sem=94b
 # sent_id = CF911-2
-# id 3835
+# id = 3835
 1	Por	por	ADP	PRP|@ADVL>	_	2	case	_	_
 2	razões	razão	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	24	obl	_	_
 3	que	que	PRON	<rel>|INDP|F|P|@ACC>	Gender=Fem|Number=Plur|PronType=Rel	7	obj	_	_
@@ -2024,10 +1981,9 @@
 31	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
 # text = O torcedor paulista sonhava com uma era futura, em que São Paulo chegaria à supremacia, se possível de forma arrasadora.
-# forest 1
-# source CETENFolha n=911 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=911 cad=Esporte sec=des sem=94b
 # sent_id = CF911-3
-# id 3836
+# id = 3836
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	torcedor	torcedor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	paulista	paulista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -2055,10 +2011,10 @@
 24	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Passaram-se uns 50 anos e o sonho se realizou, trazendo alegria e também, inesperadamente, frustração.
-# forest 1
-# source CETENFolha n=911 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=911 cad=Esporte sec=des sem=94b
 # sent_id = CF911-4
-# id 3837
+# id = 3837
+# d2d = cc(Passaram-,e) -> cc(realizou,e)  #106
 1-2	Passaram-se	_	_	_	_	_	_	_	_
 1	Passaram	passar	VERB	v-fin|<hyfen>|PS/MQP|3P|IND	Hyph=Yes|Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
 2	-se	se	PRON	pron-pers|<refl>|M|3P|ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	1	obj	_	_
@@ -2082,10 +2038,9 @@
 20	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Ficamos todos, isto é, os torcedores paulistas que vem dos idos de 1940, como o americano médio, no fim da Guerra Fria.
-# forest 1
-# source CETENFolha n=911 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=911 cad=Esporte sec=des sem=94b
 # sent_id = CF911-5
-# id 3838
+# id = 3838
 1	Ficamos	ficar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	todos	todo	PRON	<quant>|DET|M|P|@<SUBJ	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	1	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -2121,10 +2076,9 @@
 30	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Já não há o império do mal para combater.
-# forest 1
-# source CETENFolha n=911 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=911 cad=Esporte sec=des sem=94b
 # sent_id = CF911-6
-# id 3839
+# id = 3839
 1	Já	já	ADV	_	_	3	advmod	_	MWE=Já_não|MWEPOS=ADV
 2	não	não	PART	_	Polarity=Neg	1	fixed	_	_
 3	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -2139,10 +2093,12 @@
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Vasco, Botafogo, Fluminense e até o Flamengo são fantasmas do passado.
-# forest 1
-# source CETENFolha n=911 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=911 cad=Esporte sec=des sem=94b
 # sent_id = CF911-7
-# id 3840
+# id = 3840
+# d2d = punct(Vasco,,) -> punct(Botafogo,,)  #106
+# d2d = cc(Vasco,e) -> cc(Flamengo,e)  #106
+# d2d = punct(Vasco,,) -> punct(Fluminense,,)  #106
 1	Vasco	Vasco	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 3	Botafogo	Botafogo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	SpaceAfter=No
@@ -2161,10 +2117,9 @@
 15	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = O bombeiro suspeita que o golfinho tenha morrido afogado.
-# forest 1
-# source CETENFolha n=912 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=912 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF912-1
-# id 3841
+# id = 3841
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	bombeiro	bombeiro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	suspeita	suspeitar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -2177,10 +2132,9 @@
 10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ele teria ficado preso numa rede de pesca sem condições de subir à tona para respirar.
-# forest 1
-# source CETENFolha n=912 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=912 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF912-2
-# id 3842
+# id = 3842
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	teria	ter	VERB	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
 3	ficado	ficar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	2	ccomp	_	_
@@ -2204,10 +2158,9 @@
 19	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Os bombeiros pediram ajuda ao Cebimar (Centro de Biologia Marinha) da USP para apurar as causas da morte do golfinho.
-# forest 1
-# source CETENFolha n=912 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=912 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF912-3
-# id 3843
+# id = 3843
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	bombeiros	bombeiro	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	pediram	pedir	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
@@ -2241,10 +2194,9 @@
 27	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Até as 17h, a Prefeitura de Caraguatatuba não havia retirado o golfinho da praia.
-# forest 1
-# source CETENFolha n=912 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=912 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF912-4
-# id 3844
+# id = 3844
 1	Até	até	ADP	PRP|@ADVL>	_	3	case	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	17h	17h	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	SpaceAfter=No
@@ -2265,19 +2217,18 @@
 17	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Impostos E Tarifas
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-1
-# id 3845
+# id = 3845
+# d2d = cc(Impostos,E) -> cc(Tarifas,E)  #106
 1	Impostos	imposto	NOUN	<first-cjt>|<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 2	E	e	CCONJ	KC|@CO	_	3	cc	_	_
 3	Tarifas	tarifa	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	1	conj	_	_
 
 # text = O governo vai usar a URV para corrigir impostos, garantiu FHC.
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-2
-# id 3846
+# id = 3846
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	vai	ir	VERB	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_
@@ -2293,10 +2244,11 @@
 13	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = «A URV é produzida por três índices, e um dos índices é o mesmo da Ufir.
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-3
-# id 3847
+# id = 3847
+# d2d = cc(produzida,e) -> cc(mesmo,e)  #106
+# d2d = punct(produzida,,) -> punct(mesmo,,)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	URV	URV	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
@@ -2322,10 +2274,9 @@
 21	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Vai ter paridade, já desde o começo», explicou.
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-4
-# id 3848
+# id = 3848
 1	Vai	ir	VERB	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_
 2	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	_
 3	paridade	paridade	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No
@@ -2340,10 +2291,11 @@
 12	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Quanto às tarifas públicas, não serão fixadas em URV para evitar reajustes diários, mas terão correções periódicas pelo indexador.
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-5
-# id 3849
+# id = 3849
+# d2d = punct(fixadas,,) -> punct(terão,,)  #106
+# d2d = cc(fixadas,mas) -> cc(terão,mas)  #106
 1	Quanto	quanto	ADV	ADV|@ADVL>	_	4	case	_	MWE=Quanto_a|MWEPOS=ADP
 2-3	às	_	_	_	_	_	_	_	_
 2	a	a	DET	PRP|@A<	Gender=Fem|Number=Sing|PronType=Art	1	fixed	_	_
@@ -2372,10 +2324,9 @@
 24	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = «Do ponto de vista de proteção ao consumidor, vou reajustar o preço da tarifa pública no dia normal como se ela fosse URV.
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-6
-# id 3850
+# id = 3850
 1	«	«	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
 2-3	Do	_	_	_	_	_	_	_	_
 2	De	de	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
@@ -2412,10 +2363,9 @@
 30	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Ou seja, pela média real dos últimos quatro meses», disse.
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-7
-# id 3851
+# id = 3851
 1	Ou	ou	CCONJ	_	_	15	obj	_	MWE=Ou_seja|MWEPOS=ADV
 2	seja	seja	NOUN	_	_	1	fixed	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -2436,17 +2386,15 @@
 16	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Aposentados
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-8
-# id 3852
+# id = 3852
 1	Aposentados	aposentado	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 
 # text = Serão beneficiados porque hoje demoram até 12 dias para receber seus benefícios, vinculados ao salário mínimo:
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-9
-# id 3853
+# id = 3853
 1	Serão	ser	VERB	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 2	beneficiados	beneficiar	VERB	<mv>|<pass>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	1	ccomp	_	_
 3	porque	porque	SCONJ	KS|@SUB	_	5	mark	_	_
@@ -2469,10 +2417,9 @@
 19	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «Onze milhões de aposentados ganham mínimo.
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-10
-# id 3854
+# id = 3854
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
 2	Onze	onze	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
 3	milhões	milhão	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
@@ -2483,10 +2430,9 @@
 8	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Esses vão ter um aumento real, pelo que disse o ministro Cutolo (Sérgio, da Previdência), na passagem para a URV, de 17 $%.
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-11
-# id 3855
+# id = 3855
 1	Esses	esse	PRON	<dem>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Dem	2	nsubj	_	_
 2	vão	ir	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	_
@@ -2525,10 +2471,9 @@
 33	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = E alguns vão ter de 30 $%».
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-12
-# id 3856
+# id = 3856
 1	E	e	CCONJ	KC|@CO	_	4	cc	_	_
 2	alguns	algum	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	3	nsubj	_	_
 3	vão	ir	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -2540,10 +2485,9 @@
 9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ele atribuiu a discussão sobre o valor dos benefícios a uma «ilusão monetária».
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-13
-# id 3857
+# id = 3857
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	atribuiu	atribuir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -2564,10 +2508,11 @@
 17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «As pessoas pensam que recebem US$ 80, mas 30 dias depois esse valor é muito menor».
-# forest 1
-# source CETENFolha n=913 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=913 cad=Brasil sec=pol sem=94b
 # sent_id = CF913-14
-# id 3858
+# id = 3858
+# d2d = cc(pensam,mas) -> cc(menor,mas)  #106
+# d2d = punct(pensam,,) -> punct(menor,,)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
 2	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	pessoas	pessoa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
@@ -2590,10 +2535,9 @@
 20	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Encerrada a festa, Maluly viu o rapaz esperando.
-# forest 1
-# source CETENFolha n=914 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=914 cad=Brasil sec=pol sem=94b
 # sent_id = CF914-1
-# id 3859
+# id = 3859
 1	Encerrada	encerrar	VERB	<mv>|V|PCP|F|S|@ICL-PRED>	Gender=Fem|Number=Sing|VerbForm=Part	6	advcl	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	festa	festa	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	1	nsubj	_	SpaceAfter=No
@@ -2606,10 +2550,9 @@
 10	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O deputado se aproximou.
-# forest 1
-# source CETENFolha n=914 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=914 cad=Brasil sec=pol sem=94b
 # sent_id = CF914-2
-# id 3860
+# id = 3860
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	deputado	deputado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	4	obj	_	_
@@ -2617,10 +2560,9 @@
 5	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Eu precisava duma ajuda do senhor, deputado ...
-# forest 1
-# source CETENFolha n=914 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=914 cad=Brasil sec=pol sem=94b
 # sent_id = CF914-3
-# id 3861
+# id = 3861
 1	Eu	eu	PRON	PERS|M|1S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
 2	precisava	precisar	VERB	<mv>|V|IMPF|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_
 3-4	duma	_	_	_	_	_	_	_	_
@@ -2636,10 +2578,9 @@
 11	...	...	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Príncipe Charles vai a inauguração
-# forest 1
-# source CETENFolha n=915 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=915 cad=Mundo sec=pol sem=94b
 # sent_id = CF915-1
-# id 3862
+# id = 3862
 1	Príncipe	príncipe	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	Charles	Charles	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	1	nmod	_	_
 3	vai	ir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -2647,10 +2588,9 @@
 5	inauguração	inauguração	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
 
 # text = O Príncipe Charles, do Reino Unido, fez respiração boca-a-boca num boneco (foto) na inauguração do novo prédio do Centro de Ambulâncias de Wellington, capital da Nova Zelândia.
-# forest 1
-# source CETENFolha n=915 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=915 cad=Mundo sec=pol sem=94b
 # sent_id = CF915-2
-# id 3863
+# id = 3863
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Príncipe	príncipe	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 3	Charles	Charles	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
@@ -2698,10 +2638,10 @@
 39	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = O homem que atacou Charles anteontem não terá direito a fiança e ficará preso pelo menos até o fim da visita de cinco dias do príncipe ao país.
-# forest 1
-# source CETENFolha n=915 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=915 cad=Mundo sec=pol sem=94b
 # sent_id = CF915-3
-# id 3864
+# id = 3864
+# d2d = cc(terá,e) -> cc(ficará,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	homem	homem	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	4	nsubj	_	_
@@ -2741,10 +2681,13 @@
 33	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Lituânia e Ucrânia elogiam a Otan os presidentes da Lituânia, Algirdas Zebrauskas, e da Ucrânia, Leonid Kravtchuk, elogiaram ontem o programa de «Parceria pela Paz» da Otan (aliança militar ocidental, liderada pelos EUA), que prevê operações conjuntas com países do Leste Europeu.
-# forest 1
-# source CETENFolha n=915 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=915 cad=Mundo sec=pol sem=94b
 # sent_id = CF915-4
-# id 3865
+# id = 3865
+# d2d = punct(Lituânia,,) -> punct(Ucrânia,,)  #106
+# d2d = cc(Lituânia,e) -> cc(Ucrânia,e)  #106
+# d2d = cc(Lituânia,e) -> cc(Ucrânia,e)  #106
+# d2d = punct(Lituânia,,) -> punct(Ucrânia,,)  #106
 1	Lituânia	Lituânia	PROPN	<first-cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	_
 3	Ucrânia	Ucrânia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	1	conj	_	_
@@ -2812,10 +2755,9 @@
 59	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Segundo eles, os laços com a aliança não vão afetar as relações com a Rússia.
-# forest 1
-# source CETENFolha n=915 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=915 cad=Mundo sec=pol sem=94b
 # sent_id = CF915-5
-# id 3866
+# id = 3866
 1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	2	case	_	_
 2	eles	eles	PRON	PERS|M|3P|NOM|@P<	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	11	obl	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	10	punct	_	_
@@ -2835,10 +2777,9 @@
 17	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Não é verdade, como diz Gusmão, que a missão enviada a Israel tenha feito «confronto de preços».
-# forest 1
-# source CETENFolha n=916 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=916 cad=Mais! sec=nd sem=94b
 # sent_id = CF916-1
-# id 3867
+# id = 3867
 1	Não	não	ADV	ADV|@ADVL>	Polarity=Neg	3	advmod	_	_
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 3	verdade	verdade	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
@@ -2863,10 +2804,9 @@
 22	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O relatório sigiloso não traz qualquer lista de preços.
-# forest 1
-# source CETENFolha n=916 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=916 cad=Mais! sec=nd sem=94b
 # sent_id = CF916-2
-# id 3868
+# id = 3868
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	relatório	relatório	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 3	sigiloso	sigiloso	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -2879,10 +2819,10 @@
 10	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = As evidências de superfaturamento foram levantadas pelos professores Armando Laganá e Márcio Rillo, da USP, a pedido da Folha.
-# forest 1
-# source CETENFolha n=916 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=916 cad=Mais! sec=nd sem=94b
 # sent_id = CF916-3
-# id 3869
+# id = 3869
+# d2d = cc(Armando,e) -> cc(Márcio,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	evidências	evidência	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -2913,10 +2853,9 @@
 25	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Sustentadas em depoimentos à PF, foram confirmadas em três perícias.
-# forest 1
-# source CETENFolha n=916 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=916 cad=Mais! sec=nd sem=94b
 # sent_id = CF916-4
-# id 3870
+# id = 3870
 1	Sustentadas	sustentar	VERB	<mv>|V|PCP|F|P|@ICL-PRED>	Gender=Fem|Number=Plur|VerbForm=Part	9	advcl	_	_
 2	em	em	ADP	PRP|@<PIV	_	3	case	_	_
 3	depoimentos	depoimento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obj	_	_
@@ -2933,10 +2872,9 @@
 13	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = A última delas, com a participação de três cientistas, comprovou superfaturamento de 343 $%.
-# forest 1
-# source CETENFolha n=916 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=916 cad=Mais! sec=nd sem=94b
 # sent_id = CF916-5
-# id 3871
+# id = 3871
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	última	último	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|F|S|@SUBJ>	Gender=Fem|Number=Sing|NumType=Ord	13	nsubj	_	_
 3-4	delas	_	_	_	_	_	_	_	SpaceAfter=No
@@ -2958,10 +2896,9 @@
 18	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Cingapura acusa mais um americano
-# forest 1
-# source CETENFolha n=917 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id = CF917-1
-# id 3872
+# id = 3872
 1	Cingapura	Cingapura	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	acusa	acusar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	mais	mais	DET	<setop>|ADV|@>A	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
@@ -2969,10 +2906,9 @@
 5	americano	americano	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
 
 # text = Stephen Freehill, 16 (foto), compareceu ontem a um tribunal de Cingapura para uma audiência preliminar.
-# forest 1
-# source CETENFolha n=917 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id = CF917-2
-# id 3873
+# id = 3873
 1	Stephen	Stephen	PROPN	_	_	9	nsubj	_	MWE=Stephen_Freehill|MWEPOS=PROPN
 2	Freehill	Freehill	PROPN	_	_	1	flat	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -2995,10 +2931,9 @@
 20	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Ele é acusado de vandalismo.
-# forest 1
-# source CETENFolha n=917 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id = CF917-3
-# id 3874
+# id = 3874
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	é	ser	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	acusado	acusar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	2	ccomp	_	_
@@ -3007,10 +2942,9 @@
 6	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Pode ser condenado ao açoite, como seu compatriota Michael Fay, 18, preso na mesma ocasião.
-# forest 1
-# source CETENFolha n=917 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id = CF917-4
-# id 3875
+# id = 3875
 1	Pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 3	condenado	condenar	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	2	ccomp	_	_
@@ -3036,10 +2970,10 @@
 21	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Fay foi punido com quatro vergastadas e agora cumpre pena de prisão.
-# forest 1
-# source CETENFolha n=917 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id = CF917-5
-# id 3876
+# id = 3876
+# d2d = cc(punido,e) -> cc(cumpre,e)  #106
 1	Fay	Fay	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	foi	ser	VERB	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	punido	punir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	2	ccomp	_	_
@@ -3055,10 +2989,9 @@
 13	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Norte-iemenitas tomam base do sul
-# forest 1
-# source CETENFolha n=917 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id = CF917-6
-# id 3877
+# id = 3877
 1	Norte-iemenitas	norte-iemenita	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	tomam	tomar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	base	base	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
@@ -3068,10 +3001,9 @@
 6	sul	sul	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 
 # text = Forças do norte do Iêmen anunciaram a tomada da base aérea de Al Anad, a principal dos sul-iemenitas.
-# forest 1
-# source CETENFolha n=917 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id = CF917-7
-# id 3878
+# id = 3878
 1	Forças	força	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	8	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -3102,10 +3034,9 @@
 24	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = A base fica a apenas 50 km de Áden, a capital do sul.
-# forest 1
-# source CETENFolha n=917 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id = CF917-8
-# id 3879
+# id = 3879
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	base	base	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	fica	ficar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -3125,10 +3056,10 @@
 16	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A guerra começou há 13 dias por causa dum confronto entre o presidente Ali Abdulllah Saleh e seu vice.
-# forest 1
-# source CETENFolha n=917 cad=Mundo sec=pol sem=94b
+# source = CETENFolha n=917 cad=Mundo sec=pol sem=94b
 # sent_id = CF917-9
-# id 3880
+# id = 3880
+# d2d = cc(presidente,e) -> cc(vice,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	guerra	guerra	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	começou	começar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -3153,10 +3084,9 @@
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «Não damos conta de atendê-los.
-# forest 1
-# source CETENFolha n=918 cad=Mundo sec=pol sem=94a
+# source = CETENFolha n=918 cad=Mundo sec=pol sem=94a
 # sent_id = CF918-1
-# id 3881
+# id = 3881
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	damos	dar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -3168,10 +3098,9 @@
 8	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A resposta ao pedido de ajuda foi gigantesca», diz Virginia de la Guardia, porta-voz da Médicos Sem Fronteiras.
-# forest 1
-# source CETENFolha n=918 cad=Mundo sec=pol sem=94a
+# source = CETENFolha n=918 cad=Mundo sec=pol sem=94a
 # sent_id = CF918-2
-# id 3882
+# id = 3882
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	resposta	resposta	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3-4	ao	_	_	_	_	_	_	_	_
@@ -3200,10 +3129,9 @@
 24	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = A maioria dos voluntários são jovens.
-# forest 1
-# source CETENFolha n=918 cad=Mundo sec=pol sem=94a
+# source = CETENFolha n=918 cad=Mundo sec=pol sem=94a
 # sent_id = CF918-3
-# id 3883
+# id = 3883
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	maioria	maioria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
 3-4	dos	_	_	_	_	_	_	_	_
@@ -3215,10 +3143,9 @@
 8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Mas, comenta Enrique Albizu, presidente da Medicus Mundi, «é precisamente nas situações de emergência que necessitamos de gente mais especializada».
-# forest 1
-# source CETENFolha n=918 cad=Mundo sec=pol sem=94a
+# source = CETENFolha n=918 cad=Mundo sec=pol sem=94a
 # sent_id = CF918-4
-# id 3884
+# id = 3884
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 3	comenta	comentar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -3251,10 +3178,9 @@
 28	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Técnico Pepe diz que falta talento ao Santos
-# forest 1
-# source CETENFolha n=919 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=919 cad=Esporte sec=des sem=94b
 # sent_id = CF919-1
-# id 3885
+# id = 3885
 1	Técnico	técnico	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	Pepe	Pepe	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	1	nmod	_	_
 3	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -3267,10 +3193,9 @@
 9	Santos	Santos	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	obj	_	_
 
 # text = O Santos volta a viver um clima tenso para o próximo jogo, domingo contra o Santo André, em busca da primeira vitória no Campeonato Paulista.
-# forest 1
-# source CETENFolha n=919 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=919 cad=Esporte sec=des sem=94b
 # sent_id = CF919-3
-# id 3886
+# id = 3886
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Santos	Santos	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	volta	voltar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -3305,10 +3230,10 @@
 30	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O técnico Pepe, irritado com a atuação do time no empate em 1 a 1 com Ituano anteontem, disse «que está faltando tranquilidade e talento aos jogadores».
-# forest 1
-# source CETENFolha n=919 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=919 cad=Esporte sec=des sem=94b
 # sent_id = CF919-4
-# id 3887
+# id = 3887
+# d2d = cc(tranquilidade,e) -> cc(talento,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	técnico	técnico	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj	_	_
 3	Pepe	Pepe	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
@@ -3349,10 +3274,9 @@
 35	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
 # text = Pepe ainda tem esperança que o centroavante Guga renove o seu contrato, vencido em 31 de dezembro.
-# forest 1
-# source CETENFolha n=919 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=919 cad=Esporte sec=des sem=94b
 # sent_id = CF919-5
-# id 3888
+# id = 3888
 1	Pepe	Pepe	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	ainda	ainda	ADV	ADV|@ADVL>	_	3	advmod	_	_
 3	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -3374,10 +3298,10 @@
 19	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «Se isso acontecer, tem que ser rápido, do contrário não adianta mais», afirmou.
-# forest 1
-# source CETENFolha n=919 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=919 cad=Esporte sec=des sem=94b
 # sent_id = CF919-6
-# id 3889
+# id = 3889
+# d2d = punct(rápido,,) -> punct(adianta,,)  #106
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
 2	Se	se	SCONJ	KS|@SUB	_	4	mark	_	_
 3	isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	_	_
@@ -3401,20 +3325,18 @@
 20	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = Saiba quem é Barrichello
-# forest 1
-# source CETENFolha n=920 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=920 cad=Esporte sec=des sem=94b
 # sent_id = CF920-1
-# id 3890
+# id = 3890
 1	Saiba	saber	VERB	<mv>|V|PR|2S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	quem	quem	PRON	<interr>|INDP|M|S|@SC>	Gender=Masc|Number=Sing|PronType=Int	1	ccomp	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
 4	Barrichello	Barrichello	PROPN	PROP|M|S|@<sUBJ	Gender=Masc|Number=Sing	2	nsubj	_	_
 
 # text = Nascido no dia 23 de maio de 1972, em São Paulo, Rubens Gonçalves Barrichello começou sua carreira automobilística no kart, em 81, quando foi vice-campeão júnior da capital paulista.
-# forest 1
-# source CETENFolha n=920 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=920 cad=Esporte sec=des sem=94b
 # sent_id = CF920-3
-# id 3891
+# id = 3891
 1	Nascido	nascer	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	18	advcl	_	_
 2-3	no	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@<ADVL	_	4	case	_	_
@@ -3457,10 +3379,10 @@
 37	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Em 1989, após ganhar diversos títulos paulistas e brasileiros no kart, Barrichello disputou o Campeonato Brasileiro de Fórmula Ford, terminando em quarto lugar.
-# forest 1
-# source CETENFolha n=920 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=920 cad=Esporte sec=des sem=94b
 # sent_id = CF920-4
-# id 3892
+# id = 3892
+# d2d = cc(paulistas,e) -> cc(brasileiros,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	1989	1989	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	16	advmod	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	16	punct	_	_
@@ -3492,10 +3414,9 @@
 28	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Marcos Augusto Gonçalves é editor da Revista da Folha
-# forest 1
-# source CETENFolha n=921 cad=Revista Folha sec=nd sem=94a
+# source = CETENFolha n=921 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF921-1
-# id 3893
+# id = 3893
 1	Marcos	Marcos	PROPN	_	_	5	nsubj	_	MWE=Marcos_Augusto_Gonçalves|MWEPOS=PROPN
 2	Augusto	Augusto	PROPN	_	_	1	flat	_	_
 3	Gonçalves	Gonçalves	PROPN	_	_	1	flat	_	_
@@ -3511,19 +3432,17 @@
 11	Folha	Folha	PROPN	PROP|@P<	_	8	flat	_	_
 
 # text = ?:? Ilustração:
-# forest 1
-# source Folha n=921 cad=Revista Folha sec=nd sem=94a
+# source = Folha n=921 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF921-2
-# id 3894
+# id = 3894
 1	?:?	?:?	PUNCT	punc	_	2	punct	_	_
 2	Ilustração	ilustração	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	punc	_	2	punct	_	_
 
 # text = «Menina correndo na varanda», óleo s/ tela, Giacomo Balla, 1912
-# forest 1
-# source CETENFolha n=921 cad=Revista Folha sec=nd sem=94a
+# source = CETENFolha n=921 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF921-3
-# id 3895
+# id = 3895
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
 2	Menina	Menina	PROPN	_	_	0	root	_	MWE=Menina_correndo_na_varanda|MWEPOS=PROPN
 3	correndo	correndo	PROPN	_	_	2	flat	_	_
@@ -3543,10 +3462,9 @@
 16	1912	1912	NUM	<year>|<date>|NUM|M|S|@N<PRED	Gender=Masc|Number=Sing	2	nummod	_	_
 
 # text = Blitz multa duas lojas em shopping no DF
-# forest 1
-# source CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF922-1
-# id 3896
+# id = 3896
 1	Blitz	blitz	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	multa	multar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	duas	dois	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	4	nummod	_	_
@@ -3559,10 +3477,9 @@
 9	DF	DF	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
 
 # text = A Sunab (Superintendência Nacional de Abastecimento) autuou sábado duas lojas do ParK Shopping, em Brasília.
-# forest 1
-# source CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF922-2
-# id 3897
+# id = 3897
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Sunab	Sunab	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3	(	(	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
@@ -3586,10 +3503,9 @@
 20	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Ambas não apresentavam preços de produtos expostos nas vitrines.
-# forest 1
-# source CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF922-3
-# id 3898
+# id = 3898
 1	Ambas	ambos	PRON	<quant>|DET|F|P|@SUBJ>	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	3	nsubj	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	apresentavam	apresentar	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -3604,10 +3520,9 @@
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A multa para lojistas que descumprirem a determinação pode chegar a R$ 128 mil.
-# forest 1
-# source CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF922-4
-# id 3899
+# id = 3899
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	multa	multa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3	para	para	ADP	PRP|@N<	_	4	case	_	_
@@ -3625,10 +3540,9 @@
 15	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Segundo Eduardo Lago, superintendente do orgão, já foram aplicadas 400 multas em todo o país desde o início do mês.
-# forest 1
-# source CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF922-5
-# id 3900
+# id = 3900
 1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	2	case	_	_
 2	Eduardo	Eduardo	PROPN	_	_	12	obl	_	MWE=Eduardo_Lago|MWEPOS=PROPN
 3	Lago	Lago	PROPN	_	_	2	flat	_	SpaceAfter=No
@@ -3658,10 +3572,9 @@
 25	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Mercedes produzirá carro na França
-# forest 1
-# source CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF922-6
-# id 3901
+# id = 3901
 1	Mercedes	Mercedes	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	produzirá	produzir	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 3	carro	carro	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
@@ -3671,10 +3584,9 @@
 6	França	França	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	_
 
 # text = A Mercedes-Benz deve instalar a linha de montagem do Swatch, carro compacto com design do fabricante dos relógios da marca, em Sarreguemines, cidade do norte da França.
-# forest 1
-# source CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF922-7
-# id 3902
+# id = 3902
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Mercedes-Benz	Mercedes-Benz	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -3720,10 +3632,9 @@
 37	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A decisão foi tomada pelo conselho da montadora alemã, na última sexta-feira.
-# forest 1
-# source CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF922-8
-# id 3903
+# id = 3903
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	decisão	decisão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -3746,10 +3657,9 @@
 17	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O anúncio oficial será feito após o dia 20.
-# forest 1
-# source CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
+# source = CETENFolha n=922 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF922-9
-# id 3904
+# id = 3904
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	anúncio	anúncio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	oficial	oficial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -3762,10 +3672,9 @@
 10	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Beckenbauer aconselha o lateral a conversar com o treinador, procurando reverter a situação.
-# forest 1
-# source CETENFolha n=923 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=923 cad=Esporte sec=des sem=94a
 # sent_id = CF923-1
-# id 3905
+# id = 3905
 1	Beckenbauer	Beckenbauer	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	aconselha	aconselhar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -3783,10 +3692,9 @@
 15	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «Senão ele vai ser alvo fácil das críticas se o time perder.»
-# forest 1
-# source CETENFolha n=923 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=923 cad=Esporte sec=des sem=94a
 # sent_id = CF923-2
-# id 3906
+# id = 3906
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
 2	Senão	senão	ADV	ADV|@ADVL>	_	6	advmod	_	_
 3	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
@@ -3806,10 +3714,9 @@
 16	»	»	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O caso Effenberg, jogador cortado por ter feito gesto obsceno à torcida, também foi criticado.
-# forest 1
-# source CETENFolha n=923 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=923 cad=Esporte sec=des sem=94a
 # sent_id = CF923-3
-# id 3907
+# id = 3907
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	caso	caso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
 3	Effenberg	Effenberg	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
@@ -3832,10 +3739,9 @@
 19	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = «Foi um ato muito rigoroso.
-# forest 1
-# source CETENFolha n=923 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=923 cad=Esporte sec=des sem=94a
 # sent_id = CF923-4
-# id 3908
+# id = 3908
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
 2	Foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_
 3	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -3845,10 +3751,10 @@
 7	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Agora, os jogadores vão cumprir sua função mais por obrigação e não por prazer.»
-# forest 1
-# source CETENFolha n=923 cad=Esporte sec=des sem=94a &E
+# source = CETENFolha n=923 cad=Esporte sec=des sem=94a &E
 # sent_id = CF923-5
-# id 3909
+# id = 3909
+# d2d = cc(obrigação,e) -> cc(prazer,e)  #106
 1	Agora	agora	ADV	<kc>|ADV|@ADVL>	_	6	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -3868,10 +3774,9 @@
 17	»	»	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Apesar das críticas, Vogts prefere manter a discrição:
-# forest 1
-# source CETENFolha n=923 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=923 cad=Esporte sec=des sem=94a
 # sent_id = CF923-6
-# id 3910
+# id = 3910
 1	Apesar	apesar	ADV	ADV|@ADVL>	_	4	case	_	MWE=Apesar_de|MWEPOS=ADP
 2-3	das	_	_	_	_	_	_	_	_
 2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
@@ -3886,10 +3791,9 @@
 11	:	:	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = «Beckenbauer tem o direito de dizer o que quiser».
-# forest 1
-# source CETENFolha n=923 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=923 cad=Esporte sec=des sem=94a
 # sent_id = CF923-7
-# id 3911
+# id = 3911
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
 2	Beckenbauer	Beckenbauer	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -3904,10 +3808,11 @@
 12	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Rodado no início da década de 50, época áurea do macarthismo perseguição a artistas e intelectuais comunistas ou acusados de simpatizar com essa ideologia liderada pelo senador Joseph McCarthy nos EUA, o filme ganha versão para CD-ROM, com direito a um extenso material de referência.
-# forest 1
-# source CETENFolha n=924 cad=Informática sec=com sem=94b
+# source = CETENFolha n=924 cad=Informática sec=com sem=94b
 # sent_id = CF924-1
-# id 3912
+# id = 3912
+# d2d = cc(macarthismo,e) -> cc(intelectuais,e)  #106
+# d2d = cc(comunistas,ou) -> cc(acusados,ou)  #106
 1	Rodado	rodar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	41	advcl	_	_
 2-3	no	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@<ADVL	_	4	case	_	_
@@ -3969,10 +3874,9 @@
 54	.	.	PUNCT	PU|@PU	_	41	punct	_	_
 
 # text = Preço: US$ 74,71.
-# forest 1
-# source CETENFolha n=924 cad=Informática sec=com sem=94b
+# source = CETENFolha n=924 cad=Informática sec=com sem=94b
 # sent_id = CF924-2
-# id 3913
+# id = 3913
 1	Preço	preço	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3	US$	US$	SYM	_	Gender=Masc|Number=Plur	1	nmod	_	_
@@ -3980,10 +3884,9 @@
 5	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = O filme narra uma greve de mineiros numa cidade do Novo México, nos EUA.
-# forest 1
-# source CETENFolha n=924 cad=Informática sec=com sem=94b
+# source = CETENFolha n=924 cad=Informática sec=com sem=94b
 # sent_id = CF924-3
-# id 3914
+# id = 3914
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	filme	filme	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	narra	narrar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -4008,10 +3911,10 @@
 19	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Há uma trama paralela, com Ramon e Esperanza, casal que após a greve se separa.
-# forest 1
-# source CETENFolha n=924 cad=Informática sec=com sem=94b
+# source = CETENFolha n=924 cad=Informática sec=com sem=94b
 # sent_id = CF924-4
-# id 3915
+# id = 3915
+# d2d = cc(Ramon,e) -> cc(Esperanza,e)  #106
 1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	trama	trama	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
@@ -4032,10 +3935,9 @@
 18	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Caso isso ocorresse, eles seriam colocados em liberdade tão logo chegassem no Canadá.
-# forest 1
-# source CETENFolha n=925 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=925 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF925-1
-# id 3916
+# id = 3916
 1	Caso	caso	SCONJ	KS|@SUB	_	3	mark	_	_
 2	isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_
 3	ocorresse	ocorrer	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	advcl	_	SpaceAfter=No
@@ -4055,10 +3957,10 @@
 16	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Documento do Ministério das Relações Exteriores do Canadá, obtido pela Folha, dá apoio ao lobby (grupo de pressão) feito pela Embaixada do Canadá junto a senadores e deputados brasileiros para que os canadenses sejam expulsos.
-# forest 1
-# source CETENFolha n=925 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=925 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF925-2
-# id 3917
+# id = 3917
+# d2d = cc(senadores,e) -> cc(deputados,e)  #106
 1	Documento	documento	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -4115,10 +4017,9 @@
 47	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Segundo o cônsul, era crescente a pressão do Congresso norte-americano sobre o Departamento de Estado para que se adotasse uma política idêntica à do Brasil.
-# forest 1
-# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-1
-# id 3918
+# id = 3918
 1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	cônsul	cônsul	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No
@@ -4154,10 +4055,9 @@
 30	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = «Queremos dar um visto por dez anos.
-# forest 1
-# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-2
-# id 3919
+# id = 3919
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
 2	Queremos	querer	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	dar	dar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
@@ -4169,10 +4069,9 @@
 9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = É mais eficiente do que por apenas quatro anos.
-# forest 1
-# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-3
-# id 3920
+# id = 3920
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 2	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	_
 3	eficiente	eficiente	ADJ	<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
@@ -4187,10 +4086,9 @@
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Estamos sendo forçados, ao invés, a reduzir o prazo para três meses.
-# forest 1
-# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-4
-# id 3921
+# id = 3921
 1	Estamos	estar	AUX	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	sendo	ser	VERB	<aux>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
 3	forçados	forçar	VERB	<mv>|<pass>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	2	ccomp	_	SpaceAfter=No
@@ -4210,10 +4108,9 @@
 16	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = É uma situação absurda», disse Taylor, 49.
-# forest 1
-# source CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-5
-# id 3922
+# id = 3922
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	situação	situação	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	7	ccomp	_	_
@@ -4227,10 +4124,9 @@
 11	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Um jogador que estava nos planos de Pepe era o meia Carlos Alberto Dias, que acabou indo para o Flamengo, já que a diretoria do Santos vetou o seu nome.
-# forest 1
-# source CETENFolha n=927 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=927 cad=Esporte sec=des sem=94b
 # sent_id = CF927-1
-# id 3923
+# id = 3923
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	jogador	jogador	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	4	nsubj	_	_
@@ -4270,10 +4166,9 @@
 35	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = No momento, Pelé, o maior jogador da história da equipe, é também a maior esperança dum time forte.
-# forest 1
-# source CETENFolha n=927 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=927 cad=Esporte sec=des sem=94b
 # sent_id = CF927-2
-# id 3924
+# id = 3924
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -4306,10 +4201,9 @@
 26	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = Durante esta semana, o agora dirigente esteve no Japão, em busca duma empresa que, no futuro, invista no Santos.
-# forest 1
-# source CETENFolha n=927 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=927 cad=Esporte sec=des sem=94b
 # sent_id = CF927-3
-# id 3925
+# id = 3925
 1	Durante	durante	ADP	PRP|@ADVL>	_	3	case	_	_
 2	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
 3	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	SpaceAfter=No
@@ -4344,10 +4238,9 @@
 28	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Recentemente, o time firmou um contrato de US$ 50 mil mensais com a Lousano, que vale até o fim do Campeonato Paulista.
-# forest 1
-# source CETENFolha n=927 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=927 cad=Esporte sec=des sem=94b
 # sent_id = CF927-4
-# id 3926
+# id = 3926
 1	Recentemente	recentemente	ADV	ADV|@ADVL>	_	5	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -4377,10 +4270,10 @@
 26	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O aumento das despesas acontece até mesmo nos ministérios da Fazenda e do Planejamento, responsáveis pela montagem do Orçamento federal.
-# forest 1
-# source CETENFolha n=928 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=928 cad=Brasil sec=pol sem=94b
 # sent_id = CF928-1
-# id 3927
+# id = 3927
+# d2d = cc(Fazenda,e) -> cc(Planejamento,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	aumento	aumento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3-4	das	_	_	_	_	_	_	_	_
@@ -4417,10 +4310,9 @@
 28	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = No Ministério da Fazenda, as despesas crescerão de US$ 1,13 bilhões em 93 para US$ 1,36 bilhões em 94 (ou mais 20,07 $%).
-# forest 1
-# source CETENFolha n=928 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=928 cad=Brasil sec=pol sem=94b
 # sent_id = CF928-2
-# id 3928
+# id = 3928
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -4454,10 +4346,9 @@
 29	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = No Planejamento, o crescimento é de 33,19 $%, elevando as despesas de US$ 87,6 milhões em 93 para US$ 116,69 milhões em 94.
-# forest 1
-# source CETENFolha n=928 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=928 cad=Brasil sec=pol sem=94b
 # sent_id = CF928-3
-# id 3929
+# id = 3929
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -4488,17 +4379,15 @@
 27	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Execução
-# forest 1
-# source CETENFolha n=928 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=928 cad=Brasil sec=pol sem=94b
 # sent_id = CF928-4
-# id 3930
+# id = 3930
 1	Execução	execução	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 
 # text = O deputado Aloizio Mercadante (PT/SP) divulgou ontem números do Tesouro sobre a execução orçamentária de janeiro a novembro de 1993, demonstrando que o governo conseguiu um superávit operacional de US$ 9,2 bilhões neste período.
-# forest 1
-# source CETENFolha n=928 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=928 cad=Brasil sec=pol sem=94b
 # sent_id = CF928-5
-# id 3931
+# id = 3931
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	deputado	deputado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 3	Aloizio	Aloizio	PROPN	_	_	2	nmod	_	MWE=Aloizio_Mercadante|MWEPOS=PROPN
@@ -4543,10 +4432,9 @@
 40	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Embora esteja a quase 40 km do estádio, o hotel foi escolhido porque está próximo da California State University, onde o Brasil treinará durante esta semana.
-# forest 1
-# source CETENFolha n=929 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=929 cad=Esporte sec=des sem=94a
 # sent_id = CF929-1
-# id 3932
+# id = 3932
 1	Embora	embora	SCONJ	KS|@SUB	_	2	mark	_	_
 2	esteja	estar	VERB	<mv>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	advcl	_	_
 3	a	a	ADP	PRP|@<ADVL	_	6	case	_	_
@@ -4582,10 +4470,9 @@
 31	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = A chegada ao hotel foi às 12h10 (16h10 em Brasília).
-# forest 1
-# source CETENFolha n=929 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=929 cad=Esporte sec=des sem=94a
 # sent_id = CF929-2
-# id 3933
+# id = 3933
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	chegada	chegada	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3-4	ao	_	_	_	_	_	_	_	_
@@ -4605,10 +4492,9 @@
 15	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Toda a delegação subiu diretamente para os quartos.
-# forest 1
-# source CETENFolha n=929 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=929 cad=Esporte sec=des sem=94a
 # sent_id = CF929-3
-# id 3934
+# id = 3934
 1	Toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	3	det	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	delegação	delegação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
@@ -4620,10 +4506,10 @@
 9	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Os jogadores e Parreira não falaram com a imprensa.
-# forest 1
-# source CETENFolha n=929 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=929 cad=Esporte sec=des sem=94a
 # sent_id = CF929-4
-# id 3935
+# id = 3935
+# d2d = cc(jogadores,e) -> cc(Parreira,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	jogadores	jogador	NOUN	<first-cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	_
@@ -4636,10 +4522,9 @@
 10	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Para estimular a participação, a cada dois dias de trabalho as meninas ganham uma boneca.
-# forest 1
-# source CETENFolha n=930 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=930 cad=Esporte sec=des sem=94b
 # sent_id = CF930-1
-# id 3936
+# id = 3936
 1	Para	para	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	estimular	estimular	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	14	advcl	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -4659,10 +4544,9 @@
 17	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = A República Movimento de Emaús trabalha há 20 anos com adolescentes carentes.
-# forest 1
-# source CETENFolha n=930 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=930 cad=Esporte sec=des sem=94b
 # sent_id = CF930-2
-# id 3937
+# id = 3937
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	República	República	PROPN	_	_	6	nsubj	_	MWE=República_Movimento|MWEPOS=PROPN
 3	Movimento	Movimento	PROPN	_	_	2	flat	_	_
@@ -4678,17 +4562,18 @@
 13	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Demonização
-# forest 1
-# source CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF931-1
-# id 3938
+# id = 3938
 1	Demonização	demonização	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 
 # text = Cheia de energia, a interpretação da Orquestra Estadual da Hungria vem amortecida um pouco pela artificialidade da gravação, de quase 15 anos atrás, mas compensa a sonoridade de estúdio com o vigor.
-# forest 1
-# source CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF931-2
-# id 3939
+# id = 3939
+# d2d = cc(vem,mas) -> cc(compensa,mas)  #106
+# d2d = punct(vem,,) -> punct(compensa,,)  #106
+# d2d = punct(vem,,) -> punct(compensa,,)  #106
 1	Cheia	cheio	ADJ	<cjt>|ADJ|F|S|@PRED>	Gender=Fem|Number=Sing	14	advmod	_	_
 2	de	de	ADP	PRP|@A<	_	3	case	_	_
 3	energia	energia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	SpaceAfter=No
@@ -4735,10 +4620,9 @@
 40	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = A Sinfonia toda é uma espécie de demonização da Nona de Beethoven, que é muito mais seu assunto do que o Fausto de Goethe.
-# forest 1
-# source CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF931-3
-# id 3940
+# id = 3940
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Sinfonia	sinfonia	NOUN	<prop>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	toda	todo	DET	<quant>|DET|F|S|@N<	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	2	det	_	_
@@ -4771,10 +4655,11 @@
 28	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Nisto também na resistência e repetição de Beethoven Liszt é um foco importante, com reflexos na obra de Tchaikovsky, Scriabin e Strauss.
-# forest 1
-# source CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF931-4
-# id 3941
+# id = 3941
+# d2d = cc(resistência,e) -> cc(repetição,e)  #106
+# d2d = cc(Tchaikovsky,e) -> cc(Strauss,e)  #106
 1-2	Nisto	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|<first-cjt>|PRP|@ADVL>	_	2	case	_	_
 2	isto	isto	PRON	<-sam>|<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	14	obl	_	_
@@ -4808,10 +4693,11 @@
 28	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Não poderia haver realização maior para um compositor: substituir Beethoven, ou ter pelo menos a ilusão de ser um novo ponto de partida.
-# forest 1
-# source CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=931 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF931-5
-# id 3942
+# id = 3942
+# d2d = punct(substituir,,) -> punct(ter,,)  #106
+# d2d = cc(substituir,ou) -> cc(ter,ou)  #106
 1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 2	poderia	poder	VERB	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
 3	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	_
@@ -4842,10 +4728,9 @@
 27	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Para Simon Franco, 55, presidente da Simon Franco Recursos Humanos, «não se pode jogar fora 15 anos de experiência».
-# forest 1
-# source CETENFolha n=932 cad=Empregos sec=eco sem=94a
+# source = CETENFolha n=932 cad=Empregos sec=eco sem=94a
 # sent_id = CF932-1
-# id 3943
+# id = 3943
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Simon	Simon	PROPN	_	_	19	obl	_	MWE=Simon_Franco|MWEPOS=PROPN
 3	Franco	Franco	PROPN	_	_	2	flat	_	SpaceAfter=No
@@ -4875,10 +4760,9 @@
 26	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Segundo ele, Carvalho não está avaliando que pode ampliar seu espectro de opções sem a necessidade duma mudança radical.
-# forest 1
-# source CETENFolha n=932 cad=Empregos sec=eco sem=94a
+# source = CETENFolha n=932 cad=Empregos sec=eco sem=94a
 # sent_id = CF932-2
-# id 3944
+# id = 3944
 1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	2	case	_	_
 2	ele	ele	PRON	PERS|M|3S|NOM|@P<	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obl	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -4904,10 +4788,9 @@
 22	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Lei brasileira não proíbe a gravidez pós-menopausa
-# forest 1
-# source CETENFolha n=933 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=933 cad=Mais! sec=nd sem=94b
 # sent_id = CF933-1
-# id 3945
+# id = 3945
 1	Lei	lei	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 2	brasileira	brasileiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
@@ -4917,19 +4800,17 @@
 7	pós-menopausa	pós-menopausa	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	6	nmod	_	_
 
 # text = Editor-assistente de Ciência
-# forest 1
-# source CETENFolha n=933 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=933 cad=Mais! sec=nd sem=94b
 # sent_id = CF933-3
-# id 3946
+# id = 3946
 1	Editor-assistente	editor-assistente	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	Ciência	ciência	NOUN	<prop>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 
 # text = A reprodução assistida está regulamentada no Brasil desde novembro de 1992, embora sua prática tenha sido iniciada oito anos antes.
-# forest 1
-# source CETENFolha n=933 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=933 cad=Mais! sec=nd sem=94b
 # sent_id = CF933-4
-# id 3947
+# id = 3947
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	reprodução	reprodução	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	assistida	assistir	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
@@ -4956,10 +4837,11 @@
 23	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Determinadas pelo Conselho Federal de Medicina (CFM), as normas éticas foram inspiradas nas doutros países, Estados Unidos, França e Itália, por exemplo.
-# forest 1
-# source CETENFolha n=933 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=933 cad=Mais! sec=nd sem=94b
 # sent_id = CF933-5
-# id 3948
+# id = 3948
+# d2d = cc(Estados,e) -> cc(Itália,e)  #106
+# d2d = punct(Estados,,) -> punct(França,,)  #106
 1	Determinadas	determinar	VERB	<mv>|V|PCP|F|P|@ICL-PRED>	Gender=Fem|Number=Plur|VerbForm=Part	16	advcl	_	_
 2-3	pelo	_	_	_	_	_	_	_	_
 2	por	por	ADP	PRP|@PASS	_	4	case	_	_
@@ -4997,10 +4879,9 @@
 32	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Mas, como nesses países, os avanços nas pesquisas médicas tornaram os códigos de ética ultrapassados.
-# forest 1
-# source CETENFolha n=933 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=933 cad=Mais! sec=nd sem=94b
 # sent_id = CF933-6
-# id 3949
+# id = 3949
 1	Mas	mas	CCONJ	KC|@CO	_	14	cc	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 3	como	como	ADV	<com>|PRP|@ADVL>	PronType=Rel	14	advmod	_	_
@@ -5025,10 +4906,10 @@
 20	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = A possibilidade da gravidez pós-menopausa e o uso de óvulos de fetos abortados (veja texto à pág. 6) são exemplos mais gritantes.
-# forest 1
-# source CETENFolha n=933 cad=Mais! sec=nd sem=94b &D
+# source = CETENFolha n=933 cad=Mais! sec=nd sem=94b &D
 # sent_id = CF933-7
-# id 3950
+# id = 3950
+# d2d = cc(possibilidade,e) -> cc(uso,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	possibilidade	possibilidade	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	24	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -5060,10 +4941,9 @@
 27	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
 # text = «Ficaram de fora de nossa regulamentação», disse à Folha Antonio Henrique Pedrosa Neto, diretor do CFM.
-# forest 1
-# source CETENFolha n=933 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=933 cad=Mais! sec=nd sem=94b
 # sent_id = CF933-8
-# id 3951
+# id = 3951
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
 2	Ficaram	ficar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	10	ccomp	_	_
 3	de	de	ADP	PRP|@<ADVL	_	7	case	_	MWE=de_fora_de|MWEPOS=ADP
@@ -5091,10 +4971,9 @@
 23	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Ele afirmou, no entanto, que pelo menos a «gravidez pós-menopausa será objeto de nova resolução».
-# forest 1
-# source CETENFolha n=933 cad=Mais! sec=nd sem=94b
+# source = CETENFolha n=933 cad=Mais! sec=nd sem=94b
 # sent_id = CF933-9
-# id 3952
+# id = 3952
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	afirmou	afirmar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -5121,10 +5000,9 @@
 22	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Homens são achados amordaçados no Rio
-# forest 1
-# source CETENFolha n=934 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-1
-# id 3953
+# id = 3953
 1	Homens	homem	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	são	ser	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	achados	achar	AUX	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	4	cop	_	_
@@ -5135,10 +5013,10 @@
 7	Rio	Rio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
 
 # text = Polícia Civil encontrou dois homens amarrados, amordaçados e de olhos vendados, num barraco da favela Nova Brasília (zona norte).
-# forest 1
-# source CETENFolha n=934 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-2
-# id 3954
+# id = 3954
+# d2d = punct(amarrados,,) -> punct(amordaçados,,)  #106
 1	Polícia	Polícia	PROPN	_	_	3	nsubj	_	MWE=Polícia_Civil|MWEPOS=PROPN
 2	Civil	Civil	PROPN	_	_	1	flat	_	_
 3	encontrou	encontrar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -5169,10 +5047,10 @@
 26	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Mauro Pereira e Gilson Paulino dos Santos disseram ter sido sequestrados por traficantes, que os teriam confundido com policiais.
-# forest 1
-# source CETENFolha n=934 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-3
-# id 3955
+# id = 3955
+# d2d = cc(Mauro,e) -> cc(Gilson,e)  #106
 1	Mauro	Mauro	PROPN	_	_	9	nsubj	_	MWE=Mauro_Pereira|MWEPOS=PROPN
 2	Pereira	Pereira	PROPN	_	_	1	flat	_	_
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	_
@@ -5198,10 +5076,9 @@
 22	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Fiscais são recebidos a tiros em favela do Rio
-# forest 1
-# source CETENFolha n=934 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-4
-# id 3956
+# id = 3956
 1	Fiscais	fiscal	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	são	ser	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	recebidos	receber	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	2	ccomp	_	_
@@ -5215,10 +5092,10 @@
 10	Rio	Rio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 
 # text = Fiscais do Tribunal Regional Eleitoral e PMs do Batalhão de Choque foram recebidos a tiros ontem à tarde na Vila do João, Manguinhos (zona norte do Rio).
-# forest 1
-# source CETENFolha n=934 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-5
-# id 3957
+# id = 3957
+# d2d = cc(Fiscais,e) -> cc(PMs,e)  #106
 1	Fiscais	fiscal	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	14	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -5264,10 +5141,9 @@
 37	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Os fiscais retirar propaganda irregular.
-# forest 1
-# source CETENFolha n=934 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-6
-# id 3958
+# id = 3958
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	fiscais	fiscal	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	retirar	retirar	VERB	<mv>|V|INF|3S|@ICL-STA	Number=Sing|Person=3|VerbForm=Inf	0	root	_	_
@@ -5276,10 +5152,9 @@
 6	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = No tiroteio, morreu Adriano Herculano da Silva, 18.
-# forest 1
-# source CETENFolha n=934 cad=Brasil sec=pol sem=94a
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-7
-# id 3959
+# id = 3959
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -5297,10 +5172,9 @@
 13	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O casamento será realizado pelo reverendo Onaldo Pereira, 38, ordenado há oito anos nos Estados Unidos.
-# forest 1
-# source CETENFolha n=935 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=935 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF935-1
-# id 3960
+# id = 3960
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	casamento	casamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	será	ser	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -5326,10 +5200,9 @@
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O pastor é responsável no Brasil pela Comunidade Pacifista Cristã, fundada na Alemanha em 1708.
-# forest 1
-# source CETENFolha n=935 cad=Cotidiano sec=soc sem=94b
+# source = CETENFolha n=935 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF935-2
-# id 3961
+# id = 3961
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	pastor	pastor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -5355,10 +5228,10 @@
 20	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Feminino bate Cuba e fica com título em PE
-# forest 1
-# source CETENFolha n=936 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=936 cad=Esporte sec=des sem=94b
 # sent_id = CF936-1
-# id 3962
+# id = 3962
+# d2d = cc(bate,e) -> cc(fica,e)  #106
 1	Feminino	feminino	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	bate	bater	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	Cuba	Cuba	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
@@ -5370,10 +5243,11 @@
 9	PE	PE	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 
 # text = A seleção brasileira feminina de basquete é a campeã do Torneio Internacional de Basquete, um quadrangular amistoso disputado em Recife (PE) e que contou com a participação das seleções de Cuba, Argentina e Eslovênia.
-# forest 1
-# source CETENFolha n=936 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=936 cad=Esporte sec=des sem=94b
 # sent_id = CF936-3
-# id 3963
+# id = 3963
+# d2d = cc(Cuba,e) -> cc(Eslovênia,e)  #106
+# d2d = cc(quadrangular,e) -> cc(contou,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	seleção	seleção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3	brasileira	brasileiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -5419,10 +5293,9 @@
 41	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = O time comandado pelo técnico Miguel Ângelo da Luz ficou com o título ao derrotar anteontem à noite na final a forte seleção de Cuba por 115 a 93 (54 a 44 no primeiro tempo).
-# forest 1
-# source CETENFolha n=936 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=936 cad=Esporte sec=des sem=94b
 # sent_id = CF936-4
-# id 3964
+# id = 3964
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	time	time	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 3	comandado	comandar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
@@ -5475,10 +5348,9 @@
 44	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = A cestinha do jogo foi Hortência, que marcou 38 pontos.
-# forest 1
-# source CETENFolha n=936 cad=Esporte sec=des sem=94b
+# source = CETENFolha n=936 cad=Esporte sec=des sem=94b
 # sent_id = CF936-5
-# id 3965
+# id = 3965
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	cestinha	cestinha	NOUN	<np-def>|N|F|S|@SC>	Gender=Fem|Number=Sing	0	root	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -5495,10 +5367,10 @@
 13	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Além da fazenda do Sabiá, participaram do leilão a Terra Boa e a Mata Velha, tradicionais criadoras de nelore.
-# forest 1
-# source CETENFolha n=937 cad=Agrofolha sec=agr sem=94b
+# source = CETENFolha n=937 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF937-1
-# id 3966
+# id = 3966
+# d2d = cc(Terra,e) -> cc(Mata,e)  #106
 1	Além	além	ADV	ADV|@ADVL>	_	4	case	_	MWE=Além_de|MWEPOS=ADP
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
@@ -5529,10 +5401,9 @@
 25	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = O principal destaque na pista foi a vaca Santya, selecionada para ser doadora em transferência de embriões, que foi vendida por 40,2 mil URVs.
-# forest 1
-# source CETENFolha n=937 cad=Agrofolha sec=agr sem=94b
+# source = CETENFolha n=937 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF937-2
-# id 3967
+# id = 3967
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	principal	principal	ADJ	<SUP>|ADJ|M|S|@>N	Degree=Sup|Gender=Masc|Number=Sing	3	amod	_	_
 3	destaque	destaque	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
@@ -5564,10 +5435,10 @@
 28	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Filha do touro Chummak, ela está prenha e foi comercializada com uma bezerra ao pé.
-# forest 1
-# source CETENFolha n=937 cad=Agrofolha sec=agr sem=94b
+# source = CETENFolha n=937 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF937-3
-# id 3968
+# id = 3968
+# d2d = cc(prenha,e) -> cc(comercializada,e)  #106
 1	Filha	filha	NOUN	<cjt>|<np-idf>|N|F|S|@PRED>	Gender=Fem|Number=Sing	9	obl	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -5591,10 +5462,10 @@
 19	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = «A Times Square é também um ponto de encontro e uma alternativa teen», afirma o diretor da Multiplan.
-# forest 1
-# source CETENFolha n=938 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=938 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF938-1
-# id 3969
+# id = 3969
+# d2d = cc(ponto,e) -> cc(alternativa,e)  #106
 1	«	«	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	Times	Times	PROPN	_	_	8	nsubj	_	MWE=Times_Square|MWEPOS=PROPN
@@ -5621,10 +5492,9 @@
 23	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Para Spinelli, o espaço representa uma nova tendência para as áreas de conveniência dos shoppings.
-# forest 1
-# source CETENFolha n=938 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=938 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF938-3
-# id 3970
+# id = 3970
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Spinelli	Spinelli	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -5646,10 +5516,9 @@
 18	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Paula Toller Isso é uma coisa que a gravadora vinha sugerindo para a gente há muito tempo.
-# forest 1
-# source CETENFolha n=939 cad=Folhateen sec=soc sem=94a
+# source = CETENFolha n=939 cad=Folhateen sec=soc sem=94a
 # sent_id = CF939-1
-# id 3971
+# id = 3971
 1	Paula	Paula	PROPN	_	_	0	root	_	MWE=Paula_Toller|MWEPOS=PROPN
 2	Toller	Toller	PROPN	_	_	1	flat	_	_
 3	Isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	6	nsubj	_	_
@@ -5670,10 +5539,10 @@
 18	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Gostamos da idéia, resolvemos pegar velhos sucessos e fazer neste formato.
-# forest 1
-# source CETENFolha n=939 cad=Folhateen sec=soc sem=94a
+# source = CETENFolha n=939 cad=Folhateen sec=soc sem=94a
 # sent_id = CF939-2
-# id 3972
+# id = 3972
+# d2d = cc(pegar,e) -> cc(fazer,e)  #106
 1	Gostamos	gostar	VERB	<mv>|<first-cjt>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	4	case	_	_
@@ -5693,10 +5562,9 @@
 15	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Gravações acústicas se encaixam com o nosso tipo de som.
-# forest 1
-# source CETENFolha n=939 cad=Folhateen sec=soc sem=94a
+# source = CETENFolha n=939 cad=Folhateen sec=soc sem=94a
 # sent_id = CF939-3
-# id 3973
+# id = 3973
 1	Gravações	gravação	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
 2	acústicas	acústico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	1	amod	_	_
 3	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	obj	_	_
@@ -5710,10 +5578,9 @@
 11	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Sempre tivemos canções mais lentas.
-# forest 1
-# source CETENFolha n=939 cad=Folhateen sec=soc sem=94a
+# source = CETENFolha n=939 cad=Folhateen sec=soc sem=94a
 # sent_id = CF939-4
-# id 3974
+# id = 3974
 1	Sempre	sempre	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	tivemos	ter	VERB	<mv>|V|PS|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 3	canções	canção	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
@@ -5722,10 +5589,9 @@
 6	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Bruno Fortunato A gente sempre teve músicas que dão para tocar no violão.
-# forest 1
-# source CETENFolha n=939 cad=Folhateen sec=soc sem=94a
+# source = CETENFolha n=939 cad=Folhateen sec=soc sem=94a
 # sent_id = CF939-5
-# id 3975
+# id = 3975
 1	Bruno	Bruno	PROPN	_	_	0	root	_	MWE=Bruno_Fortunato|MWEPOS=PROPN
 2	Fortunato	Fortunato	PROPN	_	_	1	flat	_	_
 3	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -5744,10 +5610,10 @@
 15	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = A intenção é louvável e esta Folha tem denunciado sempre a ciranda financeira como obstáculo a uma autêntica estabilização.
-# forest 1
-# source CETENFolha n=940 cad=Opinião sec=opi sem=94a
+# source = CETENFolha n=940 cad=Opinião sec=opi sem=94a
 # sent_id = CF940-1
-# id 3976
+# id = 3976
+# d2d = cc(louvável,e) -> cc(denunciado,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	intenção	intenção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -5770,10 +5636,10 @@
 20	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O momento e a forma escolhidos para mudar o sistema financeiro, entretanto, dependem fortemente de variáveis políticas.
-# forest 1
-# source CETENFolha n=940 cad=Opinião sec=opi sem=94a
+# source = CETENFolha n=940 cad=Opinião sec=opi sem=94a
 # sent_id = CF940-2
-# id 3977
+# id = 3977
+# d2d = cc(momento,e) -> cc(forma,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	momento	momento	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	_
@@ -5796,18 +5662,16 @@
 20	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Dique oficial
-# forest 1
-# source CETENFolha n=941 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-1
-# id 3978
+# id = 3978
 1	Dique	dique	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	oficial	oficial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 
 # text = Está em estudo no Ministério da Previdência um conjunto de medidas para desestimular o aumento de aposentadorias no próximo ano.
-# forest 1
-# source CETENFolha n=941 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-2
-# id 3979
+# id = 3979
 1	Está	estar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	em	em	ADP	PRP|@<SA	_	3	case	_	_
 3	estudo	estudo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	_
@@ -5837,10 +5701,9 @@
 24	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Elas serão oferecidas a Itamar, como alternativa à propalada quebra do caixa previdenciário.
-# forest 1
-# source CETENFolha n=941 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-3
-# id 3980
+# id = 3980
 1	Elas	elas	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
 2	serão	ser	VERB	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 3	oferecidas	oferecer	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	2	ccomp	_	_
@@ -5862,18 +5725,16 @@
 17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Bola preta
-# forest 1
-# source CETENFolha n=941 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-4
-# id 3981
+# id = 3981
 1	Bola	bola	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	preta	preto	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
 
 # text = Causou má impressão, na quarta, a participação do ministro da Justiça, Alexandre Dupeyrat, na reunião que tratou do projeto sobre abuso do poder econômico.
-# forest 1
-# source CETENFolha n=941 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-5
-# id 3982
+# id = 3982
 1	Causou	causar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	má	má	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	impressão	impressão	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	SpaceAfter=No
@@ -5917,10 +5778,11 @@
 35	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Chegou atrasado, foi duro com seus críticos e saiu antes do fim.
-# forest 1
-# source CETENFolha n=941 cad=Brasil sec=pol sem=94b
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-7
-# id 3983
+# id = 3983
+# d2d = cc(Chegou,e) -> cc(saiu,e)  #106
+# d2d = punct(Chegou,,) -> punct(duro,,)  #106
 1	Chegou	chegar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	atrasado	atrasado	ADJ	ADJ|M|S|@<ADVL	Gender=Masc|Number=Sing	1	advmod	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -5939,10 +5801,9 @@
 15	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Madonna na pele de Madonna
-# forest 1
-# source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
+# source = CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF942-1
-# id 3984
+# id = 3984
 1	Madonna	Madonna	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2-3	na	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -5952,10 +5813,10 @@
 6	Madonna	Madonna	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 
 # text = Em «Olhos de Serpente» (Snake Eyes) de Abel Ferrara, Madonna faz o papel dela mesma: uma falsa atriz, falsa loira, que paga para estar num filme.
-# forest 1
-# source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
+# source = CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF942-2
-# id 3985
+# id = 3985
+# d2d = punct(atriz,,) -> punct(loira,,)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
 3	Olhos	Olhos	PROPN	PROP|M|S|@P<	_	16	obl	_	MWE=Olhos_de_Serpente|MWEPOS=PROPN
@@ -5997,10 +5858,9 @@
 37	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = É de longe sua melhor atuação no cinema.
-# forest 1
-# source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
+# source = CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF942-3
-# id 3986
+# id = 3986
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
 2	de	de	ADP	PRP|@<ADVL	_	6	advmod	_	MWE=de_longe|MWEPOS=ADV
 3	longe	longe	ADV	N|M|S|@P<	_	2	fixed	_	_
@@ -6014,10 +5874,9 @@
 10	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Ferrara põe o excelente Harvey Keitel para interpretar o seu papel: o do diretor que faz da falsa loira uma verdadeira atriz.
-# forest 1
-# source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
+# source = CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF942-4
-# id 3987
+# id = 3987
 1	Ferrara	Ferrara	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	põe	pôr	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
@@ -6048,10 +5907,9 @@
 26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «Olhos de Serpente» é o filme dentro do filme dentro do filme.
-# forest 1
-# source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
+# source = CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF942-5
-# id 3988
+# id = 3988
 1	«	«	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
 2	Olhos	Olhos	PROPN	PROP|M|S|@SUBJ>	_	8	nsubj	_	MWE=Olhos_de_Serpente|MWEPOS=PROPN
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -6073,10 +5931,10 @@
 17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Eddie (Harvey Keitel) dirige a história dum casal de ricos drogados em crise (Madonna e James Russo).
-# forest 1
-# source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
+# source = CETENFolha n=942 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF942-6
-# id 3989
+# id = 3989
+# d2d = cc(Madonna,e) -> cc(James,e)  #106
 1	Eddie	Eddie	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 2	(	(	PUNCT	PU|@PU	_	1	punct	_	SpaceAfter=No
 3	Harvey	Harvey	PROPN	_	_	1	nmod	_	MWE=Harvey_Keitel|MWEPOS=PROPN
@@ -6103,10 +5961,10 @@
 23	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Eddie também está em crise com sua mulher (interpretada pela mulher de Abel Ferrara) e não resiste à tentação da atriz, que paga para ele filmar (Madonna é produtora de «Olhos de Serpente»).
-# forest 1
-# source CETENFolha n=942 cad=Revista Folha sec=nd sem=94b &D
+# source = CETENFolha n=942 cad=Revista Folha sec=nd sem=94b &D
 # sent_id = CF942-7
-# id 3990
+# id = 3990
+# d2d = cc(crise,e) -> cc(resiste,e)  #106
 1	Eddie	Eddie	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	também	também	ADV	ADV|@ADVL>	_	3	advmod	_	_
 3	está	estar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -6156,10 +6014,10 @@
 44	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Caso o tetracampeão seja o Brasil (seja feita a vossa vontade assim na Terra como nos gramados), confirma-se que os últimos serão os primeiros.
-# forest 1
-# source CETENFolha n=943 cad=Ilustrada sec=nd sem=94b &D
+# source = CETENFolha n=943 cad=Ilustrada sec=nd sem=94b &D
 # sent_id = CF943-1
-# id 3991
+# id = 3991
+# d2d = cc(Terra,como) -> cc(gramados,como)  #106
 1	Caso	caso	SCONJ	KS|@SUB	_	3	mark	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	tetracampeão	tetracampeão	NOUN	<np-def>|N|M|S|@SC>	Gender=Masc|Number=Sing	23	advcl	_	_
@@ -6196,10 +6054,9 @@
 31	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
 # text = Vi, num jogo quase inacreditável da Copa, o Eire jogar futebol muito melhor do que a Itália.
-# forest 1
-# source CETENFolha n=943 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=943 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF943-2
-# id 3992
+# id = 3992
 1	Vi	ver	VERB	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3-4	num	_	_	_	_	_	_	_	_
@@ -6228,10 +6085,9 @@
 23	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Venceu por 1 a 0.
-# forest 1
-# source CETENFolha n=943 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=943 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF943-3
-# id 3993
+# id = 3993
 1	Venceu	vencer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	por	por	ADP	PRP|@<ADVL	_	3	case	_	_
 3	1	1	NUM	NUM|M|S|@P<	Gender=Masc|Number=Sing	1	advmod	_	_
@@ -6240,10 +6096,9 @@
 6	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Já bastava, para orgulho da Irlanda, que a Inglaterra sequer tivesse chegado à Copa.
-# forest 1
-# source CETENFolha n=943 cad=Ilustrada sec=nd sem=94b
+# source = CETENFolha n=943 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF943-4
-# id 3994
+# id = 3994
 1	Já	já	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	bastava	bastar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -6267,10 +6122,9 @@
 19	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Mas é na Republica Dominicana que o cruzeiro atinge seu ponto alto.
-# forest 1
-# source CETENFolha n=944 cad=Turismo sec=soc sem=94a
+# source = CETENFolha n=944 cad=Turismo sec=soc sem=94a
 # sent_id = CF944-1
-# id 3995
+# id = 3995
 1	Mas	mas	CCONJ	KC|@CO	_	10	cc	_	_
 2	é	é	ADV	<foc>|ADV|@ADVL>	_	10	advmod	_	_
 3-4	na	_	_	_	_	_	_	_	_
@@ -6288,10 +6142,9 @@
 14	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = O navio ancora numa praia, Serena Cay, que se torna exclusiva dos 1.600 passageiros.
-# forest 1
-# source CETENFolha n=944 cad=Turismo sec=soc sem=94a
+# source = CETENFolha n=944 cad=Turismo sec=soc sem=94a
 # sent_id = CF944-2
-# id 3996
+# id = 3996
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	navio	navio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	ancora	ancorar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -6315,10 +6168,11 @@
 19	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Na areia há apenas espreguiçadeiras, coqueiros e barraquinhas de artesanato.
-# forest 1
-# source CETENFolha n=944 cad=Turismo sec=soc sem=94a
+# source = CETENFolha n=944 cad=Turismo sec=soc sem=94a
 # sent_id = CF944-3
-# id 3997
+# id = 3997
+# d2d = cc(espreguiçadeiras,e) -> cc(barraquinhas,e)  #106
+# d2d = punct(espreguiçadeiras,,) -> punct(coqueiros,,)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -6335,10 +6189,9 @@
 13	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O mar é cristalino.
-# forest 1
-# source CETENFolha n=944 cad=Turismo sec=soc sem=94a
+# source = CETENFolha n=944 cad=Turismo sec=soc sem=94a
 # sent_id = CF944-4
-# id 3998
+# id = 3998
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	mar	mar	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
@@ -6346,10 +6199,9 @@
 5	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Quem quiser, vai em excursão até o resort local, Casa de Campo.
-# forest 1
-# source CETENFolha n=944 cad=Turismo sec=soc sem=94a
+# source = CETENFolha n=944 cad=Turismo sec=soc sem=94a
 # sent_id = CF944-5
-# id 3999
+# id = 3999
 1	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Number=Sing|PronType=Rel	2	nsubj	_	_
 2	quiser	querer	VERB	<mv>|V|FUT|3S|SUBJ|@FS-SUBJ>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	csubj	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -6367,10 +6219,9 @@
 15	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Sem dizer que o seu clube dispensou, humilhantemente, o seu arqueiro Zubizarreta -- depois da derrota para o Milan, 0 a 4, na decisão da Copa da Europa.
-# forest 1
-# source CETENFolha n=945 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=945 cad=Esporte sec=des sem=94a
 # sent_id = CF945-1
-# id 4000
+# id = 4000
 1	Sem	sem	ADP	<first-cjt>|PRP|@STA	_	2	mark	_	_
 2	dizer	dizer	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	7	mark	_	_
@@ -6414,10 +6265,9 @@
 37	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Quando os jogadores souberam da investida de Clemente, o ala Goicoechea se aprestou a defender o seu patrono:
-# forest 1
-# source CETENFolha n=945 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=945 cad=Esporte sec=des sem=94a
 # sent_id = CF945-2
-# id 4001
+# id = 4001
 1	Quando	quando	ADV	<rel>|ADV|@ADVL>	PronType=Rel	4	advmod	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	jogadores	jogador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
@@ -6442,10 +6292,9 @@
 21	:	:	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = «Chegamos até aqui, claro, também graças a Cruyff».
-# forest 1
-# source CETENFolha n=945 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=945 cad=Esporte sec=des sem=94a
 # sent_id = CF945-3
-# id 4002
+# id = 4002
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
 2	Chegamos	chegar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	até	até	ADP	PRP|@<SA	_	4	case	_	_
@@ -6461,10 +6310,9 @@
 13	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Só Salinas discordou dessa posição.
-# forest 1
-# source CETENFolha n=945 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=945 cad=Esporte sec=des sem=94a
 # sent_id = CF945-4
-# id 4003
+# id = 4003
 1	Só	só	ADV	ADV|@>N	_	2	advmod	_	_
 2	Salinas	Salinas	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	discordou	discordar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -6475,10 +6323,9 @@
 7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Dos dez cestinhas da atual temporada, apenas um joga fora do garrafão.
-# forest 1
-# source CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF946-1
-# id 4004
+# id = 4004
 1-2	Dos	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -6501,10 +6348,9 @@
 17	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Dos cinco primeiros artilheiros, quatro são superpivôs.
-# forest 1
-# source CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF946-2
-# id 4005
+# id = 4005
 1-2	Dos	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	5	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
@@ -6518,10 +6364,9 @@
 10	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Todos eles estarão esta noite em Minneapolis.
-# forest 1
-# source CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF946-3
-# id 4006
+# id = 4006
 1	Todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	2	det	_	_
 2	eles	eles	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
 3	estarão	estar	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -6532,10 +6377,9 @@
 8	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Chance imperdível para aqueles que apreciam enterradas, tocos e a mais primitiva troca de porradas.
-# forest 1
-# source CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF946-4
-# id 4007
+# id = 4007
 1	Chance	chance	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	imperdível	imperdível	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
 3	para	para	ADP	PRP|@N<	_	4	case	_	_
@@ -6555,10 +6399,10 @@
 17	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = A NBA nem existia e o profissionalismo no esporte apenas engatinhava quando apareceu o primeiro gigante do basquete norte-americano.
-# forest 1
-# source CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF946-5
-# id 4008
+# id = 4008
+# d2d = cc(existia,e) -> cc(engatinhava,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	NBA	NBA	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	nem	nem	ADV	ADV|@ADVL>	_	4	advmod	_	_
@@ -6585,10 +6429,9 @@
 22	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Seu nome: George Mikan.
-# forest 1
-# source CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF946-6
-# id 4009
+# id = 4009
 1	Seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	_	_
 2	nome	nome	NOUN	<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	PU|@PU	_	2	punct	_	_
@@ -6597,10 +6440,9 @@
 6	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Sua virtude: 2,08 m.
-# forest 1
-# source CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
+# source = CETENFolha n=946 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF946-7
-# id 4010
+# id = 4010
 1	Sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	_	_
 2	virtude	virtude	NOUN	<np-def>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 3	:	:	PUNCT	PU|@PU	_	2	punct	_	_
@@ -6608,10 +6450,13 @@
 5	m.	m.	NOUN	<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	2	nmod	_	_
 
 # text = Em torno do gabinete presidencial no Planalto ele quer os dois maiores colaboradores na campanha eleitoral: o amigo, empresário e secretário-geral do PSDB Sérgio Motta e o ex-reitor da Unicamp e coordenador do programa de governo Paulo Renato de Souza.
-# forest 1
-# source CETENFolha n=947 cad=Caderno Especial sec=nd sem=94a
+# source = CETENFolha n=947 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF947-1
-# id 4011
+# id = 4011
+# d2d = cc(amigo,e) -> cc(ex-reitor,e)  #106
+# d2d = cc(ex-reitor,e) -> cc(coordenador,e)  #106
+# d2d = punct(amigo,,) -> punct(ex-reitor,,)  #106
+# d2d = cc(amigo,e) -> cc(ex-reitor,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	MWE=Em_torno_de|MWEPOS=ADP
 2	torno	torno	NOUN	N|@P<	_	1	fixed	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -6669,10 +6514,9 @@
 49	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Cardoso diz que a frente para sua eleição foi formada exclusivamente em torno dum programa.
-# forest 1
-# source CETENFolha n=947 cad=Caderno Especial sec=nd sem=94a
+# source = CETENFolha n=947 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF947-2
-# id 4012
+# id = 4012
 1	Cardoso	Cardoso	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
@@ -6693,10 +6537,11 @@
 17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «Cantor tem vários; mas cantora é a Maria Carey»
-# forest 1
-# source CETENFolha n=948 cad=Revista Folha sec=nd sem=94b
+# source = CETENFolha n=948 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF948-1
-# id 4013
+# id = 4013
+# d2d = punct(tem,;) -> punct(Maria,;)  #106
+# d2d = cc(tem,mas) -> cc(Maria,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
 2	Cantor	cantor	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -6711,10 +6556,11 @@
 12	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «Ator tem vários, mas atriz é a Irene Papas»
-# forest 1
-# source CETENFolha n=948 cad=Revista Folha sec=nd sem=94b
+# source = CETENFolha n=948 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF948-3
-# id 4014
+# id = 4014
+# d2d = punct(tem,,) -> punct(Irene,,)  #106
+# d2d = cc(tem,mas) -> cc(Irene,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
 2	Ator	ator	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -6729,20 +6575,18 @@
 12	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Diretor de Cinema:
-# forest 1
-# source CETENFolha n=948 cad=Revista Folha sec=nd sem=94b
+# source = CETENFolha n=948 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF948-4
-# id 4015
+# id = 4015
 1	Diretor	diretor	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	Cinema	cinema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 4	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «O número é mais alarmante se pensarmos que daria para abastecer toda a população brasileira por oito meses», diz Dalmo Rosalen, da Secretaria do Meio Ambiente.
-# forest 1
-# source CETENFolha n=949 cad=Agrofolha sec=agr sem=94b
+# source = CETENFolha n=949 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF949-1
-# id 4016
+# id = 4016
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	número	número	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
@@ -6780,10 +6624,9 @@
 33	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = Há cidades que enfrentam programas de racionamento de água.
-# forest 1
-# source CETENFolha n=949 cad=Agrofolha sec=agr sem=94b
+# source = CETENFolha n=949 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF949-2
-# id 4017
+# id = 4017
 1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	cidades	cidade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	1	obj	_	_
 3	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	4	nsubj	_	_
@@ -6796,10 +6639,9 @@
 10	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Um exemplo é a bacia do Vale do Piracicaba (a 170 quilômetros a noroeste de São Paulo).
-# forest 1
-# source CETENFolha n=949 cad=Agrofolha sec=agr sem=94b
+# source = CETENFolha n=949 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF949-3
-# id 4018
+# id = 4018
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	exemplo	exemplo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
@@ -6826,10 +6668,10 @@
 22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Flach Hoje estão estabelecidas penas de prisão, mesmo que eventualmente não sejam cumpridas ou sejam convertidas em prestação de serviços à comunidade.
-# forest 1
-# source CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF950-1
-# id 4019
+# id = 4019
+# d2d = cc(cumpridas,ou) -> cc(convertidas,ou)  #106
 1	Flach	Flach	PROPN	PROP|M|S|@UTT	Gender=Masc|Number=Sing	0	root	_	_
 2	Hoje	hoje	ADV	ADV|@ADVL>	_	4	advmod	_	_
 3	estão	estar	VERB	<aux>|V|PR|3P|IND|@FS-UTT	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
@@ -6858,10 +6700,9 @@
 25	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Mas eu imagino que deveria se dotar, pelo menos o Judiciário, de medidas que possibilitassem a concessão do perdão judicial.
-# forest 1
-# source CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF950-2
-# id 4020
+# id = 4020
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	eu	eu	PRON	PERS|M/F|1S|NOM|@SUBJ>	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
 3	imagino	imaginar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -6891,10 +6732,10 @@
 25	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Folha -- O senhor acha que o usuário é questão de saúde, de educação ou de polícia?
-# forest 1
-# source CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF950-3
-# id 4021
+# id = 4021
+# d2d = cc(saúde,ou) -> cc(polícia,ou)  #106
 1	Folha	Folha	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -6916,10 +6757,10 @@
 19	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Flach No terreno das idéias, eu priorizo como uma questão de educação e de saúde.
-# forest 1
-# source CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF950-4
-# id 4022
+# id = 4022
+# d2d = cc(educação,e) -> cc(saúde,e)  #106
 1	Flach	Flach	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2-3	No	_	_	_	_	_	_	_	_
 2	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
@@ -6943,10 +6784,9 @@
 19	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Eu estou muito preocupado em estimular as atividades preventivas.
-# forest 1
-# source CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF950-5
-# id 4023
+# id = 4023
 1	Eu	eu	PRON	PERS|M|1S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
 2	estou	estar	AUX	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_
 3	muito	muito	ADV	<quant>|ADV|@ADVL>	NumType=Card|PronType=Ind,Neg,Tot	4	advmod	_	_
@@ -6959,10 +6799,9 @@
 10	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Nossa preocupação é um projeto que estimule no jovem uma vida sem drogas, promovendo-se um comportamento construtivo.
-# forest 1
-# source CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
+# source = CETENFolha n=950 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF950-6
-# id 4024
+# id = 4024
 1	Nossa	nosso	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	2	det	_	_
 2	preocupação	preocupação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
@@ -6988,10 +6827,9 @@
 21	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Tenista francesa elimina Arantxa em Nova York
-# forest 1
-# source CETENFolha n=951 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=951 cad=Esporte sec=des sem=94a
 # sent_id = CF951-1
-# id 4025
+# id = 4025
 1	Tenista	tenista	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 2	francesa	francês	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
 3	elimina	eliminar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -7001,10 +6839,9 @@
 7	York	York	PROPN	_	_	6	flat	_	_
 
 # text = Julie Halard causa a primeira surpresa do Masters do tênis feminino
-# forest 1
-# source CETENFolha n=951 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=951 cad=Esporte sec=des sem=94a
 # sent_id = CF951-2
-# id 4026
+# id = 4026
 1	Julie	Julie	PROPN	_	_	3	nsubj	_	MWE=Julie_Halard|MWEPOS=PROPN
 2	Halard	Halard	PROPN	_	_	1	flat	_	_
 3	causa	causar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -7022,10 +6859,9 @@
 13	feminino	feminino	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	12	amod	_	_
 
 # text = A espanhola Arantxa Sanchez, tenista com mlehor desempenho nesta temporada, foi eliminada na primeira rodad do Virginia Slims Masters em Nova York, que reúne as 16 melhores jogadoras do ano.
-# forest 1
-# source CETENFolha n=951 cad=Esporte sec=des sem=94a &W
+# source = CETENFolha n=951 cad=Esporte sec=des sem=94a &W
 # sent_id = CF951-4
-# id 4027
+# id = 4027
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	espanhola	espanhola	NOUN	<np-def>|N|F|S|@AUX<	Gender=Fem|Number=Sing	0	root	_	_
 3	Arantxa	Arantxa	PROPN	_	_	2	nmod	_	MWE=Arantxa_Sanchez|MWEPOS=PROPN
@@ -7070,10 +6906,11 @@
 38	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Sanchez, nº 2 do ranking mundial, perdeu num jogo dramático para a francesa Julie Halard por 6/2, 1/6 e 7/6, com 7/2 no tie-break decisivo.
-# forest 1
-# source CETENFolha n=951 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=951 cad=Esporte sec=des sem=94a
 # sent_id = CF951-5
-# id 4028
+# id = 4028
+# d2d = punct(6/2,,) -> punct(1/6,,)  #106
+# d2d = cc(6/2,e) -> cc(7/6,e)  #106
 1	Sanchez	Sanchez	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	nº	nº	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	nmod	_	_
@@ -7112,10 +6949,9 @@
 33	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Na 22ª posição do ranking, Halard foi empurrada pelo público no Madison Square Garden.
-# forest 1
-# source CETENFolha n=951 cad=Esporte sec=des sem=94a
+# source = CETENFolha n=951 cad=Esporte sec=des sem=94a
 # sent_id = CF951-6
-# id 4029
+# id = 4029
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
