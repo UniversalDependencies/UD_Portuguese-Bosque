@@ -1,86 +1,91 @@
-# distance_from_new = 0
-# new_sent_id = CF226-1
-# sent_id = pt-ud-train.conllu#s6015/pt
-# orig_file_sentence = 061#15
-1	Profissional	profissional	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-2	experiente	experiente	ADJ	adj|M|S	Gender=Masc|Number=Sing	1	amod	_	_
-3	deve	dever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	mostrar	mostrar	VERB	v-inf	VerbForm=Inf	3	xcomp	_	_
-5	essência	essência	NOUN	n|F|S	Gender=Fem|Number=Sing	4	dobj	_	_
+# text = Profissional experiente deve mostrar essência da carreira
+# forest 1
+# source CETENFolha n=226 cad=Empregos sec=eco sem=94a
+# sent_id = CF226-1
+# id 973
+1	Profissional	profissional	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	experiente	experiente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
+3	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
+5	essência	essência	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	carreira	carreira	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	carreira	carreira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 
-# distance_from_new = 2
-# new_sent_id = CF226-3
-# sent_id = pt-ud-train.conllu#s6016/pt
-# orig_file_sentence = 061#16
-1	Profissionais	profissional	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nsubj	_	_
-2	com	com	ADP	prp	AdpType=Prep	4	case	_	_
-3	longa	longo	ADJ	adj|F|S	Gender=Fem|Number=Sing	4	amod	_	_
-4	experiência	experiência	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-5	em	em	ADP	prp	AdpType=Prep	6	case	_	_
-6	cargos	cargo	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nmod	_	_
-7	gerenciais	gerencial	ADJ	adj|M|P	Gender=Masc|Number=Plur	6	amod	_	_
-8	e	e	CONJ	conj-c|<co-postnom>	_	7	cc	_	_
-9	administrativos	administrativo	ADJ	adj|M|P	Gender=Masc|Number=Plur	7	conj	_	_
-10	devem	dever	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-11	se	se	PRON	pron-pers|<refl>|M|3P|ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	12	dobj	_	_
-12	preocupar	preocupar	VERB	v-inf	VerbForm=Inf	10	xcomp	_	_
-13	,	,	PUNCT	punc	_	10	punct	_	_
-14	ao	ao	ADP	prp	AdpType=Prep	15	mark	_	_
-15	fazer	fazer	VERB	v-inf	VerbForm=Inf	12	advcl	_	_
-16	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	currículo	currículo	NOUN	n|M|S	Gender=Masc|Number=Sing	15	dobj	_	_
-18	,	,	PUNCT	punc	_	15	punct	_	_
-19	em	em	ADP	prp	AdpType=Prep	20	mark	_	_
-20	mostrar	mostrar	VERB	v-inf	VerbForm=Inf	15	advcl	_	_
-21	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	essência	essência	NOUN	n|F|S	Gender=Fem|Number=Sing	20	dobj	_	_
-23-24	da	_	_	_	_	_	_	_	_
-23	de	de	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	carreira	carreira	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-26	,	,	PUNCT	punc	_	20	punct	_	_
-27	resumindo	resumir	VERB	v-ger	VerbForm=Ger	20	advcl	_	_
-28	suas	seu	DET	pron-det|<poss|3S>|<si>|F|P	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	29	det	_	_
-29	conquistas	conquista	NOUN	n|F|P	Gender=Fem|Number=Plur	27	dobj	_	_
-30	e	e	CONJ	conj-c	_	29	cc	_	_
-31	realizações	realização	NOUN	n|F|P	Gender=Fem|Number=Plur	29	conj	_	_
-32	.	.	PUNCT	punc	_	10	punct	_	_
+# text = Profissionais com longa experiência em cargos gerenciais e administrativos devem se preocupar, ao fazer o currículo, em mostrar a essência da carreira, resumindo suas conquistas e realizações.
+# forest 1
+# source CETENFolha n=226 cad=Empregos sec=eco sem=94a
+# sent_id = CF226-3
+# id 974
+1	Profissionais	profissional	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
+2	com	com	ADP	PRP|@N<	_	4	case	_	_
+3	longa	longo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	4	amod	_	_
+4	experiência	experiência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+5	em	em	ADP	PRP|@N<ARG	_	6	case	_	_
+6	cargos	cargo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
+7	gerenciais	gerencial	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	6	amod	_	_
+8	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	_
+9	administrativos	administrativo	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	7	conj	_	_
+10	devem	dever	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	12	obj	_	_
+12	preocupar	preocupar	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+14-15	ao	_	_	_	_	_	_	_	_
+14	a	a	ADP	<sam->|PRP|@N<	_	16	case	_	_
+15	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	advcl	_	_
+17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	currículo	currículo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+20	em	em	ADP	PRP|@<ADVL	_	21	mark	_	_
+21	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	advcl	_	_
+22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	essência	essência	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	21	obj	_	_
+24-25	da	_	_	_	_	_	_	_	_
+24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
+25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	carreira	carreira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	SpaceAfter=No
+27	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+28	resumindo	resumir	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	21	advcl	_	_
+29	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	30	det	_	_
+30	conquistas	conquista	NOUN	<first-cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	28	obj	_	_
+31	e	e	CCONJ	KC|@CO	_	32	cc	_	_
+32	realizações	realização	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	30	conj	_	SpaceAfter=No
+33	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF226-4
-# sent_id = pt-ud-train.conllu#s6017/pt
-# orig_file_sentence = 061#17
-1	Muitos	muito	PRON	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	7	nsubj	_	_
-2	,	,	PUNCT	punc	_	7	punct	_	_
+# text = Muitos, no entanto, preferem descrever em detalhes toda sua trajetória educacional e profissional o que acaba deixando o currículo extenso e de difícil leitura.
+# forest 1
+# source CETENFolha n=226 cad=Empregos sec=eco sem=94a
+# sent_id = CF226-4
+# id 975
+1	Muitos	muito	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	7	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 3-4	no	_	_	_	_	_	_	_	_
-3	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-5	entanto	entanto	NOUN	NOUN	_	3	mwe	_	_
-6	,	,	PUNCT	punc	_	7	punct	_	_
-7	preferem	preferir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-8	descrever	descrever	VERB	v-inf	VerbForm=Inf	7	xcomp	_	_
-9	em	em	ADP	prp	AdpType=Prep	10	case	_	_
-10	detalhes	detalhe	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
-11	toda	todo	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	13	det	_	_
-12	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	13	det	_	_
-13	trajetória	trajetória	NOUN	n|F|S	Gender=Fem|Number=Sing	8	dobj	_	_
-14	educacional	educacional	ADJ	adj|F|S	Gender=Fem|Number=Sing	13	amod	_	_
-15	e	e	CONJ	conj-c|<co-postnom>	_	14	cc	_	_
-16	profissional	profissional	ADJ	adj|F|S	Gender=Fem|Number=Sing	14	conj	_	_
-17	o	o	DET	pron-indp|<rel>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	nsubj	_	MWE=o_que|MWEPOS=PRON
-18	que	que	SCONJ	SCONJ	_	17	compound	_	_
-19	acaba	acabar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	_	_
-20	deixando	deixar	VERB	v-ger	VerbForm=Ger	19	ccomp	_	_
-21	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	currículo	currículo	NOUN	n|M|S	Gender=Masc|Number=Sing	20	dobj	_	_
-23	extenso	extenso	ADJ	adj|M|S	Gender=Masc|Number=Sing	22	amod	_	_
-24	e	e	CONJ	conj-c|<co-postnom>	_	23	cc	_	_
-25	de	de	ADP	prp	AdpType=Prep	27	case	_	_
-26	difícil	difícil	ADJ	adj|F|S	Gender=Fem|Number=Sing	27	amod	_	_
-27	leitura	leitura	NOUN	n|F|S	Gender=Fem|Number=Sing	23	conj	_	_
-28	.	.	PUNCT	punc	_	7	punct	_	_
+3	en	en	ADP	prp|<sam->	_	7	case	_	_
+4	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+5	entanto	entanto	NOUN	N|M|S|@P<	_	3	fixed	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+7	preferem	preferir	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	descrever	descrever	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	7	xcomp	_	_
+9	em	em	ADP	PRP|@<ADVL	_	10	case	_	_
+10	detalhes	detalhe	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	_
+11	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	13	det	_	_
+12	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	13	det	_	_
+13	trajetória	trajetória	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
+14	educacional	educacional	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	_
+15	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	_
+16	profissional	profissional	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	conj	_	_
+17	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	19	nsubj	_	MWE=o_que|MWEPOS=PRON
+18	que	que	SCONJ	<rel>|INDP|M|S|@SUBJ>	_	17	compound	_	_
+19	acaba	acabar	VERB	<aux>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	_	_
+20	deixando	deixar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	19	ccomp	_	_
+21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	currículo	currículo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
+23	extenso	extenso	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	22	amod	_	_
+24	e	e	CCONJ	<co-postnom>|KC|@CO	_	27	cc	_	_
+25	de	de	ADP	<cjt>|PRP|@N<	_	27	case	_	_
+26	difícil	difícil	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	27	amod	_	_
+27	leitura	leitura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	23	conj	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 

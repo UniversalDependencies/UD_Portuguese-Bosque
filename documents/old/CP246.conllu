@@ -1,86 +1,88 @@
-# distance_from_new = 0
-# new_sent_id = CP246-1
-# sent_id = pt-ud-train.conllu#s1327/pt
-# orig_file_sentence = 014#27
-1	A	o	DET	pron-det|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing	2	det	_	_
-2	eurodeputada	eurodeputada	NOUN	n|<DERP>|F|S	Gender=Fem|Number=Sing	7	nsubj	_	_
-3	portuguesa	português	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
-4	Maria	Maria	PROPN	prop|F|S	_	2	nmod	_	MWE=Maria_Santos|MWEPOS=PROPN
-5	Santos	Santos	PROPN	PROPN	_	4	name	_	_
-6	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-7	uma	um	NUM	num|<card>|F|S	Gender=Fem|Number=Sing|NumType=Card	0	root	_	_
+# text = A eurodeputada portuguesa Maria Santos é uma das personalidades convidadas pela Confederação dos Sindicatos Agrícolas Bascos para as jornadas «Agricultura Viva para o Meio Rural», que decorrem em Bilbau.
+# forest 1
+# source CETEMPúblico ext n=246 sec=pol sem=91a
+# sent_id = CP246-1
+# id 1328
+1	A	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing	2	det	_	_
+2	eurodeputada	eurodeputada	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
+3	portuguesa	português	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
+4	Maria	Maria	PROPN	_	_	2	nmod	_	MWE=Maria_Santos|MWEPOS=PROPN
+5	Santos	Santos	PROPN	_	_	4	flat	_	_
+6	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+7	uma	um	NUM	<card>|NUM|F|S|@<SC	Gender=Fem|Number=Sing|NumType=Card	0	root	_	_
 8-9	das	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	as	o	DET	pron-det|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur	10	det	_	_
-10	personalidades	personalidade	NOUN	n|F|P	Gender=Fem|Number=Plur	7	nmod	_	_
-11	convidadas	convidar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	10	acl	_	_
+8	de	de	ADP	<sam->|PRP|@A<	_	10	case	_	_
+9	as	o	DET	<-sam>|<artd>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur	10	det	_	_
+10	personalidades	personalidade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	7	obl	_	_
+11	convidadas	convidar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	10	acl	_	_
 12-13	pela	_	_	_	_	_	_	_	_
-12	por	por	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	pron-det|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing	14	det	_	_
-14	Confederação	Confederação	PROPN	prop|F|S	_	11	dobj	_	MWE=Confederação_dos_Sindicatos_Agrícolas_Bascos|MWEPOS=PROPN
+12	por	por	ADP	PRP|@PASS	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing	14	det	_	_
+14	Confederação	Confederação	PROPN	PROP|F|S|@P<	_	11	obj	_	MWE=Confederação_dos_Sindicatos_Agrícolas_Bascos|MWEPOS=PROPN
 15-16	dos	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
-17	Sindicatos	Sindicatos	PROPN	PROPN	_	14	name	_	_
-18	Agrícolas	Agrícolas	PROPN	PROPN	_	17	name	_	_
-19	Bascos	Bascos	PROPN	PROPN	_	17	name	_	_
-20	para	para	ADP	prp	AdpType=Prep	22	case	_	_
-21	as	o	DET	pron-det|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur	22	det	_	_
-22	jornadas	jornada	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nmod	_	_
-23	«	«	PUNCT	punc	_	22	punct	_	_
-24	Agricultura	Agricultura	PROPN	prop|F|S	_	22	nmod	_	MWE=Agricultura_Viva_para_o_Meio_Rural|MWEPOS=PROPN
-25	Viva	Viva	PROPN	PROPN	_	24	name	_	_
-26	para	para	ADP	ADP	AdpType=Prep	28	case	_	_
-27	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	Meio	Meio	PROPN	PROPN	_	24	name	_	_
-29	Rural	Rural	PROPN	PROPN	_	24	name	_	_
-30	»	»	PUNCT	punc	_	22	punct	_	_
-31	,	,	PUNCT	punc	_	22	punct	_	_
-32	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	33	nsubj	_	_
-33	decorrem	decorrer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	acl	_	_
-34	em	em	ADP	prp	AdpType=Prep	35	case	_	_
-35	Bilbau	Bilbau	PROPN	prop|M|S	Gender=Masc|Number=Sing	33	nmod	_	_
-36	.	.	PUNCT	punc	_	7	punct	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	Sindicatos	Sindicatos	PROPN	_	_	14	flat	_	_
+18	Agrícolas	Agrícolas	PROPN	_	_	17	flat	_	_
+19	Bascos	Bascos	PROPN	_	_	17	flat	_	_
+20	para	para	ADP	PRP|@<ADVL	_	22	case	_	_
+21	as	o	DET	<artd>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur	22	det	_	_
+22	jornadas	jornada	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	_
+23	«	«	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
+24	Agricultura	Agricultura	PROPN	_	_	22	nmod	_	MWE=Agricultura_Viva_para_o_Meio_Rural|MWEPOS=PROPN
+25	Viva	Viva	PROPN	_	_	24	flat	_	_
+26	para	para	ADP	PRP|@N<	_	28	case	_	_
+27	o	o	DET	PROP|@P<	Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	Meio	Meio	PROPN	PROP|@N<	_	24	flat	_	_
+29	Rural	Rural	PROPN	PROP|@N<	_	24	flat	_	SpaceAfter=No
+30	»	»	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
+31	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+32	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	33	nsubj	_	_
+33	decorrem	decorrer	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	acl	_	_
+34	em	em	ADP	PRP|@<ADVL	_	35	case	_	_
+35	Bilbau	Bilbau	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	33	obl	_	SpaceAfter=No
+36	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP246-2
-# sent_id = pt-ud-train.conllu#s1328/pt
-# orig_file_sentence = 014#28
-1	Em	em	ADP	pp	AdpType=Prep	3	advmod	_	MWE=Em_debate|MWEPOS=ADV
-2	debate	debate	NOUN	NOUN	_	1	mwe	_	_
-3	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	a	o	DET	pron-det|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing	5	det	_	_
-5	relação	relação	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-6	entre	entre	ADP	prp	AdpType=Prep	8	case	_	_
-7	os	o	DET	pron-det|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur	8	det	_	_
-8	problemas	problema	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
+# text = Em debate estão a relação entre os problemas dos agricultores europeus e as questões relacionadas com a defesa do meio ambiente, o desenvolvimento regional e os direitos dos consumidores.
+# forest 1
+# source CETEMPúblico ext n=246 sec=pol sem=91a
+# sent_id = CP246-2
+# id 1329
+1	Em	em	ADP	PRP|@ADVL>	_	3	advmod	_	MWE=Em_debate|MWEPOS=ADV
+2	debate	debate	NOUN	N|M|S|@P<	_	1	fixed	_	_
+3	estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing	5	det	_	_
+5	relação	relação	NOUN	<first-cjt>|<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	3	nsubj	_	_
+6	entre	entre	ADP	PRP|@N<ARG	_	8	case	_	_
+7	os	o	DET	<artd>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur	8	det	_	_
+8	problemas	problema	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
 9-10	dos	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	os	o	DET	pron-det|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur	11	det	_	_
-11	agricultores	agricultor	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
-12	europeus	europeu	ADJ	adj|M|P	Gender=Masc|Number=Plur	11	amod	_	_
-13	e	e	CONJ	conj-c|<co-subj>	_	5	cc	_	_
-14	as	o	DET	pron-det|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur	15	det	_	_
-15	questões	questão	NOUN	n|F|P	Gender=Fem|Number=Plur	5	conj	_	_
-16	relacionadas	relacionar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	15	acl	_	_
-17	com	com	ADP	prp	AdpType=Prep	19	case	_	_
-18	a	o	DET	pron-det|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing	19	det	_	_
-19	defesa	defesa	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	os	o	DET	<-sam>|<artd>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur	11	det	_	_
+11	agricultores	agricultor	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
+12	europeus	europeu	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	11	amod	_	_
+13	e	e	CCONJ	<co-subj>|KC|@CO	_	15	cc	_	_
+14	as	o	DET	<artd>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur	15	det	_	_
+15	questões	questão	NOUN	<cjt>|<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	5	conj	_	_
+16	relacionadas	relacionar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	15	acl	_	_
+17	com	com	ADP	PRP|@<ADVL	_	19	case	_	_
+18	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing	19	det	_	_
+19	defesa	defesa	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	_
 20-21	do	_	_	_	_	_	_	_	_
-20	de	de	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	o	o	DET	pron-det|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing	22	det	_	_
-22	meio	meio	NOUN	n|M|S	_	19	nmod	_	MWE=meio_ambiente|MWEPOS=NOUN
-23	ambiente	ambiente	NOUN	NOUN	_	22	compound	_	_
-24	,	,	PUNCT	punc	_	19	punct	_	_
-25	o	o	DET	pron-det|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing	26	det	_	_
-26	desenvolvimento	desenvolvimento	NOUN	n|M|S	Gender=Masc|Number=Sing	19	conj	_	_
-27	regional	regional	ADJ	adj|M|S	Gender=Masc|Number=Sing	26	amod	_	_
-28	e	e	CONJ	conj-c|<co-prparg>	_	19	cc	_	_
-29	os	o	DET	pron-det|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur	30	det	_	_
-30	direitos	direito	NOUN	n|M|P	Gender=Masc|Number=Plur	19	conj	_	_
+20	de	de	ADP	<sam->|PRP|@N<ARG	_	22	case	_	_
+21	o	o	DET	<-sam>|<artd>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing	22	det	_	_
+22	meio	meio	NOUN	_	_	19	nmod	_	MWE=meio_ambiente|MWEPOS=NOUN
+23	ambiente	ambiente	NOUN	_	_	22	compound	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+25	o	o	DET	<artd>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing	26	det	_	_
+26	desenvolvimento	desenvolvimento	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	conj	_	_
+27	regional	regional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	26	amod	_	_
+28	e	e	CCONJ	<co-prparg>|KC|@CO	_	30	cc	_	_
+29	os	o	DET	<artd>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur	30	det	_	_
+30	direitos	direito	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	19	conj	_	_
 31-32	dos	_	_	_	_	_	_	_	_
-31	de	de	ADP	prp|<sam->	AdpType=Prep	33	case	_	_
-32	os	o	DET	pron-det|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur	33	det	_	_
-33	consumidores	consumidor	NOUN	n|M|P	Gender=Masc|Number=Plur	30	nmod	_	_
-34	.	.	PUNCT	punc	_	3	punct	_	_
+31	de	de	ADP	PRP|@N<	_	33	case	_	_
+32	os	o	DET	<-sam>|<artd>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur	33	det	_	_
+33	consumidores	consumidor	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	30	nmod	_	SpaceAfter=No
+34	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

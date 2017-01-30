@@ -1,77 +1,81 @@
-# distance_from_new = 0
-# new_sent_id = CF560-1
-# sent_id = pt-ud-train.conllu#s7380/pt
-# orig_file_sentence = 074#80
-1	10h45	10h45	NOUN	n|F|P	Gender=Fem|Number=Plur	7	nmod	_	_
-2	--	--	PUNCT	punc	_	7	punct	_	_
-3	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	visitação	visitação	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nsubjpass	_	_
-5	pública	público	ADJ	adj|F|S	Gender=Fem|Number=Sing	4	amod	_	_
-6	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	auxpass	_	_
-7	aberta	abrir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-8	;	;	PUNCT	punc	_	7	punct	_	_
+# text = 10h45 -- a visitação pública é aberta; ao mesmo tempo, algumas ambulâncias entram no pátio da assembléia para socorrer eventuais emergências;
+# forest 1
+# source CETENFolha n=560 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF560-1
+# id 2338
+1	10h45	10h45	NOUN	<np-idf>|N|F|P|@ADVL>	Gender=Fem|Number=Plur	7	obl	_	_
+2	--	--	PUNCT	PU|@PU	_	6	punct	_	_
+3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	visitação	visitação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
+5	pública	público	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	_
+6	é	ser	VERB	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	aberta	abrir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	6	ccomp	_	SpaceAfter=No
+8	;	;	PUNCT	PU|@PU	_	16	punct	_	_
 9-10	ao	_	_	_	_	_	_	_	_
-9	a	a	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-11	mesmo	mesmo	ADJ	ADJ	_	9	mwe	_	_
-12	tempo	tempo	NOUN	NOUN	_	10	mwe	_	_
-13	,	,	PUNCT	punc	_	16	punct	_	_
-14	algumas	algum	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	15	det	_	_
-15	ambulâncias	ambulância	NOUN	n|F|P	Gender=Fem|Number=Plur	16	nsubj	_	_
-16	entram	entrar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+9	a	a	ADP	<sam->|PRP|@N<	_	16	case	_	_
+10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+11	mesmo	mesmo	ADJ	<diff>|DET|M|S|@>N	_	9	fixed	_	_
+12	tempo	tempo	NOUN	N|M|S|@P<	_	9	fixed	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+14	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	15	det	_	_
+15	ambulâncias	ambulância	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	16	nsubj	_	_
+16	entram	entrar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
 17-18	no	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	pátio	pátio	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
+17	em	em	ADP	<sam->|PRP|@<SA	_	19	case	_	_
+18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	pátio	pátio	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	_
 20-21	da	_	_	_	_	_	_	_	_
-20	de	de	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	assembléia	assembléia	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-23	para	para	ADP	prp	AdpType=Prep	24	mark	_	_
-24	socorrer	socorrer	VERB	v-inf	VerbForm=Inf	16	advcl	_	_
-25	eventuais	eventual	ADJ	adj|F|P	Gender=Fem|Number=Plur	26	amod	_	_
-26	emergências	emergência	NOUN	n|F|P	Gender=Fem|Number=Plur	24	dobj	_	_
-27	;	;	PUNCT	punc	_	7	punct	_	_
+20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
+21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	assembléia	assembléia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
+23	para	para	ADP	PRP|@<ADVL	_	24	mark	_	_
+24	socorrer	socorrer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	advcl	_	_
+25	eventuais	eventual	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	26	amod	_	_
+26	emergências	emergência	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	24	obj	_	SpaceAfter=No
+27	;	;	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CF560-2
-# sent_id = pt-ud-train.conllu#s7381/pt
-# orig_file_sentence = 074#81
-1	10h46	10h46	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nmod	_	_
-2	--	--	PUNCT	punc	_	11	punct	_	_
-3	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-4	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	5	amod	_	_
-5	pessoa	pessoa	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nsubj	_	_
-6	a	a	ADP	prp	AdpType=Prep	7	mark	_	_
-7	ver	ver	VERB	v-inf|3S	Number=Sing|Person=3|VerbForm=Inf	5	acl	_	_
-8	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	caixão	caixão	NOUN	n|M|S	Gender=Masc|Number=Sing	7	dobj	_	_
-10	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
-11	Márcio	Márcio	PROPN	prop|M|S	_	0	root	_	MWE=Márcio_Putnoki|MWEPOS=PROPN
-12	Putnoki	Putnoki	PROPN	PROPN	_	11	name	_	_
-13	,	,	PUNCT	punc	_	11	punct	_	_
-14	13	13	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
-15	;	;	PUNCT	punc	_	11	punct	_	_
-16	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	estudante	estudante	NOUN	n|M|S	Gender=Masc|Number=Sing	19	nsubj	_	_
-18	tinha	ter	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	aux	_	_
-19	chegado	chegar	VERB	v-pcp	VerbForm=Part	11	conj	_	_
+# text = 10h46 -- a primeira pessoa a ver o caixão é Márcio Putnoki, 13; o estudante tinha chegado às 15h de anteontem; ao passar pelo hall monumental, Márcio chora;
+# forest 1
+# source CETENFolha n=560 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF560-2
+# id 2339
+1	10h46	10h46	NOUN	<np-idf>|N|F|P|@ADVL>	Gender=Fem|Number=Plur	11	obl	_	_
+2	--	--	PUNCT	PU|@PU	_	11	punct	_	_
+3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+4	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	5	amod	_	_
+5	pessoa	pessoa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
+6	a	a	ADP	PRP|@N<	_	7	mark	_	_
+7	ver	ver	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	5	acl	_	_
+8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	caixão	caixão	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
+10	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+11	Márcio	Márcio	PROPN	_	_	0	root	_	MWE=Márcio_Putnoki|MWEPOS=PROPN
+12	Putnoki	Putnoki	PROPN	_	_	11	flat	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+14	13	13	NUM	<card>|NUM|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	SpaceAfter=No
+15	;	;	PUNCT	PU|@PU	_	18	punct	_	_
+16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	estudante	estudante	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
+18	tinha	ter	VERB	<cjt>|<aux>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	conj	_	_
+19	chegado	chegar	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	18	ccomp	_	_
 20-21	às	_	_	_	_	_	_	_	_
-20	a	a	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
-22	15h	15h	NOUN	n|F|P	Gender=Fem|Number=Plur	19	nmod	_	_
-23	de	de	ADP	prp	AdpType=Prep	24	advmod	_	_
-24	anteontem	anteontem	ADV	adv	_	22	advmod	_	_
-25	;	;	PUNCT	punc	_	11	punct	_	_
-26	ao	ao	ADP	prp	AdpType=Prep	27	mark	_	_
-27	passar	passar	VERB	v-inf	VerbForm=Inf	34	advcl	_	_
-28-29	pelo	_	_	_	_	_	_	_	_
-28	por	por	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	hall	hall	NOUN	n|M|S	Gender=Masc|Number=Sing	27	dobj	_	_
-31	monumental	monumental	ADJ	adj|M|S	Gender=Masc|Number=Sing	30	amod	_	_
-32	,	,	PUNCT	punc	_	34	punct	_	_
-33	Márcio	Márcio	PROPN	prop|M|S	Gender=Masc|Number=Sing	34	nsubj	_	_
-34	chora	chorar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
-35	;	;	PUNCT	punc	_	11	punct	_	_
+20	a	a	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
+21	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
+22	15h	15h	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	19	obl	_	_
+23	de	de	ADP	PRP|@>A	_	24	advmod	_	_
+24	anteontem	anteontem	ADV	ADV|@N<	_	22	advmod	_	SpaceAfter=No
+25	;	;	PUNCT	PU|@PU	_	35	punct	_	_
+26-27	ao	_	_	_	_	_	_	_	_
+26	a	a	ADP	<sam->|PRP|@N<	_	28	case	_	_
+27	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	passar	passar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	35	advcl	_	_
+29-30	pelo	_	_	_	_	_	_	_	_
+29	por	por	ADP	<sam->|PRP|@<PIV	_	31	case	_	_
+30	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	hall	hall	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	28	obj	_	_
+32	monumental	monumental	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	31	amod	_	SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+34	Márcio	Márcio	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	35	nsubj	_	_
+35	chora	chorar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	SpaceAfter=No
+36	;	;	PUNCT	PU|@PU	_	11	punct	_	_
 

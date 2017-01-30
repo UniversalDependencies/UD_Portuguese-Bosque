@@ -1,215 +1,221 @@
-# distance_from_new = 1
-# new_sent_id = CF857-1
-# sent_id = pt-ud-train.conllu#s8658/pt
-# orig_file_sentence = 087#58
-1	Estudo	estudo	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	prevê	prever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	inflação	inflação	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-4	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-5	2,3	2,3	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
+# text = Estudo prevê inflação de 2,3 $% com o real
+# forest 1
+# source CETENFolha n=857 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF857-1
+# id 3616
+1	Estudo	estudo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	prevê	prever	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	inflação	inflação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+4	de	de	ADP	PRP|@N<	_	6	case	_	_
+5	2,3	2,3	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
 6	$%	%	SYM	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-7	com	com	ADP	prp	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	real	real	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
+7	com	com	ADP	PRP|@<ADVL	_	9	case	_	_
+8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	real	real	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
 
-# distance_from_new = 1
-# new_sent_id = CF857-3
-# sent_id = pt-ud-train.conllu#s8659/pt
-# orig_file_sentence = 087#59
-1	Um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	estudo	estudo	NOUN	n|M|S	Gender=Masc|Number=Sing	23	nsubj	_	_
+# text = Um estudo do Corecon (Conselho Regional de Economia), do Rio de Janeiro, divulgado ontem, está projetando, na hipótese de adoção do real em abril, uma inflação de 2,3 $%.
+# forest 1
+# source CETENFolha n=857 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF857-3
+# id 3617
+1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	estudo	estudo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Corecon	Corecon	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	(	(	PUNCT	punc	_	5	punct	_	_
-7	Conselho	Conselho	PROPN	prop|M|S	_	5	name	_	MWE=Conselho_Regional_de_Economia|MWEPOS=PROPN
-8	Regional	Regional	PROPN	PROPN	_	7	name	_	_
-9	de	de	ADP	ADP	AdpType=Prep	10	case	_	_
-10	Economia	Economia	PROPN	PROPN	_	7	name	_	_
-11	)	)	PUNCT	punc	_	5	punct	_	_
-12	,	,	PUNCT	punc	_	5	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Corecon	Corecon	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	(	(	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+7	Conselho	Conselho	PROPN	PROP|M|S|@APP	_	5	flat	_	MWE=Conselho_Regional_de_Economia|MWEPOS=PROPN
+8	Regional	Regional	PROPN	PROP|@N<	_	7	flat	_	_
+9	de	de	ADP	PRP|@N<	_	10	case	_	_
+10	Economia	Economia	PROPN	PROP|@P<	_	7	flat	_	SpaceAfter=No
+11	)	)	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	Rio	Rio	PROPN	prop|M|S	_	5	nmod	_	MWE=Rio_de_Janeiro|MWEPOS=PROPN
-16	de	de	ADP	ADP	AdpType=Prep	17	case	_	_
-17	Janeiro	Janeiro	PROPN	PROPN	_	15	name	_	_
-18	,	,	PUNCT	punc	_	5	punct	_	_
-19	divulgado	divulgar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
-20	ontem	ontem	ADV	adv	_	19	advmod	_	_
-21	,	,	PUNCT	punc	_	5	punct	_	_
-22	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
-23	projetando	projetar	VERB	v-ger	VerbForm=Ger	0	root	_	_
-24	,	,	PUNCT	punc	_	23	punct	_	_
+13	de	de	ADP	<sam->|PRP|@N<PRED	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	Rio	Rio	PROPN	PROP|M|S|@P<	_	5	nmod	_	MWE=Rio_de_Janeiro|MWEPOS=PROPN
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	Janeiro	Janeiro	PROPN	PROP|@P<	_	15	flat	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+19	divulgado	divulgar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
+20	ontem	ontem	ADV	ADV|@<ADVL	_	19	advmod	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+22	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+23	projetando	projetar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	22	ccomp	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	22	punct	_	_
 25-26	na	_	_	_	_	_	_	_	_
-25	em	em	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	a	o	DET	art|<artd>|<-sam>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	hipótese	hipótese	NOUN	n|F|S	Gender=Fem|Number=Sing	23	nmod	_	_
-28	de	de	ADP	prp	AdpType=Prep	29	case	_	_
-29	adoção	adoção	NOUN	n|F|S	Gender=Fem|Number=Sing	27	nmod	_	_
+25	em	em	ADP	<sam->|PRP|@<ADVL	_	27	case	_	_
+26	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	hipótese	hipótese	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	_
+28	de	de	ADP	PRP|@N<	_	29	case	_	_
+29	adoção	adoção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
 30-31	do	_	_	_	_	_	_	_	_
-30	de	de	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-31	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	real	real	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
-33	em	em	ADP	prp	AdpType=Prep	34	case	_	_
-34	abril	abril	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
-35	,	,	PUNCT	punc	_	23	punct	_	_
-36	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
-37	inflação	inflação	NOUN	n|F|S	Gender=Fem|Number=Sing	23	dobj	_	_
-38	de	de	ADP	prp	AdpType=Prep	40	case	_	_
-39	2,3	2,3	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	40	nummod	_	_
-40	$%	%	SYM	n|M|P	Gender=Masc|Number=Plur	37	nmod	_	_
-41	.	.	PUNCT	punc	_	23	punct	_	_
+30	de	de	ADP	<sam->|PRP|@N<ARG	_	32	case	_	_
+31	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	real	real	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	_
+33	em	em	ADP	PRP|@N<	_	34	case	_	_
+34	abril	abril	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	SpaceAfter=No
+35	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+36	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+37	inflação	inflação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	23	obj	_	_
+38	de	de	ADP	PRP|@N<	_	40	case	_	_
+39	2,3	2,3	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	40	nummod	_	_
+40	$%	%	SYM	n|M|P	Gender=Masc|Number=Plur	37	nmod	_	SpaceAfter=No
+41	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF857-4
-# sent_id = pt-ud-train.conllu#s8660/pt
-# orig_file_sentence = 087#60
-1	Com	com	ADP	prp	AdpType=Prep	2	case	_	_
-2	base	base	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
+# text = Com base nesta projeção, o estudo prevê uma inflação com a nova moeda de 30 % em 94.
+# forest 1
+# source CETENFolha n=857 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF857-4
+# id 3618
+1	Com	com	ADP	PRP|@PRED>	_	2	case	_	_
+2	base	base	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	_
 3-4	nesta	_	_	_	_	_	_	_	_
-3	em	em	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	esta	este	DET	pron-det|<-sam>|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
-5	projeção	projeção	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	,	,	PUNCT	punc	_	9	punct	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	estudo	estudo	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nsubj	_	_
-9	prevê	prever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-10	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	inflação	inflação	NOUN	n|F|S	Gender=Fem|Number=Sing	9	dobj	_	_
-12	com	com	ADP	prp	AdpType=Prep	15	case	_	_
-13	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-14	nova	novo	ADJ	adj|F|S	Gender=Fem|Number=Sing	15	amod	_	_
-15	moeda	moeda	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-16	de	de	ADP	prp	AdpType=Prep	18	case	_	_
-17	30	30	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
-18	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	11	nmod	_	_
-19	em	em	ADP	prp	AdpType=Prep	20	case	_	_
-20	94	94	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	9	advmod	_	_
-21	.	.	PUNCT	punc	_	9	punct	_	_
+3	em	em	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	esta	este	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
+5	projeção	projeção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	estudo	estudo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
+9	prevê	prever	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	inflação	inflação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
+12	com	com	ADP	PRP|@N<	_	15	case	_	_
+13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	15	amod	_	_
+15	moeda	moeda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+16	de	de	ADP	PRP|@N<	_	18	case	_	_
+17	30	30	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
+18	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
+19	em	em	ADP	PRP|@<ACC	_	20	case	_	_
+20	94	94	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	9	advmod	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF857-5
-# sent_id = pt-ud-train.conllu#s8661/pt
-# orig_file_sentence = 087#61
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	SPQ	SPQ	PROPN	prop|M|S	Gender=Masc|Number=Sing	9	nsubj	_	_
-3	(	(	PUNCT	punc	_	2	punct	_	_
-4	Sistema	Sistema	PROPN	prop|M|S	_	2	name	_	MWE=Sistema_de_Projeções_Qualificadas|MWEPOS=PROPN
-5	de	de	ADP	ADP	AdpType=Prep	6	case	_	_
-6	Projeções	Projeções	PROPN	PROPN	_	4	name	_	_
-7	Qualificadas	Qualificadas	PROPN	PROPN	_	6	name	_	_
-8	)	)	PUNCT	punc	_	2	punct	_	_
-9	resulta	resultar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = O SPQ (Sistema de Projeções Qualificadas) resulta da média de opiniões de 16 economistas que fazem análise de conjuntura.
+# forest 1
+# source CETENFolha n=857 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF857-5
+# id 3619
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	SPQ	SPQ	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
+3	(	(	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+4	Sistema	Sistema	PROPN	PROP|M|S|@APP	_	2	flat	_	MWE=Sistema_de_Projeções_Qualificadas|MWEPOS=PROPN
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	Projeções	Projeções	PROPN	_	_	4	flat	_	_
+7	Qualificadas	Qualificadas	PROPN	_	_	6	flat	_	SpaceAfter=No
+8	)	)	PUNCT	PU|@PU	_	2	punct	_	_
+9	resulta	resultar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 10-11	da	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	média	média	NOUN	n|F|S	Gender=Fem|Number=Sing	9	dobj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	opiniões	opinião	NOUN	n|F|P	Gender=Fem|Number=Plur	12	nmod	_	_
-15	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-16	16	16	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	17	nummod	_	_
-17	economistas	economista	NOUN	n|M|P	Gender=Masc|Number=Plur	14	nmod	_	_
-18	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	19	nsubj	_	_
-19	fazem	fazer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	acl	_	_
-20	análise	análise	NOUN	n|F|S	Gender=Fem|Number=Sing	19	dobj	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	conjuntura	conjuntura	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-23	.	.	PUNCT	punc	_	9	punct	_	_
+10	de	de	ADP	<sam->|PRP|@<PIV	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	média	média	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obj	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	opiniões	opinião	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
+15	de	de	ADP	PRP|@N<	_	17	case	_	_
+16	16	16	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	17	nummod	_	_
+17	economistas	economista	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	_
+18	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	19	nsubj	_	_
+19	fazem	fazer	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	acl	_	_
+20	análise	análise	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
+21	de	de	ADP	PRP|@N<ARG	_	22	case	_	_
+22	conjuntura	conjuntura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF857-6
-# sent_id = pt-ud-train.conllu#s8662/pt
-# orig_file_sentence = 087#62
-1	Segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	3	case	_	_
-2	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	presidente	presidente	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
+# text = Segundo o presidente do Corecon, Hélio Portocarrero, a inflação do real não será puxada pelos oligopólios, apontados pela equipe econômica do governo como os principais vilões na subida de preços após a implantação da URV.
+# forest 1
+# source CETENFolha n=857 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF857-6
+# id 3620
+1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	3	case	_	_
+2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	presidente	presidente	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	_
 4-5	do	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Corecon	Corecon	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
-7	,	,	PUNCT	punc	_	6	punct	_	_
-8	Hélio	Hélio	PROPN	prop|M|S	_	6	name	_	MWE=Hélio_Portocarrero|MWEPOS=PROPN
-9	Portocarrero	Portocarrero	PROPN	PROPN	_	8	name	_	_
-10	,	,	PUNCT	punc	_	6	punct	_	_
-11	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	inflação	inflação	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nsubjpass	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Corecon	Corecon	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+8	Hélio	Hélio	PROPN	_	_	6	flat	_	MWE=Hélio_Portocarrero|MWEPOS=PROPN
+9	Portocarrero	Portocarrero	PROPN	_	_	8	flat	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	inflação	inflação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj	_	_
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	real	real	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-16	não	não	ADV	adv	_	18	neg	_	_
-17	será	ser	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	auxpass	_	_
-18	puxada	puxar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	real	real	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
+16	não	não	ADV	_	Polarity=Neg	18	advmod	_	_
+17	será	ser	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+18	puxada	puxar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	17	ccomp	_	_
 19-20	pelos	_	_	_	_	_	_	_	_
-19	por	por	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-21	oligopólios	oligopólio	NOUN	n|M|P	Gender=Masc|Number=Plur	18	dobj	_	_
-22	,	,	PUNCT	punc	_	21	punct	_	_
-23	apontados	apontar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	21	acl	_	_
+19	por	por	ADP	<sam->|PRP|@PASS	_	21	case	_	_
+20	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
+21	oligopólios	oligopólio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	18	obj	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+23	apontados	apontar	VERB	<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	21	acl	_	_
 24-25	pela	_	_	_	_	_	_	_	_
-24	por	por	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	equipe	equipe	NOUN	n|F|S	Gender=Fem|Number=Sing	23	dobj	_	_
-27	econômica	econômico	ADJ	adj|F|S	Gender=Fem|Number=Sing	26	amod	_	_
+24	por	por	ADP	PRP|@PASS	_	26	case	_	_
+25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	equipe	equipe	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obj	_	_
+27	econômica	econômico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	26	amod	_	_
 28-29	do	_	_	_	_	_	_	_	_
-28	de	de	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	governo	governo	NOUN	n|M|S	Gender=Masc|Number=Sing	26	nmod	_	_
-31	como	como	ADV	adv|<rel>|<prp>	PronType=Rel	23	advmod	_	_
-32	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
-33	principais	principal	ADJ	adj|<SUP>|M|P	Degree=Sup|Gender=Masc|Number=Plur	34	amod	_	_
-34	vilões	vilão	NOUN	n|M|P	Gender=Masc|Number=Plur	31	nsubj	_	_
+28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
+29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	governo	governo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
+31	como	como	ADV	<prd>|PRP|@<SC	PronType=Rel	23	advmod	_	_
+32	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
+33	principais	principal	ADJ	<SUP>|ADJ|M|P|@>N	Degree=Sup|Gender=Masc|Number=Plur	34	amod	_	_
+34	vilões	vilão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	31	nsubj	_	_
 35-36	na	_	_	_	_	_	_	_	_
-35	em	em	ADP	prp|<sam->	AdpType=Prep	37	case	_	_
-36	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
-37	subida	subida	NOUN	n|F|S	Gender=Fem|Number=Sing	23	nmod	_	_
-38	de	de	ADP	prp	AdpType=Prep	39	case	_	_
-39	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	37	nmod	_	_
-40	após	após	ADP	prp	AdpType=Prep	42	case	_	_
-41	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
-42	implantação	implantação	NOUN	n|F|S	Gender=Fem|Number=Sing	37	nmod	_	_
+35	em	em	ADP	<sam->|PRP|@N<	_	37	case	_	_
+36	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+37	subida	subida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	_
+38	de	de	ADP	PRP|@N<ARG	_	39	case	_	_
+39	preços	preço	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	37	nmod	_	_
+40	após	após	ADP	PRP|@N<	_	42	case	_	_
+41	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
+42	implantação	implantação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	37	nmod	_	_
 43-44	da	_	_	_	_	_	_	_	_
-43	de	de	ADP	prp|<sam->	AdpType=Prep	45	case	_	_
-44	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
-45	URV	uRV	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	42	nmod	_	_
-46	.	.	PUNCT	punc	_	18	punct	_	_
+43	de	de	ADP	<sam->|PRP|@N<ARG	_	45	case	_	_
+44	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
+45	URV	uRV	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	42	nmod	_	SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF857-7
-# sent_id = pt-ud-train.conllu#s8663/pt
-# orig_file_sentence = 087#63
-1	Para	para	ADP	prp	AdpType=Prep	2	case	_	_
-2	ele	ele	PRON	pron-pers|M|3S|NOM/PIV	Case=Acc,Nom|Gender=Masc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	17	nmod	_	_
-3	,	,	PUNCT	punc	_	17	punct	_	_
-4	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	alta	alta	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nsubjpass	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
+# text = Para ele, a alta de preços na fase da nova moeda deverá ser impulsionada pelos setores competitivos como o agrícola e o de serviços.
+# forest 1
+# source CETENFolha n=857 cad=Caderno Especial sec=nd sem=94b
+# sent_id = CF857-7
+# id 3621
+1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
+2	ele	ele	PRON	PERS|M|3S|NOM/PIV|@P<	Case=Acc,Nom|Gender=Masc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	17	obl	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	alta	alta	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	preços	preço	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
 8-9	na	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	fase	fase	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
+8	em	em	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	fase	fase	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 11-12	da	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-12	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-13	nova	novo	ADJ	adj|F|S	Gender=Fem|Number=Sing	14	amod	_	_
-14	moeda	moeda	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-15	deverá	dever	AUX	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	aux	_	_
-16	ser	ser	VERB	v-inf	VerbForm=Inf	17	auxpass	_	_
-17	impulsionada	impulsionar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+11	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+13	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	14	amod	_	_
+14	moeda	moeda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
+15	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	aux	_	_
+16	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+17	impulsionada	impulsionar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	16	ccomp	_	_
 18-19	pelos	_	_	_	_	_	_	_	_
-18	por	por	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
-20	setores	setor	NOUN	n|M|P	Gender=Masc|Number=Plur	17	dobj	_	_
-21	competitivos	competitivo	ADJ	adj|M|P	Gender=Masc|Number=Plur	20	amod	_	_
-22	como	como	ADV	adv|<rel>	PronType=Rel	20	advmod	_	_
-23	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	agrícola	agrícola	NOUN	n|M|S	Gender=Masc|Number=Sing	22	nsubj	_	_
-25	e	e	CONJ	conj-c	_	24	cc	_	_
-26	o	o	PRON	pron-det|<dem>|<Eg>|M|S	Gender=Masc|Number=Sing|PronType=Dem	24	conj	_	_
-27	de	de	ADP	prp	AdpType=Prep	28	case	_	_
-28	serviços	serviço	NOUN	n|M|P	Gender=Masc|Number=Plur	26	nmod	_	_
-29	.	.	PUNCT	punc	_	17	punct	_	_
+18	por	por	ADP	<sam->|PRP|@PASS	_	20	case	_	_
+19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
+20	setores	setor	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obj	_	_
+21	competitivos	competitivo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	20	amod	_	_
+22	como	como	ADV	<com>|PRP|@N<	PronType=Rel	20	advmod	_	_
+23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	agrícola	agrícola	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	22	nsubj	_	_
+25	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	_
+26	o	o	PRON	<cjt>|<Eg>|<dem>|DET|M|S|@N<	Gender=Masc|Number=Sing|PronType=Dem	24	conj	_	_
+27	de	de	ADP	PRP|@N<	_	28	case	_	_
+28	serviços	serviço	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	26	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 

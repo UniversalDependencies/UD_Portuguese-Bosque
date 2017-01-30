@@ -1,105 +1,109 @@
-# distance_from_new = 0
-# new_sent_id = CF366-1
-# sent_id = pt-ud-train.conllu#s6558/pt
-# orig_file_sentence = 066#58
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	paulistanos	paulistano	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nsubj	_	_
-3	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
-4	pagando	pagar	VERB	v-ger	VerbForm=Ger	0	root	_	_
-5	menos	pouco	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	4	advmod	_	_
-6	também	também	ADV	adv	_	4	advmod	_	_
+# text = Os paulistanos estão pagando menos também pelos produtos da cesta básica.
+# forest 1
+# source CETENFolha n=366 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF366-1
+# id 1516
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	paulistanos	paulistano	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
+3	estão	estar	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	pagando	pagar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	3	ccomp	_	_
+5	menos	pouco	ADV	<quant>|ADV|@<ADVL	NumType=Card|PronType=Ind,Neg,Tot	4	advmod	_	_
+6	também	também	ADV	ADV|@>A	_	4	advmod	_	_
 7-8	pelos	_	_	_	_	_	_	_	_
-7	por	por	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-8	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
-9	produtos	produto	NOUN	n|M|P	Gender=Masc|Number=Plur	6	dobj	_	_
+7	por	por	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
+8	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+9	produtos	produto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obj	_	_
 10-11	da	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	cesta	cesta	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
-13	básica	básico	ADJ	adj|F|S	Gender=Fem|Number=Sing	12	amod	_	_
-14	.	.	PUNCT	punc	_	4	punct	_	_
+10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	cesta	cesta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+13	básica	básico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF366-2
-# sent_id = pt-ud-train.conllu#s6559/pt
-# orig_file_sentence = 066#59
-1	Outra	outro	DET	pron-det|<diff>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	2	det	_	_
-2	pesquisa	pesquisa	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
+# text = Outra pesquisa do Datafolha mostra que estes alimentos recuaram 0,47 % na última semana de novembro.
+# forest 1
+# source CETENFolha n=366 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF366-2
+# id 1517
+1	Outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	2	det	_	_
+2	pesquisa	pesquisa	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Datafolha	datafolha	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	mostra	mostrar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	que	que	SCONJ	conj-s	_	10	mark	_	_
-8	estes	este	DET	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	9	det	_	_
-9	alimentos	alimento	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nsubj	_	_
-10	recuaram	recuar	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	6	ccomp	_	_
-11	0,47	0,47	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-12	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Datafolha	datafolha	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	mostra	mostrar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
+8	estes	este	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	9	det	_	_
+9	alimentos	alimento	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
+10	recuaram	recuar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	6	ccomp	_	_
+11	0,47	0,47	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+12	%	%	SYM	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	obj	_	_
 13-14	na	_	_	_	_	_	_	_	_
-13	em	em	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-15	última	último	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	16	amod	_	_
-16	semana	semana	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-17	de	de	ADP	prp	AdpType=Prep	18	case	_	_
-18	novembro	novembro	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-19	.	.	PUNCT	punc	_	6	punct	_	_
+13	em	em	ADP	<sam->|PRP|@<ADVL	_	16	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+15	última	último	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	16	amod	_	_
+16	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	_
+17	de	de	ADP	PRP|@N<	_	18	case	_	_
+18	novembro	novembro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF366-3
-# sent_id = pt-ud-train.conllu#s6560/pt
-# orig_file_sentence = 066#60
-1	Mesma	mesmo	DET	pron-det|<diff>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	2	det	_	_
-2	tendência	tendência	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	teve	ter	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	custo	custo	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
+# text = Mesma tendência teve o custo da cesta básica pesquisado pelo Procon, em convênio com o Dieese.
+# forest 1
+# source CETENFolha n=366 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF366-3
+# id 1518
+1	Mesma	mesmo	DET	<diff>|<KOMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	2	det	_	_
+2	tendência	tendência	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	teve	ter	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	custo	custo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	cesta	cesta	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-9	básica	básico	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
-10	pesquisado	pesquisar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	8	acl	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	cesta	cesta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+9	básica	básico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	_
+10	pesquisado	pesquisar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	8	acl	_	_
 11-12	pelo	_	_	_	_	_	_	_	_
-11	por	por	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	Procon	Procon	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	dobj	_	_
-14	,	,	PUNCT	punc	_	10	punct	_	_
-15	em	em	ADP	prp	AdpType=Prep	16	case	_	_
-16	convênio	convênio	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-17	com	com	ADP	prp	AdpType=Prep	19	case	_	_
-18	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	Dieese	Dieese	PROPN	prop|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-20	.	.	PUNCT	punc	_	3	punct	_	_
+11	por	por	ADP	PRP|@PASS	_	13	case	_	_
+12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	Procon	Procon	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+15	em	em	ADP	PRP|@<ADVL	_	16	case	_	_
+16	convênio	convênio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	_
+17	com	com	ADP	PRP|@N<	_	19	case	_	_
+18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	Dieese	Dieese	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF366-4
-# sent_id = pt-ud-train.conllu#s6561/pt
-# orig_file_sentence = 066#61
-1	Este	este	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
-2	levantamento	levantamento	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	2	nmod	_	_
-5	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	6	nsubj	_	_
-6	inclui	incluir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl	_	_
-7	também	também	ADV	adv	_	6	advmod	_	_
-8	produtos	produto	NOUN	n|M|P	Gender=Masc|Number=Plur	6	dobj	_	_
-9	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-10	higiene	higiene	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-11	e	e	CONJ	conj-c|<co-postnom>	_	10	cc	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	limpeza	limpeza	NOUN	n|F|S	Gender=Fem|Number=Sing	10	conj	_	_
-14	mostra	mostrar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-15	recuo	recuo	NOUN	n|M|S	Gender=Masc|Number=Sing	14	dobj	_	_
-16	de	de	ADP	prp	AdpType=Prep	18	case	_	_
-17	1,58	1,58	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
-18	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	15	nmod	_	_
-19	em	em	ADP	prp|<sam->	AdpType=Prep	23	case	_	MWE=em_relação_a|MWEPOS=ADP
-20	relação	relação	NOUN	NOUN	_	19	mwe	_	_
+# text = Este levantamento de preços que inclui também produtos de higiene e de limpeza mostra recuo de 1,58 % em relação à sexta-feira anterior.
+# forest 1
+# source CETENFolha n=366 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF366-4
+# id 1519
+1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	levantamento	levantamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
+3	de	de	ADP	PRP|@N<ARG	_	4	case	_	_
+4	preços	preço	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
+5	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	6	nsubj	_	_
+6	inclui	incluir	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl	_	_
+7	também	também	ADV	ADV|@<ADVL	_	6	advmod	_	_
+8	produtos	produto	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	obj	_	_
+9	de	de	ADP	<first-cjt>|PRP|@N<	_	10	case	_	_
+10	higiene	higiene	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
+11	e	e	CCONJ	<co-postnom>|KC|@CO	_	13	cc	_	_
+12	de	de	ADP	<cjt>|PRP|@N<	_	13	case	_	_
+13	limpeza	limpeza	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	conj	_	_
+14	mostra	mostrar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+15	recuo	recuo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
+16	de	de	ADP	PRP|@N<ARG	_	18	case	_	_
+17	1,58	1,58	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
+18	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	15	nmod	_	_
+19	em	em	ADP	<sam->|PRP|@N<	_	23	case	_	MWE=em_relação_a|MWEPOS=ADP
+20	relação	relação	NOUN	N|@P<	_	19	fixed	_	_
 21-22	à	_	_	_	_	_	_	_	_
-21	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	mwe	_	_
-22	a	o	DET	art|<artd>|<-sam>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	sexta-feira	sexta-feira	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nmod	_	_
-24	anterior	anterior	ADJ	adj|F|S	Gender=Fem|Number=Sing	23	amod	_	_
-25	.	.	PUNCT	punc	_	14	punct	_	_
+21	a	a	DET	PRP|@N<	Gender=Fem|Number=Sing|PronType=Art	19	fixed	_	_
+22	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	sexta-feira	sexta-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
+24	anterior	anterior	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 

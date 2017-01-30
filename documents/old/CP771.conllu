@@ -1,132 +1,136 @@
-# distance_from_new = 0
-# new_sent_id = CP771-1
-# sent_id = pt-ud-train.conllu#s3949/pt
-# orig_file_sentence = 040#49
-1	Mark	Mark	PROPN	prop|M|S	_	5	nsubj	_	MWE=Mark_Miller|MWEPOS=PROPN
-2	Miller	Miller	PROPN	PROPN	_	1	name	_	_
-3	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	treinador-jogador	treinador-jogador	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-6	,	,	PUNCT	punc	_	5	punct	_	_
-7	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	5	cc	_	_
-8	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
-9	possível	possível	ADJ	adj|M|S	Gender=Masc|Number=Sing	5	conj	_	_
-10	que	que	SCONJ	conj-s	_	13	mark	_	_
-11	Toni	Toni	PROPN	prop|M|S	_	13	nsubj	_	MWE=Toni_Formosa|MWEPOS=PROPN
-12	Formosa	Formosa	PROPN	PROPN	_	11	name	_	_
-13	venha	vir	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	csubj	_	_
-14	a	a	ADP	prp	AdpType=Prep	17	mark	_	_
-15	ser	ser	VERB	v-inf	VerbForm=Inf	17	cop	_	_
-16	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	espécie	espécie	NOUN	n|F|S	Gender=Fem|Number=Sing	13	xcomp	_	_
-18	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-19	«	«	PUNCT	punc	_	20	punct	_	_
-20	manager	manager	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-21	»	»	PUNCT	punc	_	20	punct	_	_
+# text = Mark Miller é o treinador-jogador, mas é possível que Toni Formosa venha a ser uma espécie de «manager» da equipa, com assento no banco, se aceitar a proposta que lhe fez o presidente do clube.
+# forest 1
+# source CETEMPúblico n=771 sec=des sem=93b
+# sent_id = CP771-1
+# id 3951
+1	Mark	Mark	PROPN	_	_	5	nsubj	_	MWE=Mark_Miller|MWEPOS=PROPN
+2	Miller	Miller	PROPN	_	_	1	flat	_	_
+3	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	treinador-jogador	treinador-jogador	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+7	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
+8	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	possível	possível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	5	conj	_	_
+10	que	que	SCONJ	KS|@SUB	_	13	mark	_	_
+11	Toni	Toni	PROPN	_	_	13	nsubj	_	MWE=Toni_Formosa|MWEPOS=PROPN
+12	Formosa	Formosa	PROPN	_	_	11	flat	_	_
+13	venha	vir	VERB	<aux>|V|PR|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	csubj	_	_
+14	a	a	ADP	PRP|@PRT-AUX<	_	17	mark	_	_
+15	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	17	cop	_	_
+16	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	espécie	espécie	NOUN	<meta>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	13	xcomp	_	_
+18	de	de	ADP	PRP|@N<	_	20	case	_	_
+19	«	«	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+20	manager	manager	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	SpaceAfter=No
+21	»	»	PUNCT	PU|@PU	_	20	punct	_	_
 22-23	da	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	equipa	equipa	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-25	,	,	PUNCT	punc	_	20	punct	_	_
-26	com	com	ADP	prp	AdpType=Prep	27	case	_	_
-27	assento	assento	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	equipa	equipa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+26	com	com	ADP	PRP|@N<PRED	_	27	case	_	_
+27	assento	assento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
 28-29	no	_	_	_	_	_	_	_	_
-28	em	em	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	banco	banco	NOUN	n|M|S	Gender=Masc|Number=Sing	27	nmod	_	_
-31	,	,	PUNCT	punc	_	13	punct	_	_
-32	se	se	SCONJ	conj-s	_	33	mark	_	_
-33	aceitar	aceitar	VERB	v-fin|FUT|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	advcl	_	_
-34	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-35	proposta	proposta	NOUN	n|F|S	Gender=Fem|Number=Sing	33	dobj	_	_
-36	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	38	dobj	_	_
-37	lhe	ele	PRON	pron-pers|M|3S|DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	dobj	_	_
-38	fez	fazer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	35	acl	_	_
-39	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
-40	presidente	presidente	NOUN	n|M|S	Gender=Masc|Number=Sing	38	nsubj	_	_
+28	em	em	ADP	<sam->|PRP|@N<	_	30	case	_	_
+29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	banco	banco	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	SpaceAfter=No
+31	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+32	se	se	SCONJ	KS|@SUB	_	33	mark	_	_
+33	aceitar	aceitar	VERB	<mv>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	advcl	_	_
+34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
+35	proposta	proposta	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	33	obj	_	_
+36	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	38	obj	_	_
+37	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	obj	_	_
+38	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	35	acl	_	_
+39	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
+40	presidente	presidente	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	38	nsubj	_	_
 41-42	do	_	_	_	_	_	_	_	_
-41	de	de	ADP	prp|<sam->	AdpType=Prep	43	case	_	_
-42	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_
-43	clube	clube	NOUN	n|M|S	Gender=Masc|Number=Sing	40	nmod	_	_
-44	.	.	PUNCT	punc	_	5	punct	_	_
+41	de	de	ADP	<sam->|PRP|@N<	_	43	case	_	_
+42	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_
+43	clube	clube	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	SpaceAfter=No
+44	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP771-2
-# sent_id = pt-ud-train.conllu#s3950/pt
-# orig_file_sentence = 040#50
-1	Terá	ter	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-2	que	que	SCONJ	conj-s	_	3	mark	_	_
-3	dar	dar	VERB	v-inf	VerbForm=Inf	1	xcomp	_	_
-4	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	resposta	resposta	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-6	até	até	ADP	prp	AdpType=Prep	10	case	_	_
+# text = Terá que dar uma resposta até à próxima semana.
+# forest 1
+# source CETEMPúblico n=771 sec=des sem=93b
+# sent_id = CP771-2
+# id 3952
+1	Terá	ter	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+2	que	que	SCONJ	KS|@PRT-AUX<	_	3	mark	_	_
+3	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	_
+4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	resposta	resposta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
+6	até	até	ADP	PRP|@<ADVL	_	10	case	_	_
 7-8	à	_	_	_	_	_	_	_	_
-7	a	a	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-9	próxima	próximo	ADJ	adj|F|S	Gender=Fem|Number=Sing	10	amod	_	_
-10	semana	semana	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-11	.	.	PUNCT	punc	_	1	punct	_	_
+7	a	a	ADP	<sam->|PRP|@P<	_	10	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+9	próxima	próximo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	10	amod	_	_
+10	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP771-3
-# sent_id = pt-ud-train.conllu#s3951/pt
-# orig_file_sentence = 040#51
+# text = Nos jogos com o Ekranes, os dois golos foram marcados pelo líbero Buttigieg, um jogador elegante e talvez o melhor do país.
+# forest 1
+# source CETEMPúblico n=771 sec=des sem=93b
+# sent_id = CP771-3
+# id 3953
 1-2	Nos	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
-3	jogos	jogo	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nmod	_	_
-4	com	com	ADP	prp	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Ekranes	Ekranes	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
-7	,	,	PUNCT	punc	_	12	punct	_	_
-8	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
-9	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
-10	golos	golo	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nsubjpass	_	_
-11	foram	ser	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	auxpass	_	_
-12	marcados	marcar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+3	jogos	jogo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	obl	_	_
+4	com	com	ADP	PRP|@N<	_	6	case	_	_
+5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Ekranes	Ekranes	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+9	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
+10	golos	golo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	11	nsubj	_	_
+11	foram	ser	VERB	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+12	marcados	marcar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	11	ccomp	_	_
 13-14	pelo	_	_	_	_	_	_	_	_
-13	por	por	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	líbero	líbero	NOUN	n|M|S	Gender=Masc|Number=Sing	12	dobj	_	_
-16	Buttigieg	Buttigieg	PROPN	prop|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-17	,	,	PUNCT	punc	_	15	punct	_	_
-18	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	jogador	jogador	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-20	elegante	elegante	ADJ	adj|M|S	Gender=Masc|Number=Sing	19	amod	_	_
-21	e	e	CONJ	conj-c|<co-postnom>	_	20	cc	_	_
-22	talvez	talvez	ADV	adv	_	24	advmod	_	_
-23	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	advmod	_	_
-24	melhor	bom	ADJ	adj|<KOMP>|<SUP>|M|S	Degree=Sup|Gender=Masc|Number=Sing	20	conj	_	_
+13	por	por	ADP	PRP|@PASS	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	líbero	líbero	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obj	_	_
+16	Buttigieg	Buttigieg	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	jogador	jogador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	15	nmod	_	_
+20	elegante	elegante	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
+21	e	e	CCONJ	<co-postnom>|KC|@CO	_	24	cc	_	_
+22	talvez	talvez	ADV	ADV|@>A	_	24	advmod	_	_
+23	o	o	DET	<artd>|ART|M|S|@>A	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	advmod	_	_
+24	melhor	bom	ADJ	<cjt>|<KOMP>|<SUP>|<COMP>|ADJ|M|S|@N<	Degree=Sup|Gender=Masc|Number=Sing	20	conj	_	_
 25-26	do	_	_	_	_	_	_	_	_
-25	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nmod	_	_
-28	.	.	PUNCT	punc	_	12	punct	_	_
+25	de	de	ADP	<sam->|<komp>|PRP|@KOMP<	_	27	case	_	_
+26	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP771-4
-# sent_id = pt-ud-train.conllu#s3952/pt
-# orig_file_sentence = 040#52
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
-2	outros	outro	DET	pron-det|<diff>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur	3	det	_	_
-3	internacionais	internacional	ADJ	adj|<n>|M|P	Gender=Masc|Number=Plur	5	nsubj	_	_
-4	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
-5	Cluett	Cluett	PROPN	prop|M|S	Gender=Masc|Number=Sing	0	root	_	_
-6	(	(	PUNCT	punc	_	5	punct	_	_
-7	guarda-redes	guarda-redes	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-8	)	)	PUNCT	punc	_	5	punct	_	_
-9	,	,	PUNCT	punc	_	5	punct	_	_
-10	Caucchi	Caucchi	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	conj	_	_
-11	e	e	CONJ	conj-c|<co-sc>	_	10	cc	_	_
-12	Buttigieg	Buttigieg	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	conj	_	_
-13	(	(	PUNCT	punc	_	10	punct	_	_
-14	defesas	defender	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	10	acl	_	_
-15	)	)	PUNCT	punc	_	10	punct	_	_
-16	e	e	CONJ	conj-c|<co-sc>	_	5	cc	_	_
-17	Buhagiar	Buhagiar	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	conj	_	_
-18	(	(	PUNCT	punc	_	17	punct	_	_
-19	normalmente	normalmente	ADV	adv	_	20	advmod	_	_
-20	defesa-esquerdo	defesa-esquerdo	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-21	)	)	PUNCT	punc	_	17	punct	_	_
-22	.	.	PUNCT	punc	_	5	punct	_	_
+# text = Os outros internacionais são Cluett (guarda-redes), Caucchi e Buttigieg (defesas) e Buhagiar (normalmente defesa-esquerdo).
+# forest 1
+# source CETEMPúblico n=771 sec=des sem=93b
+# sent_id = CP771-4
+# id 3954
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+2	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Degree=Cmp|Gender=Masc|Number=Plur	3	det	_	_
+3	internacionais	internacional	ADJ	<n>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
+4	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	Cluett	Cluett	PROPN	<first-cjt>|PROP|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+6	(	(	PUNCT	PU|@PU	_	10	punct	_	SpaceAfter=No
+7	guarda-redes	guarda-redes	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
+8	)	)	PUNCT	PU|@PU	_	10	punct	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+10	Caucchi	Caucchi	PROPN	<cjt>|<first-cjt>|PROP|M|S|@<SC	Gender=Masc|Number=Sing	5	conj	_	_
+11	e	e	CCONJ	<co-sc>|KC|@CO	_	12	cc	_	_
+12	Buttigieg	Buttigieg	PROPN	<cjt>|PROP|M|S|@<SC	Gender=Masc|Number=Sing	10	conj	_	_
+13	(	(	PUNCT	PU|@PU	_	10	punct	_	SpaceAfter=No
+14	defesas	defender	VERB	<mv>|V|PCP|F|P|@ICL-N<PRED	Gender=Fem|Number=Plur|VerbForm=Part	10	acl	_	SpaceAfter=No
+15	)	)	PUNCT	PU|@PU	_	10	punct	_	_
+16	e	e	CCONJ	<co-sc>|KC|@CO	_	17	cc	_	_
+17	Buhagiar	Buhagiar	PROPN	<cjt>|PROP|M|S|@<SC	Gender=Masc|Number=Sing	5	conj	_	_
+18	(	(	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+19	normalmente	normalmente	ADV	ADV|@>N	_	20	advmod	_	_
+20	defesa-esquerdo	defesa-esquerdo	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No
+21	)	)	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 

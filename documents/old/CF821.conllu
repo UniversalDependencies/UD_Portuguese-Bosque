@@ -1,33 +1,35 @@
-# distance_from_new = 0
-# new_sent_id = CF821-1
-# sent_id = pt-ud-train.conllu#s8498/pt
-# orig_file_sentence = 085#98
-1	Niemeyer	Niemeyer	PROPN	prop|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	--	--	PUNCT	punc	_	1	punct	_	_
-3	É	é	INTJ	in	_	5	advmod	_	_
-4	,	,	PUNCT	punc	_	5	punct	_	_
-5	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	_	_
-6	em	em	ADP	prp	AdpType=Prep	7	case	_	_
-7	1936	1936	NUM	num|M|P	Gender=Masc|Number=Plur|NumType=Card	5	advmod	_	_
-8	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Niemeyer -- É, foi em 1936.
+# forest 1
+# source CETENFolha n=821 cad=Mais! sec=nd sem=94b
+# sent_id = CF821-1
+# id 3456
+1	Niemeyer	Niemeyer	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	É	é	INTJ	IN|@ADVL>	_	5	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+5	foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	_	_
+6	em	em	ADP	PRP|@<ADVL	_	7	case	_	_
+7	1936	1936	NUM	<year>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Plur	5	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF821-2
-# sent_id = pt-ud-train.conllu#s8499/pt
-# orig_file_sentence = 085#99
-1	Folha	Folha	PROPN	prop|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	--	--	PUNCT	punc	_	1	punct	_	_
-3	o	o	DET	pron-indp|<interr>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	dobj	_	MWE=o_que|MWEPOS=PRON
-4	que	que	SCONJ	SCONJ	_	3	compound	_	_
-5	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	sr.	sr.	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	7	nsubj	_	_
-7	pode	poder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
-8	dizer	dizer	VERB	v-inf	VerbForm=Inf	7	xcomp	_	_
+# text = Folha -- o que o sr. pode dizer dele em termos pessoais?
+# forest 1
+# source CETENFolha n=821 cad=Mais! sec=nd sem=94b
+# sent_id = CF821-2
+# id 3457
+1	Folha	Folha	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	8	obj	_	MWE=o_que|MWEPOS=PRON
+4	que	que	SCONJ	<interr>|INDP|M|S|@ACC>	_	3	compound	_	_
+5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	sr.	sr.	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
+7	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+8	dizer	dizer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
 9-10	dele	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-10	ele	ele	PRON	pron-pers|<-sam>|M|3S|NOM/PIV	Case=Acc,Nom|Gender=Masc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	8	dobj	_	_
-11	em	em	ADP	prp	AdpType=Prep	12	case	_	_
-12	termos	termo	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
-13	pessoais	pessoal	ADJ	adj|M|P	Gender=Masc|Number=Plur	12	amod	_	_
-14	?	?	PUNCT	punc	_	1	punct	_	_
+9	de	de	ADP	<sam->|PRP|@<PIV	_	10	case	_	_
+10	ele	ele	PRON	<-sam>|PERS|M|3S|NOM/PIV|@P<	Case=Acc,Nom|Gender=Masc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	8	obj	_	_
+11	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
+12	termos	termo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	_
+13	pessoais	pessoal	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	12	amod	_	SpaceAfter=No
+14	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 

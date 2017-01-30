@@ -1,134 +1,140 @@
-# distance_from_new = 0
-# new_sent_id = CF936-1
-# sent_id = pt-ud-dev.conllu#s204/pt
-# orig_file_sentence = 003#4
-1	Feminino	feminino	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	bate	bater	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	Cuba	Cuba	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-4	e	e	CONJ	conj-c	_	2	cc	_	_
-5	fica	ficar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-6	com	com	ADP	prp	AdpType=Prep	7	case	_	_
-7	título	título	NOUN	n|M|S	Gender=Masc|Number=Sing	2	conj	_	_
-8	em	em	ADP	prp	AdpType=Prep	9	case	_	_
-9	PE	PE	PROPN	prop|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
+# text = Feminino bate Cuba e fica com título em PE
+# forest 1
+# source CETENFolha n=936 cad=Esporte sec=des sem=94b
+# sent_id = CF936-1
+# id 3962
+1	Feminino	feminino	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	bate	bater	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	Cuba	Cuba	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+4	e	e	CCONJ	<co-sta>|KC|@CO	_	7	cc	_	_
+5	fica	ficar	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+6	com	com	ADP	PRP|@<SC	_	7	case	_	_
+7	título	título	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	conj	_	_
+8	em	em	ADP	PRP|@N<	_	9	case	_	_
+9	PE	PE	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF936-3
-# sent_id = pt-ud-dev.conllu#s205/pt
-# orig_file_sentence = 003#5
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	seleção	seleção	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nsubj	_	_
-3	brasileira	brasileiro	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
-4	feminina	feminino	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	basquete	basquete	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-7	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
-8	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	campeã	campeã	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
+# text = A seleção brasileira feminina de basquete é a campeã do Torneio Internacional de Basquete, um quadrangular amistoso disputado em Recife (PE) e que contou com a participação das seleções de Cuba, Argentina e Eslovênia.
+# forest 1
+# source CETENFolha n=936 cad=Esporte sec=des sem=94b
+# sent_id = CF936-3
+# id 3963
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	seleção	seleção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
+3	brasileira	brasileiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
+4	feminina	feminino	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	basquete	basquete	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+7	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	campeã	campeã	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 10-11	do	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	Torneio	Torneio	PROPN	prop|M|S	_	9	nmod	_	MWE=Torneio_Internacional_de_Basquete|MWEPOS=PROPN
-13	Internacional	Internacional	PROPN	PROPN	_	12	name	_	_
-14	de	de	ADP	ADP	AdpType=Prep	15	case	_	_
-15	Basquete	Basquete	PROPN	PROPN	_	12	name	_	_
-16	,	,	PUNCT	punc	_	12	punct	_	_
-17	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	quadrangular	quadrangular	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-19	amistoso	amistoso	ADJ	adj|M|S	Gender=Masc|Number=Sing	18	amod	_	_
-20	disputado	disputar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	_	_
-21	em	em	ADP	prp	AdpType=Prep	22	case	_	_
-22	Recife	Recife	PROPN	prop|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-23	(	(	PUNCT	punc	_	22	punct	_	_
-24	PE	PE	PROPN	prop|M|S	Gender=Masc|Number=Sing	22	nmod	_	_
-25	)	)	PUNCT	punc	_	22	punct	_	_
-26	e	e	CONJ	conj-c|<co-pred>	_	18	cc	_	_
-27	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	28	nsubj	_	_
-28	contou	contar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	conj	_	_
-29	com	com	ADP	prp	AdpType=Prep	31	case	_	_
-30	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
-31	participação	participação	NOUN	n|F|S	Gender=Fem|Number=Sing	28	dobj	_	_
+10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
+11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	Torneio	Torneio	PROPN	_	_	9	nmod	_	MWE=Torneio_Internacional_de_Basquete|MWEPOS=PROPN
+13	Internacional	Internacional	PROPN	_	_	12	flat	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	Basquete	Basquete	PROPN	PROP|@P<	_	12	flat	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+17	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	quadrangular	quadrangular	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	12	nmod	_	_
+19	amistoso	amistoso	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	18	amod	_	_
+20	disputado	disputar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	18	acl	_	_
+21	em	em	ADP	PRP|@<ADVL	_	22	case	_	_
+22	Recife	Recife	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	_
+23	(	(	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
+24	PE	PE	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	22	nmod	_	SpaceAfter=No
+25	)	)	PUNCT	PU|@PU	_	22	punct	_	_
+26	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	28	cc	_	_
+27	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	28	nsubj	_	_
+28	contou	contar	VERB	<cjt>|<mv>|V|PS|3S|IND|@N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	conj	_	_
+29	com	com	ADP	PRP|@<PIV	_	31	case	_	_
+30	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+31	participação	participação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	obj	_	_
 32-33	das	_	_	_	_	_	_	_	_
-32	de	de	ADP	prp|<sam->	AdpType=Prep	34	case	_	_
-33	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	_	_
-34	seleções	seleção	NOUN	n|F|P	Gender=Fem|Number=Plur	31	nmod	_	_
-35	de	de	ADP	prp	AdpType=Prep	36	case	_	_
-36	Cuba	Cuba	PROPN	prop|F|S	Gender=Fem|Number=Sing	34	nmod	_	_
-37	,	,	PUNCT	punc	_	36	punct	_	_
-38	Argentina	Argentina	PROPN	prop|F|S	Gender=Fem|Number=Sing	36	conj	_	_
-39	e	e	CONJ	conj-c|<co-prparg>	_	36	cc	_	_
-40	Eslovênia	Eslovênia	PROPN	prop|F|S	Gender=Fem|Number=Sing	36	conj	_	_
-41	.	.	PUNCT	punc	_	9	punct	_	_
+32	de	de	ADP	<sam->|PRP|@N<	_	34	case	_	_
+33	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	_	_
+34	seleções	seleção	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	31	nmod	_	_
+35	de	de	ADP	PRP|@N<	_	36	case	_	_
+36	Cuba	Cuba	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	34	nmod	_	SpaceAfter=No
+37	,	,	PUNCT	PU|@PU	_	38	punct	_	_
+38	Argentina	Argentina	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	36	conj	_	_
+39	e	e	CCONJ	<co-prparg>|KC|@CO	_	40	cc	_	_
+40	Eslovênia	Eslovênia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	36	conj	_	SpaceAfter=No
+41	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CF936-4
-# sent_id = pt-ud-dev.conllu#s206/pt
-# orig_file_sentence = 003#6
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	time	time	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nsubj	_	_
-3	comandado	comandar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
+# text = O time comandado pelo técnico Miguel Ângelo da Luz ficou com o título ao derrotar anteontem à noite na final a forte seleção de Cuba por 115 a 93 (54 a 44 no primeiro tempo).
+# forest 1
+# source CETENFolha n=936 cad=Esporte sec=des sem=94b
+# sent_id = CF936-4
+# id 3964
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	time	time	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
+3	comandado	comandar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
 4-5	pelo	_	_	_	_	_	_	_	_
-4	por	por	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	técnico	técnico	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-7	Miguel	Miguel	PROPN	prop|M|S	_	6	nmod	_	MWE=Miguel_Ângelo_da_Luz|MWEPOS=PROPN
-8	Ângelo	Ângelo	PROPN	PROPN	_	7	name	_	_
+4	por	por	ADP	PRP|@PASS	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	técnico	técnico	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obj	_	_
+7	Miguel	Miguel	PROPN	_	_	6	nmod	_	MWE=Miguel_Ângelo_da_Luz|MWEPOS=PROPN
+8	Ângelo	Ângelo	PROPN	_	_	7	flat	_	_
 9-10	da	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	Luz	Luz	PROPN	PROPN	_	7	name	_	_
-12	ficou	ficar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-13	com	com	ADP	prp	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	título	título	NOUN	n|M|S	Gender=Masc|Number=Sing	12	dobj	_	_
-16	ao	ao	ADP	prp	AdpType=Prep	17	mark	_	_
-17	derrotar	derrotar	VERB	v-inf	VerbForm=Inf	12	advcl	_	_
-18	anteontem	anteontem	ADV	adv	_	17	advmod	_	_
-19-20	à	_	_	_	_	_	_	_	_
-19	a	a	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	noite	noite	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nmod	_	_
-22-23	na	_	_	_	_	_	_	_	_
-22	em	em	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	final	final	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-25	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-26	forte	forte	ADJ	adj|F|S	Gender=Fem|Number=Sing	27	amod	_	_
-27	seleção	seleção	NOUN	n|F|S	Gender=Fem|Number=Sing	17	dobj	_	_
-28	de	de	ADP	prp	AdpType=Prep	29	case	_	_
-29	Cuba	Cuba	PROPN	prop|F|S	Gender=Fem|Number=Sing	27	nmod	_	_
-30	por	por	ADP	prp	AdpType=Prep	31	case	_	_
-31	115	115	NUM	num|M|P	Gender=Masc|Number=Plur|NumType=Card	17	advmod	_	_
-32	a	a	ADP	prp	AdpType=Prep	33	case	_	_
-33	93	93	NUM	num|M|P	Gender=Masc|Number=Plur|NumType=Card	31	nummod	_	_
-34	(	(	PUNCT	punc	_	31	punct	_	_
-35	54	54	NUM	num|M|P	Gender=Masc|Number=Plur|NumType=Card	31	nummod	_	_
-36	a	a	ADP	prp	AdpType=Prep	37	case	_	_
-37	44	44	NUM	num|M|P	Gender=Masc|Number=Plur|NumType=Card	35	nummod	_	_
-38-39	no	_	_	_	_	_	_	_	_
-38	em	em	ADP	prp|<sam->	AdpType=Prep	41	case	_	_
-39	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
-40	primeiro	primeiro	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	41	amod	_	_
-41	tempo	tempo	NOUN	n|M|S	Gender=Masc|Number=Sing	35	nmod	_	_
-42	)	)	PUNCT	punc	_	31	punct	_	_
-43	.	.	PUNCT	punc	_	12	punct	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Luz	Luz	PROPN	PROP|@P<	_	7	flat	_	_
+12	ficou	ficar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+13	com	com	ADP	PRP|@<PIV	_	15	case	_	_
+14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	título	título	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obj	_	_
+16-17	ao	_	_	_	_	_	_	_	_
+16	a	a	ADP	<sam->|PRP|@N<	_	18	case	_	_
+17	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	derrotar	derrotar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	advcl	_	_
+19	anteontem	anteontem	ADV	ADV|@<ADVL	_	18	advmod	_	_
+20-21	à	_	_	_	_	_	_	_	_
+20	a	a	ADP	<sam->|PRP|@A<	_	22	case	_	_
+21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	noite	noite	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	_
+23-24	na	_	_	_	_	_	_	_	_
+23	em	em	ADP	<sam->|PRP|@<ADVL	_	25	case	_	_
+24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	final	final	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	_
+26	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+27	forte	forte	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	28	amod	_	_
+28	seleção	seleção	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	18	obj	_	_
+29	de	de	ADP	PRP|@N<	_	30	case	_	_
+30	Cuba	Cuba	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	_
+31	por	por	ADP	PRP|@<ADVL	_	32	case	_	_
+32	115	115	NUM	NUM|M|P|@P<	Gender=Masc|Number=Plur	18	advmod	_	_
+33	a	a	ADP	PRP|@NUM<	_	34	case	_	_
+34	93	93	NUM	NUM|M|P|@P<	Gender=Masc|Number=Plur	32	nummod	_	_
+35	(	(	PUNCT	PU|@PU	_	32	punct	_	SpaceAfter=No
+36	54	54	NUM	NUM|M|P|@A<PRED	Gender=Masc|Number=Plur	32	nummod	_	_
+37	a	a	ADP	PRP|@NUM<	_	38	case	_	_
+38	44	44	NUM	NUM|M|P|@P<	Gender=Masc|Number=Plur	36	nummod	_	_
+39-40	no	_	_	_	_	_	_	_	_
+39	em	em	ADP	<sam->|PRP|@A<	_	42	case	_	_
+40	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
+41	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	42	amod	_	_
+42	tempo	tempo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	36	obl	_	SpaceAfter=No
+43	)	)	PUNCT	PU|@PU	_	32	punct	_	SpaceAfter=No
+44	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF936-5
-# sent_id = pt-ud-dev.conllu#s207/pt
-# orig_file_sentence = 003#7
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	cestinha	cestinha	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
+# text = A cestinha do jogo foi Hortência, que marcou 38 pontos.
+# forest 1
+# source CETENFolha n=936 cad=Esporte sec=des sem=94b
+# sent_id = CF936-5
+# id 3965
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	cestinha	cestinha	NOUN	<np-def>|N|F|S|@SC>	Gender=Fem|Number=Sing	0	root	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	jogo	jogo	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	_
-7	Hortência	Hortência	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nsubj	_	_
-8	,	,	PUNCT	punc	_	7	punct	_	_
-9	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	10	nsubj	_	_
-10	marcou	marcar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl	_	_
-11	38	38	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-12	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
-13	.	.	PUNCT	punc	_	2	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	jogo	jogo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	_
+7	Hortência	Hortência	PROPN	PROP|F|S|@<SUBJ	Gender=Fem|Number=Sing	2	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+9	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	10	nsubj	_	_
+10	marcou	marcar	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl	_	_
+11	38	38	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+12	pontos	ponto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	obj	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

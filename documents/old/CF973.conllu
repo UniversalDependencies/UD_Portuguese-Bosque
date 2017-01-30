@@ -1,94 +1,99 @@
-# distance_from_new = 0
-# new_sent_id = CF973-1
-# sent_id = pt-ud-test.conllu#s200/pt
-# orig_file_sentence = 002#100
-1	Fui	ser	VERB	v-fin|PS|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	auxpass	_	_
-2	procurado	procurar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+# text = Fui procurado pelos ladrões para comprar a carga.
+# source = CETENFolha n=973 cad=Brasil sec=pol sem=94a
+# sent_id = CF973-1
+# id = 4118
+1	Fui	ser	VERB	<aux>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+2	procurado	procurar	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	1	ccomp	_	_
 3-4	pelos	_	_	_	_	_	_	_	_
-3	por	por	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-5	ladrões	ladrão	NOUN	n|M|P	Gender=Masc|Number=Plur	2	dobj	_	_
-6	para	para	ADP	prp	AdpType=Prep	7	mark	_	_
-7	comprar	comprar	VERB	v-inf	VerbForm=Inf	2	advcl	_	_
-8	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	carga	carga	NOUN	n|F|S	Gender=Fem|Number=Sing	7	dobj	_	_
-10	.	.	PUNCT	punc	_	2	punct	_	_
+3	por	por	ADP	PRP|@PASS	_	5	case	_	_
+4	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	ladrões	ladrão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	obj	_	_
+6	para	para	ADP	PRP|@<ADVL	_	7	mark	_	_
+7	comprar	comprar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	advcl	_	_
+8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	carga	carga	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF973-2
-# sent_id = pt-ud-test.conllu#s201/pt
-# orig_file_sentence = 003#1
-1	Fomos	ser	VERB	v-fin|PS|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
-2	eu	eu	PRON	pron-pers|M|1S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	1	nsubj	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Violim	Violim	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	conj	_	_
-6	,	,	PUNCT	punc	_	2	punct	_	_
-7	e	e	CONJ	conj-c|<co-subj>	_	2	cc	_	_
-8	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
-9	investigadores	investigador	NOUN	n|M|P	Gender=Masc|Number=Plur	2	conj	_	_
-10	Gilberto	Gilberto	PROPN	prop|M|S	_	9	nmod	_	MWE=Gilberto_Brito|MWEPOS=PROPN
-11	Brito	Brito	PROPN	PROPN	_	10	name	_	_
-12	,	,	PUNCT	punc	_	10	punct	_	_
-13	Euripedes	Euripedes	PROPN	prop|M|S	_	10	conj	_	MWE=Euripedes_Tozzo|MWEPOS=PROPN
-14	Tozzo	Tozzo	PROPN	PROPN	_	13	name	_	_
-15	,	,	PUNCT	punc	_	10	punct	_	_
-16	Mauro	Mauro	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	conj	_	_
-17	,	,	PUNCT	punc	_	10	punct	_	_
-18	Marcão	Marcão	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	conj	_	_
-19	e	e	CONJ	conj-c|<co-postnom>	_	10	cc	_	_
-20	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	Adner	Adner	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	conj	_	_
-22	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Fomos eu, o Violim, e os investigadores Gilberto Brito, Euripedes Tozzo, Mauro, Marcão e o Adner.
+# source = CETENFolha n=973 cad=Brasil sec=pol sem=94a
+# sent_id = CF973-2
+# id = 4119
+# d2d = punct(eu,,) -> punct(investigadores,,)  #106
+# d2d = punct(eu,,) -> punct(investigadores,,)  #106
+# d2d = cc(Gilberto,e) -> cc(Adner,e)  #106
+# d2d = cc(eu,e) -> cc(investigadores,e)  #106
+1	Fomos	ser	VERB	<mv>|V|PS|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+2	eu	eu	PRON	<first-cjt>|PERS|M|1S|NOM|@<SUBJ	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	1	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Violim	Violim	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	2	conj	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+7	e	e	CCONJ	<co-subj>|KC|@CO	_	9	cc	_	_
+8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+9	investigadores	investigador	NOUN	<cjt>|<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	2	conj	_	_
+10	Gilberto	Gilberto	PROPN	_	_	9	nmod	_	MWE=Gilberto_Brito|MWEPOS=PROPN
+11	Brito	Brito	PROPN	_	_	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+13	Euripedes	Euripedes	PROPN	_	_	10	conj	_	MWE=Euripedes_Tozzo|MWEPOS=PROPN
+14	Tozzo	Tozzo	PROPN	_	_	13	flat	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+16	Mauro	Mauro	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	10	conj	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+18	Marcão	Marcão	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	10	conj	_	_
+19	e	e	CCONJ	<co-postnom>|KC|@CO	_	21	cc	_	_
+20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	Adner	Adner	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	10	conj	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF973-3
-# sent_id = pt-ud-test.conllu#s202/pt
-# orig_file_sentence = 003#2
-1	Prenderam	prender	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
-2	todos	todo	PRON	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	1	dobj	_	_
-3	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	1	cc	_	_
-4	apreenderam	apreender	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	1	conj	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	mercadoria	mercadoria	NOUN	n|F|S	Gender=Fem|Number=Sing	4	dobj	_	_
-7	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Prenderam todos e apreenderam a mercadoria.
+# source = CETENFolha n=973 cad=Brasil sec=pol sem=94a
+# sent_id = CF973-3
+# id = 4120
+# d2d = cc(Prenderam,e) -> cc(apreenderam,e)  #106
+1	Prenderam	prender	VERB	<mv>|<first-cjt>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+2	todos	todo	PRON	<quant>|DET|M|P|@<ACC	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	1	obj	_	_
+3	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	4	cc	_	_
+4	apreenderam	apreender	VERB	<mv>|<cjt>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	1	conj	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	mercadoria	mercadoria	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF973-4
-# sent_id = pt-ud-test.conllu#s203/pt
-# orig_file_sentence = 003#3
-1	Eles	eles	PRON	pron-pers|M|3P|NOM	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
-2	desviaram	desviar	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
-3	quatro	quatro	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	4	nummod	_	_
-4	toneladas	tonelada	NOUN	n|F|P	Gender=Fem|Number=Plur	2	dobj	_	_
+# text = Eles desviaram quatro toneladas da carga.
+# source = CETENFolha n=973 cad=Brasil sec=pol sem=94a
+# sent_id = CF973-4
+# id = 4121
+1	Eles	eles	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	desviaram	desviar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+3	quatro	quatro	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	4	nummod	_	_
+4	toneladas	tonelada	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
 5-6	da	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	carga	carga	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-8	.	.	PUNCT	punc	_	2	punct	_	_
+5	de	de	ADP	PRP|@N<	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	carga	carga	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF973-5
-# sent_id = pt-ud-test.conllu#s204/pt
-# orig_file_sentence = 003#4
-1	Quatro	quatro	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	2	nummod	_	_
-2	Kombis	Kombis	PROPN	prop|F|P	Gender=Fem|Number=Plur	3	nsubj	_	_
-3	foram	ser	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
-4	para	para	ADP	prp	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Deic	Deic	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-7	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Quatro Kombis foram para o Deic.
+# source = CETENFolha n=973 cad=Brasil sec=pol sem=94a
+# sent_id = CF973-5
+# id = 4122
+1	Quatro	quatro	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	2	nummod	_	_
+2	Kombis	Kombis	PROPN	PROP|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
+3	foram	ser	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+4	para	para	ADP	PRP|@<PIV	_	6	case	_	_
+5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Deic	Deic	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF973-6
-# sent_id = pt-ud-test.conllu#s205/pt
-# orig_file_sentence = 003#5
-1	Só	só	ADV	adv	_	2	advmod	_	_
-2	isso	isso	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	4	nsubjpass	_	_
-3	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	auxpass	_	_
-4	devolvido	devolver	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-5	para	para	ADP	prp	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Riachuelo	Riachuelo	PROPN	prop|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-8	.	.	PUNCT	punc	_	4	punct	_	_
+# text = Só isso foi devolvido para a Riachuelo.
+# source = CETENFolha n=973 cad=Brasil sec=pol sem=94a
+# sent_id = CF973-6
+# id = 4123
+1	Só	só	ADV	ADV|@>N	_	2	advmod	_	_
+2	isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	devolvido	devolver	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	3	ccomp	_	_
+5	para	para	ADP	PRP|@<ADVL	_	7	case	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Riachuelo	Riachuelo	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

@@ -1,88 +1,91 @@
-# distance_from_new = 0
-# new_sent_id = CF419-1
-# sent_id = pt-ud-train.conllu#s6790/pt
-# orig_file_sentence = 068#90
+# text = Nos primeiros 20 dias deste mês foram assassinados no Rio 223 pessoas média de 11 por dia.
+# forest 1
+# source CETENFolha n=419 cad=Brasil sec=pol sem=94a
+# sent_id = CF419-1
+# id 1748
 1-2	Nos	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-2	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-3	primeiros	primeiro	ADJ	adj|<NUM-ord>|M|P	Gender=Masc|Number=Plur|NumType=Ord	5	amod	_	_
-4	20	20	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
-5	dias	dia	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nmod	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	_
+2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+3	primeiros	primeiro	ADJ	<NUM-ord>|ADJ|M|P|@>N	Gender=Masc|Number=Plur|NumType=Ord	5	amod	_	_
+4	20	20	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
+5	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	_
 6-7	deste	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	este	este	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
-8	mês	mês	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-9	foram	ser	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	10	auxpass	_	_
-10	assassinados	assassinar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
+8	mês	mês	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
+9	foram	ser	VERB	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+10	assassinados	assassinar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	9	ccomp	_	_
 11-12	no	_	_	_	_	_	_	_	_
-11	em	em	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	Rio	Rio	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-14	223	223	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	15	nummod	_	_
-15	pessoas	pessoa	NOUN	n|F|P	Gender=Fem|Number=Plur	10	nsubjpass	_	_
-16	média	média	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-17	de	de	ADP	prp	AdpType=Prep	18	case	_	_
-18	11	11	NUM	num|<card>|<Eg>|F|P	Gender=Fem|Number=Plur|NumType=Card	16	nummod	_	_
-19	por	por	ADP	prp	AdpType=Prep	20	case	_	_
-20	dia	dia	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
-21	.	.	PUNCT	punc	_	10	punct	_	_
+11	em	em	ADP	<sam->|PRP|@<ADVL	_	13	case	_	_
+12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	Rio	Rio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	_
+14	223	223	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	15	nummod	_	_
+15	pessoas	pessoa	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	9	nsubj	_	_
+16	média	média	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	15	nmod	_	_
+17	de	de	ADP	PRP|@N<	_	18	case	_	_
+18	11	11	NUM	<card>|<Eg>|NUM|F|P|@P<	Gender=Fem|Number=Plur|NumType=Card	16	nummod	_	_
+19	por	por	ADP	PRP|@N<	_	20	case	_	_
+20	dia	dia	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF419-2
-# sent_id = pt-ud-train.conllu#s6791/pt
-# orig_file_sentence = 068#91
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	índice	índice	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	mesmo	mesmo	PRON	pron-det|<diff>|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing	0	root	_	_
-6	registrado	registrar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
-7	em	em	ADP	prp	AdpType=Prep	8	case	_	_
-8	novembro	novembro	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
+# text = O índice é o mesmo registrado em novembro do ano passado.
+# forest 1
+# source CETENFolha n=419 cad=Brasil sec=pol sem=94a
+# sent_id = CF419-2
+# id 1749
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	índice	índice	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	mesmo	mesmo	PRON	<diff>|<KOMP>|<np-def>|DET|M|S|@<SC	Degree=Cmp|Gender=Masc|Number=Sing	0	root	_	_
+6	registrado	registrar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
+7	em	em	ADP	PRP|@<ADVL	_	8	case	_	_
+8	novembro	novembro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
 9-10	do	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-12	passado	passar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	11	acl	_	_
-13	.	.	PUNCT	punc	_	5	punct	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+12	passado	passar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	11	acl	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF419-3
-# sent_id = pt-ud-train.conllu#s6792/pt
-# orig_file_sentence = 068#92
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	diretor	diretor	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nsubj	_	_
+# text = O diretor da DRFVAT, Leonilson Ribeiro, disse que a presença de militares e policiais nas ruas causou a diminuição do número de carros roubados e furtados.
+# forest 1
+# source CETENFolha n=419 cad=Brasil sec=pol sem=94a
+# sent_id = CF419-3
+# id 1750
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	diretor	diretor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	DRFVAT	DRFVAT	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	,	,	PUNCT	punc	_	5	punct	_	_
-7	Leonilson	Leonilson	PROPN	prop|M|S	_	5	name	_	MWE=Leonilson_Ribeiro|MWEPOS=PROPN
-8	Ribeiro	Ribeiro	PROPN	PROPN	_	7	name	_	_
-9	,	,	PUNCT	punc	_	5	punct	_	_
-10	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-11	que	que	SCONJ	conj-s	_	21	mark	_	_
-12	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	presença	presença	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nsubj	_	_
-14	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-15	militares	militar	NOUN	n|M|P	Gender=Masc|Number=Plur	13	nmod	_	_
-16	e	e	CONJ	conj-c|<co-prparg>	_	15	cc	_	_
-17	policiais	policial	NOUN	n|M|P	Gender=Masc|Number=Plur	15	conj	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	DRFVAT	DRFVAT	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+7	Leonilson	Leonilson	PROPN	_	_	5	flat	_	MWE=Leonilson_Ribeiro|MWEPOS=PROPN
+8	Ribeiro	Ribeiro	PROPN	_	_	7	flat	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+10	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+11	que	que	SCONJ	KS|@SUB	_	21	mark	_	_
+12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	presença	presença	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	21	nsubj	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	militares	militar	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	nmod	_	_
+16	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	_
+17	policiais	policial	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	conj	_	_
 18-19	nas	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
-20	ruas	rua	NOUN	n|F|P	Gender=Fem|Number=Plur	13	nmod	_	_
-21	causou	causar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	ccomp	_	_
-22	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	diminuição	diminuição	NOUN	n|F|S	Gender=Fem|Number=Sing	21	dobj	_	_
+18	em	em	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
+20	ruas	rua	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	13	nmod	_	_
+21	causou	causar	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	ccomp	_	_
+22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	diminuição	diminuição	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	21	obj	_	_
 24-25	do	_	_	_	_	_	_	_	_
-24	de	de	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	número	número	NOUN	n|M|S	Gender=Masc|Number=Sing	23	nmod	_	_
-27	de	de	ADP	prp	AdpType=Prep	28	case	_	_
-28	carros	carro	NOUN	n|M|P	Gender=Masc|Number=Plur	26	nmod	_	_
-29	roubados	roubar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	28	acl	_	_
-30	e	e	CONJ	conj-c|<co-postnom>	_	29	cc	_	_
-31	furtados	furtar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	29	conj	_	_
-32	.	.	PUNCT	punc	_	10	punct	_	_
+24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
+25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	número	número	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
+27	de	de	ADP	PRP|@N<	_	28	case	_	_
+28	carros	carro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	26	nmod	_	_
+29	roubados	roubar	VERB	<mv>|<first-cjt>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	28	acl	_	_
+30	e	e	CCONJ	<co-postnom>|KC|@CO	_	31	cc	_	_
+31	furtados	furtar	VERB	<mv>|<cjt>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	29	conj	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 

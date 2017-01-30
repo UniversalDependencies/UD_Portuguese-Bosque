@@ -1,116 +1,119 @@
-# distance_from_new = 0
-# new_sent_id = CP797-1
-# sent_id = pt-ud-train.conllu#s4085/pt
-# orig_file_sentence = 041#85
-1	Director	director	NOUN	n|M|S	_	0	root	_	MWE=Director_das_OGMA|MWEPOS=NOUN
+# text = Director das OGMA exonerado
+# forest 1
+# source CETEMPúblico n=797 sec=eco sem=92a
+# sent_id = CP797-1
+# id 4087
+1	Director	director	NOUN	<np-idf>|N|M|S|@NPHR	_	0	root	_	MWE=Director_das_OGMA|MWEPOS=NOUN
 2-3	das	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
-4	OGMA	OGMA	NOUN	NOUN	_	1	compound	_	_
-5	exonerado	exonerar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
+2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
+3	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
+4	OGMA	OGMA	NOUN	N|@P<	_	1	compound	_	_
+5	exonerado	exonerar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP797-2
-# sent_id = pt-ud-train.conllu#s4086/pt
-# orig_file_sentence = 041#86
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	chefe	chefe	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nsubj	_	_
+# text = O chefe do Estado-Maior da Força Aérea, general Mendes Dias, decidiu proceder a algumas alterações nos quadros das Oficinas Gerais de Material Aeronáutico (OGMA), tendo sido determinada, na passada sexta-feira, a substituição do general Rui Espadinha, na direcção daquele estabelecimento fabril.
+# forest 1
+# source CETEMPúblico n=797 sec=eco sem=92a
+# sent_id = CP797-2
+# id 4088
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	chefe	chefe	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Estado-Maior	Estado-Maior	PROPN	prop|M|S	_	2	nmod	_	MWE=Estado-Maior_da_Força_Aérea|MWEPOS=PROPN
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Estado-Maior	Estado-Maior	PROPN	PROP|M|S|@P<	_	2	nmod	_	MWE=Estado-Maior_da_Força_Aérea|MWEPOS=PROPN
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Força	Força	PROPN	PROPN	_	5	name	_	_
-9	Aérea	Aérea	PROPN	PROPN	_	8	name	_	_
-10	,	,	PUNCT	punc	_	2	punct	_	_
-11	general	general	NOUN	n|M|S	Gender=Masc|Number=Sing	2	appos	_	_
-12	Mendes	Mendes	PROPN	prop|M|S	_	11	nmod	_	MWE=Mendes_Dias|MWEPOS=PROPN
-13	Dias	Dias	PROPN	PROPN	_	12	name	_	_
-14	,	,	PUNCT	punc	_	2	punct	_	_
-15	decidiu	decidir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-16	proceder	proceder	VERB	v-inf	VerbForm=Inf	15	xcomp	_	_
-17	a	a	ADP	prp	AdpType=Prep	19	case	_	_
-18	algumas	algum	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	19	det	_	_
-19	alterações	alteração	NOUN	n|F|P	Gender=Fem|Number=Plur	16	dobj	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Força	Força	PROPN	_	_	5	flat	_	_
+9	Aérea	Aérea	PROPN	_	_	8	flat	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+11	general	general	NOUN	<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	2	appos	_	_
+12	Mendes	Mendes	PROPN	_	_	11	nmod	_	MWE=Mendes_Dias|MWEPOS=PROPN
+13	Dias	Dias	PROPN	_	_	12	flat	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+15	decidiu	decidir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+16	proceder	proceder	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	15	xcomp	_	_
+17	a	a	ADP	PRP|@<PIV	_	19	case	_	_
+18	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	19	det	_	_
+19	alterações	alteração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	16	obj	_	_
 20-21	nos	_	_	_	_	_	_	_	_
-20	em	em	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
-22	quadros	quadro	NOUN	n|M|P	Gender=Masc|Number=Plur	19	nmod	_	_
+20	em	em	ADP	<sam->|PRP|@N<	_	22	case	_	_
+21	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+22	quadros	quadro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	_
 23-24	das	_	_	_	_	_	_	_	_
-23	de	de	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
-25	Oficinas	Oficina	PROPN	prop|F|P	_	22	nmod	_	MWE=Oficinas_Gerais_de_Material_Aeronáutico|MWEPOS=PROPN
-26	Gerais	Geral	PROPN	PROPN	_	25	name	_	_
-27	de	de	ADP	ADP	AdpType=Prep	28	case	_	_
-28	Material	Material	PROPN	PROPN	_	25	name	_	_
-29	Aeronáutico	Aeronáutico	PROPN	PROPN	_	25	name	_	_
-30	(	(	PUNCT	punc	_	25	punct	_	_
-31	OGMA	OGMA	PROPN	prop|F|S	Gender=Fem|Number=Sing	25	name	_	_
-32	)	)	PUNCT	punc	_	25	punct	_	_
-33	,	,	PUNCT	punc	_	15	punct	_	_
-34	tendo	ter	AUX	v-ger	VerbForm=Ger	36	aux	_	_
-35	sido	ser	VERB	v-pcp	VerbForm=Part	36	auxpass	_	_
-36	determinada	determinar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	15	advcl	_	_
-37	,	,	PUNCT	punc	_	36	punct	_	_
+23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
+24	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
+25	Oficinas	Oficina	PROPN	_	_	22	nmod	_	MWE=Oficinas_Gerais_de_Material_Aeronáutico|MWEPOS=PROPN
+26	Gerais	Geral	PROPN	_	_	25	flat	_	_
+27	de	de	ADP	PRP|@N<	_	28	case	_	_
+28	Material	Material	PROPN	_	_	25	flat	_	_
+29	Aeronáutico	Aeronáutico	PROPN	_	_	25	flat	_	_
+30	(	(	PUNCT	PU|@PU	_	25	punct	_	SpaceAfter=No
+31	OGMA	OGMA	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	25	flat	_	SpaceAfter=No
+32	)	)	PUNCT	PU|@PU	_	25	punct	_	SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+34	tendo	ter	AUX	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	35	aux	_	_
+35	sido	ser	VERB	<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	15	advcl	_	_
+36	determinada	determinar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	35	ccomp	_	SpaceAfter=No
+37	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 38-39	na	_	_	_	_	_	_	_	_
-38	em	em	ADP	prp|<sam->	AdpType=Prep	41	case	_	_
-39	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-40	passada	passar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	41	acl	_	_
-41	sexta-feira	sexta-feira	NOUN	n|F|S	Gender=Fem|Number=Sing	36	nmod	_	_
-42	,	,	PUNCT	punc	_	36	punct	_	_
-43	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
-44	substituição	substituição	NOUN	n|F|S	Gender=Fem|Number=Sing	36	nsubjpass	_	_
+38	em	em	ADP	<sam->|PRP|@<ADVL	_	41	case	_	_
+39	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+40	passada	passar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	41	acl	_	_
+41	sexta-feira	sexta-feira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	36	obl	_	SpaceAfter=No
+42	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+43	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
+44	substituição	substituição	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	35	nsubj	_	_
 45-46	do	_	_	_	_	_	_	_	_
-45	de	de	ADP	prp|<sam->	AdpType=Prep	47	case	_	_
-46	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
-47	general	general	NOUN	n|M|S	Gender=Masc|Number=Sing	44	nmod	_	_
-48	Rui	Rui	PROPN	prop|M|S	_	47	nmod	_	MWE=Rui_Espadinha|MWEPOS=PROPN
-49	Espadinha	Espadinha	PROPN	PROPN	_	48	name	_	_
-50	,	,	PUNCT	punc	_	44	punct	_	_
+45	de	de	ADP	<sam->|PRP|@N<	_	47	case	_	_
+46	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
+47	general	general	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	44	nmod	_	_
+48	Rui	Rui	PROPN	_	_	47	nmod	_	MWE=Rui_Espadinha|MWEPOS=PROPN
+49	Espadinha	Espadinha	PROPN	_	_	48	flat	_	SpaceAfter=No
+50	,	,	PUNCT	PU|@PU	_	44	punct	_	_
 51-52	na	_	_	_	_	_	_	_	_
-51	em	em	ADP	prp|<sam->	AdpType=Prep	53	case	_	_
-52	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	_	_
-53	direcção	direcção	NOUN	n|F|S	Gender=Fem|Number=Sing	44	nmod	_	_
+51	em	em	ADP	<sam->|PRP|@N<PRED	_	53	case	_	_
+52	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	_	_
+53	direcção	direcção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	44	nmod	_	_
 54-55	daquele	_	_	_	_	_	_	_	_
-54	de	de	ADP	prp|<sam->	AdpType=Prep	56	case	_	_
-55	aquele	aquele	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	56	det	_	_
-56	estabelecimento	estabelecimento	NOUN	n|M|S	Gender=Masc|Number=Sing	53	nmod	_	_
-57	fabril	fabril	ADJ	adj|M|S	Gender=Masc|Number=Sing	56	amod	_	_
-58	.	.	PUNCT	punc	_	15	punct	_	_
+54	de	de	ADP	<sam->|PRP|@N<	_	56	case	_	_
+55	aquele	aquele	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	56	det	_	_
+56	estabelecimento	estabelecimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	53	nmod	_	_
+57	fabril	fabril	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	56	amod	_	SpaceAfter=No
+58	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP797-3
-# sent_id = pt-ud-train.conllu#s4087/pt
-# orig_file_sentence = 041#87
-1	Interinamente	interinamente	ADV	adv	_	7	advmod	_	_
-2	,	,	PUNCT	punc	_	6	punct	_	_
-3	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	brigadeiro	brigadeiro	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
-5	Portela	Portela	PROPN	prop|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-6	irá	ir	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-7	assegurar	assegurar	VERB	v-inf	VerbForm=Inf	6	xcomp	_	_
-8	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	chefia	chefia	NOUN	n|F|S	Gender=Fem|Number=Sing	7	dobj	_	_
+# text = Interinamente, o brigadeiro Portela irá assegurar a chefia das OGMA, mas, nos próximos meses, deverá suceder uma reestruturação mais profunda.
+# forest 1
+# source CETEMPúblico n=797 sec=eco sem=92a
+# sent_id = CP797-3
+# id 4089
+1	Interinamente	interinamente	ADV	ADV|@ADVL>	_	7	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	brigadeiro	brigadeiro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
+5	Portela	Portela	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	4	nmod	_	_
+6	irá	ir	VERB	<first-cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+7	assegurar	assegurar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	xcomp	_	_
+8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	chefia	chefia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
 10-11	das	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
-12	OGMA	OGMA	PROPN	prop|F|P	Gender=Fem|Number=Plur	9	nmod	_	_
-13	,	,	PUNCT	punc	_	6	punct	_	_
-14	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	6	cc	_	_
-15	,	,	PUNCT	punc	_	21	punct	_	_
+10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
+11	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
+12	OGMA	OGMA	PROPN	PROP|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+14	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	21	cc	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 16-17	nos	_	_	_	_	_	_	_	_
-16	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-17	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-18	próximos	próximo	ADJ	adj|M|P	Gender=Masc|Number=Plur	19	amod	_	_
-19	meses	mês	NOUN	n|M|P	Gender=Masc|Number=Plur	22	nmod	_	_
-20	,	,	PUNCT	punc	_	21	punct	_	_
-21	deverá	dever	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	conj	_	_
-22	suceder	suceder	VERB	v-inf	VerbForm=Inf	21	xcomp	_	_
-23	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	reestruturação	reestruturação	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nsubj	_	_
-25	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	26	advmod	_	_
-26	profunda	profundo	ADJ	adj|F|S	Gender=Fem|Number=Sing	24	amod	_	_
-27	.	.	PUNCT	punc	_	6	punct	_	_
+16	em	em	ADP	<sam->|PRP|@ADVL>	_	19	case	_	_
+17	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
+18	próximos	próximo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	19	amod	_	_
+19	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	obl	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+21	deverá	dever	VERB	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	conj	_	_
+22	suceder	suceder	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	xcomp	_	_
+23	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	reestruturação	reestruturação	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	21	nsubj	_	_
+25	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	26	advmod	_	_
+26	profunda	profundo	ADJ	<COMP>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	24	amod	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

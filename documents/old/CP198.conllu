@@ -1,282 +1,289 @@
-# distance_from_new = 0
-# new_sent_id = CP198-1
-# sent_id = pt-ud-train.conllu#s1060/pt
-# orig_file_sentence = 011#60
-1	Identificado	identificar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-2	corpo	corpo	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	Alain	Alain	PROPN	prop|M|S	_	2	nmod	_	MWE=Alain_Fournier|MWEPOS=PROPN
-5	Fournier	Fournier	PROPN	PROPN	_	4	name	_	_
+# text = Identificado corpo de Alain Fournier
+# forest 1
+# source CETEMPúblico n=198 sec=clt sem=92a
+# sent_id = CP198-1
+# id 1061
+1	Identificado	identificar	VERB	<mv>|V|PCP|M|S|@ICL-UTT	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+2	corpo	corpo	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	1	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	Alain	Alain	PROPN	_	_	2	nmod	_	MWE=Alain_Fournier|MWEPOS=PROPN
+5	Fournier	Fournier	PROPN	_	_	4	flat	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP198-2
-# sent_id = pt-ud-train.conllu#s1061/pt
-# orig_file_sentence = 011#61
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	corpo	corpo	NOUN	n|M|S	Gender=Masc|Number=Sing	30	nsubjpass	_	_
+# text = O corpo do escritor francês Alain Fournier, autor de «O Grande Meaulnes», morto no começo da I Guerra Mundial, foi formalmente identificado, anunciou ontem a Direcção Regional de Assuntos Culturais Franceses, na cidade de Metz.
+# forest 1
+# source CETEMPúblico n=198 sec=clt sem=92a
+# sent_id = CP198-2
+# id 1062
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	corpo	corpo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	28	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	escritor	escritor	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	francês	francês	ADJ	adj|M|S	Gender=Masc|Number=Sing	5	amod	_	_
-7	Alain	Alain	PROPN	prop|M|S	_	5	nmod	_	MWE=Alain_Fournier|MWEPOS=PROPN
-8	Fournier	Fournier	PROPN	PROPN	_	7	name	_	_
-9	,	,	PUNCT	punc	_	5	punct	_	_
-10	autor	autor	NOUN	n|M|S	Gender=Masc|Number=Sing	11	case	_	_
-11	de	de	ADP	prp	AdpType=Prep	5	nmod	_	_
-12	«	«	PUNCT	punc	_	11	punct	_	_
-13	O	O	DET	prop|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	MWE=O_Grande_Meaulnes|MWEPOS=PROPN
-14	Grande	Grande	ADJ	ADJ	Gender=Masc|Number=Sing	11	nmod	_	_
-15	Meaulnes	Meaulnes	PROPN	PROPN	_	14	name	_	_
-16	»	»	PUNCT	punc	_	11	punct	_	_
-17	,	,	PUNCT	punc	_	5	punct	_	_
-18	morto	morrer	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	escritor	escritor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	francês	francês	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	_
+7	Alain	Alain	PROPN	_	_	5	nmod	_	MWE=Alain_Fournier|MWEPOS=PROPN
+8	Fournier	Fournier	PROPN	_	_	7	flat	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+10	autor	autor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	11	case	_	_
+11	de	de	ADP	PRP|@N<	_	5	nmod	_	_
+12	«	«	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
+13	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	14	det	_	MWE=O_Grande_Meaulnes|MWEPOS=PROPN
+14	Grande	Grande	ADJ	_	Gender=Masc|Number=Sing	11	nmod	_	_
+15	Meaulnes	Meaulnes	PROPN	_	_	14	flat	_	SpaceAfter=No
+16	»	»	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+18	morto	morrer	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
 19-20	no	_	_	_	_	_	_	_	_
-19	em	em	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	começo	começo	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
+19	em	em	ADP	<sam->|PRP|@<ADVL	_	21	case	_	_
+20	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	começo	começo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	_
 22-23	da	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	24	det	_	_
-24	I	I	ADJ	prop|F|S	NumForm=Roman|NumType=Ord	21	nmod	_	MWE=I_Guerra_Mundial|MWEPOS=PROPN
-25	Guerra	Guerra	PROPN	PROPN	_	24	name	_	_
-26	Mundial	Mundial	PROPN	PROPN	_	25	name	_	_
-27	,	,	PUNCT	punc	_	5	punct	_	_
-28	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	auxpass	_	_
-29	formalmente	formalmente	ADV	adv	_	30	advmod	_	_
-30	identificado	identificar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	32	ccomp	_	_
-31	,	,	PUNCT	punc	_	32	punct	_	_
-32	anunciou	anunciar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-33	ontem	ontem	ADV	adv	_	32	advmod	_	_
-34	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-35	Direcção	Direcção	PROPN	prop|M|S	_	32	nsubj	_	MWE=Direcção_Regional_de_Assuntos_Culturais_Franceses|MWEPOS=PROPN
-36	Regional	Regional	PROPN	PROPN	_	35	name	_	_
-37	de	de	ADP	ADP	AdpType=Prep	38	case	_	_
-38	Assuntos	Assuntos	PROPN	PROPN	_	35	name	_	_
-39	Culturais	Culturais	PROPN	PROPN	_	35	name	_	_
-40	Franceses	Franceses	PROPN	PROPN	_	35	name	_	_
-41	,	,	PUNCT	punc	_	32	punct	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	24	det	_	_
+24	I	I	CCONJ	_	_	21	nmod	_	MWE=I_Guerra_Mundial|MWEPOS=PROPN
+25	Guerra	Guerra	PROPN	_	_	24	flat	_	_
+26	Mundial	Mundial	PROPN	_	_	25	flat	_	SpaceAfter=No
+27	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+28	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	32	ccomp	_	_
+29	formalmente	formalmente	ADV	ADV|@ADVL>	_	30	advmod	_	_
+30	identificado	identificar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	28	ccomp	_	SpaceAfter=No
+31	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+32	anunciou	anunciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+33	ontem	ontem	ADV	ADV|@<ADVL	_	32	advmod	_	_
+34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
+35	Direcção	Direcção	PROPN	PROP|M|S|@<SUBJ	_	32	nsubj	_	MWE=Direcção_Regional_de_Assuntos_Culturais_Franceses|MWEPOS=PROPN
+36	Regional	Regional	PROPN	PROP|@N<	_	35	flat	_	_
+37	de	de	ADP	PRP|@N<	_	38	case	_	_
+38	Assuntos	Assuntos	PROPN	PROP|@P<	_	35	flat	_	_
+39	Culturais	Culturais	PROPN	PROP|@N<	_	35	flat	_	_
+40	Franceses	Franceses	PROPN	PROP|@N<	_	35	flat	_	SpaceAfter=No
+41	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 42-43	na	_	_	_	_	_	_	_	_
-42	em	em	ADP	prp|<sam->	AdpType=Prep	44	case	_	_
-43	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	44	det	_	_
-44	cidade	cidade	NOUN	n|F|S	Gender=Fem|Number=Sing	32	nmod	_	_
-45	de	de	ADP	prp	AdpType=Prep	46	case	_	_
-46	Metz	Metz	PROPN	prop|F|S	Gender=Fem|Number=Sing	44	nmod	_	_
-47	.	.	PUNCT	punc	_	32	punct	_	_
+42	em	em	ADP	<sam->|PRP|@<ADVL	_	44	case	_	_
+43	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	44	det	_	_
+44	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	32	obl	_	_
+45	de	de	ADP	PRP|@N<	_	46	case	_	_
+46	Metz	Metz	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	44	nmod	_	SpaceAfter=No
+47	.	.	PUNCT	PU|@PU	_	32	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP198-3
-# sent_id = pt-ud-train.conllu#s1062/pt
-# orig_file_sentence = 011#62
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	despojos	despojo	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nsubj	_	_
+# text = Os despojos do escritor francês era um dos 19 cadáveres descobertos em Novembro, na região de Verdun, local da batalha contra o exército alemão onde se sabia que Alain Fournier tinha sucumbido.
+# forest 1
+# source CETEMPúblico n=198 sec=clt sem=92a
+# sent_id = CP198-3
+# id 1063
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	despojos	despojo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	escritor	escritor	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	francês	francês	ADJ	adj|M|S	Gender=Masc|Number=Sing	5	amod	_	_
-7	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	cop	_	_
-8	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	0	root	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	escritor	escritor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	francês	francês	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	_
+7	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	cop	_	_
+8	um	um	NUM	<card>|NUM|M|S|@<SC	Gender=Masc|Number=Sing|NumType=Card	0	root	_	_
 9-10	dos	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-10	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-11	19	19	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-12	cadáveres	cadáver	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
-13	descobertos	descobrir	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
-14	em	em	ADP	prp	AdpType=Prep	15	case	_	_
-15	Novembro	novembro	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	13	nmod	_	_
-16	,	,	PUNCT	punc	_	13	punct	_	_
+9	de	de	ADP	<sam->|PRP|@A<	_	12	case	_	_
+10	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+11	19	19	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+12	cadáveres	cadáver	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	_
+13	descobertos	descobrir	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	12	acl	_	_
+14	em	em	ADP	PRP|@<ADVL	_	15	case	_	_
+15	Novembro	novembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 17-18	na	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	19	det	_	_
-19	região	região	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nmod	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-21	Verdun	Verdun	PROPN	prop|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-22	,	,	PUNCT	punc	_	21	punct	_	_
-23	local	local	NOUN	n|M|S	Gender=Masc|Number=Sing	21	nmod	_	_
+17	em	em	ADP	<sam->|PRP|@<ADVL	_	19	case	_	_
+18	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	19	det	_	_
+19	região	região	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	_
+20	de	de	ADP	PRP|@N<	_	21	case	_	_
+21	Verdun	Verdun	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+23	local	local	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	21	nmod	_	_
 24-25	da	_	_	_	_	_	_	_	_
-24	de	de	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	26	det	_	_
-26	batalha	batalha	NOUN	n|F|S	Gender=Fem|Number=Sing	23	nmod	_	_
-27	contra	contra	ADP	prp	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	exército	exército	NOUN	n|M|S	Gender=Masc|Number=Sing	26	nmod	_	_
-30	alemão	alemão	ADJ	adj|M|S	Gender=Masc|Number=Sing	29	amod	_	_
-31	onde	onde	ADV	adv|<rel>|<ks>	PronType=Rel	33	advmod	_	_
-32	se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	33	nsubj	_	_
-33	sabia	saber	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	21	acl	_	_
-34	que	que	SCONJ	conj-s	_	38	mark	_	_
-35	Alain	Alain	PROPN	prop|F|S	_	38	nsubj	_	MWE=Alain_Fournier|MWEPOS=PROPN
-36	Fournier	Fournier	PROPN	PROPN	_	35	name	_	_
-37	tinha	ter	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	38	aux	_	_
-38	sucumbido	sucumbir	VERB	v-pcp	VerbForm=Part	33	ccomp	_	_
-39	.	.	PUNCT	punc	_	8	punct	_	_
+24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
+25	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	26	det	_	_
+26	batalha	batalha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
+27	contra	contra	ADP	PRP|@N<	_	29	case	_	_
+28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	exército	exército	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
+30	alemão	alemão	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	29	amod	_	_
+31	onde	onde	ADV	<rel>|ADV|@ADVL>	PronType=Rel	33	advmod	_	_
+32	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs	33	nsubj	_	_
+33	sabia	saber	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	21	acl	_	_
+34	que	que	SCONJ	KS|@SUB	_	37	mark	_	_
+35	Alain	Alain	PROPN	_	_	37	nsubj	_	MWE=Alain_Fournier|MWEPOS=PROPN
+36	Fournier	Fournier	PROPN	_	_	35	flat	_	_
+37	tinha	ter	VERB	<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	33	ccomp	_	_
+38	sucumbido	sucumbir	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	37	ccomp	_	SpaceAfter=No
+39	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 1
-# new_sent_id = CP198-4
-# sent_id = pt-ud-train.conllu#s1063/pt
-# orig_file_sentence = 011#63
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	autor	autor	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-4	«	«	PUNCT	punc	_	5	punct	_	_
-5	O	O	DET	prop|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	MWE=O_Grande_Meaulnes|MWEPOS=PROPN
-6	Grande	Grande	ADJ	ADJ	Gender=Masc|Number=Sing	2	nmod	_	_
-7	Meaulnes	Meaulnes	PROPN	PROPN	_	6	name	_	_
-8	»	»	PUNCT	punc	_	5	punct	_	_
-9	(	(	PUNCT	punc	_	5	punct	_	_
-10	edição	edição	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-11	portuguesa	português	ADJ	adj|F|S	Gender=Fem|Number=Sing	10	amod	_	_
+# text = O autor de «O Grande Meaulnes» (edição portuguesa na Relógio d'Água) pertencia ao 288º Regimento de Infantaria que aí combateu.
+# forest 1
+# source CETEMPúblico n=198 sec=clt sem=92a
+# sent_id = CP198-4
+# id 1064
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	autor	autor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	6	case	_	_
+4	«	«	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+5	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	6	det	_	MWE=O_Grande_Meaulnes|MWEPOS=PROPN
+6	Grande	Grande	ADJ	_	Gender=Masc|Number=Sing	2	nmod	_	_
+7	Meaulnes	Meaulnes	PROPN	_	_	6	flat	_	SpaceAfter=No
+8	»	»	PUNCT	PU|@PU	_	5	punct	_	_
+9	(	(	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+10	edição	edição	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	5	nmod	_	_
+11	portuguesa	português	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
 12-13	na	_	_	_	_	_	_	_	_
-12	em	em	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
+12	em	em	ADP	prp|<sam->	_	14	case	_	_
 13	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	14	det	_	_
 14	Relógio	Relógio	PROPN	prop|F|S	_	10	nmod	_	MWE=Relógio_d'Água|MWEPOS=PROPN
-15	d'Água	d\'Água	PROPN	PROPN	_	14	name	_	_
+15	d'Água	d\'Água	PROPN	PROPN	_	14	flat	_	SpaceAfter=No
 16	)	)	PUNCT	punc	_	5	punct	_	_
 17	pertencia	pertencer	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 18-19	ao	_	_	_	_	_	_	_	_
-18	a	a	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
+18	a	a	ADP	prp|<sam->	_	21	case	_	_
 19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 20	288º	288º	ADJ	adj|M|S	Gender=Masc|Number=Sing	21	amod	_	_
-21	Regimento	Regimento	PROPN	prop|M|S	_	17	dobj	_	MWE=Regimento_de_Infantaria|MWEPOS=PROPN
-22	de	de	ADP	ADP	AdpType=Prep	23	case	_	_
-23	Infantaria	Infantaria	PROPN	PROPN	_	21	name	_	_
+21	Regimento	Regimento	PROPN	prop|M|S	_	17	obj	_	MWE=Regimento_de_Infantaria|MWEPOS=PROPN
+22	de	de	ADP	ADP	_	23	case	_	_
+23	Infantaria	Infantaria	PROPN	PROPN	_	21	flat	_	_
 24	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	26	nsubj	_	_
 25	aí	aí	ADV	adv|<kc>	_	26	advmod	_	_
-26	combateu	combater	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	acl	_	_
+26	combateu	combater	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	acl	_	SpaceAfter=No
 27	.	.	PUNCT	punc	_	17	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP198-5
-# sent_id = pt-ud-train.conllu#s1064/pt
-# orig_file_sentence = 011#64
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-2	seu	seu	DET	pron-det|<poss|3S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	_	_
-3	corpo	corpo	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubjpass	_	_
-4	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	auxpass	_	_
-5	identificado	identificar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-6	por	por	ADP	prp	AdpType=Prep	7	case	_	_
-7	antrometria	antrometria	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-8	,	,	PUNCT	punc	_	5	punct	_	_
-9	sem	sem	ADP	prp	AdpType=Prep	11	case	_	_
-10	qualquer	qualquer	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
-11	margem	margem	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-12	para	para	ADP	prp	AdpType=Prep	13	case	_	_
-13	dúvidas	dúvida	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nmod	_	_
-14	,	,	PUNCT	punc	_	5	punct	_	_
+# text = O seu corpo foi identificado por antrometria, sem qualquer margem para dúvidas, pela equipa chefiada pelo antropólogo Fredéric Adam, que comprovou a estatura do esqueleto, a sua idade à data da morte e a compleição física, por comparação com documentos da época.
+# forest 1
+# source CETEMPúblico n=198 sec=clt sem=92a
+# sent_id = CP198-5
+# id 1065
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	3	det	_	_
+3	corpo	corpo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+4	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	identificado	identificar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	4	ccomp	_	_
+6	por	por	ADP	PRP|@<ADVL	_	7	case	_	_
+7	antrometria	antrometria	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+9	sem	sem	ADP	PRP|@<ADVL	_	11	case	_	_
+10	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
+11	margem	margem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	_
+12	para	para	ADP	PRP|@N<	_	13	case	_	_
+13	dúvidas	dúvida	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 15-16	pela	_	_	_	_	_	_	_	_
-15	por	por	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	17	det	_	_
-17	equipa	equipa	NOUN	n|F|S	Gender=Fem|Number=Sing	5	dobj	_	_
-18	chefiada	chefiar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	17	acl	_	_
+15	por	por	ADP	<sam->|PRP|@PASS	_	17	case	_	_
+16	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	17	det	_	_
+17	equipa	equipa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obj	_	_
+18	chefiada	chefiar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	17	acl	_	_
 19-20	pelo	_	_	_	_	_	_	_	_
-19	por	por	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	antropólogo	antropólogo	NOUN	n|M|S	Gender=Masc|Number=Sing	18	dobj	_	_
-22	Fredéric	Fredéric	PROPN	prop|M|S	_	21	nmod	_	MWE=Fredéric_Adam|MWEPOS=PROPN
-23	Adam	Adam	PROPN	PROPN	_	22	name	_	_
-24	,	,	PUNCT	punc	_	22	punct	_	_
-25	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	26	nsubj	_	_
-26	comprovou	comprovar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl	_	_
-27	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-28	estatura	estatura	NOUN	n|F|S	Gender=Fem|Number=Sing	26	dobj	_	_
+19	por	por	ADP	PRP|@PASS	_	21	case	_	_
+20	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	antropólogo	antropólogo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obj	_	_
+22	Fredéric	Fredéric	PROPN	_	_	21	nmod	_	MWE=Fredéric_Adam|MWEPOS=PROPN
+23	Adam	Adam	PROPN	_	_	22	flat	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+25	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	26	nsubj	_	_
+26	comprovou	comprovar	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	acl	_	_
+27	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+28	estatura	estatura	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	26	obj	_	_
 29-30	do	_	_	_	_	_	_	_	_
-29	de	de	ADP	prp|<sam->	AdpType=Prep	31	case	_	_
-30	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
-31	esqueleto	esqueleto	NOUN	n|M|S	Gender=Masc|Number=Sing	28	nmod	_	_
-32	,	,	PUNCT	punc	_	28	punct	_	_
-33	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-34	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	35	det	_	_
-35	idade	idade	NOUN	n|F|S	Gender=Fem|Number=Sing	28	conj	_	_
+29	de	de	ADP	<sam->|PRP|@N<	_	31	case	_	_
+30	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	esqueleto	esqueleto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	28	nmod	_	SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
+34	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	35	det	_	_
+35	idade	idade	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	conj	_	_
 36-37	à	_	_	_	_	_	_	_	_
-36	a	a	ADP	prp|<sam->	AdpType=Prep	38	case	_	_
-37	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	38	det	_	_
-38	data	data	NOUN	n|F|S	Gender=Fem|Number=Sing	35	nmod	_	_
+36	a	a	ADP	<sam->|PRP|@N<	_	38	case	_	_
+37	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	38	det	_	_
+38	data	data	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	35	nmod	_	_
 39-40	da	_	_	_	_	_	_	_	_
-39	de	de	ADP	prp|<sam->	AdpType=Prep	41	case	_	_
-40	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	41	det	_	_
-41	morte	morte	NOUN	n|F|S	Gender=Fem|Number=Sing	38	nmod	_	_
-42	e	e	CONJ	conj-c|<co-acc>	_	28	cc	_	_
-43	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
-44	compleição	compleição	NOUN	n|F|S	Gender=Fem|Number=Sing	28	conj	_	_
-45	física	físico	ADJ	adj|F|S	Gender=Fem|Number=Sing	44	amod	_	_
-46	,	,	PUNCT	punc	_	26	punct	_	_
-47	por	por	ADP	prp	AdpType=Prep	48	case	_	_
-48	comparação	comparação	NOUN	n|F|S	Gender=Fem|Number=Sing	26	nmod	_	_
-49	com	com	ADP	prp	AdpType=Prep	50	case	_	_
-50	documentos	documento	NOUN	n|M|P	Gender=Masc|Number=Plur	48	nmod	_	_
+39	de	de	ADP	PRP|@N<	_	41	case	_	_
+40	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	41	det	_	_
+41	morte	morte	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	38	nmod	_	_
+42	e	e	CCONJ	<co-acc>|KC|@CO	_	44	cc	_	_
+43	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
+44	compleição	compleição	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	conj	_	_
+45	física	físico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	44	amod	_	SpaceAfter=No
+46	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+47	por	por	ADP	PRP|@<ADVL	_	48	case	_	_
+48	comparação	comparação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	obl	_	_
+49	com	com	ADP	PRP|@N<	_	50	case	_	_
+50	documentos	documento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	48	nmod	_	_
 51-52	da	_	_	_	_	_	_	_	_
-51	de	de	ADP	prp|<sam->	AdpType=Prep	53	case	_	_
-52	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	53	det	_	_
-53	época	época	NOUN	n|F|S	Gender=Fem|Number=Sing	50	nmod	_	_
-54	.	.	PUNCT	punc	_	5	punct	_	_
+51	de	de	ADP	<sam->|PRP|@N<	_	53	case	_	_
+52	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	53	det	_	_
+53	época	época	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	50	nmod	_	SpaceAfter=No
+54	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP198-6
-# sent_id = pt-ud-train.conllu#s1065/pt
-# orig_file_sentence = 011#65
-1	Contra	contra	ADP	prp	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	lenda	lenda	NOUN	n|F|S	Gender=Fem|Number=Sing	27	nmod	_	_
-4	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	5	nsubj	_	_
-5	falava	falar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	acl	_	_
+# text = Contra a lenda que falava da morte por tortura do escritor, às mãos de soldados alemães, os exames efectuados por Adam demonstram que «a morte de Henri Alban Fournier, dito Alain Fournier, se deveu a impactos de balas».
+# forest 1
+# source CETEMPúblico n=198 sec=clt sem=92a
+# sent_id = CP198-6
+# id 1066
+1	Contra	contra	ADP	PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	lenda	lenda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	27	obl	_	_
+4	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	5	nsubj	_	_
+5	falava	falar	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	acl	_	_
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	8	det	_	_
-8	morte	morte	NOUN	n|F|S	Gender=Fem|Number=Sing	5	dobj	_	_
-9	por	por	ADP	prp	AdpType=Prep	10	case	_	_
-10	tortura	tortura	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
+6	de	de	ADP	<sam->|PRP|@<PIV	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	8	det	_	_
+8	morte	morte	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obj	_	_
+9	por	por	ADP	PRP|@N<	_	10	case	_	_
+10	tortura	tortura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 11-12	do	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	escritor	escritor	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-14	,	,	PUNCT	punc	_	8	punct	_	_
+11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	escritor	escritor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 15-16	às	_	_	_	_	_	_	_	_
-15	a	a	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	17	det	_	_
-17	mãos	mão	NOUN	n|F|P	Gender=Fem|Number=Plur	8	nmod	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	soldados	soldado	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-20	alemães	alemão	ADJ	adj|M|P	Gender=Masc|Number=Plur	19	amod	_	_
-21	,	,	PUNCT	punc	_	27	punct	_	_
-22	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
-23	exames	exame	NOUN	n|M|P	Gender=Masc|Number=Plur	27	nsubj	_	_
-24	efectuados	efectuar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	23	acl	_	_
-25	por	por	ADP	prp	AdpType=Prep	26	case	_	_
-26	Adam	Adam	PROPN	prop|M|S	Gender=Masc|Number=Sing	24	dobj	_	_
-27	demonstram	demonstrar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-28	que	que	SCONJ	conj-s	_	42	mark	_	_
-29	«	«	PUNCT	punc	_	42	punct	_	_
-30	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
-31	morte	morte	NOUN	n|F|S	Gender=Fem|Number=Sing	42	nsubj	_	_
-32	de	de	ADP	prp	AdpType=Prep	33	case	_	_
-33	Henri	Henri	PROPN	prop|M|S	_	31	nmod	_	MWE=Henri_Alban_Fournier|MWEPOS=PROPN
-34	Alban	Alban	PROPN	PROPN	_	33	name	_	_
-35	Fournier	Fournier	PROPN	PROPN	_	33	name	_	_
-36	,	,	PUNCT	punc	_	33	punct	_	_
-37	dito	dizer	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	33	appos	_	_
-38	Alain	Alain	PROPN	prop|M|S	_	37	dobj	_	MWE=Alain_Fournier|MWEPOS=PROPN
-39	Fournier	Fournier	PROPN	PROPN	_	38	name	_	_
-40	,	,	PUNCT	punc	_	33	punct	_	_
-41	se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	42	dobj	_	_
-42	deveu	dever	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	ccomp	_	_
-43	a	a	ADP	prp	AdpType=Prep	44	case	_	_
-44	impactos	impacto	NOUN	n|M|P	Gender=Masc|Number=Plur	42	iobj	_	_
-45	de	de	ADP	prp	AdpType=Prep	46	case	_	_
-46	balas	bala	NOUN	n|F|P	Gender=Fem|Number=Plur	44	nmod	_	_
-47	»	»	PUNCT	punc	_	42	punct	_	_
-48	.	.	PUNCT	punc	_	27	punct	_	_
+15	a	a	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	17	det	_	_
+17	mãos	mão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	_
+18	de	de	ADP	PRP|@N<	_	19	case	_	_
+19	soldados	soldado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
+20	alemães	alemão	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	19	amod	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	27	punct	_	_
+22	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
+23	exames	exame	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	27	nsubj	_	_
+24	efectuados	efectuar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	23	acl	_	_
+25	por	por	ADP	PRP|@PASS	_	26	case	_	_
+26	Adam	Adam	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	24	obj	_	_
+27	demonstram	demonstrar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+28	que	que	SCONJ	KS|@SUB	_	42	mark	_	_
+29	«	«	PUNCT	PU|@PU	_	42	punct	_	SpaceAfter=No
+30	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+31	morte	morte	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	42	nsubj	_	_
+32	de	de	ADP	PRP|@N<	_	33	case	_	_
+33	Henri	Henri	PROPN	_	_	31	nmod	_	MWE=Henri_Alban_Fournier|MWEPOS=PROPN
+34	Alban	Alban	PROPN	_	_	33	flat	_	_
+35	Fournier	Fournier	PROPN	_	_	33	flat	_	SpaceAfter=No
+36	,	,	PUNCT	PU|@PU	_	33	punct	_	_
+37	dito	dizer	VERB	<mv>|V|PCP|M|S|@ICL-APP	Gender=Masc|Number=Sing|VerbForm=Part	33	appos	_	_
+38	Alain	Alain	PROPN	_	_	37	obj	_	MWE=Alain_Fournier|MWEPOS=PROPN
+39	Fournier	Fournier	PROPN	_	_	38	flat	_	SpaceAfter=No
+40	,	,	PUNCT	PU|@PU	_	33	punct	_	_
+41	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	42	obj	_	_
+42	deveu	dever	VERB	<mv>|<se-passive>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	ccomp	_	_
+43	a	a	ADP	PRP|@<PIV	_	44	case	_	_
+44	impactos	impacto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	42	iobj	_	_
+45	de	de	ADP	PRP|@N<	_	46	case	_	_
+46	balas	bala	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	44	nmod	_	SpaceAfter=No
+47	»	»	PUNCT	PU|@PU	_	42	punct	_	SpaceAfter=No
+48	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP198-7
-# sent_id = pt-ud-train.conllu#s1066/pt
-# orig_file_sentence = 011#66
-1	Foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-2	em	em	ADP	prp	AdpType=Prep	3	case	_	_
-3	22	22	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	1	advmod	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	Setembro	setembro	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	1914	1914	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	5	nummod	_	_
-8	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Foi em 22 de Setembro de 1914.
+# forest 1
+# source CETEMPúblico n=198 sec=clt sem=92a
+# sent_id = CP198-7
+# id 1067
+1	Foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	em	em	ADP	PRP|@<SA	_	3	case	_	_
+3	22	22	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	1	advmod	_	_
+4	de	de	ADP	PRP|@A<	_	5	case	_	_
+5	Setembro	setembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	1914	1914	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	5	nummod	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

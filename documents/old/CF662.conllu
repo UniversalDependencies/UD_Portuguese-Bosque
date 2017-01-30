@@ -1,35 +1,36 @@
-# distance_from_new = 0
-# new_sent_id = CF662-1
-# sent_id = pt-ud-train.conllu#s7807/pt
-# orig_file_sentence = 079#7
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	substitutivo	substitutivo	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	dá	dar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = O substitutivo dá aos ministérios da Fazenda e Justiça poder de pedir intervenção judicial nas empresas acusadas de praticar aumento injustificado de preços.
+# forest 1
+# source CETENFolha n=662 cad=Brasil sec=pol sem=94b
+# sent_id = CF662-1
+# id 2765
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	substitutivo	substitutivo	ADJ	<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	dá	dar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4-5	aos	_	_	_	_	_	_	_	_
-4	a	a	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-6	ministérios	ministério	NOUN	n|M|P	Gender=Masc|Number=Plur	3	dobj	_	_
+4	a	a	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
+5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	ministérios	ministério	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obj	_	_
 7-8	da	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Fazenda	fazenda	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-10	e	e	CONJ	conj-c	_	9	cc	_	_
-11	Justiça	justiça	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	9	conj	_	_
-12	poder	poder	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	mark	_	_
-14	pedir	pedir	VERB	v-inf	VerbForm=Inf	12	acl	_	_
-15	intervenção	intervenção	NOUN	n|F|S	Gender=Fem|Number=Sing	14	dobj	_	_
-16	judicial	judicial	ADJ	adj|F|S	Gender=Fem|Number=Sing	15	amod	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Fazenda	fazenda	NOUN	<first-cjt>|<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+10	e	e	CCONJ	KC|@CO	_	11	cc	_	_
+11	Justiça	justiça	NOUN	<cjt>|<prop>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
+12	poder	poder	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
+13	de	de	ADP	PRP|@N<	_	14	mark	_	_
+14	pedir	pedir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	acl	_	_
+15	intervenção	intervenção	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
+16	judicial	judicial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	_
 17-18	nas	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
-19	empresas	empresa	NOUN	n|F|P	Gender=Fem|Number=Plur	14	nmod	_	_
-20	acusadas	acusar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	19	acl	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	mark	_	_
-22	praticar	praticar	VERB	v-inf	VerbForm=Inf	20	xcomp	_	_
-23	aumento	aumento	NOUN	n|M|S	Gender=Masc|Number=Sing	22	dobj	_	_
-24	injustificado	injustificado	ADJ	adj|M|S	Gender=Masc|Number=Sing	23	amod	_	_
-25	de	de	ADP	prp	AdpType=Prep	26	case	_	_
-26	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	23	nmod	_	_
-27	.	.	PUNCT	punc	_	3	punct	_	_
+17	em	em	ADP	<sam->|PRP|@<ACC	_	19	case	_	_
+18	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
+19	empresas	empresa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	14	obl	_	_
+20	acusadas	acusar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	19	acl	_	_
+21	de	de	ADP	PRP|@<PIV	_	22	mark	_	_
+22	praticar	praticar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	xcomp	_	_
+23	aumento	aumento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	obj	_	_
+24	injustificado	injustificado	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	23	amod	_	_
+25	de	de	ADP	PRP|@N<ARG	_	26	case	_	_
+26	preços	preço	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	nmod	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

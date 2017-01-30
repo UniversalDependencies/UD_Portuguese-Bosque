@@ -1,58 +1,60 @@
-# distance_from_new = 0
-# new_sent_id = CP913-1
-# sent_id = pt-ud-train.conllu#s4704/pt
-# orig_file_sentence = 048#4
-1	Teatro	teatro	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	e	e	CONJ	conj-c	_	1	cc	_	_
-3	música	música	NOUN	n|F|S	Gender=Fem|Number=Sing	1	conj	_	_
-4	,	,	PUNCT	punc	_	1	punct	_	_
+# text = Teatro e música, pelo grupo «Meia Preta», pelas 22h00, na Fortaleza, em Armação de Pêra.
+# forest 1
+# source CETEMPúblico n=913 sec=soc sem=92b
+# sent_id = CP913-1
+# id 4706
+1	Teatro	teatro	NOUN	<first-cjt>|<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	e	e	CCONJ	KC|@CO	_	3	cc	_	_
+3	música	música	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5-6	pelo	_	_	_	_	_	_	_	_
-5	por	por	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	grupo	grupo	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-8	«	«	PUNCT	punc	_	7	punct	_	_
-9	Meia	Meia	PROPN	prop|M|S	_	7	nmod	_	MWE=Meia_Preta|MWEPOS=PROPN
-10	Preta	Preta	PROPN	PROPN	_	9	name	_	_
-11	»	»	PUNCT	punc	_	7	punct	_	_
-12	,	,	PUNCT	punc	_	1	punct	_	_
+5	por	por	ADP	<sam->|PRP|@N<PRED	_	7	case	_	_
+6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	grupo	grupo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
+8	«	«	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+9	Meia	Meia	PROPN	_	_	7	nmod	_	MWE=Meia_Preta|MWEPOS=PROPN
+10	Preta	Preta	PROPN	_	_	9	flat	_	SpaceAfter=No
+11	»	»	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 13-14	pelas	_	_	_	_	_	_	_	_
-13	por	por	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
-15	22h00	22h00	NOUN	n|F|P	Gender=Fem|Number=Plur	1	nmod	_	_
-16	,	,	PUNCT	punc	_	1	punct	_	_
+13	por	por	ADP	<sam->|PRP|@N<PRED	_	15	case	_	_
+14	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
+15	22h00	22h00	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	1	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 17-18	na	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	Fortaleza	Fortaleza	PROPN	prop|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-20	,	,	PUNCT	punc	_	19	punct	_	_
-21	em	em	ADP	prp	AdpType=Prep	22	case	_	_
-22	Armação	Armação	PROPN	prop|F|S	_	19	nmod	_	MWE=Armação_de_Pêra|MWEPOS=PROPN
-23	de	de	ADP	ADP	AdpType=Prep	24	case	_	_
-24	Pêra	Pêra	PROPN	PROPN	_	22	name	_	_
-25	.	.	PUNCT	punc	_	1	punct	_	_
+17	em	em	ADP	<sam->|PRP|@N<PRED	_	19	case	_	_
+18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	Fortaleza	Fortaleza	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+21	em	em	ADP	PRP|@N<PRED	_	22	case	_	_
+22	Armação	Armação	PROPN	PROP|F|S|@P<	_	19	nmod	_	MWE=Armação_de_Pêra|MWEPOS=PROPN
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	Pêra	Pêra	PROPN	PROP|@P<	_	22	flat	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP913-2
-# sent_id = pt-ud-train.conllu#s4705/pt
-# orig_file_sentence = 048#5
-1	Em	em	ADP	prp	AdpType=Prep	2	case	_	_
-2	Lagoa	Lagoa	PROPN	prop|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-3	,	,	PUNCT	punc	_	5	punct	_	_
-4	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	auxpass	_	_
-5	inaugurada	inaugurar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Fatacil	Fatacil	PROPN	prop|F|S	Gender=Fem|Number=Sing	5	nsubjpass	_	_
-8	--	--	PUNCT	punc	_	7	punct	_	_
-9	Feira	Feira	PROPN	prop|F|S	_	7	name	_	MWE=Feira_de_Artesanato_,_Turismo_,_Agricultura_,_Comércio_e_Indústria|MWEPOS=PROPN
-10	de	de	ADP	ADP	AdpType=Prep	11	case	_	_
-11	Artesanato	Artesanato	PROPN	PROPN	_	9	name	_	_
-12	,	,	PUNCT	PUNCT	_	11	punct	_	_
-13	Turismo	Turismo	PROPN	PROPN	_	11	conj	_	_
-14	,	,	PUNCT	PUNCT	_	11	punct	_	_
-15	Agricultura	Agricultura	PROPN	PROPN	_	11	conj	_	_
-16	,	,	PUNCT	PUNCT	_	11	punct	_	_
-17	Comércio	Comércio	PROPN	PROPN	_	11	conj	_	_
-18	e	e	CONJ	CONJ	_	11	cc	_	_
-19	Indústria	Indústria	PROPN	PROPN	_	11	conj	_	_
-20	.	.	PUNCT	punc	_	5	punct	_	_
+# text = Em Lagoa, é inaugurada a Fatacil -- Feira de Artesanato , Turismo , Agricultura , Comércio e Indústria.
+# forest 1
+# source CETEMPúblico n=913 sec=soc sem=92b
+# sent_id = CP913-2
+# id 4707
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
+2	Lagoa	Lagoa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+4	é	ser	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	inaugurada	inaugurar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	4	ccomp	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Fatacil	Fatacil	PROPN	PROP|F|S|@<SUBJ	Gender=Fem|Number=Sing	4	nsubj	_	_
+8	--	--	PUNCT	PU|@PU	_	7	punct	_	_
+9	Feira	Feira	PROPN	PROP|F|S|@APP	_	7	flat	_	MWE=Feira_de_Artesanato_,_Turismo_,_Agricultura_,_Comércio_e_Indústria|MWEPOS=PROPN
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	Artesanato	Artesanato	PROPN	PROP|@P<	_	9	flat	_	_
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+13	Turismo	Turismo	PROPN	PROP|@N<	_	11	conj	_	_
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+15	Agricultura	Agricultura	PROPN	PROP|@N<	_	11	conj	_	_
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+17	Comércio	Comércio	PROPN	PROP|@N<	_	11	conj	_	_
+18	e	e	CCONJ	PROP|@N<	_	19	cc	_	_
+19	Indústria	Indústria	PROPN	PROP|@N<	_	11	conj	_	SpaceAfter=No
+20	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

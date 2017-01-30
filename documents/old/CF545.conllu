@@ -1,93 +1,98 @@
-# distance_from_new = 0
-# new_sent_id = CF545-1
-# sent_id = pt-ud-train.conllu#s7327/pt
-# orig_file_sentence = 074#27
-1	Romário	Romário	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	aux	_	_
-2	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-3	o	o	PRON	pron-det|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing	0	root	_	_
-4	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
-5	votado	votar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
-6	por	por	ADP	prp	AdpType=Prep	7	case	_	_
-7	leitores	leitor	NOUN	n|M|P	Gender=Masc|Number=Plur	3	dobj	_	_
+# text = Romário é o mais votado por leitores
+# forest 1
+# source CETENFolha n=545 cad=Esporte sec=des sem=94a
+# sent_id = CF545-1
+# id 2285
+1	Romário	Romário	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	aux	_	_
+2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	o	o	PRON	DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing	0	root	_	_
+4	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
+5	votado	votar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
+6	por	por	ADP	PRP|@PASS	_	7	case	_	_
+7	leitores	leitor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obj	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF545-2
-# sent_id = pt-ud-train.conllu#s7328/pt
-# orig_file_sentence = 074#28
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	atacante	atacante	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
+# text = O atacante do Barcelona obteve o «Onze de Ouro», distinção outorgada por leitores da revista francesa «Onze Mundial».
+# forest 1
+# source CETENFolha n=545 cad=Esporte sec=des sem=94a
+# sent_id = CF545-2
+# id 2286
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	atacante	atacante	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Barcelona	Barcelona	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	obteve	obter	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-8	«	«	PUNCT	punc	_	9	punct	_	_
-9	Onze	Onze	NUM	prop|M|S	NumType=Card	6	dobj	_	MWE=Onze_de_Ouro|MWEPOS=PROPN
-10	de	de	ADP	ADP	AdpType=Prep	11	case	_	_
-11	Ouro	Ouro	PROPN	PROPN	_	9	name	_	_
-12	»	»	PUNCT	punc	_	9	punct	_	_
-13	,	,	PUNCT	punc	_	9	punct	_	_
-14	distinção	distinção	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
-15	outorgada	outorgar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	_	_
-16	por	por	ADP	prp	AdpType=Prep	17	case	_	_
-17	leitores	leitor	NOUN	n|M|P	Gender=Masc|Number=Plur	15	dobj	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Barcelona	Barcelona	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	obteve	obter	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	«	«	PUNCT	PU|@PU	_	9	punct	_	SpaceAfter=No
+9	Onze	Onze	NUM	PROP|M|S|@<ACC	NumType=Card	6	obj	_	MWE=Onze_de_Ouro|MWEPOS=PROPN
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	Ouro	Ouro	PROPN	PROP|@P<	_	9	flat	_	SpaceAfter=No
+12	»	»	PUNCT	PU|@PU	_	9	punct	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+14	distinção	distinção	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	9	nmod	_	_
+15	outorgada	outorgar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	_	_
+16	por	por	ADP	PRP|@PASS	_	17	case	_	_
+17	leitores	leitor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	obj	_	_
 18-19	da	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	revista	revista	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-21	francesa	francês	ADJ	adj|F|S	Gender=Fem|Number=Sing	20	amod	_	_
-22	«	«	PUNCT	punc	_	20	punct	_	_
-23	Onze	Onze	NUM	prop|F|S	NumType=Card	20	nmod	_	MWE=Onze_Mundial|MWEPOS=PROPN
-24	Mundial	Mundial	PROPN	PROPN	_	23	name	_	_
-25	»	»	PUNCT	punc	_	20	punct	_	_
-26	.	.	PUNCT	punc	_	6	punct	_	_
+18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	revista	revista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
+21	francesa	francês	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	20	amod	_	_
+22	«	«	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+23	Onze	Onze	NUM	_	NumType=Card	20	nmod	_	MWE=Onze_Mundial|MWEPOS=PROPN
+24	Mundial	Mundial	PROPN	_	_	23	flat	_	SpaceAfter=No
+25	»	»	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF545-3
-# sent_id = pt-ud-train.conllu#s7329/pt
-# orig_file_sentence = 074#29
-1	Recebeu	receber	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-2	13.576	13.576	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
-3	votos	voto	NOUN	n|M|P	Gender=Masc|Number=Plur	1	dobj	_	_
-4	(	(	PUNCT	punc	_	3	punct	_	_
-5	33,94	33,94	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
-6	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-7	)	)	PUNCT	punc	_	3	punct	_	_
-8	em	em	ADP	prp	AdpType=Prep	11	case	_	_
-9	40	40	NUM	num|<card>|F|S	Gender=Fem|Number=Sing|NumType=Card	10	compound	_	_
-10	mil	mil	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	11	nummod	_	_
-11	respostas	resposta	NOUN	n|F|P	Gender=Fem|Number=Plur	1	nmod	_	_
-12	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Recebeu 13.576 votos (33,94 %) em 40 mil respostas.
+# forest 1
+# source CETENFolha n=545 cad=Esporte sec=des sem=94a
+# sent_id = CF545-3
+# id 2287
+1	Recebeu	receber	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	13.576	13.576	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
+3	votos	voto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	1	obj	_	_
+4	(	(	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+5	33,94	33,94	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
+6	%	%	SYM	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No
+7	)	)	PUNCT	PU|@PU	_	3	punct	_	_
+8	em	em	ADP	PRP|@<ADVL	_	11	case	_	_
+9	40	40	NUM	<card>|NUM|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card	10	compound	_	_
+10	mil	mil	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	11	nummod	_	_
+11	respostas	resposta	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	1	obl	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF545-4
-# sent_id = pt-ud-train.conllu#s7330/pt
-# orig_file_sentence = 074#30
-1	Maradona	Maradona	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-2	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
-3	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-4	novo	novo	ADJ	adj|M|S	Gender=Masc|Number=Sing	5	amod	_	_
-5	técnico	técnico	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Maradona é o novo técnico do Racing
+# forest 1
+# source CETENFolha n=545 cad=Esporte sec=des sem=94a
+# sent_id = CF545-4
+# id 2288
+1	Maradona	Maradona	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+4	novo	novo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	5	amod	_	_
+5	técnico	técnico	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 6-7	do	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Racing	Racing	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Racing	Racing	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF545-5
-# sent_id = pt-ud-train.conllu#s7331/pt
-# orig_file_sentence = 074#31
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	time	time	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	anunciou	anunciar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	ontem	ontem	ADV	adv	_	3	advmod	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	contratação	contratação	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
+# text = O time anunciou ontem a contratação do craque argentino.
+# forest 1
+# source CETENFolha n=545 cad=Esporte sec=des sem=94a
+# sent_id = CF545-5
+# id 2289
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	time	time	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	anunciou	anunciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	ontem	ontem	ADV	ADV|@<ADVL	_	3	advmod	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	contratação	contratação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 7-8	do	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	craque	craque	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-10	argentino	argentino	ADJ	adj|M|S	Gender=Masc|Number=Sing	9	amod	_	_
-11	.	.	PUNCT	punc	_	3	punct	_	_
+7	de	de	ADP	<sam->|PRP|@N<ARG	_	9	case	_	_
+8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	craque	craque	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
+10	argentino	argentino	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

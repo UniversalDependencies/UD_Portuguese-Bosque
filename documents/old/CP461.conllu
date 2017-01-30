@@ -1,116 +1,119 @@
-# distance_from_new = 0
-# new_sent_id = CP461-1
-# sent_id = pt-ud-train.conllu#s2441/pt
-# orig_file_sentence = 025#41
-1	Cerca	cerca	ADV	prp	AdpType=Prep	3	case	_	MWE=Cerca_de|MWEPOS=ADP
-2	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-3	metade	metade	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nsubjpass	_	_
+# text = Cerca de metade dos resultados apurados, concretamente sete milhões de contos, vai ser distribuída ao accionista (Estado).
+# forest 1
+# source CETEMPúblico n=461 sec=eco sem=92a
+# sent_id = CP461-1
+# id 2442
+1	Cerca	cerca	ADV	ADV|@>N	_	3	case	_	MWE=Cerca_de|MWEPOS=ADP
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	metade	metade	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
 4-5	dos	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-6	resultados	resultado	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-7	apurados	apurar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	6	acl	_	_
-8	,	,	PUNCT	punc	_	3	punct	_	_
-9	concretamente	concretamente	ADV	adv	_	11	advmod	_	_
-10	sete	sete	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
-11	milhões	milhão	NOUN	n|M|P	Gender=Masc|Number=Plur	3	appos	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	contos	conto	NOUN	n|M|P	Gender=Masc|Number=Plur	11	nmod	_	_
-14	,	,	PUNCT	punc	_	3	punct	_	_
-15	vai	ir	AUX	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-16	ser	ser	VERB	v-inf	VerbForm=Inf	17	auxpass	_	_
-17	distribuída	distribuir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+4	de	de	ADP	PRP|@N<ARG	_	6	case	_	_
+5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	resultados	resultado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+7	apurados	apurar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	6	acl	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+9	concretamente	concretamente	ADV	ADV|@>N	_	11	advmod	_	_
+10	sete	sete	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
+11	milhões	milhão	NOUN	<np-def>|N|M|P|@APP	Gender=Masc|Number=Plur	3	appos	_	_
+12	de	de	ADP	PRP|@N<ARG	_	13	case	_	_
+13	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+15	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
+16	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+17	distribuída	distribuir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	16	ccomp	_	_
 18-19	ao	_	_	_	_	_	_	_	_
-18	a	a	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	accionista	accionista	NOUN	n|M|S	Gender=Masc|Number=Sing	17	dobj	_	_
-21	(	(	PUNCT	punc	_	20	punct	_	_
-22	Estado	estado	NOUN	n|M|S	Gender=Masc|Number=Sing	20	appos	_	_
-23	)	)	PUNCT	punc	_	20	punct	_	_
-24	.	.	PUNCT	punc	_	17	punct	_	_
+18	a	a	ADP	<sam->|PRP|@<PIV	_	20	case	_	_
+19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	accionista	accionista	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obj	_	_
+21	(	(	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+22	Estado	estado	NOUN	<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	20	appos	_	SpaceAfter=No
+23	)	)	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP461-2
-# sent_id = pt-ud-train.conllu#s2442/pt
-# orig_file_sentence = 025#42
-1	Quanto	quanto	ADV	prp|<sam->	AdpType=Prep	5	case	_	MWE=Quanto_a|MWEPOS=ADP
+# text = Quanto ao «cash flow» da EDP, atingiu os 128,3 milhões de contos em 1991.
+# forest 1
+# source CETEMPúblico n=461 sec=eco sem=92a
+# sent_id = CP461-2
+# id 2443
+1	Quanto	quanto	ADV	ADV|@ADVL>	_	5	case	_	MWE=Quanto_a|MWEPOS=ADP
 2-3	ao	_	_	_	_	_	_	_	_
-2	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	1	mwe	_	_
-3	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-4	«	«	PUNCT	punc	_	5	punct	_	_
-5	cash	cash	NOUN	n|M|S	_	12	nmod	_	MWE=cash_flow|MWEPOS=NOUN
-6	flow	flow	NOUN	NOUN	_	5	compound	_	_
-7	»	»	PUNCT	punc	_	5	punct	_	_
+2	a	a	DET	PRP|@A<	Gender=Fem|Number=Sing|PronType=Art	1	fixed	_	_
+3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+4	«	«	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+5	cash	cash	NOUN	_	_	12	obl	_	MWE=cash_flow|MWEPOS=NOUN
+6	flow	flow	NOUN	_	_	5	compound	_	SpaceAfter=No
+7	»	»	PUNCT	PU|@PU	_	5	punct	_	_
 8-9	da	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	EDP	EDP	PROPN	prop|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-11	,	,	PUNCT	punc	_	12	punct	_	_
-12	atingiu	atingir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-13	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
-14	128,3	128,3	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	15	nummod	_	_
-15	milhões	milhão	NOUN	n|M|P	Gender=Masc|Number=Plur	12	dobj	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-17	contos	conto	NOUN	n|M|P	Gender=Masc|Number=Plur	15	nmod	_	_
-18	em	em	ADP	prp	AdpType=Prep	19	case	_	_
-19	1991	1991	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	12	advmod	_	_
-20	.	.	PUNCT	punc	_	12	punct	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	EDP	EDP	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+12	atingiu	atingir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+13	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
+14	128,3	128,3	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	15	nummod	_	_
+15	milhões	milhão	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	obj	_	_
+16	de	de	ADP	PRP|@N<ARG	_	17	case	_	_
+17	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	nmod	_	_
+18	em	em	ADP	PRP|@<ADVL	_	19	case	_	_
+19	1991	1991	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	12	advmod	_	SpaceAfter=No
+20	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP461-3
-# sent_id = pt-ud-train.conllu#s2443/pt
-# orig_file_sentence = 025#43
-1	«	«	PUNCT	punc	_	42	punct	_	_
-2	Estes	este	DET	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	_
-3	resultados	resultado	NOUN	n|M|P	Gender=Masc|Number=Plur	6	nsubjpass	_	_
-4	foram	ser	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	auxpass	_	_
-5	positivamente	positivamente	ADV	adv	_	6	advmod	_	_
-6	influenciados	influenciar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	42	ccomp	_	_
+# text = «Estes resultados foram positivamente influenciados pelo acréscimo da procura de electricidade, pela estabilidade dos preços dos combustíveis importados para produção de electricidade e pela contenção dos restantes custos de exploração», refere a mesma nota.
+# forest 1
+# source CETEMPúblico n=461 sec=eco sem=92a
+# sent_id = CP461-3
+# id 2444
+1	«	«	PUNCT	PU|@PU	_	42	punct	_	SpaceAfter=No
+2	Estes	este	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	_
+3	resultados	resultado	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
+4	foram	ser	VERB	<aux>|V|PS|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	42	ccomp	_	_
+5	positivamente	positivamente	ADV	ADV|@ADVL>	_	6	advmod	_	_
+6	influenciados	influenciar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	4	ccomp	_	_
 7-8	pelo	_	_	_	_	_	_	_	_
-7	por	por	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	acréscimo	acréscimo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
+7	por	por	ADP	PRP|@PASS	_	9	case	_	_
+8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	acréscimo	acréscimo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obj	_	_
 10-11	da	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	procura	procura	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	electricidade	electricidade	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-15	,	,	PUNCT	punc	_	9	punct	_	_
+10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	procura	procura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+13	de	de	ADP	PRP|@N<ARG	_	14	case	_	_
+14	electricidade	electricidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 16-17	pela	_	_	_	_	_	_	_	_
-16	por	por	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	estabilidade	estabilidade	NOUN	n|F|S	Gender=Fem|Number=Sing	9	conj	_	_
+16	por	por	ADP	<sam->|<cjt>|PRP|@PASS	_	18	case	_	_
+17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	estabilidade	estabilidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
 19-20	dos	_	_	_	_	_	_	_	_
-19	de	de	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-21	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	18	nmod	_	_
+19	de	de	ADP	<sam->|PRP|@N<	_	21	case	_	_
+20	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
+21	preços	preço	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	_
 22-23	dos	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
-24	combustíveis	combustível	NOUN	n|M|P	Gender=Masc|Number=Plur	21	nmod	_	_
-25	importados	importar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	24	acl	_	_
-26	para	para	ADP	prp	AdpType=Prep	27	case	_	_
-27	produção	produção	NOUN	n|F|S	Gender=Fem|Number=Sing	25	nmod	_	_
-28	de	de	ADP	prp	AdpType=Prep	29	case	_	_
-29	electricidade	electricidade	NOUN	n|F|S	Gender=Fem|Number=Sing	27	nmod	_	_
-30	e	e	CONJ	conj-c|<co-pass>	_	9	cc	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
+24	combustíveis	combustível	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	21	nmod	_	_
+25	importados	importar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	24	acl	_	_
+26	para	para	ADP	PRP|@<ADVL	_	27	case	_	_
+27	produção	produção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	25	obl	_	_
+28	de	de	ADP	PRP|@N<ARG	_	29	case	_	_
+29	electricidade	electricidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
+30	e	e	CCONJ	<co-pass>|KC|@CO	_	33	cc	_	_
 31-32	pela	_	_	_	_	_	_	_	_
-31	por	por	ADP	prp|<sam->	AdpType=Prep	33	case	_	_
-32	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	contenção	contenção	NOUN	n|F|S	Gender=Fem|Number=Sing	9	conj	_	_
+31	por	por	ADP	<sam->|<cjt>|PRP|@PASS	_	33	case	_	_
+32	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+33	contenção	contenção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
 34-35	dos	_	_	_	_	_	_	_	_
-34	de	de	ADP	prp|<sam->	AdpType=Prep	37	case	_	_
-35	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_
-36	restantes	restante	ADJ	adj|M|P	Gender=Masc|Number=Plur	37	amod	_	_
-37	custos	custo	NOUN	n|M|P	Gender=Masc|Number=Plur	33	nmod	_	_
-38	de	de	ADP	prp	AdpType=Prep	39	case	_	_
-39	exploração	exploração	NOUN	n|F|S	Gender=Fem|Number=Sing	37	nmod	_	_
-40	»	»	PUNCT	punc	_	42	punct	_	_
-41	,	,	PUNCT	punc	_	42	punct	_	_
-42	refere	referir	VERB	v-fin|<DERP>|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-43	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
-44	mesma	mesmo	DET	pron-det|<diff>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	45	det	_	_
-45	nota	nota	NOUN	n|F|S	Gender=Fem|Number=Sing	42	nsubj	_	_
-46	.	.	PUNCT	punc	_	42	punct	_	_
+34	de	de	ADP	<sam->|PRP|@N<ARG	_	37	case	_	_
+35	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_
+36	restantes	restante	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	37	amod	_	_
+37	custos	custo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	33	nmod	_	_
+38	de	de	ADP	PRP|@N<	_	39	case	_	_
+39	exploração	exploração	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	37	nmod	_	SpaceAfter=No
+40	»	»	PUNCT	PU|@PU	_	42	punct	_	SpaceAfter=No
+41	,	,	PUNCT	PU|@PU	_	42	punct	_	_
+42	refere	referir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+43	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
+44	mesma	mesmo	DET	<diff>|<KOMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	45	det	_	_
+45	nota	nota	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	42	nsubj	_	SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	42	punct	_	_
 

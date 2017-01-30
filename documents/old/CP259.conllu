@@ -1,32 +1,33 @@
-# distance_from_new = 0
-# new_sent_id = CP259-1
-# sent_id = pt-ud-train.conllu#s1385/pt
-# orig_file_sentence = 014#85
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	economia	economia	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nsubj	_	_
-3	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
-4	muito	muito	PRON	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	0	root	_	_
-5	,	,	PUNCT	punc	_	4	punct	_	_
-6	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	4	cc	_	_
-7	não	não	ADV	adv	_	9	neg	_	_
-8	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
-9	tudo	tudo	PRON	pron-indp|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	4	conj	_	_
-10	para	para	ADP	prp	AdpType=Prep	11	mark	_	_
-11	aferir	aferir	VERB	v-inf	VerbForm=Inf	9	acl	_	_
+# text = A economia é muito, mas não é tudo para aferir da força vital que sai das entranhas dum povo.
+# forest 1
+# source CETEMPúblico n=259 sec=pol sem=92a
+# sent_id = CP259-1
+# id 1386
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	economia	economia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
+3	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	muito	muito	PRON	<quant>|DET|M|S|@<SC	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+6	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
+7	não	não	ADV	ADV|@ADVL>	Polarity=Neg	9	advmod	_	_
+8	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	tudo	tudo	PRON	<quant>|INDP|M|S|@<SC	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	4	conj	_	_
+10	para	para	ADP	PRP|@N<	_	11	mark	_	_
+11	aferir	aferir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	acl	_	_
 12-13	da	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	força	força	NOUN	n|F|S	Gender=Fem|Number=Sing	11	dobj	_	_
-15	vital	vital	ADJ	adj|F|S	Gender=Fem|Number=Sing	14	amod	_	_
-16	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	17	nsubj	_	_
-17	sai	sair	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
+12	de	de	ADP	<sam->|PRP|@<PIV	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	força	força	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obj	_	_
+15	vital	vital	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	amod	_	_
+16	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	17	nsubj	_	_
+17	sai	sair	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
 18-19	das	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
-20	entranhas	entranha	NOUN	n|F|P	Gender=Fem|Number=Plur	17	nmod	_	_
+18	de	de	ADP	<sam->|PRP|@<SA	_	20	case	_	_
+19	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
+20	entranhas	entranha	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	obl	_	_
 21-22	dum	_	_	_	_	_	_	_	_
-21	de	de	ADP	prp	AdpType=Prep	23	case	_	_
-22	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	povo	povo	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-24	.	.	PUNCT	punc	_	4	punct	_	_
+21	de	de	ADP	PRP|@N<	_	23	case	_	_
+22	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	povo	povo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

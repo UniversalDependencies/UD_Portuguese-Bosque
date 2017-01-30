@@ -1,74 +1,80 @@
-# distance_from_new = 0
-# new_sent_id = CF856-1
-# sent_id = pt-ud-train.conllu#s8652/pt
-# orig_file_sentence = 087#52
-1	FHC	FHC	PROPN	prop|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	--	--	PUNCT	punc	_	1	punct	_	_
-3	Esse	esse	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
-4	comitê	comitê	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-5	faz	fazer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
-6	tudo	tudo	PRON	pron-indp|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	iobj	_	_
-7	errado	errar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	5	xcomp	_	_
-8	.	.	PUNCT	punc	_	1	punct	_	_
+# text = FHC -- Esse comitê faz tudo errado.
+# forest 1
+# source CETENFolha n=856 cad=Mais! sec=nd sem=94a
+# sent_id = CF856-1
+# id 3610
+1	FHC	FHC	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	Esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
+4	comitê	comitê	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+5	faz	fazer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+6	tudo	tudo	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	iobj	_	_
+7	errado	errar	VERB	<mv>|V|PCP|M|S|@ICL-<OC	Gender=Masc|Number=Sing|VerbForm=Part	5	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF856-2
-# sent_id = pt-ud-train.conllu#s8653/pt
-# orig_file_sentence = 087#53
-1	Ruth	Ruth	PROPN	prop|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	--	--	PUNCT	punc	_	1	punct	_	_
-3	Por	por	ADP	prp	AdpType=Prep	4	case	_	_
-4	isso	isso	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	5	nmod	_	_
-5	perdemos	perder	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
-6	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	eleições	eleição	NOUN	n|F|P	Gender=Fem|Number=Plur	5	dobj	_	_
-8	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Ruth -- Por isso perdemos as eleições.
+# forest 1
+# source CETENFolha n=856 cad=Mais! sec=nd sem=94a
+# sent_id = CF856-2
+# id 3611
+1	Ruth	Ruth	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	Por	por	ADP	PRP|@ADVL>	_	4	case	_	_
+4	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	5	obl	_	_
+5	perdemos	perder	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+6	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+7	eleições	eleição	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF856-3
-# sent_id = pt-ud-train.conllu#s8654/pt
-# orig_file_sentence = 087#54
-1	(	(	PUNCT	punc	_	3	punct	_	_
-2	FHC	FHC	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	começa	começar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	a	a	ADP	prp	AdpType=Prep	5	mark	_	_
-5	rir	rir	VERB	v-inf	VerbForm=Inf	3	xcomp	_	_
-6	)	)	PUNCT	punc	_	3	punct	_	_
-7	.	.	PUNCT	punc	_	3	punct	_	_
+# text = (FHC começa a rir).
+# forest 1
+# source CETENFolha n=856 cad=Mais! sec=nd sem=94a
+# sent_id = CF856-3
+# id 3612
+1	(	(	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+2	FHC	FHC	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	começa	começar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	a	a	ADP	PRP|@PRT-AUX<	_	5	mark	_	_
+5	rir	rir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	SpaceAfter=No
+6	)	)	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF856-4
-# sent_id = pt-ud-train.conllu#s8655/pt
-# orig_file_sentence = 087#55
-1	Sabe	saber	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	por	por	ADP	adv|<interr>	AdpType=Prep	5	advmod	_	MWE=por_que|MWEPOS=ADV
-3	que	que	SCONJ	SCONJ	_	2	mwe	_	_
-4	eu	eu	PRON	pron-pers|F|1S|NOM	Case=Nom|Gender=Fem|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
-5	amo	amar	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
-6	tanto	tanto	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
-7	você	você	PRON	pron-pers|M|3S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	dobj	_	_
-8	,	,	PUNCT	punc	_	1	punct	_	_
-9	querido	querido	NOUN	n|M|S	Gender=Masc|Number=Sing	1	dep	_	_
-10	?	?	PUNCT	punc	_	1	punct	_	_
+# text = Sabe por que eu amo tanto você, querido?
+# forest 1
+# source CETENFolha n=856 cad=Mais! sec=nd sem=94a
+# sent_id = CF856-4
+# id 3613
+1	Sabe	saber	VERB	<mv>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	por	por	ADP	PRP|@ADVL>	_	5	advmod	_	MWE=por_que|MWEPOS=ADV
+3	que	que	SCONJ	INDP|M|S|@P<	_	2	fixed	_	_
+4	eu	eu	PRON	PERS|F|1S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	amo	amar	VERB	<mv>|V|PR|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
+6	tanto	tanto	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
+7	você	você	PRON	PERS|M|3S|NOM|@<ACC	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+9	querido	querido	NOUN	<np-idf>|N|M|S|@VOK	Gender=Masc|Number=Sing	1	dep	_	SpaceAfter=No
+10	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF856-5
-# sent_id = pt-ud-train.conllu#s8656/pt
-# orig_file_sentence = 087#56
-1	Porque	porque	SCONJ	conj-s	_	4	mark	_	_
-2	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
-3	sempre	sempre	ADV	adv	_	4	advmod	_	_
-4	rindo	rir	VERB	v-ger	VerbForm=Ger	0	root	_	_
-5	.	.	PUNCT	punc	_	4	punct	_	_
+# text = Porque está sempre rindo.
+# forest 1
+# source CETENFolha n=856 cad=Mais! sec=nd sem=94a
+# sent_id = CF856-5
+# id 3614
+1	Porque	porque	SCONJ	KS|@SUB	_	2	mark	_	_
+2	está	estar	VERB	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	sempre	sempre	ADV	ADV|@ADVL>	_	4	advmod	_	_
+4	rindo	rir	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	2	ccomp	_	SpaceAfter=No
+5	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF856-6
-# sent_id = pt-ud-train.conllu#s8657/pt
-# orig_file_sentence = 087#57
-1	(	(	PUNCT	punc	_	2	punct	_	_
-2	Começam	começar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	ambos	ambos	PRON	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	2	nsubj	_	_
-4	a	a	ADP	prp	AdpType=Prep	5	mark	_	_
-5	chorar	chorar	VERB	v-inf	VerbForm=Inf	2	advcl	_	_
-6	.	.	PUNCT	punc	_	2	punct	_	_
+# text = (Começam ambos a chorar.
+# forest 1
+# source CETENFolha n=856 cad=Mais! sec=nd sem=94a
+# sent_id = CF856-6
+# id 3615
+1	(	(	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+2	Começam	começar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	ambos	ambos	PRON	<quant>|DET|M|P|@<SUBJ	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	2	nsubj	_	_
+4	a	a	ADP	PRP|@<ADVL	_	5	mark	_	_
+5	chorar	chorar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	advcl	_	SpaceAfter=No
+6	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

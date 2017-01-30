@@ -1,185 +1,192 @@
-# distance_from_new = 0
-# new_sent_id = CP36-1
-# sent_id = pt-ud-train.conllu#s211/pt
-# orig_file_sentence = 003#11
-1	Quanto	quanto	ADV	prp|<sam->	AdpType=Prep	5	case	_	MWE=Quanto_a|MWEPOS=ADP
+# text = Quanto às anunciadas saídas dalguns jogadores, Donner afirmou que «essas notícias não foram feitas por jornalistas, mas por pataratas.
+# forest 1
+# source CETEMPúblico n=36 sec=des sem=98a &E
+# sent_id = CP36-1
+# id 211
+1	Quanto	quanto	ADV	ADV|@ADVL>	_	5	case	_	MWE=Quanto_a|MWEPOS=ADP
 2-3	às	_	_	_	_	_	_	_	_
-2	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	1	mwe	_	_
-3	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	5	det	_	_
-4	anunciadas	anunciar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	5	acl	_	_
-5	saídas	saída	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nmod	_	_
+2	a	a	DET	PRP|@A<	Gender=Fem|Number=Sing|PronType=Art	1	fixed	_	_
+3	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	5	det	_	_
+4	anunciadas	anunciar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	5	acl	_	_
+5	saídas	saída	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	_
 6-7	dalguns	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-7	alguns	algum	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	_
-8	jogadores	jogador	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-9	,	,	PUNCT	punc	_	11	punct	_	_
-10	Donner	Donner	PROPN	prop|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
-11	afirmou	afirmar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-12	que	que	SCONJ	conj-s	_	18	mark	_	_
-13	«	«	PUNCT	punc	_	18	punct	_	_
-14	essas	esse	DET	pron-det|<dem>|F|P	Gender=Fem|Number=Plur|PronType=Dem	15	det	_	_
-15	notícias	notícia	NOUN	n|F|P	Gender=Fem|Number=Plur	18	nsubjpass	_	_
-16	não	não	ADV	adv	_	18	neg	_	_
-17	foram	ser	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	auxpass	_	_
-18	feitas	fazer	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	11	ccomp	_	_
-19	por	por	ADP	prp	AdpType=Prep	20	case	_	_
-20	jornalistas	jornalista	NOUN	n|M/F|P	Number=Plur	18	dobj	_	_
-21	,	,	PUNCT	punc	_	20	punct	_	_
-22	mas	mas	CONJ	conj-c	_	20	cc	_	_
-23	por	por	ADP	prp|<Es>	AdpType=Prep	24	case	_	_
-24	pataratas	patarata	NOUN	n|M/F|P	Number=Plur	20	conj	_	_
-25	.	.	PUNCT	punc	_	11	punct	_	_
+6	de	de	ADP	PRP|@N<	_	8	case	_	_
+7	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	_
+8	jogadores	jogador	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+10	Donner	Donner	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
+11	afirmou	afirmar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+12	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
+13	«	«	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+14	essas	esse	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	15	det	_	_
+15	notícias	notícia	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	17	nsubj	_	_
+16	não	não	ADV	_	Polarity=Neg	18	advmod	_	_
+17	foram	ser	VERB	<aux>|V|PS|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	ccomp	_	_
+18	feitas	fazer	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	17	ccomp	_	_
+19	por	por	ADP	<first-cjt>|PRP|@PASS	_	20	case	_	_
+20	jornalistas	jornalista	NOUN	<np-idf>|N|M/F|P|@P<	Number=Plur	18	obj	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+22	mas	mas	CCONJ	<co-pass>|KC|@CO	_	24	cc	_	_
+23	por	por	ADP	<cjt>|<Es>|PRP|@PASS	_	24	case	_	_
+24	pataratas	patarata	NOUN	<np-idf>|N|M/F|P|@P<	Number=Plur	20	conj	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP36-2
-# sent_id = pt-ud-train.conllu#s212/pt
-# orig_file_sentence = 003#12
+# text = Dizia-se que o Carlos Resende e o Filipe Cruz podiam ir para a Alemanha e o Carlos Galambas e o Álvaro Martins para o Benfica, mas é mentira.
+# forest 1
+# source CETEMPúblico n=36 sec=des sem=98a
+# sent_id = CP36-2
+# id 212
 1-2	Dizia-se	_	_	_	_	_	_	_	_
 1	Dizia	dizer	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 2	-se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	1	nsubj	_	_
-3	que	que	SCONJ	conj-s	_	11	mark	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Carlos	Carlos	PROPN	prop|M|S	_	11	nsubj	_	MWE=Carlos_Resende|MWEPOS=PROPN
-6	Resende	Resende	PROPN	PROPN	_	5	name	_	_
-7	e	e	CONJ	conj-c|<co-subj>	_	5	cc	_	_
-8	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	Filipe	Filipe	PROPN	prop|M|S	_	5	conj	_	MWE=Filipe_Cruz|MWEPOS=PROPN
-10	Cruz	Cruz	PROPN	PROPN	_	9	name	_	_
-11	podiam	poder	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	ccomp	_	_
-12	ir	ir	VERB	v-inf	VerbForm=Inf	11	xcomp	_	_
-13	para	para	ADP	prp	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	Alemanha	Alemanha	PROPN	prop|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-16	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	11	cc	_	_
-17	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	Carlos	Carlos	PROPN	prop|M|S	_	11	conj	_	MWE=Carlos_Galambas|MWEPOS=PROPN
-19	Galambas	Galambas	PROPN	PROPN	_	18	name	_	_
-20	e	e	CONJ	conj-c|<co-subj>	_	18	cc	_	_
-21	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Álvaro	Álvaro	PROPN	prop|M|S	_	18	conj	_	MWE=Álvaro_Martins|MWEPOS=PROPN
-23	Martins	Martins	PROPN	PROPN	_	22	name	_	_
-24	para	para	ADP	prp	AdpType=Prep	26	case	_	_
-25	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	Benfica	Benfica	PROPN	prop|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
-27	,	,	PUNCT	punc	_	1	punct	_	_
-28	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	1	cc	_	_
-29	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	cop	_	_
-30	mentira	mentira	NOUN	n|F|S	Gender=Fem|Number=Sing	1	conj	_	_
-31	.	.	PUNCT	punc	_	1	punct	_	_
+3	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Carlos	Carlos	PROPN	_	_	11	nsubj	_	MWE=Carlos_Resende|MWEPOS=PROPN
+6	Resende	Resende	PROPN	_	_	5	flat	_	_
+7	e	e	CCONJ	<co-subj>|KC|@CO	_	9	cc	_	_
+8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	Filipe	Filipe	PROPN	_	_	5	conj	_	MWE=Filipe_Cruz|MWEPOS=PROPN
+10	Cruz	Cruz	PROPN	_	_	9	flat	_	_
+11	podiam	poder	VERB	<first-cjt>|<aux>|V|IMPF|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	ccomp	_	_
+12	ir	ir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
+13	para	para	ADP	PRP|@<SA	_	15	case	_	_
+14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	Alemanha	Alemanha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
+16	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	_
+17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	Carlos	Carlos	PROPN	_	_	11	conj	_	MWE=Carlos_Galambas|MWEPOS=PROPN
+19	Galambas	Galambas	PROPN	_	_	18	flat	_	_
+20	e	e	CCONJ	<co-cjt>|<co-subj>|KC|@CO	_	22	cc	_	_
+21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	Álvaro	Álvaro	PROPN	_	_	18	conj	_	MWE=Álvaro_Martins|MWEPOS=PROPN
+23	Martins	Martins	PROPN	_	_	22	flat	_	_
+24	para	para	ADP	<cjt>|PRP|@<SA	_	26	case	_	_
+25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	Benfica	Benfica	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	SpaceAfter=No
+27	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+28	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	30	cc	_	_
+29	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	cop	_	_
+30	mentira	mentira	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP36-3
-# sent_id = pt-ud-train.conllu#s213/pt
-# orig_file_sentence = 003#13
-1	Já	já	ADV	adv	_	3	advmod	_	_
-2	todos	todo	PRON	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	3	nsubj	_	_
-3	renovaram	renovar	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-5	seus	seu	DET	pron-det|<poss|3P>|<si>|M|P	Gender=Masc|Number=Plur|Number[psor]=Plur|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	6	det	_	_
-6	contratos	contrato	NOUN	n|M|P	Gender=Masc|Number=Plur	3	dobj	_	_
-7	»	»	PUNCT	punc	_	3	punct	_	_
-8	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Já todos renovaram os seus contratos».
+# forest 1
+# source CETEMPúblico n=36 sec=des sem=98a
+# sent_id = CP36-3
+# id 213
+1	Já	já	ADV	ADV|@ADVL>	_	3	advmod	_	_
+2	todos	todo	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	3	nsubj	_	_
+3	renovaram	renovar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+5	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|Number[psor]=Plur|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	6	det	_	_
+6	contratos	contrato	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	SpaceAfter=No
+7	»	»	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP36-4
-# sent_id = pt-ud-train.conllu#s214/pt
-# orig_file_sentence = 003#14
+# text = Do lado do FC Porto, o treinador José Magalhães não tem problemas com atletas lesionados e aponta o primeiro jogo como o mais importante:
+# forest 1
+# source CETEMPúblico n=36 sec=des sem=98a
+# sent_id = CP36-4
+# id 214
 1-2	Do	_	_	_	_	_	_	_	_
-1	De	de	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	lado	lado	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
+1	De	de	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	lado	lado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	_
 4-5	do	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	FC	FC	PROPN	prop|M|S	_	3	nmod	_	MWE=FC_Porto|MWEPOS=PROPN
-7	Porto	Porto	PROPN	PROPN	_	6	name	_	_
-8	,	,	PUNCT	punc	_	14	punct	_	_
-9	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	treinador	treinador	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nsubj	_	_
-11	José	José	PROPN	prop|M|S	_	10	nmod	_	MWE=José_Magalhães|MWEPOS=PROPN
-12	Magalhães	Magalhães	PROPN	PROPN	_	11	name	_	_
-13	não	não	ADV	adv	_	14	neg	_	_
-14	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-15	problemas	problema	NOUN	n|M|P	Gender=Masc|Number=Plur	14	dobj	_	_
-16	com	com	ADP	prp	AdpType=Prep	17	case	_	_
-17	atletas	atleta	NOUN	n|M|P	Gender=Masc|Number=Plur	15	nmod	_	_
-18	lesionados	lesionar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	_	_
-19	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	14	cc	_	_
-20	aponta	apontar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_
-21	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-22	primeiro	primeiro	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	23	amod	_	_
-23	jogo	jogo	NOUN	n|M|S	Gender=Masc|Number=Sing	20	iobj	_	_
-24	como	como	ADV	adv|<prp>	_	27	cop	_	_
-25	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-26	mais	mais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	27	advmod	_	_
-27	importante	importante	ADJ	adj|M|S	Gender=Masc|Number=Sing	20	xcomp	_	_
-28	:	:	PUNCT	punc	_	14	punct	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	FC	FC	PROPN	_	_	3	nmod	_	MWE=FC_Porto|MWEPOS=PROPN
+7	Porto	Porto	PROPN	_	_	6	flat	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	treinador	treinador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
+11	José	José	PROPN	_	_	10	nmod	_	MWE=José_Magalhães|MWEPOS=PROPN
+12	Magalhães	Magalhães	PROPN	_	_	11	flat	_	_
+13	não	não	ADV	_	Polarity=Neg	14	advmod	_	_
+14	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+15	problemas	problema	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
+16	com	com	ADP	PRP|@N<	_	17	case	_	_
+17	atletas	atleta	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	nmod	_	_
+18	lesionados	lesionar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	_	_
+19	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	_
+20	aponta	apontar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_
+21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+22	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	23	amod	_	_
+23	jogo	jogo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	iobj	_	_
+24	como	como	ADV	<prd>|PRP|@<OC	_	27	cop	_	_
+25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+26	mais	mais	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	27	advmod	_	_
+27	importante	importante	ADJ	<n>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	20	xcomp	_	SpaceAfter=No
+28	:	:	PUNCT	PU|@PU	_	14	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP36-5
-# sent_id = pt-ud-train.conllu#s215/pt
-# orig_file_sentence = 003#15
-1	«	«	PUNCT	punc	_	2	punct	_	_
-2	Acho	achar	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	que	que	SCONJ	conj-s	_	8	mark	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	FC	FC	PROPN	prop|M|S	_	8	nsubj	_	MWE=FC_Porto|MWEPOS=PROPN
-6	Porto	Porto	PROPN	PROPN	_	5	name	_	_
-7	só	só	ADV	adv	_	11	advmod	_	_
-8	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
-9	de	de	ADP	prp	AdpType=Prep	11	mark	_	_
-10	se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	11	dobj	_	_
-11	preocupar	preocupar	VERB	v-inf	VerbForm=Inf	8	xcomp	_	_
-12	com	com	ADP	prp	AdpType=Prep	14	case	_	_
-13	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	Sporting	Sporting	PROPN	prop|M|S	Gender=Masc|Number=Sing	11	iobj	_	_
-15	,	,	PUNCT	punc	_	2	punct	_	_
-16	não	não	ADV	adv	_	17	neg	_	_
-17	pensamos	pensar	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
-18	em	em	ADP	prp	AdpType=Prep	19	case	_	_
-19	mais	mais	ADV	pron-indp|M|S	PronType=Ind	17	dobj	_	MWE=mais_nada|MWEPOS=PRON
-20	nada	nada	PRON	PRON	Gender=Masc|Number=Sing|PronType=Ind	19	compound	_	_
-21	.	.	PUNCT	punc	_	2	punct	_	_
+# text = «Acho que o FC Porto só tem de se preocupar com o Sporting, não pensamos em mais nada.
+# forest 1
+# source CETEMPúblico n=36 sec=des sem=98a &D
+# sent_id = CP36-5
+# id 215
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+2	Acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	FC	FC	PROPN	_	_	8	nsubj	_	MWE=FC_Porto|MWEPOS=PROPN
+6	Porto	Porto	PROPN	_	_	5	flat	_	_
+7	só	só	ADV	ADV|@ADVL>	_	11	advmod	_	_
+8	tem	ter	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
+9	de	de	ADP	PRP|@PRT-AUX<	_	11	mark	_	_
+10	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	11	obj	_	_
+11	preocupar	preocupar	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
+12	com	com	ADP	PRP|@<PIV	_	14	case	_	_
+13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	Sporting	Sporting	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	iobj	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+16	não	não	ADV	_	Polarity=Neg	17	advmod	_	_
+17	pensamos	pensar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+18	em	em	ADP	PRP|@<PIV	_	19	case	_	_
+19	mais	mais	ADV	<setop>|ADV|@>N	Gender=Masc|Number=Sing|PronType=Ind	17	obj	_	MWE=mais_nada|MWEPOS=PRON
+20	nada	nada	PRON	INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	19	compound	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP36-6
-# sent_id = pt-ud-train.conllu#s216/pt
-# orig_file_sentence = 003#16
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	fartura	fartura	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	pensamento	pensamento	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-5	pode	poder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	dar	dar	VERB	v-inf	VerbForm=Inf	5	xcomp	_	_
-7	maus	mau	ADJ	adj|M|P	Gender=Masc|Number=Plur	8	amod	_	_
-8	resultados	resultado	NOUN	n|M|P	Gender=Masc|Number=Plur	6	dobj	_	_
-9	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	5	cc	_	_
-10	nós	nós	PRON	pron-pers|M/F|1P|NOM	Case=Nom|Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_
-11	não	não	ADV	adv	_	12	neg	_	_
-12	queremos	querer	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	conj	_	_
-13	ter	ter	VERB	v-inf	VerbForm=Inf	12	xcomp	_	_
-14	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	enfarte	enfarte	NOUN	n|M|S	Gender=Masc|Number=Sing	13	dobj	_	_
-16	.	.	PUNCT	punc	_	5	punct	_	_
+# text = A fartura de pensamento pode dar maus resultados e nós não queremos ter um enfarte.
+# forest 1
+# source CETEMPúblico n=36 sec=des sem=98a
+# sent_id = CP36-6
+# id 216
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	fartura	fartura	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	de	de	ADP	PRP|@N<ARG	_	4	case	_	_
+4	pensamento	pensamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+5	pode	poder	VERB	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
+7	maus	mau	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	8	amod	_	_
+8	resultados	resultado	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	obj	_	_
+9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
+10	nós	nós	PRON	PERS|M/F|1P|NOM|@SUBJ>	Case=Nom|Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_
+11	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
+12	queremos	querer	VERB	<cjt>|<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	conj	_	_
+13	ter	ter	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	12	xcomp	_	_
+14	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	enfarte	enfarte	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP36-7
-# sent_id = pt-ud-train.conllu#s217/pt
-# orig_file_sentence = 003#17
-1	Esta	este	PRON	pron-det|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	_	_
-2	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
-3	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	prova	prova	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	regularidade	regularidade	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	4	cc	_	_
-8	só	só	ADV	adv	_	10	advmod	_	_
-9	pode	poder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
-10	beneficiar	beneficiar	VERB	v-inf	VerbForm=Inf	9	xcomp	_	_
-11	quem	quem	PRON	pron-indp|<rel>|M/F|S/P	PronType=Rel	14	nsubj	_	_
-12	for	ser	VERB	v-fin|FUT|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	cop	_	_
-13	mais	muito	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	14	advmod	_	_
-14	regular	regular	ADJ	adj|M/F|S	Number=Sing	10	ccomp	_	_
-15	»	»	PUNCT	punc	_	4	punct	_	_
-16	.	.	PUNCT	punc	_	4	punct	_	_
+# text = Esta é uma prova de regularidade e só pode beneficiar quem for mais regular».
+# forest 1
+# source CETEMPúblico n=36 sec=des sem=98a
+# sent_id = CP36-7
+# id 217
+1	Esta	este	PRON	<dem>|DET|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	_	_
+2	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	prova	prova	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	regularidade	regularidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
+8	só	só	ADV	ADV|@ADVL>	_	10	advmod	_	_
+9	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+10	beneficiar	beneficiar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
+11	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	PronType=Rel	14	nsubj	_	_
+12	for	ser	AUX	<mv>|V|FUT|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	cop	_	_
+13	mais	muito	ADV	<KOMP>|<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	14	advmod	_	_
+14	regular	regular	ADJ	ADJ|M/F|S|@<SC	Number=Sing	10	ccomp	_	SpaceAfter=No
+15	»	»	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

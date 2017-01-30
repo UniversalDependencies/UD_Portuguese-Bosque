@@ -1,31 +1,32 @@
-# distance_from_new = 0
-# new_sent_id = CP934-1
-# sent_id = pt-ud-train.conllu#s4809/pt
-# orig_file_sentence = 049#9
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	dólar	dólar	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
-3	e	e	CONJ	conj-c|<co-subj>	_	2	cc	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	marco	marco	NOUN	n|M|S	Gender=Masc|Number=Sing	2	conj	_	_
-6	fixaram	fixar	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	respectivamente	respectivamente	ADV	adv	_	12	advmod:emph	_	_
-8	a	a	ADP	prp	AdpType=Prep	12	case	_	_
-9	159.775	159.775	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-10	e	e	CONJ	conj-c|<co-prenom>	_	9	cc	_	_
-11	87.35	87.35	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	9	conj	_	_
-12	escudos	escudo	NOUN	n|M|P	Gender=Masc|Number=Plur	6	nmod	_	_
-13	face	face	NOUN	prp|<sam->	_	16	case	_	MWE=face_a|MWEPOS=ADP
+# text = O dólar e o marco fixaram respectivamente a 159.775 e 87.35 escudos face aos 156.942 e 86.871 verificados na sessão anterior.
+# forest 1
+# source CETEMPúblico n=934 sec=eco sem=91b
+# sent_id = CP934-1
+# id 4811
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	dólar	dólar	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	marco	marco	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
+6	fixaram	fixar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	respectivamente	respectivamente	ADV	ADV|@>P	_	12	advmod:emph	_	_
+8	a	a	ADP	PRP|@<ADVL	_	12	case	_	_
+9	159.775	159.775	NUM	<first-cjt>|<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+10	e	e	CCONJ	<co-prenom>|KC|@CO	_	11	cc	_	_
+11	87.35	87.35	NUM	<cjt>|<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	9	conj	_	_
+12	escudos	escudo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	_
+13	face	face	NOUN	ADV|@<ADVL	_	16	case	_	MWE=face_a|MWEPOS=ADP
 14-15	aos	_	_	_	_	_	_	_	_
-14	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	mwe	_	_
-15	os	o	DET	art|<artd>|<-sam>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
-16	156.942	156.942	NUM	num|<n>|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	advmod	_	_
-17	e	e	CONJ	conj-c|<co-prparg>	_	16	cc	_	_
-18	86.871	86.871	NUM	num|<n>|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	16	conj	_	_
-19	verificados	verificar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	_	_
+14	a	a	DET	PRP|@A<	Gender=Fem|Number=Sing|PronType=Art	13	fixed	_	_
+15	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
+16	156.942	156.942	NUM	<first-cjt>|<card>|<n>|<np-def>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	6	advmod	_	_
+17	e	e	CCONJ	<co-prparg>|KC|@CO	_	18	cc	_	_
+18	86.871	86.871	NUM	<cjt>|<card>|<n>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	16	conj	_	_
+19	verificados	verificar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	_	_
 20-21	na	_	_	_	_	_	_	_	_
-20	em	em	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	sessão	sessão	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-23	anterior	anterior	ADJ	adj|F|S	Gender=Fem|Number=Sing	22	amod	_	_
-24	.	.	PUNCT	punc	_	6	punct	_	_
+20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
+21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	sessão	sessão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	_
+23	anterior	anterior	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

@@ -1,105 +1,109 @@
-# distance_from_new = 0
-# new_sent_id = CF432-1
-# sent_id = pt-ud-train.conllu#s6847/pt
-# orig_file_sentence = 069#47
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	CompUSA	CompUSA	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-4	Los	Los	DET	prop|M|S	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	MWE=Los_Angeles|MWEPOS=PROPN
-5	Angeles	Angeles	PROPN	PROPN	_	2	nmod	_	_
-6	vendia	vender	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-7	,	,	PUNCT	punc	_	6	punct	_	_
+# text = A CompUSA de Los Angeles vendia, na semana passada, a impressora jato de tinta Epson Stylus 800 por US$ 199.
+# forest 1
+# source CETENFolha n=432 cad=Informática sec=com sem=94a
+# sent_id = CF432-1
+# id 1805
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	CompUSA	CompUSA	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	5	case	_	_
+4	Los	Los	DET	_	Gender=Masc|Number=Plur|PronType=Art	5	det	_	MWE=Los_Angeles|MWEPOS=PROPN
+5	Angeles	Angeles	PROPN	_	_	2	nmod	_	_
+6	vendia	vender	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 8-9	na	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	semana	semana	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-11	passada	passar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	10	acl	_	_
-12	,	,	PUNCT	punc	_	6	punct	_	_
-13	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	impressora	impressora	NOUN	n|F|S	Gender=Fem|Number=Sing	6	dobj	_	_
-15	jato	jato	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-17	tinta	tinta	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-18	Epson	Epson	PROPN	prop|F|S	_	14	nmod	_	MWE=Epson_Stylus_800|MWEPOS=PROPN
-19	Stylus	Stylus	PROPN	PROPN	_	18	name	_	_
-20	800	800	NUM	NUM	NumForm=Digit|NumType=Card	18	nummod	_	_
-21	por	por	ADP	prp	AdpType=Prep	22	case	_	_
-22	US$	US$	SYM	n|M|P	Gender=Masc|Number=Plur	6	dobj	_	_
-23	199	199	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
-24	.	.	PUNCT	punc	_	6	punct	_	_
+8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+11	passada	passar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	10	acl	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	impressora	impressora	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
+15	jato	jato	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	14	nmod	_	_
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	tinta	tinta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+18	Epson	Epson	PROPN	_	_	14	nmod	_	MWE=Epson_Stylus_800|MWEPOS=PROPN
+19	Stylus	Stylus	PROPN	_	_	18	flat	_	_
+20	800	800	NUM	_	NumForm=Digit|NumType=Card	18	nummod	_	_
+21	por	por	ADP	PRP|@<PIV	_	22	case	_	_
+22	US$	US$	SYM	_	Gender=Masc|Number=Plur	6	obj	_	_
+23	199	199	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF432-2
-# sent_id = pt-ud-train.conllu#s6848/pt
-# orig_file_sentence = 069#48
+# text = Na loja de Nova York, o Compaq Aero está por US$ 996,97 (se chegar às 9h da manhã, ganha o cupom de desconto de US$ 100).
+# forest 1
+# source CETENFolha n=432 cad=Informática sec=com sem=94a &D
+# sent_id = CF432-2
+# id 1806
 1-2	Na	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	loja	loja	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nmod	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	Nova	Nova	PROPN	prop|F|S	_	3	nmod	_	MWE=Nova_York|MWEPOS=PROPN
-6	York	York	PROPN	PROPN	_	5	name	_	_
-7	,	,	PUNCT	punc	_	13	punct	_	_
-8	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	Compaq	Compaq	PROPN	prop|M|S	_	13	nsubj	_	MWE=Compaq_Aero|MWEPOS=PROPN
-10	Aero	Aero	PROPN	PROPN	_	9	name	_	_
-11	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
-12	por	por	ADP	prp	AdpType=Prep	13	case	_	_
-13	US$	US$	SYM	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
-14	996,97	996,97	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	13	nummod	_	_
-15	(	(	PUNCT	punc	_	13	punct	_	_
-16	se	se	SCONJ	conj-s	_	17	mark	_	_
-17	chegar	chegar	VERB	v-fin|FUT|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	advcl	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	loja	loja	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	Nova	Nova	PROPN	_	_	3	nmod	_	MWE=Nova_York|MWEPOS=PROPN
+6	York	York	PROPN	_	_	5	flat	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	Compaq	Compaq	PROPN	_	_	13	nsubj	_	MWE=Compaq_Aero|MWEPOS=PROPN
+10	Aero	Aero	PROPN	_	_	9	flat	_	_
+11	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
+12	por	por	ADP	PRP|@<SC	_	13	case	_	_
+13	US$	US$	SYM	_	Gender=Masc|Number=Plur	0	root	_	_
+14	996,97	996,97	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	13	nummod	_	_
+15	(	(	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
+16	se	se	SCONJ	KS|@SUB	_	17	mark	_	_
+17	chegar	chegar	VERB	<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	advcl	_	_
 18-19	às	_	_	_	_	_	_	_	_
-18	a	a	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
-20	9h	9h	NOUN	n|F|P	Gender=Fem|Number=Plur	17	nmod	_	_
+18	a	a	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
+19	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
+20	9h	9h	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	obl	_	_
 21-22	da	_	_	_	_	_	_	_	_
-21	de	de	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	manhã	manhã	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-24	,	,	PUNCT	punc	_	25	punct	_	_
-25	ganha	ganhar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	parataxis	_	_
-26	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	cupom	cupom	NOUN	n|M|S	Gender=Masc|Number=Sing	25	dobj	_	_
-28	de	de	ADP	prp	AdpType=Prep	29	case	_	_
-29	desconto	desconto	NOUN	n|M|S	Gender=Masc|Number=Sing	27	nmod	_	_
-30	de	de	ADP	prp	AdpType=Prep	31	case	_	_
-31	US$	US$	SYM	n|M|P	Gender=Masc|Number=Plur	29	nmod	_	_
-32	100	100	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	31	nummod	_	_
-33	)	)	PUNCT	punc	_	13	punct	_	_
-34	.	.	PUNCT	punc	_	13	punct	_	_
+21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
+22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	manhã	manhã	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+25	ganha	ganhar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	parataxis	_	_
+26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	cupom	cupom	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	25	obj	_	_
+28	de	de	ADP	PRP|@N<	_	29	case	_	_
+29	desconto	desconto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
+30	de	de	ADP	PRP|@N<	_	31	case	_	_
+31	US$	US$	SYM	_	Gender=Masc|Number=Plur	29	nmod	_	_
+32	100	100	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	31	nummod	_	SpaceAfter=No
+33	)	)	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
+34	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF432-3
-# sent_id = pt-ud-train.conllu#s6849/pt
-# orig_file_sentence = 069#49
-1	Não	não	ADV	adv	_	2	neg	_	_
-2	aceita	aceitar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	cartão	cartão	NOUN	n|M|S	_	2	dobj	_	MWE=cartão_de_crédito|MWEPOS=NOUN
-4	de	de	ADP	ADP	AdpType=Prep	5	case	_	_
-5	crédito	crédito	NOUN	NOUN	_	3	compound	_	_
-6	internacional	internacional	ADJ	adj|M|S	Gender=Masc|Number=Sing	3	amod	_	_
-7	.	.	PUNCT	punc	_	2	punct	_	_
+# text = Não aceita cartão de crédito internacional.
+# forest 1
+# source CETENFolha n=432 cad=Informática sec=com sem=94a
+# sent_id = CF432-3
+# id 1807
+1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
+2	aceita	aceitar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	cartão	cartão	NOUN	_	_	2	obj	_	MWE=cartão_de_crédito|MWEPOS=NOUN
+4	de	de	ADP	_	_	5	case	_	_
+5	crédito	crédito	NOUN	_	_	3	compound	_	_
+6	internacional	internacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 1
-# new_sent_id = CF432-4
-# sent_id = pt-ud-train.conllu#s6850/pt
-# orig_file_sentence = 069#50
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+# text = A J&amp;R Computer World, apesar de meio fora de mão, tem preços competitivos.
+# forest 1
+# source CETENFolha n=432 cad=Informática sec=com sem=94a
+# sent_id = CF432-4
+# id 1808
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	J&amp;R	J&R	PROPN	prop|F|S	_	13	nsubj	_	MWE=J&amp;R_Computer_World|MWEPOS=PROPN
-3	Computer	Computer	PROPN	PROPN	_	2	name	_	_
-4	World	World	PROPN	PROPN	_	2	name	_	_
-5	,	,	PUNCT	punc	_	13	punct	_	_
-6	apesar	apesar	ADV	prp	AdpType=Prep	9	case	_	MWE=apesar_de|MWEPOS=ADP
-7	de	de	ADP	ADP	AdpType=Prep	6	mwe	_	_
-8	meio	meio	ADV	adv|<quant>|<det>	NumType=Card|PronType=Ind,Neg,Tot	9	advmod	_	_
-9	fora	fora	ADJ	adj|M|S	_	13	advmod	_	MWE=fora_de_mão|MWEPOS=ADJ
-10	de	de	ADP	ADP	AdpType=Prep	11	case	_	_
-11	mão	mão	NOUN	NOUN	_	9	nmod	_	_
-12	,	,	PUNCT	punc	_	13	punct	_	_
-13	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-14	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	13	dobj	_	_
-15	competitivos	competitivo	ADJ	adj|M|P	Gender=Masc|Number=Plur	14	amod	_	_
-16	.	.	PUNCT	punc	_	13	punct	_	_
+3	Computer	Computer	PROPN	_	_	2	flat	_	_
+4	World	World	PROPN	_	_	2	flat	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+6	apesar	apesar	ADV	ADV|@ADVL>	_	9	case	_	MWE=apesar_de|MWEPOS=ADP
+7	de	de	ADP	PRP|@A<	_	6	fixed	_	_
+8	meio	meio	ADV	<quant>|<det>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	9	advmod	_	_
+9	fora	fora	ADJ	ADV|@P<	_	13	advmod	_	MWE=fora_de_mão|MWEPOS=ADJ
+10	de	de	ADP	PRP|@A<	_	11	case	_	_
+11	mão	mão	NOUN	ADV|@P<	_	9	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+13	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+14	preços	preço	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	13	obj	_	_
+15	competitivos	competitivo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	14	amod	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 

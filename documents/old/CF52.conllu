@@ -1,91 +1,93 @@
-# distance_from_new = 0
-# new_sent_id = CF52-1
-# sent_id = pt-ud-train.conllu#s5246/pt
-# orig_file_sentence = 053#46
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	filme	filme	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nsubjpass	_	_
-3	«	«	PUNCT	punc	_	2	punct	_	_
-4	Barfly	Barfly	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-5	»	»	PUNCT	punc	_	2	punct	_	_
-6	(	(	PUNCT	punc	_	2	punct	_	_
-7	traduzido	traduzir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
+# text = O filme «Barfly» (traduzido no Brasil como «Condenados pelo Vício») foi inspirado na vida de Bukowski.
+# forest 1
+# source CETENFolha n=52 cad=Ilustrada sec=nd sem=94b &D
+# sent_id = CF52-1
+# id 204
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	filme	filme	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	19	nsubj	_	_
+3	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+4	Barfly	Barfly	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+5	»	»	PUNCT	PU|@PU	_	2	punct	_	_
+6	(	(	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+7	traduzido	traduzir	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
 8-9	no	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-11	como	como	ADV	adv|<rel>	PronType=Rel	13	cop	_	_
-12	«	«	PUNCT	punc	_	13	punct	_	_
-13	Condenados	Condenados	PROPN	prop|M|S	_	10	advmod	_	MWE=Condenados_pelo_Vício|MWEPOS=PROPN
+8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
+9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	_
+11	como	como	ADV	<com>|PRP|@<SC	PronType=Rel	13	cop	_	_
+12	«	«	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
+13	Condenados	Condenados	PROPN	PROP|M|S|@P<	_	10	advmod	_	MWE=Condenados_pelo_Vício|MWEPOS=PROPN
 14-15	pelo	_	_	_	_	_	_	_	_
-14	por	por	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-15	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	Vício	Vício	PROPN	PROPN	_	13	name	_	_
-17	»	»	PUNCT	punc	_	13	punct	_	_
-18	)	)	PUNCT	punc	_	2	punct	_	_
-19	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	auxpass	_	_
-20	inspirado	inspirar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+14	por	por	ADP	<sam->|PRP|@N<	_	16	case	_	_
+15	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	Vício	Vício	PROPN	PROP|@N<	_	13	flat	_	SpaceAfter=No
+17	»	»	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
+18	)	)	PUNCT	PU|@PU	_	2	punct	_	_
+19	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+20	inspirado	inspirar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	19	ccomp	_	_
 21-22	na	_	_	_	_	_	_	_	_
-21	em	em	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	vida	vida	NOUN	n|F|S	Gender=Fem|Number=Sing	20	dobj	_	_
-24	de	de	ADP	prp	AdpType=Prep	25	case	_	_
-25	Bukowski	Bukowski	PROPN	prop|M|S	Gender=Masc|Number=Sing	23	nmod	_	_
-26	.	.	PUNCT	punc	_	20	punct	_	_
+21	em	em	ADP	<sam->|PRP|@<PIV	_	23	case	_	_
+22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	vida	vida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	obj	_	_
+24	de	de	ADP	PRP|@N<	_	25	case	_	_
+25	Bukowski	Bukowski	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF52-2
-# sent_id = pt-ud-train.conllu#s5247/pt
-# orig_file_sentence = 053#47
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	escritor	escritor	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nsubj	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	identificado	identificar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
-5	com	com	ADP	prp	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	cultura	cultura	NOUN	n|F|S	Gender=Fem|Number=Sing	4	dobj	_	_
-8	beatnik	beatnik	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-9	,	,	PUNCT	punc	_	2	punct	_	_
-10	admitia	admitir	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-11	somente	somente	ADV	adv	_	10	advmod	_	_
-12	ter	ter	AUX	v-inf	VerbForm=Inf	14	aux	_	_
-13	sido	ser	VERB	v-pcp	VerbForm=Part	14	auxpass	_	_
-14	inspirado	inspirar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	10	ccomp	_	_
-15	por	por	ADP	prp	AdpType=Prep	18	case	_	_
-16	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-17	outro	outro	DET	pron-det|<diff>|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing	18	det	_	_
-18	autor	autor	NOUN	n|M|S	Gender=Masc|Number=Sing	14	dobj	_	_
+# text = O escritor, identificado com a cultura beatnik, admitia somente ter sido inspirado por um outro autor da Califórnia, John Fante («Pergunte ao Pó», entre outros), que Bukowski descobriu nas suas leituras em bibliotecas públicas quando jovem.
+# forest 1
+# source CETENFolha n=52 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF52-2
+# id 205
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	escritor	escritor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	identificado	identificar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
+5	com	com	ADP	PRP|@<PIV	_	7	case	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	cultura	cultura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obj	_	_
+8	beatnik	beatnik	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+10	admitia	admitir	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+11	somente	somente	ADV	ADV|@<ADVL	_	10	advmod	_	_
+12	ter	ter	AUX	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	13	aux	_	_
+13	sido	ser	VERB	<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	10	ccomp	_	_
+14	inspirado	inspirar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	13	ccomp	_	_
+15	por	por	ADP	PRP|@PASS	_	18	case	_	_
+16	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+17	outro	outro	DET	<diff>|<KOMP>|DET|M|S|@>N	Degree=Cmp|Gender=Masc|Number=Sing	18	det	_	_
+18	autor	autor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obj	_	_
 19-20	da	_	_	_	_	_	_	_	_
-19	de	de	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	Califórnia	Califórnia	PROPN	prop|F|S	Gender=Fem|Number=Sing	18	nmod	_	_
-22	,	,	PUNCT	punc	_	18	punct	_	_
-23	John	John	PROPN	prop|M|S	_	18	appos	_	MWE=John_Fante|MWEPOS=PROPN
-24	Fante	Fante	PROPN	PROPN	_	23	name	_	_
-25	(	(	PUNCT	punc	_	23	punct	_	_
-26	«	«	PUNCT	punc	_	23	punct	_	_
-27	Pergunte	Pergunte	PROPN	prop|M|S	_	23	nmod	_	MWE=Pergunte_ao_Pó|MWEPOS=PROPN
+19	de	de	ADP	<sam->|PRP|@N<	_	21	case	_	_
+20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	Califórnia	Califórnia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+23	John	John	PROPN	_	_	18	appos	_	MWE=John_Fante|MWEPOS=PROPN
+24	Fante	Fante	PROPN	_	_	23	flat	_	_
+25	(	(	PUNCT	PU|@PU	_	23	punct	_	SpaceAfter=No
+26	«	«	PUNCT	PU|@PU	_	23	punct	_	SpaceAfter=No
+27	Pergunte	Pergunte	PROPN	PROP|M|S|@N<PRED	_	23	nmod	_	MWE=Pergunte_ao_Pó|MWEPOS=PROPN
 28-29	ao	_	_	_	_	_	_	_	_
-28	a	a	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	Pó	Pó	PROPN	PROPN	_	27	name	_	_
-31	»	»	PUNCT	punc	_	23	punct	_	_
-32	,	,	PUNCT	punc	_	23	punct	_	_
-33	entre	entre	ADP	prp	AdpType=Prep	34	case	_	_
-34	outros	outro	PRON	pron-det|<diff>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur	23	advmod	_	_
-35	)	)	PUNCT	punc	_	23	punct	_	_
-36	,	,	PUNCT	punc	_	18	punct	_	_
-37	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	39	dobj	_	_
-38	Bukowski	Bukowski	PROPN	prop|M|S	Gender=Masc|Number=Sing	39	nsubj	_	_
-39	descobriu	descobrir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	acl	_	_
+28	a	a	ADP	<sam->|PRP|@N<	_	30	case	_	_
+29	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	Pó	Pó	PROPN	PROP|@P<	_	27	flat	_	SpaceAfter=No
+31	»	»	PUNCT	PU|@PU	_	23	punct	_	SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+33	entre	entre	ADP	PRP|@<ADVL	_	34	case	_	_
+34	outros	outro	PRON	<diff>|<KOMP>|DET|M|P|@P<	Degree=Cmp|Gender=Masc|Number=Plur	23	advmod	_	SpaceAfter=No
+35	)	)	PUNCT	PU|@PU	_	23	punct	_	SpaceAfter=No
+36	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+37	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	39	obj	_	_
+38	Bukowski	Bukowski	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	39	nsubj	_	_
+39	descobriu	descobrir	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	acl	_	_
 40-41	nas	_	_	_	_	_	_	_	_
-40	em	em	ADP	prp|<sam->	AdpType=Prep	43	case	_	_
-41	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	43	det	_	_
-42	suas	seu	DET	pron-det|<poss|3S>|<si>|F|P	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	43	det	_	_
-43	leituras	leitura	NOUN	n|F|P	Gender=Fem|Number=Plur	39	nmod	_	_
-44	em	em	ADP	prp	AdpType=Prep	45	case	_	_
-45	bibliotecas	biblioteca	NOUN	n|F|P	Gender=Fem|Number=Plur	39	nmod	_	_
-46	públicas	público	ADJ	adj|F|P	Gender=Fem|Number=Plur	45	amod	_	_
-47	quando	quando	ADV	adv|<rel>	PronType=Rel	48	cop	_	_
-48	jovem	jovem	ADJ	adj|M|S	Gender=Masc|Number=Sing	39	advmod	_	_
-49	.	.	PUNCT	punc	_	10	punct	_	_
+40	em	em	ADP	<sam->|PRP|@<ADVL	_	43	case	_	_
+41	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	43	det	_	_
+42	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	43	det	_	_
+43	leituras	leitura	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	39	obl	_	_
+44	em	em	ADP	PRP|@<ADVL	_	45	case	_	_
+45	bibliotecas	biblioteca	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	39	obl	_	_
+46	públicas	público	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	45	amod	_	_
+47	quando	quando	ADV	<first-cjt>|<rel>|PRP|@<ADVL	PronType=Rel	48	cop	_	_
+48	jovem	jovem	ADJ	ADJ|M|S|@P<	Gender=Masc|Number=Sing	39	advmod	_	SpaceAfter=No
+49	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 

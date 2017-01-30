@@ -1,199 +1,206 @@
-# distance_from_new = 0
-# new_sent_id = CP318-1
-# sent_id = pt-ud-train.conllu#s1673/pt
-# orig_file_sentence = 017#73
-1	Um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-2	«	«	PUNCT	punc	_	3	punct	_	_
-3	tunnelier	tunnelier	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nsubj	_	_
-4	»	»	PUNCT	punc	_	3	punct	_	_
-5	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-6	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-7	autêntica	autêntico	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
-8	fábrica	fábrica	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-9	debaixo	debaixo	ADV	prp|<sam->	AdpType=Prep	12	case	_	MWE=debaixo_de|MWEPOS=ADP
+# text = Um «tunnelier» é uma autêntica fábrica debaixo do solo.
+# forest 1
+# source CETEMPúblico n=318 sec=soc sem=94a
+# sent_id = CP318-1
+# id 1674
+1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+3	tunnelier	tunnelier	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No
+4	»	»	PUNCT	PU|@PU	_	3	punct	_	_
+5	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+6	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+7	autêntica	autêntico	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	8	amod	_	_
+8	fábrica	fábrica	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
+9	debaixo	debaixo	ADV	ADV|@N<	_	12	case	_	MWE=debaixo_de|MWEPOS=ADP
 10-11	do	_	_	_	_	_	_	_	_
-10	de	de	ADP	ADP	AdpType=Prep	9	mwe	_	_
-11	o	o	DET	art|<artd>|<-sam>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	solo	solo	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-13	.	.	PUNCT	punc	_	8	punct	_	_
+10	de	de	ADP	PRP|@A<	_	9	fixed	_	_
+11	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	solo	solo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP318-2
-# sent_id = pt-ud-train.conllu#s1674/pt
-# orig_file_sentence = 017#74
-1	É	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	auxpass	_	_
-2	composto	compor	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-3	por	por	ADP	prp	AdpType=Prep	5	case	_	_
-4	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	cabeça	cabeça	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-6	escavadora	escavador	ADJ	adj|F|S	Gender=Fem|Number=Sing	5	amod	_	_
-7	,	,	PUNCT	punc	_	5	punct	_	_
-8	parecida	parecer	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	5	acl	_	_
-9	com	com	ADP	prp	AdpType=Prep	11	case	_	_
-10	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	roda	roda	NOUN	n|F|S	_	8	dobj	_	MWE=roda_dentada|MWEPOS=NOUN
-12	dentada	dentada	NOUN	NOUN	_	11	compound	_	_
-13	,	,	PUNCT	punc	_	11	punct	_	_
-14	com	com	ADP	prp	AdpType=Prep	15	case	_	_
-15	pontas	ponta	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nmod	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-17	carboneto	carboneto	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	tungsténio	tungsténio	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-20	.	.	PUNCT	punc	_	2	punct	_	_
+# text = É composto por uma cabeça escavadora, parecida com uma roda dentada, com pontas de carboneto de tungsténio.
+# forest 1
+# source CETEMPúblico n=318 sec=soc sem=94a
+# sent_id = CP318-2
+# id 1675
+1	É	ser	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	composto	compor	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	1	ccomp	_	_
+3	por	por	ADP	PRP|@PASS	_	5	case	_	_
+4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	cabeça	cabeça	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obj	_	_
+6	escavadora	escavador	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+8	parecida	parecer	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	5	acl	_	_
+9	com	com	ADP	PRP|@<PIV	_	11	case	_	_
+10	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	roda	roda	NOUN	_	_	8	obj	_	MWE=roda_dentada|MWEPOS=NOUN
+12	dentada	dentada	NOUN	_	_	11	compound	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+14	com	com	ADP	PRP|@N<PRED	_	15	case	_	_
+15	pontas	ponta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	nmod	_	_
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	carboneto	carboneto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
+18	de	de	ADP	PRP|@N<	_	19	case	_	_
+19	tungsténio	tungsténio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 1
-# new_sent_id = CP318-3
-# sent_id = pt-ud-train.conllu#s1675/pt
-# orig_file_sentence = 017#75
-1	É	é	ADV	adv|<foc>	_	6	cc	_	_
-2	este	este	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
-3	material	material	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
-4	super-resistente	super-resistente	ADJ	adj|M|S	Gender=Masc|Number=Sing	3	amod	_	_
-5	que	que	ADV	adv|<foc>	_	6	cc	_	_
-6	permite	permitir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	roer	roer	VERB	v-inf	VerbForm=Inf	6	xcomp	_	_
-8	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	rocha	rocha	NOUN	n|F|S	Gender=Fem|Number=Sing	7	dobj	_	_
+# text = É este material super-resistente que permite roer a rocha à média de duas a três voltas por minuto e avançar à velocidade vertiginosa de 200 metros por semana.
+# forest 1
+# source CETEMPúblico n=318 sec=soc sem=94a
+# sent_id = CP318-3
+# id 1676
+1	É	é	ADV	<foc>|ADV|@ADVL>	_	6	advmod	_	_
+2	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	material	material	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
+4	super-resistente	super-resistente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
+5	que	que	ADV	<foc>|ADV|@ADVL>	_	6	advmod	_	_
+6	permite	permitir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	roer	roer	VERB	<first-cjt>|<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	6	xcomp	_	_
+8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	rocha	rocha	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
 10-11	à	_	_	_	_	_	_	_	_
-10	a	a	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	média	média	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	duas	dois	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	12	nummod	_	_
-15	a	a	ADP	prp	AdpType=Prep	17	case	_	_
+10	a	a	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	média	média	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	duas	dois	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	12	nummod	_	_
+15	a	a	ADP	prp	_	17	case	_	_
 16	três	três	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	17	nummod	_	_
-17	voltas	volta	NOUN	n|F|P	Gender=Fem|Number=Plur	14	nmod	_	_
-18	por	por	ADP	prp	AdpType=Prep	19	case	_	_
+17	voltas	volta	NOUN	n|F|P	Gender=Fem|Number=Plur	14	obl	_	_
+18	por	por	ADP	prp	_	19	case	_	_
 19	minuto	minuto	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-20	e	e	CONJ	conj-c|<co-inf>	_	7	cc	_	_
+20	e	e	CCONJ	conj-c|<co-inf>	_	21	cc	_	_
 21	avançar	avançar	VERB	v-inf	VerbForm=Inf	7	conj	_	_
 22-23	à	_	_	_	_	_	_	_	_
-22	a	a	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
+22	a	a	ADP	<-sam>|<artd>|ART|F|S|@>N	_	24	case	_	_
 23	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	velocidade	velocidade	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nmod	_	_
+24	velocidade	velocidade	NOUN	n|F|S	Gender=Fem|Number=Sing	21	obl	_	_
 25	vertiginosa	vertiginoso	ADJ	adj|F|S	Gender=Fem|Number=Sing	24	amod	_	_
-26	de	de	ADP	prp	AdpType=Prep	28	case	_	_
+26	de	de	ADP	prp	_	28	case	_	_
 27	200	200	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	28	nummod	_	_
 28	metros	metro	NOUN	n|M|P	Gender=Masc|Number=Plur	24	nmod	_	_
-29	por	por	ADP	prp	AdpType=Prep	30	case	_	_
-30	semana	semana	NOUN	n|F|S	Gender=Fem|Number=Sing	28	nmod	_	_
+29	por	por	ADP	prp	_	30	case	_	_
+30	semana	semana	NOUN	n|F|S	Gender=Fem|Number=Sing	28	nmod	_	SpaceAfter=No
 31	.	.	PUNCT	punc	_	6	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP318-4
-# sent_id = pt-ud-train.conllu#s1676/pt
-# orig_file_sentence = 017#76
-1	Em	em	ADP	prp	AdpType=Prep	3	case	_	_
-2	cada	cada	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	3	det	_	_
-3	volta	volta	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
+# text = Em cada volta desta roda avança-se 10 centímetros e são trucidadas cinco toneladas de rocha.
+# forest 1
+# source CETEMPúblico n=318 sec=soc sem=94a
+# sent_id = CP318-4
+# id 1677
+1	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
+2	cada	cada	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	3	det	_	_
+3	volta	volta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	_
 4-5	desta	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	esta	este	DET	pron-det|<-sam>|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
-6	roda	roda	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
+4	de	de	ADP	<sam->|PRP|@N<ARG	_	6	case	_	_
+5	esta	este	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+6	roda	roda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 7-8	avança-se	_	_	_	_	_	_	_	_
 7	avança	avançar	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	-se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	7	nsubj	_	_
-9	10	10	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
-10	centímetros	centímetro	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nmod	_	_
-11	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	7	cc	_	_
-12	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	auxpass	_	_
-13	trucidadas	trucidar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	7	conj	_	_
-14	cinco	cinco	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	15	nummod	_	_
-15	toneladas	tonelada	NOUN	n|F|P	Gender=Fem|Number=Plur	13	nsubjpass	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-17	rocha	rocha	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-18	.	.	PUNCT	punc	_	7	punct	_	_
+9	10	10	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
+10	centímetros	centímetro	NOUN	<np-def>|N|M|P|@<SA	Gender=Masc|Number=Plur	7	obl	_	_
+11	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	12	cc	_	_
+12	são	ser	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+13	trucidadas	trucidar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	12	ccomp	_	_
+14	cinco	cinco	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	15	nummod	_	_
+15	toneladas	tonelada	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	12	nsubj	_	_
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	rocha	rocha	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP318-5
-# sent_id = pt-ud-train.conllu#s1677/pt
-# orig_file_sentence = 017#77
-1	Depois	depois	ADV	adv	_	5	advmod	_	_
+# text = Depois da cabeça vem uma autêntica fábrica ambulante que tritura as pedras e as envia para o exterior, ao mesmo tempo que vai enfiando uns aros em betão armado, impermeáveis e resistentes a uma pressão de 200 bars, que revestem o túnel.
+# forest 1
+# source CETEMPúblico n=318 sec=soc sem=94a
+# sent_id = CP318-5
+# id 1678
+1	Depois	depois	ADV	ADV|@ADVL>	_	5	advmod	_	_
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	cabeça	cabeça	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-5	vem	vir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-7	autêntica	autêntico	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
-8	fábrica	fábrica	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nsubj	_	_
-9	ambulante	ambulante	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
-10	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	11	nsubj	_	_
-11	tritura	triturar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	_
-12	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
-13	pedras	pedra	NOUN	n|F|P	Gender=Fem|Number=Plur	11	dobj	_	_
-14	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	11	cc	_	_
-15	as	elas	PRON	pron-pers|F|3P|ACC	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	16	dobj	_	_
-16	envia	enviar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
-17	para	para	ADP	prp	AdpType=Prep	19	case	_	_
-18	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	exterior	exterior	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-20	,	,	PUNCT	punc	_	11	punct	_	_
+2	de	de	ADP	<sam->|PRP|@A<	_	4	case	_	_
+3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	cabeça	cabeça	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	_
+5	vem	vir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+7	autêntica	autêntico	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	8	amod	_	_
+8	fábrica	fábrica	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	5	nsubj	_	_
+9	ambulante	ambulante	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	_
+10	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	tritura	triturar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	_
+12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
+13	pedras	pedra	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	11	obj	_	_
+14	e	e	CCONJ	<co-n<>|<co-vfin>|KC|@CO	_	16	cc	_	_
+15	as	elas	PRON	PERS|F|3P|ACC|@ACC>	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	16	obj	_	_
+16	envia	enviar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+17	para	para	ADP	PRP|@<OA	_	19	case	_	_
+18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	exterior	exterior	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 21-22	ao	_	_	_	_	_	_	_	_
-21	a	a	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-23	mesmo	mesmo	ADJ	ADJ	_	21	mwe	_	_
-24	tempo	tempo	NOUN	NOUN	_	22	mwe	_	_
-25	que	que	SCONJ	conj-s	_	26	mark	_	_
-26	vai	ir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_
-27	enfiando	enfiar	VERB	v-ger	VerbForm=Ger	26	ccomp	_	_
-28	uns	um	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	29	det	_	_
-29	aros	aro	NOUN	n|M|P	Gender=Masc|Number=Plur	27	dobj	_	_
-30	em	em	ADP	prp	AdpType=Prep	31	case	_	_
-31	betão	betão	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
-32	armado	armar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	31	acl	_	_
-33	,	,	PUNCT	punc	_	29	punct	_	_
-34	impermeáveis	impermeável	ADJ	adj|M|P	Gender=Masc|Number=Plur	29	amod	_	_
-35	e	e	CONJ	conj-c|<co-pred>	_	34	cc	_	_
-36	resistentes	resistente	ADJ	adj|M|P	Gender=Masc|Number=Plur	34	conj	_	_
-37	a	a	ADP	prp	AdpType=Prep	39	case	_	_
-38	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
-39	pressão	pressão	NOUN	n|F|S	Gender=Fem|Number=Sing	36	nmod	_	_
-40	de	de	ADP	prp	AdpType=Prep	42	case	_	_
-41	200	200	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	42	nummod	_	_
-42	bars	bar	NOUN	n|M|P	Gender=Masc|Number=Plur	39	nmod	_	_
-43	,	,	PUNCT	punc	_	29	punct	_	_
-44	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	45	nsubj	_	_
-45	revestem	revestir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	acl	_	_
-46	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
-47	túnel	túnel	NOUN	n|M|S	Gender=Masc|Number=Sing	45	dobj	_	_
-48	.	.	PUNCT	punc	_	5	punct	_	_
+21	a	a	ADP	<sam->|PRP|@N<	_	26	case	_	_
+22	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+23	mesmo	mesmo	ADJ	<diff>|DET|M|S|@>N	_	21	fixed	_	_
+24	tempo	tempo	NOUN	N|M|S|@P<	_	21	fixed	_	_
+25	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
+26	vai	ir	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_
+27	enfiando	enfiar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	26	ccomp	_	_
+28	uns	um	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	29	det	_	_
+29	aros	aro	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	27	obj	_	_
+30	em	em	ADP	PRP|@N<	_	31	case	_	_
+31	betão	betão	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	_
+32	armado	armar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	31	acl	_	SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+34	impermeáveis	impermeável	ADJ	<first-cjt>|ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	29	amod	_	_
+35	e	e	CCONJ	<co-pred>|KC|@CO	_	36	cc	_	_
+36	resistentes	resistente	ADJ	ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	34	conj	_	_
+37	a	a	ADP	PRP|@A<	_	39	case	_	_
+38	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+39	pressão	pressão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	36	obl	_	_
+40	de	de	ADP	PRP|@N<	_	42	case	_	_
+41	200	200	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	42	nummod	_	_
+42	bars	bar	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	39	nmod	_	SpaceAfter=No
+43	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+44	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	45	nsubj	_	_
+45	revestem	revestir	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	acl	_	_
+46	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
+47	túnel	túnel	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	45	obj	_	SpaceAfter=No
+48	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP318-6
-# sent_id = pt-ud-train.conllu#s1678/pt
-# orig_file_sentence = 017#78
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	tempo	tempo	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
+# text = O tempo da dinamite, pá e picareta já acabou há muito.
+# forest 1
+# source CETEMPúblico n=318 sec=soc sem=94a
+# sent_id = CP318-6
+# id 1679
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	tempo	tempo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	dinamite	dinamite	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	,	,	PUNCT	punc	_	5	punct	_	_
-7	pá	pá	NOUN	n|F|S	Gender=Fem|Number=Sing	5	conj	_	_
-8	e	e	CONJ	conj-c|<co-prparg>	_	5	cc	_	_
-9	picareta	picareta	NOUN	n|F|S	Gender=Fem|Number=Sing	5	conj	_	_
-10	já	já	ADV	adv	_	11	advmod	_	_
-11	acabou	acabar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-12	há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_
-13	muito	muito	PRON	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	12	dobj	_	_
-14	.	.	PUNCT	punc	_	11	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	dinamite	dinamite	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+7	pá	pá	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
+8	e	e	CCONJ	<co-p<>|<co-prparg>|KC|@CO	_	9	cc	_	_
+9	picareta	picareta	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
+10	já	já	ADV	ADV|@ADVL>	_	11	advmod	_	_
+11	acabou	acabar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+12	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_
+13	muito	muito	PRON	<quant>|DET|M|S|@<ACC	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP318-7
-# sent_id = pt-ud-train.conllu#s1679/pt
-# orig_file_sentence = 017#79
-1	Estes	este	DET	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_
-2	monstros	monstro	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nsubjpass	_	_
-3	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	auxpass	_	_
-4	comandados	comandar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-5	e	e	CONJ	conj-c|<co-pcv>	_	4	cc	_	_
-6	controlados	controlar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	4	conj	_	_
-7	por	por	ADP	prp	AdpType=Prep	8	case	_	_
-8	meios	meio	NOUN	n|M|P	Gender=Masc|Number=Plur	4	dobj	_	_
-9	electrónicos	eletrônico	ADJ	adj|M|P	Gender=Masc|Number=Plur	8	amod	_	_
-10	e	e	CONJ	conj-c|<co-postnom>	_	9	cc	_	_
-11	informáticos	informático	ADJ	adj|M|P	Gender=Masc|Number=Plur	9	conj	_	_
-12	.	.	PUNCT	punc	_	4	punct	_	_
+# text = Estes monstros são comandados e controlados por meios electrónicos e informáticos.
+# forest 1
+# source CETEMPúblico n=318 sec=soc sem=94a
+# sent_id = CP318-7
+# id 1680
+1	Estes	este	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_
+2	monstros	monstro	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
+3	são	ser	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	comandados	comandar	VERB	<first-cjt>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	3	ccomp	_	_
+5	e	e	CCONJ	<co-pcv>|KC|@CO	_	6	cc	_	_
+6	controlados	controlar	VERB	<cjt>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	4	conj	_	_
+7	por	por	ADP	PRP|@PASS	_	8	case	_	_
+8	meios	meio	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obj	_	_
+9	electrónicos	eletrônico	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	8	amod	_	_
+10	e	e	CCONJ	<co-postnom>|KC|@CO	_	11	cc	_	_
+11	informáticos	informático	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	9	conj	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

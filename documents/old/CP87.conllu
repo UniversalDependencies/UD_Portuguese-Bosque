@@ -1,274 +1,281 @@
-# distance_from_new = 0
-# new_sent_id = CP87-1
-# sent_id = pt-ud-train.conllu#s468/pt
-# orig_file_sentence = 005#68
-1	Grã-Bretanha	Grã-Bretanha	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nsubj	_	_
-2	quer	querer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	banir	banir	VERB	v-inf	VerbForm=Inf	2	xcomp	_	_
-4	açúcar	açúcar	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-5	artificial	artificial	ADJ	adj|M|S	Gender=Masc|Number=Sing	4	amod	_	_
+# text = Grã-Bretanha quer banir açúcar artificial
+# forest 1
+# source CETEMPúblico n=87 sec=nd sem=91b
+# sent_id = CP87-1
+# id 468
+1	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
+2	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	banir	banir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
+4	açúcar	açúcar	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
+5	artificial	artificial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP87-2
-# sent_id = pt-ud-train.conllu#s469/pt
-# orig_file_sentence = 005#69
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Grã-Bretanha	Grã-Bretanha	PROPN	prop|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	pediu	pedir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	ccomp	_	_
+# text = A Grã-Bretanha pediu na segunda-feira à Comunidade Europeia que fosse banido um açúcar artificial usado na produção de refrigerantes, revelaram fontes diplomáticas comunitárias e industriais citadas pela Reuter.
+# forest 1
+# source CETEMPúblico n=87 sec=nd sem=91b
+# sent_id = CP87-2
+# id 469
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	pediu	pedir	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	ccomp	_	_
 4-5	na	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
-6	segunda-feira	segunda-feira	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
+4	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
+6	segunda-feira	segunda-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
 7-8	à	_	_	_	_	_	_	_	_
-7	a	a	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
-9	Comunidade	Comunidade	PROPN	prop|F|S	_	3	iobj	_	MWE=Comunidade_Europeia|MWEPOS=PROPN
-10	Europeia	Europeia	PROPN	PROPN	_	9	name	_	_
-11	que	que	SCONJ	conj-s	_	13	mark	_	_
-12	fosse	ser	VERB	v-fin|IMPF|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	auxpass	_	_
-13	banido	banir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	3	ccomp	_	_
-14	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	açúcar	açúcar	NOUN	n|M|S	Gender=Masc|Number=Sing	13	nsubjpass	_	_
-16	artificial	artificial	ADJ	adj|M|S	Gender=Masc|Number=Sing	15	amod	_	_
-17	usado	usar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	15	acl	_	_
+7	a	a	ADP	<sam->|PRP|@<PIV	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
+9	Comunidade	Comunidade	PROPN	PROP|F|S|@P<	_	3	iobj	_	MWE=Comunidade_Europeia|MWEPOS=PROPN
+10	Europeia	Europeia	PROPN	PROP|@N<	_	9	flat	_	_
+11	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
+12	fosse	ser	VERB	<aux>|V|IMPF|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	_	_
+13	banido	banir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	12	ccomp	_	_
+14	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	açúcar	açúcar	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	12	nsubj	_	_
+16	artificial	artificial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	amod	_	_
+17	usado	usar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	15	acl	_	_
 18-19	na	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	20	det	_	_
-20	produção	produção	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	refrigerantes	refrigerante	NOUN	n|M|P	Gender=Masc|Number=Plur	20	nmod	_	_
-23	,	,	PUNCT	punc	_	24	punct	_	_
-24	revelaram	revelar	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-25	fontes	fonte	NOUN	n|F|P	Gender=Fem|Number=Plur	24	nsubj	_	_
-26	diplomáticas	diplomático	ADJ	adj|F|P	Gender=Fem|Number=Plur	25	amod	_	_
-27	comunitárias	comunitário	ADJ	adj|F|P	Gender=Fem|Number=Plur	26	conj	_	_
-28	e	e	CONJ	conj-c|<co-postnom>	_	26	cc	_	_
-29	industriais	industrial	ADJ	adj|F|P	Gender=Fem|Number=Plur	26	conj	_	_
-30	citadas	citar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	25	acl	_	_
+18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	20	det	_	_
+20	produção	produção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	_
+21	de	de	ADP	PRP|@N<ARG	_	22	case	_	_
+22	refrigerantes	refrigerante	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+24	revelaram	revelar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+25	fontes	fonte	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	24	nsubj	_	_
+26	diplomáticas	diplomático	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	25	amod	_	_
+27	comunitárias	comunitário	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	26	conj	_	_
+28	e	e	CCONJ	<co-postnom>|KC|@CO	_	29	cc	_	_
+29	industriais	industrial	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	26	conj	_	_
+30	citadas	citar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	25	acl	_	_
 31-32	pela	_	_	_	_	_	_	_	_
-31	por	por	ADP	prp|<sam->	AdpType=Prep	33	case	_	_
-32	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	33	det	_	_
-33	Reuter	Reuter	PROPN	prop|F|S	Gender=Fem|Number=Sing	30	dobj	_	_
-34	.	.	PUNCT	punc	_	24	punct	_	_
+31	por	por	ADP	PRP|@PASS	_	33	case	_	_
+32	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	33	det	_	_
+33	Reuter	Reuter	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	30	obj	_	SpaceAfter=No
+34	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP87-3
-# sent_id = pt-ud-train.conllu#s470/pt
-# orig_file_sentence = 005#70
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	britânicos	britânico	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nsubj	_	_
-3	advogam	advogar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	que	que	SCONJ	conj-s	_	25	mark	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	substânca	substânca	NOUN	n|F|S	Gender=Fem|Number=Sing	25	nsubj	_	_
-7	em	em	ADP	pp	AdpType=Prep	6	advmod	_	MWE=em_questão|MWEPOS=ADV
-8	questão	questão	NOUN	NOUN	_	7	mwe	_	_
-9	,	,	PUNCT	punc	_	6	punct	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	ciclamato	ciclamato	NOUN	n|M|S	Gender=Masc|Number=Sing	6	appos	_	_
-12	--	--	PUNCT	punc	_	11	punct	_	_
-13	30	30	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	14	nummod	_	_
-14	vezes	vez	NOUN	n|F|P	Gender=Fem|Number=Plur	16	nmod	_	_
-15	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	16	advmod	_	_
-16	doce	doce	ADJ	adj|M|S	Gender=Masc|Number=Sing	11	amod	_	_
+# text = Os britânicos advogam que a substânca em questão, o ciclamato -- 30 vezes mais doce do que o açúcar -- não é seguro para o ser humano e ameaçam vetar uma lei sobre a segurança alimentar, que os ministros do comércio da CEE estão a discutir, se o produto não for proibido.
+# forest 1
+# source CETEMPúblico n=87 sec=nd sem=91b &W
+# sent_id = CP87-3
+# id 470
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	britânicos	britânico	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
+3	advogam	advogar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	que	que	SCONJ	KS|@SUB	_	25	mark	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	substânca	substânca	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	25	nsubj	_	_
+7	em	em	ADP	PRP|@N<	_	6	advmod	_	MWE=em_questão|MWEPOS=ADV
+8	questão	questão	NOUN	N|@P<	_	7	fixed	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	ciclamato	ciclamato	NOUN	<np-def>|N|M|S|@APP	Gender=Masc|Number=Sing	6	appos	_	_
+12	--	--	PUNCT	PU|@PU	_	11	punct	_	_
+13	30	30	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	14	nummod	_	_
+14	vezes	vez	NOUN	<np-def>|N|F|P|@>A	Gender=Fem|Number=Plur	16	obl	_	_
+15	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	16	advmod	_	_
+16	doce	doce	ADJ	<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
 17-18	do	_	_	_	_	_	_	_	_
-17	de	de	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-18	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-19	que	que	SCONJ	SCONJ	_	17	mwe	_	_
-20	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	açúcar	açúcar	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nsubj	_	_
-22	--	--	PUNCT	punc	_	11	punct	_	_
-23	não	não	ADV	adv	_	25	neg	_	_
-24	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_
-25	seguro	seguro	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	3	ccomp	_	_
-26	para	para	ADP	prp	AdpType=Prep	28	case	_	_
-27	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	ser	ser	NOUN	n|M|S	_	25	nmod	_	MWE=ser_humano|MWEPOS=NOUN
-29	humano	humano	NOUN	NOUN	_	28	compound	_	_
-30	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	3	cc	_	_
-31	ameaçam	ameaçar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
-32	vetar	vetar	VERB	v-inf	VerbForm=Inf	31	xcomp	_	_
-33	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
-34	lei	lei	NOUN	n|F|S	Gender=Fem|Number=Sing	32	dobj	_	_
-35	sobre	sobre	ADP	prp	AdpType=Prep	37	case	_	_
-36	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
-37	segurança	segurança	NOUN	n|F|S	Gender=Fem|Number=Sing	34	nmod	_	_
-38	alimentar	alimentar	ADJ	adj|F|S	Gender=Fem|Number=Sing	37	amod	_	_
-39	,	,	PUNCT	punc	_	34	punct	_	_
-40	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	51	dobj	_	_
-41	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	42	det	_	_
-42	ministros	ministro	NOUN	n|M|P	_	49	nsubj	_	MWE=ministros_do_comércio|MWEPOS=NOUN
+17	de	de	ADP	<sam->|PRP|@COM	_	16	case	_	_
+18	o	o	DET	<dem>|<-sam>|DET|M|S|@P<	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+19	que	que	SCONJ	<rel>|INDP|M|S|@N<	_	17	fixed	_	_
+20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	açúcar	açúcar	NOUN	<first-cjt>|<np-def>|N|M|S|@KOMP<	Gender=Masc|Number=Sing	17	nsubj	_	_
+22	--	--	PUNCT	PU|@PU	_	11	punct	_	_
+23	não	não	ADV	_	Polarity=Neg	25	advmod	_	_
+24	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_
+25	seguro	seguro	ADJ	<n>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	ccomp	_	_
+26	para	para	ADP	PRP|@<ADVL	_	28	case	_	_
+27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	ser	ser	NOUN	_	_	25	obl	_	MWE=ser_humano|MWEPOS=NOUN
+29	humano	humano	NOUN	_	_	28	compound	_	_
+30	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	31	cc	_	_
+31	ameaçam	ameaçar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+32	vetar	vetar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	31	xcomp	_	_
+33	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
+34	lei	lei	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	32	obj	_	_
+35	sobre	sobre	ADP	PRP|@N<	_	37	case	_	_
+36	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+37	segurança	segurança	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	34	nmod	_	_
+38	alimentar	alimentar	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	37	amod	_	SpaceAfter=No
+39	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+40	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	51	obj	_	_
+41	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	42	det	_	_
+42	ministros	ministro	NOUN	<np-def>|N|M|P|@SUBJ>	_	49	nsubj	_	MWE=ministros_do_comércio|MWEPOS=NOUN
 43-44	do	_	_	_	_	_	_	_	_
-43	de	de	ADP	prp|<sam->	AdpType=Prep	45	case	_	_
-44	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
-45	comércio	comércio	NOUN	NOUN	_	42	compound	_	_
+43	de	de	ADP	<sam->|PRP|@N<	_	45	case	_	_
+44	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	comércio	comércio	NOUN	N|@P<	_	42	compound	_	_
 46-47	da	_	_	_	_	_	_	_	_
-46	de	de	ADP	prp|<sam->	AdpType=Prep	48	case	_	_
-47	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	48	det	_	_
-48	CEE	CEE	PROPN	prop|F|S	Gender=Fem|Number=Sing	42	nmod	_	_
-49	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	34	acl	_	_
-50	a	a	ADP	prp	AdpType=Prep	51	mark	_	_
-51	discutir	discutir	VERB	v-inf	VerbForm=Inf	49	xcomp	_	_
-52	,	,	PUNCT	punc	_	34	punct	_	_
-53	se	se	SCONJ	conj-s	_	58	mark	_	_
-54	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
-55	produto	produto	NOUN	n|M|S	Gender=Masc|Number=Sing	58	nsubjpass	_	_
-56	não	não	ADV	adv	_	58	neg	_	_
-57	for	ser	VERB	v-fin|FUT|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	58	auxpass	_	_
-58	proibido	proibir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	31	advcl	_	_
-59	.	.	PUNCT	punc	_	3	punct	_	_
+46	de	de	ADP	<sam->|PRP|@N<	_	48	case	_	_
+47	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	48	det	_	_
+48	CEE	CEE	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	42	nmod	_	_
+49	estão	estar	VERB	<aux>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	34	acl	_	_
+50	a	a	ADP	PRP|@PRT-AUX<	_	51	mark	_	_
+51	discutir	discutir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	49	xcomp	_	SpaceAfter=No
+52	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+53	se	se	SCONJ	KS|@SUB	_	57	mark	_	_
+54	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
+55	produto	produto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	57	nsubj	_	_
+56	não	não	ADV	_	Polarity=Neg	58	advmod	_	_
+57	for	ser	VERB	<aux>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	31	advcl	_	_
+58	proibido	proibir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	57	ccomp	_	SpaceAfter=No
+59	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP87-4
-# sent_id = pt-ud-train.conllu#s471/pt
-# orig_file_sentence = 005#71
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	França	França	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
-3	e	e	CONJ	conj-c|<co-subj>	_	2	cc	_	_
-4	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Grécia	Grécia	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	conj	_	_
-6	apoiam	apoiar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Grã-Bretanha	Grã-Bretanha	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	dobj	_	_
-9	.	.	PUNCT	punc	_	6	punct	_	_
+# text = A França e a Grécia apoiam a Grã-Bretanha.
+# forest 1
+# source CETEMPúblico n=87 sec=nd sem=91b
+# sent_id = CP87-4
+# id 471
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	França	França	PROPN	<first-cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	_
+4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Grécia	Grécia	PROPN	<cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	conj	_	_
+6	apoiam	apoiar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP87-5
-# sent_id = pt-ud-train.conllu#s472/pt
-# orig_file_sentence = 005#72
-1	Este	este	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
-2	tipo	tipo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubjpass	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	açúcar	açúcar	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-5	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	auxpass	_	_
-6	banido	banir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+# text = Este tipo de açúcar foi banido nos Estados Unidos e na Grã-Bretanha depois duma série de testes ter demonstrado que o produto provocava cancro nos ratos.
+# forest 1
+# source CETEMPúblico n=87 sec=nd sem=91b
+# sent_id = CP87-5
+# id 472
+1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	tipo	tipo	NOUN	<meta>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	açúcar	açúcar	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+5	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	banido	banir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	5	ccomp	_	_
 7-8	nos	_	_	_	_	_	_	_	_
-7	em	em	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
-9	Estados	Estados	PROPN	prop|M|P	_	6	nmod	_	MWE=Estados_Unidos|MWEPOS=PROPN
-10	Unidos	Unidos	PROPN	PROPN	_	9	name	_	_
-11	e	e	CONJ	conj-c|<co-advl>	_	9	cc	_	_
+7	em	em	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	9	case	_	_
+8	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+9	Estados	Estados	PROPN	<first-cjt>|PROP|M|P|@P<	_	6	obl	_	MWE=Estados_Unidos|MWEPOS=PROPN
+10	Unidos	Unidos	PROPN	PROP|@N<	_	9	flat	_	_
+11	e	e	CCONJ	<co-advl>|KC|@CO	_	14	cc	_	_
 12-13	na	_	_	_	_	_	_	_	_
-12	em	em	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	14	det	_	_
-14	Grã-Bretanha	Grã-Bretanha	PROPN	prop|F|S	Gender=Fem|Number=Sing	9	conj	_	_
-15	depois	depois	ADV	adv	_	6	advmod	_	_
+12	em	em	ADP	<sam->|<cjt>|PRP|@<ADVL	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	14	det	_	_
+14	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
+15	depois	depois	ADV	ADV|@<ADVL	_	6	advmod	_	_
 16-17	duma	_	_	_	_	_	_	_	_
-16	de	de	ADP	prp	AdpType=Prep	22	mark	_	_
-17	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	série	série	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nsubj	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-20	testes	teste	NOUN	n|M|P	Gender=Masc|Number=Plur	18	nmod	_	_
-21	ter	ter	VERB	v-inf|3S	Number=Sing|Person=3|VerbForm=Inf	22	aux	_	_
-22	demonstrado	demonstrar	VERB	v-pcp	VerbForm=Part	15	advcl	_	_
-23	que	que	SCONJ	conj-s	_	26	mark	_	_
-24	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	produto	produto	NOUN	n|M|S	Gender=Masc|Number=Sing	26	nsubj	_	_
-26	provocava	provocar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	ccomp	_	_
-27	cancro	cancro	NOUN	n|M|S	Gender=Masc|Number=Sing	26	dobj	_	_
+16	de	de	ADP	PRP|@A<ARG	_	21	mark	_	_
+17	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	série	série	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	21	nsubj	_	_
+19	de	de	ADP	PRP|@N<	_	20	case	_	_
+20	testes	teste	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	_
+21	ter	ter	VERB	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	15	advcl	_	_
+22	demonstrado	demonstrar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	21	ccomp	_	_
+23	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
+24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+25	produto	produto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	26	nsubj	_	_
+26	provocava	provocar	VERB	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	ccomp	_	_
+27	cancro	cancro	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	26	obj	_	_
 28-29	nos	_	_	_	_	_	_	_	_
-28	em	em	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
-30	ratos	rato	NOUN	n|M|P	Gender=Masc|Number=Plur	26	nmod	_	_
-31	.	.	PUNCT	punc	_	6	punct	_	_
+28	em	em	ADP	<sam->|PRP|@<ADVL	_	30	case	_	_
+29	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
+30	ratos	rato	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	26	obl	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP87-6
-# sent_id = pt-ud-train.conllu#s473/pt
-# orig_file_sentence = 005#73
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Grã-Bretanha	Grã-Bretanha	PROPN	prop|F|S	Gender=Fem|Number=Sing	15	nsubj	_	_
-3	--	--	PUNCT	punc	_	2	punct	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-5	único	único	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
-6	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
+# text = A Grã-Bretanha -- o único país da CEE que proibiu o produto -- quer agora banir os ciclamatos da CEE baseados no argumento de que o produto leva, nos animais, à atrofia e degeneração testicular.
+# forest 1
+# source CETEMPúblico n=87 sec=nd sem=91b
+# sent_id = CP87-6
+# id 473
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
+3	--	--	PUNCT	PU|@PU	_	2	punct	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+5	único	único	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	6	amod	_	_
+6	país	país	NOUN	<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	2	nmod	_	_
 7-8	da	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
-9	CEE	CEE	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-10	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	11	nsubj	_	_
-11	proibiu	proibir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
-12	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	produto	produto	NOUN	n|M|S	Gender=Masc|Number=Sing	11	dobj	_	_
-14	--	--	PUNCT	punc	_	2	punct	_	_
-15	quer	querer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-16	agora	agora	ADV	adv|<kc>	_	15	advmod	_	_
-17	banir	banir	VERB	v-inf	VerbForm=Inf	15	xcomp	_	_
-18	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-19	ciclamatos	ciclamato	NOUN	n|M|P	Gender=Masc|Number=Plur	17	dobj	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	9	det	_	_
+9	CEE	CEE	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+10	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	proibiu	proibir	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
+12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	produto	produto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_
+14	--	--	PUNCT	PU|@PU	_	2	punct	_	_
+15	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+16	agora	agora	ADV	<kc>|ADV|@<ADVL	_	15	advmod	_	_
+17	banir	banir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	15	xcomp	_	_
+18	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
+19	ciclamatos	ciclamato	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	17	obj	_	_
 20-21	da	_	_	_	_	_	_	_	_
-20	de	de	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	22	det	_	_
-22	CEE	CEE	PROPN	prop|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-23	baseados	basear	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	17	advcl	_	_
+20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
+21	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	22	det	_	_
+22	CEE	CEE	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
+23	baseados	basear	VERB	<mv>|V|PCP|M|P|@ICL-<ADVL	Gender=Masc|Number=Plur|VerbForm=Part	17	advcl	_	_
 24-25	no	_	_	_	_	_	_	_	_
-24	em	em	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	argumento	argumento	NOUN	n|M|S	Gender=Masc|Number=Sing	23	dobj	_	_
-27	de	de	ADP	prp	AdpType=Prep	31	mark	_	_
-28	que	que	SCONJ	conj-s	_	31	mark	_	_
-29	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	produto	produto	NOUN	n|M|S	Gender=Masc|Number=Sing	31	nsubj	_	_
-31	leva	levar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	acl	_	_
-32	,	,	PUNCT	punc	_	31	punct	_	_
+24	em	em	ADP	<sam->|PRP|@<PIV	_	26	case	_	_
+25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	argumento	argumento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	obj	_	_
+27	de	de	ADP	PRP|@N<ARG	_	31	mark	_	_
+28	que	que	SCONJ	KS|@SUB	_	31	mark	_	_
+29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	produto	produto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	31	nsubj	_	_
+31	leva	levar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	acl	_	SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 33-34	nos	_	_	_	_	_	_	_	_
-33	em	em	ADP	prp|<sam->	AdpType=Prep	35	case	_	_
-34	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_
-35	animais	animal	NOUN	n|M|P	Gender=Masc|Number=Plur	31	nmod	_	_
-36	,	,	PUNCT	punc	_	31	punct	_	_
+33	em	em	ADP	<sam->|PRP|@<ADVL	_	35	case	_	_
+34	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_
+35	animais	animal	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	31	obl	_	SpaceAfter=No
+36	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 37-38	à	_	_	_	_	_	_	_	_
-37	a	a	ADP	prp|<sam->	AdpType=Prep	39	case	_	_
-38	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	39	det	_	_
-39	atrofia	atrofia	NOUN	n|F|S	Gender=Fem|Number=Sing	31	dobj	_	_
-40	e	e	CONJ	conj-c|<co-prparg>	_	39	cc	_	_
-41	degeneração	degeneração	NOUN	n|F|S	Gender=Fem|Number=Sing	39	conj	_	_
-42	testicular	testicular	ADJ	adj|F|S	Gender=Fem|Number=Sing	41	amod	_	_
-43	.	.	PUNCT	punc	_	15	punct	_	_
+37	a	a	ADP	<sam->|PRP|@<PIV	_	39	case	_	_
+38	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	39	det	_	_
+39	atrofia	atrofia	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	31	obj	_	_
+40	e	e	CCONJ	<co-prparg>|KC|@CO	_	41	cc	_	_
+41	degeneração	degeneração	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	39	conj	_	_
+42	testicular	testicular	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	41	amod	_	SpaceAfter=No
+43	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP87-7
-# sent_id = pt-ud-train.conllu#s474/pt
-# orig_file_sentence = 005#74
-1	Mas	mas	CONJ	conj-c	_	20	cc	_	_
-2	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	comissão	comissão	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nsubj	_	_
+# text = Mas a comissão da CEE para a segurança alimentar, baseada em peritos dos Doze países, aprovou os ciclamatos depois de analisar o consumo médio em relação aos humanos durante um período de vida.
+# forest 1
+# source CETEMPúblico n=87 sec=nd sem=91b
+# sent_id = CP87-7
+# id 474
+1	Mas	mas	CCONJ	KC|@CO	_	20	cc	_	_
+2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	comissão	comissão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
-6	CEE	CEE	PROPN	prop|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-7	para	para	ADP	prp	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	segurança	segurança	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-10	alimentar	alimentar	ADJ	adj|F|S	Gender=Fem|Number=Sing	9	amod	_	_
-11	,	,	PUNCT	punc	_	20	punct	_	_
-12	baseada	basear	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	20	advcl	_	_
-13	em	em	ADP	prp	AdpType=Prep	14	case	_	_
-14	peritos	perito	NOUN	n|M|P	Gender=Masc|Number=Plur	12	dobj	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
+6	CEE	CEE	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+7	para	para	ADP	PRP|@N<	_	9	case	_	_
+8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	segurança	segurança	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+10	alimentar	alimentar	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	9	amod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+12	baseada	basear	VERB	<mv>|V|PCP|F|S|@ICL-ADVL>	Gender=Fem|Number=Sing|VerbForm=Part	20	advcl	_	_
+13	em	em	ADP	PRP|@<PIV	_	14	case	_	_
+14	peritos	perito	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	obj	_	_
 15-16	dos	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-16	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
-17	Doze	doze	NUM	num|<prop>|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
-18	países	país	NOUN	n|M|P	Gender=Masc|Number=Plur	14	nmod	_	_
-19	,	,	PUNCT	punc	_	20	punct	_	_
-20	aprovou	aprovar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-21	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
-22	ciclamatos	ciclamato	NOUN	n|M|P	Gender=Masc|Number=Plur	20	dobj	_	_
-23	depois	depois	ADV	adv	_	20	advmod	_	_
-24	de	de	ADP	prp	AdpType=Prep	25	mark	_	_
-25	analisar	analisar	VERB	v-inf	VerbForm=Inf	23	advcl	_	_
-26	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	consumo	consumo	NOUN	n|M|S	Gender=Masc|Number=Sing	25	dobj	_	_
-28	médio	médio	ADJ	adj|M|S	Gender=Masc|Number=Sing	27	amod	_	_
-29	em	em	ADP	prp|<sam->	AdpType=Prep	33	case	_	MWE=em_relação_a|MWEPOS=ADP
-30	relação	relação	NOUN	NOUN	_	29	mwe	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
+16	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
+17	Doze	doze	NUM	<prop>|<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	18	nummod	_	_
+18	países	país	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+20	aprovou	aprovar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+21	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+22	ciclamatos	ciclamato	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	20	obj	_	_
+23	depois	depois	ADV	ADV|@<ADVL	_	20	advmod	_	_
+24	de	de	ADP	PRP|@A<ARG	_	25	mark	_	_
+25	analisar	analisar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	23	advcl	_	_
+26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	consumo	consumo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	25	obj	_	_
+28	médio	médio	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	27	amod	_	_
+29	em	em	ADP	<sam->|PRP|@N<	_	33	case	_	MWE=em_relação_a|MWEPOS=ADP
+30	relação	relação	NOUN	N|@P<	_	29	fixed	_	_
 31-32	aos	_	_	_	_	_	_	_	_
-31	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	mwe	_	_
-32	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
-33	humanos	humano	ADJ	adj|<n>|M|P	Gender=Masc|Number=Plur	27	amod	_	_
-34	durante	durante	ADP	prp	AdpType=Prep	36	case	_	_
-35	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-36	período	período	NOUN	n|M|S	Gender=Masc|Number=Sing	25	nmod	_	_
-37	de	de	ADP	prp	AdpType=Prep	38	case	_	_
-38	vida	vida	NOUN	n|F|S	Gender=Fem|Number=Sing	36	nmod	_	_
-39	.	.	PUNCT	punc	_	20	punct	_	_
+31	a	a	DET	PRP|@N<	Gender=Fem|Number=Sing|PronType=Art	29	fixed	_	_
+32	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
+33	humanos	humano	ADJ	<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	27	amod	_	_
+34	durante	durante	ADP	PRP|@<ADVL	_	36	case	_	_
+35	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	período	período	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	25	obl	_	_
+37	de	de	ADP	PRP|@N<	_	38	case	_	_
+38	vida	vida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	SpaceAfter=No
+39	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 

@@ -1,113 +1,117 @@
-# distance_from_new = 0
-# new_sent_id = CF308-1
-# sent_id = pt-ud-train.conllu#s6323/pt
-# orig_file_sentence = 064#23
-1	FHC	FHC	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	atrai	atrair	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	peemedebistas	peemedebista	NOUN	n|M|R	Gender=Masc	2	dobj	_	_
+# text = FHC atrai peemedebistas
+# forest 1
+# source CETENFolha n=308 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF308-1
+# id 1281
+1	FHC	FHC	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	atrai	atrair	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	peemedebistas	peemedebista	NOUN	<np-idf>|N|M|R|@<ACC	Gender=Masc	2	obj	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF308-3
-# sent_id = pt-ud-train.conllu#s6324/pt
-# orig_file_sentence = 064#24
-1	Editor	editor	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Editor do Painel
+# forest 1
+# source CETENFolha n=308 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF308-3
+# id 1282
+1	Editor	editor	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2-3	do	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	Painel	painel	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
+2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
+3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Painel	painel	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
-# distance_from_new = 2
-# new_sent_id = CF308-4
-# sent_id = pt-ud-train.conllu#s6325/pt
-# orig_file_sentence = 064#25
-1	Parte	parte	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nsubj	_	_
+# text = Parte do crescimento de Fernando Henrique na última pesquisa Datafolha deve-se à evolução do tucano entre os eleitores que declaram simpatia pelo PMDB de Orestes Quércia e pelo PPR de Esperidião Amin.
+# forest 1
+# source CETENFolha n=308 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF308-4
+# id 1283
+1	Parte	parte	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	crescimento	crescimento	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	Fernando	Fernando	PROPN	prop|M|S	_	4	nmod	_	MWE=Fernando_Henrique|MWEPOS=PROPN
-7	Henrique	Henrique	PROPN	PROPN	_	6	name	_	_
+2	de	de	ADP	PRP|@N<ARG	_	4	case	_	_
+3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	crescimento	crescimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	Fernando	Fernando	PROPN	_	_	4	nmod	_	MWE=Fernando_Henrique|MWEPOS=PROPN
+7	Henrique	Henrique	PROPN	_	_	6	flat	_	_
 8-9	na	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-10	última	último	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	11	amod	_	_
-11	pesquisa	pesquisa	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-12	Datafolha	Datafolha	PROPN	prop|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
+8	em	em	ADP	<sam->|PRP|@N<	_	11	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	última	último	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	11	amod	_	_
+11	pesquisa	pesquisa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+12	Datafolha	Datafolha	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	11	nmod	_	_
 13-14	deve-se	_	_	_	_	_	_	_	_
 13	deve	dever	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-14	-se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	13	dobj	_	_
+14	-se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	13	obj	_	_
 15-16	à	_	_	_	_	_	_	_	_
-15	a	a	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	evolução	evolução	NOUN	n|F|S	Gender=Fem|Number=Sing	13	iobj	_	_
+15	a	a	ADP	<sam->|PRP|@<PIV	_	17	case	_	_
+16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	evolução	evolução	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	iobj	_	_
 18-19	do	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	tucano	tucano	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-21	entre	entre	ADP	prp	AdpType=Prep	23	case	_	_
-22	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
-23	eleitores	eleitor	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-24	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	25	nsubj	_	_
-25	declaram	declarar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	acl	_	_
-26	simpatia	simpatia	NOUN	n|F|S	Gender=Fem|Number=Sing	25	dobj	_	_
+18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	tucano	tucano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
+21	entre	entre	ADP	PRP|@N<	_	23	case	_	_
+22	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
+23	eleitores	eleitor	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
+24	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	25	nsubj	_	_
+25	declaram	declarar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	acl	_	_
+26	simpatia	simpatia	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	25	obj	_	_
 27-28	pelo	_	_	_	_	_	_	_	_
-27	por	por	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	PMDB	PMDB	PROPN	prop|M|S	Gender=Masc|Number=Sing	25	nmod	_	_
-30	de	de	ADP	prp	AdpType=Prep	31	case	_	_
-31	Orestes	Orestes	PROPN	prop|M|S	_	29	nmod	_	MWE=Orestes_Quércia|MWEPOS=PROPN
-32	Quércia	Quércia	PROPN	PROPN	_	31	name	_	_
-33	e	e	CONJ	conj-c|<co-advl>	_	29	cc	_	_
+27	por	por	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	29	case	_	_
+28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	PMDB	PMDB	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	25	obl	_	_
+30	de	de	ADP	PRP|@N<	_	31	case	_	_
+31	Orestes	Orestes	PROPN	_	_	29	nmod	_	MWE=Orestes_Quércia|MWEPOS=PROPN
+32	Quércia	Quércia	PROPN	_	_	31	flat	_	_
+33	e	e	CCONJ	<co-advl>|KC|@CO	_	36	cc	_	_
 34-35	pelo	_	_	_	_	_	_	_	_
-34	por	por	ADP	prp|<sam->	AdpType=Prep	36	case	_	_
-35	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-36	PPR	PPR	PROPN	prop|M|S	Gender=Masc|Number=Sing	29	conj	_	_
-37	de	de	ADP	prp	AdpType=Prep	38	case	_	_
-38	Esperidião	Esperidião	PROPN	prop|M|S	_	36	nmod	_	MWE=Esperidião_Amin|MWEPOS=PROPN
-39	Amin	Amin	PROPN	PROPN	_	38	name	_	_
-40	.	.	PUNCT	punc	_	13	punct	_	_
+34	por	por	ADP	<sam->|<cjt>|PRP|@<ADVL	_	36	case	_	_
+35	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	PPR	PPR	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	29	conj	_	_
+37	de	de	ADP	PRP|@N<	_	38	case	_	_
+38	Esperidião	Esperidião	PROPN	_	_	36	nmod	_	MWE=Esperidião_Amin|MWEPOS=PROPN
+39	Amin	Amin	PROPN	_	_	38	flat	_	SpaceAfter=No
+40	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF308-5
-# sent_id = pt-ud-train.conllu#s6326/pt
-# orig_file_sentence = 064#26
-1	FHC	FHC	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	foi	ir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-4	33	33	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
-5	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	2	advmod	_	_
-6	para	para	ADP	prp	AdpType=Prep	8	case	_	_
-7	41	41	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
-8	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-9	entre	entre	ADP	prp	AdpType=Prep	11	case	_	_
-10	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
-11	peemdebistas	peemdebista	NOUN	n|<DERS>|M|P	Gender=Masc|Number=Plur	2	nmod	_	_
-12	(	(	PUNCT	punc	_	11	punct	_	_
-13	oito	oito	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	_
-14	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	11	nmod	_	_
-15	percentuais	percentual	ADJ	adj|M|P	Gender=Masc|Number=Plur	14	amod	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-17	crescimento	crescimento	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-18	)	)	PUNCT	punc	_	11	punct	_	_
-19	e	e	CONJ	conj-c|<co-postnom>	_	11	cc	_	_
-20	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-21	31	31	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
-22	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	11	conj	_	_
-23	para	para	ADP	prp	AdpType=Prep	25	case	_	_
-24	42	42	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	25	nummod	_	_
-25	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	22	nmod	_	_
+# text = FHC foi de 33 % para 41 % entre os peemdebistas (oito pontos percentuais de crescimento) e de 31 % para 42 % no eleitorado do PPR (11 pontos).
+# forest 1
+# source CETENFolha n=308 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF308-5
+# id 1284
+1	FHC	FHC	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	foi	ir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	de	de	ADP	<first-cjt>|PRP|@<ADVL	_	5	case	_	_
+4	33	33	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
+5	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	advmod	_	_
+6	para	para	ADP	PRP|@P<	_	8	case	_	_
+7	41	41	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	8	nummod	_	_
+8	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
+9	entre	entre	ADP	PRP|@<ADVL	_	11	case	_	_
+10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	peemdebistas	peemdebista	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	obl	_	_
+12	(	(	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
+13	oito	oito	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	_
+14	pontos	ponto	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	11	nmod	_	_
+15	percentuais	percentual	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	14	amod	_	_
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	crescimento	crescimento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No
+18	)	)	PUNCT	PU|@PU	_	11	punct	_	_
+19	e	e	CCONJ	<co-postnom>|KC|@CO	_	22	cc	_	_
+20	de	de	ADP	<cjt>|PRP|@<ADVL	_	22	case	_	_
+21	31	31	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
+22	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	conj	_	_
+23	para	para	ADP	PRP|@P<	_	25	case	_	_
+24	42	42	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	25	nummod	_	_
+25	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
 26-27	no	_	_	_	_	_	_	_	_
-26	em	em	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-27	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	eleitorado	eleitorado	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
+26	em	em	ADP	<sam->|PRP|@<ADVL	_	28	case	_	_
+27	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	eleitorado	eleitorado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
 29-30	do	_	_	_	_	_	_	_	_
-29	de	de	ADP	prp|<sam->	AdpType=Prep	31	case	_	_
-30	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
-31	PPR	PPR	PROPN	prop|M|S	Gender=Masc|Number=Sing	28	nmod	_	_
-32	(	(	PUNCT	punc	_	31	punct	_	_
-33	11	11	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	34	nummod	_	_
-34	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	31	nmod	_	_
-35	)	)	PUNCT	punc	_	31	punct	_	_
-36	.	.	PUNCT	punc	_	2	punct	_	_
+29	de	de	ADP	<sam->|PRP|@N<	_	31	case	_	_
+30	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	PPR	PPR	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	28	nmod	_	_
+32	(	(	PUNCT	PU|@PU	_	31	punct	_	SpaceAfter=No
+33	11	11	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	34	nummod	_	_
+34	pontos	ponto	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	31	nmod	_	SpaceAfter=No
+35	)	)	PUNCT	PU|@PU	_	31	punct	_	SpaceAfter=No
+36	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

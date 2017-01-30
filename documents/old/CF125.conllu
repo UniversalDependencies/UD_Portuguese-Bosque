@@ -1,75 +1,78 @@
-# distance_from_new = 0
-# new_sent_id = CF125-1
-# sent_id = pt-ud-train.conllu#s5536/pt
-# orig_file_sentence = 056#36
-1	Feira	feira	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
-2	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
-3	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-4	boa	bom	ADJ	adj|F|S	Gender=Fem|Number=Sing	6	amod	_	_
-5	«	«	PUNCT	punc	_	6	punct	_	_
-6	escola	escola	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-7	»	»	PUNCT	punc	_	6	punct	_	_
+# text = Feira é uma boa «escola»
+# forest 1
+# source CETENFolha n=125 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF125-1
+# id 494
+1	Feira	feira	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
+2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+4	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	6	amod	_	_
+5	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+6	escola	escola	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+7	»	»	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF125-3
-# sent_id = pt-ud-train.conllu#s5537/pt
-# orig_file_sentence = 056#37
-1	Ir	ir	VERB	v-inf	VerbForm=Inf	8	csubj	_	_
-2	a	a	ADP	prp	AdpType=Prep	4	case	_	_
-3	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	feira	feira	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-5	livre	livre	ADJ	adj|F|S	Gender=Fem|Number=Sing	4	amod	_	_
-6	serve	servir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	aula	aula	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-9	para	para	ADP	prp	AdpType=Prep	12	mark	_	_
-10	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
-11	principiantes	principiante	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nsubj	_	_
-12	aprenderem	aprender	VERB	v-inf|3P	Number=Plur|Person=3|VerbForm=Inf	8	advcl	_	_
-13	a	a	ADP	prp	AdpType=Prep	14	mark	_	_
-14	comprar	comprar	VERB	v-inf	VerbForm=Inf	12	xcomp	_	_
-15	frutas	fruta	NOUN	n|F|P	Gender=Fem|Number=Plur	14	dobj	_	_
-16	,	,	PUNCT	punc	_	15	punct	_	_
-17	legumes	legume	NOUN	n|M|P	Gender=Masc|Number=Plur	15	conj	_	_
-18	e	e	CONJ	conj-c|<co-acc>	_	15	cc	_	_
-19	verduras	verdura	NOUN	n|F|P	Gender=Fem|Number=Plur	15	conj	_	_
-20	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	21	advmod	_	_
-21	baratos	barato	ADJ	adj|M|P	Gender=Masc|Number=Plur	15	amod	_	_
-22	e	e	CONJ	conj-c|<co-postnom>	_	21	cc	_	_
-23	de	de	ADP	prp	AdpType=Prep	25	case	_	_
-24	melhor	bom	ADJ	adj|<KOMP>|<SUP>|F|S	Degree=Sup|Gender=Fem|Number=Sing	25	amod	_	_
-25	qualidade	qualidade	NOUN	n|F|S	Gender=Fem|Number=Sing	21	conj	_	_
-26	.	.	PUNCT	punc	_	8	punct	_	_
+# text = Ir a uma feira livre serve de aula para os principiantes aprenderem a comprar frutas, legumes e verduras mais baratos e de melhor qualidade.
+# forest 1
+# source CETENFolha n=125 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF125-3
+# id 495
+1	Ir	ir	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	8	csubj	_	_
+2	a	a	ADP	PRP|@<SA	_	4	case	_	_
+3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	feira	feira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	_
+5	livre	livre	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	_
+6	serve	servir	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+7	de	de	ADP	PRP|@<SC	_	8	case	_	_
+8	aula	aula	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
+9	para	para	ADP	PRP|@<ADVL	_	12	mark	_	_
+10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	principiantes	principiante	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
+12	aprenderem	aprender	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	8	advcl	_	_
+13	a	a	ADP	PRP|@<PIV	_	14	mark	_	_
+14	comprar	comprar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	xcomp	_	_
+15	frutas	fruta	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	14	obj	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+17	legumes	legume	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	15	conj	_	_
+18	e	e	CCONJ	<co-acc>|KC|@CO	_	19	cc	_	_
+19	verduras	verdura	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	15	conj	_	_
+20	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	21	advmod	_	_
+21	baratos	barato	ADJ	<first-cjt>|<COMP>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	15	amod	_	_
+22	e	e	CCONJ	<co-postnom>|KC|@CO	_	25	cc	_	_
+23	de	de	ADP	<cjt>|PRP|@N<	_	25	case	_	_
+24	melhor	bom	ADJ	<SUP>|<KOMP>|<COMP>|ADJ|F|S|@>N	Degree=Sup|Gender=Fem|Number=Sing	25	amod	_	_
+25	qualidade	qualidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	conj	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF125-4
-# sent_id = pt-ud-train.conllu#s5538/pt
-# orig_file_sentence = 056#38
-1	Mas	mas	CONJ	conj-c	_	3	cc	_	_
-2	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-3	preciso	preciso	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
-4	disposição	disposição	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-5	para	para	ADP	prp	AdpType=Prep	6	mark	_	_
-6	andar	andar	VERB	v-inf	VerbForm=Inf	3	advcl	_	_
-7	a	a	ADP	prp	AdpType=Prep	8	case	_	_
-8	feira	feira	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-9	toda	todo	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	_
-10	,	,	PUNCT	punc	_	8	punct	_	_
-11	com	com	ADP	prp	AdpType=Prep	12	case	_	_
-12	caderno	caderno	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-13	e	e	CONJ	conj-c|<co-prparg>	_	12	cc	_	_
-14	lápis	lápis	NOUN	n|M|S	Gender=Masc|Number=Sing	12	conj	_	_
+# text = Mas é preciso disposição para andar a feira toda, com caderno e lápis na mão, comparando os preços dos produtos.
+# forest 1
+# source CETENFolha n=125 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF125-4
+# id 496
+1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
+2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	preciso	preciso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+4	disposição	disposição	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	3	nsubj	_	_
+5	para	para	ADP	PRP|@<ADVL	_	6	mark	_	_
+6	andar	andar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	_
+7	a	a	ADP	PRP|@<ADVL	_	8	case	_	_
+8	feira	feira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+9	toda	todo	DET	<quant>|DET|F|S|@N<	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+11	com	com	ADP	PRP|@N<PRED	_	12	case	_	_
+12	caderno	caderno	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+13	e	e	CCONJ	<co-prparg>|KC|@CO	_	14	cc	_	_
+14	lápis	lápis	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	conj	_	_
 15-16	na	_	_	_	_	_	_	_	_
-15	em	em	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	mão	mão	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-18	,	,	PUNCT	punc	_	6	punct	_	_
-19	comparando	comparar	VERB	v-ger	VerbForm=Ger	6	advcl	_	_
-20	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-21	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	19	dobj	_	_
+15	em	em	ADP	<sam->|PRP|@<ADVL	_	17	case	_	_
+16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	mão	mão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+19	comparando	comparar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	6	advcl	_	_
+20	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
+21	preços	preço	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	19	obj	_	_
 22-23	dos	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
-24	produtos	produto	NOUN	n|M|P	Gender=Masc|Number=Plur	21	nmod	_	_
-25	.	.	PUNCT	punc	_	3	punct	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
+24	produtos	produto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	21	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

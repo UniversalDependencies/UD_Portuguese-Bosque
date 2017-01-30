@@ -1,27 +1,29 @@
-# distance_from_new = 0
-# new_sent_id = CF223-1
-# sent_id = pt-ud-train.conllu#s6003/pt
-# orig_file_sentence = 061#3
-1	Pelechia	Pelechian	PROPN	prop|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	--	--	PUNCT	punc	_	1	punct	_	_
-3	Sim	sim	ADV	adv	_	6	advmod	_	_
-4	,	,	PUNCT	punc	_	6	punct	_	_
-5	e	e	CONJ	conj-c	_	6	cc	_	_
-6	gosto	gostar	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
-7	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Pelechia -- Sim, e gosto.
+# forest 1
+# source CETENFolha n=223 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF223-1
+# id 961
+1	Pelechia	Pelechian	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	Sim	sim	ADV	ADV|@ADVL>	_	6	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+5	e	e	CCONJ	KC|@CO	_	6	cc	_	_
+6	gosto	gostar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF223-2
-# sent_id = pt-ud-train.conllu#s6004/pt
-# orig_file_sentence = 061#4
-1	Folha	Folha	PROPN	prop|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	--	--	PUNCT	punc	_	1	punct	_	_
-3	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	Sr.	sr.	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-5	acredita	acreditar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
-6	ter	ter	VERB	v-inf	VerbForm=Inf	7	aux	_	_
-7	influenciado	influenciar	VERB	v-pcp	VerbForm=Part	5	xcomp	_	_
-8	estes	este	DET	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	9	det	_	_
-9	filmes	filme	NOUN	n|M|P	Gender=Masc|Number=Plur	7	dobj	_	_
-10	?	?	PUNCT	punc	_	1	punct	_	_
+# text = Folha -- O Sr. acredita ter influenciado estes filmes?
+# forest 1
+# source CETENFolha n=223 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF223-2
+# id 962
+1	Folha	Folha	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Sr.	sr.	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+5	acredita	acreditar	VERB	<mv>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+6	ter	ter	VERB	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	5	xcomp	_	_
+7	influenciado	influenciar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	6	ccomp	_	_
+8	estes	este	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	9	det	_	_
+9	filmes	filme	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	obj	_	SpaceAfter=No
+10	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 

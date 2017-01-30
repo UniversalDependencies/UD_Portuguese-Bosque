@@ -1,98 +1,103 @@
-# distance_from_new = 0
-# new_sent_id = CF908-1
-# sent_id = pt-ud-dev.conllu#s64/pt
-# orig_file_sentence = 001#64
-1	Promoção	promoção	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nsubj	_	_
+# text = Promoção do Dia das Mães começa com desfiles
+# forest 1
+# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF908-1
+# id 3822
+1	Promoção	promoção	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	Dia	Dia	PROPN	prop|F|S	_	1	nmod	_	MWE=Dia_das_Mães|MWEPOS=PROPN
+2	de	de	ADP	<sam->|PRP|@N<ARG	_	4	case	_	_
+3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Dia	Dia	PROPN	PROP|F|S|@P<	_	1	nmod	_	MWE=Dia_das_Mães|MWEPOS=PROPN
 5-6	das	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	Mães	Mães	PROPN	PROPN	_	4	name	_	_
-8	começa	começar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	com	com	ADP	prp	AdpType=Prep	10	case	_	_
-10	desfiles	desfile	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
+5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+7	Mães	Mães	PROPN	PROP|@P<	_	4	flat	_	_
+8	começa	começar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	com	com	ADP	PRP|@<ADVL	_	10	case	_	_
+10	desfiles	desfile	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF908-3
-# sent_id = pt-ud-dev.conllu#s65/pt
-# orig_file_sentence = 001#65
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	shopping	shopping	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
-3	West	West	PROPN	prop|M|S	_	2	nmod	_	MWE=West_Plaza|MWEPOS=PROPN
-4	Plaza	Plaza	PROPN	PROPN	_	3	name	_	_
-5	já	já	ADV	adv	_	6	advmod	_	_
-6	começou	começar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	8	det	_	_
-8	promoção	promoção	NOUN	n|F|S	Gender=Fem|Number=Sing	6	dobj	_	_
-9	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-10	Dia	Dia	PROPN	prop|F|S	_	8	nmod	_	MWE=Dia_das_Mães|MWEPOS=PROPN
+# text = O shopping West Plaza já começou sua promoção de Dia das Mães.
+# forest 1
+# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF908-3
+# id 3823
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	shopping	shopping	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
+3	West	West	PROPN	_	_	2	nmod	_	MWE=West_Plaza|MWEPOS=PROPN
+4	Plaza	Plaza	PROPN	_	_	3	flat	_	_
+5	já	já	ADV	ADV|@ADVL>	_	6	advmod	_	_
+6	começou	começar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	8	det	_	_
+8	promoção	promoção	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
+9	de	de	ADP	PRP|@N<ARG	_	10	case	_	_
+10	Dia	Dia	PROPN	PROP|F|S|@P<	_	8	nmod	_	MWE=Dia_das_Mães|MWEPOS=PROPN
 11-12	das	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
-13	Mães	Mães	PROPN	PROPN	_	10	name	_	_
-14	.	.	PUNCT	punc	_	6	punct	_	_
+11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
+13	Mães	Mães	PROPN	PROP|@P<	_	10	flat	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF908-4
-# sent_id = pt-ud-dev.conllu#s66/pt
-# orig_file_sentence = 001#66
-1	Diariamente	diariamente	ADV	adv	_	4	advmod	_	_
-2	,	,	PUNCT	punc	_	4	punct	_	_
-3	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
-4	promovendo	promover	VERB	v-ger	VerbForm=Ger	0	root	_	_
-5	desfiles	desfile	NOUN	n|M|P	Gender=Masc|Number=Plur	4	dobj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	moda	moda	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-8	para	para	ADP	prp	AdpType=Prep	10	case	_	_
-9	seus	seu	DET	pron-det|<poss|3S>|<si>|M|P	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	10	det	_	_
-10	consumidores	consumidor	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nmod	_	_
-11	.	.	PUNCT	punc	_	4	punct	_	_
+# text = Diariamente, está promovendo desfiles de moda para seus consumidores.
+# forest 1
+# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF908-4
+# id 3824
+1	Diariamente	diariamente	ADV	ADV|@ADVL>	_	4	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+3	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	promovendo	promover	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	3	ccomp	_	_
+5	desfiles	desfile	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	obj	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	moda	moda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+8	para	para	ADP	PRP|@<ADVL	_	10	case	_	_
+9	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	10	det	_	_
+10	consumidores	consumidor	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF908-5
-# sent_id = pt-ud-dev.conllu#s67/pt
-# orig_file_sentence = 001#67
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	desfiles	desfile	NOUN	n|M|P	Gender=Masc|Number=Plur	13	nsubj	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	com	com	ADP	prp	AdpType=Prep	5	case	_	_
-5	roupas	roupa	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-6	a	a	ADP	prp	AdpType=Prep	7	case	_	_
-7	venda	venda	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
+# text = Os desfiles, com roupas a venda no próprio shopping, visam orientar o consumidor a respeito da moda.
+# forest 1
+# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF908-5
+# id 3825
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	desfiles	desfile	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	13	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	com	com	ADP	PRP|@N<PRED	_	5	case	_	_
+5	roupas	roupa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
+6	a	a	ADP	PRP|@N<	_	7	case	_	_
+7	venda	venda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 8-9	no	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-9	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-10	próprio	próprio	DET	pron-det|<ident>|M|S	Gender=Masc|Number=Sing	11	det	_	_
-11	shopping	shopping	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-12	,	,	PUNCT	punc	_	2	punct	_	_
-13	visam	visar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-14	orientar	orientar	VERB	v-inf	VerbForm=Inf	13	xcomp	_	_
-15	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	consumidor	consumidor	NOUN	n|M|S	Gender=Masc|Number=Sing	14	dobj	_	_
-17	a	a	ADP	prp|<sam->	AdpType=Prep	21	case	_	MWE=a_respeito_de|MWEPOS=ADP
-18	respeito	respeito	NOUN	NOUN	_	17	mwe	_	_
+8	em	em	ADP	<sam->|PRP|@N<	_	11	case	_	_
+9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+10	próprio	próprio	DET	<ident>|DET|M|S|@>N	Gender=Masc|Number=Sing	11	det	_	_
+11	shopping	shopping	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+13	visam	visar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+14	orientar	orientar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	13	xcomp	_	_
+15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	consumidor	consumidor	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
+17	a	a	ADP	<sam->|PRP|@<ADVL	_	21	case	_	MWE=a_respeito_de|MWEPOS=ADP
+18	respeito	respeito	NOUN	N|@P<	_	17	fixed	_	_
 19-20	da	_	_	_	_	_	_	_	_
-19	de	de	ADP	ADP	AdpType=Prep	17	mwe	_	_
-20	a	o	DET	art|<artd>|<-sam>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	moda	moda	NOUN	n|F|S	Gender=Fem|Number=Sing	14	nmod	_	_
-22	.	.	PUNCT	punc	_	13	punct	_	_
+19	de	de	ADP	PRP|@N<	_	17	fixed	_	_
+20	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	moda	moda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obl	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF908-6
-# sent_id = pt-ud-dev.conllu#s68/pt
-# orig_file_sentence = 001#68
-1	Estilistas	estilista	NOUN	n|M|P	Gender=Masc|Number=Plur	2	nsubj	_	_
-2	estarão	estar	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+# text = Estilistas estarão à disposição dos clientes.
+# forest 1
+# source CETENFolha n=908 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF908-6
+# id 3826
+1	Estilistas	estilista	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
+2	estarão	estar	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 3-4	à	_	_	_	_	_	_	_	_
-3	a	a	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	disposição	disposição	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+3	a	a	ADP	<sam->|PRP|@<ADVL	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	disposição	disposição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	_
 6-7	dos	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
-8	clientes	cliente	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-9	.	.	PUNCT	punc	_	2	punct	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
+8	clientes	cliente	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

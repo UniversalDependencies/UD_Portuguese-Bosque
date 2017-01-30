@@ -1,183 +1,188 @@
-# distance_from_new = 0
-# new_sent_id = CP477-1
-# sent_id = pt-ud-train.conllu#s2520/pt
-# orig_file_sentence = 026#20
-1	Estes	este	PRON	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	3	nsubj	_	_
-2	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-3	alguns	algum	PRON	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	0	root	_	_
+# text = Estes são alguns dos dados da avaliação externa feita pelo Instituto de Inovação Educacional (IIE).
+# forest 1
+# source CETEMPúblico n=477 sec=nd sem=98a
+# sent_id = CP477-1
+# id 2521
+1	Estes	este	PRON	<dem>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Dem	3	nsubj	_	_
+2	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	alguns	algum	PRON	<quant>|DET|M|P|@<SC	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	0	root	_	_
 4-5	dos	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-6	dados	dado	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	dados	dado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
 7-8	da	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	avaliação	avaliação	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-10	externa	externo	ADJ	adj|F|S	Gender=Fem|Number=Sing	9	amod	_	_
-11	feita	fazer	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	9	acl	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	avaliação	avaliação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+10	externa	externo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	9	amod	_	_
+11	feita	fazer	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	9	acl	_	_
 12-13	pelo	_	_	_	_	_	_	_	_
-12	por	por	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	Instituto	Instituto	PROPN	prop|M|S	_	11	dobj	_	MWE=Instituto_de_Inovação_Educacional|MWEPOS=PROPN
-15	de	de	ADP	ADP	AdpType=Prep	16	case	_	_
-16	Inovação	Inovação	PROPN	PROPN	_	14	name	_	_
-17	Educacional	Educacional	PROPN	PROPN	_	16	name	_	_
-18	(	(	PUNCT	punc	_	14	punct	_	_
-19	IIE	IIE	PROPN	prop|M|S	Gender=Masc|Number=Sing	14	name	_	_
-20	)	)	PUNCT	punc	_	14	punct	_	_
-21	.	.	PUNCT	punc	_	3	punct	_	_
+12	por	por	ADP	PRP|@PASS	_	14	case	_	_
+13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	Instituto	Instituto	PROPN	PROP|M|S|@P<	_	11	obj	_	MWE=Instituto_de_Inovação_Educacional|MWEPOS=PROPN
+15	de	de	ADP	PRP|@N<	_	16	case	_	_
+16	Inovação	Inovação	PROPN	_	_	14	flat	_	_
+17	Educacional	Educacional	PROPN	_	_	16	flat	_	_
+18	(	(	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+19	IIE	IIE	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	14	flat	_	SpaceAfter=No
+20	)	)	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP477-2
-# sent_id = pt-ud-train.conllu#s2521/pt
-# orig_file_sentence = 026#21
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	estudo	estudo	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	representa	representar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	3	dobj	_	_
+# text = O estudo representa um dos mais importantes indicadores das aprendizagens dos alunos, tendo inaugurado a era das «provas aferidas» no sistema educativo português.
+# forest 1
+# source CETEMPúblico n=477 sec=nd sem=98a
+# sent_id = CP477-2
+# id 2522
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	estudo	estudo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	representa	representar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	um	um	NUM	<card>|NUM|M|S|@<ACC	Gender=Masc|Number=Sing|NumType=Card	3	obj	_	_
 5-6	dos	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-6	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
-7	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	8	advmod	_	_
-8	importantes	importante	ADJ	adj|M|P	Gender=Masc|Number=Plur	9	amod	_	_
-9	indicadores	indicador	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nmod	_	_
+5	de	de	ADP	<sam->|PRP|@A<	_	9	case	_	_
+6	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+7	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	8	advmod	_	_
+8	importantes	importante	ADJ	<COMP>|ADJ|M|P|@>N	Gender=Masc|Number=Plur	9	amod	_	_
+9	indicadores	indicador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	_
 10-11	das	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
-12	aprendizagens	aprendizagem	NOUN	n|F|P	Gender=Fem|Number=Plur	9	nmod	_	_
+10	de	de	ADP	<sam->|PRP|@N<ARG	_	12	case	_	_
+11	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
+12	aprendizagens	aprendizagem	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	_
 13-14	dos	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
-15	alunos	aluno	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nmod	_	_
-16	,	,	PUNCT	punc	_	3	punct	_	_
-17	tendo	ter	VERB	v-ger	VerbForm=Ger	18	aux	_	_
-18	inaugurado	inaugurar	VERB	v-pcp	VerbForm=Part	3	advcl	_	_
-19	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	era	era	NOUN	n|F|S	Gender=Fem|Number=Sing	18	dobj	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
+15	alunos	aluno	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+17	tendo	ter	VERB	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	3	advcl	_	_
+18	inaugurado	inaugurar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	17	ccomp	_	_
+19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	era	era	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	18	obj	_	_
 21-22	das	_	_	_	_	_	_	_	_
-21	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-22	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
-23	«	«	PUNCT	punc	_	24	punct	_	_
-24	provas	prova	NOUN	n|F|P	Gender=Fem|Number=Plur	20	nmod	_	_
-25	aferidas	aferir	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	24	acl	_	_
-26	»	»	PUNCT	punc	_	24	punct	_	_
+21	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+22	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
+23	«	«	PUNCT	PU|@PU	_	24	punct	_	SpaceAfter=No
+24	provas	prova	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	20	nmod	_	_
+25	aferidas	aferir	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	24	acl	_	SpaceAfter=No
+26	»	»	PUNCT	PU|@PU	_	24	punct	_	_
 27-28	no	_	_	_	_	_	_	_	_
-27	em	em	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	sistema	sistema	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
-30	educativo	educativo	ADJ	adj|M|S	Gender=Masc|Number=Sing	29	amod	_	_
-31	português	português	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
-32	.	.	PUNCT	punc	_	3	punct	_	_
+27	em	em	ADP	<sam->|PRP|@<ADVL	_	29	case	_	_
+28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	sistema	sistema	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	_
+30	educativo	educativo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	29	amod	_	_
+31	português	português	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	29	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP477-3
-# sent_id = pt-ud-train.conllu#s2522/pt
-# orig_file_sentence = 026#22
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	exemplo	exemplo	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	parece	parecer	AUX	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-4	ter	ter	VERB	v-inf	VerbForm=Inf	5	aux	_	_
-5	dado	dar	VERB	v-pcp	VerbForm=Part	0	root	_	_
-6	frutos	fruto	NOUN	n|M|P	Gender=Masc|Number=Plur	5	dobj	_	_
-7	:	:	PUNCT	punc	_	5	punct	_	_
+# text = O exemplo parece ter dado frutos:
+# forest 1
+# source CETEMPúblico n=477 sec=nd sem=98a
+# sent_id = CP477-3
+# id 2523
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	exemplo	exemplo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	parece	parecer	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	ter	ter	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+5	dado	dar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	4	ccomp	_	_
+6	frutos	fruto	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	obj	_	SpaceAfter=No
+7	:	:	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 1
-# new_sent_id = CP477-4
-# sent_id = pt-ud-train.conllu#s2523/pt
-# orig_file_sentence = 026#23
-1	recentemente	recentemente	ADV	adv	_	14	advmod	_	_
-2	(	(	PUNCT	punc	_	14	punct	_	_
-3	ver	ver	VERB	v-inf	VerbForm=Inf	14	parataxis	_	_
-4	PÚBLICO	Público	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	27/03/97	27/03/97	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-7	)	)	PUNCT	punc	_	14	punct	_	_
+# text = recentemente (ver PÚBLICO de 27/03/97), o ministro da Educação anunciou que seriam lançados «testes de aferição de âmbito nacional» nos 4º, 6º e 9º anos.
+# forest 1
+# source CETEMPúblico n=477 sec=nd sem=98a
+# sent_id = CP477-4
+# id 2524
+1	recentemente	recentemente	ADV	ADV|@ADVL>	_	14	advmod	_	_
+2	(	(	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+3	ver	ver	VERB	<mv>|V|INF|@ICL-A<	VerbForm=Inf	14	parataxis	_	_
+4	PÚBLICO	Público	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	obj	_	_
+5	de	de	ADP	prp	_	6	case	_	_
+6	27/03/97	27/03/97	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
+7	)	)	PUNCT	punc	_	14	punct	_	SpaceAfter=No
 8	,	,	PUNCT	punc	_	14	punct	_	_
 9	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	ministro	ministro	NOUN	n|M|S	_	14	nsubj	_	MWE=ministro_da_Educação|MWEPOS=NOUN
 11-12	da	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
+11	de	de	ADP	prp|<sam->	_	13	case	_	_
 12	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Educação	Educação	NOUN	NOUN	_	10	compound	_	_
 14	anunciou	anunciar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-15	que	que	SCONJ	conj-s	_	17	mark	_	_
-16	seriam	ser	VERB	v-fin|COND|3P	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	17	auxpass	_	_
-17	lançados	lançar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	14	ccomp	_	_
-18	«	«	PUNCT	punc	_	17	punct	_	_
-19	testes	teste	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nsubjpass	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
+15	que	que	SCONJ	conj-s	_	16	mark	_	_
+16	seriam	ser	VERB	v-fin|COND|3P	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	14	ccomp	_	_
+17	lançados	lançar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	16	ccomp	_	_
+18	«	«	PUNCT	punc	_	16	punct	_	SpaceAfter=No
+19	testes	teste	NOUN	n|M|P	Gender=Masc|Number=Plur	16	nsubj	_	_
+20	de	de	ADP	prp	_	21	case	_	_
 21	aferição	aferição	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-22	de	de	ADP	prp	AdpType=Prep	23	case	_	_
+22	de	de	ADP	prp	_	23	case	_	_
 23	âmbito	âmbito	NOUN	n|M|S	Gender=Masc|Number=Sing	19	nmod	_	_
-24	nacional	nacional	ADJ	adj|M|S	Gender=Masc|Number=Sing	23	amod	_	_
-25	»	»	PUNCT	punc	_	17	punct	_	_
+24	nacional	nacional	ADJ	adj|M|S	Gender=Masc|Number=Sing	23	amod	_	SpaceAfter=No
+25	»	»	PUNCT	punc	_	16	punct	_	_
 26-27	nos	_	_	_	_	_	_	_	_
-26	em	em	ADP	prp	AdpType=Prep	33	case	_	_
+26	em	em	ADP	prp	_	33	case	_	_
 27	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
-28	4º	4º	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	33	amod	_	_
-29	,	,	PUNCT	punc	_	28	punct	_	_
+28	4º	4º	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	33	amod	_	SpaceAfter=No
+29	,	,	PUNCT	punc	_	30	punct	_	_
 30	6º	6º	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	28	conj	_	_
-31	e	e	CONJ	conj-c|<co-prenom>	_	28	cc	_	_
+31	e	e	CCONJ	conj-c|<co-prenom>	_	32	cc	_	_
 32	9º	9º	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	28	conj	_	_
-33	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
+33	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	17	obl	_	SpaceAfter=No
 34	.	.	PUNCT	punc	_	14	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP477-5
-# sent_id = pt-ud-train.conllu#s2524/pt
-# orig_file_sentence = 026#24
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	intenção	intenção	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	figura	figurar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = A intenção figura no documento estratégico para a Educação entregue na Assembleia da República, no qual, curiosamente, se retira a matéria da alçada do IIE e se entrega ao Gabinete de Avaliação Educacional (Gave).
+# forest 1
+# source CETEMPúblico n=477 sec=nd sem=98a
+# sent_id = CP477-5
+# id 2525
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	intenção	intenção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	figura	figurar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4-5	no	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	documento	documento	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
-7	estratégico	estratégico	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
-8	para	para	ADP	prp	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	Educação	Educação	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-11	entregue	entregar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	6	acl	_	_
+4	em	em	ADP	<sam->|PRP|@<SA	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	documento	documento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	_
+7	estratégico	estratégico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
+8	para	para	ADP	PRP|@N<	_	10	case	_	_
+9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Educação	Educação	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+11	entregue	entregar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	6	acl	_	_
 12-13	na	_	_	_	_	_	_	_	_
-12	em	em	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	Assembleia	Assembleia	PROPN	prop|F|S	_	11	nmod	_	MWE=Assembleia_da_República|MWEPOS=PROPN
+12	em	em	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	Assembleia	Assembleia	PROPN	PROP|F|S|@P<	_	11	obl	_	MWE=Assembleia_da_República|MWEPOS=PROPN
 15-16	da	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	República	República	PROPN	PROPN	_	14	name	_	_
-18	,	,	PUNCT	punc	_	6	punct	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	República	República	PROPN	PROP|@P<	_	14	flat	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 19-20	no	_	_	_	_	_	_	_	_
-19	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-20	o	o	DET	pron-indp|<-sam>|<rel>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	nmod	_	MWE=o_qual|MWEPOS=PRON
-21	qual	qual	PRON	PRON	Gender=Masc|Number=Sing|PronType=Rel	20	compound	_	_
-22	,	,	PUNCT	punc	_	26	punct	_	_
-23	curiosamente	curiosamente	ADV	adv	_	26	advmod	_	_
-24	,	,	PUNCT	punc	_	26	punct	_	_
-25	se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	26	nsubj	_	_
-26	retira	retirar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
-27	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-28	matéria	matéria	NOUN	n|F|S	Gender=Fem|Number=Sing	26	dobj	_	_
+19	em	em	ADP	<sam->|PRP|@ADVL>	_	20	case	_	_
+20	o	o	DET	DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	26	obl	_	MWE=o_qual|MWEPOS=PRON
+21	qual	qual	PRON	DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	20	compound	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+23	curiosamente	curiosamente	ADV	ADV|@ADVL>	_	26	advmod	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+25	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs	26	nsubj	_	_
+26	retira	retirar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
+27	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+28	matéria	matéria	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	26	obj	_	_
 29-30	da	_	_	_	_	_	_	_	_
-29	de	de	ADP	prp|<sam->	AdpType=Prep	31	case	_	_
-30	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
-31	alçada	alçada	NOUN	n|F|S	Gender=Fem|Number=Sing	28	nmod	_	_
+29	de	de	ADP	<sam->|PRP|@N<	_	31	case	_	_
+30	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+31	alçada	alçada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	_
 32-33	do	_	_	_	_	_	_	_	_
-32	de	de	ADP	prp|<sam->	AdpType=Prep	34	case	_	_
-33	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-34	IIE	IIE	PROPN	prop|M|S	Gender=Masc|Number=Sing	31	nmod	_	_
-35	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	26	cc	_	_
-36	se	se	PRON	pron-pers|<refl>|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	37	nsubj	_	_
-37	entrega	entregar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj	_	_
+32	de	de	ADP	<sam->|PRP|@N<	_	34	case	_	_
+33	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	IIE	IIE	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
+35	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	37	cc	_	_
+36	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	37	nsubj	_	_
+37	entrega	entregar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj	_	_
 38-39	ao	_	_	_	_	_	_	_	_
-38	a	a	ADP	prp|<sam->	AdpType=Prep	40	case	_	_
-39	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
-40	Gabinete	Gabinete	PROPN	prop|M|S	_	37	dobj	_	MWE=Gabinete_de_Avaliação_Educacional|MWEPOS=PROPN
-41	de	de	ADP	ADP	AdpType=Prep	42	case	_	_
-42	Avaliação	Avaliação	PROPN	PROPN	_	40	name	_	_
-43	Educacional	Educacional	PROPN	PROPN	_	42	name	_	_
-44	(	(	PUNCT	punc	_	40	punct	_	_
-45	Gave	Gave	PROPN	prop|M|S	Gender=Masc|Number=Sing	40	name	_	_
-46	)	)	PUNCT	punc	_	40	punct	_	_
-47	.	.	PUNCT	punc	_	3	punct	_	_
+38	a	a	ADP	<sam->|PRP|@<PIV	_	40	case	_	_
+39	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
+40	Gabinete	Gabinete	PROPN	PROP|M|S|@P<	_	37	obj	_	MWE=Gabinete_de_Avaliação_Educacional|MWEPOS=PROPN
+41	de	de	ADP	PRP|@N<	_	42	case	_	_
+42	Avaliação	Avaliação	PROPN	_	_	40	flat	_	_
+43	Educacional	Educacional	PROPN	_	_	42	flat	_	_
+44	(	(	PUNCT	PU|@PU	_	40	punct	_	SpaceAfter=No
+45	Gave	Gave	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	40	flat	_	SpaceAfter=No
+46	)	)	PUNCT	PU|@PU	_	40	punct	_	SpaceAfter=No
+47	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

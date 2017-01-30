@@ -1,38 +1,41 @@
-# distance_from_new = 0
-# new_sent_id = CP38-1
-# sent_id = pt-ud-train.conllu#s222/pt
-# orig_file_sentence = 003#22
-1	«	«	PUNCT	punc	_	3	punct	_	_
-2	Não	não	ADV	adv	_	3	neg	_	_
-3	sei	saber	VERB	v-fin|PS|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
-4	.	.	PUNCT	punc	_	3	punct	_	_
+# text = «Não sei.
+# forest 1
+# source CETEMPúblico n=38 sec=pol sem=94b
+# sent_id = CP38-1
+# id 222
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
+3	sei	saber	VERB	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP38-2
-# sent_id = pt-ud-train.conllu#s223/pt
-# orig_file_sentence = 003#23
-1	Talvez	talvez	ADV	adv	_	2	cop	_	_
-2	morta	morto	ADJ	adj|F|S	Gender=Fem|Number=Sing	0	root	_	_
-3	»	»	PUNCT	punc	_	2	punct	_	_
-4	.	.	PUNCT	punc	_	2	punct	_	_
+# text = Talvez morta».
+# forest 1
+# source CETEMPúblico n=38 sec=pol sem=94b
+# sent_id = CP38-2
+# id 223
+1	Talvez	talvez	ADV	<first-cjt>|ADV|@ADVL	_	2	cop	_	_
+2	morta	morto	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+3	»	»	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+4	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP38-3
-# sent_id = pt-ud-train.conllu#s224/pt
-# orig_file_sentence = 003#24
-1	Para	para	ADP	prp	AdpType=Prep	3	case	_	_
-2	estes	este	DET	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	_
-3	haitianos	haitiano	NOUN	n|M|P	Gender=Masc|Number=Plur	6	nmod	_	_
-4	,	,	PUNCT	punc	_	6	punct	_	_
-5	só	só	ADV	adv	_	6	advmod	_	_
-6	há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	maneira	maneira	NOUN	n|F|S	Gender=Fem|Number=Sing	6	dobj	_	_
-9	de	de	ADP	prp	AdpType=Prep	10	mark	_	_
-10	regressar	regressar	VERB	v-inf	VerbForm=Inf	8	acl	_	_
-11	a	a	ADP	prp	AdpType=Prep	12	case	_	_
-12	casa	casa	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-13	:	:	PUNCT	punc	_	8	punct	_	_
-14	revolução	revolução	NOUN	n|F|S	Gender=Fem|Number=Sing	8	appos	_	_
-15	.	.	PUNCT	punc	_	6	punct	_	_
+# text = Para estes haitianos, só há uma maneira de regressar a casa: revolução.
+# forest 1
+# source CETEMPúblico n=38 sec=pol sem=94b
+# sent_id = CP38-3
+# id 224
+1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
+2	estes	este	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	_
+3	haitianos	haitiano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+5	só	só	ADV	ADV|@ADVL>	_	6	advmod	_	_
+6	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	maneira	maneira	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
+9	de	de	ADP	PRP|@N<	_	10	mark	_	_
+10	regressar	regressar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
+11	a	a	ADP	PRP|@<SA	_	12	case	_	_
+12	casa	casa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	SpaceAfter=No
+13	:	:	PUNCT	PU|@PU	_	8	punct	_	_
+14	revolução	revolução	NOUN	<np-idf>|N|F|S|@APP	Gender=Fem|Number=Sing	8	appos	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

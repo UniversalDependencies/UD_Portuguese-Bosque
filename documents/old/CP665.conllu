@@ -1,255 +1,262 @@
-# distance_from_new = 0
-# new_sent_id = CP665-1
-# sent_id = pt-ud-train.conllu#s3451/pt
-# orig_file_sentence = 035#51
-1	Festivais	festival	NOUN	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
-2	de	de	ADP	prp	AdpType=Prep	3	case	_	_
-3	música	música	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	a	a	ADP	prp	AdpType=Prep	5	case	_	_
-5	Norte	Norte	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
+# text = Festivais de música a Norte
+# forest 1
+# source CETEMPúblico n=665 sec=soc sem=96a
+# sent_id = CP665-1
+# id 3452
+1	Festivais	festival	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
+2	de	de	ADP	PRP|@N<	_	3	case	_	_
+3	música	música	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+4	a	a	ADP	PRP|@N<	_	5	case	_	_
+5	Norte	Norte	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP665-2
-# sent_id = pt-ud-train.conllu#s3452/pt
-# orig_file_sentence = 035#52
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	XVIII	XVIII	PROPN	prop|M|S	_	12	nsubj	_	MWE=XVIII_Festival_Internacional_de_Música_da_Póvoa_de_Varzim|MWEPOS=PROPN
-3	Festival	Festival	PROPN	PROPN	_	2	name	_	_
-4	Internacional	Internacional	PROPN	PROPN	_	2	name	_	_
-5	de	de	ADP	ADP	AdpType=Prep	6	case	_	_
-6	Música	Música	PROPN	PROPN	_	2	name	_	_
+# text = O XVIII Festival Internacional de Música da Póvoa de Varzim abre hoje a sua programação com um concerto pelo Coral de Letras da Universidade do Porto e da Orquestra Esproarte, às 21h30, na Igreja Matriz da cidade.
+# forest 1
+# source CETEMPúblico n=665 sec=soc sem=96a
+# sent_id = CP665-2
+# id 3453
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	XVIII	XVIII	PROPN	_	_	12	nsubj	_	MWE=XVIII_Festival_Internacional_de_Música_da_Póvoa_de_Varzim|MWEPOS=PROPN
+3	Festival	Festival	PROPN	_	_	2	flat	_	_
+4	Internacional	Internacional	PROPN	_	_	2	flat	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	Música	Música	PROPN	PROP|@P<	_	2	flat	_	_
 7-8	da	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Póvoa	Póvoa	PROPN	PROPN	_	2	name	_	_
-10	de	de	ADP	ADP	AdpType=Prep	11	case	_	_
-11	Varzim	Varzim	PROPN	PROPN	_	2	name	_	_
-12	abre	abrir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-13	hoje	hoje	ADV	adv	_	12	advmod	_	_
-14	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-15	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	16	det	_	_
-16	programação	programação	NOUN	n|F|S	Gender=Fem|Number=Sing	12	dobj	_	_
-17	com	com	ADP	prp	AdpType=Prep	19	case	_	_
-18	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	concerto	concerto	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Póvoa	Póvoa	PROPN	PROP|@P<	_	2	flat	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	Varzim	Varzim	PROPN	PROP|@P<	_	2	flat	_	_
+12	abre	abrir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	hoje	hoje	ADV	ADV|@<ADVL	_	12	advmod	_	_
+14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+15	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	16	det	_	_
+16	programação	programação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	_
+17	com	com	ADP	PRP|@<ADVL	_	19	case	_	_
+18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	concerto	concerto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	_
 20-21	pelo	_	_	_	_	_	_	_	_
-20	por	por	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Coral	Coral	PROPN	prop|M|S	_	19	nmod	_	MWE=Coral_de_Letras_da_Universidade_do_Porto|MWEPOS=PROPN
-23	de	de	ADP	ADP	AdpType=Prep	24	case	_	_
-24	Letras	Letras	PROPN	PROPN	_	22	name	_	_
+20	por	por	ADP	<sam->|<first-cjt>|PRP|@N<	_	22	case	_	_
+21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	Coral	Coral	PROPN	<first-cjt>|PROP|M|S|@P<	_	19	nmod	_	MWE=Coral_de_Letras_da_Universidade_do_Porto|MWEPOS=PROPN
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	Letras	Letras	PROPN	PROP|@P<	_	22	flat	_	_
 25-26	da	_	_	_	_	_	_	_	_
-25	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	Universidade	Universidade	PROPN	PROPN	_	22	name	_	_
+25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
+26	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	Universidade	Universidade	PROPN	PROP|@P<	_	22	flat	_	_
 28-29	do	_	_	_	_	_	_	_	_
-28	de	de	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	Porto	Porto	PROPN	PROPN	_	22	name	_	_
-31	e	e	CONJ	conj-c|<co-postnom>	_	22	cc	_	_
+28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
+29	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	Porto	Porto	PROPN	PROP|@P<	_	22	flat	_	_
+31	e	e	CCONJ	<co-postnom>|KC|@CO	_	34	cc	_	_
 32-33	da	_	_	_	_	_	_	_	_
-32	de	de	ADP	prp|<sam->	AdpType=Prep	34	case	_	_
-33	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
-34	Orquestra	Orquestra	PROPN	prop|F|S	_	22	conj	_	MWE=Orquestra_Esproarte|MWEPOS=PROPN
-35	Esproarte	Esproarte	PROPN	PROPN	_	34	name	_	_
-36	,	,	PUNCT	punc	_	12	punct	_	_
+32	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	34	case	_	_
+33	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
+34	Orquestra	Orquestra	PROPN	_	_	22	conj	_	MWE=Orquestra_Esproarte|MWEPOS=PROPN
+35	Esproarte	Esproarte	PROPN	_	_	34	flat	_	SpaceAfter=No
+36	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 37-38	às	_	_	_	_	_	_	_	_
-37	a	a	ADP	prp|<sam->	AdpType=Prep	39	case	_	_
-38	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	_	_
-39	21h30	21h30	NOUN	n|F|P	Gender=Fem|Number=Plur	12	nmod	_	_
-40	,	,	PUNCT	punc	_	12	punct	_	_
+37	a	a	ADP	<sam->|PRP|@<ADVL	_	39	case	_	_
+38	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	39	det	_	_
+39	21h30	21h30	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	12	obl	_	SpaceAfter=No
+40	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 41-42	na	_	_	_	_	_	_	_	_
-41	em	em	ADP	prp|<sam->	AdpType=Prep	43	case	_	_
-42	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
-43	Igreja	Igreja	PROPN	prop|F|S	_	12	nmod	_	MWE=Igreja_Matriz|MWEPOS=PROPN
-44	Matriz	Matriz	PROPN	PROPN	_	43	name	_	_
+41	em	em	ADP	<sam->|PRP|@<ADVL	_	43	case	_	_
+42	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
+43	Igreja	Igreja	PROPN	_	_	12	obl	_	MWE=Igreja_Matriz|MWEPOS=PROPN
+44	Matriz	Matriz	PROPN	_	_	43	flat	_	_
 45-46	da	_	_	_	_	_	_	_	_
-45	de	de	ADP	prp|<sam->	AdpType=Prep	47	case	_	_
-46	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_
-47	cidade	cidade	NOUN	n|F|S	Gender=Fem|Number=Sing	43	nmod	_	_
-48	.	.	PUNCT	punc	_	12	punct	_	_
+45	de	de	ADP	<sam->|PRP|@N<	_	47	case	_	_
+46	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_
+47	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	43	nmod	_	SpaceAfter=No
+48	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP665-3
-# sent_id = pt-ud-train.conllu#s3453/pt
-# orig_file_sentence = 035#53
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	espectáculo	espectáculo	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	conta	contar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	com	com	ADP	prp	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	participação	participação	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	Rui	Rui	PROPN	prop|M|S	_	6	nmod	_	MWE=Rui_Taveira|MWEPOS=PROPN
-9	Taveira	Taveira	PROPN	PROPN	_	8	name	_	_
-10	(	(	PUNCT	punc	_	8	punct	_	_
-11	tenor	tenor	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-12	)	)	PUNCT	punc	_	8	punct	_	_
-13	,	,	PUNCT	punc	_	8	punct	_	_
-14	Oliveira	Oliveira	PROPN	prop|M|S	_	8	conj	_	MWE=Oliveira_Lopes|MWEPOS=PROPN
-15	Lopes	Lopes	PROPN	PROPN	_	14	name	_	_
-16	(	(	PUNCT	punc	_	14	punct	_	_
-17	barítono	barítono	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-18	)	)	PUNCT	punc	_	14	punct	_	_
-19	,	,	PUNCT	punc	_	8	punct	_	_
-20	Thomas	Thomas	PROPN	prop|M|S	_	8	conj	_	MWE=Thomas_Gal|MWEPOS=PROPN
-21	Gal	Gal	PROPN	PROPN	_	20	name	_	_
-22	(	(	PUNCT	punc	_	20	punct	_	_
-23	piano	piano	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-24	)	)	PUNCT	punc	_	20	punct	_	_
-25	,	,	PUNCT	punc	_	8	punct	_	_
-26	Isabel	Isabel	PROPN	prop|M|S	_	8	conj	_	MWE=Isabel_Sá|MWEPOS=PROPN
-27	Sá	Sá	PROPN	PROPN	_	26	name	_	_
-28	(	(	PUNCT	punc	_	26	punct	_	_
-29	harpa	harpa	NOUN	n|F|S	Gender=Fem|Number=Sing	26	nmod	_	_
-30	)	)	PUNCT	punc	_	26	punct	_	_
-31	e	e	CONJ	conj-c|<co-prparg>	_	8	cc	_	_
-32	Helena	Helena	PROPN	prop|F|S	_	8	conj	_	MWE=Helena_Sofia_Pereira|MWEPOS=PROPN
-33	Sofia	Sofia	PROPN	PROPN	_	32	name	_	_
-34	Pereira	Pereira	PROPN	PROPN	_	32	name	_	_
-35	(	(	PUNCT	punc	_	32	punct	_	_
-36	tímpanos	tímpano	NOUN	n|M|P	Gender=Masc|Number=Plur	32	nmod	_	_
-37	)	)	PUNCT	punc	_	32	punct	_	_
-38	.	.	PUNCT	punc	_	3	punct	_	_
+# text = O espectáculo conta com a participação de Rui Taveira (tenor), Oliveira Lopes (barítono), Thomas Gal (piano), Isabel Sá (harpa) e Helena Sofia Pereira (tímpanos).
+# forest 1
+# source CETEMPúblico n=665 sec=soc sem=96a &L
+# sent_id = CP665-3
+# id 3454
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	espectáculo	espectáculo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	conta	contar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	com	com	ADP	PRP|@<PIV	_	6	case	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	participação	participação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obj	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	Rui	Rui	PROPN	_	_	6	nmod	_	MWE=Rui_Taveira|MWEPOS=PROPN
+9	Taveira	Taveira	PROPN	_	_	8	flat	_	_
+10	(	(	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+11	tenor	tenor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
+12	)	)	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+14	Oliveira	Oliveira	PROPN	_	_	8	conj	_	MWE=Oliveira_Lopes|MWEPOS=PROPN
+15	Lopes	Lopes	PROPN	_	_	14	flat	_	_
+16	(	(	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+17	barítono	barítono	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=No
+18	)	)	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+20	Thomas	Thomas	PROPN	_	_	8	conj	_	MWE=Thomas_Gal|MWEPOS=PROPN
+21	Gal	Gal	PROPN	_	_	20	flat	_	_
+22	(	(	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+23	piano	piano	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	20	nmod	_	SpaceAfter=No
+24	)	)	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+26	Isabel	Isabel	PROPN	_	_	8	conj	_	MWE=Isabel_Sá|MWEPOS=PROPN
+27	Sá	Sá	PROPN	_	_	26	flat	_	_
+28	(	(	PUNCT	PU|@PU	_	26	punct	_	SpaceAfter=No
+29	harpa	harpa	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	26	nmod	_	SpaceAfter=No
+30	)	)	PUNCT	PU|@PU	_	26	punct	_	_
+31	e	e	CCONJ	<co-prparg>|KC|@CO	_	32	cc	_	_
+32	Helena	Helena	PROPN	_	_	8	conj	_	MWE=Helena_Sofia_Pereira|MWEPOS=PROPN
+33	Sofia	Sofia	PROPN	_	_	32	flat	_	_
+34	Pereira	Pereira	PROPN	_	_	32	flat	_	_
+35	(	(	PUNCT	PU|@PU	_	32	punct	_	SpaceAfter=No
+36	tímpanos	tímpano	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	32	nmod	_	SpaceAfter=No
+37	)	)	PUNCT	PU|@PU	_	32	punct	_	SpaceAfter=No
+38	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP665-4
-# sent_id = pt-ud-train.conllu#s3454/pt
-# orig_file_sentence = 035#54
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	músicos	músico	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nsubj	_	_
-3	irão	ir	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-4	interpretar	interpretar	VERB	v-inf	VerbForm=Inf	3	xcomp	_	_
-5	,	,	PUNCT	punc	_	3	punct	_	_
-6	sob	sob	ADP	prp	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	direcção	direcção	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
+# text = Os músicos irão interpretar, sob a direcção do professor José Luís Borges Coelho, a cantata BWV 4 de J. S. Bach, bem como a «Sinfonia Simples» e a cantata «Misericordium», ambas de Benjamin Britten.
+# forest 1
+# source CETEMPúblico n=665 sec=soc sem=96a
+# sent_id = CP665-4
+# id 3455
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	músicos	músico	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
+3	irão	ir	VERB	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+4	interpretar	interpretar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+6	sob	sob	ADP	PRP|@<ADVL	_	8	case	_	_
+7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	direcção	direcção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
 9-10	do	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	professor	professor	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-12	José	José	PROPN	prop|M|S	_	11	nmod	_	MWE=José_Luís_Borges_Coelho|MWEPOS=PROPN
-13	Luís	Luís	PROPN	PROPN	_	12	name	_	_
-14	Borges	Borges	PROPN	PROPN	_	12	name	_	_
-15	Coelho	Coelho	PROPN	PROPN	_	12	name	_	_
-16	,	,	PUNCT	punc	_	3	punct	_	_
-17	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	cantata	cantata	NOUN	n|F|S	Gender=Fem|Number=Sing	26	dobj	_	_
-19	BWV	BWV	PROPN	prop|F|S	_	18	nmod	_	MWE=BWV_4|MWEPOS=PROPN
-20	4	4	NUM	NUM	NumForm=Digit|NumType=Card	19	nummod	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	J.	J.	PROPN	prop|M|S	_	18	nmod	_	MWE=J._S._Bach|MWEPOS=PROPN
-23	S.	S.	PROPN	PROPN	_	22	name	_	_
-24	Bach	Bach	PROPN	PROPN	_	22	name	_	_
-25	,	,	PUNCT	punc	_	26	punct	_	_
-26	bem	bem	NOUN	adv|<kc>	_	4	cc	_	MWE=bem_como|MWEPOS=ADV
-27	como	como	SCONJ	SCONJ	_	26	mwe	_	_
-28	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
-29	«	«	PUNCT	punc	_	30	punct	_	_
-30	Sinfonia	Sinfonia	PROPN	prop|F|S	_	26	dobj	_	MWE=Sinfonia_Simples|MWEPOS=PROPN
-31	Simples	Simples	PROPN	PROPN	_	30	name	_	_
-32	»	»	PUNCT	punc	_	30	punct	_	_
-33	e	e	CONJ	conj-c|<co-acc>	_	30	cc	_	_
-34	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-35	cantata	cantata	NOUN	n|F|S	Gender=Fem|Number=Sing	30	conj	_	_
-36	«	«	PUNCT	punc	_	35	punct	_	_
-37	Misericordium	Misericordium	PROPN	prop|F|S	Gender=Fem|Number=Sing	35	nmod	_	_
-38	»	»	PUNCT	punc	_	35	punct	_	_
-39	,	,	PUNCT	punc	_	30	punct	_	_
-40	ambas	ambos	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	30	det	_	_
-41	de	de	ADP	prp	AdpType=Prep	42	case	_	_
-42	Benjamin	Benjamin	PROPN	prop|M|S	_	40	nmod	_	MWE=Benjamin_Britten|MWEPOS=PROPN
-43	Britten	Britten	PROPN	PROPN	_	42	name	_	_
-44	.	.	PUNCT	punc	_	3	punct	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	professor	professor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
+12	José	José	PROPN	_	_	11	nmod	_	MWE=José_Luís_Borges_Coelho|MWEPOS=PROPN
+13	Luís	Luís	PROPN	_	_	12	flat	_	_
+14	Borges	Borges	PROPN	_	_	12	flat	_	_
+15	Coelho	Coelho	PROPN	_	_	12	flat	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	cantata	cantata	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	26	obj	_	_
+19	BWV	BWV	PROPN	_	_	18	nmod	_	MWE=BWV_4|MWEPOS=PROPN
+20	4	4	NUM	_	NumForm=Digit|NumType=Card	19	nummod	_	_
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	J.	J.	PROPN	_	_	18	nmod	_	MWE=J._S._Bach|MWEPOS=PROPN
+23	S.	S.	PROPN	_	_	22	flat	_	_
+24	Bach	Bach	PROPN	_	_	22	flat	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+26	bem	bem	NOUN	PRP|@CO	_	4	cc	_	MWE=bem_como|MWEPOS=ADV
+27	como	como	SCONJ	N|M|S|@P<	_	26	fixed	_	_
+28	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
+29	«	«	PUNCT	PU|@PU	_	30	punct	_	SpaceAfter=No
+30	Sinfonia	Sinfonia	PROPN	_	_	26	obj	_	MWE=Sinfonia_Simples|MWEPOS=PROPN
+31	Simples	Simples	PROPN	_	_	30	flat	_	SpaceAfter=No
+32	»	»	PUNCT	PU|@PU	_	35	punct	_	_
+33	e	e	CCONJ	<co-cjt>|<co-acc>|KC|@CO	_	35	cc	_	_
+34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
+35	cantata	cantata	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	30	conj	_	_
+36	«	«	PUNCT	PU|@PU	_	35	punct	_	SpaceAfter=No
+37	Misericordium	Misericordium	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	35	nmod	_	SpaceAfter=No
+38	»	»	PUNCT	PU|@PU	_	35	punct	_	SpaceAfter=No
+39	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+40	ambas	ambos	DET	<cjt>|<quant>|DET|F|P|@N<PRED	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	30	det	_	_
+41	de	de	ADP	PRP|@N<	_	42	case	_	_
+42	Benjamin	Benjamin	PROPN	_	_	40	nmod	_	MWE=Benjamin_Britten|MWEPOS=PROPN
+43	Britten	Britten	PROPN	_	_	42	flat	_	SpaceAfter=No
+44	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP665-5
-# sent_id = pt-ud-train.conllu#s3455/pt
-# orig_file_sentence = 035#55
-1	Em	em	ADP	prp	AdpType=Prep	2	case	_	_
-2	Paços	Paços	PROPN	prop|M/F|S/P	_	5	nmod	_	MWE=Paços_de_Brandão|MWEPOS=PROPN
-3	de	de	ADP	ADP	AdpType=Prep	4	case	_	_
-4	Brandão	Brandão	PROPN	PROPN	_	2	name	_	_
+# text = Em Paços de Brandão inicia-se também o XIX Festival de Música de Verão.
+# forest 1
+# source CETEMPúblico n=665 sec=soc sem=96a
+# sent_id = CP665-5
+# id 3456
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
+2	Paços	Paços	PROPN	PROP|M|S|@P<	_	5	obl	_	MWE=Paços_de_Brandão|MWEPOS=PROPN
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	Brandão	Brandão	PROPN	PROP|@P<	_	2	flat	_	_
 5-6	inicia-se	_	_	_	_	_	_	_	_
 5	inicia	iniciar	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	5	dobj	_	_
-7	também	também	ADV	adv	_	5	advmod	_	_
-8	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	XIX	XIX	PROPN	prop|M|S	_	5	nsubj	_	MWE=XIX_Festival_de_Música_de_Verão|MWEPOS=PROPN
-10	Festival	Festival	PROPN	PROPN	_	9	name	_	_
-11	de	de	ADP	ADP	AdpType=Prep	12	case	_	_
-12	Música	Música	PROPN	PROPN	_	9	name	_	_
-13	de	de	ADP	ADP	AdpType=Prep	14	case	_	_
-14	Verão	Verão	PROPN	PROPN	_	9	name	_	_
-15	.	.	PUNCT	punc	_	5	punct	_	_
+6	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	5	obj	_	_
+7	também	também	ADV	ADV|@<ADVL	_	5	advmod	_	_
+8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	XIX	XIX	PROPN	_	_	5	nsubj	_	MWE=XIX_Festival_de_Música_de_Verão|MWEPOS=PROPN
+10	Festival	Festival	PROPN	_	_	9	flat	_	_
+11	de	de	ADP	PRP|@N<	_	12	case	_	_
+12	Música	Música	PROPN	PROP|@P<	_	9	flat	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	Verão	Verão	PROPN	PROP|@P<	_	9	flat	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP665-6
-# sent_id = pt-ud-train.conllu#s3456/pt
-# orig_file_sentence = 035#56
+# text = Na sede do Círculo de Recreio , Arte e Cultura actua, pelas 21h45, o Quarteto Lírico do Real Teatro de Queluz, que é formado por Elsa Saque, Carlos Guilherme, Ana Ferraz e Wagner Dinis.
+# forest 1
+# source CETEMPúblico n=665 sec=soc sem=96a
+# sent_id = CP665-6
+# id 3457
 1-2	Na	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
-3	sede	sede	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nmod	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
+3	sede	sede	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	_
 4-5	do	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Círculo	Círculo	PROPN	prop|M|S	_	3	nmod	_	MWE=Círculo_de_Recreio_,_Arte_e_Cultura|MWEPOS=PROPN
-7	de	de	ADP	ADP	AdpType=Prep	8	case	_	_
-8	Recreio	Recreio	PROPN	PROPN	_	6	name	_	_
-9	,	,	PUNCT	PUNCT	_	8	punct	_	_
-10	Arte	Arte	PROPN	PROPN	_	8	conj	_	_
-11	e	e	CONJ	CONJ	_	8	cc	_	_
-12	Cultura	Cultura	PROPN	PROPN	_	8	conj	_	_
-13	actua	actuar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-14	,	,	PUNCT	punc	_	13	punct	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Círculo	Círculo	PROPN	PROP|M|S|@P<	_	3	nmod	_	MWE=Círculo_de_Recreio_,_Arte_e_Cultura|MWEPOS=PROPN
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	Recreio	Recreio	PROPN	PROP|@P<	_	6	flat	_	_
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+10	Arte	Arte	PROPN	_	_	8	conj	_	_
+11	e	e	CCONJ	_	_	12	cc	_	_
+12	Cultura	Cultura	PROPN	_	_	8	conj	_	_
+13	actua	actuar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15-16	pelas	_	_	_	_	_	_	_	_
-15	por	por	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
-17	21h45	21h45	NOUN	n|F|P	Gender=Fem|Number=Plur	13	nmod	_	_
-18	,	,	PUNCT	punc	_	13	punct	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	Quarteto	Quarteto	PROPN	prop|M|S	_	13	nsubj	_	MWE=Quarteto_Lírico|MWEPOS=PROPN
-21	Lírico	Lírico	PROPN	PROPN	_	20	name	_	_
+15	por	por	ADP	<sam->|PRP|@<ADVL	_	17	case	_	_
+16	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
+17	21h45	21h45	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	13	obl	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	Quarteto	Quarteto	PROPN	_	_	13	nsubj	_	MWE=Quarteto_Lírico|MWEPOS=PROPN
+21	Lírico	Lírico	PROPN	_	_	20	flat	_	_
 22-23	do	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-23	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-24	Real	Real	PROPN	prop|M|S	_	23	nmod	_	MWE=Real_Teatro_de_Queluz|MWEPOS=PROPN
-25	Teatro	Teatro	PROPN	PROPN	_	24	name	_	_
-26	de	de	ADP	ADP	AdpType=Prep	27	case	_	_
-27	Queluz	Queluz	PROPN	PROPN	_	24	name	_	_
-28	,	,	PUNCT	punc	_	20	punct	_	_
-29	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	31	nsubjpass	_	_
-30	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	auxpass	_	_
-31	formado	formar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	20	acl	_	_
-32	por	por	ADP	prp	AdpType=Prep	33	case	_	_
-33	Elsa	Elsa	PROPN	prop|F|S	_	31	dobj	_	MWE=Elsa_Saque|MWEPOS=PROPN
-34	Saque	Saque	PROPN	PROPN	_	33	name	_	_
-35	,	,	PUNCT	punc	_	33	punct	_	_
-36	Carlos	Carlos	PROPN	prop|M|S	_	33	conj	_	MWE=Carlos_Guilherme|MWEPOS=PROPN
-37	Guilherme	Guilherme	PROPN	PROPN	_	36	name	_	_
-38	,	,	PUNCT	punc	_	33	punct	_	_
-39	Ana	Ana	PROPN	prop|F|S	_	33	conj	_	MWE=Ana_Ferraz|MWEPOS=PROPN
-40	Ferraz	Ferraz	PROPN	PROPN	_	39	name	_	_
-41	e	e	CONJ	conj-c|<co-prparg>	_	33	cc	_	_
-42	Wagner	Wagner	PROPN	prop|M|S	_	33	conj	_	MWE=Wagner_Dinis|MWEPOS=PROPN
-43	Dinis	Dinis	PROPN	PROPN	_	42	name	_	_
-44	.	.	PUNCT	punc	_	13	punct	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
+23	o	o	DET	<first-cjt>|<artd>|<-sam>|ART|M|S|@P<	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+24	Real	Real	PROPN	_	_	23	nmod	_	MWE=Real_Teatro_de_Queluz|MWEPOS=PROPN
+25	Teatro	Teatro	PROPN	_	_	24	flat	_	_
+26	de	de	ADP	PRP|@N<	_	27	case	_	_
+27	Queluz	Queluz	PROPN	PROP|@P<	_	24	flat	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+29	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	30	nsubj	_	_
+30	é	ser	VERB	<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl	_	_
+31	formado	formar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	30	ccomp	_	_
+32	por	por	ADP	PRP|@PASS	_	33	case	_	_
+33	Elsa	Elsa	PROPN	_	_	31	obj	_	MWE=Elsa_Saque|MWEPOS=PROPN
+34	Saque	Saque	PROPN	_	_	33	flat	_	SpaceAfter=No
+35	,	,	PUNCT	PU|@PU	_	36	punct	_	_
+36	Carlos	Carlos	PROPN	_	_	33	conj	_	MWE=Carlos_Guilherme|MWEPOS=PROPN
+37	Guilherme	Guilherme	PROPN	_	_	36	flat	_	SpaceAfter=No
+38	,	,	PUNCT	PU|@PU	_	39	punct	_	_
+39	Ana	Ana	PROPN	_	_	33	conj	_	MWE=Ana_Ferraz|MWEPOS=PROPN
+40	Ferraz	Ferraz	PROPN	_	_	39	flat	_	_
+41	e	e	CCONJ	<co-prparg>|KC|@CO	_	42	cc	_	_
+42	Wagner	Wagner	PROPN	_	_	33	conj	_	MWE=Wagner_Dinis|MWEPOS=PROPN
+43	Dinis	Dinis	PROPN	_	_	42	flat	_	SpaceAfter=No
+44	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP665-7
-# sent_id = pt-ud-train.conllu#s3457/pt
-# orig_file_sentence = 035#57
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	cantores	cantor	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nsubjpass	_	_
-3	serão	ser	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	auxpass	_	_
-4	acompanhados	acompanhar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
+# text = Os cantores serão acompanhados ao piano por Armando Vidal.
+# forest 1
+# source CETEMPúblico n=665 sec=soc sem=96a
+# sent_id = CP665-7
+# id 3458
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	cantores	cantor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
+3	serão	ser	VERB	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+4	acompanhados	acompanhar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	3	ccomp	_	_
 5-6	ao	_	_	_	_	_	_	_	_
-5	a	a	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	piano	piano	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-8	por	por	ADP	prp	AdpType=Prep	9	case	_	_
-9	Armando	Armando	PROPN	prop|M|S	_	4	dobj	_	MWE=Armando_Vidal|MWEPOS=PROPN
-10	Vidal	Vidal	PROPN	PROPN	_	9	name	_	_
-11	.	.	PUNCT	punc	_	4	punct	_	_
+5	a	a	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
+6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	piano	piano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
+8	por	por	ADP	PRP|@PASS	_	9	case	_	_
+9	Armando	Armando	PROPN	_	_	4	obj	_	MWE=Armando_Vidal|MWEPOS=PROPN
+10	Vidal	Vidal	PROPN	_	_	9	flat	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

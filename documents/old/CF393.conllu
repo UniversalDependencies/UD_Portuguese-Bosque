@@ -1,94 +1,99 @@
-# distance_from_new = 0
-# new_sent_id = CF393-1
-# sent_id = pt-ud-train.conllu#s6672/pt
-# orig_file_sentence = 067#72
-1	(	(	PUNCT	punc	_	2	punct	_	_
-2	Barbara	Barbara	PROPN	prop|F|S	_	0	root	_	MWE=Barbara_Boxer|MWEPOS=PROPN
-3	Boxer	Boxer	PROPN	PROPN	_	2	name	_	_
-4	,	,	PUNCT	punc	_	2	punct	_	_
-5	deputada	deputada	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+# text = (Barbara Boxer, deputada pela Califórnia)
+# forest 1
+# source CETENFolha n=393 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF393-1
+# id 1630
+1	(	(	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+2	Barbara	Barbara	PROPN	_	_	0	root	_	MWE=Barbara_Boxer|MWEPOS=PROPN
+3	Boxer	Boxer	PROPN	_	_	2	flat	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+5	deputada	deputada	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	2	nmod	_	_
 6-7	pela	_	_	_	_	_	_	_	_
-6	por	por	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Califórnia	Califórnia	PROPN	prop|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-9	)	)	PUNCT	punc	_	2	punct	_	_
+6	por	por	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Califórnia	Califórnia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+9	)	)	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF393-2
-# sent_id = pt-ud-train.conllu#s6673/pt
-# orig_file_sentence = 067#73
-1	«	«	PUNCT	punc	_	3	punct	_	_
-2	Nós	nós	PRON	pron-pers|M/F|1P|NOM	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_
-3	temos	ter	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	que	que	SCONJ	conj-s	_	3	mark	_	_
-5	parar	parar	VERB	v-inf	VerbForm=Inf	3	advcl	_	_
-6	por	por	ADP	prp	AdpType=Prep	8	case	_	_
-7	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	8	nummod	_	_
-8	momento	momento	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-9	e	e	CONJ	conj-c	_	5	cc	_	_
-10	perguntar	perguntar	VERB	v-inf	VerbForm=Inf	19	xcomp	_	_
-11	a	a	ADP	prp	AdpType=Prep	12	case	_	_
-12	nós	nós	PRON	pron-pers|M/F|1P|NOM/PIV	Case=Acc,Nom|Number=Plur|Person=1|PrepCase=Pre|PronType=Prs	19	iobj	_	_
-13	mesmos	mesmo	DET	pron-det|<ident>|M|S	Gender=Masc|Number=Sing	12	det	_	_
-14	:	:	PUNCT	punc	_	19	punct	_	_
-15	De	de	ADP	prp	AdpType=Prep	17	case	_	_
-16	quanto	quanto	DET	pron-det|<interr>|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Int	17	det	_	_
-17	ar	ar	NOUN	n|M|S	Gender=Masc|Number=Sing	19	iobj	_	_
-18	limpo	limpar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	17	acl	_	_
-19	precisamos	precisar	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	conj	_	_
-20	?	?	PUNCT	punc	_	3	punct	_	_
-21	»	»	PUNCT	punc	_	3	punct	_	_
+# text = «Nós temos que parar por um momento e perguntar a nós mesmos: De quanto ar limpo precisamos?»
+# forest 1
+# source CETENFolha n=393 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF393-2
+# id 1631
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+2	Nós	nós	PRON	PERS|M/F|1P|NOM|@SUBJ>	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_
+3	temos	ter	VERB	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	que	que	SCONJ	KS|@PRT-AUX<	_	3	mark	_	_
+5	parar	parar	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	3	advcl	_	_
+6	por	por	ADP	PRP|@<ADVL	_	8	case	_	_
+7	um	um	NUM	<card>|NUM|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card	8	nummod	_	_
+8	momento	momento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	_
+9	e	e	CCONJ	<co-inf>|<co-sta>|KC|@CO	_	19	cc	_	_
+10	perguntar	perguntar	VERB	<mv>|<cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	19	xcomp	_	_
+11	a	a	ADP	PRP|@<PIV	_	12	case	_	_
+12	nós	nós	PRON	PERS|M|1P|NOM/PIV|@P<	Case=Acc,Nom|Number=Plur|Person=1|PrepCase=Pre|PronType=Prs	19	iobj	_	_
+13	mesmos	mesmo	DET	<ident>|DET|M|S|@N<	Gender=Masc|Number=Sing	12	det	_	SpaceAfter=No
+14	:	:	PUNCT	PU|@PU	_	19	punct	_	_
+15	De	de	ADP	PRP|@ACC>	_	17	case	_	_
+16	quanto	quanto	DET	<interr>|<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Int	17	det	_	_
+17	ar	ar	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	iobj	_	_
+18	limpo	limpar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	17	acl	_	_
+19	precisamos	precisar	VERB	<mv>|V|PR|1P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	conj	_	SpaceAfter=No
+20	?	?	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+21	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF393-3
-# sent_id = pt-ud-train.conllu#s6674/pt
-# orig_file_sentence = 067#74
-1	(	(	PUNCT	punc	_	2	punct	_	_
-2	Lee	Lee	PROPN	prop|M|S	_	0	root	_	MWE=Lee_Iacocca|MWEPOS=PROPN
-3	Iacocca	Iacocca	PROPN	PROPN	_	2	name	_	_
-4	,	,	PUNCT	punc	_	2	punct	_	_
-5	executivo	executivo	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
+# text = (Lee Iacocca, executivo da indústria automobilística)
+# forest 1
+# source CETENFolha n=393 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF393-3
+# id 1632
+1	(	(	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+2	Lee	Lee	PROPN	_	_	0	root	_	MWE=Lee_Iacocca|MWEPOS=PROPN
+3	Iacocca	Iacocca	PROPN	_	_	2	flat	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+5	executivo	executivo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	2	nmod	_	_
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	indústria	indústria	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-9	automobilística	automobilístico	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
-10	)	)	PUNCT	punc	_	2	punct	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	indústria	indústria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+9	automobilística	automobilístico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	SpaceAfter=No
+10	)	)	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF393-4
-# sent_id = pt-ud-train.conllu#s6675/pt
-# orig_file_sentence = 067#75
-1	«	«	PUNCT	punc	_	2	punct	_	_
-2	Correção	correção	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-3	:	:	PUNCT	punc	_	2	punct	_	_
-4	hoje	hoje	ADV	adv	_	5	advmod	_	_
-5	trazemos	trazer	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	acl	_	_
-6	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	respostas	resposta	NOUN	n|F|P	Gender=Fem|Number=Plur	5	dobj	_	_
+# text = «Correção: hoje trazemos as respostas das palavras cruzadas de sábado.
+# forest 1
+# source CETENFolha n=393 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF393-4
+# id 1633
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+2	Correção	correção	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	PU|@PU	_	2	punct	_	_
+4	hoje	hoje	ADV	ADV|@ADVL>	_	5	advmod	_	_
+5	trazemos	trazer	VERB	<mv>|V|PR|1P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	acl	_	_
+6	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+7	respostas	resposta	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	_
 8-9	das	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
-10	palavras	palavras	NOUN	n|F|P	_	7	nmod	_	MWE=palavras_cruzadas|MWEPOS=NOUN
-11	cruzadas	cruzadas	NOUN	NOUN	_	10	compound	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	sábado	sábado	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-14	.	.	PUNCT	punc	_	2	punct	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+10	palavras	palavras	NOUN	_	_	7	nmod	_	MWE=palavras_cruzadas|MWEPOS=NOUN
+11	cruzadas	cruzadas	NOUN	_	_	10	compound	_	_
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	sábado	sábado	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF393-5
-# sent_id = pt-ud-train.conllu#s6676/pt
-# orig_file_sentence = 067#76
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	resposta	resposta	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nsubjpass	_	_
-3	para	para	ADP	prp	AdpType=Prep	5	case	_	_
-4	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
-5	palavras	palavras	NOUN	n|F|P	_	2	nmod	_	MWE=palavras_cruzadas|MWEPOS=NOUN
-6	cruzadas	cruzadas	NOUN	NOUN	_	5	compound	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	hoje	hoje	ADV	adv	_	5	advmod	_	_
-9	foram	ser	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	10	auxpass	_	_
-10	publicadas	publicar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	0	root	_	_
-11	ontem	ontem	ADV	adv	_	10	advmod	_	_
-12	.	.	PUNCT	punc	_	10	punct	_	_
+# text = A resposta para as palavras cruzadas de hoje foram publicadas ontem.
+# forest 1
+# source CETENFolha n=393 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF393-5
+# id 1634
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	resposta	resposta	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
+3	para	para	ADP	PRP|@N<	_	5	case	_	_
+4	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+5	palavras	palavras	NOUN	_	_	2	nmod	_	MWE=palavras_cruzadas|MWEPOS=NOUN
+6	cruzadas	cruzadas	NOUN	_	_	5	compound	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	hoje	hoje	ADV	ADV|@P<	_	5	advmod	_	_
+9	foram	ser	VERB	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+10	publicadas	publicar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	9	ccomp	_	_
+11	ontem	ontem	ADV	ADV|@<ADVL	_	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 

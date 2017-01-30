@@ -1,144 +1,147 @@
-# distance_from_new = 0
-# new_sent_id = CP833-1
-# sent_id = pt-ud-train.conllu#s4299/pt
-# orig_file_sentence = 043#99
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	solução	solução	NOUN	n|F|S	Gender=Fem|Number=Sing	37	nsubj	_	_
-3	definitiva	definitivo	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	situações	situação	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-6	como	como	ADV	adv|<rel>	PronType=Rel	5	advmod	_	_
-7	as	a	PRON	pron-det|<dem>|F|P	Gender=Fem|Number=Plur|PronType=Dem	6	nsubj	_	_
+# text = A solução definitiva de situações como as da central da Av. Casal Ribeiro, do Campo das Ceboulas e de numerosas outras centrais dedicadas aos transportes inter-regionais e inter-urbanos está porém dependente duma obra de grande envergadura, ainda sem localização completamente decidida e cujo início não deverá ocorrer antes dos próximos dois ou três anos.
+# forest 1
+# source CETEMPúblico n=833 sec=soc sem=91b
+# sent_id = CP833-1
+# id 4301
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	solução	solução	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	37	nsubj	_	_
+3	definitiva	definitivo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	situações	situação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
+6	como	como	ADV	<com>|PRP|@N<	PronType=Rel	5	advmod	_	_
+7	as	a	PRON	<dem>|DET|F|P|@P<	Gender=Fem|Number=Plur|PronType=Dem	6	nsubj	_	_
 8-9	da	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	central	central	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
+8	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	central	central	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
 11-12	da	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	Av.	Av.	PROPN	prop|F|S	_	10	nmod	_	MWE=Av._Casal_Ribeiro|MWEPOS=PROPN
-14	Casal	Casal	PROPN	PROPN	_	13	name	_	_
-15	Ribeiro	Ribeiro	PROPN	PROPN	_	13	name	_	_
-16	,	,	PUNCT	punc	_	10	punct	_	_
+11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	Av.	Av.	PROPN	_	_	10	nmod	_	MWE=Av._Casal_Ribeiro|MWEPOS=PROPN
+14	Casal	Casal	PROPN	_	_	13	flat	_	_
+15	Ribeiro	Ribeiro	PROPN	_	_	13	flat	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 17-18	do	_	_	_	_	_	_	_	_
-17	de	de	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	Campo	Campo	PROPN	prop|M|S	_	10	conj	_	MWE=Campo_das_Ceboulas|MWEPOS=PROPN
+17	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	19	case	_	_
+18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	Campo	Campo	PROPN	PROP|M|S|@P<	_	10	conj	_	MWE=Campo_das_Ceboulas|MWEPOS=PROPN
 20-21	das	_	_	_	_	_	_	_	_
-20	de	de	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
-22	Ceboulas	Ceboulas	PROPN	PROPN	_	19	name	_	_
-23	e	e	CONJ	conj-c|<co-postnom>	_	10	cc	_	_
-24	de	de	ADP	prp	AdpType=Prep	27	case	_	_
-25	numerosas	numeroso	ADJ	adj|F|P	Gender=Fem|Number=Plur	27	amod	_	_
-26	outras	outro	DET	pron-det|<diff>|<KOMP>|F|P	Degree=Cmp|Gender=Fem|Number=Plur	27	det	_	_
-27	centrais	central	NOUN	n|F|P	Gender=Fem|Number=Plur	10	conj	_	_
-28	dedicadas	dedicar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	27	acl	_	_
+20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
+21	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
+22	Ceboulas	Ceboulas	PROPN	PROP|@P<	_	19	flat	_	_
+23	e	e	CCONJ	<co-postnom>|KC|@CO	_	27	cc	_	_
+24	de	de	ADP	<cjt>|PRP|@N<	_	27	case	_	_
+25	numerosas	numeroso	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	27	amod	_	_
+26	outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Degree=Cmp|Gender=Fem|Number=Plur	27	det	_	_
+27	centrais	central	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	conj	_	_
+28	dedicadas	dedicar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	27	acl	_	_
 29-30	aos	_	_	_	_	_	_	_	_
-29	a	a	ADP	prp|<sam->	AdpType=Prep	31	case	_	_
-30	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_
-31	transportes	transporte	NOUN	n|M|P	Gender=Masc|Number=Plur	28	dobj	_	_
-32	inter-regionais	inter-regional	ADJ	adj|M|P	Gender=Masc|Number=Plur	31	amod	_	_
-33	e	e	CONJ	conj-c|<co-postnom>	_	32	cc	_	_
-34	inter-urbanos	inter-urbano	NOUN	n|M|P	Gender=Masc|Number=Plur	32	conj	_	_
-35	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	_	_
-36	porém	porém	ADV	adv|<kc>	_	37	advmod	_	_
-37	dependente	dependente	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
+29	a	a	ADP	<sam->|PRP|@<PIV	_	31	case	_	_
+30	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_
+31	transportes	transporte	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	28	obj	_	_
+32	inter-regionais	inter-regional	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	31	amod	_	_
+33	e	e	CCONJ	<co-postnom>|KC|@CO	_	34	cc	_	_
+34	inter-urbanos	inter-urbano	NOUN	<cjt>|<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	32	conj	_	_
+35	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	_	_
+36	porém	porém	ADV	<kc>|ADV|@<ADVL	_	37	advmod	_	_
+37	dependente	dependente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 38-39	duma	_	_	_	_	_	_	_	_
-38	de	de	ADP	prp	AdpType=Prep	40	case	_	_
-39	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
-40	obra	obra	NOUN	n|F|S	Gender=Fem|Number=Sing	37	nmod	_	_
-41	de	de	ADP	prp	AdpType=Prep	43	case	_	_
-42	grande	grande	ADJ	adj|F|S	Gender=Fem|Number=Sing	43	amod	_	_
-43	envergadura	envergadura	NOUN	n|F|S	Gender=Fem|Number=Sing	40	nmod	_	_
-44	,	,	PUNCT	punc	_	40	punct	_	_
-45	ainda	ainda	ADV	adv	_	47	advmod:emph	_	_
-46	sem	sem	ADP	prp	AdpType=Prep	47	case	_	_
-47	localização	localização	NOUN	n|F|S	Gender=Fem|Number=Sing	40	nmod	_	_
-48	completamente	completamente	ADV	adv	_	49	advmod	_	_
-49	decidida	decidir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	47	acl	_	_
-50	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	47	cc	_	_
-51	cujo	cujo	DET	pron-det|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	52	det	_	_
-52	início	início	NOUN	n|M|S	Gender=Masc|Number=Sing	54	nsubj	_	_
-53	não	não	ADV	adv	_	55	neg	_	_
-54	deverá	dever	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	47	conj	_	_
-55	ocorrer	ocorrer	VERB	v-inf	VerbForm=Inf	54	xcomp	_	_
-56	antes	antes	ADV	adv	_	55	advmod	_	_
+38	de	de	ADP	PRP|@A<	_	40	case	_	_
+39	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
+40	obra	obra	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	37	obl	_	_
+41	de	de	ADP	PRP|@N<	_	43	case	_	_
+42	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	43	amod	_	_
+43	envergadura	envergadura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	40	nmod	_	SpaceAfter=No
+44	,	,	PUNCT	PU|@PU	_	40	punct	_	_
+45	ainda	ainda	ADV	ADV|@>P	_	47	advmod:emph	_	_
+46	sem	sem	ADP	<first-cjt>|PRP|@N<PRED	_	47	case	_	_
+47	localização	localização	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	40	nmod	_	_
+48	completamente	completamente	ADV	ADV|@ADVL>	_	49	advmod	_	_
+49	decidida	decidir	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	47	acl	_	_
+50	e	e	CCONJ	<co-n<pred>|<co-fmc>|<co-vfin>|KC|@CO	_	54	cc	_	_
+51	cujo	cujo	DET	<rel>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Rel	52	det	_	_
+52	início	início	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	54	nsubj	_	_
+53	não	não	ADV	_	Polarity=Neg	55	advmod	_	_
+54	deverá	dever	VERB	<cjt>|<aux>|V|FUT|3S|IND|@N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	47	conj	_	_
+55	ocorrer	ocorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	54	xcomp	_	_
+56	antes	antes	ADV	ADV|@<ADVL	_	55	advmod	_	_
 57-58	dos	_	_	_	_	_	_	_	_
-57	de	de	ADP	prp|<sam->	AdpType=Prep	63	case	_	_
-58	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	63	det	_	_
-59	próximos	próximo	ADJ	adj|M|P	Gender=Masc|Number=Plur	63	amod	_	_
-60	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	63	nummod	_	_
-61	ou	ou	CONJ	conj-c|<co-prenom>	_	60	cc	_	_
-62	três	três	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	60	conj	_	_
-63	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	56	nmod	_	_
-64	.	.	PUNCT	punc	_	37	punct	_	_
+57	de	de	ADP	<sam->|PRP|@A<	_	63	case	_	_
+58	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	63	det	_	_
+59	próximos	próximo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	63	amod	_	_
+60	dois	dois	NUM	<first-cjt>|<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	63	nummod	_	_
+61	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	62	cc	_	_
+62	três	três	NUM	<cjt>|<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	60	conj	_	_
+63	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	56	obl	_	SpaceAfter=No
+64	.	.	PUNCT	PU|@PU	_	37	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP833-2
-# sent_id = pt-ud-train.conllu#s4300/pt
-# orig_file_sentence = 043#100
-1	Uma	uma	DET	conj-s	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	mark	_	MWE=Uma_vez_que|MWEPOS=SCONJ
-2	vez	vez	NOUN	NOUN	_	1	mwe	_	_
-3	que	que	SCONJ	SCONJ	_	1	mwe	_	_
-4	esta	este	DET	pron-det|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
-5	central	central	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
-6	esteja	estar	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
-7	em	em	ADP	prp	AdpType=Prep	8	case	_	_
-8	funcionamento	funcionamento	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-9	,	,	PUNCT	punc	_	10	punct	_	_
-10	passará	passar	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-11	a	a	ADP	prp	AdpType=Prep	12	mark	_	_
-12	receber	receber	VERB	v-inf	VerbForm=Inf	10	xcomp	_	_
-13	também	também	ADV	adv	_	15	advmod	_	_
-14	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
-15	carreiras	carreira	NOUN	n|F|P	Gender=Fem|Number=Plur	12	dobj	_	_
-16	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	19	nsubj	_	_
-17	em	em	ADP	prp	AdpType=Prep	18	case	_	_
-18	Janeiro	janeiro	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	19	nmod	_	_
-19	sairão	sair	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	15	acl	_	_
+# text = Uma vez que esta central esteja em funcionamento, passará a receber também as carreiras que em Janeiro sairão do Campo Pequeno para Sete Rios.
+# forest 1
+# source CETEMPúblico n=833 sec=soc sem=91b
+# sent_id = CP833-2
+# id 4302
+1	Uma	uma	DET	<arti>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	6	mark	_	MWE=Uma_vez_que|MWEPOS=SCONJ
+2	vez	vez	NOUN	N|F|S|@>S	_	1	fixed	_	_
+3	que	que	SCONJ	KS|@SUB	_	1	fixed	_	_
+4	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
+5	central	central	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
+6	esteja	estar	VERB	<mv>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
+7	em	em	ADP	PRP|@<SA	_	8	case	_	_
+8	funcionamento	funcionamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+10	passará	passar	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+11	a	a	ADP	PRP|@PRT-AUX<	_	12	mark	_	_
+12	receber	receber	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
+13	também	também	ADV	ADV|@>N	_	15	advmod	_	_
+14	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
+15	carreiras	carreira	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	obj	_	_
+16	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	19	nsubj	_	_
+17	em	em	ADP	PRP|@ADVL>	_	18	case	_	_
+18	Janeiro	janeiro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	_
+19	sairão	sair	VERB	<mv>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	15	acl	_	_
 20-21	do	_	_	_	_	_	_	_	_
-20	de	de	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Campo	Campo	PROPN	prop|M|S	_	19	nmod	_	MWE=Campo_Pequeno|MWEPOS=PROPN
-23	Pequeno	Pequeno	PROPN	PROPN	_	22	name	_	_
-24	para	para	ADP	prp	AdpType=Prep	25	case	_	_
-25	Sete	Sete	NUM	prop|M/F|S	NumType=Card	19	nmod	_	MWE=Sete_Rios|MWEPOS=PROPN
-26	Rios	Rios	PROPN	PROPN	_	25	name	_	_
-27	.	.	PUNCT	punc	_	10	punct	_	_
+20	de	de	ADP	<sam->|PRP|@<SA	_	22	case	_	_
+21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	Campo	Campo	PROPN	_	_	19	obl	_	MWE=Campo_Pequeno|MWEPOS=PROPN
+23	Pequeno	Pequeno	PROPN	_	_	22	flat	_	_
+24	para	para	ADP	PRP|@<SA	_	25	case	_	_
+25	Sete	Sete	NUM	_	NumType=Card	19	obl	_	MWE=Sete_Rios|MWEPOS=PROPN
+26	Rios	Rios	PROPN	_	_	25	flat	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP833-3
-# sent_id = pt-ud-train.conllu#s4301/pt
-# orig_file_sentence = 044#1
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	espaço	espaço	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nsubjpass	_	_
-3	a	a	ADP	prp	AdpType=Prep	4	mark	_	_
-4	libertar	libertar	VERB	v-inf|3S	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	_
+# text = O espaço a libertar nessa praça poderá então ser consagrado aos carros de turismo que agora ocupam o topo do Parque Eduardo VII.
+# forest 1
+# source CETEMPúblico n=833 sec=soc sem=91b
+# sent_id = CP833-3
+# id 4303
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	espaço	espaço	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
+3	a	a	ADP	PRP|@N<	_	4	mark	_	_
+4	libertar	libertar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	_
 5-6	nessa	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	essa	esse	DET	pron-det|<-sam>|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
-7	praça	praça	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-8	poderá	poder	AUX	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	aux	_	_
-9	então	então	ADV	adv|<kc>	_	11	advmod	_	_
-10	ser	ser	VERB	v-inf	VerbForm=Inf	11	auxpass	_	_
-11	consagrado	consagrar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
+6	essa	esse	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
+7	praça	praça	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
+8	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	aux	_	_
+9	então	então	ADV	<kc>|ADV|@ADVL>	_	11	advmod	_	_
+10	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+11	consagrado	consagrar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	10	ccomp	_	_
 12-13	aos	_	_	_	_	_	_	_	_
-12	a	a	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
-14	carros	carro	NOUN	n|M|P	Gender=Masc|Number=Plur	11	nmod	_	_
-15	de	de	ADP	prp	AdpType=Prep	16	case	_	_
-16	turismo	turismo	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-17	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	19	nsubj	_	_
-18	agora	agora	ADV	adv|<kc>	_	19	advmod	_	_
-19	ocupam	ocupar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
-20	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	topo	topo	NOUN	n|M|S	Gender=Masc|Number=Sing	19	dobj	_	_
+12	a	a	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
+13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+14	carros	carro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	obl	_	_
+15	de	de	ADP	PRP|@N<	_	16	case	_	_
+16	turismo	turismo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
+17	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	19	nsubj	_	_
+18	agora	agora	ADV	<kc>|ADV|@ADVL>	_	19	advmod	_	_
+19	ocupam	ocupar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
+20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	topo	topo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	19	obj	_	_
 22-23	do	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	Parque	Parque	PROPN	prop|M|S	_	21	nmod	_	MWE=Parque_Eduardo_VII|MWEPOS=PROPN
-25	Eduardo	Eduardo	PROPN	PROPN	_	24	name	_	_
-26	VII	VII	ADJ	PROPN	NumForm=Roman|NumType=Ord	24	name	_	_
-27	.	.	PUNCT	punc	_	11	punct	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	Parque	Parque	PROPN	_	_	21	nmod	_	MWE=Parque_Eduardo_VII|MWEPOS=PROPN
+25	Eduardo	Eduardo	PROPN	_	_	24	flat	_	_
+26	VII	VII	PROPN	_	_	24	flat	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 

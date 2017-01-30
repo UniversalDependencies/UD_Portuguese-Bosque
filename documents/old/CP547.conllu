@@ -1,62 +1,65 @@
-# distance_from_new = 0
-# new_sent_id = CP547-1
-# sent_id = pt-ud-train.conllu#s2849/pt
-# orig_file_sentence = 029#49
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	abortamento	abortamento	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	sempre	sempre	ADV	adv	_	3	advmod	_	_
-5	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	justificação	justificação	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-7	.	.	PUNCT	punc	_	3	punct	_	_
+# text = O abortamento tem sempre uma justificação.
+# forest 1
+# source CETEMPúblico n=547 sec=pol sem=98a
+# sent_id = CP547-1
+# id 2850
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	abortamento	abortamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	sempre	sempre	ADV	ADV|@<ADVL	_	3	advmod	_	_
+5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	justificação	justificação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No
+7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP547-2
-# sent_id = pt-ud-train.conllu#s2850/pt
-# orig_file_sentence = 029#50
-1	Bem	bem	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	2	advmod	_	_
-2	basta	bastar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3-4	sofrê-la	_	_	_	_	_	_	_	_
+# text = Bem basta sofrê-la, bem basta ter do realizar por causa dela.
+# forest 1
+# source CETEMPúblico n=547 sec=pol sem=98a
+# sent_id = CP547-2
+# id 2851
+1	Bem	bem	ADV	<quant>|ADV|@ADVL>	NumType=Card|PronType=Ind,Neg,Tot	2	advmod	_	_
+2	basta	bastar	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3-4	sofrê-la	_	_	_	_	_	_	_	SpaceAfter=No
 3	sofrê	sofrer	VERB	v-inf|<new>|<hyphen>	VerbForm=Inf	2	xcomp	_	_
-4	-la	ela	PRON	pron-pers|<new>|F|S|ACC	Case=Acc|Gender=Fem|Number=Sing|PronType=Prs	3	dobj	_	_
-5	,	,	PUNCT	punc	_	2	punct	_	_
-6	bem	bem	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	7	advmod	_	_
-7	basta	bastar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
-8	ter	ter	VERB	v-inf	VerbForm=Inf	7	xcomp	_	_
+4	-la	ela	PRON	pron-pers|<new>|F|S|ACC	Case=Acc|Gender=Fem|Number=Sing|PronType=Prs	3	obj	_	_
+5	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+6	bem	bem	ADV	<quant>|ADV|@ADVL>	NumType=Card|PronType=Ind,Neg,Tot	7	advmod	_	_
+7	basta	bastar	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+8	ter	ter	VERB	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	7	xcomp	_	_
 9-10	do	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp	AdpType=Prep	11	mark	_	_
-10	o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	dobj	_	_
-11	realizar	realizar	VERB	v-inf	VerbForm=Inf	8	xcomp	_	_
-12	por	por	ADP	prp|<sam->	AdpType=Prep	15	case	_	MWE=por_causa_de|MWEPOS=ADP
-13	causa	causa	NOUN	NOUN	_	12	mwe	_	_
-14-15	dela	_	_	_	_	_	_	_	_
-14	de	de	ADP	ADP	AdpType=Prep	12	mwe	_	_
-15	ela	ele	PRON	pron-pers|<-sam>|F|3S|PIV	Case=Acc|Gender=Fem|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	11	nmod	_	_
-16	.	.	PUNCT	punc	_	2	punct	_	_
+9	de	de	ADP	PRP|@PRT-AUX<	_	11	mark	_	_
+10	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
+11	realizar	realizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
+12	por	por	ADP	<sam->|PRP|@<ADVL	_	15	case	_	MWE=por_causa_de|MWEPOS=ADP
+13	causa	causa	NOUN	N|@P<	_	12	fixed	_	_
+14-15	dela	_	_	_	_	_	_	_	SpaceAfter=No
+14	de	de	ADP	PRP|@N<	_	12	fixed	_	_
+15	ela	ele	PRON	<-sam>|PERS|F|3S|PIV|@P<	Case=Acc|Gender=Fem|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	11	obl	_	_
+16	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 1
-# new_sent_id = CP547-3
-# sent_id = pt-ud-train.conllu#s2851/pt
-# orig_file_sentence = 029#51
-1	Diga	dizer	VERB	v-fin|<new>|<hyfen>|PR|3S|SUBJ	Hyph=Yes|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	se	se	PRON	pron-pers|<refl>|<new>|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	1	dep	_	_
-3	,	,	PUNCT	punc	_	1	punct	_	_
+# text = Diga se, duma vez e claramente, o que se quer ou o que se quer mais.
+# forest 1
+# source CETEMPúblico n=547 sec=pol sem=98a
+# sent_id = CP547-3
+# id 2852
+1	Diga	dizer	VERB	<mv>|<hyphen>|V|PR|3S|SUBJ|@FS-STA	Hyph=Yes|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	<refl>|PERS|M/F|3S/P|ACC|@VOC	Case=Acc|Person=3|PronType=Prs|Reflex=Yes	1	dep	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 4-5	duma	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	uma	uma	DET	adv	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	1	advmod	_	MWE=uma_vez|MWEPOS=ADV
-6	vez	vez	NOUN	NOUN	_	5	mwe	_	_
-7	e	e	CONJ	conj-c|<co-advl>	_	5	cc	_	_
-8	claramente	claramente	ADV	adv	_	5	conj	_	_
-9	,	,	PUNCT	punc	_	1	punct	_	_
-10	o	o	DET	pron-indp|<rel>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	dobj	_	MWE=o_que|MWEPOS=PRON
-11	que	que	SCONJ	SCONJ	_	10	compound	_	_
-12	se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	13	nsubj	_	_
-13	quer	querer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
-14	ou	ou	CONJ	conj-c|<co-acc>	_	13	cc	_	_
-15	o	o	DET	pron-indp|<rel>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	dobj	_	MWE=o_que|MWEPOS=PRON
-16	que	que	SCONJ	SCONJ	_	15	compound	_	_
-17	se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	18	nsubj	_	_
-18	quer	querer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
-19	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	18	advmod	_	_
-20	.	.	PUNCT	punc	_	1	punct	_	_
+4	de	de	ADP	<first-cjt>|PRP|@<ADVL	_	5	case	_	_
+5	uma	uma	DET	adv	Gender=Fem|Number=Sing|PronType=Art	1	advmod	_	MWE=uma_vez|MWEPOS=ADV
+6	vez	vez	NOUN	N|F|S|@P<	_	5	fixed	_	_
+7	e	e	CCONJ	<co-advl>|KC|@CO	_	8	cc	_	_
+8	claramente	claramente	ADV	<cjt>|ADV|@<ADVL	_	5	conj	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+10	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	13	obj	_	MWE=o_que|MWEPOS=PRON
+11	que	que	SCONJ	<rel>|INDP|M|S|@ACC>	_	10	compound	_	_
+12	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs	13	nsubj	_	_
+13	quer	querer	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
+14	ou	ou	CCONJ	<co-fcl>|<co-acc>|KC|@CO	_	18	cc	_	_
+15	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	18	obj	_	MWE=o_que|MWEPOS=PRON
+16	que	que	SCONJ	<rel>|INDP|M|S|@ACC>	_	15	compound	_	_
+17	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs	18	nsubj	_	_
+18	quer	querer	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
+19	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	18	advmod	_	SpaceAfter=No
+20	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

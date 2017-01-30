@@ -1,65 +1,69 @@
-# distance_from_new = 0
-# new_sent_id = CF246-1
-# sent_id = pt-ud-train.conllu#s6087/pt
-# orig_file_sentence = 061#87
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	ex-auxiliar	ex-auxiliar	NOUN	n|M|S	Gender=Masc|Number=Sing	19	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	produção	produção	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-5	em	em	ADP	prp	AdpType=Prep	6	case	_	_
-6	cervejarias	cervejaria	NOUN	n|F|P	Gender=Fem|Number=Plur	4	nmod	_	_
-7	Joilson	Joilson	PROPN	prop|M|S	_	2	nmod	_	MWE=Joilson_da_Silva|MWEPOS=PROPN
+# text = O ex-auxiliar de produção em cervejarias Joilson da Silva, 23, casado com um filho, pedia mais informações sobre o abrigo.
+# forest 1
+# source CETENFolha n=246 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF246-1
+# id 1045
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	ex-auxiliar	ex-auxiliar	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	19	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	produção	produção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+5	em	em	ADP	PRP|@N<	_	6	case	_	_
+6	cervejarias	cervejaria	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	nmod	_	_
+7	Joilson	Joilson	PROPN	PROP|M|S|@N<	_	2	nmod	_	MWE=Joilson_da_Silva|MWEPOS=PROPN
 8-9	da	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	Silva	Silva	PROPN	PROPN	_	7	name	_	_
-11	,	,	PUNCT	punc	_	2	punct	_	_
-12	23	23	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
-13	,	,	PUNCT	punc	_	2	punct	_	_
-14	casado	casar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
-15	com	com	ADP	prp	AdpType=Prep	17	case	_	_
-16	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	17	nummod	_	_
-17	filho	filho	NOUN	n|M|S	Gender=Masc|Number=Sing	14	dobj	_	_
-18	,	,	PUNCT	punc	_	2	punct	_	_
-19	pedia	pedir	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-20	mais	muito	DET	pron-det|<quant>|<KOMP>|F|P	Degree=Cmp|Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	21	det	_	_
-21	informações	informação	NOUN	n|F|P	Gender=Fem|Number=Plur	19	dobj	_	_
-22	sobre	sobre	ADP	prp	AdpType=Prep	24	case	_	_
-23	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	abrigo	abrigo	NOUN	n|M|S	Gender=Masc|Number=Sing	21	nmod	_	_
-25	.	.	PUNCT	punc	_	19	punct	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Silva	Silva	PROPN	PROP|@P<	_	7	flat	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+12	23	23	NUM	<card>|NUM|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+14	casado	casar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
+15	com	com	ADP	PRP|@<PIV	_	17	case	_	_
+16	um	um	NUM	<card>|NUM|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card	17	nummod	_	_
+17	filho	filho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obj	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+19	pedia	pedir	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+20	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|P|@>N	Degree=Cmp|Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	21	det	_	_
+21	informações	informação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	19	obj	_	_
+22	sobre	sobre	ADP	PRP|@N<	_	24	case	_	_
+23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	abrigo	abrigo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF246-2
-# sent_id = pt-ud-train.conllu#s6088/pt
-# orig_file_sentence = 061#88
-1	«	«	PUNCT	punc	_	3	punct	_	_
-2	Eles	eles	PRON	pron-pers|M|3P|NOM	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
-3	dão	dar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	comida	comida	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-5	para	para	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	gente	gente	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
+# text = «Eles dão comida para a gente nesse lugar?
+# forest 1
+# source CETENFolha n=246 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF246-2
+# id 1046
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+2	Eles	eles	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	dão	dar	VERB	<mv>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	comida	comida	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
+5	para	para	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	gente	gente	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
 8-9	nesse	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	esse	esse	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	_
-10	lugar	lugar	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
-11	?	?	PUNCT	punc	_	3	punct	_	_
+8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
+9	esse	esse	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	_
+10	lugar	lugar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No
+11	?	?	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF246-3
-# sent_id = pt-ud-train.conllu#s6089/pt
-# orig_file_sentence = 061#89
-1	Podemos	poder	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	dormir	dormir	VERB	v-inf	VerbForm=Inf	1	xcomp	_	_
-3	?	?	PUNCT	punc	_	1	punct	_	_
+# text = Podemos dormir?
+# forest 1
+# source CETENFolha n=246 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF246-3
+# id 1047
+1	Podemos	poder	VERB	<aux>|V|PR|1P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	dormir	dormir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	SpaceAfter=No
+3	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF246-4
-# sent_id = pt-ud-train.conllu#s6090/pt
-# orig_file_sentence = 061#90
-1	Dão	dar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	cobertor	cobertor	NOUN	n|M|S	Gender=Masc|Number=Sing	1	dobj	_	_
-3	?	?	PUNCT	punc	_	1	punct	_	_
-4	»	»	PUNCT	punc	_	1	punct	_	_
+# text = Dão cobertor?»
+# forest 1
+# source CETENFolha n=246 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF246-4
+# id 1048
+1	Dão	dar	VERB	<mv>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	cobertor	cobertor	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	SpaceAfter=No
+3	?	?	PUNCT	PU|@PU	_	1	punct	_	SpaceAfter=No
+4	»	»	PUNCT	PU|@PU	_	1	punct	_	_
 

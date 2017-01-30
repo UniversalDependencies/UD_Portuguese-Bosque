@@ -1,57 +1,60 @@
-# distance_from_new = 0
-# new_sent_id = CF209-1
-# sent_id = pt-ud-train.conllu#s5936/pt
-# orig_file_sentence = 060#36
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	dupla	dupla	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	planeja	planejar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	agora	agora	ADV	adv|<kc>	_	3	advmod	_	_
-5	temporada	temporada	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	dolce	dolce	NOUN	n|M|S	_	5	nmod	_	MWE=dolce_far_niente|MWEPOS=NOUN
-8	far	far	NOUN	NOUN	_	7	compound	_	_
-9	niente	niente	NOUN	NOUN	_	7	compound	_	_
-10	.	.	PUNCT	punc	_	3	punct	_	_
+# text = A dupla planeja agora temporada de dolce far niente.
+# forest 1
+# source CETENFolha n=209 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF209-1
+# id 894
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	dupla	dupla	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	planeja	planejar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	agora	agora	ADV	<kc>|ADV|@<ADVL	_	3	advmod	_	_
+5	temporada	temporada	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	dolce	dolce	NOUN	_	_	5	nmod	_	MWE=dolce_far_niente|MWEPOS=NOUN
+8	far	far	NOUN	_	_	7	compound	_	_
+9	niente	niente	NOUN	_	_	7	compound	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF209-2
-# sent_id = pt-ud-train.conllu#s5937/pt
-# orig_file_sentence = 060#37
-1	Mangaba	mangaba	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
+# text = Mangaba
+# forest 1
+# source CETENFolha n=209 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF209-2
+# id 895
+1	Mangaba	mangaba	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF209-3
-# sent_id = pt-ud-train.conllu#s5938/pt
-# orig_file_sentence = 060#38
-1	Em	em	ADP	prp	AdpType=Prep	2	case	_	_
-2	meio	meio	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nmod	_	_
-3	a	a	ADP	prp	AdpType=Prep	5	case	_	_
-4	tantos	tanto	DET	pron-det|<quant>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
-5	scuds	scud	NOUN	n|M|P	Gender=Masc|Number=Plur	2	nmod	_	_
-6	por	por	ADP	prp|<sam->	AdpType=Prep	10	case	_	MWE=por_causa_de|MWEPOS=ADP
-7	causa	causa	NOUN	NOUN	_	6	mwe	_	_
+# text = Em meio a tantos scuds por causa dos imbroglios de seu vice José Paulo Bisol, Luiz Inácio Lula da Silva teve anteontem um providencial refresco.
+# forest 1
+# source CETENFolha n=209 cad=Ilustrada sec=nd sem=94a
+# sent_id = CF209-3
+# id 896
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
+2	meio	meio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	obl	_	_
+3	a	a	ADP	PRP|@N<	_	5	case	_	_
+4	tantos	tanto	DET	<quant>|<KOMP>|<COMP>|DET|M|P|@>N	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
+5	scuds	scud	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
+6	por	por	ADP	<sam->|PRP|@N<	_	10	case	_	MWE=por_causa_de|MWEPOS=ADP
+7	causa	causa	NOUN	N|@P<	_	6	fixed	_	_
 8-9	dos	_	_	_	_	_	_	_	_
-8	de	de	ADP	ADP	AdpType=Prep	6	mwe	_	_
-9	os	o	DET	art|<artd>|<-sam>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
-10	imbroglios	imbróglio	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-11	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-12	seu	seu	DET	pron-det|<poss|3S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	_	_
-13	vice	vice	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-14	José	José	PROPN	prop|M|S	_	13	nmod	_	MWE=José_Paulo_Bisol|MWEPOS=PROPN
-15	Paulo	Paulo	PROPN	PROPN	_	14	name	_	_
-16	Bisol	Bisol	PROPN	PROPN	_	14	name	_	_
-17	,	,	PUNCT	punc	_	24	punct	_	_
-18	Luiz	Luiz	PROPN	prop|M|S	_	24	nsubj	_	MWE=Luiz_Inácio_Lula_da_Silva|MWEPOS=PROPN
-19	Inácio	Inácio	PROPN	PROPN	_	18	name	_	_
-20	Lula	Lula	PROPN	PROPN	_	18	name	_	_
+8	de	de	ADP	PRP|@N<	_	6	fixed	_	_
+9	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	imbroglios	imbróglio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
+11	de	de	ADP	PRP|@N<	_	13	case	_	_
+12	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	13	det	_	_
+13	vice	vice	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
+14	José	José	PROPN	_	_	13	nmod	_	MWE=José_Paulo_Bisol|MWEPOS=PROPN
+15	Paulo	Paulo	PROPN	_	_	14	flat	_	_
+16	Bisol	Bisol	PROPN	_	_	14	flat	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+18	Luiz	Luiz	PROPN	_	_	24	nsubj	_	MWE=Luiz_Inácio_Lula_da_Silva|MWEPOS=PROPN
+19	Inácio	Inácio	PROPN	_	_	18	flat	_	_
+20	Lula	Lula	PROPN	_	_	18	flat	_	_
 21-22	da	_	_	_	_	_	_	_	_
-21	de	de	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	Silva	Silva	PROPN	PROPN	_	18	name	_	_
-24	teve	ter	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-25	anteontem	anteontem	ADV	adv	_	24	advmod	_	_
-26	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-27	providencial	providencial	ADJ	adj|M|S	Gender=Masc|Number=Sing	28	amod	_	_
-28	refresco	refresco	NOUN	n|M|S	Gender=Masc|Number=Sing	24	dobj	_	_
-29	.	.	PUNCT	punc	_	24	punct	_	_
+21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
+22	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	Silva	Silva	PROPN	PROP|@P<	_	18	flat	_	_
+24	teve	ter	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+25	anteontem	anteontem	ADV	ADV|@<ADVL	_	24	advmod	_	_
+26	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+27	providencial	providencial	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	28	amod	_	_
+28	refresco	refresco	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	24	obj	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
