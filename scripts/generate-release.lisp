@@ -24,7 +24,7 @@
       (when (or (= 0 (length (slot-value tk 'misc))) (null (slot-value tk 'misc)))
         (setf (slot-value tk 'misc) "_")))
     (setf (sentence-meta s)
-          (remove "d2d:" (sentence-meta s) :test #'string= :key #'car)))
+          (remove "d2d" (sentence-meta s) :test #'string= :key #'car)))
   conll)
 
 (defun release (dir ids output)
