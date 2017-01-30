@@ -1,45 +1,47 @@
-# distance_from_new = 0
-# new_sent_id = CP264-1
-# sent_id = pt-ud-train.conllu#s1406/pt
-# orig_file_sentence = 015#6
-1	Motor	motor	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	:	:	PUNCT	punc	_	1	punct	_	_
-3	Económico	económico	ADJ	adj|M|S	Gender=Masc|Number=Sing	1	amod	_	_
-4	,	,	PUNCT	punc	_	3	punct	_	_
-5	com	com	ADP	prp	AdpType=Prep	7	case	_	_
-6	grande	grande	ADJ	adj|F|S	Gender=Fem|Number=Sing	7	amod	_	_
-7	elasticidade	elasticidade	NOUN	n|F|S	Gender=Fem|Number=Sing	3	conj	_	_
-8	e	e	CONJ	conj-c|<co-prparg>	_	7	cc	_	_
-9	bom	bom	ADJ	adj|M|S	Gender=Masc|Number=Sing	10	amod	_	_
-10	nível	nível	NOUN	n|M|S	Gender=Masc|Number=Sing	7	conj	_	_
-11	de	de	ADP	prp	AdpType=Prep	12	case	_	_
-12	potência	potência	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-13	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Motor: Económico, com grande elasticidade e bom nível de potência.
+# forest 1
+# source CETEMPúblico n=264 sec=des sem=92a
+# sent_id = CP264-1
+# id 1407
+1	Motor	motor	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
+3	Económico	económico	ADJ	<first-cjt>|ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	1	amod	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+5	com	com	ADP	PRP|@N<PRED	_	7	case	_	_
+6	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	7	amod	_	_
+7	elasticidade	elasticidade	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	conj	_	_
+8	e	e	CCONJ	<co-prparg>|KC|@CO	_	10	cc	_	_
+9	bom	bom	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	10	amod	_	_
+10	nível	nível	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	conj	_	_
+11	de	de	ADP	PRP|@N<	_	12	case	_	_
+12	potência	potência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP264-2
-# sent_id = pt-ud-train.conllu#s1407/pt
-# orig_file_sentence = 015#7
-1	Caixa	caixa	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	:	:	PUNCT	punc	_	1	punct	_	_
-3	Mais	mais	ADV	adv	_	5	advmod	_	_
-4	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	5	nummod	_	_
-5	Toledo	Toledo	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-6	«	«	PUNCT	punc	_	7	punct	_	_
-7	salvo	salvar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
-8	»	»	PUNCT	punc	_	7	punct	_	_
-9	por	por	ADP	prp	AdpType=Prep	11	case	_	_
-10	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	caixa	caixa	NOUN	n|F|S	Gender=Fem|Number=Sing	7	dobj	_	_
-12	bem	bem	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	13	advmod	_	_
-13	escalonada	escalonar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	_	_
-14	,	,	PUNCT	punc	_	11	punct	_	_
-15	com	com	ADP	prp	AdpType=Prep	16	case	_	_
-16	destaque	destaque	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-17	para	para	ADP	prp	AdpType=Prep	21	case	_	_
-18	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_
-19	três	três	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	21	nummod	_	_
-20	primeiras	primeiro	ADJ	adj|<NUM-ord>|F|P	Gender=Fem|Number=Plur|NumType=Ord	21	amod	_	_
-21	velocidades	velocidade	NOUN	n|F|P	Gender=Fem|Number=Plur	16	nmod	_	_
-22	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Caixa: Mais um Toledo «salvo» por uma caixa bem escalonada, com destaque para as três primeiras velocidades.
+# forest 1
+# source CETEMPúblico n=264 sec=des sem=92a
+# sent_id = CP264-2
+# id 1408
+1	Caixa	caixa	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
+3	Mais	mais	ADV	<setop>|ADV|@>A	_	5	advmod	_	_
+4	um	um	NUM	<card>|NUM|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card	5	nummod	_	_
+5	Toledo	Toledo	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	1	nmod	_	_
+6	«	«	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+7	salvo	salvar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	SpaceAfter=No
+8	»	»	PUNCT	PU|@PU	_	7	punct	_	_
+9	por	por	ADP	PRP|@PASS	_	11	case	_	_
+10	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	caixa	caixa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obj	_	_
+12	bem	bem	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	13	advmod	_	_
+13	escalonada	escalonar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	11	acl	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+15	com	com	ADP	PRP|@N<PRED	_	16	case	_	_
+16	destaque	destaque	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
+17	para	para	ADP	PRP|@N<	_	21	case	_	_
+18	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_
+19	três	três	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	21	nummod	_	_
+20	primeiras	primeiro	ADJ	<NUM-ord>|ADJ|F|P|@>N	Gender=Fem|Number=Plur|NumType=Ord	21	amod	_	_
+21	velocidades	velocidade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	16	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

@@ -1,18 +1,19 @@
-# distance_from_new = 0
-# new_sent_id = CP416-1
-# sent_id = pt-ud-train.conllu#s2189/pt
-# orig_file_sentence = 022#89
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	anomalia	anomalia	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	criou	criar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	dificuldades	dificuldade	NOUN	n|F|P	Gender=Fem|Number=Plur	3	dobj	_	_
-5	,	,	PUNCT	punc	_	6	punct	_	_
-6	nomeadamente	nomeadamente	ADV	adv	_	3	advmod	_	_
-7	,	,	PUNCT	punc	_	6	punct	_	_
-8	em	em	ADP	prp	AdpType=Prep	6	case	_	_
-9	fábricas	fábrica	NOUN	n|F|P	Gender=Fem|Number=Plur	6	nmod	_	_
-10	e	e	CONJ	conj-c|<co-prparg>	_	9	cc	_	_
-11	restaurantes	restaurante	NOUN	n|M|P	Gender=Masc|Number=Plur	9	conj	_	_
-12	locais	local	ADJ	adj|M|P	Gender=Masc|Number=Plur	11	amod	_	_
-13	.	.	PUNCT	punc	_	3	punct	_	_
+# text = A anomalia criou dificuldades, nomeadamente, em fábricas e restaurantes locais.
+# forest 1
+# source CETEMPúblico n=416 sec=soc sem=91a
+# sent_id = CP416-1
+# id 2190
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	anomalia	anomalia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	criou	criar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	dificuldades	dificuldade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+6	nomeadamente	nomeadamente	ADV	ADV|@>A	_	3	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+8	em	em	ADP	PRP|@<ADVL	_	6	case	_	_
+9	fábricas	fábrica	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	6	obl	_	_
+10	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
+11	restaurantes	restaurante	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	conj	_	_
+12	locais	local	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	11	amod	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

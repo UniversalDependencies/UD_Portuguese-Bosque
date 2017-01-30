@@ -1,254 +1,260 @@
-# distance_from_new = 0
-# new_sent_id = CP190-1
-# sent_id = pt-ud-train.conllu#s1016/pt
-# orig_file_sentence = 011#16
-1	P.	P.	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	--	--	PUNCT	punc	_	1	punct	_	_
-3	Qual	qual	PRON	pron-det|<interr>|F|S	Gender=Fem|Number=Sing|PronType=Int	1	parataxis	_	_
-4	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	opinião	opinião	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-7	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	9	dobj	_	_
-8	já	já	ADV	adv	_	9	advmod	_	_
-9	exprimiu	exprimir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
+# text = P. -- Qual foi a opinião que já exprimiu aos parceiros (e ao Governo) sobre a concertação estratégica proposta pelo «Plano Cavaco»?
+# forest 1
+# source CETEMPúblico n=190 sec=soc sem=94b
+# sent_id = CP190-1
+# id 1017
+1	P.	P.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	Qual	qual	PRON	<interr>|DET|F|S|@SC>	Gender=Fem|Number=Sing|PronType=Int	1	parataxis	_	_
+4	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	opinião	opinião	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	3	nsubj	_	_
+7	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	9	obj	_	_
+8	já	já	ADV	ADV|@ADVL>	_	9	advmod	_	_
+9	exprimiu	exprimir	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
 10-11	aos	_	_	_	_	_	_	_	_
-10	a	a	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	parceiros	parceiro	NOUN	n|M|P	Gender=Masc|Number=Plur	9	dobj	_	_
-13	(	(	PUNCT	punc	_	12	punct	_	_
-14	e	e	CONJ	conj-c	_	12	cc	_	_
+10	a	a	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	12	case	_	_
+11	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+12	parceiros	parceiro	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obj	_	_
+13	(	(	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+14	e	e	CCONJ	<co-piv>|KC|@CO	_	17	cc	_	_
 15-16	ao	_	_	_	_	_	_	_	_
-15	a	a	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	Governo	Governo	PROPN	prop|M|S	Gender=Masc|Number=Sing	12	conj	_	_
-18	)	)	PUNCT	punc	_	12	punct	_	_
-19	sobre	sobre	ADP	prp	AdpType=Prep	21	case	_	_
-20	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	concertação	concertação	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-22	estratégica	estratégico	ADJ	adj|F|S	Gender=Fem|Number=Sing	21	amod	_	_
-23	proposta	propor	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	21	acl	_	_
+15	a	a	ADP	<sam->|<cjt>|PRP|@<PIV	_	17	case	_	_
+16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	Governo	Governo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	conj	_	SpaceAfter=No
+18	)	)	PUNCT	PU|@PU	_	12	punct	_	_
+19	sobre	sobre	ADP	PRP|@N<	_	21	case	_	_
+20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	concertação	concertação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+22	estratégica	estratégico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	21	amod	_	_
+23	proposta	propor	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	21	acl	_	_
 24-25	pelo	_	_	_	_	_	_	_	_
-24	por	por	ADP	prp|<postmod>|<sam->	AdpType=Prep	25	case	_	_
-25	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-26	«	«	PUNCT	punc	_	25	punct	_	_
-27	Plano	Plano	PROPN	prop|M|S	_	25	dobj	_	MWE=Plano_Cavaco|MWEPOS=PROPN
-28	Cavaco	Cavaco	PROPN	PROPN	_	27	name	_	_
-29	»	»	PUNCT	punc	_	25	punct	_	_
-30	?	?	PUNCT	punc	_	1	punct	_	_
+24	por	por	ADP	PRP|@PASS	_	25	case	_	_
+25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+26	«	«	PUNCT	PU|@PU	_	25	punct	_	SpaceAfter=No
+27	Plano	Plano	PROPN	_	_	25	obj	_	MWE=Plano_Cavaco|MWEPOS=PROPN
+28	Cavaco	Cavaco	PROPN	_	_	27	flat	_	SpaceAfter=No
+29	»	»	PUNCT	PU|@PU	_	25	punct	_	SpaceAfter=No
+30	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP190-2
-# sent_id = pt-ud-train.conllu#s1017/pt
-# orig_file_sentence = 011#17
-1	R.	R.	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	--	--	PUNCT	punc	_	1	punct	_	_
-3	Há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
-4	muito	muito	PRON	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	3	dobj	_	_
-5	que	que	ADV	adv|<foc>	_	6	cc	_	_
-6	defendo	defender	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
-7	que	que	SCONJ	conj-s	_	13	mark	_	_
-8	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
-9	acordos	acordo	NOUN	n|M|P	Gender=Masc|Number=Plur	13	nsubj	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	concertação	concertação	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
-12	social	social	ADJ	adj|F|S	Gender=Fem|Number=Sing	11	amod	_	_
-13	devem	dever	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_
-14	ultrapassar	ultrapassar	VERB	v-inf	VerbForm=Inf	13	xcomp	_	_
-15	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
-16	dimensões	dimensão	NOUN	n|F|P	Gender=Fem|Number=Plur	14	dobj	_	_
-17	temporal	temporal	ADJ	adj|M|S	Gender=Masc|Number=Sing	16	amod	_	_
-18	e	e	CONJ	conj-c|<co-postnom>	_	17	cc	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-20	conteúdo	conteúdo	NOUN	n|M|S	Gender=Masc|Number=Sing	17	conj	_	_
-21	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	23	dobj	_	_
-22	têm	ter	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
-23	tido	ter	VERB	v-pcp	VerbForm=Part	16	acl	_	_
-24	.	.	PUNCT	punc	_	1	punct	_	_
+# text = R. -- Há muito que defendo que os acordos de concertação social devem ultrapassar as dimensões temporal e de conteúdo que têm tido.
+# forest 1
+# source CETEMPúblico n=190 sec=soc sem=94b
+# sent_id = CP190-2
+# id 1018
+1	R.	R.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
+4	muito	muito	PRON	<quant>|DET|M|S|@<ACC	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	3	obj	_	_
+5	que	que	ADV	<foc>|ADV|@ADVL>	_	6	advmod	_	_
+6	defendo	defender	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+7	que	que	SCONJ	KS|@SUB	_	13	mark	_	_
+8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+9	acordos	acordo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	13	nsubj	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	concertação	concertação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+12	social	social	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
+13	devem	dever	VERB	<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_
+14	ultrapassar	ultrapassar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	xcomp	_	_
+15	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
+16	dimensões	dimensão	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	14	obj	_	_
+17	temporal	temporal	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	16	amod	_	_
+18	e	e	CCONJ	<co-postnom>|KC|@CO	_	20	cc	_	_
+19	de	de	ADP	<cjt>|PRP|@N<	_	20	case	_	_
+20	conteúdo	conteúdo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	conj	_	_
+21	que	que	PRON	<rel>|INDP|F|P|@ACC>	Gender=Fem|Number=Plur|PronType=Rel	23	obj	_	_
+22	têm	ter	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	acl	_	_
+23	tido	ter	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	22	ccomp	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP190-3
-# sent_id = pt-ud-train.conllu#s1018/pt
-# orig_file_sentence = 011#18
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	acordos	acordo	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	concertação	concertação	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-5	social	social	ADJ	adj|F|S	Gender=Fem|Number=Sing	4	amod	_	_
-6	têm	ter	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-7	vigorado	vigorar	VERB	v-pcp	VerbForm=Part	0	root	_	_
-8	sempre	sempre	ADV	adv	_	7	advmod	_	_
-9	por	por	ADP	prp	AdpType=Prep	11	case	_	_
-10	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	11	nummod	_	_
-11	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-12	.	.	PUNCT	punc	_	7	punct	_	_
+# text = Os acordos de concertação social têm vigorado sempre por um ano.
+# forest 1
+# source CETEMPúblico n=190 sec=soc sem=94b
+# sent_id = CP190-3
+# id 1019
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	acordos	acordo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	concertação	concertação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+5	social	social	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	_
+6	têm	ter	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	vigorado	vigorar	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	6	ccomp	_	_
+8	sempre	sempre	ADV	ADV|@<ADVL	_	7	advmod	_	_
+9	por	por	ADP	PRP|@<ADVL	_	11	case	_	_
+10	um	um	NUM	<card>|NUM|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card	11	nummod	_	_
+11	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP190-4
-# sent_id = pt-ud-train.conllu#s1019/pt
-# orig_file_sentence = 011#19
-1	Agora	agora	ADV	adv|<kc>	_	2	advmod	_	_
-2	temos	ter	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	proposta	proposta	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-5	,	,	PUNCT	punc	_	4	punct	_	_
-6	inovadora	inovador	ADJ	adj|F|S	Gender=Fem|Number=Sing	4	amod	_	_
-7	,	,	PUNCT	punc	_	4	punct	_	_
-8	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-9	médio	médio	ADJ	adj|M|S	Gender=Masc|Number=Sing	10	amod	_	_
-10	prazo	prazo	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-11	,	,	PUNCT	punc	_	4	punct	_	_
-12	ajustada	ajustar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	_
-13	a	a	ADP	prp	AdpType=Prep	16	case	_	_
-14	todo	todo	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	16	det	_	_
-15	este	este	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	16	det	_	_
-16	ciclo	ciclo	NOUN	n|M|S	Gender=Masc|Number=Sing	12	dobj	_	_
-17	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	21	dobj	_	_
-18	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nsubj	_	_
-20	vai	ir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl	_	_
-21	atravessar	atravessar	VERB	v-inf	VerbForm=Inf	20	xcomp	_	_
-22	de	de	ADP	prp	AdpType=Prep	23	case	_	_
-23	1995	1995	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	21	advmod	_	_
-24	a	a	ADP	prp	AdpType=Prep	25	case	_	_
-25	1999	1999	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	23	compound	_	_
-26	.	.	PUNCT	punc	_	2	punct	_	_
+# text = Agora temos uma proposta, inovadora, de médio prazo, ajustada a todo este ciclo que o país vai atravessar de 1995 a 1999.
+# forest 1
+# source CETEMPúblico n=190 sec=soc sem=94b
+# sent_id = CP190-4
+# id 1020
+1	Agora	agora	ADV	<kc>|ADV|@ADVL>	_	2	advmod	_	_
+2	temos	ter	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	proposta	proposta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+6	inovadora	inovador	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	4	amod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+8	de	de	ADP	PRP|@N<	_	10	case	_	_
+9	médio	médio	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	10	amod	_	_
+10	prazo	prazo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+12	ajustada	ajustar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	_
+13	a	a	ADP	PRP|@<PIV	_	16	case	_	_
+14	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	16	det	_	_
+15	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	16	det	_	_
+16	ciclo	ciclo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obj	_	_
+17	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	21	obj	_	_
+18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	país	país	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
+20	vai	ir	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl	_	_
+21	atravessar	atravessar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	xcomp	_	_
+22	de	de	ADP	<first-cjt>|PRP|@<ADVL	_	23	case	_	_
+23	1995	1995	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	21	advmod	_	_
+24	a	a	ADP	PRP|@P<	_	25	case	_	_
+25	1999	1999	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	23	compound	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP190-5
-# sent_id = pt-ud-train.conllu#s1020/pt
-# orig_file_sentence = 011#20
+# text = Parece-me lógico ligar um acordo de concertação social ao Quadro Comunitário de Apoio (QCA) e ao PDR, na vertente específica dum acordo de concertação social e, mais do que isso, porque o primeiro-ministro afirmou aqui, na reunião, que está disposto a que o próprio acordo contemple medidas de acompanhamento e de avaliação do QCA e do PDR, visto que pode acontecer que os cenários macro-económicos e macro-sociais se alterem face ao previsto no PDR e no QCA.
+# forest 1
+# source CETEMPúblico n=190 sec=soc sem=94b
+# sent_id = CP190-5
+# id 1021
 1-2	Parece-me	_	_	_	_	_	_	_	_
-1	Parece	parecer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-2	-me	eu	PRON	pron-pers|<refl>|M/F|1S|DAT	Case=Dat|Number=Sing|Person=1|PronType=Prs|Reflex=Yes	3	dobj	_	_
-3	lógico	lógico	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
-4	ligar	ligar	VERB	v-inf	VerbForm=Inf	3	csubj	_	_
-5	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	acordo	acordo	NOUN	n|M|S	Gender=Masc|Number=Sing	4	dobj	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	concertação	concertação	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-9	social	social	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
+1	Parece	parecer	AUX	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	-me	eu	PRON	pron-pers|<refl>|M/F|1S|DAT	Case=Dat|Number=Sing|Person=1|PronType=Prs|Reflex=Yes	3	obj	_	_
+3	lógico	lógico	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+4	ligar	ligar	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	3	csubj	_	_
+5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	acordo	acordo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	concertação	concertação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+9	social	social	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	_
 10-11	ao	_	_	_	_	_	_	_	_
-10	a	a	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	Quadro	Quadro	PROPN	prop|M|S	_	4	dobj	_	MWE=Quadro_Comunitário_de_Apoio|MWEPOS=PROPN
-13	Comunitário	Comunitário	PROPN	PROPN	_	12	name	_	_
-14	de	de	ADP	ADP	AdpType=Prep	15	case	_	_
-15	Apoio	Apoio	PROPN	PROPN	_	12	name	_	_
-16	(	(	PUNCT	punc	_	12	punct	_	_
-17	QCA	QCA	PROPN	prop|M|S	Gender=Masc|Number=Sing	12	name	_	_
-18	)	)	PUNCT	punc	_	12	punct	_	_
-19	e	e	CONJ	conj-c|<co-acc>	_	12	cc	_	_
+10	a	a	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	12	case	_	_
+11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	Quadro	Quadro	PROPN	_	_	4	obj	_	MWE=Quadro_Comunitário_de_Apoio|MWEPOS=PROPN
+13	Comunitário	Comunitário	PROPN	_	_	12	flat	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	Apoio	Apoio	PROPN	PROP|@P<	_	12	flat	_	_
+16	(	(	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
+17	QCA	QCA	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	12	flat	_	SpaceAfter=No
+18	)	)	PUNCT	PU|@PU	_	12	punct	_	_
+19	e	e	CCONJ	<co-piv>|<co-acc>|KC|@CO	_	22	cc	_	_
 20-21	ao	_	_	_	_	_	_	_	_
-20	a	a	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	PDR	PDR	PROPN	prop|M|S	Gender=Masc|Number=Sing	12	conj	_	_
-23	,	,	PUNCT	punc	_	3	punct	_	_
+20	a	a	ADP	<sam->|<cjt>|PRP|@<PIV	_	22	case	_	_
+21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	PDR	PDR	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	conj	_	SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 24-25	na	_	_	_	_	_	_	_	_
-24	em	em	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	26	det	_	_
-26	vertente	vertente	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-27	específica	específico	ADJ	adj|F|S	Gender=Fem|Number=Sing	26	amod	_	_
+24	em	em	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	26	case	_	_
+25	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	26	det	_	_
+26	vertente	vertente	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
+27	específica	específico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	26	amod	_	_
 28-29	dum	_	_	_	_	_	_	_	_
-28	de	de	ADP	prp	AdpType=Prep	30	case	_	_
-29	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	acordo	acordo	NOUN	n|M|S	Gender=Masc|Number=Sing	26	nmod	_	_
-31	de	de	ADP	prp	AdpType=Prep	32	case	_	_
-32	concertação	concertação	NOUN	n|F|S	Gender=Fem|Number=Sing	30	nmod	_	_
-33	social	social	ADJ	adj|F|S	Gender=Fem|Number=Sing	32	amod	_	_
-34	e	e	CONJ	conj-c|<co-advl>	_	26	cc	_	_
-35	,	,	PUNCT	punc	_	26	punct	_	_
-36	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	45	advmod	_	_
+28	de	de	ADP	PRP|@N<	_	30	case	_	_
+29	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	acordo	acordo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
+31	de	de	ADP	PRP|@N<	_	32	case	_	_
+32	concertação	concertação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	nmod	_	_
+33	social	social	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	32	amod	_	_
+34	e	e	CCONJ	<co-advl>|KC|@CO	_	45	cc	_	SpaceAfter=No
+35	,	,	PUNCT	PU|@PU	_	45	punct	_	_
+36	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@ADVL>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	45	advmod	_	_
 37-38	do	_	_	_	_	_	_	_	_
-37	de	de	ADP	prp|<sam->	AdpType=Prep	36	case	_	_
-38	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-39	que	que	SCONJ	SCONJ	_	37	mwe	_	_
-40	isso	isso	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	38	nsubj	_	_
-41	,	,	PUNCT	punc	_	45	punct	_	_
-42	porque	porque	SCONJ	conj-s	_	45	mark	_	_
-43	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
-44	primeiro-ministro	primeiro-ministro	NOUN	n|M|S	Gender=Masc|Number=Sing	45	nsubj	_	_
-45	afirmou	afirmar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
-46	aqui	aqui	ADV	adv	_	45	advmod	_	_
-47	,	,	PUNCT	punc	_	46	punct	_	_
+37	de	de	ADP	<sam->|PRP|@COM	_	36	case	_	_
+38	o	o	DET	<dem>|<-sam>|DET|M|S|@P<	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+39	que	que	SCONJ	<rel>|INDP|M|S|@N<	_	37	fixed	_	_
+40	isso	isso	PRON	<first-cjt>|<dem>|INDP|M|S|@KOMP<	Gender=Masc|Number=Sing|PronType=Dem	37	nsubj	_	SpaceAfter=No
+41	,	,	PUNCT	PU|@PU	_	45	punct	_	_
+42	porque	porque	SCONJ	KS|@SUB	_	45	mark	_	_
+43	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
+44	primeiro-ministro	primeiro-ministro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	45	nsubj	_	_
+45	afirmou	afirmar	VERB	<cjt>|<mv>|V|PS|3S|IND|@<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
+46	aqui	aqui	ADV	ADV|@<ADVL	_	45	advmod	_	SpaceAfter=No
+47	,	,	PUNCT	PU|@PU	_	46	punct	_	_
 48-49	na	_	_	_	_	_	_	_	_
-48	em	em	ADP	prp|<sam->	AdpType=Prep	50	case	_	_
-49	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	50	det	_	_
-50	reunião	reunião	NOUN	n|F|S	Gender=Fem|Number=Sing	46	nmod	_	_
-51	,	,	PUNCT	punc	_	46	punct	_	_
-52	que	que	SCONJ	conj-s	_	54	mark	_	_
-53	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	cop	_	_
-54	disposto	dispor	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	45	ccomp	_	_
-55	a	a	ADP	prp	AdpType=Prep	60	mark	_	_
-56	que	que	SCONJ	conj-s	_	60	mark	_	_
-57	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	59	det	_	_
-58	próprio	próprio	ADJ	adj|M|S	Gender=Masc|Number=Sing	59	amod	_	_
-59	acordo	acordo	NOUN	n|M|S	Gender=Masc|Number=Sing	60	nsubj	_	_
-60	contemple	contemplar	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	ccomp	_	_
-61	medidas	medida	NOUN	n|F|P	Gender=Fem|Number=Plur	60	dobj	_	_
-62	de	de	ADP	prp	AdpType=Prep	63	case	_	_
-63	acompanhamento	acompanhamento	NOUN	n|M|S	Gender=Masc|Number=Sing	61	nmod	_	_
-64	e	e	CONJ	conj-c|<co-postnom>	_	63	cc	_	_
-65	de	de	ADP	prp	AdpType=Prep	66	case	_	_
-66	avaliação	avaliação	NOUN	n|F|S	Gender=Fem|Number=Sing	63	conj	_	_
+48	em	em	ADP	<sam->|PRP|@A<	_	50	case	_	_
+49	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	50	det	_	_
+50	reunião	reunião	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	46	obl	_	SpaceAfter=No
+51	,	,	PUNCT	PU|@PU	_	46	punct	_	_
+52	que	que	SCONJ	KS|@SUB	_	54	mark	_	_
+53	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	cop	_	_
+54	disposto	dispor	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	45	ccomp	_	_
+55	a	a	ADP	PRP|@<PIV	_	60	mark	_	_
+56	que	que	SCONJ	KS|@SUB	_	60	mark	_	_
+57	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	59	det	_	_
+58	próprio	próprio	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	59	amod	_	_
+59	acordo	acordo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	60	nsubj	_	_
+60	contemple	contemplar	VERB	<mv>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	ccomp	_	_
+61	medidas	medida	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	60	obj	_	_
+62	de	de	ADP	<first-cjt>|PRP|@N<	_	63	case	_	_
+63	acompanhamento	acompanhamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	61	nmod	_	_
+64	e	e	CCONJ	<co-postnom>|KC|@CO	_	66	cc	_	_
+65	de	de	ADP	<cjt>|PRP|@N<	_	66	case	_	_
+66	avaliação	avaliação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	63	conj	_	_
 67-68	do	_	_	_	_	_	_	_	_
-67	de	de	ADP	prp|<sam->	AdpType=Prep	69	case	_	_
-68	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	_	_
-69	QCA	QCA	PROPN	prop|M|S	Gender=Masc|Number=Sing	66	nmod	_	_
-70	e	e	CONJ	conj-c|<co-postnom>	_	69	cc	_	_
+67	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	69	case	_	_
+68	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	_	_
+69	QCA	QCA	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	66	nmod	_	_
+70	e	e	CCONJ	<co-postnom>|KC|@CO	_	73	cc	_	_
 71-72	do	_	_	_	_	_	_	_	_
-71	de	de	ADP	prp|<sam->	AdpType=Prep	73	case	_	_
-72	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	73	det	_	_
-73	PDR	PDR	PROPN	prop|M|S	Gender=Masc|Number=Sing	69	conj	_	_
-74	,	,	PUNCT	punc	_	54	punct	_	_
-75	visto	visto	NOUN	conj-s	_	77	mark	_	MWE=visto_que|MWEPOS=SCONJ
-76	que	que	SCONJ	SCONJ	_	75	mwe	_	_
-77	pode	poder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	advcl	_	_
-78	acontecer	acontecer	VERB	v-inf	VerbForm=Inf	77	xcomp	_	_
-79	que	que	SCONJ	conj-s	_	86	mark	_	_
-80	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	81	det	_	_
-81	cenários	cenário	NOUN	n|M|P	Gender=Masc|Number=Plur	86	nsubj	_	_
-82	macro-económicos	macro-económico	ADJ	adj|M|P	Gender=Masc|Number=Plur	81	amod	_	_
-83	e	e	CONJ	conj-c|<co-postnom>	_	82	cc	_	_
-84	macro-sociais	macro-social	ADJ	adj|M|P	Gender=Masc|Number=Plur	82	conj	_	_
-85	se	se	PRON	pron-pers|<refl>|M|3P|ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	86	dobj	_	_
-86	alterem	alterar	VERB	v-fin|PR|3P|SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	78	ccomp	_	_
-87	face	face	NOUN	prp|<sam->	_	90	mark	_	MWE=face_a|MWEPOS=ADP
+71	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	73	case	_	_
+72	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	73	det	_	_
+73	PDR	PDR	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	69	conj	_	SpaceAfter=No
+74	,	,	PUNCT	PU|@PU	_	54	punct	_	_
+75	visto	visto	NOUN	_	_	77	mark	_	MWE=visto_que|MWEPOS=SCONJ
+76	que	que	SCONJ	_	_	75	fixed	_	_
+77	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	advcl	_	_
+78	acontecer	acontecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	77	xcomp	_	_
+79	que	que	SCONJ	KS|@SUB	_	86	mark	_	_
+80	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	81	det	_	_
+81	cenários	cenário	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	86	nsubj	_	_
+82	macro-económicos	macro-económico	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	81	amod	_	_
+83	e	e	CCONJ	<co-postnom>|KC|@CO	_	84	cc	_	_
+84	macro-sociais	macro-social	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	82	conj	_	_
+85	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	86	obj	_	_
+86	alterem	alterar	VERB	<mv>|<se-passive>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	78	ccomp	_	_
+87	face	face	NOUN	ADV|@<ADVL	_	90	mark	_	MWE=face_a|MWEPOS=ADP
 88-89	ao	_	_	_	_	_	_	_	_
-88	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	87	mwe	_	_
-89	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	90	det	_	_
-90	previsto	prever	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	86	advcl	_	_
+88	a	a	DET	PRP|@A<	Gender=Fem|Number=Sing|PronType=Art	87	fixed	_	_
+89	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	90	det	_	_
+90	previsto	prever	VERB	<mv>|V|PCP|M|S|@ICL-P<	Gender=Masc|Number=Sing|VerbForm=Part	86	advcl	_	_
 91-92	no	_	_	_	_	_	_	_	_
-91	em	em	ADP	prp|<sam->	AdpType=Prep	93	case	_	_
-92	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	93	det	_	_
-93	PDR	PDR	PROPN	prop|M|S	Gender=Masc|Number=Sing	90	nmod	_	_
-94	e	e	CONJ	conj-c|<co-postnom>	_	93	cc	_	_
+91	em	em	ADP	<sam->|<first-cjt>|PRP|@N<	_	93	case	_	_
+92	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	93	det	_	_
+93	PDR	PDR	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	90	nmod	_	_
+94	e	e	CCONJ	<co-postnom>|KC|@CO	_	97	cc	_	_
 95-96	no	_	_	_	_	_	_	_	_
-95	em	em	ADP	prp|<sam->	AdpType=Prep	97	case	_	_
-96	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	97	det	_	_
-97	QCA	QCA	PROPN	prop|M|S	Gender=Masc|Number=Sing	93	conj	_	_
-98	.	.	PUNCT	punc	_	3	punct	_	_
+95	em	em	ADP	<sam->|<cjt>|PRP|@N<	_	97	case	_	_
+96	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	97	det	_	_
+97	QCA	QCA	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	93	conj	_	SpaceAfter=No
+98	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP190-6
-# sent_id = pt-ud-train.conllu#s1021/pt
-# orig_file_sentence = 011#21
-1	E	e	CONJ	conj-c	_	6	cc	_	_
-2	essas	esse	DET	pron-det|<dem>|F|P	Gender=Fem|Number=Plur|PronType=Dem	3	det	_	_
-3	alterações	alteração	NOUN	n|F|P	Gender=Fem|Number=Plur	6	nsubj	_	_
-4	deverão	dever	AUX	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	6	aux	_	_
-5	ser	ser	AUX	v-inf	VerbForm=Inf	6	aux	_	_
-6	discutidas	discutir	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	0	root	_	_
-7	com	com	ADP	prp	AdpType=Prep	9	case	_	_
-8	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
-9	parceiros	parceiro	NOUN	n|M|P	Gender=Masc|Number=Plur	6	nmod	_	_
-10	sociais	social	ADJ	adj|M|P	Gender=Masc|Number=Plur	9	amod	_	_
-11	e	e	CONJ	conj-c|<co-postnom>	_	6	cc	_	_
-12	não	não	ADV	adv	_	13	advmod	_	_
-13	apenas	apenas	ADV	adv	_	14	advmod	_	_
-14	decididas	decidir	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	6	conj	_	_
+# text = E essas alterações deverão ser discutidas com os parceiros sociais e não apenas decididas pelo Governo.
+# forest 1
+# source CETEMPúblico n=190 sec=soc sem=94b
+# sent_id = CP190-6
+# id 1022
+1	E	e	CCONJ	<co-icl>|KC|@CO	_	6	cc	_	_
+2	essas	esse	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	3	det	_	_
+3	alterações	alteração	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj	_	_
+4	deverão	dever	AUX	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	5	aux	_	_
+5	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+6	discutidas	discutir	AUX	<aux>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	5	aux	_	_
+7	com	com	ADP	PRP|@<ADVL	_	9	case	_	_
+8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+9	parceiros	parceiro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	_
+10	sociais	social	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	9	amod	_	_
+11	e	e	CCONJ	<co-icl>|KC|@CO	_	14	cc	_	_
+12	não	não	ADV	_	Polarity=Neg	13	advmod	_	_
+13	apenas	apenas	ADV	ADV|@ADVL>	_	14	advmod	_	_
+14	decididas	decidir	AUX	<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	6	conj	_	_
 15-16	pelo	_	_	_	_	_	_	_	_
-15	por	por	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	Governo	Governo	PROPN	prop|M|S	Gender=Masc|Number=Sing	14	dobj	_	_
-18	.	.	PUNCT	punc	_	6	punct	_	_
+15	por	por	ADP	PRP|@PASS	_	17	case	_	_
+16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	Governo	Governo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	obj	_	SpaceAfter=No
+18	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 

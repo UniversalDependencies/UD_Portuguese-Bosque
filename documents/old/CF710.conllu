@@ -1,50 +1,53 @@
-# distance_from_new = 0
-# new_sent_id = CF710-1
-# sent_id = pt-ud-train.conllu#s8021/pt
-# orig_file_sentence = 081#21
-1	Mais	mais	PRON	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	3	nmod	_	_
-2	10	10	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
-3	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
-4	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Mais 10 %.
+# forest 1
+# source CETENFolha n=710 cad=Agrofolha sec=agr sem=94b
+# sent_id = CF710-1
+# id 2979
+1	Mais	mais	PRON	<setop>|ADV|@>A	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	3	nmod	_	_
+2	10	10	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
+3	%	%	SYM	<np-def>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF710-2
-# sent_id = pt-ud-train.conllu#s8022/pt
-# orig_file_sentence = 081#22
-1	Para	para	ADP	prp	AdpType=Prep	2	case	_	_
-2	94	94	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	9	advmod	_	_
-3	,	,	PUNCT	punc	_	9	punct	_	_
-4	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	indústria	indústria	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nsubj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	máquinas	máquina	NOUN	n|F|P	Gender=Fem|Number=Plur	5	nmod	_	_
-8	agrícolas	agrícola	ADJ	adj|F|P	Gender=Fem|Number=Plur	7	amod	_	_
-9	prevê	prever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-10	crescimento	crescimento	NOUN	n|M|S	Gender=Masc|Number=Sing	9	dobj	_	_
-11	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-12	10	10	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	13	nummod	_	_
-13	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	10	nmod	_	_
-14	.	.	PUNCT	punc	_	9	punct	_	_
+# text = Para 94, a indústria de máquinas agrícolas prevê crescimento de 10 %.
+# forest 1
+# source CETENFolha n=710 cad=Agrofolha sec=agr sem=94b
+# sent_id = CF710-2
+# id 2980
+1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
+2	94	94	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	9	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	indústria	indústria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	máquinas	máquina	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
+8	agrícolas	agrícola	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
+9	prevê	prever	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	crescimento	crescimento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	9	obj	_	_
+11	de	de	ADP	PRP|@N<	_	13	case	_	_
+12	10	10	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	13	nummod	_	_
+13	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF710-3
-# sent_id = pt-ud-train.conllu#s8023/pt
-# orig_file_sentence = 081#23
-1	Acordo	acordo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
+# text = Acordo na Câmara Setorial garante crédito de US$ 650 milhões para o Finame Rural.
+# forest 1
+# source CETENFolha n=710 cad=Agrofolha sec=agr sem=94b
+# sent_id = CF710-3
+# id 2981
+1	Acordo	acordo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 2-3	na	_	_	_	_	_	_	_	_
-2	em	em	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	Câmara	Câmara	PROPN	prop|F|S	_	1	nmod	_	MWE=Câmara_Setorial|MWEPOS=PROPN
-5	Setorial	Setorial	PROPN	PROPN	_	4	name	_	_
-6	garante	garantir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	crédito	crédito	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	US$	US$	SYM	n|M|P	Gender=Masc|Number=Plur	7	nmod	_	_
-10	650	650	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
-11	milhões	milhão	NOUN	n|M|P	Gender=Masc|Number=Plur	9	nmod	_	_
-12	para	para	ADP	prp	AdpType=Prep	14	case	_	_
-13	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	Finame	Finame	PROPN	prop|M|S	_	7	nmod	_	MWE=Finame_Rural|MWEPOS=PROPN
-15	Rural	Rural	PROPN	PROPN	_	14	name	_	_
-16	.	.	PUNCT	punc	_	6	punct	_	_
+2	em	em	ADP	<sam->|PRP|@N<	_	4	case	_	_
+3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Câmara	Câmara	PROPN	PROP|F|S|@P<	_	1	nmod	_	MWE=Câmara_Setorial|MWEPOS=PROPN
+5	Setorial	Setorial	PROPN	PROP|@N<	_	4	flat	_	_
+6	garante	garantir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	crédito	crédito	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
+9	US$	US$	SYM	_	Gender=Masc|Number=Plur	7	nmod	_	_
+10	650	650	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
+11	milhões	milhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	9	nmod	_	_
+12	para	para	ADP	PRP|@N<	_	14	case	_	_
+13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	Finame	Finame	PROPN	_	_	7	nmod	_	MWE=Finame_Rural|MWEPOS=PROPN
+15	Rural	Rural	PROPN	_	_	14	flat	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

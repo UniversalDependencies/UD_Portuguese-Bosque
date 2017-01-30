@@ -1,109 +1,113 @@
-# distance_from_new = 0
-# new_sent_id = CF11-1
-# sent_id = pt-ud-train.conllu#s5088/pt
-# orig_file_sentence = 051#88
-1	«	«	PUNCT	punc	_	4	punct	_	_
-2	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	Charade	Charade	PROPN	prop|M|S	Gender=Masc|Number=Sing	4	nsubj	_	_
-4	vai	ir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp	_	_
-5	concorrer	concorrer	VERB	v-inf	VerbForm=Inf	4	xcomp	_	_
+# text = «O Charade vai concorrer na faixa do Suzuki Swift e do Twingo, da Renault», afirma Caparelli.
+# forest 1
+# source CETENFolha n=11 cad=Dinheiro sec=eco sem=94b
+# sent_id = CF11-1
+# id 46
+1	«	«	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
+2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	Charade	Charade	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+4	vai	ir	VERB	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp	_	_
+5	concorrer	concorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 6-7	na	_	_	_	_	_	_	_	_
-6	em	em	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	faixa	faixa	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
+6	em	em	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	faixa	faixa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	_
 9-10	do	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Suzuki	Suzuki	PROPN	prop|M|S	_	8	nmod	_	MWE=Suzuki_Swift|MWEPOS=PROPN
-12	Swift	Swift	PROPN	PROPN	_	11	name	_	_
-13	e	e	CONJ	conj-c|<co-postnom>	_	11	cc	_	_
+9	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	11	case	_	_
+10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Suzuki	Suzuki	PROPN	_	_	8	nmod	_	MWE=Suzuki_Swift|MWEPOS=PROPN
+12	Swift	Swift	PROPN	_	_	11	flat	_	_
+13	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	_
 14-15	do	_	_	_	_	_	_	_	_
-14	de	de	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-15	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	Twingo	Twingo	PROPN	prop|M|S	Gender=Masc|Number=Sing	11	conj	_	_
-17	,	,	PUNCT	punc	_	16	punct	_	_
+14	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	16	case	_	_
+15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	Twingo	Twingo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	conj	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 18-19	da	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	Renault	Renault	PROPN	prop|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-21	»	»	PUNCT	punc	_	4	punct	_	_
-22	,	,	PUNCT	punc	_	23	punct	_	_
-23	afirma	afirmar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-24	Caparelli	Caparelli	PROPN	prop|M|S	Gender=Masc|Number=Sing	23	nsubj	_	_
-25	.	.	PUNCT	punc	_	23	punct	_	_
+18	de	de	ADP	<cjt>|<sam->|PRP|@N<PRED	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Renault	Renault	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
+21	»	»	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+23	afirma	afirmar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+24	Caparelli	Caparelli	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	23	nsubj	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF11-2
-# sent_id = pt-ud-train.conllu#s5089/pt
-# orig_file_sentence = 051#89
-1	Herbert	Herbert	PROPN	prop|M|S	_	9	nsubj	_	MWE=Herbert_Berger|MWEPOS=PROPN
-2	Berger	Berger	PROPN	PROPN	_	1	name	_	_
-3	,	,	PUNCT	punc	_	1	punct	_	_
-4	diretor-superintendente	diretor-superintendente	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
+# text = Herbert Berger, diretor-superintendente da empresa, diz que o Charade «se aproxima do Honda Civic em tamanho e custa bem menos».
+# forest 1
+# source CETENFolha n=11 cad=Dinheiro sec=eco sem=94b
+# sent_id = CF11-2
+# id 47
+1	Herbert	Herbert	PROPN	_	_	9	nsubj	_	MWE=Herbert_Berger|MWEPOS=PROPN
+2	Berger	Berger	PROPN	_	_	1	flat	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+4	diretor-superintendente	diretor-superintendente	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	nmod	_	_
 5-6	da	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	empresa	empresa	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-8	,	,	PUNCT	punc	_	1	punct	_	_
-9	diz	dizer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-10	que	que	SCONJ	conj-s	_	15	mark	_	_
-11	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	Charade	Charade	PROPN	prop|M|S	Gender=Masc|Number=Sing	15	nsubj	_	_
-13	«	«	PUNCT	punc	_	15	punct	_	_
-14	se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	15	dobj	_	_
-15	aproxima	aproximar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
+5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	empresa	empresa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+9	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	que	que	SCONJ	KS|@SUB	_	15	mark	_	_
+11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	Charade	Charade	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
+13	«	«	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+14	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	15	obj	_	_
+15	aproxima	aproximar	VERB	<first-cjt>|<mv>|<se-passive>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
 16-17	do	_	_	_	_	_	_	_	_
-16	de	de	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	Honda	Honda	PROPN	prop|M|S	_	15	iobj	_	MWE=Honda_Civic|MWEPOS=PROPN
-19	Civic	Civic	PROPN	PROPN	_	18	name	_	_
-20	em	em	ADP	prp	AdpType=Prep	21	case	_	_
-21	tamanho	tamanho	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-22	e	e	CONJ	conj-c	_	15	cc	_	_
-23	custa	custar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	conj	_	_
-24	bem	bem	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	25	advmod	_	_
-25	menos	menos	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	23	advmod	_	_
-26	»	»	PUNCT	punc	_	15	punct	_	_
-27	.	.	PUNCT	punc	_	9	punct	_	_
+16	de	de	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	18	case	_	_
+17	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	Honda	Honda	PROPN	_	_	15	iobj	_	MWE=Honda_Civic|MWEPOS=PROPN
+19	Civic	Civic	PROPN	_	_	18	flat	_	_
+20	em	em	ADP	PRP|@<ADVL	_	21	case	_	_
+21	tamanho	tamanho	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	_
+22	e	e	CCONJ	<co-acc>|KC|@CO	_	23	cc	_	_
+23	custa	custar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	conj	_	_
+24	bem	bem	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	25	advmod	_	_
+25	menos	menos	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	23	advmod	_	SpaceAfter=No
+26	»	»	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF11-3
-# sent_id = pt-ud-train.conllu#s5090/pt
-# orig_file_sentence = 051#90
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Applause	Applause	PROPN	prop|M|S	Gender=Masc|Number=Sing	15	nsubj	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	sedã	sedã	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	quatro	quatro	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	7	nummod	_	_
-7	portas	porta	NOUN	n|F|P	Gender=Fem|Number=Plur	5	nmod	_	_
-8	,	,	PUNCT	punc	_	2	punct	_	_
-9	com	com	ADP	prp	AdpType=Prep	10	case	_	_
-10	motor	motor	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-11	1.6	1.6	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	10	nummod	_	_
-12	,	,	PUNCT	punc	_	15	punct	_	_
-13	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
-14	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	carro	carro	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-16	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	17	advmod	_	_
-17	caro	caro	ADJ	adj|M|S	Gender=Masc|Number=Sing	15	amod	_	_
+# text = O Applause, um sedã quatro portas, com motor 1.6, é o carro mais caro da Daihatsu.
+# forest 1
+# source CETENFolha n=11 cad=Dinheiro sec=eco sem=94b
+# sent_id = CF11-3
+# id 48
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Applause	Applause	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	sedã	sedã	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	2	nmod	_	_
+6	quatro	quatro	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	7	nummod	_	_
+7	portas	porta	NOUN	<np-def>|N|F|P|@N<	Gender=Fem|Number=Plur	5	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+9	com	com	ADP	PRP|@N<PRED	_	10	case	_	_
+10	motor	motor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+11	1.6	1.6	NUM	<card>|NUM|M|S|@N<	Gender=Masc|Number=Sing|NumType=Card	10	nummod	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+13	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
+14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	carro	carro	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+16	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	17	advmod	_	_
+17	caro	caro	ADJ	<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	amod	_	_
 18-19	da	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	Daihatsu	Daihatsu	PROPN	prop|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-21	.	.	PUNCT	punc	_	15	punct	_	_
+18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Daihatsu	Daihatsu	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF11-4
-# sent_id = pt-ud-train.conllu#s5091/pt
-# orig_file_sentence = 051#91
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	top	top	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	linha	linha	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-5	custa	custar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	US$	US$	SYM	n|M|P	Gender=Masc|Number=Plur	5	dobj	_	_
-7	30	30	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	8	compound	_	_
-8	mil	mil	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
-9	.	.	PUNCT	punc	_	5	punct	_	_
+# text = O top de linha custa US$ 30 mil.
+# forest 1
+# source CETENFolha n=11 cad=Dinheiro sec=eco sem=94b
+# sent_id = CF11-4
+# id 49
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	top	top	ADJ	<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	linha	linha	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+5	custa	custar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	US$	US$	SYM	_	Gender=Masc|Number=Plur	5	obj	_	_
+7	30	30	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	8	compound	_	_
+8	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 

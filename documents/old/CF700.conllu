@@ -1,91 +1,95 @@
-# distance_from_new = 0
-# new_sent_id = CF700-1
-# sent_id = pt-ud-train.conllu#s7976/pt
-# orig_file_sentence = 080#76
-1	Grava	Grava	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nsubj	_	_
-2	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	que	que	SCONJ	conj-s	_	6	mark	_	_
-4	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-5	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nsubj	_	_
-6	sofreram	sofrer	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	2	ccomp	_	_
-7	rompimentos	rompimento	NOUN	n|M|P	Gender=Masc|Number=Plur	6	dobj	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	feixes	feixe	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nmod	_	_
-10	musculares	muscular	ADJ	adj|M|P	Gender=Masc|Number=Plur	9	amod	_	_
-11	em	em	ADP	prp	AdpType=Prep	12	case	_	_
-12	músculos	músculo	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nmod	_	_
+# text = Grava disse que os dois sofreram rompimentos de feixes musculares em músculos da coxa direita.
+# forest 1
+# source CETENFolha n=700 cad=Esporte sec=des sem=94a
+# sent_id = CF700-1
+# id 2934
+1	Grava	Grava	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
+4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	dois	dois	NUM	<card>|<np-def>|NUM|M|P|@SUBJ>	Gender=Masc|Number=Plur|NumType=Card	6	nsubj	_	_
+6	sofreram	sofrer	VERB	<mv>|V|PS/MQP|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	2	ccomp	_	_
+7	rompimentos	rompimento	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	obj	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
+9	feixes	feixe	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	_
+10	musculares	muscular	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	9	amod	_	_
+11	em	em	ADP	PRP|@N<	_	12	case	_	_
+12	músculos	músculo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	_
 13-14	da	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	coxa	coxa	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-16	direita	direito	ADJ	adj|F|S	Gender=Fem|Number=Sing	15	amod	_	_
-17	.	.	PUNCT	punc	_	2	punct	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	coxa	coxa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+16	direita	direito	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF700-2
-# sent_id = pt-ud-train.conllu#s7977/pt
-# orig_file_sentence = 080#77
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	problema	problema	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	Viola	Viola	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-5	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = O problema de Viola é num músculo da parte de trás da coxa e de Célio está no lado interno.
+# forest 1
+# source CETENFolha n=700 cad=Esporte sec=des sem=94a
+# sent_id = CF700-2
+# id 2935
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	problema	problema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	Viola	Viola	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+5	é	ser	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6-7	num	_	_	_	_	_	_	_	_
-6	em	em	ADP	prp	AdpType=Prep	8	case	_	_
-7	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	músculo	músculo	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
+6	em	em	ADP	PRP|@<SA	_	8	case	_	_
+7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	músculo	músculo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	_
 9-10	da	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<artd>|<-sam>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	parte	parte	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-12	de	de	ADP	adv	AdpType=Prep	11	advmod	_	MWE=de_trás|MWEPOS=ADV
-13	trás	trás	NOUN	NOUN	_	12	mwe	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	parte	parte	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
+12	de	de	ADP	PRP|@N<	_	11	advmod	_	MWE=de_trás|MWEPOS=ADV
+13	trás	trás	NOUN	ADV|@P<	_	12	fixed	_	_
 14-15	da	_	_	_	_	_	_	_	_
-14	de	de	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-15	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	coxa	coxa	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-17	e	e	CONJ	conj-c	_	5	cc	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	Célio	Célio	PROPN	prop|M|S	Gender=Masc|Number=Sing	20	nsubj	_	_
-20	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+14	de	de	ADP	PRP|@A<	_	16	case	_	_
+15	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	coxa	coxa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
+17	e	e	CCONJ	<co-fcl>|KC|@CO	_	20	cc	_	_
+18	de	de	ADP	PRP|@SUBJ>	_	19	case	_	_
+19	Célio	Célio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	20	nsubj	_	_
+20	está	estar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
 21-22	no	_	_	_	_	_	_	_	_
-21	em	em	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	lado	lado	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-24	interno	interno	ADJ	adj|M|S	Gender=Masc|Number=Sing	23	amod	_	_
-25	.	.	PUNCT	punc	_	5	punct	_	_
+21	em	em	ADP	<sam->|PRP|@<SA	_	23	case	_	_
+22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	lado	lado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	_
+24	interno	interno	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	23	amod	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF700-3
-# sent_id = pt-ud-train.conllu#s7978/pt
-# orig_file_sentence = 080#78
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	médico	médico	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	negou	negar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	que	que	SCONJ	conj-s	_	6	mark	_	_
-5	esteja	estar	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-6	tratando	tratar	VERB	v-ger	VerbForm=Ger	3	ccomp	_	_
-7	mais	mais	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	_
-8	alguém	alguém	PRON	pron-indp|M|S	Gender=Masc|Number=Sing|PronType=Ind	6	dobj	_	_
-9	.	.	PUNCT	punc	_	3	punct	_	_
+# text = O médico negou que esteja tratando mais alguém.
+# forest 1
+# source CETENFolha n=700 cad=Esporte sec=des sem=94a
+# sent_id = CF700-3
+# id 2936
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	médico	médico	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	negou	negar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
+5	esteja	estar	VERB	<aux>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+6	tratando	tratar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	5	ccomp	_	_
+7	mais	mais	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	_
+8	alguém	alguém	PRON	INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF700-4
-# sent_id = pt-ud-train.conllu#s7979/pt
-# orig_file_sentence = 080#79
-1	«	«	PUNCT	punc	_	6	punct	_	_
-2	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
-3	demais	demais	PRON	pron-det|M|P	Gender=Masc|Number=Plur	6	nsubjpass	_	_
-4	estão	estar	AUX	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-5	sendo	ser	VERB	v-ger	VerbForm=Ger	6	auxpass	_	_
-6	poupados	poupar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-7	,	,	PUNCT	punc	_	6	punct	_	_
-8	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	6	cc	_	_
-9	poderiam	poder	VERB	v-fin|COND|3P	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	6	conj	_	_
-10	jogar	jogar	VERB	v-inf	VerbForm=Inf	9	xcomp	_	_
-11	se	se	SCONJ	conj-s	_	13	mark	_	_
-12	fosse	ser	VERB	v-fin|IMPF|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	cop	_	_
-13	preciso	preciso	ADJ	adj|M|S	Gender=Masc|Number=Sing	10	advcl	_	_
-14	.	.	PUNCT	punc	_	6	punct	_	_
-15	»	»	PUNCT	punc	_	6	punct	_	_
+# text = «Os demais estão sendo poupados, mas poderiam jogar se fosse preciso.»
+# forest 1
+# source CETENFolha n=700 cad=Esporte sec=des sem=94a
+# sent_id = CF700-4
+# id 2937
+1	«	«	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+2	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+3	demais	demais	PRON	<np-def>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
+4	estão	estar	AUX	<first-cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	sendo	ser	VERB	<aux>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
+6	poupados	poupar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	5	ccomp	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
+9	poderiam	poder	VERB	<cjt>|<aux>|V|COND|3P|@FS-STA	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	5	conj	_	_
+10	jogar	jogar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
+11	se	se	SCONJ	KS|@SUB	_	13	mark	_	_
+12	fosse	ser	AUX	<mv>|V|IMPF|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	cop	_	_
+13	preciso	preciso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	10	advcl	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+15	»	»	PUNCT	PU|@PU	_	5	punct	_	_
 

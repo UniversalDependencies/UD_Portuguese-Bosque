@@ -1,60 +1,62 @@
-# distance_from_new = 0
-# new_sent_id = CF932-1
-# sent_id = pt-ud-dev.conllu#s185/pt
-# orig_file_sentence = 002#85
-1	Para	para	ADP	prp	AdpType=Prep	2	case	_	_
-2	Simon	Simon	PROPN	prop|M|S	_	19	nmod	_	MWE=Simon_Franco|MWEPOS=PROPN
-3	Franco	Franco	PROPN	PROPN	_	2	name	_	_
-4	,	,	PUNCT	punc	_	2	punct	_	_
-5	55	55	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
-6	,	,	PUNCT	punc	_	2	punct	_	_
-7	presidente	presidente	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
+# text = Para Simon Franco, 55, presidente da Simon Franco Recursos Humanos, «não se pode jogar fora 15 anos de experiência».
+# forest 1
+# source CETENFolha n=932 cad=Empregos sec=eco sem=94a
+# sent_id = CF932-1
+# id 3943
+1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
+2	Simon	Simon	PROPN	_	_	19	obl	_	MWE=Simon_Franco|MWEPOS=PROPN
+3	Franco	Franco	PROPN	_	_	2	flat	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+5	55	55	NUM	<card>|NUM|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+7	presidente	presidente	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	2	nmod	_	_
 8-9	da	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	Simon	Simon	PROPN	prop|F|S	_	7	nmod	_	MWE=Simon_Franco_Recursos_Humanos|MWEPOS=PROPN
-11	Franco	Franco	PROPN	PROPN	_	10	name	_	_
-12	Recursos	Recursos	PROPN	PROPN	_	10	name	_	_
-13	Humanos	Humanos	PROPN	PROPN	_	10	name	_	_
-14	,	,	PUNCT	punc	_	2	punct	_	_
-15	«	«	PUNCT	punc	_	18	punct	_	_
-16	não	não	ADV	adv	_	19	neg	_	_
-17	se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	18	nsubj	_	_
-18	pode	poder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-19	jogar	jogar	VERB	v-inf	VerbForm=Inf	18	xcomp	_	_
-20	fora	fora	ADV	adv	_	19	advmod	_	_
-21	15	15	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
-22	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	19	dobj	_	_
-23	de	de	ADP	prp	AdpType=Prep	24	case	_	_
-24	experiência	experiência	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-25	»	»	PUNCT	punc	_	18	punct	_	_
-26	.	.	PUNCT	punc	_	18	punct	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Simon	Simon	PROPN	_	_	7	nmod	_	MWE=Simon_Franco_Recursos_Humanos|MWEPOS=PROPN
+11	Franco	Franco	PROPN	_	_	10	flat	_	_
+12	Recursos	Recursos	PROPN	_	_	10	flat	_	_
+13	Humanos	Humanos	PROPN	_	_	10	flat	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+15	«	«	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
+16	não	não	ADV	_	Polarity=Neg	19	advmod	_	_
+17	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs	18	nsubj	_	_
+18	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+19	jogar	jogar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	xcomp	_	_
+20	fora	fora	ADV	ADV|@<ADVL	_	19	advmod	_	_
+21	15	15	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
+22	anos	ano	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	19	obj	_	_
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	experiência	experiência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No
+25	»	»	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF932-2
-# sent_id = pt-ud-dev.conllu#s186/pt
-# orig_file_sentence = 002#86
-1	Segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	2	case	_	_
-2	ele	ele	PRON	pron-pers|M|3S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nmod	_	_
-3	,	,	PUNCT	punc	_	7	punct	_	_
-4	Carvalho	carvalho	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nsubj	_	_
-5	não	não	ADV	adv	_	7	neg	_	_
-6	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-7	avaliando	avaliar	VERB	v-ger	VerbForm=Ger	0	root	_	_
-8	que	que	SCONJ	conj-s	_	9	mark	_	_
-9	pode	poder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
-10	ampliar	ampliar	VERB	v-inf	VerbForm=Inf	9	xcomp	_	_
-11	seu	seu	DET	pron-det|<poss|3S>|<si>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	12	det	_	_
-12	espectro	espectro	NOUN	n|M|S	Gender=Masc|Number=Sing	10	dobj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	opções	opção	NOUN	n|F|P	Gender=Fem|Number=Plur	12	nmod	_	_
-15	sem	sem	ADP	prp	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	necessidade	necessidade	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
+# text = Segundo ele, Carvalho não está avaliando que pode ampliar seu espectro de opções sem a necessidade duma mudança radical.
+# forest 1
+# source CETENFolha n=932 cad=Empregos sec=eco sem=94a
+# sent_id = CF932-2
+# id 3944
+1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	2	case	_	_
+2	ele	ele	PRON	PERS|M|3S|NOM|@P<	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	obl	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+4	Carvalho	carvalho	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
+5	não	não	ADV	_	Polarity=Neg	7	advmod	_	_
+6	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	avaliando	avaliar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	6	ccomp	_	_
+8	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
+9	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
+10	ampliar	ampliar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
+11	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	12	det	_	_
+12	espectro	espectro	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	opções	opção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
+15	sem	sem	ADP	PRP|@<ADVL	_	17	case	_	_
+16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	necessidade	necessidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	_
 18-19	duma	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-19	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	mudança	mudança	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-21	radical	radical	ADJ	adj|F|S	Gender=Fem|Number=Sing	20	amod	_	_
-22	.	.	PUNCT	punc	_	7	punct	_	_
+18	de	de	ADP	PRP|@N<	_	20	case	_	_
+19	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	mudança	mudança	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
+21	radical	radical	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	20	amod	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

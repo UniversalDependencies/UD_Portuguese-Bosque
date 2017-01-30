@@ -1,219 +1,225 @@
-# distance_from_new = 1
-# new_sent_id = CP494-1
-# sent_id = pt-ud-train.conllu#s2590/pt
-# orig_file_sentence = 026#90
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	Estados	Estados	PROPN	prop|M|P	_	4	nsubj	_	MWE=Estados_Unidos|MWEPOS=PROPN
-3	Unidos	Unidos	PROPN	PROPN	_	2	name	_	_
-4	reexaminarão	reexaminar	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-5	«	«	PUNCT	punc	_	7	punct	_	_
-6	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	bases	base	NOUN	n|F|P	Gender=Fem|Number=Plur	4	dobj	_	_
-8	»	»	PUNCT	punc	_	7	punct	_	_
+# text = Os Estados Unidos reexaminarão «as bases» do acordo de cooperação económica concluído com o Japão, se não se alcançarem «acordos credíveis» entre os dois países durante a cimeira Clinton - Hosokawa, prevista para 11 de Fevereiro em Washington.
+# forest 1
+# source CETEMPúblico n=494 sec=eco sem=94a
+# sent_id = CP494-1
+# id 2591
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	Estados	Estados	PROPN	PROP|M|P|@SUBJ>	_	4	nsubj	_	MWE=Estados_Unidos|MWEPOS=PROPN
+3	Unidos	Unidos	PROPN	PROP|@N<	_	2	flat	_	_
+4	reexaminarão	reexaminar	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+5	«	«	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+6	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+7	bases	base	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	SpaceAfter=No
+8	»	»	PUNCT	PU|@PU	_	7	punct	_	_
 9-10	do	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	acordo	acordo	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	cooperação	cooperação	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-14	económica	económico	ADJ	adj|F|S	Gender=Fem|Number=Sing	13	amod	_	_
-15	concluído	concluir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	11	acl	_	_
-16	com	com	ADP	prp	AdpType=Prep	18	case	_	_
-17	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	Japão	Japão	PROPN	prop|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-19	,	,	PUNCT	punc	_	4	punct	_	_
-20	se	se	SCONJ	conj-s	_	23	mark	_	_
-21	não	não	ADV	adv	_	23	neg	_	_
-22	se	se	PRON	pron-pers|M|3P|ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	dobj	_	_
-23	alcançarem	alcançar	VERB	v-fin|FUT|3P|SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	advcl	_	_
-24	«	«	PUNCT	punc	_	25	punct	_	_
-25	acordos	acordo	NOUN	n|M|P	Gender=Masc|Number=Plur	23	nsubj	_	_
-26	credíveis	credível	ADJ	adj|M|P	Gender=Masc|Number=Plur	25	amod	_	_
-27	»	»	PUNCT	punc	_	25	punct	_	_
-28	entre	entre	ADP	prp	AdpType=Prep	31	case	_	_
-29	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_
-30	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	31	nummod	_	_
-31	países	país	NOUN	n|M|P	Gender=Masc|Number=Plur	25	nmod	_	_
-32	durante	durante	ADP	prp	AdpType=Prep	34	case	_	_
-33	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
-34	cimeira	cimeira	NOUN	n|F|S	Gender=Fem|Number=Sing	23	nmod	_	_
-35	Clinton	Clinton	PROPN	prop|M|S	Gender=Masc|Number=Sing	34	nmod	_	_
-36	-	-	PUNCT	punc	_	35	punct	_	_
-37	Hosokawa	Hosokawa	PROPN	prop|M|S	Gender=Masc|Number=Sing	35	conj	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	acordo	acordo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	cooperação	cooperação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+14	económica	económico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	_
+15	concluído	concluir	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	11	acl	_	_
+16	com	com	ADP	PRP|@<ADVL	_	18	case	_	_
+17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	Japão	Japão	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+20	se	se	SCONJ	KS|@SUB	_	23	mark	_	_
+21	não	não	ADV	_	Polarity=Neg	23	advmod	_	_
+22	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	obj	_	_
+23	alcançarem	alcançar	VERB	<mv>|<se-passive>|V|FUT|3P|SUBJ|@FS-<ADVL	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	advcl	_	_
+24	«	«	PUNCT	PU|@PU	_	25	punct	_	SpaceAfter=No
+25	acordos	acordo	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	23	nsubj	_	_
+26	credíveis	credível	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	25	amod	_	SpaceAfter=No
+27	»	»	PUNCT	PU|@PU	_	25	punct	_	_
+28	entre	entre	ADP	PRP|@N<ARG	_	31	case	_	_
+29	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_
+30	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	31	nummod	_	_
+31	países	país	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	_
+32	durante	durante	ADP	PRP|@<ADVL	_	34	case	_	_
+33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
+34	cimeira	cimeira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	_
+35	Clinton	Clinton	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	34	nmod	_	_
+36	-	-	PUNCT	punc	_	37	punct	_	_
+37	Hosokawa	Hosokawa	PROPN	prop|M|S	Gender=Masc|Number=Sing	35	conj	_	SpaceAfter=No
 38	,	,	PUNCT	punc	_	34	punct	_	_
 39	prevista	prever	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	34	acl	_	_
-40	para	para	ADP	prp	AdpType=Prep	41	case	_	_
+40	para	para	ADP	prp	_	41	case	_	_
 41	11	11	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	39	advmod	_	_
-42	de	de	ADP	prp	AdpType=Prep	43	case	_	_
-43	Fevereiro	fevereiro	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	41	nmod	_	_
-44	em	em	ADP	prp	AdpType=Prep	45	case	_	_
-45	Washington	Washington	PROPN	prop|M/F|S	Number=Sing	39	nmod	_	_
+42	de	de	ADP	prp	_	43	case	_	_
+43	Fevereiro	fevereiro	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	41	obl	_	_
+44	em	em	ADP	prp	_	45	case	_	_
+45	Washington	Washington	PROPN	prop|M/F|S	Number=Sing	39	obl	_	SpaceAfter=No
 46	.	.	PUNCT	punc	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP494-2
-# sent_id = pt-ud-train.conllu#s2591/pt
-# orig_file_sentence = 026#91
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	advertência	advertência	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nsubjpass	_	_
-3	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	auxpass	_	_
-4	feita	fazer	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-5	ontem	ontem	ADV	adv	_	4	advmod	_	_
-6	em	em	ADP	prp	AdpType=Prep	7	case	_	_
-7	Tóquio	Tóquio	PROPN	prop|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
+# text = A advertência foi feita ontem em Tóquio pelo secretário norte-americano do Tesouro, Lloyd Bentsen, depois de se ter encontrado a seu pedido com o primeiro-ministro Morihiro Hosokawa e o ministro das Finanças Hirohisa Fujii.
+# forest 1
+# source CETEMPúblico n=494 sec=eco sem=94a
+# sent_id = CP494-2
+# id 2592
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	advertência	advertência	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	feita	fazer	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	3	ccomp	_	_
+5	ontem	ontem	ADV	ADV|@<ADVL	_	4	advmod	_	_
+6	em	em	ADP	PRP|@<ADVL	_	7	case	_	_
+7	Tóquio	Tóquio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
 8-9	pelo	_	_	_	_	_	_	_	_
-8	por	por	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	secretário	secretário	NOUN	n|M|S	Gender=Masc|Number=Sing	4	dobj	_	_
-11	norte-americano	norte-americano	ADJ	adj|M|S	Gender=Masc|Number=Sing	10	amod	_	_
+8	por	por	ADP	<sam->|PRP|@PASS	_	10	case	_	_
+9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	secretário	secretário	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obj	_	_
+11	norte-americano	norte-americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	_
 12-13	do	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	Tesouro	Tesouro	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-15	,	,	PUNCT	punc	_	10	punct	_	_
-16	Lloyd	Lloyd	PROPN	prop|M|S	_	10	appos	_	MWE=Lloyd_Bentsen|MWEPOS=PROPN
-17	Bentsen	Bentsen	PROPN	PROPN	_	16	name	_	_
-18	,	,	PUNCT	punc	_	10	punct	_	_
-19	depois	depois	ADV	adv	_	4	advmod	_	_
-20	de	de	ADP	prp	AdpType=Prep	23	mark	_	_
-21	se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	dobj	_	_
-22	ter	ter	VERB	v-inf	VerbForm=Inf	23	aux	_	_
-23	encontrado	encontrar	VERB	v-pcp	VerbForm=Part	19	advcl	_	_
-24	a	a	ADP	prp	AdpType=Prep	26	case	_	_
-25	seu	seu	DET	pron-det|<poss|3S>|<si>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	26	det	_	_
-26	pedido	pedido	NOUN	n|M|S	Gender=Masc|Number=Sing	23	nmod	_	_
-27	com	com	ADP	prp	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	primeiro-ministro	primeiro-ministro	NOUN	n|M|S	Gender=Masc|Number=Sing	23	iobj	_	_
-30	Morihiro	Morihiro	PROPN	prop|M|S	_	29	nmod	_	MWE=Morihiro_Hosokawa|MWEPOS=PROPN
-31	Hosokawa	Hosokawa	PROPN	PROPN	_	30	name	_	_
-32	e	e	CONJ	conj-c|<co-prparg>	_	29	cc	_	_
-33	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-34	ministro	ministro	NOUN	n|M|S	_	29	conj	_	MWE=ministro_das_Finanças|MWEPOS=NOUN
+12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	Tesouro	Tesouro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+16	Lloyd	Lloyd	PROPN	_	_	10	appos	_	MWE=Lloyd_Bentsen|MWEPOS=PROPN
+17	Bentsen	Bentsen	PROPN	_	_	16	flat	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+19	depois	depois	ADV	ADV|@<ADVL	_	4	advmod	_	_
+20	de	de	ADP	PRP|@A<ARG	_	22	mark	_	_
+21	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	obj	_	_
+22	ter	ter	VERB	<aux>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	19	advcl	_	_
+23	encontrado	encontrar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	22	ccomp	_	_
+24	a	a	ADP	PRP|@<ADVL	_	26	case	_	_
+25	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	26	det	_	_
+26	pedido	pedido	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	_
+27	com	com	ADP	PRP|@<PIV	_	29	case	_	_
+28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	primeiro-ministro	primeiro-ministro	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	iobj	_	_
+30	Morihiro	Morihiro	PROPN	_	_	29	nmod	_	MWE=Morihiro_Hosokawa|MWEPOS=PROPN
+31	Hosokawa	Hosokawa	PROPN	_	_	30	flat	_	_
+32	e	e	CCONJ	<co-prparg>|KC|@CO	_	34	cc	_	_
+33	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	ministro	ministro	NOUN	<cjt>|<np-def>|N|M|S|@P<	_	29	conj	_	MWE=ministro_das_Finanças|MWEPOS=NOUN
 35-36	das	_	_	_	_	_	_	_	_
-35	de	de	ADP	prp|<sam->	AdpType=Prep	37	case	_	_
-36	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_
-37	Finanças	Finanças	NOUN	NOUN	_	34	compound	_	_
-38	Hirohisa	Hirohisa	PROPN	prop|M|S	_	34	nmod	_	MWE=Hirohisa_Fujii|MWEPOS=PROPN
-39	Fujii	Fujii	PROPN	PROPN	_	38	name	_	_
-40	.	.	PUNCT	punc	_	4	punct	_	_
+35	de	de	ADP	<sam->|PRP|@N<	_	37	case	_	_
+36	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_
+37	Finanças	Finanças	NOUN	N|@P<	_	34	compound	_	_
+38	Hirohisa	Hirohisa	PROPN	_	_	34	nmod	_	MWE=Hirohisa_Fujii|MWEPOS=PROPN
+39	Fujii	Fujii	PROPN	_	_	38	flat	_	SpaceAfter=No
+40	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP494-3
-# sent_id = pt-ud-train.conllu#s2592/pt
-# orig_file_sentence = 026#92
-1	Menos	pouco	DET	pron-det|<quant>|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	2	det	_	_
-2	investimento	investimento	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-3	estrangeiro	estrangeiro	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
+# text = Menos investimento estrangeiro na China
+# forest 1
+# source CETEMPúblico n=494 sec=eco sem=94a
+# sent_id = CP494-3
+# id 2593
+1	Menos	pouco	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Degree=Cmp|Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	2	det	_	_
+2	investimento	investimento	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+3	estrangeiro	estrangeiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
 4-5	na	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	China	China	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	China	China	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP494-4
-# sent_id = pt-ud-train.conllu#s2593/pt
-# orig_file_sentence = 026#93
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	investimentos	investimento	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nsubj	_	_
-3	estrangeiros	estrangeiro	ADJ	adj|M|P	Gender=Masc|Number=Plur	2	amod	_	_
-4	vão	ir	AUX	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-5	continuar	continuar	VERB	v-inf	VerbForm=Inf	0	root	_	_
-6	a	a	ADP	prp	AdpType=Prep	7	mark	_	_
-7	afluir	afluir	VERB	v-inf	VerbForm=Inf	5	xcomp	_	_
-8	este	este	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
-9	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
+# text = Os investimentos estrangeiros vão continuar a afluir este ano à China, mas a um ritmo menos elevado do que em 1993, e o governo vai reforçar o controlo sobre as «joint-ventures», segundo o jornal «China Daily».
+# forest 1
+# source CETEMPúblico n=494 sec=eco sem=94a
+# sent_id = CP494-4
+# id 2594
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	investimentos	investimento	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
+3	estrangeiros	estrangeiro	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
+4	vão	ir	AUX	<first-cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	continuar	continuar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+6	a	a	ADP	PRP|@PRT-AUX<	_	7	mark	_	_
+7	afluir	afluir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
+8	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
+9	ano	ano	NOUN	<first-cjt>|<np-def>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	7	obl	_	_
 10-11	à	_	_	_	_	_	_	_	_
-10	a	a	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	China	China	PROPN	prop|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-13	,	,	PUNCT	punc	_	9	punct	_	_
-14	mas	mas	CONJ	conj-c|<co-advl>	_	9	cc	_	_
-15	a	a	ADP	prp	AdpType=Prep	17	case	_	_
-16	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	ritmo	ritmo	NOUN	n|M|S	Gender=Masc|Number=Sing	9	conj	_	_
-18	menos	menos	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	19	advmod	_	_
-19	elevado	elevar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	17	acl	_	_
+10	a	a	ADP	<sam->|PRP|@<SA	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	China	China	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+14	mas	mas	CCONJ	<co-advl>|KC|@CO	_	17	cc	_	_
+15	a	a	ADP	<cjt>|PRP|@<ADVL	_	17	case	_	_
+16	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	ritmo	ritmo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	conj	_	_
+18	menos	menos	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	19	advmod	_	_
+19	elevado	elevar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	17	acl	_	_
 20-21	do	_	_	_	_	_	_	_	_
-20	de	de	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-21	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-22	que	que	SCONJ	SCONJ	_	20	mwe	_	_
-23	em	em	ADP	prp	AdpType=Prep	24	case	_	_
-24	1993	1993	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	21	advmod	_	_
-25	,	,	PUNCT	punc	_	9	punct	_	_
-26	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	5	cc	_	_
-27	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	governo	governo	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nsubj	_	_
-29	vai	ir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
-30	reforçar	reforçar	VERB	v-inf	VerbForm=Inf	29	xcomp	_	_
-31	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	controlo	controlo	NOUN	n|M|S	Gender=Masc|Number=Sing	30	dobj	_	_
-33	sobre	sobre	ADP	prp	AdpType=Prep	36	case	_	_
-34	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	_	_
-35	«	«	PUNCT	punc	_	36	punct	_	_
-36	joint-ventures	joint-venture	NOUN	n|F|P	Gender=Fem|Number=Plur	32	nmod	_	_
-37	»	»	PUNCT	punc	_	36	punct	_	_
-38	,	,	PUNCT	punc	_	29	punct	_	_
-39	segundo	segundo	ADV	pp	_	41	case	_	_
-40	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
-41	jornal	jornal	NOUN	n|M|S	Gender=Masc|Number=Sing	30	nmod	_	_
-42	«	«	PUNCT	punc	_	41	punct	_	_
-43	China	China	PROPN	prop|F|S	_	41	nmod	_	MWE=China_Daily|MWEPOS=PROPN
-44	Daily	Daily	PROPN	PROPN	_	43	name	_	_
-45	»	»	PUNCT	punc	_	41	punct	_	_
-46	.	.	PUNCT	punc	_	5	punct	_	_
+20	de	de	ADP	<sam->|PRP|@COM	_	19	case	_	_
+21	o	o	DET	<dem>|<-sam>|DET|M|S|@P<	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+22	que	que	SCONJ	<rel>|INDP|M|S|@N<	_	20	fixed	_	_
+23	em	em	ADP	<first-cjt>|PRP|@KOMP<	_	24	case	_	_
+24	1993	1993	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	20	advmod	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+26	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	29	cc	_	_
+27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	29	nsubj	_	_
+29	vai	ir	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+30	reforçar	reforçar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	29	xcomp	_	_
+31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	controlo	controlo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	30	obj	_	_
+33	sobre	sobre	ADP	PRP|@N<	_	36	case	_	_
+34	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	_	_
+35	«	«	PUNCT	PU|@PU	_	36	punct	_	SpaceAfter=No
+36	joint-ventures	joint-venture	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	32	nmod	_	SpaceAfter=No
+37	»	»	PUNCT	PU|@PU	_	36	punct	_	SpaceAfter=No
+38	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+39	segundo	segundo	ADV	ADV|@<ADVL	_	41	case	_	_
+40	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
+41	jornal	jornal	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	30	obl	_	_
+42	«	«	PUNCT	PU|@PU	_	41	punct	_	SpaceAfter=No
+43	China	China	PROPN	_	_	41	nmod	_	MWE=China_Daily|MWEPOS=PROPN
+44	Daily	Daily	PROPN	_	_	43	flat	_	SpaceAfter=No
+45	»	»	PUNCT	PU|@PU	_	41	punct	_	SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP494-5
-# sent_id = pt-ud-train.conllu#s2594/pt
-# orig_file_sentence = 026#94
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	baixa	baixa	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubj	_	_
-3	irá	ir	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+# text = A baixa irá dever-se principalmente ao arrefecimento da actividade imobiliária, cujo crescimento exponencial no ano de 1993 se deveu em grande parte a capitais estrangeiros.
+# forest 1
+# source CETEMPúblico n=494 sec=eco sem=94a
+# sent_id = CP494-5
+# id 2595
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	baixa	baixa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	irá	ir	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 4-5	dever-se	_	_	_	_	_	_	_	_
 4	dever	dever	VERB	v-inf|<hyfen>	Hyph=Yes|VerbForm=Inf	3	xcomp	_	_
-5	-se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	4	dobj	_	_
-6	principalmente	principalmente	ADV	adv	_	4	advmod	_	_
+5	-se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	4	obj	_	_
+6	principalmente	principalmente	ADV	ADV|@>A	_	4	advmod	_	_
 7-8	ao	_	_	_	_	_	_	_	_
-7	a	a	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	arrefecimento	arrefecimento	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
+7	a	a	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
+8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	arrefecimento	arrefecimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obj	_	_
 10-11	da	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	actividade	actividade	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
-13	imobiliária	imobiliário	ADJ	adj|F|S	Gender=Fem|Number=Sing	12	amod	_	_
-14	,	,	PUNCT	punc	_	12	punct	_	_
-15	cujo	cujo	DET	pron-det|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	16	det	_	_
-16	crescimento	crescimento	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nsubj	_	_
-17	exponencial	exponencial	ADJ	adj|M|S	Gender=Masc|Number=Sing	16	amod	_	_
+10	de	de	ADP	<sam->|PRP|@N<ARG	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	actividade	actividade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+13	imobiliária	imobiliário	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+15	cujo	cujo	DET	<rel>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Rel	16	det	_	_
+16	crescimento	crescimento	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	_
+17	exponencial	exponencial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	16	amod	_	_
 18-19	no	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	1993	1993	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	20	nummod	_	_
-23	se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	24	dobj	_	_
-24	deveu	dever	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl	_	_
-25	em	em	ADP	pp	AdpType=Prep	24	advmod	_	MWE=em_grande_parte|MWEPOS=ADV
-26	grande	grande	ADJ	ADJ	_	25	mwe	_	_
-27	parte	parte	NOUN	NOUN	_	25	mwe	_	_
-28	a	a	ADP	prp	AdpType=Prep	29	case	_	_
-29	capitais	capital	NOUN	n|M|P	Gender=Masc|Number=Plur	24	iobj	_	_
-30	estrangeiros	estrangeiro	ADJ	adj|M|P	Gender=Masc|Number=Plur	29	amod	_	_
-31	.	.	PUNCT	punc	_	3	punct	_	_
+18	em	em	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	1993	1993	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	20	nummod	_	_
+23	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	24	obj	_	_
+24	deveu	dever	VERB	<mv>|<se-passive>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl	_	_
+25	em	em	ADP	N|M|S|@<ADVL	_	24	advmod	_	MWE=em_grande_parte|MWEPOS=ADV
+26	grande	grande	ADJ	PRP|@N<	_	25	fixed	_	_
+27	parte	parte	NOUN	N|M|S|@P<	_	25	fixed	_	_
+28	a	a	ADP	PRP|@<PIV	_	29	case	_	_
+29	capitais	capital	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	24	iobj	_	_
+30	estrangeiros	estrangeiro	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	29	amod	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP494-6
-# sent_id = pt-ud-train.conllu#s2595/pt
-# orig_file_sentence = 026#95
-1	Adiada	adiar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-2	negociação	negociação	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nsubj	_	_
+# text = Adiada negociação da Argélia com o FMI
+# forest 1
+# source CETEMPúblico n=494 sec=eco sem=94a
+# sent_id = CP494-6
+# id 2596
+1	Adiada	adiar	VERB	<mv>|V|PCP|F|S|@ICL-UTT	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+2	negociação	negociação	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	1	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Argélia	Argélia	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	com	com	ADP	prp	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	FMI	FMI	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Argélia	Argélia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+6	com	com	ADP	PRP|@N<	_	8	case	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	FMI	FMI	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 

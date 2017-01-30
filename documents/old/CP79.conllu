@@ -1,53 +1,56 @@
-# distance_from_new = 0
-# new_sent_id = CP79-1
-# sent_id = pt-ud-train.conllu#s425/pt
-# orig_file_sentence = 005#25
-1	--	--	PUNCT	punc	_	9	punct	_	_
-2	Com	com	ADP	prp	AdpType=Prep	3	case	_	_
-3	franqueza	franqueza	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
-4	,	,	PUNCT	punc	_	9	punct	_	_
-5	Atanásio	Atanásio	PROPN	prop|M|S	_	9	dep	_	MWE=Atanásio_Ivanovitch|MWEPOS=PROPN
-6	Ivanovitch	Ivanovitch	PROPN	PROPN	_	5	name	_	_
-7	,	,	PUNCT	punc	_	9	punct	_	_
-8	não	não	ADV	adv	_	9	neg	_	_
-9	sei	saber	VERB	v-fin|PS|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
-10	a	a	ADP	prp	AdpType=Prep	13	case	_	_
-11	que	que	DET	pron-det|<interr>|F|P	Gender=Fem|Number=Plur|PronType=Int	13	det	_	_
-12	outras	outro	DET	pron-det|<diff>|F|P	Gender=Fem|Number=Plur	13	det	_	_
-13	guloseimas	guloseima	NOUN	n|F|P	Gender=Fem|Number=Plur	15	iobj	_	_
-14	te	tu	PRON	pron-pers|<refl>|M|2S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=2|PronType=Prs|Reflex=Yes	15	iobj	_	_
-15	queres	querer	VERB	v-fin|PR|2S|IND	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
-16	referir	referir	VERB	v-inf	VerbForm=Inf	15	xcomp	_	_
-17	!	!	PUNCT	punc	_	9	punct	_	_
-18	--	--	PUNCT	punc	_	9	punct	_	_
+# text = -- Com franqueza, Atanásio Ivanovitch, não sei a que outras guloseimas te queres referir! --
+# forest 1
+# source CETEMPúblico n=79 sec=nd sem=95b
+# sent_id = CP79-1
+# id 425
+1	--	--	PUNCT	PU|@PU	_	9	punct	_	_
+2	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
+3	franqueza	franqueza	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+5	Atanásio	Atanásio	PROPN	_	_	9	dep	_	MWE=Atanásio_Ivanovitch|MWEPOS=PROPN
+6	Ivanovitch	Ivanovitch	PROPN	_	_	5	flat	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+8	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
+9	sei	saber	VERB	<mv>|V|PS|1S|IND|@FS-EXC	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+10	a	a	ADP	PRP|@PIV>	_	13	case	_	_
+11	que	que	DET	<interr>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Int	13	det	_	_
+12	outras	outro	DET	<diff>|DET|F|P|@>N	Gender=Fem|Number=Plur	13	det	_	_
+13	guloseimas	guloseima	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	15	iobj	_	_
+14	te	tu	PRON	<refl>|PERS|M|2S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=2|PronType=Prs|Reflex=Yes	15	iobj	_	_
+15	queres	querer	VERB	<mv>|V|PR|2S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
+16	referir	referir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	15	xcomp	_	SpaceAfter=No
+17	!	!	PUNCT	PU|@PU	_	9	punct	_	_
+18	--	--	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP79-2
-# sent_id = pt-ud-train.conllu#s426/pt
-# orig_file_sentence = 005#26
-1	respondeu	responder	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-2	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-3	anafada	anafado	ADJ	adj|F|S	Gender=Fem|Number=Sing	4	amod	_	_
-4	beldade	beldade	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nsubj	_	_
-5	,	,	PUNCT	punc	_	1	punct	_	_
-6	fingindo	fingir	VERB	v-ger	VerbForm=Ger	1	advcl	_	_
-7	não	não	ADV	adv	_	9	neg	_	_
-8	o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	dobj	_	_
-9	perceber	perceber	VERB	v-inf	VerbForm=Inf	6	xcomp	_	_
-10	.	.	PUNCT	punc	_	1	punct	_	_
-11	»	»	PUNCT	punc	_	1	punct	_	_
+# text = respondeu a anafada beldade, fingindo não o perceber.»
+# forest 1
+# source CETEMPúblico n=79 sec=nd sem=95b
+# sent_id = CP79-2
+# id 426
+1	respondeu	responder	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+3	anafada	anafado	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	4	amod	_	_
+4	beldade	beldade	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	1	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+6	fingindo	fingir	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	1	advcl	_	_
+7	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
+8	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
+9	perceber	perceber	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	6	xcomp	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	1	punct	_	SpaceAfter=No
+11	»	»	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP79-3
-# sent_id = pt-ud-train.conllu#s427/pt
-# orig_file_sentence = 005#27
-1	«	«	PUNCT	punc	_	2	punct	_	_
-2	A	A	DET	prop|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	MWE=A_Feira_de_Sorotchinetz|MWEPOS=PROPN
-3	Feira	Feira	PROPN	PROPN	_	0	root	_	_
-4	de	de	ADP	ADP	AdpType=Prep	5	case	_	_
-5	Sorotchinetz	Sorotchinetz	PROPN	PROPN	_	2	name	_	_
-6	»	»	PUNCT	punc	_	2	punct	_	_
-7	,	,	PUNCT	punc	_	2	punct	_	_
-8	Nicolau	Nicolau	PROPN	prop|M|S	_	2	nmod	_	MWE=Nicolau_Gogol|MWEPOS=PROPN
-9	Gogol	Gogol	PROPN	PROPN	_	8	name	_	_
+# text = «A Feira de Sorotchinetz», Nicolau Gogol
+# forest 1
+# source CETEMPúblico n=79 sec=nd sem=95b
+# sent_id = CP79-3
+# id 427
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+2	A	A	DET	PROP|F|S|@NPHR	Gender=Fem|Number=Sing|PronType=Art	3	det	_	MWE=A_Feira_de_Sorotchinetz|MWEPOS=PROPN
+3	Feira	Feira	PROPN	PROP|@N<	_	0	root	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	Sorotchinetz	Sorotchinetz	PROPN	PROP|@P<	_	2	flat	_	SpaceAfter=No
+6	»	»	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+8	Nicolau	Nicolau	PROPN	_	_	2	nmod	_	MWE=Nicolau_Gogol|MWEPOS=PROPN
+9	Gogol	Gogol	PROPN	_	_	8	flat	_	_
 

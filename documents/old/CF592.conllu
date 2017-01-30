@@ -1,175 +1,182 @@
-# distance_from_new = 0
-# new_sent_id = CF592-1
-# sent_id = pt-ud-train.conllu#s7527/pt
-# orig_file_sentence = 076#27
-1	As	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
-2	letras	letra	NOUN	n|F|P	Gender=Fem|Number=Plur	8	nsubj	_	_
+# text = As letras do Digable Planets não refletem este radicalismo.
+# forest 1
+# source CETENFolha n=592 cad=Revista Folha sec=nd sem=94a
+# sent_id = CF592-1
+# id 2485
+1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	letras	letra	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	8	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Digable	Digable	PROPN	prop|M|S	_	2	nmod	_	MWE=Digable_Planets|MWEPOS=PROPN
-6	Planets	Planets	PROPN	PROPN	_	5	name	_	_
-7	não	não	ADV	adv	_	8	neg	_	_
-8	refletem	refletir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	este	este	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	_
-10	radicalismo	radicalismo	NOUN	n|M|S	Gender=Masc|Number=Sing	8	dobj	_	_
-11	.	.	PUNCT	punc	_	8	punct	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Digable	Digable	PROPN	_	_	2	nmod	_	MWE=Digable_Planets|MWEPOS=PROPN
+6	Planets	Planets	PROPN	_	_	5	flat	_	_
+7	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
+8	refletem	refletir	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	_
+10	radicalismo	radicalismo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF592-2
-# sent_id = pt-ud-train.conllu#s7528/pt
-# orig_file_sentence = 076#28
-1	São	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-2	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	_
-3	cool	cool	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
-4	,	,	PUNCT	punc	_	3	punct	_	_
-5	falam	falar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	amor	amor	NOUN	n|M|S	Gender=Masc|Number=Sing	5	dobj	_	_
-8	,	,	PUNCT	punc	_	7	punct	_	_
-9	crescimento	crescimento	NOUN	n|M|S	Gender=Masc|Number=Sing	7	conj	_	_
-10	e	e	CONJ	conj-c|<co-prparg>	_	7	cc	_	_
-11	amizade	amizade	NOUN	n|F|S	Gender=Fem|Number=Sing	7	conj	_	_
-12	sempre	sempre	ADV	adv	_	5	advmod	_	_
-13	com	com	ADP	prp	AdpType=Prep	15	case	_	_
-14	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	viés	viés	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-16	«	«	PUNCT	punc	_	15	punct	_	_
-17	engajado	engajar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	15	acl	_	_
-18	»	»	PUNCT	punc	_	15	punct	_	_
-19	,	,	PUNCT	punc	_	5	punct	_	_
-20	porém	porém	ADV	adv|<kc>	_	5	advmod	_	_
-21	.	.	PUNCT	punc	_	3	punct	_	_
+# text = São mais cool, falam de amor, crescimento e amizade sempre com um viés «engajado», porém.
+# forest 1
+# source CETENFolha n=592 cad=Revista Folha sec=nd sem=94a
+# sent_id = CF592-2
+# id 2486
+1	São	ser	AUX	<mv>|<first-cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	3	advmod	_	_
+3	cool	cool	ADJ	<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+5	falam	falar	VERB	<mv>|<cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+6	de	de	ADP	PRP|@<PIV	_	7	case	_	_
+7	amor	amor	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+9	crescimento	crescimento	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	conj	_	_
+10	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
+11	amizade	amizade	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	conj	_	_
+12	sempre	sempre	ADV	ADV|@<ADVL	_	5	advmod	_	_
+13	com	com	ADP	PRP|@A<	_	15	case	_	_
+14	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	viés	viés	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	_
+16	«	«	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+17	engajado	engajar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	15	acl	_	SpaceAfter=No
+18	»	»	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+20	porém	porém	ADV	<kc>|ADV|@<ADVL	_	5	advmod	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF592-3
-# sent_id = pt-ud-train.conllu#s7529/pt
-# orig_file_sentence = 076#29
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-2	próprio	próprio	DET	pron-det|<ident>|M|S	Gender=Masc|Number=Sing	3	det	_	_
-3	nome	nome	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nsubj	_	_
+# text = O próprio nome da banda, segundo Ann Marie, vem de «leituras sistemáticas de Sartre, Marx, Kafka».
+# forest 1
+# source CETENFolha n=592 cad=Revista Folha sec=nd sem=94a
+# sent_id = CF592-3
+# id 2487
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	próprio	próprio	DET	<ident>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
+3	nome	nome	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	banda	banda	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-7	,	,	PUNCT	punc	_	12	punct	_	_
-8	segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	9	case	_	_
-9	Ann	Ann	PROPN	prop|F|S	_	12	nmod	_	MWE=Ann_Marie|MWEPOS=PROPN
-10	Marie	Marie	PROPN	PROPN	_	9	name	_	_
-11	,	,	PUNCT	punc	_	12	punct	_	_
-12	vem	vir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-13	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-14	«	«	PUNCT	punc	_	15	punct	_	_
-15	leituras	leitura	NOUN	n|F|P	Gender=Fem|Number=Plur	12	dobj	_	_
-16	sistemáticas	sistemático	ADJ	adj|F|P	Gender=Fem|Number=Plur	15	amod	_	_
-17	de	de	ADP	prp	AdpType=Prep	18	case	_	_
-18	Sartre	Sartre	PROPN	prop|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-19	,	,	PUNCT	punc	_	18	punct	_	_
-20	Marx	Marx	PROPN	prop|M|S	Gender=Masc|Number=Sing	18	conj	_	_
-21	,	,	PUNCT	punc	_	18	punct	_	_
-22	Kafka	Kafka	PROPN	prop|M|S	Gender=Masc|Number=Sing	18	conj	_	_
-23	»	»	PUNCT	punc	_	15	punct	_	_
-24	.	.	PUNCT	punc	_	12	punct	_	_
+4	de	de	ADP	<sam->|PRP|@N<ARG	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	banda	banda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+8	segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	9	case	_	_
+9	Ann	Ann	PROPN	_	_	12	obl	_	MWE=Ann_Marie|MWEPOS=PROPN
+10	Marie	Marie	PROPN	_	_	9	flat	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+12	vem	vir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	de	de	ADP	PRP|@<PIV	_	15	case	_	_
+14	«	«	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+15	leituras	leitura	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	obj	_	_
+16	sistemáticas	sistemático	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	15	amod	_	_
+17	de	de	ADP	PRP|@N<	_	18	case	_	_
+18	Sartre	Sartre	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+20	Marx	Marx	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	conj	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+22	Kafka	Kafka	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	conj	_	SpaceAfter=No
+23	»	»	PUNCT	PU|@PU	_	15	punct	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF592-4
-# sent_id = pt-ud-train.conllu#s7530/pt
-# orig_file_sentence = 076#30
-1	Significa	significar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	«	«	PUNCT	punc	_	3	punct	_	_
-3	planetas	planeta	NOUN	n|M|P	Gender=Masc|Number=Plur	1	dobj	_	_
-4	bacanas	bacana	ADJ	adj|M|P	Gender=Masc|Number=Plur	3	amod	_	_
-5	»	»	PUNCT	punc	_	3	punct	_	_
-6	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Significa «planetas bacanas».
+# forest 1
+# source CETENFolha n=592 cad=Revista Folha sec=nd sem=94a
+# sent_id = CF592-4
+# id 2488
+1	Significa	significar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+3	planetas	planeta	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	1	obj	_	_
+4	bacanas	bacana	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	3	amod	_	SpaceAfter=No
+5	»	»	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+6	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF592-5
-# sent_id = pt-ud-train.conllu#s7531/pt
-# orig_file_sentence = 076#31
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	nome	nome	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	seria	ser	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	5	cop	_	_
-4	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	tentativa	tentativa	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	mark	_	_
-7	passar	passar	VERB	v-inf	VerbForm=Inf	5	acl	_	_
+# text = O nome seria uma tentativa de passar às pessoas o conceito de auto-suficiência cada ser é um «planeta» mas também de inter-relação entre os «planetas».
+# forest 1
+# source CETENFolha n=592 cad=Revista Folha sec=nd sem=94a
+# sent_id = CF592-5
+# id 2489
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	nome	nome	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	seria	ser	AUX	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	5	cop	_	_
+4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	tentativa	tentativa	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
+6	de	de	ADP	PRP|@N<ARG	_	7	mark	_	_
+7	passar	passar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	acl	_	_
 8-9	às	_	_	_	_	_	_	_	_
-8	a	a	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
-10	pessoas	pessoa	NOUN	n|F|P	Gender=Fem|Number=Plur	7	dobj	_	_
-11	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	conceito	conceito	NOUN	n|M|S	Gender=Masc|Number=Sing	7	dobj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	auto-suficiência	auto-suficiência	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-15	cada	cada	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	16	det	_	_
-16	ser	ser	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nsubj	_	_
-17	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
-18	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-19	«	«	PUNCT	punc	_	20	punct	_	_
-20	planeta	planeta	NOUN	n|M|S	Gender=Masc|Number=Sing	14	acl	_	_
-21	»	»	PUNCT	punc	_	20	punct	_	_
-22	mas	mas	CONJ	conj-c|<co-sc>	_	14	cc	_	_
-23	também	também	ADV	adv	_	14	conj	_	_
-24	de	de	ADP	prp	AdpType=Prep	23	case	_	_
-25	inter-relação	inter-relação	NOUN	n|F|S	Gender=Fem|Number=Sing	23	nmod	_	_
-26	entre	entre	ADP	prp	AdpType=Prep	29	case	_	_
-27	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
-28	«	«	PUNCT	punc	_	29	punct	_	_
-29	planetas	planeta	NOUN	n|M|P	Gender=Masc|Number=Plur	25	nmod	_	_
-30	»	»	PUNCT	punc	_	29	punct	_	_
-31	.	.	PUNCT	punc	_	5	punct	_	_
+8	a	a	ADP	<sam->|PRP|@<PIV	_	10	case	_	_
+9	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+10	pessoas	pessoa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	7	obj	_	_
+11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	conceito	conceito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
+13	de	de	ADP	<first-cjt>|PRP|@N<	_	14	case	_	_
+14	auto-suficiência	auto-suficiência	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+15	cada	cada	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	16	det	_	_
+16	ser	ser	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
+17	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
+18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+19	«	«	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+20	planeta	planeta	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	14	acl	_	SpaceAfter=No
+21	»	»	PUNCT	PU|@PU	_	20	punct	_	_
+22	mas	mas	CCONJ	<co-postnom>|<co-sc>|KC|@CO	_	23	cc	_	_
+23	também	também	ADV	ADV|@>A	_	14	conj	_	_
+24	de	de	ADP	<cjt>|PRP|@N<	_	23	case	_	_
+25	inter-relação	inter-relação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
+26	entre	entre	ADP	PRP|@N<	_	29	case	_	_
+27	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
+28	«	«	PUNCT	PU|@PU	_	29	punct	_	SpaceAfter=No
+29	planetas	planeta	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	SpaceAfter=No
+30	»	»	PUNCT	PU|@PU	_	29	punct	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF592-6
-# sent_id = pt-ud-train.conllu#s7532/pt
-# orig_file_sentence = 076#32
-1	«	«	PUNCT	punc	_	12	punct	_	_
-2	De	de	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-3	aí	aí	ADV	adv|<-sam>	_	5	advmod	_	_
-4	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-5	nomes	nome	NOUN	n|M|P	Gender=Masc|Number=Plur	12	dobj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	insetos	inseto	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-8	para	para	ADP	prp	AdpType=Prep	9	case	_	_
-9	nós	nós	PRON	pron-pers|M/F|1P|NOM/PIV	Case=Acc,Nom|Number=Plur|Person=1|PrepCase=Pre|PronType=Prs	5	nmod	_	_
-10	»	»	PUNCT	punc	_	12	punct	_	_
-11	,	,	PUNCT	punc	_	12	punct	_	_
-12	continua	continuar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-13	Ann	Ann	PROPN	prop|F|S	_	12	nsubj	_	MWE=Ann_Marie|MWEPOS=PROPN
-14	Marie	Marie	PROPN	PROPN	_	13	name	_	_
-15	.	.	PUNCT	punc	_	12	punct	_	_
+# text = «De aí os nomes de insetos para nós», continua Ann Marie.
+# forest 1
+# source CETENFolha n=592 cad=Revista Folha sec=nd sem=94a
+# sent_id = CF592-6
+# id 2490
+1	«	«	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
+2	De	de	ADP	<sam->|PRP|@>N	_	3	case	_	_
+3	aí	aí	ADV	<-sam>|ADV|@P<	_	5	advmod	_	_
+4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	nomes	nome	NOUN	<np-def>|N|M|P|@ACC>	Gender=Masc|Number=Plur	12	obj	_	_
+6	de	de	ADP	PRP|@N<ARG	_	7	case	_	_
+7	insetos	inseto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
+8	para	para	ADP	PRP|@N<	_	9	case	_	_
+9	nós	nós	PRON	PERS|M/F|1P|NOM/PIV|@P<	Case=Acc,Nom|Number=Plur|Person=1|PrepCase=Pre|PronType=Prs	5	nmod	_	SpaceAfter=No
+10	»	»	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+12	continua	continuar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+13	Ann	Ann	PROPN	_	_	12	nsubj	_	MWE=Ann_Marie|MWEPOS=PROPN
+14	Marie	Marie	PROPN	_	_	13	flat	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF592-7
-# sent_id = pt-ud-train.conllu#s7533/pt
-# orig_file_sentence = 076#33
-1	«	«	PUNCT	punc	_	8	punct	_	_
-2	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
-3	negros	negro	ADJ	adj|<n>|M|P	Gender=Masc|Number=Plur	8	nsubj	_	_
-4	,	,	PUNCT	punc	_	3	punct	_	_
-5	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
-6	minorias	minoria	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nmod	_	_
-7	,	,	PUNCT	punc	_	3	punct	_	_
-8	têm	ter	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	que	que	SCONJ	conj-s	_	10	mark	_	_
-10	viver	viver	VERB	v-inf	VerbForm=Inf	8	xcomp	_	_
-11	como	como	ADV	adv|<rel>|<prp>	PronType=Rel	13	mark	_	_
-12	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
-13	comunidades	comunidade	NOUN	n|F|P	Gender=Fem|Number=Plur	10	nmod	_	_
-14	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-15	insetos	inseto	NOUN	n|M|P	Gender=Masc|Number=Plur	13	nmod	_	_
-16	,	,	PUNCT	punc	_	13	punct	_	_
-17	como	como	ADV	adv|<rel>|<prp>	PronType=Rel	19	mark	_	_
-18	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
-19	colméias	colméias	ADJ	adj|<DERS>|F|P	Gender=Fem|Number=Plur	13	conj	_	_
-20	,	,	PUNCT	punc	_	13	punct	_	_
-21	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
-22	formigueiros	formigueiro	NOUN	n|M|P	Gender=Masc|Number=Plur	13	conj	_	_
-23	,	,	PUNCT	punc	_	8	punct	_	_
-24	para	para	ADP	prp	AdpType=Prep	25	mark	_	_
-25	combater	combater	VERB	v-inf	VerbForm=Inf	10	advcl	_	_
-26	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	poder	poder	NOUN	n|M|S	Gender=Masc|Number=Sing	25	dobj	_	_
-28	.	.	PUNCT	punc	_	8	punct	_	_
-29	»	»	PUNCT	punc	_	8	punct	_	_
+# text = «Os negros, as minorias, têm que viver como as comunidades de insetos, como as colméias, os formigueiros, para combater o poder.»
+# forest 1
+# source CETENFolha n=592 cad=Revista Folha sec=nd sem=94a
+# sent_id = CF592-7
+# id 2491
+1	«	«	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
+2	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+3	negros	negro	ADJ	<n>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+5	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
+6	minorias	minoria	NOUN	<np-def>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	3	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+8	têm	ter	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	que	que	SCONJ	KS|@PRT-AUX<	_	10	mark	_	_
+10	viver	viver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
+11	como	como	ADV	<first-cjt>|<com>|PRP|@<ADVL	PronType=Rel	13	mark	_	_
+12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
+13	comunidades	comunidade	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	10	obl	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	insetos	inseto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+17	como	como	ADV	<cjt>|<com>|PRP|@<ADVL	PronType=Rel	19	mark	_	_
+18	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
+19	colméias	colméias	ADJ	<first-cjt>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	13	conj	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+21	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+22	formigueiros	formigueiro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	13	conj	_	SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+24	para	para	ADP	PRP|@<ADVL	_	25	mark	_	_
+25	combater	combater	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	advcl	_	_
+26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	poder	poder	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	25	obj	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
+29	»	»	PUNCT	PU|@PU	_	8	punct	_	_
 

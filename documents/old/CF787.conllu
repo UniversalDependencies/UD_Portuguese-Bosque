@@ -1,131 +1,137 @@
-# distance_from_new = 0
-# new_sent_id = CF787-1
-# sent_id = pt-ud-train.conllu#s8344/pt
-# orig_file_sentence = 084#44
-1	Bahia	Bahia	PROPN	prop|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	2	2	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	1	nummod	_	_
+# text = Bahia 2
+# forest 1
+# source CETENFolha n=787 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF787-1
+# id 3302
+1	Bahia	Bahia	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+2	2	2	NUM	<card>|NUM|F|P|@N<	Gender=Fem|Number=Plur|NumType=Card	1	nummod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF787-2
-# sent_id = pt-ud-train.conllu#s8345/pt
-# orig_file_sentence = 084#45
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Liga	Liga	PROPN	prop|F|S	_	17	nsubj	_	MWE=Liga_de_Assistência_e_Recuperação|MWEPOS=PROPN
-3	de	de	ADP	ADP	AdpType=Prep	4	case	_	_
-4	Assistência	Assistência	PROPN	PROPN	_	2	name	_	_
-5	e	e	CONJ	CONJ	_	4	cc	_	_
-6	Recuperação	Recuperação	PROPN	PROPN	_	4	conj	_	_
-7	,	,	PUNCT	punc	_	2	punct	_	_
-8	órgão	órgão	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-9	ligado	ligar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	8	acl	_	_
+# text = A Liga de Assistência e Recuperação, órgão ligado à Prefeitura de Salvador, está desenvolvendo um projeto para a confecção de brinquedos a partir de sucatas.
+# forest 1
+# source CETENFolha n=787 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF787-2
+# id 3303
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Liga	Liga	PROPN	PROP|F|S|@SUBJ>	_	16	nsubj	_	MWE=Liga_de_Assistência_e_Recuperação|MWEPOS=PROPN
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	Assistência	Assistência	PROPN	PROP|@P<	_	2	flat	_	_
+5	e	e	CCONJ	PROP|@N<	_	6	cc	_	_
+6	Recuperação	Recuperação	PROPN	PROP|@N<	_	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+8	órgão	órgão	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	2	nmod	_	_
+9	ligado	ligar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	8	acl	_	_
 10-11	à	_	_	_	_	_	_	_	_
-10	a	a	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	Prefeitura	prefeitura	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	9	dobj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	Salvador	Salvador	PROPN	prop|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-15	,	,	PUNCT	punc	_	2	punct	_	_
-16	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-17	desenvolvendo	desenvolver	VERB	v-ger	VerbForm=Ger	0	root	_	_
-18	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	projeto	projeto	NOUN	n|M|S	Gender=Masc|Number=Sing	17	dobj	_	_
-20	para	para	ADP	prp	AdpType=Prep	22	case	_	_
-21	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	confecção	confecção	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-23	de	de	ADP	prp	AdpType=Prep	24	case	_	_
-24	brinquedos	brinquedo	NOUN	n|M|P	Gender=Masc|Number=Plur	22	nmod	_	_
-25	a	a	ADP	prp	AdpType=Prep	28	case	_	MWE=a_partir_de|MWEPOS=ADP
-26	partir	partir	NOUN	NOUN	_	25	mwe	_	_
-27	de	de	ADP	ADP	AdpType=Prep	25	mwe	_	_
-28	sucatas	sucata	NOUN	n|F|P	Gender=Fem|Number=Plur	24	nmod	_	_
-29	.	.	PUNCT	punc	_	17	punct	_	_
+10	a	a	ADP	<sam->|PRP|@<PIV	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Prefeitura	prefeitura	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obj	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	Salvador	Salvador	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+16	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+17	desenvolvendo	desenvolver	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	16	ccomp	_	_
+18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	projeto	projeto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	obj	_	_
+20	para	para	ADP	PRP|@N<	_	22	case	_	_
+21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	confecção	confecção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
+23	de	de	ADP	PRP|@N<ARG	_	24	case	_	_
+24	brinquedos	brinquedo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
+25	a	a	ADP	PRP|@N<	_	28	case	_	MWE=a_partir_de|MWEPOS=ADP
+26	partir	partir	NOUN	N|@P<	_	25	fixed	_	_
+27	de	de	ADP	PRP|@N<	_	25	fixed	_	_
+28	sucatas	sucata	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	24	nmod	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF787-3
-# sent_id = pt-ud-train.conllu#s8346/pt
-# orig_file_sentence = 084#46
-1	Crianças	criança	NOUN	n|F|P	Gender=Fem|Number=Plur	7	nsubj	_	_
-2	de	de	ADP	prp	AdpType=Prep	3	case	_	_
-3	11	11	NUM	num|M|P	Gender=Masc|Number=Plur|NumType=Card	1	nummod	_	_
-4	a	a	ADP	prp	AdpType=Prep	6	case	_	_
-5	14	14	NUM	num|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
-6	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-7	vão	ir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-8	aprender	aprender	VERB	v-inf	VerbForm=Inf	7	xcomp	_	_
-9	a	a	ADP	prp	AdpType=Prep	10	mark	_	_
-10	transformar	transformar	VERB	v-inf	VerbForm=Inf	8	xcomp	_	_
-11	sucatas	sucata	NOUN	n|F|P	Gender=Fem|Number=Plur	10	dobj	_	_
-12	em	em	ADP	prp	AdpType=Prep	13	case	_	_
-13	brinquedos	brinquedo	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
-14	educativos	educativo	ADJ	adj|M|P	Gender=Masc|Number=Plur	13	amod	_	_
-15	.	.	PUNCT	punc	_	7	punct	_	_
+# text = Crianças de 11 a 14 anos vão aprender a transformar sucatas em brinquedos educativos.
+# forest 1
+# source CETENFolha n=787 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF787-3
+# id 3304
+1	Crianças	criança	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
+2	de	de	ADP	PRP|@N<	_	3	case	_	_
+3	11	11	NUM	NUM|M|P|@P<	Gender=Masc|Number=Plur	1	nummod	_	_
+4	a	a	ADP	PRP|@P<	_	6	case	_	_
+5	14	14	NUM	NUM|M|P|@>N	Gender=Masc|Number=Plur	6	nummod	_	_
+6	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+7	vão	ir	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	aprender	aprender	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
+9	a	a	ADP	PRP|@<PIV	_	10	mark	_	_
+10	transformar	transformar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	xcomp	_	_
+11	sucatas	sucata	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
+12	em	em	ADP	PRP|@<PIV	_	13	case	_	_
+13	brinquedos	brinquedo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obj	_	_
+14	educativos	educativo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF787-4
-# sent_id = pt-ud-train.conllu#s5373/pt
-# orig_file_sentence = 054#73
-1	Paraíba	Paraíba	PROPN	prop|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	1	1	NUM	num|<card>|F|S	Gender=Fem|Number=Sing|NumType=Card	1	nummod	_	_
+# text = Paraíba 1
+# forest 1
+# source CETENFolha n=787 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF787-4
+# id 3305
+1	Paraíba	Paraíba	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+2	1	1	NUM	<card>|NUM|F|S|@N<	Gender=Fem|Number=Sing|NumType=Card	1	nummod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF787-5
-# sent_id = pt-ud-train.conllu#s8348/pt
-# orig_file_sentence = 084#48
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Secretaria	Secretaria	PROPN	prop|F|S	_	8	nsubj	_	MWE=Secretaria_de_Saúde|MWEPOS=PROPN
-3	de	de	ADP	ADP	AdpType=Prep	4	case	_	_
-4	Saúde	Saúde	PROPN	PROPN	_	2	name	_	_
+# text = A Secretaria de Saúde da Paraíba informou que João Pessoa está entre as cinco capitais brasileiras que atingiram 90 % de cobertura vacinal na última campanha de multivacinação, realizada em 90.
+# forest 1
+# source CETENFolha n=787 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF787-5
+# id 3306
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Secretaria	Secretaria	PROPN	PROP|F|S|@SUBJ>	_	8	nsubj	_	MWE=Secretaria_de_Saúde|MWEPOS=PROPN
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	Saúde	Saúde	PROPN	PROP|@P<	_	2	flat	_	_
 5-6	da	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Paraíba	Paraíba	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-8	informou	informar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-9	que	que	SCONJ	conj-s	_	12	mark	_	_
-10	João	João	PROPN	prop|M|S	_	12	nsubj	_	MWE=João_Pessoa|MWEPOS=PROPN
-11	Pessoa	Pessoa	PROPN	PROPN	_	10	name	_	_
-12	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_
-13	entre	entre	ADP	prp	AdpType=Prep	16	case	_	_
-14	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
-15	cinco	cinco	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	16	nummod	_	_
-16	capitais	capital	NOUN	n|F|P	Gender=Fem|Number=Plur	12	nmod	_	_
-17	brasileiras	brasileiro	ADJ	adj|F|P	Gender=Fem|Number=Plur	16	amod	_	_
-18	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	19	nsubj	_	_
-19	atingiram	atingir	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	16	acl	_	_
-20	90	90	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	21	nummod	_	_
-21	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	19	dobj	_	_
-22	de	de	ADP	prp	AdpType=Prep	23	case	_	_
-23	cobertura	cobertura	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nmod	_	_
-24	vacinal	vacinal	ADJ	adj|F|S	Gender=Fem|Number=Sing	23	amod	_	_
+5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Paraíba	Paraíba	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+8	informou	informar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
+10	João	João	PROPN	_	_	12	nsubj	_	MWE=João_Pessoa|MWEPOS=PROPN
+11	Pessoa	Pessoa	PROPN	_	_	10	flat	_	_
+12	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_
+13	entre	entre	ADP	PRP|@<SA	_	16	case	_	_
+14	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
+15	cinco	cinco	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	16	nummod	_	_
+16	capitais	capital	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	12	obl	_	_
+17	brasileiras	brasileiro	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	16	amod	_	_
+18	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	19	nsubj	_	_
+19	atingiram	atingir	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	16	acl	_	_
+20	90	90	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	21	nummod	_	_
+21	%	%	SYM	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	19	obj	_	_
+22	de	de	ADP	PRP|@N<	_	23	case	_	_
+23	cobertura	cobertura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
+24	vacinal	vacinal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
 25-26	na	_	_	_	_	_	_	_	_
-25	em	em	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-26	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-27	última	último	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	28	amod	_	_
-28	campanha	campanha	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-29	de	de	ADP	prp	AdpType=Prep	30	case	_	_
-30	multivacinação	multivacinação	NOUN	n|<DERP>|F|S	Gender=Fem|Number=Sing	28	nmod	_	_
-31	,	,	PUNCT	punc	_	28	punct	_	_
-32	realizada	realizar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	28	acl	_	_
-33	em	em	ADP	prp	AdpType=Prep	34	case	_	_
-34	90	90	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	32	advmod	_	_
-35	.	.	PUNCT	punc	_	8	punct	_	_
+25	em	em	ADP	<sam->|PRP|@<ACC	_	28	case	_	_
+26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+27	última	último	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	28	amod	_	_
+28	campanha	campanha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	_
+29	de	de	ADP	PRP|@N<ARG	_	30	case	_	_
+30	multivacinação	multivacinação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	SpaceAfter=No
+31	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+32	realizada	realizar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	28	acl	_	_
+33	em	em	ADP	PRP|@<ADVL	_	34	case	_	_
+34	90	90	NUM	<card>|NUM|M|S|@P<	Gender=Masc|Number=Plur|NumType=Card	32	advmod	_	SpaceAfter=No
+35	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF787-6
-# sent_id = pt-ud-train.conllu#s8349/pt
-# orig_file_sentence = 084#49
+# text = Neste ano, a secretaria espera vacinar cerca de 480 mil crianças.
+# forest 1
+# source CETENFolha n=787 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF787-6
+# id 3307
 1-2	Neste	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	este	este	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
-3	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-4	,	,	PUNCT	punc	_	7	punct	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	secretaria	secretaria	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nsubj	_	_
-7	espera	esperar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-8	vacinar	vacinar	VERB	v-inf	VerbForm=Inf	7	xcomp	_	_
-9	cerca	cerca	ADV	adv	_	13	advmod	_	MWE=cerca_de|MWEPOS=ADV
-10	de	de	ADP	ADP	AdpType=Prep	9	mwe	_	_
-11	480	480	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	13	nummod	_	_
-12	mil	mil	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	13	nummod	_	_
-13	crianças	criança	NOUN	n|F|P	Gender=Fem|Number=Plur	8	dobj	_	_
-14	.	.	PUNCT	punc	_	7	punct	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	secretaria	secretaria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
+7	espera	esperar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	vacinar	vacinar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	7	xcomp	_	_
+9	cerca	cerca	ADV	ADV|@>N	_	13	advmod	_	MWE=cerca_de|MWEPOS=ADV
+10	de	de	ADP	<prp>|PRP|@A<	_	9	fixed	_	_
+11	480	480	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	13	nummod	_	_
+12	mil	mil	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	13	nummod	_	_
+13	crianças	criança	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 

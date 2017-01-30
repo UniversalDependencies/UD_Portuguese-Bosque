@@ -1,134 +1,137 @@
-# distance_from_new = 0
-# new_sent_id = CP669-1
-# sent_id = pt-ud-train.conllu#s3468/pt
-# orig_file_sentence = 035#68
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	New	New	PROPN	prop|M|S	_	5	nsubj	_	MWE=New_Jersey_Nets|MWEPOS=PROPN
-3	Jersey	Jersey	PROPN	PROPN	_	2	name	_	_
-4	Nets	Nets	PROPN	PROPN	_	2	name	_	_
-5	perderam	perder	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	invencibilidade	invencibilidade	NOUN	n|F|S	Gender=Fem|Number=Sing	5	dobj	_	_
+# text = Os New Jersey Nets perderam a invencibilidade no campeonato, pois foram derrotados pelos Chicago Bulls, por 99-86.
+# forest 1
+# source CETEMPúblico n=669 sec=des sem=97b
+# sent_id = CP669-1
+# id 3469
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	New	New	PROPN	_	_	5	nsubj	_	MWE=New_Jersey_Nets|MWEPOS=PROPN
+3	Jersey	Jersey	PROPN	_	_	2	flat	_	_
+4	Nets	Nets	PROPN	_	_	2	flat	_	_
+5	perderam	perder	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	invencibilidade	invencibilidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	_
 8-9	no	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	campeonato	campeonato	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-11	,	,	PUNCT	punc	_	5	punct	_	_
-12	pois	pois	SCONJ	conj-s	_	14	advmod	_	_
-13	foram	ser	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	14	auxpass	_	_
-14	derrotados	derrotar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	5	advcl	_	_
+8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
+9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	campeonato	campeonato	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+12	pois	pois	SCONJ	KS|@ADVL>	_	14	advmod	_	_
+13	foram	ser	VERB	<aux>|V|PS|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	_
+14	derrotados	derrotar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	13	ccomp	_	_
 15-16	pelos	_	_	_	_	_	_	_	_
-15	por	por	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
-17	Chicago	Chicago	PROPN	prop|M|S	_	14	dobj	_	MWE=Chicago_Bulls|MWEPOS=PROPN
-18	Bulls	Bulls	PROPN	PROPN	_	17	name	_	_
-19	,	,	PUNCT	punc	_	14	punct	_	_
-20	por	por	ADP	prp	AdpType=Prep	21	case	_	_
-21	99-86	99-86	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	14	advmod	_	_
-22	.	.	PUNCT	punc	_	5	punct	_	_
+15	por	por	ADP	PRP|@PASS	_	17	case	_	_
+16	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	Chicago	Chicago	PROPN	_	_	14	obj	_	MWE=Chicago_Bulls|MWEPOS=PROPN
+18	Bulls	Bulls	PROPN	_	_	17	flat	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+20	por	por	ADP	PRP|@<ADVL	_	21	case	_	_
+21	99-86	99-86	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	14	advmod	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP669-2
-# sent_id = pt-ud-train.conllu#s3469/pt
-# orig_file_sentence = 035#69
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	Bulls	Bulls	PROPN	prop|M|P	Gender=Masc|Number=Plur	11	nsubj	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	com	com	ADP	prp	AdpType=Prep	6	case	_	_
-5	21	21	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
-6	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	2	nmod	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	Steve	Steve	PROPN	prop|M|S	_	6	nmod	_	MWE=Steve_Kerr|MWEPOS=PROPN
-9	Kerr	Kerr	PROPN	PROPN	_	8	name	_	_
-10	,	,	PUNCT	punc	_	2	punct	_	_
-11	regressaram	regressar	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+# text = Os Bulls, com 21 pontos de Steve Kerr, regressaram às vitórias e somam agora quatro triunfos -- todos eles conquistados em casa -- e duas derrotas, que lhe dão o terceiro lugar na Divisão Central.
+# forest 1
+# source CETEMPúblico n=669 sec=des sem=97b
+# sent_id = CP669-2
+# id 3470
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	Bulls	Bulls	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	11	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	com	com	ADP	<cjt>|PRP|@N<PRED	_	6	case	_	_
+5	21	21	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
+6	pontos	ponto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	Steve	Steve	PROPN	_	_	6	nmod	_	MWE=Steve_Kerr|MWEPOS=PROPN
+9	Kerr	Kerr	PROPN	_	_	8	flat	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+11	regressaram	regressar	VERB	<first-cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 12-13	às	_	_	_	_	_	_	_	_
-12	a	a	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
-14	vitórias	vitória	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nmod	_	_
-15	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	11	cc	_	_
-16	somam	somar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
-17	agora	agora	ADV	adv|<kc>	_	16	advmod	_	_
-18	quatro	quatro	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	19	nummod	_	_
-19	triunfos	triunfo	NOUN	n|M|P	Gender=Masc|Number=Plur	16	dobj	_	_
-20	--	--	PUNCT	punc	_	19	punct	_	_
-21	todos	todo	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	22	det	_	_
-22	eles	ele	PRON	pron-pers|M|3P|NOM	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	_
-23	conquistados	conquistar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	19	acl	_	_
-24	em	em	ADP	pp	AdpType=Prep	23	advmod	_	MWE=em_casa|MWEPOS=ADV
-25	casa	casa	NOUN	NOUN	_	24	mwe	_	_
-26	--	--	PUNCT	punc	_	19	punct	_	_
-27	e	e	CONJ	conj-c|<co-acc>	_	19	cc	_	_
-28	duas	dois	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	29	nummod	_	_
-29	derrotas	derrota	NOUN	n|F|P	Gender=Fem|Number=Plur	19	conj	_	_
-30	,	,	PUNCT	punc	_	19	punct	_	_
-31	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	33	nsubj	_	_
-32	lhe	ele	PRON	pron-pers|M|3S|DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	dobj	_	_
-33	dão	dar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	acl	_	_
-34	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-35	terceiro	terceiro	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	36	amod	_	_
-36	lugar	lugar	NOUN	n|M|S	Gender=Masc|Number=Sing	33	dobj	_	_
+12	a	a	ADP	<sam->|PRP|@<SA	_	14	case	_	_
+13	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+14	vitórias	vitória	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	_
+15	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	_
+16	somam	somar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+17	agora	agora	ADV	<kc>|ADV|@<ADVL	_	16	advmod	_	_
+18	quatro	quatro	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	19	nummod	_	_
+19	triunfos	triunfo	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	obj	_	_
+20	--	--	PUNCT	PU|@PU	_	29	punct	_	_
+21	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	22	det	_	_
+22	eles	ele	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	_
+23	conquistados	conquistar	VERB	<first-cjt>|<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	19	acl	_	_
+24	em	em	ADP	PRP|@<ADVL	_	23	advmod	_	MWE=em_casa|MWEPOS=ADV
+25	casa	casa	NOUN	N|F|S|@P<	_	24	fixed	_	_
+26	--	--	PUNCT	PU|@PU	_	29	punct	_	_
+27	e	e	CCONJ	<co-acc>|KC|@CO	_	29	cc	_	_
+28	duas	dois	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	29	nummod	_	_
+29	derrotas	derrota	NOUN	<cjt>|<np-def>|N|F|P|@ACC>	Gender=Fem|Number=Plur	19	conj	_	SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+31	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	33	nsubj	_	_
+32	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	33	obj	_	_
+33	dão	dar	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	acl	_	_
+34	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+35	terceiro	terceiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	36	amod	_	_
+36	lugar	lugar	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	33	obj	_	_
 37-38	na	_	_	_	_	_	_	_	_
-37	em	em	ADP	prp|<sam->	AdpType=Prep	39	case	_	_
-38	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
-39	Divisão	Divisão	PROPN	prop|F|S	_	36	nmod	_	MWE=Divisão_Central|MWEPOS=PROPN
-40	Central	Central	PROPN	PROPN	_	39	name	_	_
-41	.	.	PUNCT	punc	_	11	punct	_	_
+37	em	em	ADP	<sam->|PRP|@N<	_	39	case	_	_
+38	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+39	Divisão	Divisão	PROPN	PROP|F|S|@P<	_	36	nmod	_	MWE=Divisão_Central|MWEPOS=PROPN
+40	Central	Central	PROPN	PROP|@N<	_	39	flat	_	SpaceAfter=No
+41	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP669-3
-# sent_id = pt-ud-train.conllu#s3470/pt
-# orig_file_sentence = 035#70
-1	Apesar	apesar	ADV	prp|<sam->	AdpType=Prep	4	case	_	MWE=Apesar_de|MWEPOS=ADP
+# text = Apesar da derrota, a equipa de New Jersey pode orgulhar-se de ter obtido, nesta época, a melhor série vitoriosa num início de campeonato (quatro triunfos consecutivos) desde 1976, altura em que se estreou na NBA.
+# forest 1
+# source CETEMPúblico n=669 sec=des sem=97b
+# sent_id = CP669-3
+# id 3471
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	4	case	_	MWE=Apesar_de|MWEPOS=ADP
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-3	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	derrota	derrota	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-5	,	,	PUNCT	punc	_	11	punct	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	equipa	equipa	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nsubj	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	New	New	PROPN	prop|M|S	_	7	nmod	_	MWE=New_Jersey|MWEPOS=PROPN
-10	Jersey	Jersey	PROPN	PROPN	_	9	name	_	_
-11	pode	poder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	derrota	derrota	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	equipa	equipa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
+9	New	New	PROPN	_	_	7	nmod	_	MWE=New_Jersey|MWEPOS=PROPN
+10	Jersey	Jersey	PROPN	_	_	9	flat	_	_
+11	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 12-13	orgulhar-se	_	_	_	_	_	_	_	_
 12	orgulhar	orgulhar	VERB	v-inf|<hyfen>	Hyph=Yes|VerbForm=Inf	11	xcomp	_	_
 13	-se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	12	iobj	_	_
-14	de	de	ADP	prp	AdpType=Prep	16	mark	_	_
-15	ter	ter	VERB	v-inf	VerbForm=Inf	16	aux	_	_
-16	obtido	obter	VERB	v-pcp	VerbForm=Part	12	xcomp	_	_
-17	,	,	PUNCT	punc	_	16	punct	_	_
+14	de	de	ADP	PRP|@<PIV	_	15	mark	_	_
+15	ter	ter	VERB	<aux>|V|INF|@ICL-P<	VerbForm=Inf	12	xcomp	_	_
+16	obtido	obter	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	15	ccomp	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 18-19	nesta	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	esta	este	DET	pron-det|<-sam>|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	20	det	_	_
-20	época	época	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-21	,	,	PUNCT	punc	_	16	punct	_	_
-22	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-23	melhor	bom	ADJ	adj|<KOMP>|<SUP>|F|S	Degree=Sup|Gender=Fem|Number=Sing	24	amod	_	_
-24	série	série	NOUN	n|F|S	Gender=Fem|Number=Sing	16	dobj	_	_
-25	vitoriosa	vitorioso	ADJ	adj|F|S	Gender=Fem|Number=Sing	24	amod	_	_
+18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
+19	esta	este	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	20	det	_	_
+20	época	época	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+23	melhor	bom	ADJ	<SUP>|<KOMP>|<COMP>|ADJ|F|S|@>N	Degree=Sup|Gender=Fem|Number=Sing	24	amod	_	_
+24	série	série	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	obj	_	_
+25	vitoriosa	vitorioso	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	24	amod	_	_
 26-27	num	_	_	_	_	_	_	_	_
-26	em	em	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-27	um	um	DET	art|<-sam>|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	início	início	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nmod	_	_
-29	de	de	ADP	prp	AdpType=Prep	30	case	_	_
-30	campeonato	campeonato	NOUN	n|M|S	Gender=Masc|Number=Sing	28	nmod	_	_
-31	(	(	PUNCT	punc	_	24	punct	_	_
-32	quatro	quatro	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	33	nummod	_	_
-33	triunfos	triunfo	NOUN	n|M|P	Gender=Masc|Number=Plur	24	appos	_	_
-34	consecutivos	consecutivo	ADJ	adj|M|P	Gender=Masc|Number=Plur	33	amod	_	_
-35	)	)	PUNCT	punc	_	24	punct	_	_
-36	desde	desde	ADP	prp	AdpType=Prep	37	case	_	_
-37	1976	1976	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	24	nummod	_	_
-38	,	,	PUNCT	punc	_	37	punct	_	_
-39	altura	altura	NOUN	n|F|S	Gender=Fem|Number=Sing	37	nmod	_	_
-40	em	em	ADP	prp	AdpType=Prep	41	case	_	_
-41	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	43	nmod	_	_
-42	se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	43	dobj	_	_
-43	estreou	estrear	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	acl	_	_
+26	em	em	ADP	<sam->|PRP|@N<	_	28	case	_	_
+27	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	início	início	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
+29	de	de	ADP	PRP|@N<	_	30	case	_	_
+30	campeonato	campeonato	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	28	nmod	_	_
+31	(	(	PUNCT	PU|@PU	_	24	punct	_	SpaceAfter=No
+32	quatro	quatro	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	33	nummod	_	_
+33	triunfos	triunfo	NOUN	<np-def>|N|M|P|@APP	Gender=Masc|Number=Plur	24	appos	_	_
+34	consecutivos	consecutivo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	33	amod	_	SpaceAfter=No
+35	)	)	PUNCT	PU|@PU	_	24	punct	_	_
+36	desde	desde	ADP	PRP|@N<	_	37	case	_	_
+37	1976	1976	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	24	nummod	_	SpaceAfter=No
+38	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+39	altura	altura	NOUN	<np-idf>|N|F|S|@A<	Gender=Fem|Number=Sing	37	obl	_	_
+40	em	em	ADP	PRP|@ADVL>	_	41	case	_	_
+41	que	que	PRON	<rel>|INDP|F|S|@P<	Gender=Fem|Number=Sing|PronType=Rel	43	obl	_	_
+42	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	43	obj	_	_
+43	estreou	estrear	VERB	<mv>|<se-passive>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	acl	_	_
 44-45	na	_	_	_	_	_	_	_	_
-44	em	em	ADP	prp|<sam->	AdpType=Prep	46	case	_	_
-45	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
-46	NBA	NBA	PROPN	prop|F|S	Gender=Fem|Number=Sing	43	nmod	_	_
-47	.	.	PUNCT	punc	_	11	punct	_	_
+44	em	em	ADP	<sam->|PRP|@<ADVL	_	46	case	_	_
+45	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
+46	NBA	NBA	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	43	obl	_	SpaceAfter=No
+47	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 

@@ -1,107 +1,109 @@
-# distance_from_new = 0
-# new_sent_id = CF68-1
-# sent_id = pt-ud-train.conllu#s5302/pt
-# orig_file_sentence = 054#2
+# text = Na semana passada, a Secretaria Nacional de Direito Econômico baixou uma portaria, que aplica uma multa de 250 Ufirs (R$ 170) aos seis colégios por cada matrícula recusada.
+# forest 1
+# source CETENFolha n=68 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF68-1
+# id 260
 1-2	Na	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	semana	semana	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-4	passada	passar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	_	_
-5	,	,	PUNCT	punc	_	12	punct	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Secretaria	Secretaria	PROPN	prop|F|S	_	12	nsubj	_	MWE=Secretaria_Nacional_de_Direito_Econômico|MWEPOS=PROPN
-8	Nacional	Nacional	ADJ	PROPN	_	7	amod	_	_
-9	de	de	ADP	ADP	AdpType=Prep	10	case	_	_
-10	Direito	Direito	PROPN	PROPN	_	7	name	_	_
-11	Econômico	Econômico	PROPN	PROPN	_	7	name	_	_
-12	baixou	baixar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-13	uma	uma	NUM	num|<card>|F|S	Gender=Fem|Number=Sing|NumType=Card	14	nummod	_	_
-14	portaria	portaria	NOUN	n|F|S	Gender=Fem|Number=Sing	12	dobj	_	_
-15	,	,	PUNCT	punc	_	14	punct	_	_
-16	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	17	nsubj	_	_
-17	aplica	aplicar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
-18	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	multa	multa	NOUN	n|F|S	Gender=Fem|Number=Sing	17	dobj	_	_
-20	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-21	250	250	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	22	nummod	_	_
-22	Ufirs	Ufirs	PROPN	prop|F|P	Gender=Fem|Number=Plur	19	nmod	_	_
-23	(	(	PUNCT	punc	_	22	punct	_	_
-24	R$	R$	SYM	n|M|S	Gender=Masc|Number=Sing	22	nmod	_	_
-25	170	170	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	24	nummod	_	_
-26	)	)	PUNCT	punc	_	22	punct	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
+4	passada	passar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Secretaria	Secretaria	PROPN	PROP|F|S|@SUBJ>	_	12	nsubj	_	MWE=Secretaria_Nacional_de_Direito_Econômico|MWEPOS=PROPN
+8	Nacional	Nacional	PROPN	PROP|@N<	_	7	flat	_	_
+9	de	de	ADP	PRP|@N<	_	10	case	_	_
+10	Direito	Direito	PROPN	PROP|@P<	_	7	flat	_	_
+11	Econômico	Econômico	PROPN	PROP|@N<	_	7	flat	_	_
+12	baixou	baixar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+13	uma	uma	NUM	<card>|NUM|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card	14	nummod	_	_
+14	portaria	portaria	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+16	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	17	nsubj	_	_
+17	aplica	aplicar	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
+18	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	multa	multa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
+20	de	de	ADP	PRP|@N<	_	22	case	_	_
+21	250	250	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	22	nummod	_	_
+22	Ufirs	Ufirs	PROPN	PROP|F|P|@P<	Gender=Fem|Number=Plur	19	nmod	_	_
+23	(	(	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
+24	R$	R$	SYM	_	Gender=Masc|Number=Sing	22	nmod	_	_
+25	170	170	NUM	<card>|NUM|F|P|@N<	Gender=Fem|Number=Plur|NumType=Card	24	nummod	_	SpaceAfter=No
+26	)	)	PUNCT	PU|@PU	_	22	punct	_	_
 27-28	aos	_	_	_	_	_	_	_	_
-27	a	a	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-28	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
-29	seis	seis	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	30	nummod	_	_
-30	colégios	colégio	NOUN	n|M|P	Gender=Masc|Number=Plur	17	dobj	_	_
-31	por	por	ADP	prp	AdpType=Prep	33	case	_	_
-32	cada	cada	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	33	det	_	_
-33	matrícula	matrícula	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-34	recusada	recusar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	33	acl	_	_
-35	.	.	PUNCT	punc	_	12	punct	_	_
+27	a	a	ADP	<sam->|PRP|@<PIV	_	30	case	_	_
+28	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
+29	seis	seis	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	30	nummod	_	_
+30	colégios	colégio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obj	_	_
+31	por	por	ADP	PRP|@<ADVL	_	33	case	_	_
+32	cada	cada	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	33	det	_	_
+33	matrícula	matrícula	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	_
+34	recusada	recusar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	33	acl	_	SpaceAfter=No
+35	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF68-2
-# sent_id = pt-ud-train.conllu#s5303/pt
-# orig_file_sentence = 054#3
-1	«	«	PUNCT	punc	_	27	punct	_	_
-2	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	Justiça	justiça	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	5	nsubjpass	_	_
-4	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	auxpass	_	_
-5	aplicada	aplicar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	27	ccomp	_	_
-6	porque	porque	SCONJ	conj-s	_	16	mark	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Estatuto	Estatuto	PROPN	prop|M|S	_	16	nsubj	_	MWE=Estatuto_da_Criança_e_do_Adolescente|MWEPOS=PROPN
+# text = «A Justiça foi aplicada porque o Estatuto da Criança e do Adolescente garante o direito de escolas a todas as crianças», disse Márcia Mendes, presidente da Associaçãos dos Pais de Alunos do Pitágoras, um dos seis colégios acusados de recusar as matrículas.
+# forest 1
+# source CETENFolha n=68 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF68-2
+# id 261
+1	«	«	PUNCT	PU|@PU	_	27	punct	_	SpaceAfter=No
+2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	Justiça	justiça	NOUN	<prop>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
+4	foi	ser	VERB	<aux>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	ccomp	_	_
+5	aplicada	aplicar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	4	ccomp	_	_
+6	porque	porque	SCONJ	KS|@SUB	_	16	mark	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Estatuto	Estatuto	PROPN	PROP|M|S|@SUBJ>	_	16	nsubj	_	MWE=Estatuto_da_Criança_e_do_Adolescente|MWEPOS=PROPN
 9-10	da	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	Criança	Criança	PROPN	PROPN	_	8	name	_	_
-12	e	e	CONJ	CONJ	_	11	cc	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Criança	Criança	PROPN	PROP|@P<	_	8	flat	_	_
+12	e	e	CCONJ	PROP|@N<	_	15	cc	_	_
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	Adolescente	Adolescente	PROPN	PROPN	_	11	conj	_	_
-16	garante	garantir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_
-17	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	direito	direito	NOUN	n|M|S	Gender=Masc|Number=Sing	16	dobj	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-20	escolas	escola	NOUN	n|F|P	Gender=Fem|Number=Plur	18	nmod	_	_
-21	a	a	ADP	prp	AdpType=Prep	24	case	_	_
-22	todas	todo	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	24	det	_	_
-23	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
-24	crianças	criança	NOUN	n|F|P	Gender=Fem|Number=Plur	16	dobj	_	_
-25	»	»	PUNCT	punc	_	27	punct	_	_
-26	,	,	PUNCT	punc	_	27	punct	_	_
-27	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-28	Márcia	Márcia	PROPN	prop|F|S	_	27	nsubj	_	MWE=Márcia_Mendes|MWEPOS=PROPN
-29	Mendes	Mendes	PROPN	PROPN	_	28	name	_	_
-30	,	,	PUNCT	punc	_	28	punct	_	_
-31	presidente	presidente	NOUN	n|F|S	Gender=Fem|Number=Sing	28	nmod	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	Adolescente	Adolescente	PROPN	PROP|@P<	_	11	conj	_	_
+16	garante	garantir	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_
+17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	direito	direito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	_
+19	de	de	ADP	PRP|@N<	_	20	case	_	_
+20	escolas	escola	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
+21	a	a	ADP	PRP|@<PIV	_	24	case	_	_
+22	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	24	det	_	_
+23	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
+24	crianças	criança	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	16	obj	_	SpaceAfter=No
+25	»	»	PUNCT	PU|@PU	_	27	punct	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	_
+27	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+28	Márcia	Márcia	PROPN	_	_	27	nsubj	_	MWE=Márcia_Mendes|MWEPOS=PROPN
+29	Mendes	Mendes	PROPN	_	_	28	flat	_	SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+31	presidente	presidente	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	28	nmod	_	_
 32-33	da	_	_	_	_	_	_	_	_
-32	de	de	ADP	prp|<sam->	AdpType=Prep	34	case	_	_
-33	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
-34	Associaçãos	Associaçãos	PROPN	prop|F|S	_	31	nmod	_	MWE=Associaçãos_dos_Pais_de_Alunos|MWEPOS=PROPN
+32	de	de	ADP	<sam->|PRP|@N<	_	34	case	_	_
+33	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
+34	Associaçãos	Associaçãos	PROPN	PROP|F|S|@P<	_	31	nmod	_	MWE=Associaçãos_dos_Pais_de_Alunos|MWEPOS=PROPN
 35-36	dos	_	_	_	_	_	_	_	_
-35	de	de	ADP	prp|<sam->	AdpType=Prep	37	case	_	_
-36	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_
-37	Pais	Pais	PROPN	PROPN	_	34	name	_	_
-38	de	de	ADP	ADP	AdpType=Prep	39	case	_	_
-39	Alunos	Alunos	PROPN	PROPN	_	34	name	_	_
+35	de	de	ADP	<sam->|PRP|@N<	_	37	case	_	_
+36	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	37	det	_	_
+37	Pais	Pais	PROPN	PROP|@P<	_	34	flat	_	_
+38	de	de	ADP	PRP|@N<	_	39	case	_	_
+39	Alunos	Alunos	PROPN	PROP|@P<	_	34	flat	_	_
 40-41	do	_	_	_	_	_	_	_	_
-40	de	de	ADP	prp|<sam->	AdpType=Prep	42	case	_	_
-41	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
-42	Pitágoras	Pitágoras	PROPN	prop|M|S	Gender=Masc|Number=Sing	34	nmod	_	_
-43	,	,	PUNCT	punc	_	42	punct	_	_
-44	um	um	DET	pron-det|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing	42	det	_	_
+40	de	de	ADP	<sam->|PRP|@N<	_	42	case	_	_
+41	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
+42	Pitágoras	Pitágoras	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	34	nmod	_	SpaceAfter=No
+43	,	,	PUNCT	PU|@PU	_	42	punct	_	_
+44	um	um	DET	DET|M|S|@N<PRED	Definite=Ind|Gender=Masc|Number=Sing	42	det	_	_
 45-46	dos	_	_	_	_	_	_	_	_
-45	de	de	ADP	prp|<sam->	AdpType=Prep	48	case	_	_
-46	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	48	det	_	_
-47	seis	seis	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	48	nummod	_	_
-48	colégios	colégio	NOUN	n|M|P	Gender=Masc|Number=Plur	42	nmod	_	_
-49	acusados	acusar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	48	acl	_	_
-50	de	de	ADP	prp	AdpType=Prep	51	mark	_	_
-51	recusar	recusar	VERB	v-inf	VerbForm=Inf	49	xcomp	_	_
-52	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	53	det	_	_
-53	matrículas	matrícula	NOUN	n|F|P	Gender=Fem|Number=Plur	51	dobj	_	_
-54	.	.	PUNCT	punc	_	27	punct	_	_
+45	de	de	ADP	<sam->|PRP|@N<	_	48	case	_	_
+46	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	48	det	_	_
+47	seis	seis	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	48	nummod	_	_
+48	colégios	colégio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	42	nmod	_	_
+49	acusados	acusar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	48	acl	_	_
+50	de	de	ADP	PRP|@<PIV	_	51	mark	_	_
+51	recusar	recusar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	49	xcomp	_	_
+52	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	53	det	_	_
+53	matrículas	matrícula	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	51	obj	_	SpaceAfter=No
+54	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 

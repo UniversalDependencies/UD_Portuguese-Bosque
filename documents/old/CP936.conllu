@@ -1,101 +1,105 @@
-# distance_from_new = 0
-# new_sent_id = CP936-1
-# sent_id = pt-ud-train.conllu#s4814/pt
-# orig_file_sentence = 049#14
-1	Temos	ter	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	exemplo	exemplo	NOUN	n|M|S	Gender=Masc|Number=Sing	1	dobj	_	_
-4	logo	logo	ADV	adv|<kc>	_	5	advmod	_	_
-5	aqui	aqui	ADV	adv	_	1	advmod	_	_
+# text = Temos um exemplo logo aqui ao lado na nossa vizinha Espanha, onde os jogadores recebem bem, mas jogam futebol.
+# forest 1
+# source CETEMPúblico n=936 sec=opi sem=96b
+# sent_id = CP936-1
+# id 4816
+1	Temos	ter	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	exemplo	exemplo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
+4	logo	logo	ADV	<kc>|ADV|@>A	_	5	advmod	_	_
+5	aqui	aqui	ADV	ADV|@<ADVL	_	1	advmod	_	_
 6-7	ao	_	_	_	_	_	_	_	_
-6	a	a	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	lado	lado	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
+6	a	a	ADP	<sam->|PRP|@A<	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	lado	lado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	_
 9-10	na	_	_	_	_	_	_	_	_
-9	em	em	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-11	nossa	nosso	DET	pron-det|<poss|1P>|F|S	Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	13	det	_	_
-12	vizinha	vizinho	ADJ	adj|F|S	Gender=Fem|Number=Sing	13	amod	_	_
-13	Espanha	Espanha	PROPN	prop|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-14	,	,	PUNCT	punc	_	13	punct	_	_
-15	onde	onde	ADV	adv|<rel>|<ks>	PronType=Rel	18	advmod	_	_
-16	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
-17	jogadores	jogador	NOUN	n|M|P	Gender=Masc|Number=Plur	18	nsubj	_	_
-18	recebem	receber	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl	_	_
-19	bem	bem	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	18	advmod	_	_
-20	,	,	PUNCT	punc	_	18	punct	_	_
-21	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	18	cc	_	_
-22	jogam	jogar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
-23	futebol	futebol	NOUN	n|M|S	Gender=Masc|Number=Sing	22	dobj	_	_
-24	.	.	PUNCT	punc	_	1	punct	_	_
+9	em	em	ADP	<sam->|PRP|@<ADVL	_	13	case	_	_
+10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+11	nossa	nosso	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	13	det	_	_
+12	vizinha	vizinho	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	13	amod	_	_
+13	Espanha	Espanha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+15	onde	onde	ADV	<ks>|<rel>|ADV|@ADVL>	PronType=Rel	18	advmod	_	_
+16	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	jogadores	jogador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	18	nsubj	_	_
+18	recebem	receber	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl	_	_
+19	bem	bem	ADV	<quant>|ADV|@<ADVL	NumType=Card|PronType=Ind,Neg,Tot	18	advmod	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+21	mas	mas	CCONJ	<co-n<pred>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	_
+22	jogam	jogar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
+23	futebol	futebol	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	obj	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP936-2
-# sent_id = pt-ud-train.conllu#s4815/pt
-# orig_file_sentence = 049#15
-1	Como	como	ADV	adv|<interr>	PronType=Int	3	advmod	_	_
-2	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
-3	bonito	bonito	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
-4	ver	ver	VERB	v-inf	VerbForm=Inf	3	csubj	_	_
-5	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-6	estádios	estádio	NOUN	n|M|P	Gender=Masc|Number=Plur	4	iobj	_	_
-7	cheios	cheio	ADJ	adj|M|P	Gender=Masc|Number=Plur	4	xcomp	_	_
-8	e	e	CONJ	conj-c	_	4	cc	_	_
-9	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
-10	espectadores	espectador	NOUN	n|M|P	Gender=Masc|Number=Plur	11	nsubj	_	_
-11	verem	ver	VERB	v-inf|3P	Number=Plur|Person=3|VerbForm=Inf	4	conj	_	_
-12	bom	bom	ADJ	adj|M|S	Gender=Masc|Number=Sing	13	amod	_	_
-13	futebol	futebol	NOUN	n|M|S	Gender=Masc|Number=Sing	11	dobj	_	_
-14	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Como é bonito ver os estádios cheios e os espectadores verem bom futebol.
+# forest 1
+# source CETEMPúblico n=936 sec=opi sem=96b
+# sent_id = CP936-2
+# id 4817
+1	Como	como	ADV	<interr>|ADV|@ADVL>	PronType=Int	3	advmod	_	_
+2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	bonito	bonito	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+4	ver	ver	VERB	<mv>|<first-cjt>|V|INF|@ICL-<SUBJ	VerbForm=Inf	3	csubj	_	_
+5	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	estádios	estádio	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	iobj	_	_
+7	cheios	cheio	ADJ	ADJ|M|P|@<OC	Gender=Masc|Number=Plur	4	xcomp	_	_
+8	e	e	CCONJ	<co-icl>|KC|@CO	_	11	cc	_	_
+9	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	espectadores	espectador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	11	nsubj	_	_
+11	verem	ver	VERB	<cjt>|<mv>|V|INF|3P|@ICL-<SUBJ	Number=Plur|Person=3|VerbForm=Inf	4	conj	_	_
+12	bom	bom	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	13	amod	_	_
+13	futebol	futebol	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP936-3
-# sent_id = pt-ud-train.conllu#s4816/pt
-# orig_file_sentence = 049#16
-1	Cá	cá	ADV	adv	_	7	advmod	_	_
-2	em	em	ADP	prp	AdpType=Prep	3	case	_	_
-3	Portugal	Portugal	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-4	,	,	PUNCT	punc	_	7	punct	_	_
-5	o	o	DET	pron-indp|<interr>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	dobj	_	MWE=o_que|MWEPOS=PRON
-6	que	que	SCONJ	SCONJ	_	5	compound	_	_
-7	vemos	ver	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-8	?	?	PUNCT	punc	_	7	punct	_	_
+# text = Cá em Portugal, o que vemos?
+# forest 1
+# source CETEMPúblico n=936 sec=opi sem=96b
+# sent_id = CP936-3
+# id 4818
+1	Cá	cá	ADV	ADV|@ADVL>	_	7	advmod	_	_
+2	em	em	ADP	PRP|@A<	_	3	case	_	_
+3	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+5	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	7	obj	_	MWE=o_que|MWEPOS=PRON
+6	que	que	SCONJ	<interr>|INDP|M|S|@ACC>	_	5	compound	_	_
+7	vemos	ver	VERB	<mv>|V|PR|1P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	?	?	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP936-4
-# sent_id = pt-ud-train.conllu#s4817/pt
-# orig_file_sentence = 049#17
-1	Fraudes	fraude	NOUN	n|F|P	Gender=Fem|Number=Plur	0	root	_	_
-2	,	,	PUNCT	punc	_	1	punct	_	_
-3	mortes	morte	NOUN	n|F|P	Gender=Fem|Number=Plur	1	conj	_	_
+# text = Fraudes, mortes nos campos de futebol, árbitros que são tendenciosos a favor de quem querem e outras coisas mais que só trazem vergonha ao nosso futebol.
+# forest 1
+# source CETEMPúblico n=936 sec=opi sem=96b &E
+# sent_id = CP936-4
+# id 4819
+1	Fraudes	fraude	NOUN	<first-cjt>|<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+3	mortes	morte	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	1	conj	_	_
 4-5	nos	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-6	campos	campo	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	futebol	futebol	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-9	,	,	PUNCT	punc	_	1	punct	_	_
-10	árbitros	árbitro	NOUN	n|M|P	Gender=Masc|Number=Plur	1	conj	_	_
-11	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	13	nsubj	_	_
-12	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
-13	tendenciosos	tendencioso	ADJ	adj|M|P	Gender=Masc|Number=Plur	10	acl	_	_
-14	a	a	ADP	prp	AdpType=Prep	17	case	_	MWE=a_favor_de|MWEPOS=ADP
-15	favor	favor	NOUN	NOUN	_	14	mwe	_	_
-16	de	de	ADP	ADP	AdpType=Prep	14	mwe	_	_
-17	quem	quem	PRON	pron-indp|<rel>|M/F|P	Number=Plur|PronType=Rel	13	advcl	_	_
-18	querem	querer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
-19	e	e	CONJ	conj-c	_	1	cc	_	_
-20	outras	outro	DET	pron-det|<diff>|<KOMP>|F|P	Degree=Cmp|Gender=Fem|Number=Plur	21	det	_	_
-21	coisas	coisa	NOUN	n|F|P	Gender=Fem|Number=Plur	1	conj	_	_
-22	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	21	advmod	_	_
-23	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	25	nsubj	_	_
-24	só	só	ADV	adv	_	25	advmod	_	_
-25	trazem	trazer	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	acl	_	_
-26	vergonha	vergonha	NOUN	n|F|S	Gender=Fem|Number=Sing	25	dobj	_	_
+4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	campos	campo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	futebol	futebol	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+10	árbitros	árbitro	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	3	orphan	_	_
+11	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	13	nsubj	_	_
+12	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
+13	tendenciosos	tendencioso	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	10	acl	_	_
+14	a	a	ADP	PRP|@A<ARG	_	17	case	_	MWE=a_favor_de|MWEPOS=ADP
+15	favor	favor	NOUN	N|@P<	_	14	fixed	_	_
+16	de	de	ADP	PRP|@N<	_	14	fixed	_	_
+17	quem	quem	PRON	<rel>|INDP|M/F|P|@SC>	Number=Plur|PronType=Rel	13	advcl	_	_
+18	querem	querer	AUX	<mv>|V|PR|3P|IND|@FS-P<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
+19	e	e	CCONJ	KC|@CO	_	3	cc	_	_
+20	outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Degree=Cmp|Gender=Fem|Number=Plur	21	det	_	_
+21	coisas	coisa	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	3	orphan	_	_
+22	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@N<	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	21	advmod	_	_
+23	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	25	nsubj	_	_
+24	só	só	ADV	ADV|@ADVL>	_	25	advmod	_	_
+25	trazem	trazer	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	acl	_	_
+26	vergonha	vergonha	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	25	obj	_	_
 27-28	ao	_	_	_	_	_	_	_	_
-27	a	a	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-29	nosso	nosso	DET	pron-det|<poss|1P>|M|S	Gender=Masc|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	30	det	_	_
-30	futebol	futebol	NOUN	n|M|S	Gender=Masc|Number=Sing	25	dobj	_	_
-31	.	.	PUNCT	punc	_	1	punct	_	_
+27	a	a	ADP	<sam->|PRP|@<PIV	_	30	case	_	_
+28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+29	nosso	nosso	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	30	det	_	_
+30	futebol	futebol	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	25	obj	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

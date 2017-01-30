@@ -1,87 +1,91 @@
-# distance_from_new = 2
-# new_sent_id = CF748-1
-# sent_id = pt-ud-train.conllu#s8176/pt
-# orig_file_sentence = 082#76
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	técnico	técnico	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
+# text = O técnico irritou-se com uma pergunta e não a respondeu.
+# forest 1
+# source CETENFolha n=748 cad=Esporte sec=des sem=94a
+# sent_id = CF748-1
+# id 3134
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	técnico	técnico	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3-4	irritou-se	_	_	_	_	_	_	_	_
 3	irritou	irritar	VERB	v-fin|<hyfen>|PS|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	dobj	_	_
-5	com	com	ADP	prp	AdpType=Prep	7	case	_	_
-6	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	pergunta	pergunta	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-8	e	e	CONJ	conj-c	_	3	cc	_	_
-9	não	não	ADV	adv	_	11	neg	_	_
-10	a	ela	PRON	pron-pers|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	dobj	_	_
-11	respondeu	responder	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
-12	.	.	PUNCT	punc	_	3	punct	_	_
+4	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
+5	com	com	ADP	PRP|@<ADVL	_	7	case	_	_
+6	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	pergunta	pergunta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
+8	e	e	CCONJ	<co-sta>|KC|@CO	_	11	cc	_	_
+9	não	não	ADV	_	Polarity=Neg	11	advmod	_	_
+10	a	ela	PRON	PERS|F|3S|ACC|@ACC>	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
+11	respondeu	responder	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF748-3
-# sent_id = pt-ud-train.conllu#s8177/pt
-# orig_file_sentence = 082#77
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	pergunta	pergunta	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-3	:	:	PUNCT	punc	_	2	punct	_	_
-4	«	«	PUNCT	punc	_	13	punct	_	_
-5	Se	se	SCONJ	conj-s	_	8	mark	_	_
-6	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	8	nsubj	_	_
-8	repetir	repetir	VERB	v-fin|FUT|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	advcl	_	_
-9	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	atuação	atuação	NOUN	n|F|S	Gender=Fem|Number=Sing	8	dobj	_	_
-11	de	de	ADP	prp	AdpType=Prep	12	case	_	_
-12	hoje	hoje	ADV	adv	_	10	advmod	_	_
-13	conseguirá	conseguir	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	parataxis	_	_
-14	vencer	vencer	VERB	v-inf	VerbForm=Inf	13	xcomp	_	_
-15	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	Holanda	Holanda	PROPN	prop|F|S	Gender=Fem|Number=Sing	14	dobj	_	_
+# text = A pergunta: «Se o Brasil repetir a atuação de hoje conseguirá vencer a Holanda na terceira fase (quartas-de-final)?»
+# forest 1
+# source CETENFolha n=748 cad=Esporte sec=des sem=94a
+# sent_id = CF748-3
+# id 3135
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	pergunta	pergunta	NOUN	<np-def>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	PU|@PU	_	2	punct	_	_
+4	«	«	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
+5	Se	se	SCONJ	KS|@SUB	_	8	mark	_	_
+6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Brasil	Brasil	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
+8	repetir	repetir	VERB	<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	advcl	_	_
+9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	atuação	atuação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
+11	de	de	ADP	PRP|@N<ARG	_	12	case	_	_
+12	hoje	hoje	ADV	ADV|@P<	_	10	advmod	_	_
+13	conseguirá	conseguir	VERB	<mv>|V|FUT|3S|IND|@FS-UTT	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	parataxis	_	_
+14	vencer	vencer	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	13	xcomp	_	_
+15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Holanda	Holanda	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
 17-18	na	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-18	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-19	terceira	terceiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	20	amod	_	_
-20	fase	fase	NOUN	n|F|S	Gender=Fem|Number=Sing	14	nmod	_	_
-21	(	(	PUNCT	punc	_	20	punct	_	_
-22	quartas-de-final	quartas-de-final	NOUN	n|F|P	Gender=Fem|Number=Plur	20	nmod	_	_
-23	)	)	PUNCT	punc	_	20	punct	_	_
-24	?	?	PUNCT	punc	_	13	punct	_	_
-25	»	»	PUNCT	punc	_	13	punct	_	_
+17	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
+18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+19	terceira	terceiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	20	amod	_	_
+20	fase	fase	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obl	_	_
+21	(	(	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+22	quartas-de-final	quartas-de-final	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	20	nmod	_	SpaceAfter=No
+23	)	)	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
+24	?	?	PUNCT	PU|@PU	_	13	punct	_	SpaceAfter=No
+25	»	»	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF748-4
-# sent_id = pt-ud-train.conllu#s8178/pt
-# orig_file_sentence = 082#78
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	«	«	PUNCT	punc	_	5	punct	_	_
-4	nunca	nunca	ADV	adv	_	5	advmod	_	_
-5	esteve	estar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	em	em	ADP	prp	AdpType=Prep	7	case	_	_
-7	apuros	apuro	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-8	»	»	PUNCT	punc	_	5	punct	_	_
-9	,	,	PUNCT	punc	_	5	punct	_	_
-10	segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	12	case	_	_
-11	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	técnico	técnico	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-13	.	.	PUNCT	punc	_	5	punct	_	_
+# text = O Brasil «nunca esteve em apuros», segundo o técnico.
+# forest 1
+# source CETENFolha n=748 cad=Esporte sec=des sem=94a
+# sent_id = CF748-4
+# id 3136
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Brasil	Brasil	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	«	«	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+4	nunca	nunca	ADV	ADV|@ADVL>	_	5	advmod	_	_
+5	esteve	estar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	em	em	ADP	PRP|@<SA	_	7	case	_	_
+7	apuros	apuro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obl	_	SpaceAfter=No
+8	»	»	PUNCT	PU|@PU	_	5	punct	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+10	segundo	segundo	ADP	PRP|@<ADVL	PronType=Rel	12	case	_	_
+11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	técnico	técnico	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF748-5
-# sent_id = pt-ud-train.conllu#s8179/pt
-# orig_file_sentence = 082#79
-1	«	«	PUNCT	punc	_	10	punct	_	_
-2	Quem	quem	PRON	pron-indp|<rel>|M/F|S	Number=Sing|PronType=Rel	3	nsubj	_	_
-3	tiver	ter	VERB	v-fin|FUT|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	csubj	_	_
-4	qualquer	qualquer	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
-5	dúvida	dúvida	NOUN	n|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-6	sobre	sobre	ADP	prp	AdpType=Prep	8	case	_	_
-7	nossa	nosso	DET	pron-det|<poss|1P>|F|S	Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	8	det	_	_
-8	atuação	atuação	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-9	,	,	PUNCT	punc	_	10	punct	_	_
-10	basta	bastar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-11	ver	ver	VERB	v-inf	VerbForm=Inf	10	csubj	_	_
-12	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	teipe	teipe	NOUN	n|M|S	Gender=Masc|Number=Sing	11	dobj	_	_
-14	.	.	PUNCT	punc	_	10	punct	_	_
-15	»	»	PUNCT	punc	_	10	punct	_	_
+# text = «Quem tiver qualquer dúvida sobre nossa atuação, basta ver o teipe.»
+# forest 1
+# source CETENFolha n=748 cad=Esporte sec=des sem=94a
+# sent_id = CF748-5
+# id 3137
+1	«	«	PUNCT	PU|@PU	_	10	punct	_	SpaceAfter=No
+2	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Number=Sing|PronType=Rel	3	nsubj	_	_
+3	tiver	ter	VERB	<mv>|V|FUT|3S|SUBJ|@FS-SUBJ>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	csubj	_	_
+4	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
+5	dúvida	dúvida	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
+6	sobre	sobre	ADP	PRP|@N<	_	8	case	_	_
+7	nossa	nosso	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	8	det	_	_
+8	atuação	atuação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+10	basta	bastar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	ver	ver	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	10	csubj	_	_
+12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	teipe	teipe	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	SpaceAfter=No
+14	.	.	PUNCT	PU|@PU	_	10	punct	_	SpaceAfter=No
+15	»	»	PUNCT	PU|@PU	_	10	punct	_	_
 

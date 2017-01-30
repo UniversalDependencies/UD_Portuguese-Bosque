@@ -1,119 +1,122 @@
-# distance_from_new = 0
-# new_sent_id = CF60-1
-# sent_id = pt-ud-train.conllu#s5270/pt
-# orig_file_sentence = 053#70
-1	Em	em	ADP	prp	AdpType=Prep	4	case	_	_
-2	todo	todo	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	4	det	_	_
-3	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	shopping	shopping	NOUN	n|M|S	Gender=Masc|Number=Sing	19	nmod	_	_
-5	,	,	PUNCT	punc	_	4	punct	_	_
-6	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
-7	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-8	decorado	decorar	VERB	v-pcp|<n>|M|S	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	_	_
-9	com	com	ADP	prp	AdpType=Prep	10	case	_	_
-10	lanternas	lanterna	NOUN	n|F|P	Gender=Fem|Number=Plur	8	nmod	_	_
-11	,	,	PUNCT	punc	_	10	punct	_	_
-12	leques	leque	NOUN	n|M|P	Gender=Masc|Number=Plur	10	conj	_	_
-13	e	e	CONJ	conj-c|<co-sc>	_	10	cc	_	_
-14	até	até	ADV	adv	_	16	advmod	_	_
-15	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	portal	portal	NOUN	n|M|S	Gender=Masc|Number=Sing	10	conj	_	_
-17	japonês	japonês	ADJ	adj|M|S	Gender=Masc|Number=Sing	16	amod	_	_
-18	,	,	PUNCT	punc	_	19	punct	_	_
-19	há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-20	exposições	exposição	NOUN	n|F|P	Gender=Fem|Number=Plur	19	dobj	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	iquebana	iquebana	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-23	(	(	PUNCT	punc	_	22	punct	_	_
-24	arranjos	arranjo	NOUN	n|M|P	Gender=Masc|Number=Plur	22	nmod	_	_
-25	florais	floral	ADJ	adj|M|P	Gender=Masc|Number=Plur	24	amod	_	_
-26	)	)	PUNCT	punc	_	24	punct	_	_
-27	,	,	PUNCT	punc	_	22	punct	_	_
-28	bonecas	boneca	NOUN	n|F|P	Gender=Fem|Number=Plur	22	conj	_	_
-29	,	,	PUNCT	punc	_	22	punct	_	_
-30	cerâmicas	cerâmica	NOUN	n|F|P	Gender=Fem|Number=Plur	22	conj	_	_
-31	,	,	PUNCT	punc	_	22	punct	_	_
-32	armaduras	armadura	NOUN	n|F|P	Gender=Fem|Number=Plur	22	conj	_	_
-33	,	,	PUNCT	punc	_	22	punct	_	_
-34	máscaras	máscara	NOUN	n|F|P	Gender=Fem|Number=Plur	22	conj	_	_
-35	,	,	PUNCT	punc	_	22	punct	_	_
-36	quimonos	quimono	NOUN	n|M|P	Gender=Masc|Number=Plur	22	conj	_	_
-37	e	e	CONJ	conj-c	_	22	cc	_	_
-38	espadas	espada	NOUN	n|F|P	Gender=Fem|Number=Plur	22	conj	_	_
-39	.	.	PUNCT	punc	_	19	punct	_	_
+# text = Em todo o shopping, que está decorado com lanternas, leques e até um portal japonês, há exposições de iquebana (arranjos florais), bonecas, cerâmicas, armaduras, máscaras, quimonos e espadas.
+# forest 1
+# source CETENFolha n=60 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF60-1
+# id 228
+1	Em	em	ADP	PRP|@ADVL>	_	4	case	_	_
+2	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	4	det	_	_
+3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	shopping	shopping	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+6	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
+7	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	decorado	decorar	VERB	<mv>|<n>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	_	_
+9	com	com	ADP	PRP|@<ADVL	_	10	case	_	_
+10	lanternas	lanterna	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	obl	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+12	leques	leque	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	conj	_	_
+13	e	e	CCONJ	<co-sc>|KC|@CO	_	16	cc	_	_
+14	até	até	ADV	ADV|@>N	_	16	advmod	_	_
+15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	portal	portal	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	conj	_	_
+17	japonês	japonês	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	16	amod	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+19	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+20	exposições	exposição	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	19	obj	_	_
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	iquebana	iquebana	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
+23	(	(	PUNCT	PU|@PU	_	28	punct	_	SpaceAfter=No
+24	arranjos	arranjo	NOUN	<first-cjt>|<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	22	nmod	_	_
+25	florais	floral	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	24	amod	_	SpaceAfter=No
+26	)	)	PUNCT	PU|@PU	_	24	punct	_	SpaceAfter=No
+27	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+28	bonecas	boneca	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	conj	_	SpaceAfter=No
+29	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+30	cerâmicas	cerâmica	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	conj	_	SpaceAfter=No
+31	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+32	armaduras	armadura	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	conj	_	SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+34	máscaras	máscara	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	conj	_	SpaceAfter=No
+35	,	,	PUNCT	PU|@PU	_	36	punct	_	_
+36	quimonos	quimono	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	conj	_	_
+37	e	e	CCONJ	<co-prparg>|KC|@CO	_	38	cc	_	_
+38	espadas	espada	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	conj	_	SpaceAfter=No
+39	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF60-2
-# sent_id = pt-ud-train.conllu#s5271/pt
-# orig_file_sentence = 053#71
+# text = Noutro espaço, há exibição de vídeos que demonstram, por exemplo, a cerimônia do chá e o teatro kabuki, além de pontos turísticos do Japão.
+# forest 1
+# source CETENFolha n=60 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF60-2
+# id 229
 1-2	Noutro	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp	AdpType=Prep	3	case	_	_
-2	outro	outro	DET	pron-det|<diff>|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing	3	det	_	_
-3	espaço	espaço	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-4	,	,	PUNCT	punc	_	5	punct	_	_
-5	há	haver	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	exibição	exibição	NOUN	n|F|S	Gender=Fem|Number=Sing	25	dobj	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	vídeos	vídeo	NOUN	n|M|P	Gender=Masc|Number=Plur	6	nmod	_	_
-9	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
-10	demonstram	demonstrar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	_
-11	,	,	PUNCT	punc	_	10	punct	_	_
-12	por	por	ADP	adv	AdpType=Prep	10	advmod	_	MWE=por_exemplo|MWEPOS=ADV
-13	exemplo	exemplo	NOUN	NOUN	_	12	mwe	_	_
-14	,	,	PUNCT	punc	_	10	punct	_	_
-15	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	cerimônia	cerimônia	NOUN	n|F|S	Gender=Fem|Number=Sing	10	dobj	_	_
+1	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
+2	outro	outro	DET	<diff>|<KOMP>|DET|M|S|@>N	Degree=Cmp|Gender=Masc|Number=Sing	3	det	_	_
+3	espaço	espaço	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+5	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	exibição	exibição	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	25	obj	_	_
+7	de	de	ADP	PRP|@N<ARG	_	8	case	_	_
+8	vídeos	vídeo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	_
+9	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
+10	demonstram	demonstrar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+12	por	por	ADP	PRP|@<ADVL	_	10	advmod	_	MWE=por_exemplo|MWEPOS=ADV
+13	exemplo	exemplo	NOUN	N|M|S|@P<	_	12	fixed	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	cerimônia	cerimônia	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
 17-18	do	_	_	_	_	_	_	_	_
-17	de	de	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	chá	chá	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-20	e	e	CONJ	conj-c|<co-acc>	_	16	cc	_	_
-21	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	teatro	teatro	NOUN	n|M|S	Gender=Masc|Number=Sing	16	conj	_	_
-23	kabuki	kabuki	ADJ	adj|M|S	Gender=Masc|Number=Sing	22	amod	_	_
-24	,	,	PUNCT	punc	_	25	punct	_	_
-25	além	além	ADV	prp|<kc>|<co-acc>	AdpType=Prep	5	cc	_	MWE=além_de|MWEPOS=ADP
-26	de	de	ADP	ADP	AdpType=Prep	25	mwe	_	_
-27	pontos	ponto	NOUN	n|M|P	Gender=Masc|Number=Plur	25	dobj	_	_
-28	turísticos	turístico	ADJ	adj|M|P	Gender=Masc|Number=Plur	27	amod	_	_
+17	de	de	ADP	<sam->|PRP|@N<	_	19	case	_	_
+18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	chá	chá	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
+20	e	e	CCONJ	<co-acc>|KC|@CO	_	22	cc	_	_
+21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	teatro	teatro	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	conj	_	_
+23	kabuki	kabuki	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	22	amod	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+25	além	além	ADV	ADV|@CO	_	5	cc	_	MWE=além_de|MWEPOS=ADP
+26	de	de	ADP	PRP|@A<	_	25	fixed	_	_
+27	pontos	ponto	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	25	obj	_	_
+28	turísticos	turístico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	27	amod	_	_
 29-30	do	_	_	_	_	_	_	_	_
-29	de	de	ADP	prp|<sam->	AdpType=Prep	31	case	_	_
-30	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
-31	Japão	Japão	PROPN	prop|M|S	Gender=Masc|Number=Sing	27	nmod	_	_
-32	.	.	PUNCT	punc	_	5	punct	_	_
+29	de	de	ADP	<sam->|PRP|@N<	_	31	case	_	_
+30	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	Japão	Japão	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF60-3
-# sent_id = pt-ud-train.conllu#s5272/pt
-# orig_file_sentence = 053#72
-1	Próximo	próximo	ADJ	prp|<sam->	AdpType=Prep	4	case	_	MWE=Próximo_a|MWEPOS=ADP
+# text = Próximo à praça da alimentação, um sushiman estará preparando pratos típicos, como sashimis e o sushis, que estarão à venda.
+# forest 1
+# source CETENFolha n=60 cad=Cotidiano sec=soc sem=94b
+# sent_id = CF60-3
+# id 230
+1	Próximo	próximo	ADJ	ADV|@ADVL>	_	4	case	_	MWE=Próximo_a|MWEPOS=ADP
 2-3	à	_	_	_	_	_	_	_	_
-2	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	1	mwe	_	_
-3	a	o	DET	art|<artd>|<-sam>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	praça	praça	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
+2	a	a	DET	PRP|@A<	Gender=Fem|Number=Sing|PronType=Art	1	fixed	_	_
+3	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	praça	praça	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
 5-6	da	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	alimentação	alimentação	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-8	,	,	PUNCT	punc	_	12	punct	_	_
-9	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	sushiman	sushiman	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nsubj	_	_
-11	estará	estar	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux	_	_
-12	preparando	preparar	VERB	v-ger	VerbForm=Ger	0	root	_	_
-13	pratos	prato	NOUN	n|M|P	Gender=Masc|Number=Plur	12	dobj	_	_
-14	típicos	típico	ADJ	adj|M|P	Gender=Masc|Number=Plur	13	amod	_	_
-15	,	,	PUNCT	punc	_	12	punct	_	_
-16	como	como	ADV	adv|<rel>|<prp>	PronType=Rel	17	mark	_	_
-17	sashimis	sashimi	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nmod	_	_
-18	e	e	CONJ	conj-c	_	17	cc	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	sushis	sushi	NOUN	n|M|P	Gender=Masc|Number=Plur	17	conj	_	_
-21	,	,	PUNCT	punc	_	20	punct	_	_
-22	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	23	nsubj	_	_
-23	estarão	estar	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	20	acl	_	_
+5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	alimentação	alimentação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	sushiman	sushiman	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
+11	estará	estar	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+12	preparando	preparar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	11	ccomp	_	_
+13	pratos	prato	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	obj	_	_
+14	típicos	típico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+16	como	como	ADV	<com>|PRP|@N<PRED	PronType=Rel	17	mark	_	_
+17	sashimis	sashimi	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	obl	_	_
+18	e	e	CCONJ	KC|@CO	_	20	cc	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	sushis	sushi	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	conj	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+22	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	23	nsubj	_	_
+23	estarão	estar	VERB	<mv>|V|FUT|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	20	acl	_	_
 24-25	à	_	_	_	_	_	_	_	_
-24	a	a	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	venda	venda	NOUN	n|F|S	Gender=Fem|Number=Sing	23	nmod	_	_
-27	.	.	PUNCT	punc	_	12	punct	_	_
+24	a	a	ADP	<sam->|PRP|@<SC	_	26	case	_	_
+25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	venda	venda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 

@@ -1,109 +1,112 @@
-# distance_from_new = 0
-# new_sent_id = CF718-1
-# sent_id = pt-ud-train.conllu#s8059/pt
-# orig_file_sentence = 081#59
-1	Esteve	estar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	ccomp	_	_
-2	assim	assim	ADV	adv|<kc>	_	1	advmod	_	_
-3	com	com	ADP	prp	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	astro	astro	NOUN	n|M|S	Gender=Masc|Number=Sing	1	dobj	_	_
+# text = Esteve assim com o astro da conferência, lorde Keynes «um sujeito sutil, bom expositor, muito persuasivo», conta Campos.
+# forest 1
+# source CETENFolha n=718 cad=Mundo sec=pol sem=94a
+# sent_id = CF718-1
+# id 3017
+1	Esteve	estar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	ccomp	_	_
+2	assim	assim	ADV	<kc>|ADV|@<ADVL	_	1	advmod	_	_
+3	com	com	ADP	PRP|@<PIV	_	5	case	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	astro	astro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obj	_	_
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	conferência	conferência	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-9	,	,	PUNCT	punc	_	5	punct	_	_
-10	lorde	lorde	NOUN	n|M|S	Gender=Masc|Number=Sing	5	appos	_	_
-11	Keynes	Keynes	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-12	«	«	PUNCT	punc	_	14	punct	_	_
-13	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	sujeito	sujeito	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-15	sutil	sutil	ADJ	adj|M|S	Gender=Masc|Number=Sing	14	amod	_	_
-16	,	,	PUNCT	punc	_	14	punct	_	_
-17	bom	bom	ADJ	adj|M|S	Gender=Masc|Number=Sing	18	amod	_	_
-18	expositor	expositor	NOUN	n|M|S	Gender=Masc|Number=Sing	14	conj	_	_
-19	,	,	PUNCT	punc	_	14	punct	_	_
-20	muito	muito	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	21	advmod	_	_
-21	persuasivo	persuasivo	ADJ	adj|M|S	Gender=Masc|Number=Sing	14	conj	_	_
-22	»	»	PUNCT	punc	_	14	punct	_	_
-23	,	,	PUNCT	punc	_	24	punct	_	_
-24	conta	contar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-25	Campos	Campos	PROPN	prop|M|S	Gender=Masc|Number=Sing	24	nsubj	_	_
-26	.	.	PUNCT	punc	_	24	punct	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	conferência	conferência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+10	lorde	lorde	NOUN	<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	5	appos	_	_
+11	Keynes	Keynes	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	10	nmod	_	_
+12	«	«	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	sujeito	sujeito	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	nmod	_	_
+15	sutil	sutil	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+17	bom	bom	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	18	amod	_	_
+18	expositor	expositor	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	14	conj	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+20	muito	muito	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	21	advmod	_	_
+21	persuasivo	persuasivo	ADJ	<cjt>|ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	14	conj	_	SpaceAfter=No
+22	»	»	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+24	conta	contar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+25	Campos	Campos	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	24	nsubj	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF718-2
-# sent_id = pt-ud-train.conllu#s8060/pt
-# orig_file_sentence = 081#60
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	delegação	delegação	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nsubj	_	_
-3	britânica	britânico	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
-4	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	0	root	_	_
-6	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	7	advmod	_	_
-7	forte	forte	ADJ	adj|F|S	Gender=Fem|Number=Sing	5	amod	_	_
-8	em	em	ADP	prp	AdpType=Prep	9	case	_	_
-9	termos	termo	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-10	intelectuais	intelectual	ADJ	adj|M|P	Gender=Masc|Number=Plur	9	amod	_	_
-11	,	,	PUNCT	punc	_	5	punct	_	_
-12	embora	embora	SCONJ	conj-s	_	15	mark	_	_
-13	outros	outro	DET	pron-det|<diff>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur	14	det	_	_
-14	participantes	participante	NOUN	n|M|P	Gender=Masc|Number=Plur	15	nsubj	_	_
-15	tivessem	ter	VERB	v-fin|IMPF|3P|SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	advcl	_	_
+# text = A delegação britânica era a mais forte em termos intelectuais, embora outros participantes tivessem dela uma opinião algo debochada.
+# forest 1
+# source CETENFolha n=718 cad=Mundo sec=pol sem=94a
+# sent_id = CF718-2
+# id 3018
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	delegação	delegação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	britânica	britânico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
+4	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	_	_
+5	a	o	DET	<artd>|ART|F|S|@<SC	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	0	root	_	_
+6	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	7	advmod	_	_
+7	forte	forte	ADJ	<COMP>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	_
+8	em	em	ADP	PRP|@<ADVL	_	9	case	_	_
+9	termos	termo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obl	_	_
+10	intelectuais	intelectual	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	9	amod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+12	embora	embora	SCONJ	KS|@SUB	_	15	mark	_	_
+13	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Degree=Cmp|Gender=Masc|Number=Plur	14	det	_	_
+14	participantes	participante	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	15	nsubj	_	_
+15	tivessem	ter	VERB	<mv>|V|IMPF|3P|SUBJ|@FS-<ADVL	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	advcl	_	_
 16-17	dela	_	_	_	_	_	_	_	_
-16	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-17	ela	ela	PRON	pron-pers|<-sam>|F|3S|NOM/PIV	Case=Acc,Nom|Gender=Fem|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	15	dobj	_	_
-18	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	opinião	opinião	NOUN	n|F|S	Gender=Fem|Number=Sing	15	dobj	_	_
-20	algo	algo	ADV	adv|<quant>|<det>	NumType=Card|PronType=Ind,Neg,Tot	21	advmod	_	_
-21	debochada	debochar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	19	acl	_	_
-22	.	.	PUNCT	punc	_	5	punct	_	_
+16	de	de	ADP	<sam->|PRP|@<PIV	_	17	case	_	_
+17	ela	ela	PRON	<-sam>|PERS|F|3S|NOM/PIV|@P<	Case=Acc,Nom|Gender=Fem|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	15	obj	_	_
+18	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	opinião	opinião	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
+20	algo	algo	ADV	<quant>|<det>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	21	advmod	_	_
+21	debochada	debochar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	19	acl	_	SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF718-3
-# sent_id = pt-ud-train.conllu#s8061/pt
-# orig_file_sentence = 081#61
-1	Corria	correr	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-2	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	piada	piada	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nsubj	_	_
-4	segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	5	case	_	_
-5	a	o	DET	pron-indp|<rel>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	nmod	_	MWE=a_qual|MWEPOS=PRON
-6	qual	qual	PRON	PRON	Gender=Fem|Number=Sing|PronType=Rel	5	compound	_	_
-7	Keynes	Keynes	PROPN	prop|M|S	Gender=Masc|Number=Sing	9	nsubj	_	_
-8	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	_	_
-9	inteligente	inteligente	ADJ	adj|M|S	Gender=Masc|Number=Sing	3	acl	_	_
-10	demais	demais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	9	advmod	_	_
-11	para	para	ADP	prp	AdpType=Prep	13	case	_	_
-12	ser	ser	VERB	v-inf	VerbForm=Inf	13	cop	_	_
-13	consistente	consistente	ADJ	adj|M|S	Gender=Masc|Number=Sing	9	advcl	_	_
-14	;	;	PUNCT	punc	_	1	punct	_	_
-15	Dennis	Dennis	PROPN	prop|M|S	_	22	nsubj	_	MWE=Dennis_Robertson|MWEPOS=PROPN
-16	Robertson	Robertson	PROPN	PROPN	_	15	name	_	_
-17	,	,	PUNCT	punc	_	15	punct	_	_
-18	outra	outro	DET	pron-det|<diff>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	19	det	_	_
-19	estrela	estrela	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-20	,	,	PUNCT	punc	_	15	punct	_	_
-21	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	cop	_	_
-22	consistente	consistente	ADJ	adj|M|S	Gender=Masc|Number=Sing	1	conj	_	_
-23	demais	demais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	22	advmod	_	_
-24	para	para	ADP	prp	AdpType=Prep	26	case	_	_
-25	ser	ser	VERB	v-inf	VerbForm=Inf	26	cop	_	_
-26	inteligente	inteligente	ADJ	adj|M|S	Gender=Masc|Number=Sing	22	advcl	_	_
-27	;	;	PUNCT	punc	_	1	punct	_	_
-28	e	e	CONJ	conj-c	_	1	cc	_	_
-29	Lionel	Lionel	PROPN	prop|M|S	_	41	nsubj	_	MWE=Lionel_Robbins|MWEPOS=PROPN
-30	Robbins	Robbins	PROPN	PROPN	_	29	name	_	_
-31	,	,	PUNCT	punc	_	29	punct	_	_
-32	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-33	terceiro	terceiro	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	34	amod	_	_
-34	nome	nome	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
-35	de	de	ADP	prp	AdpType=Prep	36	case	_	_
-36	prestígio	prestígio	NOUN	n|M|S	Gender=Masc|Number=Sing	34	nmod	_	_
-37	,	,	PUNCT	punc	_	29	punct	_	_
-38	não	não	ADV	adv	_	41	neg	_	_
-39	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	41	cop	_	_
-40	nem	nem	CONJ	conj-c|<co-sc>|<parkc-1>	_	41	cc	_	_
-41	inteligente	inteligente	ADJ	adj|M|S	Gender=Masc|Number=Sing	1	conj	_	_
-42	nem	nem	CONJ	conj-c|<co-sc>|<parkc-2>	_	41	cc	_	_
-43	consistente	consistente	ADJ	adj|M|S	Gender=Masc|Number=Sing	41	conj	_	_
-44	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Corria uma piada segundo a qual Keynes era inteligente demais para ser consistente; Dennis Robertson, outra estrela, era consistente demais para ser inteligente; e Lionel Robbins, o terceiro nome de prestígio, não era nem inteligente nem consistente.
+# forest 1
+# source CETENFolha n=718 cad=Mundo sec=pol sem=94a
+# sent_id = CF718-3
+# id 3019
+1	Corria	correr	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	piada	piada	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	1	nsubj	_	_
+4	segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	5	case	_	_
+5	a	o	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	9	obl	_	MWE=a_qual|MWEPOS=PRON
+6	qual	qual	PRON	DET|F|S|@P<	Gender=Fem|Number=Sing|PronType=Rel	5	compound	_	_
+7	Keynes	Keynes	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
+8	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	_	_
+9	inteligente	inteligente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	acl	_	_
+10	demais	demais	ADV	<quant>|ADV|@A<	NumType=Card|PronType=Ind,Neg,Tot	9	advmod	_	_
+11	para	para	ADP	PRP|@<SC	_	13	case	_	_
+12	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	cop	_	_
+13	consistente	consistente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	9	advcl	_	SpaceAfter=No
+14	;	;	PUNCT	PU|@PU	_	22	punct	_	_
+15	Dennis	Dennis	PROPN	_	_	22	nsubj	_	MWE=Dennis_Robertson|MWEPOS=PROPN
+16	Robertson	Robertson	PROPN	_	_	15	flat	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+18	outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	19	det	_	_
+19	estrela	estrela	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+21	era	ser	AUX	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	cop	_	_
+22	consistente	consistente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	1	conj	_	_
+23	demais	demais	ADV	<quant>|ADV|@A<	NumType=Card|PronType=Ind,Neg,Tot	22	advmod	_	_
+24	para	para	ADP	PRP|@<SC	_	26	case	_	_
+25	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	26	cop	_	_
+26	inteligente	inteligente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	22	advcl	_	SpaceAfter=No
+27	;	;	PUNCT	PU|@PU	_	41	punct	_	_
+28	e	e	CCONJ	<co-fcl>|KC|@CO	_	41	cc	_	_
+29	Lionel	Lionel	PROPN	_	_	41	nsubj	_	MWE=Lionel_Robbins|MWEPOS=PROPN
+30	Robbins	Robbins	PROPN	_	_	29	flat	_	SpaceAfter=No
+31	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+33	terceiro	terceiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	34	amod	_	_
+34	nome	nome	NOUN	<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	29	nmod	_	_
+35	de	de	ADP	PRP|@N<ARG	_	36	case	_	_
+36	prestígio	prestígio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	nmod	_	SpaceAfter=No
+37	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+38	não	não	ADV	_	Polarity=Neg	41	advmod	_	_
+39	era	ser	AUX	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	41	cop	_	_
+40	nem	nem	CCONJ	<co-sc>|<parkc-1>|KC|@CO	_	41	cc	_	_
+41	inteligente	inteligente	ADJ	<first-cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	1	conj	_	_
+42	nem	nem	CCONJ	<parkc-2>|KC|@CO	_	43	cc	_	_
+43	consistente	consistente	ADJ	<cjt>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	41	conj	_	SpaceAfter=No
+44	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

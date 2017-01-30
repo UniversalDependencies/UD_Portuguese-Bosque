@@ -1,62 +1,65 @@
-# distance_from_new = 0
-# new_sent_id = CF187-1
-# sent_id = pt-ud-train.conllu#s5835/pt
-# orig_file_sentence = 059#35
-1	Caldeirão	caldeirão	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Caldeirão
+# forest 1
+# source CETENFolha n=187 cad=Mais! sec=nd sem=94a
+# sent_id = CF187-1
+# id 793
+1	Caldeirão	caldeirão	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF187-2
-# sent_id = pt-ud-train.conllu#s5836/pt
-# orig_file_sentence = 059#36
-1	Não	não	ADV	adv	_	4	neg	_	_
-2	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
-3	apenas	apenas	ADV	adv	_	4	advmod	_	_
-4	Marluce	Marluce	PROPN	prop|F|S	_	0	root	_	MWE=Marluce_Dias_da_Silva|MWEPOS=PROPN
-5	Dias	Dias	PROPN	PROPN	_	4	name	_	_
+# text = Não é apenas Marluce Dias da Silva a poderosa superintendente da Globo que é considerada gênio em casa.
+# forest 1
+# source CETENFolha n=187 cad=Mais! sec=nd sem=94a
+# sent_id = CF187-2
+# id 794
+1	Não	não	ADV	ADV|@ADVL>	Polarity=Neg	4	advmod	_	_
+2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	apenas	apenas	ADV	ADV|@>N	_	4	advmod	_	_
+4	Marluce	Marluce	PROPN	_	_	0	root	_	MWE=Marluce_Dias_da_Silva|MWEPOS=PROPN
+5	Dias	Dias	PROPN	_	_	4	flat	_	_
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Silva	Silva	PROPN	PROPN	_	4	name	_	_
-9	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-10	poderosa	poderoso	ADJ	adj|F|S	Gender=Fem|Number=Sing	11	amod	_	_
-11	superintendente	superintendente	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nsubj	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Silva	Silva	PROPN	PROP|@P<	_	4	flat	_	_
+9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	poderosa	poderoso	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	11	amod	_	_
+11	superintendente	superintendente	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	4	nsubj	_	_
 12-13	da	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	Globo	globo	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-15	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	16	nsubj	_	_
-16	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
-17	considerada	considerar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	18	cop	_	_
-18	gênio	gênio	NOUN	n|M|S	Gender=Masc|Number=Sing	16	ccomp	_	_
-19	em	em	ADP	prp	AdpType=Prep	20	case	_	_
-20	casa	casa	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nmod	_	_
-21	.	.	PUNCT	punc	_	4	punct	_	_
+12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	Globo	globo	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
+15	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	16	nsubj	_	_
+16	é	ser	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
+17	considerada	considerar	AUX	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	18	cop	_	_
+18	gênio	gênio	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	16	ccomp	_	_
+19	em	em	ADP	PRP|@<ADVL	_	20	case	_	_
+20	casa	casa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF187-3
-# sent_id = pt-ud-train.conllu#s5837/pt
-# orig_file_sentence = 059#37
-1	Tão	tão	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	2	advmod	_	_
-2	tchans	tchan	ADJ	adj|M|P	Gender=Masc|Number=Plur	11	advmod	_	_
-3	quanto	quanto	ADV	adv|<rel>|<quant>	NumType=Card|PronType=Rel	4	mark	_	_
-4	ela	ela	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-5	,	,	PUNCT	punc	_	11	punct	_	_
-6	seu	seu	DET	pron-det|<poss|3S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	_	_
-7	marido	marido	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
-8	Eurico	Eurico	PROPN	prop|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-9	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	dono	dono	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Tão tchans quanto ela, seu marido Eurico é o dono duma coleção de restaurantes estrelados no Rio.
+# forest 1
+# source CETENFolha n=187 cad=Mais! sec=nd sem=94a
+# sent_id = CF187-3
+# id 795
+1	Tão	tão	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	2	advmod	_	_
+2	tchans	tchan	ADJ	<COMP>|ADJ|M|P|@ADVL>	Gender=Masc|Number=Plur	11	advmod	_	_
+3	quanto	quanto	ADV	<rel>|<quant>|ADV|@COM	NumType=Card|PronType=Rel	4	mark	_	_
+4	ela	ela	NOUN	<first-cjt>|<np-idf>|N|F|S|@KOMP<	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+6	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	_	_
+7	marido	marido	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
+8	Eurico	Eurico	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	7	nmod	_	_
+9	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	dono	dono	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 12-13	duma	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-13	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	coleção	coleção	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-15	de	de	ADP	prp	AdpType=Prep	16	case	_	_
-16	restaurantes	restaurante	NOUN	n|M|P	Gender=Masc|Number=Plur	14	nmod	_	_
-17	estrelados	estrelar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	_	_
+12	de	de	ADP	PRP|@N<	_	14	case	_	_
+13	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	coleção	coleção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+15	de	de	ADP	PRP|@N<	_	16	case	_	_
+16	restaurantes	restaurante	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	_
+17	estrelados	estrelar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	_	_
 18-19	no	_	_	_	_	_	_	_	_
-18	em	em	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	Rio	Rio	PROPN	prop|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-21	.	.	PUNCT	punc	_	11	punct	_	_
+18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
+19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	Rio	Rio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 

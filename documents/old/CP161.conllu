@@ -1,311 +1,317 @@
-# distance_from_new = 0
-# new_sent_id = CP161-1
-# sent_id = pt-ud-train.conllu#s848/pt
-# orig_file_sentence = 009#48
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	rio	rio	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nsubj	_	_
-3	Grande	Grande	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-4	nasce	nascer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = O rio Grande nasce no concelho de Torres Vedras e atravessa todo o concelho da Lourinhã sendo as suas águas consideradas excessivamente poluídas e impróprias para qualquer uso, segundo dados de 1987 da Direcção Geral da Qualidade do Ambiente.
+# forest 1
+# source CETEMPúblico n=161 sec=soc sem=92b
+# sent_id = CP161-1
+# id 849
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	rio	rio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	Grande	Grande	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	nmod	_	_
+4	nasce	nascer	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5-6	no	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	concelho	concelho	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	Torres	Torres	PROPN	prop|M/F|S	_	7	nmod	_	MWE=Torres_Vedras|MWEPOS=PROPN
-10	Vedras	Vedras	PROPN	PROPN	_	9	name	_	_
-11	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	4	cc	_	_
-12	atravessa	atravessar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
-13	todo	todo	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|PronType=Tot	15	det	_	MWE=todo_o|MWEPOS=DET
-14	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	concelho	concelho	NOUN	n|M|S	Gender=Masc|Number=Sing	12	dobj	_	_
+5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
+6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	concelho	concelho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
+9	Torres	Torres	PROPN	_	_	7	nmod	_	MWE=Torres_Vedras|MWEPOS=PROPN
+10	Vedras	Vedras	PROPN	_	_	9	flat	_	_
+11	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	12	cc	_	_
+12	atravessa	atravessar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+13	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Tot	15	det	_	MWE=todo_o|MWEPOS=DET
+14	o	o	DET	<artd>|DET|M|S|@A<	Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	concelho	concelho	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
 16-17	da	_	_	_	_	_	_	_	_
-16	de	de	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	18	det	_	_
-18	Lourinhã	Lourinhã	PROPN	prop|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-19	sendo	ser	VERB	v-ger	VerbForm=Ger	25	auxpass	_	_
-20	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
-21	suas	seu	DET	pron-det|<poss|3S>|F|P	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	22	det	_	_
-22	águas	água	NOUN	n|F|P	Gender=Fem|Number=Plur	25	nsubjpass	_	_
-23	consideradas	considerar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	25	cop	_	_
-24	excessivamente	excessivamente	ADV	adv	_	25	advmod	_	_
-25	poluídas	poluir	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	4	advcl	_	_
-26	e	e	CONJ	conj-c|<co-sc>	_	25	cc	_	_
-27	impróprias	impróprio	ADJ	adj|F|P	Gender=Fem|Number=Plur	25	conj	_	_
-28	para	para	ADP	prp	AdpType=Prep	30	case	_	_
-29	qualquer	qualquer	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	30	det	_	_
-30	uso	uso	NOUN	n|M|S	Gender=Masc|Number=Sing	27	nmod	_	_
-31	,	,	PUNCT	punc	_	25	punct	_	_
-32	segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	33	case	_	_
-33	dados	dado	NOUN	n|M|P	Gender=Masc|Number=Plur	25	nmod	_	_
-34	de	de	ADP	prp	AdpType=Prep	35	case	_	_
-35	1987	1987	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	33	nummod	_	_
+16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
+17	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	18	det	_	_
+18	Lourinhã	Lourinhã	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+19	sendo	ser	VERB	<cjt>|<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	4	advcl	_	_
+20	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
+21	suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	22	det	_	_
+22	águas	água	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	19	nsubj	_	_
+23	consideradas	considerar	AUX	<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	25	cop	_	_
+24	excessivamente	excessivamente	ADV	ADV|@>A	_	25	advmod	_	_
+25	poluídas	poluir	VERB	<mv>|<first-cjt>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	19	ccomp	_	_
+26	e	e	CCONJ	<co-sc>|KC|@CO	_	27	cc	_	_
+27	impróprias	impróprio	ADJ	<cjt>|ADJ|F|P|@ICL-<SC	Gender=Fem|Number=Plur	25	conj	_	_
+28	para	para	ADP	PRP|@A<	_	30	case	_	_
+29	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	30	det	_	_
+30	uso	uso	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	obl	_	SpaceAfter=No
+31	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+32	segundo	segundo	ADP	<rel>|PRP|@<ADVL	PronType=Rel	33	case	_	_
+33	dados	dado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	obl	_	_
+34	de	de	ADP	PRP|@N<	_	35	case	_	_
+35	1987	1987	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	33	nummod	_	_
 36-37	da	_	_	_	_	_	_	_	_
-36	de	de	ADP	prp|<sam->	AdpType=Prep	38	case	_	_
-37	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	38	det	_	_
-38	Direcção	Direcção	PROPN	prop|F|S	_	33	nmod	_	MWE=Direcção_Geral_da_Qualidade_do_Ambiente|MWEPOS=PROPN
-39	Geral	Geral	PROPN	PROPN	_	38	name	_	_
+36	de	de	ADP	<sam->|PRP|@N<	_	38	case	_	_
+37	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	38	det	_	_
+38	Direcção	Direcção	PROPN	PROP|F|S|@P<	_	33	nmod	_	MWE=Direcção_Geral_da_Qualidade_do_Ambiente|MWEPOS=PROPN
+39	Geral	Geral	PROPN	PROP|@N<	_	38	flat	_	_
 40-41	da	_	_	_	_	_	_	_	_
-40	de	de	ADP	prp|<sam->	AdpType=Prep	42	case	_	_
-41	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
-42	Qualidade	Qualidade	PROPN	PROPN	_	38	name	_	_
+40	de	de	ADP	<sam->|PRP|@N<	_	42	case	_	_
+41	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
+42	Qualidade	Qualidade	PROPN	PROP|@P<	_	38	flat	_	_
 43-44	do	_	_	_	_	_	_	_	_
-43	de	de	ADP	prp|<sam->	AdpType=Prep	45	case	_	_
-44	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
-45	Ambiente	Ambiente	PROPN	PROPN	_	38	name	_	_
-46	.	.	PUNCT	punc	_	4	punct	_	_
+43	de	de	ADP	<sam->|PRP|@N<	_	45	case	_	_
+44	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	Ambiente	Ambiente	PROPN	PROP|@P<	_	38	flat	_	SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP161-2
-# sent_id = pt-ud-train.conllu#s849/pt
-# orig_file_sentence = 009#49
+# text = Neste estudo são apontados como principais fontes poluidores as pecuárias, matadouros e esgotos domésticos sendo observados vários casos de contaminação de águas de fontanários e poços.
+# forest 1
+# source CETEMPúblico n=161 sec=soc sem=92b
+# sent_id = CP161-2
+# id 850
 1-2	Neste	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	este	este	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
-3	estudo	estudo	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-4	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	apontados	apontar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	8	cop	_	_
-6	como	como	ADV	adv|<prp>	_	8	cop	_	_
-7	principais	principal	ADJ	adj|F|P	Gender=Fem|Number=Plur	8	amod	_	_
-8	fontes	fonte	NOUN	n|F|P	Gender=Fem|Number=Plur	4	ccomp	_	_
-9	poluidores	poluidor	ADJ	adj|M|P	Gender=Masc|Number=Plur	8	amod	_	_
-10	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
-11	pecuárias	pecuária	NOUN	n|F|P	Gender=Fem|Number=Plur	4	nsubj	_	_
-12	,	,	PUNCT	punc	_	11	punct	_	_
-13	matadouros	matadouro	NOUN	n|M|P	Gender=Masc|Number=Plur	11	conj	_	_
-14	e	e	CONJ	conj-c|<co-subj>	_	11	cc	_	_
-15	esgotos	esgoto	NOUN	n|M|P	Gender=Masc|Number=Plur	11	conj	_	_
-16	domésticos	doméstico	ADJ	adj|M|P	Gender=Masc|Number=Plur	15	amod	_	_
-17	sendo	ser	VERB	v-ger	VerbForm=Ger	18	auxpass	_	_
-18	observados	observar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	8	advcl	_	_
-19	vários	vários	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	20	det	_	_
-20	casos	caso	NOUN	n|M|P	Gender=Masc|Number=Plur	18	nsubjpass	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	contaminação	contaminação	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-23	de	de	ADP	prp	AdpType=Prep	24	case	_	_
-24	águas	água	NOUN	n|F|P	Gender=Fem|Number=Plur	22	nmod	_	_
-25	de	de	ADP	prp	AdpType=Prep	26	case	_	_
-26	fontanários	fontanário	NOUN	n|M|P	Gender=Masc|Number=Plur	24	nmod	_	_
-27	e	e	CONJ	conj-c|<co-prparg>	_	26	cc	_	_
-28	poços	poço	NOUN	n|M|P	Gender=Masc|Number=Plur	26	conj	_	_
-29	.	.	PUNCT	punc	_	4	punct	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	estudo	estudo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	_
+4	são	ser	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	apontados	apontar	AUX	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	8	cop	_	_
+6	como	como	ADV	<prd>|PRP|@<SC	_	8	cop	_	_
+7	principais	principal	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	8	amod	_	_
+8	fontes	fonte	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	ccomp	_	_
+9	poluidores	poluidor	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	8	amod	_	_
+10	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
+11	pecuárias	pecuária	NOUN	<first-cjt>|<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	4	nsubj	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+13	matadouros	matadouro	NOUN	<cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	11	conj	_	_
+14	e	e	CCONJ	<co-subj>|KC|@CO	_	15	cc	_	_
+15	esgotos	esgoto	NOUN	<cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	11	conj	_	_
+16	domésticos	doméstico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	15	amod	_	_
+17	sendo	ser	VERB	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	8	advcl	_	_
+18	observados	observar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	17	ccomp	_	_
+19	vários	vários	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	20	det	_	_
+20	casos	caso	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	17	nsubj	_	_
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	contaminação	contaminação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	águas	água	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
+25	de	de	ADP	PRP|@N<	_	26	case	_	_
+26	fontanários	fontanário	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	_
+27	e	e	CCONJ	<co-prparg>|KC|@CO	_	28	cc	_	_
+28	poços	poço	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	26	conj	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP161-3
-# sent_id = pt-ud-train.conllu#s850/pt
-# orig_file_sentence = 009#50
+# text = À sua poluição deve-se ainda o desaparecimento dos famosos bivalves negros da «Mexelhoeira», uma zona de rochas entre as praias da Areia Branca e do Peralta.
+# forest 1
+# source CETEMPúblico n=161 sec=soc sem=92b
+# sent_id = CP161-3
+# id 851
 1-2	À	_	_	_	_	_	_	_	_
-1	A	a	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-2	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
-3	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	4	det	_	_
-4	poluição	poluição	NOUN	n|F|S	Gender=Fem|Number=Sing	5	iobj	_	_
+1	A	a	ADP	<sam->|PRP|@PIV>	_	4	case	_	_
+2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
+3	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	4	det	_	_
+4	poluição	poluição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	iobj	_	_
 5-6	deve-se	_	_	_	_	_	_	_	_
 5	deve	dever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	dobj	_	_
-7	ainda	ainda	ADV	adv	_	5	advmod	_	_
-8	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	desaparecimento	desaparecimento	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
+6	-se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+7	ainda	ainda	ADV	ADV|@<ADVL	_	5	advmod	_	_
+8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	desaparecimento	desaparecimento	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	5	nsubj	_	_
 10-11	dos	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-11	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
-12	famosos	famoso	ADJ	adj|M|P	Gender=Masc|Number=Plur	13	amod	_	_
-13	bivalves	bivalve	NOUN	n|M|P	Gender=Masc|Number=Plur	9	nmod	_	_
-14	negros	negro	ADJ	adj|M|P	Gender=Masc|Number=Plur	13	amod	_	_
+10	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+11	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+12	famosos	famoso	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	13	amod	_	_
+13	bivalves	bivalve	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
+14	negros	negro	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	_
 15-16	da	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	18	det	_	_
-17	«	«	PUNCT	punc	_	18	punct	_	_
-18	Mexelhoeira	Mexelhoeira	PROPN	prop|F|S	Gender=Fem|Number=Sing	13	nmod	_	_
-19	»	»	PUNCT	punc	_	18	punct	_	_
-20	,	,	PUNCT	punc	_	18	punct	_	_
-21	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	zona	zona	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nmod	_	_
-23	de	de	ADP	prp	AdpType=Prep	24	case	_	_
-24	rochas	rocha	NOUN	n|F|P	Gender=Fem|Number=Plur	22	nmod	_	_
-25	entre	entre	ADP	prp	AdpType=Prep	27	case	_	_
-26	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_
-27	praias	praia	NOUN	n|F|P	Gender=Fem|Number=Plur	22	nmod	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
+16	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	18	det	_	_
+17	«	«	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
+18	Mexelhoeira	Mexelhoeira	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No
+19	»	»	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+21	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	18	nmod	_	_
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	rochas	rocha	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
+25	entre	entre	ADP	PRP|@N<	_	27	case	_	_
+26	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	27	det	_	_
+27	praias	praia	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
 28-29	da	_	_	_	_	_	_	_	_
-28	de	de	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	30	det	_	_
-30	Areia	Areia	PROPN	prop|F|S	_	27	nmod	_	MWE=Areia_Branca|MWEPOS=PROPN
-31	Branca	Branca	PROPN	PROPN	_	30	name	_	_
-32	e	e	CONJ	conj-c|<co-postnom>	_	30	cc	_	_
+28	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	30	case	_	_
+29	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	30	det	_	_
+30	Areia	Areia	PROPN	_	_	27	nmod	_	MWE=Areia_Branca|MWEPOS=PROPN
+31	Branca	Branca	PROPN	_	_	30	flat	_	_
+32	e	e	CCONJ	<co-postnom>|KC|@CO	_	35	cc	_	_
 33-34	do	_	_	_	_	_	_	_	_
-33	de	de	ADP	prp|<sam->	AdpType=Prep	35	case	_	_
-34	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
-35	Peralta	Peralta	PROPN	prop|M|S	Gender=Masc|Number=Sing	30	conj	_	_
-36	.	.	PUNCT	punc	_	5	punct	_	_
+33	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	35	case	_	_
+34	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
+35	Peralta	Peralta	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	30	conj	_	SpaceAfter=No
+36	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP161-4
-# sent_id = pt-ud-train.conllu#s851/pt
-# orig_file_sentence = 009#51
-1	As	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
-2	histórias	história	NOUN	n|F|P	Gender=Fem|Number=Plur	10	nsubj	_	_
+# text = As histórias da poluição do rio Grande correm toda a região, desde o aparecimento de cadáveres de animais na sua foz até ao boato dum surto de hepatite B que no ano passado afastou centenas de veraneantes.
+# forest 1
+# source CETEMPúblico n=161 sec=soc sem=92b
+# sent_id = CP161-4
+# id 852
+1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	histórias	história	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	10	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
-5	poluição	poluição	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
+5	poluição	poluição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 6-7	do	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	rio	rio	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-9	Grande	Grande	PROPN	prop|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-10	correm	correr	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-11	toda	toda	DET	pron-det|<quant>|F|S	PronType=Art	13	det	_	MWE=toda_a|MWEPOS=DET
-12	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	região	região	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-14	,	,	PUNCT	punc	_	10	punct	_	_
-15	desde	desde	ADP	prp	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	aparecimento	aparecimento	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	cadáveres	cadáver	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-20	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-21	animais	animal	NOUN	n|M|P	Gender=Masc|Number=Plur	19	nmod	_	_
+6	de	de	ADP	<sam->|PRP|@N<ARG	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	rio	rio	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
+9	Grande	Grande	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	8	nmod	_	_
+10	correm	correr	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	toda	toda	DET	<quant>|DET|F|S|@>N	PronType=Art	13	det	_	MWE=toda_a|MWEPOS=DET
+12	a	a	DET	<artd>|DET|F|S|@A<	Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	região	região	NOUN	<np-idf>|N|F|S|@<SA	Gender=Fem|Number=Sing	10	obl	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+15	desde	desde	ADP	<first-cjt>|PRP|@N<	_	17	case	_	_
+16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	aparecimento	aparecimento	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+18	de	de	ADP	PRP|@N<	_	19	case	_	_
+19	cadáveres	cadáver	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
+20	de	de	ADP	PRP|@N<	_	21	case	_	_
+21	animais	animal	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	_
 22-23	na	_	_	_	_	_	_	_	_
-22	em	em	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-23	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	25	det	_	_
-24	sua	seu	DET	pron-det|<poss|3S>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	25	det	_	_
-25	foz	foz	NOUN	n|F|S	Gender=Fem|Number=Sing	17	nmod	_	_
-26	até	até	ADP	prp	AdpType=Prep	29	case	_	_
+22	em	em	ADP	<sam->|PRP|@N<	_	25	case	_	_
+23	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	25	det	_	_
+24	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	25	det	_	_
+25	foz	foz	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
+26	até	até	ADP	<cjt>|PRP|@P<	_	29	case	_	_
 27-28	ao	_	_	_	_	_	_	_	_
-27	a	a	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	boato	boato	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
+27	a	a	ADP	<sam->|PRP|@P<	_	29	case	_	_
+28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	boato	boato	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	_
 30-31	dum	_	_	_	_	_	_	_	_
-30	de	de	ADP	prp	AdpType=Prep	32	case	_	_
-31	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	surto	surto	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
-33	de	de	ADP	prp	AdpType=Prep	34	case	_	_
-34	hepatite	hepatite	NOUN	n|F|S	_	32	nmod	_	MWE=hepatite_B|MWEPOS=NOUN
-35	B	B	NOUN	NOUN	_	34	compound	_	_
-36	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	41	nsubj	_	_
+30	de	de	ADP	PRP|@N<ARG	_	32	case	_	_
+31	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	surto	surto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	_
+33	de	de	ADP	PRP|@N<	_	34	case	_	_
+34	hepatite	hepatite	NOUN	N|@>N	_	32	nmod	_	MWE=hepatite_B|MWEPOS=NOUN
+35	B	B	NOUN	N|@P<	_	34	compound	_	_
+36	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	41	nsubj	_	_
 37-38	no	_	_	_	_	_	_	_	_
-37	em	em	ADP	prp|<sam->	AdpType=Prep	39	case	_	_
-38	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
-39	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	41	nmod	_	_
-40	passado	passar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	39	acl	_	_
-41	afastou	afastar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	acl	_	_
-42	centenas	centena	NOUN	n|F|P	Gender=Fem|Number=Plur	41	dobj	_	_
-43	de	de	ADP	prp	AdpType=Prep	44	case	_	_
-44	veraneantes	veraneante	NOUN	n|M/F|P	Number=Plur	42	nmod	_	_
-45	.	.	PUNCT	punc	_	10	punct	_	_
+37	em	em	ADP	<sam->|PRP|@ADVL>	_	39	case	_	_
+38	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
+39	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	41	obl	_	_
+40	passado	passar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	39	acl	_	_
+41	afastou	afastar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	acl	_	_
+42	centenas	centena	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	41	obj	_	_
+43	de	de	ADP	PRP|@N<ARG	_	44	case	_	_
+44	veraneantes	veraneante	NOUN	<np-idf>|N|M/F|P|@P<	Number=Plur	42	nmod	_	SpaceAfter=No
+45	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP161-5
-# sent_id = pt-ud-train.conllu#s852/pt
-# orig_file_sentence = 009#52
+# text = Na perspectiva da autarquia este quadro está em vias de melhorar pois existem já projectos para cinco estações de tratamento domésticos das principais localidades do concelho e duas centrais de tratamento de dejectos das suiniculturas para posterior transformação em fertilizante, já candidatas a fundos comunitários, isto para além das várias pequenas estações de tratamento que estão previstas em todo o concelho.
+# forest 1
+# source CETEMPúblico n=161 sec=soc sem=92b
+# sent_id = CP161-5
+# id 853
 1-2	Na	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
-3	perspectiva	perspectiva	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
+3	perspectiva	perspectiva	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
-6	autarquia	autarquia	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-7	este	este	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
-8	quadro	quadro	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nsubj	_	_
-9	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-10	em	em	ADP	prp	AdpType=Prep	13	mark	_	MWE=em_vias_de|MWEPOS=ADP
-11	vias	vias	NOUN	NOUN	_	10	mwe	_	_
-12	de	de	ADP	ADP	AdpType=Prep	10	mwe	_	_
-13	melhorar	melhorar	VERB	v-inf	VerbForm=Inf	9	ccomp	_	_
-14	pois	pois	ADV	adv|<kc>	_	15	advmod	_	_
-15	existem	existir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	_	_
-16	já	já	ADV	adv	_	15	advmod	_	_
-17	projectos	projecto	NOUN	n|M|P	Gender=Masc|Number=Plur	15	nsubj	_	_
-18	para	para	ADP	prp	AdpType=Prep	20	case	_	_
-19	cinco	cinco	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	20	nummod	_	_
-20	estações	estação	NOUN	n|F|P	Gender=Fem|Number=Plur	17	nmod	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	tratamento	tratamento	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-23	domésticos	doméstico	ADJ	adj|M|P	Gender=Masc|Number=Plur	22	amod	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	6	det	_	_
+6	autarquia	autarquia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+7	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
+8	quadro	quadro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
+9	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	em	em	ADP	PRP|@<SC	_	13	mark	_	MWE=em_vias_de|MWEPOS=ADP
+11	vias	vias	NOUN	N|@P<	_	10	fixed	_	_
+12	de	de	ADP	PRP|@N<	_	10	fixed	_	_
+13	melhorar	melhorar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	ccomp	_	_
+14	pois	pois	ADV	<kc>|ADV|@ADVL>	_	15	advmod	_	_
+15	existem	existir	VERB	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	_	_
+16	já	já	ADV	ADV|@<ADVL	_	15	advmod	_	_
+17	projectos	projecto	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	15	nsubj	_	_
+18	para	para	ADP	PRP|@N<	_	20	case	_	_
+19	cinco	cinco	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	20	nummod	_	_
+20	estações	estação	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	nmod	_	_
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	tratamento	tratamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
+23	domésticos	doméstico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	22	amod	_	_
 24-25	das	_	_	_	_	_	_	_	_
-24	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-25	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	27	det	_	_
-26	principais	principal	ADJ	adj|F|P	Gender=Fem|Number=Plur	27	amod	_	_
-27	localidades	localidade	NOUN	n|F|P	Gender=Fem|Number=Plur	22	nmod	_	_
+24	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
+25	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	27	det	_	_
+26	principais	principal	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	27	amod	_	_
+27	localidades	localidade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
 28-29	do	_	_	_	_	_	_	_	_
-28	de	de	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	concelho	concelho	NOUN	n|M|S	Gender=Masc|Number=Sing	27	nmod	_	_
-31	e	e	CONJ	conj-c|<co-prparg>	_	20	cc	_	_
-32	duas	dois	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	33	nummod	_	_
-33	centrais	central	NOUN	n|F|P	Gender=Fem|Number=Plur	20	conj	_	_
-34	de	de	ADP	prp	AdpType=Prep	33	nmod	_	_
-35	tratamento	tratamento	NOUN	n|M|S	Gender=Masc|Number=Sing	34	nmod	_	_
-36	de	de	ADP	prp	AdpType=Prep	37	case	_	_
-37	dejectos	dejecto	NOUN	n|M|P	Gender=Masc|Number=Plur	35	nmod	_	_
+28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
+29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	concelho	concelho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
+31	e	e	CCONJ	<co-prparg>|KC|@CO	_	33	cc	_	_
+32	duas	dois	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	33	nummod	_	_
+33	centrais	central	NOUN	<cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	20	conj	_	_
+34	de	de	ADP	PRP|@N<	_	33	nmod	_	_
+35	tratamento	tratamento	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	34	nmod	_	_
+36	de	de	ADP	PRP|@N<ARG	_	37	case	_	_
+37	dejectos	dejecto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	35	nmod	_	_
 38-39	das	_	_	_	_	_	_	_	_
-38	de	de	ADP	prp|<sam->	AdpType=Prep	40	case	_	_
-39	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	40	det	_	_
-40	suiniculturas	suinicultura	NOUN	n|F|P	Gender=Fem|Number=Plur	37	nmod	_	_
-41	para	para	ADP	prp	AdpType=Prep	43	case	_	_
-42	posterior	posterior	ADJ	adj|F|S	Gender=Fem|Number=Sing	43	amod	_	_
-43	transformação	transformação	NOUN	n|F|S	Gender=Fem|Number=Sing	35	nmod	_	_
-44	em	em	ADP	prp	AdpType=Prep	45	case	_	_
-45	fertilizante	fertilizante	NOUN	n|M|S	Gender=Masc|Number=Sing	43	nmod	_	_
-46	,	,	PUNCT	punc	_	20	punct	_	_
-47	já	já	ADV	adv	_	48	advmod	_	_
-48	candidatas	candidatar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	20	acl	_	_
-49	a	a	ADP	prp	AdpType=Prep	50	case	_	_
-50	fundos	fundo	NOUN	n|M|P	Gender=Masc|Number=Plur	48	dobj	_	_
-51	comunitários	comunitário	ADJ	adj|M|P	Gender=Masc|Number=Plur	50	amod	_	_
-52	,	,	PUNCT	punc	_	20	punct	_	_
-53	isto	isto	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	20	nmod	_	_
-54	para	para	ADP	pp	AdpType=Prep	60	case	_	MWE=para_além|MWEPOS=ADV
-55	além	além	ADV	ADV	_	54	mwe	_	_
+38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
+39	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	40	det	_	_
+40	suiniculturas	suinicultura	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	37	nmod	_	_
+41	para	para	ADP	PRP|@N<ARG	_	43	case	_	_
+42	posterior	posterior	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	43	amod	_	_
+43	transformação	transformação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	35	nmod	_	_
+44	em	em	ADP	PRP|@N<	_	45	case	_	_
+45	fertilizante	fertilizante	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	43	nmod	_	SpaceAfter=No
+46	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+47	já	já	ADV	ADV|@ADVL>	_	48	advmod	_	_
+48	candidatas	candidatar	VERB	<mv>|V|PCP|F|P|@ICL-N<PRED	Gender=Fem|Number=Plur|VerbForm=Part	20	acl	_	_
+49	a	a	ADP	PRP|@<PIV	_	50	case	_	_
+50	fundos	fundo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	48	obj	_	_
+51	comunitários	comunitário	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	50	amod	_	SpaceAfter=No
+52	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+53	isto	isto	PRON	<dem>|INDP|M|S|@N<PRED	Gender=Masc|Number=Sing|PronType=Dem	20	nmod	_	_
+54	para	para	ADP	PRP|@N<	_	60	case	_	MWE=para_além|MWEPOS=ADV
+55	além	além	ADV	N|@P<	_	54	fixed	_	_
 56-57	das	_	_	_	_	_	_	_	_
-56	de	de	ADP	prp|<sam->	AdpType=Prep	60	case	_	_
-57	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	60	det	_	_
-58	várias	vários	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	60	det	_	_
-59	pequenas	pequeno	ADJ	adj|F|P	Gender=Fem|Number=Plur	60	amod	_	_
-60	estações	estação	NOUN	n|F|P	Gender=Fem|Number=Plur	53	nmod	_	_
-61	de	de	ADP	prp	AdpType=Prep	62	case	_	_
-62	tratamento	tratamento	NOUN	n|M|S	Gender=Masc|Number=Sing	60	nmod	_	_
-63	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	65	nsubj	_	_
-64	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	65	cop	_	_
-65	previstas	prever	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	60	acl	_	_
-66	em	em	ADP	prp	AdpType=Prep	69	case	_	_
-67	todo	todo	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|PronType=Tot	69	det	_	MWE=todo_o|MWEPOS=DET
-68	o	o	DET	DET	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	_	_
-69	concelho	concelho	NOUN	n|M|S	Gender=Masc|Number=Sing	65	nmod	_	_
-70	.	.	PUNCT	punc	_	9	punct	_	_
+56	de	de	ADP	<sam->|PRP|@P<	_	60	case	_	_
+57	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	60	det	_	_
+58	várias	vários	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	60	det	_	_
+59	pequenas	pequeno	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	60	amod	_	_
+60	estações	estação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	53	nmod	_	_
+61	de	de	ADP	PRP|@N<	_	62	case	_	_
+62	tratamento	tratamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	60	nmod	_	_
+63	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	65	nsubj	_	_
+64	estão	estar	AUX	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	65	cop	_	_
+65	previstas	prever	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	60	acl	_	_
+66	em	em	ADP	PRP|@<ADVL	_	69	case	_	_
+67	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Tot	69	det	_	MWE=todo_o|MWEPOS=DET
+68	o	o	DET	<artd>|DET|M|S|@A<	Gender=Masc|Number=Sing|PronType=Art	69	det	_	_
+69	concelho	concelho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	65	obl	_	SpaceAfter=No
+70	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP161-6
-# sent_id = pt-ud-train.conllu#s853/pt
-# orig_file_sentence = 009#53
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	Câmara	Câmara	PROPN	prop|F|S	_	4	nsubj	_	MWE=Câmara_Municipal|MWEPOS=PROPN
-3	Municipal	Municipal	PROPN	PROPN	_	2	name	_	_
-4	aponta	apontar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
-6	complicados	complicar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	7	acl	_	_
-7	processos	processo	NOUN	n|M|P	Gender=Masc|Number=Plur	4	iobj	_	_
-8	burocráticos	burocrático	ADJ	adj|M|P	Gender=Masc|Number=Plur	7	amod	_	_
-9	como	como	ADV	adv|<prp>	_	12	cop	_	_
-10	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-11	grandes	grande	ADJ	adj|M|P	Gender=Masc|Number=Plur	12	amod	_	_
-12	entraves	entrave	NOUN	n|M|P	Gender=Masc|Number=Plur	4	xcomp	_	_
-13	para	para	ADP	prp	AdpType=Prep	17	mark	_	_
-14	que	que	SCONJ	conj-s	_	17	mark	_	_
-15	tudo	tudo	PRON	pron-indp|<quant>|M/F|S	Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	17	nsubj	_	_
-16	se	se	PRON	pron-pers|M/F|3S|ACC	Case=Acc|Number=Sing|Person=3|PronType=Prs	17	dobj	_	_
-17	concretize	concretizar	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl	_	_
-18	uma	uma	DET	conj-s	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	mark	_	MWE=uma_vez_que|MWEPOS=SCONJ
-19	vez	vez	NOUN	NOUN	_	18	mwe	_	_
-20	que	que	SCONJ	SCONJ	_	18	mwe	_	_
-21	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	maioria	maioria	NOUN	n|F|S	Gender=Fem|Number=Sing	29	nsubj	_	_
+# text = A Câmara Municipal aponta os complicados processos burocráticos como os grandes entraves para que tudo se concretize uma vez que a maioria dos apoios financeiros já estará garantida.
+# forest 1
+# source CETEMPúblico n=161 sec=soc sem=92b
+# sent_id = CP161-6
+# id 854
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Câmara	Câmara	PROPN	_	_	4	nsubj	_	MWE=Câmara_Municipal|MWEPOS=PROPN
+3	Municipal	Municipal	PROPN	_	_	2	flat	_	_
+4	aponta	apontar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+6	complicados	complicar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	7	acl	_	_
+7	processos	processo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	iobj	_	_
+8	burocráticos	burocrático	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	7	amod	_	_
+9	como	como	ADV	<prd>|PRP|@<OC	_	12	cop	_	_
+10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+11	grandes	grande	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	12	amod	_	_
+12	entraves	entrave	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	xcomp	_	_
+13	para	para	ADP	PRP|@N<ARG	_	17	mark	_	_
+14	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
+15	tudo	tudo	PRON	<quant>|INDP|M/F|S|@SUBJ>	Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	17	nsubj	_	_
+16	se	se	PRON	PERS|M/F|3S|ACC|@ACC>-PASS	Case=Acc|Number=Sing|Person=3|PronType=Prs	17	obj	_	_
+17	concretize	concretizar	VERB	<mv>|<se-passive>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl	_	_
+18	uma	uma	DET	<arti>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	29	mark	_	MWE=uma_vez_que|MWEPOS=SCONJ
+19	vez	vez	NOUN	N|F|S|@>S	_	18	fixed	_	_
+20	que	que	SCONJ	KS|@SUB	_	18	fixed	_	_
+21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	maioria	maioria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	29	nsubj	_	_
 23-24	dos	_	_	_	_	_	_	_	_
-23	de	de	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
-25	apoios	apoio	NOUN	n|M|P	Gender=Masc|Number=Plur	22	nmod	_	_
-26	financeiros	financeiro	ADJ	adj|M|P	Gender=Masc|Number=Plur	25	amod	_	_
-27	já	já	ADV	adv	_	29	advmod	_	_
-28	estará	estar	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	cop	_	_
-29	garantida	garantir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	4	advcl	_	_
-30	.	.	PUNCT	punc	_	4	punct	_	_
+23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
+24	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
+25	apoios	apoio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
+26	financeiros	financeiro	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	25	amod	_	_
+27	já	já	ADV	ADV|@ADVL>	_	29	advmod	_	_
+28	estará	estar	AUX	<mv>|V|FUT|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	cop	_	_
+29	garantida	garantir	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	4	advcl	_	SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

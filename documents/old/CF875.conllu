@@ -1,45 +1,47 @@
-# distance_from_new = 2
-# new_sent_id = CF875-1
-# sent_id = pt-ud-train.conllu#s8731/pt
-# orig_file_sentence = 088#31
-1	Tomado	tomar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	6	advcl	_	_
-2	de	de	ADP	adv	AdpType=Prep	1	advmod	_	MWE=de_surpresa|MWEPOS=ADV
-3	surpresa	surpresa	NOUN	NOUN	_	2	mwe	_	_
-4	,	,	PUNCT	punc	_	6	punct	_	_
-5	Santana	Santana	PROPN	prop|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
-6	deu	dar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	sorriso	sorriso	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
-9	amarelo	amarelo	ADJ	adj|M|S	Gender=Masc|Number=Sing	8	amod	_	_
-10	,	,	PUNCT	punc	_	6	punct	_	_
-11	mas	mas	CONJ	conj-c	_	6	cc	_	_
-12	logo	logo	ADV	adv|<kc>	_	13	advmod	_	_
-13-14	recuperou-se	_	_	_	_	_	_	_	_
+# text = Tomado de surpresa, Santana deu um sorriso amarelo, mas logo recuperou-se:
+# forest 1
+# source CETENFolha n=875 cad=Brasil sec=pol sem=94a
+# sent_id = CF875-1
+# id 3689
+1	Tomado	tomar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	6	advcl	_	_
+2	de	de	ADP	PRP|@<ADVL	_	1	advmod	_	MWE=de_surpresa|MWEPOS=ADV
+3	surpresa	surpresa	NOUN	N|F|S|@P<	_	2	fixed	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+5	Santana	Santana	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
+6	deu	dar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	sorriso	sorriso	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
+9	amarelo	amarelo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	8	amod	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+11	mas	mas	CCONJ	<co-sta>|KC|@CO	_	13	cc	_	_
+12	logo	logo	ADV	<kc>|ADV|@ADVL>	_	13	advmod	_	_
+13-14	recuperou-se	_	_	_	_	_	_	_	SpaceAfter=No
 13	recuperou	recuperar	VERB	v-fin|<hyfen>|PS|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
-14	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	13	dobj	_	_
-15	:	:	PUNCT	punc	_	6	punct	_	_
+14	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	13	obj	_	_
+15	:	:	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF875-2
-# sent_id = pt-ud-train.conllu#s8732/pt
-# orig_file_sentence = 088#32
-1	Não	não	ADV	adv	_	2	neg	_	_
-2	preciso	precisar	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	governador	governador	NOUN	n|M|S	Gender=Masc|Number=Sing	2	dep	_	_
-5	,	,	PUNCT	punc	_	2	punct	_	_
-6	porque	porque	SCONJ	conj-s	_	16	mark	_	_
-7	,	,	PUNCT	punc	_	16	punct	_	_
-8	sabendo	saber	VERB	v-ger	VerbForm=Ger	16	advcl	_	_
+# text = Não preciso, governador, porque, sabendo da hospitalidade paranaense, eu nem trouxe carteira.
+# forest 1
+# source CETENFolha n=875 cad=Brasil sec=pol sem=94a
+# sent_id = CF875-2
+# id 3690
+1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
+2	preciso	precisar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	governador	governador	NOUN	<np-idf>|N|M|S|@VOK	Gender=Masc|Number=Sing	2	dep	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+6	porque	porque	SCONJ	KS|@SUB	_	16	mark	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+8	sabendo	saber	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	16	advcl	_	_
 9-10	da	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	hospitalidade	hospitalidade	NOUN	n|F|S	Gender=Fem|Number=Sing	8	dobj	_	_
-12	paranaense	paranaense	ADJ	adj|F|S	Gender=Fem|Number=Sing	11	amod	_	_
-13	,	,	PUNCT	punc	_	16	punct	_	_
-14	eu	eu	PRON	pron-pers|M|1S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_
-15	nem	nem	ADV	adv	_	16	advmod	_	_
-16	trouxe	trazer	VERB	v-fin|PS|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	advcl	_	_
-17	carteira	carteira	NOUN	n|F|S	Gender=Fem|Number=Sing	16	dobj	_	_
-18	.	.	PUNCT	punc	_	2	punct	_	_
+9	de	de	ADP	<sam->|PRP|@<PIV	_	11	case	_	_
+10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	hospitalidade	hospitalidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obj	_	_
+12	paranaense	paranaense	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+14	eu	eu	PRON	PERS|M|1S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_
+15	nem	nem	ADV	ADV|@ADVL>	_	16	advmod	_	_
+16	trouxe	trazer	VERB	<mv>|V|PS|1S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	advcl	_	_
+17	carteira	carteira	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	obj	_	SpaceAfter=No
+18	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

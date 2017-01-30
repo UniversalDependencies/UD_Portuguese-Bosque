@@ -1,178 +1,183 @@
-# distance_from_new = 0
-# new_sent_id = CP500-1
-# sent_id = pt-ud-train.conllu#s2626/pt
-# orig_file_sentence = 027#26
-1	Belmiro	Belmiro	PROPN	prop|M|S	_	0	root	_	MWE=Belmiro_de_Azevedo|MWEPOS=PROPN
-2	de	de	ADP	ADP	AdpType=Prep	3	case	_	_
-3	Azevedo	Azevedo	PROPN	PROPN	_	1	name	_	_
-4	em	em	ADP	prp	AdpType=Prep	5	case	_	_
-5	videoconferência	videoconferência	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
+# text = Belmiro de Azevedo em videoconferência
+# forest 1
+# source CETEMPúblico n=500 sec=eco sem=96b
+# sent_id = CP500-1
+# id 2627
+1	Belmiro	Belmiro	PROPN	PROP|M|S|@NPHR	_	0	root	_	MWE=Belmiro_de_Azevedo|MWEPOS=PROPN
+2	de	de	ADP	PRP|@N<	_	3	case	_	_
+3	Azevedo	Azevedo	PROPN	PROP|@P<	_	1	flat	_	_
+4	em	em	ADP	PRP|@N<	_	5	case	_	_
+5	videoconferência	videoconferência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP500-2
-# sent_id = pt-ud-train.conllu#s2627/pt
-# orig_file_sentence = 027#27
-1	Sonae	Sonae	PROPN	prop|F|S	Gender=Fem|Number=Sing	0	root	_	_
-2	de	de	ADP	prp	AdpType=Prep	3	case	_	_
-3	olhos	olho	NOUN	n|M|P	Gender=Masc|Number=Plur	1	nmod	_	_
-4	postos	pôr	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	_	_
+# text = Sonae de olhos postos no Brasil
+# forest 1
+# source CETEMPúblico n=500 sec=eco sem=96b
+# sent_id = CP500-2
+# id 2628
+1	Sonae	Sonae	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
+2	de	de	ADP	PRP|@N<	_	3	case	_	_
+3	olhos	olho	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	_
+4	postos	pôr	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	3	acl	_	_
 5-6	no	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
+5	em	em	ADP	<sam->|PRP|@<SA	_	7	case	_	_
+6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP500-3
-# sent_id = pt-ud-train.conllu#s2628/pt
-# orig_file_sentence = 027#28
-1	Belmiro	Belmiro	PROPN	prop|M|S	_	10	nsubj	_	MWE=Belmiro_de_Azevedo|MWEPOS=PROPN
-2	de	de	ADP	ADP	AdpType=Prep	3	case	_	_
-3	Azevedo	Azevedo	PROPN	PROPN	_	1	name	_	_
-4	,	,	PUNCT	punc	_	1	punct	_	_
-5	presidente	presidente	NOUN	n|M|S	_	1	nmod	_	MWE=presidente_da_Sonae|MWEPOS=NOUN
+# text = Belmiro de Azevedo, presidente da Sonae, acredita que nos próximos anos os negócios do grupo no Brasil vão crescer até chegarem à dimensão que actualmente têm em Portugal.
+# forest 1
+# source CETEMPúblico n=500 sec=eco sem=96b
+# sent_id = CP500-3
+# id 2629
+1	Belmiro	Belmiro	PROPN	PROP|M|S|@SUBJ>	_	10	nsubj	_	MWE=Belmiro_de_Azevedo|MWEPOS=PROPN
+2	de	de	ADP	PRP|@N<	_	3	case	_	_
+3	Azevedo	Azevedo	PROPN	PROP|@P<	_	1	flat	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+5	presidente	presidente	NOUN	<np-idf>|N|M|S|@N<PRED	_	1	nmod	_	MWE=presidente_da_Sonae|MWEPOS=NOUN
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Sonae	Sonae	NOUN	NOUN	_	5	compound	_	_
-9	,	,	PUNCT	punc	_	1	punct	_	_
-10	acredita	acreditar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-11	que	que	SCONJ	conj-s	_	24	mark	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Sonae	Sonae	NOUN	N|@P<	_	5	compound	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+10	acredita	acreditar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	que	que	SCONJ	KS|@SUB	_	24	mark	_	_
 12-13	nos	_	_	_	_	_	_	_	_
-12	em	em	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-13	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
-14	próximos	próximo	ADJ	adj|M|P	Gender=Masc|Number=Plur	15	amod	_	_
-15	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	25	nmod	_	_
-16	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
-17	negócios	negócio	NOUN	n|M|P	Gender=Masc|Number=Plur	24	nsubj	_	_
+12	em	em	ADP	<sam->|PRP|@ADVL>	_	15	case	_	_
+13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
+14	próximos	próximo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	15	amod	_	_
+15	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	obl	_	_
+16	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	negócios	negócio	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	24	nsubj	_	_
 18-19	do	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	grupo	grupo	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
+18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	grupo	grupo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
 21-22	no	_	_	_	_	_	_	_	_
-21	em	em	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-24	vão	ir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
-25	crescer	crescer	VERB	v-inf	VerbForm=Inf	24	xcomp	_	_
-26	até	até	ADP	prp	AdpType=Prep	27	mark	_	_
-27	chegarem	chegar	VERB	v-inf|3P	Number=Plur|Person=3|VerbForm=Inf	25	advcl	_	_
+21	em	em	ADP	<sam->|PRP|@N<	_	23	case	_	_
+22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
+24	vão	ir	VERB	<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
+25	crescer	crescer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	24	xcomp	_	_
+26	até	até	ADP	PRP|@<ADVL	_	27	mark	_	_
+27	chegarem	chegar	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	25	advcl	_	_
 28-29	à	_	_	_	_	_	_	_	_
-28	a	a	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
-30	dimensão	dimensão	NOUN	n|F|S	Gender=Fem|Number=Sing	27	dobj	_	_
-31	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	33	dobj	_	_
-32	actualmente	actualmente	ADV	adv	_	33	advmod	_	_
-33	têm	ter	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	acl	_	_
-34	em	em	ADP	prp	AdpType=Prep	35	case	_	_
-35	Portugal	Portugal	PROPN	prop|M|S	Gender=Masc|Number=Sing	33	nmod	_	_
-36	.	.	PUNCT	punc	_	10	punct	_	_
+28	a	a	ADP	<sam->|PRP|@<PIV	_	30	case	_	_
+29	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
+30	dimensão	dimensão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	27	obj	_	_
+31	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	33	obj	_	_
+32	actualmente	actualmente	ADV	ADV|@ADVL>	_	33	advmod	_	_
+33	têm	ter	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	acl	_	_
+34	em	em	ADP	PRP|@<ADVL	_	35	case	_	_
+35	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	33	obl	_	SpaceAfter=No
+36	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP500-4
-# sent_id = pt-ud-train.conllu#s2629/pt
-# orig_file_sentence = 027#29
-1	Apesar	apesar	ADV	prp	AdpType=Prep	3	mark	_	MWE=Apesar_de|MWEPOS=ADP
-2	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-3	manifestar	manifestar	VERB	v-inf	VerbForm=Inf	36	advcl	_	_
-4	sérias	sério	ADJ	adj|F|P	Gender=Fem|Number=Plur	5	amod	_	_
-5	dúvidas	dúvida	NOUN	n|F|P	Gender=Fem|Number=Plur	3	dobj	_	_
-6	e	e	CONJ	conj-c|<co-acc>	_	5	cc	_	_
-7	muitas	muito	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	_
-8	reservas	reserva	NOUN	n|F|P	Gender=Fem|Number=Plur	5	conj	_	_
-9	sobre	sobre	ADP	prp	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	evolução	evolução	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-12	recente	recente	ADJ	adj|F|S	Gender=Fem|Number=Sing	11	amod	_	_
+# text = Apesar de manifestar sérias dúvidas e muitas reservas sobre a evolução recente da economia brasileira e de criticar abertamente os constrangimentos da burocracia na criação de novos negócios, Belmiro não se poupa a profecias:
+# forest 1
+# source CETEMPúblico n=500 sec=eco sem=96b
+# sent_id = CP500-4
+# id 2630
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	3	mark	_	MWE=Apesar_de|MWEPOS=ADP
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	manifestar	manifestar	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	36	advcl	_	_
+4	sérias	sério	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	5	amod	_	_
+5	dúvidas	dúvida	NOUN	<first-cjt>|<np-idf>|N|F|P|@ACC>	Gender=Fem|Number=Plur	3	obj	_	_
+6	e	e	CCONJ	<co-acc>|KC|@CO	_	8	cc	_	_
+7	muitas	muito	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	8	det	_	_
+8	reservas	reserva	NOUN	<cjt>|<np-idf>|N|F|P|@ACC>	Gender=Fem|Number=Plur	5	conj	_	_
+9	sobre	sobre	ADP	PRP|@N<	_	11	case	_	_
+10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	evolução	evolução	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
+12	recente	recente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
 13-14	da	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	economia	economia	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-16	brasileira	brasileiro	ADJ	adj|F|S	Gender=Fem|Number=Sing	15	amod	_	_
-17	e	e	CONJ	conj-c|<co-prparg>	_	3	cc	_	_
-18	de	de	ADP	prp	AdpType=Prep	19	mark	_	_
-19	criticar	criticar	VERB	v-inf	VerbForm=Inf	3	conj	_	_
-20	abertamente	abertamente	ADV	adv	_	19	advmod	_	_
-21	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
-22	constrangimentos	constrangimento	NOUN	n|M|P	Gender=Masc|Number=Plur	19	dobj	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	economia	economia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+16	brasileira	brasileiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	_
+17	e	e	CCONJ	<co-icl>|<co-prparg>|KC|@CO	_	19	cc	_	_
+18	de	de	ADP	<cjt>|PRP|@ICL-P<	_	19	mark	_	_
+19	criticar	criticar	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	3	conj	_	_
+20	abertamente	abertamente	ADV	ADV|@<ADVL	_	19	advmod	_	_
+21	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+22	constrangimentos	constrangimento	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	19	obj	_	_
 23-24	da	_	_	_	_	_	_	_	_
-23	de	de	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	burocracia	burocracia	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
+23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
+24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	burocracia	burocracia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	_
 26-27	na	_	_	_	_	_	_	_	_
-26	em	em	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-27	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-28	criação	criação	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-29	de	de	ADP	prp	AdpType=Prep	31	case	_	_
-30	novos	novo	ADJ	adj|M|P	Gender=Masc|Number=Plur	31	amod	_	_
-31	negócios	negócio	NOUN	n|M|P	Gender=Masc|Number=Plur	28	nmod	_	_
-32	,	,	PUNCT	punc	_	36	punct	_	_
-33	Belmiro	Belmiro	PROPN	prop|M|S	Gender=Masc|Number=Sing	36	nsubj	_	_
-34	não	não	ADV	adv	_	36	neg	_	_
-35	se	se	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	dobj	_	_
-36	poupa	poupar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-37	a	a	ADP	prp	AdpType=Prep	38	case	_	_
-38	profecias	profecia	NOUN	n|F|P	Gender=Fem|Number=Plur	36	iobj	_	_
-39	:	:	PUNCT	punc	_	36	punct	_	_
+26	em	em	ADP	<sam->|PRP|@N<	_	28	case	_	_
+27	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+28	criação	criação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	_
+29	de	de	ADP	PRP|@N<ARG	_	31	case	_	_
+30	novos	novo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	31	amod	_	_
+31	negócios	negócio	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	28	nmod	_	SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	36	punct	_	_
+33	Belmiro	Belmiro	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	36	nsubj	_	_
+34	não	não	ADV	_	Polarity=Neg	36	advmod	_	_
+35	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	obj	_	_
+36	poupa	poupar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+37	a	a	ADP	PRP|@<PIV	_	38	case	_	_
+38	profecias	profecia	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	36	iobj	_	SpaceAfter=No
+39	:	:	PUNCT	PU|@PU	_	36	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP500-5
-# sent_id = pt-ud-train.conllu#s2630/pt
-# orig_file_sentence = 027#30
-1	«	«	PUNCT	punc	_	14	punct	_	_
-2	Vamos	ir	VERB	v-fin|PR|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
-3	ser	ser	VERB	v-inf	VerbForm=Inf	5	cop	_	_
-4	tão	tão	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
-5	grandes	grande	ADJ	adj|<n>|M/F|P	Number=Plur	2	xcomp	_	_
+# text = «Vamos ser tão grandes no Brasil como em Portugal», disse ontem, no Porto, o patrão da Sonae, no decorrer duma videoconferência que colocou em diálogo oito personalidades do mundo dos negócios dos dois países.
+# forest 1
+# source CETEMPúblico n=500 sec=eco sem=96b
+# sent_id = CP500-5
+# id 2631
+1	«	«	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+2	Vamos	ir	VERB	<aux>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
+3	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	cop	_	_
+4	tão	tão	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
+5	grandes	grande	ADJ	<n>|<COMP>|ADJ|M/F|P|@<SC	Number=Plur	2	xcomp	_	_
 6-7	no	_	_	_	_	_	_	_	_
-6	em	em	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-9	como	como	ADV	adv|<rel>|<prp>	PronType=Rel	5	advmod	_	_
-10	em	em	ADP	prp	AdpType=Prep	11	case	_	_
-11	Portugal	Portugal	PROPN	prop|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-12	»	»	PUNCT	punc	_	14	punct	_	_
-13	,	,	PUNCT	punc	_	14	punct	_	_
-14	disse	dizer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-15	ontem	ontem	ADV	adv	_	14	advmod	_	_
-16	,	,	PUNCT	punc	_	14	punct	_	_
+6	em	em	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	_
+9	como	como	ADV	<com>|PRP|@KOMP<	PronType=Rel	5	advmod	_	_
+10	em	em	ADP	PRP|@P<	_	11	case	_	_
+11	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	SpaceAfter=No
+12	»	»	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+14	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+15	ontem	ontem	ADV	ADV|@<ADVL	_	14	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 17-18	no	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	Porto	Porto	PROPN	prop|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-20	,	,	PUNCT	punc	_	14	punct	_	_
-21	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	patrão	patrão	NOUN	n|M|S	Gender=Masc|Number=Sing	14	nsubj	_	_
+17	em	em	ADP	<sam->|PRP|@<ADVL	_	19	case	_	_
+18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	Porto	Porto	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	patrão	patrão	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	14	nsubj	_	_
 23-24	da	_	_	_	_	_	_	_	_
-23	de	de	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	Sonae	Sonae	PROPN	prop|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-26	,	,	PUNCT	punc	_	14	punct	_	_
+23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
+24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	Sonae	Sonae	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 27-28	no	_	_	_	_	_	_	_	_
-27	em	em	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-29	decorrer	decorrer	NOUN	NOUN	_	27	mwe	_	_
+27	en	en	ADP	prp|<sam->	_	32	case	_	_
+28	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+29	decorrer	decorrer	NOUN	N|@P<	_	27	fixed	_	_
 30-31	duma	_	_	_	_	_	_	_	_
-30	de	de	ADP	ADP	AdpType=Prep	28	mwe	_	_
-31	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
-32	videoconferência	videoconferência	NOUN	n|F|S	Gender=Fem|Number=Sing	14	nmod	_	_
-33	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	34	nsubj	_	_
-34	colocou	colocar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	32	acl	_	_
-35	em	em	ADP	prp	AdpType=Prep	36	case	_	_
-36	diálogo	diálogo	NOUN	n|M|S	Gender=Masc|Number=Sing	34	nmod	_	_
-37	oito	oito	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	38	nummod	_	_
-38	personalidades	personalidade	NOUN	n|F|P	Gender=Fem|Number=Plur	34	dobj	_	_
+30	de	de	ADP	PRP|@N<	_	27	fixed	_	_
+31	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
+32	videoconferência	videoconferência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obl	_	_
+33	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	34	nsubj	_	_
+34	colocou	colocar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	32	acl	_	_
+35	em	em	ADP	PRP|@<OA	_	36	case	_	_
+36	diálogo	diálogo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	obl	_	_
+37	oito	oito	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	38	nummod	_	_
+38	personalidades	personalidade	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	34	obj	_	_
 39-40	do	_	_	_	_	_	_	_	_
-39	de	de	ADP	prp|<sam->	AdpType=Prep	41	case	_	_
-40	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
-41	mundo	mundo	NOUN	n|M|S	Gender=Masc|Number=Sing	38	nmod	_	_
+39	de	de	ADP	<sam->|PRP|@N<	_	41	case	_	_
+40	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
+41	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	38	nmod	_	_
 42-43	dos	_	_	_	_	_	_	_	_
-42	de	de	ADP	prp|<sam->	AdpType=Prep	44	case	_	_
-43	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	44	det	_	_
-44	negócios	negócio	NOUN	n|M|P	Gender=Masc|Number=Plur	41	nmod	_	_
+42	de	de	ADP	<sam->|PRP|@N<	_	44	case	_	_
+43	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	44	det	_	_
+44	negócios	negócio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	41	nmod	_	_
 45-46	dos	_	_	_	_	_	_	_	_
-45	de	de	ADP	prp|<sam->	AdpType=Prep	48	case	_	_
-46	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	48	det	_	_
-47	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	48	nummod	_	_
-48	países	país	NOUN	n|M|P	Gender=Masc|Number=Plur	44	nmod	_	_
-49	.	.	PUNCT	punc	_	14	punct	_	_
+45	de	de	ADP	<sam->|PRP|@N<	_	48	case	_	_
+46	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	48	det	_	_
+47	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	48	nummod	_	_
+48	países	país	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	44	nmod	_	SpaceAfter=No
+49	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 

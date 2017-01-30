@@ -1,43 +1,46 @@
-# distance_from_new = 0
-# new_sent_id = CP452-1
-# sent_id = pt-ud-train.conllu#s2384/pt
-# orig_file_sentence = 024#84
-1	The	The	PROPN	prop|M|P	_	0	root	_	MWE=The_Earth_Works_Group|MWEPOS=PROPN
-2	Earth	Earth	PROPN	PROPN	_	1	name	_	_
-3	Works	Works	PROPN	PROPN	_	1	name	_	_
-4	Group	Group	PROPN	PROPN	_	1	name	_	_
+# text = The Earth Works Group
+# forest 1
+# source CETEMPúblico n=452 sec=soc sem=92b
+# sent_id = CP452-1
+# id 2385
+1	The	The	PROPN	_	_	0	root	_	MWE=The_Earth_Works_Group|MWEPOS=PROPN
+2	Earth	Earth	PROPN	_	_	1	flat	_	_
+3	Works	Works	PROPN	_	_	1	flat	_	_
+4	Group	Group	PROPN	_	_	1	flat	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP452-2
-# sent_id = pt-ud-train.conllu#s2385/pt
-# orig_file_sentence = 024#85
-1	Economize	economizar	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	com	com	ADP	prp	AdpType=Prep	5	case	_	_
-3	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-4	seu	seu	DET	pron-det|<poss|3S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	_	_
-5	autoclismo	autoclismo	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
+# text = Economize com o seu autoclismo
+# forest 1
+# source CETEMPúblico n=452 sec=soc sem=92b
+# sent_id = CP452-2
+# id 2386
+1	Economize	economizar	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	com	com	ADP	PRP|@<ADVL	_	5	case	_	_
+3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+4	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	5	det	_	_
+5	autoclismo	autoclismo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP452-3
-# sent_id = pt-ud-train.conllu#s2386/pt
-# orig_file_sentence = 024#86
-1	Quarenta	quarenta	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
-2	por	por	ADP	n|M|S	AdpType=Prep	1	case	_	MWE=por_cento|MWEPOS=NOUN
-3	cento	cento	NOUN	NOUN	_	12	nsubj	_	_
+# text = Quarenta por cento da água potável usada em sua casa vai pela sanita abaixo.
+# forest 1
+# source CETEMPúblico n=452 sec=soc sem=92b
+# sent_id = CP452-3
+# id 2387
+1	Quarenta	quarenta	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
+2	por	por	ADP	_	_	1	case	_	MWE=por_cento|MWEPOS=NOUN
+3	cento	cento	NOUN	_	_	12	nsubj	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	água	água	NOUN	n|F|S	_	1	nmod	_	MWE=água_potável|MWEPOS=NOUN
-7	potável	potável	NOUN	NOUN	_	6	compound	_	_
-8	usada	usar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
-9	em	em	ADP	prp	AdpType=Prep	11	case	_	_
-10	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	11	det	_	_
-11	casa	casa	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-12	vai	ir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	água	água	NOUN	_	_	1	nmod	_	MWE=água_potável|MWEPOS=NOUN
+7	potável	potável	NOUN	_	_	6	compound	_	_
+8	usada	usar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
+9	em	em	ADP	PRP|@<ADVL	_	11	case	_	_
+10	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	11	det	_	_
+11	casa	casa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	_
+12	vai	ir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 13-14	pela	_	_	_	_	_	_	_	_
-13	por	por	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	sanita	sanita	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-16	abaixo	abaixo	ADV	adv	_	15	advmod	_	_
-17	.	.	PUNCT	punc	_	12	punct	_	_
+13	por	por	ADP	<sam->|PRP|@<SA	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	sanita	sanita	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
+16	abaixo	abaixo	ADV	ADV|@N<	_	15	advmod	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 

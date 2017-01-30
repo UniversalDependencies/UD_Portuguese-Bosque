@@ -1,235 +1,241 @@
-# distance_from_new = 0
-# new_sent_id = CF260-1
-# sent_id = pt-ud-train.conllu#s6137/pt
-# orig_file_sentence = 062#37
-1	Metáforas	metáfora	NOUN	n|F|P	Gender=Fem|Number=Plur	7	nsubj	_	_
-2	em	em	ADP	prp	AdpType=Prep	3	case	_	_
-3	política	política	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-4	quase	quase	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
-5	sempre	sempre	ADV	adv	_	7	advmod	_	_
-6	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-7	burras	burro	ADJ	adj|F|P	Gender=Fem|Number=Plur	0	root	_	_
-8	(	(	PUNCT	punc	_	7	punct	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	10	advmod	_	_
-10	aí	aí	ADV	adv|<-sam>	_	7	advmod	_	_
-11	tantos	tanto	DET	pron-det|<quant>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	12	det	_	_
-12	psicologismos	psicologismo	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
-13	,	,	PUNCT	punc	_	12	punct	_	_
-14	antropologismos	antropologismo	NOUN	n|<DERS>|M|P	Gender=Masc|Number=Plur	12	conj	_	_
-15	,	,	PUNCT	punc	_	12	punct	_	_
-16	literatices	literatice	NOUN	n|F|P	Gender=Fem|Number=Plur	12	conj	_	_
-17	...	...	PUNCT	punc	_	7	punct	_	_
-18	)	)	PUNCT	punc	_	7	punct	_	_
+# text = Metáforas em política quase sempre são burras (de aí tantos psicologismos, antropologismos, literatices ...)
+# forest 1
+# source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a &D
+# sent_id = CF260-1
+# id 1095
+1	Metáforas	metáfora	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
+2	em	em	ADP	PRP|@N<	_	3	case	_	_
+3	política	política	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+4	quase	quase	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
+5	sempre	sempre	ADV	ADV|@ADVL>	_	7	advmod	_	_
+6	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+7	burras	burro	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
+8	(	(	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+9	de	de	ADP	<sam->|PRP|@>A	_	10	advmod	_	_
+10	aí	aí	ADV	<first-cjt>|<-sam>|ADV|@<ADVL	_	7	advmod	_	_
+11	tantos	tanto	DET	<quant>|<KOMP>|<COMP>|DET|M|P|@>N	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	12	det	_	_
+12	psicologismos	psicologismo	NOUN	<cjt>|<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	obj	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+14	antropologismos	antropologismo	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	conj	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+16	literatices	literatice	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	conj	_	_
+17	...	...	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
+18	)	)	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CF260-2
-# sent_id = pt-ud-train.conllu#s6138/pt
-# orig_file_sentence = 062#38
-1	Em	em	ADP	prp	AdpType=Prep	2	case	_	_
-2	respeito	respeito	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
+# text = Em respeito à história, diga-se que o mal que a UDN fez ao país não decorreu de seu moralismo, mas de sua amoralidade.
+# forest 1
+# source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a #E
+# sent_id = CF260-2
+# id 1096
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
+2	respeito	respeito	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	_
 3-4	à	_	_	_	_	_	_	_	_
-3	a	a	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	história	história	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	,	,	PUNCT	punc	_	7	punct	_	_
+3	a	a	ADP	<sam->|PRP|@N<ARG	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	história	história	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 7-8	diga-se	_	_	_	_	_	_	_	_
 7	diga	dizer	VERB	v-fin|<hyfen>|PR|3S|SUBJ	Hyph=Yes|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	-se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	7	nsubj	_	_
-9	que	que	SCONJ	conj-s	_	20	mark	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	mal	mal	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nsubj	_	_
-12	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	15	dobj	_	_
-13	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	UDN	UDN	PROPN	prop|F|S	Gender=Fem|Number=Sing	15	nsubj	_	_
-15	fez	fazer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
+9	que	que	SCONJ	KS|@SUB	_	20	mark	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	mal	mal	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
+12	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	15	obj	_	_
+13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	UDN	UDN	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
+15	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl	_	_
 16-17	ao	_	_	_	_	_	_	_	_
-16	a	a	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-19	não	não	ADV	adv	_	20	neg	_	_
-20	decorreu	decorrer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	ccomp	_	_
-21	de	de	ADP	prp	AdpType=Prep	23	case	_	_
-22	seu	seu	DET	pron-det|<poss|3S>|<si>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	23	det	_	_
-23	moralismo	moralismo	NOUN	n|M|S	Gender=Masc|Number=Sing	20	dobj	_	_
-24	,	,	PUNCT	punc	_	23	punct	_	_
-25	mas	mas	CONJ	conj-c	_	23	cc	_	_
-26	de	de	ADP	prp	AdpType=Prep	28	case	_	_
-27	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	28	det	_	_
-28	amoralidade	amoralidade	NOUN	n|F|S	Gender=Fem|Number=Sing	23	conj	_	_
-29	.	.	PUNCT	punc	_	7	punct	_	_
+16	a	a	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
+17	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	_
+19	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
+20	decorreu	decorrer	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	ccomp	_	_
+21	de	de	ADP	<first-cjt>|PRP|@<PIV	_	23	case	_	_
+22	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	23	det	_	_
+23	moralismo	moralismo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obj	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+25	mas	mas	CCONJ	<co-piv>|KC|@CO	_	28	cc	_	_
+26	de	de	ADP	<cjt>|PRP|@<PIV	_	28	case	_	_
+27	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	28	det	_	_
+28	amoralidade	amoralidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	conj	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF260-3
-# sent_id = pt-ud-train.conllu#s6139/pt
-# orig_file_sentence = 062#39
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	mal	mal	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	residia	residir	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-4	,	,	PUNCT	punc	_	3	punct	_	_
-5	enfim	enfim	ADV	adv	_	3	advmod	_	_
-6	,	,	PUNCT	punc	_	3	punct	_	_
+# text = O mal residia, enfim, no fato de que a política real da UDN se traduzia no que conspirava entre quatro paredes, sem uma antena parabólica que lhe pusesse termo e sem uma imprensa independente que revelasse, livre de paixões partidárias, sua vocação para renunciar ao Estado de Direito ao toque da primeira corneta.
+# forest 1
+# source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF260-3
+# id 1097
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	mal	mal	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	residia	residir	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+5	enfim	enfim	ADV	ADV|@<ADVL	_	3	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 7-8	no	_	_	_	_	_	_	_	_
-7	em	em	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	fato	fato	NOUN	n|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-10	de	de	ADP	prp	AdpType=Prep	19	mark	_	_
-11	que	que	SCONJ	conj-s	_	19	mark	_	_
-12	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	política	política	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nsubj	_	_
-14	real	real	ADJ	adj|F|S	Gender=Fem|Number=Sing	13	amod	_	_
+7	em	em	ADP	<sam->|PRP|@<PIV	_	9	case	_	_
+8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	fato	fato	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obj	_	_
+10	de	de	ADP	PRP|@N<ARG	_	19	mark	_	_
+11	que	que	SCONJ	KS|@SUB	_	19	mark	_	_
+12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	política	política	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	19	nsubj	_	_
+14	real	real	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	_
 15-16	da	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	UDN	UDN	PROPN	prop|F|S	Gender=Fem|Number=Sing	13	nmod	_	_
-18	se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	19	dobj	_	_
-19	traduzia	traduzir	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	acl	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	UDN	UDN	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
+18	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	19	obj	_	_
+19	traduzia	traduzir	VERB	<mv>|<se-passive>|V|IMPF|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	acl	_	_
 20-21	no	_	_	_	_	_	_	_	_
-20	em	em	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-21	o	o	PRON	pron-det|<-sam>|M|S	Gender=Masc|Number=Sing	19	iobj	_	_
-22	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	23	nsubj	_	_
-23	conspirava	conspirar	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	21	acl	_	_
-24	entre	entre	ADP	prp	AdpType=Prep	26	case	_	_
-25	quatro	quatro	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	26	nummod	_	_
-26	paredes	parede	NOUN	n|F|P	Gender=Fem|Number=Plur	23	nmod	_	_
-27	,	,	PUNCT	punc	_	21	punct	_	_
-28	sem	sem	ADP	prp	AdpType=Prep	30	case	_	_
-29	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
-30	antena	antena	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nmod	_	_
-31	parabólica	parabólico	ADJ	adj|F|S	Gender=Fem|Number=Sing	30	amod	_	_
-32	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	34	nsubj	_	_
-33	lhe	ele	PRON	pron-pers|M|3S|DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	dobj	_	_
-34	pusesse	pôr	VERB	v-fin|IMPF|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	acl	_	_
-35	termo	termo	NOUN	n|M|S	Gender=Masc|Number=Sing	34	dobj	_	_
-36	e	e	CONJ	conj-c|<co-vfin>	_	30	cc	_	_
-37	sem	sem	ADP	prp	AdpType=Prep	39	case	_	_
-38	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
-39	imprensa	imprensa	NOUN	n|F|S	Gender=Fem|Number=Sing	30	conj	_	_
-40	independente	independente	ADJ	adj|F|S	Gender=Fem|Number=Sing	39	amod	_	_
-41	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	42	nsubj	_	_
-42	revelasse	revelar	VERB	v-fin|IMPF|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	39	acl	_	_
-43	,	,	PUNCT	punc	_	42	punct	_	_
-44	livre	livre	ADJ	adj|F|S	Gender=Fem|Number=Sing	42	advmod	_	_
-45	de	de	ADP	prp	AdpType=Prep	46	case	_	_
-46	paixões	paixão	NOUN	n|F|P	Gender=Fem|Number=Plur	44	nmod	_	_
-47	partidárias	partidário	ADJ	adj|F|P	Gender=Fem|Number=Plur	46	amod	_	_
-48	,	,	PUNCT	punc	_	42	punct	_	_
-49	sua	seu	DET	pron-det|<poss|3S>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	50	det	_	_
-50	vocação	vocação	NOUN	n|F|S	Gender=Fem|Number=Sing	42	dobj	_	_
-51	para	para	ADP	prp	AdpType=Prep	52	mark	_	_
-52	renunciar	renunciar	VERB	v-inf	VerbForm=Inf	50	acl	_	_
+20	em	em	ADP	<sam->|PRP|@<PIV	_	21	case	_	_
+21	o	o	PRON	<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing	19	iobj	_	_
+22	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	23	nsubj	_	_
+23	conspirava	conspirar	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	21	acl	_	_
+24	entre	entre	ADP	PRP|@<ADVL	_	26	case	_	_
+25	quatro	quatro	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	26	nummod	_	_
+26	paredes	parede	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	23	obl	_	SpaceAfter=No
+27	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+28	sem	sem	ADP	<first-cjt>|PRP|@N<PRED	_	30	case	_	_
+29	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
+30	antena	antena	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
+31	parabólica	parabólico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	30	amod	_	_
+32	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	34	nsubj	_	_
+33	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	34	obj	_	_
+34	pusesse	pôr	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	acl	_	_
+35	termo	termo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	34	obj	_	_
+36	e	e	CCONJ	<co-n<pred>|<co-vfin>|KC|@CO	_	39	cc	_	_
+37	sem	sem	ADP	<cjt>|PRP|@N<PRED	_	39	case	_	_
+38	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
+39	imprensa	imprensa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	conj	_	_
+40	independente	independente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	39	amod	_	_
+41	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	42	nsubj	_	_
+42	revelasse	revelar	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	39	acl	_	SpaceAfter=No
+43	,	,	PUNCT	PU|@PU	_	42	punct	_	_
+44	livre	livre	ADJ	ADJ|F|S|@<PRED	Gender=Fem|Number=Sing	42	advmod	_	_
+45	de	de	ADP	PRP|@A<	_	46	case	_	_
+46	paixões	paixão	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	44	obl	_	_
+47	partidárias	partidário	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	46	amod	_	SpaceAfter=No
+48	,	,	PUNCT	PU|@PU	_	42	punct	_	_
+49	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	50	det	_	_
+50	vocação	vocação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	42	obj	_	_
+51	para	para	ADP	PRP|@N<	_	52	mark	_	_
+52	renunciar	renunciar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	50	acl	_	_
 53-54	ao	_	_	_	_	_	_	_	_
-53	a	a	ADP	prp|<sam->	AdpType=Prep	55	case	_	_
-54	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
-55	Estado	estado	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	52	dobj	_	_
-56	de	de	ADP	prp	AdpType=Prep	57	case	_	_
-57	Direito	direito	NOUN	n|M|S	Gender=Masc|Number=Sing	55	nmod	_	_
+53	a	a	ADP	<sam->|PRP|@<PIV	_	55	case	_	_
+54	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
+55	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	52	obj	_	_
+56	de	de	ADP	PRP|@N<	_	57	case	_	_
+57	Direito	direito	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	55	nmod	_	_
 58-59	ao	_	_	_	_	_	_	_	_
-58	a	a	ADP	prp|<sam->	AdpType=Prep	60	case	_	_
-59	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_
-60	toque	toque	NOUN	n|M|S	Gender=Masc|Number=Sing	52	nmod	_	_
+58	a	a	ADP	<sam->|PRP|@<ADVL	_	60	case	_	_
+59	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_
+60	toque	toque	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	52	obl	_	_
 61-62	da	_	_	_	_	_	_	_	_
-61	de	de	ADP	prp|<sam->	AdpType=Prep	64	case	_	_
-62	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	64	det	_	_
-63	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	64	amod	_	_
-64	corneta	corneta	NOUN	n|F|S	Gender=Fem|Number=Sing	60	nmod	_	_
-65	.	.	PUNCT	punc	_	3	punct	_	_
+61	de	de	ADP	<sam->|PRP|@N<ARG	_	64	case	_	_
+62	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	64	det	_	_
+63	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	64	amod	_	_
+64	corneta	corneta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	60	nmod	_	SpaceAfter=No
+65	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF260-4
-# sent_id = pt-ud-train.conllu#s6140/pt
-# orig_file_sentence = 062#40
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	imprensa	imprensa	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nsubj	_	_
-3	independente	independente	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
-4	não	não	ADV	adv	_	5	neg	_	_
-5	quer	querer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	cassar	cassar	VERB	v-inf	VerbForm=Inf	5	xcomp	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	Itamar	Itamar	PROPN	prop|M|S	_	6	nmod	_	MWE=Itamar_Franco|MWEPOS=PROPN
-9	Franco	Franco	PROPN	PROPN	_	8	name	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	direito	direito	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	mark	_	_
-13	fazer	fazer	VERB	v-inf	VerbForm=Inf	11	acl	_	_
-14	seu	seu	DET	pron-det|<poss|3S>|<si>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	15	det	_	_
-15	sucessor	sucessor	NOUN	n|M|S	Gender=Masc|Number=Sing	13	dobj	_	_
-16	.	.	PUNCT	punc	_	5	punct	_	_
+# text = A imprensa independente não quer cassar de Itamar Franco o direito de fazer seu sucessor.
+# forest 1
+# source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF260-4
+# id 1098
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	imprensa	imprensa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	independente	independente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
+4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
+5	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	cassar	cassar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	5	xcomp	_	_
+7	de	de	ADP	PRP|@<ADVL	_	8	case	_	_
+8	Itamar	Itamar	PROPN	_	_	6	obl	_	MWE=Itamar_Franco|MWEPOS=PROPN
+9	Franco	Franco	PROPN	_	_	8	flat	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	direito	direito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
+12	de	de	ADP	PRP|@N<	_	13	mark	_	_
+13	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	acl	_	_
+14	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	15	det	_	_
+15	sucessor	sucessor	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF260-5
-# sent_id = pt-ud-train.conllu#s6141/pt
-# orig_file_sentence = 062#41
-1	Também	também	ADV	adv	_	4	advmod	_	_
-2	não	não	ADV	adv	_	4	neg	_	_
-3	lhe	ele	PRON	pron-pers|M|3S|DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	iobj	_	_
-4	pede	pedir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	que	que	SCONJ	conj-s	_	6	mark	_	_
-6	cometa	cometer	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-8	maior	grande	ADJ	adj|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing	9	amod	_	_
-9	pecado	pecado	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
+# text = Também não lhe pede que cometa o maior pecado dum governante, que é não governar e não servir ao público.
+# forest 1
+# source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF260-5
+# id 1099
+1	Também	também	ADV	ADV|@ADVL>	_	4	advmod	_	_
+2	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
+3	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	iobj	_	_
+4	pede	pedir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
+6	cometa	cometer	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|M|S|@>N	Degree=Cmp|Gender=Masc|Number=Sing	9	amod	_	_
+9	pecado	pecado	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
 10-11	dum	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp	AdpType=Prep	12	case	_	_
-11	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	governante	governante	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-13	,	,	PUNCT	punc	_	9	punct	_	_
-14	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	15	nsubj	_	_
-15	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl	_	_
-16	não	não	ADV	adv	_	17	neg	_	_
-17	governar	governar	VERB	v-inf	VerbForm=Inf	15	ccomp	_	_
-18	e	e	CONJ	conj-c	_	17	cc	_	_
-19	não	não	ADV	adv	_	20	neg	_	_
-20	servir	servir	VERB	v-inf	VerbForm=Inf	17	conj	_	_
+10	de	de	ADP	PRP|@N<	_	12	case	_	_
+11	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	governante	governante	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+14	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	15	nsubj	_	_
+15	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl	_	_
+16	não	não	ADV	_	Polarity=Neg	17	advmod	_	_
+17	governar	governar	VERB	<first-cjt>|<mv>|V|INF|@ICL-<SC	VerbForm=Inf	15	ccomp	_	_
+18	e	e	CCONJ	<co-icl>|KC|@CO	_	20	cc	_	_
+19	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
+20	servir	servir	VERB	<cjt>|<mv>|V|INF|@ICL-<SC	VerbForm=Inf	17	conj	_	_
 21-22	ao	_	_	_	_	_	_	_	_
-21	a	a	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	público	público	NOUN	n|M|S	Gender=Masc|Number=Sing	20	dobj	_	_
-24	.	.	PUNCT	punc	_	4	punct	_	_
+21	a	a	ADP	<sam->|PRP|@<PIV	_	23	case	_	_
+22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	público	público	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obj	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF260-6
-# sent_id = pt-ud-train.conllu#s6142/pt
-# orig_file_sentence = 062#42
-1	Que	que	SCONJ	conj-s	_	3	mark	_	_
-2	o	ele	PRON	pron-pers|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	dobj	_	_
-3	faça	fazer	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	,	,	PUNCT	punc	_	3	punct	_	_
+# text = Que o faça, no entanto, todos os dias do ano, não apenas quando o país está à boca da urna, e nos limites da lei.
+# forest 1
+# source CETENFolha n=260 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF260-6
+# id 1100
+1	Que	que	SCONJ	KS|@SUB	_	3	mark	_	_
+2	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
+3	faça	fazer	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5-6	no	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-7	entanto	entanto	NOUN	NOUN	_	5	mwe	_	_
-8	,	,	PUNCT	punc	_	3	punct	_	_
-9	todos	todo	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
-10	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
-11	dias	dia	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
+5	en	en	ADP	prp|<sam->	_	3	case	_	_
+6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+7	entanto	entanto	NOUN	N|M|S|@P<	_	5	fixed	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+9	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	11	det	_	_
+10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	dias	dia	NOUN	<np-def>|N|M|P|@<ADVL	Gender=Masc|Number=Plur	3	obl	_	_
 12-13	do	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-15	,	,	PUNCT	punc	_	3	punct	_	_
-16	não	não	ADV	adv	_	17	advmod	_	_
-17	apenas	apenas	ADV	adv	_	3	advmod	_	_
-18	quando	quando	ADV	adv|<rel>|<ks>	PronType=Rel	21	advmod	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	21	nsubj	_	_
-21	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+16	não	não	ADV	_	Polarity=Neg	17	advmod	_	_
+17	apenas	apenas	ADV	ADV|@<ADVL	_	3	advmod	_	_
+18	quando	quando	ADV	<rel>|ADV|@ADVL>	PronType=Rel	21	advmod	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	país	país	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	21	nsubj	_	_
+21	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
 22-23	à	_	_	_	_	_	_	_	_
-22	a	a	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	boca	boca	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nmod	_	_
+22	a	a	ADP	<first-cjt>|<sam->|PRP|@<ADVL	_	24	case	_	_
+23	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	boca	boca	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	_
 25-26	da	_	_	_	_	_	_	_	_
-25	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	urna	urna	NOUN	n|F|S	Gender=Fem|Number=Sing	24	nmod	_	_
-28	,	,	PUNCT	punc	_	24	punct	_	_
-29	e	e	CONJ	conj-c	_	24	cc	_	_
+25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
+26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	urna	urna	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+29	e	e	CCONJ	<co-advl>|KC|@CO	_	32	cc	_	_
 30-31	nos	_	_	_	_	_	_	_	_
-30	em	em	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-31	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
-32	limites	limite	NOUN	n|M|P	Gender=Masc|Number=Plur	24	conj	_	_
+30	em	em	ADP	<cjt>|<sam->|PRP|@<ADVL	_	32	case	_	_
+31	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
+32	limites	limite	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	conj	_	_
 33-34	da	_	_	_	_	_	_	_	_
-33	de	de	ADP	prp|<sam->	AdpType=Prep	35	case	_	_
-34	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-35	lei	lei	NOUN	n|F|S	Gender=Fem|Number=Sing	32	nmod	_	_
-36	.	.	PUNCT	punc	_	3	punct	_	_
+33	de	de	ADP	<sam->|PRP|@N<	_	35	case	_	_
+34	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
+35	lei	lei	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	32	nmod	_	SpaceAfter=No
+36	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

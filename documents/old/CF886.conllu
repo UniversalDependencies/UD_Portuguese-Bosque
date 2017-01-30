@@ -1,78 +1,80 @@
-# distance_from_new = 0
-# new_sent_id = CF886-1
-# sent_id = pt-ud-train.conllu#s8780/pt
-# orig_file_sentence = 088#80
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	estratégia	estratégia	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
-3	montada	montar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
-4	por	por	ADP	prp	AdpType=Prep	5	case	_	_
-5	Quércia	Quércia	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	dobj	_	_
-6	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	objetivo	objetivo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
-9	de	de	ADP	prp	AdpType=Prep	10	mark	_	_
-10	ganhar	ganhar	VERB	v-inf	VerbForm=Inf	8	acl	_	_
-11	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	prévia	prévia	NOUN	n|F|S	Gender=Fem|Number=Sing	10	dobj	_	_
+# text = A estratégia montada por Quércia tem o objetivo de ganhar a prévia do PMDB que vai definir o candidato do partido à Presidência no próximo dia 15, bem como manter o PMDB unido durante a campanha.
+# forest 1
+# source CETENFolha n=886 cad=Brasil sec=pol sem=94b
+# sent_id = CF886-1
+# id 3738
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	estratégia	estratégia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
+3	montada	montar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
+4	por	por	ADP	PRP|@PASS	_	5	case	_	_
+5	Quércia	Quércia	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	obj	_	_
+6	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	objetivo	objetivo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
+9	de	de	ADP	PRP|@N<ARG	_	10	mark	_	_
+10	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
+11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	prévia	prévia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	PMDB	PMDB	PROPN	prop|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-16	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	17	nsubj	_	_
-17	vai	ir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl	_	_
-18	definir	definir	VERB	v-inf	VerbForm=Inf	33	advcl	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	candidato	candidato	NOUN	n|M|S	Gender=Masc|Number=Sing	18	dobj	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	PMDB	PMDB	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
+16	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	17	nsubj	_	_
+17	vai	ir	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl	_	_
+18	definir	definir	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	33	advcl	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	candidato	candidato	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
 21-22	do	_	_	_	_	_	_	_	_
-21	de	de	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	partido	partido	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
+21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
+22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	partido	partido	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
 24-25	à	_	_	_	_	_	_	_	_
-24	a	a	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	Presidência	presidência	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	23	nmod	_	_
+24	a	a	ADP	<sam->|PRP|@N<	_	26	case	_	_
+25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	Presidência	presidência	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
 27-28	no	_	_	_	_	_	_	_	_
-27	em	em	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-29	próximo	próximo	ADJ	adj|M|S	Gender=Masc|Number=Sing	30	amod	_	_
-30	dia	dia	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
-31	15	15	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	30	nummod	_	_
-32	,	,	PUNCT	punc	_	33	punct	_	_
-33	bem	bem	NOUN	adv|<kc>	_	17	cc	_	MWE=bem_como|MWEPOS=ADV
-34	como	como	SCONJ	SCONJ	_	33	mwe	_	_
-35	manter	manter	VERB	v-inf	VerbForm=Inf	33	advcl	_	_
-36	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	PMDB	PMDB	PROPN	prop|M|S	Gender=Masc|Number=Sing	35	iobj	_	_
-38	unido	unir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	35	xcomp	_	_
-39	durante	durante	ADP	prp	AdpType=Prep	41	case	_	_
-40	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	campanha	campanha	NOUN	n|F|S	Gender=Fem|Number=Sing	35	nmod	_	_
-42	.	.	PUNCT	punc	_	6	punct	_	_
+27	em	em	ADP	<sam->|PRP|@<ADVL	_	30	case	_	_
+28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+29	próximo	próximo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	30	amod	_	_
+30	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	_
+31	15	15	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	30	nummod	_	SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+33	bem	bem	NOUN	PRP|@CO	_	17	cc	_	MWE=bem_como|MWEPOS=ADV
+34	como	como	SCONJ	N|M|S|@P<	_	33	fixed	_	_
+35	manter	manter	VERB	<cjt>|V|INF|@ICL-PMV	VerbForm=Inf	33	advcl	_	_
+36	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
+37	PMDB	PMDB	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	35	iobj	_	_
+38	unido	unir	VERB	<mv>|V|PCP|M|S|@ICL-<OC	Gender=Masc|Number=Sing|VerbForm=Part	35	xcomp	_	_
+39	durante	durante	ADP	PRP|@<ADVL	_	41	case	_	_
+40	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+41	campanha	campanha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	35	obl	_	SpaceAfter=No
+42	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF886-2
-# sent_id = pt-ud-train.conllu#s8781/pt
-# orig_file_sentence = 088#81
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	ataques	ataque	NOUN	n|M|P	Gender=Masc|Number=Plur	7	nsubjpass	_	_
-3	a	a	ADP	prp	AdpType=Prep	4	case	_	_
-4	Sarney	Sarney	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-5	só	só	ADV	adv	_	7	advmod	_	_
-6	serão	ser	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	7	auxpass	_	_
-7	feitos	fazer	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-8	se	se	SCONJ	conj-s	_	12	mark	_	_
-9	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	contabilidade	contabilidade	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nsubj	_	_
-11	quercista	quercista	ADJ	adj|F|S	Gender=Fem|Number=Sing	10	amod	_	_
-12	constatar	constatar	VERB	v-fin|FUT|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	advcl	_	_
-13	que	que	SCONJ	conj-s	_	20	mark	_	_
-14	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	vitória	vitória	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nsubj	_	_
+# text = Os ataques a Sarney só serão feitos se a contabilidade quercista constatar que a vitória na prévia está ameaçada.
+# forest 1
+# source CETENFolha n=886 cad=Brasil sec=pol sem=94b
+# sent_id = CF886-2
+# id 3739
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	ataques	ataque	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
+3	a	a	ADP	PRP|@N<ARG	_	4	case	_	_
+4	Sarney	Sarney	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+5	só	só	ADV	ADV|@ADVL>	_	7	advmod	_	_
+6	serão	ser	VERB	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+7	feitos	fazer	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	6	ccomp	_	_
+8	se	se	SCONJ	KS|@SUB	_	12	mark	_	_
+9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	contabilidade	contabilidade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
+11	quercista	quercista	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
+12	constatar	constatar	VERB	<mv>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	advcl	_	_
+13	que	que	SCONJ	KS|@SUB	_	20	mark	_	_
+14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	vitória	vitória	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
 16-17	na	_	_	_	_	_	_	_	_
-16	em	em	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	prévia	prévia	NOUN	n|F|S	Gender=Fem|Number=Sing	15	nmod	_	_
-19	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
-20	ameaçada	ameaçar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	12	ccomp	_	_
-21	.	.	PUNCT	punc	_	7	punct	_	_
+16	em	em	ADP	<sam->|PRP|@N<ARG	_	18	case	_	_
+17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	prévia	prévia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
+19	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
+20	ameaçada	ameaçar	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	12	ccomp	_	SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

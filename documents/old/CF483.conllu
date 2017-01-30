@@ -1,89 +1,92 @@
-# distance_from_new = 0
-# new_sent_id = CF483-1
-# sent_id = pt-ud-train.conllu#s7079/pt
-# orig_file_sentence = 071#79
-1	Escolas	escola	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nsubj	_	_
-2	dão	dar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	orientação	orientação	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
-4	vocacional	vocacional	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
-5	a	a	ADP	prp	AdpType=Prep	6	case	_	_
-6	preço	preço	NOUN	n|M|S	Gender=Masc|Number=Sing	2	dobj	_	_
-7	baixo	baixo	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
+# text = Escolas dão orientação vocacional a preço baixo
+# forest 1
+# source CETENFolha n=483 cad=Empregos sec=eco sem=94a
+# sent_id = CF483-1
+# id 2037
+1	Escolas	escola	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	2	nsubj	_	_
+2	dão	dar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	orientação	orientação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+4	vocacional	vocacional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	_
+5	a	a	ADP	PRP|@<PIV	_	6	case	_	_
+6	preço	preço	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obj	_	_
+7	baixo	baixo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF483-3
-# sent_id = pt-ud-train.conllu#s7080/pt
-# orig_file_sentence = 071#80
-1	Quem	quem	PRON	pron-indp|<rel>|M/F|S	Number=Sing|PronType=Rel	4	nsubj	_	_
-2	ainda	ainda	ADV	adv	_	3	advmod	_	_
-3	não	não	ADV	adv	_	4	neg	_	_
-4	escolheu	escolher	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	csubj	_	_
-5	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	6	det	_	_
-6	carreira	carreira	NOUN	n|F|S	Gender=Fem|Number=Sing	4	dobj	_	_
-7	ou	ou	CONJ	conj-c	_	4	cc	_	_
-8	sonha	sonhar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
-9	dar	dar	VERB	v-inf	VerbForm=Inf	8	xcomp	_	_
-10	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	guinada	guinada	NOUN	n|F|S	Gender=Fem|Number=Sing	9	dobj	_	_
+# text = Quem ainda não escolheu sua carreira ou sonha dar uma guinada na vida profissional pode recorrer aos serviços de orientação vocacional oferecidos por algumas instituições em São Paulo.
+# forest 1
+# source CETENFolha n=483 cad=Empregos sec=eco sem=94a
+# sent_id = CF483-3
+# id 2038
+1	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Number=Sing|PronType=Rel	4	nsubj	_	_
+2	ainda	ainda	ADV	ADV|@>A	_	3	advmod	_	_
+3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
+4	escolheu	escolher	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	csubj	_	_
+5	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	6	det	_	_
+6	carreira	carreira	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
+7	ou	ou	CCONJ	<co-subj>|KC|@CO	_	8	cc	_	_
+8	sonha	sonhar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+9	dar	dar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	8	xcomp	_	_
+10	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	guinada	guinada	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
 12-13	na	_	_	_	_	_	_	_	_
-12	em	em	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	vida	vida	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-15	profissional	profissional	ADJ	adj|F|S	Gender=Fem|Number=Sing	14	amod	_	_
-16	pode	poder	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-17	recorrer	recorrer	VERB	v-inf	VerbForm=Inf	16	xcomp	_	_
+12	em	em	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	vida	vida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+15	profissional	profissional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	amod	_	_
+16	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+17	recorrer	recorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
 18-19	aos	_	_	_	_	_	_	_	_
-18	a	a	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
-20	serviços	serviço	NOUN	n|M|P	Gender=Masc|Number=Plur	17	dobj	_	_
-21	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-22	orientação	orientação	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-23	vocacional	vocacional	ADJ	adj|F|S	Gender=Fem|Number=Sing	22	amod	_	_
-24	oferecidos	oferecer	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	20	acl	_	_
-25	por	por	ADP	prp	AdpType=Prep	27	case	_	_
-26	algumas	algum	DET	pron-det|<quant>|F|P	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	27	det	_	_
-27	instituições	instituição	NOUN	n|F|P	Gender=Fem|Number=Plur	24	dobj	_	_
-28	em	em	ADP	prp	AdpType=Prep	29	case	_	_
-29	São	São	PROPN	prop|M|S	_	24	nmod	_	MWE=São_Paulo|MWEPOS=PROPN
-30	Paulo	Paulo	PROPN	PROPN	_	29	name	_	_
-31	.	.	PUNCT	punc	_	16	punct	_	_
+18	a	a	ADP	<sam->|PRP|@<PIV	_	20	case	_	_
+19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
+20	serviços	serviço	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obj	_	_
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	orientação	orientação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
+23	vocacional	vocacional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
+24	oferecidos	oferecer	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	20	acl	_	_
+25	por	por	ADP	PRP|@PASS	_	27	case	_	_
+26	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	27	det	_	_
+27	instituições	instituição	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	24	obj	_	_
+28	em	em	ADP	PRP|@<ADVL	_	29	case	_	_
+29	São	São	PROPN	_	_	24	obl	_	MWE=São_Paulo|MWEPOS=PROPN
+30	Paulo	Paulo	PROPN	_	_	29	flat	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF483-4
-# sent_id = pt-ud-train.conllu#s7081/pt
-# orig_file_sentence = 071#81
-1	Geralmente	geralmente	ADV	adv	_	2	advmod	_	_
-2	procurados	procurar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	10	advcl	_	_
-3	por	por	ADP	prp	AdpType=Prep	4	case	_	_
-4	estudantes	estudante	NOUN	n|M|P	Gender=Masc|Number=Plur	2	dobj	_	_
-5	adolescentes	adolescente	ADJ	adj|M|P	Gender=Masc|Number=Plur	4	amod	_	_
-6	,	,	PUNCT	punc	_	10	punct	_	_
-7	esses	esse	DET	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	8	det	_	_
-8	serviços	serviço	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nsubjpass	_	_
-9	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	auxpass	_	_
-10	abertos	abrir	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-11	a	a	ADP	prp	AdpType=Prep	13	case	_	_
-12	qualquer	qualquer	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	13	det	_	_
-13	interessado	interessado	NOUN	n|M|S	Gender=Masc|Number=Sing	10	dobj	_	_
-14	e	e	CONJ	conj-c	_	10	cc	_	_
-15	têm	ter	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
-16	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	vantagem	vantagem	NOUN	n|F|S	Gender=Fem|Number=Sing	15	dobj	_	_
-18	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-19	ser	ser	VERB	v-inf	VerbForm=Inf	20	cop	_	_
-20	gratuitos	gratuito	ADJ	adj|M|P	Gender=Masc|Number=Plur	17	acl	_	_
-21	ou	ou	CONJ	conj-c|<co-prparg>	_	20	cc	_	_
-22	cobrar	cobrar	VERB	v-inf	VerbForm=Inf	20	conj	_	_
-23	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	22	dobj	_	_
-24	baixos	baixo	ADJ	adj|M|P	Gender=Masc|Number=Plur	23	amod	_	_
-25	se	se	SCONJ	conj-s	_	15	advmod	_	_
-26	comparados	comparar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	25	advcl	_	_
+# text = Geralmente procurados por estudantes adolescentes, esses serviços são abertos a qualquer interessado e têm a vantagem de ser gratuitos ou cobrar preços baixos se comparados aos de empresas de consultoria.
+# forest 1
+# source CETENFolha n=483 cad=Empregos sec=eco sem=94a
+# sent_id = CF483-4
+# id 2039
+1	Geralmente	geralmente	ADV	ADV|@ADVL>	_	2	advmod	_	_
+2	procurados	procurar	VERB	<mv>|V|PCP|M|P|@ICL-PRED>	Gender=Masc|Number=Plur|VerbForm=Part	10	advcl	_	_
+3	por	por	ADP	<cjt>|PRP|@PASS	_	4	case	_	_
+4	estudantes	estudante	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	obj	_	_
+5	adolescentes	adolescente	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	4	amod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+7	esses	esse	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	8	det	_	_
+8	serviços	serviço	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
+9	são	ser	VERB	<first-cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	abertos	abrir	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	9	ccomp	_	_
+11	a	a	ADP	PRP|@<PIV	_	13	case	_	_
+12	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	13	det	_	_
+13	interessado	interessado	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obj	_	_
+14	e	e	CCONJ	<co-sta>|KC|@CO	_	15	cc	_	_
+15	têm	ter	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
+16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	vantagem	vantagem	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
+18	de	de	ADP	PRP|@N<	_	20	case	_	_
+19	ser	ser	AUX	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	cop	_	_
+20	gratuitos	gratuito	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	17	acl	_	_
+21	ou	ou	CCONJ	<co-icl>|<co-prparg>|KC|@CO	_	22	cc	_	_
+22	cobrar	cobrar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	conj	_	_
+23	preços	preço	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	22	obj	_	_
+24	baixos	baixo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	23	amod	_	_
+25	se	se	SCONJ	KS|@SUB	_	15	advmod	_	_
+26	comparados	comparar	VERB	<cjt>|<mv>|V|PCP|M|P|@ICL-<ADVL	Gender=Masc|Number=Plur|VerbForm=Part	25	advcl	_	_
 27-28	aos	_	_	_	_	_	_	_	_
-27	a	a	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-28	os	o	PRON	pron-det|<-sam>|M|P	Gender=Masc|Number=Plur	26	dobj	_	_
-29	de	de	ADP	prp	AdpType=Prep	30	case	_	_
-30	empresas	empresa	NOUN	n|F|P	Gender=Fem|Number=Plur	28	nmod	_	_
-31	de	de	ADP	prp	AdpType=Prep	32	case	_	_
-32	consultoria	consultoria	NOUN	n|F|S	Gender=Fem|Number=Sing	30	nmod	_	_
-33	.	.	PUNCT	punc	_	10	punct	_	_
+27	a	a	ADP	<sam->|PRP|@<PIV	_	28	case	_	_
+28	os	o	PRON	<-sam>|DET|M|P|@P<	Gender=Masc|Number=Plur	26	obj	_	_
+29	de	de	ADP	PRP|@N<	_	30	case	_	_
+30	empresas	empresa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	28	nmod	_	_
+31	de	de	ADP	PRP|@N<	_	32	case	_	_
+32	consultoria	consultoria	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	nmod	_	SpaceAfter=No
+33	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 

@@ -1,136 +1,141 @@
-# distance_from_new = 0
-# new_sent_id = CP675-1
-# sent_id = pt-ud-train.conllu#s3489/pt
-# orig_file_sentence = 035#89
-1	Convocados	convocar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-2	italianos	italiano	NOUN	n|M|P	Gender=Masc|Number=Plur	1	nsubj	_	_
-3	para	para	ADP	prp	AdpType=Prep	6	case	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-5	«	«	PUNCT	punc	_	6	punct	_	_
-6	Mundial	Mundial	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-7	»	»	PUNCT	punc	_	6	punct	_	_
+# text = Convocados italianos para o «Mundial»
+# forest 1
+# source CETEMPúblico n=675 sec=des sem=94a
+# sent_id = CP675-1
+# id 3490
+1	Convocados	convocar	VERB	<mv>|V|PCP|M|P|@ICL-UTT	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
+2	italianos	italiano	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	1	nsubj	_	_
+3	para	para	ADP	PRP|@<ADVL	_	6	case	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+5	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+6	Mundial	Mundial	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	SpaceAfter=No
+7	»	»	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP675-2
-# sent_id = pt-ud-train.conllu#s3490/pt
-# orig_file_sentence = 035#90
-1	Vialli	Vialli	PROPN	prop|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	e	e	CONJ	conj-c	_	1	cc	_	_
-3	Lentini	Lentini	PROPN	prop|M|S	Gender=Masc|Number=Sing	1	conj	_	_
-4	de	de	ADP	pp	AdpType=Prep	1	advmod	_	MWE=de_fora|MWEPOS=ADV
-5	fora	fora	NOUN	NOUN	_	4	mwe	_	_
+# text = Vialli e Lentini de fora
+# forest 1
+# source CETEMPúblico n=675 sec=des sem=94a
+# sent_id = CP675-2
+# id 3491
+1	Vialli	Vialli	PROPN	<first-cjt>|PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	e	e	CCONJ	KC|@CO	_	3	cc	_	_
+3	Lentini	Lentini	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	1	conj	_	_
+4	de	de	ADP	PRP|@N<	_	1	advmod	_	MWE=de_fora|MWEPOS=ADV
+5	fora	fora	NOUN	N|@P<	_	4	fixed	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP675-3
-# sent_id = pt-ud-train.conllu#s3491/pt
-# orig_file_sentence = 035#91
-1	Arrigo	Arrigo	PROPN	prop|M|S	_	10	nsubj	_	MWE=Arrigo_Sacchi|MWEPOS=PROPN
-2	Sacchi	Sacchi	PROPN	PROPN	_	1	name	_	_
-3	,	,	PUNCT	punc	_	1	punct	_	_
-4	seleccionador	seleccionador	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
-5	nacional	nacional	ADJ	adj|M|S	Gender=Masc|Number=Sing	4	amod	_	_
-6	italiano	italiano	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	futebol	futebol	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-9	,	,	PUNCT	punc	_	1	punct	_	_
-10	indicou	indicar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-11	ontem	ontem	ADV	adv	_	10	advmod	_	_
-12	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
-13	22	22	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	_
-14	jogadores	jogador	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
-15	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	16	nsubj	_	_
-16	vão	ir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
-17	representar	representar	VERB	v-inf	VerbForm=Inf	16	xcomp	_	_
-18	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	17	dobj	_	_
+# text = Arrigo Sacchi, seleccionador nacional italiano de futebol, indicou ontem os 22 jogadores que vão representar o país no Mundial de Futebol dos Estados Unidos.
+# forest 1
+# source CETEMPúblico n=675 sec=des sem=94a
+# sent_id = CP675-3
+# id 3492
+1	Arrigo	Arrigo	PROPN	_	_	10	nsubj	_	MWE=Arrigo_Sacchi|MWEPOS=PROPN
+2	Sacchi	Sacchi	PROPN	_	_	1	flat	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+4	seleccionador	seleccionador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	nmod	_	_
+5	nacional	nacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
+6	italiano	italiano	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	4	nmod	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	futebol	futebol	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+10	indicou	indicar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+11	ontem	ontem	ADV	ADV|@<ADVL	_	10	advmod	_	_
+12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+13	22	22	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	_
+14	jogadores	jogador	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	obj	_	_
+15	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	16	nsubj	_	_
+16	vão	ir	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl	_	_
+17	representar	representar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
+18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	país	país	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	obj	_	_
 20-21	no	_	_	_	_	_	_	_	_
-20	em	em	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-21	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Mundial	Mundial	PROPN	prop|M|S	_	17	nmod	_	MWE=Mundial_de_Futebol|MWEPOS=PROPN
-23	de	de	ADP	ADP	AdpType=Prep	24	case	_	_
-24	Futebol	Futebol	PROPN	PROPN	_	22	name	_	_
+20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
+21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	Mundial	Mundial	PROPN	PROP|M|S|@P<	_	17	obl	_	MWE=Mundial_de_Futebol|MWEPOS=PROPN
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	Futebol	Futebol	PROPN	PROP|@P<	_	22	flat	_	_
 25-26	dos	_	_	_	_	_	_	_	_
-25	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
-27	Estados	Estados	PROPN	prop|M|P	_	22	nmod	_	MWE=Estados_Unidos|MWEPOS=PROPN
-28	Unidos	Unidos	PROPN	PROPN	_	27	name	_	_
-29	.	.	PUNCT	punc	_	10	punct	_	_
+25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
+26	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
+27	Estados	Estados	PROPN	PROP|M|P|@P<	_	22	nmod	_	MWE=Estados_Unidos|MWEPOS=PROPN
+28	Unidos	Unidos	PROPN	PROP|@N<	_	27	flat	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP675-4
-# sent_id = pt-ud-train.conllu#s3492/pt
-# orig_file_sentence = 035#92
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	atacantes	atacante	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nsubj	_	_
-3	Gianluca	Gianluca	PROPN	prop|M|S	_	2	nmod	_	MWE=Gianluca_Vialli|MWEPOS=PROPN
-4	Vialli	Vialli	PROPN	PROPN	_	3	name	_	_
-5	e	e	CONJ	conj-c|<co-postnom>	_	3	cc	_	_
-6	Gianluigi	Gianluigi	PROPN	prop|M|S	_	3	conj	_	MWE=Gianluigi_Lentini|MWEPOS=PROPN
-7	Lentini	Lentini	PROPN	PROPN	_	6	name	_	_
-8	ficaram	ficar	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-9	de	de	ADP	pp	AdpType=Prep	8	advmod	_	MWE=de_fora|MWEPOS=ADV
-10	fora	fora	NOUN	NOUN	_	9	mwe	_	_
-11	.	.	PUNCT	punc	_	8	punct	_	_
+# text = Os atacantes Gianluca Vialli e Gianluigi Lentini ficaram de fora.
+# forest 1
+# source CETEMPúblico n=675 sec=des sem=94a
+# sent_id = CP675-4
+# id 3493
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	atacantes	atacante	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
+3	Gianluca	Gianluca	PROPN	_	_	2	nmod	_	MWE=Gianluca_Vialli|MWEPOS=PROPN
+4	Vialli	Vialli	PROPN	_	_	3	flat	_	_
+5	e	e	CCONJ	<co-postnom>|KC|@CO	_	6	cc	_	_
+6	Gianluigi	Gianluigi	PROPN	_	_	3	conj	_	MWE=Gianluigi_Lentini|MWEPOS=PROPN
+7	Lentini	Lentini	PROPN	_	_	6	flat	_	_
+8	ficaram	ficar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	de	de	ADP	PRP|@<SA	_	8	advmod	_	MWE=de_fora|MWEPOS=ADV
+10	fora	fora	NOUN	ADV|@P<	_	9	fixed	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP675-5
-# sent_id = pt-ud-train.conllu#s3493/pt
-# orig_file_sentence = 035#93
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Milan	Milan	PROPN	prop|M|S	Gender=Masc|Number=Sing	20	nsubj	_	_
-3	--	--	PUNCT	punc	_	2	punct	_	_
-4	finalista	finalista	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
-5	,	,	PUNCT	punc	_	4	punct	_	_
-6	com	com	ADP	prp	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Barcelona	Barcelona	PROPN	prop|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-9	,	,	PUNCT	punc	_	4	punct	_	_
+# text = O Milan -- finalista, com o Barcelona, da Liga dos Campeões Europeus -- é o clube que mais jogadores fornece à selecção transalpina, com sete futebolistas, seguindo-se o Parma, com cinco, a Juventus e o Lázio de Roma, ambos com três.
+# forest 1
+# source CETEMPúblico n=675 sec=des sem=94a
+# sent_id = CP675-5
+# id 3494
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Milan	Milan	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
+3	--	--	PUNCT	PU|@PU	_	2	punct	_	_
+4	finalista	finalista	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+6	com	com	ADP	PRP|@A<	_	8	case	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Barcelona	Barcelona	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 10-11	da	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	Liga	Liga	PROPN	prop|F|S	_	4	nmod	_	MWE=Liga_dos_Campeões_Europeus|MWEPOS=PROPN
+10	de	de	ADP	<sam->|PRP|@A<	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Liga	Liga	PROPN	PROP|F|S|@P<	_	4	obl	_	MWE=Liga_dos_Campeões_Europeus|MWEPOS=PROPN
 13-14	dos	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
-15	Campeões	Campeões	PROPN	PROPN	_	12	name	_	_
-16	Europeus	Europeus	PROPN	PROPN	_	15	name	_	_
-17	--	--	PUNCT	punc	_	2	punct	_	_
-18	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	clube	clube	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-21	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	24	nsubj	_	_
-22	mais	muito	DET	pron-det|<quant>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	23	det	_	_
-23	jogadores	jogador	NOUN	n|M|P	Gender=Masc|Number=Plur	24	dobj	_	_
-24	fornece	fornecer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
+15	Campeões	Campeões	PROPN	PROP|@P<	_	12	flat	_	_
+16	Europeus	Europeus	PROPN	PROP|@N<	_	15	flat	_	_
+17	--	--	PUNCT	PU|@PU	_	2	punct	_	_
+18	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	clube	clube	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+21	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	24	nsubj	_	_
+22	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|M|P|@>N	Degree=Cmp|Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	23	det	_	_
+23	jogadores	jogador	NOUN	<np-idf>|N|M|P|@ACC>	Gender=Masc|Number=Plur	24	obj	_	_
+24	fornece	fornecer	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl	_	_
 25-26	à	_	_	_	_	_	_	_	_
-25	a	a	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	selecção	selecção	NOUN	n|F|S	Gender=Fem|Number=Sing	24	dobj	_	_
-28	transalpina	transalpino	ADJ	adj|F|S	Gender=Fem|Number=Sing	27	amod	_	_
-29	,	,	PUNCT	punc	_	24	punct	_	_
-30	com	com	ADP	prp	AdpType=Prep	32	case	_	_
-31	sete	sete	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	32	nummod	_	_
-32	futebolistas	futebolista	NOUN	n|M|P	Gender=Masc|Number=Plur	24	nmod	_	_
-33	,	,	PUNCT	punc	_	24	punct	_	_
+25	a	a	ADP	<sam->|PRP|@<PIV	_	27	case	_	_
+26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	selecção	selecção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	obj	_	_
+28	transalpina	transalpino	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	27	amod	_	SpaceAfter=No
+29	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+30	com	com	ADP	PRP|@<ADVL	_	32	case	_	_
+31	sete	sete	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	32	nummod	_	_
+32	futebolistas	futebolista	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	obl	_	SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 34-35	seguindo-se	_	_	_	_	_	_	_	_
 34	seguindo	seguir	VERB	v-ger|<hyfen>	Hyph=Yes|VerbForm=Ger	24	advcl	_	_
-35	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	34	dobj	_	_
-36	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	Parma	Parma	PROPN	prop|M|S	Gender=Masc|Number=Sing	34	nsubj	_	_
-38	,	,	PUNCT	punc	_	37	punct	_	_
-39	com	com	ADP	prp	AdpType=Prep	40	case	_	_
-40	cinco	cinco	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	37	nummod	_	_
-41	,	,	PUNCT	punc	_	37	punct	_	_
-42	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
-43	Juventus	Juventus	PROPN	prop|F|S	Gender=Fem|Number=Sing	37	conj	_	_
-44	e	e	CONJ	conj-c|<co-subj>	_	43	cc	_	_
-45	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_
-46	Lázio	Lázio	PROPN	prop|M|S	_	43	conj	_	MWE=Lázio_de_Roma|MWEPOS=PROPN
-47	de	de	ADP	ADP	AdpType=Prep	48	case	_	_
-48	Roma	Roma	PROPN	PROPN	_	46	name	_	_
-49	,	,	PUNCT	punc	_	43	punct	_	_
-50	ambos	ambos	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	43	det	_	_
-51	com	com	ADP	prp	AdpType=Prep	52	case	_	_
-52	três	três	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	50	nummod	_	_
-53	.	.	PUNCT	punc	_	20	punct	_	_
+35	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	34	obj	_	_
+36	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
+37	Parma	Parma	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	34	nsubj	_	SpaceAfter=No
+38	,	,	PUNCT	PU|@PU	_	43	punct	_	_
+39	com	com	ADP	<first-cjt>|PRP|@N<PRED	_	40	case	_	_
+40	cinco	cinco	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	37	nummod	_	SpaceAfter=No
+41	,	,	PUNCT	PU|@PU	_	43	punct	_	_
+42	a	o	DET	PRP|@<ADVL	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
+43	Juventus	Juventus	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	37	conj	_	_
+44	e	e	CCONJ	<co-prparg>|KC|@CO	_	46	cc	_	_
+45	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_
+46	Lázio	Lázio	PROPN	<cjt>|PROP|M|S|@P<	_	43	conj	_	MWE=Lázio_de_Roma|MWEPOS=PROPN
+47	de	de	ADP	PRP|@N<	_	48	case	_	_
+48	Roma	Roma	PROPN	PROP|@P<	_	46	flat	_	SpaceAfter=No
+49	,	,	PUNCT	PU|@PU	_	43	punct	_	_
+50	ambos	ambos	DET	<cjt>|<quant>|DET|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	43	det	_	_
+51	com	com	ADP	PRP|@N<	_	52	case	_	_
+52	três	três	NUM	<card>|NUM|M|P|@P<	Gender=Masc|Number=Plur|NumType=Card	50	nummod	_	SpaceAfter=No
+53	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 

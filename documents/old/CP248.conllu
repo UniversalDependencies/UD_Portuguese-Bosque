@@ -1,137 +1,145 @@
-# distance_from_new = 0
-# new_sent_id = CP248-1
-# sent_id = pt-ud-train.conllu#s1333/pt
-# orig_file_sentence = 014#33
-1	À	à	ADP	adv	AdpType=Preppron|Definite=Def	17	advmod	_	MWE=À_primeira_vista|MWEPOS=ADV
-2	primeira	primeira	NOUN	NOUN	_	1	mwe	_	_
-3	vista	vista	NOUN	NOUN	_	1	mwe	_	_
-4	,	,	PUNCT	punc	_	17	punct	_	_
-5	Mousa	Mousa	PROPN	prop|M|S	Gender=Masc|Number=Sing	17	nsubj	_	_
-6	,	,	PUNCT	punc	_	5	punct	_	_
-7	Mohammed	Mohammed	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	conj	_	_
-8	,	,	PUNCT	punc	_	5	punct	_	_
-9	Abu	Abu	PROPN	prop|M|S	_	5	conj	_	MWE=Abu_Wahed|MWEPOS=PROPN
-10	Wahed	Wahed	PROPN	PROPN	_	9	name	_	_
-11	e	e	CONJ	conj-c|<co-subj>	_	5	cc	_	_
-12	Khalid	Khalid	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	conj	_	_
-13	,	,	PUNCT	punc	_	12	punct	_	_
-14	o	o	DET	pron-det|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing	15	det	_	_
-15	cabo	cabo	NOUN	n|M|S	Gender=Masc|Number=Sing	12	appos	_	_
-16	,	,	PUNCT	punc	_	17	punct	_	_
-17	tinham	ter	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-18	a	o	DET	pron-det|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing	19	det	_	_
-19	expressão	expressão	NOUN	n|F|S	Gender=Fem|Number=Sing	17	dobj	_	_
-20	deprimida	deprimir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	19	acl	_	_
-21	e	e	CONJ	conj-c|<co-postnom>	_	20	cc	_	_
-22	encurralada	encurralar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	20	conj	_	_
-23-24	dos	_	_	_	_	_	_	_	_
-23	de	de	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	os	o	DET	pron-det|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur	25	det	_	_
-25	recrutas	recruta	NOUN	n|M|P	Gender=Masc|Number=Plur	19	nmod	_	_
-26	derrotados	derrotar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	25	acl	_	_
-27	.	.	PUNCT	punc	_	17	punct	_	_
+# text = À primeira vista, Mousa, Mohammed, Abu Wahed e Khalid, o cabo, tinham a expressão deprimida e encurralada dos recrutas derrotados.
+# forest 1
+# source CETEMPúblico ext n=248 sec=nd sem=91a
+# sent_id = CP248-1
+# id 1334
+1-2	À	_	_	_	_	_	_	_	_
+1	A	a	ADP	prp|<sam->	_	18	case	_	_
+2	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+3	primeira	primeira	NOUN	NOUN	_	1	fixed	_	_
+4	vista	vista	NOUN	NOUN	_	1	fixed	_	SpaceAfter=No
+5	,	,	PUNCT	punc	_	18	punct	_	_
+6	Mousa	Mousa	PROPN	prop|M|S	Gender=Masc|Number=Sing	18	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	punc	_	8	punct	_	_
+8	Mohammed	Mohammed	PROPN	prop|M|S	Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	punc	_	10	punct	_	_
+10	Abu	Abu	PROPN	prop|M|S	_	6	conj	_	MWE=Abu_Wahed|MWEPOS=PROPN
+11	Wahed	Wahed	PROPN	PROPN	_	10	flat	_	_
+12	e	e	CCONJ	conj-c|<co-subj>	_	13	cc	_	_
+13	Khalid	Khalid	PROPN	prop|M|S	Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No
+14	,	,	PUNCT	punc	_	13	punct	_	_
+15	o	o	DET	pron-det|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing	16	det	_	_
+16	cabo	cabo	NOUN	n|M|S	Gender=Masc|Number=Sing	13	appos	_	SpaceAfter=No
+17	,	,	PUNCT	punc	_	18	punct	_	_
+18	tinham	ter	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+19	a	o	DET	pron-det|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing	20	det	_	_
+20	expressão	expressão	NOUN	n|F|S	Gender=Fem|Number=Sing	18	obj	_	_
+21	deprimida	deprimir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	20	acl	_	_
+22	e	e	CCONJ	conj-c|<co-postnom>	_	23	cc	_	_
+23	encurralada	encurralar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	21	conj	_	_
+24-25	dos	_	_	_	_	_	_	_	_
+24	de	de	ADP	prp|<sam->	_	26	case	_	_
+25	os	o	DET	pron-det|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur	26	det	_	_
+26	recrutas	recruta	NOUN	n|M|P	Gender=Masc|Number=Plur	20	nmod	_	_
+27	derrotados	derrotar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	26	acl	_	SpaceAfter=No
+28	.	.	PUNCT	punc	_	18	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP248-2
-# sent_id = pt-ud-train.conllu#s1334/pt
-# orig_file_sentence = 014#34
-1	Os	o	DET	pron-det|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur	2	det	_	_
-2	uniformes	uniforme	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nsubj	_	_
-3	estavam	estar	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_
-4	amarrotados	amarrotar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-5	e	e	CONJ	conj-c|<co-sc>	_	4	cc	_	_
-6	sujos	sujo	ADJ	adj|M|P	Gender=Masc|Number=Plur	4	conj	_	_
-7	,	,	PUNCT	punc	_	4	punct	_	_
-8	as	o	DET	pron-det|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur	10	det	_	_
-9	botas	bota	NOUN	n|F|P	Gender=Fem|Number=Plur	10	cop	_	_
-10	imundas	imundo	ADJ	adj|F|P	Gender=Fem|Number=Plur	4	conj	_	_
-11	e	e	CONJ	conj-c|<co-postnom>	_	10	cc	_	_
-12	rotas	roto	ADJ	adj|F|P	Gender=Fem|Number=Plur	10	conj	_	_
-13	.	.	PUNCT	punc	_	4	punct	_	_
+# text = Os uniformes estavam amarrotados e sujos, as botas imundas e rotas.
+# forest 1
+# source CETEMPúblico ext n=248 sec=nd sem=91a
+# sent_id = CP248-2
+# id 1335
+1	Os	o	DET	<artd>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur	2	det	_	_
+2	uniformes	uniforme	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
+3	estavam	estar	AUX	<first-cjt>|<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_
+4	amarrotados	amarrotar	VERB	<mv>|<first-cjt>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
+5	e	e	CCONJ	<co-sc>|KC|@CO	_	6	cc	_	_
+6	sujos	sujo	ADJ	ADJ|M|P|@ICL-<SC	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+8	as	o	DET	<artd>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur	10	det	_	_
+9	botas	bota	NOUN	<first-cjt>|<np-def>|N|F|P|@FS-STA	Gender=Fem|Number=Plur	10	cop	_	_
+10	imundas	imundo	ADJ	<first-cjt>|<n>|ADJ|F|P|@<SC	Gender=Fem|Number=Plur	4	conj	_	_
+11	e	e	CCONJ	<co-postnom>|KC|@CO	_	12	cc	_	_
+12	rotas	roto	ADJ	<cjt>|ADJ|F|P|@<SC	Gender=Fem|Number=Plur	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP248-3
-# sent_id = pt-ud-train.conllu#s1335/pt
-# orig_file_sentence = 014#35
-1	Tinham	ter	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-2	a	o	DET	pron-det|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing	3	det	_	_
-3	barba	barba	NOUN	n|F|S	Gender=Fem|Number=Sing	1	dobj	_	_
-4	por	por	ADP	prp	AdpType=Prep	1	dobj	_	_
-5	fazer	fazer	VERB	v-inf	VerbForm=Inf	4	dep	_	_
-6	,	,	PUNCT	punc	_	1	punct	_	_
-7	estavam	estar	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	8	cop	_	_
-8	exaustos	exaurir	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	1	conj	_	_
-9	e	e	CONJ	conj-c|<co-sc>	_	8	cc	_	_
-10	famintos	faminto	ADJ	adj|M|P	Gender=Masc|Number=Plur	8	conj	_	_
-11	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Tinham a barba por fazer, estavam exaustos e famintos.
+# forest 1
+# source CETEMPúblico ext n=248 sec=nd sem=91a
+# sent_id = CP248-3
+# id 1336
+1	Tinham	ter	VERB	<mv>|<first-cjt>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+2	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing	3	det	_	_
+3	barba	barba	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
+4	por	por	ADP	<first-cjt>|PRP|@<PIV	_	1	obj	_	_
+5	fazer	fazer	VERB	<mv>|<first-cjt>|V|INF|@ICL-<PIV	VerbForm=Inf	4	dep	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+7	estavam	estar	AUX	<mv>|<cjt>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	8	cop	_	_
+8	exaustos	exaurir	VERB	<mv>|<first-cjt>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	1	conj	_	_
+9	e	e	CCONJ	<co-sc>|KC|@CO	_	10	cc	_	_
+10	famintos	faminto	ADJ	ADJ|M|P|@ICL-<SC	Gender=Masc|Number=Plur	8	conj	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP248-4
-# sent_id = pt-ud-train.conllu#s1336/pt
-# orig_file_sentence = 014#36
+# text = No saco havia nacos de pão, uma lata pequena de sumo e uma garrafa de água.
+# forest 1
+# source CETEMPúblico ext n=248 sec=nd sem=91a
+# sent_id = CP248-4
+# id 1337
 1-2	No	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	o	o	DET	pron-det|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing	3	det	_	_
-3	saco	saco	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
-4	havia	haver	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-5	nacos	naco	NOUN	n|M|P	Gender=Masc|Number=Plur	4	dobj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	pão	pão	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-8	,	,	PUNCT	punc	_	5	punct	_	_
-9	uma	um	DET	pron-det|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing	10	det	_	_
-10	lata	lata	NOUN	n|F|S	Gender=Fem|Number=Sing	5	conj	_	_
-11	pequena	pequeno	ADJ	adj|F|S	Gender=Fem|Number=Sing	10	amod	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	sumo	sumo	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-14	e	e	CONJ	conj-c|<co-acc>	_	5	cc	_	_
-15	uma	um	DET	pron-det|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing	16	det	_	_
-16	garrafa	garrafa	NOUN	n|F|S	Gender=Fem|Number=Sing	5	conj	_	_
-17	de	de	ADP	prp	AdpType=Prep	18	case	_	_
-18	água	água	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-19	.	.	PUNCT	punc	_	4	punct	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	o	o	DET	<-sam>|<artd>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing	3	det	_	_
+3	saco	saco	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
+4	havia	haver	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+5	nacos	naco	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	obj	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	pão	pão	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+9	uma	um	DET	<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing	10	det	_	_
+10	lata	lata	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	conj	_	_
+11	pequena	pequeno	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	sumo	sumo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
+14	e	e	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	_
+15	uma	um	DET	<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing	16	det	_	_
+16	garrafa	garrafa	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	conj	_	_
+17	de	de	ADP	PRP|@N<	_	18	case	_	_
+18	água	água	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP248-5
-# sent_id = pt-ud-train.conllu#s1337/pt
-# orig_file_sentence = 014#37
-1	Como	como	ADP	prp	AdpType=Prep	4	case	_	_
+# text = Como num gesto final de rendição, o cabo deu-me os binóculos que trazia e afirmou: «Um presente -- para si.»
+# forest 1
+# source CETEMPúblico ext n=248 sec=nd sem=91a
+# sent_id = CP248-5
+# id 1338
+1	Como	como	ADP	<com>|PRP|@ADVL>	_	4	case	_	_
 2-3	num	_	_	_	_	_	_	_	_
-2	em	em	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	um	um	DET	pron-det|<-sam>|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing	4	det	_	_
-4	gesto	gesto	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-5	final	final	ADJ	adj|M|S	Gender=Masc|Number=Sing	4	amod	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	rendição	rendição	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-8	,	,	PUNCT	punc	_	11	punct	_	_
-9	o	o	DET	pron-det|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing	10	det	_	_
-10	cabo	cabo	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
+2	em	em	ADP	<sam->|PRP|@P<	_	4	case	_	_
+3	um	um	DET	<-sam>|<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing	4	det	_	_
+4	gesto	gesto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	_
+5	final	final	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	rendição	rendição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+9	o	o	DET	<artd>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing	10	det	_	_
+10	cabo	cabo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 11-12	deu-me	_	_	_	_	_	_	_	_
 11	deu	dar	VERB	v-fin|<hyfen>|PS|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-12	-me	eu	PRON	pron-pers|<refl>|M/F|1S|DAT	Case=Dat|Number=Sing|Person=1|PronType=Prs|Reflex=Yes	11	dobj	_	_
-13	os	o	DET	pron-det|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur	14	det	_	_
-14	binóculos	binóculo	NOUN	n|M|P	Gender=Masc|Number=Plur	11	dobj	_	_
-15	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	16	dobj	_	_
-16	trazia	trazer	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	acl	_	_
-17	e	e	CONJ	conj-c|<co-vfin>	_	11	cc	_	_
-18	afirmou	afirmar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
-19	:	:	PUNCT	punc	_	18	punct	_	_
-20	«	«	PUNCT	punc	_	18	punct	_	_
-21	Um	um	DET	pron-det|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing	22	det	_	_
-22	presente	presente	NOUN	n|M|S	Gender=Masc|Number=Sing	18	dobj	_	_
-23	--	--	PUNCT	punc	_	22	punct	_	_
-24	para	para	ADP	prp	AdpType=Prep	25	case	_	_
-25	si	se	PRON	pron-pers|<refl>|M/F|3S|PIV	Case=Acc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs|Reflex=Yes	22	nmod	_	_
-26	.	.	PUNCT	punc	_	18	punct	_	_
-27	»	»	PUNCT	punc	_	18	punct	_	_
+12	-me	eu	PRON	pron-pers|<refl>|M/F|1S|DAT	Case=Dat|Number=Sing|Person=1|PronType=Prs|Reflex=Yes	11	obj	_	_
+13	os	o	DET	<artd>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur	14	det	_	_
+14	binóculos	binóculo	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	11	obj	_	_
+15	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	16	obj	_	_
+16	trazia	trazer	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	acl	_	_
+17	e	e	CCONJ	<co-sta>|<co-vfin>|KC|@CO	_	18	cc	_	_
+18	afirmou	afirmar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	SpaceAfter=No
+19	:	:	PUNCT	PU|@PU	_	18	punct	_	_
+20	«	«	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
+21	Um	um	DET	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing	22	det	_	_
+22	presente	presente	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
+23	--	--	PUNCT	PU|@PU	_	22	punct	_	_
+24	para	para	ADP	PRP|@N<	_	25	case	_	_
+25	si	se	PRON	<refl>|PERS|M/F|3S|PIV|@P<	Case=Acc|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs|Reflex=Yes	22	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
+27	»	»	PUNCT	PU|@PU	_	18	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP248-6
-# sent_id = pt-ud-train.conllu#s1338/pt
-# orig_file_sentence = 014#38
-1	Dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
-2	meses	mês	NOUN	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
+# text = Dois meses numa toca
+# forest 1
+# source CETEMPúblico ext n=248 sec=nd sem=91a
+# sent_id = CP248-6
+# id 1339
+1	Dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
+2	meses	mês	NOUN	<np-def>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 3-4	numa	_	_	_	_	_	_	_	_
-3	em	em	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	uma	um	DET	pron-det|<-sam>|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing	5	det	_	_
-5	toca	toca	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+3	em	em	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	uma	um	DET	<-sam>|<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing	5	det	_	_
+5	toca	toca	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 

@@ -1,70 +1,74 @@
-# distance_from_new = 0
-# new_sent_id = CF882-1
-# sent_id = pt-ud-train.conllu#s8763/pt
-# orig_file_sentence = 088#63
-1	Sem	sem	ADP	prp	AdpType=Prep	2	case	_	_
-2	autorização	autorização	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
+# text = Sem autorização
+# forest 1
+# source CETENFolha n=882 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF882-1
+# id 3721
+1	Sem	sem	ADP	<first-cjt>|PRP|@STA	_	2	case	_	_
+2	autorização	autorização	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF882-2
-# sent_id = pt-ud-train.conllu#s8764/pt
-# orig_file_sentence = 088#64
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	conselho	conselho	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nsubj	_	_
-3	também	também	ADV	adv	_	4	advmod	_	_
-4	manteve	manter	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-5	multas	multa	NOUN	n|F|P	Gender=Fem|Number=Plur	4	dobj	_	_
-6	aplicadas	aplicar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	5	acl	_	_
+# text = O conselho também manteve multas aplicadas à Indústrias J.B. Duarte e a seus dirigentes pela prática de atividades restritas a instituições financeiras.
+# forest 1
+# source CETENFolha n=882 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF882-2
+# id 3722
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	conselho	conselho	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	também	também	ADV	ADV|@ADVL>	_	4	advmod	_	_
+4	manteve	manter	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	multas	multa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
+6	aplicadas	aplicar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	5	acl	_	_
 7-8	à	_	_	_	_	_	_	_	_
-7	a	a	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Indústrias	Indústrias	PROPN	prop|F|P	_	6	dobj	_	MWE=Indústrias_J.B._Duarte|MWEPOS=PROPN
-10	J.B.	J.B.	PROPN	PROPN	_	9	name	_	_
-11	Duarte	Duarte	PROPN	PROPN	_	9	name	_	_
-12	e	e	CONJ	conj-c|<co-piv>	_	9	cc	_	_
-13	a	a	ADP	prp	AdpType=Prep	15	case	_	_
-14	seus	seu	DET	pron-det|<poss|3S>|<si>|M|P	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	15	det	_	_
-15	dirigentes	dirigente	NOUN	n|M|P	Gender=Masc|Number=Plur	9	conj	_	_
+7	a	a	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Indústrias	Indústrias	PROPN	_	_	6	obj	_	MWE=Indústrias_J.B._Duarte|MWEPOS=PROPN
+10	J.B.	J.B.	PROPN	_	_	9	flat	_	_
+11	Duarte	Duarte	PROPN	_	_	9	flat	_	_
+12	e	e	CCONJ	<co-piv>|KC|@CO	_	15	cc	_	_
+13	a	a	ADP	<cjt>|PRP|@<PIV	_	15	case	_	_
+14	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	15	det	_	_
+15	dirigentes	dirigente	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	conj	_	_
 16-17	pela	_	_	_	_	_	_	_	_
-16	por	por	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-17	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	prática	prática	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-20	atividades	atividade	NOUN	n|F|P	Gender=Fem|Number=Plur	18	nmod	_	_
-21	restritas	restringir	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	20	acl	_	_
-22	a	a	ADP	prp	AdpType=Prep	23	case	_	_
-23	instituições	instituição	NOUN	n|F|P	Gender=Fem|Number=Plur	21	dobj	_	_
-24	financeiras	financeiro	ADJ	adj|F|P	Gender=Fem|Number=Plur	23	amod	_	_
-25	.	.	PUNCT	punc	_	4	punct	_	_
+16	por	por	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
+17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	prática	prática	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+19	de	de	ADP	PRP|@N<ARG	_	20	case	_	_
+20	atividades	atividade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
+21	restritas	restringir	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	20	acl	_	_
+22	a	a	ADP	PRP|@<PIV	_	23	case	_	_
+23	instituições	instituição	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	21	obj	_	_
+24	financeiras	financeiro	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	23	amod	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF882-3
-# sent_id = pt-ud-train.conllu#s8765/pt
-# orig_file_sentence = 088#65
-1	Recurso	recurso	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	negado	negar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
+# text = Recurso negado
+# forest 1
+# source CETENFolha n=882 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF882-3
+# id 3723
+1	Recurso	recurso	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	negado	negar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF882-4
-# sent_id = pt-ud-train.conllu#s8766/pt
-# orig_file_sentence = 088#66
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	corretora	corretora	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nsubjpass	_	_
-3	Antonio	Antonio	PROPN	prop|F|S	_	2	nmod	_	MWE=Antonio_Delapieve|MWEPOS=PROPN
-4	Delapieve	Delapieve	PROPN	PROPN	_	3	name	_	_
-5	e	e	CONJ	conj-c|<co-subj>	_	2	cc	_	_
-6	seus	seu	DET	pron-det|<poss|3S>|M|P	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	_	_
-7	dirigentes	dirigente	NOUN	n|M|P	Gender=Masc|Number=Plur	2	conj	_	_
-8	foram	ser	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	9	auxpass	_	_
-9	multados	multar	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	_
-10	por	por	ADP	prp	AdpType=Prep	11	mark	_	_
-11	negociar	negociar	VERB	v-inf	VerbForm=Inf	9	advcl	_	_
-12	títulos	título	NOUN	n|M|P	Gender=Masc|Number=Plur	11	dobj	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	renda	renda	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-15	fixa	fixar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	_	_
-16	a	a	ADP	prp	AdpType=Prep	17	case	_	_
-17	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nmod	_	_
-18	superavaliados	superavaliar	VERB	v-pcp|<DERP>|M|P	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	_	_
-19	.	.	PUNCT	punc	_	9	punct	_	_
+# text = A corretora Antonio Delapieve e seus dirigentes foram multados por negociar títulos de renda fixa a preços superavaliados.
+# forest 1
+# source CETENFolha n=882 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF882-4
+# id 3724
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	corretora	corretora	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
+3	Antonio	Antonio	PROPN	_	_	2	nmod	_	MWE=Antonio_Delapieve|MWEPOS=PROPN
+4	Delapieve	Delapieve	PROPN	_	_	3	flat	_	_
+5	e	e	CCONJ	<co-subj>|KC|@CO	_	7	cc	_	_
+6	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	7	det	_	_
+7	dirigentes	dirigente	NOUN	<cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	conj	_	_
+8	foram	ser	VERB	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+9	multados	multar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	8	ccomp	_	_
+10	por	por	ADP	PRP|@<ADVL	_	11	mark	_	_
+11	negociar	negociar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	advcl	_	_
+12	títulos	título	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	11	obj	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	renda	renda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+15	fixa	fixar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	_	_
+16	a	a	ADP	PRP|@N<	_	17	case	_	_
+17	preços	preço	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
+18	superavaliados	superavaliar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	17	acl	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 

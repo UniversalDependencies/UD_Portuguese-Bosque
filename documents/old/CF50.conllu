@@ -1,68 +1,71 @@
-# distance_from_new = 0
-# new_sent_id = CF50-1
-# sent_id = pt-ud-train.conllu#s5241/pt
-# orig_file_sentence = 053#41
-1	Ilmar	Ilmar	PROPN	prop|M|S	_	6	nsubj	_	MWE=Ilmar_Galvão|MWEPOS=PROPN
-2	Galvão	Galvão	PROPN	PROPN	_	1	name	_	_
-3	e	e	CONJ	conj-c|<co-subj>	_	1	cc	_	_
-4	Moreira	Moreira	PROPN	prop|F|S	_	1	conj	_	MWE=Moreira_Alves|MWEPOS=PROPN
-5	Alves	Alves	PROPN	PROPN	_	4	name	_	_
-6	votaram	votar	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+# text = Ilmar Galvão e Moreira Alves votaram pela concessão do mandato de segurança.
+# forest 1
+# source CETENFolha n=50 cad=Brasil sec=pol sem=94a
+# sent_id = CF50-1
+# id 199
+1	Ilmar	Ilmar	PROPN	_	_	6	nsubj	_	MWE=Ilmar_Galvão|MWEPOS=PROPN
+2	Galvão	Galvão	PROPN	_	_	1	flat	_	_
+3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	_
+4	Moreira	Moreira	PROPN	_	_	1	conj	_	MWE=Moreira_Alves|MWEPOS=PROPN
+5	Alves	Alves	PROPN	_	_	4	flat	_	_
+6	votaram	votar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
 7-8	pela	_	_	_	_	_	_	_	_
-7	por	por	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	concessão	concessão	NOUN	n|F|S	Gender=Fem|Number=Sing	6	dobj	_	_
+7	por	por	ADP	<sam->|PRP|@<PIV	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	concessão	concessão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obj	_	_
 10-11	do	_	_	_	_	_	_	_	_
-10	de	de	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	mandato	mandato	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	segurança	segurança	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-15	.	.	PUNCT	punc	_	6	punct	_	_
+10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
+11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	mandato	mandato	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	segurança	segurança	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF50-2
-# sent_id = pt-ud-train.conllu#s5242/pt
-# orig_file_sentence = 053#42
-1	Eles	eles	PRON	pron-pers|M|3P|NOM	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
-2	sustentaram	sustentar	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
-3	que	que	SCONJ	conj-s	_	6	mark	_	_
-4	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	renúncia	renúncia	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
-6	interrompeu	interromper	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	_	_
-7	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	processo	processo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
-9	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-10	impeachment	impeachment	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nmod	_	_
-11	.	.	PUNCT	punc	_	2	punct	_	_
+# text = Eles sustentaram que a renúncia interrompeu o processo de impeachment.
+# forest 1
+# source CETENFolha n=50 cad=Brasil sec=pol sem=94a
+# sent_id = CF50-2
+# id 200
+1	Eles	eles	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	sustentaram	sustentar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	0	root	_	_
+3	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
+4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	renúncia	renúncia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
+6	interrompeu	interromper	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	processo	processo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
+9	de	de	ADP	PRP|@N<	_	10	case	_	_
+10	impeachment	impeachment	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF50-3
-# sent_id = pt-ud-train.conllu#s5243/pt
-# orig_file_sentence = 053#43
-1	Moreira	Moreira	PROPN	prop|M|S	_	4	nsubj	_	MWE=Moreira_Alves|MWEPOS=PROPN
-2	Alves	Alves	PROPN	PROPN	_	1	name	_	_
-3	também	também	ADV	adv	_	4	advmod	_	_
-4	votou	votar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-5	a	a	ADP	prp	AdpType=Prep	8	case	_	MWE=a_favor_de|MWEPOS=ADP
-6	favor	favor	NOUN	NOUN	_	5	mwe	_	_
-7	de	de	ADP	ADP	AdpType=Prep	5	mwe	_	_
-8	Collor	Collor	PROPN	prop|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
+# text = Moreira Alves também votou a favor de Collor noutros dois mandatos de segurança, mas foi vencido nos dois julgamentos.
+# forest 1
+# source CETENFolha n=50 cad=Brasil sec=pol sem=94a
+# sent_id = CF50-3
+# id 201
+1	Moreira	Moreira	PROPN	_	_	4	nsubj	_	MWE=Moreira_Alves|MWEPOS=PROPN
+2	Alves	Alves	PROPN	_	_	1	flat	_	_
+3	também	também	ADV	ADV|@ADVL>	_	4	advmod	_	_
+4	votou	votar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	a	a	ADP	PRP|@<ADVL	_	8	case	_	MWE=a_favor_de|MWEPOS=ADP
+6	favor	favor	NOUN	N|@P<	_	5	fixed	_	_
+7	de	de	ADP	PRP|@N<	_	5	fixed	_	_
+8	Collor	Collor	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
 9-10	noutros	_	_	_	_	_	_	_	_
-9	em	em	ADP	prp	AdpType=Prep	12	case	_	_
-10	outros	outro	DET	pron-det|<diff>|<KOMP>|M|P	Degree=Cmp|Gender=Masc|Number=Plur	12	det	_	_
-11	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-12	mandatos	mandato	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nmod	_	_
-13	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-14	segurança	segurança	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-15	,	,	PUNCT	punc	_	4	punct	_	_
-16	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	4	cc	_	_
-17	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	auxpass	_	_
-18	vencido	vencer	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	4	conj	_	_
+9	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
+10	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Degree=Cmp|Gender=Masc|Number=Plur	12	det	_	_
+11	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+12	mandatos	mandato	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
+14	segurança	segurança	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+16	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	_
+17	foi	ser	VERB	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
+18	vencido	vencer	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	17	ccomp	_	_
 19-20	nos	_	_	_	_	_	_	_	_
-19	em	em	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-20	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
-21	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
-22	julgamentos	julgamento	NOUN	n|M|P	Gender=Masc|Number=Plur	18	nmod	_	_
-23	.	.	PUNCT	punc	_	4	punct	_	_
+19	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
+20	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+21	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	22	nummod	_	_
+22	julgamentos	julgamento	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	18	obl	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

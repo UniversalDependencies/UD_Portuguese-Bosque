@@ -1,49 +1,51 @@
-# distance_from_new = 0
-# new_sent_id = CP849-1
-# sent_id = pt-ud-train.conllu#s4370/pt
-# orig_file_sentence = 044#70
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	árbitro	árbitro	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	Pinto	Pinto	PROPN	prop|M|S	_	2	nmod	_	MWE=Pinto_Correia|MWEPOS=PROPN
-4	Correia	Correia	PROPN	PROPN	_	3	name	_	_
-5	esteve	estar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	bem	bem	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
-7	durante	durante	ADP	prp	AdpType=Prep	11	case	_	_
-8	toda	todo	DET	pron-det|<quant>|F|S	PronType=Art	11	det	_	MWE=toda_a|MWEPOS=DET
-9	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-10	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	11	amod	_	_
-11	parte	parte	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-12	e	e	CONJ	conj-c|<co-advl>	_	11	cc	_	_
-13	durante	durante	ADP	prp	AdpType=Prep	17	case	_	_
-14	quase	quase	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	15	advmod	_	_
-15	toda	todo	DET	pron-det|<quant>|F|S	PronType=Art	17	det	_	MWE=toda_a|MWEPOS=DET
-16	a	o	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	segunda	segunda	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	11	conj	_	_
-18	.	.	PUNCT	punc	_	5	punct	_	_
+# text = O árbitro Pinto Correia esteve bem durante toda a primeira parte e durante quase toda a segunda.
+# forest 1
+# source CETEMPúblico n=849 sec=des sem=95b
+# sent_id = CP849-1
+# id 4372
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	árbitro	árbitro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	Pinto	Pinto	PROPN	_	_	2	nmod	_	MWE=Pinto_Correia|MWEPOS=PROPN
+4	Correia	Correia	PROPN	_	_	3	flat	_	_
+5	esteve	estar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	bem	bem	ADV	<quant>|ADV|@<SA	NumType=Card|PronType=Ind,Neg,Tot	5	advmod	_	_
+7	durante	durante	ADP	<first-cjt>|PRP|@<ADVL	_	11	case	_	_
+8	toda	todo	DET	<quant>|DET|F|S|@>N	PronType=Art	11	det	_	MWE=toda_a|MWEPOS=DET
+9	a	o	DET	<artd>|DET|F|S|@A<	Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	11	amod	_	_
+11	parte	parte	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	_
+12	e	e	CCONJ	<co-advl>|KC|@CO	_	17	cc	_	_
+13	durante	durante	ADP	<cjt>|PRP|@<ADVL	_	17	case	_	_
+14	quase	quase	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	15	advmod	_	_
+15	toda	todo	DET	<quant>|DET|F|S|@>N	PronType=Art	17	det	_	MWE=toda_a|MWEPOS=DET
+16	a	o	DET	<artd>|DET|F|S|@A<	Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	segunda	segunda	ADJ	<NUM-ord>|<n>|<np-def>|ADJ|F|S|@P<	Gender=Fem|Number=Sing|NumType=Ord	11	conj	_	SpaceAfter=No
+18	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP849-2
-# sent_id = pt-ud-train.conllu#s4371/pt
-# orig_file_sentence = 044#71
+# text = No entanto, acabou por perdoar um segundo cartão amarelo a Rui Neves, condescendendo igualmente com Dimas.
+# forest 1
+# source CETEMPúblico n=849 sec=des sem=95b
+# sent_id = CP849-2
+# id 4373
 1-2	No	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	7	mark	_	_
+1	En	en	ADP	prp|<sam->	_	7	case	_	_
 2	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-3	entanto	entanto	NOUN	NOUN	_	1	mwe	_	_
+3	entanto	entanto	NOUN	NOUN	_	1	fixed	_	SpaceAfter=No
 4	,	,	PUNCT	punc	_	5	punct	_	_
 5	acabou	acabar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	por	por	ADP	prp	AdpType=Prep	7	mark	_	_
+6	por	por	ADP	prp	_	7	mark	_	_
 7	perdoar	perdoar	VERB	v-inf	VerbForm=Inf	5	xcomp	_	_
 8	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	10	nummod	_	_
 9	segundo	segundo	ADJ	adj|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	10	amod	_	_
-10	cartão	cartão	NOUN	n|M|S	Gender=Masc|Number=Sing	7	dobj	_	_
+10	cartão	cartão	NOUN	n|M|S	Gender=Masc|Number=Sing	7	obj	_	_
 11	amarelo	amarelo	ADJ	adj|M|S	Gender=Masc|Number=Sing	10	amod	_	_
-12	a	a	ADP	prp	AdpType=Prep	13	case	_	_
-13	Rui	Rui	PROPN	prop|M|S	_	7	dobj	_	MWE=Rui_Neves|MWEPOS=PROPN
-14	Neves	Neves	PROPN	PROPN	_	13	name	_	_
+12	a	a	ADP	prp	_	13	case	_	_
+13	Rui	Rui	PROPN	prop|M|S	_	7	obj	_	MWE=Rui_Neves|MWEPOS=PROPN
+14	Neves	Neves	PROPN	PROPN	_	13	flat	_	SpaceAfter=No
 15	,	,	PUNCT	punc	_	5	punct	_	_
 16	condescendendo	condescender	VERB	v-ger	VerbForm=Ger	7	advcl	_	_
 17	igualmente	igualmente	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	16	advmod	_	_
-18	com	com	ADP	prp	AdpType=Prep	19	case	_	_
-19	Dimas	Dimas	PROPN	prop|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
+18	com	com	ADP	prp	_	19	case	_	_
+19	Dimas	Dimas	PROPN	prop|M|S	Gender=Masc|Number=Sing	16	obl	_	SpaceAfter=No
 20	.	.	PUNCT	punc	_	5	punct	_	_
 

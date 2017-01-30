@@ -1,375 +1,385 @@
-# distance_from_new = 0
-# new_sent_id = CP645-1
-# sent_id = pt-ud-train.conllu#s3353/pt
-# orig_file_sentence = 034#53
-1	Abandono	abandono	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Abandono da escola nos Açores --
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-1
+# id 3354
+1	Abandono	abandono	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	escola	escola	NOUN	n|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
+2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
+3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	escola	escola	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 5-6	nos	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
-7	Açores	Açores	PROPN	prop|M|P	Gender=Masc|Number=Plur	1	nmod	_	_
-8	--	--	PUNCT	punc	_	1	punct	_	_
+5	em	em	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	Açores	Açores	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	_
+8	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP645-2
-# sent_id = pt-ud-train.conllu#s3354/pt
-# orig_file_sentence = 034#54
-1	As	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
-2	crianças	criança	NOUN	n|F|P	Gender=Fem|Number=Plur	24	nsubj	_	_
-3	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	4	nsubj	_	_
-4	abandonam	abandonar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	escola	escola	NOUN	n|F|S	Gender=Fem|Number=Sing	4	dobj	_	_
+# text = As crianças que abandonam a escola na ilha de São Jorge, Açores, para ajudar os pais e a economia familiar são ainda em grande número, segundo informou o presidente da Comissão de Protecção de Menores de Velas.
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-2
+# id 3355
+1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	crianças	criança	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	24	nsubj	_	_
+3	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	4	nsubj	_	_
+4	abandonam	abandonar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	escola	escola	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
 7-8	na	_	_	_	_	_	_	_	_
-7	em	em	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	ilha	ilha	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	São	São	PROPN	prop|M|S	_	9	nmod	_	MWE=São_Jorge|MWEPOS=PROPN
-12	Jorge	Jorge	PROPN	PROPN	_	11	name	_	_
-13	,	,	PUNCT	punc	_	11	punct	_	_
-14	Açores	Açores	PROPN	prop|M|P	Gender=Masc|Number=Plur	11	nmod	_	_
-15	,	,	PUNCT	punc	_	11	punct	_	_
-16	para	para	ADP	prp	AdpType=Prep	17	mark	_	_
-17	ajudar	ajudar	VERB	v-inf	VerbForm=Inf	4	advcl	_	_
-18	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-19	pais	pai	NOUN	n|M|P	Gender=Masc|Number=Plur	17	dobj	_	_
-20	e	e	CONJ	conj-c|<co-acc>	_	19	cc	_	_
-21	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	economia	economia	NOUN	n|F|S	Gender=Fem|Number=Sing	19	conj	_	_
-23	familiar	familiar	ADJ	adj|F|S	Gender=Fem|Number=Sing	22	amod	_	_
-24	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-25	ainda	ainda	ADV	adv	_	24	advmod	_	_
-26	em	em	ADP	prp	AdpType=Prep	28	case	_	_
-27	grande	grande	ADJ	adj|M|S	Gender=Masc|Number=Sing	28	amod	_	_
-28	número	número	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nmod	_	_
-29	,	,	PUNCT	punc	_	24	punct	_	_
-30	segundo	segundo	ADP	prp	AdpType=Prep	31	mark	_	_
-31	informou	informar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	advcl	_	_
-32	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
-33	presidente	presidente	NOUN	n|M|S	_	31	nsubj	_	MWE=presidente_da_Comissão_de_Protecção_de_Menores_de_Velas|MWEPOS=NOUN
+7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	ilha	ilha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	São	São	PROPN	_	_	9	nmod	_	MWE=São_Jorge|MWEPOS=PROPN
+12	Jorge	Jorge	PROPN	_	_	11	flat	_	SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+14	Açores	Açores	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	11	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+16	para	para	ADP	PRP|@<ADVL	_	17	mark	_	_
+17	ajudar	ajudar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	advcl	_	_
+18	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
+19	pais	pai	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	17	obj	_	_
+20	e	e	CCONJ	<co-acc>|KC|@CO	_	22	cc	_	_
+21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	economia	economia	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	conj	_	_
+23	familiar	familiar	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
+24	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+25	ainda	ainda	ADV	ADV|@<ADVL	_	24	advmod	_	_
+26	em	em	ADP	PRP|@<ADVL	_	28	case	_	_
+27	grande	grande	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	28	amod	_	_
+28	número	número	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	obl	_	SpaceAfter=No
+29	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+30	segundo	segundo	ADP	PRP|@<ADVL	_	31	mark	_	_
+31	informou	informar	VERB	<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	advcl	_	_
+32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
+33	presidente	presidente	NOUN	<np-def>|N|M|S|@<SUBJ	_	31	nsubj	_	MWE=presidente_da_Comissão_de_Protecção_de_Menores_de_Velas|MWEPOS=NOUN
 34-35	da	_	_	_	_	_	_	_	_
-34	de	de	ADP	prp|<sam->	AdpType=Prep	36	case	_	_
-35	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
-36	Comissão	Comissão	NOUN	NOUN	_	33	compound	_	_
-37	de	de	ADP	ADP	AdpType=Prep	38	case	_	_
-38	Protecção	Protecção	NOUN	NOUN	_	33	compound	_	_
-39	de	de	ADP	ADP	AdpType=Prep	40	case	_	_
-40	Menores	Menores	NOUN	NOUN	_	33	compound	_	_
-41	de	de	ADP	ADP	AdpType=Prep	42	case	_	_
-42	Velas	Velas	NOUN	NOUN	_	33	compound	_	_
-43	.	.	PUNCT	punc	_	24	punct	_	_
+34	de	de	ADP	<sam->|PRP|@N<	_	36	case	_	_
+35	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
+36	Comissão	Comissão	NOUN	N|@P<	_	33	compound	_	_
+37	de	de	ADP	PRP|@N<	_	38	case	_	_
+38	Protecção	Protecção	NOUN	N|@P<	_	33	compound	_	_
+39	de	de	ADP	PRP|@N<	_	40	case	_	_
+40	Menores	Menores	NOUN	N|@P<	_	33	compound	_	_
+41	de	de	ADP	PRP|@N<	_	42	case	_	_
+42	Velas	Velas	NOUN	N|@P<	_	33	compound	_	SpaceAfter=No
+43	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP645-3
-# sent_id = pt-ud-train.conllu#s3355/pt
-# orig_file_sentence = 034#55
-1	Carlos	Carlos	PROPN	prop|M|S	_	3	nsubj	_	MWE=Carlos_Noysan|MWEPOS=PROPN
-2	Noysan	Noysan	PROPN	PROPN	_	1	name	_	_
-3	acrescentou	acrescentar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	que	que	SCONJ	conj-s	_	8	mark	_	_
-5	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	absentismo	absentismo	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nsubj	_	_
-7	escolar	escolar	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
-8	constitui	constituir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
-9	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-10	principal	principal	ADJ	adj|<SUP>|M|S	Degree=Sup|Gender=Masc|Number=Sing	11	amod	_	_
-11	motivo	motivo	NOUN	n|M|S	Gender=Masc|Number=Sing	8	dobj	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	queixas	queixa	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nmod	_	_
-14	apresentadas	apresentar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	13	acl	_	_
+# text = Carlos Noysan acrescentou que o absentismo escolar constitui o principal motivo de queixas apresentadas à comissão.
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-3
+# id 3356
+1	Carlos	Carlos	PROPN	_	_	3	nsubj	_	MWE=Carlos_Noysan|MWEPOS=PROPN
+2	Noysan	Noysan	PROPN	_	_	1	flat	_	_
+3	acrescentou	acrescentar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
+5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	absentismo	absentismo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
+7	escolar	escolar	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
+8	constitui	constituir	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+10	principal	principal	ADJ	<SUP>|ADJ|M|S|@>N	Degree=Sup|Gender=Masc|Number=Sing	11	amod	_	_
+11	motivo	motivo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	queixas	queixa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	nmod	_	_
+14	apresentadas	apresentar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	13	acl	_	_
 15-16	à	_	_	_	_	_	_	_	_
-15	a	a	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	comissão	comissão	NOUN	n|F|S	Gender=Fem|Number=Sing	14	dobj	_	_
-18	.	.	PUNCT	punc	_	3	punct	_	_
+15	a	a	ADP	<sam->|PRP|@<PIV	_	17	case	_	_
+16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	comissão	comissão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obj	_	SpaceAfter=No
+18	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP645-4
-# sent_id = pt-ud-train.conllu#s3356/pt
-# orig_file_sentence = 034#56
-1	Entre	entre	ADP	prp	AdpType=Prep	3	case	_	_
-2	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
-3	razões	razão	NOUN	n|F|P	Gender=Fem|Number=Plur	21	nmod	_	_
-4	apontadas	apontar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	3	acl	_	_
+# text = Entre as razões apontadas pelo mesmo responsável para a fuga à escolaridade obrigatória, em São Jorge, estão dificuldades no pagamento do almoço das crianças nas cantinas das escolas, a falta de dinheiro para a compra de livros e a carência de transportes.
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-4
+# id 3357
+1	Entre	entre	ADP	PRP|@SA>	_	3	case	_	_
+2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+3	razões	razão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	21	obl	_	_
+4	apontadas	apontar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	3	acl	_	_
 5-6	pelo	_	_	_	_	_	_	_	_
-5	por	por	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-7	mesmo	mesmo	DET	pron-det|<diff>|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing	8	det	_	_
-8	responsável	responsável	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	4	dobj	_	_
-9	para	para	ADP	prp	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	fuga	fuga	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
+5	por	por	ADP	PRP|@PASS	_	8	case	_	_
+6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+7	mesmo	mesmo	DET	<diff>|<KOMP>|DET|M|S|@>N	Degree=Cmp|Gender=Masc|Number=Sing	8	det	_	_
+8	responsável	responsável	ADJ	<n>|<np-def>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	4	obj	_	_
+9	para	para	ADP	PRP|@N<	_	11	case	_	_
+10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	fuga	fuga	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 12-13	à	_	_	_	_	_	_	_	_
-12	a	a	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	escolaridade	escolaridade	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-15	obrigatória	obrigatório	ADJ	adj|F|S	Gender=Fem|Number=Sing	14	amod	_	_
-16	,	,	PUNCT	punc	_	11	punct	_	_
-17	em	em	ADP	prp	AdpType=Prep	18	case	_	_
-18	São	São	PROPN	prop|M|S	_	11	nmod	_	MWE=São_Jorge|MWEPOS=PROPN
-19	Jorge	Jorge	PROPN	PROPN	_	18	name	_	_
-20	,	,	PUNCT	punc	_	11	punct	_	_
-21	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-22	dificuldades	dificuldade	NOUN	n|F|P	Gender=Fem|Number=Plur	21	nsubj	_	_
+12	a	a	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	escolaridade	escolaridade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+15	obrigatória	obrigatório	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	amod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+17	em	em	ADP	PRP|@N<PRED	_	18	case	_	_
+18	São	São	PROPN	_	_	11	nmod	_	MWE=São_Jorge|MWEPOS=PROPN
+19	Jorge	Jorge	PROPN	_	_	18	flat	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+21	estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+22	dificuldades	dificuldade	NOUN	<first-cjt>|<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	21	nsubj	_	_
 23-24	no	_	_	_	_	_	_	_	_
-23	em	em	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	pagamento	pagamento	NOUN	n|M|S	Gender=Masc|Number=Sing	22	nmod	_	_
+23	em	em	ADP	<sam->|PRP|@N<	_	25	case	_	_
+24	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+25	pagamento	pagamento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	_
 26-27	do	_	_	_	_	_	_	_	_
-26	de	de	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-27	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	almoço	almoço	NOUN	n|M|S	Gender=Masc|Number=Sing	25	nmod	_	_
+26	de	de	ADP	<sam->|PRP|@N<ARG	_	28	case	_	_
+27	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	almoço	almoço	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	_
 29-30	das	_	_	_	_	_	_	_	_
-29	de	de	ADP	prp|<sam->	AdpType=Prep	31	case	_	_
-30	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_
-31	crianças	criança	NOUN	n|F|P	Gender=Fem|Number=Plur	28	nmod	_	_
+29	de	de	ADP	<sam->|PRP|@N<	_	31	case	_	_
+30	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_
+31	crianças	criança	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	nmod	_	_
 32-33	nas	_	_	_	_	_	_	_	_
-32	em	em	ADP	prp|<sam->	AdpType=Prep	34	case	_	_
-33	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	_	_
-34	cantinas	cantina	NOUN	n|F|P	Gender=Fem|Number=Plur	28	nmod	_	_
+32	em	em	ADP	<sam->|PRP|@N<	_	34	case	_	_
+33	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	_	_
+34	cantinas	cantina	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	nmod	_	_
 35-36	das	_	_	_	_	_	_	_	_
-35	de	de	ADP	prp|<sam->	AdpType=Prep	37	case	_	_
-36	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_
-37	escolas	escola	NOUN	n|F|P	Gender=Fem|Number=Plur	34	nmod	_	_
-38	,	,	PUNCT	punc	_	22	punct	_	_
-39	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
-40	falta	falta	NOUN	n|F|S	Gender=Fem|Number=Sing	22	conj	_	_
-41	de	de	ADP	prp	AdpType=Prep	42	case	_	_
-42	dinheiro	dinheiro	NOUN	n|M|S	Gender=Masc|Number=Sing	40	nmod	_	_
-43	para	para	ADP	prp	AdpType=Prep	45	case	_	_
-44	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
-45	compra	compra	NOUN	n|F|S	Gender=Fem|Number=Sing	42	nmod	_	_
-46	de	de	ADP	prp	AdpType=Prep	47	case	_	_
-47	livros	livro	NOUN	n|M|P	Gender=Masc|Number=Plur	45	nmod	_	_
-48	e	e	CONJ	conj-c|<co-subj>	_	22	cc	_	_
-49	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_
-50	carência	carência	NOUN	n|F|S	Gender=Fem|Number=Sing	22	conj	_	_
-51	de	de	ADP	prp	AdpType=Prep	52	case	_	_
-52	transportes	transporte	NOUN	n|M|P	Gender=Masc|Number=Plur	50	nmod	_	_
-53	.	.	PUNCT	punc	_	21	punct	_	_
+35	de	de	ADP	<sam->|PRP|@N<	_	37	case	_	_
+36	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_
+37	escolas	escola	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	34	nmod	_	SpaceAfter=No
+38	,	,	PUNCT	PU|@PU	_	40	punct	_	_
+39	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
+40	falta	falta	NOUN	<cjt>|<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	22	conj	_	_
+41	de	de	ADP	PRP|@N<	_	42	case	_	_
+42	dinheiro	dinheiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	_
+43	para	para	ADP	PRP|@N<	_	45	case	_	_
+44	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
+45	compra	compra	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	42	nmod	_	_
+46	de	de	ADP	PRP|@N<ARG	_	47	case	_	_
+47	livros	livro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	45	nmod	_	_
+48	e	e	CCONJ	<co-subj>|KC|@CO	_	50	cc	_	_
+49	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_
+50	carência	carência	NOUN	<cjt>|<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	22	conj	_	_
+51	de	de	ADP	PRP|@N<	_	52	case	_	_
+52	transportes	transporte	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	50	nmod	_	SpaceAfter=No
+53	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP645-5
-# sent_id = pt-ud-train.conllu#s3357/pt
-# orig_file_sentence = 034#57
-1	Problemas	problema	NOUN	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
-2	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	26	iobj	_	_
-3	,	,	PUNCT	punc	_	26	punct	_	_
-4	de	de	ADP	pp	AdpType=Prep	26	advmod	_	MWE=de_acordo|MWEPOS=ADV
-5	acordo	acordo	NOUN	NOUN	_	4	mwe	_	_
-6	com	com	ADP	prp	AdpType=Prep	7	case	_	_
-7	Carlos	Carlos	PROPN	prop|M|S	_	4	nmod	_	MWE=Carlos_Noysan|MWEPOS=PROPN
-8	Noysan	Noysan	PROPN	PROPN	_	7	name	_	_
-9	,	,	PUNCT	punc	_	26	punct	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Instituto	Instituto	PROPN	prop|M|S	_	26	nsubj	_	MWE=Instituto_de_Acção_Social|MWEPOS=PROPN
-12	de	de	ADP	ADP	AdpType=Prep	13	case	_	_
-13	Acção	Acção	PROPN	PROPN	_	11	name	_	_
-14	Social	Social	PROPN	PROPN	_	13	name	_	_
-15	e	e	CONJ	conj-c|<co-subj>	_	11	cc	_	_
-16	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	Centro	Centro	PROPN	prop|M|S	_	11	conj	_	MWE=Centro_de_Prestações_Pecuniárias|MWEPOS=PROPN
-18	de	de	ADP	ADP	AdpType=Prep	19	case	_	_
-19	Prestações	Prestações	PROPN	PROPN	_	17	name	_	_
-20	Pecuniárias	Pecuniárias	PROPN	PROPN	_	19	name	_	_
+# text = Problemas que, de acordo com Carlos Noysan, o Instituto de Acção Social e o Centro de Prestações Pecuniárias da Segurança Social têm procurado solucionar.
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-5
+# id 3358
+1	Problemas	problema	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
+2	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	26	iobj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+4	de	de	ADP	PRP|@ADVL>	_	26	advmod	_	MWE=de_acordo|MWEPOS=ADV
+5	acordo	acordo	NOUN	N|M|S|@P<	_	4	fixed	_	_
+6	com	com	ADP	PRP|@N<	_	7	case	_	_
+7	Carlos	Carlos	PROPN	_	_	4	nmod	_	MWE=Carlos_Noysan|MWEPOS=PROPN
+8	Noysan	Noysan	PROPN	_	_	7	flat	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Instituto	Instituto	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	_	25	nsubj	_	MWE=Instituto_de_Acção_Social|MWEPOS=PROPN
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	Acção	Acção	PROPN	PROP|@P<	_	11	flat	_	_
+14	Social	Social	PROPN	PROP|@N<	_	13	flat	_	_
+15	e	e	CCONJ	<co-subj>|KC|@CO	_	17	cc	_	_
+16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	Centro	Centro	PROPN	<cjt>|PROP|M|S|@SUBJ>	_	11	conj	_	MWE=Centro_de_Prestações_Pecuniárias|MWEPOS=PROPN
+18	de	de	ADP	PRP|@N<	_	19	case	_	_
+19	Prestações	Prestações	PROPN	_	_	17	flat	_	_
+20	Pecuniárias	Pecuniárias	PROPN	_	_	19	flat	_	_
 21-22	da	_	_	_	_	_	_	_	_
-21	de	de	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	Segurança	Segurança	PROPN	prop|F|S	_	17	nmod	_	MWE=Segurança_Social|MWEPOS=PROPN
-24	Social	Social	PROPN	PROPN	_	23	name	_	_
-25	têm	ter	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	aux	_	_
-26	procurado	procurar	VERB	v-pcp	VerbForm=Part	1	acl	_	_
-27	solucionar	solucionar	VERB	v-inf	VerbForm=Inf	26	xcomp	_	_
-28	.	.	PUNCT	punc	_	1	punct	_	_
+21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
+22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	Segurança	Segurança	PROPN	PROP|F|S|@P<	_	17	nmod	_	MWE=Segurança_Social|MWEPOS=PROPN
+24	Social	Social	PROPN	PROP|@N<	_	23	flat	_	_
+25	têm	ter	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	acl	_	_
+26	procurado	procurar	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	25	ccomp	_	_
+27	solucionar	solucionar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	26	xcomp	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP645-6
-# sent_id = pt-ud-train.conllu#s3358/pt
-# orig_file_sentence = 034#58
-1	Barco	barco	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-2	para	para	ADP	prp	AdpType=Prep	4	case	_	_
-3	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	Graciosa	Graciosa	PROPN	prop|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-5	--	--	PUNCT	punc	_	1	punct	_	_
+# text = Barco para a Graciosa --
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-6
+# id 3359
+1	Barco	barco	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+2	para	para	ADP	PRP|@N<	_	4	case	_	_
+3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Graciosa	Graciosa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+5	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP645-7
-# sent_id = pt-ud-train.conllu#s3359/pt
-# orig_file_sentence = 034#59
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Governo	Governo	PROPN	prop|M|S	_	7	nsubj	_	MWE=Governo_Regional_dos_Açores|MWEPOS=PROPN
-3	Regional	Regional	PROPN	PROPN	_	2	name	_	_
+# text = O Governo Regional dos Açores comprometeu-se a pagar os juros dum empréstimo a contrair pela Câmara de Santa Cruz da Graciosa e empresários locais, visando a compra dum barco de passageiros orçado em 54 mil contos.
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-7
+# id 3360
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Governo	Governo	PROPN	_	_	7	nsubj	_	MWE=Governo_Regional_dos_Açores|MWEPOS=PROPN
+3	Regional	Regional	PROPN	_	_	2	flat	_	_
 4-5	dos	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-6	Açores	Açores	PROPN	PROPN	_	2	name	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	Açores	Açores	PROPN	PROP|@P<	_	2	flat	_	_
 7-8	comprometeu-se	_	_	_	_	_	_	_	_
 7	comprometeu	comprometer	VERB	v-fin|<hyfen>|PS|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 8	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	7	iobj	_	_
-9	a	a	ADP	prp	AdpType=Prep	10	mark	_	_
-10	pagar	pagar	VERB	v-inf	VerbForm=Inf	7	xcomp	_	_
-11	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	juros	juro	NOUN	n|M|P	Gender=Masc|Number=Plur	10	dobj	_	_
+9	a	a	ADP	PRP|@<PIV	_	10	mark	_	_
+10	pagar	pagar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	xcomp	_	_
+11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+12	juros	juro	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	obj	_	_
 13-14	dum	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp	AdpType=Prep	15	case	_	_
-14	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	empréstimo	empréstimo	NOUN	n|M|S	Gender=Masc|Number=Sing	12	nmod	_	_
-16	a	a	ADP	prp	AdpType=Prep	17	mark	_	_
-17	contrair	contrair	VERB	v-inf	VerbForm=Inf	15	acl	_	_
+13	de	de	ADP	PRP|@N<ARG	_	15	case	_	_
+14	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	empréstimo	empréstimo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
+16	a	a	ADP	PRP|@N<	_	17	mark	_	_
+17	contrair	contrair	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	acl	_	_
 18-19	pela	_	_	_	_	_	_	_	_
-18	por	por	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	Câmara	Câmara	PROPN	prop|F|S	_	17	dobj	_	MWE=Câmara_de_Santa_Cruz_da_Graciosa|MWEPOS=PROPN
-21	de	de	ADP	ADP	AdpType=Prep	22	case	_	_
-22	Santa	Santa	PROPN	PROPN	_	20	name	_	_
-23	Cruz	Cruz	PROPN	PROPN	_	22	name	_	_
+18	por	por	ADP	<sam->|PRP|@PASS	_	20	case	_	_
+19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Câmara	Câmara	PROPN	<first-cjt>|PROP|F|S|@P<	_	17	obj	_	MWE=Câmara_de_Santa_Cruz_da_Graciosa|MWEPOS=PROPN
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	Santa	Santa	PROPN	PROP|@P<	_	20	flat	_	_
+23	Cruz	Cruz	PROPN	PROP|@N<	_	22	flat	_	_
 24-25	da	_	_	_	_	_	_	_	_
-24	de	de	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	Graciosa	Graciosa	PROPN	PROPN	_	22	name	_	_
-27	e	e	CONJ	conj-c|<co-prparg>	_	20	cc	_	_
-28	empresários	empresário	NOUN	n|M|P	Gender=Masc|Number=Plur	20	conj	_	_
-29	locais	local	ADJ	adj|M|P	Gender=Masc|Number=Plur	28	amod	_	_
-30	,	,	PUNCT	punc	_	15	punct	_	_
-31	visando	visar	VERB	v-ger	VerbForm=Ger	15	acl	_	_
-32	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	compra	compra	NOUN	n|F|S	Gender=Fem|Number=Sing	31	dobj	_	_
+24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
+25	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	Graciosa	Graciosa	PROPN	PROP|@P<	_	22	flat	_	_
+27	e	e	CCONJ	<co-prparg>|KC|@CO	_	28	cc	_	_
+28	empresários	empresário	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	conj	_	_
+29	locais	local	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	28	amod	_	SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+31	visando	visar	VERB	<mv>|V|GER|@ICL-N<PRED	VerbForm=Ger	15	acl	_	_
+32	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+33	compra	compra	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	31	obj	_	_
 34-35	dum	_	_	_	_	_	_	_	_
-34	de	de	ADP	prp	AdpType=Prep	36	case	_	_
-35	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-36	barco	barco	NOUN	n|M|S	Gender=Masc|Number=Sing	33	nmod	_	_
-37	de	de	ADP	prp	AdpType=Prep	38	case	_	_
-38	passageiros	passageiro	NOUN	n|M|P	Gender=Masc|Number=Plur	36	nmod	_	_
-39	orçado	orçar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	36	acl	_	_
-40	em	em	ADP	prp	AdpType=Prep	43	case	_	_
-41	54	54	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	42	compound	_	_
-42	mil	mil	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	43	nummod	_	_
-43	contos	conto	NOUN	n|M|P	Gender=Masc|Number=Plur	39	nmod	_	_
-44	.	.	PUNCT	punc	_	7	punct	_	_
+34	de	de	ADP	PRP|@N<ARG	_	36	case	_	_
+35	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
+36	barco	barco	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	33	nmod	_	_
+37	de	de	ADP	PRP|@N<	_	38	case	_	_
+38	passageiros	passageiro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	36	nmod	_	_
+39	orçado	orçar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	36	acl	_	_
+40	em	em	ADP	PRP|@<ADVL	_	43	case	_	_
+41	54	54	NUM	<card>|NUM|M|P|@>A	Gender=Masc|Number=Plur|NumType=Card	42	compound	_	_
+42	mil	mil	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	43	nummod	_	_
+43	contos	conto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	39	obl	_	SpaceAfter=No
+44	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP645-8
-# sent_id = pt-ud-train.conllu#s3360/pt
-# orig_file_sentence = 034#60
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	embarcação	embarcação	NOUN	n|F|S	Gender=Fem|Number=Sing	13	nsubj	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-5	30	30	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
-6	lugares	lugar	NOUN	n|M|P	Gender=Masc|Number=Plur	2	nmod	_	_
-7	e	e	CONJ	conj-c|<co-prparg>	_	6	cc	_	_
-8	14	14	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	9	nummod	_	_
-9	metros	metro	NOUN	n|M|P	Gender=Masc|Number=Plur	6	conj	_	_
-10	de	de	ADP	pp	AdpType=Prep	9	advmod	_	MWE=de_comprimento|MWEPOS=ADV
-11	comprimento	comprimento	NOUN	NOUN	_	10	mwe	_	_
-12	,	,	PUNCT	punc	_	2	punct	_	_
+# text = A embarcação, de 30 lugares e 14 metros de comprimento, destina-se ao tráfego entre as ilhas do grupo central do arquipélago, viajando prioritariamente entre a Graciosa e a Terceira.
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-8
+# id 3361
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	embarcação	embarcação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	de	de	ADP	PRP|@N<PRED	_	6	case	_	_
+5	30	30	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
+6	lugares	lugar	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
+7	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	_
+8	14	14	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	9	nummod	_	_
+9	metros	metro	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	conj	_	_
+10	de	de	ADP	PRP|@N<	_	9	advmod	_	MWE=de_comprimento|MWEPOS=ADV
+11	comprimento	comprimento	NOUN	N|@P<	_	10	fixed	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 13-14	destina-se	_	_	_	_	_	_	_	_
 13	destina	destinar	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-14	-se	se	PRON	pron-pers|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	dobj	_	_
+14	-se	se	PRON	pron-pers|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	obj	_	_
 15-16	ao	_	_	_	_	_	_	_	_
-15	a	a	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	tráfego	tráfego	NOUN	n|M|S	Gender=Masc|Number=Sing	13	iobj	_	_
-18	entre	entre	ADP	prp	AdpType=Prep	20	case	_	_
-19	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
-20	ilhas	ilha	NOUN	n|F|P	Gender=Fem|Number=Plur	17	nmod	_	_
+15	a	a	ADP	<sam->|PRP|@<PIV	_	17	case	_	_
+16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	tráfego	tráfego	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	iobj	_	_
+18	entre	entre	ADP	PRP|@N<	_	20	case	_	_
+19	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
+20	ilhas	ilha	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	nmod	_	_
 21-22	do	_	_	_	_	_	_	_	_
-21	de	de	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	grupo	grupo	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-24	central	central	ADJ	adj|M|S	Gender=Masc|Number=Sing	23	amod	_	_
+21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
+22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	grupo	grupo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
+24	central	central	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	23	amod	_	_
 25-26	do	_	_	_	_	_	_	_	_
-25	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	arquipélago	arquipélago	NOUN	n|M|S	Gender=Masc|Number=Sing	23	nmod	_	_
-28	,	,	PUNCT	punc	_	13	punct	_	_
-29	viajando	viajar	VERB	v-ger	VerbForm=Ger	13	advcl	_	_
-30	prioritariamente	prioritariamente	ADV	adv	_	29	advmod	_	_
-31	entre	entre	ADP	prp	AdpType=Prep	30	case	_	_
-32	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	Graciosa	Graciosa	PROPN	prop|F|S	Gender=Fem|Number=Sing	30	nmod	_	_
-34	e	e	CONJ	conj-c|<co-prparg>	_	33	cc	_	_
-35	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
-36	Terceira	Terceira	PROPN	prop|F|S	Gender=Fem|Number=Sing	33	conj	_	_
-37	.	.	PUNCT	punc	_	13	punct	_	_
+25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
+26	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	arquipélago	arquipélago	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+29	viajando	viajar	VERB	<mv>|V|GER|@ICL-<PRED	VerbForm=Ger	13	advcl	_	_
+30	prioritariamente	prioritariamente	ADV	ADV|@>A	_	29	advmod	_	_
+31	entre	entre	ADP	PRP|@<ADVL	_	30	case	_	_
+32	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
+33	Graciosa	Graciosa	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	30	obl	_	_
+34	e	e	CCONJ	<co-prparg>|KC|@CO	_	36	cc	_	_
+35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
+36	Terceira	Terceira	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	33	conj	_	SpaceAfter=No
+37	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP645-9
-# sent_id = pt-ud-train.conllu#s3361/pt
-# orig_file_sentence = 034#61
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	secretário	secretário	NOUN	n|M|S	_	11	nsubj	_	MWE=secretário_regional_da_Economia|MWEPOS=NOUN
-3	regional	regional	NOUN	NOUN	_	2	compound	_	_
+# text = O secretário regional da Economia, Duarte Ponte, justificou o apoio governamental com o envolvimento camarário no projecto, desafiando outras autarquias das ilhas a iniciativas semelhantes.
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-9
+# id 3362
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	secretário	secretário	NOUN	N|@SUBJ>	_	11	nsubj	_	MWE=secretário_regional_da_Economia|MWEPOS=NOUN
+3	regional	regional	NOUN	ADJ|@N<	_	2	compound	_	_
 4-5	da	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	Economia	Economia	NOUN	NOUN	_	2	compound	_	_
-7	,	,	PUNCT	punc	_	2	punct	_	_
-8	Duarte	Duarte	PROPN	prop|M|S	_	2	appos	_	MWE=Duarte_Ponte|MWEPOS=PROPN
-9	Ponte	Ponte	PROPN	PROPN	_	8	name	_	_
-10	,	,	PUNCT	punc	_	2	punct	_	_
-11	justificou	justificar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-12	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	apoio	apoio	NOUN	n|M|S	Gender=Masc|Number=Sing	11	dobj	_	_
-14	governamental	governamental	ADJ	adj|M|S	Gender=Masc|Number=Sing	13	amod	_	_
-15	com	com	ADP	prp	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	envolvimento	envolvimento	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-18	camarário	camarário	ADJ	adj|M|S	Gender=Masc|Number=Sing	17	amod	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Economia	Economia	NOUN	N|@P<	_	2	compound	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+8	Duarte	Duarte	PROPN	_	_	2	appos	_	MWE=Duarte_Ponte|MWEPOS=PROPN
+9	Ponte	Ponte	PROPN	_	_	8	flat	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+11	justificou	justificar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	apoio	apoio	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_
+14	governamental	governamental	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	13	amod	_	_
+15	com	com	ADP	PRP|@<ADVL	_	17	case	_	_
+16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	envolvimento	envolvimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	_
+18	camarário	camarário	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	_
 19-20	no	_	_	_	_	_	_	_	_
-19	em	em	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-20	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	projecto	projecto	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-22	,	,	PUNCT	punc	_	11	punct	_	_
-23	desafiando	desafiar	VERB	v-ger	VerbForm=Ger	11	advcl	_	_
-24	outras	outro	DET	pron-det|<diff>|<KOMP>|F|P	Degree=Cmp|Gender=Fem|Number=Plur	25	det	_	_
-25	autarquias	autarquia	NOUN	n|F|P	Gender=Fem|Number=Plur	23	dobj	_	_
+19	em	em	ADP	<sam->|PRP|@N<	_	21	case	_	_
+20	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	projecto	projecto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+23	desafiando	desafiar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	11	advcl	_	_
+24	outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Degree=Cmp|Gender=Fem|Number=Plur	25	det	_	_
+25	autarquias	autarquia	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	23	obj	_	_
 26-27	das	_	_	_	_	_	_	_	_
-26	de	de	ADP	prp|<sam->	AdpType=Prep	28	case	_	_
-27	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
-28	ilhas	ilha	NOUN	n|F|P	Gender=Fem|Number=Plur	25	nmod	_	_
-29	a	a	ADP	prp	AdpType=Prep	30	case	_	_
-30	iniciativas	iniciativa	NOUN	n|F|P	Gender=Fem|Number=Plur	23	dobj	_	_
-31	semelhantes	semelhante	ADJ	adj|F|P	Gender=Fem|Number=Plur	30	amod	_	_
-32	.	.	PUNCT	punc	_	11	punct	_	_
+26	de	de	ADP	<sam->|PRP|@N<	_	28	case	_	_
+27	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
+28	ilhas	ilha	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	25	nmod	_	_
+29	a	a	ADP	PRP|@<PIV	_	30	case	_	_
+30	iniciativas	iniciativa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	23	obj	_	_
+31	semelhantes	semelhante	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	30	amod	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP645-10
-# sent_id = pt-ud-train.conllu#s3362/pt
-# orig_file_sentence = 034#62
-1	A	a	ADP	prp	AdpType=Prep	4	case	_	MWE=A_partir_de|MWEPOS=ADP
-2	partir	partir	NOUN	NOUN	_	1	mwe	_	_
-3	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-4	Maio	maio	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	14	nmod	_	_
-5	,	,	PUNCT	punc	_	14	punct	_	_
-6	outra	outro	DET	pron-det|<diff>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	7	det	_	_
-7	embarcação	embarcação	NOUN	n|F|S	Gender=Fem|Number=Sing	14	nsubjpass	_	_
-8	com	com	ADP	prp	AdpType=Prep	9	case	_	_
-9	capacidade	capacidade	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-10	para	para	ADP	prp	AdpType=Prep	12	case	_	_
-11	150	150	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-12	passageiros	passageiro	NOUN	n|M|P	Gender=Masc|Number=Plur	9	nmod	_	_
-13	será	ser	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	auxpass	_	_
-14	alugada	alugar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+# text = A partir de Maio, outra embarcação com capacidade para 150 passageiros será alugada pelo governo regional para ligar as ilhas dos grupos central e oriental.
+# forest 1
+# source CETEMPúblico n=645 sec=soc sem=97a
+# sent_id = CP645-10
+# id 3363
+1	A	a	ADP	PRP|@ADVL>	_	4	case	_	MWE=A_partir_de|MWEPOS=ADP
+2	partir	partir	NOUN	N|@P<	_	1	fixed	_	_
+3	de	de	ADP	PRP|@N<	_	1	fixed	_	_
+4	Maio	maio	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+6	outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	7	det	_	_
+7	embarcação	embarcação	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj	_	_
+8	com	com	ADP	PRP|@N<	_	9	case	_	_
+9	capacidade	capacidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
+10	para	para	ADP	PRP|@N<	_	12	case	_	_
+11	150	150	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+12	passageiros	passageiro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
+13	será	ser	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+14	alugada	alugar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	13	ccomp	_	_
 15-16	pelo	_	_	_	_	_	_	_	_
-15	por	por	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	governo	governo	NOUN	n|M|S	Gender=Masc|Number=Sing	14	dobj	_	_
-18	regional	regional	ADJ	adj|M|S	Gender=Masc|Number=Sing	17	amod	_	_
-19	para	para	ADP	prp	AdpType=Prep	20	mark	_	_
-20	ligar	ligar	VERB	v-inf	VerbForm=Inf	14	advcl	_	_
-21	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
-22	ilhas	ilha	NOUN	n|F|P	Gender=Fem|Number=Plur	20	dobj	_	_
+15	por	por	ADP	PRP|@PASS	_	17	case	_	_
+16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	governo	governo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obj	_	_
+18	regional	regional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	_
+19	para	para	ADP	PRP|@<ADVL	_	20	mark	_	_
+20	ligar	ligar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	14	advcl	_	_
+21	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
+22	ilhas	ilha	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	20	obj	_	_
 23-24	dos	_	_	_	_	_	_	_	_
-23	de	de	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
-25	grupos	grupo	NOUN	n|M|P	Gender=Masc|Number=Plur	22	nmod	_	_
-26	central	central	ADJ	adj|M|S	Gender=Masc|Number=Sing	25	amod	_	_
-27	e	e	CONJ	conj-c|<co-postnom>	_	26	cc	_	_
-28	oriental	oriental	ADJ	adj|M|S	Gender=Masc|Number=Sing	26	conj	_	_
-29	.	.	PUNCT	punc	_	14	punct	_	_
+23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
+24	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
+25	grupos	grupo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
+26	central	central	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	25	amod	_	_
+27	e	e	CCONJ	<co-postnom>|KC|@CO	_	28	cc	_	_
+28	oriental	oriental	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	26	conj	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 

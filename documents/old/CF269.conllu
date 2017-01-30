@@ -1,55 +1,58 @@
-# distance_from_new = 0
-# new_sent_id = CF269-1
-# sent_id = pt-ud-train.conllu#s6172/pt
-# orig_file_sentence = 062#72
-1	Santana	Santana	PROPN	prop|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-2	era	ser	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
-3	morador	morador	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	0	root	_	_
-4	antigo	antigo	ADJ	adj|M|S	Gender=Masc|Number=Sing	3	amod	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	Lambari	Lambari	PROPN	prop|M|S	_	3	nmod	_	MWE=Lambari_d'_Oeste|MWEPOS=PROPN
-7	d'	d\'	ADP	ADP	AdpType=Prep	8	case	_	_
-8	Oeste	Oeste	PROPN	PROPN	_	6	name	_	_
-9	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Santana era morador antigo de Lambari d'Oeste.
+# forest 1
+# source CETENFolha n=269 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF269-1
+# id 1130
+1	Santana	Santana	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
+3	morador	morador	ADJ	<n>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+4	antigo	antigo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	Lambari	Lambari	PROPN	_	_	3	nmod	_	MWE=Lambari_d'_Oeste|MWEPOS=PROPN
+7	d'	d\'	ADP	_	_	8	case	_	SpaceAfter=No
+8	Oeste	Oeste	PROPN	_	_	6	flat	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF269-2
-# sent_id = pt-ud-train.conllu#s6173/pt
-# orig_file_sentence = 062#73
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
-2	três	três	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
-3	cortadores	cortador	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nsubj	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	cana	cana	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	eram	ser	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	8	cop	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	Alagoas	Alagoas	PROPN	prop|M|S	Gender=Masc|Number=Sing	0	root	_	_
-9	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	8	cc	_	_
-10	estavam	estar	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	8	conj	_	_
+# text = Os três cortadores de cana eram de Alagoas e estavam na cidade havia 15 dias.
+# forest 1
+# source CETENFolha n=269 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF269-2
+# id 1131
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+2	três	três	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
+3	cortadores	cortador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	cana	cana	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+6	eram	ser	AUX	<first-cjt>|<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	8	cop	_	_
+7	de	de	ADP	PRP|@<SC	_	8	case	_	_
+8	Alagoas	Alagoas	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	0	root	_	_
+9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+10	estavam	estar	VERB	<cjt>|<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	8	conj	_	_
 11-12	na	_	_	_	_	_	_	_	_
-11	em	em	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	cidade	cidade	NOUN	n|F|S	Gender=Fem|Number=Sing	10	nmod	_	_
-14	havia	há	ADP	prp	AdpType=Prep	16	case	_	_
-15	15	15	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	16	nummod	_	_
-16	dias	dia	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nmod	_	_
-17	.	.	PUNCT	punc	_	8	punct	_	_
+11	em	em	ADP	<sam->|PRP|@<SA	_	13	case	_	_
+12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	_
+14	havia	há	ADP	_	_	16	case	_	_
+15	15	15	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	16	nummod	_	_
+16	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF269-3
-# sent_id = pt-ud-train.conllu#s6174/pt
-# orig_file_sentence = 062#74
-1	Lambari	Lambari	PROPN	prop|M|S	_	8	nsubj	_	MWE=Lambari_d'_Oeste|MWEPOS=PROPN
-2	d'	d'	ADP	ADP	AdpType=Prep	3	case	_	_
-3	Oeste	Oeste	PROPN	PROPN	_	1	name	_	_
-4	(	(	PUNCT	punc	_	1	punct	_	_
-5	5.000	5.000	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
-6	habitantes	habitante	NOUN	n|M|P	Gender=Masc|Number=Plur	1	nmod	_	_
-7	)	)	PUNCT	punc	_	1	punct	_	_
-8	virou	virar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-9	município	município	NOUN	n|M|S	Gender=Masc|Number=Sing	8	dobj	_	_
-10	há	há	ADP	prp	AdpType=Prep	12	case	_	_
-11	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
-12	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
-13	.	.	PUNCT	punc	_	8	punct	_	_
+# text = Lambari d'Oeste (5.000 habitantes) virou município há dois anos.
+# forest 1
+# source CETENFolha n=269 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF269-3
+# id 1132
+1	Lambari	Lambari	PROPN	_	_	8	nsubj	_	MWE=Lambari_d'_Oeste|MWEPOS=PROPN
+2	d'	d'	ADP	_	_	3	case	_	SpaceAfter=No
+3	Oeste	Oeste	PROPN	_	_	1	flat	_	_
+4	(	(	PUNCT	PU|@PU	_	1	punct	_	SpaceAfter=No
+5	5.000	5.000	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
+6	habitantes	habitante	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	1	nmod	_	SpaceAfter=No
+7	)	)	PUNCT	PU|@PU	_	1	punct	_	_
+8	virou	virar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	município	município	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
+10	há	há	ADP	PRP|@<ADVL	_	12	case	_	_
+11	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	12	nummod	_	_
+12	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 

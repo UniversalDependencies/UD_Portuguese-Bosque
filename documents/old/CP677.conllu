@@ -1,61 +1,64 @@
-# distance_from_new = 0
-# new_sent_id = CP677-1
-# sent_id = pt-ud-train.conllu#s3501/pt
-# orig_file_sentence = 036#1
-1	Frei	Frei	PROPN	prop|M|S	_	0	root	_	MWE=Frei_Bento_Domingues|MWEPOS=PROPN
-2	Bento	Bento	PROPN	PROPN	_	1	name	_	_
-3	Domingues	Domingues	PROPN	PROPN	_	1	name	_	_
-4	,	,	PUNCT	punc	_	1	punct	_	_
-5	O.P.	O.P.	PROPN	prop|M/F|S/P	_	1	nmod	_	_
+# text = Frei Bento Domingues, O.P.
+# forest 1
+# source CETEMPúblico n=677 sec=nd sem=94b
+# sent_id = CP677-1
+# id 3502
+1	Frei	Frei	PROPN	_	_	0	root	_	MWE=Frei_Bento_Domingues|MWEPOS=PROPN
+2	Bento	Bento	PROPN	_	_	1	flat	_	_
+3	Domingues	Domingues	PROPN	_	_	1	flat	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+5	O.P.	O.P.	PROPN	PROP|M|S|@N<PRED	_	1	nmod	_	_
 
-# distance_from_new = 4
-# new_sent_id = CP677-2
-# sent_id = pt-ud-train.conllu#s3502/pt
-# orig_file_sentence = 036#2
+# text = Diz-se que um documento do Vaticano ou provoca uma grande polémica -- e torna-se um sucesso editorial -- ou vai dormir tranquilamente para as bibliotecas eclesiásticas.
+# forest 1
+# source CETEMPúblico n=677 sec=nd sem=94b
+# sent_id = CP677-2
+# id 3503
 1-2	Diz-se	_	_	_	_	_	_	_	_
 1	Diz	dizer	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	-se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	1	nsubj	_	_
-3	que	que	SCONJ	conj-s	_	10	mark	_	_
-4	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	documento	documento	NOUN	n|M|S	Gender=Masc|Number=Sing	10	nsubj	_	_
+3	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
+4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	documento	documento	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 6-7	do	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Vaticano	Vaticano	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-9	ou	ou	CONJ	conj-c|<co-vfin>	_	10	cc	_	_
-10	provoca	provocar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
-11	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-12	grande	grande	ADJ	adj|F|S	Gender=Fem|Number=Sing	13	amod	_	_
-13	polémica	polémica	NOUN	n|F|S	Gender=Fem|Number=Sing	10	dobj	_	_
-14	--	--	PUNCT	punc	_	10	punct	_	_
-15	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	10	cc	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Vaticano	Vaticano	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
+9	ou	ou	CCONJ	<co-acc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+10	provoca	provocar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
+11	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+12	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	13	amod	_	_
+13	polémica	polémica	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
+14	--	--	PUNCT	PU|@PU	_	16	punct	_	_
+15	e	e	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	_
 16-17	torna-se	_	_	_	_	_	_	_	_
 16	torna	tornar	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
 17	-se	se	PRON	pron-pers|<refl>|M|3S|ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	16	iobj	_	_
-18	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	sucesso	sucesso	NOUN	n|M|S	Gender=Masc|Number=Sing	16	xcomp	_	_
-20	editorial	editorial	ADJ	adj|M|S	Gender=Masc|Number=Sing	19	amod	_	_
-21	--	--	PUNCT	punc	_	10	punct	_	_
-22	ou	ou	CONJ	conj-c|<co-vfin>|<co-fmc>	_	10	cc	_	_
-23	vai	ir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
-24	dormir	dormir	VERB	v-inf	VerbForm=Inf	23	xcomp	_	_
-25	tranquilamente	tranquilamente	ADV	adv	_	24	advmod	_	_
-26	para	para	ADP	prp	AdpType=Prep	28	case	_	_
-27	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
-28	bibliotecas	biblioteca	NOUN	n|F|P	Gender=Fem|Number=Plur	24	nmod	_	_
-29	eclesiásticas	eclesiástico	ADJ	adj|F|P	Gender=Fem|Number=Plur	28	amod	_	_
-30	.	.	PUNCT	punc	_	1	punct	_	_
+18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	sucesso	sucesso	NOUN	<np-idf>|N|M|S|@<OC	Gender=Masc|Number=Sing	16	xcomp	_	_
+20	editorial	editorial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
+21	--	--	PUNCT	PU|@PU	_	23	punct	_	_
+22	ou	ou	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|<co-cu>|KC|@CO	_	23	cc	_	_
+23	vai	ir	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
+24	dormir	dormir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	xcomp	_	_
+25	tranquilamente	tranquilamente	ADV	ADV|@<ADVL	_	24	advmod	_	_
+26	para	para	ADP	PRP|@<ADVL	_	28	case	_	_
+27	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
+28	bibliotecas	biblioteca	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	24	obl	_	_
+29	eclesiásticas	eclesiástico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	28	amod	_	SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP677-3
-# sent_id = pt-ud-train.conllu#s3503/pt
-# orig_file_sentence = 036#3
-1	João	João	PROPN	prop|M|S	_	3	nsubj	_	MWE=João_XXIII|MWEPOS=PROPN
-2	XXIII	XXIII	PROPN	PROPN	_	1	name	_	_
-3	teria	ter	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
-4	sido	ser	VERB	v-pcp	VerbForm=Part	7	cop	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-6	santíssima	santo	ADJ	adj|<SUP>|F|S	Degree=Sup|Gender=Fem|Number=Sing	7	amod	_	_
-7	excepção	excepção	NOUN	n|F|S	Gender=Fem|Number=Sing	3	ccomp	_	_
-8	.	.	PUNCT	punc	_	3	punct	_	_
+# text = João XXIII teria sido a santíssima excepção.
+# forest 1
+# source CETEMPúblico n=677 sec=nd sem=94b
+# sent_id = CP677-3
+# id 3504
+1	João	João	PROPN	_	_	3	nsubj	_	MWE=João_XXIII|MWEPOS=PROPN
+2	XXIII	XXIII	PROPN	_	_	1	flat	_	_
+3	teria	ter	VERB	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+4	sido	ser	AUX	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	7	cop	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+6	santíssima	santo	ADJ	<SUP>|ADJ|F|S|@>N	Degree=Sup|Gender=Fem|Number=Sing	7	amod	_	_
+7	excepção	excepção	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	3	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

@@ -1,341 +1,352 @@
-# distance_from_new = 0
-# new_sent_id = CP388-1
-# sent_id = pt-ud-train.conllu#s2017/pt
-# orig_file_sentence = 021#17
-1	É	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
-2	claro	claro	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
-3	que	que	SCONJ	conj-s	_	11	mark	_	_
+# text = É claro que nesta perspectiva as autoridades espanholas tudo tentarão fazer para integrar o pelotão da frente, cenário sem dúvida mais favorável a Portugal.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a
+# sent_id = CP388-1
+# id 2018
+1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	claro	claro	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+3	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
 4-5	nesta	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	esta	este	DET	pron-det|<-sam>|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
-6	perspectiva	perspectiva	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-7	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
-8	autoridades	autoridade	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nsubj	_	_
-9	espanholas	espanhol	ADJ	adj|F|P	Gender=Fem|Number=Plur	8	amod	_	_
-10	tudo	tudo	PRON	pron-indp|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	12	dobj	_	_
-11	tentarão	tentar	VERB	v-fin|FUT|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	2	csubj	_	_
-12	fazer	fazer	VERB	v-inf	VerbForm=Inf	11	xcomp	_	_
-13	para	para	ADP	prp	AdpType=Prep	14	mark	_	_
-14	integrar	integrar	VERB	v-inf	VerbForm=Inf	12	advcl	_	_
-15	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	pelotão	pelotão	NOUN	n|M|S	Gender=Masc|Number=Sing	14	dobj	_	_
+4	em	em	ADP	<sam->|PRP|@ADVL>	_	6	case	_	_
+5	esta	este	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+6	perspectiva	perspectiva	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	_
+7	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
+8	autoridades	autoridade	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	11	nsubj	_	_
+9	espanholas	espanhol	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	8	amod	_	_
+10	tudo	tudo	PRON	<quant>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	12	obj	_	_
+11	tentarão	tentar	VERB	<mv>|V|FUT|3P|IND|@FS-<SUBJ	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	2	csubj	_	_
+12	fazer	fazer	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	11	xcomp	_	_
+13	para	para	ADP	PRP|@<ADVL	_	14	mark	_	_
+14	integrar	integrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	advcl	_	_
+15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	pelotão	pelotão	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
 17-18	da	_	_	_	_	_	_	_	_
-17	de	de	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	frente	frente	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-20	,	,	PUNCT	punc	_	11	punct	_	_
-21	cenário	cenário	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-22	sem	sem	ADP	prp	AdpType=Prep	23	case	_	_
-23	dúvida	dúvida	NOUN	n|F|S	Gender=Fem|Number=Sing	21	nmod	_	_
-24	mais	mais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	25	advmod	_	_
-25	favorável	favorável	ADJ	adj|M|S	Gender=Masc|Number=Sing	21	amod	_	_
-26	a	a	ADP	prp	AdpType=Prep	27	case	_	_
-27	Portugal	Portugal	PROPN	prop|M|S	Gender=Masc|Number=Sing	25	nmod	_	_
-28	.	.	PUNCT	punc	_	2	punct	_	_
+17	de	de	ADP	<sam->|PRP|@N<	_	19	case	_	_
+18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	frente	frente	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+21	cenário	cenário	NOUN	<np-idf>|N|M|S|@S<	Gender=Masc|Number=Sing	11	obl	_	_
+22	sem	sem	ADP	PRP|@N<	_	23	case	_	_
+23	dúvida	dúvida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
+24	mais	mais	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	25	advmod	_	_
+25	favorável	favorável	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	amod	_	_
+26	a	a	ADP	PRP|@A<	_	27	case	_	_
+27	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	25	obl	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP388-2
-# sent_id = pt-ud-train.conllu#s2018/pt
-# orig_file_sentence = 021#18
-1	Mas	mas	CONJ	conj-c	_	9	cc	_	_
-2	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
-3	coisas	coisa	NOUN	n|F|P	Gender=Fem|Number=Plur	9	nsubj	_	_
-4	em	em	ADP	prp	AdpType=Prep	5	case	_	_
-5	Espanha	Espanha	PROPN	prop|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	não	não	ADV	adv	_	9	neg	_	_
-7	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
-8	nada	nada	ADV	adv|<quant>|<det>	NumType=Card|PronType=Ind,Neg,Tot	9	advmod	_	_
-9	fáceis	fácil	ADJ	adj|F|P	Gender=Fem|Number=Plur	0	root	_	_
-10	.	.	PUNCT	punc	_	9	punct	_	_
+# text = Mas as coisas em Espanha não estão nada fáceis.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a
+# sent_id = CP388-2
+# id 2019
+1	Mas	mas	CCONJ	KC|@CO	_	9	cc	_	_
+2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+3	coisas	coisa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	9	nsubj	_	_
+4	em	em	ADP	PRP|@N<	_	5	case	_	_
+5	Espanha	Espanha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+6	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
+7	estão	estar	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	nada	nada	ADV	<quant>|<det>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	9	advmod	_	_
+9	fáceis	fácil	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP388-3
-# sent_id = pt-ud-train.conllu#s2019/pt
-# orig_file_sentence = 021#19
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	derrapagem	derrapagem	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
+# text = A derrapagem da economia acentua-se.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a
+# sent_id = CP388-3
+# id 2020
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	derrapagem	derrapagem	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	economia	economia	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6-7	acentua-se	_	_	_	_	_	_	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	economia	economia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+6-7	acentua-se	_	_	_	_	_	_	_	SpaceAfter=No
 6	acentua	acentuar	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	-se	se	PRON	pron-pers|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
-8	.	.	PUNCT	punc	_	6	punct	_	_
+8	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP388-4
-# sent_id = pt-ud-train.conllu#s2020/pt
-# orig_file_sentence = 021#20
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	números	número	NOUN	n|M|P	Gender=Masc|Number=Plur	12	nsubj	_	_
+# text = Os números do desemprego conhecidos na semana passada são desastrosos:
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a
+# sent_id = CP388-4
+# id 2021
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	números	número	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	desemprego	desemprego	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-6	conhecidos	conhecer	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	desemprego	desemprego	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	conhecidos	conhecer	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	_	_
 7-8	na	_	_	_	_	_	_	_	_
-7	em	em	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	semana	semana	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-10	passada	passar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	9	acl	_	_
-11	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
-12	desastrosos	desastroso	ADJ	adj|M|P	Gender=Masc|Number=Plur	0	root	_	_
-13	:	:	PUNCT	punc	_	12	punct	_	_
+7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+10	passada	passar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	9	acl	_	_
+11	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
+12	desastrosos	desastroso	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+13	:	:	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP388-5
-# sent_id = pt-ud-train.conllu#s2021/pt
-# orig_file_sentence = 021#21
-1	um	um	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	8	nsubj	_	_
-2	em	em	ADP	prp	AdpType=Prep	5	case	_	_
-3	cada	cada	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
-4	cinco	cinco	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
-5	espanhóis	espanhol	NOUN	n|M|P	Gender=Masc|Number=Plur	1	nmod	_	_
-6	estão	estar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-7	sem	sem	ADP	prp	AdpType=Prep	8	case	_	_
-8	emprego	emprego	NOUN	n|M|S	Gender=Masc|Number=Sing	0	root	_	_
-9	.	.	PUNCT	punc	_	8	punct	_	_
+# text = um em cada cinco espanhóis estão sem emprego.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a
+# sent_id = CP388-5
+# id 2022
+1	um	um	NUM	<card>|NUM|M|S|@SUBJ>	Gender=Masc|Number=Sing|NumType=Card	8	nsubj	_	_
+2	em	em	ADP	PRP|@A<	_	5	case	_	_
+3	cada	cada	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	5	det	_	_
+4	cinco	cinco	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
+5	espanhóis	espanhol	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl	_	_
+6	estão	estar	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+7	sem	sem	ADP	PRP|@<SC	_	8	case	_	_
+8	emprego	emprego	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP388-6
-# sent_id = pt-ud-train.conllu#s2022/pt
-# orig_file_sentence = 021#22
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Governo	Governo	PROPN	prop|M|S	Gender=Masc|Number=Sing	4	nsubj	_	_
-3	socialista	socialista	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
-4	previa	prever	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-5	que	que	SCONJ	conj-s	_	9	mark	_	_
-6	essa	esse	DET	pron-det|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
-7	fasquia	fasquia	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nsubjpass	_	_
-8	fosse	ser	VERB	v-fin|IMPF|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	auxpass	_	_
-9	atingida	atingir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	4	ccomp	_	_
-10	apenas	apenas	ADV	adv	_	13	advmod:emph	_	_
+# text = O Governo socialista previa que essa fasquia fosse atingida apenas no final deste ano, depois dum forte aperto na economia, mas, supreendentemente, foi já alcançado.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a &W
+# sent_id = CP388-6
+# id 2023
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Governo	Governo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	socialista	socialista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
+4	previa	prever	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+5	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
+6	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
+7	fasquia	fasquia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
+8	fosse	ser	VERB	<first-cjt>|<aux>|V|IMPF|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	ccomp	_	_
+9	atingida	atingir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	8	ccomp	_	_
+10	apenas	apenas	ADV	ADV|@>P	_	13	advmod:emph	_	_
 11-12	no	_	_	_	_	_	_	_	_
-11	em	em	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	final	final	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nmod	_	_
+11	em	em	ADP	<sam->|PRP|@<ADVL	_	13	case	_	_
+12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	final	final	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	_
 14-15	deste	_	_	_	_	_	_	_	_
-14	de	de	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-15	este	este	DET	pron-det|<-sam>|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	16	det	_	_
-16	ano	ano	NOUN	n|M|S	Gender=Masc|Number=Sing	13	nmod	_	_
-17	,	,	PUNCT	punc	_	9	punct	_	_
-18	depois	depois	ADV	adv	_	9	advmod	_	_
+14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
+15	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	16	det	_	_
+16	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	31	punct	_	_
+18	depois	depois	ADV	ADV|@<ADVL	_	9	advmod	_	_
 19-20	dum	_	_	_	_	_	_	_	_
-19	de	de	ADP	prp	AdpType=Prep	22	case	_	_
-20	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-21	forte	forte	ADJ	adj|M|S	Gender=Masc|Number=Sing	22	amod	_	_
-22	aperto	aperto	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
+19	de	de	ADP	PRP|@A<	_	22	case	_	_
+20	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+21	forte	forte	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	22	amod	_	_
+22	aperto	aperto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	_
 23-24	na	_	_	_	_	_	_	_	_
-23	em	em	ADP	prp|<sam->	AdpType=Prep	25	case	_	_
-24	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	economia	economia	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-26	,	,	PUNCT	punc	_	9	punct	_	_
-27	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	9	cc	_	_
-28	,	,	PUNCT	punc	_	33	punct	_	_
-29	supreendentemente	supreendentemente	ADV	adv|<DERS>	_	33	advmod	_	_
-30	,	,	PUNCT	punc	_	33	punct	_	_
-31	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	auxpass	_	_
-32	já	já	ADV	adv	_	33	advmod	_	_
-33	alcançado	alcançar	VERB	v-pcp|<nil>|M|S	Gender=Masc|Number=Sing|VerbForm=Part	9	conj	_	_
-34	.	.	PUNCT	punc	_	4	punct	_	_
+23	em	em	ADP	<sam->|PRP|@N<	_	25	case	_	_
+24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	economia	economia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	31	punct	_	_
+27	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	31	cc	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	31	punct	_	_
+29	supreendentemente	supreendentemente	ADV	ADV|@ADVL>	_	33	advmod	_	SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	31	punct	_	_
+31	foi	ser	VERB	<cjt>|<aux>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	_	_
+32	já	já	ADV	ADV|@ADVL>	_	33	advmod	_	_
+33	alcançado	alcançar	VERB	<mv>|<pass>|<nil>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	31	ccomp	_	SpaceAfter=No
+34	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CP388-7
-# sent_id = pt-ud-train.conllu#s2023/pt
-# orig_file_sentence = 021#23
-1	Com	com	ADP	prp	AdpType=Prep	3	case	_	_
-2	este	este	DET	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
-3	estado	estado	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	coisas	coisa	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nmod	_	_
-6	,	,	PUNCT	punc	_	7	punct	_	_
+# text = Com este estado de coisas, iniciou-se uma forte pressão dos mercados sobre a peseta.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a
+# sent_id = CP388-7
+# id 2024
+1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
+2	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
+3	estado	estado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	coisas	coisa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 7-8	iniciou-se	_	_	_	_	_	_	_	_
 7	iniciou	iniciar	VERB	v-fin|<hyfen>|PS|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-8	-se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	7	dobj	_	_
-9	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-10	forte	forte	ADJ	adj|F|S	Gender=Fem|Number=Sing	11	amod	_	_
-11	pressão	pressão	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nsubj	_	_
+8	-se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	7	obj	_	_
+9	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	forte	forte	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	11	amod	_	_
+11	pressão	pressão	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	7	nsubj	_	_
 12-13	dos	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
-14	mercados	mercado	NOUN	n|M|P	Gender=Masc|Number=Plur	11	nmod	_	_
-15	sobre	sobre	ADP	prp	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	peseta	peseta	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-18	.	.	PUNCT	punc	_	7	punct	_	_
+12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+14	mercados	mercado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
+15	sobre	sobre	ADP	PRP|@N<	_	17	case	_	_
+16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	peseta	peseta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP388-8
-# sent_id = pt-ud-train.conllu#s2024/pt
-# orig_file_sentence = 021#24
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Banco	Banco	PROPN	prop|M|S	_	6	nsubjpass	_	MWE=Banco_de_Espanha|MWEPOS=PROPN
-3	de	de	ADP	ADP	AdpType=Prep	4	case	_	_
-4	Espanha	Espanha	PROPN	PROPN	_	2	name	_	_
-5	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	auxpass	_	_
-6	chamado	chamar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
-7	a	a	ADP	prp	AdpType=Prep	8	mark	_	_
-8	intervir	intervir	VERB	v-inf	VerbForm=Inf	6	xcomp	_	_
-9	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	6	cc	_	_
-10	começarem	começar	VERB	v-fin|<nil>|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
-11	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	rumores	rumor	NOUN	n|M|P	Gender=Masc|Number=Plur	10	nsubj	_	_
-13	de	de	ADP	prp	AdpType=Prep	18	mark	_	_
-14	que	que	SCONJ	conj-s	_	18	mark	_	_
-15	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	peseta	peseta	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nsubj	_	_
-17	poderia	poder	AUX	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	18	aux	_	_
-18	tomar	tomar	VERB	v-inf	VerbForm=Inf	12	acl	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	caminho	caminho	NOUN	n|M|S	Gender=Masc|Number=Sing	18	dobj	_	_
+# text = O Banco de Espanha foi chamado a intervir e começarem os rumores de que a peseta poderia tomar o caminho da libra e da lira e abandonar o SME.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a &W
+# sent_id = CP388-8
+# id 2025
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Banco	Banco	PROPN	PROP|M|S|@SUBJ>	_	5	nsubj	_	MWE=Banco_de_Espanha|MWEPOS=PROPN
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	Espanha	Espanha	PROPN	PROP|@P<	_	2	flat	_	_
+5	foi	ser	VERB	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	chamado	chamar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	5	ccomp	_	_
+7	a	a	ADP	PRP|@<PIV	_	8	mark	_	_
+8	intervir	intervir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
+9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+10	começarem	começar	VERB	<mv>|<cjt>|<nil>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
+11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+12	rumores	rumor	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	10	nsubj	_	_
+13	de	de	ADP	PRP|@N<	_	17	mark	_	_
+14	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
+15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	peseta	peseta	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj	_	_
+17	poderia	poder	VERB	<cjt>|V|COND|3S|@FS-PAUX	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	12	acl	_	_
+18	tomar	tomar	AUX	<aux>|<cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	17	aux	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	caminho	caminho	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
 21-22	da	_	_	_	_	_	_	_	_
-21	de	de	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	libra	libra	NOUN	n|F|S	Gender=Fem|Number=Sing	20	nmod	_	_
-24	e	e	CONJ	conj-c|<co-postnom>	_	23	cc	_	_
+21	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	23	case	_	_
+22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
+23	libra	libra	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
+24	e	e	CCONJ	<co-postnom>|KC|@CO	_	27	cc	_	_
 25-26	da	_	_	_	_	_	_	_	_
-25	de	de	ADP	prp|<sam->	AdpType=Prep	27	case	_	_
-26	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	lira	lira	NOUN	n|F|S	Gender=Fem|Number=Sing	23	conj	_	_
-28	e	e	CONJ	conj-c|<co-inf>	_	18	cc	_	_
-29	abandonar	abandonar	VERB	v-inf	VerbForm=Inf	18	conj	_	_
-30	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
-31	SME	SME	PROPN	prop|M|S	Gender=Masc|Number=Sing	29	dobj	_	_
-32	.	.	PUNCT	punc	_	6	punct	_	_
+25	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	27	case	_	_
+26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	lira	lira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	conj	_	_
+28	e	e	CCONJ	<co-inf>|<co-icl>|KC|@CO	_	29	cc	_	_
+29	abandonar	abandonar	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	conj	_	_
+30	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	SME	SME	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	29	obj	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 4
-# new_sent_id = CP388-9
-# sent_id = pt-ud-train.conllu#s2025/pt
-# orig_file_sentence = 021#25
+# text = Calcula-se o que poderia posteriormente suceder ao escudo, sabendo-se, como se sabe, que os técnicos do Comité Monetário aconselham uma desvalorização substancial da moeda nacional.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a
+# sent_id = CP388-9
+# id 2026
 1-2	Calcula-se	_	_	_	_	_	_	_	_
 1	Calcula	calcular	VERB	v-fin|<hyfen>|PR|3S|IND	Hyph=Yes|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	-se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	1	nsubj	_	_
-3	o	o	DET	pron-indp|<rel>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	nsubj	_	MWE=o_que|MWEPOS=PRON
-4	que	que	SCONJ	SCONJ	_	3	compound	_	_
-5	poderia	poder	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	1	ccomp	_	_
-6	posteriormente	posteriormente	ADV	adv	_	7	advmod	_	_
-7	suceder	suceder	VERB	v-inf	VerbForm=Inf	5	xcomp	_	_
+3	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	5	nsubj	_	MWE=o_que|MWEPOS=PRON
+4	que	que	SCONJ	<rel>|INDP|M|S|@SUBJ>	_	3	compound	_	_
+5	poderia	poder	VERB	<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	1	ccomp	_	_
+6	posteriormente	posteriormente	ADV	ADV|@ADVL>	_	7	advmod	_	_
+7	suceder	suceder	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
 8-9	ao	_	_	_	_	_	_	_	_
-8	a	a	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	escudo	escudo	NOUN	n|M|S	Gender=Masc|Number=Sing	7	dobj	_	_
-11	,	,	PUNCT	punc	_	1	punct	_	_
-12-13	sabendo-se	_	_	_	_	_	_	_	_
+8	a	a	ADP	<sam->|PRP|@<PIV	_	10	case	_	_
+9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	escudo	escudo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+12-13	sabendo-se	_	_	_	_	_	_	_	SpaceAfter=No
 12	sabendo	saber	VERB	v-ger|<hyfen>	Hyph=Yes|VerbForm=Ger	1	advcl	_	_
 13	-se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	12	nsubj	_	_
-14	,	,	PUNCT	punc	_	12	punct	_	_
-15	como	como	ADV	adv|<ks>	_	17	mark	_	_
-16	se	se	PRON	pron-pers|M/F|3S/P|ACC	Case=Acc|Person=3|PronType=Prs	17	nsubj	_	_
-17	sabe	saber	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
-18	,	,	PUNCT	punc	_	12	punct	_	_
-19	que	que	SCONJ	conj-s	_	26	mark	_	_
-20	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-21	técnicos	técnico	NOUN	n|M|P	Gender=Masc|Number=Plur	26	nsubj	_	_
+14	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+15	como	como	ADV	<rel>|ADV|@ADVL>	_	17	mark	_	_
+16	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Person=3|PronType=Prs	17	nsubj	_	_
+17	sabe	saber	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+19	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
+20	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
+21	técnicos	técnico	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	26	nsubj	_	_
 22-23	do	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	Comité	Comité	PROPN	prop|M|S	_	21	nmod	_	MWE=Comité_Monetário|MWEPOS=PROPN
-25	Monetário	Monetário	PROPN	PROPN	_	24	name	_	_
-26	aconselham	aconselhar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	_
-27	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
-28	desvalorização	desvalorização	NOUN	n|F|S	Gender=Fem|Number=Sing	26	dobj	_	_
-29	substancial	substancial	ADJ	adj|F|S	Gender=Fem|Number=Sing	28	amod	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	Comité	Comité	PROPN	PROP|M|S|@P<	_	21	nmod	_	MWE=Comité_Monetário|MWEPOS=PROPN
+25	Monetário	Monetário	PROPN	PROP|@N<	_	24	flat	_	_
+26	aconselham	aconselhar	VERB	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	_
+27	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
+28	desvalorização	desvalorização	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	26	obj	_	_
+29	substancial	substancial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	28	amod	_	_
 30-31	da	_	_	_	_	_	_	_	_
-30	de	de	ADP	prp|<sam->	AdpType=Prep	32	case	_	_
-31	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
-32	moeda	moeda	NOUN	n|F|S	Gender=Fem|Number=Sing	28	nmod	_	_
-33	nacional	nacional	ADJ	adj|F|S	Gender=Fem|Number=Sing	32	amod	_	_
-34	.	.	PUNCT	punc	_	1	punct	_	_
+30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
+31	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
+32	moeda	moeda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	_
+33	nacional	nacional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	32	amod	_	SpaceAfter=No
+34	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP388-10
-# sent_id = pt-ud-train.conllu#s2026/pt
-# orig_file_sentence = 021#26
-1	Como	como	ADP	prp	AdpType=Prep	3	case	_	_
-2	em	em	ADP	prp	AdpType=Prep	3	case	_	_
-3	França	França	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-4	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	clima	clima	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nsubj	_	_
-6	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	advcl	_	_
-7	também	também	ADV	adv	_	9	cop	_	_
-8	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-9	incertezas	incerteza	NOUN	n|F|P	Gender=Fem|Number=Plur	6	advmod	_	_
-10	,	,	PUNCT	punc	_	5	punct	_	_
-11	agravado	agravar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
+# text = Como em França o clima é também de incertezas, agravado pelas eleições marcadas para meados do próximo mês, a Europa passa nas próximas semanas por um período periclitante.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a
+# sent_id = CP388-10
+# id 2027
+1	Como	como	ADP	<com>|PRP|@ADVL>	_	3	case	_	_
+2	em	em	ADP	PRP|@P<	_	3	case	_	_
+3	França	França	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	clima	clima	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
+6	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	advcl	_	_
+7	também	também	ADV	ADV|@>A	_	9	cop	_	_
+8	de	de	ADP	PRP|@<SC	_	7	case	_	_
+9	incertezas	incerteza	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	6	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+11	agravado	agravar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
 12-13	pelas	_	_	_	_	_	_	_	_
-12	por	por	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
-14	eleições	eleição	NOUN	n|F|P	Gender=Fem|Number=Plur	11	dobj	_	_
-15	marcadas	marcar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	14	acl	_	_
-16	para	para	ADP	prp	AdpType=Prep	17	case	_	_
-17	meados	meado	NOUN	n|M|P	Gender=Masc|Number=Plur	15	nmod	_	_
+12	por	por	ADP	<sam->|PRP|@PASS	_	14	case	_	_
+13	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+14	eleições	eleição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obj	_	_
+15	marcadas	marcar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	14	acl	_	_
+16	para	para	ADP	PRP|@<ADVL	_	17	case	_	_
+17	meados	meado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	obl	_	_
 18-19	do	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp|<sam->	AdpType=Prep	21	case	_	_
-19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-20	próximo	próximo	ADJ	adj|M|S	Gender=Masc|Number=Sing	21	amod	_	_
-21	mês	mês	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-22	,	,	PUNCT	punc	_	25	punct	_	_
-23	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	Europa	Europa	PROPN	prop|F|S	Gender=Fem|Number=Sing	25	nsubj	_	_
-25	passa	passar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+18	de	de	ADP	<sam->|PRP|@N<	_	21	case	_	_
+19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+20	próximo	próximo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	21	amod	_	_
+21	mês	mês	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+23	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	Europa	Europa	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	25	nsubj	_	_
+25	passa	passar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 26-27	nas	_	_	_	_	_	_	_	_
-26	em	em	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-27	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_
-28	próximas	próximo	ADJ	adj|F|P	Gender=Fem|Number=Plur	29	amod	_	_
-29	semanas	semana	NOUN	n|F|P	Gender=Fem|Number=Plur	25	nmod	_	_
-30	por	por	ADP	prp	AdpType=Prep	32	case	_	_
-31	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
-32	período	período	NOUN	n|M|S	Gender=Masc|Number=Sing	25	dobj	_	_
-33	periclitante	periclitante	ADJ	adj|M|S	Gender=Masc|Number=Sing	32	amod	_	_
-34	.	.	PUNCT	punc	_	25	punct	_	_
+26	em	em	ADP	<sam->|PRP|@<ADVL	_	29	case	_	_
+27	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_
+28	próximas	próximo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	29	amod	_	_
+29	semanas	semana	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	25	obl	_	_
+30	por	por	ADP	PRP|@<PIV	_	32	case	_	_
+31	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	período	período	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	25	obj	_	_
+33	periclitante	periclitante	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	32	amod	_	SpaceAfter=No
+34	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP388-11
-# sent_id = pt-ud-train.conllu#s2027/pt
-# orig_file_sentence = 021#27
-1	Tão	tão	ADV	adv|<dem>|<quant>	PronType=Dem	2	advmod	_	_
-2	periclitante	periclitante	ADJ	adj|M/F|S	Number=Sing	0	root	_	_
-3	,	,	PUNCT	punc	_	2	punct	_	_
-4	que	que	SCONJ	conj-s	_	15	mark	_	_
-5	se	se	SCONJ	conj-s	_	6	mark	_	_
-6	sobrevier	sobrevir	VERB	v-fin|FUT|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	advcl	_	_
-7	nova	novo	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
-8	tempestade	tempestade	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
-9	cambial	cambial	ADJ	adj|F|S	Gender=Fem|Number=Sing	8	amod	_	_
-10	,	,	PUNCT	punc	_	15	punct	_	_
-11	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	SME	SME	PROPN	prop|M|S	Gender=Masc|Number=Sing	15	nsubj	_	_
-13	muito	muito	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	14	advmod	_	_
-14	simplesmente	simplesmente	ADV	adv	_	16	advmod	_	_
-15	poderá	poder	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	acl	_	_
-16	acabar	acabar	AUX	v-inf	VerbForm=Inf	15	aux	_	_
-17	e	e	CONJ	conj-c|<co-inf>	_	16	cc	_	_
-18	dar	dar	VERB	v-inf|3S	Number=Sing|Person=3|VerbForm=Inf	16	conj	_	_
-19	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	lugar	lugar	NOUN	n|M|S	Gender=Masc|Number=Sing	18	dobj	_	_
+# text = Tão periclitante, que se sobrevier nova tempestade cambial, o SME muito simplesmente poderá acabar e dar o lugar à tal UEM acelerada para as economias mais fortes, e mais lenta para os que ainda têm muito que convergir.
+# forest 1
+# source CETEMPúblico n=388 sec=eco sem=93a
+# sent_id = CP388-11
+# id 2028
+1	Tão	tão	ADV	<dem>|<quant>|ADV|@>A	PronType=Dem	2	advmod	_	_
+2	periclitante	periclitante	ADJ	ADJ|M/F|S|@NPHR	Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	que	que	SCONJ	KS|@SUB	_	15	mark	_	_
+5	se	se	SCONJ	KS|@SUB	_	6	mark	_	_
+6	sobrevier	sobrevir	VERB	<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	advcl	_	_
+7	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	8	amod	_	_
+8	tempestade	tempestade	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	6	nsubj	_	_
+9	cambial	cambial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	SME	SME	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
+13	muito	muito	ADV	<quant>|ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	14	advmod	_	_
+14	simplesmente	simplesmente	ADV	ADV|@ADVL>	_	16	advmod	_	_
+15	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-A<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	acl	_	_
+16	acabar	acabar	AUX	<aux>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	15	aux	_	_
+17	e	e	CCONJ	<co-inf>|KC|@CO	_	18	cc	_	_
+18	dar	dar	AUX	<mv>|V|INF|3S|@ICL-AUX<	Number=Sing|Person=3|VerbForm=Inf	16	conj	_	_
+19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	lugar	lugar	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
 21-22	à	_	_	_	_	_	_	_	_
-21	a	a	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-22	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-23	tal	tal	DET	pron-det|<diff>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	24	det	_	_
-24	UEM	UEM	PROPN	prop|F|S	Gender=Fem|Number=Sing	18	dobj	_	_
-25	acelerada	acelerar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	24	acl	_	_
-26	para	para	ADP	prp	AdpType=Prep	28	case	_	_
-27	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
-28	economias	economia	NOUN	n|F|P	Gender=Fem|Number=Plur	25	nmod	_	_
-29	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	30	advmod	_	_
-30	fortes	forte	ADJ	adj|F|P	Gender=Fem|Number=Plur	28	amod	_	_
-31	,	,	PUNCT	punc	_	25	punct	_	_
-32	e	e	CONJ	conj-c|<co-vfin>	_	25	cc	_	_
-33	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	34	advmod	_	_
-34	lenta	lento	ADJ	adj|F|S	Gender=Fem|Number=Sing	25	conj	_	_
-35	para	para	ADP	prp	AdpType=Prep	36	case	_	_
-36	os	o	PRON	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	34	advmod	_	_
-37	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	39	nsubj	_	_
-38	ainda	ainda	ADV	adv	_	42	advmod	_	_
-39	têm	ter	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	acl	_	_
-40	muito	muito	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	42	advmod	_	_
-41	que	que	ADP	prp	AdpType=Prep	42	mark	_	_
-42	convergir	convergir	VERB	v-inf	VerbForm=Inf	39	xcomp	_	_
-43	.	.	PUNCT	punc	_	2	punct	_	_
+21	a	a	ADP	<sam->|PRP|@<PIV	_	24	case	_	_
+22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+23	tal	tal	DET	<diff>|<KOMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	24	det	_	_
+24	UEM	UEM	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	18	obj	_	_
+25	acelerada	acelerar	VERB	<first-cjt>|<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	24	acl	_	_
+26	para	para	ADP	PRP|@<ADVL	_	28	case	_	_
+27	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
+28	economias	economia	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	25	obl	_	_
+29	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	30	advmod	_	_
+30	fortes	forte	ADJ	<COMP>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	28	amod	_	SpaceAfter=No
+31	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+32	e	e	CCONJ	<co-icl>|<co-vfin>|KC|@CO	_	34	cc	_	_
+33	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	34	advmod	_	_
+34	lenta	lento	ADJ	<cjt>|<COMP>|ADJ|F|S|@ICL-N<	Gender=Fem|Number=Sing	25	conj	_	_
+35	para	para	ADP	PRP|@A<	_	36	case	_	_
+36	os	o	PRON	<dem>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Dem	34	advmod	_	_
+37	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	39	nsubj	_	_
+38	ainda	ainda	ADV	ADV|@ADVL>	_	42	advmod	_	_
+39	têm	ter	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	acl	_	_
+40	muito	muito	ADV	<quant>|ADV|@ADVL>	NumType=Card|PronType=Ind,Neg,Tot	42	advmod	_	_
+41	que	que	ADP	PRP|@PRT-AUX<	_	42	mark	_	_
+42	convergir	convergir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	39	xcomp	_	SpaceAfter=No
+43	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

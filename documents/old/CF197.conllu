@@ -1,115 +1,119 @@
-# distance_from_new = 0
-# new_sent_id = CF197-1
-# sent_id = pt-ud-train.conllu#s5878/pt
-# orig_file_sentence = 059#78
-1	Iniciado	iniciar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	19	advcl	_	_
-2	em	em	ADP	prp	AdpType=Prep	3	case	_	_
-3	1958	1958	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	1	advmod	_	_
-4	,	,	PUNCT	punc	_	19	punct	_	_
-5	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	estudo	estudo	NOUN	n|M|S	Gender=Masc|Number=Sing	19	nsubj	_	_
-7	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-8	«	«	PUNCT	punc	_	10	punct	_	_
-9	O	O	DET	prop|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	MWE=O_Capital|MWEPOS=PROPN
-10	Capital	Capital	PROPN	PROPN	_	6	nmod	_	_
-11	»	»	PUNCT	punc	_	10	punct	_	_
-12	por	por	ADP	prp	AdpType=Prep	14	case	_	_
-13	jovens	jovem	ADJ	adj|M|P	Gender=Masc|Number=Plur	14	amod	_	_
-14	intelectuais	intelectual	ADJ	adj|M|P	Gender=Masc|Number=Plur	19	dobj	_	_
+# text = Iniciado em 1958, o estudo de «O Capital» por jovens intelectuais da USP só terminaria cinco anos mais tarde.
+# forest 1
+# source CETENFolha n=197 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF197-1
+# id 836
+1	Iniciado	iniciar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	19	advcl	_	_
+2	em	em	ADP	PRP|@<ADVL	_	3	case	_	_
+3	1958	1958	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Plur|NumType=Card	1	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	estudo	estudo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	19	nsubj	_	_
+7	de	de	ADP	PRP|@N<	_	10	case	_	_
+8	«	«	PUNCT	PU|@PU	_	10	punct	_	SpaceAfter=No
+9	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	10	det	_	MWE=O_Capital|MWEPOS=PROPN
+10	Capital	Capital	PROPN	_	_	6	nmod	_	SpaceAfter=No
+11	»	»	PUNCT	PU|@PU	_	10	punct	_	_
+12	por	por	ADP	PRP|@PASS	_	14	case	_	_
+13	jovens	jovem	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	14	amod	_	_
+14	intelectuais	intelectual	ADJ	<n>|<np-idf>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	19	obj	_	_
 15-16	da	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	USP	uSP	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	14	nmod	_	_
-18	só	só	ADV	adv	_	19	advmod	_	_
-19	terminaria	terminar	VERB	v-fin|COND|3S	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
-20	cinco	cinco	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	21	nummod	_	_
-21	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	23	nmod	_	_
-22	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	23	advmod	_	_
-23	tarde	tarde	ADV	adv	_	19	advmod	_	_
-24	.	.	PUNCT	punc	_	19	punct	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	USP	uSP	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
+18	só	só	ADV	ADV|@ADVL>	_	19	advmod	_	_
+19	terminaria	terminar	VERB	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+20	cinco	cinco	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	21	nummod	_	_
+21	anos	ano	NOUN	<np-def>|N|M|P|@>A	Gender=Masc|Number=Plur	23	obl	_	_
+22	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	23	advmod	_	_
+23	tarde	tarde	ADV	ADV|@<ADVL	_	19	advmod	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF197-2
-# sent_id = pt-ud-train.conllu#s5879/pt
-# orig_file_sentence = 059#79
-1	Entre	entre	ADP	prp	AdpType=Prep	2	case	_	_
-2	eles	eles	PRON	pron-pers|M|3P|NOM/PIV	Case=Acc,Nom|Gender=Masc|Number=Plur|Person=3|PrepCase=Pre|PronType=Prs	3	nmod	_	_
-3	estavam	estar	VERB	v-fin|IMPF|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-4	figuras	figura	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nsubj	_	_
-5	hoje	hoje	ADV	adv	_	6	advmod	_	_
-6	conhecidas	conhecer	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	4	acl	_	_
-7	,	,	PUNCT	punc	_	6	punct	_	_
-8	como	como	ADV	adv|<rel>|<prp>	PronType=Rel	10	mark	_	_
-9	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	filósofo	filósofo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	nmod	_	_
-11	José	José	PROPN	prop|M|S	_	10	nmod	_	MWE=José_Arthur_Giannotti|MWEPOS=PROPN
-12	Arthur	Arthur	PROPN	PROPN	_	11	name	_	_
-13	Giannotti	Giannotti	PROPN	PROPN	_	11	name	_	_
-14	,	,	PUNCT	punc	_	10	punct	_	_
-15	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	crítico	crítico	NOUN	n|M|S	Gender=Masc|Number=Sing	10	conj	_	_
-17	literário	literário	ADJ	adj|M|S	Gender=Masc|Number=Sing	16	amod	_	_
-18	Roberto	Roberto	PROPN	prop|M|S	_	16	nmod	_	MWE=Roberto_Schwarz|MWEPOS=PROPN
-19	Schwarz	Schwarz	PROPN	PROPN	_	18	name	_	_
-20	e	e	CONJ	conj-c	_	10	cc	_	_
-21	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	economista	economista	NOUN	n|M|S	Gender=Masc|Number=Sing	10	conj	_	_
-23	Paul	Paul	PROPN	prop|M|S	_	22	nmod	_	MWE=Paul_Singer|MWEPOS=PROPN
-24	Singer	Singer	PROPN	PROPN	_	23	name	_	_
-25	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Entre eles estavam figuras hoje conhecidas, como o filósofo José Arthur Giannotti, o crítico literário Roberto Schwarz e o economista Paul Singer.
+# forest 1
+# source CETENFolha n=197 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF197-2
+# id 837
+1	Entre	entre	ADP	PRP|@ADVL>	_	2	case	_	_
+2	eles	eles	PRON	PERS|M|3P|NOM/PIV|@P<	Case=Acc,Nom|Gender=Masc|Number=Plur|Person=3|PrepCase=Pre|PronType=Prs	3	obl	_	_
+3	estavam	estar	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+4	figuras	figura	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	3	nsubj	_	_
+5	hoje	hoje	ADV	ADV|@ADVL>	_	6	advmod	_	_
+6	conhecidas	conhecer	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	4	acl	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+8	como	como	ADV	<com>|PRP|@N<PRED	PronType=Rel	10	mark	_	_
+9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	filósofo	filósofo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
+11	José	José	PROPN	_	_	10	nmod	_	MWE=José_Arthur_Giannotti|MWEPOS=PROPN
+12	Arthur	Arthur	PROPN	_	_	11	flat	_	_
+13	Giannotti	Giannotti	PROPN	_	_	11	flat	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	crítico	crítico	NOUN	<np-def>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	10	conj	_	_
+17	literário	literário	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	16	amod	_	_
+18	Roberto	Roberto	PROPN	_	_	16	nmod	_	MWE=Roberto_Schwarz|MWEPOS=PROPN
+19	Schwarz	Schwarz	PROPN	_	_	18	flat	_	_
+20	e	e	CCONJ	<co-advl>|KC|@CO	_	22	cc	_	_
+21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	economista	economista	NOUN	<np-def>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	10	conj	_	_
+23	Paul	Paul	PROPN	_	_	22	nmod	_	MWE=Paul_Singer|MWEPOS=PROPN
+24	Singer	Singer	PROPN	_	_	23	flat	_	SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF197-3
-# sent_id = pt-ud-train.conllu#s5880/pt
-# orig_file_sentence = 059#80
-1	FHC	FHC	PROPN	prop|M|S	Gender=Masc|Number=Sing	4	nsubj	_	_
-2	foi	ser	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_
-3	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	primeiro	primeiro	ADJ	adj|<n>|<NUM-ord>|M|S	Gender=Masc|Number=Sing|NumType=Ord	0	root	_	_
-5	a	a	ADP	prp	AdpType=Prep	6	mark	_	_
-6	tirar	tirar	VERB	v-inf	VerbForm=Inf	4	acl	_	_
-7	consequências	consequência	NOUN	n|F|P	Gender=Fem|Number=Plur	6	dobj	_	_
-8	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-9	tal	tal	DET	pron-det|<diff>|<KOMP>|M|S	Degree=Cmp|Gender=Masc|Number=Sing	10	det	_	_
-10	estudo	estudo	NOUN	n|M|S	Gender=Masc|Number=Sing	6	dobj	_	_
-11	.	.	PUNCT	punc	_	4	punct	_	_
+# text = FHC foi o primeiro a tirar consequências de tal estudo.
+# forest 1
+# source CETENFolha n=197 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF197-3
+# id 838
+1	FHC	FHC	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
+2	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_
+3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	primeiro	primeiro	ADJ	<NUM-ord>|<n>|<np-def>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing|NumType=Ord	0	root	_	_
+5	a	a	ADP	PRP|@N<	_	6	mark	_	_
+6	tirar	tirar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	acl	_	_
+7	consequências	consequência	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	6	obj	_	_
+8	de	de	ADP	PRP|@<PIV	_	10	case	_	_
+9	tal	tal	DET	<diff>|<KOMP>|DET|M|S|@>N	Degree=Cmp|Gender=Masc|Number=Sing	10	det	_	_
+10	estudo	estudo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF197-4
-# sent_id = pt-ud-train.conllu#s5881/pt
-# orig_file_sentence = 059#81
-1	Em	em	ADP	prp	AdpType=Prep	2	case	_	_
-2	1962	1962	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	4	advmod	_	_
-3	,	,	PUNCT	punc	_	4	punct	_	_
-4	publica	publicar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	«	«	PUNCT	punc	_	6	punct	_	_
-6	Capitalismo	Capitalismo	PROPN	prop|M|S	_	4	dobj	_	MWE=Capitalismo_e_Escravidão_no_Brasil_Meridional|MWEPOS=PROPN
-7	e	e	CONJ	CONJ	_	6	cc	_	_
-8	Escravidão	Escravidão	PROPN	PROPN	_	6	conj	_	_
+# text = Em 1962, publica «Capitalismo e Escravidão no Brasil Meridional», primeira obra de sua autoria a se tornar referência nas ciências sociais do país.
+# forest 1
+# source CETENFolha n=197 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF197-4
+# id 839
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
+2	1962	1962	NUM	<year>|<card>|<date>|NUM|M|S|@P<	Gender=Masc|Number=Sing|NumType=Card	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+4	publica	publicar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+6	Capitalismo	Capitalismo	PROPN	_	_	4	obj	_	MWE=Capitalismo_e_Escravidão_no_Brasil_Meridional|MWEPOS=PROPN
+7	e	e	CCONJ	_	_	8	cc	_	_
+8	Escravidão	Escravidão	PROPN	_	_	6	conj	_	_
 9-10	no	_	_	_	_	_	_	_	_
-9	em	em	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Brasil	Brasil	PROPN	PROPN	_	6	name	_	_
-12	Meridional	Meridional	PROPN	PROPN	_	11	name	_	_
-13	»	»	PUNCT	punc	_	6	punct	_	_
-14	,	,	PUNCT	punc	_	6	punct	_	_
-15	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	16	amod	_	_
-16	obra	obra	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-17	de	de	ADP	prp	AdpType=Prep	19	case	_	_
-18	sua	seu	DET	pron-det|<poss|3S>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	19	det	_	_
-19	autoria	autoria	NOUN	n|F|S	Gender=Fem|Number=Sing	16	nmod	_	_
-20	a	a	ADP	prp	AdpType=Prep	22	mark	_	_
-21	se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	22	iobj	_	_
-22	tornar	tornar	VERB	v-inf	VerbForm=Inf	16	acl	_	_
-23	referência	referência	NOUN	n|F|S	Gender=Fem|Number=Sing	22	xcomp	_	_
+9	en	en	ADP	prp|<sam->	_	11	case	_	_
+10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Brasil	Brasil	PROPN	_	_	6	flat	_	_
+12	Meridional	Meridional	PROPN	_	_	11	flat	_	SpaceAfter=No
+13	»	»	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+15	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	16	amod	_	_
+16	obra	obra	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	6	nmod	_	_
+17	de	de	ADP	PRP|@N<ARG	_	19	case	_	_
+18	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	19	det	_	_
+19	autoria	autoria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
+20	a	a	ADP	PRP|@N<	_	22	mark	_	_
+21	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	22	iobj	_	_
+22	tornar	tornar	VERB	<mv>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	16	acl	_	_
+23	referência	referência	NOUN	<np-idf>|N|F|S|@<OC	Gender=Fem|Number=Sing	22	xcomp	_	_
 24-25	nas	_	_	_	_	_	_	_	_
-24	em	em	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
-26	ciências	ciência	NOUN	n|F|P	Gender=Fem|Number=Plur	22	nmod	_	_
-27	sociais	social	ADJ	adj|F|P	Gender=Fem|Number=Plur	26	amod	_	_
+24	em	em	ADP	<sam->|PRP|@<ADVL	_	26	case	_	_
+25	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
+26	ciências	ciência	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	obl	_	_
+27	sociais	social	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	26	amod	_	_
 28-29	do	_	_	_	_	_	_	_	_
-28	de	de	ADP	prp|<sam->	AdpType=Prep	30	case	_	_
-29	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	26	nmod	_	_
-31	.	.	PUNCT	punc	_	4	punct	_	_
+28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
+29	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

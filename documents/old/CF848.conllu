@@ -1,143 +1,149 @@
-# distance_from_new = 0
-# new_sent_id = CF848-1
-# sent_id = pt-ud-train.conllu#s8615/pt
-# orig_file_sentence = 087#15
-1	Esta	este	DET	pron-det|<dem>|F|S	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
-2	taxa	taxa	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nsubj	_	_
-3	,	,	PUNCT	punc	_	9	punct	_	_
+# text = Esta taxa, no entanto, não reflete o que está acontecendo de fato com os preços nas últimas semanas.
+# forest 1
+# source CETENFolha n=848 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF848-1
+# id 3573
+1	Esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+2	taxa	taxa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 4-5	no	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-6	entanto	entanto	NOUN	NOUN	_	4	mwe	_	_
-7	,	,	PUNCT	punc	_	9	punct	_	_
-8	não	não	ADV	adv	_	9	neg	_	_
-9	reflete	refletir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-10	o	o	DET	pron-indp|<interr>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	nsubj	_	MWE=o_que|MWEPOS=PRON
-11	que	que	SCONJ	SCONJ	_	10	compound	_	_
-12	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
-13	acontecendo	acontecer	VERB	v-ger	VerbForm=Ger	9	ccomp	_	_
-14	de	de	ADP	adv	AdpType=Prep	13	advmod	_	MWE=de_fato|MWEPOS=ADV
-15	fato	fato	NOUN	NOUN	_	14	mwe	_	_
-16	com	com	ADP	prp	AdpType=Prep	18	case	_	_
-17	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
-18	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	13	nmod	_	_
+4	en	en	ADP	prp|<sam->	_	9	case	_	_
+5	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+6	entanto	entanto	NOUN	N|M|S|@P<	_	4	fixed	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+8	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
+9	reflete	refletir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	12	nsubj	_	MWE=o_que|MWEPOS=PRON
+11	que	que	SCONJ	<interr>|INDP|M|S|@SUBJ>	_	10	compound	_	_
+12	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
+13	acontecendo	acontecer	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	12	ccomp	_	_
+14	de	de	ADP	PRP|@<ADVL	_	13	advmod	_	MWE=de_fato|MWEPOS=ADV
+15	fato	fato	NOUN	N|M|S|@P<	_	14	fixed	_	_
+16	com	com	ADP	PRP|@<ADVL	_	18	case	_	_
+17	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
+18	preços	preço	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	13	obl	_	_
 19-20	nas	_	_	_	_	_	_	_	_
-19	em	em	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-20	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
-21	últimas	último	ADJ	adj|<NUM-ord>|F|P	Gender=Fem|Number=Plur|NumType=Ord	22	amod	_	_
-22	semanas	semana	NOUN	n|F|P	Gender=Fem|Number=Plur	13	nmod	_	_
-23	.	.	PUNCT	punc	_	9	punct	_	_
+19	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
+20	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
+21	últimas	último	ADJ	<NUM-ord>|ADJ|F|P|@>N	Gender=Fem|Number=Plur|NumType=Ord	22	amod	_	_
+22	semanas	semana	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	13	obl	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF848-2
-# sent_id = pt-ud-train.conllu#s8616/pt
-# orig_file_sentence = 087#16
-1	Isto	isto	PRON	pron-indp|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
-2	porque	porque	SCONJ	conj-s	_	8	mark	_	_
-3	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	índices	índice	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nsubj	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	inflação	inflação	NOUN	n|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-7	só	só	ADV	adv	_	8	advmod	_	_
-8	captam	captar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	acl	_	_
-9	totalmente	totalmente	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	8	advmod	_	_
-10	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
-11	mudanças	mudança	NOUN	n|F|P	Gender=Fem|Number=Plur	8	dobj	_	_
-12	de	de	ADP	prp	AdpType=Prep	13	case	_	_
-13	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	11	nmod	_	_
-14	30	30	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	15	nummod	_	_
-15	dias	dia	NOUN	n|M|P	Gender=Masc|Number=Plur	8	nmod	_	_
-16	após	após	ADP	prp	AdpType=Prep	18	case	_	_
-17	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	aumento	aumento	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-19	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Isto porque os índices de inflação só captam totalmente as mudanças de preços 30 dias após o aumento.
+# forest 1
+# source CETENFolha n=848 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF848-2
+# id 3574
+1	Isto	isto	PRON	<dem>|INDP|M|S|@NPHR	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
+2	porque	porque	SCONJ	KS|@SUB	_	8	mark	_	_
+3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	índices	índice	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	inflação	inflação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+7	só	só	ADV	ADV|@ADVL>	_	8	advmod	_	_
+8	captam	captar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	acl	_	_
+9	totalmente	totalmente	ADV	<quant>|ADV|@<ADVL	NumType=Card|PronType=Ind,Neg,Tot	8	advmod	_	_
+10	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
+11	mudanças	mudança	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	_
+12	de	de	ADP	PRP|@N<	_	13	case	_	_
+13	preços	preço	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
+14	30	30	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	15	nummod	_	_
+15	dias	dia	NOUN	<np-def>|N|M|P|@<ADVL	Gender=Masc|Number=Plur	8	obl	_	_
+16	após	após	ADP	PRP|@N<	_	18	case	_	_
+17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	aumento	aumento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF848-3
-# sent_id = pt-ud-train.conllu#s8617/pt
-# orig_file_sentence = 087#17
-1	É	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	auxpass	_	_
-2	sempre	sempre	ADV	adv	_	3	advmod	_	_
-3	considerada	considerar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-4	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	média	média	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nsubjpass	_	_
-6	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-7	quatro	quatro	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	8	nummod	_	_
-8	semanas	semana	NOUN	n|F|P	Gender=Fem|Number=Plur	5	nmod	_	_
-9	em	em	ADP	prp|<sam->	AdpType=Prep	14	case	_	MWE=em_relação_a|MWEPOS=ADP
-10	relação	relação	NOUN	NOUN	_	9	mwe	_	_
+# text = É sempre considerada a média de quatro semanas em relação às quatro anteriores.
+# forest 1
+# source CETENFolha n=848 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF848-3
+# id 3575
+1	É	ser	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	sempre	sempre	ADV	ADV|@ADVL>	_	3	advmod	_	_
+3	considerada	considerar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	1	ccomp	_	_
+4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	média	média	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	1	nsubj	_	_
+6	de	de	ADP	PRP|@N<	_	8	case	_	_
+7	quatro	quatro	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	8	nummod	_	_
+8	semanas	semana	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
+9	em	em	ADP	<sam->|PRP|@<ADVL	_	14	case	_	MWE=em_relação_a|MWEPOS=ADP
+10	relação	relação	NOUN	N|@P<	_	9	fixed	_	_
 11-12	às	_	_	_	_	_	_	_	_
-11	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	mwe	_	_
-12	as	o	DET	art|<artd>|<-sam>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
-13	quatro	quatro	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	14	nummod	_	_
-14	anteriores	anterior	ADJ	adj|<n>|F|P	Gender=Fem|Number=Plur	3	advmod	_	_
-15	.	.	PUNCT	punc	_	3	punct	_	_
+11	a	a	DET	PRP|@N<	Gender=Fem|Number=Sing|PronType=Art	9	fixed	_	_
+12	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+13	quatro	quatro	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	14	nummod	_	_
+14	anteriores	anterior	ADJ	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	3	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF848-4
-# sent_id = pt-ud-train.conllu#s8618/pt
-# orig_file_sentence = 087#18
-1	A	a	ADP	prp	AdpType=Prep	4	case	_	MWE=A_partir_de|MWEPOS=ADP
-2	partir	partir	NOUN	NOUN	_	1	mwe	_	_
-3	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-4	agora	agora	ADV	adv|<kc>	_	10	advmod	_	_
-5	,	,	PUNCT	punc	_	8	punct	_	_
-6	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	taxa	taxa	NOUN	n|F|S	Gender=Fem|Number=Sing	8	nsubj	_	_
-8	deve	dever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	sempre	sempre	ADV	adv	_	10	advmod	_	_
-10	recuar	recuar	VERB	v-inf	VerbForm=Inf	8	xcomp	_	_
-11	.	.	PUNCT	punc	_	8	punct	_	_
+# text = A partir de agora, a taxa deve sempre recuar.
+# forest 1
+# source CETENFolha n=848 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF848-4
+# id 3576
+1	A	a	ADP	PRP|@ADVL>	_	4	case	_	MWE=A_partir_de|MWEPOS=ADP
+2	partir	partir	NOUN	N|@P<	_	1	fixed	_	_
+3	de	de	ADP	PRP|@N<	_	1	fixed	_	_
+4	agora	agora	ADV	<kc>|ADV|@P<	_	10	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	taxa	taxa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
+8	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	sempre	sempre	ADV	ADV|@ADVL>	_	10	advmod	_	_
+10	recuar	recuar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF848-5
-# sent_id = pt-ud-train.conllu#s8619/pt
-# orig_file_sentence = 087#19
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	preços	preço	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nsubj	_	_
-3	estiveram	estar	VERB	v-fin|PS/MQP|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	5	cop	_	_
-4	praticamente	praticamente	ADV	adv	_	5	advmod	_	_
-5	estáveis	estável	ADJ	adj|M|P	Gender=Masc|Number=Plur	0	root	_	_
+# text = Os preços estiveram praticamente estáveis nas últimas semanas.
+# forest 1
+# source CETENFolha n=848 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF848-5
+# id 3577
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	preços	preço	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
+3	estiveram	estar	AUX	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp,Pqp|VerbForm=Fin	5	cop	_	_
+4	praticamente	praticamente	ADV	ADV|@<ADVL	_	5	advmod	_	_
+5	estáveis	estável	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
 6-7	nas	_	_	_	_	_	_	_	_
-6	em	em	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-7	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
-8	últimas	último	ADJ	adj|<NUM-ord>|F|P	Gender=Fem|Number=Plur|NumType=Ord	9	amod	_	_
-9	semanas	semana	NOUN	n|F|P	Gender=Fem|Number=Plur	5	nmod	_	_
-10	.	.	PUNCT	punc	_	5	punct	_	_
+6	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
+7	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
+8	últimas	último	ADJ	<NUM-ord>|ADJ|F|P|@>N	Gender=Fem|Number=Plur|NumType=Ord	9	amod	_	_
+9	semanas	semana	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obl	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF848-6
-# sent_id = pt-ud-train.conllu#s8620/pt
-# orig_file_sentence = 087#20
-1	Juarez	Juarez	PROPN	prop|M|S	_	17	nsubj	_	MWE=Juarez_Rizzieri|MWEPOS=PROPN
-2	Rizzieri	Rizzieri	PROPN	PROPN	_	1	name	_	_
-3	,	,	PUNCT	punc	_	1	punct	_	_
-4	coordenador	coordenador	NOUN	n|M|S	Gender=Masc|Number=Sing	1	nmod	_	_
+# text = Juarez Rizzieri, coordenador do Índice de Preços ao Consumidor da Fipe, prevê para agosto uma taxa entre 1 % e 2 %.
+# forest 1
+# source CETENFolha n=848 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF848-6
+# id 3578
+1	Juarez	Juarez	PROPN	_	_	17	nsubj	_	MWE=Juarez_Rizzieri|MWEPOS=PROPN
+2	Rizzieri	Rizzieri	PROPN	_	_	1	flat	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+4	coordenador	coordenador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	nmod	_	_
 5-6	do	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	Índice	Índice	PROPN	prop|M|S	_	4	nmod	_	MWE=Índice_de_Preços_ao_Consumidor|MWEPOS=PROPN
-8	de	de	ADP	ADP	AdpType=Prep	9	case	_	_
-9	Preços	Preços	PROPN	PROPN	_	7	name	_	_
+5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Índice	Índice	PROPN	PROP|M|S|@P<	_	4	nmod	_	MWE=Índice_de_Preços_ao_Consumidor|MWEPOS=PROPN
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
+9	Preços	Preços	PROPN	PROP|@P<	_	7	flat	_	_
 10-11	ao	_	_	_	_	_	_	_	_
-10	a	a	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	Consumidor	Consumidor	PROPN	PROPN	_	7	name	_	_
+10	a	a	ADP	<sam->|PRP|@N<	_	12	case	_	_
+11	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	Consumidor	Consumidor	PROPN	PROP|@P<	_	7	flat	_	_
 13-14	da	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	Fipe	Fipe	PROPN	prop|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-16	,	,	PUNCT	punc	_	1	punct	_	_
-17	prevê	prever	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-18	para	para	ADP	prp	AdpType=Prep	19	case	_	_
-19	agosto	agosto	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nmod	_	_
-20	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	taxa	taxa	NOUN	n|F|S	Gender=Fem|Number=Sing	17	dobj	_	_
-22	entre	entre	ADP	prp	AdpType=Prep	24	case	_	_
-23	1	1	NUM	num|<card>|M|S	Gender=Masc|Number=Sing|NumType=Card	24	nummod	_	_
-24	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	21	nmod	_	_
-25	e	e	CONJ	conj-c|<co-prparg>	_	24	cc	_	_
-26	2	2	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	27	nummod	_	_
-27	%	%	SYM	n|M|P	Gender=Masc|Number=Plur	24	conj	_	_
-28	.	.	PUNCT	punc	_	17	punct	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	Fipe	Fipe	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+17	prevê	prever	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+18	para	para	ADP	PRP|@<ADVL	_	19	case	_	_
+19	agosto	agosto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	_
+20	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	taxa	taxa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
+22	entre	entre	ADP	PRP|@N<	_	24	case	_	_
+23	1	1	NUM	<card>|NUM|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card	24	nummod	_	_
+24	%	%	SYM	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	21	nmod	_	_
+25	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	_
+26	2	2	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	27	nummod	_	_
+27	%	%	SYM	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	conj	_	SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 

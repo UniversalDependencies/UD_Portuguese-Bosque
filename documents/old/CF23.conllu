@@ -1,76 +1,79 @@
-# distance_from_new = 0
-# new_sent_id = CF23-1
-# sent_id = pt-ud-train.conllu#s5129/pt
-# orig_file_sentence = 052#29
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	queda	queda	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nsubj	_	_
+# text = A queda nas vendas teve reflexos nas negociações entre as confecções e as lojas.
+# forest 1
+# source CETENFolha n=23 cad=Dinheiro sec=eco sem=94b
+# sent_id = CF23-1
+# id 87
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	queda	queda	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3-4	nas	_	_	_	_	_	_	_	_
-3	em	em	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
-5	vendas	venda	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nmod	_	_
-6	teve	ter	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-7	reflexos	reflexo	NOUN	n|M|P	Gender=Masc|Number=Plur	6	dobj	_	_
+3	em	em	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+5	vendas	venda	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
+6	teve	ter	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	reflexos	reflexo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	6	obj	_	_
 8-9	nas	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
-10	negociações	negociação	NOUN	n|F|P	Gender=Fem|Number=Plur	6	nmod	_	_
-11	entre	entre	ADP	prp	AdpType=Prep	13	case	_	_
-12	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
-13	confecções	confecção	NOUN	n|F|P	Gender=Fem|Number=Plur	10	nmod	_	_
-14	e	e	CONJ	conj-c|<co-prparg>	_	13	cc	_	_
-15	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
-16	lojas	loja	NOUN	n|F|P	Gender=Fem|Number=Plur	13	conj	_	_
-17	.	.	PUNCT	punc	_	6	punct	_	_
+8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
+9	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+10	negociações	negociação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	6	obl	_	_
+11	entre	entre	ADP	PRP|@N<	_	13	case	_	_
+12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
+13	confecções	confecção	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	_
+14	e	e	CCONJ	<co-prparg>|KC|@CO	_	16	cc	_	_
+15	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
+16	lojas	loja	NOUN	<cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	13	conj	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF23-2
-# sent_id = pt-ud-train.conllu#s5130/pt
-# orig_file_sentence = 052#30
-1	«	«	PUNCT	punc	_	4	punct	_	_
-2	Não	não	ADV	adv	_	4	neg	_	_
-3	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
-4	havendo	haver	VERB	v-ger	VerbForm=Ger	0	root	_	_
-5	cancelamento	cancelamento	NOUN	n|M|S	Gender=Masc|Number=Sing	4	dobj	_	_
-6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-7	pedidos	pedido	NOUN	n|M|P	Gender=Masc|Number=Plur	5	nmod	_	_
-8	.	.	PUNCT	punc	_	4	punct	_	_
+# text = «Não está havendo cancelamento de pedidos.
+# forest 1
+# source CETENFolha n=23 cad=Dinheiro sec=eco sem=94b
+# sent_id = CF23-2
+# id 88
+1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+2	Não	não	ADV	_	Polarity=Neg	4	advmod	_	_
+3	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	havendo	haver	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	3	ccomp	_	_
+5	cancelamento	cancelamento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
+6	de	de	ADP	PRP|@N<ARG	_	7	case	_	_
+7	pedidos	pedido	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF23-3
-# sent_id = pt-ud-train.conllu#s5131/pt
-# orig_file_sentence = 052#31
-1	Mas	mas	CONJ	conj-c	_	2	cc	_	_
-2	existem	existir	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	_	_
-3	indústrias	indústria	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nsubj	_	_
-4	que	que	PRON	pron-indp|<rel>|F|P	Gender=Fem|Number=Plur|PronType=Rel	7	nsubjpass	_	_
-5	estão	estar	AUX	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-6	sendo	ser	VERB	v-ger	VerbForm=Ger	7	auxpass	_	_
-7	procuradas	procurar	VERB	v-pcp|F|P	Gender=Fem|Number=Plur|VerbForm=Part	3	acl	_	_
+# text = Mas existem indústrias que estão sendo procuradas pelos lojistas para postergar as entregas», conta Eduardo Costa, diretor da Abravest, que reúne a indústria de vestuário.
+# forest 1
+# source CETENFolha n=23 cad=Dinheiro sec=eco sem=94b
+# sent_id = CF23-3
+# id 89
+1	Mas	mas	CCONJ	KC|@CO	_	2	cc	_	_
+2	existem	existir	VERB	<mv>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	_	_
+3	indústrias	indústria	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	2	nsubj	_	_
+4	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	6	nsubj	_	_
+5	estão	estar	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+6	sendo	ser	VERB	<aux>|V|GER|@ICL-AUX<	VerbForm=Ger	3	acl	_	_
+7	procuradas	procurar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	6	ccomp	_	_
 8-9	pelos	_	_	_	_	_	_	_	_
-8	por	por	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
-10	lojistas	lojista	NOUN	n|M|P	Gender=Masc|Number=Plur	7	iobj	_	_
-11	para	para	ADP	prp	AdpType=Prep	12	mark	_	_
-12	postergar	postergar	VERB	v-inf	VerbForm=Inf	7	xcomp	_	_
-13	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
-14	entregas	entrega	NOUN	n|F|P	Gender=Fem|Number=Plur	12	dobj	_	_
-15	»	»	PUNCT	punc	_	17	punct	_	_
-16	,	,	PUNCT	punc	_	17	punct	_	_
-17	conta	contar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-18	Eduardo	Eduardo	PROPN	prop|M|S	_	17	nsubj	_	MWE=Eduardo_Costa|MWEPOS=PROPN
-19	Costa	Costa	PROPN	PROPN	_	18	name	_	_
-20	,	,	PUNCT	punc	_	18	punct	_	_
-21	diretor	diretor	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
+8	por	por	ADP	PRP|@PASS	_	10	case	_	_
+9	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	lojistas	lojista	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	7	iobj	_	_
+11	para	para	ADP	PRP|@<PIV	_	12	mark	_	_
+12	postergar	postergar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	xcomp	_	_
+13	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+14	entregas	entrega	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	obj	_	SpaceAfter=No
+15	»	»	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+17	conta	contar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+18	Eduardo	Eduardo	PROPN	_	_	17	nsubj	_	MWE=Eduardo_Costa|MWEPOS=PROPN
+19	Costa	Costa	PROPN	_	_	18	flat	_	SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+21	diretor	diretor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	18	nmod	_	_
 22-23	da	_	_	_	_	_	_	_	_
-22	de	de	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	Abravest	Abravest	PROPN	prop|F|S	Gender=Fem|Number=Sing	21	nmod	_	_
-25	,	,	PUNCT	punc	_	24	punct	_	_
-26	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	27	nsubj	_	_
-27	reúne	reunir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl	_	_
-28	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
-29	indústria	indústria	NOUN	n|F|S	Gender=Fem|Number=Sing	27	dobj	_	_
-30	de	de	ADP	prp	AdpType=Prep	31	case	_	_
-31	vestuário	vestuário	NOUN	n|M|S	Gender=Masc|Number=Sing	29	nmod	_	_
-32	.	.	PUNCT	punc	_	17	punct	_	_
+22	de	de	ADP	<sam->|PRP|@N<ARG	_	24	case	_	_
+23	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	Abravest	Abravest	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	SpaceAfter=No
+25	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+26	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	27	nsubj	_	_
+27	reúne	reunir	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl	_	_
+28	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
+29	indústria	indústria	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	27	obj	_	_
+30	de	de	ADP	PRP|@N<	_	31	case	_	_
+31	vestuário	vestuário	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 

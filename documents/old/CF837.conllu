@@ -1,99 +1,102 @@
-# distance_from_new = 0
-# new_sent_id = CF837-1
-# sent_id = pt-ud-train.conllu#s8579/pt
-# orig_file_sentence = 086#79
-1	Presidente	presidente	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nsubj	_	_
+# text = Presidente da Yashica morre em São Paulo
+# forest 1
+# source CETENFolha n=837 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF837-1
+# id 3537
+1	Presidente	presidente	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	prp|<sam->	AdpType=Prep	4	case	_	_
-3	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	Yashica	Yashica	PROPN	prop|F|S	Gender=Fem|Number=Sing	1	nmod	_	_
-5	morre	morrer	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	em	em	ADP	prp	AdpType=Prep	7	case	_	_
-7	São	São	PROPN	prop|M|S	_	5	nmod	_	MWE=São_Paulo|MWEPOS=PROPN
-8	Paulo	Paulo	PROPN	PROPN	_	7	name	_	_
+2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
+3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Yashica	Yashica	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+5	morre	morrer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	em	em	ADP	PRP|@<ADVL	_	7	case	_	_
+7	São	São	PROPN	_	_	5	obl	_	MWE=São_Paulo|MWEPOS=PROPN
+8	Paulo	Paulo	PROPN	_	_	7	flat	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF837-3
-# sent_id = pt-ud-train.conllu#s8580/pt
-# orig_file_sentence = 086#80
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	diretor-presidente	diretor-presidente	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nsubj	_	_
+# text = O diretor-presidente da Yashica do Brasil, Kazuo Tamura, 56, morreu num acidente de carro ontem de manhã em São Paulo.
+# forest 1
+# source CETENFolha n=837 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF837-3
+# id 3538
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	diretor-presidente	diretor-presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Yashica	Yashica	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Yashica	Yashica	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 6-7	do	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	Brasil	Brasil	PROPN	prop|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-9	,	,	PUNCT	punc	_	2	punct	_	_
-10	Kazuo	Kazuo	PROPN	prop|M|S	_	2	appos	_	MWE=Kazuo_Tamura|MWEPOS=PROPN
-11	Tamura	Tamura	PROPN	PROPN	_	10	name	_	_
-12	,	,	PUNCT	punc	_	2	punct	_	_
-13	56	56	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	_
-14	,	,	PUNCT	punc	_	2	punct	_	_
-15	morreu	morrer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+10	Kazuo	Kazuo	PROPN	_	_	2	appos	_	MWE=Kazuo_Tamura|MWEPOS=PROPN
+11	Tamura	Tamura	PROPN	_	_	10	flat	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+13	56	56	NUM	<card>|NUM|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card	2	nummod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+15	morreu	morrer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 16-17	num	_	_	_	_	_	_	_	_
-16	em	em	ADP	prp	AdpType=Prep	18	case	_	_
-17	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	acidente	acidente	NOUN	n|M|S	Gender=Masc|Number=Sing	15	nmod	_	_
-19	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-20	carro	carro	NOUN	n|M|S	Gender=Masc|Number=Sing	18	nmod	_	_
-21	ontem	ontem	NOUN	adv	_	15	advmod	_	MWE=ontem_de_manhã|MWEPOS=ADV
-22	de	de	ADP	ADP	AdpType=Prep	21	mwe	_	_
-23	manhã	manhã	NOUN	NOUN	_	21	mwe	_	_
-24	em	em	ADP	prp	AdpType=Prep	25	case	_	_
-25	São	São	PROPN	prop|M|S	_	15	nmod	_	MWE=São_Paulo|MWEPOS=PROPN
-26	Paulo	Paulo	PROPN	PROPN	_	25	name	_	_
-27	.	.	PUNCT	punc	_	15	punct	_	_
+16	em	em	ADP	PRP|@<ADVL	_	18	case	_	_
+17	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	acidente	acidente	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	_
+19	de	de	ADP	PRP|@N<	_	20	case	_	_
+20	carro	carro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
+21	ontem	ontem	NOUN	_	_	15	advmod	_	MWE=ontem_de_manhã|MWEPOS=ADV
+22	de	de	ADP	_	_	21	fixed	_	_
+23	manhã	manhã	NOUN	_	_	21	fixed	_	_
+24	em	em	ADP	PRP|@<ADVL	_	25	case	_	_
+25	São	São	PROPN	_	_	15	obl	_	MWE=São_Paulo|MWEPOS=PROPN
+26	Paulo	Paulo	PROPN	_	_	25	flat	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF837-4
-# sent_id = pt-ud-train.conllu#s8581/pt
-# orig_file_sentence = 086#81
-1	Ele	ele	PRON	pron-pers|M|3S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
-2	dirigia	dirigir	VERB	v-fin|IMPF|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-3	sozinho	sozinho	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	xcomp	_	_
-4	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Santana	Santana	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	iobj	_	_
-6	90	90	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
-7	em	em	ADP	prp	AdpType=Prep	9	case	_	_
-8	alta	alto	ADJ	adj|F|S	Gender=Fem|Number=Sing	9	amod	_	_
-9	velocidade	velocidade	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+# text = Ele dirigia sozinho um Santana 90 em alta velocidade na avenida do Estado, no Cambuci (região central), quando, provavelmente, perdeu o controle do carro e bateu num poste.
+# forest 1
+# source CETENFolha n=837 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF837-4
+# id 3539
+1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	dirigia	dirigir	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+3	sozinho	sozinho	ADJ	ADJ|M|S|@<OC	Gender=Masc|Number=Sing	2	xcomp	_	_
+4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Santana	Santana	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	2	iobj	_	_
+6	90	90	NUM	<card>|NUM|M|P|@N<	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
+7	em	em	ADP	PRP|@<ADVL	_	9	case	_	_
+8	alta	alto	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	9	amod	_	_
+9	velocidade	velocidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	_
 10-11	na	_	_	_	_	_	_	_	_
-10	em	em	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	avenida	avenida	PROPN	prop|F|S	_	2	nmod	_	MWE=avenida_do_Estado|MWEPOS=PROPN
+10	em	em	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	avenida	avenida	PROPN	PROP|F|S|@P<	_	2	obl	_	MWE=avenida_do_Estado|MWEPOS=PROPN
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	Estado	Estado	PROPN	PROPN	_	12	name	_	_
-16	,	,	PUNCT	punc	_	2	punct	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	Estado	Estado	PROPN	PROP|@P<	_	12	flat	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 17-18	no	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	Cambuci	Cambuci	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-20	(	(	PUNCT	punc	_	19	punct	_	_
-21	região	região	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
-22	central	central	ADJ	adj|F|S	Gender=Fem|Number=Sing	21	amod	_	_
-23	)	)	PUNCT	punc	_	19	punct	_	_
-24	,	,	PUNCT	punc	_	2	punct	_	_
-25	quando	quando	ADV	adv|<rel>|<ks>	PronType=Rel	29	advmod	_	_
-26	,	,	PUNCT	punc	_	29	punct	_	_
-27	provavelmente	provavelmente	ADV	adv	_	29	advmod	_	_
-28	,	,	PUNCT	punc	_	29	punct	_	_
-29	perdeu	perder	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
-30	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
-31	controle	controle	NOUN	n|M|S	Gender=Masc|Number=Sing	29	dobj	_	_
+17	em	em	ADP	<sam->|PRP|@<ADVL	_	19	case	_	_
+18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	Cambuci	Cambuci	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
+20	(	(	PUNCT	PU|@PU	_	19	punct	_	SpaceAfter=No
+21	região	região	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	19	nmod	_	_
+22	central	central	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	21	amod	_	SpaceAfter=No
+23	)	)	PUNCT	PU|@PU	_	19	punct	_	SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+25	quando	quando	ADV	<ks>|<rel>|ADV|@ADVL>	PronType=Rel	29	advmod	_	SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+27	provavelmente	provavelmente	ADV	ADV|@ADVL>	_	29	advmod	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+29	perdeu	perder	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	advcl	_	_
+30	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
+31	controle	controle	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	29	obj	_	_
 32-33	do	_	_	_	_	_	_	_	_
-32	de	de	ADP	prp|<sam->	AdpType=Prep	34	case	_	_
-33	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-34	carro	carro	NOUN	n|M|S	Gender=Masc|Number=Sing	31	nmod	_	_
-35	e	e	CONJ	conj-c	_	29	cc	_	_
-36	bateu	bater	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	conj	_	_
+32	de	de	ADP	<sam->|PRP|@N<	_	34	case	_	_
+33	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	carro	carro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
+35	e	e	CCONJ	<co-advl>|KC|@CO	_	36	cc	_	_
+36	bateu	bater	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	29	conj	_	_
 37-38	num	_	_	_	_	_	_	_	_
-37	em	em	ADP	prp|<sam->	AdpType=Prep	39	case	_	_
-38	um	um	DET	art|<-sam>|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
-39	poste	poste	NOUN	n|M|S	Gender=Masc|Number=Sing	36	dobj	_	_
-40	.	.	PUNCT	punc	_	2	punct	_	_
+37	em	em	ADP	<sam->|PRP|@<PIV	_	39	case	_	_
+38	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
+39	poste	poste	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	36	obj	_	SpaceAfter=No
+40	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

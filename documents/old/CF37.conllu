@@ -1,211 +1,217 @@
-# distance_from_new = 0
-# new_sent_id = CF37-1
-# sent_id = pt-ud-train.conllu#s5193/pt
-# orig_file_sentence = 052#93
-1	EUA	EUA	PROPN	prop|M|P	Gender=Masc|Number=Plur	2	nsubj	_	_
-2	Lançam	lançar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	Nave	nave	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
+# text = EUA Lançam Nave À Lua Após 21 Anos, Carlos EDUARDO LINS da Silva (De Washington)
+# forest 1
+# source CETENFolha n=37 cad=Brasil sec=pol sem=94b
+# sent_id = CF37-1
+# id 151
+1	EUA	EUA	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
+2	Lançam	lançar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	Nave	nave	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 4-5	À	_	_	_	_	_	_	_	_
-4	A	a	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	Lua	lua	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-7	Após	após	ADP	prp	AdpType=Prep	9	case	_	_
-8	21	21	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	9	nummod	_	_
-9	Anos	ano	NOUN	n|<prop>|M|P	Gender=Masc|Number=Plur	2	nmod	_	_
-10	,	,	PUNCT	punc	_	2	punct	_	_
-11	Carlos	Carlos	PROPN	prop|M|S	_	2	dep	_	MWE=Carlos_EDUARDO_LINS_da_Silva|MWEPOS=PROPN
-12	EDUARDO	EDUARDO	PROPN	PROPN	_	11	name	_	_
-13	LINS	LINS	PROPN	PROPN	_	11	name	_	_
+4	A	a	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Lua	lua	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	_
+7	Após	após	ADP	PRP|@<ADVL	_	9	case	_	_
+8	21	21	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	9	nummod	_	_
+9	Anos	ano	NOUN	<prop>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	obl	_	SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+11	Carlos	Carlos	PROPN	_	_	2	dep	_	MWE=Carlos_EDUARDO_LINS_da_Silva|MWEPOS=PROPN
+12	EDUARDO	EDUARDO	PROPN	_	_	11	flat	_	_
+13	LINS	LINS	PROPN	_	_	11	flat	_	_
 14-15	da	_	_	_	_	_	_	_	_
-14	de	de	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-15	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	Silva	Silva	PROPN	PROPN	_	11	name	_	_
-17	(	(	PUNCT	punc	_	11	punct	_	_
-18	De	de	ADP	prp	AdpType=Prep	19	case	_	_
-19	Washington	Washington	PROPN	prop|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-20	)	)	PUNCT	punc	_	11	punct	_	_
+14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
+15	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Silva	Silva	PROPN	PROP|@P<	_	11	flat	_	_
+17	(	(	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
+18	De	de	ADP	PRP|@N<PRED	_	19	case	_	_
+19	Washington	Washington	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	SpaceAfter=No
+20	)	)	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF37-2
-# sent_id = pt-ud-train.conllu#s5194/pt
-# orig_file_sentence = 052#94
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-2	primeira	primeiro	ADJ	adj|<NUM-ord>|F|S	Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
-3	missão	missão	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nsubj	_	_
-4	lunar	lunar	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
+# text = A primeira missão lunar dos EUA em 21 anos teve início ontem, quando um foguete Titã 2 colocou no espaço a astronave não tripulada Clementine 1, que vai passar dois meses em duas órbitas da Lua para realizar completo mapeamento mineralógico e topográfico do satélite da Terra.
+# forest 1
+# source CETENFolha n=37 cad=Brasil sec=pol sem=94b
+# sent_id = CF37-2
+# id 152
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	_
+3	missão	missão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
+4	lunar	lunar	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	_
 5-6	dos	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
-7	EUA	EUA	PROPN	prop|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-8	em	em	ADP	prp	AdpType=Prep	10	case	_	_
-9	21	21	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
-10	anos	ano	NOUN	n|M|P	Gender=Masc|Number=Plur	3	nmod	_	_
-11	teve	ter	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-12	início	início	NOUN	n|M|S	Gender=Masc|Number=Sing	11	dobj	_	_
-13	ontem	ontem	ADV	adv	_	11	advmod	_	_
-14	,	,	PUNCT	punc	_	11	punct	_	_
-15	quando	quando	ADV	adv|<rel>|<ks>	PronType=Rel	20	advmod	_	_
-16	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	foguete	foguete	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nsubj	_	_
-18	Titã	Titã	PROPN	prop|M|S	_	17	nmod	_	MWE=Titã_2|MWEPOS=PROPN
-19	2	2	NUM	NUM	NumForm=Digit|NumType=Card	18	nummod	_	_
-20	colocou	colocar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	advcl	_	_
+5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
+6	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	EUA	EUA	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+8	em	em	ADP	PRP|@N<	_	10	case	_	_
+9	21	21	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	10	nummod	_	_
+10	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+11	teve	ter	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+12	início	início	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_
+13	ontem	ontem	ADV	ADV|@<ADVL	_	11	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+15	quando	quando	ADV	<rel>|ADV|@ADVL>	PronType=Rel	20	advmod	_	_
+16	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	foguete	foguete	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
+18	Titã	Titã	PROPN	_	_	17	nmod	_	MWE=Titã_2|MWEPOS=PROPN
+19	2	2	NUM	_	NumForm=Digit|NumType=Card	18	nummod	_	_
+20	colocou	colocar	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	advcl	_	_
 21-22	no	_	_	_	_	_	_	_	_
-21	em	em	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-22	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	espaço	espaço	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-24	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	astronave	astronave	NOUN	n|F|S	Gender=Fem|Number=Sing	20	dobj	_	_
-26	não	não	ADV	adv	_	27	neg	_	_
-27	tripulada	tripular	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	25	acl	_	_
-28	Clementine	Clementine	PROPN	prop|F|S	_	25	nmod	_	MWE=Clementine_1|MWEPOS=PROPN
-29	1	1	NUM	NUM	NumForm=Digit|NumType=Card	28	nummod	_	_
-30	,	,	PUNCT	punc	_	25	punct	_	_
-31	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	32	nsubj	_	_
-32	vai	ir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	acl	_	_
-33	passar	passar	VERB	v-inf	VerbForm=Inf	32	xcomp	_	_
-34	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	35	nummod	_	_
-35	meses	mês	NOUN	n|M|P	Gender=Masc|Number=Plur	33	nmod	_	_
-36	em	em	ADP	prp	AdpType=Prep	38	case	_	_
-37	duas	dois	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	38	nummod	_	_
-38	órbitas	órbita	NOUN	n|F|P	Gender=Fem|Number=Plur	33	nmod	_	_
+21	em	em	ADP	<sam->|PRP|@<OA	_	23	case	_	_
+22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	espaço	espaço	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	_
+24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	astronave	astronave	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
+26	não	não	ADV	_	Polarity=Neg	27	advmod	_	_
+27	tripulada	tripular	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	25	acl	_	_
+28	Clementine	Clementine	PROPN	_	_	25	nmod	_	MWE=Clementine_1|MWEPOS=PROPN
+29	1	1	NUM	_	NumForm=Digit|NumType=Card	28	nummod	_	SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	25	punct	_	_
+31	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	32	nsubj	_	_
+32	vai	ir	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	acl	_	_
+33	passar	passar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	32	xcomp	_	_
+34	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	35	nummod	_	_
+35	meses	mês	NOUN	<np-def>|N|M|P|@<ADVL	Gender=Masc|Number=Plur	33	obl	_	_
+36	em	em	ADP	PRP|@<ADVL	_	38	case	_	_
+37	duas	dois	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	38	nummod	_	_
+38	órbitas	órbita	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	33	obl	_	_
 39-40	da	_	_	_	_	_	_	_	_
-39	de	de	ADP	prp|<sam->	AdpType=Prep	41	case	_	_
-40	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
-41	Lua	lua	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	38	nmod	_	_
-42	para	para	ADP	prp	AdpType=Prep	43	mark	_	_
-43	realizar	realizar	VERB	v-inf	VerbForm=Inf	33	advcl	_	_
-44	completo	completo	ADJ	adj|M|S	Gender=Masc|Number=Sing	45	amod	_	_
-45	mapeamento	mapeamento	NOUN	n|M|S	Gender=Masc|Number=Sing	43	dobj	_	_
-46	mineralógico	mineralógico	ADJ	adj|M|S	Gender=Masc|Number=Sing	45	amod	_	_
-47	e	e	CONJ	conj-c|<co-postnom>	_	46	cc	_	_
-48	topográfico	topográfico	ADJ	adj|M|S	Gender=Masc|Number=Sing	46	conj	_	_
+39	de	de	ADP	<sam->|PRP|@N<	_	41	case	_	_
+40	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+41	Lua	lua	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	38	nmod	_	_
+42	para	para	ADP	PRP|@<ADVL	_	43	mark	_	_
+43	realizar	realizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	advcl	_	_
+44	completo	completo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	45	amod	_	_
+45	mapeamento	mapeamento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	43	obj	_	_
+46	mineralógico	mineralógico	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	45	amod	_	_
+47	e	e	CCONJ	<co-postnom>|KC|@CO	_	48	cc	_	_
+48	topográfico	topográfico	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	46	conj	_	_
 49-50	do	_	_	_	_	_	_	_	_
-49	de	de	ADP	prp|<sam->	AdpType=Prep	51	case	_	_
-50	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_
-51	satélite	satélite	NOUN	n|M|S	Gender=Masc|Number=Sing	45	nmod	_	_
+49	de	de	ADP	<sam->|PRP|@N<ARG	_	51	case	_	_
+50	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_
+51	satélite	satélite	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	45	nmod	_	_
 52-53	da	_	_	_	_	_	_	_	_
-52	de	de	ADP	prp|<sam->	AdpType=Prep	54	case	_	_
-53	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	_	_
-54	Terra	terra	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	51	nmod	_	_
-55	.	.	PUNCT	punc	_	11	punct	_	_
+52	de	de	ADP	<sam->|PRP|@N<	_	54	case	_	_
+53	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	_	_
+54	Terra	terra	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	51	nmod	_	SpaceAfter=No
+55	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF37-3
-# sent_id = pt-ud-train.conllu#s5195/pt
-# orig_file_sentence = 052#95
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	nome	nome	NOUN	n|M|S	Gender=Masc|Number=Sing	8	nsubj	_	_
-3	oficial	oficial	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
+# text = O nome oficial do projeto é Depse 1 (Deep Space Program Science Experiment).
+# forest 1
+# source CETENFolha n=37 cad=Brasil sec=pol sem=94b
+# sent_id = CF37-3
+# id 153
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	nome	nome	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
+3	oficial	oficial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
 4-5	do	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	projeto	projeto	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-7	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-8	Depse	Depse	PROPN	prop|M|S	_	0	root	_	MWE=Depse_1|MWEPOS=PROPN
-9	1	1	NUM	NUM	NumForm=Digit|NumType=Card	8	nummod	_	_
-10	(	(	PUNCT	punc	_	8	punct	_	_
-11	Deep	Deep	PROPN	prop|M|S	_	8	name	_	MWE=Deep_Space_Program_Science_Experiment|MWEPOS=PROPN
-12	Space	Space	PROPN	PROPN	_	11	name	_	_
-13	Program	Program	PROPN	PROPN	_	11	name	_	_
-14	Science	Science	PROPN	PROPN	_	11	name	_	_
-15	Experiment	Experiment	PROPN	PROPN	_	11	name	_	_
-16	)	)	PUNCT	punc	_	8	punct	_	_
-17	.	.	PUNCT	punc	_	8	punct	_	_
+4	de	de	ADP	<sam->|PRP|@N<ARG	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	projeto	projeto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+7	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	Depse	Depse	PROPN	_	_	0	root	_	MWE=Depse_1|MWEPOS=PROPN
+9	1	1	NUM	_	NumForm=Digit|NumType=Card	8	nummod	_	_
+10	(	(	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
+11	Deep	Deep	PROPN	_	_	8	flat	_	MWE=Deep_Space_Program_Science_Experiment|MWEPOS=PROPN
+12	Space	Space	PROPN	_	_	11	flat	_	_
+13	Program	Program	PROPN	_	_	11	flat	_	_
+14	Science	Science	PROPN	_	_	11	flat	_	_
+15	Experiment	Experiment	PROPN	_	_	11	flat	_	SpaceAfter=No
+16	)	)	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF37-4
-# sent_id = pt-ud-train.conllu#s5196/pt
-# orig_file_sentence = 052#96
-1	Ele	ele	PRON	pron-pers|M|3S|NOM	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubjpass	_	_
-2	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	auxpass	_	_
-3	patrocinado	patrocinar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+# text = Ele é patrocinado pela Organização de Defesa de Mísseis Balísticos e pela Nasa, numa das primeiras operações espacais com fins civis e militares.
+# forest 1
+# source CETENFolha n=37 cad=Brasil sec=pol sem=94b &W
+# sent_id = CF37-4
+# id 154
+1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	é	ser	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	patrocinado	patrocinar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	2	ccomp	_	_
 4-5	pela	_	_	_	_	_	_	_	_
-4	por	por	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	Organização	Organização	PROPN	prop|F|S	_	3	dobj	_	MWE=Organização_de_Defesa_de_Mísseis_Balísticos|MWEPOS=PROPN
-7	de	de	ADP	ADP	AdpType=Prep	8	case	_	_
-8	Defesa	Defesa	PROPN	PROPN	_	6	name	_	_
-9	de	de	ADP	ADP	AdpType=Prep	10	case	_	_
-10	Mísseis	Mísseis	PROPN	PROPN	_	6	name	_	_
-11	Balísticos	Balísticos	PROPN	PROPN	_	10	name	_	_
-12	e	e	CONJ	conj-c|<co-prparg>	_	6	cc	_	_
+4	por	por	ADP	PRP|@PASS	_	6	case	_	_
+5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Organização	Organização	PROPN	<first-cjt>|PROP|F|S|@P<	_	3	obj	_	MWE=Organização_de_Defesa_de_Mísseis_Balísticos|MWEPOS=PROPN
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	Defesa	Defesa	PROPN	PROP|@P<	_	6	flat	_	_
+9	de	de	ADP	PRP|@N<	_	10	case	_	_
+10	Mísseis	Mísseis	PROPN	_	_	6	flat	_	_
+11	Balísticos	Balísticos	PROPN	_	_	10	flat	_	_
+12	e	e	CCONJ	<co-pass>|<co-prparg>|KC|@CO	_	15	cc	_	_
 13-14	pela	_	_	_	_	_	_	_	_
-13	por	por	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	Nasa	Nasa	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	conj	_	_
-16	,	,	PUNCT	punc	_	3	punct	_	_
+13	por	por	ADP	<sam->|<cjt>|PRP|@PASS	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	Nasa	Nasa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	conj	_	SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 17-18	numa	_	_	_	_	_	_	_	_
-17	em	em	ADP	prp|<sam->	AdpType=Prep	18	case	_	_
-18	uma	um	PRON	pron-det|<-sam>|F|S	Gender=Fem|Number=Sing	3	advmod	_	_
+17	em	em	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
+18	uma	um	PRON	<-sam>|DET|F|S|@P<	Gender=Fem|Number=Sing	3	advmod	_	_
 19-20	das	_	_	_	_	_	_	_	_
-19	de	de	ADP	prp|<sam->	AdpType=Prep	22	case	_	_
-20	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
-21	primeiras	primeiro	ADJ	adj|<NUM-ord>|F|P	Gender=Fem|Number=Plur|NumType=Ord	22	amod	_	_
-22	operações	operação	NOUN	n|F|P	Gender=Fem|Number=Plur	18	nmod	_	_
-23	espacais	espacial	ADJ	adj|<ALT>|F|P	Gender=Fem|Number=Plur|Typo=Yes	22	amod	_	_
-24	com	com	ADP	prp	AdpType=Prep	25	case	_	_
-25	fins	fim	NOUN	n|M|P	Gender=Masc|Number=Plur	22	nmod	_	_
-26	civis	civil	ADJ	adj|M|P	Gender=Masc|Number=Plur	25	amod	_	_
-27	e	e	CONJ	conj-c|<co-postnom>	_	26	cc	_	_
-28	militares	militar	ADJ	adj|M|P	Gender=Masc|Number=Plur	26	conj	_	_
-29	.	.	PUNCT	punc	_	3	punct	_	_
+19	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
+20	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
+21	primeiras	primeiro	ADJ	<NUM-ord>|ADJ|F|P|@>N	Gender=Fem|Number=Plur|NumType=Ord	22	amod	_	_
+22	operações	operação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
+23	espacais	espacial	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur|Typo=Yes	22	amod	_	_
+24	com	com	ADP	PRP|@N<	_	25	case	_	_
+25	fins	fim	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
+26	civis	civil	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	25	amod	_	_
+27	e	e	CCONJ	<co-postnom>|KC|@CO	_	28	cc	_	_
+28	militares	militar	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	26	conj	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF37-5
-# sent_id = pt-ud-train.conllu#s5197/pt
-# orig_file_sentence = 052#97
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	lançamento	lançamento	NOUN	n|M|S	Gender=Masc|Number=Sing	3	nsubj	_	_
-3	ocorreu	ocorrer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	ontem	ontem	ADV	adv	_	3	advmod	_	_
+# text = O lançamento ocorreu ontem na base aérea de Vanderberg, na Califórnia, costa oeste do país, às 8h30 locais (14h30 em Brasília).
+# forest 1
+# source CETENFolha n=37 cad=Brasil sec=pol sem=94b
+# sent_id = CF37-5
+# id 155
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	lançamento	lançamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	ocorreu	ocorrer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	ontem	ontem	ADV	ADV|@<ADVL	_	3	advmod	_	_
 5-6	na	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	base	base	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-8	aérea	aéreo	ADJ	adj|F|S	Gender=Fem|Number=Sing	7	amod	_	_
-9	de	de	ADP	prp	AdpType=Prep	10	case	_	_
-10	Vanderberg	Vanderberg	PROPN	prop|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-11	,	,	PUNCT	punc	_	3	punct	_	_
+5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	base	base	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
+8	aérea	aéreo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	_
+9	de	de	ADP	PRP|@N<	_	10	case	_	_
+10	Vanderberg	Vanderberg	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 12-13	na	_	_	_	_	_	_	_	_
-12	em	em	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	Califórnia	Califórnia	PROPN	prop|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-15	,	,	PUNCT	punc	_	14	punct	_	_
-16	costa	costa	NOUN	n|F|S	Gender=Fem|Number=Sing	14	nmod	_	_
-17	oeste	oeste	ADJ	adj|F|S	Gender=Fem|Number=Sing	16	amod	_	_
+12	em	em	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
+13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	Califórnia	Califórnia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	SpaceAfter=No
+15	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+16	costa	costa	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	14	nmod	_	_
+17	oeste	oeste	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	16	amod	_	_
 18-19	do	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp|<sam->	AdpType=Prep	20	case	_	_
-19	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-21	,	,	PUNCT	punc	_	14	punct	_	_
+18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
+19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+21	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 22-23	às	_	_	_	_	_	_	_	_
-22	a	a	ADP	prp|<sam->	AdpType=Prep	24	case	_	_
-23	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
-24	8h30	8h30	NOUN	n|F|P	Gender=Fem|Number=Plur	3	nmod	_	_
-25	locais	local	ADJ	adj|F|P	Gender=Fem|Number=Plur	24	amod	_	_
-26	(	(	PUNCT	punc	_	24	punct	_	_
-27	14h30	14h30	NOUN	n|F|P	Gender=Fem|Number=Plur	24	nmod	_	_
-28	em	em	ADP	prp	AdpType=Prep	29	case	_	_
-29	Brasília	Brasília	PROPN	prop|F|S	Gender=Fem|Number=Sing	24	nmod	_	_
-30	)	)	PUNCT	punc	_	24	punct	_	_
-31	.	.	PUNCT	punc	_	3	punct	_	_
+22	a	a	ADP	<sam->|PRP|@<ADVL	_	24	case	_	_
+23	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
+24	8h30	8h30	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	obl	_	_
+25	locais	local	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	24	amod	_	_
+26	(	(	PUNCT	PU|@PU	_	24	punct	_	SpaceAfter=No
+27	14h30	14h30	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	24	nmod	_	_
+28	em	em	ADP	PRP|@<ADVL	_	29	case	_	_
+29	Brasília	Brasília	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	24	obl	_	SpaceAfter=No
+30	)	)	PUNCT	PU|@PU	_	24	punct	_	SpaceAfter=No
+31	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF37-6
-# sent_id = pt-ud-train.conllu#s5198/pt
-# orig_file_sentence = 052#98
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	custo	custo	NOUN	n|M|S	Gender=Masc|Number=Sing	9	nsubj	_	_
-3	total	total	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
+# text = O custo total do projeto é de U$ 55 milhões.
+# forest 1
+# source CETENFolha n=37 cad=Brasil sec=pol sem=94b
+# sent_id = CF37-6
+# id 156
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	custo	custo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
+3	total	total	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
 4-5	do	_	_	_	_	_	_	_	_
-4	de	de	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	projeto	projeto	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-7	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
-8	de	de	ADP	prp	AdpType=Prep	9	case	_	_
-9	U$	U$	SYM	n|M|P	Gender=Masc|Number=Plur	0	root	_	_
-10	55	55	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
-11	milhões	milhão	NOUN	n|M|P	Gender=Masc|Number=Plur	9	nmod	_	_
-12	.	.	PUNCT	punc	_	9	punct	_	_
+4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	projeto	projeto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+7	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	de	de	ADP	PRP|@<SC	_	9	case	_	_
+9	U$	U$	SYM	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	0	root	_	_
+10	55	55	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	11	nummod	_	_
+11	milhões	milhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	9	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 

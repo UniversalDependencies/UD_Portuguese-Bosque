@@ -1,194 +1,199 @@
-# distance_from_new = 0
-# new_sent_id = CP8-1
-# sent_id = pt-ud-train.conllu#s44/pt
-# orig_file_sentence = 001#44
-1	A	a	DET	pp	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	0	root	_	MWE=A_propósito|MWEPOS=ADV
-2	propósito	propósito	NOUN	NOUN	_	1	mwe	_	_
-3	,	,	PUNCT	punc	_	1	punct	_	_
+# text = A propósito, no Museu da Segunda Guerra Mundial, que aí foi aberto, a história da maior guerra no continente europeu começa com a fotografia de Estaline a cumprimentar o ministro dos Negócios Estrangeiros da Alemanha nazi, ou seja, a guerra começa com a assinatura do Pacto Molotov-Ribbentrop.
+# forest 1
+# source CETEMPúblico n=8 sec=pol-soc sem=94a
+# sent_id = CP8-1
+# id 44
+1	A	a	DET	PRP|@ADVL>	Gender=Fem|Number=Sing|PronType=Art	0	root	_	MWE=A_propósito|MWEPOS=ADV
+2	propósito	propósito	NOUN	N|M|S|@P<	_	1	fixed	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 4-5	no	_	_	_	_	_	_	_	_
-4	em	em	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Museu	Museu	PROPN	prop|M|S	_	1	nmod	_	MWE=Museu_da_Segunda_Guerra_Mundial|MWEPOS=PROPN
+4	em	em	ADP	<sam->|PRP|@ADVL>	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Museu	Museu	PROPN	PROP|M|S|@P<	_	1	obl	_	MWE=Museu_da_Segunda_Guerra_Mundial|MWEPOS=PROPN
 7-8	da	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Segunda	Segunda	PROPN	PROPN	_	6	name	_	_
-10	Guerra	Guerra	PROPN	PROPN	_	9	name	_	_
-11	Mundial	Mundial	PROPN	PROPN	_	9	name	_	_
-12	,	,	PUNCT	punc	_	6	punct	_	_
-13	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	15	nsubj	_	_
-14	aí	aí	ADV	adv|<kc>	_	16	advmod	_	_
-15	foi	ir	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
-16	aberto	abrir	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	15	ccomp	_	_
-17	,	,	PUNCT	punc	_	6	punct	_	_
-18	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	história	história	NOUN	n|F|S	Gender=Fem|Number=Sing	28	nsubj	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	Segunda	Segunda	PROPN	PROP|@P<	_	6	flat	_	_
+10	Guerra	Guerra	PROPN	PROP|@N<	_	9	flat	_	_
+11	Mundial	Mundial	PROPN	PROP|@N<	_	9	flat	_	SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+13	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	15	nsubj	_	_
+14	aí	aí	ADV	<kc>|ADV|@ADVL>	_	16	advmod	_	_
+15	foi	ir	VERB	<cjt>|<aux>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	acl	_	_
+16	aberto	abrir	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	15	ccomp	_	SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	história	história	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	28	nsubj	_	_
 20-21	da	_	_	_	_	_	_	_	_
-20	de	de	ADP	prp|<sam->	AdpType=Prep	23	case	_	_
-21	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	23	det	_	_
-22	maior	grande	ADJ	adj|F|S	Gender=Fem|Number=Sing	23	amod	_	_
-23	guerra	guerra	NOUN	n|F|S	Gender=Fem|Number=Sing	19	nmod	_	_
+20	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
+21	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	23	det	_	_
+22	maior	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	23	amod	_	_
+23	guerra	guerra	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
 24-25	no	_	_	_	_	_	_	_	_
-24	em	em	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	continente	continente	NOUN	n|M|S	Gender=Masc|Number=Sing	23	nmod	_	_
-27	europeu	europeu	ADJ	adj|M|S	Gender=Masc|Number=Sing	26	amod	_	_
-28	começa	comedir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
-29	com	com	ADP	prp	AdpType=Prep	31	case	_	_
-30	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
-31	fotografia	fotografia	NOUN	n|F|S	Gender=Fem|Number=Sing	28	dobj	_	_
-32	de	de	ADP	prp	AdpType=Prep	33	case	_	_
-33	Estaline	Estaline	PROPN	prop|M|S	Gender=Masc|Number=Sing	31	nmod	_	_
-34	a	a	ADP	prp	AdpType=Prep	35	mark	_	_
-35	cumprimentar	cumprimentar	VERB	v-inf	VerbForm=Inf	33	acl	_	_
-36	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	ministro	ministro	NOUN	n|M|S	_	35	dobj	_	MWE=ministro_dos_Negócios_Estrangeiros|MWEPOS=NOUN
+24	em	em	ADP	<sam->|PRP|@N<	_	26	case	_	_
+25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	continente	continente	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
+27	europeu	europeu	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	26	amod	_	_
+28	começa	comedir	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
+29	com	com	ADP	<first-cjt>|PRP|@<PIV	_	31	case	_	_
+30	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+31	fotografia	fotografia	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	obj	_	_
+32	de	de	ADP	PRP|@N<	_	33	case	_	_
+33	Estaline	Estaline	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
+34	a	a	ADP	PRP|@N<	_	35	mark	_	_
+35	cumprimentar	cumprimentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	acl	_	_
+36	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
+37	ministro	ministro	NOUN	N|@<ACC	_	35	obj	_	MWE=ministro_dos_Negócios_Estrangeiros|MWEPOS=NOUN
 38-39	dos	_	_	_	_	_	_	_	_
-38	de	de	ADP	prp|<sam->	AdpType=Prep	40	case	_	_
-39	os	o	DET	art|<-sam>|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_
-40	Negócios	Negócios	NOUN	NOUN	_	37	compound	_	_
-41	Estrangeiros	Estrangeiros	NOUN	NOUN	_	37	compound	_	_
+38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
+39	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_
+40	Negócios	Negócios	NOUN	N|@P<	_	37	compound	_	_
+41	Estrangeiros	Estrangeiros	NOUN	ADJ|@N<	_	37	compound	_	_
 42-43	da	_	_	_	_	_	_	_	_
-42	de	de	ADP	prp	AdpType=Prep	44	case	_	_
-43	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
-44	Alemanha	Alemanha	PROPN	prop|F|S	Gender=Fem|Number=Sing	37	nmod	_	_
-45	nazi	nazi	ADJ	adj|M/F|S	Number=Sing	44	amod	_	_
-46	,	,	PUNCT	punc	_	28	punct	_	_
-47	ou	ou	CONJ	adv|<kc>	_	52	advmod	_	MWE=ou_seja|MWEPOS=ADV
-48	seja	seja	NOUN	NOUN	_	47	mwe	_	_
-49	,	,	PUNCT	punc	_	52	punct	_	_
-50	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
-51	guerra	guerra	NOUN	n|F|S	Gender=Fem|Number=Sing	52	nsubj	_	_
-52	começa	comedir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	conj	_	_
-53	com	com	ADP	prp	AdpType=Prep	55	case	_	_
-54	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	_	_
-55	assinatura	assinatura	NOUN	n|F|S	Gender=Fem|Number=Sing	52	dobj	_	_
+42	de	de	ADP	PRP|@N<	_	44	case	_	_
+43	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
+44	Alemanha	Alemanha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	37	nmod	_	_
+45	nazi	nazi	ADJ	ADJ|F|S|@N<	Number=Sing	44	amod	_	SpaceAfter=No
+46	,	,	PUNCT	PU|@PU	_	52	punct	_	_
+47	ou	ou	CCONJ	_	_	52	advmod	_	MWE=ou_seja|MWEPOS=ADV
+48	seja	seja	NOUN	_	_	47	fixed	_	SpaceAfter=No
+49	,	,	PUNCT	PU|@PU	_	52	punct	_	_
+50	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
+51	guerra	guerra	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	52	nsubj	_	_
+52	começa	comedir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	conj	_	_
+53	com	com	ADP	PRP|@<PIV	_	55	case	_	_
+54	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	_	_
+55	assinatura	assinatura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	52	obj	_	_
 56-57	do	_	_	_	_	_	_	_	_
-56	de	de	ADP	prp|<sam->	AdpType=Prep	58	case	_	_
-57	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	det	_	_
-58	Pacto	Pacto	PROPN	prop|M|S	_	55	nmod	_	MWE=Pacto_Molotov-Ribbentrop|MWEPOS=PROPN
-59	Molotov-Ribbentrop	Molotov-Ribbentrop	PROPN	PROPN	_	58	name	_	_
-60	.	.	PUNCT	punc	_	1	punct	_	_
+56	de	de	ADP	<sam->|PRP|@N<ARG	_	58	case	_	_
+57	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	det	_	_
+58	Pacto	Pacto	PROPN	_	_	55	nmod	_	MWE=Pacto_Molotov-Ribbentrop|MWEPOS=PROPN
+59	Molotov-Ribbentrop	Molotov-Ribbentrop	PROPN	_	_	58	flat	_	SpaceAfter=No
+60	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 1
-# new_sent_id = CP8-2
-# sent_id = pt-ud-train.conllu#s45/pt
-# orig_file_sentence = 001#45
+# text = Na cerimónia de inauguração do edifício, Ieltsin declarou perante mais de cem mil pessoas que «a Rússia está perto da estabilidade política e que todos os problemas podem ser resolvidos à mesa das conversações »".
+# forest 1
+# source CETEMPúblico n=8 sec=pol-soc sem=94a
+# sent_id = CP8-2
+# id 45
 1-2	Na	_	_	_	_	_	_	_	_
-1	Em	em	ADP	prp|<sam->	AdpType=Prep	3	case	_	_
-2	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
-3	cerimónia	cerimónia	NOUN	n|F|S	Gender=Fem|Number=Sing	11	nmod	_	_
-4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
-5	inauguração	inauguração	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
+2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
+3	cerimónia	cerimónia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	_
+4	de	de	ADP	PRP|@N<	_	5	case	_	_
+5	inauguração	inauguração	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 6-7	do	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	edifício	edifício	NOUN	n|M|S	Gender=Masc|Number=Sing	5	nmod	_	_
-9	,	,	PUNCT	punc	_	11	punct	_	_
-10	Ieltsin	Ieltsin	PROPN	prop|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
-11	declarou	declarar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-12	perante	perante	ADP	prp	AdpType=Prep	17	case	_	_
-13	mais	mais	ADV	adv|<quant>	NumType=Card|PronType=Ind,Neg,Tot	15	advmod	_	MWE=mais_de|MWEPOS=ADV
-14	de	de	ADP	ADP	AdpType=Prep	13	mwe	_	_
-15	cem	cem	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	17	nummod	_	_
-16	mil	mil	NUM	num|<card>|F|P	Gender=Fem|Number=Plur|NumType=Card	17	nummod	_	_
-17	pessoas	pessoa	NOUN	n|F|P	Gender=Fem|Number=Plur	11	nmod	_	_
-18	que	que	SCONJ	conj-s	_	22	mark	_	_
-19	«	«	PUNCT	punc	_	22	punct	_	_
-20	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	Rússia	Rússia	PROPN	prop|F|S	Gender=Fem|Number=Sing	22	nsubj	_	_
-22	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_
-23	perto	perto	NOUN	prp	_	26	case	_	MWE=perto_de|MWEPOS=ADP
+6	de	de	ADP	<sam->|PRP|@N<ARG	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	edifício	edifício	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+10	Ieltsin	Ieltsin	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
+11	declarou	declarar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+12	perante	perante	ADP	PRP|@<ADVL	_	17	case	_	_
+13	mais	mais	ADV	ADV|@>A	NumType=Card|PronType=Ind,Neg,Tot	15	advmod	_	MWE=mais_de|MWEPOS=ADV
+14	de	de	ADP	<prp>|PRP|@A<	_	13	fixed	_	_
+15	cem	cem	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	17	nummod	_	_
+16	mil	mil	NUM	<card>|NUM|F|P|@>N	Gender=Fem|Number=Plur|NumType=Card	17	nummod	_	_
+17	pessoas	pessoa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	_
+18	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
+19	«	«	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
+20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
+21	Rússia	Rússia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
+22	está	estar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	ccomp	_	_
+23	perto	perto	NOUN	ADV|@<SA	_	26	case	_	MWE=perto_de|MWEPOS=ADP
 24-25	da	_	_	_	_	_	_	_	_
-24	de	de	ADP	ADP	AdpType=Prep	23	mwe	_	_
-25	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	estabilidade	estabilidade	NOUN	n|F|S	Gender=Fem|Number=Sing	22	nmod	_	_
-27	política	político	ADJ	adj|F|S	Gender=Fem|Number=Sing	26	amod	_	_
-28	e	e	CONJ	conj-c|<co-vfin>	_	22	cc	_	_
-29	que	que	SCONJ	conj-s	_	35	mark	_	_
-30	todos	todos	DET	pron-det|<quant>|M|P	PronType=Art	32	det	_	MWE=todos_os|MWEPOS=DET
-31	os	os	DET	DET	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
-32	problemas	problema	NOUN	n|M|P	Gender=Masc|Number=Plur	35	nsubjpass	_	_
-33	podem	poder	AUX	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	aux	_	_
-34	ser	ser	VERB	v-inf	VerbForm=Inf	35	auxpass	_	_
-35	resolvidos	resolver	VERB	v-pcp|M|P	Gender=Masc|Number=Plur|VerbForm=Part	22	conj	_	_
+24	de	de	ADP	PRP|@A<	_	23	fixed	_	_
+25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	estabilidade	estabilidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	_
+27	política	político	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	26	amod	_	_
+28	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	34	cc	_	_
+29	que	que	SCONJ	KS|@SUB	_	34	mark	_	_
+30	todos	todos	DET	<quant>|DET|M|P|@>N	PronType=Art	32	det	_	MWE=todos_os|MWEPOS=DET
+31	os	os	DET	<artd>|DET|M|P|@A<	Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
+32	problemas	problema	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	34	nsubj	_	_
+33	podem	poder	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	34	aux	_	_
+34	ser	ser	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	22	conj	_	_
+35	resolvidos	resolver	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part	34	ccomp	_	_
 36-37	à	_	_	_	_	_	_	_	_
-36	a	a	ADP	prp|<sam->	AdpType=Prep	38	case	_	_
-37	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	38	det	_	_
-38	mesa	mesa	NOUN	n|F|S	Gender=Fem|Number=Sing	35	nmod	_	_
+36	a	a	ADP	<sam->|PRP|@<ADVL	_	38	case	_	_
+37	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	38	det	_	_
+38	mesa	mesa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	35	obl	_	_
 39-40	das	_	_	_	_	_	_	_	_
-39	de	de	ADP	prp|<sam->	AdpType=Prep	41	case	_	_
-40	as	o	DET	art|<-sam>|<artd>|P	Definite=Def|Number=Plur|PronType=Art	41	det	_	_
-41	conversações	conversação	NOUN	n|F|P	Gender=Fem|Number=Plur	38	nmod	_	_
-42	»"	»"	PUNCT	punc	_	35	punct	_	_
-43	.	.	PUNCT	punc	_	11	punct	_	_
+39	de	de	ADP	<sam->|PRP|@N<	_	41	case	_	_
+40	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Plur|PronType=Art	41	det	_	_
+41	conversações	conversação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	38	nmod	_	_
+42	»"	»"	PUNCT	punc	_	34	punct	_	SpaceAfter=No
+43	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 1
-# new_sent_id = CP8-3
-# sent_id = pt-ud-train.conllu#s46/pt
-# orig_file_sentence = 001#46
-1	Talvez	talvez	ADV	adv	_	2	advmod	_	_
-2	entusiasmado	entusiasmar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	13	advcl	_	_
+# text = Talvez entusiasmado pela festa da vitória, o Presidente russo afirmou que «chegará o dia em que a Rússia ajudará o Ocidente »".
+# forest 1
+# source CETEMPúblico n=8 sec=pol-soc sem=94a
+# sent_id = CP8-3
+# id 46
+1	Talvez	talvez	ADV	ADV|@ADVL>	_	2	advmod	_	_
+2	entusiasmado	entusiasmar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	13	advcl	_	_
 3-4	pela	_	_	_	_	_	_	_	_
-3	por	por	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
-5	festa	festa	NOUN	n|F|S	Gender=Fem|Number=Sing	2	dobj	_	_
+3	por	por	ADP	<sam->|PRP|@PASS	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
+5	festa	festa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obj	_	_
 6-7	da	_	_	_	_	_	_	_	_
-6	de	de	ADP	prp|<sam->	AdpType=Prep	8	case	_	_
-7	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	8	det	_	_
-8	vitória	vitória	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-9	,	,	PUNCT	punc	_	13	punct	_	_
-10	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Presidente	presidente	NOUN	n|M|S	Gender=Masc|Number=Sing	13	nsubj	_	_
-12	russo	russo	ADJ	adj|M|S	Gender=Masc|Number=Sing	11	amod	_	_
-13	afirmou	afirmar	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-14	que	que	SCONJ	conj-s	_	16	mark	_	_
-15	«	«	PUNCT	punc	_	16	punct	_	_
-16	chegará	chegar	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	ccomp	_	_
-17	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	dia	dia	NOUN	n|M|S	Gender=Masc|Number=Sing	16	nsubj	_	_
-19	em	em	ADP	prp	AdpType=Prep	20	case	_	_
-20	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	23	nmod	_	_
-21	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	Rússia	Rússia	PROPN	prop|F|S	Gender=Fem|Number=Sing	23	nsubj	_	_
-23	ajudará	ajudar	VERB	v-fin|FUT|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	acl	_	_
-24	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	Ocidente	ocidente	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	23	dobj	_	_
-26	»"	»"	PUNCT	punc	_	16	punct	_	_
-27	.	.	PUNCT	punc	_	13	punct	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	8	det	_	_
+8	vitória	vitória	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
+12	russo	russo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
+13	afirmou	afirmar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+14	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
+15	«	«	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
+16	chegará	chegar	VERB	<mv>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	ccomp	_	_
+17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	dia	dia	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	16	nsubj	_	_
+19	em	em	ADP	PRP|@ADVL>	_	20	case	_	_
+20	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	23	obl	_	_
+21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	Rússia	Rússia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	23	nsubj	_	_
+23	ajudará	ajudar	VERB	<mv>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	acl	_	_
+24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+25	Ocidente	ocidente	NOUN	<prop>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	obj	_	_
+26	»"	»"	PUNCT	punc	_	16	punct	_	SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP8-4
-# sent_id = pt-ud-train.conllu#s47/pt
-# orig_file_sentence = 001#47
-1	As	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
-2	cerimónias	cerimónia	NOUN	n|F|P	Gender=Fem|Number=Plur	4	nsubj	_	_
-3	oficiais	oficial	ADJ	adj|F|P	Gender=Fem|Number=Plur	2	amod	_	_
-4	terminaram	terminar	VERB	v-fin|PS|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-5	com	com	ADP	prp	AdpType=Prep	6	case	_	_
-6	desfiles	desfile	NOUN	n|M|P	Gender=Masc|Number=Plur	4	dobj	_	_
-7	militares	militar	ADJ	adj|M|P	Gender=Masc|Number=Plur	6	amod	_	_
-8	e	e	CONJ	conj-c|<co-prparg>	_	6	cc	_	_
-9	recriações	recriação	NOUN	n|F|P	Gender=Fem|Number=Plur	6	conj	_	_
-10	de	de	ADP	prp	AdpType=Prep	11	case	_	_
-11	combates	combate	NOUN	n|M|P	Gender=Masc|Number=Plur	9	nmod	_	_
-12	aéreos	aéreo	ADJ	adj|M|P	Gender=Masc|Number=Plur	11	amod	_	_
-13	entre	entre	ADP	prp	AdpType=Prep	15	case	_	_
-14	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
-15	aviadores	aviador	NOUN	n|M|P	Gender=Masc|Number=Plur	11	nmod	_	_
-16	soviéticos	soviético	ADJ	adj|M|P	Gender=Masc|Number=Plur	15	amod	_	_
-17	e	e	CONJ	conj-c|<co-postnom>	_	16	cc	_	_
-18	alemães	alemão	ADJ	adj|M|P	Gender=Masc|Number=Plur	16	conj	_	_
-19	.	.	PUNCT	punc	_	4	punct	_	_
+# text = As cerimónias oficiais terminaram com desfiles militares e recriações de combates aéreos entre os aviadores soviéticos e alemães.
+# forest 1
+# source CETEMPúblico n=8 sec=pol-soc sem=94a
+# sent_id = CP8-4
+# id 47
+1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	cerimónias	cerimónia	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
+3	oficiais	oficial	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	2	amod	_	_
+4	terminaram	terminar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	com	com	ADP	PRP|@<PIV	_	6	case	_	_
+6	desfiles	desfile	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obj	_	_
+7	militares	militar	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	6	amod	_	_
+8	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	_
+9	recriações	recriação	NOUN	<cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	6	conj	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	combates	combate	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
+12	aéreos	aéreo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	11	amod	_	_
+13	entre	entre	ADP	PRP|@N<	_	15	case	_	_
+14	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
+15	aviadores	aviador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
+16	soviéticos	soviético	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	15	amod	_	_
+17	e	e	CCONJ	<co-postnom>|KC|@CO	_	18	cc	_	_
+18	alemães	alemão	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	16	conj	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CP8-5
-# sent_id = pt-ud-train.conllu#s48/pt
-# orig_file_sentence = 001#48
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	festa	festa	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
+# text = A festa da oposição
+# forest 1
+# source CETEMPúblico n=8 sec=pol-soc sem=94a
+# sent_id = CP8-5
+# id 48
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	festa	festa	NOUN	<np-def>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 3-4	da	_	_	_	_	_	_	_	_
-3	de	de	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|S	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
-5	oposição	oposição	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
+5	oposição	oposição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 

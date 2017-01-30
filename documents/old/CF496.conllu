@@ -1,98 +1,102 @@
-# distance_from_new = 0
-# new_sent_id = CF496-1
-# sent_id = pt-ud-train.conllu#s7129/pt
-# orig_file_sentence = 072#29
-1	Teremos	ter	VERB	v-fin|FUT|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
-2	,	,	PUNCT	punc	_	1	punct	_	_
-3	então	então	ADV	adv|<kc>	_	1	advmod	_	_
-4	,	,	PUNCT	punc	_	1	punct	_	_
-5	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	meio-campo	meio-campo	NOUN	n|M|S	Gender=Masc|Number=Sing	1	dobj	_	_
-7	ainda	ainda	ADV	adv	_	8	advmod	_	_
-8	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	9	advmod	_	_
-9	sólido	sólido	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
+# text = Teremos, então, um meio-campo ainda mais sólido na proteção à zaga e mais inteligente, veloz e agressivo, na combinação com o ataque.
+# forest 1
+# source CETENFolha n=496 cad=Esporte sec=des sem=94a
+# sent_id = CF496-1
+# id 2087
+1	Teremos	ter	VERB	<mv>|V|FUT|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+3	então	então	ADV	<kc>|ADV|@<ADVL	_	1	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	meio-campo	meio-campo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
+7	ainda	ainda	ADV	ADV|@>A	_	8	advmod	_	_
+8	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@>N	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	9	advmod	_	_
+9	sólido	sólido	ADJ	<first-cjt>|<np-idf>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
 10-11	na	_	_	_	_	_	_	_	_
-10	em	em	ADP	prp|<sam->	AdpType=Prep	12	case	_	_
-11	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	proteção	proteção	NOUN	n|F|S	Gender=Fem|Number=Sing	9	nmod	_	_
+10	em	em	ADP	<cjt>|<sam->|PRP|@N<	_	12	case	_	_
+11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	proteção	proteção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
 13-14	à	_	_	_	_	_	_	_	_
-13	a	a	ADP	prp|<sam->	AdpType=Prep	15	case	_	_
-14	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	zaga	zaga	NOUN	n|F|S	Gender=Fem|Number=Sing	12	nmod	_	_
-16	e	e	CONJ	conj-c|<co-postnom	_	9	cc	_	_
-17	mais	mais	ADV	adv|<quant>|<KOMP>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	18	advmod	_	_
-18	inteligente	inteligente	ADJ	adj|M|S	Gender=Masc|Number=Sing	9	conj	_	_
-19	,	,	PUNCT	punc	_	18	punct	_	_
-20	veloz	veloz	ADJ	adj|M|S	Gender=Masc|Number=Sing	18	conj	_	_
-21	e	e	CONJ	conj-c	_	18	cc	_	_
-22	agressivo	agressivo	ADJ	adj|M|S	Gender=Masc|Number=Sing	18	conj	_	_
-23	,	,	PUNCT	punc	_	18	punct	_	_
+13	a	a	ADP	<sam->|PRP|@N<	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	zaga	zaga	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+16	e	e	CCONJ	<co-postnom>|KC|@CO	_	18	cc	_	_
+17	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	18	advmod	_	_
+18	inteligente	inteligente	ADJ	<cjt>|<first-cjt>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	conj	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+20	veloz	veloz	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	18	conj	_	_
+21	e	e	CCONJ	KC|@CO	_	22	cc	_	_
+22	agressivo	agressivo	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	18	conj	_	SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 24-25	na	_	_	_	_	_	_	_	_
-24	em	em	ADP	prp|<sam->	AdpType=Prep	26	case	_	_
-25	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	combinação	combinação	NOUN	n|F|S	Gender=Fem|Number=Sing	18	nmod	_	_
-27	com	com	ADP	prp	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	ataque	ataque	NOUN	n|M|S	Gender=Masc|Number=Sing	26	nmod	_	_
-30	.	.	PUNCT	punc	_	1	punct	_	_
+24	em	em	ADP	<sam->|<cjt>|PRP|@N<PRED	_	26	case	_	_
+25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	combinação	combinação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
+27	com	com	ADP	PRP|@N<	_	29	case	_	_
+28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	ataque	ataque	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF496-2
-# sent_id = pt-ud-train.conllu#s7130/pt
-# orig_file_sentence = 072#30
-1	Teremos	ter	VERB	v-fin|FUT|1P|IND	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
-2	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	balanço	balanço	NOUN	n|M|S	Gender=Masc|Number=Sing	1	dobj	_	_
-4	entre	entre	ADP	prp	AdpType=Prep	5	case	_	_
-5	defesa	defesa	NOUN	n|F|S	Gender=Fem|Number=Sing	3	nmod	_	_
-6	e	e	CONJ	conj-c|<co-prparg>	_	5	cc	_	_
-7	ataque	ataque	NOUN	n|M|S	Gender=Masc|Number=Sing	5	conj	_	_
-8	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	13	dobj	_	_
-9	tanto	tanto	PRON	conj-c|<quant>|<KOMP>|<parkc-1>	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	10	cc	_	_
-10	Zagalo	Zagalo	PROPN	prop|M|S	Gender=Masc|Number=Sing	13	nsubj	_	_
-11	e	e	CONJ	conj-c|<co-subj>|<parkc-2>	_	10	cc	_	_
-12	Parreira	Parreira	PROPN	prop|F|S	Gender=Fem|Number=Sing	10	conj	_	_
-13	defendem	defender	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl	_	_
-14	,	,	PUNCT	punc	_	13	punct	_	_
-15	mas	mas	CONJ	conj-c|<co-vfin>	_	13	cc	_	_
-16	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	20	dobj	_	_
-17	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	time	time	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nsubj	_	_
-19	não	não	ADV	adv	_	20	neg	_	_
-20	revela	revelar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
-21	em	em	ADP	prp	AdpType=Prep	22	case	_	_
-22	campo	campo	NOUN	n|M|S	Gender=Masc|Number=Sing	20	nmod	_	_
-23	.	.	PUNCT	punc	_	1	punct	_	_
+# text = Teremos o balanço entre defesa e ataque que tanto Zagalo e Parreira defendem, mas que o time não revela em campo.
+# forest 1
+# source CETENFolha n=496 cad=Esporte sec=des sem=94a
+# sent_id = CF496-2
+# id 2088
+1	Teremos	ter	VERB	<mv>|V|FUT|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
+2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	balanço	balanço	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
+4	entre	entre	ADP	PRP|@N<	_	5	case	_	_
+5	defesa	defesa	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
+6	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	_
+7	ataque	ataque	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	conj	_	_
+8	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	13	obj	_	_
+9	tanto	tanto	PRON	<quant>|<parkc-1>|<KOMP>|KC|@CO	Degree=Cmp|NumType=Card|PronType=Ind,Neg,Tot	10	cc	_	_
+10	Zagalo	Zagalo	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
+11	e	e	CCONJ	<co-subj>|KC|@CO	_	12	cc	_	_
+12	Parreira	Parreira	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	conj	_	_
+13	defendem	defender	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+15	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	20	cc	_	_
+16	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	20	obj	_	_
+17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	time	time	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
+19	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
+20	revela	revelar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
+21	em	em	ADP	PRP|@<ADVL	_	22	case	_	_
+22	campo	campo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	SpaceAfter=No
+23	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF496-3
-# sent_id = pt-ud-train.conllu#s7131/pt
-# orig_file_sentence = 072#31
-1	Alberto	Alberto	PROPN	prop|M|S	_	8	nsubj	_	MWE=Alberto_Helena_Jr.|MWEPOS=PROPN
-2	Helena	Helena	PROPN	PROPN	_	1	name	_	_
-3	Jr.	Jr.	PROPN	PROPN	_	1	name	_	_
-4	,	,	PUNCT	punc	_	1	punct	_	_
-5	52	52	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	1	nummod	_	_
-6	,	,	PUNCT	punc	_	1	punct	_	_
-7	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
-8	colunista	colunista	ADJ	adj|<n>|M|S	Gender=Masc|Number=Sing	0	root	_	_
+# text = Alberto Helena Jr., 52, é colunista da Folha.
+# forest 1
+# source CETENFolha n=496 cad=Esporte sec=des sem=94a
+# sent_id = CF496-3
+# id 2089
+1	Alberto	Alberto	PROPN	_	_	8	nsubj	_	MWE=Alberto_Helena_Jr.|MWEPOS=PROPN
+2	Helena	Helena	PROPN	_	_	1	flat	_	_
+3	Jr.	Jr.	PROPN	_	_	1	flat	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+5	52	52	NUM	<card>|NUM|M|P|@N<PRED	Gender=Masc|Number=Plur|NumType=Card	1	nummod	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+7	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	colunista	colunista	ADJ	<n>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 9-10	da	_	_	_	_	_	_	_	_
-9	de	de	ADP	prp|<sam->	AdpType=Prep	11	case	_	_
-10	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	Folha	Folha	PROPN	prop|F|S	Gender=Fem|Number=Sing	8	nmod	_	_
-12	.	.	PUNCT	punc	_	8	punct	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
+10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Folha	Folha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF496-4
-# sent_id = pt-ud-train.conllu#s7132/pt
-# orig_file_sentence = 072#32
-1	Sua	seu	DET	pron-det|<poss|3S>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	_	_
-2	coluna	coluna	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nsubj	_	_
+# text = Sua coluna na Copa é diária.
+# forest 1
+# source CETENFolha n=496 cad=Esporte sec=des sem=94a
+# sent_id = CF496-4
+# id 2090
+1	Sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	2	det	_	_
+2	coluna	coluna	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
 3-4	na	_	_	_	_	_	_	_	_
-3	em	em	ADP	prp|<sam->	AdpType=Prep	5	case	_	_
-4	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Copa	copa	NOUN	n|<prop>|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-6	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-7	diária	diário	ADJ	adj|F|S	Gender=Fem|Number=Sing	0	root	_	_
-8	.	.	PUNCT	punc	_	7	punct	_	_
+3	em	em	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Copa	copa	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+6	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+7	diária	diário	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 

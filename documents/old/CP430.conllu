@@ -1,16 +1,17 @@
-# distance_from_new = 0
-# new_sent_id = CP430-1
-# sent_id = pt-ud-train.conllu#s2258/pt
-# orig_file_sentence = 023#58
-1	Os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	automobilistas	automobilista	NOUN	n|M|P	Gender=Masc|Number=Plur	6	dep	_	_
-3	,	,	PUNCT	punc	_	6	punct	_	_
-4	esses	esse	PRON	pron-det|<dem>|M|P	Gender=Masc|Number=Plur|PronType=Dem	6	nsubj	_	_
-5	,	,	PUNCT	punc	_	6	punct	_	_
-6	continuam	continuar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = Os automobilistas, esses, continuam à espera ...
+# forest 1
+# source CETEMPúblico n=430 sec=soc sem=92a
+# sent_id = CP430-1
+# id 2259
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	automobilistas	automobilista	NOUN	<np-def>|N|M|P|@TOP	Gender=Masc|Number=Plur	6	dep	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+4	esses	esse	PRON	<dem>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Dem	6	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+6	continuam	continuar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7-8	à	_	_	_	_	_	_	_	_
-7	a	a	ADP	prp|<sam->	AdpType=Prep	9	case	_	_
-8	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	espera	espera	NOUN	n|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-10	...	...	PUNCT	punc	_	6	punct	_	_
+7	a	a	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	espera	espera	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+10	...	...	PUNCT	PU|@PU	_	6	punct	_	_
 

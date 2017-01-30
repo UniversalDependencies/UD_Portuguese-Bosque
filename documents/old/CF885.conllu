@@ -1,110 +1,116 @@
-# distance_from_new = 0
-# new_sent_id = CF885-1
-# sent_id = pt-ud-train.conllu#s8774/pt
-# orig_file_sentence = 088#74
-1	Apesar	apesar	ADV	prp	AdpType=Prep	4	mark	_	MWE=Apesar_de|MWEPOS=ADP
-2	de	de	ADP	ADP	AdpType=Prep	1	mwe	_	_
-3	ter	ter	VERB	v-inf	VerbForm=Inf	4	aux	_	_
-4	conseguido	conseguir	VERB	v-pcp	VerbForm=Part	12	advcl	_	_
-5	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	guarda	guarda	NOUN	n|F|S	Gender=Fem|Number=Sing	4	dobj	_	_
-7	de	de	ADP	prp	AdpType=Prep	8	case	_	_
-8	Natasha	Natasha	PROPN	prop|F|S	Gender=Fem|Number=Sing	6	nmod	_	_
-9	,	,	PUNCT	punc	_	12	punct	_	_
-10	Conceição	Conceição	PROPN	prop|F|S	Gender=Fem|Number=Sing	12	nsubj	_	_
-11	está	estar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
-12	aflita	afligir	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-13	.	.	PUNCT	punc	_	12	punct	_	_
+# text = Apesar de ter conseguido a guarda de Natasha, Conceição está aflita.
+# forest 1
+# source CETENFolha n=885 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF885-1
+# id 3732
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	3	mark	_	MWE=Apesar_de|MWEPOS=ADP
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	ter	ter	VERB	<aux>|V|INF|@ICL-P<	VerbForm=Inf	12	advcl	_	_
+4	conseguido	conseguir	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	3	ccomp	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	guarda	guarda	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	_
+8	Natasha	Natasha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+10	Conceição	Conceição	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
+11	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
+12	aflita	afligir	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF885-2
-# sent_id = pt-ud-train.conllu#s8775/pt
-# orig_file_sentence = 088#75
-1	«	«	PUNCT	punc	_	2	punct	_	_
-2	Tenho	ter	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	papéis	papel	NOUN	n|M|P	Gender=Masc|Number=Plur	2	dobj	_	_
-5	,	,	PUNCT	punc	_	2	punct	_	_
-6	mas	mas	CONJ	conj-c|<co-vfin>|<co-fmc>	_	2	cc	_	_
-7	não	não	ADV	adv	_	8	neg	_	_
-8	tenho	ter	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	_	_
-9	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-10	minha	meu	DET	pron-det|<poss|1S>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs	11	det	_	_
-11	filha	filha	NOUN	n|F|S	Gender=Fem|Number=Sing	8	dobj	_	_
-12	.	.	PUNCT	punc	_	2	punct	_	_
+# text = «Tenho os papéis, mas não tenho a minha filha.
+# forest 1
+# source CETENFolha n=885 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF885-2
+# id 3733
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+2	Tenho	ter	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	papéis	papel	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+6	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	8	cc	_	_
+7	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
+8	tenho	ter	VERB	<mv>|<cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	_	_
+9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	minha	meu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs	11	det	_	_
+11	filha	filha	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	SpaceAfter=No
+12	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF885-3
-# sent_id = pt-ud-train.conllu#s8776/pt
-# orig_file_sentence = 088#76
-1	Agora	agora	ADV	adv|<kc>	_	3	advmod	_	_
-2	só	só	ADV	adv	_	3	advmod	_	_
-3	deixo	deixar	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	França	França	PROPN	prop|F|S	Gender=Fem|Number=Sing	3	dobj	_	_
-6	com	com	ADP	prp	AdpType=Prep	7	case	_	_
-7	ela	ela	PRON	pron-pers|F|3S|NOM/PIV	Case=Acc,Nom|Gender=Fem|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	3	nmod	_	_
-8	.	.	PUNCT	punc	_	3	punct	_	_
+# text = Agora só deixo a França com ela.
+# forest 1
+# source CETENFolha n=885 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF885-3
+# id 3734
+1	Agora	agora	ADV	<kc>|ADV|@ADVL>	_	3	advmod	_	_
+2	só	só	ADV	ADV|@ADVL>	_	3	advmod	_	_
+3	deixo	deixar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	França	França	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
+6	com	com	ADP	PRP|@<ADVL	_	7	case	_	_
+7	ela	ela	PRON	PERS|F|3S|NOM/PIV|@P<	Case=Acc,Nom|Gender=Fem|Number=Sing|Person=3|PrepCase=Pre|PronType=Prs	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF885-4
-# sent_id = pt-ud-train.conllu#s8777/pt
-# orig_file_sentence = 088#77
-1	Esse	esse	PRON	pron-det|<dem>|M|S	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	_	_
-2	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
-3	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-4	meu	meu	DET	pron-det|<poss|1S>|M|S	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs	5	det	_	_
-5	grito	grito	NOUN	n|M|S	Gender=Masc|Number=Sing	9	ccomp	_	_
-6	»	»	PUNCT	punc	_	9	punct	_	_
-7	,	,	PUNCT	punc	_	9	punct	_	_
-8	se	se	PRON	pron-pers|<refl>|F|3S|ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	9	iobj	_	_
-9	inflama	inflamar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-10	.	.	PUNCT	punc	_	9	punct	_	_
+# text = Esse é o meu grito», se inflama.
+# forest 1
+# source CETENFolha n=885 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF885-4
+# id 3735
+1	Esse	esse	PRON	<dem>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	_	_
+2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+4	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes|PronType=Prs	5	det	_	_
+5	grito	grito	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	9	ccomp	_	SpaceAfter=No
+6	»	»	PUNCT	PU|@PU	_	9	punct	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	9	punct	_	_
+8	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	9	iobj	_	_
+9	inflama	inflamar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF885-5
-# sent_id = pt-ud-train.conllu#s8778/pt
-# orig_file_sentence = 088#78
-1	Segundo	segundo	ADP	prp|<rel>|<prp>	AdpType=Prep|PronType=Rel	2	case	_	_
-2	Conceição	Conceição	PROPN	prop|F|S	Gender=Fem|Number=Sing	5	nmod	_	_
-3	,	,	PUNCT	punc	_	5	punct	_	_
-4	tem	ter	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-5	existido	existir	VERB	v-pcp	VerbForm=Part	0	root	_	_
-6	certa	certo	DET	pron-det|<quant>|F|S	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	7	det	_	_
-7	indiferença	indiferença	NOUN	n|F|S	Gender=Fem|Number=Sing	5	nsubj	_	_
+# text = Segundo Conceição, tem existido certa indiferença da polícia local em relação ao caso.
+# forest 1
+# source CETENFolha n=885 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF885-5
+# id 3736
+1	Segundo	segundo	ADP	PRP|@ADVL>	PronType=Rel	2	case	_	_
+2	Conceição	Conceição	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+4	tem	ter	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	existido	existir	VERB	<mv>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	4	ccomp	_	_
+6	certa	certo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	7	det	_	_
+7	indiferença	indiferença	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	4	nsubj	_	_
 8-9	da	_	_	_	_	_	_	_	_
-8	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	polícia	polícia	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nmod	_	_
-11	local	local	ADJ	adj|F|S	Gender=Fem|Number=Sing	10	amod	_	_
-12	em	em	ADP	prp|<sam->	AdpType=Prep	16	case	_	MWE=em_relação_a|MWEPOS=ADP
-13	relação	relação	NOUN	NOUN	_	12	mwe	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	polícia	polícia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
+11	local	local	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
+12	em	em	ADP	<sam->|PRP|@N<	_	16	case	_	MWE=em_relação_a|MWEPOS=ADP
+13	relação	relação	NOUN	N|@P<	_	12	fixed	_	_
 14-15	ao	_	_	_	_	_	_	_	_
-14	a	a	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	mwe	_	_
-15	o	o	DET	art|<artd>|<-sam>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	caso	caso	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-17	.	.	PUNCT	punc	_	5	punct	_	_
+14	a	a	DET	PRP|@N<	Gender=Fem|Number=Sing|PronType=Art	12	fixed	_	_
+15	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
+16	caso	caso	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF885-6
-# sent_id = pt-ud-train.conllu#s8779/pt
-# orig_file_sentence = 088#79
-1	«	«	PUNCT	punc	_	4	punct	_	_
-2	Sou	ser	VERB	v-fin|PR|1S|IND	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_
-3	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	estrangeira	estrangeira	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
+# text = «Sou uma estrangeira na França e você sabe como são as coisas aqui.»
+# forest 1
+# source CETENFolha n=885 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF885-6
+# id 3737
+1	«	«	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
+2	Sou	ser	AUX	<first-cjt>|<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	estrangeira	estrangeira	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 5-6	na	_	_	_	_	_	_	_	_
-5	em	em	ADP	prp|<sam->	AdpType=Prep	7	case	_	_
-6	a	o	DET	art|<-sam>|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	França	França	PROPN	prop|F|S	Gender=Fem|Number=Sing	4	nmod	_	_
-8	e	e	CONJ	conj-c|<co-vfin>|<co-fmc>	_	4	cc	_	_
-9	você	você	PRON	pron-pers|M/F|3S|NOM	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
-10	sabe	saber	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
-11	como	como	ADV	adv|<interr>	PronType=Int	12	advmod	_	_
-12	são	ser	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
-13	as	o	DET	art|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
-14	coisas	coisa	NOUN	n|F|P	Gender=Fem|Number=Plur	12	nsubj	_	_
-15	aqui	aqui	ADV	adv	_	12	advmod	_	_
-16	.	.	PUNCT	punc	_	4	punct	_	_
-17	»	»	PUNCT	punc	_	4	punct	_	_
+5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
+6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	França	França	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
+8	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	_
+9	você	você	PRON	PERS|M/F|3S|NOM|@SUBJ>	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	sabe	saber	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+11	como	como	ADV	<interr>|ADV|@ADVL>	PronType=Int	12	advmod	_	_
+12	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
+13	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
+14	coisas	coisa	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	12	nsubj	_	_
+15	aqui	aqui	ADV	ADV|@<ADVL	_	12	advmod	_	SpaceAfter=No
+16	.	.	PUNCT	PU|@PU	_	4	punct	_	SpaceAfter=No
+17	»	»	PUNCT	PU|@PU	_	4	punct	_	_
 

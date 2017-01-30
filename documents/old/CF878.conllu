@@ -1,249 +1,256 @@
-# distance_from_new = 1
-# new_sent_id = CF878-1
-# sent_id = pt-ud-train.conllu#s8746/pt
-# orig_file_sentence = 088#46
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-2	absurda	absurdo	ADJ	adj|F|S	Gender=Fem|Number=Sing	3	amod	_	_
-3	dotação	dotação	NOUN	n|F|S	Gender=Fem|Number=Sing	24	nsubjpass	_	_
-4	feita	fazer	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	_	_
-5	a	a	ADP	prp	AdpType=Prep	7	case	_	_
-6	dois	dois	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	7	nummod	_	_
-7	municípios	município	NOUN	n|M|P	Gender=Masc|Number=Plur	4	nmod	_	_
-8	que	que	PRON	pron-indp|<rel>|M|P	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
-9	agora	agora	ADV	adv|<kc>	_	12	advmod	_	_
-10	passam	passar	VERB	v-fin|PR|3P|IND	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
-11	a	a	ADP	prp	AdpType=Prep	12	mark	_	_
-12	ter	ter	VERB	v-inf	VerbForm=Inf	10	xcomp	_	_
-13	50	50	NUM	num|<card>|M|P	Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	_
-14	$%	%	SYM	n|M|P	Gender=Masc|Number=Plur	12	dobj	_	_
+# text = A absurda dotação feita a dois municípios que agora passam a ter 50 $% das verbas totais de seus Estados é assim explicada por Beni Veras:
+# forest 1
+# source CETENFolha n=878 cad=Brasil sec=pol sem=94b
+# sent_id = CF878-1
+# id 3704
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	absurda	absurdo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
+3	dotação	dotação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
+4	feita	fazer	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	_	_
+5	a	a	ADP	PRP|@<ADVL	_	7	case	_	_
+6	dois	dois	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	7	nummod	_	_
+7	municípios	município	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	_
+8	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
+9	agora	agora	ADV	<kc>|ADV|@ADVL>	_	12	advmod	_	_
+10	passam	passar	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
+11	a	a	ADP	PRP|@PRT-AUX<	_	12	mark	_	_
+12	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
+13	50	50	NUM	<card>|NUM|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	_
+14	$%	%	SYM	n|M|P	Gender=Masc|Number=Plur	12	obj	_	_
 15-16	das	_	_	_	_	_	_	_	_
-15	de	de	ADP	prp|<sam->	AdpType=Prep	17	case	_	_
-16	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
-17	verbas	verba	NOUN	n|F|P	Gender=Fem|Number=Plur	14	nmod	_	_
-18	totais	total	ADJ	adj|F|P	Gender=Fem|Number=Plur	17	amod	_	_
-19	de	de	ADP	prp	AdpType=Prep	21	case	_	_
-20	seus	seu	DET	pron-det|<poss|3S>|M|P	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	21	det	_	_
-21	Estados	estado	NOUN	n|<prop>|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-22	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	auxpass	_	_
-23	assim	assim	ADV	adv|<kc>	_	24	advmod	_	_
-24	explicada	explicar	VERB	v-pcp|F|S	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
-25	por	por	ADP	prp	AdpType=Prep	26	case	_	_
-26	Beni	Beni	PROPN	prop|M|S	_	24	dobj	_	MWE=Beni_Veras|MWEPOS=PROPN
-27	Veras	Veras	PROPN	PROPN	_	26	name	_	_
-28	:	:	PUNCT	punc	_	24	punct	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
+16	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
+17	verbas	verba	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	14	nmod	_	_
+18	totais	total	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	17	amod	_	_
+19	de	de	ADP	PRP|@N<	_	21	case	_	_
+20	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs	21	det	_	_
+21	Estados	estado	NOUN	<prop>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
+22	é	ser	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+23	assim	assim	ADV	<kc>|ADV|@ADVL>	_	24	advmod	_	_
+24	explicada	explicar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	22	ccomp	_	_
+25	por	por	ADP	PRP|@PASS	_	26	case	_	_
+26	Beni	Beni	PROPN	_	_	24	obj	_	MWE=Beni_Veras|MWEPOS=PROPN
+27	Veras	Veras	PROPN	_	_	26	flat	_	SpaceAfter=No
+28	:	:	PUNCT	PU|@PU	_	22	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF878-2
-# sent_id = pt-ud-train.conllu#s8747/pt
-# orig_file_sentence = 088#47
-1	«	«	PUNCT	punc	_	17	punct	_	_
-2	Sobral	Sobral	PROPN	prop|M|S	Gender=Masc|Number=Sing	17	nsubj	_	_
-3	,	,	PUNCT	punc	_	17	punct	_	_
-4	embora	embora	SCONJ	conj-s	_	6	mark	_	_
-5	seja	ser	VERB	v-fin|PR|3S|SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
-6	uma	uma	NUM	num|<card>|F|S	Gender=Fem|Number=Sing|NumType=Card	17	advcl	_	_
+# text = «Sobral, embora seja uma das principais cidades do Ceará, ainda não dispõe dum sistema adequado de esgotos.
+# forest 1
+# source CETENFolha n=878 cad=Brasil sec=pol sem=94b
+# sent_id = CF878-2
+# id 3705
+1	«	«	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+2	Sobral	Sobral	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+4	embora	embora	SCONJ	KS|@SUB	_	6	mark	_	_
+5	seja	ser	AUX	<mv>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+6	uma	uma	NUM	<card>|NUM|F|S|@<SC	Gender=Fem|Number=Sing|NumType=Card	17	advcl	_	_
 7-8	das	_	_	_	_	_	_	_	_
-7	de	de	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-8	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
-9	principais	principal	ADJ	adj|<SUP>|F|P	Degree=Sup|Gender=Fem|Number=Plur	10	amod	_	_
-10	cidades	cidade	NOUN	n|F|P	Gender=Fem|Number=Plur	6	nmod	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+8	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+9	principais	principal	ADJ	<SUP>|ADJ|F|P|@>N	Degree=Sup|Gender=Fem|Number=Plur	10	amod	_	_
+10	cidades	cidade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	6	nmod	_	_
 11-12	do	_	_	_	_	_	_	_	_
-11	de	de	ADP	prp|<sam->	AdpType=Prep	13	case	_	_
-12	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	Ceará	Ceará	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-14	,	,	PUNCT	punc	_	17	punct	_	_
-15	ainda	ainda	ADV	adv	_	16	advmod	_	_
-16	não	não	ADV	adv	_	17	neg	_	_
-17	dispõe	dispor	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	Ceará	Ceará	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+15	ainda	ainda	ADV	ADV|@>A	_	16	advmod	_	_
+16	não	não	ADV	_	Polarity=Neg	17	advmod	_	_
+17	dispõe	dispor	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 18-19	dum	_	_	_	_	_	_	_	_
-18	de	de	ADP	prp	AdpType=Prep	20	case	_	_
-19	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	sistema	sistema	NOUN	n|M|S	Gender=Masc|Number=Sing	17	dobj	_	_
-21	adequado	adequar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	20	acl	_	_
-22	de	de	ADP	prp	AdpType=Prep	23	case	_	_
-23	esgotos	esgoto	NOUN	n|M|P	Gender=Masc|Number=Plur	20	nmod	_	_
-24	.	.	PUNCT	punc	_	17	punct	_	_
+18	de	de	ADP	PRP|@<PIV	_	20	case	_	_
+19	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
+20	sistema	sistema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obj	_	_
+21	adequado	adequar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	20	acl	_	_
+22	de	de	ADP	PRP|@N<	_	23	case	_	_
+23	esgotos	esgoto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	SpaceAfter=No
+24	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF878-3
-# sent_id = pt-ud-train.conllu#s8748/pt
-# orig_file_sentence = 088#48
-1	O	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	projeto	projeto	NOUN	n|M|S	Gender=Masc|Number=Sing	17	nsubj	_	_
-3	de	de	ADP	prp	AdpType=Prep	4	case	_	_
-4	canalização	canalização	NOUN	n|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
+# text = O projeto de canalização dum córrego no município de Contagem (...) é indispensável para os moradores porque, durante o período de chuvas, o rio transborda e alaga alguns bairros de Contagem».
+# forest 1
+# source CETENFolha n=878 cad=Brasil sec=pol sem=94b
+# sent_id = CF878-3
+# id 3706
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	projeto	projeto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	case	_	_
+4	canalização	canalização	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 5-6	dum	_	_	_	_	_	_	_	_
-5	de	de	ADP	prp	AdpType=Prep	7	case	_	_
-6	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	córrego	córrego	NOUN	n|M|S	Gender=Masc|Number=Sing	4	nmod	_	_
+5	de	de	ADP	PRP|@N<	_	7	case	_	_
+6	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	córrego	córrego	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 8-9	no	_	_	_	_	_	_	_	_
-8	em	em	ADP	prp|<sam->	AdpType=Prep	10	case	_	_
-9	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	município	município	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
-11	de	de	ADP	prp	AdpType=Prep	12	case	_	_
-12	Contagem	Contagem	PROPN	prop|M|S	Gender=Masc|Number=Sing	10	nmod	_	_
-13	(	(	PUNCT	punc	_	17	punct	_	_
-14	...	...	PUNCT	punc	_	17	punct	_	_
-15	)	)	PUNCT	punc	_	17	punct	_	_
-16	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
-17	indispensável	indispensável	ADJ	adj|M|S	Gender=Masc|Number=Sing	0	root	_	_
-18	para	para	ADP	prp	AdpType=Prep	20	case	_	_
-19	os	o	DET	art|<artd>|M|P	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
-20	moradores	morador	NOUN	n|M|P	Gender=Masc|Number=Plur	17	nmod	_	_
-21	porque	porque	SCONJ	conj-s	_	31	mark	_	_
-22	,	,	PUNCT	punc	_	31	punct	_	_
-23	durante	durante	ADP	prp	AdpType=Prep	25	case	_	_
-24	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	período	período	NOUN	n|M|S	Gender=Masc|Number=Sing	31	nmod	_	_
-26	de	de	ADP	prp	AdpType=Prep	27	case	_	_
-27	chuvas	chuva	NOUN	n|F|P	Gender=Fem|Number=Plur	25	nmod	_	_
-28	,	,	PUNCT	punc	_	31	punct	_	_
-29	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	rio	rio	NOUN	n|M|S	Gender=Masc|Number=Sing	31	nsubj	_	_
-31	transborda	transbordar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	advcl	_	_
-32	e	e	CONJ	conj-c	_	31	cc	_	_
-33	alaga	alagar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	conj	_	_
-34	alguns	algum	DET	pron-det|<quant>|M|P	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	35	det	_	_
-35	bairros	bairro	NOUN	n|M|P	Gender=Masc|Number=Plur	33	dobj	_	_
-36	de	de	ADP	prp	AdpType=Prep	37	case	_	_
-37	Contagem	Contagem	PROPN	prop|M|S	Gender=Masc|Number=Sing	35	nmod	_	_
-38	»	»	PUNCT	punc	_	17	punct	_	_
-39	.	.	PUNCT	punc	_	17	punct	_	_
+8	em	em	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	município	município	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
+11	de	de	ADP	PRP|@N<	_	12	case	_	_
+12	Contagem	Contagem	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
+13	(	(	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+14	...	...	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+15	)	)	PUNCT	PU|@PU	_	17	punct	_	_
+16	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
+17	indispensável	indispensável	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+18	para	para	ADP	PRP|@A<	_	20	case	_	_
+19	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
+20	moradores	morador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obl	_	_
+21	porque	porque	SCONJ	KS|@SUB	_	31	mark	_	SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	31	punct	_	_
+23	durante	durante	ADP	PRP|@ADVL>	_	25	case	_	_
+24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+25	período	período	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	31	obl	_	_
+26	de	de	ADP	PRP|@N<	_	27	case	_	_
+27	chuvas	chuva	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	25	nmod	_	SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	31	punct	_	_
+29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
+30	rio	rio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	31	nsubj	_	_
+31	transborda	transbordar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	advcl	_	_
+32	e	e	CCONJ	<co-advl>|KC|@CO	_	33	cc	_	_
+33	alaga	alagar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	conj	_	_
+34	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|NumType=Card|PronType=Ind,Neg,Tot	35	det	_	_
+35	bairros	bairro	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	33	obj	_	_
+36	de	de	ADP	PRP|@N<	_	37	case	_	_
+37	Contagem	Contagem	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	SpaceAfter=No
+38	»	»	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+39	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF878-4
-# sent_id = pt-ud-train.conllu#s8749/pt
-# orig_file_sentence = 088#49
-1	Nenhum	nenhum	DET	pron-det|<quant>|M|S	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	2	det	_	_
-2	município	município	NOUN	n|M|S	Gender=Masc|Number=Sing	11	nsubj	_	_
-3	brasileiro	brasileiro	ADJ	adj|M|S	Gender=Masc|Number=Sing	2	amod	_	_
-4	,	,	PUNCT	punc	_	2	punct	_	_
-5	nem	nem	NOUN	adv	_	7	advmod	_	MWE=nem_mesmo|MWEPOS=ADV
-6	mesmo	mesmo	ADJ	ADJ	_	5	mwe	_	_
-7	São	São	PROPN	prop|M|S	_	2	nmod	_	MWE=São_Paulo|MWEPOS=PROPN
-8	Paulo	Paulo	PROPN	PROPN	_	7	name	_	_
-9	,	,	PUNCT	punc	_	2	punct	_	_
-10	«	«	PUNCT	punc	_	11	punct	_	_
-11	dispõe	dispor	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+# text = Nenhum município brasileiro, nem mesmo São Paulo, «dispõe dum sistema adequado de esgotos».
+# forest 1
+# source CETENFolha n=878 cad=Brasil sec=pol sem=94b
+# sent_id = CF878-4
+# id 3707
+1	Nenhum	nenhum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|NumType=Card|PronType=Ind,Neg,Tot	2	det	_	_
+2	município	município	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
+3	brasileiro	brasileiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+5	nem	nem	NOUN	PRP|@>N	_	7	advmod	_	MWE=nem_mesmo|MWEPOS=ADV
+6	mesmo	mesmo	ADJ	N|M|S|@P<	_	5	fixed	_	_
+7	São	São	PROPN	_	_	2	nmod	_	MWE=São_Paulo|MWEPOS=PROPN
+8	Paulo	Paulo	PROPN	_	_	7	flat	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+10	«	«	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
+11	dispõe	dispor	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 12-13	dum	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp	AdpType=Prep	14	case	_	_
-13	um	um	DET	art|<arti>|M|S	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	sistema	sistema	NOUN	n|M|S	Gender=Masc|Number=Sing	11	dobj	_	_
-15	adequado	adequar	VERB	v-pcp|M|S	Gender=Masc|Number=Sing|VerbForm=Part	14	acl	_	_
-16	de	de	ADP	prp	AdpType=Prep	17	case	_	_
-17	esgotos	esgoto	NOUN	n|M|P	Gender=Masc|Number=Plur	14	nmod	_	_
-18	»	»	PUNCT	punc	_	11	punct	_	_
-19	.	.	PUNCT	punc	_	11	punct	_	_
+12	de	de	ADP	PRP|@<PIV	_	14	case	_	_
+13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	sistema	sistema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obj	_	_
+15	adequado	adequar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	14	acl	_	_
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	esgotos	esgoto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No
+18	»	»	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
+19	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
-# distance_from_new = 2
-# new_sent_id = CF878-5
-# sent_id = pt-ud-train.conllu#s8750/pt
-# orig_file_sentence = 088#50
-1	Enchentes	enchente	NOUN	n|F|P	Gender=Fem|Number=Plur	2	nsubj	_	_
+# text = Enchentes dão-se pelo país inteiro.
+# forest 1
+# source CETENFolha n=878 cad=Brasil sec=pol sem=94b
+# sent_id = CF878-5
+# id 3708
+1	Enchentes	enchente	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	2	nsubj	_	_
 2-3	dão-se	_	_	_	_	_	_	_	_
 2	dão	dar	VERB	v-fin|<hyfen>|PR|3P|IND	Hyph=Yes|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	-se	se	PRON	pron-pers|<refl>|F|3P|ACC	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	2	dobj	_	_
+3	-se	se	PRON	pron-pers|<refl>|F|3P|ACC	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs|Reflex=Yes	2	obj	_	_
 4-5	pelo	_	_	_	_	_	_	_	_
-4	por	por	ADP	prp|<sam->	AdpType=Prep	6	case	_	_
-5	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	país	país	NOUN	n|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-7	inteiro	inteiro	ADJ	adj|M|S	Gender=Masc|Number=Sing	6	amod	_	_
-8	.	.	PUNCT	punc	_	2	punct	_	_
+4	por	por	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
+7	inteiro	inteiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF878-6
-# sent_id = pt-ud-train.conllu#s8751/pt
-# orig_file_sentence = 088#51
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	escolha	escolha	NOUN	n|F|S	Gender=Fem|Number=Sing	31	nsubj	_	_
-3	tão	tão	ADV	adv|<dem>|<quant>	PronType=Dem	4	advmod	_	_
-4	particular	particular	ADJ	adj|F|S	Gender=Fem|Number=Sing	2	amod	_	_
-5	de	de	ADP	prp	AdpType=Prep	6	case	_	_
-6	Sobral	Sobral	PROPN	prop|M|S	Gender=Masc|Number=Sing	2	nmod	_	_
-7	,	,	PUNCT	punc	_	6	punct	_	_
-8	que	que	PRON	pron-indp|<rel>|M|S	Gender=Masc|Number=Sing|PronType=Rel	25	nsubj	_	_
-9	por	por	ADP	prp	AdpType=Prep	12	case	_	_
-10	«	«	PUNCT	punc	_	12	punct	_	_
-11	ser	ser	VERB	v-inf	VerbForm=Inf	12	cop	_	_
-12	uma	uma	NUM	num|<card>|F|S	Gender=Fem|Number=Sing|NumType=Card	25	advcl	_	_
+# text = A escolha tão particular de Sobral, que por «ser uma das principais cidades do Ceará» é também uma grande concentração eleitoral do Estado, coincide com sua escolha para a ação de campanha que lá fez o candidato Fernando Henrique no fim-de-semana.
+# forest 1
+# source CETENFolha n=878 cad=Brasil sec=pol sem=94b
+# sent_id = CF878-6
+# id 3709
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	escolha	escolha	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	31	nsubj	_	_
+3	tão	tão	ADV	<dem>|<quant>|ADV|@>A	PronType=Dem	4	advmod	_	_
+4	particular	particular	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	_
+6	Sobral	Sobral	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+8	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	25	nsubj	_	_
+9	por	por	ADP	PRP|@ADVL>	_	12	case	_	_
+10	«	«	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
+11	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	cop	_	_
+12	uma	uma	NUM	<card>|NUM|F|S|@<SC	Gender=Fem|Number=Sing|NumType=Card	25	advcl	_	_
 13-14	das	_	_	_	_	_	_	_	_
-13	de	de	ADP	prp|<sam->	AdpType=Prep	16	case	_	_
-14	as	o	DET	art|<-sam>|<artd>|F|P	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
-15	principais	principal	ADJ	adj|<SUP>|F|P	Degree=Sup|Gender=Fem|Number=Plur	16	amod	_	_
-16	cidades	cidade	NOUN	n|F|P	Gender=Fem|Number=Plur	12	nmod	_	_
+13	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
+14	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
+15	principais	principal	ADJ	<SUP>|ADJ|F|P|@>N	Degree=Sup|Gender=Fem|Number=Plur	16	amod	_	_
+16	cidades	cidade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
 17-18	do	_	_	_	_	_	_	_	_
-17	de	de	ADP	prp|<sam->	AdpType=Prep	19	case	_	_
-18	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	Ceará	Ceará	PROPN	prop|M|S	Gender=Masc|Number=Sing	16	nmod	_	_
-20	»	»	PUNCT	punc	_	12	punct	_	_
-21	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_
-22	também	também	ADV	adv	_	25	advmod	_	_
-23	uma	um	DET	art|<arti>|F|S	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-24	grande	grande	ADJ	adj|F|S	Gender=Fem|Number=Sing	25	amod	_	_
-25	concentração	concentração	NOUN	n|F|S	Gender=Fem|Number=Sing	6	acl	_	_
-26	eleitoral	eleitoral	ADJ	adj|F|S	Gender=Fem|Number=Sing	25	amod	_	_
+17	de	de	ADP	<sam->|PRP|@N<	_	19	case	_	_
+18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	Ceará	Ceará	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	SpaceAfter=No
+20	»	»	PUNCT	PU|@PU	_	12	punct	_	_
+21	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	_
+22	também	também	ADV	ADV|@<ADVL	_	25	advmod	_	_
+23	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+24	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	25	amod	_	_
+25	concentração	concentração	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	6	acl	_	_
+26	eleitoral	eleitoral	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	25	amod	_	_
 27-28	do	_	_	_	_	_	_	_	_
-27	de	de	ADP	prp|<sam->	AdpType=Prep	29	case	_	_
-28	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	Estado	estado	NOUN	n|<prop>|M|S	Gender=Masc|Number=Sing	25	nmod	_	_
-30	,	,	PUNCT	punc	_	6	punct	_	_
-31	coincide	coincidir	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-32	com	com	ADP	prp	AdpType=Prep	34	case	_	_
-33	sua	seu	DET	pron-det|<poss|3S>|<si>|F|S	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	34	det	_	_
-34	escolha	escolha	NOUN	n|F|S	Gender=Fem|Number=Sing	31	dobj	_	_
-35	para	para	ADP	prp	AdpType=Prep	37	case	_	_
-36	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
-37	ação	ação	NOUN	n|F|S	Gender=Fem|Number=Sing	34	nmod	_	_
-38	de	de	ADP	prp	AdpType=Prep	39	case	_	_
-39	campanha	campanha	NOUN	n|F|S	Gender=Fem|Number=Sing	37	nmod	_	_
-40	que	que	PRON	pron-indp|<rel>|F|S	Gender=Fem|Number=Sing|PronType=Rel	42	nsubj	_	_
-41	lá	lá	ADV	adv	_	42	advmod	_	_
-42	fez	fazer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	acl	_	_
-43	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
-44	candidato	candidato	NOUN	n|M|S	Gender=Masc|Number=Sing	42	dobj	_	_
-45	Fernando	Fernando	PROPN	prop|M|S	_	44	nmod	_	MWE=Fernando_Henrique|MWEPOS=PROPN
-46	Henrique	Henrique	PROPN	PROPN	_	45	name	_	_
+27	de	de	ADP	PRP|@N<ARG	_	29	case	_	_
+28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+31	coincide	coincidir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+32	com	com	ADP	PRP|@<PIV	_	34	case	_	_
+33	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes|PronType=Prs|Reflex=Yes	34	det	_	_
+34	escolha	escolha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	31	obj	_	_
+35	para	para	ADP	PRP|@N<	_	37	case	_	_
+36	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
+37	ação	ação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	34	nmod	_	_
+38	de	de	ADP	PRP|@N<ARG	_	39	case	_	_
+39	campanha	campanha	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	37	nmod	_	_
+40	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	42	nsubj	_	_
+41	lá	lá	ADV	ADV|@ADVL>	_	42	advmod	_	_
+42	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	acl	_	_
+43	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
+44	candidato	candidato	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	42	obj	_	_
+45	Fernando	Fernando	PROPN	_	_	44	nmod	_	MWE=Fernando_Henrique|MWEPOS=PROPN
+46	Henrique	Henrique	PROPN	_	_	45	flat	_	_
 47-48	no	_	_	_	_	_	_	_	_
-47	em	em	ADP	prp|<sam->	AdpType=Prep	49	case	_	_
-48	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_
-49	fim-de-semana	fim-de-semana	NOUN	n|M|S	Gender=Masc|Number=Sing	42	nmod	_	_
-50	.	.	PUNCT	punc	_	31	punct	_	_
+47	em	em	ADP	<sam->|PRP|@<ADVL	_	49	case	_	_
+48	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_
+49	fim-de-semana	fim-de-semana	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	42	obl	_	SpaceAfter=No
+50	.	.	PUNCT	PU|@PU	_	31	punct	_	_
 
-# distance_from_new = 0
-# new_sent_id = CF878-7
-# sent_id = pt-ud-train.conllu#s8752/pt
-# orig_file_sentence = 088#52
-1	A	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	mineira	mineiro	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nsubj	_	_
-3	Contagem	Contagem	PROPN	prop|F|S	Gender=Fem|Number=Sing	2	nmod	_	_
-4	é	ser	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
-5	outra	outro	DET	pron-det|<diff>|<KOMP>|F|S	Degree=Cmp|Gender=Fem|Number=Sing	7	det	_	_
-6	grande	grande	ADJ	adj|F|S	Gender=Fem|Number=Sing	7	amod	_	_
-7	concentração	concentração	NOUN	n|F|S	Gender=Fem|Number=Sing	0	root	_	_
-8	eleitoral	eleitoral	ADJ	adj|F|S	Gender=Fem|Number=Sing	7	amod	_	_
-9	,	,	PUNCT	punc	_	7	punct	_	_
-10	com	com	ADP	prp	AdpType=Prep	11	case	_	_
-11	prefeito	prefeito	NOUN	n|M|S	Gender=Masc|Number=Sing	7	nmod	_	_
+# text = A mineira Contagem é outra grande concentração eleitoral, com prefeito do PSDB e onde o partido, já como propaganda, fez a convenção de escolha de Fernando Henrique.
+# forest 1
+# source CETENFolha n=878 cad=Brasil sec=pol sem=94b
+# sent_id = CF878-7
+# id 3710
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	mineira	mineiro	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
+3	Contagem	Contagem	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	2	nmod	_	_
+4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+5	outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Degree=Cmp|Gender=Fem|Number=Sing	7	det	_	_
+6	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	7	amod	_	_
+7	concentração	concentração	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
+8	eleitoral	eleitoral	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	SpaceAfter=No
+9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+10	com	com	ADP	<first-cjt>|PRP|@N<PRED	_	11	case	_	_
+11	prefeito	prefeito	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 12-13	do	_	_	_	_	_	_	_	_
-12	de	de	ADP	prp|<sam->	AdpType=Prep	14	case	_	_
-13	o	o	DET	art|<-sam>|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	PSDB	PSDB	PROPN	prop|M|S	Gender=Masc|Number=Sing	11	nmod	_	_
-15	e	e	CONJ	conj-c|<co-pred>	_	11	cc	_	_
-16	onde	onde	ADV	adv|<rel>	PronType=Rel	24	advmod	_	_
-17	o	o	DET	art|<artd>|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	partido	partido	NOUN	n|M|S	Gender=Masc|Number=Sing	24	nsubj	_	_
-19	,	,	PUNCT	punc	_	24	punct	_	_
-20	já	já	ADV	adv	_	24	advmod	_	_
-21	como	como	ADV	adv|<rel>	PronType=Rel	22	cop	_	_
-22	propaganda	propaganda	NOUN	n|F|S	Gender=Fem|Number=Sing	24	advmod	_	_
-23	,	,	PUNCT	punc	_	24	punct	_	_
-24	fez	fazer	VERB	v-fin|PS|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
-25	a	o	DET	art|<artd>|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	convenção	convenção	NOUN	n|F|S	Gender=Fem|Number=Sing	24	dobj	_	_
-27	de	de	ADP	prp	AdpType=Prep	28	case	_	_
-28	escolha	escolha	NOUN	n|F|S	Gender=Fem|Number=Sing	26	nmod	_	_
-29	de	de	ADP	prp	AdpType=Prep	30	case	_	_
-30	Fernando	Fernando	PROPN	prop|M|S	_	28	nmod	_	MWE=Fernando_Henrique|MWEPOS=PROPN
-31	Henrique	Henrique	PROPN	PROPN	_	30	name	_	_
-32	.	.	PUNCT	punc	_	7	punct	_	_
+12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
+13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	PSDB	PSDB	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
+15	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	24	cc	_	_
+16	onde	onde	ADV	<rel>|ADV|@ADVL>	PronType=Rel	24	advmod	_	_
+17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	partido	partido	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+20	já	já	ADV	ADV|@ADVL>	_	24	advmod	_	_
+21	como	como	ADV	<prd>|PRP|@ADVL>	PronType=Rel	22	cop	_	_
+22	propaganda	propaganda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	24	advmod	_	SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
+24	fez	fazer	VERB	<cjt>|<mv>|V|PS|3S|IND|@N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
+25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	convenção	convenção	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
+27	de	de	ADP	PRP|@N<	_	28	case	_	_
+28	escolha	escolha	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	_
+29	de	de	ADP	PRP|@N<	_	30	case	_	_
+30	Fernando	Fernando	PROPN	_	_	28	nmod	_	MWE=Fernando_Henrique|MWEPOS=PROPN
+31	Henrique	Henrique	PROPN	_	_	30	flat	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
