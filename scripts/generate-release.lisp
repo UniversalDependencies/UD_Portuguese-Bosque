@@ -38,7 +38,7 @@ sentence ids listed in the file IDS, saving the output in OUTPUT."
           (setf (gethash (sentence-meta-value s "sent_id") sentences) s))))
     (write-conllu (mapcar (lambda (x) (gethash x sentences)) ids) output)))
 
-(release #p"documents/" #p"pt-ud-dev.txt" #p"pt_bosque-ud-dev.conllu")
-(release #p"documents/" #p"pt-ud-test.txt" #p"pt_bosque-ud-test.conllu")
-(release #p"documents/" #p"pt-ud-train.txt" #p"pt_bosque-ud-train.conllu")
+(release #p"documents/" #p"pt-ud-dev.txt" #p"pt-ud-dev.conllu")
+(release #p"documents/" #p"pt-ud-test.txt" #p"pt-ud-test.conllu")
+(release #p"documents/" #p"pt-ud-train.txt" #p"pt-ud-train.conllu")
 
