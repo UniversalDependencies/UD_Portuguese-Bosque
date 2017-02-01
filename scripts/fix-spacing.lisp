@@ -1,3 +1,8 @@
+;; the idea: is there is a token ending with -, like faze- we take it
+;; and the next token and search in the text.  If we find a match,
+;; then we need a spaceafter=no after the first token.  Example:
+;; faze-lo.  note that this won't work after we change the way we
+;; represent these types of tokens (ie., without hyphens).
 (ql:quickload :cl-conllu)
 
 (in-package :cl-conllu)
