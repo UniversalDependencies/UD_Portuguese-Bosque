@@ -12,14 +12,20 @@
 
 (defparameter *mt* nil)
 
+(defun clean1 (text)
+  (remove-if-not #'alpha-char-p text))
+
+(defun clean2 (text)
+  (remove #\space text))
+
 ;; more flexible, ignore cases and space differences
 (defun match/flex (sentences stream)
   (dolist (s sentences)
     (let* ((sid (sentence-meta-value s "sent_id"))
            (stext (sentence->text s))
            (text (sentence-meta-value s "text")))
-      (when (not (string-equal (remove #\space stext) (remove #\space text)))
-        (format stream "[~a] ~a~%[~a] ~a~%~%" sid text sid stext))))
+      (when (not (string-equal (clean1 stext) (clean1 text)))
+        (format stream "[~a] ~a~%[~a] ~a~%~a (~a)~%~%" sid text sid stext (mismatch (clean1 stext) (clean1 text)) (subseq (clean1 text) (mismatch (clean1 stext) (clean1 text)))))))
   sentences)
 
 (defun match/strict (sentences stream)
