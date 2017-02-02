@@ -38,8 +38,6 @@
 # source = CETENFolha n=333 cad=Brasil sec=pol sem=94b &L
 # sent_id = CF333-2
 # id = 1379
-# d2d = punct(Rio,,) -> punct(Paraná,,)  #106
-# d2d = cc(Rio,e) -> cc(Ceará,e)  #106
 1	São	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	peemedebistas	peemedebista	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -47,26 +45,26 @@
 5-6	no	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
 6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=Rio_Grande|MWEPOS=PROPN
+7	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	ChangedBy=Issue119|MWE=Rio_Grande|MWEPOS=PROPN
 8	Grande	Grande	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9-10	do	_	_	_	_	_	_	_	_
-9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
-10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Sul	Sul	PROPN	PROP|@P<	Number=Sing	7	nmod	_	_
+9	de	de	ADP	<sam->|PRP|@N<	_	7	flat:name	_	_
+10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	flat:name	_	_
+11	Sul	Sul	PROPN	PROP|@P<	Number=Sing	7	flat:name	_	_
 12	(	(	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
-13	José	José	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	ChangedBy=Issue119|MWE=José_Fogaça|MWEPOS=PROPN
+13	José	José	PROPN	_	Gender=Masc|Number=Sing	4	appos	_	ChangedBy=Issue119|MWE=José_Fogaça|MWEPOS=PROPN
 14	Fogaça	Fogaça	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 15	)	)	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	Paraná	Paraná	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	7	conj	_	_
 18	(	(	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
-19	Roberto	Roberto	PROPN	_	Gender=Masc|Number=Sing	17	appos	_	ChangedBy=Issue119|MWE=Roberto_Requião|MWEPOS=PROPN
+19	Roberto	Roberto	PROPN	_	Gender=Masc|Number=Sing	13	conj	_	ChangedBy=Issue119|MWE=Roberto_Requião|MWEPOS=PROPN
 20	Requião	Requião	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 21	)	)	PUNCT	PU|@PU	_	19	punct	_	_
 22	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	d2d:#106
 23	Ceará	Ceará	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	7	conj	_	_
 24	(	(	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
-25	Mauro	Mauro	PROPN	_	Gender=Masc|Number=Sing	23	appos	_	ChangedBy=Issue119|MWE=Mauro_Benevides|MWEPOS=PROPN
+25	Mauro	Mauro	PROPN	_	Gender=Masc|Number=Sing	13	conj	_	ChangedBy=Issue119|MWE=Mauro_Benevides|MWEPOS=PROPN
 26	Benevides	Benevides	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 27	)	)	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	.	.	PUNCT	PU|@PU	_	2	punct	_	_
