@@ -34,11 +34,11 @@
            (stext (sentence->text s))
            (text (sentence-meta-value s "text")))
       (when (not (string= stext text))
-        (format stream "[~a] ~a~%[~a] ~a~%~%" sid text sid stext))))
+        (format stream "[~a] ~a~%[~a] ~a~%(~a)~%~%" sid text sid stext (subseq text (mismatch stext text))))))
   sentences)
 
 (defun run ()
   (with-open-file (stream "mismatches.txt" :direction :output :if-exists :supersede)
     (dolist (fn (directory "documents/*.conllu"))
-      (match/flex (read-conllu fn) stream))))
+      (match/strict (read-conllu fn) stream))))
 
