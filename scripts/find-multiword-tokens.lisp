@@ -14,8 +14,8 @@
                   (alexandria:iota (1+ (- end start)) :start start))))
 
 (defun collect-next-element (list)
-  (loop for (x y)
-     on list collect (list x y)))
+  (loop for (x y z)
+     on list collect (list x y z)))
 
 (defparameter *mt* nil)
 
@@ -32,22 +32,26 @@
   (dolist (s sentences)
     (dolist (tks (collect-next-element (sentence-tokens s)))
       (let ((t1 (first tks))
-	    (t2 (second tks)))
-	(when (and t1 t2)
+	    (t2 (second tks))
+            (t3 (third tks)))
+	(when (and t1 t2 t3)
 	  (let ((i1 (token-id t1))
 		(i2 (token-id t2)))
 	    (dolist (mt *mt*)
+              ;; (format t "~a ~a~%" (second mt) (token-form t3))
 	      (when (and (string= (token-form t1)
 				  (first (first mt)))
 			 (string= (token-form t2)
 				  (second (first mt)))
-			 (search (second mt) (sentence-meta-value s "text"))
+			 (search (format nil "~a ~a" (second mt) (token-form t3)) (sentence-meta-value s "text"))
 			 (not (search-mtoken i1 i2 (sentence-mtokens s))))
-	       (setf (sentence-mtokens s) (append (sentence-mtokens s)
-						  (list (make-instance 'mtoken
-								       :start i1
-								       :end i2
-								       :form (second mt))))))))))))
+                (setf (sentence-mtokens s) 
+                      (append (sentence-mtokens s)
+                              (list (make-instance 'mtoken
+                                                   :start i1
+                                                   :end i2
+                                                   :form (second mt)))))))))))
+    (sort (sentence-mtokens s) #'< :key #'mtoken-start))
   sentences)
 
 (defun run ()

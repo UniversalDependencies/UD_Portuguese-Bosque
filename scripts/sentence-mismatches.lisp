@@ -34,7 +34,7 @@
            (stext (sentence->text s))
            (text (sentence-meta-value s "text")))
       (when (not (string= stext text))
-        (format stream "[~a] ~a~%[~a] ~a~%(~a)~%~%" sid text sid stext (subseq text (mismatch stext text))))))
+        (format stream "[~a] ~a~%[~a] ~a~%{~a}~%~%" sid text sid stext (subseq text (mismatch stext text))))))
   sentences)
 
 (defun run ()
