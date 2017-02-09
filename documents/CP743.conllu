@@ -45,7 +45,7 @@
 36	,	,	PUNCT	PU|@PU	_	41	punct	_	_
 37-38	dos	_	_	_	_	_	_	_	_
 37	de	de	ADP	<sam->|PRP|@ADVL>	_	39	case	_	_
-38	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur	39	det	_	MWE=os_quais
+38	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	39	det	_	MWE=os_quais
 39	quais	qual	PRON	DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	34	nmod	_	_
 40	estavam	estar	AUX	<mv>|V|IMPF|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	41	cop	_	ChangedBy=Issue167
 41	arredados	arredado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	34	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue91
@@ -62,7 +62,7 @@
 # d2d = punct(situação,,) -> punct(desconhecimento,,)  #106
 # d2d = cc(situação,e) -> cc(desconhecimento,e)  #106
 1	De	de	ADP	PRP|@>A	_	3	case	_	MWE=De_um_lado
-2	um	um	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
+2	um	um	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 5-6	pela	_	_	_	_	_	_	_	_
@@ -77,7 +77,7 @@
 13-14	do	_	_	_	_	_	_	_	_
 13	de	de	ADP	<sam->|PRP|@>A	_	15	case	_	_
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	outro	outro	PRON	<diff>|<KOMP>|<np-def>|DET|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+15	outro	outro	PRON	<diff>|<KOMP>|<np-def>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 17-18	pelo	_	_	_	_	_	_	_	_
 17	por	por	ADP	<sam->|<cjt>|PRP|@UTT	_	19	case	_	_
@@ -200,7 +200,7 @@
 4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	<sam->|PRP|@N<ARG	_	7	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-6	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	7	det	_	_
+6	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	7	det	_	_
 7	identidade	identidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 8	nunca	nunca	ADV	ADV|@ADVL>	_	10	advmod	_	_
 9	se	se	PRON	PERS|F|3S|ACC|@ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	expl	_	ChangedBy=Issue133|SUBJ_INDEF
@@ -247,7 +247,7 @@
 5	direito	direito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 6	a	a	ADP	PRP|@N<	_	7	mark	_	_
 7	escolher	escolher	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	acl	_	_
-8	o	o	PRON	_	Gender=Masc|Number=Sing	9	det	_	_
+8	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
 9	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	11	obj	_	_
 10	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	iobj	_	_
 11	interessa	interessar	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_

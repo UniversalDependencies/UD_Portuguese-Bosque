@@ -45,7 +45,7 @@
 28	ficam	ficar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	_	_
 29	baralhados	baralhado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	28	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
 30	com	com	ADP	PRP|@<ADVL	_	32	case	_	_
-31	tantos	tanto	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	32	det	_	_
+31	tantos	tanto	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	32	det	_	_
 32	produtos	produto	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	29	nmod	_	_
 33	novos	novo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	32	amod	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
@@ -73,7 +73,7 @@
 8	que	que	SCONJ	KS|@SUB	_	13	mark	_	_
 9	até	até	ADV	ADV|@>N	_	12	advmod	_	_
 10	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
-11	próprias	próprio	DET	<ident>|DET|F|P|@>N	Gender=Fem|Number=Plur	12	det	_	_
+11	próprias	próprio	DET	<ident>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Emp	12	det	_	_
 12	instituições	instituição	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	13	nsubj	_	_
 13	ficam	ficar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-KOMP<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
 14	abananadas	abananado	ADJ	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur	13	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
@@ -166,7 +166,7 @@
 34-35	da	_	_	_	_	_	_	_	_
 34	de	de	ADP	PRP|@N<ARG	_	37	case	_	_
 35	a	o	DET	<-sam>|ART|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
-36	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing	37	det	_	_
+36	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	37	det	_	_
 37	conta	conta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
 38	bancária	bancário	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	37	amod	_	ChangedBy=Issue165|SpaceAfter=No
 39	.	.	PUNCT	PU|@PU	_	8	punct	_	_
@@ -179,11 +179,11 @@
 # d2d = cc(Parecia,mas) -> cc(colocou,mas)  #106
 1	Parecia	parecer	VERB	<mv>|<first-cjt>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 2	um	um	DET	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	MWE=um_pouco
-3	pouco	pouco	DET	DET|M|S|@>A	Gender=Masc|Number=Sing	4	advmod	_	_
+3	pouco	pouco	DET	DET|M|S|@>A	Gender=Masc|Number=Sing|PronType=Ind	4	advmod	_	_
 4	volumoso	volumoso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	1	xcomp	_	_
 5	para	para	ADP	PRP|@<ADVL	_	8	case	_	_
 6	tão	tão	ADV	<dem>|ADV|@>A	_	7	advmod	_	_
-7	pouca	pouco	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	8	det	_	_
+7	pouca	pouco	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	8	det	_	_
 8	coisa	coisa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 10	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	13	cc	_	d2d:#106
@@ -199,7 +199,7 @@
 19	ir	ir	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	15	acl	_	_
 20	acompanhado	acompanhar	VERB	<mv>|V|PCP|M|S|@ICL-<PRED	Gender=Masc|Number=Sing|VerbForm=Part	19	dep	_	_
 21	de	de	ADP	PRP|@<ADVL	_	23	case	_	_
-22	algum	algum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	23	det	_	_
+22	algum	algum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	23	det	_	_
 23	folheto	folheto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	ChangedBy=Issue137
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
 25	publicidade	publicidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
@@ -262,8 +262,8 @@
 6	de	de	ADP	PRP|@N<	_	7	case	_	MWE=de_conta
 7	conta	conta	NOUN	N|@P<	_	5	nmod	_	_
 8	de	de	ADP	PRP|@N<	_	11	case	_	_
-9	outros	outro	DET	<diff>|DET|M|P|@>N	Gender=Masc|Number=Plur	11	det	_	_
-10	tantos	tanto	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	11	det	_	_
+9	outros	outro	DET	<diff>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	11	det	_	_
+10	tantos	tanto	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	11	det	_	_
 11	clientes	cliente	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
 12	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	17	nsubj	_	_
 13	a	a	ADP	PRP|@ADVL>	_	15	case	_	_
@@ -275,7 +275,7 @@
 19	facto	facto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	obj	_	_
 20	de	de	ADP	PRP|@N<ARG	_	26	mark	_	_
 21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-22	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	23	det	_	_
+22	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	23	det	_	_
 23	banco	banco	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	26	nsubj	_	_
 24	não	não	ADV	_	Polarity=Neg	26	advmod	_	_
 25	lhes	eles	PRON	PERS|M|3P|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	26	iobj	_	_
@@ -285,7 +285,7 @@
 29-30	dos	_	_	_	_	_	_	_	_
 29	de	de	ADP	PRP|@A<	_	32	case	_	_
 30	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
-31	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur	32	det	_	_
+31	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	32	det	_	_
 32	saldos	saldo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	28	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 33	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
@@ -298,7 +298,7 @@
 3	situação	situação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-6	tal	tal	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	7	det	_	_
+6	tal	tal	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	7	det	_	_
 7	cliente	cliente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 8	foi	ir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9-10	à	_	_	_	_	_	_	_	_
@@ -332,7 +332,7 @@
 6	de	de	ADP	PRP|@N<	_	7	case	_	MWE=de_conta
 7	conta	conta	NOUN	N|@P<	_	5	nmod	_	_
 8	de	de	ADP	PRP|@N<	_	11	case	_	_
-9	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	11	det	_	_
+9	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	11	det	_	_
 10	aquela	aquele	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_
 11	gente	gente	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 12	ou	ou	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
@@ -344,7 +344,7 @@
 18	estava	estar	AUX	<aux>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	aux	_	_
 19	a	a	ADP	PRP|@PRT-AUX<	_	20	nmod	_	_
 20	desenvolver	desenvolver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	acl:relcl	_	_
-21	alguma	algum	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	22	det	_	_
+21	alguma	algum	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	22	det	_	_
 22	acção	acção	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
 23	de	de	ADP	PRP|@N<ARG	_	24	case	_	_
 24	luta	luta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	_

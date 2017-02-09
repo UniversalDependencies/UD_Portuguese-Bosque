@@ -49,7 +49,7 @@
 9	(	(	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 10	em	em	ADP	PRP|@ADVL>	_	12	case	_	_
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
-12	O	O	DET	_	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue119|MWE=O_Globo|MWEPOS=PROPN
+12	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	18	nmod	_	ChangedBy=Issue119|MWE=O_Globo|MWEPOS=PROPN
 13	Globo	Globo	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 14	»	»	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
@@ -101,12 +101,12 @@
 31	anterior	anterior	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	30	amod	_	ChangedBy=Issue165|SpaceAfter=No
 32	,	,	PUNCT	PU|@PU	_	22	punct	_	_
 33	quando	quando	ADV	<rel>|ADV|@ADVL>	_	43	advmod	_	_
-34	todas	todo	PRON	<quant>|DET|F|P|@SUBJ>	Gender=Fem|Number=Plur	43	nsubj	_	_
+34	todas	todo	PRON	<quant>|DET|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Tot	43	nsubj	_	_
 35	--	--	PUNCT	PU|@PU	_	37	punct	_	_
 36	sem	sem	ADP	PRP|@N<PRED	_	37	case	_	_
 37	exceção	exceção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	34	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 38	,	,	PUNCT	PU|@PU	_	39	punct	_	_
-39	todas	todo	DET	<quant>|DET|F|P|@N<PRED	Gender=Fem|Number=Plur	34	appos	_	_
+39	todas	todo	DET	<quant>|DET|F|P|@N<PRED	Gender=Fem|Number=Plur|PronType=Tot	34	appos	_	_
 40	--	--	PUNCT	PU|@PU	_	37	punct	_	_
 41	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	42	det	_	_
 42	coberturas	cobertura	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	34	nsubj	_	_
@@ -159,7 +159,7 @@
 29	Williams	Williams	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	23	appos	_	ChangedBy=Issue165|SpaceAfter=No
 30	)	)	PUNCT	PU|@PU	_	29	punct	_	_
 31	teria	ter	VERB	<mv>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	5	ccomp	_	_
-32	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	33	det	_	_
+32	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	33	det	_	_
 33	consagração	consagração	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	31	obj	_	_
 34-35	no	_	_	_	_	_	_	_	_
 34	em	em	ADP	<sam->|PRP|@<ADVL	_	36	case	_	_
@@ -177,7 +177,7 @@
 4	Schumacher	Schumacher	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 5	acreditava	acreditar	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 6	em	em	ADP	<first-cjt>|PRP|@<PIV	_	8	case	_	_
-7	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	8	det	_	_
+7	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	8	det	_	_
 8	possibilidade	possibilidade	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 9	de	de	ADP	PRP|@N<	_	10	mark	_	_
 10	vencer	vencer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -190,7 +190,7 @@
 # d2d = cc(lugar,e) -> cc(chances,e)  #106
 1	Senna	Senna	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-3	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing	4	det	_	_
+3	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Tot	4	det	_	_
 4	mundo	mundo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 5	viu	ver	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	dep	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -202,7 +202,7 @@
 12	lugar	lugar	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
 13	e	e	CCONJ	<co-advl>|KC|@CO	_	16	cc	_	d2d:#106
 14	com	com	ADP	<cjt>|PRP|@<ADVL	_	16	case	_	_
-15	poucas	pouco	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	16	det	_	_
+15	poucas	pouco	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	16	det	_	_
 16	chances	chance	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	conj	_	_
 17	de	de	ADP	PRP|@N<ARG	_	18	mark	_	_
 18	recuperar	recuperar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	acl	_	_
@@ -439,7 +439,7 @@
 # id = 2817
 # d2d = cc(recebendo,e) -> cc(comentar,e)  #106
 # d2d = cc(recebendo,e) -> cc(checando,e)  #106
-1	Suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur	2	det	_	_
+1	Suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	2	det	_	_
 2	atribuições	atribuição	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
 3	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	criticar	criticar	VERB	<cjt>|<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	dep	_	_

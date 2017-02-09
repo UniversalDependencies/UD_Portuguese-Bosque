@@ -46,7 +46,7 @@
 10	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
 11	acontecer	acontecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	acl	_	_
 12	a	a	ADP	PRP|@<PIV	_	14	case	_	_
-13	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	14	det	_	_
+13	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	14	det	_	_
 14	mãe	mãe	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
 15	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	23	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	19	punct	_	_
@@ -83,12 +83,12 @@
 1	Uma	um	NUM	<card>|NUM|F|S|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	alegria	alegria	NOUN	<first-cjt>|<np-def>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 3	para	para	ADP	PRP|@N<	_	4	case	_	_
-4	alguns	algum	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur	2	det	_	_
+4	alguns	algum	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Ind	2	det	_	_
 5	e	e	CCONJ	<co-utt>|KC|@CO	_	7	cc	_	d2d:#106
 6	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	7	nummod	_	ChangedBy=Issue168
 7	choque	choque	NOUN	<cjt>|<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	2	conj	_	_
 8	para	para	ADP	PRP|@N<	_	9	case	_	_
-9	outros	outro	PRON	<diff>|<KOMP>|DET|M|P|@P<	Gender=Masc|Number=Plur	7	det	_	ChangedBy=Issue165|SpaceAfter=No
+9	outros	outro	PRON	<diff>|<KOMP>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Ind	7	det	_	ChangedBy=Issue165|SpaceAfter=No
 10	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = É o caso da arquitecta Rosa Maria Moreira:
@@ -184,7 +184,7 @@
 12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	cuidados	cuidado	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj:pass	_	_
 14	são	ser	AUX	<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	aux:pass	_	_
-15	todos	todo	DET	<quant>|DET|M|P|@N<PRED	Gender=Masc|Number=Plur	13	appos	_	_
+15	todos	todo	DET	<quant>|DET|M|P|@N<PRED	Gender=Masc|Number=Plur|PronType=Tot	13	appos	_	_
 16	multiplicados	multiplicar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	ccomp	_	_
 17	por	por	ADP	PRP|@<ADVL	_	18	case	_	_
 18	mil	mil	NUM	<card>|NUM|M|S|@P<	NumType=Card	16	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
@@ -202,7 +202,7 @@
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 3	caso	caso	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 4	para	para	ADP	PRP|@N<	_	5	case	_	_
-5	menos	pouco	PRON	<quant>|<KOMP>|<COMP>|DET|M/F|S/P|@P<	Gender=Unsp|Number=Unsp	3	det	_	ChangedBy=Issue165|SpaceAfter=No
+5	menos	pouco	PRON	<quant>|<KOMP>|<COMP>|DET|M/F|S/P|@P<	Gender=Unsp|Number=Unsp|PronType=Dem	3	det	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 7	pois	pois	SCONJ	KS|@SUB	_	9	mark	_	_
 8	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	ChangedBy=Issue167
@@ -292,7 +292,7 @@
 6-7	pela	_	_	_	_	_	_	_	_
 6	por	por	ADP	<sam->|PRP|@N<	_	9	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-8	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	9	det	_	_
+8	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	9	det	_	_
 9	independência	independência	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 10	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	d2d:#106
 11	competência	competência	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	_
@@ -301,7 +301,7 @@
 14-15	pela	_	_	_	_	_	_	_	_
 14	por	por	ADP	<sam->|PRP|@N<	_	17	case	_	_
 15	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-16	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	17	det	_	_
+16	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	17	det	_	_
 17	preguiça	preguiça	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
 18	e	e	CCONJ	<co-prparg>|KC|@CO	_	20	cc	_	d2d:#106
 19	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_

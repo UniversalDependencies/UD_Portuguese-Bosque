@@ -25,7 +25,7 @@
 10	autor	autor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	appos	_	_
 11	de	de	ADP	PRP|@N<	_	13	case	_	_
 12	«	«	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
-13	O	O	DET	_	Gender=Masc|Number=Sing	10	nmod	_	ChangedBy=Issue119|MWE=O_Grande_Meaulnes|MWEPOS=PROPN
+13	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	10	nmod	_	ChangedBy=Issue119|MWE=O_Grande_Meaulnes|MWEPOS=PROPN
 14	Grande	Grande	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	Meaulnes	Meaulnes	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 16	»	»	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -120,7 +120,7 @@
 2	autor	autor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
 4	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
-5	O	O	DET	_	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=O_Grande_Meaulnes|MWEPOS=PROPN
+5	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	2	nmod	_	ChangedBy=Issue119|MWE=O_Grande_Meaulnes|MWEPOS=PROPN
 6	Grande	Grande	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119
 7	Meaulnes	Meaulnes	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 8	»	»	PUNCT	PU|@PU	_	5	punct	_	_
@@ -151,7 +151,7 @@
 # d2d = punct(estatura,,) -> punct(idade,,)  #106
 # d2d = cc(estatura,e) -> cc(compleição,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-2	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
+2	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	3	det	_	_
 3	corpo	corpo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
 4	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux:pass	_	_
 5	identificado	identificar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
@@ -159,7 +159,7 @@
 7	antrometria	antrometria	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 9	sem	sem	ADP	PRP|@<ADVL	_	11	case	_	_
-10	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	11	det	_	_
+10	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	11	det	_	_
 11	margem	margem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137
 12	para	para	ADP	PRP|@N<	_	13	case	_	_
 13	dúvidas	dúvida	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -186,7 +186,7 @@
 31	esqueleto	esqueleto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	28	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 32	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-34	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing	35	det	_	_
+34	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	35	det	_	_
 35	idade	idade	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	conj	_	_
 36-37	à	_	_	_	_	_	_	_	_
 36	a	a	ADP	<sam->|PRP|@N<	_	38	case	_	_
