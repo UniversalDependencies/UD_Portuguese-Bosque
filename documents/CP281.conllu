@@ -4,7 +4,7 @@
 # id = 1508
 1	Ora	ora	ADV	<kc>|ADV|@ADVL>	_	2	advmod	_	_
 2	existem	existir	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	muitas	muito	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur	4	det	_	_
+3	muitas	muito	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	4	det	_	_
 4	funções	função	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	2	nsubj	_	_
 5	(	(	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 6	ordenamento	ordenamento	NOUN	<first-cjt>|<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	4	appos	_	_
@@ -32,8 +32,8 @@
 27	)	)	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	41	punct	_	_
 29	para	para	ADP	<cjt>|PRP|@A<	_	31	case	_	_
-30	as	o	DET	DET|F|P|@>N	Gender=Fem|Number=Plur	31	det	_	MWE=as_quais
-31	quais	qual	PRON	DET|F|P|@P<	Gender=Fem|Number=Plur	41	conj	_	_
+30	as	o	DET	DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Art	31	det	_	MWE=as_quais
+31	quais	qual	PRON	DET|F|P|@P<	Gender=Fem|Number=Plur|PronType=Rel	41	conj	_	_
 32	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
 33	municípios	município	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	36	nsubj	_	_
 34	são	ser	AUX	<first-cjt>|<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	cop	_	ChangedBy=Issue167
@@ -58,7 +58,7 @@
 3	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	14	nmod	_	_
 4	que	que	ADV	<foc>|ADV|@ADVL>	_	14	mark	_	_
 5	em	em	ADP	PRP|@ADVL>	_	8	case	_	_
-6	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	8	det	_	MWE=todos_os
+6	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	8	det	_	MWE=todos_os
 7	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	fixed	_	_
 8	países	país	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
@@ -90,7 +90,7 @@
 # d2d = punct(distrito,,) -> punct(província,,)  #106
 # d2d = cc(distrito,ora) -> cc(província,ora)  #106
 1	Nós	nós	PRON	PERS|M|1P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_
-2	próprios	próprio	DET	<ident>|DET|M|P|@N<	Gender=Masc|Number=Plur	1	det	_	ChangedBy=Issue165|SpaceAfter=No
+2	próprios	próprio	DET	<ident>|DET|M|P|@N<	Gender=Masc|Number=Plur|PronType=Emp	1	det	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 4	desde	desde	ADP	<first-cjt>|PRP|@ADVL>	_	6	case	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
@@ -211,7 +211,7 @@
 1-2	Nas	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	4	det	_	_
-3	minhas	meu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur	4	det	_	_
+3	minhas	meu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	4	det	_	_
 4	deslocações	deslocação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	ChangedBy=Issue137
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	comboio	comboio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
@@ -241,7 +241,7 @@
 29	Coimbra	Coimbra	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 31	mais	mais	ADV	<quant>|ADV|@>N	_	32	advmod	_	_
-32	própria	próprio	DET	<ident>|<np-idf>|DET|F|S|@N<PRED	Gender=Fem|Number=Sing	25	appos	_	_
+32	própria	próprio	DET	<ident>|<np-idf>|DET|F|S|@N<PRED	Gender=Fem|Number=Sing|PronType=Emp	25	appos	_	_
 33	de	de	ADP	PRP|@N<	_	35	case	_	_
 34	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	apeadeiro	apeadeiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	_

@@ -131,7 +131,7 @@
 66	%	%	SYM	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	63	obj	_	_
 67	--	--	PUNCT	PU|@PU	_	69	punct	_	_
 68	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	_	_
-69	mesmo	mesmo	DET	<diff>|<KOMP>|<np-def>|DET|M|S|@N<PRED	Gender=Masc|Number=Sing	66	appos	_	_
+69	mesmo	mesmo	ADJ	<diff>|<KOMP>|<np-def>|DET|M|S|@N<PRED	Gender=Masc|Number=Sing	66	amod	_	_
 70	que	que	SCONJ	KS|@COM	_	71	mark	_	_
 71	Os	Os	PROPN	_	Gender=Masc|Number=Plur	69	dep	_	ChangedBy=Issue119|MWE=Os_Trapalhões|MWEPOS=PROPN
 72	Trapalhões	Trapalhões	PROPN	_	Number=Sing	71	flat:name	_	ChangedBy=Issue119
@@ -226,7 +226,7 @@
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 8	fornecem	fornecer	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Gender=Fem|Number=Plur	10	det	_	_
+9	outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	10	det	_	_
 10	surpresas	surpresa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 12	de	de	ADP	PRP|@N<PRED	_	14	case	_	_
@@ -282,7 +282,7 @@
 38	de	de	ADP	<sam->|PRP|@COM	_	39	case	_	MWE=do_que
 39	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	44	fixed	_	_
 40	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	39	fixed	_	_
-41	uns	um	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	44	det	_	_
+41	uns	um	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	44	det	_	_
 42	míseros	mísero	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	44	amod	_	_
 43	3,0	3,0	NUM	<card>|NUM|M|P|@>N	NumType=Card	44	nummod	_	ChangedBy=Issue168
 44	por	por	ADP	_	Gender=Masc|Number=Sing	37	nmod	_	MWE=por_cento|MWEPOS=NOUN
@@ -299,7 +299,7 @@
 # id = 2942
 # d2d = cc(dita,e) -> cc(gabada,e)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	MWE=Por_outro_lado
-2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	det	_	_
+2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	_
 3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
@@ -316,7 +316,7 @@
 16	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	Volta	Volta	PROPN	_	Gender=Fem|Number=Sing	10	appos	_	ChangedBy=Issue119|MWE=Volta_a_Portugal|MWEPOS=PROPN
-19	a	a	DET	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
+19	a	a	DET	_	Number=Sing|PronType=Art	18	flat:name	_	ChangedBy=Issue119
 20	Portugal	Portugal	PROPN	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
 21	em	em	ADP	PRP|@N<	_	22	case	_	_
 22	Bicicleta	Bicicleta	PROPN	PROP|@P<	Number=Sing	18	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -354,7 +354,7 @@
 16	cobertura	cobertura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 18	e	e	CCONJ	<co-x>|KC|@CO	_	20	cc	_	d2d:#106
-19	outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	20	det	_	_
+19	outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	20	det	_	_
 20	nota	nota	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	conj	_	_
 21	ainda	ainda	ADV	ADV|@>A	_	22	advmod	_	_
 22	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	23	advmod	_	_
@@ -400,7 +400,7 @@
 # source = CETEMPúblico n=566 sec=clt sem=94b
 # sent_id = CP566-8
 # id = 2944
-1	Tanto	tanto	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing	2	det	_	_
+1	Tanto	tanto	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_
 2	barulho	barulho	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3	para	para	ADP	PRP|@N<	_	4	case	_	_
 4	nada	nada	PRON	<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -477,7 +477,7 @@
 6	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 8	canalizar	canalizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	0	root	_	_
-9	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	10	det	_	_
+9	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	10	det	_	_
 10	clientes	cliente	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	8	obj	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 12	atraídos	atrair	VERB	<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	10	acl	_	_
@@ -496,7 +496,7 @@
 24	também	também	ADV	ADV|@ADVL>	_	25	advmod	_	_
 25	perderam	perder	VERB	<mv>|V|PS|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	17	acl:relcl	_	_
 26	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_
-27	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur	28	det	_	_
+27	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	28	det	_	_
 28	créditos	crédito	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	25	obj	_	_
 29-30	pela	_	_	_	_	_	_	_	_
 29	por	por	ADP	<sam->|PRP|@<ADVL	_	31	case	_	_
@@ -528,7 +528,7 @@
 13	Nacional	Nacional	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 15	sem	sem	ADP	PRP|@<ADVL	_	17	case	_	_
-16	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	17	det	_	_
+16	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	17	det	_	_
 17	proposta	proposta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 18	acima	acima	ADV	<first-cjt>|ADV|@N<	_	17	advmod	_	_
 19	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	20	cc	_	d2d:#106
@@ -555,7 +555,7 @@
 # sent_id = CP566-12
 # id = 2948
 # d2d = cc(defeito,mas) -> cc(feitio,mas)  #106
-1	O	o	PRON	_	Gender=Masc|Number=Sing	2	det	_	_
+1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4-5	nos	_	_	_	_	_	_	_	_

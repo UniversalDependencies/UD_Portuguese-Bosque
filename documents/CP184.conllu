@@ -6,7 +6,7 @@
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	Era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-5	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing	6	det	_	_
+5	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	6	det	_	_
 6	ano	ano	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	1	parataxis	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	agregação	agregação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
@@ -94,7 +94,7 @@
 5-6	às	_	_	_	_	_	_	_	_
 5	a	a	ADP	PRP|@N<	_	8	case	_	_
 6	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	8	det	_	_
-7	minhas	meu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur	8	det	_	_
+7	minhas	meu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	8	det	_	_
 8	filhas	filha	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 10	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	11	nsubj	_	_
@@ -107,7 +107,7 @@
 17	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 18	tive	ter	VERB	<mv>|V|PS|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	1	ccomp	_	_
 19	muito	muito	ADV	<quant>|ADV|@>A	_	20	advmod	_	_
-20	mais	muito	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing	21	det	_	_
+20	mais	muito	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	21	det	_	_
 21	sorte	sorte	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	18	obj	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 23	apesar	apesar	ADV	ADV|@<ADVL	_	18	advmod	_	MWE=apesar_de
@@ -155,10 +155,10 @@
 1	P.	p.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
-4	suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur	5	det	_	_
+4	suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	5	det	_	_
 5	filhas	filha	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	6	nsubj	_	_
 6	compreendem	compreender	VERB	<mv>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
-7	o	o	PRON	_	Gender=Masc|Number=Sing	8	det	_	_
+7	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
 8	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	10	nsubj	_	_
 9	se	se	PRON	PERS|M/F|3S/P|ACC|@ACC>-PASS	Case=Acc|Gender=Unsp|PronType=Prs	10	expl	_	ChangedBy=Issue135
 10	passou	passar	VERB	<mv>|<se-passive>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	_	_
@@ -172,7 +172,7 @@
 # sent_id = CP184-8
 # id = 994
 1	Compreendem	compreender	VERB	<mv>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	o	o	PRON	_	Gender=Masc|Number=Sing	3	det	_	_
+2	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
 3	que	que	PRON	<interr>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Int	7	obj	_	_
 4	é	é	ADP	PRP|@ADVL>	_	5	case	_	MWE=é_que
 5	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_

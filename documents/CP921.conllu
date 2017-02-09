@@ -24,7 +24,7 @@
 4	acreditar	acreditar	VERB	<mv>|V|INF|3S|@ICL-<ACC	Number=Sing|Person=3|VerbForm=Inf	2	xcomp	_	_
 5	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
 6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
-7	nossos	nosso	PRON	<poss>|<np-def>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
+7	nossos	nosso	PRON	<poss>|<np-def>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Prs	9	nsubj	_	_
 8	eram	ser	AUX	<first-cjt>|<mv>|V|IMPF|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	cop	_	ChangedBy=Issue167
 9	filhos	filho	NOUN	<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	4	ccomp	_	_
 10-11	da	_	_	_	_	_	_	_	_
@@ -67,7 +67,7 @@
 19	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	9	cc	_	_
 20	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
 21	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
-22	nossos	nosso	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur	23	det	_	_
+22	nossos	nosso	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	23	det	_	_
 23	adversários	adversário	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	26	nsubj	_	_
 24	estavam	estar	AUX	<cjt>|<mv>|V|IMPF|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	26	cop	_	ChangedBy=Issue167
 25	sempre	sempre	ADV	ADV|@<ADVL	_	26	advmod	_	_
@@ -91,11 +91,11 @@
 9	global	global	ADJ	<n>|<np-def>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 11	com	com	ADP	PRP|@ADVL>	_	13	case	_	_
-12	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur	13	det	_	MWE=os_quais
-13	quais	qual	PRON	DET|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	_
+12	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	13	det	_	MWE=os_quais
+13	quais	qual	PRON	DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	14	nmod	_	_
 14	pretendíamos	pretender	VERB	<mv>|V|IMPF|1P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	6	acl:relcl	_	_
 15	resolver	resolver	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	14	xcomp	_	_
-16	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur	18	det	_	MWE=todos_os
+16	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	18	det	_	MWE=todos_os
 17	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	fixed	_	_
 18	problemas	problema	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	15	obj	_	_
 19-20	do	_	_	_	_	_	_	_	_
@@ -128,7 +128,7 @@
 16	democrática	democrático	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 18	entre	entre	ADP	PRP|@N<PRED	_	20	case	_	_
-19	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur	20	det	_	_
+19	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	20	det	_	_
 20	factores	factor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
@@ -170,6 +170,6 @@
 18-19	dos	_	_	_	_	_	_	_	_
 18	de	de	ADP	<sam->|PRP|@A<	_	20	case	_	_
 19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
-20	nossos	nosso	PRON	<poss>|<np-def>|DET|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+20	nossos	nosso	PRON	<poss>|<np-def>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Prs	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
