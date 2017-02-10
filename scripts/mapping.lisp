@@ -7,9 +7,6 @@
 
 (in-package :test)
 
-(defun range (n)
-  (loop for x from 0 to (1- n) collect x))
-
 ;; (defun matrix-to-preferences-m (matriz)
 ;;   (destructuring-bind (rows cols)
 ;;       (array-dimensions matriz)
