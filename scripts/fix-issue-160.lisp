@@ -60,7 +60,6 @@
             (when (equal "" (token-misc nt))
               (setf (token-misc nt) "_"))
             (setf (mtoken-misc mt) (append-feature "SpaceAfter" "No" (mtoken-misc mt))))
-          (format t "Inserting [~a] (~a-~a)~%" (mtoken-form mt) (mtoken-start mt) (mtoken-end mt))
           (insert-mtoken sentence mt))
 	(setf (token-form tk)
 	      (regex-replace "-$" (token-form tk) "")))
