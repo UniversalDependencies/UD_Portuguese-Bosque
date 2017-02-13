@@ -494,7 +494,7 @@
 15	ágio	ágio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	SpaceAfter=No
 16	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# text = Foram indiciados o dono da revendedora 3.000 Automóveis, Leonardo Romanioli Filho, e o vendedor Luís Silveira, da concessionária Frame.
+# text = Foram indiciados o dono da revendedora 3.000 Automóveis (Leonardo Romanioli Filho) e o vendedor Luís Silveira, da concessionária Frame.
 # source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-4
 # id = 3778
@@ -508,10 +508,10 @@
 7	revendedora	revendedora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 8	3.000	3.000	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	7	appos	_	MWE=3.000_Automóveis
 9	Automóveis	Automóveis	PROPN	PROP|@N<	Number=Sing	8	flat:name	_	_
-10	(	(	PUNCT	PU|@PU	_	11	punct	_	_
+10	(	(	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
 11	Leonardo	Leonardo	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	MWE=Leonardo_Romanioli_Filho|MWEPOS=PROPN
 12	Romanioli	Romanioli	PROPN	_	Number=Sing	11	flat:name	_	_
-13	Filho	Filho	PROPN	_	Number=Sing	11	flat:name	_	_
+13	Filho	Filho	PROPN	_	Number=Sing	11	flat:name	_	SpaceAfter=No
 14	)	)	PUNCT	PU|@PU	_	11	punct	_	_
 15	e	e	CCONJ	<co-subj>|KC|@CO	_	17	cc	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
@@ -1514,8 +1514,9 @@
 # source = CETENFolha n=906 cad=Brasil sec=pol sem=94a
 # sent_id = CF906-3
 # id = 3819
-1	Trata-	tratar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
-2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	SpaceAfter=No
+1-2	Trata-se	_	_	_	_	_	_	_	SpaceAfter=No
+1	Trata	tratar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	_
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 4	segundo	segundo	ADP	PRP|@<ADVL	_	5	case	_	_
 5	ele	ele	PRON	PERS|M|3S|NOM/PIV|@P<	Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	nmod	_	SpaceAfter=No
@@ -1593,8 +1594,9 @@
 29	deixe	deixar	AUX	<cjt>|<aux>|V|PR|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	aux	_	_
 30	de	de	ADP	PRP|@PRT-AUX<	_	32	nmod	_	_
 31	«	«	PUNCT	PU|@PU	_	32	punct	_	SpaceAfter=No
-32	quebrar-	quebrar	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	13	conj	_	SpaceAfter=No
-33	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	obj	_	SpaceAfter=No
+32-33	quebrar-lo	_	_	_	_	_	_	_	SpaceAfter=No
+32	quebrar	quebrar	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	13	conj	_	_
+33	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	obj	_	_
 34	»	»	PUNCT	PU|@PU	_	32	punct	_	_
 35	com	com	ADP	PRP|@<ADVL	_	38	case	_	_
 36	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
@@ -1776,7 +1778,8 @@
 12	índios	índio	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
 13	e	e	CCONJ	<co-vfin>|KC|@CO	_	15	cc	_	_
 14	a	a	ADP	PRP|@<ADVL	_	15	mark	_	_
-15	convencê-	convencer	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	9	conj	_	SpaceAfter=No
+15-16	convencê-los	_	_	_	_	_	_	_	_
+15	convencê	convencer	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	9	conj	_	_
 16	los	eles	PRON	PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	obj	_	_
 17	de	de	ADP	PRP|@<PIV	_	18	mark	_	_
 18	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	xcomp	_	_
@@ -1971,7 +1974,8 @@
 # source = CETENFolha n=911 cad=Esporte sec=des sem=94b
 # sent_id = CF911-4
 # id = 3837
-1	Passaram-	passar	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
+1-2	Passaram-se	_	_	_	_	_	_	_	_
+1	Passaram	passar	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	expl	_	_
 3	uns	um	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
 4	50	50	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	_
@@ -3026,8 +3030,9 @@
 3	damos	dar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	conta	conta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 5	de	de	ADP	PRP|@N<ARG	_	6	mark	_	_
-6	atendê-	atender	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	4	acl	_	SpaceAfter=No
-7	los	eles	PRON	PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	obj	_	SpaceAfter=No
+6-7	atendê-los	_	_	_	_	_	_	_	SpaceAfter=No
+6	atendê	atender	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	4	acl	_	_
+7	los	eles	PRON	PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	obj	_	_
 8	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A resposta ao pedido de ajuda foi gigantesca», diz Virginia de la Guardia, porta-voz da Médicos Sem Fronteiras.
@@ -4747,7 +4752,7 @@
 22	antes	antes	ADV	ADV|@<ADVL	_	19	advmod	_	SpaceAfter=No
 23	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
-# text = Determinadas pelo Conselho Federal de Medicina (CFM), as normas éticas foram inspiradas nas de outros países Estados Unidos, França e Itália, por exemplo.
+# text = Determinadas pelo Conselho Federal de Medicina (CFM), as normas éticas foram inspiradas nas de outros países, Estados Unidos, França e Itália, por exemplo.
 # source = CETENFolha n=933 cad=Mais! sec=nd sem=94b
 # sent_id = CF933-5
 # id = 3948
@@ -5929,7 +5934,8 @@
 20	gramados	gramado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	conj	_	SpaceAfter=No
 21	)	)	PUNCT	PU|@PU	_	9	punct	_	SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-23	confirma-	confirmar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+23-24	confirma-se	_	_	_	_	_	_	_	_
+23	confirma	confirmar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 24	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	23	nsubj	_	_
 25	que	que	SCONJ	KS|@SUB	_	30	mark	_	_
 26	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
@@ -6689,7 +6695,8 @@
 13	sem	sem	ADP	PRP|@N<	_	14	case	_	_
 14	drogas	droga	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-16	promovendo-	promover	VERB	<mv>|<hyphen>|V|GER|@ICL-<ADVL	VerbForm=Ger	7	advcl	_	SpaceAfter=No
+16-17	promovendo-se	_	_	_	_	_	_	_	_
+16	promovendo	promover	VERB	<mv>|<hyphen>|V|GER|@ICL-<ADVL	VerbForm=Ger	7	advcl	_	_
 17	se	se	PRON	PERS|M|3S|ACC|@<SUBJ	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
 18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	comportamento	comportamento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	_
@@ -8922,8 +8929,9 @@
 13	bilhões	bilhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	11	nmod:npmod	_	SpaceAfter=No
 14	)	)	PUNCT	PU|@PU	_	11	punct	_	_
 15	para	para	ADP	PRP|@<ADVL	_	16	mark	_	_
-16	libertá-	libertar	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	4	advcl	_	SpaceAfter=No
-17	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obj	_	SpaceAfter=No
+16-17	libertá-lo	_	_	_	_	_	_	_	SpaceAfter=No
+16	libertá	libertar	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	4	advcl	_	_
+17	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obj	_	_
 18	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Abalado, o jogador ameaçou não disputar a Copa do Mundo, em junho e julho, nos EUA, caso o pai não seja libertado.
@@ -8998,7 +9006,7 @@
 26	70	70	NUM	<card>|NUM|M|P|@N<	NumType=Card	25	nummod	_	SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
-# text = As músicas incluem The Jackson 5, Stevie Wonder Jimi Hendrix, James Brown e outros 18 bons nomes.
+# text = As músicas incluem The Jackson 5, Stevie Wonder, Jimi Hendrix, James Brown e outros 18 bons nomes.
 # source = CETENFolha n=817 cad=Ilustrada sec=nd sem=94b &L
 # sent_id = CF817-2
 # id = 3436
@@ -9091,7 +9099,8 @@
 6	por	por	ADP	PRP|@ADVL>	_	9	cc	_	MWE=por_exemplo|MWEPOS=CCONJ
 7	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	6	fixed	_	SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-9	fala-	falar	VERB	<mv>|<first-cjt>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+9-10	fala-se	_	_	_	_	_	_	_	_
+9	fala	falar	VERB	<mv>|<first-cjt>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 10	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	_	_
 11	muito	muito	ADV	<quant>|ADV|@<ADVL	_	9	advmod	_	_
 12	sobre	sobre	ADP	<first-cjt>|PRP|@<PIV	_	14	case	_	_
@@ -9447,7 +9456,8 @@
 17	querer	querer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	conj	_	_
 18	ser	ser	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	19	cop	_	_
 19	bacana	bacana	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	17	dep	_	_
-20	citando-	citar	VERB	<mv>|<hyphen>|V|GER|@ICL-<ADVL	VerbForm=Ger	19	advcl	_	SpaceAfter=No
+20-21	citando-o	_	_	_	_	_	_	_	_
+20	citando	citar	VERB	<mv>|<hyphen>|V|GER|@ICL-<ADVL	VerbForm=Ger	19	advcl	_	_
 21	o	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obj	_	_
 22	como	como	ADP	<prd>|PRP|@<OC	_	25	case	_	_
 23	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
@@ -9583,7 +9593,8 @@
 # id = 3467
 1	Itamar	Itamar	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	quis	querer	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	encaixá-	encaixar	VERB	<mv>|<hyphen>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	SpaceAfter=No
+3-4	encaixá-lo	_	_	_	_	_	_	_	_
+3	encaixá	encaixar	VERB	<mv>|<hyphen>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
 4	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
 5-6	no	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
@@ -9627,6 +9638,7 @@
 8	certeiro	certeiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	_
 9	em	em	ADP	<sam->|PRP|@N<	_	10	case	_	MWE=em_direção_a
 10	direção	direção	NOUN	N|@P<	_	7	nmod	_	_
+11-12	ao	_	_	_	_	_	_	_	_
 11	a	a	ADP	PRP|@N<	_	13	case	_	_
 12	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	Sebrae	Sebrae	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
@@ -10358,7 +10370,8 @@
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	polícia	polícia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
 21	em	em	ADP	PRP|@N<	_	22	mark	_	_
-22	detê-	deter	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	17	acl	_	SpaceAfter=No
+22-23	detê-lo	_	_	_	_	_	_	_	_
+22	detê	deter	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	17	acl	_	_
 23	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	obj	_	_
 24	como	como	ADP	<prd>|PRP|@<OC	_	25	case	_	_
 25	exemplo	exemplo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	22	xcomp	_	_
@@ -10892,7 +10905,8 @@
 # source = CETENFolha n=834 cad=Turismo sec=soc sem=94b
 # sent_id = CF834-1
 # id = 3510
-1	Aventure-	aventurar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+1-2	Aventure-se	_	_	_	_	_	_	_	_
+1	Aventure	aventurar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	_	_
 3-4	no	_	_	_	_	_	_	_	_
 3	em	em	ADP	<sam->|PRP|@<ADVL	_	5	case	_	_
@@ -11203,7 +11217,7 @@
 25	meca	meca	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
-# text = Luciano Huck, 22 um dos proprietários do bar, é o profeta da turma.
+# text = Luciano Huck, 22, um dos proprietários do bar, é o profeta da turma.
 # source = CETENFolha n=835 cad=Revista Folha sec=nd sem=94b
 # sent_id = CF835-6
 # id = 3523
@@ -11804,7 +11818,8 @@
 19	Soldado	Soldado	PROPN	PROP|@P<	Number=Sing	16	nmod	_	_
 20	ontem	ontem	ADV	ADV|@<ADVL	_	11	advmod	_	_
 21	para	para	ADP	PRP|@<ADVL	_	22	mark	_	_
-22	queixar-	queixar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	SpaceAfter=No
+22-23	queixar-se	_	_	_	_	_	_	_	_
+22	queixar	queixar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	_
 23	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	expl	_	_
 24-25	das	_	_	_	_	_	_	_	_
 24	de	de	ADP	<sam->|PRP|@<PIV	_	26	case	_	_
