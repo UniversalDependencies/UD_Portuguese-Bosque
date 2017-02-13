@@ -22,21 +22,15 @@
 15	»	»	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
-# text = (...) Em 1975, nos Estados Unidos, a comissão trilateral divulgava um relatório intitulado «Crise da Democracia, no qual culpava pela contestação à «autoridade fundada na hierarquia, na competência e no dinheiro ...» «intelectuais e grupos próximos», que estavam a tornar as democracias ocidentais, liberais, parlamentares, «ingovernáveis porque ameaçadas por uma gravíssima crise de autoridade, fomentada por intelectuais e jornalistas».
+# text = (...) Em 1975, nos Estados Unidos, a comissão trilateral divulgava um relatório intitulado «Crise da Democracia, no qual culpava pela contestação à «autoridade fundada na hierarquia, na competência e no dinheiro ...» «os «intelectuais e grupos próximos», que estavam a tornar as democracias ocidentais, liberais, parlamentares, «ingovernáveis porque ameaçadas por uma gravíssima crise de autoridade, fomentada por intelectuais e jornalistas».
 # source = CETEMPúblico n=978 sec=nd sem=91b
 # sent_id = CP978-2
 # id = 5033
-# d2d = cc(hierarquia,e) -> cc(dinheiro,e)  #106
-# d2d = punct(hierarquia,,) -> punct(competência,,)  #106
-# d2d = punct(ocidentais,,) -> punct(parlamentares,,)  #106
-# d2d = cc(intelectuais,e) -> cc(jornalistas,e)  #106
-# d2d = punct(ocidentais,,) -> punct(liberais,,)  #106
-# d2d = cc(intelectuais,e) -> cc(grupos,e)  #106
 1	(	(	PUNCT	PU|@PU	_	15	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	...	...	PUNCT	PU|@PU	_	15	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	)	)	PUNCT	PU|@PU	_	15	punct	_	_
 4	Em	em	ADP	PRP|@ADVL>	_	5	case	_	_
-5	1975	1975	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	15	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+5	1975	1975	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	15	nmod	_	ChangedBy=Issue168|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7-8	nos	_	_	_	_	_	_	_	_
 7	em	em	ADP	<sam->|PRP|@ADVL>	_	9	case	_	_
@@ -125,7 +119,7 @@
 83	por	por	ADP	<cjt>|PRP|@PASS	_	84	case	_	_
 84	intelectuais	intelectual	NOUN	<first-cjt>|<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	82	obl:agent	_	_
 85	e	e	CCONJ	<co-prparg>|KC|@CO	_	86	cc	_	d2d:#106
-86	jornalistas	jornalista	NOUN	<cjt>|<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	84	conj	_	_
+86	jornalistas	jornalista	NOUN	<cjt>|<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	84	conj	_	SpaceAfter=No
 87	»	»	PUNCT	PU|@PU	_	72	punct	_	ChangedBy=Issue165|SpaceAfter=No
 88	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
