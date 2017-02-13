@@ -42,3 +42,4 @@
     (dolist (fn (directory "documents/*.conllu"))
       (match/strict (read-conllu fn) stream))))
 
+(run)
