@@ -19,10 +19,6 @@
 (defun fix-corpus (sentences)
   (mapc #'fix sentences))
 
-;; to replicate
-;; (write-conllu (fix-corpus (read-conllu "bosque.udep.conll")) "bosque.fixed")
 (defun run ()
   (dolist (f (directory "documents/*.conllu"))
     (write-conllu (fix-corpus (read-conllu f)) f)))
-;; and then concatenate all documents/* into bosque.udep.conll (via
-;; join-documents.sh)
