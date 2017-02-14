@@ -45,3 +45,9 @@
         (match/strict (read-conllu fn) stream streamids)))))
 
 (run)
+
+;; to validate all "valid" sentences, do the following.
+;; cat pt-ud-*.txt | sort > tmp
+;; cat mismatches-ids.txt | sort > x && mv x mismatches-ids.txt 
+;; comm -23 tmp mismatches-ids.txt > final.txt
+;; then exec generate-release.lisp and validate.py --lang pt
