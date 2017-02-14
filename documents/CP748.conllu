@@ -66,12 +66,10 @@
 56	Rodrigues	Rodrigues	PROPN	_	Number=Sing	54	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 57	.	.	PUNCT	PU|@PU	_	44	punct	_	_
 
-# text = De acordo com aquele gestor, o IIPA contactou o Banco Comercial dos Açores, a sociedade Espírito Santo- sociedade de investimentos e o Banco Pinto & Sotto Mayor.
+# text = De acordo com aquele gestor, o IIPA contactou o Banco Comercial dos Açores, a sociedade Espírito Santo - sociedade de investimentos e o Banco Pinto & Sotto Mayor.
 # source = CETEMPúblico n=748 sec=eco sem=91b
 # sent_id = CP748-2
 # id = 3840
-# d2d = punct(Banco,,) -> punct(sociedade,,)  #106
-# d2d = cc(Banco,e) -> cc(Banco,e)  #106
 1	De	de	ADP	PRP|@ADVL>	_	2	case	_	MWE=De_acordo
 2	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
 3	com	com	ADP	PRP|@P<	_	5	case	_	_
@@ -92,17 +90,19 @@
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	sociedade	sociedade	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	conj	_	_
 19	Espírito	Espírito	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	18	appos	_	MWE=Espírito_Santo-sociedade
-20	Santo-sociedade	Santo-sociedade	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
-21	de	de	ADP	PRP|@N<	_	22	case	_	_
-22	investimentos	investimentos	PROPN	PROP|@P<	Number=Sing	19	nmod	_	_
-23	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	d2d:#106
-24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
-25	Banco	Banco	PROPN	_	Gender=Masc|Number=Sing	11	conj	_	ChangedBy=Issue119|MWE=Banco_Pinto_&_Sotto_Mayor|MWEPOS=PROPN
-26	Pinto	Pinto	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
-27	&	&	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
-28	Sotto	Sotto	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
-29	Mayor	Mayor	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-30	.	.	PUNCT	PU|@PU	_	9	punct	_	_
+20	Santo	Santo	PROPN	PROP|@N<	Number=Sing	19	flat:name	_	_
+21	-	-	PUNCT	PU|@PU	_	22	punct	_	_
+22	sociedade	sociedade	PROPN	PROP|@N<	Number=Sing	19	appos	_	_
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	investimentos	investimentos	PROPN	PROP|@P<	Number=Sing	20	nmod	_	_
+25	e	e	CCONJ	<co-acc>|KC|@CO	_	27	cc	_	d2d:#106
+26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
+27	Banco	Banco	PROPN	_	Gender=Masc|Number=Sing	11	conj	_	MWEPOS=PROPN
+28	Pinto	Pinto	PROPN	_	Number=Sing	27	flat:name	_	_
+29	&	&	PROPN	_	Number=Sing	27	flat:name	_	_
+30	Sotto	Sotto	PROPN	_	Number=Sing	27	flat:name	_	_
+31	Mayor	Mayor	PROPN	_	Number=Sing	27	flat:name	_	SpaceAfter=No
+32	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = O empréstimo será negociado por tranches, já que o valor em causa é para o biénio 1991-92».
 # source = CETEMPúblico n=748 sec=eco sem=91b
