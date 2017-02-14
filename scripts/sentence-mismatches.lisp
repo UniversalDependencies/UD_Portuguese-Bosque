@@ -28,18 +28,20 @@
         (format stream "[~a] ~a~%[~a] ~a~%~a (~a)~%~%" sid text sid stext (mismatch (clean1 stext) (clean1 text)) (subseq (clean1 text) (mismatch (clean1 stext) (clean1 text)))))))
   sentences)
 
-(defun match/strict (sentences stream)
+(defun match/strict (sentences stream streamids)
   (dolist (s sentences)
     (let* ((sid (sentence-meta-value s "sent_id"))
            (stext (sentence->text s))
            (text (sentence-meta-value s "text")))
       (when (not (string= stext text))
+        (format streamids "~a~%" sid)
         (format stream "[~a] ~a~%[~a] ~a~%{~a}~%~%" sid text sid stext (subseq text (mismatch stext text))))))
   sentences)
 
 (defun run ()
   (with-open-file (stream "mismatches.txt" :direction :output :if-exists :supersede)
-    (dolist (fn (directory "documents/*.conllu"))
-      (match/strict (read-conllu fn) stream))))
+    (with-open-file (streamids "mismatches-ids.txt" :direction :output :if-exists :supersede)
+      (dolist (fn (directory "documents/*.conllu"))
+        (match/strict (read-conllu fn) stream streamids)))))
 
 (run)

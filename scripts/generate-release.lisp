@@ -41,4 +41,6 @@ sentence ids listed in the file IDS, saving the output in OUTPUT."
 (release #p"documents/" #p"pt-ud-dev.txt" #p"pt-ud-dev.conllu")
 (release #p"documents/" #p"pt-ud-test.txt" #p"pt-ud-test.conllu")
 (release #p"documents/" #p"pt-ud-train.txt" #p"pt-ud-train.conllu")
+(when (probe-file #p"final.txt")
+  (release #p"documents/" #p"final.txt" #p"final.conllu"))
 
