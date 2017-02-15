@@ -18,6 +18,11 @@
 (defun prepare-for-release (conll)
   "Remove ChangedBy from MISC.  Remove dep2dep annotations from MISC and metadata"
   (dolist (s conll)
+    (dolist (tk (sentence-mtokens s))
+      (setf (slot-value tk 'misc) (remove-d2d (slot-value tk 'misc)))
+      (setf (slot-value tk 'misc) (remove-feature "ChangedBy" (slot-value tk 'misc)))
+      (when (or (= 0 (length (slot-value tk 'misc))) (null (slot-value tk 'misc)))
+        (setf (slot-value tk 'misc) "_")))
     (dolist (tk (sentence-tokens s))
       (setf (slot-value tk 'misc) (remove-d2d (slot-value tk 'misc)))
       (setf (slot-value tk 'misc) (remove-feature "ChangedBy" (slot-value tk 'misc)))
