@@ -17,7 +17,7 @@
 12-13	às	_	_	_	_	_	_	_	_
 12	a	a	ADP	<sam->|PRP|@<SA	_	14	case	_	_
 13	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
-14	finais	final	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	nmod	_	_
+14	finais	final	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	_
 15-16	da	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
@@ -44,7 +44,7 @@
 37-38	ao	_	_	_	_	_	_	_	_
 37	a	a	ADP	<sam->|PRP|@N<	_	39	case	_	_
 38	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
-39	invés	invés	NOUN	N|@P<	_	34	nmod	_	_
+39	invés	invés	NOUN	N|@P<	_	34	obl	_	_
 40-41	do	_	_	_	_	_	_	_	_
 40	de	de	ADP	PRP|@N<	_	43	case	_	_
 41	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_
@@ -59,11 +59,11 @@
 # d2d = punct(escalou,,) -> punct(optou,,)  #106
 # d2d = cc(escalou,nem) -> cc(optou,nem)  #106
 1	Apesar	apesar	ADP	PRP|@ADVL>	_	2	case	_	MWE=Apesar_disso
-2	disso	disso	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
+2	disso	disso	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	_
 3	ou	ou	CCONJ	<co-advl>|KC|@CO	_	2	cc	_	_
 4	exatamente	exatamente	ADV	<cjt>|ADV|@ADVL>	_	2	advmod	_	_
 5	por	por	ADP	<sam->|PRP|@A<	_	6	case	_	MWE=por_causa_de
-6	causa	causa	NOUN	N|@P<	_	4	nmod	_	_
+6	causa	causa	NOUN	N|@P<	_	4	obl	_	_
 7-8	disso	_	_	_	_	_	_	_	SpaceAfter=No
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	isso	isso	PRON	<dem>|<-sam>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	6	nmod	_	_
@@ -75,7 +75,7 @@
 14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	PRP|@A<	_	16	case	_	_
 15	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	Corinthians	Corinthians	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+16	Corinthians	Corinthians	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 18	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	19	nsubj	_	_
 19	ficou	ficar	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	acl:relcl	_	_
@@ -98,7 +98,7 @@
 34	optou	optar	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	conj	_	_
 35	por	por	ADP	PRP|@<PIV	_	37	case	_	_
 36	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	time	time	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	nmod	_	_
+37	time	time	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	obl	_	_
 38	de	de	ADP	PRP|@N<	_	39	case	_	_
 39	juniores	júnior	ADJ	<n>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	37	nmod	_	_
 40	com	com	ADP	PRP|@N<	_	42	case	_	_
@@ -237,7 +237,7 @@
 3	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
 4	composto	compor	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 5	de	de	ADP	PRP|@<PIV	_	6	case	_	_
-6	meias-armadores	meia-armador	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
+6	meias-armadores	meia-armador	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	_
 7	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	d2d:#106
 8	atacantes	atacante	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	conj	_	ChangedBy=Issue165|SpaceAfter=No
 9	.	.	PUNCT	PU|@PU	_	4	punct	_	_

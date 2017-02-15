@@ -5,7 +5,7 @@
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Todos	todo	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Tot	5	nsubj	_	_
 3	temos	ter	AUX	<first-cjt>|<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	aux	_	_
-4	de	de	ADP	PRP|@PRT-AUX<	_	5	nmod	_	_
+4	de	de	ADP	PRP|@PRT-AUX<	_	5	obl	_	_
 5	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 6	sacrifícios	sacrifício	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	obj	_	_
 7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	5	cc	_	_
@@ -30,7 +30,7 @@
 8	sacrifício	sacrifício	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj:pass	_	_
 9	não	não	ADV	_	Polarity=Neg	13	advmod	_	_
 10	esteja	estar	AUX	<aux>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
-11	a	a	ADP	PRP|@PRT-AUX<	_	13	nmod	_	_
+11	a	a	ADP	PRP|@PRT-AUX<	_	13	obl	_	_
 12	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	13	aux:pass	_	_
 13	repartido	repartir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	ccomp	_	_
 14	de	de	ADP	PRP|@<ADVL	_	16	case	_	_
@@ -40,7 +40,7 @@
 18-19	pela	_	_	_	_	_	_	_	_
 18	por	por	ADP	<sam->|PRP|@<PIV	_	20	case	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
-20	população	população	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+20	população	população	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	ChangedBy=Issue165|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Está a ser pedido aos idosos que se sacrifiquem duas ou três vezes mais do que o resto das pessoas».
@@ -49,27 +49,27 @@
 # id = 2929
 # d2d = cc(duas,ou) -> cc(três,ou)  #106
 1	Está	estar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
-2	a	a	ADP	PRP|@PRT-AUX<	_	4	nmod	_	_
+2	a	a	ADP	PRP|@PRT-AUX<	_	4	obl	_	_
 3	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	4	aux:pass	_	_
 4	pedido	pedir	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 5-6	aos	_	_	_	_	_	_	_	_
 5	a	a	ADP	<sam->|PRP|@<PIV	_	7	case	_	_
 6	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
-7	idosos	idoso	ADJ	<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
+7	idosos	idoso	ADJ	<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	_
 8	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
 9	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	10	expl	_	ChangedBy=Issue135
 10	sacrifiquem	sacrificar	VERB	<mv>|<se-passive>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
 11	duas	dois	NUM	<first-cjt>|<card>|NUM|F|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168
 12	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	13	cc	_	d2d:#106
 13	três	três	NUM	<cjt>|<card>|NUM|F|P|@>N	NumType=Card	11	conj	_	ChangedBy=Issue168
-14	vezes	vez	NOUN	<np-def>|N|F|P|@<ADVL	Gender=Fem|Number=Plur	10	nmod	_	_
+14	vezes	vez	NOUN	<np-def>|N|F|P|@<ADVL	Gender=Fem|Number=Plur	10	obl	_	_
 15	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@N<	_	14	advmod	_	_
 16-17	do	_	_	_	_	_	_	_	_
 16	de	de	ADP	<sam->|PRP|@COM	_	17	case	_	MWE=do_que
 17	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	20	fixed	_	_
 18	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	17	fixed	_	_
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	resto	resto	NOUN	<first-cjt>|<np-def>|N|M|S|@KOMP<	Gender=Masc|Number=Sing	15	nmod	_	_
+20	resto	resto	NOUN	<first-cjt>|<np-def>|N|M|S|@KOMP<	Gender=Masc|Number=Sing	15	obl	_	_
 21-22	das	_	_	_	_	_	_	_	_
 21	de	de	ADP	PRP|@N<ARG	_	23	case	_	_
 22	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_
@@ -82,7 +82,7 @@
 # sent_id = CP564-4
 # id = 2930
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
-2	John	John	PROPN	_	Gender=Masc|Number=Sing	10	nmod	_	ChangedBy=Issue119|MWE=John_Rother|MWEPOS=PROPN
+2	John	John	PROPN	_	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue119|MWE=John_Rother|MWEPOS=PROPN
 3	Rother	Rother	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
@@ -210,7 +210,7 @@
 70	idosos	idoso	ADJ	<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	67	nmod	_	_
 71	de	de	ADP	PRP|@N<	_	73	case	_	_
 72	baixos	baixo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	73	amod	_	_
-73	rendimentos	rendimento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	70	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+73	rendimentos	rendimento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	70	obl	_	ChangedBy=Issue165|SpaceAfter=No
 74	»	»	PUNCT	PU|@PU	_	1	punct	_	ChangedBy=Issue165|SpaceAfter=No
 75	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

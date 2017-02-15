@@ -5,7 +5,7 @@
 # d2d = punct(norte-americanos,,) -> punct(italianos,,)  #106
 # d2d = cc(norte-americanos,e) -> cc(soldados,e)  #106
 # d2d = punct(norte-americanos,,) -> punct(paquistaneses,,)  #106
-1	Pouco	pouco	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	7	nmod	_	MWE=Pouco_a_pouco
+1	Pouco	pouco	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	7	obl	_	MWE=Pouco_a_pouco
 2	a	a	ADP	PRP|@N<	_	3	case	_	_
 3	pouco	pouco	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -13,7 +13,7 @@
 5	foi	ir	AUX	<aux>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
 6	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl	_	ChangedBy=Issue135
 7	esquecendo	esquecer	VERB	<mv>|<se-passive>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
-8	em	em	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	7	nmod	_	MWE=em_grande_parte
+8	em	em	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	7	obl	_	MWE=em_grande_parte
 9	grande	grande	ADP	PRP|@N<	_	10	case	_	_
 10	parte	parte	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
@@ -39,14 +39,14 @@
 31	comida	comida	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	30	obj	_	_
 32	a	a	ADP	PRP|@<PIV	_	34	case	_	_
 33	muitos	muito	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	34	det	_	_
-34	africanos	africano	ADJ	<n>|<np-idf>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	30	nmod	_	_
+34	africanos	africano	ADJ	<n>|<np-idf>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	30	obl	_	_
 35	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	40	nsubj	_	_
 36	estavam	estar	AUX	<mv>|V|IMPF|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	40	cop	_	ChangedBy=Issue167
 37	perigosamente	perigosamente	ADV	ADV|@<ADVL	_	40	advmod	_	_
 38-39	à	_	_	_	_	_	_	_	_
 38	a	a	ADP	<sam->|PRP|@N<	_	40	case	_	_
 39	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
-40	beira	beira	NOUN	N|@P<	_	34	nmod	_	_
+40	beira	beira	NOUN	N|@P<	_	34	obl	_	_
 41-42	da	_	_	_	_	_	_	_	_
 41	de	de	ADP	PRP|@N<	_	43	case	_	_
 42	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
@@ -102,7 +102,7 @@
 41	passar	passar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	40	xcomp	_	_
 42	por	por	ADP	PRP|@<PIV	_	44	case	_	_
 43	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
-44	nacionalista	nacionalista	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	41	nmod	_	_
+44	nacionalista	nacionalista	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	41	obl	_	_
 45	e	e	CCONJ	<co-prparg>|KC|@CO	_	47	cc	_	d2d:#106
 46	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 47	paladino	paladino	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	44	conj	_	_
@@ -140,7 +140,7 @@
 5	ontem	ontem	ADV	ADV|@P<	_	2	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 7	em	em	ADP	PRP|@ADVL>	_	8	case	_	_
-8	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	9	nmod	_	_
+8	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	9	obl	_	_
 9	participaram	participar	VERB	<first-cjt>|<mv>|V|PS|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	_	_
 10	nove	nove	NUM	<card>|NUM|M|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168
 11	helicópteros	helicóptero	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	9	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -175,7 +175,7 @@
 39	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 40	de	de	ADP	<first-cjt>|PRP|@N<PRED	_	42	case	_	_
 41	22	22	NUM	<card>|NUM|M|P|@>N	NumType=Card	42	nummod	_	ChangedBy=Issue168
-42	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+42	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	36	obl	_	ChangedBy=Issue165|SpaceAfter=No
 43	,	,	PUNCT	PU|@PU	_	45	punct	_	d2d:#106
 44	e	e	CCONJ	<co-acc>|KC|@CO	_	45	cc	_	d2d:#106
 45	outro	outro	PRON	<cjt>|<KOMP>|<diff>|DET|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	29	conj	_	_
@@ -195,7 +195,7 @@
 58	,	,	PUNCT	PU|@PU	_	62	punct	_	_
 59	estando	estar	AUX	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	62	aux	_	_
 60	ainda	ainda	ADV	ADV|@ADVL>	_	62	advmod	_	_
-61	por	por	ADP	PRP|@PRT-AUX<	_	62	nmod	_	_
+61	por	por	ADP	PRP|@PRT-AUX<	_	62	obl	_	_
 62	confirmar	confirmar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	27	advcl	_	_
 63	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	64	det	_	_
 64	morte	morte	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	62	nsubj	_	_
