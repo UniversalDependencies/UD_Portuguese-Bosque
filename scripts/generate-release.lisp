@@ -10,10 +10,12 @@
        collect line)))
 
 (defun remove-feature (key features)
-  (format nil "~{~a~^|~}" (remove-if (lambda (x) (string-equal key (car (split-sequence #\= x)))) (split-sequence #\| features))))
+  (format nil "~{~a~^|~}" (remove-if (lambda (x) (string-equal key (car (split-sequence #\= x))))
+				     (split-sequence #\| features))))
 
 (defun remove-d2d (misc)
-  (format nil "~{~a~^|~}" (remove-if (lambda (x) (string-equal "d2d" (car (split-sequence #\: x)))) (split-sequence #\| misc))))
+  (format nil "~{~a~^|~}" (remove-if (lambda (x) (string-equal "d2d" (car (split-sequence #\: x))))
+				     (split-sequence #\| misc))))
 
 (defun prepare-for-release (conll)
   "Remove ChangedBy from MISC.  Remove dep2dep annotations from MISC and metadata"
