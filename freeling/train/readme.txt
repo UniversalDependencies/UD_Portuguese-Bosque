@@ -1,7 +1,12 @@
+NOTE: MAKE SURE YOU READ THE EMAILS FROM PADRO BELOW.
+
 To train treeler:
 
 1. make sure you have files ../7.5-fl/devel.conll and
    ../7.5-fl/train.conll.
+
+[ feel free to update the paths above, but make sure you also update
+  the scripts below ]
 
 2. Execute reformat.sh
 
