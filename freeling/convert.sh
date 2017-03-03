@@ -8,7 +8,7 @@ if [ ! -d bosque-ud-fl ]; then mkdir bosque-ud-fl; fi
 # ../scripts/join-documents.sh file.  It doesn't matter in the end.
 # Just make sure the "for" below finds the correct files.
 
-# NOTE: needs interset (see conver.txt, at the bottom, for the
+# NOTE: needs interset (see convert.txt, at the bottom, for the
 # location of the project).
 for f in bosque-ud/*.conllu; do
     perl conll_convert_tags_from_uposf.pl $f > bosque-ud-fl/`basename $f`;
