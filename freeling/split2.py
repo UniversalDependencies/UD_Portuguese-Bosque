@@ -14,7 +14,7 @@ def valid_sentence(sent):
             continue
         
         cols = l.split('\t');
-        if len(cols) == 8:
+        if len(cols) == 10:
             if cols[4] == '':
                 return False
         else:
@@ -32,9 +32,12 @@ with open(sys.argv[1], 'r') as f:
     txt = f.read()
     sents = txt.split('\n\n')
     valid_sents = []
+    # counter = 0
     for sent in sents:
         if valid_sentence(sent):
             valid_sents.append (sent)
+    #         counter += 1
+    # print(counter, file=sys.stderr)
 
     devel_len = math.floor(len(valid_sents)*devel_frac)
     shuffled_ids = list(range(0,len(valid_sents)))

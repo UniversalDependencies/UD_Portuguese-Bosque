@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export LD_LIBRARY_PATH=/usr/local/lib
+
 if [ ! -d bosque-ud-fl ]; then mkdir bosque-ud-fl; fi
 
 # NOTE: you need to concatenate all Bosque documents and put it into a
@@ -10,7 +12,7 @@ if [ ! -d bosque-ud-fl ]; then mkdir bosque-ud-fl; fi
 
 # NOTE: needs interset (see convert.txt, at the bottom, for the
 # location of the project).
-for f in bosque-ud/*.conllu; do
+for f in *.conllu; do
     perl conll_convert_tags_from_uposf.pl $f > bosque-ud-fl/`basename $f`;
 done
 
@@ -23,13 +25,13 @@ for f in bosque-ud-fl/*.conllu; do
     cat -s $f >> bosque-ud-fl/bosque-with-tags.conll
 done
 
-grep -v "^<" bosque-ud-fl/bosque-with-tags.conll | cat -s - > bosque-ud-fl/bosque.conll
-grep "^<s" bosque-ud-fl/bosque-with-tags.conll | sed -e "s/\(.*\)text=\"\(.*\)\">/\2\n/" > bosque-ud-fl/bosque-sentences.txt
+grep -v "^#" bosque-ud-fl/bosque-with-tags.conll | cat -s - > bosque-ud-fl/bosque.conll
+grep "^# text" bosque-ud-fl/bosque-with-tags.conll | sed -e "s/\# text = \(.*\)/\1\n/" > bosque-ud-fl/bosque-sentences.txt
 
 python3 split2.py bosque-ud-fl/bosque.conll bosque-ud-fl/devel.conll bosque-ud-fl/train.conll
 
 # NOTE: make sure you update this path to your local Freeling installation.
-~/bin/freeling-4.0/bin/analyze -f pt.cfg < bosque-ud-fl/bosque-sentences.txt > bosque-ud-fl/bosque-sentences.freeling.txt
+/usr/local/bin/analyze -f pt.cfg < bosque-ud-fl/bosque-sentences.txt > bosque-ud-fl/bosque-sentences.freeling.txt
 
 cat bosque-ud-fl/bosque-sentences.freeling.txt | awk '{print $1 " " $2 " " $3}' > bosque-ud-fl/freeling.tokens
 
