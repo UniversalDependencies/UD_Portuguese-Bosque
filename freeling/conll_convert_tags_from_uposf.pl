@@ -21,7 +21,7 @@ use Lingua::Interset::Converter;
 use lib '.';
 use freeling;
 
-my $FREELINGDIR = "/home/fcbr/bin/freeling-4.0";
+my $FREELINGDIR = "/usr/local";
 my $DATA = $FREELINGDIR."/share/freeling/";
 my $LANG="pt";
 my $PUNCT = $DATA."common/punct.dat";
@@ -53,13 +53,15 @@ while(<>)
     {
         chomp();
         my @f = split(/\t/, $_);
+	# print STDERR scalar @f;
+	# print STDERR "\n";
 
-        if (scalar @f eq 8)
+        if (scalar @f eq 10)
         {
             my $tag = "$f[3]\t$f[5]";
             my $lemma = $f[2];
             my $ftag1 = $c->convert($tag);
-            # print "< $tag # $ftag1\n";
+            # print STDERR "< $tag # $ftag1\n";
 
             if ($ftag1 eq 'Fz')
             {

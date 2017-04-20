@@ -2,7 +2,7 @@
 
 # set language
 LANG=pt
-FREELINGDIR=~/bin/freeling-4.0/
+FREELINGDIR=/usr/local
 EPOCHS=50
 
 ## Create maps for features
