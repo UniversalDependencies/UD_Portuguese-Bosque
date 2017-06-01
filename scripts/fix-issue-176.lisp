@@ -1,7 +1,10 @@
 
 (ql:quickload :cl-conllu)
+(ql:quickload :cl-utilities)
+(ql:quickload :cl-fad)
+(in-package :cl-conllu)
 
-(deparameter table '(("A_bordo" "" "ADV" "ADP NOUN")
+(defparameter table '(("A_bordo" "" "ADV" "ADP NOUN")
 		     ("a_bordo" "" "ADV" "ADP NOUN")
 		     ("a_bordo_de" "" "ADP" "ADP NOUN ADP")
 		     ("a_exemplo" "a_exemplo_de" "ADP" "ADP NOUN ADP")
@@ -323,5 +326,43 @@
 		     ("uns_vez_que" "ELIMINAR" "" "DET NOUN SCONJ")
 		     ("visto_que" "" "SCONJ" "ADJ SCONJ")))
 
+(defun find-mwe-sentences()
+  (let (res)
+    (setq res ())
+    (loop for linha in table
+     do (let (words)
+	 (setq words (split-sequence:SPLIT-SEQUENCE #\_ (car linha)))
+	 (princ "Buscando:")
+	 (princ words)
+	 (princ "\n")
+       	 (dolist (f (cl-fad:list-directory #p "../documents/"))
+	   (when (search ".conllu" (namestring f))
+	     (let (extraction)	       
+	       (setq extraction (extract-ocurrences (cl-conllu:read-conllu f) words))
+	       (when extraction (print "encontrou algo"))
+	       (setq res (append extraction res))
+	       )))))
+  (print res)
+  (setq res (remove-duplicates res :test #'sentence-equal))
+  (write-conllu res "MWE.conll")))
 
+;;(defun extract-ocurrences2(sentences words)
+;;  (loop for sentence in sentences
+;;     when (subsetp (sentence-tokens sentence) words :test #'token-string-comparator)
+;;     collect sentence))
 
+;;(defun token-string-comparator (token string)
+;;(if (string= string (slot-value token 'lemma)) t nil ))
+
+(defun extract-ocurrences(sentences words)
+  (loop for sentence in sentences
+     when (sentence-contains-words sentence words)
+       collect sentence
+       ))
+
+(defun sentence-contains-words (sentence words)
+  (if(subsetp words (get-lemmas-list sentence ) :test #'string=) t nil))
+
+(defun get-lemmas-list (sentence)
+  (loop for token in (sentence-tokens sentence)
+     collect(slot-value token 'lemma)))
