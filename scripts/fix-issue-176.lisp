@@ -1,7 +1,5 @@
-
 (ql:quickload :cl-conllu)
 (ql:quickload :cl-utilities)
-(ql:quickload :cl-fad)
 (in-package :cl-conllu)
 
 (defparameter table '(("A_bordo" "" "ADV" "ADP NOUN")
@@ -329,22 +327,20 @@
 (defun find-mwe-sentences()
   (let (res)
     (setq res ())
-    (loop for linha in table
-     do (let (words)
-	 (setq words (split-sequence:SPLIT-SEQUENCE #\_ (car linha)))
-	 (princ "Buscando:")
-	 (princ words)
-	 (princ "\n")
-       	 (dolist (f (cl-fad:list-directory #p "../documents/"))
-	   (when (search ".conllu" (namestring f))
-	     (let (extraction)	       
-	       (setq extraction (extract-ocurrences (cl-conllu:read-conllu f) words))
-	       (when extraction (print "encontrou algo"))
-	       (setq res (append extraction res))
-	       )))))
-  (print res)
-  (setq res (remove-duplicates res :test #'sentence-equal))
-  (write-conllu res "MWE.conll")))
+    (loop for line in table
+       do (let (words)
+	    (setq words (split-sequence:SPLIT-SEQUENCE #\_ (car line)))
+	    (print "Searching:")
+	    (print words)
+	    (dolist (f (directory #p"../documents/*.conllu"))
+	      (let (extraction)	       
+		(setq extraction (extract-ocurrences (cl-conllu:read-conllu f) words))
+		(setq res (append extraction res))))))
+
+    (setq res (remove-duplicates res :test #'sentence-equal))
+    (princ "Casos encontrados:")
+    (princ (list-length res))
+    (write-conllu res "MWE.conll")))
 
 ;;(defun extract-ocurrences2(sentences words)
 ;;  (loop for sentence in sentences
@@ -357,12 +353,10 @@
 (defun extract-ocurrences(sentences words)
   (loop for sentence in sentences
      when (sentence-contains-words sentence words)
-       collect sentence
-       ))
+     collect sentence))
 
 (defun sentence-contains-words (sentence words)
-  (if(subsetp words (get-lemmas-list sentence ) :test #'string=) t nil))
+  (if (subsetp words (get-lemmas-list sentence) :test #'string=) t nil))
 
 (defun get-lemmas-list (sentence)
-  (loop for token in (sentence-tokens sentence)
-     collect(slot-value token 'lemma)))
+  (mapcar #'(lambda (x) (slot-value  x 'lemma)) (sentence-tokens sentence)))
