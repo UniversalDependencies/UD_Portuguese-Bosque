@@ -1,5 +1,7 @@
+
 (ql:quickload :cl-conllu)
 (ql:quickload :cl-utilities)
+
 (in-package :cl-conllu)
 
 (defparameter table '(("A_bordo" "" "ADV" "ADP NOUN")
@@ -324,39 +326,36 @@
 		     ("uns_vez_que" "ELIMINAR" "" "DET NOUN SCONJ")
 		     ("visto_que" "" "SCONJ" "ADJ SCONJ")))
 
-(defun find-mwe-sentences()
-  (let (res)
-    (setq res ())
-    (loop for line in table
-       do (let (words)
-	    (setq words (split-sequence:SPLIT-SEQUENCE #\_ (car line)))
-	    (print "Searching:")
-	    (print words)
-	    (dolist (f (directory #p"../documents/*.conllu"))
-	      (let (extraction)	       
-		(setq extraction (extract-ocurrences (cl-conllu:read-conllu f) words))
-		(setq res (append extraction res))))))
 
+
+
+(defun extract-ocurrences (sentences words)
+  (remove-if-not (lambda (sentence)
+		   (search words (sentence-tokens sentence) :key #'token-lemma :test #'equal))
+		 sentences))
+
+
+(defun run ()
+  (let ((res)
+	(files (directory #p"../documents/*.conllu"))
+	(patterns (split-sequence:split-sequence #\_
+						 (remove-duplicates (mapcar (lambda (e) (string-downcase (car e)))
+									    table)
+								    :test #'equal))))
+    (reduce (lambda (n lst) (append  (read-conllu n) lst))
+	    (directory #p"../documents/*.conllu") :initial-value nil)
+    
+
+    (loop for line in table
+	  do (let (words)
+	       (setq words (split-sequence:split-sequence #\_ (car line)))
+	       (print "Searching:")
+	       (print words)
+	       (dolist (f (directory #p"../documents/*.conllu"))
+		 (let (extraction)	       
+		   (setq extraction (extract-ocurrences (cl-conllu:read-conllu f) words))
+		   (setq res (append extraction res))))))
     (setq res (remove-duplicates res :test #'sentence-equal))
     (princ "Casos encontrados:")
     (princ (list-length res))
     (write-conllu res "MWE.conll")))
-
-;;(defun extract-ocurrences2(sentences words)
-;;  (loop for sentence in sentences
-;;     when (subsetp (sentence-tokens sentence) words :test #'token-string-comparator)
-;;     collect sentence))
-
-;;(defun token-string-comparator (token string)
-;;(if (string= string (slot-value token 'lemma)) t nil ))
-
-(defun extract-ocurrences(sentences words)
-  (loop for sentence in sentences
-     when (sentence-contains-words sentence words)
-     collect sentence))
-
-(defun sentence-contains-words (sentence words)
-  (if (subsetp words (get-lemmas-list sentence) :test #'string=) t nil))
-
-(defun get-lemmas-list (sentence)
-  (mapcar #'(lambda (x) (slot-value  x 'lemma)) (sentence-tokens sentence)))
