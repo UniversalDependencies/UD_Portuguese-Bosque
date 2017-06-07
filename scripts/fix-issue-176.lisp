@@ -1,7 +1,5 @@
-
 (ql:quickload :cl-conllu)
 (ql:quickload :cl-utilities)
-
 (in-package :cl-conllu)
 
 (defparameter table '(("A_bordo" "" "ADV" "ADP NOUN")
@@ -326,36 +324,33 @@
 		     ("uns_vez_que" "ELIMINAR" "" "DET NOUN SCONJ")
 		     ("visto_que" "" "SCONJ" "ADJ SCONJ")))
 
-
-
-
 (defun extract-ocurrences (sentences words)
   (remove-if-not (lambda (sentence)
-		   (search words (sentence-tokens sentence) :key #'token-lemma :test #'equal))
+		   (search words (mapcar #'token-lemma (sentence-tokens sentence)) :test #'string=))
 		 sentences))
 
-
 (defun run ()
-  (let ((res)
+  (let ((res (make-hash-table :test 'equal))
 	(files (directory #p"../documents/*.conllu"))
 	(patterns (split-sequence:split-sequence #\_
-						 (remove-duplicates (mapcar (lambda (e) (string-downcase (car e)))
-									    table)
-								    :test #'equal))))
-    (reduce (lambda (n lst) (append  (read-conllu n) lst))
-	    (directory #p"../documents/*.conllu") :initial-value nil)
-    
+					       (remove-duplicates
+						(mapcar (lambda (e) (string-downcase (car e)))table):test #'equal))))
 
     (loop for line in table
-	  do (let (words)
-	       (setq words (split-sequence:split-sequence #\_ (car line)))
-	       (print "Searching:")
-	       (print words)
-	       (dolist (f (directory #p"../documents/*.conllu"))
-		 (let (extraction)	       
-		   (setq extraction (extract-ocurrences (cl-conllu:read-conllu f) words))
-		   (setq res (append extraction res))))))
-    (setq res (remove-duplicates res :test #'sentence-equal))
-    (princ "Casos encontrados:")
-    (princ (list-length res))
-    (write-conllu res "MWE.conll")))
+     do (let (words)
+      	    (setq words (split-sequence:SPLIT-SEQUENCE #\_ (car line)))
+	    (print "Searching:")
+	    (print words)
+	    (dolist (f (directory #p"../documents/*.conllu"))
+	      (let ((extraction (extract-ocurrences (cl-conllu:read-conllu f) words)))
+		(when extraction
+		  (loop for sentence in extraction
+		   do(if(gethash (sentence-id sentence) res)
+			(print "existe");TODO - pega o elemento e adiciona o meta
+			(setf (gethash (sentence-id sentence) res) sentence))))))))
+  (let (mwe-sentences)
+    (maphash #'(lambda (key val)(setq mwe-sentences (append (list val) mwe-sentences ))) res)
+    (print "Found:")
+    (print (list-length mwe-sentences))
+    (write-conllu mwe-sentences "MWE.conll"))))
+    
