@@ -1,0 +1,62 @@
+# text = Documentos internos da empresa apontam o mercado da TV interactiva e dos videojogos como aqueles que, a longo prazo, vão ter uma maior procura, seguindo-se então o vídeo e o filme digital e, por último, os efeitos especiais.
+# source = CETEMPúblico n=949 sec=clt-soc sem=94b
+# sent_id = CP949-9
+# id = 4891
+# d2d = punct(vídeo,,) -> punct(efeitos,,)  #106
+# d2d = cc(TV,e) -> cc(videojogos,e)  #106
+# d2d = cc(vídeo,e) -> cc(efeitos,e)  #106
+# d2d = punct(vídeo,,) -> punct(efeitos,,)  #106
+# d2d = cc(vídeo,e) -> cc(filme,e)  #106
+1	Documentos	documento	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
+2	internos	interno	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	1	amod	_	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	empresa	empresa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
+6	apontam	apontar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	mercado	mercado	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
+9-10	da	_	_	_	_	_	_	_	_
+9	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	11	case	_	_
+10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	TV	tv	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
+12	interactiva	interactivo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
+13	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	d2d:#106
+14-15	dos	_	_	_	_	_	_	_	_
+14	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	16	case	_	_
+15	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
+16	videojogos	videojogo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	conj	_	_
+17	como	como	ADP	<prd>|PRP|@<OC	_	18	case	_	_
+18	aqueles	aquele	PRON	<dem>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Dem	6	xcomp	_	_
+19	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	26	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+21	a	a	ADP	PRP|@ADVL>	_	23	case	_	MWE=a_longo_prazo
+22	longo	longo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	23	amod	_	_
+23	prazo	prazo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	26	obl	_	ChangedBy=Issue165|SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
+25	vão	ir	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	aux	_	_
+26	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	acl:relcl	_	_
+27	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
+28	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	29	amod	_	_
+29	procura	procura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	26	obj	_	ChangedBy=Issue165|SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+31-32	seguindo-se	_	_	_	_	_	_	_	_
+31	seguindo	seguir	VERB	<mv>|<hyphen>|<se-passive>|V|GER|@ICL-<ADVL	VerbForm=Ger	26	advcl	_	_
+32	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	expl	_	ChangedBy=Issue135
+33	então	então	ADV	<kc>|ADV|@<ADVL	_	31	advmod	_	_
+34	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
+35	vídeo	vídeo	NOUN	<first-cjt>|<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	31	nsubj	_	_
+36	e	e	CCONJ	<co-subj>|KC|@CO	_	38	cc	_	d2d:#106
+37	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+38	filme	filme	NOUN	<cjt>|<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	35	conj	_	_
+39	digital	digital	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	38	amod	_	_
+40	e	e	CCONJ	<co-subj>|<co-cu>|KC|@CO	_	46	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
+41	,	,	PUNCT	PU|@PU	_	46	punct	_	d2d:#106
+42	por	por	ADP	PRP|@>N	_	43	case	_	MWE=por_último
+43	último	último	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	46	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+44	,	,	PUNCT	PU|@PU	_	46	punct	_	d2d:#106
+45	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	_	_
+46	efeitos	efeito	NOUN	<cjt>|<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	35	conj	_	_
+47	especiais	especial	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	46	amod	_	ChangedBy=Issue165|SpaceAfter=No
+48	.	.	PUNCT	PU|@PU	_	6	punct	_	_
+

@@ -1,0 +1,136 @@
+# text = Brasil participa de coletânea em homenagem a Frank Zappa
+# source = CETENFolha n=840 cad=Folhateen sec=soc sem=94a
+# sent_id = CF840-1
+# id = 3545
+1	Brasil	Brasil	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	participa	participar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	de	de	ADP	PRP|@<PIV	_	4	case	_	_
+4	coletânea	coletânea	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	_
+5	em	em	ADP	PRP|@N<	_	6	case	_	_
+6	homenagem	homenagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+7	a	a	ADP	PRP|@N<	_	8	case	_	_
+8	Frank	Frank	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue119|MWE=Frank_Zappa|MWEPOS=PROPN
+9	Zappa	Zappa	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
+
+# text = No cinema, sorte do espectador que terá não uma, mas duas mostras internacionais: a Internacional de Cinema, que agora vai ser competitiva e tem Pedro Almodóvar e Quentin Tarantino entre os convidados, e a Banco Nacional de Cinema, que será mais que uma amostra do evento com sede no Rio, com um ciclo em homenagem ao rei do filme «B», Roger Corman, também presente.
+# source = CETENFolha n=844 cad=Ilustrada sec=nd sem=94a &D
+# sent_id = CF844-1
+# id = 3557
+# d2d = cc(competitiva,e) -> cc(tem,e)  #106
+# d2d = punct(uma,,) -> punct(mostras,,)  #106
+# d2d = cc(Pedro,e) -> cc(Quentin,e)  #106
+# d2d = cc(uma,mas) -> cc(mostras,mas)  #106
+# d2d = cc(Internacional,e) -> cc(Banco,e)  #106
+1-2	No	_	_	_	_	_	_	_	_
+1	Em	em	ADP	<first-cjt>|<sam->|PRP|@STA	_	3	case	_	_
+2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	cinema	cinema	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+5	sorte	sorte	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	3	nsubj	_	_
+6-7	do	_	_	_	_	_	_	_	_
+6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
+7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	espectador	espectador	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
+9	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	10	nsubj	_	_
+10	terá	ter	VERB	<mv>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	acl:relcl	_	_
+11	não	não	ADV	ADV|@>N	Polarity=Neg	12	advmod	_	ChangedBy=Issue108
+12	uma	uma	NUM	<first-cjt>|<card>|NUM|F|S|@<ACC	NumType=Card	10	obj	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+14	mas	mas	CCONJ	<co-acc>|KC|@CO	_	16	cc	_	d2d:#106
+15	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	16	nummod	_	ChangedBy=Issue168
+16	mostras	mostra	NOUN	<cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	conj	_	_
+17	internacionais	internacional	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	16	amod	_	ChangedBy=Issue165|SpaceAfter=No
+18	:	:	PUNCT	PU|@PU	_	3	punct	_	_
+19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
+20	Internacional	Internacional	PROPN	<first-cjt>|PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	16	appos	_	MWE=Internacional_de_Cinema
+21	de	de	ADP	PRP|@N<	_	22	case	_	_
+22	Cinema	Cinema	PROPN	PROP|@P<	Number=Sing	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+24	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	28	nsubj	_	_
+25	agora	agora	ADV	<kc>|ADV|@ADVL>	_	28	advmod	_	_
+26	vai	ir	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux	_	_
+27	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	cop	_	ChangedBy=Issue167
+28	competitiva	competitivo	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	20	acl:relcl	_	_
+29	e	e	CCONJ	<co-n<pred>|KC|@CO	_	30	cc	_	d2d:#106
+30	tem	ter	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	conj	_	_
+31	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	30	obj	_	ChangedBy=Issue119|MWE=Pedro_Almodóvar|MWEPOS=PROPN
+32	Almodóvar	Almodóvar	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119
+33	e	e	CCONJ	<co-acc>|KC|@CO	_	34	cc	_	d2d:#106
+34	Quentin	Quentin	PROPN	_	Gender=Masc|Number=Sing	31	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Quentin_Tarantino|MWEPOS=PROPN
+35	Tarantino	Tarantino	PROPN	_	Number=Sing	34	flat:name	_	ChangedBy=Issue119
+36	entre	entre	ADP	PRP|@<ADVL	_	38	case	_	_
+37	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_
+38	convidados	convidado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	30	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+39	,	,	PUNCT	PU|@PU	_	42	punct	_	_
+40	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	42	cc	_	d2d:#106
+41	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
+42	Banco	Banco	PROPN	_	Gender=Fem|Number=Sing	20	conj	_	ChangedBy=Issue119|MWE=Banco_Nacional|MWEPOS=PROPN
+43	Nacional	Nacional	PROPN	_	Number=Sing	42	flat:name	_	ChangedBy=Issue119
+44	de	de	ADP	PRP|@N<	_	45	case	_	_
+45	Cinema	Cinema	PROPN	PROP|@P<	Number=Sing	42	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+46	,	,	PUNCT	PU|@PU	_	42	punct	_	_
+47	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	49	nsubj	_	_
+48	será	ser	AUX	<cjt>|<mv>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	49	cop	_	ChangedBy=Issue167
+49	mais	muito	PRON	<quant>|<KOMP>|<COMP>|DET|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Ind	42	acl:relcl	_	_
+50	que	que	SCONJ	KS|@COM	_	52	mark	_	_
+51	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
+52	amostra	amostra	NOUN	<first-cjt>|<np-idf>|N|F|S|@KOMP<	Gender=Fem|Number=Sing	49	nmod	_	_
+53-54	do	_	_	_	_	_	_	_	_
+53	de	de	ADP	<sam->|PRP|@N<	_	55	case	_	_
+54	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
+55	evento	evento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	52	nmod	_	_
+56	com	com	ADP	PRP|@N<	_	57	case	_	_
+57	sede	sede	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	55	nmod	_	_
+58-59	no	_	_	_	_	_	_	_	_
+58	em	em	ADP	<sam->|PRP|@N<	_	60	case	_	_
+59	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_
+60	Rio	Rio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	57	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+61	,	,	PUNCT	PU|@PU	_	49	punct	_	_
+62	com	com	ADP	PRP|@<ADVL	_	64	case	_	_
+63	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	64	det	_	_
+64	ciclo	ciclo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	49	nmod	_	_
+65	em	em	ADP	PRP|@N<	_	66	case	_	_
+66	homenagem	homenagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	64	nmod	_	_
+67-68	ao	_	_	_	_	_	_	_	_
+67	a	a	ADP	PRP|@N<	_	69	case	_	_
+68	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	_	_
+69	rei	rei	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	66	nmod	_	_
+70-71	do	_	_	_	_	_	_	_	_
+70	de	de	ADP	<sam->|PRP|@N<ARG	_	72	case	_	_
+71	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	81	det	_	_
+72	filme	filme	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	69	nmod	_	_
+73	«	«	PUNCT	PU|@PU	_	74	punct	_	ChangedBy=Issue165|SpaceAfter=No
+74	B	B	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	81	nmod:npmod	_	ChangedBy=Issue165|SpaceAfter=No
+75	»	»	PUNCT	PU|@PU	_	74	punct	_	ChangedBy=Issue165|SpaceAfter=No
+76	,	,	PUNCT	PU|@PU	_	49	punct	_	_
+77	Roger	Roger	PROPN	_	Gender=Masc|Number=Sing	81	nsubj	_	ChangedBy=Issue119|MWE=Roger_Corman|MWEPOS=PROPN
+78	Corman	Corman	PROPN	_	Number=Sing	77	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+79	,	,	PUNCT	PU|@PU	_	49	punct	_	_
+80	também	também	ADV	ADV|@ADVL>	_	81	advmod	_	_
+81	presente	presentar	VERB	<mv>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	69	acl	_	ChangedBy=Issue165|SpaceAfter=No
+82	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+# text = anunciava-se uma corrida de touros para o Campo Pequeno em homenagem aos valorosos corredores;
+# source = CETEMPúblico n=125 sec=des sem=98b
+# sent_id = CP125-3
+# id = 635
+1-2	anunciava-se	_	_	_	_	_	_	_	_
+1	anunciava	anunciar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	_
+3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	corrida	corrida	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	MWE=corrida_de_touros|MWEPOS=NOUN
+5	de	de	ADP	_	_	4	compound	_	_
+6	touros	touros	NOUN	_	_	4	compound	_	_
+7	para	para	ADP	PRP|@N<	_	9	case	_	_
+8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	Campo	Campo	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	ChangedBy=Issue119|MWE=Campo_Pequeno|MWEPOS=PROPN
+10	Pequeno	Pequeno	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
+11	em	em	ADP	<sam->|PRP|@N<	_	12	case	_	MWE=em_homenagem_a
+12	homenagem	homenagem	NOUN	N|@P<	_	4	nmod	_	_
+13-14	aos	_	_	_	_	_	_	_	_
+13	a	a	ADP	PRP|@N<	_	16	case	_	_
+14	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
+15	valorosos	valoroso	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	16	amod	_	_
+16	corredores	corredor	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+17	;	;	PUNCT	PU|@PU	_	1	punct	_	_
+

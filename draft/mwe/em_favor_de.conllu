@@ -1,0 +1,310 @@
+# text = O panorama sofre prejuízos demais em favor da tese.
+# source = CETENFolha n=17 cad=Ilustrada sec=nd sem=94b
+# sent_id = CF17-5
+# id = 69
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	panorama	panorama	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	sofre	sofrer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	prejuízos	prejuízo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
+5	demais	demais	DET	<quant>|DET|M|P|@N<	Gender=Masc|Number=Plur|PronType=Ind	4	det	_	_
+6	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	MWE=em_favor_de
+7	favor	favor	NOUN	N|@P<	_	3	obl	_	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	PRP|@N<	_	10	case	_	_
+9	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	tese	tese	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+# text = Os discursos da frugalidade, da austeridade ficaram para as repúblicas gregas e romanas, aquelas que Montesquieu ainda celebrava, em meados do século 18, quando dizia que o regime republicano se caracteriza pela disposição de seus cidadãos a renunciar ao bem privado em favor do bem comum e por isso, acrescentava ele, trata-se de regime impossível na modernidade, na qual se busca a vantagem pessoal.
+# source = CETENFolha n=401 cad=Mais! sec=nd sem=94a
+# sent_id = CF401-5
+# id = 1673
+# d2d = cc(gregas,e) -> cc(romanas,e)  #106
+# d2d = punct(frugalidade,,) -> punct(austeridade,,)  #106
+# d2d = cc(caracteriza,e) -> cc(acrescentava,e)  #106
+1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	discursos	discurso	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
+3-4	da	_	_	_	_	_	_	_	_
+3	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	5	case	_	_
+4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	frugalidade	frugalidade	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	austeridade	austeridade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	conj	_	_
+10	ficaram	ficar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
+11	para	para	ADP	PRP|@<ADVL	_	13	case	_	_
+12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
+13	repúblicas	repúblico	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	10	obl	_	ChangedBy=Issue137
+14	gregas	grega	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	13	amod	_	_
+15	e	e	CCONJ	<co-postnom>|KC|@CO	_	16	cc	_	d2d:#106
+16	romanas	romana	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	14	conj	_	ChangedBy=Issue165|SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+18	aquelas	aquele	DET	<dem>|DET|F|P|@N<PRED	Gender=Fem|Number=Plur|PronType=Dem	13	appos	_	_
+19	que	que	PRON	<rel>|INDP|F|P|@ACC>	Gender=Fem|Number=Plur|PronType=Rel	22	obj	_	_
+20	Montesquieu	Montesquieu	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj	_	_
+21	ainda	ainda	ADV	ADV|@ADVL>	_	22	advmod	_	_
+22	celebrava	celebrar	VERB	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	18	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+24	em	em	ADP	PRP|@<ADVL	_	25	case	_	_
+25	meados	meado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	obl	_	ChangedBy=Issue137
+26-27	do	_	_	_	_	_	_	_	_
+26	de	de	ADP	<sam->|PRP|@N<	_	28	case	_	_
+27	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	século	século	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	_
+29	18	18	NUM	<card>|NUM|M|P|@N<	NumType=Card	28	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	22	punct	_	_
+31	quando	quando	ADV	<rel>|ADV|@ADVL>	_	32	advmod	_	_
+32	dizia	dizer	VERB	<mv>|V|IMPF|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	28	acl:relcl	_	_
+33	que	que	SCONJ	KS|@SUB	_	38	mark	_	_
+34	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
+35	regime	regime	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	38	nsubj	_	_
+36	republicano	republicano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	35	amod	_	_
+37	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	expl	_	ChangedBy=Issue135
+38	caracteriza	caracterizar	VERB	<first-cjt>|<mv>|<se-passive>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	ccomp	_	_
+39-40	pela	_	_	_	_	_	_	_	_
+39	por	por	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	41	case	_	_
+40	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+41	disposição	disposição	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	38	obl	_	_
+42	de	de	ADP	PRP|@N<	_	44	case	_	_
+43	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	44	det	_	_
+44	cidadãos	cidadão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	41	nmod	_	_
+45	a	a	ADP	PRP|@<ADVL	_	46	mark	_	_
+46	renunciar	renunciar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	38	advcl	_	_
+47-48	ao	_	_	_	_	_	_	_	_
+47	a	a	ADP	<sam->|PRP|@<PIV	_	49	case	_	_
+48	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_
+49	bem	bem	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	46	obl	_	_
+50	privado	privado	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	49	amod	_	_
+51	em	em	ADP	<sam->|PRP|@<ADVL	_	52	case	_	MWE=em_favor_de
+52	favor	favor	NOUN	N|@P<	_	46	obl	_	_
+53-54	do	_	_	_	_	_	_	_	_
+53	de	de	ADP	PRP|@N<	_	55	case	_	_
+54	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
+55	bem	bem	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	52	nmod	_	_
+56	comum	comum	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	55	amod	_	_
+57	e	e	CCONJ	<co-fcl>|KC|@CO	_	61	cc	_	d2d:#106
+58	por	por	ADP	PRP|@ADVL>	_	59	case	_	_
+59	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	61	obl	_	ChangedBy=Issue165|SpaceAfter=No
+60	,	,	PUNCT	PU|@PU	_	59	punct	_	_
+61	acrescentava	acrescentar	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	38	conj	_	_
+62	ele	ele	PRON	PERS|M|3S|NOM|@<SUBJ	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	61	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
+63	,	,	PUNCT	PU|@PU	_	64	punct	_	_
+64-65	trata-se	_	_	_	_	_	_	_	_
+64	trata	tratar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	61	ccomp	_	_
+65	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	64	expl	_	ChangedBy=Issue135
+66	de	de	ADP	PRP|@<PIV	_	67	case	_	_
+67	regime	regime	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	64	obl	_	_
+68	impossível	impossível	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	67	amod	_	_
+69-70	na	_	_	_	_	_	_	_	_
+69	em	em	ADP	<sam->|PRP|@<ADVL	_	71	case	_	_
+70	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	71	det	_	_
+71	modernidade	modernidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	64	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+72	,	,	PUNCT	PU|@PU	_	77	punct	_	_
+73-74	na	_	_	_	_	_	_	_	_
+73	em	em	ADP	<sam->|PRP|@ADVL>	_	75	case	_	_
+74	a	o	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	75	det	_	MWE=a_qual
+75	qual	qual	PRON	DET|F|S|@P<	Gender=Fem|Number=Sing|PronType=Rel	77	obl	_	_
+76	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	77	nsubj	_	_
+77	busca	buscar	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	71	acl:relcl	_	_
+78	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	79	det	_	_
+79	vantagem	vantagem	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	77	obj	_	_
+80	pessoal	pessoal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	79	amod	_	ChangedBy=Issue165|SpaceAfter=No
+81	.	.	PUNCT	PU|@PU	_	10	punct	_	_
+
+# text = E, de fato, os ventos não sopram em favor dos venezuelanos.
+# source = CETENFolha n=537 cad=Opinião sec=opi sem=94b
+# sent_id = CF537-4
+# id = 2254
+1	E	e	CCONJ	KC|@CO	_	9	cc	_	ChangedBy=Issue165|SpaceAfter=No
+2	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+3	de	de	ADP	PRP|@ADVL>	_	4	case	_	MWE=de_fato
+4	fato	fato	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	ventos	vento	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
+8	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
+9	sopram	soprar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	em	em	ADP	<sam->|PRP|@<ADVL	_	11	case	_	MWE=em_favor_de
+11	favor	favor	NOUN	N|@P<	_	9	obl	_	_
+12-13	dos	_	_	_	_	_	_	_	_
+12	de	de	ADP	PRP|@N<	_	14	case	_	_
+13	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+14	venezuelanos	venezuelano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+15	.	.	PUNCT	PU|@PU	_	9	punct	_	_
+
+# text = Tampouco passa por FHC, representante da contemporização bem explicada, ou por Antonio Britto cujo voto, em favor da anistia total aos agricultores, semana passada, ressuscitou os piores prognósticos sobre seu estilo.
+# source = CETENFolha n=798 cad=Dinheiro sec=eco sem=94b
+# sent_id = CF798-4
+# id = 3358
+# d2d = punct(FHC,,) -> punct(Antonio,,)  #106
+# d2d = cc(FHC,ou) -> cc(Antonio,ou)  #106
+1	Tampouco	tampouco	ADV	ADV|@ADVL>	_	2	advmod	_	_
+2	passa	passar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	por	por	ADP	<first-cjt>|PRP|@<PIV	_	4	case	_	_
+4	FHC	FHC	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+6	representante	representante	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	4	appos	_	_
+7-8	da	_	_	_	_	_	_	_	_
+7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
+8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	contemporização	contemporização	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
+10	bem	bem	ADV	<quant>|ADV|@>A	_	11	advmod	_	_
+11	explicada	explicado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	9	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+13	ou	ou	CCONJ	<co-piv>|KC|@CO	_	15	cc	_	d2d:#106
+14	por	por	ADP	<cjt>|PRP|@<PIV	_	15	case	_	_
+15	Antonio	Antonio	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Antonio_Britto|MWEPOS=PROPN
+16	Britto	Britto	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
+17	cujo	cujo	DET	<rel>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Rel	18	det	_	_
+18	voto	voto	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	33	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
+19	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+20	em	em	ADP	<sam->|PRP|@ADVL>	_	21	case	_	MWE=em_favor_de
+21	favor	favor	NOUN	N|@P<	_	33	obl	_	_
+22-23	da	_	_	_	_	_	_	_	_
+22	de	de	ADP	PRP|@N<	_	24	case	_	_
+23	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
+24	anistia	anistia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
+25	total	total	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	24	amod	_	_
+26-27	aos	_	_	_	_	_	_	_	_
+26	a	a	ADP	<sam->|PRP|@N<	_	28	case	_	_
+27	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_
+28	agricultores	agricultor	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+29	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+30	semana	semana	NOUN	<np-idf>|N|F|S|@ADVL>	Gender=Fem|Number=Sing	33	obl	_	_
+31	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	30	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	31	punct	_	_
+33	ressuscitou	ressuscitar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	_	_
+34	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_
+35	piores	mau	ADJ	<KOMP>|<SUP>|<COMP>|ADJ|M|P|@>N	Gender=Masc|Number=Plur	36	amod	_	_
+36	prognósticos	prognóstico	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	33	obj	_	_
+37	sobre	sobre	ADP	PRP|@N<	_	39	case	_	_
+38	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	39	det	_	_
+39	estilo	estilo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+40	.	.	PUNCT	PU|@PU	_	2	punct	_	_
+
+# text = Mesmo criticado, ele defende sua posição claramente em favor dos evangélicos e de seu ponto de vista religioso.
+# source = CETENFolha n=958 cad=Caderno Especial sec=nd sem=94a
+# sent_id = CF958-9
+# id = 4055
+# d2d = cc(evangélicos,e) -> cc(ponto,e)  #106
+1	Mesmo	mesmo	ADV	<quant>|ADV|@>A	_	2	advmod	_	_
+2	criticado	criticar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	5	dep	_	ChangedBy=Issue165|SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	defende	defender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	7	det	_	_
+7	posição	posição	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	_
+8	claramente	claramente	ADV	ADV|@<ADVL	_	5	advmod	_	_
+9	em	em	ADP	<first-cjt>|<sam->|PRP|@<ADVL	_	10	case	_	MWE=em_favor_de
+10	favor	favor	NOUN	N|@P<	_	5	obl	_	_
+11-12	dos	_	_	_	_	_	_	_	_
+11	de	de	ADP	PRP|@N<	_	13	case	_	_
+12	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+13	evangélicos	evangélico	ADJ	<first-cjt>|<n>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
+14	e	e	CCONJ	<co-advl>|KC|@CO	_	17	cc	_	d2d:#106
+15	de	de	ADP	<cjt>|PRP|@<ADVL	_	17	case	_	_
+16	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	17	det	_	_
+17	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	13	conj	_	MWE=ponto_de_vista|MWEPOS=NOUN
+18	de	de	ADP	_	_	17	compound	_	_
+19	vista	vista	NOUN	_	_	17	compound	_	_
+20	religioso	religioso	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	5	punct	_	_
+
+# text = O patrimônio público não é fetiche a ser adorado e sim bem a ser utilizado principalmente em favor de quem não tem acesso a escolas, nem à assistência médica, nem a empregos.
+# source = CETENFolha n=998 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF998-3
+# id = 4211
+# d2d = cc(fetiche,e) -> cc(sim,e)  #106
+# d2d = cc(escolas,nem) -> cc(empregos,nem)  #106
+# d2d = cc(escolas,nem) -> cc(assistência,nem)  #106
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	patrimônio	patrimônio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
+3	público	público	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
+4	não	não	ADV	ADV|@ADVL>	Polarity=Neg	6	advmod	_	ChangedBy=Issue108
+5	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
+6	fetiche	fetiche	NOUN	<first-cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+7	a	a	ADP	PRP|@N<	_	9	mark	_	_
+8	ser	ser	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	9	aux:pass	_	_
+9	adorado	adorar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	_	_
+10	e	e	CCONJ	<co-sc>|KC|@CO	_	11	cc	_	d2d:#106
+11	sim	sim	ADV	<cjt>|ADV|@<ADVL	_	6	conj	_	_
+12	bem	bem	NOUN	<cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	6	conj	_	_
+13	a	a	ADP	PRP|@N<	_	15	mark	_	_
+14	ser	ser	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	15	aux:pass	_	_
+15	utilizado	utilizar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	acl	_	_
+16	principalmente	principalmente	ADV	ADV|@>A	_	22	advmod	_	_
+17	em	em	ADP	PRP|@<ADVL	_	18	case	_	MWE=em_favor_de
+18	favor	favor	NOUN	N|@P<	_	15	obl	_	_
+19	de	de	ADP	PRP|@N<	_	22	mark	_	_
+20	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	22	nsubj	_	_
+21	não	não	ADV	_	Polarity=Neg	22	advmod	_	_
+22	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl	_	_
+23	acesso	acesso	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	obj	_	_
+24	a	a	ADP	<first-cjt>|PRP|@N<	_	25	case	_	_
+25	escolas	escola	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	23	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+27	nem	nem	CCONJ	<co-postnom>|<parkc-1>|KC|@CO	_	30	cc	_	d2d:#106
+28-29	à	_	_	_	_	_	_	_	_
+28	a	a	ADP	<cjt>|<sam->|PRP|@N<	_	31	case	_	_
+29	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+30	assistência	assistência	NOUN	_	_	25	conj	_	ChangedBy=Issue149|MWE=assistência_médica|MWEPOS=NOUN
+31	médica	médica	ADJ	_	_	30	compound	_	ChangedBy=Issue165|SpaceAfter=No
+32	,	,	PUNCT	PU|@PU	_	35	punct	_	_
+33	nem	nem	CCONJ	<co-postnom>|<parkc-2>|KC|@CO	_	35	cc	_	d2d:#106
+34	a	a	ADP	<cjt>|PRP|@N<	_	35	case	_	_
+35	empregos	emprego	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	conj	_	ChangedBy=Issue149|ChangedBy=Issue165|SpaceAfter=No
+36	.	.	PUNCT	PU|@PU	_	6	punct	_	_
+
+# text = No entanto, o deputado popular acusou «receios de bairrismos exacerbados» e acabou por seguir a linha do líder do partido, ao rejeitar a criação de regiões em favor de mais poder para as autarquias.
+# source = CETEMPúblico n=209 sec=soc sem=96b
+# sent_id = CP209-8
+# id = 1146
+# d2d = cc(acusou,e) -> cc(seguir,e)  #106
+1	No	no	ADP	PRP|@ADVL>	_	2	case	_	MWE=No_entanto
+2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue165|SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	deputado	deputado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
+6	popular	popular	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	_
+7	acusou	acusar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	«	«	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
+9	receios	receio	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	obj	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	bairrismos	bairrismo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
+12	exacerbados	exacerbar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	11	acl	_	ChangedBy=Issue165|SpaceAfter=No
+13	»	»	PUNCT	PU|@PU	_	9	punct	_	_
+14	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
+15	acabou	acabar	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux	_	_
+16	por	por	ADP	PRP|@PRT-AUX<	_	17	obl	_	_
+17	seguir	seguir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	conj	_	_
+18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	linha	linha	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
+20-21	do	_	_	_	_	_	_	_	_
+20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
+21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	líder	líder	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
+23-24	do	_	_	_	_	_	_	_	_
+23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
+24	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
+25	partido	partido	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	29	punct	_	_
+27-28	ao	_	_	_	_	_	_	_	_
+27	a	a	ADP	<sam->|PRP|@<ADVL	_	29	mark	_	_
+28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
+29	rejeitar	rejeitar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	advcl	_	_
+30	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
+31	criação	criação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	29	obj	_	_
+32	de	de	ADP	PRP|@N<ARG	_	33	case	_	_
+33	regiões	região	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	31	nmod	_	_
+34	em	em	ADP	PRP|@N<	_	35	case	_	MWE=em_favor_de
+35	favor	favor	NOUN	N|@P<	_	31	nmod	_	_
+36	de	de	ADP	PRP|@N<	_	38	case	_	_
+37	mais	muito	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	38	det	_	_
+38	poder	poder	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	_
+39	para	para	ADP	PRP|@N<	_	41	case	_	_
+40	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	41	det	_	_
+41	autarquias	autarquia	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	38	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+42	.	.	PUNCT	PU|@PU	_	7	punct	_	_
+

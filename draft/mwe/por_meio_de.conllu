@@ -1,0 +1,131 @@
+# text = Esse colégio foi multado semana passada em 2 milhões de Ufir quase R$ 1 milhão, valor que corresponde ao II (Imposto de Importação) e IPI (Imposto sobre Produtos Industrializados) sonegados por meio da fraude.
+# source = CETENFolha n=302 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF302-2
+# id = 1265
+# d2d = cc(II,e) -> cc(IPI,e)  #106
+1	Esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	colégio	colégio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
+3	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
+4	multado	multar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+5	semana	semana	NOUN	<np-idf>|N|F|S|@<ADVL	Gender=Fem|Number=Sing	4	obl	_	_
+6	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	5	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+7	em	em	ADP	PRP|@<PIV	_	9	case	_	_
+8	2	2	NUM	<card>|NUM|M|P|@>N	NumType=Card	9	nummod	_	ChangedBy=Issue168
+9	milhões	milhão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	_
+10	de	de	ADP	PRP|@N<ARG	_	11	case	_	_
+11	Ufir	Ufir	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+12	quase	quase	ADV	<quant>|ADV|@>N	_	13	advmod	_	_
+13	R$	R$	SYM	_	Gender=Masc|Number=Sing	11	appos	_	_
+14	1	1	NUM	<card>|NUM|M|S|@>N	NumType=Card	15	nummod	_	ChangedBy=Issue168
+15	milhão	milhão	NOUN	<np-def>|N|M|S|@N<	Gender=Masc|Number=Sing	13	nmod:npmod	_	ChangedBy=Issue165|SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+17	valor	valor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	13	appos	_	_
+18	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	19	nsubj	_	_
+19	corresponde	corresponder	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	_
+20-21	ao	_	_	_	_	_	_	_	_
+20	a	a	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
+21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
+22	II	II	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	_
+23	(	(	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
+24	Imposto	Imposto	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	22	appos	_	MWE=Imposto_de_Importação
+25	de	de	ADP	PRP|@N<	_	26	case	_	_
+26	Importação	Importação	PROPN	PROP|@P<	Number=Sing	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+27	)	)	PUNCT	PU|@PU	_	24	punct	_	_
+28	e	e	CCONJ	<co-prparg>|KC|@CO	_	29	cc	_	d2d:#106
+29	IPI	IPI	PROPN	PROP|M|S|@<PIV	Gender=Masc|Number=Sing	22	conj	_	ChangedBy=Issue149
+30	(	(	PUNCT	PU|@PU	_	31	punct	_	ChangedBy=Issue165|SpaceAfter=No
+31	Imposto	Imposto	PROPN	_	Gender=Masc|Number=Sing	29	appos	_	ChangedBy=Issue119|MWE=Imposto_sobre_Produtos_Industrializados|MWEPOS=PROPN
+32	sobre	sobre	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119
+33	Produtos	Produtos	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119
+34	Industrializados	Industrializados	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+35	)	)	PUNCT	PU|@PU	_	31	punct	_	_
+36	sonegados	sonegar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	29	acl	_	_
+37	por	por	ADP	<sam->|PRP|@<ADVL	_	38	case	_	MWE=por_meio_de
+38	meio	meio	NOUN	N|@P<	_	36	obl	_	_
+39-40	da	_	_	_	_	_	_	_	_
+39	de	de	ADP	PRP|@N<	_	41	case	_	_
+40	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
+41	fraude	fraude	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	38	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+42	.	.	PUNCT	PU|@PU	_	4	punct	_	_
+
+# text = Por dois motivos: a eventual queda na arrecadação e problemas jurídicos que impedem mexer na base de cálculo do imposto por meio de MP, já que ela foi fixada em emenda constitucional.
+# source = CETENFolha n=687 cad=Dinheiro sec=eco sem=94a
+# sent_id = CF687-4
+# id = 2887
+# d2d = cc(queda,e) -> cc(problemas,e)  #106
+1	Por	por	ADP	<first-cjt>|PRP|@STA	_	3	case	_	_
+2	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168
+3	motivos	motivo	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+4	:	:	PUNCT	PU|@PU	_	3	punct	_	_
+5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+6	eventual	eventual	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	7	amod	_	_
+7	queda	queda	NOUN	<first-cjt>|<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	3	appos	_	_
+8-9	na	_	_	_	_	_	_	_	_
+8	em	em	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	arrecadação	arrecadação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
+11	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	12	cc	_	d2d:#106
+12	problemas	problema	NOUN	<cjt>|<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	7	conj	_	_
+13	jurídicos	jurídico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	12	amod	_	_
+14	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	15	nsubj	_	_
+15	impedem	impedir	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_
+16	mexer	mexer	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	15	xcomp	_	_
+17-18	na	_	_	_	_	_	_	_	_
+17	em	em	ADP	<sam->|PRP|@<PIV	_	19	case	_	_
+18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	base	base	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	_
+20	de	de	ADP	PRP|@N<	_	21	case	_	_
+21	cálculo	cálculo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
+23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	imposto	imposto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
+25	por	por	ADP	PRP|@<ADVL	_	26	case	_	MWE=por_meio_de
+26	meio	meio	NOUN	N|@P<	_	16	obl	_	_
+27	de	de	ADP	PRP|@N<	_	28	case	_	_
+28	MP	MP	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+29	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+30	já	já	ADV	ADV|@SUB	_	34	mark	_	MWE=já_que
+31	que	que	SCONJ	KS|@A<	_	30	fixed	_	_
+32	ela	ela	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	34	nsubj:pass	_	_
+33	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	aux:pass	_	_
+34	fixada	fixar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	16	advcl	_	_
+35	em	em	ADP	PRP|@<PIV	_	36	case	_	_
+36	emenda	emenda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	34	obl	_	_
+37	constitucional	constitucional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	36	amod	_	ChangedBy=Issue165|SpaceAfter=No
+38	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+# text = Um projecto que será concretizado por meio de protocolos, mas que Anabela Moutinho não teve tempo de concretizar por «falta de tempo útil».
+# source = CETEMPúblico n=974 sec=clt sem=98a
+# sent_id = CP974-3
+# id = 4999
+# d2d = punct(concretizado,,) -> punct(teve,,)  #106
+# d2d = cc(concretizado,mas) -> cc(teve,mas)  #106
+1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	projecto	projecto	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+3	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	5	nsubj:pass	_	_
+4	será	ser	AUX	<first-cjt>|<aux>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	aux:pass	_	_
+5	concretizado	concretizar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl:relcl	_	_
+6	por	por	ADP	PRP|@<ADVL	_	7	case	_	MWE=por_meio_de
+7	meio	meio	NOUN	N|@P<	_	5	obl	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
+9	protocolos	protocolo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+11	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
+12	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	19	obj	_	_
+13	Anabela	Anabela	PROPN	_	Gender=Fem|Number=Sing	16	nsubj	_	ChangedBy=Issue119|MWE=Anabela_Moutinho|MWEPOS=PROPN
+14	Moutinho	Moutinho	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
+15	não	não	ADV	_	Polarity=Neg	16	advmod	_	_
+16	teve	ter	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
+17	tempo	tempo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	_
+18	de	de	ADP	PRP|@N<	_	19	mark	_	_
+19	concretizar	concretizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	acl	_	_
+20	por	por	ADP	PRP|@<ADVL	_	22	case	_	_
+21	«	«	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
+22	falta	falta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	ChangedBy=Issue137
+23	de	de	ADP	PRP|@N<	_	24	case	_	_
+24	tempo	tempo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	_
+25	útil	útil	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	24	amod	_	ChangedBy=Issue165|SpaceAfter=No
+26	»	»	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
+27	.	.	PUNCT	PU|@PU	_	2	punct	_	_
+

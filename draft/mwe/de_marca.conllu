@@ -1,0 +1,145 @@
+# text = O fogo consumiu inúmeros fardos de bacalhau, dois dos três túneis de secagem artificial, alguns compressores, duas carrinhas utilizadas no transporte dos trabalhadores da fábrica e um carro de marca «Triumph», propriedade do comendador.
+# source = CETEMPúblico n=103 sec=soc sem=93a
+# sent_id = CP103-1
+# id = 537
+# d2d = punct(fardos,,) -> punct(carrinhas,,)  #106
+# d2d = punct(fardos,,) -> punct(dois,,)  #106
+# d2d = cc(fardos,e) -> cc(carro,e)  #106
+# d2d = punct(fardos,,) -> punct(compressores,,)  #106
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	fogo	fogo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	consumiu	consumir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	inúmeros	inúmero	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	5	amod	_	_
+5	fardos	fardo	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	bacalhau	bacalhau	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+9	dois	dois	NUM	<cjt>|<card>|NUM|M|P|@<ACC	NumType=Card	5	conj	_	ChangedBy=Issue168
+10-11	dos	_	_	_	_	_	_	_	_
+10	de	de	ADP	<sam->|PRP|@A<	_	13	case	_	_
+11	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+12	três	três	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168
+13	túneis	túnel	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
+14	de	de	ADP	PRP|@N<	_	15	case	_	_
+15	secagem	secagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
+16	artificial	artificial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	ChangedBy=Issue165|SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
+18	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	19	det	_	_
+19	compressores	compressor	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	conj	_	ChangedBy=Issue165|SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+21	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168
+22	carrinhas	carrinha	NOUN	<cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	conj	_	_
+23	utilizadas	utilizar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	22	acl	_	_
+24-25	no	_	_	_	_	_	_	_	_
+24	em	em	ADP	<sam->|PRP|@<ADVL	_	26	case	_	_
+25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
+26	transporte	transporte	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	ChangedBy=Issue137
+27-28	dos	_	_	_	_	_	_	_	_
+27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
+28	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
+29	trabalhadores	trabalhador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	26	nmod	_	_
+30-31	da	_	_	_	_	_	_	_	_
+30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
+31	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	32	det	_	_
+32	fábrica	fábrica	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	nmod	_	_
+33	e	e	CCONJ	<co-acc>|KC|@CO	_	35	cc	_	d2d:#106
+34	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
+35	carro	carro	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	conj	_	_
+36	de	de	ADP	PRP|@N<	_	37	case	_	MWE=de_marca
+37	marca	marca	NOUN	N|@P<	_	35	nmod	_	_
+38	«	«	PUNCT	PU|@PU	_	39	punct	_	ChangedBy=Issue165|SpaceAfter=No
+39	Triumph	Triumph	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	37	appos	_	ChangedBy=Issue165|SpaceAfter=No
+40	»	»	PUNCT	PU|@PU	_	39	punct	_	ChangedBy=Issue165|SpaceAfter=No
+41	,	,	PUNCT	PU|@PU	_	42	punct	_	_
+42	propriedade	propriedade	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	35	appos	_	_
+43-44	do	_	_	_	_	_	_	_	_
+43	de	de	ADP	<sam->|PRP|@N<	_	45	case	_	_
+44	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	comendador	comendador	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	42	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+# text = A GF confiscou ainda uma viatura ligeira de marca Bedford, envolvida na rede de contrabando, ontem descoberta.
+# source = CETEMPúblico n=119 sec=soc sem=92a
+# sent_id = CP119-3
+# id = 605
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	GF	GF	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	confiscou	confiscar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	ainda	ainda	ADV	ADV|@>N	_	6	advmod	_	_
+5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	viatura	viatura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
+7	ligeira	ligeiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	6	amod	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	MWE=de_marca
+9	marca	marca	NOUN	N|@P<	_	6	nmod	_	_
+10	Bedford	Bedford	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	9	appos	_	ChangedBy=Issue165|SpaceAfter=No
+11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+12	envolvida	envolver	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
+13-14	na	_	_	_	_	_	_	_	_
+13	em	em	ADP	<sam->|PRP|@<ADVL	_	15	case	_	_
+14	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	15	det	_	_
+15	rede	rede	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue137
+16	de	de	ADP	PRP|@N<	_	17	case	_	_
+17	contrabando	contrabando	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+19	ontem	ontem	ADV	ADV|@ADVL>	_	20	advmod	_	_
+20	descoberta	descobrir	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	15	acl	_	ChangedBy=Issue165|SpaceAfter=No
+21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+# text = Quantidade idêntica de tabaco -- seis caixas de marca Camel e 124 de Winston -- foi aprendida, na madrugada de terça-feira, na zona de Vila do Bispo, por elementos do comando da Guarda Fiscal do Algarve.
+# source = CETEMPúblico n=119 sec=soc sem=92a
+# sent_id = CP119-4
+# id = 606
+# d2d = cc(caixas,e) -> cc(124,e)  #106
+1	Quantidade	quantidade	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj:pass	_	_
+2	idêntica	idêntico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
+3	de	de	ADP	PRP|@N<ARG	_	4	case	_	_
+4	tabaco	tabaco	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
+5	--	--	PUNCT	PU|@PU	_	7	punct	_	_
+6	seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	7	nummod	_	ChangedBy=Issue168
+7	caixas	caixa	NOUN	<first-cjt>|<np-def>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	1	appos	_	_
+8	de	de	ADP	PRP|@N<	_	9	case	_	MWE=de_marca
+9	marca	marca	NOUN	N|@P<	_	7	nmod	_	_
+10	Camel	Camel	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	9	appos	_	_
+11	e	e	CCONJ	<co-n<pred>|KC|@CO	_	12	cc	_	d2d:#106
+12	124	124	NUM	<cjt>|<card>|NUM|F|P|@N<PRED	NumType=Card	7	conj	_	ChangedBy=Issue168
+13	de	de	ADP	PRP|@A<	_	14	case	_	_
+14	Winston	Winston	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
+15	--	--	PUNCT	PU|@PU	_	7	punct	_	_
+16	foi	ir	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux	_	_
+17	aprendida	aprender	VERB	<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	<sam->|PRP|@<ADVL	_	21	case	_	_
+20	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	21	det	_	_
+21	madrugada	madrugada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	ChangedBy=Issue137
+22	de	de	ADP	PRP|@N<	_	23	case	_	_
+23	terça-feira	terça-feira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+25-26	na	_	_	_	_	_	_	_	_
+25	em	em	ADP	<sam->|PRP|@<ADVL	_	27	case	_	_
+26	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	27	det	_	_
+27	zona	zona	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	ChangedBy=Issue137
+28	de	de	ADP	PRP|@N<	_	29	case	_	_
+29	Vila	Vila	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	MWE=Vila_do_Bispo
+30-31	do	_	_	_	_	_	_	_	_
+30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
+31	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	Bispo	Bispo	PROPN	PROP|@P<	Number=Sing	29	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+33	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+34	por	por	ADP	PRP|@PASS	_	35	case	_	_
+35	elementos	elemento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obl:agent	_	_
+36-37	do	_	_	_	_	_	_	_	_
+36	de	de	ADP	<sam->|PRP|@N<	_	38	case	_	_
+37	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
+38	comando	comando	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	_
+39-40	da	_	_	_	_	_	_	_	_
+39	de	de	ADP	<sam->|PRP|@N<	_	41	case	_	_
+40	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	41	det	_	_
+41	Guarda	Guarda	PROPN	_	Gender=Fem|Number=Sing	38	nmod	_	ChangedBy=Issue119|MWE=Guarda_Fiscal|MWEPOS=PROPN
+42	Fiscal	Fiscal	PROPN	_	Number=Sing	41	flat:name	_	ChangedBy=Issue119
+43-44	do	_	_	_	_	_	_	_	_
+43	de	de	ADP	PRP|@N<	_	45	case	_	_
+44	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	Algarve	Algarve	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	41	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	17	punct	_	_
+

@@ -1,0 +1,49 @@
+# text = Em algumas cidades, onde os pais têm poder de decisão no sistema educacional, os projetos de novas escolas incorporam computadores, CD-ROM, modem e linhas telefônicas para permitir que os estudantes se comuniquem on line.
+# source = CETENFolha n=428 cad=Informática sec=com sem=94a
+# sent_id = CF428-1
+# id = 1785
+# d2d = punct(computadores,,) -> punct(CD-ROM,,)  #106
+# d2d = cc(computadores,e) -> cc(linhas,e)  #106
+# d2d = punct(computadores,,) -> punct(modem,,)  #106
+1	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
+2	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	3	det	_	_
+3	cidades	cidade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+5	onde	onde	ADV	<rel>|ADV|@ADVL>	_	8	advmod	_	_
+6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	pais	pai	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
+8	têm	ter	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_
+9	poder	poder	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
+10	de	de	ADP	PRP|@N<	_	11	case	_	_
+11	decisão	decisão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+12-13	no	_	_	_	_	_	_	_	_
+12	em	em	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
+13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	sistema	sistema	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
+15	educacional	educacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	ChangedBy=Issue165|SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+17	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
+18	projetos	projeto	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	22	nsubj	_	_
+19	de	de	ADP	PRP|@N<	_	21	case	_	_
+20	novas	novo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	21	amod	_	_
+21	escolas	escola	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
+22	incorporam	incorporar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+23	computadores	computador	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	22	obj	_	ChangedBy=Issue165|SpaceAfter=No
+24	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
+25	CD-ROM	cd-rom	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	ChangedBy=Issue165|SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+27	modem	modem	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	conj	_	_
+28	e	e	CCONJ	<co-acc>|KC|@CO	_	29	cc	_	d2d:#106
+29	linhas	linha	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	23	conj	_	_
+30	telefônicas	telefônico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	29	amod	_	_
+31	para	para	ADP	PRP|@<ADVL	_	32	mark	_	_
+32	permitir	permitir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	_
+33	que	que	SCONJ	KS|@SUB	_	37	mark	_	_
+34	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_
+35	estudantes	estudante	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	37	nsubj	_	_
+36	se	se	PRON	<refl>|PERS|M|3P|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	37	iobj	_	_
+37	comuniquem	comunicar	VERB	<mv>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	ccomp	_	_
+38	on	on	X	_	_	37	obl	_	MWE=on_line|MWEPOS=ADV
+39	line	line	X	_	Gender=Masc|Number=Sing	38	flat:foreign	_	ChangedBy=Issue165|SpaceAfter=No
+40	.	.	PUNCT	PU|@PU	_	22	punct	_	_
+

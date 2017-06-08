@@ -1,0 +1,231 @@
+# text = Não há hipótese do Plano ser lançado antes do Congresso votar, primeiro, a emenda constitucional que cria o Fundo Social de Emergência e, em seguida, o Orçamento federal para 1994 com deficit zero.
+# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
+# sent_id = CF219-3
+# id = 944
+# d2d = cc(emenda,e) -> cc(Orçamento,e)  #106
+# d2d = punct(emenda,,) -> punct(Orçamento,,)  #106
+# d2d = punct(emenda,,) -> punct(Orçamento,,)  #106
+1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
+2	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	hipótese	hipótese	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+4-5	do	_	_	_	_	_	_	_	_
+4	de	de	ADP	<sam->|PRP|@N<ARG	_	8	mark	_	_
+5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Plano	plano	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj:pass	_	_
+7	ser	ser	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	8	aux:pass	_	_
+8	lançado	lançar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	_	_
+9	antes	antes	ADV	ADV|@<ADVL	_	8	advmod	_	_
+10-11	do	_	_	_	_	_	_	_	_
+10	de	de	ADP	<sam->|PRP|@A<ARG	_	13	mark	_	_
+11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	Congresso	congresso	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
+13	votar	votar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	9	advcl	_	ChangedBy=Issue165|SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+15	primeiro	primeiro	ADV	<first-cjt>|ADV|@<ADVL	_	13	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	emenda	emenda	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
+19	constitucional	constitucional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	18	amod	_	_
+20	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	21	nsubj	_	_
+21	cria	criar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_
+22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	Fundo	Fundo	PROPN	_	Gender=Masc|Number=Sing	21	obj	_	ChangedBy=Issue119|MWE=Fundo_Social|MWEPOS=PROPN
+24	Social	Social	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119
+25	de	de	ADP	PRP|@N<	_	26	case	_	_
+26	Emergência	Emergência	PROPN	PROP|@P<	Number=Sing	23	nmod	_	_
+27	e	e	CCONJ	<co-x>|KC|@CO	_	33	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
+28	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
+29	em	em	ADP	PRP|@<ADVL	_	30	case	_	MWE=em_seguida
+30	seguida	seguida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue165|SpaceAfter=No
+31	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
+32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
+33	Orçamento	orçamento	NOUN	<cjt>|<prop>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	conj	_	_
+34	federal	federal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	33	amod	_	_
+35	para	para	ADP	PRP|@N<	_	36	case	_	_
+36	1994	1994	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	33	nmod	_	ChangedBy=Issue168
+37	com	com	ADP	PRP|@<ADVL	_	38	case	_	_
+38	deficit	deficit	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue137
+39	zero	zero	NUM	<card>|NUM|M|S|@N<	NumType=Card	38	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+40	.	.	PUNCT	PU|@PU	_	2	punct	_	_
+
+# text = Adelaide critica Emília por esta sair pouco de casa e, em seguida, deixa a sala irritada pela pouca atenção qu lhe é dispensada pela mãe.
+# source = CETENFolha n=267 cad=TV Folha sec=clt-soc sem=94a &W
+# sent_id = CF267-2
+# id = 1125
+# d2d = cc(critica,e) -> cc(deixa,e)  #106
+# d2d = punct(critica,,) -> punct(deixa,,)  #106
+1	Adelaide	Adelaide	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
+2	critica	criticar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	Emília	Emília	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+4	por	por	ADP	PRP|@<ADVL	_	5	case	_	_
+5	esta	este	PRON	<dem>|DET|F|S|@P<	Gender=Fem|Number=Sing|PronType=Dem	2	obl	_	_
+6	sair	sair	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
+7	pouco	pouco	ADV	<quant>|ADV|@<ADVL	_	6	advmod	_	_
+8	de	de	ADP	PRP|@<SA	_	9	case	_	_
+9	casa	casa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
+11	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+12	em	em	ADP	PRP|@ADVL>	_	13	case	_	MWE=em_seguida
+13	seguida	seguida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue165|SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
+15	deixa	deixar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
+17	sala	sala	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
+18	irritada	irritado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	17	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+19-20	pela	_	_	_	_	_	_	_	_
+19	por	por	ADP	PRP|@<ADVL	_	22	case	_	_
+20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+21	pouca	pouco	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	22	det	_	_
+22	atenção	atenção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	_
+23	qu	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	26	nsubj:pass	_	_
+24	lhe	ele	PRON	PERS|F|3S|DAT|@DAT>	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Prs	26	iobj	_	_
+25	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux:pass	_	_
+26	dispensada	dispensar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	22	acl:relcl	_	_
+27-28	pela	_	_	_	_	_	_	_	_
+27	por	por	ADP	PRP|@PASS	_	29	case	_	_
+28	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
+29	mãe	mãe	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	26	obl:agent	_	ChangedBy=Issue165|SpaceAfter=No
+30	.	.	PUNCT	PU|@PU	_	2	punct	_	_
+
+# text = O modo de escapar disse é simples: aplica-se um reajuste de, digamos, 40% ; em seguida, avalia-se qual a inflação diária, digamos de 1,5% , e aí se aplica ao preço cheio um desconto decrescente.
+# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b &D
+# sent_id = CF442-1
+# id = 1847
+# d2d = punct(aplica-,,) -> punct(avalia-,,)  #106
+# d2d = cc(aplica-,e) -> cc(aplica,e)  #106
+# d2d = punct(aplica-,,) -> punct(avalia-,,)  #106
+# d2d = punct(aplica-,,) -> punct(avalia-,,)  #106
+# d2d = punct(aplica-,,) -> punct(aplica,,)  #106
+# d2d = punct(aplica-,,) -> punct(aplica,,)  #106
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	modo	modo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
+3	de	de	ADP	PRP|@N<	_	4	mark	_	_
+4	escapar	escapar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	_
+5	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	ChangedBy=Issue167
+7	simples	simples	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	5	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+8	:	:	PUNCT	PU|@PU	_	5	punct	_	_
+9-10	aplica-se	_	_	_	_	_	_	_	_
+9	aplica	aplicar	VERB	<mv>|<first-cjt>|<hyphen>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
+10	se	se	PRON	PERS|M|3S|ACC|@<SUBJ	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+11	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	reajuste	reajuste	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	9	obj	_	_
+13	de	de	ADP	PRP|@N<	_	18	case	_	ChangedBy=Issue165|SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
+15	digamos	dizer	VERB	<mv>|V|PR|1P|SUBJ|@FS-N<PRED	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+16	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
+17	40	40	NUM	<card>|NUM|M|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+18	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
+19	;	;	PUNCT	PU|@PU	_	5	punct	_	_
+20	em	em	ADP	PRP|@ADVL>	_	21	case	_	MWE=em_seguida
+21	seguida	seguida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	ChangedBy=Issue165|SpaceAfter=No
+22	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
+23-24	avalia-se	_	_	_	_	_	_	_	_
+23	avalia	avaliar	VERB	<mv>|<cjt>|<hyphen>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
+24	se	se	PRON	PERS|F|3S|ACC|@<SUBJ	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	23	nsubj	_	_
+25	qual	qual	PRON	<rel>|DET|F|S|@SC>	Gender=Fem|Number=Sing|PronType=Rel	27	xcomp	_	_
+26	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
+27	inflação	inflação	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	23	nsubj	_	_
+28	diária	diário	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	27	amod	_	ChangedBy=Issue165|SpaceAfter=No
+29	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
+30	digamos	dizer	VERB	<cjt>|<mv>|V|PR|1P|SUBJ|@FS-N<PRED	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	_
+31	de	de	ADP	PRP|@<ADVL	_	33	case	_	_
+32	1,5	1,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	33	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+33	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	30	obl	_	_
+34	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
+35	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	38	cc	_	d2d:#106
+36	aí	aí	ADV	<kc>|ADV|@ADVL>	_	38	advmod	_	_
+37	se	se	PRON	PERS|M|3S|ACC|@SUBJ>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	38	nsubj	_	_
+38	aplica	aplicar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
+39-40	ao	_	_	_	_	_	_	_	_
+39	a	a	ADP	<sam->|PRP|@<PIV	_	41	case	_	_
+40	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
+41	preço	preço	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	38	obl	_	_
+42	cheio	cheio	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	41	amod	_	_
+43	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
+44	desconto	desconto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	38	obj	_	_
+45	decrescente	decrescente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	44	amod	_	ChangedBy=Issue165|SpaceAfter=No
+46	.	.	PUNCT	PU|@PU	_	5	punct	_	_
+
+# text = O ladrão verificou qual era o saldo da conta de Maria Estela e, em seguida, retirou R$ 225 do caixa.
+# source = CETENFolha n=603 cad=Cotidiano sec=soc sem=94a
+# sent_id = CF603-1
+# id = 2533
+# d2d = cc(verificou,e) -> cc(retirou,e)  #106
+# d2d = punct(verificou,,) -> punct(retirou,,)  #106
+1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	ladrão	ladrão	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	verificou	verificar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	qual	qual	PRON	<interr>|DET|M|S|@SC>	Gender=Masc|Number=Sing|PronType=Int	3	ccomp	_	_
+5	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
+6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	saldo	saldo	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	4	nsubj	_	_
+8-9	da	_	_	_	_	_	_	_	_
+8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
+9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	conta	conta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
+11	de	de	ADP	PRP|@N<	_	12	case	_	_
+12	Maria	Maria	PROPN	_	Gender=Fem|Number=Sing	10	nmod	_	ChangedBy=Issue119|MWE=Maria_Estela|MWEPOS=PROPN
+13	Estela	Estela	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
+14	e	e	CCONJ	<co-sta>|KC|@CO	_	19	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
+15	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
+16	em	em	ADP	PRP|@ADVL>	_	17	case	_	MWE=em_seguida
+17	seguida	seguida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	ChangedBy=Issue165|SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+19	retirou	retirar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	_
+20	R$	R$	SYM	_	Gender=Masc|Number=Plur	19	obj	_	_
+21	225	225	NUM	<card>|NUM|M|P|@N<	NumType=Card	20	nummod	_	ChangedBy=Issue168
+22-23	do	_	_	_	_	_	_	_	_
+22	de	de	ADP	<sam->|PRP|@<PIV	_	24	case	_	_
+23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	caixa	caixa	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	ChangedBy=Issue165|SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	3	punct	_	_
+
+# text = Em seguida, Euller fez mais duas jogadas.
+# source = CETENFolha n=673 cad=Esporte sec=des sem=94a
+# sent_id = CF673-2
+# id = 2828
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_seguida
+2	seguida	seguida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue165|SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	Euller	Euller	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
+5	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	mais	mais	ADV	<setop>|ADV|@>A	_	7	advmod	_	_
+7	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	8	nummod	_	ChangedBy=Issue168
+8	jogadas	jogada	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	ChangedBy=Issue165|SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	5	punct	_	_
+
+# text = Em seguida, se for aplicado como previsto o princípio da rotatividade, a Turquia deverá passar a ter o seu primeiro chefe de Governo islamista.
+# source = CETEMPúblico n=462 sec=pol sem=96a
+# sent_id = CP462-8
+# id = 2452
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_seguida
+2	seguida	seguida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	20	obl	_	ChangedBy=Issue165|SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+4	se	se	SCONJ	KS|@SUB	_	6	mark	_	_
+5	for	ser	AUX	<aux>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	_	_
+6	aplicado	aplicar	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	20	advcl	_	_
+7	como	como	ADP	<com>|PRP|@<ADVL	_	8	mark	_	_
+8	previsto	prever	VERB	<mv>|V|PCP|M|S|@ICL-<ADVL	Gender=Masc|Number=Sing|VerbForm=Part	6	advcl	_	_
+9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	princípio	princípio	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	6	nsubj:pass	_	_
+11-12	da	_	_	_	_	_	_	_	_
+11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
+12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	rotatividade	rotatividade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	6	punct	_	_
+15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	Turquia	Turquia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
+17	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	aux	_	_
+18	passar	passar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	20	aux	_	_
+19	a	a	ADP	PRP|@PRT-AUX<	_	20	obl	_	_
+20	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+22	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	24	det	_	_
+23	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	24	amod	_	ChangedBy=Issue172
+24	chefe	chefe	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
+25	de	de	ADP	PRP|@N<	_	26	case	_	_
+26	Governo	Governo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
+27	islamista	islamista	ADJ	ADJ|M|S|@<OC	Gender=Masc|Number=Sing	20	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
+28	.	.	PUNCT	PU|@PU	_	20	punct	_	_
+

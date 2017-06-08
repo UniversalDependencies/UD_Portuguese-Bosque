@@ -1,5 +1,5 @@
 (ql:quickload :cl-conllu)
-(ql:quickload :cl-utilities)
+
 (in-package :cl-conllu)
 
 (defparameter table '(("A_bordo" "" "ADV" "ADP NOUN")
@@ -329,28 +329,24 @@
 		   (search words (mapcar #'token-lemma (sentence-tokens sentence)) :test #'string=))
 		 sentences))
 
-(defun run ()
-  (let ((res (make-hash-table :test 'equal))
-	(files (directory #p"../documents/*.conllu"))
-	(patterns (split-sequence:split-sequence #\_
-					       (remove-duplicates
-						(mapcar (lambda (e) (string-downcase (car e)))table):test #'equal))))
+(defun collect-by-pattern (input-path)
+  (let* ((files (directory input-path))
+	 (sents (reduce (lambda (l s)
+			  (append l (cl-conllu:read-conllu s)))
+			files :initial-value nil))
+	 (spats (remove-duplicates (mapcar (lambda (e) (string-downcase (car e))) table)
+				  :test #'equal))
+	 (tpats (mapcar (lambda (e) (list e (cl-ppcre:split "_" e))) spats)))
 
-    (loop for line in table
-     do (let (words)
-      	    (setq words (split-sequence:SPLIT-SEQUENCE #\_ (car line)))
-	    (print "Searching:")
-	    (print words)
-	    (dolist (f (directory #p"../documents/*.conllu"))
-	      (let ((extraction (extract-ocurrences (cl-conllu:read-conllu f) words)))
-		(when extraction
-		  (loop for sentence in extraction
-		   do(if(gethash (sentence-id sentence) res)
-			(print "existe");TODO - pega o elemento e adiciona o meta
-			(setf (gethash (sentence-id sentence) res) sentence))))))))
-  (let (mwe-sentences)
-    (maphash #'(lambda (key val)(setq mwe-sentences (append (list val) mwe-sentences ))) res)
-    (print "Found:")
-    (print (list-length mwe-sentences))
-    (write-conllu mwe-sentences "MWE.conll"))))
-    
+    (loop for pat in tpats
+	  collect
+	  (list (car pat) (extract-ocurrences sents (cadr pat))))))
+
+(defun run ()
+  (mapc (lambda (p)
+	  (if (not (null (cadr p)))
+	      (write-conllu (cadr p)
+			    (merge-pathnames #P"../draft/mwe/"
+					     (make-pathname :name (car p) :type "conllu"))
+			    :if-exists :supersede)))
+	(collect-by-pattern #P"../documents/*.conllu")))

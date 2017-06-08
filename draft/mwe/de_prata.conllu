@@ -1,0 +1,57 @@
+# text = V.C. -- Mas é quase disco de prata [ faltam seis mil, segundo a editora, a BMG ]!
+# source = CETEMPúblico n=62 sec=clt sem=94b &D
+# sent_id = CP62-1
+# id = 340
+1	V.C.	V.C.	PROPN	PROP|M/F|S|@NPHR	Gender=Unsp|Number=Sing	0	root	_	_
+2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
+3	Mas	mas	CCONJ	KC|@CO	_	6	cc	_	_
+4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-EXC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
+5	quase	quase	ADV	<quant>|ADV|@<ADVL	_	6	advmod	_	_
+6	disco	disco	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	1	parataxis	_	_
+7	de	de	ADP	PRP|@N<	_	8	case	_	MWE=de_prata
+8	prata	prata	NOUN	N|@P<	_	6	nmod	_	_
+9	[	[	PUNCT	PU|@PU	_	10	punct	_	_
+10	faltam	faltar	VERB	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
+11	seis	seis	NUM	<card>|NUM|M|P|@>A	NumType=Card	12	dep	_	ChangedBy=Issue168
+12	mil	mil	NUM	<card>|NUM|M|P|@<SUBJ	NumType=Card	10	nsubj	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	10	punct	_	_
+14	segundo	segundo	ADP	PRP|@<ADVL	_	16	case	_	_
+15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
+16	editora	editora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+17	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
+19	BMG	BMG	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	16	appos	_	_
+20	]	_	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
+21	!	!	PUNCT	PU|@PU	_	1	punct	_	_
+
+# text = «Ganhei a medalha de prata», diz-lhe ofegante, mas logo se recusa a acreditar na realidade.
+# source = CETEMPúblico n=88 sec=clt sem=92a
+# sent_id = CP88-4
+# id = 478
+# d2d = cc(diz-,mas) -> cc(recusa,mas)  #106
+# d2d = punct(diz-,,) -> punct(recusa,,)  #106
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
+2	Ganhei	ganhar	VERB	<mv>|V|PS|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	9	ccomp	_	_
+3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	medalha	medalha	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
+5	de	de	ADP	PRP|@N<	_	6	case	_	MWE=de_prata
+6	prata	prata	NOUN	N|@P<	_	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+7	»	»	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
+8	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+9-10	diz-lhe	_	_	_	_	_	_	_	_
+9	diz	dizer	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	lhe	ele	PRON	PERS|M|3S|DAT|@<DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	iobj	_	_
+11	ofegante	ofegante	ADJ	ADJ|M|S|@<PRED	Gender=Masc|Number=Sing	9	amod	_	ChangedBy=Issue165|SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+13	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
+14	logo	logo	ADV	<kc>|ADV|@ADVL>	_	16	advmod	_	_
+15	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	expl	_	ChangedBy=Issue135
+16	recusa	recusar	VERB	<mv>|<cjt>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
+17	a	a	ADP	PRP|@<PIV	_	18	mark	_	_
+18	acreditar	acreditar	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	16	xcomp	_	_
+19-20	na	_	_	_	_	_	_	_	_
+19	em	em	ADP	<sam->|PRP|@<PIV	_	21	case	_	_
+20	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	21	det	_	_
+21	realidade	realidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	ChangedBy=Issue165|SpaceAfter=No
+22	.	.	PUNCT	PU|@PU	_	9	punct	_	_
+
