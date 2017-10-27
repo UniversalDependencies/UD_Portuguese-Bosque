@@ -3,7 +3,7 @@
 
 (in-package :cl-conllu)
 
-(defun read-file (f)
+(defun my-read-file (f)
   (with-open-file (stream f)
     (loop for line = (read-line stream nil)
        while line
@@ -37,7 +37,7 @@
 (defun release (dir ids output)
   "Generate the release files using the source directory DIR and the
 sentence ids listed in the file IDS, saving the output in OUTPUT."
-  (let ((ids (read-file ids))
+  (let ((ids (my-read-file ids))
         (sentences (make-hash-table :test #'equal)))
     (dolist (f (cl-fad:list-directory dir))
       (unless (cl-fad:directory-exists-p f)
