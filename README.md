@@ -99,8 +99,7 @@ See file LICENSE.txt
     @InProceedings{depling-2017,
        author =  {Alexandre Rademaker and Fabricio Chalub and Livy
                   Real and Cláudia Freitas and Eckhard Bick and
-                  Valeria de Paiva Universal Dependencies for
-                  Portuguese},
+                  Valeria de Paiva},
        title = 	 {Universal Dependencies for Portuguese},
        booktitle = {Proceedings of the Fourth International Conference on Dependency 
 	                Linguistics (Depling)},
