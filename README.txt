@@ -1,78 +1,62 @@
 
 # Summary
 
-The CG-converted UD Portuguese treebank is originally based on an
-improved and enriched version of the 7.4 dependency version of the
-revised Bosque part of the Floresta Sintá(c)tica treebank. The release
-7.4 was in 2006-2008 aligned with a new live run with the PALAVRAS
-parser in order to propagate morphological features from unambiguous
-to ambiguous words, and to add what the Floresta team called
-"searchables", i.e. tags for features distributed across several
-tokens, such as NP definiteness and complex tenses. The public
-treebank only used this for the constituent version, which was the one
-actively revised by the Floresta team until 2008 (version 8.0).
+This Universal Dependencies (UD) Portuguese treebank is based on the
+Constraint Grammar converted version of the Bosque, which is part of
+the Floresta Sintá(c)tica treebank.
 
 # Introduction
 
-Since 2008 Eckhard Bick has maintained an experimental version of the
-dependency Bosque for semantic and other research, and made further
-revisions to it, which were not aligned with either the constituent
-version or the published 7.4 dependency version. In the beginning of
-2016, Eckhard Bick wrote UD conversion rules for Constraint Grammar
-input, and applied these to the updated version of the dependency
-Bosque (Linguateca site version 7.5 of March 2016).
+This  Universal Dependencies (UD) Portuguese treebank is  based on  
+the Constraint Grammar converted version of the Bosque, which is part
+of the Floresta Sintá(c)tica treebank.
 
-In a team effort in October 2016, Alexandre Rademaker, Cláudia
-Freitas, Fabricio Chalub, Valeria de Paiva and Livy Maria Real Coelho,
-aiming at full compatibility with ConLL UD specifications,
-consistency-checked and discussed the 7.5 UD Bosque, leading to a
-further round of manual treebank corrections and conversion rule
-changes by Eckhard Bick. The conversion grammar ultimately used
-contained some 530 rules. Of these 70 were simple feature mapping
-rules, and 130 were local MWE splitting rules, assigning internal
-structure, POS and features to MWE's from Bosque. The remainder of the
-rules handle UD-specific dependency and function label changes in a
-context-dependent fashion, the main issues being raising of copula
-dependents to subject complements, inversion of prepositional
-dependency and a change from syntactic to semantic verb chain
-dependency.
+Eckhard Bick has maintained since 2008 an experimental version of the
+dependency Bosque for research, which was not aligned with either the
+Linguateca published constituent version or the 7.4 dependency version
+of the Bosque.  In 2016, Eckhard Bick wrote UD conversion rules for
+Constraint Grammar input, and applied these to the updated version of
+the dependency Bosque (Linguateca site version 7.5 of March 2016).
+
+In October 2016, Alexandre Rademaker, Cláudia Freitas, Fabricio
+Chalub, Valeria de Paiva and Livy Maria Real Coelho, aiming at full
+compatibility with ConLL UD specifications, consistency-checked and
+discussed the 7.5 UD Bosque, leading to a further round of manual
+treebank corrections and conversion rule changes by Bick. The
+conversion grammar used contains some 530 rules. Of these 70 were
+simple feature mapping rules, and 130 were local MWE splitting rules,
+assigning internal structure, POS and features to MWE's from the
+Bosque. The remainder of the rules handle UD-specific dependency and
+function label changes in a context-dependent fashion.  The main
+issues were raising of copula dependents to subject complements,
+inversion of prepositional dependency and a change from syntactic to
+semantic verb chain dependency.
 
 The new UD treebank retains the additional tags for NP definiteness
-and complex tenses, as well as the original syntactic functions tags
-and secondary morphological tags. This way, the treebank retains its
-original linguistic focus in addition to the machine learning uses
-targeted by the ConLL UD format. For instance, conjuncts and roots
-still feature a direct function tag (e.g. a verb complement role for a
-conjunct or "question" for a root. In cases, where UD does not
-distinguish between form and function, e.g. n/np adverbial modifiers,
-where UD "duplicates" noun POS as 'nmod' function, the Bosque function
-tag for free adverbial, adject or adverbial object is retained in
-field 4 (@tags). Finally, some lost valency relations may be recovered
-from an underspecified UD tag, e.g. the core clause arguments
-"prepositional object" ('gostar de ARG') and valency-bound adverbial
-('morar em ARG').
+and complex tenses, as well as the original syntactic function tags
+and secondary morphological tags of the original Bosque. Thus the
+treebank retains its original linguistic focus, in addition to coping
+with the machine learning uses targeted by the ConLL UD format.
 
 # Acknowledgments
 
-The UD_Portuguese releases 1.2 to 1.4 were based on another conversion
-of Bosque, used in the CoNLL-X Shared Task in dependency parsing
-(2006); the CoNLL version was taken and converted to the Prague
-dependency style as a part of HamleDT (since 2011). Later versions of
-HamleDT added a conversion to the Stanford dependencies (2014) and to
-Universal Dependencies (HamleDT 3.0, 2015).
+The UD_Portuguese releases 1.2 to 1.4 were based on a different
+conversion of Bosque, used in the CoNLL-X Shared Task in dependency
+parsing (2006); the CoNLL version was taken and converted to the
+Prague dependency style as a part of HamleDT (since 2011). Later
+versions of HamleDT added a conversion to the Stanford dependencies
+(2014) and to Universal Dependencies (HamleDT 3.0, 2015).
 
 UD release 1.4 contained two conversions of Bosque: one labeled
 UD_Portuguese (via CoNLL 2006 and HamleDT) and another labeled
-UD_Portuguese-Bosque (the new conversion described above). 
+UD_Portuguese-Bosque (the new conversion described above).
 
-The two versions will be merged (and labeled UD_Portuguese) in UD
-release 2.0.  The merged version will be based mostly on the new
-conversion by Bick et al.; the conversion by Zeman et al. was used to
-cross-validate. In addition, after the alignment of the sentences from
-the two versions, the data was splitted in dev, test and train
-following the distribution of sentences from Zeman et al., which, in
-turn, should probably followed the original split of data from the
-CoNLL-X Shared Task 2006.
+The two versions were merged (and labeled UD_Portuguese) in UD release
+2.0.  The merged version is based mostly on the new conversion by Bick
+et al.. The conversion by Zeman et al. was used to
+cross-validate. After the alignment of the sentences from the two
+versions, the data was split in dev, test and train following the
+distribution of sentences from Zeman et al.
 
 The conversion was implemented by Eckhard Bick and revised by:
 
