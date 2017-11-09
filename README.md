@@ -148,6 +148,7 @@ See file LICENSE.txt
   * Initial UD release: Copied from HamleDT 3.0 and slightly improved.
 
 
+<pre>
 === Machine-readable metadata =================================================
 Documentation status: partial
 Data source: semi-automatic
@@ -163,3 +164,4 @@ Contributors: Rademaker, Alexandre; Bick, Eckhard; Chalub, Fabricio; Freitas, Cl
 Contributing: elsewhere
 Contact: arademaker@gmail.com
 ===============================================================================
+</pre>
