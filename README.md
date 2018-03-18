@@ -7,7 +7,7 @@ the Floresta Sintá(c)tica treebank.
 
 # Introduction
 
-This  Universal Dependencies (UD) Portuguese treebank is  based on  
+This  Universal Dependencies (UD) Portuguese treebank is  based on
 the Constraint Grammar converted version of the Bosque, which is part
 of the Floresta Sintá(c)tica treebank.
 
@@ -85,7 +85,7 @@ See file LICENSE.txt
                   Real and Cláudia Freitas and Eckhard Bick and
                   Valeria de Paiva},
        title = 	 {Universal Dependencies for Portuguese},
-       booktitle = {Proceedings of the Fourth International Conference on Dependency 
+       booktitle = {Proceedings of the Fourth International Conference on Dependency
 	                Linguistics (Depling)},
        year =	 {2017},
        pages =	 {197-206},
@@ -126,6 +126,9 @@ See file LICENSE.txt
 
 # Changelog
 
+2018-04-15 v2.2
+  * Repository renamed from UD_Portuguese to UD_Portuguese-Bosque.
+
 2017-11-07 v2.1
   * Minor changes in some sentences.
 
@@ -150,14 +153,13 @@ See file LICENSE.txt
 
 <pre>
 === Machine-readable metadata =================================================
-Documentation status: partial
-Data source: semi-automatic
 Data available since: UD v1.2
 License: CC BY-SA 4.0
 Genre: news blog
 Includes text: yes
 Lemmas: converted with corrections
 UPOS: converted with corrections
+XPOS: manual native
 Features: converted with corrections
 Relations: converted with corrections
 Contributors: Rademaker, Alexandre; Bick, Eckhard; Chalub, Fabricio; Freitas, Cláudia; Real, Livy; de Paiva, Valeria; Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André
