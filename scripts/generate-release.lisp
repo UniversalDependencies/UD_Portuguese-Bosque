@@ -28,6 +28,7 @@
     (dolist (tk (sentence-tokens s))
       (setf (slot-value tk 'misc) (remove-d2d (slot-value tk 'misc)))
       (setf (slot-value tk 'misc) (remove-feature "ChangedBy" (slot-value tk 'misc)))
+      (setf (slot-value tk 'xpostag) "_")
       (when (or (= 0 (length (slot-value tk 'misc))) (null (slot-value tk 'misc)))
         (setf (slot-value tk 'misc) "_")))
     (setf (sentence-meta s)
@@ -43,11 +44,20 @@ sentence ids listed in the file IDS, saving the output in OUTPUT."
       (unless (cl-fad:directory-exists-p f)
         (dolist (s (prepare-for-release (read-conllu f)))
           (setf (gethash (sentence-meta-value s "sent_id") sentences) s))))
-    (write-conllu (mapcar (lambda (x) (gethash x sentences)) ids) output)))
+    (write-conllu (mapcar (lambda (x)
+			    (assert (gethash x sentences))
+			    (gethash x sentences))
+			  ids)
+		  output)))
 
-(release #p"documents/" #p"pt-ud-dev.txt" #p"pt-ud-dev.conllu")
-(release #p"documents/" #p"pt-ud-test.txt" #p"pt-ud-test.conllu")
-(release #p"documents/" #p"pt-ud-train.txt" #p"pt-ud-train.conllu")
-(when (probe-file #p"final.txt")
-  (release #p"documents/" #p"final.txt" #p"final.conllu"))
+
+(defun main ()
+  (release #p"documents/" #p"pt-ud-dev.txt" #p"pt-ud-dev.conllu")
+  (release #p"documents/" #p"pt-ud-test.txt" #p"pt-ud-test.conllu")
+  (release #p"documents/" #p"pt-ud-train.txt" #p"pt-ud-train.conllu")
+  (when (probe-file #p"final.txt")
+    (release #p"documents/" #p"final.txt" #p"final.conllu")))
+
+
+
 
