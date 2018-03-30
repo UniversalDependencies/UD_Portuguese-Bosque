@@ -128,7 +128,8 @@ See file LICENSE.txt
 # Changelog
 
 2018-04-15 v2.2
-  * Repository renamed from UD_Portuguese to UD_Portuguese-Bosque.
+  * Repository renamed from UD_Portuguese to UD_Portuguese-Bosque. The
+    'fixed' relations were revised.
 
 2017-11-07 v2.1
   * Minor changes in some sentences.
