@@ -1,17 +1,13 @@
-Sun Feb 11 20:48:47 CET 2018
-perl -I perllib/lib/perl5 -I tools tools/evaluate_treebank.pl --verbose UD_Portuguese
 Running the following version of tools/evaluate_treebank.pl:
-commit c1cb17aec6a5505b56b885f578dc6b1093bb4b30
+commit 87d374bbd458d29331d76014d05c52eaac32518d
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Feb 11 20:27:50 2018 +0100
-Switched to branch 'master'
-Your branch is up-to-date with 'origin/master'.
-Evaluating the following revision of UD_Portuguese:
-commit f4e64130c13a73024b7580446fdfec786f16badb
+Date:   Wed Apr 11 09:21:53 2018 +0200
+Evaluating the following revision of UD_Portuguese-Bosque:
+commit 5061d5fc12f47d343f0fd8771c9fb6371395b861
+Merge: 4e837b4 38eccae
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sat Nov 11 14:06:00 2017 +0100
-Size: counted 227792 of 227792 words (nodes).
-Size: min(0, log((N/1000)**2)) = 10.8568658637428.
+Size: counted 227791 of 227791 words (nodes).
+Size: min(0, log((N/1000)**2)) = 10.8568570837839.
 Size: maximum value 13.815511 is for 1000000 words or more.
 Split: Found more than 10000 training words.
 Split: Found at least 10000 development words.
@@ -19,23 +15,28 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 0.9.
 Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.9.
-Features: 145234 out of 227792 total words have one or more features.
+Features: 145207 out of 227791 total words have one or more features.
 Features: source of annotation (from README) factor is 0.9.
-Universal relations: 34 out of 37 found in the corpus.
+Universal relations: 35 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.9.
-Udapi: found 2515 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 227792 words.
+Udapi: found 2265 bugs.
+Udapi: worst expected case (threshold) is one bug per 10 words. There are 227791 words.
 Genres: found 2 out of 14 known.
+validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-dev.conllu
+*** PASSED ***
+validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-test.conllu
+*** PASSED ***
+validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-train.conllu
+*** PASSED ***
+Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.9) = 0.0692307692307692
 (weight=0.0769230769230769) * (score{genres}=0.142857142857143) = 0.010989010989011
 (weight=0.0769230769230769) * (score{lemmas}=0.9) = 0.0692307692307692
-(weight=0.256410256410256) * (score{size}=0.785846155897879) = 0.201499014332789
+(weight=0.256410256410256) * (score{size}=0.785845520383264) = 0.201498851380324
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.9) = 0.0692307692307692
-(weight=0.307692307692308) * (score{udapi}=0.889592259605254) = 0.273720695263155
-(weight=0.0769230769230769) * (score{udeprels}=0.827027027027027) = 0.0636174636174636
-(TOTAL score=0.808800543176778) * (availability=1) * (validity=1) = 0.808800543176778
+(weight=0.307692307692308) * (score{udapi}=0.900566747588799) = 0.277097460796553
+(weight=0.0769230769230769) * (score{udeprels}=0.851351351351351) = 0.0654885654885655
+(TOTAL score=0.814048247628813) * (availability=1) * (validity=1) = 0.814048247628813
 STARS = 4
-UD_Portuguese	0.808800543176778	4
-Switched to branch 'dev'
-Your branch is up-to-date with 'origin/dev'.
+UD_Portuguese-Bosque	0.814048247628813	4
