@@ -64,6 +64,7 @@ The conversion was implemented by Eckhard Bick and revised by:
 - Alexandre Rademaker
 - Fabricio Chalub
 - Claudia Freitas
+- Guilherme Paulino-Passos
 - Luisa Rocha
 - Isabela Soares-Bastos
 - Livy Real
@@ -166,7 +167,7 @@ UPOS: converted with corrections
 XPOS: manual native
 Features: converted with corrections
 Relations: converted with corrections
-Contributors: Rademaker, Alexandre; Bick, Eckhard; Chalub, Fabricio; Freitas, Cláudia; Rocha, Luisa; Soares-Bastos, Isabela ; Real, Livy; de Paiva, Valeria; Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André
+Contributors: Rademaker, Alexandre; Bick, Eckhard; Chalub, Fabricio; Freitas, Cláudia; Paulino-Passos, Guilherme; Rocha, Luisa; Soares-Bastos, Isabela ; Real, Livy; de Paiva, Valeria; Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André
 Contributing: elsewhere
 Contact: arademaker@gmail.com
 ===============================================================================
