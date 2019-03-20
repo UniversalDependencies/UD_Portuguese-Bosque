@@ -26,21 +26,21 @@
 12	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O que interessava era beber vinho, beber vinho era de comer a um milhão de portugueses, era dar às crianças sopas de cavalo cansado, era ir a Fátima ...
-# source = CETEMPúblico n=580 sec=pol sem=93b &W
+# source = CETEMPúblico n=580 sec=pol sem=93b &amp;W
 # sent_id = CP580-3
 # id = 2999
-1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	3	nsubj	_	_
-3	interessava	interessar	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	dep	_	_
-4	era	ser	AUX	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
-5	beber	beber	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	0	root	_	_
+3	interessava	interessar	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	acl:relcl	_	_
+4	era	ser	AUX	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	cop	_	ChangedBy=Issue167
+5	beber	beber	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	1	csubj	_	_
 6	vinho	vinho	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-8	beber	beber	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	10	csubj	_	_
+8	beber	beber	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	12	csubj	_	_
 9	vinho	vinho	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
-10	era	ser	VERB	<mv>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	advcl	_	_
-11	de	de	ADP	PRP|@<SC	_	12	mark	_	_
-12	comer	comer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	xcomp	_	_
+10	era	ser	VERB	<mv>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	_	_
+11	de	de	ADP	PRP|@<SC	_	12	case	_	_
+12	comer	comer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	parataxis	_	_
 13	a	a	ADP	PRP|@<PIV	_	15	case	_	_
 14	um	um	NUM	<arti>|ART|M|S|@>N	NumType=Card	12	obl	_	_
 15	milhão	milhão	NUM	<np-idf>|N|M|S|@P<	NumType=Card	14	flat	_	_
@@ -48,18 +48,18 @@
 17	portugueses	português	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 19	era	ser	AUX	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	cop	_	ChangedBy=Issue167
-20	dar	dar	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	5	dep	_	_
+20	dar	dar	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	12	conj	_	_
 21-22	às	_	_	_	_	_	_	_	_
 21	a	a	ADP	<sam->|PRP|@<PIV	_	23	case	_	_
 22	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_
-23	crianças	criança	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	20	obl	_	_
+23	crianças	criança	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	20	iobj	_	_
 24	sopas	sopa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	20	obj	_	_
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
 26	cavalo	cavalo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
 27	cansado	cansado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	26	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 29	era	ser	AUX	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	cop	_	ChangedBy=Issue167
-30	ir	ir	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	5	dep	_	_
+30	ir	ir	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	12	conj	_	_
 31	a	a	ADP	PRP|@<SA	_	32	case	_	_
 32	Fátima	Fátima	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	30	obl	_	_
 33	...	...	PUNCT	PU|@PU	_	5	punct	_	_
