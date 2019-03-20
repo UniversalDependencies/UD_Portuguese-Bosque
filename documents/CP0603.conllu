@@ -140,24 +140,24 @@
 46	defender	defender	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	44	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 47	.	.	PUNCT	PU|@PU	_	31	punct	_	_
 
-# text = Se a isto acrescentarmos o que está a ser perdido -- passageiros e mercadorias na TAP, mercadorias na Portline e na Transinsular, dormidas nos hotéis (Hotti e 24 de Setembro), operações na banca (Banco Internacional da Guiné-Bissau e Totta & Açores), turistas nos clubes de caça (como o de Capé) --, as verbas perdidas causarão vertigens.
+# text = Se a isto acrescentarmos o que está a ser perdido -- passageiros e mercadorias na TAP, mercadorias na Portline e na Transinsular, dormidas nos hotéis (Hotti e 24 de Setembro), operações na banca (Banco Internacional da Guiné-Bissau e Totta &amp; Açores), turistas nos clubes de caça (como o de Capé) --, as verbas perdidas causarão vertigens.
 # source = CETEMPúblico n=603 sec=opi sem=98b
 # sent_id = CP603-4
 # id = 3127
 # d2d = cc(passageiros,e) -> cc(mercadorias,e)  #106
 # d2d = cc(Portline,e) -> cc(Transinsular,e)  #106
-1	Se	se	SCONJ	KS|@SUB	_	73	mark	_	_
+1	Se	se	SCONJ	KS|@SUB	_	4	mark	_	_
 2	a	a	ADP	PRP|@ADVL>	_	3	case	_	_
-3	isto	isto	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	73	obl	_	_
-4	acrescentarmos	acrescentar	VERB	<mv>|V|FUT|1P|SUBJ|@FS-STA	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
-5	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	_
+3	isto	isto	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	4	iobj	_	_
+4	acrescentarmos	acrescentar	VERB	<mv>|V|FUT|1P|SUBJ|@FS-STA	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	73	advcl	_	_
+5	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	obj	_	_
 6	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	10	nsubj:pass	_	_
 7	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
 8	a	a	ADP	PRP|@PRT-AUX<	_	10	aux	_	_
 9	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	10	aux:pass	_	_
-10	perdido	perder	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	73	ccomp	_	_
+10	perdido	perder	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	acl:relcl	_	_
 11	--	--	PUNCT	PU|@PU	_	12	punct	_	_
-12	passageiros	passageiro	NOUN	<first-cjt>|<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	6	appos	_	_
+12	passageiros	passageiro	NOUN	<first-cjt>|<np-idf>|N|M|P|@APP	Gender=Masc|Number=Plur	5	appos	_	_
 13	e	e	CCONJ	<co-app>|KC|@CO	_	19	cc	_	d2d:#106
 14	mercadorias	mercadoria	NOUN	<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	12	appos	_	_
 15-16	na	_	_	_	_	_	_	_	_
@@ -183,10 +183,10 @@
 31	hotéis	hotel	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	28	nmod	_	_
 32	(	(	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
 33	Hotti	Hotti	PROPN	<first-cjt>|PROP|M|S|@APP	Gender=Masc|Number=Sing	31	appos	_	_
-34	e	e	CCONJ	<co-app>|KC|@CO	_	33	cc	_	_
-35	24	24	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	33	appos	_	MWE=24_de_Setembro
-36	de	de	ADP	PRP|@N<	_	37	case	_	_
-37	Setembro	Setembro	PROPN	PROP|@P<	Number=Sing	35	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+34	e	e	CCONJ	<co-app>|KC|@CO	_	35	cc	_	_
+35	24	24	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	33	conj	_	MWE=24_de_Setembro
+36	de	de	ADP	PRP|@N<	_	35	flat:name	_	_
+37	Setembro	Setembro	PROPN	PROP|@P<	Number=Sing	35	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 38	)	)	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
 39	,	,	PUNCT	PU|@PU	_	40	punct	_	_
 40	operações	operação	NOUN	<cjt>|<np-idf>|N|F|P|@APP	Gender=Fem|Number=Plur	12	conj	_	_
@@ -196,14 +196,14 @@
 43	banca	banca	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	40	nmod	_	_
 44	(	(	PUNCT	PU|@PU	_	45	punct	_	ChangedBy=Issue165|SpaceAfter=No
 45	Banco	Banco	PROPN	_	Gender=Masc|Number=Sing	43	appos	_	ChangedBy=Issue119|MWE=Banco_Internacional|MWEPOS=PROPN
-46	Internacional	Internacional	PROPN	_	Number=Sing	45	flat:name	_	ChangedBy=Issue119
+46	Internacional	Internacional	PROPN	_	Number=Sing	45	compound	_	ChangedBy=Issue119
 47-48	da	_	_	_	_	_	_	_	_
-47	de	de	ADP	<sam->|PRP|@N<	_	49	case	_	_
-48	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
-49	Guiné-Bissau	Guiné-Bissau	PROPN	PROP|@P<	Number=Sing	45	nmod	_	_
+47	de	de	ADP	<sam->|PRP|@N<	_	49	compound	_	_
+48	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	compound	_	_
+49	Guiné-Bissau	Guiné-Bissau	PROPN	PROP|@P<	Number=Sing	45	compound	_	_
 50	e	e	CCONJ	<co-prparg>|KC|@CO	_	45	cc	_	_
-51	Totta	Totta	PROPN	_	Gender=Masc|Number=Sing	45	appos	_	ChangedBy=Issue119|MWE=Totta_&_Açores|MWEPOS=PROPN
-52	&	&	PROPN	_	Number=Sing	51	flat:name	_	ChangedBy=Issue119
+51	Totta	Totta	PROPN	_	Gender=Masc|Number=Sing	45	conj	_	ChangedBy=Issue119|MWE=Totta_&amp;_Açores|MWEPOS=PROPN
+52	&amp;	&amp;	PROPN	_	Number=Sing	51	flat:name	_	ChangedBy=Issue119
 53	Açores	Açores	PROPN	_	Number=Sing	51	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 54	)	)	PUNCT	PU|@PU	_	45	punct	_	ChangedBy=Issue165|SpaceAfter=No
 55	,	,	PUNCT	PU|@PU	_	40	punct	_	_
@@ -211,21 +211,21 @@
 57-58	nos	_	_	_	_	_	_	_	_
 57	em	em	ADP	<sam->|PRP|@N<	_	59	case	_	_
 58	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	59	det	_	_
-59	clubes	clube	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	56	obl	_	_
+59	clubes	clube	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	56	nmod	_	_
 60	de	de	ADP	PRP|@N<	_	61	case	_	_
 61	caça	caça	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	59	nmod	_	_
 62	(	(	PUNCT	PU|@PU	_	64	punct	_	ChangedBy=Issue165|SpaceAfter=No
 63	como	como	ADP	<com>|PRP|@N<PRED	_	64	case	_	_
 64	o	o	PRON	<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	59	appos:parataxis	_	_
 65	de	de	ADP	PRP|@N<	_	66	case	_	_
-66	Capé	Capé	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	64	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+66	Capé	Capé	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	59	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 67	)	)	PUNCT	PU|@PU	_	64	punct	_	_
 68	--	--	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 69	,	,	PUNCT	PU|@PU	_	72	punct	_	_
 70	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	71	det	_	_
 71	verbas	verba	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	73	nsubj	_	_
 72	perdidas	perder	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	71	acl	_	_
-73	causarão	causar	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	parataxis	_	_
+73	causarão	causar	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 74	vertigens	vertigem	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	73	obj	_	ChangedBy=Issue165|SpaceAfter=No
 75	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

@@ -88,7 +88,7 @@
 # d2d = punct(pântanos,,) -> punct(rios,,)  #106
 # d2d = punct(quilómetros,,) -> punct(animais,,)  #106
 # d2d = punct(quilómetros,,) -> punct(populações,,)  #106
-1	Já	já	ADV	ADV|@>A	_	3	advmod	_	_
+1	Já	já	ADV	ADV|@>A	_	5	advmod	_	_
 2	em	em	ADP	PRP|@ADVL>	_	3	case	_	_
 3	território	território	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
 4	iraquiano	iraquiano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
@@ -105,7 +105,7 @@
 14	últimos	último	ADJ	<NUM-ord>|ADJ|M|P|@>N	Gender=Masc|Number=Plur|NumType=Ord	15	amod	_	ChangedBy=Issue172
 15	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-17	sobretudo	sobretudo	ADV	ADV|@>A	_	20	advmod	_	_
+17	sobretudo	sobretudo	ADV	ADV|@>A	_	20	advmod	_	_|Verificar os casos de advmod que apontam para N (material de estudo e: pode motivar confusao entre advmod e nmod?)
 18-19	na	_	_	_	_	_	_	_	_
 18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
@@ -125,7 +125,7 @@
 33	de	de	ADP	PRP|@N<	_	34	case	_	_
 34	terrenos	terreno	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	30	nmod	_	_
 35	lamacentos	lamacento	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	34	amod	_	_
-36	onde	onde	ADV	<rel>|ADV|@ADVL>	_	38	advmod	_	_
+36	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Plur|PronType=Rel	38	obl	_	_
 37	anteriormente	anteriormente	ADV	ADV|@ADVL>	_	38	advmod	_	_
 38	existiam	existir	VERB	<mv>|V|IMPF|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	34	acl:relcl	_	_
 39	pântanos	pântano	NOUN	<first-cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	38	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -151,12 +151,12 @@
 59	consequência	consequência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	57	obl	_	ChangedBy=Issue137
 60-61	do	_	_	_	_	_	_	_	_
 60	de	de	ADP	<sam->|PRP|@N<ARG	_	64	mark	_	_
-61	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	62	det	_	_
-62	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	66	nsubj	_	_
+61	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	59	nmod	_	_
+62	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	64	obj	_	_
 63	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	64	nsubj	_	_
 64	suspeita	suspeitar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	59	acl	_	_
 65	serem	ser	AUX	<mv>|V|INF|3P|@ICL-<ACC	Number=Plur|Person=3|VerbForm=Inf	66	cop	_	ChangedBy=Issue167
-66	ataques	ataque	NOUN	<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	64	dep	_	_
+66	ataques	ataque	NOUN	<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	61	acl:relcl	_	_
 67	com	com	ADP	PRP|@N<	_	68	case	_	_
 68	armas	arma	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	66	nmod	_	_
 69	químicas	químico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	68	amod	_	ChangedBy=Issue165|SpaceAfter=No
