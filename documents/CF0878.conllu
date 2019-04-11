@@ -117,8 +117,8 @@
 2	município	município	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3	brasileiro	brasileiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-5	nem	nem	CCONJ	PRP|@>N	_	6	cc	_	MWE=nem_mesmo
-6	mesmo	mesmo	ADV	N|M|S|@P<	Gender=Masc|Number=Sing	5	fixed	_	_
+5	nem	nem	CCONJ	PRP|@>N	_	7	cc	_	MWE=nem_mesmo
+6	mesmo	mesmo	CCONJ	N|M|S|@P<	Gender=Masc|Number=Sing	5	fixed	_	_
 7	São	São	PROPN	_	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
 8	Paulo	Paulo	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
@@ -212,9 +212,9 @@
 # sent_id = CF878-7
 # id = 3710
 # d2d = cc(prefeito,e) -> cc(fez,e)  #106
-1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	mineira	mineiro	ADJ	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
-3	Contagem	Contagem	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	2	appos	_	_
+1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	mineira	mineiro	ADJ	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	amod	_	_
+3	Contagem	Contagem	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	7	nsubj	_	_
 4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	ChangedBy=Issue167
 5	outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	7	det	_	_
 6	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	7	amod	_	_
@@ -222,13 +222,13 @@
 8	eleitoral	eleitoral	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 10	com	com	ADP	<first-cjt>|PRP|@N<PRED	_	11	case	_	_
-11	prefeito	prefeito	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
+11	prefeito	prefeito	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	_
 12-13	do	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	PSDB	PSDB	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 15	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	24	cc	_	d2d:#106
-16	onde	onde	ADV	<rel>|ADV|@ADVL>	_	24	advmod	_	_
+16	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	24	obl	_	_
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	partido	partido	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	16	punct	_	_
@@ -236,7 +236,7 @@
 21	como	como	ADP	<prd>|PRP|@ADVL>	_	22	case	_	_
 22	propaganda	propaganda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	24	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	22	punct	_	_
-24	fez	fazer	VERB	<cjt>|<mv>|V|PS|3S|IND|@N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_
+24	fez	fazer	VERB	<cjt>|<mv>|V|PS|3S|IND|@N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	acl:relcl	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	convenção	convenção	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
