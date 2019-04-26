@@ -37,7 +37,7 @@
 
 (defun release (dir ids output)
   "Generate the release files using the source directory DIR and the
-sentence ids listed in the file IDS, saving the output in OUTPUT."
+   sentence ids listed in the file IDS, saving the output in OUTPUT."
   (let ((ids (my-read-file ids))
         (sentences (make-hash-table :test #'equal)))
     (dolist (f (cl-fad:list-directory dir))

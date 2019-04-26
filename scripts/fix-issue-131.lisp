@@ -34,7 +34,8 @@
 (defun fix-corpus (sentences)
   (mapc (lambda (s) 
           (let ((tokens (sentence-tokens s)))
-            (mapc (lambda (x) (fix x tokens)) tokens))) sentences))
+            (mapc (lambda (x) (fix x tokens)) tokens)))
+	sentences))
 
 (defun run ()
   (dolist (f (cl-fad:list-directory #p "documents/"))
