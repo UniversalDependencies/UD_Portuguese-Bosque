@@ -26,13 +26,13 @@
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
-12	67,6	67,6	NUM	<card>|NUM|M|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168
-13	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168
-14	milhões	milhão	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	obj	_	_
+12	67,6	67,6	NUM	<card>|NUM|M|P|@>N	NumType=Card	16	nummod	_	ChangedBy=Issue168|MWE=67,6_mil_milhões
+13	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	12	flat	_	ChangedBy=Issue168
+14	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	12	flat	_	_
 15	de	de	ADP	PRP|@N<ARG	_	16	case	_	_
-16	pesetas	peseta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	14	nmod	_	_
+16	pesetas	peseta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obj	_	_
 17	em	em	ADP	PRP|@<PIV	_	18	case	_	_
-18	infra-estruturas	infra-estrutura	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obl	_	_
+18	infra-estruturas	infra-estrutura	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	iobj	_	_
 19	ferroviárias	ferroviário	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	18	amod	_	ChangedBy=Issue165|SpaceAfter=No
 20	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -50,7 +50,7 @@
 7-8	ao	_	_	_	_	_	_	_	_
 7	a	a	ADP	<sam->|PRP|@<PIV	_	9	case	_	_
 8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	Sul	sul	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	ChangedBy=Issue165|SpaceAfter=No
+9	Sul	sul	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obj	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 11	com	com	ADP	PRP|@N<PRED	_	13	case	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
@@ -70,7 +70,7 @@
 26	apontam	apontar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 27	para	para	ADP	PRP|@<PIV	_	29	case	_	_
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	Leste	leste	NOUN	<first-cjt>|<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	obl	_	_
+29	Leste	leste	NOUN	<first-cjt>|<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	26	obj	_	_
 30	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	d2d:#106
 31	Norte	norte	NOUN	<cjt>|<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	conj	_	ChangedBy=Issue165|SpaceAfter=No
 32	.	.	PUNCT	PU|@PU	_	26	punct	_	_
@@ -82,7 +82,7 @@
 # d2d = punct(corredor,») -> punct(linha,»)  #106
 # d2d = cc(corredor,e) -> cc(linha,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-2	chamado	chamar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	_	_
+2	chamado	chamado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	4	amod	_	_
 3	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 4	corredor	corredor	NOUN	<first-cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
 5	mediterrâneo	mediterrâneo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	ChangedBy=Issue165|SpaceAfter=No

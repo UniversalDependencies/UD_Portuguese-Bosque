@@ -5,8 +5,8 @@
 1	Lutas	luta	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	Amadoras	amador	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	1	amod	_	_
 3	(	(	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
-4	7	7	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
-5	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
+4	7	7	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168|MWE=7_mil
+5	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	flat	_	ChangedBy=Issue168
 6	contos	conto	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	1	appos	_	ChangedBy=Issue165|SpaceAfter=No
 7	)	)	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 8	--	--	PUNCT	PU|@PU	_	1	punct	_	_
@@ -44,7 +44,7 @@
 21	Vale	Vale	PROPN	_	Number=Sing	19	nmod	_	ChangedBy=Issue119|MWE=Vale_Formoso|MWEPOS=PROPN
 22	Formoso	Formoso	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	passou	passar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	aux	_	_
-24	a	a	ADP	PRP|@PRT-AUX<	_	26	obl	_	_
+24	a	a	ADP	PRP|@PRT-AUX<	_	26	aux	_	_
 25	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	26	aux:pass	_	_
 26	conhecido	conhecido	ADJ	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue141|ChangedBy=Issue91
 27	como	como	ADP	<prd>|PRP|@<SC	_	28	case	_	_
@@ -128,7 +128,7 @@
 36-37	à	_	_	_	_	_	_	_	_
 36	a	a	ADP	<sam->|PRP|@<PIV	_	38	case	_	_
 37	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	38	det	_	_
-38	posse	posse	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	obl	_	_
+38	posse	posse	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	obj	_	_
 39-40	dos	_	_	_	_	_	_	_	_
 39	de	de	ADP	<sam->|PRP|@N<	_	41	case	_	_
 40	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	_	_
@@ -193,7 +193,7 @@
 28	ainda	ainda	ADV	ADV|@<ADVL	_	27	advmod	_	_
 29	com	com	ADP	PRP|@<PIV	_	31	case	_	_
 30	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	31	nummod	_	ChangedBy=Issue168
-31	instituições	instituição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	27	obl	_	_
+31	instituições	instituição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	27	obj	_	_
 32	de	de	ADP	PRP|@N<	_	34	case	_	_
 33	especial	especial	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	34	amod	_	_
 34	relevo	relevo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
@@ -247,9 +247,9 @@
 80	S.Lázaro	S.Lázaro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	72	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 81	)	)	PUNCT	PU|@PU	_	80	punct	_	ChangedBy=Issue165|SpaceAfter=No
 82	--	--	PUNCT	PU|@PU	_	62	punct	_	_
-83	e	e	CCONJ	KC|@CO	_	31	cc	_	_
+83	e	e	CCONJ	KC|@CO	_	85	cc	_	_
 84	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	85	det	_	_
-85	Escola	Escola	PROPN	_	Gender=Fem|Number=Sing	31	nmod	_	ChangedBy=Issue119|MWE=Escola_Superior_de_Belas-artes_do_Porto|MWEPOS=PROPN
+85	Escola	Escola	PROPN	_	Gender=Fem|Number=Sing	31	conj	_	ChangedBy=Issue119|MWE=Escola_Superior_de_Belas-artes_do_Porto|MWEPOS=PROPN
 86	Superior	Superior	PROPN	_	Number=Sing	85	flat:name	_	ChangedBy=Issue119
 87	de	de	ADP	PRP|@N<	_	88	case	_	_
 88	Belas-artes	Belas-artes	PROPN	PROP|@P<	Number=Sing	85	flat:name	_	ChangedBy=Issue165

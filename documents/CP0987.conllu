@@ -10,7 +10,7 @@
 3	funcionarem	funcionar	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	1	advcl	_	_
 4	como	como	ADP	<prd>|PRP|@<ADVL	_	5	case	_	_
 5	instrumentos	instrumento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue137
-6	privilegiados	privilegiar	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	5	acl	_	_
+6	privilegiados	privilegiado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	5	amod	_	_
 7-8	dos	_	_	_	_	_	_	_	_
 7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
 8	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
@@ -55,12 +55,12 @@
 44	de	de	ADP	PRP|@N<	_	45	case	_	_
 45	equipamentos	equipamento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	43	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 46	,	,	PUNCT	PU|@PU	_	47	punct	_	_
-47	sustentadores	sustentador	NOUN	ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	45	amod	_	_
+47	sustentadores	sustentador	NOUN	ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	45	appos	_	_
 48	de	de	ADP	PRP|@A<	_	49	case	_	_
-49	redes	rede	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	47	obl	_	_
-50	cada	cada	DET	N|M|S|@>A	Gender=Masc|Number=Sing	53	nmod:npmod	_	MWE=cada_vez_mais
-51	vez	vez	NOUN	PRP|@N<	_	52	case	_	_
-52	mais	muito	ADV	N|M|S|@P<	Gender=Masc|Number=Sing	50	nmod	_	_
+49	redes	rede	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	47	nmod	_	_
+50	cada	cada	PRON	N|M|S|@>A	Gender=Masc|Number=Sing	53	nmod	_	MWE=cada_vez_mais
+51	vez	vez	NOUN	PRP|@N<	_	50	fixed	_	_
+52	mais	muito	ADV	N|M|S|@P<	Gender=Masc|Number=Sing	50	fixed	_	_
 53	complexas	complexo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	49	amod	_	_
 54	resultantes	resultante	ADJ	ADJ|F|P|@N<PRED	Gender=Fem|Number=Plur	49	amod	_	_
 55-56	das	_	_	_	_	_	_	_	_
@@ -76,17 +76,17 @@
 64	rightsizing	rightsizing	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	60	conj	_	ChangedBy=Issue165|SpaceAfter=No
 65	»	»	PUNCT	PU|@PU	_	64	punct	_	_
 66	a	a	ADP	PRP|@PIV>	_	67	case	_	_
-67	que	que	PRON	<rel>|INDP|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	72	obl	_	_
+67	que	que	PRON	<rel>|INDP|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	77	obl	_	_
 68	muitos	muito	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	69	det	_	_
 69	sistemas	sistema	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	57	nsubj	_	_
 70	de	de	ADP	PRP|@N<	_	71	case	_	_
 71	informação	informação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	69	nmod	_	_
-72	estiveram	estar	AUX	<first-cjt>|V|PS|3P|IND|@>N	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	57	dep	_	_
-73	ou	ou	CCONJ	<co-vfin>|KC|@CO	_	57	cc	_	_
-74	virão	vir	VERB	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	57	aux	_	_
-75	a	a	ADP	PRP|@PRT-AUX<	_	72	obl	_	_
-76	estar	estar	AUX	<mv>|<cjt>|V|INF|@FS-N<	VerbForm=Inf	77	cop	_	ChangedBy=Issue167
-77	sujeitos	sujeito	ADJ	<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	72	conj	_	ChangedBy=Issue165|SpaceAfter=No
+72	estiveram	estar	AUX	<first-cjt>|V|PS|3P|IND|@>N	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	77	cop	_	_
+73	ou	ou	CCONJ	<co-vfin>|KC|@CO	_	76	cc	_	_
+74	virão	vir	AUX	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	76	aux	_	_
+75	a	a	ADP	PRP|@PRT-AUX<	_	76	aux	_	_
+76	estar	estar	AUX	<mv>|<cjt>|V|INF|@FS-N<	VerbForm=Inf	72	conj	_	ChangedBy=Issue167
+77	sujeitos	sujeito	ADJ	<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	57	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 78	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Estes sistemas exigem um acompanhamento e controlo permanentes (as 24 horas de cada um dos dias da semana), pelo que a sua centralização num único espaço permite racionalizar e conter os custos da sua gestão.
@@ -102,7 +102,7 @@
 5	acompanhamento	acompanhamento	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 6	e	e	CCONJ	<co-acc>|KC|@CO	_	7	cc	_	d2d:#106
 7	controlo	controlo	NOUN	<cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	conj	_	_
-8	permanentes	permanente	ADJ	<np-idf>|N|F|P|@N<	Gender=Fem|Number=Plur	5	nmod:npmod	_	_
+8	permanentes	permanente	ADJ	<np-idf>|N|F|P|@N<	Gender=Fem|Number=Plur	5	amod	_	_
 9	(	(	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 10	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
 11	24	24	NUM	<card>|NUM|F|P|@>N	NumType=Card	12	nummod	_	ChangedBy=Issue168
@@ -121,9 +121,9 @@
 22	)	)	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 24-25	pelo	_	_	_	_	_	_	_	_
-24	por	por	ADP	<sam->|PRP|@ADVL>	_	26	case	_	_
-25	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	26	det	_	_
-26	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	34	obl	_	_
+24	por	por	ADP	<sam->|PRP|@ADVL>	_	34	mark	_	MWE=por_o_que
+25	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	24	fixed	_	_
+26	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	24	fixed	_	_
 27	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
 28	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	29	det	_	_
 29	centralização	centralização	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	34	nsubj	_	_

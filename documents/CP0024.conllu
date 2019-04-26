@@ -47,7 +47,7 @@
 26	contrário	contrário	NOUN	N|@P<	_	36	obl	_	_
 27-28	do	_	_	_	_	_	_	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
-28	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	26	det	_	_
+28	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	26	nmod	_	_
 29	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	31	nsubj	_	_
 30	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	ChangedBy=Issue167
 31	tradicional	tradicional	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	28	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -71,7 +71,7 @@
 1	Ontem	ontem	ADV	ADV|@ADVL>	_	5	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	começou	começar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_
-4	a	a	ADP	PRP|@PRT-AUX<	_	5	obl	_	_
+4	a	a	ADP	PRP|@PRT-AUX<	_	5	aux	_	_
 5	chegar	chegar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 6-7	às	_	_	_	_	_	_	_	_
 6	a	a	ADP	<sam->|PRP|@<SA	_	8	case	_	_
@@ -96,10 +96,10 @@
 25	«	«	PUNCT	PU|@PU	_	26	punct	_	ChangedBy=Issue165|SpaceAfter=No
 26	normal	normal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	24	amod	_	ChangedBy=Issue165|SpaceAfter=No
 27	»	»	PUNCT	PU|@PU	_	26	punct	_	_
-28	para	para	ADP	PRP|@N<	_	31	case	_	_
-29	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_
+28	para	para	ADP	PRP|@N<	_	30	obl	_	_
+29	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
 30	funcionários	funcionários	NOUN	_	_	24	nmod	_	MWE=funcionários_públicos|MWEPOS=NOUN
-31	públicos	públicos	ADJ	_	_	30	compound	_	ChangedBy=Issue165|SpaceAfter=No
+31	públicos	públicos	ADJ	_	_	30	amod	_	ChangedBy=Issue165|SpaceAfter=No
 32	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Registe-se que a terça-feira de Carnaval não é um feriado legal, mas tão-só «tradicional»: ou seja, todos os anos o primeiro-ministro tem que produzir um despacho, publicado em «Diário da República», em que decreta a tolerância de ponto.
@@ -130,7 +130,7 @@
 19	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 20	ou	ou	CCONJ	_	_	30	cc	_	MWE=ou_seja|MWEPOS=CCONJ
 21	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	fixed	_	ChangedBy=Issue165|ChangedBy=Issue181|SpaceAfter=No
-22	,	,	PUNCT	PU|@PU	_	21	punct	_	_
+22	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 23	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	25	det	_	MWE=todos_os
 24	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	fixed	_	_
 25	anos	ano	NOUN	<np-def>|N|M|P|@ADVL>	Gender=Masc|Number=Plur	30	obl	_	_
@@ -181,17 +181,17 @@
 12-13	ao	_	_	_	_	_	_	_	_
 12	a	a	ADP	<sam->|PRP|@<PIV	_	14	case	_	_
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	Presidente	Presidente	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	MWE=Presidente_da_República
+14	Presidente	Presidente	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	iobj	_	MWE=Presidente_da_República
 15-16	da	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	República	República	PROPN	PROP|@P<	Number=Sing	14	nmod	_	_
-18	em	em	ADP	<sam->|PRP|@N<	_	19	case	_	MWE=em_torno_de
-19	torno	torno	NOUN	N|@P<	_	8	nmod	_	_
+18	em	em	ADP	<sam->|PRP|@N<	_	22	case	_	MWE=em_torno_de
+19	torno	torno	NOUN	N|@P<	_	18	fixed	_	_
 20-21	dos	_	_	_	_	_	_	_	_
-20	de	de	ADP	PRP|@N<	_	22	case	_	_
+20	de	de	ADP	PRP|@N<	_	18	fixed	_	_
 21	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
-22	feriados	feriado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	_
+22	feriados	feriado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
 23	(	(	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
 24-25	recorde-se	_	_	_	_	_	_	_	_
 24	recorde	recordar	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -218,7 +218,7 @@
 45	»	»	PUNCT	PU|@PU	_	44	punct	_	_
 46	com	com	ADP	PRP|@<PIV	_	48	case	_	_
 47	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
-48	terça-feira	terça-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	44	obl	_	_
+48	terça-feira	terça-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	44	obj	_	_
 49	de	de	ADP	PRP|@N<	_	50	case	_	_
 50	Carnaval	Carnaval	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	48	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 51	.	.	PUNCT	PU|@PU	_	24	punct	_	_

@@ -28,7 +28,7 @@
 # source = CETEMPúblico n=45 sec=pol sem=92b
 # sent_id = CP45-2
 # id = 255
-1	Entre	entre	ADP	PRP|@SA>	_	2	case	_	_
+1	Entre	entre	ADP	PRP|@SA>	_	2	mark	_	_
 2	eles	ele	PRON	PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	0	root	_	_
 3	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 4	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	_	ChangedBy=Issue119|MWE=Rui_Marques|MWEPOS=PROPN
@@ -89,12 +89,12 @@
 29	actividades	actividade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	20	obl	_	ChangedBy=Issue137
 30	ligadas	ligar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	29	acl	_	_
 31-32	à	_	_	_	_	_	_	_	_
-31	a	a	ADP	<sam->|PRP|@<PIV	_	34	case	_	_
-32	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	34	det	_	_
+31	a	a	ADP	<sam->|PRP|@<PIV	_	33	obl	_	_
+32	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	33	det	_	_
 33	campanha	campanha	NOUN	_	_	30	obl	_	MWE=campanha_eleitoral|MWEPOS=NOUN
-34	eleitoral	eleitoral	ADJ	_	_	33	compound	_	_
+34	eleitoral	eleitoral	ADJ	_	_	33	amod	_	_
 35	de	de	ADP	PRP|@N<ARG	_	36	case	_	_
-36	Setembro	setembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	nmod:tmod	_	_
+36	Setembro	setembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	33	nmod	_	_
 
 # text = Bush só poderá ganhar as eleições presidenciais se fizer cair Saddam Hussein, vaticinam os analistas políticos.
 # source = CETEMPúblico n=45 sec=pol sem=92b
@@ -153,7 +153,7 @@
 5	o	o	DET	<-sam>|ART|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Golfo	golfo	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 7	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
-8	a	a	ADP	PRP|@PRT-AUX<	_	10	obl	_	_
+8	a	a	ADP	PRP|@PRT-AUX<	_	10	aux	_	_
 9	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	10	aux:pass	_	_
 10	preparada	preparar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 

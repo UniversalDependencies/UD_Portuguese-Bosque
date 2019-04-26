@@ -70,7 +70,7 @@
 4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	<sam->|PRP|@N<PRED	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	6	det	_	_
-6	Reppublica	Reppublica	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=Reppublica_di_San_Marino|MWEPOS=PROPN
+6	Reppublica	Reppublica	PROPN	_	Gender=Fem|Number=Sing	2	appos:parataxis	_	ChangedBy=Issue119|MWE=Reppublica_di_San_Marino|MWEPOS=PROPN
 7	di	di	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	San	San	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 9	Marino	Marino	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
@@ -141,10 +141,10 @@
 # sent_id = CP101-7
 # id = 533
 # d2d = cc(preconceituosa,e) -> cc(lacunar,e)  #106
-1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	4	nsubj	_	_
 3	seria	ser	AUX	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
-4	importante	importante	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+4	importante	importante	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	1	acl:relcl	_	_
 5	pois	pois	SCONJ	KS|@SUB	_	13	mark	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 7	de	de	ADP	PRP|@ADVL>	_	9	case	_	_
@@ -173,11 +173,11 @@
 28-29	à	_	_	_	_	_	_	_	_
 28	a	a	ADP	<sam->|PRP|@PIV>	_	30	case	_	_
 29	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	30	det	_	_
-30	Ilha	Ilha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	35	obl	_	MWE=Ilha_de_Moçambique
+30	Ilha	Ilha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	35	obj	_	MWE=Ilha_de_Moçambique
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
 32	Moçambique	Moçambique	PROPN	PROP|@P<	Number=Sing	30	nmod	_	_
 33	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux	_	_
 34	sido	ser	AUX	<aux>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	35	aux:pass	_	_
-35	consagrada	consagrado	ADJ	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing	15	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+35	consagrada	consagrado	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	15	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 36	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

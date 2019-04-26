@@ -5,7 +5,7 @@
 # d2d = cc(marítimas,e) -> cc(aéreas,e)  #106
 # d2d = cc(Portugal,e) -> cc(Espanha,e)  #106
 1	50	50	NUM	<card>|NUM|M|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-2	%	%	SYM	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
+2	%	%	SYM	<np-def>|N|M|P|@SUBJ>	_	6	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -62,9 +62,9 @@
 6	(	(	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 7	Afeganistão	afeganistão	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	3	appos	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-9	Irão	Irão	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	appos	_	_
-10	e	e	CCONJ	<co-pred>|KC|@CO	_	7	cc	_	_
-11	Paquistão	Paquistão	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	appos	_	ChangedBy=Issue165|SpaceAfter=No
+9	Irão	Irão	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	appos:parataxis	_	_
+10	e	e	CCONJ	<co-pred>|KC|@CO	_	11	cc	_	_
+11	Paquistão	Paquistão	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	conj	_	ChangedBy=Issue165|SpaceAfter=No
 12	)	)	PUNCT	PU|@PU	_	7	punct	_	_
 13	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	ChangedBy=Issue167
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
@@ -88,13 +88,13 @@
 30	1	1	NUM	_	NumType=Card	28	nmod	_	SpaceAfter=No
 31	.	.	PUNCT	_	_	30	punct	_	_
 32	via	via	NOUN	_	_	28	appos	_	MWE=via_terrestre|MWEPOS=NOUN
-33	terrestre	terrestre	ADJ	_	_	32	compound	_	ChangedBy=Issue165|SpaceAfter=No
+33	terrestre	terrestre	ADJ	_	_	32	amod	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	38	punct	_	_
 35-36	pela	_	_	_	_	_	_	_	_
 35	por	por	ADP	<sam->|PRP|@N<PRED	_	38	case	_	_
 36	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
 37	«	«	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
-38	rota	rota	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	33	obl	_	_
+38	rota	rota	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	32	obl	_	_
 39-40	dos	_	_	_	_	_	_	_	_
 39	de	de	ADP	<sam->|PRP|@N<	_	41	case	_	_
 40	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	_	_

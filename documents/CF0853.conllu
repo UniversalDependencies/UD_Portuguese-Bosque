@@ -44,7 +44,7 @@
 # sent_id = CF853-3
 # id = 3596
 1	Custa	custar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	US$	US$	SYM	_	Gender=Masc|Number=Plur	1	obj	_	_
+2	US$	US$	SYM	_	_	1	obj	_	_
 3	49	49	NUM	<card>|NUM|M|P|@N<	NumType=Card	2	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5-6	na	_	_	_	_	_	_	_	_
@@ -57,9 +57,9 @@
 # source = CETENFolha n=853 cad=Informática sec=com sem=94b
 # sent_id = CF853-4
 # id = 3597
-1	Tel.	tel.	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
+1	Tel.	tel.	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	MWE=tel._253-1588
 2	(011)	(011)	ADP	PRP|@N<	_	1	nmod	_	MWE=(011)_253-1588
-3	253-1588	253-1588	NUM	NUM|@A<	NumType=Card	1	fixed	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+3	253-1588	253-1588	NUM	NUM|@A<	NumType=Card	2	fixed	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 4	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «Journey in the Universe» é um programa em inglês, voltado para crianças que querem aprender noções de astronomia.
@@ -110,10 +110,10 @@
 # id = 3600
 1	Sai	sair	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	de	de	ADP	PRP|@<PIV	_	3	case	_	_
-3	US$	US$	SYM	_	Gender=Masc|Number=Plur	1	obl	_	_
+3	US$	US$	SYM	_	_	1	obl	_	_
 4	79	79	NUM	<card>|NUM|M|P|@N<	NumType=Card	3	nummod	_	ChangedBy=Issue168
 5	por	por	ADP	PRP|@<ADVL	_	6	case	_	_
-6	US$	US$	SYM	_	Gender=Masc|Number=Plur	1	obl	_	_
+6	US$	US$	SYM	_	_	1	obl	_	_
 7	49	49	NUM	<card>|NUM|M|P|@N<	NumType=Card	6	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -143,7 +143,7 @@
 # d2d = cc(figuras,e) -> cc(sons,e)  #106
 1	Conta	contar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	com	com	ADP	PRP|@<PIV	_	3	case	_	_
-3	recursos	recurso	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl	_	_
+3	recursos	recurso	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obj	_	_
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
 5	figuras	figura	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
 6	e	e	CCONJ	<co-prparg>|KC|@CO	_	7	cc	_	d2d:#106
@@ -164,7 +164,7 @@
 # sent_id = CF853-10
 # id = 3603
 1	Custa	custar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	US$	US$	SYM	_	Gender=Masc|Number=Plur	1	obj	_	_
+2	US$	US$	SYM	_	_	1	obj	_	_
 3	45	45	NUM	<card>|NUM|M|P|@N<	NumType=Card	2	nummod	_	ChangedBy=Issue168
 4-5	na	_	_	_	_	_	_	_	_
 4	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
@@ -172,9 +172,9 @@
 6	Multimídia	Multimídia	PROPN	_	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue119|MWE=Multimídia_Center|MWEPOS=PROPN
 7	Center	Center	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	(	(	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
-9	tel	tel	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	6	appos	_	_
-10	011	011	NUM	PRP|@N<	_	9	nmod	_	MWE=011_959-2650
-11	959-2650	959-2650	NUM	NUM|@A<	NumType=Card	9	fixed	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+9	tel	tel	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	6	appos	_	MWE=tel_011_959-2650
+10	011	011	NUM	PRP|@N<	_	9	fixed	_	_
+11	959-2650	959-2650	NUM	NUM|@A<	NumType=Card	9	flat	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 12	)	)	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 13	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

@@ -18,11 +18,11 @@
 12	bolo	bolo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	4	appos	_	ChangedBy=Issue165|SpaceAfter=No
 13	»	»	PUNCT	PU|@PU	_	12	punct	_	_
 14	global	global	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	12	amod	_	_
-15	de	de	ADP	PRP|@N<	_	17	case	_	_
-16	253	253	NUM	<card>|NUM|M|P|@>N	NumType=Card	17	nummod	_	ChangedBy=Issue168
-17	milhões	milhão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
+15	de	de	ADP	PRP|@N<	_	16	case	_	_
+16	253	253	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168|MWE=253_milhões
+17	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	16	flat	_	_
 18	de	de	ADP	PRP|@N<ARG	_	19	case	_	_
-19	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+19	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 20	)	)	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 22	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_
@@ -39,11 +39,11 @@
 32	próximo	próximo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	33	amod	_	_
 33	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	29	obl	_	ChangedBy=Issue137
 34	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	35	advmod	_	_
-35	quase	quase	ADV	<quant>|ADV|@>N	_	37	advmod	_	_
-36	18	18	NUM	<card>|NUM|M|P|@>N	NumType=Card	37	nummod	_	ChangedBy=Issue168
-37	milhões	milhão	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	29	obj	_	_
+35	quase	quase	ADV	<quant>|ADV|@>N	_	36	advmod	_	_
+36	18	18	NUM	<card>|NUM|M|P|@>N	NumType=Card	39	nummod	_	ChangedBy=Issue168|MWE=18_milhões
+37	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	36	flat	_	_
 38	de	de	ADP	PRP|@N<ARG	_	39	case	_	_
-39	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	37	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+39	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	29	obj	_	ChangedBy=Issue165|SpaceAfter=No
 40	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 
 # text = Um crescimento que, todavia, não deixa a ANMP satisfeita.
@@ -80,7 +80,7 @@
 8	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
 9	autarquias	autarquia	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	6	nmod	_	_
 10	voltem	voltar	AUX	<aux>|V|PR|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
-11	a	a	ADP	PRP|@PRT-AUX<	_	13	obl	_	_
+11	a	a	ADP	PRP|@PRT-AUX<	_	13	aux	_	_
 12	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	13	aux:pass	_	_
 13	atribuídas	atribuir	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	2	ccomp	_	_
 14	em	em	ADP	PRP|@<ADVL	_	15	case	_	MWE=em_função_de
@@ -206,15 +206,15 @@
 6	Municípios	Municípios	PROPN	_	Number=Sing	3	nmod	_	ChangedBy=Issue119|MWE=Municípios_Portugueses|MWEPOS=PROPN
 7	Portugueses	Portugueses	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
-9	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	ccomp	_	_
+9	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	ccomp:parataxis	_	_
 10	outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	11	det	_	_
 11	leitura	leitura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-13	mas	mas	CCONJ	<co-vfin>|KC|@CO	_	9	cc	_	_
+13	mas	mas	CCONJ	<co-vfin>|KC|@CO	_	17	cc	_	_
 14	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	15	det	_	_
 15	realidade	realidade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj	_	_
 16	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	ChangedBy=Issue167
-17	inequívoca	inequívoco	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	9	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+17	inequívoca	inequívoco	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	9	conj	_	ChangedBy=Issue165|SpaceAfter=No
 18	»	»	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 20	acrescentou	acrescentar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No

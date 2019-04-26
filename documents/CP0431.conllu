@@ -5,12 +5,12 @@
 # d2d = cc(centenas,e) -> cc(meia,e)  #106
 # d2d = cc(ver,e) -> cc(aplaudir,e)  #106
 # d2d = punct(ver,,) -> punct(ouvir,,)  #106
-1	Três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
-2	centenas	centena	NOUN	<first-cjt>|<np-def>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
+1	Três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168|MWE=três_centenas
+2	centenas	centena	NUM	<first-cjt>|<np-def>|N|F|P|@NPHR	NumType=Card	1	flat	_	_
 3	e	e	CCONJ	<co-utt>|KC|@CO	_	4	cc	_	d2d:#106
-4	meia	meia	NOUN	<cjt>|<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	2	conj	_	_
+4	meia	meia	NOUN	<cjt>|<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	1	conj	_	_
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
-6	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	nmod	_	_
+6	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	0	root	_	_
 7	a	a	ADP	PRP|@N<	_	8	mark	_	_
 8	ver	ver	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
@@ -26,7 +26,7 @@
 18	Associação	Associação	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	obl:agent	_	MWE=Associação_Timorense_Lafaek
 19	Timorense	Timorense	PROPN	PROP|@N<	Number=Sing	18	flat:name	_	_
 20	Lafaek	Lafaek	PROPN	PROP|@N<	Number=Sing	18	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
-21	.	.	PUNCT	PU|@PU	_	2	punct	_	_
+21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Ontem à noite, num clube desportivo de Darwin, muitos australianos sentaram-se ao lado dos estudantes e levantaram-se para gritar «Viva a missão de paz!», «Viva Timor-Leste», «Viva Xanana», quando está próxima a chegada do Lusitânia.
 # source = CETEMPúblico n=431 sec=pol sem=92a
@@ -110,7 +110,7 @@
 6	Associação	Associação	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 7	dançaram	dançar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-9	vestidas	vestir	VERB	<mv>|V|PCP|F|P|@ICL-<PRED	Gender=Fem|Number=Plur|VerbForm=Part	7	dep	_	_
+9	vestidas	vestir	VERB	<mv>|V|PCP|F|P|@ICL-<PRED	Gender=Fem|Number=Plur|VerbForm=Part	1	acl	_	_
 10	com	com	ADP	PRP|@<ADVL	_	12	case	_	_
 11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	trajes	traje	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obl	_	ChangedBy=Issue137
@@ -288,7 +288,7 @@
 6-7	à	_	_	_	_	_	_	_	_
 6	a	a	ADP	<sam->|PRP|@<PIV	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	missão	missão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
+8	missão	missão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obj	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	paz	paz	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	2	punct	_	_
@@ -300,8 +300,8 @@
 1	(	(	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	...	...	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	)	)	PUNCT	PU|@PU	_	7	punct	_	_
-4	Duzentos	duzentos	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
-5	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@SUBJ>	NumType=Card	7	nsubj	_	ChangedBy=Issue168
+4	Duzentos	duzentos	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nsubj	_	ChangedBy=Issue168|MWE=duzentos_mil
+5	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@SUBJ>	NumType=Card	4	flat	_	ChangedBy=Issue168
 6	já	já	ADV	ADV|@ADVL>	_	7	advmod	_	_
 7	morreram	morrer	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
@@ -349,14 +349,14 @@
 8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	jovem	jovem	NOUN	<n>|<np-idf>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
-11	timorense	timorense	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	10	nmod:npmod	_	_
+11	timorense	timorense	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	10	nmod	_	_
 12	vestido	vestir	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
 13	de	de	ADP	PRP|@<ADVL	_	14	case	_	_
 14	guerreiro	guerreiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137
 15	soluçou	soluçar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 16	e	e	CCONJ	<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 17	chorou	chorar	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	_	_
-18	abraçado	abraçar	VERB	<mv>|V|PCP|M|S|@ICL-<PRED	Gender=Masc|Number=Sing|VerbForm=Part	15	dep	_	_
+18	abraçado	abraçar	VERB	<mv>|V|PCP|M|S|@ICL-<PRED	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
 19-20	às	_	_	_	_	_	_	_	_
 19	a	a	ADP	<sam->|PRP|@<ADVL	_	21	case	_	_
 20	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_

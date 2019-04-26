@@ -16,9 +16,9 @@
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	dobro	dobro	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 13-14	da	_	_	_	_	_	_	_	_
-13	de	de	ADP	PRP|@N<ARG	_	15	mark	_	_
-14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	verificada	verificar	NOUN	<mv>|<n>|V|PCP|F|S|@ICL-P<	Gender=Fem|Number=Sing|VerbForm=Part	12	acl	_	_
+13	de	de	ADP	PRP|@N<ARG	_	14	case	_	_
+14	a	o	PRON	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Dem	12	nmod	_	_
+15	verificada	verificar	VERB	<mv>|<n>|V|PCP|F|S|@ICL-P<	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	_	_
 16-17	nas	_	_	_	_	_	_	_	_
 16	em	em	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
 17	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_
@@ -29,7 +29,7 @@
 22	qualidade	qualidade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	23	nsubj	_	_
 23	foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	advcl	_	_
 24	cem	cem	NUM	<card>|NUM|F|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168
-25	vezes	vez	NOUN	<np-def>|N|F|P|@>A	Gender=Fem|Number=Plur	26	nmod:npmod	_	_
+25	vezes	vez	NOUN	<np-def>|N|F|P|@>A	Gender=Fem|Number=Plur	26	nmod	_	_
 26	melhor	melhor	ADV	<KOMP>|<SUP>|<COMP>|ADV|@<ADVL	_	23	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
@@ -38,7 +38,7 @@
 # sent_id = CF245-2
 # id = 1043
 1	Elas	elas	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
-2	registraram	registrar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	17	ccomp	_	_
+2	registraram	registrar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	17	ccomp:parataxis	_	_
 3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	produção	produção	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 5	por	por	ADP	PRP|@N<	_	6	case	_	_
@@ -46,7 +46,7 @@
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	trabalho	trabalho	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
 9	43	43	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-10	%	%	SYM	<np-def>|N|M|P|@>A	Gender=Masc|Number=Plur	11	nmod:npmod	_	_
+10	%	%	SYM	<np-def>|N|M|P|@>A	_	11	nmod	_	_
 11	superior	alto	ADJ	<SUP>|<KOMP>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
 12-13	às	_	_	_	_	_	_	_	_
 12	a	a	ADP	<sam->|PRP|@A<	_	14	case	_	_
@@ -82,10 +82,10 @@
 15	entre	entre	ADP	PRP|@N<	_	17	case	_	_
 16	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
 17	empresas	empresa	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	14	nmod	_	_
-18	«	«	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
-19	world	world	X	_	_	17	nmod:npmod	_	MWE=world_class|MWEPOS=NOUN
+18	«	«	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
+19	world	world	X	_	_	17	nmod	_	MWE=world_class|MWEPOS=NOUN
 20	class	class	X	_	_	19	flat:foreign	_	ChangedBy=Issue165|SpaceAfter=No
-21	»	»	PUNCT	PU|@PU	_	20	punct	_	_
+21	»	»	PUNCT	PU|@PU	_	19	punct	_	_
 22	e	e	CCONJ	<co-prparg>|KC|@CO	_	24	cc	_	d2d:#106
 23	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
 24	concorrentes	concorrente	NOUN	<cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	conj	_	ChangedBy=Issue165|SpaceAfter=No

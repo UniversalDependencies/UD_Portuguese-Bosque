@@ -11,9 +11,9 @@
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	valor	valor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
-10	US$	US$	SYM	_	Gender=Masc|Number=Plur	8	nmod	_	_
-11	200	200	NUM	<card>|NUM|M|P|@>N	NumType=Card	12	nummod	_	ChangedBy=Issue168
-12	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	10	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+10	US$	US$	SYM	_	_	8	nmod	_	_
+11	200	200	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	nummod	_	ChangedBy=Issue168|MWE=200_mil
+12	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	11	flat	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 13	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Os pedidos até US$ 20 mil dispensam guia de importação.
@@ -23,9 +23,9 @@
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	pedidos	pedido	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
 3	até	até	ADP	PRP|@N<	_	4	case	_	_
-4	US$	US$	SYM	_	Gender=Masc|Number=Plur	2	nmod	_	_
-5	20	20	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
-6	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	4	nummod	_	ChangedBy=Issue168
+4	US$	US$	SYM	_	_	2	nmod	_	_
+5	20	20	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168|MWE=20_mil
+6	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	5	flat	_	ChangedBy=Issue168
 7	dispensam	dispensar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	guia	guia	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
@@ -69,7 +69,7 @@
 7	custa	custar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	próximo	próximo	ADV	ADV|@<ADVL	_	7	advmod	_	MWE=próximo_de
 9	de	de	ADP	PRP|@A<	_	10	case	_	_
-10	US$	US$	SYM	_	Gender=Masc|Number=Plur	8	obl	_	_
+10	US$	US$	SYM	_	_	8	obl	_	_
 11	50	50	NUM	<card>|NUM|M|P|@N<	NumType=Card	10	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 12	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
@@ -93,7 +93,7 @@
 13	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 14	como	como	ADP	<com>|PRP|@N<PRED	_	16	case	_	_
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	Brasoftware	Brasoftware	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
+16	Brasoftware	Brasoftware	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	appos:parataxis	_	_
 17	(	(	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 18	tel.	tel.	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	16	appos	_	_
 19	011/253-1588	011/253-1588	NUM	<card>|NUM|M|P|@N<	NumType=Card	18	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No

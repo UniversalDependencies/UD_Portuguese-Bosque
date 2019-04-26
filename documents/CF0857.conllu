@@ -7,10 +7,10 @@
 3	inflação	inflação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 4	de	de	ADP	PRP|@N<	_	6	case	_	_
 5	2,3	2,3	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-6	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+6	%	%	SYM	<np-def>|N|M|P|@P<	_	3	nmod	_	_
 7	com	com	ADP	PRP|@<ADVL	_	9	case	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	real	real	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue137
+9	real	real	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue137
 
 # text = Um estudo do Corecon (Conselho Regional de Economia), do Rio de Janeiro, divulgado ontem, está projetando, na hipótese de adoção do real em abril, uma inflação de 2,3%.
 # source = CETENFolha n=857 cad=Caderno Especial sec=nd sem=94b
@@ -32,7 +32,7 @@
 13-14	do	_	_	_	_	_	_	_	_
 13	de	de	ADP	<sam->|PRP|@N<PRED	_	15	case	_	_
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	Rio	Rio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	MWE=Rio_de_Janeiro
+15	Rio	Rio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	appos:parataxis	_	MWE=Rio_de_Janeiro
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	Janeiro	Janeiro	PROPN	PROP|@P<	Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	15	punct	_	_
@@ -53,13 +53,13 @@
 31	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	real	real	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	_
 33	em	em	ADP	PRP|@N<	_	34	case	_	_
-34	abril	abril	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod:tmod	_	ChangedBy=Issue165|SpaceAfter=No
+34	abril	abril	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 36	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 37	inflação	inflação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	23	obj	_	_
 38	de	de	ADP	PRP|@N<	_	40	case	_	_
 39	2,3	2,3	NUM	<card>|NUM|M|P|@>N	NumType=Card	40	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-40	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	37	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+40	%	%	SYM	<np-def>|N|M|P|@P<	_	37	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 41	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
 # text = Com base nesta projeção, o estudo prevê uma inflação com a nova moeda de 30% em 94.
@@ -81,12 +81,12 @@
 12	com	com	ADP	PRP|@N<	_	15	case	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 14	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	15	amod	_	_
-15	moeda	moeda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
+15	moeda	moeda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
 16	de	de	ADP	PRP|@N<	_	18	case	_	_
 17	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-18	%	%	SYM	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
+18	%	%	SYM	<np-def>|N|M|P|@P<	_	11	nmod	_	_
 19	em	em	ADP	PRP|@<ACC	_	20	case	_	_
-20	94	94	NUM	<card>|NUM|M|P|@P<	NumType=Card	9	obl	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+20	94	94	NUM	<card>|NUM|M|P|@P<	NumType=Card	11	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = O SPQ (Sistema de Projeções Qualificadas) resulta da média de opiniões de 16 economistas que fazem análise de conjuntura.
@@ -105,7 +105,7 @@
 10-11	da	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@<PIV	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	média	média	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	_
+12	média	média	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obj	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	opiniões	opinião	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
 15	de	de	ADP	PRP|@N<	_	17	case	_	_

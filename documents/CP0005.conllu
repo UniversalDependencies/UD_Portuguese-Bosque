@@ -15,12 +15,12 @@
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	projecto	projecto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 11	gira	gerir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-12	em	em	ADP	PRP|@<ADVL	_	13	case	_	MWE=em_torno_de
-13	torno	torno	NOUN	N|@P<	_	11	obl	_	_
+12	em	em	ADP	PRP|@<ADVL	_	16	case	_	MWE=em_torno_de
+13	torno	torno	NOUN	N|@P<	_	12	fixed	_	_
 14-15	do	_	_	_	_	_	_	_	_
-14	de	de	ADP	PRP|@N<	_	16	case	_	_
+14	de	de	ADP	PRP|@N<	_	12	fixed	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	parque	parque	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
+16	parque	parque	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obj	_	_
 17	temático	temático	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	16	amod	_	_
 18	propriamente	propriamente	ADV	ADV|@>A	_	19	advmod	_	_
 19	dito	dizer	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	16	acl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -138,7 +138,7 @@
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	zona	zona	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj	_	_
-4	petting	petting	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	3	nmod:npmod	_	ChangedBy=Issue165|SpaceAfter=No
+4	petting	petting	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 5	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 6	anexa	anexo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	9	punct	_	_
@@ -183,11 +183,11 @@
 # source = CETEMPúblico n=5 sec=soc sem=97a
 # sent_id = CP5-6
 # id = 29
-1	Seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
-2	milhões	milhão	NOUN	<np-def>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
+1	Seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	0	root	_	ChangedBy=Issue168|MWE=seis_milhões
+2	milhões	milhão	NUM	<np-def>|N|F|P|@NPHR	NumType=Card	1	flat	_	_
 3	em	em	ADP	PRP|@N<	_	5	case	_	_
 4	dez	dez	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
-5	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
+5	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl	_	_
 
 # text = O museu, a desenvolver sob orientação de uma comissão de notáveis, dirigida pelo Presidente da República, está orçado em seis milhões de contos, valor incomportável para a Força Aérea.
 # source = CETEMPúblico n=5 sec=soc sem=97a
@@ -218,13 +218,13 @@
 21	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 22	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	ChangedBy=Issue167
 23	orçado	orçado	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue141|ChangedBy=Issue91
-24	em	em	ADP	PRP|@<ADVL	_	26	case	_	_
-25	seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	26	nummod	_	ChangedBy=Issue168
-26	milhões	milhão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	23	obl	_	_
+24	em	em	ADP	PRP|@<ADVL	_	28	case	_	_
+25	seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	28	nummod	_	ChangedBy=Issue168|MWE=seis_milhões
+26	milhões	milhão	NUM	<np-def>|N|F|P|@P<	NumType=Card	25	flat	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
-28	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	26	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+28	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	obl	_	ChangedBy=Issue165|SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	30	punct	_	_
-30	valor	valor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	26	appos	_	_
+30	valor	valor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	28	appos	_	_
 31	incomportável	incomportável	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	30	amod	_	_
 32	para	para	ADP	PRP|@N<	_	34	case	_	_
 33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
@@ -261,14 +261,14 @@
 4	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_
 5	muito	muito	ADV	<quant>|ADV|@>A	_	6	advmod	_	_
 6	bem	bem	ADV	<quant>|ADV|@ADVL>	_	7	advmod	_	_
-7	vista	visto	ADJ	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing	28	ccomp	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+7	vista	visto	ADJ	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing	28	ccomp:parataxis	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	porque	porque	SCONJ	KS|@SUB	_	12	mark	_	_
 10	será	ser	AUX	<mv>|V|FUT|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	cop	_	ChangedBy=Issue167
 11	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	12	advmod	_	_
 12	vantajosa	vantajoso	ADJ	<COMP>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	7	advcl	_	_
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	ADP	<sam->|PRP|@COM	_	17	case	_	MWE=do_que
+13	de	de	ADP	<sam->|PRP|@COM	_	17	mark	_	MWE=do_que
 14	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	13	fixed	_	_
 15	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	13	fixed	_	_
 16	se	se	SCONJ	KS|@SUB	_	17	mark	_	_
@@ -289,18 +289,18 @@
 30	major	major	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	28	nsubj	_	_
 31	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	30	appos	_	ChangedBy=Issue119|MWE=Carlos_Barbosa|MWEPOS=PROPN
 32	Barbosa	Barbosa	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-33	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+33	,	,	PUNCT	PU|@PU	_	36	punct	_	_
 34-35	das	_	_	_	_	_	_	_	_
-34	de	de	ADP	<sam->|PRP|@N<PRED	_	37	case	_	_
-35	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	37	det	_	_
+34	de	de	ADP	<sam->|PRP|@N<PRED	_	36	obl	_	_
+35	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	36	det	_	_
 36	relações	relações	NOUN	_	_	30	nmod	_	MWE=relações_públicas|MWEPOS=NOUN
-37	públicas	públicas	ADJ	_	_	36	compound	_	_
+37	públicas	públicas	ADJ	_	_	36	amod	_	_
 38-39	da	_	_	_	_	_	_	_	_
 38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	40	det	_	_
-40	Força	Força	PROPN	_	Gender=Fem|Number=Sing	37	obl	_	ChangedBy=Issue119|MWE=Força_Aérea|MWEPOS=PROPN
+40	Força	Força	PROPN	_	Gender=Fem|Number=Sing	36	nmod	_	ChangedBy=Issue119|MWE=Força_Aérea|MWEPOS=PROPN
 41	Aérea	Aérea	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-42	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+42	,	,	PUNCT	PU|@PU	_	36	punct	_	_
 43	admitindo	admitir	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	28	advcl	_	_
 44	que	que	SCONJ	KS|@SUB	_	63	mark	_	ChangedBy=Issue165|SpaceAfter=No
 45	,	,	PUNCT	PU|@PU	_	48	punct	_	_
@@ -320,7 +320,7 @@
 59	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	60	det	_	_
 60	gente	gente	PRON	INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Ind	63	nsubj	_	_
 61	fica	ficar	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	63	aux	_	_
-62	a	a	ADP	PRP|@PRT-AUX<	_	63	obl	_	_
+62	a	a	ADP	PRP|@PRT-AUX<	_	63	aux	_	_
 63	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	43	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
 64	»	»	PUNCT	PU|@PU	_	63	punct	_	ChangedBy=Issue165|SpaceAfter=No
 65	.	.	PUNCT	PU|@PU	_	28	punct	_	_

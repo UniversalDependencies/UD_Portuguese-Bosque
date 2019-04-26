@@ -5,9 +5,9 @@
 # d2d = cc(seguiu,e) -> cc(servir,e)  #106
 # d2d = cc(sábado,ou) -> cc(domingo,ou)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Hércules	Hércules	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
-3	C	c	PROPN	_	_	2	nmod:npmod	_	ChangedBy=Issue119|MWE=C_130|MWEPOS=PROPN
-4	130	130	PROPN	_	_	3	flat:name	_	ChangedBy=Issue119
+2	Hércules	Hércules	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	MWE=hércules_c_130
+3	C	c	PROPN	_	_	2	flat	_	ChangedBy=Issue119|MWE=C_130|MWEPOS=PROPN
+4	130	130	PROPN	_	_	2	flat	_	ChangedBy=Issue119
 5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
@@ -21,7 +21,7 @@
 14	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 15	poderá	poder	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	aux	_	_
 16	vir	vir	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	18	aux	_	_
-17	a	a	ADP	PRP|@PRT-AUX<	_	18	obl	_	_
+17	a	a	ADP	PRP|@PRT-AUX<	_	18	aux	_	_
 18	servir	servir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	conj	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 20-21	no	_	_	_	_	_	_	_	_
@@ -36,7 +36,7 @@
 27	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 28	para	para	ADP	PRP|@<PIV	_	30	case	_	_
 29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	transporte	transporte	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	_
+30	transporte	transporte	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obj	_	_
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
 32	São	São	PROPN	_	Gender=Masc|Number=Sing	30	nmod	_	ChangedBy=Issue119|MWE=São_Tomé|MWEPOS=PROPN
 33	Tomé	Tomé	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
@@ -76,22 +76,22 @@
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	avião	avião	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 10	militar	militar	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	_
-11	português	português	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	9	nmod:npmod	_	_
+11	português	português	ADJ	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	_
 12	transportou	transportar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 13	27	27	NUM	<card>|NUM|M|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168
 14	militares	militar	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	obj	_	_
-15	moçambicanos	moçambicano	NOUN	<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	14	nmod:npmod	_	ChangedBy=Issue165|SpaceAfter=No
+15	moçambicanos	moçambicano	ADJ	<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	14	amod	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 17	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
-18	cabo-verdianos	cabo-verdiano	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	conj	_	_
+18	cabo-verdianos	cabo-verdiano	ADJ	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	15	conj	_	_
 19	e	e	CCONJ	<co-acc>|KC|@CO	_	21	cc	_	d2d:#106
 20	seis	seis	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	ChangedBy=Issue168
-21	são-tomenses	são-tomense	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	conj	_	ChangedBy=Issue165|SpaceAfter=No
+21	são-tomenses	são-tomense	ADJ	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	15	conj	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
 23	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	24	nsubj	_	_
 24	participaram	participar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	21	acl:relcl	_	_
 25	em	em	ADP	PRP|@<PIV	_	26	case	_	_
-26	acções	acção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	24	obl	_	_
+26	acções	acção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	24	obj	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
 28	formação	formação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	_
 29	em	em	ADP	PRP|@<ADVL	_	30	case	_	_
@@ -106,7 +106,7 @@
 38-39	aos	_	_	_	_	_	_	_	_
 38	a	a	ADP	<sam->|PRP|@<PIV	_	40	case	_	_
 39	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_
-40	portugueses	português	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	37	obl	_	_
+40	portugueses	português	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	37	obj	_	_
 41-42	do	_	_	_	_	_	_	_	_
 41	de	de	ADP	<sam->|PRP|@N<	_	43	case	_	_
 42	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_
@@ -128,7 +128,7 @@
 57	em	em	ADP	PRP|@<ADVL	_	58	case	_	_
 58	Moçambique	Moçambique	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	50	obl	_	ChangedBy=Issue137
 59	(	(	PUNCT	PU|@PU	_	60	punct	_	ChangedBy=Issue165|SpaceAfter=No
-60	Onumoz	Onumoz	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	58	appos	_	ChangedBy=Issue165|SpaceAfter=No
+60	Onumoz	Onumoz	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	58	appos:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 61	)	)	PUNCT	PU|@PU	_	60	punct	_	ChangedBy=Issue165|SpaceAfter=No
 62	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 

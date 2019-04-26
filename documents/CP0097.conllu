@@ -27,7 +27,7 @@
 21-22	no	_	_	_	_	_	_	_	_
 21	em	em	ADP	<sam->|PRP|@N<	_	23	case	_	_
 22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	Inverno	Inverno	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	_
+23	Inverno	Inverno	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
 24	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	d2d:#106
 25	muito	muito	ADV	<quant>|ADV|@>N	_	26	advmod	_	_
 26	calor	calor	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	conj	_	_
@@ -67,7 +67,7 @@
 20	aquele	aquele	PRON	<dem>|DET|M|S|@<SUBJ	Gender=Masc|Number=Sing|PronType=Dem	14	nsubj	_	_
 21	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	24	nsubj	_	_
 22	viria	vir	AUX	<aux>|V|COND|3S|@FS-N<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	24	aux	_	_
-23	a	a	ADP	PRP|@PRT-AUX<	_	24	obl	_	_
+23	a	a	ADP	PRP|@PRT-AUX<	_	24	aux	_	_
 24	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	acl:relcl	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	maratona	maratona	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
@@ -99,7 +99,7 @@
 9	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 10	competia	competir	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	parataxis	_	_
 11	com	com	ADP	PRP|@<PIV	_	12	case	_	_
-12	amigos	amigo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	_
+12	amigos	amigo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obj	_	_
 13	quando	quando	ADV	<rel>|ADV|@ADVL>	_	14	advmod	_	_
 14	iam	ir	VERB	<mv>|V|IMPF|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	advcl	_	_
 15	a	a	ADP	PRP|@<SA	_	16	case	_	_
@@ -136,10 +136,10 @@
 # d2d = punct(torneiro-mecânico,,) -> punct(deu,,)  #106
 # d2d = punct(torneiro-mecânico,,) -> punct(teve,,)  #106
 1-2	Na	_	_	_	_	_	_	_	_
-1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
-2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	4	det	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	obl	_	_
+2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	3	det	_	_
 3	terra	terra	NOUN	_	_	6	nmod	_	MWE=terra_natal|MWEPOS=NOUN
-4	natal	natal	ADJ	_	_	3	compound	_	_
+4	natal	natal	ADJ	_	_	3	amod	_	_
 5	foi	ser	AUX	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
 6	torneiro-mecânico	torneiro-mecânico	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
@@ -155,7 +155,7 @@
 17-18	nas	_	_	_	_	_	_	_	_
 17	em	em	ADP	<sam->|PRP|@<PIV	_	19	case	_	_
 18	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	19	det	_	_
-19	vistas	vista	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	16	obl	_	_
+19	vistas	vista	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	16	obj	_	_
 20-21	nos	_	_	_	_	_	_	_	_
 20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
 21	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
@@ -188,7 +188,7 @@
 2	Moniz	Moniz	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=Moniz_Pereira|MWEPOS=PROPN
 3	Pereira	Pereira	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
 4	começou	começar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	obl	_	_
+5	a	a	ADP	PRP|@PRT-AUX<	_	6	aux	_	_
 6-7	treiná-lo	_	_	_	_	_	_	_	SpaceAfter=No
 6	treiná	treinar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 7	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_

@@ -5,7 +5,7 @@
 1	Flórida	Flórida	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	Adota	adotar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	Discurso	discurso	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
-4	ANTIIMIGRAÇÃO	antiimigração	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	3	nmod:npmod	_	ChangedBy=Issue165|SpaceAfter=No
+4	ANTIIMIGRAÇÃO	antiimigração	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 6	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	2	parataxis	_	ChangedBy=Issue119|MWE=Carlos_EDUARDO_LINS|MWEPOS=PROPN
 7	Eduardo	Eduardo	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
@@ -56,7 +56,7 @@
 7	Lawton	Lawton	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Lawton_Chiles|MWEPOS=PROPN
 8	Chiles	Chiles	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-10	63	63	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	2	appos	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+10	63	63	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	2	appos:parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 12	resolveu	resolver	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 13	processar	processar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	12	xcomp	_	_
@@ -69,9 +69,9 @@
 19	para	para	ADP	PRP|@<ADVL	_	20	mark	_	_
 20	recuperar	recuperar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	advcl	_	_
 21	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
-22	US$	US$	SYM	_	Gender=Masc|Number=Plur	20	obj	_	_
-23	739	739	NUM	<card>|NUM|M|P|@>N	NumType=Card	24	nummod	_	ChangedBy=Issue168
-24	milhões	milhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	22	nmod:npmod	_	_
+22	US$	US$	SYM	_	_	20	obj	_	_
+23	739	739	NUM	<card>|NUM|M|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168|MWE=739_milhões
+24	milhões	milhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	23	flat	_	_
 25	anuais	anual	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	22	amod	_	_
 26	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	28	obj	_	_
 27	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	28	nsubj	_	_
@@ -126,7 +126,7 @@
 29	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
 30	Estados	estado	NOUN	<prop>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	27	obl:agent	_	_
 31	com	com	ADP	PRP|@<PIV	_	32	case	_	_
-32	eles	eles	PRON	PERS|M|3P|NOM/PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	27	obl	_	ChangedBy=Issue165|SpaceAfter=No
+32	eles	eles	PRON	PERS|M|3P|NOM/PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	27	obj	_	ChangedBy=Issue165|SpaceAfter=No
 33	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = A decisão tem evidentes objetivos eleitorais.
@@ -197,10 +197,10 @@
 4	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	5	advmod	_	_
 5	baixa	baixo	ADJ	<COMP>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 6-7	do	_	_	_	_	_	_	_	_
-6	de	de	ADP	<sam->|PRP|@COM	_	7	case	_	MWE=do_que
-7	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	5	parataxis	_	_
-8	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	7	fixed	_	_
-9	nunca	nunca	ADV	<cjt>|ADV|@AS<	_	7	advmod	_	_
+6	de	de	ADP	<sam->|PRP|@COM	_	9	case	_	MWE=do_que
+7	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	6	fixed	_	_
+8	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	6	fixed	_	_
+9	nunca	nunca	ADV	<cjt>|ADV|@AS<	_	5	advmod	_	_
 10	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 11	um	um	NUM	<card>|NUM|M|S|@SUBJ>	NumType=Card	17	nsubj	_	ChangedBy=Issue168
 12	de	de	ADP	PRP|@N<	_	15	case	_	_

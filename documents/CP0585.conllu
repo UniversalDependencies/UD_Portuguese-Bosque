@@ -15,7 +15,7 @@
 10-11	na	_	_	_	_	_	_	_	_
 10	em	em	ADP	<sam->|PRP|@<PIV	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	vida	vida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	_
+12	vida	vida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obj	_	_
 13	eterna	eterno	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -58,10 +58,10 @@
 # source = CETEMPúblico n=585 sec=nd sem=98b
 # sent_id = CP585-4
 # id = 3036
-1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
-2	le	le	X	_	_	6	parataxis	_	_
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
+2	le	le	X	_	_	6	parataxis	_	MWE=le_néant
 3	néant	néant	X	_	_	2	flat:foreign	_	SpaceAfter=No
-4	»	»	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
+4	»	»	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 6	dizem	dizer	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
@@ -78,7 +78,7 @@
 3-4	aos	_	_	_	_	_	_	_	_
 3	a	a	ADP	<sam->|PRP|@<PIV	_	5	case	_	_
 4	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
-5	meus	meu	PRON	<poss>|<np-def>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Prs	2	obl	_	_
+5	meus	meu	PRON	<poss>|<np-def>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Prs	2	obj	_	_
 6	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
 7	devem	dever	AUX	<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
 8-9	preocupar-se	_	_	_	_	_	_	_	_
@@ -86,7 +86,7 @@
 9	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	expl	_	ChangedBy=Issue135
 10	com	com	ADP	PRP|@<PIV	_	12	case	_	_
 11	esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
-12	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue165|SpaceAfter=No
+12	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obj	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 14	não	não	ADV	ADV|@>A	Polarity=Neg	16	advmod	_	ChangedBy=Issue108
 15	por	por	ADP	<first-cjt>|PRP|@<ADVL	_	16	case	_	_
@@ -136,7 +136,7 @@
 # id = 3040
 1	Eu	eu	PRON	PERS|M/F|1S|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
 2	deixarei	deixar	AUX	<aux>|V|FUT|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	4	aux	_	_
-3	de	de	ADP	PRP|@PRT-AUX<	_	4	obl	_	_
+3	de	de	ADP	PRP|@PRT-AUX<	_	4	aux	_	_
 4	existir	existir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 5	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -157,14 +157,14 @@
 8	consciência	consciência	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 9-10	do	_	_	_	_	_	_	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
-10	o	o	PRON	<-sam>|<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
-11	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	12	obj	_	_
-12	fui	ser	VERB	<first-cjt>|<mv>|V|PS|1S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	10	acl:relcl	_	_
+10	o	o	PRON	<-sam>|<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	8	nmod	_	_
+11	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	12	acl	_	_
+12	fui	ser	AUX	<first-cjt>|<mv>|V|PS|1S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	10	acl:relcl	_	_
 13	e	e	CCONJ	<co-fcl>|<co-postnom>|KC|@CO	_	17	cc	_	d2d:#106
 14	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	17	obj	_	_
 15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	outros	outro	PRON	<diff>|<KOMP>|<np-def>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Ind	17	nsubj	_	_
-17	recordarão	recordar	VERB	<mv>|<cjt>|<first-cjt>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_
+17	recordarão	recordar	VERB	<mv>|<cjt>|<first-cjt>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	10	conj	_	_
 18	--	--	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	ou	ou	CCONJ	KC|@CO	_	20	cc	_	d2d:#106
 20	não	não	ADV	<cjt>|ADV|@FS-N<	_	17	conj	_	ChangedBy=Issue165|SpaceAfter=No

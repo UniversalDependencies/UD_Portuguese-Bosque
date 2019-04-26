@@ -76,8 +76,9 @@
 (defun fix-corpus (sentences)
   (mapc (lambda (s) 
           (let ((tokens (sentence-tokens s)))
-            (mapc (lambda (x) (fix x tokens (sentence-meta-value s "sent_id"))) tokens))) sentences))
+            (mapc (lambda (x) (fix x tokens (sentence-meta-value s "sent_id"))) tokens)))
+	sentences))
 
 (defun run ()
-  (dolist (f (cl-fad:list-directory #p "documents/"))
+  (dolist (f (cl-fad:list-directory #p"documents/"))
     (write-conllu (fix-corpus (read-conllu f)) f)))

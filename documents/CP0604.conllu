@@ -44,12 +44,12 @@
 36	encarregue	encarregar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	31	acl	_	_
 37	sobretudo	sobretudo	ADV	ADV|@>A	_	39	advmod	_	_
 38	de	de	ADP	PRP|@<PIV	_	39	case	_	_
-39	assuntos	assunto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	36	obl	_	_
+39	assuntos	assunto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	36	obj	_	_
 40	ligados	ligar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	39	acl	_	_
 41-42	à	_	_	_	_	_	_	_	_
 41	a	a	ADP	<sam->|PRP|@<PIV	_	43	case	_	_
 42	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
-43	toxicodependência	toxicodependência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	40	obl	_	ChangedBy=Issue165|SpaceAfter=No
+43	toxicodependência	toxicodependência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	40	obj	_	ChangedBy=Issue165|SpaceAfter=No
 44	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Esperavam, pois, encontrar uma cidade em estado de sítio, mas depararam-se com uma «estranha normalidade».
@@ -80,7 +80,7 @@
 17	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 18	«	«	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
 19	estranha	estranho	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_
-20	normalidade	normalidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obl	_	ChangedBy=Issue165|SpaceAfter=No
+20	normalidade	normalidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obj	_	ChangedBy=Issue165|SpaceAfter=No
 21	»	»	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
 22	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -160,7 +160,7 @@
 7-8	da	_	_	_	_	_	_	_	_
 7	de	de	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	ETA	ETA	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
+9	ETA	ETA	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	6	obj	_	_
 10	ou	ou	CCONJ	<co-piv>|KC|@CO	_	14	cc	_	d2d:#106
 11-12	das	_	_	_	_	_	_	_	_
 11	de	de	ADP	<cjt>|<sam->|PRP|@<PIV	_	14	case	_	_
@@ -176,7 +176,7 @@
 # d2d = punct(falo,,) -> punct(choro,,)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
-3	falo	falar	VERB	<first-cjt>|<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+3	falo	falar	VERB	<first-cjt>|<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	ccomp:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 5	choro	chorar	VERB	<mv>|<cjt>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	ChangedBy=Issue165|SpaceAfter=No
 6	»	»	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -198,7 +198,7 @@
 3	povo	povo	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 4	apaixonado	apaixonar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-6	o	o	NOUN	N|@>N	_	7	compound	_	MWE=o_povo
+6	o	o	DET	N|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	povo	povo	NOUN	N|@<SUBJ	_	3	nsubj	_	_
 8	basco	basco	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 9	.	.	PUNCT	PU|@PU	_	3	punct	_	_

@@ -41,8 +41,8 @@
 26	administrativa	administrativo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	25	amod	_	ChangedBy=Issue165|SpaceAfter=No
 27	»	»	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
-29	bem	bem	ADP	PRP|@CO	_	30	case	_	MWE=bem_como
-30	como	como	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+29	bem	bem	ADP	PRP|@CO	_	2	cc	_	MWE=bem_como
+30	como	como	ADV	N|M|S|@P<	_	29	fixed	_	_
 31	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 32	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	34	det	_	_
 33	«	«	PUNCT	PU|@PU	_	34	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -139,7 +139,7 @@
 6	encontra	encontrar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl	_	ChangedBy=Issue135
 8	com	com	ADP	PRP|@<PIV	_	9	case	_	_
-9	agricultores	agricultor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	_
+9	agricultores	agricultor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obj	_	_
 10	em	em	ADP	<first-cjt>|PRP|@<ADVL	_	11	case	_	_
 11	A-dos-Cães	a-dos-cão	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -148,7 +148,7 @@
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	domingo	domingo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-17	31	31	NUM	<card>|NUM|M|S|@N<PRED	NumType=Card	15	appos	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+17	31	31	NUM	<card>|NUM|M|S|@N<PRED	NumType=Card	15	appos:parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 19	em	em	ADP	<cjt>|<first-cjt>|PRP|@<ADVL	_	20	case	_	_
 20	Manique	Manique	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	MWE=Manique_do_Intendente
@@ -163,11 +163,11 @@
 27	terça-feira	terça-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
 28	seguinte	seguinte	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	27	amod	_	ChangedBy=Issue165|SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-30	e	e	CCONJ	<co-advl>|<co-cu>|KC|@CO	_	11	cc	_	_
+30	e	e	CCONJ	<co-advl>|<co-cu>|KC|@CO	_	33	cc	_	_
 31-32	ao	_	_	_	_	_	_	_	_
 31	a	a	ADP	<sam->|PRP|@N<	_	33	case	_	_
 32	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
-33	fim	fim	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
+33	fim	fim	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	11	conj	_	_
 34-35	da	_	_	_	_	_	_	_	_
 34	de	de	ADP	<sam->|PRP|@N<	_	36	case	_	_
 35	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
@@ -214,10 +214,10 @@
 23-24	encontra-se	_	_	_	_	_	_	_	_
 23	encontra	encontrar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
 24	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	expl	_	ChangedBy=Issue135
-25	de	de	ADP	PRP|@<ADVL	_	26	case	_	MWE=de_novo
-26	novo	novo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	_
+25	de	de	ADP	PRP|@<ADVL	_	23	advmod	_	MWE=de_novo
+26	novo	novo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	25	fixed	_	_
 27	com	com	ADP	PRP|@<PIV	_	28	case	_	_
-28	agricultores	agricultor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	obl	_	ChangedBy=Issue165|SpaceAfter=No
+28	agricultores	agricultor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	obj	_	ChangedBy=Issue165|SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
 30-31	na	_	_	_	_	_	_	_	_
 30	em	em	ADP	<sam->|PRP|@<ADVL	_	32	case	_	_

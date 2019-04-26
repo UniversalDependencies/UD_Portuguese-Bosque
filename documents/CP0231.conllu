@@ -26,10 +26,10 @@
 # d2d = cc(insalubridade,e) -> cc(risco,e)  #106
 1	Cerca	cerca	ADV	ADV|@>A	_	3	advmod	_	MWE=Cerca_de
 2	de	de	ADP	<prp>|PRP|@A<	_	1	case	_	_
-3	três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
-4	centenas	centena	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	8	nsubj	_	_
+3	três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168|MWE=três_centenas
+4	centenas	centena	NOUN	<np-def>|N|F|P|@SUBJ>	NumType=Card	3	flat	_	_
 5	de	de	ADP	PRP|@N<ARG	_	6	case	_	_
-6	trabalhadores	trabalhador	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
+6	trabalhadores	trabalhador	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nsubj	_	_
 7	municipais	municipal	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	6	amod	_	_
 8-9	manifestaram-se	_	_	_	_	_	_	_	_
 8	manifestaram	manifestar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -40,7 +40,7 @@
 12	de	de	ADP	PRP|@A<	_	14	case	_	_
 13	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	14	det	_	_
 14	Câmara	Câmara	NOUN	_	Gender=Fem|Number=Sing	11	obl	_	MWE=câmara_municipal|MWEPOS=NOUN
-15	Municipal	Municipal	ADJ	_	Number=Sing	14	compound	_	_
+15	Municipal	Municipal	ADJ	_	Number=Sing	14	amod	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	Sintra	Sintra	PROPN	PROP|@P<	Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	19	punct	_	_
@@ -48,7 +48,7 @@
 20-21	da	_	_	_	_	_	_	_	_
 20	de	de	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	22	det	_	_
-22	presidente	presidente	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	_
+22	presidente	presidente	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	iobj	_	_
 23	socialista	socialista	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
 24	Edite	Edite	PROPN	_	Gender=Fem|Number=Sing	22	appos	_	ChangedBy=Issue119|MWE=Edite_Estrela|MWEPOS=PROPN
 25	Estrela	Estrela	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
@@ -94,7 +94,7 @@
 5	saíram	sair	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	com	com	ADP	PRP|@<PIV	_	8	case	_	_
 7	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	8	det	_	_
-8	promessas	promessa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obl	_	_
+8	promessas	promessa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obj	_	_
 9	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 10	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No

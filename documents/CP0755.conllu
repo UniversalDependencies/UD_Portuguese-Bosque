@@ -18,17 +18,17 @@
 # sent_id = CP755-2
 # id = 3880
 1	Pelo	pelo	ADP	PRP|@>N	_	2	case	_	MWE=Pelo_menos
-2	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	_
+2	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 4	jovens	jovem	NOUN	<n>|<np-def>|ADJ|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 5	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	8	nsubj	_	_
 6	estão	estar	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
-7	a	a	ADP	PRP|@PRT-AUX<	_	8	obl	_	_
+7	a	a	ADP	PRP|@PRT-AUX<	_	8	aux	_	_
 8	participar	participar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	acl:relcl	_	_
 9-10	no	_	_	_	_	_	_	_	_
 9	em	em	ADP	<sam->|PRP|@<PIV	_	11	case	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Campeonato	Campeonato	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	MWE=Campeonato_Europeu
+11	Campeonato	Campeonato	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	obj	_	MWE=Campeonato_Europeu
 12	Europeu	Europeu	PROPN	PROP|@N<	Number=Sing	11	flat:name	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	juniores	juniores	PROPN	PROP|@P<	Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -68,7 +68,7 @@
 16	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 17	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	20	nsubj	_	_
 18	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
-19	a	a	ADP	PRP|@PRT-AUX<	_	20	obl	_	_
+19	a	a	ADP	PRP|@PRT-AUX<	_	20	aux	_	_
 20	decorrer	decorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	acl:relcl	_	_
 21	sob	sob	ADP	PRP|@<ADVL	_	22	case	_	_
 22	condições	condição	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	20	obl	_	ChangedBy=Issue137
@@ -146,12 +146,12 @@
 21	em	em	ADP	<cjt>|PRP|@N<PRED	_	22	case	_	_
 22	sub-16	sub-16	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	conj	_	ChangedBy=Issue165|SpaceAfter=No
 23	)	)	PUNCT	PU|@PU	_	22	punct	_	_
-24	estão	estar	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	ChangedBy=Issue167
+24	estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue167
 25	já	já	ADV	ADV|@<ADVL	_	28	advmod	_	_
 26-27	nas	_	_	_	_	_	_	_	_
 26	em	em	ADP	<sam->|PRP|@<SA	_	28	case	_	_
 27	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
-28	meias-finais	meia-final	NOUN	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+28	meias-finais	meia-final	NOUN	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	24	obl	_	ChangedBy=Issue165|SpaceAfter=No
 29	.	.	PUNCT	PU|@PU	_	28	punct	_	_
 
 # text = NBA sem problemas laborais
@@ -227,10 +227,10 @@
 10	em	em	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
 11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	basquetebol	basquetebol	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
-13	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	14	det	_	_
+13	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	9	obj	_	_
 14	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	16	nsubj	_	_
 15	já	já	ADV	ADV|@ADVL>	_	16	advmod	_	_
-16	aconteceu	acontecer	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	ccomp	_	_
+16	aconteceu	acontecer	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	acl:relcl	_	_
 17-18	no	_	_	_	_	_	_	_	_
 17	em	em	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	19	case	_	_
 18	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
@@ -246,7 +246,7 @@
 26	gelo	gelo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
 27	--	--	PUNCT	PU|@PU	_	16	punct	_	_
 28	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
-29	interrupção	interrupção	NOUN	<first-cjt>|<np-def>|N|F|S|@APP	Gender=Fem|Number=Sing	16	appos	_	_
+29	interrupção	interrupção	NOUN	<first-cjt>|<np-def>|N|F|S|@APP	Gender=Fem|Number=Sing	13	appos	_	_
 30	ou	ou	CCONJ	<co-app>|KC|@CO	_	31	cc	_	d2d:#106
 31	adiamento	adiamento	NOUN	<cjt>|<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	29	conj	_	_
 32-33	dos	_	_	_	_	_	_	_	_
@@ -259,10 +259,10 @@
 # source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-9
 # id = 3887
-1	Sendo	ser	AUX	<mv>|<first-cjt>|V|GER|@ICL-ADVL>	VerbForm=Ger	2	cop	_	ChangedBy=Issue167
-2	assim	assim	ADV	<kc>|ADV|@<SC	_	30	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-4	e	e	CCONJ	<co-icl>|KC|@CO	_	2	cc	_	_
+1	Sendo	ser	VERB	<mv>|<first-cjt>|V|GER|@ICL-ADVL>	VerbForm=Ger	30	advmod	_	ChangedBy=Issue167|MWE=sendo_assim
+2	assim	assim	ADV	<kc>|ADV|@<SC	_	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
+3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+4	e	e	CCONJ	<co-icl>|KC|@CO	_	25	cc	_	_
 5	uma	uma	DET	<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	mark	_	MWE=uma_vez_que
 6	vez	vez	NOUN	N|F|S|@>S	Gender=Fem|Number=Sing	5	fixed	_	_
 7	que	que	SCONJ	KS|@SUB	_	5	fixed	_	_
@@ -274,7 +274,7 @@
 13	colectivo	colectivo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	12	amod	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	trabalho	trabalho	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 17	cujas	cujo	DET	<rel>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Rel	18	det	_	_
 18	negociações	negociação	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	20	nsubj	_	_
 19	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	20	expl	_	ChangedBy=Issue135
@@ -283,7 +283,7 @@
 22	meses	mês	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	21	obj	_	ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 24	está	estar	AUX	<cjt>|<mv>|V|PR|3S|IND|@ICL-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	ChangedBy=Issue167
-25	previsto	previsto	ADJ	<mv>|<n>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	2	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+25	previsto	previsto	ADJ	<mv>|<n>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue141|ChangedBy=Issue91
 26	para	para	ADP	PRP|@<ADVL	_	27	case	_	_
 27	breve	breve	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	25	obl	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	25	punct	_	_
@@ -300,7 +300,7 @@
 39	a	a	ADP	PRP|@<ADVL	_	40	case	_	_
 40	4	4	NUM	<card>|NUM|M|S|@P<	NumType=Card	34	obl	_	ChangedBy=Issue168
 41	de	de	ADP	PRP|@A<	_	42	case	_	_
-42	Novembro	novembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod:tmod	_	ChangedBy=Issue165|SpaceAfter=No
+42	Novembro	novembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 43	,	,	PUNCT	PU|@PU	_	37	punct	_	_
 44	ou	ou	CCONJ	_	_	50	cc	_	MWE=ou_seja|MWEPOS=CCONJ
 45	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	fixed	_	ChangedBy=Issue165|ChangedBy=Issue181|SpaceAfter=No

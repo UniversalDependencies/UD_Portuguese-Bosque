@@ -113,9 +113,9 @@
 3	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	4	det	_	_
 4	correntes	corrente	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl:agent	_	_
 5-6	anti-estacionamento	_	_	_	_	_	_	_	_
-5	anti	anti	PART	EC|@>N	_	4	amod	_	_
+5	anti	anti	PART	EC|@>N	_	4	amod	_	MWE=anti_estacionamento
 6	estacionamento	estacionamento	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	5	compound	_	_
-7	selvagem	selvagem	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	ChangedBy=Issue165|SpaceAfter=No
+7	selvagem	selvagem	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 9	todos	todos	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	12	obl	_	MWE=todos_os_dias
 10	os	os	ADP	PRP|@N<	_	11	case	_	_
@@ -155,7 +155,7 @@
 42-43	das	_	_	_	_	_	_	_	_
 42	de	de	ADP	<sam->|PRP|@<PIV	_	44	case	_	_
 43	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	44	det	_	_
-44	ilhas	ilha	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	41	obl	_	_
+44	ilhas	ilha	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	41	iobj	_	_
 45	um	um	NUM	<card>|NUM|M|S|@<ACC	NumType=Card	41	obj	_	ChangedBy=Issue168
 46-47	dos	_	_	_	_	_	_	_	_
 46	de	de	ADP	<sam->|PRP|@N<	_	49	case	_	_
@@ -163,7 +163,7 @@
 48	nossos	nosso	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	49	det	_	_
 49	arquétipos	arquétipo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	45	nmod	_	_
 50	mais	muito	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	51	det	_	_
-51	resistentes	resistente	NOUN	<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	49	nmod:npmod	_	ChangedBy=Issue165|SpaceAfter=No
+51	resistentes	resistente	ADJ	<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	49	amod	_	ChangedBy=Issue165|SpaceAfter=No
 52	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Outro dia reparei numa bandeira hasteada no passeio em frente.
@@ -176,7 +176,7 @@
 4-5	numa	_	_	_	_	_	_	_	_
 4	em	em	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
 5	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	bandeira	bandeira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
+6	bandeira	bandeira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obj	_	_
 7	hasteada	hastear	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
 8-9	no	_	_	_	_	_	_	_	_
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
@@ -321,7 +321,7 @@
 2-3	dos	_	_	_	_	_	_	_	_
 2	de	de	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	4	case	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	passeios	passeio	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl	_	_
+4	passeios	passeio	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obj	_	_
 5	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	6	nsubj	_	_
 6	bordejam	bordejar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_
 7	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
@@ -345,7 +345,7 @@
 25	ilha	ilha	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	26	nsubj	_	_
 26	serve	servir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 27	de	de	ADP	PRP|@<PIV	_	28	case	_	_
-28	plataforma	plataforma	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	obl	_	_
+28	plataforma	plataforma	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	obj	_	_
 29	de	de	ADP	PRP|@N<	_	30	case	_	_
 30	comunicações	comunicação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	28	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 31	:	:	PUNCT	PU|@PU	_	26	punct	_	_

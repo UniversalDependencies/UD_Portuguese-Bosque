@@ -35,15 +35,15 @@
 18	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	19	nsubj	_	_
 19	servem	servir	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	_
 20	para	para	ADP	PRP|@<PIV	_	21	mark	_	_
-21	ilustrar	ilustrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	xcomp	_	_
+21	ilustrar	ilustrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	advcl	_	_
 22	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	24	det	_	_
 23	«	«	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
 24	evolução	evolução	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	21	obj	_	ChangedBy=Issue165|SpaceAfter=No
 25	»	»	PUNCT	PU|@PU	_	24	punct	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
-27	figurativo	figurativo	ADJ	ADJ|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	_
+27	figurativo	figurativo	ADJ	ADJ|M|S|@P<	Gender=Masc|Number=Sing	24	amod	_	_
 28	a	a	ADP	PRP|@P<	_	29	case	_	_
-29	abstrato	abstrato	ADJ	ADJ|M|S|@P<	Gender=Masc|Number=Sing	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+29	abstrato	abstrato	ADJ	ADJ|M|S|@P<	Gender=Masc|Number=Sing	24	amod	_	ChangedBy=Issue165|SpaceAfter=No
 30	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Afora historicismo, isso é menosprezar um fator interno à arte brasileira, que independe de contexto internacional.
@@ -68,7 +68,7 @@
 15	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	16	nsubj	_	_
 16	independe	independer	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_
 17	de	de	ADP	PRP|@<PIV	_	18	case	_	_
-18	contexto	contexto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	_
+18	contexto	contexto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obj	_	_
 19	internacional	internacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	18	amod	_	ChangedBy=Issue165|SpaceAfter=No
 20	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
@@ -109,12 +109,12 @@
 3	sofre	sofrer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	prejuízos	prejuízo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
 5	demais	demais	DET	<quant>|DET|M|P|@N<	Gender=Masc|Number=Plur|PronType=Ind	4	det	_	_
-6	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	MWE=em_favor_de
-7	favor	favor	NOUN	N|@P<	_	3	obl	_	_
+6	em	em	ADP	<sam->|PRP|@<ADVL	_	3	obl	_	MWE=em_favor_de
+7	favor	favor	NOUN	N|@P<	_	6	fixed	_	_
 8-9	da	_	_	_	_	_	_	_	_
-8	de	de	ADP	PRP|@N<	_	10	case	_	_
+8	de	de	ADP	PRP|@N<	_	6	fixed	_	_
 9	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	tese	tese	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+10	tese	tese	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Abstratos entre medianos e medíocres, como Fukushima, Pérsio, Raimo e Douchez, têm o mesmo ou maior destaque que Volpi e nada que se possa chamar de autonomia para oferecer como lenitivo.
@@ -134,7 +134,7 @@
 5	medíocres	medíocre	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	conj	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 7	como	como	ADP	<com>|PRP|@<ADVL	_	8	case	_	_
-8	Fukushima	Fukushima	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+8	Fukushima	Fukushima	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	1	appos:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	Pérsio	Pérsio	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	8	conj	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
@@ -148,8 +148,8 @@
 19	ou	ou	CCONJ	<co-prenom>|KC|@CO	_	20	cc	_	d2d:#106
 20	maior	grande	ADJ	<cjt>|<KOMP>|<COMP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	18	conj	_	_
 21	destaque	destaque	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	_
-22	que	que	SCONJ	KS|@COM	_	23	mark	_	_
-23	Volpi	Volpi	PROPN	<first-cjt>|PROP|M|S|@KOMP<	Gender=Masc|Number=Sing	21	dep	_	_
+22	que	que	SCONJ	KS|@COM	_	23	case	_	_
+23	Volpi	Volpi	PROPN	<first-cjt>|PROP|M|S|@KOMP<	Gender=Masc|Number=Sing	21	nmod	_	_
 24	e	e	CCONJ	<co-acc>|KC|@CO	_	25	cc	_	d2d:#106
 25	nada	nada	PRON	<cjt>|<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	21	conj	_	_
 26	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	29	obj	_	_
@@ -157,7 +157,7 @@
 28	possa	poder	AUX	<aux>|V|PR|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux	_	_
 29	chamar	chamar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	acl:relcl	_	_
 30	de	de	ADP	PRP|@<PIV	_	31	case	_	_
-31	autonomia	autonomia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	29	obl	_	_
+31	autonomia	autonomia	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	29	iobj	_	_
 32	para	para	ADP	PRP|@<ADVL	_	33	mark	_	_
 33	oferecer	oferecer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	advcl	_	_
 34	como	como	ADP	<prd>|PRP|@<ADVL	_	35	case	_	_

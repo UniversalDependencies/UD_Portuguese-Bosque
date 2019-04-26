@@ -17,14 +17,14 @@
 12	)	)	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 14	de	de	ADP	PRP|@N<PRED	_	15	case	_	_
-15	1989	1989	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	4	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+15	1989	1989	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	4	appos:parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 17	mostram	mostrar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-18	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
-19	30,6	30,6	NUM	<card>|NUM|M|P|@>N	NumType=Card	20	nummod	_	ChangedBy=Issue168
-20	milhões	milhão	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	18	nsubj	_	_
+18	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
+19	30,6	30,6	NUM	<card>|NUM|M|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168|MWE=30,6_milhões
+20	milhões	milhão	NUM	<np-def>|N|M|P|@<SUBJ	NumType=Card	19	flat	_	_
 21	de	de	ADP	PRP|@N<ARG	_	22	case	_	_
-22	brasileiros	brasileiro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+22	brasileiros	brasileiro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	orphan	_	ChangedBy=Issue165|SpaceAfter=No
 23	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Dos fumantes, 18,1 milhões são homens e 12,5 milhões, mulheres.
@@ -36,13 +36,13 @@
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	fumantes	fumante	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-5	18,1	18,1	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
-6	milhões	milhão	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
+5	18,1	18,1	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	nummod	_	ChangedBy=Issue168|MWE=18,1_milhões
+6	milhões	milhão	NUM	<np-def>|N|M|P|@SUBJ>	NumType=Card	5	flat	_	_
 7	são	ser	AUX	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	ChangedBy=Issue167
 8	homens	homem	NOUN	<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
-9	e	e	CCONJ	<co-fcl>|KC|@CO	_	8	cc	_	_
-10	12,5	12,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168
-11	milhões	milhão	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
+9	e	e	CCONJ	<co-fcl>|KC|@CO	_	10	cc	_	_
+10	12,5	12,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168|MWE=12,5_milhões
+11	milhões	milhão	NUM	<np-def>|N|M|P|@SUBJ>	NumType=Card	10	flat	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 13	mulheres	mulher	NOUN	<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	8	conj	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	8	punct	_	_
@@ -62,13 +62,13 @@
 8	cigarros	cigarro	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
 9	por	por	ADP	PRP|@<ADVL	_	10	case	_	_
 10	dia	dia	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
-11	e	e	CCONJ	<co-fcl>|KC|@CO	_	3	cc	_	_
+11	e	e	CCONJ	<co-fcl>|KC|@CO	_	13	cc	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	mulher	mulher	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	conj	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15	entre	entre	ADP	PRP|@<ACC	_	16	case	_	_
 16	5	5	NUM	<first-cjt>|<Eg>|NUM|M|P|@P<	NumType=Card	13	orphan	_	ChangedBy=Issue168
-17	e	e	CCONJ	<co-prparg>|KC|@CO	_	16	cc	_	_
+17	e	e	CCONJ	<co-prparg>|KC|@CO	_	18	cc	_	_
 18	10	10	NUM	<cjt>|<Eg>|NUM|M|P|@P<	NumType=Card	16	conj	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

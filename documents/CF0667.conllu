@@ -13,7 +13,7 @@
 1	Deputados	deputado	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
 2	ligados	ligar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	_	_
 3	a	a	ADP	PRP|@<PIV	_	4	case	_	_
-4	ACM	ACM	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
+4	ACM	ACM	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obj	_	_
 5	diziam	dizer	VERB	<mv>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 6	ontem	ontem	ADV	ADV|@<ADVL	_	5	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -26,7 +26,7 @@
 14	Benito	Benito	PROPN	_	Gender=Masc|Number=Sing	20	nsubj:pass	_	ChangedBy=Issue119|MWE=Benito_Gama|MWEPOS=PROPN
 15	Gama	Gama	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
-17	PFL-BA	PFL-BA	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	14	appos	_	ChangedBy=Issue165|SpaceAfter=No
+17	PFL-BA	PFL-BA	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	14	appos:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 18	)	)	PUNCT	PU|@PU	_	17	punct	_	_
 19	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	aux:pass	_	_
 20	vetado	vetar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	ccomp	_	_
@@ -41,7 +41,7 @@
 29	avalia	avaliar	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	_	_
 30	que	que	SCONJ	KS|@SUB	_	35	mark	_	_
 31	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	cop	_	ChangedBy=Issue167
-32	cada	cada	NOUN	N|M|S|@>A	Gender=Masc|Number=Sing	35	nmod:npmod	_	MWE=cada_vez_mais
+32	cada	cada	NOUN	N|M|S|@>A	Gender=Masc|Number=Sing	35	nmod	_	MWE=cada_vez_mais
 33	vez	vez	ADP	PRP|@N<	_	34	case	_	_
 34	mais	mais	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	_
 35	reduzidas	reduzir	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	29	dep	_	_
@@ -88,13 +88,13 @@
 17-18	à	_	_	_	_	_	_	_	_
 17	a	a	ADP	<sam->|PRP|@<PIV	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
-19	percepção	percepção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	_
+19	percepção	percepção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	iobj	_	_
 20-21	do	_	_	_	_	_	_	_	_
 20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	mercado	mercado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
 23	financeiro	financeiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	22	amod	_	_
-24	de	de	ADP	PRP|@N<ARG	_	28	mark	_	_
+24	de	de	ADP	PRP|@N<ARG	_	32	mark	_	_
 25	que	que	SCONJ	KS|@SUB	_	32	mark	_	_
 26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	PFL	PFL	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	32	nsubj	_	_
@@ -107,7 +107,7 @@
 33-34	da	_	_	_	_	_	_	_	_
 33	de	de	ADP	<sam->|PRP|@<PIV	_	35	case	_	_
 34	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-35	candidatura	candidatura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	32	obl	_	_
+35	candidatura	candidatura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	32	obj	_	_
 36	de	de	ADP	PRP|@N<	_	37	case	_	_
 37	FHC	FHC	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 38	.	.	PUNCT	PU|@PU	_	8	punct	_	_

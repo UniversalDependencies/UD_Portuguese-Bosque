@@ -63,18 +63,18 @@
 2	assinando	assinar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
 3	com	com	ADP	PRP|@<PIV	_	5	case	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	Interscope	Interscope	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	Interscope	Interscope	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obj	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 7	ligado	ligar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
 8-9	à	_	_	_	_	_	_	_	_
 8	a	a	ADP	<sam->|PRP|@<PIV	_	10	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	Warner	Warner	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	ChangedBy=Issue165|SpaceAfter=No
+10	Warner	Warner	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	obj	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 12	por	por	ADP	PRP|@<ADVL	_	13	case	_	_
-13	US$	US$	SYM	_	Gender=Masc|Number=Plur	2	obl	_	_
-14	1	1	NUM	<card>|NUM|M|S|@>N	NumType=Card	15	nummod	_	ChangedBy=Issue168
-15	milhão	milhão	NOUN	<np-def>|N|M|S|@N<	Gender=Masc|Number=Sing	13	nmod:npmod	_	_
+13	US$	US$	SYM	_	_	2	obl	_	_
+14	1	1	NUM	<card>|NUM|M|S|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168|MWE=1_milhão
+15	milhão	milhão	NUM	<np-def>|N|M|S|@N<	NumType=Card	14	flat	_	_
 16	por	por	ADP	PRP|@<ADVL	_	18	case	_	_
 17	três	três	NUM	<card>|NUM|M|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
 18	discos	disco	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -96,7 +96,7 @@
 8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	<sam->|PRP|@N<PRED	_	10	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	revista	revista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+10	revista	revista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	appos:parataxis	_	_
 11	americana	americano	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
 12	«	«	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
 13	Spin	Spin	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	10	appos	_	ChangedBy=Issue165|SpaceAfter=No
@@ -134,8 +134,8 @@
 13	Interscope	Interscope	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 15	vendeu	vender	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-16	500	500	NUM	<card>|NUM|F|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
-17	mil	mil	NUM	<card>|NUM|F|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
+16	500	500	NUM	<card>|NUM|F|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168|MWE=500_mil
+17	mil	mil	NUM	<card>|NUM|F|P|@>N	NumType=Card	16	flat	_	ChangedBy=Issue168
 18	cópias	cópia	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	15	obj	_	ChangedBy=Issue165|SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
@@ -164,7 +164,7 @@
 18	nunca	nunca	ADV	ADV|@>A	_	19	advmod	_	_
 19	menos	menos	ADV	<quant>|<KOMP>|<COMP>|ADV|@N<	_	17	advmod	_	_
 20	que	que	SCONJ	KS|@COM	_	21	mark	_	_
-21	perturbador	perturbador	ADJ	ADJ|M|S|@KOMP<	Gender=Masc|Number=Sing	19	dep	_	ChangedBy=Issue165|SpaceAfter=No
+21	perturbador	perturbador	ADJ	ADJ|M|S|@KOMP<	Gender=Masc|Number=Sing	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
 22	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Algo como um samba de breque transposto para o domínio eletrificado do rock.
@@ -180,7 +180,7 @@
 7	transposto	transpor	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	_	_
 8	para	para	ADP	PRP|@<PIV	_	10	case	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	domínio	domínio	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	_
+10	domínio	domínio	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obj	_	_
 11	eletrificado	eletrificar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
 12-13	do	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
@@ -236,7 +236,7 @@
 4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	ChangedBy=Issue167
 5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 6	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	7	amod	_	_
-7	seção	seção	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	11	ccomp	_	_
+7	seção	seção	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	11	ccomp:parataxis	_	_
 8	rítmica	rítmico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 9	»	»	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	7	punct	_	_

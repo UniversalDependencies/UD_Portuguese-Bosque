@@ -19,7 +19,7 @@
 9-10	ao	_	_	_	_	_	_	_	_
 9	a	a	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	fim	fim	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
+11	fim	fim	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	_
 12-13	da	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 13	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
@@ -56,12 +56,12 @@
 42	de	de	ADP	PRP|@N<	_	43	case	_	_
 43	encerramento	encerramento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	41	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 44	»	»	PUNCT	PU|@PU	_	41	punct	_	_
-45	em	em	ADP	<first-cjt>|<sam->|PRP|@N<	_	46	case	_	MWE=em_torno_de
-46	torno	torno	NOUN	N|@P<	_	41	nmod	_	_
+45	em	em	ADP	<first-cjt>|<sam->|PRP|@N<	_	49	case	_	MWE=em_torno_de
+46	torno	torno	NOUN	N|@P<	_	45	fixed	_	_
 47-48	das	_	_	_	_	_	_	_	_
-47	de	de	ADP	PRP|@N<	_	49	case	_	_
+47	de	de	ADP	PRP|@N<	_	45	fixed	_	_
 48	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	49	det	_	_
-49	ligações	ligação	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	46	nmod	_	_
+49	ligações	ligação	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	41	nmod	_	_
 50	entre	entre	ADP	PRP|@N<	_	51	case	_	_
 51	Camões	Camões	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	49	nmod	_	_
 52	e	e	CCONJ	<co-prparg>|KC|@CO	_	53	cc	_	d2d:#106
@@ -127,7 +127,7 @@
 35	recém-galardoado	recém-galardoado	NOUN	<mv>|ADV|@P<	_	32	advmod	_	_
 36	com	com	ADP	PRP|@<ADVL	_	38	case	_	_
 37	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
-38	Prémio	Prémio	PROPN	_	Gender=Masc|Number=Sing	35	obl	_	ChangedBy=Issue119|MWE=Prémio_Camões|MWEPOS=PROPN
+38	Prémio	Prémio	PROPN	_	Gender=Masc|Number=Sing	35	nmod	_	ChangedBy=Issue119|MWE=Prémio_Camões|MWEPOS=PROPN
 39	Camões	Camões	PROPN	_	Number=Sing	38	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 40	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
@@ -135,15 +135,15 @@
 # source = CETEMPúblico n=985 sec=clt sem=96a
 # sent_id = CP985-3
 # id = 5061
-1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	de	de	ADP	PRP|@<SC	_	3	mark	_	_
-3	crer	crer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	xcomp	_	_
+1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+2	de	de	ADP	PRP|@<SC	_	3	aux	_	_
+3	crer	crer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	0	root	_	_
 4	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
 5	estivesse	estar	AUX	<aux>|V|IMPF|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	aux	_	_
-6	a	a	ADP	PRP|@PRT-AUX<	_	8	obl	_	_
+6	a	a	ADP	PRP|@PRT-AUX<	_	8	aux	_	_
 7	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	cop	_	ChangedBy=Issue167
-8	sincero	sincero	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	dep	_	ChangedBy=Issue165|SpaceAfter=No
-9	.	.	PUNCT	PU|@PU	_	1	punct	_	_
+8	sincero	sincero	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Eduardo Lourenço tem, de facto, esse dom, tão contraditório com a sua proverbial modéstia, de dar a tudo quanto escreve um tom definitivo.
 # source = CETEMPúblico n=985 sec=clt sem=96a
@@ -169,10 +169,10 @@
 18	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 19	de	de	ADP	PRP|@N<	_	20	mark	_	_
 20	dar	dar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	acl	_	_
-21	a	a	ADP	PRP|@<PIV	_	24	mark	_	_
-22	tudo	mais	PRON	<rel>|<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	24	nsubj	_	MWE=tudo_quanto
-23	quanto	quanto	PRON	<rel>|<quant>|DET|M|S|@N<|<MWE2>	Gender=Masc|Number=Sing|PronType=Rel	22	det	_	_
-24	escreve	escrever	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	xcomp	_	_
+21	a	a	ADP	PRP|@<PIV	_	22	case	_	_
+22	tudo	tudo	PRON	<rel>|<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	20	iobj	_	MWE=tudo_quanto
+23	quanto	quanto	PRON	<rel>|<quant>|DET|M|S|@N<|<MWE2>	Gender=Masc|Number=Sing|PronType=Rel	24	obj	_	_
+24	escreve	escrever	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	_	_
 25	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	tom	tom	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
 27	definitivo	definitivo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	26	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -189,7 +189,7 @@
 5	ouve	ouvir	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	xcomp	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	sensação	sensação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
-8	de	de	ADP	PRP|@N<ARG	_	12	mark	_	_
+8	de	de	ADP	PRP|@N<ARG	_	15	mark	_	_
 9	que	que	SCONJ	KS|@SUB	_	15	mark	_	_
 10	aquilo	aquilo	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	15	nsubj	_	_
 11	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	12	obj	_	_
@@ -230,6 +230,6 @@
 10-11	aos	_	_	_	_	_	_	_	_
 10	a	a	ADP	<sam->|PRP|@<PIV	_	12	case	_	_
 11	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	poetas	poeta	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	ChangedBy=Issue165|SpaceAfter=No
+12	poetas	poeta	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obj	_	ChangedBy=Issue165|SpaceAfter=No
 13	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

@@ -5,7 +5,7 @@
 1	A	a	ADP	PRP|@ADVL>	_	6	case	_	_
 2	pouco	pouco	DET	<quant>|DET|@>A	PronType=Ind	3	advmod	_	_
 3	mais	mais	ADV	ADV|@>A	_	5	advmod	_	MWE=mais_de
-4	de	de	ADP	<prp>|PRP|@A<	_	3	case	_	_
+4	de	de	ADP	<prp>|PRP|@A<	_	3	fixed	_	_
 5	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
 6	mês	mê	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	42	obl	_	ChangedBy=Issue137
 7-8	do	_	_	_	_	_	_	_	_
@@ -47,7 +47,7 @@
 38	desfavorecidos	desfavorecido	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	36	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 39	não	não	ADV	_	Polarity=Neg	42	advmod	_	_
 40	pára	parar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	42	aux	_	_
-41	de	de	ADP	PRP|@PRT-AUX<	_	42	obl	_	_
+41	de	de	ADP	PRP|@PRT-AUX<	_	42	aux	_	_
 42	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 43	.	.	PUNCT	PU|@PU	_	42	punct	_	_
 
@@ -87,12 +87,12 @@
 7	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 8	estão	estar	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
 9	já	já	ADV	ADV|@ADVL>	_	11	advmod	_	_
-10	a	a	ADP	PRP|@PRT-AUX<	_	11	obl	_	_
+10	a	a	ADP	PRP|@PRT-AUX<	_	11	aux	_	_
 11	usufruir	usufruir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 12-13	do	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@<PIV	_	14	case	_	_
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	rendimento	rendimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	_
+14	rendimento	rendimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obj	_	_
 15	destinado	destinar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	14	acl	_	_
 16	a	a	ADP	PRP|@<PIV	_	17	mark	_	_
 17	garantir	garantir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	xcomp	_	_
@@ -152,7 +152,7 @@
 34	de	de	ADP	PRP|@N<	_	35	case	_	_
 35	30	30	NUM	<card>|NUM|M|S|@P<	NumType=Card	33	nmod	_	ChangedBy=Issue168
 36	de	de	ADP	PRP|@N<	_	37	case	_	_
-37	Março	março	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	nmod:tmod	_	ChangedBy=Issue165|SpaceAfter=No
+37	Março	março	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 38	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Este crescimento «resulta da opção de alargar o número de projectos-piloto, de modo a cobrir uma parte do território nacional até ao dia 1 de Julho», referiu ao PÚBLICO o presidente da Comissão Nacional do RMG, Paulo Pedroso.
@@ -162,11 +162,11 @@
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	crescimento	crescimento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
-4	resulta	resultar	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	ccomp	_	_
+4	resulta	resultar	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	ccomp:parataxis	_	_
 5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@<PIV	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	7	det	_	_
-7	opção	opção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
+7	opção	opção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obj	_	_
 8	de	de	ADP	PRP|@N<ARG	_	9	mark	_	_
 9	alargar	alargar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
@@ -192,14 +192,14 @@
 28	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	ChangedBy=Issue137
 29	1	1	NUM	<card>|NUM|M|S|@N<	NumType=Card	28	nummod	_	ChangedBy=Issue168
 30	de	de	ADP	PRP|@A<	_	31	case	_	_
-31	Julho	julho	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod:tmod	_	ChangedBy=Issue165|SpaceAfter=No
+31	Julho	julho	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	29	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 32	»	»	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 34	referiu	referir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 35-36	ao	_	_	_	_	_	_	_	_
 35	a	a	ADP	<sam->|PRP|@<PIV	_	37	case	_	_
 36	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	PÚBLICO	Público	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	34	obl	_	_
+37	PÚBLICO	Público	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	34	obj	_	_
 38	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
 39	presidente	presidente	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	34	nsubj	_	MWE=presidente_da_Comissão_Nacional_do_RMG
 40-41	da	_	_	_	_	_	_	_	_
@@ -275,7 +275,7 @@
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	RMG	RMG	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
 17	acabaria	acabar	AUX	<aux>|V|COND|3S|@FS-KOMP<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	19	aux	_	_
-18	por	por	ADP	PRP|@PRT-AUX<	_	19	obl	_	_
+18	por	por	ADP	PRP|@PRT-AUX<	_	19	aux	_	_
 19	ceder	ceder	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	ccomp	_	_
 20	lugar	lugar	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	19	obj	_	_
 21	a	a	ADP	PRP|@<ADVL	_	23	case	_	_
@@ -316,7 +316,7 @@
 21	de	de	ADP	PRP|@A<	_	26	case	_	_
 22	pouco	pouco	DET	<quant>|DET|M|S|@>A	Gender=Masc|Number=Sing|PronType=Ind	23	advmod	_	_
 23	mais	mais	ADV	ADV|@>A	_	25	advmod	_	MWE=mais_de
-24	de	de	ADP	<prp>|PRP|@A<	_	23	case	_	_
+24	de	de	ADP	<prp>|PRP|@A<	_	23	fixed	_	_
 25	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	26	nummod	_	ChangedBy=Issue168
 26	mês	mês	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	11	punct	_	_

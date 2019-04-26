@@ -35,7 +35,7 @@
 28	acabar	acabar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	26	acl	_	_
 29	com	com	ADP	PRP|@<PIV	_	31	case	_	_
 30	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_
-31	alegações	alegação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	obl	_	_
+31	alegações	alegação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	obj	_	_
 32	de	de	ADP	PRP|@N<ARG	_	37	mark	_	_
 33	que	que	SCONJ	KS|@SUB	_	37	mark	_	_
 34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
@@ -45,7 +45,7 @@
 38-39	num	_	_	_	_	_	_	_	_
 38	em	em	ADP	<sam->|PRP|@<PIV	_	40	case	_	_
 39	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
-40	centro	centro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	37	obl	_	_
+40	centro	centro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	37	obj	_	_
 41	de	de	ADP	PRP|@N<	_	42	case	_	_
 42	lavagem	lavagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	40	nmod	_	_
 43	de	de	ADP	PRP|@N<ARG	_	44	case	_	_
@@ -98,8 +98,8 @@
 28	União	União	PROPN	_	Gender=Fem|Number=Sing	25	nmod	_	ChangedBy=Issue119|MWE=União_Europeia|MWEPOS=PROPN
 29	Europeia	Europeia	PROPN	_	Number=Sing	28	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
-31	bem	bem	ADP	PRP|@CO	_	32	case	_	MWE=bem_como
-32	como	como	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
+31	bem	bem	ADP	PRP|@CO	_	35	cc	_	MWE=bem_como
+32	como	como	ADV	N|M|S|@P<	_	31	fixed	_	_
 33	sobre	sobre	ADP	<cjt>|PRP|@N<	_	35	case	_	_
 34	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	tema	tema	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	conj	_	_
@@ -136,7 +136,7 @@
 19-20	da	_	_	_	_	_	_	_	_
 19	de	de	ADP	<sam->|PRP|@<PIV	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	soberania	soberania	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	_
+21	soberania	soberania	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obj	_	_
 22	sobre	sobre	ADP	PRP|@N<	_	24	case	_	_
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	rochedo	rochedo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -159,7 +159,7 @@
 38-39	aos	_	_	_	_	_	_	_	_
 38	a	a	ADP	<sam->|PRP|@<PIV	_	40	case	_	_
 39	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_
-40	espanhóis	espanhol	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	36	obl	_	ChangedBy=Issue165|SpaceAfter=No
+40	espanhóis	espanhol	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	36	iobj	_	ChangedBy=Issue165|SpaceAfter=No
 41	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O jornal garante, embora um porta-voz oficial do Ministério dos Negócios Estrangeiros não o tenha confirmado, que o Governo britânico está pronto para, «antes do Verão», tomar medidas para que Gibraltar deixe o seu estatuto de colónia com governo próprio, passando a depender directamente da Coroa britânica.
@@ -220,13 +220,13 @@
 49	próprio	próprio	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	48	amod	_	ChangedBy=Issue165|SpaceAfter=No
 50	,	,	PUNCT	PU|@PU	_	53	punct	_	_
 51	passando	passar	AUX	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	53	aux	_	_
-52	a	a	ADP	PRP|@PRT-AUX<	_	53	obl	_	_
+52	a	a	ADP	PRP|@PRT-AUX<	_	53	aux	_	_
 53	depender	depender	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	41	advcl	_	_
 54	directamente	directamente	ADV	ADV|@<ADVL	_	53	advmod	_	_
 55-56	da	_	_	_	_	_	_	_	_
 55	de	de	ADP	<sam->|PRP|@<PIV	_	57	case	_	_
 56	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
-57	Coroa	coroa	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	53	obl	_	_
+57	Coroa	coroa	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	53	obj	_	_
 58	britânica	britânico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	57	amod	_	ChangedBy=Issue165|SpaceAfter=No
 59	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
@@ -378,8 +378,8 @@
 18	estado	estado	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	xcomp	_	_
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	coma	coma	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
-21	e	e	CCONJ	<co-oc>|KC|@CO	_	18	cc	_	_
-22	sangrando	sangrar	VERB	<mv>|V|GER|@ICL-CO	VerbForm=Ger	18	dep	_	_
+21	e	e	CCONJ	<co-oc>|KC|@CO	_	22	cc	_	_
+22	sangrando	sangrar	VERB	<mv>|V|GER|@ICL-CO	VerbForm=Ger	18	conj	_	_
 23	abundantemente	abundantemente	ADV	ADV|@<ADVL	_	22	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 24	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

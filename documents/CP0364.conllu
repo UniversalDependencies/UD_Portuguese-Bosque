@@ -10,9 +10,9 @@
 3	país	país	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	44	obl	_	ChangedBy=Issue137
 4	com	com	ADP	<first-cjt>|PRP|@N<ARG	_	9	case	_	_
 5	mais	mais	ADV	ADV|@>A	_	7	advmod	_	MWE=mais_de
-6	de	de	ADP	<prp>|PRP|@A<	_	5	case	_	_
-7	sete	sete	NUM	<cjt>|<card>|NUM|F|P|@>A	NumType=Card	8	dep	_	ChangedBy=Issue168
-8	mil	mil	NUM	_	_	9	nummod	_	_
+6	de	de	ADP	<prp>|PRP|@A<	_	5	fixed	_	_
+7	sete	sete	NUM	<cjt>|<card>|NUM|F|P|@>A	NumType=Card	9	nummod	_	ChangedBy=Issue168|MWE=sete_mil
+8	mil	mil	NUM	_	_	7	flat	_	_
 9	ilhas	ilha	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
 10	e	e	CCONJ	<co-postnom>|KC|@CO	_	18	cc	_	d2d:#106
 11	onde	onde	ADV	<rel>|ADV|@SA>	_	18	advmod	_	_
@@ -55,7 +55,7 @@
 45-46	à	_	_	_	_	_	_	_	_
 45	a	a	ADP	<sam->|PRP|@<PIV	_	47	case	_	_
 46	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_
-47	comissão	comissão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	44	obl	_	_
+47	comissão	comissão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	44	obj	_	_
 48	de	de	ADP	PRP|@N<	_	49	case	_	_
 49	eleições	eleição	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	47	nmod	_	_
 50	dizer	dizer	VERB	<mv>|V|INF|3S|@ICL-<ACC	Number=Sing|Person=3|VerbForm=Inf	44	xcomp	_	_
@@ -111,7 +111,7 @@
 32	Jolo	Jolo	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	28	conj	_	ChangedBy=Issue149|ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 34	de	de	ADP	PRP|@N<PRED	_	35	case	_	_
-35	maioria	maioria	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	_
+35	maioria	maioria	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	appos:parataxis	_	_
 36	muçulmana	muçulmano	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	35	amod	_	ChangedBy=Issue165|SpaceAfter=No
 37	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
@@ -137,9 +137,9 @@
 13-14	nas	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@ADVL>	_	15	case	_	_
 14	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
-15	presidenciais	presidencial	NOUN	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	23	obl	_	_
+15	presidenciais	presidencial	NOUN	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	23	nmod	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
-17	1992	1992	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	15	obl	_	ChangedBy=Issue168
+17	1992	1992	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	15	nmod	_	ChangedBy=Issue168
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	balanço	balanço	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj	_	_
 20	foi	ser	AUX	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	cop	_	ChangedBy=Issue167

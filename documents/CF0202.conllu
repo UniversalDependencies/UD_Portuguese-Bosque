@@ -6,7 +6,7 @@
 2	indica	indicar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	mulher	mulher	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 4	para	para	ADP	PRP|@<PIV	_	5	case	_	_
-5	secretaria	secretaria	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl	_	_
+5	secretaria	secretaria	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	iobj	_	_
 
 # text = O papa João Paulo 2º escolheu a irmã Emília Ehrlich para ocupar uma das três secretarias no sínodo que acontecerá em outubro.
 # source = CETENFolha n=202 cad=Mundo sec=pol sem=94b
@@ -23,7 +23,7 @@
 9	Emília	Emília	PROPN	_	Gender=Fem|Number=Sing	8	appos	_	ChangedBy=Issue119|MWE=Emília_Ehrlich|MWEPOS=PROPN
 10	Ehrlich	Ehrlich	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 11	para	para	ADP	PRP|@<PIV	_	12	mark	_	_
-12	ocupar	ocupar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
+12	ocupar	ocupar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
 13	uma	uma	NUM	<card>|NUM|F|S|@<ACC	NumType=Card	12	obj	_	ChangedBy=Issue168
 14-15	das	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
@@ -74,7 +74,7 @@
 10	mulher	mulher	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
 11	para	para	ADP	PRP|@<PIV	_	13	case	_	_
 12	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	cargo	cargo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	_
+13	cargo	cargo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	iobj	_	_
 14-15	desse	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	esse	esse	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	16	det	_	_
@@ -123,9 +123,9 @@
 17	de	de	ADP	PRP|@N<	_	18	case	_	_
 18	computadores	computador	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
 19	com	com	ADP	PRP|@N<	_	20	case	_	_
-20	milhões	milhão	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
+20	milhões	milhão	NUM	<np-idf>|N|M|P|@P<	NumType=Card	22	nummod	_	_
 21	de	de	ADP	PRP|@N<ARG	_	22	case	_	_
-22	usuários	usuário	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+22	usuários	usuário	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 23	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O material será transferido para a memória de computadores.
@@ -138,7 +138,7 @@
 4	transferido	transferir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 5	para	para	ADP	PRP|@<PIV	_	7	case	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	memória	memória	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
+7	memória	memória	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obj	_	_
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	computadores	computador	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 10	.	.	PUNCT	PU|@PU	_	4	punct	_	_

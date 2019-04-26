@@ -11,7 +11,7 @@
 6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 7	em	em	ADP	PRP|@<ADVL	_	8	case	_	_
 8	fevereiro	fevereiro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
-9	passado	passado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	8	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+9	passado	passado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	8	amod	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 11	de	de	ADP	PRP|@N<ARG	_	13	case	_	_
 12	170	170	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168
@@ -83,17 +83,17 @@
 27	tem	ter	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
 28	para	para	ADP	PRP|@<ADVL	_	29	mark	_	_
 29	receber	receber	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	27	advcl	_	_
-30	US$	US$	SYM	_	Gender=Masc|Number=Plur	29	obj	_	_
-31	470	470	NUM	<card>|NUM|M|P|@>N	NumType=Card	32	nummod	_	ChangedBy=Issue168
-32	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	30	nummod	_	ChangedBy=Issue168
+30	US$	US$	SYM	_	_	29	obj	_	_
+31	470	470	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	nummod	_	ChangedBy=Issue168|MWE=470_mil
+32	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	31	flat	_	ChangedBy=Issue168
 33	referente	referente	ADV	ADV|@N<	_	30	advmod	_	MWE=referente_a
 34-35	à	_	_	_	_	_	_	_	_
 34	a	a	ADP	PRP|@A<	_	36	case	_	_
 35	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
 36	venda	venda	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	33	obl	_	_
 37	de	de	ADP	PRP|@N<ARG	_	40	case	_	_
-38	49,4	49,4	NUM	<card>|NUM|F|P|@>N	NumType=Card	40	nummod	_	ChangedBy=Issue168
-39	mil	mil	NUM	<card>|NUM|F|P|@>N	NumType=Card	40	nummod	_	ChangedBy=Issue168
+38	49,4	49,4	NUM	<card>|NUM|F|P|@>N	NumType=Card	40	nummod	_	ChangedBy=Issue168|MWE=49,4_mil
+39	mil	mil	NUM	<card>|NUM|F|P|@>N	NumType=Card	38	flat	_	ChangedBy=Issue168
 40	sacas	saca	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 41	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
@@ -124,7 +124,7 @@
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Trabalho	trabalhar	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	com	com	ADP	<first-cjt>|PRP|@<PIV	_	4	case	_	_
-4	amendoim	amendoim	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
+4	amendoim	amendoim	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obj	_	_
 5	há	há	ADP	PRP|@<ADVL	_	7	case	_	_
 6	27	27	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nummod	_	ChangedBy=Issue168
 7	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	obl	_	ChangedBy=Issue137
@@ -151,7 +151,7 @@
 10	safra	safra	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 11	alcançava	alcançar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 12	40	40	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-13	%	%	SYM	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	11	obj	_	ChangedBy=Issue165|SpaceAfter=No
+13	%	%	SYM	<np-def>|N|M|P|@<ACC	_	11	obj	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Hoje, varia entre 12% e 15%».
@@ -164,10 +164,10 @@
 3	varia	variar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	entre	entre	ADP	PRP|@<ADVL	_	6	case	_	_
 5	12	12	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-6	%	%	SYM	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	_
+6	%	%	SYM	<first-cjt>|<np-def>|N|M|P|@P<	_	3	obl	_	_
 7	e	e	CCONJ	<co-prparg>|KC|@CO	_	9	cc	_	d2d:#106
 8	15	15	NUM	<card>|NUM|M|P|@>N	NumType=Card	9	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-9	%	%	SYM	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	conj	_	ChangedBy=Issue165|SpaceAfter=No
+9	%	%	SYM	<cjt>|<np-def>|N|M|P|@P<	_	6	conj	_	ChangedBy=Issue165|SpaceAfter=No
 10	»	»	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

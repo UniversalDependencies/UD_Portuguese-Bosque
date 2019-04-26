@@ -182,7 +182,7 @@
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	companhia	companhia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl:agent	_	_
 10	telefónica	telefónico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	9	amod	_	_
-11	japonesa	japonesa	NOUN	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	9	nmod:npmod	_	_
+11	japonesa	japonesa	ADJ	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	9	amod	_	_
 12	NTT	NTT	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	9	appos	_	_
 13	para	para	ADP	PRP|@<ADVL	_	14	mark	_	_
 14	proporcionar	proporcionar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
@@ -197,7 +197,7 @@
 22	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	23	det	_	_
 23	operador	operador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	26	nsubj	_	_
 24	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux	_	_
-25	a	a	ADP	PRP|@PRT-AUX<	_	26	obl	_	_
+25	a	a	ADP	PRP|@PRT-AUX<	_	26	aux	_	_
 26	instalar	instalar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	19	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
@@ -214,7 +214,7 @@
 7-8	na	_	_	_	_	_	_	_	_
 7	em	em	ADP	<sam->|PRP|@N<PRED	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Califórnia	Califórnia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+9	Califórnia	Califórnia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	appos:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 12	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	13	det	_	_
@@ -250,8 +250,8 @@
 39	informática	informática	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 40	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 41	com	com	ADP	PRP|@N<PRED	_	44	case	_	_
-42	25	25	NUM	<card>|NUM|M/F|P|@>N	NumType=Card	44	nummod	_	ChangedBy=Issue168
-43	mil	mil	NUM	<card>|NUM|M/F|P|@>N	NumType=Card	44	nummod	_	ChangedBy=Issue168
+42	25	25	NUM	<card>|NUM|M/F|P|@>N	NumType=Card	44	nummod	_	ChangedBy=Issue168|MWE=25_mil
+43	mil	mil	NUM	<card>|NUM|M/F|P|@>N	NumType=Card	42	flat	_	ChangedBy=Issue168
 44	visitantes	visitante	NOUN	<np-def>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 45	)	)	PUNCT	PU|@PU	_	32	punct	_	ChangedBy=Issue165|SpaceAfter=No
 46	,	,	PUNCT	PU|@PU	_	44	punct	_	_
@@ -314,7 +314,7 @@
 3	empresa	empresa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 4	trabalhará	trabalhar	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 5	com	com	ADP	PRP|@<PIV	_	6	case	_	_
-6	programadores	programador	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	ChangedBy=Issue165|SpaceAfter=No
+6	programadores	programador	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 8	criadores	criador	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	conj	_	_
 9	artísticos	artístico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	8	amod	_	_
@@ -356,9 +356,9 @@
 # sent_id = CP949-8
 # id = 4890
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Criámos	criar	VERB	<mv>|V|PS|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	23	ccomp	_	_
+2	Criámos	criar	VERB	<mv>|V|PS|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	23	ccomp:parataxis	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-4	nova	nova	NOUN	N|F|S|@>N	Gender=Fem|Number=Sing	5	compound	_	_
+4	nova	nova	ADJ	N|F|S|@>N	Gender=Fem|Number=Sing	5	amod	_	_
 5	subsidiária	subsidiária	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 6	para	para	ADP	PRP|@<ADVL	_	7	mark	_	_
 7	promover	promover	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	advcl	_	_
@@ -384,7 +384,7 @@
 24-25	à	_	_	_	_	_	_	_	_
 24	a	a	ADP	<sam->|PRP|@<PIV	_	26	case	_	_
 25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	revista	revista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	_
+26	revista	revista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obj	_	_
 27	«	«	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	Post	Post	PROPN	_	Gender=Fem|Number=Sing	26	appos	_	ChangedBy=Issue119|MWE=Post_Update|MWEPOS=PROPN
 29	Update	Update	PROPN	_	Number=Sing	28	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No

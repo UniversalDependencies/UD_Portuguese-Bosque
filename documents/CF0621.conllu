@@ -5,9 +5,9 @@
 1	Rodney	Rodney	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Rodney_King|MWEPOS=PROPN
 2	King	King	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	ganha	ganhar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	US$	US$	SYM	_	Gender=Masc|Number=Plur	3	obj	_	_
-5	3,8	3,8	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
-6	mi	milhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	4	nmod:npmod	_	_
+4	US$	US$	SYM	_	_	3	obj	_	_
+5	3,8	3,8	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
+6	mi	milhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	5	flat	_	_
 
 # text = O operário da construção civil negro e desempregado Rodney King, 28, vai receber US$ 3,8 milhões da Prefeitura de Los Angeles como compensação pelos efeitos da surra que levou de quatro policiais brancos em março de 1991.
 # source = CETENFolha n=621 cad=Mundo sec=pol sem=94b
@@ -27,17 +27,17 @@
 10	Rodney	Rodney	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Rodney_King|MWEPOS=PROPN
 11	King	King	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-13	28	28	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	10	appos	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+13	28	28	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	10	appos:parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
 16	receber	receber	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-17	US$	US$	SYM	_	Gender=Masc|Number=Plur	16	obj	_	_
-18	3,8	3,8	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168
-19	milhões	milhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	17	nmod:npmod	_	_
+17	US$	US$	SYM	_	_	16	obj	_	_
+18	3,8	3,8	NUM	<card>|NUM|M|P|@>N	NumType=Card	17	nummod	_	ChangedBy=Issue168|MWE=3,8_milhões
+19	milhões	milhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	18	flat	_	_
 20-21	da	_	_	_	_	_	_	_	_
 20	de	de	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	Prefeitura	prefeitura	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	_
+22	Prefeitura	prefeitura	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	iobj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	Los	Los	PROPN	_	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue119|MWE=Los_Angeles|MWEPOS=PROPN
 25	Angeles	Angeles	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
@@ -55,7 +55,7 @@
 35	levou	levar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	33	acl:relcl	_	_
 36	de	de	ADP	PRP|@<PIV	_	38	case	_	_
 37	quatro	quatro	NUM	<card>|NUM|M|P|@>N	NumType=Card	38	nummod	_	ChangedBy=Issue168
-38	policiais	policial	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	35	obl	_	_
+38	policiais	policial	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	35	iobj	_	_
 39	brancos	branco	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	38	amod	_	_
 40	em	em	ADP	PRP|@<ADVL	_	41	case	_	_
 41	março	março	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	35	obl	_	ChangedBy=Issue137
@@ -72,7 +72,7 @@
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	absolvição	absolvição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
 3	em	em	ADP	PRP|@N<	_	4	case	_	_
-4	abril	abril	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod:tmod	_	_
+4	abril	abril	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	1992	1992	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	4	nmod	_	ChangedBy=Issue168
 7-8	dos	_	_	_	_	_	_	_	_
@@ -91,14 +91,14 @@
 19	resultaram	resultar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	14	acl:relcl	_	_
 20	em	em	ADP	PRP|@<PIV	_	22	case	_	_
 21	58	58	NUM	<card>|NUM|F|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168
-22	mortes	morte	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	19	obl	_	ChangedBy=Issue165|SpaceAfter=No
+22	mortes	morte	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	19	obj	_	ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 24	4.000	4.000	NUM	<card>|NUM|M|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168
 25	feridos	ferir	NOUN	<cjt>|<n>|V|PCP|M|P|@P<	Gender=Masc|Number=Plur|VerbForm=Part	22	conj	_	_
 26	e	e	CCONJ	<co-prparg>|KC|@CO	_	27	cc	_	d2d:#106
-27	US$	US$	SYM	_	Gender=Masc|Number=Plur	22	conj	_	_
-28	1	1	NUM	<card>|NUM|M|S|@>N	NumType=Card	29	nummod	_	ChangedBy=Issue168
-29	bilhão	bilhão	NOUN	<np-def>|N|M|S|@N<	Gender=Masc|Number=Sing	27	nmod:npmod	_	_
+27	US$	US$	SYM	_	_	22	conj	_	_
+28	1	1	NUM	<card>|NUM|M|S|@>N	NumType=Card	27	nummod	_	ChangedBy=Issue168|MWE=1_bilhão
+29	bilhão	bilhão	NUM	<np-def>|N|M|S|@N<	NumType=Card	28	flat	_	_
 30	em	em	ADP	PRP|@N<	_	31	case	_	_
 31	prejuízos	prejuízo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	27	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 32	.	.	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No

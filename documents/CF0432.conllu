@@ -13,18 +13,18 @@
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue137
-11	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	10	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+11	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	10	amod	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	impressora	impressora	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
-15	jato	jato	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	14	nmod:npmod	_	_
+15	jato	jato	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	14	nmod	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	tinta	tinta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
 18	Epson	Epson	PROPN	_	Gender=Fem|Number=Sing	14	appos	_	ChangedBy=Issue119|MWE=Epson_Stylus_800|MWEPOS=PROPN
 19	Stylus	Stylus	PROPN	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
 20	800	800	PROPN	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
 21	por	por	ADP	PRP|@<PIV	_	22	case	_	_
-22	US$	US$	SYM	_	Gender=Masc|Number=Plur	6	obl	_	_
+22	US$	US$	SYM	_	_	6	obl	_	_
 23	199	199	NUM	<card>|NUM|M|P|@N<	NumType=Card	22	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 24	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
@@ -45,7 +45,7 @@
 10	Aero	Aero	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 11	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	ChangedBy=Issue167
 12	por	por	ADP	PRP|@<SC	_	13	case	_	_
-13	US$	US$	SYM	_	Gender=Masc|Number=Plur	0	root	_	_
+13	US$	US$	SYM	_	_	0	root	_	_
 14	996,97	996,97	NUM	<card>|NUM|M|P|@N<	NumType=Card	13	nummod	_	ChangedBy=Issue168
 15	(	(	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	se	se	SCONJ	KS|@SUB	_	17	mark	_	_
@@ -65,7 +65,7 @@
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	desconto	desconto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
 30	de	de	ADP	PRP|@N<	_	31	case	_	_
-31	US$	US$	SYM	_	Gender=Masc|Number=Plur	29	nmod	_	_
+31	US$	US$	SYM	_	_	29	nmod	_	_
 32	100	100	NUM	<card>|NUM|M|P|@N<	NumType=Card	31	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 33	)	)	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 34	.	.	PUNCT	PU|@PU	_	13	punct	_	_
@@ -95,8 +95,8 @@
 7	de	de	ADP	PRP|@A<	_	9	case	_	_
 8	meio	meio	ADV	<quant>|<det>|ADV|@>A	_	9	advmod	_	_
 9	fora	fora	ADV	ADV|@P<	_	6	advmod	_	MWE=fora_de_mão
-10	de	de	ADP	PRP|@A<	_	11	case	_	_
-11	mão	mão	ADV	ADV|@P<	_	9	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+10	de	de	ADP	PRP|@A<	_	9	fixed	_	_
+11	mão	mão	NOUN	ADV|@P<	_	9	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 13	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 14	preços	preço	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	13	obj	_	_

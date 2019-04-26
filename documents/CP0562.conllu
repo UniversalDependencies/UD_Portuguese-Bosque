@@ -7,7 +7,7 @@
 3	Itamaraty	Itamaraty	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 4	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
 5	vindo	vir	AUX	<aux>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	7	aux	_	_
-6	a	a	ADP	PRP|@PRT-AUX<	_	7	obl	_	_
+6	a	a	ADP	PRP|@PRT-AUX<	_	7	aux	_	_
 7	sofrer	sofrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	acção	acção	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
@@ -32,7 +32,7 @@
 26	redução	redução	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	_
 27	de	de	ADP	PRP|@N<ARG	_	31	case	_	_
 28	mais	mais	ADV	ADV|@>A	_	30	advmod	_	MWE=mais_de
-29	de	de	ADP	<prp>|PRP|@A<	_	28	case	_	_
+29	de	de	ADP	<prp>|PRP|@A<	_	28	fixed	_	_
 30	50	50	NUM	<card>|NUM|M|P|@>N	NumType=Card	31	nummod	_	ChangedBy=Issue168
 31	por	por	ADP	_	Gender=Masc|Number=Sing	26	nmod	_	MWE=por_cento|MWEPOS=NOUN
 32	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	31	compound	_	_
@@ -56,7 +56,7 @@
 6-7	da	_	_	_	_	_	_	_	_
 6	de	de	ADP	<sam->|PRP|@<PIV	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	falta	falta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
+8	falta	falta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obj	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	recursos	recurso	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -168,15 +168,15 @@
 5	em	em	ADP	<sam->|PRP|@<SA	_	7	case	_	_
 6	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	apartamento	apartamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
-8	de	de	ADP	PRP|@N<	_	12	case	_	_
+8	de	de	ADP	PRP|@N<	_	11	obl	_	_
 9	quase	quase	ADV	<quant>|ADV|@>A	_	10	advmod	_	_
-10	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	12	nummod	_	ChangedBy=Issue168
+10	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168
 11	metros	metros	NOUN	_	_	7	nmod	_	MWE=metros_quadrados|MWEPOS=NOUN
-12	quadrados	quadrados	ADJ	_	_	11	compound	_	_
+12	quadrados	quadrados	ADJ	_	_	11	amod	_	_
 13-14	na	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	Avenue	Avenue	PROPN	_	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue119|MWE=Avenue_Foch|MWEPOS=PROPN
+15	Avenue	Avenue	PROPN	_	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue119|MWE=Avenue_Foch|MWEPOS=PROPN
 16	Foch	Foch	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 18	junto	junto	ADV	ADV|@N<PRED	_	15	advmod	_	_
@@ -190,6 +190,6 @@
 24	Triunfo	Triunfo	PROPN	PROP|@P<	Number=Sing	21	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 26	em	em	ADP	PRP|@N<PRED	_	27	case	_	_
-27	Paris	Paris	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+27	Paris	Paris	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	appos:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 28	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

@@ -28,7 +28,7 @@
 5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 6	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	10	nsubj:pass	_	_
 7	passa	passar	AUX	<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
-8	a	a	ADP	PRP|@PRT-AUX<	_	10	obl	_	_
+8	a	a	ADP	PRP|@PRT-AUX<	_	10	aux	_	_
 9	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	10	aux:pass	_	_
 10	editada	editar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl:relcl	_	_
 11	cinco	cinco	NUM	<card>|NUM|M|P|@>N	NumType=Card	12	nummod	_	ChangedBy=Issue168
@@ -73,7 +73,7 @@
 49	a	a	ADP	PRP|@<ADVL	_	50	case	_	MWE=a_partir_de
 50	partir	partir	NOUN	N|@P<	_	48	nmod	_	_
 51	de	de	ADP	PRP|@N<	_	52	case	_	_
-52	Janeiro	janeiro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	50	nmod:tmod	_	_
+52	Janeiro	janeiro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	50	nmod	_	_
 53-54	do	_	_	_	_	_	_	_	_
 53	de	de	ADP	<sam->|PRP|@N<	_	56	case	_	_
 54	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	_	_
@@ -154,8 +154,8 @@
 # d2d = cc(amealhou,e) -> cc(malas,e)  #106
 1	Márcio	Márcio	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	amealhou	amealhar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	70	70	NUM	<card>|NUM|M|P|@>A	NumType=Card	4	dep	_	ChangedBy=Issue168
-4	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
+3	70	70	NUM	<card>|NUM|M|P|@>A	NumType=Card	5	nummod	_	ChangedBy=Issue168|MWE=70_mil
+4	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	3	flat	_	ChangedBy=Issue168
 5	contos	conto	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
 6	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 7	está	estar	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	ChangedBy=Issue167
@@ -168,7 +168,7 @@
 14	Record	Record	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 15	»	»	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-17	acompanhado	acompanhar	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-<PRED	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	dep	_	ChangedBy=Issue165|SpaceAfter=No
+17	acompanhado	acompanhar	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-<PRED	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	acl	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 19-20	na	_	_	_	_	_	_	_	_
 19	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_

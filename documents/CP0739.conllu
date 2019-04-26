@@ -16,17 +16,17 @@
 4-5	aos	_	_	_	_	_	_	_	_
 4	a	a	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
 5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-6	portugueses	português	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue165|SpaceAfter=No
+6	portugueses	português	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O que já escrevemos esta semana excitou as consciências do Partido Popular, ciosas em mostrar que o processo da lista de candidatos por Lisboa correu na maior das lisuras, incluindo o folhetim Luís Nobre Guedes.
 # source = CETEMPúblico n=739 sec=pol sem=95b
 # sent_id = CP739-3
 # id = 3794
-1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	nsubj	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	4	obj	_	_
 3	já	já	ADV	ADV|@ADVL>	_	4	advmod	_	_
-4	escrevemos	escrever	VERB	<mv>|V|PS|1P|IND|@FS-SUBJ>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	7	csubj	_	_
+4	escrevemos	escrever	VERB	<mv>|V|PS|1P|IND|@FS-SUBJ>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	1	acl:relcl	_	_
 5	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
 6	semana	semana	NOUN	<np-def>|N|F|S|@<ADVL	Gender=Fem|Number=Sing	4	obl	_	_
 7	excitou	excitar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -98,7 +98,7 @@
 3	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137
 4	9	9	NUM	<card>|NUM|M|S|@N<	NumType=Card	3	nummod	_	ChangedBy=Issue168
 5	de	de	ADP	PRP|@A<	_	6	case	_	_
-6	Junho	junho	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod:tmod	_	_
+6	Junho	junho	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	líder	líder	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 9-10	dos	_	_	_	_	_	_	_	_
@@ -144,7 +144,7 @@
 44-45	à	_	_	_	_	_	_	_	_
 44	a	a	ADP	<sam->|PRP|@<PIV	_	46	case	_	_
 45	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
-46	estrutura	estrutura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	43	obl	_	_
+46	estrutura	estrutura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	43	iobj	_	_
 47	distrital	distrital	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	46	amod	_	ChangedBy=Issue165|SpaceAfter=No
 48	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
@@ -228,7 +228,7 @@
 7-8	à	_	_	_	_	_	_	_	_
 7	a	a	ADP	<sam->|PRP|@<PIV	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	comissão	comissão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	_
+9	comissão	comissão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obj	_	_
 10	política	político	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	9	amod	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	ontem	ontem	ADV	ADV|@P<	_	9	advmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -301,6 +301,6 @@
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 10	feita	fazer	VERB	<mv>|V|PCP|F|S|@ICL-A<	Gender=Fem|Number=Sing|VerbForm=Part	2	advcl	_	_
 11	de	de	ADP	PRP|@<PIV	_	12	case	_	_
-12	recados	recado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	ChangedBy=Issue165|SpaceAfter=No
+12	recados	recado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obj	_	ChangedBy=Issue165|SpaceAfter=No
 13	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

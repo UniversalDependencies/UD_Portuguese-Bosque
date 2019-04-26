@@ -12,7 +12,7 @@
 7	para	para	ADP	PRP|@<PIV	_	10	case	_	_
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
 9	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	nummod	_	ChangedBy=Issue168
-10	lados	lado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	ChangedBy=Issue165|SpaceAfter=No
+10	lados	lado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obj	_	ChangedBy=Issue165|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O deputado social-democrata Carlos Coelho, por exemplo, até já se deu ao trabalho de comparar os dois documentos, apenas para provar que há «inúmeras citações literais» do diploma no articulado do pacto, que assim se transforma «num repositório de ideias globais, que não acrescenta nada ao que a lei de bases e a Constituição portuguesa preconizam».
@@ -22,13 +22,13 @@
 # d2d = cc(lei,e) -> cc(Constituição,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	deputado	deputado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
-3	social-democrata	social-democrata	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	2	nmod:npmod	_	_
+3	social-democrata	social-democrata	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	2	nmod	_	_
 4	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Carlos_Coelho|MWEPOS=PROPN
 5	Coelho	Coelho	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 7	por	por	ADP	PRP|@ADVL>	_	13	advmod	_	MWE=por_exemplo|MWEPOS=ADV
 8	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	fixed	_	ChangedBy=Issue165|SpaceAfter=No
-9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 10	até	até	ADP	PRP|@ADVL>	_	11	case	_	_
 11	já	já	ADV	ADV|@P<	_	13	advmod	_	_
 12	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	expl	_	ChangedBy=Issue135
@@ -36,7 +36,7 @@
 14-15	ao	_	_	_	_	_	_	_	_
 14	a	a	ADP	<sam->|PRP|@<PIV	_	16	case	_	_
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	trabalho	trabalho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	_
+16	trabalho	trabalho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obj	_	_
 17	de	de	ADP	PRP|@N<ARG	_	18	mark	_	_
 18	comparar	comparar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	acl	_	_
 19	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
@@ -74,7 +74,7 @@
 48-49	num	_	_	_	_	_	_	_	_
 48	em	em	ADP	<sam->|PRP|@<PIV	_	50	case	_	_
 49	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_
-50	repositório	repositório	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	46	obl	_	_
+50	repositório	repositório	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	46	obj	_	_
 51	de	de	ADP	PRP|@N<ARG	_	52	case	_	_
 52	ideias	ideia	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	50	nmod	_	_
 53	globais	global	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	52	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -121,21 +121,21 @@
 2	Dizer	dizer	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	20	csubj	_	_
 3	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
 4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
-5	necessário	necessário	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	2	csubj	_	_
+5	necessário	necessário	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	2	ccomp	_	_
 6	mais	mais	ADV	<KOMP>|<quant>|ADV|@>A	_	7	advmod	_	_
 7	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	8	nummod	_	ChangedBy=Issue168
 8	documento	documento	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	5	nsubj	_	_
 9	para	para	ADP	PRP|@<ADVL	_	10	mark	_	_
 10	repetir	repetir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	advcl	_	_
-11	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
+11	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	obj	_	_
 12	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	18	nsubj	_	_
 13	já	já	ADV	ADV|@ADVL>	_	18	advmod	_	_
-14	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	ChangedBy=Issue167
+14	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	ChangedBy=Issue167
 15-16	nos	_	_	_	_	_	_	_	_
 15	em	em	ADP	<sam->|PRP|@<SA	_	18	case	_	_
 16	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
 17	outros	outro	DET	<diff>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	18	det	_	_
-18	dois	dois	NUM	<card>|<np-def>|NUM|M|P|@P<	NumType=Card	10	csubj	_	ChangedBy=Issue168
+18	dois	dois	NUM	<card>|<np-def>|NUM|M|P|@P<	NumType=Card	14	obl	_	ChangedBy=Issue168
 19	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	ChangedBy=Issue167
 20	dizer	dizer	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	0	root	_	_
 21	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
@@ -165,7 +165,7 @@
 6	processo	processo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj:pass	_	_
 7	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
 8	vindo	vir	AUX	<aux>|<pc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	11	aux	_	_
-9	a	a	ADP	PRP|@PRT-AUX<	_	11	obl	_	_
+9	a	a	ADP	PRP|@PRT-AUX<	_	11	aux	_	_
 10	ser	ser	AUX	<first-cjt>|<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	11	aux:pass	_	_
 11	encaminhado	encaminhar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl:relcl	_	_
 12	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	ChangedBy=Issue165|ChangedBy=Issue167|SpaceAfter=No

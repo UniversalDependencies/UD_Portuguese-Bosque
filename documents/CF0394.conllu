@@ -32,7 +32,7 @@
 # source = CETENFolha n=394 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF394-2
 # id = 1636
-1	Isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	cc	_	MWEPOS=CCONJ
+1	Isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	cc	_	MWEPOS=CCONJ|MWE=isto_é
 2	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	:	:	PUNCT	PU|@PU	_	10	punct	_	_
 4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
@@ -43,7 +43,7 @@
 9	são	ser	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux:pass	_	_
 10	investidos	investir	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
 11	de	de	ADP	PRP|@<PIV	_	12	case	_	_
-12	símbolos	símbolo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	_
+12	símbolos	símbolo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obj	_	_
 13	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	14	nsubj	_	_
 14	alteram	alterar	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
@@ -54,7 +54,7 @@
 20	atribuem	atribuir	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_
 21-22	ao	_	_	_	_	_	_	_	_
 21	a	a	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
-22	o	o	PRON	<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	20	obl	_	_
+22	o	o	PRON	<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	20	iobj	_	_
 23	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	24	obj	_	_
 24	comem	comer	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	10	punct	_	_
@@ -70,7 +70,7 @@
 2	chegar	chegar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	advcl	_	_
 3	a	a	ADP	PRP|@<PIV	_	5	case	_	_
 4	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	5	det	_	_
-5	conclusões	conclusão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	conclusões	conclusão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	obj	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 7	Rosa	Rosa	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
 8	entrevistou	entrevistar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -101,10 +101,10 @@
 31	Paulo	Paulo	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 32	(	(	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
 33	ruas	rua	NOUN	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	24	appos	_	_
-34	Líbero	Líbero	PROPN	_	Gender=Fem|Number=Sing	33	appos	_	ChangedBy=Issue119|MWE=Líbero_Badaró|MWEPOS=PROPN
+34	Líbero	Líbero	PROPN	_	Gender=Fem|Number=Sing	33	appos:parataxis	_	ChangedBy=Issue119|MWE=Líbero_Badaró|MWEPOS=PROPN
 35	Badaró	Badaró	PROPN	_	Number=Sing	34	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 36	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
-37	São	São	PROPN	_	Gender=Fem|Number=Sing	34	nmod:npmod	_	ChangedBy=Issue119|MWE=São_Bento|MWEPOS=PROPN
+37	São	São	PROPN	_	Gender=Fem|Number=Sing	34	conj	_	ChangedBy=Issue119|MWE=São_Bento|MWEPOS=PROPN
 38	Bento	Bento	PROPN	_	Number=Sing	37	flat:name	_	ChangedBy=Issue119
 39	e	e	CCONJ	<co-postnom>|KC|@CO	_	40	cc	_	d2d:#106
 40	adjacências	adjacência	NOUN	<cjt>|<np-idf>|N|F|P|@N<	Gender=Fem|Number=Plur	34	conj	_	ChangedBy=Issue165|SpaceAfter=No

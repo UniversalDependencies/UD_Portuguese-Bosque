@@ -21,7 +21,7 @@
 16	Luiz	Luiz	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 18	em	em	ADP	PRP|@N<PRED	_	19	case	_	_
-19	Lisboa	Lisboa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
+19	Lisboa	Lisboa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	appos:parataxis	_	_
 
 # text = Teresa espera casamento
 # source = CETEMPúblico n=466 sec=clt sem=97a
@@ -57,7 +57,7 @@
 20-21	numa	_	_	_	_	_	_	_	_
 20	em	em	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
 21	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	loura	louro	NOUN	<n>|<np-idf>|ADJ|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	ChangedBy=Issue165|SpaceAfter=No
+22	loura	louro	NOUN	<n>|<np-idf>|ADJ|F|S|@P<	Gender=Fem|Number=Sing	16	iobj	_	ChangedBy=Issue165|SpaceAfter=No
 23	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Um texto em torno do «sagrado matrimónio» no qual se discute as possibilidades de encontrar um homem que não seja casado, nem maricas e tenha emprego.
@@ -69,14 +69,14 @@
 # d2d = punct(casado,,) -> punct(tenha,,)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	texto	texto	NOUN	<first-cjt>|<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
-3	em	em	ADP	<sam->|PRP|@N<	_	4	case	_	MWE=em_torno_de
-4	torno	torno	NOUN	N|@P<	_	2	nmod	_	_
+3	em	em	ADP	<sam->|PRP|@N<	_	8	case	_	MWE=em_torno_de
+4	torno	torno	NOUN	N|@P<	_	3	fixed	_	_
 5-6	do	_	_	_	_	_	_	_	_
-5	de	de	ADP	PRP|@N<	_	8	case	_	_
+5	de	de	ADP	PRP|@N<	_	3	fixed	_	_
 6	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 7	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
-8	sagrado	sagrado	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	MWE=sagrado_matrimónio|MWEPOS=NOUN
-9	matrimónio	matrimónio	ADJ	_	Gender=Masc|Number=Sing	8	compound	_	ChangedBy=Issue165|SpaceAfter=No
+8	sagrado	sagrado	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	MWE=sagrado_matrimónio|MWEPOS=NOUN
+9	matrimónio	matrimónio	ADJ	_	Gender=Masc|Number=Sing	8	amod	_	ChangedBy=Issue165|SpaceAfter=No
 10	»	»	PUNCT	PU|@PU	_	8	punct	_	_
 11-12	no	_	_	_	_	_	_	_	_
 11	em	em	ADP	<sam->|PRP|@ADVL>	_	13	case	_	_

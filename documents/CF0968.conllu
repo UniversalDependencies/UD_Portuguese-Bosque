@@ -9,7 +9,7 @@
 1	Entre	entre	ADP	PRP|@ADVL>	_	6	case	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
 3	mais	mais	ADV	ADV|@>N	_	6	advmod	_	MWE=mais_de
-4	de	de	ADP	<prp>|PRP|@A<	_	3	case	_	_
+4	de	de	ADP	<prp>|PRP|@A<	_	3	fixed	_	_
 5	140	140	NUM	<card>|NUM|F|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
 6	participantes	participante	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	12	obl	_	_
 7-8	da	_	_	_	_	_	_	_	_
@@ -52,10 +52,10 @@
 # d2d = cc(1.560,e) -> cc(1.565,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Kodak	Kodak	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
-3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 4	por	por	ADP	PRP|@ADVL>	_	7	advmod	_	MWE=por_exemplo|MWEPOS=ADV
 5	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	fixed	_	ChangedBy=Issue165|SpaceAfter=No
-6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 7	apresentou	apresentar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 8	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
 9	impressoras/copiadoras	impressoras/copiadoras	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
@@ -66,7 +66,7 @@
 14	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 15	capazes	capaz	ADJ	ADJ|F|P|@N<PRED	Gender=Fem|Number=Plur	9	amod	_	_
 16	de	de	ADP	PRP|@A<ARG	_	17	mark	_	_
-17	copiar	copiar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	advcl	_	_
+17	copiar	copiar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	xcomp	_	_
 18	em	em	ADP	PRP|@<ADVL	_	19	case	_	_
 19	cores	cor	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	17	obl	_	ChangedBy=Issue137
 20	frente	frente	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
@@ -85,21 +85,21 @@
 # id = 4095
 # d2d = punct(brochuras,,) -> punct(folhetos,,)  #106
 # d2d = punct(brochuras,,) -> punct(folhetos,,)  #106
-1	Podem	poder	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
+1	Podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	produzir	produzir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 3	pequenas	pequeno	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	4	amod	_	_
 4	brochuras	brochura	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 6	mala	mala	NOUN	_	_	4	obj	_	MWE=mala_direta|MWEPOS=NOUN
-7	direta	direta	ADJ	_	_	6	compound	_	ChangedBy=Issue165|SpaceAfter=No
+7	direta	direta	ADJ	_	_	6	amod	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	folhetos	folheto	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	conj	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 11	realizando	realizar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	2	advcl	_	_
 12	até	até	ADP	PRP|@<ADVL	_	14	case	_	_
 13	sete	sete	NUM	<card>|NUM|F|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168
-14	impressões	impressão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	ChangedBy=Issue137
+14	impressões	impressão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obj	_	ChangedBy=Issue137
 15	por	por	ADP	PRP|@<ADVL	_	16	case	_	_
-16	minuto	minuto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+16	minuto	minuto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

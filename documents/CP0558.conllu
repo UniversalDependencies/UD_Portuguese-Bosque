@@ -17,10 +17,10 @@
 9	durante	durante	ADP	PRP|@ADVL>	_	11	case	_	_
 10	o	o	DET	DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	11	det	_	MWE=o_qual
 11	qual	qual	PRON	DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	17	obl	_	_
-12	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168
-13	milhões	milhão	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	17	nsubj	_	_
+12	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	15	nummod	_	ChangedBy=Issue168|MWE=mil_milhões
+13	milhões	milhão	NUM	<np-def>|N|M|P|@SUBJ>	NumType=Card	12	flat	_	_
 14	de	de	ADP	PRP|@N<ARG	_	15	case	_	_
-15	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	13	nmod	_	_
+15	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	17	nsubj	_	_
 16	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	17	expl	_	ChangedBy=Issue135
 17	abstêm	abster	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
 18	de	de	ADP	<first-cjt>|PRP|@<PIV	_	19	mark	_	_
@@ -41,8 +41,8 @@
 33	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	cop	_	ChangedBy=Issue167
 34	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	mês	mês	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-36	sagrado	sagrado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	35	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
-37	muçulmano	muçulmano	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	35	nmod:npmod	_	ChangedBy=Issue165|SpaceAfter=No
+36	sagrado	sagrado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	35	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
+37	muçulmano	muçulmano	ADJ	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	35	amod	_	ChangedBy=Issue165|SpaceAfter=No
 38	.	.	PUNCT	PU|@PU	_	35	punct	_	_
 
 # text = Mas para alguns é também sinónimo de «jihad» (guerra santa).
@@ -89,7 +89,7 @@
 15-16	pelo	_	_	_	_	_	_	_	_
 15	por	por	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	19	obl	_	_
+17	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	14	obl	_	_
 18	400	400	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168
 19	mortos	morto	NOUN	<n>|<np-def>|ADJ|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
 20	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	21	cc	_	d2d:#106
@@ -111,7 +111,7 @@
 36	sucesso	sucesso	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	33	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	39	punct	_	_
 38	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
-39	apertada	apertar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	40	acl	_	_
+39	apertada	apertado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	40	amod	_	_
 40	malha	malha	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	33	obj	_	_
 41-42	das	_	_	_	_	_	_	_	_
 41	de	de	ADP	<sam->|PRP|@N<	_	43	case	_	_

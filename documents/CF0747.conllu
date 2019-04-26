@@ -5,9 +5,9 @@
 # d2d = cc(usar,e) -> cc(gritar,e)  #106
 1	Fabiane	Fabiane	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	recebeu	receber	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-3	CR$	CR$	SYM	_	Gender=Masc|Number=Plur	2	obj	_	_
-4	35	35	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
-5	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	3	nummod	_	ChangedBy=Issue168
+3	CR$	CR$	SYM	_	_	2	obj	_	_
+4	35	35	NUM	<card>|NUM|M|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168|MWE=35_mil
+5	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	4	flat	_	ChangedBy=Issue168
 6	para	para	ADP	PRP|@N<	_	7	mark	_	_
 7	usar	usar	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	acl	_	_
 8	camiseta	camiseta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
@@ -40,7 +40,7 @@
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	voto	votar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	em	em	ADP	PRP|@<PIV	_	4	case	_	_
-4	Quércia	Quércia	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
+4	Quércia	Quércia	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obj	_	_
 5	de	de	ADP	PRP|@<ADVL	_	6	case	_	_
 6	jeito	jeito	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue137
 7	nenhum	nenhum	DET	<quant>|DET|M|S|@N<	Gender=Masc|Number=Sing|PronType=Neg	6	det	_	ChangedBy=Issue165|SpaceAfter=No
@@ -67,7 +67,7 @@
 2	pertência	pertencer	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 3	a	a	ADP	PRP|@<PIV	_	5	case	_	_
 4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	grupo	grupo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
+5	grupo	grupo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obj	_	_
 6	de	de	ADP	PRP|@N<	_	8	case	_	_
 7	cem	cem	NUM	<card>|NUM|F|P|@>N	NumType=Card	8	nummod	_	ChangedBy=Issue168
 8	garotas	garota	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
@@ -75,7 +75,7 @@
 10	Brasília	Brasília	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
 11	contratado	contratar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
 12	para	para	ADP	PRP|@<PIV	_	13	mark	_	_
-13	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	xcomp	_	_
+13	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	_
 14	propaganda	propaganda	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	obj	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	Ana	Ana	PROPN	_	Gender=Fem|Number=Sing	14	nmod	_	ChangedBy=Issue119|MWE=Ana_Paula_Junqueira|MWEPOS=PROPN
@@ -88,7 +88,7 @@
 # sent_id = CF747-6
 # id = 3133
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
+2	Acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	ccomp:parataxis	_	_
 3	absurdo	absurdo	ADJ	ADJ|M|S|@<OC	Gender=Masc|Number=Sing	2	xcomp	_	_
 4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	político	político	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_

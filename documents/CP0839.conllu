@@ -29,7 +29,7 @@
 20	a	a	ADP	<sam->|PRP|@<PIV	_	23	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 22	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	23	det	_	_
-23	sede	sede	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	_
+23	sede	sede	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	iobj	_	_
 24-25	nos	_	_	_	_	_	_	_	_
 24	em	em	ADP	<sam->|PRP|@N<	_	26	case	_	_
 25	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
@@ -50,7 +50,7 @@
 5-6	às	_	_	_	_	_	_	_	_
 5	a	a	ADP	<sam->|PRP|@<PIV	_	7	case	_	_
 6	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	autoridades	autoridade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obl	_	_
+7	autoridades	autoridade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obj	_	_
 8	americanas	americano	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
 9	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	27	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
 10	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
@@ -80,10 +80,10 @@
 # id = 4329
 # d2d = cc(fronteira,e) -> cc(Bagdad,e)  #106
 1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	_	_
-2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
-3	dezena	dezena	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
+2	uma	um	NUM	<arti>|ART|F|S|@>N	NumType=Card	5	nummod	_	MWE=uma_dezena
+3	dezena	dezena	NUM	<np-idf>|N|F|S|@<ACC	NumType=Card	2	flat	_	_
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
-5	dias	dia	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
+5	dias	dia	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	obl	_	_
 6	que	que	ADV	<foc>|ADV|@ADVL>	_	16	mark	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	estrada	estrada	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
@@ -150,6 +150,6 @@
 33	dia	dia	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	28	obl	_	ChangedBy=Issue137
 34	30	30	NUM	<card>|NUM|M|S|@N<	NumType=Card	33	nummod	_	ChangedBy=Issue168
 35	de	de	ADP	PRP|@A<	_	36	case	_	_
-36	Janeiro	janeiro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	nmod:tmod	_	ChangedBy=Issue165|SpaceAfter=No
+36	Janeiro	janeiro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 37	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

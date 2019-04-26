@@ -13,7 +13,7 @@
 5	Bob	Bob	PROPN	_	Gender=Masc|Number=Sing	3	obl:agent	_	ChangedBy=Issue119|MWE=Bob_Mover|MWEPOS=PROPN
 6	Mover	Mover	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119
 7	(	(	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
-8	sax	sax	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	appos	_	_
+8	sax	sax	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	appos:parataxis	_	_
 9	alto	alto	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	8	amod	_	_
 10	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	11	cc	_	d2d:#106
 11	voz	voz	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	8	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -22,19 +22,19 @@
 14	Carlo	Carlo	PROPN	_	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue119|MWE=Carlo_Morena|MWEPOS=PROPN
 15	Morena	Morena	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
-17	piano	piano	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	14	appos	_	ChangedBy=Issue165|SpaceAfter=No
+17	piano	piano	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	14	appos:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 18	)	)	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue119|MWE=Pedro_Gonçalves|MWEPOS=PROPN
 21	Gonçalves	Gonçalves	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 22	(	(	PUNCT	PU|@PU	_	23	punct	_	ChangedBy=Issue165|SpaceAfter=No
-23	contrabaixo	contrabaixo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	20	appos	_	ChangedBy=Issue165|SpaceAfter=No
+23	contrabaixo	contrabaixo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	20	appos:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 24	)	)	PUNCT	PU|@PU	_	23	punct	_	_
 25	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	d2d:#106
 26	João	João	PROPN	_	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue119|MWE=João_Silvestre|MWEPOS=PROPN
 27	Silvestre	Silvestre	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 28	(	(	PUNCT	PU|@PU	_	29	punct	_	ChangedBy=Issue165|SpaceAfter=No
-29	bateria	bateria	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	26	appos	_	ChangedBy=Issue165|SpaceAfter=No
+29	bateria	bateria	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	26	appos:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 30	)	)	PUNCT	PU|@PU	_	29	punct	_	_
 31	actua	actuar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 32	a	a	ADP	<sam->|PRP|@<ADVL	_	33	case	_	MWE=a_partir_de
@@ -55,7 +55,7 @@
 44	jazz	jazz	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 45	:	:	PUNCT	PU|@PU	_	31	punct	_	_
 46-47	no	_	_	_	_	_	_	_	_
-46	em	em	ADP	<sam->|PRP|@-H	_	40	nmod	_	_
+46	em	em	ADP	<sam->|PRP|@-H	_	48	case	_	_
 47	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
 48	Hot	Hot	PROPN	_	Gender=Masc|Number=Sing	40	appos	_	ChangedBy=Issue119|MWE=Hot_Clube|MWEPOS=PROPN
 49	Clube	Clube	PROPN	_	Number=Sing	48	flat:name	_	ChangedBy=Issue119
@@ -69,20 +69,20 @@
 # id = 1193
 # d2d = cc(23h,e) -> cc(01h.,e)  #106
 # d2d = cc(liderada,e) -> cc(voz,e)  #106
-1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
-3	autêntica	autêntico	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	6	amod	_	ChangedBy=Issue165|SpaceAfter=No
+3	autêntica	autêntico	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
 4	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 5	big	big	X	_	_	0	root	_	MWE=big_band|MWEPOS=NOUN
 6	band	band	X	_	_	5	flat:foreign	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-8	constituída	constituir	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	_	_
+8	constituída	constituir	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	_	_
 9	por	por	ADP	PRP|@PASS	_	11	case	_	_
 10	16	16	NUM	<card>|NUM|M|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168
 11	músicos	músico	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl:agent	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 13	com	com	ADP	PRP|@N<	_	14	case	_	_
-14	alguns	algum	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Ind	6	det	_	_
+14	alguns	algum	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Ind	5	det	_	_
 15-16	dos	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
@@ -96,7 +96,7 @@
 23	«	«	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
 24	standard	standard	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	22	amod	_	ChangedBy=Issue165|SpaceAfter=No
 25	»	»	PUNCT	PU|@PU	_	24	punct	_	_
-26	liderada	liderar	VERB	<mv>|<first-cjt>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	acl	_	_
+26	liderada	liderar	VERB	<mv>|<first-cjt>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	5	acl	_	_
 27-28	pelo	_	_	_	_	_	_	_	_
 27	por	por	ADP	PRP|@PASS	_	29	case	_	_
 28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
@@ -111,13 +111,13 @@
 37	Ana	Ana	PROPN	_	Gender=Fem|Number=Sing	35	nmod	_	ChangedBy=Issue119|MWE=Ana_Paula_Oliveira|MWEPOS=PROPN
 38	Paula	Paula	PROPN	_	Number=Sing	37	flat:name	_	ChangedBy=Issue119
 39	Oliveira	Oliveira	PROPN	_	Number=Sing	37	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-40	:	:	PUNCT	PU|@PU	_	6	punct	_	_
+40	:	:	PUNCT	PU|@PU	_	5	punct	_	_
 41-42	no	_	_	_	_	_	_	_	_
 41	em	em	ADP	<sam->|PRP|@N<PRED	_	43	case	_	_
 42	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_
-43	Speakeasy	Speakeasy	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
+43	Speakeasy	Speakeasy	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 44	(	(	PUNCT	PU|@PU	_	45	punct	_	ChangedBy=Issue165|SpaceAfter=No
-45	Cais	Cais	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	43	appos	_	MWE=Cais_da_Rocha
+45	Cais	Cais	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	43	appos:parataxis	_	MWE=Cais_da_Rocha
 46-47	da	_	_	_	_	_	_	_	_
 46	de	de	ADP	<sam->|PRP|@N<	_	48	case	_	_
 47	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
@@ -125,14 +125,14 @@
 49	Conde	Conde	PROPN	_	Gender=Masc|Number=Sing	45	nmod	_	ChangedBy=Issue119|MWE=Conde_d'Óbidos|MWEPOS=PROPN
 50	d'Óbidos	d'Óbidos	PROPN	_	Number=Sing	49	flat:name	_	ChangedBy=Issue119
 51	--	--	PUNCT	PU|@PU	_	26	punct	_	_
-52	Armazém	armazém	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	43	appos	_	_
+52	Armazém	armazém	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	43	appos:parataxis	_	_
 53	115	115	NUM	<card>|NUM|M|P|@N<	NumType=Card	52	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 54	)	)	PUNCT	PU|@PU	_	45	punct	_	ChangedBy=Issue165|SpaceAfter=No
 55	,	,	PUNCT	PU|@PU	_	58	punct	_	_
 56-57	às	_	_	_	_	_	_	_	_
 56	a	a	ADP	<sam->|PRP|@N<PRED	_	58	case	_	_
 57	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	58	det	_	_
-58	23h	23h	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	6	nmod	_	_
+58	23h	23h	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obl	_	_
 59	e	e	CCONJ	<co-prparg>|KC|@CO	_	60	cc	_	d2d:#106
 60	01h.	01h.	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	58	conj	_	ChangedBy=Issue149
 

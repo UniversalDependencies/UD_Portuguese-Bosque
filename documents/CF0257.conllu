@@ -23,7 +23,7 @@
 18	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux:pass	_	_
 19	incrementado	incrementar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	ccomp	_	_
 20	29	29	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	ChangedBy=Issue168
-21	%	%	SYM	<np-def>|N|M|P|@<SC	Gender=Masc|Number=Plur	19	xcomp	_	_
+21	%	%	SYM	<np-def>|N|M|P|@<SC	_	19	xcomp	_	_
 22	em	em	ADP	PRP|@<ADVL	_	23	case	_	_
 23	média	média	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	ChangedBy=Issue137
 24	desde	desde	ADP	PRP|@<ADVL	_	26	case	_	_
@@ -73,10 +73,10 @@
 29	1990	1990	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	26	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 31	ano	ano	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	29	appos	_	_
-32	em	em	ADP	PRP|@N<ARG	_	35	mark	_	_
-33	que	que	PRON	<rel>|INDP|M|S|@SUB	Gender=Masc|Number=Sing|PronType=Rel	35	mark	_	_
+32	em	em	ADP	PRP|@N<ARG	_	33	case	_	_
+33	que	que	PRON	<rel>|INDP|M|S|@SUB	Gender=Masc|Number=Sing|PronType=Rel	35	obl	_	_
 34	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	35	aux:pass	_	_
-35	registrado	registrar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	31	acl	_	_
+35	registrado	registrar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	31	acl:relcl	_	_
 36	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 37	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	38	amod	_	_
 38	volume	volume	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	35	nsubj:pass	_	_
@@ -96,9 +96,9 @@
 3	movimentaram	movimentar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 4	cerca	cerca	ADV	ADV|@>N	_	6	advmod	_	MWE=cerca_de
 5	de	de	ADP	PRP|@A<	_	4	obl	_	_
-6	US$	US$	SYM	_	Gender=Masc|Number=Plur	3	obj	_	_
-7	2,5	2,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	nummod	_	ChangedBy=Issue168
-8	bilhões	bilhão	NOUN	<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	6	nmod:npmod	_	_
+6	US$	US$	SYM	_	_	3	obj	_	_
+7	2,5	2,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168|MWE=2,5_bilhões
+8	bilhões	bilhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	7	flat	_	_
 9	em	em	ADP	PRP|@<ADVL	_	10	case	_	_
 10	90	90	NUM	<card>|NUM|M|S|@P<	NumType=Card	3	obl	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_

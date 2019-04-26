@@ -2,15 +2,15 @@
 # source = CETEMPúblico n=239 sec=nd sem=97b
 # sent_id = CP239-1
 # id = 1269
-1	de	de	ADP	PRP|@ADVL	_	2	case	_	MWE=de_novo
-2	novo	novo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	0	root	_	_
+1	de	de	ADP	PRP|@ADVL	_	4	advmod	_	MWE=de_novo
+2	novo	novo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	polémica	polémica	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	2	nsubj	_	_
+4	polémica	polémica	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	0	root	_	_
 5-6	à	_	_	_	_	_	_	_	_
 5	a	a	ADP	<sam->|PRP|@<SA	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	7	det	_	_
-7	ribalta	ribalta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-8	.	.	PUNCT	PU|@PU	_	2	punct	_	_
+7	ribalta	ribalta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Um investimento de 27 milhões de contos (mais seis milhões para aquisição de uma colecção própria) suportado pelas arcas bascas apesar da existência de 47 «partenaires» comerciais, é sinónimo do interesse que o governo de Euskadi, do Partido Nacionalista Basco (PNV), atribui ao evento.
 # source = CETEMPúblico n=239 sec=nd sem=97b
@@ -19,17 +19,17 @@
 # d2d = cc(milhões,mais) -> cc(milhões,mais)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	investimento	investimento	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	36	nsubj	_	_
-3	de	de	ADP	<first-cjt>|PRP|@N<ARG	_	5	case	_	_
-4	27	27	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
-5	milhões	milhão	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
+3	de	de	ADP	<first-cjt>|PRP|@N<ARG	_	4	case	_	_
+4	27	27	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nummod	_	ChangedBy=Issue168|MWE=27_milhões
+5	milhões	milhão	NUM	<first-cjt>|<np-def>|N|M|P|@P<	NumType=Card	4	flat	_	_
 6	de	de	ADP	PRP|@N<ARG	_	7	case	_	_
-7	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
+7	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
 8	(	(	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
-9	mais	mais	ADV	<co-postnom>|<kc>|ADV|@CO	_	11	cc	_	d2d:#106
-10	seis	seis	NUM	<card>|NUM|M|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168
-11	milhões	milhão	NOUN	<cjt>|<np-def>|N|M|P|@N<	Gender=Masc|Number=Plur	5	conj	_	_
+9	mais	mais	ADV	<co-postnom>|<kc>|ADV|@CO	_	10	cc	_	d2d:#106
+10	seis	seis	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nummod	_	ChangedBy=Issue168|MWE=seis_milhões
+11	milhões	milhão	NUM	<cjt>|<np-def>|N|M|P|@N<	NumType=Card	10	flat	_	_
 12	para	para	ADP	PRP|@N<	_	13	case	_	_
-13	aquisição	aquisição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
+13	aquisição	aquisição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
 14	de	de	ADP	PRP|@N<ARG	_	16	case	_	_
 15	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	colecção	colecção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
@@ -68,7 +68,7 @@
 46-47	do	_	_	_	_	_	_	_	_
 46	de	de	ADP	<sam->|PRP|@N<PRED	_	48	case	_	_
 47	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
-48	Partido	Partido	PROPN	_	Gender=Masc|Number=Sing	44	nmod	_	ChangedBy=Issue119|MWE=Partido_Nacionalista_Basco|MWEPOS=PROPN
+48	Partido	Partido	PROPN	_	Gender=Masc|Number=Sing	44	appos:parataxis	_	ChangedBy=Issue119|MWE=Partido_Nacionalista_Basco|MWEPOS=PROPN
 49	Nacionalista	Nacionalista	PROPN	_	Number=Sing	48	flat:name	_	ChangedBy=Issue119
 50	Basco	Basco	PROPN	_	Number=Sing	48	flat:name	_	ChangedBy=Issue119
 51	(	(	PUNCT	PU|@PU	_	52	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -79,7 +79,7 @@
 56-57	ao	_	_	_	_	_	_	_	_
 56	a	a	ADP	<sam->|PRP|@<PIV	_	58	case	_	_
 57	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	det	_	_
-58	evento	evento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	55	obl	_	ChangedBy=Issue165|SpaceAfter=No
+58	evento	evento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	55	iobj	_	ChangedBy=Issue165|SpaceAfter=No
 59	.	.	PUNCT	PU|@PU	_	36	punct	_	_
 
 # text = Implantado em terrenos antes ocupados por indústrias desarticuladas pela reconversão industrial dos anos 80 e cujo «ferro velho» permanecia como legado da crise económica da outrora laboriosa cidade de Bilbau, o Museu pretende ser um símbolo da regeneração basca: de uma sociedade que quer vencer as dificuldades presentes e, em vésperas do século XXI, dar novos argumentos -- os da esperança e da paz -- aos seus cidadãos.
@@ -181,7 +181,7 @@
 80	a	a	ADP	<sam->|PRP|@<PIV	_	83	case	_	_
 81	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	83	det	_	_
 82	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	83	det	_	_
-83	cidadãos	cidadão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	67	obl	_	ChangedBy=Issue165|SpaceAfter=No
+83	cidadãos	cidadão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	67	iobj	_	ChangedBy=Issue165|SpaceAfter=No
 84	.	.	PUNCT	PU|@PU	_	40	punct	_	_
 
 # text = Por isso, atentos ao perder da sua influência, os etarras, através do até agora desconhecido «comando Katu», tentaram destruir o símbolo de um novo tempo, menos rural -- é nessas zonas e entre os deserdados das cidades que a Eta faz o seu recrutamento --, mais dinâmico e, sobretudo, aberto à influência exterior, algo que o nacionalismo admite com dificuldade.
@@ -238,13 +238,13 @@
 41	essas	esse	DET	<-sam>|<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	42	det	_	_
 42	zonas	zona	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	53	obl	_	ChangedBy=Issue137
 43	e	e	CCONJ	<co-advl>|KC|@CO	_	46	cc	_	d2d:#106
-44	entre	entre	ADP	<cjt>|PRP|@ADVL>	_	46	mark	_	_
+44	entre	entre	ADP	<cjt>|PRP|@ADVL>	_	46	case	_	_
 45	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	_	_
-46	deserdados	deserdar	NOUN	<mv>|<cjt>|<n>|V|PCP|M|P|@ICL-P<	Gender=Masc|Number=Plur|VerbForm=Part	42	conj	_	_
+46	deserdados	deserdado	NOUN	<mv>|<cjt>|<n>|V|PCP|M|P|@ICL-P<	Gender=Masc|Number=Plur	42	conj	_	_
 47-48	das	_	_	_	_	_	_	_	_
 47	de	de	ADP	<sam->|PRP|@N<	_	49	case	_	_
 48	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	49	det	_	_
-49	cidades	cidade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	46	obl	_	_
+49	cidades	cidade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	46	nmod	_	_
 50	que	que	SCONJ	KS|@ADVL>	_	53	advmod	_	_
 51	a	o	DET	ART|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
 52	Eta	Eta	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	53	nsubj	_	_
@@ -264,7 +264,7 @@
 66-67	à	_	_	_	_	_	_	_	_
 66	a	a	ADP	<sam->|PRP|@<PIV	_	68	case	_	_
 67	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	68	det	_	_
-68	influência	influência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	65	obl	_	_
+68	influência	influência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	65	obj	_	_
 69	exterior	exterior	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	68	amod	_	ChangedBy=Issue165|SpaceAfter=No
 70	,	,	PUNCT	PU|@PU	_	65	punct	_	_
 71	algo	algo	PRON	INDP|M|S|@S<	Gender=Masc|Number=Sing|PronType=Ind	65	appos	_	_

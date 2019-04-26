@@ -8,7 +8,7 @@
 4	agora	agora	ADV	<kc>|ADV|@ADVL>	_	5	advmod	_	_
 5	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	ser	ser	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	7	cop	_	ChangedBy=Issue167
-7	candidata	candidata	NOUN	<np-idf>|N|F|S|@<sC	Gender=Fem|Number=Sing	5	dep	_	_
+7	candidata	candidata	NOUN	<np-idf>|N|F|S|@<sC	Gender=Fem|Number=Sing	5	xcomp	_	_
 
 # text = «Adoraria ser candidata.
 # source = CETENFolha n=987 cad=Caderno Especial sec=nd sem=94a
@@ -17,7 +17,7 @@
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Adoraria	adorar	VERB	<mv>|V|COND|1S|@FS-STA	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
 3	ser	ser	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	4	cop	_	ChangedBy=Issue167
-4	candidata	candidata	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	2	dep	_	ChangedBy=Issue165|SpaceAfter=No
+4	candidata	candidata	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	2	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
 5	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Tenho certeza de que se pudesse concorrer a algum cargo, me elegeria.
@@ -26,14 +26,14 @@
 # id = 4172
 1	Tenho	ter	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	certeza	certeza	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
-3	de	de	ADP	PRP|@N<ARG	_	7	mark	_	_
+3	de	de	ADP	PRP|@N<ARG	_	13	mark	_	_
 4	que	que	SCONJ	KS|@SUB	_	13	mark	_	_
 5	se	se	SCONJ	KS|@SUB	_	7	mark	_	_
 6	pudesse	poder	AUX	<aux>|V|IMPF|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux	_	_
 7	concorrer	concorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	advcl	_	_
 8	a	a	ADP	PRP|@<PIV	_	10	case	_	_
 9	algum	algum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	10	det	_	_
-10	cargo	cargo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue165|SpaceAfter=No
+10	cargo	cargo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obj	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 12	me	eu	PRON	<refl>|PERS|F|1S|ACC|@ACC>	Case=Acc|Gender=Fem|Number=Sing|Person=1|PronType=Prs	13	obj	_	_
 13	elegeria	eleger	VERB	<mv>|V|COND|3S|@FS-P<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
@@ -54,7 +54,7 @@
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	Almeida	Almeida	PROPN	PROP|@P<	Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-12	73	73	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	7	appos	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+12	73	73	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	7	appos:parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	mãe	mãe	NOUN	<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	7	appos	_	_
@@ -72,7 +72,7 @@
 25	Francisco	Francisco	PROPN	_	Gender=Masc|Number=Sing	18	appos	_	ChangedBy=Issue119|MWE=Francisco_Rossi|MWEPOS=PROPN
 26	Rossi	Rossi	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
 27	(	(	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
-28	PDT	PDT	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	18	appos	_	ChangedBy=Issue165|SpaceAfter=No
+28	PDT	PDT	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	18	appos:parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 29	)	)	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 30	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
@@ -96,7 +96,7 @@
 2	Depois	depois	ADV	ADV|@ADVL>	_	3	advmod	_	_
 3	tentaria	tentar	VERB	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
 4	ser	ser	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	5	cop	_	ChangedBy=Issue167
-5	deputada	deputada	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	3	dep	_	_
+5	deputada	deputada	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	3	xcomp	_	_
 6	estadual	estadual	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
 7	.	.	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 8	»	»	PUNCT	PU|@PU	_	3	punct	_	_

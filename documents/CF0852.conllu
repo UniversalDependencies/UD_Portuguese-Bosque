@@ -52,7 +52,7 @@
 # d2d = cc(ter,e) -> cc(confundi,e)  #106
 1	Peixe	peixe	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	passou	passar	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux	_	_
-3	a	a	ADP	PRP|@PRT-AUX<	_	4	obl	_	_
+3	a	a	ADP	PRP|@PRT-AUX<	_	4	aux	_	_
 4	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 5	gosto	gosto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
 6	de	de	ADP	PRP|@N<ARG	_	7	case	_	_
@@ -60,7 +60,7 @@
 8	para	para	ADP	PRP|@<ADVL	_	9	case	_	_
 9	mim	eu	PRON	PERS|M|1S|PIV|@P<	Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	obl	_	_
 10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	21	cc	_	d2d:#106
-11	uma	um	DET	<card>|NUM|F|S|@>N	NumType=Card	12	nummod	_	ChangedBy=Issue168
+11	uma	um	DET	<card>|NUM|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	ChangedBy=Issue168
 12	noite	noite	NOUN	<np-def>|N|F|S|@ADVL>	Gender=Fem|Number=Sing	21	obl	_	_
 13-14	destas	_	_	_	_	_	_	_	SpaceAfter=No
 13	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
@@ -76,8 +76,8 @@
 22	salsicha	salsicha	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	21	obj	_	_
 23	caseira	caseiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
 24	com	com	ADP	PRP|@<PIV	_	25	case	_	_
-25	frango	frango	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	21	obl	_	_
-26	kebab	kebab	X	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	25	nmod:npmod	_	ChangedBy=Issue165|SpaceAfter=No
+25	frango	frango	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	21	iobj	_	_
+26	kebab	kebab	X	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	25	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Chocante.
@@ -103,7 +103,7 @@
 3	deparei	deparar	VERB	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 4	com	com	ADP	PRP|@<PIV	_	6	case	_	_
 5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	estudo	estudo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	_
+6	estudo	estudo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	iobj	_	_
 7	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
 8	afirma	afirmar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_
 9	que	que	SCONJ	KS|@SUB	_	13	mark	_	_
@@ -150,9 +150,9 @@
 20	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
 21	homens	homem	NOUN	<first-cjt>|<np-def>|N|M|P|@KOMP<	Gender=Masc|Number=Plur	16	obl	_	_
 22	(	(	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
-23	pare	parar	VERB	<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux	_	_
-24	de	de	ADP	PRP|@PRT-AUX<	_	25	obl	_	_
-25	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	dep	_	_
+23	pare	parar	VERB	<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+24	de	de	ADP	PRP|@PRT-AUX<	_	25	mark	_	_
+25	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	xcomp	_	_
 26	essas	esse	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	27	det	_	_
 27	risadinhas	risadinha	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	25	obj	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	25	punct	_	_

@@ -8,7 +8,7 @@
 3-4	à	_	_	_	_	_	_	_	_
 3	a	a	ADP	<sam->|PRP|@<PIV	_	5	case	_	_
 4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	causa	causa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	_
+5	causa	causa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obj	_	_
 6	como	como	ADP	<com>|PRP|@<ADVL	_	8	case	_	_
 7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	náufraga	náufrago	NOUN	<n>|<np-idf>|ADJ|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -46,7 +46,7 @@
 7-8	à	_	_	_	_	_	_	_	_
 7	a	a	ADP	<sam->|PRP|@<PIV	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	comunidade	comunidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
+9	comunidade	comunidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obj	_	_
 10	enquanto	enquanto	ADP	<first-cjt>|<rel>|PRP|@<PRED	PronType=Rel	12	case	_	_
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 12	Trümerfrau	Trümerfrau	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -149,8 +149,8 @@
 15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 16	frente	frente	ADV	ADV|@<ADVL	_	12	advmod	_	MWE=frente_a
 17	a	a	ADP	PRP|@A<	_	20	case	_	_
-18	100	100	NUM	<card>|NUM|F|P|@>A	NumType=Card	19	dep	_	ChangedBy=Issue168
-19	mil	mil	NUM	<card>|NUM|F|P|@>N	NumType=Card	20	nummod	_	ChangedBy=Issue168
+18	100	100	NUM	<card>|NUM|F|P|@>A	NumType=Card	20	nummod	_	ChangedBy=Issue168|MWE=100_mil
+19	mil	mil	NUM	<card>|NUM|F|P|@>N	NumType=Card	18	flat	_	ChangedBy=Issue168
 20	pessoas	pessoa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	16	obl	_	_
 21-22	no	_	_	_	_	_	_	_	_
 21	em	em	ADP	<sam->|PRP|@<ADVL	_	24	case	_	_
@@ -195,7 +195,7 @@
 15	discurso	discurso	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 16	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	19	obj	_	_
 17	começa	começar	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
-18	a	a	ADP	PRP|@PRT-AUX<	_	19	obl	_	_
+18	a	a	ADP	PRP|@PRT-AUX<	_	19	aux	_	_
 19	ler	ler	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	acl:relcl	_	_
 20-21	à	_	_	_	_	_	_	_	_
 20	a	a	ADP	<sam->|PRP|@<ADVL	_	23	case	_	_
@@ -209,7 +209,7 @@
 # sent_id = CP894-7
 # id = 4592
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Querido	querer	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	_
+2	Querido	querido	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	3	amod	_	_
 3	camarada	camarada	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 4	Erich	Erich	PROPN	_	Gender=Masc|Number=Sing	3	appos	_	ChangedBy=Issue119|MWE=Erich_Honecker|MWEPOS=PROPN
 5	Honecker	Honecker	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
@@ -253,7 +253,7 @@
 1	Eu	eu	PRON	PERS|F|1S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
 2	só	só	ADV	ADV|@ADVL>	_	5	advmod	_	_
 3	tive	ter	AUX	<aux>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	5	aux	_	_
-4	de	de	ADP	PRP|@PRT-AUX<	_	5	obl	_	_
+4	de	de	ADP	PRP|@PRT-AUX<	_	5	aux	_	_
 5	ler	ler	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 6	»	»	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	5	punct	_	_
