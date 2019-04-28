@@ -2,10 +2,6 @@
 # source = CETENFolha n=80 cad=Dinheiro sec=eco sem=94a &E
 # sent_id = CF80-1
 # id = 300
-# d2d = punct(artifício,,) -> punct(ambiente,,)  #106
-# d2d = cc(riqueza,ou) -> cc(poder,ou)  #106
-# d2d = cc(artifício,mas) -> cc(ambiente,mas)  #106
-# d2d = cc(artifício,nem) -> cc(ambiente,nem)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	lição	lição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	parece	parecer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -18,7 +14,7 @@
 10	não	não	ADV	ADV|@ADVL>	Polarity=Neg	13	advmod	_	ChangedBy=Issue108
 11	será	ser	AUX	<mv>|V|FUT|3S|IND|@FS-<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	cop	_	ChangedBy=Issue167
 12	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	artifício	artifício	NOUN	<first-cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	4	parataxis	_	_
+13	artifício	artifício	NOUN	<first-cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	3	parataxis	_	_
 14	legal	legal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	13	amod	_	_
 15	nem	nem	CCONJ	<co-sc>|KC|@CO	_	41	cc	_	d2d:#106
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
@@ -36,7 +32,7 @@
 26	de	de	ADP	<sam->|PRP|@N<	_	28	case	_	_
 27	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_
 28	poupadores	poupador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	_
-29	ou	ou	CCONJ	<co-acc>|KC|@CO	_	31	cc	_	d2d:#106
+29	ou	ou	CCONJ	<co-acc>|KC|@CO	_	31	cc	_	_
 30	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	poder	poder	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	25	conj	_	_
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
@@ -45,8 +41,8 @@
 34	de	de	ADP	<sam->|PRP|@N<	_	36	case	_	_
 35	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_
 36	assalariados	assalariado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	33	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-37	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
-38	mas	mas	CCONJ	<co-sc>|KC|@CO	_	41	cc	_	d2d:#106
+37	,	,	PUNCT	PU|@PU	_	41	punct	_	_
+38	mas	mas	CCONJ	<co-sc>|KC|@CO	_	41	cc	_	_
 39	sim	sim	ADV	ADV|@>N	_	41	advmod	_	_
 40	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
 41	ambiente	ambiente	NOUN	<cjt>|<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	13	conj	_	_
@@ -67,14 +63,14 @@
 2	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	razões	razão	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	obl	_	ChangedBy=Issue137
 4	alinhadas	alinhar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	3	acl	_	ChangedBy=Issue165|SpaceAfter=No
-5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 6	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	8	nsubj	_	_
 7	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
 8	refletem	refletir	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_
 9	apenas	apenas	ADV	ADV|@>N	_	10	advmod	_	_
 10	conjeturas	conjetura	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	_
 11	teóricas	teórico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	10	amod	_	ChangedBy=Issue165|SpaceAfter=No
-12	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 13	mas	mas	CCONJ	<co-vfin>|KC|@CO	_	15	cc	_	_
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	experiência	experiência	NOUN	<np-def>|N|F|S|@FS-N<PRED	Gender=Fem|Number=Sing	10	conj	_	_
@@ -90,7 +86,7 @@
 23	últimas	último	ADJ	<NUM-ord>|ADJ|F|P|@>N	Gender=Fem|Number=Plur|NumType=Ord	25	amod	_	ChangedBy=Issue172
 24	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168
 25	décadas	década	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-26	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 27	se	se	PRON	PERS|M|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Masc|PronType=Prs	28	nsubj	_	_
 28	impõe	impor	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 29	dar	dar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	28	xcomp	_	_
