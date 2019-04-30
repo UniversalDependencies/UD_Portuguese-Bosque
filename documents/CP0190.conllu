@@ -119,13 +119,6 @@
 # source = CETEMPúblico n=190 sec=soc sem=94b
 # sent_id = CP190-5
 # id = 1021
-# d2d = cc(Quadro,e) -> cc(PDR,e)  #106
-# d2d = cc(QCA,e) -> cc(PDR,e)  #106
-# d2d = cc(PDR,e) -> cc(QCA,e)  #106
-# d2d = cc(vertente,e) -> cc(afirmou,e)  #106
-# d2d = punct(vertente,,) -> punct(afirmou,,)  #106
-# d2d = cc(macro-económicos,e) -> cc(macro-sociais,e)  #106
-# d2d = cc(acompanhamento,e) -> cc(avaliação,e)  #106
 1-2	Parece-me	_	_	_	_	_	_	_	_
 1	Parece	parecer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	me	eu	PRON	<refl>|PERS|M/F|1S|DAT|@<DAT	Case=Dat|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	1	iobj	_	_
@@ -151,7 +144,7 @@
 20	a	a	ADP	<sam->|<cjt>|PRP|@<PIV	_	22	case	_	_
 21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	PDR	PDR	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	conj	_	ChangedBy=Issue165|SpaceAfter=No
-23	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 24-25	na	_	_	_	_	_	_	_	_
 24	em	em	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	26	case	_	_
 25	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	26	det	_	_
@@ -164,7 +157,7 @@
 32	concertação	concertação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	nmod	_	_
 33	social	social	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	32	amod	_	_
 34	e	e	CCONJ	<co-advl>|KC|@CO	_	45	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-35	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+35	,	,	PUNCT	PU|@PU	_	45	punct	_	_
 36	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@ADVL>	_	45	advmod	_	_
 37-38	do	_	_	_	_	_	_	_	_
 37	de	de	ADP	<sam->|PRP|@COM	_	36	case	_	MWE=do_que
@@ -177,12 +170,12 @@
 44	primeiro-ministro	primeiro-ministro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	45	nsubj	_	_
 45	afirmou	afirmar	VERB	<cjt>|<mv>|V|PS|3S|IND|@<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	conj	_	_
 46	aqui	aqui	ADV	ADV|@<ADVL	_	45	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-47	,	,	PUNCT	PU|@PU	_	45	punct	_	_
+47	,	,	PUNCT	PU|@PU	_	50	punct	_	_
 48-49	na	_	_	_	_	_	_	_	_
 48	em	em	ADP	<sam->|PRP|@A<	_	50	case	_	_
 49	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	50	det	_	_
 50	reunião	reunião	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	46	obl	_	ChangedBy=Issue165|SpaceAfter=No
-51	,	,	PUNCT	PU|@PU	_	45	punct	_	_
+51	,	,	PUNCT	PU|@PU	_	50	punct	_	_
 52	que	que	SCONJ	KS|@SUB	_	54	mark	_	_
 53	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	cop	_	ChangedBy=Issue167
 54	disposto	disposto	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	45	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
@@ -208,8 +201,8 @@
 72	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	73	det	_	_
 73	PDR	PDR	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	69	conj	_	ChangedBy=Issue165|SpaceAfter=No
 74	,	,	PUNCT	PU|@PU	_	60	punct	_	_
-75	visto	ver	PROPN	_	Gender=Masc|Number=Sing|VerbForm=Part	78	mark	_	ChangedBy=Issue119|MWE=Visto_que|MWEPOS=PROPN
-76	que	que	PROPN	_	_	75	flat:name	_	ChangedBy=Issue119
+75	visto	ver	PROPN	_	Gender=Masc|Number=Sing|VerbForm=Part	78	mark	_	MWEPOS=PROPN
+76	que	que	PROPN	_	_	75	fixed	_	_
 77	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	78	aux	_	_
 78	acontecer	acontecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	54	advcl	_	_
 79	que	que	SCONJ	KS|@SUB	_	86	mark	_	_
