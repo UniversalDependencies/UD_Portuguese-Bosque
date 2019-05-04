@@ -1,6 +1,6 @@
 # text = Como o PÚBLICO noticiou, a Unicre remeteu para a DGCP a fundamentação da nova taxa, onde se refere que os custos do serviço, por operação, é de 15850.
-# source = CETEMPúblico n=615 sec=eco sem=96a
 # sent_id = CP615-1
+# source = CETEMPúblico n=615 sec=eco sem=96a
 # id = 3207
 1	Como	como	ADP	<com>|PRP|@ADVL>	_	4	mark	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -41,8 +41,8 @@
 35	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Um valor bastante superior à soma da «taxa de cliente», de 100 escudos, com a nova taxa de 30 escudos.
-# source = CETEMPúblico n=615 sec=eco sem=96a
 # sent_id = CP615-2
+# source = CETEMPúblico n=615 sec=eco sem=96a
 # id = 3208
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	valor	valor	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
@@ -63,7 +63,7 @@
 15	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 16	de	de	ADP	PRP|@N<PRED	_	18	case	_	_
 17	100	100	NUM	<card>|NUM|M|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
-18	escudos	escudo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+18	escudos	escudo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 20	com	com	ADP	PRP|@N<PRED	_	23	case	_	_
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
@@ -75,8 +75,8 @@
 27	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Isto é, a Unicre sustenta que os 130 escudos a cobrar diminuem, mas não eliminam os prejuízos do serviço.
-# source = CETEMPúblico n=615 sec=eco sem=96a
 # sent_id = CP615-3
+# source = CETEMPúblico n=615 sec=eco sem=96a
 # id = 3209
 1	Isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	6	cc	_	MWE=isto_é|MWEPOS=CCONJ
 2	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
@@ -104,8 +104,8 @@
 23	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Pais Antunes, director-geral da Concorrência e Preços, não ficou «inteiramente convencido» com os argumentos avançados pela empresa gestora da rede Visa.
-# source = CETEMPúblico n=615 sec=eco sem=96a
 # sent_id = CP615-4
+# source = CETEMPúblico n=615 sec=eco sem=96a
 # id = 3210
 1	Pais	Pais	PROPN	prop|M|P	_	14	nsubj	_	MWEPOS=PROPN|MWE=pais_antunes
 2	Antunes	Antunes	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
@@ -139,8 +139,8 @@
 28	.	.	PUNCT	punc	_	14	punct	_	_
 
 # text = E por isso pediu a suspensão preventiva da taxa.
-# source = CETEMPúblico n=615 sec=eco sem=96a
 # sent_id = CP615-5
+# source = CETEMPúblico n=615 sec=eco sem=96a
 # id = 3211
 1	E	e	CCONJ	KC|@CO	_	4	cc	_	_
 2	por	por	ADP	PRP|@ADVL>	_	3	case	_	_
@@ -156,8 +156,8 @@
 11	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = São várias as dúvidas suscitadas à DGCP pelo processo da taxa.
-# source = CETEMPúblico n=615 sec=eco sem=96a
 # sent_id = CP615-6
+# source = CETEMPúblico n=615 sec=eco sem=96a
 # id = 3212
 1	São	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	várias	várias	PRON	<quant>|DET|F|P|@<SC	Gender=Fem|Number=Plur|PronType=Ind	0	root	_	_
@@ -179,11 +179,9 @@
 15	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Pais Antunes entende, antes de mais, que o modo como a Unicre quer taxar as gasolineiras é «discriminatório», na medida em que, em toda a rede Unicre, as «bombas» são as únicas sujeitas a um valor fixo, e não a uma percentagem sobre o valor das transacções.
-# source = CETEMPúblico n=615 sec=eco sem=96a
 # sent_id = CP615-7
+# source = CETEMPúblico n=615 sec=eco sem=96a
 # id = 3213
-# d2d = cc(valor,e) -> cc(percentagem,e)  #106
-# d2d = punct(valor,,) -> punct(percentagem,,)  #106
 1	Pais	Pais	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Pais_Antunes|MWEPOS=PROPN
 2	Antunes	Antunes	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	entende	entender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
@@ -248,8 +246,8 @@
 60	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Num sector como o dos combustíveis, em que as margens de comercialização são esmagadas e sujeitas a preços fixados administrativamente, uma taxa fixa poderá, na opinião de Pais Antunes, contribuir para que as companhias se encostem sistematicamente aos preços máximos.
-# source = CETEMPúblico n=615 sec=eco sem=96a
 # sent_id = CP615-8
+# source = CETEMPúblico n=615 sec=eco sem=96a
 # id = 3214
 1-2	Num	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -306,8 +304,8 @@
 49	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = Por outro lado, o director-geral destaca o facto de Portugal ser o único país que conhece em que os portadores de Visa estão obrigados a pagar uma taxa de 100 escudos.
-# source = CETEMPúblico n=615 sec=eco sem=96a
 # sent_id = CP615-9
+# source = CETEMPúblico n=615 sec=eco sem=96a
 # id = 3215
 1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	MWE=Por_outro_lado
 2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	_

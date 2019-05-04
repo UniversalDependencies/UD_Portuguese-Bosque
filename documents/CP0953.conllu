@@ -1,8 +1,7 @@
 # text = O deputado socialista Ferro Rodrigues mostrou-se descontente com as respostas do Governo, que considerou «vagas e evasivas».
-# source = CETEMPúblico n=953 sec=eco sem=92a
 # sent_id = CP953-1
+# source = CETEMPúblico n=953 sec=eco sem=92a
 # id = 4909
-# d2d = cc(vagas,e) -> cc(evasivas,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	deputado	deputado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3	socialista	socialista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -30,8 +29,8 @@
 23	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O deputado disse mesmo que o «o Governo está, deliberadamente, a querer desvalorizar politicamente um problema que é um escândalo financeiro gravíssimo que envolve muitos milhares de contos em fugas ao fisco».
-# source = CETEMPúblico n=953 sec=eco sem=92a &W
 # sent_id = CP953-2
+# source = CETEMPúblico n=953 sec=eco sem=92a &W
 # id = 4910
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	deputado	deputado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -46,7 +45,7 @@
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 12	deliberadamente	deliberadamente	ADV	ADV|@ADVL>	_	15	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-14	a	a	ADP	PRP|@PRT-AUX<	_	15	case	_	_
+14	a	a	PART	PRP|@PRT-AUX<	_	15	case	_	_
 15	querer	querer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	ccomp	_	_
 16	desvalorizar	desvalorizar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	15	xcomp	_	_
 17	politicamente	politicamente	ADV	ADV|@<ADVL	_	16	advmod	_	_
@@ -74,8 +73,8 @@
 38	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Tudo isto porque a resposta ao Grupo Parlamentar Socialista sobre esta matéria foi dada pelo subsecretário de Estado adjunto da secretária de Estado do Orçamento, Vasco Valdez.
-# source = CETEMPúblico n=953 sec=eco sem=92a
 # sent_id = CP953-3
+# source = CETEMPúblico n=953 sec=eco sem=92a
 # id = 4911
 1	Tudo	tudo	PRON	<quant>|INDP|M|S|@NPHR	Gender=Masc|Number=Sing|PronType=Ind	0	root	_	MWE=Tudo_isto
 2	isto	isto	PRON	<dem>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Dem	1	fixed	_	_
@@ -116,13 +115,9 @@
 33	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «Quando esperávamos a presença do ministro das Finanças, Braga de Macedo, surgiu não o ministro, nem a secretária de Estado adjunta e do Orçamento, mas sim um subsecretário de Estado adjunto da secretária de Estado adjunta do ministro adjunto do primeiro-ministro», referiu o deputado socialista.
-# source = CETEMPúblico n=953 sec=eco sem=92a
 # sent_id = CP953-4
+# source = CETEMPúblico n=953 sec=eco sem=92a
 # id = 4912
-# d2d = punct(ministro,,) -> punct(secretária,,)  #106
-# d2d = cc(ministro,mas) -> cc(subsecretário,mas)  #106
-# d2d = cc(ministro,nem) -> cc(secretária,nem)  #106
-# d2d = punct(ministro,,) -> punct(subsecretário,,)  #106
 1	«	«	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	3	advmod	_	_
 3	esperávamos	esperar	VERB	<mv>|V|IMPF|1P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	17	advcl	_	_
@@ -141,7 +136,7 @@
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	Macedo	Macedo	PROPN	PROP|@P<	Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-17	surgiu	surgir	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	55	parataxis	_	_
+17	surgiu	surgir	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	55	parataxis	_	_|deprel=ccomp:parataxis
 18	não	não	ADV	ADV|@>N	Polarity=Neg	20	advmod	_	ChangedBy=Issue108
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	ministro	ministro	NOUN	<first-cjt>|<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	17	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -190,11 +185,9 @@
 59	.	.	PUNCT	PU|@PU	_	55	punct	_	_
 
 # text = Para Ferro Rodrigues, não se trata de uma questão de competência, mas sim da forma como o Governo está a tratar este assunto.
-# source = CETEMPúblico n=953 sec=eco sem=92a
 # sent_id = CP953-5
+# source = CETEMPúblico n=953 sec=eco sem=92a
 # id = 4913
-# d2d = punct(questão,,) -> punct(forma,,)  #106
-# d2d = cc(questão,mas) -> cc(forma,mas)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Ferro	Ferro	PROPN	_	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue119|MWE=Ferro_Rodrigues|MWEPOS=PROPN
 3	Rodrigues	Rodrigues	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -218,17 +211,16 @@
 20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	Governo	Governo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	_
 22	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
-23	a	a	ADP	PRP|@PRT-AUX<	_	24	case	_	_
+23	a	a	PART	PRP|@PRT-AUX<	_	24	case	_	_
 24	tratar	tratar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	acl:relcl	_	_
 25	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	26	det	_	_
 26	assunto	assunto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	24	obj	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = «É que a presença de um ministro ou de um secretário de Estado também corresponde à maneira como o Governo valoriza uma questão política.»
-# source = CETEMPúblico n=953 sec=eco sem=92a
 # sent_id = CP953-6
+# source = CETEMPúblico n=953 sec=eco sem=92a
 # id = 4914
-# d2d = cc(ministro,ou) -> cc(secretário,ou)  #106
 1	«	«	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	É	é	ADP	PRP|@ADVL>	_	3	case	_	MWE=É_que
 3	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	_

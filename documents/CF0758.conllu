@@ -1,6 +1,6 @@
 # text = Todas receberam beijos de Itamar.
-# source = CETENFolha n=758 cad=Esporte sec=des sem=94a
 # sent_id = CF758-1
+# source = CETENFolha n=758 cad=Esporte sec=des sem=94a
 # id = 3182
 1	Todas	todo	PRON	<quant>|DET|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Tot	2	nsubj	_	_
 2	receberam	receber	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
@@ -10,8 +10,8 @@
 6	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Fu foi a mais calorosa.
-# source = CETENFolha n=758 cad=Esporte sec=des sem=94a
 # sent_id = CF758-2
+# source = CETENFolha n=758 cad=Esporte sec=des sem=94a
 # id = 3183
 1	Fu	Fu	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 2	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
@@ -21,11 +21,9 @@
 6	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Beijou, abraçou duas vezes e conversou por alguns minutos com o conterrâneo presidente.
-# source = CETENFolha n=758 cad=Esporte sec=des sem=94a
 # sent_id = CF758-3
+# source = CETENFolha n=758 cad=Esporte sec=des sem=94a
 # id = 3184
-# d2d = punct(Beijou,,) -> punct(abraçou,,)  #106
-# d2d = cc(Beijou,e) -> cc(conversou,e)  #106
 1	Beijou	beijar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	d2d:#106
 3	abraçou	abraçar	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	_	_
@@ -43,12 +41,12 @@
 15	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «Eu torci muito por você, viu?», disse Itamar a Fu.
-# source = CETENFolha n=758 cad=Esporte sec=des sem=94a
 # sent_id = CF758-4
+# source = CETENFolha n=758 cad=Esporte sec=des sem=94a
 # id = 3185
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Eu	eu	PRON	PERS|M|1S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
-3	torci	torcer	VERB	<mv>|V|PS|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	12	parataxis	_	_
+3	torci	torcer	VERB	<mv>|V|PS|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	12	parataxis	_	_|deprel=ccomp:parataxis
 4	muito	muito	ADV	<quant>|ADV|@<ADVL	_	3	advmod	_	_
 5	por	por	ADP	PRP|@<PIV	_	6	case	_	_
 6	você	você	PRON	PERS|F|3S|NOM/PIV|@P<	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	obj	_	ChangedBy=Issue165|SpaceAfter=No

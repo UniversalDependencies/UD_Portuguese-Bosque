@@ -1,9 +1,9 @@
 # text = Voltando a mostrar-se particularmente à vontade em condições de pouca aderência, o brasileiro Ayrton Senna (McLaren / Ford) conseguiu ontem o melhor tempo na primeira sessão de qualificação para o Grande Prémio da Europa que amanhã se disputa em Donington (Inglaterra).
-# source = CETEMPúblico n=826 sec=des sem=93a
 # sent_id = CP826-1
+# source = CETEMPúblico n=826 sec=des sem=93a
 # id = 4243
 1	Voltando	voltar	AUX	<aux>|V|GER|@ICL-PRED>	VerbForm=Ger	3	aux	_	_
-2	a	a	ADP	PRP|@PRT-AUX<	_	3	case	_	_
+2	a	a	PART	PRP|@PRT-AUX<	_	3	case	_	_
 3-4	mostrar-se	_	_	_	_	_	_	_	_
 3	mostrar	mostrar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	24	dep	_	_
 4	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl	_	ChangedBy=Issue135
@@ -23,7 +23,7 @@
 17	Ayrton	Ayrton	PROPN	_	Gender=Masc|Number=Sing	16	appos	_	MWE=ayrton_senna
 18	Senna	Senna	PROPN	_	Number=Sing	17	flat:name	_	_
 19	(	(	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
-20	McLaren	McLaren	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	17	nmod	_	_
+20	McLaren	McLaren	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	17	nmod	_	_|deprel=appos:parataxis
 21	/	/	PUNCT	PU|@PU	_	22	punct	_	_
 22	Ford	Ford	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	20	conj	_	SpaceAfter=No
 23	)	)	PUNCT	PU|@PU	_	20	punct	_	_
@@ -54,13 +54,13 @@
 46	em	em	ADP	PRP|@<ADVL	_	47	case	_	_
 47	Donington	Donington	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	45	obl	_	ChangedBy=Issue137
 48	(	(	PUNCT	PU|@PU	_	49	punct	_	ChangedBy=Issue165|SpaceAfter=No
-49	Inglaterra	Inglaterra	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	47	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+49	Inglaterra	Inglaterra	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	47	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 50	)	)	PUNCT	PU|@PU	_	49	punct	_	ChangedBy=Issue165|SpaceAfter=No
 51	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
 # text = No entanto, a luta pela «pole position» não está ainda terminada, com o francês Alain Prost (Williams / Renault) a prometer dar luta ao brasileiro, hoje, na derradeira sessão de qualificação.
-# source = CETEMPúblico n=826 sec=des sem=93a
 # sent_id = CP826-2
+# source = CETEMPúblico n=826 sec=des sem=93a
 # id = 4244
 1	No	no	ADP	PRP|@ADVL>	_	2	case	_	MWE=No_entanto
 2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -85,7 +85,7 @@
 20	Alain	Alain	PROPN	_	Gender=Masc|Number=Sing	19	appos	_	ChangedBy=Issue119|MWE=Alain_Prost|MWEPOS=PROPN
 21	Prost	Prost	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 22	(	(	PUNCT	PU|@PU	_	23	punct	_	ChangedBy=Issue165|SpaceAfter=No
-23	Williams	Williams	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	20	nmod	_	_
+23	Williams	Williams	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	20	nmod	_	_|deprel=appos:parataxis
 24	/	/	PUNCT	PU|@PU	_	25	punct	_	_
 25	Renault	Renault	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	23	conj	_	SpaceAfter=No
 26	)	)	PUNCT	PU|@PU	_	23	punct	_	_
@@ -110,8 +110,8 @@
 43	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Aquilo que os pilotos temiam confirmou-se, com um primeiro dia de treinos muito chuvoso, a dificultar as suas tentativas de qualificação.
-# source = CETEMPúblico n=826 sec=des sem=93a
 # sent_id = CP826-3
+# source = CETEMPúblico n=826 sec=des sem=93a
 # id = 4245
 1	Aquilo	aquilo	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	6	nsubj:pass	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	5	obj	_	_
@@ -141,13 +141,12 @@
 25	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Prost começou por ser o mais rápido mas resolveu recolher às «boxes», aguardando por um final de sessão com menos água.
-# source = CETEMPúblico n=826 sec=des sem=93a
 # sent_id = CP826-4
+# source = CETEMPúblico n=826 sec=des sem=93a
 # id = 4246
-# d2d = cc(rápido,mas) -> cc(resolveu,mas)  #106
 1	Prost	Prost	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 2	começou	começar	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
-3	por	por	ADP	PRP|@PRT-AUX<	_	7	case	_	_
+3	por	por	PART	PRP|@PRT-AUX<	_	7	case	_	_
 4	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	cop	_	ChangedBy=Issue167
 5	o	o	DET	<artd>|ART|M|S|@>A	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	dep	_	_
 6	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	7	advmod	_	_
@@ -174,8 +173,8 @@
 26	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Pouco depois, era a vez de Senna bater o seu tempo.
-# source = CETEMPúblico n=826 sec=des sem=93a
 # sent_id = CP826-5
+# source = CETEMPúblico n=826 sec=des sem=93a
 # id = 4247
 1	Pouco	pouco	ADV	<quant>|ADV|@>A	_	2	advmod	_	_
 2	depois	depois	ADV	ADV|@ADVL>	_	6	advmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -192,8 +191,8 @@
 13	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = «A chuva serve-nos perfeitamente porque ' esconde ' as diferenças de potência dos motores», regozijou-se, apesar de considerar as condições perigosas:
-# source = CETEMPúblico n=826 sec=des sem=93a
 # sent_id = CP826-6
+# source = CETEMPúblico n=826 sec=des sem=93a
 # id = 4248
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -229,8 +228,8 @@
 29	:	:	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = «Embora a pista de Donington tenha uma drenagem melhor que a de Interlagos, acho que correr aqui é mais perigoso».
-# source = CETEMPúblico n=826 sec=des sem=93a
 # sent_id = CP826-7
+# source = CETEMPúblico n=826 sec=des sem=93a
 # id = 4249
 1	«	«	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Embora	embora	SCONJ	KS|@SUB	_	7	mark	_	_

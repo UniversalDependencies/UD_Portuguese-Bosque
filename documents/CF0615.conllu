@@ -1,9 +1,7 @@
 # text = Segundo o secretário, US$ 43,5 milhões foram liberados pelo prefeito quatro meses atrás para ampliação ou reforma em dez hospitais e unidades de saúde.
-# source = CETENFolha n=615 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF615-1
+# source = CETENFolha n=615 cad=Cotidiano sec=soc sem=94b
 # id = 2591
-# d2d = cc(hospitais,e) -> cc(unidades,e)  #106
-# d2d = cc(ampliação,ou) -> cc(reforma,ou)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	secretário	secretário	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -34,12 +32,9 @@
 27	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Entre elas, estão as reformas e ampliações dos hospitais do Tatuapé (US$ 7,4 milhões), Vila Nova Cachoeirinha (US$ 17 milhões) e Tide Setubal (US$ 9,4 milhões).
-# source = CETENFolha n=615 cad=Cotidiano sec=soc sem=94b &L
 # sent_id = CF615-2
+# source = CETENFolha n=615 cad=Cotidiano sec=soc sem=94b &L
 # id = 2592
-# d2d = cc(reformas,e) -> cc(ampliações,e)  #106
-# d2d = cc(Tatuapé,e) -> cc(Tide,e)  #106
-# d2d = punct(Tatuapé,,) -> punct(Vila,,)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	2	case	_	_
 2	elas	elas	PRON	PERS|F|3P|NOM/PIV|@P<	Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -57,7 +52,7 @@
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	Tatuapé	Tatuapé	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 15	(	(	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
-16	US$	US$	SYM	_	_	14	nmod	_	_
+16	US$	US$	SYM	_	_	14	nmod	_	_|deprel=appos:parataxis
 17	7,4	7,4	NUM	<card>|NUM|M|P|@>N	NumType=Card	16	nummod	_	ChangedBy=Issue168|MWE=7,4_milhões
 18	milhões	milhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	17	flat	_	ChangedBy=Issue165|SpaceAfter=No
 19	)	)	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -66,7 +61,7 @@
 22	Nova	Nova	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	Cachoeirinha	Cachoeirinha	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 24	(	(	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
-25	US$	US$	SYM	_	_	21	nmod	_	_
+25	US$	US$	SYM	_	_	21	nmod	_	_|deprel=appos:parataxis
 26	17	17	NUM	<card>|NUM|M|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168|MWE=17_milhões
 27	milhões	milhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	26	flat	_	ChangedBy=Issue165|SpaceAfter=No
 28	)	)	PUNCT	PU|@PU	_	25	punct	_	_
@@ -74,17 +69,16 @@
 30	Tide	Tide	PROPN	_	Gender=Masc|Number=Sing	14	conj	_	ChangedBy=Issue119|MWE=Tide_Setubal|MWEPOS=PROPN
 31	Setubal	Setubal	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 32	(	(	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
-33	US$	US$	SYM	_	_	30	nmod	_	_
+33	US$	US$	SYM	_	_	30	nmod	_	_|deprel=appos:parataxis
 34	9,4	9,4	NUM	<card>|NUM|M|P|@>N	NumType=Card	33	nummod	_	ChangedBy=Issue168|MWE=9,4_milhões
 35	milhões	milhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	34	flat	_	ChangedBy=Issue165|SpaceAfter=No
 36	)	)	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
 37	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Raia disse ainda que sua equipe levantou as necessidades de material de consumo da rede e que US$ 3 milhões estão sendo liberados agora para gastos do primeiro trimestre.
-# source = CETENFolha n=615 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF615-3
+# source = CETENFolha n=615 cad=Cotidiano sec=soc sem=94b
 # id = 2593
-# d2d = cc(levantou,e) -> cc(liberados,e)  #106
 1	Raia	raia	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	ainda	ainda	ADV	ADV|@<ADVL	_	2	advmod	_	_

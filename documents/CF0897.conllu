@@ -1,6 +1,6 @@
 # text = PF prende dois por cobrar ágio
-# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-1
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # id = 3775
 1	PF	PF	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	prende	prender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -10,8 +10,8 @@
 6	ágio	ágio	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
 
 # text = Da FT
-# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-2
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # id = 3776
 1-2	Da	_	_	_	_	_	_	_	_
 1	De	de	ADP	<first-cjt>|<sam->|PRP|@STA	_	3	case	_	_
@@ -19,8 +19,8 @@
 3	FT	FT	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
 
 # text = A PF (Polícia Federal) indiciou ontem duas pessoas por vender carro com ágio.
-# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-3
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # id = 3777
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	PF	PF	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -40,10 +40,9 @@
 16	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Foram indiciados o dono da revendedora 3.000 Automóveis (Leonardo Romanioli Filho) e o vendedor Luís Silveira, da concessionária Frame.
-# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-4
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # id = 3778
-# d2d = cc(dono,e) -> cc(vendedor,e)  #106
 1	Foram	ser	AUX	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	2	aux:pass	_	_
 2	indiciados	indiciar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -68,13 +67,13 @@
 21-22	da	_	_	_	_	_	_	_	_
 21	de	de	ADP	<cjt>|<sam->|PRP|@N<PRED	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	concessionária	concessionário	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
+23	concessionária	concessionário	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_|deprel=appos:parataxis
 24	Frame	Frame	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	23	appos	_	ChangedBy=Issue165|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Os dois foram presos quando o taxista José Fioravanti, 61, foi entregar US$ 1.000 a Romanioli como ágio da compra de um Santana Quantum.
-# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-5
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # id = 3779
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	dois	dois	NUM	<card>|<np-def>|NUM|M|P|@SUBJ>	NumType=Card	4	nsubj:pass	_	ChangedBy=Issue168
@@ -86,7 +85,7 @@
 8	José	José	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	ChangedBy=Issue119|MWE=José_Fioravanti|MWEPOS=PROPN
 9	Fioravanti	Fioravanti	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-11	61	61	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	7	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+11	61	61	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	7	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No|deprel=appos:parataxis
 12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 13	foi	ir	AUX	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	aux	_	_
 14	entregar	entregar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	advcl	_	_
@@ -107,8 +106,8 @@
 28	.	.	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 
 # text = Ele estava acompanhados de três agentes da PF.
-# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-6
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # id = 3780
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 2	estava	estar	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
@@ -123,8 +122,8 @@
 10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Um deles era seu filho, Sérgio Fioravanti.
-# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF897-7
+# source = CETENFolha n=897 cad=Dinheiro sec=eco sem=94a
 # id = 3781
 1	Um	um	NUM	<card>|NUM|M|S|@SUBJ>	NumType=Card	6	nsubj	_	ChangedBy=Issue168
 2-3	deles	_	_	_	_	_	_	_	_

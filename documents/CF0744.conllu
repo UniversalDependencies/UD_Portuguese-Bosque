@@ -1,8 +1,7 @@
 # text = Modelo sindical e negociação coletiva
-# source = CETENFolha n=744 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF744-1
+# source = CETENFolha n=744 cad=Dinheiro sec=eco sem=94a
 # id = 3119
-# d2d = cc(Modelo,e) -> cc(negociação,e)  #106
 1	Modelo	modelo	NOUN	<first-cjt>|<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	sindical	sindical	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 3	e	e	CCONJ	<co-utt>|KC|@CO	_	4	cc	_	d2d:#106
@@ -10,10 +9,9 @@
 5	coletiva	coletivo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	_
 
 # text = A notícia veiculada por esta Folha (em 10/10/1994) de que o presidente eleito Fernando Henrique Cardoso pretende propor o fim da unicidade sindical (sindicato único representando a mesma categoria e na mesma base territorial, conforme está previsto no artigo 8º, II da Constituição Federal de 1988) juntamente com o contrato coletivo de trabalho, demonstra sua coerência com a modernização das relações sociais.
-# source = CETENFolha n=744 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF744-3
+# source = CETENFolha n=744 cad=Dinheiro sec=eco sem=94a
 # id = 3120
-# d2d = cc(categoria,e) -> cc(base,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	notícia	notícia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	65	nsubj	_	_
 3	veiculada	veicular	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	_	_
@@ -96,8 +94,8 @@
 75	.	.	PUNCT	PU|@PU	_	65	punct	_	_
 
 # text = Com efeito, os estudiosos da matéria afirmam que a negociação coletiva de trabalho está diretamente relacionada com o modelo de organização sindical (cf. Amauri Mascaro Nascimento, em «Direito Sindical», editora Saraiva, 1989, pág. 313).
-# source = CETENFolha n=744 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF744-4
+# source = CETENFolha n=744 cad=Dinheiro sec=eco sem=94a
 # id = 3121
 1	Com	com	ADP	PRP|@ADVL>	_	2	case	_	MWE=Com_efeito
 2	efeito	efeito	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -125,7 +123,7 @@
 23	organização	organização	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
 24	sindical	sindical	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
 25	(	(	PUNCT	PU|@PU	_	26	punct	_	ChangedBy=Issue165|SpaceAfter=No
-26	cf.	cf.	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	21	nmod	_	_
+26	cf.	cf.	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	21	nmod	_	_|deprel=appos:parataxis
 27	Amauri	Amauri	PROPN	_	Gender=Masc|Number=Sing	26	appos	_	ChangedBy=Issue119|MWE=Amauri_Mascaro_Nascimento|MWEPOS=PROPN
 28	Mascaro	Mascaro	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
 29	Nascimento	Nascimento	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -139,7 +137,7 @@
 37	editora	editora	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	18	appos	_	_
 38	Saraiva	Saraiva	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	37	appos	_	ChangedBy=Issue165|SpaceAfter=No
 39	,	,	PUNCT	PU|@PU	_	37	punct	_	_
-40	1989	1989	NUM	<year>|<card>|<date>|NUM|M|P|@N<PRED	NumType=Card	37	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+40	1989	1989	NUM	<year>|<card>|<date>|NUM|M|P|@N<PRED	NumType=Card	37	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No|deprel=appos:parataxis
 41	,	,	PUNCT	PU|@PU	_	42	punct	_	_
 42	pág.	pág.	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	37	appos	_	_
 43	313	313	NUM	<card>|NUM|F|P|@N<	NumType=Card	42	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No

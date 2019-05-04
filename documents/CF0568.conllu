@@ -1,16 +1,13 @@
 # text = As paulistas Mancha Verde (Palmeiras) e Gaviões da Fiel (Corinthians) aceitaram, mas as cariocas se recusaram.
-# source = CETENFolha n=568 cad=Esporte sec=des sem=94a
 # sent_id = CF568-1
+# source = CETENFolha n=568 cad=Esporte sec=des sem=94a
 # id = 2371
-# d2d = punct(aceitaram,,) -> punct(recusaram,,)  #106
-# d2d = cc(Mancha,e) -> cc(Gaviões,e)  #106
-# d2d = cc(aceitaram,mas) -> cc(recusaram,mas)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	paulistas	paulista	NOUN	<n>|<np-def>|ADJ|F|P|@SUBJ>	Gender=Fem|Number=Plur	16	nsubj	_	_
 3	Mancha	Mancha	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=Mancha_Verde|MWEPOS=PROPN
 4	Verde	Verde	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 5	(	(	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
-6	Palmeiras	Palmeiras	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+6	Palmeiras	Palmeiras	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 7	)	)	PUNCT	PU|@PU	_	6	punct	_	_
 8	e	e	CCONJ	<co-postnom>|KC|@CO	_	9	cc	_	d2d:#106
 9	Gaviões	Gaviões	PROPN	<cjt>|PROP|F|S|@N<	Gender=Fem|Number=Sing	3	conj	_	MWE=Gaviões_da_Fiel
@@ -19,7 +16,7 @@
 11	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	Fiel	Fiel	PROPN	PROP|@P<	Number=Sing	9	nmod	_	_
 13	(	(	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
-14	Corinthians	Corinthians	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+14	Corinthians	Corinthians	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 15	)	)	PUNCT	PU|@PU	_	14	punct	_	_
 16	aceitaram	aceitar	VERB	<first-cjt>|<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
@@ -31,8 +28,8 @@
 23	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Seria irônico ver os chefes das «organizadas» tendo ao fundo a seguinte pregação:
-# source = CETENFolha n=568 cad=Esporte sec=des sem=94a
 # sent_id = CF568-2
+# source = CETENFolha n=568 cad=Esporte sec=des sem=94a
 # id = 2372
 1	Seria	ser	AUX	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	irônico	irônico	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
@@ -56,12 +53,9 @@
 18	:	:	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «Chega de violência/ Quero ver é gol de placa/ Todo mundo se dá mal/ Por meia dúzia de babacas.»
-# source = CETENFolha n=568 cad=Esporte sec=des sem=94a
 # sent_id = CF568-3
+# source = CETENFolha n=568 cad=Esporte sec=des sem=94a
 # id = 2373
-# d2d = punct(Chega,/) -> punct(meia,/)  #106
-# d2d = punct(Chega,/) -> punct(dá,/)  #106
-# d2d = punct(Chega,/) -> punct(Quero,/)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Chega	chegar	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	de	de	ADP	<first-cjt>|PRP|@<PIV	_	4	case	_	_

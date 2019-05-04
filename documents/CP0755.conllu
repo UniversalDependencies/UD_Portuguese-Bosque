@@ -1,6 +1,6 @@
 # text = Os portugueses estão em forma no surf.
-# source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-1
+# source = CETEMPúblico n=755 sec=des sem=94b
 # id = 3879
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	portugueses	português	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
@@ -14,8 +14,8 @@
 9	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Pelo menos os jovens que estão a participar no Campeonato Europeu de juniores, a decorrer até domingo em Newquay, Inglaterra.
-# source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-2
+# source = CETEMPúblico n=755 sec=des sem=94b
 # id = 3880
 1	Pelo	pelo	ADP	PRP|@>N	_	2	case	_	MWE=Pelo_menos
 2	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
@@ -23,7 +23,7 @@
 4	jovens	jovem	NOUN	<n>|<np-def>|ADJ|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 5	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	8	nsubj	_	_
 6	estão	estar	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
-7	a	a	ADP	PRP|@PRT-AUX<	_	8	case	_	_
+7	a	a	PART	PRP|@PRT-AUX<	_	8	case	_	_
 8	participar	participar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	acl:relcl	_	_
 9-10	no	_	_	_	_	_	_	_	_
 9	em	em	ADP	<sam->|PRP|@<PIV	_	11	case	_	_
@@ -44,10 +44,9 @@
 24	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Depois de terem ficado em terceiro por equipas no primeiro campeonato desta prova, que está a decorrer sob condições atmosféricas pouco favoráveis (chuva e vento «on-shore»), os portugueses conseguiram já bons resultados individuais --
-# source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-3
+# source = CETEMPúblico n=755 sec=des sem=94b
 # id = 3881
-# d2d = cc(chuva,e) -> cc(vento,e)  #106
 1	Depois	depois	ADV	ADV|@ADVL>	_	37	advmod	_	_
 2	de	de	ADP	PRP|@A<ARG	_	4	mark	_	_
 3	terem	ter	AUX	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	4	aux	_	_
@@ -68,7 +67,7 @@
 16	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 17	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	20	nsubj	_	_
 18	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
-19	a	a	ADP	PRP|@PRT-AUX<	_	20	case	_	_
+19	a	a	PART	PRP|@PRT-AUX<	_	20	case	_	_
 20	decorrer	decorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	acl:relcl	_	_
 21	sob	sob	ADP	PRP|@<ADVL	_	22	case	_	_
 22	condições	condição	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	20	obl	_	ChangedBy=Issue137
@@ -94,10 +93,9 @@
 42	--	--	PUNCT	PU|@PU	_	37	punct	_	_
 
 # text = em bodyboard, Hugo Carvalho e Filipe Ochoa classificaram-se para a final de sub-18;
-# source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-4
+# source = CETEMPúblico n=755 sec=des sem=94b
 # id = 3882
-# d2d = cc(Hugo,e) -> cc(Filipe,e)  #106
 1	em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	bodyboard	bodyboard	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -117,11 +115,9 @@
 16	;	;	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = no surf, João Macedo, André Pedroso (em sub-18), Ruben González e Pedro Monteiro (em sub-16) estão já nas meias-finais.
-# source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-5
+# source = CETEMPúblico n=755 sec=des sem=94b
 # id = 3883
-# d2d = cc(Ruben,e) -> cc(Pedro,e)  #106
-# d2d = punct(João,,) -> punct(Ruben,,)  #106
 1-2	no	_	_	_	_	_	_	_	_
 1	em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -155,8 +151,8 @@
 29	.	.	PUNCT	PU|@PU	_	28	punct	_	_
 
 # text = NBA sem problemas laborais
-# source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-6
+# source = CETEMPúblico n=755 sec=des sem=94b
 # id = 3884
 1	NBA	NBA	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	sem	sem	ADP	PRP|@N<	_	3	case	_	_
@@ -164,11 +160,9 @@
 4	laborais	laboral	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	3	amod	_	_
 
 # text = Não haverá greve nem bloqueio à época da NBA, a Liga Norte-Americana de Basquetebol profissional, independentemente de ainda não existir acordo sobre o tecto salarial, decidiram os proprietários e jogadores.
-# source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-7
+# source = CETEMPúblico n=755 sec=des sem=94b
 # id = 3885
-# d2d = cc(proprietários,e) -> cc(jogadores,e)  #106
-# d2d = cc(greve,nem) -> cc(bloqueio,nem)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	haverá	haver	VERB	<mv>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	31	ccomp	_	_
 3	greve	greve	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
@@ -209,11 +203,9 @@
 36	.	.	PUNCT	PU|@PU	_	31	punct	_	_
 
 # text = Este anúncio vem sossegar aqueles que temiam que sucedesse no basquetebol o que já aconteceu no basebol e no hóquei no gelo -- a interrupção ou adiamento dos campeonatos.
-# source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-8
+# source = CETEMPúblico n=755 sec=des sem=94b
 # id = 3886
-# d2d = cc(basebol,e) -> cc(hóquei,e)  #106
-# d2d = cc(interrupção,ou) -> cc(adiamento,ou)  #106
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	anúncio	anúncio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	vem	vir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -256,8 +248,8 @@
 35	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Sendo assim, e uma vez que o acordo para o contrato colectivo de trabalho, cujas negociações se arrastam há meses, está previsto para breve, tudo indica que a NBA começará, como planeado, a 4 de Novembro, ou seja, na próxima sexta-feira.
-# source = CETEMPúblico n=755 sec=des sem=94b
 # sent_id = CP755-9
+# source = CETEMPúblico n=755 sec=des sem=94b
 # id = 3887
 1	Sendo	ser	VERB	<mv>|<first-cjt>|V|GER|@ICL-ADVL>	VerbForm=Ger	30	advmod	_	ChangedBy=Issue167|MWE=sendo_assim
 2	assim	assim	ADV	<kc>|ADV|@<SC	_	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No

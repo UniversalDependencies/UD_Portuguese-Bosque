@@ -1,10 +1,7 @@
 # text = «As pessoas que assistem a tais sessões saiem loucas, histéricas, falam alto, as crianças choram», observa a administração daquele condomínio.
-# source = CETEMPúblico n=206 sec=soc sem=94b &W
 # sent_id = CP206-1
+# source = CETEMPúblico n=206 sec=soc sem=94b &W
 # id = 1109
-# d2d = punct(saem,,) -> punct(choram,,)  #106
-# d2d = punct(saem,,) -> punct(falam,,)  #106
-# d2d = punct(loucas,,) -> punct(histéricas,,)  #106
 1	«	«	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	pessoas	pessoa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	9	nsubj	_	_
@@ -13,7 +10,7 @@
 6	a	a	ADP	PRP|@<PIV	_	8	case	_	_
 7	tais	tal	DET	<dem>|DET|F|P<|@>N	Gender=Fem|PronType=Dem	8	det	_	_
 8	sessões	sessão	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	obj	_	_
-9	saiem	sair	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	parataxis	_	_
+9	saiem	sair	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	parataxis	_	_|deprel=ccomp:parataxis
 10	loucas	louco	ADJ	<first-cjt>|ADJ|F|P|@<ADVL	Gender=Fem|Number=Plur	3	acl	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 12	histéricas	histérico	ADJ	<cjt>|ADJ|F|P|@<ADVL	Gender=Fem|Number=Plur	10	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -36,8 +33,8 @@
 28	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = «Todas estas práticas deveriam ter locais específicos.
-# source = CETEMPúblico n=206 sec=soc sem=94b
 # sent_id = CP206-2
+# source = CETEMPúblico n=206 sec=soc sem=94b
 # id = 1110
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	4	det	_	_
@@ -50,10 +47,9 @@
 9	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Segundo se julga, o cinema foi licenciado para exibição de filmes e não para culto», defende.
-# source = CETEMPúblico n=206 sec=soc sem=94b &E
 # sent_id = CP206-3
+# source = CETEMPúblico n=206 sec=soc sem=94b &E
 # id = 1111
-# d2d = cc(exibição,e) -> cc(culto,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	mark	_	_
 2	se	se	PRON	PERS|M|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Masc|PronType=Prs	3	nsubj	_	_
 3	julga	julgar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -61,7 +57,7 @@
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	cinema	cinema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj:pass	_	_
 7	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	_	_
-8	licenciado	licenciar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	19	parataxis	_	_
+8	licenciado	licenciar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	19	parataxis	_	_|deprel=ccomp:parataxis
 9	para	para	ADP	<first-cjt>|PRP|@<ADVL	_	10	case	_	_
 10	exibição	exibição	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	ChangedBy=Issue137
 11	de	de	ADP	PRP|@N<ARG	_	12	case	_	_
@@ -76,8 +72,8 @@
 20	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = A finalizar, o protesto solicita uma intervenção do presidente da Junta de Freguesia, «a fim de esclarecer esta situação ou, se possível, acabar com as sessões».
-# source = CETEMPúblico n=206 sec=soc sem=94b
 # sent_id = CP206-4
+# source = CETEMPúblico n=206 sec=soc sem=94b
 # id = 1112
 1	A	a	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	finalizar	finalizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	SpaceAfter=No
@@ -118,10 +114,9 @@
 35	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O autarca remeteu cópias do ofício à delegação de saúde responsável pela área de Alverca e à administração da Lusomundo, empresa proprietária da sala de cinema em causa.
-# source = CETEMPúblico n=206 sec=soc sem=94b
 # sent_id = CP206-5
+# source = CETEMPúblico n=206 sec=soc sem=94b
 # id = 1113
-# d2d = cc(delegação,e) -> cc(administração,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	autarca	autarca	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	remeteu	remeter	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_

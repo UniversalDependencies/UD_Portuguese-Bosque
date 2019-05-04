@@ -1,10 +1,7 @@
 # text = Para tanto é imprescindível priorizar algumas ações como a recuperação de unidades armazenadoras de cereais e das rodovias, além do incentivo à utilização das ferrovias.
-# source = CETENFolha n=64 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF64-1
+# source = CETENFolha n=64 cad=Agrofolha sec=agr sem=94b
 # id = 240
-# d2d = cc(unidades,e) -> cc(rodovias,e)  #106
-# d2d = cc(recuperação,além) -> cc(incentivo,além)  #106
-# d2d = punct(recuperação,,) -> punct(incentivo,,)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	tanto	tanto	PRON	<quant>|<KOMP>|<COMP>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	4	obl	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -14,7 +11,7 @@
 7	ações	ação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	_
 8	como	como	ADP	<com>|PRP|@N<PRED	_	10	case	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	recuperação	recuperação	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
+10	recuperação	recuperação	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_|deprel=appos:parataxis
 11	de	de	ADP	<first-cjt>|PRP|@N<ARG	_	12	case	_	_
 12	unidades	unidade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	_
 13	armazenadoras	armazenadora	ADJ	<np-idf>|N|F|P|@N<	Gender=Fem|Number=Plur	12	amod	_	_
@@ -42,8 +39,8 @@
 31	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Também é necessário alertar toda a sociedade para a importância de se reduzir as perdas de alimentos.
-# source = CETENFolha n=64 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF64-2
+# source = CETENFolha n=64 cad=Agrofolha sec=agr sem=94b
 # id = 241
 1	Também	também	ADV	ADV|@ADVL>	_	3	advmod	_	_
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
@@ -65,12 +62,9 @@
 18	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Aos horticultores é preciso oferecer informações de mercado seguras e atuais para a programação da produção e desenvolver novas alternativas para o acondicionamento e embalagem dos produtos.
-# source = CETENFolha n=64 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF64-3
+# source = CETENFolha n=64 cad=Agrofolha sec=agr sem=94b
 # id = 242
-# d2d = cc(seguras,e) -> cc(atuais,e)  #106
-# d2d = cc(oferecer,e) -> cc(desenvolver,e)  #106
-# d2d = cc(acondicionamento,e) -> cc(embalagem,e)  #106
 1-2	Aos	_	_	_	_	_	_	_	_
 1	A	a	ADP	<sam->|<first-cjt>|PRP|@STA	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_

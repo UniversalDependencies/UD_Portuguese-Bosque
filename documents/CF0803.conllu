@@ -1,15 +1,14 @@
 # text = Aposentado nu
-# source = CETENFolha n=803 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF803-1
+# source = CETENFolha n=803 cad=Cotidiano sec=soc sem=94a
 # id = 3373
 1	Aposentado	aposentado	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	nu	nu	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 
 # text = O trânsito nas avenidas Paulista e Brigadeiro Luís Antônio (zona central de São Paulo) parou no dia 9 de setembro de 86.
-# source = CETENFolha n=803 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF803-2
+# source = CETENFolha n=803 cad=Cotidiano sec=soc sem=94a
 # id = 3374
-# d2d = cc(Paulista,e) -> cc(Brigadeiro,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	trânsito	trânsito	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
 3-4	nas	_	_	_	_	_	_	_	_
@@ -22,7 +21,7 @@
 9	Luís	Luís	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10	Antônio	Antônio	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 11	(	(	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
-12	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	5	nmod	_	_
+12	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	5	nmod	_	_|deprel=appos:parataxis
 13	central	central	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	São	São	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
@@ -41,12 +40,9 @@
 27	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = O aposentado Eliseu Francisco de Lyra (na época com 44 anos), depois de discutir com o irmão, saiu do carro, subiu no capô, tirou as roupas e sapateou.
-# source = CETENFolha n=803 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF803-3
+# source = CETENFolha n=803 cad=Cotidiano sec=soc sem=94a
 # id = 3375
-# d2d = punct(saiu,,) -> punct(tirou,,)  #106
-# d2d = cc(saiu,e) -> cc(sapateou,e)  #106
-# d2d = punct(saiu,,) -> punct(subiu,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	aposentado	aposentado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj	_	_
 3	Eliseu	Eliseu	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Eliseu_Francisco|MWEPOS=PROPN

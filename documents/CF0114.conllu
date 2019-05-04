@@ -1,6 +1,6 @@
 # text = Eles se intitulavam filiais da MIT Dealing Management Inc., dos Estados Unidos.
-# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF114-1
+# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # id = 442
 1	Eles	eles	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
 2	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	expl	_	ChangedBy=Issue135
@@ -17,15 +17,14 @@
 12-13	dos	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@N<PRED	_	14	case	_	_
 13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
-14	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	MWE=Estados_Unidos
+14	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	MWE=Estados_Unidos|deprel=appos:parataxis
 15	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	14	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 16	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A empresa norte-americana informou à PF que não tem filiais ou representantes no Brasil.
-# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF114-2
+# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # id = 443
-# d2d = cc(filiais,ou) -> cc(representantes,ou)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	empresa	empresa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	norte-americana	norte-americana	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -47,8 +46,8 @@
 17	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = A MIT brasileira não aplicava o dinheiro.
-# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF114-3
+# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # id = 444
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	MIT	MIT	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
@@ -60,8 +59,8 @@
 8	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O golpe foi denunciado por funcionários da empresa.
-# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF114-4
+# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # id = 445
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	golpe	golpe	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
@@ -76,10 +75,9 @@
 10	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = A ação da PF começou às 16h30 de anteontem e só terminou ontem às 15h30.
-# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF114-5
+# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # id = 446
-# d2d = cc(começou,e) -> cc(terminou,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	ação	ação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -104,8 +102,8 @@
 19	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = A MIT operava no mercado desde junho passado.
-# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF114-6
+# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # id = 447
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	MIT	MIT	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
@@ -120,11 +118,9 @@
 10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A PF ainda não levantou os números exatos do golpe, mas acredita que pelo menos cem pessoas tenham perdido seu dinheiro.
-# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF114-7
+# source = CETENFolha n=114 cad=Cotidiano sec=soc sem=94a
 # id = 448
-# d2d = punct(levantou,,) -> punct(acredita,,)  #106
-# d2d = cc(levantou,mas) -> cc(acredita,mas)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	PF	PF	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	ainda	ainda	ADV	ADV|@>A	_	4	advmod	_	_

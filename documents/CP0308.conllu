@@ -1,6 +1,6 @@
 # text = Jean Alesi obteve ontem a «pole position» provisória para o Grande Prémio de Espanha, que se disputa amanhã no circuito da Catalunha (Barcelona).
-# source = CETEMPúblico n=308 sec=des sem=95a
 # sent_id = CP308-1
+# source = CETEMPúblico n=308 sec=des sem=95a
 # id = 1623
 1	Jean	Jean	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Jean_Alesi|MWEPOS=PROPN
 2	Alesi	Alesi	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -32,13 +32,13 @@
 26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	Catalunha	Catalunha	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
 28	(	(	PUNCT	PU|@PU	_	29	punct	_	ChangedBy=Issue165|SpaceAfter=No
-29	Barcelona	Barcelona	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+29	Barcelona	Barcelona	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 30	)	)	PUNCT	PU|@PU	_	29	punct	_	ChangedBy=Issue165|SpaceAfter=No
 31	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O piloto francês foi o mais rápido na primeira sessão de treinos de qualificação, superando por 35 centésimos de segundo o seu companheiro de equipa Gerhard Berger.
-# source = CETEMPúblico n=308 sec=des sem=95a
 # sent_id = CP308-2
+# source = CETEMPúblico n=308 sec=des sem=95a
 # id = 1624
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	piloto	piloto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -73,8 +73,8 @@
 30	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = A Ferrari conseguiu assim colocar os seus dois carros na primeira linha da grelha provisória, um resultado que motiva toda a equipa.
-# source = CETEMPúblico n=308 sec=des sem=95a
 # sent_id = CP308-3
+# source = CETEMPúblico n=308 sec=des sem=95a
 # id = 1625
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Ferrari	Ferrari	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -106,15 +106,9 @@
 26	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Depois do segundo e terceiro lugares no GP de San Marino, há duas semanas, e dos bons resultados conseguidos nos testes realizados nos dias seguintes, também no circuito de Ímola (Berger foi o mais rápido dos 16 pilotos que estiveram em pista, batendo Schumacher e Hill), a Ferrari mostra em Barcelona que a sua competitividade está a aumentar, reforçando a ideia de que se poderá bater em igualdade de circunstâncias com a Benetton e a Williams, as duas equipas motorizadas pela Renault.
-# source = CETEMPúblico n=308 sec=des sem=95a
 # sent_id = CP308-4
+# source = CETEMPúblico n=308 sec=des sem=95a
 # id = 1626
-# d2d = cc(Schumacher,e) -> cc(Hill,e)  #106
-# d2d = punct(lugares,,) -> punct(resultados,,)  #106
-# d2d = punct(lugares,,) -> punct(resultados,,)  #106
-# d2d = cc(Benetton,e) -> cc(Williams,e)  #106
-# d2d = cc(segundo,e) -> cc(terceiro,e)  #106
-# d2d = cc(lugares,e) -> cc(resultados,e)  #106
 1	Depois	depois	ADV	ADV|@ADVL>	_	63	advmod	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<first-cjt>|<sam->|PRP|@A<	_	7	case	_	_
@@ -192,7 +186,7 @@
 68	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	69	det	_	_
 69	competitividade	competitividade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	72	nsubj	_	_
 70	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	72	aux	_	_
-71	a	a	ADP	PRP|@PRT-AUX<	_	72	case	_	_
+71	a	a	PART	PRP|@PRT-AUX<	_	72	case	_	_
 72	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	63	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
 73	,	,	PUNCT	PU|@PU	_	74	punct	_	_
 74	reforçando	reforçar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	72	advcl	_	_
@@ -225,8 +219,8 @@
 100	.	.	PUNCT	PU|@PU	_	63	punct	_	_
 
 # text = Gerhard Berger tem-se mostrado um dos menos entusiasmados com os últimos resultados, uma posição reforçada ontem pelo próprio Jean Todt, director desportivo da «Scuderia»:
-# source = CETEMPúblico n=308 sec=des sem=95a
 # sent_id = CP308-5
+# source = CETEMPúblico n=308 sec=des sem=95a
 # id = 1627
 1	Gerhard	Gerhard	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Gerhard_Berger|MWEPOS=PROPN
 2	Berger	Berger	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -267,8 +261,8 @@
 33	:	:	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = «O Gerhard tem razão, ele tem os pés bem assentes no chão.
-# source = CETEMPúblico n=308 sec=des sem=95a
 # sent_id = CP308-6
+# source = CETEMPúblico n=308 sec=des sem=95a
 # id = 1628
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -289,10 +283,9 @@
 16	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = É preciso não esquecer que estes são os treinos de sexta-feira, não os de sábado.
-# source = CETEMPúblico n=308 sec=des sem=95a
 # sent_id = CP308-7
+# source = CETEMPúblico n=308 sec=des sem=95a
 # id = 1629
-# d2d = punct(treinos,,) -> punct(os,,)  #106
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	preciso	preciso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
@@ -312,15 +305,13 @@
 17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = A equipa está a mostrar progressos, mas ainda há muito para fazer.»
-# source = CETEMPúblico n=308 sec=des sem=95a
 # sent_id = CP308-8
+# source = CETEMPúblico n=308 sec=des sem=95a
 # id = 1630
-# d2d = punct(mostrar,,) -> punct(há,,)  #106
-# d2d = cc(mostrar,mas) -> cc(há,mas)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	equipa	equipa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	está	estar	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-4	a	a	ADP	PRP|@PRT-AUX<	_	5	case	_	_
+4	a	a	PART	PRP|@PRT-AUX<	_	5	case	_	_
 5	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 6	progressos	progresso	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106

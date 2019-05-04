@@ -1,6 +1,6 @@
 # text = O partido atua no movimento sindical através da «Corrente Sindical Classista», filiada à CUT.
-# source = CETENFolha n=550 cad=Brasil sec=pol sem=94b
 # sent_id = CF550-1
+# source = CETENFolha n=550 cad=Brasil sec=pol sem=94b
 # id = 2305
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	partido	partido	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -28,12 +28,9 @@
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Controlam ou são influentes em sindicatos importantes em São Paulo, como o dos metroviários, o da Sabesp e bancários.
-# source = CETENFolha n=550 cad=Brasil sec=pol sem=94b
 # sent_id = CF550-2
+# source = CETENFolha n=550 cad=Brasil sec=pol sem=94b
 # id = 2306
-# d2d = cc(Controlam,ou) -> cc(influentes,ou)  #106
-# d2d = cc(o,e) -> cc(bancários,e)  #106
-# d2d = punct(o,,) -> punct(o,,)  #106
 1	Controlam	controlar	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	ou	ou	CCONJ	<co-sta>|KC|@CO	_	4	cc	_	d2d:#106
 3	são	ser	AUX	<mv>|<cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -46,7 +43,7 @@
 10	Paulo	Paulo	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 12	como	como	ADP	<com>|PRP|@N<PRED	_	13	case	_	_
-13	o	o	PRON	<first-cjt>|<Eg>|<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	6	nmod	_	_
+13	o	o	PRON	<first-cjt>|<Eg>|<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	6	nmod	_	_|deprel=appos:parataxis
 14-15	dos	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
@@ -62,11 +59,9 @@
 24	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Os sindicatos dos metalúrgicos de Betim (MG), de Ribeirão Preto (SP) e da Bahia também são da tendência.
-# source = CETENFolha n=550 cad=Brasil sec=pol sem=94b
 # sent_id = CF550-3
+# source = CETENFolha n=550 cad=Brasil sec=pol sem=94b
 # id = 2307
-# d2d = cc(Betim,e) -> cc(Bahia,e)  #106
-# d2d = punct(Betim,,) -> punct(Ribeirão,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	sindicatos	sindicato	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	26	nsubj	_	_
 3-4	dos	_	_	_	_	_	_	_	_
@@ -76,14 +71,14 @@
 6	de	de	ADP	<first-cjt>|PRP|@N<	_	7	case	_	_
 7	Betim	Betim	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 8	(	(	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
-9	MG	MG	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+9	MG	MG	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 10	)	)	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 12	de	de	ADP	<cjt>|PRP|@N<	_	13	case	_	_
 13	Ribeirão	Ribeirão	PROPN	_	Gender=Masc|Number=Sing	7	conj	_	ChangedBy=Issue119|MWE=Ribeirão_Preto|MWEPOS=PROPN
 14	Preto	Preto	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	(	(	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
-16	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+16	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 17	)	)	PUNCT	PU|@PU	_	16	punct	_	_
 18	e	e	CCONJ	<co-postnom>|KC|@CO	_	21	cc	_	d2d:#106
 19-20	da	_	_	_	_	_	_	_	_

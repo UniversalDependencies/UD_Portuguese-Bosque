@@ -1,6 +1,6 @@
 # text = A excursão está sendo organizada pelo clube More Fun, que promove a troca de correspondências entre gays que não querem expor publicamente suas preferências sexuais.
-# source = CETENFolha n=335 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF335-1
+# source = CETENFolha n=335 cad=Cotidiano sec=soc sem=94a
 # id = 1386
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	excursão	excursão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj:pass	_	_
@@ -33,8 +33,8 @@
 28	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Até sexta-feira, 38 pessoas já haviam reservado suas passagens.
-# source = CETENFolha n=335 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF335-2
+# source = CETENFolha n=335 cad=Cotidiano sec=soc sem=94a
 # id = 1387
 1	Até	até	ADP	PRP|@ADVL>	_	2	case	_	_
 2	sexta-feira	sexta-feira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -49,12 +49,11 @@
 11	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = «Queremos lotar dois ônibus com a 80 pessoas e fechar o hotel», disse o administrador de empresas E., 31, um dos organizadores.
-# source = CETENFolha n=335 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF335-3
+# source = CETENFolha n=335 cad=Cotidiano sec=soc sem=94a
 # id = 1388
-# d2d = cc(lotar,e) -> cc(fechar,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Queremos	querer	VERB	<mv>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	parataxis	_	_
+2	Queremos	querer	VERB	<mv>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	parataxis	_	_|deprel=ccomp:parataxis
 3	lotar	lotar	VERB	<first-cjt>|<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
 4	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
 5	ônibus	ônibus	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
@@ -75,7 +74,7 @@
 20	empresas	empresa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
 21	E.	E.	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	20	appos	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-23	31	31	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	18	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+23	31	31	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	18	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No|deprel=appos:parataxis
 24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 25	um	um	NUM	<card>|NUM|M|S|@N<PRED	NumType=Card	18	appos	_	ChangedBy=Issue168
 26-27	dos	_	_	_	_	_	_	_	_

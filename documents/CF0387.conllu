@@ -1,6 +1,6 @@
 # text = Para elaborar a lista, o grupo mede o custo de vida em quase 200 lugares.
-# source = CETENFolha n=387 cad=Mundo sec=pol sem=94b
 # sent_id = CF387-1
+# source = CETENFolha n=387 cad=Mundo sec=pol sem=94b
 # id = 1612
 1	Para	para	ADP	PRP|@ADVL>	_	2	mark	_	_
 2	elaborar	elaborar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	advcl	_	_
@@ -21,10 +21,9 @@
 17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = São analisados os preços de 155 produtos e serviços.
-# source = CETENFolha n=387 cad=Mundo sec=pol sem=94b
 # sent_id = CF387-2
+# source = CETENFolha n=387 cad=Mundo sec=pol sem=94b
 # id = 1613
-# d2d = cc(produtos,e) -> cc(serviços,e)  #106
 1	São	ser	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux:pass	_	_
 2	analisados	analisar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -37,12 +36,9 @@
 10	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Atrás de Buenos Aires, estão duas cidades asiáticas (Hong Kong e Taipé) e duas européias (Zurique e Genebra, ambas na Suíça).
-# source = CETENFolha n=387 cad=Mundo sec=pol sem=94b &L
 # sent_id = CF387-3
+# source = CETENFolha n=387 cad=Mundo sec=pol sem=94b &L
 # id = 1614
-# d2d = cc(Hong,e) -> cc(Taipé,e)  #106
-# d2d = cc(Zurique,e) -> cc(ambas,e)  #106
-# d2d = cc(cidades,e) -> cc(européias,e)  #106
 1	Atrás	atrás	ADV	ADV|@ADVL>	_	6	advmod	_	MWE=Atrás_de
 2	de	de	ADP	PRP|@A<	_	3	case	_	_
 3	Buenos	Buenos	PROPN	_	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue119|MWE=Buenos_Aires|MWEPOS=PROPN
@@ -62,15 +58,15 @@
 17	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
 18	européias	européia	NOUN	<cjt>|<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	8	conj	_	_
 19	(	(	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
-20	Zurique	Zurique	PROPN	<cjt>|<first-cjt>|PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	18	nmod	_	_
+20	Zurique	Zurique	PROPN	<cjt>|<first-cjt>|PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	18	nmod	_	_|deprel=appos:parataxis
 21	e	e	CCONJ	KC|@CO	_	24	cc	_	d2d:#106
-22	Genebra	Genebra	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+22	Genebra	Genebra	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 24	ambas	ambos	DET	<cjt>|<quant>|DET|F|P|@N<PRED	Gender=Fem|Number=Plur|PronType=Tot	20	conj	_	_
 25-26	na	_	_	_	_	_	_	_	_
 25	em	em	ADP	<sam->|PRP|@N<	_	27	case	_	_
 26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	Suíça	Suíça	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+27	Suíça	Suíça	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 28	)	)	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
 29	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

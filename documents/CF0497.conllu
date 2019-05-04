@@ -1,6 +1,6 @@
 # text = «Fúria Metal» entrevista os integrantes do Ramones, banda surgida em Nova York na década de 70.
-# source = CETENFolha n=497 cad=TV Folha sec=clt-soc sem=94b
 # sent_id = CF497-1
+# source = CETENFolha n=497 cad=TV Folha sec=clt-soc sem=94b
 # id = 2091
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Fúria	Fúria	PROPN	_	Gender=Fem|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Fúria_Metal|MWEPOS=PROPN
@@ -28,19 +28,12 @@
 22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Johnny (guitarra), Joey (vocal), CJ (baixo) e Mark (bateria) falam sobre o surgimento do grupo, a influência de Iggy Pop, processo de criação e o revival do punk considerado ridículo e ilegítimo por CJ.
-# source = CETENFolha n=497 cad=TV Folha sec=clt-soc sem=94b &L
 # sent_id = CF497-2
+# source = CETENFolha n=497 cad=TV Folha sec=clt-soc sem=94b &L
 # id = 2092
-# d2d = punct(Johnny,,) -> punct(CJ,,)  #106
-# d2d = cc(Johnny,e) -> cc(Mark,e)  #106
-# d2d = cc(grupo,e) -> cc(revival,e)  #106
-# d2d = punct(Johnny,,) -> punct(Joey,,)  #106
-# d2d = cc(ridículo,e) -> cc(ilegítimo,e)  #106
-# d2d = punct(grupo,,) -> punct(influência,,)  #106
-# d2d = punct(grupo,,) -> punct(processo,,)  #106
 1	Johnny	Johnny	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
 2	(	(	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
-3	guitarra	guitarra	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+3	guitarra	guitarra	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 4	)	)	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	Joey	Joey	PROPN	<cjt>|PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	1	conj	_	_
@@ -50,12 +43,12 @@
 10	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 11	CJ	CJ	PROPN	<cjt>|PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	1	conj	_	_
 12	(	(	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
-13	baixo	baixo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+13	baixo	baixo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 14	)	)	PUNCT	PU|@PU	_	13	punct	_	_
 15	e	e	CCONJ	<co-subj>|KC|@CO	_	16	cc	_	d2d:#106
 16	Mark	Mark	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	_
 17	(	(	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
-18	bateria	bateria	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+18	bateria	bateria	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 19	)	)	PUNCT	PU|@PU	_	18	punct	_	_
 20	falam	falar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 21	sobre	sobre	ADP	PRP|@<PIV	_	23	case	_	_
@@ -91,11 +84,9 @@
 49	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Entre os clips que o programa exibe estão «Blitzkrieg Bop», «I Wanna Live» e «Poison Heart».
-# source = CETENFolha n=497 cad=TV Folha sec=clt-soc sem=94b
 # sent_id = CF497-3
+# source = CETENFolha n=497 cad=TV Folha sec=clt-soc sem=94b
 # id = 2093
-# d2d = punct(Blitzkrieg,») -> punct(I,»)  #106
-# d2d = cc(Blitzkrieg,e) -> cc(Poison,e)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	clips	clip	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	ChangedBy=Issue137
@@ -122,8 +113,8 @@
 24	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Furia Metal MTV, 21h30.
-# source = CETENFolha n=497 cad=TV Folha sec=clt-soc sem=94b
 # sent_id = CF497-4
+# source = CETENFolha n=497 cad=TV Folha sec=clt-soc sem=94b
 # id = 2094
 1	Furia	Furia	PROPN	_	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Furia_Metal_MTV|MWEPOS=PROPN
 2	Metal	Metal	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119

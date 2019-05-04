@@ -1,6 +1,6 @@
 # text = A Orquestra Clássica do Porto abre hoje, em Guimarães, a 4ª edição dos Encontros da Primavera.
-# source = CETEMPúblico n=988 sec=clt sem=93a
 # sent_id = CP988-1
+# source = CETEMPúblico n=988 sec=clt sem=93a
 # id = 5073
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Orquestra	Orquestra	PROPN	_	Gender=Fem|Number=Sing	7	nsubj	_	ChangedBy=Issue119|MWE=Orquestra_Clássica|MWEPOS=PROPN
@@ -29,11 +29,9 @@
 22	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O primeiro concerto é dirigido por Piero Bellugi, com os solistas Pedro Corostola (violoncelo), Maria do Rosário Ferreira e Palmira Troufa (sopranos).
-# source = CETEMPúblico n=988 sec=clt sem=93a
 # sent_id = CP988-2
+# source = CETEMPúblico n=988 sec=clt sem=93a
 # id = 5074
-# d2d = punct(Pedro,,) -> punct(Maria,,)  #106
-# d2d = cc(Maria,e) -> cc(Palmira,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	3	amod	_	ChangedBy=Issue172
 3	concerto	concerto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
@@ -49,7 +47,7 @@
 13	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	12	appos	_	ChangedBy=Issue119|MWE=Pedro_Corostola|MWEPOS=PROPN
 14	Corostola	Corostola	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	(	(	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
-16	violoncelo	violoncelo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+16	violoncelo	violoncelo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 17	)	)	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 19	Maria	Maria	PROPN	<cjt>|<first-cjt>|PROP|F|S|@N<	Gender=Fem|Number=Sing	13	conj	_	MWE=Maria_do_Rosário_Ferreira
@@ -62,15 +60,14 @@
 25	Palmira	Palmira	PROPN	_	Gender=Fem|Number=Sing	19	conj	_	ChangedBy=Issue119|MWE=Palmira_Troufa|MWEPOS=PROPN
 26	Troufa	Troufa	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
 27	(	(	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
-28	sopranos	soprano	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+28	sopranos	soprano	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 29	)	)	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 30	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = No Paço dos Duques de Bragança, às 21h45.
-# source = CETEMPúblico n=988 sec=clt sem=93a
 # sent_id = CP988-3
+# source = CETEMPúblico n=988 sec=clt sem=93a
 # id = 5075
-# d2d = punct(Paço,,) -> punct(21h45,,)  #106
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|<first-cjt>|PRP|@UTT	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -89,8 +86,8 @@
 13	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Final do Festróia -- IX Festival Internacional de Cinema de Tróia, com a exibição às 16h30 do filme premiado com o Golfinho de Ouro.
-# source = CETEMPúblico n=988 sec=clt sem=93a
 # sent_id = CP988-4
+# source = CETEMPúblico n=988 sec=clt sem=93a
 # id = 5076
 1	Final	final	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2-3	do	_	_	_	_	_	_	_	_

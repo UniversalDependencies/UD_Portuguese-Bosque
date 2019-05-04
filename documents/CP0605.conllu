@@ -1,8 +1,7 @@
 # text = Ministro da Cultura admite défice orçamental de dois a três milhões no CCB e reúne com mecenas
-# source = CETEMPúblico n=605 sec=clt sem=95b
 # sent_id = CP605-1
+# source = CETEMPúblico n=605 sec=clt sem=95b
 # id = 3137
-# d2d = cc(admite,e) -> cc(reúne,e)  #106
 1	Ministro	ministro	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	MWE=Ministro_da_Cultura
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -26,8 +25,8 @@
 19	mecenas	mecenas	NOUN	<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	17	obj	_	_
 
 # text = Fraústo da Silva à espera do convite do primeiro-ministro
-# source = CETEMPúblico n=605 sec=clt sem=95b
 # sent_id = CP605-2
+# source = CETEMPúblico n=605 sec=clt sem=95b
 # id = 3138
 1	Fraústo	Fraústo	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	MWE=Fraústo_da_Silva
 2-3	da	_	_	_	_	_	_	_	_
@@ -48,11 +47,9 @@
 13	primeiro-ministro	primeiro-ministro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
 
 # text = Fraústo da Silva, ex-ministro da Educação e actual presidente do Instituto Nacional de Administração, admitiu ter sido sondado para o lugar de Antero Ferreira nos conselhos directivo e de administração da Fundação das Descobertas, tal como noticiou a edição de ontem do PÚBLICO.
-# source = CETEMPúblico n=605 sec=clt sem=95b
 # sent_id = CP605-3
+# source = CETEMPúblico n=605 sec=clt sem=95b
 # id = 3139
-# d2d = cc(directivo,e) -> cc(administração,e)  #106
-# d2d = cc(ex-ministro,e) -> cc(presidente,e)  #106
 1	Fraústo	Fraústo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	MWE=Fraústo_da_Silva
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -116,14 +113,12 @@
 54	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = «Não falei com o primeiro-ministro, mas fui sondado nesse sentido», disse.
-# source = CETEMPúblico n=605 sec=clt sem=95b
 # sent_id = CP605-4
+# source = CETEMPúblico n=605 sec=clt sem=95b
 # id = 3140
-# d2d = punct(falei,,) -> punct(sondado,,)  #106
-# d2d = cc(falei,mas) -> cc(sondado,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
-3	falei	falar	VERB	<mv>|<first-cjt>|V|PS|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	16	parataxis	_	_
+3	falei	falar	VERB	<mv>|<first-cjt>|V|PS|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	16	parataxis	_	_|deprel=ccomp:parataxis
 4	com	com	ADP	<first-cjt>|PRP|@<PIV	_	6	case	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	primeiro-ministro	primeiro-ministro	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obj	_	ChangedBy=Issue165|SpaceAfter=No

@@ -1,13 +1,7 @@
 # text = O tempo, quente e húmido, impediu a obtenção de grandes marcas, mas não foi obstáculo ao domínio fácil de Pinheiro sobre os seus mais directos adversários -- Pedro Pessoa, do Bairro de Santiago (31m31s), Luís Vieira, da AA Peniche Óptica 2000 (31m55s) e Carlos Almeida, da UR Dafundo (31m57s).
-# source = CETEMPúblico n=326 sec=des sem=94b &L
 # sent_id = CP326-1
+# source = CETEMPúblico n=326 sec=des sem=94b &L
 # id = 1712
-# d2d = cc(impediu,mas) -> cc(obstáculo,mas)  #106
-# d2d = punct(Pedro,,) -> punct(Carlos,,)  #106
-# d2d = cc(Pedro,e) -> cc(Carlos,e)  #106
-# d2d = punct(Pedro,,) -> punct(Luís,,)  #106
-# d2d = cc(quente,e) -> cc(húmido,e)  #106
-# d2d = punct(impediu,,) -> punct(obstáculo,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tempo	tempo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -46,11 +40,11 @@
 35-36	do	_	_	_	_	_	_	_	_
 35	de	de	ADP	<first-cjt>|<sam->|PRP|@N<PRED	_	37	case	_	_
 36	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	Bairro	Bairro	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	MWE=Bairro_de_Santiago
+37	Bairro	Bairro	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	MWE=Bairro_de_Santiago|deprel=appos:parataxis
 38	de	de	ADP	PRP|@N<	_	39	case	_	_
 39	Santiago	Santiago	PROPN	PROP|@P<	Number=Sing	37	nmod	_	_
 40	(	(	PUNCT	PU|@PU	_	41	punct	_	ChangedBy=Issue165|SpaceAfter=No
-41	31m31s	31m31s	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	32	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+41	31m31s	31m31s	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	32	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 42	)	)	PUNCT	PU|@PU	_	41	punct	_	ChangedBy=Issue165|SpaceAfter=No
 43	,	,	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
 44	Luís	Luís	PROPN	_	Gender=Masc|Number=Sing	32	conj	_	ChangedBy=Issue119|MWE=Luís_Vieira|MWEPOS=PROPN
@@ -59,12 +53,12 @@
 47-48	da	_	_	_	_	_	_	_	_
 47	de	de	ADP	<cjt>|<sam->|PRP|@N<PRED	_	49	case	_	_
 48	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
-49	AA	AA	PROPN	_	Gender=Fem|Number=Sing	44	nmod	_	ChangedBy=Issue119|MWE=AA_Peniche_Óptica_2000|MWEPOS=PROPN
+49	AA	AA	PROPN	_	Gender=Fem|Number=Sing	44	nmod	_	ChangedBy=Issue119|MWE=AA_Peniche_Óptica_2000|MWEPOS=PROPN|deprel=appos:parataxis
 50	Peniche	Peniche	PROPN	_	Number=Sing	49	flat:name	_	ChangedBy=Issue119
 51	Óptica	Óptica	PROPN	_	Number=Sing	49	flat:name	_	ChangedBy=Issue119
 52	2000	2000	PROPN	_	Number=Sing	49	flat:name	_	ChangedBy=Issue119
 53	(	(	PUNCT	PU|@PU	_	54	punct	_	ChangedBy=Issue165|SpaceAfter=No
-54	31m55s	31m55s	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	44	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+54	31m55s	31m55s	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	44	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 55	)	)	PUNCT	PU|@PU	_	54	punct	_	_
 56	e	e	CCONJ	<co-app>|KC|@CO	_	57	cc	_	d2d:#106
 57	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	32	conj	_	ChangedBy=Issue119|MWE=Carlos_Almeida|MWEPOS=PROPN
@@ -73,20 +67,17 @@
 60-61	da	_	_	_	_	_	_	_	_
 60	de	de	ADP	<cjt>|<sam->|PRP|@N<PRED	_	62	case	_	_
 61	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	62	det	_	_
-62	UR	UR	PROPN	_	Gender=Fem|Number=Sing	57	nmod	_	ChangedBy=Issue119|MWE=UR_Dafundo|MWEPOS=PROPN
+62	UR	UR	PROPN	_	Gender=Fem|Number=Sing	57	nmod	_	ChangedBy=Issue119|MWE=UR_Dafundo|MWEPOS=PROPN|deprel=appos:parataxis
 63	Dafundo	Dafundo	PROPN	_	Number=Sing	62	flat:name	_	ChangedBy=Issue119
 64	(	(	PUNCT	PU|@PU	_	65	punct	_	ChangedBy=Issue165|SpaceAfter=No
-65	31m57s	31m57s	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	57	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+65	31m57s	31m57s	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	57	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 66	)	)	PUNCT	PU|@PU	_	65	punct	_	ChangedBy=Issue165|SpaceAfter=No
 67	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Em senhoras, Paula Laneiro também não teve dificuldades em bater Umbelina Nunes, do Casal Privilégio (267ª da geral e primeira veterana), e Luísa Almeida, do Cruz Quebradense (295ª).
-# source = CETEMPúblico n=326 sec=des sem=94b
 # sent_id = CP326-2
+# source = CETEMPúblico n=326 sec=des sem=94b
 # id = 1713
-# d2d = punct(Umbelina,,) -> punct(Luísa,,)  #106
-# d2d = cc(Umbelina,e) -> cc(Luísa,e)  #106
-# d2d = cc(267ª,e) -> cc(veterana,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	senhoras	senhora	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -104,7 +95,7 @@
 15-16	do	_	_	_	_	_	_	_	_
 15	de	de	ADP	<first-cjt>|<sam->|PRP|@N<PRED	_	17	case	_	_
 16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	Casal	Casal	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=Casal_Privilégio|MWEPOS=PROPN
+17	Casal	Casal	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=Casal_Privilégio|MWEPOS=PROPN|deprel=appos:parataxis
 18	Privilégio	Privilégio	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	(	(	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
 20	267ª	267ª	ADJ	<first-cjt>|<NUM-ord>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing|NumType=Ord	12	appos	_	ChangedBy=Issue172
@@ -124,7 +115,7 @@
 33-34	do	_	_	_	_	_	_	_	_
 33	de	de	ADP	<cjt>|<sam->|PRP|@N<PRED	_	35	case	_	_
 34	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
-35	Cruz	Cruz	PROPN	_	Gender=Masc|Number=Sing	30	nmod	_	ChangedBy=Issue119|MWE=Cruz_Quebradense|MWEPOS=PROPN
+35	Cruz	Cruz	PROPN	_	Gender=Masc|Number=Sing	30	nmod	_	ChangedBy=Issue119|MWE=Cruz_Quebradense|MWEPOS=PROPN|deprel=appos:parataxis
 36	Quebradense	Quebradense	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
 37	(	(	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
 38	295ª	295ª	ADJ	<NUM-ord>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing|NumType=Ord	30	appos	_	ChangedBy=Issue165|ChangedBy=Issue172|SpaceAfter=No
@@ -132,8 +123,8 @@
 40	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = A identificação do segundo classificado levantou dúvidas à organização:
-# source = CETEMPúblico n=326 sec=des sem=94b
 # sent_id = CP326-3
+# source = CETEMPúblico n=326 sec=des sem=94b
 # id = 1714
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	identificação	identificação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -151,8 +142,8 @@
 12	:	:	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = inicialmente, apareceu na lista de classificação como sendo Octávio Sousa, do Super Estrelas.
-# source = CETEMPúblico n=326 sec=des sem=94b
 # sent_id = CP326-4
+# source = CETEMPúblico n=326 sec=des sem=94b
 # id = 1715
 1	inicialmente	inicialmente	ADV	ADV|@ADVL>	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -171,13 +162,13 @@
 14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<PRED	_	16	case	_	_
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	Super	Super	PROPN	_	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue119|MWE=Super_Estrelas|MWEPOS=PROPN
+16	Super	Super	PROPN	_	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue119|MWE=Super_Estrelas|MWEPOS=PROPN|deprel=appos:parataxis
 17	Estrelas	Estrelas	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 18	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Isto deve-se possivelmente ao facto de Pedro Pessoa ter feito a prova com dorsal trocado.
-# source = CETEMPúblico n=326 sec=des sem=94b
 # sent_id = CP326-5
+# source = CETEMPúblico n=326 sec=des sem=94b
 # id = 1716
 1	Isto	isto	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	_
 2-3	deve-se	_	_	_	_	_	_	_	_
@@ -201,12 +192,9 @@
 18	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Casos semelhantes a este são frequentes nas corridas de estrada que se efectuam em Portugal e dificultam e falseiam a elaboração das classificações individuais e colectivas.
-# source = CETEMPúblico n=326 sec=des sem=94b
 # sent_id = CP326-6
+# source = CETEMPúblico n=326 sec=des sem=94b
 # id = 1717
-# d2d = cc(frequentes,e) -> cc(dificultam,e)  #106
-# d2d = cc(dificultam,e) -> cc(falseiam,e)  #106
-# d2d = cc(individuais,e) -> cc(colectivas,e)  #106
 1	Casos	caso	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 2	semelhantes	semelhante	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	1	amod	_	_
 3	a	a	ADP	PRP|@A<	_	4	case	_	_

@@ -1,6 +1,6 @@
 # text = A tarefa foi transferida a Falcão.
-# source = CETENFolha n=473 cad=Brasil sec=pol sem=94b
 # sent_id = CF473-1
+# source = CETENFolha n=473 cad=Brasil sec=pol sem=94b
 # id = 2002
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	tarefa	tarefa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj:pass	_	_
@@ -11,13 +11,12 @@
 7	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = «Trata-se de um candidato que estreou em comício sob vaias e quer, pela via do preconceito, enfraquecer quem lidera as pesquisas», disse Falcão sobre FHC.
-# source = CETENFolha n=473 cad=Brasil sec=pol sem=94b
 # sent_id = CF473-2
+# source = CETENFolha n=473 cad=Brasil sec=pol sem=94b
 # id = 2003
-# d2d = cc(estreou,e) -> cc(quer,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2-3	Trata-se	_	_	_	_	_	_	_	_
-2	Trata	tratar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	parataxis	_	_
+2	Trata	tratar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	parataxis	_	_|deprel=ccomp:parataxis
 3	se	se	PRON	PERS|M/F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	2	expl	_	ChangedBy=Issue135
 4	de	de	ADP	PRP|@<PIV	_	6	case	_	_
 5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
@@ -54,14 +53,14 @@
 34	.	.	PUNCT	PU|@PU	_	30	punct	_	_
 
 # text = «Nós não vamos dar corda ao debate rasteiro», acrescentou o presidente do PT, que acha improvável o STF permitir a candidatura de José Sarney por um partido que não seja o PMDB.
-# source = CETENFolha n=473 cad=Brasil sec=pol sem=94b
 # sent_id = CF473-3
+# source = CETENFolha n=473 cad=Brasil sec=pol sem=94b
 # id = 2004
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Nós	nós	PRON	PERS|M/F|1P|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_
 3	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
 4	vamos	ir	AUX	<aux>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	aux	_	_
-5	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	parataxis	_	_
+5	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	parataxis	_	_|deprel=ccomp:parataxis
 6	corda	corda	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	_
 7-8	ao	_	_	_	_	_	_	_	_
 7	a	a	ADP	<sam->|PRP|@<PIV	_	9	case	_	_

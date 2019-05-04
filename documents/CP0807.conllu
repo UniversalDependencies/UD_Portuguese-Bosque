@@ -1,8 +1,7 @@
 # text = Segundo Artur Moreira, a notária leu a escritura e só faltava assinar.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-1
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4136
-# d2d = cc(leu,e) -> cc(faltava,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Artur	Artur	PROPN	_	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue119|MWE=Artur_Moreira|MWEPOS=PROPN
 3	Moreira	Moreira	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -19,11 +18,9 @@
 14	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = «Quando chegou ao fim, disse que não fazia a escritura, porque o comprador é um homem no bilhete de identidade, mas na sua frente via uma mulher.»
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-2
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4137
-# d2d = punct(homem,,) -> punct(via,,)  #106
-# d2d = cc(homem,mas) -> cc(via,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	3	advmod	_	_
 3	chegou	chegar	VERB	<mv>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	advcl	_	_
@@ -65,8 +62,8 @@
 36	»	»	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Depois, continua, «disse que só o faria na presença de duas testemunhas».
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-3
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4138
 1	Depois	depois	ADV	ADV|@ADVL>	_	6	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -89,10 +86,9 @@
 18	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = No dia seguinte, Armanda e Moreira voltaram ao cartório, acompanhados das testemunhas.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-4
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4139
-# d2d = cc(Armanda,e) -> cc(Moreira,e)  #106
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -116,8 +112,8 @@
 18	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = «Sem qualquer explicação, a notária disse que não fazia a escritura», recorda o vendedor.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-5
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4140
 1	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Sem	sem	ADP	PRP|@PRED>	_	4	case	_	_
@@ -126,7 +122,7 @@
 5	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	notária	notária	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
-8	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	parataxis	_	_
+8	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	parataxis	_	_|deprel=ccomp:parataxis
 9	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
 10	não	não	ADV	_	Polarity=Neg	11	advmod	_	_
 11	fazia	fazer	VERB	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	ccomp	_	_
@@ -140,25 +136,23 @@
 19	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = E as testemunhas não chegaram a ser ouvidas.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-6
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4141
 1	E	e	CCONJ	KC|@CO	_	8	cc	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	testemunhas	testemunha	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	8	nsubj:pass	_	_
 4	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
 5	chegaram	chegar	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux	_	_
-6	a	a	ADP	PRP|@PRT-AUX<	_	8	case	_	_
+6	a	a	PART	PRP|@PRT-AUX<	_	8	case	_	_
 7	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	8	aux:pass	_	_
 8	ouvidas	ouvir	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 9	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Seguiu-se uma troca de palavras menos amistosa e Elvira Maris acabaria por chamar a polícia, declarando ter sido maltratada e que o bom funcionamento do cartório havia sido perturbado.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-7
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4142
-# d2d = cc(maltratada,e) -> cc(perturbado,e)  #106
-# d2d = cc(Seguiu-,e) -> cc(chamar,e)  #106
 1-2	Seguiu-se	_	_	_	_	_	_	_	_
 1	Seguiu	seguir	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	expl	_	ChangedBy=Issue135
@@ -172,7 +166,7 @@
 10	Elvira	Elvira	PROPN	_	Gender=Fem|Number=Sing	14	nsubj	_	ChangedBy=Issue119|MWE=Elvira_Maris|MWEPOS=PROPN
 11	Maris	Maris	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
 12	acabaria	acabar	AUX	<cjt>|<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	14	aux	_	_
-13	por	por	ADP	PRP|@PRT-AUX<	_	14	case	_	_
+13	por	por	PART	PRP|@PRT-AUX<	_	14	case	_	_
 14	chamar	chamar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	conj	_	_
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	polícia	polícia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -196,10 +190,9 @@
 33	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = A autoridade chegou e procedeu à identificação dos dois indivíduos.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-8
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4143
-# d2d = cc(chegou,e) -> cc(procedeu,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	autoridade	autoridade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	chegou	chegar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -217,15 +210,15 @@
 13	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «O que eu pergunto é por que é que para a polícia a minha identificação é suficiente e para a senhora notária não é», questiona Maria Armanda.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-9
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4144
 1	«	«	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	6	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	5	obj	_	_
 4	eu	eu	PRON	PERS|F|1S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
 5	pergunto	perguntar	VERB	<mv>|V|PR|1S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
-6	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	parataxis	_	_
+6	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	parataxis	_	_|deprel=ccomp:parataxis
 7	por	por	ADP	PRP|@ADVL>	_	18	case	_	MWE=por_que
 8	que	que	PRON	INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	7	fixed	_	_
 9	é	é	ADP	PRP|@<ADVL	_	18	case	_	MWE=é_que
@@ -253,13 +246,13 @@
 31	.	.	PUNCT	PU|@PU	_	28	punct	_	_
 
 # text = «Eu estou a ser alvo de discriminação.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-10
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4145
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Eu	eu	PRON	PERS|F|1S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
 3	estou	estar	AUX	<aux>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	aux	_	_
-4	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
+4	a	a	PART	PRP|@PRT-AUX<	_	6	case	_	_
 5	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	cop	_	ChangedBy=Issue167
 6	alvo	alvo	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
@@ -267,13 +260,13 @@
 9	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Ela está a brincar comigo, com o vendedor, com as testemunhas, com todos nós», conclui.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-11
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4146
 1	Ela	ele	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
 2	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
-3	a	a	ADP	PRP|@PRT-AUX<	_	4	case	_	_
-4	brincar	brincar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	parataxis	_	_
+3	a	a	PART	PRP|@PRT-AUX<	_	4	case	_	_
+4	brincar	brincar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	parataxis	_	_|deprel=ccomp:parataxis
 5-6	comigo	_	_	_	_	_	_	_	SpaceAfter=No
 5	com	com	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	6	case	_	_
 6	mim	eu	PRON	<-sam>|PERS|F|1S|PIV|@P<	Gender=Fem|Number=Sing|Person=1|PronType=Prs	4	obj	_	_
@@ -295,8 +288,8 @@
 22	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = Por sua vez, Moreira afirma conhecer outro travesti que comprou uma casa já há 18 anos, sem ter tido qualquer problema.
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-12
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4147
 1	Por	por	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	6	obl	_	MWE=Por_sua_vez
 2	sua	sua	ADP	PRP|@N<	_	3	case	_	_
@@ -324,8 +317,8 @@
 24	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Contactada pelo PÚBLICO, Elvira Maris declarou não poder «fazer uma escritura quando aparece uma pessoa com uma identidade diferente da presente no documento comprovativo da sua identidade».
-# source = CETEMPúblico n=807 sec=soc sem=98b
 # sent_id = CP807-13
+# source = CETEMPúblico n=807 sec=soc sem=98b
 # id = 4148
 1	Contactada	contactar	VERB	<mv>|V|PCP|F|S|@ICL-PRED>	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	advcl	_	_
 2-3	pelo	_	_	_	_	_	_	_	_

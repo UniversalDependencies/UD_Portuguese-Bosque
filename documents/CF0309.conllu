@@ -1,6 +1,6 @@
 # text = 24 de novembro de 92 -- Um Boeing 737, da China Southern Airlines, bate em um morro pouco antes de aterrissar na cidade turística de Guilin, causando a morte de 141 pessoas.
-# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # sent_id = CF309-1
+# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # id = 1285
 1	24	24	NUM	<card>|NUM|M|P|@ADVL>	NumType=Card	17	parataxis	_	ChangedBy=Issue168
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -15,7 +15,7 @@
 11-12	da	_	_	_	_	_	_	_	_
 11	de	de	ADP	<sam->|PRP|@N<PRED	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	China	China	PROPN	_	Gender=Fem|Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=China_Southern_Airlines|MWEPOS=PROPN
+13	China	China	PROPN	_	Gender=Fem|Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=China_Southern_Airlines|MWEPOS=PROPN|deprel=appos:parataxis
 14	Southern	Southern	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	Airlines	Airlines	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	13	punct	_	_
@@ -44,8 +44,8 @@
 38	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Total de mortos em 92: 310
-# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # sent_id = CF309-2
+# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # id = 1286
 1	Total	total	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -56,8 +56,8 @@
 7	310	310	NUM	<card>|<Eg>|NUM|@N<PRED	NumType=Card	1	appos	_	ChangedBy=Issue168
 
 # text = 23 de julho de 93 -- Um jato britânico Aerospace 146, da China Northwest Airlines caiu na região autônoma de Ningxia Hui.
-# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # sent_id = CF309-3
+# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # id = 1287
 1	23	23	NUM	<card>|NUM|M|P|@ADVL>	NumType=Card	18	obl	_	ChangedBy=Issue168
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -74,7 +74,7 @@
 13-14	da	_	_	_	_	_	_	_	_
 13	de	de	ADP	<sam->|PRP|@N<PRED	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	China	China	PROPN	_	Gender=Fem|Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=China_Northwest_Airlines|MWEPOS=PROPN
+15	China	China	PROPN	_	Gender=Fem|Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=China_Northwest_Airlines|MWEPOS=PROPN|deprel=appos:parataxis
 16	Northwest	Northwest	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 17	Airlines	Airlines	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 18	caiu	cair	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -89,10 +89,9 @@
 26	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Dos 133 passageiros e tripulantes que estavam na aeronave, 55 morreram.
-# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # sent_id = CF309-4
+# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # id = 1288
-# d2d = cc(passageiros,e) -> cc(tripulantes,e)  #106
 1-2	Dos	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_

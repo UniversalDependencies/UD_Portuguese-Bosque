@@ -1,12 +1,12 @@
 # text = «O mau tempo atrasou consideravelmente as operações», disse Ajit Vardi, um dos responsáveis da coordenação das operações em Bombaim, capital do estado de Maharashtra.
-# source = CETEMPúblico n=333 sec=soc sem=93b
 # sent_id = CP333-1
+# source = CETEMPúblico n=333 sec=soc sem=93b
 # id = 1738
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 3	mau	mau	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	4	amod	_	_
 4	tempo	tempo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
-5	atrasou	atrasar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	parataxis	_	_
+5	atrasou	atrasar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	parataxis	_	_|deprel=ccomp:parataxis
 6	consideravelmente	consideravelmente	ADV	ADV|@<ADVL	_	5	advmod	_	_
 7	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
 8	operações	operação	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -42,8 +42,8 @@
 34	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Entretanto, a Índia rompeu com a sua tradição, aceitando com gratidão a ajuda material estrangeira.
-# source = CETEMPúblico n=333 sec=soc sem=93b
 # sent_id = CP333-2
+# source = CETEMPúblico n=333 sec=soc sem=93b
 # id = 1739
 1	Entretanto	entretanto	ADV	<kc>|ADV|@ADVL>	_	5	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -65,8 +65,8 @@
 18	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Recusou, contudo, as propostas dos governos estrangeiros de enviar para o país equipas de especialistas.
-# source = CETEMPúblico n=333 sec=soc sem=93b
 # sent_id = CP333-3
+# source = CETEMPúblico n=333 sec=soc sem=93b
 # id = 1740
 1	Recusou	recusar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -90,8 +90,8 @@
 19	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = O Governo indiano considera que dispõe de meios suficientes para realizar com sucesso as operações de socorro, mostrando-se reticente, segundo um responsável da distribuição da ajuda internacional, no que respeita a receber pessoal estrangeiro.
-# source = CETEMPúblico n=333 sec=soc sem=93b
 # sent_id = CP333-4
+# source = CETEMPúblico n=333 sec=soc sem=93b
 # id = 1741
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Governo	Governo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
@@ -141,13 +141,9 @@
 42	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Equipas propostas pela Rússia, Áustria, Itália, Alemanha e Suíça estavam a postos para partir para a Índia.
-# source = CETEMPúblico n=333 sec=soc sem=93b
 # sent_id = CP333-5
+# source = CETEMPúblico n=333 sec=soc sem=93b
 # id = 1742
-# d2d = punct(Rússia,,) -> punct(Itália,,)  #106
-# d2d = punct(Rússia,,) -> punct(Áustria,,)  #106
-# d2d = cc(Rússia,e) -> cc(Suíça,e)  #106
-# d2d = punct(Rússia,,) -> punct(Alemanha,,)  #106
 1	Equipas	equipa	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	16	nsubj	_	_
 2	propostas	propor	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	1	acl	_	_
 3-4	pela	_	_	_	_	_	_	_	_
@@ -173,10 +169,9 @@
 22	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Mas o estado de alerta foi suspenso no sábado com a justificação de que já era demasiado tarde para encontrar sobreviventes e que a Índia não fizera um apelo oficial, considerando suficientes os seus próprios recursos.
-# source = CETEMPúblico n=333 sec=soc sem=93b
 # sent_id = CP333-6
+# source = CETEMPúblico n=333 sec=soc sem=93b
 # id = 1743
-# d2d = cc(era,e) -> cc(fizera,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	7	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	estado	estado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj:pass	_	_

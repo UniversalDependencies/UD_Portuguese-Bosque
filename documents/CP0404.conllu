@@ -1,6 +1,6 @@
 # text = Em termos de unidades vendidas, se se venderam cerca de 145 mil LP de preço máximo, em CD, na mesma escala de preço, venderam-se quase 405 mil -- uma discrepância que se acentua na facturação (176 mil contos em LP de preço «top» contra cerca de 817 mil contos em CD também de «top»), devido ao segundo formato ser vendido sensivelmente pelo dobro do primeiro.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-1
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2101
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_termos_de
 2	termos	termos	NOUN	N|@P<	_	29	obl	_	_
@@ -93,8 +93,8 @@
 83	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 
 # text = A cassete do mesmo escalão continua a não ir muito bem.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-2
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2102
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	cassete	cassete	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
@@ -104,7 +104,7 @@
 5	mesmo	mesmo	ADJ	<diff>|<KOMP>|DET|M|S|@>N	Gender=Masc|Number=Sing	6	amod	_	_
 6	escalão	escalão	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 7	continua	continuar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
-8	a	a	ADP	PRP|@PRT-AUX<	_	10	case	_	_
+8	a	a	PART	PRP|@PRT-AUX<	_	10	case	_	_
 9	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
 10	ir	ir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 11	muito	muito	ADV	<quant>|ADV|@>A	_	12	advmod	_	_
@@ -112,8 +112,8 @@
 13	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Vendendo menos que o vinil: pouco mais de 103 mil, o que corresponde a uma facturação de cerca de 124 mil contos.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-3
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2103
 1	Vendendo	vender	VERB	<mv>|V|GER|@ICL-UTT	VerbForm=Ger	0	root	_	_
 2	menos	pouco	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	_	1	advmod	_	_
@@ -142,8 +142,8 @@
 25	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Os discos mais vendidos são os que chegaram ao fim do ano passado já com maior número de galardões.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-4
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2104
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	discos	disco	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
@@ -171,8 +171,8 @@
 22	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = É o caso por excelência de «Waking Up The Neighbours», de Bryan Adams, que agora chegou a sextuplo de platina (cada disco de platina equivale à venda de 40 mil unidades).
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-5
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2105
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -188,7 +188,7 @@
 12	»	»	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 14	de	de	ADP	PRP|@N<PRED	_	15	case	_	_
-15	Bryan	Bryan	PROPN	_	Gender=Masc|Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=Bryan_Adams|MWEPOS=PROPN
+15	Bryan	Bryan	PROPN	_	Gender=Masc|Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=Bryan_Adams|MWEPOS=PROPN|deprel=appos:parataxis
 16	Adams	Adams	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 18	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	20	nsubj	_	_
@@ -216,11 +216,9 @@
 39	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = As colectâneas de êxitos dos Bee Gees, Queen e Tina Turner também recolheram mais um galardão de platina.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-6
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2106
-# d2d = cc(Bee,e) -> cc(Tina,e)  #106
-# d2d = punct(Bee,,) -> punct(Queen,,)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	colectâneas	colectânea	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	15	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -245,8 +243,8 @@
 21	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = O único grupo português que alcançou este estatuto foram os Onda Choc com «Ela Só Quer, Só Pensa Em Namorar».
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-7
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2107
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	único	único	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
@@ -274,11 +272,9 @@
 24	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = O álbum de estreia dos Resistência também já é disco de platina, mas ainda não consta nas contas do trimestre, porque só o alcançou em Abril.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-8
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2108
-# d2d = cc(disco,mas) -> cc(consta,mas)  #106
-# d2d = punct(disco,,) -> punct(consta,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	álbum	álbum	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_

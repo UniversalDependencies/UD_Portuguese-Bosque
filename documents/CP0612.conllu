@@ -1,6 +1,6 @@
 # text = A caravela Boa Esperança chegou à doca do Jardim do Tabaco terça-feira, ao entardecer.
-# source = CETEMPúblico n=612 sec=des sem=92b
 # sent_id = CP612-1
+# source = CETEMPúblico n=612 sec=des sem=92b
 # id = 3196
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	caravela	caravela	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
@@ -28,15 +28,9 @@
 20	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Terminava uma rota oceânica de 10 mil milhas náuticas através dos portos de Lisboa (Portugal), Cádiz (Espanha), Las Palmas (Canárias), San Juan (Porto Rico), Nova Iorque e Boston (EUA) e Liverpool (Inglaterra) na Regata Colombo 92, uma viagem comemorativa dos 500 anos de descoberta do Novo Mundo.
-# source = CETEMPúblico n=612 sec=des sem=92b &L
 # sent_id = CP612-2
+# source = CETEMPúblico n=612 sec=des sem=92b &L
 # id = 3197
-# d2d = punct(Lisboa,,) -> punct(Cádiz,,)  #106
-# d2d = punct(Lisboa,,) -> punct(Las,,)  #106
-# d2d = cc(Nova,e) -> cc(Boston,e)  #106
-# d2d = punct(Lisboa,,) -> punct(Nova,,)  #106
-# d2d = cc(Lisboa,e) -> cc(Liverpool,e)  #106
-# d2d = punct(Lisboa,,) -> punct(San,,)  #106
 1	Terminava	terminar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	rota	rota	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
@@ -54,18 +48,18 @@
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	Lisboa	Lisboa	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
-17	Portugal	Portugal	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+17	Portugal	Portugal	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 18	)	)	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	Cádiz	Cádiz	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
 21	(	(	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
-22	Espanha	Espanha	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+22	Espanha	Espanha	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 23	)	)	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 25	Las	Las	PROPN	_	Gender=Fem|Number=Sing	15	conj	_	ChangedBy=Issue119|MWE=Las_Palmas|MWEPOS=PROPN
 26	Palmas	Palmas	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
 27	(	(	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
-28	Canárias	Canárias	PROPN	PROP|F|P|@N<PRED	Gender=Fem|Number=Plur	25	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+28	Canárias	Canárias	PROPN	PROP|F|P|@N<PRED	Gender=Fem|Number=Plur	25	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 29	)	)	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 31	San	San	PROPN	_	Gender=Masc|Number=Sing	15	conj	_	ChangedBy=Issue119|MWE=San_Juan|MWEPOS=PROPN
@@ -80,12 +74,12 @@
 40	e	e	CCONJ	<co-prparg>|KC|@CO	_	41	cc	_	d2d:#106
 41	Boston	Boston	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	38	conj	_	_
 42	(	(	PUNCT	PU|@PU	_	43	punct	_	ChangedBy=Issue165|SpaceAfter=No
-43	EUA	EUA	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	38	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+43	EUA	EUA	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	38	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 44	)	)	PUNCT	PU|@PU	_	43	punct	_	_
 45	e	e	CCONJ	<co-prparg>|KC|@CO	_	46	cc	_	d2d:#106
 46	Liverpool	Liverpool	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	15	conj	_	_
 47	(	(	PUNCT	PU|@PU	_	48	punct	_	ChangedBy=Issue165|SpaceAfter=No
-48	Inglaterra	Inglaterra	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	46	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+48	Inglaterra	Inglaterra	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	46	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 49	)	)	PUNCT	PU|@PU	_	48	punct	_	_
 50-51	na	_	_	_	_	_	_	_	_
 50	em	em	ADP	<sam->|PRP|@N<	_	52	case	_	_
@@ -112,11 +106,9 @@
 69	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Foram quase 4 meses de navegação em que 60 velejadores portugueses filiados à Aporvela fizeram as vezes de marinheiros sob o comando dos skippers e irmãos João Lucio Costa Lopes e José Inácio Costa Lopes.
-# source = CETEMPúblico n=612 sec=des sem=92b
 # sent_id = CP612-3
+# source = CETEMPúblico n=612 sec=des sem=92b
 # id = 3198
-# d2d = cc(skippers,e) -> cc(irmãos,e)  #106
-# d2d = cc(João,e) -> cc(José,e)  #106
 1	Foram	ser	AUX	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 2	quase	quase	ADV	<quant>|ADV|@>A	_	3	advmod	_	_
 3	4	4	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168

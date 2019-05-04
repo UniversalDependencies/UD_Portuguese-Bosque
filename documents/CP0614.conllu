@@ -1,8 +1,7 @@
 # text = Numa curta conferência de imprensa de 15 minutos, após o almoço de trabalho, quer Gonzalez quer Baker foram prudentes:
-# source = CETEMPúblico n=614 sec=pol sem=91b
 # sent_id = CP614-1
+# source = CETEMPúblico n=614 sec=pol sem=91b
 # id = 3204
-# d2d = cc(Gonzalez,quer) -> cc(Baker,quer)  #106
 1-2	Numa	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -29,12 +28,11 @@
 23	:	:	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = «Prefiro não fazer prognósticos pois, como disse ao Presidente [ Felipe Gonzalez ] e ao meu colega, até que recebamos respostas definitivas aos convites de participação já enviados, não gostaria de fazer qualquer antevisão», sublinhou James Baker.
-# source = CETEMPúblico n=614 sec=pol sem=91b
 # sent_id = CP614-2
+# source = CETEMPúblico n=614 sec=pol sem=91b
 # id = 3205
-# d2d = cc(Presidente,e) -> cc(colega,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Prefiro	preferir	VERB	<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	44	parataxis	_	_
+2	Prefiro	preferir	VERB	<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	44	parataxis	_	_|deprel=ccomp:parataxis
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 4	fazer	fazer	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
 5	prognósticos	prognóstico	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
@@ -85,8 +83,8 @@
 47	.	.	PUNCT	PU|@PU	_	44	punct	_	_
 
 # text = «O senhor Baker está quase a conseguir a paz», sentenciou, por seu lado, Gonzalez.
-# source = CETEMPúblico n=614 sec=pol sem=91b
 # sent_id = CP614-3
+# source = CETEMPúblico n=614 sec=pol sem=91b
 # id = 3206
 1	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -94,8 +92,8 @@
 4	Baker	Baker	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	3	dep	_	_
 5	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
 6	quase	quase	ADV	<quant>|ADV|@ADVL>	_	8	advmod	_	_
-7	a	a	ADP	PRP|@PRT-AUX<	_	8	case	_	_
-8	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	parataxis	_	_
+7	a	a	PART	PRP|@PRT-AUX<	_	8	case	_	_
+8	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	parataxis	_	_|deprel=ccomp:parataxis
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	paz	paz	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	ChangedBy=Issue165|SpaceAfter=No
 11	»	»	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No

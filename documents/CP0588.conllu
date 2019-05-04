@@ -1,6 +1,6 @@
 # text = Leo Tindemans ao PÚBLICO
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-1
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3055
 1	Leo	Leo	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Leo_Tindemans|MWEPOS=PROPN
 2	Tindemans	Tindemans	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -10,8 +10,8 @@
 5	PÚBLICO	Público	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = «É preciso dotar a Comunidade de uma constituição»
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-3
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3056
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
@@ -25,16 +25,13 @@
 10	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ex-primeiro-ministro, de 1974 a 1978, e ex-ministro dos Negócios Estrangeiros da Bélgica, no início da década de 80, Leo Tindemans é, hoje, o presidente do Grupo Democrata Cristão do Parlamento Europeu, o segundo maior agrupamento parlamentar de Estrasburgo, a seguir aos socialistas.
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-4
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3057
-# d2d = punct(Ex-primeiro-ministro,,) -> punct(ex-ministro,,)  #106
-# d2d = cc(Ex-primeiro-ministro,e) -> cc(ex-ministro,e)  #106
-# d2d = punct(Ex-primeiro-ministro,,) -> punct(ex-ministro,,)  #106
 1	Ex-primeiro-ministro	ex-primeiro-ministro	NOUN	<first-cjt>|<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	34	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 3	de	de	ADP	<first-cjt>|PRP|@N<PRED	_	4	case	_	_
-4	1974	1974	NUM	<year>|<first-cjt>|<date>|NUM|M|S|@P<	NumType=Card	1	nmod	_	ChangedBy=Issue168
+4	1974	1974	NUM	<year>|<first-cjt>|<date>|NUM|M|S|@P<	NumType=Card	1	nmod	_	ChangedBy=Issue168|deprel=appos:parataxis
 5	a	a	ADP	PRP|@A<	_	6	case	_	_
 6	1978	1978	NUM	<year>|<date>|NUM|M|S|@P<	NumType=Card	4	conj	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
@@ -98,11 +95,9 @@
 58	.	.	PUNCT	PU|@PU	_	34	punct	_	_
 
 # text = Europeísta convicto, como de resto o são todos os governos deste pequeno país, dividido ao meio pela língua e pela cultura, entre um Norte flamengo e um Sul francófono, Tindemans defende que o grau de união política conseguido em Maastricht é insuficiente.
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-5
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3058
-# d2d = cc(língua,e) -> cc(cultura,e)  #106
-# d2d = cc(Norte,e) -> cc(Sul,e)  #106
 1	Europeísta	europeísta	NOUN	<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	39	obl	_	_
 2	convicto	convicto	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -160,12 +155,9 @@
 51	.	.	PUNCT	PU|@PU	_	39	punct	_	_
 
 # text = Seria necessária uma nova conferência intergovernamental sobre a União Política Europeia -- mesmo antes da revisão do Tratado, agendada para 1996 -- e, em seu entender, o alargamento da Comunidade aconselharia a que esta se dotasse de uma verdadeira constituição com metas e com princípios.
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-6
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3059
-# d2d = punct(necessária,,) -> punct(aconselharia,,)  #106
-# d2d = cc(metas,e) -> cc(princípios,e)  #106
-# d2d = cc(necessária,e) -> cc(aconselharia,e)  #106
 1	Seria	ser	AUX	<first-cjt>|<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	necessária	necessário	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_

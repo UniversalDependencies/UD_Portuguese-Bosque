@@ -1,11 +1,7 @@
 # text = Na busca passada à casa do suspeito, de 38 anos, que trabalha como marceneiro, foi encontrada a caçadeira disparada três dias antes contra a porta do clube, localizado naquele bairro, uma espingarda de pressão de ar, diversos cartuchos e um panfleto de heroína.
-# source = CETEMPúblico n=983 sec=soc sem=94b
 # sent_id = CP983-1
+# source = CETEMPúblico n=983 sec=soc sem=94b
 # id = 5053
-# d2d = punct(caçadeira,,) -> punct(espingarda,,)  #106
-# d2d = punct(caçadeira,,) -> punct(espingarda,,)  #106
-# d2d = cc(caçadeira,e) -> cc(panfleto,e)  #106
-# d2d = punct(caçadeira,,) -> punct(cartuchos,,)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -22,7 +18,7 @@
 11	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 12	de	de	ADP	PRP|@N<PRED	_	14	case	_	_
 13	38	38	NUM	<card>|NUM|M|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168
-14	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+14	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 15	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 16	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	17	nsubj	_	_
 17	trabalha	trabalhar	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
@@ -68,10 +64,9 @@
 55	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = Apesar de haver suspeitas de o indivíduo estar relacionado com o tráfico de drogas duras nas Galinheiras e também na zona de Odivelas, onde possui outra casa, nenhuma quantidade significativa foi encontrada.
-# source = CETEMPúblico n=983 sec=soc sem=94b
 # sent_id = CP983-2
+# source = CETEMPúblico n=983 sec=soc sem=94b
 # id = 5054
-# d2d = cc(Galinheiras,e) -> cc(zona,e)  #106
 1	Apesar	apesar	ADV	ADV|@ADVL>	_	36	advmod	_	MWE=Apesar_de
 2	de	de	ADP	PRP|@A<	_	3	mark	_	_
 3	haver	haver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_

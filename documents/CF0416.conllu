@@ -1,13 +1,12 @@
 # text = Carmelita Aralse Tebele, 89, moradora do oitavo andar, passou mal com a fumaça e teve de ser carregada pelas escadas até uma ambulância.
-# source = CETENFolha n=416 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF416-1
+# source = CETENFolha n=416 cad=Cotidiano sec=soc sem=94a
 # id = 1741
-# d2d = cc(passou,e) -> cc(carregada,e)  #106
 1	Carmelita	Carmelita	PROPN	_	Gender=Fem|Number=Sing	13	nsubj	_	ChangedBy=Issue119|MWE=Carmelita_Aralse_Teb|MWEPOS=PROPN
 2	Aralse	Aralse	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	Tebele	Tebele	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-5	89	89	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+5	89	89	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No|deprel=appos:parataxis
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7	moradora	moradora	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	1	appos	_	_
 8-9	do	_	_	_	_	_	_	_	_
@@ -23,7 +22,7 @@
 17	fumaça	fumaça	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	ChangedBy=Issue137
 18	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 19	teve	ter	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	aux	_	_
-20	de	de	ADP	PRP|@PRT-AUX<	_	22	case	_	_
+20	de	de	PART	PRP|@PRT-AUX<	_	22	case	_	_
 21	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	22	aux:pass	_	_
 22	carregada	carregar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	conj	_	_
 23-24	pelas	_	_	_	_	_	_	_	_
@@ -36,13 +35,13 @@
 29	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Beth Tebele, 62, filha de Carmelita, foi medicada junto com a mãe.
-# source = CETENFolha n=416 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF416-2
+# source = CETENFolha n=416 cad=Cotidiano sec=soc sem=94a
 # id = 1742
 1	Beth	Beth	PROPN	_	Gender=Fem|Number=Sing	11	nsubj:pass	_	ChangedBy=Issue119|MWE=Beth_Tebele|MWEPOS=PROPN
 2	Tebele	Tebele	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-4	62	62	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+4	62	62	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No|deprel=appos:parataxis
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	filha	filha	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	1	appos	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
@@ -57,19 +56,16 @@
 16	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = O comerciante Albano Miguel Ferreira, 37, disse que estava na área de serviço de seu apartamento, no primeiro andar, e viu o fogo começar em um barracão nos fundos da loja.
-# source = CETENFolha n=416 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF416-3
+# source = CETENFolha n=416 cad=Cotidiano sec=soc sem=94a
 # id = 1743
-# d2d = cc(disse,e) -> cc(viu,e)  #106
-# d2d = punct(disse,,) -> punct(viu,,)  #106
-# d2d = punct(disse,,) -> punct(viu,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	comerciante	comerciante	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
 3	Albano	Albano	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Albano_Miguel_Ferreira|MWEPOS=PROPN
 4	Miguel	Miguel	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 5	Ferreira	Ferreira	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-7	37	37	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	2	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+7	37	37	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	2	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No|deprel=appos:parataxis
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	disse	dizer	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 10	que	que	SCONJ	KS|@SUB	_	14	mark	_	_

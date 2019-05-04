@@ -1,13 +1,7 @@
 # text = O modo de escapar disse é simples: aplica-se um reajuste de, digamos, 40% ; em seguida, avalia-se qual a inflação diária, digamos de 1,5% , e aí se aplica ao preço cheio um desconto decrescente.
-# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b &D
 # sent_id = CF442-1
+# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b &D
 # id = 1847
-# d2d = punct(aplica-,,) -> punct(avalia-,,)  #106
-# d2d = cc(aplica-,e) -> cc(aplica,e)  #106
-# d2d = punct(aplica-,,) -> punct(avalia-,,)  #106
-# d2d = punct(aplica-,,) -> punct(avalia-,,)  #106
-# d2d = punct(aplica-,,) -> punct(aplica,,)  #106
-# d2d = punct(aplica-,,) -> punct(aplica,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	modo	modo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	mark	_	_
@@ -59,8 +53,8 @@
 46	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = No primeiro dia após o reajuste de 40% , o desconto é de 38,5% ; no segundo de 37% e assim por diante.
-# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b
 # sent_id = CF442-2
+# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b
 # id = 1848
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
@@ -95,8 +89,8 @@
 29	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Assim, um carro de CR$ 10 milhões, sairia no primeiro dia após o reajuste por CR$ 6,15 milhões.
-# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b
 # sent_id = CF442-3
+# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b
 # id = 1849
 1	Assim	assim	ADV	<kc>|ADV|@ADVL>	_	10	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -123,8 +117,8 @@
 22	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = No segundo dia, por CR$ 6,3 milhões e assim sucessivamente.
-# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b &E
 # sent_id = CF442-4
+# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b &E
 # id = 1850
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|<first-cjt>|PRP|@ADVL	_	4	case	_	_
@@ -142,8 +136,8 @@
 13	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = É uma URV às avessas.
-# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b
 # sent_id = CF442-5
+# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b
 # id = 1851
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -155,12 +149,9 @@
 7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A generalização dessa indexação diária não só acostuma a economia, como passa a exercer pressão para que o governo oficialize e universalize a prática.
-# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b
 # sent_id = CF442-6
+# source = CETENFolha n=442 cad=Brasil sec=pol sem=94b
 # id = 1852
-# d2d = cc(oficialize,e) -> cc(universalize,e)  #106
-# d2d = cc(acostuma,como) -> cc(exercer,como)  #106
-# d2d = punct(acostuma,,) -> punct(exercer,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	generalização	generalização	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3-4	dessa	_	_	_	_	_	_	_	_
@@ -176,7 +167,7 @@
 12	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 13	como	como	ADV	<co-sta>|<kc>|ADV|@CO	_	16	cc	_	d2d:#106
 14	passa	passar	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
-15	a	a	ADP	PRP|@PRT-AUX<	_	16	case	_	_
+15	a	a	PART	PRP|@PRT-AUX<	_	16	case	_	_
 16	exercer	exercer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	conj	_	_
 17	pressão	pressão	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	obj	_	_
 18	para	para	ADP	PRP|@N<ARG	_	22	mark	_	_

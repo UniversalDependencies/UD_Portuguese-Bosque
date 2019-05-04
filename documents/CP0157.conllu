@@ -1,6 +1,6 @@
 # text = Redução orçamental na Áustria
-# source = CETEMPúblico n=157 sec=eco sem=96a
 # sent_id = CP157-1
+# source = CETEMPúblico n=157 sec=eco sem=96a
 # id = 832
 1	Redução	redução	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	orçamental	orçamental	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
@@ -10,10 +10,9 @@
 5	Áustria	Áustria	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 
 # text = Os dois principais partidos austríacos chegaram ontem a um acordo para fazer reduções orçamentais no valor de 100 mil milhões de xelins (perto de 1500 milhões de contos) em 1996 e 1997.
-# source = CETEMPúblico n=157 sec=eco sem=96a
 # sent_id = CP157-2
+# source = CETEMPúblico n=157 sec=eco sem=96a
 # id = 833
-# d2d = cc(1996,e) -> cc(1997,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 2	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
 3	principais	principal	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	4	amod	_	_
@@ -53,11 +52,9 @@
 36	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Dois terços dessas economias serão obtidas através de cortes nas despesas do Estado Federal, províncias e autoridades comunais, estando o resto dependente de um aumento de receitas.
-# source = CETEMPúblico n=157 sec=eco sem=96a
 # sent_id = CP157-3
+# source = CETEMPúblico n=157 sec=eco sem=96a
 # id = 834
-# d2d = punct(Estado,,) -> punct(províncias,,)  #106
-# d2d = cc(Estado,e) -> cc(autoridades,e)  #106
 1	Dois	dois	NUM	<card>|NUM|M|P|@>A	NumType=Card	2	dep	_	ChangedBy=Issue168
 2	terços	terço	ADJ	<NUM-ord>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur|NumType=Ord	7	nsubj:pass	_	ChangedBy=Issue172
 3-4	dessas	_	_	_	_	_	_	_	_
@@ -96,11 +93,9 @@
 33	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = As medidas, anunciadas pelos ministros da Economia, Johannes Ditz (conservador), e das Finanças, Viktor Klima (social-democrata), numa conferência de imprensa comum, destinam-se a assegurar o cumprimento dos critérios de convergência, assegurando que a Aústria possa entrar no primeiro comboio da União Económica e Monetária.
-# source = CETEMPúblico n=157 sec=eco sem=96a
 # sent_id = CP157-4
+# source = CETEMPúblico n=157 sec=eco sem=96a
 # id = 835
-# d2d = punct(Economia,,) -> punct(Finanças,,)  #106
-# d2d = cc(Economia,e) -> cc(Finanças,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	medidas	medida	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	36	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -117,7 +112,7 @@
 12	Johannes	Johannes	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	ChangedBy=Issue119|MWE=Johannes_Ditz|MWEPOS=PROPN
 13	Ditz	Ditz	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	(	(	PUNCT	PU|@PU	_	15	punct	_	ChangedBy=Issue165|SpaceAfter=No
-15	conservador	conservador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+15	conservador	conservador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 16	)	)	PUNCT	PU|@PU	_	15	punct	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 18	e	e	CCONJ	<co-postnom>|<co-app>|KC|@CO	_	21	cc	_	d2d:#106
@@ -129,7 +124,7 @@
 23	Viktor	Viktor	PROPN	_	Gender=Masc|Number=Sing	12	conj	_	ChangedBy=Issue119|MWE=Viktor_Klima|MWEPOS=PROPN
 24	Klima	Klima	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119
 25	(	(	PUNCT	PU|@PU	_	26	punct	_	ChangedBy=Issue165|SpaceAfter=No
-26	social-democrata	social-democrata	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	23	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+26	social-democrata	social-democrata	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	23	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 27	)	)	PUNCT	PU|@PU	_	26	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 29-30	numa	_	_	_	_	_	_	_	_
@@ -175,8 +170,8 @@
 64	.	.	PUNCT	PU|@PU	_	36	punct	_	_
 
 # text = Sem estas reduções, o défice público representaria 6,1 por cento do Produto Interno Bruto (PIB) este ano e 6,5 em 1997, valores muito acima do limite de três por cento imposto por Maastricht.
-# source = CETEMPúblico n=157 sec=eco sem=96a
 # sent_id = CP157-5
+# source = CETEMPúblico n=157 sec=eco sem=96a
 # id = 836
 1	Sem	sem	ADP	PRP|@ADVL>	_	3	case	_	_
 2	estas	este	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	3	det	_	_
@@ -222,8 +217,8 @@
 40	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = PIB desce em França ...
-# source = CETEMPúblico n=157 sec=eco sem=96a
 # sent_id = CP157-6
+# source = CETEMPúblico n=157 sec=eco sem=96a
 # id = 837
 1	PIB	PIB	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	desce	descer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_

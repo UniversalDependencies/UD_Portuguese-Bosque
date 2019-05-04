@@ -1,6 +1,6 @@
 # text = Favoritos em frente na Taça do Grand Slam
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-1
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1047
 1	Favoritos	favorito	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 2	em	em	ADP	PRP|@N<	_	3	case	_	MWE=em_frente
@@ -16,13 +16,9 @@
 10	Slam	Slam	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 
 # text = O croata Goran Ivanisevic, o norte-americano John McEnroe, o checoslovaco Petr Korda, o francês Henri Leconte e o holandês Richard Krajicek foram os primeiros a assegurar a passagem à segunda ronda da Taça do Grand Slam em ténis, competição que está a ser disputada em Munique (Alemanha) e que está dotada com seis milhões de dólares (cerca de 840 mil contos) em prémios.
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-2
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1048
-# d2d = punct(croata,,) -> punct(checoslovaco,,)  #106
-# d2d = punct(croata,,) -> punct(francês,,)  #106
-# d2d = punct(croata,,) -> punct(norte-americano,,)  #106
-# d2d = cc(croata,e) -> cc(holandês,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	croata	croata	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	27	nsubj	_	_
 3	Goran	Goran	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Goran_Ivanisevic|MWEPOS=PROPN
@@ -74,13 +70,13 @@
 46	competição	competição	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	38	appos	_	_
 47	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	51	nsubj:pass	_	_
 48	está	estar	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	51	aux	_	_
-49	a	a	ADP	PRP|@PRT-AUX<	_	51	case	_	_
+49	a	a	PART	PRP|@PRT-AUX<	_	51	case	_	_
 50	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	51	aux:pass	_	_
 51	disputada	disputar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	46	acl:relcl	_	_
 52	em	em	ADP	PRP|@<ADVL	_	53	case	_	_
 53	Munique	Munique	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	51	obl	_	ChangedBy=Issue137
 54	(	(	PUNCT	PU|@PU	_	55	punct	_	ChangedBy=Issue165|SpaceAfter=No
-55	Alemanha	Alemanha	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	53	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+55	Alemanha	Alemanha	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	53	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 56	)	)	PUNCT	PU|@PU	_	55	punct	_	_
 57	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	60	cc	_	_
 58	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	60	nsubj	_	_
@@ -103,10 +99,9 @@
 75	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 
 # text = Ivanisevic, nº 4 do «ranking» mundial, encontrou algumas dificuldades para bater o francês Guy Forget (7-5 e 6-4), acabando por se impôr na batalha do serviço.
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-3
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1049
-# d2d = cc(7-5,e) -> cc(6-4,e)  #106
 1	Ivanisevic	Ivanisevic	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 3	nº	nº	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
@@ -149,8 +144,8 @@
 37	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O francês conseguiu dez ases no encontro, contra 17 do croata, que está perto de atingir a incrível marca de mil ases este ano.
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-4
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1050
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	francês	francês	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -185,10 +180,9 @@
 29	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ivanisevic vai defrontar na segunda ronda o norte-americano John McEnroe, que eliminou o sueco Niklas Kulti (6-1 e 6-4).
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-5
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1051
-# d2d = cc(6-1,e) -> cc(6-4,e)  #106
 1	Ivanisevic	Ivanisevic	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
 3	defrontar	defrontar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
@@ -216,8 +210,8 @@
 24	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = McEnroe, que nas últimas semanas tem evitado os jornalistas, depois de ter admitido dificuldades no seu casamento com a actriz Tatum O'Neal, voltou a jogar o seu melhor ténis, empolgando a assistência com todo o seu repertório de pancadas espectaculares.
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-6
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1052
 1	McEnroe	McEnroe	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	30	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -249,7 +243,7 @@
 26	O'Neal	O'Neal	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 28	voltou	voltar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	aux	_	_
-29	a	a	ADP	PRP|@PRT-AUX<	_	30	case	_	_
+29	a	a	PART	PRP|@PRT-AUX<	_	30	case	_	_
 30	jogar	jogar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 32	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	34	det	_	_
@@ -270,12 +264,9 @@
 47	.	.	PUNCT	PU|@PU	_	30	punct	_	_
 
 # text = Henri Leconte, que venceu o sul-africano Wayne Ferreira (3-6, 6-3 e 6-0), vai defrontar na próxima ronda o vencedor do encontro entre Pete Sampras (EUA) e Alexander Volkov (Rússia).
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-7
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1053
-# d2d = cc(Pete,e) -> cc(Alexander,e)  #106
-# d2d = punct(3-6,,) -> punct(6-3,,)  #106
-# d2d = cc(3-6,e) -> cc(6-0,e)  #106
 1	Henri	Henri	PROPN	_	Gender=Masc|Number=Sing	19	nsubj	_	ChangedBy=Issue119|MWE=Henri_Leconte|MWEPOS=PROPN
 2	Leconte	Leconte	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -310,23 +301,20 @@
 30	Pete	Pete	PROPN	_	Gender=Masc|Number=Sing	28	nmod	_	ChangedBy=Issue119|MWE=Pete_Sampras|MWEPOS=PROPN
 31	Sampras	Sampras	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 32	(	(	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
-33	EUA	EUA	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	30	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+33	EUA	EUA	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	30	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 34	)	)	PUNCT	PU|@PU	_	33	punct	_	_
 35	e	e	CCONJ	<co-prparg>|KC|@CO	_	36	cc	_	d2d:#106
 36	Alexander	Alexander	PROPN	_	Gender=Masc|Number=Sing	30	conj	_	ChangedBy=Issue119|MWE=Alexander_Volkov|MWEPOS=PROPN
 37	Volkov	Volkov	PROPN	_	Number=Sing	36	flat:name	_	ChangedBy=Issue119
 38	(	(	PUNCT	PU|@PU	_	39	punct	_	ChangedBy=Issue165|SpaceAfter=No
-39	Rússia	Rússia	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+39	Rússia	Rússia	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 40	)	)	PUNCT	PU|@PU	_	39	punct	_	ChangedBy=Issue165|SpaceAfter=No
 41	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = Também Petr Korda não encontrou facilidades para derrotar o australiano Wally Mansur (2-6, 7-5 e 6-4), esperando agora pelo norte-americano Michael Chang, que bateu o seu compatriota André Agassi (6-4 e 6-2).
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-8
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1054
-# d2d = cc(2-6,e) -> cc(6-4,e)  #106
-# d2d = cc(6-4,e) -> cc(6-2,e)  #106
-# d2d = punct(2-6,,) -> punct(7-5,,)  #106
 1	Também	também	ADV	ADV|@>N	_	2	advmod	_	_
 2	Petr	Petr	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Petr_Korda|MWEPOS=PROPN
 3	Korda	Korda	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -371,10 +359,9 @@
 41	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Por fim, o jovem holandês Richard Krajicek teve o encontro mais fácil desta primeira ronda, batendo o espanhol Emílio Sanchez (especialista em pisos mais lentos) por 6-3 e 6-2.
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-9
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1055
-# d2d = cc(6-3,e) -> cc(6-2,e)  #106
 1	Por	por	ADP	PRP|@ADVL>	_	9	advmod	_	MWE=Por_fim
 2	fim	fim	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -413,10 +400,9 @@
 35	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Na próxima jornada, Krajicek defrontará o vencedor do encontro entre Stefan Edberg (Suécia) e Michael Stich (Alemanha).
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-10
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1056
-# d2d = cc(Stefan,e) -> cc(Michael,e)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	4	det	_	_
@@ -435,19 +421,19 @@
 14	Stefan	Stefan	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=Stefan_Edberg|MWEPOS=PROPN
 15	Edberg	Edberg	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
-17	Suécia	Suécia	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+17	Suécia	Suécia	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 18	)	)	PUNCT	PU|@PU	_	17	punct	_	_
 19	e	e	CCONJ	<co-prparg>|KC|@CO	_	20	cc	_	d2d:#106
 20	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	14	conj	_	ChangedBy=Issue119|MWE=Michael_Stich|MWEPOS=PROPN
 21	Stich	Stich	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 22	(	(	PUNCT	PU|@PU	_	23	punct	_	ChangedBy=Issue165|SpaceAfter=No
-23	Alemanha	Alemanha	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+23	Alemanha	Alemanha	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 24	)	)	PUNCT	PU|@PU	_	23	punct	_	ChangedBy=Issue165|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = «Mundiais» de atletismo confirmados para Estugarda
-# source = CETEMPúblico n=196 sec=des sem=92b
 # sent_id = CP196-11
+# source = CETEMPúblico n=196 sec=des sem=92b
 # id = 1057
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Mundiais	Mundial	PROPN	PROP|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	ChangedBy=Issue165|SpaceAfter=No

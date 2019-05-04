@@ -1,13 +1,11 @@
 # text = «Normalmente nós utilizamos dados históricos sobre a produtividade em cada região, além de informações de agricultores», diz.
-# source = CETENFolha n=966 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF966-1
+# source = CETENFolha n=966 cad=Agrofolha sec=agr sem=94b
 # id = 4088
-# d2d = punct(produtividade,,) -> punct(informações,,)  #106
-# d2d = cc(produtividade,além) -> cc(informações,além)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Normalmente	normalmente	ADV	ADV|@ADVL>	_	4	advmod	_	_
 3	nós	nós	PRON	PERS|M/F|1P|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_
-4	utilizamos	utilizar	VERB	<mv>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	21	parataxis	_	_
+4	utilizamos	utilizar	VERB	<mv>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	21	parataxis	_	_|deprel=ccomp:parataxis
 5	dados	dado	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	obj	_	_
 6	históricos	histórico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	5	amod	_	_
 7	sobre	sobre	ADP	PRP|@N<	_	9	case	_	_
@@ -28,8 +26,8 @@
 22	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = Segundo Formaggio, estão em estudo outras formas de obter a produtividade das culturas.
-# source = CETENFolha n=966 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF966-2
+# source = CETENFolha n=966 cad=Agrofolha sec=agr sem=94b
 # id = 4089
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Formaggio	Formaggio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -50,10 +48,9 @@
 16	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Ele estima em dez horas o tempo necessário para classificar as áreas e culturas plantadas em uma extensão de 180 quilômetros.
-# source = CETENFolha n=966 cad=Agrofolha sec=agr sem=94b
 # sent_id = CF966-3
+# source = CETENFolha n=966 cad=Agrofolha sec=agr sem=94b
 # id = 4090
-# d2d = cc(áreas,e) -> cc(culturas,e)  #106
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	estima	estimar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	em	em	ADP	PRP|@<PIV	_	5	case	_	_

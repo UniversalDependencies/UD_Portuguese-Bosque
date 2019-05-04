@@ -1,6 +1,6 @@
 # text = Feira atrai iniciante em informática
-# source = CETENFolha n=371 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF371-1
+# source = CETENFolha n=371 cad=Dinheiro sec=eco sem=94a
 # id = 1541
 1	Feira	feira	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	atrai	atrair	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -9,10 +9,9 @@
 5	informática	informática	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 
 # text = Professor e livro ajudam a aprender
-# source = CETENFolha n=371 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF371-2
+# source = CETENFolha n=371 cad=Dinheiro sec=eco sem=94a
 # id = 1542
-# d2d = cc(Professor,e) -> cc(livro,e)  #106
 1	Professor	professor	NOUN	<first-cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	livro	livro	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	_
@@ -21,13 +20,13 @@
 6	aprender	aprender	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	xcomp	_	_
 
 # text = A Fenasoft deixou de ser um reduto de especialistas em informática para atrair também quem pretendia comprar o primeiro computador.
-# source = CETENFolha n=371 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF371-4
+# source = CETENFolha n=371 cad=Dinheiro sec=eco sem=94a
 # id = 1543
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Fenasoft	Fenasoft	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	deixou	deixar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
-4	de	de	ADP	PRP|@PRT-AUX<	_	7	case	_	_
+4	de	de	PART	PRP|@PRT-AUX<	_	7	case	_	_
 5	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	cop	_	ChangedBy=Issue167
 6	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 7	reduto	reduto	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
@@ -47,12 +46,12 @@
 21	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = «Estou comprando o micro -- o portátil Aero, da Compaq -- para acelerar as pesquisas da minha tese de mestrado», disse Deborah Caldas.
-# source = CETENFolha n=371 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF371-5
+# source = CETENFolha n=371 cad=Dinheiro sec=eco sem=94a
 # id = 1544
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Estou	estar	AUX	<aux>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	_
-3	comprando	comprar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	27	parataxis	_	_
+3	comprando	comprar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	27	parataxis	_	_|deprel=ccomp:parataxis
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	micro	micro	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 6	--	--	PUNCT	PU|@PU	_	8	punct	_	_
@@ -63,7 +62,7 @@
 11-12	da	_	_	_	_	_	_	_	_
 11	de	de	ADP	<sam->|PRP|@N<PRED	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	Compaq	Compaq	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
+13	Compaq	Compaq	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_|deprel=appos:parataxis
 14	--	--	PUNCT	PU|@PU	_	8	punct	_	_
 15	para	para	ADP	PRP|@<ADVL	_	16	mark	_	_
 16	acelerar	acelerar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	_

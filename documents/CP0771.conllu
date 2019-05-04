@@ -1,9 +1,7 @@
 # text = Mark Miller é o treinador-jogador, mas é possível que Toni Formosa venha a ser uma espécie de «manager» da equipa, com assento no banco, se aceitar a proposta que lhe fez o presidente do clube.
-# source = CETEMPúblico n=771 sec=des sem=93b
 # sent_id = CP771-1
+# source = CETEMPúblico n=771 sec=des sem=93b
 # id = 3951
-# d2d = punct(treinador-jogador,,) -> punct(possível,,)  #106
-# d2d = cc(treinador-jogador,mas) -> cc(possível,mas)  #106
 1	Mark	Mark	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Mark_Miller|MWEPOS=PROPN
 2	Miller	Miller	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
@@ -17,7 +15,7 @@
 11	Toni	Toni	PROPN	_	Gender=Masc|Number=Sing	17	nsubj	_	ChangedBy=Issue119|MWE=Toni_Formosa|MWEPOS=PROPN
 12	Formosa	Formosa	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 13	venha	vir	AUX	<aux>|V|PR|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-14	a	a	ADP	PRP|@PRT-AUX<	_	17	case	_	_
+14	a	a	PART	PRP|@PRT-AUX<	_	17	case	_	_
 15	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	17	cop	_	ChangedBy=Issue167
 16	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	espécie	espécie	NOUN	<meta>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	9	csubj	_	_
@@ -53,8 +51,8 @@
 44	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Terá que dar uma resposta até à próxima semana.
-# source = CETEMPúblico n=771 sec=des sem=93b
 # sent_id = CP771-2
+# source = CETEMPúblico n=771 sec=des sem=93b
 # id = 3952
 1	Terá	ter	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux	_	_
 2	que	que	SCONJ	KS|@PRT-AUX<	_	3	mark	_	_
@@ -70,10 +68,9 @@
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Nos jogos com o Ekranes, os dois golos foram marcados pelo líbero Buttigieg, um jogador elegante e talvez o melhor do país.
-# source = CETEMPúblico n=771 sec=des sem=93b
 # sent_id = CP771-3
+# source = CETEMPúblico n=771 sec=des sem=93b
 # id = 3953
-# d2d = cc(elegante,e) -> cc(melhor,e)  #106
 1-2	Nos	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
@@ -107,12 +104,9 @@
 28	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Os outros internacionais são Cluett (guarda-redes), Caucchi e Buttigieg (defesas) e Buhagiar (normalmente defesa-esquerdo).
-# source = CETEMPúblico n=771 sec=des sem=93b
 # sent_id = CP771-4
+# source = CETEMPúblico n=771 sec=des sem=93b
 # id = 3954
-# d2d = cc(Caucchi,e) -> cc(Buttigieg,e)  #106
-# d2d = cc(Cluett,e) -> cc(Buhagiar,e)  #106
-# d2d = punct(Cluett,,) -> punct(Caucchi,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
 3	internacionais	internacional	NOUN	<n>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_

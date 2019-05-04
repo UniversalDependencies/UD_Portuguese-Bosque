@@ -1,20 +1,20 @@
 # text = Vila Real
-# source = CETEMPúblico n=370 sec=soc sem=97b
 # sent_id = CP370-1
+# source = CETEMPúblico n=370 sec=soc sem=97b
 # id = 1937
 1	Vila	Vila	PROPN	_	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Vila_Real|MWEPOS=PROPN
 2	Real	Real	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 
 # text = Vereador renunciou
-# source = CETEMPúblico n=370 sec=soc sem=97b
 # sent_id = CP370-2
+# source = CETEMPúblico n=370 sec=soc sem=97b
 # id = 1938
 1	Vereador	vereador	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	renunciou	renunciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 
 # text = Foi com duras críticas ao presidente da Câmara de Vila Real, Manuel Martins, que o «ex-número dois» desta autarquia, Caseiro Marques (PSD), renunciou esta semana ao seu mandato.
-# source = CETEMPúblico n=370 sec=soc sem=97b
 # sent_id = CP370-3
+# source = CETEMPúblico n=370 sec=soc sem=97b
 # id = 1939
 1	Foi	foi	ADV	<foc>|ADV|@ADVL>	_	34	mark	_	_
 2	com	com	ADP	PRP|@ADVL>	_	4	case	_	_
@@ -49,7 +49,7 @@
 28	Caseiro	Caseiro	PROPN	_	Gender=Masc|Number=Sing	21	appos	_	ChangedBy=Issue119|MWE=Caseiro_Marques|MWEPOS=PROPN
 29	Marques	Marques	PROPN	_	Number=Sing	28	flat:name	_	ChangedBy=Issue119
 30	(	(	PUNCT	PU|@PU	_	31	punct	_	ChangedBy=Issue165|SpaceAfter=No
-31	PSD	PSD	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	28	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+31	PSD	PSD	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	28	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 32	)	)	PUNCT	PU|@PU	_	31	punct	_	ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 34	renunciou	renunciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -63,12 +63,9 @@
 41	.	.	PUNCT	PU|@PU	_	34	punct	_	_
 
 # text = Na sua opinião, Manuel Martins, que é também líder da Concelhia do PSD local e que agora se apresenta novamente como candidato à Câmara, «afunilou o PSD» a nível local e «não está à altura de conduzir este partido para o futuro».
-# source = CETEMPúblico n=370 sec=soc sem=97b
 # sent_id = CP370-4
+# source = CETEMPúblico n=370 sec=soc sem=97b
 # id = 1940
-# d2d = punct(afunilou,») -> punct(altura,»)  #106
-# d2d = cc(afunilou,e) -> cc(altura,e)  #106
-# d2d = cc(líder,e) -> cc(apresenta,e)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_

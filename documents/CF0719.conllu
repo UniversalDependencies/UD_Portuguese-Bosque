@@ -1,10 +1,7 @@
 # text = Durante a negociação, ontem à tarde, Muller telefonou para o presidente do São Paulo, Fernando Casal de Rey, e se lamentou.
-# source = CETENFolha n=719 cad=Esporte sec=des sem=94a
 # sent_id = CF719-1
+# source = CETENFolha n=719 cad=Esporte sec=des sem=94a
 # id = 3020
-# d2d = punct(telefonou,,) -> punct(lamentou,,)  #106
-# d2d = punct(telefonou,,) -> punct(lamentou,,)  #106
-# d2d = cc(telefonou,e) -> cc(lamentou,e)  #106
 1	Durante	durante	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	negociação	negociação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -37,15 +34,12 @@
 28	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = «Ele reclamou de que não lhe pagariam o prometido, não lhe dariam um carro e que só bancariam seis meses de aluguel de sua casa e não os quatro anos, como esperava», disse o dirigente.
-# source = CETENFolha n=719 cad=Esporte sec=des sem=94a &E
 # sent_id = CF719-2
+# source = CETENFolha n=719 cad=Esporte sec=des sem=94a &E
 # id = 3021
-# d2d = cc(pagariam,e) -> cc(bancariam,e)  #106
-# d2d = punct(pagariam,,) -> punct(dariam,,)  #106
-# d2d = cc(meses,e) -> cc(anos,e)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
-3	reclamou	reclamar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	parataxis	_	_
+3	reclamou	reclamar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	parataxis	_	_|deprel=ccomp:parataxis
 4	de	de	ADP	PRP|@<PIV	_	8	mark	_	_
 5	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
 6	não	não	ADV	_	Polarity=Neg	8	advmod	_	_

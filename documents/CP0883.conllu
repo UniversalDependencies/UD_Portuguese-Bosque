@@ -1,6 +1,6 @@
 # text = A Direcção do Torreense, cuja a equipa de futebol milita na 2ª Divisão de Honra, demitiu-se em bloco na Assembleia Geral realizada na noite da passada segunda-feira.
-# source = CETEMPúblico n=883 sec=des sem=92b &W
 # sent_id = CP883-1
+# source = CETEMPúblico n=883 sec=des sem=92b &W
 # id = 4524
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Direcção	Direcção	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
@@ -46,8 +46,8 @@
 36	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Razão: a Câmara Municipal de Torres Vedras (CMTV) não tem ajudado o clube financeiramente.
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-2
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4525
 1	Razão	razão	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -69,18 +69,18 @@
 18	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «Chegámos a um ponto em que deixaram de existir condições financeiras que garantam uma gestão responsável do clube», garantem os dirigentes.
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-3
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4526
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Chegámos	chegar	VERB	<mv>|V|PS|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	23	parataxis	_	_
+2	Chegámos	chegar	VERB	<mv>|V|PS|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	23	parataxis	_	_|deprel=ccomp:parataxis
 3	a	a	ADP	PRP|@<SA	_	5	case	_	_
 4	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
 5	ponto	ponto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
 6	em	em	ADP	PRP|@ADVL>	_	7	case	_	_
 7	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	10	obl	_	_
 8	deixaram	deixar	AUX	<aux>|V|PS|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
-9	de	de	ADP	PRP|@PRT-AUX<	_	10	case	_	_
+9	de	de	PART	PRP|@PRT-AUX<	_	10	case	_	_
 10	existir	existir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	acl:relcl	_	_
 11	condições	condição	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	10	nsubj	_	_
 12	financeiras	financeiro	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	11	amod	_	_
@@ -101,13 +101,9 @@
 26	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
 # text = António José dos Santos, o presidente demissionário, prometeu continuar a assegurar a gestão corrente do clube e admitiu «reconsiderar» a sua posição e ficar até final do mandato, mas «só depois de saber «com quanto é que Câmara pode auxiliar o clube».
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-4
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4527
-# d2d = cc(prometeu,e) -> cc(admitiu,e)  #106
-# d2d = cc(reconsiderar,e) -> cc(ficar,e)  #106
-# d2d = cc(reconsiderar,mas) -> cc(depois,mas)  #106
-# d2d = punct(reconsiderar,») -> punct(ficar,»)  #106
 1	António	António	PROPN	_	Gender=Masc|Number=Sing	11	nsubj	_	ChangedBy=Issue119|MWE=António_José|MWEPOS=PROPN
 2	José	José	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3-4	dos	_	_	_	_	_	_	_	_
@@ -121,7 +117,7 @@
 10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 11	prometeu	prometer	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 12	continuar	continuar	AUX	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	14	aux	_	_
-13	a	a	ADP	PRP|@PRT-AUX<	_	14	case	_	_
+13	a	a	PART	PRP|@PRT-AUX<	_	14	case	_	_
 14	assegurar	assegurar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	gestão	gestão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
@@ -167,8 +163,8 @@
 54	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = José Augusto Carvalho, presidente da CMTV, considera «profundamente injustas» as acusações lançadas sobre a autarquia.
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-5
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4528
 1	José	José	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	ChangedBy=Issue119|MWE=José_Augusto_Carvalho|MWEPOS=PROPN
 2	Augusto	Augusto	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -194,16 +190,15 @@
 21	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = «A câmara só se comprometeu a contribuir com igual montante ao total da soma dos restantes sócios-empresas e cumpriu», disse José Augusto Carvalho.
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-6
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4529
-# d2d = cc(comprometeu,e) -> cc(cumpriu,e)  #106
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	câmara	câmara	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 4	só	só	ADV	ADV|@ADVL>	_	6	advmod	_	_
 5	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	6	expl	_	ChangedBy=Issue135
-6	comprometeu	comprometer	VERB	<first-cjt>|<mv>|<se-passive>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	parataxis	_	_
+6	comprometeu	comprometer	VERB	<first-cjt>|<mv>|<se-passive>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	parataxis	_	_|deprel=ccomp:parataxis
 7	a	a	ADP	<first-cjt>|PRP|@<PIV	_	8	mark	_	_
 8	contribuir	contribuir	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
 9	com	com	ADP	PRP|@<ADVL	_	11	case	_	_
@@ -235,8 +230,8 @@
 32	.	.	PUNCT	PU|@PU	_	28	punct	_	_
 
 # text = Federação de andebol analisa confusão nas Antas
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-7
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4530
 1	Federação	Federação	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	MWE=Federação_de_andebol
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -249,8 +244,8 @@
 8	Antas	Antas	PROPN	PROP|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	_
 
 # text = A Federação Portuguesa de Andebol vai analisar amanhã, em reunião do executivo, a não realização, no passado sábado, do jogo FC Porto- Ginásio do Sul, referente à segunda jornada do «Nacional».
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-8
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4531
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Federação	Federação	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	MWE=Federação_Portuguesa
@@ -306,15 +301,15 @@
 46	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O executivo federativo está já a fazer um levantamento de toda a documentação, que deverá ser complementada com relatório da equipa de arbitragem nomeada para dirigir a partida.
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-9
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4532
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	executivo	executivo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	federativo	federativo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
 4	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
 5	já	já	ADV	ADV|@ADVL>	_	7	advmod	_	_
-6	a	a	ADP	PRP|@PRT-AUX<	_	7	case	_	_
+6	a	a	PART	PRP|@PRT-AUX<	_	7	case	_	_
 7	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 8	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	levantamento	levantamento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
@@ -343,10 +338,9 @@
 31	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Segundo uma fonte da FPA, o jogo foi marcado para o Pavilhão das Antas e o FC Porto recebeu a notificação através de comunicado, «logo pode-se concluir que o recinto já não se encontrava interdito».
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-10
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4533
-# d2d = cc(marcado,e) -> cc(recebeu,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	fonte	fonte	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137
@@ -395,8 +389,8 @@
 43	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = A resolução do problema pode agora passar por um acordo entre os clubes.
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-11
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4534
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	resolução	resolução	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
@@ -416,14 +410,14 @@
 15	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Caso isso não venha a verificar-se, a Federação vai instaurar um processo onde o FC Porto terá de apresentar as razões que levaram a equipa a comparecer em Aveiro e não nas Antas.
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-12
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4535
 1	Caso	caso	SCONJ	KS|@SUB	_	6	mark	_	_
 2	isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	6	nsubj	_	_
 3	não	não	ADV	_	Polarity=Neg	6	advmod	_	_
 4	venha	vir	AUX	<aux>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
+5	a	a	PART	PRP|@PRT-AUX<	_	6	case	_	_
 6-7	verificar-se	_	_	_	_	_	_	_	SpaceAfter=No
 6	verificar	verificar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	12	advcl	_	_
 7	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl	_	ChangedBy=Issue135
@@ -439,7 +433,7 @@
 17	FC	FC	PROPN	_	Gender=Masc|Number=Sing	21	nsubj	_	ChangedBy=Issue119|MWE=FC_Porto|MWEPOS=PROPN
 18	Porto	Porto	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	terá	ter	AUX	<aux>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	21	aux	_	_
-20	de	de	ADP	PRP|@PRT-AUX<	_	21	case	_	_
+20	de	de	PART	PRP|@PRT-AUX<	_	21	case	_	_
 21	apresentar	apresentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	acl:relcl	_	_
 22	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_
 23	razões	razão	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	21	obj	_	_
@@ -460,10 +454,9 @@
 37	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Circuito Europeu de golfe no Algarve e na Madeira
-# source = CETEMPúblico n=883 sec=des sem=92b
 # sent_id = CP883-13
+# source = CETEMPúblico n=883 sec=des sem=92b
 # id = 4536
-# d2d = cc(Algarve,e) -> cc(Madeira,e)  #106
 1	Circuito	Circuito	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	MWE=Circuito_Europeu
 2	Europeu	Europeu	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_

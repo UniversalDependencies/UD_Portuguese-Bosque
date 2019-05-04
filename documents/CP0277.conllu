@@ -1,13 +1,7 @@
 # text = A equipa masculina concorre à Primeira Liga, no decatlo, em Helmond, na Holanda, contra as formações da Alemanha, Bielorússia, Estónia, Rússia, Holanda, Polónia e Suiça.
-# source = CETEMPúblico n=277 sec=des sem=95b &L
 # sent_id = CP277-1
+# source = CETEMPúblico n=277 sec=des sem=95b &L
 # id = 1484
-# d2d = punct(Alemanha,,) -> punct(Estónia,,)  #106
-# d2d = punct(Alemanha,,) -> punct(Polónia,,)  #106
-# d2d = cc(Alemanha,e) -> cc(Suiça,e)  #106
-# d2d = punct(Alemanha,,) -> punct(Bielorússia,,)  #106
-# d2d = punct(Alemanha,,) -> punct(Rússia,,)  #106
-# d2d = punct(Alemanha,,) -> punct(Holanda,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	equipa	equipa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	masculina	masculino	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -29,7 +23,7 @@
 17-18	na	_	_	_	_	_	_	_	_
 17	em	em	ADP	<sam->|PRP|@N<PRED	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	19	det	_	_
-19	Holanda	Holanda	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+19	Holanda	Holanda	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 21	contra	contra	ADP	PRP|@<ADVL	_	23	case	_	_
 22	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_
@@ -53,11 +47,9 @@
 39	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Sobem à Superliga (para o ano) as duas primeiras equipas e descem as duas últimas e Portugal dificilmente escapará à despromoção.
-# source = CETEMPúblico n=277 sec=des sem=95b
 # sent_id = CP277-2
+# source = CETEMPúblico n=277 sec=des sem=95b
 # id = 1485
-# d2d = cc(Sobem,e) -> cc(descem,e)  #106
-# d2d = cc(Sobem,e) -> cc(escapará,e)  #106
 1	Sobem	subir	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2-3	à	_	_	_	_	_	_	_	_
 2	a	a	ADP	<sam->|PRP|@<SA	_	4	case	_	_
@@ -88,10 +80,9 @@
 26	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = É que, de facto, só por puro acaso equipas como a alemã e a russa estão nesta divisão.
-# source = CETEMPúblico n=277 sec=des sem=95b
 # sent_id = CP277-3
+# source = CETEMPúblico n=277 sec=des sem=95b
 # id = 1486
-# d2d = cc(alemã,e) -> cc(russa,e)  #106
 1	É	é	ADP	PRP|@ADVL>	_	2	case	_	MWE=É_que
 2	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -117,13 +108,9 @@
 22	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = Portugal alinha com Mário Anibal Ramos (Benfica), que recentemente deixou o recorde nacional em 7614 pontos, F. Nuno Fernandes (FC Porto- 7381 pontos), José Durão (CN Rio Maior - 6614 pontos) e Luís Herédio Costa (Sporting - 6585 pontos).
-# source = CETEMPúblico n=277 sec=des sem=95b &L
 # sent_id = CP277-4
+# source = CETEMPúblico n=277 sec=des sem=95b &L
 # id = 1487
-# d2d = punct(Mário,,) -> punct(F.,,)  #106
-# d2d = cc(Mário,e) -> cc(Luís,e)  #106
-# d2d = punct(Mário,,) -> punct(F.,,)  #106
-# d2d = punct(Mário,,) -> punct(José,,)  #106
 1	Portugal	Portugal	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	alinha	alinhar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	com	com	ADP	PRP|@<PIV	_	4	case	_	_
@@ -131,7 +118,7 @@
 5	Anibal	Anibal	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	Ramos	Ramos	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 7	(	(	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
-8	Benfica	Benfica	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+8	Benfica	Benfica	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 9	)	)	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 11	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	_	_
@@ -170,7 +157,7 @@
 44	Herédio	Herédio	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
 45	Costa	Costa	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
 46	(	(	PUNCT	PU|@PU	_	47	punct	_	ChangedBy=Issue165|SpaceAfter=No
-47	Sporting	Sporting	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	43	nmod	_	_
+47	Sporting	Sporting	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	43	nmod	_	_|deprel=appos:parataxis
 48	-	-	PUNCT	PU|@PU	_	40	punct	_	_
 49	6585	6585	NUM	<card>|NUM|M|P|@>N	NumType=Card	50	nummod	_	ChangedBy=Issue168
 50	pontos	ponto	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	47	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -178,16 +165,9 @@
 52	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Ao mesmo tempo decorre a Superliga feminina (heptatlo), envolvendo a Bielorússia, França, Grã-Bretanha, Alemanha, Holanda, Polónia, Rússia e Ucrânia, com as russas favoritas para manterem o troféu.
-# source = CETEMPúblico n=277 sec=des sem=95b
 # sent_id = CP277-5
+# source = CETEMPúblico n=277 sec=des sem=95b
 # id = 1488
-# d2d = punct(Bielorússia,,) -> punct(Holanda,,)  #106
-# d2d = punct(Bielorússia,,) -> punct(Rússia,,)  #106
-# d2d = punct(Bielorússia,,) -> punct(França,,)  #106
-# d2d = punct(Bielorússia,,) -> punct(Alemanha,,)  #106
-# d2d = cc(Bielorússia,e) -> cc(Ucrânia,e)  #106
-# d2d = punct(Bielorússia,,) -> punct(Polónia,,)  #106
-# d2d = punct(Bielorússia,,) -> punct(Grã-Bretanha,,)  #106
 1	Ao	ao	ADP	PRP|@ADVL>	_	3	case	_	MWE=Ao_mesmo_tempo
 2	mesmo	mesmo	ADJ	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	tempo	tempo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
@@ -228,10 +208,9 @@
 38	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = A selecção feminina portuguesa, por seu lado, compete no heptatlo da segunda liga em Dilbeek, na Bélgica, com belgas e suiças.
-# source = CETEMPúblico n=277 sec=des sem=95b
 # sent_id = CP277-6
+# source = CETEMPúblico n=277 sec=des sem=95b
 # id = 1489
-# d2d = cc(belgas,e) -> cc(suiças,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	selecção	selecção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
 3	feminina	feminino	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -257,7 +236,7 @@
 21-22	na	_	_	_	_	_	_	_	_
 21	em	em	ADP	<sam->|PRP|@N<PRED	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	23	det	_	_
-23	Bélgica	Bélgica	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+23	Bélgica	Bélgica	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 25	com	com	ADP	PRP|@<PIV	_	26	case	_	_
 26	belgas	belga	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	obj	_	_
@@ -266,11 +245,9 @@
 29	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = A equipa vencedora subirá à primeira liga, mas para essa posição é favorita a Suiça.
-# source = CETEMPúblico n=277 sec=des sem=95b
 # sent_id = CP277-7
+# source = CETEMPúblico n=277 sec=des sem=95b
 # id = 1490
-# d2d = cc(subirá,mas) -> cc(favorita,mas)  #106
-# d2d = punct(subirá,,) -> punct(favorita,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	equipa	equipa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	vencedora	vencedor	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -292,19 +269,16 @@
 18	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Portugal alinha com Sandra Turpin (Benfica- 5218 pontos), Sónia Machado (individual- 5061 p), Mónica Sousa (GD Cavadas- 5122 pontos) e Catarina Rafael (Bairro Anjos- 4602 pontos).
-# source = CETEMPúblico n=277 sec=des sem=95b &L
 # sent_id = CP277-8
+# source = CETEMPúblico n=277 sec=des sem=95b &L
 # id = 1491
-# d2d = cc(Sandra,e) -> cc(Catarina,e)  #106
-# d2d = punct(Sandra,,) -> punct(Sónia,,)  #106
-# d2d = punct(Sandra,,) -> punct(Mónica,,)  #106
 1	Portugal	Portugal	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	alinha	alinhar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	com	com	ADP	PRP|@<PIV	_	4	case	_	_
 4	Sandra	Sandra	PROPN	_	Gender=Fem|Number=Sing	2	obl	_	ChangedBy=Issue119|MWE=Sandra_Turpin|MWEPOS=PROPN
 5	Turpin	Turpin	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	(	(	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
-7	Benfica	Benfica	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+7	Benfica	Benfica	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No|deprel=appos:parataxis
 8	-	-	PUNCT	PU|@PU	_	10	punct	_	_
 9	5218	5218	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	nummod	_	ChangedBy=Issue168
 10	pontos	ponto	NOUN	<first-cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	7	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -313,7 +287,7 @@
 13	Sónia	Sónia	PROPN	_	Gender=Fem|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Sónia_Machado|MWEPOS=PROPN
 14	Machado	Machado	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	(	(	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
-16	individual	individual	ADJ	<cjt>|<first-cjt>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No
+16	individual	individual	ADJ	<cjt>|<first-cjt>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	13	nmod	_	SpaceAfter=No|deprel=appos:parataxis
 17	-	-	PUNCT	_	_	19	punct	_	_
 18	5061	5061	NUM	<card>|NUM|F|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168
 19	p	p	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	16	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -322,7 +296,7 @@
 22	Mónica	Mónica	PROPN	_	Gender=Fem|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Mónica_Sousa|MWEPOS=PROPN
 23	Sousa	Sousa	PROPN	_	Number=Sing	22	flat:name	_	ChangedBy=Issue119
 24	(	(	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
-25	GD	GD	PROPN	_	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue119|MWE=GD_Cavadas|MWEPOS=PROPN
+25	GD	GD	PROPN	_	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue119|MWE=GD_Cavadas|MWEPOS=PROPN|deprel=appos:parataxis
 26	Cavadas	Cavadas	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 27	-	-	PUNCT	PU|@PU	_	29	punct	_	_
 28	5122	5122	NUM	<card>|NUM|M|P|@>N	NumType=Card	29	nummod	_	ChangedBy=Issue168
@@ -332,7 +306,7 @@
 32	Catarina	Catarina	PROPN	_	Gender=Fem|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Catarina_Rafael|MWEPOS=PROPN
 33	Rafael	Rafael	PROPN	_	Number=Sing	32	flat:name	_	ChangedBy=Issue119
 34	(	(	PUNCT	PU|@PU	_	35	punct	_	ChangedBy=Issue165|SpaceAfter=No
-35	Bairro	Bairro	PROPN	_	Gender=Masc|Number=Sing	32	nmod	_	ChangedBy=Issue119|MWE=Bairro_Anjos|MWEPOS=PROPN
+35	Bairro	Bairro	PROPN	_	Gender=Masc|Number=Sing	32	nmod	_	ChangedBy=Issue119|MWE=Bairro_Anjos|MWEPOS=PROPN|deprel=appos:parataxis
 36	Anjos	Anjos	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 37	-	-	PUNCT	PU|@PU	_	39	punct	_	_
 38	4602	4602	NUM	<card>|NUM|M|P|@>N	NumType=Card	39	nummod	_	ChangedBy=Issue168
@@ -341,8 +315,8 @@
 41	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = A maior perspectiva da parte portuguesa é a hipótese do recorde nacional (é de 5228 pontos) por Sandra Turpin.
-# source = CETEMPúblico n=277 sec=des sem=95b
 # sent_id = CP277-9
+# source = CETEMPúblico n=277 sec=des sem=95b
 # id = 1492
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	maior	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
