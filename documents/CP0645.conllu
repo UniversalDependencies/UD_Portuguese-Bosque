@@ -54,13 +54,13 @@
 34-35	da	_	_	_	_	_	_	_	_
 34	de	de	ADP	<sam->|PRP|@N<	_	36	case	_	_
 35	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
-36	Comissão	comissão	NOUN	N|@P<	_	33	nmod	_	_
+36	Comissão	comissão	NOUN	N|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
 37	de	de	ADP	PRP|@N<	_	38	case	_	_
-38	Protecção	protecção	NOUN	N|@P<	_	36	nmod	_	_
+38	Protecção	protecção	NOUN	N|@P<	Gender=Fem|Number=Sing	36	nmod	_	_
 39	de	de	ADP	PRP|@N<	_	40	case	_	_
-40	Menores	menores	NOUN	N|@P<	_	38	nmod	_	_
+40	Menores	menores	ADJ	N|@P<	Gender=Masc|Number=Sing	38	nmod	_	_
 41	de	de	ADP	PRP|@N<	_	42	case	_	_
-42	Velas	velas	NOUN	N|@P<	_	40	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+42	Velas	velas	NOUN	N|@P<	Gender=Fem|Number=Plur	40	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 43	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
 # text = Carlos Noysan acrescentou que o absentismo escolar constitui o principal motivo de queixas apresentadas à comissão.
@@ -263,7 +263,7 @@
 8	14	14	NUM	<card>|NUM|M|P|@>N	NumType=Card	9	nummod	_	ChangedBy=Issue168
 9	metros	metro	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	conj	_	_
 10	de	de	ADP	PRP|@N<	_	11	case	_	MWE=de_comprimento
-11	comprimento	comprimento	NOUN	N|@P<	_	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+11	comprimento	comprimento	NOUN	N|@P<	Gender=Masc|Number=Sing	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 13-14	destina-se	_	_	_	_	_	_	_	_
 13	destina	destinar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -300,12 +300,12 @@
 # source = CETEMPúblico n=645 sec=soc sem=97a
 # id = 3362
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	secretário	secretário	NOUN	N|@SUBJ>	_	11	nsubj	_	MWE=secretário_regional_da_Economia
+2	secretário	secretário	NOUN	N|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	MWE=secretário_regional_da_Economia
 3	regional	regional	ADJ	ADJ|@N<	_	2	amod	_	_
 4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	Economia	economia	NOUN	N|@P<	_	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+6	Economia	economia	NOUN	N|@P<	Gender=Fem|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 8	Duarte	Duarte	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Duarte_Ponte|MWEPOS=PROPN
 9	Ponte	Ponte	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -340,7 +340,7 @@
 # source = CETEMPúblico n=645 sec=soc sem=97a
 # id = 3363
 1	A	a	ADP	PRP|@ADVL>	_	2	case	_	MWE=A_partir_de
-2	partir	partir	NOUN	N|@P<	_	14	obl	_	_
+2	partir	partir	VERB	N|@P<	VerbForm=Inf	14	obl	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
 4	Maio	maio	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	2	punct	_	_
