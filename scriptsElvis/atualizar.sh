@@ -1,5 +1,7 @@
 set -e
 
+cd ..
+
 git checkout workbench
 git fetch oficial
 git pull oficial workbench

@@ -2,8 +2,6 @@
 
 set -e
 
-cd ..
-
 if [ $# -eq 0 ]
   then
     git branch -l
