@@ -2,9 +2,7 @@
 #$1 = branch
 #set -e
 
-cd ..
-
-sh 1_criar_branch.sh $1
+sh scriptsElvis/1_criar_branch.sh $1
 mkdir regras
 mkdir regras/$1
 ln -nfrs ~/Dropbox/PIBIC/ACDC-UD/estrutura_ud.py regras/$1
@@ -22,5 +20,5 @@ for sentid, sentence in corpus.sentences.items():
 		#code
 
 print(corpus.to_str())" > $1.py
-sublime-text.subl $1.py
+subl $1.py
 echo "Vá para regras/$1"
