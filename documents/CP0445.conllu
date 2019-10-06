@@ -103,11 +103,11 @@
 # sent_id = CP445-4
 # source = CETEMPúblico n=445 sec=clt sem=94b
 # id = 2344
-1	Quanto	quanto	ADV	ADV|@ADVL>	_	8	advmod	_	MWE=Quanto_a
+1	Quanto	quanto	ADV	ADV|@ADVL>	_	4	case	_	MWE=Quanto_a|MWEPOS=ADP
 2-3	aos	_	_	_	_	_	_	_	_
-2	a	a	ADP	PRP|@A<	_	4	case	_	_
+2	a	a	ADP	PRP|@A<	_	1	fixed	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	Clippers	Clippers	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	1	obl	_	ChangedBy=Issue165|SpaceAfter=No
+4	Clippers	Clippers	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 6	ainda	ainda	ADV	ADV|@>A	_	7	advmod	_	_
 7	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
@@ -201,8 +201,8 @@
 22	autoridades	autoridade	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	23	nsubj	_	_
 23	pretendem	pretender	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 24	gastar	gastar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	23	xcomp	_	_
-25	cerca	cerca	ADV	ADV|@>A	_	27	advmod	_	MWE=cerca_de
-26	de	de	ADP	<prp>|PRP|@A<	_	25	case	_	_
+25	cerca	cerca	ADV	ADV|@>A	_	27	advmod	_	MWE=cerca_de|MWEPOS=ADV
+26	de	de	ADP	<prp>|PRP|@A<	_	25	fixed	_	_
 27	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	nummod	_	ChangedBy=Issue168|MWE=30_milhões
 28	milhões	milhão	NUM	<np-def>|N|M|P|@<ADVL	NumType=Card	27	flat	_	_
 29	de	de	ADP	PRP|@N<ARG	_	30	case	_	_
