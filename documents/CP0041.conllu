@@ -2,8 +2,8 @@
 # sent_id = CP41-1
 # source = CETEMPúblico n=41 sec=eco sem=98a
 # id = 233
-1	No	no	ADP	PRP|@ADVL>	_	2	case	_	MWE=No_entanto
-2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	No	no	ADP	PRP|@ADVL>	_	13	cc	_	MWE=No_entanto|MWEPOS=CCONJ
+2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	alguns	algum	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Ind	13	nsubj	_	_
 5-6	dos	_	_	_	_	_	_	_	_
@@ -34,11 +34,11 @@
 27	existem	existir	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	20	conj	_	_
 28	boas	bom	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	29	amod	_	_
 29	perspectivas	perspectiva	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	27	nsubj	_	_
-30	quanto	quanto	ADV	ADV|@N<	_	29	advmod	_	MWE=quanto_a
+30	quanto	quanto	ADV	ADV|@N<	_	33	case	_	MWE=quanto_a|MWEPOS=ADP
 31-32	aos	_	_	_	_	_	_	_	_
-31	a	a	ADP	PRP|@A<	_	33	case	_	_
+31	a	a	ADP	PRP|@A<	_	30	fixed	_	_
 32	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
-33	resultados	resultado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	30	obl	_	_
+33	resultados	resultado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	29	nmod	_	_
 34	de	de	ADP	PRP|@N<	_	35	case	_	_
 35	1997	1997	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	33	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 36	.	.	PUNCT	PU|@PU	_	13	punct	_	_
@@ -47,7 +47,7 @@
 # sent_id = CP41-2
 # source = CETEMPúblico n=41 sec=eco sem=98a
 # id = 234
-1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	MWE=Para_além
+1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	MWE=Para_além_de
 2	além	além	ADV	ADV|@P<	_	8	advmod	_	_
 3-4	destes	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@P<	_	6	case	_	_
@@ -95,7 +95,7 @@
 # id = 235
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	possibilidade	possibilidade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
-3	entretanto	entretanto	ADV	<premod>|<kc>|ADV|@ADVL>	_	4	advmod	_	_
+3	entretanto	entretanto	CCONJ	<premod>|<kc>|ADV|@ADVL>	_	4	cc	_	_
 4	desmentida	desmentir	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	_	_
 5-6	pelo	_	_	_	_	_	_	_	_
 5	por	por	ADP	PRP|@PASS	_	7	case	_	_
@@ -205,8 +205,8 @@
 1-2	Movimentaram-se	_	_	_	_	_	_	_	_
 1	Movimentaram	movimentar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	expl	_	ChangedBy=Issue135
-3	cerca	cerca	ADV	ADV|@>A	_	5	advmod	_	MWE=cerca_de
-4	de	de	ADP	<prp>|PRP|@A<	_	3	case	_	_
+3	cerca	cerca	ADV	ADV|@>A	_	7	advmod	_	MWE=cerca_de|MWEPOS=ADV
+4	de	de	ADP	<prp>|PRP|@A<	_	3	fixed	_	_
 5	285	285	NUM	<card>|NUM|M|P|@>A	NumType=Card	7	nummod	_	ChangedBy=Issue168|MWE=285_mil
 6	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	flat	_	ChangedBy=Issue168
 7	títulos	título	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	1	nsubj	_	ChangedBy=Issue165|SpaceAfter=No

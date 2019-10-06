@@ -34,10 +34,10 @@
 22	confecção	confecção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
 23	de	de	ADP	PRP|@N<ARG	_	24	case	_	_
 24	brinquedos	brinquedo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
-25	a	a	ADP	PRP|@N<	_	26	case	_	MWE=a_partir_de
-26	partir	partir	VERB	N|@P<	VerbForm=Inf	24	nmod	_	_
-27	de	de	ADP	PRP|@N<	_	28	case	_	_
-28	sucatas	sucata	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	26	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+25	a	a	ADP	PRP|@N<	_	28	case	_	MWE=a_partir_de|MWEPOS=ADP
+26	partir	partir	NOUN	N|@P<	_	25	fixed	_	_
+27	de	de	ADP	PRP|@N<	_	25	fixed	_	_
+28	sucatas	sucata	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 29	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Crianças de 11 a 14 anos vão aprender a transformar sucatas em brinquedos educativos.
@@ -94,7 +94,7 @@
 20	90	90	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 21	%	%	SYM	<np-def>|N|M|P|@<ACC	_	19	obj	_	_
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
-23	cobertura	cobertura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	_
+23	cobertura	cobertura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
 24	vacinal	vacinal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
 25-26	na	_	_	_	_	_	_	_	_
 25	em	em	ADP	<sam->|PRP|@<ACC	_	28	case	_	_
@@ -122,8 +122,8 @@
 6	secretaria	secretaria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
 7	espera	esperar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	vacinar	vacinar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	7	xcomp	_	_
-9	cerca	cerca	ADV	ADV|@>N	_	13	advmod	_	MWE=cerca_de
-10	de	de	ADP	<prp>|PRP|@A<	_	9	case	_	_
+9	cerca	cerca	ADV	ADV|@>N	_	13	advmod	_	MWE=cerca_de|MWEPOS=ADV
+10	de	de	ADP	<prp>|PRP|@A<	_	9	fixed	_	_
 11	480	480	NUM	<card>|NUM|F|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168|MWE=480_mil
 12	mil	mil	NUM	<card>|NUM|F|P|@>N	NumType=Card	11	flat	_	ChangedBy=Issue168
 13	crianças	criança	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	ChangedBy=Issue165|SpaceAfter=No

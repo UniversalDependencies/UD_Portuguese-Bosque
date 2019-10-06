@@ -20,8 +20,8 @@
 # sent_id = CP231-3
 # source = CETEMPúblico n=231 sec=soc sem=94b
 # id = 1234
-1	Cerca	cerca	ADV	ADV|@>A	_	3	advmod	_	MWE=Cerca_de
-2	de	de	ADP	<prp>|PRP|@A<	_	1	case	_	_
+1	Cerca	cerca	ADV	ADV|@>A	_	3	advmod	_	MWE=Cerca_de|MWEPOS=ADV
+2	de	de	ADP	<prp>|PRP|@A<	_	1	fixed	_	_
 3	três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	8	nsubj	_	ChangedBy=Issue168|MWE=três_centenas
 4	centenas	centena	NUM	<np-def>|N|F|P|@SUBJ>	NumType=Card	3	flat	_	_
 5	de	de	ADP	PRP|@N<ARG	_	6	case	_	_
@@ -31,11 +31,11 @@
 8	manifestaram	manifestar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	expl	_	ChangedBy=Issue135
 10	ontem	ontem	ADV	ADV|@<ADVL	_	8	advmod	_	_
-11	diante	diante	ADV	ADV|@<ADVL	_	8	advmod	_	MWE=diante_de
+11	diante	diante	ADV	ADV|@<ADVL	_	14	case	_	MWE=diante_de|MWEPOS=ADP
 12-13	da	_	_	_	_	_	_	_	_
-12	de	de	ADP	PRP|@A<	_	14	case	_	_
+12	de	de	ADP	PRP|@A<	_	11	fixed	_	_
 13	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	14	det	_	_
-14	Câmara	Câmara	PROPN	_	Gender=Fem|Number=Sing	11	obl	_	MWE=câmara_municipal|MWEPOS=NOUN
+14	Câmara	Câmara	PROPN	_	Gender=Fem|Number=Sing	8	obl	_	MWE=câmara_municipal|MWEPOS=NOUN
 15	Municipal	Municipal	PROPN	_	Number=Sing	14	amod	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	Sintra	Sintra	PROPN	PROP|@P<	Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No

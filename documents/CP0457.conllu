@@ -3,9 +3,9 @@
 # source = CETEMPúblico n=457 sec=des sem=95a
 # id = 2408
 1	Ainda	ainda	ADV	ADV|@>A	_	4	advmod	_	_
-2	quanto	quanto	ADV	ADV|@ADVL>	_	14	advmod	_	MWE=quanto_a
-3	a	a	ADP	PRP|@A<	_	4	case	_	_
-4	alterações	alteração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	2	obl	_	_
+2	quanto	quanto	ADV	ADV|@ADVL>	_	4	case	_	MWE=quanto_a|MWEPOS=ADP
+3	a	a	ADP	PRP|@A<	_	2	fixed	_	_
+4	alterações	alteração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	14	obl	_	_
 5-6	na	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
@@ -91,8 +91,8 @@
 10-11	da	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	Comissão	Comissão	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	MWE=Comissão_Arbitral
-13	Arbitral	Arbitral	PROPN	PROP|@N<	Number=Sing	12	flat:name	_	_
+12	Comissão	Comissão	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	MWE=Comissão_Arbitral|MWEPOS=PROPN
+13	Arbitral	Arbitral	PROPN	PROP|@N<	Gender=Fem|Number=Sing	12	flat:name	_	_
 14-15	da	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
@@ -101,10 +101,10 @@
 18	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	20	nsubj	_	_
 19	serão	ser	AUX	<mv>|V|FUT|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	20	cop	_	ChangedBy=Issue167
 20	nove	nove	NUM	<card>|NUM|M|P|@<SC	NumType=Card	9	nmod	_	ChangedBy=Issue168
-21	em	em	ADP	PRP|@<ADVL	_	22	case	_	MWE=em_vez_de
-22	vez	vez	NOUN	N|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
-23	de	de	ADP	PRP|@N<	_	24	case	_	_
-24	sete	sete	NUM	<card>|NUM|M|P|@P<	NumType=Card	22	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+21	em	em	ADP	PRP|@<ADVL	_	24	cc	_	MWE=em_vez_de|MWEPOS=CCONJ
+22	vez	vez	NOUN	N|@P<	Gender=Fem|Number=Sing	21	fixed	_	_
+23	de	de	ADP	PRP|@N<	_	21	fixed	_	_
+24	sete	sete	NUM	<card>|NUM|M|P|@P<	NumType=Card	20	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Todas estas decisões, disse Damásio, foram tomadas por unanimidade.
