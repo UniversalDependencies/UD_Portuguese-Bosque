@@ -22,4 +22,4 @@ if not os.system("sh scriptsElvis/1_criar_branch.sh " + sys.argv[1]):
                     token.deprel = 'nmod' if corpus23.sentences[sentid].tokens[n].deprel == 'nmod' else 'parataxis'
 
     corpus.save('/home/elvis/Dropbox/tronco/comcorhd.tronco.me/UD_Portuguese-Bosque/www/interrogar-ud/conllu/' + sys.argv[1] + ".conllu")
-    os.system("sh scriptsElvis/2_commit.sh " + sys.argv[1] + " release_changes")
+    os.system("sh scriptsElvis/2_1-commit.sh " + sys.argv[1] + " release_changes")
