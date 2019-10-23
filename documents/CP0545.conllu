@@ -1,9 +1,9 @@
 # text = Ao longo da semana o Banco de Portugal cedeu liquidez num montante superior ao da semana anterior, tendo mantido as taxas.
-# source = CETEMPúblico n=545 sec=eco sem=95a
 # sent_id = CP545-1
+# source = CETEMPúblico n=545 sec=eco sem=95a
 # id = 2842
 1	Ao	ao	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Ao_longo_de
-2	longo	longo	NOUN	N|@P<	_	10	obl	_	_
+2	longo	longo	NOUN	N|@P<	Gender=Masc|Number=Sing	10	obl	_	_
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -35,8 +35,8 @@
 27	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = No que concerne à Dívida Pública corrente, realizaram-se três leilões de Bilhetes do Tesouro.
-# source = CETEMPúblico n=545 sec=eco sem=95a
 # sent_id = CP545-2
+# source = CETEMPúblico n=545 sec=eco sem=95a
 # id = 2843
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	2	case	_	_
@@ -46,8 +46,8 @@
 5-6	à	_	_	_	_	_	_	_	_
 5	a	a	ADP	<sam->|PRP|@<PIV	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Dívida	Dívida	NOUN	_	Gender=Fem|Number=Sing	4	obl	_	MWE=dívida_pública|MWEPOS=NOUN
-8	Pública	Pública	ADJ	_	Number=Sing	7	amod	_	_
+7	Dívida	Dívida	PROPN	_	Gender=Fem|Number=Sing	4	obl	_	MWE=dívida_pública|MWEPOS=NOUN
+8	Pública	Pública	PROPN	_	Number=Sing	7	amod	_	_
 9	corrente	corrente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 11-12	realizaram-se	_	_	_	_	_	_	_	_
@@ -64,8 +64,8 @@
 20	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = No primeiro, a 182 dias, foram colocados 30 milhões de contos, à taxa média de 10,3969 por cento;
-# source = CETEMPúblico n=545 sec=eco sem=95a
 # sent_id = CP545-3
+# source = CETEMPúblico n=545 sec=eco sem=95a
 # id = 2844
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -78,10 +78,10 @@
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	foram	ser	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	_	_
 10	colocados	colocar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
-11	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168|MWE=30_milhões
+11	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	nsubj	_	ChangedBy=Issue168|MWE=30_milhões
 12	milhões	milhão	NUM	<np-def>|N|M|P|@<SUBJ	NumType=Card	11	flat	_	_
 13	de	de	ADP	PRP|@N<ARG	_	14	case	_	_
-14	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
+14	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 16-17	à	_	_	_	_	_	_	_	_
 16	a	a	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
@@ -90,13 +90,13 @@
 19	média	médio	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	18	amod	_	_
 20	de	de	ADP	PRP|@N<	_	22	case	_	_
 21	10,3969	10,3969	NUM	<card>|NUM|M|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168
-22	por	por	ADP	_	Gender=Masc|Number=Sing	18	nmod	_	MWE=por_cento|MWEPOS=NOUN
+22	por	por	ADP	_	_	18	nmod	_	MWE=por_cento|MWEPOS=NOUN
 23	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	22	compound	_	ChangedBy=Issue165|SpaceAfter=No
 24	;	;	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = no segundo, a 91 dias, foram colocados 25 milhões de contos, à taxa média de 10,1384 por cento;
-# source = CETEMPúblico n=545 sec=eco sem=95a
 # sent_id = CP545-4
+# source = CETEMPúblico n=545 sec=eco sem=95a
 # id = 2845
 1-2	no	_	_	_	_	_	_	_	_
 1	em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -109,10 +109,10 @@
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	foram	ser	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	_	_
 10	colocados	colocar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
-11	25	25	NUM	<card>|NUM|M|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168|MWE=25_milhões
+11	25	25	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	nsubj:pass	_	ChangedBy=Issue168|MWE=25_milhões
 12	milhões	milhão	NUM	<np-def>|N|M|P|@<SUBJ	NumType=Card	11	flat	_	_
 13	de	de	ADP	PRP|@N<ARG	_	14	case	_	_
-14	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nsubj:pass	_	ChangedBy=Issue165|SpaceAfter=No
+14	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 16-17	à	_	_	_	_	_	_	_	_
 16	a	a	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
@@ -121,13 +121,13 @@
 19	média	médio	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	18	amod	_	_
 20	de	de	ADP	PRP|@N<	_	22	case	_	_
 21	10,1384	10,1384	NUM	<card>|NUM|M|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168
-22	por	por	ADP	_	Gender=Masc|Number=Sing	18	nmod	_	MWE=por_cento|MWEPOS=NOUN
+22	por	por	ADP	_	_	18	nmod	_	MWE=por_cento|MWEPOS=NOUN
 23	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	22	compound	_	ChangedBy=Issue165|SpaceAfter=No
 24	;	;	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = e no terceiro, a 182 dias, foram colocados 25 milhões de contos, à taxa média de 10,48 por cento, o que acabou por reflectir uma subida das taxas em relação aos leilões anteriores para idênticos períodos.
-# source = CETEMPúblico n=545 sec=eco sem=95a
 # sent_id = CP545-5
+# source = CETEMPúblico n=545 sec=eco sem=95a
 # id = 2846
 1	e	e	CCONJ	KC|@CO	_	11	cc	_	_
 2-3	no	_	_	_	_	_	_	_	_
@@ -141,10 +141,10 @@
 9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 10	foram	ser	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	aux:pass	_	_
 11	colocados	colocar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
-12	25	25	NUM	<card>|NUM|M|P|@>N	NumType=Card	15	nummod	_	ChangedBy=Issue168|MWE=25_milhões
+12	25	25	NUM	<card>|NUM|M|P|@>N	NumType=Card	11	nsubj	_	ChangedBy=Issue168|MWE=25_milhões
 13	milhões	milhão	NUM	<np-def>|N|M|P|@<SUBJ	NumType=Card	12	flat	_	_
 14	de	de	ADP	PRP|@N<ARG	_	15	case	_	_
-15	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
+15	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 17-18	à	_	_	_	_	_	_	_	_
 17	a	a	ADP	<sam->|PRP|@<ADVL	_	19	case	_	_
@@ -153,26 +153,26 @@
 20	média	médio	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	_
 21	de	de	ADP	PRP|@N<	_	23	case	_	_
 22	10,48	10,48	NUM	<card>|NUM|M|P|@>N	NumType=Card	23	nummod	_	ChangedBy=Issue168
-23	por	por	ADP	_	Gender=Masc|Number=Sing	19	nmod	_	MWE=por_cento|MWEPOS=NOUN
+23	por	por	ADP	_	_	19	nmod	_	MWE=por_cento|MWEPOS=NOUN
 24	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	23	compound	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 26	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	11	appos	_	_
 27	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	30	nsubj	_	_
-28	acabou	acabar	AUX	<aux>|V|PS|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	aux	_	_
-29	por	por	ADP	PRP|@PRT-AUX<	_	30	case	_	_
-30	reflectir	reflectir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	26	acl:relcl	_	_
+28	acabou	acabar	VERB	<aux>|V|PS|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	26	acl:relcl	_	MWE=acabou_por|MWEPOS=AUX
+29	por	por	SCONJ	PRP|@PRT-AUX<	_	30	mark	_	_
+30	reflectir	reflectir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	xcomp	_	_
 31	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 32	subida	subida	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	30	obj	_	_
 33-34	das	_	_	_	_	_	_	_	_
 33	de	de	ADP	<sam->|PRP|@N<	_	35	case	_	_
 34	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_
 35	taxas	taxa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	32	nmod	_	_
-36	em	em	ADP	<sam->|PRP|@N<	_	37	case	_	MWE=em_relação_a
-37	relação	relação	NOUN	N|@P<	_	32	nmod	_	_
+36	em	em	ADP	<sam->|PRP|@N<	_	40	case	_	MWE=em_relação_a|MWEPOS=ADP
+37	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	36	fixed	_	_
 38-39	aos	_	_	_	_	_	_	_	_
-38	a	a	ADP	PRP|@N<	_	40	case	_	_
+38	a	a	ADP	PRP|@N<	_	36	fixed	_	_
 39	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_
-40	leilões	leilão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	37	nmod	_	_
+40	leilões	leilão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	_
 41	anteriores	anterior	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	40	amod	_	_
 42	para	para	ADP	PRP|@N<	_	44	case	_	_
 43	idênticos	idêntico	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	44	amod	_	_

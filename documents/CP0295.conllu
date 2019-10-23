@@ -1,8 +1,7 @@
 # text = Rui Vilar, ex-comissário da Europália 91 e ex-presidente do conselho de administração da Caixa Geral de Depósitos (CGD), vai ter uma tarefa difícil.
-# source = CETEMPúblico n=295 sec=clt sem=96a
 # sent_id = CP295-1
+# source = CETEMPúblico n=295 sec=clt sem=96a
 # id = 1574
-# d2d = cc(ex-comissário,e) -> cc(ex-presidente,e)  #106
 1	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	27	nsubj	_	ChangedBy=Issue119|MWE=Rui_Vilar|MWEPOS=PROPN
 2	Vilar	Vilar	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -17,9 +16,9 @@
 11-12	do	_	_	_	_	_	_	_	_
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	conselho	conselho	NOUN	N|@P<	_	10	nmod	_	_
+13	conselho	conselho	NOUN	N|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
-15	administração	administração	NOUN	N|@P<	_	13	nmod	_	_
+15	administração	administração	NOUN	N|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
 16-17	da	_	_	_	_	_	_	_	_
 16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	18	det	_	_
@@ -39,13 +38,9 @@
 31	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 
 # text = O património da Gulbenkian é valiosíssimo, está estimado em cerca de 260 milhões de contos, a valores de 1994, mas a desvalorização do dólar nos últimos três anos tem afectado significativamente os rendimentos que permitem a sua sobrevivência.
-# source = CETEMPúblico n=295 sec=clt sem=96a
 # sent_id = CP295-2
+# source = CETEMPúblico n=295 sec=clt sem=96a
 # id = 1575
-# d2d = punct(valiosíssimo,,) -> punct(afectado,,)  #106
-# d2d = punct(valiosíssimo,,) -> punct(afectado,,)  #106
-# d2d = cc(valiosíssimo,mas) -> cc(afectado,mas)  #106
-# d2d = punct(valiosíssimo,,) -> punct(afectado,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	património	património	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -54,17 +49,17 @@
 5	Gulbenkian	Gulbenkian	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 6	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	ChangedBy=Issue167
 7	valiosíssimo	valiosíssimo	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
-8	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+8	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 9	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	ChangedBy=Issue167
 10	estimado	estimado	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	7	conj	_	ChangedBy=Issue141|ChangedBy=Issue91
 11	em	em	ADP	PRP|@<PIV	_	14	case	_	_
-12	cerca	cerca	ADV	ADV|@>A	_	14	advmod	_	MWE=cerca_de
-13	de	de	ADP	<prp>|PRP|@A<	_	12	case	_	_
-14	260	260	NUM	<card>|NUM|M|P|@>N	NumType=Card	17	nummod	_	ChangedBy=Issue168|MWE=260_milhões
+12	cerca	cerca	ADV	ADV|@>A	_	14	advmod	_	MWE=cerca_de|MWEPOS=ADV
+13	de	de	ADP	<prp>|PRP|@A<	_	12	fixed	_	_
+14	260	260	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	obj	_	ChangedBy=Issue168|MWE=260_milhões
 15	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	14	flat	_	_
 16	de	de	ADP	PRP|@N<ARG	_	17	case	_	_
-17	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obj	_	ChangedBy=Issue165|SpaceAfter=No
-18	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+17	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+18	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 19	a	a	ADP	PRP|@<ADVL	_	20	case	_	_
 20	valores	valor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	_
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
@@ -96,11 +91,9 @@
 45	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = A administração sempre foi bastante conservadora nas suas aplicações de capital, que se traduzem principalmente por investimentos no sector do petróleo e pela gestão de uma carteira de títulos no valor de dois biliões de dólares nos Estados Unidos, composta por acções e obrigações.
-# source = CETEMPúblico n=295 sec=clt sem=96a
 # sent_id = CP295-3
+# source = CETEMPúblico n=295 sec=clt sem=96a
 # id = 1576
-# d2d = cc(acções,e) -> cc(obrigações,e)  #106
-# d2d = cc(investimentos,e) -> cc(gestão,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	administração	administração	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	sempre	sempre	ADV	ADV|@ADVL>	_	6	advmod	_	_
@@ -115,7 +108,7 @@
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	capital	capital	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-14	que	que	PRON	<rel>|INDP|@SUBJ>	PronType=Rel	16	nsubj	_	_
+14	que	que	PRON	<rel>|INDP|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	16	nsubj	_	_
 15	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	16	expl	_	ChangedBy=Issue135
 16	traduzem	traduzir	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
 17	principalmente	principalmente	ADV	ADV|@<ADVL	_	16	advmod	_	_
@@ -162,8 +155,8 @@
 53	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Só no ano de 1994, o património da Fundação diminuíu, em valor, cerca de 30 milhões de contos por causa das perdas cambiais do dólar contra o escudo.
-# source = CETEMPúblico n=295 sec=clt sem=96a
 # sent_id = CP295-4
+# source = CETEMPúblico n=295 sec=clt sem=96a
 # id = 1577
 1	Só	só	ADV	ADV|@>A	_	4	advmod	_	_
 2-3	no	_	_	_	_	_	_	_	_
@@ -184,14 +177,14 @@
 15	em	em	ADP	PRP|@<ADVL	_	16	case	_	_
 16	valor	valor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-18	cerca	cerca	ADV	ADV|@>N	_	23	advmod	_	MWE=cerca_de
-19	de	de	ADP	<prp>|PRP|@A<	_	18	case	_	_
-20	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	23	nummod	_	ChangedBy=Issue168|MWE=30_milhões
+18	cerca	cerca	ADV	ADV|@>N	_	23	advmod	_	MWE=cerca_de|MWEPOS=ADV
+19	de	de	ADP	<prp>|PRP|@A<	_	18	fixed	_	_
+20	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	obl	_	ChangedBy=Issue168|MWE=30_milhões
 21	milhões	milhão	NUM	<np-def>|N|M|P|@<ADVL	NumType=Card	20	flat	_	_
 22	de	de	ADP	PRP|@N<ARG	_	23	case	_	_
-23	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	obl	_	_
+23	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
 24	por	por	ADP	<sam->|PRP|@<ADVL	_	25	case	_	MWE=por_causa_de
-25	causa	causa	NOUN	N|@P<	_	13	obl	_	_
+25	causa	causa	NOUN	N|@P<	Gender=Fem|Number=Sing	13	obl	_	_
 26-27	das	_	_	_	_	_	_	_	_
 26	de	de	ADP	PRP|@N<	_	28	case	_	_
 27	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	28	det	_	_
@@ -207,8 +200,8 @@
 36	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Recorde-se que as receitas são obtidas na sua quase totalidade em dólares, que depois é necessário converter para a moeda nacional.
-# source = CETEMPúblico n=295 sec=clt sem=96a
 # sent_id = CP295-5
+# source = CETEMPúblico n=295 sec=clt sem=96a
 # id = 1578
 1-2	Recorde-se	_	_	_	_	_	_	_	_
 1	Recorde	recordar	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -227,7 +220,7 @@
 13	em	em	ADP	PRP|@<ADVL	_	14	case	_	_
 14	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-16	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	20	obj	_	_
+16	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	20	obj	_	_
 17	depois	depois	ADV	ADV|@ADVL>	_	19	advmod	_	_
 18	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	ChangedBy=Issue167
 19	necessário	necessário	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	14	acl:relcl	_	_

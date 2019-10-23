@@ -1,13 +1,13 @@
 # text = Mar Vermelho
-# source = CETEMPúblico n=608 sec=pol sem=98b
 # sent_id = CP608-1
+# source = CETEMPúblico n=608 sec=pol sem=98b
 # id = 3166
 1	Mar	Mar	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Mar_Vermelho|MWEPOS=PROPN
 2	Vermelho	Vermelho	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 
 # text = Guerra por uma ilha
-# source = CETEMPúblico n=608 sec=pol sem=98b
 # sent_id = CP608-2
+# source = CETEMPúblico n=608 sec=pol sem=98b
 # id = 3167
 1	Guerra	guerra	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	por	por	ADP	PRP|@N<	_	4	case	_	_
@@ -15,10 +15,9 @@
 4	ilha	ilha	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 
 # text = RESPONSÁVEIS políticos do Iémen e da Arábia Saudita tentavam ontem fazer diminuir a tensão entre os dois países devido a uma velha disputa fronteiriça que provocou três mortos em combates perto de uma ilha contestada do Mar Vermelho.
-# source = CETEMPúblico n=608 sec=pol sem=98b
 # sent_id = CP608-3
+# source = CETEMPúblico n=608 sec=pol sem=98b
 # id = 3168
-# d2d = cc(Iémen,e) -> cc(Arábia,e)  #106
 1	RESPONSÁVEIS	responsável	NOUN	<n>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	11	nsubj	_	_
 2	políticos	político	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	1	amod	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -66,28 +65,27 @@
 42	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = O vice-primeiro-ministro e ministro dos Negócios Estrangeiros iemenita, Abdel Kader Bajamal, deverá deslocar-se hoje à Arábia Saudita para tentar desbloquear a querela, disse à AFP um diplomata em Sanaa, capital iemenita.
-# source = CETEMPúblico n=608 sec=pol sem=98b
 # sent_id = CP608-4
+# source = CETEMPúblico n=608 sec=pol sem=98b
 # id = 3169
-# d2d = cc(vice-primeiro-ministro,e) -> cc(ministro,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	vice-primeiro-ministro	vice-primeiro-ministro	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	_
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	d2d:#106
-4	ministro	ministro	NOUN	N|@SUBJ>	_	2	conj	_	ChangedBy=Issue149|MWE=ministro_dos_Negócios_Estrangeiros
+4	ministro	ministro	NOUN	N|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue149|MWE=ministro_dos_Negócios_Estrangeiros
 5-6	dos	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
-7	Negócios	negócios	NOUN	N|@P<	_	4	nmod	_	_
-8	Estrangeiros	estrangeiros	ADJ	ADJ|@N<	_	7	amod	_	_
+7	Negócios	negócios	NOUN	N|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
+8	Estrangeiros	estrangeiros	ADJ	ADJ|@N<	Gender=Masc|Number=Sing	7	amod	_	_
 9	iemenita	iemenita	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 11	Abdel	Abdel	PROPN	_	Gender=Masc|Number=Sing	4	appos	_	ChangedBy=Issue119|MWE=Abdel_Kader_Bajamal|MWEPOS=PROPN
 12	Kader	Kader	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 13	Bajamal	Bajamal	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-15	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	aux	_	_
+15	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	ccomp	_	_
 16-17	deslocar-se	_	_	_	_	_	_	_	_
-16	deslocar	deslocar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	29	ccomp	_	_
+16	deslocar	deslocar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	15	xcomp	_	_
 17	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	expl	_	ChangedBy=Issue135
 18	hoje	hoje	ADV	ADV|@<ADVL	_	16	advmod	_	_
 19-20	à	_	_	_	_	_	_	_	_
@@ -95,7 +93,7 @@
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	Arábia	Arábia	PROPN	_	Gender=Fem|Number=Sing	16	obl	_	ChangedBy=Issue119|MWE=Arábia_Saudita|MWEPOS=PROPN
 22	Saudita	Saudita	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
-23	para	para	ADP	PRP|@<ADVL	_	24	mark	_	_
+23	para	para	SCONJ	PRP|@<ADVL	_	24	mark	_	_
 24	tentar	tentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	advcl	_	_
 25	desbloquear	desbloquear	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	24	xcomp	_	_
 26	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_

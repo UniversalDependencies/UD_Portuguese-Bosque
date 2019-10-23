@@ -1,8 +1,7 @@
 # text = Ninguém ignora os terríveis problemas que o país atravessa, dos quais a corrupção policial e os níveis de violência são apenas uma faceta.
-# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # sent_id = CF554-1
+# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # id = 2315
-# d2d = cc(corrupção,e) -> cc(níveis,e)  #106
 1	Ninguém	ninguém	PRON	INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	2	nsubj	_	_
 2	ignora	ignorar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
@@ -32,14 +31,14 @@
 26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Ainda assim, é de se supor que existam bons agentes de polícia.
-# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # sent_id = CF554-2
+# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # id = 2316
-1	Ainda	ainda	ADV	ADV|@>A	_	2	advmod	_	MWE=Ainda_assim
-2	assim	assim	ADV	ADV|@ADVL>	_	4	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+1	Ainda	ainda	ADV	ADV|@>A	_	4	cc	_	MWE=Ainda_assim|MWEPOS=CCONJ
+2	assim	assim	ADV	ADV|@ADVL>	_	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	de	de	ADP	PRP|@<SC	_	7	mark	_	_
+5	de	de	SCONJ	PRP|@<SC	_	7	mark	_	_
 6	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	7	nsubj	_	_
 7	supor	supor	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	4	xcomp	_	_
 8	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
@@ -51,11 +50,10 @@
 14	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = É particularmente a estes bem como a toda a sociedade que interessa a apuração completa e rigorosa dos massacres.
-# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # sent_id = CF554-3
+# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # id = 2317
-# d2d = cc(completa,e) -> cc(rigorosa,e)  #106
-1	É	é	ADV	<foc>|ADV|@FOC>	_	12	mark	_	_
+1	É	é	SCONJ	<foc>|ADV|@FOC>	_	12	mark	_	_
 2	particularmente	particularmente	ADV	<quant>|ADV|@>P	_	4	advmod	_	_
 3	a	a	ADP	<first-cjt>|PRP|@PIV>	_	4	case	_	_
 4	estes	este	PRON	<dem>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Dem	12	obj	_	_
@@ -65,7 +63,7 @@
 8	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	10	det	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	sociedade	sociedade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	conj	_	_
-11	que	que	ADV	<foc>|ADV|@<FOC	_	12	mark	_	_
+11	que	que	SCONJ	<foc>|ADV|@<FOC	_	12	mark	_	_
 12	interessa	interessar	VERB	<mv>|V|PR|3S|IND|@FS-UTT	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	apuração	apuração	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	12	nsubj	_	_
@@ -79,8 +77,8 @@
 21	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Toda vez que um crime cometido por representantes do poder público fica sem punição, o ônus recai sobre a corporação como um todo, gerando um turbilhão que indiferência os bons dos maus policiais.
-# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a &W
 # sent_id = CF554-4
+# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a &W
 # id = 2318
 1	Toda	toda	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	13	obl	_	MWE=Toda_vez_que
 2	vez	vez	ADP	PRP|@N<	_	3	case	_	_
@@ -124,30 +122,29 @@
 38	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = É evidente que quem perde são os primeiros.
-# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # sent_id = CF554-5
+# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # id = 2319
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	evidente	evidente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
-4	quem	quem	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	5	nsubj	_	_
-5	perde	perder	VERB	<mv>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	csubj	_	_
+4	quem	quem	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
+5	perde	perder	VERB	<mv>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl	_	_
 6	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-<SUBJ	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	ChangedBy=Issue167
 7	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
-8	primeiros	primeiro	ADJ	<n>|<Eg>|<NUM-ord>|<np-def>|ADJ|M|P|@<SC	Gender=Masc|Number=Plur|NumType=Ord	2	dep	_	ChangedBy=Issue165|ChangedBy=Issue172|SpaceAfter=No
+8	primeiros	primeiro	ADJ	<n>|<Eg>|<NUM-ord>|<np-def>|ADJ|M|P|@<SC	Gender=Masc|Number=Plur|NumType=Ord	2	csubj	_	ChangedBy=Issue165|ChangedBy=Issue172|SpaceAfter=No
 9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O pior, porém, é que nesse processo o próprio Estado cai em descrédito e acaba cedendo mais espaço às forças do caos.
-# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # sent_id = CF554-6
+# source = CETENFolha n=554 cad=Opinião sec=opi sem=94a
 # id = 2320
-# d2d = cc(cai,e) -> cc(cedendo,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	pior	mau	ADJ	<KOMP>|<SUP>|<n>|<np-def>|<COMP>|ADJ|M|S|@SC>	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+2	pior	mau	NOUN	<KOMP>|<SUP>|<n>|<np-def>|<COMP>|ADJ|M|S|@SC>	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-4	porém	porém	ADV	<kc>|ADV|@ADVL>	_	2	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+4	porém	porém	CCONJ	<kc>|ADV|@ADVL>	_	6	cc	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-6	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
+6	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue167
 7	que	que	SCONJ	KS|@SUB	_	14	mark	_	_
 8-9	nesse	_	_	_	_	_	_	_	_
 8	em	em	ADP	<sam->|PRP|@ADVL>	_	10	case	_	_
@@ -156,13 +153,13 @@
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 12	próprio	próprio	DET	<ident>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Emp	13	det	_	_
 13	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
-14	cai	cair	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	csubj	_	_
+14	cai	cair	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_
 15	em	em	ADP	<first-cjt>|PRP|@<PIV	_	16	case	_	_
 16	descrédito	descrédito	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obj	_	_
 17	e	e	CCONJ	<co-subj>|KC|@CO	_	19	cc	_	d2d:#106
-18	acaba	acabar	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
-19	cedendo	ceder	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	14	conj	_	_
-20	mais	muito	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	21	det	_	_
+18	acaba	acabar	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_
+19	cedendo	ceder	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	18	xcomp	_	_
+20	mais	mais	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	21	det	_	_
 21	espaço	espaço	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	19	obj	_	_
 22-23	às	_	_	_	_	_	_	_	_
 22	a	a	ADP	<sam->|PRP|@N<	_	24	case	_	_

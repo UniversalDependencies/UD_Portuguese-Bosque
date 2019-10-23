@@ -1,6 +1,6 @@
 # text = G. Love canta blues
-# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF822-1
+# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # id = 3458
 1	G.	G.	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=G._Love|MWEPOS=PROPN
 2	Love	Love	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -8,26 +8,24 @@
 4	blues	blues	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 
 # text = Jazz rap?
-# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF822-2
+# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # id = 3459
-1	Jazz	jazz	PROPN	_	_	0	root	_	ChangedBy=Issue119|MWE=Jazz_rap|MWEPOS=PROPN
-2	rap	rap	PROPN	_	_	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+1	Jazz	Jazz	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Jazz_rap|MWEPOS=PROPN
+2	rap	rap	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Esqueça.
-# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF822-3
+# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # id = 3460
 1	Esqueça	esquecer	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Ou melhor, não esqueça porque ainda se faz muita coisa boa, mas deixe de querer ser bacana citando-o como a última tendência.
-# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF822-4
+# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # id = 3461
-# d2d = punct(esqueça,,) -> punct(querer,,)  #106
-# d2d = cc(esqueça,mas) -> cc(querer,mas)  #106
 1	Ou	ou	ADP	PRP|@ADVL>	_	2	case	_	MWE=Ou_melhor
 2	melhor	melhor	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -42,11 +40,11 @@
 12	boa	bom	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 14	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
-15	deixe	deixar	AUX	<cjt>|<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-16	de	de	ADP	PRP|@PRT-AUX<	_	17	case	_	_
-17	querer	querer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	conj	_	_
+15	deixe	deixar	VERB	<cjt>|<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	MWE=deixe_de|MWEPOS=AUX
+16	de	de	SCONJ	PRP|@PRT-AUX<	_	17	mark	_	_
+17	querer	querer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	xcomp	_	_
 18	ser	ser	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	19	cop	_	ChangedBy=Issue167
-19	bacana	bacana	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	17	dep	_	_
+19	bacana	bacana	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	17	xcomp	_	_
 20-21	citando-o	_	_	_	_	_	_	_	_
 20	citando	citar	VERB	<mv>|<hyphen>|V|GER|@ICL-<ADVL	VerbForm=Ger	19	advcl	_	_
 21	o	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	20	obj	_	_
@@ -57,8 +55,8 @@
 26	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Para aquele verniz atualizador, passe desde já a usar a expressão «blues rap».
-# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF822-5
+# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # id = 3462
 1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
 2	aquele	aquele	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
@@ -68,7 +66,7 @@
 6	passe	passar	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	desde	desde	ADP	PRP|@<ADVL	_	8	case	_	MWE=desde_já
 8	já	já	ADV	ADV|@P<	_	6	advmod	_	_
-9	a	a	ADP	PRP|@<PIV	_	10	mark	_	_
+9	a	a	SCONJ	PRP|@<PIV	_	10	mark	_	_
 10	usar	usar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	expressão	expressão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
@@ -79,8 +77,8 @@
 17	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = E, para um efeito extra, cite G. Love and Special Sauce.
-# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF822-6
+# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # id = 3463
 1	E	e	CCONJ	KC|@CO	_	8	cc	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	5	punct	_	_
@@ -98,10 +96,9 @@
 14	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Seu álbum de estréia, lançado no último verão americano, causou pouco ou nenhum impacto na parada.
-# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF822-7
+# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # id = 3464
-# d2d = cc(pouco,ou) -> cc(nenhum,ou)  #106
 1	Seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	2	det	_	_
 2	álbum	álbum	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -127,8 +124,8 @@
 21	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Mas uma boa escavação nas seções de críticas de revistas de música importadas revela a verdadeira adoração que G. Love estimulou entre os jornalistas especializados.
-# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF822-8
+# source = CETENFolha n=822 cad=Ilustrada sec=nd sem=94a
 # id = 3465
 1	Mas	mas	CCONJ	KC|@CO	_	15	cc	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_

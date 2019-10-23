@@ -1,6 +1,6 @@
 # text = O Banco de Portugal não interveio no mercado interbancário.
-# source = CETEMPúblico n=361 sec=eco sem=98a
 # sent_id = CP361-1
+# source = CETEMPúblico n=361 sec=eco sem=98a
 # id = 1896
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Banco	Banco	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	MWE=Banco_de_Portugal
@@ -16,8 +16,8 @@
 11	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = A taxa média do «overnight» desceu para 4,949 por cento.
-# source = CETEMPúblico n=361 sec=eco sem=98a
 # sent_id = CP361-2
+# source = CETEMPúblico n=361 sec=eco sem=98a
 # id = 1897
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	taxa	taxa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
@@ -31,13 +31,13 @@
 9	desceu	descer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 10	para	para	ADP	PRP|@<SA	_	12	case	_	_
 11	4,949	4,949	NUM	<card>|NUM|M|P|@>N	NumType=Card	12	nummod	_	ChangedBy=Issue168
-12	por	por	ADP	_	Gender=Masc|Number=Sing	9	obl	_	MWE=por_cento|MWEPOS=NOUN
+12	por	por	ADP	_	_	9	obl	_	MWE=por_cento|MWEPOS=NOUN
 13	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	12	compound	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = No mercado da dívida pública foram colocados 15 milhões de contos de Bilhetes do Tesouro a 182 dias, à taxa média ponderada de 4,4593 por cento, contra 4,4887 conseguidos no último leilão da mesma maturidade, realizado a 15 de Janeiro.
-# source = CETEMPúblico n=361 sec=eco sem=98a
 # sent_id = CP361-3
+# source = CETEMPúblico n=361 sec=eco sem=98a
 # id = 1898
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -46,14 +46,14 @@
 4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	<sam->|PRP|@N<	_	6	obl	_	_
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	dívida	dívida	NOUN	_	_	3	nmod	_	MWE=dívida_pública|MWEPOS=NOUN
-7	pública	pública	ADJ	_	_	6	amod	_	_
+6	dívida	dívida	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	MWE=dívida_pública|MWEPOS=NOUN
+7	pública	pública	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_
 8	foram	ser	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	9	aux:pass	_	_
 9	colocados	colocar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
-10	15	15	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168|MWE=15_milhões
+10	15	15	NUM	<card>|NUM|M|P|@>N	NumType=Card	9	nsubj	_	ChangedBy=Issue168|MWE=15_milhões
 11	milhões	milhão	NUM	<np-def>|N|M|P|@<SUBJ	NumType=Card	10	flat	_	_
 12	de	de	ADP	PRP|@N<ARG	_	13	case	_	_
-13	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nsubj	_	_
+13	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
 14	de	de	ADP	PRP|@N<ARG	_	15	case	_	_
 15	Bilhetes	Bilhetes	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	13	nmod	_	MWE=Bilhetes_do_Tesouro
 16-17	do	_	_	_	_	_	_	_	_
@@ -72,7 +72,7 @@
 27	ponderada	ponderar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	25	acl	_	_
 28	de	de	ADP	PRP|@N<	_	30	case	_	_
 29	4,4593	4,4593	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	nummod	_	ChangedBy=Issue168
-30	por	por	ADP	_	Gender=Masc|Number=Sing	25	nmod	_	MWE=por_cento|MWEPOS=NOUN
+30	por	por	ADP	_	_	25	nmod	_	MWE=por_cento|MWEPOS=NOUN
 31	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	30	compound	_	ChangedBy=Issue165|SpaceAfter=No
 32	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 33	contra	contra	ADP	PRP|@N<PRED	_	34	case	_	_

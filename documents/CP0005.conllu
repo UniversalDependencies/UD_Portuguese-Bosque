@@ -1,8 +1,8 @@
 # text = Além do Museu do Ar, o projecto gira em torno do parque temático propriamente dito.
-# source = CETEMPúblico n=5 sec=soc sem=97a
 # sent_id = CP5-1
+# source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 24
-1	Além	além	ADV	ADV|@ADVL>	_	11	advmod	_	_
+1	Além	além	ADV	ADV|@ADVL>	_	11	advmod	_	MWE=Além_de
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@A<	_	4	case	_	_
 3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -16,7 +16,7 @@
 10	projecto	projecto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 11	gira	gerir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 12	em	em	ADP	PRP|@<ADVL	_	16	case	_	MWE=em_torno_de
-13	torno	torno	NOUN	N|@P<	_	12	fixed	_	_
+13	torno	torno	NOUN	N|@P<	Gender=Masc|Number=Sing	12	fixed	_	_
 14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	PRP|@N<	_	12	fixed	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
@@ -27,13 +27,9 @@
 20	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = A zona lúdica, com os divertimentos, áreas comerciais de «souvenirs» e de restauração, compreende espaços distintos para os vários temas, ainda em análise, tais como Portugal, Japão, Brasil, África e Far-West.
-# source = CETEMPúblico n=5 sec=soc sem=97a
 # sent_id = CP5-2
+# source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 25
-# d2d = punct(divertimentos,,) -> punct(áreas,,)  #106
-# d2d = cc(Portugal,e) -> cc(Far-West,e)  #106
-# d2d = punct(souvenirs,») -> punct(restauração,»)  #106
-# d2d = cc(souvenirs,e) -> cc(restauração,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	zona	zona	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	19	nsubj	_	_
 3	lúdica	lúdico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -64,24 +60,23 @@
 28	em	em	ADP	PRP|@N<	_	29	case	_	_
 29	análise	análise	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
-31	tais	tal	DET	<dem>|DET|M|P|@N<	Gender=Masc|Number=Plur|PronType=Dem	25	det	_	_
-32	como	como	ADP	<rel>|<com>|PRP|@KOMP<	PronType=Rel	33	case	_	_
-33	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-34	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+31	tais	tal	DET	<dem>|DET|M|P|@N<	Gender=Masc|Number=Plur|PronType=Dem	33	case	_	MWE=tais_como|MWEPOS=ADP
+32	como	como	ADP	<rel>|<com>|PRP|@KOMP<	_	31	fixed	_	_
+33	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+34	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 35	Japão	Japão	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	33	conj	_	ChangedBy=Issue149|ChangedBy=Issue165|SpaceAfter=No
-36	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+36	,	,	PUNCT	PU|@PU	_	37	punct	_	_
 37	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	33	conj	_	ChangedBy=Issue149|ChangedBy=Issue165|SpaceAfter=No
-38	,	,	PUNCT	PU|@PU	_	19	punct	_	_
+38	,	,	PUNCT	PU|@PU	_	39	punct	_	_
 39	África	África	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	33	conj	_	ChangedBy=Issue149
 40	e	e	CCONJ	<co-subj>|KC|@CO	_	41	cc	_	d2d:#106
 41	Far-West	Far-West	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	33	conj	_	ChangedBy=Issue149|ChangedBy=Issue165|SpaceAfter=No
 42	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = Os quatro primeiros temas destinam-se a mostrar o papel de Portugal no mundo e o quinto, o único sem relação com a história nacional, é justificado pela experiência de Barcelona (Port Aventura), que regista assinalável sucesso.
-# source = CETEMPúblico n=5 sec=soc sem=97a &E
 # sent_id = CP5-3
+# source = CETEMPúblico n=5 sec=soc sem=97a &E
 # id = 26
-# d2d = cc(destinam-,e) -> cc(justificado,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 2	quatro	quatro	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
 3	primeiros	primeiros	ADJ	<NUM-ord>|ADJ|M|P|@>N	Gender=Masc|Number=Plur|NumType=Ord	4	amod	_	ChangedBy=Issue172
@@ -89,7 +84,7 @@
 5-6	destinam-se	_	_	_	_	_	_	_	_
 5	destinam	destinar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	expl	_	ChangedBy=Issue135
-7	a	a	ADP	<first-cjt>|PRP|@<PIV	_	8	mark	_	_
+7	a	a	SCONJ	<first-cjt>|PRP|@<PIV	_	8	mark	_	_
 8	mostrar	mostrar	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	xcomp	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	papel	papel	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
@@ -103,10 +98,10 @@
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	quinto	quinto	ADJ	<NUM-ord>|<Eg>|<n>|<np-def>|ADJ|@SUBJ>	NumType=Ord	30	nsubj:pass	_	ChangedBy=Issue165|ChangedBy=Issue172|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	único	único	NOUN	<n>|<np-def>|ADJ|M|S|@APP	Gender=Masc|Number=Sing	18	dep	_	_
+20	o	o	PRON	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Dem	18	appos	_	_
+21	único	único	ADJ	<n>|<np-def>|ADJ|M|S|@APP	Gender=Masc|Number=Sing	20	amod	_	_
 22	sem	sem	ADP	PRP|@N<	_	23	case	_	_
-23	relação	relação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	_
+23	relação	relação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	obl	_	_
 24	com	com	ADP	PRP|@N<ARG	_	26	case	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	história	história	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
@@ -132,8 +127,8 @@
 45	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Uma «zona petting» anexa, em cooperação com o Jardim Zoológico de Lisboa, destina-se a permitir o contacto das crianças com animais.
-# source = CETEMPúblico n=5 sec=soc sem=97a
 # sent_id = CP5-4
+# source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 27
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -154,7 +149,7 @@
 17-18	destina-se	_	_	_	_	_	_	_	_
 17	destina	destinar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 18	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	expl	_	ChangedBy=Issue135
-19	a	a	ADP	PRP|@<PIV	_	20	mark	_	_
+19	a	a	SCONJ	PRP|@<PIV	_	20	mark	_	_
 20	permitir	permitir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	xcomp	_	_
 21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	contacto	contacto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
@@ -167,8 +162,8 @@
 28	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Tudo, claro está, muito arborizado.
-# source = CETEMPúblico n=5 sec=soc sem=97a
 # sent_id = CP5-5
+# source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 28
 1	Tudo	tudo	PRON	<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	7	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -180,8 +175,8 @@
 8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Seis milhões em dez anos
-# source = CETEMPúblico n=5 sec=soc sem=97a
 # sent_id = CP5-6
+# source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 29
 1	Seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	0	root	_	ChangedBy=Issue168|MWE=seis_milhões
 2	milhões	milhão	NUM	<np-def>|N|F|P|@NPHR	NumType=Card	1	flat	_	_
@@ -190,13 +185,13 @@
 5	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl	_	_
 
 # text = O museu, a desenvolver sob orientação de uma comissão de notáveis, dirigida pelo Presidente da República, está orçado em seis milhões de contos, valor incomportável para a Força Aérea.
-# source = CETEMPúblico n=5 sec=soc sem=97a
 # sent_id = CP5-7
+# source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 30
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	museu	museu	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-4	a	a	ADP	PRP|@N<PRED	_	5	mark	_	_
+4	a	a	SCONJ	PRP|@N<PRED	_	5	mark	_	_
 5	desenvolver	desenvolver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	acl	_	_
 6	sob	sob	ADP	PRP|@<ADVL	_	7	case	_	_
 7	orientação	orientação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137
@@ -218,13 +213,13 @@
 21	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 22	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	ChangedBy=Issue167
 23	orçado	orçado	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue141|ChangedBy=Issue91
-24	em	em	ADP	PRP|@<ADVL	_	28	case	_	_
-25	seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	28	nummod	_	ChangedBy=Issue168|MWE=seis_milhões
+24	em	em	ADP	PRP|@<ADVL	_	25	case	_	_
+25	seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	23	obl	_	ChangedBy=Issue168|MWE=seis_milhões
 26	milhões	milhão	NUM	<np-def>|N|F|P|@P<	NumType=Card	25	flat	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
-28	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	23	obl	_	ChangedBy=Issue165|SpaceAfter=No
+28	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	30	punct	_	_
-30	valor	valor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	28	appos	_	_
+30	valor	valor	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	25	appos	_	_
 31	incomportável	incomportável	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	30	amod	_	_
 32	para	para	ADP	PRP|@N<	_	34	case	_	_
 33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
@@ -233,8 +228,8 @@
 36	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
 # text = Daí que a Cameron Hall tenha caído do céu.
-# source = CETEMPúblico n=5 sec=soc sem=97a
 # sent_id = CP5-8
+# source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 31
 1-2	Daí	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	2	case	_	_
@@ -252,8 +247,8 @@
 12	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = «A proposta é muito bem vista, porque será mais vantajosa do que se houver só um pólo de interesse no local», afirmou o major Carlos Barbosa, das relações públicas da Força Aérea, admitindo que, com o parque temático, «se o interesse for diversificado, toda a gente fica a ganhar».
-# source = CETEMPúblico n=5 sec=soc sem=97a
 # sent_id = CP5-9
+# source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 32
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -268,7 +263,7 @@
 11	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	12	advmod	_	_
 12	vantajosa	vantajoso	ADJ	<COMP>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	7	advcl	_	_
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	ADP	<sam->|PRP|@COM	_	17	mark	_	MWE=do_que
+13	de	de	SCONJ	<sam->|PRP|@COM	_	17	mark	_	MWE=do_que
 14	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	13	fixed	_	_
 15	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	13	fixed	_	_
 16	se	se	SCONJ	KS|@SUB	_	17	mark	_	_
@@ -293,8 +288,8 @@
 34-35	das	_	_	_	_	_	_	_	_
 34	de	de	ADP	<sam->|PRP|@N<PRED	_	36	obl	_	_
 35	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	36	det	_	_
-36	relações	relações	NOUN	_	_	30	nmod	_	MWE=relações_públicas|MWEPOS=NOUN
-37	públicas	públicas	ADJ	_	_	36	amod	_	_
+36	relações	relações	NOUN	_	Gender=Fem|Number=Plur	30	nmod	_	MWE=relações_públicas|MWEPOS=NOUN
+37	públicas	públicas	ADJ	_	Gender=Fem|Number=Plur	36	amod	_	_
 38-39	da	_	_	_	_	_	_	_	_
 38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	40	det	_	_
@@ -319,9 +314,9 @@
 58	toda	todo	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	60	det	_	MWE=toda_a
 59	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	60	det	_	_
 60	gente	gente	PRON	INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Ind	63	nsubj	_	_
-61	fica	ficar	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	63	aux	_	_
-62	a	a	ADP	PRP|@PRT-AUX<	_	63	case	_	_
-63	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	43	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
+61	fica	ficar	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	parataxis	_	MWE=fica_a|MWEPOS=AUX
+62	a	a	SCONJ	PRP|@PRT-AUX<	_	63	mark	_	_
+63	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	61	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 64	»	»	PUNCT	PU|@PU	_	63	punct	_	ChangedBy=Issue165|SpaceAfter=No
 65	.	.	PUNCT	PU|@PU	_	28	punct	_	_
 

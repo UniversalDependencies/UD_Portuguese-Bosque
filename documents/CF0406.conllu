@@ -1,6 +1,6 @@
 # text = 4 grupos dominam TV por assinatura
-# source = CETENFolha n=406 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF406-1
+# source = CETENFolha n=406 cad=Dinheiro sec=eco sem=94b
 # id = 1689
 1	4	4	NUM	<card>|NUM|M|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	grupos	grupo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
@@ -10,10 +10,9 @@
 6	assinatura	assinatura	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 
 # text = A TV por assinatura no Brasil está nascendo concentrada nas mãos de quatro grupos: Organizações Globo, Multicanal (subsidiária da Companhia de Mineração do Amapá), Rede RBS e Abril.
-# source = CETENFolha n=406 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF406-3
+# source = CETENFolha n=406 cad=Dinheiro sec=eco sem=94b
 # id = 1690
-# d2d = cc(Organizações,e) -> cc(Abril,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	TV	tv	NOUN	<prop>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3	por	por	ADP	PRP|@N<	_	4	case	_	_
@@ -24,7 +23,7 @@
 7	Brasil	Brasil	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 8	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
 9	nascendo	nascer	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
-10	concentrada	concentrar	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	9	dep	_	_
+10	concentrada	concentrar	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
 11-12	nas	_	_	_	_	_	_	_	_
 11	em	em	ADP	<sam->|PRP|@<ADVL	_	13	case	_	_
 12	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
@@ -58,8 +57,8 @@
 38	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Os três primeiros estão voltados para a TV a cabo, onde atuam como operadores em vários Estados e como sócios da maior empresa de distribuição de programação: a Net Brasil
-# source = CETENFolha n=406 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF406-4
+# source = CETENFolha n=406 cad=Dinheiro sec=eco sem=94b
 # id = 1691
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	três	três	NUM	<card>|NUM|M|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168
@@ -72,7 +71,7 @@
 9	a	a	ADP	PRP|@N<	_	10	case	_	_
 10	cabo	cabo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-12	onde	onde	ADV	<rel>|ADV|@ADVL>	_	13	advmod	_	_
+12	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	13	obl	_	_
 13	atuam	atuar	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
 14	como	como	ADP	<prp>|<first-cjt>|PRP|@<ADVL	_	15	case	_	_
 15	operadores	operador	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	obl	_	ChangedBy=Issue137

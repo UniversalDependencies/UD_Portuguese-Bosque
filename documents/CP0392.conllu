@@ -1,8 +1,7 @@
 # text = O repórter da «Rádio Elmo» de Pinhel, Craveiro Lopes, foi condenado em tribunal a 14 meses de prisão e 60 dias de multa por ter criticado a actuação da PSP, informou ontem a Lusa.
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-1
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2041
-# d2d = cc(meses,e) -> cc(dias,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	repórter	repórter	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj:pass	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -32,7 +31,7 @@
 26	dias	dia	NOUN	<cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	21	conj	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
 28	multa	multa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	_
-29	por	por	ADP	PRP|@<ADVL	_	31	mark	_	_
+29	por	por	SCONJ	PRP|@<ADVL	_	31	mark	_	_
 30	ter	ter	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	31	aux	_	_
 31	criticado	criticar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	16	advcl	_	_
 32	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
@@ -49,10 +48,9 @@
 42	.	.	PUNCT	PU|@PU	_	38	punct	_	_
 
 # text = A pena foi suspensa por 28 meses, atendendo à conduta do arguido anteriormente aos factos e por ter demonstrado «algum arrependimento por os haver praticado».
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-2
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2042
-# d2d = cc(atendendo,e) -> cc(por,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	pena	pena	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj:pass	_	_
 3	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
@@ -76,13 +74,13 @@
 18	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
 19	factos	facto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	15	obl	_	_
 20	e	e	CCONJ	<co-icl>|<co-advl>|KC|@CO	_	23	cc	_	d2d:#106
-21	por	por	ADP	<cjt>|PRP|@ICL-<ADVL	_	23	mark	_	_
+21	por	por	SCONJ	<cjt>|PRP|@ICL-<ADVL	_	23	mark	_	_
 22	ter	ter	AUX	<cjt>|<aux>|V|INF|@ICL-P<	VerbForm=Inf	23	aux	_	_
 23	demonstrado	demonstrar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	9	conj	_	_
 24	«	«	PUNCT	PU|@PU	_	26	punct	_	ChangedBy=Issue165|SpaceAfter=No
 25	algum	algum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	26	det	_	_
 26	arrependimento	arrependimento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	obj	_	_
-27	por	por	ADP	PRP|@N<	_	30	mark	_	_
+27	por	por	SCONJ	PRP|@N<	_	30	mark	_	_
 28	os	eles	PRON	PERS|M|3P|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	30	obj	_	_
 29	haver	haver	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	30	aux	_	_
 30	praticado	praticar	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	26	acl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -90,16 +88,14 @@
 32	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O repórter foi accionado por, em crónicas emitidas em Julho de 1992, ter criticado o comandante do posto da PSP, subchefe Amadeu Eiras e o guarda António Soares, críticas que o Ministério Público considerou difamatórias.
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-3
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2043
-# d2d = cc(comandante,e) -> cc(guarda,e)  #106
-# d2d = punct(comandante,,) -> punct(subchefe,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	repórter	repórter	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
 3	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
 4	accionado	accionar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
-5	por	por	ADP	PRP|@<ADVL	_	9	mark	_	ChangedBy=Issue165|SpaceAfter=No
+5	por	por	SCONJ	PRP|@<ADVL	_	9	mark	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 7	em	em	ADP	PRP|@ADVL>	_	8	case	_	_
 8	crónicas	crónica	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	16	obl	_	ChangedBy=Issue137
@@ -141,14 +137,14 @@
 42	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = De acordo com o processo, Craveiro Lopes fora detido, meses antes, por aqueles polícias «por factos susceptíveis de integrarem ilícito criminal», após o que terá dito aos microfones ser «inconcebível que, nas mãos de homens sem qualquer escrúpulo, se deposite poder».
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-4
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2044
-1	De	de	ADP	PRP|@ADVL>	_	2	case	_	MWE=De_acordo
-2	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	_
+1	De	de	ADP	PRP|@ADVL>	_	5	case	_	MWE=De_acordo|MWEPOS=ADP
+2	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	_
 3	com	com	ADP	PRP|@P<	_	5	case	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	processo	processo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+5	processo	processo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 7	Craveiro	Craveiro	PROPN	_	Gender=Masc|Number=Sing	10	nsubj:pass	_	ChangedBy=Issue119|MWE=Craveiro_Lopes|MWEPOS=PROPN
 8	Lopes	Lopes	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
@@ -165,7 +161,7 @@
 19	por	por	ADP	PRP|@<ADVL	_	20	case	_	_
 20	factos	facto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	ChangedBy=Issue137
 21	susceptíveis	susceptível	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	20	amod	_	_
-22	de	de	ADP	PRP|@A<ARG	_	23	mark	_	_
+22	de	de	SCONJ	PRP|@A<ARG	_	23	mark	_	_
 23	integrarem	integrar	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	21	xcomp	_	_
 24	ilícito	ilícito	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	25	amod	_	_
 25	criminal	criminal	NOUN	<n>|<np-idf>|ADJ|M|S|@<ACC	Gender=Masc|Number=Sing	23	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -182,7 +178,7 @@
 35	microfones	microfone	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	32	obl	_	ChangedBy=Issue137
 36	ser	ser	AUX	<mv>|V|INF|@ICL-APP	VerbForm=Inf	38	cop	_	ChangedBy=Issue167
 37	«	«	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
-38	inconcebível	inconcebível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	29	dep	_	_
+38	inconcebível	inconcebível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	32	ccomp	_	_
 39	que	que	SCONJ	KS|@SUB	_	51	mark	_	ChangedBy=Issue165|SpaceAfter=No
 40	,	,	PUNCT	PU|@PU	_	38	punct	_	_
 41-42	nas	_	_	_	_	_	_	_	_
@@ -196,18 +192,15 @@
 48	escrúpulo	escrúpulo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	45	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 49	,	,	PUNCT	PU|@PU	_	51	punct	_	_
 50	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	51	nsubj	_	_
-51	deposite	depositar	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	ccomp	_	_
+51	deposite	depositar	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	csubj	_	_
 52	poder	poder	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	51	obj	_	ChangedBy=Issue165|SpaceAfter=No
 53	»	»	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
 54	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Em tribunal, o repórter afirmou não ter tido intenção de difamar, «mas tão só de informar», não pretendendo «atingir a honra e consideração dos visados».
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-5
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2045
-# d2d = punct(difamar,,) -> punct(informar,,)  #106
-# d2d = cc(difamar,mas) -> cc(informar,mas)  #106
-# d2d = cc(honra,e) -> cc(consideração,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	tribunal	tribunal	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -218,14 +211,14 @@
 8	ter	ter	AUX	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	9	aux	_	_
 9	tido	ter	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	6	xcomp	_	_
 10	intenção	intenção	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
-11	de	de	ADP	<first-cjt>|PRP|@N<ARG	_	12	mark	_	_
+11	de	de	SCONJ	<first-cjt>|PRP|@N<ARG	_	12	mark	_	_
 12	difamar	difamar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	acl	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 14	«	«	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 15	mas	mas	CCONJ	<co-postnom>|KC|@CO	_	19	cc	_	d2d:#106
 16	tão	tão	ADV	<dem>|<quant>|ADV|@>A	_	17	advmod	_	_
 17	só	só	ADV	ADV|@>A	_	19	advmod	_	_
-18	de	de	ADP	<cjt>|PRP|@N<	_	19	mark	_	_
+18	de	de	SCONJ	<cjt>|PRP|@N<	_	19	mark	_	_
 19	informar	informar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	conj	_	ChangedBy=Issue149|ChangedBy=Issue165|SpaceAfter=No
 20	»	»	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	23	punct	_	_
@@ -245,21 +238,14 @@
 34	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O tribunal considerou, porém, que as afirmações de Craveiro Lopes «são objectiva e subjectivamente difamatórias e susceptíveis de atingir senão a essência da personalidade destes, pelo menos o património do seu bom nome, do crédito e da confiança por eles adquiridos enquanto pessoas, cidadãos e agentes da autoridade numa comunidade pequena onde todos se conhecem».
-# source = CETEMPúblico n=392 sec=soc sem=93a &E &W
 # sent_id = CP392-6
+# source = CETEMPúblico n=392 sec=soc sem=93a &E &W
 # id = 2046
-# d2d = cc(pessoas,e) -> cc(agentes,e)  #106
-# d2d = punct(nome,,) -> punct(crédito,,)  #106
-# d2d = cc(nome,e) -> cc(confiança,e)  #106
-# d2d = punct(pessoas,,) -> punct(cidadãos,,)  #106
-# d2d = cc(objectiva,e) -> cc(subjectivamente,e)  #106
-# d2d = cc(difamatórias,e) -> cc(susceptíveis,e)  #106
-# d2d = punct(essência,,) -> punct(património,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tribunal	tribunal	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	considerou	considerar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-5	porém	porém	ADV	ADV|@<ADVL	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+5	porém	porém	CCONJ	ADV|@<ADVL	_	3	cc	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 7	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
 8	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
@@ -275,7 +261,7 @@
 18	difamatórias	difamatório	ADJ	<first-cjt>|<n>|<np-idf>|ADJ|F|P|@<SC	Gender=Fem|Number=Plur	3	ccomp	_	_
 19	e	e	CCONJ	<co-sc>|KC|@CO	_	20	cc	_	d2d:#106
 20	susceptíveis	susceptível	ADJ	<cjt>|ADJ|F|P|@<SC	Gender=Fem|Number=Plur	18	conj	_	_
-21	de	de	ADP	PRP|@A<ARG	_	22	mark	_	_
+21	de	de	SCONJ	PRP|@A<ARG	_	22	mark	_	_
 22	atingir	atingir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	advcl	_	_
 23	senão	senão	ADV	<nil>|ADV|@>N	_	25	advmod	_	_
 24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
@@ -313,7 +299,7 @@
 50	por	por	ADP	PRP|@PASS	_	51	case	_	_
 51	eles	ele	PRON	PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	52	obl:agent	_	_
 52	adquiridos	adquirir	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	36	acl	_	_
-53	enquanto	enquanto	ADP	<first-cjt>|<rel>|PRP|@<ADVL	PronType=Rel	54	case	_	_
+53	enquanto	enquanto	ADP	<first-cjt>|<rel>|PRP|@<ADVL	_	54	case	_	_
 54	pessoas	pessoa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	52	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 55	,	,	PUNCT	PU|@PU	_	56	punct	_	d2d:#106
 56	cidadãos	cidadão	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	54	conj	_	_
@@ -328,7 +314,7 @@
 63	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	64	det	_	_
 64	comunidade	comunidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	52	obl	_	ChangedBy=Issue137
 65	pequena	pequeno	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	64	amod	_	_
-66	onde	onde	ADV	<rel>|ADV|@ADVL>	_	69	advmod	_	_
+66	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	69	obl	_	_
 67	todos	todo	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Tot	69	nsubj	_	_
 68	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	69	expl	_	ChangedBy=Issue135
 69	conhecem	conhecer	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	64	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -336,8 +322,8 @@
 71	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Em declarações à Lusa, Craveiro Lopes disse que se limitou a tornar «públicas situações de perseguição que ainda perduram».
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-7
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2047
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	declarações	declaração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	obl	_	ChangedBy=Issue137
@@ -352,7 +338,7 @@
 10	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
 11	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl	_	ChangedBy=Issue135
 12	limitou	limitar	VERB	<mv>|<se-passive>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	ccomp	_	_
-13	a	a	ADP	PRP|@<PIV	_	14	mark	_	_
+13	a	a	SCONJ	PRP|@<PIV	_	14	mark	_	_
 14	tornar	tornar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	xcomp	_	_
 15	«	«	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	públicas	público	ADJ	ADJ|F|P|@<OC	Gender=Fem|Number=Plur	14	xcomp	_	_
@@ -366,23 +352,23 @@
 24	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = E acrescentou:
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-8
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2048
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	acrescentou	acrescentar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 3	:	:	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «Se hoje tiver de fazer e dizer o que disse, não hesitarei».
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-9
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2049
 1	«	«	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Se	se	SCONJ	KS|@SUB	_	6	mark	_	_
 3	hoje	hoje	ADV	ADV|@ADVL>	_	6	advmod	_	_
-4	tiver	ter	AUX	<aux>|V|FUT|1S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	6	aux	_	_
-5	de	de	ADP	PRP|@PRT-AUX<	_	6	case	_	_
-6	fazer	fazer	VERB	<aux>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	14	advcl	_	_
+4	tiver	ter	VERB	<aux>|V|FUT|1S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	14	advcl	_	MWE=tiver_de|MWEPOS=AUX
+5	de	de	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
+6	fazer	fazer	VERB	<aux>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	e	e	CCONJ	<co-inf>|KC|@CO	_	8	cc	_	_
 8	dizer	dizer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	conj	_	_
 9	o	o	PRON	<dem>|DET|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Dem	8	obj	_	_
@@ -395,8 +381,8 @@
 16	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Congresso de surdos pela «comunicação eficaz»
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-10
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2050
 1	Congresso	congresso	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -410,18 +396,18 @@
 9	»	»	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O presidente da Associação Portuguesa de Surdos advertiu ontem que o desenvolvimento da maioria da população surda «deixa muito a desejar».
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-11
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2051
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	MWE=presidente_da_Associação_Portuguesa_de_Surdos
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Associação	associação	NOUN	N|@P<	_	2	nmod	_	_
-6	Portuguesa	portuguesa	ADJ	ADJ|@N<	_	5	amod	_	_
+5	Associação	associação	NOUN	N|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+6	Portuguesa	portuguesa	ADJ	ADJ|@N<	Gender=Masc|Number=Sing	5	amod	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
-8	Surdos	surdos	NOUN	N|@P<	_	5	nmod	_	_
+8	Surdos	surdos	NOUN	N|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
 9	advertiu	advertir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 10	ontem	ontem	ADV	ADV|@<ADVL	_	9	advmod	_	_
 11	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
@@ -438,17 +424,16 @@
 20	surda	surdo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	_
 21	«	«	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
 22	deixa	deixar	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
-23	muito	muito	ADV	<quant>|DET|M|S|@ADVL>	Gender=Masc|Number=Sing|PronType=Ind	25	advmod	_	_
-24	a	a	ADP	PRP|@<ADVL	_	25	mark	_	_
+23	muito	muito	ADV	<quant>|DET|M|S|@ADVL>	_	25	advmod	_	_
+24	a	a	SCONJ	PRP|@<ADVL	_	25	mark	_	_
 25	desejar	desejar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 26	»	»	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Falando à Lusa do I Congresso Nacional de Surdos, que decorrerá durante o fim de semana em Coimbra, José Bettencourt considerou que «os métodos de ensino têm feito tudo ao contrário e os resultados estão à vista».
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-12
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2052
-# d2d = cc(feito,e) -> cc(vista,e)  #106
 1	Falando	falar	VERB	<mv>|V|GER|@ICL-PRED>	VerbForm=Ger	25	advcl	_	_
 2-3	à	_	_	_	_	_	_	_	_
 2	a	a	ADP	<sam->|PRP|@<PIV	_	4	case	_	_
@@ -469,7 +454,7 @@
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	fim	fim	NOUN	_	Gender=Masc|Number=Sing	14	obl	_	MWE=fim_de_semana|MWEPOS=NOUN
 18	de	de	ADP	_	_	17	compound	_	_
-19	semana	semana	NOUN	_	_	17	compound	_	_
+19	semana	semana	NOUN	_	Gender=Fem|Number=Sing	17	compound	_	_
 20	em	em	ADP	PRP|@<ADVL	_	21	case	_	_
 21	Coimbra	Coimbra	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	14	punct	_	_
@@ -501,28 +486,22 @@
 46	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
 # text = Chamou a atenção para o facto de «sendo a língua gestual pura e rica do ponto de vista gramatical e linguístico, e constantemente ignorada pela sociedade, importa alertar para a sua importância na educação, formação e na plena integração na vida activa».
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-13
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2053
-# d2d = punct(pura,,) -> punct(ignorada,,)  #106
-# d2d = cc(educação,e) -> cc(integração,e)  #106
-# d2d = cc(pura,e) -> cc(rica,e)  #106
-# d2d = punct(educação,,) -> punct(formação,,)  #106
-# d2d = cc(pura,e) -> cc(ignorada,e)  #106
-# d2d = cc(gramatical,e) -> cc(linguístico,e)  #106
 1	Chamou	chamar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	atenção	atenção	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
 4	para	para	ADP	PRP|@<ADVL	_	6	case	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	facto	facto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137
-7	de	de	ADP	PRP|@N<ARG	_	13	mark	_	_
+7	de	de	SCONJ	PRP|@N<ARG	_	13	mark	_	_
 8	«	«	PUNCT	PU|@PU	_	32	punct	_	ChangedBy=Issue165|SpaceAfter=No
 9	sendo	ser	AUX	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	13	cop	_	ChangedBy=Issue167
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	língua	língua	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	13	nsubj	_	_
 12	gestual	gestual	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
-13	pura	puro	ADJ	<first-cjt>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	32	amod	_	_
+13	pura	puro	ADJ	<first-cjt>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	32	advcl	_	_
 14	e	e	CCONJ	<co-sc>|KC|@CO	_	15	cc	_	d2d:#106
 15	rica	rico	ADJ	<cjt>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	13	conj	_	_
 16-17	do	_	_	_	_	_	_	_	_
@@ -530,7 +509,7 @@
 17	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	13	obl	_	MWE=ponto_de_vista|MWEPOS=NOUN
 19	de	de	ADP	_	_	18	compound	_	_
-20	vista	vista	NOUN	_	_	18	compound	_	_
+20	vista	vista	NOUN	_	Gender=Fem|Number=Sing	18	compound	_	_
 21	gramatical	gramatical	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	18	amod	_	_
 22	e	e	CCONJ	<co-postnom>|KC|@CO	_	23	cc	_	d2d:#106
 23	linguístico	linguístico	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -543,7 +522,7 @@
 29	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	sociedade	sociedade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	27	obl:agent	_	ChangedBy=Issue165|SpaceAfter=No
 31	,	,	PUNCT	PU|@PU	_	32	punct	_	_
-32	importa	importar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	dep	_	_
+32	importa	importar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
 33	alertar	alertar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	32	xcomp	_	_
 34	para	para	ADP	PRP|@<ADVL	_	37	case	_	_
 35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
@@ -570,12 +549,10 @@
 53	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Sem rejeitar o método oralista, José Bettencourt defende que o sistema educacional da criança surda deve contemplar língua gestual, escrita e falada.
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-14
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2054
-# d2d = punct(gestual,,) -> punct(escrita,,)  #106
-# d2d = cc(gestual,e) -> cc(falada,e)  #106
-1	Sem	sem	ADP	PRP|@ADVL>	_	2	mark	_	_
+1	Sem	sem	SCONJ	PRP|@ADVL>	_	2	mark	_	_
 2	rejeitar	rejeitar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	advcl	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	método	método	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
@@ -593,8 +570,8 @@
 15	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	criança	criança	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 17	surda	surdo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	16	amod	_	_
-18	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
-19	contemplar	contemplar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	ccomp	_	_
+18	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
+19	contemplar	contemplar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	xcomp	_	_
 20	língua	língua	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
 21	gestual	gestual	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	20	amod	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
@@ -604,8 +581,8 @@
 26	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = A isto, precisou, «damos o nome de comunicação total».
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-15
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2055
 1	A	a	ADP	PRP|@PIV>	_	2	case	_	_
 2	isto	isto	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	7	iobj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -613,18 +590,18 @@
 4	precisou	precisar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 6	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
-7	damos	dar	VERB	<mv>|V|PR|1P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
+7	damos	dar	VERB	<mv>|V|PR|1P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	parataxis	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	nome	nome	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
 10	de	de	ADP	PRP|@N<ARG	_	11	case	_	_
-11	comunicação	comunicação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
+11	comunicação	comunicação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	xcomp	_	_
 12	total	total	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	ChangedBy=Issue165|SpaceAfter=No
 13	»	»	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = PR visitará PJ em breve
-# source = CETEMPúblico n=392 sec=soc sem=93a
 # sent_id = CP392-16
+# source = CETEMPúblico n=392 sec=soc sem=93a
 # id = 2056
 1	PR	PR	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	visitará	visitar	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_

@@ -1,6 +1,6 @@
 # text = Falamos, obviamente, de Nuno Gomes, que marcou quatro golos num jogo do campeonato, selando a vitória do Benfica sobre o Varzim.
-# source = CETEMPúblico n=527 sec=des sem=97b
 # sent_id = CP527-1
+# source = CETEMPúblico n=527 sec=des sem=97b
 # id = 2754
 1	Falamos	falar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -36,10 +36,9 @@
 29	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = O jovem de Amarante, 21 anos feitos em Julho, custou ao Benfica cerca de 600 mil contos e demorou a mostrar serviço.
-# source = CETEMPúblico n=527 sec=des sem=97b
 # sent_id = CP527-2
+# source = CETEMPúblico n=527 sec=des sem=97b
 # id = 2755
-# d2d = cc(custou,e) -> cc(demorou,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	jovem	jovem	NOUN	<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -56,21 +55,21 @@
 13	a	a	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	15	case	_	_
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	Benfica	Benfica	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	12	obj	_	_
-16	cerca	cerca	ADV	ADV|@>A	_	18	advmod	_	MWE=cerca_de
-17	de	de	ADP	<prp>|PRP|@A<	_	16	case	_	_
+16	cerca	cerca	ADV	ADV|@>A	_	20	advmod	_	MWE=cerca_de|MWEPOS=ADV
+17	de	de	ADP	<prp>|PRP|@A<	_	16	fixed	_	_
 18	600	600	NUM	<card>|NUM|M|P|@>N	NumType=Card	20	nummod	_	ChangedBy=Issue168|MWE=600_mil
 19	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	18	flat	_	ChangedBy=Issue168
 20	contos	conto	NOUN	<np-def>|N|M|P|@<SA	Gender=Masc|Number=Plur	12	obl	_	_
 21	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 22	demorou	demorar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	_	_
-23	a	a	ADP	PRP|@<ADVL	_	24	mark	_	_
+23	a	a	SCONJ	PRP|@<ADVL	_	24	mark	_	_
 24	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	_
 25	serviço	serviço	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	24	obj	_	ChangedBy=Issue165|SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Com Manuel José no Benfica, Nuno Gomes tinha sempre um lugar;
-# source = CETEMPúblico n=527 sec=des sem=97b
 # sent_id = CP527-3
+# source = CETEMPúblico n=527 sec=des sem=97b
 # id = 2756
 1	Com	com	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Manuel	Manuel	PROPN	_	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue119|MWE=Manuel_José|MWEPOS=PROPN
@@ -89,12 +88,9 @@
 14	;	;	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = com Souness e o seu futebol de cruzamentos, Nuno Gomes não era a primeira opção mas, provavelmente, acabará até por ter mais facilidade em marcar golos.
-# source = CETEMPúblico n=527 sec=des sem=97b
 # sent_id = CP527-4
+# source = CETEMPúblico n=527 sec=des sem=97b
 # id = 2757
-# d2d = punct(opção,,) -> punct(ter,,)  #106
-# d2d = cc(opção,mas) -> cc(ter,mas)  #106
-# d2d = cc(Souness,e) -> cc(futebol,e)  #106
 1	com	com	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Souness	Souness	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
 3	e	e	CCONJ	<co-prparg>|KC|@CO	_	6	cc	_	d2d:#106
@@ -112,26 +108,24 @@
 15	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	16	amod	_	ChangedBy=Issue172
 16	opção	opção	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 17	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	24	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-18	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+18	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 19	provavelmente	provavelmente	ADV	ADV|@ADVL>	_	24	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
-21	acabará	acabar	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	24	aux	_	_
+21	acabará	acabar	VERB	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	conj	_	MWE=acabará_por|MWEPOS=AUX
 22	até	até	ADV	ADV|@ADVL>	_	24	advmod	_	_
-23	por	por	ADP	PRP|@PRT-AUX<	_	24	case	_	_
-24	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	conj	_	_
-25	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	26	det	_	_
+23	por	por	SCONJ	PRP|@PRT-AUX<	_	24	mark	_	_
+24	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	xcomp	_	_
+25	mais	mais	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	26	det	_	_
 26	facilidade	facilidade	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
-27	em	em	ADP	PRP|@N<	_	28	mark	_	_
+27	em	em	SCONJ	PRP|@N<	_	28	mark	_	_
 28	marcar	marcar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	26	acl	_	_
 29	golos	golo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	28	obj	_	ChangedBy=Issue165|SpaceAfter=No
 30	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = O treinador inglês liberta mais a equipa, joga com mais unidades na área e favorece o ponta-de-lança.
-# source = CETEMPúblico n=527 sec=des sem=97b
 # sent_id = CP527-5
+# source = CETEMPúblico n=527 sec=des sem=97b
 # id = 2758
-# d2d = punct(liberta,,) -> punct(joga,,)  #106
-# d2d = cc(liberta,e) -> cc(favorece,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	treinador	treinador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	inglês	inglês	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -142,7 +136,7 @@
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	joga	jogar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 10	com	com	ADP	PRP|@<ADVL	_	12	case	_	_
-11	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	12	det	_	_
+11	mais	mais	DET	<quant>|<KOMP>|<COMP>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	12	det	_	_
 12	unidades	unidade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	obl	_	ChangedBy=Issue137
 13-14	na	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@N<	_	15	case	_	_
@@ -155,8 +149,8 @@
 20	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Nuno Gomes marcou quinze golos no Boavista da época passada, sobretudo através de uma segunda parte da época -- com Mário Reis -- muito forte, numa equipa que tinha ainda Jimmy.
-# source = CETEMPúblico n=527 sec=des sem=97b
 # sent_id = CP527-6
+# source = CETEMPúblico n=527 sec=des sem=97b
 # id = 2759
 1	Nuno	Nuno	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Nuno_Gomes|MWEPOS=PROPN
 2	Gomes	Gomes	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -171,7 +165,7 @@
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	época	época	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
-12	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	11	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+12	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	11	amod	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 14	sobretudo	sobretudo	ADV	ADV|@>A	_	15	advmod	_	_
 15	através	através	ADV	ADV|@<ADVL	_	3	advmod	_	_
@@ -202,10 +196,9 @@
 38	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Era uma dupla terrível, que se completava pela potência do holandês e o jogo mais técnico do jovem português.
-# source = CETEMPúblico n=527 sec=des sem=97b
 # sent_id = CP527-7
+# source = CETEMPúblico n=527 sec=des sem=97b
 # id = 2760
-# d2d = cc(holandês,e) -> cc(jogo,e)  #106
 1	Era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	dupla	dupla	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
@@ -235,11 +228,9 @@
 24	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Funcionou às mil maravilhas e o Boavista acabou por ganhar a Taça de Portugal com dois golos de Sanchez e um de Nuno Gomes.
-# source = CETEMPúblico n=527 sec=des sem=97b
 # sent_id = CP527-8
+# source = CETEMPúblico n=527 sec=des sem=97b
 # id = 2761
-# d2d = cc(Funcionou,e) -> cc(ganhar,e)  #106
-# d2d = cc(golos,e) -> cc(um,e)  #106
 1	Funcionou	funcionar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2-3	às	_	_	_	_	_	_	_	_
 2	a	a	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -249,9 +240,9 @@
 6	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	d2d:#106
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	Boavista	Boavista	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
-9	acabou	acabar	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux	_	_
-10	por	por	ADP	PRP|@PRT-AUX<	_	11	case	_	_
-11	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	conj	_	_
+9	acabou	acabar	VERB	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	_	MWE=acabou_por|MWEPOS=AUX
+10	por	por	SCONJ	PRP|@PRT-AUX<	_	11	mark	_	_
+11	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Taça	Taça	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	11	obj	_	MWE=Taça_de_Portugal
 14	de	de	ADP	PRP|@N<	_	15	case	_	_

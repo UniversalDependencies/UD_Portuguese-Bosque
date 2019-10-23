@@ -1,8 +1,7 @@
 # text = Hoje de manhã, é o dia do encontro de Fernando Nogueira com o Presidente da República e o ministro já manifestou grande curiosidade quanto ao que Ben Ali terá para lhe dizer.
-# source = CETEMPúblico n=509 sec=pol sem=92b
 # sent_id = CP509-1
+# source = CETEMPúblico n=509 sec=pol sem=92b
 # id = 2674
-# d2d = cc(dia,e) -> cc(manifestou,e)  #106
 1	Hoje	hoje	NOUN	N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	MWE=Hoje_de_manhã
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	manhã	manhã	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -31,27 +30,23 @@
 24	manifestou	manifestar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	conj	_	_
 25	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	26	amod	_	_
 26	curiosidade	curiosidade	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
-27	quanto	quanto	ADV	ADV|@N<	_	26	advmod	_	MWE=quanto_a
+27	quanto	quanto	ADV	ADV|@N<	_	29	case	_	MWE=quanto_a|MWEPOS=ADP
 28-29	ao	_	_	_	_	_	_	_	_
-28	a	a	ADP	PRP|@A<	_	29	case	_	_
-29	o	o	PRON	<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	27	obl	_	_
+28	a	a	ADP	PRP|@A<	_	27	fixed	_	_
+29	o	o	PRON	<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	26	nmod	_	_
 30	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	33	obj	_	_
 31	Ben	Ben	PROPN	_	Gender=Masc|Number=Sing	33	nsubj	_	ChangedBy=Issue119|MWE=Ben_Ali|MWEPOS=PROPN
 32	Ali	Ali	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119
 33	terá	ter	VERB	<mv>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	acl:relcl	_	_
-34	para	para	ADP	PRP|@<ADVL	_	36	mark	_	_
+34	para	para	SCONJ	PRP|@<ADVL	_	36	mark	_	_
 35	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	iobj	_	_
 36	dizer	dizer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 37	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Segue-se a reunião com o secretário-geral do partido no poder (RCD, Rassemblement Constitutionnel Democratique, Liga Constitucional Democrática), e a entrevista com o ministro de Estado e do Interior, Abdallah Kallel, tido como braço direito do Presidente e o número dois do Governo.
-# source = CETEMPúblico n=509 sec=pol sem=92b
 # sent_id = CP509-2
+# source = CETEMPúblico n=509 sec=pol sem=92b
 # id = 2675
-# d2d = punct(reunião,,) -> punct(entrevista,,)  #106
-# d2d = punct(reunião,,) -> punct(entrevista,,)  #106
-# d2d = cc(reunião,e) -> cc(entrevista,e)  #106
-# d2d = punct(reunião,,) -> punct(entrevista,,)  #106
 1-2	Segue-se	_	_	_	_	_	_	_	_
 1	Segue	seguir	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	expl	_	ChangedBy=Issue135
@@ -70,11 +65,11 @@
 13	poder	poder	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
 14	(	(	PUNCT	PU|@PU	_	15	punct	_	ChangedBy=Issue165|SpaceAfter=No
 15	RCD	RCD	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	10	appos	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	Rassemblement	Rassemblement	PROPN	_	Gender=Masc|Number=Sing	15	appos	_	ChangedBy=Issue119|MWE=Rassemblement_Constitutionnel_Democratique|MWEPOS=PROPN
 18	Constitutionnel	Constitutionnel	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	Democratique	Democratique	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-20	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
+20	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 21	Liga	Liga	PROPN	_	Gender=Fem|Number=Sing	15	appos	_	ChangedBy=Issue119|MWE=Liga_Constitucional_Democrática|MWEPOS=PROPN
 22	Constitucional	Constitucional	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	Democrática	Democrática	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -87,12 +82,12 @@
 30	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	ministro	ministro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	28	nmod	_	MWE=ministro_de_Estado_e_do_Interior
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
-33	Estado	estado	NOUN	N|@P<	_	31	nmod	_	MWE=estado_e_de_o_interior
+33	Estado	estado	NOUN	N|@P<	Gender=Masc|Number=Sing	31	nmod	_	MWE=estado_e_de_o_interior
 34	e	e	CCONJ	PROP|@N<	_	33	flat:name	_	_
 35-36	do	_	_	_	_	_	_	_	_
 35	de	de	ADP	<sam->|PRP|@N<	_	37	case	_	_
 36	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	Interior	interior	NOUN	N|@P<	_	33	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+37	Interior	interior	NOUN	N|@P<	Gender=Masc|Number=Sing	33	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 38	,	,	PUNCT	PU|@PU	_	39	punct	_	_
 39	Abdallah	Abdallah	PROPN	_	Gender=Masc|Number=Sing	31	appos	_	ChangedBy=Issue119|MWE=Abdallah_Kallel|MWEPOS=PROPN
 40	Kallel	Kallel	PROPN	_	Number=Sing	39	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No

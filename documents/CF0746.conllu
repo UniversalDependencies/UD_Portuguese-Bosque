@@ -1,9 +1,7 @@
 # text = Todos os anunciantes que aderiram à idéia dos clubes infantis estão atrás de um mercado de dimensões gigantescas: os miniconsumidores americanos na faixa de idade entre 4 e 12 anos gastaram no ano passado US$ 7,3 bilhões das suas próprias mesadas e influenciaram suas famílias a comprar mais US$ 130 bilhões.
-# source = CETENFolha n=746 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF746-1
+# source = CETENFolha n=746 cad=Dinheiro sec=eco sem=94a
 # id = 3125
-# d2d = cc(gastaram,e) -> cc(influenciaram,e)  #106
-# d2d = cc(4,e) -> cc(12,e)  #106
 1	Todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	3	det	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	anunciantes	anunciante	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	13	nsubj	_	_
@@ -60,23 +58,22 @@
 49	influenciaram	influenciar	VERB	<cjt>|<mv>|V|PS/MQP|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	35	conj	_	_
 50	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	51	det	_	_
 51	famílias	família	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	49	obj	_	_
-52	a	a	ADP	PRP|@<PIV	_	53	mark	_	_
+52	a	a	SCONJ	PRP|@<PIV	_	53	mark	_	_
 53	comprar	comprar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	49	xcomp	_	_
-54	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	55	det	_	_
+54	mais	mais	DET	<quant>|<KOMP>|<COMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	55	det	_	_
 55	US$	US$	SYM	_	_	53	obj	_	_
 56	130	130	NUM	<card>|NUM|M|P|@>N	NumType=Card	55	nummod	_	ChangedBy=Issue168|MWE=130_bilhões
 57	bilhões	bilhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	56	flat	_	ChangedBy=Issue165|SpaceAfter=No
 58	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Tanto dinheiro parece tornar desprezível a ética do marketing: a Delta recebe centenas de cartas de crianças denunciando pais ou parentes que preferiram viajar por outras companhias aéreas, configurando um claro estímulo ao «dedodurismo» precoce.
-# source = CETENFolha n=746 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF746-2
+# source = CETENFolha n=746 cad=Dinheiro sec=eco sem=94a
 # id = 3126
-# d2d = cc(pais,ou) -> cc(parentes,ou)  #106
 1	Tanto	tanto	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_
 2	dinheiro	dinheiro	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
-3	parece	parecer	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
-4	tornar	tornar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	parece	parecer	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	tornar	tornar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 5	desprezível	desprezível	ADJ	ADJ|F|S|@<OC	Gender=Fem|Number=Sing	4	xcomp	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	ética	ética	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
@@ -119,11 +116,9 @@
 42	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Helcio Emerich é jornalista, publicitário e vice-presidente da agência Almap/BBDO.
-# source = CETENFolha n=746 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF746-3
+# source = CETENFolha n=746 cad=Dinheiro sec=eco sem=94a
 # id = 3127
-# d2d = cc(jornalista,e) -> cc(vice-presidente,e)  #106
-# d2d = punct(jornalista,,) -> punct(publicitário,,)  #106
 1	Helcio	Helcio	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	ChangedBy=Issue119|MWE=Helcio_Emerich|MWEPOS=PROPN
 2	Emerich	Emerich	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167

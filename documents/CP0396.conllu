@@ -1,14 +1,7 @@
 # text = A fase II do terminal «multipurpose», o novo porto de pesca com a respectiva lota, o sistema de comando e controlo dos terminais petrolífero e petroquímico, diversos acessos rodo-ferroviários e a beneficiação e tratamento paisagísticos da zona marginal de Sines, investimentos rondando os 4,7 milhões de contos, foram as infra-estruturas que Azevedo Soares inaugurou.
-# source = CETEMPúblico n=396 sec=eco sem=94b
 # sent_id = CP396-1
+# source = CETEMPúblico n=396 sec=eco sem=94b
 # id = 2069
-# d2d = cc(comando,e) -> cc(controlo,e)  #106
-# d2d = cc(petrolífero,e) -> cc(petroquímico,e)  #106
-# d2d = punct(fase,,) -> punct(porto,,)  #106
-# d2d = punct(fase,,) -> punct(acessos,,)  #106
-# d2d = punct(fase,,) -> punct(sistema,,)  #106
-# d2d = cc(beneficiação,e) -> cc(tratamento,e)  #106
-# d2d = cc(fase,e) -> cc(beneficiação,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	fase	fase	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	60	nsubj	_	_
 3	II	ii	ADJ	<NUM-ord>|ADJ|F|S|@N<	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	ChangedBy=Issue172
@@ -64,10 +57,10 @@
 50	investimentos	investimento	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	2	appos	_	_
 51	rondando	rondar	VERB	<mv>|V|GER|@ICL-N<	VerbForm=Ger	50	acl	_	_
 52	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	53	det	_	_
-53	4,7	4,7	NUM	<card>|NUM|M|P|@>N	NumType=Card	56	nummod	_	ChangedBy=Issue168|MWE=4,7_milhões
+53	4,7	4,7	NUM	<card>|NUM|M|P|@>N	NumType=Card	51	obj	_	ChangedBy=Issue168|MWE=4,7_milhões
 54	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	53	flat	_	_
 55	de	de	ADP	PRP|@N<ARG	_	56	case	_	_
-56	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	51	obj	_	ChangedBy=Issue165|SpaceAfter=No
+56	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	53	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 57	,	,	PUNCT	PU|@PU	_	50	punct	_	_
 58	foram	ser	AUX	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	60	cop	_	ChangedBy=Issue167
 59	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	60	det	_	_
@@ -79,14 +72,9 @@
 65	.	.	PUNCT	PU|@PU	_	60	punct	_	_
 
 # text = O ministro -- que referiu representarem as receitas do porto de Sines 12 por cento do produto interno bruto do Alentejo, assegurando cerca de 4200 postos de trabalho -- elogiou a «boa colaboração» entre a autarquia local, a Câmara de Sines, e a Administração do Porto de Sines, APS, afirmando que «em Sines disse-se pouco e fez-se muito», numa indirecta aos problemas entre a Administração do Porto de Lisboa e a câmara da capital.
-# source = CETEMPúblico n=396 sec=eco sem=94b
 # sent_id = CP396-2
+# source = CETEMPúblico n=396 sec=eco sem=94b
 # id = 2070
-# d2d = punct(autarquia,,) -> punct(Câmara,,)  #106
-# d2d = punct(autarquia,,) -> punct(Administração,,)  #106
-# d2d = cc(autarquia,e) -> cc(Administração,e)  #106
-# d2d = cc(disse-,e) -> cc(fez-,e)  #106
-# d2d = cc(Administração,e) -> cc(câmara,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ministro	ministro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	34	nsubj	_	_
 3	--	--	PUNCT	PU|@PU	_	5	punct	_	_
@@ -102,7 +90,7 @@
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	Sines	Sines	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	11	nmod	_	_
 14	12	12	NUM	<card>|NUM|M|P|@>N	NumType=Card	15	nummod	_	ChangedBy=Issue168
-15	por	por	ADP	_	Gender=Masc|Number=Sing	6	obj	_	MWE=por_cento|MWEPOS=NOUN
+15	por	por	ADP	_	_	6	obj	_	MWE=por_cento|MWEPOS=NOUN
 16	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	15	compound	_	_
 17-18	do	_	_	_	_	_	_	_	_
 17	de	de	ADP	<sam->|PRP|@N<	_	19	case	_	_
@@ -116,12 +104,12 @@
 24	Alentejo	Alentejo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 26	assegurando	assegurar	VERB	<mv>|V|GER|@ICL-N<PRED	VerbForm=Ger	11	acl	_	_
-27	cerca	cerca	ADV	ADV|@>A	_	29	advmod	_	MWE=cerca_de
-28	de	de	ADP	<prp>|PRP|@A<	_	27	case	_	_
+27	cerca	cerca	ADV	ADV|@>A	_	29	advmod	_	MWE=cerca_de|MWEPOS=ADV
+28	de	de	ADP	<prp>|PRP|@A<	_	27	fixed	_	_
 29	4200	4200	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	nummod	_	ChangedBy=Issue168
 30	postos	postos	NOUN	_	Gender=Masc|Number=Plur	26	obj	_	MWE=postos_de_trabalho|MWEPOS=NOUN
 31	de	de	ADP	_	_	30	compound	_	_
-32	trabalho	trabalho	NOUN	_	_	30	compound	_	_
+32	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	30	compound	_	_
 33	--	--	PUNCT	PU|@PU	_	5	punct	_	_
 34	elogiou	elogiar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_

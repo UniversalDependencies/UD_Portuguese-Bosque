@@ -1,14 +1,12 @@
 # text = O que deve ser destacado de forma resumida em um item sobre qualificações profissionais são os pontos fortes da experiência e da formação acadêmica e os atributos que podem diferenciar o candidato no mercado.
-# source = CETENFolha n=534 cad=Empregos sec=eco sem=94a
 # sent_id = CF534-1
+# source = CETENFolha n=534 cad=Empregos sec=eco sem=94a
 # id = 2239
-# d2d = cc(pontos,e) -> cc(atributos,e)  #106
-# d2d = cc(experiência,e) -> cc(formação,e)  #106
 1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	5	nsubj:pass	_	_
-3	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+3	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
 4	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	5	aux:pass	_	_
-5	destacado	destacar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	acl:relcl	_	_
+5	destacado	destacar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	_	_
 6	de	de	ADP	PRP|@<ADVL	_	7	case	_	_
 7	forma	forma	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137
 8	resumida	resumir	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	7	acl	_	_
@@ -36,24 +34,20 @@
 28	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
 29	atributos	atributo	NOUN	<cjt>|<np-def>|N|M|P|@<SC	Gender=Masc|Number=Plur	17	conj	_	_
 30	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	32	nsubj	_	_
-31	podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	aux	_	_
-32	diferenciar	diferenciar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	29	acl:relcl	_	_
+31	podem	poder	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	acl:relcl	_	_
+32	diferenciar	diferenciar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	31	xcomp	_	_
 33	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	candidato	candidato	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	32	obj	_	_
 35-36	no	_	_	_	_	_	_	_	_
 35	em	em	ADP	<sam->|PRP|@<ADVL	_	37	case	_	_
 36	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
 37	mercado	mercado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	32	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-38	.	.	PUNCT	PU|@PU	_	17	punct	_	_
+38	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Segundo Laerte Leite Cordeiro, consultor especializado em recolocação, o currículo deve ser dividido em três partes: área geral de interesse (administrativa, contábil, financeira etc.), qualificações profissionais e descrição da trajetória de empregos (empresas, cargos, períodos).
-# source = CETENFolha n=534 cad=Empregos sec=eco sem=94a
 # sent_id = CF534-2
+# source = CETENFolha n=534 cad=Empregos sec=eco sem=94a
 # id = 2240
-# d2d = cc(área,e) -> cc(descrição,e)  #106
-# d2d = punct(área,,) -> punct(qualificações,,)  #106
-# d2d = punct(área,,) -> punct(qualificações,,)  #106
-# d2d = punct(área,,) -> punct(qualificações,,)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Laerte	Laerte	PROPN	_	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue119|MWE=Laerte_Leite_Cordeiro|MWEPOS=PROPN
 3	Leite	Leite	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -66,9 +60,9 @@
 10	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	currículo	currículo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj:pass	_	_
-13	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
+13	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 14	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	15	aux:pass	_	_
-15	dividido	dividir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+15	dividido	dividir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	xcomp	_	_
 16	em	em	ADP	PRP|@<PIV	_	18	case	_	_
 17	três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
 18	partes	parte	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	15	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -79,10 +73,10 @@
 23	interesse	interesse	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
 24	(	(	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 25	administrativa	administrativo	ADJ	<first-cjt>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	20	amod	_	ChangedBy=Issue165|SpaceAfter=No
-26	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
-27	contábil	contábil	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	25	amod	_	ChangedBy=Issue165|SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+27	contábil	contábil	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	25	conj	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
-29	financeira	financeiro	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	25	amod	_	_
+29	financeira	financeiro	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	25	conj	_	_
 30	etc.	etc.	ADV	ADV|@<ADVL	_	25	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 31	)	)	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 32	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106

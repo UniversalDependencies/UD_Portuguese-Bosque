@@ -1,10 +1,9 @@
 # text = Em relação à situação da Fonte da Telha e às demolições que ali já se efectuaram, Marçal Pina afirma não saber explicar por que é que parte do entulho se mantém no local, remetendo a explicação para o Ministério do Ambiente.
-# source = CETEMPúblico n=334 sec=soc sem=96b
 # sent_id = CP334-1
+# source = CETEMPúblico n=334 sec=soc sem=96b
 # id = 1744
-# d2d = cc(situação,e) -> cc(demolições,e)  #106
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Em_relação_a
-2	relação	relação	NOUN	N|@P<	_	24	obl	_	_
+2	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	24	obl	_	_
 3-4	à	_	_	_	_	_	_	_	_
 3	a	a	ADP	PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -36,8 +35,8 @@
 27	explicar	explicar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	26	xcomp	_	_
 28	por	por	ADP	PRP|@ADVL>	_	29	case	_	MWE=por_que
 29	que	que	PRON	INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	37	obl	_	_
-30	é	é	ADP	PRP|@ADVL>	_	31	case	_	MWE=é_que
-31	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	37	obl	_	_
+30	é	ser	AUX	PRP|@ADVL>	_	37	discourse	_	MWE=é_que|MWEPOS=INTJ
+31	que	que	SCONJ	N|M|S|@P<	_	30	fixed	_	_
 32	parte	parte	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	37	nsubj	_	_
 33-34	do	_	_	_	_	_	_	_	_
 33	de	de	ADP	PRP|@N<ARG	_	35	case	_	_
@@ -63,8 +62,8 @@
 51	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
 # text = Ministério que, aliás, acusa de ser culpado de parte dos problemas que se vivem na Costa da Caparica.
-# source = CETEMPúblico n=334 sec=soc sem=96b
 # sent_id = CP334-2
+# source = CETEMPúblico n=334 sec=soc sem=96b
 # id = 1745
 1	Ministério	ministério	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	6	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -72,7 +71,7 @@
 4	aliás	aliás	ADV	<kc>|ADV|@ADVL>	_	6	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	acusa	acusar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
-7	de	de	ADP	PRP|@<PIV	_	9	mark	_	_
+7	de	de	SCONJ	PRP|@<PIV	_	9	mark	_	_
 8	ser	ser	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	9	aux:pass	_	_
 9	culpado	culpar	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	6	xcomp	_	_
 10	de	de	ADP	PRP|@<PIV	_	11	case	_	_
@@ -95,13 +94,9 @@
 24	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «Desde o anterior Governo que as promessas são feitas, nomeadamente a aprovação do projecto urbano das praias e o da frente de praias, reiteradas pelo actual Executivo, mas nada é feito, não existindo qualquer espécie de diálogo entre o Governo e as autarquias.»
-# source = CETEMPúblico n=334 sec=soc sem=96b
 # sent_id = CP334-3
+# source = CETEMPúblico n=334 sec=soc sem=96b
 # id = 1746
-# d2d = punct(feitas,,) -> punct(feito,,)  #106
-# d2d = cc(feitas,mas) -> cc(feito,mas)  #106
-# d2d = cc(Governo,e) -> cc(autarquias,e)  #106
-# d2d = cc(projecto,e) -> cc(o,e)  #106
 1	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Desde	desde	ADP	PRP|@ADVL>	_	5	case	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
@@ -162,8 +157,8 @@
 54	»	»	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = O vereador do Ambiente da Câmara Municipal de Almada, CMA, José Luís Leitão, por seu turno, refere que a limpeza das matas que envolvem a zona da Fonte da Telha, que é feita, dentro do possível, pela autarquia, deveria ser competência do Instituto de Conservação da Natureza, ICN, pois a área está sob a sua alçada, através da tutela do Ministério do Ambiente.
-# source = CETEMPúblico n=334 sec=soc sem=96b
 # sent_id = CP334-4
+# source = CETEMPúblico n=334 sec=soc sem=96b
 # id = 1747
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	vereador	vereador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj	_	_
@@ -174,8 +169,8 @@
 6-7	da	_	_	_	_	_	_	_	_
 6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Câmara	Câmara	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	MWE=câmara_municipal|MWEPOS=NOUN
-9	Municipal	Municipal	ADJ	_	Number=Sing	8	amod	_	_
+8	Câmara	Câmara	PROPN	_	Gender=Fem|Number=Sing	5	nmod	_	MWE=câmara_municipal|MWEPOS=NOUN
+9	Municipal	Municipal	PROPN	_	Number=Sing	8	amod	_	_
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	Almada	Almada	PROPN	PROP|@P<	Number=Sing	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	13	punct	_	_

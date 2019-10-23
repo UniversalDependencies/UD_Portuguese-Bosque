@@ -1,9 +1,7 @@
 # text = O objectivo do acordo é consolidar o cessar-fogo assinado o mês passado, e proceder à troca de prisioneiros entre os dois campos.
-# source = CETEMPúblico n=927 sec=pol sem=96b
 # sent_id = CP927-1
+# source = CETEMPúblico n=927 sec=pol sem=96b
 # id = 4767
-# d2d = cc(consolidar,e) -> cc(proceder,e)  #106
-# d2d = punct(consolidar,,) -> punct(proceder,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	objectivo	objectivo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -34,19 +32,18 @@
 26	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = A guerra civil no Tadjiquistão, que fez mais de 50 mortos, começou em 1992, quando as forças do neo-comunista Rakhmonov derrubaram o governo dos islamistas, que, nas últimas semanas, têm somado vitórias e se aproximam perigosamente da capital.
-# source = CETEMPúblico n=927 sec=pol sem=96b
 # sent_id = CP927-2
+# source = CETEMPúblico n=927 sec=pol sem=96b
 # id = 4768
-# d2d = cc(somado,e) -> cc(aproximam,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	guerra	guerra	NOUN	_	_	15	nsubj	_	MWE=guerra_civil|MWEPOS=NOUN
-3	civil	civil	ADJ	_	_	2	amod	_	_
+2	guerra	guerra	NOUN	_	Gender=Fem|Number=Sing	15	nsubj	_	MWE=guerra_civil|MWEPOS=NOUN
+3	civil	civil	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	_
 4-5	no	_	_	_	_	_	_	_	_
 4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Tadjiquistão	Tadjiquistão	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-8	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	9	nsubj	_	_
+8	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	PronType=Rel	9	nsubj	_	_
 9	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	_	_
 10	mais	mais	ADV	ADV|@>A	_	12	advmod	_	MWE=mais_de
 11	de	de	ADP	<prp>|PRP|@A<	_	10	fixed	_	_

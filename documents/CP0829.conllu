@@ -1,9 +1,7 @@
 # text = A Ligier-Renault, a Lotus-Mugen-Honda e a Sauber-Mercedes sucederão à Jordan nos referidos ensaios.
-# source = CETEMPúblico n=829 sec=des sem=94a
 # sent_id = CP829-1
+# source = CETEMPúblico n=829 sec=des sem=94a
 # id = 4270
-# d2d = cc(Ligier-Renault,e) -> cc(Sauber-Mercedes,e)  #106
-# d2d = punct(Ligier-Renault,,) -> punct(Lotus-Mugen-Honda,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Ligier-Renault	Ligier-Renault	PROPN	<first-cjt>|PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
@@ -25,8 +23,8 @@
 17	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = A Ferrari chegará amanhã ao circuito de Barcelona, onde apresentará no seu novo modelo uma das inovações mais interessantes para a nova época: a fixação das suspensões directamente incorporadas no «chassis».
-# source = CETEMPúblico n=829 sec=des sem=94a
 # sent_id = CP829-2
+# source = CETEMPúblico n=829 sec=des sem=94a
 # id = 4271
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Ferrari	Ferrari	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -39,7 +37,7 @@
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	Barcelona	Barcelona	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-11	onde	onde	ADV	<rel>|ADV|@ADVL>	_	12	advmod	_	_
+11	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	12	obl	_	_
 12	apresentará	apresentar	VERB	<mv>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	acl:relcl	_	_
 13-14	no	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@<ADVL	_	17	case	_	_
@@ -76,10 +74,9 @@
 41	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Paralelamente aos testes de reabastecimento, o McLaren-Peugeot de Mika Hakkinen e o Sauber-Mercedes de Karl Wendlinger foram os mais rápidos em pista, cronometrados na suas voltas mais rápidas em 1m19,32s, enquanto o Lotus-Mugen-Honda de Pedro Lamy foi o mais lento, gastando 1m27,52s, muito aquém do italiano Alessandro Zanardi, piloto-ensaiador da equipa, que gastou apenas 1m22,95s.
-# source = CETEMPúblico n=829 sec=des sem=94a
 # sent_id = CP829-3
+# source = CETEMPúblico n=829 sec=des sem=94a
 # id = 4272
-# d2d = cc(McLaren-Peugeot,e) -> cc(Sauber-Mercedes,e)  #106
 1	Paralelamente	paralelamente	ADV	ADV|@ADVL>	_	22	advmod	_	_
 2-3	aos	_	_	_	_	_	_	_	_
 2	a	a	ADP	<sam->|PRP|@A<	_	4	case	_	_
@@ -100,9 +97,9 @@
 17	Karl	Karl	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue119|MWE=Karl_Wendlinger|MWEPOS=PROPN
 18	Wendlinger	Wendlinger	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	foram	ser	AUX	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	cop	_	ChangedBy=Issue167
-20	os	o	DET	<artd>|ART|M|P|@>A	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	dep	_	_
+20	os	o	DET	<artd>|ART|M|P|@>A	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
 21	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	22	advmod	_	_
-22	rápidos	rápido	ADJ	<COMP>|ADJ|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
+22	rápidos	rápido	NOUN	<COMP>|ADJ|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
 23	em	em	ADP	PRP|@A<	_	24	case	_	_
 24	pista	pista	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	26	punct	_	_
@@ -124,14 +121,14 @@
 40	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	38	nmod	_	ChangedBy=Issue119|MWE=Pedro_Lamy|MWEPOS=PROPN
 41	Lamy	Lamy	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119
 42	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	45	cop	_	ChangedBy=Issue167
-43	o	o	DET	<artd>|ART|M|S|@>A	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	dep	_	_
+43	o	o	DET	<artd>|ART|M|S|@>A	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
 44	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	45	advmod	_	_
-45	lento	lento	ADJ	<n>|<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	22	advcl	_	ChangedBy=Issue165|SpaceAfter=No
+45	lento	lento	NOUN	<n>|<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	22	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 46	,	,	PUNCT	PU|@PU	_	47	punct	_	_
 47	gastando	gastar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	45	advcl	_	_
 48	1m27,52s	1m27,52s	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	47	obj	_	ChangedBy=Issue165|SpaceAfter=No
 49	,	,	PUNCT	PU|@PU	_	47	punct	_	_
-50	muito	muito	ADV	<quant>|DET|M|S|@>P	Gender=Masc|Number=Sing|PronType=Ind	51	advmod	_	_
+50	muito	muito	ADV	<quant>|DET|M|S|@>P	_	51	advmod	_	_
 51	aquém	aquém	ADV	ADV|@<ADVL	_	45	advmod	_	MWE=aquém_de
 52-53	do	_	_	_	_	_	_	_	_
 52	de	de	ADP	PRP|@A<	_	54	case	_	_
@@ -153,40 +150,34 @@
 67	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = Frentzen (Sauber-Mercedes), com 1m20,02s, Irvine (Jordan-Hart), com 1m20,14s, Panis e Bernard (Ligier-Renault), respectivamente, com 1m21,64s e 1m22,24s, seguiram-se à dupla mais rápida, no circuito de Montmelò.
-# source = CETEMPúblico n=829 sec=des sem=94a
 # sent_id = CP829-4
+# source = CETEMPúblico n=829 sec=des sem=94a
 # id = 4273
-# d2d = punct(Frentzen,,) -> punct(Panis,,)  #106
-# d2d = cc(Panis,e) -> cc(Bernard,e)  #106
-# d2d = punct(Frentzen,,) -> punct(Irvine,,)  #106
-# d2d = punct(Frentzen,,) -> punct(Irvine,,)  #106
-# d2d = cc(1m21,64s,e) -> cc(1m22,24s,e)  #106
-# d2d = punct(Frentzen,,) -> punct(Panis,,)  #106
 1	Frentzen	Frentzen	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	31	nsubj	_	_
 2	(	(	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
-3	Sauber-Mercedes	Sauber-Mercedes	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+3	Sauber-Mercedes	Sauber-Mercedes	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	1	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 4	)	)	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
-5	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	com	com	ADP	<first-cjt>|PRP|@N<PRED	_	7	case	_	_
 7	1m20,02s	1m20,02s	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+8	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 9	Irvine	Irvine	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	_
 10	(	(	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
-11	Jordan-Hart	Jordan-Hart	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+11	Jordan-Hart	Jordan-Hart	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	9	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 12	)	)	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
-13	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 14	com	com	ADP	<cjt>|PRP|@N<PRED	_	15	case	_	_
 15	1m20,14s	1m20,14s	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 17	Panis	Panis	PROPN	<cjt>|<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	_
 18	e	e	CCONJ	<co-subj>|KC|@CO	_	19	cc	_	d2d:#106
 19	Bernard	Bernard	PROPN	<cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	conj	_	_
 20	(	(	PUNCT	PU|@PU	_	21	punct	_	ChangedBy=Issue165|SpaceAfter=No
-21	Ligier-Renault	Ligier-Renault	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+21	Ligier-Renault	Ligier-Renault	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	17	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 22	)	)	PUNCT	PU|@PU	_	21	punct	_	ChangedBy=Issue165|SpaceAfter=No
-23	,	,	PUNCT	PU|@PU	_	27	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 24	respectivamente	respectivamente	ADV	ADV|@>P	_	27	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-25	,	,	PUNCT	PU|@PU	_	27	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 26	com	com	ADP	<cjt>|PRP|@N<PRED	_	27	case	_	_
 27	1m21,64s	1m21,64s	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	conj	_	_
 28	e	e	CCONJ	<co-prparg>|KC|@CO	_	29	cc	_	d2d:#106

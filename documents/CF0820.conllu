@@ -1,6 +1,6 @@
 # text = Camila viajava no colo de Dalva, na frente do veículo.
-# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # sent_id = CF820-1
+# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # id = 3450
 1	Camila	Camila	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	viajava	viajar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -14,7 +14,7 @@
 9-10	na	_	_	_	_	_	_	_	_
 9	em	em	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	frente	frente	NOUN	N|@P<	_	2	obl	_	_
+11	frente	frente	NOUN	N|@P<	Gender=Fem|Number=Sing	2	obl	_	_
 12-13	do	_	_	_	_	_	_	_	_
 12	de	de	ADP	PRP|@N<	_	14	case	_	_
 13	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
@@ -22,8 +22,8 @@
 15	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O corpo de Camila foi lançado para fora do carro.
-# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # sent_id = CF820-2
+# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # id = 3451
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	corpo	corpo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj:pass	_	_
@@ -40,8 +40,8 @@
 12	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = A menina morreu na hora.
-# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # sent_id = CF820-3
+# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # id = 3452
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	menina	menina	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
@@ -53,8 +53,8 @@
 7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Dalva seria submetida ontem a cirurgia no hospital de São Paulo.
-# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # sent_id = CF820-4
+# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # id = 3453
 1	Dalva	Dalva	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj:pass	_	_
 2	seria	ser	AUX	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux:pass	_	_
@@ -72,24 +72,21 @@
 13	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A famíla voltava para casa, em Americanópolis, depois de participar de casamento na Barra Funda e deu carona a amigos.
-# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # sent_id = CF820-5
+# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # id = 3454
-# d2d = punct(voltava,,) -> punct(deu,,)  #106
-# d2d = punct(voltava,,) -> punct(deu,,)  #106
-# d2d = cc(voltava,e) -> cc(deu,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	famíla	famíla	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	voltava	voltar	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 4	para	para	ADP	PRP|@<SA	_	5	case	_	_
 5	casa	casa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue165|SpaceAfter=No
-6	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+6	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 7	em	em	ADP	PRP|@<ADVL	_	8	case	_	_
 8	Americanópolis	Americanópolis	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-9	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
-10	depois	depois	ADV	ADV|@<ADVL	_	3	advmod	_	_
-11	de	de	ADP	PRP|@A<ARG	_	12	mark	_	_
-12	participar	participar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	advcl	_	_
+9	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
+10	depois	depois	ADV	ADV|@<ADVL	_	12	mark	_	MWE=depois_de|MWEPOS=SCONJ
+11	de	de	ADP	PRP|@A<ARG	_	10	fixed	_	_
+12	participar	participar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	_
 13	de	de	ADP	PRP|@<PIV	_	14	case	_	_
 14	casamento	casamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obj	_	_
 15-16	na	_	_	_	_	_	_	_	_
@@ -105,8 +102,8 @@
 24	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Outras cinco pessoas ficaram feridas.
-# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # sent_id = CF820-6
+# source = CETENFolha n=820 cad=Brasil sec=pol sem=94b
 # id = 3455
 1	Outras	outro	DET	<diff>|<KOMP>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	3	det	_	_
 2	cinco	cinco	NUM	<card>|NUM|F|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168

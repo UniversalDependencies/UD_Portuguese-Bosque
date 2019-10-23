@@ -1,13 +1,13 @@
 # text = Ela preferiu ser a primeira dama da ilha de Skorpios.
-# source = CETENFolha n=720 cad=Mundo sec=pol sem=94b
 # sent_id = CF720-1
+# source = CETENFolha n=720 cad=Mundo sec=pol sem=94b
 # id = 3022
 1	Ela	ela	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	preferiu	preferir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	ser	ser	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	6	cop	_	ChangedBy=Issue167
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 5	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	6	amod	_	ChangedBy=Issue172
-6	dama	dama	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	2	dep	_	_
+6	dama	dama	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	2	ccomp	_	_
 7-8	da	_	_	_	_	_	_	_	_
 7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
@@ -17,15 +17,15 @@
 12	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Foi nesse papel que, encarnada por outra Jacqueline (Bisset), Jackie O. debutou na tela, 15 anos depois de ter-se transformado na mais pranteada e sedutora viúva deste século.
-# source = CETENFolha n=720 cad=Mundo sec=pol sem=94b
 # sent_id = CF720-2
+# source = CETENFolha n=720 cad=Mundo sec=pol sem=94b
 # id = 3023
-1	Foi	foi	ADV	<foc>|ADV|@ADVL>	_	17	mark	_	_
+1	Foi	foi	SCONJ	<foc>|ADV|@ADVL>	_	17	mark	_	_
 2-3	nesse	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 3	esse	esse	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
 4	papel	papel	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	ChangedBy=Issue137
-5	que	que	ADV	<foc>|ADV|@<ADVL	_	4	mark	_	ChangedBy=Issue165|SpaceAfter=No
+5	que	que	SCONJ	<foc>|ADV|@<ADVL	_	4	mark	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 7	encarnada	encarnar	VERB	<mv>|V|PCP|F|S|@ICL-PRED>	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	15	acl	_	_
 8	por	por	ADP	PRP|@PASS	_	10	case	_	_
@@ -45,12 +45,12 @@
 21	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 22	15	15	NUM	<card>|NUM|M|P|@>N	NumType=Card	23	nummod	_	ChangedBy=Issue168
 23	anos	ano	NOUN	<np-def>|N|M|P|@>A	Gender=Masc|Number=Plur	24	nmod	_	_
-24	depois	depois	ADV	ADV|@<ADVL	_	17	advmod	_	_
-25	de	de	ADP	PRP|@A<ARG	_	28	mark	_	_
+24	depois	depois	ADV	ADV|@<ADVL	_	28	mark	_	MWE=depois_de|MWEPOS=SCONJ
+25	de	de	ADP	PRP|@A<ARG	_	24	fixed	_	_
 26-27	ter-se	_	_	_	_	_	_	_	_
 26	ter	ter	AUX	<aux>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	28	aux	_	_
 27	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	28	expl	_	ChangedBy=Issue135
-28	transformado	transformar	VERB	<mv>|<se-passive>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	24	advcl	_	_
+28	transformado	transformar	VERB	<mv>|<se-passive>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	17	advcl	_	_
 29-30	na	_	_	_	_	_	_	_	_
 29	em	em	ADP	<sam->|PRP|@<PIV	_	35	case	_	_
 30	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
@@ -66,8 +66,8 @@
 39	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Merecia coisa melhor.
-# source = CETENFolha n=720 cad=Mundo sec=pol sem=94b
 # sent_id = CF720-3
+# source = CETENFolha n=720 cad=Mundo sec=pol sem=94b
 # id = 3024
 1	Merecia	merecer	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 2	coisa	coisa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
@@ -75,8 +75,8 @@
 4	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Além de muito ruim, o filme «O Magnata Grego» (The Greek Tycoon) dedicava mais atenção ao seu segundo marido, interpretado por Anthony Quinn, que aliás faria o papel de Sócrates Onassis (sogro de Jackie) no telefilme «Onassis: The Richest Man in the World», produzido em 1988.
-# source = CETENFolha n=720 cad=Mundo sec=pol sem=94b
 # sent_id = CF720-4
+# source = CETENFolha n=720 cad=Mundo sec=pol sem=94b
 # id = 3025
 1	Além	além	ADV	ADV|@ADVL>	_	18	advmod	_	MWE=Além_de
 2	de	de	ADP	PRP|@A<	_	4	case	_	_
@@ -86,7 +86,7 @@
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	filme	filme	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
 8	«	«	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
-9	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	7	appos	_	ChangedBy=Issue119|MWE=O_Magnata_Grego|MWEPOS=PROPN
+9	O	O	PROPN	_	Gender=Masc|Number=Sing|PronType=Art	7	appos	_	ChangedBy=Issue119|MWE=O_Magnata_Grego|MWEPOS=PROPN
 10	Magnata	Magnata	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 11	Grego	Grego	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 12	»	»	PUNCT	PU|@PU	_	9	punct	_	_
@@ -96,7 +96,7 @@
 16	Tycoon	Tycoon	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 17	)	)	PUNCT	PU|@PU	_	14	punct	_	_
 18	dedicava	dedicar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-19	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	20	det	_	_
+19	mais	mais	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	20	det	_	_
 20	atenção	atenção	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	18	obj	_	_
 21-22	ao	_	_	_	_	_	_	_	_
 21	a	a	ADP	<sam->|PRP|@<PIV	_	25	case	_	_

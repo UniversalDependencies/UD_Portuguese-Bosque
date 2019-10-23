@@ -1,12 +1,7 @@
 # text = A Norquifar refere ter obtido do presidente do Infarmed, Aranda da Silva, um compromisso no sentido de permitir uma distensão «mais razoável, nunca inferior a três anos», do tempo para a aplicação do decreto e queixa-se de ter sido surpreendida, pouco tempo depois, com as notificações.
-# source = CETEMPúblico n=876 sec=soc sem=96b
 # sent_id = CP876-1
+# source = CETEMPúblico n=876 sec=soc sem=96b
 # id = 4486
-# d2d = cc(refere,e) -> cc(queixa-,e)  #106
-# d2d = punct(refere,,) -> punct(queixa-,,)  #106
-# d2d = punct(refere,,) -> punct(queixa-,,)  #106
-# d2d = punct(refere,,) -> punct(queixa-,,)  #106
-# d2d = punct(refere,,) -> punct(queixa-,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Norquifar	Norquifar	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	refere	referir	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -19,21 +14,21 @@
 9-10	do	_	_	_	_	_	_	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	Infarmed	infarmed	NOUN	N|@P<	_	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-12	,	,	PUNCT	PU|@PU	_	48	punct	_	d2d:#106
+11	Infarmed	infarmed	NOUN	N|@P<	Gender=Masc|Number=Sing	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+12	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 13	Aranda	Aranda	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	8	appos	_	MWE=Aranda_da_Silva
 14-15	da	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	Silva	Silva	PROPN	PROP|@P<	Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-17	,	,	PUNCT	PU|@PU	_	48	punct	_	d2d:#106
+17	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	compromisso	compromisso	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
 20-21	no	_	_	_	_	_	_	_	_
 20	em	em	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	sentido	sentido	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
-23	de	de	ADP	PRP|@N<	_	24	mark	_	_
+23	de	de	SCONJ	PRP|@N<	_	24	mark	_	_
 24	permitir	permitir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	acl	_	_
 25	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	distensão	distensão	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
@@ -63,7 +58,7 @@
 48-49	queixa-se	_	_	_	_	_	_	_	_
 48	queixa	queixar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 49	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	48	expl	_	ChangedBy=Issue135
-50	de	de	ADP	PRP|@<PIV	_	53	mark	_	_
+50	de	de	SCONJ	PRP|@<PIV	_	53	mark	_	_
 51	ter	ter	AUX	<cjt>|<aux>|V|INF|@ICL-P<	VerbForm=Inf	53	aux	_	_
 52	sido	ser	AUX	<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	53	aux:pass	_	_
 53	surpreendida	surpreender	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	48	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
@@ -78,8 +73,8 @@
 62	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «O cumprimento do decreto [135/95] nos prazos em que agora o Infarmed veio exigir é quase impossível porque o novo licenciamento pede documentos que são difíceis de obter num curto espaço de tempo -- como sejam a obtenção de alvarás camarários ou pareceres de segurança do Serviço Nacional de Bombeiros», diz Sérgio Figueira, da Norquifar.
-# source = CETEMPúblico n=876 sec=soc sem=96b
 # sent_id = CP876-2
+# source = CETEMPúblico n=876 sec=soc sem=96b
 # id = 4487
 1	«	«	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -96,12 +91,12 @@
 11	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	prazos	prazo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
 13	em	em	ADP	PRP|@ADVL>	_	14	case	_	_
-14	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	19	obl	_	_
+14	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Plur|PronType=Rel	19	obl	_	_
 15	agora	agora	ADV	<kc>|ADV|@ADVL>	_	19	advmod	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	Infarmed	Infarmed	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	19	nsubj	_	_
-18	veio	vir	AUX	<aux>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux	_	_
-19	exigir	exigir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	12	acl:relcl	_	_
+18	veio	vir	VERB	<aux>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	acl:relcl	_	_
+19	exigir	exigir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	xcomp	_	_
 20	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	ChangedBy=Issue167
 21	quase	quase	ADV	<quant>|ADV|@>A	_	22	advmod	_	_
 22	impossível	impossível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	60	ccomp	_	_
@@ -114,7 +109,7 @@
 29	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	31	nsubj	_	_
 30	são	ser	AUX	<first-cjt>|<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	ChangedBy=Issue167
 31	difíceis	difícil	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	28	acl:relcl	_	_
-32	de	de	ADP	PRP|@A<ARG	_	33	mark	_	_
+32	de	de	SCONJ	PRP|@A<ARG	_	33	mark	_	_
 33	obter	obter	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	31	xcomp	_	_
 34-35	num	_	_	_	_	_	_	_	_
 34	em	em	ADP	<sam->|PRP|@<ADVL	_	37	case	_	_
@@ -155,8 +150,8 @@
 67	.	.	PUNCT	PU|@PU	_	60	punct	_	_
 
 # text = «Quando os prazos se esgotarem», explicou ainda, «os armazéns correm o risco de ser fechados por qualquer acção de inspecção» daquele instituto.
-# source = CETEMPúblico n=876 sec=soc sem=96b &W
 # sent_id = CP876-3
+# source = CETEMPúblico n=876 sec=soc sem=96b &W
 # id = 4488
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	6	advmod	_	_
@@ -175,7 +170,7 @@
 15	correm	correr	VERB	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	parataxis	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	risco	risco	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	15	obj	_	_
-18	de	de	ADP	PRP|@N<ARG	_	20	mark	_	_
+18	de	de	SCONJ	PRP|@N<ARG	_	20	mark	_	_
 19	ser	ser	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	20	aux:pass	_	_
 20	fechados	fechar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	17	acl	_	_
 21	por	por	ADP	PRP|@PASS	_	23	case	_	_
@@ -191,21 +186,21 @@
 30	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Alguns prazos estão, segundo Sérgio Figueira, a poucos dias de chegar ao limite.
-# source = CETEMPúblico n=876 sec=soc sem=96b
 # sent_id = CP876-4
+# source = CETEMPúblico n=876 sec=soc sem=96b
 # id = 4489
 1	Alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	2	det	_	_
 2	prazos	prazo	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	11	nsubj	_	_
 3	estão	estar	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	ChangedBy=Issue165|ChangedBy=Issue167|SpaceAfter=No
-4	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 5	segundo	segundo	ADP	PRP|@<ADVL	_	6	case	_	_
 6	Sérgio	Sérgio	PROPN	_	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue119|MWE=Sérgio_Figueira|MWEPOS=PROPN
 7	Figueira	Figueira	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-8	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+8	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 9	a	a	ADP	PRP|@<SA	_	11	case	_	_
 10	poucos	pouco	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	11	det	_	_
 11	dias	dia	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	0	root	_	_
-12	de	de	ADP	PRP|@N<	_	13	mark	_	_
+12	de	de	SCONJ	PRP|@N<	_	13	mark	_	_
 13	chegar	chegar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	acl	_	_
 14-15	ao	_	_	_	_	_	_	_	_
 14	a	a	ADP	<sam->|PRP|@<SA	_	16	case	_	_
@@ -214,12 +209,9 @@
 17	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = A Norquifar, que já se tinha queixado de se estarem «a criar empregos por decreto», entende que a contratação de um licenciado a tempo inteiro para os armazéns é não só demasiado onerosa para as pequenas e médias empresas que representa, como injustificável, pois um armazém grossista não vende directamente ao público.
-# source = CETEMPúblico n=876 sec=soc sem=96b
 # sent_id = CP876-5
+# source = CETEMPúblico n=876 sec=soc sem=96b
 # id = 4490
-# d2d = cc(pequenas,e) -> cc(médias,e)  #106
-# d2d = cc(onerosa,como) -> cc(injustificável,como)  #106
-# d2d = punct(onerosa,,) -> punct(injustificável,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Norquifar	Norquifar	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -228,12 +220,12 @@
 6	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	expl	_	ChangedBy=Issue135
 7	tinha	ter	AUX	<aux>|<se-passive>|V|IMPF|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	aux	_	_
 8	queixado	queixar	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	2	acl:relcl	_	_
-9	de	de	ADP	PRP|@<PIV	_	14	mark	_	_
+9	de	de	SCONJ	PRP|@<PIV	_	14	mark	_	_
 10	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	14	nsubj	_	_
-11	estarem	estar	AUX	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	14	aux	_	_
+11	estarem	estar	VERB	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	8	xcomp	_	MWE=estarem_a|MWEPOS=AUX
 12	«	«	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
-13	a	a	ADP	PRP|@PRT-AUX<	_	14	case	_	_
-14	criar	criar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
+13	a	a	SCONJ	PRP|@PRT-AUX<	_	14	mark	_	_
+14	criar	criar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
 15	empregos	emprego	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
 16	por	por	ADP	PRP|@<ADVL	_	17	case	_	_
 17	decreto	decreto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No

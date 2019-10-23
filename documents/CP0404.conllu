@@ -1,9 +1,9 @@
 # text = Em termos de unidades vendidas, se se venderam cerca de 145 mil LP de preço máximo, em CD, na mesma escala de preço, venderam-se quase 405 mil -- uma discrepância que se acentua na facturação (176 mil contos em LP de preço «top» contra cerca de 817 mil contos em CD também de «top»), devido ao segundo formato ser vendido sensivelmente pelo dobro do primeiro.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-1
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2101
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_termos_de
-2	termos	termos	NOUN	N|@P<	_	29	obl	_	_
+2	termos	termos	NOUN	N|@P<	Gender=Masc|Number=Plur	29	obl	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
 4	unidades	unidade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
 5	vendidas	vender	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	4	acl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -11,8 +11,8 @@
 7	se	se	SCONJ	KS|@SUB	_	9	mark	_	_
 8	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	9	expl	_	ChangedBy=Issue135
 9	venderam	vender	VERB	<mv>|<se-passive>|V|PS|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	29	advcl	_	_
-10	cerca	cerca	ADV	ADV|@>A	_	12	advmod	_	MWE=cerca_de
-11	de	de	ADP	<prp>|PRP|@A<	_	10	case	_	_
+10	cerca	cerca	ADV	ADV|@>A	_	14	advmod	_	MWE=cerca_de|MWEPOS=ADV
+11	de	de	ADP	<prp>|PRP|@A<	_	10	fixed	_	_
 12	145	145	NUM	<card>|NUM|M|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168|MWE=145_mil
 13	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	12	flat	_	ChangedBy=Issue168
 14	LP	lp	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	9	nsubj	_	_
@@ -59,8 +59,8 @@
 52	top	top	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	50	amod	_	ChangedBy=Issue165|SpaceAfter=No
 53	»	»	PUNCT	PU|@PU	_	52	punct	_	_
 54	contra	contra	ADP	PRP|@N<	_	59	case	_	_
-55	cerca	cerca	ADV	ADV|@>N	_	59	advmod	_	MWE=cerca_de
-56	de	de	ADP	<prp>|PRP|@A<	_	55	case	_	_
+55	cerca	cerca	ADV	ADV|@>N	_	59	advmod	_	MWE=cerca_de|MWEPOS=ADV
+56	de	de	ADP	<prp>|PRP|@A<	_	55	fixed	_	_
 57	817	817	NUM	<card>|NUM|M|P|@>N	NumType=Card	59	nummod	_	ChangedBy=Issue168|MWE=817_mil
 58	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	57	flat	_	ChangedBy=Issue168
 59	contos	conto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	46	nmod	_	_
@@ -73,14 +73,14 @@
 66	»	»	PUNCT	PU|@PU	_	65	punct	_	SpaceAfter=No
 67	)	)	PUNCT	PU|@PU	_	46	punct	_	ChangedBy=Issue165|SpaceAfter=No
 68	,	,	PUNCT	PU|@PU	_	75	punct	_	_
-69	devido	devido	ADV	ADV|@<ADVL	_	39	advmod	_	MWE=devido_ao
+69	devido	devido	ADV	ADV|@<ADVL	_	75	mark	_	MWE=devido_a|MWEPOS=SCONJ
 70-71	ao	_	_	_	_	_	_	_	_
-70	a	a	ADP	PRP|@A<	_	75	mark	_	_
+70	a	a	ADP	PRP|@A<	_	69	fixed	_	_
 71	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	73	det	_	_
 72	segundo	segundo	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	73	amod	_	ChangedBy=Issue172
 73	formato	formato	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	75	nsubj:pass	_	_
 74	ser	ser	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	75	aux:pass	_	_
-75	vendido	vender	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	69	advcl	_	_
+75	vendido	vender	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	39	advcl	_	_
 76	sensivelmente	sensivelmente	ADV	ADV|@>A	_	79	advmod	_	_
 77-78	pelo	_	_	_	_	_	_	_	_
 77	por	por	ADP	<sam->|PRP|@<ADVL	_	79	case	_	_
@@ -93,8 +93,8 @@
 83	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 
 # text = A cassete do mesmo escalão continua a não ir muito bem.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-2
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2102
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	cassete	cassete	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
@@ -103,17 +103,17 @@
 4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 5	mesmo	mesmo	ADJ	<diff>|<KOMP>|DET|M|S|@>N	Gender=Masc|Number=Sing	6	amod	_	_
 6	escalão	escalão	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
-7	continua	continuar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
-8	a	a	ADP	PRP|@PRT-AUX<	_	10	case	_	_
+7	continua	continuar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=continua_a|MWEPOS=AUX
+8	a	a	SCONJ	PRP|@PRT-AUX<	_	10	mark	_	_
 9	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
-10	ir	ir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+10	ir	ir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
 11	muito	muito	ADV	<quant>|ADV|@>A	_	12	advmod	_	_
 12	bem	bem	ADV	<quant>|ADV|@<ADVL	_	10	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 13	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Vendendo menos que o vinil: pouco mais de 103 mil, o que corresponde a uma facturação de cerca de 124 mil contos.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-3
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2103
 1	Vendendo	vender	VERB	<mv>|V|GER|@ICL-UTT	VerbForm=Ger	0	root	_	_
 2	menos	pouco	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	_	1	advmod	_	_
@@ -121,34 +121,34 @@
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	vinil	vinil	NOUN	<first-cjt>|<np-def>|N|M|S|@KOMP<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue165|SpaceAfter=No
 6	:	:	PUNCT	PU|@PU	_	1	punct	_	_
-7	pouco	pouco	ADV	<quant>|DET|M|S|@>A	Gender=Masc|Number=Sing|PronType=Ind	10	advmod	_	_
+7	pouco	pouco	ADV	<quant>|DET|M|S|@>A	_	10	advmod	_	_
 8	mais	mais	ADV	ADV|@>A	_	10	advmod	_	MWE=mais_de
 9	de	de	ADP	<prp>|PRP|@A<	_	8	fixed	_	_
 10	103	103	NUM	<card>|NUM|M/F|P|@>N	NumType=Card	1	parataxis	_	ChangedBy=Issue168|MWE=103_mil
 11	mil	mil	NUM	<card>|<np-def>|NUM|M/F|P|@<ADVL	NumType=Card	10	flat	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-13	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	appos	_	_
-14	que	que	PRON	<rel>|INDP|M/F|P|@SUBJ>	Gender=Unsp|Number=Plur|PronType=Rel	15	nsubj	_	_
+13	o	o	PRON	_	PronType=Dem	10	appos	_	_
+14	que	que	PRON	<rel>|INDP|M/F|P|@SUBJ>	PronType=Rel	15	nsubj	_	_
 15	corresponde	corresponder	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_
 16	a	a	ADP	PRP|@<PIV	_	18	case	_	_
 17	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	facturação	facturação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obj	_	_
 19	de	de	ADP	PRP|@N<	_	24	case	_	_
-20	cerca	cerca	ADV	ADV|@>A	_	22	advmod	_	MWE=cerca_de
-21	de	de	ADP	<prp>|PRP|@A<	_	20	case	_	_
+20	cerca	cerca	ADV	ADV|@>A	_	22	advmod	_	MWE=cerca_de|MWEPOS=ADV
+21	de	de	ADP	<prp>|PRP|@A<	_	20	fixed	_	_
 22	124	124	NUM	<card>|NUM|M|P|@>N	NumType=Card	24	nummod	_	ChangedBy=Issue168|MWE=124_mil
 23	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	22	flat	_	ChangedBy=Issue168
 24	contos	conto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Os discos mais vendidos são os que chegaram ao fim do ano passado já com maior número de galardões.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-4
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2104
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	discos	disco	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 3	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@ADVL>	_	4	advmod	_	_
-4	vendidos	vendido	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	2	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+4	vendidos	vendir	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 5	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
 6	os	o	PRON	<dem>|DET|M|P|@<SC	Gender=Masc|Number=Plur|PronType=Dem	0	root	_	_
 7	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	8	nsubj	_	_
@@ -171,8 +171,8 @@
 22	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = É o caso por excelência de «Waking Up The Neighbours», de Bryan Adams, que agora chegou a sextuplo de platina (cada disco de platina equivale à venda de 40 mil unidades).
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-5
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2105
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -191,7 +191,7 @@
 15	Bryan	Bryan	PROPN	_	Gender=Masc|Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=Bryan_Adams|MWEPOS=PROPN
 16	Adams	Adams	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	15	punct	_	_
-18	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	20	nsubj	_	_
+18	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	20	nsubj	_	_
 19	agora	agora	ADV	<kc>|ADV|@ADVL>	_	20	advmod	_	_
 20	chegou	chegar	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	_	_
 21	a	a	ADP	PRP|@<SA	_	22	case	_	_
@@ -216,11 +216,9 @@
 39	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = As colectâneas de êxitos dos Bee Gees, Queen e Tina Turner também recolheram mais um galardão de platina.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-6
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2106
-# d2d = cc(Bee,e) -> cc(Tina,e)  #106
-# d2d = punct(Bee,,) -> punct(Queen,,)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	colectâneas	colectânea	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	15	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -245,8 +243,8 @@
 21	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = O único grupo português que alcançou este estatuto foram os Onda Choc com «Ela Só Quer, Só Pensa Em Namorar».
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-7
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2107
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	único	único	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
@@ -274,11 +272,9 @@
 24	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = O álbum de estreia dos Resistência também já é disco de platina, mas ainda não consta nas contas do trimestre, porque só o alcançou em Abril.
-# source = CETEMPúblico n=404 sec=nd sem=92a
 # sent_id = CP404-8
+# source = CETEMPúblico n=404 sec=nd sem=92a
 # id = 2108
-# d2d = cc(disco,mas) -> cc(consta,mas)  #106
-# d2d = punct(disco,,) -> punct(consta,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	álbum	álbum	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_

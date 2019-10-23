@@ -1,8 +1,7 @@
 # text = Maastricht em São Bento: quando e como
-# source = CETEMPúblico n=827 sec=pol sem=92a
 # sent_id = CP827-1
+# source = CETEMPúblico n=827 sec=pol sem=92a
 # id = 4250
-# d2d = cc(quando,e) -> cc(como,e)  #106
 1	Maastricht	Maastricht	PROPN	PROP|M/F|S|@NPHR	Gender=Unsp|Number=Sing	0	root	_	_
 2	em	em	ADP	PRP|@N<	_	3	case	_	_
 3	São	São	PROPN	_	Gender=Masc|Number=Sing	1	nmod	_	ChangedBy=Issue119|MWE=São_Bento|MWEPOS=PROPN
@@ -13,10 +12,9 @@
 8	como	como	ADV	<interr>|ADV|@N<PRED	_	6	conj	_	ChangedBy=Issue149
 
 # text = Com a entrada do Tratado de Maastricht na Assembleia da República prevista já para a próxima semana-- depois de o Conselho de Ministros ter decidido ontem o envio de uma proposta de resolução para ratificação parlamentar--, o debate sobre o processo e o «timing» adequado à sua aprovação passou imediatamente à ordem do dia.
-# source = CETEMPúblico n=827 sec=pol sem=92a
 # sent_id = CP827-2
+# source = CETEMPúblico n=827 sec=pol sem=92a
 # id = 4251
-# d2d = cc(debate,e) -> cc(timing,e)  #106
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	entrada	entrada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	58	obl	_	ChangedBy=Issue137
@@ -41,14 +39,14 @@
 19	próxima	próximo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_
 20	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 21	--	--	PUNCT	PU|@PU	_	22	punct	_	_
-22	depois	depois	ADV	ADV|@<ADVL	_	15	advmod	_	_
-23	de	de	ADP	PRP|@A<ARG	_	29	mark	_	_
+22	depois	depois	ADV	ADV|@<ADVL	_	29	mark	_	MWE=depois_de|MWEPOS=SCONJ
+23	de	de	ADP	PRP|@A<ARG	_	22	fixed	_	_
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	Conselho	Conselho	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	29	nsubj	_	MWE=Conselho_de_Ministros
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
 27	Ministros	Ministros	PROPN	PROP|@P<	Number=Sing	25	nmod	_	_
 28	ter	ter	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	29	aux	_	_
-29	decidido	decidir	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	22	advcl	_	_
+29	decidido	decidir	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	15	advcl	_	_
 30	ontem	ontem	ADV	ADV|@<ADVL	_	29	advmod	_	_
 31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	envio	envio	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	29	obj	_	_
@@ -72,7 +70,7 @@
 50	«	«	PUNCT	PU|@PU	_	51	punct	_	ChangedBy=Issue165|SpaceAfter=No
 51	timing	timing	NOUN	<cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	47	conj	_	ChangedBy=Issue165|SpaceAfter=No
 52	»	»	PUNCT	PU|@PU	_	51	punct	_	_
-53	adequado	adequado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	51	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+53	adequado	adequado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	51	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 54-55	à	_	_	_	_	_	_	_	_
 54	a	a	ADP	<sam->|PRP|@<PIV	_	57	case	_	_
 55	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
@@ -91,8 +89,8 @@
 66	.	.	PUNCT	PU|@PU	_	58	punct	_	_
 
 # text = Muitas questões subsistem ainda, nomeadamente sobre a necessidade de proceder a uma revisão constitucional que compatibilize o texto da Constituição com o texto do Tratado.
-# source = CETEMPúblico n=827 sec=pol sem=92a
 # sent_id = CP827-3
+# source = CETEMPúblico n=827 sec=pol sem=92a
 # id = 4252
 1	Muitas	muito	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	2	det	_	_
 2	questões	questão	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
@@ -103,7 +101,7 @@
 7	sobre	sobre	ADP	PRP|@<ADVL	_	9	case	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	necessidade	necessidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
-10	de	de	ADP	PRP|@N<	_	11	mark	_	_
+10	de	de	SCONJ	PRP|@N<	_	11	mark	_	_
 11	proceder	proceder	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	acl	_	_
 12	a	a	ADP	PRP|@<ADVL	_	14	case	_	_
 13	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
@@ -127,10 +125,10 @@
 29	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Hoje mesmo, o Parlamento ver-se-á confrontado com a proposta de resolução que o CDS vai apresentar, visando dotá-lo de poderes de revisão constitucional de modo a permitir o recurso ao referendo que os centristas defendem para ratificar as propostas de Maastricht.
-# source = CETEMPúblico n=827 sec=pol sem=92a
 # sent_id = CP827-4
+# source = CETEMPúblico n=827 sec=pol sem=92a
 # id = 4253
-1	Hoje	hoje	PROPN	_	_	6	obl	_	ChangedBy=Issue119|MWE=Hoje_mesmo|MWEPOS=PROPN
+1	Hoje	hoje	ADV	_	_	6	obl	_	ChangedBy=Issue119|MWE=Hoje_mesmo|MWEPOS=PROPN
 2	mesmo	mesmo	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
@@ -160,8 +158,8 @@
 26	revisão	revisão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
 27	constitucional	constitucional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	26	amod	_	_
 28	de	de	ADP	PRP|@<ADVL	_	29	case	_	MWE=de_modo_a
-29	modo	modo	NOUN	N|@P<	_	21	obl	_	_
-30	a	a	ADP	PRP|@N<	_	31	mark	_	_
+29	modo	modo	NOUN	N|@P<	Gender=Masc|Number=Sing	21	obl	_	_
+30	a	a	SCONJ	PRP|@N<	_	31	mark	_	_
 31	permitir	permitir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	acl	_	_
 32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 33	recurso	recurso	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	31	obj	_	_
@@ -173,7 +171,7 @@
 38	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	_	_
 39	centristas	centrista	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	40	nsubj	_	_
 40	defendem	defender	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	36	acl:relcl	_	_
-41	para	para	ADP	PRP|@<ADVL	_	42	mark	_	_
+41	para	para	SCONJ	PRP|@<ADVL	_	42	mark	_	_
 42	ratificar	ratificar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	40	advcl	_	_
 43	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	44	det	_	_
 44	propostas	proposta	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	42	obj	_	_

@@ -1,6 +1,6 @@
 # text = Mariano Gago falava na sessão de encerramento de uma conferência sobre «A criação da sociedade de informação euromediterrânea», um projecto que surge na sequência da conferência de Barcelona (Novembro de 1995), em que foram lançadas as bases de uma cooperação mais estreita -- a nível económico e político, mas também cultural -- entre os países das duas margens do Mediterrâneo.
-# source = CETEMPúblico n=83 sec=clt sem=96a
 # sent_id = CP83-1
+# source = CETEMPúblico n=83 sec=clt sem=96a
 # id = 446
 1	Mariano	Mariano	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Mariano_Gago|MWEPOS=PROPN
 2	Gago	Gago	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -16,7 +16,7 @@
 11	conferência	conferência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 12	sobre	sobre	ADP	PRP|@N<ARG	_	15	case	_	_
 13	«	«	PUNCT	PU|@PU	_	15	punct	_	ChangedBy=Issue165|SpaceAfter=No
-14	A	A	DET	_	Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+14	A	A	PROPN	_	Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	criação	criação	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	_
 16-17	da	_	_	_	_	_	_	_	_
 16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
@@ -42,7 +42,7 @@
 34	de	de	ADP	PRP|@N<	_	35	case	_	_
 35	Barcelona	Barcelona	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
 36	(	(	PUNCT	PU|@PU	_	37	punct	_	ChangedBy=Issue165|SpaceAfter=No
-37	Novembro	novembro	NOUN	<prop>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	33	nmod	_	_
+37	Novembro	novembro	NOUN	<prop>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	33	parataxis	_	_
 38	de	de	ADP	PRP|@N<	_	39	case	_	_
 39	1995	1995	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	37	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 40	)	)	PUNCT	PU|@PU	_	37	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -84,11 +84,9 @@
 74	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «As novas tecnologias da informação permitirão construir rapidamente este símbolo moderno da nossa vontade comum de criar, entre as elites estudiosas dos nossos povos, laços de solidariedade, compreensão mútua e trabalhos em comum», declarou o ministro.
-# source = CETEMPúblico n=83 sec=clt sem=96a
 # sent_id = CP83-2
+# source = CETEMPúblico n=83 sec=clt sem=96a
 # id = 447
-# d2d = cc(solidariedade,e) -> cc(trabalhos,e)  #106
-# d2d = punct(solidariedade,,) -> punct(compreensão,,)  #106
 1	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 3	novas	novo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	4	amod	_	_
@@ -109,7 +107,7 @@
 16	nossa	nosso	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	17	det	_	_
 17	vontade	vontade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 18	comum	comum	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	17	amod	_	_
-19	de	de	ADP	PRP|@N<ARG	_	20	mark	_	_
+19	de	de	SCONJ	PRP|@N<ARG	_	20	mark	_	_
 20	criar	criar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	acl	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 22	entre	entre	ADP	PRP|@<ADVL	_	24	case	_	_
@@ -140,8 +138,8 @@
 46	.	.	PUNCT	PU|@PU	_	43	punct	_	_
 
 # text = «Talvez a nova Biblioteca de Alexandria não venha a ser conhecida como uma das Sete Maravilhas do Mundo;
-# source = CETEMPúblico n=83 sec=clt sem=96a
 # sent_id = CP83-3
+# source = CETEMPúblico n=83 sec=clt sem=96a
 # id = 448
 1	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Talvez	talvez	ADV	ADV|@ADVL>	_	12	advmod	_	_
@@ -151,10 +149,10 @@
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	Alexandria	Alexandria	PROPN	PROP|@P<	Number=Sing	5	nmod	_	_
 8	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
-9	venha	vir	AUX	<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-10	a	a	ADP	PRP|@PRT-AUX<	_	12	case	_	_
+9	venha	vir	VERB	<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=venha_a|MWEPOS=AUX
+10	a	a	SCONJ	PRP|@PRT-AUX<	_	12	mark	_	_
 11	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	12	aux:pass	_	_
-12	conhecida	conhecido	ADJ	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue141|ChangedBy=Issue91
+12	conhecida	conhecido	ADJ	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing	9	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue91
 13	como	como	ADP	<prd>|PRP|@<SC	_	14	case	_	_
 14	uma	um	NUM	<card>|NUM|F|S|@P<	NumType=Card	12	xcomp	_	ChangedBy=Issue168
 15-16	das	_	_	_	_	_	_	_	_
@@ -169,13 +167,13 @@
 22	;	;	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = mas poderá concretizar-se mais depressa do que a sua antepassada, e, sendo distribuída e partilhada, a sua sobrevivência estará mais garantida.»
-# source = CETEMPúblico n=83 sec=clt sem=96a
 # sent_id = CP83-4
+# source = CETEMPúblico n=83 sec=clt sem=96a
 # id = 449
 1	mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
-2	poderá	poder	AUX	<first-cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux	_	_
+2	poderá	poder	VERB	<first-cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 3-4	concretizar-se	_	_	_	_	_	_	_	_
-3	concretizar	concretizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	concretizar	concretizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	_
 4	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	expl	_	ChangedBy=Issue135
 5	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	6	advmod	_	_
 6	depressa	depressa	ADV	ADV|@<ADVL	_	3	advmod	_	_
@@ -187,19 +185,19 @@
 11	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	12	det	_	_
 12	antepassada	antepassado	NOUN	<first-cjt>|<np-def>|N|F|S|@KOMP<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-14	e	e	CCONJ	<co-fcl>|<co-pcv>|KC|@CO	_	19	cc	_	ChangedBy=Issue165|SpaceAfter=No
+14	e	e	CCONJ	<co-fcl>|<co-pcv>|KC|@CO	_	26	cc	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 16	sendo	ser	AUX	<aux>|V|GER|@ICL-ADVL>	VerbForm=Ger	17	aux	_	_
 17	distribuída	distribuir	VERB	<mv>|<first-cjt>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	26	advcl	_	_
-18	e	e	CCONJ	<co-pcv>|KC|@CO	_	17	cc	_	_
-19	partilhada	partilhar	VERB	<mv>|<cjt>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	3	conj	_	ChangedBy=Issue165|SpaceAfter=No
+18	e	e	CCONJ	<co-pcv>|KC|@CO	_	19	cc	_	_
+19	partilhada	partilhar	VERB	<mv>|<cjt>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	17	conj	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 22	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	23	det	_	_
 23	sobrevivência	sobrevivência	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	26	nsubj	_	_
 24	estará	estar	AUX	<cjt>|<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	26	cop	_	ChangedBy=Issue167
 25	mais	mais	ADV	<quant>|ADV|@>A	_	26	advmod	_	_
-26	garantida	garantido	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	3	dep	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+26	garantida	garantido	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	3	conj	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 

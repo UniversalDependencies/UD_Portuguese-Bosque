@@ -1,6 +1,6 @@
 # text = Cimeira sindical ibérica talvez só em Janeiro de 92
-# source = CETEMPúblico n=53 sec=soc sem=91b
 # sent_id = CP53-1
+# source = CETEMPúblico n=53 sec=soc sem=91b
 # id = 302
 1	Cimeira	cimeira	NOUN	<first-cjt>|<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	sindical	sindical	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
@@ -13,34 +13,32 @@
 9	92	92	NUM	<card>|NUM|M|S|@P<	NumType=Card	7	nmod	_	ChangedBy=Issue168
 
 # text = A cimeira sindical ibérica já não deverá realizar-se este ano, segundo apurou o PÚBLICO.
-# source = CETEMPúblico n=53 sec=soc sem=91b
 # sent_id = CP53-2
+# source = CETEMPúblico n=53 sec=soc sem=91b
 # id = 303
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	cimeira	cimeira	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
 3	sindical	sindical	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
 4	ibérica	ibérico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
-5	já	já	ADP	_	_	8	advmod	_	MWE=já_não|MWEPOS=ADV
-6	não	não	ADV	_	Gender=Masc|Number=Sing|Polarity=Neg	5	fixed	_	_
-7	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux	_	_
+5	já	já	ADV	_	_	8	advmod	_	_
+6	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
+7	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 8-9	realizar-se	_	_	_	_	_	_	_	_
-8	realizar	realizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+8	realizar	realizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
 9	se	se	PRON	PERS|F|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	8	expl	_	ChangedBy=Issue135
 10	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_
 11	ano	ano	NOUN	<np-def>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-13	segundo	segundo	ADV	<rel>|ADV|@COM	_	14	mark	_	_
+13	segundo	segundo	SCONJ	<rel>|ADV|@COM	_	14	mark	_	_
 14	apurou	apurar	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	advcl	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	PÚBLICO	Público	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	14	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Um reunião ao mais alto nível a realizar na segunda-feira entre a CGTP e a UGT (na sede desta última central) poderá desbloquear anteriores dificuldades e levar à marcação de uma data.
-# source = CETEMPúblico n=53 sec=soc sem=91b &W
 # sent_id = CP53-3
+# source = CETEMPúblico n=53 sec=soc sem=91b &W
 # id = 304
-# d2d = cc(desbloquear,e) -> cc(levar,e)  #106
-# d2d = cc(CGTP,e) -> cc(UGT,e)  #106
 1	Um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	reunião	reunião	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	29	nsubj	_	_
 3-4	ao	_	_	_	_	_	_	_	_
@@ -49,7 +47,7 @@
 5	mais	mais	ADV	<quant>|ADV|@>A	_	6	advmod	_	_
 6	alto	alto	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	7	amod	_	_
 7	nível	nível	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
-8	a	a	ADP	PRP|@N<	_	9	mark	_	_
+8	a	a	SCONJ	PRP|@N<	_	9	mark	_	_
 9	realizar	realizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	acl	_	_
 10-11	na	_	_	_	_	_	_	_	_
 10	em	em	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
@@ -72,8 +70,8 @@
 25	última	último	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	26	amod	_	ChangedBy=Issue172
 26	central	central	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 27	)	)	PUNCT	PU|@PU	_	22	punct	_	_
-28	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	aux	_	_
-29	desbloquear	desbloquear	VERB	<first-cjt>|<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+28	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+29	desbloquear	desbloquear	VERB	<first-cjt>|<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	xcomp	_	_
 30	anteriores	anterior	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	31	amod	_	_
 31	dificuldades	dificuldade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	29	obj	_	_
 32	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	33	cc	_	d2d:#106

@@ -1,8 +1,7 @@
 # text = Entretanto, Couto Ferreira apresentava ontem um alto teor de ácido úrico no sangue e encontrava-se em acelerado emagrecimento, segundo informou o director-clínico do Hospital Prisional S.João de Deus, Manuel Pinéu.
-# source = CETEMPúblico n=792 sec=soc sem=95a
 # sent_id = CP792-1
+# source = CETEMPúblico n=792 sec=soc sem=95a
 # id = 4060
-# d2d = cc(apresentava,e) -> cc(encontrava-,e)  #106
 1	Entretanto	entretanto	ADV	<kc>|ADV|@ADVL>	_	5	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	Couto	Couto	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Couto_Ferreira|MWEPOS=PROPN
@@ -27,16 +26,16 @@
 20	acelerado	acelerar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	21	acl	_	_
 21	emagrecimento	emagrecimento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-23	segundo	segundo	ADP	PRP|@<ADVL	_	24	mark	_	_
+23	segundo	segundo	SCONJ	PRP|@<ADVL	_	24	mark	_	_
 24	informou	informar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	director-clínico	director-clínico	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	24	nsubj	_	MWE=director-clínico_do_Hospital_Prisional_S.João_de_Deus
 27-28	do	_	_	_	_	_	_	_	_
 27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
 28	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	Hospital	hospital	NOUN	N|@P<	_	26	nmod	_	_
-30	Prisional	prisional	ADJ	ADJ|@N<	_	29	amod	_	_
-31	S.João	s.joão	ADJ	ADJ|@N<	_	29	amod	_	_
+29	Hospital	hospital	NOUN	N|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
+30	Prisional	prisional	ADJ	ADJ|@N<	Gender=Masc|Number=Sing	29	amod	_	_
+31	S.João	s.joão	ADJ	ADJ|@N<	Gender=Masc|Number=Sing	29	amod	_	_
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
 33	Deus	deus	NOUN	N|@P<	_	29	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	35	punct	_	_
@@ -45,10 +44,9 @@
 37	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = «Por agora, as alterações registadas ainda não são irreversíveis mas a presença de um elevado teor de ácido úrico no sangue pode ter consequências a nível renal», frisou o citado médico.
-# source = CETEMPúblico n=792 sec=soc sem=95a
 # sent_id = CP792-2
+# source = CETEMPúblico n=792 sec=soc sem=95a
 # id = 4061
-# d2d = cc(irreversíveis,mas) -> cc(ter,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Por	por	ADP	PRP|@ADVL>	_	3	case	_	MWE=Por_agora
 3	agora	agora	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -74,8 +72,8 @@
 22	em	em	ADP	<sam->|PRP|@N<	_	24	case	_	_
 23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	sangue	sangue	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
-25	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux	_	_
-26	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	conj	_	_
+25	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+26	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	xcomp	_	_
 27	consequências	consequência	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	26	obj	_	_
 28	a	a	ADP	PRP|@N<	_	29	case	_	_
 29	nível	nível	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
@@ -89,18 +87,17 @@
 37	.	.	PUNCT	PU|@PU	_	33	punct	_	_
 
 # text = Couto Ferreira encontra-se a ser acompanhado pelo médico mas recusou qualquer tipo de tratamento, caso entre em coma.
-# source = CETEMPúblico n=792 sec=soc sem=95a
 # sent_id = CP792-3
+# source = CETEMPúblico n=792 sec=soc sem=95a
 # id = 4062
-# d2d = cc(encontra-,mas) -> cc(recusou,mas)  #106
 1	Couto	Couto	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Couto_Ferreira|MWEPOS=PROPN
 2	Ferreira	Ferreira	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3-4	encontra-se	_	_	_	_	_	_	_	_
 3	encontra	encontrar	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl	_	ChangedBy=Issue135
-5	a	a	ADP	PRP|@<OC	_	7	mark	_	_
+5	a	a	SCONJ	PRP|@<OC	_	7	mark	_	_
 6	ser	ser	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	7	aux:pass	_	_
-7	acompanhado	acompanhar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	dep	_	_
+7	acompanhado	acompanhar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	_	_
 8-9	pelo	_	_	_	_	_	_	_	_
 8	por	por	ADP	PRP|@PASS	_	10	case	_	_
 9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_

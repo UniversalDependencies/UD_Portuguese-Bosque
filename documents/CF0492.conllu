@@ -1,6 +1,6 @@
 # text = A impressão de ambos na Bahia foi descrita assim por Outterbridge:
-# source = CETENFolha n=492 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF492-1
+# source = CETENFolha n=492 cad=Ilustrada sec=nd sem=94b
 # id = 2069
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	impressão	impressão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj:pass	_	_
@@ -18,8 +18,8 @@
 13	:	:	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = «Senti que eu já conhecia o Brasil antes de ter vindo aqui».
-# source = CETENFolha n=492 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF492-2
+# source = CETENFolha n=492 cad=Ilustrada sec=nd sem=94b
 # id = 2070
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Senti	sentir	VERB	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -29,17 +29,17 @@
 6	conhecia	conhecer	VERB	<mv>|V|IMPF|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	2	ccomp	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	Brasil	Brasil	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
-9	antes	antes	ADV	ADV|@<ADVL	_	6	advmod	_	_
-10	de	de	ADP	PRP|@A<ARG	_	12	mark	_	_
+9	antes	antes	ADV	ADV|@<ADVL	_	12	mark	_	MWE=antes_de|MWEPOS=SCONJ
+10	de	de	ADP	PRP|@A<ARG	_	9	fixed	_	_
 11	ter	ter	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	12	aux	_	_
-12	vindo	vir	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	9	advcl	_	_
+12	vindo	vir	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	6	advcl	_	_
 13	aqui	aqui	ADV	ADV|@<ADVL	_	12	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	»	»	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 15	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Saar «descobriu» no Brasil o bambu verde.
-# source = CETENFolha n=492 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF492-3
+# source = CETENFolha n=492 cad=Ilustrada sec=nd sem=94b
 # id = 2071
 1	Saar	Saar	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -55,10 +55,9 @@
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Sua idéia é fazer na 22ª Bienal uma instalação com bambus no segundo andar que seja vista por cima, do terceiro, «com toda sua cor e padrão».
-# source = CETENFolha n=492 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF492-4
+# source = CETENFolha n=492 cad=Ilustrada sec=nd sem=94b
 # id = 2072
-# d2d = cc(cor,e) -> cc(padrão,e)  #106
 1	Sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	2	det	_	_
 2	idéia	idéia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167

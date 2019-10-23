@@ -1,8 +1,8 @@
 # text = É por isso que, explica, não tem pena de Hillary Clinton.
-# source = CETEMPúblico n=981 sec=clt sem=98b
 # sent_id = CP981-1
+# source = CETEMPúblico n=981 sec=clt sem=98b
 # id = 5045
-1	É	ser	AUX	<foc>|ADV|@ADVL>	_	9	cop	_	_
+1	É	ser	AUX	<foc>|ADV|@ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
 2	por	por	ADP	PRP|@ADVL>	_	3	case	_	_
 3	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	9	obl	_	_
 4	que	que	SCONJ	<foc>|ADV|@ADVL>	_	9	mark	_	ChangedBy=Issue165|SpaceAfter=No
@@ -18,12 +18,9 @@
 14	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = «Eles [ Hillary e Bill Clinton ] podem ter alguma espécie de acordo e quem somos nós para dizer se é bom ou mau?
-# source = CETEMPúblico n=981 sec=clt sem=98b
 # sent_id = CP981-2
+# source = CETEMPúblico n=981 sec=clt sem=98b
 # id = 5046
-# d2d = cc(Hillary,e) -> cc(Bill,e)  #106
-# d2d = cc(ter,e) -> cc(quem,e)  #106
-# d2d = cc(bom,ou) -> cc(mau,ou)  #106
 1	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Eles	ele	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
 3	[	[	PUNCT	PU|@PU	_	4	punct	_	_
@@ -32,8 +29,8 @@
 6	Bill	Bill	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Bill_Clinton|MWEPOS=PROPN
 7	Clinton	Clinton	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	]	_	PUNCT	PU|@PU	_	4	punct	_	_
-9	podem	poder	AUX	<first-cjt>|<aux>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
-10	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+9	podem	poder	VERB	<first-cjt>|<aux>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
 11	alguma	algum	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	12	det	_	_
 12	espécie	espécie	NOUN	<meta>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
@@ -42,7 +39,7 @@
 16	quem	quem	PRON	<interr>|INDP|M/F|P|@SC>	Gender=Unsp|Number=Plur|PronType=Int	10	conj	_	_
 17	somos	ser	AUX	<cjt>|<mv>|V|PR|1P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	cop	_	ChangedBy=Issue167
 18	nós	nós	PRON	PERS|M/F|1P|NOM|@<SUBJ	Case=Nom|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	16	nsubj	_	_
-19	para	para	ADP	PRP|@<ADVL	_	20	mark	_	_
+19	para	para	SCONJ	PRP|@<ADVL	_	20	mark	_	_
 20	dizer	dizer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	advcl	_	_
 21	se	se	SCONJ	KS|@SUB	_	23	mark	_	_
 22	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	ChangedBy=Issue167
@@ -52,48 +49,48 @@
 26	?	?	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Acho que eles têm mais maturidade em relação ao sexo, como em relação às drogas, do que podem mostrar».
-# source = CETEMPúblico n=981 sec=clt sem=98b
 # sent_id = CP981-3
+# source = CETEMPúblico n=981 sec=clt sem=98b
 # id = 5047
 1	Acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	4	mark	_	_
 3	eles	ele	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
 4	têm	ter	VERB	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
-5	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	6	det	_	_
+5	mais	mais	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	6	det	_	_
 6	maturidade	maturidade	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
-7	em	em	ADP	<first-cjt>|<sam->|PRP|@N<	_	8	case	_	MWE=em_relação_a
-8	relação	relação	NOUN	N|@P<	_	6	nmod	_	_
+7	em	em	ADP	<first-cjt>|<sam->|PRP|@N<	_	11	case	_	MWE=em_relação_a|MWEPOS=ADP
+8	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	7	fixed	_	_
 9-10	ao	_	_	_	_	_	_	_	_
-9	a	a	ADP	PRP|@N<	_	11	case	_	_
+9	a	a	ADP	PRP|@N<	_	7	fixed	_	_
 10	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
-11	sexo	sexo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=No
+11	sexo	sexo	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 13	como	como	ADV	<co-postnom>|<kc>|ADV|@CO	_	15	cc	_	d2d:#106
-14	em	em	ADP	<cjt>|<sam->|PRP|@N<	_	15	case	_	MWE=em_relação_a
-15	relação	relação	NOUN	N|@P<	_	11	conj	_	_
+14	em	em	ADP	<cjt>|<sam->|PRP|@N<	_	18	case	_	MWE=em_relação_a|MWEPOS=ADP
+15	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	14	fixed	_	_
 16-17	às	_	_	_	_	_	_	_	_
-16	a	a	ADP	PRP|@N<	_	18	case	_	_
+16	a	a	ADP	PRP|@N<	_	14	fixed	_	_
 17	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	_	_
-18	drogas	droga	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+18	drogas	droga	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	conj	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 20-21	do	_	_	_	_	_	_	_	_
-20	de	de	ADP	<sam->|PRP|@COM	_	24	mark	_	MWE=do_que
+20	de	de	SCONJ	<sam->|PRP|@COM	_	24	mark	_	MWE=do_que
 21	o	o	DET	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	20	fixed	_	_
 22	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	20	fixed	_	_
-23	podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-KOMP<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
-24	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	ccomp	_	SpaceAfter=No
+23	podem	poder	VERB	<aux>|V|PR|3P|IND|@FS-KOMP<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	ccomp	_	_
+24	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	xcomp	_	SpaceAfter=No
 25	»	»	PUNCT	PU|@PU	_	1	punct	_	SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Talvez o Presidente, quando liga a televisão de manhã e descobre que apesar de Hillary continuar ao seu lado o país insiste em discutir se ele deve ou não abandonar o cargo porque teve uma relação extraconjugal com Monica Lewinsky, pense, como uma das personagens de «Happiness»:
-# source = CETEMPúblico n=981 sec=clt sem=98b &E
 # sent_id = CP981-4
+# source = CETEMPúblico n=981 sec=clt sem=98b &E
 # id = 5048
 1	Talvez	talvez	ADV	ADV|@ADVL>	_	44	advmod	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	Presidente	Presidente	NOUN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	44	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
+3	Presidente	Presidente	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	44	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-5	quando	quando	ADV	<ks>|<rel>|ADV|@ADVL>	_	6	advmod	_	_
+5	quando	quando	SCONJ	<ks>|<rel>|ADV|@ADVL>	_	6	mark	_	_
 6	liga	ligar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	advcl	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	televisão	televisão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
@@ -102,10 +99,10 @@
 11	e	e	CCONJ	<co-advl>|<co-vfin>|KC|@CO	_	12	cc	_	d2d:#106
 12	descobre	descobrir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
 13	que	que	SCONJ	KS|@SUB	_	24	mark	_	_
-14	apesar	apesar	ADV	ADV|@ADVL>	_	24	advmod	_	MWE=apesar_de
-15	de	de	ADP	PRP|@A<	_	17	mark	_	_
+14	apesar	apesar	ADV	ADV|@ADVL>	_	17	mark	_	MWE=apesar_de|MWEPOS=SCONJ
+15	de	de	ADP	PRP|@A<	_	14	fixed	_	_
 16	Hillary	Hillary	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj	_	_
-17	continuar	continuar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	14	advcl	_	_
+17	continuar	continuar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	24	advcl	_	_
 18-19	ao	_	_	_	_	_	_	_	_
 18	a	a	ADP	<sam->|PRP|@<SA	_	21	case	_	_
 19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
@@ -114,14 +111,14 @@
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	país	país	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	_
 24	insiste	insistir	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	ccomp	_	_
-25	em	em	ADP	PRP|@<PIV	_	26	mark	_	_
+25	em	em	SCONJ	PRP|@<PIV	_	26	mark	_	_
 26	discutir	discutir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	24	xcomp	_	_
 27	se	se	SCONJ	KS|@SUB	_	32	mark	_	_
 28	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	nsubj	_	_
-29	deve	dever	AUX	<aux>|<first-cjt>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	aux	_	_
+29	deve	dever	VERB	<aux>|<first-cjt>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	ccomp	_	_
 30	ou	ou	CCONJ	<co-fmc>|<co-inf>|KC|@CO	_	32	cc	_	_
 31	não	não	ADV	<Es>|ADV|@<ACC	_	32	obj	_	_
-32	abandonar	abandonar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	26	ccomp	_	_
+32	abandonar	abandonar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	29	xcomp	_	_
 33	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	cargo	cargo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	32	obj	_	_
 35	porque	porque	SCONJ	KS|@SUB	_	36	mark	_	_
@@ -148,8 +145,8 @@
 55	:	:	PUNCT	PU|@PU	_	44	punct	_	_
 
 # text = «Vivo num Estado de Ironia».
-# source = CETEMPúblico n=981 sec=clt sem=98b
 # sent_id = CP981-5
+# source = CETEMPúblico n=981 sec=clt sem=98b
 # id = 5049
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Vivo	viver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_

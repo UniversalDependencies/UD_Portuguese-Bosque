@@ -1,6 +1,6 @@
 # text = Também nisto Bôscoli estava em seu elemento: poucos podiam ser mais hilariantemente viperinos desde que a piada não fosse dirigida contra você.
-# source = CETENFolha n=180 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF180-1
+# source = CETENFolha n=180 cad=Ilustrada sec=nd sem=94a
 # id = 756
 1	Também	também	ADV	ADV|@>A	_	3	advmod	_	_
 2-3	nisto	_	_	_	_	_	_	_	_
@@ -18,7 +18,7 @@
 13	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	14	advmod	_	_
 14	hilariantemente	hilariantemente	ADV	ADV|@>A	_	15	advmod	_	_
 15	viperinos	viperino	ADJ	<COMP>|ADJ|M|P|@<SC	Gender=Masc|Number=Plur	8	acl:relcl	_	_
-16	desde	desde	ADP	PRP|@SUB	_	22	mark	_	MWE=desde_que
+16	desde	desde	SCONJ	PRP|@SUB	_	22	mark	_	MWE=desde_que
 17	que	que	SCONJ	KS|@P<	_	16	fixed	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	piada	piada	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj:pass	_	_
@@ -30,14 +30,14 @@
 25	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = E havia outro motivo para que ele atraísse a ira de tantos: seu sucesso com as mulheres.
-# source = CETENFolha n=180 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF180-2
+# source = CETENFolha n=180 cad=Ilustrada sec=nd sem=94a
 # id = 757
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	havia	haver	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 3	outro	outro	DET	<diff>|<KOMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	4	det	_	_
 4	motivo	motivo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
-5	para	para	ADP	PRP|@SUB	_	8	mark	_	MWE=para_que
+5	para	para	SCONJ	PRP|@SUB	_	8	mark	_	MWE=para_que
 6	que	que	SCONJ	KS|@P<	_	5	fixed	_	_
 7	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
 8	atraísse	atrair	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	advcl	_	_
@@ -54,19 +54,17 @@
 19	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Cite uma cantora da bossa nova ou estrela da televisão dos anos 60 e há poucas chances de que ele não a tenha namorado sempre dando a impressão de que fazia isto por tarefa.
-# source = CETENFolha n=180 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF180-3
+# source = CETENFolha n=180 cad=Ilustrada sec=nd sem=94a
 # id = 758
-# d2d = cc(Cite,e) -> cc(há,e)  #106
-# d2d = cc(cantora,ou) -> cc(estrela,ou)  #106
 1	Cite	citar	VERB	<mv>|<first-cjt>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	cantora	cantora	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
 4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	bossa	bossa	NOUN	_	_	3	nmod	_	MWE=bossa_nova|MWEPOS=NOUN
-7	nova	nova	ADJ	_	_	6	amod	_	_
+6	bossa	bossa	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	MWE=bossa_nova|MWEPOS=NOUN
+7	nova	nova	ADJ	_	Gender=Fem|Number=Sing	6	amod	_	_
 8	ou	ou	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	d2d:#106
 9	estrela	estrela	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	conj	_	_
 10-11	da	_	_	_	_	_	_	_	_
@@ -82,7 +80,7 @@
 18	há	haver	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
 19	poucas	pouco	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	20	det	_	_
 20	chances	chance	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	18	obj	_	_
-21	de	de	ADP	PRP|@N<ARG	_	27	mark	_	_
+21	de	de	SCONJ	PRP|@N<ARG	_	27	mark	_	_
 22	que	que	SCONJ	KS|@SUB	_	27	mark	_	_
 23	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
 24	não	não	ADV	_	Polarity=Neg	27	advmod	_	_
@@ -93,7 +91,7 @@
 29	dando	dar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	27	advcl	_	_
 30	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
 31	impressão	impressão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	29	obj	_	_
-32	de	de	ADP	PRP|@N<ARG	_	34	mark	_	_
+32	de	de	SCONJ	PRP|@N<ARG	_	34	mark	_	_
 33	que	que	SCONJ	KS|@SUB	_	34	mark	_	_
 34	fazia	fazer	VERB	<mv>|V|IMPF|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	31	acl	_	_
 35	isto	isto	PRON	<dem>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Dem	34	obj	_	_
@@ -102,15 +100,15 @@
 38	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «Pela bossa nova, namoro até o Trio Irakitan», dizia.
-# source = CETENFolha n=180 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF180-4
+# source = CETENFolha n=180 cad=Ilustrada sec=nd sem=94a
 # id = 759
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2-3	Pela	_	_	_	_	_	_	_	_
 2	Por	por	ADP	PRP|@ADVL>	_	4	case	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	bossa	bossa	NOUN	_	_	7	obl	_	MWE=bossa_nova|MWEPOS=NOUN
-5	nova	nova	ADJ	_	_	4	amod	_	ChangedBy=Issue165|SpaceAfter=No
+4	bossa	bossa	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	MWE=bossa_nova|MWEPOS=NOUN
+5	nova	nova	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 7	namoro	namorar	VERB	<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	parataxis	_	_
 8	até	até	ADV	ADV|@>N	_	10	advmod	_	_

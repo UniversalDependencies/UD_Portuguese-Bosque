@@ -1,6 +1,6 @@
 # text = Bóias luminosas na barra do Douro
-# source = CETEMPúblico n=448 sec=soc sem=96b
 # sent_id = CP448-1
+# source = CETEMPúblico n=448 sec=soc sem=96b
 # id = 2361
 1	Bóias	bóia	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	luminosas	luminoso	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	1	amod	_	_
@@ -14,8 +14,8 @@
 8	Douro	Douro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 
 # text = Sete bóias de sinalização da barra do Douro vão ser hoje recolocadas, marcando o percurso da Cantareira até Vila Nova de Gaia.
-# source = CETEMPúblico n=448 sec=soc sem=96b
 # sent_id = CP448-2
+# source = CETEMPúblico n=448 sec=soc sem=96b
 # id = 2362
 1	Sete	sete	NUM	<card>|NUM|F|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	bóias	bóia	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	14	nsubj:pass	_	_
@@ -49,8 +49,8 @@
 27	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Cinco desses aparelhos estão equipados com um sistema de iluminação, para que a entrada nocturna de embarcações se possa fazer com toda a segurança.
-# source = CETEMPúblico n=448 sec=soc sem=96b
 # sent_id = CP448-3
+# source = CETEMPúblico n=448 sec=soc sem=96b
 # id = 2363
 1	Cinco	cinco	NUM	<card>|NUM|M|P|@SUBJ>	NumType=Card	6	nsubj	_	ChangedBy=Issue168
 2-3	desses	_	_	_	_	_	_	_	_
@@ -65,7 +65,7 @@
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	iluminação	iluminação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-13	para	para	ADP	PRP|@<ADVL	_	22	mark	_	_
+13	para	para	SCONJ	PRP|@<ADVL	_	22	mark	_	_
 14	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	entrada	entrada	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
@@ -73,8 +73,8 @@
 18	de	de	ADP	PRP|@N<ARG	_	19	case	_	_
 19	embarcações	embarcação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	16	nmod	_	_
 20	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	22	expl	_	ChangedBy=Issue135
-21	possa	poder	AUX	<aux>|<se-passive>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	_	_
-22	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	acl	_	_
+21	possa	poder	VERB	<aux>|<se-passive>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
+22	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	xcomp	_	_
 23	com	com	ADP	PRP|@<ADVL	_	26	case	_	_
 24	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	26	det	_	MWE=toda_a
 25	a	o	DET	<artd>|DET|F|S|@A<	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	fixed	_	_
@@ -82,11 +82,9 @@
 27	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = As bóias tinham sido arrastadas durante as cheias de Dezembro e Janeiro passados e deviam ter sido repostas logo no início do mês de Março.
-# source = CETEMPúblico n=448 sec=soc sem=96b
 # sent_id = CP448-4
+# source = CETEMPúblico n=448 sec=soc sem=96b
 # id = 2364
-# d2d = cc(Dezembro,e) -> cc(Janeiro,e)  #106
-# d2d = cc(arrastadas,e) -> cc(repostas,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	bóias	bóia	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj:pass	_	_
 3	tinham	ter	AUX	<first-cjt>|<aux>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	aux	_	_
@@ -99,12 +97,12 @@
 10	Dezembro	dezembro	NOUN	<first-cjt>|<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
 11	e	e	CCONJ	<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 12	Janeiro	janeiro	NOUN	<cjt>|<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	conj	_	_
-13	passados	passado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	10	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+13	passados	passado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	10	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 14	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
-15	deviam	dever	AUX	<cjt>|<aux>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	18	aux	_	_
+15	deviam	dever	VERB	<cjt>|<aux>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	conj	_	_
 16	ter	ter	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	18	aux	_	_
 17	sido	ser	AUX	<first-cjt>|<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	18	aux:pass	_	_
-18	repostas	repor	VERB	<pass>|<cjt>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	5	conj	_	_
+18	repostas	repor	VERB	<pass>|<cjt>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	15	xcomp	_	_
 19	logo	logo	ADV	<kc>|ADV|@>A	_	22	advmod	_	_
 20-21	no	_	_	_	_	_	_	_	_
 20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
@@ -119,8 +117,8 @@
 28	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Uma fonte da Capitania do Porto do Douro disse ao PÚBLICO que «o sistema vai entrar imediatamente em funcionamento», colmatando assim o processo de recolocação das bóias destruídas pelas cheias, que ocorre desde Fevereiro.
-# source = CETEMPúblico n=448 sec=soc sem=96b
 # sent_id = CP448-5
+# source = CETEMPúblico n=448 sec=soc sem=96b
 # id = 2365
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	fonte	fonte	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
@@ -175,14 +173,13 @@
 45	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Fica assim totalmente sinalizado o percurso entre a barra do Douro e a Ponte de D. Luís I, para o qual foi necessária a substituição das bóias originais por outras de maior dimensão, enviadas pela Direcção de Faróis.
-# source = CETEMPúblico n=448 sec=soc sem=96b
 # sent_id = CP448-6
+# source = CETEMPúblico n=448 sec=soc sem=96b
 # id = 2366
-# d2d = cc(barra,e) -> cc(Ponte,e)  #106
 1	Fica	ficar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	assim	assim	ADV	<kc>|ADV|@<ADVL	_	1	advmod	_	_
 3	totalmente	totalmente	ADV	<quant>|ADV|@ADVL>	_	4	advmod	_	_
-4	sinalizado	sinalizar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	1	dep	_	_
+4	sinalizado	sinalizar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	1	xcomp	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	percurso	percurso	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	4	nsubj	_	_
 7	entre	entre	ADP	PRP|@N<	_	9	case	_	_
@@ -196,7 +193,7 @@
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	Ponte	Ponte	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	9	conj	_	MWE=Ponte_de_D.Luís_I
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
-17	D.	D.	PROPN	_	_	15	nmod	_	MWE=D.Luís_I|MWEPOS=PROPN
+17	D.	D.	PROPN	_	Gender=Masc|Number=Sing	15	nmod	_	MWE=D.Luís_I|MWEPOS=PROPN
 18	Luís	Luís	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	I	I	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	25	punct	_	_
@@ -228,8 +225,8 @@
 44	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = As novas unidades ficarão seguras por blocos de betão.
-# source = CETEMPúblico n=448 sec=soc sem=96b
 # sent_id = CP448-7
+# source = CETEMPúblico n=448 sec=soc sem=96b
 # id = 2367
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 2	novas	novo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	3	amod	_	_

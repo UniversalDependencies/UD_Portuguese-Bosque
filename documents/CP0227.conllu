@@ -1,9 +1,7 @@
 # text = O provedor recomenda, assim, a «imediata transferência» do agente da PSP para um estabelecimento prisional «tutelado pelo Ministério da Justiça» e «que permita compatibilizar as exigências de segurança com o exercício dos direitos conferidos a qualquer recluso em ambiente prisional normal».
-# source = CETEMPúblico n=227 sec=nd sem=97a
 # sent_id = CP227-1
+# source = CETEMPúblico n=227 sec=nd sem=97a
 # id = 1219
-# d2d = punct(tutelado,») -> punct(permita,»)  #106
-# d2d = cc(tutelado,e) -> cc(permita,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	provedor	provedor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	recomenda	recomendar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
@@ -66,8 +64,8 @@
 55	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Sugere ainda que seja elaborada uma circular, aliás já determinada pelo director-geral dos Serviços Prisionais, que estabeleça as regras a que deverá estar sujeito o internamento em estabelecimento prisional de reclusos que «estatutariamente devam ser separados da restante população prisional.»
-# source = CETEMPúblico n=227 sec=nd sem=97a
 # sent_id = CP227-2
+# source = CETEMPúblico n=227 sec=nd sem=97a
 # id = 1220
 1	Sugere	sugerir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	ainda	ainda	ADV	ADV|@<ADVL	_	1	advmod	_	_
@@ -83,12 +81,12 @@
 12-13	pelo	_	_	_	_	_	_	_	_
 12	por	por	ADP	PRP|@PASS	_	14	case	_	_
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	director-geral	director-geral	NOUN	N|@P<	_	11	obl:agent	_	MWE=director-geral_dos_Serviços_Prisionais
+14	director-geral	director-geral	NOUN	N|@P<	Gender=Masc|Number=Sing	11	obl:agent	_	MWE=director-geral_dos_Serviços_Prisionais
 15-16	dos	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
-17	Serviços	serviços	NOUN	N|@P<	_	14	nmod	_	_
-18	Prisionais	prisionais	ADJ	ADJ|@N<	_	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
+17	Serviços	serviços	NOUN	N|@P<	Gender=Masc|Number=Plur	14	nmod	_	_
+18	Prisionais	prisionais	ADJ	ADJ|@N<	Gender=Masc|Number=Plur	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 20	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	21	nsubj	_	_
 21	estabeleça	estabelecer	VERB	<mv>|V|PR|3S|SUBJ|@FS-N<PRED	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
@@ -98,7 +96,7 @@
 25	que	que	PRON	<rel>|INDP|F|P|@P<	Gender=Fem|Number=Plur|PronType=Rel	28	obl	_	_
 26	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	28	aux	_	_
 27	estar	estar	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	cop	_	ChangedBy=Issue167
-28	sujeito	sujeito	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	23	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+28	sujeito	sujeito	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	23	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue91
 29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	internamento	internamento	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	28	nsubj	_	_
 31	em	em	ADP	PRP|@N<	_	32	case	_	_
@@ -109,9 +107,9 @@
 36	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	41	nsubj:pass	_	_
 37	«	«	PUNCT	PU|@PU	_	41	punct	_	ChangedBy=Issue165|SpaceAfter=No
 38	estatutariamente	estatutariamente	ADV	ADV|@ADVL>	_	41	advmod	_	_
-39	devam	dever	AUX	<aux>|V|PR|3P|SUBJ|@FS-N<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	41	aux	_	_
+39	devam	dever	VERB	<aux>|V|PR|3P|SUBJ|@FS-N<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	acl:relcl	_	_
 40	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	41	aux:pass	_	_
-41	separados	separar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	35	acl:relcl	_	_
+41	separados	separar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	39	xcomp	_	_
 42-43	da	_	_	_	_	_	_	_	_
 42	de	de	ADP	<sam->|PRP|@<PIV	_	45	case	_	_
 43	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	45	det	_	_
@@ -122,10 +120,9 @@
 48	»	»	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Menéres Pimentel recomenda, além do mais, a «urgente criação de estabelecimento prisional especial, onde possam ser alojadas as pessoas a que a lei ou as circunstâncias imponham exigências acrescidas de protecção, em virtude da natureza das suas funções profissionais.»
-# source = CETEMPúblico n=227 sec=nd sem=97a
 # sent_id = CP227-3
+# source = CETEMPúblico n=227 sec=nd sem=97a
 # id = 1221
-# d2d = cc(lei,ou) -> cc(circunstâncias,ou)  #106
 1	Menéres	Menéres	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Menéres_Pimentel|MWEPOS=PROPN
 2	Pimentel	Pimentel	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	recomenda	recomendar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
@@ -134,7 +131,7 @@
 6-7	do	_	_	_	_	_	_	_	_
 6	de	de	ADP	PRP|@A<	_	8	case	_	_
 7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	mais	muito	PRON	<quant>|<np-def>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	5	obl	_	ChangedBy=Issue165|SpaceAfter=No
+8	mais	mais	PRON	<quant>|<np-def>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	5	obl	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 11	«	«	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -145,10 +142,10 @@
 16	prisional	prisional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	amod	_	_
 17	especial	especial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	amod	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-19	onde	onde	ADV	<rel>|ADV|@ADVL>	_	22	advmod	_	_
-20	possam	poder	AUX	<aux>|V|PR|3P|SUBJ|@FS-N<PRED	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux	_	_
+19	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	22	obl	_	_
+20	possam	poder	VERB	<aux>|V|PR|3P|SUBJ|@FS-N<PRED	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_
 21	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	22	aux:pass	_	_
-22	alojadas	alojar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	15	acl:relcl	_	_
+22	alojadas	alojar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	20	xcomp	_	_
 23	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
 24	pessoas	pessoa	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	22	nsubj:pass	_	_
 25	a	a	ADP	PRP|@PIV>	_	26	case	_	_
@@ -165,7 +162,7 @@
 36	protecção	protecção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	34	punct	_	_
 38	em	em	ADP	<sam->|PRP|@<ADVL	_	39	case	_	MWE=em_virtude_de
-39	virtude	virtude	NOUN	N|@P<	_	32	obl	_	_
+39	virtude	virtude	NOUN	N|@P<	Gender=Fem|Number=Sing	32	obl	_	_
 40-41	da	_	_	_	_	_	_	_	_
 40	de	de	ADP	PRP|@N<	_	42	case	_	_
 41	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	42	det	_	_

@@ -1,8 +1,7 @@
 # text = R. -- O Presidente tem um prazo até Março para o assinar e apresentar ao Congresso, como um pacote que deverá ser aceite ou rejeitado.
-# source = CETEMPúblico n=957 sec=eco sem=93a
 # sent_id = CP957-1
+# source = CETEMPúblico n=957 sec=eco sem=93a
 # id = 4930
-# d2d = cc(assinar,e) -> cc(apresentar,e)  #106
 1	R.	r.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -12,7 +11,7 @@
 7	prazo	prazo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
 8	até	até	ADP	PRP|@N<	_	9	case	_	_
 9	Março	março	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
-10	para	para	ADP	PRP|@N<	_	12	mark	_	_
+10	para	para	SCONJ	PRP|@N<	_	12	mark	_	_
 11	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obj	_	_
 12	assinar	assinar	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 13	e	e	CCONJ	<co-inf>|KC|@CO	_	14	cc	_	d2d:#106
@@ -26,16 +25,16 @@
 20	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	pacote	pacote	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	xcomp	_	_
 22	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	25	nsubj	_	_
-23	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	aux	_	_
+23	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	21	acl:relcl	_	_
 24	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	25	aux	_	_
-25	aceite	aceitar	VERB	<aux>|<first-cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	21	acl:relcl	_	_
+25	aceite	aceitar	VERB	<aux>|<first-cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	23	xcomp	_	_
 26	ou	ou	CCONJ	<co-pcv>|KC|@CO	_	27	cc	_	_
 27	rejeitado	rejeitar	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	25	conj	_	ChangedBy=Issue165|SpaceAfter=No
 28	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Caso ultrapasse esse prazo, o Congresso poderá discutir cada alínea, o que pode adiar indefinidamente a sua aplicação.
-# source = CETEMPúblico n=957 sec=eco sem=93a
 # sent_id = CP957-2
+# source = CETEMPúblico n=957 sec=eco sem=93a
 # id = 4931
 1	Caso	caso	SCONJ	KS|@SUB	_	2	mark	_	_
 2	ultrapasse	ultrapassar	VERB	<mv>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	advcl	_	_
@@ -44,15 +43,15 @@
 5	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	Congresso	Congresso	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
-8	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	aux	_	_
-9	discutir	discutir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+8	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+9	discutir	discutir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
 10	cada	cada	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	11	det	_	_
 11	alínea	alínea	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 13	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	9	appos	_	_
 14	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	16	nsubj	_	_
-15	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
-16	adiar	adiar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	acl:relcl	_	_
+15	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_
+16	adiar	adiar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	xcomp	_	_
 17	indefinidamente	indefinidamente	ADV	ADV|@<ADVL	_	16	advmod	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	20	det	_	_
@@ -60,10 +59,9 @@
 21	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = É possível que quem apresentou essa ideia considere que seja melhor para os Estados Unidos e para o mundo ter qualquer acordo do que não ter nada.
-# source = CETEMPúblico n=957 sec=eco sem=93a
 # sent_id = CP957-3
+# source = CETEMPúblico n=957 sec=eco sem=93a
 # id = 4932
-# d2d = cc(Estados,e) -> cc(mundo,e)  #106
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	possível	possível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
@@ -87,11 +85,11 @@
 21	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	22	det	_	_
 22	acordo	acordo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
 23-24	do	_	_	_	_	_	_	_	_
-23	de	de	ADP	<sam->|PRP|@COM	_	27	mark	_	MWE=do_que
+23	de	de	SCONJ	<sam->|PRP|@COM	_	27	mark	_	MWE=do_que
 24	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	23	fixed	_	_
 25	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	23	fixed	_	_
 26	não	não	ADV	_	Polarity=Neg	27	advmod	_	_
-27	ter	ter	VERB	<mv>|V|INF|@ICL-KOMP<	VerbForm=Inf	11	dep	_	_
+27	ter	ter	VERB	<mv>|V|INF|@ICL-KOMP<	VerbForm=Inf	11	advcl	_	_
 28	nada	nada	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	27	obj	_	ChangedBy=Issue165|SpaceAfter=No
 29	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

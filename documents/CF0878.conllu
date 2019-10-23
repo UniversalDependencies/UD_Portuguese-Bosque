@@ -1,6 +1,6 @@
 # text = A absurda dotação feita a dois municípios que agora passam a ter 50% das verbas totais de seus Estados é assim explicada por Beni Veras:
-# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # sent_id = CF878-1
+# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # id = 3704
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	absurda	absurdo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
@@ -11,9 +11,9 @@
 7	municípios	município	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	ChangedBy=Issue137
 8	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	12	nsubj	_	_
 9	agora	agora	ADV	<kc>|ADV|@ADVL>	_	12	advmod	_	_
-10	passam	passar	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-11	a	a	ADP	PRP|@PRT-AUX<	_	12	case	_	_
-12	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	acl:relcl	_	_
+10	passam	passar	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	MWE=passam_a|MWEPOS=AUX
+11	a	a	SCONJ	PRP|@PRT-AUX<	_	12	mark	_	_
+12	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
 13	50	50	NUM	<card>|NUM|M|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 14	%	%	SYM	<np-def>|N|M|P|@<ACC	_	12	obj	_	_
 15-16	das	_	_	_	_	_	_	_	_
@@ -33,8 +33,8 @@
 28	:	:	PUNCT	PU|@PU	_	24	punct	_	_
 
 # text = «Sobral, embora seja uma das principais cidades do Ceará, ainda não dispõe de um sistema adequado de esgotos.
-# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # sent_id = CF878-2
+# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # id = 3705
 1	«	«	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Sobral	Sobral	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -58,16 +58,15 @@
 18	de	de	ADP	PRP|@<PIV	_	20	case	_	_
 19	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	sistema	sistema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obj	_	_
-21	adequado	adequado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	20	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+21	adequado	adequado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	20	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	esgotos	esgoto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 24	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = O projeto de canalização de um córrego no município de Contagem ( ...) é indispensável para os moradores porque, durante o período de chuvas, o rio transborda e alaga alguns bairros de Contagem».
-# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # sent_id = CF878-3
+# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # id = 3706
-# d2d = cc(transborda,e) -> cc(alaga,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	projeto	projeto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -81,9 +80,9 @@
 10	município	município	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	Contagem	Contagem	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
-13	(	(	PUNCT	PU|@PU	_	17	punct	_	_
+13	(	(	PUNCT	PU|@PU	_	14	punct	_	_
 14	...	...	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
-15	)	)	PUNCT	PU|@PU	_	17	punct	_	_
+15	)	)	PUNCT	PU|@PU	_	14	punct	_	_
 16	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	ChangedBy=Issue167
 17	indispensável	indispensável	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 18	para	para	ADP	PRP|@A<	_	20	case	_	_
@@ -110,15 +109,15 @@
 39	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Nenhum município brasileiro, nem mesmo São Paulo, «dispõe de um sistema adequado de esgotos».
-# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # sent_id = CF878-4
+# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # id = 3707
 1	Nenhum	nenhum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Neg	2	det	_	_
 2	município	município	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3	brasileiro	brasileiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 5	nem	nem	CCONJ	PRP|@>N	_	7	cc	_	MWE=nem_mesmo
-6	mesmo	mesmo	CCONJ	N|M|S|@P<	Gender=Masc|Number=Sing	5	fixed	_	_
+6	mesmo	mesmo	CCONJ	N|M|S|@P<	_	5	fixed	_	_
 7	São	São	PROPN	_	Gender=Masc|Number=Sing	2	conj	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
 8	Paulo	Paulo	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
@@ -127,15 +126,15 @@
 12	de	de	ADP	PRP|@<PIV	_	14	case	_	_
 13	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	sistema	sistema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obj	_	_
-15	adequado	adequado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	14	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+15	adequado	adequado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	14	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	esgotos	esgoto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 18	»	»	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Enchentes dão-se pelo país inteiro.
-# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # sent_id = CF878-5
+# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # id = 3708
 1	Enchentes	enchente	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	2	nsubj	_	_
 2-3	dão-se	_	_	_	_	_	_	_	_
@@ -149,8 +148,8 @@
 8	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = A escolha tão particular de Sobral, que por «ser uma das principais cidades do Ceará» é também uma grande concentração eleitoral do Estado, coincide com sua escolha para a ação de campanha que lá fez o candidato Fernando Henrique no fim-de-semana.
-# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # sent_id = CF878-6
+# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # id = 3709
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	escolha	escolha	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	31	nsubj	_	_
@@ -160,7 +159,7 @@
 6	Sobral	Sobral	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 8	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	25	nsubj	_	_
-9	por	por	ADP	PRP|@ADVL>	_	12	mark	_	_
+9	por	por	SCONJ	PRP|@ADVL>	_	12	mark	_	_
 10	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 11	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	cop	_	ChangedBy=Issue167
 12	uma	uma	NUM	<card>|NUM|F|S|@<SC	NumType=Card	25	nmod	_	ChangedBy=Issue168
@@ -208,10 +207,9 @@
 50	.	.	PUNCT	PU|@PU	_	31	punct	_	_
 
 # text = A mineira Contagem é outra grande concentração eleitoral, com prefeito do PSDB e onde o partido, já como propaganda, fez a convenção de escolha de Fernando Henrique.
-# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # sent_id = CF878-7
+# source = CETENFolha n=878 cad=Brasil sec=pol sem=94b
 # id = 3710
-# d2d = cc(prefeito,e) -> cc(fez,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	mineira	mineiro	ADJ	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	amod	_	_
 3	Contagem	Contagem	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	7	nsubj	_	_

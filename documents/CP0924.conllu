@@ -1,6 +1,6 @@
 # text = O CD-ROM integra ainda a resposta de Larry às célebres Norton Utilities:
-# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # sent_id = CP924-1
+# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # id = 4754
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	CD-ROM	cd-rom	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -19,8 +19,8 @@
 14	:	:	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = trata-se das Laffer Utilities (Laffer é o nome de família do herói), apresentadas como um conjunto de programas para «perder tempo quando devia era estar a trabalhar».
-# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # sent_id = CP924-2
+# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # id = 4755
 1-2	trata-se	_	_	_	_	_	_	_	_
 1	trata	tratar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -49,24 +49,23 @@
 22	conjunto	conjunto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	xcomp	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	programas	programa	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
-25	para	para	ADP	PRP|@N<	_	27	mark	_	_
+25	para	para	SCONJ	PRP|@N<	_	27	mark	_	_
 26	«	«	PUNCT	PU|@PU	_	27	punct	_	ChangedBy=Issue165|SpaceAfter=No
 27	perder	perder	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	24	acl	_	_
 28	tempo	tempo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	27	obj	_	_
 29	quando	quando	ADV	<rel>|ADV|@ADVL>	_	34	advmod	_	_
-30	devia	dever	AUX	<aux>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	34	aux	_	_
+30	devia	dever	VERB	<aux>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	27	advcl	_	_
 31	era	era	ADV	<foc>|ADV|@ADVL>	_	34	advmod	_	_
-32	estar	estar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	34	aux	_	_
-33	a	a	ADP	PRP|@PRT-AUX<	_	34	case	_	_
-34	trabalhar	trabalhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	27	advcl	_	ChangedBy=Issue165|SpaceAfter=No
+32	estar	estar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	30	xcomp	_	MWE=estar_a|MWEPOS=AUX
+33	a	a	SCONJ	PRP|@PRT-AUX<	_	34	mark	_	_
+34	trabalhar	trabalhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	32	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 35	»	»	PUNCT	PU|@PU	_	27	punct	_	ChangedBy=Issue165|SpaceAfter=No
 36	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Algures nos textos do programa lê-se que ele é capaz de «automatizar tudo o que você faz no escritório e não tem que ver com trabalho».
-# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # sent_id = CP924-3
+# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # id = 4756
-# d2d = cc(capaz,e) -> cc(ver,e)  #106
 1	Algures	algures	ADV	ADV|@ADVL>	_	8	advmod	_	_
 2-3	nos	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@A<	_	4	case	_	_
@@ -83,7 +82,7 @@
 11	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
 12	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	ChangedBy=Issue167
 13	capaz	capaz	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	8	ccomp	_	_
-14	de	de	ADP	PRP|@A<ARG	_	16	mark	_	_
+14	de	de	SCONJ	PRP|@A<ARG	_	16	mark	_	_
 15	«	«	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	automatizar	automatizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	advcl	_	_
 17	tudo	tudo	PRON	<rel>|<quant>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	21	obj	_	MWE=tudo_o_que
@@ -106,13 +105,9 @@
 33	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Com uma base de dados de «clip-art», um programa de impressão de apostas, uma selecção de anedotas temáticas, um criador de cartazes e algumas surpresas mais, as Laffer Utilities são uma boa maneira de ... perder um emprego.
-# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # sent_id = CP924-4
+# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # id = 4757
-# d2d = punct(base,,) -> punct(programa,,)  #106
-# d2d = punct(base,,) -> punct(criador,,)  #106
-# d2d = punct(base,,) -> punct(selecção,,)  #106
-# d2d = cc(base,e) -> cc(surpresas,e)  #106
 1	Com	com	ADP	PRP|@PRED>	_	3	case	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	base	base	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	39	nmod	_	_
@@ -152,7 +147,7 @@
 37	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 38	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	39	amod	_	_
 39	maneira	maneira	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
-40	de	de	ADP	PRP|@N<	_	42	mark	_	_
+40	de	de	SCONJ	PRP|@N<	_	42	mark	_	_
 41	...	...	PUNCT	PU|@PU	_	39	punct	_	_
 42	perder	perder	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	39	acl	_	_
 43	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
@@ -160,8 +155,8 @@
 45	.	.	PUNCT	PU|@PU	_	39	punct	_	_
 
 # text = Lembrar as raízes foi ainda preocupação de Al Lowe ao preparar este disco, por isso mesmo, a par com alguns textos seus sobre os anos passados a criar Larry, uma divertida entrevista em vídeo, Al Lowe «Undubbed», para a televisão alemã -- e um vídeo e demo interactivo de Freddy Pharkas, um jogo de All Lowe -- há ainda espaço para lembrar o jogo que está na origem do azarado herói da série: Softporn Adventure.
-# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # sent_id = CP924-5
+# source = CETEMPúblico n=924 sec=clt-soc sem=95a
 # id = 4758
 1	Lembrar	lembrar	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	6	csubj	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
@@ -173,16 +168,16 @@
 8	Al	Al	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue119|MWE=Al_Lowe|MWEPOS=PROPN
 9	Lowe	Lowe	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 10-11	ao	_	_	_	_	_	_	_	_
-10	a	a	ADP	<sam->|PRP|@<ADVL	_	12	mark	_	_
+10	a	a	SCONJ	<sam->|PRP|@<ADVL	_	12	mark	_	_
 11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	preparar	preparar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
 13	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	14	det	_	_
 14	disco	disco	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	ChangedBy=Issue165|SpaceAfter=No
-15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+15	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 16	por	por	ADP	PRP|@ADVL>	_	17	case	_	_
 17	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	67	obl	_	_
 18	mesmo	mesmo	ADJ	<ident>|DET|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
-19	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+19	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 20	a	a	ADP	PRP|@ADVL>	_	21	case	_	MWE=a_par
 21	par	par	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	67	obl	_	_
 22	com	com	ADP	PRP|@P<	_	24	case	_	_
@@ -192,23 +187,23 @@
 26	sobre	sobre	ADP	PRP|@N<	_	28	case	_	_
 27	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	_	_
 28	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	_
-29	passados	passado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	28	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
+29	passados	passado	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	28	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 30	a	a	ADP	PRP|@<ADVL	_	36	case	_	_
-31	criar	criar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	dep	_	_
+31	criar	criar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	xcomp	_	_
 32	Larry	Larry	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	31	obj	_	ChangedBy=Issue165|SpaceAfter=No
-33	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+33	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 34	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
-35	divertida	divertido	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	36	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+35	divertida	divertido	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	36	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 36	entrevista	entrevista	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	24	conj	_	_
 37	em	em	ADP	PRP|@N<	_	38	case	_	_
 38	vídeo	vídeo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-39	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
+39	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 40	Al	Al	PROPN	_	Gender=Fem|Number=Sing	36	appos	_	ChangedBy=Issue119|MWE=Al_Lowe_Undubbed|MWEPOS=PROPN
 41	Lowe	Lowe	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119
 42	«	«	PUNCT	PU|@PU	_	40	punct	_	SpaceAfter=No
 43	Undubbed	Undubbed	PROPN	_	Number=Sing	40	flat:name	_	SpaceAfter=No
 44	»	»	PUNCT	PU|@PU	_	40	punct	_	SpaceAfter=No
-45	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
+45	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
 46	para	para	ADP	PRP|@N<	_	48	case	_	_
 47	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
 48	televisão	televisão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	_
@@ -233,7 +228,7 @@
 67	há	haver	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
 68	ainda	ainda	ADV	ADV|@<ADVL	_	67	advmod	_	_
 69	espaço	espaço	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	67	obj	_	_
-70	para	para	ADP	PRP|@<ADVL	_	71	mark	_	_
+70	para	para	SCONJ	PRP|@<ADVL	_	71	mark	_	_
 71	lembrar	lembrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	67	advcl	_	_
 72	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	73	det	_	_
 73	jogo	jogo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	71	obj	_	_

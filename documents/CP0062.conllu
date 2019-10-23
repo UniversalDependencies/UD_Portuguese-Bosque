@@ -1,6 +1,6 @@
 # text = V.C. -- Mas é quase disco de prata [ faltam seis mil, segundo a editora, a BMG ]!
-# source = CETEMPúblico n=62 sec=clt sem=94b &D
 # sent_id = CP62-1
+# source = CETEMPúblico n=62 sec=clt sem=94b &D
 # id = 340
 1	V.C.	V.C.	PROPN	PROP|M/F|S|@NPHR	Gender=Unsp|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
@@ -9,7 +9,7 @@
 5	quase	quase	ADV	<quant>|ADV|@<ADVL	_	6	advmod	_	_
 6	disco	disco	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	1	parataxis	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	MWE=de_prata
-8	prata	prata	NOUN	N|@P<	_	6	nmod	_	_
+8	prata	prata	NOUN	N|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
 9	[	[	PUNCT	PU|@PU	_	10	punct	_	_
 10	faltam	faltar	VERB	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
 11	seis	seis	NUM	<card>|NUM|M|P|@>A	NumType=Card	10	nsubj	_	ChangedBy=Issue168|MWE=seis_mil
@@ -25,11 +25,9 @@
 21	!	!	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Comprar um CD não está ao alcance de todas as pessoas que compravam os nossos discos, mas acreditamos nos jovens, porque temos a certeza que aderem a isto.
-# source = CETEMPúblico n=62 sec=clt sem=94b &W
 # sent_id = CP62-2
+# source = CETEMPúblico n=62 sec=clt sem=94b &W
 # id = 341
-# d2d = cc(alcance,mas) -> cc(acreditamos,mas)  #106
-# d2d = punct(alcance,,) -> punct(acreditamos,,)  #106
 1	Comprar	comprar	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	8	csubj	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	CD	cd	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
@@ -67,18 +65,18 @@
 33	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = É lógico que estamos a aproveitar o facto de os portugueses aderirem outra vez à música popular.
-# source = CETEMPúblico n=62 sec=clt sem=94b
 # sent_id = CP62-3
+# source = CETEMPúblico n=62 sec=clt sem=94b
 # id = 342
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	lógico	lógico	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
-4	estamos	estar	AUX	<aux>|V|PR|1P|IND|@FS-<SUBJ	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
-6	aproveitar	aproveitar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	csubj	_	_
+4	estamos	estar	VERB	<aux>|V|PR|1P|IND|@FS-<SUBJ	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	csubj	_	MWE=estamos_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
+6	aproveitar	aproveitar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	facto	facto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
-9	de	de	ADP	PRP|@N<ARG	_	12	mark	_	_
+9	de	de	SCONJ	PRP|@N<ARG	_	12	mark	_	_
 10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
 11	portugueses	português	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
 12	aderirem	aderir	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	8	acl	_	_
@@ -92,8 +90,8 @@
 19	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = P. -- E qual é a vossa opinião sobre a música portuguesa actual?
-# source = CETEMPúblico n=62 sec=clt sem=94b
 # sent_id = CP62-4
+# source = CETEMPúblico n=62 sec=clt sem=94b
 # id = 343
 1	P.	p.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
@@ -111,13 +109,13 @@
 14	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = O que é que acham que mudou desde os anos de apogeu do conjunto?
-# source = CETEMPúblico n=62 sec=clt sem=94b
 # sent_id = CP62-5
+# source = CETEMPúblico n=62 sec=clt sem=94b
 # id = 344
 1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
-2	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	7	nsubj	_	_
-3	é	é	ADP	PRP|@ADVL>	_	4	case	_	MWE=é_que
-4	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	_
+2	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	7	obj	_	_
+3	é	ser	AUX	PRP|@ADVL>	_	5	discourse	_	MWE=é_que|MWEPOS=INTJ
+4	que	que	SCONJ	N|M|S|@P<	_	3	fixed	_	_
 5	acham	achar	VERB	<mv>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	que	que	SCONJ	KS|@SUB	_	7	mark	_	_
 7	mudou	mudar	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	_	_

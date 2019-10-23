@@ -1,17 +1,14 @@
 # text = Três centenas e meia de pessoas a ver, ouvir e aplaudir o espectáculo montado pela Associação Timorense Lafaek.
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-1
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2260
-# d2d = cc(centenas,e) -> cc(meia,e)  #106
-# d2d = cc(ver,e) -> cc(aplaudir,e)  #106
-# d2d = punct(ver,,) -> punct(ouvir,,)  #106
-1	Três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168|MWE=três_centenas
+1	Três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	0	root	_	ChangedBy=Issue168|MWE=três_centenas
 2	centenas	centena	NUM	<first-cjt>|<np-def>|N|F|P|@NPHR	NumType=Card	1	flat	_	_
 3	e	e	CCONJ	<co-utt>|KC|@CO	_	4	cc	_	d2d:#106
 4	meia	meia	NOUN	<cjt>|<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	1	conj	_	_
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
-6	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	0	root	_	_
-7	a	a	ADP	PRP|@N<	_	8	mark	_	_
+6	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	1	nmod	_	_
+7	a	a	SCONJ	PRP|@N<	_	8	mark	_	_
 8	ver	ver	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	ouvir	ouvir	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	8	conj	_	_
@@ -26,13 +23,12 @@
 18	Associação	Associação	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	obl:agent	_	MWE=Associação_Timorense_Lafaek
 19	Timorense	Timorense	PROPN	PROP|@N<	Number=Sing	18	flat:name	_	_
 20	Lafaek	Lafaek	PROPN	PROP|@N<	Number=Sing	18	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
-21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
+21	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Ontem à noite, num clube desportivo de Darwin, muitos australianos sentaram-se ao lado dos estudantes e levantaram-se para gritar «Viva a missão de paz!», «Viva Timor-Leste», «Viva Xanana», quando está próxima a chegada do Lusitânia.
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-2
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2261
-# d2d = cc(sentaram-,e) -> cc(levantaram-,e)  #106
 1	Ontem	ontem	ADV	ADV|@ADVL>	_	15	advmod	_	_
 2-3	à	_	_	_	_	_	_	_	_
 2	a	a	ADP	<sam->|PRP|@A<	_	4	case	_	_
@@ -55,7 +51,7 @@
 17-18	ao	_	_	_	_	_	_	_	_
 17	a	a	ADP	<sam->|PRP|@N<	_	19	case	_	_
 18	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	lado	lado	NOUN	N|@P<	_	15	obl	_	_
+19	lado	lado	NOUN	N|@P<	Gender=Masc|Number=Sing	15	obl	_	_
 20-21	dos	_	_	_	_	_	_	_	_
 20	de	de	ADP	PRP|@N<	_	22	case	_	_
 21	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
@@ -64,7 +60,7 @@
 24-25	levantaram-se	_	_	_	_	_	_	_	_
 24	levantaram	levantar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	15	conj	_	_
 25	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	24	expl	_	ChangedBy=Issue135
-26	para	para	ADP	PRP|@<ADVL	_	27	mark	_	_
+26	para	para	SCONJ	PRP|@<ADVL	_	27	mark	_	_
 27	gritar	gritar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	24	advcl	_	_
 28	«	«	PUNCT	PU|@PU	_	29	punct	_	ChangedBy=Issue165|SpaceAfter=No
 29	Viva	Viva	PROPN	_	Gender=Fem|Number=Sing	27	obj	_	ChangedBy=Issue119|MWE=Viva_a_missão|MWEPOS=PROPN
@@ -96,11 +92,9 @@
 54	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Crianças e adultos da Associação dançaram, vestidas com os trajes e panos coloridos que há séculos os timorenses fabricam.
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-3
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2262
-# d2d = cc(trajes,e) -> cc(panos,e)  #106
-# d2d = cc(Crianças,e) -> cc(adultos,e)  #106
 1	Crianças	criança	NOUN	<first-cjt>|<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
 2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	adultos	adulto	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	1	conj	_	_
@@ -126,10 +120,9 @@
 22	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Leu-se o poeta Borja da Costa e o cântico que Xanana Gusmão escreveu na montanha para a «Mulher Timor».
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-4
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2263
-# d2d = cc(poeta,e) -> cc(cântico,e)  #106
 1-2	Leu-se	_	_	_	_	_	_	_	_
 1	Leu	ler	VERB	<mv>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	_
@@ -160,8 +153,8 @@
 25	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Rui Marques, coordenador da missão que quer ir a Díli, foi chamado para ler a carta enviada clandestinamente pelos estudantes timorenses presos na Indonésia.
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-5
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2264
 1	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	15	nsubj:pass	_	ChangedBy=Issue119|MWE=Rui_Marques|MWEPOS=PROPN
 2	Marques	Marques	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -179,7 +172,7 @@
 13	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 14	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	_	_
 15	chamado	chamar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
-16	para	para	ADP	PRP|@<ADVL	_	17	mark	_	_
+16	para	para	SCONJ	PRP|@<ADVL	_	17	mark	_	_
 17	ler	ler	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	advcl	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	carta	carta	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
@@ -198,11 +191,9 @@
 30	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Palavras lacónicas, mas que fizeram explodir a sala em aplausos:
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-6
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2265
-# d2d = punct(lacónicas,,) -> punct(fizeram,,)  #106
-# d2d = cc(lacónicas,mas) -> cc(fizeram,mas)  #106
 1	Palavras	palavra	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	lacónicas	lacónico	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	1	amod	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
@@ -217,8 +208,8 @@
 12	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «Obrigado pela vossa visita a Timor-Leste».
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-7
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2266
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Obrigado	obrigar	VERB	<mv>|V|PCP|M|S|@ICL-UTT	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
@@ -233,11 +224,9 @@
 10	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Depois, num cúmulo de música e emoção, cantou-se «Peace Mission», o hino composto e ensaiado para o primeiro dos dois dias de festa.
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-8
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2267
-# d2d = cc(composto,e) -> cc(ensaiado,e)  #106
-# d2d = cc(música,e) -> cc(emoção,e)  #106
 1	Depois	depois	ADV	ADV|@ADVL>	_	11	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3-4	num	_	_	_	_	_	_	_	_
@@ -275,10 +264,9 @@
 32	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = «Venham e juntem-se à missão de paz.
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-9
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2268
-# d2d = cc(Venham,e) -> cc(juntem-,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Venham	vir	VERB	<mv>|<first-cjt>|V|PR|3P|SUBJ|@FS-STA	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	e	e	CCONJ	<co-vfin>|KC|@CO	_	4	cc	_	d2d:#106
@@ -294,12 +282,12 @@
 11	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = (...) Duzentos mil já morreram.
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-10
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2269
-1	(	(	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
+1	(	(	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	...	...	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
-3	)	)	PUNCT	PU|@PU	_	7	punct	_	_
+3	)	)	PUNCT	PU|@PU	_	2	punct	_	_
 4	Duzentos	duzentos	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nsubj	_	ChangedBy=Issue168|MWE=duzentos_mil
 5	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@SUBJ>	NumType=Card	4	flat	_	ChangedBy=Issue168
 6	já	já	ADV	ADV|@ADVL>	_	7	advmod	_	_
@@ -307,22 +295,22 @@
 8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Acreditam?
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-11
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2270
 1	Acreditam	acreditar	VERB	<mv>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Acreditam?
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-12
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2271
 1	Acreditam	acreditar	VERB	<mv>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Ouçam o nosso apelo! ...»
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-13
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2272
 1	Ouçam	ouvir	VERB	<mv>|V|PR|3P|SUBJ|@FS-CMD	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -333,10 +321,9 @@
 7	»	»	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Num local da enorme sala, um jovem timorense vestido de guerreiro soluçou e chorou abraçado às pessoas.
-# source = CETEMPúblico n=431 sec=pol sem=92a
 # sent_id = CP431-14
+# source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2273
-# d2d = cc(soluçou,e) -> cc(chorou,e)  #106
 1-2	Num	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_

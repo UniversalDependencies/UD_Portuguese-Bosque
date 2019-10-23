@@ -1,8 +1,7 @@
 # text = Entretanto, a Junta de Freguesia de Riba de Ave foi recebida anteontem por Agostinho Fernandes, a quem se manifestou preocupada com a situação e propôs o encerramento da ETRSU até que seja reparada a avaria.
-# source = CETEMPúblico n=536 sec=soc sem=95a
 # sent_id = CP536-1
+# source = CETEMPúblico n=536 sec=soc sem=95a
 # id = 2801
-# d2d = cc(manifestou,e) -> cc(propôs,e)  #106
 1	Entretanto	entretanto	ADV	<kc>|ADV|@ADVL>	_	12	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -36,7 +35,7 @@
 30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
 31	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 32	ETRSU	ETRSU	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	29	nmod	_	_
-33	até	até	ADP	PRP|@<ADVL	_	36	mark	_	_
+33	até	até	SCONJ	PRP|@<ADVL	_	36	mark	_	_
 34	que	que	SCONJ	KS|@SUB	_	36	mark	_	_
 35	seja	ser	AUX	<aux>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	aux:pass	_	_
 36	reparada	reparar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	27	advcl	_	_
@@ -45,11 +44,9 @@
 39	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = «O senhor presidente disse-nos que o que se está a passar é inadmissível e que a população tem razão para estar preocupada, mas adiantou-nos que está convencido de que se trata de um problema técnico», declarou-nos Miguel Lopes, cujo pedido para suspender a laboração da estação até à reparação definitiva da avaria não recebeu uma resposta concreta.
-# source = CETEMPúblico n=536 sec=soc sem=95a
 # sent_id = CP536-2
+# source = CETEMPúblico n=536 sec=soc sem=95a
 # id = 2802
-# d2d = cc(disse-,mas) -> cc(adiantou-,mas)  #106
-# d2d = cc(inadmissível,e) -> cc(tem,e)  #106
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	senhor	senhor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -61,9 +58,9 @@
 8	o	o	PRON	<dem>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	15	nsubj	_	_
 9	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	_	_
 10	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	expl	_	ChangedBy=Issue135
-11	está	estar	AUX	<aux>|<se-passive>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
-12	a	a	ADP	PRP|@PRT-AUX<	_	13	case	_	_
-13	passar	passar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	acl:relcl	_	_
+11	está	estar	VERB	<aux>|<se-passive>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	MWE=está_a|MWEPOS=AUX
+12	a	a	SCONJ	PRP|@PRT-AUX<	_	13	mark	_	_
+13	passar	passar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
 14	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	ChangedBy=Issue167
 15	inadmissível	inadmissível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	5	ccomp	_	_
 16	e	e	CCONJ	<co-fcl>|<co-acc>|KC|@CO	_	20	cc	_	d2d:#106
@@ -72,9 +69,9 @@
 19	população	população	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
 20	tem	ter	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	conj	_	_
 21	razão	razão	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
-22	para	para	ADP	PRP|@N<ARG	_	24	mark	_	_
+22	para	para	SCONJ	PRP|@N<ARG	_	24	mark	_	_
 23	estar	estar	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	24	cop	_	ChangedBy=Issue167
-24	preocupada	preocupado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	21	dep	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+24	preocupada	preocupado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	21	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 26	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	27	cc	_	d2d:#106
 27-28	adiantou-nos	_	_	_	_	_	_	_	_
@@ -82,8 +79,8 @@
 28	nos	nós	PRON	PERS|M/F|1P|DAT|@<DAT	Case=Dat|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	27	iobj	_	_
 29	que	que	SCONJ	KS|@SUB	_	31	mark	_	_
 30	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	ChangedBy=Issue167
-31	convencido	convencido	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	27	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
-32	de	de	ADP	PRP|@<PIV	_	35	mark	_	_
+31	convencido	convencido	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	27	ccomp	_	ChangedBy=Issue141|ChangedBy=Issue91
+32	de	de	SCONJ	PRP|@<PIV	_	35	mark	_	_
 33	que	que	SCONJ	KS|@SUB	_	35	mark	_	_
 34	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	35	expl	_	ChangedBy=Issue135
 35	trata	tratar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	xcomp	_	_
@@ -101,7 +98,7 @@
 46	,	,	PUNCT	PU|@PU	_	42	punct	_	_
 47	cujo	cujo	DET	<rel>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Rel	48	det	_	_
 48	pedido	pedido	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	65	nsubj	_	_
-49	para	para	ADP	PRP|@N<	_	50	mark	_	_
+49	para	para	SCONJ	PRP|@N<	_	50	mark	_	_
 50	suspender	suspender	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	48	acl	_	_
 51	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
 52	laboração	laboração	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	50	obj	_	_
@@ -127,15 +124,15 @@
 69	.	.	PUNCT	PU|@PU	_	42	punct	_	_
 
 # text = O presidente da Câmara, aliás (na linha do que dissera ao PÚBLICO o director regional do Ambiente do Norte, Guedes Marques), afirmou à Lusa que «uma avaria pontual nunca poderá justificar o encerramento de uma estrutura deste tipo [ ETRSU ]».
-# source = CETEMPúblico n=536 sec=soc sem=95a
 # sent_id = CP536-3
+# source = CETEMPúblico n=536 sec=soc sem=95a
 # id = 2803
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	33	nsubj	_	MWE=presidente_da_Câmara
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Câmara	câmara	NOUN	N|@P<	_	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+5	Câmara	câmara	NOUN	N|@P<	Gender=Fem|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 7	aliás	aliás	ADV	<kc>|ADV|@ADVL>	_	33	advmod	_	_
 8	(	(	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -154,15 +151,15 @@
 18	PÚBLICO	Público	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	obj	_	_
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	director	director	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	15	nsubj	_	MWE=director_regional
-21	regional	regional	ADJ	ADJ|@N<	_	20	amod	_	_
+21	regional	regional	ADJ	ADJ|@N<	Gender=Masc|Number=Sing	20	amod	_	_
 22-23	do	_	_	_	_	_	_	_	_
 22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
 23	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	Ambiente	ambiente	NOUN	N|@P<	_	20	nmod	_	_
+24	Ambiente	ambiente	NOUN	N|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
 25-26	do	_	_	_	_	_	_	_	_
 25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
 26	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
-27	Norte	norte	NOUN	N|@P<	_	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+27	Norte	norte	NOUN	N|@P<	Gender=Masc|Number=Sing	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 29	Guedes	Guedes	PROPN	_	Gender=Masc|Number=Sing	20	appos	_	ChangedBy=Issue119|MWE=Guedes_Marques|MWEPOS=PROPN
 30	Marques	Marques	PROPN	_	Number=Sing	29	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -179,8 +176,8 @@
 40	avaria	avaria	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	44	nsubj	_	_
 41	pontual	pontual	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	40	amod	_	_
 42	nunca	nunca	ADV	ADV|@ADVL>	_	44	advmod	_	_
-43	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	44	aux	_	_
-44	justificar	justificar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	33	ccomp	_	_
+43	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	33	ccomp	_	_
+44	justificar	justificar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	43	xcomp	_	_
 45	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_
 46	encerramento	encerramento	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	44	obj	_	_
 47	de	de	ADP	PRP|@N<	_	49	case	_	_

@@ -1,6 +1,6 @@
 # text = Moradora da Mooca, nos últimos cinco anos Regina virou o ano com Hilton, o namorado, no «Recanto da Cachoeira», uma estãncia no município de Socorro (SP).
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-1
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1424
 1	Moradora	moradora	NOUN	<np-idf>|N|F|S|@PRED>	Gender=Fem|Number=Sing	12	obl	_	_
 2-3	da	_	_	_	_	_	_	_	_
@@ -44,13 +44,13 @@
 35	de	de	ADP	PRP|@N<	_	36	case	_	_
 36	Socorro	socorro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	34	nmod	_	_
 37	(	(	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
-38	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+38	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	36	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 39	)	)	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
 40	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Brigada com o namorado, Regina optou por estrear na São Silvestre.
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-2
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1425
 1	Brigada	brigar	VERB	<mv>|V|PCP|F|S|@ICL-PRED>	Gender=Fem|Number=Sing|VerbForm=Part	7	advcl	_	_
 2	com	com	ADP	PRP|@<PIV	_	4	case	_	_
@@ -59,7 +59,7 @@
 5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 6	Regina	Regina	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
 7	optou	optar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-8	por	por	ADP	PRP|@<PIV	_	9	mark	_	_
+8	por	por	SCONJ	PRP|@<PIV	_	9	mark	_	_
 9	estrear	estrear	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	xcomp	_	_
 10-11	na	_	_	_	_	_	_	_	_
 10	em	em	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
@@ -69,10 +69,9 @@
 14	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = « Foi ótimo, você fez um minuto melhor do que o esperado», disse a Medeiros ao cruzar a linha de chegada.
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-3
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1426
-# d2d = punct(ótimo,,) -> punct(fez,,)  #106
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	_
 2	Foi	ser	AUX	<mv>|<first-cjt>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 3	ótimo	bom	ADJ	<SUP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	6	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
@@ -83,10 +82,10 @@
 8	minuto	minuto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
 9	melhor	bom	ADJ	<SUP>|<KOMP>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	8	amod	_	_
 10-11	do	_	_	_	_	_	_	_	_
-10	de	de	ADP	<sam->|PRP|@COM	_	14	case	_	MWE=de_o_que
+10	de	de	SCONJ	<sam->|PRP|@COM	_	14	mark	_	MWE=do_que
 11	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	10	fixed	_	_
 12	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	10	fixed	_	_
-13	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+13	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Art|PronType=Dem	9	obl	_	_
 14	esperado	esperar	VERB	<mv>|<first-cjt>|<n>|V|PCP|M|S|@ICL-KOMP<	Gender=Masc|Number=Sing|VerbForm=Part	9	acl	_	ChangedBy=Issue165|SpaceAfter=No
 15	»	»	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
@@ -104,12 +103,9 @@
 27	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Ganhou um abraço, um beijo no rosto, e foi para a Mooca estourar uma champanhe à meia-noite.
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-4
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1427
-# d2d = punct(abraço,,) -> punct(beijo,,)  #106
-# d2d = cc(Ganhou,e) -> cc(foi,e)  #106
-# d2d = punct(Ganhou,,) -> punct(foi,,)  #106
 1	Ganhou	ganhar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	abraço	abraço	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -136,10 +132,9 @@
 22	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = MEDEIROS TERMINA A PROVA E SE PROMOVE, BOB FERNANDES
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-5
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1428
-# d2d = cc(termina,e) -> cc(promove,e)  #106
 1	MEDEIROS	Medeiros	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	TERMINA	terminar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -152,8 +147,8 @@
 10	FERNANDES	Fernandes	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 
 # text = Sindicalista faz o tempo de 1h41 (Da Reportagem Local)
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-6
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1429
 1	Sindicalista	sindicalista	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	faz	fazer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -170,8 +165,8 @@
 12	)	)	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = O sindicalista Luiz Antônio de Medeiros correu a São Silvestre em busca de resultados.
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-7
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1430
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	sindicalista	sindicalista	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -190,8 +185,8 @@
 15	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = E chegou lá.
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-8
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1431
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	chegou	chegar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -199,16 +194,14 @@
 4	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Com uma ponte de safena e uma mamária implantadas há um ano e meio, fez o trajeto em 1h41 58 minutos atrás do vencedor.
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-9
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1432
-# d2d = cc(ano,e) -> cc(meio,e)  #106
-# d2d = cc(ponte,e) -> cc(mamária,e)  #106
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	ponte	ponte	NOUN	_	Gender=Fem|Number=Sing	16	obl	_	MWE=ponte_de_safena|MWEPOS=NOUN
 4	de	de	ADP	_	_	3	compound	_	_
-5	safena	safena	NOUN	_	_	3	compound	_	_
+5	safena	safena	NOUN	_	Gender=Fem|Number=Sing	3	compound	_	_
 6	e	e	CCONJ	<co-prparg>|KC|@CO	_	8	cc	_	d2d:#106
 7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	mamária	mamário	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	3	conj	_	_
@@ -234,12 +227,9 @@
 27	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Na chegada do ano em que disputará uma vaga no Senado pelo PP-SP, deu mais de duas dezenas de entrevistas, posou para fotos, e deixou 1993 nas emissoras de rádio e TV.
-# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # sent_id = CF344-10
+# source = CETENFolha n=344 cad=Esporte sec=des sem=94b
 # id = 1433
-# d2d = cc(deu,e) -> cc(deixou,e)  #106
-# d2d = punct(deu,,) -> punct(posou,,)  #106
-# d2d = punct(deu,,) -> punct(deixou,,)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -265,10 +255,10 @@
 19	deu	dar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 20	mais	mais	ADV	ADV|@>N	_	22	advmod	_	MWE=mais_de
 21	de	de	ADP	PRP|@A<	_	20	fixed	_	_
-22	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168|MWE=duas_dezenas
+22	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	19	obj	_	ChangedBy=Issue168|MWE=duas_dezenas
 23	dezenas	dezena	NUM	<np-def>|N|F|P|@<ACC	NumType=Card	22	flat	_	_
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
-25	entrevistas	entrevista	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	19	obj	_	ChangedBy=Issue165|SpaceAfter=No
+25	entrevistas	entrevista	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 27	posou	posar	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	conj	_	_
 28	para	para	ADP	PRP|@<ADVL	_	29	case	_	_

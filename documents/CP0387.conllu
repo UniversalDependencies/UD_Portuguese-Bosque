@@ -1,6 +1,6 @@
 # text = Mas aqui surge outra possibilidade:
-# source = CETEMPúblico n=387 sec=pol sem=94b
 # sent_id = CP387-1
+# source = CETEMPúblico n=387 sec=pol sem=94b
 # id = 2012
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	aqui	aqui	ADV	ADV|@ADVL>	_	3	advmod	_	_
@@ -10,19 +10,15 @@
 6	:	:	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = os cubanos podem simplesmente não acreditar que os Estados Unidos os retenham perpetuamente em Guantanamo, ou que os enviem para outros países, e então a fuga continuará.
-# source = CETEMPúblico n=387 sec=pol sem=94b
 # sent_id = CP387-2
+# source = CETEMPúblico n=387 sec=pol sem=94b
 # id = 2013
-# d2d = cc(acreditar,e) -> cc(continuará,e)  #106
-# d2d = cc(acreditar,ou) -> cc(continuará,ou)  #106
-# d2d = punct(acreditar,,) -> punct(continuará,,)  #106
-# d2d = punct(acreditar,,) -> punct(continuará,,)  #106
 1	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	cubanos	cubano	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
-3	podem	poder	AUX	<first-cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+3	podem	poder	VERB	<first-cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	simplesmente	simplesmente	ADV	ADV|@ADVL>	_	6	advmod	_	_
 5	não	não	ADV	_	Polarity=Neg	6	advmod	_	_
-6	acreditar	acreditar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+6	acreditar	acreditar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 7	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 9	Estados	Estados	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	MWE=Estados_Unidos
@@ -32,7 +28,7 @@
 13	perpetuamente	perpetuamente	ADV	ADV|@<ADVL	_	12	advmod	_	_
 14	em	em	ADP	PRP|@<ADVL	_	15	case	_	_
 15	Guantanamo	Guantanamo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	ou	ou	CCONJ	<co-vfin>|<co-fcl>|KC|@CO	_	29	cc	_	d2d:#106
 18	que	que	SCONJ	KS|@SUB	_	20	mark	_	_
 19	os	eles	PRON	PERS|M|3P|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	obj	_	_
@@ -40,7 +36,7 @@
 21	para	para	ADP	PRP|@<OA	_	23	case	_	_
 22	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	23	det	_	_
 23	países	país	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	obl	_	ChangedBy=Issue165|SpaceAfter=No
-24	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
+24	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 25	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	29	cc	_	d2d:#106
 26	então	então	ADV	<kc>|ADV|@ADVL>	_	29	advmod	_	_
 27	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
@@ -49,8 +45,8 @@
 30	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O estímulo imediato para a mudança de política foi o receio de que a Florida fosse invadida por uma vaga de refugiados -- uma possibilidade que traria sérios perigos políticos.
-# source = CETEMPúblico n=387 sec=pol sem=94b
 # sent_id = CP387-3
+# source = CETEMPúblico n=387 sec=pol sem=94b
 # id = 2014
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	estímulo	estímulo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
@@ -63,7 +59,7 @@
 9	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	cop	_	ChangedBy=Issue167
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	receio	receio	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-12	de	de	ADP	PRP|@N<ARG	_	17	mark	_	_
+12	de	de	SCONJ	PRP|@N<ARG	_	17	mark	_	_
 13	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	Florida	Florida	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj:pass	_	_
@@ -85,8 +81,8 @@
 31	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Perder o controlo das fronteiras dos EUA seria uma desastre para qualquer Presidente;
-# source = CETEMPúblico n=387 sec=pol sem=94b &W
 # sent_id = CP387-4
+# source = CETEMPúblico n=387 sec=pol sem=94b &W
 # id = 2015
 1	Perder	perder	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	12	csubj	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -108,15 +104,15 @@
 16	;	;	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = a incapacidade de Jimmy Carter em conter a vaga de embarcações vindas de Mariel em 1980 contribuiu para a sua derrota a favor de Ronald Reagan.
-# source = CETEMPúblico n=387 sec=pol sem=94b
 # sent_id = CP387-5
+# source = CETEMPúblico n=387 sec=pol sem=94b
 # id = 2016
 1	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	incapacidade	incapacidade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
 4	Jimmy	Jimmy	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue119|MWE=Jimmy_Carter|MWEPOS=PROPN
 5	Carter	Carter	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
-6	em	em	ADP	PRP|@N<	_	7	mark	_	_
+6	em	em	SCONJ	PRP|@N<	_	7	mark	_	_
 7	conter	conter	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	vaga	vaga	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
@@ -133,15 +129,15 @@
 20	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	21	det	_	_
 21	derrota	derrota	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obj	_	_
 22	a	a	ADP	PRP|@N<	_	23	case	_	MWE=a_favor_de
-23	favor	favor	NOUN	N|@P<	_	21	nmod	_	_
+23	favor	favor	NOUN	N|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
 25	Ronald	Ronald	PROPN	_	Gender=Masc|Number=Sing	23	nmod	_	ChangedBy=Issue119|MWE=Ronald_Reagan|MWEPOS=PROPN
 26	Reagan	Reagan	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Clinton, cuja política externa tem uma pobre reputação, ficaria seguramente mais vulnerável às críticas.
-# source = CETEMPúblico n=387 sec=pol sem=94b
 # sent_id = CP387-6
+# source = CETEMPúblico n=387 sec=pol sem=94b
 # id = 2017
 1	Clinton	Clinton	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_

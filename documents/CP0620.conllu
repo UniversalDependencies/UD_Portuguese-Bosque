@@ -1,9 +1,7 @@
 # text = Ramos Lopes, um «histórico» do PSD local, que foi presidente da primeira concelhia e é actualmente director da Fundação Gulbenkian, encabeça uma lista sem nomes sonantes da actual gestão autárquica, que integra, entre administradores de empresas, o escultor Óscar Guimarães e Maria João Vieira, assessora do ex-ministro Diamantino Durão.
-# source = CETEMPúblico n=620 sec=soc sem=92a
 # sent_id = CP620-1
+# source = CETEMPúblico n=620 sec=soc sem=92a
 # id = 3237
-# d2d = cc(escultor,e) -> cc(Maria,e)  #106
-# d2d = cc(presidente,e) -> cc(director,e)  #106
 1	Ramos	Ramos	PROPN	_	Gender=Masc|Number=Sing	29	nsubj	_	ChangedBy=Issue119|MWE=Ramos_Lopes|MWEPOS=PROPN
 2	Lopes	Lopes	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -28,12 +26,12 @@
 20	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	23	cc	_	d2d:#106
 21	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	ChangedBy=Issue167
 22	actualmente	actualmente	ADV	ADV|@<ADVL	_	23	advmod	_	_
-23	director	director	NOUN	N|@<SC	_	15	conj	_	MWE=director_da_Fundação_Gulbenkian
+23	director	director	NOUN	N|@<SC	Gender=Masc|Number=Sing	15	conj	_	MWE=director_da_Fundação_Gulbenkian
 24-25	da	_	_	_	_	_	_	_	_
 24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
 25	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	Fundação	fundação	NOUN	N|@P<	_	23	nmod	_	_
-27	Gulbenkian	gulbenkian	ADJ	ADJ|@N<	_	26	amod	_	ChangedBy=Issue165|SpaceAfter=No
+26	Fundação	fundação	NOUN	N|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
+27	Gulbenkian	gulbenkian	ADJ	ADJ|@N<	Gender=Fem|Number=Sing	26	amod	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 29	encabeça	encabeçar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 30	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
@@ -75,10 +73,9 @@
 64	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 
 # text = O «mailing» eleitoral não deixa margem para dúvidas: «não comprometimento com a prática política seguida a nível local», já que «todas as laranjas são boas ... mas há diferenças!»
-# source = CETEMPúblico n=620 sec=soc sem=92a
 # sent_id = CP620-2
+# source = CETEMPúblico n=620 sec=soc sem=92a
 # id = 3238
-# d2d = cc(boas,mas) -> cc(há,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	mailing	mailing	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -103,7 +100,7 @@
 22	local	local	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	amod	_	ChangedBy=Issue165|SpaceAfter=No
 23	»	»	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	19	punct	_	_
-25	já	já	ADV	ADV|@SUB	_	32	mark	_	MWE=já_que
+25	já	já	SCONJ	ADV|@SUB	_	32	mark	_	MWE=já_que
 26	que	que	SCONJ	KS|@A<	_	25	fixed	_	_
 27	«	«	PUNCT	PU|@PU	_	32	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	30	det	_	MWE=todas_as

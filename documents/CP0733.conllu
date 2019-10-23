@@ -1,11 +1,7 @@
 # text = A cena é tirada de uma página asfixiante de Joseph Conrad: um cadáver em pijama, deitado numa cama com uma manta verde nos pés, dentro de uma pequena cabana de madeira a tresandar a luto, flores e formol, velado pela viúva, pela filha e com uma guarda de honra de cinco jovens soldados Khmer.
-# source = CETEMPúblico n=733 sec=pol sem=98a
 # sent_id = CP733-1
+# source = CETEMPúblico n=733 sec=pol sem=98a
 # id = 3764
-# d2d = cc(luto,e) -> cc(formol,e)  #106
-# d2d = punct(viúva,,) -> punct(filha,,)  #106
-# d2d = cc(velado,e) -> cc(guarda,e)  #106
-# d2d = punct(luto,,) -> punct(flores,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	cena	cena	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj:pass	_	_
 3	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
@@ -44,7 +40,7 @@
 34	cabana	cabana	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	obl	_	_
 35	de	de	ADP	PRP|@N<	_	36	case	_	_
 36	madeira	madeira	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	34	nmod	_	_
-37	a	a	ADP	PRP|@N<	_	38	mark	_	_
+37	a	a	SCONJ	PRP|@N<	_	38	mark	_	_
 38	tresandar	tresandar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	34	acl	_	_
 39	a	a	ADP	PRP|@<ADVL	_	40	case	_	_
 40	luto	luto	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	38	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -77,10 +73,9 @@
 65	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = «Não restam dúvidas que é o corpo dele e que está morto», garantiu um dos jornalistas nesse grupo, o americano Nate Thayer, correspondente da «Far Eastern Economic Review» e o estrangeiro que melhor conheceu a história do fundador dos Khmer Vermelhos.
-# source = CETEMPúblico n=733 sec=pol sem=98a
 # sent_id = CP733-2
+# source = CETEMPúblico n=733 sec=pol sem=98a
 # id = 3765
-# d2d = cc(correspondente,e) -> cc(estrangeiro,e)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	restam	restar	VERB	<mv>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	ccomp	_	_
@@ -144,12 +139,9 @@
 55	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Pol Pot morreu oficialmente com um enfarte cardíaco, quarta-feira à noite, mas é inevitável pensar em causas menos naturais para o seu desaparecimento.
-# source = CETEMPúblico n=733 sec=pol sem=98a
 # sent_id = CP733-3
+# source = CETEMPúblico n=733 sec=pol sem=98a
 # id = 3766
-# d2d = punct(morreu,,) -> punct(inevitável,,)  #106
-# d2d = punct(morreu,,) -> punct(inevitável,,)  #106
-# d2d = cc(morreu,mas) -> cc(inevitável,mas)  #106
 1	Pol	Pol	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Pol_Pot|MWEPOS=PROPN
 2	Pot	Pot	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	morreu	morrer	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -158,13 +150,13 @@
 6	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	enfarte	enfarte	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 8	cardíaco	cardíaco	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
-9	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	quarta-feira	quarta-feira	NOUN	<np-idf>|N|F|S|@<ADVL	Gender=Fem|Number=Sing	3	obl	_	_
 11-12	à	_	_	_	_	_	_	_	_
 11	a	a	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	noite	noite	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-14	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+14	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 15	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 16	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	ChangedBy=Issue167
 17	inevitável	inevitável	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	conj	_	_
@@ -180,11 +172,9 @@
 27	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = As reacções foram cautelosas e os EUA, porque nos maus filmes de terror os mortos-vivos conseguem sempre levantar-se, exigiram uma autópsia.
-# source = CETEMPúblico n=733 sec=pol sem=98a
 # sent_id = CP733-4
+# source = CETEMPúblico n=733 sec=pol sem=98a
 # id = 3767
-# d2d = cc(cautelosas,e) -> cc(exigiram,e)  #106
-# d2d = punct(cautelosas,,) -> punct(exigiram,,)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	reacções	reacção	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
 3	foram	ser	AUX	<first-cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -192,7 +182,7 @@
 5	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	d2d:#106
 6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
 7	EUA	EUA	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	23	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
-8	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
+8	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 9	porque	porque	SCONJ	KS|@SUB	_	18	mark	_	_
 10-11	nos	_	_	_	_	_	_	_	_
 10	em	em	ADP	<sam->|PRP|@ADVL>	_	13	case	_	_

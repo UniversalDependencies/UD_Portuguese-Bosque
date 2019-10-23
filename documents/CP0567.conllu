@@ -1,17 +1,9 @@
 # text = Ao longo de uma obra original em que tem procurado figurar a génese e os momentos mais marcantes da nossa modernidade filosófica e estética, o filósofo Manfred Frank (ainda desconhecido do leitor português, mas já muito traduzido em França e na Itália) serve-se, entre outros, do mito do judeu errante, nestas duas vertentes, para seguir um percurso que, na literatura, conduz da viragem para a Idade Moderna e das primeiras viagens pelo desconhecido até à contemporânea deriva pelos mares da interioridade e à condição niilista deste nosso século, preço da emancipação crítica em relação às promessas de estabilidade da Razão e de uma modernidade que um dia viria a falar com língua bífide, afirmando no discurso científico o que negava no poético.
-# source = CETEMPúblico n=567 sec=clt sem=92a
 # sent_id = CP567-1
+# source = CETEMPúblico n=567 sec=clt sem=92a
 # id = 2949
-# d2d = cc(França,e) -> cc(Itália,e)  #106
-# d2d = cc(deriva,e) -> cc(condição,e)  #106
-# d2d = cc(desconhecido,mas) -> cc(traduzido,mas)  #106
-# d2d = cc(génese,e) -> cc(momentos,e)  #106
-# d2d = cc(emancipação,e) -> cc(modernidade,e)  #106
-# d2d = cc(viragem,e) -> cc(viagens,e)  #106
-# d2d = cc(filosófica,e) -> cc(estética,e)  #106
-# d2d = punct(desconhecido,,) -> punct(traduzido,,)  #106
 1	Ao	ao	ADP	PRP|@ADVL>	_	2	case	_	MWE=Ao_longo_de
-2	longo	longo	NOUN	N|@P<	_	50	obl	_	_
+2	longo	longo	NOUN	N|@P<	Gender=Masc|Number=Sing	50	obl	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
 4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	obra	obra	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
@@ -85,7 +77,7 @@
 66	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	67	nummod	_	ChangedBy=Issue168
 67	vertentes	vertente	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	58	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 68	,	,	PUNCT	PU|@PU	_	67	punct	_	_
-69	para	para	ADP	PRP|@<ADVL	_	70	mark	_	_
+69	para	para	SCONJ	PRP|@<ADVL	_	70	mark	_	_
 70	seguir	seguir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	50	advcl	_	_
 71	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	72	det	_	_
 72	percurso	percurso	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	70	obj	_	_
@@ -148,7 +140,7 @@
 119	emancipação	emancipação	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	116	nmod	_	_
 120	crítica	crítico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	119	amod	_	_
 121	em	em	ADP	<sam->|PRP|@N<	_	122	case	_	MWE=em_relação_a
-122	relação	relação	NOUN	N|@P<	_	119	nmod	_	_
+122	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	119	nmod	_	_
 123-124	às	_	_	_	_	_	_	_	_
 123	a	a	ADP	PRP|@N<	_	125	case	_	_
 124	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	125	det	_	_
@@ -166,9 +158,9 @@
 135	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	140	nsubj	_	_
 136	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	137	nummod	_	ChangedBy=Issue168
 137	dia	dia	NOUN	<np-def>|N|M|S|@ADVL>	Gender=Masc|Number=Sing	140	obl	_	_
-138	viria	vir	AUX	<aux>|V|COND|3S|@FS-N<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	140	aux	_	_
-139	a	a	ADP	PRP|@PRT-AUX<	_	140	case	_	_
-140	falar	falar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	134	acl:relcl	_	_
+138	viria	vir	VERB	<aux>|V|COND|3S|@FS-N<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	134	acl:relcl	_	MWE=viria_a|MWEPOS=AUX
+139	a	a	SCONJ	PRP|@PRT-AUX<	_	140	mark	_	_
+140	falar	falar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	138	xcomp	_	_
 141	com	com	ADP	PRP|@<ADVL	_	142	case	_	_
 142	língua	língua	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	140	obl	_	ChangedBy=Issue137
 143	bífide	bífide	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	142	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -189,21 +181,9 @@
 156	.	.	PUNCT	PU|@PU	_	50	punct	_	_
 
 # text = As duas vertentes -- Aasvero e o Holandês -- cruzam-se e fundem-se a partir do século XVI, com um predomínio, no plano da matéria diegética, da deriva marítima sobre a errância terrestre, desde «Os Lusíadas» e as narrativas de viagens inglesas e holandesas, até ao «Ancient Mariner» de Coleridge, à «Légende des Siècles» de Victor Hugo, ao «Bateau Ivre» de Rimbaud e ao «Navio Fantasma» de Wagner, culminando num episódio-chave da anti-Odisseia que é o «Ulysses» de Joyce: o dos lotófagos (com um antecedente importante no século XIX, o longo poema de Alfred Lord Tennyson «The Lotos-Eaters»), onde Leopold Bloom surge como simbiose do Ulisses «polytropos» (muito viajado e de muitas manhas), do Judeu errante e do marinheiro Sindbad, comendo do fruto do esquecimento que o levará à deriva infinita, para alimentar uma insaciável sede de experiência, sem Itaca que possibilite o reencontro de si.
-# source = CETEMPúblico n=567 sec=clt sem=92a
 # sent_id = CP567-2
+# source = CETEMPúblico n=567 sec=clt sem=92a
 # id = 2950
-# d2d = punct(Os,») -> punct(narrativas,»)  #106
-# d2d = cc(viajado,e) -> cc(manhas,e)  #106
-# d2d = cc(Ancient,e) -> cc(Navio,e)  #106
-# d2d = punct(Ancient,,) -> punct(Bateau,,)  #106
-# d2d = punct(Ancient,») -> punct(Légende,»)  #106
-# d2d = cc(Ulisses,e) -> cc(marinheiro,e)  #106
-# d2d = cc(cruzam-,e) -> cc(fundem-,e)  #106
-# d2d = punct(cruzam-,,) -> punct(culminando,,)  #106
-# d2d = cc(Aasvero,e) -> cc(Holandês,e)  #106
-# d2d = cc(inglesas,e) -> cc(holandesas,e)  #106
-# d2d = punct(Ancient,,) -> punct(Légende,,)  #106
-# d2d = cc(Os,e) -> cc(narrativas,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 2	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168
 3	vertentes	vertente	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	_
@@ -221,13 +201,13 @@
 13	fundem	fundir	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
 14	se	se	PRON	PERS|F|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	13	expl	_	ChangedBy=Issue135
 15	a	a	ADP	<sam->|PRP|@<ADVL	_	16	case	_	MWE=a_partir_de
-16	partir	partir	NOUN	N|@P<	_	10	obl	_	_
+16	partir	partir	VERB	N|@P<	VerbForm=Inf	10	obl	_	_
 17-18	do	_	_	_	_	_	_	_	_
 17	de	de	ADP	PRP|@N<	_	19	case	_	_
 18	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	século	século	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_
 20	XVI	xvi	ADJ	<NUM-ord>|ADJ|M|S|@N<	Gender=Masc|Number=Sing|NumType=Ord	19	amod	_	ChangedBy=Issue165|ChangedBy=Issue172|SpaceAfter=No
-21	,	,	PUNCT	PU|@PU	_	96	punct	_	d2d:#106
+21	,	,	PUNCT	PU|@PU	_	61	punct	_	d2d:#106
 22	com	com	ADP	PRP|@<ADVL	_	24	case	_	_
 23	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	predomínio	predomínio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -318,7 +298,7 @@
 100	de	de	ADP	<sam->|PRP|@N<	_	102	case	_	_
 101	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	102	det	_	_
 102	anti-Odisseia	anti-odisseia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	99	nmod	_	_
-103	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	107	nsubj	_	_
+103	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	107	nsubj	_	_
 104	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	107	cop	_	ChangedBy=Issue167
 105	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	107	det	_	_
 106	«	«	PUNCT	PU|@PU	_	107	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -356,7 +336,7 @@
 136	»	»	PUNCT	PU|@PU	_	134	punct	_	ChangedBy=Issue165|SpaceAfter=No
 137	)	)	PUNCT	PU|@PU	_	119	punct	_	ChangedBy=Issue165|SpaceAfter=No
 138	,	,	PUNCT	PU|@PU	_	128	punct	_	_
-139	onde	onde	ADV	<rel>|ADV|@ADVL>	_	142	advmod	_	_
+139	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	142	obl	_	_
 140	Leopold	Leopold	PROPN	_	Gender=Masc|Number=Sing	142	nsubj	_	ChangedBy=Issue119|MWE=Leopold_Bloom|MWEPOS=PROPN
 141	Bloom	Bloom	PROPN	_	Number=Sing	140	flat:name	_	ChangedBy=Issue119
 142	surge	surgir	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	112	acl:relcl	_	_
@@ -371,7 +351,7 @@
 150	»	»	PUNCT	PU|@PU	_	149	punct	_	_
 151	(	(	PUNCT	PU|@PU	_	153	punct	_	ChangedBy=Issue165|SpaceAfter=No
 152	muito	muito	ADV	<quant>|ADV|@ADVL>	_	153	advmod	_	_
-153	viajado	viajado	ADJ	<first-cjt>|<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing	147	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+153	viajado	viajar	VERB	<first-cjt>|<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	147	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 154	e	e	CCONJ	<co-icl>|<co-postnom>|KC|@CO	_	157	cc	_	d2d:#106
 155	de	de	ADP	<cjt>|PRP|@ICL-N<PRED	_	157	case	_	_
 156	muitas	muito	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	157	det	_	_
@@ -408,7 +388,7 @@
 182	deriva	deriva	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	179	iobj	_	_
 183	infinita	infinito	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	182	amod	_	ChangedBy=Issue165|SpaceAfter=No
 184	,	,	PUNCT	PU|@PU	_	186	punct	_	_
-185	para	para	ADP	PRP|@<ADVL	_	186	mark	_	_
+185	para	para	SCONJ	PRP|@<ADVL	_	186	mark	_	_
 186	alimentar	alimentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	179	advcl	_	_
 187	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	189	det	_	_
 188	insaciável	insaciável	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	189	amod	_	_

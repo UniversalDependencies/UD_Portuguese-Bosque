@@ -1,6 +1,6 @@
 # text = Contudo, as alterações não se ficam por aqui.
-# source = CETEMPúblico n=929 sec=soc sem=98b
 # sent_id = CP929-1
+# source = CETEMPúblico n=929 sec=soc sem=98b
 # id = 4775
 1	Contudo	contudo	ADV	<kc>|ADV|@ADVL>	_	7	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -14,14 +14,10 @@
 10	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Para conseguir que a «originalidade» volte ao local, o arquitecto quer ainda restaurar a chamada Casa do Nuno (onde habitava Nuno, o filho de Camilo) e onde actualmente funciona a sede da junta e o posto médico.
-# source = CETEMPúblico n=929 sec=soc sem=98b
 # sent_id = CP929-2
+# source = CETEMPúblico n=929 sec=soc sem=98b
 # id = 4776
-# d2d = punct(habitava,)) -> punct(funciona,))  #106
-# d2d = punct(habitava,,) -> punct(funciona,,)  #106
-# d2d = cc(sede,e) -> cc(posto,e)  #106
-# d2d = cc(habitava,e) -> cc(funciona,e)  #106
-1	Para	para	ADP	PRP|@ADVL>	_	2	mark	_	_
+1	Para	para	SCONJ	PRP|@ADVL>	_	2	mark	_	_
 2	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	advcl	_	_
 3	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
@@ -47,7 +43,7 @@
 22	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	Nuno	Nuno	PROPN	PROP|@P<	Number=Sing	20	nmod	_	_
 24	(	(	PUNCT	PU|@PU	_	26	punct	_	ChangedBy=Issue165|SpaceAfter=No
-25	onde	onde	ADV	<rel>|ADV|@ADVL>	_	26	advmod	_	_
+25	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	26	obl	_	_
 26	habitava	habitar	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	acl:relcl	_	_
 27	Nuno	Nuno	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	26	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
@@ -55,9 +51,9 @@
 30	filho	filho	NOUN	<np-def>|N|M|S|@APP	Gender=Masc|Number=Sing	27	appos	_	_
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
 32	Camilo	Camilo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-33	)	)	PUNCT	PU|@PU	_	37	punct	_	d2d:#106
+33	)	)	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 34	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	37	cc	_	d2d:#106
-35	onde	onde	ADV	<rel>|ADV|@ADVL>	_	37	advmod	_	_
+35	onde	onde	PRON	<rel>|ADV|@ADVL>	PronType=Rel	37	obl	_	_
 36	actualmente	actualmente	ADV	ADV|@ADVL>	_	37	advmod	_	_
 37	funciona	funcionar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj	_	_
 38	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
@@ -73,21 +69,21 @@
 47	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Apesar da discussão que estas obras estão já a merecer na freguesia, o restauro da igreja paroquial é, sem dúvida, o assunto de que mais se fala.
-# source = CETEMPúblico n=929 sec=soc sem=98b
 # sent_id = CP929-3
+# source = CETEMPúblico n=929 sec=soc sem=98b
 # id = 4777
-1	Apesar	apesar	ADV	ADV|@ADVL>	_	28	advmod	_	MWE=Apesar_de
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	4	case	_	MWE=Apesar_de|MWEPOS=ADP
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	PRP|@A<	_	4	case	_	_
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	discussão	discussão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	_
+4	discussão	discussão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	obl	_	_
 5	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	11	obj	_	_
 6	estas	este	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	7	det	_	_
 7	obras	obra	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	11	nsubj	_	_
-8	estão	estar	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+8	estão	estar	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	MWE=estão_a|MWEPOS=AUX
 9	já	já	ADV	ADV|@ADVL>	_	11	advmod	_	_
-10	a	a	ADP	PRP|@PRT-AUX<	_	11	case	_	_
-11	merecer	merecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	acl:relcl	_	_
+10	a	a	SCONJ	PRP|@PRT-AUX<	_	11	mark	_	_
+11	merecer	merecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
 12-13	na	_	_	_	_	_	_	_	_
 12	em	em	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
 13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
@@ -101,10 +97,10 @@
 20	igreja	igreja	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
 21	paroquial	paroquial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	20	amod	_	_
 22	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	ChangedBy=Issue165|ChangedBy=Issue167|SpaceAfter=No
-23	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+23	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 24	sem	sem	ADP	PRP|@<ADVL	_	25	case	_	_
 25	dúvida	dúvida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	28	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-26	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+26	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	assunto	assunto	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 29	de	de	ADP	PRP|@PIV>	_	30	case	_	_
@@ -115,15 +111,15 @@
 34	.	.	PUNCT	PU|@PU	_	28	punct	_	_
 
 # text = Desde há já alguns anos que chove «a eito» na centenária Igreja de Ceide.
-# source = CETEMPúblico n=929 sec=soc sem=98b
 # sent_id = CP929-4
+# source = CETEMPúblico n=929 sec=soc sem=98b
 # id = 4778
-1	Desde	desde	ADP	PRP|@ADVL>	_	2	mark	_	_
+1	Desde	desde	SCONJ	PRP|@ADVL>	_	2	mark	_	_
 2	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_
 3	já	já	ADV	ADV|@<ADVL	_	2	advmod	_	_
 4	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	5	det	_	_
 5	anos	ano	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
-6	que	que	ADV	<foc>|ADV|@ADVL>	_	7	mark	_	_
+6	que	que	SCONJ	<foc>|ADV|@ADVL>	_	7	mark	_	_
 7	chove	chover	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 9	a	a	ADP	PRP|@<ADVL	_	10	case	_	MWE=a_eito
@@ -139,11 +135,9 @@
 18	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O último Inverno foi já muito difícil de passar e, recordam os paroquianos, que chovia tanto dentro da igreja como cá fora.
-# source = CETEMPúblico n=929 sec=soc sem=98b
 # sent_id = CP929-5
+# source = CETEMPúblico n=929 sec=soc sem=98b
 # id = 4779
-# d2d = cc(difícil,e) -> cc(recordam,e)  #106
-# d2d = punct(difícil,,) -> punct(recordam,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	último	último	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	3	amod	_	ChangedBy=Issue172
 3	Inverno	inverno	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -151,7 +145,7 @@
 5	já	já	ADV	ADV|@<ADVL	_	7	advmod	_	_
 6	muito	muito	ADV	<quant>|ADV|@>A	_	7	advmod	_	_
 7	difícil	difícil	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-8	de	de	ADP	PRP|@A<ARG	_	9	mark	_	_
+8	de	de	SCONJ	PRP|@A<ARG	_	9	mark	_	_
 9	passar	passar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	xcomp	_	_
 10	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	12	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
@@ -173,8 +167,8 @@
 26	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Arquitecto quer manter igreja
-# source = CETEMPúblico n=929 sec=soc sem=98b
 # sent_id = CP929-6
+# source = CETEMPúblico n=929 sec=soc sem=98b
 # id = 4780
 1	Arquitecto	Arquitecto	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -182,15 +176,12 @@
 4	igreja	igreja	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 
 # text = O padre Gabriel Pereira Lopes, pároco da freguesia, queixa-se também do facto da igreja ser muito pequena e por isso, e para além do programado restauro, entrou na Câmara de Famalicão um proposta para a ampliação do templo.
-# source = CETEMPúblico n=929 sec=soc sem=98b
 # sent_id = CP929-7
+# source = CETEMPúblico n=929 sec=soc sem=98b
 # id = 4781
-# d2d = punct(queixa-,,) -> punct(entrou,,)  #106
-# d2d = cc(queixa-,e) -> cc(entrou,e)  #106
-# d2d = punct(queixa-,,) -> punct(entrou,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	padre	padre	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
-3	Gabriel	Gabriel	PROPN	_	Gender=Masc|Number=Sing	2	dep	_	ChangedBy=Issue119|MWE=Gabriel_Pereira_Lopes|MWEPOS=PROPN
+3	Gabriel	Gabriel	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Gabriel_Pereira_Lopes|MWEPOS=PROPN
 4	Pereira	Pereira	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 5	Lopes	Lopes	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
@@ -209,16 +200,16 @@
 16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	facto	facto	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	12	obj	_	_
 18-19	da	_	_	_	_	_	_	_	_
-18	de	de	ADP	<sam->|PRP|@N<ARG	_	23	mark	_	_
+18	de	de	SCONJ	<sam->|PRP|@N<ARG	_	23	mark	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	igreja	igreja	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	23	nsubj	_	_
 21	ser	ser	AUX	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	23	cop	_	ChangedBy=Issue167
 22	muito	muito	ADV	<quant>|ADV|@>A	_	23	advmod	_	_
-23	pequena	pequeno	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	17	amod	_	_
+23	pequena	pequeno	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	17	acl	_	_
 24	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	36	cc	_	d2d:#106
 25	por	por	ADP	<first-cjt>|PRP|@ADVL>	_	26	case	_	_
 26	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	36	obl	_	ChangedBy=Issue165|SpaceAfter=No
-27	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+27	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
 28	e	e	CCONJ	<co-advl>|KC|@CO	_	30	cc	_	_
 29	para	para	ADP	<cjt>|<sam->|PRP|@ADVL>	_	30	case	_	MWE=para_além_de
 30	além	além	ADV	ADV|@P<	_	26	conj	_	_
@@ -227,7 +218,7 @@
 32	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 33	programado	programar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	34	acl	_	_
 34	restauro	restauro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	30	obl	_	ChangedBy=Issue165|SpaceAfter=No
-35	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+35	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
 36	entrou	entrar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	conj	_	_
 37-38	na	_	_	_	_	_	_	_	_
 37	em	em	ADP	<sam->|PRP|@<SA	_	39	case	_	_
@@ -247,8 +238,8 @@
 50	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = A Comissão de Obras da Igreja de Ceide quer alargar o edifício de uma forma que não terá agradado a Siza Vieira.
-# source = CETEMPúblico n=929 sec=soc sem=98b
 # sent_id = CP929-8
+# source = CETEMPúblico n=929 sec=soc sem=98b
 # id = 4782
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Comissão	Comissão	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	MWE=Comissão_de_Obras_da_Igreja_de_Ceide
@@ -277,19 +268,18 @@
 24	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = O arquitecto esteve já, por várias vezes, no local e terá manifestado a sua oposição à modificação da estrutura da igreja, defendendo antes a manutenção do actual edifício.
-# source = CETEMPúblico n=929 sec=soc sem=98b
 # sent_id = CP929-9
+# source = CETEMPúblico n=929 sec=soc sem=98b
 # id = 4783
-# d2d = cc(local,e) -> cc(manifestado,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	arquitecto	arquitecto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 3	esteve	estar	AUX	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	cop	_	ChangedBy=Issue167
 4	já	já	ADV	ADV|@<ADVL	_	12	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-5	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 6	por	por	ADP	PRP|@<ADVL	_	8	case	_	_
 7	várias	várias	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	8	det	_	_
 8	vezes	vez	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-9	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 10-11	no	_	_	_	_	_	_	_	_
 10	em	em	ADP	<sam->|PRP|@<SA	_	12	case	_	_
 11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_

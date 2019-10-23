@@ -1,6 +1,6 @@
 # text = «Se for uma greve só por grevismo, daí prejudica a quem é favorável a isso.
-# source = CETENFolha n=952 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF952-1
+# source = CETENFolha n=952 cad=Caderno Especial sec=nd sem=94a
 # id = 4030
 1	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Se	se	SCONJ	KS|@SUB	_	5	mark	_	_
@@ -18,19 +18,19 @@
 13	a	a	ADP	PRP|@<ACC	_	14	case	_	_
 14	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	16	nsubj	_	_
 15	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	ChangedBy=Issue167
-16	favorável	favorável	ADJ	ADJ|M/F|S|@<SC	Gender=Unsp|Number=Sing	12	dep	_	_
+16	favorável	favorável	ADJ	ADJ|M/F|S|@<SC	Gender=Unsp|Number=Sing	12	ccomp	_	_
 17	a	a	ADP	PRP|@A<	_	18	case	_	_
 18	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	16	obl	_	ChangedBy=Issue165|SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Aí, poderia afetar o Lula, não a mim», disse FHC.
-# source = CETENFolha n=952 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF952-2
+# source = CETENFolha n=952 cad=Caderno Especial sec=nd sem=94a
 # id = 4031
 1	Aí	aí	ADV	<kc>|ADV|@ADVL>	_	4	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-3	poderia	poder	AUX	<aux>|V|COND|3S|@FS-ACC>	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	4	aux	_	_
-4	afetar	afetar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	parataxis	_	_
+3	poderia	poder	VERB	<aux>|V|COND|3S|@FS-ACC>	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	13	parataxis	_	_
+4	afetar	afetar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Lula	Lula	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	10	punct	_	_
@@ -44,8 +44,8 @@
 15	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = O candidato tucano a presidente deu essa declaração ontem à tarde, depois de discursar para cerca de 550 empresários na hora do almoço (leia texto nesta página).
-# source = CETENFolha n=952 cad=Caderno Especial sec=nd sem=94a &D
 # sent_id = CF952-3
+# source = CETENFolha n=952 cad=Caderno Especial sec=nd sem=94a &D
 # id = 4032
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	candidato	candidato	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
@@ -61,12 +61,12 @@
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	tarde	tarde	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-14	depois	depois	ADV	ADV|@<ADVL	_	6	advmod	_	_
-15	de	de	ADP	PRP|@A<ARG	_	16	mark	_	_
-16	discursar	discursar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	14	advcl	_	_
+14	depois	depois	ADV	ADV|@<ADVL	_	16	mark	_	MWE=depois_de|MWEPOS=SCONJ
+15	de	de	ADP	PRP|@A<ARG	_	14	fixed	_	_
+16	discursar	discursar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
 17	para	para	ADP	PRP|@<ADVL	_	21	case	_	_
-18	cerca	cerca	ADV	ADV|@>N	_	21	advmod	_	MWE=cerca_de
-19	de	de	ADP	<prp>|PRP|@A<	_	18	case	_	_
+18	cerca	cerca	ADV	ADV|@>N	_	21	advmod	_	MWE=cerca_de|MWEPOS=ADV
+19	de	de	ADP	<prp>|PRP|@A<	_	18	fixed	_	_
 20	550	550	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	ChangedBy=Issue168
 21	empresários	empresário	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	obl	_	ChangedBy=Issue137
 22-23	na	_	_	_	_	_	_	_	_

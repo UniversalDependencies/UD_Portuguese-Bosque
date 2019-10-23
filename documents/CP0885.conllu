@@ -1,6 +1,6 @@
 # text = «Já perdemos algumas cartas altas, ainda assim, temos algumas figurinhas», desabafou ao PÚBLICO um dirigente nacional do PP para justificar o silêncio dos «notáveis».
-# source = CETEMPúblico n=885 sec=pol sem=96b
 # sent_id = CP885-1
+# source = CETEMPúblico n=885 sec=pol sem=96b
 # id = 4545
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Já	já	ADV	ADV|@ADVL>	_	3	advmod	_	_
@@ -9,8 +9,8 @@
 5	cartas	carta	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	3	obj	_	_
 6	altas	alto	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	ainda	ainda	ADV	ADV|@>A	_	9	advmod	_	MWE=ainda_assim
-9	assim	assim	ADV	ADV|@ADVL>	_	11	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+8	ainda	ainda	ADV	ADV|@>A	_	11	cc	_	MWE=ainda_assim|MWEPOS=CCONJ
+9	assim	assim	ADV	ADV|@ADVL>	_	8	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 11	temos	ter	VERB	<mv>|V|PR|1P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	advcl	_	_
 12	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	13	det	_	_
@@ -29,7 +29,7 @@
 23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
 24	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	PP	PP	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
-26	para	para	ADP	PRP|@<ADVL	_	27	mark	_	_
+26	para	para	SCONJ	PRP|@<ADVL	_	27	mark	_	_
 27	justificar	justificar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	advcl	_	_
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	silêncio	silêncio	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	27	obj	_	_
@@ -42,11 +42,9 @@
 35	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = «Fernandes Thomaz, Luís Queiró e Celeste Cardona são as personalidades que restam», enumerou, para depois concluir que Monteiro não pode esquecer isso, caso decida recandidatar-se.
-# source = CETEMPúblico n=885 sec=pol sem=96b
 # sent_id = CP885-2
+# source = CETEMPúblico n=885 sec=pol sem=96b
 # id = 4546
-# d2d = cc(Fernandes,e) -> cc(Celeste,e)  #106
-# d2d = punct(Fernandes,,) -> punct(Luís,,)  #106
 1	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Fernandes	Fernandes	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue119|MWE=Fernandes_Thomaz|MWEPOS=PROPN
 3	Thomaz	Thomaz	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -65,14 +63,14 @@
 16	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 17	enumerou	enumerar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-19	para	para	ADP	PRP|@<ADVL	_	21	mark	_	_
+19	para	para	SCONJ	PRP|@<ADVL	_	21	mark	_	_
 20	depois	depois	ADV	ADV|@ADVL>	_	21	advmod	_	_
 21	concluir	concluir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	advcl	_	_
 22	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
 23	Monteiro	Monteiro	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	26	nsubj	_	_
 24	não	não	ADV	_	Polarity=Neg	26	advmod	_	_
-25	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	aux	_	_
-26	esquecer	esquecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	ccomp	_	_
+25	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	ccomp	_	_
+26	esquecer	esquecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	xcomp	_	_
 27	isso	isso	PRON	<dem>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Dem	26	obj	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 29	caso	caso	SCONJ	KS|@SUB	_	30	mark	_	_
@@ -83,15 +81,15 @@
 33	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Com Cervan
-# source = CETEMPúblico n=885 sec=pol sem=96b
 # sent_id = CP885-3
+# source = CETEMPúblico n=885 sec=pol sem=96b
 # id = 4547
 1	Com	com	ADP	PRP|@UTT	_	2	case	_	_
 2	Cervan	Cervan	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	0	root	_	_
 
 # text = A moção da distrital do Porto, «A casa comum da direita», também procura congregar um maior número de apoiantes.
-# source = CETEMPúblico n=885 sec=pol sem=96b
 # sent_id = CP885-4
+# source = CETEMPúblico n=885 sec=pol sem=96b
 # id = 4548
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	moção	moção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
@@ -125,12 +123,9 @@
 27	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Sílvio Cervan conseguiu a adesão do presidente da distrital de Aveiro, Sá Correia, próximo de Paulo Portas, e da concelhia de Vila Nova de Famalicão, uma estrutura do distrito de Braga, de António Pedras.
-# source = CETEMPúblico n=885 sec=pol sem=96b
 # sent_id = CP885-5
+# source = CETEMPúblico n=885 sec=pol sem=96b
 # id = 4549
-# d2d = cc(presidente,e) -> cc(concelhia,e)  #106
-# d2d = punct(presidente,,) -> punct(concelhia,,)  #106
-# d2d = punct(presidente,,) -> punct(concelhia,,)  #106
 1	Sílvio	Sílvio	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Sílvio_Cervan|MWEPOS=PROPN
 2	Cervan	Cervan	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	conseguiu	conseguir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -143,18 +138,18 @@
 9-10	da	_	_	_	_	_	_	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	distrital	distrital	NOUN	N|@P<	_	8	nmod	_	_
+11	distrital	distrital	ADJ	N|@P<	Number=Sing	8	nmod	_	_
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
-13	Aveiro	aveiro	NOUN	N|@P<	_	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+13	Aveiro	aveiro	NOUN	N|@P<	Gender=Unsp|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 15	Sá	Sá	PROPN	_	Gender=Masc|Number=Sing	8	appos	_	ChangedBy=Issue119|MWE=Sá_Correia|MWEPOS=PROPN
 16	Correia	Correia	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-17	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	próximo	próximo	ADV	ADV|@N<PRED	_	15	advmod	_	MWE=próximo_de
 19	de	de	ADP	PRP|@A<	_	20	case	_	_
 20	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	18	obl	_	ChangedBy=Issue119|MWE=Paulo_Portas|MWEPOS=PROPN
 21	Portas	Portas	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-22	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
+22	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 23	e	e	CCONJ	<co-postnom>|KC|@CO	_	26	cc	_	d2d:#106
 24-25	da	_	_	_	_	_	_	_	_
 24	de	de	ADP	<cjt>|<sam->|PRP|@N<	_	26	case	_	_

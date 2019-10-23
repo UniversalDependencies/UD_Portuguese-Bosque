@@ -1,15 +1,14 @@
 # text = Tal cobertura, assistemática e voltada para buscar escândalos, leva-os, também, a trabalhar sobre fatos consumados.
-# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF270-1
+# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # id = 1133
-# d2d = cc(assistemática,e) -> cc(voltada,e)  #106
 1	Tal	tal	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	2	det	_	_
 2	cobertura	cobertura	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 4	assistemática	assistemática	NOUN	<first-cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	2	appos	_	_
 5	e	e	CCONJ	KC|@CO	_	6	cc	_	d2d:#106
 6	voltada	voltar	VERB	<mv>|<cjt>|V|PCP|F|S|@N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	4	conj	_	_
-7	para	para	ADP	PRP|@<SA	_	8	mark	_	_
+7	para	para	SCONJ	PRP|@<SA	_	8	mark	_	_
 8	buscar	buscar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
 9	escândalos	escândalo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	8	obj	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
@@ -19,7 +18,7 @@
 13	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 14	também	também	ADV	ADV|@<ADVL	_	11	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-16	a	a	ADP	PRP|@<PIV	_	17	mark	_	_
+16	a	a	SCONJ	PRP|@<PIV	_	17	mark	_	_
 17	trabalhar	trabalhar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	xcomp	_	_
 18	sobre	sobre	ADP	PRP|@<ADVL	_	19	case	_	_
 19	fatos	fato	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	obl	_	ChangedBy=Issue137
@@ -27,11 +26,9 @@
 21	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Não estamos concluindo que este comportamento é intencional, mas sim que há uma forte predisposição cultural (preconceito) em criticar o Legislativo antes mesmo de conhecer tudo que cerca algumas decisões.
-# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a &E
 # sent_id = CF270-2
+# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a &E
 # id = 1134
-# d2d = punct(intencional,,) -> punct(há,,)  #106
-# d2d = cc(intencional,mas) -> cc(há,mas)  #106
 1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 2	estamos	estar	AUX	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	_
 3	concluindo	concluir	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
@@ -52,14 +49,14 @@
 18	(	(	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 19	preconceito	preconceito	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	16	appos	_	ChangedBy=Issue165|SpaceAfter=No
 20	)	)	PUNCT	PU|@PU	_	19	punct	_	_
-21	em	em	ADP	PRP|@<ADVL	_	22	mark	_	_
+21	em	em	SCONJ	PRP|@<ADVL	_	22	mark	_	_
 22	criticar	criticar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	advcl	_	_
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	Legislativo	legislativo	PROPN	<prop>|<Eg>|<n>|<np-def>|ADJ|M|S|@<ACC	Gender=Masc|Number=Sing	22	obj	_	_
-25	antes	antes	ADV	ADV|@<ADVL	_	22	advmod	_	_
+24	Legislativo	Legislativo	PROPN	<prop>|<Eg>|<n>|<np-def>|ADJ|M|S|@<ACC	Gender=Masc|Number=Sing	22	obj	_	_
+25	antes	antes	SCONJ	ADV|@<ADVL	_	28	mark	_	_
 26	mesmo	mesmo	ADV	<quant>|ADV|@>A	_	28	advmod	_	_
-27	de	de	ADP	PRP|@A<ARG	_	28	mark	_	_
-28	conhecer	conhecer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	25	advcl	_	_
+27	de	de	SCONJ	PRP|@A<ARG	_	28	mark	_	_
+28	conhecer	conhecer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	_
 29	tudo	tudo	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	28	obj	_	_
 30	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	31	nsubj	_	_
 31	cerca	cercar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	acl:relcl	_	_
@@ -68,11 +65,9 @@
 34	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Os agentes políticos, sociais e econômicos também têm de se reciclar, pois sua ação sobre o Legislativo paulistano só ocorre em função de interesses específicos.
-# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF270-3
+# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # id = 1135
-# d2d = punct(políticos,,) -> punct(sociais,,)  #106
-# d2d = cc(políticos,e) -> cc(econômicos,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	agentes	agente	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
 3	políticos	político	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -81,10 +76,10 @@
 6	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	d2d:#106
 7	econômicos	econômico	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	3	conj	_	_
 8	também	também	ADV	ADV|@ADVL>	_	12	advmod	_	_
-9	têm	ter	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-10	de	de	ADP	PRP|@PRT-AUX<	_	12	case	_	_
+9	têm	ter	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=têm_de|MWEPOS=AUX
+10	de	de	SCONJ	PRP|@PRT-AUX<	_	12	mark	_	_
 11	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	expl	_	ChangedBy=Issue135
-12	reciclar	reciclar	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+12	reciclar	reciclar	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 14	pois	pois	SCONJ	KS|@SUB	_	22	mark	_	_
 15	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	16	det	_	_
@@ -96,18 +91,16 @@
 21	só	só	ADV	ADV|@ADVL>	_	22	advmod	_	_
 22	ocorre	ocorrer	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
 23	em	em	ADP	PRP|@<ADVL	_	24	case	_	MWE=em_função_de
-24	função	função	NOUN	N|@P<	_	22	obl	_	_
+24	função	função	NOUN	N|@P<	Gender=Fem|Number=Sing	22	obl	_	_
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
 26	interesses	interesse	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	24	nmod	_	_
 27	específicos	específico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	26	amod	_	ChangedBy=Issue165|SpaceAfter=No
 28	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Que a democracia contemporânea é fortemente corporativa o sabemos, mas esperamos que não continue a ser tão cheia de particularismos!
-# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF270-4
+# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # id = 1136
-# d2d = cc(sabemos,mas) -> cc(esperamos,mas)  #106
-# d2d = punct(sabemos,,) -> punct(esperamos,,)  #106
 1	Que	que	SCONJ	KS|@SUB	_	7	mark	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	democracia	democracia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -122,24 +115,24 @@
 12	esperamos	esperar	VERB	<cjt>|<mv>|V|PR|1P|IND|@FS-EXC	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	conj	_	_
 13	que	que	SCONJ	KS|@SUB	_	19	mark	_	_
 14	não	não	ADV	_	Polarity=Neg	19	advmod	_	_
-15	continue	continuar	AUX	<aux>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
-16	a	a	ADP	PRP|@PRT-AUX<	_	19	case	_	_
+15	continue	continuar	VERB	<aux>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	xcomp	_	MWE=continue_a|MWEPOS=AUX
+16	a	a	SCONJ	PRP|@PRT-AUX<	_	19	mark	_	_
 17	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	19	cop	_	ChangedBy=Issue167
 18	tão	tão	ADV	<dem>|<quant>|ADV|@>A	_	19	advmod	_	_
-19	cheia	cheio	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	12	dep	_	_
+19	cheia	cheio	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	15	xcomp	_	_
 20	de	de	ADP	PRP|@A<	_	21	case	_	_
 21	particularismos	particularismo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	19	obl	_	ChangedBy=Issue165|SpaceAfter=No
 22	!	!	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = RUI TAVARES MALUF, 35, mestre em ciências políticas pela Unicamp (Universidade Estadual de Campinas), é analista da Superintendência de Experiências Metropolitanas Internacionais da Emplasa (Empresa de Planejamento Metropolitano da Grande São Paulo).
-# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF270-5
+# source = CETENFolha n=270 cad=Cotidiano sec=soc sem=94a
 # id = 1137
 1	RUI	RUI	PROPN	_	Gender=Masc|Number=Sing	22	nsubj	_	ChangedBy=Issue119|MWE=RUI_TAVARES_MALUF|MWEPOS=PROPN
 2	TAVARES	TAVARES	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	MALUF	MALUF	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-5	35	35	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+5	35	35	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7	mestre	mestre	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
 8	em	em	ADP	PRP|@N<	_	9	case	_	_

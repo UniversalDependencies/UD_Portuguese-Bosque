@@ -1,8 +1,7 @@
 # text = O aparecimento de filtros e de certo tipo de tabaco mais suave em cigarros, destinados a evitar os cancros das vias respiratórias, estão a multiplicar os casos de uma certa forma de cancro do pulmão, adianta um estudo realizado pela Sociedade Americana de Cancro (ACS).
-# source = CETEMPúblico n=703 sec=clt sem=97b
 # sent_id = CP703-1
+# source = CETEMPúblico n=703 sec=clt sem=97b
 # id = 3612
-# d2d = cc(filtros,e) -> cc(tipo,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	aparecimento	aparecimento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	28	nsubj	_	_
 3	de	de	ADP	<first-cjt>|PRP|@N<	_	4	case	_	_
@@ -19,7 +18,7 @@
 14	cigarros	cigarro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 16	destinados	destinar	VERB	<first-cjt>|<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	4	acl	_	_
-17	a	a	ADP	<first-cjt>|PRP|@<PIV	_	18	mark	_	_
+17	a	a	SCONJ	<first-cjt>|PRP|@<PIV	_	18	mark	_	_
 18	evitar	evitar	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	xcomp	_	_
 19	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
 20	cancros	cancro	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	18	obj	_	_
@@ -29,9 +28,9 @@
 23	vias	via	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	20	nmod	_	_
 24	respiratórias	respiratório	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	23	amod	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	18	punct	_	_
-26	estão	estar	AUX	<aux>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	aux	_	_
-27	a	a	ADP	PRP|@PRT-AUX<	_	28	case	_	_
-28	multiplicar	multiplicar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	41	ccomp	_	_
+26	estão	estar	VERB	<aux>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	41	ccomp	_	MWE=estão_a|MWEPOS=AUX
+27	a	a	SCONJ	PRP|@PRT-AUX<	_	28	mark	_	_
+28	multiplicar	multiplicar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	26	xcomp	_	_
 29	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
 30	casos	caso	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	28	obj	_	_
 31	de	de	ADP	PRP|@N<	_	34	case	_	_
@@ -62,11 +61,9 @@
 54	.	.	PUNCT	PU|@PU	_	41	punct	_	_
 
 # text = Até aos anos 50, o fumo do tabaco usado nos cigarros era extremamente irritante e, em consequência disso, era difícil inalá-lo profundamente.
-# source = CETEMPúblico n=703 sec=clt sem=97b
 # sent_id = CP703-2
+# source = CETEMPúblico n=703 sec=clt sem=97b
 # id = 3613
-# d2d = punct(irritante,,) -> punct(difícil,,)  #106
-# d2d = cc(irritante,e) -> cc(difícil,e)  #106
 1	Até	até	ADP	PRP|@ADVL>	_	4	case	_	_
 2-3	aos	_	_	_	_	_	_	_	_
 2	a	a	ADP	<sam->|PRP|@P<	_	4	case	_	_
@@ -89,7 +86,7 @@
 17	extremamente	extremamente	ADV	<quant>|ADV|@>A	_	18	advmod	_	_
 18	irritante	irritante	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 19	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	27	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-20	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+20	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 21	em	em	ADP	PRP|@ADVL>	_	22	case	_	_
 22	consequência	consequência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	obl	_	_
 23-24	disso	_	_	_	_	_	_	_	ChangedBy=Issue165|SpaceAfter=No
@@ -105,14 +102,9 @@
 31	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = A maior parte dos fumadores realizava, assim, apenas uma inalação parcial e a maior parte do fumo ficava-se pelas vias respiratórias superiores e depositava-se na garganta e na boca.
-# source = CETEMPúblico n=703 sec=clt sem=97b
 # sent_id = CP703-3
+# source = CETEMPúblico n=703 sec=clt sem=97b
 # id = 3614
-# d2d = cc(ficava-,e) -> cc(depositava-,e)  #106
-# d2d = cc(realizava,e) -> cc(ficava-,e)  #106
-# d2d = punct(realizava,,) -> punct(ficava-,,)  #106
-# d2d = cc(garganta,e) -> cc(boca,e)  #106
-# d2d = punct(realizava,,) -> punct(ficava-,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	parte	parte	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -121,9 +113,9 @@
 5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
 6	fumadores	fumador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
 7	realizava	realizar	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
-8	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	assim	assim	ADV	<kc>|ADV|@<ADVL	_	7	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-10	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+10	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 11	apenas	apenas	ADV	<rel>|ADV|@>A	_	12	advmod	_	_
 12	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	inalação	inalação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
@@ -161,13 +153,12 @@
 39	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Era aí que se fixava a maior parte das substâncias cancerígenas e a maior parte dos cancros dos fumadores surgiam nestas regiões.
-# source = CETEMPúblico n=703 sec=clt sem=97b
 # sent_id = CP703-4
+# source = CETEMPúblico n=703 sec=clt sem=97b
 # id = 3615
-# d2d = cc(fixava,e) -> cc(surgiam,e)  #106
 1	Era	era	ADV	<foc>|ADV|@ADVL>	_	5	advmod	_	_
 2	aí	aí	ADV	<kc>|ADV|@ADVL>	_	5	advmod	_	_
-3	que	que	ADV	<foc>|ADV|@ADVL>	_	5	mark	_	_
+3	que	que	SCONJ	<foc>|ADV|@ADVL>	_	5	mark	_	_
 4	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	expl	_	ChangedBy=Issue135
 5	fixava	fixar	VERB	<first-cjt>|<mv>|<se-passive>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
@@ -198,12 +189,11 @@
 27	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Foi quando apareceram os filtros e os tabacos mais suaves que os fumadores começaram a inspirar o fumo mais profundamente, levando-o mesmo até aos alvéolos pulmonares, permitindo a criação de depósitos de substâncias cancerígenas nas vias mais finas, na periferia dos pulmões -- o que deu origem ao desenvolvimento de uma forma de cancro chamada adenocarcinoma.
-# source = CETEMPúblico n=703 sec=clt sem=97b
 # sent_id = CP703-5
+# source = CETEMPúblico n=703 sec=clt sem=97b
 # id = 3616
-# d2d = cc(filtros,e) -> cc(tabacos,e)  #106
-1	Foi	foi	ADV	<foc>|ADV|@ADVL>	_	16	mark	_	_
-2	quando	quando	ADV	<rel>|ADV|@ADVL>	_	3	advmod	_	_
+1	Foi	foi	SCONJ	<foc>|ADV|@ADVL>	_	16	mark	_	_
+2	quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	3	mark	_	_
 3	apareceram	aparecer	VERB	<mv>|V|PS|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	advcl	_	_
 4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
 5	filtros	filtro	NOUN	<first-cjt>|<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	3	nsubj	_	_
@@ -212,12 +202,12 @@
 8	tabacos	tabaco	NOUN	<cjt>|<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	5	conj	_	_
 9	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	10	advmod	_	_
 10	suaves	suave	ADJ	<COMP>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	8	amod	_	_
-11	que	que	ADV	<foc>|ADV|@ADVL>	_	16	mark	_	_
+11	que	que	SCONJ	<foc>|ADV|@ADVL>	_	16	mark	_	_
 12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	fumadores	fumador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj	_	_
-14	começaram	começar	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	16	aux	_	_
-15	a	a	ADP	PRP|@PRT-AUX<	_	16	case	_	_
-16	inspirar	inspirar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+14	começaram	começar	VERB	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=começaram_a|MWEPOS=AUX
+15	a	a	SCONJ	PRP|@PRT-AUX<	_	16	mark	_	_
+16	inspirar	inspirar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	fumo	fumo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	_
 19	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	20	advmod	_	_
@@ -259,7 +249,7 @@
 50	pulmões	pulmão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	47	nmod	_	_
 51	--	--	PUNCT	PU|@PU	_	31	punct	_	_
 52	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	16	appos	_	_
-53	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	54	nsubj	_	_
+53	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	54	nsubj	_	_
 54	deu	dar	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	52	acl:relcl	_	_
 55	origem	origem	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	54	obj	_	_
 56-57	ao	_	_	_	_	_	_	_	_

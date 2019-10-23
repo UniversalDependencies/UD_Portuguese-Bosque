@@ -1,6 +1,6 @@
 # text = Nenhum filme brasileiro foi escolhido, quebrando assim a expectativa criada em torno de «Alma Corsária» de Carlos Reichenbach e «Mil e Uma» de Suzana de Moraes.
-# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF230-1
+# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # id = 988
 1	Nenhum	nenhum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Neg	2	det	_	_
 2	filme	filme	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
@@ -14,7 +14,7 @@
 10	expectativa	expectativa	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
 11	criada	criar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	10	acl	_	_
 12	em	em	ADP	PRP|@<ADVL	_	16	case	_	MWE=em_torno_de
-13	torno	torno	NOUN	N|@P<	_	12	fixed	_	_
+13	torno	torno	NOUN	N|@P<	Gender=Masc|Number=Sing	12	fixed	_	_
 14	de	de	ADP	PRP|@N<	_	12	fixed	_	_
 15	«	«	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	Alma	Alma	PROPN	_	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue119|MWE=Alma_Corsária|MWEPOS=PROPN
@@ -26,7 +26,7 @@
 22	e	e	CCONJ	<co-prparg>|KC|@CO	_	24	cc	_	_
 23	«	«	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
 24	Mil	Mil	PROPN	_	Gender=Masc|Number=Sing	16	conj	_	ChangedBy=Issue119|MWE=Mil_e_Uma|MWEPOS=PROPN
-25	e	e	CCONJ	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
+25	e	e	CCONJ	_	_	24	flat:name	_	ChangedBy=Issue119
 26	Uma	Uma	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 27	»	»	PUNCT	PU|@PU	_	24	punct	_	_
 28	de	de	ADP	<cjt>|PRP|@N<PRED	_	29	case	_	_
@@ -36,8 +36,8 @@
 32	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O Brasil está assim fora das seleções de Cannes-94.
-# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF230-2
+# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # id = 989
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Brasil	Brasil	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -53,8 +53,8 @@
 11	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Tampouco nenhum filme latino-americano passou pelo crivo da «Quinzena dos Realizadores».
-# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF230-3
+# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # id = 990
 1	Tampouco	tampouco	ADV	ADV|@ADVL>	_	5	advmod	_	_
 2	nenhum	nenhum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Neg	3	det	_	_
@@ -78,11 +78,11 @@
 17	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Ainda assim, é expressiva a presença nas outras seções do festival.
-# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF230-4
+# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # id = 991
-1	Ainda	ainda	ADV	ADV|@>A	_	2	advmod	_	MWE=Ainda_assim
-2	assim	assim	ADV	ADV|@ADVL>	_	5	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+1	Ainda	ainda	ADV	ADV|@>A	_	5	cc	_	MWE=Ainda_assim|MWEPOS=CCONJ
+2	assim	assim	ADV	ADV|@ADVL>	_	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
 5	expressiva	expressivo	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
@@ -100,8 +100,8 @@
 15	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Na competição estará o mexicano «La Reina de La Noche» de Arturo Ripstein.
-# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF230-5
+# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # id = 992
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -123,8 +123,8 @@
 17	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = A paralela «Um Certo Olhar» selecionou «Los Naufragos» do chileno Miguel Littin e «Sin Compassion» do peruano Francisco Lombardi.
-# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF230-6
+# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # id = 993
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 2	paralela	paralelo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	4	amod	_	_
@@ -158,8 +158,8 @@
 28	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Os demais títulos selecionados pela «Quinzena» são:
-# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF230-7
+# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b
 # id = 994
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	demais	demais	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
@@ -175,8 +175,8 @@
 11	:	:	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = «Adeus America» de Jan Schutte, «O Casamento de Muriel» de P.J. Hogan, «71 Fragmentos da Cronologia de Um Acaso», de Michael Haneke, «Fresh» de Boaz Yakin, «Venus de Neve» de Sotiris Gortisas, «Costas às Costas , Cara a Cara» de Huang Jianxin, «Rainha Bandida» de Shekkar Kapur, «Sem Pele» de Alessandro d'Allatri, «Wrony» de Dorota Kedzierzawska, «Três Palmeiras» de João Botelho, «Katia Ismailova» de Valeri Todorovski, «Os Silêncios do Palácio» de Moufida Tiati e o filme coletivo «Homem, Deus e Monstro».
-# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b &L
 # sent_id = CF230-8
+# source = CETENFolha n=230 cad=Ilustrada sec=nd sem=94b &L
 # id = 995
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Adeus	Adeus	PROPN	_	Gender=Masc|Number=Sing	0	root	_	MWEPOS=PROPN
@@ -187,7 +187,7 @@
 7	Schutte	Schutte	PROPN	_	Number=Sing	6	flat:name	_	SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 9	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
-10	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	2	conj	_	MWEPOS=PROPN
+10	O	O	PROPN	_	Gender=Masc|Number=Sing|PronType=Art	2	conj	_	MWEPOS=PROPN
 11	Casamento	Casamento	PROPN	_	Number=Sing	10	flat:name	_	_
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	Muriel	Muriel	PROPN	PROP|@P<	Number=Sing	10	nmod	_	SpaceAfter=No
@@ -301,7 +301,7 @@
 118	«	«	PUNCT	PU|@PU	_	119	punct	_	ChangedBy=Issue165|SpaceAfter=No
 119	Homem,	Homem,	PROPN	_	Gender=Masc|Number=Sing	116	appos	_	MWEPOS=PROPN
 120	Deus	Deus	PROPN	_	Number=Sing	119	flat:name	_	ChangedBy=Issue119
-121	e	e	CCONJ	_	Number=Sing	119	flat:name	_	ChangedBy=Issue119
+121	e	e	CCONJ	_	_	119	flat:name	_	ChangedBy=Issue119
 122	Monstro	Monstro	PROPN	_	Number=Sing	119	flat:name	_	SpaceAfter=No
 123	»	»	PUNCT	PU|@PU	_	119	punct	_	ChangedBy=Issue165|SpaceAfter=No
 124	.	.	PUNCT	PU|@PU	_	2	punct	_	_

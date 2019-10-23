@@ -1,6 +1,6 @@
 # text = Outro aspecto que suscita preocupação é «o uso, por vezes indiscriminado, de antibióticos».
-# source = CETEMPúblico n=785 sec=soc sem=97a
 # sent_id = CP785-1
+# source = CETEMPúblico n=785 sec=soc sem=97a
 # id = 4032
 1	Outro	outro	DET	<diff>|<KOMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_
 2	aspecto	aspecto	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
@@ -22,10 +22,9 @@
 18	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Entre as resistências a estes fármacos provocadas por este tipo de actuação -- por parte dos profissionais e da população --, inclui-se, como «um dos exemplos mais graves», a ineficácia dos medicamentos contra a tuberculose, doença cuja incidência continua a deixar Portugal muito mal colocado no panorama europeu.
-# source = CETEMPúblico n=785 sec=soc sem=97a
 # sent_id = CP785-2
+# source = CETEMPúblico n=785 sec=soc sem=97a
 # id = 4033
-# d2d = cc(profissionais,e) -> cc(população,e)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	3	case	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	resistências	resistência	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	25	obl	_	ChangedBy=Issue137
@@ -40,7 +39,7 @@
 12	actuação	actuação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
 13	--	--	PUNCT	PU|@PU	_	15	punct	_	_
 14	por	por	ADP	<first-cjt>|<sam->|PRP|@N<	_	15	case	_	MWE=por_parte_de
-15	parte	parte	NOUN	N|@P<	_	12	nmod	_	_
+15	parte	parte	NOUN	N|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 16-17	dos	_	_	_	_	_	_	_	_
 16	de	de	ADP	PRP|@N<	_	18	case	_	_
 17	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
@@ -80,11 +79,11 @@
 47	doença	doença	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	45	appos	_	_
 48	cuja	cujo	DET	<rel>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Rel	49	det	_	_
 49	incidência	incidência	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	52	nsubj	_	_
-50	continua	continuar	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	52	aux	_	_
-51	a	a	ADP	PRP|@PRT-AUX<	_	52	case	_	_
-52	deixar	deixar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	47	acl:relcl	_	_
+50	continua	continuar	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	47	acl:relcl	_	MWE=continua_a|MWEPOS=AUX
+51	a	a	SCONJ	PRP|@PRT-AUX<	_	52	mark	_	_
+52	deixar	deixar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	50	xcomp	_	_
 53	Portugal	Portugal	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	52	obj	_	_
-54	muito	muito	ADV	<quant>|DET|M|S|@>A	Gender=Masc|Number=Sing|PronType=Ind	55	advmod	_	_
+54	muito	muito	ADV	<quant>|DET|M|S|@>A	_	55	advmod	_	_
 55	mal	mal	ADV	ADV|@ADVL>	_	56	advmod	_	_
 56	colocado	colocado	ADJ	<mv>|V|PCP|M|S|@ICL-<OC	Gender=Masc|Number=Sing	52	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue91
 57-58	no	_	_	_	_	_	_	_	_
@@ -95,21 +94,16 @@
 61	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
 # text = A emergência da sida, à qual está associada uma série de infecções oportunistas, o problema da hepatite C (recentemente identificada e ainda sem cura nem tratamento) e o recrudescimento da papeira (mais de onze mil notificações durante o ano passado) constituem outras das facetas mais negativas da situação portuguesa em matéria de doenças transmissíveis.
-# source = CETEMPúblico n=785 sec=soc sem=97a
 # sent_id = CP785-3
+# source = CETEMPúblico n=785 sec=soc sem=97a
 # id = 4034
-# d2d = cc(cura,nem) -> cc(tratamento,nem)  #106
-# d2d = cc(emergência,e) -> cc(recrudescimento,e)  #106
-# d2d = cc(identificada,e) -> cc(cura,e)  #106
-# d2d = punct(emergência,,) -> punct(problema,,)  #106
-# d2d = punct(emergência,,) -> punct(problema,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	emergência	emergência	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	51	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	sida	sida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-6	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
+6	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 7-8	à	_	_	_	_	_	_	_	_
 7	a	a	ADP	<sam->|PRP|@ADVL>	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
@@ -121,14 +115,14 @@
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	infecções	infecção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	13	nmod	_	_
 16	oportunistas	oportunista	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	15	amod	_	ChangedBy=Issue165|SpaceAfter=No
-17	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
+17	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	problema	problema	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	conj	_	_
 20-21	da	_	_	_	_	_	_	_	_
 20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	hepatite	hepatite	NOUN	N|@>N	_	19	nmod	_	MWE=hepatite_C
-23	C	c	NOUN	N|@P<	_	22	fixed	_	_
+22	hepatite	hepatite	NOUN	N|@>N	Gender=Fem|Number=Sing	19	nmod	_	MWE=hepatite_C
+23	C	c	NOUN	N|@P<	Gender=Masc|Number=Sing	22	fixed	_	_
 24	(	(	PUNCT	PU|@PU	_	26	punct	_	ChangedBy=Issue165|SpaceAfter=No
 25	recentemente	recentemente	ADV	ADV|@ADVL>	_	26	advmod	_	_
 26	identificada	identificar	VERB	<first-cjt>|<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	22	acl	_	_

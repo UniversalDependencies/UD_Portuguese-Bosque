@@ -1,12 +1,9 @@
 # text = Concebidos para funcionarem como instrumentos privilegiados dos gestores de sistemas de informação, estes Compaq Proliant viram reforçados os seus dispositivos de segurança e prevenção de quebras no sistema -- reforço esse numa perspectiva de centralização física deste tipo de equipamentos, sustentadores de redes cada vez mais complexas resultantes das evoluções de «downsizing» e «rightsizing» a que muitos sistemas de informação estiveram ou virão a estar sujeitos.
-# source = CETEMPúblico n=987 sec=nd sem=94b
 # sent_id = CP987-1
+# source = CETEMPúblico n=987 sec=nd sem=94b
 # id = 5070
-# d2d = cc(segurança,e) -> cc(prevenção,e)  #106
-# d2d = punct(downsizing,») -> punct(rightsizing,»)  #106
-# d2d = cc(downsizing,e) -> cc(rightsizing,e)  #106
 1	Concebidos	conceber	VERB	<mv>|V|PCP|M|P|@ICL-PRED>	Gender=Masc|Number=Plur|VerbForm=Part	16	acl	_	_
-2	para	para	ADP	PRP|@<ADVL	_	3	mark	_	_
+2	para	para	SCONJ	PRP|@<ADVL	_	3	mark	_	_
 3	funcionarem	funcionar	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	1	advcl	_	_
 4	como	como	ADP	<prd>|PRP|@<ADVL	_	5	case	_	_
 5	instrumentos	instrumento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue137
@@ -60,7 +57,7 @@
 49	redes	rede	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	47	nmod	_	_
 50	cada	cada	PRON	N|M|S|@>A	Gender=Masc|Number=Sing	53	nmod	_	MWE=cada_vez_mais
 51	vez	vez	NOUN	PRP|@N<	_	50	fixed	_	_
-52	mais	muito	ADV	N|M|S|@P<	Gender=Masc|Number=Sing	50	fixed	_	_
+52	mais	mais	ADV	N|M|S|@P<	_	50	fixed	_	_
 53	complexas	complexo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	49	amod	_	_
 54	resultantes	resultante	ADJ	ADJ|F|P|@N<PRED	Gender=Fem|Number=Plur	49	amod	_	_
 55-56	das	_	_	_	_	_	_	_	_
@@ -76,25 +73,23 @@
 64	rightsizing	rightsizing	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	60	conj	_	ChangedBy=Issue165|SpaceAfter=No
 65	»	»	PUNCT	PU|@PU	_	64	punct	_	_
 66	a	a	ADP	PRP|@PIV>	_	67	case	_	_
-67	que	que	PRON	<rel>|INDP|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	77	obl	_	_
+67	que	que	PRON	<rel>|INDP|M|P|@P<	Gender=Fem|Number=Plur|PronType=Rel	77	obl	_	_
 68	muitos	muito	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	69	det	_	_
 69	sistemas	sistema	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	57	nsubj	_	_
 70	de	de	ADP	PRP|@N<	_	71	case	_	_
 71	informação	informação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	69	nmod	_	_
 72	estiveram	estar	AUX	<first-cjt>|V|PS|3P|IND|@>N	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	77	cop	_	_
 73	ou	ou	CCONJ	<co-vfin>|KC|@CO	_	76	cc	_	_
-74	virão	vir	AUX	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	76	aux	_	_
-75	a	a	ADP	PRP|@PRT-AUX<	_	76	case	_	_
-76	estar	estar	AUX	<mv>|<cjt>|V|INF|@FS-N<	VerbForm=Inf	72	conj	_	ChangedBy=Issue167
+74	virão	vir	VERB	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	72	conj	_	MWE=virão_a|MWEPOS=AUX
+75	a	a	SCONJ	PRP|@PRT-AUX<	_	76	mark	_	_
+76	estar	estar	AUX	<mv>|<cjt>|V|INF|@FS-N<	VerbForm=Inf	74	xcomp	_	ChangedBy=Issue167
 77	sujeitos	sujeito	ADJ	<np-idf>|N|M|P|@<SC	Gender=Masc|Number=Plur	57	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 78	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Estes sistemas exigem um acompanhamento e controlo permanentes (as 24 horas de cada um dos dias da semana), pelo que a sua centralização num único espaço permite racionalizar e conter os custos da sua gestão.
-# source = CETEMPúblico n=987 sec=nd sem=94b
 # sent_id = CP987-2
+# source = CETEMPúblico n=987 sec=nd sem=94b
 # id = 5071
-# d2d = cc(racionalizar,e) -> cc(conter,e)  #106
-# d2d = cc(acompanhamento,e) -> cc(controlo,e)  #106
 1	Estes	este	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_
 2	sistemas	sistema	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	exigem	exigir	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -109,7 +104,7 @@
 12	horas	hora	NOUN	<np-def>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	5	appos	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	cada	cada	DET	_	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=Cada_um
-15	um	um	NUM	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	fixed	_	ChangedBy=Issue119
+15	um	um	NUM	_	NumType=Card	14	fixed	_	ChangedBy=Issue119
 16-17	dos	_	_	_	_	_	_	_	_
 16	de	de	ADP	<sam->|PRP|@A<	_	18	case	_	_
 17	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
@@ -121,7 +116,7 @@
 22	)	)	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 24-25	pelo	_	_	_	_	_	_	_	_
-24	por	por	ADP	<sam->|PRP|@ADVL>	_	34	mark	_	MWE=por_o_que
+24	por	por	SCONJ	<sam->|PRP|@ADVL>	_	34	mark	_	MWE=por_o_que
 25	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	24	fixed	_	_
 26	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	24	fixed	_	_
 27	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
@@ -146,11 +141,9 @@
 44	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Dos dispositivos de segurança e prevenção faz, evidentemente, parte o Insight Manager, aplicação de gestão já conhecida das linhas anteriores de servidores mas agora na sua versão 2.3.
-# source = CETEMPúblico n=987 sec=nd sem=94b
 # sent_id = CP987-3
+# source = CETEMPúblico n=987 sec=nd sem=94b
 # id = 5072
-# d2d = cc(conhecida,mas) -> cc(versão,mas)  #106
-# d2d = cc(segurança,e) -> cc(prevenção,e)  #106
 1-2	Dos	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@N<	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_

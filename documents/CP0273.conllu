@@ -1,23 +1,22 @@
 # text = Japão e EUA negoceiam
-# source = CETEMPúblico n=273 sec=eco sem=94b
 # sent_id = CP273-1
+# source = CETEMPúblico n=273 sec=eco sem=94b
 # id = 1450
-# d2d = cc(Japão,e) -> cc(EUA,e)  #106
 1	Japão	Japão	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	EUA	EUA	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	1	conj	_	ChangedBy=Issue149
 4	negoceiam	negociar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 
 # text = O Japão quer continuar a negociar com os EUA tendo em vista resolver o diferendo comercial que opõe os dois países, apesar da ameaça norte-americana de aplicação de sanções, caso as autoridades nípónicas não abram os seus mercados públicos num prazo de 60 dias.
-# source = CETEMPúblico n=273 sec=eco sem=94b
 # sent_id = CP273-2
+# source = CETEMPúblico n=273 sec=eco sem=94b
 # id = 1451
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Japão	Japão	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	continuar	continuar	AUX	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
-6	negociar	negociar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
+4	continuar	continuar	VERB	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	3	xcomp	_	MWE=continuar_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
+6	negociar	negociar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	com	com	ADP	PRP|@<PIV	_	9	case	_	_
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	EUA	EUA	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	6	obj	_	_
@@ -34,11 +33,11 @@
 20	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	ChangedBy=Issue168
 21	países	país	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	18	obj	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	18	punct	_	_
-23	apesar	apesar	ADV	ADV|@<ADVL	_	13	advmod	_	MWE=apesar_de
+23	apesar	apesar	ADV	ADV|@<ADVL	_	26	case	_	MWE=apesar_de|MWEPOS=ADP
 24-25	da	_	_	_	_	_	_	_	_
-24	de	de	ADP	PRP|@A<	_	26	case	_	_
+24	de	de	ADP	PRP|@A<	_	23	fixed	_	_
 25	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	26	det	_	_
-26	ameaça	ameaça	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	_
+26	ameaça	ameaça	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
 27	norte-americana	norte-americano	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	26	amod	_	_
 28	de	de	ADP	PRP|@N<ARG	_	29	case	_	_
 29	aplicação	aplicação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	_
@@ -65,21 +64,15 @@
 49	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O ministro das Finanças de Tóquio, Masayoshi Takemura, afirmou lamentar a atitude de Washington, mas adiantou que o Japão continuará a tentar ultrapassar as diferenças entre as duas partes, em cada um dos sectores em negociação: automóvel, seguros e mercados públicos nas áreas das telecomunicações, equipamento médico, computadores e satélites.
-# source = CETEMPúblico n=273 sec=eco sem=94b
 # sent_id = CP273-3
+# source = CETEMPúblico n=273 sec=eco sem=94b
 # id = 1452
-# d2d = cc(automóvel,e) -> cc(mercados,e)  #106
-# d2d = cc(telecomunicações,e) -> cc(satélites,e)  #106
-# d2d = punct(telecomunicações,,) -> punct(equipamento,,)  #106
-# d2d = punct(afirmou,,) -> punct(adiantou,,)  #106
-# d2d = punct(telecomunicações,,) -> punct(computadores,,)  #106
-# d2d = cc(afirmou,mas) -> cc(adiantou,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ministro	ministro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	MWE=ministro_das_Finanças
 3-4	das	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
-5	Finanças	finanças	NOUN	N|@P<	_	2	nmod	_	_
+5	Finanças	finanças	NOUN	N|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	Tóquio	Tóquio	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
@@ -98,9 +91,9 @@
 21	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	Japão	Japão	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	26	nsubj	_	_
-24	continuará	continuar	AUX	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	26	aux	_	_
-25	a	a	ADP	PRP|@PRT-AUX<	_	26	case	_	_
-26	tentar	tentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	ccomp	_	_
+24	continuará	continuar	VERB	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	ccomp	_	MWE=continuará_a|MWEPOS=AUX
+25	a	a	SCONJ	PRP|@PRT-AUX<	_	26	mark	_	_
+26	tentar	tentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	24	xcomp	_	_
 27	ultrapassar	ultrapassar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	26	xcomp	_	_
 28	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_
 29	diferenças	diferença	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	27	obj	_	_
@@ -110,8 +103,8 @@
 33	partes	parte	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	29	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	36	punct	_	_
 35	em	em	ADP	PRP|@N<PRED	_	36	case	_	_
-36	cada	cada	PROPN	_	Gender=Masc|Number=Sing	27	obl	_	ChangedBy=Issue119|MWE=Cada_um
-37	um	um	PROPN	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	fixed	_	ChangedBy=Issue119
+36	cada	cada	DET	_	Gender=Masc|Number=Sing	27	obl	_	ChangedBy=Issue119|MWE=Cada_um
+37	um	um	NUM	_	NumType=Card	36	fixed	_	ChangedBy=Issue119
 38-39	dos	_	_	_	_	_	_	_	_
 38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
 39	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_
@@ -143,8 +136,8 @@
 63	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O ultimato para a abertura dos mercados públicos nipónicos foi imposto por Washington no último fim-de-semana, depois do fracasso das conversações bilaterais.
-# source = CETEMPúblico n=273 sec=eco sem=94b
 # sent_id = CP273-4
+# source = CETEMPúblico n=273 sec=eco sem=94b
 # id = 1453
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ultimato	ultimato	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj:pass	_	_
@@ -180,8 +173,8 @@
 28	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Mandela teme fuga de investidores
-# source = CETEMPúblico n=273 sec=eco sem=94b
 # sent_id = CP273-5
+# source = CETEMPúblico n=273 sec=eco sem=94b
 # id = 1454
 1	Mandela	Mandela	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	teme	temer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_

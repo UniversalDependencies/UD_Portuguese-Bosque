@@ -1,6 +1,6 @@
 # text = A comissão reagiu, pela segunda vez em poucos meses, aos anúncios da empresa:
-# source = CETEMPúblico n=911 sec=soc sem=95b
 # sent_id = CP911-1
+# source = CETEMPúblico n=911 sec=soc sem=95b
 # id = 4695
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	comissão	comissão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
@@ -26,16 +26,16 @@
 19	:	:	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «O público não deve ser desinformado por esta campanha publicitária», disse o comissário para os Assuntos Sociais, Padraig Flynn.
-# source = CETEMPúblico n=911 sec=soc sem=95b
 # sent_id = CP911-2
+# source = CETEMPúblico n=911 sec=soc sem=95b
 # id = 4696
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	público	público	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj:pass	_	_
 4	não	não	ADV	_	Polarity=Neg	7	advmod	_	_
-5	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+5	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	parataxis	_	_
 6	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	7	aux:pass	_	_
-7	desinformado	desinformar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	parataxis	_	_
+7	desinformado	desinformar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	xcomp	_	_
 8	por	por	ADP	PRP|@PASS	_	10	case	_	_
 9	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	10	det	_	_
 10	campanha	campanha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl:agent	_	_
@@ -55,10 +55,9 @@
 24	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = «Os direitos dos fumadores e dos não fumadores não são iguais:
-# source = CETEMPúblico n=911 sec=soc sem=95b
 # sent_id = CP911-3
+# source = CETEMPúblico n=911 sec=soc sem=95b
 # id = 4697
-# d2d = cc(fumadores,e) -> cc(fumadores,e)  #106
 1	«	«	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	direitos	direito	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	14	nsubj	_	_
@@ -78,21 +77,21 @@
 15	:	:	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = os não fumadores devem ter prioridade».
-# source = CETEMPúblico n=911 sec=soc sem=95b
 # sent_id = CP911-4
+# source = CETEMPúblico n=911 sec=soc sem=95b
 # id = 4698
 1	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	não	não	ADV	ADV|@>N	Polarity=Neg	3	advmod	_	ChangedBy=Issue108
 3	fumadores	fumador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
-4	devem	dever	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-5	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+4	devem	dever	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 6	prioridade	prioridade	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	»	»	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 8	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Estas declarações surgem a poucos dias de, mais uma vez, o Conselho de Ministros da Saúde da União, discutir uma proposta que visa banir completamente a publicidade ao tabaco.
-# source = CETEMPúblico n=911 sec=soc sem=95b
 # sent_id = CP911-5
+# source = CETEMPúblico n=911 sec=soc sem=95b
 # id = 4699
 1	Estas	este	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	2	det	_	_
 2	declarações	declaração	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
@@ -100,7 +99,7 @@
 4	a	a	ADP	PRP|@<ADVL	_	6	case	_	_
 5	poucos	pouco	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	6	det	_	_
 6	dias	dia	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	obl	_	ChangedBy=Issue137
-7	de	de	ADP	PRP|@N<	_	24	mark	_	ChangedBy=Issue165|SpaceAfter=No
+7	de	de	SCONJ	PRP|@N<	_	24	mark	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 9	mais	mais	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	24	obl	_	MWE=mais_uma_vez
 10	uma	uma	ADP	PRP|@N<	_	11	case	_	_
@@ -135,12 +134,9 @@
 36	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Em Portugal e na Itália esta publicidade já não é possível, mas em vários outros países da Europa ainda persiste, embora com restrições diversas.
-# source = CETEMPúblico n=911 sec=soc sem=95b
 # sent_id = CP911-6
+# source = CETEMPúblico n=911 sec=soc sem=95b
 # id = 4700
-# d2d = cc(possível,mas) -> cc(persiste,mas)  #106
-# d2d = punct(possível,,) -> punct(persiste,,)  #106
-# d2d = cc(Portugal,e) -> cc(Itália,e)  #106
 1	Em	em	ADP	<first-cjt>|PRP|@ADVL>	_	2	case	_	_
 2	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	_
 3	e	e	CCONJ	<co-advl>|KC|@CO	_	6	cc	_	d2d:#106
@@ -150,8 +146,8 @@
 6	Itália	Itália	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	conj	_	ChangedBy=Issue149
 7	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	8	det	_	_
 8	publicidade	publicidade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
-9	já	já	ADP	_	_	12	advmod	_	MWE=já_não|MWEPOS=ADV
-10	não	não	ADV	_	Gender=Masc|Number=Sing|Polarity=Neg	9	fixed	_	_
+9	já	já	ADV	_	_	12	advmod	_	_
+10	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
 11	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	ChangedBy=Issue167
 12	possível	possível	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
@@ -174,10 +170,9 @@
 29	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = As propostas abolicionistas têm encontrado a oposição de «lobbys» tabagistas gregos e espanhóis.
-# source = CETEMPúblico n=911 sec=soc sem=95b
 # sent_id = CP911-7
+# source = CETEMPúblico n=911 sec=soc sem=95b
 # id = 4701
-# d2d = cc(gregos,e) -> cc(espanhóis,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	propostas	proposta	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj	_	_
 3	abolicionistas	abolicionista	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	2	amod	_	_

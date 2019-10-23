@@ -1,6 +1,6 @@
 # text = Esta é a simplicidade que mata, quando mal traduzida em simploriedade.
-# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF409-1
+# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # id = 1701
 1	Esta	este	PRON	<dem>|DET|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	_	_
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -17,13 +17,9 @@
 13	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Mas Michael Tilson Thomas, regendo tudo com uma segurança natural e nenhuma pompa, parece o regente por excelência desse nosso tempo, que ao menos na música é um tempo de refinamento e inteligência, além de comunicação.
-# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF409-2
+# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # id = 1702
-# d2d = punct(refinamento,,) -> punct(comunicação,,)  #106
-# d2d = cc(refinamento,e) -> cc(inteligência,e)  #106
-# d2d = cc(refinamento,além) -> cc(comunicação,além)  #106
-# d2d = cc(segurança,e) -> cc(pompa,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	16	cc	_	_
 2	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	16	nsubj	_	ChangedBy=Issue119|MWE=Michael_Tilson_Thomas|MWEPOS=PROPN
 3	Tilson	Tilson	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -43,7 +39,7 @@
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	regente	regente	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	16	xcomp	_	_
 19	por	por	ADP	PRP|@N<	_	20	case	_	MWE=por_excelência
-20	excelência	excelência	NOUN	N|@P<	_	18	nmod	_	_
+20	excelência	excelência	NOUN	N|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
 21-22	desse	_	_	_	_	_	_	_	_
 21	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
 22	esse	esse	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	24	det	_	_
@@ -73,11 +69,9 @@
 44	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Simpático, fluente (com as palavras também), à vontade no papel de regente jovem (embora beirando os 50 anos), não há um nome melhor para dirigir a New World Symphony, uma orquestra de bolsistas.
-# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a &D
 # sent_id = CF409-3
+# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a &D
 # id = 1703
-# d2d = punct(Simpático,,) -> punct(fluente,,)  #106
-# d2d = punct(Simpático,,) -> punct(vontade,,)  #106
 1	Simpático	simpático	ADJ	<first-cjt>|ADJ|M|S|@PRED>	Gender=Masc|Number=Sing	29	amod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	d2d:#106
 3	fluente	fluente	ADJ	<cjt>|ADJ|M|S|@PRED>	Gender=Masc|Number=Sing	1	conj	_	_
@@ -112,7 +106,7 @@
 30	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	nome	nome	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	29	obj	_	_
 32	melhor	bom	ADJ	<SUP>|<KOMP>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	31	amod	_	_
-33	para	para	ADP	PRP|@<ADVL	_	34	mark	_	_
+33	para	para	SCONJ	PRP|@<ADVL	_	34	mark	_	_
 34	dirigir	dirigir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	advcl	_	_
 35	a	a	ADP	PRP|@<PIV	_	36	case	_	_
 36	New	New	PROPN	_	Gender=Fem|Number=Sing	34	obl	_	ChangedBy=Issue119|MWE=New_World_Symphony|MWEPOS=PROPN
@@ -126,8 +120,8 @@
 44	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 
 # text = Nem simples, nem muito menos beethoveniano é o «Concerto para Violino» de Tchaikovski.
-# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF409-4
+# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # id = 1704
 1	Nem	nem	CCONJ	<parkc-1>|KC|@CO	_	2	cc	_	_
 2	simples	simples	ADJ	<first-cjt>|ADJ|M|S|@SC>	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
@@ -148,8 +142,8 @@
 17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = É uma obra infelizmente popular.
-# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF409-5
+# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # id = 1705
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -159,14 +153,12 @@
 6	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Está longe de ser o melhor de Tchaikovski, mas o diabolismo da parte solista não deixa nunca de impressionar.
-# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF409-6
+# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # id = 1706
-# d2d = cc(longe,mas) -> cc(deixa,mas)  #106
-# d2d = punct(longe,,) -> punct(deixa,,)  #106
 1	Está	estar	AUX	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	longe	longe	ADV	ADV|@<SA	_	0	root	_	_
-3	de	de	ADP	PRP|@A<ARG	_	6	mark	_	_
+3	de	de	SCONJ	PRP|@A<ARG	_	6	mark	_	_
 4	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	cop	_	ChangedBy=Issue167
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	melhor	bom	ADJ	<KOMP>|<SUP>|<n>|<np-def>|<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	2	amod	_	_
@@ -184,16 +176,14 @@
 17	não	não	ADV	_	Polarity=Neg	18	advmod	_	_
 18	deixa	deixar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 19	nunca	nunca	ADV	ADV|@<ADVL	_	18	advmod	_	_
-20	de	de	ADP	PRP|@<PIV	_	21	mark	_	_
+20	de	de	SCONJ	PRP|@<PIV	_	21	mark	_	_
 21	impressionar	impressionar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	18	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 22	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Diabolismo não falta ao solista Robert McDuffie: é um violinista de mil dedos, afinadíssimo e sem medo da música.
-# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF409-7
+# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # id = 1707
-# d2d = cc(dedos,e) -> cc(medo,e)  #106
-# d2d = punct(dedos,,) -> punct(afinadíssimo,,)  #106
 1	Diabolismo	diabolismo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	falta	faltar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -222,11 +212,9 @@
 24	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Mas toca também com certa brutalidade, impaciência ou agressividade com a música.
-# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF409-8
+# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # id = 1708
-# d2d = cc(brutalidade,ou) -> cc(agressividade,ou)  #106
-# d2d = punct(brutalidade,,) -> punct(impaciência,,)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	2	cc	_	_
 2	toca	tocar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	também	também	ADV	ADV|@<ADVL	_	2	advmod	_	_
@@ -243,8 +231,8 @@
 14	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = É um músico atlético, no limite extremo da escola americana de interpretação.
-# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF409-9
+# source = CETENFolha n=409 cad=Ilustrada sec=nd sem=94a
 # id = 1709
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_

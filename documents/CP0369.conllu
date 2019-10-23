@@ -1,9 +1,9 @@
 # text = No entanto, após esta corrida ao dólar durante a primeira metade da semana, o mercado optou por uma posição mais defensiva que provocou um ligeiro recuo do dólar face à generalidade das restantes divisas.
-# source = CETEMPúblico n=369 sec=eco sem=94a
 # sent_id = CP369-1
+# source = CETEMPúblico n=369 sec=eco sem=94a
 # id = 1933
-1	No	no	ADP	PRP|@ADVL>	_	2	case	_	MWE=No_entanto
-2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	No	no	ADP	PRP|@ADVL>	_	20	cc	_	MWE=No_entanto|MWEPOS=CCONJ
+2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	após	após	ADP	PRP|@ADVL>	_	6	case	_	_
 5	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
@@ -51,15 +51,9 @@
 42	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Os factores que contribuíram fortemente para este movimento de correcção foram, por um lado, os receios de intervenções por parte da Reserva Federal travando a rápida apreciação da paridade dólar / iene e, por outro lado, o facto de o Bundesbank ter deixado uma vez mais as taxas de desconto e lombarda inalteradas respectivamente nos 5.75 por cento . e 6.75 por cento.
-# source = CETEMPúblico n=369 sec=eco sem=94a
 # sent_id = CP369-2
+# source = CETEMPúblico n=369 sec=eco sem=94a
 # id = 1934
-# d2d = cc(desconto,e) -> cc(lombarda,e)  #106
-# d2d = punct(receios,,) -> punct(facto,,)  #106
-# d2d = cc(por,e) -> cc(por,e)  #106
-# d2d = cc(receios,e) -> cc(facto,e)  #106
-# d2d = punct(receios,/) -> punct(facto,/)  #106
-# d2d = punct(receios,,) -> punct(facto,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	factores	factor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	18	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	4	nsubj	_	_
@@ -71,17 +65,17 @@
 9	de	de	ADP	PRP|@N<ARG	_	10	case	_	_
 10	correcção	correcção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 11	foram	ser	AUX	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	cop	_	ChangedBy=Issue165|ChangedBy=Issue167|SpaceAfter=No
-12	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 13	por	por	ADP	PRP|@>N	_	15	case	_	MWE=por_um_lado
 14	um	um	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 17	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
 18	receios	receio	NOUN	<first-cjt>|<np-def>|N|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	intervenções	intervenção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
 21	por	por	ADP	<sam->|PRP|@N<	_	22	case	_	MWE=por_parte_de
-22	parte	parte	NOUN	N|@P<	_	20	nmod	_	_
+22	parte	parte	NOUN	N|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
 23-24	da	_	_	_	_	_	_	_	_
 23	de	de	ADP	PRP|@N<	_	25	case	_	_
 24	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
@@ -99,14 +93,14 @@
 35	/	/	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
 36	iene	iene	NOUN	<cjt>|<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	34	conj	_	_
 37	e	e	CCONJ	<co-sc>|KC|@CO	_	44	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-38	,	,	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
-39	por	por	ADP	PRP|@>N	_	41	case	_	MWE=por_outro_lado
-40	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	41	det	_	_
-41	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	44	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-42	,	,	PUNCT	PU|@PU	_	44	punct	_	d2d:#106
+38	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+39	por	por	ADP	PRP|@>N	_	44	cc	_	MWE=por_outro_lado|MWEPOS=CCONJ
+40	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	39	fixed	_	_
+41	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	39	fixed	_	ChangedBy=Issue165|SpaceAfter=No
+42	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
 43	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	facto	facto	NOUN	<cjt>|<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	18	conj	_	_
-45	de	de	ADP	PRP|@N<ARG	_	49	mark	_	_
+45	de	de	SCONJ	PRP|@N<ARG	_	49	mark	_	_
 46	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 47	Bundesbank	Bundesbank	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	49	nsubj	_	_
 48	ter	ter	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	49	aux	_	_
@@ -126,18 +120,18 @@
 61	em	em	ADP	<sam->|PRP|@<ADVL	_	64	case	_	_
 62	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	64	det	_	_
 63	5.75	5.75	NUM	<card>|NUM|M|P|@>N	NumType=Card	64	nummod	_	ChangedBy=Issue168
-64	por	por	ADP	_	Gender=Masc|Number=Sing	49	obl	_	MWE=por_cento|MWEPOS=NOUN
+64	por	por	ADP	_	_	49	obl	_	MWE=por_cento|MWEPOS=NOUN
 65	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	64	compound	_	_
 66	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 67	e	e	CCONJ	<co-prparg>|KC|@CO	_	69	cc	_	d2d:#106
 68	6.75	6.75	NUM	<card>|NUM|M|P|@>N	NumType=Card	69	nummod	_	ChangedBy=Issue168
-69	por	por	ADP	_	Gender=Masc|Number=Sing	64	conj	_	ChangedBy=Issue149|MWE=por_cento|MWEPOS=NOUN
+69	por	por	ADP	_	_	64	conj	_	ChangedBy=Issue149|MWE=por_cento|MWEPOS=NOUN
 70	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	69	compound	_	ChangedBy=Issue165|SpaceAfter=No
 71	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = A última alteração data de 22 de Outubro, quando o banco central alemão procedeu a um corte de 0.5 por cento . em ambas as taxas
-# source = CETEMPúblico n=369 sec=eco sem=94a
 # sent_id = CP369-3
+# source = CETEMPúblico n=369 sec=eco sem=94a
 # id = 1935
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	última	último	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	ChangedBy=Issue172
@@ -159,7 +153,7 @@
 18	corte	corte	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obj	_	_
 19	de	de	ADP	PRP|@N<	_	21	case	_	_
 20	0.5	0.5	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	ChangedBy=Issue168
-21	por	por	ADP	_	Gender=Masc|Number=Sing	18	nmod	_	MWE=por_cento|MWEPOS=NOUN
+21	por	por	ADP	_	_	18	nmod	_	MWE=por_cento|MWEPOS=NOUN
 22	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	21	compound	_	_
 23	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 24	em	em	ADP	PRP|@N<	_	27	case	_	_
@@ -168,12 +162,9 @@
 27	taxas	taxa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
 
 # text = LLoyd Bentsen, secretário do Tesouro norte-americano, afirmou, num discurso proferido na quinta-feira, que um iene fraco não é solução aceitável para os problemas económicos no Japão e insistiu na necessidade urgente de um estímulo efectivo que atenue o enorme excedente comercial japonês.
-# source = CETEMPúblico n=369 sec=eco sem=94a
 # sent_id = CP369-4
+# source = CETEMPúblico n=369 sec=eco sem=94a
 # id = 1936
-# d2d = cc(afirmou,e) -> cc(insistiu,e)  #106
-# d2d = punct(afirmou,,) -> punct(insistiu,,)  #106
-# d2d = punct(afirmou,,) -> punct(insistiu,,)  #106
 1	LLoyd	LLoyd	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	ChangedBy=Issue119|MWE=LLoyd_Bentsen|MWEPOS=PROPN
 2	Bentsen	Bentsen	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -181,11 +172,11 @@
 5-6	do	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	Tesouro	tesouro	NOUN	N|@P<	_	4	nmod	_	_
+7	Tesouro	tesouro	NOUN	N|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 8	norte-americano	norte-americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 10	afirmou	afirmar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
-11	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+11	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 12-13	num	_	_	_	_	_	_	_	_
 12	em	em	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
 13	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
@@ -195,7 +186,7 @@
 16	em	em	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	quinta-feira	quinta-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-19	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+19	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 20	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
 21	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168
 22	iene	iene	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	26	nsubj	_	_

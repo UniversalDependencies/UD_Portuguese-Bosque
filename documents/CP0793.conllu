@@ -1,6 +1,6 @@
 # text = Desigualdades do distrito em causa
-# source = CETEMPúblico n=793 sec=pol sem=97a
 # sent_id = CP793-1
+# source = CETEMPúblico n=793 sec=pol sem=97a
 # id = 4063
 1	Desigualdades	desigualdade	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2-3	do	_	_	_	_	_	_	_	_
@@ -8,11 +8,11 @@
 3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	distrito	distrito	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 5	em	em	ADP	PRP|@N<	_	6	case	_	MWE=em_causa
-6	causa	causa	NOUN	N|@P<	_	1	nmod	_	_
+6	causa	causa	NOUN	N|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 
 # text = Fernando Gomes ignora repto do PSD-Porto
-# source = CETEMPúblico n=793 sec=pol sem=97a
 # sent_id = CP793-2
+# source = CETEMPúblico n=793 sec=pol sem=97a
 # id = 4064
 1	Fernando	Fernando	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Fernando_Gomes|MWEPOS=PROPN
 2	Gomes	Gomes	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -24,12 +24,9 @@
 7	PSD-Porto	PSD-Porto	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 
 # text = O líder do PSD-Porto, Luís Filipe Menezes, desafiou ontem o presidente da Câmara do Porto a assumir o mandato de deputado durante a discussão do Orçamento de Estado para 1998 para que prove o seu empenho na defesa da região, mas Fernando Gomes, em jeito de comentário, passou ao lado do repto.
-# source = CETEMPúblico n=793 sec=pol sem=97a
 # sent_id = CP793-3
+# source = CETEMPúblico n=793 sec=pol sem=97a
 # id = 4065
-# d2d = punct(desafiou,,) -> punct(passou,,)  #106
-# d2d = cc(desafiou,mas) -> cc(passou,mas)  #106
-# d2d = punct(desafiou,,) -> punct(passou,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	líder	líder	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -48,12 +45,12 @@
 15-16	da	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	Câmara	câmara	NOUN	N|@P<	_	14	nmod	_	_
+17	Câmara	câmara	NOUN	N|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
 18-19	do	_	_	_	_	_	_	_	_
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	Porto	porto	NOUN	N|@P<	_	17	nmod	_	_
-21	a	a	ADP	<first-cjt>|PRP|@<PIV	_	22	mark	_	_
+20	Porto	porto	NOUN	N|@P<	Gender=Unsp|Number=Sing	17	nmod	_	_
+21	a	a	SCONJ	<first-cjt>|PRP|@<PIV	_	22	mark	_	_
 22	assumir	assumir	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	xcomp	_	_
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	mandato	mandato	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	obj	_	_
@@ -70,7 +67,7 @@
 34	Estado	Estado	PROPN	PROP|@P<	Number=Sing	32	nmod	_	_
 35	para	para	ADP	PRP|@N<	_	36	case	_	_
 36	1998	1998	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	32	nmod	_	ChangedBy=Issue168
-37	para	para	ADP	PRP|@<ADVL	_	39	mark	_	_
+37	para	para	SCONJ	PRP|@<ADVL	_	39	mark	_	_
 38	que	que	SCONJ	KS|@SUB	_	39	mark	_	_
 39	prove	provar	VERB	<mv>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_
 40	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
@@ -84,13 +81,13 @@
 46	de	de	ADP	<sam->|PRP|@N<ARG	_	48	case	_	_
 47	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
 48	região	região	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	45	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-49	,	,	PUNCT	PU|@PU	_	59	punct	_	d2d:#106
+49	,	,	PUNCT	PU|@PU	_	52	punct	_	d2d:#106
 50	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	59	cc	_	d2d:#106
 51	Fernando	Fernando	PROPN	_	Gender=Masc|Number=Sing	59	nsubj	_	ChangedBy=Issue119|MWE=Fernando_Gomes|MWEPOS=PROPN
 52	Gomes	Gomes	PROPN	_	Number=Sing	51	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-53	,	,	PUNCT	PU|@PU	_	59	punct	_	d2d:#106
+53	,	,	PUNCT	PU|@PU	_	52	punct	_	d2d:#106
 54	em	em	ADP	PRP|@ADVL>	_	55	case	_	MWE=em_jeito_de
-55	jeito	jeito	NOUN	N|@P<	_	59	obl	_	_
+55	jeito	jeito	NOUN	N|@P<	Gender=Masc|Number=Sing	59	obl	_	_
 56	de	de	ADP	PRP|@N<	_	57	case	_	_
 57	comentário	comentário	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	55	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 58	,	,	PUNCT	PU|@PU	_	55	punct	_	_
@@ -98,7 +95,7 @@
 60-61	ao	_	_	_	_	_	_	_	_
 60	a	a	ADP	<sam->|PRP|@N<	_	62	case	_	_
 61	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	62	det	_	_
-62	lado	lado	NOUN	N|@P<	_	59	obl	_	_
+62	lado	lado	NOUN	N|@P<	Gender=Masc|Number=Sing	59	obl	_	_
 63-64	do	_	_	_	_	_	_	_	_
 63	de	de	ADP	PRP|@N<	_	65	case	_	_
 64	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	65	det	_	_
@@ -106,10 +103,9 @@
 66	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = «Às picardias e jogos de palavras do doutor Luís Filipe Menezes não tenho rigorosamente nada a dizer, porque tenho mais com que me preocupar», disse.
-# source = CETEMPúblico n=793 sec=pol sem=97a
 # sent_id = CP793-4
+# source = CETEMPúblico n=793 sec=pol sem=97a
 # id = 4066
-# d2d = cc(picardias,e) -> cc(jogos,e)  #106
 1	«	«	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2-3	Às	_	_	_	_	_	_	_	_
 2	A	a	ADP	<sam->|PRP|@PIV>	_	4	case	_	_
@@ -123,19 +119,19 @@
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	doutor	doutor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
-12	Luís	Luís	PROPN	_	Gender=Masc|Number=Sing	11	dep	_	ChangedBy=Issue119|MWE=Luís_Filipe_Menezes|MWEPOS=PROPN
+12	Luís	Luís	PROPN	_	Gender=Masc|Number=Sing	11	appos	_	ChangedBy=Issue119|MWE=Luís_Filipe_Menezes|MWEPOS=PROPN
 13	Filipe	Filipe	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	Menezes	Menezes	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 15	não	não	ADV	_	Polarity=Neg	16	advmod	_	_
 16	tenho	ter	VERB	<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	31	parataxis	_	_
 17	rigorosamente	rigorosamente	ADV	ADV|@>N	_	18	advmod	_	_
 18	nada	nada	PRON	<quant>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Ind	20	obj	_	_
-19	a	a	ADP	PRP|@<ADVL	_	20	mark	_	_
+19	a	a	SCONJ	PRP|@<ADVL	_	20	mark	_	_
 20	dizer	dizer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 22	porque	porque	SCONJ	KS|@SUB	_	23	mark	_	_
 23	tenho	ter	VERB	<mv>|V|PR|1S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	16	advcl	_	_
-24	mais	muito	PRON	<quant>|<KOMP>|<COMP>|DET|M/F|S/P|@<ACC	Gender=Unsp|Number=Unsp|PronType=Ind	23	obj	_	_
+24	mais	mais	PRON	<quant>|<KOMP>|<COMP>|DET|M/F|S/P|@<ACC	Gender=Unsp|Number=Unsp|PronType=Ind	23	obj	_	_
 25	com	com	ADP	PRP|@PIV>	_	26	case	_	_
 26	que	que	PRON	<rel>|INDP|M/F|S/P|@P<	Gender=Unsp|Number=Unsp|PronType=Rel	28	obl	_	_
 27	me	eu	PRON	<refl>|PERS|M|1S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=1|PronType=Prs	28	obj	_	_

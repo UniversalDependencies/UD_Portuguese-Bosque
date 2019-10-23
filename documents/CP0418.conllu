@@ -1,20 +1,19 @@
 # text = TEATRO NACIONAL DE D. MARIA II.
-# source = CETEMPúblico n=418 sec=soc sem=92b
 # sent_id = CP418-1
+# source = CETEMPúblico n=418 sec=soc sem=92b
 # id = 2196
 1	TEATRO	TEATRO	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	MWE=TEATRO_NACIONAL_DE_D.Maria_II
 2	NACIONAL	NACIONAL	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 3	DE	DE	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
-4	D.	D.	PROPN	_	_	1	flat	_	_
+4	D.	D.	PROPN	_	Gender=Masc|Number=Sing	1	flat	_	_
 5	MARIA	MARIA	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 6	II	II	PROPN	PROP	Number=Sing	1	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 7	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Hoje, às 21h30; amanhã, às 16h00 e às 21h30; dom., às 16h00; 2ª, às 21h30.
-# source = CETEMPúblico n=418 sec=soc sem=92b &L
 # sent_id = CP418-2
+# source = CETEMPúblico n=418 sec=soc sem=92b &L
 # id = 2197
-# d2d = cc(16h00,e) -> cc(21h30,e)  #106
 1	Hoje	hoje	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3-4	às	_	_	_	_	_	_	_	_
@@ -50,18 +49,17 @@
 28	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = TEATRO NACIONAL.
-# source = CETEMPúblico n=418 sec=soc sem=92b
 # sent_id = CP418-3
+# source = CETEMPúblico n=418 sec=soc sem=92b
 # id = 2198
 1	TEATRO	TEATRO	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=TEATRO_NACIONAL|MWEPOS=PROPN
 2	NACIONAL	NACIONAL	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Dias 5 e 7, às 18h00.
-# source = CETEMPúblico n=418 sec=soc sem=92b
 # sent_id = CP418-4
+# source = CETEMPúblico n=418 sec=soc sem=92b
 # id = 2199
-# d2d = cc(5,e) -> cc(7,e)  #106
 1	Dias	dia	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 2	5	5	NUM	<first-cjt>|<card>|NUM|F|P|@N<	NumType=Card	1	nummod	_	ChangedBy=Issue168
 3	e	e	CCONJ	<co-postnom>|KC|@CO	_	4	cc	_	d2d:#106

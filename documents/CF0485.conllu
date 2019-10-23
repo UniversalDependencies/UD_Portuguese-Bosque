@@ -1,9 +1,7 @@
 # text = Quem queria comprar, por exemplo, meia dúzia de pães e um litro de leite, mas só tinha cruzeiros reais no bolso, teve que enfrentar fila de até duas horas.
-# source = CETENFolha n=485 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF485-1
+# source = CETENFolha n=485 cad=Dinheiro sec=eco sem=94a
 # id = 2046
-# d2d = cc(queria,mas) -> cc(tinha,mas)  #106
-# d2d = cc(dúzia,e) -> cc(litro,e)  #106
 1	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	2	nsubj	_	_
 2	queria	querer	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	29	csubj	_	_
 3	comprar	comprar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
@@ -42,10 +40,9 @@
 35	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 
 # text = Um consumidor que tivesse apenas uma nota de CR$ 50.000,00 para fazer uma compra de valor menor tinha de solicitar um cheque de conversão no valor aproximado da mercadoria e receber o troco em cruzeiros reais.
-# source = CETENFolha n=485 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF485-2
+# source = CETENFolha n=485 cad=Dinheiro sec=eco sem=94a
 # id = 2047
-# d2d = cc(solicitar,e) -> cc(receber,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	consumidor	consumidor	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	4	nsubj	_	_
@@ -56,16 +53,16 @@
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	CR$	CR$	SYM	_	_	7	nmod	_	_
 10	50.000,00	50.000,00	NUM	<card>|NUM|M|P|@N<	NumType=Card	9	nummod	_	ChangedBy=Issue168
-11	para	para	ADP	PRP|@<ADVL	_	12	mark	_	_
+11	para	para	SCONJ	PRP|@<ADVL	_	12	mark	_	_
 12	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	advcl	_	_
 13	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	compra	compra	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	valor	valor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
 17	menor	pequeno	ADJ	<KOMP>|<COMP>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	16	amod	_	_
-18	tinha	ter	AUX	<aux>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	aux	_	_
-19	de	de	ADP	PRP|@PRT-AUX<	_	20	case	_	_
-20	solicitar	solicitar	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+18	tinha	ter	VERB	<aux>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	MWE=tinha_de|MWEPOS=AUX
+19	de	de	SCONJ	PRP|@PRT-AUX<	_	20	mark	_	_
+20	solicitar	solicitar	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	18	xcomp	_	_
 21	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	cheque	cheque	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	20	obj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_

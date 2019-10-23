@@ -1,6 +1,6 @@
 # text = A propósito, no Museu da Segunda Guerra Mundial, que aí foi aberto, a história da maior guerra no continente europeu começa com a fotografia de Estaline a cumprimentar o ministro dos Negócios Estrangeiros da Alemanha nazi, ou seja, a guerra começa com a assinatura do Pacto Molotov-Ribbentrop.
-# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # sent_id = CP8-1
+# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # id = 44
 1	A	a	ADP	PRP|@ADVL>	_	2	case	_	MWE=A_propósito
 2	propósito	propósito	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	28	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -18,7 +18,7 @@
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 13	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	16	nsubj	_	_
 14	aí	aí	ADV	<kc>|ADV|@ADVL>	_	16	advmod	_	_
-15	foi	ir	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux	_	_
+15	foi	ser	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	aux:pass	_	_
 16	aberto	abrir	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	6	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
@@ -39,15 +39,15 @@
 31	fotografia	fotografia	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	obj	_	_
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
 33	Estaline	Estaline	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
-34	a	a	ADP	PRP|@N<	_	35	mark	_	_
+34	a	a	SCONJ	PRP|@N<	_	35	mark	_	_
 35	cumprimentar	cumprimentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	acl	_	_
 36	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
-37	ministro	ministro	NOUN	N|@<ACC	_	35	obj	_	MWE=ministro_dos_Negócios_Estrangeiros
+37	ministro	ministro	NOUN	N|@<ACC	Gender=Masc|Number=Sing	35	obj	_	MWE=ministro_dos_Negócios_Estrangeiros
 38-39	dos	_	_	_	_	_	_	_	_
 38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
 39	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_
-40	Negócios	negócios	NOUN	N|@P<	_	37	nmod	_	_
-41	Estrangeiros	estrangeiros	ADJ	ADJ|@N<	_	40	amod	_	_
+40	Negócios	negócios	NOUN	N|@P<	Gender=Masc|Number=Plur	37	nmod	_	_
+41	Estrangeiros	estrangeiros	ADJ	ADJ|@N<	Gender=Masc|Number=Plur	40	amod	_	_
 42-43	da	_	_	_	_	_	_	_	_
 42	de	de	ADP	PRP|@N<	_	44	case	_	_
 43	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
@@ -71,8 +71,8 @@
 60	.	.	PUNCT	PU|@PU	_	28	punct	_	_
 
 # text = Na cerimónia de inauguração do edifício, Ieltsin declarou perante mais de cem mil pessoas que «a Rússia está perto da estabilidade política» e que «todos os problemas podem ser resolvidos à mesa das conversações».
-# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # sent_id = CP8-2
+# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # id = 45
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -111,9 +111,9 @@
 32	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	34	det	_	MWE=todos_os
 33	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	fixed	_	_
 34	problemas	problema	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	37	nsubj:pass	_	_
-35	podem	poder	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	37	aux	_	_
+35	podem	poder	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_
 36	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	37	aux:pass	_	_
-37	resolvidos	resolver	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	23	conj	_	_
+37	resolvidos	resolver	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	35	xcomp	_	_
 38-39	à	_	_	_	_	_	_	_	_
 38	a	a	ADP	<sam->|PRP|@<ADVL	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	40	det	_	_
@@ -126,8 +126,8 @@
 45	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Talvez entusiasmado pela festa da vitória, o Presidente russo afirmou que «chegará o dia em que a Rússia ajudará o Ocidente».
-# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # sent_id = CP8-3
+# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # id = 46
 1	Talvez	talvez	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	entusiasmado	entusiasmar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	advcl	_	_
@@ -160,11 +160,9 @@
 27	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = As cerimónias oficiais terminaram com desfiles militares e recriações de combates aéreos entre os aviadores soviéticos e alemães.
-# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # sent_id = CP8-4
+# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # id = 47
-# d2d = cc(soviéticos,e) -> cc(alemães,e)  #106
-# d2d = cc(desfiles,e) -> cc(recriações,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	cerimónias	cerimónia	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
 3	oficiais	oficial	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	2	amod	_	_
@@ -186,8 +184,8 @@
 19	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = A festa da oposição
-# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # sent_id = CP8-5
+# source = CETEMPúblico n=8 sec=pol-soc sem=94a
 # id = 48
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	festa	festa	NOUN	<np-def>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_

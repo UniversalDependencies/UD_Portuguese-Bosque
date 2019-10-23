@@ -1,6 +1,6 @@
 # text = O presidente Itamar Franco disse que «serão mais de 50 demissões» nas estatais do Ministério dos Transportes por causa da desobediência à MP de conversão à URV.
-# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b
 # sent_id = CF192-1
+# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b
 # id = 812
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -28,7 +28,7 @@
 21	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
 22	Transportes	Transportes	PROPN	PROP|@P<	Number=Sing	19	nmod	_	_
 23	por	por	ADP	<sam->|PRP|@<ADVL	_	24	case	_	MWE=por_causa_de
-24	causa	causa	NOUN	N|@P<	_	12	nmod	_	_
+24	causa	causa	NOUN	N|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 25-26	da	_	_	_	_	_	_	_	_
 25	de	de	ADP	PRP|@N<	_	27	case	_	_
 26	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
@@ -46,11 +46,9 @@
 36	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Várias empresas ligadas a este Ministério converteram os salários pelo «pico» e não pela média dos últimos quatro meses.
-# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b &E
 # sent_id = CF192-2
+# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b &E
 # id = 813
-# d2d = cc(pico,e) -> cc(média,e)  #106
-# d2d = punct(pico,») -> punct(média,»)  #106
 1	Várias	várias	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	2	det	_	_
 2	empresas	empresa	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
 3	ligadas	ligar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	_	_
@@ -81,10 +79,9 @@
 25	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Itamar disse que até agora poucas demissões foram efetivadas porque «há sempre um processo legal e burocrático que precisar ser cumprido».
-# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b
 # sent_id = CF192-3
+# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b
 # id = 814
-# d2d = cc(legal,e) -> cc(burocrático,e)  #106
 1	Itamar	Itamar	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
@@ -111,8 +108,8 @@
 24	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «Mas todos serão demitidos», acrescentou.
-# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b
 # sent_id = CF192-4
+# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b
 # id = 815
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Mas	mas	CCONJ	KC|@CO	_	5	cc	_	_
@@ -125,8 +122,8 @@
 9	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O presidente disse que pediu ao ministro das Minas e Energia, Alexis Stepanenko, que cheque também as estatais ligadas a ele para saber se também houve desobediência.
-# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b
 # sent_id = CF192-5
+# source = CETENFolha n=192 cad=Brasil sec=pol sem=94b
 # id = 816
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -141,7 +138,7 @@
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
 11	Minas	Minas	PROPN	_	Gender=Fem|Number=Sing	8	nmod	_	ChangedBy=Issue119|MWE=Minas_e_Energia|MWEPOS=PROPN
-12	e	e	CCONJ	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
+12	e	e	CCONJ	_	_	11	flat:name	_	ChangedBy=Issue119
 13	Energia	Energia	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 15	Alexis	Alexis	PROPN	_	Gender=Masc|Number=Sing	8	appos	_	ChangedBy=Issue119|MWE=Alexis_Stepanenko|MWEPOS=PROPN
@@ -155,7 +152,7 @@
 23	ligadas	ligar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	22	acl	_	_
 24	a	a	ADP	PRP|@<PIV	_	25	case	_	_
 25	ele	ele	PRON	PERS|M|3S|NOM/PIV|@P<	Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	obj	_	_
-26	para	para	ADP	PRP|@<ADVL	_	27	mark	_	_
+26	para	para	SCONJ	PRP|@<ADVL	_	27	mark	_	_
 27	saber	saber	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	advcl	_	_
 28	se	se	SCONJ	KS|@SUB	_	30	mark	_	_
 29	também	também	ADV	ADV|@ADVL>	_	30	advmod	_	_

@@ -1,21 +1,15 @@
 # text = Ontem, o FC Porto voltou a mostrar fibra de campeão e deu a volta ao jogo com o Marítimo, mais uma vez graças ao «olho» do treinador, que também erra, mas acerta mais vezes do que os outros, e a uma equipa que nunca desiste.
-# source = CETEMPúblico n=595 sec=nd sem=98a
 # sent_id = CP595-1
+# source = CETEMPúblico n=595 sec=nd sem=98a
 # id = 3087
-# d2d = cc(olho,e) -> cc(equipa,e)  #106
-# d2d = punct(olho,,) -> punct(equipa,,)  #106
-# d2d = cc(erra,mas) -> cc(acerta,mas)  #106
-# d2d = cc(mostrar,e) -> cc(deu,e)  #106
-# d2d = punct(olho,») -> punct(equipa,»)  #106
-# d2d = punct(erra,,) -> punct(acerta,,)  #106
 1	Ontem	ontem	ADV	ADV|@ADVL>	_	8	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	FC	FC	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	_	ChangedBy=Issue119|MWE=FC_Porto|MWEPOS=PROPN
 5	Porto	Porto	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
-6	voltou	voltar	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux	_	_
-7	a	a	ADP	PRP|@PRT-AUX<	_	8	case	_	_
-8	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+6	voltou	voltar	VERB	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=voltou_a|MWEPOS=AUX
+7	a	a	SCONJ	PRP|@PRT-AUX<	_	8	mark	_	_
+8	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	xcomp	_	_
 9	fibra	fibra	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	campeão	campeão	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
@@ -31,15 +25,15 @@
 20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	Marítimo	Marítimo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-23	mais	mais	ADV	N|M|S|@>A	Gender=Masc|Number=Sing	26	advmod	_	MWE=mais_uma_vez
-24	uma	uma	DET	PRP|@N<	_	25	det	_	_
+23	mais	mais	ADV	N|M|S|@>A	_	26	advmod	_	MWE=mais_uma_vez
+24	uma	uma	DET	PRP|@N<	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	vez	vez	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
-26	graças	graças	ADV	ADV|@<ADVL	_	13	advmod	_	MWE=graças_a
+26	graças	graças	ADV	ADV|@<ADVL	_	30	case	_	MWE=graças_a|MWEPOS=ADP
 27-28	ao	_	_	_	_	_	_	_	_
-27	a	a	ADP	PRP|@A<	_	30	case	_	_
+27	a	a	ADP	PRP|@A<	_	26	fixed	_	_
 28	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 29	«	«	PUNCT	PU|@PU	_	30	punct	_	ChangedBy=Issue165|SpaceAfter=No
-30	olho	olho	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	26	obl	_	ChangedBy=Issue165|SpaceAfter=No
+30	olho	olho	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue165|SpaceAfter=No
 31	»	»	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
 32-33	do	_	_	_	_	_	_	_	_
 32	de	de	ADP	<sam->|PRP|@N<	_	34	case	_	_
@@ -52,14 +46,14 @@
 39	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
 40	mas	mas	CCONJ	<co-n<pred>|<co-fmc>|<co-vfin>|KC|@CO	_	41	cc	_	d2d:#106
 41	acerta	acertar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	conj	_	_
-42	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	43	det	_	_
+42	mais	mais	ADV	<quant>|<KOMP>|<COMP>|DET|F|P|@>N	_	43	advmod	_	_
 43	vezes	vez	NOUN	<np-idf>|N|F|P|@<ADVL	Gender=Fem|Number=Plur	41	obl	_	_
 44-45	do	_	_	_	_	_	_	_	_
 44	de	de	ADP	<sam->|PRP|@COM	_	48	case	_	MWE=do_que
 45	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	44	fixed	_	_
 46	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	44	fixed	_	_
 47	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	48	det	_	_
-48	outros	outro	ADV	<first-cjt>|<KOMP>|<diff>|<np-def>|DET|M|P|@KOMP<	Gender=Masc|Number=Plur|PronType=Ind	43	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+48	outros	outro	PRON	<first-cjt>|<KOMP>|<diff>|<np-def>|DET|M|P|@KOMP<	Gender=Masc|Number=Plur|PronType=Ind	41	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 49	,	,	PUNCT	PU|@PU	_	53	punct	_	d2d:#106
 50	e	e	CCONJ	<co-advl>|KC|@CO	_	53	cc	_	d2d:#106
 51	a	a	ADP	<cjt>|PRP|@<ADVL	_	53	case	_	_
@@ -71,23 +65,20 @@
 57	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Os campeões são assim e este, ao cabo de 17 jornadas, leva 11 pontos de avanço sobre o segundo, o Guimarães, que ontem empatou no Bonfim e já sonha com a Liga dos Campeões.
-# source = CETEMPúblico n=595 sec=nd sem=98a
 # sent_id = CP595-2
+# source = CETEMPúblico n=595 sec=nd sem=98a
 # id = 3088
-# d2d = punct(são,,) -> punct(leva,,)  #106
-# d2d = cc(são,e) -> cc(leva,e)  #106
-# d2d = cc(empatou,e) -> cc(sonha,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	campeões	campeão	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	são	ser	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	assim	assim	ADV	<kc>|ADV|@<ADVL	_	3	advmod	_	_
 5	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
 6	este	este	PRON	<dem>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	15	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
-7	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+7	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 8-9	ao	_	_	_	_	_	_	_	_
 8	a	a	ADP	<sam->|PRP|@N<	_	10	case	_	_
 9	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	cabo	cabo	NOUN	N|@P<	_	15	obl	_	_
+10	cabo	cabo	NOUN	N|@P<	Gender=Masc|Number=Sing	15	obl	_	_
 11	de	de	ADP	PRP|@N<	_	13	case	_	_
 12	17	17	NUM	<card>|NUM|F|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168
 13	jornadas	jornada	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -124,10 +115,9 @@
 42	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O Rio Ave, outra surpresa, foi derrotado em casa pelo Farense e tem já muitos candidatos nas suas costas dispostos a roubar-lhe o terceiro lugar.
-# source = CETEMPúblico n=595 sec=nd sem=98a
 # sent_id = CP595-3
+# source = CETEMPúblico n=595 sec=nd sem=98a
 # id = 3089
-# d2d = cc(derrotado,e) -> cc(tem,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Rio	Rio	PROPN	_	Gender=Masc|Number=Sing	9	nsubj:pass	_	ChangedBy=Issue119|MWE=Rio_Ave|MWEPOS=PROPN
 3	Ave	Ave	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -153,8 +143,8 @@
 21	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	det	_	_
 22	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	23	det	_	_
 23	costas	costa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	16	obl	_	ChangedBy=Issue137
-24	dispostos	disposto	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	23	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
-25	a	a	ADP	PRP|@<PIV	_	26	mark	_	_
+24	dispostos	disposto	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	23	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
+25	a	a	SCONJ	PRP|@<PIV	_	26	mark	_	_
 26-27	roubar-lhe	_	_	_	_	_	_	_	_
 26	roubar	roubar	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	24	xcomp	_	_
 27	lhe	ele	PRON	PERS|M|3S|DAT|@<DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	iobj	_	_
@@ -164,23 +154,18 @@
 31	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = O Estrela da Amadora continua a fazer um campeonato à Fernando Santos, ou seja, um campeonato certinho e sem crises, e até venceu o Salgueiros na Reboleira.
-# source = CETEMPúblico n=595 sec=nd sem=98a
 # sent_id = CP595-4
+# source = CETEMPúblico n=595 sec=nd sem=98a
 # id = 3090
-# d2d = punct(fazer,,) -> punct(venceu,,)  #106
-# d2d = cc(fazer,e) -> cc(venceu,e)  #106
-# d2d = cc(certinho,e) -> cc(crises,e)  #106
-# d2d = punct(fazer,,) -> punct(venceu,,)  #106
-# d2d = punct(fazer,,) -> punct(venceu,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Estrela	Estrela	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	MWE=Estrela_da_Amadora
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	Amadora	Amadora	PROPN	PROP|@P<	Number=Sing	2	nmod	_	_
-6	continua	continuar	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
-7	a	a	ADP	PRP|@PRT-AUX<	_	8	case	_	_
-8	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+6	continua	continuar	VERB	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=continua_a|MWEPOS=AUX
+7	a	a	SCONJ	PRP|@PRT-AUX<	_	8	mark	_	_
+8	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	xcomp	_	_
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	campeonato	campeonato	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
 11-12	à	_	_	_	_	_	_	_	_
@@ -188,10 +173,10 @@
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	Fernando	Fernando	PROPN	_	Gender=Masc|Number=Sing	10	nmod	_	ChangedBy=Issue119|MWE=Fernando_Santos|MWEPOS=PROPN
 14	Santos	Santos	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-15	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
+15	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 16	ou	ou	CCONJ	_	_	20	cc	_	MWE=ou_seja|MWEPOS=CCONJ
 17	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	fixed	_	ChangedBy=Issue165|ChangedBy=Issue181|SpaceAfter=No
-18	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
+18	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 19	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	campeonato	campeonato	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	appos	_	_
 21	certinho	certinho	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	20	amod	_	_
@@ -211,26 +196,25 @@
 34	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O Boavista está a melhorar e empatou no que começa a ser muito complicado estádio do Campomaiorense, numa partida que também terminou empatada nas críticas dos treinadores ao árbitro.
-# source = CETEMPúblico n=595 sec=nd sem=98a
 # sent_id = CP595-5
+# source = CETEMPúblico n=595 sec=nd sem=98a
 # id = 3091
-# d2d = cc(melhorar,e) -> cc(empatou,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Boavista	Boavista	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	está	estar	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-4	a	a	ADP	PRP|@PRT-AUX<	_	5	case	_	_
-5	melhorar	melhorar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	está	estar	VERB	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=está_a|MWEPOS=AUX
+4	a	a	SCONJ	PRP|@PRT-AUX<	_	5	mark	_	_
+5	melhorar	melhorar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 6	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	7	cc	_	d2d:#106
 7	empatou	empatar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
 8-9	no	_	_	_	_	_	_	_	_
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
 9	o	o	PRON	<-sam>|<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	7	obl	_	_
 10	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	16	nsubj	_	_
-11	começa	começar	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
-12	a	a	ADP	PRP|@PRT-AUX<	_	13	case	_	_
-13	ser	ser	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	acl:relcl	_	_
+11	começa	começar	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	MWE=começa_a|MWEPOS=AUX
+12	a	a	SCONJ	PRP|@PRT-AUX<	_	13	mark	_	_
+13	ser	ser	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
 14	muito	muito	ADV	<quant>|ADV|@>A	_	15	advmod	_	_
-15	complicado	complicado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	16	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+15	complicado	complicado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	16	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 16	estádio	estádio	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	9	xcomp	_	_
 17-18	do	_	_	_	_	_	_	_	_
 17	de	de	ADP	<sam->|PRP|@N<	_	19	case	_	_
@@ -260,8 +244,8 @@
 37	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O Chaves, com Álvaro a treinador, «comprou» um balão de ar com a vitória em Coimbra.
-# source = CETEMPúblico n=595 sec=nd sem=98a
 # sent_id = CP595-6
+# source = CETEMPúblico n=595 sec=nd sem=98a
 # id = 3092
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Chaves	Chaves	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -286,10 +270,9 @@
 21	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = O Belenenses foi perder ao campo do Varzim e continua a sua marcha a passo acelerado para a Divisão de Honra.
-# source = CETEMPúblico n=595 sec=nd sem=98a
 # sent_id = CP595-7
+# source = CETEMPúblico n=595 sec=nd sem=98a
 # id = 3093
-# d2d = cc(perder,e) -> cc(continua,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Belenenses	Belenenses	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	foi	ir	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux	_	_

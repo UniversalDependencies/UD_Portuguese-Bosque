@@ -1,6 +1,6 @@
 # text = O grupo A. Silva & Silva registou, no ano passado, resultados líquidos consolidados de 13,5 mil contos.
-# source = CETEMPúblico n=864 sec=eco sem=97a
 # sent_id = CP864-1
+# source = CETEMPúblico n=864 sec=eco sem=97a
 # id = 4433
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	grupo	grupo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -26,8 +26,8 @@
 21	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Os resultados foram afectados pela realização de provisões extraordinárias na sua participada Assiconstrói -- entretanto vendida à Somague -- no valor de 330 mil contos, «por forma a não transferir para o seu comprador riscos provenientes de situações pendentes de reclamações a clientes, eventualmente geradoras de diminuições patrimoniais futuras», refere um comunicado da empresa ontem divulgado.
-# source = CETEMPúblico n=864 sec=eco sem=97a
 # sent_id = CP864-2
+# source = CETEMPúblico n=864 sec=eco sem=97a
 # id = 4434
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	resultados	resultado	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj:pass	_	_
@@ -47,7 +47,7 @@
 14	participada	participar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	15	acl	_	_
 15	Assiconstrói	Assiconstrói	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
 16	--	--	PUNCT	PU|@PU	_	18	punct	_	_
-17	entretanto	entretanto	ADV	ADV|@ADVL>	_	18	advmod	_	_
+17	entretanto	entretanto	CCONJ	ADV|@ADVL>	_	18	cc	_	_
 18	vendida	vender	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	15	acl	_	_
 19-20	à	_	_	_	_	_	_	_	_
 19	a	a	ADP	<sam->|PRP|@<PIV	_	21	case	_	_
@@ -66,7 +66,7 @@
 31	«	«	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
 32	por	por	ADP	PRP|@N<	_	33	case	_	_
 33	forma	forma	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
-34	a	a	ADP	PRP|@N<	_	36	mark	_	_
+34	a	a	SCONJ	PRP|@N<	_	36	mark	_	_
 35	não	não	ADV	_	Polarity=Neg	36	advmod	_	_
 36	transferir	transferir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	acl	_	_
 37	para	para	ADP	PRP|@<ADVL	_	40	case	_	_
@@ -103,8 +103,8 @@
 67	.	.	PUNCT	PU|@PU	_	59	punct	_	_
 
 # text = Em termos individuais, a A. Silva & Silva registou lucros de 444,6 mil contos.
-# source = CETEMPúblico n=864 sec=eco sem=97a
 # sent_id = CP864-3
+# source = CETEMPúblico n=864 sec=eco sem=97a
 # id = 4435
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_termos
 2	termos	termos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	_
@@ -124,8 +124,8 @@
 16	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = O volume de facturação ascendeu a 42 milhões de contos, os resultados operacionais consolidados foram de 1,1 milhões de contos (contra 652,4 mil contos registados em 1995), enquanto os resultados correntes totalizaram 342,4 mil contos (mais 159,2 por cento do que no ano anterior).
-# source = CETEMPúblico n=864 sec=eco sem=97a
 # sent_id = CP864-4
+# source = CETEMPúblico n=864 sec=eco sem=97a
 # id = 4436
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	volume	volume	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -133,21 +133,21 @@
 4	facturação	facturação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 5	ascendeu	ascender	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	a	a	ADP	PRP|@<SA	_	7	case	_	_
-7	42	42	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	nummod	_	ChangedBy=Issue168|MWE=42_milhões
+7	42	42	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	obj	_	ChangedBy=Issue168|MWE=42_milhões
 8	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	7	flat	_	_
 9	de	de	ADP	PRP|@N<ARG	_	10	case	_	_
-10	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obj	_	ChangedBy=Issue165|SpaceAfter=No
+10	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
-13	resultados	resultado	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	21	nsubj	_	_
+13	resultados	resultado	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	18	nsubj	_	_
 14	operacionais	operacional	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	13	amod	_	_
 15	consolidados	consolidado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	13	amod	_	_
-16	foram	ser	AUX	<cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	21	cop	_	ChangedBy=Issue167
-17	de	de	ADP	PRP|@<SC	_	21	case	_	_
-18	1,1	1,1	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	ChangedBy=Issue168|MWE=1,1_milhões
+16	foram	ser	AUX	<cjt>|<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	cop	_	ChangedBy=Issue167
+17	de	de	ADP	PRP|@<SC	_	18	case	_	_
+18	1,1	1,1	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	conj	_	ChangedBy=Issue168|MWE=1,1_milhões
 19	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	18	flat	_	_
 20	de	de	ADP	PRP|@N<ARG	_	21	case	_	_
-21	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	conj	_	_
+21	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	18	nmod	_	_
 22	(	(	PUNCT	PU|@PU	_	26	punct	_	ChangedBy=Issue165|SpaceAfter=No
 23	contra	contra	ADP	PRP|@N<PRED	_	26	case	_	_
 24	652,4	652,4	NUM	<card>|NUM|M|P|@>A	NumType=Card	26	nummod	_	ChangedBy=Issue168|MWE=652,4_mil
@@ -169,7 +169,7 @@
 40	(	(	PUNCT	PU|@PU	_	50	punct	_	ChangedBy=Issue165|SpaceAfter=No
 41	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	42	advmod	_	_
 42	159,2	159,2	NUM	<card>|NUM|M|P|@>N	NumType=Card	43	nummod	_	ChangedBy=Issue168
-43	por	por	ADP	_	Gender=Masc|Number=Sing	50	nmod	_	MWE=por_cento|MWEPOS=NOUN
+43	por	por	ADP	_	_	50	nmod	_	MWE=por_cento|MWEPOS=NOUN
 44	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	43	compound	_	_
 45-46	do	_	_	_	_	_	_	_	_
 45	de	de	ADP	<sam->|PRP|@COM	_	50	case	_	MWE=do_que

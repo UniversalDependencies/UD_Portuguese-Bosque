@@ -1,6 +1,6 @@
 # text = 24 de novembro de 92 -- Um Boeing 737, da China Southern Airlines, bate em um morro pouco antes de aterrissar na cidade turística de Guilin, causando a morte de 141 pessoas.
-# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # sent_id = CF309-1
+# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # id = 1285
 1	24	24	NUM	<card>|NUM|M|P|@ADVL>	NumType=Card	17	parataxis	_	ChangedBy=Issue168
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -24,9 +24,9 @@
 19	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	morro	morro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obj	_	_
 21	pouco	pouco	ADV	<quant>|ADV|@>A	_	22	advmod	_	_
-22	antes	antes	ADV	ADV|@<ADVL	_	17	advmod	_	_
-23	de	de	ADP	PRP|@A<ARG	_	24	mark	_	_
-24	aterrissar	aterrissar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	_
+22	antes	antes	ADV	ADV|@<ADVL	_	24	mark	_	MWE=antes_de|MWEPOS=SCONJ
+23	de	de	ADP	PRP|@A<ARG	_	22	fixed	_	_
+24	aterrissar	aterrissar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	advcl	_	_
 25-26	na	_	_	_	_	_	_	_	_
 25	em	em	ADP	<sam->|PRP|@<ADVL	_	27	case	_	_
 26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
@@ -44,8 +44,8 @@
 38	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Total de mortos em 92: 310
-# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # sent_id = CF309-2
+# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # id = 1286
 1	Total	total	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -56,8 +56,8 @@
 7	310	310	NUM	<card>|<Eg>|NUM|@N<PRED	NumType=Card	1	appos	_	ChangedBy=Issue168
 
 # text = 23 de julho de 93 -- Um jato britânico Aerospace 146, da China Northwest Airlines caiu na região autônoma de Ningxia Hui.
-# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # sent_id = CF309-3
+# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # id = 1287
 1	23	23	NUM	<card>|NUM|M|P|@ADVL>	NumType=Card	18	obl	_	ChangedBy=Issue168
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -89,10 +89,9 @@
 26	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Dos 133 passageiros e tripulantes que estavam na aeronave, 55 morreram.
-# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # sent_id = CF309-4
+# source = CETENFolha n=309 cad=Mundo sec=pol sem=94b
 # id = 1288
-# d2d = cc(passageiros,e) -> cc(tripulantes,e)  #106
 1-2	Dos	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_

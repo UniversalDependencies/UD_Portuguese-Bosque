@@ -1,6 +1,6 @@
 # text = Para Eurico de Melo só faz sentido convocar um referendo se se chegar à conclusão da sua necessidade para cumprir «um formalismo constitucional».
-# source = CETEMPúblico n=266 sec=pol sem=92a
 # sent_id = CP266-1
+# source = CETEMPúblico n=266 sec=pol sem=92a
 # id = 1417
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Eurico	Eurico	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	MWE=Eurico_de_Melo
@@ -24,7 +24,7 @@
 18	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	20	det	_	_
 19	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	20	det	_	_
 20	necessidade	necessidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
-21	para	para	ADP	PRP|@N<	_	22	mark	_	_
+21	para	para	SCONJ	PRP|@N<	_	22	mark	_	_
 22	cumprir	cumprir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	acl	_	_
 23	«	«	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 24	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
@@ -34,14 +34,13 @@
 28	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Não desvalorizou, porém, a convocação do Conselho de Estado por entender que «não deve subsistir a menor dúvida sobre os formalismos constitucionais a cumprir nem sobre a vontade política de adesão ao Tratado».
-# source = CETEMPúblico n=266 sec=pol sem=92a
 # sent_id = CP266-2
+# source = CETEMPúblico n=266 sec=pol sem=92a
 # id = 1418
-# d2d = cc(formalismos,nem) -> cc(vontade,nem)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	desvalorizou	desvalorizar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-4	porém	porém	ADV	<kc>|ADV|@<ADVL	_	2	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+4	porém	porém	CCONJ	<kc>|ADV|@<ADVL	_	2	cc	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	convocação	convocação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
@@ -51,13 +50,13 @@
 10	Conselho	conselho	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	Estado	estado	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
-13	por	por	ADP	PRP|@<ADVL	_	14	mark	_	_
+13	por	por	SCONJ	PRP|@<ADVL	_	14	mark	_	_
 14	entender	entender	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	advcl	_	_
 15	que	que	SCONJ	KS|@SUB	_	19	mark	_	_
 16	«	«	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 17	não	não	ADV	_	Polarity=Neg	19	advmod	_	_
-18	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	_	_
-19	subsistir	subsistir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	ccomp	_	_
+18	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
+19	subsistir	subsistir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	xcomp	_	_
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 21	menor	pequeno	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	22	amod	_	_
 22	dúvida	dúvida	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	19	nsubj	_	_
@@ -65,7 +64,7 @@
 24	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
 25	formalismos	formalismo	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
 26	constitucionais	constitucional	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	25	amod	_	_
-27	a	a	ADP	PRP|@N<	_	28	mark	_	_
+27	a	a	SCONJ	PRP|@N<	_	28	mark	_	_
 28	cumprir	cumprir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	25	acl	_	_
 29	nem	nem	CCONJ	<co-postnom>|KC|@CO	_	32	cc	_	d2d:#106
 30	sobre	sobre	ADP	<cjt>|PRP|@N<	_	32	case	_	_
@@ -82,8 +81,8 @@
 40	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Eurico de Melo defende que as decisões de Maastricht «são de grande importância para o país» na medida em que reflectem uma linha de «mais compromisso político com a CE».
-# source = CETEMPúblico n=266 sec=pol sem=92a
 # sent_id = CP266-3
+# source = CETEMPúblico n=266 sec=pol sem=92a
 # id = 1419
 1	Eurico	Eurico	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	MWE=Eurico_de_Melo
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -104,17 +103,17 @@
 17	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 18	»	»	PUNCT	PU|@PU	_	14	punct	_	_
 19-20	na	_	_	_	_	_	_	_	_
-19	em	em	ADP	<sam->|PRP|@N<	_	21	case	_	_
-20	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	medida	medida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	24	obl	_	_
-22	em	em	ADP	PRP|@N<	_	23	case	_	_
-23	que	que	PRON	<rel>|INDP|F|S|@P<	Gender=Fem|Number=Sing|PronType=Rel	21	nmod	_	_
+19	em	em	ADP	<sam->|PRP|@N<	_	24	mark	_	MWE=na_medida_em_que|MWEPOS=SCONJ
+20	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	fixed	_	_
+21	medida	medida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	19	fixed	_	_
+22	em	em	ADP	PRP|@N<	_	19	fixed	_	_
+23	que	que	PRON	<rel>|INDP|F|S|@P<	Gender=Fem|Number=Sing|PronType=Rel	19	fixed	_	_
 24	reflectem	reflectir	VERB	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
 25	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	linha	linha	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
 27	de	de	ADP	PRP|@N<	_	30	case	_	_
 28	«	«	PUNCT	PU|@PU	_	30	punct	_	ChangedBy=Issue165|SpaceAfter=No
-29	mais	muito	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	30	det	_	_
+29	mais	mais	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	30	det	_	_
 30	compromisso	compromisso	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
 31	político	político	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	30	amod	_	_
 32	com	com	ADP	PRP|@N<	_	34	case	_	_

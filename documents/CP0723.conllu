@@ -1,6 +1,6 @@
 # text = A primeira das críticas ontem apresentadas foi para o novo sistema retributivo, que os enfermeiros consideram nunca se ter adaptado à carreira de enfermagem.
-# source = CETEMPúblico n=723 sec=soc sem=94a
 # sent_id = CP723-1
+# source = CETEMPúblico n=723 sec=soc sem=94a
 # id = 3713
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	primeira	primeiro	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|F|S|@SUBJ>	Gender=Fem|Number=Sing|NumType=Ord	8	nsubj	_	ChangedBy=Issue172
@@ -34,10 +34,10 @@
 28	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Segundo explicou o dirigente José Azevedo, a entrada em vigor dos novos diplomas trouxe consigo «inúmeras anomalias, geradoras de injustiças gritantes», como é o caso dos profissionais que, depois de subirem na carreira, ficam a ganhar menos do que antes da progressão.
-# source = CETEMPúblico n=723 sec=soc sem=94a
 # sent_id = CP723-2
+# source = CETEMPúblico n=723 sec=soc sem=94a
 # id = 3714
-1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	mark	_	_
+1	Segundo	segundo	SCONJ	PRP|@ADVL>	_	2	mark	_	_
 2	explicou	explicar	VERB	<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	advcl	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	dirigente	dirigente	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	2	nsubj	_	_
@@ -47,7 +47,7 @@
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	entrada	entrada	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
 10	em	em	ADP	PRP|@N<	_	11	case	_	MWE=em_vigor
-11	vigor	vigor	NOUN	N|@P<	_	9	nmod	_	_
+11	vigor	vigor	NOUN	N|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
 12-13	dos	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
 13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
@@ -67,7 +67,7 @@
 26	gritantes	gritante	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	25	amod	_	ChangedBy=Issue165|SpaceAfter=No
 27	»	»	PUNCT	PU|@PU	_	21	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-29	como	como	ADP	<com>|PRP|@COM	_	32	mark	_	_
+29	como	como	SCONJ	<com>|PRP|@COM	_	32	mark	_	_
 30	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	cop	_	ChangedBy=Issue167
 31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	caso	caso	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	25	acl:relcl	_	_
@@ -77,17 +77,17 @@
 35	profissionais	profissional	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	_
 36	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	47	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	40	punct	_	_
-38	depois	depois	ADV	ADV|@ADVL>	_	47	advmod	_	_
-39	de	de	ADP	PRP|@A<ARG	_	40	mark	_	_
-40	subirem	subir	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	38	advcl	_	_
+38	depois	depois	ADV	ADV|@ADVL>	_	40	mark	_	MWE=depois_de|MWEPOS=SCONJ
+39	de	de	ADP	PRP|@A<ARG	_	38	fixed	_	_
+40	subirem	subir	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	47	advcl	_	_
 41-42	na	_	_	_	_	_	_	_	_
 41	em	em	ADP	<sam->|PRP|@<SA	_	43	case	_	_
 42	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	43	det	_	_
 43	carreira	carreira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	40	obl	_	ChangedBy=Issue165|SpaceAfter=No
 44	,	,	PUNCT	PU|@PU	_	40	punct	_	_
-45	ficam	ficar	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	47	aux	_	_
-46	a	a	ADP	PRP|@PRT-AUX<	_	47	case	_	_
-47	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	35	acl:relcl	_	_
+45	ficam	ficar	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	acl:relcl	_	MWE=ficam_a|MWEPOS=AUX
+46	a	a	SCONJ	PRP|@PRT-AUX<	_	47	mark	_	_
+47	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	45	xcomp	_	_
 48	menos	pouco	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	_	47	advmod	_	_
 49-50	do	_	_	_	_	_	_	_	_
 49	de	de	ADP	<sam->|PRP|@COM	_	52	case	_	MWE=do_que
@@ -101,13 +101,12 @@
 56	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Quanto a horas extraordinárias, os enfermeiros salientam não terem acesso às «vultuosas verbas» que nelas se consomem e que para alguns profissionais da saúde funcionam «mais como complementos disfarçados de vencimento do que como resposta a necessidades efectivas».
-# source = CETEMPúblico n=723 sec=soc sem=94a
 # sent_id = CP723-3
+# source = CETEMPúblico n=723 sec=soc sem=94a
 # id = 3715
-# d2d = cc(consomem,e) -> cc(funcionam,e)  #106
-1	Quanto	quanto	ADV	ADV|@ADVL>	_	8	advmod	_	MWE=Quanto_a
-2	a	a	ADP	PRP|@A<	_	3	case	_	_
-3	horas	hora	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	1	obl	_	_
+1	Quanto	quanto	ADV	ADV|@ADVL>	_	3	case	_	MWE=Quanto_a|MWEPOS=ADP
+2	a	a	ADP	PRP|@A<	_	1	fixed	_	_
+3	horas	hora	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	obl	_	_
 4	extraordinárias	extraordinário	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	3	amod	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
@@ -159,14 +158,12 @@
 48	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Outros processos a contribuir para o descontentamento da FENSE são os que dizem respeito ao descongelamento de vagas, à criação de uma Ordem dos Enfermeiros e às equivalências de títulos académicos.
-# source = CETEMPúblico n=723 sec=soc sem=94a
 # sent_id = CP723-4
+# source = CETEMPúblico n=723 sec=soc sem=94a
 # id = 3716
-# d2d = punct(descongelamento,,) -> punct(criação,,)  #106
-# d2d = cc(descongelamento,e) -> cc(equivalências,e)  #106
 1	Outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	2	det	_	_
 2	processos	processo	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
-3	a	a	ADP	PRP|@N<	_	4	mark	_	_
+3	a	a	SCONJ	PRP|@N<	_	4	mark	_	_
 4	contribuir	contribuir	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	_
 5	para	para	ADP	PRP|@<PIV	_	7	case	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
@@ -209,15 +206,15 @@
 38	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Em relação ao primeiro, a desactualização dos quadros das instituições cria um desajustamento em relação às necessidades que faz com que, na prática -- diz José Azevedo -- nem um terço das vagas disponibilizadas seja aproveitado para colocar novos enfermeiros.
-# source = CETEMPúblico n=723 sec=soc sem=94a
 # sent_id = CP723-5
+# source = CETEMPúblico n=723 sec=soc sem=94a
 # id = 3717
-1	Em	em	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Em_relação_a
-2	relação	relação	NOUN	N|@P<	_	15	obl	_	_
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	MWE=Em_relação_a|MWEPOS=ADP
+2	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	1	fixed	_	_
 3-4	ao	_	_	_	_	_	_	_	_
-3	a	a	ADP	PRP|@N<	_	5	case	_	_
+3	a	a	ADP	PRP|@N<	_	1	fixed	_	_
 4	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	primeiro	primeiro	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|M|S|@P<	Gender=Masc|Number=Sing|NumType=Ord	2	nmod	_	ChangedBy=Issue165|ChangedBy=Issue172|SpaceAfter=No
+5	primeiro	primeiro	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|M|S|@P<	Gender=Masc|Number=Sing|NumType=Ord	15	obl	_	ChangedBy=Issue165|ChangedBy=Issue172|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	desactualização	desactualização	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
@@ -232,15 +229,15 @@
 15	cria	criar	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	ccomp	_	_
 16	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	desajustamento	desajustamento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	15	obj	_	_
-18	em	em	ADP	<sam->|PRP|@N<	_	19	case	_	MWE=em_relação_a
-19	relação	relação	NOUN	N|@P<	_	17	nmod	_	_
+18	em	em	ADP	<sam->|PRP|@N<	_	22	case	_	MWE=em_relação_a|MWEPOS=ADP
+19	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	18	fixed	_	_
 20-21	às	_	_	_	_	_	_	_	_
-20	a	a	ADP	PRP|@N<	_	22	case	_	_
+20	a	a	ADP	PRP|@N<	_	18	fixed	_	_
 21	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
-22	necessidades	necessidade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	19	nmod	_	_
+22	necessidades	necessidade	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	nmod	_	_
 23	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	24	nsubj	_	_
 24	faz	fazer	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	_
-25	com	com	ADP	PRP|@<ADVL	_	44	mark	_	_
+25	com	com	SCONJ	PRP|@<ADVL	_	44	mark	_	_
 26	que	que	SCONJ	KS|@SUB	_	44	mark	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 28-29	na	_	_	_	_	_	_	_	_
@@ -262,20 +259,19 @@
 42	disponibilizadas	disponibilizar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	41	acl	_	_
 43	seja	ser	AUX	<cjt>|<aux>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	aux:pass	_	_
 44	aproveitado	aproveitar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	24	acl	_	_
-45	para	para	ADP	PRP|@<ADVL	_	46	mark	_	_
+45	para	para	SCONJ	PRP|@<ADVL	_	46	mark	_	_
 46	colocar	colocar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	44	advcl	_	_
 47	novos	novo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	48	amod	_	_
 48	enfermeiros	enfermeiro	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	46	obj	_	ChangedBy=Issue165|SpaceAfter=No
 49	.	.	PUNCT	PU|@PU	_	32	punct	_	_
 
 # text = Resultado: há, ao mesmo tempo, «instituições com falta de pessoal e enfermeiros no desemprego».
-# source = CETEMPúblico n=723 sec=soc sem=94a
 # sent_id = CP723-6
+# source = CETEMPúblico n=723 sec=soc sem=94a
 # id = 3718
-# d2d = cc(instituições,e) -> cc(enfermeiros,e)  #106
 1	Resultado	resulto	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
-3	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-APP	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	ChangedBy=Issue165|SpaceAfter=No
+3	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-APP	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	appos	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5-6	ao	_	_	_	_	_	_	_	_
 5	a	a	ADP	<sam->|PRP|@N<	_	8	case	_	_
@@ -299,8 +295,8 @@
 22	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = O que a FENSE pede é «um regime de excepção na contratação de novos enfermeiros, como o exigem as circunstâncias».
-# source = CETEMPúblico n=723 sec=soc sem=94a
 # sent_id = CP723-7
+# source = CETEMPúblico n=723 sec=soc sem=94a
 # id = 3719
 1	O	o	PRON	<dem>|DET|M|S|@SC>	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	5	obj	_	_

@@ -1,8 +1,7 @@
 # text = Os fatos estão aí e são estarrecedores.
-# source = CETENFolha n=618 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF618-1
+# source = CETENFolha n=618 cad=Dinheiro sec=eco sem=94a
 # id = 2601
-# d2d = cc(aí,e) -> cc(estarrecedores,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	fatos	fato	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	estão	estar	AUX	<mv>|<first-cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -13,8 +12,8 @@
 8	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Já passou da hora de governo, prestadores de serviços e usuários se empenharem para não só aprofundar as discussões sobre a ineficácia do sistema de saúde, como também para buscar alternativas e soluções viáveis, a fim de proporcionar um atendimento mais digno à população em geral.
-# source = CETENFolha n=618 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF618-2
+# source = CETENFolha n=618 cad=Dinheiro sec=eco sem=94a
 # id = 2602
 1	Já	já	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	passou	passar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -22,7 +21,7 @@
 3	de	de	ADP	<sam->|PRP|@<PIV	_	5	case	_	_
 4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	hora	hora	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obj	_	_
-6	de	de	ADP	PRP|@N<	_	15	mark	_	_
+6	de	de	SCONJ	PRP|@N<	_	15	mark	_	_
 7	governo	governo	NOUN	<first-cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	prestadores	prestador	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	conj	_	_
@@ -32,7 +31,7 @@
 13	usuários	usuário	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	conj	_	_
 14	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	15	expl	_	_
 15	empenharem	empenhar	VERB	<mv>|<se-passive>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	5	acl	_	_
-16	para	para	ADP	<first-cjt>|PRP|@<ADVL	_	19	mark	_	_
+16	para	para	SCONJ	<first-cjt>|PRP|@<ADVL	_	19	mark	_	_
 17	não	não	ADV	_	Polarity=Neg	19	advmod	_	MWE=não_só
 18	só	só	ADV	ADV|@CO	_	17	fixed	_	_
 19	aprofundar	aprofundar	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	advcl	_	_
@@ -50,15 +49,15 @@
 30	,	,	PUNCT	PU|@PU	_	34	punct	_	_
 31	como	como	ADV	ADV|@CO	_	34	cc	_	MWE=como_também|d2d:#106
 32	também	também	ADV	ADV|@A<	_	31	fixed	_	_
-33	para	para	ADP	<cjt>|<first-cjt>|PRP|@<ADVL	_	34	mark	_	_
+33	para	para	SCONJ	<cjt>|<first-cjt>|PRP|@<ADVL	_	34	mark	_	_
 34	buscar	buscar	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	conj	_	_
 35	alternativas	alternativa	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	34	obj	_	_
 36	e	e	CCONJ	<co-acc>|KC|@CO	_	37	cc	_	d2d:#106
 37	soluções	solução	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	35	conj	_	_
 38	viáveis	viável	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	37	amod	_	SpaceAfter=No
 39	,	,	PUNCT	PU|@PU	_	43	punct	_	_
-40	a	a	ADP	PRP|@<ADVL	_	43	mark	_	MWEPOS=ADP|MWE=a_fim_de
-41	fim	fim	NOUN	N|@P<	_	40	fixed	_	_
+40	a	a	ADP	PRP|@<ADVL	_	43	mark	_	MWE=a_fim_de|MWEPOS=SCONJ
+41	fim	fim	NOUN	N|@P<	Gender=Masc|Number=Sing	40	fixed	_	_
 42	de	de	ADP	PRP|@N<	_	40	fixed	_	_
 43	proporcionar	proporcionar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	acl	_	_
 44	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
@@ -74,11 +73,9 @@
 53	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = A crise da saúde tem solução, basta vaciná-la contra as ingerências político-partidárias, as omissões e desacertos dos responsáveis pelo setor.
-# source = CETENFolha n=618 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF618-3
+# source = CETENFolha n=618 cad=Dinheiro sec=eco sem=94a
 # id = 2603
-# d2d = punct(ingerências,,) -> punct(omissões,,)  #106
-# d2d = cc(ingerências,e) -> cc(desacertos,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	crise	crise	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_

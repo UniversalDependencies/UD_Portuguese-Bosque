@@ -1,6 +1,6 @@
 # text = Olhando com atenção os jogos da Copa é possível chegar a uma conclusão oposta à de Parreira.
-# source = CETENFolha n=559 cad=Esporte sec=des sem=94a
 # sent_id = CF559-1
+# source = CETENFolha n=559 cad=Esporte sec=des sem=94a
 # id = 2335
 1	Olhando	olhar	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	10	advcl	_	_
 2	com	com	ADP	PRP|@<ADVL	_	3	case	_	_
@@ -17,7 +17,7 @@
 12	a	a	ADP	PRP|@<PIV	_	14	case	_	_
 13	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	conclusão	conclusão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obj	_	_
-15	oposta	oposto	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	14	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+15	oposta	oposto	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	14	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 16-17	à	_	_	_	_	_	_	_	_
 16	a	a	ADP	<sam->|PRP|@<PIV	_	17	case	_	_
 17	a	o	PRON	<-sam>|DET|F|S|@P<	Gender=Fem|Number=Sing|PronType=Dem	15	obj	_	_
@@ -26,22 +26,22 @@
 20	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Foi justamente graças à arte de alguns de seus jogadores que equipes como a Bulgária, a Romênia e a Nigéria chegaram muito mais longe do que jamais tinham conseguido.
-# source = CETENFolha n=559 cad=Esporte sec=des sem=94a
 # sent_id = CF559-2
+# source = CETENFolha n=559 cad=Esporte sec=des sem=94a
 # id = 2336
-1	Foi	foi	ADV	<foc>|ADV|@ADVL>	_	23	mark	_	_
+1	Foi	foi	SCONJ	<foc>|ADV|@ADVL>	_	23	mark	_	_
 2	justamente	justamente	ADV	ADV|@ADVL>	_	23	advmod	_	_
-3	graças	graças	ADV	ADV|@ADVL>	_	23	advmod	_	MWE=graças_a
+3	graças	graças	ADV	ADV|@ADVL>	_	23	case	_	MWE=graças_a|MWEPOS=ADP
 4-5	à	_	_	_	_	_	_	_	_
 4	a	a	ADP	PRP|@A<	_	6	case	_	_
 5	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	arte	arte	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
-8	alguns	algum	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Ind	6	det	_	_
+8	alguns	algum	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Ind	6	nmod	_	_
 9	de	de	ADP	PRP|@N<	_	11	case	_	_
 10	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	11	det	_	_
 11	jogadores	jogador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
-12	que	que	ADV	<foc>|ADV|@ADVL>	_	23	mark	_	_
+12	que	que	SCONJ	<foc>|ADV|@ADVL>	_	23	mark	_	_
 13	equipes	equipe	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	23	nsubj	_	_
 14	como	como	ADP	<com>|PRP|@N<	_	16	case	_	_
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
@@ -55,19 +55,19 @@
 23	chegaram	chegar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 24	muito	muito	ADV	<quant>|ADV|@>A	_	25	advmod	_	_
 25	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	26	advmod	_	_
-26	longe	longe	ADV	ADV|@<SA	_	23	advmod	_	_
+26	longe	longe	ADV	ADV|@<SA	_	32	mark	_	_
 27-28	do	_	_	_	_	_	_	_	_
-27	de	de	ADP	<sam->|PRP|@COM	_	32	mark	_	MWE=do_que
+27	de	de	ADP	<sam->|PRP|@COM	_	32	mark	_	MWE=do_que|MWEPOS=SCONJ
 28	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	27	fixed	_	_
 29	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	27	fixed	_	_
 30	jamais	jamais	ADV	ADV|@ADVL>	_	32	advmod	_	_
 31	tinham	ter	AUX	<aux>|V|IMPF|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	32	aux	_	_
-32	conseguido	conseguir	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	26	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+32	conseguido	conseguir	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	23	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 33	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
 # text = Num campeonato em que predominaram as defesas fechadas, o que fez a diferença foi a imaginação ouso dizer, para horror de Parreira, a «magia» de um punhado de craques: Romário, Baggio, Stoichkov, Hagi, Brolin...
-# source = CETENFolha n=559 cad=Esporte sec=des sem=94a
 # sent_id = CF559-3
+# source = CETENFolha n=559 cad=Esporte sec=des sem=94a
 # id = 2337
 1-2	Num	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<first-cjt>|<sam->|PRP|@STA	_	3	case	_	_
@@ -81,7 +81,7 @@
 9	fechadas	fechado	ADJ	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur	8	amod	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 11	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
-12	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	_	_
+12	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	PronType=Rel	13	nsubj	_	_
 13	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	diferença	diferença	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	obj	_	_

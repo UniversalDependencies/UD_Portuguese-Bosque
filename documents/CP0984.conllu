@@ -1,6 +1,6 @@
 # text = Elogiei a escolha do meu anfitrião, enquanto discorria, a despropósito, acerca do papel do «consejero de créacion», que tinha talvez inventado aquela espécie de centro de mesa, com batatas acabadas de fritar (sim, batatas fritas), certamente em fatias espantosamente finas e em azeite a ferver, tratadas a modos de «soufflé».
-# source = CETEMPúblico n=984 sec=nd sem=94b
 # sent_id = CP984-1
+# source = CETEMPúblico n=984 sec=nd sem=94b
 # id = 5055
 1	Elogiei	elogiar	VERB	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -11,7 +11,7 @@
 6	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	7	det	_	_
 7	anfitrião	anfitrião	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-9	enquanto	enquanto	ADV	<rel>|ADV|@ADVL>	_	10	advmod	_	_
+9	enquanto	enquanto	SCONJ	<rel>|ADV|@ADVL>	_	10	mark	_	_
 10	discorria	discorrer	VERB	<mv>|V|IMPF|1S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	1	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 12	a	a	ADP	PRP|@<ADVL	_	13	case	_	_
@@ -40,12 +40,12 @@
 33	de	de	ADP	PRP|@N<	_	34	case	_	_
 34	centro	centro	NOUN	_	Gender=Masc|Number=Sing	32	nmod	_	MWE=centro_de_mesa|MWEPOS=NOUN
 35	de	de	ADP	_	_	34	compound	_	_
-36	mesa	mesa	NOUN	_	_	34	compound	_	ChangedBy=Issue165|SpaceAfter=No
+36	mesa	mesa	NOUN	_	Gender=Fem|Number=Sing	34	compound	_	ChangedBy=Issue165|SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	40	punct	_	_
 38	com	com	ADP	PRP|@N<PRED	_	39	case	_	_
 39	batatas	batata	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	34	nmod	_	_
 40	acabadas	acabar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	39	acl	_	_
-41	de	de	ADP	PRP|@<ADVL	_	42	mark	_	_
+41	de	de	SCONJ	PRP|@<ADVL	_	42	mark	_	_
 42	fritar	fritar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	40	xcomp	_	_
 43	(	(	PUNCT	PU|@PU	_	46	punct	_	ChangedBy=Issue165|SpaceAfter=No
 44	sim	sim	ADV	ADV|@N<PRED	_	46	advmod	_	SpaceAfter=No
@@ -62,7 +62,7 @@
 55	e	e	CCONJ	<co-postnom>|KC|@CO	_	57	cc	_	d2d:#106
 56	em	em	ADP	<cjt>|PRP|@N<	_	57	case	_	_
 57	azeite	azeite	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	52	conj	_	_
-58	a	a	ADP	PRP|@N<	_	59	mark	_	_
+58	a	a	SCONJ	PRP|@N<	_	59	mark	_	_
 59	ferver	ferver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	57	acl	_	ChangedBy=Issue165|SpaceAfter=No
 60	,	,	PUNCT	PU|@PU	_	59	punct	_	_
 61	tratadas	tratar	VERB	<mv>|V|PCP|F|P|@ICL-N<PRED	Gender=Fem|Number=Plur|VerbForm=Part	39	acl	_	_
@@ -75,13 +75,9 @@
 68	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Iniciei-me com uma «morcilla de Burgos», enrolada numa massa fofa, e dediquei-me com carinho a um naco de bonito, frio e escabechado.
-# source = CETEMPúblico n=984 sec=nd sem=94b
 # sent_id = CP984-2
+# source = CETEMPúblico n=984 sec=nd sem=94b
 # id = 5056
-# d2d = punct(Iniciei-,,) -> punct(dediquei-,,)  #106
-# d2d = cc(Iniciei-,e) -> cc(dediquei-,e)  #106
-# d2d = punct(Iniciei-,,) -> punct(dediquei-,,)  #106
-# d2d = cc(frio,e) -> cc(escabechado,e)  #106
 1-2	Iniciei-me	_	_	_	_	_	_	_	_
 1	Iniciei	iniciar	VERB	<mv>|<first-cjt>|<hyphen>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 2	me	eu	PRON	<refl>|PERS|M/F|1S|ACC|@<ACC	Case=Acc|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	1	obj	_	_
@@ -92,14 +88,14 @@
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	Burgos	Burgos	X	PROP|@P<	Number=Sing	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 9	»	»	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
-10	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+10	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 11	enrolada	enrolar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	6	acl	_	_
 12-13	numa	_	_	_	_	_	_	_	_
 12	em	em	ADP	<sam->|PRP|@<ADVL	_	14	case	_	_
 13	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	massa	massa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137
 15	fofa	fofo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	amod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 17	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 18-19	dediquei-me	_	_	_	_	_	_	_	_
 18	dediquei	dedicar	VERB	<mv>|<cjt>|<hyphen>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	1	conj	_	_
@@ -118,8 +114,8 @@
 31	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = A conversa seguia animada, uma dose de «marketing», 200 gramas de imagem, levadas ao lume com «public affairs» q.b.
-# source = CETEMPúblico n=984 sec=nd sem=94b
 # sent_id = CP984-3
+# source = CETEMPúblico n=984 sec=nd sem=94b
 # id = 5057
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	conversa	conversa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
@@ -148,18 +144,18 @@
 24	public	public	X	N|@>N	_	18	obl	_	MWE=public_affairs
 25	affairs	affairs	X	N|@P<	_	24	compound	_	ChangedBy=Issue165|SpaceAfter=No
 26	»	»	PUNCT	PU|@PU	_	24	punct	_	_
-27	q.b	q.b	ADJ	ADV|@N<	_	24	amod	_	ChangedBy=Issue165|SpaceAfter=No
+27	q.b	q.b	ADJ	ADV|@N<	Gender=Masc|Number=Sing	24	amod	_	ChangedBy=Issue165|SpaceAfter=No
 28	.	.	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 
 # text = Gosto de levar a sério o meu papel de consultor encartado.
-# source = CETEMPúblico n=984 sec=nd sem=94b
 # sent_id = CP984-4
+# source = CETEMPúblico n=984 sec=nd sem=94b
 # id = 5058
 1	Gosto	gostar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-2	de	de	ADP	PRP|@<PIV	_	3	mark	_	_
+2	de	de	SCONJ	PRP|@<PIV	_	3	mark	_	_
 3	levar	levar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	xcomp	_	_
 4	a	a	ADP	PRP|@<OC	_	5	case	_	MWE=a_sério
-5	sério	sério	NOUN	N|@P<	_	3	xcomp	_	_
+5	sério	sério	ADJ	N|@P<	Gender=Masc|Number=Sing	3	xcomp	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 7	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	8	det	_	_
 8	papel	papel	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_

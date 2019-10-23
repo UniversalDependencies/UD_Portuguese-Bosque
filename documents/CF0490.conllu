@@ -1,17 +1,17 @@
 # text = Mazinho deve ser escalado contra EUA
-# source = CETENFolha n=490 cad=Esporte sec=des sem=94a
 # sent_id = CF490-1
+# source = CETENFolha n=490 cad=Esporte sec=des sem=94a
 # id = 2063
 1	Mazinho	Mazinho	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
-2	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+2	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	4	aux:pass	_	_
-4	escalado	escalar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+4	escalado	escalar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	xcomp	_	_
 5	contra	contra	ADP	PRP|@<ADVL	_	6	case	_	_
 6	EUA	EUA	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	4	obl	_	ChangedBy=Issue137
 
 # text = Mauro Silva diz que seria 'um desgosto' ir para reserva; para Zagalo, seleção de 82 venceria se jogasse como a de 94
-# source = CETENFolha n=490 cad=Esporte sec=des sem=94a
 # sent_id = CF490-2
+# source = CETENFolha n=490 cad=Esporte sec=des sem=94a
 # id = 2064
 1	Mauro	Mauro	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Mauro_Silva|MWEPOS=PROPN
 2	Silva	Silva	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -41,14 +41,14 @@
 26	94	94	NUM	<card>|NUM|M|P|@P<	NumType=Card	24	nmod	_	ChangedBy=Issue168
 
 # text = O meia Mazinho deve substituir o meia defensivo Mauro Silva segunda-feira contra os Estados Unidos pela segunda fase (oitavas-de-final) da Copa do Mundo.
-# source = CETENFolha n=490 cad=Esporte sec=des sem=94a
 # sent_id = CF490-5
+# source = CETENFolha n=490 cad=Esporte sec=des sem=94a
 # id = 2065
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	meia	meia	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 3	Mazinho	Mazinho	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	appos	_	_
-4	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-5	substituir	substituir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+4	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	substituir	substituir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	meia	meia	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
 8	defensivo	defensivo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	_
@@ -78,8 +78,8 @@
 29	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O técnico Carlos Alberto Parreira afirmou ontem que a seleção brasileira precisará tocar mais a bola contra um adversário que ele prevê muito defensivo.
-# source = CETENFolha n=490 cad=Esporte sec=des sem=94a
 # sent_id = CF490-6
+# source = CETENFolha n=490 cad=Esporte sec=des sem=94a
 # id = 2066
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	técnico	técnico	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
@@ -104,6 +104,6 @@
 21	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
 22	prevê	prever	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	_	_
 23	muito	muito	ADV	<quant>|ADV|@>A	_	24	advmod	_	_
-24	defensivo	defensivo	ADJ	ADJ|M|S|@<ADVL	Gender=Masc|Number=Sing	19	acl	_	ChangedBy=Issue165|SpaceAfter=No
+24	defensivo	defensivo	ADJ	ADJ|M|S|@<ADVL	Gender=Masc|Number=Sing	22	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

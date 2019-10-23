@@ -1,6 +1,6 @@
 # text = Os Estados Unidos reexaminarão «as bases» do acordo de cooperação económica concluído com o Japão, se não se alcançarem «acordos credíveis» entre os dois países durante a cimeira Clinton-Hosokawa, prevista para 11 de Fevereiro em Washington.
-# source = CETEMPúblico n=494 sec=eco sem=94a
 # sent_id = CP494-1
+# source = CETEMPúblico n=494 sec=eco sem=94a
 # id = 2591
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Estados	Estados	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	MWE=Estados_Unidos
@@ -51,10 +51,9 @@
 45	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = A advertência foi feita ontem em Tóquio pelo secretário norte-americano do Tesouro, Lloyd Bentsen, depois de se ter encontrado a seu pedido com o primeiro-ministro Morihiro Hosokawa e o ministro das Finanças Hirohisa Fujii.
-# source = CETEMPúblico n=494 sec=eco sem=94a
 # sent_id = CP494-2
+# source = CETEMPúblico n=494 sec=eco sem=94a
 # id = 2592
-# d2d = cc(primeiro-ministro,e) -> cc(ministro,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	advertência	advertência	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj:pass	_	_
 3	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
@@ -75,11 +74,11 @@
 16	Lloyd	Lloyd	PROPN	_	Gender=Masc|Number=Sing	10	appos	_	ChangedBy=Issue119|MWE=LLoyd_Bentsen|MWEPOS=PROPN
 17	Bentsen	Bentsen	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-19	depois	depois	ADV	ADV|@<ADVL	_	4	advmod	_	_
-20	de	de	ADP	PRP|@A<ARG	_	23	mark	_	_
+19	depois	depois	ADV	ADV|@<ADVL	_	23	mark	_	MWE=depois_de|MWEPOS=SCONJ
+20	de	de	ADP	PRP|@A<ARG	_	19	fixed	_	_
 21	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	23	expl	_	ChangedBy=Issue135
 22	ter	ter	AUX	<aux>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	23	aux	_	_
-23	encontrado	encontrar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	19	advcl	_	_
+23	encontrado	encontrar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	4	advcl	_	_
 24	a	a	ADP	PRP|@<ADVL	_	26	case	_	_
 25	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	26	det	_	_
 26	pedido	pedido	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	ChangedBy=Issue137
@@ -94,14 +93,14 @@
 35-36	das	_	_	_	_	_	_	_	_
 35	de	de	ADP	<sam->|PRP|@N<	_	37	case	_	_
 36	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_
-37	Finanças	finanças	NOUN	N|@P<	_	34	nmod	_	_
+37	Finanças	finanças	NOUN	N|@P<	Gender=Fem|Number=Plur	34	nmod	_	_
 38	Hirohisa	Hirohisa	PROPN	_	Gender=Masc|Number=Sing	34	appos	_	ChangedBy=Issue119|MWE=Hirohisa_Fujii|MWEPOS=PROPN
 39	Fujii	Fujii	PROPN	_	Number=Sing	38	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 40	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Menos investimento estrangeiro na China
-# source = CETEMPúblico n=494 sec=eco sem=94a
 # sent_id = CP494-3
+# source = CETEMPúblico n=494 sec=eco sem=94a
 # id = 2593
 1	Menos	pouco	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_
 2	investimento	investimento	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
@@ -112,20 +111,16 @@
 6	China	China	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 
 # text = Os investimentos estrangeiros vão continuar a afluir este ano à China, mas a um ritmo menos elevado do que em 1993, e o governo vai reforçar o controlo sobre as «joint-ventures», segundo o jornal «China Daily».
-# source = CETEMPúblico n=494 sec=eco sem=94a
 # sent_id = CP494-4
+# source = CETEMPúblico n=494 sec=eco sem=94a
 # id = 2594
-# d2d = punct(ano,,) -> punct(ritmo,,)  #106
-# d2d = punct(afluir,,) -> punct(reforçar,,)  #106
-# d2d = cc(afluir,e) -> cc(reforçar,e)  #106
-# d2d = cc(ano,mas) -> cc(ritmo,mas)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	investimentos	investimento	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
 3	estrangeiros	estrangeiro	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
 4	vão	ir	AUX	<first-cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-5	continuar	continuar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	7	aux	_	_
-6	a	a	ADP	PRP|@PRT-AUX<	_	7	case	_	_
-7	afluir	afluir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+5	continuar	continuar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	MWE=continuar_a|MWEPOS=AUX
+6	a	a	SCONJ	PRP|@PRT-AUX<	_	7	mark	_	_
+7	afluir	afluir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
 8	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
 9	ano	ano	NOUN	<first-cjt>|<np-def>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	7	obl	_	_
 10-11	à	_	_	_	_	_	_	_	_
@@ -169,8 +164,8 @@
 46	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = A baixa irá dever-se principalmente ao arrefecimento da actividade imobiliária, cujo crescimento exponencial no ano de 1993 se deveu em grande parte a capitais estrangeiros.
-# source = CETEMPúblico n=494 sec=eco sem=94a
 # sent_id = CP494-5
+# source = CETEMPúblico n=494 sec=eco sem=94a
 # id = 2595
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	baixa	baixa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
@@ -209,8 +204,8 @@
 31	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Adiada negociação da Argélia com o FMI
-# source = CETEMPúblico n=494 sec=eco sem=94a
 # sent_id = CP494-6
+# source = CETEMPúblico n=494 sec=eco sem=94a
 # id = 2596
 1	Adiada	adiar	VERB	<mv>|V|PCP|F|S|@ICL-UTT	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
 2	negociação	negociação	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	1	nsubj	_	_

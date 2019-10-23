@@ -1,9 +1,7 @@
 # text = Mais quatro pessoas foram mortas ontem num bairro pobre de Istambul, durante os recontros entre manifestantes alevitas e a polícia, pouco antes de representantes de uns e outros terem chegado a um acordo pouco auspicioso.
-# source = CETEMPúblico n=930 sec=pol sem=95a
 # sent_id = CP930-1
+# source = CETEMPúblico n=930 sec=pol sem=95a
 # id = 4784
-# d2d = cc(uns,e) -> cc(outros,e)  #106
-# d2d = cc(alevitas,e) -> cc(polícia,e)  #106
 1	Mais	mais	ADV	<setop>|ADV|@>A	_	2	advmod	_	_
 2	quatro	quatro	NUM	<card>|NUM|F|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168
 3	pessoas	pessoa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj:pass	_	_
@@ -29,15 +27,15 @@
 22	polícia	polícia	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	conj	_	ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	33	punct	_	_
 24	pouco	pouco	ADV	<quant>|ADV|@>A	_	25	advmod	_	_
-25	antes	antes	ADV	ADV|@<ADVL	_	5	advmod	_	_
-26	de	de	ADP	PRP|@A<ARG	_	33	mark	_	_
+25	antes	antes	ADV	ADV|@<ADVL	_	33	mark	_	MWE=antes_de|MWEPOS=SCONJ
+26	de	de	ADP	PRP|@A<ARG	_	25	fixed	_	_
 27	representantes	representante	NOUN	<np-idf>|N|M/F|P|@SUBJ>	Gender=Unsp|Number=Plur	33	nsubj	_	_
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	uns	um	PRON	<first-cjt>|<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Ind	27	det	_	_
 30	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	d2d:#106
 31	outros	outro	PRON	<cjt>|<diff>|<KOMP>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Ind	29	conj	_	_
 32	terem	ter	AUX	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	33	aux	_	_
-33	chegado	chegar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	25	acl	_	_
+33	chegado	chegar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	5	acl	_	_
 34	a	a	ADP	PRP|@<SA	_	36	case	_	_
 35	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
 36	acordo	acordo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	33	obl	_	_
@@ -46,10 +44,9 @@
 39	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = As últimas mortes de que há notícia ocorreram no bairro de Umraniye, na margem asiática da maior cidade turca, onde cerca de 1500 alevitas saíram para a rua para protestar contra a intervenção da polícia num outro bairro, Gazi Mahallesi, onde nos últimos três dias morreram entre 17 e 23 pessoas em manifestações.
-# source = CETEMPúblico n=930 sec=pol sem=95a
 # sent_id = CP930-2
+# source = CETEMPúblico n=930 sec=pol sem=95a
 # id = 4785
-# d2d = cc(17,e) -> cc(23,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 2	últimas	último	ADJ	<NUM-ord>|ADJ|F|P|@>N	Gender=Fem|Number=Plur|NumType=Ord	3	amod	_	ChangedBy=Issue172
 3	mortes	morte	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	8	nsubj	_	_
@@ -77,16 +74,16 @@
 22	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
 23	turca	turco	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-25	onde	onde	ADV	<rel>|ADV|@ADVL>	_	30	advmod	_	_
-26	cerca	cerca	ADV	ADV|@>A	_	28	advmod	_	MWE=cerca_de
-27	de	de	ADP	<prp>|PRP|@A<	_	26	case	_	_
-28	1500	1500	NUM	<card>|<year>|<date>|NUM|M|S|<card>|M|P|@>	NumType=Card	29	dep	_	ChangedBy=Issue168
+25	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	30	obl	_	_
+26	cerca	cerca	ADV	ADV|@>A	_	28	advmod	_	MWE=cerca_de|MWEPOS=ADV
+27	de	de	ADP	<prp>|PRP|@A<	_	26	fixed	_	_
+28	1500	1500	NUM	<card>|<year>|<date>|NUM|M|S|<card>|M|P|@>	NumType=Card	29	nummod	_	ChangedBy=Issue168
 29	alevitas	alevita	NOUN	<np-idf>|N|M/F|P|@SUBJ>	Gender=Unsp|Number=Plur	30	nsubj	_	_
 30	saíram	sair	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	11	acl:relcl	_	_
 31	para	para	ADP	PRP|@<SA	_	33	case	_	_
 32	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	rua	rua	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	30	obl	_	_
-34	para	para	ADP	PRP|@<ADVL	_	35	mark	_	_
+34	para	para	SCONJ	PRP|@<ADVL	_	35	mark	_	_
 35	protestar	protestar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	30	advcl	_	_
 36	contra	contra	ADP	PRP|@<ADVL	_	38	case	_	_
 37	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
@@ -104,7 +101,7 @@
 47	Gazi	Gazi	PROPN	_	Gender=Masc|Number=Sing	45	appos	_	ChangedBy=Issue119|MWE=Gazi_Mahallesi|MWEPOS=PROPN
 48	Mahallesi	Mahallesi	PROPN	_	Number=Sing	47	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 49	,	,	PUNCT	PU|@PU	_	47	punct	_	_
-50	onde	onde	ADV	<rel>|ADV|@ADVL>	_	56	advmod	_	_
+50	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	56	obl	_	_
 51-52	nos	_	_	_	_	_	_	_	_
 51	em	em	ADP	<sam->|PRP|@ADVL>	_	55	case	_	_
 52	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	_	_

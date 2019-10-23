@@ -1,9 +1,7 @@
 # text = Pela primeira vez neste século, vastos setores das classes médias ocidentais não conseguirão efetivar a proeza social -- cimento da democracia e do capitalismo -- realizada pelas gerações precedentes: garantir a seus filhos um nível de vida igual ou superior ao que seus pais haviam desfrutado.
-# source = CETENFolha n=266 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF266-1
+# source = CETENFolha n=266 cad=Caderno Especial sec=nd sem=94b
 # id = 1120
-# d2d = cc(igual,ou) -> cc(superior,ou)  #106
-# d2d = cc(democracia,e) -> cc(capitalismo,e)  #106
 1	Pela	pela	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	16	obl	_	MWE=Pela_primeira_vez
 2	primeira	primeira	ADP	PRP|@N<	_	3	case	_	_
 3	vez	vez	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
@@ -17,8 +15,8 @@
 10-11	das	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@N<	_	12	obl	_	_
 11	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
-12	classes	classes	NOUN	_	_	9	nmod	_	MWE=classes_médias|MWEPOS=NOUN
-13	médias	médias	ADJ	_	_	12	amod	_	_
+12	classes	classes	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	MWE=classes_médias|MWEPOS=NOUN
+13	médias	médias	ADJ	_	Gender=Fem|Number=Plur	12	amod	_	_
 14	ocidentais	ocidental	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	12	amod	_	_
 15	não	não	ADV	_	Polarity=Neg	16	advmod	_	_
 16	conseguirão	conseguir	VERB	<mv>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -67,12 +65,9 @@
 55	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Ensino universitário, contas de poupança nos bancos, investimentos em ações e imóveis não asseguram a transmissão do patrimônio familiar dos pais para os filhos.
-# source = CETENFolha n=266 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF266-2
+# source = CETENFolha n=266 cad=Caderno Especial sec=nd sem=94b
 # id = 1121
-# d2d = punct(Ensino,,) -> punct(investimentos,,)  #106
-# d2d = cc(ações,e) -> cc(imóveis,e)  #106
-# d2d = punct(Ensino,,) -> punct(contas,,)  #106
 1	Ensino	ensino	NOUN	<first-cjt>|<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
 2	universitário	universitário	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	d2d:#106
@@ -108,12 +103,9 @@
 30	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Esse quadro de inseguranças e de incertezas que já dura há duas décadas contribui para transformar o integrismo, o racismo, a intolerância política num formidável desafio ao sistema democrático neste nosso fim de século.
-# source = CETENFolha n=266 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF266-3
+# source = CETENFolha n=266 cad=Caderno Especial sec=nd sem=94b
 # id = 1122
-# d2d = punct(integrismo,,) -> punct(intolerância,,)  #106
-# d2d = cc(inseguranças,e) -> cc(incertezas,e)  #106
-# d2d = punct(integrismo,,) -> punct(racismo,,)  #106
 1	Esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	quadro	quadro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
 3	de	de	ADP	<first-cjt>|PRP|@N<	_	4	case	_	_
@@ -128,7 +120,7 @@
 12	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168
 13	décadas	década	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	10	obl	_	ChangedBy=Issue137
 14	contribui	contribuir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-15	para	para	ADP	PRP|@<PIV	_	16	mark	_	_
+15	para	para	SCONJ	PRP|@<PIV	_	16	mark	_	_
 16	transformar	transformar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	14	xcomp	_	_
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	integrismo	integrismo	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	16	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -159,16 +151,15 @@
 40	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = LUIZ FELIPE DE ALENCASTRO, 48, historiador, é pesquisador do Cebrap (Centro Brasileiro de Análise e Planejamento) e professor do Instituto de Economia da Unicamp (Universidade Estadual de Campinas).
-# source = CETENFolha n=266 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF266-4
+# source = CETENFolha n=266 cad=Caderno Especial sec=nd sem=94b
 # id = 1123
-# d2d = cc(pesquisador,e) -> cc(professor,e)  #106
 1	LUIZ	LUIZ	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	MWE=LUIZ_FELIPE_DE_ALENCASTRO
 2	FELIPE	FELIPE	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 3	DE	DE	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 4	ALENCASTRO	ALENCASTRO	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-6	48	48	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+6	48	48	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 8	historiador	historiador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -183,7 +174,7 @@
 17	Brasileiro	Brasileiro	PROPN	PROP|@N<	Number=Sing	16	flat:name	_	_
 18	de	de	ADP	PRP|@N<	_	19	case	_	_
 19	Análise	Análise	PROPN	_	Number=Sing	16	nmod	_	ChangedBy=Issue119|MWE=Análise_e_Planejamento|MWEPOS=PROPN
-20	e	e	CCONJ	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
+20	e	e	CCONJ	_	_	19	flat:name	_	ChangedBy=Issue119
 21	Planejamento	Planejamento	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 22	)	)	PUNCT	PU|@PU	_	16	punct	_	_
 23	e	e	CCONJ	<co-sc>|KC|@CO	_	24	cc	_	d2d:#106

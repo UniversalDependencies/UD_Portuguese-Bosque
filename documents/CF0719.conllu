@@ -1,10 +1,7 @@
 # text = Durante a negociação, ontem à tarde, Muller telefonou para o presidente do São Paulo, Fernando Casal de Rey, e se lamentou.
-# source = CETENFolha n=719 cad=Esporte sec=des sem=94a
 # sent_id = CF719-1
+# source = CETENFolha n=719 cad=Esporte sec=des sem=94a
 # id = 3020
-# d2d = punct(telefonou,,) -> punct(lamentou,,)  #106
-# d2d = punct(telefonou,,) -> punct(lamentou,,)  #106
-# d2d = cc(telefonou,e) -> cc(lamentou,e)  #106
 1	Durante	durante	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	negociação	negociação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -25,28 +22,25 @@
 16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	São	São	PROPN	_	Gender=Masc|Number=Sing	14	nmod	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
 18	Paulo	Paulo	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-19	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+19	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 20	Fernando	Fernando	PROPN	_	Gender=Masc|Number=Sing	14	appos	_	ChangedBy=Issue119|MWE=Fernando_Casal|MWEPOS=PROPN
 21	Casal	Casal	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	Rey	Rey	PROPN	PROP|@P<	Number=Sing	20	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-24	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+24	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 25	e	e	CCONJ	<co-sta>|KC|@CO	_	27	cc	_	d2d:#106
 26	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	27	expl	_	ChangedBy=Issue135
 27	lamentou	lamentar	VERB	<cjt>|<mv>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	ChangedBy=Issue165|SpaceAfter=No
 28	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = «Ele reclamou de que não lhe pagariam o prometido, não lhe dariam um carro e que só bancariam seis meses de aluguel de sua casa e não os quatro anos, como esperava», disse o dirigente.
-# source = CETENFolha n=719 cad=Esporte sec=des sem=94a &E
 # sent_id = CF719-2
+# source = CETENFolha n=719 cad=Esporte sec=des sem=94a &E
 # id = 3021
-# d2d = cc(pagariam,e) -> cc(bancariam,e)  #106
-# d2d = punct(pagariam,,) -> punct(dariam,,)  #106
-# d2d = cc(meses,e) -> cc(anos,e)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 3	reclamou	reclamar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	parataxis	_	_
-4	de	de	ADP	PRP|@<PIV	_	8	mark	_	_
+4	de	de	SCONJ	PRP|@<PIV	_	8	mark	_	_
 5	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
 6	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
 7	lhe	ele	PRON	PERS|M/F|3S|DAT|@DAT>	Case=Dat|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	8	iobj	_	_
@@ -76,7 +70,7 @@
 31	quatro	quatro	NUM	<card>|NUM|M|P|@>N	NumType=Card	32	nummod	_	ChangedBy=Issue168
 32	anos	ano	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	22	conj	_	ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-34	como	como	ADV	<rel>|ADV|@ADVL>	_	35	advmod	_	_
+34	como	como	SCONJ	<rel>|ADV|@ADVL>	_	35	mark	_	_
 35	esperava	esperar	VERB	<mv>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 36	»	»	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	35	punct	_	_

@@ -1,9 +1,9 @@
 # text = A partir da Zambujeira, as praias favoritas são acessíveis através dos montes, que se atingem atravessando o ribeiro nas traseiras do café Fresco.
-# source = CETEMPúblico n=571 sec=nd sem=94b
 # sent_id = CP571-1
+# source = CETEMPúblico n=571 sec=nd sem=94b
 # id = 2961
 1	A	a	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=A_partir_de
-2	partir	partir	NOUN	N|@P<	_	11	obl	_	_
+2	partir	partir	VERB	N|@P<	VerbForm=Inf	11	obl	_	_
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -38,19 +38,15 @@
 30	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = O Carvalhal é a mais conhecida, mas outras há com menos gente e, por isso mesmo, mais escolhidas pelos nudistas.
-# source = CETEMPúblico n=571 sec=nd sem=94b
 # sent_id = CP571-2
+# source = CETEMPúblico n=571 sec=nd sem=94b
 # id = 2962
-# d2d = punct(gente,,) -> punct(escolhidas,,)  #106
-# d2d = cc(gente,e) -> cc(escolhidas,e)  #106
-# d2d = punct(a,,) -> punct(há,,)  #106
-# d2d = cc(a,mas) -> cc(há,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Carvalhal	Carvalhal	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 4	a	a	PRON	<dem>|DET|F|S|@<SC	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	_
 5	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@ADVL>	_	6	advmod	_	_
-6	conhecida	conhecido	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	4	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+6	conhecida	conhecer	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	4	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 8	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	10	cc	_	d2d:#106
 9	outras	outro	PRON	<diff>|<KOMP>|DET|F|P|@ACC>	Gender=Fem|Number=Plur|PronType=Ind	10	obj	_	_
@@ -59,7 +55,7 @@
 12	menos	pouco	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	13	det	_	_
 13	gente	gente	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
 14	e	e	CCONJ	<co-postnom>|KC|@CO	_	21	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-15	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+15	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 16	por	por	ADP	PRP|@ADVL>	_	17	case	_	_
 17	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	21	obl	_	_
 18	mesmo	mesmo	ADJ	<ident>|DET|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -73,8 +69,8 @@
 25	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Já quase no limite do concelho de Odemira, aparece a praia da Amália, mesmo ao lado da polémica Odefrutas de Thierry Russel.
-# source = CETEMPúblico n=571 sec=nd sem=94b
 # sent_id = CP571-3
+# source = CETEMPúblico n=571 sec=nd sem=94b
 # id = 2963
 1	Já	já	ADV	ADV|@>A	_	2	advmod	_	_
 2	quase	quase	ADV	<quant>|ADV|@>A	_	5	advmod	_	_
@@ -101,7 +97,7 @@
 20-21	ao	_	_	_	_	_	_	_	_
 20	a	a	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	lado	lado	NOUN	N|@P<	_	14	nmod	_	_
+22	lado	lado	NOUN	N|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
 23-24	da	_	_	_	_	_	_	_	_
 23	de	de	ADP	PRP|@N<	_	26	case	_	_
 24	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
@@ -113,8 +109,8 @@
 30	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Mais a sul, Odeceixe.
-# source = CETEMPúblico n=571 sec=nd sem=94b
 # sent_id = CP571-4
+# source = CETEMPúblico n=571 sec=nd sem=94b
 # id = 2964
 1	Mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	3	advmod	_	_
 2	a	a	ADP	PRP|@>N	_	3	case	_	_
@@ -124,8 +120,8 @@
 6	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = E na Azenha é imprescindível comer um arroz de marisco.
-# source = CETEMPúblico n=571 sec=nd sem=94b
 # sent_id = CP571-5
+# source = CETEMPúblico n=571 sec=nd sem=94b
 # id = 2965
 1	E	e	CCONJ	KC|@CO	_	6	cc	_	_
 2-3	na	_	_	_	_	_	_	_	_

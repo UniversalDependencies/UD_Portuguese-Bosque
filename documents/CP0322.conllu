@@ -1,11 +1,9 @@
 # text = No entanto, realça, «não são as OPP quem está mal», mas a «componente oficial»:
-# source = CETEMPúblico n=322 sec=soc sem=97b
 # sent_id = CP322-1
+# source = CETEMPúblico n=322 sec=soc sem=97b
 # id = 1695
-# d2d = cc(OPP,mas) -> cc(componente,mas)  #106
-# d2d = punct(OPP,,) -> punct(componente,,)  #106
-1	No	no	ADP	PRP|@ADVL>	_	2	case	_	MWE=No_entanto
-2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	No	no	ADP	PRP|@ADVL>	_	4	cc	_	MWE=No_entanto|MWEPOS=CCONJ
+2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	realça	realçar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	8	punct	_	_
@@ -28,10 +26,9 @@
 22	:	:	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = «A administração pública não tem capacidade do ponto de vista veterinário para fiscalizar e punir os prevaricadores».
-# source = CETEMPúblico n=322 sec=soc sem=97b
 # sent_id = CP322-2
+# source = CETEMPúblico n=322 sec=soc sem=97b
 # id = 1696
-# d2d = cc(fiscalizar,e) -> cc(punir,e)  #106
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	administração	administração	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
@@ -44,9 +41,9 @@
 9	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	6	obl	_	MWE=ponto_de_vista|MWEPOS=NOUN
 11	de	de	ADP	_	_	10	compound	_	_
-12	vista	vista	NOUN	_	_	10	compound	_	_
+12	vista	vista	NOUN	_	Gender=Fem|Number=Sing	10	compound	_	_
 13	veterinário	veterinário	ADJ	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	_
-14	para	para	ADP	PRP|@N<	_	15	mark	_	_
+14	para	para	SCONJ	PRP|@N<	_	15	mark	_	_
 15	fiscalizar	fiscalizar	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 16	e	e	CCONJ	<co-inf>|KC|@CO	_	17	cc	_	d2d:#106
 17	punir	punir	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	15	conj	_	_
@@ -56,39 +53,36 @@
 21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Novas competências
-# source = CETEMPúblico n=322 sec=soc sem=97b
 # sent_id = CP322-3
+# source = CETEMPúblico n=322 sec=soc sem=97b
 # id = 1697
 1	Novas	novo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	2	amod	_	_
 2	competências	competência	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 
 # text = Nos termos do novo regulamento, devem ainda ser destacadas algumas inovações.
-# source = CETEMPúblico n=322 sec=soc sem=97b
 # sent_id = CP322-4
+# source = CETEMPúblico n=322 sec=soc sem=97b
 # id = 1698
 1	Nos	nos	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Nos_termos_de
-2	termos	termos	NOUN	N|@P<	_	11	obl	_	_
+2	termos	termos	NOUN	N|@P<	Gender=Masc|Number=Plur	11	obl	_	_
 3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	PRP|@N<	_	6	case	_	_
 4	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 5	novo	novo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	6	amod	_	_
 6	regulamento	regulamento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-8	devem	dever	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+8	devem	dever	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 9	ainda	ainda	ADV	ADV|@ADVL>	_	11	advmod	_	_
 10	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	11	aux:pass	_	_
-11	destacadas	destacar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+11	destacadas	destacar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	8	xcomp	_	_
 12	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	13	det	_	_
 13	inovações	inovação	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	11	nsubj:pass	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Estabelece-se que «não há lugar à suspensão ou demissão do médico veterinário coordenador ou dos executores no decurso do programa sanitário anual, a não ser por motivo de força maior, devidamente justificado e aceite pela direcção regional de agricultura, com posterior homologação pela Direcção Geral de Veterinária».
-# source = CETEMPúblico n=322 sec=soc sem=97b
 # sent_id = CP322-5
+# source = CETEMPúblico n=322 sec=soc sem=97b
 # id = 1699
-# d2d = cc(suspensão,ou) -> cc(demissão,ou)  #106
-# d2d = cc(justificado,e) -> cc(aceite,e)  #106
-# d2d = cc(médico,ou) -> cc(executores,ou)  #106
 1-2	Estabelece-se	_	_	_	_	_	_	_	_
 1	Estabelece	estabelecer	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	_
@@ -117,7 +111,7 @@
 22-23	no	_	_	_	_	_	_	_	_
 22	em	em	ADP	<sam->|PRP|@N<	_	24	case	_	_
 23	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
-24	decurso	decurso	NOUN	N|@P<	_	6	obl	_	_
+24	decurso	decurso	NOUN	N|@P<	Gender=Masc|Number=Sing	6	obl	_	_
 25-26	do	_	_	_	_	_	_	_	_
 25	de	de	ADP	PRP|@N<	_	27	case	_	_
 26	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
@@ -125,14 +119,14 @@
 28	sanitário	sanitário	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	27	amod	_	_
 29	anual	anual	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	27	amod	_	ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	35	punct	_	_
-31	a	a	ADP	PRP|@<ADVL	_	35	case	_	_
-32	não	não	ADV	ADV|@ADVL>	Polarity=Neg	35	advmod	_	ChangedBy=Issue108
-33	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	35	cop	_	ChangedBy=Issue167
+31	a	a	ADP	PRP|@<ADVL	_	35	case	_	MWE=a_não_ser|MWEPOS=ADP
+32	não	não	ADV	ADV|@ADVL>	Polarity=Neg	31	fixed	_	ChangedBy=Issue108
+33	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	31	fixed	_	ChangedBy=Issue167
 34	por	por	ADP	PRP|@<SC	_	35	case	_	_
 35	motivo	motivo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
 36	de	de	ADP	PRP|@N<	_	37	case	_	_
-37	força	força	NOUN	N|@>N	_	35	nmod	_	MWE=força_maior
-38	maior	maior	NOUN	N|@P<	_	37	compound	_	ChangedBy=Issue165|SpaceAfter=No
+37	força	força	NOUN	N|@>N	Gender=Fem|Number=Sing	35	nmod	_	MWE=força_maior|MWEPOS=NOUN
+38	maior	maior	ADJ	N|@P<	Gender=Fem|Number=Sing	37	amod	_	ChangedBy=Issue165|SpaceAfter=No
 39	,	,	PUNCT	PU|@PU	_	41	punct	_	_
 40	devidamente	devidamente	ADV	ADV|@ADVL>	_	41	advmod	_	_
 41	justificado	justificar	VERB	<mv>|<first-cjt>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	35	acl	_	_
@@ -152,7 +146,7 @@
 54-55	pela	_	_	_	_	_	_	_	_
 54	por	por	ADP	<sam->|PRP|@N<	_	56	case	_	_
 55	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	56	det	_	_
-56	Direcção	Direcção	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	53	nmod	_	MWE=Direcção_Geral
+56	Direcção	Direcção	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	53	nmod	_	MWE=Direcção_Geral|MWEPOS=NOUN
 57	Geral	Geral	PROPN	PROP|@N<	Number=Sing	56	flat:name	_	_
 58	de	de	ADP	PRP|@N<	_	59	case	_	_
 59	Veterinária	Veterinária	PROPN	PROP|@P<	Number=Sing	56	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -160,12 +154,9 @@
 61	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Consagra-se também o direito desta última «efectuar visitas de inspecção e auditoria técnica às OPP e explorações nelas integradas, bem como aos produtores individuais, impor as correcções tidas como necessárias ou propor medidas sancionatórias».
-# source = CETEMPúblico n=322 sec=soc sem=97b
 # sent_id = CP322-6
+# source = CETEMPúblico n=322 sec=soc sem=97b
 # id = 1700
-# d2d = cc(efectuar,ou) -> cc(propor,ou)  #106
-# d2d = cc(OPP,e) -> cc(explorações,e)  #106
-# d2d = cc(inspecção,e) -> cc(auditoria,e)  #106
 1-2	Consagra-se	_	_	_	_	_	_	_	_
 1	Consagra	consagrar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	_
@@ -173,7 +164,7 @@
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	direito	direito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
 6-7	desta	_	_	_	_	_	_	_	_
-6	de	de	ADP	PRP|@N<	_	10	mark	_	_
+6	de	de	SCONJ	PRP|@N<	_	10	mark	_	_
 7	esta	este	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	8	det	_	_
 8	última	última	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
 9	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No

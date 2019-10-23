@@ -1,13 +1,13 @@
 # text = Aliança Atlântica
-# source = CETEMPúblico n=20 sec=pol sem=96a
 # sent_id = CP20-1
+# source = CETEMPúblico n=20 sec=pol sem=96a
 # id = 102
 1	Aliança	Aliança	PROPN	_	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Aliança_Atlântica|MWEPOS=PROPN
 2	Atlântica	Atlântica	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 
 # text = PP quer plena integração da Espanha na NATO
-# source = CETEMPúblico n=20 sec=pol sem=96a
 # sent_id = CP20-2
+# source = CETEMPúblico n=20 sec=pol sem=96a
 # id = 103
 1	PP	PP	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -23,8 +23,8 @@
 10	NATO	NATO	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 
 # text = O Partido Popular (PP), vencedor das eleições de 3 de Março, quer a plena integração da Espanha na Aliança Atlântica, organização a que Madrid aderiu em 1982, sem, no entanto, englobar as suas forças militares nas da NATO, de acordo com os resultados do referendo de 1986.
-# source = CETEMPúblico n=20 sec=pol sem=96a
 # sent_id = CP20-3
+# source = CETEMPúblico n=20 sec=pol sem=96a
 # id = 104
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Partido	Partido	PROPN	_	Gender=Masc|Number=Sing	17	nsubj	_	ChangedBy=Issue119|MWE=Partido_Popular|MWEPOS=PROPN
@@ -65,12 +65,12 @@
 34	em	em	ADP	PRP|@<ADVL	_	35	case	_	_
 35	1982	1982	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	33	obl	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 36	,	,	PUNCT	PU|@PU	_	33	punct	_	_
-37	sem	sem	ADP	PRP|@<ADVL	_	43	mark	_	ChangedBy=Issue165|SpaceAfter=No
+37	sem	sem	SCONJ	PRP|@<ADVL	_	43	mark	_	ChangedBy=Issue165|SpaceAfter=No
 38	,	,	PUNCT	PU|@PU	_	41	punct	_	_
 39-40	no	_	_	_	_	_	_	_	_
-39	em	em	ADP	<sam->|PRP|@N<	_	41	case	_	_
-40	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
-41	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	43	obl	_	ChangedBy=Issue165|SpaceAfter=No
+39	em	em	ADP	<sam->|PRP|@N<	_	43	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+40	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	fixed	_	_
+41	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	39	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 42	,	,	PUNCT	PU|@PU	_	41	punct	_	_
 43	englobar	englobar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	advcl	_	_
 44	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	46	det	_	_
@@ -99,11 +99,9 @@
 64	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Um processo que ocupará os próximos ministros da Defesa e das Relações Exteriores e que não terá a oposição dos socialistas de Felipe González, a segunda maior força política do país.
-# source = CETEMPúblico n=20 sec=pol sem=96a
 # sent_id = CP20-4
+# source = CETEMPúblico n=20 sec=pol sem=96a
 # id = 105
-# d2d = cc(ocupará,e) -> cc(terá,e)  #106
-# d2d = cc(Defesa,e) -> cc(Relações,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	processo	processo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	4	nsubj	_	_

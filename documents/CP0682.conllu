@@ -1,6 +1,6 @@
 # text = Antiquários expõem no Fórum
-# source = CETEMPúblico n=682 sec=soc sem=91b
 # sent_id = CP682-1
+# source = CETEMPúblico n=682 sec=soc sem=91b
 # id = 3527
 1	Antiquários	antiquário	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	expõem	expor	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -10,17 +10,15 @@
 5	Fórum	fórum	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue137
 
 # text = Art Deco, a mais nova das antiguidades ou Art Deco rivaliza com peças clássicas
-# source = CETEMPúblico n=682 sec=soc sem=91b
 # sent_id = CP682-2
+# source = CETEMPúblico n=682 sec=soc sem=91b
 # id = 3528
-# d2d = cc(Art,ou) -> cc(rivaliza,ou)  #106
-# d2d = punct(Art,,) -> punct(rivaliza,,)  #106
 1	Art	Art	PROPN	_	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Art_Deco|MWEPOS=PROPN
 2	Deco	Deco	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
-4	a	o	DET	<artd>|ART|F|S|@>A	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	dep	_	_
+4	a	o	DET	<artd>|ART|F|S|@>A	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 5	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	6	advmod	_	_
-6	nova	novo	ADJ	<first-cjt>|<COMP>|ADJ|F|S|@APP	Gender=Fem|Number=Sing	1	dep	_	_
+6	nova	novo	NOUN	<first-cjt>|<COMP>|ADJ|F|S|@APP	Gender=Fem|Number=Sing	1	appos	_	_
 7-8	das	_	_	_	_	_	_	_	_
 7	de	de	ADP	<first-cjt>|PRP|@KOMP<	_	9	case	_	_
 8	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
@@ -34,17 +32,9 @@
 16	clássicas	clássico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	15	amod	_	_
 
 # text = Tudo é possível encontrar no IX Salão de Antiguidades e Coleccionismo, desde objectos de ouro e prata, moedas, mobílias clássicas, armas, tapeçarias, pinturas, livros e postais antigos, onde marcam presença de destaque as peças de Art Deco, «a mais nova das antiguidades».
-# source = CETEMPúblico n=682 sec=soc sem=91b &L
 # sent_id = CP682-3
+# source = CETEMPúblico n=682 sec=soc sem=91b &L
 # id = 3529
-# d2d = punct(objectos,,) -> punct(mobílias,,)  #106
-# d2d = punct(objectos,,) -> punct(tapeçarias,,)  #106
-# d2d = cc(ouro,e) -> cc(prata,e)  #106
-# d2d = punct(objectos,,) -> punct(armas,,)  #106
-# d2d = cc(objectos,e) -> cc(postais,e)  #106
-# d2d = punct(objectos,,) -> punct(moedas,,)  #106
-# d2d = punct(objectos,,) -> punct(pinturas,,)  #106
-# d2d = punct(objectos,,) -> punct(livros,,)  #106
 1	Tudo	tudo	PRON	<quant>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Ind	4	obj	_	_
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 3	possível	possível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
@@ -56,7 +46,7 @@
 8	Salão	Salão	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	Antiguidades	Antiguidades	PROPN	_	Number=Sing	7	nmod	_	ChangedBy=Issue119|MWE=Antiguidades_e_Coleccionismo|MWEPOS=PROPN
-11	e	e	CCONJ	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
+11	e	e	CCONJ	_	_	10	flat:name	_	ChangedBy=Issue119
 12	Coleccionismo	Coleccionismo	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 14	desde	desde	ADP	PRP|@N<PRED	_	15	case	_	_
@@ -82,11 +72,11 @@
 34	postais	postal	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	conj	_	_
 35	antigos	antigo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	34	amod	_	ChangedBy=Issue165|SpaceAfter=No
 36	,	,	PUNCT	PU|@PU	_	15	punct	_	_
-37	onde	onde	ADV	<rel>|ADV|@ADVL>	_	38	advmod	_	_
+37	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	38	obl	_	_
 38	marcam	marcar	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
 39	presença	presença	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	38	obj	_	_
 40	de	de	ADP	PRP|@N<	_	41	case	_	MWE=de_destaque
-41	destaque	destaque	NOUN	N|@P<	_	39	nmod	_	_
+41	destaque	destaque	NOUN	N|@P<	Gender=Masc|Number=Sing	39	nmod	_	_
 42	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	43	det	_	_
 43	peças	peça	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	38	nsubj	_	_
 44	de	de	ADP	PRP|@N<	_	45	case	_	_
@@ -96,7 +86,7 @@
 48	«	«	PUNCT	PU|@PU	_	51	punct	_	ChangedBy=Issue165|SpaceAfter=No
 49	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
 50	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	51	advmod	_	_
-51	nova	novo	NOUN	<n>|<COMP>|ADJ|F|S|@APP	Gender=Fem|Number=Sing	45	dep	_	_
+51	nova	novo	NOUN	<n>|<COMP>|ADJ|F|S|@APP	Gender=Fem|Number=Sing	45	appos	_	_
 52-53	das	_	_	_	_	_	_	_	_
 52	de	de	ADP	<sam->|<komp>|PRP|@KOMP<	_	54	case	_	_
 53	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	54	det	_	_

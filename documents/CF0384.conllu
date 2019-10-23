@@ -1,6 +1,6 @@
 # text = Olhar formal sobre São Paulo
-# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # sent_id = CF384-1
+# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # id = 1593
 1	Olhar	olhar	NOUN	<mv>|<n>|V|INF|M|S|@ICL-UTT	Gender=Masc|Number=Sing	0	root	_	_
 2	formal	formal	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
@@ -9,8 +9,8 @@
 5	Paulo	Paulo	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 
 # text = «Disaster Movie», de 1979, foi uma revelação: apesar da produção apertada, esse curta-metragem revelava um talento mais que incontestável.
-# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # sent_id = CF384-2
+# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # id = 1594
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Disaster	Disaster	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	MWE=Disaster_Movie
@@ -24,11 +24,11 @@
 10	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	revelação	revelação	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 12	:	:	PUNCT	PU|@PU	_	11	punct	_	_
-13	apesar	apesar	ADV	ADV|@ADVL>	_	21	advmod	_	MWE=apesar_de
+13	apesar	apesar	ADV	ADV|@ADVL>	_	16	case	_	MWE=apesar_de|MWEPOS=ADP
 14-15	da	_	_	_	_	_	_	_	_
-14	de	de	ADP	PRP|@A<	_	16	case	_	_
+14	de	de	ADP	PRP|@A<	_	13	fixed	_	_
 15	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	produção	produção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	_
+16	produção	produção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	_
 17	apertada	apertar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	16	acl	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 19	esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	20	det	_	_
@@ -42,18 +42,18 @@
 27	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = É um pouco em função disso que «Anjos da Noite» decepciona.
-# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # sent_id = CF384-3
+# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # id = 1595
 1	É	ser	ADV	<foc>|ADV|@ADVL>	_	15	advmod	_	_
-2	um	um	ADV	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	advmod	_	MWE=um_pouco
-3	pouco	pouco	DET	DET|M|S|@ADVL>	Gender=Masc|Number=Sing|PronType=Ind	2	fixed	_	_
+2	um	um	DET	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	advmod	_	MWE=um_pouco
+3	pouco	pouco	ADV	DET|M|S|@ADVL>	_	2	fixed	_	_
 4	em	em	ADP	<sam->|PRP|@A<	_	5	case	_	MWE=em_função_de
-5	função	função	NOUN	N|@P<	_	2	nmod	_	_
+5	função	função	NOUN	N|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 6-7	disso	_	_	_	_	_	_	_	_
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	isso	isso	PRON	<dem>|<-sam>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	5	nmod	_	_
-8	que	que	ADV	<foc>|ADV|@ADVL>	_	15	mark	_	_
+8	que	que	SCONJ	<foc>|ADV|@ADVL>	_	15	mark	_	_
 9	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 10	Anjos	Anjos	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	MWE=Anjos_da_Noite
 11-12	da	_	_	_	_	_	_	_	_
@@ -65,8 +65,8 @@
 16	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = A incursão de Wilson Barros ao universo dos seres noturnos paulistanos revela um traço tipicamente brasileiro: uma espécie de vergonha de ser brasileiro.
-# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # sent_id = CF384-4
+# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # id = 1596
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	incursão	incursão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	_
@@ -93,14 +93,14 @@
 21	espécie	espécie	NOUN	<meta>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	16	appos	_	_
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	vergonha	vergonha	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
-24	de	de	ADP	PRP|@N<	_	26	mark	_	_
+24	de	de	SCONJ	PRP|@N<	_	26	mark	_	_
 25	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	26	cop	_	ChangedBy=Issue167
 26	brasileiro	brasileiro	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	23	amod	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Talvez por isso a São Paulo de «Anjos da Noite» pareça com qualquer lugar do mundo.
-# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # sent_id = CF384-5
+# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # id = 1597
 1	Talvez	talvez	ADV	ADV|@ADVL>	_	14	advmod	_	_
 2	por	por	ADP	PRP|@ADVL>	_	3	case	_	_
@@ -127,8 +127,8 @@
 21	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = O talento de Barros continua lá, apesar de Marilia Pêra se empenhar em tomar conta do filme com um histrionismo fora de lugar.
-# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # sent_id = CF384-6
+# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # id = 1598
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	talento	talento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -137,13 +137,13 @@
 5	continua	continuar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	lá	lá	ADV	ADV|@<ADVL	_	5	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-8	apesar	apesar	ADV	ADV|@<ADVL	_	5	advmod	_	MWE=apesar_de
-9	de	de	ADP	PRP|@A<	_	13	mark	_	_
+8	apesar	apesar	ADV	ADV|@<ADVL	_	13	mark	_	MWE=apesar_de|MWEPOS=SCONJ
+9	de	de	ADP	PRP|@A<	_	8	fixed	_	_
 10	Marilia	Marilia	PROPN	_	Gender=Fem|Number=Sing	13	nsubj	_	ChangedBy=Issue119|MWE=Marilia_Pêra|MWEPOS=PROPN
 11	Pêra	Pêra	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
 12	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	13	expl	_	ChangedBy=Issue135
-13	empenhar	empenhar	VERB	<mv>|<se-passive>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	8	advcl	_	_
-14	em	em	ADP	PRP|@<PIV	_	15	mark	_	_
+13	empenhar	empenhar	VERB	<mv>|<se-passive>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	5	advcl	_	_
+14	em	em	SCONJ	PRP|@<PIV	_	15	mark	_	_
 15	tomar	tomar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	xcomp	_	_
 16	conta	conta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
 17-18	do	_	_	_	_	_	_	_	_
@@ -159,8 +159,8 @@
 26	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Mas de alguma forma representa a tendência formalista que marcou o cinema brasileiro na segunda metade dos anos 80.
-# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # sent_id = CF384-7
+# source = CETENFolha n=384 cad=TV Folha sec=clt-soc sem=94a
 # id = 1599
 1	Mas	mas	CCONJ	KC|@CO	_	5	cc	_	_
 2	de	de	ADP	PRP|@ADVL>	_	4	case	_	_

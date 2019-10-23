@@ -1,12 +1,12 @@
 # text = ERRAMOS
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-1
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1720
 1	ERRAMOS	errar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 
 # text = Refúgios de pesca se abrem para o turismo
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-2
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1721
 1	Refúgios	refúgio	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -18,17 +18,15 @@
 8	turismo	turismo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obj	_	_
 
 # text = Com diárias a partir de US$ 50, pousadas promovem safáris fotográficos, focagem de jacarés e outros passeios
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-3
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1722
-# d2d = cc(safáris,e) -> cc(passeios,e)  #106
-# d2d = punct(safáris,,) -> punct(focagem,,)  #106
 1	Com	com	ADP	PRP|@ADVL>	_	2	case	_	_
 2	diárias	diária	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	obl	_	ChangedBy=Issue137
-3	a	a	ADP	PRP|@N<	_	4	case	_	MWE=a_partir_de
-4	partir	partir	NOUN	N|@P<	_	2	nmod	_	_
-5	de	de	ADP	PRP|@N<	_	6	case	_	_
-6	US$	US$	SYM	_	_	4	nmod	_	_
+3	a	a	ADP	PRP|@N<	_	6	case	_	MWE=a_partir_de|MWEPOS=ADP
+4	partir	partir	NOUN	N|@P<	_	3	fixed	_	_
+5	de	de	ADP	PRP|@N<	_	3	fixed	_	_
+6	US$	US$	SYM	_	_	2	nmod	_	_
 7	50	50	NUM	<card>|NUM|M|P|@N<	NumType=Card	6	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 9	pousadas	pousada	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	10	nsubj	_	_
@@ -44,8 +42,8 @@
 19	passeios	passeio	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	11	conj	_	_
 
 # text = O turismo de pesca ainda atrai 75 % dos visitantes que vão ao Mato Grosso do Sul.
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-5
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1723
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	turismo	turismo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
@@ -73,17 +71,16 @@
 21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Muitos hotéis, no entanto, perceberam o crescente interesse pelo ecoturismo e diversificaram suas atrações.
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-6
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1724
-# d2d = cc(perceberam,e) -> cc(diversificaram,e)  #106
 1	Muitos	muito	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	2	det	_	_
 2	hotéis	hotel	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 4-5	no	_	_	_	_	_	_	_	_
-4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
-5	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue165|SpaceAfter=No
+4	em	em	ADP	<sam->|PRP|@N<	_	8	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+5	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	fixed	_	_
+6	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 8	perceberam	perceber	VERB	<first-cjt>|<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
@@ -100,11 +97,9 @@
 19	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Promovem safáris fotográficos, focagem noturna de jacarés e outros passeios.
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-7
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1725
-# d2d = punct(safáris,,) -> punct(focagem,,)  #106
-# d2d = cc(safáris,e) -> cc(passeios,e)  #106
 1	Promovem	promover	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	safáris	safári	NOUN	<first-cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	1	obj	_	_
 3	fotográficos	fotográfico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -119,15 +114,15 @@
 12	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Cobram diárias a partir de US$ 50 (CR$ 22,9 mil) por pessoa, com pensão completa.
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-8
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1726
 1	Cobram	cobrar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	diárias	diária	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	1	obj	_	_
-3	a	a	ADP	PRP|@N<	_	4	case	_	MWE=a_partir_de
-4	partir	partir	NOUN	N|@P<	_	2	nmod	_	_
-5	de	de	ADP	PRP|@N<	_	6	case	_	_
-6	US$	US$	SYM	_	_	4	nmod	_	_
+3	a	a	ADP	PRP|@N<	_	6	case	_	MWE=a_partir_de|MWEPOS=ADP
+4	partir	partir	NOUN	N|@P<	_	3	fixed	_	_
+5	de	de	ADP	PRP|@N<	_	3	fixed	_	_
+6	US$	US$	SYM	_	_	2	nmod	_	_
 7	50	50	NUM	<card>|NUM|M|P|@N<	NumType=Card	6	nummod	_	ChangedBy=Issue168
 8	(	(	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 9	CR$	CR$	SYM	_	_	6	appos	_	_
@@ -135,7 +130,7 @@
 11	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	10	flat	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 12	)	)	PUNCT	PU|@PU	_	9	punct	_	_
 13	por	por	ADP	PRP|@<ADVL	_	14	case	_	_
-14	pessoa	pessoa	NOUN	<np-idf>|N|@P<	_	1	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+14	pessoa	pessoa	NOUN	<np-idf>|N|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 16	com	com	ADP	PRP|@<ADVL	_	17	case	_	_
 17	pensão	pensão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue137
@@ -143,8 +138,8 @@
 19	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Há opções mais econômicas, como os campings, por US$ 5 (CR$ 2.200,00) por pessoa.
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-9
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1727
 1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	opções	opção	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	1	obj	_	_
@@ -167,13 +162,13 @@
 19	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Confira algumas (preços por pessoa, pesquisados na semana passada):
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b &D
 # sent_id = CF413-10
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b &D
 # id = 1728
 1	Confira	conferir	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	algumas	algum	PRON	<quant>|DET|F|P|@<ACC	Gender=Fem|Number=Plur|PronType=Ind	1	obj	_	_
 3	(	(	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
-4	preços	preço	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	2	nmod	_	_
+4	preços	preço	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	2	parataxis	_	_
 5	por	por	ADP	PRP|@N<	_	6	case	_	MWE=por_pessoa
 6	pessoa	pessoa	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
@@ -187,11 +182,9 @@
 14	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Aguapé (067-241-2889) -- A 59 km de Aquidauana, a fazenda tem 7.000 hectares, campo de pouso e sete apartamentos.
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-11
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1729
-# d2d = cc(hectares,e) -> cc(apartamentos,e)  #106
-# d2d = punct(hectares,,) -> punct(campo,,)  #106
 1	Aguapé	Aguapé	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	(	(	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	067-241-2889	067-241-2889	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	appos	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
@@ -218,8 +211,8 @@
 24	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Os pacotes, com pensão completa, incluindo passeios, vão de US$ 150 (CR$ 68,8 mil), dois dias, a US$ 300 (CR$ 137,7 mil), cinco dias.
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-12
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1730
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	pacotes	pacote	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	11	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -258,12 +251,9 @@
 35	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = O pacote de pescaria, com barco, motor, piloteiro e pensão completa, é 20% mais caro.
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-13
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1731
-# d2d = punct(barco,,) -> punct(motor,,)  #106
-# d2d = cc(barco,e) -> cc(pensão,e)  #106
-# d2d = punct(barco,,) -> punct(piloteiro,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	pacote	pacote	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -287,8 +277,8 @@
 21	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = No camping, a diária é de US$ 5 (CR$ 2.200,00).
-# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # sent_id = CF413-14
+# source = CETENFolha n=413 cad=Turismo sec=soc sem=94b
 # id = 1732
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_

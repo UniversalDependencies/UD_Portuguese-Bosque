@@ -1,6 +1,6 @@
 # text = Assim, «a Liga nem sequer pode comprovar que de facto está a ser feito um inquérito», sublinhou Pedro Vieira.
-# source = CETEMPúblico n=311 sec=soc sem=91b
 # sent_id = CP311-1
+# source = CETEMPúblico n=311 sec=soc sem=91b
 # id = 1639
 1	Assim	assim	ADV	<kc>|ADV|@ADVL>	_	9	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -9,15 +9,15 @@
 5	Liga	liga	NOUN	<prop>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 6	nem	nem	ADP	PRP|@ADVL>	_	7	case	_	MWE=nem_sequer
 7	sequer	sequer	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	_
-8	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
-9	comprovar	comprovar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	parataxis	_	_
+8	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	parataxis	_	_
+9	comprovar	comprovar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
 10	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
 11	de	de	ADP	PRP|@ADVL>	_	12	case	_	MWE=de_facto
 12	facto	facto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	_
-13	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
-14	a	a	ADP	PRP|@PRT-AUX<	_	16	case	_	_
+13	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	MWE=está_a|MWEPOS=AUX
+14	a	a	SCONJ	PRP|@PRT-AUX<	_	16	mark	_	_
 15	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	16	aux:pass	_	_
-16	feito	fazer	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	9	ccomp	_	_
+16	feito	fazer	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	xcomp	_	_
 17	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	inquérito	inquérito	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	16	nsubj:pass	_	ChangedBy=Issue165|SpaceAfter=No
 19	»	»	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -28,18 +28,16 @@
 24	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = Quanto aos 75 mil contos que a Secretaria de Estado diz agora ter disponibilizado para a operação de salvamento do peixe, «ninguém sabe» onde, como e por quem foram utilizados, até porque das centenas de toneladas ali existentes apenas se salvaram cerca de duas dezenas.
-# source = CETEMPúblico n=311 sec=soc sem=91b
 # sent_id = CP311-2
+# source = CETEMPúblico n=311 sec=soc sem=91b
 # id = 1640
-# d2d = punct(onde,,) -> punct(como,,)  #106
-# d2d = cc(onde,e) -> cc(quem,e)  #106
-1	Quanto	quanto	ADV	ADV|@ADVL>	_	27	advmod	_	MWE=Quanto_a
+1	Quanto	quanto	ADV	ADV|@ADVL>	_	6	case	_	MWE=Quanto_a|MWEPOS=ADP
 2-3	aos	_	_	_	_	_	_	_	_
-2	a	a	ADP	PRP|@A<	_	6	case	_	_
+2	a	a	ADP	PRP|@A<	_	1	fixed	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
 4	75	75	NUM	<card>|<np-def>|NUM|M|P|@>A	NumType=Card	6	nummod	_	ChangedBy=Issue168|MWE=75_mil
 5	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	flat	_	ChangedBy=Issue168
-6	contos	conto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl	_	_
+6	contos	conto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	27	obl	_	_
 7	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	12	obj	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Secretaria	Secretaria	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	MWE=Secretaria_de_Estado
@@ -85,8 +83,8 @@
 47	apenas	apenas	ADV	ADV|@ADVL>	_	49	advmod	_	_
 48	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	49	expl	_	ChangedBy=Issue135
 49	salvaram	salvar	VERB	<mv>|<se-passive>|V|PS|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	27	advcl	_	_
-50	cerca	cerca	ADV	ADV|@>A	_	52	advmod	_	MWE=cerca_de
-51	de	de	ADP	<prp>|PRP|@A<	_	50	case	_	_
+50	cerca	cerca	ADV	ADV|@>A	_	52	advmod	_	MWE=cerca_de|MWEPOS=ADV
+51	de	de	ADP	<prp>|PRP|@A<	_	50	fixed	_	_
 52	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	49	obj	_	ChangedBy=Issue168|MWE=duas_dezenas
 53	dezenas	dezena	NUM	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	52	flat	_	ChangedBy=Issue165|SpaceAfter=No
 54	.	.	PUNCT	PU|@PU	_	27	punct	_	_

@@ -1,8 +1,7 @@
 # text = O exercício do poder nas organizações é, por vezes, descrito em termos de «jogos e de jogadores».
-# source = CETEMPúblico n=795 sec=eco sem=93a
 # sent_id = CP795-1
+# source = CETEMPúblico n=795 sec=eco sem=93a
 # id = 4070
-# d2d = cc(jogos,e) -> cc(jogadores,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	exercício	exercício	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -31,13 +30,9 @@
 24	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Os autores de «The Strategy Process» referem o especialista em ciências políticas Graham Allison, que, em 1971, descreveu os jogos nas organizações e nos governos como «complexos, subtis, simultâneos e sobrepostos».
-# source = CETEMPúblico n=795 sec=eco sem=93a
 # sent_id = CP795-2
+# source = CETEMPúblico n=795 sec=eco sem=93a
 # id = 4071
-# d2d = cc(organizações,e) -> cc(governos,e)  #106
-# d2d = punct(complexos,,) -> punct(subtis,,)  #106
-# d2d = cc(complexos,e) -> cc(sobrepostos,e)  #106
-# d2d = punct(complexos,,) -> punct(simultâneos,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	autores	autor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
@@ -85,17 +80,17 @@
 43	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Allison acrescentava que, no entanto, esses jogos eram conduzidos por regras:
-# source = CETEMPúblico n=795 sec=eco sem=93a
 # sent_id = CP795-3
+# source = CETEMPúblico n=795 sec=eco sem=93a
 # id = 4072
 1	Allison	Allison	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	acrescentava	acrescentar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	12	mark	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 5-6	no	_	_	_	_	_	_	_	_
-5	em	em	ADP	<sam->|PRP|@N<	_	7	case	_	_
-6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	em	em	ADP	<sam->|PRP|@N<	_	2	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_
+7	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	5	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	esses	esse	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	10	det	_	_
 10	jogos	jogo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj:pass	_	_
@@ -106,10 +101,9 @@
 15	:	:	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «Algumas regras são explícitas, outras implícitas;
-# source = CETEMPúblico n=795 sec=eco sem=93a
 # sent_id = CP795-4
+# source = CETEMPúblico n=795 sec=eco sem=93a
 # id = 4073
-# d2d = punct(explícitas,,) -> punct(outras,,)  #106
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	3	det	_	_
 3	regras	regra	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj	_	_
@@ -121,12 +115,9 @@
 9	;	;	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = algumas são muito claras, outras um tanto nebulosas; algumas bastante estáveis, outras sempre em mudança» --
-# source = CETEMPúblico n=795 sec=eco sem=93a
 # sent_id = CP795-5
+# source = CETEMPúblico n=795 sec=eco sem=93a
 # id = 4074
-# d2d = punct(claras,;) -> punct(algumas,;)  #106
-# d2d = punct(claras,,) -> punct(outras,,)  #106
-# d2d = punct(claras,,) -> punct(outras,,)  #106
 1	algumas	algum	PRON	<quant>|DET|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Ind	4	nsubj	_	_
 2	são	ser	AUX	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 3	muito	muito	ADV	<quant>|ADV|@>A	_	4	advmod	_	_
@@ -149,8 +140,8 @@
 20	--	--	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = a coligação de regras, em cada momento define o jogo.
-# source = CETEMPúblico n=795 sec=eco sem=93a
 # sent_id = CP795-6
+# source = CETEMPúblico n=795 sec=eco sem=93a
 # id = 4075
 1	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	coligação	coligação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
@@ -166,11 +157,9 @@
 12	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Mintzberg e Quinn identificam uma série de «jogos de poder», de entre os quais retirámos e adaptámos os que apresentamos no quadro junto.
-# source = CETEMPúblico n=795 sec=eco sem=93a
 # sent_id = CP795-7
+# source = CETEMPúblico n=795 sec=eco sem=93a
 # id = 4076
-# d2d = cc(retirámos,e) -> cc(adaptámos,e)  #106
-# d2d = cc(Mintzberg,e) -> cc(Quinn,e)  #106
 1	Mintzberg	Mintzberg	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	Quinn	Quinn	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149
@@ -202,10 +191,9 @@
 28	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O essencial, na compreensão dos «jogos de poder», é conseguir saber quem está envolvido e onde está a força em cada situação concreta.
-# source = CETEMPúblico n=795 sec=eco sem=93a
 # sent_id = CP795-8
+# source = CETEMPúblico n=795 sec=eco sem=93a
 # id = 4077
-# d2d = cc(envolvido,e) -> cc(onde,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	essencial	essencial	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -227,9 +215,9 @@
 17	saber	saber	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	16	xcomp	_	_
 18	quem	quem	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	20	nsubj	_	_
 19	está	estar	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	ChangedBy=Issue167
-20	envolvido	envolvido	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	17	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+20	envolvido	envolvido	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	17	ccomp	_	ChangedBy=Issue141|ChangedBy=Issue91
 21	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
-22	onde	onde	ADV	<rel>|ADV|@SA>	_	20	conj	_	_
+22	onde	onde	PRON	<rel>|ADV|@SA>	PronType=Rel	20	obl	_	_
 23	está	estar	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	ChangedBy=Issue167
 24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	força	força	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	22	nsubj	_	_
@@ -240,17 +228,16 @@
 30	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = A gestão de topo -- alvo a atingir em muitos destes jogos -- pode ganhá-los se os conhecer bem e souber «jogá-los».
-# source = CETEMPúblico n=795 sec=eco sem=93a
 # sent_id = CP795-9
+# source = CETEMPúblico n=795 sec=eco sem=93a
 # id = 4078
-# d2d = cc(conhecer,e) -> cc(souber,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	gestão	gestão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	MWE=de_topo
-4	topo	topo	NOUN	N|@P<	_	2	nmod	_	_
+4	topo	topo	NOUN	N|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 5	--	--	PUNCT	PU|@PU	_	6	punct	_	_
 6	alvo	alvo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	2	appos	_	_
-7	a	a	ADP	PRP|@N<	_	8	mark	_	_
+7	a	a	SCONJ	PRP|@N<	_	8	mark	_	_
 8	atingir	atingir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	_
 9	em	em	ADP	PRP|@<ADVL	_	10	case	_	_
 10	muitos	muito	PRON	<quant>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Ind	8	obl	_	_
@@ -259,9 +246,9 @@
 12	estes	este	DET	<-sam>|<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	13	det	_	_
 13	jogos	jogo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
 14	--	--	PUNCT	PU|@PU	_	6	punct	_	_
-15	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
+15	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 16-17	ganhá-los	_	_	_	_	_	_	_	_
-16	ganhá	ganhar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@ICL-AUX<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+16	ganhá	ganhar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@ICL-AUX<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	xcomp	_	_
 17	los	eles	PRON	PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	obj	_	_
 18	se	se	SCONJ	KS|@SUB	_	20	mark	_	_
 19	os	eles	PRON	PERS|M|3P|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	obj	_	_

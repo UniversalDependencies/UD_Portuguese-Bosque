@@ -1,9 +1,7 @@
 # text = Mas além das afinidades culturais, dos quais os japoneses estão cientes, mas que muitos portugueses desconhecem, há outros pontos de aproximação.
-# source = CETEMPúblico n=73 sec=soc sem=98b
 # sent_id = CP73-1
+# source = CETEMPúblico n=73 sec=soc sem=98b
 # id = 401
-# d2d = punct(cientes,,) -> punct(desconhecem,,)  #106
-# d2d = cc(cientes,mas) -> cc(desconhecem,mas)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	22	cc	_	_
 2	além	além	ADV	ADV|@ADVL>	_	22	advmod	_	MWE=além_de
 3-4	das	_	_	_	_	_	_	_	_
@@ -15,14 +13,14 @@
 8-9	dos	_	_	_	_	_	_	_	_
 8	de	de	ADP	<sam->|PRP|@A<	_	10	case	_	_
 9	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	10	det	_	MWE=os_quais
-10	quais	qual	PRON	DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	14	obl	_	_
+10	quais	qual	PRON	DET|M|P|@P<	Gender=Fem|Number=Plur|PronType=Rel	14	obl	_	_
 11	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	japoneses	japonês	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	14	nsubj	_	_
 13	estão	estar	AUX	<first-cjt>|<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	ChangedBy=Issue167
 14	cientes	ciente	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	5	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 16	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
-17	que	que	PRON	<rel>|INDP|F|P|@ACC>	Gender=Fem|Number=Plur|PronType=Rel	20	obj	_	_
+17	que	que	PRON	<rel>|INDP|F|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	20	obj	_	_
 18	muitos	muito	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	19	det	_	_
 19	portugueses	português	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	20	nsubj	_	_
 20	desconhecem	desconhecer	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -35,10 +33,9 @@
 27	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = «O tema da Expo-98, os Oceanos, será também abordado na Expo-2001, em Yamaguchi, cujo lema geral será ' O Futuro e o século XXI ', ou, dito de uma forma mais poética e numa tradução mais livre do japonês, «Rumo a um futuro onde brilhe a vida».
-# source = CETEMPúblico n=73 sec=soc sem=98b
 # sent_id = CP73-2
+# source = CETEMPúblico n=73 sec=soc sem=98b
 # id = 402
-# d2d = cc(forma,e) -> cc(tradução,e)  #106
 1	«	«	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	tema	tema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj:pass	_	_
@@ -66,9 +63,9 @@
 23	geral	geral	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	22	amod	_	_
 24	será	ser	AUX	<mv>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	26	cop	_	ChangedBy=Issue167
 25	'	'	PUNCT	PU|@PU	_	26	punct	_	_
-26	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	16	acl:relcl	_	ChangedBy=Issue119|MWE=O_Futuro_e_o_século_XXI|MWEPOS=PROPN
+26	O	O	PROPN	_	Gender=Masc|Number=Sing|PronType=Art	16	acl:relcl	_	ChangedBy=Issue119|MWE=O_Futuro_e_o_século_XXI|MWEPOS=PROPN
 27	Futuro	Futuro	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
-28	e	e	CCONJ	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
+28	e	e	CCONJ	_	_	26	flat:name	_	ChangedBy=Issue119
 29	o	o	DET	_	Number=Sing|PronType=Art	26	flat:name	_	ChangedBy=Issue119
 30	século	século	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 31	XXI	XXI	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119

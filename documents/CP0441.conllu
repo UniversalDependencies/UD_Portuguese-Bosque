@@ -1,18 +1,17 @@
 # text = A Comunidade Económica, por outro lado, deverá preparar as condições para a «transição gradual para a livre circulação de mercadorias e serviços» em todos os Estados que a ela aderirem.
-# source = CETEMPúblico n=441 sec=eco sem=91b
 # sent_id = CP441-1
+# source = CETEMPúblico n=441 sec=eco sem=91b
 # id = 2313
-# d2d = cc(mercadorias,e) -> cc(serviços,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Comunidade	Comunidade	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	MWE=Comunidade_Económica
 3	Económica	Económica	PROPN	PROP|@N<	Number=Sing	2	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-5	por	por	ADP	PRP|@ADVL>	_	7	case	_	MWE=por_outro_lado
-6	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	7	det	_	_
-7	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	por	por	ADP	PRP|@ADVL>	_	10	cc	_	MWE=por_outro_lado|MWEPOS=CCONJ
+6	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	5	fixed	_	_
+7	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	5	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-9	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	aux	_	_
-10	preparar	preparar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+9	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+10	preparar	preparar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
 11	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
 12	condições	condição	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
 13	para	para	ADP	PRP|@N<	_	16	case	_	_
@@ -40,15 +39,15 @@
 35	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Mais tarde, quando estiverem criadas condições económicas, proceder-se-á à criação de um «mercado comum de mão-de-obra».
-# source = CETEMPúblico n=441 sec=eco sem=91b
 # sent_id = CP441-2
+# source = CETEMPúblico n=441 sec=eco sem=91b
 # id = 2314
-1	Mais	muito	ADV	<quant>|<KOMP>|DET|M/F|S/P|@>A	Gender=Unsp|Number=Unsp|PronType=Ind	2	advmod	_	_
+1	Mais	mais	ADV	<quant>|<KOMP>|DET|M/F|S/P|@>A	_	2	advmod	_	_
 2	tarde	tarde	ADV	ADV|@ADVL>	_	10	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-4	quando	quando	ADV	<rel>|ADV|@ADVL>	_	6	advmod	_	_
+4	quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	6	mark	_	_
 5	estiverem	estar	AUX	<mv>|V|FUT|3P|SUBJ|@FS-ADVL>	Mood=Sub|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
-6	criadas	criado	ADJ	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur	10	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+6	criadas	criado	ADJ	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur	10	advcl	_	ChangedBy=Issue141|ChangedBy=Issue91
 7	condições	condição	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	6	nsubj	_	_
 8	económicas	económico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -70,12 +69,9 @@
 23	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = No capítulo das bases económicas, os membros deverão acordar acções nos domínios da política monetária, financeira, alfandegária e de regulamentação de impostos.
-# source = CETEMPúblico n=441 sec=eco sem=91b
 # sent_id = CP441-3
+# source = CETEMPúblico n=441 sec=eco sem=91b
 # id = 2315
-# d2d = punct(política,,) -> punct(alfandegária,,)  #106
-# d2d = cc(política,e) -> cc(regulamentação,e)  #106
-# d2d = punct(política,,) -> punct(financeira,,)  #106
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -88,8 +84,8 @@
 8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 9	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
 10	membros	membro	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
-11	deverão	dever	AUX	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	aux	_	_
-12	acordar	acordar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+11	deverão	dever	VERB	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+12	acordar	acordar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
 13	acções	acção	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	obj	_	_
 14-15	nos	_	_	_	_	_	_	_	_
 14	em	em	ADP	<sam->|PRP|@N<	_	16	case	_	_
@@ -112,8 +108,8 @@
 30	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Também se prevê a criação de uma moeda única, embora, quem o deseje, possa ter a sua própria divisa.
-# source = CETEMPúblico n=441 sec=eco sem=91b
 # sent_id = CP441-4
+# source = CETEMPúblico n=441 sec=eco sem=91b
 # id = 2316
 1	Também	também	ADV	ADV|@ADVL>	_	3	advmod	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	_	_
@@ -126,13 +122,13 @@
 9	única	único	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 11	embora	embora	SCONJ	KS|@SUB	_	18	mark	_	ChangedBy=Issue165|SpaceAfter=No
-12	,	,	PUNCT	PU|@PU	_	18	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 13	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	15	nsubj	_	_
 14	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	obj	_	_
 15	deseje	desejar	VERB	<mv>|V|PR|3S|SUBJ|@FS-SUBJ>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	csubj	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
-17	possa	poder	AUX	<aux>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
-18	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	advcl	_	_
+17	possa	poder	VERB	<aux>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+18	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	17	xcomp	_	_
 19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 20	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	22	det	_	_
 21	própria	próprio	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	22	amod	_	_

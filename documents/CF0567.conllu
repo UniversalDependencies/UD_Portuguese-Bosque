@@ -1,23 +1,22 @@
 # text = O fato de haver razoável consenso acerca desses temas não significa, porém, que seja fácil ou rápido aprovar tais reformas no Congresso.
-# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # sent_id = CF567-1
+# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # id = 2365
-# d2d = cc(fácil,ou) -> cc(rápido,ou)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	fato	fato	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
-3	de	de	ADP	PRP|@N<ARG	_	4	mark	_	_
+3	de	de	SCONJ	PRP|@N<ARG	_	4	mark	_	_
 4	haver	haver	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	_
 5	razoável	razoável	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	6	amod	_	_
 6	consenso	consenso	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
-7	acerca	acerca	ADV	ADV|@N<	_	6	advmod	_	_
+7	acerca	acerca	ADV	ADV|@N<	_	10	case	_	MWE=acerca_de|MWEPOS=ADP
 8-9	desses	_	_	_	_	_	_	_	_
-8	de	de	ADP	<sam->|PRP|@A<	_	10	case	_	_
+8	de	de	ADP	<sam->|PRP|@A<	_	7	fixed	_	_
 9	esses	esse	DET	<-sam>|<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	10	det	_	_
-10	temas	tema	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	7	obl	_	_
+10	temas	tema	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	_
 11	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
 12	significa	significar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-14	porém	porém	ADV	<kc>|ADV|@<ADVL	_	12	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+14	porém	porém	CCONJ	<kc>|ADV|@<ADVL	_	12	cc	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 16	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
 17	seja	ser	AUX	<mv>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	cop	_	ChangedBy=Issue167
@@ -34,8 +33,8 @@
 27	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Elas dependem em boa parte de emendas constitucionais, o que está longe de ser simples de fazer.
-# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # sent_id = CF567-2
+# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # id = 2366
 1	Elas	elas	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
 2	dependem	depender	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -50,19 +49,17 @@
 11	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	_	_
 12	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	ChangedBy=Issue167
 13	longe	longe	ADV	ADV|@<SA	_	10	acl:relcl	_	_
-14	de	de	ADP	PRP|@A<ARG	_	16	mark	_	_
+14	de	de	SCONJ	PRP|@A<ARG	_	16	mark	_	_
 15	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	cop	_	ChangedBy=Issue167
 16	simples	simples	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	13	amod	_	_
-17	de	de	ADP	PRP|@A<ARG	_	18	mark	_	_
+17	de	de	SCONJ	PRP|@A<ARG	_	18	mark	_	_
 18	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Ora, se o presidente chegar à posse sem que estejam no mínimo delineados, divulgados e negociados com os setores organizados da sociedade os projetos que consubstanciem tais reformas, torna-se muito mais difícil fazê-los aprovar no Congresso no prazo de um semestre definido pelo próprio FHC.
-# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # sent_id = CF567-3
+# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # id = 2367
-# d2d = cc(delineados,e) -> cc(negociados,e)  #106
-# d2d = punct(delineados,,) -> punct(divulgados,,)  #106
 1	Ora	ora	ADV	ADV|@ADVL>	_	35	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	se	se	SCONJ	KS|@SUB	_	6	mark	_	_
@@ -73,14 +70,14 @@
 7	a	a	ADP	<sam->|PRP|@<PIV	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	posse	posse	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	iobj	_	_
-10	sem	sem	ADP	PRP|@<ADVL	_	16	mark	_	_
-11	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
+10	sem	sem	ADP	PRP|@<ADVL	_	16	mark	_	MWE=sem_que|MWEPOS=SCONJ
+11	que	que	SCONJ	KS|@SUB	_	10	fixed	_	_
 12	estejam	estar	AUX	<mv>|V|PR|3P|SUBJ|@FS-P<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	ChangedBy=Issue167
 13-14	no	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@ADVL>	_	15	case	_	_
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	mínimo	pequeno	NOUN	<SUP>|<n>|<np-def>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	_
-16	delineados	delinear	VERB	<first-cjt>|<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	6	dep	_	ChangedBy=Issue165|SpaceAfter=No
+16	delineados	delinear	VERB	<first-cjt>|<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	6	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	divulgados	divulgar	VERB	<mv>|<cjt>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur|VerbForm=Part	16	conj	_	_
 19	e	e	CCONJ	KC|@CO	_	20	cc	_	d2d:#106
@@ -130,8 +127,8 @@
 57	.	.	PUNCT	PU|@PU	_	35	punct	_	_
 
 # text = Por tudo isso, não cabe formalismo em excesso.
-# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # sent_id = CF567-4
+# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # id = 2368
 1	Por	por	ADP	PRP|@ADVL>	_	2	case	_	_
 2	tudo	tudo	PRON	<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	6	obl	_	MWE=tudo_isso
@@ -145,8 +142,8 @@
 10	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Cabe, é lógico, todo o respeito às prerrogativas do atual governante.
-# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # sent_id = CF567-5
+# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # id = 2369
 1	Cabe	caber	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -168,13 +165,13 @@
 16	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Mas, até por ser também o candidato do presidente, FHC deve começar a trabalhar já.
-# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # sent_id = CF567-6
+# source = CETENFolha n=567 cad=Opinião sec=opi sem=94a
 # id = 2370
 1	Mas	mas	CCONJ	KC|@CO	_	17	cc	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 3	até	até	ADV	ADV|@>A	_	17	advmod	_	_
-4	por	por	ADP	PRP|@ADVL>	_	8	mark	_	_
+4	por	por	SCONJ	PRP|@ADVL>	_	8	mark	_	_
 5	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	cop	_	ChangedBy=Issue167
 6	também	também	ADV	ADV|@<ADVL	_	8	advmod	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
@@ -185,10 +182,10 @@
 11	presidente	presidente	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 13	FHC	FHC	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
-14	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-15	começar	começar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	17	aux	_	_
-16	a	a	ADP	PRP|@PRT-AUX<	_	17	case	_	_
-17	trabalhar	trabalhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+14	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+15	começar	começar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	MWE=começar_a|MWEPOS=AUX
+16	a	a	SCONJ	PRP|@PRT-AUX<	_	17	mark	_	_
+17	trabalhar	trabalhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	xcomp	_	_
 18	já	já	ADV	ADV|@<ADVL	_	17	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 

@@ -1,13 +1,13 @@
 # text = XE-MOTA Observatório
-# source = CETEMPúblico n=922 sec=eco sem=92b
 # sent_id = CP922-1
+# source = CETEMPúblico n=922 sec=eco sem=92b
 # id = 4744
 1	XE-MOTA	XE-MOTA	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=XE-MOTA_Observatório|MWEPOS=PROPN
 2	Observatório	Observatório	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 
 # text = Um observatório de indicadores
-# source = CETEMPúblico n=922 sec=eco sem=92b
 # sent_id = CP922-2
+# source = CETEMPúblico n=922 sec=eco sem=92b
 # id = 4745
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	observatório	observatório	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
@@ -15,8 +15,8 @@
 4	indicadores	indicador	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
 
 # text = A criação de um observatório com indicadores de convergência, que deverá abranger mais de uma dezena de sectores, é um dos projectos a concretizar com a nova fase de intervenções estruturais da Comunidade.
-# source = CETEMPúblico n=922 sec=eco sem=92b
 # sent_id = CP922-3
+# source = CETEMPúblico n=922 sec=eco sem=92b
 # id = 4746
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	criação	criação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
@@ -29,14 +29,14 @@
 9	convergência	convergência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 11	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	13	nsubj	_	_
-12	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	aux	_	_
-13	abranger	abranger	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	acl:relcl	_	_
+12	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	acl:relcl	_	_
+13	abranger	abranger	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	12	xcomp	_	_
 14	mais	mais	ADV	ADV|@>A	_	19	advmod	_	MWE=mais_de
 15	de	de	ADP	<prp>|PRP|@A<	_	14	fixed	_	_
-16	uma	um	NUM	<card>|NUM|F|S|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168|MWE=uma_dezena
+16	uma	um	NUM	<card>|NUM|F|S|@>N	NumType=Card	13	obj	_	ChangedBy=Issue168|MWE=uma_dezena
 17	dezena	dezena	NUM	<np-def>|N|F|S|@<ACC	NumType=Card	16	flat	_	_
 18	de	de	ADP	PRP|@N<	_	19	case	_	_
-19	sectores	sector	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	obj	_	ChangedBy=Issue165|SpaceAfter=No
+19	sectores	sector	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 21	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	ChangedBy=Issue167
 22	um	um	NUM	<card>|NUM|M|S|@<SC	NumType=Card	0	root	_	ChangedBy=Issue168
@@ -44,7 +44,7 @@
 23	de	de	ADP	<sam->|PRP|@A<	_	25	case	_	_
 24	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
 25	projectos	projecto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
-26	a	a	ADP	PRP|@A<ARG	_	27	mark	_	_
+26	a	a	SCONJ	PRP|@A<ARG	_	27	mark	_	_
 27	concretizar	concretizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	_
 28	com	com	ADP	PRP|@<ADVL	_	31	case	_	_
 29	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
@@ -60,11 +60,9 @@
 38	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = Através deste órgão, que funcionará como base estatística, as autoridades portuguesas pretendem acompanhar o percurso de convergência de cada um dos sectores, com base em três grandes grupos de indicadores: estado de situação, «performance» conseguida e investimento.
-# source = CETEMPúblico n=922 sec=eco sem=92b
 # sent_id = CP922-4
+# source = CETEMPúblico n=922 sec=eco sem=92b
 # id = 4747
-# d2d = punct(estado,,) -> punct(performance,,)  #106
-# d2d = cc(estado,e) -> cc(investimento,e)  #106
 1	Através	através	ADV	ADV|@ADVL>	_	15	advmod	_	_
 2-3	deste	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@A<	_	4	case	_	_
@@ -87,15 +85,15 @@
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	convergência	convergência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
-22	cada	cada	PROPN	_	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue119|MWE=Cada_um
-23	um	um	PROPN	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	fixed	_	ChangedBy=Issue119
+22	cada	cada	DET	_	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue119|MWE=Cada_um
+23	um	um	NUM	_	NumType=Card	22	fixed	_	ChangedBy=Issue119
 24-25	dos	_	_	_	_	_	_	_	_
 24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
 25	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
 26	sectores	sector	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 28	com	com	ADP	PRP|@<ADVL	_	29	case	_	MWE=com_base_em
-29	base	base	NOUN	N|@P<	_	16	obl	_	_
+29	base	base	NOUN	N|@P<	Gender=Fem|Number=Sing	16	obl	_	_
 30	em	em	ADP	PRP|@N<	_	33	case	_	_
 31	três	três	NUM	<card>|NUM|M|P|@>N	NumType=Card	33	nummod	_	ChangedBy=Issue168
 32	grandes	grande	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	33	amod	_	_

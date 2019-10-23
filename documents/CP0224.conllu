@@ -1,9 +1,7 @@
 # text = Seriam 9h30 quando os três homens, de quem não se conhecem dados identificativos, surgiram de armas na mão e rosto coberto à porta do BNU de Massamá, uma dependência recentemente inaugurada e localizada na denominada Sexta Fase da Urbanização Pimenta e Rendeiro (área que na sua maioria ainda está em construção).
-# source = CETEMPúblico n=224 sec=soc sem=92b
 # sent_id = CP224-1
+# source = CETEMPúblico n=224 sec=soc sem=92b
 # id = 1207
-# d2d = cc(inaugurada,e) -> cc(localizada,e)  #106
-# d2d = cc(armas,e) -> cc(rosto,e)  #106
 1	Seriam	ser	AUX	<mv>|V|COND|3P|@FS-STA	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	9h30	9h30	NOUN	<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
 3	quando	quando	ADV	<rel>|ADV|@ADVL>	_	16	advmod	_	_
@@ -47,7 +45,7 @@
 38	e	e	CCONJ	<co-icl>|<co-postnom>|KC|@CO	_	39	cc	_	d2d:#106
 39	localizada	localizar	VERB	<cjt>|<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	37	conj	_	_
 40-41	na	_	_	_	_	_	_	_	_
-40	em	em	ADP	<sam->|PRP|@<ADVL	_	42	mark	_	_
+40	em	em	SCONJ	<sam->|PRP|@<ADVL	_	42	mark	_	_
 41	a	o	DET	<artd>|<-sam>|ART|@>N	Definite=Def|PronType=Art	43	det	_	_
 42	denominada	denominar	VERB	<mv>|<cjt>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	39	acl	_	_
 43	Sexta	Sexta	PROPN	PROP|F|S|@>N	Gender=Fem|Number=Sing	39	obl	_	MWE=Sexta_Fase
@@ -57,10 +55,10 @@
 46	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_
 47	Urbanização	Urbanização	PROPN	_	Number=Sing	43	nmod	_	ChangedBy=Issue119|MWE=Urbanização_Pimenta_e_Rendeiro|MWEPOS=PROPN
 48	Pimenta	Pimenta	PROPN	_	Number=Sing	47	flat:name	_	ChangedBy=Issue119
-49	e	e	CCONJ	_	Number=Sing	47	flat:name	_	ChangedBy=Issue119
+49	e	e	CCONJ	_	_	47	flat:name	_	ChangedBy=Issue119
 50	Rendeiro	Rendeiro	PROPN	_	Number=Sing	47	flat:name	_	ChangedBy=Issue119
 51	(	(	PUNCT	PU|@PU	_	52	punct	_	ChangedBy=Issue165|SpaceAfter=No
-52	área	área	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	43	nmod	_	_
+52	área	área	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	43	parataxis	_	_
 53	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	61	nsubj	_	_
 54-55	na	_	_	_	_	_	_	_	_
 54	em	em	ADP	<sam->|PRP|@ADVL>	_	57	case	_	_
@@ -75,8 +73,8 @@
 63	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Os assaltantes atraíram a atenção de uma das funcionárias, que deu de imediato o alarme, pelo que o gerente conseguiu bloquear a porta de entrada ainda antes desta poder ser aberta pelos suspeitos.
-# source = CETEMPúblico n=224 sec=soc sem=92b
 # sent_id = CP224-2
+# source = CETEMPúblico n=224 sec=soc sem=92b
 # id = 1208
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	assaltantes	assaltante	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
@@ -90,7 +88,7 @@
 9	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	10	det	_	_
 10	funcionárias	funcionária	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-12	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	13	nsubj	_	_
+12	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	PronType=Rel	13	nsubj	_	_
 13	deu	dar	VERB	<mv>|V|PS|3S|IND|@FS-A<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	ccomp	_	_
 14	de	de	ADP	PRP|@<ADVL	_	15	case	_	MWE=de_imediato
 15	imediato	imediato	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	_
@@ -99,7 +97,7 @@
 18	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 19-20	pelo	_	_	_	_	_	_	_	_
 19	por	por	ADP	<sam->|PRP|@ADVL>	_	21	case	_	_
-20	o	o	PRON	<-sam>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Rel	13	appos	_	_
+20	o	o	PRON	<-sam>|DET|M|S|@>N	PronType=Rel	13	appos	_	_
 21	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	24	obl	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	gerente	gerente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	_
@@ -110,13 +108,13 @@
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	entrada	entrada	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
 30	ainda	ainda	ADV	ADV|@>A	_	31	advmod	_	_
-31	antes	antes	ADV	ADV|@<ADVL	_	25	advmod	_	_
+31	antes	antes	ADV	ADV|@<ADVL	_	36	mark	_	MWE=antes_de|MWEPOS=SCONJ
 32-33	desta	_	_	_	_	_	_	_	_
-32	de	de	ADP	<sam->|PRP|@A<ARG	_	36	mark	_	_
+32	de	de	ADP	<sam->|PRP|@A<ARG	_	31	fixed	_	_
 33	esta	este	PRON	<-sam>|<dem>|DET|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Dem	36	nsubj:pass	_	_
-34	poder	poder	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	36	aux	_	_
+34	poder	poder	VERB	<aux>|V|INF|@ICL-P<	VerbForm=Inf	25	advcl	_	_
 35	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	36	aux:pass	_	_
-36	aberta	abrir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	31	advcl	_	_
+36	aberta	abrir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	34	xcomp	_	_
 37-38	pelos	_	_	_	_	_	_	_	_
 37	por	por	ADP	PRP|@PASS	_	39	case	_	_
 38	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	_	_
@@ -124,14 +122,10 @@
 40	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Após verificarem que a entrada havia sido bloqueada, os três homens fugiram de imediato para um automóvel Citröen AX, de cor branca, cujas letras da matrícula são AJ, e tomaram a estrada que conduz a Queluz.
-# source = CETEMPúblico n=224 sec=soc sem=92b
 # sent_id = CP224-3
+# source = CETEMPúblico n=224 sec=soc sem=92b
 # id = 1209
-# d2d = punct(fugiram,,) -> punct(tomaram,,)  #106
-# d2d = cc(fugiram,e) -> cc(tomaram,e)  #106
-# d2d = punct(fugiram,,) -> punct(tomaram,,)  #106
-# d2d = punct(fugiram,,) -> punct(tomaram,,)  #106
-1	Após	após	ADP	PRP|@ADVL>	_	2	mark	_	_
+1	Após	após	SCONJ	PRP|@ADVL>	_	2	mark	_	_
 2	verificarem	verificar	VERB	<mv>|<cjt>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	13	advcl	_	_
 3	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -151,12 +145,12 @@
 18	automóvel	automóvel	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue137
 19	Citröen	Citröen	PROPN	_	Gender=Masc|Number=Sing	18	appos	_	ChangedBy=Issue119|MWE=Citröen_AX|MWEPOS=PROPN
 20	AX	AX	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-21	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
+21	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 22	de	de	ADP	PRP|@N<PRED	_	23	case	_	_
 23	cor	cor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
 24	branca	branco	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	ChangedBy=Issue165|SpaceAfter=No
-25	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
-26	cujas	cujo	DET	<rel>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Rel	27	det	_	_
+25	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
+26	cujas	cujo	DET	<rel>|DET|F|P|@>N	Gender=Fem|Number=Sing|PronType=Rel	27	det	_	_
 27	letras	letra	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	32	nsubj	_	_
 28-29	da	_	_	_	_	_	_	_	_
 28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
@@ -176,8 +170,8 @@
 42	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Segundo o comandante da GNR do Cacém, entidade a quem primeiro foi comunicada a ocorrência, não foi consumado qualquer acto violento.
-# source = CETEMPúblico n=224 sec=soc sem=92b
 # sent_id = CP224-4
+# source = CETEMPúblico n=224 sec=soc sem=92b
 # id = 1210
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_

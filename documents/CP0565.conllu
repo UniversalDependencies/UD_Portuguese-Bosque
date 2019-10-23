@@ -1,13 +1,13 @@
 # text = Alterações reduzidas
-# source = CETEMPúblico n=565 sec=eco sem=96a
 # sent_id = CP565-1
+# source = CETEMPúblico n=565 sec=eco sem=96a
 # id = 2933
 1	Alterações	alteração	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	reduzidas	reduzir	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	1	acl	_	_
 
 # text = O segmento accionista da Bolsa de Tóquio fechou com reduzida alterações face à sessão anterior.
-# source = CETEMPúblico n=565 sec=eco sem=96a &W
 # sent_id = CP565-2
+# source = CETEMPúblico n=565 sec=eco sem=96a &W
 # id = 2934
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	segmento	segmento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
@@ -31,17 +31,16 @@
 18	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Operadores disseram que o mercado deverá manter a mesma tendência durante as próximas sessões devido à forte procura dos investidores domésticos e estrangeiros, tal como vem sucedendo nas últimas semanas.
-# source = CETEMPúblico n=565 sec=eco sem=96a
 # sent_id = CP565-3
+# source = CETEMPúblico n=565 sec=eco sem=96a
 # id = 2935
-# d2d = cc(domésticos,e) -> cc(estrangeiros,e)  #106
 1	Operadores	operador	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	nsubj	_	_
 2	disseram	dizer	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	7	mark	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	mercado	mercado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
-6	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux	_	_
-7	manter	manter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	ccomp	_	_
+6	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	ccomp	_	_
+7	manter	manter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	xcomp	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 9	mesma	mesmo	ADJ	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	10	amod	_	_
 10	tendência	tendência	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
@@ -63,10 +62,10 @@
 24	e	e	CCONJ	<co-postnom>|KC|@CO	_	25	cc	_	d2d:#106
 25	estrangeiros	estrangeiro	ADJ	<cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	23	conj	_	ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	30	punct	_	_
-27	tal	tal	ADP	PRP|@ADVL>	_	30	mark	_	MWE=tal_como
-28	como	como	ADV	N|M|S|@P<	Gender=Masc|Number=Sing	27	fixed	_	_
-29	vem	vir	AUX	<aux>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	aux	_	_
-30	sucedendo	suceder	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	7	advcl	_	_
+27	tal	tal	ADV	PRP|@ADVL>	_	30	mark	_	MWE=tal_como|MWEPOS=SCONJ
+28	como	como	SCONJ	N|M|S|@P<	_	27	fixed	_	_
+29	vem	vir	VERB	<aux>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_
+30	sucedendo	suceder	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	29	xcomp	_	_
 31-32	nas	_	_	_	_	_	_	_	_
 31	em	em	ADP	<sam->|PRP|@<ADVL	_	34	case	_	_
 32	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	34	det	_	_
@@ -75,15 +74,15 @@
 35	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O índice Nikkei perdeu 0,16 por cento.
-# source = CETEMPúblico n=565 sec=eco sem=96a
 # sent_id = CP565-4
+# source = CETEMPúblico n=565 sec=eco sem=96a
 # id = 2936
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	índice	índice	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	Nikkei	Nikkei	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	2	appos	_	_
 4	perdeu	perder	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 5	0,16	0,16	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
-6	por	por	ADP	_	Gender=Masc|Number=Sing	4	obl	_	MWE=por_cento|MWEPOS=NOUN
+6	por	por	ADP	_	_	4	obl	_	MWE=por_cento|MWEPOS=NOUN
 7	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	6	compound	_	ChangedBy=Issue165|SpaceAfter=No
 8	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

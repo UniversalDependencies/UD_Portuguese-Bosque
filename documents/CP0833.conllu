@@ -1,6 +1,6 @@
 # text = A solução definitiva de situações como as da central da Av. Casal Ribeiro, do Campo das Ceboulas e de numerosas outras centrais dedicadas aos transportes inter-regionais e inter-urbanos está porém dependente de uma obra de grande envergadura, ainda sem localização completamente decidida e cujo início não deverá ocorrer antes dos próximos dois ou três anos.
-# source = CETEMPúblico n=833 sec=soc sem=91b
 # sent_id = CP833-1
+# source = CETEMPúblico n=833 sec=soc sem=91b
 # id = 4301
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	solução	solução	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	37	nsubj	_	_
@@ -42,7 +42,7 @@
 33	e	e	CCONJ	<co-postnom>|KC|@CO	_	34	cc	_	_
 34	inter-urbanos	inter-urbano	NOUN	<cjt>|<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	32	conj	_	_
 35	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	_	_
-36	porém	porém	ADV	<kc>|ADV|@<ADVL	_	37	advmod	_	_
+36	porém	porém	CCONJ	<kc>|ADV|@<ADVL	_	37	cc	_	_
 37	dependente	dependente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 38	de	de	ADP	PRP|@A<	_	40	case	_	_
 39	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
@@ -60,8 +60,8 @@
 51	cujo	cujo	DET	<rel>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Rel	52	det	_	_
 52	início	início	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	55	nsubj	_	_
 53	não	não	ADV	_	Polarity=Neg	55	advmod	_	_
-54	deverá	dever	AUX	<cjt>|<aux>|V|FUT|3S|IND|@N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	55	aux	_	_
-55	ocorrer	ocorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	47	conj	_	_
+54	deverá	dever	VERB	<cjt>|<aux>|V|FUT|3S|IND|@N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	47	conj	_	_
+55	ocorrer	ocorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	54	xcomp	_	_
 56	antes	antes	ADV	ADV|@<ADVL	_	55	advmod	_	_
 57-58	dos	_	_	_	_	_	_	_	_
 57	de	de	ADP	<sam->|PRP|@A<	_	63	case	_	_
@@ -74,10 +74,10 @@
 64	.	.	PUNCT	PU|@PU	_	37	punct	_	_
 
 # text = Uma vez que esta central esteja em funcionamento, passará a receber também as carreiras que em Janeiro sairão do Campo Pequeno para Sete Rios.
-# source = CETEMPúblico n=833 sec=soc sem=91b
 # sent_id = CP833-2
+# source = CETEMPúblico n=833 sec=soc sem=91b
 # id = 4302
-1	Uma	uma	DET	<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	mark	_	MWE=Uma_vez_que
+1	Uma	uma	SCONJ	<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	mark	_	MWE=Uma_vez_que
 2	vez	vez	NOUN	N|F|S|@>S	Gender=Fem|Number=Sing	1	fixed	_	_
 3	que	que	SCONJ	KS|@SUB	_	1	fixed	_	_
 4	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
@@ -86,9 +86,9 @@
 7	em	em	ADP	PRP|@<SA	_	8	case	_	_
 8	funcionamento	funcionamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-10	passará	passar	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	aux	_	_
-11	a	a	ADP	PRP|@PRT-AUX<	_	12	case	_	_
-12	receber	receber	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+10	passará	passar	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	MWE=passará_a|MWEPOS=AUX
+11	a	a	SCONJ	PRP|@PRT-AUX<	_	12	mark	_	_
+12	receber	receber	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
 13	também	também	ADV	ADV|@>N	_	15	advmod	_	_
 14	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
 15	carreiras	carreira	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	obj	_	_
@@ -107,12 +107,12 @@
 27	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O espaço a libertar nessa praça poderá então ser consagrado aos carros de turismo que agora ocupam o topo do Parque Eduardo VII.
-# source = CETEMPúblico n=833 sec=soc sem=91b
 # sent_id = CP833-3
+# source = CETEMPúblico n=833 sec=soc sem=91b
 # id = 4303
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	espaço	espaço	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj:pass	_	_
-3	a	a	ADP	PRP|@N<	_	4	mark	_	_
+3	a	a	SCONJ	PRP|@N<	_	4	mark	_	_
 4	libertar	libertar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	_
 5-6	nessa	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_

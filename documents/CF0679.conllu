@@ -1,6 +1,6 @@
 # text = Conselho é nova 'arma' dos franqueados
-# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # sent_id = CF679-1
+# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # id = 2850
 1	Conselho	conselho	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
@@ -14,8 +14,8 @@
 9	franqueados	franqueado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	_
 
 # text = Organizados em associação, os franqueados ganham maior poder de influência frente aos franqueadores
-# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # sent_id = CF679-2
+# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # id = 2851
 1	Organizados	organizar	VERB	<mv>|V|PCP|M|P|@ICL-PRED>	Gender=Masc|Number=Plur|VerbForm=Part	7	advcl	_	_
 2	em	em	ADP	PRP|@<ADVL	_	3	case	_	_
@@ -35,21 +35,21 @@
 15	franqueadores	franqueador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	obl	_	_
 
 # text = Os franqueados brasileiros começam a utilizar uma nova «arma» para aumentar seu poder de influência junto à cúpula das empresas franqueadoras.
-# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # sent_id = CF679-5
+# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # id = 2852
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	franqueados	franqueado	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 3	brasileiros	brasileiro	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
-4	começam	começar	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
-6	utilizar	utilizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+4	começam	começar	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=começam_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
+6	utilizar	utilizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 8	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	10	amod	_	_
 9	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 10	arma	arma	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	ChangedBy=Issue165|SpaceAfter=No
 11	»	»	PUNCT	PU|@PU	_	10	punct	_	_
-12	para	para	ADP	PRP|@N<	_	13	mark	_	_
+12	para	para	SCONJ	PRP|@N<	_	13	mark	_	_
 13	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	acl	_	_
 14	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	15	det	_	_
 15	poder	poder	NOUN	<np-def>|N|M|S|@ACC>	Gender=Masc|Number=Sing	18	obj	_	_
@@ -68,12 +68,9 @@
 26	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Trata-se do conselho de franqueados, que começa a surgir em algumas redes como McDonald's, Água de Cheiro, Multicoisas e Localiza.
-# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # sent_id = CF679-6
+# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # id = 2853
-# d2d = punct(McDonald's,,) -> punct(Água,,)  #106
-# d2d = cc(McDonald's,e) -> cc(Localiza,e)  #106
-# d2d = punct(McDonald's,,) -> punct(Multicoisas,,)  #106
 1-2	Trata-se	_	_	_	_	_	_	_	_
 1	Trata	tratar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	1	expl	_	ChangedBy=Issue135
@@ -85,9 +82,9 @@
 7	franqueados	franqueado	NOUN	<mv>|<n>|V|PCP|M|P|@ICL-P<	Gender=Masc|Number=Plur	5	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	12	nsubj	_	_
-10	começa	começar	AUX	<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-11	a	a	ADP	PRP|@PRT-AUX<	_	12	case	_	_
-12	surgir	surgir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	acl:relcl	_	_
+10	começa	começar	VERB	<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	MWE=começa_a|MWEPOS=AUX
+11	a	a	SCONJ	PRP|@PRT-AUX<	_	12	mark	_	_
+12	surgir	surgir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
 13	em	em	ADP	PRP|@<ADVL	_	15	case	_	_
 14	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	15	det	_	_
 15	redes	rede	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	obl	_	ChangedBy=Issue137
@@ -104,13 +101,12 @@
 26	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Já bastante difundidos nos EUA, os conselhos têm atenuado problemas e melhorado o tradicionalmente difícil relacionamento franqueado X franqueador.
-# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # sent_id = CF679-7
+# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b
 # id = 2854
-# d2d = cc(atenuado,e) -> cc(melhorado,e)  #106
 1	Já	já	ADV	ADV|@ADVL>	_	3	advmod	_	_
 2	bastante	bastante	ADV	<quant>|ADV|@ADVL>	_	3	advmod	_	_
-3	difundidos	difundido	ADJ	<mv>|V|PCP|M|P|@ICL-PRED>	Gender=Masc|Number=Plur	9	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+3	difundidos	difundir	VERB	<mv>|V|PCP|M|P|@ICL-PRED>	Gender=Masc|Number=Plur|VerbForm=Part	9	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 4-5	nos	_	_	_	_	_	_	_	_
 4	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
 5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
@@ -129,16 +125,13 @@
 18	relacionamento	relacionamento	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
 19	franqueado	franqueado	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	18	nmod	_	MWE=franqueado_X_franqueador
 20	X	x	ADP	PRP|@N<	_	21	case	_	_
-21	franqueador	franqueador	NOUN	N|@P<	_	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+21	franqueador	franqueador	NOUN	N|@P<	Gender=Masc|Number=Sing	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 22	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Atuando em conjunto, os franqueados ganham força e passam a ter voz ativa em questões vitais para o negócio, como definicão de produtos, prazos de pagamento e estratégias de propaganda.
-# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b &W
 # sent_id = CF679-8
+# source = CETENFolha n=679 cad=Tudo sec=nd sem=94b &W
 # id = 2855
-# d2d = cc(ganham,e) -> cc(ter,e)  #106
-# d2d = punct(produtos,,) -> punct(prazos,,)  #106
-# d2d = cc(produtos,e) -> cc(estratégias,e)  #106
 1	Atuando	atuar	VERB	<mv>|<cjt>|V|GER|@ICL-STA	VerbForm=Ger	0	root	_	_
 2	em	em	ADP	PRP|@<ADVL	_	3	case	_	_
 3	conjunto	conjunto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -148,9 +141,9 @@
 7	ganham	ganhar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
 8	força	força	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
 9	e	e	CCONJ	<co-sta>|KC|@CO	_	12	cc	_	d2d:#106
-10	passam	passar	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-11	a	a	ADP	PRP|@PRT-AUX<	_	12	case	_	_
-12	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	conj	_	ChangedBy=Issue149
+10	passam	passar	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	MWE=passam_a|MWEPOS=AUX
+11	a	a	SCONJ	PRP|@PRT-AUX<	_	12	mark	_	_
+12	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	ChangedBy=Issue149
 13	voz	voz	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	_
 14	ativa	ativo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	_
 15	em	em	ADP	PRP|@<ADVL	_	16	case	_	_

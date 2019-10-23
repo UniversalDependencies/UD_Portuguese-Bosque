@@ -1,6 +1,6 @@
 # text = Resultado: pressão nos preços combinada com a falta de produtos.
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-1
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3032
 1	Resultado	resultado	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -18,8 +18,8 @@
 13	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Se a queda da inflação certamente produziria efeitos positivos na candidatura Fernando Henrique Cardoso, as prateleiras vazias municiam os adversários.
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-2
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3033
 1	Se	se	SCONJ	KS|@SUB	_	8	mark	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -49,10 +49,9 @@
 24	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = É certo que, desta vez, o governo está mais atento do que no Plano Cruzado e vai usar, segundo o ministro Rubens Ricupero, todos os artifícios para evitar uma febre de consumo.
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-3
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3034
-# d2d = cc(atento,e) -> cc(usar,e)  #106
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	certo	certo	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	13	mark	_	ChangedBy=Issue165|SpaceAfter=No
@@ -66,9 +65,9 @@
 10	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
 11	está	estar	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	ChangedBy=Issue167
 12	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	13	advmod	_	_
-13	atento	atento	ADJ	<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	2	dep	_	_
+13	atento	atento	ADJ	<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	2	ccomp	_	_
 14-15	do	_	_	_	_	_	_	_	_
-14	de	de	ADP	<sam->|PRP|@COM	_	19	case	_	MWE=do_que
+14	de	de	ADP	<sam->|PRP|@COM	_	19	case	_	MWE=do_que|MWEPOS=ADP
 15	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	14	fixed	_	_
 16	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	14	fixed	_	_
 17-18	no	_	_	_	_	_	_	_	_
@@ -83,13 +82,13 @@
 25	segundo	segundo	ADP	PRP|@<ADVL	_	27	case	_	_
 26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	ministro	ministro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	ChangedBy=Issue137
-28	Rubens	Rubens	PROPN	_	Gender=Masc|Number=Sing	27	dep	_	ChangedBy=Issue119|MWE=Rubens_Ricupero|MWEPOS=PROPN
+28	Rubens	Rubens	PROPN	_	Gender=Masc|Number=Sing	27	appos	_	ChangedBy=Issue119|MWE=Rubens_Ricupero|MWEPOS=PROPN
 29	Ricupero	Ricupero	PROPN	_	Number=Sing	28	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 31	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	33	det	_	_
 32	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
 33	artifícios	artifício	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	23	obj	_	_
-34	para	para	ADP	PRP|@<ADVL	_	35	mark	_	_
+34	para	para	SCONJ	PRP|@<ADVL	_	35	mark	_	_
 35	evitar	evitar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	23	advcl	_	_
 36	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 37	febre	febre	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	35	obj	_	_
@@ -98,8 +97,8 @@
 40	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Se vai conseguir, é outro problema.
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-4
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3035
 1	Se	se	SCONJ	KS|@SUB	_	3	mark	_	_
 2	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
@@ -111,8 +110,8 @@
 8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Mais uma vez, se vê que a deseducação é o problema que mais sai caro ao Brasil.
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-5
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3036
 1	Mais	mais	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	6	obl	_	MWE=Mais_uma_vez
 2	uma	uma	ADP	PRP|@N<	_	3	case	_	_
@@ -137,10 +136,10 @@
 20	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = PS Realmente é notável a evolução de Lula nos últimos 15 anos.
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-6
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3037
-1	PS	PS	PROPN	PROP|M|S|@UTT	Gender=Masc|Number=Sing	4	dep	_	_
+1	PS	PS	PROPN	PROP|M|S|@UTT	Gender=Masc|Number=Sing	4	parataxis	_	_
 2	Realmente	realmente	ADV	ADV|@ADVL>	_	4	advmod	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-UTT	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 4	notável	notável	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
@@ -157,8 +156,8 @@
 14	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Recebi ontem por fax entrevista que ele concedeu em 1979 para a revista «Especial», onde expõe sua visão sobre a mulher.
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-7
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3038
 1	Recebi	receber	VERB	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 2	ontem	ontem	ADV	ADV|@<ADVL	_	1	advmod	_	_
@@ -177,7 +176,7 @@
 15	Especial	Especial	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	13	appos	_	ChangedBy=Issue165|SpaceAfter=No
 16	»	»	PUNCT	PU|@PU	_	15	punct	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-18	onde	onde	ADV	<rel>|ADV|@ADVL>	_	19	advmod	_	_
+18	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	19	obl	_	_
 19	expõe	expor	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	_
 20	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	21	det	_	_
 21	visão	visão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
@@ -187,8 +186,8 @@
 25	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Reproduzo uma frase:
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-8
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3039
 1	Reproduzo	reproduzir	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -196,16 +195,16 @@
 4	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «A gente não pode pensar em jogar a mulher no mercado de trabalho enquanto houver excesso de mão-de-obra».
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-9
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3040
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	gente	gente	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 4	não	não	ADV	_	Polarity=Neg	6	advmod	_	_
-5	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-6	pensar	pensar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-7	em	em	ADP	PRP|@<PIV	_	8	mark	_	_
+5	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	pensar	pensar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
+7	em	em	SCONJ	PRP|@<PIV	_	8	mark	_	_
 8	jogar	jogar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	mulher	mulher	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
@@ -215,7 +214,7 @@
 13	mercado	mercado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	trabalho	trabalho	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
-16	enquanto	enquanto	ADV	<rel>|ADV|@ADVL>	_	17	advmod	_	_
+16	enquanto	enquanto	SCONJ	<rel>|ADV|@ADVL>	_	17	mark	_	_
 17	houver	haver	VERB	<mv>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	advcl	_	_
 18	excesso	excesso	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	17	obj	_	_
 19	de	de	ADP	PRP|@N<ARG	_	20	case	_	_
@@ -224,11 +223,9 @@
 22	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Aliás, nessa entrevista ele, corretamente, defende a legalização do aborto com argumentos razoáveis e, agora, por motivos eleitoreiros, cedeu à pressão da Igreja Católica.
-# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # sent_id = CF722-10
+# source = CETENFolha n=722 cad=Opinião sec=opi sem=94b
 # id = 3041
-# d2d = punct(defende,,) -> punct(cedeu,,)  #106
-# d2d = cc(defende,e) -> cc(cedeu,e)  #106
 1	Aliás	aliás	ADV	<kc>|ADV|@ADVL>	_	10	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3-4	nessa	_	_	_	_	_	_	_	_
@@ -250,7 +247,7 @@
 17	argumentos	argumento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	ChangedBy=Issue137
 18	razoáveis	razoável	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	17	amod	_	_
 19	e	e	CCONJ	<co-sta>|KC|@CO	_	27	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-20	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	agora	agora	ADV	<kc>|ADV|@ADVL>	_	27	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 23	por	por	ADP	PRP|@ADVL>	_	24	case	_	_

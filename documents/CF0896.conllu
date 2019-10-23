@@ -1,6 +1,6 @@
 # text = Dados do IBGE (Instituto Brasileiro de Geografia e Estatística), de 1989, mostram que 30,6 milhões de brasileiros.
-# source = CETENFolha n=896 cad=Brasil sec=pol sem=94b
 # sent_id = CF896-1
+# source = CETENFolha n=896 cad=Brasil sec=pol sem=94b
 # id = 3772
 1	Dados	dado	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	17	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
@@ -12,7 +12,7 @@
 7	Brasileiro	Brasileiro	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	Geografia	Geografia	PROPN	_	Number=Sing	6	nmod	_	ChangedBy=Issue119|MWE=Geografia_e_Estatística|MWEPOS=PROPN
-10	e	e	CCONJ	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
+10	e	e	CCONJ	_	_	9	flat:name	_	ChangedBy=Issue119
 11	Estatística	Estatística	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 12	)	)	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	15	punct	_	_
@@ -20,16 +20,16 @@
 15	1989	1989	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	4	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 17	mostram	mostrar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-18	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
-19	30,6	30,6	NUM	<card>|NUM|M|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168|MWE=30,6_milhões
+18	que	que	SCONJ	KS|@SUB	_	19	mark	_	_
+19	30,6	30,6	NUM	<card>|NUM|M|P|@>N	NumType=Card	17	orphan	_	ChangedBy=Issue168|MWE=30,6_milhões
 20	milhões	milhão	NUM	<np-def>|N|M|P|@<SUBJ	NumType=Card	19	flat	_	_
 21	de	de	ADP	PRP|@N<ARG	_	22	case	_	_
-22	brasileiros	brasileiro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	orphan	_	ChangedBy=Issue165|SpaceAfter=No
+22	brasileiros	brasileiro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 23	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Dos fumantes, 18,1 milhões são homens e 12,5 milhões, mulheres.
-# source = CETENFolha n=896 cad=Brasil sec=pol sem=94b &E
 # sent_id = CF896-2
+# source = CETENFolha n=896 cad=Brasil sec=pol sem=94b &E
 # id = 3773
 1-2	Dos	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -48,10 +48,9 @@
 14	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O homem fuma entre 11 e 20 cigarros por dia e a mulher, entre 5 e 10.
-# source = CETENFolha n=896 cad=Brasil sec=pol sem=94b &E
 # sent_id = CF896-3
+# source = CETENFolha n=896 cad=Brasil sec=pol sem=94b &E
 # id = 3774
-# d2d = cc(11,e) -> cc(20,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	homem	homem	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	fuma	fumar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_

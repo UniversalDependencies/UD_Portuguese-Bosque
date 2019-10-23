@@ -1,6 +1,6 @@
 # text = Leo Tindemans ao PÚBLICO
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-1
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3055
 1	Leo	Leo	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Leo_Tindemans|MWEPOS=PROPN
 2	Tindemans	Tindemans	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -10,8 +10,8 @@
 5	PÚBLICO	Público	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = «É preciso dotar a Comunidade de uma constituição»
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-3
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3056
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
@@ -25,26 +25,23 @@
 10	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ex-primeiro-ministro, de 1974 a 1978, e ex-ministro dos Negócios Estrangeiros da Bélgica, no início da década de 80, Leo Tindemans é, hoje, o presidente do Grupo Democrata Cristão do Parlamento Europeu, o segundo maior agrupamento parlamentar de Estrasburgo, a seguir aos socialistas.
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-4
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3057
-# d2d = punct(Ex-primeiro-ministro,,) -> punct(ex-ministro,,)  #106
-# d2d = cc(Ex-primeiro-ministro,e) -> cc(ex-ministro,e)  #106
-# d2d = punct(Ex-primeiro-ministro,,) -> punct(ex-ministro,,)  #106
 1	Ex-primeiro-ministro	ex-primeiro-ministro	NOUN	<first-cjt>|<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	34	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-2	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+2	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 3	de	de	ADP	<first-cjt>|PRP|@N<PRED	_	4	case	_	_
 4	1974	1974	NUM	<year>|<first-cjt>|<date>|NUM|M|S|@P<	NumType=Card	1	nmod	_	ChangedBy=Issue168
 5	a	a	ADP	PRP|@A<	_	6	case	_	_
 6	1978	1978	NUM	<year>|<date>|NUM|M|S|@P<	NumType=Card	4	conj	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-7	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+7	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 8	e	e	CCONJ	<co-pred>|KC|@CO	_	9	cc	_	d2d:#106
-9	ex-ministro	ex-ministro	NOUN	N|@PRED>	_	1	conj	_	ChangedBy=Issue149|MWE=ex-ministro_dos_Negócios_Estrangeiros
+9	ex-ministro	ex-ministro	NOUN	N|@PRED>	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue149|MWE=ex-ministro_dos_Negócios_Estrangeiros
 10-11	dos	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
-12	Negócios	negócios	NOUN	N|@P<	_	9	nmod	_	_
-13	Estrangeiros	estrangeiros	ADJ	ADJ|@N<	_	12	amod	_	_
+12	Negócios	negócios	NOUN	N|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
+13	Estrangeiros	estrangeiros	ADJ	ADJ|@N<	Gender=Masc|Number=Plur	12	amod	_	_
 14-15	da	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
@@ -64,9 +61,9 @@
 27	Leo	Leo	PROPN	_	Gender=Masc|Number=Sing	34	nsubj	_	ChangedBy=Issue119|MWE=Leo_Tindemans|MWEPOS=PROPN
 28	Tindemans	Tindemans	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
 29	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	cop	_	ChangedBy=Issue165|ChangedBy=Issue167|SpaceAfter=No
-30	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+30	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 31	hoje	hoje	ADV	ADV|@<ADVL	_	34	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-32	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+32	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 33	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	presidente	presidente	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 35-36	do	_	_	_	_	_	_	_	_
@@ -89,7 +86,7 @@
 50	de	de	ADP	PRP|@N<	_	51	case	_	_
 51	Estrasburgo	Estrasburgo	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	48	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 52	,	,	PUNCT	PU|@PU	_	48	punct	_	_
-53	a	a	ADP	PRP|@N<PRED	_	54	mark	_	_
+53	a	a	SCONJ	PRP|@N<PRED	_	54	mark	_	_
 54	seguir	seguir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	48	acl	_	_
 55-56	aos	_	_	_	_	_	_	_	_
 55	a	a	ADP	<sam->|PRP|@<PIV	_	57	case	_	_
@@ -98,11 +95,9 @@
 58	.	.	PUNCT	PU|@PU	_	34	punct	_	_
 
 # text = Europeísta convicto, como de resto o são todos os governos deste pequeno país, dividido ao meio pela língua e pela cultura, entre um Norte flamengo e um Sul francófono, Tindemans defende que o grau de união política conseguido em Maastricht é insuficiente.
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-5
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3058
-# d2d = cc(língua,e) -> cc(cultura,e)  #106
-# d2d = cc(Norte,e) -> cc(Sul,e)  #106
 1	Europeísta	europeísta	NOUN	<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	39	obl	_	_
 2	convicto	convicto	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -160,12 +155,9 @@
 51	.	.	PUNCT	PU|@PU	_	39	punct	_	_
 
 # text = Seria necessária uma nova conferência intergovernamental sobre a União Política Europeia -- mesmo antes da revisão do Tratado, agendada para 1996 -- e, em seu entender, o alargamento da Comunidade aconselharia a que esta se dotasse de uma verdadeira constituição com metas e com princípios.
-# source = CETEMPúblico n=588 sec=pol sem=92a
 # sent_id = CP588-6
+# source = CETEMPúblico n=588 sec=pol sem=92a
 # id = 3059
-# d2d = punct(necessária,,) -> punct(aconselharia,,)  #106
-# d2d = cc(metas,e) -> cc(princípios,e)  #106
-# d2d = cc(necessária,e) -> cc(aconselharia,e)  #106
 1	Seria	ser	AUX	<first-cjt>|<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	necessária	necessário	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -195,7 +187,7 @@
 25	--	--	PUNCT	PU|@PU	_	14	punct	_	_
 26	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	37	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
 27	,	,	PUNCT	PU|@PU	_	30	punct	_	_
-28	em	em	ADP	PRP|@ADVL>	_	30	mark	_	_
+28	em	em	SCONJ	PRP|@ADVL>	_	30	mark	_	_
 29	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	30	det	_	_
 30	entender	entender	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	37	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 31	,	,	PUNCT	PU|@PU	_	30	punct	_	_
@@ -206,7 +198,7 @@
 35	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
 36	Comunidade	Comunidade	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
 37	aconselharia	aconselhar	VERB	<cjt>|<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	conj	_	_
-38	a	a	ADP	PRP|@<PIV	_	42	mark	_	_
+38	a	a	SCONJ	PRP|@<PIV	_	42	mark	_	_
 39	que	que	SCONJ	KS|@SUB	_	42	mark	_	_
 40	esta	este	PRON	<dem>|DET|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Dem	42	nsubj	_	_
 41	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	42	expl	_	ChangedBy=Issue135

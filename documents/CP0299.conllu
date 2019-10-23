@@ -1,12 +1,7 @@
 # text = Não possui hoje Vendas Novas praça de toiros, razão por que a corrida aconteceu numa desmontável, mas António Morais, no seu livro «A Praça de Toiros do Campo Pequeno», ao referir-se às outras praças do país, diz que José Valério construiu uma praça em Vendas Novas em 1862, tendo nela havido festas de toiros até 1875, ano em que soldados da Escola Prática de Artilharia, por descuido, provocaram o seu incêndio.
-# source = CETEMPúblico n=299 sec=soc sem=93b
 # sent_id = CP299-1
+# source = CETEMPúblico n=299 sec=soc sem=93b
 # id = 1588
-# d2d = punct(possui,,) -> punct(diz,,)  #106
-# d2d = punct(possui,,) -> punct(diz,,)  #106
-# d2d = punct(possui,,) -> punct(diz,,)  #106
-# d2d = cc(possui,mas) -> cc(diz,mas)  #106
-# d2d = punct(possui,,) -> punct(diz,,)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	possui	possuir	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	hoje	hoje	ADV	ADV|@<ADVL	_	2	advmod	_	_
@@ -15,7 +10,7 @@
 6	praça	praça	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	toiros	toiro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-9	,	,	PUNCT	PU|@PU	_	51	punct	_	d2d:#106
+9	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 10	razão	razão	NOUN	<np-idf>|N|F|S|@S<	Gender=Fem|Number=Sing	2	appos	_	_
 11	por	por	ADP	PRP|@ADVL>	_	12	case	_	_
 12	que	que	PRON	INDP|F|S|@P<	Gender=Fem|Number=Sing|PronType=Ind	15	obl	_	_
@@ -26,11 +21,11 @@
 16	em	em	ADP	<sam->|PRP|@<SA	_	18	case	_	_
 17	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	desmontável	desmontável	NOUN	<n>|<np-idf>|ADJ|F|S|@P<	Gender=Fem|Number=Sing	15	obl	_	ChangedBy=Issue165|SpaceAfter=No
-19	,	,	PUNCT	PU|@PU	_	51	punct	_	d2d:#106
+19	,	,	PUNCT	PU|@PU	_	13	punct	_	d2d:#106
 20	mas	mas	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	51	cc	_	d2d:#106
 21	António	António	PROPN	_	Gender=Masc|Number=Sing	51	nsubj	_	ChangedBy=Issue119|MWE=António_Morais|MWEPOS=PROPN
 22	Morais	Morais	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-23	,	,	PUNCT	PU|@PU	_	51	punct	_	d2d:#106
+23	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
 24-25	no	_	_	_	_	_	_	_	_
 24	em	em	ADP	<sam->|PRP|@ADVL>	_	27	case	_	_
 25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
@@ -49,7 +44,7 @@
 37	»	»	PUNCT	PU|@PU	_	29	punct	_	ChangedBy=Issue165|SpaceAfter=No
 38	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 39-40	ao	_	_	_	_	_	_	_	_
-39	a	a	ADP	<sam->|PRP|@ADVL>	_	41	mark	_	_
+39	a	a	SCONJ	<sam->|PRP|@ADVL>	_	41	mark	_	_
 40	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
 41-42	referir-se	_	_	_	_	_	_	_	_
 41	referir	referir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	51	advcl	_	_
@@ -110,10 +105,9 @@
 92	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Regista ainda na terra a existência de uma praça nos anos 20 com capacidade para 3400 espectadores, que julgamos ter sido a que existiu até há cerca de 20 anos.
-# source = CETEMPúblico n=299 sec=soc sem=93b
 # sent_id = CP299-2
+# source = CETEMPúblico n=299 sec=soc sem=93b
 # id = 1589
-# d2d = punct(capacidade,,) -> punct(julgamos,,)  #106
 1	Regista	registar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	ainda	ainda	ADV	ADV|@<ADVL	_	1	advmod	_	_
 3-4	na	_	_	_	_	_	_	_	_
@@ -136,30 +130,25 @@
 18	3400	3400	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168
 19	espectadores	espectador	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
-21	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	25	nsubj	_	_
-22	julgamos	julgar	VERB	<cjt>|<mv>|V|PR|1P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	conj	_	_
+21	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	22	obj	_	_
+22	julgamos	julgar	VERB	<cjt>|<mv>|V|PR|1P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
 23	ter	ter	AUX	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	25	aux	_	_
 24	sido	ser	AUX	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	25	cop	_	ChangedBy=Issue167
-25	a	o	PRON	<dem>|DET|F|S|@<SC	Gender=Fem|Number=Sing|PronType=Dem	22	dep	_	_
+25	a	o	PRON	<dem>|DET|F|S|@<SC	Gender=Fem|Number=Sing|PronType=Dem	22	xcomp	_	_
 26	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	27	nsubj	_	_
 27	existiu	existir	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	acl:relcl	_	_
-28	até	até	ADP	PRP|@<ADVL	_	29	mark	_	_
+28	até	até	SCONJ	PRP|@<ADVL	_	29	mark	_	_
 29	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	advcl	_	_
-30	cerca	cerca	ADV	ADV|@>A	_	32	advmod	_	MWE=cerca_de
-31	de	de	ADP	<prp>|PRP|@A<	_	30	case	_	_
+30	cerca	cerca	ADV	ADV|@>A	_	33	advmod	_	MWE=cerca_de|MWEPOS=ADV
+31	de	de	ADP	<prp>|PRP|@A<	_	30	fixed	_	_
 32	20	20	NUM	<card>|NUM|M|P|@>N	NumType=Card	33	nummod	_	ChangedBy=Issue168
 33	anos	ano	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	29	obj	_	ChangedBy=Issue165|SpaceAfter=No
 34	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Desta feita, redimiu-se a Escola Prática, ajudando à montagem da praça instalada no campo da feira e nela fizeram as cortesias José Maldonado Cortes, Nuno Pardal, o praticante José Francisco Cortes e o amador José Soudo, a quem saudamos o regresso após convalescer do gravíssimo percalço que lhe aconteceu na praça da Malveira.
-# source = CETEMPúblico n=299 sec=soc sem=93b
 # sent_id = CP299-3
+# source = CETEMPúblico n=299 sec=soc sem=93b
 # id = 1590
-# d2d = punct(José,,) -> punct(praticante,,)  #106
-# d2d = cc(redimiu-,e) -> cc(fizeram,e)  #106
-# d2d = punct(José,,) -> punct(praticante,,)  #106
-# d2d = cc(José,e) -> cc(amador,e)  #106
-# d2d = punct(redimiu-,,) -> punct(fizeram,,)  #106
 1	Desta	desta	ADP	PRP|@ADVL>	_	2	case	_	MWE=Desta_feita
 2	feita	feita	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -198,10 +187,10 @@
 30	José	José	PROPN	_	Gender=Masc|Number=Sing	27	nsubj	_	ChangedBy=Issue119|MWE=José_Maldonado_Cortes|MWEPOS=PROPN
 31	Maldonado	Maldonado	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 32	Cortes	Cortes	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-33	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
+33	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
 34	Nuno	Nuno	PROPN	_	Gender=Masc|Number=Sing	30	nsubj	_	ChangedBy=Issue119|MWE=Nuno_Pardal|MWEPOS=PROPN
 35	Pardal	Pardal	PROPN	_	Number=Sing	34	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-36	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
+36	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
 37	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 38	praticante	praticante	NOUN	<cjt>|<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	30	conj	_	_
 39	José	José	PROPN	_	Gender=Masc|Number=Sing	38	appos	_	ChangedBy=Issue119|MWE=José_Francisco_Cortes|MWEPOS=PROPN
@@ -214,11 +203,11 @@
 46	Soudo	Soudo	PROPN	_	Number=Sing	45	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 47	,	,	PUNCT	PU|@PU	_	30	punct	_	_
 48	a	a	ADP	PRP|@PIV>	_	49	case	_	_
-49	quem	quem	PRON	<rel>|INDP|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	50	iobj	_	_
+49	quem	quem	PRON	<rel>|INDP|M|P|@P<	Gender=Masc|Number=Sing|PronType=Rel	50	iobj	_	_
 50	saudamos	saudar	VERB	<mv>|V|PR|1P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	45	acl:relcl	_	_
 51	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_
 52	regresso	regresso	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	50	obj	_	_
-53	após	após	ADP	PRP|@N<	_	54	mark	_	_
+53	após	após	SCONJ	PRP|@N<	_	54	mark	_	_
 54	convalescer	convalescer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	52	acl	_	_
 55-56	do	_	_	_	_	_	_	_	_
 55	de	de	ADP	<sam->|PRP|@<ADVL	_	58	case	_	_
@@ -239,8 +228,8 @@
 68	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Lidou-se um curro de toiros de José Luís Sommer de Andrade, que o Grupo de Forcados amadores da Moita pegou.
-# source = CETEMPúblico n=299 sec=soc sem=93b
 # sent_id = CP299-4
+# source = CETEMPúblico n=299 sec=soc sem=93b
 # id = 1591
 1-2	Lidou-se	_	_	_	_	_	_	_	_
 1	Lidou	lidar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_

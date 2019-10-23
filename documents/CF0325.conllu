@@ -1,6 +1,6 @@
 # text = Livro sobre Imposto Único é lançado dia 9
-# source = CETENFolha n=325 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF325-1
+# source = CETENFolha n=325 cad=Dinheiro sec=eco sem=94b
 # id = 1351
 1	Livro	livro	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj:pass	_	_
 2	sobre	sobre	ADP	PRP|@N<	_	3	case	_	_
@@ -12,8 +12,8 @@
 8	9	9	NUM	<card>|NUM|M|P|@N<	NumType=Card	7	nummod	_	ChangedBy=Issue168
 
 # text = Será lançado no próximo dia 9, no auditório da Folha, a partir das 19h30, o livro «Tributação no Brasil e o Imposto Único», organizado pelo economista Marcos Cintra.
-# source = CETENFolha n=325 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF325-3
+# source = CETENFolha n=325 cad=Dinheiro sec=eco sem=94b
 # id = 1352
 1	Será	ser	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	aux:pass	_	_
 2	lançado	lançar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
@@ -33,22 +33,22 @@
 13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	Folha	folha	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-16	a	a	ADP	<sam->|PRP|@<ADVL	_	17	case	_	MWE=a_partir_de
-17	partir	partir	NOUN	N|@P<	_	2	obl	_	_
+16	a	a	ADP	<sam->|PRP|@<ADVL	_	20	case	_	MWE=a_partir_de|MWEPOS=ADP
+17	partir	partir	NOUN	N|@P<	_	16	fixed	_	_
 18-19	das	_	_	_	_	_	_	_	_
-18	de	de	ADP	PRP|@N<	_	20	case	_	_
+18	de	de	ADP	PRP|@N<	_	16	fixed	_	_
 19	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
-20	19h30	19h30	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+20	19h30	19h30	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	obl	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	livro	livro	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	2	nsubj:pass	_	_
 24	«	«	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 25	Tributação	Tributação	PROPN	_	Gender=Masc|Number=Sing	23	appos	_	ChangedBy=Issue119|MWE=Tributação_no_Brasil_e_o_Imposto_Único|MWEPOS=PROPN
 26-27	no	_	_	_	_	_	_	_	_
-26	em	em	PROPN	_	_	25	flat:name	_	ChangedBy=Issue119
+26	em	em	ADP	_	_	25	flat:name	_	ChangedBy=Issue119
 27	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	flat:name	_	ChangedBy=Issue119
 28	Brasil	Brasil	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue119|MWE=Brasil_e_o_Imposto_Único|MWEPOS=PROPN
-29	e	e	CCONJ	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue119
+29	e	e	CCONJ	_	_	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue119
 30	o	o	DET	_	Number=Sing|PronType=Art	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue119
 31	Imposto	Imposto	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue119
 32	Único	Único	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -64,8 +64,8 @@
 41	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Autor da proposta do Imposto Único, que pretende reduzir a enorme gama de tributos a um, Marcos Cintra fará uma palestra sobre o assunto.
-# source = CETENFolha n=325 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF325-4
+# source = CETENFolha n=325 cad=Dinheiro sec=eco sem=94b
 # id = 1353
 1	Autor	autor	NOUN	<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	23	obl	_	_
 2-3	da	_	_	_	_	_	_	_	_
@@ -79,7 +79,7 @@
 8	Único	Único	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 10	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	11	nsubj	_	_
-11	pretende	pretender	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
+11	pretende	pretender	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_
 12	reduzir	reduzir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	11	xcomp	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 14	enorme	enorme	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	15	amod	_	_

@@ -1,13 +1,11 @@
 # text = Ainda quanto a alterações na Liga de Clubes, a direcção será reduzida de quatro para três membros, passando apenas a haver um presidente (eleito em AG), um director-executivo e outro elemento eleito pela direcção da Liga, onde têm assento onze clubes.
-# source = CETEMPúblico n=457 sec=des sem=95a
 # sent_id = CP457-1
+# source = CETEMPúblico n=457 sec=des sem=95a
 # id = 2408
-# d2d = punct(presidente,,) -> punct(director-executivo,,)  #106
-# d2d = cc(presidente,e) -> cc(elemento,e)  #106
 1	Ainda	ainda	ADV	ADV|@>A	_	4	advmod	_	_
-2	quanto	quanto	ADV	ADV|@ADVL>	_	14	advmod	_	MWE=quanto_a
-3	a	a	ADP	PRP|@A<	_	4	case	_	_
-4	alterações	alteração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	2	obl	_	_
+2	quanto	quanto	ADV	ADV|@ADVL>	_	4	case	_	MWE=quanto_a|MWEPOS=ADP
+3	a	a	ADP	PRP|@A<	_	2	fixed	_	_
+4	alterações	alteração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	14	obl	_	_
 5-6	na	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
@@ -20,15 +18,15 @@
 13	será	ser	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	aux:pass	_	_
 14	reduzida	reduzir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 15	de	de	ADP	<first-cjt>|PRP|@<ADVL	_	16	case	_	_
-16	quatro	quatro	NOUN	<card>|<n>|NUM|M|P|@P<	NumType=Card	14	obl	_	ChangedBy=Issue168
+16	quatro	quatro	NUM	<card>|<n>|NUM|M|P|@P<	NumType=Card	14	obl	_	ChangedBy=Issue168
 17	para	para	ADP	PRP|@P<	_	19	case	_	_
 18	três	três	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168
 19	membros	membro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-21	passando	passar	AUX	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	24	aux	_	_
+21	passando	passar	VERB	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	14	advcl	_	MWE=passando_a|MWEPOS=AUX
 22	apenas	apenas	ADV	ADV|@ADVL>	_	24	advmod	_	_
-23	a	a	ADP	PRP|@PRT-AUX<	_	24	case	_	_
-24	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	advcl	_	_
+23	a	a	SCONJ	PRP|@PRT-AUX<	_	24	mark	_	_
+24	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	xcomp	_	_
 25	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	presidente	presidente	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	24	obj	_	_
 27	(	(	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -52,7 +50,7 @@
 43	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
 44	Liga	Liga	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	41	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 45	,	,	PUNCT	PU|@PU	_	38	punct	_	_
-46	onde	onde	ADV	<rel>|ADV|@ADVL>	_	47	advmod	_	_
+46	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	47	obl	_	_
 47	têm	ter	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	44	acl:relcl	_	_
 48	assento	assento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	47	obj	_	_
 49	onze	onze	NUM	<card>|NUM|M|P|@>N	NumType=Card	50	nummod	_	ChangedBy=Issue168
@@ -60,8 +58,8 @@
 51	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Este último será o único que não coincide com o OA.
-# source = CETEMPúblico n=457 sec=des sem=95a
 # sent_id = CP457-2
+# source = CETEMPúblico n=457 sec=des sem=95a
 # id = 2409
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	último	último	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing|NumType=Ord	5	nsubj	_	ChangedBy=Issue172
@@ -77,8 +75,8 @@
 12	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = De resto, decidiu-se ainda aumentar os elementos da Comissão Arbitral da Liga, que serão nove em vez de sete.
-# source = CETEMPúblico n=457 sec=des sem=95a
 # sent_id = CP457-3
+# source = CETEMPúblico n=457 sec=des sem=95a
 # id = 2410
 1	De	de	ADP	PRP|@ADVL>	_	2	case	_	MWE=De_resto
 2	resto	resto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -93,8 +91,8 @@
 10-11	da	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	Comissão	Comissão	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	MWE=Comissão_Arbitral
-13	Arbitral	Arbitral	PROPN	PROP|@N<	Number=Sing	12	flat:name	_	_
+12	Comissão	Comissão	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	MWE=Comissão_Arbitral|MWEPOS=PROPN
+13	Arbitral	Arbitral	PROPN	PROP|@N<	Gender=Fem|Number=Sing	12	flat:name	_	_
 14-15	da	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
@@ -103,15 +101,15 @@
 18	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	20	nsubj	_	_
 19	serão	ser	AUX	<mv>|V|FUT|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	20	cop	_	ChangedBy=Issue167
 20	nove	nove	NUM	<card>|NUM|M|P|@<SC	NumType=Card	9	nmod	_	ChangedBy=Issue168
-21	em	em	ADP	PRP|@<ADVL	_	22	case	_	MWE=em_vez_de
-22	vez	vez	NOUN	N|@P<	_	20	nmod	_	_
-23	de	de	ADP	PRP|@N<	_	24	case	_	_
-24	sete	sete	NUM	<card>|NUM|M|P|@P<	NumType=Card	22	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+21	em	em	ADP	PRP|@<ADVL	_	24	cc	_	MWE=em_vez_de|MWEPOS=CCONJ
+22	vez	vez	NOUN	N|@P<	Gender=Fem|Number=Sing	21	fixed	_	_
+23	de	de	ADP	PRP|@N<	_	21	fixed	_	_
+24	sete	sete	NUM	<card>|NUM|M|P|@P<	NumType=Card	20	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Todas estas decisões, disse Damásio, foram tomadas por unanimidade.
-# source = CETEMPúblico n=457 sec=des sem=95a
 # sent_id = CP457-4
+# source = CETEMPúblico n=457 sec=des sem=95a
 # id = 2411
 1	Todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	3	det	_	_
 2	estas	este	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	3	det	_	_
@@ -127,8 +125,8 @@
 12	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Benfica-Sporting é amanhã
-# source = CETEMPúblico n=457 sec=des sem=95a
 # sent_id = CP457-5
+# source = CETEMPúblico n=457 sec=des sem=95a
 # id = 2412
 1	Benfica	Benfica	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 2	-	-	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -137,8 +135,8 @@
 5	amanhã	amanhã	ADV	ADV|@<sA	_	0	root	_	_
 
 # text = A FPF confirmou ontem a repetição do Benfica-Sporting para amanhã, no estádio do Restelo, negando assim provimento à contestação do Sporting.
-# source = CETEMPúblico n=457 sec=des sem=95a
 # sent_id = CP457-6
+# source = CETEMPúblico n=457 sec=des sem=95a
 # id = 2413
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	FPF	FPF	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
@@ -178,10 +176,9 @@
 31	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A hora do jogo, referente à 30ª jornada do campeonato nacional e repetido por alegado erro do árbitro na expulsão do benfiquista Caniggia, ficou dependente do clube de Alvalade.
-# source = CETEMPúblico n=457 sec=des sem=95a
 # sent_id = CP457-7
+# source = CETEMPúblico n=457 sec=des sem=95a
 # id = 2414
-# d2d = cc(jornada,e) -> cc(repetido,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	hora	hora	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	32	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -230,10 +227,9 @@
 39	.	.	PUNCT	PU|@PU	_	32	punct	_	_
 
 # text = A dúvida é entre as 18h30 ou as 20h30, esta última proposta pelo Benfica, para permitir a transmissão televisiva.
-# source = CETEMPúblico n=457 sec=des sem=95a
 # sent_id = CP457-8
+# source = CETEMPúblico n=457 sec=des sem=95a
 # id = 2415
-# d2d = cc(18h30,ou) -> cc(20h30,ou)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	dúvida	dúvida	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
@@ -252,7 +248,7 @@
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	Benfica	Benfica	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	obl:agent	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-18	para	para	ADP	PRP|@<ADVL	_	19	mark	_	_
+18	para	para	SCONJ	PRP|@<ADVL	_	19	mark	_	_
 19	permitir	permitir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	advcl	_	_
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	transmissão	transmissão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_

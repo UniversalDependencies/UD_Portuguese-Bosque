@@ -1,16 +1,15 @@
 # text = BNU aprova financiamentos
-# source = CETEMPúblico n=481 sec=eco sem=92a
 # sent_id = CP481-1
+# source = CETEMPúblico n=481 sec=eco sem=92a
 # id = 2535
 1	BNU	BNU	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	aprova	aprovar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	financiamentos	financiamento	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
 
 # text = O Banco Nacional Ultramarino (BNU) tinha aprovado até Dezembro de 1991 cerca de seis milhões de contos de financiamentos para linhas dedicadas a pequenas e médias empresas.
-# source = CETEMPúblico n=481 sec=eco sem=92a
 # sent_id = CP481-2
+# source = CETEMPúblico n=481 sec=eco sem=92a
 # id = 2536
-# d2d = cc(pequenas,e) -> cc(médias,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Banco	Banco	PROPN	_	Gender=Masc|Number=Sing	9	nsubj	_	ChangedBy=Issue119|MWE=Banco_Nacional_Ultramarino|MWEPOS=PROPN
 3	Nacional	Nacional	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -24,12 +23,12 @@
 11	Dezembro	dezembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	1991	1991	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	11	nmod	_	ChangedBy=Issue168
-14	cerca	cerca	ADV	ADV|@>A	_	16	advmod	_	MWE=cerca_de
-15	de	de	ADP	<prp>|PRP|@A<	_	14	case	_	_
-16	seis	seis	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168|MWE=seis_milhões
+14	cerca	cerca	ADV	ADV|@>A	_	16	advmod	_	MWE=cerca_de|MWEPOS=ADV
+15	de	de	ADP	<prp>|PRP|@A<	_	14	fixed	_	_
+16	seis	seis	NUM	<card>|NUM|M|P|@>N	NumType=Card	9	obj	_	ChangedBy=Issue168|MWE=seis_milhões
 17	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	16	flat	_	_
 18	de	de	ADP	PRP|@N<ARG	_	19	case	_	_
-19	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obj	_	_
+19	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
 20	de	de	ADP	PRP|@N<ARG	_	21	case	_	_
 21	financiamentos	financiamento	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
 22	para	para	ADP	PRP|@N<	_	23	case	_	_
@@ -43,13 +42,11 @@
 30	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = A dotação global das linhas específicas para as PME é de 12,5 milhões de contos, oriundos do Banco Europeu de Investimentos, do Fundo de Regularização da Dívida Pública e da Caixa Geral de Depósitos.
-# source = CETEMPúblico n=481 sec=eco sem=92a
 # sent_id = CP481-3
+# source = CETEMPúblico n=481 sec=eco sem=92a
 # id = 2537
-# d2d = punct(Banco,,) -> punct(Fundo,,)  #106
-# d2d = cc(Banco,e) -> cc(Caixa,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
-2	dotação	dotação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
+2	dotação	dotação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj	_	_
 3	global	global	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
 4-5	das	_	_	_	_	_	_	_	_
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
@@ -59,12 +56,12 @@
 8	para	para	ADP	PRP|@N<	_	10	case	_	_
 9	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
 10	PME	PME	PROPN	PROP|F|P|@P<	Gender=Fem|Number=Plur	6	nmod	_	_
-11	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	ChangedBy=Issue167
+11	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	ChangedBy=Issue167
 12	de	de	ADP	PRP|@<SC	_	13	case	_	_
-13	12,5	12,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	16	nummod	_	ChangedBy=Issue168|MWE=12,5_milhões
+13	12,5	12,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	0	root	_	ChangedBy=Issue168|MWE=12,5_milhões
 14	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	13	flat	_	_
 15	de	de	ADP	PRP|@N<ARG	_	16	case	_	_
-16	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+16	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 18	oriundos	oriundo	ADJ	ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	16	amod	_	_
 19-20	do	_	_	_	_	_	_	_	_
@@ -84,8 +81,8 @@
 31-32	da	_	_	_	_	_	_	_	_
 31	de	de	ADP	<sam->|PRP|@N<	_	33	case	_	_
 32	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	Dívida	Dívida	NOUN	_	Number=Sing	30	nmod	_	MWE=dívida_pública|MWEPOS=NOUN
-34	Pública	Pública	ADJ	_	Number=Sing	33	amod	_	_
+33	Dívida	Dívida	PROPN	_	Number=Sing	30	nmod	_	MWE=dívida_pública|MWEPOS=NOUN
+34	Pública	Pública	PROPN	_	Number=Sing	33	amod	_	_
 35	e	e	CCONJ	<co-a<>|<co-postnom>|KC|@CO	_	38	cc	_	d2d:#106
 36-37	da	_	_	_	_	_	_	_	_
 36	de	de	ADP	<cjt>|<sam->|PRP|@A<	_	38	case	_	_
@@ -94,15 +91,12 @@
 39	Geral	Geral	PROPN	_	Number=Sing	38	flat:name	_	ChangedBy=Issue119
 40	de	de	ADP	PRP|@N<	_	41	case	_	_
 41	Depósitos	Depósitos	PROPN	PROP|@P<	Number=Sing	38	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-42	.	.	PUNCT	PU|@PU	_	16	punct	_	_
+42	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Este apoio foi decidido em 1990 e inclui o reforço de capitais próprios, linhas de crédito em colaboração com a CGD, tal como os fundos de apoio às iniciativas de jovens empresários.
-# source = CETEMPúblico n=481 sec=eco sem=92a
 # sent_id = CP481-4
+# source = CETEMPúblico n=481 sec=eco sem=92a
 # id = 2538
-# d2d = cc(decidido,e) -> cc(inclui,e)  #106
-# d2d = punct(reforço,,) -> punct(linhas,,)  #106
-# d2d = punct(reforço,,) -> punct(fundos,,)  #106
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	apoio	apoio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
 3	foi	ser	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
@@ -126,10 +120,10 @@
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	CGD	CGD	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
-24	tal	tal	ADP	PRP|@CO	_	15	nmod	_	MWE=tal_como
-25	como	como	ADV	N|M|S|@P<	_	24	fixed	_	_
+24	tal	tal	DET	PRP|@CO	_	27	case	_	MWE=tal_como|MWEPOS=ADP
+25	como	como	ADP	N|M|S|@P<	_	24	fixed	_	_
 26	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
-27	fundos	fundo	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	24	nmod	_	_
+27	fundos	fundo	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	parataxis	_	_
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	apoio	apoio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
 30-31	às	_	_	_	_	_	_	_	_
@@ -142,12 +136,12 @@
 36	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Por outro lado, até ao final de 1991 o BNU tinha prestado 292 garantias a favor do Instituto de Apoio às Pequenas e Médias Empresas, para a liberalização prévia de incentivos concedidos por este instituto.
-# source = CETEMPúblico n=481 sec=eco sem=92a
 # sent_id = CP481-5
+# source = CETEMPúblico n=481 sec=eco sem=92a
 # id = 2539
-1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	MWE=Por_outro_lado
-2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	_
-3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	Por	por	ADP	PRP|@ADVL>	_	14	cc	_	MWE=Por_outro_lado|MWEPOS=CCONJ
+2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	1	fixed	_	_
+3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	até	até	ADP	PRP|@ADVL>	_	8	case	_	_
 6-7	ao	_	_	_	_	_	_	_	_
@@ -163,7 +157,7 @@
 15	292	292	NUM	<card>|NUM|F|P|@>N	NumType=Card	16	nummod	_	ChangedBy=Issue168
 16	garantias	garantia	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	14	obj	_	_
 17	a	a	ADP	<sam->|PRP|@<ADVL	_	18	case	_	MWE=a_favor_de
-18	favor	favor	NOUN	N|@P<	_	14	obl	_	_
+18	favor	favor	NOUN	N|@P<	Gender=Masc|Number=Sing	14	obl	_	_
 19-20	do	_	_	_	_	_	_	_	_
 19	de	de	ADP	PRP|@N<	_	21	case	_	_
 20	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
@@ -174,7 +168,7 @@
 24	a	a	ADP	<sam->|PRP|@N<	_	26	case	_	_
 25	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
 26	Pequenas	Pequenas	PROPN	_	Number=Sing	23	nmod	_	ChangedBy=Issue119|MWE=Pequenas_e_Médias_Empresas|MWEPOS=PROPN
-27	e	e	CCONJ	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
+27	e	e	CCONJ	_	_	26	flat:name	_	ChangedBy=Issue119
 28	Médias	Médias	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119
 29	Empresas	Empresas	PROPN	_	Number=Sing	26	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	37	punct	_	_
@@ -191,8 +185,8 @@
 41	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Lucros no Santander
-# source = CETEMPúblico n=481 sec=eco sem=92a
 # sent_id = CP481-6
+# source = CETEMPúblico n=481 sec=eco sem=92a
 # id = 2540
 1	Lucros	lucro	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 2-3	no	_	_	_	_	_	_	_	_

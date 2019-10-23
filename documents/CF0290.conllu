@@ -1,13 +1,13 @@
 # text = Usuário de BBS pode 'entrar' na InterNet
-# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # sent_id = CF290-1
+# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # id = 1214
 1	Usuário	usuário	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	BBS	BBS	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	_
-4	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+4	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	'	'	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
-6	entrar	entrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+6	entrar	entrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 7	'	'	PUNCT	PU|@PU	_	6	punct	_	_
 8-9	na	_	_	_	_	_	_	_	_
 8	em	em	ADP	<sam->|PRP|@<SA	_	10	case	_	_
@@ -15,8 +15,8 @@
 10	InterNet	InterNet	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
 
 # text = Os Bulletin Board Systems (BBS) estão oferecendo um novo serviço aos seus usuários: a conexão com a rede das redes, a InterNet.
-# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # sent_id = CF290-4
+# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # id = 1215
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Bulletin	Bulletin	PROPN	_	Gender=Masc|Number=Plur	9	nsubj	_	ChangedBy=Issue119|MWE=Bulletin_Board_Systems|MWEPOS=PROPN
@@ -51,8 +51,8 @@
 29	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Essa rede, criada há 20 anos pelo Departamento de Defesa dos Estados Unidos para conectar os seus vários centros de pesquisa, é considerada a maior rede de comunicação entre computadores, contando com milhões de usuários espalhados por várias cidades do mundo.
-# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # sent_id = CF290-5
+# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # id = 1216
 1	Essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	rede	rede	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	27	nsubj:pass	_	ChangedBy=Issue165|SpaceAfter=No
@@ -72,7 +72,7 @@
 14	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
 15	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	MWE=Estados_Unidos
 16	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	15	flat:name	_	_
-17	para	para	ADP	PRP|@<ADVL	_	18	mark	_	_
+17	para	para	SCONJ	PRP|@<ADVL	_	18	mark	_	_
 18	conectar	conectar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	advcl	_	_
 19	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
 20	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	22	det	_	_
@@ -107,14 +107,13 @@
 48	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 
 # text = Os serviços mais procurados na InterNet são correio eletrônico e transferência de arquivos, conhecida como FTP (File Transfer Protocol).
-# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # sent_id = CF290-6
+# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # id = 1217
-# d2d = cc(correio,e) -> cc(transferência,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	serviços	serviço	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
 3	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@ADVL>	_	4	advmod	_	_
-4	procurados	procurado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	2	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+4	procurados	procurar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	2	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 5-6	na	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
@@ -127,7 +126,7 @@
 13	de	de	ADP	PRP|@N<ARG	_	14	case	_	_
 14	arquivos	arquivo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-16	conhecida	conhecido	ADJ	<cjt>|<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing	12	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+16	conhecida	conhecer	VERB	<cjt>|<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	12	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 17	como	como	ADP	<prd>|PRP|@<SC	_	18	case	_	_
 18	FTP	FTP	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	16	xcomp	_	_
 19	(	(	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -138,11 +137,10 @@
 24	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Para se ter uma idéia da importância da InterNet, a Casa Branca está conectada a essa rede, disponibilizando publicações e documentos para qualquer pessoa do mundo.
-# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # sent_id = CF290-7
+# source = CETENFolha n=290 cad=Informática sec=com sem=94b
 # id = 1218
-# d2d = cc(publicações,e) -> cc(documentos,e)  #106
-1	Para	para	ADP	PRP|@ADVL>	_	3	mark	_	_
+1	Para	para	SCONJ	PRP|@ADVL>	_	3	mark	_	_
 2	se	se	PRON	PERS|F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Fem|PronType=Prs	3	nsubj	_	_
 3	ter	ter	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	17	advcl	_	_
 4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_

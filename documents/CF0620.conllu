@@ -1,9 +1,7 @@
 # text = Assim, se você está usando uma planilha, por exemplo, pode selecionar parte (ou todo) e levar o que foi selecionado para outra planilha ou qualquer programa que estiver sendo usado.
-# source = CETENFolha n=620 cad=Informática sec=com sem=94a
 # sent_id = CF620-1
+# source = CETENFolha n=620 cad=Informática sec=com sem=94a
 # id = 2611
-# d2d = cc(parte,ou) -> cc(todo,ou)  #106
-# d2d = cc(selecionar,e) -> cc(levar,e)  #106
 1	Assim	assim	ADV	<kc>|ADV|@ADVL>	_	14	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	se	se	SCONJ	KS|@SUB	_	6	mark	_	_
@@ -16,8 +14,8 @@
 10	por	por	ADP	PRP|@<ADVL	_	6	advmod	_	MWE=por_exemplo|MWEPOS=ADV
 11	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	10	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-13	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
-14	selecionar	selecionar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+13	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+14	selecionar	selecionar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	xcomp	_	_
 15	parte	parte	NOUN	<first-cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
 16	(	(	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 17	ou	ou	CCONJ	<co-acc>|KC|@CO	_	18	cc	_	d2d:#106
@@ -42,10 +40,9 @@
 36	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Os arquivos das pastas também podem ser abertos a partir do menu, facilitando o uso de arquivos e aplicações.
-# source = CETENFolha n=620 cad=Informática sec=com sem=94a
 # sent_id = CF620-2
+# source = CETENFolha n=620 cad=Informática sec=com sem=94a
 # id = 2612
-# d2d = cc(arquivos,e) -> cc(aplicações,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	arquivos	arquivo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj:pass	_	_
 3-4	das	_	_	_	_	_	_	_	_
@@ -53,11 +50,11 @@
 4	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
 5	pastas	pasta	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
 6	também	também	ADV	ADV|@ADVL>	_	9	advmod	_	_
-7	podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+7	podem	poder	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	9	aux:pass	_	_
-9	abertos	abrir	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+9	abertos	abrir	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	7	xcomp	_	_
 10	a	a	ADP	<sam->|PRP|@<ADVL	_	11	case	_	MWE=a_partir_de
-11	partir	partir	NOUN	N|@P<	_	9	obl	_	_
+11	partir	partir	VERB	N|@P<	VerbForm=Inf	9	obl	_	_
 12-13	do	_	_	_	_	_	_	_	_
 12	de	de	ADP	PRP|@N<	_	14	case	_	_
 13	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_

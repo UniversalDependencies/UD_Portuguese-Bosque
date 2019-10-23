@@ -1,6 +1,6 @@
 # text = Volume do dinheiro em circulação não cresce mais
-# source = CETENFolha n=362 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF362-1
+# source = CETENFolha n=362 cad=Dinheiro sec=eco sem=94a
 # id = 1504
 1	Volume	volume	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
@@ -14,8 +14,8 @@
 9	mais	mais	ADV	<atemp>|ADV|@<ADVL	_	8	advmod	_	_
 
 # text = A equipe do ministro da Fazenda, Rubens Ricupero, avalia que o processo de crescimento do volume de dinheiro em circulação, decorrente da queda da inflação, está praticamente encerrado.
-# source = CETENFolha n=362 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF362-4
+# source = CETENFolha n=362 cad=Dinheiro sec=eco sem=94a
 # id = 1505
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	equipe	equipe	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj	_	_
@@ -26,7 +26,7 @@
 6-7	da	_	_	_	_	_	_	_	_
 6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Fazenda	fazenda	NOUN	N|@P<	_	5	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+8	Fazenda	fazenda	NOUN	N|@P<	Gender=Fem|Number=Sing	5	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 10	Rubens	Rubens	PROPN	_	Gender=Masc|Number=Sing	5	appos	_	ChangedBy=Issue119|MWE=Rubens_Ricupero|MWEPOS=PROPN
 11	Ricupero	Ricupero	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -58,15 +58,13 @@
 34	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 35	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	cop	_	ChangedBy=Issue167
 36	praticamente	praticamente	ADV	ADV|@<ADVL	_	37	advmod	_	_
-37	encerrado	encerrar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	13	dep	_	ChangedBy=Issue165|SpaceAfter=No
+37	encerrado	encerrar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	13	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
 38	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Segundo o diretor de Assuntos Internacionais do Banco Central, Gustavo Franco, as emissões de reais cresceram bastante na primeira semana de julho, mas estão estáveis desde então.
-# source = CETENFolha n=362 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF362-5
+# source = CETENFolha n=362 cad=Dinheiro sec=eco sem=94a
 # id = 1506
-# d2d = punct(cresceram,,) -> punct(estáveis,,)  #106
-# d2d = cc(cresceram,mas) -> cc(estáveis,mas)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	diretor	diretor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	ChangedBy=Issue137

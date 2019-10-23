@@ -1,6 +1,6 @@
 # text = Em Portugal desde 23 de Maio, Manuel António viveu em Lisboa, cerca de três meses, deslocando-se depois para o Porto.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-1
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1455
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue137
@@ -15,8 +15,8 @@
 11	em	em	ADP	PRP|@<SA	_	12	case	_	_
 12	Lisboa	Lisboa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-14	cerca	cerca	ADV	ADV|@>A	_	16	advmod	_	MWE=cerca_de
-15	de	de	ADP	<prp>|PRP|@A<	_	14	case	_	_
+14	cerca	cerca	ADV	ADV|@>A	_	17	advmod	_	MWE=cerca_de|MWEPOS=ADV
+15	de	de	ADP	<prp>|PRP|@A<	_	14	fixed	_	_
 16	três	três	NUM	<card>|NUM|M|P|@>N	NumType=Card	17	nummod	_	ChangedBy=Issue168
 17	meses	mês	NOUN	<np-def>|N|M|P|@<ADVL	Gender=Masc|Number=Plur	10	obl	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	19	punct	_	_
@@ -30,8 +30,8 @@
 25	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Pelas 3h55 da passada quinta-feira foi surpreendido nas escadas interiores da 15ª Esquadra da PSP, na Foz do Douro, sem ter usado a porta de entrada.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-2
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1456
 1-2	Pelas	_	_	_	_	_	_	_	_
 1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	_
@@ -68,7 +68,7 @@
 26	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	Douro	Douro	PROPN	PROP|@P<	Number=Sing	24	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-29	sem	sem	ADP	PRP|@<ADVL	_	31	mark	_	_
+29	sem	sem	SCONJ	PRP|@<ADVL	_	31	mark	_	_
 30	ter	ter	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	31	aux	_	_
 31	usado	usar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	9	advcl	_	_
 32	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
@@ -78,8 +78,8 @@
 36	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Fonte policial admite que o jovem tenha saltado o muro das traseiras das instalações.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-3
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1457
 1	Fonte	fonte	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 2	policial	policial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
@@ -102,10 +102,9 @@
 17	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Na altura, Manuel António alegou sede e que queria beber água, justificando desta forma a sua entrada na esquadra através do muro.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-4
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1458
-# d2d = cc(sede,e) -> cc(queria,e)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	3	det	_	_
@@ -141,10 +140,9 @@
 29	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Indocumentado, deu um nome trocado -- Manuel Carneiro --, disse ser moçambicano e que tinha os documentos numas obras.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-5
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1459
-# d2d = cc(moçambicano,e) -> cc(tinha,e)  #106
 1	Indocumentado	indocumentado	ADJ	<cjt>|ADJ|M|S|@PRED>	Gender=Masc|Number=Sing	3	amod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	deu	dar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -158,7 +156,7 @@
 11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 12	disse	dizer	VERB	<mv>|<cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	_	_
 13	ser	ser	AUX	<mv>|<first-cjt>|V|INF|@ICL-<ACC	VerbForm=Inf	14	cop	_	ChangedBy=Issue167
-14	moçambicano	moçambicano	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	12	dep	_	_
+14	moçambicano	moçambicano	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	12	xcomp	_	_
 15	e	e	CCONJ	<co-icl>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
 16	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
 17	tinha	ter	VERB	<mv>|<cjt>|V|IMPF|3S|IND|@ICL-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	conj	_	_
@@ -171,11 +169,9 @@
 23	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Esta informação não foi confirmada pelos agentes da PSP que o acompanharam a estaleiros sitos na Foz, Boavista e no Carvalhido.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-6
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1460
-# d2d = cc(Foz,e) -> cc(Carvalhido,e)  #106
-# d2d = punct(Foz,,) -> punct(Boavista,,)  #106
 1	Esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	informação	informação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj:pass	_	_
 3	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
@@ -209,8 +205,8 @@
 27	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = As diligências da polícia terminaram com a sua entrega ao Serviço de Estrangeiros e Fronteiras (SEF).
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-7
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1461
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	diligências	diligência	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	6	nsubj	_	_
@@ -229,7 +225,7 @@
 13	Serviço	Serviço	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	MWE=Serviço_de_Estrangeiros_e_Fronteiras
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	Estrangeiros	Estrangeiros	PROPN	_	Number=Sing	13	nmod	_	ChangedBy=Issue119|MWE=Estrangeiros_e_Fronteiras|MWEPOS=PROPN
-16	e	e	CCONJ	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
+16	e	e	CCONJ	_	_	15	flat:name	_	ChangedBy=Issue119
 17	Fronteiras	Fronteiras	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119
 18	(	(	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 19	SEF	SEF	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	13	appos	_	ChangedBy=Issue165|SpaceAfter=No
@@ -237,10 +233,9 @@
 21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Junto do Consulado de Moçambique, o SEF apurou ser falsa a nacionalidade indicada pelo Manuel António e descobriu os documentos no interior de uma pasta na posse de um tal Albertino.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-8
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1462
-# d2d = cc(apurou,e) -> cc(descobriu,e)  #106
 1	Junto	junto	ADV	ADV|@ADVL>	_	10	advmod	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@A<	_	4	case	_	_
@@ -253,7 +248,7 @@
 9	SEF	SEF	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 10	apurou	apurar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 11	ser	ser	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	12	cop	_	ChangedBy=Issue167
-12	falsa	falso	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	10	dep	_	_
+12	falsa	falso	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	10	xcomp	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	nacionalidade	nacionalidade	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	12	nsubj	_	_
 15	indicada	indicar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	14	acl	_	_
@@ -284,11 +279,9 @@
 37	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = As autoridades verificaram que o Manuel António tinha dois passaportes: um angolano, verdadeiro; e outro português, falsificado.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-9
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1463
-# d2d = cc(um,e) -> cc(outro,e)  #106
-# d2d = punct(um,,) -> punct(outro,,)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	autoridades	autoridade	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
 3	verificaram	verificar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -313,12 +306,9 @@
 22	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Este último documento terá sido adquirido no Centro Comercial Dallas, no Porto, por 15 contos e destinava-se a ser usado numa viagem a França.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-10
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1464
-# d2d = punct(adquirido,,) -> punct(destinava-,,)  #106
-# d2d = cc(adquirido,e) -> cc(destinava-,e)  #106
-# d2d = punct(adquirido,,) -> punct(destinava-,,)  #106
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
 2	último	último	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	3	amod	_	ChangedBy=Issue172
 3	documento	documento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj:pass	_	_
@@ -331,12 +321,12 @@
 9	Centro	Centro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	MWE=Centro_Comercial_Dallas
 10	Comercial	Comercial	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	_
 11	Dallas	Dallas	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
-12	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 13-14	no	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@N<PRED	_	15	case	_	_
 14	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	Porto	Porto	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 17	por	por	ADP	PRP|@<ADVL	_	19	case	_	_
 18	15	15	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168
 19	contos	conto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	ChangedBy=Issue137
@@ -344,7 +334,7 @@
 21-22	destinava-se	_	_	_	_	_	_	_	_
 21	destinava	destinar	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	conj	_	_
 22	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	expl	_	ChangedBy=Issue135
-23	a	a	ADP	PRP|@<PIV	_	25	mark	_	_
+23	a	a	SCONJ	PRP|@<PIV	_	25	mark	_	_
 24	ser	ser	AUX	<cjt>|<aux>|V|INF|@ICL-P<	VerbForm=Inf	25	aux:pass	_	_
 25	usado	usar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	21	xcomp	_	_
 26-27	numa	_	_	_	_	_	_	_	_
@@ -356,8 +346,8 @@
 31	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Acusado de falsificação de documentos, Manuel António viu a detenção confirmada por um juiz de instrução, que não atendeu ao facto do jovem ter menos de 16 anos, em função do passaporte angolano de que era portador.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-11
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1465
 1	Acusado	acusar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	7	acl	_	_
 2	de	de	ADP	PRP|@<PIV	_	3	case	_	_
@@ -385,7 +375,7 @@
 23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	facto	facto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	obj	_	_
 25-26	do	_	_	_	_	_	_	_	_
-25	de	de	ADP	PRP|@N<ARG	_	28	mark	_	_
+25	de	de	SCONJ	PRP|@N<ARG	_	28	mark	_	_
 26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	jovem	jovem	NOUN	<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	28	nsubj	_	_
 28	ter	ter	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	24	acl	_	_
@@ -395,7 +385,7 @@
 32	anos	ano	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	28	obj	_	ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 34	em	em	ADP	<sam->|PRP|@<ADVL	_	35	case	_	MWE=em_função_de
-35	função	função	NOUN	N|@P<	_	28	obl	_	_
+35	função	função	NOUN	N|@P<	Gender=Fem|Number=Sing	28	obl	_	_
 36-37	do	_	_	_	_	_	_	_	_
 36	de	de	ADP	PRP|@N<	_	38	case	_	_
 37	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
@@ -408,10 +398,9 @@
 44	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Quatro dias mais tarde, o Ministério Público detectou o erro e ordenou a transferência do processo para o foro do Tribunal de Menores, a quem foi entregue ontem.
-# source = CETEMPúblico n=274 sec=soc sem=93a
 # sent_id = CP274-12
+# source = CETEMPúblico n=274 sec=soc sem=93a
 # id = 1466
-# d2d = cc(detectou,e) -> cc(ordenou,e)  #106
 1	Quatro	quatro	NUM	<card>|NUM|M|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	dias	dia	NOUN	<np-def>|N|M|P|@ADVL>	Gender=Masc|Number=Plur	9	obl	_	_
 3	mais	mais	ADV	<quant>|ADV|@>A	_	4	advmod	_	_

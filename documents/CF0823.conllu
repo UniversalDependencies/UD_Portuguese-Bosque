@@ -1,6 +1,6 @@
 # text = O secretário-geral da Presidência, Mauro Durante, também tem emprego garantido.
-# source = CETENFolha n=823 cad=Brasil sec=pol sem=94a
 # sent_id = CF823-1
+# source = CETENFolha n=823 cad=Brasil sec=pol sem=94a
 # id = 3466
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	secretário-geral	secretário-geral	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
@@ -19,11 +19,9 @@
 14	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Itamar quis encaixá-lo no Tribunal Superior do Trabalho, mas a OAB (Ordem dos Advogados do Brasil) não deixou.
-# source = CETENFolha n=823 cad=Brasil sec=pol sem=94a
 # sent_id = CF823-2
+# source = CETENFolha n=823 cad=Brasil sec=pol sem=94a
 # id = 3467
-# d2d = cc(quis,mas) -> cc(deixou,mas)  #106
-# d2d = punct(quis,,) -> punct(deixou,,)  #106
 1	Itamar	Itamar	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	quis	querer	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3-4	encaixá-lo	_	_	_	_	_	_	_	_
@@ -58,22 +56,19 @@
 27	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O presidente articulou, então, lobby certeiro em direção ao Sebrae (Serviço de Apoio à Pequena e Média Empresa) e ainda pediu a FHC que o ajudasse a pôr Durante na presidência da entidade.
-# source = CETENFolha n=823 cad=Brasil sec=pol sem=94a
 # sent_id = CF823-3
+# source = CETENFolha n=823 cad=Brasil sec=pol sem=94a
 # id = 3468
-# d2d = cc(articulou,e) -> cc(pediu,e)  #106
-# d2d = punct(articulou,,) -> punct(pediu,,)  #106
-# d2d = punct(articulou,,) -> punct(pediu,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	articulou	articular	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
-4	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 5	então	então	ADV	<kc>|ADV|@<ADVL	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-6	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+6	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
 7	lobby	lobby	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 8	certeiro	certeiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	_
 9	em	em	ADP	<sam->|PRP|@N<	_	10	case	_	MWE=em_direção_a
-10	direção	direção	NOUN	N|@P<	_	7	nmod	_	_
+10	direção	direção	NOUN	N|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
 11-12	ao	_	_	_	_	_	_	_	_
 11	a	a	ADP	PRP|@N<	_	13	case	_	_
 12	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -86,7 +81,7 @@
 18	a	a	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	Pequena	Pequena	PROPN	_	Number=Sing	17	nmod	_	ChangedBy=Issue119|MWE=Pequena_e_Média_Empresa|MWEPOS=PROPN
-21	e	e	CCONJ	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
+21	e	e	CCONJ	_	_	20	flat:name	_	ChangedBy=Issue119
 22	Média	Média	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 23	Empresa	Empresa	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 24	)	)	PUNCT	PU|@PU	_	15	punct	_	_
@@ -98,7 +93,7 @@
 30	que	que	SCONJ	KS|@SUB	_	32	mark	_	_
 31	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	obj	_	_
 32	ajudasse	ajudar	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	27	ccomp	_	_
-33	a	a	ADP	PRP|@<PIV	_	34	mark	_	_
+33	a	a	SCONJ	PRP|@<PIV	_	34	mark	_	_
 34	pôr	pôr	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	32	xcomp	_	_
 35	Durante	Durante	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	34	obj	_	_
 36-37	na	_	_	_	_	_	_	_	_

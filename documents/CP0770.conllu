@@ -1,15 +1,15 @@
 # text = Enquanto o possível medo de represálias fazia com que as acusações dos jogadores contra Octávio nunca se tivessem concretizado, ele, em contrapartida, teve a coragem de «dar» a cara em alguns momentos de grande polémica.
-# source = CETEMPúblico n=770 sec=des sem=91b
 # sent_id = CP770-1
+# source = CETEMPúblico n=770 sec=des sem=91b
 # id = 3948
-1	Enquanto	enquanto	ADV	<rel>|ADV|@ADVL>	_	7	advmod	_	_
+1	Enquanto	enquanto	SCONJ	<rel>|ADV|@ADVL>	_	7	mark	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 3	possível	possível	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	4	amod	_	_
 4	medo	medo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	represálias	represália	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	nmod	_	_
 7	fazia	fazer	VERB	<mv>|V|IMPF|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	27	advcl	_	_
-8	com	com	ADP	PRP|@<ADVL	_	20	mark	_	_
+8	com	com	SCONJ	PRP|@<ADVL	_	20	mark	_	_
 9	que	que	SCONJ	KS|@SUB	_	20	mark	_	_
 10	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
 11	acusações	acusação	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	20	nsubj:pass	_	_
@@ -32,7 +32,7 @@
 27	teve	ter	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 28	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
 29	coragem	coragem	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	27	obj	_	_
-30	de	de	ADP	PRP|@N<ARG	_	32	mark	_	_
+30	de	de	SCONJ	PRP|@N<ARG	_	32	mark	_	_
 31	«	«	PUNCT	PU|@PU	_	32	punct	_	ChangedBy=Issue165|SpaceAfter=No
 32	dar	dar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	acl	_	ChangedBy=Issue165|SpaceAfter=No
 33	»	»	PUNCT	PU|@PU	_	32	punct	_	_
@@ -47,12 +47,9 @@
 42	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 
 # text = Assim, no seu primeiro Porto-Sporting como adjunto, com a rivalidade Pinto da Costa-João Rocha estava no auge e com Artur Jorge a não conseguir ganhar nas Antas, Octávio seria acusado de agredir à cabeçada e a murro alguns responsáveis sportinguistas, indo assim mais além do que o próprio treinador principal que, impávido e sereno, comandou a sua equipa sem se envolver nas «guerras» marginais em que Pinto da Costa e Octávio mostravam estar como «peixes na água».
-# source = CETEMPúblico n=770 sec=des sem=91b &W
 # sent_id = CP770-2
+# source = CETEMPúblico n=770 sec=des sem=91b &W
 # id = 3949
-# d2d = cc(Pinto,e) -> cc(Octávio,e)  #106
-# d2d = cc(impávido,e) -> cc(sereno,e)  #106
-# d2d = cc(cabeçada,e) -> cc(murro,e)  #106
 1	Assim	assim	ADV	<kc>|ADV|@ADVL>	_	41	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3-4	no	_	_	_	_	_	_	_	_
@@ -86,7 +83,7 @@
 28	com	com	ADP	<cjt>|PRP|@ADVL>	_	29	case	_	_
 29	Artur	Artur	PROPN	_	Gender=Masc|Number=Sing	41	obl	_	ChangedBy=Issue119|MWE=Artur_Jorge|MWEPOS=PROPN
 30	Jorge	Jorge	PROPN	_	Number=Sing	29	flat:name	_	ChangedBy=Issue119
-31	a	a	ADP	PRP|@N<	_	33	mark	_	_
+31	a	a	SCONJ	PRP|@N<	_	33	mark	_	_
 32	não	não	ADV	_	Polarity=Neg	33	advmod	_	_
 33	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	acl	_	_
 34	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	33	xcomp	_	_
@@ -98,7 +95,7 @@
 39	Octávio	Octávio	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	41	nsubj:pass	_	_
 40	seria	ser	AUX	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	41	aux:pass	_	_
 41	acusado	acusar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
-42	de	de	ADP	PRP|@<PIV	_	43	mark	_	_
+42	de	de	SCONJ	PRP|@<PIV	_	43	mark	_	_
 43	agredir	agredir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	41	xcomp	_	_
 44-45	à	_	_	_	_	_	_	_	_
 44	a	a	ADP	<sam->|<first-cjt>|PRP|@<ADVL	_	46	case	_	_
@@ -133,7 +130,7 @@
 72	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	74	det	_	_
 73	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	74	det	_	_
 74	equipa	equipa	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	71	obj	_	_
-75	sem	sem	ADP	PRP|@<ADVL	_	77	mark	_	_
+75	sem	sem	SCONJ	PRP|@<ADVL	_	77	mark	_	_
 76	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	77	expl	_	ChangedBy=Issue135
 77	envolver	envolver	VERB	<mv>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	71	advcl	_	_
 78-79	nas	_	_	_	_	_	_	_	_
@@ -144,7 +141,7 @@
 82	»	»	PUNCT	PU|@PU	_	81	punct	_	_
 83	marginais	marginal	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	81	amod	_	_
 84	em	em	ADP	PRP|@ADVL>	_	85	case	_	_
-85	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	92	obl	_	_
+85	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Fem|Number=Plur|PronType=Rel	92	obl	_	_
 86	Pinto	Pinto	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	92	nsubj	_	MWE=Pinto_da_Costa
 87-88	da	_	_	_	_	_	_	_	_
 87	de	de	ADP	<sam->|PRP|@N<	_	89	case	_	_
@@ -154,9 +151,9 @@
 91	Octávio	Octávio	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	86	conj	_	ChangedBy=Issue149
 92	mostravam	mostrar	VERB	<mv>|V|IMPF|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	81	acl:relcl	_	_
 93	estar	estar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	92	xcomp	_	_
-94	como	como	ADV	<com>|PRP|@<ADVL	_	93	mark	_	_
+94	como	como	SCONJ	<com>|PRP|@<ADVL	_	93	mark	_	_
 95	«	«	PUNCT	PU|@PU	_	93	punct	_	ChangedBy=Issue165|SpaceAfter=No
-96	peixes	peixe	NOUN	<sam->|PRP|@P<	_	93	obl	_	_
+96	peixes	peixe	NOUN	<sam->|PRP|@P<	Gender=Masc|Number=Plur	93	obl	_	_
 97-98	na	_	_	_	_	_	_	_	_
 97	em	em	ADP	PRP|@N<	_	99	case	_	_
 98	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	99	det	_	_
@@ -165,14 +162,10 @@
 101	.	.	PUNCT	PU|@PU	_	41	punct	_	_
 
 # text = Quando Quinito foi contratado para o FC Porto e se propôs recuperar, entre outros, Gomes e Madjer, o homem de Palmela afastou-se e, nas suas costas, começaram a aparecer muitas das histórias a seu respeito que, até então, tinham ficado escondidas nos segredos dos bastidores.
-# source = CETEMPúblico n=770 sec=des sem=91b
 # sent_id = CP770-3
+# source = CETEMPúblico n=770 sec=des sem=91b
 # id = 3950
-# d2d = cc(afastou-,e) -> cc(aparecer,e)  #106
-# d2d = punct(afastou-,,) -> punct(aparecer,,)  #106
-# d2d = cc(Gomes,e) -> cc(Madjer,e)  #106
-# d2d = cc(contratado,e) -> cc(propôs,e)  #106
-1	Quando	quando	ADV	<ks>|<rel>|ADV|@ADVL>	_	4	advmod	_	_
+1	Quando	quando	SCONJ	<ks>|<rel>|ADV|@ADVL>	_	4	mark	_	_
 2	Quinito	Quinito	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
 3	foi	ser	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
 4	contratado	contratar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	25	advcl	_	_
@@ -200,16 +193,16 @@
 25	afastou	afastar	VERB	<mv>|<first-cjt>|<hyphen>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 26	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	expl	_	ChangedBy=Issue135
 27	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	36	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-28	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
+28	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
 29-30	nas	_	_	_	_	_	_	_	_
 29	em	em	ADP	<sam->|PRP|@ADVL>	_	32	case	_	_
 30	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_
 31	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	32	det	_	_
 32	costas	costa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	36	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	32	punct	_	_
-34	começaram	começar	AUX	<cjt>|<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	36	aux	_	_
-35	a	a	ADP	PRP|@PRT-AUX<	_	36	case	_	_
-36	aparecer	aparecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	conj	_	_
+34	começaram	começar	VERB	<cjt>|<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	25	conj	_	MWE=começaram_a|MWEPOS=AUX
+35	a	a	SCONJ	PRP|@PRT-AUX<	_	36	mark	_	_
+36	aparecer	aparecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	34	xcomp	_	_
 37	muitas	muito	PRON	<quant>|DET|F|P|@<SUBJ	Gender=Fem|Number=Plur|PronType=Ind	36	nsubj	_	_
 38-39	das	_	_	_	_	_	_	_	_
 38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_

@@ -1,6 +1,6 @@
 # text = Até à conclusão deste complicado processo, a CGD deverá continuar a suspender a execução das dívidas, excepto para as situações de abandono.
-# source = CETEMPúblico n=371 sec=soc sem=94b
 # sent_id = CP371-1
+# source = CETEMPúblico n=371 sec=soc sem=94b
 # id = 1941
 1	Até	até	ADP	PRP|@ADVL>	_	4	case	_	_
 2-3	à	_	_	_	_	_	_	_	_
@@ -15,10 +15,10 @@
 9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	CGD	CGD	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
-12	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	aux	_	_
-13	continuar	continuar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	15	aux	_	_
-14	a	a	ADP	PRP|@PRT-AUX<	_	15	case	_	_
-15	suspender	suspender	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+12	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+13	continuar	continuar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	12	xcomp	_	MWE=continuar_a|MWEPOS=AUX
+14	a	a	SCONJ	PRP|@PRT-AUX<	_	15	mark	_	_
+15	suspender	suspender	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	xcomp	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	execução	execução	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
 18-19	das	_	_	_	_	_	_	_	_
@@ -35,10 +35,9 @@
 28	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Este acordo surge após anos de pressões políticas e sociais para resolver a situação irregular das 234 famílias que podiam ficar na rua, uma vez que a Caixa Geral de Depósitos tinha iniciado autos de penhora.
-# source = CETEMPúblico n=371 sec=soc sem=94b
 # sent_id = CP371-2
+# source = CETEMPúblico n=371 sec=soc sem=94b
 # id = 1942
-# d2d = cc(políticas,e) -> cc(sociais,e)  #106
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	acordo	acordo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	surge	surgir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -49,7 +48,7 @@
 8	políticas	político	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
 9	e	e	CCONJ	<co-postnom>|KC|@CO	_	10	cc	_	d2d:#106
 10	sociais	social	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	8	conj	_	_
-11	para	para	ADP	PRP|@N<	_	12	mark	_	_
+11	para	para	SCONJ	PRP|@N<	_	12	mark	_	_
 12	resolver	resolver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	situação	situação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	_
@@ -60,14 +59,14 @@
 18	234	234	NUM	<card>|NUM|F|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168
 19	famílias	família	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	14	nmod	_	_
 20	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	22	nsubj	_	_
-21	podiam	poder	AUX	<aux>|V|IMPF|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	22	aux	_	_
-22	ficar	ficar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	19	acl:relcl	_	_
+21	podiam	poder	VERB	<aux>|V|IMPF|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	19	acl:relcl	_	_
+22	ficar	ficar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	xcomp	_	_
 23-24	na	_	_	_	_	_	_	_	_
 23	em	em	ADP	<sam->|PRP|@<SA	_	25	case	_	_
 24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	rua	rua	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	22	punct	_	_
-27	uma	uma	DET	<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	36	mark	_	MWE=uma_vez_que
+27	uma	uma	DET	<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	36	mark	_	MWE=uma_vez_que|MWEPOS=SCONJ
 28	vez	vez	NOUN	N|F|S|@>S	Gender=Fem|Number=Sing	27	fixed	_	_
 29	que	que	SCONJ	KS|@SUB	_	27	fixed	_	_
 30	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
@@ -83,12 +82,9 @@
 40	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A Urbanização da Bela Vista foi construída no início dos anos 80, no âmbito de um contrato de desenvolvimento de habitação celebrado entre o antigo Fundo de Fomento da Habitação (actual IGAPHE), a Caixa Geral de Depósitos e a empresa construtora Amadeu Gaudêncio, tendo na altura a Câmara Municipal do Montijo favorecido a aquisição de um terreno e procedido à isenção de taxas por ser um contrato de habitação social com custos limitados.
-# source = CETEMPúblico n=371 sec=soc sem=94b
 # sent_id = CP371-3
+# source = CETEMPúblico n=371 sec=soc sem=94b
 # id = 1943
-# d2d = cc(favorecido,e) -> cc(procedido,e)  #106
-# d2d = cc(Fundo,e) -> cc(empresa,e)  #106
-# d2d = punct(Fundo,,) -> punct(Caixa,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Urbanização	Urbanização	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj:pass	_	MWE=Urbanização_da_Bela_Vista
 3-4	da	_	_	_	_	_	_	_	_
@@ -147,19 +143,19 @@
 51	Amadeu	Amadeu	PROPN	_	Gender=Masc|Number=Sing	49	appos	_	ChangedBy=Issue119|MWE=Amadeu_Gaudêncio|MWEPOS=PROPN
 52	Gaudêncio	Gaudêncio	PROPN	_	Number=Sing	51	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 53	,	,	PUNCT	PU|@PU	_	54	punct	_	_
-54	tendo	ter	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	8	advcl	_	_
+54	tendo	ter	AUX	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	64	aux	_	_
 55-56	na	_	_	_	_	_	_	_	_
 55	em	em	ADP	<sam->|PRP|@ADVL>	_	57	case	_	_
 56	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	57	det	_	_
 57	altura	altura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	64	obl	_	ChangedBy=Issue137
 58	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	59	det	_	_
-59	Câmara	Câmara	NOUN	_	Gender=Fem|Number=Sing	54	nsubj	_	MWE=câmara_municipal|MWEPOS=NOUN
-60	Municipal	Municipal	ADJ	_	Number=Sing	59	amod	_	_
+59	Câmara	Câmara	PROPN	_	Gender=Fem|Number=Sing	54	nsubj	_	MWE=câmara_municipal|MWEPOS=NOUN
+60	Municipal	Municipal	PROPN	_	Number=Sing	59	amod	_	_
 61-62	do	_	_	_	_	_	_	_	_
 61	de	de	ADP	<sam->|PRP|@N<	_	63	case	_	_
 62	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	det	_	_
 63	Montijo	Montijo	PROPN	PROP|@P<	Number=Sing	59	nmod	_	_
-64	favorecido	favorecer	VERB	<mv>|<cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	54	dep	_	_
+64	favorecido	favorecer	VERB	<mv>|<cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	8	advcl	_	_
 65	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	66	det	_	_
 66	aquisição	aquisição	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	64	obj	_	_
 67	de	de	ADP	PRP|@N<ARG	_	69	case	_	_
@@ -173,7 +169,7 @@
 74	isenção	isenção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	71	obl	_	_
 75	de	de	ADP	PRP|@N<ARG	_	76	case	_	_
 76	taxas	taxa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	74	nmod	_	_
-77	por	por	ADP	PRP|@ADVL>	_	80	mark	_	_
+77	por	por	SCONJ	PRP|@ADVL>	_	80	mark	_	_
 78	ser	ser	AUX	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	80	cop	_	ChangedBy=Issue167
 79	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	80	det	_	_
 80	contrato	contrato	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	74	nmod	_	_

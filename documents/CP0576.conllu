@@ -1,14 +1,12 @@
 # text = P. -- Ainda no que respeita ao nível dos rendimentos, há uma queixa que a oposição e as organizações socioprofissionais fazem ao Governo e que tem a ver com os custos dos factores de produção, principalmente no que respeita às taxas de juro.
-# source = CETEMPúblico n=576 sec=nd sem=91b
 # sent_id = CP576-1
+# source = CETEMPúblico n=576 sec=nd sem=91b
 # id = 2977
-# d2d = cc(oposição,e) -> cc(organizações,e)  #106
-# d2d = cc(fazem,e) -> cc(tem,e)  #106
 1	P.	p.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	Ainda	ainda	ADV	ADV|@>A	_	7	advmod	_	_
 4-5	no	_	_	_	_	_	_	_	_
-4	em	em	ADP	<sam->|PRP|@ADVL>	_	7	mark	_	_
+4	em	em	SCONJ	<sam->|PRP|@ADVL>	_	7	mark	_	_
 5	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	_
 6	que	que	PRON	<-sam>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	7	nsubj	_	_
 7	respeita	respeitar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	_	_
@@ -39,7 +37,7 @@
 29	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	31	cc	_	d2d:#106
 30	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	31	nsubj	_	_
 31	tem	ter	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	conj	_	_
-32	a	a	ADP	PRP|@<ADVL	_	33	mark	_	_
+32	a	a	SCONJ	PRP|@<ADVL	_	33	mark	_	_
 33	ver	ver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	31	advcl	_	_
 34	com	com	ADP	PRP|@<ADVL	_	36	case	_	_
 35	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_
@@ -53,7 +51,7 @@
 42	,	,	PUNCT	PU|@PU	_	33	punct	_	_
 43	principalmente	principalmente	ADV	ADV|@>A	_	47	advmod	_	_
 44-45	no	_	_	_	_	_	_	_	_
-44	em	em	ADP	<sam->|PRP|@N<PRED	_	47	mark	_	_
+44	em	em	SCONJ	<sam->|PRP|@N<PRED	_	47	mark	_	_
 45	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	46	det	_	_
 46	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	47	nsubj	_	_
 47	respeita	respeitar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	acl	_	_
@@ -66,8 +64,8 @@
 53	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Não acha que a actual situação, inserida num contexto fortemente concorrencial, está a penalizar os agricultores portugueses?
-# source = CETEMPúblico n=576 sec=nd sem=91b
 # sent_id = CP576-2
+# source = CETEMPúblico n=576 sec=nd sem=91b
 # id = 2978
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	acha	achar	VERB	<mv>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -84,19 +82,18 @@
 12	fortemente	fortemente	ADV	ADV|@>A	_	13	advmod	_	_
 13	concorrencial	concorrencial	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	11	amod	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-15	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-16	a	a	ADP	PRP|@PRT-AUX<	_	17	case	_	_
-17	penalizar	penalizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	ccomp	_	_
+15	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	MWE=está_a|MWEPOS=AUX
+16	a	a	SCONJ	PRP|@PRT-AUX<	_	17	mark	_	_
+17	penalizar	penalizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	xcomp	_	_
 18	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
 19	agricultores	agricultor	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	17	obj	_	_
 20	portugueses	português	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	19	amod	_	ChangedBy=Issue165|SpaceAfter=No
 21	?	?	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = R. -- Considero que temos alguns custos de produção mais altos, isso ninguém poderá negar.
-# source = CETEMPúblico n=576 sec=nd sem=91b
 # sent_id = CP576-3
+# source = CETEMPúblico n=576 sec=nd sem=91b
 # id = 2979
-# d2d = punct(Considero,,) -> punct(negar,,)  #106
 1	R.	r.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	Considero	considerar	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
@@ -105,24 +102,24 @@
 6	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	7	det	_	_
 7	custos	custos	NOUN	_	Gender=Masc|Number=Plur	5	obj	_	MWE=custos_de_produção|MWEPOS=NOUN
 8	de	de	ADP	_	_	7	compound	_	_
-9	produção	produção	NOUN	_	_	7	compound	_	_
+9	produção	produção	NOUN	_	Gender=Fem|Number=Sing	7	compound	_	_
 10	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	11	advmod	_	_
 11	altos	alto	ADJ	<COMP>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 13	isso	isso	PRON	<dem>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Dem	16	obj	_	_
 14	ninguém	ninguém	PRON	INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	16	nsubj	_	_
-15	poderá	poder	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	aux	_	_
-16	negar	negar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	conj	_	ChangedBy=Issue165|SpaceAfter=No
+15	poderá	poder	VERB	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	conj	_	_
+16	negar	negar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 17	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Mas temos outros mais baratos, como os alimentos para os animais e o preço da mão-de-obra.
-# source = CETEMPúblico n=576 sec=nd sem=91b
 # sent_id = CP576-4
+# source = CETEMPúblico n=576 sec=nd sem=91b
 # id = 2980
 1	Mas	mas	CCONJ	KC|@CO	_	2	cc	_	_
 2	temos	ter	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	outros	outro	PRON	<diff>|<KOMP>|DET|M|P|@<ACC	Gender=Masc|Number=Plur|PronType=Ind	2	obj	_	_
-4	mais	muito	ADV	<quant>|<KOMP>|DET|M|P|@>A	Gender=Masc|Number=Plur|PronType=Ind	5	advmod	_	_
+4	mais	mais	ADV	<quant>|<KOMP>|DET|M|P|@>A	_	5	advmod	_	_
 5	baratos	barato	ADJ	<np-idf>|N|M|P|@N<	Gender=Masc|Number=Plur	3	amod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 7	como	como	ADP	<com>|PRP|@N<PRED	_	9	case	_	_

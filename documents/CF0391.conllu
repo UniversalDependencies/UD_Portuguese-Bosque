@@ -1,15 +1,14 @@
 # text = Feiras e exposições
-# source = CETENFolha n=391 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF391-1
+# source = CETENFolha n=391 cad=Dinheiro sec=eco sem=94b
 # id = 1623
-# d2d = cc(Feiras,e) -> cc(exposições,e)  #106
 1	Feiras	feira	NOUN	<first-cjt>|<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	e	e	CCONJ	KC|@CO	_	3	cc	_	d2d:#106
 3	exposições	exposição	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	1	conj	_	ChangedBy=Issue149
 
 # text = A Secretaria da Fazenda do Estado de São Paulo determinou que, quando um contribuinte realizar venda de mercadorias em feiras, exposições ou em locais chamados de «outlets» ou «feira de promoções» e permanecer na área determinada por mais de 60 dias, será obrigatória a inscrição do referido local no cadastro de contribuintes do ICMS (Fund. : portaria CAT 116/93).
-# source = CETENFolha n=391 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF391-2
+# source = CETENFolha n=391 cad=Dinheiro sec=eco sem=94b
 # id = 1624
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Secretaria	Secretaria	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	MWE=Secretaria_da_Fazenda
@@ -94,16 +93,16 @@
 75	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = IR -- Restituição
-# source = CETENFolha n=391 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF391-3
+# source = CETENFolha n=391 cad=Dinheiro sec=eco sem=94b
 # id = 1625
 1	IR	IR	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	Restituição	restituição	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	1	appos	_	_
 
 # text = A restituição do IRPF poderá ser feita a terceiros, desde que: se de valor até 80 Ufir, mediante simples autorização por escrito do beneficiário, acompanhada de cédula de identidade e CPF do representante e do representado, para verificação das assinaturas; e se de valor acima de 80 Ufir só poderá ser paga a procurador (Fund.: instrução normativa DRF nº. 38/92).
-# source = CETENFolha n=391 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF391-4
+# source = CETENFolha n=391 cad=Dinheiro sec=eco sem=94b
 # id = 1626
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	restituição	restituição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj:pass	_	_
@@ -111,13 +110,13 @@
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	IRPF	IRPF	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
-6	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux	_	_
+6	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 7	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	8	aux:pass	_	_
-8	feita	fazer	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+8	feita	fazer	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	6	xcomp	_	_
 9	a	a	ADP	PRP|@<ADVL	_	10	case	_	_
 10	terceiros	terceiro	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obl	_	SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-12	desde	desde	ADP	PRP|@<ADVL	_	17	case	_	MWE=desde_que
+12	desde	desde	ADP	PRP|@<ADVL	_	17	mark	_	MWE=desde_que|MWEPOS=SCONJ
 13	que	que	SCONJ	KS|@P<	_	12	fixed	_	SpaceAfter=No
 14	:	:	PUNCT	PU|@PU	_	17	punct	_	_
 15	se	se	SCONJ	<first-cjt>|KS|@SUB	_	17	mark	_	_
@@ -165,14 +164,14 @@
 53	se	se	SCONJ	KS|@SUB	_	55	mark	_	_
 54	de	de	ADP	PRP|@AS<	_	55	case	_	_
 55	valor	valor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	orphan	_	_
-56	acima	acima	ADV	ADV|@N<	_	59	advmod	_	MWE=acima_de
-57	de	de	ADP	PRP|@A<	_	59	case	_	_
+56	acima	acima	ADV	ADV|@N<	_	59	advmod	_	_
+57	de	de	ADP	PRP|@A<	_	58	case	_	_
 58	80	80	NUM	<card>|NUM|F|P|@>N	NumType=Card	59	nummod	_	_
-59	Ufir	Ufir	PROPN	PROP|F|P|@P<	Gender=Fem|Number=Plur	55	obl	_	_
+59	Ufir	Ufir	PROPN	PROP|F|P|@P<	Gender=Fem|Number=Plur	55	nmod	_	_
 60	só	só	ADV	ADV|@ADVL>	_	63	advmod	_	_
-61	poderá	poder	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	63	aux	_	_
+61	poderá	poder	VERB	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	conj	_	_
 62	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	63	aux:pass	_	_
-63	paga	pagar	VERB	<mv>|<pass>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	8	conj	_	_
+63	paga	pagar	VERB	<mv>|<pass>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	61	xcomp	_	_
 64	a	a	ADP	PRP|@<ADVL	_	65	case	_	_
 65	procurador	procurador	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	63	obl	_	_
 66	(	(	PUNCT	PU|@PU	_	67	punct	_	SpaceAfter=No

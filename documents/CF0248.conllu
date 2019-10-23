@@ -1,6 +1,6 @@
 # text = Uma parada no Boathouse Cafe (East 72 com a Park Drive North) pode ser uma boa idéia para quem está indo ao Metropolitan pelo Central Park.
-# source = CETENFolha n=248 cad=Turismo sec=soc sem=94a
 # sent_id = CF248-1
+# source = CETENFolha n=248 cad=Turismo sec=soc sem=94a
 # id = 1054
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	parada	parada	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
@@ -23,7 +23,7 @@
 18	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_
 20	idéia	idéia	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
-21	para	para	ADP	PRP|@N<ARG	_	24	mark	_	_
+21	para	para	SCONJ	PRP|@N<ARG	_	24	mark	_	_
 22	quem	quem	PRON	<interr>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Int	24	nsubj	_	_
 23	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
 24	indo	ir	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	20	acl	_	_
@@ -39,11 +39,9 @@
 32	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = A lanchonete é simples, mas faz um saboroso cachorro-quente por US$ 3.
-# source = CETENFolha n=248 cad=Turismo sec=soc sem=94a
 # sent_id = CF248-2
+# source = CETENFolha n=248 cad=Turismo sec=soc sem=94a
 # id = 1055
-# d2d = cc(simples,mas) -> cc(faz,mas)  #106
-# d2d = punct(simples,,) -> punct(faz,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	lanchonete	lanchonete	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -60,8 +58,8 @@
 14	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Quem gosta de comida italiana, deve experimentar o Christo's (Lexington, quase esquina com a rua 49).
-# source = CETENFolha n=248 cad=Turismo sec=soc sem=94a
 # sent_id = CF248-3
+# source = CETENFolha n=248 cad=Turismo sec=soc sem=94a
 # id = 1056
 1	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	2	nsubj	_	_
 2	gosta	gostar	VERB	<mv>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	csubj	_	_
@@ -69,15 +67,15 @@
 4	comida	comida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obj	_	_
 5	italiana	italiano	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-7	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
-8	experimentar	experimentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+7	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	experimentar	experimentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	Christo's	Christo's	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
 11	(	(	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
-12	Lexington	Lexington	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+12	Lexington	Lexington	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	10	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 14	quase	quase	ADV	<quant>|ADV|@>A	_	15	advmod	_	_
-15	esquina	esquina	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	12	nmod	_	_
+15	esquina	esquina	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	12	parataxis	_	_
 16	com	com	ADP	PRP|@N<	_	18	case	_	_
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	rua	rua	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	MWE=rua_49
@@ -86,10 +84,9 @@
 21	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O cardápio varia entre pratos de massa al dente (cerca de US$ 15) e peixes grelhados (US$ 20).
-# source = CETENFolha n=248 cad=Turismo sec=soc sem=94a
 # sent_id = CF248-4
+# source = CETENFolha n=248 cad=Turismo sec=soc sem=94a
 # id = 1057
-# d2d = cc(pratos,e) -> cc(peixes,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	cardápio	cardápio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	varia	variar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -100,8 +97,8 @@
 8	al	al	ADP	PRP|@N<	_	9	case	_	MWE=al_dente
 9	dente	dente	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 10	(	(	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
-11	cerca	cerca	ADV	ADV|@N<PRED	_	5	advmod	_	MWE=cerca_de
-12	de	de	ADP	PRP|@A<	_	13	case	_	_
+11	cerca	cerca	ADV	ADV|@N<PRED	_	5	advmod	_	MWE=cerca_de|MWEPOS=ADV
+12	de	de	ADP	PRP|@A<	_	11	fixed	_	_
 13	US$	US$	SYM	_	_	11	obl	_	_
 14	15	15	NUM	<card>|NUM|M|P|@N<	NumType=Card	13	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 15	)	)	PUNCT	PU|@PU	_	11	punct	_	_

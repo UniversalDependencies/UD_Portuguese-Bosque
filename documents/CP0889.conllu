@@ -1,6 +1,6 @@
 # text = Em Paris, a bolsa também registou alguns ganhos com a abertura em alta do Dow Jones, apesar de uma sessão calma que resultou num aumento de 0,56 por cento, com o CAC 40 a encerrar nos 2940,89 pontos.
-# source = CETEMPúblico n=889 sec=eco sem=97b
 # sent_id = CP889-1
+# source = CETEMPúblico n=889 sec=eco sem=97b
 # id = 4564
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Paris	Paris	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -22,10 +22,10 @@
 17	Dow	Dow	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue119|MWE=Dow_Jones|MWEPOS=PROPN
 18	Jones	Jones	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-20	apesar	apesar	ADV	ADV|@<ADVL	_	7	advmod	_	MWE=apesar_de
-21	de	de	ADP	PRP|@A<	_	23	case	_	_
+20	apesar	apesar	ADV	ADV|@<ADVL	_	23	case	_	MWE=apesar_de|MWEPOS=ADP
+21	de	de	ADP	PRP|@A<	_	20	fixed	_	_
 22	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	sessão	sessão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	obl	_	_
+23	sessão	sessão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	_
 24	calma	calmo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
 25	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	26	nsubj	_	_
 26	resultou	resultar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	acl:relcl	_	_
@@ -35,14 +35,14 @@
 29	aumento	aumento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	26	obl	_	_
 30	de	de	ADP	PRP|@N<	_	32	case	_	_
 31	0,56	0,56	NUM	<card>|NUM|M|P|@>N	NumType=Card	32	nummod	_	ChangedBy=Issue168
-32	por	por	ADP	_	Gender=Masc|Number=Sing	29	nmod	_	MWE=por_cento|MWEPOS=NOUN
+32	por	por	ADP	_	_	29	nmod	_	MWE=por_cento|MWEPOS=NOUN
 33	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	32	compound	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	40	punct	_	_
 35	com	com	ADP	PRP|@N<PRED	_	37	case	_	_
 36	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
 37	CAC	CAC	PROPN	_	Gender=Masc|Number=Sing	29	nmod	_	ChangedBy=Issue119|MWE=CAC_40|MWEPOS=PROPN
 38	40	40	PROPN	_	Number=Sing	37	flat:name	_	ChangedBy=Issue119
-39	a	a	ADP	PRP|@<SA	_	40	mark	_	_
+39	a	a	SCONJ	PRP|@<SA	_	40	mark	_	_
 40	encerrar	encerrar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	37	conj	_	_
 41-42	nos	_	_	_	_	_	_	_	_
 41	em	em	ADP	<sam->|PRP|@<ADVL	_	44	case	_	_
@@ -52,8 +52,8 @@
 45	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Em Madrid, o índice geral subiu 0,44 por cento.
-# source = CETEMPúblico n=889 sec=eco sem=97b
 # sent_id = CP889-2
+# source = CETEMPúblico n=889 sec=eco sem=97b
 # id = 4565
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Madrid	Madrid	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -63,7 +63,7 @@
 6	geral	geral	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	_
 7	subiu	subir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 8	0,44	0,44	NUM	<card>|NUM|M|P|@>N	NumType=Card	9	nummod	_	ChangedBy=Issue168
-9	por	por	ADP	_	Gender=Masc|Number=Sing	7	obl	_	MWE=por_cento|MWEPOS=NOUN
+9	por	por	ADP	_	_	7	obl	_	MWE=por_cento|MWEPOS=NOUN
 10	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	9	compound	_	ChangedBy=Issue165|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 

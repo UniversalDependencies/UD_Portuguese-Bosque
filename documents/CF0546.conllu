@@ -1,6 +1,6 @@
 # text = Naquele ano, Fleury já aparecia com 20% das intenções de voto em setembro, um mês antes do primeiro turno.
-# source = CETENFolha n=546 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF546-1
+# source = CETENFolha n=546 cad=Caderno Especial sec=nd sem=94a
 # id = 2290
 1-2	Naquele	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -33,10 +33,10 @@
 26	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = A menos de uma semana da eleição deste ano, Munhoz não passou dos 12%.
-# source = CETENFolha n=546 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF546-2
+# source = CETENFolha n=546 cad=Caderno Especial sec=nd sem=94a
 # id = 2291
-1	A	a	ADP	PRP|@ADVL>	_	15	mark	_	_
+1	A	a	SCONJ	PRP|@ADVL>	_	15	mark	_	_
 2	menos	menos	ADV	ADV|@A<	_	15	advmod	_	MWE=menos_de
 3	de	de	ADP	PRP|@A<	_	5	case	_	_
 4	uma	uma	NUM	<card>|NUM|F|S|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
@@ -61,10 +61,9 @@
 20	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Fleury foi para o segundo turno e venceu o atual prefeito de São Paulo, Paulo Maluf (PPR).
-# source = CETENFolha n=546 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF546-3
+# source = CETENFolha n=546 cad=Caderno Especial sec=nd sem=94a
 # id = 2292
-# d2d = cc(foi,e) -> cc(venceu,e)  #106
 1	Fleury	Fleury	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	foi	ser	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	para	para	ADP	PRP|@<ADVL	_	6	case	_	_
@@ -83,13 +82,13 @@
 16	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	13	appos	_	ChangedBy=Issue119|MWE=Paulo_Maluf|MWEPOS=PROPN
 17	Maluf	Maluf	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
 18	(	(	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
-19	PPR	PPR	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+19	PPR	PPR	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	16	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 20	)	)	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Na pesquisa Datafolha divulgada no último sábado, o primeiro colocado, Mário Covas, aparece com 47%, nove pontos percentuais acima da soma dos índices dos demais candidatos.
-# source = CETENFolha n=546 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF546-4
+# source = CETENFolha n=546 cad=Caderno Especial sec=nd sem=94a
 # id = 2293
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -118,11 +117,11 @@
 23	nove	nove	NUM	<card>|NUM|M|P|@>N	NumType=Card	24	nummod	_	ChangedBy=Issue168
 24	pontos	ponto	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	21	appos	_	_
 25	percentuais	percentual	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	24	amod	_	_
-26	acima	acima	ADV	ADV|@N<	_	24	advmod	_	MWE=acima_de
+26	acima	acima	ADV	ADV|@N<	_	29	advmod	_	_
 27-28	da	_	_	_	_	_	_	_	_
 27	de	de	ADP	PRP|@A<	_	29	case	_	_
 28	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
-29	soma	soma	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	26	obl	_	_
+29	soma	soma	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
 30-31	dos	_	_	_	_	_	_	_	_
 30	de	de	ADP	PRP|@N<ARG	_	32	case	_	_
 31	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_

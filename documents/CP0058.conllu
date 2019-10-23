@@ -1,6 +1,6 @@
 # text = Em síntese, aquele dinheiro seria a última prestação do pagamento do terreno.
-# source = CETEMPúblico n=58 sec=soc sem=97a
 # sent_id = CP58-1
+# source = CETEMPúblico n=58 sec=soc sem=97a
 # id = 322
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	síntese	síntese	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -22,10 +22,9 @@
 16	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Em troca, assinava-se o contrato-promessa de compra e venda.
-# source = CETEMPúblico n=58 sec=soc sem=97a
 # sent_id = CP58-2
+# source = CETEMPúblico n=58 sec=soc sem=97a
 # id = 323
-# d2d = cc(compra,e) -> cc(venda,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_troca
 2	troca	troca	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -41,10 +40,9 @@
 12	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Deolinda, com o seu advogado ao lado, deu-lhe a procuração e Manuel foi ter com Constantino para ele lhe dar também os papéis assinados.
-# source = CETEMPúblico n=58 sec=soc sem=97a
 # sent_id = CP58-3
+# source = CETEMPúblico n=58 sec=soc sem=97a
 # id = 324
-# d2d = cc(deu-,e) -> cc(ter,e)  #106
 1	Deolinda	Deolinda	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 3	com	com	ADP	PRP|@N<PRED	_	6	case	_	_
@@ -67,7 +65,7 @@
 18	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	conj	_	_
 19	com	com	ADP	PRP|@<PIV	_	20	case	_	_
 20	Constantino	Constantino	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	obj	_	_
-21	para	para	ADP	PRP|@<ADVL	_	24	mark	_	_
+21	para	para	SCONJ	PRP|@<ADVL	_	24	mark	_	_
 22	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	nsubj	_	_
 23	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	iobj	_	_
 24	dar	dar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	18	advcl	_	_
@@ -78,10 +76,9 @@
 29	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = E Constantino perguntou-lhe se ele estava a brincar, pois não lhe ia dar procuração nenhuma enquanto não recebesse a sua parte, ao que Manuel, (se ninguém no tribunal mentiu neste aspecto), lhe replicou que já tinha dado os 1095 contos a Deolinda e eles que dividissem a soma entre os dois.
-# source = CETEMPúblico n=58 sec=soc sem=97a
 # sent_id = CP58-4
+# source = CETEMPúblico n=58 sec=soc sem=97a
 # id = 325
-# d2d = cc(dado,e) -> cc(dividissem,e)  #106
 1	E	e	CCONJ	KC|@CO	_	3	cc	_	_
 2	Constantino	Constantino	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3-4	perguntou-lhe	_	_	_	_	_	_	_	_
@@ -89,11 +86,11 @@
 4	lhe	ele	PRON	PERS|M|3S|DAT|@<DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	iobj	_	_
 5	se	se	SCONJ	KS|@SUB	_	9	mark	_	_
 6	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
-7	estava	estar	AUX	<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux	_	_
-8	a	a	ADP	PRP|@PRT-AUX<	_	9	case	_	_
-9	brincar	brincar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+7	estava	estar	VERB	<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	_	MWE=estava_a|MWEPOS=AUX
+8	a	a	SCONJ	PRP|@PRT-AUX<	_	9	mark	_	_
+9	brincar	brincar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	15	punct	_	_
-11	pois	pois	ADV	<kc>|ADV|@SUB	_	15	mark	_	_
+11	pois	pois	SCONJ	<kc>|ADV|@SUB	_	15	mark	_	_
 12	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
 13	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	iobj	_	_
 14	ia	ir	AUX	<aux>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	aux	_	_
@@ -134,7 +131,7 @@
 46	tinha	ter	AUX	<first-cjt>|<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	47	aux	_	_
 47	dado	dar	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	43	ccomp	_	_
 48	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	50	det	_	_
-49	1095	1095	NUM	<card>|<year>|<date>|<np-def>|NUM|M|S|<card>|P|@>	NumType=Card	50	dep	_	ChangedBy=Issue168
+49	1095	1095	NUM	<card>|<year>|<date>|<np-def>|NUM|M|S|<card>|P|@>	NumType=Card	50	nummod	_	ChangedBy=Issue168
 50	contos	conto	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	47	obj	_	_
 51	a	a	ADP	PRP|@<PIV	_	52	case	_	_
 52	Deolinda	Deolinda	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	47	iobj	_	_
@@ -150,15 +147,9 @@
 62	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = E viu então pela cara de Constantino que tinha feito mal, mas muito mal, pois marido e mulher agora só partilhavam uma filha, um barracão e um ódio horrível, azedo e mútuo.
-# source = CETEMPúblico n=58 sec=soc sem=97a
 # sent_id = CP58-5
+# source = CETEMPúblico n=58 sec=soc sem=97a
 # id = 326
-# d2d = cc(filha,e) -> cc(ódio,e)  #106
-# d2d = cc(horrível,e) -> cc(mútuo,e)  #106
-# d2d = punct(mal,,) -> punct(mas,,)  #106
-# d2d = cc(marido,e) -> cc(mulher,e)  #106
-# d2d = punct(horrível,,) -> punct(azedo,,)  #106
-# d2d = punct(filha,,) -> punct(barracão,,)  #106
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	viu	ver	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	então	então	ADV	ADV|@<ADVL	_	2	advmod	_	_
@@ -174,7 +165,7 @@
 12	mal	mal	ADV	<first-cjt>|ADV|@<ADVL	_	11	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 14	mas	mas	CCONJ	<cjt>|<co-vfin>|KC|@<ADVL	_	12	conj	_	_
-15	muito	muito	ADV	<quant>|DET|M|S|@>A	Gender=Masc|Number=Sing|PronType=Ind	16	advmod	_	_
+15	muito	muito	ADV	<quant>|DET|M|S|@>A	_	16	advmod	_	_
 16	mal	mal	ADV	<cjt>|ADV|@<ADVL	_	12	conj	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 18	pois	pois	ADV	<kc>|ADV|@ADVL>	_	24	advmod	_	_
@@ -200,10 +191,9 @@
 38	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = De facto, dava a impressão que marido e mulher, nesta última fase do casamento, só já comunicavam através dos respectivos advogados, um luxo estranho para pessoas quase sem dinheiro.
-# source = CETEMPúblico n=58 sec=soc sem=97a &W
 # sent_id = CP58-6
+# source = CETEMPúblico n=58 sec=soc sem=97a &W
 # id = 327
-# d2d = cc(marido,e) -> cc(mulher,e)  #106
 1	De	de	ADP	PRP|@ADVL>	_	2	case	_	MWE=De_facto
 2	facto	facto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -246,14 +236,14 @@
 37	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = -- E ela disse para passar um cheque ...
-# source = CETEMPúblico n=58 sec=soc sem=97a
 # sent_id = CP58-7
+# source = CETEMPúblico n=58 sec=soc sem=97a
 # id = 328
 1	--	--	PUNCT	PU|@PU	_	4	punct	_	_
 2	E	e	CCONJ	KC|@CO	_	4	cc	_	_
 3	ela	ela	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
 4	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-5	para	para	ADP	PRP|@<PIV	_	6	mark	_	_
+5	para	para	SCONJ	PRP|@<PIV	_	6	mark	_	_
 6	passar	passar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	ccomp	_	_
 7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	cheque	cheque	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_

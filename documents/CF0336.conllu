@@ -1,8 +1,7 @@
 # text = Curiosamente, quanto mais os novos programas e redes «facilitam» a vida dos informatizados, maior a tendência deles de ficarem grudados no computador.
-# source = CETENFolha n=336 cad=Informática sec=com sem=94a
 # sent_id = CF336-1
+# source = CETENFolha n=336 cad=Informática sec=com sem=94a
 # id = 1389
-# d2d = cc(programas,e) -> cc(redes,e)  #106
 1	Curiosamente	curiosamente	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	quanto	quanto	ADV	ADV|@ADVL>	_	11	advmod	_	MWE=quanto_mais
@@ -28,7 +27,7 @@
 22-23	deles	_	_	_	_	_	_	_	_
 22	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
 23	eles	eles	PRON	<-sam>|PERS|M|3P|NOM/PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	21	nmod	_	_
-24	de	de	ADP	PRP|@N<	_	25	mark	_	_
+24	de	de	SCONJ	PRP|@N<	_	25	mark	_	_
 25	ficarem	ficar	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	21	acl	_	_
 26	grudados	grudado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	25	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue91
 27-28	no	_	_	_	_	_	_	_	_
@@ -38,27 +37,24 @@
 30	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Hoje em dia, qualquer americano medianamente equipado pode fazer diante do teclado tarefas que antes exigiam que ele tirasse o bumbum da cadeira: mandar e receber fax e mensagens eletrônicas, reservar passagens aéreas, controlar a conta bancária, acessar bancos de dados e dezenas de outros serviços.
-# source = CETENFolha n=336 cad=Informática sec=com sem=94a
 # sent_id = CF336-2
+# source = CETENFolha n=336 cad=Informática sec=com sem=94a
 # id = 1390
-# d2d = cc(mandar,e) -> cc(receber,e)  #106
-# d2d = cc(fax,e) -> cc(mensagens,e)  #106
-# d2d = cc(bancos,e) -> cc(serviços,e)  #106
-1	Hoje	hoje	PROPN	_	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue119|MWE=Hoje_em_dia|MWEPOS=PROPN
-2	em	em	PROPN	_	_	1	flat:name	_	ChangedBy=Issue119
-3	dia	dia	PROPN	_	Gender=Masc|Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+1	Hoje	hoje	ADV	_	_	10	obl	_	ChangedBy=Issue119|MWE=Hoje_em_dia|MWEPOS=ADV
+2	em	em	ADP	_	_	1	fixed	_	ChangedBy=Issue119
+3	dia	dia	NOUN	_	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	6	det	_	_
 6	americano	americano	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 7	medianamente	medianamente	ADV	ADV|@ADVL>	_	8	advmod	_	_
 8	equipado	equipar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	6	acl	_	_
-9	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
-10	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-11	diante	diante	ADV	ADV|@<ADVL	_	10	advmod	_	MWE=diante_de
+9	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
+11	diante	diante	ADV	ADV|@<ADVL	_	14	case	_	MWE=diante_de|MWEPOS=ADP
 12-13	do	_	_	_	_	_	_	_	_
-12	de	de	ADP	PRP|@A<	_	14	case	_	_
+12	de	de	ADP	PRP|@A<	_	11	fixed	_	_
 13	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	teclado	teclado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	_
+14	teclado	teclado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	_
 15	tarefas	tarefa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
 16	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	18	nsubj	_	_
 17	antes	antes	ADV	ADV|@ADVL>	_	18	advmod	_	_
@@ -93,7 +89,7 @@
 45	acessar	acessar	VERB	<mv>|<cjt>|V|INF|@ICL-N<PRED	VerbForm=Inf	28	conj	_	_
 46	bancos	bancos	NOUN	_	Gender=Masc|Number=Plur	45	obj	_	MWE=bancos_de_dados|MWEPOS=NOUN
 47	de	de	ADP	_	_	46	compound	_	_
-48	dados	dados	NOUN	_	_	46	compound	_	_
+48	dados	dados	NOUN	_	Gender=Masc|Number=Plur	46	compound	_	_
 49	e	e	CCONJ	<co-acc>|KC|@CO	_	53	cc	_	d2d:#106
 50	dezenas	dezena	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	53	det	_	MWE=dezena_de
 51	de	de	ADP	PRP|@A<	_	50	fixed	_	_

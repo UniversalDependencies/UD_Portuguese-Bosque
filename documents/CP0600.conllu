@@ -1,8 +1,7 @@
 # text = JOSÉ CALÇADA -- As relações entre o sindicato e o ministério não existem.
-# source = CETEMPúblico n=600 sec=soc sem=95a
 # sent_id = CP600-1
+# source = CETEMPúblico n=600 sec=soc sem=95a
 # id = 3108
-# d2d = cc(sindicato,e) -> cc(ministério,e)  #106
 1	JOSÉ	José	PROPN	_	Number=Sing	0	root	_	ChangedBy=Issue119|MWE=José_Calçada|MWEPOS=PROPN
 2	CALÇADA	Calçada	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	--	--	PUNCT	PU|@PU	_	1	punct	_	_
@@ -19,8 +18,8 @@
 14	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Estão, em bom rigor, como sempre estiveram.
-# source = CETEMPúblico n=600 sec=soc sem=95a
 # sent_id = CP600-2
+# source = CETEMPúblico n=600 sec=soc sem=95a
 # id = 3109
 1	Estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -34,8 +33,8 @@
 10	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Desde 22 de Dezembro de 1993 que vimos solicitando à senhora ministra uma audiência.
-# source = CETEMPúblico n=600 sec=soc sem=95a
 # sent_id = CP600-3
+# source = CETEMPúblico n=600 sec=soc sem=95a
 # id = 3110
 1	Desde	desde	ADP	PRP|@ADVL>	_	2	case	_	_
 2	22	22	NUM	<card>|NUM|M|S|@P<	NumType=Card	9	obl	_	ChangedBy=Issue168
@@ -44,8 +43,8 @@
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	1993	1993	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	4	nmod	_	ChangedBy=Issue168
 7	que	que	ADV	ADV|@ADVL>	_	9	advmod	_	_
-8	vimos	vir	AUX	<aux>|V|PS|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	9	aux	_	_
-9	solicitando	solicitar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
+8	vimos	vir	VERB	<aux>|V|PS|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+9	solicitando	solicitar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	8	xcomp	_	_
 10-11	à	_	_	_	_	_	_	_	_
 10	a	a	ADP	<sam->|PRP|@<PIV	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
@@ -56,12 +55,9 @@
 16	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Isto já foi feito por variadíssimos faxes, através de contactos pessoais em Janeiro de 94, mas não tivemos, até agora, resposta.
-# source = CETEMPúblico n=600 sec=soc sem=95a
 # sent_id = CP600-4
+# source = CETEMPúblico n=600 sec=soc sem=95a
 # id = 3111
-# d2d = punct(feito,,) -> punct(tivemos,,)  #106
-# d2d = cc(feito,mas) -> cc(tivemos,mas)  #106
-# d2d = punct(feito,,) -> punct(tivemos,,)  #106
 1	Isto	isto	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj:pass	_	_
 2	já	já	ADV	ADV|@ADVL>	_	4	advmod	_	_
 3	foi	ser	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
@@ -69,7 +65,7 @@
 5	por	por	ADP	PRP|@PASS	_	7	case	_	_
 6	variadíssimos	variadíssimo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	7	amod	_	_
 7	faxes	faxes	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	obl:agent	_	ChangedBy=Issue165|SpaceAfter=No
-8	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+8	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 9	através	através	ADV	ADV|@<ADVL	_	4	advmod	_	_
 10	de	de	ADP	PRP|@A<	_	11	case	_	_
 11	contactos	contacto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obl	_	_
@@ -78,7 +74,7 @@
 14	Janeiro	janeiro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	94	94	NUM	<card>|NUM|M|S|@P<	NumType=Card	14	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-17	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
+17	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 18	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
 19	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
 20	tivemos	ter	VERB	<cjt>|<mv>|V|PS|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	4	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -90,10 +86,9 @@
 26	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Os contactos -- de natureza informal, nem sequer oficiosos -- têm sido com o sr. subsecretário de Estado-adjunto da ministra.
-# source = CETEMPúblico n=600 sec=soc sem=95a
 # sent_id = CP600-5
+# source = CETEMPúblico n=600 sec=soc sem=95a
 # id = 3112
-# d2d = punct(natureza,,) -> punct(oficiosos,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	contactos	contacto	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj	_	_
 3	--	--	PUNCT	PU|@PU	_	5	punct	_	_
@@ -112,7 +107,7 @@
 16	sr.	sr.	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	0	root	_	_
 17	subsecretário	subsecretário	NOUN	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	16	nmod	_	MWE=subsecretário_de_Estado-adjunto
 18	de	de	ADP	PRP|@N<	_	19	case	_	_
-19	Estado-adjunto	estado-adjunto	NOUN	N|@P<	_	17	nmod	_	_
+19	Estado-adjunto	estado-adjunto	NOUN	N|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
 20-21	da	_	_	_	_	_	_	_	_
 20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
@@ -120,8 +115,8 @@
 23	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Em termos estritamente oficiais, este sindicato ainda não conseguiu ser recebido pela ministra, o que não deixa de ser espantoso tendo em conta o tempo decorrido desde a primeira audiência.
-# source = CETEMPúblico n=600 sec=soc sem=95a
 # sent_id = CP600-6
+# source = CETEMPúblico n=600 sec=soc sem=95a
 # id = 3113
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_termos
 2	termos	termos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	_
@@ -143,10 +138,10 @@
 17	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	appos	_	_
 18	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	23	nsubj	_	_
 19	não	não	ADV	_	Polarity=Neg	23	advmod	_	_
-20	deixa	deixar	AUX	<aux>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
-21	de	de	ADP	PRP|@PRT-AUX<	_	23	case	_	_
+20	deixa	deixar	VERB	<aux>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	MWE=deixa_de|MWEPOS=AUX
+21	de	de	SCONJ	PRP|@PRT-AUX<	_	23	mark	_	_
 22	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	cop	_	ChangedBy=Issue167
-23	espantoso	espantoso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	17	acl:relcl	_	_
+23	espantoso	espantoso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	20	xcomp	_	_
 24	tendo	ter	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	23	advcl	_	_
 25	em	em	ADP	PRP|@<ADVL	_	26	case	_	MWE=em_conta
 26	conta	conta	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	24	obl	_	_
@@ -160,8 +155,8 @@
 34	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = P. -- E porquê?
-# source = CETEMPúblico n=600 sec=soc sem=95a
 # sent_id = CP600-7
+# source = CETEMPúblico n=600 sec=soc sem=95a
 # id = 3114
 1	P.	p.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_

@@ -1,8 +1,7 @@
 # text = No domingo, em Campos (280 km ao norte do Rio), Brizola concentrou as críticas em Cardoso e Lula.
-# source = CETENFolha n=237 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF237-1
+# source = CETENFolha n=237 cad=Caderno Especial sec=nd sem=94a
 # id = 1017
-# d2d = cc(Cardoso,e) -> cc(Lula,e)  #106
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -34,11 +33,9 @@
 26	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = Disse que FHC é incompetente administrativamente e que Lula é inexperiente e que não gosta de trabalhar.
-# source = CETENFolha n=237 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF237-2
+# source = CETENFolha n=237 cad=Caderno Especial sec=nd sem=94a
 # id = 1018
-# d2d = cc(incompetente,e) -> cc(gosta,e)  #106
-# d2d = cc(incompetente,e) -> cc(inexperiente,e)  #106
 1	Disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
 3	FHC	FHC	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -54,13 +51,13 @@
 13	que	que	SCONJ	KS|@SUB	_	15	mark	_	_
 14	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
 15	gosta	gostar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
-16	de	de	ADP	PRP|@<PIV	_	17	mark	_	_
+16	de	de	SCONJ	PRP|@<PIV	_	17	mark	_	_
 17	trabalhar	trabalhar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 18	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Segundo os organizadores, havia 6.000 pessoas no comício às 21h, quando Brizola começou a falar.
-# source = CETENFolha n=237 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF237-3
+# source = CETENFolha n=237 cad=Caderno Especial sec=nd sem=94a
 # id = 1019
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
@@ -80,16 +77,16 @@
 14	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 15	quando	quando	ADV	<rel>|ADV|@ADVL>	_	19	advmod	_	_
 16	Brizola	Brizola	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	19	nsubj	_	_
-17	começou	começar	AUX	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	aux	_	_
-18	a	a	ADP	PRP|@PRT-AUX<	_	19	case	_	_
-19	falar	falar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	advcl	_	ChangedBy=Issue165|SpaceAfter=No
+17	começou	começar	VERB	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	MWE=começou_a|MWEPOS=AUX
+18	a	a	SCONJ	PRP|@PRT-AUX<	_	19	mark	_	_
+19	falar	falar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	17	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 20	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Quando ele terminou, às 22h10, metade das pessoas havia abandonado o local.
-# source = CETENFolha n=237 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF237-4
+# source = CETENFolha n=237 cad=Caderno Especial sec=nd sem=94a
 # id = 1020
-1	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	3	advmod	_	_
+1	Quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	3	mark	_	_
 2	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 3	terminou	terminar	VERB	<mv>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	14	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_

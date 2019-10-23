@@ -1,6 +1,6 @@
 # text = Querido Água Corrente,
-# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF182-1
+# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # id = 765
 1	Querido	querido	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	2	amod	_	_
 2	Água	água	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
@@ -8,17 +8,16 @@
 4	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Se eu fosse você, passava a andar de táxi especial e apresentava a conta à concessionária.
-# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF182-2
+# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # id = 766
-# d2d = cc(passava,e) -> cc(apresentava,e)  #106
 1	Se	se	SCONJ	KS|@SUB	_	4	mark	_	_
 2	eu	eu	PRON	PERS|M/F|1S|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
 3	fosse	ser	AUX	<first-cjt>|<mv>|V|IMPF|1S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 4	você	você	PRON	PERS|M/F|3S|NOM|@<SC	Case=Nom|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	6	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	passava	passar	VERB	<first-cjt>|<mv>|V|IMPF|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_
-7	a	a	ADP	PRP|@<PIV	_	8	mark	_	_
+7	a	a	SCONJ	PRP|@<PIV	_	8	mark	_	_
 8	andar	andar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	conj	_	_
 9	de	de	ADP	PRP|@<PIV	_	10	case	_	_
 10	táxi	táxi	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obj	_	_
@@ -34,18 +33,17 @@
 19	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Ligue imediatamente para o Procon (tel. 829-3055) e solte os cachorros.
-# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF182-3
+# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # id = 767
-# d2d = cc(Ligue,e) -> cc(solte,e)  #106
 1	Ligue	ligar	VERB	<mv>|<first-cjt>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	imediatamente	imediatamente	ADV	ADV|@<ADVL	_	1	advmod	_	_
 3	para	para	ADP	<first-cjt>|PRP|@<PIV	_	5	case	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	Procon	Procon	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obj	_	_
 6	(	(	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
-7	tel.	tel.	NOUN	N|@>N	_	5	nmod	_	MWE=tel._829-3055
-8	829-3055	829-3055	NOUN	N|@N<PRED	_	7	compound	_	ChangedBy=Issue165|SpaceAfter=No
+7	tel.	tel.	NOUN	N|@>N	Gender=Masc|Number=Sing	5	parataxis	_	MWE=tel._829-3055
+8	829-3055	829-3055	NUM	N|@N<PRED	NumType=Card	7	compound	_	ChangedBy=Issue165|SpaceAfter=No
 9	)	)	PUNCT	PU|@PU	_	7	punct	_	_
 10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	d2d:#106
 11	solte	soltar	VERB	<mv>|<cjt>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	1	conj	_	_
@@ -54,8 +52,8 @@
 14	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Do Olho
-# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF182-5
+# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # id = 768
 1-2	Do	_	_	_	_	_	_	_	_
 1	De	de	ADP	<first-cjt>|<sam->|PRP|@UTT	_	3	case	_	_
@@ -63,8 +61,8 @@
 3	Olho	olho	NOUN	<first-cjt>|<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	0	root	_	_
 
 # text = «Não aguento mais esse tal de' Olho Mágico
-# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF182-6
+# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # id = 769
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
@@ -78,8 +76,8 @@
 10	Mágico	Mágico	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 
 # text = O livro está em toda parte e eu sou daqueles que não conseguem ver a imagem em outra dimensão.
-# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF182-7
+# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # id = 770
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	livro	livro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
@@ -105,8 +103,8 @@
 21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O que faço?
-# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF182-8
+# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # id = 771
 1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	que	que	PRON	<interr>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Int	3	obj	_	_
@@ -114,13 +112,11 @@
 4	?	?	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Devo fingir que enxergo a figura ou sento às margens do Rio Piedra e choro?»
-# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # sent_id = CF182-9
+# source = CETENFolha n=182 cad=Revista Folha sec=nd sem=94a
 # id = 772
-# d2d = cc(fingir,ou) -> cc(sento,ou)  #106
-# d2d = cc(sento,e) -> cc(choro,e)  #106
-1	Devo	dever	AUX	<first-cjt>|<aux>|V|PR|1S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	_	_
-2	fingir	fingir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+1	Devo	dever	VERB	<first-cjt>|<aux>|V|PR|1S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	fingir	fingir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	_
 3	que	que	SCONJ	KS|@SUB	_	4	mark	_	_
 4	enxergo	enxergar	VERB	<mv>|V|PR|1S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_

@@ -1,13 +1,7 @@
 # text = Mas o programa cultural abre logo às 22h00 do dia 3 de Julho, uma sexta-feira, com a actuação da Orquestra Ligeira do Conservatório de Coimbra, na Praça do Comércio, e encerra no mesmo local e à mesma hora no domingo, dia 12, com os Cool Hipnoise.
-# source = CETEMPúblico n=171 sec=soc sem=98a
 # sent_id = CP171-1
+# source = CETEMPúblico n=171 sec=soc sem=98a
 # id = 906
-# d2d = punct(abre,,) -> punct(encerra,,)  #106
-# d2d = cc(local,e) -> cc(hora,e)  #106
-# d2d = punct(abre,,) -> punct(encerra,,)  #106
-# d2d = cc(abre,e) -> cc(encerra,e)  #106
-# d2d = punct(abre,,) -> punct(encerra,,)  #106
-# d2d = punct(abre,,) -> punct(encerra,,)  #106
 1	Mas	mas	CCONJ	<co-sta>|KC|@CO	_	5	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	programa	programa	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -16,7 +10,7 @@
 6	logo	logo	ADV	<kc>|ADV|@<ADVL	_	5	advmod	_	_
 7-8	às	_	_	_	_	_	_	_	_
 7	a	a	ADP	<sam->|PRP|@A<	_	9	case	_	_
-8	as	o	DET	<-sam>|<artd>|ART|@>A	Definite=Def|PronType=Art	9	dep	_	_
+8	as	o	DET	<-sam>|<artd>|ART|@>A	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
 9	22h00	22h00	ADV	ADV|@P<	_	6	advmod	_	_
 10-11	do	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@A<	_	12	case	_	_
@@ -25,10 +19,10 @@
 13	3	3	NUM	<card>|NUM|M|S|@N<	NumType=Card	12	nummod	_	ChangedBy=Issue168
 14	de	de	ADP	PRP|@A<	_	15	case	_	_
 15	Julho	julho	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	sexta-feira	sexta-feira	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	12	appos	_	ChangedBy=Issue165|SpaceAfter=No
-19	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+19	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 20	com	com	ADP	<first-cjt>|PRP|@<PIV	_	22	case	_	_
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	actuação	actuação	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obj	_	_
@@ -43,7 +37,7 @@
 29	Conservatório	Conservatório	PROPN	PROP|@P<	Number=Sing	25	nmod	_	_
 30	de	de	ADP	PRP|@N<	_	31	case	_	_
 31	Coimbra	Coimbra	PROPN	PROP|@P<	Number=Sing	29	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-32	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+32	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 33-34	na	_	_	_	_	_	_	_	_
 33	em	em	ADP	<sam->|PRP|@N<	_	35	case	_	_
 34	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	35	det	_	_
@@ -52,7 +46,7 @@
 36	de	de	ADP	<sam->|PRP|@N<	_	38	case	_	_
 37	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 38	Comércio	Comércio	PROPN	PROP|@P<	Number=Sing	35	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-39	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+39	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 40	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	41	cc	_	d2d:#106
 41	encerra	encerrar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
 42-43	no	_	_	_	_	_	_	_	_
@@ -81,15 +75,9 @@
 62	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Este mesmo espaço, no coração da cidade, acolhe ao longo da semana e sempre à mesma hora um espectáculo de música e dança sevilhana (dia 6), o grupo Negros de Luz (dia 7), Fausto (dia 8), Cesária Évora (dia 10) e Carlos do Carmo (dia 11).
-# source = CETEMPúblico n=171 sec=soc sem=98a
 # sent_id = CP171-2
+# source = CETEMPúblico n=171 sec=soc sem=98a
 # id = 907
-# d2d = punct(espectáculo,,) -> punct(grupo,,)  #106
-# d2d = cc(espectáculo,e) -> cc(Carlos,e)  #106
-# d2d = punct(espectáculo,,) -> punct(Cesária,,)  #106
-# d2d = cc(música,e) -> cc(dança,e)  #106
-# d2d = punct(espectáculo,,) -> punct(Fausto,,)  #106
-# d2d = cc(semana,e) -> cc(hora,e)  #106
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
 2	mesmo	mesmo	ADJ	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	espaço	espaço	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -107,7 +95,7 @@
 13-14	ao	_	_	_	_	_	_	_	_
 13	a	a	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	longo	longo	NOUN	N|@P<	_	12	obl	_	_
+15	longo	longo	NOUN	N|@P<	Gender=Masc|Number=Sing	12	obl	_	_
 16-17	da	_	_	_	_	_	_	_	_
 16	de	de	ADP	PRP|@N<	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	18	det	_	_
@@ -166,8 +154,8 @@
 68	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Muito perto, nas principais ruas da Baixa de Coimbra, a animação será constante, garante a organização.
-# source = CETEMPúblico n=171 sec=soc sem=98a
 # sent_id = CP171-3
+# source = CETEMPúblico n=171 sec=soc sem=98a
 # id = 908
 1	Muito	muito	ADV	<quant>|ADV|@>A	_	2	advmod	_	_
 2	perto	perto	ADV	ADV|@ADVL>	_	17	advmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -195,15 +183,9 @@
 22	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = Aos saltimbancos, bombos e gigantones juntar-se-ão, ao longo dos vários dias de festa, a música, o malabarismo, animações de fogo, teatro e fantoches.
-# source = CETEMPúblico n=171 sec=soc sem=98a
 # sent_id = CP171-4
+# source = CETEMPúblico n=171 sec=soc sem=98a
 # id = 909
-# d2d = punct(música,,) -> punct(animações,,)  #106
-# d2d = punct(saltimbancos,,) -> punct(bombos,,)  #106
-# d2d = cc(música,e) -> cc(fantoches,e)  #106
-# d2d = punct(música,,) -> punct(teatro,,)  #106
-# d2d = cc(saltimbancos,e) -> cc(gigantones,e)  #106
-# d2d = punct(música,,) -> punct(malabarismo,,)  #106
 1-2	Aos	_	_	_	_	_	_	_	_
 1	A	a	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
@@ -219,7 +201,7 @@
 11-12	ao	_	_	_	_	_	_	_	_
 11	a	a	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
-13	longo	longo	NOUN	N|@P<	_	8	obl	_	_
+13	longo	longo	NOUN	N|@P<	Gender=Masc|Number=Sing	8	obl	_	_
 14-15	dos	_	_	_	_	_	_	_	_
 14	de	de	ADP	PRP|@N<	_	17	case	_	_
 15	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_

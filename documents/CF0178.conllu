@@ -1,6 +1,6 @@
 # text = A expectativa do Sebrae era que o volume de negócios chegasse a US$ 7 milhões na Fenit.
-# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # sent_id = CF178-1
+# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # id = 746
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	expectativa	expectativa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
@@ -26,16 +26,16 @@
 20	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Em 95, no entanto, a participação dos pequenos subsidiados pelo Sebrae na Fenit vai diminuir.
-# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # sent_id = CF178-2
+# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # id = 747
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	95	95	NUM	<card>|NUM|M|S|@P<	NumType=Card	21	obl	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4-5	no	_	_	_	_	_	_	_	_
-4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
-5	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	21	obl	_	ChangedBy=Issue165|SpaceAfter=No
+4	em	em	ADP	<sam->|PRP|@N<	_	21	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+5	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	fixed	_	_
+6	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	participação	participação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	21	nsubj	_	_
@@ -57,8 +57,8 @@
 22	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = «Vamos reduzir o número de expositores para cem.
-# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # sent_id = CF178-3
+# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # id = 748
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Vamos	ir	AUX	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	_
@@ -72,10 +72,9 @@
 10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A idéia é privilegiar os de maior qualidade e as feiras estaduais», diz Souza.
-# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # sent_id = CF178-4
+# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # id = 749
-# d2d = cc(os,e) -> cc(feiras,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	idéia	idéia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -95,11 +94,11 @@
 17	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Ao lado da Fenit foi realizada a Fenatec (Feira Internacional de Tecelagem), com representantes da Argentina, Alemanha, França e Estados Unidos.
-# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # sent_id = CF178-5
+# source = CETENFolha n=178 cad=Tudo sec=nd sem=94b
 # id = 750
 1	Ao	ao	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Ao_lado_de
-2	lado	lado	NOUN	N|@P<	_	7	obl	_	_
+2	lado	lado	NOUN	N|@P<	Gender=Masc|Number=Sing	7	obl	_	_
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_

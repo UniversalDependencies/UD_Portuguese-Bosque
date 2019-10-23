@@ -1,10 +1,7 @@
 # text = Que a organização investiu muito tempo e dinheiro na sensiblização para o programa e que, agora, é com eles.
-# source = CETENFolha n=239 cad=Caderno Especial sec=nd sem=94b &W
 # sent_id = CF239-1
+# source = CETENFolha n=239 cad=Caderno Especial sec=nd sem=94b &W
 # id = 1025
-# d2d = cc(tempo,e) -> cc(dinheiro,e)  #106
-# d2d = cc(investiu,e) -> cc(eles,e)  #106
-# d2d = punct(investiu,,) -> punct(eles,,)  #106
 1	Que	que	SCONJ	KS|@SUB	_	4	mark	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	organização	organização	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
@@ -22,7 +19,7 @@
 14	programa	programa	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 16	que	que	SCONJ	KS|@SUB	_	22	mark	_	ChangedBy=Issue165|SpaceAfter=No
-17	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	agora	agora	ADV	<kc>|ADV|@ADVL>	_	22	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 20	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	cop	_	ChangedBy=Issue167
@@ -31,18 +28,18 @@
 23	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Que não faria nada, a não ser cobrar os resultados do investimento.
-# source = CETENFolha n=239 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF239-2
+# source = CETENFolha n=239 cad=Caderno Especial sec=nd sem=94b
 # id = 1026
 1	Que	que	SCONJ	KS|@SUB	_	3	mark	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	faria	fazer	VERB	<mv>|V|COND|1/3S|@FS-STA	Mood=Cnd|Number=Sing|VerbForm=Fin	0	root	_	_
 4	nada	nada	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	3	obj	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-6	a	a	ADP	PRP|@<ADVL	_	9	mark	_	_
-7	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
-8	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	cop	_	ChangedBy=Issue167
-9	cobrar	cobrar	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	3	dep	_	_
+6	a	a	ADP	PRP|@<ADVL	_	9	mark	_	MWE=a_não_ser|MWEPOS=SCONJ
+7	não	não	ADV	_	Polarity=Neg	6	fixed	_	_
+8	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	fixed	_	ChangedBy=Issue167
+9	cobrar	cobrar	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	3	advcl	_	_
 10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
 11	resultados	resultado	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	9	obj	_	_
 12-13	do	_	_	_	_	_	_	_	_

@@ -1,10 +1,10 @@
 # text = Não é que o sábio das matrizes encontrou, no PSD, entusiastas seguidores?
-# source = CETEMPúblico n=349 sec=pol sem=94a
 # sent_id = CP349-1
+# source = CETEMPúblico n=349 sec=pol sem=94a
 # id = 1826
-1	Não	não	ADV	_	Polarity=Neg	9	advmod	_	_
-2	é	é	ADP	PRP|@ADVL>	_	3	case	_	MWE=é_que
-3	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	_
+1	Não	não	ADV	_	Polarity=Neg	9	discourse	_	MWE=Não_é_que|MWEPOS=INTJ
+2	é	ser	AUX	PRP|@ADVL>	_	1	fixed	_	_
+3	que	que	SCONJ	N|M|S|@P<	_	2	fixed	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	sábio	sábio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
 6-7	das	_	_	_	_	_	_	_	_
@@ -23,8 +23,8 @@
 17	?	?	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = A morgue do Hospital de Beja foi privatizada!
-# source = CETEMPúblico n=349 sec=pol sem=94a
 # sent_id = CP349-2
+# source = CETEMPúblico n=349 sec=pol sem=94a
 # id = 1827
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	morgue	morgue	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj:pass	_	_
@@ -39,8 +39,8 @@
 10	!	!	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Já só falta a Paz eterna ...
-# source = CETEMPúblico n=349 sec=pol sem=94a
 # sent_id = CP349-3
+# source = CETEMPúblico n=349 sec=pol sem=94a
 # id = 1828
 1	Já	já	ADV	ADV|@>A	_	2	advmod	_	_
 2	só	só	ADV	ADV|@ADVL>	_	3	advmod	_	_
@@ -51,8 +51,8 @@
 7	...	...	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ainda por cima em Beja, um dos berços do colectivismo em Portugal!
-# source = CETEMPúblico n=349 sec=pol sem=94a
 # sent_id = CP349-4
+# source = CETEMPúblico n=349 sec=pol sem=94a
 # id = 1829
 1	Ainda	ainda	NOUN	N|M|S|@>A	Gender=Masc|Number=Sing	5	nmod	_	MWE=Ainda_por_cima
 2	por	por	ADP	PRP|@N<	_	3	case	_	_
@@ -74,11 +74,11 @@
 16	!	!	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Mas, a Lowater, ainda lhe concedo o benefício da dúvida:
-# source = CETEMPúblico n=349 sec=pol sem=94a
 # sent_id = CP349-5
+# source = CETEMPúblico n=349 sec=pol sem=94a
 # id = 1830
 1	Mas	mas	CCONJ	KC|@CO	_	8	cc	_	ChangedBy=Issue165|SpaceAfter=No
-2	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+2	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 3	a	a	ADP	PRP|@PIV>	_	4	case	_	_
 4	Lowater	Lowater	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	8	iobj	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -94,10 +94,9 @@
 14	:	:	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = aposto que ele não partilharia os métodos seguidos pelos seus discípulos do Baixo Alentejo e era bem capaz de organizar concursos públicos abertos ...
-# source = CETEMPúblico n=349 sec=pol sem=94a
 # sent_id = CP349-6
+# source = CETEMPúblico n=349 sec=pol sem=94a
 # id = 1831
-# d2d = cc(partilharia,e) -> cc(capaz,e)  #106
 1	aposto	apostar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
 3	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
@@ -120,7 +119,7 @@
 18	era	ser	AUX	<cjt>|<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	cop	_	ChangedBy=Issue167
 19	bem	bem	ADV	<quant>|ADV|@>A	_	20	advmod	_	_
 20	capaz	capaz	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	5	conj	_	_
-21	de	de	ADP	PRP|@A<ARG	_	22	mark	_	_
+21	de	de	SCONJ	PRP|@A<ARG	_	22	mark	_	_
 22	organizar	organizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	xcomp	_	_
 23	concursos	concurso	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	22	obj	_	_
 24	públicos	público	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	23	amod	_	_

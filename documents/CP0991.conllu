@@ -1,6 +1,6 @@
 # text = Comédia inglesa, anos 50.
-# source = CETEMPúblico n=991 sec=clt sem=92b
 # sent_id = CP991-1
+# source = CETEMPúblico n=991 sec=clt sem=92b
 # id = 5086
 1	Comédia	comédia	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	inglesa	inglês	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -10,11 +10,9 @@
 6	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Um friso inenarrável de personagens marginais e/ou marginalizadas, com o pós-guerra em pano de fundo.
-# source = CETEMPúblico n=991 sec=clt sem=92b
 # sent_id = CP991-2
+# source = CETEMPúblico n=991 sec=clt sem=92b
 # id = 5087
-# d2d = cc(marginais,ou) -> cc(marginalizadas,ou)  #106
-# d2d = cc(marginais,e) -> cc(marginalizadas,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	friso	friso	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	inenarrável	inenarrável	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -32,15 +30,13 @@
 15	em	em	ADP	PRP|@N<	_	16	case	_	_
 16	pano	pano	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	MWE=pano_de_fundo|MWEPOS=NOUN
 17	de	de	ADP	_	_	16	compound	_	_
-18	fundo	fundo	NOUN	_	_	16	compound	_	ChangedBy=Issue165|SpaceAfter=No
+18	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	16	compound	_	ChangedBy=Issue165|SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Peça única e inimitável no contexto do teatro inglês deste século, oscilando entre o naturalismo e o lirismo.
-# source = CETEMPúblico n=991 sec=clt sem=92b
 # sent_id = CP991-3
+# source = CETEMPúblico n=991 sec=clt sem=92b
 # id = 5088
-# d2d = cc(única,e) -> cc(inimitável,e)  #106
-# d2d = cc(naturalismo,e) -> cc(lirismo,e)  #106
 1	Peça	peça	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	única	único	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
 3	e	e	CCONJ	<co-postnom>|KC|@CO	_	4	cc	_	d2d:#106
@@ -69,18 +65,16 @@
 23	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Receita que funciona lindamente, graças a um elenco talentoso e bem dirigido e a uma direcção plástica (José Carlos Barros) eficaz.
-# source = CETEMPúblico n=991 sec=clt sem=92b
 # sent_id = CP991-4
+# source = CETEMPúblico n=991 sec=clt sem=92b
 # id = 5089
-# d2d = cc(talentoso,e) -> cc(dirigido,e)  #106
-# d2d = cc(elenco,e) -> cc(direcção,e)  #106
 1	Receita	receita	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	3	nsubj	_	_
 3	funciona	funcionar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
 4	lindamente	lindamente	ADV	ADV|@<ADVL	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-6	graças	graças	SCONJ	ADV|@<ADVL	_	9	mark	_	MWE=graças_a
-7	a	a	ADP	PRP|@A<	_	9	case	_	_
+6	graças	graças	SCONJ	ADV|@<ADVL	_	9	case	_	MWE=graças_a|MWEPOS=ADP
+7	a	a	ADP	PRP|@A<	_	6	fixed	_	_
 8	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	elenco	elenco	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	_
 10	talentoso	talentoso	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	_
@@ -101,8 +95,8 @@
 25	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = TEATRO DA TRINDADE.
-# source = CETEMPúblico n=991 sec=clt sem=92b
 # sent_id = CP991-5
+# source = CETEMPúblico n=991 sec=clt sem=92b
 # id = 5090
 1	TEATRO	Teatro	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	MWE=Teatro_da_Trindade
 2-3	DA	_	_	_	_	_	_	_	_
@@ -112,8 +106,8 @@
 5	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = De 3ª a sáb., às 21h30; sáb. e dom., às 16h.
-# source = CETEMPúblico n=991 sec=clt sem=92b
 # sent_id = CP991-6
+# source = CETEMPúblico n=991 sec=clt sem=92b
 # id = 5091
 1	De	de	ADP	<first-cjt>|PRP|@UTT	_	2	case	_	_
 2	3ª	3ª	PROPN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_

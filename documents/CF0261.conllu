@@ -1,6 +1,6 @@
 # text = Embora já estejam com as chaves do imóvel novo, só devem ir para lá em fevereiro.
-# source = CETENFolha n=261 cad=Imóveis sec=eco sem=94a
 # sent_id = CF261-1
+# source = CETENFolha n=261 cad=Imóveis sec=eco sem=94a
 # id = 1101
 1	Embora	embora	SCONJ	KS|@SUB	_	6	mark	_	_
 2	já	já	ADV	ADV|@ADVL>	_	6	advmod	_	_
@@ -15,8 +15,8 @@
 10	novo	novo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 12	só	só	ADV	ADV|@ADVL>	_	14	advmod	_	_
-13	devem	dever	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
-14	ir	ir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+13	devem	dever	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+14	ir	ir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	xcomp	_	_
 15	para	para	ADP	PRP|@<SA	_	16	case	_	_
 16	lá	lá	ADV	ADV|@P<	_	14	advmod	_	_
 17	em	em	ADP	PRP|@<ADVL	_	18	case	_	_
@@ -24,8 +24,8 @@
 19	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = «Nossa vontade era mudar antes.
-# source = CETENFolha n=261 cad=Imóveis sec=eco sem=94a
 # sent_id = CF261-2
+# source = CETENFolha n=261 cad=Imóveis sec=eco sem=94a
 # id = 1102
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Nossa	nosso	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	3	det	_	_
@@ -36,14 +36,14 @@
 7	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Mas ainda há muito a fazer no apartamento.»
-# source = CETENFolha n=261 cad=Imóveis sec=eco sem=94a
 # sent_id = CF261-3
+# source = CETENFolha n=261 cad=Imóveis sec=eco sem=94a
 # id = 1103
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	ainda	ainda	ADV	ADV|@ADVL>	_	3	advmod	_	_
 3	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	muito	muito	PRON	<quant>|DET|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	3	obj	_	_
-5	a	a	ADP	PRP|@N<	_	6	mark	_	_
+5	a	a	SCONJ	PRP|@N<	_	6	mark	_	_
 6	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	acl	_	_
 7-8	no	_	_	_	_	_	_	_	_
 7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
@@ -53,11 +53,9 @@
 11	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O casal quer trocar o piso do banheiro, revestir o piso das áreas sociais com madeira e instalar armários.
-# source = CETENFolha n=261 cad=Imóveis sec=eco sem=94a
 # sent_id = CF261-4
+# source = CETENFolha n=261 cad=Imóveis sec=eco sem=94a
 # id = 1104
-# d2d = punct(trocar,,) -> punct(revestir,,)  #106
-# d2d = cc(trocar,e) -> cc(instalar,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	casal	casal	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_

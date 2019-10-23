@@ -1,15 +1,13 @@
 # text = A Kodak ainda passou a atender encomendas de peças plásticas para a Philips, Wapsa e NGK, entre 16 clientes.
-# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF796-1
+# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # id = 3343
-# d2d = punct(Philips,,) -> punct(Wapsa,,)  #106
-# d2d = cc(Philips,e) -> cc(NGK,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Kodak	Kodak	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	ainda	ainda	ADV	ADV|@ADVL>	_	6	advmod	_	_
-4	passou	passar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
-6	atender	atender	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+4	passou	passar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=passou_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
+6	atender	atender	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	encomendas	encomenda	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	6	obj	_	_
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	peças	peça	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	7	nmod	_	_
@@ -28,10 +26,9 @@
 22	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Uma nova divisão de serviços, batizada de Kis, opera na administração de copiadoras e outros equipamentos de imagem para grandes empresas.
-# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF796-2
+# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # id = 3344
-# d2d = cc(copiadoras,e) -> cc(equipamentos,e)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
 3	divisão	divisão	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
@@ -60,8 +57,8 @@
 25	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = «É um nicho promissor».
-# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF796-3
+# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # id = 3345
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -72,10 +69,9 @@
 7	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Segundo Galan, os novos produtos e serviços acrescentarão 10% ao faturamento, que foi de US$ 360 milhões em 93.
-# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF796-4
+# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # id = 3346
-# d2d = cc(produtos,e) -> cc(serviços,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Galan	Galan	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -103,8 +99,8 @@
 24	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = «No próximo ano serão mais 15%», prevê.
-# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF796-5
+# source = CETENFolha n=796 cad=Dinheiro sec=eco sem=94a
 # id = 3347
 1	«	«	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2-3	No	_	_	_	_	_	_	_	_

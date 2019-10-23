@@ -1,16 +1,16 @@
 # text = Cerca de 300 cubano-americanos protestaram na frente do prédio da missão cubana na ONU, onde as negociações ocorreram.
-# source = CETENFolha n=571 cad=Mundo sec=pol sem=94a
 # sent_id = CF571-1
+# source = CETENFolha n=571 cad=Mundo sec=pol sem=94a
 # id = 2385
-1	Cerca	cerca	ADV	ADV|@>N	_	4	advmod	_	MWE=Cerca_de
-2	de	de	ADP	<prp>|PRP|@A<	_	1	case	_	_
+1	Cerca	cerca	ADV	ADV|@>N	_	4	advmod	_	MWE=Cerca_de|MWEPOS=ADV
+2	de	de	ADP	<prp>|PRP|@A<	_	1	fixed	_	_
 3	300	300	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
 4	cubano-americanos	cubano-americanos	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 5	protestaram	protestar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
 6-7	na	_	_	_	_	_	_	_	_
 6	em	em	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	frente	frente	NOUN	N|@P<	_	5	obl	_	_
+8	frente	frente	NOUN	N|@P<	Gender=Fem|Number=Sing	5	obl	_	_
 9-10	do	_	_	_	_	_	_	_	_
 9	de	de	ADP	PRP|@N<	_	11	case	_	_
 10	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
@@ -25,15 +25,15 @@
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	ONU	ONU	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-20	onde	onde	ADV	<rel>|ADV|@ADVL>	_	23	advmod	_	_
+20	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	23	obl	_	_
 21	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
 22	negociações	negociação	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	23	nsubj	_	_
 23	ocorreram	ocorrer	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	18	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 24	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Funcionários do escritório cubano tentaram abafar os protestos na rua colocando caixas de som nas janelas do prédio com música alta.
-# source = CETENFolha n=571 cad=Mundo sec=pol sem=94a
 # sent_id = CF571-2
+# source = CETENFolha n=571 cad=Mundo sec=pol sem=94a
 # id = 2386
 1	Funcionários	funcionário	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
@@ -67,10 +67,9 @@
 26	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Em Miami, duas bombas caseiras (coquetéis Molotov) foram encontradas ontem em frente à revista cubana «Replica», que apóia as negociações entre Cuba e EUA para tentar resolver a crise.
-# source = CETENFolha n=571 cad=Mundo sec=pol sem=94a
 # sent_id = CF571-3
+# source = CETENFolha n=571 cad=Mundo sec=pol sem=94a
 # id = 2387
-# d2d = cc(Cuba,e) -> cc(EUA,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Miami	Miami	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -103,7 +102,7 @@
 29	Cuba	Cuba	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
 30	e	e	CCONJ	<co-prparg>|KC|@CO	_	31	cc	_	d2d:#106
 31	EUA	EUA	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	29	conj	_	ChangedBy=Issue149
-32	para	para	ADP	PRP|@<ADVL	_	33	mark	_	_
+32	para	para	SCONJ	PRP|@<ADVL	_	33	mark	_	_
 33	tentar	tentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	25	advcl	_	_
 34	resolver	resolver	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	33	xcomp	_	_
 35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
@@ -111,15 +110,15 @@
 37	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = As bombas não chegaram a ser acionadas.
-# source = CETENFolha n=571 cad=Mundo sec=pol sem=94a
 # sent_id = CF571-4
+# source = CETENFolha n=571 cad=Mundo sec=pol sem=94a
 # id = 2388
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	bombas	bomba	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj:pass	_	_
 3	não	não	ADV	_	Polarity=Neg	7	advmod	_	_
-4	chegaram	chegar	AUX	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	7	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	7	case	_	_
+4	chegaram	chegar	VERB	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	MWE=chegaram_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	7	mark	_	_
 6	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	7	aux:pass	_	_
-7	acionadas	acionar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+7	acionadas	acionar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	4	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 

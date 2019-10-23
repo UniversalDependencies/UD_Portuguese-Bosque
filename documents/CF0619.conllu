@@ -1,10 +1,9 @@
 # text = O Supremo interpreta, em última instância, a Constituição e as leis, mesmo que elas digam respeito a contratos privados.
-# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF619-1
+# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # id = 2604
-# d2d = cc(Constituição,e) -> cc(leis,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	Supremo	supremo	PROPN	<prop>|<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	Supremo	Supremo	PROPN	<prop>|<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	interpreta	interpretar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	em	em	ADP	PRP|@<ADVL	_	7	case	_	_
@@ -17,10 +16,10 @@
 12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
 13	leis	lei	NOUN	<cjt>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	conj	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-15	mesmo	mesmo	ADV	<quant>|ADV|@<ADVL	_	3	advmod	_	_
-16	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
+15	mesmo	mesmo	ADV	<quant>|ADV|@<ADVL	_	18	mark	_	MWE=mesmo_que|MWEPOS=SCONJ
+16	que	que	SCONJ	KS|@SUB	_	15	fixed	_	_
 17	elas	elas	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	_
-18	digam	dizer	VERB	<mv>|V|PR|3P|SUBJ|@FS-A<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	ccomp	_	_
+18	digam	dizer	VERB	<mv>|V|PR|3P|SUBJ|@FS-A<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
 19	respeito	respeito	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
 20	a	a	ADP	PRP|@N<ARG	_	21	case	_	_
 21	contratos	contrato	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	_
@@ -28,16 +27,16 @@
 23	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Como poderá fazê-lo, porém, respeitando ele próprio a lei, quando existem legalmente duas moedas?
-# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF619-2
+# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # id = 2605
 1	Como	como	ADV	<interr>|ADV|@ADVL>	_	3	advmod	_	_
-2	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux	_	_
+2	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 3-4	fazê-lo	_	_	_	_	_	_	_	SpaceAfter=No
-3	fazê	fazer	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	fazê	fazer	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	_
 4	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
 5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-6	porém	porém	ADV	<kc>|ADV|@<ADVL	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+6	porém	porém	CCONJ	<kc>|ADV|@<ADVL	_	3	cc	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 8	respeitando	respeitar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	3	advcl	_	_
 9	ele	ele	PRON	PERS|M|3S|NOM|@<SUBJ	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
@@ -53,10 +52,9 @@
 19	?	?	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Como julgar em consciência contratos escritos ou implícitos que dependem de uma moeda como meio de pagamento e de outra como unidade de conta?
-# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF619-3
+# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # id = 2606
-# d2d = cc(moeda,e) -> cc(outra,e)  #106
 1	Como	como	ADV	<interr>|ADV|@ADVL>	_	2	advmod	_	_
 2	julgar	julgar	VERB	<mv>|V|INF|@ICL-QUE	VerbForm=Inf	0	root	_	_
 3	em	em	ADP	PRP|@<ADVL	_	4	case	_	_
@@ -84,10 +82,9 @@
 25	?	?	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = A primeira varia tanto, dia-a-dia, que uma semana é suficiente para produzir um aumento de mais de 10% nos vencimentos antecipados dos congressistas e dos magistrados.
-# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF619-4
+# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # id = 2607
-# d2d = cc(congressistas,e) -> cc(magistrados,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	primeira	primeiro	ADJ	<n>|<Eg>|<NUM-ord>|<np-def>|ADJ|F|S|@SUBJ>	Gender=Fem|Number=Sing|NumType=Ord	3	nsubj	_	ChangedBy=Issue172
 3	varia	variar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -100,7 +97,7 @@
 10	semana	semana	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
 11	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	ChangedBy=Issue167
 12	suficiente	suficiente	ADJ	<quant>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	3	advcl	_	_
-13	para	para	ADP	PRP|@A<ARG	_	14	mark	_	_
+13	para	para	SCONJ	PRP|@A<ARG	_	14	mark	_	_
 14	produzir	produzir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	advcl	_	_
 15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	aumento	aumento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
@@ -126,23 +123,22 @@
 33	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Cabe perguntar: Se o Supremo não está de acordo com a suposta falta de regra das duas moedas, que existem de fato desde a emissão da última medida provisória, por que não a proclamou imediatamente inconstitucional e se serviu dela privadamente?
-# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF619-5
+# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # id = 2608
-# d2d = cc(proclamou,e) -> cc(serviu,e)  #106
 1	Cabe	caber	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	perguntar	perguntar	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	1	csubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 4	Se	se	SCONJ	KS|@SUB	_	8	mark	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Supremo	supremo	PROPN	<prop>|<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
+6	Supremo	Supremo	PROPN	<prop>|<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 7	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
 8	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	advcl	_	_
 9	de	de	ADP	PRP|@<ADVL	_	10	case	_	MWE=de_acordo
 10	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	_
 11	com	com	ADP	PRP|@A<	_	14	case	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-13	suposta	suposto	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	14	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+13	suposta	suposto	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	14	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 14	falta	falta	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	regra	regra	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
@@ -183,10 +179,9 @@
 48	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = O Supremo Tribunal é por acaso uma Justiça privada ou é o baluarte da Justiça Pública?
-# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF619-6
+# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # id = 2609
-# d2d = cc(Justiça,ou) -> cc(baluarte,ou)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Supremo	Supremo	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	_	ChangedBy=Issue119|MWE=Supremo_Tribunal|MWEPOS=PROPN
 3	Tribunal	Tribunal	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -208,10 +203,10 @@
 18	?	?	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Como se vê, trata-se de questões altamente perturbadoras.
-# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF619-7
+# source = CETENFolha n=619 cad=Dinheiro sec=eco sem=94b
 # id = 2610
-1	Como	como	ADV	<rel>|ADV|@ADVL>	_	3	advmod	_	_
+1	Como	como	SCONJ	<rel>|ADV|@ADVL>	_	3	mark	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	_	_
 3	vê	ver	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_

@@ -1,6 +1,6 @@
 # text = A 45 anos de governação do Partido Nacional, quatro dos quais sob a batuta de Frederik Willem de Klerk, deverá seguir-se agora um período indeterminável de preponderância política do Congresso Nacional Africano (ANC), criado em 1912 para conseguir o fim do racismo.
-# source = CETEMPúblico ext n=253 sec=pol sem=93b
 # sent_id = CP253-1
+# source = CETEMPúblico ext n=253 sec=pol sem=93b
 # id = 1362
 1	A	a	ADP	PRP|@ADVL>	_	3	case	_	_
 2	45	45	NUM	<card>|NUM|M|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168
@@ -27,9 +27,9 @@
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
 22	Klerk	Klerk	PROPN	PROP|@P<	Number=Sing	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-24	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	aux	_	_
+24	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 25-26	seguir-se	_	_	_	_	_	_	_	_
-25	seguir	seguir	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+25	seguir	seguir	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	24	xcomp	_	_
 26	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	expl	_	ChangedBy=Issue135
 27	agora	agora	ADV	<kc>|ADV|@<ADVL	_	25	advmod	_	_
 28	um	um	DET	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
@@ -51,7 +51,7 @@
 43	criado	criar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	36	acl	_	_
 44	em	em	ADP	PRP|@<SA	_	45	case	_	_
 45	1912	1912	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	43	obl	_	ChangedBy=Issue168
-46	para	para	ADP	PRP|@<ADVL	_	47	mark	_	_
+46	para	para	SCONJ	PRP|@<ADVL	_	47	mark	_	_
 47	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	43	advcl	_	_
 48	o	o	DET	<artd>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_
 49	fim	fim	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	47	obj	_	_
@@ -62,8 +62,8 @@
 53	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
 # text = As sondagens à opinião pública indicam que o ANC, sob a liderança de Nelson Mandela, poderá conseguir de 58 a 60 por cento dos votos nas eleições de Abril para a Constituinte.
-# source = CETEMPúblico ext n=253 sec=pol sem=93b
 # sent_id = CP253-2
+# source = CETEMPúblico ext n=253 sec=pol sem=93b
 # id = 1363
 1	As	o	DET	<artd>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	sondagens	sondagem	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
@@ -84,13 +84,13 @@
 16	Nelson	Nelson	PROPN	_	Gender=Masc|Number=Sing	14	nmod	_	ChangedBy=Issue119|MWE=Nelson_Mandela|MWEPOS=PROPN
 17	Mandela	Mandela	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-19	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	aux	_	_
-20	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	ccomp	_	_
+19	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	ccomp	_	_
+20	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	19	xcomp	_	_
 21	de	de	ADP	PRP|@<PIV	_	25	case	_	_
 22	58	58	NUM	<card>|NUM|M|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168
 23	a	a	ADP	PRP|@A<	_	24	case	_	_
 24	60	60	NUM	<card>|NUM|M|P|@P<	NumType=Card	22	nmod	_	ChangedBy=Issue168
-25	por	por	ADP	_	Gender=Masc|Number=Sing	20	obl	_	MWE=por_cento|MWEPOS=NOUN
+25	por	por	ADP	_	_	20	obl	_	MWE=por_cento|MWEPOS=NOUN
 26	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	25	compound	_	_
 27-28	dos	_	_	_	_	_	_	_	_
 27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
@@ -108,8 +108,8 @@
 38	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = E alguns observadores vêem em semelhante vantagem o perigo de uma tentação hegemónica, se bem que a Constituição interina a aprovar durante as próximas semanas preveja a representação no governo de todos os partidos que consigam pelo menos cinco por cento dos votos.
-# source = CETEMPúblico ext n=253 sec=pol sem=93b
 # sent_id = CP253-3
+# source = CETEMPúblico ext n=253 sec=pol sem=93b
 # id = 1364
 1	E	e	CCONJ	KC|@CO	_	4	cc	_	_
 2	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
@@ -125,13 +125,13 @@
 12	tentação	tentação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	nmod	_	_
 13	hegemónica	hegemónico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-15	se	se	SCONJ	KS|@>S	_	27	mark	_	MWE=se_bem_que
+15	se	se	SCONJ	KS|@>S	_	27	mark	_	MWE=se_bem_que|MWEPOS=SCONJ
 16	bem	bem	ADV	ADV|@S<	_	15	fixed	_	_
 17	que	que	SCONJ	KS|@SUB	_	15	fixed	_	_
 18	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	Constituição	Constituição	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	27	nsubj	_	_
 20	interina	interino	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	_
-21	a	a	ADP	PRP|@N<	_	22	mark	_	_
+21	a	a	SCONJ	PRP|@N<	_	22	mark	_	_
 22	aprovar	aprovar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	19	acl	_	_
 23	durante	durante	ADP	PRP|@<ADVL	_	26	case	_	_
 24	as	o	DET	<artd>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
@@ -155,7 +155,7 @@
 40	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
 41	menos	menos	NOUN	N|M|P|@P<	Gender=Masc|Number=Plur	43	nmod	_	_
 42	cinco	cinco	NUM	<card>|NUM|M|P|@>N	NumType=Card	43	nummod	_	ChangedBy=Issue168
-43	por	por	ADP	_	Gender=Masc|Number=Sing	38	obj	_	MWE=por_cento|MWEPOS=NOUN
+43	por	por	ADP	_	_	38	obj	_	MWE=por_cento|MWEPOS=NOUN
 44	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	43	compound	_	_
 45-46	dos	_	_	_	_	_	_	_	_
 45	de	de	ADP	<sam->|PRP|@N<	_	47	case	_	_

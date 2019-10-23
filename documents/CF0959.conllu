@@ -1,8 +1,7 @@
 # text = Congresso reúne 127 seminários e palestras
-# source = CETENFolha n=959 cad=Informática sec=com sem=94a
 # sent_id = CF959-1
+# source = CETENFolha n=959 cad=Informática sec=com sem=94a
 # id = 4063
-# d2d = cc(seminários,e) -> cc(palestras,e)  #106
 1	Congresso	congresso	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	reúne	reunir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	127	127	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
@@ -11,12 +10,9 @@
 6	palestras	palestra	NOUN	<cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	conj	_	_
 
 # text = Redes, multimídia, sistemas operacionais ou informática na educação.
-# source = CETENFolha n=959 cad=Informática sec=com sem=94a
 # sent_id = CF959-3
+# source = CETENFolha n=959 cad=Informática sec=com sem=94a
 # id = 4064
-# d2d = cc(Redes,ou) -> cc(informática,ou)  #106
-# d2d = punct(Redes,,) -> punct(multimídia,,)  #106
-# d2d = punct(Redes,,) -> punct(sistemas,,)  #106
 1	Redes	rede	NOUN	<first-cjt>|<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	d2d:#106
 3	multimídia	multimídia	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	1	conj	_	ChangedBy=Issue149|ChangedBy=Issue165|SpaceAfter=No
@@ -32,8 +28,8 @@
 12	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Esses são alguns dos temas que estarão sendo discutidos no Congresso da Fenasoft, promovido paralelamente à feira.
-# source = CETENFolha n=959 cad=Informática sec=com sem=94a
 # sent_id = CF959-4
+# source = CETENFolha n=959 cad=Informática sec=com sem=94a
 # id = 4065
 1	Esses	esse	PRON	<dem>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Dem	3	nsubj	_	_
 2	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
@@ -64,10 +60,9 @@
 23	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O congresso é dividido em três temas, com o objetivo de atender de profissionais de informática a executivos e empresários interessados em novas tecnologias, pasando pelo usuário final.
-# source = CETENFolha n=959 cad=Informática sec=com sem=94a &W
 # sent_id = CF959-5
+# source = CETENFolha n=959 cad=Informática sec=com sem=94a &W
 # id = 4066
-# d2d = cc(executivos,e) -> cc(empresários,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	congresso	congresso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
 3	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
@@ -79,7 +74,7 @@
 9	com	com	ADP	PRP|@<ADVL	_	11	case	_	_
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	objetivo	objetivo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
-12	de	de	ADP	PRP|@N<ARG	_	13	mark	_	_
+12	de	de	SCONJ	PRP|@N<ARG	_	13	mark	_	_
 13	atender	atender	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	acl	_	_
 14	de	de	ADP	PRP|@<ADVL	_	15	case	_	_
 15	profissionais	profissional	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	obl	_	ChangedBy=Issue137
@@ -89,7 +84,7 @@
 19	executivos	executivo	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	nmod	_	_
 20	e	e	CCONJ	KC|@CO	_	21	cc	_	d2d:#106
 21	empresários	empresário	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	19	conj	_	_
-22	interessados	interessado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	19	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+22	interessados	interessar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	19	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 23	em	em	ADP	PRP|@<PIV	_	25	case	_	_
 24	novas	novo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	25	amod	_	_
 25	tecnologias	tecnologia	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	obj	_	ChangedBy=Issue165|SpaceAfter=No

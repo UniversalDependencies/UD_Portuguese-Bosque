@@ -1,12 +1,7 @@
 # text = O tema de Julia Child era uma simples quiche, mas era político: mostrar aos paranóicos americanos que o ovo e a manteiga fazem pratos deliciosos e que a patrulha do colesterol deve dar espaço ao prazer da comida.
-# source = CETENFolha n=734 cad=Turismo sec=soc sem=94a
 # sent_id = CF734-1
+# source = CETENFolha n=734 cad=Turismo sec=soc sem=94a
 # id = 3079
-# d2d = cc(ovo,e) -> cc(manteiga,e)  #106
-# d2d = cc(fazem,e) -> cc(dar,e)  #106
-# d2d = punct(quiche,:) -> punct(mostrar,:)  #106
-# d2d = punct(quiche,,) -> punct(político,,)  #106
-# d2d = cc(quiche,mas) -> cc(político,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tema	tema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -44,8 +39,8 @@
 33	de	de	ADP	<sam->|PRP|@N<	_	35	case	_	_
 34	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	colesterol	colesterol	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	_
-36	deve	dever	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	aux	_	_
-37	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	26	conj	_	_
+36	deve	dever	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj	_	_
+37	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	36	xcomp	_	_
 38	espaço	espaço	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	37	obj	_	_
 39-40	ao	_	_	_	_	_	_	_	_
 39	a	a	ADP	<sam->|PRP|@<PIV	_	41	case	_	_
@@ -58,10 +53,9 @@
 45	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Marcella Hazan falou sobre alcachofras e catequizou o público sobre a supremacia do óleo de oliva extra virgem para cozinhar, apesar da exorbitância do preço.
-# source = CETENFolha n=734 cad=Turismo sec=soc sem=94a
 # sent_id = CF734-2
+# source = CETENFolha n=734 cad=Turismo sec=soc sem=94a
 # id = 3080
-# d2d = cc(falou,e) -> cc(catequizou,e)  #106
 1	Marcella	Marcella	PROPN	_	Gender=Fem|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Marcella_Hazan|MWEPOS=PROPN
 2	Hazan	Hazan	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	falou	falar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -82,14 +76,14 @@
 17	oliva	oliva	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
 18	extra	extra	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	_
 19	virgem	virgem	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	17	amod	_	_
-20	para	para	ADP	PRP|@N<	_	21	mark	_	_
+20	para	para	SCONJ	PRP|@N<	_	21	mark	_	_
 21	cozinhar	cozinhar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	acl	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-23	apesar	apesar	ADV	ADV|@<ADVL	_	21	advmod	_	MWE=apesar_de
+23	apesar	apesar	ADV	ADV|@<ADVL	_	26	case	_	MWE=apesar_de|MWEPOS=ADP
 24-25	da	_	_	_	_	_	_	_	_
-24	de	de	ADP	PRP|@A<	_	26	case	_	_
+24	de	de	ADP	PRP|@A<	_	23	fixed	_	_
 25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	exorbitância	exorbitância	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	_
+26	exorbitância	exorbitância	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	_
 27-28	do	_	_	_	_	_	_	_	_
 27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
 28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
@@ -97,11 +91,9 @@
 30	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Patricia Wells ensinou o preparo de codornas marinadas e cuscuz marroquino e incentivava o público a repartir «food experiences» (o nome moderno para receber amigos para comer) como ela mesma faz em sua casa na Provence (sul da França), região em moda nos Estados Unidos.
-# source = CETENFolha n=734 cad=Turismo sec=soc sem=94a
 # sent_id = CF734-3
+# source = CETENFolha n=734 cad=Turismo sec=soc sem=94a
 # id = 3081
-# d2d = cc(codornas,e) -> cc(cuscuz,e)  #106
-# d2d = cc(ensinou,e) -> cc(incentivava,e)  #106
 1	Patricia	Patricia	PROPN	_	Gender=Fem|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Patricia_Wells|MWEPOS=PROPN
 2	Wells	Wells	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	ensinou	ensinar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -117,7 +109,7 @@
 13	incentivava	incentivar	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	conj	_	_
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	público	público	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	obj	_	_
-16	a	a	ADP	PRP|@<PIV	_	17	mark	_	_
+16	a	a	SCONJ	PRP|@<PIV	_	17	mark	_	_
 17	repartir	repartir	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	xcomp	_	_
 18	«	«	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 19	food	food	X	_	_	17	obj	_	MWE=food_experiences|MWEPOS=NOUN
@@ -127,10 +119,10 @@
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	nome	nome	NOUN	<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	19	appos	_	_
 25	moderno	moderno	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	24	amod	_	_
-26	para	para	ADP	PRP|@N<	_	27	mark	_	_
+26	para	para	SCONJ	PRP|@N<	_	27	mark	_	_
 27	receber	receber	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	24	acl	_	_
 28	amigos	amigo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	27	obj	_	_
-29	para	para	ADP	PRP|@<ADVL	_	30	mark	_	_
+29	para	para	SCONJ	PRP|@<ADVL	_	30	mark	_	_
 30	comer	comer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	27	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 31	)	)	PUNCT	PU|@PU	_	24	punct	_	_
 32	como	como	ADV	<rel>|ADV|@ADVL>	_	35	advmod	_	_
@@ -145,7 +137,7 @@
 40	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
 41	Provence	Provence	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	35	obl	_	ChangedBy=Issue137
 42	(	(	PUNCT	PU|@PU	_	43	punct	_	ChangedBy=Issue165|SpaceAfter=No
-43	sul	sul	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	41	nmod	_	_
+43	sul	sul	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	41	parataxis	_	_
 44-45	da	_	_	_	_	_	_	_	_
 44	de	de	ADP	<sam->|PRP|@N<	_	46	case	_	_
 45	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_

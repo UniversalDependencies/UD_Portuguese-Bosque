@@ -1,6 +1,6 @@
 # text = Homens são achados amordaçados no Rio
-# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-1
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # id = 3953
 1	Homens	homem	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj:pass	_	_
 2	são	ser	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_
@@ -12,10 +12,9 @@
 7	Rio	Rio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
 
 # text = Polícia Civil encontrou dois homens amarrados, amordaçados e de olhos vendados, em um barraco da favela Nova Brasília (zona norte).
-# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-2
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # id = 3954
-# d2d = punct(amarrados,,) -> punct(amordaçados,,)  #106
 1	Polícia	Polícia	PROPN	_	Gender=Fem|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Polícia_Civil|MWEPOS=PROPN
 2	Civil	Civil	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	encontrou	encontrar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -39,16 +38,15 @@
 20	Nova	Nova	PROPN	_	Gender=Fem|Number=Sing	19	appos	_	ChangedBy=Issue119|MWE=Nova_Brasília|MWEPOS=PROPN
 21	Brasília	Brasília	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119
 22	(	(	PUNCT	PU|@PU	_	23	punct	_	ChangedBy=Issue165|SpaceAfter=No
-23	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	19	nmod	_	_
+23	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	19	parataxis	_	_
 24	norte	norte	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	ChangedBy=Issue165|SpaceAfter=No
 25	)	)	PUNCT	PU|@PU	_	23	punct	_	ChangedBy=Issue165|SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Mauro Pereira e Gilson Paulino dos Santos disseram ter sido sequestrados por traficantes, que os teriam confundido com policiais.
-# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-3
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # id = 3955
-# d2d = cc(Mauro,e) -> cc(Gilson,e)  #106
 1	Mauro	Mauro	PROPN	_	Gender=Masc|Number=Sing	9	nsubj	_	ChangedBy=Issue119|MWE=Mauro_Pereira|MWEPOS=PROPN
 2	Pereira	Pereira	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	d2d:#106
@@ -74,8 +72,8 @@
 22	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Fiscais são recebidos a tiros em favela do Rio
-# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-4
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # id = 3956
 1	Fiscais	fiscal	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj:pass	_	_
 2	são	ser	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_
@@ -90,10 +88,9 @@
 10	Rio	Rio	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 
 # text = Fiscais do Tribunal Regional Eleitoral e PMs do Batalhão de Choque foram recebidos a tiros ontem à tarde na Vila do João, Manguinhos (zona norte do Rio).
-# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-5
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # id = 3957
-# d2d = cc(Fiscais,e) -> cc(PMs,e)  #106
 1	Fiscais	fiscal	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	15	nsubj:pass	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -129,7 +126,7 @@
 28	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 29	Manguinhos	Manguinhos	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	24	appos	_	_
 30	(	(	PUNCT	PU|@PU	_	31	punct	_	ChangedBy=Issue165|SpaceAfter=No
-31	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	29	nmod	_	_
+31	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	29	parataxis	_	_
 32	norte	norte	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	31	amod	_	_
 33-34	do	_	_	_	_	_	_	_	_
 33	de	de	ADP	<sam->|PRP|@N<	_	35	case	_	_
@@ -139,8 +136,8 @@
 37	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Os fiscais retirar propaganda irregular.
-# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-6
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # id = 3958
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	fiscais	fiscal	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
@@ -150,8 +147,8 @@
 6	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = No tiroteio, morreu Adriano Herculano da Silva, 18.
-# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # sent_id = CF934-7
+# source = CETENFolha n=934 cad=Brasil sec=pol sem=94a
 # id = 3959
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_

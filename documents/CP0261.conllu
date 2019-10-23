@@ -1,6 +1,6 @@
 # text = Uma associação de consumidores de Coimbra exigiu de novo a extinção do Instituto do Consumidor, que acusa de ter gasto em 1994 dinheiro sem proveito visível para os consumidores.
-# source = CETEMPúblico n=261 sec=soc sem=95b
 # sent_id = CP261-1
+# source = CETEMPúblico n=261 sec=soc sem=95b
 # id = 1390
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	associação	associação	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -22,9 +22,9 @@
 16	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	Consumidor	Consumidor	PROPN	PROP|@P<	Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-19	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	20	obj	_	_
+19	que	que	PRON	<rel>|INDP|M|S|@ACC>	Number=Sing|PronType=Rel	20	obj	_	_
 20	acusa	acusar	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_
-21	de	de	ADP	PRP|@<PIV	_	23	mark	_	_
+21	de	de	SCONJ	PRP|@<PIV	_	23	mark	_	_
 22	ter	ter	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	23	aux	_	_
 23	gasto	gastar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	20	xcomp	_	_
 24	em	em	ADP	PRP|@<ADVL	_	25	case	_	_
@@ -39,16 +39,15 @@
 33	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = A Deco tem uma posição oposta e o organismo visado limita-se a propor uma leitura atenta do relatório de actividades desenvolvidas.
-# source = CETEMPúblico n=261 sec=soc sem=95b
 # sent_id = CP261-2
+# source = CETEMPúblico n=261 sec=soc sem=95b
 # id = 1391
-# d2d = cc(tem,e) -> cc(limita-,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Deco	Deco	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	posição	posição	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
-6	oposta	oposto	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	5	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+6	oposta	oposto	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	5	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	d2d:#106
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	organismo	organismo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
@@ -56,7 +55,7 @@
 11-12	limita-se	_	_	_	_	_	_	_	_
 11	limita	limitar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 12	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	expl	_	ChangedBy=Issue135
-13	a	a	ADP	PRP|@<PIV	_	14	mark	_	_
+13	a	a	SCONJ	PRP|@<PIV	_	14	mark	_	_
 14	propor	propor	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	xcomp	_	_
 15	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	leitura	leitura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
@@ -71,8 +70,8 @@
 24	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O Instituto do Consumidor (IC) gastou em 1994 mais de meio milhão de contos sem resultados visíveis, acusa a Associação Portuguesa de Direito do Consumo (APDC), que endereçou uma carta ao primeiro-ministro propondo a «extinção», ainda antes das eleições, daquela estrutura do Ministério do Ambiente.
-# source = CETEMPúblico n=261 sec=soc sem=95b
 # sent_id = CP261-3
+# source = CETEMPúblico n=261 sec=soc sem=95b
 # id = 1392
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Instituto	Instituto	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	MWE=Instituto_do_Consumidor
@@ -86,7 +85,7 @@
 9	gastou	gastar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	ccomp	_	_
 10	em	em	ADP	PRP|@<ADVL	_	11	case	_	_
 11	1994	1994	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	9	obl	_	ChangedBy=Issue168
-12	mais	muito	PRON	<quant>|<KOMP>|<COMP>|DET|M/F|S/P|@<ACC	Gender=Unsp|Number=Unsp|PronType=Ind	9	obj	_	_
+12	mais	mais	PRON	<quant>|<KOMP>|<COMP>|DET|M/F|S/P|@<ACC	Gender=Unsp|Number=Unsp|PronType=Ind	9	obj	_	_
 13	de	de	ADP	PRP|@N<	_	15	case	_	_
 14	meio	meio	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	15	amod	_	_
 15	milhão	milhão	NUM	<np-idf>|N|M|S|@P<	NumType=Card	12	nmod	_	_

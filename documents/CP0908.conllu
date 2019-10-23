@@ -1,14 +1,12 @@
 # text = A par de um medicamento antiacidez, o grupo aconselha especificamente dois antibióticos de entre a Claritromicina, Metronizadol e Amoxilina, prescritos apenas durante uma semana.
-# source = CETEMPúblico n=908 sec=nd sem=96b
 # sent_id = CP908-1
+# source = CETEMPúblico n=908 sec=nd sem=96b
 # id = 4680
-# d2d = punct(Claritromicina,,) -> punct(Metronizadol,,)  #106
-# d2d = cc(Claritromicina,e) -> cc(Amoxilina,e)  #106
-1	A	a	ADP	PRP|@ADVL>	_	2	case	_	MWE=A_par_de
-2	par	par	NOUN	N|@P<	_	10	obl	_	_
-3	de	de	ADP	PRP|@N<	_	5	case	_	_
+1	A	a	ADP	PRP|@ADVL>	_	5	case	_	MWE=A_par_de|MWEPOS=ADP
+2	par	par	NOUN	N|@P<	_	1	fixed	_	_
+3	de	de	ADP	PRP|@N<	_	1	fixed	_	_
 4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	medicamento	medicamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
+5	medicamento	medicamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	_
 6	antiacidez	antiacidez	ADJ	<np-idf>|N|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
@@ -34,12 +32,11 @@
 28	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = É que se receia que a escolha de um tratamento incorrecto e disseminado à escala planetária faça aumentar a resistência da bactéria aos antibióticos.
-# source = CETEMPúblico n=908 sec=nd sem=96b
 # sent_id = CP908-2
+# source = CETEMPúblico n=908 sec=nd sem=96b
 # id = 4681
-# d2d = cc(incorrecto,e) -> cc(disseminado,e)  #106
-1	É	é	ADP	PRP|@ADVL>	_	2	case	_	MWE=É_que
-2	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
+1	É	ser	AUX	PRP|@ADVL>	_	4	discourse	_	MWE=É_que|MWEPOS=INTJ
+2	que	que	SCONJ	N|M|S|@P<	_	1	fixed	_	_
 3	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	_	_
 4	receia	recear	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
@@ -71,8 +68,8 @@
 28	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O grupo também recomenda fortemente a eliminação da bactéria em doentes com um tumor raro chamado linfoma de MALT (Tecido Linfóide Associado à Mucosa), quando ainda está numa fase de baixo grau de malignidade.
-# source = CETEMPúblico n=908 sec=nd sem=96b
 # sent_id = CP908-3
+# source = CETEMPúblico n=908 sec=nd sem=96b
 # id = 4682
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	grupo	grupo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
@@ -94,15 +91,15 @@
 17	chamado	chamar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	15	acl	_	_
 18	linfoma	linfoma	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	17	xcomp	_	MWE=linfoma_de_MALT
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
-20	MALT	malt	NOUN	N|@P<	_	18	nmod	_	_
+20	MALT	malt	NOUN	N|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
 21	(	(	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
-22	Tecido	tecido	PROPN	_	Gender=Masc|Number=Sing	18	appos	_	ChangedBy=Issue119|MWE=Tecido_Linfóide_Associado|MWEPOS=PROPN
-23	Linfóide	linfóide	PROPN	_	_	22	flat:name	_	ChangedBy=Issue119
-24	Associado	associado	PROPN	_	_	22	flat:name	_	ChangedBy=Issue119
+22	Tecido	Tecido	PROPN	_	Gender=Masc|Number=Sing	18	appos	_	ChangedBy=Issue119|MWE=Tecido_Linfóide_Associado|MWEPOS=PROPN
+23	Linfóide	Linfóide	PROPN	_	Gender=Masc|Number=Sing	22	flat:name	_	ChangedBy=Issue119
+24	Associado	associado	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	22	flat:name	_	ChangedBy=Issue119
 25-26	à	_	_	_	_	_	_	_	_
 25	a	a	ADP	<sam->|PRP|@N<	_	27	case	_	_
 26	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	Mucosa	mucosa	NOUN	N|@P<	_	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+27	Mucosa	mucosa	NOUN	N|@P<	Gender=Fem|Number=Sing	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 28	)	)	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 30	quando	quando	ADV	<rel>|ADV|@ADVL>	_	35	advmod	_	_
@@ -120,8 +117,8 @@
 41	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Vários estudos têm mostrado que estes linfomas regridem depois de tratamentos dirigidos à HP, o que sugere uma relação entre os dois.
-# source = CETEMPúblico n=908 sec=nd sem=96b
 # sent_id = CP908-4
+# source = CETEMPúblico n=908 sec=nd sem=96b
 # id = 4683
 1	Vários	vários	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	2	det	_	_
 2	estudos	estudo	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_

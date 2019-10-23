@@ -1,16 +1,16 @@
 # text = A vitória, porém, não foi suficiente para acalmar o ambiente no clube santista.
-# source = CETENFolha n=222 cad=Esporte sec=des sem=94a
 # sent_id = CF222-1
+# source = CETENFolha n=222 cad=Esporte sec=des sem=94a
 # id = 958
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	vitória	vitória	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-4	porém	porém	ADV	<kc>|ADV|@ADVL>	_	8	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+4	porém	porém	CCONJ	<kc>|ADV|@ADVL>	_	8	cc	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
 7	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	ChangedBy=Issue167
 8	suficiente	suficiente	ADJ	<quant>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
-9	para	para	ADP	PRP|@A<ARG	_	10	mark	_	_
+9	para	para	SCONJ	PRP|@A<ARG	_	10	mark	_	_
 10	acalmar	acalmar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	advcl	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	ambiente	ambiente	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
@@ -22,10 +22,9 @@
 17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O presidente Miguel Kodja Neto ignorou a diplomacia que normalmente marca o futebol para acusar o ex-jogador e empresário Pelé.
-# source = CETENFolha n=222 cad=Esporte sec=des sem=94a
 # sent_id = CF222-2
+# source = CETENFolha n=222 cad=Esporte sec=des sem=94a
 # id = 959
-# d2d = cc(ex-jogador,e) -> cc(empresário,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3	Miguel	Miguel	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Miguel_Kodja_Neto|MWEPOS=PROPN
@@ -39,7 +38,7 @@
 11	marca	marcar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	futebol	futebol	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_
-14	para	para	ADP	PRP|@<ADVL	_	15	mark	_	_
+14	para	para	SCONJ	PRP|@<ADVL	_	15	mark	_	_
 15	acusar	acusar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	ex-jogador	ex-jogador	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	15	obj	_	_
@@ -49,8 +48,8 @@
 21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = «Ele foi um ótimo jogador, mas é um péssimo dirigente», disse Kodja, que quer o afastamento de Pelé, assessor de assuntos internacionais, e do vice Samir Abdul Hack.
-# source = CETENFolha n=222 cad=Esporte sec=des sem=94a
 # sent_id = CF222-3
+# source = CETENFolha n=222 cad=Esporte sec=des sem=94a
 # id = 960
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_

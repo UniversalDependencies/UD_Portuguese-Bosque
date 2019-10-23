@@ -1,8 +1,7 @@
 # text = A falta de consciência do sentido de ridículo ainda recentemente foi dada, em declarações ao PÚBLICO, por um douto professor universitário que classificou liminarmente de «mau plano» um PDM elaborado dentro de uma câmara municipal com uma equipa técnica de qualidade e fortemente assessoriada por urbanistas experientes.
-# source = CETEMPúblico n=228 sec=soc sem=94a
 # sent_id = CP228-1
+# source = CETEMPúblico n=228 sec=soc sem=94a
 # id = 1222
-# d2d = cc(equipa,e) -> cc(assessoriada,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	falta	falta	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj:pass	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -44,8 +43,8 @@
 37	dentro	dentro	ADV	ADV|@<ADVL	_	36	advmod	_	MWE=dentro_de
 38	de	de	ADP	PRP|@A<	_	40	obl	_	_
 39	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
-40	câmara	câmara	NOUN	_	_	37	obl	_	MWE=câmara_municipal|MWEPOS=NOUN
-41	municipal	municipal	ADJ	_	_	40	amod	_	_
+40	câmara	câmara	NOUN	_	Gender=Fem|Number=Sing	37	obl	_	MWE=câmara_municipal|MWEPOS=NOUN
+41	municipal	municipal	ADJ	_	Gender=Fem|Number=Sing	40	amod	_	_
 42	com	com	ADP	<first-cjt>|PRP|@N<	_	44	case	_	_
 43	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
 44	equipa	equipa	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	40	nmod	_	_
@@ -61,16 +60,9 @@
 54	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Fazer uma gestão urbanística inteligente, dialogante, eficaz, informada e com bons resultados práticos, exige uma tenacidade e um talento que não estão ao alcance de técnicos cinzentos e submissos que o sistema inevitavelmente prefere, produz e atrai.
-# source = CETEMPúblico n=228 sec=soc sem=94a
 # sent_id = CP228-2
+# source = CETEMPúblico n=228 sec=soc sem=94a
 # id = 1223
-# d2d = cc(inteligente,e) -> cc(resultados,e)  #106
-# d2d = punct(inteligente,,) -> punct(informada,,)  #106
-# d2d = punct(inteligente,,) -> punct(dialogante,,)  #106
-# d2d = punct(prefere,,) -> punct(produz,,)  #106
-# d2d = cc(cinzentos,e) -> cc(submissos,e)  #106
-# d2d = punct(inteligente,,) -> punct(eficaz,,)  #106
-# d2d = cc(prefere,e) -> cc(atrai,e)  #106
 1	Fazer	fazer	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	18	csubj	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	gestão	gestão	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
@@ -94,13 +86,13 @@
 21	e	e	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	29	cc	_	_
 22	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	talento	talento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
-24	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	29	nsubj	_	_
+24	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	29	nsubj	_	_
 25	não	não	ADV	ADV|@ADVL>	Polarity=Neg	29	advmod	_	ChangedBy=Issue108
 26	estão	estar	AUX	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	cop	_	ChangedBy=Issue167
 27-28	ao	_	_	_	_	_	_	_	_
 27	a	a	ADP	<sam->|PRP|@<SC	_	29	case	_	_
 28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	alcance	alcance	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	conj	_	_
+29	alcance	alcance	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	acl:relcl	_	_
 30	de	de	ADP	PRP|@N<	_	31	case	_	_
 31	técnicos	técnico	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	29	nmod	_	_
 32	cinzentos	cinzento	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	31	amod	_	_

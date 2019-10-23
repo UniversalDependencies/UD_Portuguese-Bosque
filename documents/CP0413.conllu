@@ -1,6 +1,6 @@
 # text = Luísa Senos, chefe de Divisão de Sismologia do Instituto de Meteorologia (IM), relatou os últimos progressos da rede nacional de sismógrafos.
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-1
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2160
 1	Luísa	Luísa	PROPN	_	Gender=Fem|Number=Sing	18	nsubj	_	ChangedBy=Issue119|MWE=Luísa_Senos|MWEPOS=PROPN
 2	Senos	Senos	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -34,12 +34,9 @@
 28	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Gerida pelo IM, a rede funcionava desde os anos 70 com nove estações analógicas em Portugal continental, 11 nos Açores, uma na Madeira e outra em Macau.
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-2
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2161
-# d2d = punct(estações,,) -> punct(11,,)  #106
-# d2d = cc(estações,e) -> cc(outra,e)  #106
-# d2d = punct(estações,,) -> punct(uma,,)  #106
 1	Gerida	gerir	VERB	<mv>|V|PCP|F|S|@ICL-PRED>	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	acl	_	_
 2-3	pelo	_	_	_	_	_	_	_	_
 2	por	por	ADP	PRP|@PASS	_	4	case	_	_
@@ -79,13 +76,13 @@
 34	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = «Em cerca de 600 sismos no continente, só em dez a 12 por cento se conseguia calcular os parâmetros sísmicos».
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-3
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2162
 1	«	«	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Em	em	ADP	PRP|@ADVL>	_	6	case	_	_
-3	cerca	cerca	ADV	ADV|@>A	_	5	advmod	_	MWE=cerca_de
-4	de	de	ADP	<prp>|PRP|@A<	_	3	case	_	_
+3	cerca	cerca	ADV	ADV|@>A	_	5	advmod	_	MWE=cerca_de|MWEPOS=ADV
+4	de	de	ADP	<prp>|PRP|@A<	_	3	fixed	_	_
 5	600	600	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
 6	sismos	sismo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	19	obl	_	ChangedBy=Issue137
 7-8	no	_	_	_	_	_	_	_	_
@@ -98,7 +95,7 @@
 13	dez	dez	NUM	<card>|NUM|M|P|@P<	NumType=Card	19	obl	_	ChangedBy=Issue168
 14	a	a	ADP	PRP|@P<	_	16	case	_	_
 15	12	12	NUM	<card>|NUM|M|P|@>N	NumType=Card	16	nummod	_	ChangedBy=Issue168
-16	por	por	ADP	_	Gender=Masc|Number=Sing	13	nmod	_	MWE=por_cento|MWEPOS=NOUN
+16	por	por	ADP	_	_	13	nmod	_	MWE=por_cento|MWEPOS=NOUN
 17	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	16	compound	_	_
 18	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	19	nsubj	_	_
 19	conseguia	conseguir	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -110,15 +107,15 @@
 25	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = Razão que levou o IM a decidir a instalação de duas redes digitais.
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-4
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2163
 1	Razão	razão	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	3	nsubj	_	_
 3	levou	levar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	IM	IM	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
-6	a	a	ADP	PRP|@<PIV	_	7	mark	_	_
+6	a	a	SCONJ	PRP|@<PIV	_	7	mark	_	_
 7	decidir	decidir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	xcomp	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	instalação	instalação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
@@ -129,11 +126,9 @@
 14	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Uma das redes digitais, em fase de instalação entre 1994 e 1997, custará 150 mil contos, terá 14 estações (12 no continente e duas na Madeira).
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-5
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2164
-# d2d = cc(1994,e) -> cc(1997,e)  #106
-# d2d = cc(12,e) -> cc(duas,e)  #106
 1	Uma	um	NUM	<card>|NUM|F|S|@SUBJ>	NumType=Card	16	nsubj	_	ChangedBy=Issue168
 2-3	das	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@A<	_	4	case	_	_
@@ -174,8 +169,8 @@
 35	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Neste momento, conta já com seis estações no continente.
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-6
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2165
 1-2	Neste	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -194,8 +189,8 @@
 13	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Os registos falam por si, pois as estações analógicas não detectavam sismos de magnitude inferior a três na escala de Richter.
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-7
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2166
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	registos	registo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
@@ -224,8 +219,8 @@
 24	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «Em 1995, duplicou o número de sismos detectados.
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-8
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2167
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
@@ -240,8 +235,8 @@
 11	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Com a rede digital detectaram-se sismos de magnitude inferior a dois».
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-9
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2168
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -260,16 +255,14 @@
 14	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = A segunda rede digital, que será instalada nos Açores entre 1997 e 99, terá 12 estações e custará cerca de 200 mil contos.
-# source = CETEMPúblico n=413 sec=clt sem=96a
 # sent_id = CP413-10
+# source = CETEMPúblico n=413 sec=clt sem=96a
 # id = 2169
-# d2d = cc(terá,e) -> cc(custará,e)  #106
-# d2d = cc(1997,e) -> cc(99,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	segunda	segundo	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	ChangedBy=Issue172
 3	rede	rede	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	17	nsubj	_	_
 4	digital	digital	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	ChangedBy=Issue165|SpaceAfter=No
-5	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+5	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 6	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	8	nsubj:pass	_	_
 7	será	ser	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux:pass	_	_
 8	instalada	instalar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	acl:relcl	_	_
@@ -287,8 +280,8 @@
 19	estações	estação	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	17	obj	_	_
 20	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	21	cc	_	d2d:#106
 21	custará	custar	VERB	<cjt>|<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	conj	_	_
-22	cerca	cerca	ADV	ADV|@>A	_	24	advmod	_	MWE=cerca_de
-23	de	de	ADP	<prp>|PRP|@A<	_	22	case	_	_
+22	cerca	cerca	ADV	ADV|@>A	_	24	advmod	_	MWE=cerca_de|MWEPOS=ADV
+23	de	de	ADP	<prp>|PRP|@A<	_	22	fixed	_	_
 24	200	200	NUM	<card>|NUM|M|P|@>N	NumType=Card	26	nummod	_	ChangedBy=Issue168|MWE=200_mil
 25	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	24	flat	_	ChangedBy=Issue168
 26	contos	conto	NOUN	<np-def>|N|M|P|@<SA	Gender=Masc|Number=Plur	21	obl	_	ChangedBy=Issue165|SpaceAfter=No

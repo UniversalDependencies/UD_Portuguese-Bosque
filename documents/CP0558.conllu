@@ -1,10 +1,7 @@
 # text = Nono mês do calendário lunar islâmico, durante o qual mil milhões de pessoas se abstêm de comer, fumar, ouvir música ou de ter relações sexuais, o Ramadão é o mês sagrado muçulmano.
-# source = CETEMPúblico n=558 sec=pol sem=97b
 # sent_id = CP558-1
+# source = CETEMPúblico n=558 sec=pol sem=97b
 # id = 2896
-# d2d = punct(comer,,) -> punct(fumar,,)  #106
-# d2d = cc(comer,ou) -> cc(ter,ou)  #106
-# d2d = punct(comer,,) -> punct(ouvir,,)  #106
 1	Nono	nono	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	2	amod	_	ChangedBy=Issue172
 2	mês	mês	NOUN	<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	35	nmod	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -17,13 +14,13 @@
 9	durante	durante	ADP	PRP|@ADVL>	_	11	case	_	_
 10	o	o	DET	DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	11	det	_	MWE=o_qual
 11	qual	qual	PRON	DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	17	obl	_	_
-12	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	15	nummod	_	ChangedBy=Issue168|MWE=mil_milhões
+12	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	17	nsubj	_	ChangedBy=Issue168|MWE=mil_milhões
 13	milhões	milhão	NUM	<np-def>|N|M|P|@SUBJ>	NumType=Card	12	flat	_	_
 14	de	de	ADP	PRP|@N<ARG	_	15	case	_	_
-15	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	17	nsubj	_	_
+15	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
 16	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	17	expl	_	ChangedBy=Issue135
 17	abstêm	abster	VERB	<mv>|<se-passive>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
-18	de	de	ADP	<first-cjt>|PRP|@<PIV	_	19	mark	_	_
+18	de	de	SCONJ	<first-cjt>|PRP|@<PIV	_	19	mark	_	_
 19	comer	comer	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	17	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
 21	fumar	fumar	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	19	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -31,7 +28,7 @@
 23	ouvir	ouvir	VERB	<first-cjt>|<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	19	conj	_	_
 24	música	música	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	23	obj	_	_
 25	ou	ou	CCONJ	<co-piv>|KC|@CO	_	27	cc	_	d2d:#106
-26	de	de	ADP	<cjt>|PRP|@<PIV	_	27	mark	_	_
+26	de	de	SCONJ	<cjt>|PRP|@<PIV	_	27	mark	_	_
 27	ter	ter	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	conj	_	_
 28	relações	relação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	27	obj	_	_
 29	sexuais	sexual	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	28	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -46,8 +43,8 @@
 38	.	.	PUNCT	PU|@PU	_	35	punct	_	_
 
 # text = Mas para alguns é também sinónimo de «jihad» (guerra santa).
-# source = CETEMPúblico n=558 sec=pol sem=97b
 # sent_id = CP558-2
+# source = CETEMPúblico n=558 sec=pol sem=97b
 # id = 2897
 1	Mas	mas	CCONJ	KC|@CO	_	6	cc	_	_
 2	para	para	ADP	PRP|@ADVL>	_	3	case	_	_
@@ -66,11 +63,9 @@
 15	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Há onze meses, explosões na cidade e massacres em zonas rurais causaram pelo menos 400 mortos e traumatizaram a cidade, onde o grupo islâmico armado (GIA) enfrentou, com sucesso, a apertada malha das forças de segurança argelinas.
-# source = CETEMPúblico n=558 sec=pol sem=97b
 # sent_id = CP558-3
+# source = CETEMPúblico n=558 sec=pol sem=97b
 # id = 2898
-# d2d = cc(explosões,e) -> cc(massacres,e)  #106
-# d2d = cc(causaram,e) -> cc(traumatizaram,e)  #106
 1	Há	há	ADP	PRP|@ADVL>	_	3	case	_	_
 2	onze	onze	NUM	<card>|NUM|M|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168
 3	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	14	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -97,7 +92,7 @@
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	cidade	cidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	21	obj	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-25	onde	onde	ADV	<rel>|ADV|@ADVL>	_	33	advmod	_	_
+25	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	33	obl	_	_
 26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	grupo	grupo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	33	nsubj	_	_
 28	islâmico	islâmico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	27	amod	_	_
@@ -123,8 +118,8 @@
 47	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = É o que se teme agora, segundo os panfletos, aparecidos sobretudo em mesquitas não controladas pelo Estado, dentro das quais as orações têm sido acompanhadas por murmúrios pouco comuns.
-# source = CETEMPúblico n=558 sec=pol sem=97b
 # sent_id = CP558-4
+# source = CETEMPúblico n=558 sec=pol sem=97b
 # id = 2899
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	o	o	PRON	<dem>|DET|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_

@@ -1,6 +1,6 @@
 # text = A indignação dos dirigentes do Sindicato dos Têxteis tem como principal alvo a Câmara Municipal, que alegadamente terá colocado «entraves» que fizeram baixar o valor do imóvel.
-# source = CETEMPúblico n=879 sec=soc sem=96a
 # sent_id = CP879-1
+# source = CETEMPúblico n=879 sec=soc sem=96a
 # id = 4502
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	indignação	indignação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
@@ -21,8 +21,8 @@
 14	principal	principal	ADJ	<np-idf>|N|M|S|@>N	Gender=Masc|Number=Sing	15	amod	_	_
 15	alvo	alvo	NOUN	<n>|<np-idf>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	12	xcomp	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	Câmara	Câmara	NOUN	_	Gender=Fem|Number=Sing	12	obj	_	MWE=câmara_municipal|MWEPOS=NOUN
-18	Municipal	Municipal	ADJ	_	Number=Sing	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
+17	Câmara	Câmara	PROPN	_	Gender=Fem|Number=Sing	12	obj	_	MWE=câmara_municipal|MWEPOS=NOUN
+18	Municipal	Municipal	PROPN	_	Number=Sing	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 20	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	23	nsubj	_	_
 21	alegadamente	alegadamente	ADV	ADV|@ADVL>	_	23	advmod	_	_
@@ -43,18 +43,18 @@
 35	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Em causa estará, nomeadamente, a impossibilidade de alterar a fachada do edifício de quatro andares, cada um deles com cerca de seis metros de pé-direito.
-# source = CETEMPúblico n=879 sec=soc sem=96a
 # sent_id = CP879-2
+# source = CETEMPúblico n=879 sec=soc sem=96a
 # id = 4503
 1	Em	em	ADP	PRP|@SA>	_	2	case	_	MWE=Em_causa
 2	causa	causa	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
 3	estará	estar	AUX	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	cop	_	ChangedBy=Issue165|ChangedBy=Issue167|SpaceAfter=No
-4	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 5	nomeadamente	nomeadamente	ADV	ADV|@<ADVL	_	8	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	impossibilidade	impossibilidade	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	2	parataxis	_	_
-9	de	de	ADP	PRP|@N<	_	10	mark	_	_
+9	de	de	SCONJ	PRP|@N<	_	10	mark	_	_
 10	alterar	alterar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	fachada	fachada	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
@@ -66,14 +66,14 @@
 17	quatro	quatro	NUM	<card>|NUM|M|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
 18	andares	andar	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-20	cada	cada	PROPN	_	Gender=Masc|Number=Sing	18	appos	_	ChangedBy=Issue119|MWE=Cada_um
-21	um	um	PROPN	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	fixed	_	ChangedBy=Issue119
+20	cada	cada	DET	_	Gender=Masc|Number=Sing	18	appos	_	ChangedBy=Issue119|MWE=Cada_um
+21	um	um	NUM	_	NumType=Card	20	fixed	_	ChangedBy=Issue119
 22-23	deles	_	_	_	_	_	_	_	_
 22	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
 23	eles	ele	PRON	<-sam>|PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	nmod	_	_
 24	com	com	ADP	PRP|@N<PRED	_	28	case	_	_
-25	cerca	cerca	ADV	ADV|@>A	_	27	advmod	_	MWE=cerca_de
-26	de	de	ADP	<prp>|PRP|@A<	_	25	case	_	_
+25	cerca	cerca	ADV	ADV|@>A	_	27	advmod	_	MWE=cerca_de|MWEPOS=ADV
+26	de	de	ADP	<prp>|PRP|@A<	_	25	fixed	_	_
 27	seis	seis	NUM	<card>|NUM|M|P|@>N	NumType=Card	28	nummod	_	ChangedBy=Issue168
 28	metros	metro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
 29	de	de	ADP	PRP|@N<	_	30	case	_	_
@@ -81,8 +81,8 @@
 31	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O prédio foi agora vendido à empresa Construções Progresso no âmbito de negociações particulares.
-# source = CETEMPúblico n=879 sec=soc sem=96a
 # sent_id = CP879-3
+# source = CETEMPúblico n=879 sec=soc sem=96a
 # id = 4504
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	prédio	prédio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
@@ -105,8 +105,8 @@
 17	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Estas foram iniciadas há meses, depois de se considerarem esgotadas as hipóteses de venda por arrematação judicial, dado os valores oferecidos -- num máximo de 186 mil contos -- estarem muito aquém da avaliação.
-# source = CETEMPúblico n=879 sec=soc sem=96a
 # sent_id = CP879-4
+# source = CETEMPúblico n=879 sec=soc sem=96a
 # id = 4505
 1	Estas	este	PRON	<dem>|DET|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Dem	3	nsubj:pass	_	_
 2	foram	ser	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	aux:pass	_	_
@@ -114,11 +114,11 @@
 4	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
 5	meses	mês	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	obj	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-7	depois	depois	ADV	ADV|@<ADVL	_	3	advmod	_	_
-8	de	de	ADP	PRP|@A<ARG	_	10	mark	_	_
+7	depois	depois	ADV	ADV|@<ADVL	_	10	mark	_	MWE=depois_de|MWEPOS=SCONJ
+8	de	de	ADP	PRP|@A<ARG	_	7	fixed	_	_
 9	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	10	expl	_	ChangedBy=Issue135
-10	considerarem	considerar	VERB	<mv>|<se-passive>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	7	advcl	_	_
-11	esgotadas	esgotar	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	10	dep	_	_
+10	considerarem	considerar	VERB	<mv>|<se-passive>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	3	advcl	_	_
+11	esgotadas	esgotar	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	13	acl	_	_
 12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
 13	hipóteses	hipótese	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	10	nsubj	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
@@ -127,7 +127,7 @@
 17	arrematação	arrematação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
 18	judicial	judicial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-20	dado	dado	ADP	PRP|@<ADVL	_	23	mark	_	_
+20	dado	dado	SCONJ	PRP|@<ADVL	_	23	mark	_	_
 21	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
 22	valores	valor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	35	nsubj	_	_
 23	oferecidos	oferecer	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	10	acl	_	_
@@ -143,7 +143,7 @@
 32	--	--	PUNCT	PU|@PU	_	27	punct	_	_
 33	estarem	estar	AUX	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	35	cop	_	ChangedBy=Issue167
 34	muito	muito	ADV	<quant>|ADV|@>P	_	38	advmod	_	_
-35	aquém	aquém	ADV	ADV|@<SC	_	10	advmod	_	MWE=aquém_de
+35	aquém	aquém	ADV	ADV|@<SC	_	23	advmod	_	MWE=aquém_de
 36-37	da	_	_	_	_	_	_	_	_
 36	de	de	ADP	PRP|@A<	_	38	case	_	_
 37	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_

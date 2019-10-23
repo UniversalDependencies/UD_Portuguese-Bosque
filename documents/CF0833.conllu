@@ -1,9 +1,7 @@
 # text = Parágrafo 3º. -- Nos contratos celebrados ou convertidos em URV, em que haja cláusula de reajuste de valor por índice de preços ou por índice que reflita a variação ponderada dos custos dos insumos utilizados, o cálculo desses índices, para efeitos de reajuste, deverá ser nesta moeda até a emissão do real e, daí em diante, em real, observado o art. 38 da lei nº. 8.880 de 27.05.94.
-# source = CETENFolha n=833 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF833-1
+# source = CETENFolha n=833 cad=Dinheiro sec=eco sem=94a
 # id = 3508
-# d2d = cc(celebrados,ou) -> cc(convertidos,ou)  #106
-# d2d = cc(índice,ou) -> cc(índice,ou)  #106
 1	Parágrafo	parágrafo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	3º.	3º.	ADJ	<NUM-ord>|ADJ|M|S|@N<	Gender=Masc|Number=Sing|NumType=Ord	1	amod	_	ChangedBy=Issue172
 3	--	--	PUNCT	PU|@PU	_	1	punct	_	_
@@ -98,13 +96,9 @@
 84	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Parágrafo 4º. -- A Taxa Referencial -- TR -- somente poderá ser utilizada nas operações realizadas nos mercados financeiro, de valores mobiliários, de seguros, de previdência privada e de futuros.
-# source = CETENFolha n=833 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF833-2
+# source = CETENFolha n=833 cad=Dinheiro sec=eco sem=94a
 # id = 3509
-# d2d = punct(financeiro,,) -> punct(seguros,,)  #106
-# d2d = punct(financeiro,,) -> punct(valores,,)  #106
-# d2d = cc(financeiro,e) -> cc(futuros,e)  #106
-# d2d = punct(financeiro,,) -> punct(previdência,,)  #106
 1	Parágrafo	parágrafo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	4º.	4º.	ADJ	<NUM-ord>|ADJ|M|S|@N<	Gender=Masc|Number=Sing|NumType=Ord	1	amod	_	ChangedBy=Issue172
 3	--	--	PUNCT	PU|@PU	_	5	punct	_	_
@@ -115,9 +109,9 @@
 8	TR	TR	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	5	appos	_	_
 9	--	--	PUNCT	PU|@PU	_	8	punct	_	_
 10	somente	somente	ADV	ADV|@ADVL>	_	13	advmod	_	_
-11	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	aux	_	_
+11	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	1	acl:relcl	_	_
 12	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	13	aux:pass	_	_
-13	utilizada	utilizar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	1	acl:relcl	_	_
+13	utilizada	utilizar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	11	xcomp	_	_
 14-15	nas	_	_	_	_	_	_	_	_
 14	em	em	ADP	<sam->|PRP|@<ADVL	_	16	case	_	_
 15	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_

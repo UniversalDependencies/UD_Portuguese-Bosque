@@ -1,9 +1,7 @@
 # text = Nos mintos iniciais da segunda parte os vitorianos conseguiram de novo adormecer os seus adversários,nomeadamente graças ao trabalho laborioso de Paneira e Toniño e a excelente marcação que Marco exerceu sobre Zola.
-# source = CETEMPúblico n=238 sec=des sem=96b
 # sent_id = CP238-1
+# source = CETEMPúblico n=238 sec=des sem=96b
 # id = 1263
-# d2d = cc(Paneira,e) -> cc(Toniño,e)  #106
-# d2d = cc(trabalho,e) -> cc(marcação,e)  #106
 1-2	Nos	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
@@ -25,11 +23,11 @@
 17	adversários	adversário	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
 19	nomeadamente	nomeadamente	ADV	ADV|@<ADVL	_	11	advmod	_	_
-20	graças	graças	ADV	ADV|@<ADVL	_	11	advmod	_	MWE=graças_a
+20	graças	graças	ADV	ADV|@<ADVL	_	23	case	_	MWE=graças_a|MWEPOS=ADP
 21-22	ao	_	_	_	_	_	_	_	_
-21	a	a	ADP	PRP|@A<	_	23	case	_	_
+21	a	a	ADP	PRP|@A<	_	20	fixed	_	_
 22	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	trabalho	trabalho	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	_
+23	trabalho	trabalho	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	_
 24	laborioso	laborioso	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	23	amod	_	_
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
 26	Paneira	Paneira	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
@@ -47,24 +45,24 @@
 38	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = O português «secou» de tal forma o génio parmesão que Ancelotti acabou por substitui-lo por Melli.
-# source = CETEMPúblico n=238 sec=des sem=96b
 # sent_id = CP238-2
+# source = CETEMPúblico n=238 sec=des sem=96b
 # id = 1264
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	português	português	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 4	secou	secar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 5	»	»	PUNCT	PU|@PU	_	4	punct	_	_
-6	de	de	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	4	obl	_	MWE=de_tal_forma
-7	tal	tal	ADP	PRP|@N<	_	8	case	_	_
-8	forma	forma	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
+6	de	de	ADP	N|M|S|@<ADVL	Gender=Masc|Number=Sing	4	obl	_	MWE=de_tal_forma|MWEPOS=ADV
+7	tal	tal	ADV	PRP|@N<	_	6	fixed	_	_
+8	forma	forma	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	6	fixed	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	génio	génio	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
 11	parmesão	parmesão	ADJ	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	_
 12	que	que	SCONJ	KS|@SUB	_	14	mark	_	_
 13	Ancelotti	Ancelotti	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
 14	acabou	acabar	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	advcl	_	_
-15	por	por	ADP	PRP|@<ADVL	_	16	mark	_	_
+15	por	por	SCONJ	PRP|@<ADVL	_	16	mark	_	_
 16-17	substitui-lo	_	_	_	_	_	_	_	_
 16	substitui	substituir	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	advcl	_	_
 17	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	obj	_	_
@@ -73,14 +71,14 @@
 20	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O Parma voltou a acordar aos 66',quando Melli rematou à barra uma bola passada por Dino Baggio.
-# source = CETEMPúblico n=238 sec=des sem=96b
 # sent_id = CP238-3
+# source = CETEMPúblico n=238 sec=des sem=96b
 # id = 1265
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Parma	Parma	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	voltou	voltar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_
-4	a	a	ADP	PRP|@PRT-AUX<	_	5	case	_	_
-5	acordar	acordar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	voltou	voltar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=voltou_a|MWEPOS=AUX
+4	a	a	SCONJ	PRP|@PRT-AUX<	_	5	mark	_	_
+5	acordar	acordar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 6-7	aos	_	_	_	_	_	_	_	_
 6	a	a	ADP	<sam->|PRP|@<ADVL	_	8	case	_	_
 7	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
@@ -95,19 +93,19 @@
 15	barra	barra	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	iobj	_	_
 16	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	bola	bola	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	_
-18	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	17	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+18	passada	passar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	17	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 19	por	por	ADP	PRP|@PASS	_	20	case	_	_
 20	Dino	Dino	PROPN	_	Gender=Masc|Number=Sing	18	obl:agent	_	ChangedBy=Issue119|MWE=Dino_Baggio|MWEPOS=PROPN
 21	Baggio	Baggio	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Porém,quando parecia que os italianos iam embalar para uma exibição arrasadora,aconteceu o golpe de teatro.
-# source = CETEMPúblico n=238 sec=des sem=96b
 # sent_id = CP238-4
+# source = CETEMPúblico n=238 sec=des sem=96b
 # id = 1266
 1	Porém	porém	ADV	<kc>|ADV|@ADVL>	_	15	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	ChangedBy=Issue165|SpaceAfter=No
-3	quando	quando	ADV	<rel>|ADV|@ADVL>	_	4	advmod	_	_
+3	quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	4	mark	_	_
 4	parecia	parecer	VERB	<mv>|V|IMPF|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	advcl	_	_
 5	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
 6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
@@ -127,14 +125,13 @@
 20	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Acabadinho de entrar a substituir Riva,o brasileiro Gilmar surgiu isolado na área italiana e deu o melhor seguimento a um centro de Quim Berto.
-# source = CETEMPúblico n=238 sec=des sem=96b
 # sent_id = CP238-5
+# source = CETEMPúblico n=238 sec=des sem=96b
 # id = 1267
-# d2d = cc(surgiu,e) -> cc(deu,e)  #106
-1	Acabadinho	acabar	AUX	<aux>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	3	aux	_	_
-2	de	de	ADP	PRP|@PRT-AUX<	_	3	case	_	_
-3	entrar	entrar	VERB	<mv>|V|INF|3S|@ICL-AUX<	Number=Sing|Person=3|VerbForm=Inf	11	dep	_	_
-4	a	a	ADP	PRP|@<ADVL	_	5	mark	_	_
+1	Acabadinho	acabar	VERB	<aux>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	11	advcl	_	MWE=Acabadinho_de|MWEPOS=AUX
+2	de	de	SCONJ	PRP|@PRT-AUX<	_	3	mark	_	_
+3	entrar	entrar	VERB	<mv>|V|INF|3S|@ICL-AUX<	Number=Sing|Person=3|VerbForm=Inf	1	xcomp	_	_
+4	a	a	SCONJ	PRP|@<ADVL	_	5	mark	_	_
 5	substituir	substituir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	_
 6	Riva	Riva	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -142,7 +139,7 @@
 9	brasileiro	brasileiro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 10	Gilmar	Gilmar	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	9	appos	_	_
 11	surgiu	surgir	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-12	isolado	isolar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	11	dep	_	_
+12	isolado	isolar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	9	acl	_	_
 13-14	na	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@<ADVL	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	15	det	_	_
@@ -162,8 +159,8 @@
 28	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Os adeptos italianos gelaram,enquanto a pequena comitiva vitoriana festejava ruidosamente na bancada central.
-# source = CETEMPúblico n=238 sec=des sem=96b
 # sent_id = CP238-6
+# source = CETEMPúblico n=238 sec=des sem=96b
 # id = 1268
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	adeptos	adepto	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_

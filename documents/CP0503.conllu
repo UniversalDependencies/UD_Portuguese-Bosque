@@ -1,10 +1,7 @@
 # text = «L'Incoronazione di Poppea» foi a última a ser reeditada e este regresso às discotecas no suporte já irreversível conquistador do mercado terá de ser saudado com uma efusividade guardada para, e só para, as ocasiões muito, muito, muito especiais.
-# source = CETEMPúblico n=503 sec=clt sem=93b
 # sent_id = CP503-1
+# source = CETEMPúblico n=503 sec=clt sem=93b
 # id = 2640
-# d2d = punct(muito,,) -> punct(muito,,)  #106
-# d2d = punct(muito,,) -> punct(muito,,)  #106
-# d2d = cc(última,e) -> cc(saudado,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	L'Incoronazione	L'Incoronazione	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	_	ChangedBy=Issue119|MWE=L'Incoronazione_di_Poppea|MWEPOS=PROPN
 3	di	di	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -13,7 +10,7 @@
 6	foi	ser	AUX	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	ChangedBy=Issue167
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	última	último	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing|NumType=Ord	0	root	_	ChangedBy=Issue172
-9	a	a	ADP	PRP|@A<	_	11	mark	_	_
+9	a	a	SCONJ	PRP|@A<	_	11	mark	_	_
 10	ser	ser	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	11	aux	_	_
 11	reeditada	reeditar	VERB	<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	8	advcl	_	_
 12	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	30	cc	_	d2d:#106
@@ -34,10 +31,10 @@
 24	de	de	ADP	<sam->|PRP|@A<	_	26	case	_	_
 25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	mercado	mercado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	_
-27	terá	ter	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	30	aux	_	_
-28	de	de	ADP	PRP|@PRT-AUX<	_	30	case	_	_
+27	terá	ter	VERB	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	conj	_	MWE=terá_de|MWEPOS=AUX
+28	de	de	SCONJ	PRP|@PRT-AUX<	_	30	mark	_	_
 29	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	30	aux:pass	_	_
-30	saudado	saudar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	conj	_	_
+30	saudado	saudar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	27	xcomp	_	_
 31	com	com	ADP	PRP|@<ADVL	_	33	case	_	_
 32	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	efusividade	efusividade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	obl	_	ChangedBy=Issue137
@@ -59,8 +56,8 @@
 49	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = ... e a coroação de Harnoncourt
-# source = CETEMPúblico n=503 sec=clt sem=93b
 # sent_id = CP503-2
+# source = CETEMPúblico n=503 sec=clt sem=93b
 # id = 2641
 1	...	...	PUNCT	PU|@PU	_	4	punct	_	_
 2	e	e	CCONJ	KC|@CO	_	4	cc	_	_
@@ -70,14 +67,14 @@
 6	Harnoncourt	Harnoncourt	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	4	nmod	_	_
 
 # text = Nunca mais se poderá falar, no futuro, da «Poppea de Harnoncourt».
-# source = CETEMPúblico n=503 sec=clt sem=93b
 # sent_id = CP503-3
+# source = CETEMPúblico n=503 sec=clt sem=93b
 # id = 2642
 1	Nunca	nunca	ADV	ADV|@ADVL>	_	5	advmod	_	_
 2	mais	mais	ADV	<atemp>|ADV|@A<	_	1	advmod	_	_
 3	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	5	nsubj	_	_
-4	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	aux	_	_
-5	falar	falar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+4	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+5	falar	falar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7-8	no	_	_	_	_	_	_	_	_
 7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
@@ -95,15 +92,9 @@
 18	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Porque, depois deste registo de 1972, ficaria imortalizada em som e imagem -- na realização visual de Jean-Pierre Ponnelle -- uma aproximação dos finais dos anos 70 deliberadamente expressionista e, agora, em 1993, em Salzburgo, Harnoncourt surpreende (e abre uma inflamada polémica) ao explorar até aos limites do sustentável uma visão quase grotesca, comportando a contaminação por uma componente burlesca surpreendentemente suportada pelo cinismo da narrativa, com inesperada opulência de meios instrumentais e com um estranho elenco reunindo intérpretes familiarizados com escolas de canto bem distintas e distantes das requeridas por uma especialização na música seiscentista.
-# source = CETEMPúblico n=503 sec=clt sem=93b
 # sent_id = CP503-4
+# source = CETEMPúblico n=503 sec=clt sem=93b
 # id = 2643
-# d2d = cc(opulência,e) -> cc(elenco,e)  #106
-# d2d = cc(som,e) -> cc(imagem,e)  #106
-# d2d = punct(ficaria,,) -> punct(surpreende,,)  #106
-# d2d = cc(surpreende,e) -> cc(abre,e)  #106
-# d2d = cc(ficaria,e) -> cc(surpreende,e)  #106
-# d2d = cc(distintas,e) -> cc(distantes,e)  #106
 1	Porque	porque	SCONJ	KS|@SUB	_	10	mark	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 3	depois	depois	ADV	ADV|@ADVL>	_	10	advmod	_	_
@@ -115,7 +106,7 @@
 8	1972	1972	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	6	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 10	ficaria	ficar	VERB	<first-cjt>|<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
-11	imortalizada	imortalizado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	10	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+11	imortalizada	imortalizado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	10	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue91
 12	em	em	ADP	PRP|@<ADVL	_	13	case	_	_
 13	som	som	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	_
 14	e	e	CCONJ	<co-prparg>|KC|@CO	_	15	cc	_	d2d:#106
@@ -144,7 +135,7 @@
 34	deliberadamente	deliberadamente	ADV	ADV|@>A	_	35	advmod	_	_
 35	expressionista	expressionista	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	26	amod	_	_
 36	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	47	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-37	,	,	PUNCT	PU|@PU	_	47	punct	_	d2d:#106
+37	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
 38	agora	agora	ADV	<kc>|ADV|@ADVL>	_	47	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 39	,	,	PUNCT	PU|@PU	_	38	punct	_	_
 40	em	em	ADP	PRP|@ADVL>	_	41	case	_	_
@@ -163,7 +154,7 @@
 53	polémica	polémica	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	50	obj	_	ChangedBy=Issue165|SpaceAfter=No
 54	)	)	PUNCT	PU|@PU	_	50	punct	_	_
 55-56	ao	_	_	_	_	_	_	_	_
-55	a	a	ADP	<sam->|PRP|@<ADVL	_	57	mark	_	_
+55	a	a	SCONJ	<sam->|PRP|@<ADVL	_	57	mark	_	_
 56	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	_	_
 57	explorar	explorar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	47	advcl	_	_
 58	até	até	ADP	PRP|@<ADVL	_	61	case	_	_
@@ -221,7 +212,7 @@
 106	e	e	CCONJ	<co-postnom>|KC|@CO	_	107	cc	_	d2d:#106
 107	distantes	distante	ADJ	<cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	105	conj	_	_
 108-109	das	_	_	_	_	_	_	_	_
-108	de	de	ADP	<sam->|PRP|@A<	_	110	case	_	_
+108	de	de	SCONJ	<sam->|PRP|@A<	_	110	mark	_	_
 109	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	110	det	_	_
 110	requeridas	requerer	VERB	<mv>|<n>|V|PCP|F|P|@ICL-P<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	107	advcl	_	_
 111	por	por	ADP	PRP|@PASS	_	113	case	_	_

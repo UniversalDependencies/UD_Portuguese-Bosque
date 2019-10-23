@@ -1,6 +1,6 @@
 # text = A privatização do BFE processar-se-á por concurso público de 65 por cento do capital do banco.
-# source = CETEMPúblico n=670 sec=eco sem=96a
 # sent_id = CP670-1
+# source = CETEMPúblico n=670 sec=eco sem=96a
 # id = 3472
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	privatização	privatização	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
@@ -16,7 +16,7 @@
 10	público	público	ADJ	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	9	amod	_	_
 11	de	de	ADP	PRP|@N<	_	13	case	_	_
 12	65	65	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	nummod	_	ChangedBy=Issue168
-13	por	por	ADP	_	Gender=Masc|Number=Sing	9	nmod	_	MWE=por_cento|MWEPOS=NOUN
+13	por	por	ADP	_	_	9	nmod	_	MWE=por_cento|MWEPOS=NOUN
 14	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	13	compound	_	_
 15-16	do	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
@@ -29,8 +29,8 @@
 21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O preço mínimo por acção é de 1980 escudos, valor que se encontra próximo da oferta pública de aquisição final feita pelo Banco Português de Investimento, em Fevereiro, o que atribui ao BF um valor global de 158,5 milhões de contos.
-# source = CETEMPúblico n=670 sec=eco sem=96a
 # sent_id = CP670-2
+# source = CETEMPúblico n=670 sec=eco sem=96a
 # id = 3473
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	preço	preço	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
@@ -78,15 +78,15 @@
 41	valor	valor	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	36	obj	_	_
 42	global	global	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	41	amod	_	_
 43	de	de	ADP	PRP|@N<	_	44	case	_	_
-44	158,5	158,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	47	nummod	_	ChangedBy=Issue168|MWE=158,5_milhões
+44	158,5	158,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	41	nmod	_	ChangedBy=Issue168|MWE=158,5_milhões
 45	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	44	flat	_	_
 46	de	de	ADP	PRP|@N<ARG	_	47	case	_	_
-47	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	41	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+47	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	44	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 48	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = A operação de venda, que incide sobre 52 milhões de acções, permitirá ao Estado um encaixe mínimo de 103 milhões de contos, destinado ao Fundo de Regularização da Dívida Pública.
-# source = CETEMPúblico n=670 sec=eco sem=96a
 # sent_id = CP670-3
+# source = CETEMPúblico n=670 sec=eco sem=96a
 # id = 3474
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	operação	operação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	_
@@ -96,10 +96,10 @@
 6	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	7	nsubj	_	_
 7	incide	incidir	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
 8	sobre	sobre	ADP	PRP|@<PIV	_	9	case	_	_
-9	52	52	NUM	<card>|NUM|M|P|@>N	NumType=Card	12	nummod	_	ChangedBy=Issue168|MWE=52_milhões
+9	52	52	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	obj	_	ChangedBy=Issue168|MWE=52_milhões
 10	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	9	flat	_	_
 11	de	de	ADP	PRP|@N<ARG	_	12	case	_	_
-12	acções	acção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	7	obj	_	ChangedBy=Issue165|SpaceAfter=No
+12	acções	acção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 14	permitirá	permitir	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 15-16	ao	_	_	_	_	_	_	_	_
@@ -110,10 +110,10 @@
 19	encaixe	encaixe	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
 20	mínimo	mínimo	ADJ	<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
-22	103	103	NUM	<card>|NUM|M|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168|MWE=103_milhões
+22	103	103	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nmod	_	ChangedBy=Issue168|MWE=103_milhões
 23	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	22	flat	_	_
 24	de	de	ADP	PRP|@N<ARG	_	25	case	_	_
-25	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+25	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 27	destinado	destinar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	19	acl	_	_
 28-29	ao	_	_	_	_	_	_	_	_
@@ -125,16 +125,14 @@
 33-34	da	_	_	_	_	_	_	_	_
 33	de	de	ADP	<sam->|PRP|@N<	_	35	case	_	_
 34	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-35	Dívida	Dívida	NOUN	_	Number=Sing	32	nmod	_	MWE=dívida_pública|MWEPOS=NOUN
-36	Pública	Pública	ADJ	_	Number=Sing	35	amod	_	ChangedBy=Issue165|SpaceAfter=No
+35	Dívida	Dívida	PROPN	_	Number=Sing	32	nmod	_	MWE=dívida_pública|MWEPOS=NOUN
+36	Pública	Pública	PROPN	_	Number=Sing	35	amod	_	ChangedBy=Issue165|SpaceAfter=No
 37	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = O concurso público para a alienação do BFE é aberto «a investidores, individualmente ou em grupo, que observem os requisitos de dimensão de activos, fundos próprios e capitais, estipulados no caderno de encargos», a aprovar por Resolução do Governo.
-# source = CETEMPúblico n=670 sec=eco sem=96a
 # sent_id = CP670-4
+# source = CETEMPúblico n=670 sec=eco sem=96a
 # id = 3475
-# d2d = cc(requisitos,e) -> cc(capitais,e)  #106
-# d2d = punct(requisitos,,) -> punct(fundos,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	concurso	concurso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj:pass	_	_
 3	público	público	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -179,7 +177,7 @@
 40	encargos	encargo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	38	nmod	_	SpaceAfter=No
 41	»	»	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
 42	,	,	PUNCT	PU|@PU	_	44	punct	_	_
-43	a	a	ADP	PRP|@N<PRED	_	44	mark	_	_
+43	a	a	SCONJ	PRP|@N<PRED	_	44	mark	_	_
 44	aprovar	aprovar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf|Voice=Pass	14	acl	_	_
 45	por	por	ADP	PRP|@PASS	_	46	case	_	_
 46	Resolução	resolução	NOUN	<prop>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	44	obl:agent	_	_
@@ -190,11 +188,9 @@
 50	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Este concurso terá três fases, «sendo o júri composto pelo Inspector-geral das Finanças, o director-geral do Tesouro e o presidente da secção especializada para as reprivatizações.»
-# source = CETEMPúblico n=670 sec=eco sem=96a
 # sent_id = CP670-5
+# source = CETEMPúblico n=670 sec=eco sem=96a
 # id = 3476
-# d2d = punct(Inspector-geral,,) -> punct(director-geral,,)  #106
-# d2d = cc(Inspector-geral,e) -> cc(presidente,e)  #106
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	concurso	concurso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	terá	ter	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -213,14 +209,14 @@
 15-16	das	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
-17	Finanças	finanças	NOUN	N|@P<	_	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+17	Finanças	finanças	NOUN	N|@P<	Gender=Fem|Number=Plur	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	director-geral	director-geral	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	conj	_	MWE=director-geral_do_Tesouro
 21-22	do	_	_	_	_	_	_	_	_
 21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
 22	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
-23	Tesouro	tesouro	NOUN	N|@P<	_	20	nmod	_	_
+23	Tesouro	tesouro	NOUN	N|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
 24	e	e	CCONJ	<co-prparg>|KC|@CO	_	26	cc	_	d2d:#106
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	presidente	presidente	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	conj	_	_

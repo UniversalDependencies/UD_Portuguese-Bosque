@@ -1,6 +1,6 @@
 # text = BANCOS VÃO PAGAR 73% MAIS (Da Sucursal de Brasília)
-# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # sent_id = CF379-1
+# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # id = 1573
 1	BANCOS	banco	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 2	VÃO	ir	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
@@ -18,10 +18,9 @@
 13	)	)	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = A carga tributária das instituições financeiras poderá aumentar em 73% caso o Congresso Nacional aprove o aumento da contribuição social sobre o lucro dos bancos e a inclusão da obrigatoriedade de recolhimento do PIS (Programa de Integração Social).
-# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # sent_id = CF379-2
+# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # id = 1574
-# d2d = cc(aumento,e) -> cc(inclusão,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	carga	carga	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3	tributária	tributário	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -30,8 +29,8 @@
 5	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
 6	instituições	instituição	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	_
 7	financeiras	financeiro	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	6	amod	_	_
-8	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	aux	_	_
-9	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+8	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+9	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
 10	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
 11	73	73	NUM	<card>|NUM|M|P|@>N	NumType=Card	12	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 12	%	%	SYM	<np-def>|N|M|P|@P<	_	9	obl	_	_
@@ -76,11 +75,11 @@
 47	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Mesmo assim os bancos continuam entre os setores da economia que recolhem menos tributos.
-# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # sent_id = CF379-3
+# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # id = 1575
-1	Mesmo	mesmo	ADV	ADV|@ADVL>	_	5	advmod	_	MWE=Mesmo_assim
-2	assim	assim	ADV	ADV|@A<	_	1	advmod	_	_
+1	Mesmo	mesmo	ADV	ADV|@ADVL>	_	5	advmod	_	MWE=Mesmo_assim|MWEPOS=ADV
+2	assim	assim	ADV	ADV|@A<	_	1	fixed	_	_
 3	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 4	bancos	banco	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
 5	continuam	continuar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -92,14 +91,14 @@
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	economia	economia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 12	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	13	nsubj	_	_
-13	recolhem	recolher	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	_
+13	recolhem	recolher	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_
 14	menos	pouco	DET	<quant>|<KOMP>|<COMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	15	det	_	_
 15	tributos	tributo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	13	obj	_	ChangedBy=Issue165|SpaceAfter=No
 16	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O ganho de arrecadação com o aumento da carga de impostos dos bancos vai ajudar a fechar em US$ 16,1 bilhões o FSE (Fundo Social de Emergência).
-# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # sent_id = CF379-4
+# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # id = 1576
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ganho	ganho	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
@@ -120,7 +119,7 @@
 15	bancos	banco	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	_
 16	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
 17	ajudar	ajudar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
-18	a	a	ADP	PRP|@<ADVL	_	19	mark	_	_
+18	a	a	SCONJ	PRP|@<ADVL	_	19	mark	_	_
 19	fechar	fechar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	advcl	_	_
 20	em	em	ADP	PRP|@<ADVL	_	21	case	_	_
 21	US$	US$	SYM	_	_	19	obl	_	_
@@ -137,8 +136,8 @@
 32	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = O governo teve que elevar de 15% para 20% o percentual dos recursos dos tributos que vão fazer parte do FSE para compensar a perda de recursos do Fundo de Participação dos Estados e municípios.
-# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # sent_id = CF379-5
+# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # id = 1577
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -169,7 +168,7 @@
 24	de	de	ADP	PRP|@N<	_	26	case	_	_
 25	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	FSE	FSE	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
-27	para	para	ADP	PRP|@<ADVL	_	28	mark	_	_
+27	para	para	SCONJ	PRP|@<ADVL	_	28	mark	_	_
 28	compensar	compensar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	_
 29	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	perda	perda	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	obj	_	_
@@ -190,13 +189,13 @@
 43	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Essa decisão deverá dar mais de US$ 12 bilhões ao FSE, só com tributos que pertencem à União.
-# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # sent_id = CF379-6
+# source = CETENFolha n=379 cad=Brasil sec=pol sem=94b
 # id = 1578
 1	Essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	decisão	decisão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
-3	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
-4	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+4	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 5	mais	mais	ADV	ADV|@>N	_	7	advmod	_	MWE=mais_de
 6	de	de	ADP	<prp>|PRP|@A<	_	5	fixed	_	_
 7	US$	US$	SYM	_	_	4	obj	_	_

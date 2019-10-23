@@ -1,9 +1,7 @@
 # text = No caso de Alvarez, a intimidade com os EUA levou-o a conhecer a mentalidade norte-americana, seus gostos, seus costumes.
-# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # sent_id = CF641-1
+# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # id = 2681
-# d2d = punct(mentalidade,,) -> punct(costumes,,)  #106
-# d2d = punct(mentalidade,,) -> punct(gostos,,)  #106
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -19,7 +17,7 @@
 12-13	levou-o	_	_	_	_	_	_	_	_
 12	levou	levar	VERB	<mv>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 13	o	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	12	obj	_	_
-14	a	a	ADP	PRP|@<PIV	_	15	mark	_	_
+14	a	a	SCONJ	PRP|@<PIV	_	15	mark	_	_
 15	conhecer	conhecer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	xcomp	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	mentalidade	mentalidade	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
@@ -33,8 +31,8 @@
 25	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = De certa forma, afiou-o para a luta em que se engajaria a partir dos anos 60.
-# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # sent_id = CF641-2
+# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # id = 2682
 1	De	de	ADP	PRP|@ADVL>	_	3	case	_	_
 2	certa	certo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	3	det	_	_
@@ -51,7 +49,7 @@
 12	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	expl	_	ChangedBy=Issue135
 13	engajaria	engajar	VERB	<mv>|<se-passive>|V|COND|3S|@FS-P<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	acl:relcl	_	_
 14	a	a	ADP	<sam->|PRP|@<ADVL	_	15	case	_	MWE=a_partir_de
-15	partir	partir	NOUN	N|@P<	_	13	obl	_	_
+15	partir	partir	VERB	N|@P<	VerbForm=Inf	13	obl	_	_
 16-17	dos	_	_	_	_	_	_	_	_
 16	de	de	ADP	PRP|@N<	_	18	case	_	_
 17	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
@@ -60,8 +58,8 @@
 20	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = É desse combate, da maneira como ele chegou a criar as formas que geraram uma obra original, que «O Olho da Revolução» tira seu interesse.
-# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # sent_id = CF641-3
+# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # id = 2683
 1	É	ser	ADV	<foc>|ADV|@ADVL>	_	30	advmod	_	_
 2-3	desse	_	_	_	_	_	_	_	_
@@ -75,9 +73,9 @@
 8	maneira	maneira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	30	obl	_	ChangedBy=Issue137
 9	como	como	ADV	<rel>|ADV|@ADVL>	_	13	advmod	_	_
 10	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
-11	chegou	chegar	AUX	<aux>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	aux	_	_
-12	a	a	ADP	PRP|@PRT-AUX<	_	13	case	_	_
-13	criar	criar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	acl:relcl	_	_
+11	chegou	chegar	VERB	<aux>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl:relcl	_	MWE=chegou_a|MWEPOS=AUX
+12	a	a	SCONJ	PRP|@PRT-AUX<	_	13	mark	_	_
+13	criar	criar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
 14	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
 15	formas	forma	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	13	obj	_	_
 16	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	17	nsubj	_	_
@@ -86,9 +84,9 @@
 19	obra	obra	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
 20	original	original	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	19	amod	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-22	que	que	ADV	<foc>|ADV|@ADVL>	_	30	mark	_	_
+22	que	que	SCONJ	<foc>|ADV|@ADVL>	_	30	mark	_	_
 23	«	«	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
-24	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	30	nsubj	_	ChangedBy=Issue119|MWE=O_Olho|MWEPOS=PROPN
+24	O	O	PROPN	_	Gender=Masc|Number=Sing|PronType=Art	30	nsubj	_	ChangedBy=Issue119|MWE=O_Olho|MWEPOS=PROPN
 25	Olho	Olho	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
 26-27	da	_	_	_	_	_	_	_	_
 26	de	de	ADP	<sam->|PRP|@N<	_	28	case	_	_
@@ -101,8 +99,8 @@
 33	.	.	PUNCT	PU|@PU	_	30	punct	_	_
 
 # text = O livro chega num momento em que a idéia de cinema engajado está meio por baixo.
-# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # sent_id = CF641-4
+# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # id = 2684
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	livro	livro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -117,7 +115,7 @@
 10	idéia	idéia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	cinema	cinema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
-13	engajado	engajado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	12	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+13	engajado	engajado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	12	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 14	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_
 15	meio	meio	ADJ	ADJ|M|S|@>A	Gender=Masc|Number=Sing	17	amod	_	_
 16	por	por	ADP	PRP|@<ADVL	_	17	case	_	MWE=por_baixo
@@ -125,8 +123,8 @@
 18	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Cuba também está com a imagem um tanto abalada (crise, êxodo por mar etc).
-# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # sent_id = CF641-5
+# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # id = 2685
 1	Cuba	Cuba	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 2	também	também	ADV	ADV|@ADVL>	_	6	advmod	_	_
@@ -148,15 +146,15 @@
 18	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Mas justamente por isso «O Olho da Revolução» chega num momento apropriado.
-# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # sent_id = CF641-6
+# source = CETENFolha n=641 cad=Mais! sec=nd sem=94a
 # id = 2686
 1	Mas	mas	CCONJ	KC|@CO	_	12	cc	_	_
 2	justamente	justamente	ADV	ADV|@ADVL>	_	12	advmod	_	_
 3	por	por	ADP	PRP|@A<	_	4	case	_	_
 4	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	2	obl	_	_
 5	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
-6	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	12	nsubj	_	ChangedBy=Issue119|MWE=O_Olho|MWEPOS=PROPN
+6	O	O	PROPN	_	Gender=Masc|Number=Sing|PronType=Art	12	nsubj	_	ChangedBy=Issue119|MWE=O_Olho|MWEPOS=PROPN
 7	Olho	Olho	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_

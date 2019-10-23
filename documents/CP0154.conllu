@@ -1,23 +1,23 @@
 # text = Crime em Armamar
-# source = CETEMPúblico n=154 sec=soc sem=91a
 # sent_id = CP154-1
+# source = CETEMPúblico n=154 sec=soc sem=91a
 # id = 803
 1	Crime	crime	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	em	em	ADP	PRP|@N<	_	3	case	_	_
 3	Armamar	Armamar	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = Manuel Marta continua fugido
-# source = CETEMPúblico n=154 sec=soc sem=91a
 # sent_id = CP154-2
+# source = CETEMPúblico n=154 sec=soc sem=91a
 # id = 804
 1	Manuel	Manuel	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Manuel_Marta|MWEPOS=PROPN
 2	Marta	Marta	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	continua	continuar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	fugido	fugir	VERB	<mv>|V|PCP|M|S|@ICL-<sC	Gender=Masc|Number=Sing|VerbForm=Part	3	dep	_	_
+4	fugido	fugir	VERB	<mv>|V|PCP|M|S|@ICL-<sC	Gender=Masc|Number=Sing|VerbForm=Part	3	xcomp	_	_
 
 # text = O médico Manuel Almeida Marta, principal suspeito do crime de Armamar, continua a ser procurado pelas autoridades.
-# source = CETEMPúblico n=154 sec=soc sem=91a
 # sent_id = CP154-4
+# source = CETEMPúblico n=154 sec=soc sem=91a
 # id = 805
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	médico	médico	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj:pass	_	_
@@ -34,10 +34,10 @@
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	Armamar	Armamar	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-15	continua	continuar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
-16	a	a	ADP	PRP|@PRT-AUX<	_	18	case	_	_
+15	continua	continuar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=continua_a|MWEPOS=AUX
+16	a	a	SCONJ	PRP|@PRT-AUX<	_	18	mark	_	_
 17	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	18	aux:pass	_	_
-18	procurado	procurar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+18	procurado	procurar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	xcomp	_	_
 19-20	pelas	_	_	_	_	_	_	_	_
 19	por	por	ADP	PRP|@PASS	_	21	case	_	_
 20	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	21	det	_	_
@@ -45,8 +45,8 @@
 22	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = As buscas duram há 72 horas, sem que tenha sido descoberto o paradeiro do médico que por pouco escapou a um linchamento popular.
-# source = CETEMPúblico n=154 sec=soc sem=91a
 # sent_id = CP154-5
+# source = CETEMPúblico n=154 sec=soc sem=91a
 # id = 806
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	buscas	busca	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
@@ -55,8 +55,8 @@
 5	72	72	NUM	<card>|NUM|F|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
 6	horas	hora	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-8	sem	sem	ADP	PRP|@<ADVL	_	12	mark	_	_
-9	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
+8	sem	sem	ADP	PRP|@<ADVL	_	12	mark	_	MWE=sem_que|MWEPOS=SCONJ
+9	que	que	SCONJ	KS|@SUB	_	8	fixed	_	_
 10	tenha	ter	AUX	<aux>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
 11	sido	ser	AUX	<aux>|<pc-subj>|V|PCP|@ICL-AUX<	VerbForm=Part	12	aux:pass	_	_
 12	descoberto	descobrir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	advcl	_	_

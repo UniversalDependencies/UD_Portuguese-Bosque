@@ -1,13 +1,13 @@
 # text = O ex-deputado Ibsen Pinheiro (PMDB-RS) também não quis falar sobre a absolvição do ex-presidente.
-# source = CETENFolha n=489 cad=Brasil sec=pol sem=94a
 # sent_id = CF489-1
+# source = CETENFolha n=489 cad=Brasil sec=pol sem=94a
 # id = 2060
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ex-deputado	ex-deputado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 3	Ibsen	Ibsen	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Ibsen_Pinheiro|MWEPOS=PROPN
 4	Pinheiro	Pinheiro	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 5	(	(	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
-6	PMDB-RS	PMDB-RS	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+6	PMDB-RS	PMDB-RS	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	2	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 7	)	)	PUNCT	PU|@PU	_	6	punct	_	_
 8	também	também	ADV	ADV|@ADVL>	_	10	advmod	_	_
 9	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
@@ -23,8 +23,8 @@
 18	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Ex-presidente da Câmara, Ibsen conduziu a votação autorizando o impeachment de Collor, em 29 de setembro de 1992.
-# source = CETENFolha n=489 cad=Brasil sec=pol sem=94a
 # sent_id = CF489-2
+# source = CETENFolha n=489 cad=Brasil sec=pol sem=94a
 # id = 2061
 1	Ex-presidente	ex-presidente	NOUN	<np-idf>|N|M|S|@PRED>	Gender=Masc|Number=Sing	7	obl	_	_
 2-3	da	_	_	_	_	_	_	_	_
@@ -51,12 +51,9 @@
 22	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O prefeito de São Paulo, Paulo Maluf (PPR), e o candidato derrotado do PMDB à Presidência, Orestes Quércia, também não quiseram comentar o resultado.
-# source = CETENFolha n=489 cad=Brasil sec=pol sem=94a
 # sent_id = CF489-3
+# source = CETENFolha n=489 cad=Brasil sec=pol sem=94a
 # id = 2062
-# d2d = punct(prefeito,,) -> punct(candidato,,)  #106
-# d2d = punct(prefeito,,) -> punct(candidato,,)  #106
-# d2d = cc(prefeito,e) -> cc(candidato,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	prefeito	prefeito	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	29	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -66,7 +63,7 @@
 7	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Paulo_Maluf|MWEPOS=PROPN
 8	Maluf	Maluf	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 9	(	(	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
-10	PPR	PPR	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+10	PPR	PPR	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 11	)	)	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 13	e	e	CCONJ	<co-subj>|KC|@CO	_	15	cc	_	d2d:#106

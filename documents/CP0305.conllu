@@ -1,6 +1,6 @@
 # text = Desde Maio deste ano que Joaquim Correia, escultor natural do concelho da Marinha Grande- que doou os seus trabalhos para integrar o núcleo do museu no Convento de Santo Agostinho- chegou mesmo a ameaçar desvincular-se do compromisso com a autarquia, caso o processo não fosse desbloqueado até ao final do ano.
-# source = CETEMPúblico n=305 sec=soc sem=95b
 # sent_id = CP305-1
+# source = CETEMPúblico n=305 sec=soc sem=95b
 # id = 1614
 1	Desde	desde	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Maio	maio	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	42	obl	_	ChangedBy=Issue137
@@ -8,7 +8,7 @@
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
 5	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
-6	que	que	ADV	<foc>|ADV|@ADVL>	_	42	mark	_	_
+6	que	que	SCONJ	<foc>|ADV|@ADVL>	_	42	mark	_	_
 7	Joaquim	Joaquim	PROPN	_	Gender=Masc|Number=Sing	42	nsubj	_	ChangedBy=Issue119|MWE=Joaquim_Correia|MWEPOS=PROPN
 8	Correia	Correia	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -29,7 +29,7 @@
 22	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	_	_
 23	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	24	det	_	_
 24	trabalhos	trabalho	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	21	obj	_	_
-25	para	para	ADP	PRP|@<ADVL	_	26	mark	_	_
+25	para	para	SCONJ	PRP|@<ADVL	_	26	mark	_	_
 26	integrar	integrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	advcl	_	_
 27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	núcleo	núcleo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	26	obj	_	_
@@ -45,10 +45,10 @@
 36	Santo	Santo	PROPN	_	Number=Sing	34	nmod	_	ChangedBy=Issue119|MWE=Santo_Agostinho|MWEPOS=PROPN
 37	Agostinho	Agostinho	PROPN	_	Number=Sing	36	flat:name	_	ChangedBy=Issue119|SpaceAfter=No
 38	-	-	PUNCT	_	_	21	punct	_	_
-39	chegou	chegar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	42	aux	_	_
+39	chegou	chegar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=chegou_a|MWEPOS=AUX
 40	mesmo	mesmo	ADV	<quant>|ADV|@ADVL>	_	42	advmod	_	_
-41	a	a	ADP	PRP|@PRT-AUX<	_	42	case	_	_
-42	ameaçar	ameaçar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+41	a	a	SCONJ	PRP|@PRT-AUX<	_	42	mark	_	_
+42	ameaçar	ameaçar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	39	xcomp	_	_
 43-44	desvincular-se	_	_	_	_	_	_	_	_
 43	desvincular	desvincular	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-<ACC	VerbForm=Inf	42	xcomp	_	_
 44	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	43	expl	_	ChangedBy=Issue135
@@ -78,8 +78,8 @@
 65	.	.	PUNCT	PU|@PU	_	42	punct	_	_
 
 # text = Em declarações ao PÚBLICO, Joaquim Correia afirma manter a sua posição, apesar de considerar positiva a iniciativa agora tomada pelo IPPAR, que lhe terá sido comunicada pela própria Câmara de Leiria na passada sexta-feira.
-# source = CETEMPúblico n=305 sec=soc sem=95b
 # sent_id = CP305-2
+# source = CETEMPúblico n=305 sec=soc sem=95b
 # id = 1615
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	declarações	declaração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	obl	_	ChangedBy=Issue137
@@ -96,9 +96,9 @@
 12	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	13	det	_	_
 13	posição	posição	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-15	apesar	apesar	ADV	ADV|@<ADVL	_	10	advmod	_	MWE=apesar_de
-16	de	de	ADP	PRP|@A<	_	17	mark	_	_
-17	considerar	considerar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	advcl	_	_
+15	apesar	apesar	ADV	ADV|@<ADVL	_	17	mark	_	MWE=apesar_de|MWEPOS=SCONJ
+16	de	de	ADP	PRP|@A<	_	15	fixed	_	_
+17	considerar	considerar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	advcl	_	_
 18	positiva	positivo	ADJ	ADJ|F|S|@<OC	Gender=Fem|Number=Sing	17	xcomp	_	_
 19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	iniciativa	iniciativa	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
@@ -129,8 +129,8 @@
 42	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Joaquim Correia justificou a sua posição cautelosa sobre o assunto, adiantando que o processo de reconversão do Convento de Santo Agostinho em museu se arrasta há oito anos.
-# source = CETEMPúblico n=305 sec=soc sem=95b
 # sent_id = CP305-3
+# source = CETEMPúblico n=305 sec=soc sem=95b
 # id = 1616
 1	Joaquim	Joaquim	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Joaquim_Correia|MWEPOS=PROPN
 2	Correia	Correia	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119

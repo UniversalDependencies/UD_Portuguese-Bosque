@@ -1,14 +1,13 @@
 # text = Uma proposta plausível é a de se fixar um prazo determinado, três ou quatro meses, para que a sociedade se adapte voluntariamente à URV, estabelecendo regras privadas de conversão.
-# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # sent_id = CF219-1
+# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # id = 942
-# d2d = cc(três,ou) -> cc(quatro,ou)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	proposta	proposta	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	plausível	plausível	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
 4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
 5	a	o	PRON	<dem>|DET|F|S|@<SC	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	_
-6	de	de	ADP	PRP|@N<	_	8	mark	_	_
+6	de	de	SCONJ	PRP|@N<	_	8	mark	_	_
 7	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	expl	_	ChangedBy=Issue135
 8	fixar	fixar	VERB	<mv>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	5	acl	_	_
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
@@ -20,7 +19,7 @@
 15	quatro	quatro	NUM	<cjt>|<card>|NUM|M|P|@>N	NumType=Card	13	conj	_	ChangedBy=Issue168
 16	meses	mês	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	10	appos	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-18	para	para	ADP	PRP|@N<ARG	_	23	mark	_	_
+18	para	para	SCONJ	PRP|@N<ARG	_	23	mark	_	_
 19	que	que	SCONJ	KS|@SUB	_	23	mark	_	_
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	sociedade	sociedade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	23	nsubj	_	_
@@ -40,8 +39,8 @@
 34	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Findo esse prazo, a conversão para URV seria obrigatória, conforme regras previamente fixadas pelo governo.
-# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # sent_id = CF219-2
+# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # id = 943
 1	Findo	findar	VERB	<mv>|V|PCP|M|S|@ICL-ADVL>	Gender=Masc|Number=Sing|VerbForm=Part	10	advcl	_	_
 2	esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
@@ -54,7 +53,7 @@
 9	seria	ser	AUX	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	10	cop	_	ChangedBy=Issue167
 10	obrigatória	obrigatório	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-12	conforme	conforme	ADV	<rel>|ADV|@COM	_	13	mark	_	_
+12	conforme	conforme	SCONJ	<rel>|ADV|@COM	_	13	mark	_	_
 13	regras	regra	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ADVL	Gender=Fem|Number=Plur	10	obl	_	_
 14	previamente	previamente	ADV	ADV|@ADVL>	_	15	advmod	_	_
 15	fixadas	fixar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	13	acl	_	_
@@ -65,27 +64,24 @@
 19	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Não há hipótese do Plano ser lançado antes do Congresso votar, primeiro, a emenda constitucional que cria o Fundo Social de Emergência e, em seguida, o Orçamento federal para 1994 com deficit zero.
-# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # sent_id = CF219-3
+# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # id = 944
-# d2d = cc(emenda,e) -> cc(Orçamento,e)  #106
-# d2d = punct(emenda,,) -> punct(Orçamento,,)  #106
-# d2d = punct(emenda,,) -> punct(Orçamento,,)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	hipótese	hipótese	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 4-5	do	_	_	_	_	_	_	_	_
-4	de	de	ADP	<sam->|PRP|@N<ARG	_	8	mark	_	_
+4	de	de	SCONJ	<sam->|PRP|@N<ARG	_	8	mark	_	_
 5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Plano	plano	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj:pass	_	_
 7	ser	ser	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	8	aux:pass	_	_
 8	lançado	lançar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	acl	_	_
-9	antes	antes	ADV	ADV|@<ADVL	_	8	advmod	_	_
+9	antes	antes	ADV	ADV|@<ADVL	_	13	mark	_	MWE=antes_de|MWEPOS=SCONJ
 10-11	do	_	_	_	_	_	_	_	_
-10	de	de	ADP	<sam->|PRP|@A<ARG	_	13	mark	_	_
+10	de	de	ADP	<sam->|PRP|@A<ARG	_	9	fixed	_	_
 11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	Congresso	congresso	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
-13	votar	votar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	9	advcl	_	ChangedBy=Issue165|SpaceAfter=No
+13	votar	votar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	8	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 15	primeiro	primeiro	ADV	<first-cjt>|ADV|@<ADVL	_	13	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
@@ -115,8 +111,8 @@
 40	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = E com o Carnaval no meio.
-# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # sent_id = CF219-4
+# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # id = 945
 1	E	e	CCONJ	KC|@CO	_	4	cc	_	_
 2	com	com	ADP	<first-cjt>|PRP|@UTT	_	4	case	_	_
@@ -129,8 +125,8 @@
 8	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Isso significa que, tudo indo bem, a criação da URV fica para março.
-# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # sent_id = CF219-5
+# source = CETENFolha n=219 cad=Brasil sec=pol sem=94b
 # id = 946
 1	Isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	significa	significar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_

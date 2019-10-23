@@ -1,25 +1,19 @@
 # text = O texto refere-se, nomeadamente, às especificidades destes reclusos e constata que a comunidade prisional, intermediária da sanção social através da privação da liberdade, passou a acolher uma população difícil que ora se revolta, ora se adapta, ora se refugia na doença física ou psicológica.
-# source = CETEMPúblico n=925 sec=soc sem=92a
 # sent_id = CP925-1
+# source = CETEMPúblico n=925 sec=soc sem=92a
 # id = 4759
-# d2d = punct(refere-,,) -> punct(constata,,)  #106
-# d2d = punct(revolta,,) -> punct(refugia,,)  #106
-# d2d = cc(refere-,e) -> cc(constata,e)  #106
-# d2d = punct(refere-,,) -> punct(constata,,)  #106
-# d2d = punct(revolta,,) -> punct(adapta,,)  #106
-# d2d = cc(física,ou) -> cc(psicológica,ou)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	texto	texto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3-4	refere-se	_	_	_	_	_	_	_	SpaceAfter=No
 3	refere	referir	VERB	<mv>|<first-cjt>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	se	se	PRON	<refl>|PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
-5	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+4	se	se	PRON	<refl>|PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl	_	_
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	nomeadamente	nomeadamente	ADV	ADV|@>P	_	10	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-7	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
+7	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 8-9	às	_	_	_	_	_	_	_	_
 8	a	a	ADP	<sam->|<first-cjt>|PRP|@<PIV	_	10	case	_	_
 9	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
-10	especificidades	especificidade	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	iobj	_	_
+10	especificidades	especificidade	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	obj	_	_
 11-12	destes	_	_	_	_	_	_	_	_
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	estes	este	DET	<-sam>|<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	13	det	_	_
@@ -47,9 +41,9 @@
 31	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 32	liberdade	liberdade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-34	passou	passar	AUX	<aux>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	36	aux	_	_
-35	a	a	ADP	PRP|@PRT-AUX<	_	36	case	_	_
-36	acolher	acolher	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	ccomp	_	_
+34	passou	passar	VERB	<aux>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	ccomp	_	MWE=passou_a|MWEPOS=AUX
+35	a	a	SCONJ	PRP|@PRT-AUX<	_	36	mark	_	_
+36	acolher	acolher	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	34	xcomp	_	_
 37	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
 38	população	população	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	36	obj	_	_
 39	difícil	difícil	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	38	amod	_	_
@@ -75,15 +69,15 @@
 58	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = E que efeitos se podem esperar da aplicação da pena de prisão àqueles que cometeram delitos pela exigência da toxicodependência?
-# source = CETEMPúblico n=925 sec=soc sem=92a
 # sent_id = CP925-2
+# source = CETEMPúblico n=925 sec=soc sem=92a
 # id = 4760
 1	E	e	CCONJ	KC|@CO	_	6	cc	_	_
 2	que	que	DET	<interr>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Int	3	det	_	_
 3	efeitos	efeito	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 4	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	6	expl	_	ChangedBy=Issue135
-5	podem	poder	AUX	<aux>|<se-passive>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-6	esperar	esperar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+5	podem	poder	VERB	<aux>|<se-passive>|V|PR|3P|IND|@FS-QUE	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	esperar	esperar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
 7-8	da	_	_	_	_	_	_	_	_
 7	de	de	ADP	<sam->|PRP|@<PIV	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
@@ -111,10 +105,9 @@
 26	?	?	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = --interroga a divisão de estudos e planeamento da Direcção Geral dos Serviços Prisionais.
-# source = CETEMPúblico n=925 sec=soc sem=92a
 # sent_id = CP925-3
+# source = CETEMPúblico n=925 sec=soc sem=92a
 # id = 4761
-# d2d = cc(estudos,e) -> cc(planeamento,e)  #106
 1	--	--	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	interroga	interrogar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_

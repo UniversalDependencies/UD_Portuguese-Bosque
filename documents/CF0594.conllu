@@ -1,6 +1,6 @@
 # text = Mesa do século 18 vale dois Fuscas em SP
-# source = CETENFolha n=594 cad=Imóveis sec=eco sem=94b
 # sent_id = CF594-1
+# source = CETENFolha n=594 cad=Imóveis sec=eco sem=94b
 # id = 2496
 1	Mesa	mesa	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
@@ -15,8 +15,8 @@
 10	SP	SP	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	ChangedBy=Issue137
 
 # text = Peças de mobiliário feito à mão, usadas em decoração, podem ser encontradas em leilão por até US$ 15 mil
-# source = CETENFolha n=594 cad=Imóveis sec=eco sem=94b
 # sent_id = CF594-2
+# source = CETENFolha n=594 cad=Imóveis sec=eco sem=94b
 # id = 2497
 1	Peças	peça	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	15	nsubj:pass	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -31,9 +31,9 @@
 10	em	em	ADP	PRP|@<ADVL	_	11	case	_	_
 11	decoração	decoração	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-13	podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
+13	podem	poder	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 14	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	15	aux:pass	_	_
-15	encontradas	encontrar	VERB	<mv>|V|PCP2|PAS|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+15	encontradas	encontrar	VERB	<mv>|V|PCP2|PAS|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	13	xcomp	_	_
 16	em	em	ADP	PRP|@<ADVL	_	17	case	_	_
 17	leilão	leilão	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue137
 18	por	por	ADP	PRP|@<ADVL	_	20	case	_	_
@@ -43,12 +43,12 @@
 22	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@N<	NumType=Card	21	flat	_	ChangedBy=Issue168
 
 # text = Uma mesa de encostar, em jacarandá claro, feita à mão no Rio no século 18, vai a leilão no próximo mês em São Paulo por US$ 15 mil, preço equivalente a dois carros populares zero quilômetro, como o Fusca.
-# source = CETENFolha n=594 cad=Imóveis sec=eco sem=94b
 # sent_id = CF594-4
+# source = CETENFolha n=594 cad=Imóveis sec=eco sem=94b
 # id = 2498
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	mesa	mesa	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
-3	de	de	ADP	PRP|@N<	_	4	mark	_	_
+3	de	de	SCONJ	PRP|@N<	_	4	mark	_	_
 4	encostar	encostar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 6	em	em	ADP	PRP|@N<PRED	_	7	case	_	_
@@ -101,8 +101,8 @@
 49	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = O leilão será na casa Renato Magalhães Gouvêa Escritório de Arte, nos Jardins (zona oeste).
-# source = CETENFolha n=594 cad=Imóveis sec=eco sem=94b
 # sent_id = CF594-5
+# source = CETENFolha n=594 cad=Imóveis sec=eco sem=94b
 # id = 2499
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	leilão	leilão	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -123,7 +123,7 @@
 15	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	Jardins	Jardins	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 17	(	(	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
-18	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	16	nmod	_	_
+18	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	16	parataxis	_	_
 19	oeste	oeste	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	18	amod	_	ChangedBy=Issue165|SpaceAfter=No
 20	)	)	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_

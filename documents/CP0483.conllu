@@ -1,11 +1,7 @@
 # text = O relatório foi elaborado por três dos mais respeitados peritos da Europa: John Wilesmith, director de epidemiologia no Laboratório Central do Governo britânico, Bram Schreuder, do Instituto de Ciência e Saúde Animal da Holanda, e C. Straub, do Centro Federal Alemão de Pesquisas sobre Vírus e Doenças de Animais.
-# source = CETEMPúblico n=483 sec=nd sem=97b
 # sent_id = CP483-1
+# source = CETEMPúblico n=483 sec=nd sem=97b
 # id = 2546
-# d2d = punct(John,,) -> punct(C.,,)  #106
-# d2d = punct(John,,) -> punct(Bram,,)  #106
-# d2d = cc(John,e) -> cc(C.,e)  #106
-# d2d = punct(John,,) -> punct(C.,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	relatório	relatório	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
 3	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
@@ -16,7 +12,7 @@
 7	de	de	ADP	<sam->|PRP|@A<	_	11	case	_	_
 8	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
 9	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	10	advmod	_	_
-10	respeitados	respeitado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	11	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+10	respeitados	respeitar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	11	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 11	peritos	perito	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	nmod	_	_
 12-13	da	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
@@ -42,7 +38,7 @@
 30	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
 31	Bram	Bram	PROPN	_	Gender=Masc|Number=Sing	16	conj	_	ChangedBy=Issue119|MWE=Bram_Schreuder|MWEPOS=PROPN
 32	Schreuder	Schreuder	PROPN	_	Number=Sing	31	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-33	,	,	PUNCT	PU|@PU	_	47	punct	_	d2d:#106
+33	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 34-35	do	_	_	_	_	_	_	_	_
 34	de	de	ADP	<cjt>|<sam->|PRP|@N<PRED	_	36	case	_	_
 35	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
@@ -56,7 +52,7 @@
 42	de	de	ADP	<sam->|PRP|@N<	_	44	case	_	_
 43	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
 44	Holanda	Holanda	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-45	,	,	PUNCT	PU|@PU	_	47	punct	_	d2d:#106
+45	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 46	e	e	CCONJ	<co-app>|KC|@CO	_	47	cc	_	d2d:#106
 47	C.	C.	PROPN	_	Gender=Masc|Number=Sing	16	conj	_	ChangedBy=Issue119|MWE=C._Straub|MWEPOS=PROPN
 48	Straub	Straub	PROPN	_	Number=Sing	47	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No

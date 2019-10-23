@@ -1,6 +1,6 @@
 # text = Na reunião de ontem, o líder dos sociais-democratas portuenses não deixava qualquer indício sobre a forma como irá conduzir todo o processo face às candidaturas que se desenham.
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-1
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3571
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -40,11 +40,9 @@
 33	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Lembrava apenas que «tudo está ainda em aberto» e, por isso, insistiu na necessidade de não haver declarações precipitadas de apoio até porque poderiam fragilizar «eventuais candidaturas que possam vir a aparecer».
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-2
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3572
-# d2d = cc(Lembrava,e) -> cc(insistiu,e)  #106
-# d2d = punct(Lembrava,,) -> punct(insistiu,,)  #106
 1	Lembrava	lembrar	VERB	<mv>|<first-cjt>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 2	apenas	apenas	ADV	ADV|@<ADVL	_	1	advmod	_	_
 3	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
@@ -52,11 +50,11 @@
 5	tudo	tudo	PRON	<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	6	nsubj	_	_
 6	está	estar	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
 7	ainda	ainda	ADV	ADV|@>P	_	9	advmod	_	_
-8	em	em	ADP	PRP|@<SA	_	9	mark	_	_
+8	em	em	SCONJ	PRP|@<SA	_	9	mark	_	_
 9	aberto	abrir	VERB	<mv>|V|PCP|M|S|@ICL-P<	Gender=Masc|Number=Sing|VerbForm=Part	6	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 10	»	»	PUNCT	PU|@PU	_	6	punct	_	_
 11	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-12	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+12	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 13	por	por	ADP	PRP|@ADVL>	_	14	case	_	_
 14	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	16	obl	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	14	punct	_	_
@@ -65,7 +63,7 @@
 17	em	em	ADP	<sam->|PRP|@<PIV	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	necessidade	necessidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	obj	_	_
-20	de	de	ADP	PRP|@N<	_	22	mark	_	_
+20	de	de	SCONJ	PRP|@N<	_	22	mark	_	_
 21	não	não	ADV	_	Polarity=Neg	22	advmod	_	_
 22	haver	haver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	acl	_	_
 23	declarações	declaração	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	22	obj	_	_
@@ -74,28 +72,28 @@
 26	apoio	apoio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
 27	até	até	ADV	ADV|@>S	_	30	advmod	_	_
 28	porque	porque	SCONJ	KS|@SUB	_	30	mark	_	_
-29	poderiam	poder	AUX	<aux>|V|COND|3P|@FS-<ADVL	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	30	aux	_	_
-30	fragilizar	fragilizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	advcl	_	_
+29	poderiam	poder	VERB	<aux>|V|COND|3P|@FS-<ADVL	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	16	advcl	_	_
+30	fragilizar	fragilizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	29	xcomp	_	_
 31	«	«	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
 32	eventuais	eventual	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	33	amod	_	_
 33	candidaturas	candidatura	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	30	obj	_	_
 34	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	38	nsubj	_	_
-35	possam	poder	AUX	<aux>|V|PR|3P|SUBJ|@FS-N<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	38	aux	_	_
-36	vir	vir	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	38	aux	_	_
-37	a	a	ADP	PRP|@PRT-AUX<	_	38	case	_	_
-38	aparecer	aparecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	33	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+35	possam	poder	VERB	<aux>|V|PR|3P|SUBJ|@FS-N<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	_	_
+36	vir	vir	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	35	xcomp	_	MWE=vir_a|MWEPOS=AUX
+37	a	a	SCONJ	PRP|@PRT-AUX<	_	38	mark	_	_
+38	aparecer	aparecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	36	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 39	»	»	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
 40	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = E contrariando as teses de que o próximo presidente do PSD será fatalmente um líder de transição, defendeu a aposta numa solução para quatro anos.
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-3
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3573
 1	E	e	CCONJ	KC|@CO	_	20	cc	_	_
 2	contrariando	contrariar	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	20	advcl	_	_
 3	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 4	teses	tese	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
-5	de	de	ADP	PRP|@N<ARG	_	16	mark	_	_
+5	de	de	SCONJ	PRP|@N<ARG	_	16	mark	_	_
 6	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 8	próximo	próximo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	9	amod	_	_
@@ -103,11 +101,11 @@
 10-11	do	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	PSD	psd	NOUN	N|@P<	_	9	nmod	_	_
+12	PSD	psd	NOUN	N|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
 13	será	ser	AUX	<mv>|V|FUT|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	cop	_	ChangedBy=Issue167
 14	fatalmente	fatalmente	ADV	ADV|@<ADVL	_	16	advmod	_	_
 15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	líder	líder	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	4	dep	_	_
+16	líder	líder	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	4	acl	_	_
 17	de	de	ADP	PRP|@N<	_	18	case	_	_
 18	transição	transição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	16	punct	_	_
@@ -124,8 +122,8 @@
 29	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Para Menezes a explicação é simples:
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-4
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3574
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Menezes	Menezes	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
@@ -136,8 +134,8 @@
 7	:	:	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = se o PSD interiorizasse a ideia de que seria uma liderança a prazo estaria a admitir desde já que os resultados das próximas eleições autárquicas iriam redundar num novo desaire eleitoral.
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-5
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3575
 1	se	se	SCONJ	KS|@SUB	_	4	mark	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -145,16 +143,16 @@
 4	interiorizasse	interiorizar	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	16	advcl	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	ideia	ideia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
-7	de	de	ADP	PRP|@N<ARG	_	11	mark	_	_
+7	de	de	SCONJ	PRP|@N<ARG	_	11	mark	_	_
 8	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
 9	seria	ser	AUX	<mv>|V|COND|3S|@FS-P<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	cop	_	ChangedBy=Issue167
 10	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	liderança	liderança	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	6	nmod	_	_
 12	a	a	ADP	PRP|@N<	_	13	case	_	_
 13	prazo	prazo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
-14	estaria	estar	AUX	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	16	aux	_	_
-15	a	a	ADP	PRP|@PRT-AUX<	_	16	case	_	_
-16	admitir	admitir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+14	estaria	estar	VERB	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	MWE=estaria_a|MWEPOS=AUX
+15	a	a	SCONJ	PRP|@PRT-AUX<	_	16	mark	_	_
+16	admitir	admitir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
 17	desde	desde	ADP	PRP|@<ADVL	_	18	case	_	MWE=desde_já
 18	já	já	ADV	ADV|@P<	_	16	advmod	_	_
 19	que	que	SCONJ	KS|@SUB	_	28	mark	_	_
@@ -177,8 +175,8 @@
 34	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Pelo contrário, Menezes considera que os resultados obtidos nas eleições presidenciais são potenciadores de uma vitória nas autárquicas.
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-6
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3576
 1	Pelo	pelo	ADP	PRP|@ADVL>	_	2	case	_	MWE=Pelo_contrário
 2	contrário	contrário	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -206,10 +204,10 @@
 22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Sem iludir a derrota, defendeu que em causa esteve ainda o julgamento do cavaquismo conjugado com «um estado de graça» do governo socialista, circunstâncias que lhe permitem concluir que a margem de 46% dos votos obtida por Cavaco Silva é, apesar de tudo, animadora.
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-7
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3577
-1	Sem	sem	ADP	PRP|@ADVL>	_	2	mark	_	_
+1	Sem	sem	SCONJ	PRP|@ADVL>	_	2	mark	_	_
 2	iludir	iludir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	derrota	derrota	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -217,7 +215,7 @@
 6	defendeu	defender	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
 8	em	em	ADP	PRP|@SC>	_	9	case	_	MWE=em_causa
-9	causa	causa	NOUN	N|@P<	_	6	csubj	_	_
+9	causa	causa	NOUN	N|@P<	Gender=Fem|Number=Sing	6	csubj	_	_
 10	esteve	estar	AUX	<mv>|V|PS|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	cop	_	ChangedBy=Issue167
 11	ainda	ainda	ADV	ADV|@<ADVL	_	9	advmod	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -232,7 +230,7 @@
 20	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	estado	estado	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	ChangedBy=Issue137
 22	de	de	ADP	PRP|@N<	_	23	case	_	MWE=de_graça
-23	graça	graça	NOUN	N|@P<	_	21	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+23	graça	graça	NOUN	N|@P<	Gender=Fem|Number=Sing	21	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 24	»	»	PUNCT	PU|@PU	_	21	punct	_	_
 25-26	do	_	_	_	_	_	_	_	_
 25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
@@ -260,24 +258,24 @@
 46	Cavaco	Cavaco	PROPN	_	Gender=Masc|Number=Sing	44	obl:agent	_	ChangedBy=Issue119|MWE=Cavaco_Silva|MWEPOS=PROPN
 47	Silva	Silva	PROPN	_	Number=Sing	46	flat:name	_	ChangedBy=Issue119
 48	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	cop	_	ChangedBy=Issue165|ChangedBy=Issue167|SpaceAfter=No
-49	,	,	PUNCT	PU|@PU	_	54	punct	_	_
-50	apesar	apesar	ADV	ADV|@<ADVL	_	54	advmod	_	MWE=apesar_de
-51	de	de	ADP	PRP|@A<	_	52	case	_	_
-52	tudo	tudo	PRON	<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	50	obl	_	ChangedBy=Issue165|SpaceAfter=No
-53	,	,	PUNCT	PU|@PU	_	54	punct	_	_
+49	,	,	PUNCT	PU|@PU	_	51	punct	_	_
+50	apesar	apesar	ADV	ADV|@<ADVL	_	52	case	_	MWE=apesar_de|MWEPOS=ADP
+51	de	de	ADP	PRP|@A<	_	50	fixed	_	_
+52	tudo	tudo	PRON	<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	54	obl	_	ChangedBy=Issue165|SpaceAfter=No
+53	,	,	PUNCT	PU|@PU	_	51	punct	_	_
 54	animadora	animadora	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	34	csubj	_	ChangedBy=Issue165|SpaceAfter=No
 55	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Para além do mais, diz Menezes, o PP saiu destas presidenciais «fragilizado, e começam a ser notórias as fracturas internas».
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-8
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3578
 1	Para	para	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Para_além_de
 2	além	além	ADV	ADV|@P<	_	12	advmod	_	_
 3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	PRP|@A<	_	5	case	_	_
 4	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	mais	muito	PRON	<KOMP>|<quant>|<np-def>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	2	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	mais	mais	PRON	<KOMP>|<quant>|<np-def>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	2	obl	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 7	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	Menezes	Menezes	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	7	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -290,13 +288,13 @@
 14	estas	este	DET	<dem>|<-sam>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	15	det	_	_
 15	presidenciais	presidencial	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	12	amod	_	_
 16	«	«	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
-17	fragilizado	fragilizar	ADJ	<mv>|<n>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	12	dep	_	ChangedBy=Issue165|SpaceAfter=No
+17	fragilizado	fragilizado	ADJ	<mv>|<n>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	11	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 19	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	_
-20	começam	começar	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
-21	a	a	ADP	PRP|@PRT-AUX<	_	23	case	_	_
+20	começam	começar	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	conj	_	MWE=começam_a|MWEPOS=AUX
+21	a	a	SCONJ	PRP|@PRT-AUX<	_	23	mark	_	_
 22	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	cop	_	ChangedBy=Issue167
-23	notórias	notório	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	12	conj	_	_
+23	notórias	notório	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	20	xcomp	_	_
 24	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
 25	fracturas	fractura	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	23	nsubj	_	_
 26	internas	interno	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	25	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -304,8 +302,8 @@
 28	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O caminho parece, assim, ser só um:
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-9
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3579
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	caminho	caminho	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
@@ -319,15 +317,15 @@
 10	:	:	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = o PSD tem de se afirmar como uma oposição credível, com uma liderança forte, até porque nas previsões de Menezes também entram as medidas impopulares do governo socialista que estarão aí a chegar ...
-# source = CETEMPúblico n=693 sec=pol sem=96a
 # sent_id = CP693-10
+# source = CETEMPúblico n=693 sec=pol sem=96a
 # id = 3580
 1	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	PSD	PSD	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
-3	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-4	de	de	ADP	PRP|@PRT-AUX<	_	6	case	_	_
+3	tem	ter	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=tem_de|MWEPOS=AUX
+4	de	de	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
 5	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl	_	ChangedBy=Issue135
-6	afirmar	afirmar	VERB	<mv>|<se-passive>|V|INF|3S|@ICL-AUX<	Number=Sing|Person=3|VerbForm=Inf	0	root	_	_
+6	afirmar	afirmar	VERB	<mv>|<se-passive>|V|INF|3S|@ICL-AUX<	Number=Sing|Person=3|VerbForm=Inf	3	xcomp	_	_
 7	como	como	ADP	_	_	9	case	_	_
 8	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	oposição	oposição	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_
@@ -358,8 +356,8 @@
 32	socialista	socialista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	31	amod	_	_
 33	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	35	nsubj	_	_
 34	estarão	estar	AUX	<mv>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	35	cop	_	ChangedBy=Issue167
-35	aí	aí	ADV	<kc>|ADV|@<SA	_	27	advmod	_	_
-36	a	a	ADP	PRP|@A<ARG	_	37	mark	_	_
-37	chegar	chegar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	35	advcl	_	_
+35	aí	aí	ADV	<kc>|ADV|@<SA	_	37	mark	_	MWE=aí_a|MWEPOS=SCONJ
+36	a	a	ADP	PRP|@A<ARG	_	35	fixed	_	_
+37	chegar	chegar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	27	advcl	_	_
 38	...	...	PUNCT	PU|@PU	_	6	punct	_	_
 

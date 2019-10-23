@@ -1,6 +1,6 @@
 # text = A criação da comissão de inquérito da AMS foi motivada por uma denúncia de moradores de São Marcos, freguesia de Agualva-Cacém, de alterações efectuadas nas cartas de ordenamento do PDM, após a sua aprovação pelos deputados municipais, em que espaços antes urbanos passaram a zonas industriais.
-# source = CETEMPúblico n=362 sec=soc sem=96b
 # sent_id = CP362-1
+# source = CETEMPúblico n=362 sec=soc sem=96b
 # id = 1899
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	criação	criação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj:pass	_	_
@@ -65,8 +65,8 @@
 56	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Funcionários da fiscalização municipal foram também acusados de aconselharem residentes a venderem as suas propriedades.
-# source = CETEMPúblico n=362 sec=soc sem=96b
 # sent_id = CP362-2
+# source = CETEMPúblico n=362 sec=soc sem=96b
 # id = 1900
 1	Funcionários	funcionário	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj:pass	_	_
 2-3	da	_	_	_	_	_	_	_	_
@@ -77,10 +77,10 @@
 6	foram	ser	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	aux:pass	_	_
 7	também	também	ADV	ADV|@ADVL>	_	8	advmod	_	_
 8	acusados	acusar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
-9	de	de	ADP	PRP|@<PIV	_	10	mark	_	_
+9	de	de	SCONJ	PRP|@<PIV	_	10	mark	_	_
 10	aconselharem	aconselhar	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	8	xcomp	_	_
 11	residentes	residente	NOUN	<np-idf>|N|M/F|P|@<ACC	Gender=Unsp|Number=Plur	10	obj	_	_
-12	a	a	ADP	PRP|@<PIV	_	13	mark	_	_
+12	a	a	SCONJ	PRP|@<PIV	_	13	mark	_	_
 13	venderem	vender	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	10	xcomp	_	_
 14	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
 15	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	16	det	_	_
@@ -88,12 +88,9 @@
 17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Na proposta de relatório elaborada pelo relator, Silvino Teixeira (CDU), constata-se que desde 1982, início da elaboração do PDM, até Março de 1993, a autarquia «esteve totalmente alheada da génese, definição, estudo e acompanhamento» do plano.
-# source = CETEMPúblico n=362 sec=soc sem=96b
 # sent_id = CP362-3
+# source = CETEMPúblico n=362 sec=soc sem=96b
 # id = 1901
-# d2d = cc(génese,e) -> cc(acompanhamento,e)  #106
-# d2d = punct(génese,,) -> punct(estudo,,)  #106
-# d2d = punct(génese,,) -> punct(definição,,)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -109,7 +106,7 @@
 11	Silvino	Silvino	PROPN	_	Gender=Masc|Number=Sing	9	appos	_	ChangedBy=Issue119|MWE=Silvino_Teixeira|MWEPOS=PROPN
 12	Teixeira	Teixeira	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 13	(	(	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
-14	CDU	CDU	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+14	CDU	CDU	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	11	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 15	)	)	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 17-18	constata-se	_	_	_	_	_	_	_	_
@@ -139,7 +136,7 @@
 38	«	«	PUNCT	PU|@PU	_	41	punct	_	ChangedBy=Issue165|SpaceAfter=No
 39	esteve	estar	AUX	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	cop	_	ChangedBy=Issue167
 40	totalmente	totalmente	ADV	<quant>|ADV|@ADVL>	_	41	advmod	_	_
-41	alheada	alhear	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	17	dep	_	_
+41	alheada	alhear	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	17	ccomp	_	_
 42-43	da	_	_	_	_	_	_	_	_
 42	de	de	ADP	<sam->|PRP|@<ADVL	_	44	case	_	_
 43	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
@@ -158,13 +155,9 @@
 55	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Mas a situação não melhorou após a aprovação pela AMS, em Abril de 1994, pois as linhas mestras do ordenamento do concelho não foram enviadas para ratificação governamental, como a presidente anunciara, mas terão ficado «nas gavetas ou prateleiras da Câmara».
-# source = CETEMPúblico n=362 sec=soc sem=96b
 # sent_id = CP362-4
+# source = CETEMPúblico n=362 sec=soc sem=96b
 # id = 1902
-# d2d = cc(gavetas,ou) -> cc(prateleiras,ou)  #106
-# d2d = punct(enviadas,,) -> punct(ficado,,)  #106
-# d2d = punct(enviadas,,) -> punct(ficado,,)  #106
-# d2d = cc(enviadas,mas) -> cc(ficado,mas)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	5	cc	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	situação	situação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
@@ -201,12 +194,12 @@
 31	para	para	ADP	PRP|@<ADVL	_	32	case	_	_
 32	ratificação	ratificação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	30	obl	_	ChangedBy=Issue137
 33	governamental	governamental	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	32	amod	_	ChangedBy=Issue165|SpaceAfter=No
-34	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
+34	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 35	como	como	ADV	<rel>|ADV|@ADVL>	_	38	advmod	_	_
 36	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 37	presidente	presidente	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	38	nsubj	_	_
 38	anunciara	anunciar	VERB	<mv>|V|MQP|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	30	advcl	_	ChangedBy=Issue165|SpaceAfter=No
-39	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
+39	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 40	mas	mas	CCONJ	<co-advl>|<co-fmc>|<co-vfin>|KC|@CO	_	42	cc	_	d2d:#106
 41	terão	ter	AUX	<cjt>|<aux>|V|FUT|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	42	aux	_	_
 42	ficado	ficar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	30	conj	_	_

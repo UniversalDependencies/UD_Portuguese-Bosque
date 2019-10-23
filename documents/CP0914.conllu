@@ -1,8 +1,7 @@
 # text = «Tomislav Ivic, que foi treinador do Benfica e do FC Porto, esteve na Luz na quarta-feira a assistir ao jogo entre as suas duas antigas equipas [ 1ª mão da Supertaça ].
-# source = CETEMPúblico n=914 sec=des sem=92b
 # sent_id = CP914-1
+# source = CETEMPúblico n=914 sec=des sem=92b
 # id = 4708
-# d2d = cc(Benfica,e) -> cc(FC,e)  #106
 1	«	«	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Tomislav	Tomislav	PROPN	_	Gender=Masc|Number=Sing	20	nsubj	_	ChangedBy=Issue119|MWE=Tomislav_Ivic|MWEPOS=PROPN
 3	Ivic	Ivic	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -30,7 +29,7 @@
 21	em	em	ADP	<sam->|PRP|@<ADVL	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	quarta-feira	quarta-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
-24	a	a	ADP	PRP|@<ADVL	_	25	mark	_	_
+24	a	a	SCONJ	PRP|@<ADVL	_	25	mark	_	_
 25	assistir	assistir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	advcl	_	_
 26-27	ao	_	_	_	_	_	_	_	_
 26	a	a	ADP	<sam->|PRP|@<PIV	_	28	case	_	_
@@ -53,12 +52,9 @@
 42	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Brito ofereceu a Ivic -- que vinha acompanhado pelo empresário Luciano d'Onófrio -- um convite para o seu camarote na Luz e, antes do início do encontro, passeou com ele pelas instalações do estádio, servindo de cicerone ao treinador e ao ex-empresário do FC Porto.»
-# source = CETEMPúblico n=914 sec=des sem=92b
 # sent_id = CP914-2
+# source = CETEMPúblico n=914 sec=des sem=92b
 # id = 4709
-# d2d = punct(ofereceu,,) -> punct(passeou,,)  #106
-# d2d = cc(treinador,e) -> cc(ex-empresário,e)  #106
-# d2d = cc(ofereceu,e) -> cc(passeou,e)  #106
 1	Brito	Brito	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	ofereceu	oferecer	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	a	a	ADP	<first-cjt>|PRP|@<PIV	_	4	case	_	_
@@ -85,7 +81,7 @@
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	Luz	Luz	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
 24	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	34	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-25	,	,	PUNCT	PU|@PU	_	34	punct	_	d2d:#106
+25	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 26	antes	antes	ADV	ADV|@ADVL>	_	34	advmod	_	_
 27-28	do	_	_	_	_	_	_	_	_
 27	de	de	ADP	<sam->|PRP|@A<	_	29	case	_	_
@@ -129,12 +125,9 @@
 59	»	»	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «Penso que o Benfica tem muitos talentos, tem belíssimos jogadores, mas penso também que o FC Porto, pelo que vi na quarta-feira, é mais agressivo sobre a bola do que o Benfica.
-# source = CETEMPúblico n=914 sec=des sem=92b
 # sent_id = CP914-3
+# source = CETEMPúblico n=914 sec=des sem=92b
 # id = 4710
-# d2d = cc(Penso,mas) -> cc(penso,mas)  #106
-# d2d = punct(Penso,,) -> punct(penso,,)  #106
-# d2d = punct(tem,,) -> punct(tem,,)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Penso	pensar	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
@@ -155,7 +148,7 @@
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	FC	FC	PROPN	_	Gender=Masc|Number=Sing	32	nsubj	_	ChangedBy=Issue119|MWE=FC_Porto|MWEPOS=PROPN
 20	Porto	Porto	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-21	,	,	PUNCT	PU|@PU	_	15	punct	_	_
+21	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 22-23	pelo	_	_	_	_	_	_	_	_
 22	por	por	ADP	<sam->|PRP|@ADVL>	_	23	case	_	_
 23	o	o	PRON	<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	32	obl	_	_
@@ -165,7 +158,7 @@
 26	em	em	ADP	<sam->|PRP|@<ADVL	_	28	case	_	_
 27	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
 28	quarta-feira	quarta-feira	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	25	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-29	,	,	PUNCT	PU|@PU	_	32	punct	_	_
+29	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 30	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	cop	_	ChangedBy=Issue167
 31	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	32	advmod	_	_
 32	agressivo	agressivo	ADJ	<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	15	ccomp	_	_
@@ -177,12 +170,12 @@
 37	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	36	fixed	_	_
 38	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	36	fixed	_	_
 39	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
-40	Benfica	Benfica	PROPN	<first-cjt>|PROP|M|S|@KOMP<	Gender=Masc|Number=Sing	32	dep	_	ChangedBy=Issue165|SpaceAfter=No
+40	Benfica	Benfica	PROPN	<first-cjt>|PROP|M|S|@KOMP<	Gender=Masc|Number=Sing	32	obl	_	ChangedBy=Issue165|SpaceAfter=No
 41	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O futebol do FC Porto é mais prático porque a equipa desenvolve-se sempre muito bem para o contra-ataque.»
-# source = CETEMPúblico n=914 sec=des sem=92b
 # sent_id = CP914-4
+# source = CETEMPúblico n=914 sec=des sem=92b
 # id = 4711
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	futebol	futebol	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_

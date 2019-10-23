@@ -1,6 +1,6 @@
 # text = Governador apóia ação da PF
-# source = CETENFolha n=698 cad=Brasil sec=pol sem=94a
 # sent_id = CF698-1
+# source = CETENFolha n=698 cad=Brasil sec=pol sem=94a
 # id = 2927
 1	Governador	governador	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	apóia	apoiar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -11,10 +11,9 @@
 6	PF	PF	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 
 # text = O governo do Estado informou, através de nota de sua assessoria de imprensa, que as declarações do presidente Itamar Franco e do presidente eleito Fernando Henrique Cardoso sobre medidas federais de combate ao tráfico de drogas «configuram posições análogas às que o governador do Estado vem defendendo».
-# source = CETENFolha n=698 cad=Brasil sec=pol sem=94a
 # sent_id = CF698-3
+# source = CETENFolha n=698 cad=Brasil sec=pol sem=94a
 # id = 2928
-# d2d = cc(presidente,e) -> cc(presidente,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -75,26 +74,24 @@
 52	de	de	ADP	<sam->|PRP|@N<	_	54	case	_	_
 53	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	54	det	_	_
 54	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	51	nmod	_	_
-55	vem	vir	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	56	aux	_	_
-56	defendendo	defender	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	48	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+55	vem	vir	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	48	acl:relcl	_	_
+56	defendendo	defender	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	55	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 57	»	»	PUNCT	PU|@PU	_	44	punct	_	ChangedBy=Issue165|SpaceAfter=No
 58	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Segundo a nota, «as providências capazes de alterar o quadro atual de combate aos traficantes dizem respeito à Polícia Federal e às Forças Armadas, com o objetivo de interromper o fluxo de armas proibidas e cocaína no Rio».
-# source = CETENFolha n=698 cad=Brasil sec=pol sem=94a
 # sent_id = CF698-4
+# source = CETENFolha n=698 cad=Brasil sec=pol sem=94a
 # id = 2929
-# d2d = cc(armas,e) -> cc(cocaína,e)  #106
-# d2d = cc(Polícia,e) -> cc(Forças,e)  #106
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	42	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	nota	nota	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	42	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
-4	,	,	PUNCT	PU|@PU	_	42	punct	_	_
+4	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 5	«	«	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 6	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
 7	providências	providência	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	19	nsubj	_	_
 8	capazes	capaz	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
-9	de	de	ADP	PRP|@A<ARG	_	10	mark	_	_
+9	de	de	SCONJ	PRP|@A<ARG	_	10	mark	_	_
 10	alterar	alterar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	xcomp	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	quadro	quadro	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
@@ -122,7 +119,7 @@
 31	com	com	ADP	PRP|@N<PRED	_	33	case	_	_
 32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 33	objetivo	objetivo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
-34	de	de	ADP	PRP|@N<ARG	_	35	mark	_	_
+34	de	de	SCONJ	PRP|@N<ARG	_	35	mark	_	_
 35	interromper	interromper	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	acl	_	_
 36	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
 37	fluxo	fluxo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	35	obj	_	_

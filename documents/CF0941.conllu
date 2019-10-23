@@ -1,13 +1,13 @@
 # text = Dique oficial
-# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-1
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # id = 3978
 1	Dique	dique	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	oficial	oficial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 
 # text = Está em estudo no Ministério da Previdência um conjunto de medidas para desestimular o aumento de aposentadorias no próximo ano.
-# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-2
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # id = 3979
 1	Está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	em	em	ADP	PRP|@<SA	_	3	case	_	_
@@ -24,7 +24,7 @@
 11	conjunto	conjunto	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	3	nsubj	_	_
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	medidas	medida	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	nmod	_	_
-14	para	para	ADP	PRP|@N<	_	15	mark	_	_
+14	para	para	SCONJ	PRP|@N<	_	15	mark	_	_
 15	desestimular	desestimular	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	acl	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 17	aumento	aumento	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	15	obj	_	_
@@ -38,8 +38,8 @@
 24	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Elas serão oferecidas a Itamar, como alternativa à propalada quebra do caixa previdenciário.
-# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-3
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # id = 3980
 1	Elas	elas	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	3	nsubj:pass	_	_
 2	serão	ser	AUX	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	3	aux:pass	_	_
@@ -62,15 +62,15 @@
 17	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Bola preta
-# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-4
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # id = 3981
 1	Bola	bola	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	preta	preto	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
 
 # text = Causou má impressão, na quarta, a participação do ministro da Justiça, Alexandre Dupeyrat, na reunião que tratou do projeto sobre abuso do poder econômico.
-# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-5
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # id = 3982
 1	Causou	causar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	má	má	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
@@ -115,11 +115,9 @@
 35	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Chegou atrasado, foi duro com seus críticos e saiu antes do fim.
-# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # sent_id = CF941-7
+# source = CETENFolha n=941 cad=Brasil sec=pol sem=94b
 # id = 3983
-# d2d = cc(Chegou,e) -> cc(saiu,e)  #106
-# d2d = punct(Chegou,,) -> punct(duro,,)  #106
 1	Chegou	chegar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	atrasado	atrasado	ADJ	ADJ|M|S|@<ADVL	Gender=Masc|Number=Sing	1	acl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106

@@ -1,6 +1,6 @@
 # text = Sarney cultiva a tolerância em suas crônicas
-# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF92-1
+# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # id = 350
 1	Sarney	Sarney	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	cultiva	cultivar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -11,14 +11,14 @@
 7	crônicas	crônica	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	2	obl	_	ChangedBy=Issue137
 
 # text = O senador pode ser lido não como ex-presidente, mas como uma espécie de parente distante da família
-# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a &E
 # sent_id = CF92-2
+# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a &E
 # id = 351
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	senador	senador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
-3	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+3	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	5	aux:pass	_	_
-5	lido	ler	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+5	lido	ler	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	_	_
 6	não	não	ADV	<Es>|ADV|@>A	Polarity=Neg	8	advmod	_	ChangedBy=Issue108
 7	como	como	ADP	<first-cjt>|<prd>|PRP|@<ADVL	_	8	case	_	_
 8	ex-presidente	ex-presidente	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -36,8 +36,8 @@
 19	família	família	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
 
 # text = Da Equipe de Articulistas
-# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF92-4
+# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # id = 352
 1-2	Da	_	_	_	_	_	_	_	_
 1	De	de	ADP	<first-cjt>|<sam->|PRP|@UTT	_	3	case	_	_
@@ -47,15 +47,15 @@
 5	Articulistas	articulista	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	_
 
 # text = Quando José Sarney começou a escrever semanalmente para a Folha, chegaram protestos à redação.
-# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF92-5
+# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # id = 353
-1	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	6	advmod	_	_
+1	Quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	6	mark	_	_
 2	José	José	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=José_Sarney|MWEPOS=PROPN
 3	Sarney	Sarney	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
-4	começou	começar	AUX	<aux>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
-6	escrever	escrever	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	12	advcl	_	_
+4	começou	começar	VERB	<aux>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	advcl	_	MWE=começou_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
+6	escrever	escrever	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	semanalmente	semanalmente	ADV	ADV|@<ADVL	_	6	advmod	_	_
 8	para	para	ADP	PRP|@<ADVL	_	10	case	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
@@ -70,8 +70,8 @@
 17	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Como aceitar que, depois de uma passagem tão ruim pela Presidência, Sarney dispusesse de espaço privilegiado no jornal?
-# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF92-6
+# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # id = 354
 1	Como	como	ADV	<interr>|ADV|@ADVL>	_	2	advmod	_	_
 2	aceitar	aceitar	VERB	<mv>|V|INF|@ICL-QUE	VerbForm=Inf	0	root	_	_
@@ -100,8 +100,8 @@
 23	?	?	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O tom familiar, coloquial, benigno de suas crônicas (agora reunidas em «Sexta-feira, Folha», ed. Siciliano) foi pouco a pouco vencendo as resistências do público.
-# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a &D
 # sent_id = CF92-7
+# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a &D
 # id = 355
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tom	tom	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	27	nsubj	_	_
@@ -123,7 +123,7 @@
 18	»	»	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 20	ed.	ed.	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	16	appos	_	_
-21	Siciliano	siciliano	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	20	appos	_	SpaceAfter=No
+21	Siciliano	Siciliano	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	20	appos	_	SpaceAfter=No
 22	)	)	PUNCT	PU|@PU	_	13	punct	_	_
 23	foi	ir	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	aux	_	_
 24	pouco	pouco	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	27	obl	_	MWE=pouco_a_pouco
@@ -139,11 +139,9 @@
 33	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 
 # text = Como cronista, Sarney toma o cuidado de não indignar ninguém, e é difícil antipatizar com ele.
-# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF92-8
+# source = CETENFolha n=92 cad=Ilustrada sec=nd sem=94a
 # id = 356
-# d2d = punct(toma,,) -> punct(difícil,,)  #106
-# d2d = cc(toma,e) -> cc(difícil,e)  #106
 1	Como	como	ADP	<prd>|PRP|@ADVL>	_	2	case	_	_
 2	cronista	cronista	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -151,7 +149,7 @@
 5	toma	tomar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	cuidado	cuidado	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
-8	de	de	ADP	PRP|@N<ARG	_	10	mark	_	_
+8	de	de	SCONJ	PRP|@N<ARG	_	10	mark	_	_
 9	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
 10	indignar	indignar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 11	ninguém	ninguém	PRON	INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	10	obj	_	ChangedBy=Issue165|SpaceAfter=No

@@ -1,13 +1,11 @@
 # text = O desenlace, porém, não veio na forma do «golpe de timão» com reforma radical, mas foi precipitado pelas duas balas que tiraram a vida de Colosio.
-# source = CETENFolha n=364 cad=Mundo sec=pol sem=94b
 # sent_id = CF364-1
+# source = CETENFolha n=364 cad=Mundo sec=pol sem=94b
 # id = 1510
-# d2d = punct(veio,,) -> punct(precipitado,,)  #106
-# d2d = cc(veio,mas) -> cc(precipitado,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	desenlace	desenlace	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-4	porém	porém	ADV	<kc>|ADV|@ADVL>	_	7	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+4	porém	porém	CCONJ	<kc>|ADV|@ADVL>	_	7	cc	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	não	não	ADV	_	Polarity=Neg	7	advmod	_	_
 7	veio	vir	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -44,8 +42,8 @@
 35	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Mas o resultado, surpreendentemente, foi o mesmo no que se refere à reconstituição do princípio da autoridade.
-# source = CETENFolha n=364 cad=Mundo sec=pol sem=94b
 # sent_id = CF364-2
+# source = CETENFolha n=364 cad=Mundo sec=pol sem=94b
 # id = 1511
 1	Mas	mas	CCONJ	KC|@CO	_	9	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -77,8 +75,8 @@
 24	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Uma hora após a morte de Colosio -- na realidade minutos depois do público receber a trágica notícia, Octavio Paz pedia um «basta aos excessos verbais e ideológicos de alguns intelectuais e jornalistas» e às «numerosas e irresponsáveis apologias da violência».
-# source = CETENFolha n=364 cad=Mundo sec=pol sem=94b
 # sent_id = CF364-3
+# source = CETENFolha n=364 cad=Mundo sec=pol sem=94b
 # id = 1512
 1	Uma	uma	NUM	<card>|NUM|F|S|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	hora	hora	NOUN	<np-def>|N|F|S|@ADVL>	Gender=Fem|Number=Sing	24	obl	_	_
@@ -93,12 +91,12 @@
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	realidade	realidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 12	minutos	minuto	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	11	appos	_	_
-13	depois	depois	ADV	ADV|@N<	_	2	advmod	_	_
+13	depois	depois	ADV	ADV|@N<	_	17	mark	_	MWE=depois_de|MWEPOS=SCONJ
 14-15	do	_	_	_	_	_	_	_	_
-14	de	de	ADP	PRP|@A<ARG	_	17	mark	_	_
+14	de	de	ADP	PRP|@A<ARG	_	13	fixed	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	público	público	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
-17	receber	receber	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	13	advcl	_	_
+17	receber	receber	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	advcl	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	trágica	trágico	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_
 20	notícia	notícia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	ChangedBy=Issue165|SpaceAfter=No

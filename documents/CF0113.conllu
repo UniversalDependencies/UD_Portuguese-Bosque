@@ -1,6 +1,6 @@
 # text = Mesmo asim, Van Himst pretende surpreender a defesa saudita, colocando dois atacantes velozes.
-# source = CETENFolha n=113 cad=Esporte sec=des sem=94b &W
 # sent_id = CF113-1
+# source = CETENFolha n=113 cad=Esporte sec=des sem=94b &W
 # id = 440
 1	Mesmo	mesmo	ADV	<quant>|ADV|@>A	_	2	advmod	_	_
 2	asim	assim	ADV	ADV|@ADVL>	_	6	advmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -20,11 +20,9 @@
 16	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Além do zagueiro Grun e do centroavante Weber, o lateral-esquerdo Vital Borkelmans encontra-se também com um cartão amarelo e pode ficar de fora hoje.
-# source = CETENFolha n=113 cad=Esporte sec=des sem=94b
 # sent_id = CF113-2
+# source = CETENFolha n=113 cad=Esporte sec=des sem=94b
 # id = 441
-# d2d = cc(encontra-,e) -> cc(ficar,e)  #106
-# d2d = cc(zagueiro,e) -> cc(centroavante,e)  #106
 1	Além	além	ADV	ADV|@ADVL>	_	16	advmod	_	MWE=Além_de
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	PRP|@A<	_	4	case	_	_
@@ -51,8 +49,8 @@
 21	cartão	cartão	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obj	_	_
 22	amarelo	amarelo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	amod	_	_
 23	e	e	CCONJ	<co-sta>|KC|@CO	_	25	cc	_	d2d:#106
-24	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux	_	_
-25	ficar	ficar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	conj	_	_
+24	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	conj	_	_
+25	ficar	ficar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	24	xcomp	_	_
 26	de	de	ADP	PRP|@<ADVL	_	27	case	_	MWE=de_fora
 27	fora	fora	ADV	ADV|@P<	_	25	advmod	_	_
 28	hoje	hoje	ADV	ADV|@<ADVL	_	25	advmod	_	ChangedBy=Issue165|SpaceAfter=No

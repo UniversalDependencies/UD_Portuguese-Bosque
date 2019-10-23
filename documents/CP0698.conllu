@@ -1,10 +1,7 @@
 # text = Os responsáveis pelas condições de trabalho da imprensa, do Ministério dos Negócios Estrangeiros, já montaram, entretanto, no CCB, 630 telefones directos, 25 faxes, cinco aparelhos de telex e 350 máquinas de escrever para os, certamente poucos, jornalistas que não usem o respectivo computador.
-# source = CETEMPúblico n=698 sec=pol sem=92a &L
 # sent_id = CP698-1
+# source = CETEMPúblico n=698 sec=pol sem=92a &L
 # id = 3605
-# d2d = punct(telefones,,) -> punct(faxes,,)  #106
-# d2d = punct(telefones,,) -> punct(aparelhos,,)  #106
-# d2d = cc(telefones,e) -> cc(máquinas,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	responsáveis	responsável	NOUN	<n>|<np-def>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	21	nsubj	_	_
 3-4	pelas	_	_	_	_	_	_	_	_
@@ -31,7 +28,7 @@
 20	já	já	ADV	ADV|@ADVL>	_	21	advmod	_	_
 21	montaram	montar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-23	entretanto	entretanto	ADV	<kc>|ADV|@<ADVL	_	21	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+23	entretanto	entretanto	CCONJ	<kc>|ADV|@<ADVL	_	21	cc	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 25-26	no	_	_	_	_	_	_	_	_
 25	em	em	ADP	<sam->|PRP|@<ADVL	_	27	case	_	_
@@ -53,7 +50,7 @@
 41	350	350	NUM	<card>|NUM|F|P|@>N	NumType=Card	42	nummod	_	ChangedBy=Issue168
 42	máquinas	máquinas	NOUN	_	Gender=Fem|Number=Plur	30	conj	_	MWE=máquinas_de_escrever|MWEPOS=NOUN
 43	de	de	ADP	_	_	42	compound	_	_
-44	escrever	escrever	VERB	_	_	42	compound	_	_
+44	escrever	escrever	VERB	_	VerbForm=Inf	42	compound	_	_
 45	para	para	ADP	PRP|@<ADVL	_	51	case	_	_
 46	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	51	det	_	ChangedBy=Issue165|SpaceAfter=No
 47	,	,	PUNCT	PU|@PU	_	30	punct	_	_
@@ -70,10 +67,9 @@
 58	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = À primeira vista, se compararmos os números -- de jornalistas e de telefones, por exemplo --, não parece estar garantido de antemão que, nas horas de ponta, se evitem os «engarrafamentos».
-# source = CETEMPúblico n=698 sec=pol sem=92a
 # sent_id = CP698-2
+# source = CETEMPúblico n=698 sec=pol sem=92a
 # id = 3606
-# d2d = cc(jornalistas,e) -> cc(telefones,e)  #106
 1	À	à	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	23	obl	_	MWE=À_primeira_vista
 2	primeira	primeira	ADP	PRP|@N<	_	3	case	_	_
 3	vista	vista	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -106,10 +102,10 @@
 29	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_
 30	horas	horas	NOUN	_	Gender=Fem|Number=Plur	35	obl	_	MWE=horas_de_ponta|MWEPOS=NOUN
 31	de	de	ADP	_	_	30	compound	_	_
-32	ponta	ponta	NOUN	_	_	30	compound	_	ChangedBy=Issue165|SpaceAfter=No
+32	ponta	ponta	NOUN	_	Gender=Fem|Number=Sing	30	compound	_	ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	30	punct	_	_
 34	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	35	expl	_	ChangedBy=Issue135
-35	evitem	evitar	VERB	<cjt>|<mv>|<se-passive>|V|PR|3P|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	dep	_	_
+35	evitem	evitar	VERB	<cjt>|<mv>|<se-passive>|V|PR|3P|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	ccomp	_	_
 36	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_
 37	«	«	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
 38	engarrafamentos	engarrafamento	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	35	nsubj	_	ChangedBy=Issue165|SpaceAfter=No

@@ -1,6 +1,6 @@
 # text = A investigadora acha mesmo que não há razões para se excluir as proteínas animais das rações, desde que exista uma certificação da origem dessas proteínas que garanta que elas provêm apenas das partes não perigosas das carcaças.
-# source = CETEMPúblico n=799 sec=nd sem=97a
 # sent_id = CP799-1
+# source = CETEMPúblico n=799 sec=nd sem=97a
 # id = 4093
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	investigadora	investigadora	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
@@ -10,7 +10,7 @@
 6	não	não	ADV	_	Polarity=Neg	7	advmod	_	_
 7	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
 8	razões	razão	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	7	obj	_	_
-9	para	para	ADP	PRP|@N<ARG	_	11	mark	_	_
+9	para	para	SCONJ	PRP|@N<ARG	_	11	mark	_	_
 10	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	11	nsubj	_	_
 11	excluir	excluir	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	8	acl	_	_
 12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
@@ -21,7 +21,7 @@
 16	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
 17	rações	ração	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-19	desde	desde	ADP	PRP|@SUB	_	21	mark	_	MWE=desde_que
+19	desde	desde	SCONJ	PRP|@SUB	_	21	mark	_	MWE=desde_que
 20	que	que	SCONJ	KS|@P<	_	19	fixed	_	_
 21	exista	existir	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_
 22	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
@@ -53,11 +53,9 @@
 44	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «Antes de 1988, a contaminação era imparável e, hoje, estamos a tomar precauções excessivas numa altura em que o risco já é muito mais pequeno».
-# source = CETEMPúblico n=799 sec=nd sem=97a
 # sent_id = CP799-2
+# source = CETEMPúblico n=799 sec=nd sem=97a
 # id = 4094
-# d2d = punct(imparável,,) -> punct(tomar,,)  #106
-# d2d = cc(imparável,e) -> cc(tomar,e)  #106
 1	«	«	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Antes	antes	ADV	ADV|@ADVL>	_	9	advmod	_	_
 3	de	de	ADP	PRP|@A<	_	4	case	_	_
@@ -68,12 +66,12 @@
 8	era	ser	AUX	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	_	ChangedBy=Issue167
 9	imparável	imparável	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 10	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-11	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+11	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 12	hoje	hoje	ADV	ADV|@ADVL>	_	16	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-14	estamos	estar	AUX	<cjt>|<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	16	aux	_	_
-15	a	a	ADP	PRP|@PRT-AUX<	_	16	case	_	_
-16	tomar	tomar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	conj	_	_
+14	estamos	estar	VERB	<cjt>|<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	conj	_	MWE=estamos_a|MWEPOS=AUX
+15	a	a	SCONJ	PRP|@PRT-AUX<	_	16	mark	_	_
+16	tomar	tomar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
 17	precauções	precaução	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	16	obj	_	_
 18	excessivas	excessivo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	17	amod	_	_
 19-20	numa	_	_	_	_	_	_	_	_
@@ -93,8 +91,8 @@
 32	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = E diz que, daqui a uns anos, a BSE, que era uma doença rara até há dez anos, tornará a ser novamente isso: uma doença rara.
-# source = CETEMPúblico n=799 sec=nd sem=97a
 # sent_id = CP799-3
+# source = CETEMPúblico n=799 sec=nd sem=97a
 # id = 4095
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -115,16 +113,16 @@
 16	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	doença	doença	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	12	acl:relcl	_	_
 18	rara	raro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	17	amod	_	_
-19	até	até	ADP	PRP|@<ADVL	_	20	mark	_	_
+19	até	até	SCONJ	PRP|@<ADVL	_	20	mark	_	_
 20	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	advcl	_	_
 21	dez	dez	NUM	<card>|NUM|M|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168
 22	anos	ano	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	20	obj	_	ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-24	tornará	tornar	AUX	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	28	aux	_	_
-25	a	a	ADP	PRP|@PRT-AUX<	_	28	case	_	_
+24	tornará	tornar	VERB	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	ccomp	_	MWE=tornará_a|MWEPOS=AUX
+25	a	a	SCONJ	PRP|@PRT-AUX<	_	28	mark	_	_
 26	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	cop	_	ChangedBy=Issue167
 27	novamente	novamente	ADV	ADV|@<ADVL	_	28	advmod	_	_
-28	isso	isso	PRON	<dem>|INDP|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Dem	2	dep	_	ChangedBy=Issue165|SpaceAfter=No
+28	isso	isso	PRON	<dem>|INDP|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Dem	24	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 29	:	:	PUNCT	PU|@PU	_	2	punct	_	_
 30	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
 31	doença	doença	NOUN	<np-idf>|N|F|S|@APP	Gender=Fem|Number=Sing	28	appos	_	_

@@ -1,8 +1,7 @@
 # text = 'R.' -- É uma constatação, uma diferença de estilo.
-# source = CETEMPúblico n=725 sec=pol sem=95b
 # sent_id = CP725-1
+# source = CETEMPúblico n=725 sec=pol sem=95b
 # id = 3727
-# d2d = punct(constatação,,) -> punct(diferença,,)  #106
 1	'R.'	r.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
 3	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
@@ -12,12 +11,12 @@
 7	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	diferença	diferença	NOUN	<cjt>|<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	5	conj	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	MWE=de_estilo
-10	estilo	estilo	NOUN	N|@P<	_	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+10	estilo	estilo	NOUN	N|@P<	Gender=Masc|Number=Sing	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Sempre fui muito claro nas minhas convicções.
-# source = CETEMPúblico n=725 sec=pol sem=95b
 # sent_id = CP725-2
+# source = CETEMPúblico n=725 sec=pol sem=95b
 # id = 3728
 1	Sempre	sempre	ADV	ADV|@ADVL>	_	4	advmod	_	_
 2	fui	ser	AUX	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -31,12 +30,9 @@
 9	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Acho que a militância partidária toda a gente percebeu que não vou ter, nem terei, nem tenho tido.
-# source = CETEMPúblico n=725 sec=pol sem=95b
 # sent_id = CP725-3
+# source = CETEMPúblico n=725 sec=pol sem=95b
 # id = 3729
-# d2d = cc(ter,nem) -> cc(terei,nem)  #106
-# d2d = cc(ter,nem) -> cc(tido,nem)  #106
-# d2d = punct(ter,,) -> punct(terei,,)  #106
 1	Acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -60,8 +56,8 @@
 21	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Mas não faz sentido, em meu entender, no quadro actual da democracia portuguesa, fazer isso hoje.
-# source = CETEMPúblico n=725 sec=pol sem=95b
 # sent_id = CP725-4
+# source = CETEMPúblico n=725 sec=pol sem=95b
 # id = 3730
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
@@ -70,7 +66,7 @@
 5	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 6	em	em	ADP	PRP|@<ADVL	_	8	case	_	_
 7	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	8	det	_	_
-8	entender	entender	NOUN	<mv>|<n>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	ChangedBy=Issue165|SpaceAfter=No
+8	entender	entender	VERB	<mv>|<n>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 10-11	no	_	_	_	_	_	_	_	_
 10	em	em	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
@@ -89,12 +85,9 @@
 22	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Acho que a avaliação que as pessoas têm que fazer sobre as personalidades, sobre o perfil e a sua adequação à função tem muito a ver com as pessoas e não com ter ou não ter um cartão.
-# source = CETEMPúblico n=725 sec=pol sem=95b
 # sent_id = CP725-5
+# source = CETEMPúblico n=725 sec=pol sem=95b
 # id = 3731
-# d2d = cc(pessoas,e) -> cc(ter,e)  #106
-# d2d = cc(perfil,e) -> cc(adequação,e)  #106
-# d2d = cc(ter,ou) -> cc(ter,ou)  #106
 1	Acho	achar	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	28	mark	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -104,7 +97,7 @@
 7	pessoas	pessoa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	10	nsubj	_	_
 8	têm	ter	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
 9	que	que	SCONJ	KS|@PRT-AUX<	_	10	mark	_	_
-10	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	advcl	_	_
+10	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	acl:relcl	_	_
 11	sobre	sobre	ADP	<first-cjt>|PRP|@<ADVL	_	13	case	_	_
 12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
 13	personalidades	personalidade	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	10	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -120,16 +113,16 @@
 22	a	a	ADP	<sam->|PRP|@N<	_	24	case	_	_
 23	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
 24	função	função	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
-25	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux	_	_
-26	muito	muito	ADV	<quant>|DET|M|S|@ADVL>	Gender=Masc|Number=Sing|PronType=Ind	28	advmod	_	_
-27	a	a	ADP	PRP|@PRT-AUX<	_	28	case	_	_
-28	ver	ver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	ccomp	_	_
+25	tem	ter	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	MWE=tem_a|MWEPOS=AUX
+26	muito	muito	ADV	<quant>|DET|M|S|@ADVL>	_	28	advmod	_	_
+27	a	a	SCONJ	PRP|@PRT-AUX<	_	28	mark	_	_
+28	ver	ver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	xcomp	_	_
 29	com	com	ADP	<first-cjt>|PRP|@<ADVL	_	31	case	_	_
 30	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_
 31	pessoas	pessoa	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	obl	_	ChangedBy=Issue137
 32	e	e	CCONJ	<co-advl>|KC|@CO	_	35	cc	_	d2d:#106
 33	não	não	ADV	_	Polarity=Neg	35	advmod	_	_
-34	com	com	ADP	<cjt>|PRP|@<ADVL	_	35	mark	_	_
+34	com	com	SCONJ	<cjt>|PRP|@<ADVL	_	35	mark	_	_
 35	ter	ter	VERB	<mv>|<cjt>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	31	conj	_	_
 36	ou	ou	CCONJ	<co-inf>|KC|@CO	_	38	cc	_	d2d:#106
 37	não	não	ADV	_	Polarity=Neg	38	advmod	_	_
@@ -139,15 +132,15 @@
 41	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = P. -- Mesmo que seja eleito, não se desvinculará do partido?
-# source = CETEMPúblico n=725 sec=pol sem=95b
 # sent_id = CP725-6
+# source = CETEMPúblico n=725 sec=pol sem=95b
 # id = 3732
 1	P.	p.	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	1	punct	_	_
-3	Mesmo	mesmo	ADV	<quant>|ADV|@ADVL>	_	10	advmod	_	_
-4	que	que	SCONJ	KS|@SUB	_	6	mark	_	_
+3	Mesmo	mesmo	ADV	<quant>|ADV|@ADVL>	_	6	mark	_	MWE=Mesmo_que|MWEPOS=SCONJ
+4	que	que	SCONJ	KS|@SUB	_	3	fixed	_	_
 5	seja	ser	AUX	<aux>|V|PR|3S|SUBJ|@FS-A<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_
-6	eleito	eleger	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+6	eleito	eleger	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 8	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
 9	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	expl	_	ChangedBy=Issue135

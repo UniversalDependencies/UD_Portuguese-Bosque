@@ -1,6 +1,6 @@
 # text = Os quatro grandes jornais deram, na segunda-feira, a mesma manchete para informar como acabou o Grande Prêmio do Brasil, que aconteceu domingo passado.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-1
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2803
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 2	quatro	quatro	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
@@ -16,7 +16,7 @@
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 12	mesma	mesmo	ADJ	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	13	amod	_	_
 13	manchete	manchete	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	_
-14	para	para	ADP	PRP|@<ADVL	_	15	mark	_	_
+14	para	para	SCONJ	PRP|@<ADVL	_	15	mark	_	_
 15	informar	informar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	advcl	_	_
 16	como	como	ADV	<interr>|ADV|@ADVL>	_	17	advmod	_	_
 17	acabou	acabar	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	ccomp	_	_
@@ -35,21 +35,21 @@
 29	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Era «Senna erra e Schumacher vence» (em «O Globo», a frase ficou pouco maior que isso).
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b &D
 # sent_id = CF670-2
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b &D
 # id = 2804
 1	Era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
-2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
-3	Senna	Senna	PROPN	_	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Senna_erra_e_Schumacher_vence|MWEPOS=PROPN
-4	erra	erra	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
-5	e	e	CCONJ	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
-6	Schumacher	Schumacher	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
-7	vence	vence	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-8	»	»	PUNCT	PU|@PU	_	3	punct	_	_
+2	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
+3	Senna	Senna	PROPN	_	Gender=Fem|Number=Sing	4	nsubj	_	ChangedBy=Issue119|MWE=Senna_erra_e_Schumacher_vence|MWEPOS=PROPN
+4	erra	erra	VERB	_	Number=Sing	0	root	_	ChangedBy=Issue119
+5	e	e	CCONJ	_	_	7	cc	_	ChangedBy=Issue119
+6	Schumacher	Schumacher	PROPN	_	Number=Sing	7	nsubj	_	ChangedBy=Issue119
+7	vence	vence	VERB	_	Number=Sing	4	conj	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+8	»	»	PUNCT	PU|@PU	_	4	punct	_	_
 9	(	(	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 10	em	em	ADP	PRP|@ADVL>	_	12	case	_	_
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
-12	O	O	DET	_	Gender=Masc|Number=Sing|PronType=Art	18	obl	_	ChangedBy=Issue119|MWE=O_Globo|MWEPOS=PROPN
+12	O	O	PROPN	_	Gender=Masc|Number=Sing|PronType=Art	18	obl	_	ChangedBy=Issue119|MWE=O_Globo|MWEPOS=PROPN
 13	Globo	Globo	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 14	»	»	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
@@ -59,19 +59,19 @@
 19	pouco	pouco	ADV	<quant>|ADV|@>A	_	20	advmod	_	_
 20	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	18	xcomp	_	_
 21	que	que	SCONJ	KS|@COM	_	22	mark	_	_
-22	isso	isso	PRON	<first-cjt>|<dem>|INDP|M|S|@KOMP<	Gender=Masc|Number=Sing|PronType=Dem	20	dep	_	ChangedBy=Issue165|SpaceAfter=No
+22	isso	isso	PRON	<first-cjt>|<dem>|INDP|M|S|@KOMP<	Gender=Masc|Number=Sing|PronType=Dem	20	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 23	)	)	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 24	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Com essa constatação enviesada de que o alemão só chegou em primeiro porque o brasileiro cometeu uma bobagem, a imprensa coroou o festival «sennista» da semana anterior, quando todas -- sem exceção, todas -- as coberturas apontavam a vitória de Ayrton Senna em Interlagos.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b &D
 # sent_id = CF670-3
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b &D
 # id = 2805
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
 3	constatação	constatação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	ChangedBy=Issue137
 4	enviesada	enviesar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	3	acl	_	_
-5	de	de	ADP	PRP|@N<ARG	_	10	mark	_	_
+5	de	de	SCONJ	PRP|@N<ARG	_	10	mark	_	_
 6	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	alemão	alemão	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
@@ -121,14 +121,14 @@
 51	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = A Folha chegou a escrever que o melhor piloto do mundo (Senna), na direção do melhor carro do mundo (a Williams) teria sua consagração no autódromo.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-4
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2806
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Folha	Folha	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
-3	chegou	chegar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_
-4	a	a	ADP	PRP|@PRT-AUX<	_	5	case	_	_
-5	escrever	escrever	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	chegou	chegar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=chegou_a|MWEPOS=AUX
+4	a	a	SCONJ	PRP|@PRT-AUX<	_	5	mark	_	_
+5	escrever	escrever	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 6	que	que	SCONJ	KS|@SUB	_	31	mark	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 8	melhor	bom	ADJ	<KOMP>|<SUP>|<COMP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	9	amod	_	_
@@ -168,8 +168,8 @@
 37	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = E que só Schumacher acreditava em sua possibilidade de vencer.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-5
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2807
 1	E	e	CCONJ	KC|@CO	_	5	cc	_	_
 2	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
@@ -179,23 +179,22 @@
 6	em	em	ADP	<first-cjt>|PRP|@<PIV	_	8	case	_	_
 7	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	8	det	_	_
 8	possibilidade	possibilidade	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obj	_	_
-9	de	de	ADP	PRP|@N<	_	10	mark	_	_
+9	de	de	SCONJ	PRP|@N<	_	10	mark	_	_
 10	vencer	vencer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	ChangedBy=Issue165|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Senna, todo mundo viu, rodou quando estava em segundo lugar e com poucas chances de recuperar o primeiro.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-6
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2808
-# d2d = cc(lugar,e) -> cc(chances,e)  #106
 1	Senna	Senna	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
-2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
+2	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 3	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Tot	4	det	_	_
 4	mundo	mundo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
-5	viu	ver	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	dep	_	ChangedBy=Issue165|SpaceAfter=No
+5	viu	ver	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7	rodou	rodar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-8	quando	quando	ADV	<rel>|ADV|@ADVL>	_	9	advmod	_	_
+8	quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	9	mark	_	_
 9	estava	estar	VERB	<mv>|V|IMPF|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	advcl	_	_
 10	em	em	ADP	<first-cjt>|PRP|@<ADVL	_	12	case	_	_
 11	segundo	segundo	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	12	amod	_	ChangedBy=Issue172
@@ -204,15 +203,15 @@
 14	com	com	ADP	<cjt>|PRP|@<ADVL	_	16	case	_	_
 15	poucas	pouco	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	16	det	_	_
 16	chances	chance	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	conj	_	_
-17	de	de	ADP	PRP|@N<ARG	_	18	mark	_	_
+17	de	de	SCONJ	PRP|@N<ARG	_	18	mark	_	_
 18	recuperar	recuperar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	acl	_	_
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	primeiro	primeiro	ADJ	<n>|<Eg>|<NUM-ord>|<np-def>|ADJ|M|S|@<ACC	Gender=Masc|Number=Sing|NumType=Ord	18	obj	_	ChangedBy=Issue165|ChangedBy=Issue172|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Enterrou as previsões mais do que otimistas, e deixou ver quanto é viciado o noticiário esportivo.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-7
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2809
 1	Enterrou	enterrar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
@@ -236,26 +235,24 @@
 19	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = O compromisso com a precisão (e, por extensão, com o leitor) vale menos do que a torcida da imprensa nessas horas.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b &D
 # sent_id = CF670-8
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b &D
 # id = 2810
-# d2d = cc(precisão,e) -> cc(leitor,e)  #106
-# d2d = punct(precisão,,) -> punct(leitor,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	compromisso	compromisso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	_
 3	com	com	ADP	<first-cjt>|PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	precisão	precisão	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
-6	(	(	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
+6	(	(	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 7	e	e	CCONJ	<co-postnom>|KC|@CO	_	14	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-8	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	por	por	ADP	PRP|@<ADVL	_	10	case	_	_
 10	extensão	extensão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-11	,	,	PUNCT	PU|@PU	_	14	punct	_	_
+11	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 12	com	com	ADP	<cjt>|PRP|@N<	_	14	case	_	_
 13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	leitor	leitor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	conj	_	ChangedBy=Issue165|SpaceAfter=No
-15	)	)	PUNCT	PU|@PU	_	14	punct	_	_
+15	)	)	PUNCT	PU|@PU	_	10	punct	_	_
 16	vale	valer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 17	menos	pouco	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	_	16	advmod	_	_
 18-19	do	_	_	_	_	_	_	_	_
@@ -275,16 +272,15 @@
 29	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = A imprensa já se esqueceu de que os oligopólios são o vilão da URV e do plano FHC.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-9
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2811
-# d2d = cc(URV,e) -> cc(plano,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	imprensa	imprensa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	já	já	ADV	ADV|@ADVL>	_	5	advmod	_	_
 4	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	expl	_	ChangedBy=Issue135
 5	esqueceu	esquecer	VERB	<mv>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-6	de	de	ADP	PRP|@<PIV	_	12	mark	_	_
+6	de	de	SCONJ	PRP|@<PIV	_	12	mark	_	_
 7	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	oligopólios	oligopólio	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
@@ -304,11 +300,9 @@
 21	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O país convive com o novo indexador há um mês, o ministro virou candidato e os preços chamados de «abusivos» continuam em vigor.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-10
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2812
-# d2d = cc(convive,e) -> cc(continuam,e)  #106
-# d2d = punct(convive,,) -> punct(virou,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	país	país	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	convive	conviver	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -338,8 +332,8 @@
 27	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O assunto saiu da pauta, ainda que esteja dentro do bolso do leitor.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-11
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2813
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	assunto	assunto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -349,7 +343,7 @@
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	pauta	pauta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	ainda	ainda	ADV	ADV|@SUB	_	10	mark	_	MWE=ainda_que
+8	ainda	ainda	ADV	ADV|@SUB	_	10	mark	_	MWE=ainda_que|MWEPOS=SCONJ
 9	que	que	SCONJ	KS|@A<	_	8	fixed	_	_
 10	esteja	estar	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
 11	dentro	dentro	ADV	ADV|@<ADVL	_	10	advmod	_	MWE=dentro_de
@@ -364,8 +358,8 @@
 18	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = JUNIA NOGUEIRA DE SÁ é a ombudsman da Folha.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-12
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2814
 1	JUNIA	JUNIA	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	MWE=JUNIA_NOGUEIRA_DE_SÁ
 2	NOGUEIRA	NOGUEIRA	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
@@ -381,8 +375,8 @@
 11	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = A ombudsman tem mandato de um ano, renovável por mais um ano.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-13
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2815
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	ombudsman	ombudsman	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
@@ -400,15 +394,14 @@
 14	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ela não pode ser demitida durante o exercício do cargo e tem estabilidade por um ano após o exercício da função.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-14
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2816
-# d2d = cc(demitida,e) -> cc(tem,e)  #106
 1	Ela	ela	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj:pass	_	_
 2	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
-3	pode	poder	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+3	pode	poder	VERB	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	5	aux:pass	_	_
-5	demitida	demitir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+5	demitida	demitir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	_	_
 6	durante	durante	ADP	PRP|@<ADVL	_	8	case	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	exercício	exercício	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
@@ -432,15 +425,13 @@
 24	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Suas atribuições são criticar o jornal sob a perspectiva do leitor recebendo e checando as reclamações que ele encaminha à Redação e comentar, aos domingos, o noticiário dos meios de comunicação.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-15
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2817
-# d2d = cc(recebendo,e) -> cc(comentar,e)  #106
-# d2d = cc(recebendo,e) -> cc(checando,e)  #106
 1	Suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	2	det	_	_
 2	atribuições	atribuição	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
 3	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	criticar	criticar	VERB	<cjt>|<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	dep	_	_
+4	criticar	criticar	VERB	<cjt>|<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	jornal	jornal	NOUN	<np-def>|N|M|S|@ACC>	Gender=Masc|Number=Sing	13	obj	_	_
 7	sob	sob	ADP	PRP|@ADVL>	_	9	case	_	_
@@ -450,7 +441,7 @@
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	leitor	leitor	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	nmod	_	_
-13	recebendo	receber	VERB	<mv>|<cjt>|V|GER|@ICL-<SC	VerbForm=Ger	3	dep	_	_
+13	recebendo	receber	VERB	<mv>|<cjt>|V|GER|@ICL-<SC	VerbForm=Ger	4	advcl	_	_
 14	e	e	CCONJ	<co-ger>|KC|@CO	_	15	cc	_	d2d:#106
 15	checando	checar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	13	conj	_	ChangedBy=Issue149
 16	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
@@ -481,13 +472,13 @@
 38	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Cartas devem ser enviadas para a al. Barão de Limeira, 425, 8º andar, São Paulo (SP), CEP 01202-001, a.c. Junia Nogueira de Sá/Ombudsman.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-16
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2818
 1	Cartas	carta	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
-2	devem	dever	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+2	devem	dever	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	cop	_	ChangedBy=Issue167
-4	enviadas	enviar	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	0	root	_	_
+4	enviadas	enviar	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	2	xcomp	_	_
 5	para	para	ADP	PRP|@<ADVL	_	7	case	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	al.	al.	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	ChangedBy=Issue137
@@ -495,21 +486,21 @@
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	Limeira	Limeira	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-12	425	425	NUM	<card>|NUM|F|P|@N<PRED	NumType=Card	7	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+12	425	425	NUM	<card>|NUM|F|P|@N<PRED	NumType=Card	7	parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 14	8º	8º	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	15	amod	_	ChangedBy=Issue172
-15	andar	andar	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+15	andar	andar	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	7	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 17	São	São	PROPN	_	Gender=Masc|Number=Sing	7	appos	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
 18	Paulo	Paulo	PROPN	_	Number=Sing	17	flat:name	_	ChangedBy=Issue119
 19	(	(	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
-20	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+20	SP	SP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	17	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 21	)	)	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-23	CEP	cep	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	7	nmod	_	_
+23	CEP	cep	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	7	parataxis	_	_
 24	01202-001	01202-001	NUM	<card>|NUM|M|P|@N<	NumType=Card	23	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	26	punct	_	_
-26	a.c.	a.c.	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	7	nmod	_	_
+26	a.c.	a.c.	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	7	parataxis	_	_
 27	Junia	Junia	PROPN	_	Gender=Fem|Number=Sing	26	appos	_	ChangedBy=Issue119|MWE=Junia_Nogueira|MWEPOS=PROPN
 28	Nogueira	Nogueira	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
 29	de	de	ADP	PRP|@N<	_	30	case	_	_
@@ -517,10 +508,9 @@
 31	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Para contatos telefônicos, ligue (011) 224-3896 entre 14h e 18h, de segunda a sexta-feira.
-# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # sent_id = CF670-17
+# source = CETENFolha n=670 cad=Brasil sec=pol sem=94b
 # id = 2819
-# d2d = cc(14h,e) -> cc(18h,e)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	contatos	contato	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obl	_	ChangedBy=Issue137
 3	telefônicos	telefônico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	ChangedBy=Issue165|SpaceAfter=No

@@ -1,9 +1,7 @@
 # text = Depois de Cantanhede, a formação apresenta-se hoje em Vila Real, no sábado no Porto e na próxima quinta-feira em Tomar (ver págs. 10/11 deste Fim de Semana).
-# source = CETEMPúblico n=160 sec=clt sem=92b
 # sent_id = CP160-1
+# source = CETEMPúblico n=160 sec=clt sem=92b
 # id = 845
-# d2d = punct(hoje,,) -> punct(sábado,,)  #106
-# d2d = cc(hoje,e) -> cc(quinta-feira,e)  #106
 1	Depois	depois	ADV	ADV|@ADVL>	_	7	advmod	_	_
 2	de	de	ADP	PRP|@A<	_	3	case	_	_
 3	Cantanhede	Cantanhede	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	1	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -50,16 +48,9 @@
 39	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Até 24 de Outubro, a Nova Filarmonia -- que actualmente é composta por 35 músicos -- estará em Covilhã, Leiria, Paio Pires, Lisboa, Coimbra, Valença, volta a Vila Real e, finalmente, toca em Matosinhos.
-# source = CETEMPúblico n=160 sec=clt sem=92b
 # sent_id = CP160-2
+# source = CETEMPúblico n=160 sec=clt sem=92b
 # id = 846
-# d2d = punct(Leiria,,) -> punct(toca,,)  #106
-# d2d = punct(Leiria,,) -> punct(volta,,)  #106
-# d2d = punct(Leiria,,) -> punct(volta,,)  #106
-# d2d = punct(Leiria,,) -> punct(volta,,)  #106
-# d2d = punct(Leiria,,) -> punct(volta,,)  #106
-# d2d = punct(Leiria,,) -> punct(volta,,)  #106
-# d2d = cc(Leiria,e) -> cc(toca,e)  #106
 1	Até	até	ADP	PRP|@ADVL>	_	2	case	_	_
 2	24	24	NUM	<card>|NUM|M|S|@P<	NumType=Card	22	nmod	_	ChangedBy=Issue168
 3	de	de	ADP	PRP|@A<	_	4	case	_	_
@@ -81,40 +72,34 @@
 19	em	em	ADP	<first-cjt>|PRP|@<SA	_	20	case	_	_
 20	Covilhã	Covilhã	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	22	punct	_	_
-22	Leiria	Leiria	PROPN	<cjt>|PROP|M|S|@<SA	Gender=Masc|Number=Sing	20	dep	_	ChangedBy=Issue165|SpaceAfter=No
-23	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
-24	Paio	Paio	PROPN	_	Gender=Masc|Number=Sing	20	dep	_	ChangedBy=Issue119|MWE=Paio_Pires|MWEPOS=PROPN
+22	Leiria	Leiria	PROPN	<cjt>|PROP|M|S|@<SA	Gender=Masc|Number=Sing	20	conj	_	ChangedBy=Issue165|SpaceAfter=No
+23	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+24	Paio	Paio	PROPN	_	Gender=Masc|Number=Sing	20	conj	_	ChangedBy=Issue119|MWE=Paio_Pires|MWEPOS=PROPN
 25	Pires	Pires	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-26	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
-27	Lisboa	Lisboa	PROPN	<cjt>|PROP|F|S|@<SA	Gender=Fem|Number=Sing	20	dep	_	ChangedBy=Issue165|SpaceAfter=No
-28	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
-29	Coimbra	Coimbra	PROPN	<cjt>|PROP|F|S|@<SA	Gender=Fem|Number=Sing	20	dep	_	ChangedBy=Issue165|SpaceAfter=No
-30	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
-31	Valença	Valença	PROPN	<cjt>|PROP|M|S|@<SA	Gender=Masc|Number=Sing	20	dep	_	ChangedBy=Issue165|SpaceAfter=No
+26	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+27	Lisboa	Lisboa	PROPN	<cjt>|PROP|F|S|@<SA	Gender=Fem|Number=Sing	20	conj	_	ChangedBy=Issue165|SpaceAfter=No
+28	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
+29	Coimbra	Coimbra	PROPN	<cjt>|PROP|F|S|@<SA	Gender=Fem|Number=Sing	20	conj	_	ChangedBy=Issue165|SpaceAfter=No
+30	,	,	PUNCT	PU|@PU	_	31	punct	_	d2d:#106
+31	Valença	Valença	PROPN	<cjt>|PROP|M|S|@<SA	Gender=Masc|Number=Sing	20	conj	_	ChangedBy=Issue165|SpaceAfter=No
 32	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
-33	volta	voltar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	conj	_	_
+33	volta	voltar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
 34	a	a	ADP	PRP|@<SA	_	35	case	_	_
 35	Vila	Vila	PROPN	_	Gender=Fem|Number=Sing	33	obl	_	ChangedBy=Issue119|MWE=Vila_Real|MWEPOS=PROPN
 36	Real	Real	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119
 37	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	41	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-38	,	,	PUNCT	PU|@PU	_	41	punct	_	d2d:#106
+38	,	,	PUNCT	PU|@PU	_	39	punct	_	d2d:#106
 39	finalmente	finalmente	ADV	ADV|@ADVL>	_	41	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 40	,	,	PUNCT	PU|@PU	_	39	punct	_	_
-41	toca	tocar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	conj	_	_
+41	toca	tocar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
 42	em	em	ADP	PRP|@<ADVL	_	43	case	_	_
 43	Matosinhos	Matosinhos	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	41	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 44	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Entre os variadíssimos patrocinadores destes concertos, encontram-se, entre outras empresas e instituições financeiras, a Rodoviária Nacional, Portucel, Shell Portuguesa, Sonae, Banco Totta & Açores e Montepio Geral.
-# source = CETEMPúblico n=160 sec=clt sem=92b
 # sent_id = CP160-3
+# source = CETEMPúblico n=160 sec=clt sem=92b
 # id = 847
-# d2d = punct(Rodoviária,,) -> punct(Portucel,,)  #106
-# d2d = cc(Rodoviária,e) -> cc(Montepio,e)  #106
-# d2d = cc(empresas,e) -> cc(instituições,e)  #106
-# d2d = punct(Rodoviária,,) -> punct(Shell,,)  #106
-# d2d = punct(Rodoviária,,) -> punct(Banco,,)  #106
-# d2d = punct(Rodoviária,,) -> punct(Sonae,,)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	4	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 3	variadíssimos	variado	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	4	amod	_	_
@@ -156,8 +141,8 @@
 37	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Entre os concertos previstos para Novembro, destaca-se o de dia 3, no Palácio Nacional de Queluz, quando a orquestra acompanhar o pianista Sequeira Costa, que interpretará o concerto nº 1, opus 11, de Chopin, com o patrocínio da GALP.
-# source = CETEMPúblico n=160 sec=clt sem=92b
 # sent_id = CP160-4
+# source = CETEMPúblico n=160 sec=clt sem=92b
 # id = 848
 1	Entre	entre	ADP	PRP|@>N	_	3	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_

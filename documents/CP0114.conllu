@@ -1,6 +1,6 @@
 # text = João Braga apresenta fado universal no CCB
-# source = CETEMPúblico n=114 sec=clt sem=94a
 # sent_id = CP114-1
+# source = CETEMPúblico n=114 sec=clt sem=94a
 # id = 578
 1	João	João	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=João_Braga|MWEPOS=PROPN
 2	Braga	Braga	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -13,8 +13,8 @@
 8	CCB	CCB	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
 
 # text = Fados d'Aquém em Belém
-# source = CETEMPúblico n=114 sec=clt sem=94a
 # sent_id = CP114-2
+# source = CETEMPúblico n=114 sec=clt sem=94a
 # id = 579
 1	Fados	Fados	PROPN	_	Gender=Masc|Number=Plur	0	root	_	ChangedBy=Issue119|MWE=Fados_d'Aquém|MWEPOS=PROPN
 2	d'Aquém	d'Aquém	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -22,20 +22,14 @@
 4	Belém	Belém	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = Os «Fados d'Aquém e d'Além-Mar» que João Braga concebeu para o Centro Cultural de Belém traduziram-se numa exibição confrangedora de equívocos e falta de preparação onde couberam amigos, muito Fernando Pessoa, uma boa voz, de Rita Guerra, e uma anedota brasileira de mau-gosto.
-# source = CETEMPúblico n=114 sec=clt sem=94a
 # sent_id = CP114-4
+# source = CETEMPúblico n=114 sec=clt sem=94a
 # id = 580
-# d2d = punct(amigos,,) -> punct(voz,,)  #106
-# d2d = cc(amigos,e) -> cc(anedota,e)  #106
-# d2d = punct(amigos,,) -> punct(anedota,,)  #106
-# d2d = punct(amigos,,) -> punct(anedota,,)  #106
-# d2d = cc(equívocos,e) -> cc(falta,e)  #106
-# d2d = punct(amigos,,) -> punct(voz,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	Fados	Fados	PROPN	_	Gender=Masc|Number=Plur	18	nsubj	_	ChangedBy=Issue119|MWE=Fados_d'Aquém_e_d'Além-Mar|MWEPOS=PROPN
 4	d'Aquém	d'Aquém	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
-5	e	e	CCONJ	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
+5	e	e	CCONJ	_	_	3	flat:name	_	ChangedBy=Issue119
 6	d'Além-Mar	d'Além-Mar	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 7	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 8	que	que	PRON	<rel>|INDP|M|P|@SUB	Gender=Masc|Number=Plur|PronType=Rel	11	obj	_	_
@@ -50,11 +44,11 @@
 17	Belém	Belém	PROPN	PROP|@P<	Number=Sing	14	nmod	_	_
 18-19	traduziram-se	_	_	_	_	_	_	_	_
 18	traduziram	traduzir	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-19	se	se	PRON	<refl>|PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	18	obj	_	_
+19	se	se	PRON	<refl>|PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	18	expl	_	_
 20-21	numa	_	_	_	_	_	_	_	_
 20	em	em	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
 21	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	exibição	exibição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	iobj	_	_
+22	exibição	exibição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obj	_	_
 23	confrangedora	confrangedor	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	22	amod	_	_
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
 25	equívocos	equívoco	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
@@ -62,22 +56,22 @@
 27	falta	falta	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	25	conj	_	_
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	preparação	preparação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
-30	onde	onde	ADV	<rel>|ADV|@ADVL>	_	31	advmod	_	_
+30	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	31	obl	_	_
 31	couberam	caber	VERB	<mv>|V|PS|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	22	acl:relcl	_	_
 32	amigos	amigo	NOUN	<first-cjt>|<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	31	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
-33	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
+33	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 34	muito	muito	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	35	det	_	_
 35	Fernando	Fernando	PROPN	_	Gender=Masc|Number=Sing	32	nsubj	_	ChangedBy=Issue119|MWE=Fernando_Pessoa|MWEPOS=PROPN
 36	Pessoa	Pessoa	PROPN	_	Number=Sing	35	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-37	,	,	PUNCT	PU|@PU	_	40	punct	_	d2d:#106
+37	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
 38	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 39	boa	bom	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	40	amod	_	_
 40	voz	voz	NOUN	<cjt>|<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	32	conj	_	ChangedBy=Issue165|SpaceAfter=No
-41	,	,	PUNCT	PU|@PU	_	48	punct	_	d2d:#106
+41	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 42	de	de	ADP	PRP|@N<PRED	_	43	case	_	_
 43	Rita	Rita	PROPN	_	Gender=Fem|Number=Sing	40	nmod	_	ChangedBy=Issue119|MWE=Rita_Guerra|MWEPOS=PROPN
 44	Guerra	Guerra	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119|SpaceAfter=No
-45	,	,	PUNCT	PU|@PU	_	48	punct	_	d2d:#106
+45	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 46	e	e	CCONJ	<co-subj>|KC|@CO	_	48	cc	_	d2d:#106
 47	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
 48	anedota	anedota	NOUN	<cjt>|<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	32	conj	_	_
@@ -87,8 +81,8 @@
 52	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = O fado, esse, ficou aquém.
-# source = CETEMPúblico n=114 sec=clt sem=94a
 # sent_id = CP114-5
+# source = CETEMPúblico n=114 sec=clt sem=94a
 # id = 581
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	fado	fado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue165|SpaceAfter=No

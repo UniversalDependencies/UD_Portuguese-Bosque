@@ -1,6 +1,6 @@
 # text = PE nas listas do PS para a Câmara de Coimbra
-# source = CETEMPúblico n=543 sec=pol sem=93a
 # sent_id = CP543-1
+# source = CETEMPúblico n=543 sec=pol sem=93a
 # id = 2830
 1	PE	PE	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2-3	nas	_	_	_	_	_	_	_	_
@@ -18,15 +18,9 @@
 12	Coimbra	Coimbra	PROPN	PROP|@P<	Number=Sing	10	nmod	_	_
 
 # text = Carlos Cidade, Linhares de Castro, Luís Januário, Leal Amado e Moura e Sá -- o único que não é ex-militante do PCP -- são os nomes escolhidos e já ratificados pelo Núcleo de Coimbra da Plataforma de Esquerda para integrar as listas do PS à câmara e assembleia municipais da capital do distrito.
-# source = CETEMPúblico n=543 sec=pol sem=93a
 # sent_id = CP543-2
+# source = CETEMPúblico n=543 sec=pol sem=93a
 # id = 2831
-# d2d = cc(câmara,e) -> cc(assembleia,e)  #106
-# d2d = punct(Carlos,,) -> punct(Leal,,)  #106
-# d2d = punct(Carlos,,) -> punct(Luís,,)  #106
-# d2d = punct(Carlos,,) -> punct(Linhares,,)  #106
-# d2d = cc(Carlos,e) -> cc(Moura,e)  #106
-# d2d = cc(escolhidos,e) -> cc(ratificados,e)  #106
 1	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	30	nsubj	_	ChangedBy=Issue119|MWE=Carlos_Cidade|MWEPOS=PROPN
 2	Cidade	Cidade	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	d2d:#106
@@ -41,11 +35,11 @@
 12	Amado	Amado	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 13	e	e	CCONJ	<co-subj>|KC|@CO	_	14	cc	_	d2d:#106
 14	Moura	Moura	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Moura_e_Sá|MWEPOS=PROPN
-15	e	e	CCONJ	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
+15	e	e	CCONJ	_	_	14	flat:name	_	ChangedBy=Issue119
 16	Sá	Sá	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 17	--	--	PUNCT	PU|@PU	_	19	punct	_	_
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	único	único	NOUN	<n>|<np-def>|ADJ|M|S|@APP	Gender=Masc|Number=Sing	14	dep	_	_
+19	único	único	NOUN	<n>|<np-def>|ADJ|M|S|@APP	Gender=Masc|Number=Sing	14	appos	_	_
 20	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	23	nsubj	_	_
 21	não	não	ADV	ADV|@ADVL>	Polarity=Neg	23	advmod	_	ChangedBy=Issue108
 22	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	ChangedBy=Issue167
@@ -74,7 +68,7 @@
 42	Plataforma	Plataforma	PROPN	PROP|@P<	Number=Sing	39	nmod	_	_
 43	de	de	ADP	PRP|@N<	_	44	case	_	_
 44	Esquerda	Esquerda	PROPN	PROP|@P<	Number=Sing	42	nmod	_	_
-45	para	para	ADP	PRP|@<ADVL	_	46	mark	_	_
+45	para	para	SCONJ	PRP|@<ADVL	_	46	mark	_	_
 46	integrar	integrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	31	advcl	_	_
 47	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	48	det	_	_
 48	listas	lista	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	46	obj	_	_
@@ -100,18 +94,16 @@
 64	.	.	PUNCT	PU|@PU	_	30	punct	_	_
 
 # text = A Plataforma de Esquerda deverá ainda ficar representada nos concelhos de Montemor-o-velho, Lousã, Condeixa e Cantanhede, Arganil, Figueira da Foz, Miranda do Corvo e Soure.
-# source = CETEMPúblico n=543 sec=pol sem=93a &L
 # sent_id = CP543-3
+# source = CETEMPúblico n=543 sec=pol sem=93a &L
 # id = 2832
-# d2d = cc(Montemor-o-velho,e) -> cc(Soure,e)  #106
-# d2d = cc(Montemor-o-velho,e) -> cc(Cantanhede,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Plataforma	Plataforma	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	MWE=Plataforma_de_Esquerda
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
 4	Esquerda	Esquerda	PROPN	PROP|@P<	Number=Sing	2	nmod	_	_
-5	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	aux	_	_
+5	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 6	ainda	ainda	ADV	ADV|@ADVL>	_	7	advmod	_	_
-7	ficar	ficar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+7	ficar	ficar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
 8	representada	representado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	7	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue91
 9-10	nos	_	_	_	_	_	_	_	_
 9	em	em	ADP	<sam->|PRP|@<ADVL	_	11	case	_	_
@@ -144,10 +136,9 @@
 34	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Essencialmente no concelho de Coimbra e em vários casos, a PE poderá mesmo encabeçar a candidatura à presidência das juntas de freguesia.
-# source = CETEMPúblico n=543 sec=pol sem=93a
 # sent_id = CP543-4
+# source = CETEMPúblico n=543 sec=pol sem=93a
 # id = 2833
-# d2d = cc(concelho,e) -> cc(casos,e)  #106
 1	Essencialmente	essencialmente	ADV	ADV|@>A	_	4	advmod	_	_
 2-3	no	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|<first-cjt>|PRP|@ADVL>	_	4	case	_	_
@@ -162,9 +153,9 @@
 11	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	PE	PE	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	16	nsubj	_	_
-14	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	aux	_	_
+14	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 15	mesmo	mesmo	ADV	<quant>|ADV|@ADVL>	_	16	advmod	_	_
-16	encabeçar	encabeçar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+16	encabeçar	encabeçar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	candidatura	candidatura	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	obj	_	_
 19-20	à	_	_	_	_	_	_	_	_
@@ -176,6 +167,6 @@
 23	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
 24	juntas	juntas	NOUN	_	Gender=Fem|Number=Plur	21	nmod	_	MWE=juntas_de_freguesia|MWEPOS=NOUN
 25	de	de	ADP	_	_	24	compound	_	_
-26	freguesia	freguesia	NOUN	_	_	24	compound	_	ChangedBy=Issue165|SpaceAfter=No
+26	freguesia	freguesia	NOUN	_	Gender=Fem|Number=Sing	24	compound	_	ChangedBy=Issue165|SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 

@@ -1,12 +1,12 @@
 # text = Apesar da declaração dos separatistas, o governo britânico continua disposto a iniciar as negociações com o Sinn Fein, braço político do IRA, antes do Natal.
-# source = CETENFolha n=855 cad=Mundo sec=pol sem=94a
 # sent_id = CF855-1
+# source = CETENFolha n=855 cad=Mundo sec=pol sem=94a
 # id = 3607
-1	Apesar	apesar	ADV	ADV|@ADVL>	_	12	advmod	_	MWE=Apesar_de
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	4	case	_	MWE=Apesar_de|MWEPOS=ADP
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	PRP|@A<	_	4	case	_	_
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	declaração	declaração	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	_
+4	declaração	declaração	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
 5-6	dos	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
@@ -16,8 +16,8 @@
 10	governo	governo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 11	britânico	britânico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	_
 12	continua	continuar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-13	disposto	disposto	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	10	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
-14	a	a	ADP	PRP|@<PIV	_	15	mark	_	_
+13	disposto	disposto	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	12	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue91
+14	a	a	SCONJ	PRP|@<PIV	_	15	mark	_	_
 15	iniciar	iniciar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	xcomp	_	_
 16	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	17	det	_	_
 17	negociações	negociação	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	15	obj	_	_
@@ -41,8 +41,8 @@
 33	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O ministro britânico para a Irlanda do Norte, Patrick Mayhew, afirmou ontem em Belfast que o cronograma do processo de paz será mantido.
-# source = CETENFolha n=855 cad=Mundo sec=pol sem=94a
 # sent_id = CF855-2
+# source = CETENFolha n=855 cad=Mundo sec=pol sem=94a
 # id = 3608
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ministro	ministro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
@@ -76,16 +76,16 @@
 28	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Mayhew disse que o IRA poderia demonstrar que realmente não autorizou a operação de Newry devolvendo os US$ 210 mil levados durante o assalto.
-# source = CETENFolha n=855 cad=Mundo sec=pol sem=94a
 # sent_id = CF855-3
+# source = CETENFolha n=855 cad=Mundo sec=pol sem=94a
 # id = 3609
 1	Mayhew	Mayhew	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	7	mark	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	IRA	IRA	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
-6	poderia	poder	AUX	<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	7	aux	_	_
-7	demonstrar	demonstrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	ccomp	_	_
+6	poderia	poder	VERB	<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	ccomp	_	_
+7	demonstrar	demonstrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	xcomp	_	_
 8	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
 9	realmente	realmente	ADV	ADV|@ADVL>	_	11	advmod	_	_
 10	não	não	ADV	_	Polarity=Neg	11	advmod	_	_

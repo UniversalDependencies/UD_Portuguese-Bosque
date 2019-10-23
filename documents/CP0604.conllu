@@ -1,9 +1,8 @@
 # text = Quando iam a caminho do País Basco, jornalista e operador de câmara receberam a notícia da morte, em Bilbao, de Luiz Andrés Sampiero, um tenente da Guardia Civil encarregue sobretudo de assuntos ligados à toxicodependência.
-# source = CETEMPúblico n=604 sec=clt sem=97a
 # sent_id = CP604-1
+# source = CETEMPúblico n=604 sec=clt sem=97a
 # id = 3128
-# d2d = cc(jornalista,e) -> cc(operador,e)  #106
-1	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	2	advmod	_	_
+1	Quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	2	mark	_	_
 2	iam	ir	VERB	<mv>|V|IMPF|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	15	advcl	_	_
 3	a	a	ADP	PRP|@<SA	_	4	case	_	_
 4	caminho	caminho	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
@@ -53,24 +52,20 @@
 44	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Esperavam, pois, encontrar uma cidade em estado de sítio, mas depararam-se com uma «estranha normalidade».
-# source = CETEMPúblico n=604 sec=clt sem=97a
 # sent_id = CP604-2
+# source = CETEMPúblico n=604 sec=clt sem=97a
 # id = 3129
-# d2d = punct(Esperavam,,) -> punct(depararam-,,)  #106
-# d2d = punct(Esperavam,,) -> punct(depararam-,,)  #106
-# d2d = cc(Esperavam,mas) -> cc(depararam-,mas)  #106
-# d2d = punct(Esperavam,,) -> punct(depararam-,,)  #106
 1	Esperavam	esperar	VERB	<mv>|<first-cjt>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
-2	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
+2	,	,	PUNCT	PU|@PU	_	3	punct	_	d2d:#106
 3	pois	pois	ADV	KS|@<ADVL	_	1	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-4	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
+4	,	,	PUNCT	PU|@PU	_	3	punct	_	d2d:#106
 5	encontrar	encontrar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	1	xcomp	_	_
 6	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	cidade	cidade	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	_
 8	em	em	ADP	PRP|@<OC	_	9	case	_	_
 9	estado	estado	NOUN	_	Gender=Masc|Number=Sing	5	xcomp	_	MWE=estado_de_sítio|MWEPOS=NOUN
 10	de	de	ADP	_	_	9	compound	_	_
-11	sítio	sítio	NOUN	_	_	9	compound	_	ChangedBy=Issue165|SpaceAfter=No
+11	sítio	sítio	NOUN	_	Gender=Masc|Number=Sing	9	compound	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 13	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
 14-15	depararam-se	_	_	_	_	_	_	_	_
@@ -85,15 +80,14 @@
 22	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Ainda chegaram a tempo de registar a saída do funeral da Capela do Rei, «que não é o dos bascos», acompanhado por muitas flores e palmas.
-# source = CETEMPúblico n=604 sec=clt sem=97a
 # sent_id = CP604-3
+# source = CETEMPúblico n=604 sec=clt sem=97a
 # id = 3130
-# d2d = cc(flores,e) -> cc(palmas,e)  #106
 1	Ainda	ainda	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	chegaram	chegar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	a	a	ADP	PRP|@<ADVL	_	4	case	_	MWE=a_tempo_de
-4	tempo	tempo	NOUN	N|@P<	_	2	obl	_	_
-5	de	de	ADP	PRP|@N<	_	6	mark	_	_
+4	tempo	tempo	NOUN	N|@P<	Gender=Masc|Number=Sing	2	obl	_	_
+5	de	de	SCONJ	PRP|@N<	_	6	mark	_	_
 6	registar	registar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	acl	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	saída	saída	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
@@ -130,16 +124,16 @@
 35	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Quando se trata de falar é que já é mais difícil.
-# source = CETEMPúblico n=604 sec=clt sem=97a
 # sent_id = CP604-4
+# source = CETEMPúblico n=604 sec=clt sem=97a
 # id = 3131
-1	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	3	advmod	_	_
+1	Quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	3	mark	_	_
 2	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl	_	ChangedBy=Issue135
 3	trata	tratar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	advcl	_	_
-4	de	de	ADP	PRP|@<PIV	_	5	mark	_	_
+4	de	de	SCONJ	PRP|@<PIV	_	5	mark	_	_
 5	falar	falar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	xcomp	_	_
-6	é	é	ADV	<foc>|ADV|@ADVL>	_	11	mark	_	_
-7	que	que	ADV	<foc>|ADV|@ADVL>	_	11	mark	_	_
+6	é	ser	AUX	<foc>|ADV|@ADVL>	_	11	discourse	_	MWE=é_que|MWEPOS=INTJ
+7	que	que	SCONJ	<foc>|ADV|@ADVL>	_	6	fixed	_	_
 8	já	já	ADV	ADV|@ADVL>	_	11	advmod	_	_
 9	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	ChangedBy=Issue167
 10	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	11	advmod	_	_
@@ -147,15 +141,14 @@
 12	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Os bascos não gostam de falar da ETA ou das suas acções.
-# source = CETEMPúblico n=604 sec=clt sem=97a
 # sent_id = CP604-5
+# source = CETEMPúblico n=604 sec=clt sem=97a
 # id = 3132
-# d2d = cc(ETA,ou) -> cc(acções,ou)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	bascos	basco	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 4	gostam	gostar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	de	de	ADP	PRP|@<PIV	_	6	mark	_	_
+5	de	de	SCONJ	PRP|@<PIV	_	6	mark	_	_
 6	falar	falar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	xcomp	_	_
 7-8	da	_	_	_	_	_	_	_	_
 7	de	de	ADP	<first-cjt>|<sam->|PRP|@<PIV	_	9	case	_	_
@@ -170,10 +163,9 @@
 15	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = «Não falo, choro», declara um transeunte perante as câmaras.
-# source = CETEMPúblico n=604 sec=clt sem=97a
 # sent_id = CP604-6
+# source = CETEMPúblico n=604 sec=clt sem=97a
 # id = 3133
-# d2d = punct(falo,,) -> punct(choro,,)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	falo	falar	VERB	<first-cjt>|<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
@@ -190,8 +182,8 @@
 14	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = É um povo apaixonado, o povo basco.
-# source = CETEMPúblico n=604 sec=clt sem=97a
 # sent_id = CP604-7
+# source = CETEMPúblico n=604 sec=clt sem=97a
 # id = 3134
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -199,13 +191,13 @@
 4	apaixonado	apaixonar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	o	o	DET	N|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	povo	povo	NOUN	N|@<SUBJ	_	3	nsubj	_	_
+7	povo	povo	NOUN	N|@<SUBJ	Gender=Masc|Number=Sing	3	nsubj	_	_
 8	basco	basco	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 9	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Mas também «um povo adormecido» pelas atrocidades cometidas pela «Espanha federalista contra a individualidade de um povo».
-# source = CETEMPúblico n=604 sec=clt sem=97a
 # sent_id = CP604-8
+# source = CETEMPúblico n=604 sec=clt sem=97a
 # id = 3135
 1	Mas	mas	CCONJ	KC|@CO	_	5	cc	_	_
 2	também	também	ADV	ADV|@>N	_	5	advmod	_	_
@@ -235,8 +227,8 @@
 24	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = E a maior dessas atrocidades passou-se há 60 anos, em Guernica, para sempre imortalizada no famoso quadro de Pablo Picasso.
-# source = CETEMPúblico n=604 sec=clt sem=97a
 # sent_id = CP604-9
+# source = CETEMPúblico n=604 sec=clt sem=97a
 # id = 3136
 1	E	e	CCONJ	KC|@CO	_	7	cc	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_

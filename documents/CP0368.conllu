@@ -1,6 +1,6 @@
 # text = Queima de Coimbra já tem programa
-# source = CETEMPúblico n=368 sec=soc sem=96a
 # sent_id = CP368-1
+# source = CETEMPúblico n=368 sec=soc sem=96a
 # id = 1925
 1	Queima	queima	NOUN	<prop>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -10,16 +10,16 @@
 6	programa	programa	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
 
 # text = Foi já em tom de festa que a Comissão Central da Queima das Fitas de Coimbra anunciou o pré-programa da grande celebração dos estudantes deste ano, que terá pela primeira vez uma mascote: um morcego de ar matreiro, que em sete «poses» diferentes retrata o estudante ao longo dos sete longos dias da Queima.
-# source = CETEMPúblico n=368 sec=soc sem=96a
 # sent_id = CP368-2
+# source = CETEMPúblico n=368 sec=soc sem=96a
 # id = 1926
-1	Foi	foi	ADV	<foc>|ADV|@ADVL>	_	19	mark	_	_
+1	Foi	foi	SCONJ	<foc>|ADV|@ADVL>	_	19	mark	_	_
 2	já	já	ADV	ADV|@>A	_	4	advmod	_	_
 3	em	em	ADP	PRP|@ADVL>	_	4	case	_	_
 4	tom	tom	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	ChangedBy=Issue137
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	festa	festa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
-7	que	que	ADV	<foc>|ADV|@ADVL>	_	19	mark	_	_
+7	que	que	SCONJ	<foc>|ADV|@ADVL>	_	19	mark	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Comissão	Comissão	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	19	nsubj	_	MWE=Comissão_Central
 10	Central	Central	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	_
@@ -79,7 +79,7 @@
 58-59	ao	_	_	_	_	_	_	_	_
 58	a	a	ADP	<sam->|PRP|@N<	_	60	case	_	_
 59	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_
-60	longo	longo	NOUN	N|@P<	_	55	obl	_	_
+60	longo	longo	NOUN	N|@P<	Gender=Masc|Number=Sing	55	obl	_	_
 61-62	dos	_	_	_	_	_	_	_	_
 61	de	de	ADP	PRP|@N<	_	65	case	_	_
 62	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	65	det	_	_
@@ -93,10 +93,9 @@
 69	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = Só da Serenata Monumental e do Sarau não se falou:
-# source = CETEMPúblico n=368 sec=soc sem=96a
 # sent_id = CP368-3
+# source = CETEMPúblico n=368 sec=soc sem=96a
 # id = 1927
-# d2d = cc(Serenata,e) -> cc(Sarau,e)  #106
 1	Só	só	ADV	ADV|@>P	_	4	advmod	_	_
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	<first-cjt>|<sam->|PRP|@PIV>	_	4	case	_	_
@@ -114,15 +113,15 @@
 13	:	:	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = a Comissão Central continua a contar com a participação da Secção de Fado, como exige o regulamento, afirmando desconhecer «oficialmente» a decisão daquela de não participar no programa da Queima das Fitas/96.
-# source = CETEMPúblico n=368 sec=soc sem=96a
 # sent_id = CP368-4
+# source = CETEMPúblico n=368 sec=soc sem=96a
 # id = 1928
 1	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Comissão	Comissão	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	MWE=Comissão_Central
 3	Central	Central	PROPN	PROP|@N<	Number=Sing	2	flat:name	_	_
-4	continua	continuar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
-6	contar	contar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+4	continua	continuar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=continua_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
+6	contar	contar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	com	com	ADP	PRP|@<PIV	_	9	case	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	participação	participação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obj	_	_
@@ -133,7 +132,7 @@
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	Fado	Fado	PROPN	PROP|@P<	Number=Sing	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-16	como	como	ADV	<rel>|ADV|@ADVL>	_	17	advmod	_	_
+16	como	como	SCONJ	<rel>|ADV|@ADVL>	_	17	mark	_	_
 17	exige	exigir	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	advcl	_	_
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	regulamento	regulamento	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	17	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -148,7 +147,7 @@
 28-29	daquela	_	_	_	_	_	_	_	_
 28	de	de	ADP	<sam->|PRP|@N<ARG	_	29	case	_	_
 29	aquela	aquele	PRON	<-sam>|<dem>|DET|F|S|@P<	Gender=Fem|Number=Sing|PronType=Dem	27	det	_	_
-30	de	de	ADP	PRP|@N<ARG	_	32	mark	_	_
+30	de	de	SCONJ	PRP|@N<ARG	_	32	mark	_	_
 31	não	não	ADV	_	Polarity=Neg	32	advmod	_	_
 32	participar	participar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	27	acl	_	_
 33-34	no	_	_	_	_	_	_	_	_
@@ -167,12 +166,12 @@
 43	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Tudo por causa da atribuição a outro grupo académico, a Fan-Farra, de uma actividade que os Fados consideram sua: o Festival de Tunas (ver PÚBLICO de 23/2).
-# source = CETEMPúblico n=368 sec=soc sem=96a
 # sent_id = CP368-5
+# source = CETEMPúblico n=368 sec=soc sem=96a
 # id = 1929
 1	Tudo	tudo	PRON	<quant>|INDP|M|S|@NPHR	Gender=Masc|Number=Sing|PronType=Ind	0	root	_	_
 2	por	por	ADP	<sam->|PRP|@N<	_	3	case	_	MWE=por_causa_de
-3	causa	causa	NOUN	N|@P<	_	1	nmod	_	_
+3	causa	causa	NOUN	N|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	PRP|@N<	_	6	case	_	_
 5	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
@@ -207,19 +206,18 @@
 34	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Nuno Guerra, presidente da Comissão Central, minimizou o diferendo entre as duas estruturas e afirmou que «a linha orientadora é trabalhar com a Secção de Fado», pelo que o convite vai ser feito, como é hábito.
-# source = CETEMPúblico n=368 sec=soc sem=96a
 # sent_id = CP368-6
+# source = CETEMPúblico n=368 sec=soc sem=96a
 # id = 1930
-# d2d = cc(minimizou,e) -> cc(afirmou,e)  #106
 1	Nuno	Nuno	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	ChangedBy=Issue119|MWE=Nuno_Guerra|MWEPOS=PROPN
 2	Guerra	Guerra	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-4	presidente	presidente	NOUN	N|@N<PRED	_	1	appos	_	MWE=presidente_da_Comissão_Central
+4	presidente	presidente	NOUN	N|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	MWE=presidente_da_Comissão_Central
 5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Comissão	comissão	NOUN	N|@P<	_	4	nmod	_	_
-8	Central	central	ADJ	ADJ|@N<	_	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
+7	Comissão	comissão	NOUN	N|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+8	Central	central	ADJ	ADJ|@N<	Gender=Fem|Number=Sing	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 10	minimizou	minimizar	VERB	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
@@ -260,8 +258,8 @@
 45	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Só se o Fado não aceitar é que a Comissão assume a realização dos dois eventos.
-# source = CETEMPúblico n=368 sec=soc sem=96a
 # sent_id = CP368-7
+# source = CETEMPúblico n=368 sec=soc sem=96a
 # id = 1931
 1	Só	só	ADV	ADV|@>S	_	6	advmod	_	_
 2	se	se	SCONJ	KS|@SUB	_	6	mark	_	_
@@ -269,8 +267,8 @@
 4	Fado	Fado	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 5	não	não	ADV	_	Polarity=Neg	6	advmod	_	_
 6	aceitar	aceitar	VERB	<mv>|<cjt>|<first-cjt>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	advcl	_	_
-7	é	é	ADP	PRP|@<FOC	_	8	case	_	MWE=é_que
-8	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	_
+7	é	ser	AUX	PRP|@<FOC	_	11	discourse	_	MWE=é_que|MWEPOS=INTJ
+8	que	que	SCONJ	N|M|S|@P<	_	7	fixed	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Comissão	Comissão	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
 11	assume	assumir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -284,12 +282,9 @@
 18	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Problema será conseguir fazer uma Serenata Monumental sem os fadistas da Academia, que entretanto prometem fazer uma serenata paralela, no mesmo dia e à mesma hora, e em local onde os estudantes não poderão ignorar.
-# source = CETEMPúblico n=368 sec=soc sem=96a
 # sent_id = CP368-8
+# source = CETEMPúblico n=368 sec=soc sem=96a
 # id = 1932
-# d2d = punct(dia,,) -> punct(local,,)  #106
-# d2d = cc(dia,e) -> cc(hora,e)  #106
-# d2d = cc(dia,e) -> cc(local,e)  #106
 1	Problema	problema	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	será	ser	AUX	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 3	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	0	root	_	_
@@ -306,7 +301,7 @@
 13	Academia	Academia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 15	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	17	nsubj	_	_
-16	entretanto	entretanto	ADV	<kc>|ADV|@ADVL>	_	17	advmod	_	_
+16	entretanto	entretanto	CCONJ	<kc>|ADV|@ADVL>	_	17	cc	_	_
 17	prometem	prometer	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
 18	fazer	fazer	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	17	xcomp	_	_
 19	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
@@ -328,11 +323,11 @@
 33	e	e	CCONJ	<co-advl>|KC|@CO	_	35	cc	_	d2d:#106
 34	em	em	ADP	<cjt>|PRP|@<ADVL	_	35	case	_	_
 35	local	local	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	26	conj	_	_
-36	onde	onde	ADV	<rel>|ADV|@ADVL>	_	41	advmod	_	_
+36	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	41	obl	_	_
 37	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	38	det	_	_
 38	estudantes	estudante	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	41	nsubj	_	_
 39	não	não	ADV	_	Polarity=Neg	41	advmod	_	_
-40	poderão	poder	AUX	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	41	aux	_	_
-41	ignorar	ignorar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	35	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+40	poderão	poder	VERB	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	35	acl:relcl	_	_
+41	ignorar	ignorar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	40	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 42	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

@@ -1,9 +1,7 @@
 # text = Como o Estado não tem recursos, nem vai ter para todos, o atendimento acaba deixando de fora justamente os mais pobres, que não conseguem acesso aos serviços públicos.
-# source = CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF895-1
+# source = CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # id = 3769
-# d2d = punct(tem,,) -> punct(ter,,)  #106
-# d2d = cc(tem,nem) -> cc(ter,nem)  #106
 1	Como	como	SCONJ	KS|@SUB	_	5	mark	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	Estado	estado	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -19,8 +17,8 @@
 13	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	atendimento	atendimento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
-16	acaba	acabar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-17	deixando	deixar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
+16	acaba	acabar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+17	deixando	deixar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	16	xcomp	_	_
 18	de	de	ADP	PRP|@<ADVL	_	19	case	_	MWE=de_fora
 19	fora	fora	ADV	ADV|@P<	_	17	advmod	_	_
 20	justamente	justamente	ADV	ADV|@<ADVL	_	17	advmod	_	_
@@ -40,11 +38,9 @@
 33	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = O problema é político porque envolve, por exemplo, a gratuidade da educação, da saúde, da previdência mínima.
-# source = CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF895-2
+# source = CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # id = 3770
-# d2d = punct(educação,,) -> punct(saúde,,)  #106
-# d2d = punct(educação,,) -> punct(previdência,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	problema	problema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -75,10 +71,9 @@
 25	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Excetuada a educação básica de primeiro grau, que deve ser gratuita e obrigatória, para todo o resto é preciso discriminar quem pode pagar.
-# source = CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # sent_id = CF895-3
+# source = CETENFolha n=895 cad=Caderno Especial sec=nd sem=94b
 # id = 3771
-# d2d = cc(gratuita,e) -> cc(obrigatória,e)  #106
 1	Excetuada	excetuar	VERB	<mv>|V|PCP|F|S|@ICL-ADVL>	Gender=Fem|Number=Sing|VerbForm=Part	21	advcl	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	educação	educação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
@@ -102,7 +97,7 @@
 21	preciso	preciso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
 22	discriminar	discriminar	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	21	csubj	_	_
 23	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	25	nsubj	_	_
-24	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux	_	_
-25	pagar	pagar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+24	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	ccomp	_	_
+25	pagar	pagar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	24	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 

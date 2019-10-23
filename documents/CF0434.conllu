@@ -1,11 +1,7 @@
 # text = O Banco Mundial, o FMI e o Gatt são instituições públicas que deveriam ter suas políticas submetidas a esferas públicas de decisão e ter a transparência necessária para serem avaliadas e monitoradas pelos cidadãos.
-# source = CETENFolha n=434 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF434-1
+# source = CETENFolha n=434 cad=Dinheiro sec=eco sem=94b
 # id = 1814
-# d2d = punct(Banco,,) -> punct(FMI,,)  #106
-# d2d = cc(avaliadas,e) -> cc(monitoradas,e)  #106
-# d2d = cc(ter,e) -> cc(ter,e)  #106
-# d2d = cc(Banco,e) -> cc(Gatt,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 2	Banco	Banco	PROPN	_	Gender=Masc|Number=Sing	11	nsubj	_	ChangedBy=Issue119|MWE=Banco_Mundial|MWEPOS=PROPN
 3	Mundial	Mundial	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -19,8 +15,8 @@
 11	instituições	instituição	NOUN	<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
 12	públicas	público	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	11	amod	_	_
 13	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	15	nsubj	_	_
-14	deveriam	dever	AUX	<aux>|V|COND|3P|@FS-N<	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	15	aux	_	_
-15	ter	ter	VERB	<first-cjt>|<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	acl:relcl	_	_
+14	deveriam	dever	VERB	<aux>|V|COND|3P|@FS-N<	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	11	acl:relcl	_	_
+15	ter	ter	VERB	<first-cjt>|<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
 16	suas	seu	DET	<poss>|<si>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	17	det	_	_
 17	políticas	política	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	15	obj	_	_
 18	submetidas	submeter	VERB	<mv>|V|PCP|F|P|@ICL-<OC	Gender=Fem|Number=Plur|VerbForm=Part	15	xcomp	_	_
@@ -34,7 +30,7 @@
 26	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	transparência	transparência	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	25	obj	_	_
 28	necessária	necessário	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	27	amod	_	_
-29	para	para	ADP	PRP|@A<	_	31	mark	_	_
+29	para	para	SCONJ	PRP|@A<	_	31	mark	_	_
 30	serem	ser	AUX	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	31	aux	_	_
 31	avaliadas	avaliar	VERB	<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	28	advcl	_	_
 32	e	e	CCONJ	<co-vp>|<co-pcv>|KC|@CO	_	33	cc	_	d2d:#106
@@ -46,11 +42,9 @@
 37	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Recentemente, o Banco Mundial constituiu um grupo independente de inspeção para analisar queixas sobre seus projetos, iniciou uma nova política de informações e o Gatt organizou o primeiro seminário com a participação de ONGs.
-# source = CETENFolha n=434 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF434-2
+# source = CETENFolha n=434 cad=Dinheiro sec=eco sem=94b
 # id = 1815
-# d2d = cc(constituiu,e) -> cc(organizou,e)  #106
-# d2d = punct(constituiu,,) -> punct(iniciou,,)  #106
 1	Recentemente	recentemente	ADV	ADV|@ADVL>	_	6	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -62,7 +56,7 @@
 9	independente	independente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	13	amod	_	_
 10	de	de	ADP	PRP|@A<	_	11	case	_	_
 11	inspeção	inspeção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	9	obl	_	_
-12	para	para	ADP	PRP|@<ACC	_	13	mark	_	_
+12	para	para	SCONJ	PRP|@<ACC	_	13	mark	_	_
 13	analisar	analisar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
 14	queixas	queixa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	13	obj	_	_
 15	sobre	sobre	ADP	PRP|@N<ARG	_	17	case	_	_

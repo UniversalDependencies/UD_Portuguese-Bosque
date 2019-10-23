@@ -1,6 +1,6 @@
 # text = Quem culpabiliza o exterior pelas suas próprias falhas está na verdade procurando desculpas para o seu próprio insucesso.
-# source = CETEMPúblico n=518 sec=des sem=92b
 # sent_id = CP518-1
+# source = CETEMPúblico n=518 sec=des sem=92b
 # id = 2709
 1	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	2	nsubj	_	_
 2	culpabiliza	culpabilizar	VERB	<mv>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	csubj	_	_
@@ -14,9 +14,9 @@
 9	falhas	falha	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	4	nmod	_	_
 10	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
 11-12	na	_	_	_	_	_	_	_	_
-11	em	em	ADP	<sam->|PRP|@ADVL>	_	13	case	_	_
-12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
-13	verdade	verdade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obl	_	ChangedBy=Issue137
+11	em	em	ADP	<sam->|PRP|@ADVL>	_	14	advmod	_	MWE=na_verdade|MWEPOS=ADV
+12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	fixed	_	_
+13	verdade	verdade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	fixed	_	ChangedBy=Issue137
 14	procurando	procurar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	0	root	_	_
 15	desculpas	desculpa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	14	obj	_	_
 16	para	para	ADP	PRP|@N<	_	20	case	_	_
@@ -27,10 +27,9 @@
 21	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = As etapas boas e más por que cada indivíduo tem de passar fazem parte do sentido delineado para a sua própria vida.
-# source = CETEMPúblico n=518 sec=des sem=92b
 # sent_id = CP518-2
+# source = CETEMPúblico n=518 sec=des sem=92b
 # id = 2710
-# d2d = cc(boas,e) -> cc(más,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	etapas	etapa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	13	nsubj	_	_
 3	boas	bom	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	2	amod	_	_
@@ -40,9 +39,9 @@
 7	que	que	PRON	<rel>|INDP|F|P|@P<	Gender=Fem|Number=Plur|PronType=Rel	12	obl	_	_
 8	cada	cada	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Tot	9	det	_	_
 9	indivíduo	indivíduo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
-10	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-11	de	de	ADP	PRP|@PRT-AUX<	_	12	case	_	_
-12	passar	passar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	acl:relcl	_	_
+10	tem	ter	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	MWE=tem_de|MWEPOS=AUX
+11	de	de	SCONJ	PRP|@PRT-AUX<	_	12	mark	_	_
+12	passar	passar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
 13	fazem	fazer	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 14	parte	parte	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	obj	_	_
 15-16	do	_	_	_	_	_	_	_	_
@@ -58,20 +57,20 @@
 24	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Isto é, é necessário para essa pessoa ter de enfrentar essas circunstâncias e prosseguir sem apego.
-# source = CETEMPúblico n=518 sec=des sem=92b
 # sent_id = CP518-3
+# source = CETEMPúblico n=518 sec=des sem=92b
 # id = 2711
 1	Isto	isto	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	5	cc	_	MWE=isto_é|MWEPOS=CCONJ
 2	é	ser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 5	necessário	necessário	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-6	para	para	ADP	PRP|@A<ARG	_	11	mark	_	_
+6	para	para	SCONJ	PRP|@A<ARG	_	11	mark	_	_
 7	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	8	det	_	_
 8	pessoa	pessoa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
-9	ter	ter	AUX	<first-cjt>|<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	11	aux	_	_
-10	de	de	ADP	PRP|@PRT-AUX<	_	11	case	_	_
-11	enfrentar	enfrentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	advcl	_	_
+9	ter	ter	VERB	<first-cjt>|<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	5	advcl	_	MWE=ter_de|MWEPOS=AUX
+10	de	de	SCONJ	PRP|@PRT-AUX<	_	11	mark	_	_
+11	enfrentar	enfrentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
 12	essas	esse	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	13	det	_	_
 13	circunstâncias	circunstância	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	11	obj	_	_
 14	e	e	CCONJ	<co-prparg>|<co-inf>|KC|@CO	_	15	cc	_	_
@@ -81,19 +80,19 @@
 18	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = (Atitude basicamente budista em relação a todas as coisas da vida, porque as desagradáveis causam repulsa, e as agradáveis tristeza quando já se as não tem).
-# source = CETEMPúblico n=518 sec=des sem=92b
 # sent_id = CP518-4
+# source = CETEMPúblico n=518 sec=des sem=92b
 # id = 2712
 1	(	(	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Atitude	atitude	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 3	basicamente	basicamente	ADV	ADV|@>A	_	4	advmod	_	_
 4	budista	budista	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
-5	em	em	ADP	PRP|@N<	_	6	case	_	MWE=em_relação_a
-6	relação	relação	NOUN	N|@P<	_	2	nmod	_	_
-7	a	a	ADP	PRP|@N<	_	10	case	_	_
+5	em	em	ADP	PRP|@N<	_	10	case	_	MWE=em_relação_a|MWEPOS=ADP
+6	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	5	fixed	_	_
+7	a	a	ADP	PRP|@N<	_	5	fixed	_	_
 8	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	10	det	_	MWE=todas_as
 9	as	o	DET	<artd>|DET|F|P|@A<	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	fixed	_	_
-10	coisas	coisa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	6	nmod	_	_
+10	coisas	coisa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obl	_	_
 11-12	da	_	_	_	_	_	_	_	_
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
@@ -119,17 +118,17 @@
 32	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O amor deve servir como pano de fundo à vida de cada pessoa.
-# source = CETEMPúblico n=518 sec=des sem=92b
 # sent_id = CP518-5
+# source = CETEMPúblico n=518 sec=des sem=92b
 # id = 2713
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	amor	amor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
-3	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
-4	servir	servir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	servir	servir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 5	como	como	ADP	<prd>|PRP|@<SC	_	6	case	_	_
 6	pano	pano	NOUN	_	Gender=Masc|Number=Sing	4	xcomp	_	MWE=pano_de_fundo|MWEPOS=NOUN
 7	de	de	ADP	_	_	6	compound	_	_
-8	fundo	fundo	NOUN	_	_	6	compound	_	_
+8	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	6	compound	_	_
 9-10	à	_	_	_	_	_	_	_	_
 9	a	a	ADP	<sam->|PRP|@<PIV	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
@@ -140,10 +139,9 @@
 15	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Claro que se evoca aqui um amor justo e totalmente abrangente, com base em regras éticas universais.
-# source = CETEMPúblico n=518 sec=des sem=92b
 # sent_id = CP518-6
+# source = CETEMPúblico n=518 sec=des sem=92b
 # id = 2714
-# d2d = cc(justo,e) -> cc(abrangente,e)  #106
 1	Claro	claro	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	4	mark	_	_
 3	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	_	_
@@ -157,7 +155,7 @@
 11	abrangente	abrangente	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	8	conj	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 13	com	com	ADP	PRP|@N<PRED	_	14	case	_	MWE=com_base_em
-14	base	base	NOUN	N|@P<	_	7	nmod	_	_
+14	base	base	NOUN	N|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
 15	em	em	ADP	PRP|@N<	_	16	case	_	_
 16	regras	regra	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	14	nmod	_	_
 17	éticas	ético	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	16	amod	_	_
@@ -165,8 +163,8 @@
 19	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = As coisas que ocorrem ao longo da vida consideradas como desagradáveis devem então ser encaradas como um novo passo na aprendizagem existencial, algo pelo qual temos de passar para evoluir.
-# source = CETEMPúblico n=518 sec=des sem=92b
 # sent_id = CP518-7
+# source = CETEMPúblico n=518 sec=des sem=92b
 # id = 2715
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	coisas	coisa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	17	nsubj:pass	_	_
@@ -175,7 +173,7 @@
 5-6	ao	_	_	_	_	_	_	_	_
 5	a	a	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	longo	longo	NOUN	N|@P<	_	4	obl	_	_
+7	longo	longo	NOUN	N|@P<	Gender=Masc|Number=Sing	4	obl	_	_
 8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	PRP|@N<	_	10	case	_	_
 9	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
@@ -183,10 +181,10 @@
 11	consideradas	considerar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	_	_
 12	como	como	ADP	<prd>|PRP|@<SC	_	13	case	_	_
 13	desagradáveis	desagradável	ADJ	ADJ|F|P|@P<	Gender=Fem|Number=Plur	11	xcomp	_	_
-14	devem	dever	AUX	<aux>|V|PR|3P|IND|@FS-UTT	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
+14	devem	dever	VERB	<aux>|V|PR|3P|IND|@FS-UTT	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 15	então	então	ADV	<kc>|ADV|@ADVL>	_	17	advmod	_	_
 16	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	17	aux:pass	_	_
-17	encaradas	encarar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
+17	encaradas	encarar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	14	xcomp	_	_
 18	como	como	ADP	<prd>|PRP|@<SC	_	21	case	_	_
 19	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 20	novo	novo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	21	amod	_	_
@@ -202,19 +200,17 @@
 28	por	por	ADP	<sam->|PRP|@ADVL>	_	30	case	_	_
 29	o	o	DET	DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	30	det	_	MWE=o_qual
 30	qual	qual	PRON	DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	33	obl	_	_
-31	temos	ter	AUX	<aux>|V|PR|1P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	33	aux	_	_
-32	de	de	ADP	PRP|@PRT-AUX<	_	33	case	_	_
-33	passar	passar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	27	acl:relcl	_	_
-34	para	para	ADP	PRP|@<ADVL	_	35	mark	_	_
+31	temos	ter	VERB	<aux>|V|PR|1P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	27	acl:relcl	_	MWE=temos_de|MWEPOS=AUX
+32	de	de	SCONJ	PRP|@PRT-AUX<	_	33	mark	_	_
+33	passar	passar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	31	xcomp	_	_
+34	para	para	SCONJ	PRP|@<ADVL	_	35	mark	_	_
 35	evoluir	evoluir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 36	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Não há que sentir revolta, desânimo nem tristeza, devendo procurar-se ver sempre «o outro lado da moeda».
-# source = CETEMPúblico n=518 sec=des sem=92b
 # sent_id = CP518-8
+# source = CETEMPúblico n=518 sec=des sem=92b
 # id = 2716
-# d2d = punct(revolta,,) -> punct(desânimo,,)  #106
-# d2d = cc(revolta,nem) -> cc(tristeza,nem)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	<first-cjt>|KS|@<ACC	_	2	obj	_	_
@@ -225,9 +221,9 @@
 8	nem	nem	CCONJ	<co-acc>|KC|@CO	_	9	cc	_	d2d:#106
 9	tristeza	tristeza	NOUN	<cjt>|<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	5	conj	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-11	devendo	dever	AUX	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	12	aux	_	_
+11	devendo	dever	VERB	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	2	advcl	_	_
 12-13	procurar-se	_	_	_	_	_	_	_	_
-12	procurar	procurar	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	2	advcl	_	_
+12	procurar	procurar	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
 13	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	12	nsubj	_	_
 14	ver	ver	VERB	<mv>|V|INF|3S|@ICL-<ACC	Number=Sing|Person=3|VerbForm=Inf	12	xcomp	_	_
 15	sempre	sempre	ADV	ADV|@<ADVL	_	14	advmod	_	_

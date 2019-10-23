@@ -1,10 +1,7 @@
 # text = É o que se chama de «alavancagem» com um empréstimo de US$ 10, por exemplo, pode-se entrar em um jogo de US$ 100 ou mais.
-# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF652-1
+# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # id = 2721
-# d2d = cc(jogo,ou) -> cc(mais,ou)  #106
-# d2d = punct(o,,) -> punct(entrar,,)  #106
-# d2d = punct(o,,) -> punct(entrar,,)  #106
 1	É	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	o	o	PRON	<dem>|DET|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	5	obj	_	_
@@ -12,7 +9,7 @@
 5	chama	chamar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
 6	de	de	ADP	PRP|@<PIV	_	8	case	_	_
 7	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
-8	alavancagem	alavancagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	iobj	_	ChangedBy=Issue165|SpaceAfter=No
+8	alavancagem	alavancagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	5	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 9	»	»	PUNCT	PU|@PU	_	8	punct	_	_
 10	com	com	ADP	PRP|@ADVL>	_	12	case	_	_
 11	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
@@ -20,14 +17,14 @@
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	US$	US$	SYM	_	_	12	nmod	_	_
 15	10	10	NUM	<card>|NUM|M|P|@N<	NumType=Card	14	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	por	por	ADP	PRP|@ADVL>	_	22	advmod	_	MWE=por_exemplo|MWEPOS=ADV
 18	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	17	fixed	_	ChangedBy=Issue165|SpaceAfter=No
-19	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+19	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 20-21	pode-se	_	_	_	_	_	_	_	_
-20	pode	poder	AUX	<aux>|<cjt>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	aux	_	_
+20	pode	poder	VERB	<aux>|<cjt>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 21	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	22	nsubj	_	_
-22	entrar	entrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	conj	_	_
+22	entrar	entrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	xcomp	_	_
 23	em	em	ADP	PRP|@<SA	_	25	case	_	_
 24	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	jogo	jogo	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	22	obl	_	_
@@ -39,8 +36,8 @@
 31	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Se a aposta for errada, o risco de bancarrota é uma forte possibilidade.
-# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF652-2
+# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # id = 2722
 1	Se	se	SCONJ	KS|@SUB	_	5	mark	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -59,8 +56,8 @@
 15	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = A expansão dos «derivativos» não foi gratuita.
-# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF652-3
+# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # id = 2723
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	expansão	expansão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
@@ -76,13 +73,9 @@
 11	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Os economistas alinham vários motivos básicos, entre eles a possibilidade de inversão aberta com a queda dos regimes socialistas, a onda liberalizante que varre a América Latina, a forte expansão econômica dos países do Sudeste Asiático e também a baixa e estável remuneração de tradicionais aplicações.
-# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF652-4
+# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # id = 2724
-# d2d = cc(baixa,e) -> cc(estável,e)  #106
-# d2d = cc(possibilidade,e) -> cc(remuneração,e)  #106
-# d2d = punct(possibilidade,,) -> punct(onda,,)  #106
-# d2d = punct(possibilidade,,) -> punct(expansão,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	economistas	economista	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	alinham	alinhar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -141,8 +134,8 @@
 53	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Nos EUA, os CDBs, até antes da alta dos juros, rendiam 3% ao ano para uma inflação de 2,5%.
-# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF652-5
+# source = CETENFolha n=652 cad=Dinheiro sec=eco sem=94b
 # id = 2725
 1-2	Nos	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_

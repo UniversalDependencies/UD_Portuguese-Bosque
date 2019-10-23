@@ -1,6 +1,6 @@
 # text = Comerciantes criticam «cedências» da CCP
-# source = CETEMPúblico n=809 sec=eco sem=96a
 # sent_id = CP809-1
+# source = CETEMPúblico n=809 sec=eco sem=96a
 # id = 4160
 1	Comerciantes	comerciante	NOUN	<np-idf>|N|M/F|P|@SUBJ>	Gender=Unsp|Number=Plur	2	nsubj	_	_
 2	criticam	criticar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -13,8 +13,8 @@
 8	CCP	CCP	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 
 # text = Manifestação anti-hiper no Porto
-# source = CETEMPúblico n=809 sec=eco sem=96a
 # sent_id = CP809-2
+# source = CETEMPúblico n=809 sec=eco sem=96a
 # id = 4161
 1	Manifestação	manifestação	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	anti-hiper	anti-hiper	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
@@ -24,8 +24,8 @@
 5	Porto	Porto	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = «Portugal é uma rebaldaria.
-# source = CETEMPúblico n=809 sec=eco sem=96a
 # sent_id = CP809-3
+# source = CETEMPúblico n=809 sec=eco sem=96a
 # id = 4162
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Portugal	Portugal	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -35,8 +35,8 @@
 6	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = E como não há Constituição, então vamos todos tomar atitudes arruaceiras».
-# source = CETEMPúblico n=809 sec=eco sem=96a
 # sent_id = CP809-4
+# source = CETEMPúblico n=809 sec=eco sem=96a
 # id = 4163
 1	E	e	CCONJ	KC|@CO	_	10	cc	_	_
 2	como	como	SCONJ	KS|@SUB	_	4	mark	_	_
@@ -54,10 +54,9 @@
 14	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = De bandeira branca ao ombro, reclamando o encerramento das grandes superfícies ao domingo, o comerciante, de face congestionada, resumiu à sua maneira a intenção dos 150 lojistas presentes na reunião realizada anteontem à noite, em Vila Nova de Gaia.
-# source = CETEMPúblico n=809 sec=eco sem=96a
 # sent_id = CP809-5
+# source = CETEMPúblico n=809 sec=eco sem=96a
 # id = 4164
-# d2d = punct(bandeira,,) -> punct(reclamando,,)  #106
 1	De	de	ADP	<first-cjt>|PRP|@PRED>	_	2	case	_	_
 2	bandeira	bandeira	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	26	obl	_	_
 3	branca	branco	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -119,13 +118,12 @@
 52	.	.	PUNCT	PU|@PU	_	26	punct	_	_
 
 # text = Depois de discutidos o melhor dia e a melhor hora para a manifestação, a maioria pronunciou-se pelo ajuntamento no próximo dia dois de Março, sábado, a partir das quatro horas da tarde, na sala de visitas do Porto: a Praça General Humberto Delgado.
-# source = CETEMPúblico n=809 sec=eco sem=96a
 # sent_id = CP809-6
+# source = CETEMPúblico n=809 sec=eco sem=96a
 # id = 4165
-# d2d = cc(dia,e) -> cc(hora,e)  #106
-1	Depois	depois	ADV	ADV|@ADVL>	_	17	advmod	_	_
-2	de	de	ADP	PRP|@A<	_	3	mark	_	_
-3	discutidos	discutir	VERB	<mv>|V|PCP|M|P|@ICL-P<	Gender=Masc|Number=Plur|VerbForm=Part	1	advcl	_	_
+1	Depois	depois	ADV	ADV|@ADVL>	_	3	mark	_	MWE=Depois_de|MWEPOS=SCONJ
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	discutidos	discutir	VERB	<mv>|V|PCP|M|P|@ICL-P<	Gender=Masc|Number=Plur|VerbForm=Part	17	advcl	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 5	melhor	bom	ADJ	<SUP>|<KOMP>|<COMP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	6	amod	_	_
 6	dia	dia	NOUN	<first-cjt>|<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -158,7 +156,7 @@
 30	sábado	sábado	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	25	appos	_	ChangedBy=Issue165|SpaceAfter=No
 31	,	,	PUNCT	PU|@PU	_	30	punct	_	_
 32	a	a	ADP	<sam->|PRP|@N<	_	33	case	_	MWE=a_partir_de
-33	partir	partir	NOUN	N|@P<	_	21	nmod	_	_
+33	partir	partir	VERB	N|@P<	VerbForm=Inf	21	nmod	_	_
 34-35	das	_	_	_	_	_	_	_	_
 34	de	de	ADP	PRP|@N<	_	37	case	_	_
 35	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_

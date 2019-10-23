@@ -1,8 +1,7 @@
 # text = O «romance» da princesa Ana -- segunda descendente e única filha da rainha -- com o comandante Tim Lawrence, 37 anos, já fizera as delícias da imprensa popular britânica, nomeadamente na altura em que o casal apariceu em público, por diversas vezes, após o divórcio de Ana.
-# source = CETEMPúblico n=868 sec=pol sem=92b &W
 # sent_id = CP868-1
+# source = CETEMPúblico n=868 sec=pol sem=92b &W
 # id = 4452
-# d2d = cc(descendente,e) -> cc(filha,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	romance	romance	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	29	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -49,12 +48,12 @@
 40	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
 41	altura	altura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	obl	_	ChangedBy=Issue137
 42	em	em	ADP	PRP|@ADVL>	_	43	case	_	_
-43	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	46	obl	_	_
+43	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Fem|Number=Sing|PronType=Rel	46	obl	_	_
 44	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
 45	casal	casal	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	46	nsubj	_	_
 46	apariceu	aparecer	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	41	acl:relcl	_	_
-47	em	em	ADP	PRP|@<SA	_	48	case	_	MWE=em_público
-48	público	público	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	46	obl	_	ChangedBy=Issue165|SpaceAfter=No
+47	em	em	ADP	PRP|@<SA	_	46	obl	_	MWE=em_público|MWEPOS=ADV
+48	público	público	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	47	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 49	,	,	PUNCT	PU|@PU	_	46	punct	_	_
 50	por	por	ADP	PRP|@<ADVL	_	52	case	_	_
 51	diversas	diversos	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	52	det	_	_
@@ -68,10 +67,9 @@
 59	.	.	PUNCT	PU|@PU	_	29	punct	_	_
 
 # text = A data e local do casamento, que deverá realizar-se numa cerimónia privada, não foram divulgadas pelo Palácio de Buckingham.
-# source = CETEMPúblico n=868 sec=pol sem=92b
 # sent_id = CP868-2
+# source = CETEMPúblico n=868 sec=pol sem=92b
 # id = 4453
-# d2d = cc(data,e) -> cc(local,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	data	data	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj:pass	_	_
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	d2d:#106
@@ -82,9 +80,9 @@
 7	casamento	casamento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 9	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	11	nsubj	_	_
-10	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	aux	_	_
+10	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	7	acl:relcl	_	_
 11-12	realizar-se	_	_	_	_	_	_	_	_
-11	realizar	realizar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	7	acl:relcl	_	_
+11	realizar	realizar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
 12	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	expl	_	ChangedBy=Issue135
 13-14	numa	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@<ADVL	_	15	case	_	_

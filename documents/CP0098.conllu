@@ -1,8 +1,7 @@
 # text = O ministro canadiano das Pescas, Brian Tobin, tinha dito, no domingo passado, estar pronto a tomar todas as medidas necessárias para impedir 49 barcos europeus -- 38 espanhóis e 11 portugueses -- de continuarem a pescar nos grandes bancos, ao largo da Terra Nova.
-# source = CETEMPúblico n=98 sec=soc sem=95a
 # sent_id = CP98-1
+# source = CETEMPúblico n=98 sec=soc sem=95a
 # id = 517
-# d2d = cc(espanhóis,e) -> cc(portugueses,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ministro	ministro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 3	canadiano	canadiano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -24,14 +23,14 @@
 17	passado	passado	ADJ	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing	16	amod	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 19	estar	estar	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	20	cop	_	ChangedBy=Issue167
-20	pronto	pronto	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	12	dep	_	_
-21	a	a	ADP	PRP|@A<ARG	_	22	mark	_	_
+20	pronto	pronto	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	12	xcomp	_	_
+21	a	a	SCONJ	PRP|@A<ARG	_	22	mark	_	_
 22	tomar	tomar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	advcl	_	_
 23	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	25	det	_	MWE=todas_as
 24	as	o	DET	<artd>|DET|F|P|@A<	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	fixed	_	_
 25	medidas	medida	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	22	obj	_	_
 26	necessárias	necessário	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	25	amod	_	_
-27	para	para	ADP	PRP|@A<ARG	_	28	mark	_	_
+27	para	para	SCONJ	PRP|@A<ARG	_	28	mark	_	_
 28	impedir	impedir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	26	advcl	_	_
 29	49	49	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	nummod	_	ChangedBy=Issue168
 30	barcos	barco	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	28	obj	_	_
@@ -43,10 +42,10 @@
 36	11	11	NUM	<card>|NUM|M|P|@>N	NumType=Card	37	nummod	_	ChangedBy=Issue168
 37	portugueses	português	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	34	conj	_	_
 38	--	--	PUNCT	PU|@PU	_	34	punct	_	_
-39	de	de	ADP	PRP|@<PIV	_	42	mark	_	_
-40	continuarem	continuar	AUX	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	42	aux	_	_
-41	a	a	ADP	PRP|@PRT-AUX<	_	42	case	_	_
-42	pescar	pescar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	xcomp	_	_
+39	de	de	SCONJ	PRP|@<PIV	_	42	mark	_	_
+40	continuarem	continuar	VERB	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	28	xcomp	_	MWE=continuarem_a|MWEPOS=AUX
+41	a	a	SCONJ	PRP|@PRT-AUX<	_	42	mark	_	_
+42	pescar	pescar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	40	xcomp	_	_
 43-44	nos	_	_	_	_	_	_	_	_
 43	em	em	ADP	<sam->|PRP|@<ADVL	_	46	case	_	_
 44	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	_	_
@@ -56,7 +55,7 @@
 48-49	ao	_	_	_	_	_	_	_	_
 48	a	a	ADP	<sam->|PRP|@N<	_	50	case	_	_
 49	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_
-50	largo	largo	NOUN	N|@P<	_	42	obl	_	_
+50	largo	largo	NOUN	N|@P<	Gender=Masc|Number=Sing	42	obl	_	_
 51-52	da	_	_	_	_	_	_	_	_
 51	de	de	ADP	PRP|@N<	_	53	case	_	_
 52	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	53	det	_	_
@@ -65,10 +64,9 @@
 55	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Tobin sublinhou que os pesqueiros europeus foram todos prevenidos, via rádio, de que o Canadá protegerá os seus «stocks» de solha e palmeta, mesmo para além do limite das 200 milhas náuticas.
-# source = CETEMPúblico n=98 sec=soc sem=95a
 # sent_id = CP98-2
+# source = CETEMPúblico n=98 sec=soc sem=95a
 # id = 518
-# d2d = cc(solha,e) -> cc(palmeta,e)  #106
 1	Tobin	Tobin	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	sublinhou	sublinhar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
@@ -82,7 +80,7 @@
 11	via	via	ADP	PRP|@<ADVL	_	12	case	_	_
 12	rádio	rádio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-14	de	de	ADP	PRP|@<PIV	_	18	mark	_	_
+14	de	de	SCONJ	PRP|@<PIV	_	18	mark	_	_
 15	que	que	SCONJ	KS|@SUB	_	18	mark	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	Canadá	Canadá	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
@@ -113,11 +111,9 @@
 40	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = As informações disponíveis dão conta da presença de quatro fragatas, um porta-helicópteros e aviões canadianos a vigiar os barcos ibéricos.
-# source = CETEMPúblico n=98 sec=soc sem=95a
 # sent_id = CP98-3
+# source = CETEMPúblico n=98 sec=soc sem=95a
 # id = 519
-# d2d = punct(fragatas,,) -> punct(porta-helicópteros,,)  #106
-# d2d = cc(fragatas,e) -> cc(aviões,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	informações	informação	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj	_	_
 3	disponíveis	disponível	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	2	amod	_	_
@@ -136,7 +132,7 @@
 15	e	e	CCONJ	<co-prparg>|<co-acc>|KC|@CO	_	16	cc	_	d2d:#106
 16	aviões	avião	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	conj	_	_
 17	canadianos	canadiano	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	16	amod	_	_
-18	a	a	ADP	PRP|@N<	_	19	mark	_	_
+18	a	a	SCONJ	PRP|@N<	_	19	mark	_	_
 19	vigiar	vigiar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	acl	_	_
 20	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
 21	barcos	barco	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	19	obj	_	_
@@ -144,24 +140,20 @@
 23	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O bacalhau como pano de fundo
-# source = CETEMPúblico n=98 sec=soc sem=95a
 # sent_id = CP98-4
+# source = CETEMPúblico n=98 sec=soc sem=95a
 # id = 520
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	bacalhau	bacalhau	NOUN	<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	como	como	ADP	<com>|PRP|@N<	_	4	case	_	_
 4	pano	pano	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	MWE=pano_de_fundo|MWEPOS=NOUN
 5	de	de	ADP	_	_	4	compound	_	_
-6	fundo	fundo	NOUN	_	_	4	compound	_	_
+6	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	4	compound	_	_
 
 # text = Em causa neste diferendo estão dois problemas: a intenção canadiana de, pretensamente, preservar os recursos de pesca da zona e, em segundo plano, a intenção de alargar a sua jurisdição a águas internacionais para além das 200 milhas da zona económica exclusiva.
-# source = CETEMPúblico n=98 sec=soc sem=95a
 # sent_id = CP98-5
+# source = CETEMPúblico n=98 sec=soc sem=95a
 # id = 521
-# d2d = punct(intenção,,) -> punct(intenção,,)  #106
-# d2d = punct(intenção,,) -> punct(intenção,,)  #106
-# d2d = punct(intenção,,) -> punct(intenção,,)  #106
-# d2d = cc(intenção,e) -> cc(intenção,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_causa
 2	causa	causa	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
 3-4	neste	_	_	_	_	_	_	_	_
@@ -175,10 +167,10 @@
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	intenção	intenção	NOUN	<first-cjt>|<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	8	appos	_	_
 12	canadiana	canadiano	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
-13	de	de	ADP	PRP|@N<ARG	_	17	mark	_	ChangedBy=Issue165|SpaceAfter=No
-14	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
+13	de	de	SCONJ	PRP|@N<ARG	_	17	mark	_	ChangedBy=Issue165|SpaceAfter=No
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	pretensamente	pretensamente	ADV	ADV|@ADVL>	_	17	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 17	preservar	preservar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	acl	_	_
 18	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
 19	recursos	recurso	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	17	obj	_	_
@@ -189,14 +181,14 @@
 23	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	24	det	_	_
 24	zona	zona	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
 25	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	32	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-26	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
+26	,	,	PUNCT	PU|@PU	_	29	punct	_	d2d:#106
 27	em	em	ADP	PRP|@>N	_	29	case	_	_
 28	segundo	segundo	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	29	amod	_	ChangedBy=Issue172
 29	plano	plano	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-30	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 31	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 32	intenção	intenção	NOUN	<cjt>|<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	11	conj	_	_
-33	de	de	ADP	PRP|@N<ARG	_	34	mark	_	_
+33	de	de	SCONJ	PRP|@N<ARG	_	34	mark	_	_
 34	alargar	alargar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	32	acl	_	_
 35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 36	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	37	det	_	_
@@ -220,10 +212,9 @@
 52	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Os canadianos dizem querer diminuir fortemente a pesca da palmeta para evitar o seu desaparecimento, «como aconteceu com o bacalhau e o ' red fish '», observa Ernest Loignon.
-# source = CETEMPúblico n=98 sec=soc sem=95a
 # sent_id = CP98-6
+# source = CETEMPúblico n=98 sec=soc sem=95a
 # id = 522
-# d2d = cc(bacalhau,e) -> cc(fish,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	canadianos	canadiano	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	dizem	dizer	VERB	<mv>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	parataxis	_	_
@@ -236,14 +227,14 @@
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	11	det	_	_
 11	palmeta	palmeta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
-12	para	para	ADP	PRP|@<ADVL	_	13	mark	_	_
+12	para	para	SCONJ	PRP|@<ADVL	_	13	mark	_	_
 13	evitar	evitar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	advcl	_	_
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 15	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	16	det	_	_
 16	desaparecimento	desaparecimento	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	13	obj	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 18	«	«	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
-19	como	como	ADV	<rel>|ADV|@ADVL>	_	20	advmod	_	_
+19	como	como	SCONJ	<rel>|ADV|@ADVL>	_	20	mark	_	_
 20	aconteceu	acontecer	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	advcl	_	_
 21	com	com	ADP	PRP|@<ADVL	_	23	case	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_

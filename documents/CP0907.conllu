@@ -1,6 +1,6 @@
 # text = Vítor Martins em Rabat
-# source = CETEMPúblico n=907 sec=pol sem=92a
 # sent_id = CP907-1
+# source = CETEMPúblico n=907 sec=pol sem=92a
 # id = 4678
 1	Vítor	Vítor	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Vítor_Martins|MWEPOS=PROPN
 2	Martins	Martins	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -8,18 +8,18 @@
 4	Rabat	Rabat	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = O secretário de Estado da Integração Europeia, Vítor Martins, seguirá hoje directamente de Bruxelas (onde preside ao Conselho do Mercado Interno) para Rabat (Marrocos), para manter conversações com o ministro marroquino dos Negócios Estrangeiros sobre os resultados do Conselho de Ministros dos Estrangeiros dos Doze que se realizou a 17 de Fevereiro em Lisboa, onde foi aprovada uma proposta visando a conclusão de um acordo de comércio com Marrocos.
-# source = CETEMPúblico n=907 sec=pol sem=92a
 # sent_id = CP907-2
+# source = CETEMPúblico n=907 sec=pol sem=92a
 # id = 4679
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	secretário	secretário	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	MWE=secretário_de_Estado_da_Integração_Europeia
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
-4	Estado	estado	NOUN	N|@P<	_	2	nmod	_	_
+4	Estado	estado	NOUN	N|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	Integração	integração	NOUN	N|@P<	_	4	nmod	_	_
-8	Europeia	europeia	ADJ	ADJ|@N<	_	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
+7	Integração	integração	NOUN	N|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
+8	Europeia	europeia	ADJ	ADJ|@N<	Gender=Fem|Number=Sing	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 10	Vítor	Vítor	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Vítor_Martins|MWEPOS=PROPN
 11	Martins	Martins	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -30,7 +30,7 @@
 16	de	de	ADP	PRP|@<SA	_	17	case	_	_
 17	Bruxelas	Bruxelas	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	_
 18	(	(	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
-19	onde	onde	ADV	<rel>|ADV|@ADVL>	_	20	advmod	_	_
+19	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	20	obl	_	_
 20	preside	presidir	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	_
 21-22	ao	_	_	_	_	_	_	_	_
 21	a	a	ADP	<sam->|PRP|@<PIV	_	23	case	_	_
@@ -45,10 +45,10 @@
 29	para	para	ADP	PRP|@<SA	_	30	case	_	_
 30	Rabat	Rabat	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	13	obl	_	_
 31	(	(	PUNCT	PU|@PU	_	32	punct	_	ChangedBy=Issue165|SpaceAfter=No
-32	Marrocos	Marrocos	PROPN	PROP|M/F|S|@N<PRED	Gender=Unsp|Number=Sing	30	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+32	Marrocos	Marrocos	PROPN	PROP|M/F|S|@N<PRED	Gender=Unsp|Number=Sing	30	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 33	)	)	PUNCT	PU|@PU	_	32	punct	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	36	punct	_	_
-35	para	para	ADP	PRP|@<ADVL	_	36	mark	_	_
+35	para	para	SCONJ	PRP|@<ADVL	_	36	mark	_	_
 36	manter	manter	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	advcl	_	_
 37	conversações	conversação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	36	obj	_	_
 38	com	com	ADP	PRP|@N<	_	40	case	_	_
@@ -87,7 +87,7 @@
 67	em	em	ADP	PRP|@<ADVL	_	68	case	_	_
 68	Lisboa	Lisboa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	62	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 69	,	,	PUNCT	PU|@PU	_	62	punct	_	_
-70	onde	onde	ADV	<rel>|ADV|@ADVL>	_	72	advmod	_	_
+70	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	72	obl	_	_
 71	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	72	aux:pass	_	_
 72	aprovada	aprovar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	51	acl:relcl	_	_
 73	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	74	det	_	_

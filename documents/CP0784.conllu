@@ -1,6 +1,6 @@
 # text = Não existe, pois, um conceito «operacional» de urgência, como bem atestam as urgências dos hospitais.
-# source = CETEMPúblico n=784 sec=soc sem=96a
 # sent_id = CP784-1
+# source = CETEMPúblico n=784 sec=soc sem=96a
 # id = 4022
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	existe	existir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
@@ -13,7 +13,7 @@
 9	operacional	operacional	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	7	amod	_	ChangedBy=Issue165|SpaceAfter=No
 10	»	»	PUNCT	PU|@PU	_	9	punct	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	MWE=de_urgência
-12	urgência	urgência	NOUN	N|@P<	_	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+12	urgência	urgência	NOUN	N|@P<	Gender=Fem|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 14	como	como	ADV	<rel>|<com>|ADV|@ADVL>	_	16	advmod	_	_
 15	bem	bem	ADV	<quant>|ADV|@ADVL>	_	16	advmod	_	_
@@ -27,19 +27,17 @@
 22	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Para os médicos, no entanto, há prioridades de actuação, como estas que figuram no «Textbook of Surgery» (vários autores, coordenação de David C. Sabiston, editado em inglês pela W. B. Saunders):
-# source = CETEMPúblico n=784 sec=soc sem=96a
 # sent_id = CP784-2
+# source = CETEMPúblico n=784 sec=soc sem=96a
 # id = 4023
-# d2d = punct(autores,,) -> punct(editado,,)  #106
-# d2d = punct(autores,,) -> punct(coordenação,,)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	médicos	médico	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5-6	no	_	_	_	_	_	_	_	_
-5	em	em	ADP	<sam->|PRP|@N<	_	7	case	_	_
-6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	em	em	ADP	<sam->|PRP|@N<	_	9	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_
+7	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	5	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 10	prioridades	prioridade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	9	obj	_	_
@@ -81,10 +79,9 @@
 44	:	:	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = «1ª Prioridade -- situações exigentes: situações mais ameaçadoras para a vida e que necessitam de intervenção instantânea.
-# source = CETEMPúblico n=784 sec=soc sem=96a
 # sent_id = CP784-3
+# source = CETEMPúblico n=784 sec=soc sem=96a
 # id = 4024
-# d2d = cc(ameaçadoras,e) -> cc(necessitam,e)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	1ª	1ª	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	3	amod	_	ChangedBy=Issue172
 3	Prioridade	prioridade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
@@ -107,8 +104,8 @@
 20	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Exemplo: fractura da laringe com obstrução respiratória completa.
-# source = CETEMPúblico n=784 sec=soc sem=96a
 # sent_id = CP784-4
+# source = CETEMPúblico n=784 sec=soc sem=96a
 # id = 4025
 1	Exemplo	exemplo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -124,8 +121,8 @@
 11	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = 2ª Prioridade -- situações emergentes: situações que exigem intervenção imediata num período de poucos minutos.
-# source = CETEMPúblico n=784 sec=soc sem=96a
 # sent_id = CP784-5
+# source = CETEMPúblico n=784 sec=soc sem=96a
 # id = 4026
 1	2ª	2ª	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	ChangedBy=Issue172
 2	Prioridade	prioridade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
@@ -148,10 +145,9 @@
 18	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Exemplo: pneumotórax de tensão [ ar dentro da cavidade pleural a comprimir os pulmões e o coração, eventualmente ].
-# source = CETEMPúblico n=784 sec=soc sem=96a
 # sent_id = CP784-6
+# source = CETEMPúblico n=784 sec=soc sem=96a
 # id = 4027
-# d2d = cc(pulmões,e) -> cc(coração,e)  #106
 1	Exemplo	exemplo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3	pneumotórax	pneumotórax	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
@@ -165,7 +161,7 @@
 10	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	cavidade	cavidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	_
 12	pleural	pleural	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
-13	a	a	ADP	PRP|@N<	_	14	mark	_	_
+13	a	a	SCONJ	PRP|@N<	_	14	mark	_	_
 14	comprimir	comprimir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	pulmões	pulmão	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
@@ -178,8 +174,8 @@
 23	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = 3ª Prioridade -- situações urgentes: situações que necessitam de intervenção dentro da primeira hora.
-# source = CETEMPúblico n=784 sec=soc sem=96a
 # sent_id = CP784-7
+# source = CETEMPúblico n=784 sec=soc sem=96a
 # id = 4028
 1	3ª	3ª	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	ChangedBy=Issue172
 2	Prioridade	prioridade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
@@ -201,8 +197,8 @@
 17	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Exemplo: hemoperitoneu devido a hemorragia intra-abdominal contínua [ lesão dentro da cavidade abdominal a sangrar continuamente ].
-# source = CETEMPúblico n=784 sec=soc sem=96a
 # sent_id = CP784-8
+# source = CETEMPúblico n=784 sec=soc sem=96a
 # id = 4029
 1	Exemplo	exemplo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -220,18 +216,16 @@
 13	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	cavidade	cavidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	_
 15	abdominal	abdominal	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	amod	_	_
-16	a	a	ADP	PRP|@N<	_	17	mark	_	_
+16	a	a	SCONJ	PRP|@N<	_	17	mark	_	_
 17	sangrar	sangrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	acl	_	_
 18	continuamente	continuamente	ADV	ADV|@<ADVL	_	17	advmod	_	_
 19	]	_	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 20	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = 4ª Prioridade -- situações deferíveis: situações que podem ou não ser imediatamente evidentes, mas que necessitarão de tratamento subsequente.
-# source = CETEMPúblico n=784 sec=soc sem=96a &E
 # sent_id = CP784-9
+# source = CETEMPúblico n=784 sec=soc sem=96a &E
 # id = 4030
-# d2d = punct(evidentes,,) -> punct(necessitarão,,)  #106
-# d2d = cc(evidentes,mas) -> cc(necessitarão,mas)  #106
 1	4ª	4ª	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	2	amod	_	ChangedBy=Issue172
 2	Prioridade	prioridade	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 3	--	--	PUNCT	PU|@PU	_	2	punct	_	_
@@ -248,7 +242,7 @@
 14	evidentes	evidente	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	7	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 16	mas	mas	CCONJ	<co-fcl>|<co-postnom>|KC|@CO	_	18	cc	_	d2d:#106
-17	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	18	nsubj	_	_
+17	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	18	nsubj	_	_
 18	necessitarão	necessitar	VERB	<cjt>|<mv>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	14	conj	_	_
 19	de	de	ADP	PRP|@<PIV	_	20	case	_	_
 20	tratamento	tratamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	obj	_	_
@@ -256,8 +250,8 @@
 22	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Exemplo: ruptura da uretra.»
-# source = CETEMPúblico n=784 sec=soc sem=96a
 # sent_id = CP784-10
+# source = CETEMPúblico n=784 sec=soc sem=96a
 # id = 4031
 1	Exemplo	exemplo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_

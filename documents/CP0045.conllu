@@ -1,8 +1,7 @@
 # text = Dezenas de timorenses e portugueses «ocupam» pacificamente o pavilhão indonésio da Expo-92, em Sevilha.
-# source = CETEMPúblico n=45 sec=pol sem=92b
 # sent_id = CP45-1
+# source = CETEMPúblico n=45 sec=pol sem=92b
 # id = 254
-# d2d = cc(timorenses,e) -> cc(portugueses,e)  #106
 1	Dezenas	dezena	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	MWE=Dezenas_de
 2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	timorenses	timorenses	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
@@ -25,10 +24,10 @@
 19	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Entre eles está Rui Marques, o organizador da viagem do Lusitânia-Expresso
-# source = CETEMPúblico n=45 sec=pol sem=92b
 # sent_id = CP45-2
+# source = CETEMPúblico n=45 sec=pol sem=92b
 # id = 255
-1	Entre	entre	ADP	PRP|@SA>	_	2	mark	_	_
+1	Entre	entre	SCONJ	PRP|@SA>	_	2	mark	_	_
 2	eles	ele	PRON	PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	0	root	_	_
 3	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 4	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	_	ChangedBy=Issue119|MWE=Rui_Marques|MWEPOS=PROPN
@@ -46,24 +45,21 @@
 14	Lusitânia-Expresso	Lusitânia-Expresso	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
 
 # text = Eduardo dos Santos, presidente do MPLA, e Jonas Savimbi, dirigente da Unita, encontram-se na cidade do Bié em actividades ligadas à campanha eleitoral de Setembro
-# source = CETEMPúblico n=45 sec=pol sem=92b
 # sent_id = CP45-3
+# source = CETEMPúblico n=45 sec=pol sem=92b
 # id = 256
-# d2d = cc(Eduardo,e) -> cc(Jonas,e)  #106
-# d2d = punct(Eduardo,,) -> punct(Jonas,,)  #106
-# d2d = punct(Eduardo,,) -> punct(Jonas,,)  #106
 1	Eduardo	Eduardo	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	MWE=Eduardo_dos_Santos
 2-3	dos	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 4	Santos	Santos	PROPN	PROP|@P<	Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-5	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
+5	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 6	presidente	presidente	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	MWE=presidente_do_MPLA
 7-8	do	_	_	_	_	_	_	_	_
 7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
 8	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	MPLA	mpla	NOUN	N|@P<	_	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-10	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
+9	MPLA	mpla	NOUN	N|@P<	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+10	,	,	PUNCT	PU|@PU	_	6	punct	_	d2d:#106
 11	e	e	CCONJ	<co-subj>|KC|@CO	_	12	cc	_	d2d:#106
 12	Jonas	Jonas	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|MWE=Jonas_Savimbi|MWEPOS=PROPN
 13	Savimbi	Savimbi	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -91,19 +87,19 @@
 31-32	à	_	_	_	_	_	_	_	_
 31	a	a	ADP	<sam->|PRP|@<PIV	_	33	obl	_	_
 32	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	33	det	_	_
-33	campanha	campanha	NOUN	_	_	30	obl	_	MWE=campanha_eleitoral|MWEPOS=NOUN
-34	eleitoral	eleitoral	ADJ	_	_	33	amod	_	_
+33	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	30	obl	_	MWE=campanha_eleitoral|MWEPOS=NOUN
+34	eleitoral	eleitoral	ADJ	_	Gender=Fem|Number=Sing	33	amod	_	_
 35	de	de	ADP	PRP|@N<ARG	_	36	case	_	_
 36	Setembro	setembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	33	nmod	_	_
 
 # text = Bush só poderá ganhar as eleições presidenciais se fizer cair Saddam Hussein, vaticinam os analistas políticos.
-# source = CETEMPúblico n=45 sec=pol sem=92b
 # sent_id = CP45-4
+# source = CETEMPúblico n=45 sec=pol sem=92b
 # id = 257
 1	Bush	Bush	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	só	só	ADV	ADV|@ADVL>	_	4	advmod	_	_
-3	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
-4	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	ccomp	_	_
+3	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	ccomp	_	_
+4	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 5	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
 6	eleições	eleição	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
 7	presidenciais	presidencial	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	6	amod	_	_
@@ -120,10 +116,9 @@
 18	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = O Presidente cancela todos os compromissos e fecha-se na Casa Branca.
-# source = CETEMPúblico n=45 sec=pol sem=92b
 # sent_id = CP45-5
+# source = CETEMPúblico n=45 sec=pol sem=92b
 # id = 258
-# d2d = cc(cancela,e) -> cc(fecha-,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Presidente	presidente	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	cancela	cancelar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -142,8 +137,8 @@
 14	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Uma nova guerra no Golfo está a ser preparada
-# source = CETEMPúblico n=45 sec=pol sem=92b
 # sent_id = CP45-6
+# source = CETEMPúblico n=45 sec=pol sem=92b
 # id = 259
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	3	amod	_	_
@@ -152,8 +147,8 @@
 4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	o	o	DET	<-sam>|ART|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Golfo	golfo	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
-7	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
-8	a	a	ADP	PRP|@PRT-AUX<	_	10	case	_	_
+7	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=está_a|MWEPOS=AUX
+8	a	a	SCONJ	PRP|@PRT-AUX<	_	10	mark	_	_
 9	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	10	aux:pass	_	_
-10	preparada	preparar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+10	preparada	preparar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	xcomp	_	_
 

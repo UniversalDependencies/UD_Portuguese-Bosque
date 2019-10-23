@@ -1,13 +1,7 @@
 # text = Brennan e Laurent Filipe revelam uma maior segurança instrumental, a bateria de Acácio Salero (visiense apostado em desmentir a macrocefalia nacional que no jazz é pouco menos do que ditatorial) mantém um grau de atenção ao que se passa à sua volta absolutamente indispensável à afirmação de qualquer bom jazzman, e o contrabaixo de David Gausden, embora fraquejando quando lhe compete marcar o sentido da marcha, cumpre razoavelmente a sua função colectiva.
-# source = CETEMPúblico n=195 sec=clt sem=93a
 # sent_id = CP195-1
+# source = CETEMPúblico n=195 sec=clt sem=93a
 # id = 1043
-# d2d = punct(revelam,,) -> punct(cumpre,,)  #106
-# d2d = cc(Brennan,e) -> cc(Laurent,e)  #106
-# d2d = punct(revelam,,) -> punct(mantém,,)  #106
-# d2d = punct(revelam,,) -> punct(cumpre,,)  #106
-# d2d = cc(revelam,e) -> cc(cumpre,e)  #106
-# d2d = punct(revelam,,) -> punct(cumpre,,)  #106
 1	Brennan	Brennan	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 2	e	e	CCONJ	<co-subj>|KC|@CO	_	3	cc	_	d2d:#106
 3	Laurent	Laurent	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Laurent_Filipe|MWEPOS=PROPN
@@ -26,7 +20,7 @@
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
 17	visiense	visiense	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	14	appos	_	_
 18	apostado	apostar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	17	acl	_	_
-19	em	em	ADP	PRP|@<PIV	_	20	mark	_	_
+19	em	em	SCONJ	PRP|@<PIV	_	20	mark	_	_
 20	desmentir	desmentir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	18	xcomp	_	_
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	macrocefalia	macrocefalia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
@@ -40,10 +34,10 @@
 29	pouco	pouco	ADV	<quant>|ADV|@>A	_	30	advmod	_	_
 30	menos	menos	ADV	<quant>|<KOMP>|<COMP>|ADV|@<SC	_	22	acl:relcl	_	_
 31-32	do	_	_	_	_	_	_	_	_
-31	de	de	ADP	<sam->|PRP|@COM	_	34	case	_	MWE=do_que
+31	de	de	ADP	<sam->|PRP|@COM	_	34	mark	_	MWE=do_que|MWEPOS=SCONJ
 32	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	31	fixed	_	_
 33	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	31	fixed	_	_
-34	ditatorial	ditatorial	ADJ	<first-cjt>|ADJ|F|S|@KOMP<	Gender=Fem|Number=Sing	30	dep	_	ChangedBy=Issue165|SpaceAfter=No
+34	ditatorial	ditatorial	ADJ	<first-cjt>|ADJ|F|S|@KOMP<	Gender=Fem|Number=Sing	30	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 35	)	)	PUNCT	PU|@PU	_	17	punct	_	_
 36	mantém	manter	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
 37	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
@@ -78,7 +72,7 @@
 63	de	de	ADP	PRP|@N<	_	64	case	_	_
 64	David	David	PROPN	_	Gender=Masc|Number=Sing	62	nmod	_	ChangedBy=Issue119|MWE=David_Gausden|MWEPOS=PROPN
 65	Gausden	Gausden	PROPN	_	Number=Sing	64	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-66	,	,	PUNCT	PU|@PU	_	79	punct	_	d2d:#106
+66	,	,	PUNCT	PU|@PU	_	68	punct	_	d2d:#106
 67	embora	embora	SCONJ	KS|@SUB	_	68	mark	_	_
 68	fraquejando	fraquejar	VERB	<mv>|<cjt>|V|GER|@ICL-N<	VerbForm=Ger	62	acl	_	_
 69	quando	quando	ADV	<rel>|ADV|@ADVL>	_	71	advmod	_	_
@@ -91,7 +85,7 @@
 75	de	de	ADP	<sam->|PRP|@N<	_	77	case	_	_
 76	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	77	det	_	_
 77	marcha	marcha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	74	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-78	,	,	PUNCT	PU|@PU	_	79	punct	_	d2d:#106
+78	,	,	PUNCT	PU|@PU	_	68	punct	_	d2d:#106
 79	cumpre	cumprir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
 80	razoavelmente	razoavelmente	ADV	ADV|@<ADVL	_	79	advmod	_	_
 81	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	83	det	_	_
@@ -101,18 +95,13 @@
 85	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Uma palavra final para sublinhar três elementos essenciais, clara e inteligente- mente valorizados por Patrick Brennan: o prazer e a alegria de tocar (sem os quais, aliás, a música de Monk é inacessível), relembrando que, mais do que um emprego, o palco é um local de paixão; o peso do humor no desenvolvimento das notas e, acima de tudo, a sua presença peripatética, mesmo quando instrumentalmente afastado do discurso, dançando os silêncios e coreografando os tempos.
-# source = CETEMPúblico n=195 sec=clt sem=93a &E
 # sent_id = CP195-2
+# source = CETEMPúblico n=195 sec=clt sem=93a &E
 # id = 1044
-# d2d = cc(prazer,e) -> cc(presença,e)  #106
-# d2d = punct(prazer,,) -> punct(peso,,)  #106
-# d2d = cc(prazer,e) -> cc(alegria,e)  #106
-# d2d = cc(dançando,e) -> cc(coreografando,e)  #106
-# d2d = punct(prazer,,) -> punct(presença,,)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	palavra	palavra	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 3	final	final	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
-4	para	para	ADP	PRP|@N<	_	5	mark	_	_
+4	para	para	SCONJ	PRP|@N<	_	5	mark	_	_
 5	sublinhar	sublinhar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	acl	_	_
 6	três	três	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nummod	_	ChangedBy=Issue168
 7	elementos	elemento	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	5	obj	_	_
@@ -132,12 +121,12 @@
 21	e	e	CCONJ	<co-n<pred>|KC|@CO	_	23	cc	_	d2d:#106
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	alegria	alegria	NOUN	<cjt>|<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	20	conj	_	_
-24	de	de	ADP	PRP|@N<	_	25	mark	_	_
+24	de	de	SCONJ	PRP|@N<	_	25	mark	_	_
 25	tocar	tocar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	23	acl	_	_
 26	(	(	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
 27	sem	sem	ADP	PRP|@ADVL>	_	29	case	_	_
 28	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	29	det	_	MWE=os_quais
-29	quais	qual	PRON	DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	38	obl	_	ChangedBy=Issue165|SpaceAfter=No
+29	quais	qual	PRON	DET|M|P|@P<	Gender=Masc|Number=Sing|PronType=Rel	38	obl	_	ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 31	aliás	aliás	ADV	<kc>|ADV|@ADVL>	_	38	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 32	,	,	PUNCT	PU|@PU	_	31	punct	_	_
@@ -183,11 +172,11 @@
 68	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	69	det	_	_
 69	notas	nota	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	66	nmod	_	_
 70	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	78	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-71	,	,	PUNCT	PU|@PU	_	78	punct	_	d2d:#106
-72	acima	acima	ADV	ADV|@>N	_	78	advmod	_	MWE=acima_de
+71	,	,	PUNCT	PU|@PU	_	73	punct	_	d2d:#106
+72	acima	acima	ADV	ADV|@>N	_	63	advmod	_	_
 73	de	de	ADP	PRP|@A<	_	74	case	_	_
 74	tudo	tudo	PRON	<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	72	obl	_	ChangedBy=Issue165|SpaceAfter=No
-75	,	,	PUNCT	PU|@PU	_	78	punct	_	_
+75	,	,	PUNCT	PU|@PU	_	73	punct	_	_
 76	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	78	det	_	_
 77	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	78	det	_	_
 78	presença	presença	NOUN	<cjt>|<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	20	conj	_	_
@@ -212,8 +201,8 @@
 96	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = É esse um dos grandes segredos da música do pianista (cujos bailados foram, quase sempre, interpretados como uma mera excentricidade exibicionista).
-# source = CETEMPúblico n=195 sec=clt sem=93a
 # sent_id = CP195-3
+# source = CETEMPúblico n=195 sec=clt sem=93a
 # id = 1045
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	esse	esse	PRON	<dem>|DET|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
@@ -249,17 +238,17 @@
 29	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = É que é a dançar que Monk se entende.
-# source = CETEMPúblico n=195 sec=clt sem=93a
 # sent_id = CP195-4
+# source = CETEMPúblico n=195 sec=clt sem=93a
 # id = 1046
-1	É	é	ADP	PRP|@ADVL>	_	2	case	_	MWE=É_que
-2	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	_
-3	é	é	ADV	<foc>|ADV|@ADVL>	_	9	mark	_	_
-4	a	a	ADP	PRP|@ADVL>	_	5	mark	_	_
+1	É	ser	AUX	PRP|@ADVL>	_	5	discourse	_	MWE=É_que|MWEPOS=INTJ
+2	que	que	SCONJ	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	_
+3	é	ser	AUX	<foc>|ADV|@ADVL>	_	9	discourse	_	MWE=é_que|MWEPOS=INTJ
+4	a	a	SCONJ	PRP|@ADVL>	_	5	mark	_	_
 5	dançar	dançar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	advcl	_	_
-6	que	que	ADV	<foc>|ADV|@ADVL>	_	9	mark	_	_
-7	Monk	Monk	PROPN	PROP|M|S|@ACC>	Gender=Masc|Number=Sing	9	obj	_	_
-8	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	9	nsubj	_	_
+6	que	que	SCONJ	<foc>|ADV|@ADVL>	_	3	fixed	_	_
+7	Monk	Monk	PROPN	PROP|M|S|@ACC>	Gender=Masc|Number=Sing	9	nsubj	_	_
+8	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	9	obj	_	_
 9	entende	entender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 10	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 

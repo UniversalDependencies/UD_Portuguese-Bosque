@@ -1,9 +1,7 @@
 # text = Elas não apenas restringem a liberdade e o futuro dos que tentam deixar Cuba como também oferecem expectativa de «reformas democráticas forçadas» aos que ficam na ilha.
-# source = CETENFolha n=225 cad=Mundo sec=pol sem=94a
 # sent_id = CF225-1
+# source = CETENFolha n=225 cad=Mundo sec=pol sem=94a
 # id = 970
-# d2d = cc(liberdade,e) -> cc(futuro,e)  #106
-# d2d = cc(restringem,como) -> cc(oferecem,como)  #106
 1	Elas	elas	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
 2	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 3	apenas	apenas	ADV	ADV|@ADVL>	_	4	advmod	_	_
@@ -42,8 +40,8 @@
 33	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O principal objetivo norte-americano é evitar a repetição da fuga de mais de 125 mil cubanos em direção à Flórida ocorrida em 1980 a partir do porto de Mariel.
-# source = CETENFolha n=225 cad=Mundo sec=pol sem=94a
 # sent_id = CF225-2
+# source = CETENFolha n=225 cad=Mundo sec=pol sem=94a
 # id = 971
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	principal	principal	ADJ	<SUP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
@@ -64,7 +62,7 @@
 16	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	15	flat	_	ChangedBy=Issue168
 17	cubanos	cubano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	_
 18	em	em	ADP	<sam->|PRP|@N<	_	19	case	_	MWE=em_direção_a
-19	direção	direção	NOUN	N|@P<	_	11	nmod	_	_
+19	direção	direção	NOUN	N|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
 20-21	à	_	_	_	_	_	_	_	_
 20	a	a	ADP	PRP|@N<	_	22	case	_	_
 21	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
@@ -73,7 +71,7 @@
 24	em	em	ADP	PRP|@<ADVL	_	25	case	_	_
 25	1980	1980	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	23	obl	_	ChangedBy=Issue168
 26	a	a	ADP	<sam->|PRP|@<ADVL	_	27	case	_	MWE=a_partir_de
-27	partir	partir	NOUN	N|@P<	_	23	obl	_	_
+27	partir	partir	VERB	N|@P<	VerbForm=Inf	23	obl	_	_
 28-29	do	_	_	_	_	_	_	_	_
 28	de	de	ADP	PRP|@N<	_	30	case	_	_
 29	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
@@ -83,10 +81,9 @@
 33	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Na ocasião, Fidel Castro permitiu a saída de milhares de pessoas insatisfeitas com seu regime e abriu um novo espaço para se manter no poder.
-# source = CETENFolha n=225 cad=Mundo sec=pol sem=94a
 # sent_id = CF225-3
+# source = CETENFolha n=225 cad=Mundo sec=pol sem=94a
 # id = 972
-# d2d = cc(permitiu,e) -> cc(abriu,e)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -98,9 +95,9 @@
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	saída	saída	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	7	obj	_	_
 10	de	de	ADP	PRP|@N<ARG	_	11	case	_	_
-11	milhares	milhar	NUM	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	nummod	_	_
+11	milhares	milhar	NUM	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	_
 12	de	de	ADP	PRP|@N<ARG	_	13	case	_	_
-13	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	_
+13	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	nmod	_	_
 14	insatisfeitas	insatisfeito	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	13	amod	_	_
 15	com	com	ADP	PRP|@N<	_	17	case	_	_
 16	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	17	det	_	_
@@ -110,7 +107,7 @@
 20	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 21	novo	novo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	22	amod	_	_
 22	espaço	espaço	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	19	obj	_	_
-23	para	para	ADP	PRP|@N<	_	25	mark	_	_
+23	para	para	SCONJ	PRP|@N<	_	25	mark	_	_
 24	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	25	expl	_	ChangedBy=Issue135
 25	manter	manter	VERB	<mv>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	22	acl	_	_
 26-27	no	_	_	_	_	_	_	_	_

@@ -1,14 +1,7 @@
 # text = De um modo aparentemente displicente, mas evidentemente estudado nos seus efeitos, surgem referências a Nitsch Hermann e a Rodolf Schwarzkogler, por exemplo, personagens que, com Arnulf Rainer e Günter Brus, compuseram um grupo de artistas vienenses capaz de, nos anos 60, provocar escândalo não só na cena pantanosa e hipócrita da arte austríaca do pós-guerra, como no conjunto da arte ocidental.
-# source = CETEMPúblico n=145 sec=clt sem=95b
 # sent_id = CP145-1
+# source = CETEMPúblico n=145 sec=clt sem=95b
 # id = 748
-# d2d = punct(displicente,,) -> punct(estudado,,)  #106
-# d2d = cc(cena,como) -> cc(conjunto,como)  #106
-# d2d = cc(Arnulf,e) -> cc(Günter,e)  #106
-# d2d = cc(displicente,mas) -> cc(estudado,mas)  #106
-# d2d = punct(cena,,) -> punct(conjunto,,)  #106
-# d2d = cc(pantanosa,e) -> cc(hipócrita,e)  #106
-# d2d = cc(Nitsch,e) -> cc(Rodolf,e)  #106
 1	De	de	ADP	PRP|@ADVL>	_	3	case	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	modo	modo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue137
@@ -54,7 +47,7 @@
 42	artistas	artista	NOUN	<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	40	nmod	_	_
 43	vienenses	vienense	ADJ	ADJ|M/F|P|@N<	Gender=Unsp|Number=Plur	42	amod	_	_
 44	capaz	capaz	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	40	amod	_	_
-45	de	de	ADP	PRP|@A<ARG	_	52	mark	_	ChangedBy=Issue165|SpaceAfter=No
+45	de	de	SCONJ	PRP|@A<ARG	_	52	mark	_	ChangedBy=Issue165|SpaceAfter=No
 46	,	,	PUNCT	PU|@PU	_	49	punct	_	_
 47-48	nos	_	_	_	_	_	_	_	_
 47	em	em	ADP	<sam->|PRP|@ADVL>	_	49	case	_	_
@@ -96,8 +89,8 @@
 78	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Radicalizando a ideia das vanguardas em reduzir cada linguagem artística à sua especificidade, eles acabaram por inverter a lógica de purificação de meios do modernismo.
-# source = CETEMPúblico n=145 sec=clt sem=95b
 # sent_id = CP145-2
+# source = CETEMPúblico n=145 sec=clt sem=95b
 # id = 749
 1	Radicalizando	radicalizar	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	20	advcl	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -106,7 +99,7 @@
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	6	det	_	_
 6	vanguardas	vanguarda	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	nmod	_	_
-7	em	em	ADP	PRP|@N<	_	8	mark	_	_
+7	em	em	SCONJ	PRP|@N<	_	8	mark	_	_
 8	reduzir	reduzir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	acl	_	_
 9	cada	cada	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	10	det	_	_
 10	linguagem	linguagem	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
@@ -118,9 +111,9 @@
 15	especificidade	especificidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	iobj	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 17	eles	eles	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	20	nsubj	_	_
-18	acabaram	acabar	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	20	aux	_	_
-19	por	por	ADP	PRP|@PRT-AUX<	_	20	case	_	_
-20	inverter	inverter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+18	acabaram	acabar	VERB	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=acabaram_por|MWEPOS=AUX
+19	por	por	SCONJ	PRP|@PRT-AUX<	_	20	mark	_	_
+20	inverter	inverter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	xcomp	_	_
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	lógica	lógico	NOUN	<n>|<np-def>|ADJ|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
@@ -134,12 +127,9 @@
 30	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = O corpo humano (na sua realidade física) tornou-se suporte -- ou, se quisermos, a própria matéria-prima da obra de arte.
-# source = CETEMPúblico n=145 sec=clt sem=95b
 # sent_id = CP145-3
+# source = CETEMPúblico n=145 sec=clt sem=95b
 # id = 750
-# d2d = cc(suporte,ou) -> cc(matéria-prima,ou)  #106
-# d2d = punct(suporte,,) -> punct(matéria-prima,,)  #106
-# d2d = punct(suporte,,) -> punct(matéria-prima,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	corpo	corpo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3	humano	humano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -157,10 +147,10 @@
 13	suporte	suporte	NOUN	<first-cjt>|<np-idf>|N|M|S|@<OC	Gender=Masc|Number=Sing	11	xcomp	_	_
 14	--	--	PUNCT	PU|@PU	_	11	punct	_	_
 15	ou	ou	CCONJ	KC|@CO	_	22	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-16	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 17	se	se	SCONJ	KS|@SUB	_	18	mark	_	_
 18	quisermos	querer	VERB	<mv>|V|FUT|1P|SUBJ|@FS-N<	Mood=Sub|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	22	advcl	_	ChangedBy=Issue165|SpaceAfter=No
-19	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+19	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 21	própria	próprio	DET	<ident>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Emp	22	det	_	_
 22	matéria-prima	matéria-prima	NOUN	<cjt>|<np-def>|N|F|S|@<OC	Gender=Fem|Number=Sing	13	conj	_	_
@@ -169,20 +159,18 @@
 24	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	25	det	_	_
 25	obra	obra	NOUN	_	Gender=Fem|Number=Sing	22	nmod	_	MWE=obra_de_arte|MWEPOS=NOUN
 26	de	de	ADP	_	_	25	compound	_	_
-27	arte	arte	NOUN	_	_	25	compound	_	ChangedBy=Issue165|SpaceAfter=No
+27	arte	arte	NOUN	_	Gender=Fem|Number=Sing	25	compound	_	ChangedBy=Issue165|SpaceAfter=No
 28	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Chamaram-se a si mesmos «actionistas», embora o movimento, que se espalhou largamente até aos anos 70, seja designado globalmente por «body art», ou surja nos textos de Bowie como «arte ritual».
-# source = CETEMPúblico n=145 sec=clt sem=95b
 # sent_id = CP145-4
+# source = CETEMPúblico n=145 sec=clt sem=95b
 # id = 751
-# d2d = punct(designado,,) -> punct(surja,,)  #106
-# d2d = cc(designado,ou) -> cc(surja,ou)  #106
 1-2	Chamaram-se	_	_	_	_	_	_	_	_
 1	Chamaram	chamar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-2	se	se	PRON	<refl>|PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	obj	_	_
+2	se	se	PRON	<refl>|PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	expl	_	_
 3	a	a	ADP	PRP|@<PIV	_	4	case	_	_
-4	si	se	PRON	<refl>|PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	iobj	_	_
+4	si	se	PRON	<refl>|PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	1	obj	_	_
 5	mesmos	mesmo	ADJ	<ident>|DET|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
 6	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 7	actionistas	actionistas	NOUN	<np-idf>|N|M|P|@<OC	Gender=Masc|Number=Plur	1	xcomp	_	ChangedBy=Issue165|SpaceAfter=No

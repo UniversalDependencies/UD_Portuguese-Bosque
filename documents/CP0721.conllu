@@ -1,14 +1,7 @@
 # text = Assim, encorajado pela total disponibilidade do meu interlocutor, que igualmente admito, tentaria que entendesse, pelo menos, as vantagens económicas, em termos de desenvolvimento local (turístico, por exemplo), da salvaguarda da invulgarmente importante, mesmo à escala mundial, jazida com pegadas de dinossáurios da serra d'Aire, cujo valor científico já trouxe aqui cientistas de todo o mundo (dos EUA à China), e da transformação do sítio num local público com todos os equipamentos necessários à sua fruição como bem cultural, científico e pedagógico.
-# source = CETEMPúblico n=721 sec=nd sem=95b
 # sent_id = CP721-1
+# source = CETEMPúblico n=721 sec=nd sem=95b
 # id = 3702
-# d2d = punct(salvaguarda,,) -> punct(transformação,,)  #106
-# d2d = cc(cultural,e) -> cc(pedagógico,e)  #106
-# d2d = punct(salvaguarda,,) -> punct(transformação,,)  #106
-# d2d = cc(salvaguarda,e) -> cc(transformação,e)  #106
-# d2d = punct(salvaguarda,,) -> punct(transformação,,)  #106
-# d2d = punct(cultural,,) -> punct(científico,,)  #106
-# d2d = punct(salvaguarda,,) -> punct(transformação,,)  #106
 1	Assim	assim	ADV	<kc>|ADV|@ADVL>	_	15	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	encorajado	encorajar	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	15	advcl	_	_
@@ -41,7 +34,7 @@
 27	económicas	económico	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	26	amod	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 29	em	em	ADP	PRP|@N<PRED	_	30	case	_	MWE=em_termos_de
-30	termos	termos	NOUN	N|@P<	_	26	nmod	_	_
+30	termos	termos	NOUN	N|@P<	Gender=Masc|Number=Plur	26	nmod	_	_
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
 32	desenvolvimento	desenvolvimento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	_
 33	local	local	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	32	amod	_	_
@@ -61,14 +54,14 @@
 45	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	_	_
 46	invulgarmente	invulgarmente	ADV	ADV|@>A	_	47	advmod	_	_
 47	importante	importante	NOUN	<n>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	55	amod	_	ChangedBy=Issue165|SpaceAfter=No
-48	,	,	PUNCT	PU|@PU	_	88	punct	_	d2d:#106
+48	,	,	PUNCT	PU|@PU	_	52	punct	_	d2d:#106
 49	mesmo	mesmo	ADV	<quant>|ADV|@>A	_	52	advmod	_	_
 50-51	à	_	_	_	_	_	_	_	_
 50	a	a	ADP	<sam->|PRP|@A<	_	52	case	_	_
 51	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
 52	escala	escala	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	47	obl	_	_
 53	mundial	mundial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	52	amod	_	ChangedBy=Issue165|SpaceAfter=No
-54	,	,	PUNCT	PU|@PU	_	88	punct	_	d2d:#106
+54	,	,	PUNCT	PU|@PU	_	52	punct	_	d2d:#106
 55	jazida	jazida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	43	nmod	_	_
 56	com	com	ADP	PRP|@N<	_	57	case	_	_
 57	pegadas	pegada	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	55	nmod	_	_
@@ -136,23 +129,19 @@
 112	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Quanto a este assunto, tentaria convencer o professor a visitar o local e procurar saber as opiniões dos responsáveis locais e das respectivas populações e, ainda, a auscultar o sentir dos vários sectores da vida portuguesa sobre este caso, incluindo o do cidadão anónimo.
-# source = CETEMPúblico n=721 sec=nd sem=95b
 # sent_id = CP721-2
+# source = CETEMPúblico n=721 sec=nd sem=95b
 # id = 3703
-# d2d = cc(visitar,e) -> cc(auscultar,e)  #106
-# d2d = punct(visitar,,) -> punct(auscultar,,)  #106
-# d2d = cc(locais,e) -> cc(populações,e)  #106
-# d2d = cc(visitar,e) -> cc(procurar,e)  #106
-1	Quanto	quanto	ADV	ADV|@ADVL>	_	6	advmod	_	MWE=Quanto_a
-2	a	a	ADP	PRP|@A<	_	4	case	_	_
+1	Quanto	quanto	ADV	ADV|@ADVL>	_	4	case	_	MWE=Quanto_a|MWEPOS=ADP
+2	a	a	ADP	PRP|@A<	_	1	fixed	_	_
 3	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
-4	assunto	assunto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue165|SpaceAfter=No
+4	assunto	assunto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 6	tentaria	tentar	VERB	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
 7	convencer	convencer	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	6	xcomp	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	professor	professor	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
-10	a	a	ADP	<first-cjt>|PRP|@<PIV	_	11	mark	_	_
+10	a	a	SCONJ	<first-cjt>|PRP|@<PIV	_	11	mark	_	_
 11	visitar	visitar	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	7	xcomp	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	local	local	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_
@@ -173,10 +162,10 @@
 26	respectivas	respectivo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	27	amod	_	_
 27	populações	população	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	22	conj	_	_
 28	e	e	CCONJ	<co-piv>|KC|@CO	_	33	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-29	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
+29	,	,	PUNCT	PU|@PU	_	30	punct	_	d2d:#106
 30	ainda	ainda	ADV	ADV|@>A	_	33	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-31	,	,	PUNCT	PU|@PU	_	33	punct	_	_
-32	a	a	ADP	<cjt>|PRP|@<PIV	_	33	mark	_	_
+31	,	,	PUNCT	PU|@PU	_	30	punct	_	_
+32	a	a	SCONJ	<cjt>|PRP|@<PIV	_	33	mark	_	_
 33	auscultar	auscultar	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	11	conj	_	_
 34	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	sentir	sentir	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	33	obj	_	_
@@ -204,11 +193,11 @@
 54	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = A propósito da exposição «Dinossáurios da China», em curso no Museu Nacional de História Natural, começaria por insistir no convite a Sua Excelência a visitá-la.
-# source = CETEMPúblico n=721 sec=nd sem=95b
 # sent_id = CP721-3
+# source = CETEMPúblico n=721 sec=nd sem=95b
 # id = 3704
 1	A	a	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=A_propósito_de
-2	propósito	propósito	NOUN	N|@P<	_	25	obl	_	_
+2	propósito	propósito	NOUN	N|@P<	Gender=Masc|Number=Sing	25	obl	_	_
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -222,7 +211,7 @@
 11	»	»	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 13	em	em	ADP	PRP|@N<PRED	_	14	case	_	MWE=em_curso
-14	curso	curso	NOUN	N|@P<	_	5	nmod	_	_
+14	curso	curso	NOUN	N|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 15-16	no	_	_	_	_	_	_	_	_
 15	em	em	ADP	<sam->|PRP|@P<	_	17	case	_	_
 16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
@@ -232,33 +221,28 @@
 20	História	História	PROPN	_	Number=Sing	17	nmod	_	ChangedBy=Issue119|MWE=História_Natural|MWEPOS=PROPN
 21	Natural	Natural	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-23	começaria	começar	AUX	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	25	aux	_	_
-24	por	por	ADP	PRP|@PRT-AUX<	_	25	case	_	_
-25	insistir	insistir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+23	começaria	começar	VERB	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	MWE=começaria_por|MWEPOS=AUX
+24	por	por	SCONJ	PRP|@PRT-AUX<	_	25	mark	_	_
+25	insistir	insistir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	xcomp	_	_
 26-27	no	_	_	_	_	_	_	_	_
 26	em	em	ADP	<sam->|PRP|@<PIV	_	28	case	_	_
 27	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	convite	convite	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	25	obj	_	_
 29	a	a	ADP	PRP|@N<ARG	_	30	case	_	_
-30	Sua	seu	PROPN	_	Gender=Masc|Number=Sing	28	nmod	_	ChangedBy=Issue119|MWE=Sua_Excelência|MWEPOS=PROPN
-31	Excelência	excelência	PROPN	_	Gender=Fem|Number=Sing	30	flat:name	_	ChangedBy=Issue119
-32	a	a	ADP	PRP|@N<ARG	_	33	mark	_	_
+30	Sua	Sua	PROPN	_	Gender=Masc|Number=Sing	28	nmod	_	ChangedBy=Issue119|MWE=Sua_Excelência|MWEPOS=PROPN
+31	Excelência	Excelência	PROPN	_	Gender=Fem|Number=Sing	30	flat:name	_	ChangedBy=Issue119
+32	a	a	SCONJ	PRP|@N<ARG	_	33	mark	_	_
 33-34	visitá-la	_	_	_	_	_	_	_	SpaceAfter=No
 33	visitá	visitar	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	28	acl	_	_
 34	la	ela	PRON	PERS|F|3S|ACC|@<ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	33	obj	_	_
 35	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
 # text = Aproveitaria para lhe mostrar o estado lamentável de um enorme casarão, esventrado e em tosco, na sequência do incêndio da Faculdade de Ciências (há 18 anos!), de reinstalação sempre adiada e pomposamente referido como Museu Nacional, que pouco deve à tutela, mas ao qual se reconhece uma obra científica, cultural e pedagógica notável.
-# source = CETEMPúblico n=721 sec=nd sem=95b
 # sent_id = CP721-4
+# source = CETEMPúblico n=721 sec=nd sem=95b
 # id = 3705
-# d2d = cc(deve,mas) -> cc(reconhece,mas)  #106
-# d2d = cc(científica,e) -> cc(pedagógica,e)  #106
-# d2d = punct(deve,,) -> punct(reconhece,,)  #106
-# d2d = punct(científica,,) -> punct(cultural,,)  #106
-# d2d = cc(reinstalação,e) -> cc(referido,e)  #106
 1	Aproveitaria	aproveitar	VERB	<mv>|V|COND|1|@FS-STA	Mood=Cnd|VerbForm=Fin	0	root	_	_
-2	para	para	ADP	PRP|@<ADVL	_	4	mark	_	_
+2	para	para	SCONJ	PRP|@<ADVL	_	4	mark	_	_
 3	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	iobj	_	_
 4	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
@@ -293,7 +277,7 @@
 31	18	18	NUM	<card>|NUM|M|P|@>N	NumType=Card	32	nummod	_	ChangedBy=Issue168
 32	anos	ano	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	30	obj	_	ChangedBy=Issue165|SpaceAfter=No
 33	!	!	PUNCT	PU|@PU	_	1	punct	_	ChangedBy=Issue165|SpaceAfter=No
-34	)	)	PUNCT	PU|@PU	_	1	punct	_	ChangedBy=Issue165|SpaceAfter=No
+34	)	)	PUNCT	PU|@PU	_	30	punct	_	ChangedBy=Issue165|SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	30	punct	_	_
 36	de	de	ADP	<first-cjt>|PRP|@N<PRED	_	37	case	_	_
 37	reinstalação	reinstalação	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
@@ -318,11 +302,11 @@
 55-56	ao	_	_	_	_	_	_	_	_
 55	a	a	ADP	<sam->|PRP|@PIV>	_	57	case	_	_
 56	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	_	_
-57	qual	qual	PRON	<rel>|<np-def>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	59	iobj	_	_
+57	qual	qual	PRON	<rel>|<np-def>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	59	obj	_	_
 58	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	59	nsubj	_	_
 59	reconhece	reconhecer	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	49	conj	_	_
 60	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	61	det	_	_
-61	obra	obra	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	59	obj	_	_
+61	obra	obra	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	59	xcomp	_	_
 62	científica	científico	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	61	amod	_	ChangedBy=Issue165|SpaceAfter=No
 63	,	,	PUNCT	PU|@PU	_	64	punct	_	d2d:#106
 64	cultural	cultural	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	62	conj	_	_
@@ -332,8 +316,8 @@
 68	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Dir-lhe-ia que reunir aqui esta magnífica colecção de verdadeiros fósseis, alguns gigantescos, dos terrenos mesozóicos da velha China foi mérito exclusivo deste Museu, que não contou com quaisquer apoios diplomáticos, numa realização que vai fazer mais pelo estreitamento das relações entre os dois países do que quaisquer outras já realizadas.
-# source = CETEMPúblico n=721 sec=nd sem=95b
 # sent_id = CP721-5
+# source = CETEMPúblico n=721 sec=nd sem=95b
 # id = 3706
 1-2	Dir-lhe-ia	_	_	_	_	_	_	_	_
 1	Diria	dizer	VERB	<mv>|<hyphen>|V|COND|1S|@FS-STA	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin	0	root	_	mesoclitic
@@ -402,14 +386,14 @@
 57	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	56	fixed	_	_
 58	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	56	fixed	_	_
 59	quaisquer	qualquer	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	60	det	_	_
-60	outras	outro	ADV	<first-cjt>|<KOMP>|<diff>|<np-idf>|DET|F|P|@KOMP<	Gender=Fem|Number=Plur|PronType=Ind	45	advmod	_	_
+60	outras	outro	SCONJ	<first-cjt>|<KOMP>|<diff>|<np-idf>|DET|F|P|@KOMP<	Gender=Fem|Number=Plur|PronType=Ind	62	mark	_	_
 61	já	já	ADV	ADV|@ADVL>	_	62	advmod	_	_
-62	realizadas	realizar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	60	acl	_	ChangedBy=Issue165|SpaceAfter=No
+62	realizadas	realizar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	45	acl	_	ChangedBy=Issue165|SpaceAfter=No
 63	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = As centenas de milhares de visitantes esperados assim o permitem concluir.
-# source = CETEMPúblico n=721 sec=nd sem=95b
 # sent_id = CP721-6
+# source = CETEMPúblico n=721 sec=nd sem=95b
 # id = 3707
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	centenas	centena	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	10	nsubj	_	_
@@ -425,8 +409,8 @@
 12	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Dir-lhe-ia, ainda, como é lamentável neste caso a falta de apoio do Ministério da Educação.
-# source = CETEMPúblico n=721 sec=nd sem=95b
 # sent_id = CP721-7
+# source = CETEMPúblico n=721 sec=nd sem=95b
 # id = 3708
 1-2	Dir-lhe-ia	_	_	_	_	_	_	_	SpaceAfter=No
 1	Diria	dizer	VERB	<mv>|<hyphen>|V|COND|1S|@FS-STA	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin	0	root	_	mesoclitic

@@ -1,6 +1,6 @@
 # text = Um dos resultados práticos desta fusão é que Michael Eisner, presidente da Walt Disney, se tornou da noite para o dia o homem mais poderoso do sector.
-# source = CETEMPúblico n=510 sec=nd sem=95b
 # sent_id = CP510-1
+# source = CETEMPúblico n=510 sec=nd sem=95b
 # id = 2676
 1	Um	um	NUM	<card>|NUM|M|S|@SUBJ>	NumType=Card	9	nsubj	_	ChangedBy=Issue168
 2-3	dos	_	_	_	_	_	_	_	_
@@ -17,12 +17,12 @@
 11	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	21	nsubj	_	ChangedBy=Issue119|MWE=Michael_Eisner|MWEPOS=PROPN
 12	Eisner	Eisner	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-14	presidente	presidente	NOUN	N|@N<PRED	_	11	appos	_	MWE=presidente_da_Walt_Disney
+14	presidente	presidente	NOUN	N|@N<PRED	Gender=Masc|Number=Sing	11	appos	_	MWE=presidente_da_Walt_Disney
 15-16	da	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	Walt	walt	NOUN	N|@P<	_	14	nmod	_	_
-18	Disney	disney	ADJ	ADJ|@N<	_	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
+17	Walt	walt	NOUN	N|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
+18	Disney	disney	ADJ	ADJ|@N<	Gender=Fem|Number=Sing	17	amod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 20	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	21	expl	_	ChangedBy=Issue135
 21	tornou	tornar	VERB	<mv>|<se-passive>|V|PS|3S|IND|@FS-<SC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	ccomp	_	_
@@ -44,17 +44,16 @@
 35	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Nada mau para quem era acusado de ter demasiadas cautelas na condução do seu grupo e de estar tolhido por uma notável falta de visão global.
-# source = CETEMPúblico n=510 sec=nd sem=95b
 # sent_id = CP510-2
+# source = CETEMPúblico n=510 sec=nd sem=95b
 # id = 2677
-# d2d = cc(ter,e) -> cc(de,e)  #106
 1	Nada	nada	ADV	<quant>|<det>|ADV|@>A	Polarity=Neg	2	advmod	_	_
 2	mau	mau	ADJ	ADJ|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
-3	para	para	ADP	PRP|@A<ARG	_	6	mark	_	_
+3	para	para	SCONJ	PRP|@A<ARG	_	6	mark	_	_
 4	quem	quem	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	6	nsubj	_	_
 5	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
-6	acusado	acusar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	2	dep	_	_
-7	de	de	ADP	<first-cjt>|PRP|@<PIV	_	8	mark	_	_
+6	acusado	acusar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	2	ccomp	_	_
+7	de	de	SCONJ	<first-cjt>|PRP|@<PIV	_	8	mark	_	_
 8	ter	ter	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	xcomp	_	_
 9	demasiadas	demasiado	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	10	amod	_	_
 10	cautelas	cautela	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	_
@@ -68,9 +67,9 @@
 16	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	17	det	_	_
 17	grupo	grupo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
 18	e	e	CCONJ	<co-piv>|KC|@CO	_	21	cc	_	d2d:#106
-19	de	de	ADP	<cjt>|PRP|@<PIV	_	21	mark	_	_
+19	de	de	SCONJ	<cjt>|PRP|@<PIV	_	21	mark	_	_
 20	estar	estar	AUX	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	cop	_	ChangedBy=Issue167
-21	tolhido	tolhido	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	8	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+21	tolhido	tolhido	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	8	conj	_	ChangedBy=Issue141|ChangedBy=Issue91
 22	por	por	ADP	PRP|@<ADVL	_	25	case	_	_
 23	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 24	notável	notável	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	25	amod	_	_
@@ -81,33 +80,29 @@
 29	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Além disso, há mais de um ano que Eisner sofria desaires:
-# source = CETEMPúblico n=510 sec=nd sem=95b
 # sent_id = CP510-3
+# source = CETEMPúblico n=510 sec=nd sem=95b
 # id = 2678
-1	Além	além	ADV	ADV|@ADVL>	_	12	advmod	_	MWE=Além_de
+1	Além	além	ADV	ADV|@ADVL>	_	3	cc	_	MWE=Além_disso|MWEPOS=CCONJ
 2-3	disso	_	_	_	_	_	_	_	ChangedBy=Issue165|SpaceAfter=No
-2	de	de	ADP	PRP|@A<	_	3	case	_	_
-3	isso	isso	PRON	<dem>|<-sam>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	1	obl	_	_
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	isso	isso	PRON	<dem>|<-sam>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	12	obl	_	_
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
-6	mais	muito	ADV	<quant>|<KOMP>|DET|M/F|S/P|@>A	Gender=Unsp|Number=Unsp|PronType=Ind	8	advmod	_	MWE=mais_de
+6	mais	mais	ADV	<quant>|<KOMP>|DET|M/F|S/P|@>A	_	8	advmod	_	MWE=mais_de|MWEPOS=ADV
 7	de	de	ADP	PRP|@A<	_	6	fixed	_	_
 8	um	um	NUM	<arti>|ART|M|S|@>N	NumType=Card	9	nummod	_	_
 9	ano	ano	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
-10	que	que	ADV	<foc>|ADV|@ADVL>	_	12	mark	_	_
+10	que	que	SCONJ	<foc>|ADV|@ADVL>	_	12	mark	_	_
 11	Eisner	Eisner	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 12	sofria	sofrer	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 13	desaires	desaire	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	obj	_	ChangedBy=Issue165|SpaceAfter=No
 14	:	:	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = o seu amigo e colega de direcção Frank Wells morreu num desastre aéreo e, logo depois, o director dos estúdios, Jeffrey Katzenberg (responsável pelo «renascimento» da animação na Disney), bateu com a porta, insatisfeito por não chegar ao topo da empresa, fundando a produtora SKG-Dreamworks com Steven Spielberg e David Geffen.
-# source = CETEMPúblico n=510 sec=nd sem=95b
 # sent_id = CP510-4
+# source = CETEMPúblico n=510 sec=nd sem=95b
 # id = 2679
-# d2d = punct(morreu,,) -> punct(bateu,,)  #106
-# d2d = cc(morreu,e) -> cc(bateu,e)  #106
-# d2d = cc(amigo,e) -> cc(colega,e)  #106
-# d2d = cc(Steven,e) -> cc(David,e)  #106
 1	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	3	det	_	_
 3	amigo	amigo	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
@@ -124,7 +119,7 @@
 13	desastre	desastre	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue137
 14	aéreo	aéreo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	13	amod	_	_
 15	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	43	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-16	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 17	logo	logo	ADV	<kc>|ADV|@ADVL>	_	43	advmod	_	_
 18	depois	depois	ADV	ADV|@A<	_	17	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	17	punct	_	_
@@ -161,7 +156,7 @@
 46	porta	porta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	43	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 47	,	,	PUNCT	PU|@PU	_	51	punct	_	_
 48	insatisfeito	insatisfeito	ADJ	<cjt>|ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	43	amod	_	_
-49	por	por	ADP	PRP|@A<ARG	_	51	mark	_	_
+49	por	por	SCONJ	PRP|@A<ARG	_	51	mark	_	_
 50	não	não	ADV	_	Polarity=Neg	51	advmod	_	_
 51	chegar	chegar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	48	advcl	_	_
 52-53	ao	_	_	_	_	_	_	_	_

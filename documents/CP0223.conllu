@@ -1,11 +1,11 @@
 # text = «Somos obrigados a tornar os nossos programas o mais interessantes possível, num ambiente onde existem múltiplas escolhas», refere Victor Neufeld, o produtor executivo do programa 20/20, da ABC, citado pela Associated Press.
-# source = CETEMPúblico n=223 sec=clt sem=97b
 # sent_id = CP223-1
+# source = CETEMPúblico n=223 sec=clt sem=97b
 # id = 1200
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Somos	ser	AUX	<aux>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux:pass	_	_
 3	obrigados	obrigar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	23	parataxis	_	_
-4	a	a	ADP	PRP|@<PIV	_	5	mark	_	_
+4	a	a	SCONJ	PRP|@<PIV	_	5	mark	_	_
 5	tornar	tornar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	xcomp	_	_
 6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
 7	nossos	nosso	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	8	det	_	_
@@ -19,7 +19,7 @@
 14	em	em	ADP	<sam->|PRP|@<ADVL	_	16	case	_	_
 15	um	um	DET	<-sam>|<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	ambiente	ambiente	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
-17	onde	onde	ADV	<rel>|ADV|@ADVL>	_	18	advmod	_	_
+17	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	18	obl	_	_
 18	existem	existir	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_
 19	múltiplas	múltiplo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	20	amod	_	_
 20	escolhas	escolha	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	18	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -52,55 +52,54 @@
 44	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
 # text = «Cada vez fazemos mais pesquisa para encontrar histórias novas e cada vez vamos mais fundo para as investigar.»
-# source = CETEMPúblico n=223 sec=clt sem=97b
 # sent_id = CP223-2
+# source = CETEMPúblico n=223 sec=clt sem=97b
 # id = 1201
-# d2d = cc(fazemos,e) -> cc(vamos,e)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Cada	cada	PROPN	_	_	4	obl	_	ChangedBy=Issue119|MWE=Cada_vez|MWEPOS=PROPN
+2	Cada	Cada	PROPN	_	Gender=Fem|Number=Sing	4	obl	_	ChangedBy=Issue119|MWE=Cada_vez|MWEPOS=PROPN
 3	vez	vez	PROPN	_	Gender=Fem|Number=Sing	2	flat:name	_	ChangedBy=Issue119
 4	fazemos	fazer	VERB	<mv>|<first-cjt>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	mais	mais	ADV	<quant>|ADV|@>A	_	6	advmod	_	_
 6	pesquisa	pesquisa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
-7	para	para	ADP	PRP|@<ADVL	_	8	mark	_	_
+7	para	para	SCONJ	PRP|@<ADVL	_	8	mark	_	_
 8	encontrar	encontrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	advcl	_	_
 9	histórias	história	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	_
 10	novas	novo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	9	amod	_	_
 11	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
-12	cada	cada	PROPN	_	_	14	obl	_	ChangedBy=Issue119|MWE=Cada_vez|MWEPOS=PROPN
+12	cada	cada	PROPN	_	Gender=Fem|Number=Sing	14	obl	_	ChangedBy=Issue119|MWE=Cada_vez|MWEPOS=PROPN
 13	vez	vez	PROPN	_	Gender=Fem|Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	vamos	ir	VERB	<mv>|<cjt>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	conj	_	_
 15	mais	mais	ADV	<quant>|ADV|@>A	_	16	advmod	_	_
 16	fundo	fundo	ADV	ADV|@<ADVL	_	14	advmod	_	_
-17	para	para	ADP	PRP|@<ADVL	_	19	mark	_	_
+17	para	para	SCONJ	PRP|@<ADVL	_	19	mark	_	_
 18	as	elas	PRON	PERS|F|3P|ACC|@ACC>	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	19	obj	_	_
 19	investigar	investigar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	14	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 20	.	.	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 21	»	»	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Conseguir um bom exclusivo pode significar a entrada de milhões de dólares em publicidade.
-# source = CETEMPúblico n=223 sec=clt sem=97b
 # sent_id = CP223-3
+# source = CETEMPúblico n=223 sec=clt sem=97b
 # id = 1202
 1	Conseguir	conseguir	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	6	csubj	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 3	bom	bom	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	4	amod	_	_
 4	exclusivo	exclusivo	NOUN	<n>|<np-idf>|ADJ|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
-5	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-6	significar	significar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+5	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	significar	significar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	entrada	entrada	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	6	obj	_	_
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
-10	milhões	milhão	NUM	<np-idf>|N|M|P|@P<	NumType=Card	12	nummod	_	_
+10	milhões	milhão	NUM	<np-idf>|N|M|P|@P<	NumType=Card	8	nmod	_	_
 11	de	de	ADP	PRP|@N<ARG	_	12	case	_	_
-12	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
+12	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	_
 13	em	em	ADP	PRP|@N<	_	14	case	_	_
 14	publicidade	publicidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Daí que Shapiro tenha ficado tão orgulhoso com o exclusivo dos pais dos sete irmãos gémeos.
-# source = CETEMPúblico n=223 sec=clt sem=97b
 # sent_id = CP223-4
+# source = CETEMPúblico n=223 sec=clt sem=97b
 # id = 1203
 1-2	Daí	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	2	case	_	_
@@ -127,12 +126,12 @@
 20	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = E, para que fique registado, o produtor afirma que a NBC não pagou ao casal McCaughey.
-# source = CETEMPúblico n=223 sec=clt sem=97b
 # sent_id = CP223-5
+# source = CETEMPúblico n=223 sec=clt sem=97b
 # id = 1204
 1	E	e	CCONJ	KC|@CO	_	10	cc	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-3	para	para	ADP	PRP|@ADVL>	_	5	mark	_	_
+3	para	para	SCONJ	PRP|@ADVL>	_	5	mark	_	_
 4	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
 5	fique	ficar	VERB	<mv>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	_	_
 6	registado	registado	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	5	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
@@ -153,16 +152,15 @@
 20	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Shapiro acredita que eles concordaram em aparecer no programa Dateline, da NBC, pura e simplesmente porque gostam de o ver.
-# source = CETEMPúblico n=223 sec=clt sem=97b &E
 # sent_id = CP223-6
+# source = CETEMPúblico n=223 sec=clt sem=97b &E
 # id = 1205
-# d2d = cc(pura,e) -> cc(simplesmente,e)  #106
 1	Shapiro	Shapiro	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	acredita	acreditar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
 4	eles	eles	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
 5	concordaram	concordar	VERB	<mv>|V|PS|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	_	_
-6	em	em	ADP	PRP|@<PIV	_	7	mark	_	_
+6	em	em	SCONJ	PRP|@<PIV	_	7	mark	_	_
 7	aparecer	aparecer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	xcomp	_	_
 8-9	no	_	_	_	_	_	_	_	_
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
@@ -180,14 +178,14 @@
 19	simplesmente	simplesmente	ADV	<cjt>|ADV|@ADVL>	_	17	conj	_	_
 20	porque	porque	SCONJ	KS|@SUB	_	21	mark	_	_
 21	gostam	gostar	VERB	<mv>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_
-22	de	de	ADP	PRP|@<PIV	_	24	mark	_	_
+22	de	de	SCONJ	PRP|@<PIV	_	24	mark	_	_
 23	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	24	obj	_	_
 24	ver	ver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Quanto à presença dos seguranças à porta de casa deles, foi a NBC que os contratou para manterem os «paparazzi» à distância durante a entrevista.
-# source = CETEMPúblico n=223 sec=clt sem=97b
 # sent_id = CP223-7
+# source = CETEMPúblico n=223 sec=clt sem=97b
 # id = 1206
 1	Quanto	quanto	ADV	ADV|@ADVL>	_	21	advmod	_	MWE=Quanto_a
 2-3	à	_	_	_	_	_	_	_	_
@@ -208,13 +206,13 @@
 13	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 14	eles	eles	PRON	<-sam>|PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	nmod	_	_
 15	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-16	foi	foi	ADV	<foc>|ADV|@ADVL>	_	21	mark	_	_
+16	foi	foi	SCONJ	<foc>|ADV|@ADVL>	_	21	mark	_	_
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	NBC	NBC	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	21	nsubj	_	_
-19	que	que	ADV	<foc>|ADV|@ADVL>	_	21	mark	_	_
+19	que	que	SCONJ	<foc>|ADV|@ADVL>	_	21	mark	_	_
 20	os	eles	PRON	PERS|M|3P|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	21	obj	_	_
 21	contratou	contratar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-22	para	para	ADP	PRP|@<ADVL	_	23	mark	_	_
+22	para	para	SCONJ	PRP|@<ADVL	_	23	mark	_	_
 23	manterem	manter	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	21	advcl	_	_
 24	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
 25	«	«	PUNCT	PU|@PU	_	26	punct	_	ChangedBy=Issue165|SpaceAfter=No

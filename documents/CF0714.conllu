@@ -1,18 +1,16 @@
 # text = Crescer, sem complicar
-# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF714-1
+# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # id = 2995
 1	Crescer	crescer	VERB	<mv>|V|INF|@ICL-STA	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-3	sem	sem	ADP	PRP|@<ADVL	_	4	mark	_	_
+3	sem	sem	SCONJ	PRP|@<ADVL	_	4	mark	_	_
 4	complicar	complicar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_
 
 # text = Existe ambiente político, social e econômico para se produzir automóveis no Brasil?
-# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF714-3
+# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # id = 2996
-# d2d = punct(político,,) -> punct(social,,)  #106
-# d2d = cc(político,e) -> cc(econômico,e)  #106
 1	Existe	existir	VERB	<mv>|V|PR|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	ambiente	ambiente	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	1	nsubj	_	_
 3	político	político	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -20,7 +18,7 @@
 5	social	social	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	conj	_	_
 6	e	e	CCONJ	<co-postnom>|KC|@CO	_	7	cc	_	d2d:#106
 7	econômico	econômico	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	conj	_	_
-8	para	para	ADP	PRP|@N<	_	10	mark	_	_
+8	para	para	SCONJ	PRP|@N<	_	10	mark	_	_
 9	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	10	nsubj	_	_
 10	produzir	produzir	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	_
 11	automóveis	automóvel	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	10	obj	_	_
@@ -31,10 +29,10 @@
 15	?	?	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Sim, embora a abertura dos portos não esteja sendo feita impunemente.
-# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF714-4
+# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # id = 2997
-1	Sim	sim	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+1	Sim	sim	ADV	<first-cjt>|ADV|@ADVL	_	12	discourse	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	embora	embora	SCONJ	KS|@SUB	_	12	mark	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -46,16 +44,14 @@
 9	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
 10	esteja	estar	AUX	<aux>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
 11	sendo	ser	AUX	<aux>|V|GER|@ICL-AUX<	VerbForm=Ger	12	aux:pass	_	_
-12	feita	fazer	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	1	advcl	_	_
+12	feita	fazer	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
 13	impunemente	impunemente	ADV	ADV|@<ADVL	_	12	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-14	.	.	PUNCT	PU|@PU	_	1	punct	_	_
+14	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Em termos políticos, o país saiu das eleições com um Estado mais vigoroso e democrático, em melhores condições de enfrentar a inflação e o desemprego.
-# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF714-5
+# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # id = 2998
-# d2d = cc(inflação,e) -> cc(desemprego,e)  #106
-# d2d = cc(vigoroso,e) -> cc(democrático,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	termos	termo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	obl	_	ChangedBy=Issue137
 3	políticos	político	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -78,7 +74,7 @@
 19	em	em	ADP	PRP|@<ADVL	_	21	case	_	_
 20	melhores	bom	ADJ	<KOMP>|<SUP>|<COMP>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	21	amod	_	_
 21	condições	condição	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	7	obl	_	ChangedBy=Issue137
-22	de	de	ADP	PRP|@N<ARG	_	23	mark	_	_
+22	de	de	SCONJ	PRP|@N<ARG	_	23	mark	_	_
 23	enfrentar	enfrentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	acl	_	_
 24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	inflação	inflação	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	23	obj	_	_
@@ -88,14 +84,12 @@
 29	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Pode se reorientar para uma maior produção industrial e contribuir para a criação de mais emprego e riqueza, consequência natural do processo.
-# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF714-6
+# source = CETENFolha n=714 cad=Dinheiro sec=eco sem=94a
 # id = 2999
-# d2d = cc(reorientar,e) -> cc(contribuir,e)  #106
-# d2d = cc(emprego,e) -> cc(riqueza,e)  #106
-1	Pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+1	Pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@ACC>	Case=Acc|Gender=Unsp|PronType=Prs	3	obj	_	_
-3	reorientar	reorientar	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	reorientar	reorientar	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	_
 4	para	para	ADP	PRP|@PIV>	_	7	case	_	_
 5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 6	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	7	amod	_	_
@@ -107,7 +101,7 @@
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	criação	criação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obj	_	_
 14	de	de	ADP	<cjt>|PRP|@KOMP<	_	16	case	_	_
-15	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	16	det	_	_
+15	mais	mais	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	16	det	_	_
 16	emprego	emprego	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
 17	e	e	CCONJ	KC|@CO	_	18	cc	_	d2d:#106
 18	riqueza	riqueza	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	16	conj	_	ChangedBy=Issue165|SpaceAfter=No

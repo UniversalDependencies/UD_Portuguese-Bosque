@@ -1,8 +1,7 @@
 # text = Mas o primeiro grande atleta de Moniz Pereira veio de Viseu, no interior nortenho, com muito frio no Inverno e muito calor no Verão.
-# source = CETEMPúblico n=97 sec=des sem=92a
 # sent_id = CP97-1
+# source = CETEMPúblico n=97 sec=des sem=92a
 # id = 510
-# d2d = cc(frio,e) -> cc(calor,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	9	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 3	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	ChangedBy=Issue172
@@ -38,10 +37,9 @@
 30	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Numa freguesia rural às portas da cidade, Vildemoinhos, nasceu e fez as primeiras corridas aquele que viria a ganhar a maratona de Los Angeles em 1984: Carlos Lopes.
-# source = CETEMPúblico n=97 sec=des sem=92a
 # sent_id = CP97-2
+# source = CETEMPúblico n=97 sec=des sem=92a
 # id = 511
-# d2d = cc(nasceu,e) -> cc(fez,e)  #106
 1-2	Numa	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -66,9 +64,9 @@
 19	corridas	corrida	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	16	obj	_	_
 20	aquele	aquele	PRON	<dem>|DET|M|S|@<SUBJ	Gender=Masc|Number=Sing|PronType=Dem	14	nsubj	_	_
 21	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	24	nsubj	_	_
-22	viria	vir	AUX	<aux>|V|COND|3S|@FS-N<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	24	aux	_	_
-23	a	a	ADP	PRP|@PRT-AUX<	_	24	case	_	_
-24	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	acl:relcl	_	_
+22	viria	vir	VERB	<aux>|V|COND|3S|@FS-N<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	20	acl:relcl	_	MWE=viria_a|MWEPOS=AUX
+23	a	a	SCONJ	PRP|@PRT-AUX<	_	24	mark	_	_
+24	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	xcomp	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	maratona	maratona	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
@@ -82,10 +80,9 @@
 35	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Lopes corria na infância pelas hortas, competia com amigos quando iam a festas na aldeia vizinha, atravessava velozmente vinhas e castanhais.
-# source = CETEMPúblico n=97 sec=des sem=92a
 # sent_id = CP97-3
+# source = CETEMPúblico n=97 sec=des sem=92a
 # id = 512
-# d2d = cc(vinhas,e) -> cc(castanhais,e)  #106
 1	Lopes	Lopes	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	corria	correr	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 3-4	na	_	_	_	_	_	_	_	_
@@ -100,7 +97,7 @@
 10	competia	competir	VERB	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	parataxis	_	_
 11	com	com	ADP	PRP|@<PIV	_	12	case	_	_
 12	amigos	amigo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obj	_	_
-13	quando	quando	ADV	<rel>|ADV|@ADVL>	_	14	advmod	_	_
+13	quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	14	mark	_	_
 14	iam	ir	VERB	<mv>|V|IMPF|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	advcl	_	_
 15	a	a	ADP	PRP|@<SA	_	16	case	_	_
 16	festas	festa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	14	obl	_	_
@@ -118,8 +115,8 @@
 27	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = E era sempre ele quem ganhava.
-# source = CETEMPúblico n=97 sec=des sem=92a
 # sent_id = CP97-4
+# source = CETEMPúblico n=97 sec=des sem=92a
 # id = 513
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	era	ser	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -130,16 +127,14 @@
 7	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Na terra natal foi torneiro-mecânico, teve vida dura, até que um dia deu nas vistas nos crosses nortenhos.
-# source = CETEMPúblico n=97 sec=des sem=92a
 # sent_id = CP97-5
+# source = CETEMPúblico n=97 sec=des sem=92a
 # id = 514
-# d2d = punct(torneiro-mecânico,,) -> punct(deu,,)  #106
-# d2d = punct(torneiro-mecânico,,) -> punct(teve,,)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	obl	_	_
 2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	3	det	_	_
-3	terra	terra	NOUN	_	_	6	nmod	_	MWE=terra_natal|MWEPOS=NOUN
-4	natal	natal	ADJ	_	_	3	amod	_	_
+3	terra	terra	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	MWE=terra_natal|MWEPOS=NOUN
+4	natal	natal	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	_
 5	foi	ser	AUX	<mv>|<first-cjt>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
 6	torneiro-mecânico	torneiro-mecânico	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
@@ -147,7 +142,7 @@
 9	vida	vida	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
 10	dura	duro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	9	amod	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
-12	até	até	ADP	PRP|@<ADVL	_	16	mark	_	_
+12	até	até	SCONJ	PRP|@<ADVL	_	16	mark	_	_
 13	que	que	SCONJ	KS|@SUB	_	16	mark	_	_
 14	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	15	nummod	_	ChangedBy=Issue168
 15	dia	dia	NOUN	<np-def>|N|M|S|@ADVL>	Gender=Masc|Number=Sing	16	obl	_	_
@@ -164,8 +159,8 @@
 24	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O Sporting contratou-o, trouxe-o para Lisboa.
-# source = CETEMPúblico n=97 sec=des sem=92a
 # sent_id = CP97-6
+# source = CETEMPúblico n=97 sec=des sem=92a
 # id = 515
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Sporting	Sporting	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -181,16 +176,16 @@
 10	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = E Moniz Pereira começou a treiná-lo.
-# source = CETEMPúblico n=97 sec=des sem=92a
 # sent_id = CP97-7
+# source = CETEMPúblico n=97 sec=des sem=92a
 # id = 516
 1	E	e	CCONJ	KC|@CO	_	6	cc	_	_
 2	Moniz	Moniz	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=Moniz_Pereira|MWEPOS=PROPN
 3	Pereira	Pereira	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
-4	começou	começar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
+4	começou	começar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=começou_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
 6-7	treiná-lo	_	_	_	_	_	_	_	SpaceAfter=No
-6	treiná	treinar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+6	treiná	treinar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
 8	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 

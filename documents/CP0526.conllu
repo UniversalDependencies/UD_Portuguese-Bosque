@@ -1,8 +1,7 @@
 # text = Em 1990, existiam 800 supercomputadores em todo o mundo, distribuídos por grandes empresas ou organismos públicos que investem nestes equipamentos para os disponibilizar a instituições científicas que pagam pelo tempo de utilização -- como a FCCN em Portugal (ver «Universidades nacionais sem supercomputador»).
-# source = CETEMPúblico n=526 sec=clt-soc sem=95a
 # sent_id = CP526-1
+# source = CETEMPúblico n=526 sec=clt-soc sem=95a
 # id = 2750
-# d2d = cc(empresas,ou) -> cc(organismos,ou)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	1990	1990	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	4	obl	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -10,24 +9,24 @@
 5	800	800	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
 6	supercomputadores	supercomputador	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	4	nsubj	_	_
 7	em	em	ADP	PRP|@<ADVL	_	10	case	_	_
-8	todo	todo	PRON	INDP|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	10	dep	_	_
+8	todo	todo	PRON	INDP|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	10	det	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 12	distribuídos	distribuir	VERB	<mv>|V|PCP|M|P|@ICL-N<PRED	Gender=Masc|Number=Plur|VerbForm=Part	6	acl	_	_
 13	por	por	ADP	PRP|@<PIV	_	15	case	_	_
 14	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	15	amod	_	_
-15	empresas	empresa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	obj	_	_
+15	empresas	empresa	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	obl:agent	_	_
 16	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	d2d:#106
 17	organismos	organismo	NOUN	<cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	conj	_	_
 18	públicos	público	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	17	amod	_	_
-19	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	20	nsubj	_	_
+19	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	20	nsubj	_	_
 20	investem	investir	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_
 21-22	nestes	_	_	_	_	_	_	_	_
 21	em	em	ADP	<sam->|PRP|@<PIV	_	23	case	_	_
 22	estes	este	DET	<-sam>|<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	23	det	_	_
 23	equipamentos	equipamento	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	obj	_	_
-24	para	para	ADP	PRP|@<ADVL	_	26	mark	_	_
+24	para	para	SCONJ	PRP|@<ADVL	_	26	mark	_	_
 25	os	eles	PRON	PERS|M|3P|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	26	obj	_	_
 26	disponibilizar	disponibilizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	advcl	_	_
 27	a	a	ADP	PRP|@<PIV	_	28	case	_	_
@@ -48,7 +47,7 @@
 41	em	em	ADP	PRP|@N<	_	42	case	_	_
 42	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	_
 43	(	(	PUNCT	PU|@PU	_	44	punct	_	ChangedBy=Issue165|SpaceAfter=No
-44	ver	ver	VERB	<mv>|V|INF|@ICL-COM	VerbForm=Inf	15	dep	_	_
+44	ver	ver	VERB	<mv>|V|INF|@ICL-COM	VerbForm=Inf	40	parataxis	_	_
 45	«	«	PUNCT	PU|@PU	_	46	punct	_	ChangedBy=Issue165|SpaceAfter=No
 46	Universidades	Universidades	PROPN	_	Gender=Masc|Number=Sing	44	obj	_	ChangedBy=Issue119|MWE=Universidades_nacionais_sem_supercomputador|MWEPOS=PROPN
 47	nacionais	nacionais	PROPN	_	Number=Sing	46	flat:name	_	ChangedBy=Issue119
@@ -59,8 +58,8 @@
 52	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Para o presidente da FCCN, o número destas máquinas «é mais ou menos constante», porque, conforme se vão desenvolvendo novos equipamentos, outros deixam de se enquadrar na definição de supercomputador.
-# source = CETEMPúblico n=526 sec=clt-soc sem=95a
 # sent_id = CP526-2
+# source = CETEMPúblico n=526 sec=clt-soc sem=95a
 # id = 2751
 1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -68,7 +67,7 @@
 4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	FCCN	fccn	NOUN	N|@P<	_	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+6	FCCN	fccn	NOUN	N|@P<	Gender=Fem|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	número	número	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	18	nsubj	_	_
@@ -85,7 +84,7 @@
 19	»	»	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 21	porque	porque	SCONJ	KS|@SUB	_	34	mark	_	ChangedBy=Issue165|SpaceAfter=No
-22	,	,	PUNCT	PU|@PU	_	34	punct	_	_
+22	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 23	conforme	conforme	ADV	<rel>|ADV|@ADVL>	_	26	advmod	_	_
 24	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	26	expl	_	ChangedBy=Issue135
 25	vão	ir	AUX	<aux>|<se-passive>|V|PR|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	26	aux	_	_
@@ -94,10 +93,10 @@
 28	equipamentos	equipamento	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	26	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 30	outros	outro	PRON	<diff>|<KOMP>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Ind	34	nsubj	_	_
-31	deixam	deixar	AUX	<aux>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	34	aux	_	_
-32	de	de	ADP	PRP|@PRT-AUX<	_	34	case	_	_
+31	deixam	deixar	VERB	<aux>|V|PR|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	advcl	_	MWE=deixam_de|MWEPOS=AUX
+32	de	de	SCONJ	PRP|@PRT-AUX<	_	34	mark	_	_
 33	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	34	expl	_	ChangedBy=Issue135
-34	enquadrar	enquadrar	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	18	advcl	_	_
+34	enquadrar	enquadrar	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	31	xcomp	_	_
 35-36	na	_	_	_	_	_	_	_	_
 35	em	em	ADP	<sam->|PRP|@<SA	_	37	case	_	_
 36	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
@@ -107,24 +106,22 @@
 40	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = As duas grandes famílias da supercomputação são as chamadas «máquinas de multiprocessamento vectorial» (como alguns Cray) e as de processamento paralelo -- de que a mais conhecida é a Connection Machine, da Thinking Machines.
-# source = CETEMPúblico n=526 sec=clt-soc sem=95a
 # sent_id = CP526-3
+# source = CETEMPúblico n=526 sec=clt-soc sem=95a
 # id = 2752
-# d2d = cc(máquinas,e) -> cc(as,e)  #106
-# d2d = punct(máquinas,») -> punct(as,»)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 2	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
 3	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	4	amod	_	_
-4	famílias	família	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	12	nsubj	_	_
+4	famílias	família	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	9	nsubj	_	_
 5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	supercomputação	supercomputação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 8	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
-10	chamadas	chamado	ADJ	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur	12	amod	_	_
+9	as	o	PRON	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Dem	8	obj	_	_
+10	chamadas	chamado	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur	9	acl	_	_
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
-12	máquinas	máquina	NOUN	<first-cjt>|<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	8	parataxis	_	_
+12	máquinas	máquina	NOUN	<first-cjt>|<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	10	xcomp	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	multiprocessamento	multiprocessamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 15	vectorial	vectorial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -141,10 +138,10 @@
 26	paralelo	paralelo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	25	amod	_	_
 27	--	--	PUNCT	PU|@PU	_	10	punct	_	_
 28	de	de	ADP	PRP|@KOMP<	_	29	case	_	_
-29	que	que	PRON	<rel>|INDP|F|P|@P<	Gender=Fem|Number=Plur|PronType=Rel	32	obl	_	_
-30	a	o	DET	<artd>|ART|F|S|@>A	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	dep	_	_
+29	que	que	PRON	<rel>|INDP|F|P|@P<	Gender=Fem|Number=Sing|PronType=Rel	32	obl	_	_
+30	a	o	DET	<artd>|ART|F|S|@>A	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 31	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	32	advmod	_	_
-32	conhecida	conhecido	ADJ	<mv>|V|PCP|F|S|@ICL-SUBJ>	Gender=Fem|Number=Sing	35	csubj	_	ChangedBy=Issue141|ChangedBy=Issue91
+32	conhecida	conhecido	NOUN	<mv>|V|PCP|F|S|@ICL-SUBJ>	Gender=Fem|Number=Sing	35	csubj	_	ChangedBy=Issue141|ChangedBy=Issue91
 33	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	cop	_	ChangedBy=Issue167
 34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
 35	Connection	Connection	PROPN	_	Gender=Fem|Number=Sing	23	acl:relcl	_	ChangedBy=Issue119|MWE=Connection_Machine|MWEPOS=PROPN
@@ -158,13 +155,11 @@
 42	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Ao contrário do processamento vectorial, em que vários processadores utilizam a mesma memória -- e onde, na opinião de Heitor Pina, apenas poderão existir progressos marginais --, as máquinas de processamento paralelo, surgidas nos anos 60 e generalizadas no final da década de 80, têm uma memória dedicada para cada processador, acabando com os «engarrafamentos» na partilha da memória.
-# source = CETEMPúblico n=526 sec=clt-soc sem=95a
 # sent_id = CP526-4
+# source = CETEMPúblico n=526 sec=clt-soc sem=95a
 # id = 2753
-# d2d = cc(surgidas,e) -> cc(generalizadas,e)  #106
-# d2d = cc(utilizam,e) -> cc(existir,e)  #106
 1	Ao	ao	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Ao_contrário_de
-2	contrário	contrário	NOUN	N|@P<	_	56	obl	_	_
+2	contrário	contrário	NOUN	N|@P<	Gender=Masc|Number=Sing	56	obl	_	_
 3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
 4	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
@@ -181,7 +176,7 @@
 15	memória	memória	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	_
 16	--	--	PUNCT	PU|@PU	_	29	punct	_	_
 17	e	e	CCONJ	<co-fcl>|<co-advl>|KC|@CO	_	29	cc	_	d2d:#106
-18	onde	onde	ADV	<rel>|ADV|@ADVL>	_	29	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+18	onde	onde	PRON	<rel>|ADV|@ADVL>	PronType=Rel	29	obl	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 20-21	na	_	_	_	_	_	_	_	_
 20	em	em	ADP	<sam->|PRP|@ADVL>	_	22	case	_	_
@@ -192,8 +187,8 @@
 25	Pina	Pina	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	22	punct	_	_
 27	apenas	apenas	ADV	<rel>|ADV|@ADVL>	_	29	advmod	_	_
-28	poderão	poder	AUX	<cjt>|<aux>|V|FUT|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	29	aux	_	_
-29	existir	existir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	12	conj	_	_
+28	poderão	poder	VERB	<cjt>|<aux>|V|FUT|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_
+29	existir	existir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	xcomp	_	_
 30	progressos	progresso	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	29	nsubj	_	_
 31	marginais	marginal	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	30	amod	_	_
 32	--	--	PUNCT	PU|@PU	_	29	punct	_	ChangedBy=Issue165|SpaceAfter=No

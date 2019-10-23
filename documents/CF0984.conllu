@@ -1,8 +1,7 @@
 # text = Na Anhanguera, que une São Paulo a Ribeirão Preto, costuma haver neblina pesada entre o km 21 e o km 43, também perto de Perus e Cajamar.
-# source = CETENFolha n=984 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF984-1
+# source = CETENFolha n=984 cad=Cotidiano sec=soc sem=94a
 # id = 4155
-# d2d = cc(km,e) -> cc(km,e)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -16,8 +15,8 @@
 10	Ribeirão	Ribeirão	PROPN	_	Gender=Masc|Number=Sing	6	obl	_	ChangedBy=Issue119|MWE=Ribeirão_Preto|MWEPOS=PROPN
 11	Preto	Preto	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-13	costuma	costumar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
-14	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+13	costuma	costumar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+14	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	xcomp	_	_
 15	neblina	neblina	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	_
 16	pesada	pesado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	15	amod	_	_
 17	entre	entre	ADP	PRP|@N<	_	19	case	_	_
@@ -38,10 +37,9 @@
 32	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Isto ocorre principalmente à noite e a visibilidade pode chegar a zero.
-# source = CETENFolha n=984 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF984-2
+# source = CETENFolha n=984 cad=Cotidiano sec=soc sem=94a
 # id = 4156
-# d2d = cc(ocorre,e) -> cc(chegar,e)  #106
 1	Isto	isto	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	ocorre	ocorrer	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	principalmente	principalmente	ADV	ADV|@<ADVL	_	2	advmod	_	_
@@ -52,15 +50,15 @@
 7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	11	cc	_	d2d:#106
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	visibilidade	visibilidade	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
-10	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
-11	chegar	chegar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	conj	_	_
+10	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+11	chegar	chegar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
 12	a	a	ADP	PRP|@<PIV	_	13	case	_	_
 13	zero	zero	NUM	<card>|NUM|M|S|@P<	NumType=Card	11	obj	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = A Rodovia Castelo Branco, que segue para o oeste do Estado, apresenta vários pontos com neblina.
-# source = CETENFolha n=984 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF984-3
+# source = CETENFolha n=984 cad=Cotidiano sec=soc sem=94a
 # id = 4157
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Rodovia	Rodovia	PROPN	<prop>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	MWE=rodovia_castelo_branco
@@ -85,8 +83,8 @@
 20	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = O mais perigoso é na região da Serra das Conchas, entre o km 129 e o km 162, logo após Tatuí, para quem vai para o interior.
-# source = CETENFolha n=984 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF984-4
+# source = CETENFolha n=984 cad=Cotidiano sec=soc sem=94a
 # id = 4158
 1	O	o	PRON	<artd>|ART|M|S|@SUBJ>	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	nsubj	_	_
 2	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	3	advmod	_	_
@@ -118,8 +116,8 @@
 25	após	após	ADP	PRP|@<ADVL	_	26	case	_	_
 26	Tatuí	Tatuí	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-28	para	para	ADP	PRP|@<SA	_	30	mark	_	_
-29	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	30	nsubj	_	_
+28	para	para	SCONJ	PRP|@<SA	_	30	mark	_	_
+29	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	30	nsubj	_	_
 30	vai	ir	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	xcomp	_	_
 31	para	para	ADP	PRP|@<PIV	_	33	case	_	_
 32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_

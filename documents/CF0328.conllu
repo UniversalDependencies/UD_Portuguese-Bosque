@@ -1,6 +1,6 @@
 # text = MONIQUE EVANS SE SUBMETERÁ A EXAMES (Da Sucursal do Rio)
-# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF328-1
+# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # id = 1358
 1	MONIQUE	MONIQUE	PROPN	_	Gender=Fem|Number=Sing	4	nsubj	_	ChangedBy=Issue119|MWE=MONIQUE_EVANS|MWEPOS=PROPN
 2	EVANS	EVANS	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -20,8 +20,8 @@
 14	)	)	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = A modelo Monique Evans, um dos destaques do Carnaval carioca deste ano, vai submeter-se a uma tomografia computadorizada na próxima semana para verificar a origem de «um pontinho» que apareceu em seu rim.
-# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF328-2
+# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # id = 1359
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	modelo	modelo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	19	nsubj	_	_
@@ -56,7 +56,7 @@
 26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
 27	próxima	próximo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	28	amod	_	_
 28	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	ChangedBy=Issue137
-29	para	para	ADP	PRP|@<ADVL	_	30	mark	_	_
+29	para	para	SCONJ	PRP|@<ADVL	_	30	mark	_	_
 30	verificar	verificar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	advcl	_	_
 31	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 32	origem	origem	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	30	obj	_	_
@@ -73,11 +73,9 @@
 43	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = «Não acho que seja câncer, pode ser algo relacionado aos meus medos e angústias», afirmou.
-# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF328-3
+# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # id = 1360
-# d2d = cc(medos,e) -> cc(angústias,e)  #106
-# d2d = punct(acho,,) -> punct(ser,,)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	acho	achar	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	20	parataxis	_	_
@@ -85,8 +83,8 @@
 5	seja	ser	AUX	<mv>|V|PR|3S|SUBJ|@FS-<ACC	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
 6	câncer	câncer	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	3	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
-8	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
-9	ser	submeter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	conj	_	_
+8	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+9	ser	submeter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
 10	algo	algo	PRON	<quant>|DET|M|S|@<SC	Gender=Masc|Number=Sing|PronType=Ind	9	xcomp	_	_
 11	relacionado	relacionar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
 12-13	aos	_	_	_	_	_	_	_	_
@@ -102,12 +100,12 @@
 21	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Monique, 37, disse que descobriu a «marquinha, que não é pedra no rim» quando se separou do marido, em junho passado.
-# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF328-4
+# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # id = 1361
 1	Monique	Monique	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-3	37	37	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+3	37	37	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	1	parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6	que	que	SCONJ	KS|@SUB	_	7	mark	_	_
@@ -139,16 +137,14 @@
 30	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = «Senti dores e, como tenho uns casos de câncer na família, decidi fazer o exame», contou a modelo.
-# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF328-5
+# source = CETENFolha n=328 cad=Cotidiano sec=soc sem=94b
 # id = 1362
-# d2d = punct(Senti,,) -> punct(decidi,,)  #106
-# d2d = cc(Senti,e) -> cc(decidi,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Senti	sentir	VERB	<first-cjt>|<mv>|V|PS|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	22	parataxis	_	_
 3	dores	dor	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
 4	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-5	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+5	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 6	como	como	SCONJ	KS|@SUB	_	7	mark	_	_
 7	tenho	ter	VERB	<mv>|V|PR|1S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	16	advcl	_	_
 8	uns	um	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	9	det	_	_

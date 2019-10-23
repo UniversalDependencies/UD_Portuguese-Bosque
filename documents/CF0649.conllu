@@ -1,6 +1,6 @@
 # text = Nesta ala merece menção o seu Bruto Rosé, um espumante elaborado com uva Baga (100%) que conserva um pouco da cor e muito de frutado desta variedade típica da região.
-# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF649-1
+# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # id = 2710
 1-2	Nesta	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -25,8 +25,8 @@
 20	)	)	PUNCT	PU|@PU	_	19	punct	_	_
 21	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	22	nsubj	_	_
 22	conserva	conservar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_
-23	um	um	ADV	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	advmod	_	MWE=um_pouco
-24	pouco	pouco	DET	DET|M|S|@<ADVL	Gender=Masc|Number=Sing|PronType=Ind	23	fixed	_	_
+23	um	um	DET	<arti>|DET|M|S|@>N	_	22	advmod	_	MWE=um_pouco
+24	pouco	pouco	ADV	DET|M|S|@<ADVL	_	23	fixed	_	_
 25-26	da	_	_	_	_	_	_	_	_
 25	de	de	ADP	<sam->|PRP|@A<	_	27	case	_	_
 26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
@@ -47,10 +47,9 @@
 39	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Este é um vinho bem seco e encorpado capaz de escoltar uma refeição completa.
-# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF649-2
+# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # id = 2711
-# d2d = cc(seco,e) -> cc(encorpado,e)  #106
 1	Este	este	PRON	<dem>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	_	_
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 3	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -60,7 +59,7 @@
 7	e	e	CCONJ	<co-postnom>|KC|@CO	_	8	cc	_	d2d:#106
 8	encorpado	encorpar	VERB	<cjt>|V|PCP|M|S|@N<	Gender=Masc|Number=Sing|VerbForm=Part	6	conj	_	_
 9	capaz	capaz	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
-10	de	de	ADP	PRP|@A<ARG	_	11	mark	_	_
+10	de	de	SCONJ	PRP|@A<ARG	_	11	mark	_	_
 11	escoltar	escoltar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	xcomp	_	_
 12	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	refeição	refeição	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	obj	_	_
@@ -68,12 +67,9 @@
 15	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O de 91, tem bolhas finas, abundantes e persistentes, que lhe dão um paladar cremoso marcado como o aroma por um toque atraente de cascas cítricas e framboesa.
-# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF649-3
+# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # id = 2712
-# d2d = cc(cascas,e) -> cc(framboesa,e)  #106
-# d2d = punct(finas,,) -> punct(abundantes,,)  #106
-# d2d = cc(finas,e) -> cc(persistentes,e)  #106
 1	O	o	PRON	<dem>|<Eg>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	91	91	NUM	<card>|NUM|M|P|@P<	NumType=Card	1	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
@@ -108,10 +104,9 @@
 32	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Já no capítulo dos goles decididamente rubros, desponta o João Pato (75% Baga, 25% Cabernet Sauvignon).
-# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF649-4
+# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # id = 2713
-# d2d = punct(%,,) -> punct(%,,)  #106
 1	Já	já	ADV	ADV|@ADVL>	_	11	advmod	_	_
 2-3	no	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@A<	_	4	case	_	_
@@ -141,10 +136,9 @@
 25	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Quem experimenta a última versão (safra 91) descobrirá um vinho novo ainda, adstringente, mas de aroma e sabor intensos.
-# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b &E
 # sent_id = CF649-5
+# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b &E
 # id = 2714
-# d2d = cc(aroma,e) -> cc(sabor,e)  #106
 1	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	2	nsubj	_	_
 2	experimenta	experimentar	VERB	<mv>|V|PR|3S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	csubj	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
@@ -171,10 +165,9 @@
 24	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Um vinho marcado pelo belo contraponto entre a especiaria da Baga e as frutas vermelhas da Cabernet, quase uma marca registrada na criação deste vinicultor português.
-# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF649-6
+# source = CETENFolha n=649 cad=Ilustrada sec=nd sem=94b
 # id = 2715
-# d2d = cc(especiaria,e) -> cc(frutas,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	vinho	vinho	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	marcado	marcar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	_	_

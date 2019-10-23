@@ -1,8 +1,7 @@
 # text = Para o autarca vila-franquense, a «hesitação» do PSD na discussão desta matéria estará relacionada com a posição assumida pelo ministro das Obras Públicas, Transportes e Comunicações, em reunião recente com a Câmara e a Assembleia Municipal.
-# source = CETEMPúblico n=690 sec=soc sem=92b
 # sent_id = CP690-1
+# source = CETEMPúblico n=690 sec=soc sem=92b
 # id = 3555
-# d2d = cc(Câmara,e) -> cc(Assembleia,e)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	autarca	autarca	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	_
@@ -37,11 +36,11 @@
 28-29	das	_	_	_	_	_	_	_	_
 28	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
 29	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	30	det	_	_
-30	Obras	obras	PROPN	_	_	27	nmod	_	ChangedBy=Issue119|MWE=Obras_Públicas_,_Transportes_e_Comunicações|MWEPOS=PROPN
+30	Obras	Obras	PROPN	_	Gender=Fem|Number=Plur	27	nmod	_	ChangedBy=Issue119|MWE=Obras_Públicas_,_Transportes_e_Comunicações|MWEPOS=PROPN
 31	Públicas	Públicas	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 32	,	,	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 33	Transportes	Transportes	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
-34	e	e	CCONJ	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
+34	e	e	CCONJ	_	_	30	flat:name	_	ChangedBy=Issue119
 35	Comunicações	Comunicações	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 36	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 37	em	em	ADP	PRP|@<ADVL	_	38	case	_	_
@@ -57,51 +56,47 @@
 47	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = «Transpareceu a tentativa de evitar discutir este problema e, depois, uma certa vontade de que o assunto fosse dado como definitivamente arrumado.
-# source = CETEMPúblico n=690 sec=soc sem=92b
 # sent_id = CP690-2
+# source = CETEMPúblico n=690 sec=soc sem=92b
 # id = 3556
-# d2d = punct(tentativa,,) -> punct(vontade,,)  #106
-# d2d = punct(tentativa,,) -> punct(vontade,,)  #106
-# d2d = cc(tentativa,e) -> cc(vontade,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Transpareceu	transparecer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	tentativa	tentativa	NOUN	<first-cjt>|<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	2	nsubj	_	_
-5	de	de	ADP	PRP|@N<ARG	_	6	mark	_	_
+5	de	de	SCONJ	PRP|@N<ARG	_	6	mark	_	_
 6	evitar	evitar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	acl	_	_
 7	discutir	discutir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	6	xcomp	_	_
 8	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	9	det	_	_
 9	problema	problema	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
 10	e	e	CCONJ	<co-subj>|KC|@CO	_	16	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-11	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+11	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 12	depois	depois	ADV	ADV|@>N	_	16	advmod	_	ChangedBy=Issue165|SpaceAfter=No
-13	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+13	,	,	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 14	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 15	certa	certo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	16	det	_	_
 16	vontade	vontade	NOUN	<cjt>|<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	4	conj	_	_
-17	de	de	ADP	PRP|@N<ARG	_	22	mark	_	_
+17	de	de	SCONJ	PRP|@N<ARG	_	22	mark	_	_
 18	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	assunto	assunto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj:pass	_	_
 21	fosse	ser	AUX	<aux>|V|IMPF|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	aux:pass	_	_
 22	dado	dar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	acl	_	_
-23	como	como	ADP	<prd>|PRP|@<SC	_	25	mark	_	_
+23	como	como	SCONJ	<prd>|PRP|@<SC	_	25	mark	_	_
 24	definitivamente	definitivamente	ADV	ADV|@ADVL>	_	25	advmod	_	_
 25	arrumado	arrumar	VERB	<mv>|V|PCP|M|S|@ICL-P<	Gender=Masc|Number=Sing|VerbForm=Part	22	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Finalmente, o ministro acabou por admitir que esta questão terá que ser analisada futuramente, não deixando de considerar que a abolição terá que se verificar, mas sem definir qualquer horizonte temporal», sustenta o presidente da Assembleia Municipal.
-# source = CETEMPúblico n=690 sec=soc sem=92b
 # sent_id = CP690-3
+# source = CETEMPúblico n=690 sec=soc sem=92b
 # id = 3557
-# d2d = cc(analisada,mas) -> cc(definir,mas)  #106
 1	Finalmente	finalmente	ADV	ADV|@ADVL>	_	7	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	ministro	ministro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
-5	acabou	acabar	AUX	<aux>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_
-6	por	por	ADP	PRP|@PRT-AUX<	_	7	case	_	_
-7	admitir	admitir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	37	parataxis	_	_
+5	acabou	acabar	VERB	<aux>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	37	parataxis	_	MWE=acabou_por|MWEPOS=AUX
+6	por	por	SCONJ	PRP|@PRT-AUX<	_	7	mark	_	_
+7	admitir	admitir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
 8	que	que	SCONJ	KS|@SUB	_	14	mark	_	_
 9	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	10	det	_	_
 10	questão	questão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj:pass	_	_
@@ -112,9 +107,9 @@
 15	futuramente	futuramente	ADV	ADV|@<ADVL	_	14	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 17	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
-18	deixando	deixar	AUX	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	20	aux	_	_
-19	de	de	ADP	PRP|@PRT-AUX<	_	20	case	_	_
-20	considerar	considerar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	advcl	_	_
+18	deixando	deixar	VERB	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	7	advcl	_	MWE=deixando_de|MWEPOS=AUX
+19	de	de	SCONJ	PRP|@PRT-AUX<	_	20	mark	_	_
+20	considerar	considerar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	xcomp	_	_
 21	que	que	SCONJ	<first-cjt>|KS|@SUB	_	27	mark	_	_
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	abolição	abolição	NOUN	<cjt>|<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	27	nsubj	_	_
@@ -124,7 +119,7 @@
 27	verificar	verificar	VERB	<mv>|V|INF|3S|@ICL-AUX<	Number=Sing|Person=3|VerbForm=Inf	20	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	27	punct	_	_
 29	mas	mas	CCONJ	<co-pcp>|KC|@CO	_	31	cc	_	d2d:#106
-30	sem	sem	ADP	PRP|@<ADVL	_	31	mark	_	_
+30	sem	sem	SCONJ	PRP|@<ADVL	_	31	mark	_	_
 31	definir	definir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	conj	_	ChangedBy=Issue149
 32	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	33	det	_	_
 33	horizonte	horizonte	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	31	obj	_	_
@@ -133,20 +128,18 @@
 36	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 37	sustenta	sustentar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 38	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
-39	presidente	presidente	NOUN	N|@<SUBJ	_	37	nsubj	_	MWE=presidente_da_Assembleia_Municipal
+39	presidente	presidente	NOUN	N|@<SUBJ	Gender=Masc|Number=Sing	37	nsubj	_	MWE=presidente_da_Assembleia_Municipal
 40-41	da	_	_	_	_	_	_	_	_
 40	de	de	ADP	<sam->|PRP|@N<	_	42	case	_	_
 41	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
-42	Assembleia	assembleia	NOUN	N|@P<	_	39	nmod	_	_
-43	Municipal	municipal	ADJ	ADJ|@N<	_	42	amod	_	ChangedBy=Issue165|SpaceAfter=No
+42	Assembleia	assembleia	NOUN	N|@P<	Gender=Fem|Number=Sing	39	nmod	_	_
+43	Municipal	municipal	ADJ	ADJ|@N<	Gender=Fem|Number=Sing	42	amod	_	ChangedBy=Issue165|SpaceAfter=No
 44	.	.	PUNCT	PU|@PU	_	37	punct	_	_
 
 # text = Carlos Arrojado aguarda que, depois das férias parlamentares, o projecto-lei e a petição pela abolição das portagens sejam discutidos, em plenário da Assembleia da República, até ao final deste ano ou princípio de 93.
-# source = CETEMPúblico n=690 sec=soc sem=92b
 # sent_id = CP690-4
+# source = CETEMPúblico n=690 sec=soc sem=92b
 # id = 3558
-# d2d = cc(projecto-lei,e) -> cc(petição,e)  #106
-# d2d = cc(final,ou) -> cc(princípio,ou)  #106
 1	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Carlos_Arrojado|MWEPOS=PROPN
 2	Arrojado	Arrojado	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	aguarda	aguardar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -202,11 +195,9 @@
 46	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «Os interesses da Brisa e do Governo, ao nível do Orçamento de Estado, não podem continuar a contrariar a necessidade de criar melhores condições de vida à população», acrescenta o autarca, que salienta que por haver portagens não pode ser decidida a proibição da circulação de pesados no interior de Vila Franca e Alverca.
-# source = CETEMPúblico n=690 sec=soc sem=92b
 # sent_id = CP690-5
+# source = CETEMPúblico n=690 sec=soc sem=92b
 # id = 3559
-# d2d = cc(Vila,e) -> cc(Alverca,e)  #106
-# d2d = cc(Brisa,e) -> cc(Governo,e)  #106
 1	«	«	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	interesses	interesse	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	25	nsubj	_	_
@@ -232,13 +223,13 @@
 19	Estado	Estado	PROPN	PROP|@P<	Number=Sing	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 21	não	não	ADV	_	Polarity=Neg	25	advmod	_	_
-22	podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	aux	_	_
-23	continuar	continuar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	25	aux	_	_
-24	a	a	ADP	PRP|@PRT-AUX<	_	25	case	_	_
-25	contrariar	contrariar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	39	parataxis	_	_
+22	podem	poder	VERB	<aux>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	39	parataxis	_	_
+23	continuar	continuar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	22	xcomp	_	MWE=continuar_a|MWEPOS=AUX
+24	a	a	SCONJ	PRP|@PRT-AUX<	_	25	mark	_	_
+25	contrariar	contrariar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	xcomp	_	_
 26	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	necessidade	necessidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	25	obj	_	_
-28	de	de	ADP	PRP|@N<	_	29	mark	_	_
+28	de	de	SCONJ	PRP|@N<	_	29	mark	_	_
 29	criar	criar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	27	acl	_	_
 30	melhores	bom	ADJ	<KOMP>|<COMP>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	31	amod	_	_
 31	condições	condição	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	29	obj	_	_
@@ -257,13 +248,13 @@
 43	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	44	nsubj	_	_
 44	salienta	salientar	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	acl:relcl	_	_
 45	que	que	SCONJ	KS|@SUB	_	52	mark	_	_
-46	por	por	ADP	PRP|@ADVL>	_	47	mark	_	_
+46	por	por	SCONJ	PRP|@ADVL>	_	47	mark	_	_
 47	haver	haver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	52	advcl	_	_
 48	portagens	portagem	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	47	obj	_	_
 49	não	não	ADV	_	Polarity=Neg	52	advmod	_	_
-50	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	52	aux	_	_
+50	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	ccomp	_	_
 51	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	52	aux:pass	_	_
-52	decidida	decidir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	44	ccomp	_	_
+52	decidida	decidir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	50	xcomp	_	_
 53	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	54	det	_	_
 54	proibição	proibição	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	52	nsubj:pass	_	_
 55-56	da	_	_	_	_	_	_	_	_
@@ -284,14 +275,14 @@
 68	.	.	PUNCT	PU|@PU	_	39	punct	_	_
 
 # text = «A única justificação para não haver a abolição de portagens é de que, ali, se recebe muito dinheiro», conclui o presidente da Assembleia Municipal.
-# source = CETEMPúblico n=690 sec=soc sem=92b
 # sent_id = CP690-6
+# source = CETEMPúblico n=690 sec=soc sem=92b
 # id = 3560
 1	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 3	única	único	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	4	amod	_	_
 4	justificação	justificação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
-5	para	para	ADP	PRP|@N<	_	7	mark	_	_
+5	para	para	SCONJ	PRP|@N<	_	7	mark	_	_
 6	não	não	ADV	_	Polarity=Neg	7	advmod	_	_
 7	haver	haver	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	4	acl	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
@@ -299,7 +290,7 @@
 10	de	de	ADP	PRP|@N<ARG	_	11	case	_	_
 11	portagens	portagem	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	nmod	_	_
 12	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	parataxis	_	_
-13	de	de	ADP	PRP|@<SC	_	19	mark	_	_
+13	de	de	SCONJ	PRP|@<SC	_	19	mark	_	_
 14	que	que	SCONJ	KS|@SUB	_	19	mark	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 16	ali	ali	ADV	ADV|@ADVL>	_	19	advmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -312,11 +303,11 @@
 23	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 24	conclui	concluir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
-26	presidente	presidente	NOUN	N|@<SUBJ	_	24	nsubj	_	MWE=presidente_da_Assembleia_Municipal
+26	presidente	presidente	NOUN	N|@<SUBJ	Gender=Masc|Number=Sing	24	nsubj	_	MWE=presidente_da_Assembleia_Municipal
 27-28	da	_	_	_	_	_	_	_	_
 27	de	de	ADP	<sam->|PRP|@N<	_	29	case	_	_
 28	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
-29	Assembleia	assembleia	NOUN	N|@P<	_	26	nmod	_	_
-30	Municipal	municipal	ADJ	ADJ|@N<	_	29	amod	_	ChangedBy=Issue165|SpaceAfter=No
+29	Assembleia	assembleia	NOUN	N|@P<	Gender=Fem|Number=Sing	26	nmod	_	_
+30	Municipal	municipal	ADJ	ADJ|@N<	Gender=Fem|Number=Sing	29	amod	_	ChangedBy=Issue165|SpaceAfter=No
 31	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 

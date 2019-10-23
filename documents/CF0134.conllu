@@ -1,21 +1,21 @@
 # text = Seção: Editorial
-# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # sent_id = CF134-1
+# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # id = 526
 1	Seção	seção	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3	Editorial	editorial	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
 
 # text = Candidatura oficial
-# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # sent_id = CF134-2
+# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # id = 527
 1	Candidatura	candidatura	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	oficial	oficial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
 
 # text = O presidente Itamar Franco tem, como qualquer cidadão brasileiro, o direito de apoiar a candidatura para a Presidência da República de quem bem entender.
-# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # sent_id = CF134-3
+# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # id = 528
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -30,7 +30,7 @@
 11	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	direito	direito	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
-14	de	de	ADP	PRP|@N<	_	15	mark	_	_
+14	de	de	SCONJ	PRP|@N<	_	15	mark	_	_
 15	apoiar	apoiar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	acl	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	candidatura	candidatura	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
@@ -41,20 +41,19 @@
 21	de	de	ADP	<sam->|PRP|@N<	_	23	case	_	_
 22	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	República	república	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
-24	de	de	ADP	PRP|@N<ARG	_	27	mark	_	_
-25	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	27	nsubj	_	_
+24	de	de	SCONJ	PRP|@N<ARG	_	27	mark	_	_
+25	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	27	nsubj	_	_
 26	bem	bem	ADV	<quant>|ADV|@ADVL>	_	27	advmod	_	_
 27	entender	entender	VERB	<mv>|V|FUT|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	17	acl	_	ChangedBy=Issue165|SpaceAfter=No
 28	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Pode também cobrar dos membros de sua administração que apóiem o seu candidato ou deixem o governo.
-# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # sent_id = CF134-4
+# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # id = 529
-# d2d = cc(apóiem,ou) -> cc(deixem,ou)  #106
-1	Pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+1	Pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	também	também	ADV	ADV|@ADVL>	_	3	advmod	_	_
-3	cobrar	cobrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	cobrar	cobrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	_
 4-5	dos	_	_	_	_	_	_	_	_
 4	de	de	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
 5	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
@@ -74,11 +73,11 @@
 19	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ainda assim, os planos do Planalto de dedicar apoio total ao ex-ministro Fernando Henrique Cardoso, como esta Folha revelou na edição de ontem, esbarram em problemas.
-# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # sent_id = CF134-5
+# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # id = 530
-1	Ainda	ainda	ADV	ADV|@>A	_	2	advmod	_	MWE=Ainda_assim
-2	assim	assim	ADV	ADV|@ADVL>	_	30	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+1	Ainda	ainda	ADV	ADV|@>A	_	30	cc	_	MWE=Ainda_assim|MWEPOS=CCONJ
+2	assim	assim	ADV	ADV|@ADVL>	_	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
 5	planos	plano	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	30	nsubj	_	_
@@ -86,7 +85,7 @@
 6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	Planalto	planalto	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
-9	de	de	ADP	PRP|@N<ARG	_	10	mark	_	_
+9	de	de	SCONJ	PRP|@N<ARG	_	10	mark	_	_
 10	dedicar	dedicar	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	5	acl	_	_
 11	apoio	apoio	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
 12	total	total	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
@@ -115,10 +114,9 @@
 33	.	.	PUNCT	PU|@PU	_	30	punct	_	_
 
 # text = Embora não ocorra no Brasil há muito, é absolutamente normal, nos países de maior tradição democrática, que o governo tenha um candidato e o apóie.
-# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # sent_id = CF134-6
+# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # id = 531
-# d2d = cc(tenha,e) -> cc(apóie,e)  #106
 1	Embora	embora	SCONJ	KS|@SUB	_	3	mark	_	_
 2	não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	ocorra	ocorrer	VERB	<mv>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
@@ -154,15 +152,15 @@
 31	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Ronald Reagan não poupou esforços para eleger seu vice, George Bush, presidente dos Estados Unidos, em 1988.
-# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # sent_id = CF134-7
+# source = CETENFolha n=134 cad=Opinião sec=opi sem=94b
 # id = 532
 1	Ronald	Ronald	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	ChangedBy=Issue119|MWE=Ronald_Reagan|MWEPOS=PROPN
 2	Reagan	Reagan	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 4	poupou	poupar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 5	esforços	esforço	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	obj	_	_
-6	para	para	ADP	PRP|@<ADVL	_	7	mark	_	_
+6	para	para	SCONJ	PRP|@<ADVL	_	7	mark	_	_
 7	eleger	eleger	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	advcl	_	_
 8	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	9	det	_	_
 9	vice	vice	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	ChangedBy=Issue165|SpaceAfter=No

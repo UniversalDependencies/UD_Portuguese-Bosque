@@ -1,6 +1,6 @@
 # text = O mesmo não ocorre com a mistura de tinta para a parede.
-# source = CETENFolha n=510 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF510-1
+# source = CETENFolha n=510 cad=Cotidiano sec=soc sem=94a
 # id = 2150
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	mesmo	mesmo	PRON	<quant>|<np-def>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	_	_
@@ -17,8 +17,8 @@
 13	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Segundo a consultora de cores Renata Lourenção, o trabalho pode ser feito por qualquer pessoa seguindo as instruções da lata, sem a necessidade de um pintor profissional.
-# source = CETENFolha n=510 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF510-2
+# source = CETENFolha n=510 cad=Cotidiano sec=soc sem=94a
 # id = 2151
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -30,9 +30,9 @@
 8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	trabalho	trabalho	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj:pass	_	_
-11	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
+11	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 12	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	13	aux:pass	_	_
-13	feito	fazer	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+13	feito	fazer	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	11	xcomp	_	_
 14	por	por	ADP	PRP|@PASS	_	16	case	_	_
 15	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	16	det	_	_
 16	pessoa	pessoa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl:agent	_	_
@@ -54,18 +54,17 @@
 31	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Mas deve-se tomar o cuidado de acabar com infiltrações na parede para que a tinta possa ser bem aproveitada e dure mais tempo.
-# source = CETENFolha n=510 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF510-3
+# source = CETENFolha n=510 cad=Cotidiano sec=soc sem=94a
 # id = 2152
-# d2d = cc(aproveitada,e) -> cc(dure,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	4	cc	_	_
 2-3	deve-se	_	_	_	_	_	_	_	_
-2	deve	dever	AUX	<aux>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+2	deve	dever	VERB	<aux>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	4	nsubj	_	_
-4	tomar	tomar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+4	tomar	tomar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	cuidado	cuidado	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
-7	de	de	ADP	PRP|@N<ARG	_	8	mark	_	_
+7	de	de	SCONJ	PRP|@N<ARG	_	8	mark	_	_
 8	acabar	acabar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	_
 9	com	com	ADP	PRP|@<PIV	_	10	case	_	_
 10	infiltrações	infiltração	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	obj	_	_
@@ -73,7 +72,7 @@
 11	em	em	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	parede	parede	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	nmod	_	_
-14	para	para	ADP	PRP|@<PIV	_	21	mark	_	_
+14	para	para	SCONJ	PRP|@<PIV	_	21	mark	_	_
 15	que	que	SCONJ	KS|@SUB	_	21	mark	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	tinta	tinta	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	21	nsubj	_	_
@@ -83,7 +82,7 @@
 21	aproveitada	aproveitado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	8	advcl	_	ChangedBy=Issue141|ChangedBy=Issue91
 22	e	e	CCONJ	<co-prparg>|KC|@CO	_	23	cc	_	d2d:#106
 23	dure	durar	VERB	<cjt>|<mv>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	conj	_	_
-24	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	25	det	_	_
+24	mais	mais	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	25	det	_	_
 25	tempo	tempo	NOUN	<np-idf>|N|M|S|@<SA	Gender=Masc|Number=Sing	23	obl	_	ChangedBy=Issue165|SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

@@ -1,6 +1,6 @@
 # text = Temporada «made in USA»
-# source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-1
+# source = CETEMPúblico n=335 sec=clt sem=97b
 # id = 1748
 1	Temporada	temporada	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -10,12 +10,9 @@
 6	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = -- «The Edge», realizado por um neozelandês em Hollywood, Lee Tamahori, e baseado numa peça de David Mamet, acabou de estrear.
-# source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-2
+# source = CETEMPúblico n=335 sec=clt sem=97b
 # id = 1749
-# d2d = punct(realizado,,) -> punct(baseado,,)  #106
-# d2d = cc(realizado,e) -> cc(baseado,e)  #106
-# d2d = punct(realizado,,) -> punct(baseado,,)  #106
 1	--	--	PUNCT	PU|@PU	_	28	punct	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	The	The	PROPN	_	Gender=Masc|Number=Sing	28	nsubj	_	ChangedBy=Issue119|MWE=The_Edge|MWEPOS=PROPN
@@ -28,10 +25,10 @@
 10	neozelandês	neozelandês	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obl:agent	_	_
 11	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
 12	Hollywood	Hollywood	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-13	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 14	Lee	Lee	PROPN	_	Gender=Masc|Number=Sing	10	appos	_	ChangedBy=Issue119|MWE=Lee_Tamahori|MWEPOS=PROPN
 15	Tamahori	Tamahori	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 17	e	e	CCONJ	<co-icl>|<co-pred>|KC|@CO	_	18	cc	_	d2d:#106
 18	baseado	basear	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	7	conj	_	_
 19-20	numa	_	_	_	_	_	_	_	_
@@ -42,16 +39,15 @@
 23	David	David	PROPN	_	Gender=Masc|Number=Sing	21	nmod	_	ChangedBy=Issue119|MWE=David_Mamet|MWEPOS=PROPN
 24	Mamet	Mamet	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	18	punct	_	_
-26	acabou	acabar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	aux	_	_
-27	de	de	ADP	PRP|@PRT-AUX<	_	28	case	_	_
-28	estrear	estrear	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+26	acabou	acabar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=acabou_de|MWEPOS=AUX
+27	de	de	SCONJ	PRP|@PRT-AUX<	_	28	mark	_	_
+28	estrear	estrear	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	26	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 29	.	.	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 
 # text = Junta Anthony Hopkins e Alec Baldwin no Alaska, depois de um desastre de avião.
-# source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-3
+# source = CETEMPúblico n=335 sec=clt sem=97b
 # id = 1750
-# d2d = cc(Anthony,e) -> cc(Alec,e)  #106
 1	Junta	juntar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	Anthony	Anthony	PROPN	_	Gender=Masc|Number=Sing	1	obj	_	ChangedBy=Issue119|MWE=Anthony_Hopkins|MWEPOS=PROPN
 3	Hopkins	Hopkins	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -72,11 +68,9 @@
 17	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Hopkins é um bilionário, e pensa que Baldwin, um fotógrafo de moda, está a dormir com a sua mulher, Elle MacPherson, «top model» a tentar que a sua carreira cinematográfica pegue.
-# source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-4
+# source = CETEMPúblico n=335 sec=clt sem=97b
 # id = 1751
-# d2d = cc(bilionário,e) -> cc(pensa,e)  #106
-# d2d = punct(bilionário,,) -> punct(pensa,,)  #106
 1	Hopkins	Hopkins	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 3	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -92,9 +86,9 @@
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	moda	moda	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-16	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_
-17	a	a	ADP	PRP|@PRT-AUX<	_	18	case	_	_
-18	dormir	dormir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	ccomp	_	_
+16	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	MWE=está_a|MWEPOS=AUX
+17	a	a	SCONJ	PRP|@PRT-AUX<	_	18	mark	_	_
+18	dormir	dormir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
 19	com	com	ADP	PRP|@<ADVL	_	22	case	_	_
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 21	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	22	det	_	_
@@ -107,7 +101,7 @@
 28	top	top	X	_	_	22	appos	_	MWE=top_model|MWEPOS=NOUN
 29	model	model	X	_	_	28	flat:foreign	_	ChangedBy=Issue165|SpaceAfter=No
 30	»	»	PUNCT	PU|@PU	_	28	punct	_	_
-31	a	a	ADP	PRP|@N<	_	32	mark	_	_
+31	a	a	SCONJ	PRP|@N<	_	32	mark	_	_
 32	tentar	tentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	28	acl	_	_
 33	que	que	SCONJ	KS|@SUB	_	38	mark	_	_
 34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
@@ -118,14 +112,9 @@
 39	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Hopkins diz que, ao contrário dos seus filmes anteriores, que «eram tão divertidos quanto ver tinta a secar» e «bons exercícios de disciplina e economia e tudo isso», este é um filme do tipo que lhe apetece fazer agora -- acção.
-# source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-5
+# source = CETEMPúblico n=335 sec=clt sem=97b
 # id = 1752
-# d2d = cc(disciplina,e) -> cc(economia,e)  #106
-# d2d = punct(que,,) -> punct(contrário,,)  #106
-# d2d = cc(divertidos,e) -> cc(exercícios,e)  #106
-# d2d = punct(divertidos,») -> punct(exercícios,»)  #106
-# d2d = cc(disciplina,e) -> cc(tudo,e)  #106
 1	Hopkins	Hopkins	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	<first-cjt>|KS|@ACC>	_	41	mark	_	ChangedBy=Issue165|SpaceAfter=No
@@ -144,12 +133,12 @@
 14	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	18	nsubj	_	_
 15	«	«	PUNCT	PU|@PU	_	18	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	eram	ser	AUX	<cjt>|<mv>|V|IMPF|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	18	cop	_	ChangedBy=Issue167
-17	tão	tão	ADV	<quant>|<KOMP>|ADV|@>A	_	18	advmod	_	_
+17	tão	tão	SCONJ	<quant>|<KOMP>|ADV|@>A	_	18	mark	_	_
 18	divertidos	divertido	ADJ	<mv>|<first-cjt>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	11	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue91
 19	quanto	quanto	ADV	<cjt>|<quant>|<rel>|ADV|@ADVL	_	20	advmod	_	_
-20	ver	ver	VERB	<cjt>|<mv>|V|INF|@ICL-KOMP<	VerbForm=Inf	17	dep	_	_
+20	ver	ver	VERB	<cjt>|<mv>|V|INF|@ICL-KOMP<	VerbForm=Inf	17	advcl	_	_
 21	tinta	tinta	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
-22	a	a	ADP	PRP|@N<	_	23	mark	_	_
+22	a	a	SCONJ	PRP|@N<	_	23	mark	_	_
 23	secar	secar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	acl	_	ChangedBy=Issue165|SpaceAfter=No
 24	»	»	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
 25	e	e	CCONJ	<co-sc>|KC|@CO	_	28	cc	_	d2d:#106
@@ -183,8 +172,8 @@
 52	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «U-Turn», de Oliver Stone, com Sean Penn, também acabou de ser distribuído nos ecrãs americanos.
-# source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-6
+# source = CETEMPúblico n=335 sec=clt sem=97b
 # id = 1753
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	U-Turn	U-Turn	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj:pass	_	ChangedBy=Issue165|SpaceAfter=No
@@ -199,10 +188,10 @@
 11	Penn	Penn	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 13	também	também	ADV	ADV|@ADVL>	_	17	advmod	_	_
-14	acabou	acabar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	aux	_	_
-15	de	de	ADP	PRP|@PRT-AUX<	_	17	case	_	_
+14	acabou	acabar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=acabou_de|MWEPOS=AUX
+15	de	de	SCONJ	PRP|@PRT-AUX<	_	17	mark	_	_
 16	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	17	aux:pass	_	_
-17	distribuído	distribuir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+17	distribuído	distribuir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	xcomp	_	_
 18-19	nos	_	_	_	_	_	_	_	_
 18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
 19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
@@ -211,8 +200,8 @@
 22	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Penn tem um problema no seu carro que o obriga a parar numa pequena cidade de loucos no meio do Arizona.
-# source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-7
+# source = CETEMPúblico n=335 sec=clt sem=97b
 # id = 1754
 1	Penn	Penn	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -226,7 +215,7 @@
 9	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	11	nsubj	_	_
 10	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
 11	obriga	obrigar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_
-12	a	a	ADP	PRP|@<PIV	_	13	mark	_	_
+12	a	a	SCONJ	PRP|@<PIV	_	13	mark	_	_
 13	parar	parar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	xcomp	_	_
 14-15	numa	_	_	_	_	_	_	_	_
 14	em	em	ADP	<sam->|PRP|@<ADVL	_	17	case	_	_
@@ -238,7 +227,7 @@
 20-21	no	_	_	_	_	_	_	_	_
 20	em	em	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	meio	meio	NOUN	N|@P<	_	17	nmod	_	_
+22	meio	meio	NOUN	N|@P<	Gender=Masc|Number=Sing	17	nmod	_	_
 23-24	do	_	_	_	_	_	_	_	_
 23	de	de	ADP	PRP|@N<	_	25	case	_	_
 24	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
@@ -246,8 +235,8 @@
 26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = De lá não vai conseguir sair.
-# source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-8
+# source = CETEMPúblico n=335 sec=clt sem=97b
 # id = 1755
 1	De	de	ADP	PRP|@SA>	_	2	case	_	_
 2	lá	lá	ADV	ADV|@P<	_	5	advmod	_	_
@@ -258,8 +247,8 @@
 7	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Não vai ser um filme que obrigará Stone a pedir desculpa a dezenas de pessoas nas próximas dezenas de anos, como ele ainda hoje anda a fazer depois de «J.F.K.» e de «Assassinos Natos».
-# source = CETEMPúblico n=335 sec=clt sem=97b
 # sent_id = CP335-9
+# source = CETEMPúblico n=335 sec=clt sem=97b
 # id = 1756
 1	Não	não	ADV	ADV|@ADVL>	Polarity=Neg	5	advmod	_	ChangedBy=Issue108
 2	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
@@ -269,15 +258,15 @@
 6	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	7	nsubj	_	_
 7	obrigará	obrigar	VERB	<mv>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	acl:relcl	_	_
 8	Stone	Stone	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	_
-9	a	a	ADP	PRP|@<PIV	_	10	mark	_	_
+9	a	a	SCONJ	PRP|@<PIV	_	10	mark	_	_
 10	pedir	pedir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	xcomp	_	_
 11	desculpa	desculpa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
-12	a	a	ADP	PRP|@<PIV	_	29	mark	_	_
+12	a	a	SCONJ	PRP|@<PIV	_	29	mark	_	_
 13	dezenas	dezena	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	15	det	_	_
 14	de	de	ADP	PRP|@A<	_	15	case	_	_
 15	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	10	obl	_	_
 16-17	nas	_	_	_	_	_	_	_	_
-16	em	em	ADP	<sam->|PRP|@<ADVL	_	29	mark	_	_
+16	em	em	SCONJ	<sam->|PRP|@<ADVL	_	29	mark	_	_
 17	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_
 18	próximas	próximo	NOUN	<n>|ADJ|F|P|@>N	Gender=Fem|Number=Plur	21	amod	_	_
 19	dezenas	dezena	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	21	det	_	_
@@ -288,9 +277,9 @@
 24	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
 25	ainda	ainda	ADV	ADV|@>A	_	26	advmod	_	_
 26	hoje	hoje	ADV	ADV|@ADVL>	_	29	advmod	_	_
-27	anda	andar	AUX	<aux>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux	_	_
-28	a	a	ADP	PRP|@PRT-AUX<	_	29	case	_	_
-29	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	advcl	_	_
+27	anda	andar	VERB	<aux>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	_	MWE=anda_a|MWEPOS=AUX
+28	a	a	SCONJ	PRP|@PRT-AUX<	_	29	mark	_	_
+29	fazer	fazer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	27	xcomp	_	_
 30	depois	depois	ADV	ADV|@<ADVL	_	29	advmod	_	_
 31	de	de	ADP	<first-cjt>|PRP|@A<	_	33	case	_	_
 32	«	«	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No

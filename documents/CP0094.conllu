@@ -1,6 +1,6 @@
 # text = O que consta é que os militares têm bastante cuidado para evitar esse tipo de situações.
-# source = CETEMPúblico n=94 sec=pol sem=95a
 # sent_id = CP94-1
+# source = CETEMPúblico n=94 sec=pol sem=95a
 # id = 499
 1	O	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	_	_
 2	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	3	nsubj	_	_
@@ -12,7 +12,7 @@
 8	têm	ter	VERB	<mv>|V|PR|3P|IND|@FS-<SC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
 9	bastante	bastante	DET	DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	10	det	_	_
 10	cuidado	cuidado	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
-11	para	para	ADP	PRP|@N<	_	12	mark	_	_
+11	para	para	SCONJ	PRP|@N<	_	12	mark	_	_
 12	evitar	evitar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	advcl	_	_
 13	esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	14	det	_	_
 14	tipo	tipo	NOUN	<meta>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
@@ -21,8 +21,8 @@
 17	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Sabendo antecipadamente o grau hierárquico da personalidade que vai actuar, fazem-se representar em conformidade.
-# source = CETEMPúblico n=94 sec=pol sem=95a
 # sent_id = CP94-2
+# source = CETEMPúblico n=94 sec=pol sem=95a
 # id = 500
 1	Sabendo	saber	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	13	advcl	_	_
 2	antecipadamente	antecipadamente	ADV	ADV|@<ADVL	_	1	advmod	_	_
@@ -46,25 +46,25 @@
 18	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Para um secretário de Estado, um vice-chefe.
-# source = CETEMPúblico n=94 sec=pol sem=95a
 # sent_id = CP94-3
+# source = CETEMPúblico n=94 sec=pol sem=95a
 # id = 501
 1	Para	para	ADP	PRP|@>N	_	3	case	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	secretário	secretário	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	MWE=secretário_de_Estado
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
-5	Estado	estado	NOUN	N|@P<	_	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+5	Estado	estado	NOUN	N|@P<	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 7	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	vice-chefe	vice-chefe	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 9	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = No entanto, no Ministério da Defesa não há grandes preocupações quanto à funcionalidade da gestão se houver vacatura com a provável saída de Nogueira.
-# source = CETEMPúblico n=94 sec=pol sem=95a
 # sent_id = CP94-4
+# source = CETEMPúblico n=94 sec=pol sem=95a
 # id = 502
-1	No	no	ADP	PRP|@ADVL>	_	2	case	_	MWE=No_entanto
-2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	No	no	ADP	PRP|@ADVL>	_	11	cc	_	MWE=No_entanto|MWEPOS=CCONJ
+2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4-5	no	_	_	_	_	_	_	_	_
 4	em	em	ADP	<sam->|PRP|@ADVL>	_	6	case	_	_
@@ -99,8 +99,8 @@
 30	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Se os chefes militares, actualmente, despacham com o ministro de 15 em 15 dias, farão o mesmo com o primeiro-ministro e o secretário de Estado governa o Ministério.
-# source = CETEMPúblico n=94 sec=pol sem=95a
 # sent_id = CP94-5
+# source = CETEMPúblico n=94 sec=pol sem=95a
 # id = 503
 1	Se	se	SCONJ	KS|@SUB	_	8	mark	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
@@ -129,24 +129,22 @@
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	secretário	secretário	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	29	nsubj	_	MWE=secretário_de_Estado
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
-28	Estado	estado	NOUN	N|@P<	_	26	nmod	_	_
+28	Estado	estado	NOUN	N|@P<	Gender=Masc|Number=Sing	26	nmod	_	_
 29	governa	governar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
 30	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	Ministério	ministério	NOUN	<prop>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	29	obj	_	ChangedBy=Issue165|SpaceAfter=No
 32	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = É tudo uma questão de tempo e ainda falta conhecer os resultados do congresso do PSD e saber a altura exacta em que o Presidente da República tomará decisão relativamente ao Governo.
-# source = CETEMPúblico n=94 sec=pol sem=95a
 # sent_id = CP94-6
+# source = CETEMPúblico n=94 sec=pol sem=95a
 # id = 504
-# d2d = cc(conhecer,e) -> cc(saber,e)  #106
-# d2d = cc(questão,e) -> cc(falta,e)  #106
 1	É	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 2	tudo	tudo	PRON	<quant>|INDP|M|S|@<SUBJ	Gender=Masc|Number=Sing|PronType=Ind	4	nsubj	_	_
 3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	questão	questão	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	MWE=questão_de_tempo
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
-6	tempo	tempo	NOUN	N|@P<	_	4	nmod	_	_
+6	tempo	tempo	NOUN	N|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
 7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
 8	ainda	ainda	ADV	ADV|@ADVL>	_	9	advmod	_	_
 9	falta	faltar	VERB	<mv>|<cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_

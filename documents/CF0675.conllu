@@ -1,8 +1,7 @@
 # text = Muitos negócios foram iniciados ou fechados durante o Siaf.
-# source = CETENFolha n=675 cad=Agrofolha sec=agr sem=94a
 # sent_id = CF675-1
+# source = CETENFolha n=675 cad=Agrofolha sec=agr sem=94a
 # id = 2834
-# d2d = cc(iniciados,ou) -> cc(fechados,ou)  #106
 1	Muitos	muito	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	2	det	_	_
 2	negócios	negócio	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	foram	ser	AUX	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	aux	_	_
@@ -15,8 +14,8 @@
 10	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Produtores da Paraíba, por exemplo, venderam abacaxi a um grupo de empresários espanhóis, no valor de US$ 323 mil.
-# source = CETENFolha n=675 cad=Agrofolha sec=agr sem=94a
 # sent_id = CF675-2
+# source = CETENFolha n=675 cad=Agrofolha sec=agr sem=94a
 # id = 2835
 1	Produtores	produtor	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
 2-3	da	_	_	_	_	_	_	_	_
@@ -47,16 +46,15 @@
 25	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = A cooperativa de Curaçá (BA), no Vale do São Francisco, praticamente acertou uma joint venture com um empresário português para produzir melão e uva.
-# source = CETENFolha n=675 cad=Agrofolha sec=agr sem=94a
 # sent_id = CF675-3
+# source = CETENFolha n=675 cad=Agrofolha sec=agr sem=94a
 # id = 2836
-# d2d = cc(melão,e) -> cc(uva,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	cooperativa	cooperativa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	18	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
 4	Curaçá	Curaçá	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 5	(	(	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
-6	BA	BA	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+6	BA	BA	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	4	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 7	)	)	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 9-10	no	_	_	_	_	_	_	_	_
@@ -78,7 +76,7 @@
 23	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	empresário	empresário	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
 25	português	português	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	24	amod	_	_
-26	para	para	ADP	PRP|@N<	_	27	mark	_	_
+26	para	para	SCONJ	PRP|@N<	_	27	mark	_	_
 27	produzir	produzir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	acl	_	_
 28	melão	melão	NOUN	<first-cjt>|<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	27	obj	_	_
 29	e	e	CCONJ	<co-acc>|KC|@CO	_	30	cc	_	d2d:#106
@@ -86,8 +84,8 @@
 31	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Empresários alemães avançaram nas negociações para instalar unidades de beneficiamento de polpas de frutas.
-# source = CETENFolha n=675 cad=Agrofolha sec=agr sem=94a
 # sent_id = CF675-4
+# source = CETENFolha n=675 cad=Agrofolha sec=agr sem=94a
 # id = 2837
 1	Empresários	empresário	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 2	alemães	alemão	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	1	amod	_	_
@@ -96,7 +94,7 @@
 4	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
 5	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
 6	negociações	negociação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	obl	_	ChangedBy=Issue137
-7	para	para	ADP	PRP|@N<ARG	_	8	mark	_	_
+7	para	para	SCONJ	PRP|@N<ARG	_	8	mark	_	_
 8	instalar	instalar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	_
 9	unidades	unidade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	_
 10	de	de	ADP	PRP|@N<	_	11	case	_	_

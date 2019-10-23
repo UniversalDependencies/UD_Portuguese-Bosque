@@ -1,15 +1,13 @@
 # text = A rapariga franzina faz o que pode, mas a voz é tão titubeante que o apresentador tem logo que ir buscar outra cantora à multidão.
-# source = CETEMPúblico n=165 sec=clt sem=96b
 # sent_id = CP165-1
+# source = CETEMPúblico n=165 sec=clt sem=96b
 # id = 869
-# d2d = cc(faz,mas) -> cc(titubeante,mas)  #106
-# d2d = punct(faz,,) -> punct(titubeante,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	rapariga	rapaz	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	franzina	franzino	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
 4	faz	fazer	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	obj	_	_
-6	que	que	PRON	<rel>|INDP|M/F|S/P|@ACC>	Gender=Unsp|Number=Unsp|PronType=Rel	7	obj	_	_
+6	que	que	PRON	<rel>|INDP|M/F|S/P|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	7	obj	_	_
 7	pode	poder	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 9	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	d2d:#106
@@ -35,8 +33,8 @@
 28	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Percebe-se que a grande massa de gente está ali mais ou menos como o Padrão dos Descobrimentos: para proporcionar à SIC o seu «show» de ilusão, a ideia de que uma multidão entusiástica rodeia o palco, o que serve às mil-maravilhas os primeiros planos das câmaras.
-# source = CETEMPúblico n=165 sec=clt sem=96b
 # sent_id = CP165-2
+# source = CETEMPúblico n=165 sec=clt sem=96b
 # id = 870
 1-2	Percebe-se	_	_	_	_	_	_	_	_
 1	Percebe	perceber	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -48,7 +46,7 @@
 7	de	de	ADP	PRP|@N<ARG	_	8	case	_	_
 8	gente	gente	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
 9	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	ChangedBy=Issue167
-10	ali	ali	ADV	ADV|@<SA	_	1	advmod	_	_
+10	ali	ali	SCONJ	ADV|@<SA	_	22	mark	_	_
 11	mais	mais	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	10	obl	_	MWE=mais_ou_menos
 12	ou	ou	ADP	PRP|@N<	_	13	case	_	_
 13	menos	menos	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
@@ -60,8 +58,8 @@
 18	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
 19	Descobrimentos	Descobrimentos	PROPN	PROP|@P<	Number=Sing	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 20	:	:	PUNCT	PU|@PU	_	1	punct	_	_
-21	para	para	ADP	PRP|@<ADVL	_	22	mark	_	_
-22	proporcionar	proporcionar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	advcl	_	_
+21	para	para	SCONJ	PRP|@<ADVL	_	22	mark	_	_
+22	proporcionar	proporcionar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_
 23-24	à	_	_	_	_	_	_	_	_
 23	a	a	ADP	<sam->|PRP|@<PIV	_	25	case	_	_
 24	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	25	det	_	_
@@ -76,7 +74,7 @@
 33	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
 35	ideia	ideia	NOUN	<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	29	appos	_	_
-36	de	de	ADP	PRP|@N<ARG	_	41	mark	_	_
+36	de	de	SCONJ	PRP|@N<ARG	_	41	mark	_	_
 37	que	que	SCONJ	KS|@SUB	_	41	mark	_	_
 38	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 39	multidão	multidão	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	41	nsubj	_	_
@@ -102,8 +100,8 @@
 57	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = As coisas animam-se decididamente com «Crocodile rock» de Elton John.
-# source = CETEMPúblico n=165 sec=clt sem=96b
 # sent_id = CP165-3
+# source = CETEMPúblico n=165 sec=clt sem=96b
 # id = 871
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	coisas	coisa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
@@ -120,12 +118,9 @@
 12	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Os cantores sucedem-se, Miguel Ângelo já pula, por momentos dança à Elvis e põe o concorrente a dançar.
-# source = CETEMPúblico n=165 sec=clt sem=96b
 # sent_id = CP165-4
+# source = CETEMPúblico n=165 sec=clt sem=96b
 # id = 872
-# d2d = punct(sucedem-,,) -> punct(pula,,)  #106
-# d2d = cc(sucedem-,e) -> cc(põe,e)  #106
-# d2d = punct(sucedem-,,) -> punct(dança,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	cantores	cantor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3-4	sucedem-se	_	_	_	_	_	_	_	SpaceAfter=No
@@ -148,13 +143,13 @@
 18	põe	pôr	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	concorrente	concorrente	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
-21	a	a	ADP	PRP|@<ADVL	_	22	mark	_	_
+21	a	a	SCONJ	PRP|@<ADVL	_	22	mark	_	_
 22	dançar	dançar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	18	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 23	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «Quantas Laura Pausini estão aqui esta noite?», pergunta.
-# source = CETEMPúblico n=165 sec=clt sem=96b
 # sent_id = CP165-5
+# source = CETEMPúblico n=165 sec=clt sem=96b
 # id = 873
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Quantas	quanto	DET	<interr>|<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Int	3	det	_	_
@@ -171,10 +166,9 @@
 13	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = As duas primeiras jovens fraquejam e Miguel vai logo buscar outra.
-# source = CETEMPúblico n=165 sec=clt sem=96b
 # sent_id = CP165-6
+# source = CETEMPúblico n=165 sec=clt sem=96b
 # id = 874
-# d2d = cc(fraquejam,e) -> cc(buscar,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 2	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
 3	primeiras	primeiro	ADJ	N|F|P|@>N	Gender=Fem|Number=Plur|NumType=Ord	4	amod	_	_

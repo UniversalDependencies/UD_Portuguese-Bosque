@@ -1,14 +1,12 @@
 # text = A Grã-Bretanha estará preparada para impor o seu domínio directo sobre Gibraltar, para controlar a banca e o sistema legal respectivos, numa tentativa para acabar com as alegações de que a colónia se transformou num centro de lavagem de dinheiro, informou ontem o jornal Sunday Telegraph.
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-1
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2200
-# d2d = cc(banca,e) -> cc(sistema,e)  #106
-# d2d = punct(impor,,) -> punct(controlar,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Grã-Bretanha	Grã-Bretanha	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
 3	estará	estar	AUX	<mv>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
-4	preparada	preparado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	46	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
-5	para	para	ADP	<first-cjt>|PRP|@<PIV	_	6	mark	_	_
+4	preparada	preparado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	46	parataxis	_	ChangedBy=Issue141|ChangedBy=Issue91
+5	para	para	SCONJ	<first-cjt>|PRP|@<PIV	_	6	mark	_	_
 6	impor	impor	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	xcomp	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 8	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	12	det	_	_
@@ -17,7 +15,7 @@
 11	sobre	sobre	ADP	PRP|@<ACC	_	12	case	_	_
 12	Gibraltar	Gibraltar	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	6	obl	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
-14	para	para	ADP	<cjt>|PRP|@<PIV	_	15	mark	_	_
+14	para	para	SCONJ	<cjt>|PRP|@<PIV	_	15	mark	_	_
 15	controlar	controlar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	conj	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	banca	banca	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
@@ -31,12 +29,12 @@
 24	em	em	ADP	<sam->|PRP|@<ADVL	_	26	case	_	_
 25	uma	um	DET	<-sam>|<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	tentativa	tentativa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
-27	para	para	ADP	PRP|@N<ARG	_	28	mark	_	_
+27	para	para	SCONJ	PRP|@N<ARG	_	28	mark	_	_
 28	acabar	acabar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	26	acl	_	_
 29	com	com	ADP	PRP|@<PIV	_	31	case	_	_
 30	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_
 31	alegações	alegação	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	obj	_	_
-32	de	de	ADP	PRP|@N<ARG	_	37	mark	_	_
+32	de	de	SCONJ	PRP|@N<ARG	_	37	mark	_	_
 33	que	que	SCONJ	KS|@SUB	_	37	mark	_	_
 34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
 35	colónia	colónia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	37	nsubj	_	_
@@ -60,10 +58,9 @@
 52	.	.	PUNCT	PU|@PU	_	46	punct	_	_
 
 # text = Funcionários do Governo britânico confirmaram que a Grã-Bretanha foi aos arames com as posições das autoridades gibraltinas sobre a concretização de directivas da União Europeia, bem como sobre o tema da lavagem de dinheiro.
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-2
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2201
-# d2d = punct(concretização,,) -> punct(tema,,)  #106
 1	Funcionários	funcionário	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -112,8 +109,8 @@
 41	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O jornal acrescenta que os gibraltinos receiam que a medida seja um primeiro passo para os britânicos desistirem da soberania sobre o rochedo, situado num promontório no sul de Espanha, devolvendo-o aos espanhóis.
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-3
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2202
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	jornal	jornal	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -129,7 +126,7 @@
 12	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 13	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	14	amod	_	ChangedBy=Issue172
 14	passo	passo	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	3	ccomp	_	_
-15	para	para	ADP	PRP|@N<	_	18	mark	_	_
+15	para	para	SCONJ	PRP|@N<	_	18	mark	_	_
 16	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
 17	britânicos	britânico	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	18	nsubj	_	_
 18	desistirem	desistir	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	14	acl	_	_
@@ -163,8 +160,8 @@
 41	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O jornal garante, embora um porta-voz oficial do Ministério dos Negócios Estrangeiros não o tenha confirmado, que o Governo britânico está pronto para, «antes do Verão», tomar medidas para que Gibraltar deixe o seu estatuto de colónia com governo próprio, passando a depender directamente da Coroa britânica.
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-4
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2203
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	jornal	jornal	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -194,7 +191,7 @@
 24	britânico	britânico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	23	amod	_	_
 25	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	_	ChangedBy=Issue167
 26	pronto	pronto	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	ccomp	_	_
-27	para	para	ADP	PRP|@A<ARG	_	36	mark	_	ChangedBy=Issue165|SpaceAfter=No
+27	para	para	SCONJ	PRP|@A<ARG	_	36	mark	_	ChangedBy=Issue165|SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	30	punct	_	_
 29	«	«	PUNCT	PU|@PU	_	30	punct	_	ChangedBy=Issue165|SpaceAfter=No
 30	antes	antes	ADV	ADV|@ADVL>	_	36	advmod	_	_
@@ -206,7 +203,7 @@
 35	,	,	PUNCT	PU|@PU	_	30	punct	_	_
 36	tomar	tomar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	26	advcl	_	_
 37	medidas	medida	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	36	obj	_	_
-38	para	para	ADP	PRP|@N<ARG	_	41	mark	_	_
+38	para	para	SCONJ	PRP|@N<ARG	_	41	mark	_	_
 39	que	que	SCONJ	KS|@SUB	_	41	mark	_	_
 40	Gibraltar	Gibraltar	PROPN	PROP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing	41	nsubj	_	_
 41	deixe	deixar	VERB	<mv>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	acl	_	_
@@ -219,9 +216,9 @@
 48	governo	governo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	46	nmod	_	_
 49	próprio	próprio	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	48	amod	_	ChangedBy=Issue165|SpaceAfter=No
 50	,	,	PUNCT	PU|@PU	_	53	punct	_	_
-51	passando	passar	AUX	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	53	aux	_	_
-52	a	a	ADP	PRP|@PRT-AUX<	_	53	case	_	_
-53	depender	depender	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	41	advcl	_	_
+51	passando	passar	VERB	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	41	advcl	_	MWE=passando_a|MWEPOS=AUX
+52	a	a	SCONJ	PRP|@PRT-AUX<	_	53	mark	_	_
+53	depender	depender	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	51	xcomp	_	_
 54	directamente	directamente	ADV	ADV|@<ADVL	_	53	advmod	_	_
 55-56	da	_	_	_	_	_	_	_	_
 55	de	de	ADP	<sam->|PRP|@<PIV	_	57	case	_	_
@@ -231,20 +228,18 @@
 59	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Pernas decepadas e recoladas
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-5
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2204
-# d2d = cc(decepadas,e) -> cc(recoladas,e)  #106
 1	Pernas	perna	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	decepadas	decepar	VERB	<mv>|<first-cjt>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	1	acl	_	_
 3	e	e	CCONJ	<co-postnom>|KC|@CO	_	4	cc	_	d2d:#106
 4	recoladas	recolar	VERB	<mv>|<cjt>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	2	conj	_	_
 
 # text = Um miúdo de três anos cujas pernas foram cortadas por uma ceifeira-debulhadora foi operado para a reimplantação dos dois membros e recupera no Hospital Rei Eduardo VIII em Durban, África do Sul, informou ontem fonte hospitalar.
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-6
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2205
-# d2d = cc(operado,e) -> cc(recupera,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	miúdo	miúdo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj:pass	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
@@ -292,17 +287,16 @@
 42	.	.	PUNCT	PU|@PU	_	38	punct	_	_
 
 # text = Amos Mosea brincava no meio de um milheiral, sexta-feira, numa quinta perto de Underberg, a 200 quilómetros da cidade portuária de Durban, no Oceano Índico, quando foi atropelado pela ceifeira-debulhadora e lhe cortou as pernas abaixo dos joelhos.
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-7
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2206
-# d2d = cc(atropelado,e) -> cc(cortou,e)  #106
 1	Amos	Amos	PROPN	_	Gender=Masc|Number=Plur	3	nsubj	_	ChangedBy=Issue119|MWE=Amos_Mosea|MWEPOS=PROPN
 2	Mosea	Mosea	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	brincava	brincar	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 4-5	no	_	_	_	_	_	_	_	_
 4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	meio	meio	NOUN	N|@P<	_	3	obl	_	_
+6	meio	meio	NOUN	N|@P<	Gender=Masc|Number=Sing	3	obl	_	_
 7	de	de	ADP	PRP|@N<	_	9	case	_	_
 8	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	milheiral	milheiral	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -346,7 +340,7 @@
 43	cortou	cortar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	37	conj	_	_
 44	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	49	det	_	_
 45	pernas	perna	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	43	obj	_	_
-46	abaixo	abaixo	ADV	ADV|@<ACC	_	43	obj	_	MWE=abaixo_de
+46	abaixo	abaixo	ADV	ADV|@<ACC	_	45	advmod	_	_
 47-48	dos	_	_	_	_	_	_	_	_
 47	de	de	ADP	PRP|@A<	_	49	case	_	_
 48	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	49	det	_	_
@@ -354,8 +348,8 @@
 50	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Os gritos da criança alertaram um vizinho que a conduziu a uma clínica local, em estado de coma e sangrando abundantemente.
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-8
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2207
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	gritos	grito	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
@@ -384,8 +378,8 @@
 24	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Mas o miúdo saiu de coma para dizer: «Estou doente».
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-9
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2208
 1	Mas	mas	CCONJ	KC|@CO	_	4	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -393,7 +387,7 @@
 4	saiu	sair	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 5	de	de	ADP	PRP|@<SA	_	6	case	_	_
 6	coma	coma	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obl	_	_
-7	para	para	ADP	PRP|@<ADVL	_	8	mark	_	_
+7	para	para	SCONJ	PRP|@<ADVL	_	8	mark	_	_
 8	dizer	dizer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 9	:	:	PUNCT	PU|@PU	_	4	punct	_	_
 10	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -403,10 +397,10 @@
 14	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Conduzido de helicóptero para Durban com os cotos das pernas mergulhados em gelo, foi imediatamente operado durante oito horas.
-# source = CETEMPúblico n=419 sec=soc sem=95a
 # sent_id = CP419-10
+# source = CETEMPúblico n=419 sec=soc sem=95a
 # id = 2209
-1	Conduzido	conduzir	VERB	<mv>|<first-cjt>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	18	dep	_	_
+1	Conduzido	conduzir	VERB	<mv>|<first-cjt>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	18	advcl	_	_
 2	de	de	ADP	PRP|@<ADVL	_	3	case	_	_
 3	helicóptero	helicóptero	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	ChangedBy=Issue137
 4	para	para	ADP	PRP|@<ADVL	_	5	case	_	_

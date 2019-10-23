@@ -1,6 +1,6 @@
 # text = O resultado da sua primeira aplicação poderá ser visto, em breve na Cidade Universitária, em Lisboa, local onde irá ser construída, com base neste molde de betão, uma galeria técnica, cuja concepção permitirá diversas intervenções no subsolo sem qualquer incómodo para os transeuntes.
-# source = CETEMPúblico n=904 sec=soc sem=91b
 # sent_id = CP904-1
+# source = CETEMPúblico n=904 sec=soc sem=91b
 # id = 4664
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	resultado	resultado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj:pass	_	_
@@ -10,9 +10,9 @@
 5	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	7	det	_	_
 6	primeira	primeiro	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	7	amod	_	ChangedBy=Issue172
 7	aplicação	aplicação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
-8	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	aux	_	_
+8	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 9	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	10	aux:pass	_	_
-10	visto	ver	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+10	visto	ver	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 12	em	em	ADP	PRP|@<ADVL	_	13	case	_	MWE=em_breve
 13	breve	breve	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	_
@@ -26,7 +26,7 @@
 20	Lisboa	Lisboa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 22	local	local	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	16	appos	_	_
-23	onde	onde	ADV	<rel>|ADV|@ADVL>	_	26	advmod	_	_
+23	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	26	obl	_	_
 24	irá	ir	AUX	<aux>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	26	aux	_	_
 25	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	26	aux:pass	_	_
 26	construída	construir	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	22	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -62,12 +62,9 @@
 54	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Trata-se, segundo o projectista Martins de Oliveira, que concebeu o molde, de uma conduta visitável, capaz de reduzir «ao limite máximo» todos os inconvenientes produzidos pelas permanente operações de manutenção levadas a cabo pela Câmara Municipal, EDP, Telecom e TLP.
-# source = CETEMPúblico n=904 sec=soc sem=91b
 # sent_id = CP904-2
+# source = CETEMPúblico n=904 sec=soc sem=91b
 # id = 4665
-# d2d = cc(Câmara,e) -> cc(TLP,e)  #106
-# d2d = punct(Câmara,,) -> punct(Telecom,,)  #106
-# d2d = punct(Câmara,,) -> punct(EDP,,)  #106
 1-2	Trata-se	_	_	_	_	_	_	_	SpaceAfter=No
 1	Trata	tratar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|F|3S|ACC|@<SUBJ	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_
@@ -90,7 +87,7 @@
 19	visitável	visitável	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	18	amod	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 21	capaz	capaz	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	18	amod	_	_
-22	de	de	ADP	PRP|@A<ARG	_	23	mark	_	_
+22	de	de	SCONJ	PRP|@A<ARG	_	23	mark	_	_
 23	reduzir	reduzir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	xcomp	_	_
 24	«	«	PUNCT	PU|@PU	_	27	punct	_	ChangedBy=Issue165|SpaceAfter=No
 25-26	ao	_	_	_	_	_	_	_	_
@@ -116,8 +113,8 @@
 43-44	pela	_	_	_	_	_	_	_	_
 43	por	por	ADP	<sam->|PRP|@PASS	_	45	case	_	_
 44	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
-45	Câmara	Câmara	NOUN	_	Gender=Fem|Number=Sing	40	obl:agent	_	MWE=câmara_municipal|MWEPOS=NOUN
-46	Municipal	Municipal	ADJ	_	Number=Sing	45	amod	_	ChangedBy=Issue165|SpaceAfter=No
+45	Câmara	Câmara	PROPN	_	Gender=Fem|Number=Sing	40	obl:agent	_	MWE=câmara_municipal|MWEPOS=NOUN
+46	Municipal	Municipal	PROPN	_	Number=Sing	45	amod	_	ChangedBy=Issue165|SpaceAfter=No
 47	,	,	PUNCT	PU|@PU	_	48	punct	_	d2d:#106
 48	EDP	EDP	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	45	conj	_	ChangedBy=Issue165|SpaceAfter=No
 49	,	,	PUNCT	PU|@PU	_	50	punct	_	d2d:#106
@@ -127,8 +124,8 @@
 53	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Com este tipo de modelo, a renovação das várias redes, ao nível do saneamento básico, serão executadas sem perturbar terceiros, explicou Martins de Oliveira.
-# source = CETEMPúblico n=904 sec=soc sem=91b
 # sent_id = CP904-3
+# source = CETEMPúblico n=904 sec=soc sem=91b
 # id = 4666
 1	Com	com	ADP	PRP|@ADVL>	_	3	case	_	_
 2	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
@@ -156,7 +153,7 @@
 21	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 22	serão	ser	AUX	<aux>|V|FUT|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	23	aux:pass	_	_
 23	executadas	executar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	28	ccomp	_	_
-24	sem	sem	ADP	PRP|@<ADVL	_	25	mark	_	_
+24	sem	sem	SCONJ	PRP|@<ADVL	_	25	mark	_	_
 25	perturbar	perturbar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	23	advcl	_	_
 26	terceiros	terceiro	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	25	obj	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	23	punct	_	_

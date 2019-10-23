@@ -1,10 +1,10 @@
 # text = Começa a dar resultados a política da União Europeia de bloquear todas as tentativas suíças de gozar as vantagens da UE, sem as responsabilidades de um país membro.
-# source = CETEMPúblico n=40 sec=soc sem=97b
 # sent_id = CP40-1
+# source = CETEMPúblico n=40 sec=soc sem=97b
 # id = 228
-1	Começa	começar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
-2	a	a	ADP	PRP|@PRT-AUX<	_	3	case	_	_
-3	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+1	Começa	começar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=Começa_a|MWEPOS=AUX
+2	a	a	SCONJ	PRP|@PRT-AUX<	_	3	mark	_	_
+3	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	_
 4	resultados	resultado	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	política	política	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	3	nsubj	_	_
@@ -13,13 +13,13 @@
 8	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	9	det	_	_
 9	União	União	PROPN	_	Gender=Fem|Number=Sing	6	nmod	_	ChangedBy=Issue119|MWE=União_Europeia|MWEPOS=PROPN
 10	Europeia	Europeia	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
-11	de	de	ADP	PRP|@N<ARG	_	12	mark	_	_
+11	de	de	SCONJ	PRP|@N<ARG	_	12	mark	_	_
 12	bloquear	bloquear	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	_
 13	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	15	det	_	MWE=todas_as
 14	as	o	DET	<artd>|DET|F|P|@A<	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	fixed	_	_
 15	tentativas	tentativa	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	12	obj	_	_
 16	suíças	suíço	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	15	amod	_	_
-17	de	de	ADP	PRP|@N<ARG	_	18	mark	_	_
+17	de	de	SCONJ	PRP|@N<ARG	_	18	mark	_	_
 18	gozar	gozar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	acl	_	_
 19	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
 20	vantagens	vantagen	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	18	obj	_	_
@@ -38,10 +38,9 @@
 32	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Os seus governantes já perceberam que o isolamento já não dá lucro e pode levar à rejeição.
-# source = CETEMPúblico n=40 sec=soc sem=97b
 # sent_id = CP40-2
+# source = CETEMPúblico n=40 sec=soc sem=97b
 # id = 229
-# d2d = cc(dá,e) -> cc(levar,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	3	det	_	_
 3	governantes	governante	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
@@ -50,13 +49,13 @@
 6	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	isolamento	isolamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
-9	já	já	ADP	_	_	11	advmod	_	MWE=já_não|MWEPOS=ADV
-10	não	não	ADV	_	Gender=Masc|Number=Sing|Polarity=Neg	9	fixed	_	_
+9	já	já	ADV	_	_	11	advmod	_	_
+10	não	não	ADV	_	Polarity=Neg	11	advmod	_	_
 11	dá	dar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_
 12	lucro	lucro	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_
 13	e	e	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
-14	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
-15	levar	levar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	conj	_	_
+14	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+15	levar	levar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
 16-17	à	_	_	_	_	_	_	_	_
 16	a	a	ADP	<sam->|PRP|@<PIV	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	18	det	_	_
@@ -64,10 +63,10 @@
 19	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Quando o povo suíço recusou, em 92, a adesão ao Espaço Económico Europeu, como já fizera com a ONU, cometeu um grave engano.
-# source = CETEMPúblico n=40 sec=soc sem=97b
 # sent_id = CP40-3
+# source = CETEMPúblico n=40 sec=soc sem=97b
 # id = 230
-1	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	5	advmod	_	_
+1	Quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	5	mark	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	povo	povo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 4	suíço	suíço	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
@@ -99,10 +98,9 @@
 29	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
 # text = Foi essa voluntária e pretensiosa rejeição dos vizinhos, que deixou a Suíça sem a cobertura europeia, na crise que destruiu a sua imagem.
-# source = CETEMPúblico n=40 sec=soc sem=97b
 # sent_id = CP40-4
+# source = CETEMPúblico n=40 sec=soc sem=97b
 # id = 231
-# d2d = cc(voluntária,e) -> cc(pretensiosa,e)  #106
 1	Foi	foi	ADV	ADV|@ADVL>	_	12	advmod	_	_
 2	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
 3	voluntária	voluntário	ADJ	<first-cjt>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	6	amod	_	_
@@ -135,18 +133,16 @@
 28	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O fim da guerra fria, com a implosão da URSS acabou com a importância helvética no tabuleiro europeu, enquanto os recentes escândalos de cumplicidade com os nazis, mais o roubo das economias dos judeus pelos seus bancos lhe tiraram a simpatia americana.
-# source = CETEMPúblico n=40 sec=soc sem=97b
 # sent_id = CP40-5
+# source = CETEMPúblico n=40 sec=soc sem=97b
 # id = 232
-# d2d = punct(escândalos,,) -> punct(roubo,,)  #106
-# d2d = cc(escândalos,mais) -> cc(roubo,mais)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	fim	fim	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	obl	_	_
 4	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	5	det	_	_
-5	guerra	guerra	NOUN	_	_	2	nmod	_	MWE=guerra_fria|MWEPOS=NOUN
-6	fria	fria	ADJ	_	_	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
+5	guerra	guerra	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	MWE=guerra_fria|MWEPOS=NOUN
+6	fria	fria	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 8	com	com	ADP	PRP|@N<	_	10	case	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_

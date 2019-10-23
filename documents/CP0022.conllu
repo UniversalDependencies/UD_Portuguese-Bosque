@@ -1,12 +1,12 @@
 # text = Carrington fez sempre questão de salientar que as hipóteses de sucesso do cessar-fogo dependem sobretudo dos beligerantes.
-# source = CETEMPúblico n=22 sec=eco sem=92a
 # sent_id = CP22-1
+# source = CETEMPúblico n=22 sec=eco sem=92a
 # id = 111
 1	Carrington	Carrington	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	sempre	sempre	ADV	ADV|@<ADVL	_	2	advmod	_	_
 4	questão	questão	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
-5	de	de	ADP	PRP|@N<	_	6	mark	_	_
+5	de	de	SCONJ	PRP|@N<	_	6	mark	_	_
 6	salientar	salientar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	acl	_	_
 7	que	que	SCONJ	KS|@SUB	_	15	mark	_	_
 8	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
@@ -26,8 +26,8 @@
 20	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «Se for firmado, ninguém ficará mais contente do que nós.
-# source = CETEMPúblico n=22 sec=eco sem=92a
 # sent_id = CP22-2
+# source = CETEMPúblico n=22 sec=eco sem=92a
 # id = 112
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Se	se	SCONJ	KS|@SUB	_	4	mark	_	_
@@ -39,26 +39,25 @@
 8	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	9	advmod	_	_
 9	contente	contente	ADJ	<COMP>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing	7	xcomp	_	_
 10-11	do	_	_	_	_	_	_	_	_
-10	de	de	ADP	<sam->|PRP|@COM	_	13	case	_	MWE=do_que
+10	de	de	ADP	<sam->|PRP|@COM	_	13	mark	_	MWE=do_que|MWEPOS=SCONJ
 11	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	10	fixed	_	_
 12	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	10	fixed	_	_
-13	nós	nós	PRON	<first-cjt>|PERS|M/F|1P|NOM|@KOMP<	Case=Nom|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	9	dep	_	ChangedBy=Issue165|SpaceAfter=No
+13	nós	nós	PRON	<first-cjt>|PERS|M/F|1P|NOM|@KOMP<	Case=Nom|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	9	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Eu tentei, o senhor Vance tentou, se for respeitado, urrah!», comentou.
-# source = CETEMPúblico n=22 sec=eco sem=92a
 # sent_id = CP22-3
+# source = CETEMPúblico n=22 sec=eco sem=92a
 # id = 113
-# d2d = punct(tentei,,) -> punct(tentou,,)  #106
 1	Eu	eu	PRON	PERS|M/F|1S|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
 2	tentei	tentar	VERB	<first-cjt>|<mv>|V|PS|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	17	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	7	punct	_	d2d:#106
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	senhor	senhor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
-6	Vance	Vance	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	5	dep	_	_
+6	Vance	Vance	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	5	appos	_	_
 7	tentou	tentar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-9	se	se	SCONJ	<first-cjt>|KS|@AUX<	_	11	dep	_	_
+9	se	se	SCONJ	<first-cjt>|KS|@AUX<	_	11	mark	_	_
 10	for	ser	AUX	<aux>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	aux:pass	_	_
 11	respeitado	respeitar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
@@ -70,8 +69,8 @@
 18	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Mas se falhar?
-# source = CETEMPúblico n=22 sec=eco sem=92a
 # sent_id = CP22-4
+# source = CETEMPúblico n=22 sec=eco sem=92a
 # id = 114
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	se	se	SCONJ	KS|@SUB	_	3	mark	_	_
@@ -79,8 +78,8 @@
 4	?	?	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «Ninguém fez mais até agora do que o secretário Vance.
-# source = CETEMPúblico n=22 sec=eco sem=92a
 # sent_id = CP22-5
+# source = CETEMPúblico n=22 sec=eco sem=92a
 # id = 115
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Ninguém	ninguém	PRON	INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	3	nsubj	_	_
@@ -98,17 +97,17 @@
 13	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Devemos tentar».
-# source = CETEMPúblico n=22 sec=eco sem=92a
 # sent_id = CP22-6
+# source = CETEMPúblico n=22 sec=eco sem=92a
 # id = 116
-1	Devemos	dever	AUX	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	aux	_	_
-2	tentar	tentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+1	Devemos	dever	VERB	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	tentar	tentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 3	»	»	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 4	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = E lançou um alerta:
-# source = CETEMPúblico n=22 sec=eco sem=92a
 # sent_id = CP22-7
+# source = CETEMPúblico n=22 sec=eco sem=92a
 # id = 117
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	lançou	lançar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -117,8 +116,8 @@
 5	:	:	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «A situação pode ser potencialmente horrível.
-# source = CETEMPúblico n=22 sec=eco sem=92a
 # sent_id = CP22-8
+# source = CETEMPúblico n=22 sec=eco sem=92a
 # id = 118
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -130,8 +129,8 @@
 8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Sabe-se lá o que pode acontecer na Bósnia se o acordo falhar ..»
-# source = CETEMPúblico n=22 sec=eco sem=92a
 # sent_id = CP22-9
+# source = CETEMPúblico n=22 sec=eco sem=92a
 # id = 119
 1-2	Sabe-se	_	_	_	_	_	_	_	_
 1	Sabe	saber	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -139,8 +138,8 @@
 3	lá	lá	ADV	ADV|@<ADVL	_	1	advmod	_	_
 4	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	_
 5	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	7	nsubj	_	_
-6	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-7	acontecer	acontecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	acl:relcl	_	_
+6	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_
+7	acontecer	acontecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	xcomp	_	_
 8-9	na	_	_	_	_	_	_	_	_
 8	em	em	ADP	<sam->|PRP|@<ADVL	_	10	case	_	_
 9	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	10	det	_	_

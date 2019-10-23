@@ -1,9 +1,7 @@
 # text = Casos como o da Sopete, Lusotur ou Aliança Seguradora ilustram de forma pouco favorável a segurança que os investidores podem ter nas previsões adiantadas por algumas empresas ...
-# source = CETEMPúblico n=761 sec=eco sem=92a
 # sent_id = CP761-1
+# source = CETEMPúblico n=761 sec=eco sem=92a
 # id = 3909
-# d2d = cc(Sopete,ou) -> cc(Aliança,ou)  #106
-# d2d = punct(Sopete,,) -> punct(Lusotur,,)  #106
 1	Casos	caso	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
 2	como	como	ADP	<com>|PRP|@N<	_	3	case	_	_
 3	o	o	PRON	<dem>|DET|M|S|@N<	Gender=Masc|Number=Sing|PronType=Dem	1	nmod	_	_
@@ -26,8 +24,8 @@
 19	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	23	obj	_	_
 20	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
 21	investidores	investidor	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	23	nsubj	_	_
-22	podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
-23	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	acl:relcl	_	_
+22	podem	poder	VERB	<aux>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_
+23	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	xcomp	_	_
 24-25	nas	_	_	_	_	_	_	_	_
 24	em	em	ADP	<sam->|PRP|@<ADVL	_	26	case	_	_
 25	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	26	det	_	_
@@ -39,11 +37,9 @@
 31	...	...	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Na Sopete, os resultados alcançados em 1991 não chegam sequer para cobrir os dividendos de 125 mil contos estimados no primeiro semestre, isto apesar de no comentário ao balanço do primeiro semestre de 1991 ser referido que «se aponta para o segundo semestre um real crescimento da actividade do todo da empresa, e em especial da área do jogo e da área hoteleira».
-# source = CETEMPúblico n=761 sec=eco sem=92a
 # sent_id = CP761-2
+# source = CETEMPúblico n=761 sec=eco sem=92a
 # id = 3910
-# d2d = cc(actividade,e) -> cc(área,e)  #106
-# d2d = cc(área,e) -> cc(área,e)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -57,7 +53,7 @@
 10	não	não	ADV	_	Polarity=Neg	11	advmod	_	_
 11	chegam	chegar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 12	sequer	sequer	ADV	ADV|@>P	_	14	advmod	_	_
-13	para	para	ADP	PRP|@<ADVL	_	14	mark	_	_
+13	para	para	SCONJ	PRP|@<ADVL	_	14	mark	_	_
 14	cobrir	cobrir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	_
 15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	dividendos	dividendo	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	14	obj	_	_
@@ -73,7 +69,7 @@
 25	semestre	semestre	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	43	punct	_	_
 27	isto	isto	PRON	<dem>|INDP|M|S|@S<	Gender=Masc|Number=Sing|PronType=Dem	11	appos	_	_
-28	apesar	apesar	ADV	ADV|@N<	_	27	advmod	_	MWE=apesar_de
+28	apesar	apesar	ADV	ADV|@N<	_	43	mark	_	MWE=apesar_de|MWEPOS=SCONJ
 29	de	de	ADP	PRP|@A<	_	28	fixed	_	_
 30-31	no	_	_	_	_	_	_	_	_
 30	em	em	ADP	<sam->|PRP|@ADVL>	_	32	case	_	_
@@ -91,7 +87,7 @@
 40	de	de	ADP	PRP|@N<	_	41	case	_	_
 41	1991	1991	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	39	nmod	_	ChangedBy=Issue168
 42	ser	ser	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	43	aux:pass	_	_
-43	referido	referir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	28	acl	_	_
+43	referido	referir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	27	advcl	_	_
 44	que	que	SCONJ	KS|@SUB	_	47	mark	_	_
 45	«	«	PUNCT	PU|@PU	_	47	punct	_	ChangedBy=Issue165|SpaceAfter=No
 46	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	47	nsubj	_	_

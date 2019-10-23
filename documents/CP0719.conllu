@@ -1,6 +1,6 @@
 # text = Printemps de Bourges chegou ao fim
-# source = CETEMPúblico n=719 sec=clt sem=94a
 # sent_id = CP719-1
+# source = CETEMPúblico n=719 sec=clt sem=94a
 # id = 3689
 1	Printemps	Printemps	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	MWE=Printemps_de_Bourges
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
@@ -12,17 +12,17 @@
 7	fim	fim	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
 
 # text = Sem chave de ouro
-# source = CETEMPúblico n=719 sec=clt sem=94a
 # sent_id = CP719-2
+# source = CETEMPúblico n=719 sec=clt sem=94a
 # id = 3690
 1	Sem	sem	ADP	PRP|@UTT	_	2	case	_	_
 2	chave	chave	NOUN	_	Gender=Fem|Number=Sing	0	root	_	MWE=chave_de_ouro|MWEPOS=NOUN
 3	de	de	ADP	_	_	2	compound	_	_
-4	ouro	ouro	NOUN	_	_	2	compound	_	_
+4	ouro	ouro	NOUN	_	Gender=Masc|Number=Sing	2	compound	_	_
 
 # text = Jorge Dias, nosso enviado a Bourges
-# source = CETEMPúblico n=719 sec=clt sem=94a
 # sent_id = CP719-3
+# source = CETEMPúblico n=719 sec=clt sem=94a
 # id = 3691
 1	Jorge	Jorge	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Jorge_Dias|MWEPOS=PROPN
 2	Dias	Dias	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -33,8 +33,8 @@
 7	Bourges	Bourges	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	5	nmod	_	_
 
 # text = Os Cocteau Twins fecharam a 18ª edição do Printemps de Bourges, infelizmente sem aquilo a que se pode chamar «uma chave de ouro».
-# source = CETEMPúblico n=719 sec=clt sem=94a
 # sent_id = CP719-4
+# source = CETEMPúblico n=719 sec=clt sem=94a
 # id = 3692
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Cocteau	Cocteau	PROPN	_	Gender=Masc|Number=Plur	4	nsubj	_	ChangedBy=Issue119|MWE=Cocteau_Twins|MWEPOS=PROPN
@@ -54,24 +54,22 @@
 15	sem	sem	ADP	PRP|@<ADVL	_	16	case	_	_
 16	aquilo	aquilo	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	4	obl	_	_
 17	a	a	ADP	PRP|@PIV>	_	18	case	_	_
-18	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	21	iobj	_	_
+18	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	21	obj	_	_
 19	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	21	nsubj	_	_
-20	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	_	_
-21	chamar	chamar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	acl:relcl	_	_
+20	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	acl:relcl	_	_
+21	chamar	chamar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	xcomp	_	_
 22	«	«	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
 23	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
-24	chave	chave	NOUN	_	Gender=Fem|Number=Sing	21	obj	_	MWE=chave_de_ouro|MWEPOS=NOUN
+24	chave	chave	NOUN	_	Gender=Fem|Number=Sing	21	xcomp	_	MWE=chave_de_ouro|MWEPOS=NOUN
 25	de	de	ADP	_	_	24	compound	_	_
-26	ouro	ouro	NOUN	_	_	24	compound	_	ChangedBy=Issue165|SpaceAfter=No
+26	ouro	ouro	NOUN	_	Gender=Masc|Number=Sing	24	compound	_	ChangedBy=Issue165|SpaceAfter=No
 27	»	»	PUNCT	PU|@PU	_	24	punct	_	ChangedBy=Issue165|SpaceAfter=No
 28	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Valeu uma compensação chamada Morphine, desconhecida de muitos, mas que só veio confirmar a excelência do programa deste ano do festival francês.
-# source = CETEMPúblico n=719 sec=clt sem=94a
 # sent_id = CP719-5
+# source = CETEMPúblico n=719 sec=clt sem=94a
 # id = 3693
-# d2d = cc(desconhecida,mas) -> cc(veio,mas)  #106
-# d2d = punct(desconhecida,,) -> punct(veio,,)  #106
 1	Valeu	valer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	compensação	compensação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_

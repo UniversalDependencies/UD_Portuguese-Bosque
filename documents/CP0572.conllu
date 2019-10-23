@@ -1,6 +1,6 @@
 # text = A data de 4 de Novembro tem sido apontada, geralmente, como o limite para o início da deslocação.
-# source = CETEMPúblico n=572 sec=nd sem=91b
 # sent_id = CP572-1
+# source = CETEMPúblico n=572 sec=nd sem=91b
 # id = 2966
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	data	data	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj:pass	_	_
@@ -27,8 +27,8 @@
 22	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = No início desta semana, no entanto, um diplomata indonésio admitiu a possibilidade da visita começar em finais de Outubro, o que, a confirmar-se, apanhará a Comissão Eventual praticamente no grau zero da preparação da visita.
-# source = CETEMPúblico n=572 sec=nd sem=91b
 # sent_id = CP572-2
+# source = CETEMPúblico n=572 sec=nd sem=91b
 # id = 2967
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -40,9 +40,9 @@
 6	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 8-9	no	_	_	_	_	_	_	_	_
-8	em	em	ADP	<sam->|PRP|@N<	_	10	case	_	_
-9	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	15	obl	_	ChangedBy=Issue165|SpaceAfter=No
+8	em	em	ADP	<sam->|PRP|@N<	_	15	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+9	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	fixed	_	_
+10	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	8	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 12	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	diplomata	diplomata	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
@@ -51,7 +51,7 @@
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	possibilidade	possibilidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
 18-19	da	_	_	_	_	_	_	_	_
-18	de	de	ADP	<sam->|PRP|@N<	_	21	mark	_	_
+18	de	de	SCONJ	<sam->|PRP|@N<	_	21	mark	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	visita	visita	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	21	nsubj	_	_
 21	começar	começar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	acl	_	_
@@ -63,7 +63,7 @@
 27	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	15	appos	_	_
 28	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	34	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	31	punct	_	_
-30	a	a	ADP	PRP|@ADVL>	_	31	mark	_	_
+30	a	a	SCONJ	PRP|@ADVL>	_	31	mark	_	_
 31-32	confirmar-se	_	_	_	_	_	_	_	SpaceAfter=No
 31	confirmar	confirmar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-P<	VerbForm=Inf	34	advcl	_	_
 32	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	expl	_	ChangedBy=Issue135
@@ -89,12 +89,9 @@
 49	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = «Na última reunião [ quarta-feira passada ], entrámos, tomámos uma bica, demos umas palmadas nas costas e viemos embora, porque não havia informações», revelou ao PÚBLICO um membro da Comissão.
-# source = CETEMPúblico n=572 sec=nd sem=91b
 # sent_id = CP572-3
+# source = CETEMPúblico n=572 sec=nd sem=91b
 # id = 2968
-# d2d = cc(entrámos,e) -> cc(viemos,e)  #106
-# d2d = punct(entrámos,,) -> punct(demos,,)  #106
-# d2d = punct(entrámos,,) -> punct(tomámos,,)  #106
 1	«	«	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2-3	Na	_	_	_	_	_	_	_	_
 2	Em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	_
@@ -143,14 +140,9 @@
 42	.	.	PUNCT	PU|@PU	_	33	punct	_	_
 
 # text = «Não só desconhecemos os critérios para os convites à imprensa, como ignoramos quem vai e de que partidos, pois o PRD desapareceu da actual AR [ tinha um deputado na Comissão ] e o PCP e o CDS diminuíram a representação.
-# source = CETEMPúblico n=572 sec=nd sem=91b
 # sent_id = CP572-4
+# source = CETEMPúblico n=572 sec=nd sem=91b
 # id = 2969
-# d2d = cc(desapareceu,e) -> cc(diminuíram,e)  #106
-# d2d = cc(PCP,e) -> cc(CDS,e)  #106
-# d2d = cc(desconhecemos,como) -> cc(ignoramos,como)  #106
-# d2d = cc(quem,e) -> cc(partidos,e)  #106
-# d2d = punct(desconhecemos,,) -> punct(ignoramos,,)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	só	só	ADV	ADV|@ADVL>	_	4	advmod	_	_
@@ -204,8 +196,8 @@
 48	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = A data aproxima-se, há pequenas coisas a fazer, como por exemplo vacinas, e não podemos estar a vacinar as Cortes inteiras ...», acrescentou o deputado, manifestando-se preocupado com o atraso na preparação de uma visita que «funciona como um jogo na corda bamba, pois tanto pode ser favorável a Portugal como à Indonésia».
-# source = CETEMPúblico n=572 sec=nd sem=91b
 # sent_id = CP572-5
+# source = CETEMPúblico n=572 sec=nd sem=91b
 # id = 2970
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	data	data	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
@@ -216,20 +208,20 @@
 6	há	haver	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 7	pequenas	pequeno	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	8	amod	_	_
 8	coisas	coisa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	6	obj	_	_
-9	a	a	ADP	PRP|@N<	_	10	mark	_	_
+9	a	a	SCONJ	PRP|@N<	_	10	mark	_	_
 10	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	ChangedBy=Issue165|SpaceAfter=No
-11	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+11	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 12	como	como	ADP	<com>|PRP|@N<PRED	_	15	case	_	_
 13	por	por	ADP	PRP|@>N	_	15	advmod	_	MWE=por_exemplo|MWEPOS=ADV
 14	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	13	fixed	_	_
 15	vacinas	vacina	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 17	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	d2d:#106
 18	não	não	ADV	_	Polarity=Neg	22	advmod	_	_
-19	podemos	poder	AUX	<cjt>|<aux>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	22	aux	_	_
-20	estar	estar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	22	aux	_	_
-21	a	a	ADP	PRP|@PRT-AUX<	_	22	case	_	_
-22	vacinar	vacinar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	conj	_	_
+19	podemos	poder	VERB	<cjt>|<aux>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	_
+20	estar	estar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	19	xcomp	_	MWE=estar_a|MWEPOS=AUX
+21	a	a	SCONJ	PRP|@PRT-AUX<	_	22	mark	_	_
+22	vacinar	vacinar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	xcomp	_	_
 23	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
 24	Cortes	Cortes	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	22	obj	_	_
 25	inteiras	inteiro	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	24	amod	_	_
@@ -270,7 +262,7 @@
 57	tanto	tanto	ADV	<quant>|<KOMP>|<COMP>|ADV|@ADVL>	_	60	advmod	_	_
 58	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	60	aux	_	_
 59	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	60	cop	_	ChangedBy=Issue167
-60	favorável	favorável	ADJ	ADJ|M/F|S|@<SC	Gender=Unsp|Number=Sing	47	dep	_	_
+60	favorável	favorável	ADJ	ADJ|M/F|S|@<SC	Gender=Unsp|Number=Sing	47	conj	_	_
 61	a	a	ADP	PRP|@A<	_	62	case	_	_
 62	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	60	obl	_	_
 63	como	como	ADP	<com>|PRP|@KOMP<	_	66	case	_	_

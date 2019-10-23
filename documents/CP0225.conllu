@@ -1,13 +1,13 @@
 # text = Quanto a saber donde é que vem a nossa preferência quase unânime pela mão direita, a questão permanece em aberto.
-# source = CETEMPúblico n=225 sec=nd sem=96b
 # sent_id = CP225-1
+# source = CETEMPúblico n=225 sec=nd sem=96b
 # id = 1211
-1	Quanto	quanto	ADV	ADV|@ADVL>	_	20	advmod	_	MWE=Quanto_a
-2	a	a	ADP	PRP|@A<	_	3	mark	_	_
-3	saber	saber	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_
+1	Quanto	quanto	ADV	ADV|@ADVL>	_	3	mark	_	MWE=Quanto_a|MWEPOS=SCONJ
+2	a	a	ADP	PRP|@A<	_	1	fixed	_	_
+3	saber	saber	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	acl	_	_
 4	donde	donde	ADV	<interr>|ADV|@SA>	_	7	advmod	_	_
-5	é	é	ADP	PRP|@ADVL>	_	6	case	_	MWE=é_que
-6	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	obl	_	_
+5	é	ser	AUX	PRP|@ADVL>	_	7	discourse	_	MWE=é_que|MWEPOS=INTJ
+6	que	que	SCONJ	N|M|S|@P<	_	5	fixed	_	_
 7	vem	vir	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 9	nossa	nosso	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	10	det	_	_
@@ -23,23 +23,21 @@
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	questão	questão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	_
 20	permanece	permanecer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-21	em	em	ADP	PRP|@<PIV	_	22	mark	_	_
+21	em	em	SCONJ	PRP|@<PIV	_	22	mark	_	_
 22	aberto	abrir	VERB	<mv>|V|PCP|M|S|@ICL-P<	Gender=Masc|Number=Sing|VerbForm=Part	20	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 23	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Tanto mais quanto, hoje em dia, o hemisfério esquerdo (dos dextrímanos) já não é considerado como o hemisfério cerebral «dominante», nem como o único capaz de desempenhar altas funções mentais e de controlar movimentos precisos e subtis.
-# source = CETEMPúblico n=225 sec=nd sem=96b
 # sent_id = CP225-2
+# source = CETEMPúblico n=225 sec=nd sem=96b
 # id = 1212
-# d2d = cc(precisos,e) -> cc(subtis,e)  #106
-# d2d = cc(desempenhar,e) -> cc(controlar,e)  #106
 1	Tanto	tanto	ADV	<quant>|ADV|@ADVL>	_	20	advmod	_	MWE=Tanto_mais_quanto
 2	mais	mais	ADV	ADV|@P<	_	1	advmod	_	_
 3	quanto	quanto	ADP	PRP|@A<	_	30	case	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-5	hoje	hoje	PROPN	_	Gender=Masc|Number=Sing	20	obl	_	ChangedBy=Issue119|MWE=Hoje_em_dia|MWEPOS=PROPN
-6	em	em	PROPN	_	_	5	flat:name	_	ChangedBy=Issue119
-7	dia	dia	PROPN	_	Gender=Masc|Number=Sing	5	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+5	hoje	hoje	ADV	_	_	20	obl	_	ChangedBy=Issue119|MWE=Hoje_em_dia|MWEPOS=ADV
+6	em	em	ADP	_	_	5	fixed	_	ChangedBy=Issue119
+7	dia	dia	NOUN	_	Gender=Masc|Number=Sing	5	fixed	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	hemisfério	hemisfério	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj:pass	_	_
@@ -50,11 +48,11 @@
 14	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
 15	dextrímanos	dextrímano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 16	)	)	PUNCT	PU|@PU	_	15	punct	_	_
-17	já	já	ADP	_	_	20	advmod	_	MWE=já_não|MWEPOS=ADV
-18	não	não	ADV	_	Gender=Masc|Number=Sing|Polarity=Neg	17	fixed	_	_
+17	já	já	ADV	_	_	20	advmod	_	_
+18	não	não	ADV	_	Polarity=Neg	20	advmod	_	_
 19	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:pass	_	_
 20	considerado	considerar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
-21	como	como	ADP	<prp>|<rel>|<first-cjt>|PRP|@<SC	PronType=Rel	23	case	_	_
+21	como	como	ADP	<prp>|<rel>|<first-cjt>|PRP|@<SC	_	23	case	_	_
 22	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	hemisfério	hemisfério	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	20	xcomp	_	_
 24	cerebral	cerebral	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	23	amod	_	_
@@ -67,13 +65,13 @@
 31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	único	único	NOUN	<n>|<np-def>|ADJ|M|S|@P<	Gender=Masc|Number=Sing	30	obl	_	_
 33	capaz	capaz	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	32	amod	_	_
-34	de	de	ADP	<first-cjt>|PRP|@A<ARG	_	35	mark	_	_
+34	de	de	SCONJ	<first-cjt>|PRP|@A<ARG	_	35	mark	_	_
 35	desempenhar	desempenhar	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	xcomp	_	_
 36	altas	alto	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	37	amod	_	_
 37	funções	função	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	35	obj	_	_
 38	mentais	mental	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	37	amod	_	_
 39	e	e	CCONJ	<co-a<>|KC|@CO	_	41	cc	_	d2d:#106
-40	de	de	ADP	<cjt>|PRP|@A<ARG	_	41	mark	_	_
+40	de	de	SCONJ	<cjt>|PRP|@A<ARG	_	41	mark	_	_
 41	controlar	controlar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	35	conj	_	_
 42	movimentos	movimento	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	41	obj	_	_
 43	precisos	preciso	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	42	amod	_	_
@@ -82,12 +80,9 @@
 46	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Sabe-se que o hemisfério direito também é essencial para funções mentais de altíssimo nível, tais como o raciocínio, a memória, o reconhecimento dos rostos, das melodias musicais, etc.
-# source = CETEMPúblico n=225 sec=nd sem=96b
 # sent_id = CP225-3
+# source = CETEMPúblico n=225 sec=nd sem=96b
 # id = 1213
-# d2d = punct(raciocínio,,) -> punct(reconhecimento,,)  #106
-# d2d = punct(rostos,,) -> punct(melodias,,)  #106
-# d2d = punct(raciocínio,,) -> punct(memória,,)  #106
 1-2	Sabe-se	_	_	_	_	_	_	_	_
 1	Sabe	saber	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	1	nsubj	_	_
@@ -104,11 +99,11 @@
 13	de	de	ADP	PRP|@N<	_	15	case	_	_
 14	altíssimo	alto	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	15	amod	_	_
 15	nível	nível	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
-17	tais	tal	DET	<dem>|DET|F|P|@N<PRED	Gender=Fem|Number=Plur|PronType=Dem	11	appos	_	_
-18	como	como	ADP	<com>|PRP|@KOMP<	_	20	case	_	_
+16	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+17	tais	tal	DET	<dem>|DET|F|P|@N<PRED	Gender=Fem|Number=Plur|PronType=Dem	20	case	_	MWE=tais_como|MWEPOS=ADP
+18	como	como	ADP	<com>|PRP|@KOMP<	_	17	fixed	_	_
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
-20	raciocínio	raciocínio	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+20	raciocínio	raciocínio	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	memória	memória	NOUN	<cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	20	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -125,14 +120,13 @@
 32	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	33	det	_	_
 33	melodias	melodia	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	29	conj	_	_
 34	musicais	musical	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	33	amod	_	ChangedBy=Issue165|SpaceAfter=No
-35	,	,	PUNCT	PU|@PU	_	29	punct	_	_
-36	etc.	etc.	ADV	ADV|M|S|@<ADVL	_	20	advmod	_	_
+35	,	,	PUNCT	PU|@PU	_	36	punct	_	_
+36	etc.	etc.	ADV	ADV|M|S|@<ADVL	_	20	conj	_	_
 
 # text = Uma explicação possível da hegemonia dextrímana poderá ser o facto de, nos dextrímanos, o hemisfério cerebral esquerdo possuir ligações nervosas sensoriais e motoras para os dois lados do corpo, enquanto o hemisfério direito está quase só ligado a um único lado do corpo.
-# source = CETEMPúblico n=225 sec=nd sem=96b
 # sent_id = CP225-4
+# source = CETEMPúblico n=225 sec=nd sem=96b
 # id = 1214
-# d2d = cc(sensoriais,e) -> cc(motoras,e)  #106
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	explicação	explicação	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
 3	possível	possível	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
@@ -145,7 +139,7 @@
 9	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	cop	_	ChangedBy=Issue167
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	facto	facto	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-12	de	de	ADP	PRP|@N<	_	22	mark	_	ChangedBy=Issue165|SpaceAfter=No
+12	de	de	SCONJ	PRP|@N<	_	22	mark	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 14-15	nos	_	_	_	_	_	_	_	_
 14	em	em	ADP	<sam->|PRP|@ADVL>	_	16	case	_	_
@@ -156,7 +150,7 @@
 19	hemisfério	hemisfério	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	22	nsubj	_	_
 20	cerebral	cerebral	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
 21	esquerdo	esquerdo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
-22	possuir	possuir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	dep	_	_
+22	possuir	possuir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	acl	_	_
 23	ligações	ligação	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	22	obj	_	_
 24	nervosas	nervoso	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	23	amod	_	_
 25	sensoriais	sensorial	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	23	amod	_	_
@@ -171,14 +165,14 @@
 33	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	corpo	corpo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	22	punct	_	_
-36	enquanto	enquanto	ADV	<rel>|ADV|@ADVL>	_	43	advmod	_	_
+36	enquanto	enquanto	SCONJ	<rel>|ADV|@ADVL>	_	43	mark	_	_
 37	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 38	hemisfério	hemisfério	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	43	nsubj	_	_
 39	direito	direito	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	38	amod	_	_
 40	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	cop	_	ChangedBy=Issue167
 41	quase	quase	ADV	<quant>|ADV|@>A	_	42	advmod	_	_
 42	só	só	ADV	ADV|@<ADVL	_	43	advmod	_	_
-43	ligado	ligar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	22	dep	_	_
+43	ligado	ligar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	22	advcl	_	_
 44	a	a	ADP	PRP|@<PIV	_	47	case	_	_
 45	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 46	único	único	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	47	amod	_	_
@@ -190,12 +184,12 @@
 51	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Isto poderá significar, simplesmente, que o controlo voluntário da mão direita é mais fácil do que o da mão esquerda.
-# source = CETEMPúblico n=225 sec=nd sem=96b
 # sent_id = CP225-5
+# source = CETEMPúblico n=225 sec=nd sem=96b
 # id = 1215
 1	Isto	isto	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_
-2	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux	_	_
-3	significar	significar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+2	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+3	significar	significar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	simplesmente	simplesmente	ADV	ADV|@<ADVL	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_

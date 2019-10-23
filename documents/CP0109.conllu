@@ -1,14 +1,13 @@
 # text = Exposições
-# source = CETEMPúblico n=109 sec=soc sem=98b
 # sent_id = CP109-1
+# source = CETEMPúblico n=109 sec=soc sem=98b
 # id = 562
 1	Exposições	exposição	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 
 # text = «Duas Viagens», uma exposição de fotografias a preto-e-branco de Francisco Villa-Lobos, feitas em 1995 em Tóquio, Nagasaqui e Quioto, nos intervalos de rodagem do filme «Os Olhos da Ásia», de João Mário Grilo, pode ser vista até 7 de Novembro na sala Laman do Centro Cultural de Belém.
-# source = CETEMPúblico n=109 sec=soc sem=98b
 # sent_id = CP109-2
+# source = CETEMPúblico n=109 sec=soc sem=98b
 # id = 563
-# d2d = cc(Tóquio,e) -> cc(Quioto,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Duas	Duas	PROPN	_	Gender=Masc|Number=Sing	49	nsubj:pass	_	ChangedBy=Issue119|MWE=Duas_Viagens|MWEPOS=PROPN
 3	Viagens	Viagens	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -58,9 +57,9 @@
 44	Mário	Mário	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119
 45	Grilo	Grilo	PROPN	_	Number=Sing	43	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 46	,	,	PUNCT	PU|@PU	_	43	punct	_	_
-47	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	49	aux	_	_
+47	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 48	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	49	aux:pass	_	_
-49	vista	ver	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+49	vista	ver	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	47	xcomp	_	_
 50	até	até	ADP	PRP|@<ADVL	_	51	case	_	_
 51	7	7	NUM	<card>|NUM|M|S|@P<	NumType=Card	49	obl	_	ChangedBy=Issue168
 52	de	de	ADP	PRP|@A<	_	53	case	_	_
@@ -80,10 +79,9 @@
 64	.	.	PUNCT	PU|@PU	_	49	punct	_	_
 
 # text = «Impermanência -- Um Caminho para o Auto-Conhecimento» é o título de uma exposição / instalação de Regina Chulam, que joga com vários auto-retratos pintados pela artista e que pode ser apreciada, a partir das 18h30, na Casa Fernando Pessoa (R. Coelho da Rocha, 16), em Lisboa.
-# source = CETEMPúblico n=109 sec=soc sem=98b
 # sent_id = CP109-3
+# source = CETEMPúblico n=109 sec=soc sem=98b
 # id = 564
-# d2d = cc(joga,e) -> cc(apreciada,e)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Impermanência	Impermanência	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue119|MWE=Impermanência_--_Um_Caminho|MWEPOS=PROPN
 3	--	--	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue119
@@ -117,12 +115,12 @@
 30	artista	artista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	27	obl:agent	_	_
 31	e	e	CCONJ	<co-fcl>|<co-vfin>|KC|@CO	_	35	cc	_	d2d:#106
 32	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	35	nsubj:pass	_	_
-33	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	aux	_	_
+33	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_
 34	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	35	aux:pass	_	_
-35	apreciada	apreciar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	23	conj	_	ChangedBy=Issue165|SpaceAfter=No
+35	apreciada	apreciar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	33	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 36	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 37	a	a	ADP	<sam->|PRP|@<ADVL	_	38	case	_	MWE=a_partir_de
-38	partir	partir	NOUN	N|@P<	_	35	obl	_	_
+38	partir	partir	VERB	N|@P<	VerbForm=Inf	35	obl	_	_
 39-40	das	_	_	_	_	_	_	_	_
 39	de	de	ADP	PRP|@N<	_	41	case	_	_
 40	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	41	det	_	_
@@ -142,7 +140,7 @@
 52	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	53	det	_	_
 53	Rocha	Rocha	PROPN	PROP|@P<	Number=Sing	49	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 54	,	,	PUNCT	PU|@PU	_	55	punct	_	_
-55	16	16	NUM	<card>|NUM|M|S|@N<PRED	NumType=Card	49	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+55	16	16	NUM	<card>|NUM|M|S|@N<PRED	NumType=Card	49	parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 56	)	)	PUNCT	PU|@PU	_	49	punct	_	ChangedBy=Issue165|SpaceAfter=No
 57	,	,	PUNCT	PU|@PU	_	55	punct	_	_
 58	em	em	ADP	PRP|@N<PRED	_	59	case	_	_

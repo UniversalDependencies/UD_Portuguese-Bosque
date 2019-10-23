@@ -1,6 +1,6 @@
 # text = Uma das preocupações claras do manifesto é esclarecer que o congresso não concorre no plano dos partidos políticos.
-# source = CETEMPúblico n=476 sec=pol sem=94a
 # sent_id = CP476-1
+# source = CETEMPúblico n=476 sec=pol sem=94a
 # id = 2515
 1	Uma	um	NUM	<card>|NUM|F|S|@SUBJ>	NumType=Card	10	nsubj	_	ChangedBy=Issue168
 2-3	das	_	_	_	_	_	_	_	_
@@ -31,11 +31,10 @@
 23	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Como ali é afirmado, «não cabe exclusivamente à classe política» dar respostas sobre as interrogações que o futuro levanta, «antes exige a participação activa da sociedade civil, que tem igualmente responsabilidades e deveres de que não pode nem deve demitir-se».
-# source = CETEMPúblico n=476 sec=pol sem=94a
 # sent_id = CP476-2
+# source = CETEMPúblico n=476 sec=pol sem=94a
 # id = 2516
-# d2d = cc(responsabilidades,e) -> cc(deveres,e)  #106
-1	Como	como	ADV	<rel>|ADV|@ADVL>	_	4	advmod	_	_
+1	Como	como	SCONJ	<rel>|ADV|@ADVL>	_	4	mark	_	_
 2	ali	ali	ADV	ADV|@ADVL>	_	4	advmod	_	_
 3	é	ser	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
 4	afirmado	afirmar	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	advcl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -72,7 +71,7 @@
 33	sociedade	sociedade	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	MWE=sociedade_civil|MWEPOS=NOUN
 34	civil	civil	ADJ	_	Gender=Masc|Number=Sing	33	amod	_	SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	27	punct	_	_
-36	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	37	nsubj	_	_
+36	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	37	nsubj	_	_
 37	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	_	_
 38	igualmente	igualmente	ADV	<quant>|ADV|@<ADVL	_	37	advmod	_	_
 39	responsabilidades	responsabilidade	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	37	obj	_	_
@@ -91,11 +90,9 @@
 51	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Gomes Motta, respondendo às perguntas dos jornalistas, iria mais longe ao afirmar que os «partidos não esgotam a actividade cívica do país» e, afastando qualquer mal-estar que o congresso possa provocar nas hostes socialistas por eventualmente ofuscar alguns dos seus projectos, esclareceria ainda que esta iniciativa e as do PS «em certa medida completam-se».
-# source = CETEMPúblico n=476 sec=pol sem=94a
 # sent_id = CP476-3
+# source = CETEMPúblico n=476 sec=pol sem=94a
 # id = 2517
-# d2d = cc(iniciativa,e) -> cc(as,e)  #106
-# d2d = cc(iria,e) -> cc(esclareceria,e)  #106
 1	Gomes	Gomes	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue119|MWE=Gomes_Motta|MWEPOS=PROPN
 2	Motta	Motta	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -113,7 +110,7 @@
 13	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	14	advmod	_	_
 14	longe	longe	ADV	ADV|@<SA	_	12	advmod	_	_
 15-16	ao	_	_	_	_	_	_	_	_
-15	a	a	ADP	<sam->|PRP|@<ADVL	_	17	mark	_	_
+15	a	a	SCONJ	<sam->|PRP|@<ADVL	_	17	mark	_	_
 16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	afirmar	afirmar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	advcl	_	_
 18	que	que	SCONJ	KS|@SUB	_	23	mark	_	_
@@ -138,14 +135,14 @@
 36	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	40	obj	_	_
 37	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_
 38	congresso	congresso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	40	nsubj	_	_
-39	possa	poder	AUX	<aux>|V|PR|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	aux	_	_
-40	provocar	provocar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	35	acl:relcl	_	_
+39	possa	poder	VERB	<aux>|V|PR|3S|SUBJ|@FS-N<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	acl:relcl	_	_
+40	provocar	provocar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	39	xcomp	_	_
 41-42	nas	_	_	_	_	_	_	_	_
 41	em	em	ADP	<sam->|PRP|@<ADVL	_	43	case	_	_
 42	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	43	det	_	_
 43	hostes	hoste	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	40	obl	_	ChangedBy=Issue137
 44	socialistas	socialista	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	43	amod	_	_
-45	por	por	ADP	PRP|@<ADVL	_	47	mark	_	_
+45	por	por	SCONJ	PRP|@<ADVL	_	47	mark	_	_
 46	eventualmente	eventualmente	ADV	ADV|@ADVL>	_	47	advmod	_	_
 47	ofuscar	ofuscar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	40	advcl	_	_
 48	alguns	algum	PRON	<quant>|DET|M|P|@<ACC	Gender=Masc|Number=Plur|PronType=Ind	47	obj	_	_
@@ -177,8 +174,8 @@
 71	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Este manifesto será publicado na íntegra nos jornais, sendo acompanhado por uma ficha de inscrição para participar nos trabalhos do congresso que decorrerão no pavilhão da FIL, de 8 a 10 de Maio próximo.
-# source = CETEMPúblico n=476 sec=pol sem=94a
 # sent_id = CP476-4
+# source = CETEMPúblico n=476 sec=pol sem=94a
 # id = 2518
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	manifesto	manifesto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
@@ -200,7 +197,7 @@
 16	ficha	ficha	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl:agent	_	_
 17	de	de	ADP	PRP|@N<	_	18	case	_	_
 18	inscrição	inscrição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
-19	para	para	ADP	PRP|@N<	_	20	mark	_	_
+19	para	para	SCONJ	PRP|@N<	_	20	mark	_	_
 20	participar	participar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	acl	_	_
 21-22	nos	_	_	_	_	_	_	_	_
 21	em	em	ADP	<sam->|PRP|@<PIV	_	23	case	_	_
@@ -231,10 +228,9 @@
 43	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Até lá, serão organizadas sessões em várias cidades publicitando a iniciativa e recolhendo sugestões sobre a incorporação de temas regionais.
-# source = CETEMPúblico n=476 sec=pol sem=94a
 # sent_id = CP476-5
+# source = CETEMPúblico n=476 sec=pol sem=94a
 # id = 2519
-# d2d = cc(publicitando,e) -> cc(recolhendo,e)  #106
 1	Até	até	ADP	PRP|@ADVL>	_	2	case	_	_
 2	lá	lá	ADV	ADV|@P<	_	5	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -259,14 +255,9 @@
 22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = No esquema apresentado, são seis os painéis em debate, que abrangem temas que vão desde a cultura, o ensino e a estruturas económicas até ao Estado democrático, solidariedade e o papel de Portugal na Europa e no mundo.
-# source = CETEMPúblico n=476 sec=pol sem=94a
 # sent_id = CP476-6
+# source = CETEMPúblico n=476 sec=pol sem=94a
 # id = 2520
-# d2d = cc(Europa,e) -> cc(mundo,e)  #106
-# d2d = punct(Estado,,) -> punct(solidariedade,,)  #106
-# d2d = cc(Estado,e) -> cc(papel,e)  #106
-# d2d = punct(cultura,,) -> punct(ensino,,)  #106
-# d2d = cc(cultura,e) -> cc(estruturas,e)  #106
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -278,7 +269,7 @@
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	painéis	painel	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	7	nsubj	_	_
 10	em	em	ADP	PRP|@N<	_	11	case	_	MWE=em_debate
-11	debate	debate	NOUN	N|@P<	_	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+11	debate	debate	NOUN	N|@P<	Gender=Masc|Number=Sing	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 13	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	14	nsubj	_	_
 14	abrangem	abranger	VERB	<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_

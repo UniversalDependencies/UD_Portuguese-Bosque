@@ -1,17 +1,16 @@
 # text = «Nenhum eleitor evangélico deve se sentir culpado por ter opinião diferente de seu pastor ou líder espiritual», diz a cartilha.
-# source = CETENFolha n=173 cad=Brasil sec=pol sem=94b
 # sent_id = CF173-1
+# source = CETENFolha n=173 cad=Brasil sec=pol sem=94b
 # id = 730
-# d2d = cc(pastor,ou) -> cc(líder,ou)  #106
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Nenhum	nenhum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Neg	3	det	_	_
 3	eleitor	eleitor	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 4	evangélico	evangélico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
-5	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+5	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	parataxis	_	_
 6	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl	_	ChangedBy=Issue135
-7	sentir	sentir	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	21	parataxis	_	_
+7	sentir	sentir	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	_
 8	culpado	culpar	VERB	<mv>|V|PCP|M|S|@ICL-<OC	Gender=Masc|Number=Sing|VerbForm=Part	7	xcomp	_	_
-9	por	por	ADP	PRP|@<PIV	_	10	mark	_	_
+9	por	por	SCONJ	PRP|@<PIV	_	10	mark	_	_
 10	ter	ter	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	xcomp	_	_
 11	opinião	opinião	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
 12	diferente	diferente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	11	amod	_	_
@@ -29,8 +28,8 @@
 24	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = O texto defende o voto para a Presidência baseado em programas de governo.
-# source = CETENFolha n=173 cad=Brasil sec=pol sem=94b
 # sent_id = CF173-2
+# source = CETENFolha n=173 cad=Brasil sec=pol sem=94b
 # id = 731
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	texto	texto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -48,8 +47,8 @@
 14	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = E condena a disseminação de boatos, como os que atingiram Luiz Inácio Lula da Silva na eleição de 89.
-# source = CETENFolha n=173 cad=Brasil sec=pol sem=94b
 # sent_id = CF173-3
+# source = CETENFolha n=173 cad=Brasil sec=pol sem=94b
 # id = 732
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	condena	condenar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -62,13 +61,13 @@
 9	os	o	PRON	<first-cjt>|<dem>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Dem	6	nmod	_	_
 10	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	11	nsubj	_	_
 11	atingiram	atingir	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	9	acl:relcl	_	_
-12	Luiz	Luiz	PROPN	_	Gender=Masc|Number=Sing	11	obj	_	ChangedBy=Issue119|MWE=Luiz_Inácio_Lula|MWEPOS=PROPN
+12	Luiz	Luiz	PROPN	_	Gender=Masc|Number=Sing	11	obj	_	ChangedBy=Issue119|MWE=Luiz_Inácio_Lula_da_Silva|MWEPOS=PROPN
 13	Inácio	Inácio	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	Lula	Lula	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 15-16	da	_	_	_	_	_	_	_	_
-15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
-16	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	Silva	Silva	PROPN	PROP|@P<	Number=Sing	12	nmod	_	_
+15	de	de	ADP	<sam->|PRP|@N<	_	12	flat:name	_	_
+16	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	flat:name	_	_
+17	Silva	Silva	PROPN	PROP|@P<	Number=Sing	12	flat:name	_	_
 18-19	na	_	_	_	_	_	_	_	_
 18	em	em	ADP	<sam->|PRP|@<ADVL	_	20	case	_	_
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_

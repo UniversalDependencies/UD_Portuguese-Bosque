@@ -1,20 +1,19 @@
 # text = Escolas dão orientação vocacional a preço baixo
-# source = CETENFolha n=483 cad=Empregos sec=eco sem=94a
 # sent_id = CF483-1
+# source = CETENFolha n=483 cad=Empregos sec=eco sem=94a
 # id = 2037
 1	Escolas	escola	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	2	nsubj	_	_
 2	dão	dar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	orientação	orientação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 4	vocacional	vocacional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	3	amod	_	_
 5	a	a	ADP	PRP|@<PIV	_	6	case	_	_
-6	preço	preço	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	iobj	_	_
+6	preço	preço	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
 7	baixo	baixo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
 
 # text = Quem ainda não escolheu sua carreira ou sonha dar uma guinada na vida profissional pode recorrer aos serviços de orientação vocacional oferecidos por algumas instituições em São Paulo.
-# source = CETENFolha n=483 cad=Empregos sec=eco sem=94a
 # sent_id = CF483-3
+# source = CETENFolha n=483 cad=Empregos sec=eco sem=94a
 # id = 2038
-# d2d = cc(escolheu,ou) -> cc(sonha,ou)  #106
 1	Quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	4	nsubj	_	_
 2	ainda	ainda	ADV	ADV|@>A	_	3	advmod	_	_
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
@@ -31,8 +30,8 @@
 13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	vida	vida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	_
 15	profissional	profissional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	14	amod	_	_
-16	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-17	recorrer	recorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+16	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+17	recorrer	recorrer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
 18-19	aos	_	_	_	_	_	_	_	_
 18	a	a	ADP	<sam->|PRP|@<PIV	_	20	case	_	_
 19	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
@@ -50,11 +49,9 @@
 31	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Geralmente procurados por estudantes adolescentes, esses serviços são abertos a qualquer interessado e têm a vantagem de ser gratuitos ou cobrar preços baixos se comparados aos de empresas de consultoria.
-# source = CETENFolha n=483 cad=Empregos sec=eco sem=94a
 # sent_id = CF483-4
+# source = CETENFolha n=483 cad=Empregos sec=eco sem=94a
 # id = 2039
-# d2d = cc(gratuitos,ou) -> cc(cobrar,ou)  #106
-# d2d = cc(abertos,e) -> cc(têm,e)  #106
 1	Geralmente	geralmente	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	procurados	procurar	VERB	<mv>|V|PCP|M|P|@ICL-PRED>	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	8	acl	_	_
 3	por	por	ADP	<cjt>|PRP|@PASS	_	4	case	_	_
@@ -72,7 +69,7 @@
 15	têm	ter	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	vantagem	vantagem	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	15	obj	_	_
-18	de	de	ADP	PRP|@N<	_	20	mark	_	_
+18	de	de	SCONJ	PRP|@N<	_	20	mark	_	_
 19	ser	ser	AUX	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	cop	_	ChangedBy=Issue167
 20	gratuitos	gratuito	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	17	amod	_	_
 21	ou	ou	CCONJ	<co-icl>|<co-prparg>|KC|@CO	_	22	cc	_	d2d:#106

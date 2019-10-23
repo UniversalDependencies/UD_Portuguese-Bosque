@@ -1,12 +1,7 @@
 # text = P.S. -- «PROJECTO DE DIPLOMA» e «Portaria» vêm em maiúsculas no texto, mas «escola» vem em minúsculas!
-# source = CETEMPúblico n=291 sec=opi sem=98a
 # sent_id = CP291-1
+# source = CETEMPúblico n=291 sec=opi sem=98a
 # id = 1551
-# d2d = cc(P.S.,mas) -> cc(vem,mas)  #106
-# d2d = punct(P.S.,,) -> punct(vem,,)  #106
-# d2d = punct(P.S.,--) -> punct(vêm,--)  #106
-# d2d = punct(PROJECTO,») -> punct(Portaria,»)  #106
-# d2d = cc(PROJECTO,e) -> cc(Portaria,e)  #106
 1	P.S.	p.s.	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	_
 2	--	--	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 3	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -36,14 +31,14 @@
 26	!	!	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = A «ESCOLA de Excelência» escreve-se em maiúsculas.
-# source = CETEMPúblico n=291 sec=opi sem=98a
 # sent_id = CP291-2
+# source = CETEMPúblico n=291 sec=opi sem=98a
 # id = 1552
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	ESCOLA	escola	NOUN	<prop>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	MWE=ESCOLA_de_Excelência
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
-5	Excelência	excelência	NOUN	N|@P<	_	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+5	Excelência	excelência	NOUN	N|@P<	Gender=Fem|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 6	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 7-8	escreve-se	_	_	_	_	_	_	_	_
 7	escreve	escrever	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -53,16 +48,16 @@
 11	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O vosso subconsciente anda a trair-vos!
-# source = CETEMPúblico n=291 sec=opi sem=98a
 # sent_id = CP291-3
+# source = CETEMPúblico n=291 sec=opi sem=98a
 # id = 1553
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	vosso	vosso	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	3	det	_	_
 3	subconsciente	subconsciente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
-4	anda	andar	AUX	<aux>|V|PR|3S|IND|@FS-EXC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
+4	anda	andar	VERB	<aux>|V|PR|3S|IND|@FS-EXC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=anda_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
 6-7	trair-vos	_	_	_	_	_	_	_	SpaceAfter=No
-6	trair	trair	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+6	trair	trair	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	vos	vós	PRON	<refl>|PERS|M/F|2P|ACC|@<ACC	Case=Acc|Gender=Unsp|Number=Plur|Person=2|PronType=Prs	6	obj	_	_
 8	!	!	PUNCT	PU|@PU	_	6	punct	_	_
 

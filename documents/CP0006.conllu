@@ -1,9 +1,9 @@
 # text = A pouco mais de um mês do lançamento nacional do Rendimento Mínimo Garantido (RMG), o número de famílias já abrangidas pelos projectos-piloto deste programa de apoio aos agregados mais desfavorecidos não pára de aumentar.
-# source = CETEMPúblico n=6 sec=soc sem=97a
 # sent_id = CP6-1
+# source = CETEMPúblico n=6 sec=soc sem=97a
 # id = 33
 1	A	a	ADP	PRP|@ADVL>	_	6	case	_	_
-2	pouco	pouco	ADV	<quant>|DET|@>A	PronType=Ind	3	advmod	_	_
+2	pouco	pouco	ADV	<quant>|DET|@>A	_	3	advmod	_	_
 3	mais	mais	ADV	ADV|@>A	_	5	advmod	_	MWE=mais_de
 4	de	de	ADP	<prp>|PRP|@A<	_	3	fixed	_	_
 5	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
@@ -44,16 +44,16 @@
 35	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	_	_
 36	agregados	agregado	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	33	nmod	_	_
 37	mais	mais	ADV	<quant>|ADV|@>A	_	38	advmod	_	_
-38	desfavorecidos	desfavorecido	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	36	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+38	desfavorecidos	desfavorecer	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	36	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 39	não	não	ADV	_	Polarity=Neg	42	advmod	_	_
-40	pára	parar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	42	aux	_	_
-41	de	de	ADP	PRP|@PRT-AUX<	_	42	case	_	_
-42	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+40	pára	parar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=pára_de|MWEPOS=AUX
+41	de	de	SCONJ	PRP|@PRT-AUX<	_	42	mark	_	_
+42	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	40	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 43	.	.	PUNCT	PU|@PU	_	42	punct	_	_
 
 # text = O último diagnóstico elaborado pela Comissão Nacional do RMG não deixa dúvidas:
-# source = CETEMPúblico n=6 sec=soc sem=97a
 # sent_id = CP6-2
+# source = CETEMPúblico n=6 sec=soc sem=97a
 # id = 34
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	último	último	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	3	amod	_	ChangedBy=Issue172
@@ -74,10 +74,9 @@
 15	:	:	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = 7.777 famílias, totalizando 26.668 pessoas, estão já a usufruir do rendimento destinado a garantir condições consideradas mínimas de sobrevivência e reinserção de cidadãos excluídos socialmente.
-# source = CETEMPúblico n=6 sec=soc sem=97a
 # sent_id = CP6-3
+# source = CETEMPúblico n=6 sec=soc sem=97a
 # id = 35
-# d2d = cc(sobrevivência,e) -> cc(reinserção,e)  #106
 1	7.777	7.777	NUM	<card>|NUM|F|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	famílias	família	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	11	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -85,20 +84,20 @@
 5	26.668	26.668	NUM	<card>|NUM|F|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
 6	pessoas	pessoa	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-8	estão	estar	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+8	estão	estar	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=estão_a|MWEPOS=AUX
 9	já	já	ADV	ADV|@ADVL>	_	11	advmod	_	_
-10	a	a	ADP	PRP|@PRT-AUX<	_	11	case	_	_
-11	usufruir	usufruir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+10	a	a	SCONJ	PRP|@PRT-AUX<	_	11	mark	_	_
+11	usufruir	usufruir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
 12-13	do	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@<PIV	_	14	case	_	_
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	rendimento	rendimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obj	_	_
 15	destinado	destinar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	14	acl	_	_
-16	a	a	ADP	PRP|@<PIV	_	17	mark	_	_
+16	a	a	SCONJ	PRP|@<PIV	_	17	mark	_	_
 17	garantir	garantir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	15	xcomp	_	_
 18	condições	condição	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	17	obj	_	_
 19	consideradas	considerar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	18	acl	_	_
-20	mínimas	pequeno	NOUN	<n>|ADJ|@<OC	_	19	xcomp	_	_
+20	mínimas	pequeno	NOUN	<n>|ADJ|@<OC	Gender=Fem|Number=Plur	19	xcomp	_	_
 21	de	de	ADP	PRP|@N<	_	22	case	_	_
 22	sobrevivência	sobrevivência	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
 23	e	e	CCONJ	<co-prparg>|KC|@CO	_	24	cc	_	d2d:#106
@@ -110,8 +109,8 @@
 29	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = O balanço -- a que o PÚBLICO teve acesso -- traçado pela comissão revela que o número de pessoas abrangidas pelo RMG aumentou 36 por cento relativamente ao último balanço de 30 de Março.
-# source = CETEMPúblico n=6 sec=soc sem=97a
 # sent_id = CP6-4
+# source = CETEMPúblico n=6 sec=soc sem=97a
 # id = 36
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	balanço	balanço	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
@@ -141,7 +140,7 @@
 24	RMG	RMG	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	21	obl:agent	_	_
 25	aumentou	aumentar	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	ccomp	_	_
 26	36	36	NUM	<card>|NUM|M|P|@>N	NumType=Card	27	nummod	_	ChangedBy=Issue168
-27	por	por	ADP	_	Gender=Masc|Number=Sing	25	obl	_	MWE=por_cento|MWEPOS=NOUN
+27	por	por	ADP	_	_	25	obl	_	MWE=por_cento|MWEPOS=NOUN
 28	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	27	compound	_	_
 29	relativamente	relativamente	ADV	ADV|@<ADVL	_	25	advmod	_	_
 30-31	ao	_	_	_	_	_	_	_	_
@@ -156,8 +155,8 @@
 38	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = Este crescimento «resulta da opção de alargar o número de projectos-piloto, de modo a cobrir uma parte do território nacional até ao dia 1 de Julho», referiu ao PÚBLICO o presidente da Comissão Nacional do RMG, Paulo Pedroso.
-# source = CETEMPúblico n=6 sec=soc sem=97a
 # sent_id = CP6-5
+# source = CETEMPúblico n=6 sec=soc sem=97a
 # id = 37
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	crescimento	crescimento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
@@ -167,7 +166,7 @@
 5	de	de	ADP	<sam->|PRP|@<PIV	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	7	det	_	_
 7	opção	opção	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	obj	_	_
-8	de	de	ADP	PRP|@N<ARG	_	9	mark	_	_
+8	de	de	SCONJ	PRP|@N<ARG	_	9	mark	_	_
 9	alargar	alargar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	acl	_	_
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	número	número	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	9	obj	_	_
@@ -175,8 +174,8 @@
 13	projectos-piloto	projectos-piloto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 15	de	de	ADP	PRP|@<ADVL	_	16	case	_	MWE=de_modo_a
-16	modo	modo	NOUN	N|@P<	_	9	obl	_	_
-17	a	a	ADP	PRP|@N<	_	18	mark	_	_
+16	modo	modo	NOUN	N|@P<	Gender=Masc|Number=Sing	9	obl	_	_
+17	a	a	SCONJ	PRP|@N<	_	18	mark	_	_
 18	cobrir	cobrir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	acl	_	_
 19	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	parte	parte	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	18	obj	_	_
@@ -205,24 +204,21 @@
 40-41	da	_	_	_	_	_	_	_	_
 40	de	de	ADP	<sam->|PRP|@N<	_	42	case	_	_
 41	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
-42	Comissão	comissão	NOUN	N|@P<	_	39	nmod	_	_
-43	Nacional	nacional	ADJ	ADJ|@N<	_	42	amod	_	_
+42	Comissão	comissão	NOUN	N|@P<	Gender=Fem|Number=Sing	39	nmod	_	_
+43	Nacional	nacional	ADJ	ADJ|@N<	Gender=Fem|Number=Sing	42	amod	_	_
 44-45	do	_	_	_	_	_	_	_	_
 44	de	de	ADP	<sam->|PRP|@N<	_	46	case	_	_
 45	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	46	det	_	_
-46	RMG	rmg	NOUN	N|@P<	_	42	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+46	RMG	rmg	NOUN	N|@P<	Gender=Masc|Number=Sing	42	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 47	,	,	PUNCT	PU|@PU	_	48	punct	_	_
 48	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	39	appos	_	ChangedBy=Issue119|MWE=Paulo_Pedroso|MWEPOS=PROPN
 49	Pedroso	Pedroso	PROPN	_	Number=Sing	48	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 50	.	.	PUNCT	PU|@PU	_	34	punct	_	_
 
 # text = Para tal, referiu aquele responsável, «foram montadas mais estruturas, mais zonas estão abrangidas e, por isso, mais pessoas se podem candidatar».
-# source = CETEMPúblico n=6 sec=soc sem=97a
 # sent_id = CP6-6
+# source = CETEMPúblico n=6 sec=soc sem=97a
 # id = 38
-# d2d = punct(montadas,,) -> punct(candidatar,,)  #106
-# d2d = punct(montadas,,) -> punct(candidatar,,)  #106
-# d2d = cc(montadas,e) -> cc(candidatar,e)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	tal	tal	PRON	<diff>|DET|M/F|S|@P<	Gender=Unsp|Number=Sing|PronType=Ind	10	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -233,29 +229,29 @@
 8	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 9	foram	ir	AUX	<first-cjt>|<aux>|V|PS|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
 10	montadas	montar	VERB	<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part	4	ccomp	_	_
-11	mais	muito	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	12	det	_	_
+11	mais	mais	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	12	det	_	_
 12	estruturas	estrutura	NOUN	<np-idf>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	10	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
-13	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
-14	mais	muito	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	15	det	_	_
+13	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+14	mais	mais	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	15	det	_	_
 15	zonas	zona	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	17	nsubj	_	_
 16	estão	estar	AUX	<cjt>|<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	ChangedBy=Issue167
-17	abrangidas	abrangido	ADJ	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur	10	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+17	abrangidas	abrangido	ADJ	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur	10	conj	_	ChangedBy=Issue141|ChangedBy=Issue91
 18	e	e	CCONJ	<co-fcl>|<co-sc>|KC|@CO	_	27	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-19	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+19	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 20	por	por	ADP	PRP|@ADVL>	_	21	case	_	_
 21	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	27	obl	_	ChangedBy=Issue165|SpaceAfter=No
-22	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-23	mais	muito	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	24	det	_	_
+22	,	,	PUNCT	PU|@PU	_	20	punct	_	_
+23	mais	mais	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	24	det	_	_
 24	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	27	nsubj	_	_
 25	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	27	expl	_	ChangedBy=Issue135
-26	podem	poder	AUX	<cjt>|<aux>|<se-passive>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	27	aux	_	_
-27	candidatar	candidatar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	conj	_	ChangedBy=Issue165|SpaceAfter=No
+26	podem	poder	VERB	<cjt>|<aux>|<se-passive>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	conj	_	_
+27	candidatar	candidatar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	26	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 28	»	»	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 29	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = E tantos foram os candidatos que o período destinado a testar a aplicação do RMG acabaria por ceder lugar a um processo efectivo de financiamento.
-# source = CETEMPúblico n=6 sec=soc sem=97a
 # sent_id = CP6-7
+# source = CETEMPúblico n=6 sec=soc sem=97a
 # id = 39
 1	E	e	CCONJ	KC|@CO	_	3	cc	_	_
 2	tantos	tanto	PRON	<quant>|DET|M|P|@SC>	Gender=Masc|Number=Plur|PronType=Ind	3	xcomp	_	_
@@ -266,7 +262,7 @@
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	período	período	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	19	nsubj	_	_
 9	destinado	destinar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	8	acl	_	_
-10	a	a	ADP	PRP|@<PIV	_	11	mark	_	_
+10	a	a	SCONJ	PRP|@<PIV	_	11	mark	_	_
 11	testar	testar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	xcomp	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	aplicação	aplicação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	obj	_	_
@@ -274,9 +270,9 @@
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	RMG	RMG	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
-17	acabaria	acabar	AUX	<aux>|V|COND|3S|@FS-KOMP<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	19	aux	_	_
-18	por	por	ADP	PRP|@PRT-AUX<	_	19	case	_	_
-19	ceder	ceder	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	ccomp	_	_
+17	acabaria	acabar	VERB	<aux>|V|COND|3S|@FS-KOMP<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	ccomp	_	MWE=acabaria_por|MWEPOS=AUX
+18	por	por	SCONJ	PRP|@PRT-AUX<	_	19	mark	_	_
+19	ceder	ceder	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	17	xcomp	_	_
 20	lugar	lugar	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	19	obj	_	_
 21	a	a	ADP	PRP|@<ADVL	_	23	case	_	_
 22	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
@@ -287,8 +283,8 @@
 27	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A instituição deste direito só será, contudo, efectivado depois do lançamento nacional do projecto dentro de pouco mais de um mês.
-# source = CETEMPúblico n=6 sec=soc sem=97a
 # sent_id = CP6-8
+# source = CETEMPúblico n=6 sec=soc sem=97a
 # id = 40
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	instituição	instituição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
@@ -299,7 +295,7 @@
 6	só	só	ADV	ADV|@ADVL>	_	11	advmod	_	_
 7	será	ser	AUX	<aux>|V|INF|FUT|3S|IND|@FS-ICL-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	aux	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
-9	contudo	contudo	ADV	<kc>|ADV|@ADVL>	_	11	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+9	contudo	contudo	CCONJ	<kc>|ADV|@ADVL>	_	11	cc	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 11	efectivado	efectivar	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
 12	depois	depois	ADV	ADV|@<ADVL	_	11	advmod	_	_
@@ -314,7 +310,7 @@
 19	projecto	projecto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
 20	dentro	dentro	ADV	ADV|@<ADVL	_	11	advmod	_	MWE=dentro_de
 21	de	de	ADP	PRP|@A<	_	26	case	_	_
-22	pouco	pouco	ADV	<quant>|DET|M|S|@>A	Gender=Masc|Number=Sing|PronType=Ind	23	advmod	_	_
+22	pouco	pouco	ADV	<quant>|DET|M|S|@>A	_	23	advmod	_	_
 23	mais	mais	ADV	ADV|@>A	_	25	advmod	_	MWE=mais_de
 24	de	de	ADP	<prp>|PRP|@A<	_	23	fixed	_	_
 25	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	26	nummod	_	ChangedBy=Issue168

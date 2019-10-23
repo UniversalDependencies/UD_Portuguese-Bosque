@@ -1,16 +1,7 @@
 # text = As bases de dados piratas existentes em Portugal dedicam-se à afixação e difusão de cópias ilegais de programas sujeitos a protecção, de resultados de experiências de penetração em sistemas informáticos, de informação acerca de protecções, de «portas de acesso» e de «passwords» de entrada nas redes Telenet, Telepac, Itapac e, em alguns casos, números de cartões de crédito.
-# source = CETEMPúblico n=377 sec=soc sem=93b
 # sent_id = CP377-1
+# source = CETEMPúblico n=377 sec=soc sem=93b
 # id = 1967
-# d2d = cc(cópias,e) -> cc(passwords,e)  #106
-# d2d = punct(cópias,,) -> punct(portas,,)  #106
-# d2d = punct(cópias,,) -> punct(números,,)  #106
-# d2d = cc(afixação,e) -> cc(difusão,e)  #106
-# d2d = punct(cópias,,) -> punct(resultados,,)  #106
-# d2d = punct(cópias,,) -> punct(informação,,)  #106
-# d2d = cc(cópias,e) -> cc(números,e)  #106
-# d2d = punct(cópias,,) -> punct(números,,)  #106
-# d2d = punct(cópias,,) -> punct(números,,)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	bases	base	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	9	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -34,7 +25,7 @@
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	programas	programa	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	17	nmod	_	_
 21	sujeitos	sujeitar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	20	acl	_	_
-22	a	o	PRON	<artd>|DET|F|S|@<PIV	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	dep	_	_
+22	a	o	ADP	<artd>|DET|F|S|@<PIV	_	23	case	_	_
 23	protecção	protecção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 25	de	de	ADP	<cjt>|PRP|@N<	_	26	case	_	_
@@ -49,9 +40,9 @@
 34	,	,	PUNCT	PU|@PU	_	36	punct	_	d2d:#106
 35	de	de	ADP	<cjt>|PRP|@N<	_	36	case	_	_
 36	informação	informação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	conj	_	_
-37	acerca	acerca	ADV	ADV|@N<	_	36	advmod	_	MWE=acerca_de
-38	de	de	ADP	PRP|@A<	_	39	case	_	_
-39	protecções	protecção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	37	obl	_	ChangedBy=Issue165|SpaceAfter=No
+37	acerca	acerca	ADV	ADV|@N<	_	39	case	_	MWE=acerca_de|MWEPOS=ADP
+38	de	de	ADP	PRP|@A<	_	37	fixed	_	_
+39	protecções	protecção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 40	,	,	PUNCT	PU|@PU	_	43	punct	_	d2d:#106
 41	de	de	ADP	<cjt>|PRP|@N<	_	43	case	_	_
 42	«	«	PUNCT	PU|@PU	_	43	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -71,12 +62,12 @@
 55	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	56	det	_	_
 56	redes	rede	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	53	nmod	_	_
 57	Telenet	Telenet	PROPN	<first-cjt>|PROP|F|S|@N<	Gender=Fem|Number=Sing	56	appos	_	ChangedBy=Issue165|SpaceAfter=No
-58	,	,	PUNCT	PU|@PU	_	68	punct	_	d2d:#106
+58	,	,	PUNCT	PU|@PU	_	59	punct	_	d2d:#106
 59	Telepac	Telepac	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	57	conj	_	ChangedBy=Issue165|SpaceAfter=No
-60	,	,	PUNCT	PU|@PU	_	68	punct	_	d2d:#106
+60	,	,	PUNCT	PU|@PU	_	62	punct	_	d2d:#106
 61	Itapac	Itapac	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	57	conj	_	_
 62	e	e	CCONJ	<co-postnom>|KC|@CO	_	68	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-63	,	,	PUNCT	PU|@PU	_	68	punct	_	d2d:#106
+63	,	,	PUNCT	PU|@PU	_	62	punct	_	d2d:#106
 64	em	em	ADP	PRP|@>N	_	66	case	_	_
 65	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	66	det	_	_
 66	casos	caso	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	68	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -89,11 +80,9 @@
 73	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Algumas das chamadas «portas de entrada» vendidas eram da Lusa, do Laboratório Nacional de Engenharia Civil (LNEC) e da empresa Aeroportos e Navegação Aérea (ANA).
-# source = CETEMPúblico n=377 sec=soc sem=93b
 # sent_id = CP377-2
+# source = CETEMPúblico n=377 sec=soc sem=93b
 # id = 1968
-# d2d = punct(Lusa,,) -> punct(Laboratório,,)  #106
-# d2d = cc(Lusa,e) -> cc(empresa,e)  #106
 1	Algumas	algum	PRON	<quant>|DET|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Ind	14	nsubj	_	_
 2-3	das	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	6	case	_	_
@@ -128,7 +117,7 @@
 28	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
 29	empresa	empresa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	conj	_	_
 30	Aeroportos	Aeroportos	PROPN	_	Gender=Fem|Number=Sing	29	appos	_	ChangedBy=Issue119|MWE=Aeroportos_e_Navegação_Aérea|MWEPOS=PROPN
-31	e	e	CCONJ	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
+31	e	e	CCONJ	_	_	30	flat:name	_	ChangedBy=Issue119
 32	Navegação	Navegação	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 33	Aérea	Aérea	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 34	(	(	PUNCT	PU|@PU	_	35	punct	_	ChangedBy=Issue165|SpaceAfter=No

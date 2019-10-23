@@ -1,14 +1,14 @@
 # text = Não me comprometa
-# source = CETENFolha n=667 cad=Brasil sec=pol sem=94b
 # sent_id = CF667-1
+# source = CETENFolha n=667 cad=Brasil sec=pol sem=94b
 # id = 2790
 1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 2	me	eu	PRON	<refl>|PERS|M/F|1S|ACC|@ACC>	Case=Acc|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
 3	comprometa	comprometer	VERB	<mv>|V|PR|1S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 
 # text = Deputados ligados a ACM diziam ontem, em conversas com colegas, que Benito Gama (PFL-BA) foi vetado para ser vice de FHC porque o grupo avalia que são cada vez mais reduzidas as chances de vitória do tucano.
-# source = CETENFolha n=667 cad=Brasil sec=pol sem=94b
 # sent_id = CF667-2
+# source = CETENFolha n=667 cad=Brasil sec=pol sem=94b
 # id = 2791
 1	Deputados	deputado	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
 2	ligados	ligar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	1	acl	_	_
@@ -26,11 +26,11 @@
 14	Benito	Benito	PROPN	_	Gender=Masc|Number=Sing	20	nsubj:pass	_	ChangedBy=Issue119|MWE=Benito_Gama|MWEPOS=PROPN
 15	Gama	Gama	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	(	(	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
-17	PFL-BA	PFL-BA	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	14	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+17	PFL-BA	PFL-BA	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	14	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 18	)	)	PUNCT	PU|@PU	_	17	punct	_	_
 19	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	aux:pass	_	_
 20	vetado	vetar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	5	ccomp	_	_
-21	para	para	ADP	PRP|@<ADVL	_	23	mark	_	_
+21	para	para	SCONJ	PRP|@<ADVL	_	23	mark	_	_
 22	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	23	cop	_	ChangedBy=Issue167
 23	vice	vice	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	20	obl	_	ChangedBy=Issue137
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
@@ -41,10 +41,10 @@
 29	avalia	avaliar	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	advcl	_	_
 30	que	que	SCONJ	KS|@SUB	_	35	mark	_	_
 31	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	cop	_	ChangedBy=Issue167
-32	cada	cada	NOUN	N|M|S|@>A	Gender=Masc|Number=Sing	35	nmod	_	MWE=cada_vez_mais
-33	vez	vez	ADP	PRP|@N<	_	34	case	_	_
-34	mais	mais	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	_
-35	reduzidas	reduzir	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	29	dep	_	_
+32	cada	cada	NOUN	N|M|S|@>A	Gender=Masc|Number=Sing	35	det	_	MWE=cada_vez_mais
+33	vez	vez	ADP	PRP|@N<	_	32	fixed	_	_
+34	mais	mais	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	32	fixed	_	_
+35	reduzidas	reduzir	VERB	<mv>|V|PCP|F|P|@ICL-<SC	Gender=Fem|Number=Plur|VerbForm=Part	29	ccomp	_	_
 36	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_
 37	chances	chance	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	35	nsubj	_	_
 38	de	de	ADP	PRP|@N<	_	39	case	_	_
@@ -56,15 +56,15 @@
 43	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Reflexo financeiro
-# source = CETENFolha n=667 cad=Brasil sec=pol sem=94b
 # sent_id = CF667-3
+# source = CETENFolha n=667 cad=Brasil sec=pol sem=94b
 # id = 2792
 1	Reflexo	reflexo	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	financeiro	financeiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 
 # text = Ontem, vários operadores da Bovespa creditavam a queda do índice da bolsa à percepção do mercado financeiro de que o PFL leia-se ACM está desembarcando da candidatura de FHC.
-# source = CETENFolha n=667 cad=Brasil sec=pol sem=94b
 # sent_id = CF667-4
+# source = CETENFolha n=667 cad=Brasil sec=pol sem=94b
 # id = 2793
 1	Ontem	ontem	ADV	ADV|@ADVL>	_	8	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -94,7 +94,7 @@
 21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	mercado	mercado	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
 23	financeiro	financeiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	22	amod	_	_
-24	de	de	ADP	PRP|@N<ARG	_	32	mark	_	_
+24	de	de	SCONJ	PRP|@N<ARG	_	32	mark	_	_
 25	que	que	SCONJ	KS|@SUB	_	32	mark	_	_
 26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	PFL	PFL	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	32	nsubj	_	_

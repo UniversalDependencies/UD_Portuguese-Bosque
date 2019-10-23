@@ -1,15 +1,15 @@
 # text = Smidovitch, com um «fomos aonde planeámos ir», declinou confirmar, no entanto, se a fiscalização abrangera sedes de ministérios, quinta-feira vedadas categoricamente ao pessoal da ONU pelo regime de Bagdad.
-# source = CETEMPúblico n=744 sec=pol sem=92b
 # sent_id = CP744-1
+# source = CETEMPúblico n=744 sec=pol sem=92b
 # id = 3828
 1	Smidovitch	Smidovitch	PROPN	PROP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing	12	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-3	com	com	ADP	PRP|@PRED>	_	8	mark	_	_
+3	com	com	SCONJ	PRP|@PRED>	_	8	mark	_	_
 4	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
 5	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
-6	fomos	ser	VERB	<mv>|V|PS|1P|IND|@FS-P<	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	12	dep	_	_
+6	fomos	ser	VERB	<mv>|V|PS|1P|IND|@FS-P<	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	12	advcl	_	_
 7	aonde	aonde	ADV	<rel>|ADV|@ADVL>	_	9	advmod	_	_
-8	planeámos	planear	VERB	<mv>|V|PS|1P|IND|@FS-<SA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	6	dep	_	_
+8	planeámos	planear	VERB	<mv>|V|PS|1P|IND|@FS-<SA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	6	advcl	_	_
 9	ir	ir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	8	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 10	»	»	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	9	punct	_	_
@@ -17,9 +17,9 @@
 13	confirmar	confirmar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	12	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15-16	no	_	_	_	_	_	_	_	_
-15	em	em	ADP	<sam->|PRP|@N<	_	17	case	_	_
-16	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	ChangedBy=Issue165|SpaceAfter=No
+15	em	em	ADP	<sam->|PRP|@N<	_	12	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+16	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	fixed	_	_
+17	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	15	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 19	se	se	SCONJ	KS|@SUB	_	22	mark	_	_
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
@@ -49,10 +49,10 @@
 41	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Sobre se haviam encontrado algo suspeito também não adiantou pormenores.
-# source = CETEMPúblico n=744 sec=pol sem=92b
 # sent_id = CP744-2
+# source = CETEMPúblico n=744 sec=pol sem=92b
 # id = 3829
-1	Sobre	sobre	ADP	PRP|@N<ARG	_	4	mark	_	_
+1	Sobre	sobre	SCONJ	PRP|@N<ARG	_	4	mark	_	_
 2	se	se	SCONJ	KS|@SUB	_	4	mark	_	_
 3	haviam	haver	AUX	<aux>|V|IMPF|3P|IND|@FS-P<	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_
 4	encontrado	encontrar	VERB	<mv>|<mqpc-ind>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
@@ -65,11 +65,9 @@
 11	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = A missão de 22 peritos é a primeira a chegar à capital iraquiana desde que, também sem resultados, foi passada revista ao Ministério da Agricultura, a 28 e 29 do mês passado, missão que pôs termo a um impasse de três semanas entre o Governo de Saddam Hussein e a comissão da ONU.
-# source = CETEMPúblico n=744 sec=pol sem=92b
 # sent_id = CP744-3
+# source = CETEMPúblico n=744 sec=pol sem=92b
 # id = 3830
-# d2d = cc(28,e) -> cc(29,e)  #106
-# d2d = cc(Governo,e) -> cc(comissão,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	missão	missão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
@@ -78,14 +76,14 @@
 6	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	ChangedBy=Issue167
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	primeira	primeiro	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing|NumType=Ord	0	root	_	ChangedBy=Issue172
-9	a	a	ADP	PRP|@N<	_	10	mark	_	_
+9	a	a	SCONJ	PRP|@N<	_	10	mark	_	_
 10	chegar	chegar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
 11-12	à	_	_	_	_	_	_	_	_
 11	a	a	ADP	<sam->|PRP|@<SA	_	13	case	_	_
 12	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	capital	capital	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	_
 14	iraquiana	iraquiano	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	_
-15	desde	desde	ADP	PRP|@SUB	_	35	mark	_	MWE=desde_que
+15	desde	desde	SCONJ	PRP|@SUB	_	35	mark	_	MWE=desde_que
 16	que	que	SCONJ	KS|@P<	_	15	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 18	também	também	ADV	ADV|@>A	_	20	advmod	_	_
@@ -140,11 +138,9 @@
 63	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = As inspecções, recorde-se, começaram em Abril do ano passado, pouco depois do fim da Guerra do Golfo e resultaram dos acordos de cessar-fogo então assinados.
-# source = CETEMPúblico n=744 sec=pol sem=92b
 # sent_id = CP744-4
+# source = CETEMPúblico n=744 sec=pol sem=92b
 # id = 3831
-# d2d = cc(começaram,e) -> cc(resultaram,e)  #106
-# d2d = punct(começaram,,) -> punct(resultaram,,)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	inspecções	inspecção	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -184,6 +180,6 @@
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
 32	cessar-fogo	cessar-fogo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	30	nmod	_	_
 33	então	então	ADV	ADV|@ADVL>	_	34	advmod	_	_
-34	assinados	assinado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	32	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+34	assinados	assinar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	32	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 35	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

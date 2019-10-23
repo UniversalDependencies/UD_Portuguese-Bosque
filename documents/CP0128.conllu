@@ -1,6 +1,6 @@
 # text = Líderes da Bósnia respondem hoje ao novo plano de paz internacional
-# source = CETEMPúblico n=128 sec=pol sem=94b
 # sent_id = CP128-1
+# source = CETEMPúblico n=128 sec=pol sem=94b
 # id = 655
 1	Líderes	líder	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	5	nsubj	_	_
 2-3	da	_	_	_	_	_	_	_	_
@@ -19,18 +19,17 @@
 13	internacional	internacional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	_
 
 # text = A incógnita sérvia
-# source = CETEMPúblico n=128 sec=pol sem=94b
 # sent_id = CP128-2
+# source = CETEMPúblico n=128 sec=pol sem=94b
 # id = 656
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	incógnita	incógnita	NOUN	<np-def>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 3	sérvia	sérvio	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
 
 # text = Os parlamentos da federação croato-muçulmana e dos sérvios bósnios vão hoje pronunciar-se sobre o novo plano de paz internacional para a república.
-# source = CETEMPúblico n=128 sec=pol sem=94b
 # sent_id = CP128-3
+# source = CETEMPúblico n=128 sec=pol sem=94b
 # id = 657
-# d2d = cc(federação,e) -> cc(sérvios,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	parlamentos	parlamento	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	12	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -62,12 +61,9 @@
 26	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Os dirigentes croatas e muçulmanos já manifestaram o seu apoio ao novo projecto, mas os líderes sérvios da Bósnia continuam a manifestar profundas reservas face ao novo mapa territorial proposto pelas «grandes potências».
-# source = CETEMPúblico n=128 sec=pol sem=94b
 # sent_id = CP128-4
+# source = CETEMPúblico n=128 sec=pol sem=94b
 # id = 658
-# d2d = cc(manifestaram,mas) -> cc(manifestar,mas)  #106
-# d2d = cc(croatas,e) -> cc(muçulmanos,e)  #106
-# d2d = punct(manifestaram,,) -> punct(manifestar,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	dirigentes	dirigente	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
 3	croatas	croata	ADJ	<first-cjt>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
@@ -92,9 +88,9 @@
 20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	22	det	_	_
 22	Bósnia	Bósnia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
-23	continuam	continuar	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	aux	_	_
-24	a	a	ADP	PRP|@PRT-AUX<	_	25	case	_	_
-25	manifestar	manifestar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	conj	_	_
+23	continuam	continuar	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	MWE=continuam_a|MWEPOS=AUX
+24	a	a	SCONJ	PRP|@PRT-AUX<	_	25	mark	_	_
+25	manifestar	manifestar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	xcomp	_	_
 26	profundas	profundo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	27	amod	_	_
 27	reservas	reserva	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	25	obj	_	_
 28	face	face	ADV	ADV|@<ADVL	_	25	advmod	_	MWE=face_a

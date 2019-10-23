@@ -1,10 +1,7 @@
 # text = O impacto provocado pela jazzística trilha de «A Marca da Maldade», com temas influenciados por Stan Kenton e até por pianistas de bordel, chamou a atenção de Edwards, que em 1958 procurava um músico novo, talentoso e barato para compor o prefixo da telessérie «Peter Gunn».
-# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF161-1
+# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # id = 671
-# d2d = cc(novo,e) -> cc(barato,e)  #106
-# d2d = cc(Stan,e) -> cc(pianistas,e)  #106
-# d2d = punct(novo,,) -> punct(talentoso,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	impacto	impacto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	30	nsubj	_	_
 3	provocado	provocar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	acl	_	_
@@ -15,7 +12,7 @@
 7	trilha	trilha	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl:agent	_	_
 8	de	de	ADP	PRP|@N<	_	11	case	_	_
 9	«	«	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
-10	A	A	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	MWE=A_Marca
+10	A	A	PROPN	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	MWE=A_Marca
 11	Marca	Marca	PROPN	PROP|@N<	Number=Sing	7	appos	_	_
 12-13	da	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
@@ -53,7 +50,7 @@
 44	talentoso	talentoso	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	42	conj	_	_
 45	e	e	CCONJ	<co-postnom>|KC|@CO	_	46	cc	_	d2d:#106
 46	barato	barato	ADJ	<cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	42	conj	_	_
-47	para	para	ADP	PRP|@<ADVL	_	48	mark	_	_
+47	para	para	SCONJ	PRP|@<ADVL	_	48	mark	_	_
 48	compor	compor	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	39	advcl	_	_
 49	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_
 50	prefixo	prefixo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	48	obj	_	_
@@ -68,16 +65,14 @@
 58	.	.	PUNCT	PU|@PU	_	30	punct	_	_
 
 # text = O jovem (34 anos), talentoso e barato Mancini entrou rachando.
-# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF161-2
+# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # id = 672
-# d2d = cc(jovem,e) -> cc(barato,e)  #106
-# d2d = punct(jovem,,) -> punct(talentoso,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 2	jovem	jovem	NOUN	<n>|<first-cjt>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	11	amod	_	_
 3	(	(	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 4	34	34	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
-5	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@A<	Gender=Masc|Number=Plur	2	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+5	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@A<	Gender=Masc|Number=Plur	2	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 6	)	)	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
 8	talentoso	talentoso	ADJ	<cjt>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	2	conj	_	_
@@ -89,13 +84,13 @@
 14	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = A fanfarra que a seguir compôs para «Dizem que É Amor» (High Time) só não ficou também gravada na memória de todo mundo porque, daquela vez, Edwards nem sequer chutou na trave.
-# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF161-3
+# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # id = 673
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	fanfarra	fanfarra	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
 3	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	6	nsubj	_	_
-4	a	a	ADP	PRP|@ADVL>	_	5	mark	_	_
+4	a	a	SCONJ	PRP|@ADVL>	_	5	mark	_	_
 5	seguir	seguir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
 6	compôs	compor	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	acl:relcl	_	_
 7	para	para	ADP	PRP|@<ADVL	_	9	case	_	_
@@ -111,9 +106,9 @@
 17	)	)	PUNCT	PU|@PU	_	15	punct	_	_
 18	só	só	ADV	ADV|@ADVL>	_	22	advmod	_	_
 19	não	não	ADV	_	Polarity=Neg	22	advmod	_	_
-20	ficou	ficar	AUX	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	aux	_	_
+20	ficou	ficar	VERB	<first-cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 21	também	também	ADV	ADV|@>A	_	22	advmod	_	_
-22	gravada	gravar	VERB	<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+22	gravada	gravar	VERB	<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part	20	xcomp	_	_
 23-24	na	_	_	_	_	_	_	_	_
 23	em	em	ADP	<sam->|PRP|@<ADVL	_	25	case	_	_
 24	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
@@ -139,17 +134,15 @@
 42	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = Parceria
-# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF161-4
+# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # id = 674
 1	Parceria	parceria	NOUN	<com>|<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 
 # text = De todo modo, uma sólida e longa parceria se configurava, alternando comédias e dramas cuja qualidade cinematográfica variava infinitamente mais que as virtudes de suas trilhas sonoras.
-# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF161-5
+# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # id = 675
-# d2d = cc(sólida,e) -> cc(longa,e)  #106
-# d2d = cc(comédias,e) -> cc(dramas,e)  #106
 1	De	de	ADP	PRP|@ADVL>	_	3	case	_	_
 2	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Tot	3	det	_	_
 3	modo	modo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -182,14 +175,14 @@
 30	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Quando os dois acertavam juntos («Bonequinha de Luxo», «Vício Maldito», «A Pantera Cor-de-Rosa»), era uma festa para todos os sentidos.
-# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF161-6
+# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # id = 676
 1	Quando	quando	SCONJ	<rel>|ADV|@>N	_	4	mark	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	dois	dois	NUM	<card>|NUM|M|P|@AUX<	NumType=Card	4	nsubj	_	ChangedBy=Issue168
 4	acertavam	acertar	VERB	<mv>|<cjt>|V|IMPF|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	27	advcl	_	_
-5	juntos	junto	ADV	<mv>|<cjt>|V|PCP|M|P|@ICL-<PRED	Gender=Masc|Number=Plur	4	advmod	_	ChangedBy=Issue141|ChangedBy=Issue91
+5	juntos	junto	ADV	<mv>|<cjt>|V|PCP|M|P|@ICL-<PRED	_	4	advmod	_	ChangedBy=Issue141|ChangedBy=Issue91
 6	(	(	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 7	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 8	Bonequinha	Bonequinha	PROPN	<first-cjt>|PROP|M|S|@S<	Gender=Masc|Number=Sing	4	appos	_	MWE=Bonequinha_de_Luxo
@@ -219,8 +212,8 @@
 32	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 
 # text = E faturamento em dobro para o compositor, que não perdia uma chance de estourar no «hit parade» com uma canção.
-# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF161-7
+# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # id = 677
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	faturamento	faturamento	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
@@ -235,7 +228,7 @@
 11	perdia	perder	VERB	<mv>|V|IMPF|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	acl:relcl	_	_
 12	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	chance	chance	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	obj	_	_
-14	de	de	ADP	PRP|@N<ARG	_	15	mark	_	_
+14	de	de	SCONJ	PRP|@N<ARG	_	15	mark	_	_
 15	estourar	estourar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	acl	_	_
 16-17	no	_	_	_	_	_	_	_	_
 16	em	em	ADP	<sam->|PRP|@<ADVL	_	19	case	_	_
@@ -250,8 +243,8 @@
 25	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Por duas delas, «Moonriver» e «Days of Wine and Roses», ambas com letra de Johnny Mercer, ganhou o Oscar.
-# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # sent_id = CF161-8
+# source = CETENFolha n=161 cad=Ilustrada sec=nd sem=94b
 # id = 678
 1	Por	por	ADP	PRP|@ADVL>	_	2	case	_	_
 2	duas	dois	NUM	<card>|NUM|F|P|@P<	NumType=Card	25	obl	_	ChangedBy=Issue168

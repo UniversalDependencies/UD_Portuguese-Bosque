@@ -1,6 +1,6 @@
 # text = «O caso tem sido absolutamente devastador para a agência .. tanto em termos de público como internamente», disse um funcionário da Administração.
-# source = CETEMPúblico n=202 sec=pol sem=94b
 # sent_id = CP202-1
+# source = CETEMPúblico n=202 sec=pol sem=94b
 # id = 1080
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -15,7 +15,7 @@
 11	..	..	PUNCT	PU|@PU	_	7	punct	_	_
 12	tanto	tanto	ADV	<quant>|ADV|@CO	_	16	cc	_	_
 13	em	em	ADP	<first-cjt>|PRP|@<ADVL	_	14	case	_	MWE=em_termos_de
-14	termos	termos	NOUN	N|@P<	_	7	obl	_	_
+14	termos	termos	NOUN	N|@P<	Gender=Masc|Number=Plur	7	obl	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
 16	público	público	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
 17	como	como	ADV	<co-advl>|<prp>|<rel>|ADV|@CO	_	18	cc	_	_
@@ -32,19 +32,18 @@
 27	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = «Temos de o ultrapassar ...a fim de restaurar a confiança do Congresso e do público».
-# source = CETEMPúblico n=202 sec=pol sem=94b
 # sent_id = CP202-2
+# source = CETEMPúblico n=202 sec=pol sem=94b
 # id = 1081
-# d2d = cc(Congresso,e) -> cc(público,e)  #106
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Temos	ter	AUX	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	aux	_	_
-3	de	de	ADP	PRP|@PRT-AUX<	_	5	case	_	_
+2	Temos	ter	VERB	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	MWE=Temos_de|MWEPOS=AUX
+3	de	de	SCONJ	PRP|@PRT-AUX<	_	5	mark	_	_
 4	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
-5	ultrapassar	ultrapassar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+5	ultrapassar	ultrapassar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	_
 6	...	...	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 7	a	a	ADP	PRP|@<ADVL	_	8	case	_	_
 8	fim	fim	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
-9	de	de	ADP	PRP|@N<	_	10	mark	_	_
+9	de	de	SCONJ	PRP|@N<	_	10	mark	_	_
 10	restaurar	restaurar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	confiança	confiança	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
@@ -61,8 +60,8 @@
 21	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O presidente cessante da comissão senatorial de serviços secretos, Dennis DeConcini, democrata do Arizona, afirmou:
-# source = CETEMPúblico n=202 sec=pol sem=94b
 # sent_id = CP202-3
+# source = CETEMPúblico n=202 sec=pol sem=94b
 # id = 1082
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
@@ -89,23 +88,23 @@
 21	:	:	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = «Creio que era tempo de Woolsey sair».
-# source = CETEMPúblico n=202 sec=pol sem=94b
 # sent_id = CP202-4
+# source = CETEMPúblico n=202 sec=pol sem=94b
 # id = 1083
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Creio	crer	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
 4	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
 5	tempo	tempo	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	2	ccomp	_	_
-6	de	de	ADP	PRP|@N<	_	8	mark	_	_
+6	de	de	SCONJ	PRP|@N<	_	8	mark	_	_
 7	Woolsey	Woolsey	PROPN	PROP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing	8	nsubj	_	_
 8	sair	sair	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	5	acl	_	ChangedBy=Issue165|SpaceAfter=No
 9	»	»	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 10	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = E deu como motivos ele não haver despedido quadros que não conseguiram detectar a tempo o trabalho de sapa que Aldrich Ames andava a realizar.
-# source = CETEMPúblico n=202 sec=pol sem=94b
 # sent_id = CP202-5
+# source = CETEMPúblico n=202 sec=pol sem=94b
 # id = 1084
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	deu	dar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -116,7 +115,7 @@
 7	haver	haver	AUX	<aux>|V|INF|3S|@ICL-<ACC	Number=Sing|Person=3|VerbForm=Inf	8	aux	_	_
 8	despedido	despedir	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	2	xcomp	_	_
 9	quadros	quadro	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	8	obj	_	_
-10	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	12	nsubj	_	_
+10	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	12	nsubj	_	_
 11	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
 12	conseguiram	conseguir	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	9	acl:relcl	_	_
 13	detectar	detectar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	12	xcomp	_	_
@@ -125,12 +124,12 @@
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	13	obj	_	MWE=trabalho_de_sapa|MWEPOS=NOUN
 18	de	de	ADP	_	_	17	compound	_	_
-19	sapa	sapa	NOUN	_	_	17	compound	_	_
+19	sapa	sapa	NOUN	_	Gender=Fem|Number=Sing	17	compound	_	_
 20	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	25	obj	_	_
 21	Aldrich	Aldrich	PROPN	_	Gender=Unsp|Number=Sing	25	nsubj	_	ChangedBy=Issue119|MWE=Aldrich_Ames|MWEPOS=PROPN
 22	Ames	Ames	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
-23	andava	andar	AUX	<aux>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	25	aux	_	_
-24	a	a	ADP	PRP|@PRT-AUX<	_	25	case	_	_
-25	realizar	realizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	17	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+23	andava	andar	VERB	<aux>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	17	acl:relcl	_	MWE=andava_a|MWEPOS=AUX
+24	a	a	SCONJ	PRP|@PRT-AUX<	_	25	mark	_	_
+25	realizar	realizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 

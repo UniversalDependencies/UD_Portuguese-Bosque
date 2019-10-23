@@ -1,10 +1,7 @@
 # text = A diretoria do Banerj responsabilizou o Banco Central pela perda de liquidez do banco e informou que o Banerj tem dinheiro para receber do BC: R$ 100 milhões pagos a mais desde 1992, R$ 30 milhões de multa e mais R$ 600 milhões recolhidos como depósito compulsório, depois do Plano Real
-# source = CETENFolha n=651 cad=Brasil sec=pol sem=94a
 # sent_id = CF651-1
+# source = CETENFolha n=651 cad=Brasil sec=pol sem=94a
 # id = 2719
-# d2d = cc(responsabilizou,e) -> cc(informou,e)  #106
-# d2d = cc(R$,e) -> cc(R$,e)  #106
-# d2d = punct(R$,,) -> punct(R$,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	diretoria	diretoria	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -32,7 +29,7 @@
 22	Banerj	Banerj	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj	_	_
 23	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	ccomp	_	_
 24	dinheiro	dinheiro	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	23	obj	_	_
-25	para	para	ADP	PRP|@N<	_	26	mark	_	_
+25	para	para	SCONJ	PRP|@N<	_	26	mark	_	_
 26	receber	receber	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	24	acl	_	_
 27-28	do	_	_	_	_	_	_	_	_
 27	de	de	ADP	<sam->|PRP|@<PIV	_	29	case	_	_
@@ -54,7 +51,7 @@
 43	de	de	ADP	PRP|@N<	_	44	case	_	_
 44	multa	multa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	40	nmod	_	_
 45	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	47	cc	_	d2d:#106
-46	mais	muito	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	47	det	_	_
+46	mais	mais	DET	<quant>|<KOMP>|<COMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	47	det	_	_
 47	R$	R$	SYM	_	_	31	conj	_	_
 48	600	600	NUM	<card>|NUM|M|P|@>N	NumType=Card	47	nummod	_	ChangedBy=Issue168|MWE=600_milhões
 49	milhões	milhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	48	flat	_	_
@@ -71,8 +68,8 @@
 59	Real	Real	PROPN	_	Number=Sing	58	flat:name	_	ChangedBy=Issue119
 
 # text = Anteontem, o Banerj, que administra a dívida pública estadual, não conseguiu que o Banco Central negociasse R$ 84 milhões em títulos estaduais, trocando-os por títulos federais.
-# source = CETENFolha n=651 cad=Brasil sec=pol sem=94a
 # sent_id = CF651-2
+# source = CETENFolha n=651 cad=Brasil sec=pol sem=94a
 # id = 2720
 1	Anteontem	anteontem	ADV	ADV|@ADVL>	_	14	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_

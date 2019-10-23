@@ -1,6 +1,6 @@
 # text = Novo fornecedor de acesso à Internet
-# source = CETEMPúblico n=946 sec=com sem=98a
 # sent_id = CP946-1
+# source = CETEMPúblico n=946 sec=com sem=98a
 # id = 4868
 1	Novo	novo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	2	amod	_	_
 2	fornecedor	fornecedor	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
@@ -12,8 +12,8 @@
 7	Internet	Internet	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 
 # text = Teleweb quer disputar liderança
-# source = CETEMPúblico n=946 sec=com sem=98a
 # sent_id = CP946-2
+# source = CETEMPúblico n=946 sec=com sem=98a
 # id = 4869
 1	Teleweb	Teleweb	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	quer	querer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -21,8 +21,8 @@
 4	liderança	liderança	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 
 # text = A Teleweb, uma nova empresa portuguesa fornecedora de acesso à Internet, anunciou estar disposta a investir um milhão de contos de forma a atingir o seu objectivo de 50 mil clientes no ano 2000.
-# source = CETEMPúblico n=946 sec=com sem=98a
 # sent_id = CP946-3
+# source = CETEMPúblico n=946 sec=com sem=98a
 # id = 4870
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Teleweb	Teleweb	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -41,15 +41,15 @@
 14	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 15	anunciou	anunciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 16	estar	estar	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	17	cop	_	ChangedBy=Issue167
-17	disposta	disposto	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	15	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
-18	a	a	ADP	PRP|@<PIV	_	19	mark	_	_
+17	disposta	disposto	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	15	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue91
+18	a	a	SCONJ	PRP|@<PIV	_	19	mark	_	_
 19	investir	investir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	xcomp	_	_
-20	um	um	NUM	<arti>|ART|M|S|@>N	NumType=Card	23	nummod	_	MWE=um_milhão
+20	um	um	NUM	<arti>|ART|M|S|@>N	NumType=Card	19	obj	_	MWE=um_milhão
 21	milhão	milhão	NUM	<np-idf>|N|M|S|@<ACC	NumType=Card	20	flat	_	_
 22	de	de	ADP	PRP|@N<ARG	_	23	case	_	_
-23	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	19	obj	_	_
+23	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
 24	de	de	ADP	PRP|@<ADVL	_	19	obl	_	MWE=de_forma_a
-25	forma	forma	NOUN	N|@P<	_	24	fixed	_	_
+25	forma	forma	NOUN	N|@P<	Gender=Fem|Number=Sing	24	fixed	_	_
 26	a	a	ADP	PRP|@N<	_	24	fixed	_	_
 27	atingir	atingir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	24	acl	_	_
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
@@ -67,11 +67,9 @@
 39	.	.	PUNCT	PU|@PU	_	15	punct	_	_
 
 # text = A empresa é totalmente detida pela Finantel SGPS SA, que detém participações na Ensitel e na NCM-Nokia e atingiu em 1997 um volume de vendas consolidado de 9,2 milhões de contos, com resultados líquidos de 244 mil contos.
-# source = CETEMPúblico n=946 sec=com sem=98a
 # sent_id = CP946-4
+# source = CETEMPúblico n=946 sec=com sem=98a
 # id = 4871
-# d2d = cc(detém,e) -> cc(atingiu,e)  #106
-# d2d = cc(Ensitel,e) -> cc(NCM-Nokia,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	empresa	empresa	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj:pass	_	_
 3	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_
@@ -106,10 +104,10 @@
 29	vendas	venda	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	27	nmod	_	_
 30	consolidado	consolidar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	27	acl	_	_
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
-32	9,2	9,2	NUM	<card>|NUM|M|P|@>N	NumType=Card	35	nummod	_	ChangedBy=Issue168|MWE=9,2_milhões
+32	9,2	9,2	NUM	<card>|NUM|M|P|@>N	NumType=Card	27	nmod	_	ChangedBy=Issue168|MWE=9,2_milhões
 33	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	32	flat	_	_
 34	de	de	ADP	PRP|@N<ARG	_	35	case	_	_
-35	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	27	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+35	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 36	,	,	PUNCT	PU|@PU	_	38	punct	_	_
 37	com	com	ADP	PRP|@N<PRED	_	38	case	_	_
 38	resultados	resultado	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	27	nmod	_	_

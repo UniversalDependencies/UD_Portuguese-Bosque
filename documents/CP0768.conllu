@@ -1,15 +1,15 @@
 # text = Não foi por isso, contudo, que a Vidisco se sentiu menos ofendida, de modo que acabou por decidir meter o caso em tribunal, porque «aquilo não se faz.
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-1
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3936
 1	Não	não	ADV	ADV|@>P	Polarity=Neg	4	advmod	_	ChangedBy=Issue108
 2	foi	foi	ADV	ADV|@ADVL>	_	12	advmod	_	_
 3	por	por	ADP	PRP|@ADVL>	_	4	case	_	_
 4	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	12	obl	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-6	contudo	contudo	ADV	<kc>|ADV|@ADVL>	_	12	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+6	contudo	contudo	CCONJ	<kc>|ADV|@ADVL>	_	12	cc	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-8	que	que	ADV	<foc>|ADV|@ADVL>	_	12	mark	_	_
+8	que	que	SCONJ	<foc>|ADV|@ADVL>	_	12	mark	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	Vidisco	Vidisco	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
 11	se	se	PRON	PERS|F|S|@ACC>-PASS	Gender=Fem|Number=Sing|PronType=Prs	12	expl	_	ChangedBy=Issue135
@@ -17,12 +17,12 @@
 13	menos	menos	ADV	<quant>|<KOMP>|ADV|@>A	_	14	advmod	_	_
 14	ofendida	ofender	VERB	<mv>|V|PCP|F|S|@ICL-<OC	Gender=Fem|Number=Sing|VerbForm=Part	12	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-16	de	de	ADP	PRP|@>S	_	21	mark	_	MWE=de_modo_que
+16	de	de	ADP	PRP|@>S	_	21	mark	_	MWE=de_modo_que|MWEPOS=SCONJ
 17	modo	modo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	16	fixed	_	_
 18	que	que	SCONJ	KS|@SUB	_	16	fixed	_	_
-19	acabou	acabar	AUX	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	aux	_	_
-20	por	por	ADP	PRP|@PRT-AUX<	_	21	case	_	_
-21	decidir	decidir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	12	advcl	_	_
+19	acabou	acabar	VERB	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	advcl	_	MWE=acabou_por|MWEPOS=AUX
+20	por	por	SCONJ	PRP|@PRT-AUX<	_	21	mark	_	_
+21	decidir	decidir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	19	xcomp	_	_
 22	meter	meter	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	21	xcomp	_	_
 23	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	caso	caso	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	22	obj	_	_
@@ -38,8 +38,8 @@
 34	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = A televisão é paga por todos nós, para quê?
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-2
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3937
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	televisão	televisão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj:pass	_	_
@@ -54,16 +54,16 @@
 11	?	?	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Para eles fazerem publicidade privada, como se fosse um programa pago?
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-3
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3938
-1	Para	para	ADP	PRP|@QUE	_	3	mark	_	_
+1	Para	para	SCONJ	PRP|@QUE	_	3	mark	_	_
 2	eles	ele	PRON	PERS|M|3P|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
 3	fazerem	fazer	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	0	root	_	_
 4	publicidade	publicidade	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 5	privada	privado	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-7	como	como	ADV	ADV|@SUB	_	11	mark	_	MWE=como_se
+7	como	como	SCONJ	ADV|@SUB	_	11	mark	_	MWE=como_se
 8	se	se	SCONJ	KS|@A<	_	7	fixed	_	_
 9	fosse	ser	AUX	<mv>|V|IMPF|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	cop	_	ChangedBy=Issue167
 10	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
@@ -72,8 +72,8 @@
 13	?	?	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Não é digno de um programa de um organismo oficial, que na verdade é de uma associação de multinacionais.
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-4
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3939
 1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
@@ -88,9 +88,9 @@
 11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 12	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	19	nsubj	_	_
 13-14	na	_	_	_	_	_	_	_	_
-13	em	em	ADP	<sam->|PRP|@ADVL>	_	15	case	_	_
-14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	verdade	verdade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
+13	em	em	ADP	<sam->|PRP|@ADVL>	_	19	advmod	_	MWE=na_verdade|MWEPOS=ADV
+14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	fixed	_	_
+15	verdade	verdade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	fixed	_	_
 16	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	ChangedBy=Issue167
 17	de	de	ADP	PRP|@<SC	_	19	case	_	_
 18	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
@@ -100,8 +100,8 @@
 22	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Tentámos encontrar logo um advogado que estivesse dentro da legislação, o que foi difícil por causa da quadra de festas.
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-5
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3940
 1	Tentámos	tentar	VERB	<mv>|V|PS|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
 2	encontrar	encontrar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	1	xcomp	_	_
@@ -121,7 +121,7 @@
 15	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	16	cop	_	ChangedBy=Issue167
 16	difícil	difícil	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	13	acl:relcl	_	_
 17	por	por	ADP	<sam->|PRP|@<ADVL	_	18	case	_	MWE=por_causa_de
-18	causa	causa	NOUN	N|@P<	_	16	obl	_	_
+18	causa	causa	NOUN	N|@P<	Gender=Fem|Number=Sing	16	obl	_	_
 19-20	da	_	_	_	_	_	_	_	_
 19	de	de	ADP	PRP|@N<	_	21	case	_	_
 20	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
@@ -131,11 +131,9 @@
 24	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Agora, temos um advogado e se ele considerar que há suficiente matéria legal para isso, vamos a tribunal».
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-6
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3941
-# d2d = cc(temos,e) -> cc(vamos,e)  #106
-# d2d = punct(temos,,) -> punct(vamos,,)  #106
 1	Agora	agora	ADV	<kc>|ADV|@ADVL>	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	temos	ter	VERB	<mv>|<first-cjt>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -160,20 +158,20 @@
 22	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Resta saber quem poderá ser processado.
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-7
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3942
 1	Resta	restar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	saber	saber	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	1	csubj	_	_
 3	quem	quem	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	6	nsubj:pass	_	_
-4	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux	_	_
+4	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	ccomp	_	_
 5	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	6	aux:pass	_	_
-6	processado	processar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	2	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+6	processado	processar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	4	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 7	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = «Não sei se a televisão em si, como responsável pelo programa, e também a Associação Fonográfica, por conivência, visto que é responsável pelo programa.»
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-8
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3943
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
@@ -182,7 +180,7 @@
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	televisão	televisão	NOUN	<first-cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 7	em	em	ADP	PRP|@N<	_	8	case	_	MWE=em_si
-8	si	si	NOUN	N|@P<	_	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+8	si	si	PRON	N|@P<	Gender=Unsp|Number=Sing|Person=1|PronType=Prs	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 10	como	como	ADP	<prd>|PRP|@N<PRED	_	11	case	_	_
 11	responsável	responsável	ADJ	ADJ|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
@@ -200,8 +198,8 @@
 22	por	por	ADP	PRP|@N<PRED	_	23	case	_	_
 23	conivência	conivência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-25	visto	ver	PROPN	_	Gender=Masc|Number=Sing|VerbForm=Part	28	mark	_	MWEPOS=PROPN
-26	que	que	PROPN	_	_	25	fixed	_	_
+25	visto	ver	SCONJ	_	_	28	mark	_	MWE=visto_que
+26	que	que	SCONJ	_	_	25	fixed	_	_
 27	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	ChangedBy=Issue167
 28	responsável	responsável	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	19	acl:relcl	_	_
 29-30	pelo	_	_	_	_	_	_	_	_
@@ -212,8 +210,8 @@
 33	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Pelo seu lado, António Pinho diz:
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-9
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3944
 1-2	Pelo	_	_	_	_	_	_	_	_
 1	Por	por	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
@@ -227,8 +225,8 @@
 9	:	:	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = «Não faço comentários, não vou alimentar essa polémica.»
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-10
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3945
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
@@ -244,8 +242,8 @@
 12	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Mas será que vai ficar por aqui?
-# source = CETEMPúblico n=768 sec=nd sem=92a
 # sent_id = CP768-11
+# source = CETEMPúblico n=768 sec=nd sem=92a
 # id = 3946
 1	Mas	mas	CCONJ	KC|@CO	_	2	cc	_	_
 2	será	ser	VERB	<mv>|V|FUT|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_

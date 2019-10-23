@@ -1,6 +1,6 @@
 # text = O caso ocorreu numa noite de 1978, na ilha de Carvalo, ao largo da Córsega.
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-1
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 139
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	caso	caso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -22,7 +22,7 @@
 16-17	ao	_	_	_	_	_	_	_	_
 16	a	a	ADP	<sam->|PRP|@N<	_	18	case	_	_
 17	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	largo	largo	NOUN	N|@P<	_	12	nmod	_	_
+18	largo	largo	NOUN	N|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 19-20	da	_	_	_	_	_	_	_	_
 19	de	de	ADP	PRP|@N<	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	21	det	_	_
@@ -30,8 +30,8 @@
 22	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O príncipe jantava com amigos num restaurante deste paraíso para milionários, quando um grupo barulhento de jovens da alta sociedade italiana acostou na enseada de Palma, ao lado do seu iate, o L'Aniram.
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-2
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 140
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	príncipe	príncipe	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -72,7 +72,7 @@
 33-34	ao	_	_	_	_	_	_	_	_
 33	a	a	ADP	<sam->|PRP|@N<	_	35	case	_	_
 34	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
-35	lado	lado	NOUN	N|@P<	_	26	obl	_	_
+35	lado	lado	NOUN	N|@P<	Gender=Masc|Number=Sing	26	obl	_	_
 36-37	do	_	_	_	_	_	_	_	_
 36	de	de	ADP	PRP|@N<	_	39	case	_	_
 37	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
@@ -84,8 +84,8 @@
 43	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Os advogados da defesa sublinharam no processo que este facto perturbou altamente o «senhor de Sabóia».
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-3
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 141
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	advogados	advogado	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
@@ -98,7 +98,7 @@
 7	em	em	ADP	<sam->|PRP|@<ADVL	_	9	case	_	_
 8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	processo	processo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	ChangedBy=Issue137
-10	que	que	SCONJ	<rel>|INDP|M|S|@SUB	Gender=Masc|Number=Sing|PronType=Rel	13	mark	_	_
+10	que	que	SCONJ	<rel>|INDP|M|S|@SUB	_	13	mark	_	_
 11	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
 12	facto	facto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
 13	perturbou	perturbar	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	_	_
@@ -112,12 +112,9 @@
 21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Naquele ano, as Brigadas Vermelhas (BR) estavam no auge da actividade terrorista, o líder cristão-democrata Aldo Moro acabara de ser raptado, e o príncipe -- proibido de entrar em Itália desde o exílio do pai em 1946 -- teria mesmo recebido ameaças das BR.
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-4
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 142
-# d2d = punct(auge,,) -> punct(recebido,,)  #106
-# d2d = cc(auge,e) -> cc(recebido,e)  #106
-# d2d = punct(auge,,) -> punct(raptado,,)  #106
 1-2	Naquele	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	aquele	aquele	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
@@ -145,17 +142,17 @@
 22	cristão-democrata	cristão-democrata	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	amod	_	_
 23	Aldo	Aldo	PROPN	_	Gender=Masc|Number=Sing	21	appos	_	ChangedBy=Issue119|MWE=Aldo_Moro|MWEPOS=PROPN
 24	Moro	Moro	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119
-25	acabara	acabar	AUX	<cjt>|<aux>|V|MQP|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	28	aux	_	_
-26	de	de	ADP	PRP|@PRT-AUX<	_	28	case	_	_
+25	acabara	acabar	VERB	<cjt>|<aux>|V|MQP|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	14	conj	_	MWE=acabara_de|MWEPOS=AUX
+26	de	de	SCONJ	PRP|@PRT-AUX<	_	28	mark	_	_
 27	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	28	aux:pass	_	_
-28	raptado	raptar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	14	conj	_	ChangedBy=Issue165|SpaceAfter=No
+28	raptado	raptar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	25	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	50	punct	_	d2d:#106
 30	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-inf>|KC|@CO	_	50	cc	_	d2d:#106
 31	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
 32	príncipe	príncipe	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	50	nsubj	_	_
 33	--	--	PUNCT	PU|@PU	_	34	punct	_	_
 34	proibido	proibir	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	32	acl	_	_
-35	de	de	ADP	PRP|@<PIV	_	36	mark	_	_
+35	de	de	SCONJ	PRP|@<PIV	_	36	mark	_	_
 36	entrar	entrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	34	xcomp	_	_
 37	em	em	ADP	PRP|@<SA	_	38	case	_	_
 38	Itália	Itália	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	36	obl	_	_
@@ -180,8 +177,8 @@
 55	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Uma vida por um barco
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-5
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 143
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	vida	vida	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
@@ -190,10 +187,9 @@
 5	barco	barco	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 
 # text = O certo é que, pouco depois, Vítor-Emanuel apercebeu-se que um barco pneumático fora deslocado do seu iate e atracado ao Cocke, o navio dos jovens italianos.
-# source = CETEMPúblico n=26 sec=soc sem=91b &W
 # sent_id = CP26-6
+# source = CETEMPúblico n=26 sec=soc sem=91b &W
 # id = 144
-# d2d = cc(fora,e) -> cc(atracado,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	certo	certo	NOUN	<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -234,13 +230,9 @@
 34	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = «Irritado com este acto de apropriação», foi buscar uma espingarda US 30 semiautomática, utilizada em safaris, e 31 cartuchos, e dirigiu-se para o Cocke.
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-7
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 145
-# d2d = punct(espingarda,,) -> punct(cartuchos,,)  #106
-# d2d = cc(espingarda,e) -> cc(cartuchos,e)  #106
-# d2d = cc(buscar,e) -> cc(dirigiu-,e)  #106
-# d2d = punct(buscar,,) -> punct(dirigiu-,,)  #106
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Irritado	irritado	ADJ	<mv>|<cjt>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing	11	advcl	_	ChangedBy=Issue141|ChangedBy=Issue91
 3	com	com	ADP	PRP|@<ADVL	_	5	case	_	_
@@ -257,11 +249,11 @@
 14	US	US	PROPN	_	Gender=Fem|Number=Sing	13	appos	_	ChangedBy=Issue119|MWE=US_30|MWEPOS=PROPN
 15	30	30	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119
 16	semiautomática	semiautomático	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	13	amod	_	ChangedBy=Issue165|SpaceAfter=No
-17	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	utilizada	utilizar	VERB	<mv>|<first-cjt>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	13	acl	_	_
 19	em	em	ADP	PRP|@<ADVL	_	20	case	_	_
 20	safaris	safari	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	18	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-21	,	,	PUNCT	PU|@PU	_	24	punct	_	d2d:#106
+21	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 22	e	e	CCONJ	<co-acc>|KC|@CO	_	24	cc	_	d2d:#106
 23	31	31	NUM	<card>|NUM|M|P|@>N	NumType=Card	24	nummod	_	ChangedBy=Issue168
 24	cartuchos	cartucho	NOUN	<cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	13	conj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -276,8 +268,8 @@
 32	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Um dos jovens, Nicola Pende, acorda com um grito:
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-8
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 146
 1	Um	um	NUM	<card>|NUM|M|S|@SUBJ>	NumType=Card	9	nsubj	_	ChangedBy=Issue168
 2-3	dos	_	_	_	_	_	_	_	_
@@ -295,8 +287,8 @@
 13	:	:	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = «Roubaste o meu barco, vais pagar.»
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-9
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 147
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Roubaste	roubar	VERB	<first-cjt>|<mv>|V|PS|2S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -310,8 +302,8 @@
 10	»	»	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Pouco depois, o príncipe aponta-lhe a arma ao ventre.
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-10
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 148
 1	Pouco	pouco	ADV	<quant>|ADV|@>A	_	2	advmod	_	_
 2	depois	depois	ADV	ADV|@ADVL>	_	6	advmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -330,12 +322,9 @@
 13	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Na confusão que se segue, parte um primeiro tiro, depois um segundo, e os dois homens caem ao mar.
-# source = CETEMPúblico n=26 sec=soc sem=91b
 # sent_id = CP26-11
+# source = CETEMPúblico n=26 sec=soc sem=91b
 # id = 149
-# d2d = punct(tiro,,) -> punct(segundo,,)  #106
-# d2d = cc(parte,e) -> cc(caem,e)  #106
-# d2d = punct(parte,,) -> punct(caem,,)  #106
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	3	det	_	_

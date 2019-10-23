@@ -1,6 +1,6 @@
 # text = Um «tunnelier» é uma autêntica fábrica debaixo do solo.
-# source = CETEMPúblico n=318 sec=soc sem=94a
 # sent_id = CP318-1
+# source = CETEMPúblico n=318 sec=soc sem=94a
 # id = 1674
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -18,8 +18,8 @@
 13	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = É composto por uma cabeça escavadora, parecida com uma roda dentada, com pontas de carboneto de tungsténio.
-# source = CETEMPúblico n=318 sec=soc sem=94a
 # sent_id = CP318-2
+# source = CETEMPúblico n=318 sec=soc sem=94a
 # id = 1675
 1	É	ser	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:pass	_	_
 2	composto	compor	VERB	<mv>|<pass>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
@@ -28,11 +28,11 @@
 5	cabeça	cabeça	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	2	obl:agent	_	_
 6	escavadora	escavador	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-8	parecida	parecido	ADJ	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing	5	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+8	parecida	parecer	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	5	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 9	com	com	ADP	PRP|@<PIV	_	11	obl	_	_
 10	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	roda	roda	NOUN	_	_	8	obl	_	MWE=roda_dentada|MWEPOS=NOUN
-12	dentada	dentada	ADJ	_	_	11	amod	_	ChangedBy=Issue165|SpaceAfter=No
+11	roda	roda	NOUN	_	Gender=Fem|Number=Sing	8	obl	_	MWE=roda_dentada|MWEPOS=NOUN
+12	dentada	dentada	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	ChangedBy=Issue165|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 14	com	com	ADP	PRP|@N<PRED	_	15	case	_	_
 15	pontas	ponta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	obl	_	_
@@ -43,15 +43,14 @@
 20	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = É este material super-resistente que permite roer a rocha à média de duas a três voltas por minuto e avançar à velocidade vertiginosa de 200 metros por semana.
-# source = CETEMPúblico n=318 sec=soc sem=94a
 # sent_id = CP318-3
+# source = CETEMPúblico n=318 sec=soc sem=94a
 # id = 1676
-# d2d = cc(roer,e) -> cc(avançar,e)  #106
-1	É	é	ADV	<foc>|ADV|@ADVL>	_	6	mark	_	_
+1	É	é	SCONJ	<foc>|ADV|@ADVL>	_	6	mark	_	_
 2	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
 3	material	material	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 4	super-resistente	super-resistente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	3	amod	_	_
-5	que	que	ADV	<foc>|ADV|@ADVL>	_	6	mark	_	_
+5	que	que	SCONJ	<foc>|ADV|@ADVL>	_	6	mark	_	_
 6	permite	permitir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	roer	roer	VERB	<first-cjt>|<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	6	xcomp	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
@@ -60,9 +59,9 @@
 10	a	a	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	média	média	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	ChangedBy=Issue137
-13	de	de	ADP	PRP|@N<	_	17	case	_	_
+13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	17	nummod	_	ChangedBy=Issue168
-15	a	a	ADP	_	_	17	case	_	_
+15	a	a	ADP	_	_	16	case	_	_
 16	três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	17	nummod	_	ChangedBy=Issue168
 17	voltas	volta	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
 18	por	por	ADP	PRP|@N<	_	19	case	_	_
@@ -82,10 +81,9 @@
 31	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Em cada volta desta roda avança-se 10 centímetros e são trucidadas cinco toneladas de rocha.
-# source = CETEMPúblico n=318 sec=soc sem=94a
 # sent_id = CP318-4
+# source = CETEMPúblico n=318 sec=soc sem=94a
 # id = 1677
-# d2d = cc(avança-,e) -> cc(trucidadas,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
 2	cada	cada	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	3	det	_	_
 3	volta	volta	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	ChangedBy=Issue137
@@ -108,11 +106,9 @@
 18	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Depois da cabeça vem uma autêntica fábrica ambulante que tritura as pedras e as envia para o exterior, ao mesmo tempo que vai enfiando uns aros em betão armado, impermeáveis e resistentes a uma pressão de 200 bars, que revestem o túnel.
-# source = CETEMPúblico n=318 sec=soc sem=94a
 # sent_id = CP318-5
+# source = CETEMPúblico n=318 sec=soc sem=94a
 # id = 1678
-# d2d = cc(impermeáveis,e) -> cc(resistentes,e)  #106
-# d2d = cc(tritura,e) -> cc(envia,e)  #106
 1	Depois	depois	ADV	ADV|@ADVL>	_	5	advmod	_	_
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@A<	_	4	case	_	_
@@ -165,11 +161,9 @@
 48	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O tempo da dinamite, pá e picareta já acabou há muito.
-# source = CETEMPúblico n=318 sec=soc sem=94a
 # sent_id = CP318-6
+# source = CETEMPúblico n=318 sec=soc sem=94a
 # id = 1679
-# d2d = punct(dinamite,,) -> punct(pá,,)  #106
-# d2d = cc(dinamite,e) -> cc(picareta,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	tempo	tempo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -187,11 +181,9 @@
 14	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Estes monstros são comandados e controlados por meios electrónicos e informáticos.
-# source = CETEMPúblico n=318 sec=soc sem=94a
 # sent_id = CP318-7
+# source = CETEMPúblico n=318 sec=soc sem=94a
 # id = 1680
-# d2d = cc(comandados,e) -> cc(controlados,e)  #106
-# d2d = cc(electrónicos,e) -> cc(informáticos,e)  #106
 1	Estes	este	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_
 2	monstros	monstro	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	são	ser	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_

@@ -1,17 +1,17 @@
 # text = E é justamente por isso que não se deve parar, preparando terreno ao futuro presidente.
-# source = CETENFolha n=754 cad=Opinião sec=opi sem=94b
 # sent_id = CF754-1
+# source = CETENFolha n=754 cad=Opinião sec=opi sem=94b
 # id = 3160
 1	E	e	CCONJ	KC|@CO	_	10	cc	_	_
 2	é	ser	ADV	<foc>|ADV|@ADVL>	_	10	advmod	_	_
 3	justamente	justamente	ADV	ADV|@>A	_	5	advmod	_	_
 4	por	por	ADP	PRP|@ADVL>	_	5	case	_	_
 5	isso	isso	PRON	<dem>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	10	obl	_	_
-6	que	que	ADV	<foc>|ADV|@ADVL>	_	10	mark	_	_
+6	que	que	SCONJ	<foc>|ADV|@ADVL>	_	10	mark	_	_
 7	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
 8	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	10	nsubj	_	_
-9	deve	dever	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
-10	parar	parar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+9	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	parar	parar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 12	preparando	preparar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	10	advcl	_	_
 13	terreno	terreno	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
@@ -23,24 +23,21 @@
 18	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Além de aumentar o número de cassações, deve-se estimular as demais CPIs sobre Empreiteiras, financiamentos eleitorais e CUT a CPI da CUT terá o dom de trazer à tona possíveis desvios da burocracia e da praga do corporativismo, o que, acreditem, vai acabar ajudando não apenas o PT mas a democracia.
-# source = CETENFolha n=754 cad=Opinião sec=opi sem=94b &E &D
 # sent_id = CF754-2
+# source = CETENFolha n=754 cad=Opinião sec=opi sem=94b &E &D
 # id = 3161
-# d2d = cc(burocracia,e) -> cc(praga,e)  #106
-# d2d = cc(PT,mas) -> cc(democracia,mas)  #106
-# d2d = punct(Empreiteiras,,) -> punct(financiamentos,,)  #106
-1	Além	além	ADV	ADV|@ADVL>	_	11	advmod	_	MWE=Além_de
-2	de	de	ADP	PRP|@A<	_	3	mark	_	_
-3	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_
+1	Além	além	ADV	ADV|@ADVL>	_	3	mark	_	MWE=Além_de|MWEPOS=SCONJ
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	aumentar	aumentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	número	número	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	cassações	cassação	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	5	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 9-10	deve-se	_	_	_	_	_	_	_	_
-9	deve	dever	AUX	<aux>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+9	deve	dever	VERB	<aux>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 10	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	11	nsubj	_	_
-11	estimular	estimular	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+11	estimular	estimular	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
 12	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
 13	demais	demais	DET	DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	14	det	_	_
 14	CPIs	cpi	NOUN	<prop>|<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	11	obj	_	_
@@ -60,7 +57,7 @@
 27	terá	ter	VERB	<mv>|V|FUT|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	21	acl:relcl	_	_
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	dom	dom	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	27	obj	_	_
-30	de	de	ADP	PRP|@N<	_	31	mark	_	_
+30	de	de	SCONJ	PRP|@N<	_	31	mark	_	_
 31	trazer	trazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	acl	_	_
 32-33	à	_	_	_	_	_	_	_	_
 32	a	a	ADP	<sam->|PRP|@<PIV	_	34	case	_	_
@@ -85,11 +82,11 @@
 48	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	31	appos	_	_
 49	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	55	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 50	,	,	PUNCT	PU|@PU	_	49	punct	_	_
-51	acreditem	acreditar	VERB	<mv>|V|PR|3P|SUBJ|@FS-STA	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	55	dep	_	ChangedBy=Issue165|SpaceAfter=No
+51	acreditem	acreditar	VERB	<mv>|V|PR|3P|SUBJ|@FS-STA	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	55	discourse	_	ChangedBy=Issue165|SpaceAfter=No
 52	,	,	PUNCT	PU|@PU	_	55	punct	_	_
 53	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	55	aux	_	_
-54	acabar	acabar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	55	aux	_	_
-55	ajudando	ajudar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	48	acl:relcl	_	_
+54	acabar	acabar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	48	acl:relcl	_	_
+55	ajudando	ajudar	VERB	<mv>|V|GER|@ICL-AUX<	VerbForm=Ger	54	xcomp	_	_
 56	não	não	ADV	_	Polarity=Neg	57	advmod	_	_
 57	apenas	apenas	ADV	ADV|@>N	_	59	advmod	_	_
 58	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	59	det	_	_
@@ -100,16 +97,9 @@
 63	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Mas a roubalheira é apenas a ponta do «lamaçal»: o problema essencial, a grande delinquência, é a baixa taxa de seriedade e compromisso dos homens públicos, responsável por estarmos atolados em níveis jamais vistos de miséria e violência e, como diz o salmo, é aí que «não se pode estar em pé».
-# source = CETENFolha n=754 cad=Opinião sec=opi sem=94b
 # sent_id = CF754-3
+# source = CETENFolha n=754 cad=Opinião sec=opi sem=94b
 # id = 3162
-# d2d = cc(ponta,e) -> cc(é,e)  #106
-# d2d = punct(ponta,,) -> punct(taxa,,)  #106
-# d2d = cc(miséria,e) -> cc(violência,e)  #106
-# d2d = punct(ponta,,) -> punct(taxa,,)  #106
-# d2d = punct(ponta,:) -> punct(taxa,:)  #106
-# d2d = cc(seriedade,e) -> cc(compromisso,e)  #106
-# d2d = punct(ponta,,) -> punct(é,,)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	7	cc	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	roubalheira	roubalheira	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -127,11 +117,11 @@
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	problema	problema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	25	nsubj	_	_
 16	essencial	essencial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	15	amod	_	ChangedBy=Issue165|SpaceAfter=No
-17	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
+17	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	20	amod	_	_
 20	delinquência	delinquência	NOUN	<np-def>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	15	appos	_	ChangedBy=Issue165|SpaceAfter=No
-21	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
+21	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 22	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	cop	_	ChangedBy=Issue167
 23	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 24	baixa	baixo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	25	amod	_	_
@@ -147,9 +137,9 @@
 33	públicos	público	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	32	amod	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	35	punct	_	_
 35	responsável	responsável	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	25	amod	_	_
-36	por	por	ADP	PRP|@A<ARG	_	38	mark	_	_
+36	por	por	SCONJ	PRP|@A<ARG	_	38	mark	_	_
 37	estarmos	estar	AUX	<mv>|V|INF|1P|@ICL-P<	Number=Plur|Person=1|VerbForm=Inf	38	cop	_	ChangedBy=Issue167
-38	atolados	atolado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	35	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+38	atolados	atolado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	35	ccomp	_	ChangedBy=Issue141|ChangedBy=Issue91
 39	em	em	ADP	PRP|@<ADVL	_	40	case	_	_
 40	níveis	nível	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	38	obl	_	_
 41	jamais	jamais	ADV	ADV|@>A	_	42	advmod	_	_
@@ -159,8 +149,8 @@
 45	e	e	CCONJ	<co-prparg>|KC|@CO	_	46	cc	_	d2d:#106
 46	violência	violência	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	44	conj	_	_
 47	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	54	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-48	,	,	PUNCT	PU|@PU	_	54	punct	_	d2d:#106
-49	como	como	ADV	<rel>|ADV|@ADVL>	_	50	advmod	_	_
+48	,	,	PUNCT	PU|@PU	_	50	punct	_	d2d:#106
+49	como	como	SCONJ	<rel>|ADV|@ADVL>	_	50	mark	_	_
 50	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	advcl	_	_
 51	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_
 52	salmo	salmo	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	50	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -171,16 +161,16 @@
 57	«	«	PUNCT	PU|@PU	_	61	punct	_	ChangedBy=Issue165|SpaceAfter=No
 58	não	não	ADV	_	Polarity=Neg	61	advmod	_	_
 59	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	61	nsubj	_	_
-60	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	61	aux	_	_
-61	estar	estar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	54	csubj	_	_
+60	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	54	csubj	_	_
+61	estar	estar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	60	xcomp	_	_
 62	em	em	ADP	PRP|@<ADVL	_	63	case	_	MWE=em_pé
 63	pé	pé	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	61	obl	_	ChangedBy=Issue165|SpaceAfter=No
 64	»	»	PUNCT	PU|@PU	_	61	punct	_	ChangedBy=Issue165|SpaceAfter=No
 65	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = PS Milagre mesmo é gente como João Alves trocar a leitura de volantes de loteria pela Bíblia quem sabe o poder público não o ajuda, dando-lhe uma cela especial para aprofundar tais leituras.
-# source = CETENFolha n=754 cad=Opinião sec=opi sem=94b
 # sent_id = CF754-4
+# source = CETENFolha n=754 cad=Opinião sec=opi sem=94b
 # id = 3163
 1	PS	PS	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	Milagre	milagre	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
@@ -201,7 +191,7 @@
 16	por	por	ADP	<sam->|PRP|@<PIV	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	Bíblia	Bíblia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	9	iobj	_	_
-19	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	20	nsubj	_	_
+19	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	20	nsubj	_	_
 20	sabe	saber	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
 21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	poder	poder	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	26	nsubj	_	_
@@ -216,7 +206,7 @@
 30	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
 31	cela	cela	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	obj	_	_
 32	especial	especial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	31	amod	_	_
-33	para	para	ADP	PRP|@N<	_	34	mark	_	_
+33	para	para	SCONJ	PRP|@N<	_	34	mark	_	_
 34	aprofundar	aprofundar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	31	acl	_	_
 35	tais	tal	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	36	det	_	_
 36	leituras	leitura	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	34	obj	_	ChangedBy=Issue165|SpaceAfter=No

@@ -1,6 +1,6 @@
 # text = Veja como é a legislação
-# source = CETENFolha n=389 cad=Turismo sec=soc sem=94a
 # sent_id = CF389-1
+# source = CETENFolha n=389 cad=Turismo sec=soc sem=94a
 # id = 1619
 1	Veja	ver	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	como	como	ADV	<interr>|ADV|@ADVL>	_	3	advmod	_	_
@@ -9,8 +9,8 @@
 5	legislação	legislação	NOUN	<np-def>|N|F|S|@<sUBJ	Gender=Fem|Number=Sing	3	nsubj	_	_
 
 # text = A resolução normativa de 4 de junho de 1987 do Instituto Brasileiro de Turismo (Embratur) afirma que «os meios de hospedagem de turismo dos tipos hotel, hotel de lazer e hotel-residência, de qualquer categoria, ficam obrigados a dispor de local específico, devidamente sinalizado e apropriado ao embarque e desembarque de usuários portadores de deficiências, além de estacionamentos para seus veículos».
-# source = CETENFolha n=389 cad=Turismo sec=soc sem=94a
 # sent_id = CF389-3
+# source = CETENFolha n=389 cad=Turismo sec=soc sem=94a
 # id = 1620
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	resolução	resolução	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	19	nsubj	_	_
@@ -58,7 +58,7 @@
 42	,	,	PUNCT	PU|@PU	_	41	punct	_	_
 43	ficam	ficar	VERB	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	ccomp	_	_
 44	obrigados	obrigado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	43	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue91
-45	a	a	ADP	PRP|@<PIV	_	46	mark	_	_
+45	a	a	SCONJ	PRP|@<PIV	_	46	mark	_	_
 46	dispor	dispor	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	44	xcomp	_	_
 47	de	de	ADP	PRP|@<PIV	_	48	case	_	_
 48	local	local	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	46	obj	_	_
@@ -80,9 +80,9 @@
 63	de	de	ADP	PRP|@A<	_	64	case	_	_
 64	deficiências	deficiência	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	62	obl	_	ChangedBy=Issue165|SpaceAfter=No
 65	,	,	PUNCT	PU|@PU	_	54	punct	_	_
-66	além	além	ADV	ADV|@CO	_	46	cc	_	MWE=além_de
+66	além	além	ADV	ADV|@CO	_	68	cc	_	MWE=além_de
 67	de	de	ADP	PRP|@A<	_	66	fixed	_	_
-68	estacionamentos	estacionamento	NOUN	<np-idf>|N|M|P|@<PIV	Gender=Masc|Number=Plur	46	dep	_	_
+68	estacionamentos	estacionamento	NOUN	<np-idf>|N|M|P|@<PIV	Gender=Masc|Number=Plur	48	conj	_	_
 69	para	para	ADP	PRP|@N<	_	71	case	_	_
 70	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	71	det	_	_
 71	veículos	veículo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	68	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -90,11 +90,9 @@
 73	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = A lei diz ainda que 2% dos apartamentos têm que ser adaptados e devem haver facilidades para acesso e circulação em todas as dependências sociais do hotel.
-# source = CETENFolha n=389 cad=Turismo sec=soc sem=94a
 # sent_id = CF389-4
+# source = CETENFolha n=389 cad=Turismo sec=soc sem=94a
 # id = 1621
-# d2d = cc(acesso,e) -> cc(circulação,e)  #106
-# d2d = cc(adaptados,e) -> cc(haver,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	lei	lei	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -111,8 +109,8 @@
 13	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	14	aux:pass	_	_
 14	adaptados	adaptar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	3	ccomp	_	_
 15	e	e	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	d2d:#106
-16	devem	dever	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-17	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	conj	_	_
+16	devem	dever	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_
+17	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
 18	facilidades	facilidade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	17	obj	_	_
 19	para	para	ADP	PRP|@N<	_	20	case	_	_
 20	acesso	acesso	NOUN	<first-cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_

@@ -1,11 +1,10 @@
 # text = Foram cerca de 500 jovens atletas, representando escolas e clubes de várias regiões do país, incluindo a ilha da Madeira, que participaram no III Encontro Nacional de Andebol Feminino, já considerado o maior da modalidade, organizado pela Associação de Andebol de Lisboa.
-# source = CETEMPúblico n=964 sec=des sem=91a
 # sent_id = CP964-1
+# source = CETEMPúblico n=964 sec=des sem=91a
 # id = 4949
-# d2d = cc(escolas,e) -> cc(clubes,e)  #106
 1	Foram	foram	ADV	<foc>|ADV|@ADVL>	_	27	advmod	_	_
-2	cerca	cerca	ADV	ADV|@>A	_	4	advmod	_	MWE=cerca_de
-3	de	de	ADP	<prp>|PRP|@A<	_	2	case	_	_
+2	cerca	cerca	ADV	ADV|@>A	_	6	advmod	_	MWE=cerca_de|MWEPOS=ADV
+3	de	de	ADP	<prp>|PRP|@A<	_	2	fixed	_	_
 4	500	500	NUM	<card>|NUM|F|P|@>N	NumType=Card	6	nummod	_	ChangedBy=Issue168
 5	jovens	jovem	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	6	amod	_	_
 6	atletas	atleta	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	27	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -30,7 +29,7 @@
 23	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
 24	Madeira	Madeira	PROPN	PROP|@P<	Number=Sing	21	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	19	punct	_	_
-26	que	que	ADV	<foc>|ADV|@ADVL>	_	27	mark	_	_
+26	que	que	SCONJ	<foc>|ADV|@ADVL>	_	27	mark	_	_
 27	participaram	participar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 28-29	no	_	_	_	_	_	_	_	_
 28	em	em	ADP	<sam->|PRP|@<PIV	_	30	case	_	_
@@ -63,10 +62,9 @@
 53	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 
 # text = As expectativas dos promotores não terão sido goradas e a palavra sucesso era repetida, com insistência, pelos organizadores.
-# source = CETEMPúblico n=964 sec=des sem=91a
 # sent_id = CP964-2
+# source = CETEMPúblico n=964 sec=des sem=91a
 # id = 4950
-# d2d = cc(goradas,e) -> cc(repetida,e)  #106
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	expectativas	expectativa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	9	nsubj:pass	_	_
 3-4	dos	_	_	_	_	_	_	_	_
@@ -94,8 +92,8 @@
 23	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = «Creio que o encontro foi muito proveitoso.
-# source = CETEMPúblico n=964 sec=des sem=91a
 # sent_id = CP964-3
+# source = CETEMPúblico n=964 sec=des sem=91a
 # id = 4951
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Creio	crer	VERB	<mv>|V|PR|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -108,10 +106,9 @@
 9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Para além do convívio, as jovens atletas puderam praticar o seu desporto favorito e mostrarem as suas capacidades», afirmou ao PÚBLICO Isabel Cruz, da Associação de Andebol de Lisboa.
-# source = CETEMPúblico n=964 sec=des sem=91a &W
 # sent_id = CP964-4
+# source = CETEMPúblico n=964 sec=des sem=91a &W
 # id = 4952
-# d2d = cc(praticar,e) -> cc(mostrarem,e)  #106
 1	Para	para	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Para_além_de
 2	além	além	ADV	ADV|@P<	_	11	advmod	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -122,8 +119,8 @@
 7	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
 8	jovens	jovem	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	9	amod	_	_
 9	atletas	atleta	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	11	nsubj	_	_
-10	puderam	poder	AUX	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	aux	_	_
-11	praticar	praticar	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+10	puderam	poder	VERB	<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+11	praticar	praticar	VERB	<mv>|<first-cjt>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 13	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	14	det	_	_
 14	desporto	desporto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	11	obj	_	_

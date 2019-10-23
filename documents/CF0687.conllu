@@ -1,6 +1,6 @@
 # text = Ou na hipótese remota de sua votação antes de 30 de agosto.
-# source = CETENFolha n=687 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF687-1
+# source = CETENFolha n=687 cad=Dinheiro sec=eco sem=94a
 # id = 2884
 1	Ou	ou	CCONJ	KC|@CO	_	4	cc	_	_
 2-3	na	_	_	_	_	_	_	_	_
@@ -19,15 +19,15 @@
 14	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Dois obstáculos
-# source = CETENFolha n=687 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF687-2
+# source = CETENFolha n=687 cad=Dinheiro sec=eco sem=94a
 # id = 2885
 1	Dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	obstáculos	obstáculo	NOUN	<np-def>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 
 # text = Para Holanda, «não é possível a mudança pretendida pelos bancos».
-# source = CETENFolha n=687 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF687-3
+# source = CETENFolha n=687 cad=Dinheiro sec=eco sem=94a
 # id = 2886
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Holanda	Holanda	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	7	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -47,10 +47,9 @@
 15	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Por dois motivos: a eventual queda na arrecadação e problemas jurídicos que impedem mexer na base de cálculo do imposto por meio de MP, já que ela foi fixada em emenda constitucional.
-# source = CETENFolha n=687 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF687-4
+# source = CETENFolha n=687 cad=Dinheiro sec=eco sem=94a
 # id = 2887
-# d2d = cc(queda,e) -> cc(problemas,e)  #106
 1	Por	por	ADP	<first-cjt>|PRP|@STA	_	3	case	_	_
 2	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168
 3	motivos	motivo	NOUN	<first-cjt>|<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	0	root	_	ChangedBy=Issue165|SpaceAfter=No
@@ -78,12 +77,12 @@
 22	de	de	ADP	<sam->|PRP|@N<	_	24	case	_	_
 23	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	imposto	imposto	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	_
-25	por	por	ADP	PRP|@<ADVL	_	26	case	_	MWE=por_meio_de
-26	meio	meio	NOUN	N|@P<	_	16	obl	_	_
-27	de	de	ADP	PRP|@N<	_	28	case	_	_
-28	MP	MP	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	26	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+25	por	por	ADP	PRP|@<ADVL	_	28	case	_	MWE=por_meio_de|MWEPOS=ADP
+26	meio	meio	NOUN	N|@P<	Gender=Masc|Number=Sing	25	fixed	_	_
+27	de	de	ADP	PRP|@N<	_	25	fixed	_	_
+28	MP	MP	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	16	obl	_	ChangedBy=Issue165|SpaceAfter=No
 29	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-30	já	já	ADV	ADV|@SUB	_	34	mark	_	MWE=já_que
+30	já	já	ADV	ADV|@SUB	_	34	mark	_	MWE=já_que|MWEPOS=SCONJ
 31	que	que	SCONJ	KS|@A<	_	30	fixed	_	_
 32	ela	ela	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	34	nsubj:pass	_	_
 33	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	aux:pass	_	_

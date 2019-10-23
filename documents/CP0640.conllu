@@ -1,6 +1,6 @@
 # text = «Escrevemos ao PS pedindo um envio rápido da contra-proposta, passadas três semanas ainda não conhecemos oficialmente a posição do PS.
-# source = CETEMPúblico n=640 sec=soc sem=91a
 # sent_id = CP640-1
+# source = CETEMPúblico n=640 sec=soc sem=91a
 # id = 3332
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Escrevemos	escrever	VERB	<first-cjt>|<mv>|V|PS|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -33,12 +33,9 @@
 26	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Procurei na última semana contactar o presidente da concelhia socialista, mas, encontrava-se no estrangeiro, espero vir a concretizar esse contacto ainda esta semana» -- conclui Carlos Arrojado.
-# source = CETEMPúblico n=640 sec=soc sem=91a
 # sent_id = CP640-2
+# source = CETEMPúblico n=640 sec=soc sem=91a
 # id = 3333
-# d2d = punct(Procurei,,) -> punct(encontrava-,,)  #106
-# d2d = cc(Procurei,mas) -> cc(encontrava-,mas)  #106
-# d2d = punct(Procurei,,) -> punct(espero,,)  #106
 1	Procurei	procurar	VERB	<first-cjt>|<mv>|V|PS|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	33	ccomp	_	_
 2-3	na	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@<ADVL	_	5	case	_	_
@@ -47,15 +44,15 @@
 5	semana	semana	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	ChangedBy=Issue137
 6	contactar	contactar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	1	xcomp	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	presidente	presidente	NOUN	N|@<ACC	_	6	obj	_	MWE=presidente_da_concelhia_socialista
+8	presidente	presidente	NOUN	N|@<ACC	Gender=Masc|Number=Sing	6	obj	_	MWE=presidente_da_concelhia_socialista
 9-10	da	_	_	_	_	_	_	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	concelhia	concelhia	NOUN	N|@P<	_	8	nmod	_	_
-12	socialista	socialista	ADJ	ADJ|@N<	_	11	amod	_	ChangedBy=Issue165|SpaceAfter=No
-13	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+11	concelhia	concelhia	NOUN	N|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
+12	socialista	socialista	ADJ	ADJ|@N<	Gender=Fem|Number=Sing	11	amod	_	ChangedBy=Issue165|SpaceAfter=No
+13	,	,	PUNCT	PU|@PU	_	14	punct	_	d2d:#106
 14	mas	mas	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-15	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+15	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 16-17	encontrava-se	_	_	_	_	_	_	_	_
 16	encontrava	encontrar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|IMPF|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	conj	_	_
 17	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	expl	_	ChangedBy=Issue135
@@ -65,9 +62,9 @@
 20	estrangeiro	estrangeiro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 22	espero	esperar	VERB	<cjt>|<mv>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	_	_
-23	vir	vir	AUX	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	25	aux	_	_
-24	a	a	ADP	PRP|@PRT-AUX<	_	25	case	_	_
-25	concretizar	concretizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	xcomp	_	_
+23	vir	vir	VERB	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	22	xcomp	_	MWE=vir_a|MWEPOS=AUX
+24	a	a	SCONJ	PRP|@PRT-AUX<	_	25	mark	_	_
+25	concretizar	concretizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	xcomp	_	_
 26	esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	27	det	_	_
 27	contacto	contacto	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	25	obj	_	_
 28	ainda	ainda	ADV	ADV|@>N	_	30	advmod	_	_

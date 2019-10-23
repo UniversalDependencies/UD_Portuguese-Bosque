@@ -1,6 +1,6 @@
 # text = Não se pense que esta ruptura modernizante passa pelo PT.
-# source = CETENFolha n=798 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF798-1
+# source = CETENFolha n=798 cad=Dinheiro sec=eco sem=94b
 # id = 3355
 1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	3	nsubj	_	_
@@ -17,8 +17,8 @@
 12	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = O partido é um aglomerado heterogêneo, que só se mantém unido pela perspectiva de vitória de Lula.
-# source = CETENFolha n=798 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF798-2
+# source = CETENFolha n=798 cad=Dinheiro sec=eco sem=94b
 # id = 3356
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	partido	partido	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -43,10 +43,9 @@
 20	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Teses modernas e sociais como o controle civil sobre o sistema de saúde esbarram em resistências enormes dos setores hegemônicos do PT, sob o argumento de que amarrariam a atuação do governo, logo agora que o partido se prepara para assumir o poder.
-# source = CETENFolha n=798 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF798-3
+# source = CETENFolha n=798 cad=Dinheiro sec=eco sem=94b
 # id = 3357
-# d2d = cc(modernas,e) -> cc(sociais,e)  #106
 1	Teses	tese	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	14	nsubj	_	_
 2	modernas	moderno	ADJ	<first-cjt>|ADJ|F|P|@N<	Gender=Fem|Number=Plur	1	amod	_	_
 3	e	e	CCONJ	<co-postnom>|KC|@CO	_	4	cc	_	d2d:#106
@@ -77,7 +76,7 @@
 26	sob	sob	ADP	PRP|@<ADVL	_	28	case	_	_
 27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	argumento	argumento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	ChangedBy=Issue137
-29	de	de	ADP	PRP|@N<ARG	_	31	mark	_	_
+29	de	de	SCONJ	PRP|@N<ARG	_	31	mark	_	_
 30	que	que	SCONJ	KS|@SUB	_	31	mark	_	_
 31	amarrariam	amarrar	VERB	<mv>|V|COND|3P|@FS-P<	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	28	acl	_	_
 32	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
@@ -88,24 +87,22 @@
 36	governo	governo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	33	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	31	punct	_	_
 38	logo	logo	ADV	<kc>|ADV|@>A	_	39	advmod	_	_
-39	agora	agora	ADV	<kc>|ADV|@<ADVL	_	31	advmod	_	_
-40	que	que	SCONJ	KS|@SUB	_	44	mark	_	_
+39	agora	agora	ADV	<kc>|ADV|@<ADVL	_	44	mark	_	MWE=agora_que|MWEPOS=SCONJ
+40	que	que	SCONJ	KS|@SUB	_	39	fixed	_	_
 41	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
 42	partido	partido	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	44	nsubj	_	_
 43	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	44	expl	_	ChangedBy=Issue135
-44	prepara	preparar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-A<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	ccomp	_	_
-45	para	para	ADP	PRP|@<PIV	_	46	mark	_	_
+44	prepara	preparar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-A<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	ccomp	_	_
+45	para	para	SCONJ	PRP|@<PIV	_	46	mark	_	_
 46	assumir	assumir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	44	xcomp	_	_
 47	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
 48	poder	poder	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	46	obj	_	ChangedBy=Issue165|SpaceAfter=No
 49	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Tampouco passa por FHC, representante da contemporização bem explicada, ou por Antonio Britto cujo voto, em favor da anistia total aos agricultores, semana passada, ressuscitou os piores prognósticos sobre seu estilo.
-# source = CETENFolha n=798 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF798-4
+# source = CETENFolha n=798 cad=Dinheiro sec=eco sem=94b
 # id = 3358
-# d2d = punct(FHC,,) -> punct(Antonio,,)  #106
-# d2d = cc(FHC,ou) -> cc(Antonio,ou)  #106
 1	Tampouco	tampouco	ADV	ADV|@ADVL>	_	2	advmod	_	_
 2	passa	passar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	por	por	ADP	<first-cjt>|PRP|@<PIV	_	4	case	_	_
@@ -117,7 +114,7 @@
 8	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	contemporização	contemporização	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
 10	bem	bem	ADV	<quant>|ADV|@>A	_	11	advmod	_	_
-11	explicada	explicado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	9	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+11	explicada	explicar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	9	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 13	ou	ou	CCONJ	<co-piv>|KC|@CO	_	15	cc	_	d2d:#106
 14	por	por	ADP	<cjt>|PRP|@<PIV	_	15	case	_	_
@@ -127,7 +124,7 @@
 18	voto	voto	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	33	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 20	em	em	ADP	<sam->|PRP|@ADVL>	_	33	obl	_	MWE=em_favor_de
-21	favor	favor	NOUN	N|@P<	_	20	fixed	_	_
+21	favor	favor	NOUN	N|@P<	Gender=Masc|Number=Sing	20	fixed	_	_
 22-23	da	_	_	_	_	_	_	_	_
 22	de	de	ADP	PRP|@N<	_	20	fixed	_	_
 23	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_

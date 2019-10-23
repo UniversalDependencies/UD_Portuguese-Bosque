@@ -1,10 +1,7 @@
 # text = A Assembleia aprovou ainda moções que reclamavam a divulgação dos resultados provisórios da avaliação das universidades, a fiscalização da constitucionalidade da Lei de Financiamento do Ensino Superior Público, e insistiam nas campanhas de divulgação das queixa dos estudantes, aproveitando, por exemplo, a presença da comunicação social no próximo jogo Académica-Benfica.
-# source = CETEMPúblico n=59 sec=soc sem=98a
 # sent_id = CP59-1
+# source = CETEMPúblico n=59 sec=soc sem=98a
 # id = 329
-# d2d = punct(divulgação,,) -> punct(fiscalização,,)  #106
-# d2d = punct(reclamavam,,) -> punct(insistiam,,)  #106
-# d2d = cc(reclamavam,e) -> cc(insistiam,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Assembleia	assembleia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	aprovou	aprovar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -85,17 +82,14 @@
 67	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Entre as propostas mais ousadas, decidiu-se pedir ao Presidente da República que proponha um referendo sobre a Lei do Financiamento, desafiar as televisões a promoverem um debate entre o ministro da Educação e todos os dirigentes associativos, pintar de negro a sede da Direcção Regional de Educação do Centro e remeter envelopes com folhas de papel higiénico ao ministério.
-# source = CETEMPúblico n=59 sec=soc sem=98a
 # sent_id = CP59-2
+# source = CETEMPúblico n=59 sec=soc sem=98a
 # id = 330
-# d2d = cc(ministro,e) -> cc(dirigentes,e)  #106
-# d2d = punct(pedir,,) -> punct(desafiar,,)  #106
-# d2d = cc(pedir,e) -> cc(remeter,e)  #106
 1	Entre	entre	ADP	PRP|@ADVL>	_	3	case	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	propostas	proposta	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	7	obl	_	ChangedBy=Issue137
 4	mais	mais	ADV	<quant>|ADV|@>A	_	5	advmod	_	_
-5	ousadas	ousado	ADJ	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur	3	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+5	ousadas	ousado	ADJ	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur	3	amod	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7-8	decidiu-se	_	_	_	_	_	_	_	_
 7	decidiu	decidir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -124,7 +118,7 @@
 27	desafiar	desafiar	VERB	<mv>|<cjt>|V|INF|@ICL-<ACC	VerbForm=Inf	9	conj	_	_
 28	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_
 29	televisões	televisão	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	27	obj	_	_
-30	a	a	ADP	PRP|@<PIV	_	31	mark	_	_
+30	a	a	SCONJ	PRP|@<PIV	_	31	mark	_	_
 31	promoverem	promover	VERB	<mv>|<cjt>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	27	xcomp	_	_
 32	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 33	debate	debate	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	31	obj	_	_
@@ -134,7 +128,7 @@
 37-38	da	_	_	_	_	_	_	_	_
 37	de	de	ADP	<sam->|PRP|@N<	_	39	case	_	_
 38	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
-39	Educação	educação	NOUN	N|@P<	_	36	nmod	_	_
+39	Educação	educação	NOUN	N|@P<	Gender=Fem|Number=Sing	36	nmod	_	_
 40	e	e	CCONJ	<co-prparg>|KC|@CO	_	43	cc	_	d2d:#106
 41	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	43	det	_	MWE=todos_os
 42	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	fixed	_	_

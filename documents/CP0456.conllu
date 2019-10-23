@@ -1,13 +1,7 @@
 # text = «Nós, dentro de Espanha, sempre manifestámos que deveria haver interesse por Portugal, que sempre teve um certo receio, porque a história foi o que foi», comenta ao PÚBLICO Jordi Pujol, «se temos uma identidade própria e não temos medo, muito menos os portugueses, que têm um Estado próprio».
-# source = CETEMPúblico n=456 sec=pol sem=96a
 # sent_id = CP456-1
+# source = CETEMPúblico n=456 sec=pol sem=96a
 # id = 2404
-# d2d = punct(manifestámos,,) -> punct(temos,,)  #106
-# d2d = punct(manifestámos,,) -> punct(temos,,)  #106
-# d2d = cc(temos,e) -> cc(temos,e)  #106
-# d2d = punct(manifestámos,») -> punct(temos,»)  #106
-# d2d = punct(manifestámos,,) -> punct(temos,,)  #106
-# d2d = punct(manifestámos,,) -> punct(temos,,)  #106
 1	«	«	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Nós	nós	PRON	PERS|M/F|1P|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	9	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
@@ -18,19 +12,19 @@
 8	sempre	sempre	ADV	ADV|@ADVL>	_	9	advmod	_	_
 9	manifestámos	manifestar	VERB	<first-cjt>|<mv>|V|PS|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	33	parataxis	_	_
 10	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
-11	deveria	dever	AUX	<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	12	aux	_	_
-12	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	ccomp	_	_
+11	deveria	dever	VERB	<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	9	ccomp	_	_
+12	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
 13	interesse	interesse	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
 14	por	por	ADP	PRP|@N<ARG	_	15	case	_	_
 15	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 17	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	19	nsubj	_	_
 18	sempre	sempre	ADV	ADV|@ADVL>	_	19	advmod	_	_
 19	teve	ter	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	acl:relcl	_	_
 20	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 21	certo	certo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	22	det	_	_
 22	receio	receio	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	19	obj	_	ChangedBy=Issue165|SpaceAfter=No
-23	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
+23	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 24	porque	porque	SCONJ	KS|@SUB	_	28	mark	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	história	história	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	28	nsubj	_	_
@@ -39,7 +33,7 @@
 29	que	que	PRON	<rel>|INDP|M|S|@SC>	Gender=Masc|Number=Sing|PronType=Rel	28	xcomp	_	_
 30	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	28	cop	_	ChangedBy=Issue165|ChangedBy=Issue167|SpaceAfter=No
 31	»	»	PUNCT	PU|@PU	_	42	punct	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-32	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
+32	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
 33	comenta	comentar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 34-35	ao	_	_	_	_	_	_	_	_
 34	a	a	ADP	<sam->|PRP|@<PIV	_	36	case	_	_
@@ -47,7 +41,7 @@
 36	PÚBLICO	Público	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	33	obj	_	_
 37	Jordi	Jordi	PROPN	_	Gender=Masc|Number=Sing	33	nsubj	_	ChangedBy=Issue119|MWE=Jordi_Pujol|MWEPOS=PROPN
 38	Pujol	Pujol	PROPN	_	Number=Sing	37	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-39	,	,	PUNCT	PU|@PU	_	42	punct	_	d2d:#106
+39	,	,	PUNCT	PU|@PU	_	38	punct	_	d2d:#106
 40	«	«	PUNCT	PU|@PU	_	42	punct	_	ChangedBy=Issue165|SpaceAfter=No
 41	se	se	SCONJ	KS|@SUB	_	42	mark	_	_
 42	temos	ter	VERB	<first-cjt>|<mv>|<cjt>|V|PR|1P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	conj	_	_
@@ -73,22 +67,22 @@
 62	.	.	PUNCT	PU|@PU	_	33	punct	_	_
 
 # text = É desta forma directa que o presidente da Generalitat, sem dúvida um dos dirigentes políticos mais influentes de Espanha, equaciona as relações entre os dois países peninsulares.
-# source = CETEMPúblico n=456 sec=pol sem=96a
 # sent_id = CP456-2
+# source = CETEMPúblico n=456 sec=pol sem=96a
 # id = 2405
-1	É	é	ADV	<foc>|ADV|@FOC>	_	25	mark	_	_
+1	É	é	SCONJ	<foc>|ADV|@FOC>	_	25	mark	_	_
 2-3	desta	_	_	_	_	_	_	_	_
 2	de	de	ADP	<first-cjt>|PRP|@ADVL>	_	4	case	_	_
 3	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_
 4	forma	forma	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	25	obl	_	ChangedBy=Issue137
 5	directa	directo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	_
-6	que	que	ADV	<foc>|ADV|@<FOC	_	25	mark	_	_
+6	que	que	SCONJ	<foc>|ADV|@<FOC	_	25	mark	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	presidente	presidente	NOUN	<cjt>|<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	4	conj	_	MWE=presidente_da_Generalitat
 9-10	da	_	_	_	_	_	_	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
-11	Generalitat	generalitat	NOUN	N|@P<	_	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+11	Generalitat	generalitat	NOUN	N|@P<	Gender=Fem|Number=Sing	8	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 13	sem	sem	ADP	PRP|@>A	_	14	case	_	_
 14	dúvida	dúvida	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
@@ -114,13 +108,9 @@
 33	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
 # text = Pujol recebe oficialmente pela primeira vez o Presidente da República de Portugal -- uma anterior visita de Mário Soares, no Outono de 1987, foi privada --, mas não esquece o ocorrido há quase nove anos.
-# source = CETEMPúblico n=456 sec=pol sem=96a
 # sent_id = CP456-3
+# source = CETEMPúblico n=456 sec=pol sem=96a
 # id = 2406
-# d2d = punct(recebe,,) -> punct(esquece,,)  #106
-# d2d = punct(recebe,,) -> punct(esquece,,)  #106
-# d2d = cc(recebe,mas) -> cc(esquece,mas)  #106
-# d2d = punct(recebe,,) -> punct(esquece,,)  #106
 1	Pujol	Pujol	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	recebe	receber	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	oficialmente	oficialmente	ADV	ADV|@<ADVL	_	2	advmod	_	_
@@ -144,14 +134,14 @@
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	Mário	Mário	PROPN	_	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue119|MWE=Mário_Soares|MWEPOS=PROPN
 21	Soares	Soares	PROPN	_	Number=Sing	20	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-22	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
+22	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 23-24	no	_	_	_	_	_	_	_	_
 23	em	em	ADP	<sam->|PRP|@N<PRED	_	25	case	_	_
 24	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	Outono	Outono	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
 27	1987	1987	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	25	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
-28	,	,	PUNCT	PU|@PU	_	35	punct	_	d2d:#106
+28	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
 29	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	30	cop	_	ChangedBy=Issue167
 30	privada	privado	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	2	advcl	_	_
 31	--	--	PUNCT	PU|@PU	_	30	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -168,11 +158,9 @@
 42	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = «A visita de Soares foi privada mas muito positiva para nós», assegura, relembrando tempos de busca de protagonismo que, nos últimos três anos, com socialistas e conservadores no poder em Madrid, deram lugar à condição de parceiro indispensável.
-# source = CETEMPúblico n=456 sec=pol sem=96a
 # sent_id = CP456-4
+# source = CETEMPúblico n=456 sec=pol sem=96a
 # id = 2407
-# d2d = cc(socialistas,e) -> cc(conservadores,e)  #106
-# d2d = cc(privada,mas) -> cc(positiva,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	visita	visita	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
@@ -195,7 +183,7 @@
 20	busca	busca	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
 21	de	de	ADP	PRP|@N<ARG	_	22	case	_	_
 22	protagonismo	protagonismo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
-23	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	41	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
+23	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	41	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 25-26	nos	_	_	_	_	_	_	_	_
 25	em	em	ADP	<sam->|PRP|@ADVL>	_	29	case	_	_

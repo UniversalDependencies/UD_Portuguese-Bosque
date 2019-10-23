@@ -1,6 +1,6 @@
 # text = A equipe de Maluf não é a primeira a deixar de lado o problema de enchentes.
-# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF433-1
+# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # id = 1809
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	equipe	equipe	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
@@ -10,7 +10,7 @@
 6	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	ChangedBy=Issue167
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	primeira	primeiro	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing|NumType=Ord	0	root	_	ChangedBy=Issue172
-9	a	a	ADP	PRP|@N<	_	10	mark	_	_
+9	a	a	SCONJ	PRP|@N<	_	10	mark	_	_
 10	deixar	deixar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
 11	de	de	ADP	PRP|@<ADVL	_	12	case	_	_
 12	lado	lado	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	ChangedBy=Issue137
@@ -21,8 +21,8 @@
 17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = A prefeita Luiza Erundina priorizou o transporte público.
-# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF433-2
+# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # id = 1810
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	prefeita	prefeita	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
@@ -35,10 +35,9 @@
 9	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Jânio Quadros também gastou em obras viárias e Mario Covas marcou sua gestão pela construção de corredores de ônibus exclusivos, como o da avenida Nove de Julho.
-# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF433-3
+# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # id = 1811
-# d2d = cc(gastou,e) -> cc(marcou,e)  #106
 1	Jânio	Jânio	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	ChangedBy=Issue119|MWE=Jânio_Quadros|MWEPOS=PROPN
 2	Quadros	Quadros	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	também	também	ADV	ADV|@ADVL>	_	4	advmod	_	_
@@ -63,19 +62,19 @@
 21	exclusivos	exclusivo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	18	amod	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 23	como	como	ADP	<rel>|<com>|ADV|@N<PRED	_	24	case	_	_
-24	o	o	PRON	<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	18	nmod	_	_
+24	o	o	PRON	<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	18	parataxis	_	_
 25-26	da	_	_	_	_	_	_	_	_
 25	de	de	ADP	<sam->|PRP|@N<	_	27	case	_	_
 26	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	avenida	avenida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	24	nmod	_	_
 28	Nove	Nove	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	27	appos	_	MWE=Nove_de_Julho
-29	de	de	ADP	PRP|@N<	_	30	case	_	_
-30	Julho	Julho	PROPN	PROP|@P<	Number=Sing	28	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+29	de	de	ADP	PRP|@N<	_	30	flat:name	_	_
+30	Julho	Julho	PROPN	PROP|@P<	Number=Sing	28	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 31	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Ontem a cidade conferiu os estragos causados pela chuva de quinta feira, a maior chuva de março desde 1930.
-# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF433-4
+# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # id = 1812
 1	Ontem	ontem	ADV	ADV|@ADVL>	_	4	advmod	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -90,7 +89,7 @@
 10	chuva	chuva	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obl:agent	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	quinta	quinta	NUM	_	NumType=Ord	10	nmod	_	MWE=quinta_feira|MWEPOS=NOUN
-13	feira	feira	NOUN	_	_	12	compound	_	ChangedBy=Issue165|SpaceAfter=No
+13	feira	feira	NOUN	_	Gender=Fem|Number=Sing	12	compound	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	17	punct	_	_
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 16	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	17	amod	_	_
@@ -102,10 +101,9 @@
 22	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Reynaldo de Barros, secretário de Vias Públicas, participou de uma cerimônia pela manhã e depois não pôde mais ser encontrado em seu gabinete.
-# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF433-5
+# source = CETENFolha n=433 cad=Cotidiano sec=soc sem=94b
 # id = 1813
-# d2d = cc(participou,e) -> cc(encontrado,e)  #106
 1	Reynaldo	Reynaldo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	MWE=Reynaldo_de_Barros
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	Barros	Barros	PROPN	PROP|@P<	Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -126,10 +124,10 @@
 17	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	d2d:#106
 18	depois	depois	ADV	ADV|@ADVL>	_	23	advmod	_	_
 19	não	não	ADV	_	Polarity=Neg	23	advmod	_	_
-20	pôde	poder	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	aux	_	_
+20	pôde	poder	VERB	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	conj	_	_
 21	mais	mais	ADV	<atemp>|ADV|@ADVL>	_	23	advmod	_	_
 22	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	23	aux:pass	_	_
-23	encontrado	encontrar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	conj	_	_
+23	encontrado	encontrar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	20	xcomp	_	_
 24	em	em	ADP	PRP|@<ADVL	_	26	case	_	_
 25	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	26	det	_	_
 26	gabinete	gabinete	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No

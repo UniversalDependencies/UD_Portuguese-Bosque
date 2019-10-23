@@ -1,13 +1,9 @@
 # text = «Quando viajar pela Europa de carro, prefira as estradas secundárias às auto-estradas, pois nelas não há cobrança de pedágio e você poderá conhecer pequenas cidades, lugarejos, sítios e plantações de uvas com degustação de vinhos.»
-# source = CETENFolha n=469 cad=Turismo sec=soc sem=94b
 # sent_id = CF469-1
+# source = CETENFolha n=469 cad=Turismo sec=soc sem=94b
 # id = 1990
-# d2d = punct(cidades,,) -> punct(sítios,,)  #106
-# d2d = punct(cidades,,) -> punct(lugarejos,,)  #106
-# d2d = cc(cidades,e) -> cc(plantações,e)  #106
-# d2d = cc(há,e) -> cc(conhecer,e)  #106
 1	«	«	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	3	advmod	_	_
+2	Quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	3	mark	_	_
 3	viajar	viajar	VERB	<mv>|V|FUT|1/3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Tense=Fut|VerbForm=Fin	10	advcl	_	_
 4-5	pela	_	_	_	_	_	_	_	_
 4	por	por	ADP	<sam->|PRP|@<PIV	_	6	case	_	_
@@ -36,8 +32,8 @@
 25	pedágio	pedágio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
 26	e	e	CCONJ	<co-advl>|<co-fmc>|<co-vfin>|KC|@CO	_	29	cc	_	d2d:#106
 27	você	você	PRON	PERS|M/F|3S|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
-28	poderá	poder	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	aux	_	_
-29	conhecer	conhecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	conj	_	_
+28	poderá	poder	VERB	<cjt>|<aux>|V|FUT|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	22	conj	_	_
+29	conhecer	conhecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	xcomp	_	_
 30	pequenas	pequeno	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	31	amod	_	_
 31	cidades	cidade	NOUN	<first-cjt>|<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	29	obj	_	ChangedBy=Issue165|SpaceAfter=No
 32	,	,	PUNCT	PU|@PU	_	33	punct	_	d2d:#106
@@ -56,12 +52,9 @@
 45	»	»	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = «Dobrando pelo vinco a calça jeans ou a calça de veludo, e estendendo-a sobre o carpete do quarto do hotel, ela fica como se tivesse sido passada a ferro.»
-# source = CETENFolha n=469 cad=Turismo sec=soc sem=94b
 # sent_id = CF469-2
+# source = CETENFolha n=469 cad=Turismo sec=soc sem=94b
 # id = 1991
-# d2d = cc(Dobrando,e) -> cc(estendendo-,e)  #106
-# d2d = punct(Dobrando,,) -> punct(estendendo-,,)  #106
-# d2d = cc(calça,ou) -> cc(calça,ou)  #106
 1	«	«	PUNCT	PU|@PU	_	29	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Dobrando	dobrar	VERB	<mv>|<first-cjt>|V|GER|@ICL-ADVL>	VerbForm=Ger	29	advcl	_	_
 3-4	pelo	_	_	_	_	_	_	_	_
@@ -95,7 +88,7 @@
 27	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 28	ela	ela	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
 29	fica	ficar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-30	como	como	ADV	ADV|@SUB	_	34	mark	_	MWE=como_se
+30	como	como	SCONJ	ADV|@SUB	_	34	mark	_	MWE=como_se
 31	se	se	SCONJ	KS|@A<	_	30	fixed	_	_
 32	tivesse	ter	AUX	<aux>|V|IMPF|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	34	aux	_	_
 33	sido	ser	AUX	<aux>|<mqpc-subj>|V|PCP|@ICL-AUX<	VerbForm=Part	34	aux:pass	_	_

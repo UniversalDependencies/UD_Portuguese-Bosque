@@ -1,6 +1,6 @@
 # text = No realismo moderno de John Cassavettes (1929-89), por exemplo, o ator construía o personagem em tempo real diante da câmera, baseado no improviso.
-# source = CETENFolha n=975 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF975-1
+# source = CETENFolha n=975 cad=Ilustrada sec=nd sem=94a
 # id = 4124
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -11,7 +11,7 @@
 6	John	John	PROPN	_	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue119|MWE=John_Cassavettes|MWEPOS=PROPN
 7	Cassavettes	Cassavettes	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
 8	(	(	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
-9	1929-89	1929-89	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	6	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+9	1929-89	1929-89	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	6	parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 10	)	)	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 12	por	por	ADP	PRP|@ADVL>	_	17	advmod	_	MWE=por_exemplo|MWEPOS=ADV
@@ -25,11 +25,11 @@
 20	em	em	ADP	PRP|@<ADVL	_	21	case	_	_
 21	tempo	tempo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	ChangedBy=Issue137
 22	real	real	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	amod	_	_
-23	diante	diante	ADV	ADV|@<ADVL	_	17	advmod	_	MWE=diante_de
+23	diante	diante	ADV	ADV|@<ADVL	_	26	case	_	MWE=diante_de|MWEPOS=ADP
 24-25	da	_	_	_	_	_	_	_	_
-24	de	de	ADP	PRP|@A<	_	26	case	_	_
+24	de	de	ADP	PRP|@A<	_	23	fixed	_	_
 25	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	câmera	câmera	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obl	_	ChangedBy=Issue165|SpaceAfter=No
+26	câmera	câmera	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 28	baseado	basear	VERB	<mv>|V|PCP|M|S|@ICL-<ADVL	Gender=Masc|Number=Sing|VerbForm=Part	17	advcl	_	_
 29-30	no	_	_	_	_	_	_	_	_
@@ -39,11 +39,9 @@
 32	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = Cada hesitação, cada silêncio, cada desvio do olhar era um ganho na contabilidade do sublime que o diretor-autor planejava.
-# source = CETENFolha n=975 cad=Ilustrada sec=nd sem=94a
 # sent_id = CF975-2
+# source = CETENFolha n=975 cad=Ilustrada sec=nd sem=94a
 # id = 4125
-# d2d = punct(hesitação,,) -> punct(desvio,,)  #106
-# d2d = punct(hesitação,,) -> punct(silêncio,,)  #106
 1	Cada	cada	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	2	det	_	_
 2	hesitação	hesitação	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106

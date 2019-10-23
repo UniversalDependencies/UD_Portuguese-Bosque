@@ -1,9 +1,7 @@
 # text = Para os cubanos, o Che é um semi-Deus vindo de outro lado que quis fazer deles «homens novos» inventando o trabalho gratuito, a abnegação política, o internacionalismo.
-# source = CETEMPúblico n=933 sec=pol sem=95b
 # sent_id = CP933-1
+# source = CETEMPúblico n=933 sec=pol sem=95b
 # id = 4805
-# d2d = punct(trabalho,,) -> punct(internacionalismo,,)  #106
-# d2d = punct(trabalho,,) -> punct(abnegação,,)  #106
 1	Para	para	ADP	PRP|@ADVL>	_	3	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	cubanos	cubano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -22,9 +20,9 @@
 16	fazer	fazer	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	15	xcomp	_	_
 17-18	deles	_	_	_	_	_	_	_	_
 17	de	de	ADP	<sam->|PRP|@<PIV	_	18	case	_	_
-18	eles	ele	PRON	<-sam>|PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	iobj	_	_
+18	eles	ele	PRON	<-sam>|PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	16	obj	_	_
 19	«	«	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
-20	homens	homem	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	obj	_	_
+20	homens	homem	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	16	xcomp	_	_
 21	novos	novo	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	20	amod	_	ChangedBy=Issue165|SpaceAfter=No
 22	»	»	PUNCT	PU|@PU	_	20	punct	_	_
 23	inventando	inventar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	16	advcl	_	_
@@ -41,8 +39,8 @@
 34	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Mas que resta hoje destes sonhos?
-# source = CETEMPúblico n=933 sec=pol sem=95b
 # sent_id = CP933-2
+# source = CETEMPúblico n=933 sec=pol sem=95b
 # id = 4806
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	3	nsubj	_	_
@@ -55,13 +53,9 @@
 8	?	?	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Um monte de boas intenções abandonadas junto dos caixotes de lixo das cafetarias em dólares, onde jovens e velhos vasculham, ou pisadas pelos saltos-agulha das centenas de «jineteras» (prostitutas) do Malecón e da Quinta Avenida.
-# source = CETEMPúblico n=933 sec=pol sem=95b
 # sent_id = CP933-3
+# source = CETEMPúblico n=933 sec=pol sem=95b
 # id = 4807
-# d2d = cc(jovens,e) -> cc(velhos,e)  #106
-# d2d = cc(abandonadas,ou) -> cc(pisadas,ou)  #106
-# d2d = punct(abandonadas,,) -> punct(pisadas,,)  #106
-# d2d = cc(Malecón,e) -> cc(de,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	monte	monte	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	de	de	ADP	PRP|@N<	_	5	case	_	_
@@ -81,13 +75,13 @@
 15	cafetarias	cafetaria	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	10	nmod	_	_
 16	em	em	ADP	PRP|@N<	_	17	case	_	_
 17	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-18	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
-19	onde	onde	ADV	<rel>|ADV|@ADVL>	_	23	advmod	_	_
+18	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+19	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Plur|PronType=Rel	23	obl	_	_
 20	jovens	jovem	NOUN	<first-cjt>|<n>|ADJ|M/F|P|@SUBJ>	Gender=Unsp|Number=Plur	23	nsubj	_	_
 21	e	e	CCONJ	<co-subj>|KC|@CO	_	22	cc	_	d2d:#106
 22	velhos	velho	NOUN	<cjt>|<n>|ADJ|M|P|@SUBJ>	Gender=Masc|Number=Plur	20	conj	_	_
 23	vasculham	vasculhar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
-24	,	,	PUNCT	PU|@PU	_	26	punct	_	_
+24	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 25	ou	ou	CCONJ	<co-pcv>|KC|@CO	_	26	cc	_	d2d:#106
 26	pisadas	pisar	VERB	<cjt>|<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	6	conj	_	ChangedBy=Issue149
 27-28	pelos	_	_	_	_	_	_	_	_
@@ -118,8 +112,8 @@
 48	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Aos 15 anos, muitas «crianças do Che» deixam a escola primária e encontram-se na rua para «buscarse la vida de qualquier forma».
-# source = CETEMPúblico n=933 sec=pol sem=95b
 # sent_id = CP933-4
+# source = CETEMPúblico n=933 sec=pol sem=95b
 # id = 4808
 1-2	Aos	_	_	_	_	_	_	_	_
 1	A	a	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
@@ -137,8 +131,8 @@
 12	»	»	PUNCT	PU|@PU	_	8	punct	_	_
 13	deixam	deixar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	escola	escola	NOUN	_	_	13	obj	_	MWE=escola_primária|MWEPOS=NOUN
-16	primária	primária	ADJ	_	_	15	amod	_	_
+15	escola	escola	NOUN	_	Gender=Fem|Number=Sing	13	obj	_	MWE=escola_primária|MWEPOS=NOUN
+16	primária	primária	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_
 17	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	18	cc	_	d2d:#106
 18-19	encontram-se	_	_	_	_	_	_	_	_
 18	encontram	encontrar	VERB	<mv>|<cjt>|<hyphen>|<se-passive>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
@@ -147,7 +141,7 @@
 20	em	em	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	rua	rua	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	ChangedBy=Issue137
-23	para	para	ADP	PRP|@<ADVL	_	25	mark	_	_
+23	para	para	SCONJ	PRP|@<ADVL	_	25	mark	_	_
 24	«	«	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 25	buscarse	buscarse	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	18	advcl	_	_
 26	la	la	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
@@ -159,8 +153,8 @@
 32	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Para os «antigos», o Che está prestes a morrer uma segunda vez.
-# source = CETEMPúblico n=933 sec=pol sem=95b
 # sent_id = CP933-5
+# source = CETEMPúblico n=933 sec=pol sem=95b
 # id = 4809
 1	Para	para	ADP	PRP|@ADVL>	_	4	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -172,7 +166,7 @@
 8	Che	Che	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
 9	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	ChangedBy=Issue167
 10	prestes	prestes	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
-11	a	a	ADP	PRP|@A<ARG	_	12	mark	_	_
+11	a	a	SCONJ	PRP|@A<ARG	_	12	mark	_	_
 12	morrer	morrer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	advcl	_	_
 13	uma	um	NUM	<card>|NUM|F|S|@>N	NumType=Card	15	nummod	_	ChangedBy=Issue168
 14	segunda	segundo	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	15	amod	_	ChangedBy=Issue172
@@ -180,8 +174,8 @@
 16	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = É preciso um meio dia de trabalho a um operário para ganhar a famosa nota vermelha de três pesos com a efígie do Che que lhe permitirá comprar três bananas no mercado livre camponês.
-# source = CETEMPúblico n=933 sec=pol sem=95b
 # sent_id = CP933-6
+# source = CETEMPúblico n=933 sec=pol sem=95b
 # id = 4810
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	ChangedBy=Issue167
 2	preciso	preciso	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
@@ -193,7 +187,7 @@
 8	a	a	ADP	PRP|@<PIV	_	10	case	_	_
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	operário	operário	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	2	obj	_	_
-11	para	para	ADP	PRP|@<ADVL	_	12	mark	_	_
+11	para	para	SCONJ	PRP|@<ADVL	_	12	mark	_	_
 12	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	advcl	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 14	famosa	famoso	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	15	amod	_	_

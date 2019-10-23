@@ -1,10 +1,7 @@
 # text = O jogo dos campeões escoceses, apesar das múltiplas tentativas dos futebolistas do Rangers de maior nome, como Hateley e Durrant, não só perdia ímpeto mas morria em qualidade, quando enfrentava o meio-campo do Celtic, onde McStay se exibia a grande altura.
-# source = CETEMPúblico n=230 sec=des sem=93b
 # sent_id = CP230-1
+# source = CETEMPúblico n=230 sec=des sem=93b
 # id = 1226
-# d2d = cc(Hateley,e) -> cc(Durrant,e)  #106
-# d2d = punct(perdia,,) -> punct(enfrentava,,)  #106
-# d2d = cc(perdia,mas) -> cc(morria,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	jogo	jogo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	30	nsubj	_	_
 3-4	dos	_	_	_	_	_	_	_	_
@@ -13,12 +10,12 @@
 5	campeões	campeão	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
 6	escoceses	escocês	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-8	apesar	apesar	ADV	ADV|@ADVL>	_	30	advmod	_	MWE=apesar_de
+8	apesar	apesar	ADV	ADV|@ADVL>	_	12	case	_	MWE=apesar_de|MWEPOS=ADP
 9-10	das	_	_	_	_	_	_	_	_
-9	de	de	ADP	PRP|@A<	_	12	case	_	_
+9	de	de	ADP	PRP|@A<	_	8	fixed	_	_
 10	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	12	det	_	_
 11	múltiplas	múltiplo	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	12	amod	_	_
-12	tentativas	tentativa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	8	obl	_	_
+12	tentativas	tentativa	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	30	obl	_	_
 13-14	dos	_	_	_	_	_	_	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
@@ -32,10 +29,10 @@
 21	nome	nome	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 23	como	como	ADP	<com>|PRP|@N<	_	24	case	_	_
-24	Hateley	Hateley	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	15	appos	_	_
+24	Hateley	Hateley	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	15	parataxis	_	_
 25	e	e	CCONJ	KC|@CO	_	26	cc	_	d2d:#106
 26	Durrant	Durrant	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	24	conj	_	ChangedBy=Issue165|SpaceAfter=No
-27	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+27	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 28	não	não	ADV	_	Polarity=Neg	30	advmod	_	_
 29	só	só	ADV	ADV|@ADVL>	_	30	advmod	_	_
 30	perdia	perder	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -54,7 +51,7 @@
 42	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	_	_
 43	Celtic	Celtic	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 44	,	,	PUNCT	PU|@PU	_	38	punct	_	_
-45	onde	onde	ADV	<rel>|ADV|@ADVL>	_	48	advmod	_	_
+45	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	48	obl	_	_
 46	McStay	McStay	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	48	nsubj	_	_
 47	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	48	expl	_	ChangedBy=Issue135
 48	exibia	exibir	VERB	<mv>|<se-passive>|V|IMPF|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	40	acl:relcl	_	_
@@ -64,13 +61,12 @@
 52	.	.	PUNCT	PU|@PU	_	30	punct	_	_
 
 # text = Por outro lado, os defesas-centrais do Celtic, Mowbray e Grant, sempre coadjuvados por McGinlay, chegaram para reduzir a pouco o ataque do Rangers, onde Hateley não dispunha do apoio habitual.
-# source = CETEMPúblico n=230 sec=des sem=93b
 # sent_id = CP230-2
+# source = CETEMPúblico n=230 sec=des sem=93b
 # id = 1227
-# d2d = cc(Mowbray,e) -> cc(Grant,e)  #106
-1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	MWE=Por_outro_lado
-2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	_
-3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	20	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	Por	por	ADP	PRP|@ADVL>	_	20	cc	_	MWE=Por_outro_lado|MWEPOS=CCONJ
+2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	1	fixed	_	_
+3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
 6	defesas-centrais	defesa-central	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	20	nsubj	_	_
@@ -89,7 +85,7 @@
 18	McGinlay	McGinlay	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	16	obl:agent	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 20	chegaram	chegar	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-21	para	para	ADP	PRP|@<ADVL	_	22	mark	_	_
+21	para	para	SCONJ	PRP|@<ADVL	_	22	mark	_	_
 22	reduzir	reduzir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	advcl	_	_
 23	a	a	ADP	PRP|@<ADVL	_	24	case	_	_
 24	pouco	pouco	ADV	<quant>|ADV|@P<	_	22	advmod	_	_
@@ -100,7 +96,7 @@
 28	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	Rangers	Rangers	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	26	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	22	punct	_	_
-31	onde	onde	ADV	<rel>|ADV|@ADVL>	_	34	advmod	_	_
+31	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	34	obl	_	_
 32	Hateley	Hateley	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	34	nsubj	_	_
 33	não	não	ADV	_	Polarity=Neg	34	advmod	_	_
 34	dispunha	dispor	VERB	<mv>|V|IMPF|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	acl:relcl	_	_
@@ -112,8 +108,8 @@
 39	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = O primeiro tempo terminou sem golos.
-# source = CETEMPúblico n=230 sec=des sem=93b
 # sent_id = CP230-3
+# source = CETEMPúblico n=230 sec=des sem=93b
 # id = 1228
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	primeiro	primeiro	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	3	amod	_	ChangedBy=Issue172
@@ -124,8 +120,8 @@
 7	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Na segunda parte, apesar de o Rangers ter tentado o tudo por tudo para rapidamente resolver a partida, o Celtic depressa recuperou o comando das operações.
-# source = CETEMPúblico n=230 sec=des sem=93b
 # sent_id = CP230-4
+# source = CETEMPúblico n=230 sec=des sem=93b
 # id = 1229
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
@@ -133,17 +129,17 @@
 3	segunda	segundo	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	4	amod	_	ChangedBy=Issue172
 4	parte	parte	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	25	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-6	apesar	apesar	ADV	ADV|@ADVL>	_	25	advmod	_	MWE=apesar_de
-7	de	de	ADP	PRP|@A<	_	11	mark	_	_
+6	apesar	apesar	ADV	ADV|@ADVL>	_	11	mark	_	MWE=apesar_de|MWEPOS=SCONJ
+7	de	de	ADP	PRP|@A<	_	6	fixed	_	_
 8	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	Rangers	Rangers	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 10	ter	ter	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	11	aux	_	_
-11	tentado	tentar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	6	advcl	_	_
+11	tentado	tentar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	25	advcl	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	tudo	tudo	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	11	obj	_	_
 14	por	por	ADP	PRP|@N<	_	15	case	_	_
 15	tudo	tudo	PRON	<quant>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	13	nmod	_	_
-16	para	para	ADP	PRP|@<ADVL	_	18	mark	_	_
+16	para	para	SCONJ	PRP|@<ADVL	_	18	mark	_	_
 17	rapidamente	rapidamente	ADV	ADV|@ADVL>	_	18	advmod	_	_
 18	resolver	resolver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	_
 19	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
@@ -162,10 +158,9 @@
 31	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
 # text = Mas o jogador russo do Rangers Mikhailichenko começou a evidenciar-se devido à frescura e à rapidez do seu jogo.
-# source = CETEMPúblico n=230 sec=des sem=93b
 # sent_id = CP230-5
+# source = CETEMPúblico n=230 sec=des sem=93b
 # id = 1230
-# d2d = cc(frescura,e) -> cc(rapidez,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	11	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	jogador	jogador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
@@ -175,10 +170,10 @@
 6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	Rangers	Rangers	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 8	Mikhailichenko	Mikhailichenko	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	3	appos	_	_
-9	começou	começar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux	_	_
-10	a	a	ADP	PRP|@PRT-AUX<	_	11	case	_	_
+9	começou	começar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=começou_a|MWEPOS=AUX
+10	a	a	SCONJ	PRP|@PRT-AUX<	_	11	mark	_	_
 11-12	evidenciar-se	_	_	_	_	_	_	_	_
-11	evidenciar	evidenciar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+11	evidenciar	evidenciar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
 12	se	se	PRON	<refl>|PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
 13	devido	devido	ADV	ADV|@<ADVL	_	11	advmod	_	MWE=devido_a
 14-15	à	_	_	_	_	_	_	_	_
@@ -198,18 +193,18 @@
 25	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Era de facto por ali que começava a surgir perigo para o Celtic, e não surpreendeu que, com pouco mais de uma hora de jogo, fosse esse mesmo Mikhailichenko a colocar a bola à frente de McCoist, de modo a permitir-lhe a marcação do primeiro golo da partida.
-# source = CETEMPúblico n=230 sec=des sem=93b
 # sent_id = CP230-6
+# source = CETEMPúblico n=230 sec=des sem=93b
 # id = 1231
 1	Era	era	ADV	<foc>|ADV|@ADVL>	_	9	advmod	_	_
 2	de	de	ADP	PRP|@ADVL>	_	3	case	_	MWE=de_facto
 3	facto	facto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	_
 4	por	por	ADP	PRP|@ADVL>	_	5	case	_	_
 5	ali	ali	ADV	ADV|@P<	_	9	advmod	_	_
-6	que	que	ADV	<foc>|ADV|@ADVL>	_	9	mark	_	_
-7	começava	começar	AUX	<first-cjt>|<aux>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux	_	_
-8	a	a	ADP	PRP|@PRT-AUX<	_	9	case	_	_
-9	surgir	surgir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+6	que	que	SCONJ	<foc>|ADV|@ADVL>	_	9	mark	_	_
+7	começava	começar	VERB	<first-cjt>|<aux>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	MWE=começava_a|MWEPOS=AUX
+8	a	a	SCONJ	PRP|@PRT-AUX<	_	9	mark	_	_
+9	surgir	surgir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
 10	perigo	perigo	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	9	nsubj	_	_
 11	para	para	ADP	PRP|@N<	_	13	case	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -233,7 +228,7 @@
 30	esse	esse	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	32	det	_	_
 31	mesmo	mesmo	ADJ	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	32	amod	_	_
 32	Mikhailichenko	Mikhailichenko	PROPN	<first-cjt>|PROP|M|S|@<SC	Gender=Masc|Number=Sing	17	csubj	_	_
-33	a	a	ADP	<cjt>|PRP|@<SA	_	34	mark	_	_
+33	a	a	SCONJ	<cjt>|PRP|@<SA	_	34	mark	_	_
 34	colocar	colocar	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	32	conj	_	_
 35	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
 36	bola	bola	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	34	obj	_	_
@@ -245,8 +240,8 @@
 41	McCoist	McCoist	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	39	nmod	_	SpaceAfter=No
 42	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 43	de	de	ADP	PRP|@<ADVL	_	44	case	_	MWE=de_modo_a
-44	modo	modo	NOUN	N|@P<	_	34	obl	_	_
-45	a	a	ADP	PRP|@N<	_	46	mark	_	_
+44	modo	modo	NOUN	N|@P<	Gender=Masc|Number=Sing	34	obl	_	_
+45	a	a	SCONJ	PRP|@N<	_	46	mark	_	_
 46-47	permitir-lhe	_	_	_	_	_	_	_	_
 46	permitir	permitir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	44	acl	_	_
 47	lhe	ele	PRON	PERS|M|3S|DAT|@<DAT	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	46	iobj	_	_

@@ -1,14 +1,14 @@
 # text = Despejos em Arcena
-# source = CETEMPúblico n=339 sec=soc sem=93a
 # sent_id = CP339-1
+# source = CETEMPúblico n=339 sec=soc sem=93a
 # id = 1766
 1	Despejos	despejo	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 2	em	em	ADP	PRP|@N<	_	3	case	_	_
 3	Arcena	Arcena	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = Cada caso é um caso
-# source = CETEMPúblico n=339 sec=soc sem=93a
 # sent_id = CP339-2
+# source = CETEMPúblico n=339 sec=soc sem=93a
 # id = 1767
 1	Cada	cada	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Tot	2	det	_	_
 2	caso	caso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -17,12 +17,9 @@
 5	caso	caso	NOUN	<np-idf>|N|M|S|@<sC	Gender=Masc|Number=Sing	0	root	_	_
 
 # text = Representantes das 60 famílias que ocupam ilegalmente casas na urbanização do Vale de Arcena, delegados do Centro Regional de Segurança Social, responsáveis da Câmara Municipal de Vila Franca de Xira e da empresa proprietária dos fogos, a Eurocapital, reuniram-se, na sexta-feira, naquela cidade, para discutirem a forma como será feito o levantamento individual que determinará quais os moradores que ali poderão continuar a residir no caso de terem disponíveis as verbas pedidas por cada casa.
-# source = CETEMPúblico n=339 sec=soc sem=93a
 # sent_id = CP339-3
+# source = CETEMPúblico n=339 sec=soc sem=93a
 # id = 1768
-# d2d = punct(Representantes,,) -> punct(delegados,,)  #106
-# d2d = cc(Câmara,e) -> cc(empresa,e)  #106
-# d2d = punct(Representantes,,) -> punct(responsáveis,,)  #106
 1	Representantes	representante	NOUN	<first-cjt>|<np-idf>|N|M/F|P|@SUBJ>	Gender=Unsp|Number=Plur	50	nsubj	_	_
 2-3	das	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -58,8 +55,8 @@
 29-30	da	_	_	_	_	_	_	_	_
 29	de	de	ADP	<first-cjt>|<sam->|PRP|@N<	_	31	case	_	_
 30	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
-31	Câmara	Câmara	NOUN	_	Gender=Fem|Number=Sing	28	obl	_	MWE=câmara_municipal|MWEPOS=NOUN
-32	Municipal	Municipal	ADJ	_	Number=Sing	31	amod	_	_
+31	Câmara	Câmara	PROPN	_	Gender=Fem|Number=Sing	28	obl	_	MWE=câmara_municipal|MWEPOS=NOUN
+32	Municipal	Municipal	PROPN	_	Number=Sing	31	amod	_	_
 33	de	de	ADP	PRP|@N<	_	34	case	_	_
 34	Vila	Vila	PROPN	PROP|@P<	Number=Sing	31	nmod	_	MWE=vila_franca
 35	Franca	Franca	PROPN	PROP|@N<	Number=Sing	34	flat:name	_	_
@@ -93,7 +90,7 @@
 58	aquela	aquele	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	59	det	_	_
 59	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	50	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 60	,	,	PUNCT	PU|@PU	_	62	punct	_	_
-61	para	para	ADP	PRP|@<ADVL	_	62	mark	_	_
+61	para	para	SCONJ	PRP|@<ADVL	_	62	mark	_	_
 62	discutirem	discutir	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	50	advcl	_	_
 63	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	64	det	_	_
 64	forma	forma	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	62	obj	_	_
@@ -110,15 +107,15 @@
 75	moradores	morador	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	72	obj	_	_
 76	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	81	nsubj	_	_
 77	ali	ali	ADV	ADV|@ADVL>	_	81	advmod	_	_
-78	poderão	poder	AUX	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	81	aux	_	_
-79	continuar	continuar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	81	aux	_	_
-80	a	a	ADP	PRP|@PRT-AUX<	_	81	case	_	_
-81	residir	residir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	75	acl:relcl	_	_
+78	poderão	poder	VERB	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	75	acl:relcl	_	_
+79	continuar	continuar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	78	xcomp	_	MWE=continuar_a|MWEPOS=AUX
+80	a	a	SCONJ	PRP|@PRT-AUX<	_	81	mark	_	_
+81	residir	residir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	79	xcomp	_	_
 82-83	no	_	_	_	_	_	_	_	_
 82	em	em	ADP	<sam->|PRP|@N<	_	84	case	_	_
 83	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	84	det	_	_
-84	caso	caso	NOUN	N|@P<	_	81	obl	_	_
-85	de	de	ADP	PRP|@N<	_	86	mark	_	_
+84	caso	caso	NOUN	N|@P<	Gender=Masc|Number=Sing	81	obl	_	_
+85	de	de	SCONJ	PRP|@N<	_	86	mark	_	_
 86	terem	ter	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	84	acl	_	_
 87	disponíveis	disponível	ADJ	ADJ|F|P|@<OC	Gender=Fem|Number=Plur	86	xcomp	_	_
 88	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	89	det	_	_

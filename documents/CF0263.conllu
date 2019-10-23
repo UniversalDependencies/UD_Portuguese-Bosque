@@ -1,6 +1,6 @@
 # text = Na noite de ontem, havia cerca de 3.000 pessoas retidas no aeroporto de Ezeiza, o principal de Buenos Aires.
-# source = CETENFolha n=263 cad=Mundo sec=pol sem=94a
 # sent_id = CF263-1
+# source = CETENFolha n=263 cad=Mundo sec=pol sem=94a
 # id = 1108
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -10,8 +10,8 @@
 5	ontem	ontem	ADV	ADV|@P<	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 7	havia	haver	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-8	cerca	cerca	ADV	ADV|@>N	_	11	advmod	_	MWE=cerca_de
-9	de	de	ADP	<prp>|PRP|@A<	_	8	case	_	_
+8	cerca	cerca	ADV	ADV|@>N	_	11	advmod	_	MWE=cerca_de|MWEPOS=ADV
+9	de	de	ADP	<prp>|PRP|@A<	_	8	fixed	_	_
 10	3.000	3.000	NUM	<card>|NUM|F|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168
 11	pessoas	pessoa	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	7	obj	_	_
 12	retidas	reter	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	11	acl	_	_
@@ -30,11 +30,9 @@
 24	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Os vôos da tarde de ontem entre Buenos Aires e São Paulo ou Rio foram retidos em Ezeiza.
-# source = CETENFolha n=263 cad=Mundo sec=pol sem=94a
 # sent_id = CF263-2
+# source = CETENFolha n=263 cad=Mundo sec=pol sem=94a
 # id = 1109
-# d2d = cc(Buenos,e) -> cc(São,e)  #106
-# d2d = cc(Buenos,ou) -> cc(Rio,ou)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	vôos	vôo	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	17	nsubj:pass	_	_
 3-4	da	_	_	_	_	_	_	_	_

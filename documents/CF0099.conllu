@@ -1,10 +1,8 @@
 # text = Quando os britânicos retomaram o Egito em 1801 a pedra foi parar no Museu Britânico, mas os franceses fizeram cópias dela.
-# source = CETENFolha n=99 cad=Mais! sec=nd sem=94a
 # sent_id = CF99-1
+# source = CETENFolha n=99 cad=Mais! sec=nd sem=94a
 # id = 379
-# d2d = punct(parar,,) -> punct(fizeram,,)  #106
-# d2d = cc(parar,mas) -> cc(fizeram,mas)  #106
-1	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	4	advmod	_	_
+1	Quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	4	mark	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 3	britânicos	britânico	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 4	retomaram	retomar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	12	advcl	_	_
@@ -33,8 +31,8 @@
 25	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O resultado foi que um francês, Jean-François Champollion, que só visitou o Egito em 1828, foi o primeiro a decifrar os hieroglifos.
-# source = CETENFolha n=99 cad=Mais! sec=nd sem=94a
 # sent_id = CF99-2
+# source = CETENFolha n=99 cad=Mais! sec=nd sem=94a
 # id = 380
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	resultado	resultado	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -57,15 +55,15 @@
 19	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	cop	_	ChangedBy=Issue167
 20	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	primeiro	primeiro	NOUN	<n>|<NUM-ord>|<np-def>|ADJ|M|S|@<SC	Gender=Masc|Number=Sing|NumType=Ord	3	ccomp	_	ChangedBy=Issue172
-22	a	a	ADP	PRP|@N<	_	23	mark	_	_
+22	a	a	SCONJ	PRP|@N<	_	23	mark	_	_
 23	decifrar	decifrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	acl	_	_
 24	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
 25	hieroglifos	hieróglifo	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	23	obj	_	ChangedBy=Issue165|SpaceAfter=No
 26	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Uma carta de Champollion de 1822 à Academia de Inscrições e Belas Artes, mostrando seus resultados, é o nascimento da egiptologia, segundo Vercoutter.
-# source = CETENFolha n=99 cad=Mais! sec=nd sem=94a
 # sent_id = CF99-3
+# source = CETENFolha n=99 cad=Mais! sec=nd sem=94a
 # id = 381
 1	Uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	carta	carta	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj	_	_
@@ -79,7 +77,7 @@
 9	Academia	Academia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	MWE=Academia_de_Inscrições_e_Belas_Artes
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	Inscrições	Inscrições	PROPN	_	Number=Sing	9	nmod	_	ChangedBy=Issue119|MWE=Inscrições_e_Belas_Artes|MWEPOS=PROPN
-12	e	e	CCONJ	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
+12	e	e	CCONJ	_	_	11	flat:name	_	ChangedBy=Issue119
 13	Belas	Belas	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119
 14	Artes	Artes	PROPN	_	Number=Sing	11	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	16	punct	_	_

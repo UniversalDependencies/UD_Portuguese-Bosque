@@ -1,13 +1,10 @@
 # text = Não é de estranhar, porque entre os comensais reunidos no dia 29 de Agosto em casa do romancista norte-americano William Styron, prémio Pulitzer, em Martha's Vineyard, uma ilha ao sul de Boston, Massachusetts, não se encontrava apenas o Presidente dos Estados Unidos, mas sobretudo esses dois grandes obcecados dos livros que são o Nobel colombiano Gabriel García Márquez e o mexicano Carlos Fuentes, último prémio Príncipe das Astúrias de Literatura.
-# source = CETEMPúblico n=187 sec=pol sem=94b
 # sent_id = CP187-1
+# source = CETEMPúblico n=187 sec=pol sem=94b
 # id = 1001
-# d2d = cc(Presidente,mas) -> cc(obcecados,mas)  #106
-# d2d = punct(Presidente,,) -> punct(obcecados,,)  #106
-# d2d = cc(Nobel,e) -> cc(mexicano,e)  #106
 1	Não	não	ADV	_	Polarity=Neg	45	advmod	_	_
 2	é	ser	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	de	de	ADP	PRP|@SC>	_	4	mark	_	_
+3	de	de	SCONJ	PRP|@SC>	_	4	mark	_	_
 4	estranhar	estranhar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	45	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	porque	porque	SCONJ	<first-cjt>|KS|@ADVL>	_	45	mark	_	_
@@ -67,15 +64,15 @@
 56	esses	esse	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	59	det	_	_
 57	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	59	nummod	_	ChangedBy=Issue168
 58	grandes	grande	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	59	amod	_	_
-59	obcecados	obcecar	NOUN	<cjt>|<n>|V|PCP|M|P|@<SUBJ	Gender=Masc|Number=Plur|VerbForm=Part	48	conj	_	_
+59	obcecados	obcecado	NOUN	<cjt>|<n>|V|PCP|M|P|@<SUBJ	Gender=Masc|Number=Plur	48	conj	_	_
 60-61	dos	_	_	_	_	_	_	_	_
 60	de	de	ADP	<sam->|PRP|@N<	_	62	case	_	_
 61	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	62	det	_	_
 62	livros	livro	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	59	obl	_	_
-63	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	66	nsubj	_	_
+63	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	66	nsubj	_	_
 64	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	66	cop	_	ChangedBy=Issue167
 65	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	66	det	_	_
-66	Nobel	nobel	NOUN	<first-cjt>|<prop>|<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	62	acl:relcl	_	_
+66	Nobel	nobel	NOUN	<first-cjt>|<prop>|<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	59	acl:relcl	_	_
 67	colombiano	colombiano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	66	amod	_	_
 68	Gabriel	Gabriel	PROPN	_	Gender=Masc|Number=Sing	66	appos	_	ChangedBy=Issue119|MWE=Gabriel_García_Márquez|MWEPOS=PROPN
 69	García	García	PROPN	_	Number=Sing	68	flat:name	_	ChangedBy=Issue119
@@ -98,14 +95,9 @@
 85	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Toda a gente acreditou que essa reunião, realizada em plena crise dos «balseros» cubanos, tinha sido programada para falar da nova crise aberta entre Cuba e os Estados Unidos e, dada a personalidade dos convivas -- García Márquez tem uma relação estreita com Castro e Fuentes defende o fim do embargo norte-americano para que se inicie uma nova etapa no longo contencioso da ilha caraíba com o seu poderoso vizinho --, deu-se como ponto assente que Cuba tinha de ter sido «o» assunto.
-# source = CETEMPúblico n=187 sec=pol sem=94b
 # sent_id = CP187-2
+# source = CETEMPúblico n=187 sec=pol sem=94b
 # id = 1002
-# d2d = cc(acreditou,e) -> cc(deu-,e)  #106
-# d2d = punct(acreditou,,) -> punct(deu-,,)  #106
-# d2d = cc(tem,e) -> cc(defende,e)  #106
-# d2d = punct(acreditou,,) -> punct(deu-,,)  #106
-# d2d = cc(Cuba,e) -> cc(Estados,e)  #106
 1	Toda	todo	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	3	det	_	MWE=Toda_a
 2	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	gente	gente	PRON	INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Ind	4	nsubj	_	_
@@ -113,7 +105,7 @@
 5	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
 6	essa	esse	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
 7	reunião	reunião	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	22	nsubj:pass	_	ChangedBy=Issue165|SpaceAfter=No
-8	,	,	PUNCT	PU|@PU	_	84	punct	_	d2d:#106
+8	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
 9	realizada	realizar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part	7	acl	_	_
 10	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
 11	plena	pleno	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	12	amod	_	_
@@ -129,7 +121,7 @@
 20	tinha	ter	AUX	<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	aux	_	_
 21	sido	ser	AUX	<aux>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	22	aux:pass	_	_
 22	programada	programar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	ccomp	_	_
-23	para	para	ADP	PRP|@<ADVL	_	24	mark	_	_
+23	para	para	SCONJ	PRP|@<ADVL	_	24	mark	_	_
 24	falar	falar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	_
 25-26	da	_	_	_	_	_	_	_	_
 25	de	de	ADP	<sam->|PRP|@<PIV	_	28	case	_	_
@@ -171,7 +163,7 @@
 59	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	_	_
 60	embargo	embargo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	57	nmod	_	_
 61	norte-americano	norte-americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	60	amod	_	_
-62	para	para	ADP	PRP|@<ADVL	_	65	mark	_	_
+62	para	para	SCONJ	PRP|@<ADVL	_	65	mark	_	_
 63	que	que	SCONJ	KS|@SUB	_	65	mark	_	_
 64	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	65	expl	_	ChangedBy=Issue135
 65	inicie	iniciar	VERB	<mv>|<se-passive>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	55	advcl	_	_
@@ -199,17 +191,17 @@
 84	deu	dar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	conj	_	_
 85	se	se	PRON	PERS|M|3S|ACC|@<SUBJ	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	84	nsubj	_	_
 86	como	como	ADP	<prd>|PRP|@<ADVL	_	87	case	_	_
-87	ponto	ponto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	84	obl	_	ChangedBy=Issue137
+87	ponto	ponto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	84	xcomp	_	ChangedBy=Issue137
 88	assente	assente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	87	amod	_	_
 89	que	que	SCONJ	KS|@SUB	_	98	mark	_	_
 90	Cuba	Cuba	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	98	nsubj	_	_
-91	tinha	ter	AUX	<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	98	aux	_	_
-92	de	de	ADP	PRP|@PRT-AUX<	_	98	case	_	_
+91	tinha	ter	VERB	<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	84	ccomp	_	MWE=tinha_de|MWEPOS=AUX
+92	de	de	SCONJ	PRP|@PRT-AUX<	_	98	mark	_	_
 93	ter	ter	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	98	aux	_	_
 94	sido	ser	AUX	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	98	cop	_	ChangedBy=Issue167
 95	«	«	PUNCT	PU|@PU	_	96	punct	_	ChangedBy=Issue165|SpaceAfter=No
 96	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	98	det	_	ChangedBy=Issue165|SpaceAfter=No
 97	»	»	PUNCT	PU|@PU	_	96	punct	_	_
-98	assunto	assunto	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	84	dep	_	ChangedBy=Issue165|SpaceAfter=No
+98	assunto	assunto	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	91	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 99	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 

@@ -1,6 +1,6 @@
 # text = Sobre o controle antidoping, a Fifa estabelecerá uma «fax hotline», em operação 24 horas por dia, para que os médicos das delegações consultem a organização da Copa antes de fornecer qualquer medicamento a seus jogadores.
-# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # sent_id = CF543-1
+# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # id = 2278
 1	Sobre	sobre	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -23,7 +23,7 @@
 19	por	por	ADP	PRP|@N<	_	20	case	_	_
 20	dia	dia	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-22	para	para	ADP	PRP|@<ADVL	_	29	mark	_	_
+22	para	para	SCONJ	PRP|@<ADVL	_	29	mark	_	_
 23	que	que	SCONJ	KS|@SUB	_	29	mark	_	_
 24	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
 25	médicos	médico	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	29	nsubj	_	_
@@ -38,9 +38,9 @@
 32	de	de	ADP	<sam->|PRP|@N<	_	34	case	_	_
 33	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	Copa	copa	NOUN	<prop>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	31	nmod	_	_
-35	antes	antes	ADV	ADV|@<ADVL	_	29	advmod	_	_
-36	de	de	ADP	PRP|@A<ARG	_	37	mark	_	_
-37	fornecer	fornecer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	35	advcl	_	_
+35	antes	antes	ADV	ADV|@<ADVL	_	37	mark	_	MWE=antes_de|MWEPOS=SCONJ
+36	de	de	ADP	PRP|@A<ARG	_	35	fixed	_	_
+37	fornecer	fornecer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	advcl	_	_
 38	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	39	det	_	_
 39	medicamento	medicamento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	37	obj	_	_
 40	a	a	ADP	PRP|@<PIV	_	42	case	_	_
@@ -49,8 +49,8 @@
 43	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = As consultas serão feitas por escrito para evitar contestação.
-# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # sent_id = CF543-2
+# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # id = 2279
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	consultas	consulta	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	4	nsubj:pass	_	_
@@ -58,14 +58,14 @@
 4	feitas	fazer	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
 5	por	por	ADP	PRP|@<ADVL	_	6	case	_	MWE=por_escrito
 6	escrito	escrito	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	_
-7	para	para	ADP	PRP|@<ADVL	_	8	mark	_	_
+7	para	para	SCONJ	PRP|@<ADVL	_	8	mark	_	_
 8	evitar	evitar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	advcl	_	_
 9	contestação	contestação	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	ChangedBy=Issue165|SpaceAfter=No
 10	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O brasileiro João Havelange consolidou ontem, em Nova York, a sua candidatura para o sexto mandato consecutivo como presidente da Fifa.
-# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # sent_id = CF543-3
+# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # id = 2280
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	brasileiro	brasileiro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -95,8 +95,8 @@
 25	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O presidente da Uefa, Lennart Johansson, negou que a entidade européia vá apresentar oposição a Havelange.
-# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # sent_id = CF543-4
+# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # id = 2281
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	_
@@ -121,8 +121,8 @@
 20	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = «Deixamos claro a Havelange que a Uefa só consideraria a possibilidade de lançar um candidato se ele declinasse de sua candidatura.»
-# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # sent_id = CF543-5
+# source = CETENFolha n=543 cad=Esporte sec=des sem=94b
 # id = 2282
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Deixamos	deixar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -136,7 +136,7 @@
 10	consideraria	considerar	VERB	<mv>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	2	ccomp	_	_
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	possibilidade	possibilidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	10	obj	_	_
-13	de	de	ADP	PRP|@N<	_	14	mark	_	_
+13	de	de	SCONJ	PRP|@N<	_	14	mark	_	_
 14	lançar	lançar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	acl	_	_
 15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	candidato	candidato	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_

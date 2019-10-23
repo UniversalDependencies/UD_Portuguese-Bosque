@@ -1,6 +1,6 @@
 # text = Consenso entre concelhias de Leiria
-# source = CETEMPúblico n=284 sec=soc sem=95a
 # sent_id = CP284-1
+# source = CETEMPúblico n=284 sec=soc sem=95a
 # id = 1523
 1	Consenso	consenso	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	entre	entre	ADP	PRP|@N<	_	3	case	_	_
@@ -9,8 +9,8 @@
 5	Leiria	Leiria	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 
 # text = Partidos contra Plano Estratégico
-# source = CETEMPúblico n=284 sec=soc sem=95a
 # sent_id = CP284-2
+# source = CETEMPúblico n=284 sec=soc sem=95a
 # id = 1524
 1	Partidos	partido	NOUN	<np-idf>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 2	contra	contra	ADP	PRP|@N<	_	3	case	_	_
@@ -18,10 +18,9 @@
 4	Estratégico	Estratégico	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 
 # text = Todos os partidos políticos com assento na Assembleia Municipal de Leiria contestam o Plano Estratégico do Eixo de Leiria-Marinha Grande e do Sistema Urbano da Alta Estremadura.
-# source = CETEMPúblico n=284 sec=soc sem=95a
 # sent_id = CP284-3
+# source = CETEMPúblico n=284 sec=soc sem=95a
 # id = 1525
-# d2d = cc(Eixo,e) -> cc(Sistema,e)  #106
 1	Todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	3	det	_	MWE=Todos_os
 2	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	1	fixed	_	_
 3	partidos	partido	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	13	nsubj	_	_
@@ -62,10 +61,9 @@
 34	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Contactados pelo PÚBLICO, os líderes das concelhias do PP, do PSD- com a maioria da Assembleia Municipal-, do PS e o deputado municipal da CDU são unânimes em considerar que o documento mandado elaborar pela Associação de Municípios da Alta Estremadura (AMAE) carece de um importanle debate público, havendo mesmo quem não Ihe reconheça o estatuto de «plano estratégico».
-# source = CETEMPúblico n=284 sec=soc sem=95a &W
 # sent_id = CP284-4
+# source = CETEMPúblico n=284 sec=soc sem=95a &W
 # id = 1526
-# d2d = cc(PS,e) -> cc(deputado,e)  #106
 1	Contactados	contactar	VERB	<mv>|V|PCP|M|P|@ICL-PRED>	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	39	advcl	_	_
 2-3	pelo	_	_	_	_	_	_	_	_
 2	por	por	ADP	PRP|@PASS	_	4	case	_	_
@@ -112,7 +110,7 @@
 37	CDU	CDU	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
 38	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	39	cop	_	ChangedBy=Issue167
 39	unânimes	unânime	ADJ	<n>|ADJ|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
-40	em	em	ADP	PRP|@A<ARG	_	41	mark	_	_
+40	em	em	SCONJ	PRP|@A<ARG	_	41	mark	_	_
 41	considerar	considerar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	39	advcl	_	_
 42	que	que	SCONJ	KS|@SUB	_	59	mark	_	_
 43	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
@@ -156,12 +154,11 @@
 79	.	.	PUNCT	PU|@PU	_	39	punct	_	_
 
 # text = Apesar disso, as diferentes forças partidárias estão dispostas, na próxima reunião da Assembleia Municipal, sexta-feira, a criarem as condições para que sejam aprovados os projectos a candidatar pela Câmara de Leiria e pela associação de municípios ao Prosiurb (Programa de Consolidação do Sistema Urbano Nacional e Apoio à execução dos PDM).
-# source = CETEMPúblico n=284 sec=soc sem=95a
 # sent_id = CP284-5
+# source = CETEMPúblico n=284 sec=soc sem=95a
 # id = 1527
-# d2d = cc(Câmara,e) -> cc(associação,e)  #106
-1	Apesar	apesar	ADP	PRP|@ADVL>	_	2	case	_	MWE=Apesar_disso
-2	disso	disso	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	Apesar	apesar	ADV	PRP|@ADVL>	_	9	cc	_	MWE=Apesar_disso|MWEPOS=CCONJ
+2	disso	disso	PRON	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	as	o	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	6	det	_	_
 5	diferentes	diferentes	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	6	det	_	_
@@ -183,17 +180,17 @@
 19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 20	sexta-feira	sexta-feira	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	14	appos	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-22	a	a	ADP	PRP|@<PIV	_	23	mark	_	_
+22	a	a	SCONJ	PRP|@<PIV	_	23	mark	_	_
 23	criarem	criar	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	9	xcomp	_	_
 24	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
 25	condições	condição	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	23	obj	_	_
-26	para	para	ADP	PRP|@N<ARG	_	29	mark	_	_
+26	para	para	SCONJ	PRP|@N<ARG	_	29	mark	_	_
 27	que	que	SCONJ	KS|@SUB	_	29	mark	_	_
 28	sejam	ser	AUX	<aux>|V|PR|3P|SUBJ|@FS-P<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	aux:pass	_	_
 29	aprovados	aprovar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	25	acl	_	_
 30	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_
 31	projectos	projecto	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	29	nsubj:pass	_	_
-32	a	a	ADP	PRP|@N<	_	33	mark	_	_
+32	a	a	SCONJ	PRP|@N<	_	33	mark	_	_
 33	candidatar	candidatar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf|Voice=Pass	31	acl	_	_
 34-35	pela	_	_	_	_	_	_	_	_
 34	por	por	ADP	<sam->|<first-cjt>|PRP|@PASS	_	36	case	_	_

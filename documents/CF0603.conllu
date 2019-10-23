@@ -1,9 +1,7 @@
 # text = O ladrão verificou qual era o saldo da conta de Maria Estela e, em seguida, retirou R$ 225 do caixa.
-# source = CETENFolha n=603 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF603-1
+# source = CETENFolha n=603 cad=Cotidiano sec=soc sem=94a
 # id = 2533
-# d2d = cc(verificou,e) -> cc(retirou,e)  #106
-# d2d = punct(verificou,,) -> punct(retirou,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ladrão	ladrão	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	verificou	verificar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -19,7 +17,7 @@
 12	Maria	Maria	PROPN	_	Gender=Fem|Number=Sing	10	nmod	_	ChangedBy=Issue119|MWE=Maria_Estela|MWEPOS=PROPN
 13	Estela	Estela	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
 14	e	e	CCONJ	<co-sta>|KC|@CO	_	19	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-15	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
+15	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 16	em	em	ADP	PRP|@ADVL>	_	17	case	_	MWE=em_seguida
 17	seguida	seguida	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	19	obl	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	17	punct	_	_
@@ -33,14 +31,12 @@
 25	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Antes de ir embora, o ladrão pegou o título de eleitor e o CIC da assistente de secretaria e os jogou atrás do caixa.
-# source = CETENFolha n=603 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF603-2
+# source = CETENFolha n=603 cad=Cotidiano sec=soc sem=94a
 # id = 2534
-# d2d = cc(título,e) -> cc(CIC,e)  #106
-# d2d = cc(pegou,e) -> cc(jogou,e)  #106
-1	Antes	antes	ADV	ADV|@ADVL>	_	8	advmod	_	_
-2	de	de	ADP	PRP|@A<ARG	_	3	mark	_	_
-3	ir	ir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	1	advcl	_	_
+1	Antes	antes	ADV	ADV|@ADVL>	_	3	mark	_	MWE=Antes_de|MWEPOS=SCONJ
+2	de	de	ADP	PRP|@A<ARG	_	1	fixed	_	_
+3	ir	ir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	advcl	_	_
 4	embora	embora	ADV	ADV|@<SA	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
@@ -70,23 +66,21 @@
 28	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = «Ele disse que era para eu apanhá-los e para não tentar reagir e impedir sua fuga», afirmou Maria Estela.
-# source = CETENFolha n=603 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF603-3
+# source = CETENFolha n=603 cad=Cotidiano sec=soc sem=94a
 # id = 2535
-# d2d = cc(reagir,e) -> cc(impedir,e)  #106
-# d2d = cc(apanhá-,e) -> cc(tentar,e)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
 3	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	21	parataxis	_	_
 4	que	que	SCONJ	KS|@SUB	_	5	mark	_	_
 5	era	ser	VERB	<mv>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	ccomp	_	_
-6	para	para	ADP	<first-cjt>|PRP|@<SC	_	8	mark	_	_
+6	para	para	SCONJ	<first-cjt>|PRP|@<SC	_	8	mark	_	_
 7	eu	eu	PRON	PERS|M/F|1S|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
 8-9	apanhá-los	_	_	_	_	_	_	_	_
 8	apanhá	apanhar	VERB	<mv>|<first-cjt>|<hyphen>|V|INF|1S|@ICL-P<	Number=Sing|Person=1|VerbForm=Inf	5	advcl	_	_
 9	los	eles	PRON	PERS|M|3P|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	8	obj	_	_
 10	e	e	CCONJ	<co-sc>|KC|@CO	_	13	cc	_	d2d:#106
-11	para	para	ADP	<cjt>|PRP|@<SC	_	13	mark	_	_
+11	para	para	SCONJ	<cjt>|PRP|@<SC	_	13	mark	_	_
 12	não	não	ADV	_	Polarity=Neg	13	advmod	_	_
 13	tentar	tentar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	conj	_	_
 14	reagir	reagir	VERB	<first-cjt>|<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	13	xcomp	_	_
@@ -102,11 +96,11 @@
 24	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = Mas, quando o ladrão ia deixar o caixa, dois outros clientes do banco chegaram.
-# source = CETENFolha n=603 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF603-4
+# source = CETENFolha n=603 cad=Cotidiano sec=soc sem=94a
 # id = 2536
 1	Mas	mas	CCONJ	KC|@CO	_	17	cc	_	ChangedBy=Issue165|SpaceAfter=No
-2	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+2	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 3	quando	quando	ADV	<rel>|ADV|@ADVL>	_	7	advmod	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	ladrão	ladrão	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_

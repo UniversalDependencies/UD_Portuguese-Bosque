@@ -1,15 +1,15 @@
 # text = Enfim, e esse terá sido o ponto decisivo da sua intervenção, António Tanger sublinhou que a ocorrência de um novo problema poderia criar a Portugal algum embaraço diplomático.
-# source = CETEMPúblico n=762 sec=soc sem=92a
 # sent_id = CP762-1
+# source = CETEMPúblico n=762 sec=soc sem=92a
 # id = 3911
 1	Enfim	enfim	ADV	ADV|@ADVL>	_	17	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-3	e	e	CCONJ	KC|@CO	_	17	cc	_	_
+3	e	e	CCONJ	KC|@CO	_	8	cc	_	_
 4	esse	esse	PRON	<dem>|DET|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	8	nsubj	_	_
 5	terá	ter	AUX	<aux>|V|FUT|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	8	aux	_	_
 6	sido	ser	AUX	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	8	cop	_	ChangedBy=Issue167
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	ponto	ponto	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	17	dep	_	_
+8	ponto	ponto	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	17	conj	_	_
 9	decisivo	decisivo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	8	amod	_	_
 10-11	da	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
@@ -27,8 +27,8 @@
 22	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 23	novo	novo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	24	amod	_	_
 24	problema	problema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	20	nmod	_	_
-25	poderia	poder	AUX	<cjt>|<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	26	aux	_	_
-26	criar	criar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	17	ccomp	_	_
+25	poderia	poder	VERB	<cjt>|<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	17	ccomp	_	_
+26	criar	criar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	xcomp	_	_
 27	a	a	ADP	PRP|@<PIV	_	28	case	_	_
 28	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	26	iobj	_	_
 29	algum	algum	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	30	det	_	_
@@ -37,8 +37,8 @@
 32	.	.	PUNCT	PU|@PU	_	17	punct	_	_
 
 # text = No quadro político actual, em que Portugal ocupa a presidência das Comunidades, era de todo indesejável que a diplomacia portuguesa tivesse de intervir para protestar junto de qualquer país dessa região.
-# source = CETEMPúblico n=762 sec=soc sem=92a
 # sent_id = CP762-2
+# source = CETEMPúblico n=762 sec=soc sem=92a
 # id = 3912
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -66,10 +66,10 @@
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	diplomacia	diplomacia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	27	nsubj	_	_
 24	portuguesa	português	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
-25	tivesse	ter	AUX	<aux>|V|IMPF|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	27	aux	_	_
-26	de	de	ADP	PRP|@PRT-AUX<	_	27	case	_	_
-27	intervir	intervir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	csubj	_	_
-28	para	para	ADP	PRP|@<ADVL	_	29	mark	_	_
+25	tivesse	ter	VERB	<aux>|V|IMPF|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	csubj	_	MWE=tivesse_de|MWEPOS=AUX
+26	de	de	SCONJ	PRP|@PRT-AUX<	_	27	mark	_	_
+27	intervir	intervir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	xcomp	_	_
+28	para	para	SCONJ	PRP|@<ADVL	_	29	mark	_	_
 29	protestar	protestar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	27	advcl	_	_
 30	junto	junto	ADV	ADV|@<ADVL	_	29	advmod	_	_
 31	de	de	ADP	PRP|@A<	_	33	case	_	_
@@ -82,14 +82,13 @@
 37	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Isso poderia revestir-se de particular gravidade se o ataque ocorresse dentro de Angola, onde há poucos dias dois padres e uma freira foram mortos num ataque de «bandidos».
-# source = CETEMPúblico n=762 sec=soc sem=92a
 # sent_id = CP762-3
+# source = CETEMPúblico n=762 sec=soc sem=92a
 # id = 3913
-# d2d = cc(padres,e) -> cc(freira,e)  #106
 1	Isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_
-2	poderia	poder	AUX	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	3	aux	_	_
+2	poderia	poder	VERB	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
 3-4	revestir-se	_	_	_	_	_	_	_	_
-3	revestir	revestir	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	revestir	revestir	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	_
 4	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl	_	ChangedBy=Issue135
 5	de	de	ADP	PRP|@<PIV	_	7	case	_	_
 6	particular	particular	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	7	amod	_	_
@@ -102,7 +101,7 @@
 13	de	de	ADP	PRP|@A<	_	14	case	_	_
 14	Angola	Angola	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-16	onde	onde	ADV	<rel>|ADV|@ADVL>	_	26	advmod	_	_
+16	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	26	obl	_	_
 17	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	advcl	_	_
 18	poucos	pouco	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	19	det	_	_
 19	dias	dia	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	17	obj	_	_
@@ -124,8 +123,8 @@
 34	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Após esta intervenção, os membros da expedição reuniram-se com a organização da viagem para deliberar sobre o que fazer.
-# source = CETEMPúblico n=762 sec=soc sem=92a
 # sent_id = CP762-4
+# source = CETEMPúblico n=762 sec=soc sem=92a
 # id = 3914
 1	Após	após	ADP	PRP|@ADVL>	_	3	case	_	_
 2	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
@@ -147,7 +146,7 @@
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	viagem	viagem	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
-18	para	para	ADP	PRP|@<ADVL	_	19	mark	_	_
+18	para	para	SCONJ	PRP|@<ADVL	_	19	mark	_	_
 19	deliberar	deliberar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	advcl	_	_
 20	sobre	sobre	ADP	PRP|@<PIV	_	22	case	_	_
 21	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	19	obj	_	_
@@ -156,10 +155,10 @@
 24	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Foi na sequência desse encontro que Pedro Villas Boas decidiu dar por finda a expedição, inviabilizando desta forma o prosseguimento da viagem anteriormente definido por uma pequena coluna expedicionária.
-# source = CETEMPúblico n=762 sec=soc sem=92a
 # sent_id = CP762-5
+# source = CETEMPúblico n=762 sec=soc sem=92a
 # id = 3915
-1	Foi	foi	ADV	<foc>|ADV|@ADVL>	_	12	mark	_	_
+1	Foi	foi	SCONJ	<foc>|ADV|@ADVL>	_	12	mark	_	_
 2-3	na	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
@@ -168,13 +167,13 @@
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	esse	esse	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_
 7	encontro	encontro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	4	nmod	_	_
-8	que	que	ADV	<foc>|ADV|@ADVL>	_	12	mark	_	_
+8	que	que	SCONJ	<foc>|ADV|@ADVL>	_	12	mark	_	_
 9	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue119|MWE=Pedro_Villas_Boas|MWEPOS=PROPN
 10	Villas	Villas	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 11	Boas	Boas	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119
 12	decidiu	decidir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 13	dar	dar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	12	xcomp	_	_
-14	por	por	ADP	PRP|@<OC	_	15	mark	_	_
+14	por	por	SCONJ	PRP|@<OC	_	15	mark	_	_
 15	finda	findar	VERB	<mv>|V|PCP|F|S|@ICL-P<	Gender=Fem|Number=Sing|VerbForm=Part	13	xcomp	_	_
 16	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	expedição	expedição	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	13	obj	_	ChangedBy=Issue165|SpaceAfter=No

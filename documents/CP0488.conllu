@@ -1,6 +1,6 @@
 # text = Segundo um alto responsável da instituição, que solicitou o anonimato, o ritmo de recuperação da economia mundial deverá acentuar-se já no segundo semestre de 1992, opondo-se, deste modo, às teses mais pessimistas que prognosticam fortes probabilidades de uma recessão mundial.
-# source = CETEMPúblico n=488 sec=eco sem=92a
 # sent_id = CP488-1
+# source = CETEMPúblico n=488 sec=eco sem=92a
 # id = 2568
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	4	case	_	_
 2	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -25,9 +25,9 @@
 19	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	economia	economia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	_
 21	mundial	mundial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	20	amod	_	_
-22	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	23	aux	_	_
+22	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 23-24	acentuar-se	_	_	_	_	_	_	_	_
-23	acentuar	acentuar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+23	acentuar	acentuar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	22	xcomp	_	_
 24	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	23	expl	_	ChangedBy=Issue135
 25	já	já	ADV	ADV|@>A	_	29	advmod	_	_
 26-27	no	_	_	_	_	_	_	_	_
@@ -64,8 +64,8 @@
 53	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
 # text = «Embora se constatem riscos em algumas zonas, as nossas expectativas são de uma recuperação global», disse a mesma fonte.
-# source = CETEMPúblico n=488 sec=eco sem=92a
 # sent_id = CP488-2
+# source = CETEMPúblico n=488 sec=eco sem=92a
 # id = 2569
 1	«	«	PUNCT	PU|@PU	_	16	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Embora	embora	SCONJ	KS|@SUB	_	4	mark	_	_
@@ -93,18 +93,18 @@
 24	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Apesar de não ser previsível que a Europa abrande ainda mais a sua actividade, a retoma do seu crescimento deverá ser mais fraca do que em outros países industrializados, devido à insuficiência das reformas estruturais, acrescentou.
-# source = CETEMPúblico n=488 sec=eco sem=92a
 # sent_id = CP488-3
+# source = CETEMPúblico n=488 sec=eco sem=92a
 # id = 2570
-1	Apesar	apesar	ADV	ADV|@ADVL>	_	25	advmod	_	MWE=Apesar_de
-2	de	de	ADP	PRP|@A<	_	5	mark	_	_
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	5	mark	_	MWE=Apesar_de|MWEPOS=SCONJ
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
 4	ser	ser	AUX	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	5	cop	_	ChangedBy=Issue167
-5	previsível	previsível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	1	amod	_	_
+5	previsível	previsível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	25	advcl	_	_
 6	que	que	SCONJ	KS|@SUB	_	9	mark	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	Europa	Europa	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
-9	abrande	abrandar	VERB	<cjt>|<mv>|V|PR|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+9	abrande	abrandar	VERB	<cjt>|<mv>|V|PR|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	ccomp	_	_
 10	ainda	ainda	ADV	ADV|@>A	_	11	advmod	_	_
 11	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	_	9	advmod	_	_
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
@@ -121,15 +121,15 @@
 22	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	aux	_	_
 23	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	cop	_	ChangedBy=Issue167
 24	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	25	advmod	_	_
-25	fraca	fraco	ADJ	<COMP>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	43	csubj	_	_
+25	fraca	fraco	ADJ	<COMP>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	43	parataxis	_	_
 26-27	do	_	_	_	_	_	_	_	_
-26	de	de	ADP	<sam->|PRP|@COM	_	31	case	_	MWE=do_que
+26	de	de	ADP	<sam->|PRP|@COM	_	31	case	_	MWE=do_que|MWEPOS=ADP
 27	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	26	fixed	_	_
 28	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	26	fixed	_	_
 29	em	em	ADP	<first-cjt>|PRP|@KOMP<	_	31	case	_	_
 30	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	31	det	_	_
-31	países	país	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	obl	_	_
-32	industrializados	industrializado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	31	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+31	países	país	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	advcl	_	_
+32	industrializados	industrializado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	31	amod	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 34	devido	devido	ADV	ADV|@<ADVL	_	25	advmod	_	MWE=devido_a
 35-36	à	_	_	_	_	_	_	_	_
@@ -146,8 +146,8 @@
 44	.	.	PUNCT	PU|@PU	_	43	punct	_	_
 
 # text = Tomando como caso concreto a França, com um mercado de trabalho considerado pouco flexível, o mesmo responsável do FMI antevê que a Europa deverá continuar a registar um «crescimento lento», caso não concretize rapidamente as necessárias reformas estruturais.
-# source = CETEMPúblico n=488 sec=eco sem=92a
 # sent_id = CP488-4
+# source = CETEMPúblico n=488 sec=eco sem=92a
 # id = 2571
 1	Tomando	tomar	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	23	advcl	_	_
 2	como	como	ADP	<prd>|PRP|@<OC	_	3	case	_	_
@@ -160,7 +160,7 @@
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	mercado	mercado	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	MWE=mercado_de_trabalho|MWEPOS=NOUN
 11	de	de	ADP	_	_	10	compound	_	_
-12	trabalho	trabalho	NOUN	_	_	10	compound	_	_
+12	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	10	compound	_	_
 13	considerado	considerar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	10	acl	_	_
 14	pouco	pouco	ADV	<quant>|ADV|@>A	_	15	advmod	_	_
 15	flexível	flexível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	13	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
@@ -176,10 +176,10 @@
 24	que	que	SCONJ	KS|@SUB	_	30	mark	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Europa	Europa	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	30	nsubj	_	_
-27	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	30	aux	_	_
-28	continuar	continuar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	30	aux	_	_
-29	a	a	ADP	PRP|@PRT-AUX<	_	30	case	_	_
-30	registar	registar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	ccomp	_	_
+27	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	23	ccomp	_	_
+28	continuar	continuar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	27	xcomp	_	MWE=continuar_a|MWEPOS=AUX
+29	a	a	SCONJ	PRP|@PRT-AUX<	_	30	mark	_	_
+30	registar	registar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	xcomp	_	_
 31	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 32	«	«	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
 33	crescimento	crescimento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	30	obj	_	_

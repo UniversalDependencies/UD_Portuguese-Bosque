@@ -1,6 +1,6 @@
 # text = Posse da Junta da AML marcada para 14 de Maio
-# source = CETEMPúblico n=909 sec=soc sem=92a
 # sent_id = CP909-1
+# source = CETEMPúblico n=909 sec=soc sem=92a
 # id = 4684
 1	Posse	posse	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2-3	da	_	_	_	_	_	_	_	_
@@ -18,8 +18,8 @@
 12	Maio	maio	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
 
 # text = Assembleia Metropolitana já tem mesa eleita
-# source = CETEMPúblico n=909 sec=soc sem=92a
 # sent_id = CP909-2
+# source = CETEMPúblico n=909 sec=soc sem=92a
 # id = 4685
 1	Assembleia	Assembleia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	MWE=Assembleia_Metropolitana
 2	Metropolitana	Metropolitana	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
@@ -29,11 +29,9 @@
 6	eleita	eleger	VERB	<mv>|V|PCP|F|S|@ICL-<OC	Gender=Fem|Number=Sing|VerbForm=Part	4	xcomp	_	_
 
 # text = A Assembleia da Área Metropolitana de Lisboa (AML) continua a debater-se com o problema da falta de instalações, mas pelo menos já tem mesa.
-# source = CETEMPúblico n=909 sec=soc sem=92a
 # sent_id = CP909-4
+# source = CETEMPúblico n=909 sec=soc sem=92a
 # id = 4686
-# d2d = cc(debater-,mas) -> cc(tem,mas)  #106
-# d2d = punct(debater-,,) -> punct(tem,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Assembleia	Assembleia	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	14	nsubj	_	MWE=Assembleia_da_Área_Metropolitana_de_Lisboa
 3-4	da	_	_	_	_	_	_	_	_
@@ -46,10 +44,10 @@
 9	(	(	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 10	AML	AML	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	2	appos	_	ChangedBy=Issue165|SpaceAfter=No
 11	)	)	PUNCT	PU|@PU	_	10	punct	_	_
-12	continua	continuar	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	_	_
-13	a	a	ADP	PRP|@PRT-AUX<	_	14	case	_	_
+12	continua	continuar	VERB	<first-cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=continua_a|MWEPOS=AUX
+13	a	a	SCONJ	PRP|@PRT-AUX<	_	14	mark	_	_
 14-15	debater-se	_	_	_	_	_	_	_	_
-14	debater	debater	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+14	debater	debater	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	12	xcomp	_	_
 15	se	se	PRON	PERS|F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	14	expl	_	ChangedBy=Issue135
 16	com	com	ADP	PRP|@<ADVL	_	18	case	_	_
 17	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
@@ -72,13 +70,9 @@
 32	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = A eleição decorreu ontem, num acto com algumas peripécias, mas sem grandes surpresas, já que se cumpriu o acordo previamente estabelecido entre a CDU e o PS.
-# source = CETEMPúblico n=909 sec=soc sem=92a
 # sent_id = CP909-5
+# source = CETEMPúblico n=909 sec=soc sem=92a
 # id = 4687
-# d2d = punct(peripécias,,) -> punct(cumpriu,,)  #106
-# d2d = cc(peripécias,mas) -> cc(surpresas,mas)  #106
-# d2d = cc(CDU,e) -> cc(PS,e)  #106
-# d2d = punct(peripécias,,) -> punct(surpresas,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	eleição	eleição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	decorreu	decorrer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -97,7 +91,7 @@
 15	grandes	grande	ADJ	ADJ|F|P|@>N	Gender=Fem|Number=Plur	16	amod	_	_
 16	surpresas	surpresa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	11	conj	_	ChangedBy=Issue165|SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
-18	já	já	ADV	ADV|@SUB	_	21	mark	_	MWE=já_que
+18	já	já	SCONJ	ADV|@SUB	_	21	mark	_	MWE=já_que
 19	que	que	SCONJ	KS|@A<	_	18	fixed	_	_
 20	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	21	nsubj	_	_
 21	cumpriu	cumprir	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	conj	_	_

@@ -1,6 +1,6 @@
 # text = O Flamengo ficou na espera do Grêmio, procurando apenas aproveitar o contra-ataque.
-# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # sent_id = CF523-1
+# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # id = 2196
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Flamengo	Flamengo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -22,11 +22,11 @@
 16	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Mesmo assim, não criou muitas chances.
-# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # sent_id = CF523-2
+# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # id = 2197
-1	Mesmo	mesmo	ADV	ADV|@ADVL>	_	5	advmod	_	MWE=Mesmo_assim
-2	assim	assim	ADV	ADV|@A<	_	1	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+1	Mesmo	mesmo	ADV	ADV|@ADVL>	_	5	advmod	_	MWE=Mesmo_assim|MWEPOS=ADV
+2	assim	assim	ADV	ADV|@A<	_	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 4	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
 5	criou	criar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -35,8 +35,8 @@
 8	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = O gol da vitória flamenguista foi marcado aos 20min do segundo tempo.
-# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # sent_id = CF523-3
+# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # id = 2198
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	gol	gol	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj:pass	_	_
@@ -60,10 +60,9 @@
 17	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Magno desceu pela direita e cruzou para a área.
-# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # sent_id = CF523-4
+# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # id = 2199
-# d2d = cc(desceu,e) -> cc(cruzou,e)  #106
 1	Magno	Magno	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	desceu	descer	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3-4	pela	_	_	_	_	_	_	_	_
@@ -78,15 +77,15 @@
 11	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Nélio teve apenas o trabalho de escorar para o gol vazio.
-# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # sent_id = CF523-5
+# source = CETENFolha n=523 cad=Esporte sec=des sem=94a
 # id = 2200
 1	Nélio	Nélio	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	teve	ter	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	apenas	apenas	ADV	ADV|@>N	_	5	advmod	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	trabalho	trabalho	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	_
-6	de	de	ADP	PRP|@N<ARG	_	7	mark	_	_
+6	de	de	SCONJ	PRP|@N<ARG	_	7	mark	_	_
 7	escorar	escorar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	acl	_	_
 8	para	para	ADP	PRP|@<ADVL	_	10	case	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_

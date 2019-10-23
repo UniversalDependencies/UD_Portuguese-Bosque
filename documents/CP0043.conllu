@@ -1,9 +1,7 @@
 # text = E julgamos ainda estar longe de casos como o do banco britânico NatWest que guardava as opiniões religiosas e políticas e mesmo os hábitos alimentares de alguns dos seus 6,5 milhões de titulares de contas.
-# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # sent_id = CP43-1
+# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # id = 244
-# d2d = cc(religiosas,e) -> cc(políticas,e)  #106
-# d2d = cc(opiniões,e) -> cc(hábitos,e)  #106
 1	E	e	CCONJ	KC|@CO	_	2	cc	_	_
 2	julgamos	julgar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	ainda	ainda	ADV	ADV|@ADVL>	_	5	advmod	_	_
@@ -37,17 +35,17 @@
 29	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
 30	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
 31	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	32	det	_	_
-32	6,5	6,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	35	nummod	_	ChangedBy=Issue168|MWE=6,5_milhões
+32	6,5	6,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	25	nmod	_	ChangedBy=Issue168|MWE=6,5_milhões
 33	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	32	flat	_	_
 34	de	de	ADP	PRP|@N<ARG	_	35	case	_	_
-35	titulares	titular	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	_
+35	titulares	titular	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	_
 36	de	de	ADP	PRP|@N<	_	37	case	_	_
 37	contas	conta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	35	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 38	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Em paralelo, há sempre o perigo de estas BD irem cair nas mãos de pessoas menos escrupulosas.
-# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # sent_id = CP43-2
+# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # id = 245
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	paralelo	paralelo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -56,7 +54,7 @@
 5	sempre	sempre	ADV	ADV|@<ADVL	_	4	advmod	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	perigo	perigo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
-8	de	de	ADP	PRP|@N<	_	12	mark	_	_
+8	de	de	SCONJ	PRP|@N<	_	12	mark	_	_
 9	estas	este	DET	<dem>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Dem	10	det	_	_
 10	BD	BD	PROPN	PROP|F|P|@SUBJ>	Gender=Fem|Number=Plur	12	nsubj	_	_
 11	irem	ir	AUX	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	12	aux	_	_
@@ -72,8 +70,8 @@
 20	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Em Janeiro de 1994, noticiava-se a introdução na Alemanha de um supercomputador que regista as impressões digitais dos candidatos a asilo político, para tentar detectar fraudes nos subsídios da segurança social.
-# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # sent_id = CP43-3
+# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # id = 246
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Janeiro	janeiro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	ChangedBy=Issue137
@@ -105,7 +103,7 @@
 25	asilo	asilo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
 26	político	político	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	25	amod	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	29	punct	_	_
-28	para	para	ADP	PRP|@<ADVL	_	29	mark	_	_
+28	para	para	SCONJ	PRP|@<ADVL	_	29	mark	_	_
 29	tentar	tentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	17	advcl	_	_
 30	detectar	detectar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	29	xcomp	_	_
 31	fraudes	fraude	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	30	obj	_	_
@@ -121,8 +119,8 @@
 39	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Na mesma altura, começou a funcionar um sistema informático que permite distribuir mais rapidamente os estrangeiros pelos campos de refugiados.
-# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # sent_id = CP43-4
+# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # id = 247
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
@@ -130,9 +128,9 @@
 3	mesma	mesmo	ADJ	<diff>|DET|F|S|@>N	Gender=Fem|Number=Sing	4	amod	_	_
 4	altura	altura	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-6	começou	começar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux	_	_
-7	a	a	ADP	PRP|@PRT-AUX<	_	8	case	_	_
-8	funcionar	funcionar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+6	começou	começar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=começou_a|MWEPOS=AUX
+7	a	a	SCONJ	PRP|@PRT-AUX<	_	8	mark	_	_
+8	funcionar	funcionar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	xcomp	_	_
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	sistema	sistema	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	8	nsubj	_	_
 11	informático	informático	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	10	amod	_	_
@@ -152,28 +150,26 @@
 24	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Nada fez parar esta compilação de dados, nem o receio de que os endereços pudessem cair nas mãos de grupos nazis que ficariam assim a conhecer onde moram os seus «alvos».
-# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # sent_id = CP43-5
+# source = CETEMPúblico n=43 sec=clt-soc sem=95a
 # id = 248
-# d2d = punct(Nada,,) -> punct(receio,,)  #106
-# d2d = cc(Nada,nem) -> cc(receio,nem)  #106
 1	Nada	nada	PRON	<first-cjt>|<quant>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	2	nsubj	_	_
 2	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	parar	parar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
 4	esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
 5	compilação	compilação	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	3	nsubj	_	_
-6	de	de	ADP	PRP|@N<ARG	_	7	mark	_	_
+6	de	de	SCONJ	PRP|@N<ARG	_	7	mark	_	_
 7	dados	dar	VERB	<mv>|V|PCP|M|P|@ICL-P<	Gender=Masc|Number=Plur|VerbForm=Part	5	acl	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 9	nem	nem	CCONJ	<co-subj>|KC|@CO	_	11	cc	_	d2d:#106
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	receio	receio	NOUN	<cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	1	conj	_	_
-12	de	de	ADP	PRP|@N<ARG	_	17	mark	_	_
+12	de	de	SCONJ	PRP|@N<ARG	_	17	mark	_	_
 13	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
 14	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
 15	endereços	endereço	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	17	nsubj	_	_
-16	pudessem	poder	AUX	<aux>|V|IMPF|3P|SUBJ|@FS-P<	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	17	aux	_	_
-17	cair	cair	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	acl	_	_
+16	pudessem	poder	VERB	<aux>|V|IMPF|3P|SUBJ|@FS-P<	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	11	acl	_	_
+17	cair	cair	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
 18-19	nas	_	_	_	_	_	_	_	_
 18	em	em	ADP	<sam->|PRP|@<SA	_	20	case	_	_
 19	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	20	det	_	_
@@ -182,11 +178,11 @@
 22	grupos	grupo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
 23	nazis	nazi	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	22	amod	_	_
 24	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	28	nsubj	_	_
-25	ficariam	ficar	AUX	<aux>|V|COND|3P|@FS-N<	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	28	aux	_	_
+25	ficariam	ficar	VERB	<aux>|V|COND|3P|@FS-N<	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin	22	acl:relcl	_	MWE=ficariam_a|MWEPOS=AUX
 26	assim	assim	ADV	<kc>|ADV|@ADVL>	_	28	advmod	_	_
-27	a	a	ADP	PRP|@PRT-AUX<	_	28	case	_	_
-28	conhecer	conhecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	acl:relcl	_	_
-29	onde	onde	ADV	<rel>|ADV|@SA>	_	30	advmod	_	_
+27	a	a	SCONJ	PRP|@PRT-AUX<	_	28	mark	_	_
+28	conhecer	conhecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	25	xcomp	_	_
+29	onde	onde	PRON	<rel>|ADV|@SA>	PronType=Rel	30	obl	_	_
 30	moram	morar	VERB	<mv>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	ccomp	_	_
 31	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
 32	seus	seu	DET	<poss>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	34	det	_	_

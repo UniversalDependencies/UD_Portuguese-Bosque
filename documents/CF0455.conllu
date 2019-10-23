@@ -1,10 +1,7 @@
 # text = O financiamento público seria baseado em fundos sociais (FGTS, FAT), na atração de recursos de pensão e nas parcerias com a iniciativa privada.
-# source = CETENFolha n=455 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF455-1
+# source = CETENFolha n=455 cad=Caderno Especial sec=nd sem=94a
 # id = 1916
-# d2d = punct(fundos,,) -> punct(atração,,)  #106
-# d2d = punct(fundos,,) -> punct(atração,,)  #106
-# d2d = cc(fundos,e) -> cc(parcerias,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	financiamento	financiamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
 3	público	público	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -14,9 +11,9 @@
 7	fundos	fundo	NOUN	<first-cjt>|<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	5	obj	_	_
 8	sociais	social	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	7	amod	_	_
 9	(	(	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
-10	FGTS	FGTS	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+10	FGTS	FGTS	PROPN	PROP|M|P|@N<PRED	Gender=Masc|Number=Plur	7	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
-12	FAT	FAT	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+12	FAT	FAT	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	7	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 13	)	)	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 15-16	na	_	_	_	_	_	_	_	_
@@ -39,12 +36,9 @@
 30	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = A taxação de grandes fortunas e o dinheiro de privatização -- de estatais não-estratégicas (exclui minérios, petróleo e telecomunicações), complementaria esses fundos.
-# source = CETENFolha n=455 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF455-2
+# source = CETENFolha n=455 cad=Caderno Especial sec=nd sem=94a
 # id = 1917
-# d2d = punct(minérios,,) -> punct(petróleo,,)  #106
-# d2d = cc(taxação,e) -> cc(dinheiro,e)  #106
-# d2d = cc(minérios,e) -> cc(telecomunicações,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	taxação	taxação	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	24	nsubj	_	_
 3	de	de	ADP	PRP|@N<ARG	_	5	case	_	_

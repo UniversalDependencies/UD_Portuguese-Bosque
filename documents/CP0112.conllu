@@ -1,8 +1,7 @@
 # text = Não havia cruzamento, não se tratou de uma tentativa de ultrapassagem, nem sequer de uma travagem brusca.
-# source = CETEMPúblico n=112 sec=pol sem=95b
 # sent_id = CP112-1
+# source = CETEMPúblico n=112 sec=pol sem=95b
 # id = 566
-# d2d = punct(tentativa,,) -> punct(travagem,,)  #106
 1	Não	não	ADV	_	Polarity=Neg	2	advmod	_	_
 2	havia	haver	VERB	<mv>|<first-cjt>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 3	cruzamento	cruzamento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	2	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -25,8 +24,8 @@
 20	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Segundo o relato da agência Lusa, o Volvo deslizou sozinho de uma garagem particular onde estava estacionado.
-# source = CETEMPúblico n=112 sec=pol sem=95b
 # sent_id = CP112-2
+# source = CETEMPúblico n=112 sec=pol sem=95b
 # id = 567
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -45,14 +44,14 @@
 14	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	garagem	garagem	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	ChangedBy=Issue137
 16	particular	particular	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	_
-17	onde	onde	ADV	<rel>|ADV|@ADVL>	_	19	advmod	_	_
+17	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	19	obl	_	_
 18	estava	estar	AUX	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	19	cop	_	ChangedBy=Issue167
 19	estacionado	estacionado	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	15	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 20	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = E só o inesperado encontro com o Mercedes o fez parar.
-# source = CETEMPúblico n=112 sec=pol sem=95b
 # sent_id = CP112-3
+# source = CETEMPúblico n=112 sec=pol sem=95b
 # id = 568
 1	E	e	CCONJ	KC|@CO	_	10	cc	_	_
 2	só	só	ADV	ADV|@>N	_	5	advmod	_	_
@@ -68,8 +67,8 @@
 12	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Sabe-se lá até onde poderia ter ido, deslizando pelo piso molhado da Rua das Flores.
-# source = CETEMPúblico n=112 sec=pol sem=95b
 # sent_id = CP112-4
+# source = CETEMPúblico n=112 sec=pol sem=95b
 # id = 569
 1-2	Sabe-se	_	_	_	_	_	_	_	_
 1	Sabe	saber	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -77,9 +76,9 @@
 3	lá	lá	ADV	ADV|@<ADVL	_	1	advmod	_	_
 4	até	até	ADP	PRP|@SA>	_	5	case	_	_
 5	onde	onde	ADV	<interr>|ADV|@P<	_	8	advmod	_	_
-6	poderia	poder	AUX	<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	8	aux	_	_
+6	poderia	poder	VERB	<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	1	ccomp	_	_
 7	ter	ter	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	8	aux	_	_
-8	ido	ir	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	1	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+8	ido	ir	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	6	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 10	deslizando	deslizar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	8	advcl	_	_
 11-12	pelo	_	_	_	_	_	_	_	_
@@ -98,15 +97,14 @@
 21	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = O incrédulo automobilista, por não ter interlocutor, achou por bem chamar a polícia e relatar-lhe como tudo se passou.
-# source = CETEMPúblico n=112 sec=pol sem=95b
 # sent_id = CP112-5
+# source = CETEMPúblico n=112 sec=pol sem=95b
 # id = 570
-# d2d = cc(chamar,e) -> cc(relatar-,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	incrédulo	incrédulo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
 3	automobilista	automobilista	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	10	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-5	por	por	ADP	PRP|@ADVL>	_	7	mark	_	_
+5	por	por	SCONJ	PRP|@ADVL>	_	7	mark	_	_
 6	não	não	ADV	_	Polarity=Neg	7	advmod	_	_
 7	ter	ter	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	advcl	_	_
 8	interlocutor	interlocutor	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	7	obj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -128,8 +126,8 @@
 23	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Afinal, há que apurar responsabilidades em matéria de seguros, mesmo em situações insólitas com esta.
-# source = CETEMPúblico n=112 sec=pol sem=95b
 # sent_id = CP112-6
+# source = CETEMPúblico n=112 sec=pol sem=95b
 # id = 571
 1	Afinal	afinal	ADV	ADV|@ADVL>	_	5	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -151,8 +149,8 @@
 18	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Nova gestão na Ponte 25 de Abril
-# source = CETEMPúblico n=112 sec=pol sem=95b
 # sent_id = CP112-7
+# source = CETEMPúblico n=112 sec=pol sem=95b
 # id = 572
 1	Nova	novo	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	2	amod	_	_
 2	gestão	gestão	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_

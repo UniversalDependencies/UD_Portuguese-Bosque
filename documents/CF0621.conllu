@@ -1,6 +1,6 @@
 # text = Rodney King ganha US$ 3,8 mi
-# source = CETENFolha n=621 cad=Mundo sec=pol sem=94b &W
 # sent_id = CF621-1
+# source = CETENFolha n=621 cad=Mundo sec=pol sem=94b &W
 # id = 2613
 1	Rodney	Rodney	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Rodney_King|MWEPOS=PROPN
 2	King	King	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -10,10 +10,9 @@
 6	mi	milhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	5	flat	_	_
 
 # text = O operário da construção civil negro e desempregado Rodney King, 28, vai receber US$ 3,8 milhões da Prefeitura de Los Angeles como compensação pelos efeitos da surra que levou de quatro policiais brancos em março de 1991.
-# source = CETENFolha n=621 cad=Mundo sec=pol sem=94b
 # sent_id = CF621-2
+# source = CETENFolha n=621 cad=Mundo sec=pol sem=94b
 # id = 2614
-# d2d = cc(negro,e) -> cc(desempregado,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	operário	operário	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -27,7 +26,7 @@
 10	Rodney	Rodney	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Rodney_King|MWEPOS=PROPN
 11	King	King	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-13	28	28	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	10	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+13	28	28	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	10	parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 15	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	_
 16	receber	receber	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
@@ -64,11 +63,9 @@
 44	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = A absolvição em abril de 1992 dos policiais provocou 48 horas de conflitos raciais em LA que resultaram em 58 mortes, 4.000 feridos e US$ 1 bilhão em prejuízos.
-# source = CETENFolha n=621 cad=Mundo sec=pol sem=94b
 # sent_id = CF621-3
+# source = CETENFolha n=621 cad=Mundo sec=pol sem=94b
 # id = 2615
-# d2d = cc(mortes,e) -> cc(US$,e)  #106
-# d2d = punct(mortes,,) -> punct(feridos,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	absolvição	absolvição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
 3	em	em	ADP	PRP|@N<	_	4	case	_	_
@@ -87,7 +84,7 @@
 15	raciais	racial	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	14	amod	_	_
 16	em	em	ADP	PRP|@N<	_	17	case	_	_
 17	LA	LA	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
-18	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	19	nsubj	_	_
+18	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	19	nsubj	_	_
 19	resultaram	resultar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	14	acl:relcl	_	_
 20	em	em	ADP	PRP|@<PIV	_	22	case	_	_
 21	58	58	NUM	<card>|NUM|F|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168

@@ -1,15 +1,14 @@
 # text = Tal como na última final do Campeonato do Mundo, disputada em Nova Iorque e Lion, Kasparov tenta apresentar-se como o «bom reformador» contra o «mau conservador» (Karpov).
-# source = CETEMPúblico n=17 sec=des sem=93a
 # sent_id = CP17-1
+# source = CETEMPúblico n=17 sec=des sem=93a
 # id = 87
-# d2d = cc(Nova,e) -> cc(Lion,e)  #106
-1	Tal	tal	ADP	PRP|@COM	_	6	case	_	MWE=Tal_como
-2	como	como	ADV	N|M|S|@P<	_	1	fixed	_	_
+1	Tal	tal	ADV	PRP|@COM	_	6	mark	_	MWE=Tal_como|MWEPOS=SCONJ
+2	como	como	SCONJ	N|M|S|@P<	_	1	fixed	_	_
 3-4	na	_	_	_	_	_	_	_	_
 3	em	em	ADP	<first-cjt>|<sam->|PRP|@ADVL>	_	6	case	_	_
 4	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	6	det	_	_
 5	última	último	ADJ	<NUM-ord>|ADJ|F|S|@>N	Gender=Fem|Number=Sing|NumType=Ord	6	amod	_	ChangedBy=Issue172
-6	final	final	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	obl	_	ChangedBy=Issue137
+6	final	final	NOUN	<first-cjt>|<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	22	advcl	_	ChangedBy=Issue137
 7-8	do	_	_	_	_	_	_	_	_
 7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
 8	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
@@ -49,16 +48,12 @@
 40	.	.	PUNCT	PU|@PU	_	22	punct	_	_
 
 # text = A FIDE, que organiza a competição desde 1948, declarou estar pronta para defender os seus direitos em tribunal, e acusou Kasparov e Short de privilegiarem os seus interesses económicos ao tentarem conseguir uma verba superior à oferecida pela cidade de Manchester para organizar a final e que rondava os 250 mil contos.
-# source = CETEMPúblico n=17 sec=des sem=93a
 # sent_id = CP17-2
+# source = CETEMPúblico n=17 sec=des sem=93a
 # id = 88
-# d2d = cc(Kasparov,e) -> cc(Short,e)  #106
-# d2d = cc(declarou,e) -> cc(acusou,e)  #106
-# d2d = punct(declarou,,) -> punct(acusou,,)  #106
-# d2d = cc(superior,e) -> cc(rondava,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	FIDE	FIDE	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
-3	,	,	PUNCT	PU|@PU	_	11	punct	_	_
+3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 4	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	5	nsubj	_	_
 5	organiza	organizar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
@@ -68,8 +63,8 @@
 10	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 11	declarou	declarar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 12	estar	estar	AUX	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	13	cop	_	ChangedBy=Issue167
-13	pronta	pronto	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	11	dep	_	_
-14	para	para	ADP	PRP|@A<ARG	_	15	mark	_	_
+13	pronta	pronto	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	11	xcomp	_	_
+14	para	para	SCONJ	PRP|@A<ARG	_	15	mark	_	_
 15	defender	defender	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	advcl	_	_
 16	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
 17	seus	meu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	18	det	_	_
@@ -82,14 +77,14 @@
 24	Kasparov	Kasparov	PROPN	<first-cjt>|PROP|M|S|@<ACC	Gender=Masc|Number=Sing	23	obj	_	_
 25	e	e	CCONJ	<co-acc>|KC|@CO	_	26	cc	_	d2d:#106
 26	Short	Short	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	24	conj	_	ChangedBy=Issue149
-27	de	de	ADP	PRP|@<PIV	_	28	mark	_	_
+27	de	de	SCONJ	PRP|@<PIV	_	28	mark	_	_
 28	privilegiarem	privilegiar	VERB	<cjt>|<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	23	xcomp	_	_
 29	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_
 30	seus	meu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	31	det	_	_
 31	interesses	interesse	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	28	obj	_	_
 32	económicos	económico	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	31	amod	_	_
 33-34	ao	_	_	_	_	_	_	_	_
-33	a	a	ADP	<sam->|PRP|@<ADVL	_	35	mark	_	_
+33	a	a	SCONJ	<sam->|PRP|@<ADVL	_	35	mark	_	_
 34	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	tentarem	tentar	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	28	advcl	_	_
 36	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	35	xcomp	_	_
@@ -97,7 +92,7 @@
 38	verba	verba	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	36	obj	_	_
 39	superior	superior	ADJ	<first-cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	38	amod	_	_
 40-41	à	_	_	_	_	_	_	_	_
-40	a	a	ADP	<sam->|PRP|@A<	_	42	mark	_	_
+40	a	a	SCONJ	<sam->|PRP|@A<	_	42	mark	_	_
 41	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	42	det	_	_
 42	oferecida	oferecer	VERB	<mv>|V|PCP|F|S|@ICL-P<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	39	advcl	_	_
 43-44	pela	_	_	_	_	_	_	_	_
@@ -106,7 +101,7 @@
 45	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	42	obl:agent	_	_
 46	de	de	ADP	PRP|@N<	_	47	case	_	_
 47	Manchester	Manchester	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	45	nmod	_	_
-48	para	para	ADP	PRP|@<ADVL	_	49	mark	_	_
+48	para	para	SCONJ	PRP|@<ADVL	_	49	mark	_	_
 49	organizar	organizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	42	advcl	_	_
 50	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
 51	final	final	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	49	obj	_	_
@@ -120,14 +115,14 @@
 59	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Este «golpe de Estado» deixa céptica a maior parte dos grandes mestres de xadrez (cerca de 300 em todo o mundo), que esperam ver a situação clarificada, independentemente da parte que acabe vencedora.
-# source = CETEMPúblico n=17 sec=des sem=93a
 # sent_id = CP17-3
+# source = CETEMPúblico n=17 sec=des sem=93a
 # id = 89
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	golpe	golpe	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	MWE=golpe_de_Estado
 4	de	de	ADP	PRP|@N<	_	5	case	_	_
-5	Estado	estado	NOUN	N|@P<	_	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+5	Estado	estado	NOUN	N|@P<	Gender=Masc|Number=Sing	3	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 6	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 7	deixa	deixar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	céptica	céptico	ADJ	ADJ|F|S|@<OC	Gender=Fem|Number=Sing	7	xcomp	_	_
@@ -142,11 +137,11 @@
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	xadrez	xadrez	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	_
 18	(	(	PUNCT	PU|@PU	_	21	punct	_	ChangedBy=Issue165|SpaceAfter=No
-19	cerca	cerca	ADV	ADV|@>A	_	21	advmod	_	MWE=cerca_de
-20	de	de	ADP	<prp>|PRP|@A<	_	19	case	_	_
+19	cerca	cerca	ADV	ADV|@>A	_	21	advmod	_	MWE=cerca_de|MWEPOS=ADV
+20	de	de	ADP	<prp>|PRP|@A<	_	19	fixed	_	_
 21	300	300	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	15	appos	_	ChangedBy=Issue168
 22	em	em	ADP	PRP|@A<	_	25	case	_	_
-23	todo	todo	PRON	INDP|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	25	dep	_	_
+23	todo	todo	DET	INDP|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	25	det	_	_
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 26	)	)	PUNCT	PU|@PU	_	21	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -169,13 +164,12 @@
 42	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Por outro lado, a expulsão de Kasparov, detentor do título mundial desde 1985, criará dificuldades à FIDE para convencer Manchester a acolher uma falsa final entre Karpov e Timman.
-# source = CETEMPúblico n=17 sec=des sem=93a
 # sent_id = CP17-4
+# source = CETEMPúblico n=17 sec=des sem=93a
 # id = 90
-# d2d = cc(Karpov,e) -> cc(Timman,e)  #106
-1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	MWE=Por_outro_lado
-2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	_
-3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	18	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	Por	por	ADP	PRP|@ADVL>	_	18	cc	_	MWE=Por_outro_lado|MWEPOS=CCONJ
+2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	1	fixed	_	_
+3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	expulsão	expulsão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	18	nsubj	_	_
@@ -197,10 +191,10 @@
 20	a	a	ADP	<sam->|PRP|@<PIV	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	22	det	_	_
 22	FIDE	FIDE	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	18	iobj	_	_
-23	para	para	ADP	PRP|@<ADVL	_	24	mark	_	_
+23	para	para	SCONJ	PRP|@<ADVL	_	24	mark	_	_
 24	convencer	convencer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	18	advcl	_	_
 25	Manchester	Manchester	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	24	obj	_	_
-26	a	a	ADP	PRP|@<PIV	_	27	mark	_	_
+26	a	a	SCONJ	PRP|@<PIV	_	27	mark	_	_
 27	acolher	acolher	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	24	xcomp	_	_
 28	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 29	falsa	falso	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	30	amod	_	_
@@ -212,15 +206,15 @@
 35	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = Isto no caso de os dois xadrezistas aceitarem o convite.
-# source = CETEMPúblico n=17 sec=des sem=93a
 # sent_id = CP17-5
+# source = CETEMPúblico n=17 sec=des sem=93a
 # id = 91
 1	Isto	isto	PRON	<dem>|INDP|M|S|@NPHR	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
 2-3	no	_	_	_	_	_	_	_	_
 2	em	em	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	caso	caso	NOUN	N|@P<	_	1	nmod	_	_
-5	de	de	ADP	PRP|@N<	_	9	mark	_	_
+4	caso	caso	NOUN	N|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
+5	de	de	SCONJ	PRP|@N<	_	9	mark	_	_
 6	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
 7	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	nummod	_	_
 8	xadrezistas	xadrezista	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_

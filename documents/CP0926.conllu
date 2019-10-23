@@ -1,14 +1,12 @@
 # text = Bucareste acusou a Hungria de ter pretensões territoriais na Transilvânia -- uma região atribuída à Roménia em 1920, após o fim do Império Austro-Hungaro -- e de apoiar a concessão de autonomia às regiões dominadas pelos magiares romenos, uma vez que esta legitimaria a sua ingerência nos assuntos internos de outro país.
-# source = CETEMPúblico n=926 sec=pol sem=93b
 # sent_id = CP926-1
+# source = CETEMPúblico n=926 sec=pol sem=93b
 # id = 4762
-# d2d = punct(ter,,) -> punct(apoiar,,)  #106
-# d2d = cc(ter,e) -> cc(apoiar,e)  #106
 1	Bucareste	Bucareste	PROPN	PROP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing	2	nsubj	_	_
 2	acusou	acusar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	Hungria	Hungria	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
-5	de	de	ADP	<first-cjt>|PRP|@<PIV	_	6	mark	_	_
+5	de	de	SCONJ	<first-cjt>|PRP|@<PIV	_	6	mark	_	_
 6	ter	ter	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	2	xcomp	_	_
 7	pretensões	pretensão	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	6	obj	_	_
 8	territoriais	territorial	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
@@ -37,7 +35,7 @@
 28	Austro-Hungaro	Austro-Hungaro	PROPN	_	Number=Sing	27	flat:name	_	ChangedBy=Issue119
 29	--	--	PUNCT	PU|@PU	_	14	punct	_	_
 30	e	e	CCONJ	<co-piv>|KC|@CO	_	32	cc	_	d2d:#106
-31	de	de	ADP	<cjt>|PRP|@<PIV	_	32	mark	_	_
+31	de	de	SCONJ	<cjt>|PRP|@<PIV	_	32	mark	_	_
 32	apoiar	apoiar	VERB	<cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	conj	_	_
 33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	concessão	concessão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	32	obj	_	_
@@ -54,7 +52,7 @@
 43	magiares	magiar	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	40	obl:agent	_	_
 44	romenos	romeno	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	43	amod	_	ChangedBy=Issue165|SpaceAfter=No
 45	,	,	PUNCT	PU|@PU	_	40	punct	_	_
-46	uma	uma	DET	<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	50	mark	_	MWE=uma_vez_que
+46	uma	uma	DET	<arti>|DET|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	50	mark	_	MWE=uma_vez_que|MWEPOS=SCONJ
 47	vez	vez	NOUN	N|F|S|@>S	Gender=Fem|Number=Sing	46	fixed	_	_
 48	que	que	SCONJ	KS|@SUB	_	46	fixed	_	_
 49	esta	este	PRON	<dem>|DET|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Dem	50	nsubj	_	_
@@ -73,11 +71,11 @@
 61	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Para mais, o Governo húngaro recusou até agora a assinatura de um acordo sobre a intangibilidade das fronteiras dos dois países vizinhos.
-# source = CETEMPúblico n=926 sec=pol sem=93b
 # sent_id = CP926-2
+# source = CETEMPúblico n=926 sec=pol sem=93b
 # id = 4763
 1	Para	para	ADP	PRP|@ADVL>	_	2	case	_	_
-2	mais	muito	PRON	<quant>|<KOMP>|<COMP>|DET|M/F|S/P|@P<	Gender=Unsp|Number=Unsp|PronType=Ind	7	obl	_	ChangedBy=Issue165|SpaceAfter=No
+2	mais	mais	PRON	<quant>|<KOMP>|<COMP>|DET|M/F|S/P|@P<	Gender=Unsp|Number=Unsp|PronType=Ind	7	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	Governo	Governo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
@@ -106,10 +104,9 @@
 26	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = «O diálogo político é a única via para melhorar as relações entre a Hungria e a Roménia», afirmou quarta-feira Teodor Malescanu.
-# source = CETEMPúblico n=926 sec=pol sem=93b
 # sent_id = CP926-3
+# source = CETEMPúblico n=926 sec=pol sem=93b
 # id = 4764
-# d2d = cc(Hungria,e) -> cc(Roménia,e)  #106
 1	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	diálogo	diálogo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
@@ -118,7 +115,7 @@
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 7	única	único	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	8	amod	_	_
 8	via	via	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	21	parataxis	_	_
-9	para	para	ADP	PRP|@N<	_	10	mark	_	_
+9	para	para	SCONJ	PRP|@N<	_	10	mark	_	_
 10	melhorar	melhorar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	acl	_	_
 11	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
 12	relações	relação	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
@@ -137,8 +134,8 @@
 25	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = Mas as palavras do ministro romeno foram recebidas pelos responsáveis da UDMR como uma jogada de «oportunismo».
-# source = CETEMPúblico n=926 sec=pol sem=93b
 # sent_id = CP926-4
+# source = CETEMPúblico n=926 sec=pol sem=93b
 # id = 4765
 1	Mas	mas	CCONJ	KC|@CO	_	9	cc	_	_
 2	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
@@ -168,8 +165,8 @@
 23	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Isto porque o problema da minoria húngara denegriu a imagem internacional da Roménia, que tenta a todo o custo fazer aprovar o seu pedido de adesão ao Conselho da Europa (CE), que será votado no início de Outubro.
-# source = CETEMPúblico n=926 sec=pol sem=93b
 # sent_id = CP926-5
+# source = CETEMPúblico n=926 sec=pol sem=93b
 # id = 4766
 1	Isto	isto	PRON	<dem>|INDP|M|S|@NPHR	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
 2	porque	porque	SCONJ	KS|@SUB	_	9	mark	_	_

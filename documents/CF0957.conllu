@@ -1,29 +1,29 @@
 # text = A hidroginástica é uma alternativa para quem não tem acompanhante.
-# source = CETENFolha n=957 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF957-1
+# source = CETENFolha n=957 cad=Cotidiano sec=soc sem=94a
 # id = 4044
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	hidroginástica	hidroginástica	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
 4	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	alternativa	alternativa	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
-6	para	para	ADP	PRP|@N<ARG	_	9	mark	_	_
-7	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	9	nsubj	_	_
+6	para	para	SCONJ	PRP|@N<ARG	_	9	mark	_	_
+7	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	PronType=Rel	5	obl	_	_
 8	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
-9	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	_
+9	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
 10	acompanhante	acompanhante	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	9	obj	_	ChangedBy=Issue165|SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = A professora Cláudia Morgado, 25, da academia Competition, recomenda exercícios leves, como a corrida.
-# source = CETENFolha n=957 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF957-2
+# source = CETENFolha n=957 cad=Cotidiano sec=soc sem=94a
 # id = 4045
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	professora	professora	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	13	nsubj	_	_
 3	Cláudia	Cláudia	PROPN	_	Gender=Fem|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Cláudia_Morgado|MWEPOS=PROPN
 4	Morgado	Morgado	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-6	25	25	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	2	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+6	25	25	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	2	parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	<sam->|PRP|@N<PRED	_	10	case	_	_
@@ -41,11 +41,9 @@
 20	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = «O importante é levantar bem o joelho, manter o ritmo e encostar o calcanhar no chão a cada movimento», diz.
-# source = CETENFolha n=957 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF957-3
+# source = CETENFolha n=957 cad=Cotidiano sec=soc sem=94a
 # id = 4046
-# d2d = cc(levantar,e) -> cc(encostar,e)  #106
-# d2d = punct(levantar,,) -> punct(manter,,)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	importante	importante	ADJ	<n>|<np-def>|ADJ|M|S|@SC>	Gender=Masc|Number=Sing	25	parataxis	_	_

@@ -1,6 +1,6 @@
 # text = Justiça apura chacina de 111
-# source = CETENFolha n=332 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF332-1
+# source = CETENFolha n=332 cad=Cotidiano sec=soc sem=94a
 # id = 1375
 1	Justiça	justiça	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	2	nsubj	_	_
 2	apura	apurar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -9,8 +9,8 @@
 5	111	111	NUM	<card>|NUM|M|P|@P<	NumType=Card	3	nmod	_	ChangedBy=Issue168
 
 # text = O TJM (Tribunal de Justiça Militar) vai começar a ouvir neste mês as testemunhas de acusação do processo contra os 120 Policiais Militares denunciados pelo massacre de 111 presos no pavilhão 9 da Casa de Detenção, no Carandiru (zona norte de São Paulo).
-# source = CETENFolha n=332 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF332-3
+# source = CETENFolha n=332 cad=Cotidiano sec=soc sem=94a
 # id = 1376
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	TJM	TJM	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
@@ -21,9 +21,9 @@
 7	Militar	Militar	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 8	)	)	PUNCT	PU|@PU	_	4	punct	_	_
 9	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
-10	começar	começar	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	12	aux	_	_
-11	a	a	ADP	PRP|@PRT-AUX<	_	12	case	_	_
-12	ouvir	ouvir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+10	começar	começar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	MWE=começar_a|MWEPOS=AUX
+11	a	a	SCONJ	PRP|@PRT-AUX<	_	12	mark	_	_
+12	ouvir	ouvir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	10	xcomp	_	_
 13-14	neste	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@<ADVL	_	15	case	_	_
 14	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	15	det	_	_
@@ -66,7 +66,7 @@
 46	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 47	Carandiru	Carandiru	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	28	obl	_	ChangedBy=Issue137
 48	(	(	PUNCT	PU|@PU	_	49	punct	_	ChangedBy=Issue165|SpaceAfter=No
-49	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	47	nmod	_	_
+49	zona	zona	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	47	parataxis	_	_
 50	norte	norte	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	49	amod	_	_
 51	de	de	ADP	PRP|@N<	_	52	case	_	_
 52	São	São	PROPN	_	Gender=Masc|Number=Sing	49	nmod	_	ChangedBy=Issue119|MWE=São_Paulo|MWEPOS=PROPN
@@ -75,8 +75,8 @@
 55	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O massacre ocorreu quando a tropa de choque da PM invadiu o pavilhão para acabar com uma rebelião, em 2 de outubro de 92.
-# source = CETENFolha n=332 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF332-4
+# source = CETENFolha n=332 cad=Cotidiano sec=soc sem=94a
 # id = 1377
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	massacre	massacre	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
@@ -93,7 +93,7 @@
 12	invadiu	invadir	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
 13	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 14	pavilhão	pavilhão	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	12	obj	_	_
-15	para	para	ADP	PRP|@<ADVL	_	16	mark	_	_
+15	para	para	SCONJ	PRP|@<ADVL	_	16	mark	_	_
 16	acabar	acabar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	advcl	_	_
 17	com	com	ADP	PRP|@<PIV	_	19	case	_	_
 18	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_

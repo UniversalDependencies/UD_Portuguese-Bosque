@@ -1,6 +1,6 @@
 # text = Sergipe registrou 87 casos de cólera em 94
-# source = CETENFolha n=200 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF200-1
+# source = CETENFolha n=200 cad=Cotidiano sec=soc sem=94b
 # id = 856
 1	Sergipe	Sergipe	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	registrou	registrar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -12,8 +12,8 @@
 8	94	94	NUM	<card>|NUM|M|S|@P<	NumType=Card	2	obl	_	ChangedBy=Issue168
 
 # text = A Divisão de Vigilância Sanitária de Sergipe registrou nos primeiros 115 dias deste ano 87 casos de cólera com uma morte.
-# source = CETENFolha n=200 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF200-3
+# source = CETENFolha n=200 cad=Cotidiano sec=soc sem=94b
 # id = 857
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Divisão	Divisão	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	MWE=Divisão_de_Vigilância_Sanitária
@@ -33,21 +33,19 @@
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	16	det	_	_
 16	ano	ano	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	13	nmod	_	_
-17	87	87	NUM	<card>|NUM|M|P|@>N	NumType=Card	23	nummod	_	ChangedBy=Issue168
+17	87	87	NUM	<card>|NUM|M|P|@>N	NumType=Card	18	nummod	_	ChangedBy=Issue168
 18	casos	caso	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	8	obj	_	_
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
-20	cólera	cólera	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
+20	cólera	cólera	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	18	nmod	_	_
 21	com	com	ADP	PRP|@<ACC	_	23	case	_	_
 22	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	morte	morte	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	ChangedBy=Issue165|SpaceAfter=No
+23	morte	morte	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 24	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = A chefe da Vigilância, Noélia Soares, disse que, apesar da existência de um surto da doença, o controle da qualidade das águas dos rios, poços e lagos tem evitado a propagação do vibrião.
-# source = CETENFolha n=200 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF200-4
+# source = CETENFolha n=200 cad=Cotidiano sec=soc sem=94b
 # id = 858
-# d2d = cc(rios,e) -> cc(lagos,e)  #106
-# d2d = punct(rios,,) -> punct(poços,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	chefe	chefe	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	10	nsubj	_	_
 3-4	da	_	_	_	_	_	_	_	_
@@ -61,11 +59,11 @@
 10	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 11	que	que	SCONJ	KS|@SUB	_	40	mark	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-13	apesar	apesar	ADV	ADV|@ADVL>	_	40	advmod	_	MWE=apesar_de
+13	apesar	apesar	ADV	ADV|@ADVL>	_	16	case	_	MWE=apesar_de|MWEPOS=ADP
 14-15	da	_	_	_	_	_	_	_	_
-14	de	de	ADP	PRP|@A<	_	16	case	_	_
+14	de	de	ADP	PRP|@A<	_	13	fixed	_	_
 15	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
-16	existência	existência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	obl	_	_
+16	existência	existência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	40	obl	_	_
 17	de	de	ADP	PRP|@N<	_	19	case	_	_
 18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	surto	surto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	nmod	_	_

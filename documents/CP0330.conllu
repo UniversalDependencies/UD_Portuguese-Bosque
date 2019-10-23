@@ -1,8 +1,7 @@
 # text = O incidente de ontem é grave mas não é o primeiro.
-# source = CETEMPúblico n=330 sec=pol sem=98b
 # sent_id = CP330-1
+# source = CETEMPúblico n=330 sec=pol sem=98b
 # id = 1731
-# d2d = cc(grave,mas) -> cc(primeiro,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	incidente	incidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -17,11 +16,9 @@
 12	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Várias vezes, nos últimos dois meses, afegãos e iranianos trocaram acusações sobre violações do território ou do espaço aéreo, alegações nunca confirmadas por fontes independentes.
-# source = CETEMPúblico n=330 sec=pol sem=98b
 # sent_id = CP330-2
+# source = CETEMPúblico n=330 sec=pol sem=98b
 # id = 1732
-# d2d = cc(afegãos,e) -> cc(iranianos,e)  #106
-# d2d = cc(território,ou) -> cc(espaço,ou)  #106
 1	Várias	várias	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	2	det	_	_
 2	vezes	vez	NOUN	<np-idf>|N|F|P|@ADVL>	Gender=Fem|Number=Plur	13	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -59,10 +56,9 @@
 32	.	.	PUNCT	PU|@PU	_	13	punct	_	_
 
 # text = Em Agosto, por exemplo, Teerão anunciou uma troca de tiros, que terá sido efémera e com um número indeterminado de vítimas, sem conseguir no entanto provar uma agressão.
-# source = CETEMPúblico n=330 sec=pol sem=98b
 # sent_id = CP330-3
+# source = CETEMPúblico n=330 sec=pol sem=98b
 # id = 1733
-# d2d = cc(efémera,e) -> cc(número,e)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Agosto	agosto	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -88,12 +84,12 @@
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	vítimas	vítima	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	21	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	27	punct	_	_
-26	sem	sem	ADP	PRP|@<ADVL	_	27	mark	_	_
+26	sem	sem	SCONJ	PRP|@<ADVL	_	27	mark	_	_
 27	conseguir	conseguir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	advcl	_	_
 28-29	no	_	_	_	_	_	_	_	_
-28	em	em	ADP	<sam->|PRP|@N<	_	30	case	_	_
-29	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	27	obl	_	_
+28	em	em	ADP	<sam->|PRP|@N<	_	27	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+29	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	fixed	_	_
+30	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	28	fixed	_	_
 31	provar	provar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	27	xcomp	_	_
 32	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	agressão	agressão	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	31	obj	_	ChangedBy=Issue165|SpaceAfter=No

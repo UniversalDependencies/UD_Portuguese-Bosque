@@ -1,13 +1,12 @@
 # text = Ministro da Cultura admite défice orçamental de dois a três milhões no CCB e reúne com mecenas
-# source = CETEMPúblico n=605 sec=clt sem=95b
 # sent_id = CP605-1
+# source = CETEMPúblico n=605 sec=clt sem=95b
 # id = 3137
-# d2d = cc(admite,e) -> cc(reúne,e)  #106
 1	Ministro	ministro	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	MWE=Ministro_da_Cultura
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	Cultura	cultura	NOUN	N|@P<	_	1	nmod	_	_
+4	Cultura	cultura	NOUN	N|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 5	admite	admitir	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	défice	défice	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	5	obj	_	_
 7	orçamental	orçamental	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
@@ -26,8 +25,8 @@
 19	mecenas	mecenas	NOUN	<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	17	obj	_	_
 
 # text = Fraústo da Silva à espera do convite do primeiro-ministro
-# source = CETEMPúblico n=605 sec=clt sem=95b
 # sent_id = CP605-2
+# source = CETEMPúblico n=605 sec=clt sem=95b
 # id = 3138
 1	Fraústo	Fraústo	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	MWE=Fraústo_da_Silva
 2-3	da	_	_	_	_	_	_	_	_
@@ -48,11 +47,9 @@
 13	primeiro-ministro	primeiro-ministro	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
 
 # text = Fraústo da Silva, ex-ministro da Educação e actual presidente do Instituto Nacional de Administração, admitiu ter sido sondado para o lugar de Antero Ferreira nos conselhos directivo e de administração da Fundação das Descobertas, tal como noticiou a edição de ontem do PÚBLICO.
-# source = CETEMPúblico n=605 sec=clt sem=95b
 # sent_id = CP605-3
+# source = CETEMPúblico n=605 sec=clt sem=95b
 # id = 3139
-# d2d = cc(directivo,e) -> cc(administração,e)  #106
-# d2d = cc(ex-ministro,e) -> cc(presidente,e)  #106
 1	Fraústo	Fraústo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	MWE=Fraústo_da_Silva
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -63,17 +60,17 @@
 7-8	da	_	_	_	_	_	_	_	_
 7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
 8	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Educação	educação	NOUN	N|@P<	_	6	nmod	_	_
+9	Educação	educação	NOUN	N|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
 10	e	e	CCONJ	<co-n<pred>|<co-prparg>|KC|@CO	_	12	cc	_	d2d:#106
 11	actual	actual	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	12	amod	_	_
 12	presidente	presidente	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	6	conj	_	MWE=presidente_do_Instituto_Nacional_de_Administração
 13-14	do	_	_	_	_	_	_	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	Instituto	instituto	NOUN	N|@P<	_	12	nmod	_	_
-16	Nacional	nacional	ADJ	ADJ|@N<	_	15	amod	_	_
+15	Instituto	instituto	NOUN	N|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
+16	Nacional	nacional	ADJ	ADJ|@N<	Gender=Masc|Number=Sing	15	amod	_	_
 17	de	de	ADP	PRP|@N<	_	18	case	_	_
-18	Administração	administração	NOUN	N|@P<	_	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+18	Administração	administração	NOUN	N|@P<	Gender=Fem|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 20	admitiu	admitir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 21	ter	ter	AUX	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	23	aux	_	_
@@ -102,8 +99,8 @@
 41	as	o	DET	<artd>|<-sam>|DET|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	42	det	_	_
 42	Descobertas	Descobertas	PROPN	PROP|@P<	Number=Sing	39	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 43	,	,	PUNCT	PU|@PU	_	46	punct	_	_
-44	tal	tal	ADP	PRP|@ADVL>	_	46	mark	_	MWE=tal_como
-45	como	como	ADV	N|M|S|@P<	_	44	fixed	_	_
+44	tal	tal	ADV	PRP|@ADVL>	_	46	mark	_	MWE=tal_como|MWEPOS=SCONJ
+45	como	como	SCONJ	N|M|S|@P<	_	44	fixed	_	_
 46	noticiou	noticiar	VERB	<mv>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	advcl	_	_
 47	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
 48	edição	edição	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	46	nsubj	_	_
@@ -116,11 +113,9 @@
 54	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = «Não falei com o primeiro-ministro, mas fui sondado nesse sentido», disse.
-# source = CETEMPúblico n=605 sec=clt sem=95b
 # sent_id = CP605-4
+# source = CETEMPúblico n=605 sec=clt sem=95b
 # id = 3140
-# d2d = punct(falei,,) -> punct(sondado,,)  #106
-# d2d = cc(falei,mas) -> cc(sondado,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 3	falei	falar	VERB	<mv>|<first-cjt>|V|PS|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	16	parataxis	_	_

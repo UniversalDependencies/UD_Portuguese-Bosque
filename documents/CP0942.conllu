@@ -1,6 +1,6 @@
 # text = Jaime Gama referia-se a um longo telefonema no fim da semana passada:
-# source = CETEMPúblico n=942 sec=pol sem=97b
 # sent_id = CP942-1
+# source = CETEMPúblico n=942 sec=pol sem=97b
 # id = 4844
 1	Jaime	Jaime	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Jaime_Gama|MWEPOS=PROPN
 2	Gama	Gama	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -23,8 +23,8 @@
 16	:	:	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = numa atitude inédita, Robin Cook telefonou ao seu colega português antes de embarcar para Jacarta, para falar sobre Timor.
-# source = CETEMPúblico n=942 sec=pol sem=97b
 # sent_id = CP942-2
+# source = CETEMPúblico n=942 sec=pol sem=97b
 # id = 4845
 1-2	numa	_	_	_	_	_	_	_	_
 1	em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -41,21 +41,21 @@
 11	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	12	det	_	_
 12	colega	colega	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obj	_	_
 13	português	português	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	12	amod	_	_
-14	antes	antes	ADV	ADV|@<ADVL	_	8	advmod	_	_
-15	de	de	ADP	PRP|@A<ARG	_	16	mark	_	_
-16	embarcar	embarcar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	14	advcl	_	_
+14	antes	antes	ADV	ADV|@<ADVL	_	16	mark	_	MWE=antes_de|MWEPOS=SCONJ
+15	de	de	ADP	PRP|@A<ARG	_	14	fixed	_	_
+16	embarcar	embarcar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	advcl	_	_
 17	para	para	ADP	PRP|@<SA	_	18	case	_	_
 18	Jacarta	Jacarta	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	16	obl	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-20	para	para	ADP	PRP|@<ADVL	_	21	mark	_	_
+20	para	para	SCONJ	PRP|@<ADVL	_	21	mark	_	_
 21	falar	falar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	advcl	_	_
 22	sobre	sobre	ADP	PRP|@<PIV	_	23	case	_	_
 23	Timor	Timor	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	21	obj	_	ChangedBy=Issue165|SpaceAfter=No
 24	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Um dos assuntos abordados nessa ocasião foi a venda de armamento britânico ao regime de Jacarta.
-# source = CETEMPúblico n=942 sec=pol sem=97b
 # sent_id = CP942-3
+# source = CETEMPúblico n=942 sec=pol sem=97b
 # id = 4846
 1	Um	um	NUM	<card>|NUM|M|S|@SUBJ>	NumType=Card	11	nsubj	_	ChangedBy=Issue168
 2-3	dos	_	_	_	_	_	_	_	_
@@ -82,8 +82,8 @@
 20	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Nos meios diplomáticos há, aliás, quem interprete estas manifestações de «sensibilidade» em relação à questão de Timor por parte do Executivo de Tony Blair com uma tentativa de compensar a má imagem criada com as significativas exportações de armas «made in England» rumo à Indonésia.
-# source = CETEMPúblico n=942 sec=pol sem=97b &W
 # sent_id = CP942-4
+# source = CETEMPúblico n=942 sec=pol sem=97b &W
 # id = 4847
 1-2	Nos	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -103,7 +103,7 @@
 15	sensibilidade	sensibilidade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 16	»	»	PUNCT	PU|@PU	_	15	punct	_	_
 17	em	em	ADP	<sam->|PRP|@N<	_	18	case	_	MWE=em_relação_a
-18	relação	relação	NOUN	N|@P<	_	12	nmod	_	_
+18	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 19-20	à	_	_	_	_	_	_	_	_
 19	a	a	ADP	PRP|@N<	_	21	case	_	_
 20	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
@@ -111,7 +111,7 @@
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	Timor	Timor	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	21	nmod	_	_
 24	por	por	ADP	<sam->|PRP|@N<	_	25	case	_	MWE=por_parte_de
-25	parte	parte	NOUN	N|@P<	_	12	nmod	_	_
+25	parte	parte	NOUN	N|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 26-27	do	_	_	_	_	_	_	_	_
 26	de	de	ADP	PRP|@N<	_	28	case	_	_
 27	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
@@ -122,7 +122,7 @@
 32	com	com	ADP	PRP|@<ADVL	_	34	case	_	_
 33	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	tentativa	tentativa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	10	obl	_	ChangedBy=Issue137
-35	de	de	ADP	PRP|@N<ARG	_	36	mark	_	_
+35	de	de	SCONJ	PRP|@N<ARG	_	36	mark	_	_
 36	compensar	compensar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	34	acl	_	_
 37	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	_	_
 38	má	má	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	39	amod	_	_
@@ -147,14 +147,13 @@
 56	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Apesar de ter herdado do Executivo de John Major as mais polémicas licenças de exportação de armas para Jacarta, o Executivo trabalhista não escapou às críticas dos activistas pró-direitos humanos, que acusam os novos governantes de não terem travado os negócios, nomeadamente a venda dos caças «Hawk» fabricados pela British Aerospace e alegadamente utilizados em Timor.
-# source = CETEMPúblico n=942 sec=pol sem=97b
 # sent_id = CP942-5
+# source = CETEMPúblico n=942 sec=pol sem=97b
 # id = 4848
-# d2d = cc(fabricados,e) -> cc(utilizados,e)  #106
-1	Apesar	apesar	ADV	ADV|@ADVL>	_	26	advmod	_	MWE=Apesar_de
-2	de	de	ADP	PRP|@A<	_	4	mark	_	_
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	4	mark	_	MWE=Apesar_de|MWEPOS=SCONJ
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	ter	ter	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	4	aux	_	_
-4	herdado	herdar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	1	advcl	_	_
+4	herdado	herdar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	26	advcl	_	_
 5-6	do	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
 6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
@@ -194,7 +193,7 @@
 38	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	_	_
 39	novos	novo	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	40	amod	_	_
 40	governantes	governante	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	37	obj	_	_
-41	de	de	ADP	PRP|@<PIV	_	44	mark	_	_
+41	de	de	SCONJ	PRP|@<PIV	_	44	mark	_	_
 42	não	não	ADV	_	Polarity=Neg	44	advmod	_	_
 43	terem	ter	AUX	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	44	aux	_	_
 44	travado	travar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	37	xcomp	_	_

@@ -1,12 +1,12 @@
 # text = Presidente da AR atento às dúvidas legais
-# source = CETEMPúblico n=692 sec=pol sem=92a
 # sent_id = CP692-1
+# source = CETEMPúblico n=692 sec=pol sem=92a
 # id = 3567
 1	Presidente	presidente	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	MWE=Presidente_da_AR
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	AR	ar	NOUN	N|@P<	_	1	nmod	_	_
+4	AR	ar	NOUN	N|@P<	Gender=Fem|Number=Sing	1	nmod	_	_
 5	atento	atento	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 6-7	às	_	_	_	_	_	_	_	_
 6	a	a	ADP	<sam->|PRP|@A<	_	8	case	_	_
@@ -15,8 +15,8 @@
 9	legais	legal	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	8	amod	_	_
 
 # text = Barbosa pede pareceres sobre multas do PSD
-# source = CETEMPúblico n=692 sec=pol sem=92a
 # sent_id = CP692-2
+# source = CETEMPúblico n=692 sec=pol sem=92a
 # id = 3568
 1	Barbosa	Barbosa	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	pede	pedir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -29,19 +29,19 @@
 8	PSD	PSD	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 
 # text = O Presidente da Assembleia da República solicitou a vários juristas ligados ao seu gabinete que se pronunciem sobre a legalidade da forma como tem sido descontada no vencimento de deputados do PSD a quantia correspondente às multas aplicadas por faltas de comparência.
-# source = CETEMPúblico n=692 sec=pol sem=92a
 # sent_id = CP692-3
+# source = CETEMPúblico n=692 sec=pol sem=92a
 # id = 3569
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Presidente	presidente	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	MWE=Presidente_da_Assembleia_da_República
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Assembleia	assembleia	NOUN	N|@P<	_	2	nmod	_	_
+5	Assembleia	assembleia	NOUN	N|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
 6-7	da	_	_	_	_	_	_	_	_
 6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	República	república	NOUN	N|@P<	_	5	nmod	_	_
+8	República	república	NOUN	N|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 9	solicitou	solicitar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 10	a	a	ADP	PRP|@<PIV	_	12	case	_	_
 11	vários	vários	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	12	det	_	_
@@ -91,11 +91,9 @@
 50	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Barbosa de Melo foi sensível às reclamações de alguns parlamentares da maioria que a ele se dirigiram pondo em causa tais descontos sem deles terem sido previamente informados e, segundo o PÚBLICO apurou, admitiu mesmo vir a solicitar um parecer à Procuradoria Geral da República.
-# source = CETEMPúblico n=692 sec=pol sem=92a
 # sent_id = CP692-4
+# source = CETEMPúblico n=692 sec=pol sem=92a
 # id = 3570
-# d2d = punct(sensível,,) -> punct(admitiu,,)  #106
-# d2d = cc(sensível,e) -> cc(admitiu,e)  #106
 1	Barbosa	Barbosa	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	MWE=Barbosa_de_Melo
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	Melo	Melo	PROPN	PROP|@P<	Number=Sing	1	nmod	_	_
@@ -122,7 +120,7 @@
 22	causa	causa	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	20	obl	_	_
 23	tais	tal	DET	<dem>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	24	det	_	_
 24	descontos	desconto	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	20	obj	_	_
-25	sem	sem	ADP	PRP|@<ADVL	_	31	mark	_	_
+25	sem	sem	SCONJ	PRP|@<ADVL	_	31	mark	_	_
 26-27	deles	_	_	_	_	_	_	_	_
 26	de	de	ADP	<sam->|PRP|@PIV>	_	27	case	_	_
 27	eles	ele	PRON	<-sam>|PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	31	obj	_	_
@@ -132,16 +130,16 @@
 31	informados	informar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	20	xcomp	_	_
 32	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	39	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
 33	,	,	PUNCT	PU|@PU	_	37	punct	_	_
-34	segundo	segundo	ADP	PRP|@ADVL>	_	37	mark	_	_
+34	segundo	segundo	SCONJ	PRP|@ADVL>	_	37	mark	_	_
 35	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
 36	PÚBLICO	Público	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	37	nsubj	_	_
 37	apurou	apurar	VERB	<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	39	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 38	,	,	PUNCT	PU|@PU	_	39	punct	_	d2d:#106
 39	admitiu	admitir	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	conj	_	_
 40	mesmo	mesmo	ADV	<quant>|ADV|@<ADVL	_	39	advmod	_	_
-41	vir	vir	AUX	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	43	aux	_	_
-42	a	a	ADP	PRP|@PRT-AUX<	_	43	case	_	_
-43	solicitar	solicitar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	39	xcomp	_	_
+41	vir	vir	VERB	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	39	xcomp	_	MWE=vir_a|MWEPOS=AUX
+42	a	a	SCONJ	PRP|@PRT-AUX<	_	43	mark	_	_
+43	solicitar	solicitar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	41	xcomp	_	_
 44	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
 45	parecer	parecer	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	43	obj	_	_
 46-47	à	_	_	_	_	_	_	_	_

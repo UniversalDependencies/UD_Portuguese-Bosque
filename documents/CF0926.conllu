@@ -1,6 +1,6 @@
 # text = Segundo o cônsul, era crescente a pressão do Congresso norte-americano sobre o Departamento de Estado para que se adotasse uma política idêntica à do Brasil.
-# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-1
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # id = 3918
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
@@ -20,7 +20,7 @@
 15	Departamento	Departamento	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	MWE=Departamento_de_Estado
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
 17	Estado	Estado	PROPN	PROP|@P<	Number=Sing	15	nmod	_	_
-18	para	para	ADP	PRP|@N<ARG	_	21	mark	_	_
+18	para	para	SCONJ	PRP|@N<ARG	_	21	mark	_	_
 19	que	que	SCONJ	KS|@SUB	_	21	mark	_	_
 20	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	21	nsubj	_	_
 21	adotasse	adotar	VERB	<mv>|V|IMPF|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	acl	_	_
@@ -37,8 +37,8 @@
 30	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = «Queremos dar um visto por dez anos.
-# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-2
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # id = 3919
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Queremos	querer	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -51,8 +51,8 @@
 9	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = É mais eficiente do que por apenas quatro anos.
-# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-3
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # id = 3920
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	3	advmod	_	_
@@ -68,19 +68,19 @@
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Estamos sendo forçados, ao invés, a reduzir o prazo para três meses.
-# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-4
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # id = 3921
 1	Estamos	estar	AUX	<aux>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	_
 2	sendo	ser	AUX	<aux>|V|GER|@ICL-AUX<	VerbForm=Ger	3	aux:pass	_	_
 3	forçados	forçar	VERB	<mv>|<pass>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5-6	ao	_	_	_	_	_	_	_	_
-5	a	a	ADP	<sam->|PRP|@N<	_	7	case	_	_
-6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	invés	invés	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	a	a	ADP	<sam->|PRP|@N<	_	10	cc	_	MWE=ao_invés|MWEPOS=CCONJ
+6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_
+7	invés	invés	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	5	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-9	a	a	ADP	PRP|@<ADVL	_	10	mark	_	_
+9	a	a	SCONJ	PRP|@<ADVL	_	10	mark	_	_
 10	reduzir	reduzir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	prazo	prazo	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	10	obj	_	_
@@ -90,8 +90,8 @@
 16	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = É uma situação absurda», disse Taylor, 49.
-# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # sent_id = CF926-5
+# source = CETENFolha n=926 cad=Cotidiano sec=soc sem=94b
 # id = 3922
 1	É	ser	AUX	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_

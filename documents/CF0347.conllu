@@ -1,12 +1,12 @@
 # text = Apesar da entrada da frente fria no Estado, são poucas as chances de chuvas no interior, região mais afetada pela falta de chuvas.
-# source = CETENFolha n=347 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF347-1
+# source = CETENFolha n=347 cad=Cotidiano sec=soc sem=94a
 # id = 1442
-1	Apesar	apesar	ADV	ADV|@ADVL>	_	14	advmod	_	MWE=Apesar_de
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	4	case	_	MWE=Apesar_de|MWEPOS=ADP
 2-3	da	_	_	_	_	_	_	_	_
-2	de	de	ADP	PRP|@A<	_	4	case	_	_
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	entrada	entrada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	_
+4	entrada	entrada	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	14	obl	_	_
 5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<ARG	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
@@ -30,7 +30,7 @@
 22	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 23	região	região	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	21	appos	_	_
 24	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@ADVL>	_	25	advmod	_	_
-25	afetada	afetado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	23	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+25	afetada	afetar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	23	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 26-27	pela	_	_	_	_	_	_	_	_
 26	por	por	ADP	<sam->|PRP|@PASS	_	28	case	_	_
 27	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	det	_	_
@@ -40,10 +40,9 @@
 31	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Mas o abrandamento da inversão térmica (fenômeno causado por massas de ar quente que impedem a dispersão dos poluentes) e a volta dos ventos deverão contribuir para melhora da qualidade do ar.
-# source = CETENFolha n=347 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF347-2
+# source = CETENFolha n=347 cad=Cotidiano sec=soc sem=94a
 # id = 1443
-# d2d = cc(abrandamento,e) -> cc(volta,e)  #106
 1	Mas	mas	CCONJ	KC|@CO	_	31	cc	_	_
 2	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	abrandamento	abrandamento	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	31	nsubj	_	_
@@ -61,7 +60,7 @@
 14	ar	ar	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 15	quente	quente	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	_
 16	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	17	nsubj	_	_
-17	impedem	impedir	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_
+17	impedem	impedir	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	dispersão	dispersão	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	_
 20-21	dos	_	_	_	_	_	_	_	_
@@ -76,8 +75,8 @@
 27	de	de	ADP	<sam->|PRP|@N<ARG	_	29	case	_	_
 28	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	_	_
 29	ventos	vento	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	26	nmod	_	_
-30	deverão	dever	AUX	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	31	aux	_	_
-31	contribuir	contribuir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+30	deverão	dever	VERB	<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+31	contribuir	contribuir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	30	xcomp	_	_
 32	para	para	ADP	PRP|@<PIV	_	33	case	_	_
 33	melhora	melhora	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	31	obj	_	_
 34-35	da	_	_	_	_	_	_	_	_

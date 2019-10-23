@@ -1,6 +1,6 @@
 # text = Holanda: Bons jogadores de futebol .
-# source = CETEMPúblico n=853 sec=pol sem=93a
 # sent_id = CP853-1
+# source = CETEMPúblico n=853 sec=pol sem=93a
 # id = 4382
 1	Holanda	Holanda	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -11,17 +11,17 @@
 7	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Falam inglês muito bem, não parecem ter uma grande cultura própria.
-# source = CETEMPúblico n=853 sec=pol sem=93a
 # sent_id = CP853-2
+# source = CETEMPúblico n=853 sec=pol sem=93a
 # id = 4383
 1	Falam	falar	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	inglês	inglês	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
-3	muito	muito	ADV	<quant>|DET|M|S|@>A	Gender=Masc|Number=Sing|PronType=Ind	4	advmod	_	_
+3	muito	muito	ADV	<quant>|DET|M|S|@>A	_	4	advmod	_	_
 4	bem	bem	ADV	<quant>|ADV|@<ADVL	_	1	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 6	não	não	ADV	_	Polarity=Neg	8	advmod	_	_
-7	parecem	parecer	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
-8	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	1	parataxis	_	_
+7	parecem	parecer	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+8	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
 9	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 10	grande	grande	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	11	amod	_	_
 11	cultura	cultura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
@@ -29,16 +29,16 @@
 13	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Às vezes, um pouco parvos, geralmente descontraídos.
-# source = CETEMPúblico n=853 sec=pol sem=93a
 # sent_id = CP853-3
+# source = CETEMPúblico n=853 sec=pol sem=93a
 # id = 4384
 1-2	Às	_	_	_	_	_	_	_	_
 1	A	a	ADP	PRP|@ADVL	_	10	advmod	_	MWEPOS=ADV|MWE=a_as_vezes
 2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	1	fixed	_	_
 3	vezes	vez	NOUN	_	Gender=Fem|Number=Plur	1	fixed	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-5	um	um	ADV	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	advmod	_	MWE=um_pouco
-6	pouco	pouco	DET	DET|M|S|@>A	Gender=Masc|Number=Sing|PronType=Ind	5	fixed	_	_
+5	um	um	DET	<arti>|DET|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	advmod	_	MWE=um_pouco
+6	pouco	pouco	ADV	DET|M|S|@>A	_	5	fixed	_	_
 7	parvos	parvo	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	10	xcomp	_	SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	geralmente	geralmente	ADV	<cjt>|<first-cjt>|ADV|@ADVL	_	10	advmod	_	_
@@ -46,27 +46,24 @@
 11	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Itália: Bons a falar e a fazer negócio .
-# source = CETEMPúblico n=853 sec=pol sem=93a
 # sent_id = CP853-4
+# source = CETEMPúblico n=853 sec=pol sem=93a
 # id = 4385
-# d2d = cc(falar,e) -> cc(fazer,e)  #106
 1	Itália	Itália	PROPN	PROP|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3	Bons	bom	ADJ	ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	1	amod	_	_
-4	a	a	ADP	<first-cjt>|PRP|@A<ARG	_	5	mark	_	_
+4	a	a	SCONJ	<first-cjt>|PRP|@A<ARG	_	5	mark	_	_
 5	falar	falar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	advcl	_	_
 6	e	e	CCONJ	<co-a<>|KC|@CO	_	8	cc	_	d2d:#106
-7	a	a	ADP	<cjt>|PRP|@A<ARG	_	8	mark	_	_
+7	a	a	SCONJ	<cjt>|PRP|@A<ARG	_	8	mark	_	_
 8	fazer	fazer	VERB	<mv>|<cjt>|V|INF|@ICL-P<	VerbForm=Inf	5	conj	_	ChangedBy=Issue149
 9	negócio	negócio	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
 10	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = País bastante caótico, mas muito industrioso.
-# source = CETEMPúblico n=853 sec=pol sem=93a
 # sent_id = CP853-5
+# source = CETEMPúblico n=853 sec=pol sem=93a
 # id = 4386
-# d2d = punct(caótico,,) -> punct(industrioso,,)  #106
-# d2d = cc(caótico,mas) -> cc(industrioso,mas)  #106
 1	País	país	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	bastante	bastante	ADV	<quant>|ADV|@>A	_	3	advmod	_	_
 3	caótico	caótico	ADJ	<first-cjt>|ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -77,16 +74,16 @@
 8	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Muito convencidos.
-# source = CETEMPúblico n=853 sec=pol sem=93a
 # sent_id = CP853-6
+# source = CETEMPúblico n=853 sec=pol sem=93a
 # id = 4387
 1	Muito	muito	ADV	<quant>|ADV|@>A	_	2	advmod	_	_
 2	convencidos	convencer	VERB	<mv>|V|PCP|M|P|@ICL-UTT	Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 3	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Um dos povos mais agradáveis da Europa, amistosos.
-# source = CETEMPúblico n=853 sec=pol sem=93a
 # sent_id = CP853-7
+# source = CETEMPúblico n=853 sec=pol sem=93a
 # id = 4388
 1	Um	um	NUM	<card>|NUM|M|S|@NPHR	NumType=Card	0	root	_	ChangedBy=Issue168
 2-3	dos	_	_	_	_	_	_	_	_
@@ -104,8 +101,8 @@
 12	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Mas muita pobreza.
-# source = CETEMPúblico n=853 sec=pol sem=93a
 # sent_id = CP853-8
+# source = CETEMPúblico n=853 sec=pol sem=93a
 # id = 4389
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	muita	muito	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	3	det	_	_
@@ -113,8 +110,8 @@
 4	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Fisicamente, o povo mais belo da CE.
-# source = CETEMPúblico n=853 sec=pol sem=93a
 # sent_id = CP853-9
+# source = CETEMPúblico n=853 sec=pol sem=93a
 # id = 4390
 1	Fisicamente	fisicamente	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_

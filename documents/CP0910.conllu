@@ -1,6 +1,6 @@
 # text = Se não se der qualquer fiasco de última hora, é provável que o PDL mantenha uma maioria confortável dos 299 lugares da Assembleia.
-# source = CETEMPúblico n=910 sec=eco sem=92a
 # sent_id = CP910-1
+# source = CETEMPúblico n=910 sec=eco sem=92a
 # id = 4688
 1	Se	se	SCONJ	KS|@SUB	_	4	mark	_	_
 2	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
@@ -33,8 +33,8 @@
 27	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = «Os coreanos pensam, em geral, que a política não devia ser controlada pelos homens de negócios poderosos», afirma Ahn Byung Joon, professor de Ciências Políticas na Universidade Yonsei de Seul.
-# source = CETEMPúblico n=910 sec=eco sem=92a
 # sent_id = CP910-2
+# source = CETEMPúblico n=910 sec=eco sem=92a
 # id = 4689
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
@@ -48,9 +48,9 @@
 10	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	política	política	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj:pass	_	_
 12	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
-13	devia	dever	AUX	<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	aux	_	_
+13	devia	dever	VERB	<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	ccomp	_	_
 14	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	15	aux:pass	_	_
-15	controlada	controlar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	ccomp	_	_
+15	controlada	controlar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	13	xcomp	_	_
 16-17	pelos	_	_	_	_	_	_	_	_
 16	por	por	ADP	PRP|@PASS	_	18	case	_	_
 17	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
@@ -79,11 +79,11 @@
 39	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
 # text = No entanto, o partido de Chung só precisa de 20 lugares para constituir um bloco parlamentar com o qual se tornará necessário negociar --
-# source = CETEMPúblico n=910 sec=eco sem=92a
 # sent_id = CP910-3
+# source = CETEMPúblico n=910 sec=eco sem=92a
 # id = 4690
-1	No	no	ADP	PRP|@ADVL>	_	2	case	_	MWE=No_entanto
-2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	No	no	CCONJ	PRP|@ADVL>	_	9	cc	_	MWE=No_entanto|MWEPOS=CCONJ
+2	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	partido	partido	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	9	nsubj	_	_
@@ -94,7 +94,7 @@
 10	de	de	ADP	PRP|@<PIV	_	12	case	_	_
 11	20	20	NUM	<card>|NUM|M|P|@>N	NumType=Card	12	nummod	_	ChangedBy=Issue168
 12	lugares	lugar	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	9	obj	_	_
-13	para	para	ADP	PRP|@<ADVL	_	14	mark	_	_
+13	para	para	SCONJ	PRP|@<ADVL	_	14	mark	_	_
 14	constituir	constituir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	advcl	_	_
 15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	bloco	bloco	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
@@ -109,8 +109,8 @@
 25	--	--	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = e uma vitória do PUN com essa amplitude parece perfeitamente plausível.
-# source = CETEMPúblico n=910 sec=eco sem=92a
 # sent_id = CP910-4
+# source = CETEMPúblico n=910 sec=eco sem=92a
 # id = 4691
 1	e	e	CCONJ	KC|@CO	_	10	cc	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -128,8 +128,8 @@
 13	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Chung deu voz a uma poderosa corrente de insatisfação, especialmente entre os eleitores das classes médias.
-# source = CETEMPúblico n=910 sec=eco sem=92a
 # sent_id = CP910-5
+# source = CETEMPúblico n=910 sec=eco sem=92a
 # id = 4692
 1	Chung	Chung	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	deu	dar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -153,8 +153,8 @@
 19	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Embora a economia da Coreia do Sul tenha crescido cerca de nove por cento no ano passado, são muitos os cidadãos que vêem com preocupação o défice comercial do seu país, que é de 8,8 mil milhões de dólares [ cerca de 1250 milhões de contos ].
-# source = CETEMPúblico n=910 sec=eco sem=92a
 # sent_id = CP910-6
+# source = CETEMPúblico n=910 sec=eco sem=92a
 # id = 4693
 1	Embora	embora	SCONJ	KS|@SUB	_	11	mark	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -169,10 +169,10 @@
 9	Sul	Sul	PROPN	PROP|@P<	Number=Sing	6	nmod	_	_
 10	tenha	ter	AUX	<aux>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
 11	crescido	crescer	VERB	<mv>|<pc-subj>|V|PCP|@ICL-AUX<	VerbForm=Part	23	advcl	_	_
-12	cerca	cerca	ADV	ADV|@>A	_	14	advmod	_	MWE=cerca_de
-13	de	de	ADP	<prp>|PRP|@A<	_	12	case	_	_
+12	cerca	cerca	ADV	ADV|@>A	_	14	advmod	_	MWE=cerca_de|MWEPOS=ADV
+13	de	de	ADP	<prp>|PRP|@A<	_	12	fixed	_	_
 14	nove	nove	NUM	<card>|NUM|M|P|@>N	NumType=Card	15	nummod	_	ChangedBy=Issue168
-15	por	por	ADP	_	Gender=Masc|Number=Sing	11	obl	_	MWE=por_cento|MWEPOS=NOUN
+15	por	por	ADP	_	_	11	obl	_	MWE=por_cento|MWEPOS=NOUN
 16	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	15	compound	_	_
 17-18	no	_	_	_	_	_	_	_	_
 17	em	em	ADP	<sam->|PRP|@<ADVL	_	19	case	_	_
@@ -197,29 +197,28 @@
 35	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	36	det	_	_
 36	país	país	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	41	punct	_	_
-38	que	que	PRON	INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	45	nsubj	_	_
+38	que	que	PRON	INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	41	nsubj	_	_
 39	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	cop	_	ChangedBy=Issue167
 40	de	de	ADP	PRP|@<SC	_	41	case	_	_
-41	8,8	8,8	NUM	<card>|NUM|M|P|@>A	NumType=Card	45	nummod	_	ChangedBy=Issue168|MWE=8,8_mil_milhões
+41	8,8	8,8	NUM	<card>|NUM|M|P|@>A	NumType=Card	31	acl:relcl	_	ChangedBy=Issue168|MWE=8,8_mil_milhões
 42	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	41	flat	_	ChangedBy=Issue168
 43	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	41	flat	_	_
 44	de	de	ADP	PRP|@N<ARG	_	45	case	_	_
-45	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	31	acl:relcl	_	_
-46	[	[	PUNCT	PU|@PU	_	52	punct	_	_
-47	cerca	cerca	ADV	ADV|@>A	_	49	advmod	_	MWE=cerca_de
-48	de	de	ADP	<prp>|PRP|@A<	_	47	case	_	_
-49	1250	1250	NUM	<card>|<year>|<date>|NUM|M|S|<card>|P|@>	NumType=Card	52	nummod	_	ChangedBy=Issue168|MWE=1250_milhões
+45	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	41	nmod	_	_
+46	[	[	PUNCT	PU|@PU	_	49	punct	_	_
+47	cerca	cerca	ADV	ADV|@>A	_	49	advmod	_	MWE=cerca_de|MWEPOS=ADV
+48	de	de	ADP	<prp>|PRP|@A<	_	47	fixed	_	_
+49	1250	1250	NUM	<card>|<year>|<date>|NUM|M|S|<card>|P|@>	NumType=Card	45	nmod	_	ChangedBy=Issue168|MWE=1250_milhões
 50	milhões	milhão	NUM	<np-idf>|N|M|P|@N<PRED	NumType=Card	49	flat	_	_
 51	de	de	ADP	PRP|@N<ARG	_	52	case	_	_
-52	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	45	nmod	_	_
-53	]	_	PUNCT	PU|@PU	_	52	punct	_	ChangedBy=Issue165|SpaceAfter=No
+52	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	49	nmod	_	_
+53	]	_	PUNCT	PU|@PU	_	49	punct	_	ChangedBy=Issue165|SpaceAfter=No
 54	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
 # text = Chung afirma que o problema é haver demasiada interferência do Governo nas finanças e poucas medidas contra as barreiras proteccionistas dos japoneses.
-# source = CETEMPúblico n=910 sec=eco sem=92a
 # sent_id = CP910-7
+# source = CETEMPúblico n=910 sec=eco sem=92a
 # id = 4694
-# d2d = cc(interferência,e) -> cc(medidas,e)  #106
 1	Chung	Chung	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	afirma	afirmar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	que	que	SCONJ	KS|@SUB	_	7	mark	_	_

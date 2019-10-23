@@ -1,9 +1,7 @@
 # text = O jogador representou na época passada a Associação Desportiva Ovarense, mas foi dispensado em virtude do seu alegado «comportamento antidesportivo», que, na opinião da direcção do clube vareiro, terá contribuído para a derrota sofrida perante o Benfica na fase decisiva dos «play-off».
-# source = CETEMPúblico n=129 sec=des sem=92b
 # sent_id = CP129-1
+# source = CETEMPúblico n=129 sec=des sem=92b
 # id = 659
-# d2d = punct(representou,,) -> punct(dispensado,,)  #106
-# d2d = cc(representou,mas) -> cc(dispensado,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	jogador	jogador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	representou	representar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -11,17 +9,17 @@
 4	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	6	det	_	_
 6	época	época	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
-7	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	6	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+7	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	6	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	Associação	Associação	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	MWE=Associação_Desportiva_Ovarense
 10	Desportiva	Desportiva	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	_
 11	Ovarense	Ovarense	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 13	mas	mas	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	15	cc	_	d2d:#106
-14	foi	ir	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux	_	_
+14	foi	ser	AUX	<cjt>|<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	aux:pass	_	_
 15	dispensado	dispensar	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	3	conj	_	_
 16	em	em	ADP	<sam->|PRP|@<ADVL	_	17	case	_	MWE=em_virtude_de
-17	virtude	virtude	NOUN	N|@P<	_	15	obl	_	_
+17	virtude	virtude	NOUN	N|@P<	Gender=Fem|Number=Sing	15	obl	_	_
 18-19	do	_	_	_	_	_	_	_	_
 18	de	de	ADP	PRP|@N<	_	23	case	_	_
 19	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
@@ -71,10 +69,9 @@
 58	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Sprewer irá ter como colegas na sua nova equipa os seus compatriotas Terrence Radford - que transita da época passada - e Ruben Cotton, um veterano de 32 anos, naturalizado português, que na época passada esteve ao serviço da Oliveirense.
-# source = CETEMPúblico n=129 sec=des sem=92b
 # sent_id = CP129-2
+# source = CETEMPúblico n=129 sec=des sem=92b
 # id = 660
-# d2d = cc(Terrence,e) -> cc(Ruben,e)  #106
 1	Sprewer	Sprewer	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	irá	ir	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux	_	_
 3	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
@@ -92,13 +89,13 @@
 14	Terrence	Terrence	PROPN	_	Gender=Fem|Number=Sing	13	appos	_	ChangedBy=Issue119|MWE=Terrence_Radford|MWEPOS=PROPN
 15	Radford	Radford	PROPN	_	Number=Sing	14	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165
 16	-	-	PUNCT	PU|@PU	_	3	punct	_	_
-17	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	18	nsubj	_	_
+17	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	18	nsubj	_	_
 18	transita	transitar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	acl:relcl	_	_
 19-20	da	_	_	_	_	_	_	_	_
 19	de	de	ADP	<sam->|PRP|@<ADVL	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	21	det	_	_
 21	época	época	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	ChangedBy=Issue137
-22	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	21	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91
+22	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	21	amod	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91
 23	-	-	PUNCT	PU|@PU	_	25	punct	_	_
 24	e	e	CCONJ	<co-postnom>|<co-vfin>|KC|@CO	_	25	cc	_	d2d:#106
 25	Ruben	Ruben	PROPN	_	Gender=Masc|Number=Sing	14	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Ruben_Cotton|MWEPOS=PROPN
@@ -118,7 +115,7 @@
 38	em	em	ADP	<sam->|PRP|@ADVL>	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	40	det	_	_
 40	época	época	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	45	nmod	_	_
-41	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	40	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+41	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	40	amod	_	ChangedBy=Issue141|ChangedBy=Issue91
 42	esteve	estar	AUX	<cjt>|<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	45	cop	_	ChangedBy=Issue167
 43-44	ao	_	_	_	_	_	_	_	_
 43	a	a	ADP	<sam->|PRP|@<SC	_	45	case	_	_
@@ -131,16 +128,9 @@
 49	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Alexandre Dias, Caetano, Moutinho, Nunes, Paulo Duarte, Rui Santos, José Ruivo e Henrique Silva completam o plantel, que será dirigido pelo técnico Orlando Simões.
-# source = CETEMPúblico n=129 sec=des sem=92b &L
 # sent_id = CP129-3
+# source = CETEMPúblico n=129 sec=des sem=92b &L
 # id = 661
-# d2d = punct(Alexandre,,) -> punct(Caetano,,)  #106
-# d2d = cc(Alexandre,e) -> cc(Henrique,e)  #106
-# d2d = punct(Alexandre,,) -> punct(Paulo,,)  #106
-# d2d = punct(Alexandre,,) -> punct(Rui,,)  #106
-# d2d = punct(Alexandre,,) -> punct(Moutinho,,)  #106
-# d2d = punct(Alexandre,,) -> punct(Nunes,,)  #106
-# d2d = punct(Alexandre,,) -> punct(José,,)  #106
 1	Alexandre	Alexandre	PROPN	_	Gender=Masc|Number=Sing	21	nsubj	_	ChangedBy=Issue119|MWE=Alexandre_Dias|MWEPOS=PROPN
 2	Dias	Dias	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	d2d:#106
@@ -177,10 +167,9 @@
 33	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = O orçamento para a nova época ronda os 25 mil contos e o principal objectivo é garantir a permanência do Esgueira no escalão principal.
-# source = CETEMPúblico n=129 sec=des sem=92b
 # sent_id = CP129-4
+# source = CETEMPúblico n=129 sec=des sem=92b
 # id = 662
-# d2d = cc(ronda,e) -> cc(garantir,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	orçamento	orçamento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	para	para	ADP	PRP|@N<	_	6	case	_	_
@@ -212,8 +201,8 @@
 27	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O Beira Mar, a outra equipa da cidade de Aveiro, procedeu também no início desta semana à substituição do norte-americano Mike Smith pelo seu compatriota Deshon Washington.
-# source = CETEMPúblico n=129 sec=des sem=92b
 # sent_id = CP129-5
+# source = CETEMPúblico n=129 sec=des sem=92b
 # id = 663
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Beira	Beira	PROPN	_	Gender=Masc|Number=Sing	14	nsubj	_	ChangedBy=Issue119|MWE=Beira_Mar|MWEPOS=PROPN
@@ -259,11 +248,10 @@
 36	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Segundo responsáveis do clube aveirense, Mike Smith apresentou-se em deficientes condições físicas e sem ritmo competitivo.
-# source = CETEMPúblico n=129 sec=des sem=92b
 # sent_id = CP129-6
+# source = CETEMPúblico n=129 sec=des sem=92b
 # id = 664
-# d2d = cc(condições,e) -> cc(ritmo,e)  #106
-1	Segundo	segundo	ADP	<rel>|PRP|@ADVL>	PronType=Rel	2	case	_	_
+1	Segundo	segundo	ADP	<rel>|PRP|@ADVL>	_	2	case	_	_
 2	responsáveis	responsável	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	10	obl	_	ChangedBy=Issue137
 3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
@@ -287,15 +275,12 @@
 20	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Deshon Washington, que joga na posição de extremo-poste, tem 23 anos de idade, mede 2,02 metros, e vai fazer dupla com o seu compatriota Kip Jones.
-# source = CETEMPúblico n=129 sec=des sem=92b
 # sent_id = CP129-7
+# source = CETEMPúblico n=129 sec=des sem=92b
 # id = 665
-# d2d = punct(tem,,) -> punct(fazer,,)  #106
-# d2d = cc(tem,e) -> cc(fazer,e)  #106
-# d2d = punct(tem,,) -> punct(mede,,)  #106
 1	Deshon	Deshon	PROPN	_	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue119|MWE=Deshon_Washington|MWEPOS=PROPN
 2	Washington	Washington	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-3	,	,	PUNCT	PU|@PU	_	12	punct	_	_
+3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 4	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	5	nsubj	_	_
 5	joga	jogar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
 6-7	na	_	_	_	_	_	_	_	_
@@ -328,18 +313,9 @@
 32	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O técnico do Beira Mar, Aniceto Carmo, tem ainda ao seu dispor os seguintes atletas: Catarino (ex-Esgueira), Paulo Sousa (ex-Salesianos), Rebelo, Traylor, Moreira, Mourinho, Alex Pires, Renato, João Miguel e Pinto.
-# source = CETEMPúblico n=129 sec=des sem=92b &L
 # sent_id = CP129-8
+# source = CETEMPúblico n=129 sec=des sem=92b &L
 # id = 666
-# d2d = punct(Catarino,,) -> punct(Paulo,,)  #106
-# d2d = punct(Catarino,,) -> punct(Renato,,)  #106
-# d2d = punct(Catarino,,) -> punct(Mourinho,,)  #106
-# d2d = punct(Catarino,,) -> punct(Alex,,)  #106
-# d2d = cc(Catarino,e) -> cc(Pinto,e)  #106
-# d2d = punct(Catarino,,) -> punct(João,,)  #106
-# d2d = punct(Catarino,,) -> punct(Moreira,,)  #106
-# d2d = punct(Catarino,,) -> punct(Traylor,,)  #106
-# d2d = punct(Catarino,,) -> punct(Rebelo,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	técnico	técnico	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -393,8 +369,8 @@
 49	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Tendo como objectivo intrometer-se na luta pelo título, o Beira Mar disporá, para a nova temporada, de um orçamento a rondar os 40 mil contos, verba substancialmente inferior à da época passada.
-# source = CETEMPúblico n=129 sec=des sem=92b
 # sent_id = CP129-9
+# source = CETEMPúblico n=129 sec=des sem=92b
 # id = 667
 1	Tendo	ter	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	16	advcl	_	_
 2	como	como	ADP	<prd>|PRP|@<OC	_	3	case	_	_
@@ -424,7 +400,7 @@
 23	de	de	ADP	PRP|@<PIV	_	25	case	_	_
 24	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	orçamento	orçamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obj	_	_
-26	a	a	ADP	PRP|@N<	_	27	mark	_	_
+26	a	a	SCONJ	PRP|@N<	_	27	mark	_	_
 27	rondar	rondar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	25	acl	_	_
 28	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	31	det	_	_
 29	40	40	NUM	<card>|NUM|M|P|@>N	NumType=Card	31	nummod	_	ChangedBy=Issue168|MWE=40_mil
@@ -441,6 +417,6 @@
 38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	40	det	_	_
 40	época	época	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	37	nmod	_	_
-41	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	40	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+41	passada	passado	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	40	amod	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 42	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 

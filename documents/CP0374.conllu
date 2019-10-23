@@ -1,11 +1,11 @@
 # text = Título: Salazar e Caetano -- Cartas Secretas (1932-1968)
-# source = CETEMPúblico n=374 sec=clt sem=93b
 # sent_id = CP374-2
+# source = CETEMPúblico n=374 sec=clt sem=93b
 # id = 1954
 1	Título	título	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 3	Salazar	Salazar	PROPN	_	Gender=Masc|Number=Sing	1	appos	_	ChangedBy=Issue119|MWE=Salazar_e_Caetano|MWEPOS=PROPN
-4	e	e	CCONJ	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
+4	e	e	CCONJ	_	_	3	flat:name	_	ChangedBy=Issue119
 5	Caetano	Caetano	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 6	--	--	PUNCT	PU|@PU	_	3	punct	_	_
 7	Cartas	Cartas	PROPN	_	Number=Sing	3	parataxis	_	ChangedBy=Issue119|MWE=Cartas_Secretas_(1932-1968)|MWEPOS=PROPN
@@ -13,8 +13,8 @@
 9	(1932-1968)	(1932-1968)	PROPN	_	Number=Sing	7	flat:name	_	ChangedBy=Issue119
 
 # text = Autor: José Freire Antunes
-# source = CETEMPúblico n=374 sec=clt sem=93b
 # sent_id = CP374-3
+# source = CETEMPúblico n=374 sec=clt sem=93b
 # id = 1955
 1	Autor	autor	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_
@@ -23,14 +23,9 @@
 5	Antunes	Antunes	PROPN	_	Number=Sing	3	flat:name	_	ChangedBy=Issue119
 
 # text = Das vésperas da institucionalização do Estado Novo à queda da cadeira que afastou Salazar, meio milhar de cartas trocadas entre o ditador e o seu delfim, que «ilumina zonas vitais de um longo e complexo relacionamento que foi feito de solidariedade e de conflitualidade, de intensidade e de distanciação, de sintonia e de divergência».
-# source = CETEMPúblico n=374 sec=clt sem=93b
 # sent_id = CP374-4
+# source = CETEMPúblico n=374 sec=clt sem=93b
 # id = 1956
-# d2d = cc(ditador,e) -> cc(delfim,e)  #106
-# d2d = cc(solidariedade,e) -> cc(conflitualidade,e)  #106
-# d2d = cc(longo,e) -> cc(complexo,e)  #106
-# d2d = cc(sintonia,e) -> cc(divergência,e)  #106
-# d2d = cc(intensidade,e) -> cc(distanciação,e)  #106
 1-2	Das	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
@@ -56,10 +51,10 @@
 18	afastou	afastar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	acl:relcl	_	_
 19	Salazar	Salazar	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	18	punct	_	_
-21	meio	meio	NUM	ADJ|M|S|@>N	NumType=Card	24	nummod	_	MWE=meio_milhar
+21	meio	meio	NUM	ADJ|M|S|@>N	NumType=Card	25	nsubj	_	MWE=meio_milhar
 22	milhar	milhar	NUM	<np-idf>|N|M|S|@NPHR	NumType=Card	21	flat	_	_
 23	de	de	ADP	PRP|@N<ARG	_	24	case	_	_
-24	cartas	carta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	25	nsubj	_	_
+24	cartas	carta	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	21	nmod	_	_
 25	trocadas	trocar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	0	root	_	_
 26	entre	entre	ADP	PRP|@<ADVL	_	28	case	_	_
 27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
@@ -69,9 +64,9 @@
 31	seu	seu	DET	<poss>|<si>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	32	det	_	_
 32	delfim	delfim	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	28	conj	_	ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-34	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	36	nsubj	_	_
+34	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	36	nsubj	_	_
 35	«	«	PUNCT	PU|@PU	_	36	punct	_	ChangedBy=Issue165|SpaceAfter=No
-36	ilumina	iluminar	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	acl:relcl	_	_
+36	ilumina	iluminar	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	acl:relcl	_	_
 37	zonas	zona	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	36	obj	_	_
 38	vitais	vital	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	37	amod	_	_
 39	de	de	ADP	PRP|@N<	_	44	case	_	_
@@ -104,8 +99,8 @@
 66	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
 # text = Com prévio enquadramento histórico.
-# source = CETEMPúblico n=374 sec=clt sem=93b
 # sent_id = CP374-5
+# source = CETEMPúblico n=374 sec=clt sem=93b
 # id = 1957
 1	Com	com	ADP	PRP|@UTT	_	3	case	_	_
 2	prévio	prévio	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
@@ -114,8 +109,8 @@
 5	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Editor: Círculo de Leitores
-# source = CETEMPúblico n=374 sec=clt sem=93b
 # sent_id = CP374-6
+# source = CETEMPúblico n=374 sec=clt sem=93b
 # id = 1958
 1	Editor	editor	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	:	:	PUNCT	PU|@PU	_	1	punct	_	_

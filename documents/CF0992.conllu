@@ -1,13 +1,12 @@
 # text = O projeto vem sendo implementado, em caráter experimental, em três escolas: Morumbi, Visconde de Porto Seguro (particulares) e Godofredo Furtado (estadual).
-# source = CETENFolha n=992 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF992-1
+# source = CETENFolha n=992 cad=Cotidiano sec=soc sem=94a
 # id = 4190
-# d2d = cc(Morumbi,e) -> cc(Godofredo,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	projeto	projeto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
-3	vem	vir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+3	vem	vir	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	sendo	ser	AUX	<aux>|V|GER|@ICL-AUX<	VerbForm=Ger	5	aux:pass	_	_
-5	implementado	implementar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+5	implementado	implementar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7	em	em	ADP	PRP|@<ADVL	_	8	case	_	_
 8	caráter	caráter	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137
@@ -24,21 +23,20 @@
 19	Porto	Porto	PROPN	_	Number=Sing	17	nmod	_	ChangedBy=Issue119|MWE=Porto_Seguro|MWEPOS=PROPN
 20	Seguro	Seguro	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119
 21	(	(	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
-22	particulares	particular	ADJ	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+22	particulares	particular	ADJ	<np-idf>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	15	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 23	)	)	PUNCT	PU|@PU	_	22	punct	_	_
 24	e	e	CCONJ	<co-pred>|KC|@CO	_	25	cc	_	d2d:#106
 25	Godofredo	Godofredo	PROPN	_	Gender=Masc|Number=Sing	15	conj	_	ChangedBy=Issue119|ChangedBy=Issue149|MWE=Godofredo_Furtado|MWEPOS=PROPN
 26	Furtado	Furtado	PROPN	_	Number=Sing	25	flat:name	_	ChangedBy=Issue119
 27	(	(	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
-28	estadual	estadual	ADJ	<n>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	25	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+28	estadual	estadual	ADJ	<n>|ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	25	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 29	)	)	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 30	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = «O programa terá ação integrada com pais e alunos através da formação de grupos de informação», diz Antonio Carlos Gomes da Silva, superintendente do HC.
-# source = CETENFolha n=992 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF992-2
+# source = CETENFolha n=992 cad=Cotidiano sec=soc sem=94a
 # id = 4191
-# d2d = cc(pais,e) -> cc(alunos,e)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	programa	programa	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_

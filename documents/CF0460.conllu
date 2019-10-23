@@ -1,15 +1,14 @@
 # text = Reunião regional
-# source = CETENFolha n=460 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF460-1
+# source = CETENFolha n=460 cad=Dinheiro sec=eco sem=94a
 # id = 1936
 1	Reunião	reunião	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	regional	regional	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
 
 # text = Trinta empresários argentinos e 25 brasileiros se reúnem na próxima sexta-feira em seminário da FGV para debater perspectivas do setor privado nos dois países com o Mercosul.
-# source = CETENFolha n=460 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF460-2
+# source = CETENFolha n=460 cad=Dinheiro sec=eco sem=94a
 # id = 1937
-# d2d = cc(empresários,e) -> cc(brasileiros,e)  #106
 1	Trinta	trinta	NUM	<card>|NUM|M|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
 2	empresários	empresário	NOUN	<first-cjt>|<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
 3	argentinos	argentino	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_
@@ -29,7 +28,7 @@
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	FGV	FGV	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	14	nmod	_	_
-18	para	para	ADP	PRP|@<ADVL	_	19	mark	_	_
+18	para	para	SCONJ	PRP|@<ADVL	_	19	mark	_	_
 19	debater	debater	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	advcl	_	_
 20	perspectivas	perspectiva	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	19	obj	_	_
 21-22	do	_	_	_	_	_	_	_	_
@@ -48,22 +47,17 @@
 32	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Áreas de interesse
-# source = CETENFolha n=460 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF460-3
+# source = CETENFolha n=460 cad=Dinheiro sec=eco sem=94a
 # id = 1938
 1	Áreas	área	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	_
 3	interesse	interesse	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = Os empresários brasileiros acreditam que os setores mais propícios a investimentos na Argentina são: cerveja, celulose, alimentos, petroquímica, telecomunicações e gás.
-# source = CETENFolha n=460 cad=Dinheiro sec=eco sem=94a
 # sent_id = CF460-4
+# source = CETENFolha n=460 cad=Dinheiro sec=eco sem=94a
 # id = 1939
-# d2d = punct(cerveja,,) -> punct(alimentos,,)  #106
-# d2d = punct(cerveja,,) -> punct(telecomunicações,,)  #106
-# d2d = punct(cerveja,,) -> punct(celulose,,)  #106
-# d2d = cc(cerveja,e) -> cc(gás,e)  #106
-# d2d = punct(cerveja,,) -> punct(petroquímica,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	empresários	empresário	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	brasileiros	brasileiro	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	2	amod	_	_

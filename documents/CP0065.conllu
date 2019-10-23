@@ -1,14 +1,14 @@
 # text = MPT em Faro
-# source = CETEMPúblico n=65 sec=pol sem=95b
 # sent_id = CP65-1
+# source = CETEMPúblico n=65 sec=pol sem=95b
 # id = 353
 1	MPT	MPT	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	em	em	ADP	PRP|@N<	_	3	case	_	_
 3	Faro	Faro	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	_
 
 # text = Ribeiro Telles fora do ambiente dos «beijinhos»
-# source = CETEMPúblico n=65 sec=pol sem=95b
 # sent_id = CP65-2
+# source = CETEMPúblico n=65 sec=pol sem=95b
 # id = 354
 1	Ribeiro	Ribeiro	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=Ribeiro_Telles|MWEPOS=PROPN
 2	Telles	Telles	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -25,12 +25,9 @@
 11	»	»	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = O Governo inaugurou pontes e estradas, mas «não foi capaz de inaugurar» uma Lei de Bases do Ordenamento do Território.
-# source = CETEMPúblico n=65 sec=pol sem=95b
 # sent_id = CP65-3
+# source = CETEMPúblico n=65 sec=pol sem=95b
 # id = 355
-# d2d = cc(pontes,e) -> cc(estradas,e)  #106
-# d2d = punct(inaugurou,,) -> punct(capaz,,)  #106
-# d2d = cc(inaugurou,mas) -> cc(capaz,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Governo	Governo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	inaugurou	inaugurar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -43,7 +40,7 @@
 10	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
 11	foi	ser	AUX	<cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	cop	_	ChangedBy=Issue167
 12	capaz	capaz	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	3	conj	_	_
-13	de	de	ADP	PRP|@A<ARG	_	14	mark	_	_
+13	de	de	SCONJ	PRP|@A<ARG	_	14	mark	_	_
 14	inaugurar	inaugurar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 15	»	»	PUNCT	PU|@PU	_	12	punct	_	_
 16	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
@@ -61,8 +58,8 @@
 26	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A denúncia foi feita ontem, em Faro, pelo líder do Partido da Terra (PT).
-# source = CETEMPúblico n=65 sec=pol sem=95b
 # sent_id = CP65-4
+# source = CETEMPúblico n=65 sec=pol sem=95b
 # id = 356
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	denúncia	denúncia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj:pass	_	_
@@ -91,8 +88,8 @@
 22	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Ribeiro Teles defendeu, no Jardim Alameda, a necessidade de uma política que tenha «os pés bem assentes na terra», sem estar subordinada aos «números» da macroeconomia, construída à custa da «degradação dos nossos recursos».
-# source = CETEMPúblico n=65 sec=pol sem=95b
 # sent_id = CP65-5
+# source = CETEMPúblico n=65 sec=pol sem=95b
 # id = 357
 1	Ribeiro	Ribeiro	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Ribeiro_Teles|MWEPOS=PROPN
 2	Teles	Teles	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -122,9 +119,9 @@
 24	terra	terra	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	21	obl	_	ChangedBy=Issue165|SpaceAfter=No
 25	»	»	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	29	punct	_	_
-27	sem	sem	ADP	PRP|@<ADVL	_	29	mark	_	_
+27	sem	sem	SCONJ	PRP|@<ADVL	_	29	mark	_	_
 28	estar	estar	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	29	cop	_	ChangedBy=Issue167
-29	subordinada	subordinado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	14	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+29	subordinada	subordinar	VERB	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing|VerbForm=Part	14	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 30-31	aos	_	_	_	_	_	_	_	_
 30	a	a	ADP	<sam->|PRP|@<PIV	_	33	case	_	_
 31	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
@@ -140,7 +137,7 @@
 40-41	à	_	_	_	_	_	_	_	_
 40	a	a	ADP	<sam->|PRP|@N<	_	42	case	_	_
 41	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
-42	custa	custa	NOUN	N|@P<	_	39	obl	_	_
+42	custa	custa	NOUN	N|@P<	Gender=Fem|Number=Sing	39	obl	_	_
 43-44	da	_	_	_	_	_	_	_	_
 43	de	de	ADP	PRP|@N<	_	46	case	_	_
 44	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	46	det	_	_

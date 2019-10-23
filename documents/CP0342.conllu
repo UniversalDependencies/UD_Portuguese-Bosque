@@ -1,16 +1,15 @@
 # text = Os bons samaritanos
-# source = CETEMPúblico n=342 sec=nd sem=96a
 # sent_id = CP342-1
+# source = CETEMPúblico n=342 sec=nd sem=96a
 # id = 1783
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	bons	bom	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	3	amod	_	_
 3	samaritanos	samaritano	NOUN	<np-def>|N|M|P|@NPHR	Gender=Masc|Number=Plur	0	root	_	_
 
 # text = Subir ao monte Garizim, no primeiro dia de neve do ano, quando as pedras e os abetos se escondem sob um manto de neve, é ascender ao paraíso, tão grande é a beleza celestial da paisagem.
-# source = CETEMPúblico n=342 sec=nd sem=96a
 # sent_id = CP342-2
+# source = CETEMPúblico n=342 sec=nd sem=96a
 # id = 1784
-# d2d = cc(pedras,e) -> cc(abetos,e)  #106
 1	Subir	subir	VERB	<mv>|V|INF|@ICL-SUBJ>	VerbForm=Inf	32	csubj	_	_
 2-3	ao	_	_	_	_	_	_	_	_
 2	a	a	ADP	<sam->|PRP|@<SA	_	4	case	_	_
@@ -64,8 +63,8 @@
 46	.	.	PUNCT	PU|@PU	_	32	punct	_	_
 
 # text = Mas Shalom Cohen quer descer do cume da «montanha dos bem-aventurados» para um lugar mais terreno.
-# source = CETEMPúblico n=342 sec=nd sem=96a
 # sent_id = CP342-3
+# source = CETEMPúblico n=342 sec=nd sem=96a
 # id = 1785
 1	Mas	mas	CCONJ	KC|@CO	_	4	cc	_	_
 2	Shalom	Shalom	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	ChangedBy=Issue119|MWE=Shalom_Cohen|MWEPOS=PROPN
@@ -94,10 +93,9 @@
 22	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O seu desejo é sentar-se no Conselho Palestiniano, onde Yasser Arafat reservou uma cadeira para um dos três candidatos do «mais pequeno e mais antigo povo do mundo» -- os samaritanos.
-# source = CETEMPúblico n=342 sec=nd sem=96a
 # sent_id = CP342-4
+# source = CETEMPúblico n=342 sec=nd sem=96a
 # id = 1786
-# d2d = cc(pequeno,e) -> cc(antigo,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	3	det	_	_
 3	desejo	desejo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -111,7 +109,7 @@
 9	Conselho	Conselho	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	MWE=Conselho_Palestiniano
 10	Palestiniano	Palestiniano	PROPN	PROP|@N<	Number=Sing	9	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-12	onde	onde	ADV	<rel>|ADV|@ADVL>	_	15	advmod	_	_
+12	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	15	obl	_	_
 13	Yasser	Yasser	PROPN	_	Gender=Masc|Number=Sing	15	nsubj	_	ChangedBy=Issue119|MWE=Yasser_Arafat|MWEPOS=PROPN
 14	Arafat	Arafat	PROPN	_	Number=Sing	13	flat:name	_	ChangedBy=Issue119
 15	reservou	reservar	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl:relcl	_	_
@@ -145,24 +143,21 @@
 40	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = São cerca de 600 almas, 284 a viver em Nablus, a maior cidade da Cisjordânia, e 297 a residir em Holon, próximo de Telavive.
-# source = CETEMPúblico n=342 sec=nd sem=96a
 # sent_id = CP342-5
+# source = CETEMPúblico n=342 sec=nd sem=96a
 # id = 1787
-# d2d = punct(284,,) -> punct(297,,)  #106
-# d2d = cc(284,e) -> cc(297,e)  #106
-# d2d = punct(284,,) -> punct(297,,)  #106
 1	São	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	ChangedBy=Issue167
-2	cerca	cerca	ADV	ADV|@>A	_	4	advmod	_	MWE=cerca_de
-3	de	de	ADP	<prp>|PRP|@A<	_	2	case	_	_
+2	cerca	cerca	ADV	ADV|@>A	_	4	advmod	_	MWE=cerca_de|MWEPOS=ADV
+3	de	de	ADP	<prp>|PRP|@A<	_	2	fixed	_	_
 4	600	600	NUM	<card>|NUM|F|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
 5	almas	alma	NOUN	<np-def>|N|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 7	284	284	NUM	<first-cjt>|<card>|NUM|F|P|@N<PRED	NumType=Card	5	appos	_	ChangedBy=Issue168
-8	a	a	ADP	PRP|@A<ARG	_	9	mark	_	_
+8	a	a	SCONJ	PRP|@A<ARG	_	9	mark	_	_
 9	viver	viver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	advcl	_	_
 10	em	em	ADP	PRP|@<SA	_	11	case	_	_
 11	Nablus	Nablus	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue165|SpaceAfter=No
-12	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+12	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 14	maior	grande	ADJ	<KOMP>|<COMP>|ADJ|F|S|@>N	Gender=Fem|Number=Sing	15	amod	_	_
 15	cidade	cidade	NOUN	<np-def>|N|F|S|@APP	Gender=Fem|Number=Sing	11	appos	_	_
@@ -170,10 +165,10 @@
 16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	Cisjordânia	Cisjordânia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-19	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+19	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 20	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	21	cc	_	d2d:#106
 21	297	297	NUM	<cjt>|<card>|NUM|F|P|@N<PRED	NumType=Card	7	conj	_	ChangedBy=Issue168
-22	a	a	ADP	PRP|@A<ARG	_	23	mark	_	_
+22	a	a	SCONJ	PRP|@A<ARG	_	23	mark	_	_
 23	residir	residir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	21	advcl	_	_
 24	em	em	ADP	PRP|@<SA	_	25	case	_	_
 25	Holon	Holon	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	23	obl	_	ChangedBy=Issue165|SpaceAfter=No
@@ -184,11 +179,9 @@
 30	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Arafat sempre defendeu um Estado multiétnico e, ao apoiar os descendentes de uma das tribos de Israel, a de Levi, filho de Jacob, ele mostra que também os judeus serão bem-vindos numa futura Palestina.
-# source = CETEMPúblico n=342 sec=nd sem=96a
 # sent_id = CP342-6
+# source = CETEMPúblico n=342 sec=nd sem=96a
 # id = 1788
-# d2d = punct(defendeu,,) -> punct(mostra,,)  #106
-# d2d = cc(defendeu,e) -> cc(mostra,e)  #106
 1	Arafat	Arafat	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	sempre	sempre	ADV	ADV|@ADVL>	_	3	advmod	_	_
 3	defendeu	defender	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -198,7 +191,7 @@
 7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	31	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
 8	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 9-10	ao	_	_	_	_	_	_	_	_
-9	a	a	ADP	<sam->|PRP|@ADVL>	_	11	mark	_	_
+9	a	a	SCONJ	<sam->|PRP|@ADVL>	_	11	mark	_	_
 10	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	apoiar	apoiar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	31	advcl	_	_
 12	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
@@ -212,7 +205,7 @@
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	Israel	Israel	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	22	punct	_	_
-22	a	a	DET	<dem>|DET|F|S|@APP	Gender=Fem|Number=Sing|PronType=Dem	15	appos	_	_
+22	a	o	PRON	<dem>|DET|F|S|@APP	Gender=Fem|Number=Sing|PronType=Dem	15	appos	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	Levi	Levi	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	22	punct	_	_
@@ -236,16 +229,16 @@
 42	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Além disso, ao proteger os samaritanos de Nablus, mostra que vai mais longe do que o Estado hebraico, que não dá aos de Holon a oportunidade de estarem representados no Knesset (parlamento).
-# source = CETEMPúblico n=342 sec=nd sem=96a
 # sent_id = CP342-7
+# source = CETEMPúblico n=342 sec=nd sem=96a
 # id = 1789
-1	Além	além	ADV	ADV|@ADVL>	_	13	advmod	_	MWE=Além_de
+1	Além	além	ADV	ADV|@ADVL>	_	3	cc	_	MWE=Além_disso|MWEPOS=CCONJ
 2-3	disso	_	_	_	_	_	_	_	ChangedBy=Issue165|SpaceAfter=No
-2	de	de	ADP	PRP|@A<	_	3	case	_	_
-3	isso	isso	PRON	<dem>|<-sam>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	1	obl	_	_
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
+3	isso	isso	PRON	<dem>|<-sam>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	7	obl	_	_
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5-6	ao	_	_	_	_	_	_	_	_
-5	a	a	ADP	<sam->|PRP|@ADVL>	_	7	mark	_	_
+5	a	a	SCONJ	<sam->|PRP|@ADVL>	_	7	mark	_	_
 6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	proteger	proteger	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	advcl	_	_
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
@@ -259,11 +252,11 @@
 16	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	17	advmod	_	_
 17	longe	longe	ADV	ADV|@<SA	_	15	advmod	_	_
 18-19	do	_	_	_	_	_	_	_	_
-18	de	de	ADP	<sam->|PRP|@COM	_	22	case	_	MWE=do_que
+18	de	de	ADP	<sam->|PRP|@COM	_	22	mark	_	MWE=do_que|MWEPOS=SCONJ
 19	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	18	fixed	_	_
 20	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	18	fixed	_	_
 21	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Estado	Estado	PROPN	<first-cjt>|PROP|M|S|@KOMP<	Gender=Masc|Number=Sing	17	dep	_	MWE=Estado_hebraico
+22	Estado	Estado	PROPN	<first-cjt>|PROP|M|S|@KOMP<	Gender=Masc|Number=Sing	17	advcl	_	MWE=Estado_hebraico|MWEPOS=PROPN
 23	hebraico	hebraico	PROPN	PROP|@N<	Number=Sing	22	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 25	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	27	nsubj	_	_
@@ -276,9 +269,9 @@
 31	Holon	Holon	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	29	nmod	_	_
 32	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	oportunidade	oportunidade	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	27	obj	_	_
-34	de	de	ADP	PRP|@N<	_	36	mark	_	_
+34	de	de	SCONJ	PRP|@N<	_	36	mark	_	_
 35	estarem	estar	AUX	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	36	cop	_	ChangedBy=Issue167
-36	representados	representado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	33	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+36	representados	representado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	33	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 37-38	no	_	_	_	_	_	_	_	_
 37	em	em	ADP	<sam->|PRP|@<ADVL	_	39	case	_	_
 38	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_

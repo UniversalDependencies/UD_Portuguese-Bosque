@@ -1,6 +1,6 @@
 # text = «Vocês são pessoas de um Brasil que tem sinais da renovação.
-# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # sent_id = CF755-1
+# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # id = 3164
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Vocês	você	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
@@ -19,12 +19,9 @@
 14	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Se Roseana, os senadores, deputados e prefeitos estão me apoiando não é porque tenhamos firmado qualquer compromisso pessoal.
-# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # sent_id = CF755-2
+# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # id = 3165
-# d2d = punct(Roseana,,) -> punct(deputados,,)  #106
-# d2d = cc(Roseana,e) -> cc(prefeitos,e)  #106
-# d2d = punct(Roseana,,) -> punct(senadores,,)  #106
 1	Se	se	SCONJ	KS|@SUB	_	12	mark	_	_
 2	Roseana	Roseana	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	d2d:#106
@@ -48,8 +45,8 @@
 21	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Jamais ninguém me pediu nada.
-# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # sent_id = CF755-3
+# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # id = 3166
 1	Jamais	jamais	ADV	ADV|@ADVL>	_	4	advmod	_	_
 2	ninguém	ninguém	PRON	INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	4	nsubj	_	_
@@ -59,8 +56,8 @@
 6	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Mas, nada mesmo», disse FHC.
-# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # sent_id = CF755-4
+# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # id = 3167
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	3	punct	_	_
@@ -73,27 +70,27 @@
 9	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Às 16h, antes de embarcar para a cidade de Codó (MA), onde seria realizado um comício às 18h de ontem, Fernando Henrique afirmou que vai aguardar o posicionamento do senador José Sarney (PMDB-AP) em relação às eleições presidenciais.
-# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # sent_id = CF755-5
+# source = CETENFolha n=755 cad=Brasil sec=pol sem=94a
 # id = 3168
 1-2	Às	_	_	_	_	_	_	_	_
 1	A	a	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 2	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 3	16h	16h	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	30	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-5	antes	antes	ADV	ADV|@ADVL>	_	30	advmod	_	_
-6	de	de	ADP	PRP|@A<ARG	_	7	mark	_	_
-7	embarcar	embarcar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	advcl	_	_
+5	antes	antes	ADV	ADV|@ADVL>	_	7	mark	_	MWE=antes_de|MWEPOS=SCONJ
+6	de	de	ADP	PRP|@A<ARG	_	5	fixed	_	_
+7	embarcar	embarcar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	30	advcl	_	_
 8	para	para	ADP	PRP|@<PIV	_	10	case	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	7	obj	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	Codó	Codó	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
 13	(	(	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
-14	MA	MA	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+14	MA	MA	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	12	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 15	)	)	PUNCT	PU|@PU	_	14	punct	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-17	onde	onde	ADV	<rel>|ADV|@ADVL>	_	19	advmod	_	_
+17	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Fem|Number=Sing|PronType=Rel	19	obl	_	_
 18	seria	ser	AUX	<aux>|V|COND|3S|@FS-N<PRED	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	19	aux:pass	_	_
 19	realizado	realizar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	10	acl:relcl	_	_
 20	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
@@ -120,10 +117,10 @@
 39	José	José	PROPN	_	Gender=Masc|Number=Sing	38	appos	_	ChangedBy=Issue119|MWE=José_Sarney|MWEPOS=PROPN
 40	Sarney	Sarney	PROPN	_	Number=Sing	39	flat:name	_	ChangedBy=Issue119
 41	(	(	PUNCT	PU|@PU	_	42	punct	_	ChangedBy=Issue165|SpaceAfter=No
-42	PMDB-AP	PMDB-AP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	38	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+42	PMDB-AP	PMDB-AP	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	38	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 43	)	)	PUNCT	PU|@PU	_	42	punct	_	_
 44	em	em	ADP	<sam->|PRP|@N<	_	45	case	_	MWE=em_relação_a
-45	relação	relação	NOUN	N|@P<	_	35	nmod	_	_
+45	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	35	nmod	_	_
 46-47	às	_	_	_	_	_	_	_	_
 46	a	a	ADP	PRP|@N<	_	48	case	_	_
 47	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	48	det	_	_

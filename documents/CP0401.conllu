@@ -1,9 +1,7 @@
 # text = O Decreto Regulamentar 19/91 (B) descobriu que a factura e a guia de remessa permitem controlar o efectivo carácter, público ou particular, do transporte, pelo que acabou com a guia de transporte.
-# source = CETEMPúblico n=401 sec=nd sem=91a
 # sent_id = CP401-1
+# source = CETEMPúblico n=401 sec=nd sem=91a
 # id = 2092
-# d2d = cc(factura,e) -> cc(guia,e)  #106
-# d2d = cc(público,ou) -> cc(particular,ou)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Decreto	Decreto	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=Decreto_Regulamentar_19/91_(B)|MWEPOS=PROPN
 3	Regulamentar	Regulamentar	PROPN	_	Number=Sing	2	flat:name	_	ChangedBy=Issue119
@@ -46,8 +44,8 @@
 38	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Menos papelada é sempre bom, ainda que saiba a pouco.
-# source = CETEMPúblico n=401 sec=nd sem=91a
 # sent_id = CP401-2
+# source = CETEMPúblico n=401 sec=nd sem=91a
 # id = 2093
 1	Menos	pouco	DET	<quant>|<KOMP>|<COMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	2	det	_	_
 2	papelada	papelada	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
@@ -55,7 +53,7 @@
 4	sempre	sempre	ADV	ADV|@<ADVL	_	5	advmod	_	_
 5	bom	bom	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-7	ainda	ainda	ADV	ADV|@SUB	_	9	mark	_	MWE=ainda_que
+7	ainda	ainda	ADV	ADV|@SUB	_	9	mark	_	MWE=ainda_que|MWEPOS=SCONJ
 8	que	que	SCONJ	KS|@A<	_	7	fixed	_	_
 9	saiba	saber	VERB	<mv>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_
 10	a	a	ADP	PRP|@<PIV	_	11	case	_	_
@@ -63,13 +61,9 @@
 12	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Se quiser telefonar -- serviço manual -- para o Transkei prepare-se para pagar 51000 por minuto, o mesmo que, por exemplo, para o Afeganistão, Qatar, Gâmbia, Brunei ou Honk-Kong.
-# source = CETEMPúblico n=401 sec=nd sem=91a &L
 # sent_id = CP401-3
+# source = CETEMPúblico n=401 sec=nd sem=91a &L
 # id = 2094
-# d2d = cc(Afeganistão,ou) -> cc(Honk-Kong,ou)  #106
-# d2d = punct(Afeganistão,,) -> punct(Gâmbia,,)  #106
-# d2d = punct(Afeganistão,,) -> punct(Brunei,,)  #106
-# d2d = punct(Afeganistão,,) -> punct(Qatar,,)  #106
 1	Se	se	SCONJ	KS|@SUB	_	2	mark	_	_
 2	quiser	querer	VERB	<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	11	advcl	_	_
 3	telefonar	telefonar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	2	xcomp	_	_
@@ -83,7 +77,7 @@
 11-12	prepare-se	_	_	_	_	_	_	_	_
 11	prepare	preparar	VERB	<mv>|<hyphen>|<se-passive>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 12	se	se	PRON	PERS|M/F|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Unsp|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
-13	para	para	ADP	PRP|@<PIV	_	14	mark	_	_
+13	para	para	SCONJ	PRP|@<PIV	_	14	mark	_	_
 14	pagar	pagar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	xcomp	_	_
 15	51000	51000	NUM	<card>|NUM|M|P|@<ADVL	NumType=Card	14	obl	_	ChangedBy=Issue168
 16	por	por	ADP	PRP|@A<	_	17	case	_	_
@@ -92,10 +86,10 @@
 19	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	mesmo	mesmo	ADJ	<diff>|<KOMP>|<np-def>|DET|M|S|@N<PRED	Gender=Masc|Number=Sing	15	amod	_	_
 21	que	que	SCONJ	KS|@COM	_	28	mark	_	ChangedBy=Issue165|SpaceAfter=No
-22	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+22	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 23	por	por	ADP	PRP|@KOMP<	_	20	advmod	_	MWE=por_exemplo|MWEPOS=ADV
 24	exemplo	exemplo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	23	fixed	_	ChangedBy=Issue165|SpaceAfter=No
-25	,	,	PUNCT	PU|@PU	_	28	punct	_	_
+25	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 26	para	para	ADP	PRP|@<ADVL	_	28	case	_	_
 27	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
 28	Afeganistão	Afeganistão	PROPN	<first-cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -110,10 +104,9 @@
 37	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = Já se quiser falar, ainda por serviço manual, para Trindade e Tobago, Tortola, Estados Unidos, Jamaica ou Austrália, o custo por minuto será de 34000.
-# source = CETEMPúblico n=401 sec=nd sem=91a
 # sent_id = CP401-4
+# source = CETEMPúblico n=401 sec=nd sem=91a
 # id = 2095
-# d2d = cc(Trindade,ou) -> cc(Austrália,ou)  #106
 1	Já	já	ADV	ADV|@ADVL>	_	3	advmod	_	_
 2	se	se	SCONJ	KS|@SUB	_	3	mark	_	_
 3	quiser	querer	VERB	<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	31	advcl	_	_
@@ -126,7 +119,7 @@
 10	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 11	para	para	ADP	PRP|@<ADVL	_	12	case	_	_
 12	Trindade	Trindade	PROPN	_	Gender=Fem|Number=Sing	4	obl	_	ChangedBy=Issue119|MWE=Trindade_e_Tobago|MWEPOS=PROPN
-13	e	e	CCONJ	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119
+13	e	e	CCONJ	_	_	12	flat:name	_	ChangedBy=Issue119
 14	Tobago	Tobago	PROPN	_	Number=Sing	12	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 16	Tortola	Tortola	PROPN	PROP|M/F|S|@P<	Gender=Unsp|Number=Sing	12	conj	_	ChangedBy=Issue149|ChangedBy=Issue165|SpaceAfter=No

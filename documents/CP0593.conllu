@@ -1,11 +1,10 @@
 # text = McCartney de volta, numa longa e agitada digressão mundial
-# source = CETEMPúblico n=593 sec=clt sem=93a
 # sent_id = CP593-1
+# source = CETEMPúblico n=593 sec=clt sem=93a
 # id = 3081
-# d2d = cc(longa,e) -> cc(agitada,e)  #106
 1	McCartney	McCartney	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	de	de	ADP	PRP|@N<	_	3	case	_	MWE=de_volta
-3	volta	volta	NOUN	N|@P<	_	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+3	volta	volta	NOUN	N|@P<	Gender=Fem|Number=Sing	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	10	punct	_	_
 5-6	numa	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@N<PRED	_	10	case	_	_
@@ -17,13 +16,9 @@
 11	mundial	mundial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	10	amod	_	_
 
 # text = O cabelo terá ficado grisalho mas o seu bom aspecto e o ar agaiatado não deixam transparecer os seus 50 anos e, muito provavelmente, milhões de fãs continuarão a amá-lo quando ele tiver 64.
-# source = CETEMPúblico n=593 sec=clt sem=93a
 # sent_id = CP593-3
+# source = CETEMPúblico n=593 sec=clt sem=93a
 # id = 3082
-# d2d = cc(ficado,mas) -> cc(deixam,mas)  #106
-# d2d = cc(aspecto,e) -> cc(ar,e)  #106
-# d2d = punct(ficado,,) -> punct(ama-,,)  #106
-# d2d = cc(ficado,e) -> cc(ama-,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	cabelo	cabelo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 3	terá	ter	AUX	<first-cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
@@ -46,17 +41,17 @@
 20	50	50	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	ChangedBy=Issue168
 21	anos	ano	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	17	nsubj	_	_
 22	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	32	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-23	,	,	PUNCT	PU|@PU	_	32	punct	_	d2d:#106
+23	,	,	PUNCT	PU|@PU	_	25	punct	_	d2d:#106
 24	muito	muito	ADV	<quant>|ADV|@>A	_	25	advmod	_	_
 25	provavelmente	provavelmente	ADV	ADV|@ADVL>	_	32	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	25	punct	_	_
 27	milhões	milhão	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	32	nsubj	_	_
 28	de	de	ADP	PRP|@N<ARG	_	29	case	_	_
 29	fãs	fã	NOUN	<np-idf>|N|M/F|P|@P<	Gender=Unsp|Number=Plur	27	nmod	_	_
-30	continuarão	continuar	AUX	<cjt>|<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	32	aux	_	_
-31	a	a	ADP	PRP|@PRT-AUX<	_	32	case	_	_
+30	continuarão	continuar	VERB	<cjt>|<aux>|V|FUT|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	conj	_	MWE=continuarão_a|MWEPOS=AUX
+31	a	a	SCONJ	PRP|@PRT-AUX<	_	32	mark	_	_
 32-33	amá-lo	_	_	_	_	_	_	_	_
-32	amá	amar	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	4	conj	_	_
+32	amá	amar	VERB	<mv>|<hyphen>|V|INF|@ICL-AUX<	VerbForm=Inf	30	xcomp	_	_
 33	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	32	obj	_	_
 34	quando	quando	ADV	<rel>|ADV|@ADVL>	_	36	advmod	_	_
 35	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	36	nsubj	_	_
@@ -65,8 +60,8 @@
 38	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = O ex-Beatle Paul McCartney iniciará em breve mais uma extenuante «tournée» de um ano pelo mundo, para promoção do seu novo álbum.
-# source = CETEMPúblico n=593 sec=clt sem=93a
 # sent_id = CP593-4
+# source = CETEMPúblico n=593 sec=clt sem=93a
 # id = 3083
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	ex-Beatle	ex-beatle	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_

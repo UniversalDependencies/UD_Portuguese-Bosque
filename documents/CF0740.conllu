@@ -1,15 +1,15 @@
 # text = O mais grave, no entanto, são os problemas que os clientes poderão enfrentar.
-# source = CETENFolha n=740 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF740-1
+# source = CETENFolha n=740 cad=Dinheiro sec=eco sem=94b
 # id = 3103
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 2	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	3	advmod	_	_
 3	grave	grave	ADJ	<n>|<COMP>|ADJ|M|S|@SC>	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 5-6	no	_	_	_	_	_	_	_	_
-5	em	em	ADP	<sam->|PRP|@N<	_	7	case	_	_
-6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue165|SpaceAfter=No
+5	em	em	ADP	<sam->|PRP|@N<	_	3	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	fixed	_	_
+7	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	5	fixed	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	ChangedBy=Issue167
 10	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
@@ -17,15 +17,15 @@
 12	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	16	obj	_	_
 13	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
 14	clientes	cliente	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	16	nsubj	_	_
-15	poderão	poder	AUX	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	16	aux	_	_
-16	enfrentar	enfrentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+15	poderão	poder	VERB	<aux>|V|FUT|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	11	acl:relcl	_	_
+16	enfrentar	enfrentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	15	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 17	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = A quem recorrer no caso de um descomprimento do que é prometido?
-# source = CETENFolha n=740 cad=Dinheiro sec=eco sem=94b &W
 # sent_id = CF740-2
+# source = CETENFolha n=740 cad=Dinheiro sec=eco sem=94b &W
 # id = 3104
-1	A	a	ADP	<first-cjt>|PRP|@QUE	_	3	mark	_	_
+1	A	a	SCONJ	<first-cjt>|PRP|@QUE	_	3	mark	_	_
 2	quem	quem	PRON	<interr>|INDP|M/F|S/P|@SUBJ>	Gender=Unsp|Number=Unsp|PronType=Int	3	nsubj	_	_
 3	recorrer	recorrer	VERB	<first-cjt>|<mv>|V|INF|@ICL-P<	VerbForm=Inf	0	root	_	_
 4-5	no	_	_	_	_	_	_	_	_
@@ -44,8 +44,8 @@
 15	?	?	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Notamos ainda que, quando um passageiro brasileiro se inscreve num programa de milhagem de uma companhia aérea internacional que serve o Brasil, passados 30 dias, recebe a proposta da Iapa.
-# source = CETENFolha n=740 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF740-3
+# source = CETENFolha n=740 cad=Dinheiro sec=eco sem=94b
 # id = 3105
 1	Notamos	notar	VERB	<mv>|V|PR|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	ainda	ainda	ADV	ADV|@<ADVL	_	1	advmod	_	_
@@ -87,14 +87,9 @@
 36	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Ou seja, se tal procedimento não for ocasional e tiver realmente a conivência das transportadoras aéreas, estas estão expressamente contribuindo para a concorrência desleal e ilícita perante os agentes de viagens além de não preservar seus clientes, que não são consultados sobre se querem ou não receber tais propostas ou se autorizam a divulgação de seus nomes e endereços.
-# source = CETENFolha n=740 cad=Dinheiro sec=eco sem=94b &E
 # sent_id = CF740-4
+# source = CETENFolha n=740 cad=Dinheiro sec=eco sem=94b &E
 # id = 3106
-# d2d = cc(desleal,e) -> cc(ilícita,e)  #106
-# d2d = cc(querem,ou) -> cc(autorizam,ou)  #106
-# d2d = cc(ocasional,e) -> cc(tiver,e)  #106
-# d2d = cc(querem,ou) -> cc(autorizam,ou)  #106
-# d2d = cc(nomes,e) -> cc(endereços,e)  #106
 1	Ou	ou	CCONJ	_	_	23	cc	_	MWE=ou_seja|MWEPOS=CCONJ
 2	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	ChangedBy=Issue165|ChangedBy=Issue181|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -130,10 +125,10 @@
 32	agentes	agente	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	26	nmod	_	_
 33	de	de	ADP	PRP|@N<	_	34	case	_	_
 34	viagens	viagem	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	32	nmod	_	_
-35	além	além	ADV	ADV|@<ADVL	_	23	advmod	_	MWE=além_de
-36	de	de	ADP	PRP|@A<	_	38	mark	_	_
+35	além	além	ADV	ADV|@<ADVL	_	38	mark	_	MWE=além_de|MWEPOS=SCONJ
+36	de	de	ADP	PRP|@A<	_	35	fixed	_	_
 37	não	não	ADV	_	Polarity=Neg	38	advmod	_	_
-38	preservar	preservar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	35	advcl	_	_
+38	preservar	preservar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	23	advcl	_	_
 39	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	40	det	_	_
 40	clientes	cliente	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	38	obj	_	ChangedBy=Issue165|SpaceAfter=No
 41	,	,	PUNCT	PU|@PU	_	38	punct	_	_
@@ -141,7 +136,7 @@
 43	não	não	ADV	_	Polarity=Neg	45	advmod	_	_
 44	são	ser	AUX	<aux>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	45	aux:pass	_	_
 45	consultados	consultar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	40	acl:relcl	_	_
-46	sobre	sobre	ADP	PRP|@<PIV	_	48	mark	_	_
+46	sobre	sobre	SCONJ	PRP|@<PIV	_	48	mark	_	_
 47	se	se	SCONJ	KS|@SUB	_	48	mark	_	_
 48	querem	querer	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-P<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	45	xcomp	_	_
 49	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	56	cc	_	d2d:#106

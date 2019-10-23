@@ -1,12 +1,12 @@
 # text = Os moradores são convidados a fazer desde logo a separação dos lixos -- condição necessária para o êxito do projecto --, que depois serão recolhidos por viaturas equipadas a preceito.
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-1
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 192
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	moradores	morador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj:pass	_	_
 3	são	ser	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
 4	convidados	convidar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
-5	a	a	ADP	PRP|@<PIV	_	6	mark	_	_
+5	a	a	SCONJ	PRP|@<PIV	_	6	mark	_	_
 6	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	4	xcomp	_	_
 7	desde	desde	ADP	PRP|@<ADVL	_	8	case	_	MWE=desde_logo
 8	logo	logo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
@@ -40,8 +40,8 @@
 34	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Neste sistema, a recolha far-se-á «uma vez por semana para os materiais orgânicos e três por semana para os restantes resíduos domésticos».
-# source = CETEMPúblico n=34 sec=soc sem=97a &E
 # sent_id = CP34-2
+# source = CETEMPúblico n=34 sec=soc sem=97a &E
 # id = 193
 1-2	Neste	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -75,8 +75,8 @@
 28	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Em Gondomar, a experiência começará com sacos de plástico em vez de cestos, por vontade da própria autarquia.
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-3
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 194
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	Gondomar	Gondomar	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
@@ -88,10 +88,10 @@
 8	sacos	saco	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	ChangedBy=Issue137
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	plástico	plástico	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	8	nmod	_	_
-11	em	em	ADP	PRP|@N<	_	12	case	_	MWE=em_vez_de
-12	vez	vez	NOUN	N|@P<	_	8	nmod	_	_
-13	de	de	ADP	PRP|@N<	_	14	case	_	_
-14	cestos	cesto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+11	em	em	ADP	PRP|@N<	_	14	cc	_	MWE=em_vez_de|MWEPOS=CCONJ
+12	vez	vez	NOUN	N|@P<	Gender=Fem|Number=Sing	11	fixed	_	_
+13	de	de	ADP	PRP|@N<	_	11	fixed	_	_
+14	cestos	cesto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	6	obl	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 16	por	por	ADP	PRP|@<ADVL	_	17	case	_	_
 17	vontade	vontade	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue137
@@ -103,8 +103,8 @@
 22	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Ao mesmo tempo, irá manter-se a recolha indiferenciada tal como hoje a conhecemos.
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-4
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 195
 1	Ao	ao	ADP	PRP|@ADVL>	_	3	case	_	MWE=Ao_mesmo_tempo
 2	mesmo	mesmo	ADJ	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing	3	amod	_	_
@@ -117,16 +117,16 @@
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	recolha	recolha	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	6	nsubj	_	_
 10	indiferenciada	indiferenciar	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	9	acl	_	_
-11	tal	tal	ADP	PRP|@ADVL>	_	14	case	_	MWE=tal_como
-12	como	como	ADV	N|M|S|@P<	_	11	fixed	_	_
+11	tal	tal	ADV	PRP|@ADVL>	_	15	mark	_	MWE=tal_como|MWEPOS=SCONJ
+12	como	como	SCONJ	N|M|S|@P<	_	11	fixed	_	_
 13	hoje	hoje	ADV	ADV|@ADVL>	_	15	advmod	_	_
 14	a	ela	PRON	PERS|F|3S|ACC|@ACC>	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	15	obj	_	_
 15	conhecemos	conhecer	VERB	<mv>|V|PR|1P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 16	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = «Tendencialmente, o caminho será para aprofundar a recolha selectiva», acentuou o mesmo responsável da Lipor.
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-5
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 196
 1	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Tendencialmente	tendencialmente	ADV	ADV|@ADVL>	_	6	advmod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -134,7 +134,7 @@
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	caminho	caminho	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 6	será	ser	VERB	<mv>|V|FUT|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	14	parataxis	_	_
-7	para	para	ADP	PRP|@<SC	_	8	mark	_	_
+7	para	para	SCONJ	PRP|@<SC	_	8	mark	_	_
 8	aprofundar	aprofundar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	recolha	recolha	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
@@ -152,8 +152,8 @@
 21	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = Este sistema de recolha adequa-se a edifícios baixos, com poucos pisos.
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-6
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 197
 1	Este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	sistema	sistema	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -172,8 +172,8 @@
 14	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Nos prédios com muitos andares, haverá um ecoponto para todos os moradores.
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-7
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 198
 1-2	Nos	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -193,11 +193,9 @@
 15	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = «O único trabalho das pessoas é separar o lixo e colocar nos dias certos os contentores e cestos para serem recolhidos.
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-8
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 199
-# d2d = cc(contentores,e) -> cc(cestos,e)  #106
-# d2d = cc(separar,e) -> cc(colocar,e)  #106
 1	«	«	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 3	único	único	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	4	amod	_	_
@@ -221,14 +219,14 @@
 19	contentores	contentor	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	13	obj	_	_
 20	e	e	CCONJ	<co-acc>|KC|@CO	_	21	cc	_	d2d:#106
 21	cestos	cesto	NOUN	<cjt>|<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	19	conj	_	_
-22	para	para	ADP	PRP|@<ADVL	_	24	mark	_	_
+22	para	para	SCONJ	PRP|@<ADVL	_	24	mark	_	_
 23	serem	ser	AUX	<aux>|V|INF|3P|@ICL-N<	Number=Plur|Person=3|VerbForm=Inf	19	aux	_	_
 24	recolhidos	recolher	VERB	<mv>|V|PCP|M|P|@ICL-P<	Gender=Masc|Number=Plur|VerbForm=Part	13	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = O resto é connosco», garante a Lipor.
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-9
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 200
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	resto	resto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -244,8 +242,8 @@
 11	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Na Maia, cada morador receberá esses recipientes pessoalmente, da mão de funcionários municipais, enquanto alunos dos cursos de Relações Públicas e Psicologia do Instituto Superior da Maia explicarão como funciona o sistema.
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-10
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 201
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -274,8 +272,8 @@
 22	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
 23	cursos	curso	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
-25	Relações	Relações	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	MWE=relações_públicas|MWEPOS=NOUN
-26	Públicas	Públicas	ADJ	_	Number=Sing	25	amod	_	_
+25	Relações	Relações	PROPN	_	Gender=Fem|Number=Sing	23	nmod	_	MWE=relações_públicas|MWEPOS=NOUN
+26	Públicas	Públicas	PROPN	_	Number=Sing	25	amod	_	_
 27	e	e	CCONJ	<co-prparg>|KC|@CO	_	25	cc	_	_
 28	Psicologia	Psicologia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	_
 29-30	do	_	_	_	_	_	_	_	_
@@ -295,13 +293,13 @@
 41	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = Esta acção poderá começar já em Julho, «com abordagens porta a porta».
-# source = CETEMPúblico n=34 sec=soc sem=97a
 # sent_id = CP34-11
+# source = CETEMPúblico n=34 sec=soc sem=97a
 # id = 202
 1	Esta	este	DET	<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	acção	acção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	4	nsubj	_	_
-3	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
-4	começar	começar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+4	começar	começar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 5	já	já	ADV	ADV|@>A	_	7	advmod	_	_
 6	em	em	ADP	PRP|@<ADVL	_	7	case	_	_
 7	Julho	julho	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No

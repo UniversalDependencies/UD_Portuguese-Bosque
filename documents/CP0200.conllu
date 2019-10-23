@@ -1,13 +1,7 @@
 # text = Os outros operadores são os membros negociadores (intervêm na negociação em bolsa, introduzindo directamente no sistema ofertas de compra ou de venda) e os membros compensadores, que além de as funções dos anteriores, participam, designadamente, nos procedimentos de liquidação de contratos nas datas de vencimento e no processo de constituição, substituição, redução e libertação de garantias.
-# source = CETEMPúblico n=200 sec=eco sem=96a
 # sent_id = CP200-1
+# source = CETEMPúblico n=200 sec=eco sem=96a
 # id = 1073
-# d2d = cc(datas,e) -> cc(processo,e)  #106
-# d2d = punct(constituição,,) -> punct(substituição,,)  #106
-# d2d = cc(constituição,e) -> cc(libertação,e)  #106
-# d2d = punct(constituição,,) -> punct(redução,,)  #106
-# d2d = cc(compra,ou) -> cc(venda,ou)  #106
-# d2d = cc(membros,e) -> cc(membros,e)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	outros	outro	DET	<diff>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
 3	operadores	operador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	6	nsubj	_	_
@@ -88,8 +82,8 @@
 72	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O futuro sobre OT-10 (uma taxa de juro de longo prazo) conta, à partida, com nove «market makers», significativamente mais do que os cinco que cumprirão indêntica função para o futuro sobre o PSI-20 (um índice bolsista calculado para uma carteira de 20 títulos).
-# source = CETEMPúblico n=200 sec=eco sem=96a &E
 # sent_id = CP200-2
+# source = CETEMPúblico n=200 sec=eco sem=96a &E
 # id = 1074
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	futuro	futuro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	14	nsubj	_	_
@@ -121,12 +115,12 @@
 27	significativamente	significativamente	ADV	ADV|@>A	_	28	advmod	_	_
 28	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@N<	_	23	advmod	_	_
 29-30	do	_	_	_	_	_	_	_	_
-29	de	de	ADP	<sam->|PRP|@COM	_	33	case	_	MWE=do_que
+29	de	de	ADP	<sam->|PRP|@COM	_	33	mark	_	MWE=do_que|MWEPOS=SCONJ
 30	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	29	fixed	_	_
 31	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	29	fixed	_	_
 32	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
-33	cinco	cinco	NUM	<first-cjt>|<card>|<Eg>|<np-def>|NUM|M|P|@KOMP<	NumType=Card	28	dep	_	ChangedBy=Issue168
-34	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	35	nsubj	_	_
+33	cinco	cinco	NUM	<first-cjt>|<card>|<Eg>|<np-def>|NUM|M|P|@KOMP<	NumType=Card	28	advcl	_	ChangedBy=Issue168
+34	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	PronType=Rel	35	nsubj	_	_
 35	cumprirão	cumprir	VERB	<mv>|V|FUT|3P|IND|@FS-A<	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	33	ccomp	_	_
 36	indêntica	indêntico	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	37	amod	_	_
 37	função	função	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	35	obj	_	_
@@ -151,10 +145,9 @@
 56	.	.	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = O contrato sobre a Lisbor a três meses (taxa de juro de curto prazo, correspondente à média das taxas praticadas no mercado monetário interbancário) só começará a ser negociado no início de Julho mas já tem garantidos seis «market makers».
-# source = CETEMPúblico n=200 sec=eco sem=96a
 # sent_id = CP200-3
+# source = CETEMPúblico n=200 sec=eco sem=96a
 # id = 1075
-# d2d = cc(negociado,mas) -> cc(tem,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	contrato	contrato	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	35	nsubj:pass	_	_
 3	sobre	sobre	ADP	PRP|@N<	_	5	case	_	_
@@ -164,7 +157,7 @@
 7	três	três	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	nummod	_	ChangedBy=Issue168
 8	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
 9	(	(	PUNCT	PU|@PU	_	10	punct	_	ChangedBy=Issue165|SpaceAfter=No
-10	taxa	taxa	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	2	nmod	_	_
+10	taxa	taxa	NOUN	<cjt>|<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	2	parataxis	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
 12	juro	juro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	_
 13	de	de	ADP	PRP|@N<ARG	_	15	case	_	_
@@ -189,10 +182,10 @@
 29	interbancário	interbancário	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	27	amod	_	ChangedBy=Issue165|SpaceAfter=No
 30	)	)	PUNCT	PU|@PU	_	10	punct	_	_
 31	só	só	ADV	ADV|@ADVL>	_	35	advmod	_	_
-32	começará	começar	AUX	<first-cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	35	aux	_	_
-33	a	a	ADP	PRP|@PRT-AUX<	_	35	case	_	_
+32	começará	começar	VERB	<first-cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	MWE=começará_a|MWEPOS=AUX
+33	a	a	SCONJ	PRP|@PRT-AUX<	_	35	mark	_	_
 34	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	35	aux:pass	_	_
-35	negociado	negociar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+35	negociado	negociar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	32	xcomp	_	_
 36-37	no	_	_	_	_	_	_	_	_
 36	em	em	ADP	<sam->|PRP|@<ADVL	_	38	case	_	_
 37	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	_	_

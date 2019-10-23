@@ -1,6 +1,6 @@
 # text = Os Missionários do Espírito Santo vão alargar à cidade do Porto o trabalho que já desenvolvem na região de Lisboa, de apoio aos imigrantes lusófonos que residem em Portugal.
-# source = CETEMPúblico n=777 sec=soc sem=94b
 # sent_id = CP777-1
+# source = CETEMPúblico n=777 sec=soc sem=94b
 # id = 3981
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	Missionários	Missionários	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	MWE=Missionários_do_Espírito_Santo
@@ -45,22 +45,20 @@
 36	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = A decisão deverá ser concretizada a curto prazo, depois de o capítulo provincial (assembleia) daquela congregação religiosa ter debatido a acção do Centro Padre Alves Correia (Cepac), de Lisboa -- o organismo, da responsabilidade dos missionários, que esteve em diversas acções de apoio à legalização dos imigrantes clandestinos, e que denunciou a corrupção existente na delegação de Faro do Serviço de Estrangeiros e Fronteiras, investigada pela Polícia Judiciária (ver PÚBLICO 20/07/94).
-# source = CETEMPúblico n=777 sec=soc sem=94b
 # sent_id = CP777-2
+# source = CETEMPúblico n=777 sec=soc sem=94b
 # id = 3982
-# d2d = punct(acções,,) -> punct(denunciou,,)  #106
-# d2d = cc(acções,e) -> cc(denunciou,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	decisão	decisão	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj:pass	_	_
-3	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	aux	_	_
+3	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 4	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	5	aux:pass	_	_
-5	concretizada	concretizar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	0	root	_	_
+5	concretizada	concretizar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	3	xcomp	_	_
 6	a	a	ADP	PRP|@<ADVL	_	8	case	_	_
 7	curto	curto	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	8	amod	_	_
 8	prazo	prazo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-10	depois	depois	ADV	ADV|@<ADVL	_	5	advmod	_	_
-11	de	de	ADP	PRP|@A<ARG	_	23	mark	_	_
+10	depois	depois	ADV	ADV|@<ADVL	_	23	mark	_	MWE=depois_de|MWEPOS=SCONJ
+11	de	de	ADP	PRP|@A<ARG	_	10	fixed	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	capítulo	capítulo	NOUN	_	Gender=Masc|Number=Sing	23	nsubj	_	MWE=capítulo_provincial|MWEPOS=NOUN
 14	provincial	provincial	ADJ	_	Gender=Masc|Number=Sing	13	amod	_	_
@@ -73,7 +71,7 @@
 20	congregação	congregação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	13	nmod	_	_
 21	religiosa	religioso	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	20	amod	_	_
 22	ter	ter	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	23	aux	_	_
-23	debatido	debater	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	10	acl	_	_
+23	debatido	debater	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	5	acl	_	_
 24	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	acção	acção	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	23	obj	_	_
 26-27	do	_	_	_	_	_	_	_	_
@@ -120,7 +118,7 @@
 62	clandestinos	clandestino	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	61	amod	_	ChangedBy=Issue165|SpaceAfter=No
 63	,	,	PUNCT	PU|@PU	_	66	punct	_	d2d:#106
 64	e	e	CCONJ	<co-fcl>|<co-postnom>|KC|@CO	_	66	cc	_	d2d:#106
-65	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	66	nsubj	_	_
+65	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	66	nsubj	_	_
 66	denunciou	denunciar	VERB	<cjt>|<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	53	conj	_	_
 67	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	68	det	_	_
 68	corrupção	corrupção	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	66	obj	_	_
@@ -137,7 +135,7 @@
 77	Serviço	Serviço	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	72	nmod	_	MWE=Serviço_de_Estrangeiros_e_Fronteiras
 78	de	de	ADP	PRP|@N<	_	79	case	_	_
 79	Estrangeiros	Estrangeiros	PROPN	_	Number=Sing	77	nmod	_	ChangedBy=Issue119|MWE=Estrangeiros_e_Fronteiras|MWEPOS=PROPN
-80	e	e	CCONJ	_	Number=Sing	79	flat:name	_	ChangedBy=Issue119
+80	e	e	CCONJ	_	_	79	flat:name	_	ChangedBy=Issue119
 81	Fronteiras	Fronteiras	PROPN	_	Number=Sing	79	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 82	,	,	PUNCT	PU|@PU	_	83	punct	_	_
 83	investigada	investigar	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	72	acl	_	_
@@ -154,8 +152,8 @@
 93	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = «Há situações gritantes ao pé da nossa porta», disse ao PÚBLICO o novo provincial português, padre Eduardo Marques Ferreira, 43 anos, eleito anteontem, na fase final da assembleia, para justificar a ideia:
-# source = CETEMPúblico n=777 sec=soc sem=94b
 # sent_id = CP777-3
+# source = CETEMPúblico n=777 sec=soc sem=94b
 # id = 3983
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	parataxis	_	_
@@ -164,7 +162,7 @@
 5-6	ao	_	_	_	_	_	_	_	_
 5	a	a	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	pé	pé	NOUN	N|@P<	_	2	obl	_	_
+7	pé	pé	NOUN	N|@P<	Gender=Masc|Number=Sing	2	obl	_	_
 8-9	da	_	_	_	_	_	_	_	_
 8	de	de	ADP	PRP|@N<	_	11	case	_	_
 9	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
@@ -183,7 +181,7 @@
 21	português	português	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	20	amod	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 23	padre	padre	NOUN	<np-idf>|N|M|S|@APP	Gender=Masc|Number=Sing	20	appos	_	_
-24	Eduardo	Eduardo	PROPN	_	Gender=Masc|Number=Sing	23	dep	_	ChangedBy=Issue119|MWE=Eduardo_Marques_Ferreira|MWEPOS=PROPN
+24	Eduardo	Eduardo	PROPN	_	Gender=Masc|Number=Sing	23	appos	_	ChangedBy=Issue119|MWE=Eduardo_Marques_Ferreira|MWEPOS=PROPN
 25	Marques	Marques	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119
 26	Ferreira	Ferreira	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	23	punct	_	_
@@ -203,15 +201,15 @@
 39	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	assembleia	assembleia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 41	,	,	PUNCT	PU|@PU	_	43	punct	_	_
-42	para	para	ADP	PRP|@<ADVL	_	43	mark	_	_
+42	para	para	SCONJ	PRP|@<ADVL	_	43	mark	_	_
 43	justificar	justificar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	14	advcl	_	_
 44	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
 45	ideia	ideia	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	43	obj	_	ChangedBy=Issue165|SpaceAfter=No
 46	:	:	PUNCT	PU|@PU	_	14	punct	_	_
 
 # text = «Nesse sentido, eu gostaria de ver alargado o trabalho do Cepac a cidades como o Porto, porque ele é um sinal de atenção à missão no nosso país».
-# source = CETEMPúblico n=777 sec=soc sem=94b
 # sent_id = CP777-4
+# source = CETEMPúblico n=777 sec=soc sem=94b
 # id = 3984
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2-3	Nesse	_	_	_	_	_	_	_	_
@@ -221,7 +219,7 @@
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6	eu	eu	PRON	PERS|M|1S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
 7	gostaria	gostar	VERB	<mv>|V|COND|1S|@FS-STA	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
-8	de	de	ADP	PRP|@<PIV	_	9	mark	_	_
+8	de	de	SCONJ	PRP|@<PIV	_	9	mark	_	_
 9	ver	ver	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	7	xcomp	_	_
 10	alargado	alargar	VERB	<mv>|V|PCP|M|S|@ICL-<OC	Gender=Masc|Number=Sing|VerbForm=Part	9	xcomp	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_

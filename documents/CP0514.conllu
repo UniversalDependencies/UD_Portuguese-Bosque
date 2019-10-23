@@ -1,9 +1,8 @@
 # text = A confirmarem-se os confrontos, serão o primeiro incidente fronteiriço grave desde a morte de oito diplomatas e um jornalista iranianos no Afeganistão, no princípio de Agosto, o acontecimento que agudizou a crise entre os dois países.
-# source = CETEMPúblico n=514 sec=pol sem=98b
 # sent_id = CP514-1
+# source = CETEMPúblico n=514 sec=pol sem=98b
 # id = 2699
-# d2d = cc(diplomatas,e) -> cc(jornalista,e)  #106
-1	A	a	ADP	PRP|@ADVL>	_	2	mark	_	_
+1	A	a	SCONJ	PRP|@ADVL>	_	2	mark	_	_
 2-3	confirmarem-se	_	_	_	_	_	_	_	_
 2	confirmarem	confirmar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	10	advcl	_	_
 3	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	expl	_	ChangedBy=Issue135
@@ -51,13 +50,9 @@
 43	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Desde então, Teerão, que viu derrotados os seus últimos aliados na guerra civil afegã, e Cabul, com a confiança renovada e o apoio do Paquistão, envolveram-se numa escalada de ameaças verbais, concentrando ao mesmo tempo frente a frente poderosos efectivos militares -- os maiores desde o fim da guerra entre o Irão e o Iraque, em 1988.
-# source = CETEMPúblico n=514 sec=pol sem=98b
 # sent_id = CP514-2
+# source = CETEMPúblico n=514 sec=pol sem=98b
 # id = 2700
-# d2d = cc(Teerão,e) -> cc(Cabul,e)  #106
-# d2d = cc(confiança,e) -> cc(apoio,e)  #106
-# d2d = punct(Teerão,,) -> punct(Cabul,,)  #106
-# d2d = cc(Irão,e) -> cc(Iraque,e)  #106
 1	Desde	desde	ADP	PRP|@ADVL>	_	2	case	_	MWE=Desde_então
 2	então	então	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	33	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -73,8 +68,8 @@
 13-14	na	_	_	_	_	_	_	_	_
 13	em	em	ADP	<sam->|PRP|@<ADVL	_	15	obl	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	guerra	guerra	NOUN	_	_	7	obl	_	MWE=guerra_civil|MWEPOS=NOUN
-16	civil	civil	ADJ	_	_	15	amod	_	_
+15	guerra	guerra	NOUN	_	Gender=Fem|Number=Sing	7	obl	_	MWE=guerra_civil|MWEPOS=NOUN
+16	civil	civil	ADJ	_	Gender=Fem|Number=Sing	15	amod	_	_
 17	afegã	afegão	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	15	amod	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	20	punct	_	d2d:#106
 19	e	e	CCONJ	<co-subj>|<co-fmc>|<co-vfin>|KC|@CO	_	20	cc	_	d2d:#106
@@ -116,8 +111,8 @@
 51	efectivos	efectivo	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	42	obj	_	_
 52	militares	militar	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	51	amod	_	_
 53	--	--	PUNCT	PU|@PU	_	42	punct	_	_
-54	os	o	DET	<artd>|ART|M|P|@>A	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	dep	_	_
-55	maiores	grande	ADJ	<KOMP>|<COMP>|ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	51	amod	_	_
+54	os	o	DET	<artd>|ART|M|P|@>A	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	_	_
+55	maiores	grande	NOUN	<KOMP>|<COMP>|ADJ|M|P|@N<PRED	Gender=Masc|Number=Plur	51	amod	_	_
 56	desde	desde	ADP	PRP|@A<	_	58	case	_	_
 57	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	58	det	_	_
 58	fim	fim	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	55	obl	_	_

@@ -1,9 +1,7 @@
 # text = O investimento directo português no estrangeiro elevou-se no período em análise a 482 milhões de dólares, o que é mais 48,31 por cento do que o verificado no período homólogo do ano de 1991, e que se explica em grande parte pelo aumento do investimento industrial em Espanha.
-# source = CETEMPúblico n=684 sec=soc sem=93b
 # sent_id = CP684-1
+# source = CETEMPúblico n=684 sec=soc sem=93b
 # id = 3533
-# d2d = cc(por,e) -> cc(explica,e)  #106
-# d2d = punct(por,,) -> punct(explica,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	investimento	investimento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
 3	directo	directo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	_
@@ -22,20 +20,20 @@
 13	em	em	ADP	PRP|@N<	_	14	case	_	_
 14	análise	análise	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 15	a	a	ADP	PRP|@<SA	_	16	case	_	_
-16	482	482	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168|MWE=482_milhões
+16	482	482	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	obj	_	ChangedBy=Issue168|MWE=482_milhões
 17	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	16	flat	_	_
 18	de	de	ADP	PRP|@N<ARG	_	19	case	_	_
-19	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	8	obj	_	ChangedBy=Issue165|SpaceAfter=No
+19	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-21	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	19	appos	_	_
+21	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	16	appos	_	_
 22	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	26	nsubj	_	_
 23	é	ser	AUX	<first-cjt>|<mv>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	cop	_	ChangedBy=Issue167
 24	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	26	advmod	_	_
 25	48,31	48,31	NUM	<card>|NUM|M|P|@>N	NumType=Card	26	nummod	_	ChangedBy=Issue168
-26	por	por	ADP	_	Gender=Masc|Number=Sing	21	acl:relcl	_	MWE=por_cento|MWEPOS=NOUN
+26	por	por	ADP	_	_	21	acl:relcl	_	MWE=por_cento|MWEPOS=NOUN
 27	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	26	compound	_	_
 28-29	do	_	_	_	_	_	_	_	_
-28	de	de	ADP	<sam->|PRP|@COM	_	32	mark	_	MWE=do_que
+28	de	de	SCONJ	<sam->|PRP|@COM	_	32	mark	_	MWE=do_que
 29	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	28	fixed	_	_
 30	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	28	fixed	_	_
 31	o	o	PRON	<first-cjt>|<dem>|DET|M|S|@KOMP<	Gender=Masc|Number=Sing|PronType=Dem	26	obl	_	_
@@ -53,7 +51,7 @@
 41	1991	1991	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	39	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 42	,	,	PUNCT	PU|@PU	_	46	punct	_	d2d:#106
 43	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	46	cc	_	d2d:#106
-44	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	46	nsubj	_	_
+44	que	que	PRON	<rel>|INDP|M|S|@ACC>	PronType=Rel	46	nsubj	_	_
 45	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	46	expl	_	_
 46	explica	explicar	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj	_	_
 47	em	em	ADP	N|M|S|@<ADVL	_	46	obl	_	MWE=em_grande_parte
@@ -73,12 +71,9 @@
 59	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Quase metade dos valores registados destinam-se ao país vizinho e, desse montante, cerca de 95 por cento terá sido aplicado na indústria.
-# source = CETEMPúblico n=684 sec=soc sem=93b
 # sent_id = CP684-2
+# source = CETEMPúblico n=684 sec=soc sem=93b
 # id = 3534
-# d2d = punct(destinam-,,) -> punct(aplicado,,)  #106
-# d2d = cc(destinam-,e) -> cc(aplicado,e)  #106
-# d2d = punct(destinam-,,) -> punct(aplicado,,)  #106
 1	Quase	quase	ADV	<quant>|ADV|@>N	_	2	advmod	_	_
 2	metade	metade	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	7	nsubj	_	_
 3-4	dos	_	_	_	_	_	_	_	_
@@ -95,16 +90,16 @@
 11	país	país	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	7	obj	_	_
 12	vizinho	vizinho	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	11	amod	_	_
 13	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	26	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-14	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
+14	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
 15-16	desse	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@>N	_	17	case	_	_
 16	esse	esse	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	17	det	_	_
 17	montante	montante	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
-18	,	,	PUNCT	PU|@PU	_	26	punct	_	d2d:#106
-19	cerca	cerca	ADV	ADV|@>A	_	21	advmod	_	MWE=cerca_de
-20	de	de	ADP	<prp>|PRP|@A<	_	19	case	_	_
+18	,	,	PUNCT	PU|@PU	_	17	punct	_	d2d:#106
+19	cerca	cerca	ADV	ADV|@>A	_	22	advmod	_	MWE=cerca_de|MWEPOS=ADV
+20	de	de	ADP	<prp>|PRP|@A<	_	19	fixed	_	_
 21	95	95	NUM	<card>|NUM|M|P|@>N	NumType=Card	22	nummod	_	ChangedBy=Issue168
-22	por	por	ADP	_	Gender=Masc|Number=Sing	26	nsubj:pass	_	MWE=por_cento|MWEPOS=NOUN
+22	por	por	ADP	_	_	26	nsubj:pass	_	MWE=por_cento|MWEPOS=NOUN
 23	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	22	compound	_	_
 24	terá	ter	AUX	<cjt>|<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	26	aux	_	_
 25	sido	ser	AUX	<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	26	aux:pass	_	_
@@ -116,8 +111,8 @@
 30	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O investimento líquido nacional em títulos estrangeiros, por seu turno, elevou-se a 298 milhões de dólares quando no ano anterior praticamente não tinha expressão.
-# source = CETEMPúblico n=684 sec=soc sem=93b
 # sent_id = CP684-3
+# source = CETEMPúblico n=684 sec=soc sem=93b
 # id = 3535
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	investimento	investimento	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
@@ -135,10 +130,10 @@
 13	elevou	elevar	VERB	<mv>|<hyphen>|<se-passive>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 14	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	13	expl	_	ChangedBy=Issue135
 15	a	a	ADP	PRP|@<SA	_	16	case	_	_
-16	298	298	NUM	<card>|NUM|M|P|@>N	NumType=Card	19	nummod	_	ChangedBy=Issue168|MWE=298_milhões
+16	298	298	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	obj	_	ChangedBy=Issue168|MWE=298_milhões
 17	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	16	flat	_	_
 18	de	de	ADP	PRP|@N<ARG	_	19	case	_	_
-19	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	13	obj	_	_
+19	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
 20	quando	quando	ADV	<rel>|ADV|@ADVL>	_	27	advmod	_	_
 21-22	no	_	_	_	_	_	_	_	_
 21	em	em	ADP	<sam->|PRP|@ADVL>	_	23	case	_	_

@@ -1,8 +1,7 @@
 # text = A UE é o principal parceiro comercial da Rússia, representando 37 por cento do total das trocas comerciais contra 24 por cento no caso das restantes ex-repúblicas soviéticas, ou quatro por cento com os Estados Unidos.
-# source = CETEMPúblico n=186 sec=pol sem=95b
 # sent_id = CP186-1
+# source = CETEMPúblico n=186 sec=pol sem=95b
 # id = 999
-# d2d = cc(por,ou) -> cc(por,ou)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	UE	UE	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
@@ -17,7 +16,7 @@
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 12	representando	representar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	6	advcl	_	_
 13	37	37	NUM	<card>|NUM|M|P|@>N	NumType=Card	14	nummod	_	ChangedBy=Issue168
-14	por	por	ADP	_	Gender=Masc|Number=Sing	12	obj	_	MWE=por_cento|MWEPOS=NOUN
+14	por	por	ADP	_	_	12	obj	_	MWE=por_cento|MWEPOS=NOUN
 15	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	14	compound	_	_
 16-17	do	_	_	_	_	_	_	_	_
 16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
@@ -30,12 +29,12 @@
 22	comerciais	comercial	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	21	amod	_	_
 23	contra	contra	ADP	PRP|@N<	_	25	case	_	_
 24	24	24	NUM	<card>|NUM|M|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168
-25	por	por	ADP	_	Gender=Masc|Number=Sing	14	nmod	_	MWE=por_cento|MWEPOS=NOUN
+25	por	por	ADP	_	_	14	nmod	_	MWE=por_cento|MWEPOS=NOUN
 26	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	25	compound	_	_
 27-28	no	_	_	_	_	_	_	_	_
 27	em	em	ADP	<sam->|PRP|@N<	_	29	case	_	_
 28	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
-29	caso	caso	NOUN	N|@P<	_	25	nmod	_	_
+29	caso	caso	NOUN	N|@P<	Gender=Masc|Number=Sing	25	nmod	_	_
 30-31	das	_	_	_	_	_	_	_	_
 30	de	de	ADP	PRP|@N<	_	33	case	_	_
 31	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	33	det	_	_
@@ -45,7 +44,7 @@
 35	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 36	ou	ou	CCONJ	<co-prparg>|KC|@CO	_	38	cc	_	d2d:#106
 37	quatro	quatro	NUM	<card>|NUM|M|P|@>N	NumType=Card	38	nummod	_	ChangedBy=Issue168
-38	por	por	ADP	_	Gender=Masc|Number=Sing	25	conj	_	ChangedBy=Issue149|MWE=por_cento|MWEPOS=NOUN
+38	por	por	ADP	_	_	25	conj	_	ChangedBy=Issue149|MWE=por_cento|MWEPOS=NOUN
 39	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	38	compound	_	_
 40	com	com	ADP	PRP|@N<	_	42	case	_	_
 41	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	42	det	_	_
@@ -54,21 +53,20 @@
 44	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Com exportações para a UE de 15,5 mil milhões de ecus e importando o equivalente a 11,5 mil milhões, a Rússia mantinha em 1993 um excedente comercial, face aos europeus, de quatro mil milhões de ecus.
-# source = CETEMPúblico n=186 sec=pol sem=95b
 # sent_id = CP186-2
+# source = CETEMPúblico n=186 sec=pol sem=95b
 # id = 1000
-# d2d = cc(exportações,e) -> cc(importando,e)  #106
 1	Com	com	ADP	<first-cjt>|PRP|@ADVL>	_	2	case	_	_
 2	exportações	exportação	NOUN	<first-cjt>|<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	23	obl	_	ChangedBy=Issue137
 3	para	para	ADP	PRP|@N<	_	5	case	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	UE	UE	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	2	nmod	_	_
-6	de	de	ADP	PRP|@N<	_	11	case	_	_
-7	15,5	15,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168|MWE=15,5_mil_milhões
+6	de	de	ADP	PRP|@N<	_	7	case	_	_
+7	15,5	15,5	NUM	<card>|NUM|M|P|@>N	NumType=Card	2	nmod	_	ChangedBy=Issue168|MWE=15,5_mil_milhões
 8	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	flat	_	ChangedBy=Issue168
 9	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	7	flat	_	_
 10	de	de	ADP	PRP|@N<ARG	_	11	case	_	_
-11	ecus	ecu	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	_
+11	ecus	ecu	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	_
 12	e	e	CCONJ	<co-advl>|KC|@CO	_	13	cc	_	d2d:#106
 13	importando	importar	VERB	<mv>|<cjt>|V|GER|@ADVL>	VerbForm=Ger	2	conj	_	_
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
@@ -93,11 +91,11 @@
 32	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
 33	europeus	europeu	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	30	obl	_	ChangedBy=Issue165|SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	36	punct	_	_
-35	de	de	ADP	PRP|@N<	_	40	case	_	_
-36	quatro	quatro	NUM	<card>|NUM|M|P|@>A	NumType=Card	40	nummod	_	ChangedBy=Issue168|MWE=quatro_mil_milhões
+35	de	de	ADP	PRP|@N<	_	36	case	_	_
+36	quatro	quatro	NUM	<card>|NUM|M|P|@>A	NumType=Card	27	nmod	_	ChangedBy=Issue168|MWE=quatro_mil_milhões
 37	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	36	flat	_	ChangedBy=Issue168
 38	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	36	flat	_	_
 39	de	de	ADP	PRP|@N<ARG	_	40	case	_	_
-40	ecus	ecu	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	27	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+40	ecus	ecu	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	36	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 41	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 

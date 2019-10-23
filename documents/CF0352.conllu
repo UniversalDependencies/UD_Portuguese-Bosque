@@ -1,6 +1,6 @@
 # text = (leia texto à pág. 4)
-# source = CETENFolha n=352 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF352-1
+# source = CETENFolha n=352 cad=Caderno Especial sec=nd sem=94a
 # id = 1464
 1	(	(	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	leia	ler	VERB	<mv>|V|PR|1/3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -13,10 +13,9 @@
 8	)	)	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Uma das consequências disso é outra aberração na saúde brasileira: em 1991, os hospitais psiquiátricos cadastrados à rede federal consumiam 7,5% das despesas com internações realizadas pelo SUS e representavam o equivalente a 18% dos leitos.
-# source = CETENFolha n=352 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF352-2
+# source = CETENFolha n=352 cad=Caderno Especial sec=nd sem=94a
 # id = 1465
-# d2d = cc(consumiam,e) -> cc(representavam,e)  #106
 1	Uma	uma	NUM	<card>|NUM|F|S|@SUBJ>	NumType=Card	9	nsubj	_	ChangedBy=Issue168
 2-3	das	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -74,11 +73,9 @@
 48	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Esses números vão de encontro com a tendência mundial, segundo a qual o paciente deve ficar o menor tempo possível internado, e os esforços devem ser para reintegrá-lo na sociedade.
-# source = CETENFolha n=352 cad=Caderno Especial sec=nd sem=94a
 # sent_id = CF352-3
+# source = CETENFolha n=352 cad=Caderno Especial sec=nd sem=94a
 # id = 1466
-# d2d = punct(ficar,,) -> punct(ser,,)  #106
-# d2d = cc(ficar,e) -> cc(ser,e)  #106
 1	Esses	esse	DET	<dem>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	_
 2	números	número	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	3	nsubj	_	_
 3	vão	ir	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -94,20 +91,20 @@
 13	qual	qual	PRON	DET|F|S|@P<	Gender=Fem|Number=Sing|PronType=Rel	17	obl	_	_
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	paciente	paciente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
-16	deve	dever	AUX	<first-cjt>|<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	aux	_	_
-17	ficar	ficar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	acl:relcl	_	_
+16	deve	dever	VERB	<first-cjt>|<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	_	_
+17	ficar	ficar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	16	xcomp	_	_
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 19	menor	pequeno	ADJ	<KOMP>|<COMP>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	20	amod	_	_
 20	tempo	tempo	NOUN	<np-def>|N|M|S|@<ADVL	Gender=Masc|Number=Sing	17	obl	_	_
 21	possível	possível	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	20	amod	_	_
-22	internado	internar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	17	dep	_	ChangedBy=Issue165|SpaceAfter=No
+22	internado	internar	VERB	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing|VerbForm=Part	17	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
 24	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	28	cc	_	d2d:#106
 25	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	_	_
 26	esforços	esforço	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	28	nsubj	_	_
-27	devem	dever	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	aux	_	_
-28	ser	ser	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	17	conj	_	_
-29	para	para	ADP	PRP|@<SC	_	30	mark	_	_
+27	devem	dever	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	conj	_	_
+28	ser	ser	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	27	xcomp	_	_
+29	para	para	SCONJ	PRP|@<SC	_	30	mark	_	_
 30-31	reintegrá-lo	_	_	_	_	_	_	_	_
 30	reintegrá	reintegrar	VERB	<mv>|<hyphen>|V|INF|@ICL-P<	VerbForm=Inf	28	advcl	_	_
 31	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	30	obj	_	_

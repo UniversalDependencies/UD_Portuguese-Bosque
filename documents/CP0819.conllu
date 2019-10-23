@@ -1,8 +1,7 @@
 # text = Entretanto, durante toda a manhã de ontem, uma testemunha tentou, na esquadra da PSP, dizer o que tinha visto e ouvido.
-# source = CETEMPúblico n=819 sec=soc sem=93b
 # sent_id = CP819-1
+# source = CETEMPúblico n=819 sec=soc sem=93b
 # id = 4224
-# d2d = cc(visto,e) -> cc(ouvido,e)  #106
 1	Entretanto	entretanto	ADV	<kc>|ADV|@ADVL>	_	12	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	durante	durante	ADP	PRP|@ADVL>	_	6	case	_	_
@@ -35,8 +34,8 @@
 28	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = «Mas esse direito foi-me sempre negado», afirma a testemunha, A. Carvalho.
-# source = CETEMPúblico n=819 sec=soc sem=93b
 # sent_id = CP819-2
+# source = CETEMPúblico n=819 sec=soc sem=93b
 # id = 4225
 1	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Mas	mas	CCONJ	KC|@CO	_	8	cc	_	_
@@ -58,11 +57,9 @@
 17	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = «O polícia disse-me que o agrediu, mas agora, horas depois, desmente tudo», adiantou.
-# source = CETEMPúblico n=819 sec=soc sem=93b
 # sent_id = CP819-3
+# source = CETEMPúblico n=819 sec=soc sem=93b
 # id = 4226
-# d2d = punct(disse-,,) -> punct(desmente,,)  #106
-# d2d = cc(disse-,mas) -> cc(desmente,mas)  #106
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	polícia	polícia	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
@@ -72,7 +69,7 @@
 6	que	que	SCONJ	KS|@SUB	_	8	mark	_	_
 7	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
 8	agrediu	agredir	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
-9	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
+9	,	,	PUNCT	PU|@PU	_	11	punct	_	d2d:#106
 10	mas	mas	CCONJ	<co-acc>|<co-fmc>|<co-vfin>|KC|@CO	_	16	cc	_	d2d:#106
 11	agora	agora	ADV	<kc>|ADV|@ADVL>	_	16	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	11	punct	_	_
@@ -87,14 +84,13 @@
 21	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = O caso foi entregue à PSP das Caldas da Rainha e remetido ontem ao tribunal, que decidiu que o condutor não pode sair da área da residência, embora possa conduzir, tendo sido instaurado inquérito para averiguações.
-# source = CETEMPúblico n=819 sec=soc sem=93b
 # sent_id = CP819-4
+# source = CETEMPúblico n=819 sec=soc sem=93b
 # id = 4227
-# d2d = cc(entregue,e) -> cc(remetido,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	caso	caso	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	entregue	entregar	VERB	<mv>|<first-cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	2	dep	_	_
+4	entregue	entregar	VERB	<mv>|<first-cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	3	xcomp	_	_
 5-6	à	_	_	_	_	_	_	_	_
 5	a	a	ADP	<sam->|PRP|@<PIV	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
@@ -121,8 +117,8 @@
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	condutor	condutor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	28	nsubj	_	_
 26	não	não	ADV	_	Polarity=Neg	28	advmod	_	_
-27	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	aux	_	_
-28	sair	sair	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	ccomp	_	_
+27	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	ccomp	_	_
+28	sair	sair	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	27	xcomp	_	_
 29-30	da	_	_	_	_	_	_	_	_
 29	de	de	ADP	<sam->|PRP|@<SA	_	31	case	_	_
 30	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
@@ -133,8 +129,8 @@
 34	residência	residência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	31	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 36	embora	embora	SCONJ	KS|@SUB	_	38	mark	_	_
-37	possa	poder	AUX	<aux>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	38	aux	_	_
-38	conduzir	conduzir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	advcl	_	ChangedBy=Issue165|SpaceAfter=No
+37	possa	poder	VERB	<aux>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	advcl	_	_
+38	conduzir	conduzir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	37	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 39	,	,	PUNCT	PU|@PU	_	42	punct	_	_
 40	tendo	ter	AUX	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	42	aux	_	_
 41	sido	ser	AUX	<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	42	aux:pass	_	_

@@ -1,15 +1,15 @@
 # text = Quando a advogada lhe perguntou porque é que o carro dos portugueses não teria sido interceptado, Cardiell afirmou que pensava «estarem combinados com a polícia, tendo em conta a forma como as coisas se passaram».
-# source = CETEMPúblico n=660 sec=soc sem=96b
 # sent_id = CP660-1
+# source = CETEMPúblico n=660 sec=soc sem=96b
 # id = 3430
-1	Quando	quando	ADV	<rel>|ADV|@ADVL>	_	5	advmod	_	_
+1	Quando	quando	SCONJ	<rel>|ADV|@ADVL>	_	5	mark	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	advogada	advogado	NOUN	<mv>|<n>|V|PCP|F|S|@ICL-SUBJ>	Gender=Fem|Number=Sing	5	csubj	_	_
 4	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	iobj	_	_
 5	perguntou	perguntar	VERB	<mv>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	20	advcl	_	_
 6	porque	porque	ADV	<interr>|ADV|@ADVL>	_	17	advmod	_	_
-7	é	é	ADP	PRP|@ADVL>	_	8	case	_	MWE=é_que
-8	que	que	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	_
+7	é	ser	AUX	PRP|@ADVL>	_	17	discourse	_	MWE=é_que|MWEPOS=INTJ
+8	que	que	SCONJ	N|M|S|@P<	_	7	fixed	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	carro	carro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj:pass	_	_
 11-12	dos	_	_	_	_	_	_	_	_
@@ -34,7 +34,7 @@
 29	,	,	PUNCT	PU|@PU	_	30	punct	_	_
 30	tendo	ter	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	22	advcl	_	_
 31	em	em	ADP	PRP|@<OC	_	32	case	_	MWE=em_conta
-32	conta	conta	NOUN	N|@P<	_	30	xcomp	_	_
+32	conta	conta	NOUN	N|@P<	Gender=Fem|Number=Sing	30	xcomp	_	_
 33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
 34	forma	forma	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	30	obj	_	_
 35	como	como	ADV	<rel>|ADV|@ADVL>	_	39	advmod	_	_
@@ -46,8 +46,8 @@
 41	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = «Se nos tinham localizado, podiam ter actuado quando ainda estávamos com os portugueses», afirmou.
-# source = CETEMPúblico n=660 sec=soc sem=96b
 # sent_id = CP660-2
+# source = CETEMPúblico n=660 sec=soc sem=96b
 # id = 3431
 1	«	«	PUNCT	PU|@PU	_	9	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Se	se	SCONJ	KS|@SUB	_	5	mark	_	_
@@ -55,9 +55,9 @@
 4	tinham	ter	AUX	<aux>|V|IMPF|3P|IND|@FS-ADVL>	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	aux	_	_
 5	localizado	localizar	VERB	<mv>|<mqpc-ind>|V|PCP|@ICL-AUX<	VerbForm=Part	9	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-7	podiam	poder	AUX	<aux>|V|IMPF|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	9	aux	_	_
+7	podiam	poder	VERB	<aux>|V|IMPF|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	18	parataxis	_	_
 8	ter	ter	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	9	aux	_	_
-9	actuado	actuar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	18	parataxis	_	_
+9	actuado	actuar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	7	xcomp	_	_
 10	quando	quando	ADV	<rel>|ADV|@ADVL>	_	15	advmod	_	_
 11	ainda	ainda	ADV	ADV|@ADVL>	_	15	advmod	_	_
 12	estávamos	estar	AUX	<mv>|V|IMPF|1P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	15	cop	_	ChangedBy=Issue167
@@ -70,8 +70,8 @@
 19	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
 # text = «A polícia não quer que eu preste declarações.
-# source = CETEMPúblico n=660 sec=soc sem=96b
 # sent_id = CP660-3
+# source = CETEMPúblico n=660 sec=soc sem=96b
 # id = 3432
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -85,8 +85,8 @@
 10	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Não lhes interessa saber mais dados.
-# source = CETEMPúblico n=660 sec=soc sem=96b
 # sent_id = CP660-4
+# source = CETEMPúblico n=660 sec=soc sem=96b
 # id = 3433
 1	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
 2	lhes	eles	PRON	PERS|M|3P|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	3	iobj	_	_
@@ -97,8 +97,8 @@
 7	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Vê-se que este trabalho foi preparado pela polícia, que terá facilitado a entrega da droga para nos deter», rematou o arguido, sugerindo que pode perfeitamente identificar os portugueses envolvidos se as autoridades mostrarem interesse nisso.
-# source = CETEMPúblico n=660 sec=soc sem=96b
 # sent_id = CP660-5
+# source = CETEMPúblico n=660 sec=soc sem=96b
 # id = 3434
 1-2	Vê-se	_	_	_	_	_	_	_	_
 1	Vê	ver	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	ccomp	_	_
@@ -122,7 +122,7 @@
 17	de	de	ADP	<sam->|PRP|@N<ARG	_	19	case	_	_
 18	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	droga	droga	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
-20	para	para	ADP	PRP|@<ADVL	_	22	mark	_	_
+20	para	para	SCONJ	PRP|@<ADVL	_	22	mark	_	_
 21	nos	nós	PRON	<refl>|PERS|M|1P|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Plur|Person=1|PronType=Prs	22	obj	_	_
 22	deter	deter	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	14	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 23	»	»	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -133,9 +133,9 @@
 28	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 29	sugerindo	sugerir	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	25	advcl	_	_
 30	que	que	SCONJ	KS|@SUB	_	33	mark	_	_
-31	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	aux	_	_
+31	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp	_	_
 32	perfeitamente	perfeitamente	ADV	ADV|@ADVL>	_	33	advmod	_	_
-33	identificar	identificar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	29	ccomp	_	_
+33	identificar	identificar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	31	xcomp	_	_
 34	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_
 35	portugueses	português	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	33	obj	_	_
 36	envolvidos	envolver	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	35	acl	_	_

@@ -1,8 +1,7 @@
 # text = A intenção de Fleury é vender as ações para equilibrar as finanças e começar a pagar a dívida do Estado, estimada em R$ 31 bilhões.
-# source = CETENFolha n=964 cad=Brasil sec=pol sem=94a
 # sent_id = CF964-1
+# source = CETENFolha n=964 cad=Brasil sec=pol sem=94a
 # id = 4082
-# d2d = cc(vender,e) -> cc(pagar,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	intenção	intenção	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -11,14 +10,14 @@
 6	vender	vender	VERB	<first-cjt>|<mv>|V|INF|@ICL-<SC	VerbForm=Inf	0	root	_	_
 7	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
 8	ações	ação	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	6	obj	_	_
-9	para	para	ADP	PRP|@<ADVL	_	10	mark	_	_
+9	para	para	SCONJ	PRP|@<ADVL	_	10	mark	_	_
 10	equilibrar	equilibrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	advcl	_	_
 11	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
 12	finanças	finança	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	_
 13	e	e	CCONJ	<co-icl>|<co-inf>|KC|@CO	_	16	cc	_	d2d:#106
-14	começar	começar	AUX	<cjt>|<aux>|V|INF|@ICL-<SC	VerbForm=Inf	16	aux	_	_
-15	a	a	ADP	PRP|@PRT-AUX<	_	16	case	_	_
-16	pagar	pagar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	conj	_	_
+14	começar	começar	VERB	<cjt>|<aux>|V|INF|@ICL-<SC	VerbForm=Inf	6	conj	_	MWE=começar_a|MWEPOS=AUX
+15	a	a	SCONJ	PRP|@PRT-AUX<	_	16	mark	_	_
+16	pagar	pagar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
 17	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
 18	dívida	dívida	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	16	obj	_	_
 19-20	do	_	_	_	_	_	_	_	_
@@ -34,14 +33,14 @@
 28	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Preço
-# source = CETENFolha n=964 cad=Brasil sec=pol sem=94a
 # sent_id = CF964-2
+# source = CETENFolha n=964 cad=Brasil sec=pol sem=94a
 # id = 4083
 1	Preço	preço	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 
 # text = Segundo a assessoria de imprensa do governador, Fleury já pediu um levantamento de preço das ações, junto a consultores especializados, para estabelecer o valor mínimo das ações, que vão ser levadas a leilão.
-# source = CETENFolha n=964 cad=Brasil sec=pol sem=94a
 # sent_id = CF964-3
+# source = CETENFolha n=964 cad=Brasil sec=pol sem=94a
 # id = 4084
 1	Segundo	segundo	ADP	PRP|@ADVL>	_	3	case	_	_
 2	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -70,7 +69,7 @@
 23	consultores	consultor	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	21	obl	_	_
 24	especializados	especializar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	23	acl	_	ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-26	para	para	ADP	PRP|@<ADVL	_	27	mark	_	_
+26	para	para	SCONJ	PRP|@<ADVL	_	27	mark	_	_
 27	estabelecer	estabelecer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	advcl	_	_
 28	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	valor	valor	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	27	obj	_	_

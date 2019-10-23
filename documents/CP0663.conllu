@@ -1,6 +1,6 @@
 # text = GRUPO LIBANÊS REIVINDICA RAPTO DE NORTE-AMERICANOS --
-# source = CETEMPúblico n=663 sec=pol sem=95a
 # sent_id = CP663-2
+# source = CETEMPúblico n=663 sec=pol sem=95a
 # id = 3445
 1	GRUPO	grupo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 2	LIBANÊS	libanês	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
@@ -11,12 +11,9 @@
 7	--	--	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Um grupo autodenominado «Combatentes pela Liberdade do Líbano» reivindicou ontem o rapto de um oficial da Força Aérea norte-americana e do seu filho, que desapareceram na Turquia, e ameaçou executá-los caso não seja libertado um dirigente do Hezbollah, revelou ontem em Ancara a agência Anatolia.
-# source = CETEMPúblico n=663 sec=pol sem=95a
 # sent_id = CP663-3
+# source = CETEMPúblico n=663 sec=pol sem=95a
 # id = 3446
-# d2d = punct(reivindicou,,) -> punct(ameaçou,,)  #106
-# d2d = cc(reivindicou,e) -> cc(ameaçou,e)  #106
-# d2d = cc(oficial,e) -> cc(filho,e)  #106
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	grupo	grupo	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	13	nsubj	_	_
 3	autodenominado	autodenominar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
@@ -51,8 +48,8 @@
 28	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	29	det	_	_
 29	filho	filho	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	19	conj	_	ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
-31	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	32	nsubj	_	_
-32	desapareceram	desaparecer	VERB	<first-cjt>|<mv>|V|PS|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	29	acl:relcl	_	_
+31	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	32	nsubj	_	_
+32	desapareceram	desaparecer	VERB	<first-cjt>|<mv>|V|PS|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	19	acl:relcl	_	_
 33-34	na	_	_	_	_	_	_	_	_
 33	em	em	ADP	<sam->|PRP|@<ADVL	_	35	case	_	_
 34	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
@@ -84,12 +81,9 @@
 58	.	.	PUNCT	PU|@PU	_	51	punct	_	_
 
 # text = A agência referiu que um indivíduo não identificado e que se exprimia mal em turco telefonou de um país estrangeiro para afirmar que o grupo tinha em seu poder o tenente-coronel Mike Couillard, 37 anos, e o seu filho Matthew, dez anos.
-# source = CETEMPúblico n=663 sec=pol sem=95a
 # sent_id = CP663-4
+# source = CETEMPúblico n=663 sec=pol sem=95a
 # id = 3447
-# d2d = punct(tenente-coronel,,) -> punct(filho,,)  #106
-# d2d = cc(identificado,e) -> cc(exprimia,e)  #106
-# d2d = cc(tenente-coronel,e) -> cc(filho,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	agência	agência	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	referiu	referir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -110,7 +104,7 @@
 18	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	país	país	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	ChangedBy=Issue137
 20	estrangeiro	estrangeiro	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
-21	para	para	ADP	PRP|@<ADVL	_	22	mark	_	_
+21	para	para	SCONJ	PRP|@<ADVL	_	22	mark	_	_
 22	afirmar	afirmar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	16	advcl	_	_
 23	que	que	SCONJ	KS|@SUB	_	26	mark	_	_
 24	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
@@ -138,8 +132,8 @@
 46	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Os dois norte-americanos desapareceram há três dias no Ocidente da Turquia.
-# source = CETEMPúblico n=663 sec=pol sem=95a
 # sent_id = CP663-5
+# source = CETEMPúblico n=663 sec=pol sem=95a
 # id = 3448
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue168

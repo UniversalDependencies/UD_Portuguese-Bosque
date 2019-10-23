@@ -1,6 +1,6 @@
 # text = EASTWOOD DEFENDE FILMES NÃO AMERICANOS --
-# source = CETEMPúblico n=303 sec=clt sem=94a
 # sent_id = CP303-1
+# source = CETEMPúblico n=303 sec=clt sem=94a
 # id = 1606
 1	EASTWOOD	Eastwood	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	DEFENDE	defender	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -10,10 +10,9 @@
 6	--	--	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O actor e realizador norte-americano Clint Eastwood, 63 anos, presidente do júri do Festival de Cannes (ver p. 28), defendeu ontem a entrada de uma maior variedade de filmes estrangeiros no mercado dos Estados Unidos.
-# source = CETEMPúblico n=303 sec=clt sem=94a
 # sent_id = CP303-2
+# source = CETEMPúblico n=303 sec=clt sem=94a
 # id = 1607
-# d2d = cc(actor,e) -> cc(realizador,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	actor	actor	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	27	nsubj	_	_
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	d2d:#106
@@ -29,15 +28,15 @@
 13-14	do	_	_	_	_	_	_	_	_
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
-15	júri	júri	NOUN	N|@P<	_	12	nmod	_	_
+15	júri	júri	NOUN	N|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 16-17	do	_	_	_	_	_	_	_	_
 16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
 17	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	Festival	festival	NOUN	N|@P<	_	15	nmod	_	_
+18	Festival	festival	NOUN	N|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
-20	Cannes	cannes	NOUN	N|@P<	_	18	nmod	_	_
+20	Cannes	cannes	NOUN	N|@P<	Gender=Unsp|Number=Sing	18	nmod	_	_
 21	(	(	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
-22	ver	ver	VERB	<first-cjt>|<mv>|V|INF|@ICL-UTT	VerbForm=Inf	12	dep	_	_
+22	ver	ver	VERB	<first-cjt>|<mv>|V|INF|@ICL-UTT	VerbForm=Inf	12	parataxis	_	_
 23	p.	p.	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	22	obj	_	_
 24	28	28	NUM	<card>|NUM|F|S|@N<	NumType=Card	23	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 25	)	)	PUNCT	PU|@PU	_	22	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -65,11 +64,9 @@
 45	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 
 # text = Em conferência de imprensa dada conjuntamente com a vice-presidente do júri, a actriz francesa Catherine Deneuve, 50 anos, Eastwood confessou que, em vez de «sanções de proteccionismo», preferiria que «uma maior variedade de filmes franceses, asiáticos, russos» entrasse nos Estados Unidos.
-# source = CETEMPúblico n=303 sec=clt sem=94a
 # sent_id = CP303-3
+# source = CETEMPúblico n=303 sec=clt sem=94a
 # id = 1608
-# d2d = punct(franceses,,) -> punct(russos,,)  #106
-# d2d = punct(franceses,,) -> punct(asiáticos,,)  #106
 1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	conferência	conferência	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	24	obl	_	ChangedBy=Issue137
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
@@ -97,11 +94,11 @@
 24	confessou	confessar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 25	que	que	SCONJ	KS|@SUB	_	36	mark	_	ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	28	punct	_	_
-27	em	em	ADP	PRP|@ADVL>	_	28	case	_	MWE=em_vez_de
-28	vez	vez	NOUN	N|@P<	_	36	obl	_	_
-29	de	de	ADP	PRP|@N<	_	31	case	_	_
+27	em	em	ADP	PRP|@ADVL>	_	31	cc	_	MWE=em_vez_de|MWEPOS=CCONJ
+28	vez	vez	NOUN	N|@P<	Gender=Fem|Number=Sing	27	fixed	_	_
+29	de	de	ADP	PRP|@N<	_	27	fixed	_	_
 30	«	«	PUNCT	PU|@PU	_	31	punct	_	ChangedBy=Issue165|SpaceAfter=No
-31	sanções	sanção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	28	nmod	_	_
+31	sanções	sanção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	36	obl	_	_
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
 33	proteccionismo	proteccionismo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 34	»	»	PUNCT	PU|@PU	_	31	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -124,17 +121,17 @@
 51-52	nos	_	_	_	_	_	_	_	_
 51	em	em	ADP	<sam->|PRP|@<SA	_	53	case	_	_
 52	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	53	det	_	_
-53	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	50	obl	_	MWE=Estados_Unidos
+53	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	50	obl	_	MWE=Estados_Unidos|MWEPOS=NOUN
 54	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	53	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 55	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
 # text = «Para alargar o horizonte do púbico norte-americano», explicou.
-# source = CETEMPúblico n=303 sec=clt sem=94a &W
 # sent_id = CP303-4
+# source = CETEMPúblico n=303 sec=clt sem=94a &W
 # id = 1609
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Para	para	ADP	PRP|@ACC>	_	3	mark	_	_
-3	alargar	alargar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	dep	_	_
+2	Para	para	SCONJ	PRP|@ACC>	_	3	mark	_	_
+3	alargar	alargar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	parataxis	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	horizonte	horizonte	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 6-7	do	_	_	_	_	_	_	_	_
@@ -148,19 +145,15 @@
 13	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O actor disse estar a produzir «The Stars Fell on Henrietta», um filme realizado por James Keach, com Robert Duvall, e projecta rodar «Golf in the Kingdom», que tem por tema o golfe, um desporto de que se confessa adepto.
-# source = CETEMPúblico n=303 sec=clt sem=94a
 # sent_id = CP303-5
+# source = CETEMPúblico n=303 sec=clt sem=94a
 # id = 1610
-# d2d = punct(disse,,) -> punct(projecta,,)  #106
-# d2d = cc(disse,e) -> cc(projecta,e)  #106
-# d2d = punct(disse,,) -> punct(projecta,,)  #106
-# d2d = punct(disse,,) -> punct(projecta,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	actor	actor	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	disse	dizer	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-4	estar	estar	AUX	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	6	aux	_	_
-5	a	a	ADP	PRP|@PRT-AUX<	_	6	case	_	_
-6	produzir	produzir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
+4	estar	estar	VERB	<aux>|V|INF|@ICL-<ACC	VerbForm=Inf	3	xcomp	_	MWE=estar_a|MWEPOS=AUX
+5	a	a	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
+6	produzir	produzir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	xcomp	_	_
 7	«	«	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
 8	The	The	PROPN	_	Gender=Masc|Number=Sing	6	obj	_	ChangedBy=Issue119|MWE=The_Stars_Fell_on_Henrietta|MWEPOS=PROPN
 9	Stars	Stars	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
@@ -168,14 +161,14 @@
 11	on	on	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119
 12	Henrietta	Henrietta	PROPN	_	Number=Sing	8	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 13	»	»	PUNCT	PU|@PU	_	8	punct	_	ChangedBy=Issue165|SpaceAfter=No
-14	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+14	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 15	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	filme	filme	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	8	appos	_	_
 17	realizado	realizar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	16	acl	_	_
 18	por	por	ADP	PRP|@PASS	_	19	case	_	_
 19	James	James	PROPN	_	Gender=Masc|Number=Sing	17	obl:agent	_	ChangedBy=Issue119|MWE=James_Keach|MWEPOS=PROPN
 20	Keach	Keach	PROPN	_	Number=Sing	19	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-21	,	,	PUNCT	PU|@PU	_	27	punct	_	d2d:#106
+21	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 22	com	com	ADP	PRP|@N<PRED	_	23	case	_	_
 23	Robert	Robert	PROPN	_	Gender=Masc|Number=Sing	16	nmod	_	ChangedBy=Issue119|MWE=Robert_Duvall|MWEPOS=PROPN
 24	Duvall	Duvall	PROPN	_	Number=Sing	23	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
@@ -207,13 +200,13 @@
 50	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Como actor deverá desempenhar o papel de um fotógrafo em «The Bridge of Madison County», uma película a realizar pelo australiano Bruce Beresford com base no «best seller» homónimo de Robert James Weller.
-# source = CETEMPúblico n=303 sec=clt sem=94a
 # sent_id = CP303-6
+# source = CETEMPúblico n=303 sec=clt sem=94a
 # id = 1611
 1	Como	como	ADP	PRP|@ADVL>	_	2	case	_	_
 2	actor	actor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obl	_	ChangedBy=Issue137
-3	deverá	dever	AUX	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
-4	desempenhar	desempenhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+3	deverá	dever	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+4	desempenhar	desempenhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 5	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	papel	papel	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	obj	_	_
 7	de	de	ADP	PRP|@N<	_	9	case	_	_
@@ -230,7 +223,7 @@
 18	,	,	PUNCT	PU|@PU	_	22	punct	_	_
 19	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	película	película	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	12	appos	_	_
-21	a	a	ADP	PRP|@N<	_	22	mark	_	_
+21	a	a	SCONJ	PRP|@N<	_	22	mark	_	_
 22	realizar	realizar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf|Voice=Pass	20	acl	_	_
 23-24	pelo	_	_	_	_	_	_	_	_
 23	por	por	ADP	<sam->|PRP|@PASS	_	25	case	_	_

@@ -1,6 +1,6 @@
 # text = Ainda no «foyer», pôde-se desde logo perceber que no Serviço de Música da Fundação Calouste Gulbenkian se está em momento de reflexão, já que foi distribuído ao público um questionário onde, entre outros pontos, se pede uma opinião sobre a periodicidade de apresentação da música contemporânea.
-# source = CETEMPúblico n=756 sec=clt sem=95a
 # sent_id = CP756-1
+# source = CETEMPúblico n=756 sec=clt sem=95a
 # id = 3888
 1	Ainda	ainda	ADV	ADV|@>P	_	5	advmod	_	_
 2-3	no	_	_	_	_	_	_	_	_
@@ -11,11 +11,11 @@
 6	»	»	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 8-9	pôde-se	_	_	_	_	_	_	_	_
-8	pôde	poder	AUX	<aux>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux	_	_
+8	pôde	poder	VERB	<aux>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	12	nsubj	_	_
 10	desde	desde	ADP	PRP|@ADVL>	_	11	case	_	MWE=desde_logo
 11	logo	logo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	_
-12	perceber	perceber	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+12	perceber	perceber	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
 13	que	que	SCONJ	KS|@SUB	_	27	mark	_	_
 14-15	no	_	_	_	_	_	_	_	_
 14	em	em	ADP	<sam->|PRP|@ADVL>	_	16	case	_	_
@@ -36,7 +36,7 @@
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
 29	reflexão	reflexão	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	27	punct	_	_
-31	já	já	ADV	ADV|@SUB	_	34	mark	_	MWE=já_que
+31	já	já	ADV	ADV|@SUB	_	34	mark	_	MWE=já_que|MWEPOS=SCONJ
 32	que	que	SCONJ	KS|@A<	_	31	fixed	_	_
 33	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	34	aux:pass	_	_
 34	distribuído	distribuir	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	12	advcl	_	_
@@ -46,7 +46,7 @@
 37	público	público	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	34	obj	_	_
 38	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
 39	questionário	questionário	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	34	nsubj:pass	_	_
-40	onde	onde	ADV	<rel>|ADV|@ADVL>	_	47	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+40	onde	onde	PRON	<rel>|ADV|@ADVL>	Gender=Masc|Number=Sing|PronType=Rel	47	obl	_	ChangedBy=Issue165|SpaceAfter=No
 41	,	,	PUNCT	PU|@PU	_	40	punct	_	_
 42	entre	entre	ADP	PRP|@N<	_	44	case	_	_
 43	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	44	det	_	_
@@ -69,8 +69,8 @@
 59	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Precisamente no concerto dessa noite se propunha um percurso pela música mais recente intersectado de forma exemplar por sonoridades do passado.
-# source = CETEMPúblico n=756 sec=clt sem=95a
 # sent_id = CP756-2
+# source = CETEMPúblico n=756 sec=clt sem=95a
 # id = 3889
 1	Precisamente	precisamente	ADV	ADV|@>P	_	4	advmod	_	_
 2-3	no	_	_	_	_	_	_	_	_
@@ -104,13 +104,10 @@
 26	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = A enquadrar as obras de «Wolfgang Rihm La lugubre Gondola / Das Eismeer» e de Luigi Nono «No hay caminos, hay que caminar .. Andrei Tarkovsky», tivemos a música de Giovanni Gabrieli (Canzone a tre cori e In Ecclesiis) em orquestrações da autoria de Bruno Maderna.
-# source = CETEMPúblico n=756 sec=clt sem=95a
 # sent_id = CP756-3
+# source = CETEMPúblico n=756 sec=clt sem=95a
 # id = 3890
-# d2d = cc(Canzone,e) -> cc(In,e)  #106
-# d2d = punct(Wolfgang,») -> punct(Luigi,»)  #106
-# d2d = cc(Wolfgang,e) -> cc(Luigi,e)  #106
-1	A	a	ADP	PRP|@ADVL>	_	2	mark	_	_
+1	A	a	SCONJ	PRP|@ADVL>	_	2	mark	_	_
 2	enquadrar	enquadrar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	33	advcl	_	_
 3	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
 4	obras	obra	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
@@ -130,7 +127,7 @@
 18	Luigi	Luigi	PROPN	_	Gender=Masc|Number=Sing	7	conj	_	ChangedBy=Issue119|MWE=Luigi_Nono|MWEPOS=PROPN
 19	Nono	Nono	PROPN	_	Number=Sing	18	flat:name	_	ChangedBy=Issue119
 20	«	«	PUNCT	PU|@PU	_	21	punct	_	ChangedBy=Issue165|SpaceAfter=No
-21	No	No	PROPN	_	Gender=Fem|Number=Sing	18	nmod	_	ChangedBy=Issue119|MWE=No_hay_caminos|MWEPOS=PROPN
+21	No	No	PROPN	_	Gender=Fem|Number=Sing	18	parataxis	_	ChangedBy=Issue119|MWE=No_hay_caminos|MWEPOS=PROPN
 22	hay	hay	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119
 23	caminos	caminos	PROPN	_	Number=Sing	21	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	21	punct	_	_
@@ -169,11 +166,9 @@
 56	.	.	PUNCT	PU|@PU	_	33	punct	_	_
 
 # text = A relação entre Luigi Nono e Giovanni Gabrieli ultrapassa a simples passagem e vivência na cidade de Veneza, situando-se principalmente ao nível da exploração das potencialidades musicais inerentes à espacialização sonora.
-# source = CETEMPúblico n=756 sec=clt sem=95a
 # sent_id = CP756-4
+# source = CETEMPúblico n=756 sec=clt sem=95a
 # id = 3891
-# d2d = cc(passagem,e) -> cc(vivência,e)  #106
-# d2d = cc(Luigi,e) -> cc(Giovanni,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	relação	relação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj	_	_
 3	entre	entre	ADP	PRP|@N<ARG	_	4	case	_	_
@@ -221,15 +216,15 @@
 39	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Apesar de não se ter procedido a qualquer distribuição de músicos no espaço do Grande Auditório Gulbenkian, à imagem do que se fazia com as obras do músico renascentista na Catedral de São Marcos, a orquestração de Maderna reflecte um total respeito pelas estruturas de diálogo entre «coros» com uma constituição tímbrica diferenciada.
-# source = CETEMPúblico n=756 sec=clt sem=95a
 # sent_id = CP756-5
+# source = CETEMPúblico n=756 sec=clt sem=95a
 # id = 3892
-1	Apesar	apesar	ADV	ADV|@ADVL>	_	47	advmod	_	MWE=Apesar_de
-2	de	de	ADP	PRP|@A<	_	6	mark	_	_
+1	Apesar	apesar	ADV	ADV|@ADVL>	_	6	mark	_	MWE=Apesar_de|MWEPOS=SCONJ
+2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	não	não	ADV	_	Polarity=Neg	6	advmod	_	_
 4	se	se	PRON	PERS|M/F|3S/P|ACC|@SUBJ>	Case=Acc|Gender=Unsp|PronType=Prs	6	nsubj	_	_
 5	ter	ter	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	6	aux	_	_
-6	procedido	proceder	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	1	advcl	_	_
+6	procedido	proceder	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	47	advcl	_	_
 7	a	a	ADP	PRP|@<ADVL	_	9	case	_	_
 8	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	9	det	_	_
 9	distribuição	distribuição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue137

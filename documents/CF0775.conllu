@@ -1,6 +1,6 @@
 # text = Técnico não é enfermeiro
-# source = CETENFolha n=775 cad=Empregos sec=eco sem=94b
 # sent_id = CF775-1
+# source = CETENFolha n=775 cad=Empregos sec=eco sem=94b
 # id = 3253
 1	Técnico	técnico	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	não	não	ADV	ADV|@ADVL>	Polarity=Neg	4	advmod	_	ChangedBy=Issue108
@@ -8,8 +8,8 @@
 4	enfermeiro	enfermeiro	NOUN	<np-idf>|N|M|S|@<sC	Gender=Masc|Number=Sing	0	root	_	_
 
 # text = Enfermeiro é uma designação válida apenas para quem concluiu o curso superior de enfermagem.
-# source = CETENFolha n=775 cad=Empregos sec=eco sem=94b
 # sent_id = CF775-3
+# source = CETENFolha n=775 cad=Empregos sec=eco sem=94b
 # id = 3254
 1	Enfermeiro	enfermeiro	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	nsubj	_	_
 2	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
@@ -17,8 +17,8 @@
 4	designação	designação	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	_
 5	válida	válido	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	_
 6	apenas	apenas	ADV	ADV|@>A	_	9	advmod	_	_
-7	para	para	ADP	PRP|@A<ARG	_	9	mark	_	_
-8	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Unsp|Number=Sing|PronType=Rel	9	nsubj	_	_
+7	para	para	SCONJ	PRP|@A<ARG	_	9	mark	_	_
+8	quem	quem	PRON	<rel>|INDP|M/F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	9	nsubj	_	_
 9	concluiu	concluir	VERB	<mv>|V|PS|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	advcl	_	_
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	curso	curso	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	9	obj	_	_
@@ -28,11 +28,9 @@
 15	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Os outros profissionais da área são técnicos, auxiliares e atendentes.
-# source = CETENFolha n=775 cad=Empregos sec=eco sem=94b
 # sent_id = CF775-4
+# source = CETENFolha n=775 cad=Empregos sec=eco sem=94b
 # id = 3255
-# d2d = cc(técnicos,e) -> cc(atendentes,e)  #106
-# d2d = punct(técnicos,,) -> punct(auxiliares,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	outros	outro	DET	<diff>|<KOMP>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
 3	profissionais	profissional	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
@@ -49,10 +47,9 @@
 13	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O técnico tem o segundo grau completo pode optar entre o curso técnico de enfermagem ou curso de formação de técnico.
-# source = CETENFolha n=775 cad=Empregos sec=eco sem=94b
 # sent_id = CF775-5
+# source = CETENFolha n=775 cad=Empregos sec=eco sem=94b
 # id = 3256
-# d2d = cc(curso,ou) -> cc(curso,ou)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	técnico	técnico	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	tem	ter	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -60,8 +57,8 @@
 5	segundo	segundo	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	6	amod	_	ChangedBy=Issue172
 6	grau	grau	NOUN	<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 7	completo	completo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	6	amod	_	_
-8	pode	poder	AUX	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
-9	optar	optar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	parataxis	_	_
+8	pode	poder	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+9	optar	optar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
 10	entre	entre	ADP	PRP|@<ADVL	_	12	case	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	curso	curso	NOUN	<first-cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	9	obl	_	ChangedBy=Issue137

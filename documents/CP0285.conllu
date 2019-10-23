@@ -1,6 +1,6 @@
 # text = Líder do PS promete duplicar investimento em ciência no final da década
-# source = CETEMPúblico n=285 sec=clt-soc sem=95b
 # sent_id = CP285-1
+# source = CETEMPúblico n=285 sec=clt-soc sem=95b
 # id = 1528
 1	Líder	líder	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
@@ -22,15 +22,15 @@
 15	década	década	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 
 # text = Guterres científico
-# source = CETEMPúblico n=285 sec=clt-soc sem=95b
 # sent_id = CP285-2
+# source = CETEMPúblico n=285 sec=clt-soc sem=95b
 # id = 1529
 1	Guterres	Guterres	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 2	científico	científico	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	1	amod	_	_
 
 # text = António Guterres foi o primeiro convidado de uma série de debates com líderes políticos que o Inesc está a promover.
-# source = CETEMPúblico n=285 sec=clt-soc sem=95b
 # sent_id = CP285-4
+# source = CETEMPúblico n=285 sec=clt-soc sem=95b
 # id = 1530
 1	António	António	PROPN	_	Gender=Masc|Number=Sing	6	nsubj	_	ChangedBy=Issue119|MWE=António_Guterres|MWEPOS=PROPN
 2	Guterres	Guterres	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -49,30 +49,24 @@
 15	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	20	obj	_	_
 16	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	Inesc	Inesc	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
-18	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
-19	a	a	ADP	PRP|@PRT-AUX<	_	20	case	_	_
-20	promover	promover	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+18	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	_	MWE=está_a|MWEPOS=AUX
+19	a	a	SCONJ	PRP|@PRT-AUX<	_	20	mark	_	_
+20	promover	promover	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	18	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Ao falar no Porto, mas ligado a outros pontos do país graças às inovações tecnológicas, o dirigente socialista defendeu ontem as suas ideias na matéria: ideias orientadas para «uma ciência e uma investigação com qualidade e relevância para os problemas do país» e contra a «aliança entre a mediocridade e a inveja».
-# source = CETEMPúblico n=285 sec=clt-soc sem=95b
 # sent_id = CP285-5
+# source = CETEMPúblico n=285 sec=clt-soc sem=95b
 # id = 1531
-# d2d = cc(mediocridade,e) -> cc(inveja,e)  #106
-# d2d = cc(orientadas,e) -> cc(aliança,e)  #106
-# d2d = cc(falar,mas) -> cc(ligado,mas)  #106
-# d2d = cc(qualidade,e) -> cc(relevância,e)  #106
-# d2d = punct(falar,,) -> punct(ligado,,)  #106
-# d2d = cc(ciência,e) -> cc(investigação,e)  #106
 1-2	Ao	_	_	_	_	_	_	_	_
-1	A	a	ADP	<sam->|<first-cjt>|PRP|@PRED>	_	3	mark	_	_
+1	A	a	SCONJ	<sam->|<first-cjt>|PRP|@PRED>	_	3	mark	_	_
 2	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
-3	falar	falar	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	25	dep	_	_
+3	falar	falar	VERB	<mv>|<first-cjt>|V|INF|@ICL-P<	VerbForm=Inf	25	advcl	_	_
 4-5	no	_	_	_	_	_	_	_	_
 4	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
 5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Porto	Porto	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-7	,	,	PUNCT	PU|@PU	_	9	punct	_	d2d:#106
+7	,	,	PUNCT	PU|@PU	_	3	punct	_	d2d:#106
 8	mas	mas	CCONJ	<co-pred>|KC|@CO	_	9	cc	_	d2d:#106
 9	ligado	ligar	VERB	<mv>|<cjt>|V|PCP|M|S|@PRED>	Gender=Masc|Number=Sing|VerbForm=Part	3	conj	_	_
 10	a	a	ADP	PRP|@<PIV	_	12	case	_	_

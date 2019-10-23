@@ -1,6 +1,6 @@
 # text = Música irlandesa em Évora: os Wingers tocam na Feira de São João, naquela cidade.
-# source = CETEMPúblico n=178 sec=soc sem=98a &D
 # sent_id = CP178-1
+# source = CETEMPúblico n=178 sec=soc sem=98a &D
 # id = 947
 1	Música	música	NOUN	<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	0	root	_	_
 2	irlandesa	irlandês	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	1	amod	_	_
@@ -25,18 +25,18 @@
 19	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Às 21h.
-# source = CETEMPúblico n=178 sec=soc sem=98a
 # sent_id = CP178-2
+# source = CETEMPúblico n=178 sec=soc sem=98a
 # id = 948
 1-2	Às	_	_	_	_	_	_	_	_
 1	A	a	ADP	<sam->|PRP|@UTT	_	3	case	_	_
 2	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	3	det	_	_
-3	21h	21h	NOUN	<np-def>|N|@P<	_	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+3	21h	21h	NOUN	<np-def>|N|@P<	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 4	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = No âmbito do Ciclo Jovens Compositores, organizado pelo Acarte da Fundação Gulbenkian, pode escutar-se a obra «...Há Dois Ou...», de António de Sousa Dias.
-# source = CETEMPúblico n=178 sec=soc sem=98a
 # sent_id = CP178-3
+# source = CETEMPúblico n=178 sec=soc sem=98a
 # id = 949
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -60,9 +60,9 @@
 16	Fundação	Fundação	PROPN	_	Gender=Fem|Number=Sing	13	nmod	_	ChangedBy=Issue119|MWE=Fundação_Gulbenkian|MWEPOS=PROPN
 17	Gulbenkian	Gulbenkian	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	10	punct	_	_
-19	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux	_	_
+19	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 20-21	escutar-se	_	_	_	_	_	_	_	_
-20	escutar	escutar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+20	escutar	escutar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	19	xcomp	_	_
 21	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|Gender=Unsp|PronType=Prs	20	nsubj	_	_
 22	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	obra	obra	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	20	obj	_	_
@@ -80,39 +80,34 @@
 35	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Os intérpretes são João Natividade (movimento), Luís Madureira (voz), Olga Pratts (piano), Pedro Wallenstein (contrabaixo), António de Sousa Dias (percussão) e Clemente Cuba (desenho de luzes).
-# source = CETEMPúblico n=178 sec=soc sem=98a &L
 # sent_id = CP178-4
+# source = CETEMPúblico n=178 sec=soc sem=98a &L
 # id = 950
-# d2d = cc(João,e) -> cc(Clemente,e)  #106
-# d2d = punct(João,,) -> punct(António,,)  #106
-# d2d = punct(João,,) -> punct(Olga,,)  #106
-# d2d = punct(João,,) -> punct(Pedro,,)  #106
-# d2d = punct(João,,) -> punct(Luís,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	intérpretes	intérprete	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	ChangedBy=Issue167
 4	João	João	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=João_Natividade|MWEPOS=PROPN
 5	Natividade	Natividade	PROPN	_	Number=Sing	4	flat:name	_	ChangedBy=Issue119
 6	(	(	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
-7	movimento	movimento	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+7	movimento	movimento	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	4	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 8	)	)	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	10	punct	_	d2d:#106
 10	Luís	Luís	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Luís_Madureira|MWEPOS=PROPN
 11	Madureira	Madureira	PROPN	_	Number=Sing	10	flat:name	_	ChangedBy=Issue119
 12	(	(	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
-13	voz	voz	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+13	voz	voz	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	10	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 14	)	)	PUNCT	PU|@PU	_	13	punct	_	ChangedBy=Issue165|SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	16	punct	_	d2d:#106
 16	Olga	Olga	PROPN	_	Gender=Fem|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Olga_Pratts|MWEPOS=PROPN
 17	Pratts	Pratts	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119
 18	(	(	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
-19	piano	piano	NOUN	<np-idf>|N|@N<PRED	_	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+19	piano	piano	NOUN	<np-idf>|N|@N<PRED	Gender=Masc|Number=Sing	16	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 20	)	)	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 22	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Pedro_Wallenstein|MWEPOS=PROPN
 23	Wallenstein	Wallenstein	PROPN	_	Number=Sing	22	flat:name	_	ChangedBy=Issue119
 24	(	(	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
-25	contrabaixo	contrabaixo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+25	contrabaixo	contrabaixo	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	22	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 26	)	)	PUNCT	PU|@PU	_	25	punct	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	28	punct	_	d2d:#106
 28	António	António	PROPN	<cjt>|PROP|M|S|@<SC	Gender=Masc|Number=Sing	4	conj	_	MWE=António_de_Sousa_Dias
@@ -120,25 +115,25 @@
 30	Sousa	Sousa	PROPN	_	Number=Sing	28	nmod	_	ChangedBy=Issue119|MWE=Sousa_Dias|MWEPOS=PROPN
 31	Dias	Dias	PROPN	_	Number=Sing	30	flat:name	_	ChangedBy=Issue119
 32	(	(	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
-33	percussão	percussão	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	28	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+33	percussão	percussão	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	28	parataxis	_	ChangedBy=Issue165|SpaceAfter=No
 34	)	)	PUNCT	PU|@PU	_	33	punct	_	_
 35	e	e	CCONJ	<co-sc>|KC|@CO	_	36	cc	_	d2d:#106
 36	Clemente	Clemente	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	ChangedBy=Issue119|MWE=Clemente_Cuba|MWEPOS=PROPN
 37	Cuba	Cuba	PROPN	_	Number=Sing	36	flat:name	_	ChangedBy=Issue119
 38	(	(	PUNCT	PU|@PU	_	39	punct	_	ChangedBy=Issue165|SpaceAfter=No
-39	desenho	desenho	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	36	nmod	_	_
+39	desenho	desenho	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	36	parataxis	_	_
 40	de	de	ADP	PRP|@N<	_	41	case	_	_
 41	luzes	luz	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	39	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 42	)	)	PUNCT	PU|@PU	_	39	punct	_	ChangedBy=Issue165|SpaceAfter=No
 43	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
 # text = Às 21h30.
-# source = CETEMPúblico n=178 sec=soc sem=98a
 # sent_id = CP178-5
+# source = CETEMPúblico n=178 sec=soc sem=98a
 # id = 951
 1-2	Às	_	_	_	_	_	_	_	_
 1	A	a	ADP	<sam->|PRP|@UTT	_	3	case	_	_
 2	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	3	det	_	_
-3	21h30	21h30	NOUN	<np-def>|N|@P<	_	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+3	21h30	21h30	NOUN	<np-def>|N|@P<	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 4	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 

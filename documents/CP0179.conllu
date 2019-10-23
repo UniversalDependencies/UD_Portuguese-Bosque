@@ -1,8 +1,7 @@
 # text = A atleta e o seu técnico, João Campos, elegeram a corrida de 10.000m como um meio de ela se sagrar campeã olímpica.
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-1
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 952
-# d2d = cc(atleta,e) -> cc(técnico,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	atleta	atleta	NOUN	<first-cjt>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	6	cc	_	d2d:#106
@@ -21,7 +20,7 @@
 16	como	como	ADP	<prd>|PRP|@<OC	_	18	case	_	_
 17	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	meio	meio	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	xcomp	_	_
-19	de	de	ADP	PRP|@N<ARG	_	22	mark	_	_
+19	de	de	SCONJ	PRP|@N<ARG	_	22	mark	_	_
 20	ela	ela	PRON	PERS|F|3S|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
 21	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	22	expl	_	ChangedBy=Issue135
 22	sagrar	sagrar	VERB	<mv>|<se-passive>|V|FUT|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	18	acl	_	_
@@ -30,15 +29,15 @@
 25	.	.	PUNCT	PU|@PU	_	11	punct	_	ChangedBy=Issue165|SpaceAfter=No
 
 # text = «Apesar de ser a recordista mundial dos 5000m, é nos 10.000m que a Fernanda se exprime melhor», considera Campos.
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-2
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 953
 1	«	«	PUNCT	PU|@PU	_	21	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Apesar	apesar	ADV	ADV|@ADVL>	_	21	advmod	_	MWE=Apesar_de
-3	de	de	ADP	PRP|@A<	_	6	mark	_	_
+2	Apesar	apesar	ADV	ADV|@ADVL>	_	6	mark	_	MWE=Apesar_de|MWEPOS=SCONJ
+3	de	de	ADP	PRP|@A<	_	2	fixed	_	_
 4	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	cop	_	ChangedBy=Issue167
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	recordista	recordista	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	2	obl	_	_
+6	recordista	recordista	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	21	obl	_	_
 7	mundial	mundial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	6	amod	_	_
 8-9	dos	_	_	_	_	_	_	_	_
 8	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
@@ -46,12 +45,12 @@
 10	5000	5000	NUM	<card>|NUM|M|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168|SpaceAfter=No
 11	m	m	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-13	é	é	ADV	<foc>|ADV|@ADVL>	_	21	mark	_	_
+13	é	é	SCONJ	<foc>|ADV|@ADVL>	_	21	mark	_	_
 14-15	nos	_	_	_	_	_	_	_	_
 14	em	em	ADP	<sam->|PRP|@ADVL>	_	16	case	_	_
 15	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	10.000m	10.000m	NUM	<card>|<np-def>|NUM|M|P|@P<	NumType=Card	21	obl	_	ChangedBy=Issue168
-17	que	que	ADV	<foc>|ADV|@ADVL>	_	21	mark	_	_
+17	que	que	SCONJ	<foc>|ADV|@ADVL>	_	21	mark	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	Fernanda	Fernanda	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	21	nsubj	_	_
 20	se	se	PRON	PERS|F|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	21	expl	_	ChangedBy=Issue135
@@ -64,12 +63,12 @@
 27	.	.	PUNCT	PU|@PU	_	25	punct	_	_
 
 # text = «Dado que os horários das duas provas, légua e dez mil, são incompatíveis, decidimos a concentração apenas no maior.»
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-3
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 954
 1	«	«	PUNCT	PU|@PU	_	19	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Dado	dar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	mark	_	MWEPOS=PROPN
-3	que	que	CCONJ	_	_	2	fixed	_	ChangedBy=Issue119
+2	Dado	dar	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	17	mark	_	MWE=Dado_que|MWEPOS=SCONJ
+3	que	que	SCONJ	_	_	2	fixed	_	ChangedBy=Issue119
 4	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
 5	horários	horário	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	17	nsubj	_	_
 6-7	das	_	_	_	_	_	_	_	_
@@ -98,10 +97,9 @@
 27	»	»	PUNCT	PU|@PU	_	19	punct	_	_
 
 # text = Fernanda Ribeiro não se aterroriza sequer com as condições climatéricas que, decerto, irá encontrar -- muito calor e humidade.
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-4
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 955
-# d2d = cc(calor,e) -> cc(humidade,e)  #106
 1	Fernanda	Fernanda	PROPN	_	Gender=Fem|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Fernanda_Ribeiro|MWEPOS=PROPN
 2	Ribeiro	Ribeiro	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
 3	não	não	ADV	_	Polarity=Neg	5	advmod	_	_
@@ -126,10 +124,9 @@
 22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = «O clima é igual para todos e não me preocupa muito.
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-5
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 956
-# d2d = cc(igual,e) -> cc(preocupa,e)  #106
 1	«	«	PUNCT	PU|@PU	_	5	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	clima	clima	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -145,25 +142,21 @@
 13	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Iremos com antecedência para nos adaptarmos.
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-6
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 957
 1	Iremos	ir	VERB	<mv>|V|FUT|1P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
 2	com	com	ADP	PRP|@<ADVL	_	3	case	_	MWE=com_antecedência
 3	antecedência	antecedência	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	1	obl	_	_
-4	para	para	ADP	PRP|@<ADVL	_	6	mark	_	_
+4	para	para	SCONJ	PRP|@<ADVL	_	6	mark	_	_
 5	nos	nós	PRON	<refl>|PERS|M/F|1P|ACC|@ACC>	Case=Acc|Gender=Unsp|Number=Plur|Person=1|PronType=Prs	6	obj	_	_
 6	adaptarmos	adaptar	VERB	<mv>|V|INF|1P|@ICL-P<	Number=Plur|Person=1|VerbForm=Inf	1	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 7	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Claro que preferia correr em condições idênticas às que encontramos em Portugal, mas, não sendo possível, paciência.»
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-7
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 958
-# d2d = punct(Claro,,) -> punct(paciência,,)  #106
-# d2d = punct(Claro,,) -> punct(paciência,,)  #106
-# d2d = punct(Claro,,) -> punct(paciência,,)  #106
-# d2d = cc(Claro,mas) -> cc(paciência,mas)  #106
 1	Claro	claro	ADV	<first-cjt>|ADV|@ADVL	_	0	root	_	_
 2	que	que	SCONJ	KS|@SUB	_	3	mark	_	_
 3	preferia	preferir	VERB	<mv>|V|IMPF|1S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	1	csubj	_	_
@@ -174,28 +167,28 @@
 8-9	às	_	_	_	_	_	_	_	_
 8	a	a	ADP	<sam->|PRP|@A<	_	9	case	_	_
 9	as	o	PRON	<-sam>|DET|F|P|@P<	Gender=Fem|Number=Plur|PronType=Dem	7	obl	_	_
-10	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	11	obj	_	_
+10	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Fem|Number=Plur|PronType=Rel	11	obj	_	_
 11	encontramos	encontrar	VERB	<mv>|V|PR|1P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_
 12	em	em	ADP	PRP|@<ADVL	_	13	case	_	_
 13	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
-14	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+14	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 15	mas	mas	CCONJ	<co-acl>|KC|@CO	_	21	cc	_	ChangedBy=Issue165|SpaceAfter=No|d2d:#106
-16	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+16	,	,	PUNCT	PU|@PU	_	15	punct	_	d2d:#106
 17	não	não	ADV	_	Polarity=Neg	19	advmod	_	_
 18	sendo	ser	AUX	<mv>|V|GER|@ADVL>	VerbForm=Ger	19	cop	_	ChangedBy=Issue167
-19	possível	possível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	21	dep	_	ChangedBy=Issue165|SpaceAfter=No
-20	,	,	PUNCT	PU|@PU	_	21	punct	_	d2d:#106
+19	possível	possível	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	21	advcl	_	ChangedBy=Issue165|SpaceAfter=No
+20	,	,	PUNCT	PU|@PU	_	19	punct	_	d2d:#106
 21	paciência	paciência	NOUN	<cjt>|<np-idf>|N|F|S|@ADVL	Gender=Fem|Number=Sing	1	conj	_	ChangedBy=Issue165|SpaceAfter=No
 22	.	.	PUNCT	PU|@PU	_	1	punct	_	ChangedBy=Issue165|SpaceAfter=No
 23	»	»	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Quanto a adversárias, a sua posição é digna de uma recordista mundial:
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-8
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 959
-1	Quanto	quanto	ADV	ADV|@ADVL>	_	9	advmod	_	MWE=Quanto_a
-2	a	a	ADP	PRP|@A<	_	3	case	_	_
-3	adversárias	adversário	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	1	obl	_	ChangedBy=Issue165|SpaceAfter=No
+1	Quanto	quanto	ADV	ADV|@ADVL>	_	3	case	_	MWE=Quanto_a|MWEPOS=ADP
+2	a	a	ADP	PRP|@A<	_	1	fixed	_	_
+3	adversárias	adversário	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	7	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 6	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	7	det	_	_
@@ -209,8 +202,8 @@
 14	:	:	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = «As mais temíveis deverão ser as do costume, em especial a etíope Tulu.
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-9
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 960
 1	«	«	PUNCT	PU|@PU	_	7	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
@@ -232,13 +225,9 @@
 17	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = A [ sul-africana ] Meyer não sei se escolherá os 10.000m ou a maratona e as chinesas apresentam altos e baixos e nunca repetiram as marcas de 1993.»
-# source = CETEMPúblico n=179 sec=des sem=96a
 # sent_id = CP179-10
+# source = CETEMPúblico n=179 sec=des sem=96a
 # id = 961
-# d2d = cc(apresentam,e) -> cc(repetiram,e)  #106
-# d2d = cc(altos,e) -> cc(baixos,e)  #106
-# d2d = cc(sei,e) -> cc(apresentam,e)  #106
-# d2d = cc(10.000m,ou) -> cc(maratona,ou)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 2	[	[	PUNCT	PU|@PU	_	3	punct	_	_
 3	sul-africana	sul-africana	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	5	amod	_	_

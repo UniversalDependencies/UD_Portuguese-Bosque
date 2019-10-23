@@ -1,22 +1,20 @@
 # text = Nada do que eu havia lido ou ouvido antes de vir para cá me preparara para as emoções que eu iria viver e várias vezes me senti numa montanha-russa emocional.
-# source = CETENFolha n=682 cad=Mundo sec=pol sem=94a
 # sent_id = CF682-1
+# source = CETENFolha n=682 cad=Mundo sec=pol sem=94a
 # id = 2867
-# d2d = cc(lido,ou) -> cc(ouvido,ou)  #106
-# d2d = cc(preparara,e) -> cc(senti,e)  #106
-1	Nada	nada	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	16	nsubj	_	MWE=Nada_do_que
+1	Nada	nada	PRON	<rel>|INDP|M|S|@ACC>	PronType=Rel	16	nsubj	_	MWE=Nada_do_que
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	o	o	PRON	<-sam>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Rel	4	nmod	_	_
-4	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	7	obj	_	_
+4	que	que	PRON	<rel>|INDP|M|S|@P<	PronType=Rel	7	obj	_	_
 5	eu	eu	PRON	PERS|M/F|1S|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
 6	havia	haver	AUX	<aux>|V|IMPF|1S|IND|@FS-SUBJ>	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	7	aux	_	_
 7	lido	ler	VERB	<mv>|<first-cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	1	acl:relcl	_	_
 8	ou	ou	CCONJ	<co-pcp>|<co-pcv>|<co-aux<>|KC|@CO	_	9	cc	_	d2d:#106
 9	ouvido	ouvir	VERB	<mv>|<cjt>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	7	conj	_	_
-10	antes	antes	ADV	ADV|@<ADVL	_	9	advmod	_	_
-11	de	de	ADP	PRP|@A<ARG	_	12	mark	_	_
-12	vir	vir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	10	advcl	_	_
+10	antes	antes	ADV	ADV|@<ADVL	_	12	mark	_	MWE=antes_de|MWEPOS=SCONJ
+11	de	de	ADP	PRP|@A<ARG	_	10	fixed	_	_
+12	vir	vir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	9	advcl	_	_
 13	para	para	ADP	PRP|@<SA	_	14	case	_	_
 14	cá	cá	ADV	ADV|@P<	_	12	advmod	_	_
 15	me	eu	PRON	<refl>|PERS|M/F|1S|DAT|@ACC>	Case=Dat|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	16	obj	_	_
@@ -41,8 +39,8 @@
 33	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
 # text = Em várias ocasiões eu me vi, como anotei em meu diário, à beira das lágrimas.
-# source = CETENFolha n=682 cad=Mundo sec=pol sem=94a
 # sent_id = CF682-2
+# source = CETENFolha n=682 cad=Mundo sec=pol sem=94a
 # id = 2868
 1	Em	em	ADP	PRP|@ADVL>	_	3	case	_	_
 2	várias	várias	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	3	det	_	_
@@ -51,7 +49,7 @@
 5	me	eu	PRON	<refl>|PERS|M/F|1S|ACC|@ACC>	Case=Acc|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
 6	vi	ver	VERB	<mv>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-8	como	como	ADV	<rel>|ADV|@ADVL>	_	9	advmod	_	_
+8	como	como	SCONJ	<rel>|ADV|@ADVL>	_	9	mark	_	_
 9	anotei	anotar	VERB	<mv>|V|PS|1S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	6	advcl	_	_
 10	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
 11	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	12	det	_	_
@@ -68,8 +66,8 @@
 20	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = Mas em muitos outros momentos eu me esforçava para conter risadas.
-# source = CETENFolha n=682 cad=Mundo sec=pol sem=94a
 # sent_id = CF682-3
+# source = CETENFolha n=682 cad=Mundo sec=pol sem=94a
 # id = 2869
 1	Mas	mas	CCONJ	KC|@CO	_	8	cc	_	_
 2	em	em	ADP	PRP|@ADVL>	_	5	case	_	_
@@ -79,18 +77,15 @@
 6	eu	eu	PRON	PERS|M/F|1S|NOM|@SUBJ>	Case=Nom|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
 7	me	eu	PRON	<refl>|PERS|M/F|1S|ACC|@ACC>	Case=Acc|Gender=Unsp|Number=Sing|Person=1|PronType=Prs	8	obj	_	_
 8	esforçava	esforçar	VERB	<mv>|V|IMPF|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_
-9	para	para	ADP	PRP|@<ADVL	_	10	mark	_	_
+9	para	para	SCONJ	PRP|@<ADVL	_	10	mark	_	_
 10	conter	conter	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	8	advcl	_	_
 11	risadas	risada	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	10	obj	_	ChangedBy=Issue165|SpaceAfter=No
 12	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Ou então lutava contra uma depressão repentina, tentava controlar minha raiva, fazia piadas com alguém ou fazia força para não sentir saudades de casa.
-# source = CETENFolha n=682 cad=Mundo sec=pol sem=94a
 # sent_id = CF682-4
+# source = CETENFolha n=682 cad=Mundo sec=pol sem=94a
 # id = 2870
-# d2d = punct(lutava,,) -> punct(tentava,,)  #106
-# d2d = cc(lutava,ou) -> cc(fazia,ou)  #106
-# d2d = punct(lutava,,) -> punct(fazia,,)  #106
 1	Ou	ou	CCONJ	KC|@CO	_	3	cc	_	_
 2	então	então	ADV	<kc>|ADV|@ADVL>	_	3	advmod	_	_
 3	lutava	lutar	VERB	<mv>|<first-cjt>|V|IMPF|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -111,7 +106,7 @@
 18	ou	ou	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	19	cc	_	d2d:#106
 19	fazia	fazer	VERB	<mv>|<cjt>|V|IMPF|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	3	conj	_	_
 20	força	força	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	19	obj	_	_
-21	para	para	ADP	PRP|@<ADVL	_	23	mark	_	_
+21	para	para	SCONJ	PRP|@<ADVL	_	23	mark	_	_
 22	não	não	ADV	_	Polarity=Neg	23	advmod	_	_
 23	sentir	sentir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	19	advcl	_	_
 24	saudades	saudade	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	23	obj	_	_

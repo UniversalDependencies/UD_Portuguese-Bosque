@@ -1,8 +1,7 @@
 # text = A organização do 17º Festival Nacional de Gastronomia não pensa para já na sua internacionalização, prevendo-se apenas «que anualmente seja um país da Europa comunitária a ser convidado, bem como um PALOP».
-# source = CETEMPúblico n=845 sec=soc sem=97b
 # sent_id = CP845-1
+# source = CETEMPúblico n=845 sec=soc sem=97b
 # id = 4344
-# d2d = punct(país,,) -> punct(PALOP,,)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	organização	organização	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	11	nsubj	_	_
 3-4	do	_	_	_	_	_	_	_	_
@@ -38,7 +37,7 @@
 29	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	Europa	Europa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
 31	comunitária	comunitário	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	30	amod	_	_
-32	a	a	ADP	PRP|@N<	_	34	mark	_	_
+32	a	a	SCONJ	PRP|@N<	_	34	mark	_	_
 33	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	34	cop	_	ChangedBy=Issue167
 34	convidado	convidado	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	27	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	39	punct	_	d2d:#106
@@ -50,8 +49,8 @@
 41	.	.	PUNCT	PU|@PU	_	11	punct	_	_
 
 # text = No primeiro dos casos está Espanha, que poderá estar representada já na próxima edição.
-# source = CETEMPúblico n=845 sec=soc sem=97b
 # sent_id = CP845-2
+# source = CETEMPúblico n=845 sec=soc sem=97b
 # id = 4345
 1-2	No	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -67,7 +66,7 @@
 10	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	13	nsubj	_	_
 11	poderá	poder	AUX	<aux>|V|FUT|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	aux	_	_
 12	estar	estar	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	13	cop	_	ChangedBy=Issue167
-13	representada	representado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	8	dep	_	ChangedBy=Issue141|ChangedBy=Issue91
+13	representada	representado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	8	acl:relcl	_	ChangedBy=Issue141|ChangedBy=Issue91
 14	já	já	ADV	ADV|@>P	_	18	advmod	_	_
 15-16	na	_	_	_	_	_	_	_	_
 15	em	em	ADP	<sam->|PRP|@<ADVL	_	18	case	_	_
@@ -77,8 +76,8 @@
 19	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = As «hostilidades» abrem hoje, por tradição, com os paladares promovidos pela Região de Turismo do Ribatejo, que entregou a responsabilidade da refeição a um restaurante do Cartaxo.
-# source = CETEMPúblico n=845 sec=soc sem=97b
 # sent_id = CP845-3
+# source = CETEMPúblico n=845 sec=soc sem=97b
 # id = 4346
 1	As	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -123,22 +122,22 @@
 37	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Tal como em todos os restantes dias, o almoço está marcado para ter início às 13h.
-# source = CETEMPúblico n=845 sec=soc sem=97b
 # sent_id = CP845-4
+# source = CETEMPúblico n=845 sec=soc sem=97b
 # id = 4347
-1	Tal	tal	ADP	PRP|@ADVL>	_	12	obl	_	MWE=Tal_como
-2	como	como	ADV	N|M|S|@P<	_	1	fixed	_	_
+1	Tal	tal	ADV	PRP|@ADVL>	_	7	mark	_	MWE=Tal_como|MWEPOS=SCONJ
+2	como	como	SCONJ	N|M|S|@P<	_	1	fixed	_	_
 3	em	em	ADP	PRP|@<ADVL	_	7	case	_	_
 4	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	7	det	_	MWE=todos_os
 5	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	fixed	_	_
 6	restantes	restante	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	7	amod	_	_
-7	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+7	dias	dia	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	advcl	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	almoço	almoço	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	12	nsubj	_	_
 11	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	ChangedBy=Issue167
 12	marcado	marcado	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue141|ChangedBy=Issue91
-13	para	para	ADP	PRP|@<ADVL	_	14	mark	_	_
+13	para	para	SCONJ	PRP|@<ADVL	_	14	mark	_	_
 14	ter	ter	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	advcl	_	_
 15	início	início	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	14	obj	_	_
 16-17	às	_	_	_	_	_	_	_	_

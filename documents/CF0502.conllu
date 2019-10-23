@@ -1,6 +1,6 @@
 # text = Juca Chaves inaugura teatro no centro de SP
-# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF502-1
+# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # id = 2111
 1	Juca	Juca	PROPN	_	Gender=Fem|Number=Sing	3	nsubj	_	ChangedBy=Issue119|MWE=Juca_Chaves|MWEPOS=PROPN
 2	Chaves	Chaves	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
@@ -14,10 +14,9 @@
 9	SP	SP	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 
 # text = O músico e humorista Juca Chaves inaugura no dia 5 de outubro, a partir das 22h, um novo teatro em São Paulo.
-# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF502-2
+# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # id = 2112
-# d2d = cc(músico,e) -> cc(humorista,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	músico	músico	NOUN	<first-cjt>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 3	e	e	CCONJ	KC|@CO	_	4	cc	_	d2d:#106
@@ -34,7 +33,7 @@
 13	outubro	outubro	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	10	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 15	a	a	ADP	<sam->|PRP|@<ADVL	_	16	case	_	MWE=a_partir_de
-16	partir	partir	NOUN	N|@P<	_	7	obl	_	_
+16	partir	partir	VERB	N|@P<	VerbForm=Inf	7	obl	_	_
 17-18	das	_	_	_	_	_	_	_	_
 17	de	de	ADP	PRP|@N<	_	19	case	_	_
 18	as	o	DET	<artd>|<-sam>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
@@ -49,8 +48,8 @@
 27	.	.	PUNCT	PU|@PU	_	7	punct	_	_
 
 # text = O Jucabaré-Theatro Inteligente vai funcionar na rua Major Sertório, 661, no centro de São Paulo.
-# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF502-3
+# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # id = 2113
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Jucabaré-Theatro	Jucabaré-Theatro	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	ChangedBy=Issue119|MWE=Jucabaré-Theatro_Inteligente|MWEPOS=PROPN
@@ -64,7 +63,7 @@
 9	Major	Major	PROPN	_	Gender=Fem|Number=Sing	8	appos	_	ChangedBy=Issue119|MWE=Major_Sertório|MWEPOS=PROPN
 10	Sertório	Sertório	PROPN	_	Number=Sing	9	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-12	661	661	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	8	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+12	661	661	NUM	<card>|NUM|M|P|@N<PRED	NumType=Card	8	parataxis	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 14-15	no	_	_	_	_	_	_	_	_
 14	em	em	ADP	<sam->|PRP|@<ADVL	_	16	case	_	_
@@ -76,8 +75,8 @@
 20	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = A renda da noite de inauguração será doada ao Fundo Social de Solidariedade do Estado.
-# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF502-4
+# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # id = 2114
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	renda	renda	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	9	nsubj:pass	_	_
@@ -99,19 +98,19 @@
 16-17	do	_	_	_	_	_	_	_	_
 16	de	de	ADP	_	_	12	flat:name	_	_
 17	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	flat:name	_	_
-18	Estado	estado	PROPN	_	Gender=Masc|Number=Sing	12	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
+18	Estado	Estado	PROPN	_	Gender=Masc|Number=Sing	12	flat:name	_	ChangedBy=Issue165|SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = O NÚMERO
-# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF502-5
+# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # id = 2115
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	NÚMERO	número	NOUN	<prop>|<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 
 # text = 33... dias serão completados na próxima segunda-feira, dia de eleição, sem que os vereadores da Câmara de São Paulo votem algum projeto importante.
-# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF502-6
+# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # id = 2116
 1	33	33	NUM	<card>|NUM|M|P|@>N	NumType=Card	3	nummod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 2	...	...	PUNCT	PU|@PU	_	1	punct	_	_
@@ -128,8 +127,8 @@
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	eleição	eleição	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	11	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
-15	sem	sem	ADP	PRP|@<ADVL	_	25	mark	_	_
-16	que	que	SCONJ	KS|@SUB	_	25	mark	_	_
+15	sem	sem	ADP	PRP|@<ADVL	_	25	mark	_	MWE=sem_que|MWEPOS=SCONJ
+16	que	que	SCONJ	KS|@SUB	_	15	fixed	_	_
 17	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	18	det	_	_
 18	vereadores	vereador	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	25	nsubj	_	_
 19-20	da	_	_	_	_	_	_	_	_
@@ -146,11 +145,9 @@
 29	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Dos 55 vereadores, 24 são candidatos à Assembléia Legislativa, Câmara dos Deputados ou Senado.
-# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF502-7
+# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # id = 2117
-# d2d = punct(Assembléia,,) -> punct(Senado,,)  #106
-# d2d = cc(Assembléia,ou) -> cc(Senado,ou)  #106
 1-2	Dos	_	_	_	_	_	_	_	_
 1	De	de	ADP	<sam->|PRP|@ADVL>	_	4	case	_	_
 2	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
@@ -176,8 +173,8 @@
 20	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Se todos conseguirem ser eleitos, quase metade (43%) dos vereadores paulistanos vão trocar de Casa Legislativa.
-# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # sent_id = CF502-8
+# source = CETENFolha n=502 cad=Cotidiano sec=soc sem=94a
 # id = 2118
 1	Se	se	SCONJ	KS|@SUB	_	3	mark	_	_
 2	todos	todo	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Tot	3	nsubj	_	_

@@ -1,9 +1,7 @@
 # text = Esteve assim com o astro da conferência, lorde Keynes «um sujeito sutil, bom expositor, muito persuasivo», conta Campos.
-# source = CETENFolha n=718 cad=Mundo sec=pol sem=94a
 # sent_id = CF718-1
+# source = CETENFolha n=718 cad=Mundo sec=pol sem=94a
 # id = 3017
-# d2d = punct(sujeito,,) -> punct(expositor,,)  #106
-# d2d = punct(sujeito,,) -> punct(persuasivo,,)  #106
 1	Esteve	estar	VERB	<mv>|V|PS|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	24	parataxis	_	_
 2	assim	assim	ADV	<kc>|ADV|@<ADVL	_	1	advmod	_	_
 3	com	com	ADP	PRP|@<PIV	_	5	case	_	_
@@ -33,8 +31,8 @@
 26	.	.	PUNCT	PU|@PU	_	24	punct	_	_
 
 # text = A delegação britânica era a mais forte em termos intelectuais, embora outros participantes tivessem dela uma opinião algo debochada.
-# source = CETENFolha n=718 cad=Mundo sec=pol sem=94a
 # sent_id = CF718-2
+# source = CETENFolha n=718 cad=Mundo sec=pol sem=94a
 # id = 3018
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	delegação	delegação	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
@@ -61,16 +59,9 @@
 22	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 
 # text = Corria uma piada segundo a qual Keynes era inteligente demais para ser consistente; Dennis Robertson, outra estrela, era consistente demais para ser inteligente; e Lionel Robbins, o terceiro nome de prestígio, não era nem inteligente nem consistente.
-# source = CETENFolha n=718 cad=Mundo sec=pol sem=94a
 # sent_id = CF718-3
+# source = CETENFolha n=718 cad=Mundo sec=pol sem=94a
 # id = 3019
-# d2d = cc(Corria,e) -> cc(inteligente,e)  #106
-# d2d = punct(Corria,;) -> punct(consistente,;)  #106
-# d2d = punct(Corria,,) -> punct(consistente,,)  #106
-# d2d = punct(Corria,,) -> punct(consistente,,)  #106
-# d2d = cc(Corria,nem) -> cc(inteligente,nem)  #106
-# d2d = cc(inteligente,nem) -> cc(consistente,nem)  #106
-# d2d = punct(Corria,;) -> punct(inteligente,;)  #106
 1	Corria	correr	VERB	<first-cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	piada	piada	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	1	nsubj	_	_
@@ -81,20 +72,20 @@
 8	era	ser	AUX	<mv>|V|IMPF|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	cop	_	ChangedBy=Issue167
 9	inteligente	inteligente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	acl:relcl	_	_
 10	demais	demais	ADV	<quant>|ADV|@A<	_	9	advmod	_	_
-11	para	para	ADP	PRP|@<SC	_	13	mark	_	_
+11	para	para	SCONJ	PRP|@<SC	_	13	mark	_	_
 12	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	cop	_	ChangedBy=Issue167
 13	consistente	consistente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	9	amod	_	ChangedBy=Issue165|SpaceAfter=No
 14	;	;	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
 15	Dennis	Dennis	PROPN	_	Gender=Masc|Number=Sing	22	nsubj	_	ChangedBy=Issue119|MWE=Dennis_Robertson|MWEPOS=PROPN
 16	Robertson	Robertson	PROPN	_	Number=Sing	15	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-17	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+17	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 18	outra	outro	DET	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	19	det	_	_
 19	estrela	estrela	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	15	appos	_	ChangedBy=Issue165|SpaceAfter=No
-20	,	,	PUNCT	PU|@PU	_	22	punct	_	d2d:#106
+20	,	,	PUNCT	PU|@PU	_	18	punct	_	d2d:#106
 21	era	ser	AUX	<cjt>|<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	cop	_	ChangedBy=Issue167
 22	consistente	consistente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	1	conj	_	_
 23	demais	demais	ADV	<quant>|ADV|@A<	_	22	advmod	_	_
-24	para	para	ADP	PRP|@<SC	_	26	mark	_	_
+24	para	para	SCONJ	PRP|@<SC	_	26	mark	_	_
 25	ser	ser	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	26	cop	_	ChangedBy=Issue167
 26	inteligente	inteligente	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	22	amod	_	ChangedBy=Issue165|SpaceAfter=No
 27	;	;	PUNCT	PU|@PU	_	41	punct	_	d2d:#106

@@ -1,6 +1,6 @@
 # text = «A revolução fiscal»
-# source = CETEMPúblico n=720 sec=opi sem=98b
 # sent_id = CP720-1
+# source = CETEMPúblico n=720 sec=opi sem=98b
 # id = 3694
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
@@ -9,8 +9,8 @@
 5	»	»	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Os comentários de Miguel Sousa Tavares (MST) inseridos no artigo do PÚBLICO de 4 de setembro sob o título em epígrafe são deveras esclarecedores no que concerne aos tributos dos cidadãos.
-# source = CETEMPúblico n=720 sec=opi sem=98b
 # sent_id = CP720-2
+# source = CETEMPúblico n=720 sec=opi sem=98b
 # id = 3695
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	comentários	comentário	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	28	nsubj	_	_
@@ -58,12 +58,12 @@
 39	.	.	PUNCT	PU|@PU	_	28	punct	_	_
 
 # text = Há, porém, um aspecto que não foi abordado na sua extensão:
-# source = CETEMPúblico n=720 sec=opi sem=98b
 # sent_id = CP720-3
+# source = CETEMPúblico n=720 sec=opi sem=98b
 # id = 3696
 1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-3	porém	porém	ADV	<kc>|ADV|@<ADVL	_	1	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+3	porém	porém	CCONJ	<kc>|ADV|@<ADVL	_	1	cc	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	aspecto	aspecto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
@@ -79,8 +79,8 @@
 15	:	:	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = tem que ver com a contribuição autárquica no que respeita a bens não geradores de rendimento, como é o caso de terrenos classificados de «urbanos», a partir de 1989.
-# source = CETEMPúblico n=720 sec=opi sem=98b
 # sent_id = CP720-4
+# source = CETEMPúblico n=720 sec=opi sem=98b
 # id = 3697
 1	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
 2	que	que	SCONJ	KS|@PRT-AUX<	_	3	mark	_	_
@@ -90,7 +90,7 @@
 6	contribuição	contribuição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
 7	autárquica	autárquico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	6	amod	_	_
 8-9	no	_	_	_	_	_	_	_	_
-8	em	em	ADP	<sam->|PRP|@N<ARG	_	11	mark	_	_
+8	em	em	SCONJ	<sam->|PRP|@N<ARG	_	11	mark	_	_
 9	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	_
 10	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	11	nsubj	_	_
 11	respeita	respeitar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
@@ -113,17 +113,16 @@
 28	urbanos	urbano	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 29	»	»	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-31	a	a	ADP	PRP|@<ADVL	_	32	case	_	MWE=a_partir_de
-32	partir	partir	NOUN	N|@P<	_	25	obl	_	_
-33	de	de	ADP	PRP|@N<	_	34	case	_	_
-34	1989	1989	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	32	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+31	a	a	ADP	PRP|@<ADVL	_	34	case	_	MWE=a_partir_de|MWEPOS=ADP
+32	partir	partir	NOUN	N|@P<	_	31	fixed	_	_
+33	de	de	ADP	PRP|@N<	_	31	fixed	_	_
+34	1989	1989	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	25	obl	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 35	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Desde logo, porque tal classificação é (ou foi) aleatória, pois há terrenos potencialmente urbanos que não são abrangidos (e ainda bem!)
-# source = CETEMPúblico n=720 sec=opi sem=98b
 # sent_id = CP720-5
+# source = CETEMPúblico n=720 sec=opi sem=98b
 # id = 3698
-# d2d = cc(é,ou) -> cc(foi,ou)  #106
 1	Desde	desde	ADP	PRP|@ADVL>	_	2	case	_	MWE=Desde_logo
 2	logo	logo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	obl	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -151,13 +150,12 @@
 25	ainda	ainda	ADV	ADV|@>A	_	26	advmod	_	MWE=ainda_bem
 26	bem	bem	ADV	ADV|@FS-N<	_	22	conj	_	ChangedBy=Issue165|SpaceAfter=No
 27	!	!	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
-28	)	)	PUNCT	PU|@PU	_	12	punct	_	_
+28	)	)	PUNCT	PU|@PU	_	26	punct	_	_
 
 # text = Depois, verifica-se uma enorme discrepância de valores na sua avaliação para efeitos fiscais, sempre gravosa, sem atentar sequer nas flutuações do mercado e das próprias leis.
-# source = CETEMPúblico n=720 sec=opi sem=98b
 # sent_id = CP720-6
+# source = CETEMPúblico n=720 sec=opi sem=98b
 # id = 3699
-# d2d = cc(mercado,e) -> cc(leis,e)  #106
 1	Depois	depois	ADV	ADV|@ADVL>	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3-4	verifica-se	_	_	_	_	_	_	_	_
@@ -180,7 +178,7 @@
 18	sempre	sempre	ADV	ADV|@>A	_	19	advmod	_	_
 19	gravosa	gravoso	ADJ	ADJ|F|S|@N<PRED	Gender=Fem|Number=Sing	13	amod	_	ChangedBy=Issue165|SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	19	punct	_	_
-21	sem	sem	ADP	PRP|@N<PRED	_	22	mark	_	_
+21	sem	sem	SCONJ	PRP|@N<PRED	_	22	mark	_	_
 22	atentar	atentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	13	acl	_	_
 23	sequer	sequer	ADV	ADV|@>A	_	26	advmod	_	_
 24-25	nas	_	_	_	_	_	_	_	_
@@ -200,8 +198,8 @@
 35	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Ignora-se qual o princípio que preside a tão injusta como iníqua privatização;
-# source = CETEMPúblico n=720 sec=opi sem=98b
 # sent_id = CP720-7
+# source = CETEMPúblico n=720 sec=opi sem=98b
 # id = 3700
 1-2	Ignora-se	_	_	_	_	_	_	_	_
 1	Ignora	ignorar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -220,16 +218,16 @@
 14	;	;	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = mas, se o objectivo foi libertar os terrenos, evitando a estagnação, seria necessário que as autarquias respondessem às solicitações, o que não acontece.
-# source = CETEMPúblico n=720 sec=opi sem=98b
 # sent_id = CP720-8
+# source = CETEMPúblico n=720 sec=opi sem=98b
 # id = 3701
 1	mas	mas	CCONJ	KC|@CO	_	16	cc	_	ChangedBy=Issue165|SpaceAfter=No
-2	,	,	PUNCT	PU|@PU	_	16	punct	_	_
+2	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 3	se	se	SCONJ	KS|@SUB	_	7	mark	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	objectivo	objectivo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 6	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	ChangedBy=Issue167
-7	libertar	libertar	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	16	dep	_	_
+7	libertar	libertar	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	16	advcl	_	_
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	terrenos	terreno	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	obj	_	ChangedBy=Issue165|SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	7	punct	_	_

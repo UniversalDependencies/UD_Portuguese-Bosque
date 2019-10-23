@@ -1,6 +1,6 @@
 # text = Conferência do CFE começa em Viena
-# source = CETEMPúblico n=579 sec=pol sem=96a
 # sent_id = CP579-1
+# source = CETEMPúblico n=579 sec=pol sem=96a
 # id = 2993
 1	Conferência	conferência	NOUN	<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	5	nsubj	_	_
 2-3	do	_	_	_	_	_	_	_	_
@@ -12,8 +12,8 @@
 7	Viena	Viena	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	ChangedBy=Issue137
 
 # text = Com os olhos na Rússia
-# source = CETEMPúblico n=579 sec=pol sem=96a
 # sent_id = CP579-2
+# source = CETEMPúblico n=579 sec=pol sem=96a
 # id = 2994
 1	Com	com	ADP	PRP|@UTT	_	3	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
@@ -24,8 +24,8 @@
 6	Rússia	Rússia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 
 # text = Com os olhos na Rússia, tecnicamente em violação do texto assinado em 1990, os países-membros do tratado sobre as armas convencionais na Europa voltam a reunir-se a partir de hoje, em Viena, para tentar limpar definitivamente o continente de armas convencionais.
-# source = CETEMPúblico n=579 sec=pol sem=96a
 # sent_id = CP579-4
+# source = CETEMPúblico n=579 sec=pol sem=96a
 # id = 2995
 1	Com	com	ADP	PRP|@PRED>	_	3	case	_	_
 2	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
@@ -60,20 +60,20 @@
 27	em	em	ADP	<sam->|PRP|@N<	_	29	case	_	_
 28	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
 29	Europa	Europa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	_
-30	voltam	voltar	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	aux	_	_
-31	a	a	ADP	PRP|@PRT-AUX<	_	32	case	_	_
+30	voltam	voltar	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=voltam_a|MWEPOS=AUX
+31	a	a	SCONJ	PRP|@PRT-AUX<	_	32	mark	_	_
 32-33	reunir-se	_	_	_	_	_	_	_	_
-32	reunir	reunir	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+32	reunir	reunir	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	30	xcomp	_	_
 33	se	se	PRON	PERS|M|3P|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	32	expl	_	ChangedBy=Issue135
-34	a	a	ADP	PRP|@<ADVL	_	35	case	_	MWE=a_partir_de
-35	partir	partir	NOUN	N|@P<	_	32	obl	_	_
-36	de	de	ADP	PRP|@N<	_	37	case	_	_
-37	hoje	hoje	ADV	ADV|@P<	_	35	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+34	a	a	ADP	PRP|@<ADVL	_	37	case	_	MWE=a_partir_de|MWEPOS=ADP
+35	partir	partir	NOUN	N|@P<	_	34	fixed	_	_
+36	de	de	ADP	PRP|@N<	_	34	fixed	_	_
+37	hoje	hoje	ADV	ADV|@P<	_	32	advmod	_	ChangedBy=Issue165|SpaceAfter=No
 38	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 39	em	em	ADP	PRP|@<ADVL	_	40	case	_	_
 40	Viena	Viena	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	32	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 41	,	,	PUNCT	PU|@PU	_	43	punct	_	_
-42	para	para	ADP	PRP|@<ADVL	_	43	mark	_	_
+42	para	para	SCONJ	PRP|@<ADVL	_	43	mark	_	_
 43	tentar	tentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	32	advcl	_	_
 44	limpar	limpar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	43	xcomp	_	_
 45	definitivamente	definitivamente	ADV	ADV|@<ADVL	_	44	advmod	_	_
@@ -85,8 +85,8 @@
 51	.	.	PUNCT	PU|@PU	_	32	punct	_	_
 
 # text = Mas ninguém aposta num sucesso fácil.
-# source = CETEMPúblico n=579 sec=pol sem=96a
 # sent_id = CP579-5
+# source = CETEMPúblico n=579 sec=pol sem=96a
 # id = 2996
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	ninguém	ninguém	PRON	INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Ind	3	nsubj	_	_

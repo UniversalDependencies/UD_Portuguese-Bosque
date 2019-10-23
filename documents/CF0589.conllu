@@ -1,6 +1,6 @@
 # text = Na relação divulgada ontem em Washington, o Brasil é citado com outros 34 países.
-# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF589-1
+# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # id = 2464
 1-2	Na	_	_	_	_	_	_	_	_
 1	Em	em	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
@@ -22,11 +22,9 @@
 17	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = O Japão é o principal alvo da lista por barreiras aos produtos, serviços e investimentos norte-americanos, que segundo o USTR, colaboraram para que o déficit dos EUA no comércio com os japoneses atingisse US$ 60 bilhões no ano passado.
-# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF589-2
+# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # id = 2465
-# d2d = cc(produtos,e) -> cc(investimentos,e)  #106
-# d2d = punct(produtos,,) -> punct(serviços,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Japão	Japão	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
 3	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	ChangedBy=Issue167
@@ -55,7 +53,7 @@
 24	USTR	USTR	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	26	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	24	punct	_	_
 26	colaboraram	colaborar	VERB	<cjt>|<mv>|V|PS/MQP|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	18	acl:relcl	_	_
-27	para	para	ADP	PRP|@<ADVL	_	40	mark	_	_
+27	para	para	SCONJ	PRP|@<ADVL	_	40	mark	_	_
 28	que	que	SCONJ	KS|@SUB	_	40	mark	_	_
 29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	déficit	déficit	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	40	nsubj	_	_
@@ -82,11 +80,9 @@
 48	.	.	PUNCT	PU|@PU	_	6	punct	_	_
 
 # text = O relatório dedica 42 páginas ao Japão, «cujas barreiras à importação de produtos e serviços são muito maiores do que as dos demais membros do Grupo dos Sete (países mais industrializados) e representam um entrave inaceitável ao sistema de comércio global».
-# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF589-3
+# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # id = 2466
-# d2d = cc(maiores,e) -> cc(representam,e)  #106
-# d2d = cc(produtos,e) -> cc(serviços,e)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	relatório	relatório	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	dedica	dedicar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -115,7 +111,7 @@
 23	de	de	ADP	<sam->|PRP|@COM	_	30	case	_	MWE=de_o_que
 24	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	23	fixed	_	_
 25	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	23	fixed	_	_
-26	as	o	ADV	<first-cjt>|<dem>|DET|F|P|@KOMP<	Gender=Fem|Number=Plur|PronType=Dem	22	advmod	_	_
+26	as	o	PRON	<first-cjt>|<dem>|DET|F|P|@KOMP<	Gender=Fem|Number=Plur|PronType=Dem	22	advmod	_	_
 27-28	dos	_	_	_	_	_	_	_	_
 27	de	de	ADP	<sam->|PRP|@N<	_	30	case	_	_
 28	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
@@ -132,7 +128,7 @@
 37	(	(	PUNCT	PU|@PU	_	38	punct	_	ChangedBy=Issue165|SpaceAfter=No
 38	países	país	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	33	appos	_	_
 39	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	40	advmod	_	_
-40	industrializados	industrializado	ADJ	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur	38	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
+40	industrializados	industrializar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	38	acl	_	ChangedBy=Issue141|ChangedBy=Issue165|ChangedBy=Issue91|SpaceAfter=No
 41	)	)	PUNCT	PU|@PU	_	38	punct	_	_
 42	e	e	CCONJ	<co-n<pred>|KC|@CO	_	43	cc	_	d2d:#106
 43	representam	representar	VERB	<cjt>|<mv>|V|PR|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	conj	_	_
@@ -150,8 +146,8 @@
 54	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Tendo em mente o Japão, os EUA reinstalaram recentemente a cláusula conhecida como Super-301, mecanismo legal que amplia os poderes de retaliação comercial da Casa Branca.
-# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF589-4
+# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # id = 2467
 1	Tendo	ter	VERB	<mv>|V|GER|@ICL-ADVL>	VerbForm=Ger	9	advcl	_	_
 2	em	em	ADP	PRP|@<ADVL	_	3	case	_	_
@@ -165,7 +161,7 @@
 10	recentemente	recentemente	ADV	ADV|@<ADVL	_	9	advmod	_	_
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	cláusula	cláusula	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
-13	conhecida	conhecido	ADJ	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing	12	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
+13	conhecida	conhecer	VERB	<mv>|V|PCP|F|S|@ICL-N<	Gender=Fem|Number=Sing|VerbForm=Part	12	acl	_	ChangedBy=Issue141|ChangedBy=Issue91
 14	como	como	ADP	<prd>|PRP|@<SC	_	15	case	_	_
 15	Super-301	Super-301	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	13	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	17	punct	_	_
@@ -186,10 +182,9 @@
 30	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = A Super-301, que já foi aplicada contra o Brasil quando esteve em vigor em 1989 e 1990, estabelece um prazo de 18 meses para que as negociações bilaterais levem à eliminação do que os EUA consideram barreiras ao comércio.
-# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF589-5
+# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # id = 2468
-# d2d = cc(1989,e) -> cc(1990,e)  #106
 1	A	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	Super-301	Super-301	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	20	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
@@ -215,7 +210,7 @@
 23	de	de	ADP	PRP|@N<	_	25	case	_	_
 24	18	18	NUM	<card>|NUM|M|P|@>N	NumType=Card	25	nummod	_	ChangedBy=Issue168
 25	meses	mês	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	22	nmod	_	_
-26	para	para	ADP	PRP|@N<ARG	_	31	mark	_	_
+26	para	para	SCONJ	PRP|@N<ARG	_	31	mark	_	_
 27	que	que	SCONJ	KS|@SUB	_	31	mark	_	_
 28	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	29	det	_	_
 29	negociações	negociação	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	31	nsubj	_	_
@@ -240,8 +235,8 @@
 45	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
 # text = Depois disto, os EUA podem impor tarifas punitivas de até 100% às importações do país ofensor.
-# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # sent_id = CF589-6
+# source = CETENFolha n=589 cad=Dinheiro sec=eco sem=94b
 # id = 2469
 1	Depois	depois	ADV	ADV|@ADVL>	_	8	advmod	_	_
 2-3	disto	_	_	_	_	_	_	_	SpaceAfter=No
@@ -250,8 +245,8 @@
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
 6	EUA	EUA	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	8	nsubj	_	_
-7	podem	poder	AUX	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
-8	impor	impor	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+7	podem	poder	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	impor	impor	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
 9	tarifas	tarifa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	_
 10	punitivas	punitivo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	9	amod	_	_
 11	de	de	ADP	PRP|@N<	_	14	case	_	_

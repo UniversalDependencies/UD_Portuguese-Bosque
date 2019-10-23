@@ -1,10 +1,7 @@
 # text = Os «leões» de Faro e de Lisboa lutaram ontem muito no Estádio de São Luiz, mas não conseguiram marcar.
-# source = CETEMPúblico n=347 sec=des sem=97b
 # sent_id = CP347-1
+# source = CETEMPúblico n=347 sec=des sem=97b
 # id = 1812
-# d2d = cc(lutaram,mas) -> cc(conseguiram,mas)  #106
-# d2d = cc(Faro,e) -> cc(Lisboa,e)  #106
-# d2d = punct(lutaram,,) -> punct(conseguiram,,)  #106
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	ChangedBy=Issue165|SpaceAfter=No
 3	leões	leão	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	10	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
@@ -32,10 +29,9 @@
 24	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = Os da casa estão ainda muito longe de uma boa forma física e a partir dos 25 minutos do primeiro tempo refugiou-se quase sempre na defesa.
-# source = CETEMPúblico n=347 sec=des sem=97b
 # sent_id = CP347-2
+# source = CETEMPúblico n=347 sec=des sem=97b
 # id = 1813
-# d2d = cc(longe,e) -> cc(refugiou-,e)  #106
 1	Os	o	PRON	<dem>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Dem	8	nsubj	_	_
 2-3	da	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
@@ -52,7 +48,7 @@
 13	física	físico	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	_
 14	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	25	cc	_	d2d:#106
 15	a	a	ADP	<sam->|PRP|@ADVL>	_	16	case	_	MWE=a_partir_de
-16	partir	partir	NOUN	N|@P<	_	25	obl	_	_
+16	partir	partir	VERB	N|@P<	VerbForm=Inf	25	obl	_	_
 17-18	dos	_	_	_	_	_	_	_	_
 17	de	de	ADP	PRP|@N<	_	20	case	_	_
 18	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
@@ -75,19 +71,18 @@
 32	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = O Sporting dominou, alguns jogadores voltaram a mostrar pormenores interessantes, mas faltou-lhes inteligência no futebol ofensivo.
-# source = CETEMPúblico n=347 sec=des sem=97b
 # sent_id = CP347-3
+# source = CETEMPúblico n=347 sec=des sem=97b
 # id = 1814
-# d2d = cc(mostrar,mas) -> cc(faltou-,mas)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Sporting	Sporting	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	dominou	dominar	VERB	<first-cjt>|<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	6	det	_	_
 6	jogadores	jogador	NOUN	<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	9	nsubj	_	_
-7	voltaram	voltar	AUX	<cjt>|<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	9	aux	_	_
-8	a	a	ADP	PRP|@PRT-AUX<	_	9	case	_	_
-9	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	parataxis	_	_
+7	voltaram	voltar	VERB	<cjt>|<aux>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	_	MWE=voltaram_a|MWEPOS=AUX
+8	a	a	SCONJ	PRP|@PRT-AUX<	_	9	mark	_	_
+9	mostrar	mostrar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
 10	pormenores	pormenor	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	9	obj	_	_
 11	interessantes	interessante	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	10	amod	_	ChangedBy=Issue165|SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	3	punct	_	_
@@ -104,16 +99,16 @@
 21	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Um empate que acaba por ser justo, para duas equipas que precisam ainda de ser muito trabalhadas.
-# source = CETEMPúblico n=347 sec=des sem=97b
 # sent_id = CP347-4
+# source = CETEMPúblico n=347 sec=des sem=97b
 # id = 1815
 1	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	empate	empate	NOUN	<np-idf>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	7	nsubj	_	_
-4	acaba	acabar	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-5	por	por	ADP	PRP|@PRT-AUX<	_	7	case	_	_
+4	acaba	acabar	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	MWE=acaba_por|MWEPOS=AUX
+5	por	por	SCONJ	PRP|@PRT-AUX<	_	7	mark	_	_
 6	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	cop	_	ChangedBy=Issue167
-7	justo	justo	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	2	acl:relcl	_	ChangedBy=Issue165|SpaceAfter=No
+7	justo	justo	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	4	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 9	para	para	ADP	PRP|@A<	_	11	case	_	_
 10	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	11	nummod	_	ChangedBy=Issue168
@@ -128,11 +123,9 @@
 19	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = O Sporting iniciou o jogo com o habitual 4x4x2 de Octávio, mas com algumas novidades em relação à temporada passada.
-# source = CETEMPúblico n=347 sec=des sem=97b
 # sent_id = CP347-5
+# source = CETEMPúblico n=347 sec=des sem=97b
 # id = 1816
-# d2d = cc(4x4x2,mas) -> cc(novidades,mas)  #106
-# d2d = punct(4x4x2,,) -> punct(novidades,,)  #106
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Sporting	Sporting	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	iniciou	iniciar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -150,7 +143,7 @@
 15	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	16	det	_	_
 16	novidades	novidade	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	9	conj	_	_
 17	em	em	ADP	<sam->|PRP|@N<	_	18	case	_	MWE=em_relação_a
-18	relação	relação	NOUN	N|@P<	_	16	nmod	_	_
+18	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	16	nmod	_	_
 19-20	à	_	_	_	_	_	_	_	_
 19	a	a	ADP	PRP|@N<	_	21	case	_	_
 20	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
@@ -159,8 +152,8 @@
 23	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Saber ocupou a direita da defesa, enquanto lá mais na frente Yordanov jogou na esquerda do ataque, cabendo a Hadjy alinhar no meio no apoio ao avançado Leandro, ficando a direita a cargo de Pedro Barbosa.
-# source = CETEMPúblico n=347 sec=des sem=97b
 # sent_id = CP347-6
+# source = CETEMPúblico n=347 sec=des sem=97b
 # id = 1817
 1	Saber	Saber	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	ocupou	ocupar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -211,15 +204,15 @@
 40	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_
 41	direita	direita	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	39	nsubj	_	_
 42	a	a	ADP	PRP|@<SA	_	43	case	_	MWE=a_cargo_de
-43	cargo	cargo	NOUN	N|@P<	_	39	obl	_	_
+43	cargo	cargo	NOUN	N|@P<	Gender=Masc|Number=Sing	39	obl	_	_
 44	de	de	ADP	PRP|@N<	_	45	case	_	_
 45	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	43	nmod	_	ChangedBy=Issue119|MWE=Pedro_Barbosa|MWEPOS=PROPN
 46	Barbosa	Barbosa	PROPN	_	Number=Sing	45	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 47	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Lang subiu muito no terreno, ficando Oceano sozinho no apoio à defesa, facto que valorizou o futebol ofensivo dos «leões».
-# source = CETEMPúblico n=347 sec=des sem=97b
 # sent_id = CP347-7
+# source = CETEMPúblico n=347 sec=des sem=97b
 # id = 1818
 1	Lang	Lang	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	2	nsubj	_	_
 2	subiu	subir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
