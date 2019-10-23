@@ -8,7 +8,7 @@
 3	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	concertação	concertação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-6	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp:parataxis	_	_
+6	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	parataxis	_	_
 7	ainda	ainda	ADV	ADV|@>N	_	8	advmod	_	_
 8	muito	muito	PRON	<quant>|<np-idf>|DET|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Ind	10	obj	_	_
 9	a	a	SCONJ	PRP|@<ADVL	_	10	mark	_	_
@@ -44,12 +44,12 @@
 39	governo	governo	NOUN	<cjt>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	35	conj	_	_
 40	central	central	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	39	amod	_	ChangedBy=Issue165|SpaceAfter=No
 41	»	»	PUNCT	PU|@PU	_	30	punct	_	_
-42	deixe	deixar	AUX	<aux>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	47	aux	_	MWE=deixe_de|MWEPOS=AUX
-43	de	de	ADP	PRP|@PRT-AUX<	_	42	compound	_	_
+42	deixe	deixar	VERB	<aux>|V|PR|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	obl	_	MWE=deixe_de|MWEPOS=AUX
+43	de	de	SCONJ	PRP|@PRT-AUX<	_	47	mark	_	_
 44	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	47	cop	_	ChangedBy=Issue167
 45	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	47	det	_	_
 46	«	«	PUNCT	PU|@PU	_	47	punct	_	ChangedBy=Issue165|SpaceAfter=No
-47	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	19	obl	_	MWE=ponto_fraco|MWEPOS=NOUN
+47	ponto	ponto	NOUN	_	Gender=Masc|Number=Sing	42	xcomp	_	MWE=ponto_fraco|MWEPOS=NOUN
 48	fraco	fraco	ADJ	_	Gender=Masc|Number=Sing	47	amod	_	ChangedBy=Issue165|SpaceAfter=No
 49	»	»	PUNCT	PU|@PU	_	47	punct	_	_
 50-51	do	_	_	_	_	_	_	_	_
@@ -84,9 +84,9 @@
 # source = CETEMPúblico n=951 sec=nd sem=98a
 # id = 4902
 1	«	«	PUNCT	PU|@PU	_	4	punct	_	ChangedBy=Issue165|SpaceAfter=No
-2	Há	haver	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	MWE=Há_que|MWEPOS=AUX
-3	que	que	ADP	PRP|@PRT-AUX<	_	2	compound	_	_
-4	coordenar	coordenar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+2	Há	haver	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=Há_que|MWEPOS=AUX
+3	que	que	SCONJ	PRP|@PRT-AUX<	_	4	mark	_	_
+4	coordenar	coordenar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	2	xcomp	_	_
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	acção	acção	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	4	obj	_	_
 7-8	dos	_	_	_	_	_	_	_	_
@@ -113,7 +113,7 @@
 9	e	e	CCONJ	<co-subj>|KC|@CO	_	11	cc	_	d2d:#106
 10	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
 11	autarquias	autarquia	NOUN	<cjt>|<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	8	conj	_	_
-12	têm	ter	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	ccomp:parataxis	_	_
+12	têm	ter	VERB	<mv>|<first-cjt>|V|PR|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	29	parataxis	_	_
 13	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
 14	seus	seu	DET	<poss>|<si>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Prs	15	det	_	_
 15	programas	programa	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	obj	_	ChangedBy=Issue165|SpaceAfter=No

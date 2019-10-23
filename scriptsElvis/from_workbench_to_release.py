@@ -34,6 +34,7 @@ def loc_verbal_aspectual(corpus):
                 token.dephead = antigoRootAUX
                 token.upos = "SCONJ"
                 token.deprel = "mark"
+
     return corpus
 
 

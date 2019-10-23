@@ -206,10 +206,10 @@
 11	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	campo	campo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	16	nsubj	_	_
-14	está	estar	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux	_	MWE=está_a|MWEPOS=AUX
-15	a	a	ADP	PRP|@PRT-AUX<	_	14	compound	_	_
+14	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=está_a|MWEPOS=AUX
+15	a	a	SCONJ	PRP|@PRT-AUX<	_	16	mark	_	_
 16-17	desertificar-se	_	_	_	_	_	_	_	SpaceAfter=No
-16	desertificar	desertificar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+16	desertificar	desertificar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
 17	se	se	PRON	PERS|M|3S|ACC|@<ACC-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	16	expl	_	ChangedBy=Issue135
 18	.	.	PUNCT	PU|@PU	_	16	punct	_	_
 
@@ -227,9 +227,9 @@
 8	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 9	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
 10	pessoas	pessoa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	13	nsubj	_	_
-11	têm	ter	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	MWE=têm_de|MWEPOS=AUX
-12	de	de	ADP	PRP|@PRT-AUX<	_	11	compound	_	_
-13	cavar	cavar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	4	parataxis	_	_
+11	têm	ter	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	MWE=têm_de|MWEPOS=AUX
+12	de	de	SCONJ	PRP|@PRT-AUX<	_	13	mark	_	_
+13	cavar	cavar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	11	xcomp	_	_
 14	poços	poço	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	13	obj	_	_
 15	cada	cada	PRON	N|M|S|@>A	Gender=Masc|Number=Sing	18	nmod	_	MWE=cada_vez_mais
 16	vez	vez	NOUN	PRP|@N<	Gender=Fem|Number=Sing	15	fixed	_	_
