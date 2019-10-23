@@ -26,16 +26,19 @@ def loc_verbal_aspectual(corpus):
             if token.deprel == "compound" and token.head_token.upos == "AUX":
                 token.head_token.upos = "VERB"
                 token.head_token.deprel = token.head_token.head_token.deprel
-                antigoRoot = token.head_token.dephead
-                token.head_token.dephead = token.head_token.head_token.dephead
-                token.dephead = antigoRoot
+                token.head_token.head_token.deprel = "xcomp"
+                antigoRootVERB = token.head_token.head_token.dephead
+                token.head_token.head_token.dephead = token.head_token.id
+                antigoRootAUX = token.head_token.dephead
+                token.head_token.dephead = antigoRootVERB
+                token.dephead = antigoRootAUX
                 token.upos = "SCONJ"
                 token.deprel = "mark"
     return corpus
 
 
 if not os.system("sh scriptsElvis/1_criar_branch.sh " + sys.argv[1]):
-    corpus = estrutura_ud.Corpus(recursivo=False)
+    corpus = estrutura_ud.Corpus(recursivo=True)
     corpus.load('/home/elvis/Dropbox/tronco/comcorhd.tronco.me/UD_Portuguese-Bosque/www/interrogar-ud/conllu/' + sys.argv[1] + ".conllu")
     corpus = appos_e_ccomp_parataxis(corpus)
     corpus = loc_verbal_aspectual(corpus)
