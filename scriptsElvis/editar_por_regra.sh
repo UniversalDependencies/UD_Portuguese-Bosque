@@ -2,6 +2,12 @@
 #$1 = branch
 #set -e
 
+if [ $# -eq 0 ]
+  then
+    git -lsremote
+    exit
+fi
+
 sh scriptsElvis/1_criar_branch.sh $1
 mkdir regras
 mkdir regras/$1
