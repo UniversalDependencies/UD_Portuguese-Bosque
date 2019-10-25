@@ -29,7 +29,7 @@
 21	nome	nome	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	ChangedBy=Issue165|SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 23	como	como	ADP	<com>|PRP|@N<	_	24	case	_	_
-24	Hateley	Hateley	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	15	appos:parataxis	_	_
+24	Hateley	Hateley	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	15	parataxis	_	_
 25	e	e	CCONJ	KC|@CO	_	26	cc	_	d2d:#106
 26	Durrant	Durrant	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	24	conj	_	ChangedBy=Issue165|SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	24	punct	_	_
@@ -170,10 +170,10 @@
 6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	Rangers	Rangers	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 8	Mikhailichenko	Mikhailichenko	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	3	appos	_	_
-9	começou	começar	AUX	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	aux	_	MWE=começou_a|MWEPOS=AUX
-10	a	a	ADP	PRP|@PRT-AUX<	_	9	compound	_	_
+9	começou	começar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=começou_a|MWEPOS=AUX
+10	a	a	SCONJ	PRP|@PRT-AUX<	_	11	mark	_	_
 11-12	evidenciar-se	_	_	_	_	_	_	_	_
-11	evidenciar	evidenciar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+11	evidenciar	evidenciar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	xcomp	_	_
 12	se	se	PRON	<refl>|PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
 13	devido	devido	ADV	ADV|@<ADVL	_	11	advmod	_	MWE=devido_a
 14-15	à	_	_	_	_	_	_	_	_
@@ -202,9 +202,9 @@
 4	por	por	ADP	PRP|@ADVL>	_	5	case	_	_
 5	ali	ali	ADV	ADV|@P<	_	9	advmod	_	_
 6	que	que	SCONJ	<foc>|ADV|@ADVL>	_	9	mark	_	_
-7	começava	começar	AUX	<first-cjt>|<aux>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux	_	MWE=começava_a|MWEPOS=AUX
-8	a	a	ADP	PRP|@PRT-AUX<	_	7	compound	_	_
-9	surgir	surgir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+7	começava	começar	VERB	<first-cjt>|<aux>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	MWE=começava_a|MWEPOS=AUX
+8	a	a	SCONJ	PRP|@PRT-AUX<	_	9	mark	_	_
+9	surgir	surgir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	7	xcomp	_	_
 10	perigo	perigo	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	9	nsubj	_	_
 11	para	para	ADP	PRP|@N<	_	13	case	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_

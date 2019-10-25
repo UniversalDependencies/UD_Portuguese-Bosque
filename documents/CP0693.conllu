@@ -79,9 +79,9 @@
 33	candidaturas	candidatura	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	30	obj	_	_
 34	que	que	PRON	<rel>|INDP|F|P|@SUBJ>	Gender=Fem|Number=Plur|PronType=Rel	38	nsubj	_	_
 35	possam	poder	VERB	<aux>|V|PR|3P|SUBJ|@FS-N<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	33	acl:relcl	_	_
-36	vir	vir	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	38	aux	_	MWE=vir_a|MWEPOS=AUX
-37	a	a	ADP	PRP|@PRT-AUX<	_	36	compound	_	_
-38	aparecer	aparecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	35	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
+36	vir	vir	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	35	xcomp	_	MWE=vir_a|MWEPOS=AUX
+37	a	a	SCONJ	PRP|@PRT-AUX<	_	38	mark	_	_
+38	aparecer	aparecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	36	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 39	»	»	PUNCT	PU|@PU	_	33	punct	_	ChangedBy=Issue165|SpaceAfter=No
 40	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -150,9 +150,9 @@
 11	liderança	liderança	NOUN	<np-idf>|N|F|S|@<SC	Gender=Fem|Number=Sing	6	nmod	_	_
 12	a	a	ADP	PRP|@N<	_	13	case	_	_
 13	prazo	prazo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	nmod	_	_
-14	estaria	estar	AUX	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	16	aux	_	MWE=estaria_a|MWEPOS=AUX
-15	a	a	ADP	PRP|@PRT-AUX<	_	14	compound	_	_
-16	admitir	admitir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
+14	estaria	estar	VERB	<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	0	root	_	MWE=estaria_a|MWEPOS=AUX
+15	a	a	SCONJ	PRP|@PRT-AUX<	_	16	mark	_	_
+16	admitir	admitir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
 17	desde	desde	ADP	PRP|@<ADVL	_	18	case	_	MWE=desde_já
 18	já	já	ADV	ADV|@P<	_	16	advmod	_	_
 19	que	que	SCONJ	KS|@SUB	_	28	mark	_	_
@@ -291,10 +291,10 @@
 17	fragilizado	fragilizado	ADJ	<mv>|<n>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	11	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 19	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	23	cc	_	_
-20	começam	começar	AUX	<cjt>|<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	MWE=começam_a|MWEPOS=AUX
-21	a	a	ADP	PRP|@PRT-AUX<	_	20	compound	_	_
+20	começam	começar	VERB	<cjt>|<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	conj	_	MWE=começam_a|MWEPOS=AUX
+21	a	a	SCONJ	PRP|@PRT-AUX<	_	23	mark	_	_
 22	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	cop	_	ChangedBy=Issue167
-23	notórias	notório	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	12	conj	_	_
+23	notórias	notório	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	20	xcomp	_	_
 24	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
 25	fracturas	fractura	NOUN	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur	23	nsubj	_	_
 26	internas	interno	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	25	amod	_	ChangedBy=Issue165|SpaceAfter=No
@@ -322,10 +322,10 @@
 # id = 3580
 1	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	PSD	PSD	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	6	nsubj	_	_
-3	tem	ter	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	MWE=tem_de|MWEPOS=AUX
-4	de	de	ADP	PRP|@PRT-AUX<	_	3	compound	_	_
+3	tem	ter	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=tem_de|MWEPOS=AUX
+4	de	de	SCONJ	PRP|@PRT-AUX<	_	6	mark	_	_
 5	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	expl	_	ChangedBy=Issue135
-6	afirmar	afirmar	VERB	<mv>|<se-passive>|V|INF|3S|@ICL-AUX<	Number=Sing|Person=3|VerbForm=Inf	0	root	_	_
+6	afirmar	afirmar	VERB	<mv>|<se-passive>|V|INF|3S|@ICL-AUX<	Number=Sing|Person=3|VerbForm=Inf	3	xcomp	_	_
 7	como	como	ADP	_	_	9	case	_	_
 8	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	oposição	oposição	NOUN	_	Gender=Fem|Number=Sing	6	obj	_	_
