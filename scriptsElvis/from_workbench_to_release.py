@@ -34,6 +34,7 @@ def loc_verbal_aspectual(corpus):
                 token.dephead = antigoRootAUX
                 token.upos = "SCONJ"
                 token.deprel = "mark"
+    for sentence in corpus.sentences.values():
         for token in sentence.tokens:
             if token.upos == "AUX" and token.head_token.upos == "VERB" and token.lemma not in "ser|estar|ir|ter|haver".split("|"):
                 token.deprel = token.head_token.deprel
