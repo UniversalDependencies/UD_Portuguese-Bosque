@@ -4,7 +4,7 @@ set -e
 
 if [ $# -eq 0 ]
   then
-    git -lsremote
+    git ls-remote
     exit
 fi
 
