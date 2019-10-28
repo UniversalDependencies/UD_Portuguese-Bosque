@@ -2,7 +2,7 @@
 # sent_id = CP82-1
 # source = CETEMPúblico n=82 sec=opi sem=97a
 # id = 441
-1	Em	em	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Em_abono_de
+1	Em	em	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=Em_abono_de|MWEPOS=ADP
 2	abono	abono	NOUN	N|@P<	Gender=Masc|Number=Sing	9	obl	_	_
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	PRP|@N<	_	6	case	_	_
@@ -27,11 +27,11 @@
 22	teorizaram	teorizar	VERB	<mv>|V|PS|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	_	_
 23	sobre	sobre	ADP	PRP|@<PIV	_	24	case	_	_
 24	o	o	PRON	<dem>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	22	obj	_	_
-25	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	29	nsubj	_	_
-26	deveria	dever	AUX	<aux>|V|COND|3S|@FS-N<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	29	aux	_	_
+25	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	26	nsubj	_	_
+26	deveria	dever	VERB	<aux>|V|COND|3S|@FS-N<	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	24	acl:relcl	_	_
 27	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	29	cop	_	ChangedBy=Issue167
 28	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
-29	política	política	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	24	acl:relcl	_	_
+29	política	política	NOUN	<np-def>|N|F|S|@<SC	Gender=Fem|Number=Sing	26	xcomp	_	_
 30	externa	externo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	29	amod	_	_
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
 32	Bob	Bob	PROPN	_	Gender=Masc|Number=Sing	29	nmod	_	ChangedBy=Issue119|MWE=Bob_Dole|MWEPOS=PROPN
@@ -107,10 +107,10 @@
 # sent_id = CP82-4
 # source = CETEMPúblico n=82 sec=opi sem=97a
 # id = 444
-1	«	«	PUNCT	PU|@PU	_	23	punct	_	ChangedBy=Issue165|SpaceAfter=No
+1	«	«	PUNCT	PU|@PU	_	21	punct	_	ChangedBy=Issue165|SpaceAfter=No
 2	Um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 3	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	4	det	_	_
-4	poder	poder	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
+4	poder	poder	NOUN	<np-idf>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	21	nsubj	_	ChangedBy=Issue165|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 6	aliado	aliar	VERB	<mv>|<first-cjt>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	_	_
 7	mas	mas	CCONJ	<co-pred>|KC|@CO	_	8	cc	_	_
@@ -125,13 +125,13 @@
 16	União	União	PROPN	_	Gender=Fem|Number=Sing	14	nsubj	_	ChangedBy=Issue119|MWE=União_Europeia|MWEPOS=PROPN
 17	Europeia	Europeia	PROPN	_	Number=Sing	16	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-19	só	só	ADV	ADV|@ADVL>	_	23	advmod	_	_
+19	só	só	ADV	ADV|@ADVL>	_	21	advmod	_	_
 20	lhes	eles	PRON	PERS|M|3P|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Plur|Person=3|PronType=Prs	23	iobj	_	_
-21	pode	poder	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	aux	_	_
+21	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 22	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	23	cop	_	ChangedBy=Issue167
-23	útil	útil	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue165|SpaceAfter=No
-24	»	»	PUNCT	PU|@PU	_	23	punct	_	ChangedBy=Issue165|SpaceAfter=No
-25	.	.	PUNCT	PU|@PU	_	23	punct	_	_
+23	útil	útil	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	21	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
+24	»	»	PUNCT	PU|@PU	_	21	punct	_	ChangedBy=Issue165|SpaceAfter=No
+25	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
 # text = E apelava ao «idealismo e ao pioneirismo» da América como o antídoto capaz de dar sentido ao seu enorme poder.
 # sent_id = CP82-5

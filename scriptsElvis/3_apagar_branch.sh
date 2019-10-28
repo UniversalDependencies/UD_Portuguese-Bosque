@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]
   then
-    git branch -l
+    git ls-remote
     exit
 fi
 
