@@ -42,7 +42,7 @@
 34	de	de	ADP	PRP|@N<	_	35	case	_	_
 35	Barcelona	Barcelona	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
 36	(	(	PUNCT	PU|@PU	_	37	punct	_	ChangedBy=Issue165|SpaceAfter=No
-37	Novembro	novembro	NOUN	<prop>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	33	appos:parataxis	_	_
+37	Novembro	novembro	NOUN	<prop>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	33	parataxis	_	_
 38	de	de	ADP	PRP|@N<	_	39	case	_	_
 39	1995	1995	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	37	nmod	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
 40	)	)	PUNCT	PU|@PU	_	37	punct	_	ChangedBy=Issue165|SpaceAfter=No
@@ -95,7 +95,7 @@
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	7	det	_	_
 7	informação	informação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
-8	permitirão	permitir	VERB	<mv>|V|FUT|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	43	ccomp:parataxis	_	_
+8	permitirão	permitir	VERB	<mv>|V|FUT|3P|IND|@FS-ACC>	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	43	parataxis	_	_
 9	construir	construir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	8	xcomp	_	_
 10	rapidamente	rapidamente	ADV	ADV|@<ADVL	_	9	advmod	_	_
 11	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
@@ -149,10 +149,10 @@
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	Alexandria	Alexandria	PROPN	PROP|@P<	Number=Sing	5	nmod	_	_
 8	não	não	ADV	_	Polarity=Neg	12	advmod	_	_
-9	venha	vir	AUX	<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	MWE=venha_a|MWEPOS=AUX
-10	a	a	ADP	PRP|@PRT-AUX<	_	9	compound	_	_
+9	venha	vir	VERB	<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=venha_a|MWEPOS=AUX
+10	a	a	SCONJ	PRP|@PRT-AUX<	_	12	mark	_	_
 11	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	12	aux:pass	_	_
-12	conhecida	conhecido	ADJ	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing	0	root	_	ChangedBy=Issue141|ChangedBy=Issue91
+12	conhecida	conhecido	ADJ	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing	9	xcomp	_	ChangedBy=Issue141|ChangedBy=Issue91
 13	como	como	ADP	<prd>|PRP|@<SC	_	14	case	_	_
 14	uma	um	NUM	<card>|NUM|F|S|@P<	NumType=Card	12	xcomp	_	ChangedBy=Issue168
 15-16	das	_	_	_	_	_	_	_	_
