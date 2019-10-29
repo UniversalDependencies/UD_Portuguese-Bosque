@@ -8,14 +8,14 @@ if [ $# -eq 0 ]
     exit
 fi
 
-sh scriptsElvis/1_criar_branch.sh $1
+sh scripts/1_criar_branch.sh $1
 mkdir regras
 mkdir regras/$1
 ln -nfrs ~/Dropbox/PIBIC/ACDC-UD/estrutura_ud.py regras/$1
 cat documents/*.conllu > regras/$1/$1.conllu
-cp scriptsElvis/executar_regra.sh regras/$1
-cp scriptsElvis/verificar_regra.sh regras/$1
-cp scriptsElvis/excluir_regra.sh regras/$1
+cp scripts/executar_regra.sh regras/$1
+cp scripts/verificar_regra.sh regras/$1
+cp scripts/excluir_regra.sh regras/$1
 cd regras/$1
 echo "import estrutura_ud
 corpus = estrutura_ud.Corpus(recursivo=True)

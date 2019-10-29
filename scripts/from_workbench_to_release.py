@@ -46,11 +46,11 @@ def loc_verbal_aspectual(corpus):
     return corpus
 
 
-if not os.system("sh scriptsElvis/1_criar_branch.sh " + sys.argv[1]):
+if not os.system("sh scripts/1_criar_branch.sh " + sys.argv[1]):
     corpus = estrutura_ud.Corpus(recursivo=True)
     corpus.load('/home/elvis/Dropbox/tronco/comcorhd.tronco.me/UD_Portuguese-Bosque/www/interrogar-ud/conllu/' + sys.argv[1] + ".conllu")
     corpus = appos_e_ccomp_parataxis(corpus)
     corpus = loc_verbal_aspectual(corpus)
 
     corpus.save('/home/elvis/Dropbox/tronco/comcorhd.tronco.me/UD_Portuguese-Bosque/www/interrogar-ud/conllu/' + sys.argv[1] + ".conllu")
-    os.system("sh scriptsElvis/2_1-commit.sh " + sys.argv[1] + " release_changes")
+    os.system("sh scripts/2_1-commit.sh " + sys.argv[1] + " release_changes")
