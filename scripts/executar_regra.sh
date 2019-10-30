@@ -6,7 +6,7 @@ cd ../../
 pasta=${PWD##*/}
 sudo chmod a+rwx regras/$branch/$branch.conllu
 cp regras/$branch/$branch-2.conllu ~/Dropbox/tronco/comcorhd.tronco.me/$pasta/www/interrogar-ud/conllu/$branch.conllu
-sh scriptsElvis/2_1-commit.sh $branch
+sh scripts/2_1-commit.sh $branch
 mv regras/$branch/$branch-2.conllu regras/$branch/$branch.conllu
 
 if [ $USER != "elvis_desouza99" ];
