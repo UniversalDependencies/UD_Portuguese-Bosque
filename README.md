@@ -167,7 +167,7 @@ UPOS: converted with corrections
 XPOS: manual native
 Features: converted with corrections
 Relations: converted with corrections
-Contributors: Rademaker, Alexandre; Bick, Eckhard; Chalub, Fabricio; Freitas, Cláudia; Paulino-Passos, Guilherme; Rocha, Luisa; Soares-Bastos, Isabela ; Real, Livy; de Paiva, Valeria; Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André; Elvis de Souza; Aline Silveira; Tatiana Cavalcanti; Wograine Evelyn.
+Contributors: Rademaker, Alexandre; Freitas, Cláudia; Souza, Elvis de; Silveira, Aline; Cavalcanti, Tatiana; Evelyn, Wograine; Rocha, Luisa; Soares-Bastos, Isabela; Bick, Eckhard; Chalub, Fabricio; Paulino-Passos, Guilherme ; Real, Livy; de Paiva, Valeria; Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André.
 Contributing: elsewhere
 Contact: arademaker@gmail.com
 ===============================================================================
