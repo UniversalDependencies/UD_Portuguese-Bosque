@@ -59,16 +59,13 @@ cross-validate. After the alignment of the sentences from the two
 versions, the data was split in dev, test and train following the
 distribution of sentences from Zeman et al.
 
-The conversion was implemented by Eckhard Bick and revised by:
+The conversion was implemented by Eckhard Bick and revised mainly by:
 
 - Alexandre Rademaker
-- Fabricio Chalub
 - Claudia Freitas
-- Guilherme Paulino-Passos
-- Luisa Rocha
-- Isabela Soares-Bastos
-- Livy Real
-- Valeria Paiva
+- Fabricio Chalub
+
+(see other contributors below)
 
 The HamleDT conversion was implemented by Dan Zeman and revised by:
 
@@ -167,7 +164,7 @@ UPOS: converted with corrections
 XPOS: manual native
 Features: converted with corrections
 Relations: converted with corrections
-Contributors: Rademaker, Alexandre; Freitas, Cláudia; Souza, Elvis de; Silveira, Aline; Cavalcanti, Tatiana; Evelyn, Wograine; Rocha, Luisa; Soares-Bastos, Isabela; Bick, Eckhard; Chalub, Fabricio; Paulino-Passos, Guilherme ; Real, Livy; de Paiva, Valeria; Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André.
+Contributors: Rademaker, Alexandre; Freitas, Cláudia; de Souza, Elvis; Silveira, Aline; Cavalcanti, Tatiana; Evelyn, Wograine; Rocha, Luisa; Soares-Bastos, Isabela; Bick, Eckhard; Chalub, Fabricio; Paulino-Passos, Guilherme ; Real, Livy; de Paiva, Valeria; Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André.
 Contributing: elsewhere
 Contact: arademaker@gmail.com
 ===============================================================================
