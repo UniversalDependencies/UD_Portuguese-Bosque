@@ -3,7 +3,7 @@
 
 This Universal Dependencies (UD) Portuguese treebank is based on the
 Constraint Grammar converted version of the Bosque, which is part of
-the Floresta Sintá(c)tica treebank. It contains both European 
+the Floresta Sintá(c)tica treebank. It contains both European
 (CETEMPúblico) and Brazilian (CETENFolha) variants.
 
 # Introduction
@@ -164,7 +164,7 @@ UPOS: converted with corrections
 XPOS: manual native
 Features: converted with corrections
 Relations: converted with corrections
-Contributors: Rademaker, Alexandre; Freitas, Cláudia; de Souza, Elvis; Silveira, Aline; Cavalcanti, Tatiana; Evelyn, Wograine; Rocha, Luisa; Soares-Bastos, Isabela; Bick, Eckhard; Chalub, Fabricio; Paulino-Passos, Guilherme ; Real, Livy; de Paiva, Valeria; Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André.
+Contributors: Rademaker, Alexandre; Freitas, Cláudia; de Souza, Elvis; Silveira, Aline; Cavalcanti, Tatiana; Evelyn, Wograine; Rocha, Luisa; Soares-Bastos, Isabela; Bick, Eckhard; Chalub, Fabricio; Paulino-Passos, Guilherme; Real, Livy; de Paiva, Valeria; Zeman, Daniel; Popel, Martin; Mareček, David; Silveira, Natalia; Martins, André
 Contributing: elsewhere
 Contact: arademaker@gmail.com
 ===============================================================================
