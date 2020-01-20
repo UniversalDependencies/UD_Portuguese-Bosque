@@ -59,5 +59,4 @@
     (release #p"documents/" #p"final.txt" #p"final.conllu")))
 
 
-
-
+;; sbcl --load scripts/generate-release.lisp --eval '(in-package :cl-conllu)' --eval '(main)'
