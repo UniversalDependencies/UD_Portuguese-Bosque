@@ -15,7 +15,7 @@ pasta=${PWD##*/}
 git checkout $1
 git pull
 cp ../Interrogat-rio/www/interrogar-ud/conllu/$1.conllu .
-python3 ../ACDC-UD/split_conllu.py $1.conllu
+python3 ../ACDC-UD/split_conllu.py $1.conllu UD_Portuguese-Bosque
 mv $1.conllu Repositorio-Branches/
 git diff
 git add -u
