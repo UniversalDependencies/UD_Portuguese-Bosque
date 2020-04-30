@@ -1,51 +1,66 @@
-(ql:quickload :cl-conllu)
 
-(in-package :conllu.user)
+(ql:quickload '(:cl-conllu :alexandria :cl-ppcre))
 
-(defun get-problems ()
-  (let* ((codes (with-open-file (in "non-projective.txt")
-		  (mapcar #'symbol-name
-			  (loop for c = (read in nil nil)
-				while c
-				collect c))))
-	 (sents1 (remove-if-not (lambda (s)
-				  (member (sentence-id s) codes :test #'equal))
-				(read-conllu "../documents/"))))
-    (write-conllu sents1 #P"non-projective.conllu")))
+(defpackage :working
+  (:use :cl :cl-conllu :alexandria :cl-ppcre))
 
+(in-package :working)
 
-#|
+(defun read-lines (fn)
+  (with-open-file (in fn)
+    (loop for line = (read-line in nil nil)
+	  while line
+	  collect line)))
 
-for apply the changes, we can use the modify commandline interface. 
-grep sent_id non-projective.conllu | head -11 | awk '{print $4}'
-
-test='CF0593 CF0594 CF0595 CF0597 CF0598 CF0599 CF0602 CF0603 CF0605 CF0607 CF0608'; for f in ${=test}; do ~/quicklisp/local-projects/cl-conllu/run-SBCL.lisp modify ../documents/$f.conllu non-projective.conllu > ../documents/$f.new; done
-
-for f in *.new; do mv $f $(basename $f .new).conllu; done
-
-report.err was produced with
-
-cd ~/work/ud-tools
-sh proc-bosque.sh 2> bosque.err
-cat bosque.err | grep -v PASSED | grep Line |  awk '{print $4}' | sort | uniq -c > report.err
-
-|#
+(defun parse-report (pathspec)
+  (let (result)
+    (dolist (fn (directory pathspec) result)
+      (let ((lines (read-lines fn)))
+	(if (not (equal "*** PASSED ***" (car lines)))
+	    (let ((res))
+	      (dolist (line lines)
+		(multiple-value-bind (start end begins ends)
+		    (scan "\\[Line ([0-9]+) Sent (C[FP][0-9]+-[0-9]+) Node [0-9]+\\]: \\[(L[0-9]+) ([a-zA-Z]+) ([A-Za-z-]+)\\]"
+			  line)
+		  (if (and start end)
+		      (push (mapcar (lambda (v)
+				      (subseq line (aref begins v) (aref ends v)))
+				    (list 0 1 2 3 4))
+			    res))))
+	      (push (list (pathname-name fn) res) result)))))))
 
 
-(defparameter *report*
-  (let* ((corpus (read-conllu "~/work/ud-bosque/documents/"))
-	 (report (with-open-file (in "~/work/ud-tools/report.err")
-		   (loop for e1 = (read in nil nil)
-			 for e2 = (read in nil nil)
-			 while (and e1 e2)
-			 collect (cons e1 e2)))))
-    (mapcar (lambda (p) 
-	      (let ((obj (find-if (lambda (s) 
-				    (equal (sentence-meta-value s "sent_id")
-					   (symbol-name (cdr p))))
-				  corpus)))
-		(list (car p) obj (length (sentence-tokens obj))))) 
-	    report)))
+(defun complete-report (entry)
+  (let* ((errors (cadr entry))
+	 (fn     (make-pathname :type "conllu" :name (car entry)
+				:directory '(:absolute :home "work" "ud-bosque" "documents")))
+	 (sents  (read-conllu fn))
+	 res)
+    (mapcar (lambda (e)
+	      (let ((s (find (cadr e) sents :test #'equal :key #'sentence-id)))
+		(push (list :file (car entry)
+			    :sent s
+			    :id   (cadr e)
+			    :size (length (sentence-tokens s))
+			    :line (car e)
+			    :emsg (nth 4 e))
+		      res)))
+	    (remove-duplicates errors :test #'equal :key #'cadr))))
+
+
+(defun report (&key (filter nil) (as-string nil))
+  (let ((res (reduce (lambda (res e)
+		       (append res e)) 
+		     (mappend #'complete-report
+			      (parse-report "reports/validation/*.report"))
+		     :initial-value nil)))
+    (if as-string
+	(progn (mapc (lambda (r)
+		       (format t "- file: ~a id: ~8a size: ~3a line: ~3a emsg: ~a~%"
+			       (getf r :file) (getf r :id) (getf r :size) (getf r :line) (getf r :emsg)))
+		     (if filter (remove-if-not filter res) res))
+	       (values))
+	res)))
 
 
 (remove-if-not (lambda (p) (< (caddr p) 10)) *report*)
