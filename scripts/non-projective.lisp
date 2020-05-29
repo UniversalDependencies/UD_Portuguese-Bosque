@@ -63,6 +63,7 @@
 	res)))
 
 
-(remove-if-not (lambda (p) (< (caddr p) 10)) *report*)
-(sort *report* #'< :key #'caddr)
+;; (remove-if-not (lambda (p) (< (caddr p) 10)) *report*)
+;; (sort *report* #'< :key #'caddr)
+
 
