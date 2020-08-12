@@ -157,7 +157,7 @@ See file LICENSE.txt
 === Machine-readable metadata =================================================
 Data available since: UD v1.2
 License: CC BY-SA 4.0
-Genre: news blog
+Genre: news 
 Includes text: yes
 Lemmas: converted with corrections
 UPOS: converted with corrections
