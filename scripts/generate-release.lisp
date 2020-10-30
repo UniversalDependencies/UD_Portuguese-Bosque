@@ -3,7 +3,7 @@
 
 (in-package :conllu.user)
 
-(defun my-read-file (f)
+(defun read-lines (f)
   (with-open-file (stream f)
     (loop for line = (read-line stream nil)
        while line
@@ -38,7 +38,7 @@
 (defun release (ids output)
   "Generate the release files using the source directory DIR and the
    sentence ids listed in the file IDS, saving the output in OUTPUT."
-  (let ((ids (my-read-file ids))
+  (let ((ids (read-lines ids))
         (sentences (make-hash-table :test #'equal)))
     (mapc (lambda (fn)
 	    (dolist (s (prepare-for-release (read-conllu fn)))
