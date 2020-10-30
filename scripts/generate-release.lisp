@@ -1,7 +1,7 @@
 (ql:quickload :cl-conllu)
 (ql:quickload :cl-fad)
 
-(in-package :cl-conllu)
+(in-package :conllu.user)
 
 (defun my-read-file (f)
   (with-open-file (stream f)
@@ -35,15 +35,15 @@
           (remove "d2d" (sentence-meta s) :test #'string= :key #'car)))
   conll)
 
-(defun release (dir ids output)
+(defun release (ids output)
   "Generate the release files using the source directory DIR and the
    sentence ids listed in the file IDS, saving the output in OUTPUT."
   (let ((ids (my-read-file ids))
         (sentences (make-hash-table :test #'equal)))
-    (dolist (f (cl-fad:list-directory dir))
-      (unless (cl-fad:directory-exists-p f)
-        (dolist (s (prepare-for-release (read-conllu f)))
-          (setf (gethash (sentence-meta-value s "sent_id") sentences) s))))
+    (mapc (lambda (fn)
+	    (dolist (s (prepare-for-release (read-conllu fn)))
+              (setf (gethash (sentence-id s) sentences) s)))
+	  (directory "documents/*.conllu"))
     (write-conllu (mapcar (lambda (x)
 			    (assert (gethash x sentences))
 			    (gethash x sentences))
@@ -52,11 +52,9 @@
 
 
 (defun main ()
-  (release #p"documents/" #p"pt-ud-dev.txt" #p"pt-ud-dev.conllu")
-  (release #p"documents/" #p"pt-ud-test.txt" #p"pt-ud-test.conllu")
-  (release #p"documents/" #p"pt-ud-train.txt" #p"pt-ud-train.conllu")
-  (when (probe-file #p"final.txt")
-    (release #p"documents/" #p"final.txt" #p"final.conllu")))
+  (release #p"pt_bosque-ud-dev.txt"   #p"pt_bosque-ud-dev.conllu")
+  (release #p"pt_bosque-ud-test.txt"  #p"pt_bosque-ud-test.conllu")
+  (release #p"pt_bosque-ud-train.txt" #p"pt_bosque-ud-train.conllu"))
 
 
 ;; sbcl --load scripts/generate-release.lisp --eval '(in-package :cl-conllu)' --eval '(main)'
