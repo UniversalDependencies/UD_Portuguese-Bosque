@@ -117,15 +117,15 @@
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	supercomputação	supercomputação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
-8	são	ser	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	as	o	PRON	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Dem	8	obj	_	_
+8	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	as	o	PRON	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Dem	0	root	_	_
 10	chamadas	chamado	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur	9	acl	_	_
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	ChangedBy=Issue165|SpaceAfter=No
 12	máquinas	máquina	NOUN	<first-cjt>|<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	10	xcomp	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	multiprocessamento	multiprocessamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 15	vectorial	vectorial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	ChangedBy=Issue165|SpaceAfter=No
-16	»	»	PUNCT	PU|@PU	_	23	punct	_	d2d:#106
+16	»	»	PUNCT	PU|@PU	_	12	punct	_	d2d:#106
 17	(	(	PUNCT	PU|@PU	_	20	punct	_	ChangedBy=Issue165|SpaceAfter=No
 18	como	como	ADP	<com>|PRP|@N<PRED	_	20	case	_	_
 19	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	20	det	_	_
@@ -136,7 +136,7 @@
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
 25	processamento	processamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
 26	paralelo	paralelo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	25	amod	_	_
-27	--	--	PUNCT	PU|@PU	_	10	punct	_	_
+27	--	--	PUNCT	PU|@PU	_	35	punct	_	_
 28	de	de	ADP	PRP|@KOMP<	_	29	case	_	_
 29	que	que	PRON	<rel>|INDP|F|P|@P<	Gender=Fem|Number=Sing|PronType=Rel	32	obl	_	_
 30	a	o	DET	<artd>|ART|F|S|@>A	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
@@ -152,7 +152,7 @@
 39	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	Thinking	Thinking	PROPN	_	Gender=Fem|Number=Sing	35	nmod	_	ChangedBy=Issue119|MWE=Thinking_Machines|MWEPOS=PROPN
 41	Machines	Machines	PROPN	_	Number=Sing	40	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
-42	.	.	PUNCT	PU|@PU	_	8	punct	_	_
+42	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
 # text = Ao contrário do processamento vectorial, em que vários processadores utilizam a mesma memória -- e onde, na opinião de Heitor Pina, apenas poderão existir progressos marginais --, as máquinas de processamento paralelo, surgidas nos anos 60 e generalizadas no final da década de 80, têm uma memória dedicada para cada processador, acabando com os «engarrafamentos» na partilha da memória.
 # sent_id = CP526-4
@@ -165,7 +165,7 @@
 4	o	o	DET	<artd>|<-sam>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	processamento	processamento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	2	nmod	_	_
 6	vectorial	vectorial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	ChangedBy=Issue165|SpaceAfter=No
-7	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 8	em	em	ADP	PRP|@ADVL>	_	9	case	_	_
 9	que	que	PRON	<rel>|INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Rel	12	obl	_	_
 10	vários	vários	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	11	det	_	_
@@ -174,24 +174,24 @@
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 14	mesma	mesmo	ADJ	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	15	amod	_	_
 15	memória	memória	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	12	obj	_	_
-16	--	--	PUNCT	PU|@PU	_	29	punct	_	_
-17	e	e	CCONJ	<co-fcl>|<co-advl>|KC|@CO	_	29	cc	_	d2d:#106
-18	onde	onde	PRON	<rel>|ADV|@ADVL>	PronType=Rel	29	obl	_	ChangedBy=Issue165|SpaceAfter=No
+16	--	--	PUNCT	PU|@PU	_	28	punct	_	_
+17	e	e	CCONJ	<co-fcl>|<co-advl>|KC|@CO	_	28	cc	_	d2d:#106
+18	onde	onde	PRON	<rel>|ADV|@ADVL>	PronType=Rel	28	obl	_	ChangedBy=Issue165|SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 20-21	na	_	_	_	_	_	_	_	_
 20	em	em	ADP	<sam->|PRP|@ADVL>	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	opinião	opinião	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	29	obl	_	ChangedBy=Issue137
+22	opinião	opinião	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	28	obl	_	ChangedBy=Issue137
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	Heitor	Heitor	PROPN	_	Gender=Masc|Number=Sing	22	nmod	_	ChangedBy=Issue119|MWE=Heitor_Pina|MWEPOS=PROPN
 25	Pina	Pina	PROPN	_	Number=Sing	24	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	22	punct	_	_
-27	apenas	apenas	ADV	<rel>|ADV|@ADVL>	_	29	advmod	_	_
+27	apenas	apenas	ADV	<rel>|ADV|@ADVL>	_	28	advmod	_	_
 28	poderão	poder	VERB	<cjt>|<aux>|V|FUT|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_
 29	existir	existir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	28	xcomp	_	_
 30	progressos	progresso	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	28	nsubj	_	_
 31	marginais	marginal	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	30	amod	_	_
-32	--	--	PUNCT	PU|@PU	_	29	punct	_	ChangedBy=Issue165|SpaceAfter=No
+32	--	--	PUNCT	PU|@PU	_	28	punct	_	ChangedBy=Issue165|SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 34	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	35	det	_	_
 35	máquinas	máquina	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	56	nsubj	_	_
