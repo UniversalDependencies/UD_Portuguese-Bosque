@@ -27,6 +27,8 @@
     (dolist (tk (sentence-tokens s))
       (setf (slot-value tk 'misc) (remove-d2d (slot-value tk 'misc)))
       (setf (slot-value tk 'feats) (remove-feats "Gender" "Unsp" (slot-value tk 'feats)))
+      (setf (slot-value tk 'feats) (remove-feats "Number" "Unsp" (slot-value tk 'feats)))
+      (setf (slot-value tk 'feats) (remove-feats "Number" "Neut" (slot-value tk 'feats)))
       (setf (slot-value tk 'misc) (remove-feature "ChangedBy" (slot-value tk 'misc)))
       (when (or (= 0 (length (slot-value tk 'misc))) (null (slot-value tk 'misc)))
         (setf (slot-value tk 'misc) "_")))
