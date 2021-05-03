@@ -1,5 +1,4 @@
 (ql:quickload :cl-conllu)
-(ql:quickload :cl-fad)
 
 (in-package :conllu.user)
 
@@ -57,4 +56,4 @@
   (release #p"pt_bosque-ud-train.txt" #p"pt_bosque-ud-train.conllu"))
 
 
-;; sbcl --load scripts/generate-release.lisp --eval '(in-package :cl-conllu)' --eval '(main)'
+;; sbcl --load scripts/generate-release.lisp --eval '(conllu.user::main)'
