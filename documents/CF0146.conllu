@@ -2,8 +2,8 @@
 # sent_id = CF146-1
 # source = CETENFolha n=146 cad=Mais! sec=nd sem=94b
 # id = 575
-1	El	El	PROPN	_	Gender=Masc|Number=Sing	0	root	_	ChangedBy=Issue119|MWE=El_País|MWEPOS=PROPN
-2	País	País	PROPN	_	Number=Sing	1	flat:name	_	ChangedBy=Issue119
+1	El	El	PROPN	_	Gender=Masc|Number=Sing	0	root	_	MWE=El_País|MWEPOS=PROPN
+2	País	País	PROPN	_	Number=Sing	1	flat:name	_	_
 
 # text = Mas o deixaram partir.
 # sent_id = CF146-2
@@ -12,7 +12,7 @@
 1	Mas	mas	CCONJ	KC|@CO	_	3	cc	_	_
 2	o	ele	PRON	<first-cjt>|PERS|M|3S|ACC|@NPHR	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
 3	deixaram	deixar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-UTT	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
-4	partir	partir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	3	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
+4	partir	partir	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	3	xcomp	_	SpaceAfter=No
 5	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Infante -- E pagaram as passagens.
@@ -24,7 +24,7 @@
 3	E	e	CCONJ	KC|@CO	_	4	cc	_	_
 4	pagaram	pagar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	1	parataxis	_	_
 5	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
-6	passagens	passagem	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	ChangedBy=Issue165|SpaceAfter=No
+6	passagens	passagem	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	SpaceAfter=No
 7	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Me deram uma licença de dois anos, acreditavam que o exílio ia me neutralizar.
@@ -36,8 +36,8 @@
 3	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	licença	licença	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	2	obj	_	_
 5	de	de	ADP	PRP|@N<	_	7	case	_	_
-6	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nummod	_	ChangedBy=Issue168
-7	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+6	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nummod	_	_
+7	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 9	acreditavam	acreditar	VERB	<mv>|V|IMPF|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	7	acl:relcl	_	_
 10	que	que	SCONJ	KS|@SUB	_	15	mark	_	_
@@ -45,7 +45,7 @@
 12	exílio	exílio	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	15	nsubj	_	_
 13	ia	ir	AUX	<aux>|V|IMPF|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	aux	_	_
 14	me	eu	PRON	<refl>|PERS|M|1S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=1|PronType=Prs	15	obj	_	_
-15	neutralizar	neutralizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	ccomp	_	ChangedBy=Issue165|SpaceAfter=No
+15	neutralizar	neutralizar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	9	ccomp	_	SpaceAfter=No
 16	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Tinha uma família para sustentar, e pensavam que isso me impediria de fazer qualquer coisa.
@@ -56,9 +56,9 @@
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	família	família	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	_
 4	para	para	SCONJ	PRP|@N<	_	5	mark	_	_
-5	sustentar	sustentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	acl	_	ChangedBy=Issue165|SpaceAfter=No
-6	,	,	PUNCT	PU|@PU	_	8	punct	_	d2d:#106
-7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	8	cc	_	d2d:#106
+5	sustentar	sustentar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	acl	_	SpaceAfter=No
+6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
+7	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	8	cc	_	_
 8	pensavam	pensar	VERB	<mv>|<cjt>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	conj	_	_
 9	que	que	SCONJ	KS|@SUB	_	12	mark	_	_
 10	isso	isso	PRON	<dem>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Dem	12	nsubj	_	_
@@ -67,7 +67,7 @@
 13	de	de	SCONJ	PRP|@<PIV	_	14	mark	_	_
 14	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	12	xcomp	_	_
 15	qualquer	qualquer	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Ind	16	det	_	_
-16	coisa	coisa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	ChangedBy=Issue165|SpaceAfter=No
+16	coisa	coisa	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	14	obj	_	SpaceAfter=No
 17	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
 # text = Pensavam que meu livro «Três Tristes Tigres» seria recebido sem grande estardalhaço.
@@ -78,15 +78,15 @@
 2	que	que	SCONJ	KS|@SUB	_	11	mark	_	_
 3	meu	meu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	4	det	_	_
 4	livro	livro	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj:pass	_	_
-5	«	«	PUNCT	PU|@PU	_	6	punct	_	ChangedBy=Issue165|SpaceAfter=No
-6	Três	Três	PROPN	_	Gender=Masc|Number=Sing	4	appos	_	ChangedBy=Issue119|MWE=Três_Tristes_Tigres|MWEPOS=PROPN
-7	Tristes	Tristes	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119
-8	Tigres	Tigres	PROPN	_	Number=Sing	6	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+5	«	«	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
+6	Três	Três	PROPN	_	Gender=Masc|Number=Sing	4	appos	_	MWE=Três_Tristes_Tigres|MWEPOS=PROPN
+7	Tristes	Tristes	PROPN	_	Number=Sing	6	flat:name	_	_
+8	Tigres	Tigres	PROPN	_	Number=Sing	6	flat:name	_	SpaceAfter=No
 9	»	»	PUNCT	PU|@PU	_	6	punct	_	_
 10	seria	ser	AUX	<aux>|V|COND|3S|@FS-<ACC	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	aux:pass	_	_
 11	recebido	receber	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	1	ccomp	_	_
 12	sem	sem	ADP	PRP|@<ADVL	_	14	case	_	_
 13	grande	grande	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	14	amod	_	_
-14	estardalhaço	estardalhaço	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	ChangedBy=Issue137|ChangedBy=Issue165|SpaceAfter=No
+14	estardalhaço	estardalhaço	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	SpaceAfter=No
 15	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 

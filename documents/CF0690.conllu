@@ -7,7 +7,7 @@
 3	lança	lançar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	candidato	candidato	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	3	obj	_	_
 5	em	em	ADP	PRP|@<ADVL	_	6	case	_	_
-6	2003	2003	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	3	obl	_	ChangedBy=Issue168
+6	2003	2003	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	3	obl	_	_
 
 # text = O presidente argentino, Carlos Menem, disse que lançará sua candidatura para a eleição de 2003 se for eleito em 1995.
 # sent_id = CF690-2
@@ -15,10 +15,10 @@
 # id = 2895
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	presidente	presidente	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj	_	_
-3	argentino	argentino	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	ChangedBy=Issue165|SpaceAfter=No
+3	argentino	argentino	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	2	amod	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-5	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	ChangedBy=Issue119|MWE=Carlos_Menem|MWEPOS=PROPN
-6	Menem	Menem	PROPN	_	Number=Sing	5	flat:name	_	ChangedBy=Issue119|ChangedBy=Issue165|SpaceAfter=No
+5	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	MWE=Carlos_Menem|MWEPOS=PROPN
+6	Menem	Menem	PROPN	_	Number=Sing	5	flat:name	_	SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 8	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9	que	que	SCONJ	KS|@SUB	_	10	mark	_	_
@@ -29,12 +29,12 @@
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	eleição	eleição	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
-17	2003	2003	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	15	nmod	_	ChangedBy=Issue168
+17	2003	2003	NUM	<year>|<card>|<date>|NUM|M|P|@P<	NumType=Card	15	nmod	_	_
 18	se	se	SCONJ	KS|@SUB	_	20	mark	_	_
 19	for	ser	AUX	<aux>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	aux:pass	_	_
 20	eleito	eleger	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	advcl	_	_
 21	em	em	ADP	PRP|@<ADVL	_	22	case	_	_
-22	1995	1995	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	20	obl	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+22	1995	1995	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	20	obl	_	SpaceAfter=No
 23	.	.	PUNCT	PU|@PU	_	8	punct	_	_
 
 # text = Depois de dois mandatos, Menem não poderia ser reeleito em 1999.
@@ -43,8 +43,8 @@
 # id = 2896
 1	Depois	depois	ADV	ADV|@ADVL>	_	10	advmod	_	_
 2	de	de	ADP	PRP|@A<	_	4	case	_	_
-3	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
-4	mandatos	mandato	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl	_	ChangedBy=Issue165|SpaceAfter=No
+3	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	_
+4	mandatos	mandato	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	1	obl	_	SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 6	Menem	Menem	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	8	nsubj:pass	_	_
 7	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
@@ -52,25 +52,25 @@
 9	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	10	aux:pass	_	_
 10	reeleito	reeleger	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	8	xcomp	_	_
 11	em	em	ADP	PRP|@<ADVL	_	12	case	_	_
-12	1999	1999	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	10	obl	_	ChangedBy=Issue165|ChangedBy=Issue168|SpaceAfter=No
+12	1999	1999	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	10	obl	_	SpaceAfter=No
 13	.	.	PUNCT	PU|@PU	_	10	punct	_	_
 
 # text = «Espero quatro anos e volto a me apresentar», disse.
 # sent_id = CF690-4
 # source = CETENFolha n=690 cad=Mundo sec=pol sem=94a
 # id = 2897
-1	«	«	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
+1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
 2	Espero	esperar	VERB	<mv>|<first-cjt>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	12	parataxis	_	_
-3	quatro	quatro	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
+3	quatro	quatro	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	_
 4	anos	ano	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	2	obj	_	_
-5	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	d2d:#106
+5	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	9	cc	_	_
 6	volto	voltar	VERB	<mv>|<cjt>|V|PR|1S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	conj	_	MWE=volto_a|MWEPOS=AUX
 7	a	a	SCONJ	PRP|@<PIV	_	9	mark	_	_
 8	me	eu	PRON	<refl>|PERS|M|1S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=1|PronType=Prs	9	obj	_	_
-9	apresentar	apresentar	VERB	<mv>|V|INF|@ICL-STA	VerbForm=Inf	6	xcomp	_	ChangedBy=Issue165|SpaceAfter=No
-10	»	»	PUNCT	PU|@PU	_	2	punct	_	ChangedBy=Issue165|SpaceAfter=No
+9	apresentar	apresentar	VERB	<mv>|V|INF|@ICL-STA	VerbForm=Inf	6	xcomp	_	SpaceAfter=No
+10	»	»	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	2	punct	_	_
-12	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	ChangedBy=Issue165|SpaceAfter=No
+12	disse	dizer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 13	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Bombas matam duas pessoas no Irã
@@ -79,35 +79,35 @@
 # id = 2898
 1	Bombas	bomba	NOUN	<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	2	nsubj	_	_
 2	matam	matar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	4	nummod	_	ChangedBy=Issue168
+3	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	4	nummod	_	_
 4	pessoas	pessoa	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	_
 5-6	no	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@<ADVL	_	7	case	_	_
 6	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
-7	Irã	Irã	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	ChangedBy=Issue137
+7	Irã	Irã	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	2	obl	_	_
 
 # text = Duas bombas mataram duas pessoas em Teerã ontem, segundo a agência oficial de notícias «Irna».
 # sent_id = CF690-6
 # source = CETENFolha n=690 cad=Mundo sec=pol sem=94a
 # id = 2899
-1	Duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	2	nummod	_	ChangedBy=Issue168
+1	Duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	2	nummod	_	_
 2	bombas	bomba	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	3	nsubj	_	_
 3	mataram	matar	VERB	<mv>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	_
-4	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	5	nummod	_	ChangedBy=Issue168
+4	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	5	nummod	_	_
 5	pessoas	pessoa	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	3	obj	_	_
 6	em	em	ADP	PRP|@<ADVL	_	7	case	_	_
-7	Teerã	Teerã	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	ChangedBy=Issue137
-8	ontem	ontem	ADV	ADV|@<ADVL	_	3	advmod	_	ChangedBy=Issue165|SpaceAfter=No
+7	Teerã	Teerã	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	_
+8	ontem	ontem	ADV	ADV|@<ADVL	_	3	advmod	_	SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 10	segundo	segundo	ADP	PRP|@<ADVL	_	12	case	_	_
 11	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	agência	agência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	ChangedBy=Issue137
+12	agência	agência	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	obl	_	_
 13	oficial	oficial	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	amod	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	notícias	notícia	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	12	nmod	_	_
-16	«	«	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
-17	Irna	Irna	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	15	appos	_	ChangedBy=Issue165|SpaceAfter=No
-18	»	»	PUNCT	PU|@PU	_	17	punct	_	ChangedBy=Issue165|SpaceAfter=No
+16	«	«	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
+17	Irna	Irna	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	15	appos	_	SpaceAfter=No
+18	»	»	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
 # text = Não foram apontados suspeitos pelo atentado embora tenha sido dito que a polícia achou pistas dos terroristas.
@@ -134,6 +134,6 @@
 17-18	dos	_	_	_	_	_	_	_	_
 17	de	de	ADP	<sam->|PRP|@N<	_	19	case	_	_
 18	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-19	terroristas	terrorista	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	ChangedBy=Issue165|SpaceAfter=No
+19	terroristas	terrorista	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	SpaceAfter=No
 20	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
