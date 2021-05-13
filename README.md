@@ -127,6 +127,16 @@ See file LICENSE.txt
 
 # Changelog
 
+2021-05-01 v2.8
+
+  * Fixed many validation errors related to non projective caused by
+    punctuation (#265). Issue not closed.
+	
+  * Removed Gender=Unsp given discussion in
+    https://github.com/UniversalDependencies/docs/issues/780
+	
+  * Other issues: #295, #296, #294, #278, #293.
+
 2018-04-15 v2.2
   * Repository renamed from UD_Portuguese to UD_Portuguese-Bosque. The
     'fixed' relations were revised.
