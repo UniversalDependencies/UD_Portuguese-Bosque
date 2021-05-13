@@ -1,13 +1,13 @@
-Running the following version of tools/evaluate_treebank.pl:
-commit d71d1b63fd448a8b098d4b5a0329f8da3f7413b0
+Running the following version of UD tools:
+commit ca3b862e9e2871c76cd91bf78ffb089c0c60184d
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sat Apr 21 19:02:58 2018 +0200
+Date:   Thu May 6 20:16:19 2021 +0200
 Evaluating the following revision of UD_Portuguese-Bosque:
-commit 61cea95767f8f9d9e4761551dbfb8af3b5c3ca4e
-Merge: 926b91419 52a59eded
+commit 2e5acc04a70e52a9c4e5477a030203d8fe885e48
+Merge: 8c3942863 625982f78
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Size: counted 227825 of 227825 words (nodes).
-Size: min(0, log((N/1000)**2)) = 10.8571555807644.
+Size: counted 227826 of 227826 words (nodes).
+Size: min(0, log((N/1000)**2)) = 10.857164359413.
 Size: maximum value 13.815511 is for 1000000 words or more.
 Split: Found more than 10000 training words.
 Split: Found at least 10000 development words.
@@ -15,27 +15,17 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 0.9.
 Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.9.
-Features: 145658 out of 227825 total words have one or more features.
+Features: 145658 out of 227826 total words have one or more features.
 Features: source of annotation (from README) factor is 0.9.
 Universal relations: 35 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.9.
-Udapi: found 2170 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 227825 words.
+Udapi:
+               TOTAL       1698
+Udapi: found 1698 bugs.
+Udapi: worst expected case (threshold) is one bug per 10 words. There are 227826 words.
 Genres: found 1 out of 17 known.
 validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-dev.conllu
-[Line 307 Sent CF895-1 Node 24]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [27]
-[Line 332 Sent CF895-2 Node 10]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [11, 12]
-[Line 363 Sent CF895-3 Node 8]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [10]
-[Line 542 Sent CF897-5 Node 10]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [11]
-[Line 542 Sent CF897-5 Node 10]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [6, 7, 8, 9]
-[Line 1352 Sent CF905-3 Node 15]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [17]
-[Line 1405 Sent CF905-5 Node 14]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [16]
-[Line 1736 Sent CF909-2 Node 1]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [7, 8, 9, 10, 11]
-[Line 1797 Sent CF909-3 Node 30]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [31]
-...suppressing further errors regarding Syntax
-Syntax errors: 48
-*** FAILED *** with 48 errors
-Exit code: 1
+*** PASSED ***
 validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-test.conllu
 [Line 24 Sent CP981-2 Node 1]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [2, 3, 4, 5, 6, 7, 8, 9]
 [Line 92 Sent CP981-4 Node 4]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [2, 3]
@@ -47,32 +37,32 @@ validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-test.conllu
 [Line 1081 Sent CP987-3 Node 16]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [17, 18, 19]
 [Line 1200 Sent CP988-4 Node 5]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [6]
 ...suppressing further errors regarding Syntax
-Syntax errors: 71
-*** FAILED *** with 71 errors
+Syntax errors: 15
+*** FAILED *** with 15 errors
 Exit code: 1
 validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-train.conllu
-[Line 94 Sent CP1-4 Node 28]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [31, 43, 51]
-[Line 119 Sent CP1-4 Node 51]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [55]
-[Line 119 Sent CP1-4 Node 51]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [28]
-[Line 186 Sent CP1-5 Node 40]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [41, 42, 43]
-[Line 261 Sent CP2-1 Node 42]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [54]
-[Line 314 Sent CP2-2 Node 18]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [20]
-[Line 373 Sent CP2-4 Node 10]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [9]
-[Line 416 Sent CP2-4 Node 51]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [53]
-[Line 416 Sent CP2-4 Node 51]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
+[Line 9101 Sent CP48-3 Node 29]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [20, 21, 22, 23, 24, 25, 26, 27, 28]
+[Line 9102 Sent CP48-3 Node 30]: [L3 Syntax punct-is-nonproj] Punctuation must not be attached non-projectively over nodes [20, 21, 22, 23, 24, 25, 26, 27, 28]
+[Line 33100 Sent CP183-1 Node 36]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [39, 43]
+[Line 33208 Sent CP184-4 Node 7]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [5]
+[Line 33236 Sent CP184-5 Node 9]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [11]
+[Line 33481 Sent CP186-1 Node 35]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [38]
+[Line 33524 Sent CP186-2 Node 29]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [36]
+[Line 33966 Sent CP188-7 Node 31]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [33]
+[Line 34733 Sent CP192-6 Node 14]: [L3 Syntax punct-causes-nonproj] Punctuation must not cause non-projectivity of nodes [17]
 ...suppressing further errors regarding Syntax
-Syntax errors: 1746
-*** FAILED *** with 1746 errors
+Syntax errors: 1368
+*** FAILED *** with 1368 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.9) = 0.0692307692307692
 (weight=0.0769230769230769) * (score{genres}=0.0588235294117647) = 0.00452488687782805
 (weight=0.0769230769230769) * (score{lemmas}=0.9) = 0.0692307692307692
-(weight=0.256410256410256) * (score{size}=0.785867126315178) = 0.201504391362866
+(weight=0.256410256410256) * (score{size}=0.78586776173495) = 0.201504554291013
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.9) = 0.0692307692307692
-(weight=0.307692307692308) * (score{udapi}=0.904751453966861) = 0.278385062759034
+(weight=0.307692307692308) * (score{udapi}=0.925469437202075) = 0.284759826831408
 (weight=0.0769230769230769) * (score{udeprels}=0.851351351351351) = 0.0654885654885655
-(TOTAL score=0.808877265462653) * (availability=1) * (validity=0.01) = 0.00808877265462653
+(TOTAL score=0.815252192463173) * (availability=1) * (validity=0.01) = 0.00815252192463173
 STARS = 0
-UD_Portuguese-Bosque	0.00808877265462653	0
+UD_Portuguese-Bosque	0.00815252192463173	0
