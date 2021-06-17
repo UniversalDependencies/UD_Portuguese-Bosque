@@ -22,8 +22,8 @@
 
 ;; 	  (setf (slot-value t1 'misc) (format nil "MWE=não_só|MWEPOS=ADV")))))
 
-(defun is (a v)
-  (equal (string-downcase a) v))
+(defmacro is (a v)
+  `(equal (string-downcase ,a) ,v))
 
 (defun fix-sentence1 (s flag)
   (loop for tk in (sentence-tokens s)
