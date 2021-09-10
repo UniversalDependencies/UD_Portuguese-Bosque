@@ -1,8 +1,11 @@
 
+(ql:quickload :cl-conllu)
 
-(defun get-table ()
-  (loop for s in dados
-	with deps = (list "conj" "advmod")
+(in-package :conllu.user)
+
+(defun get-table (sents)
+  (loop for s in sents
+	with deps = (list "conj" "advmod" "cc" "parataxis")
 	append (loop for tk in (sentence-tokens s)
 		     when (equal (token-upostag tk) "VERB")
 		       collect (list 
@@ -21,11 +24,10 @@
 
 
 
-(defun print-table ()
-  (with-open-file (out "valencias.csv" :if-exists :supersede :direction :output)
-    (mapc
-     (lambda (res)
-       (destructuring-bind (lemma feats sent args)
-	   res
-	 (format out "~a,~a,~a,~{~a~^ ~}~%" lemma feats sent args)))
-     (get-table))))
+(defun report-table (out)
+  (mapc
+   (lambda (res)
+     (destructuring-bind (lemma feats sent args)
+	 res
+       (format out "~a,~a,~a,~{~a~^ ~}~%" lemma feats sent args)))
+   (get-table (cl-conllu:read-conllu "~/work/ud-portuguese-bosque/documents/"))))
