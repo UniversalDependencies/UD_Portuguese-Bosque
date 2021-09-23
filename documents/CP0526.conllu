@@ -118,10 +118,10 @@
 6	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	supercomputação	supercomputação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	4	nmod	_	_
 8	são	ser	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
-9	as	o	PRON	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Dem	0	root	_	_
-10	chamadas	chamado	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur	9	acl	_	_
+9	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
+10	chamadas	chamado	ADJ	_	Gender=Fem|Number=Plur	12	amod	_	_
 11	«	«	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
-12	máquinas	máquina	NOUN	<first-cjt>|<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	10	xcomp	_	_
+12	máquinas	máquina	NOUN	<first-cjt>|<np-idf>|N|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
 14	multiprocessamento	multiprocessamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	_
 15	vectorial	vectorial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	14	amod	_	SpaceAfter=No
@@ -131,10 +131,10 @@
 19	alguns	algum	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	20	det	_	_
 20	Cray	Cray	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No
 21	)	)	PUNCT	PU|@PU	_	20	punct	_	_
-22	e	e	CCONJ	<co-sc>|KC|@CO	_	23	cc	_	_
-23	as	a	PRON	<cjt>|<dem>|DET|F|P|@<SC	Gender=Fem|Number=Plur|PronType=Dem	12	conj	_	_
+22	e	e	CCONJ	<co-sc>|KC|@CO	_	25	cc	_	_
+23	as	a	PRON	_	Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
 24	de	de	ADP	PRP|@N<	_	25	case	_	_
-25	processamento	processamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	23	nmod	_	_
+25	processamento	processamento	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	12	conj	_	_
 26	paralelo	paralelo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	25	amod	_	_
 27	--	--	PUNCT	PU|@PU	_	35	punct	_	_
 28	de	de	ADP	PRP|@KOMP<	_	29	case	_	_
@@ -144,7 +144,7 @@
 32	conhecida	conhecido	NOUN	<mv>|V|PCP|F|S|@ICL-SUBJ>	Gender=Fem|Number=Sing	35	csubj	_	_
 33	é	ser	AUX	<cjt>|<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	35	cop	_	_
 34	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-35	Connection	Connection	PROPN	_	Gender=Fem|Number=Sing	23	acl:relcl	_	MWE=Connection_Machine|MWEPOS=PROPN
+35	Connection	Connection	PROPN	_	Gender=Fem|Number=Sing	25	acl:relcl	_	MWEPOS=PROPN
 36	Machine	Machine	PROPN	_	Number=Sing	35	flat:name	_	SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	40	punct	_	_
 38-39	da	_	_	_	_	_	_	_	_
@@ -152,7 +152,7 @@
 39	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	Thinking	Thinking	PROPN	_	Gender=Fem|Number=Sing	35	nmod	_	MWE=Thinking_Machines|MWEPOS=PROPN
 41	Machines	Machines	PROPN	_	Number=Sing	40	flat:name	_	SpaceAfter=No
-42	.	.	PUNCT	PU|@PU	_	9	punct	_	_
+42	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
 # text = Ao contrário do processamento vectorial, em que vários processadores utilizam a mesma memória -- e onde, na opinião de Heitor Pina, apenas poderão existir progressos marginais --, as máquinas de processamento paralelo, surgidas nos anos 60 e generalizadas no final da década de 80, têm uma memória dedicada para cada processador, acabando com os «engarrafamentos» na partilha da memória.
 # sent_id = CP526-4
