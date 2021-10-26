@@ -40,7 +40,7 @@
 19	domingo	domingo	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	_
 20	em	em	ADP	PRP|@<ADVL	_	21	case	_	_
 21	Newquay	Newquay	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	17	obl	_	SpaceAfter=No
-22	,	,	PUNCT	PU|@PU	_	17	punct	_	_
+22	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 23	Inglaterra	Inglaterra	PROPN	PROP|F|S|@N<PRED	Gender=Fem|Number=Sing	21	appos	_	SpaceAfter=No
 24	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -65,7 +65,7 @@
 13	de	de	ADP	<sam->|PRP|@N<	_	15	case	_	_
 14	esta	este	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	15	det	_	_
 15	prova	prova	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
-16	,	,	PUNCT	PU|@PU	_	4	punct	_	_
+16	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 17	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	18	nsubj	_	_
 18	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	MWE=está_a|MWEPOS=AUX
 19	a	a	SCONJ	PRP|@PRT-AUX<	_	20	mark	_	_
@@ -126,7 +126,7 @@
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	João	João	PROPN	_	Gender=Masc|Number=Sing	28	nsubj	_	MWE=João_Macedo|MWEPOS=PROPN
 6	Macedo	Macedo	PROPN	_	Number=Sing	5	flat:name	_	SpaceAfter=No
-7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
+7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 8	André	André	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	MWE=André_Pedroso|MWEPOS=PROPN
 9	Pedroso	Pedroso	PROPN	_	Number=Sing	8	flat:name	_	_
 10	(	(	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
@@ -143,13 +143,13 @@
 21	em	em	ADP	<cjt>|PRP|@N<PRED	_	22	case	_	_
 22	sub-16	sub-16	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	conj	_	SpaceAfter=No
 23	)	)	PUNCT	PU|@PU	_	22	punct	_	_
-24	estão	estar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+24	estão	estar	AUX	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	28	cop	_	_
 25	já	já	ADV	ADV|@<ADVL	_	28	advmod	_	_
 26-27	nas	_	_	_	_	_	_	_	_
 26	em	em	ADP	<sam->|PRP|@<SA	_	28	case	_	_
 27	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	28	det	_	_
-28	meias-finais	meia-final	NOUN	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	24	obl	_	SpaceAfter=No
-29	.	.	PUNCT	PU|@PU	_	24	punct	_	_
+28	meias-finais	meia-final	NOUN	<n>|<np-def>|ADJ|F|P|@P<	Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
+29	.	.	PUNCT	PU|@PU	_	28	punct	_	_
 
 # text = NBA sem problemas laborais
 # sent_id = CP755-6
@@ -177,7 +177,7 @@
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	NBA	NBA	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
-12	,	,	PUNCT	PU|@PU	_	2	punct	_	_
+12	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	Liga	Liga	PROPN	_	Gender=Fem|Number=Sing	11	appos	_	MWE=Liga_Norte-Americana|MWEPOS=PROPN
 15	Norte-Americana	Norte-Americana	PROPN	_	Number=Sing	14	flat:name	_	_
@@ -294,10 +294,10 @@
 40	4	4	NUM	<card>|NUM|M|S|@P<	NumType=Card	34	obl	_	_
 41	de	de	ADP	PRP|@A<	_	42	case	_	_
 42	Novembro	novembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	40	nmod	_	SpaceAfter=No
-43	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+43	,	,	PUNCT	PU|@PU	_	44	punct	_	_
 44	ou	ou	CCONJ	_	_	50	cc	_	MWE=ou_seja|MWEPOS=CCONJ
 45	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	44	fixed	_	SpaceAfter=No
-46	,	,	PUNCT	PU|@PU	_	37	punct	_	_
+46	,	,	PUNCT	PU|@PU	_	44	punct	_	_
 47-48	na	_	_	_	_	_	_	_	_
 47	em	em	ADP	<sam->|PRP|@<ADVL	_	50	case	_	_
 48	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_
