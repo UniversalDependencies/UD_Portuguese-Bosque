@@ -10,13 +10,13 @@
 5	de	de	ADP	PRP|@<PIV	_	7	case	_	_
 6	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	espaço	espaço	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	4	obj	_	_
-8	por	por	ADP	PRP|@ADVL>	_	9	case	_	MWE=por_onde
+8	por	por	ADP	PRP|@ADVL>	_	9	case	_	_
 9	onde	onde	PRON	N|M|S|@P<	Gender=Masc|Number=Sing	11	obl	_	_
 10	todos	todo	PRON	<quant>|DET|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Tot	11	nsubj	_	_
 11	circulam	circular	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 13	bem	bem	ADV	<quant>|ADV|@>P	_	14	advmod	_	_
-14	próximo	próximo	ADV	ADV|@N<PRED	_	7	advmod	_	MWE=próximo_de
+14	próximo	próximo	ADV	ADV|@N<PRED	_	7	advmod	_	_
 15	de	de	ADP	PRP|@A<	_	16	case	_	_
 16	uma	um	NUM	<card>|NUM|F|S|@P<	NumType=Card	14	obl	_	_
 17-18	das	_	_	_	_	_	_	_	_
@@ -43,7 +43,7 @@
 35	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	_
 36	peça	peça	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	27	iobj	_	_
 37	de	de	ADP	PRP|@N<	_	38	case	_	_
-38	Jorge	Jorge	PROPN	_	Gender=Masc|Number=Sing	36	nmod	_	MWE=Jorge_Martins|MWEPOS=PROPN
+38	Jorge	Jorge	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	36	nmod	_	_
 39	Martins	Martins	PROPN	_	Number=Sing	38	flat:name	_	SpaceAfter=No
 40	:	:	PUNCT	PU|@PU	_	27	punct	_	_
 
@@ -52,7 +52,7 @@
 # source = CETEMPúblico n=1003 sec=soc sem=98b
 # id = 5144
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
-2	Força	Força	PROPN	_	Gender=Fem|Number=Sing	0	root	_	MWE=Força_4|MWEPOS=PROPN
+2	Força	Força	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	0	root	_	_
 3	4	4	NUM	_	NumType=Card	2	flat:name	_	SpaceAfter=No
 4	»	»	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	7	punct	_	_
@@ -93,7 +93,7 @@
 # sent_id = CP1003-3
 # source = CETEMPúblico n=1003 sec=soc sem=98b
 # id = 5145
-1	João	João	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	MWE=João_Cutileiro|MWEPOS=PROPN
+1	João	João	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	3	nsubj	_	_
 2	Cutileiro	Cutileiro	PROPN	_	Number=Sing	1	flat:name	_	_
 3	tem	ter	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
@@ -104,7 +104,7 @@
 9	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	expl	_	_
 10	apropria	apropriar	VERB	<first-cjt>|<mv>|<se-passive>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_
 11	de	de	ADP	<first-cjt>|PRP|@<PIV	_	14	case	_	_
-12	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	14	det	_	MWE=todas_as
+12	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	14	det	_	_
 13	as	o	DET	<artd>|DET|F|P|@A<	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	fixed	_	_
 14	formas	forma	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	10	obj	_	_
 15	de	de	ADP	PRP|@N<	_	16	case	_	_
@@ -144,7 +144,7 @@
 # sent_id = CP1003-4
 # source = CETEMPúblico n=1003 sec=soc sem=98b
 # id = 5146
-1	José	José	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	MWE=José_Pedro_Croft|MWEPOS=PROPN
+1	José	José	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	4	nsubj	_	_
 2	Pedro	Pedro	PROPN	_	Number=Sing	1	flat:name	_	_
 3	Croft	Croft	PROPN	_	Number=Sing	1	flat:name	_	_
 4	fez	fazer	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -155,7 +155,7 @@
 9	de	de	ADP	PRP|@N<	_	10	case	_	_
 10	pedra	pedra	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-12	dentro	dentro	ADV	ADV|@OA>	_	16	advmod	_	MWE=dentro_de
+12	dentro	dentro	ADV	ADV|@OA>	_	16	advmod	_	_
 13-14	da	_	_	_	_	_	_	_	_
 13	de	de	ADP	PRP|@A<	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
@@ -258,13 +258,13 @@
 # sent_id = CP1003-7
 # source = CETEMPúblico n=1003 sec=soc sem=98b
 # id = 5149
-1	Manuel	Manuel	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	MWE=Manuel_Rosa|MWEPOS=PROPN
+1	Manuel	Manuel	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	10	nsubj	_	_
 2	Rosa	Rosa	PROPN	_	Number=Sing	1	flat:name	_	_
 3	e	e	CCONJ	<co-subj>|KC|@CO	_	4	cc	_	_
-4	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	MWE=Rui_Sanches|MWEPOS=PROPN
+4	Rui	Rui	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	1	conj	_	_
 5	Sanches	Sanches	PROPN	_	Number=Sing	4	flat:name	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-7	por	por	ADP	PRP|@ADVL>	_	10	advmod	_	MWE=por_fim
+7	por	por	ADP	PRP|@ADVL>	_	10	advmod	_	_
 8	fim	fim	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	fixed	_	SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 10-11	mostram-nos	_	_	_	_	_	_	_	_
@@ -275,7 +275,7 @@
 14	têm	ter	VERB	<mv>|V|PR|3P|IND|@FS-N<	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_
 15	por	por	ADP	PRP|@<OC	_	16	case	_	_
 16	referente	referente	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	14	xcomp	_	_
-17	mais	mais	ADV	N|M|S|@>A	_	20	advmod	_	MWE=mais_ou_menos
+17	mais	mais	ADV	N|M|S|@>A	_	20	advmod	_	_
 18	ou	ou	CCONJ	PRP|@N<	_	19	cc	_	_
 19	menos	menos	ADV	N|M|S|@P<	_	17	conj	_	_
 20	explícito	explícito	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	16	amod	_	_
@@ -449,7 +449,7 @@
 # sent_id = CP1003-14
 # source = CETEMPúblico n=1003 sec=soc sem=98b
 # id = 5156
-1	Todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	3	det	_	MWE=Todas_as
+1	Todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	3	det	_	_
 2	as	o	DET	<artd>|DET|F|P|@A<	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	1	fixed	_	_
 3	interpretações	interpretação	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	5	nsubj	_	_
 4	são	ser	AUX	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_

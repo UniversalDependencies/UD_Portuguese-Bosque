@@ -12,7 +12,7 @@
 1	Sete	sete	NUM	<first-cjt>|<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	_
 2	e	e	CCONJ	<co-prenom>|KC|@CO	_	3	cc	_	_
 3	meio	meio	ADJ	<cjt>|ADJ|M|S|@>N	Gender=Masc|Number=Sing	1	conj	_	_
-4	por	por	ADP	_	_	0	root	_	MWE=por_cento|MWEPOS=NOUN
+4	por	por	ADP	_	ExtPos=NOUN	0	root	_	_
 5	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	4	compound	_	_
 6	--	--	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -27,7 +27,7 @@
 5	realizador	realizador	NOUN	<cjt>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	conj	_	_
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	cinema	cinema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
-8	Nicholas	Nicholas	PROPN	_	Gender=Masc|Number=Sing	3	appos	_	MWE=Nicholas_Meyer|MWEPOS=PROPN
+8	Nicholas	Nicholas	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	3	appos	_	_
 9	Meyer	Meyer	PROPN	_	Number=Sing	8	flat:name	_	_
 10	era	ser	AUX	<mv>|V|IMPF|1/3S|IND|@FS-STA	Mood=Ind|Number=Sing|Tense=Imp|VerbForm=Fin	13	cop	_	_
 11-12	nesta	_	_	_	_	_	_	_	_
@@ -35,14 +35,14 @@
 12	esta	este	DET	<-sam>|<dem>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Dem	13	det	_	_
 13	percentagem	percentagem	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	0	root	_	_
 14	que	que	SCONJ	KS|@SUB	_	17	mark	_	_
-15	Sherlock	Sherlock	PROPN	_	Gender=Masc|Number=Sing	17	nsubj	_	MWE=Sherlock_Holmes|MWEPOS=PROPN
+15	Sherlock	Sherlock	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	17	nsubj	_	_
 16	Holmes	Holmes	PROPN	_	Number=Sing	15	flat:name	_	_
 17	diluía	diluir	VERB	<mv>|V|IMPF|3S|IND|@FS-<SUBJ	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	csubj	_	_
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 19	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	20	det	_	_
 20	cocaína	cocaína	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	17	obj	_	SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	26	punct	_	_
-22	antes	antes	ADV	ADV|@<ADVL	_	26	mark	_	MWE=antes_de|MWEPOS=SCONJ
+22	antes	antes	ADV	ADV|@<ADVL	ExtPos=SCONJ	26	mark	_	_
 23	de	de	ADP	PRP|@A<ARG	_	22	fixed	_	_
 24	ter	ter	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	26	aux	_	_
 25	sido	ser	AUX	<aux>|V|PCP|@ICL-AUX<	VerbForm=Part	26	aux:pass	_	_
@@ -92,7 +92,7 @@
 19	justamente	justamente	ADV	ADV|@>A	_	22	advmod	_	_
 20	de	de	ADP	PRP|@N<	_	22	case	_	_
 21	«	«	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
-22	A	A	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	MWE=A_Solução_a_sete_e_meio_por_cento
+22	A	A	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
 23	Solução	Solução	PROPN	PROP|@N<	Number=Sing	22	flat:name	_	_
 24	a	a	PROPN	PROP|@N<	Number=Sing	22	flat:name	_	_
 25	sete	sete	PROPN	PROP|@N<	Number=Sing	22	flat:name	_	_
@@ -108,7 +108,7 @@
 35	tradução	tradução	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	33	obj	_	_
 36	para	para	ADP	PRP|@N<	_	38	case	_	_
 37	«	«	PUNCT	PU|@PU	_	38	punct	_	SpaceAfter=No
-38	The	The	PROPN	_	Number=Sing	35	nmod	_	MWE=The_7,5_per_cent_Solution|MWEPOS=PROPN
+38	The	The	PROPN	_	ExtPos=PROPN|Number=Sing	35	nmod	_	_
 39	7,5	7,5	PROPN	_	Number=Sing	38	flat:name	_	_
 40	per	per	PROPN	_	Number=Sing	38	flat:name	_	_
 41	cent	cent	PROPN	_	Number=Sing	38	flat:name	_	_
@@ -116,7 +116,7 @@
 43	»	»	PUNCT	PU|@PU	_	38	punct	_	SpaceAfter=No
 44	:	:	PUNCT	PU|@PU	_	46	punct	_	_
 45	«	«	PUNCT	PU|@PU	_	46	punct	_	SpaceAfter=No
-46	Uma	Uma	PROPN	<first-cjt>|PROP|F|S|@APP	Gender=Fem|Number=Sing	35	appos	_	MWE=Uma_Solução_a_sete_e_meio_por_cento
+46	Uma	Uma	PROPN	<first-cjt>|PROP|F|S|@APP	Gender=Fem|Number=Sing	35	appos	_	_
 47	Solução	Solução	PROPN	PROP|@N<	Number=Sing	46	flat:name	_	_
 48	a	a	PROPN	PROP|@N<	Number=Sing	46	flat:name	_	_
 49	sete	sete	PROPN	PROP|@N<	Number=Sing	46	flat:name	_	_
@@ -127,7 +127,7 @@
 54	»	»	PUNCT	PU|@PU	_	46	punct	_	SpaceAfter=No
 55	,	,	PUNCT	PU|@PU	_	57	punct	_	_
 56	«	«	PUNCT	PU|@PU	_	57	punct	_	SpaceAfter=No
-57	Sete	Sete	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	46	conj	_	MWE=Sete_e_meio_por_cento
+57	Sete	Sete	PROPN	PROP|M|S|@APP	Gender=Masc|Number=Sing	46	conj	_	_
 58	e	e	PROPN	PROP|@N<	Number=Sing	57	flat:name	_	_
 59	meio	meio	PROPN	PROP|@N<	Number=Sing	57	flat:name	_	_
 60	por	por	PROPN	PROP|@N<	Number=Sing	57	flat:name	_	_

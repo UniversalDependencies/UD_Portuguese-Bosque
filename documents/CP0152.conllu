@@ -29,7 +29,7 @@
 22	socialista	socialista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	amod	_	_
 23	francófono	francófono	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	21	amod	_	SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-25	André	André	PROPN	_	Gender=Masc|Number=Sing	21	appos	_	MWE=André_Cools|MWEPOS=PROPN
+25	André	André	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	21	appos	_	_
 26	Cools	Cools	PROPN	_	Number=Sing	25	flat:name	_	SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
@@ -37,10 +37,10 @@
 # sent_id = CP152-2
 # source = CETEMPúblico n=152 sec=pol sem=95a
 # id = 792
-1	De	de	ADP	PRP|@ADVL>	_	2	case	_	MWE=De_acordo
+1	De	de	ADP	PRP|@ADVL>	_	2	case	_	_
 2	acordo	acordo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	_
 3	com	com	ADP	PRP|@P<	_	4	case	_	_
-4	Philippe	Philippe	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	MWE=Philippe_Moureaux|MWEPOS=PROPN
+4	Philippe	Philippe	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	2	nmod	_	_
 5	Moureaux	Moureaux	PROPN	_	Number=Sing	4	flat:name	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 7	ex-vice-primeiro-ministro	ex-vice-primeiro-ministro	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	4	appos	_	_
@@ -111,7 +111,7 @@
 9	Guys	Guy	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	36	nsubj	_	SpaceAfter=No
 10	»	»	PUNCT	PU|@PU	_	9	punct	_	_
 11	--	--	PUNCT	PU|@PU	_	12	punct	_	_
-12	Guy	Guy	PROPN	_	Gender=Masc|Number=Plur	9	appos	_	MWE=Guy_Spitaels|MWEPOS=PROPN
+12	Guy	Guy	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Plur	9	appos	_	_
 13	Spitaels	Spitaels	PROPN	_	Number=Sing	12	flat:name	_	SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 15	ministro-presidente	ministro-presidente	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	12	appos	_	_
@@ -120,17 +120,17 @@
 17	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	18	det	_	_
 18	Valónia	Valónia	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	nmod	_	SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-20	Guy	Guy	PROPN	_	Gender=Masc|Number=Sing	12	conj	_	MWE=Guy_Coeme|MWEPOS=PROPN
+20	Guy	Guy	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	12	conj	_	_
 21	Coeme	Coeme	PROPN	_	Number=Sing	20	flat:name	_	SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-23	ministro	ministro	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	20	appos	_	MWE=ministro_da_Defesa
+23	ministro	ministro	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	20	appos	_	_
 24-25	da	_	_	_	_	_	_	_	_
 24	de	de	ADP	<sam->|PRP|@N<	_	26	case	_	_
 25	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	Defesa	defesa	NOUN	N|@P<	Gender=Fem|Number=Sing	23	nmod	_	SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	23	punct	_	_
 28	e	e	CCONJ	<co-app>|<co-subj>|KC|@CO	_	29	cc	_	_
-29	Guy	Guy	PROPN	_	Gender=Masc|Number=Sing	12	conj	_	MWE=Guy_Mathot|MWEPOS=PROPN
+29	Guy	Guy	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	12	conj	_	_
 30	Mathot	Mathot	PROPN	_	Number=Sing	29	flat:name	_	SpaceAfter=No
 31	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 32	ministro	ministro	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	29	appos	_	_
@@ -147,7 +147,7 @@
 42	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	_
 43	sua	seu	DET	<poss>|<si>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	44	det	_	_
 44	defesa	defesa	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	41	obj	_	_
-45	depois	depois	ADV	ADV|@<ADVL	_	53	mark	_	MWE=depois_de|MWEPOS=SCONJ
+45	depois	depois	ADV	ADV|@<ADVL	ExtPos=SCONJ	53	mark	_	_
 46	de	de	ADP	PRP|@A<ARG	_	45	fixed	_	_
 47	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	_
 48	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	49	det	_	_

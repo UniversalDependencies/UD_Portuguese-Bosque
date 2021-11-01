@@ -3,11 +3,11 @@
 # sent_id = CP5-1
 # source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 24
-1	Além	além	ADV	ADV|@ADVL>	_	11	advmod	_	MWE=Além_de
+1	Além	além	ADV	ADV|@ADVL>	_	11	advmod	_	_
 2-3	do	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@A<	_	4	case	_	_
 3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-4	Museu	Museu	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	MWE=Museu_do_Ar
+4	Museu	Museu	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	_
 5-6	do	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
@@ -16,7 +16,7 @@
 9	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	projecto	projecto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	11	nsubj	_	_
 11	gira	gerir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-12	em	em	ADP	PRP|@<ADVL	_	16	case	_	MWE=em_torno_de
+12	em	em	ADP	PRP|@<ADVL	_	16	case	_	_
 13	torno	torno	NOUN	N|@P<	Gender=Masc|Number=Sing	12	fixed	_	_
 14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	PRP|@N<	_	12	fixed	_	_
@@ -61,7 +61,7 @@
 28	em	em	ADP	PRP|@N<	_	29	case	_	_
 29	análise	análise	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No
 30	,	,	PUNCT	PU|@PU	_	29	punct	_	_
-31	tais	tal	DET	<dem>|DET|M|P|@N<	Gender=Masc|Number=Plur|PronType=Dem	33	case	_	MWE=tais_como|MWEPOS=ADP
+31	tais	tal	DET	<dem>|DET|M|P|@N<	ExtPos=ADP|Gender=Masc|Number=Plur|PronType=Dem	33	case	_	_
 32	como	como	ADP	<rel>|<com>|PRP|@KOMP<	_	31	fixed	_	_
 33	Portugal	Portugal	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	35	punct	_	_
@@ -117,7 +117,7 @@
 34	de	de	ADP	PRP|@N<	_	35	case	_	_
 35	Barcelona	Barcelona	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	33	nmod	_	_
 36	(	(	PUNCT	PU|@PU	_	37	punct	_	SpaceAfter=No
-37	Port	Port	PROPN	_	Gender=Fem|Number=Sing	33	appos	_	MWE=Port_Aventura|MWEPOS=PROPN
+37	Port	Port	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	33	appos	_	_
 38	Aventura	Aventura	PROPN	_	Number=Sing	37	flat:name	_	SpaceAfter=No
 39	)	)	PUNCT	PU|@PU	_	37	punct	_	SpaceAfter=No
 40	,	,	PUNCT	PU|@PU	_	42	punct	_	_
@@ -142,7 +142,7 @@
 9	cooperação	cooperação	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	_
 10	com	com	ADP	PRP|@N<	_	12	case	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
-12	Jardim	Jardim	PROPN	_	Gender=Masc|Number=Sing	9	nmod	_	MWE=Jardim_Zoológico|MWEPOS=PROPN
+12	Jardim	Jardim	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	9	nmod	_	_
 13	Zoológico	Zoológico	PROPN	_	Number=Sing	12	flat:name	_	_
 14	de	de	ADP	PRP|@N<	_	15	case	_	_
 15	Lisboa	Lisboa	PROPN	PROP|@P<	Number=Sing	12	nmod	_	SpaceAfter=No
@@ -179,7 +179,7 @@
 # sent_id = CP5-6
 # source = CETEMPúblico n=5 sec=soc sem=97a
 # id = 29
-1	Seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	0	root	_	MWE=seis_milhões
+1	Seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	0	root	_	_
 2	milhões	milhão	NUM	<np-def>|N|F|P|@NPHR	NumType=Card	1	flat	_	_
 3	em	em	ADP	PRP|@N<	_	5	case	_	_
 4	dez	dez	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	_
@@ -206,7 +206,7 @@
 15-16	pelo	_	_	_	_	_	_	_	_
 15	por	por	ADP	PRP|@PASS	_	17	case	_	_
 16	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-17	Presidente	Presidente	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	obl:agent	_	MWE=Presidente_da_República
+17	Presidente	Presidente	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	obl:agent	_	_
 18-19	da	_	_	_	_	_	_	_	_
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
@@ -215,7 +215,7 @@
 22	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	cop	_	_
 23	orçado	orçado	ADJ	<mv>|V|PCP|M|S|@ICL-<SC	Gender=Masc|Number=Sing	0	root	_	_
 24	em	em	ADP	PRP|@<ADVL	_	25	case	_	_
-25	seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	23	obl	_	MWE=seis_milhões
+25	seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	23	obl	_	_
 26	milhões	milhão	NUM	<np-def>|N|F|P|@P<	NumType=Card	25	flat	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_
 28	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	25	nmod	_	SpaceAfter=No
@@ -224,7 +224,7 @@
 31	incomportável	incomportável	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	30	amod	_	_
 32	para	para	ADP	PRP|@N<	_	34	case	_	_
 33	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	_
-34	Força	Força	PROPN	_	Gender=Fem|Number=Sing	30	nmod	_	MWE=Força_Aérea|MWEPOS=PROPN
+34	Força	Força	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	30	nmod	_	_
 35	Aérea	Aérea	PROPN	_	Number=Sing	34	flat:name	_	SpaceAfter=No
 36	.	.	PUNCT	PU|@PU	_	23	punct	_	_
 
@@ -237,7 +237,7 @@
 2	aí	aí	ADV	<-sam>|ADV|@P<	_	8	advmod	_	_
 3	que	que	ADV	ADV|@ADVL>	_	8	advmod	_	_
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Cameron	Cameron	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	_	MWE=Cameron_Hall|MWEPOS=PROPN
+5	Cameron	Cameron	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	8	nsubj	_	_
 6	Hall	Hall	PROPN	_	Number=Sing	5	flat:name	_	_
 7	tenha	ter	AUX	<aux>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
 8	caído	cair	VERB	<mv>|<pc-subj>|V|PCP|@ICL-AUX<	VerbForm=Part	0	root	_	_
@@ -264,7 +264,7 @@
 11	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	12	advmod	_	_
 12	vantajosa	vantajoso	ADJ	<COMP>|ADJ|F|S|@<SC	Gender=Fem|Number=Sing	7	advcl	_	_
 13-14	do	_	_	_	_	_	_	_	_
-13	de	de	SCONJ	<sam->|PRP|@COM	_	17	mark	_	MWE=do_que
+13	de	de	SCONJ	<sam->|PRP|@COM	_	17	mark	_	_
 14	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	13	fixed	_	_
 15	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	13	fixed	_	_
 16	se	se	SCONJ	KS|@SUB	_	17	mark	_	_
@@ -283,18 +283,18 @@
 28	afirmou	afirmar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	major	major	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	28	nsubj	_	_
-31	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	30	appos	_	MWE=Carlos_Barbosa|MWEPOS=PROPN
+31	Carlos	Carlos	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	30	appos	_	_
 32	Barbosa	Barbosa	PROPN	_	Number=Sing	31	flat:name	_	SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	36	punct	_	_
 34-35	das	_	_	_	_	_	_	_	_
 34	de	de	ADP	<sam->|PRP|@N<PRED	_	36	obl	_	_
 35	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	_	_
-36	relações	relações	NOUN	_	Gender=Fem|Number=Plur	30	nmod	_	MWE=relações_públicas|MWEPOS=NOUN
+36	relações	relações	NOUN	_	ExtPos=NOUN|Gender=Fem|Number=Plur	30	nmod	_	_
 37	públicas	públicas	ADJ	_	Gender=Fem|Number=Plur	36	amod	_	_
 38-39	da	_	_	_	_	_	_	_	_
 38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
 39	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	40	det	_	_
-40	Força	Força	PROPN	_	Gender=Fem|Number=Sing	36	nmod	_	MWE=Força_Aérea|MWEPOS=PROPN
+40	Força	Força	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	36	nmod	_	_
 41	Aérea	Aérea	PROPN	_	Number=Sing	40	flat:name	_	SpaceAfter=No
 42	,	,	PUNCT	PU|@PU	_	36	punct	_	_
 43	admitindo	admitir	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	28	advcl	_	_
@@ -312,10 +312,10 @@
 55	for	ser	AUX	<cjt>|<aux>|V|FUT|3S|SUBJ|@FS-<SUBJ	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	56	aux:pass	_	_
 56	diversificado	diversificar	VERB	<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	61	advcl	_	SpaceAfter=No
 57	,	,	PUNCT	PU|@PU	_	61	punct	_	_
-58	toda	todo	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	60	det	_	MWE=toda_a
+58	toda	todo	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	60	det	_	_
 59	a	o	DET	<artd>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	60	det	_	_
 60	gente	gente	PRON	INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Ind	61	nsubj	_	_
-61	fica	ficar	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	parataxis	_	MWE=fica_a|MWEPOS=AUX
+61	fica	ficar	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	parataxis	_	_
 62	a	a	SCONJ	PRP|@PRT-AUX<	_	63	mark	_	_
 63	ganhar	ganhar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	61	xcomp	_	SpaceAfter=No
 64	»	»	PUNCT	PU|@PU	_	61	punct	_	SpaceAfter=No

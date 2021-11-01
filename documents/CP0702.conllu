@@ -9,7 +9,7 @@
 4	43	43	NUM	<card>|NUM|M|P|@>N	NumType=Card	5	nummod	_	_
 5	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	2	nmod	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	7	punct	_	_
-7	John	John	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	MWE=John_Esposito|MWEPOS=PROPN
+7	John	John	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	2	appos	_	_
 8	Esposito	Esposito	PROPN	_	Number=Sing	7	flat:name	_	SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 10	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	12	nsubj	_	_
@@ -34,7 +34,7 @@
 26	sua	seu	DET	<poss>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Prs	27	det	_	_
 27	casa	casa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	nmod	_	_
 28	em	em	ADP	PRP|@N<	_	29	case	_	_
-29	Nova	Nova	PROPN	_	Gender=Fem|Number=Sing	27	nmod	_	MWE=Nova_Iorque|MWEPOS=PROPN
+29	Nova	Nova	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	27	nmod	_	_
 30	Iorque	Iorque	PROPN	_	Number=Sing	29	flat:name	_	SpaceAfter=No
 31	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 32	que	que	PRON	<rel>|INDP|F|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	33	obj	_	_
@@ -101,12 +101,12 @@
 # source = CETEMPúblico n=702 sec=pol sem=93a
 # id = 3611
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
-2	Governo	Governo	PROPN	_	Gender=Masc|Number=Sing	0	root	_	MWE=Governo_Regional|MWEPOS=PROPN
+2	Governo	Governo	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	0	root	_	_
 3	Regional	Regional	PROPN	_	Number=Sing	2	flat:name	_	_
 4	nega	negar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 6-7	no	_	_	_	_	_	_	_	_
-6	em	em	ADP	<sam->|PRP|@N<	_	4	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+6	em	em	ADP	<sam->|PRP|@N<	ExtPos=CCONJ	4	cc	_	_
 7	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	fixed	_	_
 8	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	6	fixed	_	SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	4	punct	_	_

@@ -128,7 +128,7 @@
 # sent_id = CF467-10
 # source = CETENFolha n=467 cad=Revista Folha sec=nd sem=94a
 # id = 1973
-1	Meu	meu	INTJ	IN|@UTT	_	0	root	_	MWE=Meu_Deus
+1	Meu	meu	INTJ	IN|@UTT	_	0	root	_	_
 2	Deus	deus	INTJ	IN|@A<	_	1	fixed	_	SpaceAfter=No
 3	!	!	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -141,7 +141,7 @@
 3	trabalho	trabalho	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
 4	a	a	SCONJ	PRP|@N<	_	5	mark	_	_
 5	fazer	fazer	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	3	acl	_	_
-6	antes	antes	ADV	ADV|@<ADVL	_	9	mark	_	MWE=antes_de|MWEPOS=SCONJ
+6	antes	antes	ADV	ADV|@<ADVL	ExtPos=SCONJ	9	mark	_	_
 7	de	de	ADP	PRP|@A<ARG	_	6	fixed	_	_
 8	me	eu	PRON	<refl>|PERS|F|1S|ACC|@ACC>	Case=Acc|Gender=Fem|Number=Sing|Person=1|PronType=Prs	9	obj	_	_
 9	sentir	sentir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	5	advcl	_	_
@@ -179,7 +179,7 @@
 9	muito	muito	ADV	<quant>|ADV|@>A	_	10	advmod	_	_
 10	pobre	pobre	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	5	amod	_	_
 11	de	de	ADP	PRP|@N<PRED	_	12	case	_	_
-12	Nova	Nova	PROPN	_	Gender=Fem|Number=Sing	5	nmod	_	MWE=Nova_York|MWEPOS=PROPN
+12	Nova	Nova	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	5	nmod	_	_
 13	York	York	PROPN	_	Number=Sing	12	flat:name	_	SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
@@ -210,7 +210,7 @@
 5	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
 6	ruas	rua	NOUN	<first-cjt>|<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	3	iobj	_	_
 7	e	e	CCONJ	<co-sta>|KC|@CO	_	10	cc	_	_
-8	comecei	começar	VERB	<cjt>|<aux>|V|PS|1S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	conj	_	MWE=comecei_a|MWEPOS=AUX
+8	comecei	começar	VERB	<cjt>|<aux>|V|PS|1S|IND|@FS-STA	ExtPos=AUX|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	conj	_	_
 9	a	a	SCONJ	PRP|@PRT-AUX<	_	10	mark	_	_
 10	estudar	estudar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	3	punct	_	_
@@ -359,10 +359,10 @@
 5	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	5	obj	_	_
 7	como	como	ADP	<com>|PRP|@N<	_	8	case	_	_
-8	Sonia	Sonia	PROPN	_	Gender=Fem|Number=Sing	6	nmod	_	MWE=Sonia_Braga|MWEPOS=PROPN
+8	Sonia	Sonia	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	6	nmod	_	_
 9	Braga	Braga	PROPN	_	Number=Sing	8	flat:name	_	_
 10	e	e	CCONJ	KC|@CO	_	8	cc	_	_
-11	Andy	Andy	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	MWE=Andy_Garcia|MWEPOS=PROPN
+11	Andy	Andy	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	6	nmod	_	_
 12	Garcia	Garcia	PROPN	_	Number=Sing	11	flat:name	_	SpaceAfter=No
 13	.	.	PUNCT	PU|@PU	_	5	punct	_	_
 

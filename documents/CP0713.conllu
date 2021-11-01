@@ -24,7 +24,7 @@
 # sent_id = CP713-2
 # source = CETEMPúblico n=713 sec=clt sem=93a
 # id = 3654
-1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	MWE=Por_um_lado
+1	Por	por	ADP	PRP|@ADVL>	_	3	case	_	_
 2	um	um	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	14	obl	_	_
 4	--	--	PUNCT	PU|@PU	_	5	punct	_	_
@@ -88,7 +88,7 @@
 # source = CETEMPúblico n=713 sec=clt sem=93a
 # id = 3655
 1-2	No	_	_	_	_	_	_	_	_
-1	Em	em	ADP	_	_	13	cc	_	MWEPOS=CCONJ
+1	Em	em	ADP	_	ExtPos=CCONJ	13	cc	_	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_
 3	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
@@ -99,7 +99,7 @@
 8	tempo	tempo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 10	elas	ele	PRON	PERS|F|3P|NOM|@SUBJ>	Case=Nom|Gender=Fem|Number=Plur|Person=3|PronType=Prs	13	nsubj	_	_
-11	muitas	muitas	ADP	PRP|@ADVL>	_	12	case	_	MWE=muitas_vezes
+11	muitas	muitas	ADP	PRP|@ADVL>	_	12	case	_	_
 12	vezes	vez	NOUN	N|M|P|@P<	Gender=Fem|Number=Plur	13	obl	_	_
 13	vampirizam	vampirizar	VERB	<first-cjt>|<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 14	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
@@ -115,7 +115,7 @@
 23-24	nos	_	_	_	_	_	_	_	_
 23	em	em	ADP	<sam->|PRP|@N<	_	25	case	_	_
 24	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	25	det	_	_
-25	custos	custos	NOUN	_	Gender=Masc|Number=Plur	22	nmod	_	MWEPOS=NOUN
+25	custos	custos	NOUN	_	ExtPos=NOUN|Gender=Masc|Number=Plur	22	nmod	_	_
 26	de	de	ADP	_	_	25	compound	_	_
 27	produção	produção	NOUN	_	Gender=Fem|Number=Sing	25	compound	_	_
 28	em	em	ADP	PRP|@N<	_	29	case	_	_
@@ -123,20 +123,20 @@
 30	--	--	PUNCT	PU|@PU	_	31	punct	_	_
 31	vide	vidar	VERB	<mv>|<foreign>|V|IMP|2S|@FS-N<PRED	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	20	parataxis	_	SpaceAfter=No
 32	,	,	PUNCT	PU|@PU	_	33	punct	_	_
-33	de	de	ADP	PRP|@<ADVL	_	31	advmod	_	MWE=de_novo
+33	de	de	ADP	PRP|@<ADVL	_	31	advmod	_	_
 34	novo	novo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	33	fixed	_	SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	33	punct	_	_
 36	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	37	det	_	_
 37	declarações	declaração	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	31	obj	_	_
 38	de	de	ADP	PRP|@N<	_	39	case	_	_
-39	Cunha	Cunha	PROPN	_	Gender=Masc|Number=Sing	37	nmod	_	MWE=Cunha_Telles|MWEPOS=PROPN
+39	Cunha	Cunha	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	37	nmod	_	_
 40	Telles	Telles	PROPN	_	Number=Sing	39	flat:name	_	_
 41	--	--	PUNCT	PU|@PU	_	50	punct	_	SpaceAfter=No
 42	,	,	PUNCT	PU|@PU	_	44	punct	_	_
 43	o	o	DET	_	Gender=Masc|Number=Sing|PronType=Dem	44	det	_	_
 44	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	50	nsubj	_	SpaceAfter=No
 45	,	,	PUNCT	PU|@PU	_	46	punct	_	_
-46	por	por	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	50	obl	_	MWE=por_sua_vez
+46	por	por	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	50	obl	_	_
 47	sua	sua	ADP	PRP|@N<	_	46	fixed	_	_
 48	vez	vez	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	46	fixed	_	SpaceAfter=No
 49	,	,	PUNCT	PU|@PU	_	46	punct	_	_
@@ -145,7 +145,7 @@
 52	que	que	SCONJ	KS|@SUB	_	55	mark	_	_
 53	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	54	det	_	_
 54	IPC	IPC	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	55	nsubj	_	_
-55	deixasse	deixar	VERB	<aux>|V|IMPF|3S|SUBJ|@FS-P<	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	50	ccomp	_	MWE=deixasse_de|MWEPOS=AUX
+55	deixasse	deixar	VERB	<aux>|V|IMPF|3S|SUBJ|@FS-P<	ExtPos=AUX|Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	50	ccomp	_	_
 56	de	de	SCONJ	PRP|@PRT-AUX<	_	57	mark	_	_
 57	ter	ter	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	55	xcomp	_	_
 58	possibilidade	possibilidade	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	57	obj	_	_
@@ -202,7 +202,7 @@
 3	de	de	SCONJ	PRP|@N<	_	4	mark	_	_
 4	obter	obter	VERB	<mv>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	2	acl	_	_
 5	financiamentos	financiamento	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	4	obj	_	_
-6	fora	fora	ADV	ADV|@<ADVL	_	4	advmod	_	MWE=fora_de
+6	fora	fora	ADV	ADV|@<ADVL	_	4	advmod	_	_
 7-8	dos	_	_	_	_	_	_	_	_
 7	de	de	ADP	PRP|@A<	_	9	case	_	_
 8	os	o	DET	<artd>|<-sam>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
@@ -247,7 +247,7 @@
 41	primeiros	primeiro	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur|NumType=Ord	38	nmod	_	SpaceAfter=No
 42	,	,	PUNCT	PU|@PU	_	44	punct	_	_
 43	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	44	nsubj	_	_
-44	deixaram	deixar	VERB	<aux>|V|PS|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	41	acl:relcl	_	MWE=deixaram_de|MWEPOS=AUX
+44	deixaram	deixar	VERB	<aux>|V|PS|3P|IND|@FS-N<PRED	ExtPos=AUX|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	41	acl:relcl	_	_
 45	de	de	SCONJ	PRP|@PRT-AUX<	_	48	mark	_	_
 46	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	48	cop	_	_
 47	meros	mero	ADJ	ADJ|M|P|@>N	Gender=Masc|Number=Plur	48	amod	_	_
@@ -262,7 +262,7 @@
 54	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	55	det	_	_
 55	segundos	segundo	ADJ	<n>|<NUM-ord>|<np-def>|ADJ|M|P|@P<	Gender=Masc|Number=Plur|NumType=Ord	52	obl:agent	_	_
 56	para	para	SCONJ	PRP|@<ADVL	_	57	mark	_	_
-57	passarem	passar	VERB	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	48	amod	_	MWE=passarem_a|MWEPOS=AUX
+57	passarem	passar	VERB	<aux>|V|INF|3P|@ICL-P<	ExtPos=AUX|Number=Plur|Person=3|VerbForm=Inf	48	amod	_	_
 58	a	a	SCONJ	PRP|@PRT-AUX<	_	60	mark	_	_
 59	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	60	cop	_	_
 60	portadores	portador	ADJ	ADJ|M|P|@<SC	Gender=Masc|Number=Plur	57	xcomp	_	_
@@ -304,7 +304,7 @@
 # sent_id = CP713-5
 # source = CETEMPúblico n=713 sec=clt sem=93a
 # id = 3657
-1	Por	por	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	19	obl	_	MWE=Por_sua_vez
+1	Por	por	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	19	obl	_	_
 2	sua	sua	ADP	PRP|@N<	_	3	case	_	_
 3	vez	vez	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -339,14 +339,14 @@
 29	a	a	SCONJ	PRP|@N<	_	30	mark	_	_
 30	montar	montar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	28	acl	_	SpaceAfter=No
 31	,	,	PUNCT	PU|@PU	_	32	punct	_	_
-32	passando	passar	VERB	<aux>|V|GER|@ICL-<ADVL	VerbForm=Ger	19	advcl	_	MWE=passando_a|MWEPOS=AUX
+32	passando	passar	VERB	<aux>|V|GER|@ICL-<ADVL	ExtPos=AUX|VerbForm=Ger	19	advcl	_	_
 33	naturalmente	naturalmente	ADV	ADV|@ADVL>	_	35	advmod	_	_
 34	a	a	SCONJ	PRP|@PRT-AUX<	_	35	mark	_	_
 35	existir	existir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	32	xcomp	_	_
 36	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 37	atenção	atenção	NOUN	<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	32	nsubj	_	_
 38	diferente	diferente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	37	amod	_	_
-39	em	em	ADP	<first-cjt>|<sam->|PRP|@N<	_	43	case	_	MWE=em_relação_a|MWEPOS=ADP
+39	em	em	ADP	<first-cjt>|<sam->|PRP|@N<	ExtPos=ADP	43	case	_	_
 40	relação	relação	NOUN	N|@P<	Gender=Fem|Number=Sing	39	fixed	_	_
 41-42	ao	_	_	_	_	_	_	_	_
 41	a	a	ADP	PRP|@N<	_	39	fixed	_	_

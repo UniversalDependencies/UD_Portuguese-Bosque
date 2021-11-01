@@ -9,7 +9,7 @@
 # sent_id = CP490-2
 # source = CETEMPúblico n=490 sec=pol sem=94b
 # id = 2576
-1	Casa	Casa	PROPN	_	Gender=Fem|Number=Sing	3	nsubj	_	MWE=Casa_Branca|MWEPOS=PROPN
+1	Casa	Casa	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	3	nsubj	_	_
 2	Branca	Branca	PROPN	_	Number=Sing	1	flat:name	_	_
 3-4	distancia-se	_	_	_	_	_	_	_	_
 3	distancia	distanciar	VERB	<mv>|<hyphen>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -26,14 +26,14 @@
 3-4	da	_	_	_	_	_	_	_	_
 3	de	de	ADP	<sam->|PRP|@N<	_	5	case	_	_
 4	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	Casa	Casa	PROPN	_	Gender=Fem|Number=Sing	2	nmod	_	MWE=Casa_Branca|MWEPOS=PROPN
+5	Casa	Casa	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	2	nmod	_	_
 6	Branca	Branca	PROPN	_	Number=Sing	5	flat:name	_	_
 7	decidiu	decidir	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 8	ontem	ontem	ADV	ADV|@<ADVL	_	7	advmod	_	_
 9	manter	manter	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	7	xcomp	_	_
 10	algumas	algum	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Ind	11	det	_	_
 11	distâncias	distância	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	9	obj	_	_
-12	face	face	ADV	ADV|@N<	_	11	advmod	_	MWE=face_a
+12	face	face	ADV	ADV|@N<	_	11	advmod	_	_
 13-14	às	_	_	_	_	_	_	_	_
 13	a	a	ADP	PRP|@A<	_	15	case	_	_
 14	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
@@ -45,7 +45,7 @@
 19	Presidente	presidente	NOUN	<prop>|<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
 20	democrata	democrata	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
 21	norte-americano	norte-americano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	19	amod	_	_
-22	Jimmy	Jimmy	PROPN	_	Gender=Masc|Number=Sing	19	appos	_	MWE=Jimmy_Carter|MWEPOS=PROPN
+22	Jimmy	Jimmy	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	19	appos	_	_
 23	Carter	Carter	PROPN	_	Number=Sing	22	flat:name	_	_
 24	após	após	ADP	PRP|@<ADVL	_	27	case	_	_
 25	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
@@ -81,7 +81,7 @@
 51	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_
 52	sérvios	sérvio	NOUN	<np-def>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	54	nsubj:pass	_	_
 53	bósnios	bosnio	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	52	amod	_	_
-54	continuam	continuar	VERB	<aux>|V|PR|3P|IND|@FS-<ACC	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	49	ccomp	_	MWE=continuam_a|MWEPOS=AUX
+54	continuam	continuar	VERB	<aux>|V|PR|3P|IND|@FS-<ACC	ExtPos=AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	49	ccomp	_	_
 55	a	a	SCONJ	PRP|@PRT-AUX<	_	57	mark	_	_
 56	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	57	aux:pass	_	_
 57	considerados	considerar	VERB	<pass>|<mv>|V|PCP|M|P|@ICL-AUX<	Gender=Masc|Number=Plur|VerbForm=Part|Voice=Pass	54	xcomp	_	_
@@ -97,7 +97,7 @@
 66	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	67	expl	_	_
 67	prolonga	prolongar	VERB	<mv>|<se-passive>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	64	acl:relcl	_	_
 68	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	67	advcl	_	_
-69	mais	mais	ADV	ADV|@>A	_	71	advmod	_	MWE=mais_de
+69	mais	mais	ADV	ADV|@>A	_	71	advmod	_	_
 70	de	de	ADP	<prp>|PRP|@A<	_	69	fixed	_	_
 71	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	72	nummod	_	_
 72	anos	ano	NOUN	<first-cjt>|<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	68	obj	_	_

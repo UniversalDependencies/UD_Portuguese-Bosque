@@ -18,7 +18,7 @@
 # sent_id = CP24-2
 # source = CETEMPúblico n=24 sec=pol sem=93a
 # id = 129
-1	Cavaco	Cavaco	PROPN	_	Gender=Masc|Number=Sing	4	nsubj	_	MWE=Cavaco_Silva|MWEPOS=PROPN
+1	Cavaco	Cavaco	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	4	nsubj	_	_
 2	Silva	Silva	PROPN	_	Number=Sing	1	flat:name	_	_
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 4	assinou	assinar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -71,7 +71,7 @@
 # id = 130
 1	Ontem	ontem	ADV	ADV|@ADVL>	_	5	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-3	começou	começar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=começou_a|MWEPOS=AUX
+3	começou	começar	VERB	<aux>|V|PS|3S|IND|@FS-STA	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 4	a	a	SCONJ	PRP|@PRT-AUX<	_	5	mark	_	_
 5	chegar	chegar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
 6-7	às	_	_	_	_	_	_	_	_
@@ -99,7 +99,7 @@
 27	»	»	PUNCT	PU|@PU	_	26	punct	_	_
 28	para	para	ADP	PRP|@N<	_	30	obl	_	_
 29	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	_	_
-30	funcionários	funcionários	NOUN	_	Gender=Masc|Number=Plur	24	nmod	_	MWE=funcionários_públicos|MWEPOS=NOUN
+30	funcionários	funcionários	NOUN	_	ExtPos=NOUN|Gender=Masc|Number=Plur	24	nmod	_	_
 31	públicos	públicos	ADJ	_	Gender=Masc|Number=Plur	30	amod	_	SpaceAfter=No
 32	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
@@ -127,10 +127,10 @@
 17	tradicional	tradicional	ADJ	<cjt>|ADJ|F|S|@N<	Gender=Fem|Number=Sing	12	conj	_	SpaceAfter=No
 18	»	»	PUNCT	PU|@PU	_	17	punct	_	SpaceAfter=No
 19	:	:	PUNCT	PU|@PU	_	1	punct	_	_
-20	ou	ou	CCONJ	_	_	30	cc	_	MWE=ou_seja|MWEPOS=CCONJ
+20	ou	ou	CCONJ	_	ExtPos=CCONJ	30	cc	_	_
 21	seja	ser	VERB	_	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	fixed	_	SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	20	punct	_	_
-23	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	25	det	_	MWE=todos_os
+23	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	25	det	_	_
 24	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	fixed	_	_
 25	anos	ano	NOUN	<np-def>|N|M|P|@ADVL>	Gender=Masc|Number=Plur	30	obl	_	_
 26	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
@@ -144,7 +144,7 @@
 34	publicado	publicar	VERB	<mv>|V|PCP|M|S|@ICL-N<PRED	Gender=Masc|Number=Sing|VerbForm=Part	32	acl	_	_
 35	em	em	ADP	PRP|@<ADVL	_	37	case	_	_
 36	«	«	PUNCT	PU|@PU	_	37	punct	_	SpaceAfter=No
-37	Diário	Diário	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	34	obl	_	MWE=Diário_da_República
+37	Diário	Diário	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	34	obl	_	_
 38-39	da	_	_	_	_	_	_	_	_
 38	de	de	ADP	<sam->|PRP|@N<	_	40	case	_	_
 39	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
@@ -179,12 +179,12 @@
 12-13	ao	_	_	_	_	_	_	_	_
 12	a	a	ADP	<sam->|PRP|@<PIV	_	14	case	_	_
 13	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
-14	Presidente	Presidente	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	iobj	_	MWE=Presidente_da_República
+14	Presidente	Presidente	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	11	iobj	_	_
 15-16	da	_	_	_	_	_	_	_	_
 15	de	de	ADP	<sam->|PRP|@N<	_	17	case	_	_
 16	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	República	República	PROPN	PROP|@P<	Number=Sing	14	nmod	_	_
-18	em	em	ADP	<sam->|PRP|@N<	_	22	case	_	MWE=em_torno_de
+18	em	em	ADP	<sam->|PRP|@N<	_	22	case	_	_
 19	torno	torno	NOUN	N|@P<	Gender=Masc|Number=Sing	18	fixed	_	_
 20-21	dos	_	_	_	_	_	_	_	_
 20	de	de	ADP	PRP|@N<	_	18	fixed	_	_
@@ -201,7 +201,7 @@
 30	lei	lei	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	28	obj	_	_
 31	para	para	ADP	PRP|@<OA	_	33	case	_	_
 32	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
-33	Tribunal	Tribunal	PROPN	_	Gender=Masc|Number=Sing	28	obl	_	MWE=Tribunal_Constitucional|MWEPOS=PROPN
+33	Tribunal	Tribunal	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	28	obl	_	_
 34	Constitucional	Constitucional	PROPN	_	Number=Sing	33	flat:name	_	SpaceAfter=No
 35	)	)	PUNCT	PU|@PU	_	24	punct	_	_
 36	Cavaco	Cavaco	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	37	nsubj	_	_

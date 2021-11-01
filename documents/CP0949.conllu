@@ -3,7 +3,7 @@
 # sent_id = CP949-1
 # source = CETEMPúblico n=949 sec=clt-soc sem=94b
 # id = 4883
-1	A	a	ADP	<sam->|PRP|@ADVL>	_	2	case	_	MWE=A_par_de
+1	A	a	ADP	<sam->|PRP|@ADVL>	_	2	case	_	_
 2	par	par	NOUN	N|@P<	Gender=Masc|Number=Sing	24	obl	_	_
 3-4	do	_	_	_	_	_	_	_	_
 3	de	de	ADP	PRP|@N<	_	6	case	_	_
@@ -48,7 +48,7 @@
 6	associação	associação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	_
 7	com	com	ADP	<first-cjt>|PRP|@N<	_	9	case	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Time	Time	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	MWE=Time_Warner_Cable|MWEPOS=PROPN
+9	Time	Time	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	6	nmod	_	_
 10	Warner	Warner	PROPN	_	Gender=Fem|Number=Sing	9	flat:name	_	_
 11	Cable	Cable	PROPN	_	Gender=Fem|Number=Sing	9	flat:name	_	_
 12	para	para	ADP	PRP|@N<	_	14	case	_	_
@@ -81,13 +81,13 @@
 36	sistema	sistema	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	32	nmod	_	_
 37	de	de	ADP	PRP|@N<	_	38	case	_	_
 38	videojogos	videojogo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	36	nmod	_	_
-39	Ultra	Ultra	PROPN	_	Gender=Masc|Number=Plur	36	appos	_	MWE=Ultra_64|MWEPOS=PROPN
+39	Ultra	Ultra	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Plur	36	appos	_	_
 40	64	64	PROPN	_	Number=Sing	39	flat:name	_	SpaceAfter=No
 41	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 42	ou	ou	CCONJ	<co-postnom>|KC|@CO	_	45	cc	_	_
 43	com	com	ADP	<cjt>|PRP|@N<	_	45	case	_	_
 44	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
-45	Sprint	Sprint	PROPN	_	Gender=Fem|Number=Sing	9	conj	_	MWE=Sprint_of_the_Drums|MWEPOS=PROPN
+45	Sprint	Sprint	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	9	conj	_	_
 46	of	of	PROPN	_	Number=Sing	45	flat:name	_	_
 47	the	the	PROPN	_	Number=Sing	45	flat:name	_	_
 48	Drums	Drums	PROPN	_	Number=Sing	45	flat:name	_	_
@@ -128,7 +128,7 @@
 7	«	«	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
 8	joint-venture	joint-venture	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Fem|Number=Sing	5	obj	_	SpaceAfter=No
 9	»	»	PUNCT	PU|@PU	_	8	punct	_	_
-10	Interactive	Interactive	PROPN	_	Gender=Fem|Number=Sing	8	appos	_	MWE=Interactive_Digital_Solutions|MWEPOS=PROPN
+10	Interactive	Interactive	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	8	appos	_	_
 11	Digital	Digital	PROPN	_	Number=Sing	10	flat:name	_	_
 12	Solutions	Solutions	PROPN	_	Number=Sing	10	flat:name	_	_
 13	para	para	ADP	PRP|@<ADVL	_	15	case	_	_
@@ -191,7 +191,7 @@
 21	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Fem|Number=Sing|PronType=Rel	26	obj	_	_
 22	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	23	det	_	_
 23	operador	operador	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	24	nsubj	_	_
-24	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	_	MWE=está_a|MWEPOS=AUX
+24	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-N<	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	acl:relcl	_	_
 25	a	a	SCONJ	PRP|@PRT-AUX<	_	26	mark	_	_
 26	instalar	instalar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	24	xcomp	_	SpaceAfter=No
 27	.	.	PUNCT	PU|@PU	_	5	punct	_	_
@@ -203,7 +203,7 @@
 1	Com	com	ADP	<cjt>|PRP|@PRED>	_	2	case	_	_
 2	sede	sede	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
 3	em	em	ADP	PRP|@N<	_	4	case	_	_
-4	Mountain	Mountain	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	MWE=Mountain_View|MWEPOS=PROPN
+4	Mountain	Mountain	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	2	nmod	_	_
 5	View	View	PROPN	_	Number=Sing	4	flat:name	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 7-8	na	_	_	_	_	_	_	_	_
@@ -245,7 +245,7 @@
 39	informática	informática	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	36	nmod	_	SpaceAfter=No
 40	,	,	PUNCT	PU|@PU	_	44	punct	_	_
 41	com	com	ADP	PRP|@N<PRED	_	44	case	_	_
-42	25	25	NUM	<card>|NUM|M/F|P|@>N	NumType=Card	44	nummod	_	MWE=25_mil
+42	25	25	NUM	<card>|NUM|M/F|P|@>N	NumType=Card	44	nummod	_	_
 43	mil	mil	NUM	<card>|NUM|M/F|P|@>N	NumType=Card	42	flat	_	_
 44	visitantes	visitante	NOUN	<np-def>|N|M/F|P|@P<	Number=Plur	36	nmod	_	SpaceAfter=No
 45	)	)	PUNCT	PU|@PU	_	32	punct	_	SpaceAfter=No
@@ -275,7 +275,7 @@
 11	empresa	empresa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
 12	--	--	PUNCT	PU|@PU	_	14	punct	_	_
 13	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	Silicon	Silicon	PROPN	_	Gender=Masc|Number=Sing	11	appos	_	MWE=Silicon_Studio|MWEPOS=PROPN
+14	Silicon	Silicon	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	11	appos	_	_
 15	Studio	Studio	PROPN	_	Number=Sing	14	flat:name	_	_
 16	--	--	PUNCT	PU|@PU	_	14	punct	_	_
 17	para	para	ADP	PRP|@N<	_	19	case	_	_
@@ -375,13 +375,13 @@
 25	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	revista	revista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	23	obj	_	_
 27	«	«	PUNCT	PU|@PU	_	28	punct	_	SpaceAfter=No
-28	Post	Post	PROPN	_	Gender=Fem|Number=Sing	26	appos	_	MWE=Post_Update|MWEPOS=PROPN
+28	Post	Post	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	26	appos	_	_
 29	Update	Update	PROPN	_	Number=Sing	28	flat:name	_	SpaceAfter=No
 30	»	»	PUNCT	PU|@PU	_	28	punct	_	_
-31	Mike	Mike	PROPN	_	Gender=Masc|Number=Sing	23	nsubj	_	MWE=Mike_Ramsay|MWEPOS=PROPN
+31	Mike	Mike	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	23	nsubj	_	_
 32	Ramsay	Ramsay	PROPN	_	Number=Sing	31	flat:name	_	SpaceAfter=No
 33	,	,	PUNCT	PU|@PU	_	34	punct	_	_
-34	presidente	presidente	NOUN	N|@N<PRED	Gender=Masc|Number=Sing	31	appos	_	MWE=presidente_da_Silicon_Studio
+34	presidente	presidente	NOUN	N|@N<PRED	Gender=Masc|Number=Sing	31	appos	_	_
 35-36	da	_	_	_	_	_	_	_	_
 35	de	de	ADP	<sam->|PRP|@N<	_	37	case	_	_
 36	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
@@ -443,7 +443,7 @@
 18	aqueles	aquele	PRON	<dem>|DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Dem	6	xcomp	_	_
 19	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	26	nsubj	_	SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	23	punct	_	_
-21	a	a	ADP	PRP|@ADVL>	_	23	case	_	MWE=a_longo_prazo
+21	a	a	ADP	PRP|@ADVL>	_	23	case	_	_
 22	longo	longo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	23	amod	_	_
 23	prazo	prazo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	26	obl	_	SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	23	punct	_	_
@@ -465,7 +465,7 @@
 39	digital	digital	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	38	amod	_	_
 40	e	e	CCONJ	<co-subj>|<co-cu>|KC|@CO	_	46	cc	_	SpaceAfter=No
 41	,	,	PUNCT	PU|@PU	_	43	punct	_	_
-42	por	por	ADP	PRP|@>N	_	43	case	_	MWE=por_último
+42	por	por	ADP	PRP|@>N	_	43	case	_	_
 43	último	último	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	46	nmod	_	SpaceAfter=No
 44	,	,	PUNCT	PU|@PU	_	43	punct	_	_
 45	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	_	_

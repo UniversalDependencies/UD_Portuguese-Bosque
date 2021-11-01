@@ -27,7 +27,7 @@
 # sent_id = CP31-3
 # source = CETEMPúblico n=31 sec=nd sem=93a
 # id = 173
-1	Sempre	sempre	ADP	PRP|@ADVL>	_	2	case	_	MWE=Sempre_que
+1	Sempre	sempre	ADP	PRP|@ADVL>	_	2	case	_	_
 2	que	que	PRON	INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	3	obl	_	_
 3	surge	surgir	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_
 4	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
@@ -44,7 +44,7 @@
 # id = 174
 1	Lá	lá	ADV	ADV|@ADVL>	_	5	advmod	_	_
 2	vai	ir	AUX	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-3	Dolores	Dolores	PROPN	_	Gender=Fem|Number=Sing	5	nsubj	_	MWE=Dolores_Faísca|MWEPOS=PROPN
+3	Dolores	Dolores	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	5	nsubj	_	_
 4	Faísca	Faísca	PROPN	_	Number=Sing	3	flat:name	_	_
 5	ver	ver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	0	root	_	_
 6	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_
@@ -66,7 +66,7 @@
 # source = CETEMPúblico n=31 sec=nd sem=93a
 # id = 175
 1-2	Às	_	_	_	_	_	_	_	_
-1	A	a	ADP	PRP|@ADVL>	_	4	advmod	_	MWEPOS=ADV|MWE=a_as_vezes
+1	A	a	ADP	PRP|@ADVL>	ExtPos=ADV	4	advmod	_	_
 2	as	o	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	1	fixed	_	_
 3	vezes	vez	NOUN	N|M|P|@P<	Gender=Fem|Number=Plur	1	fixed	_	_
 4	acontece	acontecer	VERB	<mv>|<first-cjt>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -119,7 +119,7 @@
 11	cede	ceder	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 12	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	14	cc	_	_
 13	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
-14	acaba	acabar	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	MWE=acaba_por|MWEPOS=AUX
+14	acaba	acabar	VERB	<cjt>|<aux>|V|PR|3S|IND|@FS-STA	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 15	por	por	SCONJ	PRP|@PRT-AUX<	_	16	mark	_	_
 16-17	ir-se	_	_	_	_	_	_	_	_
 16	ir	ir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	14	xcomp	_	_
@@ -161,7 +161,7 @@
 # sent_id = CP31-9
 # source = CETEMPúblico n=31 sec=nd sem=93a
 # id = 179
-1	Acaba	acabar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=Acaba_por|MWEPOS=AUX
+1	Acaba	acabar	VERB	<aux>|V|PR|3S|IND|@FS-STA	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	por	por	SCONJ	PRP|@PRT-AUX<	_	4	mark	_	_
 3	se	se	PRON	PERS|M|3S|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl	_	_
 4	lançar	lançar	VERB	<mv>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	1	xcomp	_	_
@@ -172,9 +172,9 @@
 8-9	dos	_	_	_	_	_	_	_	_
 8	de	de	ADP	<sam->|PRP|@N<	_	10	case	_	_
 9	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
-10	Quatro	Quatro	PROPN	_	Gender=Masc|Number=Plur	7	nmod	_	MWE=Quatro_Caminhos|MWEPOS=PROPN
+10	Quatro	Quatro	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Plur	7	nmod	_	_
 11	Caminhos	Caminhos	PROPN	_	Number=Sing	10	flat:name	_	_
-12	rumo	rumo	ADV	ADV|@<ADVL	_	4	advmod	_	MWE=rumo_a
+12	rumo	rumo	ADV	ADV|@<ADVL	_	4	advmod	_	_
 13	a	a	ADP	PRP|@A<	_	14	case	_	_
 14	Quarteira	Quarteira	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	SpaceAfter=No
 15	,	,	PUNCT	PU|@PU	_	17	punct	_	_

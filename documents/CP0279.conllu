@@ -10,12 +10,12 @@
 5	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	6	nummod	_	_
 6	empresas	empresa	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
 7	competirem	competir	VERB	<mv>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	2	acl	_	_
-8	entre	entre	ADP	PRP|@<ADVL	_	9	case	_	MWE=entre_si
+8	entre	entre	ADP	PRP|@<ADVL	_	9	case	_	_
 9	si	si	PRON	<refl>|PERS|3S|PIV|@P<	Number=Sing|Person=3|PronType=Prs	7	obl	_	_
 10	sem	sem	SCONJ	PRP|@<ADVL	_	12	mark	_	_
 11	se	se	PRON	PERS|M|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	expl	_	_
 12	terem	ter	VERB	<mv>|<se-passive>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	7	advcl	_	_
-13	em	em	ADP	PRP|@<ADVL	_	14	case	_	MWE=em_conta
+13	em	em	ADP	PRP|@<ADVL	_	14	case	_	_
 14	conta	conta	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
 15	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	incómodos	incómodo	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	12	obj	_	_
@@ -23,7 +23,7 @@
 18	para	para	ADP	PRP|@N<	_	20	case	_	_
 19	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
 20	aveirenses	aveirense	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
-21	acabou	acabar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=acabou_por|MWEPOS=AUX
+21	acabou	acabar	VERB	<aux>|V|PS|3S|IND|@FS-STA	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 22	por	por	SCONJ	PRP|@PRT-AUX<	_	23	mark	_	_
 23	ditar	ditar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	xcomp	_	_
 24	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
@@ -118,14 +118,14 @@
 4	estabelecido	estabelecer	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	3	acl	_	SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 6	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
-7	TV	TV	PROPN	_	Gender=Fem|Number=Sing	23	nsubj	_	MWE=TV_Cabo|MWEPOS=PROPN
+7	TV	TV	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	23	nsubj	_	_
 8	Cabo	Cabo	PROPN	_	Number=Sing	7	flat:name	_	_
 9	Mondego	Mondego	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	7	punct	_	_
 11	que	que	PRON	<rel>|INDP|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	12	nsubj	_	_
 12	entrou	entrar	VERB	<mv>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	acl:relcl	_	_
 13	já	já	ADV	ADV|@<ADVL	_	12	advmod	_	_
-14	em	em	ADP	PRP|@<ADVL	_	15	case	_	MWE=em_força
+14	em	em	ADP	PRP|@<ADVL	_	15	case	_	_
 15	força	força	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	12	obl	_	_
 16-17	no	_	_	_	_	_	_	_	_
 16	em	em	ADP	<sam->|PRP|@<SA	_	18	case	_	_
@@ -149,7 +149,7 @@
 33-34	pela	_	_	_	_	_	_	_	_
 33	por	por	ADP	PRP|@PASS	_	35	case	_	_
 34	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	35	det	_	_
-35	Portugal	Portugal	PROPN	_	Gender=Fem|Number=Sing	32	obl:agent	_	MWE=Portugal_Telecom|MWEPOS=PROPN
+35	Portugal	Portugal	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	32	obl:agent	_	_
 36	Telecom	Telecom	PROPN	_	Number=Sing	35	flat:name	_	SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 38	enquanto	enquanto	ADV	<rel>|ADV|@ADVL>	_	42	advmod	_	_
@@ -186,7 +186,7 @@
 5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	autarquia	autarquia	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-8	Celso	Celso	PROPN	_	Gender=Masc|Number=Sing	3	appos	_	MWE=Celso_Santos|MWEPOS=PROPN
+8	Celso	Celso	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	3	appos	_	_
 9	Santos	Santos	PROPN	_	Number=Sing	8	flat:name	_	SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 11	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	_
@@ -234,7 +234,7 @@
 49	permanecessem	permanecer	VERB	<mv>|V|IMPF|3P|SUBJ|@FS-<ACC	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	45	ccomp	_	_
 50	intransitáveis	intransitável	ADJ	ADJ|F|P|@<SC	Gender=Fem|Number=Plur	49	xcomp	_	_
 51	durante	durante	ADP	PRP|@<ADVL	_	52	case	_	_
-52	muito	muito	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	49	obl	_	MWE=muito_tempo
+52	muito	muito	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	49	obl	_	_
 53	tempo	tempo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	52	amod	_	SpaceAfter=No
 54	»	»	PUNCT	PU|@PU	_	45	punct	_	SpaceAfter=No
 55	.	.	PUNCT	PU|@PU	_	30	punct	_	_

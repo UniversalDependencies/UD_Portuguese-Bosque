@@ -3,7 +3,7 @@
 # sent_id = CP163-1
 # source = CETEMPúblico n=163 sec=soc sem=94b
 # id = 860
-1	Quanto	quanto	ADV	ADV|@ADVL>	_	4	case	_	MWE=Quanto_a|MWEPOS=ADP
+1	Quanto	quanto	ADV	ADV|@ADVL>	ExtPos=ADP	4	case	_	_
 2-3	ao	_	_	_	_	_	_	_	_
 2	a	a	ADP	PRP|@A<	_	1	fixed	_	_
 3	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
@@ -19,13 +19,13 @@
 # sent_id = CP163-2
 # source = CETEMPúblico n=163 sec=soc sem=94b &W
 # id = 861
-1	Armindo	Armindo	PROPN	_	Gender=Masc|Number=Sing	11	nsubj	_	MWE=Armindo_Cordeiro|MWEPOS=PROPN
+1	Armindo	Armindo	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	11	nsubj	_	_
 2	Cordeiro	Cordeiro	PROPN	_	Number=Sing	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 4-5	da	_	_	_	_	_	_	_	_
 4	de	de	ADP	<sam->|PRP|@N<PRED	_	6	case	_	_
 5	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	6	det	_	_
-6	Câmara	Câmara	PROPN	_	Gender=Fem|Number=Sing	1	nmod	_	MWE=câmara_municipal|MWEPOS=NOUN
+6	Câmara	Câmara	PROPN	_	ExtPos=NOUN|Gender=Fem|Number=Sing	1	nmod	_	_
 7	Municipal	Municipal	PROPN	_	Number=Sing	6	amod	_	_
 8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	Lisboa	Lisboa	PROPN	PROP|@P<	Number=Sing	6	nmod	_	SpaceAfter=No
@@ -41,10 +41,10 @@
 19	mas	mas	CCONJ	<co-icl>|<co-fmc>|<co-vfin>|KC|@CO	_	22	cc	_	_
 20	que	que	SCONJ	KS|@SUB	_	22	mark	_	_
 21	tal	tal	ADV	<dem>|<quant>|ADV|@SUBJ>	_	22	nsubj	_	_
-22	virá	vir	VERB	<cjt>|<aux>|V|FUT|3S|IND|@ICL-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	conj	_	MWE=virá_a|MWEPOS=AUX
+22	virá	vir	VERB	<cjt>|<aux>|V|FUT|3S|IND|@ICL-<ACC	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	conj	_	_
 23	a	a	SCONJ	PRP|@PRT-AUX<	_	24	mark	_	_
 24	acontecer	acontecer	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	22	xcomp	_	_
-25	a	a	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	24	obl	_	MWE=a_breve_trecho
+25	a	a	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	24	obl	_	_
 26	breve	breve	ADP	PRP|@N<	_	27	case	_	_
 27	trecho	trecho	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	25	nmod	_	SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	29	punct	_	_
@@ -54,12 +54,12 @@
 32-33	ao	_	_	_	_	_	_	_	_
 32	a	a	ADP	<sam->|PRP|@<PIV	_	34	case	_	_
 33	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
-34	Departamento	Departamento	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	29	obj	_	MWE=Departamento_de_Espaços_Verves
+34	Departamento	Departamento	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	29	obj	_	_
 35	de	de	ADP	PRP|@N<	_	36	case	_	_
-36	Espaços	Espaços	PROPN	_	Number=Sing	34	nmod	_	MWE=Espaços_Verves|MWEPOS=PROPN
+36	Espaços	Espaços	PROPN	_	ExtPos=PROPN|Number=Sing	34	nmod	_	_
 37	Verves	Verves	PROPN	_	Number=Sing	36	flat:name	_	SpaceAfter=No
 38	,	,	PUNCT	PU|@PU	_	29	punct	_	_
-39	já	já	ADV	ADV|@SUB	_	50	mark	_	MWE=já_que|MWEPOS=SCONJ
+39	já	já	ADV	ADV|@SUB	ExtPos=SCONJ	50	mark	_	_
 40	que	que	SCONJ	KS|@A<	_	39	fixed	_	_
 41	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	42	det	_	_
 42	projecto	projecto	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	50	nsubj	_	_
@@ -67,7 +67,7 @@
 44-45	pela	_	_	_	_	_	_	_	_
 44	por	por	ADP	PRP|@PASS	_	46	case	_	_
 45	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
-46	Junta	junta	NOUN	_	Gender=Fem|Number=Sing	43	obl:agent	_	MWE=junta_de_freguesia|MWEPOS=NOUN
+46	Junta	junta	NOUN	_	ExtPos=NOUN|Gender=Fem|Number=Sing	43	obl:agent	_	_
 47	de	de	ADP	_	_	46	compound	_	_
 48	Freguesia	freguesia	NOUN	_	Number=Sing	46	compound	_	_
 49	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	50	aux:pass	_	_
@@ -87,7 +87,7 @@
 # source = CETEMPúblico n=163 sec=soc sem=94b &E
 # id = 862
 1	Também	também	ADV	ADV|@>N	_	2	advmod	_	_
-2	Armindo	Armindo	PROPN	_	Gender=Masc|Number=Sing	5	nsubj	_	MWE=Armindo_Cordeiro|MWEPOS=PROPN
+2	Armindo	Armindo	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	5	nsubj	_	_
 3	Cordeiro	Cordeiro	PROPN	_	Number=Sing	2	flat:name	_	_
 4	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 5	peremptório	peremptório	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
@@ -110,7 +110,7 @@
 20	contrário	contrário	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	21	obl	_	_
 21	ampliado	ampliar	VERB	<cjt>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part	15	conj	_	SpaceAfter=No
 22	,	,	PUNCT	PU|@PU	_	25	punct	_	_
-23	assim	assim	SCONJ	PRP|@ADVL>	_	25	mark	_	MWE=assim_como
+23	assim	assim	SCONJ	PRP|@ADVL>	_	25	mark	_	_
 24	como	como	ADP	N|M|S|@P<	_	23	fixed	_	_
 25	melhorará	melhorar	VERB	<cjt>|<mv>|V|FUT|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	conj	_	_
 26	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_

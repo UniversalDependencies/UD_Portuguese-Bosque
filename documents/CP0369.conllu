@@ -4,7 +4,7 @@
 # source = CETEMPúblico n=369 sec=eco sem=94a
 # id = 1933
 1-2	No	_	_	_	_	_	_	_	_
-1	Em	em	ADP	_	_	21	cc	_	MWEPOS=CCONJ
+1	Em	em	ADP	_	ExtPos=CCONJ	21	cc	_	_
 2	o	o	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	_	_
 3	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
@@ -41,7 +41,7 @@
 32	de	de	ADP	<sam->|PRP|@N<	_	34	case	_	_
 33	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	dólar	dólar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	31	nmod	_	_
-35	face	face	ADV	ADV|@N<	_	31	advmod	_	MWE=face_a
+35	face	face	ADV	ADV|@N<	_	31	advmod	_	_
 36-37	à	_	_	_	_	_	_	_	_
 36	a	a	ADP	PRP|@A<	_	38	case	_	_
 37	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
@@ -69,7 +69,7 @@
 10	correcção	correcção	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	8	nmod	_	_
 11	foram	ser	AUX	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	18	cop	_	SpaceAfter=No
 12	,	,	PUNCT	PU|@PU	_	15	punct	_	_
-13	por	por	ADP	PRP|@>N	_	15	case	_	MWE=por_um_lado
+13	por	por	ADP	PRP|@>N	_	15	case	_	_
 14	um	um	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	15	punct	_	_
@@ -77,12 +77,12 @@
 18	receios	receio	NOUN	<first-cjt>|<np-def>|N|M|P|@<SC	Gender=Masc|Number=Plur	0	root	_	_
 19	de	de	ADP	PRP|@N<	_	20	case	_	_
 20	intervenções	intervenção	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	18	nmod	_	_
-21	por	por	ADP	<sam->|PRP|@N<	_	22	case	_	MWE=por_parte_de
+21	por	por	ADP	<sam->|PRP|@N<	_	22	case	_	_
 22	parte	parte	NOUN	N|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
 23-24	da	_	_	_	_	_	_	_	_
 23	de	de	ADP	PRP|@N<	_	25	case	_	_
 24	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
-25	Reserva	Reserva	PROPN	_	Gender=Fem|Number=Sing	22	nmod	_	MWE=Reserva_Federal|MWEPOS=PROPN
+25	Reserva	Reserva	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	22	nmod	_	_
 26	Federal	Federal	PROPN	_	Number=Sing	25	flat:name	_	_
 27	travando	travar	VERB	<mv>|V|GER|@ICL-N<	VerbForm=Ger	18	acl	_	_
 28	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
@@ -97,7 +97,7 @@
 36	iene	iene	NOUN	<cjt>|<np-idf>|N|M|S|@N<	Gender=Masc|Number=Sing	34	conj	_	_
 37	e	e	CCONJ	<co-sc>|KC|@CO	_	44	cc	_	SpaceAfter=No
 38	,	,	PUNCT	PU|@PU	_	39	punct	_	_
-39	por	por	ADP	PRP|@>N	_	44	cc	_	MWE=por_outro_lado|MWEPOS=CCONJ
+39	por	por	ADP	PRP|@>N	ExtPos=CCONJ	44	cc	_	_
 40	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	39	fixed	_	_
 41	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	39	fixed	_	SpaceAfter=No
 42	,	,	PUNCT	PU|@PU	_	39	punct	_	_
@@ -108,7 +108,7 @@
 47	Bundesbank	Bundesbank	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	49	nsubj	_	_
 48	ter	ter	AUX	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	49	aux	_	_
 49	deixado	deixar	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	44	acl	_	_
-50	uma	uma	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	49	obl	_	MWE=uma_vez_mais
+50	uma	uma	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	49	obl	_	_
 51	vez	vez	ADP	PRP|@N<	_	52	case	_	_
 52	mais	mais	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	50	nmod	_	_
 53	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	54	det	_	_
@@ -123,11 +123,11 @@
 61	em	em	ADP	<sam->|PRP|@<ADVL	_	64	case	_	_
 62	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	64	det	_	_
 63	5.75	5.75	NUM	<card>|NUM|M|P|@>N	NumType=Card	64	nummod	_	_
-64	por	por	ADP	_	_	49	obl	_	MWEPOS=NOUN
+64	por	por	ADP	_	ExtPos=NOUN	49	obl	_	_
 65	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	64	compound	_	_
 66	e	e	CCONJ	<co-prparg>|KC|@CO	_	68	cc	_	_
 67	6.75	6.75	NUM	<card>|NUM|M|P|@>N	NumType=Card	68	nummod	_	_
-68	por	por	ADP	_	_	64	conj	_	MWEPOS=NOUN
+68	por	por	ADP	_	ExtPos=NOUN	64	conj	_	_
 69	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	68	compound	_	SpaceAfter=No
 70	.	.	PUNCT	PU|@PU	_	18	punct	_	_
 
@@ -155,7 +155,7 @@
 18	corte	corte	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	15	obj	_	_
 19	de	de	ADP	PRP|@N<	_	21	case	_	_
 20	0.5	0.5	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nummod	_	_
-21	por	por	ADP	_	_	18	nmod	_	MWE=por_cento|MWEPOS=NOUN
+21	por	por	ADP	_	ExtPos=NOUN	18	nmod	_	_
 22	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	21	compound	_	_
 23	em	em	ADP	PRP|@N<	_	26	case	_	_
 24	ambas	ambos	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	26	det	_	_
@@ -167,10 +167,10 @@
 # sent_id = CP369-4
 # source = CETEMPúblico n=369 sec=eco sem=94a
 # id = 1936
-1	LLoyd	LLoyd	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	MWE=LLoyd_Bentsen|MWEPOS=PROPN
+1	LLoyd	LLoyd	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	10	nsubj	_	_
 2	Bentsen	Bentsen	PROPN	_	Number=Sing	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-4	secretário	secretário	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	MWE=secretário_do_Tesouro
+4	secretário	secretário	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
 5-6	do	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_

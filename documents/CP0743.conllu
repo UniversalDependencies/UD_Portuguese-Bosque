@@ -13,14 +13,14 @@
 6	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
 7	Encontros	Encontros	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	_
 8	--	--	PUNCT	PU|@PU	_	12	punct	_	_
-9	tal	tal	ADV	PRP|@ADVL>	_	12	mark	_	MWE=tal_como|MWEPOS=SCONJ
+9	tal	tal	ADV	PRP|@ADVL>	ExtPos=SCONJ	12	mark	_	_
 10	como	como	SCONJ	N|M|S|@P<	_	9	fixed	_	_
 11	os	eles	PRON	PERS|M|3P|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Plur|Person=3|PronType=Prs	12	obj	_	_
 12	definiu	definir	VERB	<mv>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	advcl	_	_
 13	há	há	ADP	PRP|@<ADVL	_	15	case	_	_
 14	seis	seis	NUM	<card>|NUM|M|P|@>N	NumType=Card	15	nummod	_	_
 15	anos	ano	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	12	obl	_	_
-16	Madalena	Madalena	PROPN	_	Gender=Fem|Number=Sing	12	nsubj	_	MWE=Madalena_Perdigão|MWEPOS=PROPN
+16	Madalena	Madalena	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	12	nsubj	_	_
 17	Perdigão	Perdigão	PROPN	_	Number=Sing	16	flat:name	_	SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	19	punct	_	_
 19	fundadora	fundadora	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	16	appos	_	_
@@ -46,7 +46,7 @@
 36	,	,	PUNCT	PU|@PU	_	39	punct	_	_
 37-38	dos	_	_	_	_	_	_	_	_
 37	de	de	ADP	<sam->|PRP|@ADVL>	_	39	case	_	_
-38	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	39	det	_	MWE=os_quais
+38	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	39	det	_	_
 39	quais	qual	PRON	DET|M|P|@P<	Gender=Masc|Number=Sing|PronType=Rel	34	nmod	_	_
 40	estavam	estar	AUX	<mv>|V|IMPF|3P|IND|@FS-N<PRED	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	41	cop	_	_
 41	arredados	arredado	ADJ	<mv>|V|PCP|M|P|@ICL-<SC	Gender=Masc|Number=Plur	34	acl:relcl	_	_
@@ -59,7 +59,7 @@
 # sent_id = CP743-2
 # source = CETEMPúblico n=743 sec=clt sem=92b
 # id = 3820
-1	De	de	ADP	PRP|@>A	_	3	case	_	MWE=De_um_lado
+1	De	de	ADP	PRP|@>A	_	3	case	_	_
 2	um	um	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	7	punct	_	_
@@ -85,7 +85,7 @@
 20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
 22	tendências	tendência	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	19	nmod	_	_
-23	em	em	ADP	PRP|@N<	_	24	case	_	MWE=em_vigor
+23	em	em	ADP	PRP|@N<	_	24	case	_	_
 24	vigor	vigor	NOUN	N|@P<	Gender=Masc|Number=Sing	22	nmod	_	_
 25-26	nos	_	_	_	_	_	_	_	_
 25	em	em	ADP	<sam->|PRP|@N<	_	28	case	_	_
@@ -100,7 +100,7 @@
 # source = CETEMPúblico n=743 sec=clt sem=92b &E
 # id = 3821
 1	Os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
-2	Encontros	Encontros	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	MWE=Encontros_Acarte
+2	Encontros	Encontros	PROPN	PROP|M|P|@SUBJ>	Gender=Masc|Number=Plur	4	nsubj	_	_
 3	Acarte	Acarte	PROPN	PROP|@N<	Number=Sing	2	flat:name	_	_
 4-5	propunham-se	_	_	_	_	_	_	_	_
 4	propunham	propor	VERB	<mv>|<hyphen>|V|IMPF|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
@@ -178,7 +178,7 @@
 15-16	mantê-lo	_	_	_	_	_	_	_	_
 15	mantê	manter	VERB	<mv>|<cjt>|<hyphen>|V|INF|@ICL-<SC	VerbForm=Inf	11	parataxis	_	_
 16	lo	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	obj	_	_
-17	dentro	dentro	ADV	ADV|@<OA	_	15	advmod	_	MWE=dentro_de
+17	dentro	dentro	ADV	ADV|@<OA	_	15	advmod	_	_
 18-19	da	_	_	_	_	_	_	_	_
 18	de	de	ADP	PRP|@A<	_	20	case	_	_
 19	a	o	DET	<artd>|<-sam>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
@@ -259,7 +259,7 @@
 20	por	por	ADP	<sam->|PRP|@<ADVL	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	mão	mão	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	18	obl	_	_
-23	como	como	SCONJ	ADV|@SUB	_	27	mark	_	MWE=como_se
+23	como	como	SCONJ	ADV|@SUB	_	27	mark	_	_
 24	se	se	SCONJ	KS|@A<	_	23	fixed	_	_
 25	fosse	ser	AUX	<mv>|V|IMPF|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	27	cop	_	_
 26	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_

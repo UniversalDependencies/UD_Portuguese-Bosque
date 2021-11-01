@@ -3,7 +3,7 @@
 # sent_id = CP45-1
 # source = CETEMPúblico n=45 sec=pol sem=92b
 # id = 254
-1	Dezenas	dezena	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	MWE=Dezenas_de
+1	Dezenas	dezena	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
 2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	timorenses	timorenses	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	7	nsubj	_	_
 4	e	e	CCONJ	<co-subj>|KC|@CO	_	5	cc	_	_
@@ -31,7 +31,7 @@
 1	Entre	entre	SCONJ	PRP|@SA>	_	2	mark	_	_
 2	eles	ele	PRON	PERS|M|3P|PIV|@P<	Gender=Masc|Number=Plur|Person=3|PronType=Prs	0	root	_	_
 3	está	estar	AUX	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
-4	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	2	nsubj	_	MWE=Rui_Marques|MWEPOS=PROPN
+4	Rui	Rui	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	2	nsubj	_	_
 5	Marques	Marques	PROPN	_	Number=Sing	4	flat:name	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
@@ -49,20 +49,20 @@
 # sent_id = CP45-3
 # source = CETEMPúblico n=45 sec=pol sem=92b
 # id = 256
-1	Eduardo	Eduardo	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	MWE=Eduardo_dos_Santos
+1	Eduardo	Eduardo	PROPN	<first-cjt>|PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
 2-3	dos	_	_	_	_	_	_	_	_
 2	de	de	ADP	<sam->|PRP|@N<	_	4	case	_	_
 3	os	o	DET	<artd>|<-sam>|DET|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
 4	Santos	Santos	PROPN	PROP|@P<	Number=Sing	1	nmod	_	SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-6	presidente	presidente	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	MWE=presidente_do_MPLA
+6	presidente	presidente	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
 7-8	do	_	_	_	_	_	_	_	_
 7	de	de	ADP	<sam->|PRP|@N<	_	9	case	_	_
 8	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	MPLA	mpla	NOUN	N|@P<	Gender=Masc|Number=Sing	6	nmod	_	SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 11	e	e	CCONJ	<co-subj>|KC|@CO	_	12	cc	_	_
-12	Jonas	Jonas	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	MWE=Jonas_Savimbi|MWEPOS=PROPN
+12	Jonas	Jonas	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	1	conj	_	_
 13	Savimbi	Savimbi	PROPN	_	Number=Sing	12	flat:name	_	SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	15	punct	_	_
 15	dirigente	dirigente	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	12	appos	_	_
@@ -88,7 +88,7 @@
 31-32	à	_	_	_	_	_	_	_	_
 31	a	a	ADP	<sam->|PRP|@<PIV	_	33	obl	_	_
 32	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
-33	campanha	campanha	NOUN	_	Gender=Fem|Number=Sing	30	obl	_	MWE=campanha_eleitoral|MWEPOS=NOUN
+33	campanha	campanha	NOUN	_	ExtPos=NOUN|Gender=Fem|Number=Sing	30	obl	_	_
 34	eleitoral	eleitoral	ADJ	_	Gender=Fem|Number=Sing	33	amod	_	_
 35	de	de	ADP	PRP|@N<ARG	_	36	case	_	_
 36	Setembro	setembro	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	33	nmod	_	_
@@ -107,7 +107,7 @@
 8	se	se	SCONJ	KS|@SUB	_	9	mark	_	_
 9	fizer	fazer	VERB	<mv>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	advcl	_	_
 10	cair	cair	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	9	ccomp	_	_
-11	Saddam	Saddam	PROPN	_	Gender=Masc|Number=Sing	10	nsubj	_	MWE=Saddam_Hussein|MWEPOS=PROPN
+11	Saddam	Saddam	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	10	nsubj	_	_
 12	Hussein	Hussein	PROPN	_	Number=Sing	11	flat:name	_	SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	14	punct	_	_
 14	vaticinam	vaticinar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -123,7 +123,7 @@
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	Presidente	presidente	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	3	nsubj	_	_
 3	cancela	cancelar	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	6	det	_	MWE=todos_os
+4	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	6	det	_	_
 5	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	fixed	_	_
 6	compromissos	compromisso	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	3	obj	_	_
 7	e	e	CCONJ	<co-vfin>|KC|@CO	_	8	cc	_	_
@@ -133,7 +133,7 @@
 10-11	na	_	_	_	_	_	_	_	_
 10	em	em	ADP	<sam->|PRP|@<ADVL	_	12	case	_	_
 11	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	12	det	_	_
-12	Casa	Casa	PROPN	_	Gender=Fem|Number=Sing	8	obl	_	MWE=Casa_Branca|MWEPOS=PROPN
+12	Casa	Casa	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	8	obl	_	_
 13	Branca	Branca	PROPN	_	Number=Sing	12	flat:name	_	SpaceAfter=No
 14	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
@@ -148,7 +148,7 @@
 4	em	em	ADP	<sam->|PRP|@N<	_	6	case	_	_
 5	o	o	DET	<-sam>|ART|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	Golfo	golfo	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
-7	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=está_a|MWEPOS=AUX
+7	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-STA	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	a	a	SCONJ	PRP|@PRT-AUX<	_	10	mark	_	_
 9	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	10	aux:pass	_	_
 10	preparada	preparar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	7	xcomp	_	_

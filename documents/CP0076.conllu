@@ -8,7 +8,7 @@
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	francês	francês	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	33	nsubj	_	_
-6	Michel	Michel	PROPN	_	Gender=Masc|Number=Sing	5	appos	_	MWE=Michel_Platini|MWEPOS=PROPN
+6	Michel	Michel	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	5	appos	_	_
 7	Platini	Platini	PROPN	_	Number=Sing	6	flat:name	_	SpaceAfter=No
 8	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 9	ex-jogador	ex-jogador	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	5	appos	_	SpaceAfter=No
@@ -21,12 +21,12 @@
 16-17	do	_	_	_	_	_	_	_	_
 16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
 17	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
-18	Comité	Comité	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	MWE=Comité_Organizador
+18	Comité	Comité	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	15	nmod	_	_
 19	Organizador	Organizador	PROPN	PROP|@N<	Number=Sing	18	flat:name	_	_
 20-21	do	_	_	_	_	_	_	_	_
 20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	Campeonato	Campeonato	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	MWE=Campeonato_do_Mundo
+22	Campeonato	Campeonato	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	18	nmod	_	_
 23-24	do	_	_	_	_	_	_	_	_
 23	de	de	ADP	<sam->|PRP|@N<	_	25	case	_	_
 24	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
@@ -52,7 +52,7 @@
 44-45	dos	_	_	_	_	_	_	_	_
 44	de	de	ADP	<sam->|PRP|@N<	_	46	case	_	_
 45	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	_	_
-46	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	42	nmod	_	MWE=Estados_Unidos
+46	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	42	nmod	_	_
 47	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	46	flat:name	_	SpaceAfter=No
 48	.	.	PUNCT	PU|@PU	_	33	punct	_	_
 
@@ -60,7 +60,7 @@
 # sent_id = CP76-2
 # source = CETEMPúblico n=76 sec=des sem=94b
 # id = 410
-1	Por	por	ADV	ADV|@ADVL>	_	14	advmod	_	MWE=Por_entre
+1	Por	por	ADV	ADV|@ADVL>	_	14	advmod	_	_
 2	entre	entre	ADP	PRP|@A<	_	3	case	_	_
 3	críticas	crítica	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	1	obl	_	_
 4-5	à	_	_	_	_	_	_	_	_
@@ -106,7 +106,7 @@
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	futebol	futebol	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	17	nsubj	_	_
 17	deve	dever	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	ccomp	_	_
-18	continuar	continuar	VERB	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	17	xcomp	_	MWEPOS=AUX
+18	continuar	continuar	VERB	<aux>|V|INF|@ICL-AUX<	ExtPos=AUX|VerbForm=Inf	17	xcomp	_	_
 19	a	a	SCONJ	PRP|@PRT-AUX<	_	21	mark	_	_
 20	ser	ser	AUX	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	21	cop	_	_
 21	futebol	futebol	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	18	xcomp	_	SpaceAfter=No
@@ -144,7 +144,7 @@
 6	viu	ver	VERB	<mv>|V|PS|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	_	_
 7	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 8	recente	recente	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	9	amod	_	_
-9	Campeonato	Campeonato	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	MWE=Campeonato_do_Mundo
+9	Campeonato	Campeonato	PROPN	PROP|M|S|@<ACC	Gender=Masc|Number=Sing	6	obj	_	_
 10-11	do	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_

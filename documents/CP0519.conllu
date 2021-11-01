@@ -7,7 +7,7 @@
 2	lá	lá	ADV	ADV|@P<	_	11	advmod	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4-5	no	_	_	_	_	_	_	_	_
-4	em	em	ADP	<sam->|PRP|@N<	_	11	cc	_	MWE=no_entanto|MWEPOS=CCONJ
+4	em	em	ADP	<sam->|PRP|@N<	ExtPos=CCONJ	11	cc	_	_
 5	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	fixed	_	_
 6	entanto	entanto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	4	fixed	_	SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	6	punct	_	_
@@ -25,7 +25,7 @@
 17	Ocidente	Ocidente	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	14	nmod	_	_
 18	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	40	cc	_	SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	24	punct	_	_
-20	se	se	SCONJ	KS|@>S	_	24	mark	_	MWE=se_bem_que|MWEPOS=SCONJ
+20	se	se	SCONJ	KS|@>S	ExtPos=SCONJ	24	mark	_	_
 21	bem	bem	ADV	ADV|@S<	_	20	fixed	_	_
 22	que	que	SCONJ	KS|@SUB	_	20	fixed	_	_
 23	esteja	estar	AUX	<mv>|V|PR|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux	_	_
@@ -39,7 +39,7 @@
 29	de	de	ADP	<sam->|PRP|@N<	_	31	case	_	_
 30	as	o	DET	<-sam>|<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	31	det	_	_
 31	reformas	reforma	NOUN	<np-def>|N|F|P|@P<	Gender=Fem|Number=Plur	28	nmod	_	_
-32	em	em	ADP	PRP|@N<	_	33	case	_	MWE=em_curso
+32	em	em	ADP	PRP|@N<	_	33	case	_	_
 33	curso	curso	NOUN	N|@P<	Gender=Masc|Number=Sing	31	nmod	_	SpaceAfter=No
 34	»	»	PUNCT	PU|@PU	_	28	punct	_	SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	24	punct	_	_
@@ -47,7 +47,7 @@
 37	Presidente	presidente	NOUN	<prop>|<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	40	nsubj	_	_
 38	russo	russo	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	37	amod	_	_
 39	não	não	ADV	_	Polarity=Neg	40	advmod	_	_
-40	deixaria	deixar	VERB	<cjt>|<aux>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	conj	_	MWE=deixaria_de|MWEPOS=AUX
+40	deixaria	deixar	VERB	<cjt>|<aux>|V|COND|3S|@FS-STA	ExtPos=AUX|Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	11	conj	_	_
 41	de	de	SCONJ	PRP|@PRT-AUX<	_	42	mark	_	_
 42	argumentar	argumentar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	40	xcomp	_	_
 43	que	que	SCONJ	KS|@SUB	_	51	mark	_	SpaceAfter=No
@@ -65,7 +65,7 @@
 55	vezes	vez	NOUN	<np-def>|N|F|P|@>A	Gender=Fem|Number=Plur	61	nmod	_	_
 56	mais	mais	DET	<quant>|<KOMP>|<COMP>|DET|F|P|@<ACC	Gender=Fem|Number=Plur|PronType=Ind	55	det	_	_
 57-58	do	_	_	_	_	_	_	_	_
-57	de	de	ADP	<sam->|PRP|@SUB	_	61	case	_	MWE=do_que
+57	de	de	ADP	<sam->|PRP|@SUB	_	61	case	_	_
 58	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	57	fixed	_	_
 59	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	57	fixed	_	_
 60	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	61	det	_	_
@@ -109,7 +109,7 @@
 21	total	total	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	22	amod	_	_
 22	sinceridade	sinceridade	NOUN	<first-cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
 23	e	e	CCONJ	<co-prparg>|KC|@CO	_	24	cc	_	_
-24	boa	boa	ADJ	_	Gender=Masc|Number=Sing	22	conj	_	MWE=boa_vontade|MWEPOS=NOUN
+24	boa	boa	ADJ	_	ExtPos=NOUN|Gender=Masc|Number=Sing	22	conj	_	_
 25	vontade	vontade	NOUN	_	Gender=Masc|Number=Sing	24	compound	_	SpaceAfter=No
 26	,	,	PUNCT	PU|@PU	_	29	punct	_	_
 27-28	num	_	_	_	_	_	_	_	_
@@ -118,7 +118,7 @@
 29	respeito	respeito	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	_
 30	total	total	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	29	amod	_	_
 31	por	por	ADP	PRP|@N<	_	32	case	_	_
-32	cada	cada	DET	_	Gender=Masc|Number=Sing	29	nmod	_	MWE=Cada_um
+32	cada	cada	DET	_	Gender=Masc|Number=Sing	29	nmod	_	_
 33	um	um	NUM	_	NumType=Card	32	fixed	_	_
 34-35	dos	_	_	_	_	_	_	_	_
 34	de	de	ADP	<sam->|PRP|@N<	_	36	case	_	_
@@ -142,7 +142,7 @@
 50	de	de	ADP	<cjt>|PRP|@N<	_	52	case	_	_
 51	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_
 52	Estado	estado	NOUN	<prop>|<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	48	conj	_	_
-53	de	de	ADP	PRP|@N<	_	54	case	_	MWE=de_direito
+53	de	de	ADP	PRP|@N<	_	54	case	_	_
 54	direito	direito	NOUN	N|@P<	Gender=Masc|Number=Sing	52	nmod	_	_
 55	e	e	CCONJ	<co-postnom>|KC|@CO	_	58	cc	_	_
 56-57	do	_	_	_	_	_	_	_	_

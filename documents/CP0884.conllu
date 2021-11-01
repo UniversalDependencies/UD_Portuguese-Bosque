@@ -5,7 +5,7 @@
 # id = 4537
 1	Outro	outro	DET	<diff>|<KOMP>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	_
 2	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
-3	serial	serial	X	_	Gender=Masc|Number=Sing	0	root	_	MWE=serial_killer|MWEPOS=NOUN
+3	serial	serial	X	_	ExtPos=NOUN|Gender=Masc|Number=Sing	0	root	_	_
 4	killer	killer	X	_	Gender=Masc|Number=Sing	3	flat:foreign	_	SpaceAfter=No
 5	»	»	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
@@ -26,7 +26,7 @@
 4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 5	livre	livre	ADJ	ADJ|M|S|@N<PRED	Gender=Masc|Number=Sing	3	amod	_	_
 6	de	de	ADP	PRP|@A<	_	9	case	_	_
-7	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	9	det	_	MWE=toda_a
+7	toda	todo	DET	<quant>|DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Tot	9	det	_	_
 8	a	o	DET	<artd>|DET|F|S|@A<	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	fixed	_	_
 9	suspeita	suspeita	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	12	punct	_	_
@@ -49,7 +49,7 @@
 # source = CETEMPúblico n=884 sec=clt sem=92b
 # id = 4539
 1	Descoberto	descobrir	VERB	<mv>|V|PCP|M|S|@ICL-PRED>	Gender=Masc|Number=Sing|VerbForm=Part	5	advcl	_	_
-2	por	por	ADP	PRP|@<ADVL	_	3	case	_	MWE=por_acaso
+2	por	por	ADP	PRP|@<ADVL	_	3	case	_	_
 3	acaso	acaso	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	obl	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5-6	revela-se	_	_	_	_	_	_	_	_
@@ -96,10 +96,10 @@
 # sent_id = CP884-5
 # source = CETEMPúblico n=884 sec=clt sem=92b
 # id = 4541
-1	Jeff	Jeff	PROPN	_	Gender=Masc|Number=Sing	0	root	_	MWE=Jeff_Goldblum|MWEPOS=PROPN
+1	Jeff	Jeff	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	0	root	_	_
 2	Goldblum	Goldblum	PROPN	_	Number=Sing	1	flat:name	_	_
 3	e	e	CCONJ	KC|@CO	_	4	cc	_	_
-4	Alan	Alan	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	MWE=Alan_Bates|MWEPOS=PROPN
+4	Alan	Alan	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	1	conj	_	_
 5	Bates	Bates	PROPN	_	Number=Sing	4	flat:name	_	_
 6	em	em	ADP	PRP|@N<	_	7	case	_	_
 7	confronto	confronto	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
@@ -109,10 +109,10 @@
 # sent_id = CP884-6
 # source = CETEMPúblico n=884 sec=clt sem=92b
 # id = 4542
-1	Mr.	Mister	PROPN	_	Abbr=Yes|Gender=Masc|Number=Sing	0	root	_	MWEPOS=PROPN
+1	Mr.	Mister	PROPN	_	Abbr=Yes|ExtPos=PROPN|Gender=Masc|Number=Sing	0	root	_	_
 2	Frost	Frost	PROPN	_	Number=Sing	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-4	Deadly	Deadly	PROPN	_	Number=Sing	1	parataxis	_	MWEPOS=PROPN
+4	Deadly	Deadly	PROPN	_	ExtPos=PROPN|Number=Sing	1	parataxis	_	_
 5	Mr.	Mister	PROPN	_	Abbr=Yes|Gender=Masc|Number=Sing	4	flat:name	_	_
 6	Frost	Frost	PROPN	_	Number=Sing	4	flat:name	_	_
 
@@ -121,7 +121,7 @@
 # source = CETEMPúblico n=884 sec=clt sem=92b
 # id = 4543
 1	De	de	ADP	PRP|@UTT	_	2	case	_	_
-2	Philip	Philip	PROPN	_	Gender=Masc|Number=Sing	0	root	_	MWE=Philip_Setbon|MWEPOS=PROPN
+2	Philip	Philip	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	0	root	_	_
 3	Setbon	Setbon	PROPN	_	Number=Sing	2	flat:name	_	_
 
 # text = Com Jeff Goldblum, Alan Bates, Kathy Baker e Jean-Pierre Cassel
@@ -129,15 +129,15 @@
 # source = CETEMPúblico n=884 sec=clt sem=92b
 # id = 4544
 1	Com	com	ADP	PRP|@UTT	_	2	case	_	_
-2	Jeff	Jeff	PROPN	_	Gender=Masc|Number=Sing	0	root	_	MWE=Jeff_Goldblum|MWEPOS=PROPN
+2	Jeff	Jeff	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	0	root	_	_
 3	Goldblum	Goldblum	PROPN	_	Number=Sing	2	flat:name	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-5	Alan	Alan	PROPN	_	Gender=Masc|Number=Sing	2	conj	_	MWE=Alan_Bates|MWEPOS=PROPN
+5	Alan	Alan	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	2	conj	_	_
 6	Bates	Bates	PROPN	_	Number=Sing	5	flat:name	_	SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-8	Kathy	Kathy	PROPN	_	Gender=Fem|Number=Sing	2	conj	_	MWE=Kathy_Baker|MWEPOS=PROPN
+8	Kathy	Kathy	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	2	conj	_	_
 9	Baker	Baker	PROPN	_	Number=Sing	8	flat:name	_	_
 10	e	e	CCONJ	<co-prparg>|KC|@CO	_	11	cc	_	_
-11	Jean-Pierre	Jean-Pierre	PROPN	_	Gender=Masc|Number=Sing	2	conj	_	MWE=Jean-Pierre_Cassel|MWEPOS=PROPN
+11	Jean-Pierre	Jean-Pierre	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	2	conj	_	_
 12	Cassel	Cassel	PROPN	_	Number=Sing	11	flat:name	_	_
 

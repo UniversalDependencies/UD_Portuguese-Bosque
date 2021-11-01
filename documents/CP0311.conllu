@@ -8,14 +8,14 @@
 3	«	«	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	Liga	liga	NOUN	<prop>|<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	8	nsubj	_	_
-6	nem	nem	ADP	PRP|@ADVL>	_	7	case	_	MWE=nem_sequer
+6	nem	nem	ADP	PRP|@ADVL>	_	7	case	_	_
 7	sequer	sequer	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	_
 8	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	parataxis	_	_
 9	comprovar	comprovar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	8	xcomp	_	_
 10	que	que	SCONJ	KS|@SUB	_	13	mark	_	_
-11	de	de	ADP	PRP|@ADVL>	_	12	case	_	MWE=de_facto
+11	de	de	ADP	PRP|@ADVL>	_	12	case	_	_
 12	facto	facto	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	_
-13	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	MWE=está_a|MWEPOS=AUX
+13	está	estar	VERB	<aux>|V|PR|3S|IND|@FS-<ACC	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
 14	a	a	SCONJ	PRP|@PRT-AUX<	_	16	mark	_	_
 15	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	16	aux:pass	_	_
 16	feito	fazer	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	13	xcomp	_	_
@@ -24,7 +24,7 @@
 19	»	»	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 21	sublinhou	sublinhar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-22	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	21	nsubj	_	MWE=Pedro_Vieira|MWEPOS=PROPN
+22	Pedro	Pedro	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	21	nsubj	_	_
 23	Vieira	Vieira	PROPN	_	Number=Sing	22	flat:name	_	SpaceAfter=No
 24	.	.	PUNCT	PU|@PU	_	21	punct	_	_
 
@@ -32,16 +32,16 @@
 # sent_id = CP311-2
 # source = CETEMPúblico n=311 sec=soc sem=91b
 # id = 1640
-1	Quanto	quanto	ADV	ADV|@ADVL>	_	6	case	_	MWE=Quanto_a|MWEPOS=ADP
+1	Quanto	quanto	ADV	ADV|@ADVL>	ExtPos=ADP	6	case	_	_
 2-3	aos	_	_	_	_	_	_	_	_
 2	a	a	ADP	PRP|@A<	_	1	fixed	_	_
 3	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
-4	75	75	NUM	<card>|<np-def>|NUM|M|P|@>A	NumType=Card	6	nummod	_	MWE=75_mil
+4	75	75	NUM	<card>|<np-def>|NUM|M|P|@>A	NumType=Card	6	nummod	_	_
 5	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	flat	_	_
 6	contos	conto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	27	obl	_	_
 7	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	12	obj	_	_
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Secretaria	Secretaria	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	MWE=Secretaria_de_Estado
+9	Secretaria	Secretaria	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
 10	de	de	ADP	PRP|@N<	_	11	case	_	_
 11	Estado	Estado	PROPN	PROP|@P<	Number=Sing	9	nmod	_	_
 12	diz	dizer	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl:relcl	_	_
@@ -84,9 +84,9 @@
 47	apenas	apenas	ADV	ADV|@ADVL>	_	49	advmod	_	_
 48	se	se	PRON	PERS|F|3P|ACC|@ACC>-PASS	Case=Acc|Gender=Fem|Number=Plur|Person=3|PronType=Prs	49	expl	_	_
 49	salvaram	salvar	VERB	<mv>|<se-passive>|V|PS|3P|IND|@FS-<ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	27	advcl	_	_
-50	cerca	cerca	ADV	ADV|@>A	_	52	advmod	_	MWE=cerca_de|MWEPOS=ADV
+50	cerca	cerca	ADV	ADV|@>A	ExtPos=ADV	52	advmod	_	_
 51	de	de	ADP	<prp>|PRP|@A<	_	50	fixed	_	_
-52	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	49	obj	_	MWE=duas_dezenas
+52	duas	dois	NUM	<card>|NUM|F|P|@>N	NumType=Card	49	obj	_	_
 53	dezenas	dezena	NUM	<np-def>|N|F|P|@<SUBJ	Gender=Fem|Number=Plur|NumType=Card	52	flat	_	SpaceAfter=No
 54	.	.	PUNCT	PU|@PU	_	27	punct	_	_
 

@@ -58,7 +58,7 @@
 50	investimentos	investimento	NOUN	<np-idf>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	2	appos	_	_
 51	rondando	rondar	VERB	<mv>|V|GER|@ICL-N<	VerbForm=Ger	50	acl	_	_
 52	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	53	det	_	_
-53	4,7	4,7	NUM	<card>|NUM|M|P|@>N	NumType=Card	51	obj	_	MWE=4,7_milhões
+53	4,7	4,7	NUM	<card>|NUM|M|P|@>N	NumType=Card	51	obj	_	_
 54	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	53	flat	_	_
 55	de	de	ADP	PRP|@N<ARG	_	56	case	_	_
 56	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	53	nmod	_	SpaceAfter=No
@@ -67,7 +67,7 @@
 59	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	60	det	_	_
 60	infra-estruturas	infra-estrutura	NOUN	<np-def>|N|F|P|@<SC	Gender=Fem|Number=Plur	0	root	_	_
 61	que	que	PRON	<rel>|INDP|F|P|@ACC>	Gender=Fem|Number=Plur|PronType=Rel	64	obj	_	_
-62	Azevedo	Azevedo	PROPN	_	Gender=Masc|Number=Sing	64	nsubj	_	MWE=Azevedo_Soares|MWEPOS=PROPN
+62	Azevedo	Azevedo	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	64	nsubj	_	_
 63	Soares	Soares	PROPN	_	Number=Sing	62	flat:name	_	_
 64	inaugurou	inaugurar	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	60	acl:relcl	_	SpaceAfter=No
 65	.	.	PUNCT	PU|@PU	_	60	punct	_	_
@@ -91,7 +91,7 @@
 12	de	de	ADP	PRP|@N<	_	13	case	_	_
 13	Sines	Sines	PROPN	PROP|M/F|S|@P<	Number=Sing	11	nmod	_	_
 14	12	12	NUM	<card>|NUM|M|P|@>N	NumType=Card	15	nummod	_	_
-15	por	por	ADP	_	_	6	obj	_	MWE=por_cento|MWEPOS=NOUN
+15	por	por	ADP	_	ExtPos=NOUN	6	obj	_	_
 16	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	15	compound	_	_
 17-18	do	_	_	_	_	_	_	_	_
 17	de	de	ADP	<sam->|PRP|@N<	_	19	case	_	_
@@ -105,10 +105,10 @@
 24	Alentejo	Alentejo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	19	nmod	_	SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	26	punct	_	_
 26	assegurando	assegurar	VERB	<mv>|V|GER|@ICL-N<PRED	VerbForm=Ger	6	advcl	_	_
-27	cerca	cerca	ADV	ADV|@>A	_	29	advmod	_	MWE=cerca_de|MWEPOS=ADV
+27	cerca	cerca	ADV	ADV|@>A	ExtPos=ADV	29	advmod	_	_
 28	de	de	ADP	<prp>|PRP|@A<	_	27	fixed	_	_
 29	4200	4200	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	nummod	_	_
-30	postos	postos	NOUN	_	Gender=Masc|Number=Plur	26	obj	_	MWE=postos_de_trabalho|MWEPOS=NOUN
+30	postos	postos	NOUN	_	ExtPos=NOUN|Gender=Masc|Number=Plur	26	obj	_	_
 31	de	de	ADP	_	_	30	compound	_	_
 32	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	30	compound	_	_
 33	--	--	PUNCT	PU|@PU	_	5	punct	_	_
@@ -124,13 +124,13 @@
 43	local	local	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	42	amod	_	SpaceAfter=No
 44	,	,	PUNCT	PU|@PU	_	46	punct	_	_
 45	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	_
-46	Câmara	Câmara	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	42	conj	_	MWE=Câmara_de_Sines
+46	Câmara	Câmara	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	42	conj	_	_
 47	de	de	ADP	PRP|@N<	_	48	case	_	_
 48	Sines	Sines	PROPN	PROP|@P<	Number=Sing	46	nmod	_	SpaceAfter=No
 49	,	,	PUNCT	PU|@PU	_	52	punct	_	_
 50	e	e	CCONJ	<co-prparg>|KC|@CO	_	52	cc	_	_
 51	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
-52	Administração	Administração	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	42	conj	_	MWE=Administração_do_Porto_de_Sines
+52	Administração	Administração	PROPN	<cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	42	conj	_	_
 53-54	do	_	_	_	_	_	_	_	_
 53	de	de	ADP	<sam->|PRP|@N<	_	55	case	_	_
 54	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
@@ -166,7 +166,7 @@
 80	problemas	problema	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	77	nmod	_	_
 81	entre	entre	ADP	PRP|@N<	_	83	case	_	_
 82	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	83	det	_	_
-83	Administração	Administração	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	80	nmod	_	MWE=Administração_do_Porto_de_Lisboa
+83	Administração	Administração	PROPN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	80	nmod	_	_
 84-85	do	_	_	_	_	_	_	_	_
 84	de	de	ADP	<sam->|PRP|@N<	_	86	case	_	_
 85	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	86	det	_	_

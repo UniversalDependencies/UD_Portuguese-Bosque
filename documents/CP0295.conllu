@@ -3,17 +3,17 @@
 # sent_id = CP295-1
 # source = CETEMPúblico n=295 sec=clt sem=96a
 # id = 1574
-1	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	27	nsubj	_	MWE=Rui_Vilar|MWEPOS=PROPN
+1	Rui	Rui	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	27	nsubj	_	_
 2	Vilar	Vilar	PROPN	_	Number=Sing	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 4	ex-comissário	ex-comissário	NOUN	<first-cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
 5-6	da	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	7	det	_	_
-7	Europália	Europália	PROPN	_	Gender=Fem|Number=Sing	4	nmod	_	MWE=Europália_91|MWEPOS=PROPN
+7	Europália	Europália	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	4	nmod	_	_
 8	91	91	PROPN	_	Number=Sing	7	flat:name	_	_
 9	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	10	cc	_	_
-10	ex-presidente	ex-presidente	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	4	conj	_	MWE=ex-presidente_do_conselho_de_administração
+10	ex-presidente	ex-presidente	NOUN	<cjt>|<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	4	conj	_	_
 11-12	do	_	_	_	_	_	_	_	_
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
 12	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -23,7 +23,7 @@
 16-17	da	_	_	_	_	_	_	_	_
 16	de	de	ADP	<sam->|PRP|@N<	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	18	det	_	_
-18	Caixa	Caixa	PROPN	_	Gender=Fem|Number=Sing	10	nmod	_	MWE=Caixa_Geral|MWEPOS=PROPN
+18	Caixa	Caixa	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	10	nmod	_	_
 19	Geral	Geral	PROPN	_	Number=Sing	18	flat:name	_	_
 20	de	de	ADP	PRP|@N<	_	21	case	_	_
 21	Depósitos	Depósitos	PROPN	PROP|@P<	Number=Sing	18	nmod	_	_
@@ -56,7 +56,7 @@
 11	em	em	ADP	PRP|@<PIV	_	12	case	_	_
 12	cerca	cerca	ADV	ADV|@>A	_	10	advmod	_	_
 13	de	de	ADP	<prp>|PRP|@A<	_	14	case	_	_
-14	260	260	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	obl	_	MWE=260_milhões
+14	260	260	NUM	<card>|NUM|M|P|@>N	NumType=Card	10	obl	_	_
 15	milhões	milhão	NUM	<np-def>|N|M|P|@P<	NumType=Card	14	flat	_	_
 16	de	de	ADP	PRP|@N<ARG	_	17	case	_	_
 17	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	14	nmod	_	SpaceAfter=No
@@ -145,7 +145,7 @@
 43-44	nos	_	_	_	_	_	_	_	_
 43	em	em	ADP	<sam->|PRP|@N<	_	45	case	_	_
 44	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	45	det	_	_
-45	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	MWE=Estados_Unidos
+45	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	_
 46	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	45	flat:name	_	SpaceAfter=No
 47	,	,	PUNCT	PU|@PU	_	48	punct	_	_
 48	composta	compor	VERB	<mv>|V|PCP|F|S|@ICL-N<PRED	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	32	acl	_	_
@@ -178,13 +178,13 @@
 15	em	em	ADP	PRP|@<ADVL	_	16	case	_	_
 16	valor	valor	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	13	obl	_	SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	13	punct	_	_
-18	cerca	cerca	ADV	ADV|@>N	_	23	advmod	_	MWE=cerca_de|MWEPOS=ADV
+18	cerca	cerca	ADV	ADV|@>N	ExtPos=ADV	23	advmod	_	_
 19	de	de	ADP	<prp>|PRP|@A<	_	18	fixed	_	_
-20	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	obl	_	MWE=30_milhões
+20	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	obl	_	_
 21	milhões	milhão	NUM	<np-def>|N|M|P|@<ADVL	NumType=Card	20	flat	_	_
 22	de	de	ADP	PRP|@N<ARG	_	23	case	_	_
 23	contos	conto	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	20	nmod	_	_
-24	por	por	ADP	<sam->|PRP|@<ADVL	_	25	case	_	MWE=por_causa_de
+24	por	por	ADP	<sam->|PRP|@<ADVL	_	25	case	_	_
 25	causa	causa	NOUN	N|@P<	Gender=Fem|Number=Sing	13	obl	_	_
 26-27	das	_	_	_	_	_	_	_	_
 26	de	de	ADP	PRP|@N<	_	28	case	_	_

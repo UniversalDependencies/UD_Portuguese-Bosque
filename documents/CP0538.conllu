@@ -22,7 +22,7 @@
 17	insucesso	insucesso	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	_
 18	de	de	ADP	PRP|@N<	_	20	case	_	_
 19	«	«	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
-20	Super	Super	PROPN	_	Gender=Masc|Number=Sing	17	nmod	_	MWE=Super_Mario_Bros.|MWEPOS=PROPN
+20	Super	Super	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	17	nmod	_	_
 21	Mario	Mario	PROPN	_	Number=Sing	20	flat:name	_	_
 22	Bros.	Bros.	PROPN	_	Number=Sing	20	flat:name	_	SpaceAfter=No
 23	»	»	PUNCT	PU|@PU	_	20	punct	_	_
@@ -39,7 +39,7 @@
 6	de	de	ADP	PRP|@N<	_	7	case	_	_
 7	cinema	cinema	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	5	nmod	_	_
 8	atinge	atingir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-9	5000	5000	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	obj	_	MWE=5000_milhões
+9	5000	5000	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	obj	_	_
 10	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	9	flat	_	_
 11	de	de	ADP	PRP|@N<ARG	_	12	case	_	_
 12	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	9	nmod	_	SpaceAfter=No
@@ -52,14 +52,14 @@
 18	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
 19	videojogos	videojogo	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	16	nmod	_	_
 20	vale	valer	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	advcl	_	_
-21	13	13	NUM	<card>|NUM|M|P|@>A	NumType=Card	20	obj	_	MWE=13_mil_milhões
+21	13	13	NUM	<card>|NUM|M|P|@>A	NumType=Card	20	obj	_	_
 22	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	flat	_	_
 23	milhões	milhão	NUM	<np-def>|N|M|P|@<SA	NumType=Card	21	flat	_	_
 24	de	de	ADP	PRP|@N<ARG	_	25	case	_	_
 25	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	21	nmod	_	_
 26	anuais	anual	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	25	amod	_	_
 27	(	(	PUNCT	PU|@PU	_	30	punct	_	SpaceAfter=No
-28	7000	7000	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	nsubj	_	MWE=7000_milhões
+28	7000	7000	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	nsubj	_	_
 29	milhões	milhão	NUM	<first-cjt>|<np-def>|N|M|P|@N<PRED	NumType=Card	28	flat	_	_
 30	gastos	gastar	VERB	<mv>|V|PCP|M|P|@ICL-N<	Gender=Masc|Number=Plur|VerbForm=Part	21	parataxis	_	_
 31	em	em	ADP	PRP|@<ADVL	_	32	case	_	_
@@ -68,7 +68,7 @@
 34	jogos	jogo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	32	nmod	_	_
 35	e	e	CCONJ	<co-n<pred>|<co-pred>|KC|@CO	_	37	cc	_	_
 36	mais	mais	ADV	<quant>|<KOMP>|ADV|@>A	_	37	advmod	_	_
-37	6000	6000	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	conj	_	MWE=6000_milhões
+37	6000	6000	NUM	<card>|NUM|M|P|@>N	NumType=Card	30	conj	_	_
 38	milhões	milhão	NUM	<cjt>|<np-def>|N|M|P|@N<PRED	NumType=Card	37	flat	_	_
 39	em	em	ADP	PRP|@N<	_	40	case	_	_
 40	videojogos	videojogo	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	37	nmod	_	_
@@ -80,7 +80,7 @@
 # sent_id = CP538-3
 # source = CETEMPúblico n=538 sec=clt-soc sem=94b
 # id = 2810
-1	Por	por	ADP	PRP|@ADVL>	_	21	cc	_	MWE=Por_outro_lado|MWEPOS=CCONJ
+1	Por	por	ADP	PRP|@ADVL>	ExtPos=CCONJ	21	cc	_	_
 2	outro	outro	DET	<diff>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	1	fixed	_	_
 3	lado	lado	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	fixed	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
@@ -97,19 +97,19 @@
 13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
 14	revista	revista	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	11	obl	_	_
 15	«	«	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
-16	Business	Business	PROPN	_	Gender=Fem|Number=Sing	14	appos	_	MWE=Business_Week|MWEPOS=PROPN
+16	Business	Business	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	14	appos	_	_
 17	Week	Week	PROPN	_	Number=Sing	16	flat:name	_	SpaceAfter=No
 18	»	»	PUNCT	PU|@PU	_	16	punct	_	SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 20	foram	ser	AUX	<aux>|V|MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pqp|VerbForm=Fin	21	aux:pass	_	_
 21	vendidas	vender	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	0	root	_	_
-22	12	12	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nsubj	_	MWE=12_milhões
+22	12	12	NUM	<card>|NUM|M|P|@>N	NumType=Card	21	nsubj	_	_
 23	milhões	milhão	NUM	<np-def>|N|M|P|@<SUBJ	NumType=Card	22	flat	_	_
 24	de	de	ADP	PRP|@N<ARG	_	25	case	_	_
 25	cópias	cópia	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	22	nmod	_	_
 26	de	de	ADP	PRP|@N<	_	28	case	_	_
 27	«	«	PUNCT	PU|@PU	_	28	punct	_	SpaceAfter=No
-28	Street	Street	PROPN	_	Number=Sing	25	nmod	_	MWE=Street_Fighter|MWEPOS=PROPN
+28	Street	Street	PROPN	_	ExtPos=PROPN|Number=Sing	25	nmod	_	_
 29	Fighter	Fighter	PROPN	_	Number=Sing	28	flat:name	_	SpaceAfter=No
 30	»	»	PUNCT	PU|@PU	_	28	punct	_	_
 31	em	em	ADP	PRP|@<ADVL	_	34	case	_	_
@@ -118,7 +118,7 @@
 34	mundo	mundo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	21	obl	_	SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	36	punct	_	_
 36	havendo	haver	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	21	advcl	_	_
-37	25	25	NUM	<card>|NUM|M|P|@>N	NumType=Card	36	obj	_	MWE=25_milhões
+37	25	25	NUM	<card>|NUM|M|P|@>N	NumType=Card	36	obj	_	_
 38	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	37	flat	_	_
 39	de	de	ADP	PRP|@N<ARG	_	40	case	_	_
 40	norte-americanos	norte-americano	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	37	nmod	_	_
@@ -146,7 +146,7 @@
 12	difícil	difícil	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	3	ccomp	_	_
 13	recuperar	recuperar	VERB	<mv>|V|INF|@ICL-<SUBJ	VerbForm=Inf	12	ccomp	_	_
 14	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
-15	40	40	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	obj	_	MWE=40_milhões
+15	40	40	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	obj	_	_
 16	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	15	flat	_	_
 17	de	de	ADP	PRP|@N<ARG	_	18	case	_	_
 18	dólares	dólar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	15	nmod	_	_
@@ -170,7 +170,7 @@
 5	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	empresa	empresa	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	Kenzo	Kenzo	PROPN	_	Gender=Masc|Number=Sing	3	appos	_	MWE=Kenzo_Tsujimoto|MWEPOS=PROPN
+8	Kenzo	Kenzo	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	3	appos	_	_
 9	Tsujimoto	Tsujimoto	PROPN	_	Number=Sing	8	flat:name	_	SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 11	«	«	PUNCT	PU|@PU	_	24	punct	_	SpaceAfter=No
@@ -212,7 +212,7 @@
 # source = CETEMPúblico n=538 sec=clt-soc sem=94b
 # id = 2813
 1	Nem	nem	ADV	ADV|@>A	_	3	advmod	_	_
-2	de	de	ADP	PRP|@ADVL>	_	3	case	_	MWE=de_propósito
+2	de	de	ADP	PRP|@ADVL>	_	3	case	_	_
 3	propósito	propósito	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	8	obl	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5-6	na	_	_	_	_	_	_	_	_
@@ -221,7 +221,7 @@
 7	Primavera	Primavera	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	8	obl	_	_
 8	sairá	sair	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 9	«	«	PUNCT	PU|@PU	_	10	punct	_	SpaceAfter=No
-10	Street	Street	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	8	nsubj	_	MWE=Street_Fighter_III:_The_Movie_Game
+10	Street	Street	PROPN	PROP|M|S|@<SUBJ	Gender=Masc|Number=Sing	8	nsubj	_	_
 11	Fighter	Fighter	PROPN	PROP|@N<	Number=Sing	10	flat:name	_	_
 12	III:	III:	PROPN	PROP|@N<	Number=Sing	10	flat:name	_	_
 13	The	The	PROPN	PROP|@N<	Number=Sing	10	flat:name	_	_

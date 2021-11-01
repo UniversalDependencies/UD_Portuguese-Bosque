@@ -42,9 +42,9 @@
 34	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	desenvolvimento	desenvolvimento	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	32	obl	_	_
 36	de	de	ADP	PRP|@N<ARG	_	39	case	_	_
-37	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Tot	39	det	_	MWE=todo_o
+37	todo	todo	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Tot	39	det	_	_
 38	o	o	DET	<artd>|DET|M|S|@A<	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	fixed	_	_
-39	Médio	Médio	PROPN	_	Gender=Masc|Number=Sing	35	nmod	_	MWE=Médio_Oriente|MWEPOS=PROPN
+39	Médio	Médio	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	35	nmod	_	_
 40	Oriente	Oriente	PROPN	_	Number=Sing	39	flat:name	_	SpaceAfter=No
 41	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
@@ -178,7 +178,7 @@
 25	produtos	produto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	7	nmod	_	_
 26	que	que	PRON	<rel>|INDP|M|P|@ACC>	Gender=Masc|Number=Plur|PronType=Rel	44	obj	_	SpaceAfter=No
 27	,	,	PUNCT	PU|@PU	_	32	punct	_	_
-28	apesar	apesar	ADV	ADV|@ADVL>	_	32	case	_	MWE=apesar_de|MWEPOS=ADP
+28	apesar	apesar	ADV	ADV|@ADVL>	ExtPos=ADP	32	case	_	_
 29-30	dos	_	_	_	_	_	_	_	_
 29	de	de	ADP	PRP|@A<	_	28	fixed	_	_
 30	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
@@ -195,7 +195,7 @@
 39	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	indústria	indústria	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	36	conj	_	SpaceAfter=No
 41	,	,	PUNCT	PU|@PU	_	32	punct	_	_
-42	venham	vir	VERB	<aux>|V|PR|3P|SUBJ|@FS-N<	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	acl:relcl	_	MWE=venham_a|MWEPOS=AUX
+42	venham	vir	VERB	<aux>|V|PR|3P|SUBJ|@FS-N<	ExtPos=AUX|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	acl:relcl	_	_
 43	a	a	SCONJ	PRP|@PRT-AUX<	_	44	mark	_	_
 44	produzir	produzir	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	42	xcomp	_	SpaceAfter=No
 45	.	.	PUNCT	PU|@PU	_	1	punct	_	_
@@ -216,7 +216,7 @@
 9-10	esperando-se	_	_	_	_	_	_	_	_
 9	esperando	esperar	VERB	<mv>|V|GER|@ICL-<ADVL	VerbForm=Ger	1	advcl	_	_
 10	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|PronType=Prs	9	nsubj	_	_
-11	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	9	obj	_	MWE=dois_milhões
+11	dois	dois	NUM	<card>|NUM|M|P|@>N	NumType=Card	9	obj	_	_
 12	milhões	milhão	NUM	<first-cjt>|<np-def>|N|M|P|@<ACC	NumType=Card	11	flat	_	_
 13	de	de	ADP	PRP|@N<ARG	_	14	case	_	_
 14	visitantes	visitante	NOUN	<np-idf>|N|M/F|P|@P<	Number=Plur	11	nmod	_	_
@@ -226,10 +226,10 @@
 18	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	criação	criação	NOUN	<cjt>|<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	conj	_	_
 20	de	de	ADP	<first-cjt>|PRP|@N<	_	21	case	_	_
-21	30	30	NUM	<card>|NUM|M|P|@>A	NumType=Card	26	nummod	_	MWE=30_mil
+21	30	30	NUM	<card>|NUM|M|P|@>A	NumType=Card	26	nummod	_	_
 22	mil	mil	NUM	<first-cjt>|<card>|NUM|M|P|@P<	NumType=Card	21	flat	_	_
 23	a	a	ADP	<cjt>|PRP|@P<	_	24	case	_	_
-24	50	50	NUM	<card>|NUM|M|P|@>A	NumType=Card	21	nummod	_	MWE=50_mil
+24	50	50	NUM	<card>|NUM|M|P|@>A	NumType=Card	21	nummod	_	_
 25	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	24	flat	_	_
 26	postos	posto	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	19	nmod	_	_
 27	de	de	ADP	PRP|@N<	_	28	case	_	_

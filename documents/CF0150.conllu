@@ -12,19 +12,19 @@
 # sent_id = CF150-3
 # source = CETENFolha n=150 cad=Opinião sec=opi sem=94b
 # id = 589
-1	RIO	Rio	PROPN	PROP|M|S|@NPHR	Gender=Masc|Number=Sing	17	parataxis	_	MWE=Rio_De_Janeiro|MWEPOS=PROPN
+1	RIO	Rio	PROPN	PROP|M|S|@NPHR	ExtPos=PROPN|Gender=Masc|Number=Sing	17	parataxis	_	_
 2	DE	De	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 3	JANEIRO	Janeiro	PROPN	PROP|@N<	Number=Sing	1	flat:name	_	_
 4-5	Aos	_	_	_	_	_	_	_	_
-4	A	a	ADP	PRP|@ADVL>	_	17	advmod	_	MWE=Aos_trancos_e_barrancos|MWEPOS=ADV
+4	A	a	ADP	PRP|@ADVL>	ExtPos=ADV	17	advmod	_	_
 5	os	o	DET	_	Gender=Masc|Number=Plur|PronType=Art	4	fixed	_	_
 6	trancos	tranco	NOUN	N|@P<	Gender=Masc|Number=Plur	4	fixed	_	_
 7	e	e	CCONJ	KC|@CO	_	4	fixed	_	_
 8	barrancos	barranco	NOUN	N|@P<	Gender=Masc|Number=Plur	4	fixed	_	SpaceAfter=No
 9	,	,	PUNCT	_	_	17	punct	_	_
-10	eis	eis	ADP	PRP|@ADVL>	_	17	advmod	_	MWE=eis_que|MWEPOS=ADV
+10	eis	eis	ADP	PRP|@ADVL>	ExtPos=ADV	17	advmod	_	_
 11	que	que	SCONJ	N|M|S|@P<	_	10	fixed	_	_
-12	mais	mais	ADV	_	_	17	advmod	_	MWE=mais_uma_vez|MWEPOS=ADV
+12	mais	mais	ADV	_	ExtPos=ADV	17	advmod	_	_
 13	uma	um	DET	_	Gender=Fem|Number=Sing	12	fixed	_	_
 14	vez	vez	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	fixed	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
@@ -33,7 +33,7 @@
 18	dar	dar	VERB	<mv>|V|INF|@ICL-<ACC	VerbForm=Inf	17	xcomp	_	_
 19	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	passo	passo	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	18	obj	_	_
-21	em	em	ADP	PRP|@N<	_	22	case	_	MWE=em_direção_a
+21	em	em	ADP	PRP|@N<	_	22	case	_	_
 22	direção	direção	NOUN	N|@P<	Gender=Fem|Number=Sing	20	nmod	_	_
 23	a	a	ADP	PRP|@N<	_	25	case	_	_
 24	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
@@ -84,7 +84,7 @@
 4	de	de	SCONJ	PRP|@N<	_	11	mark	_	_
 5	não	não	ADV	ADV|@ADVL>	Polarity=Neg	11	advmod	_	_
 6	estar	estar	AUX	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	cop	_	_
-7	a	a	ADP	_	_	11	case	_	MWE=a_favor_ou_contra|MWEPOS=ADP
+7	a	a	ADP	_	ExtPos=ADP	11	case	_	_
 8	favor	favor	NOUN	_	Gender=Masc|Number=Sing	7	fixed	_	_
 9	ou	ou	CCONJ	_	_	7	fixed	_	_
 10	contra	contra	ADP	_	_	7	fixed	_	_
@@ -108,7 +108,7 @@
 # sent_id = CF150-6
 # source = CETENFolha n=150 cad=Opinião sec=opi sem=94b
 # id = 592
-1	Por	por	ADP	PRP|@ADVL	_	2	case	_	MWE=Por_que
+1	Por	por	ADP	PRP|@ADVL	_	2	case	_	_
 2	que	que	PRON	INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	0	root	_	_
 3	não	não	ADV	ADV|@<ADVL	Polarity=Neg	2	advmod	_	SpaceAfter=No
 4	?	?	PUNCT	PU|@PU	_	2	punct	_	_
@@ -145,11 +145,11 @@
 # sent_id = CF150-8
 # source = CETENFolha n=150 cad=Opinião sec=opi sem=94b
 # id = 594
-1	Por	por	ADP	PRP|@ADVL>	_	2	case	_	MWE=Por_que
+1	Por	por	ADP	PRP|@ADVL>	_	2	case	_	_
 2	que	que	PRON	INDP|M|S|@P<	Gender=Masc|Number=Sing|PronType=Ind	4	obl	_	_
 3	não	não	ADV	_	Polarity=Neg	4	advmod	_	_
 4	ousar	ousar	VERB	<mv>|V|INF|@ICL-QUE	VerbForm=Inf	0	root	_	_
-5	ainda	ainda	ADV	ADV|@SUB	_	8	mark	_	MWE=ainda_que|MWEPOS=SCONJ
+5	ainda	ainda	ADV	ADV|@SUB	ExtPos=SCONJ	8	mark	_	_
 6	que	que	SCONJ	KS|@A<	_	5	fixed	_	_
 7	ingenuamente	ingenuamente	ADV	ADV|@ADVL>	_	8	advmod	_	_
 8	esperar	esperar	VERB	<mv>|V|INF|@ICL-<ADVL	VerbForm=Inf	4	advcl	_	_

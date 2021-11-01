@@ -36,15 +36,15 @@
 28	de	de	ADP	<sam->|PRP|@N<ARG	_	31	case	_	_
 29	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	31	det	_	_
 30	«	«	PUNCT	PU|@PU	_	31	punct	_	SpaceAfter=No
-31	pole	pole	X	_	_	25	nmod	_	MWE=pole_position|MWEPOS=NOUN
+31	pole	pole	X	_	ExtPos=NOUN	25	nmod	_	_
 32	position	position	X	_	_	31	flat:foreign	_	SpaceAfter=No
 33	»	»	PUNCT	PU|@PU	_	31	punct	_	_
 34	de	de	ADP	PRP|@N<	_	35	case	_	_
-35	Fabrizio	Fabrizio	PROPN	_	Gender=Masc|Number=Sing	31	nmod	_	MWE=Fabrizio_Giovanardi|MWEPOS=PROPN
+35	Fabrizio	Fabrizio	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	31	nmod	_	_
 36	Giovanardi	Giovanardi	PROPN	_	Number=Sing	35	flat:name	_	SpaceAfter=No
 37	,	,	PUNCT	PU|@PU	_	39	punct	_	_
 38	em	em	ADP	PRP|@N<	_	39	case	_	_
-39	Alfa	Alfa	PROPN	_	Gender=Fem|Number=Sing	35	nmod	_	MWE=Alfa_Romeo|MWEPOS=PROPN
+39	Alfa	Alfa	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	35	nmod	_	_
 40	Romeo	Romeo	PROPN	_	Number=Sing	39	flat:name	_	_
 41	155	155	NUM	<card>|NUM|M|P|@N<	NumType=Card	39	nummod	_	SpaceAfter=No
 42	,	,	PUNCT	PU|@PU	_	39	punct	_	_
@@ -143,7 +143,7 @@
 4	se	se	PRON	<refl>|PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
 5	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 6	primeiro	primeiro	ADV	<first-cjt>|ADV|@<ADVL	_	3	advmod	_	_
-7	para	para	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	3	obl	_	MWE=para_a_direita
+7	para	para	NOUN	N|M|S|@<ADVL	Gender=Masc|Number=Sing	3	obl	_	_
 8	a	a	ADP	PRP|@N<	_	9	case	_	_
 9	direita	direita	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	7	nmod	_	_
 10	e	e	CCONJ	<co-vfin>|KC|@CO	_	14	cc	_	_
@@ -188,9 +188,9 @@
 # sent_id = CP188-7
 # source = CETEMPúblico n=188 sec=des sem=96a
 # id = 1009
-1	Quanto	quanto	ADV	ADV|@ADVL>	_	3	case	_	MWE=Quanto_a|MWEPOS=ADP
+1	Quanto	quanto	ADV	ADV|@ADVL>	ExtPos=ADP	3	case	_	_
 2	a	a	ADP	PRP|@A<	_	1	fixed	_	_
-3	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	12	obl	_	MWE=Pedro_Matos_Chaves|MWEPOS=PROPN
+3	Pedro	Pedro	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	12	obl	_	_
 4	Matos	Matos	PROPN	_	Number=Sing	3	flat:name	_	_
 5	Chaves	Chaves	PROPN	_	Number=Sing	3	flat:name	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	3	punct	_	_
@@ -230,7 +230,7 @@
 39	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	41	nsubj	_	_
 40	o	ele	PRON	PERS|M|3S|ACC|@ACC>	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	41	obj	_	_
 41	deixou	deixar	VERB	<mv>|V|PS|3S|IND|@FS-S<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	38	acl:relcl	_	_
-42	fora	fora	ADV	ADV|@<OA	_	41	advmod	_	MWE=fora_de
+42	fora	fora	ADV	ADV|@<OA	_	41	advmod	_	_
 43-44	da	_	_	_	_	_	_	_	_
 43	de	de	ADP	PRP|@A<	_	47	case	_	_
 44	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_

@@ -6,7 +6,7 @@
 1	A	a	ADP	PRP|@ADVL>	_	2	case	_	_
 2	norte	norte	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	16	obl	_	_
 3	de	de	ADP	PRP|@N<	_	4	case	_	_
-4	Porto	Porto	PROPN	_	Gender=Masc|Number=Sing	2	nmod	_	MWE=Porto_Dinheiro|MWEPOS=PROPN
+4	Porto	Porto	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	2	nmod	_	_
 5	Dinheiro	Dinheiro	PROPN	_	Number=Sing	4	flat:name	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 7-8	na	_	_	_	_	_	_	_	_
@@ -18,11 +18,11 @@
 12-13	da	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 13	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	14	det	_	_
-14	Guarda	Guarda	PROPN	_	Gender=Fem|Number=Sing	11	nmod	_	MWE=Guarda_Fiscal|MWEPOS=PROPN
+14	Guarda	Guarda	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	11	nmod	_	_
 15	Fiscal	Fiscal	PROPN	_	Number=Sing	14	flat:name	_	_
 16	apreenderam	apreender	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	16	punct	_	_
-18	cerca	cerca	ADV	ADV|@<ADVL	_	16	advmod	_	MWE=cerca_de
+18	cerca	cerca	ADV	ADV|@<ADVL	_	16	advmod	_	_
 19-20	das	_	_	_	_	_	_	_	_
 19	de	de	ADP	PRP|@A<	_	21	case	_	_
 20	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	21	det	_	_
@@ -81,7 +81,7 @@
 10	indivíduos	indivíduo	NOUN	<np-def>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	8	nsubj	_	SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	16	punct	_	_
 12	entre	entre	ADP	PRP|@>N	_	14	case	_	_
-13	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	14	det	_	MWE=os_quais
+13	os	o	DET	DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
 14	quais	qual	PRON	DET|M|P|@P<	Gender=Masc|Number=Plur|PronType=Rel	16	nmod	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	mestre	mestre	NOUN	<np-def>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	10	appos	_	_
@@ -90,7 +90,7 @@
 18	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	_
 19	embarcação	embarcação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	16	nmod	_	SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	27	punct	_	_
-21	a	o	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	22	det	_	MWE=a_qual
+21	a	o	DET	DET|F|S|@>N	Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	qual	qual	PRON	DET|F|S|@SUBJ>	Gender=Fem|Number=Sing|PronType=Rel	27	nsubj	_	_
 23	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	aux:pass	_	SpaceAfter=No
 24	,	,	PUNCT	PU|@PU	_	25	punct	_	_
@@ -110,7 +110,7 @@
 5	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	viatura	viatura	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
 7	ligeira	ligeiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	6	amod	_	_
-8	de	de	ADP	PRP|@N<	_	9	case	_	MWE=de_marca
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	marca	marca	NOUN	N|@P<	Gender=Fem|Number=Sing	6	nmod	_	_
 10	Bedford	Bedford	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	9	appos	_	SpaceAfter=No
 11	,	,	PUNCT	PU|@PU	_	12	punct	_	_
@@ -137,7 +137,7 @@
 5	--	--	PUNCT	PU|@PU	_	7	punct	_	_
 6	seis	seis	NUM	<card>|NUM|F|P|@>N	NumType=Card	7	nummod	_	_
 7	caixas	caixa	NOUN	<first-cjt>|<np-def>|N|F|P|@N<PRED	Gender=Fem|Number=Plur	1	appos	_	_
-8	de	de	ADP	PRP|@N<	_	9	case	_	MWE=de_marca
+8	de	de	ADP	PRP|@N<	_	9	case	_	_
 9	marca	marca	NOUN	N|@P<	Gender=Fem|Number=Sing	7	nmod	_	_
 10	Camel	Camel	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	9	appos	_	_
 11	e	e	CCONJ	<co-n<pred>|KC|@CO	_	12	cc	_	_
@@ -160,7 +160,7 @@
 26	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	zona	zona	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	obl	_	_
 28	de	de	ADP	PRP|@N<	_	29	case	_	_
-29	Vila	Vila	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	MWE=Vila_do_Bispo
+29	Vila	Vila	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	27	nmod	_	_
 30-31	do	_	_	_	_	_	_	_	_
 30	de	de	ADP	<sam->|PRP|@N<	_	32	case	_	_
 31	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
@@ -175,7 +175,7 @@
 39-40	da	_	_	_	_	_	_	_	_
 39	de	de	ADP	<sam->|PRP|@N<	_	41	case	_	_
 40	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	41	det	_	_
-41	Guarda	Guarda	PROPN	_	Gender=Fem|Number=Sing	38	nmod	_	MWE=Guarda_Fiscal|MWEPOS=PROPN
+41	Guarda	Guarda	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	38	nmod	_	_
 42	Fiscal	Fiscal	PROPN	_	Number=Sing	41	flat:name	_	_
 43-44	do	_	_	_	_	_	_	_	_
 43	de	de	ADP	PRP|@N<	_	45	case	_	_

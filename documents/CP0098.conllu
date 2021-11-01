@@ -11,7 +11,7 @@
 5	as	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	6	det	_	_
 6	Pescas	Pescas	PROPN	PROP|F|P|@P<	Gender=Fem|Number=Plur	2	nmod	_	SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-8	Brian	Brian	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	MWE=Brian_Tobin|MWEPOS=PROPN
+8	Brian	Brian	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	2	appos	_	_
 9	Tobin	Tobin	PROPN	_	Number=Sing	8	flat:name	_	SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	8	punct	_	_
 11	tinha	ter	AUX	<aux>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	12	aux	_	_
@@ -27,7 +27,7 @@
 20	pronto	pronto	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	12	xcomp	_	_
 21	a	a	SCONJ	PRP|@A<ARG	_	22	mark	_	_
 22	tomar	tomar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	20	advcl	_	_
-23	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	25	det	_	MWE=todas_as
+23	todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	25	det	_	_
 24	as	o	DET	<artd>|DET|F|P|@A<	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	23	fixed	_	_
 25	medidas	medida	NOUN	<np-def>|N|F|P|@<ACC	Gender=Fem|Number=Plur	22	obj	_	_
 26	necessárias	necessário	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	25	amod	_	_
@@ -44,7 +44,7 @@
 37	portugueses	português	NOUN	<cjt>|<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	34	conj	_	_
 38	--	--	PUNCT	PU|@PU	_	34	punct	_	_
 39	de	de	SCONJ	PRP|@<PIV	_	40	mark	_	_
-40	continuarem	continuar	VERB	<aux>|V|INF|3P|@ICL-P<	Number=Plur|Person=3|VerbForm=Inf	28	xcomp	_	MWE=continuarem_a|MWEPOS=AUX
+40	continuarem	continuar	VERB	<aux>|V|INF|3P|@ICL-P<	ExtPos=AUX|Number=Plur|Person=3|VerbForm=Inf	28	xcomp	_	_
 41	a	a	SCONJ	PRP|@PRT-AUX<	_	42	mark	_	_
 42	pescar	pescar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	40	xcomp	_	_
 43-44	nos	_	_	_	_	_	_	_	_
@@ -60,7 +60,7 @@
 51-52	da	_	_	_	_	_	_	_	_
 51	de	de	ADP	PRP|@N<	_	53	case	_	_
 52	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	53	det	_	_
-53	Terra	Terra	PROPN	_	Gender=Fem|Number=Sing	50	nmod	_	MWE=Terra_Nova|MWEPOS=PROPN
+53	Terra	Terra	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	50	nmod	_	_
 54	Nova	Nova	PROPN	_	Number=Sing	53	flat:name	_	SpaceAfter=No
 55	.	.	PUNCT	PU|@PU	_	12	punct	_	_
 
@@ -97,7 +97,7 @@
 27	palmeta	palmeta	NOUN	<cjt>|<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	25	conj	_	SpaceAfter=No
 28	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 29	mesmo	mesmo	ADV	<quant>|ADV|@>A	_	34	advmod	_	_
-30	para	para	ADP	<sam->|PRP|@<ADVL	_	31	case	_	MWE=para_além_de
+30	para	para	ADP	<sam->|PRP|@<ADVL	_	31	case	_	_
 31	além	além	ADV	ADV|@P<	_	18	advmod	_	_
 32-33	do	_	_	_	_	_	_	_	_
 32	de	de	ADP	PRP|@A<	_	34	case	_	_
@@ -147,7 +147,7 @@
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	bacalhau	bacalhau	NOUN	<np-def>|N|M|S|@NPHR	Gender=Masc|Number=Sing	0	root	_	_
 3	como	como	ADP	<com>|PRP|@N<	_	4	case	_	_
-4	pano	pano	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	MWE=pano_de_fundo|MWEPOS=NOUN
+4	pano	pano	NOUN	_	ExtPos=NOUN|Gender=Masc|Number=Sing	2	nmod	_	_
 5	de	de	ADP	_	_	4	compound	_	_
 6	fundo	fundo	NOUN	_	Gender=Masc|Number=Sing	4	compound	_	_
 
@@ -155,7 +155,7 @@
 # sent_id = CP98-5
 # source = CETEMPúblico n=98 sec=soc sem=95a
 # id = 521
-1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	MWE=Em_causa
+1	Em	em	ADP	PRP|@ADVL>	_	2	case	_	_
 2	causa	causa	NOUN	N|F|S|@P<	Gender=Fem|Number=Sing	6	obl	_	_
 3-4	neste	_	_	_	_	_	_	_	_
 3	em	em	ADP	<sam->|PRP|@ADVL>	_	5	case	_	_
@@ -197,7 +197,7 @@
 38	a	a	ADP	PRP|@<OA	_	39	case	_	_
 39	águas	água	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	34	obl	_	_
 40	internacionais	internacional	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	39	amod	_	_
-41	para	para	ADP	<sam->|PRP|@N<	_	42	case	_	MWE=para_além_de
+41	para	para	ADP	<sam->|PRP|@N<	_	42	case	_	_
 42	além	além	ADV	ADV|@P<	_	39	advmod	_	_
 43-44	das	_	_	_	_	_	_	_	_
 43	de	de	ADP	PRP|@A<	_	46	case	_	_
@@ -249,7 +249,7 @@
 30	»	»	PUNCT	PU|@PU	_	20	punct	_	SpaceAfter=No
 31	,	,	PUNCT	PU|@PU	_	32	punct	_	_
 32	observa	observar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-33	Ernest	Ernest	PROPN	_	Gender=Masc|Number=Sing	32	nsubj	_	MWE=Ernest_Loignon|MWEPOS=PROPN
+33	Ernest	Ernest	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	32	nsubj	_	_
 34	Loignon	Loignon	PROPN	_	Number=Sing	33	flat:name	_	SpaceAfter=No
 35	.	.	PUNCT	PU|@PU	_	32	punct	_	_
 

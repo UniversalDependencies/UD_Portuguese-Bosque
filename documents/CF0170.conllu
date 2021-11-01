@@ -3,7 +3,7 @@
 # sent_id = CF170-1
 # source = CETENFolha n=170 cad=Opinião sec=opi sem=94b
 # id = 715
-1	Ainda	ainda	ADV	ADV|@>A	_	4	cc	_	MWE=Ainda_assim|MWEPOS=CCONJ
+1	Ainda	ainda	ADV	ADV|@>A	ExtPos=CCONJ	4	cc	_	_
 2	assim	assim	ADV	ADV|@ADVL>	_	1	fixed	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	foi	ser	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -44,7 +44,7 @@
 # sent_id = CF170-3
 # source = CETENFolha n=170 cad=Opinião sec=opi sem=94b
 # id = 717
-1	À	à	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	12	obl	_	MWE=À_primeira_vista
+1	À	à	NOUN	N|M|S|@ADVL>	Gender=Masc|Number=Sing	12	obl	_	_
 2	primeira	primeira	ADP	PRP|@N<	_	3	case	_	_
 3	vista	vista	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	1	nmod	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
@@ -87,16 +87,16 @@
 13	ar	ar	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	10	obl	_	_
 14	durante	durante	ADP	PRP|@<ADVL	_	16	case	_	_
 15	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	Jornal	Jornal	PROPN	_	Gender=Masc|Number=Sing	10	obl	_	MWE=Jornal_Nacional|MWEPOS=PROPN
+16	Jornal	Jornal	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	10	obl	_	_
 17	Nacional	Nacional	PROPN	_	Number=Sing	16	flat:name	_	SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	21	punct	_	_
 19-20	da	_	_	_	_	_	_	_	_
 19	de	de	ADP	<sam->|PRP|@N<PRED	_	21	case	_	_
 20	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
-21	Rede	Rede	PROPN	_	Gender=Fem|Number=Sing	16	nmod	_	MWE=Rede_Globo|MWEPOS=PROPN
+21	Rede	Rede	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	16	nmod	_	_
 22	Globo	Globo	PROPN	_	Number=Sing	21	flat:name	_	SpaceAfter=No
 23	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-24	por	por	ADP	PRP|@<ADVL	_	25	case	_	MWE=por_volta_de
+24	por	por	ADP	PRP|@<ADVL	_	25	case	_	_
 25	volta	volta	NOUN	N|@P<	Gender=Fem|Number=Sing	10	obl	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
 27	20h	20h	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	25	nmod	_	SpaceAfter=No
@@ -135,9 +135,9 @@
 25	noticiário	noticiário	NOUN	<np-idf>|N|M|S|@P<	Gender=Masc|Number=Sing	19	obl	_	_
 26	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	27	nsubj	_	_
 27	atinge	atingir	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	acl:relcl	_	_
-28	cerca	cerca	ADV	ADV|@>A	_	30	advmod	_	MWE=cerca_de|MWEPOS=ADV
+28	cerca	cerca	ADV	ADV|@>A	ExtPos=ADV	30	advmod	_	_
 29	de	de	ADP	<prp>|PRP|@A<	_	28	fixed	_	_
-30	60	60	NUM	<card>|NUM|M|P|@>N	NumType=Card	27	obj	_	MWE=60_milhões
+30	60	60	NUM	<card>|NUM|M|P|@>N	NumType=Card	27	obj	_	_
 31	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	30	flat	_	_
 32	de	de	ADP	PRP|@N<ARG	_	33	case	_	_
 33	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	30	nmod	_	SpaceAfter=No
@@ -145,7 +145,7 @@
 35	certamente	certamente	ADV	ADV|@<ADVL	_	27	advmod	_	_
 36	mais	mais	ADV	<quant>|<KOMP>|<COMP>|ADV|@<ADVL	_	27	advmod	_	_
 37-38	do	_	_	_	_	_	_	_	_
-37	de	de	ADP	<sam->|PRP|@COM	_	41	case	_	MWE=do_que
+37	de	de	ADP	<sam->|PRP|@COM	_	41	case	_	_
 38	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	37	fixed	_	_
 39	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	37	fixed	_	_
 40	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	_

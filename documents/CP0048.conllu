@@ -3,16 +3,16 @@
 # sent_id = CP48-1
 # source = CETEMPúblico n=48 sec=clt sem=97a
 # id = 271
-1	Tal	tal	ADV	PRP|@ADVL>	_	3	mark	_	MWE=Tal_como|MWEPOS=SCONJ
+1	Tal	tal	ADV	PRP|@ADVL>	ExtPos=SCONJ	3	mark	_	_
 2	como	como	SCONJ	N|M|S|@P<	_	1	fixed	_	_
 3	explica	explicar	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	advcl	_	_
-4	Luís	Luís	PROPN	_	Gender=Masc|Number=Sing	3	nsubj	_	MWE=Luís_Soares|MWEPOS=PROPN
+4	Luís	Luís	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	3	nsubj	_	_
 5	Soares	Soares	PROPN	_	Number=Sing	4	flat:name	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	9	punct	_	_
 7-8	da	_	_	_	_	_	_	_	_
 7	de	de	ADP	<sam->|PRP|@N<PRED	_	9	case	_	_
 8	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	9	det	_	_
-9	Iniciativa	Iniciativa	PROPN	_	Gender=Fem|Number=Sing	4	nmod	_	MWE=Iniciativa_Mosaico|MWEPOS=PROPN
+9	Iniciativa	Iniciativa	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	4	nmod	_	_
 10	Mosaico	Mosaico	PROPN	_	Number=Sing	9	flat:name	_	_
 11-12	do	_	_	_	_	_	_	_	_
 11	de	de	ADP	<sam->|PRP|@N<	_	13	case	_	_
@@ -30,7 +30,7 @@
 22	de	de	ADP	PRP|@N<	_	23	case	_	_
 23	exploração	exploração	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	21	nmod	_	_
 24	criativa	criativo	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	23	amod	_	_
-25	em	em	ADP	<sam->|PRP|@N<	_	29	case	_	MWE=em_torno_de
+25	em	em	ADP	<sam->|PRP|@N<	_	29	case	_	_
 26	torno	torno	NOUN	N|@P<	Gender=Masc|Number=Sing	25	fixed	_	_
 27-28	do	_	_	_	_	_	_	_	_
 27	de	de	ADP	PRP|@N<	_	25	fixed	_	_
@@ -126,7 +126,7 @@
 5	cinco	cinco	NUM	<card>|NUM|M|P|@<SC	NumType=Card	0	root	_	SpaceAfter=No
 6	:	:	PUNCT	PU|@PU	_	8	punct	_	_
 7	«	«	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
-8	Património	Património	PROPN	_	Gender=Masc|Number=Sing	5	appos	_	MWE=Património_Virtual|MWEPOS=PROPN
+8	Património	Património	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	5	appos	_	_
 9	Virtual	Virtual	PROPN	_	Number=Sing	8	flat:name	_	SpaceAfter=No
 10	»	»	PUNCT	PU|@PU	_	8	punct	_	_
 11	(	(	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
@@ -147,7 +147,7 @@
 24	)	)	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
 25	;	;	PUNCT	PU|@PU	_	27	punct	_	_
 26	«	«	PUNCT	PU|@PU	_	27	punct	_	SpaceAfter=No
-27	Portugal	Portugal	PROPN	_	Gender=Masc|Number=Sing	8	conj	_	MWEPOS=PROPN
+27	Portugal	Portugal	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	8	conj	_	_
 28	Global	Global	PROPN	_	Number=Sing	27	flat:name	_	SpaceAfter=No
 29	»	»	PUNCT	PU|@PU	_	27	punct	_	_
 30	(	(	PUNCT	PU|@PU	_	31	punct	_	SpaceAfter=No
@@ -172,7 +172,7 @@
 47	)	)	PUNCT	PU|@PU	_	31	punct	_	SpaceAfter=No
 48	;	;	PUNCT	PU|@PU	_	50	punct	_	_
 49	«	«	PUNCT	PU|@PU	_	50	punct	_	SpaceAfter=No
-50	Sacra	Sacra	PROPN	_	Gender=Fem|Number=Sing	8	conj	_	MWE=Sacra_Saturni|MWEPOS=PROPN
+50	Sacra	Sacra	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	8	conj	_	_
 51	Saturni	Saturni	PROPN	_	Number=Sing	50	flat:name	_	SpaceAfter=No
 52	»	»	PUNCT	PU|@PU	_	50	punct	_	_
 53	(	(	PUNCT	PU|@PU	_	54	punct	_	SpaceAfter=No
@@ -210,7 +210,7 @@
 85	cultural	cultural	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	84	amod	_	SpaceAfter=No
 86	,	,	PUNCT	PU|@PU	_	88	punct	_	_
 87	com	com	ADP	<cjt>|PRP|@N<PRED	_	88	case	_	_
-88	um	um	NUM	<arti>|ART|M|S|@>N	NumType=Card	79	nmod	_	MWE=um_milhão
+88	um	um	NUM	<arti>|ART|M|S|@>N	NumType=Card	79	nmod	_	_
 89	milhão	milhão	NUM	<np-idf>|N|M|S|@P<	NumType=Card	88	flat	_	_
 90	de	de	ADP	PRP|@N<ARG	_	91	case	_	_
 91	visitantes	visitante	NOUN	<np-idf>|N|M/F|P|@P<	Number=Plur	88	nmod	_	_
@@ -250,10 +250,10 @@
 # sent_id = CP48-5
 # source = CETEMPúblico n=48 sec=clt sem=97a
 # id = 275
-1	Paulo	Paulo	PROPN	_	Gender=Masc|Number=Sing	9	nsubj	_	MWE=Paulo_Pereira|MWEPOS=PROPN
+1	Paulo	Paulo	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	9	nsubj	_	_
 2	Pereira	Pereira	PROPN	_	Number=Sing	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-4	vice-presidente	vice-presidente	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	MWE=vice-presidente_do_Ippar
+4	vice-presidente	vice-presidente	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
 5-6	do	_	_	_	_	_	_	_	_
 5	de	de	ADP	<sam->|PRP|@N<	_	7	case	_	_
 6	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
@@ -384,7 +384,7 @@
 10	seja	ser	AUX	<mv>|V|PR|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
 11	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	objectivo	objectivo	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	3	advcl	_	_
-13	a	a	ADP	PRP|@N<	_	15	case	_	MWE=a_longo_prazo
+13	a	a	ADP	PRP|@N<	_	15	case	_	_
 14	longo	longo	ADJ	ADJ|M|S|@>N	Gender=Masc|Number=Sing	15	amod	_	_
 15	prazo	prazo	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No
 16	.	.	PUNCT	PU|@PU	_	3	punct	_	_
@@ -399,7 +399,7 @@
 4	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	ideia	ideia	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	3	nsubj	_	SpaceAfter=No
 6	:	:	PUNCT	PU|@PU	_	9	punct	_	_
-7	para	para	ADP	PRP|@ADVL>	_	8	case	_	MWE=para_já
+7	para	para	ADP	PRP|@ADVL>	_	8	case	_	_
 8	já	já	ADV	ADV|@P<	_	9	advmod	_	_
 9	promover	promover	VERB	<first-cjt>|<mv>|V|INF|@ICL-N<PRED	VerbForm=Inf	3	acl	_	_
 10	este	este	DET	<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_
@@ -412,7 +412,7 @@
 17	se	se	SCONJ	KS|@SUB	_	18	mark	_	_
 18	resultar	resultar	VERB	<cjt>|<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	advcl	_	_
 19	material	material	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	18	nsubj	_	_
-20	começar	começar	VERB	<first-cjt>|<aux>|V|INF|3S|@ICL-N<PRED	Number=Sing|Person=3|VerbForm=Inf	9	acl	_	MWE=começar_a|MWEPOS=AUX
+20	começar	começar	VERB	<first-cjt>|<aux>|V|INF|3S|@ICL-N<PRED	ExtPos=AUX|Number=Sing|Person=3|VerbForm=Inf	9	acl	_	_
 21	a	a	SCONJ	PRP|@PRT-AUX<	_	22	mark	_	_
 22-23	incorporá-lo	_	_	_	_	_	_	_	_
 22	incorporá	incorporar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	xcomp	_	_

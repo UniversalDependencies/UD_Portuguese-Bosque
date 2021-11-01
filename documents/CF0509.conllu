@@ -29,7 +29,7 @@
 # sent_id = CF509-2
 # source = CETENFolha n=509 cad=Dinheiro sec=eco sem=94b
 # id = 2143
-1	Ainda	ainda	ADV	ADV|@>A	_	18	cc	_	MWE=Ainda_assim|MWEPOS=CCONJ
+1	Ainda	ainda	ADV	ADV|@>A	ExtPos=CCONJ	18	cc	_	_
 2	assim	assim	ADV	ADV|@ADVL>	_	1	fixed	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	2	punct	_	_
 4	só	só	ADV	ADV|@>N	_	6	advmod	_	_
@@ -58,19 +58,19 @@
 26	raciocinam	raciocinar	VERB	<mv>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 27	senadores	senador	NOUN	<np-idf>|N|M|P|@<SUBJ	Gender=Masc|Number=Plur	26	nsubj	_	_
 28	como	como	ADP	<com>|PRP|@N<	_	29	case	_	_
-29	Espiridião	Espiridião	PROPN	_	Gender=Masc|Number=Sing	27	nmod	_	MWE=Espiridião_Amin|MWEPOS=PROPN
+29	Espiridião	Espiridião	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	27	nmod	_	_
 30	Amin	Amin	PROPN	_	Number=Sing	29	flat:name	_	_
 31	(	(	PUNCT	PU|@PU	_	32	punct	_	SpaceAfter=No
 32	PPR-SC	PPR-SC	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	29	parataxis	_	SpaceAfter=No
 33	)	)	PUNCT	PU|@PU	_	32	punct	_	SpaceAfter=No
 34	,	,	PUNCT	PU|@PU	_	35	punct	_	_
-35	Ronan	Ronan	PROPN	_	Gender=Masc|Number=Sing	29	conj	_	MWE=Ronan_Tito|MWEPOS=PROPN
+35	Ronan	Ronan	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	29	conj	_	_
 36	Tito	Tito	PROPN	_	Number=Sing	35	flat:name	_	_
 37	(	(	PUNCT	PU|@PU	_	38	punct	_	SpaceAfter=No
 38	PMDB-MG	PMDB-MG	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	35	parataxis	_	SpaceAfter=No
 39	)	)	PUNCT	PU|@PU	_	38	punct	_	_
 40	e	e	CCONJ	<co-postnom>|KC|@CO	_	41	cc	_	_
-41	Gilberto	Gilberto	PROPN	_	Gender=Masc|Number=Sing	29	conj	_	MWE=Gilberto_Miranda|MWEPOS=PROPN
+41	Gilberto	Gilberto	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	29	conj	_	_
 42	Miranda	Miranda	PROPN	_	Number=Sing	41	flat:name	_	_
 43	(	(	PUNCT	PU|@PU	_	44	punct	_	SpaceAfter=No
 44	PMDB-AM	PMDB-AM	PROPN	PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	41	parataxis	_	SpaceAfter=No
@@ -125,7 +125,7 @@
 20	dívida	dívida	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	17	nmod	_	SpaceAfter=No
 21	,	,	PUNCT	PU|@PU	_	28	punct	_	_
 22	sem	sem	ADP	PRP|@N<PRED	_	24	case	_	_
-23	o	o	DET	DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	24	det	_	MWE=o_qual
+23	o	o	DET	DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	qual	qual	PRON	DET|M|S|@SUB	Gender=Masc|Number=Sing|PronType=Rel	28	obl	_	_
 25	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	_
 26	país	país	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	28	nsubj	_	_
@@ -206,7 +206,7 @@
 6	inicial	inicial	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	5	amod	_	_
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	US$	US$	SYM	_	_	5	nmod	_	_
-9	4,3	4,3	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	nummod	_	MWE=4,3_bilhões
+9	4,3	4,3	NUM	<card>|NUM|M|P|@>N	NumType=Card	8	nummod	_	_
 10	bilhões	bilhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	9	flat	_	_
 11	sobre	sobre	ADP	PRP|@N<	_	13	case	_	_
 12	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
@@ -227,7 +227,7 @@
 4	para	para	SCONJ	PRP|@ADVL>	_	5	mark	_	_
 5	renegociar	renegociar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	11	advcl	_	_
 6	US$	US$	SYM	_	_	5	obj	_	_
-7	35	35	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	MWE=35_bilhões
+7	35	35	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	_
 8	bilhões	bilhão	NUM	<np-def>|N|M|P|@N<	NumType=Card	7	flat	_	SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 10	foram	ser	AUX	<aux>|V|PS/MQP|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	11	aux:pass	_	_

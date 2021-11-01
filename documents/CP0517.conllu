@@ -3,10 +3,10 @@
 # sent_id = CP517-2
 # source = CETEMPúblico n=517 sec=des sem=94b
 # id = 2703
-1	João	João	PROPN	_	Gender=Masc|Number=Sing	0	root	_	MWE=João_Pinto|MWEPOS=PROPN
+1	João	João	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	0	root	_	_
 2	Pinto	Pinto	PROPN	_	Number=Sing	1	flat:name	_	_
 3	--	--	PUNCT	PU|@PU	_	1	punct	_	_
-4	António	António	PROPN	_	Gender=Masc|Number=Sing	8	nsubj	_	MWE=António_Oliveira|MWEPOS=PROPN
+4	António	António	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	8	nsubj	_	_
 5	Oliveira	Oliveira	PROPN	_	Number=Sing	4	flat:name	_	_
 6	não	não	ADV	_	Polarity=Neg	9	advmod	_	_
 7	lhe	ele	PRON	PERS|M|3S|DAT|@DAT>	Case=Dat|Gender=Masc|Number=Sing|Person=3|PronType=Prs	9	iobj	_	_
@@ -16,7 +16,7 @@
 11	mesma	mesmo	ADJ	<diff>|<KOMP>|DET|F|S|@>N	Gender=Fem|Number=Sing	12	amod	_	_
 12	surpresa	surpresa	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
-14	Carlos	Carlos	PROPN	_	Gender=Masc|Number=Sing	12	nmod	_	MWE=Carlos_Queiroz|MWEPOS=PROPN
+14	Carlos	Carlos	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	12	nmod	_	_
 15	Queiroz	Queiroz	PROPN	_	Number=Sing	14	flat:name	_	_
 16	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	29	nsubj	_	SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	19	punct	_	_
@@ -58,14 +58,14 @@
 50-51	dos	_	_	_	_	_	_	_	_
 50	de	de	ADP	<sam->|PRP|@N<	_	52	case	_	_
 51	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	52	det	_	_
-52	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	48	obl	_	MWE=Estados_Unidos
+52	Estados	Estados	PROPN	PROP|M|P|@P<	Gender=Masc|Number=Plur	48	obl	_	_
 53	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	52	flat:name	_	SpaceAfter=No
 54	,	,	PUNCT	PU|@PU	_	44	punct	_	_
 55-56	trocando-o	_	_	_	_	_	_	_	_
 55	trocando	trocar	VERB	<mv>|<hyphen>|V|GER|@ICL-<ADVL	VerbForm=Ger	29	advcl	_	_
 56	o	ele	PRON	PERS|M|3S|ACC|@<ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	55	obj	_	_
 57	por	por	ADP	PRP|@<PIV	_	58	case	_	_
-58	Abel	Abel	PROPN	_	Gender=Masc|Number=Sing	55	obl	_	MWE=Abel_Xavier|MWEPOS=PROPN
+58	Abel	Abel	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	55	obl	_	_
 59	Xavier	Xavier	PROPN	_	Number=Sing	58	flat:name	_	SpaceAfter=No
 60	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -84,7 +84,7 @@
 8	excelente	excelente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	7	amod	_	_
 9	e	e	CCONJ	<co-sta>|<co-fmc>|<co-vfin>|KC|@CO	_	17	cc	_	SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	14	punct	_	_
-11	apesar	apesar	ADV	ADV|@ADVL>	_	14	case	_	MWE=apesar_de|MWEPOS=ADP
+11	apesar	apesar	ADV	ADV|@ADVL>	ExtPos=ADP	14	case	_	_
 12-13	dos	_	_	_	_	_	_	_	_
 12	de	de	ADP	PRP|@A<	_	11	fixed	_	_
 13	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
@@ -112,7 +112,7 @@
 2	jovem	jovem	ADJ	<n>|<np-def>|ADJ|M|S|@SUBJ>	Gender=Masc|Number=Sing	4	amod	_	_
 3	sportinguista	sportinguista	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	4	amod	_	_
 4	Nélson	Nélson	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	5	nsubj	_	_
-5	terá	ter	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	MWE=terá_de|MWEPOS=AUX
+5	terá	ter	VERB	<aux>|V|FUT|3S|IND|@FS-STA	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 6	de	de	SCONJ	PRP|@PRT-AUX<	_	7	mark	_	_
 7	esperar	esperar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	5	xcomp	_	SpaceAfter=No
 8	.	.	PUNCT	PU|@PU	_	7	punct	_	_
@@ -158,12 +158,12 @@
 32	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	dupla	dupla	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	30	obj	_	_
 34	brasileira	brasileiro	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	33	amod	_	_
-35	Mozer	Mozer	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	33	appos	_	MWE=mozer_/_paulão
+35	Mozer	Mozer	PROPN	<first-cjt>|PROP|M|S|@N<	Gender=Masc|Number=Sing	33	appos	_	_
 36	/	/	PUNCT	PU|@PU	_	37	punct	_	_
 37	Paulão	Paulão	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	35	conj	_	_
 38	--	--	PUNCT	PU|@PU	_	30	punct	_	_
 39-40	do	_	_	_	_	_	_	_	_
-39	de	de	ADP	<sam->|PRP|@COM	_	44	case	_	MWE=do_que
+39	de	de	ADP	<sam->|PRP|@COM	_	44	case	_	_
 40	o	o	PRON	<dem>|<-sam>|DET|M|S|@P<	Gender=Masc|Number=Sing|PronType=Dem	39	fixed	_	_
 41	que	que	PRON	<rel>|INDP|M|S|@N<	Gender=Masc|Number=Sing|PronType=Rel	39	fixed	_	_
 42-43	na	_	_	_	_	_	_	_	_
@@ -219,7 +219,7 @@
 5	prevê	prever	VERB	<mv>|V|PR|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
 7	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	Irlanda	Irlanda	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	MWE=Irlanda_do_Norte
+8	Irlanda	Irlanda	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	12	nsubj	_	_
 9-10	do	_	_	_	_	_	_	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_

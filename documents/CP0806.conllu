@@ -37,7 +37,7 @@
 # sent_id = CP806-3
 # source = CETEMPúblico n=806 sec=des sem=95b
 # id = 4128
-1	Todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	4	det	_	MWE=Todas_as
+1	Todas	todo	DET	<quant>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Tot	4	det	_	_
 2	as	o	DET	<artd>|DET|F|P|@A<	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	1	fixed	_	_
 3	suas	seu	DET	<poss>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Prs	4	det	_	_
 4	pancadas	pancada	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	7	nsubj	_	_
@@ -70,7 +70,7 @@
 14-15	do	_	_	_	_	_	_	_	_
 14	de	de	ADP	<sam->|PRP|@N<	_	16	case	_	_
 15	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
-16	Grand	Grand	PROPN	_	Gender=Masc|Number=Sing	13	nmod	_	MWE=Grand_Slam|MWEPOS=PROPN
+16	Grand	Grand	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	13	nmod	_	_
 17	Slam	Slam	PROPN	_	Number=Sing	16	flat:name	_	SpaceAfter=No
 18	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 19	Black	Black	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	20	nsubj	_	_
@@ -79,7 +79,7 @@
 22	suficientes	suficiente	ADJ	<quant>|ADJ|M|P|@N<	Gender=Masc|Number=Plur	21	amod	_	_
 23	para	para	SCONJ	PRP|@A<ARG	_	24	mark	_	_
 24	subir	subir	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	22	advcl	_	_
-25	cerca	cerca	ADV	ADV|@>A	_	28	advmod	_	MWE=cerca_de|MWEPOS=ADV
+25	cerca	cerca	ADV	ADV|@>A	ExtPos=ADV	28	advmod	_	_
 26	de	de	ADP	<prp>|PRP|@A<	_	25	fixed	_	_
 27	30	30	NUM	<card>|NUM|M|P|@>N	NumType=Card	28	nummod	_	_
 28	lugares	lugar	NOUN	<np-def>|N|M|P|@<SA	Gender=Masc|Number=Plur	24	obl	_	_
@@ -101,7 +101,7 @@
 43	africano	africano	ADJ	ADJ|M|S|@N<	Gender=Masc|Number=Sing	42	amod	_	_
 44	leva	levar	VERB	<mv>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	acl:relcl	_	_
 45	de	de	ADP	PRP|@<SA	_	46	case	_	_
-46	Flushing	Flushing	PROPN	_	Gender=Masc|Number=Sing	44	obl	_	MWE=Flushing_Meadow|MWEPOS=PROPN
+46	Flushing	Flushing	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	44	obl	_	_
 47	Meadow	Meadow	PROPN	_	Number=Sing	46	flat:name	_	SpaceAfter=No
 48	.	.	PUNCT	PU|@PU	_	20	punct	_	_
 
@@ -144,14 +144,14 @@
 29	este	este	DET	<-sam>|<dem>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Dem	30	det	_	_
 30	Open	Open	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	27	nmod	_	_
 31	de	de	ADP	PRP|@N<	_	32	case	_	_
-32	Michael	Michael	PROPN	_	Gender=Masc|Number=Sing	27	nmod	_	MWE=Michael_Stich|MWEPOS=PROPN
+32	Michael	Michael	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	27	nmod	_	_
 33	Stich	Stich	PROPN	_	Number=Sing	32	flat:name	_	_
 34	(	(	PUNCT	PU|@PU	_	36	punct	_	SpaceAfter=No
 35	8º	8º	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	36	amod	_	_
 36	ATP	ATP	PROPN	<first-cjt>|PROP|M|S|@N<PRED	Gender=Masc|Number=Sing	32	appos	_	SpaceAfter=No
 37	)	)	PUNCT	PU|@PU	_	36	punct	_	_
 38	e	e	CCONJ	<co-prparg>|KC|@CO	_	39	cc	_	_
-39	Thomas	Thomas	PROPN	_	Gender=Masc|Number=Sing	32	conj	_	MWE=Thomas_Enqvist|MWEPOS=PROPN
+39	Thomas	Thomas	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	32	conj	_	_
 40	Enqvist	Enqvist	PROPN	_	Number=Sing	39	flat:name	_	_
 41	(	(	PUNCT	PU|@PU	_	43	punct	_	SpaceAfter=No
 42	9º	9º	ADJ	<NUM-ord>|ADJ|M|S|@>N	Gender=Masc|Number=Sing|NumType=Ord	43	amod	_	_
@@ -179,10 +179,10 @@
 14	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	triunfo	triunfo	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
-17	Meredith	Meredith	PROPN	_	Gender=Fem|Number=Sing	15	nmod	_	MWE=Meredith_McGrath|MWEPOS=PROPN
+17	Meredith	Meredith	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	15	nmod	_	_
 18	McGrath	McGrath	PROPN	_	Number=Sing	17	flat:name	_	_
 19	e	e	CCONJ	<co-prparg>|KC|@CO	_	17	cc	_	_
-20	Matt	Matt	PROPN	_	Gender=Masc|Number=Sing	17	nmod	_	MWE=Matt_Lucena|MWEPOS=PROPN
+20	Matt	Matt	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	17	nmod	_	_
 21	Lucena	Lucena	PROPN	_	Number=Sing	20	flat:name	_	_
 22-23	na	_	_	_	_	_	_	_	_
 22	em	em	ADP	<sam->|PRP|@N<ARG	_	24	case	_	_
@@ -204,12 +204,12 @@
 5	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 6	também	também	ADV	ADV|@>A	_	7	advmod	_	_
 7	norte-americana	norte-americana	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	8	amod	_	_
-8	Gigi	Gigi	PROPN	_	Gender=Fem|Number=Sing	4	obj	_	MWE=Gigi_Fernandez|MWEPOS=PROPN
+8	Gigi	Gigi	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	4	obj	_	_
 9	Fernandez	Fernandez	PROPN	_	Number=Sing	8	flat:name	_	_
 10	e	e	CCONJ	<co-acc>|KC|@CO	_	12	cc	_	_
 11	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	checo	checo	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	conj	_	_
-13	Cyril	Cyril	PROPN	_	Gender=Masc|Number=Sing	12	appos	_	MWE=Cyril_Suk|MWEPOS=PROPN
+13	Cyril	Cyril	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	12	appos	_	_
 14	Suk	Suk	PROPN	_	Number=Sing	13	flat:name	_	_
 15	por	por	ADP	PRP|@<ADVL	_	16	case	_	_
 16	6-4	6-4	NUM	<card>|<first-cjt>|NUM|M|P|@P<	NumType=Card	4	obl	_	SpaceAfter=No
@@ -270,7 +270,7 @@
 36	apenas	apenas	ADV	ADV|@>A	_	37	advmod	_	_
 37	cinco	cinco	NUM	<card>|NUM|M|P|@>N	NumType=Card	38	nummod	_	_
 38	dias	dia	NOUN	<np-def>|N|M|P|@<ADVL	Gender=Masc|Number=Plur	33	obl	_	_
-39	antes	antes	ADV	ADV|@N<	_	44	mark	_	MWE=antes_de|MWEPOS=SCONJ
+39	antes	antes	ADV	ADV|@N<	ExtPos=SCONJ	44	mark	_	_
 40	de	de	ADP	PRP|@A<ARG	_	39	fixed	_	_
 41	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
 42	competição	competição	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	44	nsubj	_	_

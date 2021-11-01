@@ -25,9 +25,9 @@
 13-14	pela	_	_	_	_	_	_	_	_
 13	por	por	ADP	PRP|@PASS	_	15	case	_	_
 14	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
-15	Bolsa	Bolsa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	obl:agent	_	MWE=Bolsa_de_Nova_Iorque
+15	Bolsa	Bolsa	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	12	obl:agent	_	_
 16	de	de	ADP	PRP|@N<	_	17	case	_	_
-17	Nova	Nova	PROPN	_	Number=Sing	15	nmod	_	MWE=Nova_Iorque|MWEPOS=PROPN
+17	Nova	Nova	PROPN	_	ExtPos=PROPN|Number=Sing	15	nmod	_	_
 18	Iorque	Iorque	PROPN	_	Number=Sing	17	flat:name	_	SpaceAfter=No
 19	.	.	PUNCT	PU|@PU	_	3	punct	_	_
 
@@ -35,12 +35,12 @@
 # sent_id = CP711-3
 # source = CETEMPúblico n=711 sec=eco sem=95a
 # id = 3649
-1	Apesar	apesar	ADV	ADV|@ADVL>	_	6	mark	_	MWE=Apesar_de|MWEPOS=SCONJ
+1	Apesar	apesar	ADV	ADV|@ADVL>	ExtPos=SCONJ	6	mark	_	_
 2	de	de	ADP	PRP|@A<	_	1	fixed	_	_
 3	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	economia	economia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	6	nsubj	_	_
 5	norte-americana	norte-americano	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	4	amod	_	_
-6	estar	estar	VERB	<aux>|V|INF|3S|@ICL-P<	Number=Sing|Person=3|VerbForm=Inf	20	advcl	_	MWE=estar_a|MWEPOS=AUX
+6	estar	estar	VERB	<aux>|V|INF|3S|@ICL-P<	ExtPos=AUX|Number=Sing|Person=3|VerbForm=Inf	20	advcl	_	_
 7	a	a	SCONJ	PRP|@PRT-AUX<	_	8	mark	_	_
 8	dar	dar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	6	xcomp	_	_
 9	mostras	mostra	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	8	obj	_	_
@@ -52,9 +52,9 @@
 15	acções	acção	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	20	nsubj	_	_
 16	cotadas	cotar	VERB	<mv>|V|PCP|F|P|@ICL-N<	Gender=Fem|Number=Plur|VerbForm=Part	15	acl	_	_
 17	em	em	ADP	PRP|@<ADVL	_	18	case	_	_
-18	Wall	Wall	PROPN	_	Gender=Masc|Number=Sing	16	obl	_	MWE=Wall_Street|MWEPOS=PROPN
+18	Wall	Wall	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	16	obl	_	_
 19	Street	Street	PROPN	_	Number=Sing	18	flat:name	_	_
-20	continuam	continuar	VERB	<aux>|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	MWE=continuam_a|MWEPOS=AUX
+20	continuam	continuar	VERB	<aux>|V|PR|3P|IND|@FS-STA	ExtPos=AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 21	a	a	SCONJ	PRP|@PRT-AUX<	_	22	mark	_	_
 22-23	valorizar-se	_	_	_	_	_	_	_	_
 22	valorizar	valorizar	VERB	<mv>|<hyphen>|<se-passive>|V|INF|@ICL-AUX<	VerbForm=Inf	20	xcomp	_	_
@@ -94,7 +94,7 @@
 # id = 3651
 1	O	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	índice	índice	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	Dow	Dow	PROPN	_	Gender=Masc|Number=Sing	2	appos	_	MWE=Dow_Jones|MWEPOS=PROPN
+3	Dow	Dow	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	2	appos	_	_
 4	Jones	Jones	PROPN	_	Number=Sing	3	flat:name	_	_
 5	fechou	fechar	VERB	<mv>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 6-7	nos	_	_	_	_	_	_	_	_
@@ -105,9 +105,9 @@
 10	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 11	mais	mais	ADV	<setop>|ADV|@>A	_	12	advmod	_	_
 12	1,66	1,66	NUM	<card>|NUM|M|P|@>N	NumType=Card	13	nummod	_	_
-13	por	por	ADP	_	_	9	appos	_	MWE=por_cento|MWEPOS=NOUN
+13	por	por	ADP	_	ExtPos=NOUN	9	appos	_	_
 14	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	13	compound	_	_
-15	face	face	ADV	ADV|@N<	_	13	advmod	_	MWE=face_a
+15	face	face	ADV	ADV|@N<	_	13	advmod	_	_
 16-17	à	_	_	_	_	_	_	_	_
 16	a	a	ADP	PRP|@A<	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_

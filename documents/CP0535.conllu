@@ -26,7 +26,7 @@
 20-21	da	_	_	_	_	_	_	_	_
 20	de	de	ADP	<sam->|PRP|@N<	_	22	case	_	_
 21	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	Comunidade	Comunidade	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	MWE=Comunidade_Europeia
+22	Comunidade	Comunidade	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	19	nmod	_	_
 23	Europeia	Europeia	PROPN	PROP|@N<	Number=Sing	22	flat:name	_	_
 24	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	31	nsubj	_	SpaceAfter=No
 25	,	,	PUNCT	PU|@PU	_	27	punct	_	_
@@ -40,12 +40,12 @@
 33	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
 34	número	número	NOUN	<np-def>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	32	nsubj	_	_
 35	de	de	ADP	PRP|@N<	_	36	case	_	_
-36	postos	postos	NOUN	_	Gender=Masc|Number=Plur	34	nmod	_	MWE=postos_de_trabalho|MWEPOS=NOUN
+36	postos	postos	NOUN	_	ExtPos=NOUN|Gender=Masc|Number=Plur	34	nmod	_	_
 37	de	de	ADP	_	_	36	compound	_	_
 38	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	36	compound	_	_
 39	em	em	ADP	PRP|@<SA	_	41	case	_	_
 40	cinco	cinco	NUM	<card>|NUM|M|P|@>N	NumType=Card	41	nummod	_	_
-41	por	por	ADP	_	_	32	obl	_	MWE=por_cento|MWEPOS=NOUN
+41	por	por	ADP	_	ExtPos=NOUN	32	obl	_	_
 42	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	41	compound	_	SpaceAfter=No
 43	,	,	PUNCT	PU|@PU	_	46	punct	_	_
 44	contra	contra	ADP	PRP|@<ADVL	_	46	case	_	_
@@ -53,12 +53,12 @@
 46	taxa	taxa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	32	obl	_	_
 47	de	de	ADP	PRP|@N<	_	49	case	_	_
 48	37	37	NUM	<card>|NUM|M|P|@>N	NumType=Card	49	nummod	_	_
-49	por	por	ADP	_	_	46	nmod	_	MWE=por_cento|MWEPOS=NOUN
+49	por	por	ADP	_	ExtPos=NOUN	46	nmod	_	_
 50	cento	cento	NUM	_	Gender=Masc|Number=Sing|NumType=Mult	49	compound	_	_
 51-52	nos	_	_	_	_	_	_	_	_
 51	em	em	ADP	<sam->|PRP|@N<	_	53	case	_	_
 52	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	53	det	_	_
-53	Estados	Estados	PROPN	<first-cjt>|PROP|M|P|@P<	Gender=Masc|Number=Plur	46	nmod	_	MWE=Estados_Unidos
+53	Estados	Estados	PROPN	<first-cjt>|PROP|M|P|@P<	Gender=Masc|Number=Plur	46	nmod	_	_
 54	Unidos	Unidos	PROPN	PROP|@N<	Number=Sing	53	flat:name	_	SpaceAfter=No
 55	,	,	PUNCT	PU|@PU	_	56	punct	_	_
 56	Canadá	Canadá	PROPN	<cjt>|PROP|M|S|@P<	Gender=Masc|Number=Sing	53	conj	_	_
@@ -85,9 +85,9 @@
 12-13	da	_	_	_	_	_	_	_	_
 12	de	de	ADP	<sam->|PRP|@N<	_	14	case	_	_
 13	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
-14	Organização	Organização	PROPN	_	Gender=Fem|Number=Sing	11	nmod	_	MWE=Organização_para_a_Cooperação_e_Desenvolvimento_Económico|MWEPOS=PROPN
+14	Organização	Organização	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	11	nmod	_	_
 15	para	para	ADP	_	_	14	flat:name	_	_
-16	a	o	DET	_	Gender=Fem|Number=Sing|PronType=Art	14	flat:name	_	MWE=a_Cooperação_e_Desenvolvimento_Económico
+16	a	o	DET	_	Gender=Fem|Number=Sing|PronType=Art	14	flat:name	_	_
 17	Cooperação	Cooperação	PROPN	_	Number=Sing	14	flat:name	_	_
 18	e	e	CCONJ	_	_	14	flat:name	_	_
 19	Desenvolvimento	Desenvolvimento	PROPN	_	Number=Sing	14	flat:name	_	_
@@ -96,7 +96,7 @@
 22	OCDE	OCDE	PROPN	PROP|F|S|@APP	Gender=Fem|Number=Sing	14	appos	_	SpaceAfter=No
 23	)	)	PUNCT	PU|@PU	_	22	punct	_	_
 24	abrange	abranger	VERB	<mv>|V|PR|3S|IND|@FS-N<PRED	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_
-25	36	36	NUM	<card>|NUM|M|P|@>N	NumType=Card	24	obj	_	MWE=36_milhões
+25	36	36	NUM	<card>|NUM|M|P|@>N	NumType=Card	24	obj	_	_
 26	milhões	milhão	NUM	<np-def>|N|M|P|@<ACC	NumType=Card	25	flat	_	_
 27	de	de	ADP	PRP|@N<ARG	_	28	case	_	_
 28	pessoas	pessoa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	25	nmod	_	_
@@ -145,7 +145,7 @@
 68-69	aos	_	_	_	_	_	_	_	_
 68	a	a	ADP	<sam->|<first-cjt>|PRP|@N<	_	70	case	_	_
 69	os	o	DET	<-sam>|<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	70	det	_	_
-70	horários	horários	NOUN	_	Gender=Masc|Number=Plur	67	nmod	_	MWE=horários_de_trabalho|MWEPOS=NOUN
+70	horários	horários	NOUN	_	ExtPos=NOUN|Gender=Masc|Number=Plur	67	nmod	_	_
 71	de	de	ADP	_	_	70	compound	_	_
 72	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	70	compound	_	_
 73	e	e	CCONJ	<co-postnom>|KC|@CO	_	76	cc	_	_
@@ -174,7 +174,7 @@
 9	urgente	urgente	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	8	amod	_	_
 10	em	em	ADP	PRP|@N<	_	14	case	_	_
 11	quase	quase	ADV	<quant>|ADV|@>A	_	12	advmod	_	_
-12	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	14	det	_	MWE=todos_os
+12	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	14	det	_	_
 13	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	fixed	_	_
 14	países	país	NOUN	<np-def>|N|M|P|@P<	Gender=Masc|Number=Plur	8	nmod	_	_
 15	de	de	SCONJ	PRP|@N<	_	16	mark	_	_
@@ -246,7 +246,7 @@
 26	muito	muito	ADV	<quant>|ADV|@>A	_	27	advmod	_	_
 27	elevado	elevar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	29	acl	_	SpaceAfter=No
 28	»	»	PUNCT	PU|@PU	_	27	punct	_	_
-29	salário	salário	NOUN	_	Gender=Masc|Number=Sing	8	nsubj	_	MWE=salário_mínimo|MWEPOS=NOUN
+29	salário	salário	NOUN	_	ExtPos=NOUN|Gender=Masc|Number=Sing	8	nsubj	_	_
 30	mínimo	mínimo	ADJ	_	Gender=Masc|Number=Sing	29	amod	_	_
 31	e	e	CCONJ	<co-subj>|<co-acc>|KC|@CO	_	33	cc	_	_
 32	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	33	det	_	_
@@ -270,7 +270,7 @@
 49	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_
 50	criação	criação	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	46	nmod	_	_
 51	de	de	ADP	PRP|@N<ARG	_	52	case	_	_
-52	postos	postos	NOUN	_	Gender=Masc|Number=Plur	50	nmod	_	MWE=postos_de_trabalho|MWEPOS=NOUN
+52	postos	postos	NOUN	_	ExtPos=NOUN|Gender=Masc|Number=Plur	50	nmod	_	_
 53	de	de	ADP	_	_	52	compound	_	_
 54	trabalho	trabalho	NOUN	_	Gender=Masc|Number=Sing	52	compound	_	SpaceAfter=No
 55	.	.	PUNCT	PU|@PU	_	4	punct	_	_

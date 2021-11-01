@@ -3,7 +3,7 @@
 # sent_id = CP431-1
 # source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2260
-1	Três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	0	root	_	MWE=três_centenas
+1	Três	três	NUM	<card>|NUM|F|P|@>N	NumType=Card	0	root	_	_
 2	centenas	centena	NUM	<first-cjt>|<np-def>|N|F|P|@NPHR	NumType=Card	1	flat	_	_
 3	e	e	CCONJ	<co-utt>|KC|@CO	_	4	cc	_	_
 4	meia	meia	NOUN	<cjt>|<np-idf>|N|F|S|@NPHR	Gender=Fem|Number=Sing	1	conj	_	_
@@ -21,7 +21,7 @@
 16-17	pela	_	_	_	_	_	_	_	_
 16	por	por	ADP	PRP|@PASS	_	18	case	_	_
 17	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
-18	Associação	Associação	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	obl:agent	_	MWE=Associação_Timorense_Lafaek
+18	Associação	Associação	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	15	obl:agent	_	_
 19	Timorense	Timorense	PROPN	PROP|@N<	Number=Sing	18	flat:name	_	_
 20	Lafaek	Lafaek	PROPN	PROP|@N<	Number=Sing	18	flat:name	_	SpaceAfter=No
 21	.	.	PUNCT	PU|@PU	_	1	punct	_	_
@@ -64,7 +64,7 @@
 26	para	para	SCONJ	PRP|@<ADVL	_	27	mark	_	_
 27	gritar	gritar	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	24	advcl	_	_
 28	«	«	PUNCT	PU|@PU	_	29	punct	_	SpaceAfter=No
-29	Viva	Viva	PROPN	_	Gender=Fem|Number=Sing	27	obj	_	MWE=Viva_a_missão|MWEPOS=PROPN
+29	Viva	Viva	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	27	obj	_	_
 30	a	o	DET	_	Gender=Fem|Number=Sing|PronType=Art	29	flat:name	_	_
 31	missão	missão	PROPN	_	Number=Sing	29	flat:name	_	_
 32	de	de	ADP	PRP|@N<	_	33	case	_	_
@@ -72,12 +72,12 @@
 34	»	»	PUNCT	PU|@PU	_	29	punct	_	SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	37	punct	_	_
 36	«	«	PUNCT	PU|@PU	_	37	punct	_	SpaceAfter=No
-37	Viva	Viva	PROPN	_	Gender=Fem|Number=Sing	29	obj	_	MWE=Viva_Timor-Leste|MWEPOS=PROPN
+37	Viva	Viva	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	29	obj	_	_
 38	Timor-Leste	Timor-Leste	PROPN	_	Number=Sing	37	flat:name	_	SpaceAfter=No
 39	»	»	PUNCT	PU|@PU	_	37	punct	_	SpaceAfter=No
 40	,	,	PUNCT	PU|@PU	_	42	punct	_	_
 41	«	«	PUNCT	PU|@PU	_	42	punct	_	SpaceAfter=No
-42	Viva	Viva	PROPN	_	Gender=Fem|Number=Sing	29	obj	_	MWE=Viva_Xanana|MWEPOS=PROPN
+42	Viva	Viva	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	29	obj	_	_
 43	Xanana	Xanana	PROPN	_	Number=Sing	42	flat:name	_	SpaceAfter=No
 44	»	»	PUNCT	PU|@PU	_	42	punct	_	SpaceAfter=No
 45	,	,	PUNCT	PU|@PU	_	27	punct	_	_
@@ -129,7 +129,7 @@
 2	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|PronType=Prs	1	nsubj	_	_
 3	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	poeta	poeta	NOUN	<first-cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
-5	Borja	Borja	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	4	appos	_	MWE=Borja_da_Costa
+5	Borja	Borja	PROPN	PROP|M|S|@N<	Gender=Masc|Number=Sing	4	appos	_	_
 6-7	da	_	_	_	_	_	_	_	_
 6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<artd>|<-sam>|DET|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
@@ -138,7 +138,7 @@
 10	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
 11	cântico	cântico	NOUN	<cjt>|<np-def>|N|M|S|@<ACC	Gender=Masc|Number=Sing	4	conj	_	_
 12	que	que	PRON	<rel>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Rel	15	obj	_	_
-13	Xanana	Xanana	PROPN	_	Gender=Masc|Number=Sing	15	nsubj	_	MWE=Xanana_Gusmão|MWEPOS=PROPN
+13	Xanana	Xanana	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	15	nsubj	_	_
 14	Gusmão	Gusmão	PROPN	_	Number=Sing	13	flat:name	_	_
 15	escreveu	escrever	VERB	<mv>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	11	acl:relcl	_	_
 16-17	na	_	_	_	_	_	_	_	_
@@ -148,7 +148,7 @@
 19	para	para	ADP	PRP|@<PIV	_	22	case	_	_
 20	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 21	«	«	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
-22	Mulher	Mulher	PROPN	_	Gender=Fem|Number=Sing	15	obl	_	MWE=Mulher_Timor|MWEPOS=PROPN
+22	Mulher	Mulher	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	15	obl	_	_
 23	Timor	Timor	PROPN	_	Number=Sing	22	flat:name	_	SpaceAfter=No
 24	»	»	PUNCT	PU|@PU	_	22	punct	_	SpaceAfter=No
 25	.	.	PUNCT	PU|@PU	_	1	punct	_	_
@@ -157,7 +157,7 @@
 # sent_id = CP431-5
 # source = CETEMPúblico n=431 sec=pol sem=92a
 # id = 2264
-1	Rui	Rui	PROPN	_	Gender=Masc|Number=Sing	15	nsubj:pass	_	MWE=Rui_Marques|MWEPOS=PROPN
+1	Rui	Rui	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	15	nsubj:pass	_	_
 2	Marques	Marques	PROPN	_	Number=Sing	1	flat:name	_	SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	4	punct	_	_
 4	coordenador	coordenador	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	1	appos	_	_
@@ -243,7 +243,7 @@
 11	cantou	cantar	VERB	<mv>|<hyphen>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 12	se	se	PRON	PERS|M/F|3S/P|ACC|@<SUBJ	Case=Acc|PronType=Prs	11	nsubj	_	_
 13	«	«	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
-14	Peace	Peace	PROPN	_	Gender=Masc|Number=Sing	11	obj	_	MWE=Peace_Mission|MWEPOS=PROPN
+14	Peace	Peace	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	11	obj	_	_
 15	Mission	Mission	PROPN	_	Number=Sing	14	flat:name	_	SpaceAfter=No
 16	»	»	PUNCT	PU|@PU	_	14	punct	_	SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	19	punct	_	_
@@ -289,7 +289,7 @@
 1	(	(	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
 2	...	...	PUNCT	PU|@PU	_	7	punct	_	SpaceAfter=No
 3	)	)	PUNCT	PU|@PU	_	2	punct	_	_
-4	Duzentos	duzentos	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nsubj	_	MWE=duzentos_mil
+4	Duzentos	duzentos	NUM	<card>|NUM|M|P|@>N	NumType=Card	7	nsubj	_	_
 5	mil	mil	NUM	<card>|<np-def>|NUM|M|P|@SUBJ>	NumType=Card	4	flat	_	_
 6	já	já	ADV	ADV|@ADVL>	_	7	advmod	_	_
 7	morreram	morrer	VERB	<mv>|V|PS|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No

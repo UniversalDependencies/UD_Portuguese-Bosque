@@ -5,7 +5,7 @@
 # id = 4007
 1	Finalmente	finalmente	ADV	ADV|@ADVL>	_	12	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
-3	apesar	apesar	ADV	ADV|@ADVL>	_	8	mark	_	MWE=apesar_de|MWEPOS=SCONJ
+3	apesar	apesar	ADV	ADV|@ADVL>	ExtPos=SCONJ	8	mark	_	_
 4	de	de	ADP	PRP|@A<	_	3	fixed	_	_
 5	já	já	ADV	ADV|@ADVL>	_	8	advmod	_	_
 6	ter	ter	AUX	<aux>|V|INF|@ICL-P<	VerbForm=Inf	8	aux	_	_
@@ -29,13 +29,13 @@
 24	criação	criação	NOUN	<np-idf>|N|F|S|@N<PRED	Gender=Fem|Number=Sing	17	appos	_	_
 25	original	original	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	24	amod	_	_
 26	de	de	ADP	PRP|@N<	_	27	case	_	_
-27	Steve	Steve	PROPN	_	Gender=Masc|Number=Sing	24	nmod	_	MWE=Steve_Dikto|MWEPOS=PROPN
+27	Steve	Steve	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	24	nmod	_	_
 28	Dikto	Dikto	PROPN	_	Number=Sing	27	flat:name	_	_
 29	(	(	PUNCT	PU|@PU	_	30	punct	_	SpaceAfter=No
 30	desenho	desenho	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	27	parataxis	_	SpaceAfter=No
 31	)	)	PUNCT	PU|@PU	_	30	punct	_	_
 32	e	e	CCONJ	<co-prparg>|KC|@CO	_	33	cc	_	_
-33	Stan	Stan	PROPN	_	Gender=Masc|Number=Sing	27	conj	_	MWE=Stan_Lee|MWEPOS=PROPN
+33	Stan	Stan	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	27	conj	_	_
 34	Lee	Lee	PROPN	_	Number=Sing	33	flat:name	_	_
 35	(	(	PUNCT	PU|@PU	_	36	punct	_	SpaceAfter=No
 36	texto	texto	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	33	parataxis	_	SpaceAfter=No
@@ -44,7 +44,7 @@
 39	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	41	nsubj:pass	_	_
 40	é	ser	AUX	<aux>|V|PR|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	41	aux:pass	_	_
 41	evocado	evocar	VERB	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing|VerbForm=Part|Voice=Pass	17	acl:relcl	_	_
-42	por	por	ADP	<sam->|PRP|@<ADVL	_	43	case	_	MWE=por_ocasião_de
+42	por	por	ADP	<sam->|PRP|@<ADVL	_	43	case	_	_
 43	ocasião	ocasião	NOUN	N|@P<	Gender=Fem|Number=Sing	41	obl	_	_
 44-45	do	_	_	_	_	_	_	_	_
 44	de	de	ADP	PRP|@N<	_	47	case	_	_
@@ -76,7 +76,7 @@
 67	espanhola	espanhol	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	66	amod	_	_
 68	Forum	Forum	PROPN	PROP|F|S|@N<	Gender=Fem|Number=Sing	66	appos	_	_
 69	(	(	PUNCT	PU|@PU	_	70	punct	_	SpaceAfter=No
-70	Planeta-De	Planeta-De	PROPN	_	Gender=Masc|Number=Sing	66	appos	_	MWE=Planeta-De_Agostini|MWEPOS=PROPN
+70	Planeta-De	Planeta-De	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	66	appos	_	_
 71	Agostini	Agostini	PROPN	_	Number=Sing	70	flat:name	_	SpaceAfter=No
 72	)	)	PUNCT	PU|@PU	_	70	punct	_	SpaceAfter=No
 73	.	.	PUNCT	PU|@PU	_	12	punct	_	_
@@ -86,7 +86,7 @@
 # source = CETEMPúblico n=780 sec=clt sem=94a
 # id = 4008
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
-2	La	La	PROPN	_	Gender=Fem|Number=Sing	8	nsubj	_	MWE=La_Saga_del_Traje_Alienigena|MWEPOS=PROPN
+2	La	La	PROPN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	8	nsubj	_	_
 3	Saga	Saga	PROPN	_	Number=Sing	2	flat:name	_	_
 4	del	del	PROPN	_	Number=Sing	2	flat:name	_	_
 5	Traje	Traje	PROPN	_	Number=Sing	2	flat:name	_	_
@@ -96,19 +96,19 @@
 9	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	assinatura	assinatura	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	8	obj	_	_
 11	de	de	ADP	PRP|@N<	_	12	case	_	_
-12	Ron	Ron	PROPN	_	Gender=Masc|Number=Sing	10	nmod	_	MWE=Ron_Frenz|MWEPOS=PROPN
+12	Ron	Ron	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	10	nmod	_	_
 13	Frenz	Frenz	PROPN	_	Number=Sing	12	flat:name	_	SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	15	punct	_	_
-15	Ruck	Ruck	PROPN	_	Gender=Masc|Number=Sing	12	conj	_	MWE=Ruck_Leonardi|MWEPOS=PROPN
+15	Ruck	Ruck	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	12	conj	_	_
 16	Leonardi	Leonardi	PROPN	_	Number=Sing	15	flat:name	_	_
 17	(	(	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
 18	desenho	desenho	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	15	parataxis	_	SpaceAfter=No
 19	)	)	PUNCT	PU|@PU	_	18	punct	_	SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	21	punct	_	_
-21	Tom	Tom	PROPN	_	Gender=Masc|Number=Sing	12	conj	_	MWE=Tom_DeFalco|MWEPOS=PROPN
+21	Tom	Tom	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	12	conj	_	_
 22	DeFalco	DeFalco	PROPN	_	Number=Sing	21	flat:name	_	_
 23	e	e	CCONJ	KC|@CO	_	24	cc	_	_
-24	Roger	Roger	PROPN	_	Gender=Masc|Number=Sing	21	conj	_	MWE=Roger_Stern|MWEPOS=PROPN
+24	Roger	Roger	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	21	conj	_	_
 25	Stern	Stern	PROPN	_	Number=Sing	24	flat:name	_	_
 26	(	(	PUNCT	PU|@PU	_	27	punct	_	SpaceAfter=No
 27	argumento	argumento	NOUN	<np-idf>|N|M|S|@N<PRED	Gender=Masc|Number=Sing	21	parataxis	_	SpaceAfter=No

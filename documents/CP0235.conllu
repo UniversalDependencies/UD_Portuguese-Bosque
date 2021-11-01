@@ -6,12 +6,12 @@
 1	Lutas	luta	NOUN	<np-idf>|N|F|P|@NPHR	Gender=Fem|Number=Plur	0	root	_	_
 2	Amadoras	amador	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	1	amod	_	_
 3	(	(	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
-4	7	7	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	MWE=7_mil
+4	7	7	NUM	<card>|NUM|M|P|@>N	NumType=Card	6	nummod	_	_
 5	mil	mil	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	flat	_	_
 6	contos	conto	NOUN	<np-def>|N|M|P|@N<PRED	Gender=Masc|Number=Plur	1	appos	_	SpaceAfter=No
 7	)	)	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
 8	--	--	PUNCT	PU|@PU	_	1	punct	_	_
-9	David	David	PROPN	_	Gender=Masc|Number=Sing	1	appos	_	MWE=David_Maia|MWEPOS=PROPN
+9	David	David	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	1	appos	_	_
 10	Maia	Maia	PROPN	_	Number=Sing	9	flat:name	_	SpaceAfter=No
 11	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
@@ -20,29 +20,29 @@
 # source = CETEMPúblico n=235 sec=soc sem=95a
 # id = 1247
 1	Foi	foi	SCONJ	<foc>|ADV|@ADVL>	_	23	mark	_	_
-2	por	por	ADP	<sam->|PRP|@ADVL>	_	3	case	_	MWE=por_via_de
+2	por	por	ADP	<sam->|PRP|@ADVL>	_	3	case	_	_
 3	via	via	NOUN	N|@P<	Gender=Fem|Number=Sing	23	obl	_	_
 4-5	do	_	_	_	_	_	_	_	_
 4	de	de	ADP	PRP|@N<	_	6	case	_	_
 5	o	o	DET	<-sam>|<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	filho	filho	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	3	nmod	_	_
 7	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
-8	Pedro	Pedro	PROPN	_	Gender=Masc|Number=Sing	6	nmod	_	MWE=Pedro_Anes|MWEPOS=PROPN
+8	Pedro	Pedro	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	6	nmod	_	_
 9	Anes	Anes	PROPN	_	Number=Sing	8	flat:name	_	SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 11	de	de	ADP	PRP|@N<PRED	_	13	case	_	_
 12	seu	seu	DET	<poss>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Prs	13	det	_	_
 13	nome	nome	NOUN	<np-def>|N|M|S|@P<	Gender=Masc|Number=Sing	6	nmod	_	_
-14	Gonçalo	Gonçalo	PROPN	_	Gender=Masc|Number=Sing	13	appos	_	MWE=Gonçalo_Reimão|MWEPOS=PROPN
+14	Gonçalo	Gonçalo	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	13	appos	_	_
 15	Reimão	Reimão	PROPN	_	Number=Sing	14	flat:name	_	SpaceAfter=No
 16	,	,	PUNCT	PU|@PU	_	13	punct	_	_
 17	que	que	SCONJ	<foc>|ADV|@ADVL>	_	23	mark	_	_
 18	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
-19	Campo	Campo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj:pass	_	MWE=Campo_de_Vale_Formoso
+19	Campo	Campo	PROPN	PROP|M|S|@SUBJ>	Gender=Masc|Number=Sing	23	nsubj:pass	_	_
 20	de	de	ADP	PRP|@N<	_	21	case	_	_
-21	Vale	Vale	PROPN	_	Number=Sing	19	nmod	_	MWE=Vale_Formoso|MWEPOS=PROPN
+21	Vale	Vale	PROPN	_	ExtPos=PROPN|Number=Sing	19	nmod	_	_
 22	Formoso	Formoso	PROPN	_	Number=Sing	21	flat:name	_	_
-23	passou	passar	VERB	<aux>|V|PS|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	MWE=passou_a|MWEPOS=AUX
+23	passou	passar	VERB	<aux>|V|PS|3S|IND|@FS-STA	ExtPos=AUX|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 24	a	a	SCONJ	PRP|@PRT-AUX<	_	26	mark	_	_
 25	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	26	aux:pass	_	_
 26	conhecido	conhecido	ADJ	<pass>|<mv>|V|PCP|M|S|@ICL-AUX<	Gender=Masc|Number=Sing	23	xcomp	_	_
@@ -74,10 +74,10 @@
 9	refere	referir	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 10	já	já	ADV	ADV|@<ADVL	_	9	advmod	_	_
 11	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
-12	Rua	Rua	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	MWE=Rua_de_o_Reimão
+12	Rua	Rua	PROPN	PROP|F|S|@<ACC	Gender=Fem|Number=Sing	9	obj	_	_
 13-14	do	_	_	_	_	_	_	_	_
 13	de	de	ADP	PRP|@N<	_	14	case	_	_
-14	o	o	PROPN	PROP|@P<	Number=Sing	12	nmod	_	MWE=o_Reimão
+14	o	o	PROPN	PROP|@P<	Number=Sing	12	nmod	_	_
 15	Reimão	Reimão	PROPN	PROP|@N<	Number=Sing	14	flat:name	_	SpaceAfter=No
 16	.	.	PUNCT	PU|@PU	_	9	punct	_	_
 
@@ -93,7 +93,7 @@
 6-7	da	_	_	_	_	_	_	_	_
 6	de	de	ADP	<sam->|PRP|@N<	_	8	case	_	_
 7	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|PronType=Art	8	det	_	_
-8	Porta	Porta	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	MWE=Porta_do_Cimo_de_Vila
+8	Porta	Porta	PROPN	PROP|F|S|@P<	Gender=Fem|Number=Sing	5	nmod	_	_
 9-10	do	_	_	_	_	_	_	_	_
 9	de	de	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
@@ -103,7 +103,7 @@
 14	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 15	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 16	fértil	fértil	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	17	amod	_	_
-17	quinta	quinta	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	29	nsubj	_	MWE=quinta_do_Reimão
+17	quinta	quinta	PROPN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	29	nsubj	_	_
 18-19	do	_	_	_	_	_	_	_	_
 18	de	de	ADP	<sam->|PRP|@N<	_	20	case	_	_
 19	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
@@ -143,11 +143,11 @@
 2	aí	aí	ADV	<-sam>|ADV|@P<	_	4	advmod	_	_
 3	que	que	SCONJ	KS|@SUB	_	4	mark	_	_
 4	surja	surgir	VERB	<mv>|V|PR|3S|SUBJ|@FS-STA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	muitas	muitas	ADP	PRP|@<ADVL	_	6	case	_	MWE=muitas_vezes
+5	muitas	muitas	ADP	PRP|@<ADVL	_	6	case	_	_
 6	vezes	vez	NOUN	N|M|P|@P<	Gender=Fem|Number=Plur	4	obl	_	_
 7	referida	referir	VERB	<mv>|V|PCP|F|S|@ICL-<ADVL	Gender=Fem|Number=Sing|VerbForm=Part	4	advcl	_	_
 8	como	como	ADP	<prd>|PRP|@<SC	_	9	case	_	_
-9	Campo	Campo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	xcomp	_	MWE=Campo_do_Cirne
+9	Campo	Campo	PROPN	PROP|M|S|@P<	Gender=Masc|Number=Sing	7	xcomp	_	_
 10-11	do	_	_	_	_	_	_	_	_
 10	de	de	ADP	<sam->|PRP|@N<	_	12	case	_	_
 11	o	o	DET	<artd>|<-sam>|DET|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
@@ -181,7 +181,7 @@
 19	cidade	cidade	NOUN	<np-def>|N|F|S|@P<	Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
 20	,	,	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
 21	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
-22	Avenida	avenida	NOUN	PROP|F|S|@SUBJ>	Gender=Fem|Number=Sing	27	nsubj	_	MWEPOS=PROPN
+22	Avenida	avenida	NOUN	PROP|F|S|@SUBJ>	ExtPos=PROPN|Gender=Fem|Number=Sing	27	nsubj	_	_
 23	de	de	ADP	PRP|@N<	_	24	case	_	_
 24	Rodrigues	Rodrigues	PROPN	PROP|@P<	Number=Sing	22	nmod	_	_
 25	de	de	ADP	PRP|@N<	_	26	case	_	_
@@ -211,7 +211,7 @@
 48	órfãs	órfão	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	46	nmod	_	SpaceAfter=No
 49	:	:	PUNCT	PU|@PU	_	51	punct	_	_
 50	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
-51	Biblioteca	biblioteca	NOUN	<first-cjt>|PROP|F|S|@APP	Gender=Fem|Number=Sing	31	appos	_	MWEPOS=PROPN
+51	Biblioteca	biblioteca	NOUN	<first-cjt>|PROP|F|S|@APP	ExtPos=PROPN|Gender=Fem|Number=Sing	31	appos	_	_
 52	Pública	pública	ADJ	PROP|@N<	Gender=Fem|Number=Sing	51	amod	_	_
 53	Municipal	municipal	ADJ	PROP|@N<	Gender=Fem|Number=Sing	51	amod	_	_
 54-55	do	_	_	_	_	_	_	_	_
@@ -226,7 +226,7 @@
 62	voltada	voltado	ADJ	<mv>|V|PCP|F|S|@ICL-<SC	Gender=Fem|Number=Sing	51	acl:relcl	_	_
 63	para	para	ADP	<first-cjt>|PRP|@<SA	_	65	case	_	_
 64	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	65	det	_	_
-65	Rua	rua	NOUN	<first-cjt>|PROP|F|S|@P<	Gender=Fem|Number=Sing	62	obl	_	MWEPOS=PROPN
+65	Rua	rua	NOUN	<first-cjt>|PROP|F|S|@P<	ExtPos=PROPN|Gender=Fem|Number=Sing	62	obl	_	_
 66	de	de	ADP	PRP|@N<	_	67	case	_	_
 67	D.	Dom	PROPN	_	Abbr=Yes|Gender=Masc|Number=Sing	65	nmod	_	_
 68	João	João	PROPN	_	Number=Sing	67	flat:name	_	_
@@ -234,7 +234,7 @@
 70	e	e	CCONJ	<co-advs>|<co-postnom>|KC|@CO	_	73	cc	_	_
 71	para	para	ADP	<cjt>|PRP|@<SA	_	73	case	_	_
 72	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	73	det	_	_
-73	Jardim	jardim	NOUN	PROP|M|S|@P<	Gender=Masc|Number=Sing	65	conj	_	MWEPOS=PROPN
+73	Jardim	jardim	NOUN	PROP|M|S|@P<	ExtPos=PROPN|Gender=Masc|Number=Sing	65	conj	_	_
 74	de	de	ADP	PRP|@N<	_	75	case	_	_
 75	Marques	Marques	PROPN	PROP|@P<	Number=Sing	73	nmod	_	_
 76	de	de	ADP	PRP|@N<	_	77	case	_	_
@@ -248,7 +248,7 @@
 84	--	--	PUNCT	PU|@PU	_	62	punct	_	_
 85	e	e	CCONJ	KC|@CO	_	87	cc	_	_
 86	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	87	det	_	_
-87	Escola	escola	NOUN	_	Gender=Fem|Number=Sing	31	conj	_	MWEPOS=PROPN
+87	Escola	escola	NOUN	_	ExtPos=PROPN|Gender=Fem|Number=Sing	31	conj	_	_
 88	Superior	superior	ADJ	_	Gender=Fem|Number=Sing	87	amod	_	_
 89	de	de	ADP	PRP|@N<	_	90	case	_	_
 90	Belas-artes	Belas-artes	PROPN	PROP|@P<	Number=Sing	87	nmod	_	_
