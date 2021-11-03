@@ -127,6 +127,20 @@ See file LICENSE.txt
 
 # Changelog
 
+2021-11-01 v2.9
+
+  * redistributed of the sentences in dev/test/train (#203, #273)
+  * fixed all remain validation errors related to non projective
+    caused by punctuation (#265)
+  * adopted the ExtPos in the FEATURES instead of the MWEPOS and MWE
+    in the MISC field (#334)
+  * added the NEWDOC_ID metadata in all documents
+  * fixed gender/number agreement between DET/NOUN and ADJ/NOUN (#314,
+    #299, #300)
+  * annotation of abbreviations in the FEATURES (#301, #312)
+  * adding missing FEATURES (#343, #79, #365)
+  * removed some duplicated sentences (#126)
+
 2021-05-01 v2.8
 
   * Fixed many validation errors related to non projective caused by
