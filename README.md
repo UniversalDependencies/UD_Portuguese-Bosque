@@ -127,6 +127,10 @@ See file LICENSE.txt
 
 # Changelog
 
+2022-05-01 v2.10
+
+  * fixed validation errors according to new tests (goeswith)
+
 2021-11-01 v2.9
 
   * redistributed of the sentences in dev/test/train (#203, #273)
@@ -145,10 +149,10 @@ See file LICENSE.txt
 
   * Fixed many validation errors related to non projective caused by
     punctuation (#265). Issue not closed.
-	
+
   * Removed Gender=Unsp given discussion in
     https://github.com/UniversalDependencies/docs/issues/780
-	
+
   * Other issues: #295, #296, #294, #278, #293.
 
 2018-04-15 v2.2
@@ -181,7 +185,7 @@ See file LICENSE.txt
 === Machine-readable metadata =================================================
 Data available since: UD v1.2
 License: CC BY-SA 4.0
-Genre: news 
+Genre: news
 Includes text: yes
 Lemmas: converted with corrections
 UPOS: converted with corrections
