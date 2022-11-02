@@ -127,6 +127,11 @@ See file LICENSE.txt
 
 # Changelog
 
+2022-11-01 v2.11
+
+  * fixed some verb analysis based on valence analyses
+  * fixed some lemmas
+
 2022-05-01 v2.10
 
   * fixed validation errors according to new tests (goeswith)
