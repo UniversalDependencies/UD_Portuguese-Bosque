@@ -1,10 +1,10 @@
 Running the following version of UD tools:
-commit 13e6b709a8bc643c3f902800321a7beda46feb8d
+commit 04abe686385f14a9a6f68784bd723a6b60ded594
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 13 22:03:41 2022 +0100
+Date:   Tue May 9 00:14:39 2023 +0200
 Evaluating the following revision of UD_Portuguese-Bosque:
-commit 01c85c1c2411d747943ed4a3dd0b38dbceead5ce
-Merge: fe621b287 25b207e7c
+commit d382512f07b15f332dffcd3dd84278a63148daff
+Merge: d9ba5679f 8abc5c945
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 Size: counted 227827 of 227827 words (nodes).
 Size: min(0, log((N/1000)**2)) = 10.857173138023.
@@ -15,7 +15,7 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 0.9.
 Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.9.
-Features: 146591 out of 227827 total words have one or more features.
+Features: 146585 out of 227827 total words have one or more features.
 Features: source of annotation (from README) factor is 0.9.
 Universal relations: 35 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.9.
@@ -24,11 +24,11 @@ Udapi:
 Udapi: found 285 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 227827 words.
 Genres: found 1 out of 17 known.
-validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-dev.conllu
+/net/work/people/zeman/unidep/tools/validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-dev.conllu
 *** PASSED ***
-validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-test.conllu
+/net/work/people/zeman/unidep/tools/validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-test.conllu
 *** PASSED ***
-validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-train.conllu
+/net/work/people/zeman/unidep/tools/validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-train.conllu
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.9) = 0.0692307692307692
