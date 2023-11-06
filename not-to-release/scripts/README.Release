@@ -1,0 +1,6 @@
+To generate the release, we opted to use the sentences in the same
+order as UD_Portuguese.  Using the mapping available in
+documents/old/*, the code extract-sentence-order.lisp generates three
+files containing the IDs in the order that they should appear in the
+dev/test/train files.  Next, use generate-release.lisp to generate the
+final CONLLU files.

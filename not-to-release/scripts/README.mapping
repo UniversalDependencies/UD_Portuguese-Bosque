@@ -1,0 +1,10 @@
+
+To run:
+
+- check the paths in the `mapping.lisp` to the UD_Portuguese files and
+  the new bosque files.
+
+- execute
+
+sbcl --dynamic-space-size 8GB --load mapping.lisp --eval '(in-package :test)' --eval '(prepare-files)' --eval '(execute)'
+
