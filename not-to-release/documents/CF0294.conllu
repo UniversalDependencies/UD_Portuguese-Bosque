@@ -3,8 +3,8 @@
 # sent_id = CF294-1
 # source = CETENFolha n=294 cad=Cotidiano sec=soc sem=94a
 1	«	«	PUNCT	PU|@PU	_	2	punct	_	SpaceAfter=No
-2	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	exceções	exceção	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	SpaceAfter=No
+2	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Cxn=Existential-HavePred
+3	exceções	exceção	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	2	obj	_	CxnElt=2:Existential-HavePred.Pivot@f|SpaceAfter=No
 4	.	.	PUNCT	PU|@PU	_	2	punct	_	_
 
 # text = Uma blusa preta pode ser usada com um sutiã branco se a saia for branca», explica.
@@ -15,7 +15,7 @@
 3	preta	preto	ADJ	ADJ|F|S|@N<	Gender=Fem|Number=Sing	2	amod	_	_
 4	pode	poder	VERB	<aux>|V|PR|3S|IND|@FS-ACC>	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	parataxis	_	_
 5	ser	ser	AUX	<aux>|V|INF|@ICL-AUX<	VerbForm=Inf	6	aux:pass	_	_
-6	usada	usar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	xcomp	_	_
+6	usada	usar	VERB	<pass>|<mv>|V|PCP|F|S|@ICL-AUX<	Gender=Fem|Number=Sing|VerbForm=Part|Voice=Pass	4	xcomp	_	Cxn=Conditional-NeutralEpistemic|CxnElt=6:Conditional-NeutralEpistemic.Apodosis@p
 7	com	com	ADP	PRP|@<ADVL	_	9	case	_	_
 8	um	um	NUM	<card>|NUM|M|S|@>N	NumType=Card	9	nummod	_	_
 9	sutiã	sutiã	NOUN	<np-def>|N|F|S|@P<	Gender=Masc|Number=Sing	6	obl	_	_
@@ -24,7 +24,7 @@
 12	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	saia	saia	NOUN	<np-def>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	15	nsubj	_	_
 14	for	ser	AUX	<mv>|V|FUT|3S|SUBJ|@FS-<ADVL	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	cop	_	_
-15	branca	branco	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	6	advcl	_	SpaceAfter=No
+15	branca	branco	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	6	advcl	_	CxnElt=6:Conditional-NeutralEpistemic.Protasis@p|SpaceAfter=No
 16	»	»	PUNCT	PU|@PU	_	6	punct	_	SpaceAfter=No
 17	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 18	explica	explicar	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No

@@ -55,9 +55,9 @@
 18	1985	1985	NUM	<year>|<card>|<date>|NUM|M|S|@P<	NumType=Card	21	obl	_	SpaceAfter=No
 19	,	,	PUNCT	PU|@PU	_	18	punct	_	_
 20	não	não	ADV	_	Polarity=Neg	21	advmod	_	_
-21	houve	haver	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	ccomp	_	_
+21	houve	haver	VERB	<mv>|V|PS|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	ccomp	_	Cxn=Existential-HavePred
 22	qualquer	qualquer	DET	<quant>|DET|M|S|@>N	Gender=Masc|Number=Sing|PronType=Ind	23	det	_	_
-23	desenvolvimento	desenvolvimento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	21	obj	_	_
+23	desenvolvimento	desenvolvimento	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	21	obj	_	CxnElt=21:Existential-HavePred.Pivot@f
 24	empenhado	empenhar	VERB	<mv>|V|PCP|M|S|@ICL-N<	Gender=Masc|Number=Sing|VerbForm=Part	23	acl	_	_
 25	(	(	PUNCT	PU|@PU	_	28	punct	_	SpaceAfter=No
 26-27	no	_	_	_	_	_	_	_	_
@@ -105,7 +105,7 @@
 26	e	e	CCONJ	<co-fcl>|<co-fmc>|<co-vfin>|KC|@CO	_	29	cc	_	_
 27	seria	ser	AUX	<cjt>|<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	29	cop	_	_
 28	«	«	PUNCT	PU|@PU	_	29	punct	_	SpaceAfter=No
-29	suicídio	suicídio	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	19	conj	_	_
+29	suicídio	suicídio	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	19	conj	_	Cxn=Conditional-NegativeEpistemic|CxnElt=29:Conditional-NegativeEpistemic.Apodosis@p
 30	para	para	ADP	PRP|@N<	_	31	case	_	_
 31	Porto	Porto	PROPN	_	ExtPos=PROPN|Gender=Masc|Number=Sing	29	nmod	_	_
 32	Santo	Santo	PROPN	_	Number=Sing	31	flat:name	_	_
@@ -115,7 +115,7 @@
 36	e	e	CCONJ	<co-subj>|KC|@CO	_	37	cc	_	_
 37	unidade	unidade	NOUN	<cjt>|<np-idf>|N|F|S|@SUBJ>	Gender=Fem|Number=Sing	35	conj	_	_
 38	fossem	ser	AUX	<aux>|V|IMPF|3P|SUBJ|@FS-<ADVL	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	39	aux:pass	_	_
-39	quebradas	quebrar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	29	advcl	_	SpaceAfter=No
+39	quebradas	quebrar	VERB	<pass>|<mv>|V|PCP|F|P|@ICL-AUX<	Gender=Fem|Number=Plur|VerbForm=Part|Voice=Pass	29	advcl	_	CxnElt=29:Conditional-NegativeEpistemic.Protasis@p|SpaceAfter=No
 40	»	»	PUNCT	PU|@PU	_	29	punct	_	SpaceAfter=No
 41	.	.	PUNCT	PU|@PU	_	19	punct	_	_
 

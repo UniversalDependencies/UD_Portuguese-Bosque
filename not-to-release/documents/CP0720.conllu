@@ -59,12 +59,12 @@
 # text = Há, porém, um aspecto que não foi abordado na sua extensão:
 # sent_id = CP720-3
 # source = CETEMPúblico n=720 sec=opi sem=98b
-1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Cxn=Existential-HavePred|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	porém	porém	CCONJ	<kc>|ADV|@<ADVL	_	1	cc	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 5	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	aspecto	aspecto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	_
+6	aspecto	aspecto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	1	obj	_	CxnElt=1:Existential-HavePred.Pivot@f
 7	que	que	PRON	<rel>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Rel	10	nsubj:pass	_	_
 8	não	não	ADV	_	Polarity=Neg	10	advmod	_	_
 9	foi	ser	AUX	<aux>|V|PS|3S|IND|@FS-N<	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux:pass	_	_
@@ -89,8 +89,8 @@
 8-9	no	_	_	_	_	_	_	_	_
 8	em	em	SCONJ	<sam->|PRP|@N<ARG	_	11	mark	_	_
 9	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	_
-10	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	11	nsubj	_	_
-11	respeita	respeitar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
+10	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	11	nsubj	_	CxnElt=11:Interrogative-WHInfo-Indirect.WHWord
+11	respeita	respeitar	VERB	<mv>|V|PR|3S|IND|@FS-P<	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	Cxn=Interrogative-WHInfo-Indirect|CxnElt=11:Interrogative-WHInfo-Indirect.Clause@p
 12	a	a	ADP	PRP|@<PIV	_	13	case	_	_
 13	bens	bem	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	11	obj	_	_
 14	não	não	ADV	_	Polarity=Neg	15	advmod	_	_
@@ -133,8 +133,8 @@
 12	aleatória	aleatório	ADJ	ADJ|F|S|@<SC	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
 13	,	,	PUNCT	PU|@PU	_	12	punct	_	_
 14	pois	pois	SCONJ	KS|@ADVL>	_	15	mark	_	_
-15	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
-16	terrenos	terreno	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	15	obj	_	_
+15	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-<ADVL	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	Cxn=Existential-HavePred
+16	terrenos	terreno	NOUN	<np-idf>|N|M|P|@<ACC	Gender=Masc|Number=Plur	15	obj	_	CxnElt=15:Existential-HavePred.Pivot@f
 17	potencialmente	potencialmente	ADV	ADV|@>A	_	18	advmod	_	_
 18	urbanos	urbano	ADJ	ADJ|M|P|@N<	Gender=Masc|Number=Plur	16	amod	_	_
 19	que	que	PRON	<rel>|INDP|M|P|@SUBJ>	Gender=Masc|Number=Plur|PronType=Rel	22	nsubj:pass	_	_
@@ -220,7 +220,7 @@
 4	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	objectivo	objectivo	NOUN	<np-def>|N|M|S|@SUBJ>	Gender=Masc|Number=Sing	7	nsubj	_	_
 6	foi	ser	AUX	<mv>|V|PS|3S|IND|@FS-ADVL>	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	_
-7	libertar	libertar	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	16	advcl	_	_
+7	libertar	libertar	VERB	<mv>|V|INF|@ICL-<SC	VerbForm=Inf	16	advcl	_	CxnElt=16:Conditional-UnspecifiedEpistemic.Protasis@p
 8	os	o	DET	<artd>|ART|M|P|@>N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	terrenos	terreno	NOUN	<np-def>|N|M|P|@<ACC	Gender=Masc|Number=Plur	7	obj	_	SpaceAfter=No
 10	,	,	PUNCT	PU|@PU	_	7	punct	_	_
@@ -229,7 +229,7 @@
 13	estagnação	estagnação	NOUN	<np-def>|N|F|S|@<ACC	Gender=Fem|Number=Sing	11	obj	_	SpaceAfter=No
 14	,	,	PUNCT	PU|@PU	_	11	punct	_	_
 15	seria	ser	AUX	<mv>|V|COND|3S|@FS-STA	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	16	cop	_	_
-16	necessário	necessário	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	_
+16	necessário	necessário	ADJ	ADJ|M|S|@<SC	Gender=Masc|Number=Sing	0	root	_	Cxn=Conditional-UnspecifiedEpistemic|CxnElt=16:Conditional-UnspecifiedEpistemic.Apodosis@p
 17	que	que	SCONJ	KS|@SUB	_	20	mark	_	_
 18	as	o	DET	<artd>|ART|F|P|@>N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
 19	autarquias	autarquia	NOUN	<np-def>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	20	nsubj	_	_

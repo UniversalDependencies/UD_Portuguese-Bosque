@@ -177,9 +177,9 @@
 5	muitos	muito	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Ind	6	det	_	_
 6	andares	andar	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No
 7	,	,	PUNCT	PU|@PU	_	3	punct	_	_
-8	haverá	haver	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+8	haverá	haver	VERB	<mv>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	Cxn=Existential-HavePred
 9	um	um	DET	<arti>|ART|M|S|@>N	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
-10	ecoponto	ecoponto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	_
+10	ecoponto	ecoponto	NOUN	<np-idf>|N|M|S|@<ACC	Gender=Masc|Number=Sing	8	obj	_	CxnElt=8:Existential-HavePred.Pivot@f
 11	para	para	ADP	PRP|@N<	_	14	case	_	_
 12	todos	todo	DET	<quant>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Tot	14	det	_	_
 13	os	o	DET	<artd>|DET|M|P|@A<	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	fixed	_	_
@@ -297,9 +297,9 @@
 9	«	«	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
 10	com	com	ADP	PRP|@<ADVL	_	11	case	_	_
 11	abordagens	abordagem	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obl	_	_
-12	porta	porta	NOUN	N|M|S|@N<	Gender=Masc|Number=Sing	11	nmod	_	_
-13	a	a	ADP	PRP|@N<	_	14	case	_	_
-14	porta	porta	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	SpaceAfter=No
+12	porta	porta	NOUN	N|M|S|@N<	Gender=Masc|Number=Sing	11	nmod	_	Cxn=NPN|CxnElt=12:NPN.N1
+13	a	a	ADP	PRP|@N<	_	14	case	_	CxnElt=12:NPN.P
+14	porta	porta	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	12	nmod	_	CxnElt=12:NPN.N2|SpaceAfter=No
 15	»	»	PUNCT	PU|@PU	_	11	punct	_	SpaceAfter=No
 16	.	.	PUNCT	PU|@PU	_	4	punct	_	_
 
