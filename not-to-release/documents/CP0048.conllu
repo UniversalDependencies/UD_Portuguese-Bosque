@@ -79,18 +79,18 @@
 # text = que jogos, que programas, que enciclopédias, que 'sites' na Internet se podem fazer que traduzam o título do 'workshop'?»
 # sent_id = CP48-3
 # source = CETEMPúblico n=48 sec=clt sem=97a
-1	que	que	DET	<interr>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Int	2	det	_	_
-2	jogos	jogo	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	18	nsubj	_	SpaceAfter=No
+1	que	que	DET	<interr>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Int	2	det	_	CxnElt=2:Interrogative-WHInfo-Direct.WHWord
+2	jogos	jogo	NOUN	<first-cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	18	nsubj	_	Cxn=Interrogative-WHInfo-Direct|CxnElt=2:Interrogative-WHInfo-Direct.Clause@p|SpaceAfter=No
 3	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-4	que	que	DET	<interr>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Int	5	det	_	_
-5	programas	programa	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	conj	_	SpaceAfter=No
+4	que	que	DET	<interr>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Int	5	det	_	CxnElt=5:Interrogative-WHInfo-Direct.WHWord
+5	programas	programa	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	conj	_	Cxn=Interrogative-WHInfo-Direct|CxnElt=5:Interrogative-WHInfo-Direct.Clause@p|SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	8	punct	_	_
-7	que	que	DET	<interr>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Int	8	det	_	_
-8	enciclopédias	enciclopédia	NOUN	<cjt>|<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	2	conj	_	SpaceAfter=No
+7	que	que	DET	<interr>|DET|F|P|@>N	Gender=Fem|Number=Plur|PronType=Int	8	det	_	CxnElt=8:Interrogative-WHInfo-Direct.WHWord
+8	enciclopédias	enciclopédia	NOUN	<cjt>|<np-idf>|N|F|P|@SUBJ>	Gender=Fem|Number=Plur	2	conj	_	Cxn=Interrogative-WHInfo-Direct|CxnElt=8:Interrogative-WHInfo-Direct.Clause@p|SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	12	punct	_	_
-10	que	que	DET	<interr>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Int	12	det	_	_
+10	que	que	DET	<interr>|DET|M|P|@>N	Gender=Masc|Number=Plur|PronType=Int	12	det	_	CxnElt=12:Interrogative-WHInfo-Direct.WHWord
 11	'	'	PUNCT	PU|@PU	_	12	punct	_	SpaceAfter=No
-12	sites	site	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	conj	_	SpaceAfter=No
+12	sites	site	NOUN	<cjt>|<np-idf>|N|M|P|@SUBJ>	Gender=Masc|Number=Plur	2	conj	_	Cxn=Interrogative-WHInfo-Direct|CxnElt=12:Interrogative-WHInfo-Direct.Clause@p|SpaceAfter=No
 13	'	'	PUNCT	PU|@PU	_	12	punct	_	_
 14-15	na	_	_	_	_	_	_	_	_
 14	em	em	ADP	<sam->|PRP|@N<	_	16	case	_	_
@@ -348,8 +348,8 @@
 1	Depois	depois	ADV	ADV|@ADVL>	_	4	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	1	punct	_	_
 3	poderá	poder	VERB	<aux>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-4	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	_
-5	explorações	exploração	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	_
+4	haver	haver	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	3	xcomp	_	Cxn=Existential-HavePred
+5	explorações	exploração	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	4	obj	_	CxnElt=4:Existential-HavePred.Pivot@f
 6	em	em	ADP	PRP|@<ADVL	_	7	case	_	_
 7	etapas	etapa	NOUN	<np-idf>|N|F|P|@P<	Gender=Fem|Number=Plur	4	obl	_	_
 8	sucessivas	sucessivo	ADJ	ADJ|F|P|@N<	Gender=Fem|Number=Plur	7	amod	_	_
@@ -400,9 +400,9 @@
 15	,	,	PUNCT	PU|@PU	_	20	punct	_	_
 16	depois	depois	ADV	ADV|@ADVL>	_	20	advmod	_	_
 17	se	se	SCONJ	KS|@SUB	_	18	mark	_	_
-18	resultar	resultar	VERB	<cjt>|<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	advcl	_	_
+18	resultar	resultar	VERB	<cjt>|<mv>|V|FUT|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	20	advcl	_	CxnElt=20:Conditional-NeutralEpistemic.Protasis@p
 19	material	material	NOUN	<np-idf>|N|M|S|@<SUBJ	Gender=Masc|Number=Sing	18	nsubj	_	_
-20	começar	começar	VERB	<first-cjt>|<aux>|V|INF|3S|@ICL-N<PRED	ExtPos=AUX|Number=Sing|Person=3|VerbForm=Inf	9	acl	_	_
+20	começar	começar	VERB	<first-cjt>|<aux>|V|INF|3S|@ICL-N<PRED	ExtPos=AUX|Number=Sing|Person=3|VerbForm=Inf	9	acl	_	Cxn=Conditional-NeutralEpistemic|CxnElt=20:Conditional-NeutralEpistemic.Apodosis@p
 21	a	a	SCONJ	PRP|@PRT-AUX<	_	22	mark	_	_
 22-23	incorporá-lo	_	_	_	_	_	_	_	_
 22	incorporá	incorporar	VERB	<mv>|V|INF|@ICL-AUX<	VerbForm=Inf	20	xcomp	_	_

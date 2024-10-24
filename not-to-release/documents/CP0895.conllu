@@ -68,7 +68,7 @@
 # text = Há, no seu modo de ser, como que uma espécie de timidez, que o leva a fazer fotografia não intrusiva, uma das maiores dificuldades do ofício.
 # sent_id = CP895-4
 # source = CETEMPúblico n=895 sec=clt sem=95b
-1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Cxn=Existential-HavePred|SpaceAfter=No
 2	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 3-4	no	_	_	_	_	_	_	_	_
 3	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
@@ -78,7 +78,7 @@
 7	de	de	ADP	PRP|@N<	_	8	case	_	_
 8	ser	ser	VERB	<mv>|V|INF|@ICL-P<	VerbForm=Inf	6	acl	_	SpaceAfter=No
 9	,	,	PUNCT	PU|@PU	_	6	punct	_	_
-10	como	como	ADV	ADV|@<ACC	_	1	obj	_	_
+10	como	como	ADV	ADV|@<ACC	_	1	obj	_	CxnElt=1:Existential-HavePred.Pivot@f
 11	que	que	SCONJ	KS|@A<	_	10	fixed	_	_
 12	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	espécie	espécie	NOUN	<meta>|<np-idf>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	10	nsubj	_	_
@@ -432,11 +432,11 @@
 1	Ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2	sabe	saber	VERB	<first-cjt>|<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
-4	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	8	nsubj	_	_
+4	que	que	PRON	<interr>|INDP|M|S|@SUBJ>	Gender=Masc|Number=Sing|PronType=Int	8	nsubj	_	CxnElt=8:Interrogative-WHInfo-Indirect.WHWord
 5	é	ser	AUX	<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
 6	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 7	«	«	PUNCT	PU|@PU	_	8	punct	_	SpaceAfter=No
-8	direito	direito	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	2	ccomp	_	_
+8	direito	direito	NOUN	<np-idf>|N|M|S|@<SC	Gender=Masc|Number=Sing	2	ccomp	_	Cxn=Interrogative-WHInfo-Indirect|CxnElt=8:Interrogative-WHInfo-Indirect.Clause@p
 9-10	à	_	_	_	_	_	_	_	_
 9	a	a	ADP	<sam->|PRP|@N<	_	11	case	_	_
 10	a	o	DET	<-sam>|<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
@@ -650,8 +650,8 @@
 34	vê	ver	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	conj	_	SpaceAfter=No
 35	,	,	PUNCT	PU|@PU	_	36	punct	_	_
 36	o	o	PRON	_	Gender=Masc|Number=Sing|PronType=Dem	27	conj	_	_
-37	que	que	PRON	<interr>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Int	39	obj	_	_
+37	que	que	PRON	<interr>|INDP|M|S|@ACC>	Gender=Masc|Number=Sing|PronType=Int	39	obj	_	CxnElt=39:Interrogative-WHInfo-Indirect.WHWord
 38	ele	ele	PRON	PERS|M|3S|NOM|@SUBJ>	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	39	nsubj	_	_
-39	prefere	preferir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	acl:relcl	_	SpaceAfter=No
+39	prefere	preferir	VERB	<cjt>|<mv>|V|PR|3S|IND|@FS-<ACC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	acl:relcl	_	Cxn=Interrogative-WHInfo-Indirect|CxnElt=39:Interrogative-WHInfo-Indirect.Clause@p|SpaceAfter=No
 40	.	.	PUNCT	PU|@PU	_	1	punct	_	_
 
