@@ -192,6 +192,7 @@ Data available since: UD v1.2
 License: CC BY-SA 4.0
 Genre: news
 Includes text: yes
+Parallel: no
 Lemmas: converted with corrections
 UPOS: converted with corrections
 XPOS: manual native
