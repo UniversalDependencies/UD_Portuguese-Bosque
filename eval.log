@@ -1,11 +1,15 @@
 Running the following version of UD tools:
-commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
+commit 26e6c87a2f518322d15901a351199b6be6569062
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri May 9 21:07:42 2025 +0200
+Date:   Fri Nov 7 15:39:58 2025 +0100
 Evaluating the following revision of UD_Portuguese-Bosque:
-commit 3e44a9fc81edcd5320628ee336adda58d3e56d52
+commit b985635abeabf806086a1ed58d507fcbe17cf8f1
+Merge: 5de7ac340 53bb7584b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Mon Nov 11 16:24:30 2024 +0100
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'pt_bosque'
+Language code (from CoNLL-U file name) = 'pt'
+Found the following data files: pt_bosque-ud-dev.conllu, pt_bosque-ud-test.conllu, pt_bosque-ud-train.conllu
 Size: counted 227827 of 227827 words (nodes).
 Size: min(0, log((N/1000)**2)) = 10.857173138023.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -19,97 +23,96 @@ Features: 146585 out of 227827 total words have one or more features.
 Features: source of annotation (from README) factor is 0.9.
 Universal relations: 35 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.9.
-Udapi:
-               TOTAL         88
-Udapi: found 88 bugs.
-Udapi: worst expected case (threshold) is one bug per 10 words. There are 227827 words.
 Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-dev.conllu
-[Line 62 Sent CF876-6 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Pelo menos' does not have the 'ExtPos' feature
-[Line 423 Sent CF878-4 Node 5]: [L3 Warning fixed-without-extpos] Fixed expression 'nem mesmo' does not have the 'ExtPos' feature
-[Line 887 Sent CF883-4 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Pelo menos' does not have the 'ExtPos' feature
-[Line 1153 Sent CF886-1 Node 33]: [L3 Warning fixed-without-extpos] Fixed expression 'bem como' does not have the 'ExtPos' feature
-[Line 1445 Sent CF889-5 Node 22]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
-[Line 1536 Sent CF890-4 Node 4]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 2770 Sent CF903-2 Node 12]: [L3 Warning fixed-without-extpos] Fixed expression 'em torno de' does not have the 'ExtPos' feature
-[Line 3939 Sent CF913-6 Node 25]: [L3 Warning fixed-without-extpos] Fixed expression 'como se' does not have the 'ExtPos' feature
-[Line 5581 Sent CF926-3 Node 4]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
-[Line 7785 Sent CF946-4 Node 4]: [L3 Syntax leaf-det] 'det' not expected to have children (4:aqueles:det --> 6:apreciam:acl)
-[Line 7919 Sent CF947-2 Node 12]: [L3 Warning fixed-without-extpos] Fixed expression 'em torno de' does not have the 'ExtPos' feature
+[Line 62 Sent CF876-6]: [L3 Warning fixed-without-extpos] Fixed expression 'Pelo menos' does not have the 'ExtPos' feature
+[Line 423 Sent CF878-4]: [L3 Warning fixed-without-extpos] Fixed expression 'nem mesmo' does not have the 'ExtPos' feature
+[Line 887 Sent CF883-4]: [L3 Warning fixed-without-extpos] Fixed expression 'Pelo menos' does not have the 'ExtPos' feature
+[Line 1153 Sent CF886-1]: [L3 Warning fixed-without-extpos] Fixed expression 'bem como' does not have the 'ExtPos' feature
+[Line 1314 Sent CF888-3]: [L3 Syntax too-many-objects] Multiple direct objects [4, 7] ('que', 'registro') under the predicate 'tem'.
+[Line 1445 Sent CF889-5]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
+[Line 1536 Sent CF890-4]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 2770 Sent CF903-2]: [L3 Warning fixed-without-extpos] Fixed expression 'em torno de' does not have the 'ExtPos' feature
+[Line 2884 Sent CF904-2]: [L3 Warning obl-should-be-nmod] The parent (node [17] 'Mundial') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 3631 Sent CF911-4]: [L3 Syntax too-many-objects] Multiple direct objects [13, 19] ('alegria', 'frustração') under the predicate 'trazendo'.
+[Line 3939 Sent CF913-6]: [L3 Warning fixed-without-extpos] Fixed expression 'como se' does not have the 'ExtPos' feature
+[Line 5581 Sent CF926-3]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
+[Line 7785 Sent CF946-4]: [L3 Syntax leaf-det] 'det' not expected to have children (4:aqueles:det --> 6:apreciam:acl)
 ...suppressing further errors regarding Warning
-[Line 8092 Sent CF950-2 Node 9]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'por'
-[Line 13242 Sent CP882-4 Node 16]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'de'
-[Line 14839 Sent CP891-2 Node 17]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
-[Line 14849 Sent CP891-2 Node 27]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN'
-[Line 21651 Sent CP925-2 Node 16]: [L3 Syntax leaf-det] 'det' not expected to have children (16:aqueles:det --> 18:cometeram:acl)
-[Line 26755 Sent CP952-3 Node 21]: [L3 Syntax leaf-det] 'det' not expected to have children (21:nenhum:det --> 24:altos:nmod)
-[Line 27211 Sent CP954-7 Node 3]: [L3 Syntax leaf-det] 'det' not expected to have children (3:todos:det --> 2:são:cop)
-[Line 27215 Sent CP954-7 Node 3]: [L3 Syntax leaf-det] 'det' not expected to have children (3:todos:det --> 6:intitulam:acl)
-[Line 27961 Sent CP962-1 Node 30]: [L3 Syntax leaf-det] 'det' not expected to have children (30:aqueles:det --> 33:figuras:nmod)
+[Line 8092 Sent CF950-2]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('por')
+[Line 13242 Sent CP882-4]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('de')
+[Line 14254 Sent CP887-4]: [L3 Syntax too-many-objects] Multiple direct objects [16, 19] ('pedido', 'comida') under the predicate 'querem'.
+[Line 14839 Sent CP891-2]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN' ('X')
+[Line 14849 Sent CP891-2]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN' ('VIII')
+[Line 20300 Sent CP918-3]: [L3 Syntax too-many-objects] Multiple direct objects [7, 9] ('conta', 'casos') under the predicate 'dão'.
+[Line 21651 Sent CP925-2]: [L3 Syntax leaf-det] 'det' not expected to have children (16:aqueles:det --> 18:cometeram:acl)
 ...suppressing further errors regarding Syntax
-Syntax errors: 16
-Warnings: 96
-*** FAILED *** with 16 errors
+Syntax errors: 21
+Warnings: 119
+*** FAILED *** with 21 errors
 Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-test.conllu
-[Line 1268 Sent CF766-10 Node 11]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
-[Line 1908 Sent CF773-4 Node 20]: [L3 Warning fixed-without-extpos] Fixed expression 'ou não' does not have the 'ExtPos' feature
-[Line 1993 Sent CF774-3 Node 18]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1992 Sent CF774-3 Node 17]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 2329 Sent CF778-2 Node 10]: [L3 Warning fixed-without-extpos] Fixed expression 'tudo o que' does not have the 'ExtPos' feature
-[Line 3094 Sent CF785-5 Node 10]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 4629 Sent CF798-4 Node 20]: [L3 Warning fixed-without-extpos] Fixed expression 'em favor de' does not have the 'ExtPos' feature
-[Line 5118 Sent CF804-1 Node 7]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 5433 Sent CF807-2 Node 4]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 5937 Sent CF811-1 Node 15]: [L3 Syntax leaf-det] 'det' not expected to have children (15:a:det --> 18:políticos:nmod)
-[Line 6332 Sent CF813-3 Node 10]: [L3 Warning fixed-without-extpos] Fixed expression 'a fim de que' does not have the 'ExtPos' feature
-[Line 6606 Sent CF817-2 Node 4]: [L3 Syntax rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' word 'The'
+[Line 1268 Sent CF766-10]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
+[Line 1713 Sent CF771-4]: [L3 Syntax too-many-objects] Multiple direct objects [14, 21] ('que', '%') under the predicate 'renderiam'.
+[Line 1908 Sent CF773-4]: [L3 Warning fixed-without-extpos] Fixed expression 'ou não' does not have the 'ExtPos' feature
+[Line 1993 Sent CF774-3]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1992 Sent CF774-3]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 2329 Sent CF778-2]: [L3 Warning fixed-without-extpos] Fixed expression 'tudo o que' does not have the 'ExtPos' feature
+[Line 3094 Sent CF785-5]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 4046 Sent CF795-1]: [L3 Warning obl-should-be-nmod] The parent (node [16] 'restante') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 4629 Sent CF798-4]: [L3 Warning fixed-without-extpos] Fixed expression 'em favor de' does not have the 'ExtPos' feature
+[Line 5118 Sent CF804-1]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 5433 Sent CF807-2]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 5937 Sent CF811-1]: [L3 Syntax leaf-det] 'det' not expected to have children (15:a:det --> 18:políticos:nmod)
+[Line 6089 Sent CF811-7]: [L3 Syntax too-many-objects] Multiple direct objects [6, 14] ('que', 'idéias') under the predicate 'transmitir'.
 ...suppressing further errors regarding Warning
-[Line 9534 Sent CF840-8 Node 27]: [L3 Syntax rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' word 'The'
-[Line 18895 Sent CP783-2 Node 3]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'apesar'
-[Line 19970 Sent CP790-3 Node 51]: [L3 Syntax leaf-det] 'det' not expected to have children (51:as:det --> 55:Descobrimentos:nmod)
-[Line 25206 Sent CP818-2 Node 10]: [L3 Syntax leaf-det] 'det' not expected to have children (10:poucos:det --> 12:ocuparam:acl)
-[Line 27742 Sent CP833-1 Node 7]: [L3 Syntax leaf-det] 'det' not expected to have children (7:as:det --> 10:central:nmod)
-Syntax errors: 7
-Warnings: 85
-*** FAILED *** with 7 errors
+[Line 6606 Sent CF817-2]: [L3 Syntax rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' ('The')
+[Line 9534 Sent CF840-8]: [L3 Syntax rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' ('The')
+[Line 18895 Sent CP783-2]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('apesar')
+[Line 19970 Sent CP790-3]: [L3 Syntax leaf-det] 'det' not expected to have children (51:as:det --> 55:Descobrimentos:nmod)
+[Line 24059 Sent CP812-2]: [L3 Syntax too-many-objects] Multiple direct objects [5, 7] ('animais', 'cobardia') under the predicate 'demonstra'.
+[Line 25206 Sent CP818-2]: [L3 Syntax leaf-det] 'det' not expected to have children (10:poucos:det --> 12:ocuparam:acl)
+[Line 27354 Sent CP831-6]: [L3 Syntax too-many-objects] Multiple direct objects [4, 9] ('uma', 'outra') under the predicate 'enviou'.
+...suppressing further errors regarding Syntax
+Syntax errors: 11
+Warnings: 102
+*** FAILED *** with 11 errors
 Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-train.conllu
-[Line 71 Sent CF1-5 Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
-[Line 912 Sent CF8-7 Node 14]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 1332 Sent CF13-3 Node 16]: [L3 Syntax rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' word 'O'
-[Line 1753 Sent CF17-5 Node 6]: [L3 Warning fixed-without-extpos] Fixed expression 'em favor de' does not have the 'ExtPos' feature
-[Line 2114 Sent CF22-5 Node 22]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 2537 Sent CF27-2 Node 21]: [L3 Warning fixed-without-extpos] Fixed expression 'nem mesmo' does not have the 'ExtPos' feature
-[Line 2844 Sent CF29-2 Node 6]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 3001 Sent CF29-9 Node 16]: [L3 Warning fixed-without-extpos] Fixed expression 'menor que' does not have the 'ExtPos' feature
-[Line 3134 Sent CF31-2 Node 36]: [L3 Warning fixed-without-extpos] Fixed expression 'só que' does not have the 'ExtPos' feature
-[Line 3412 Sent CF35-4 Node 5]: [L3 Warning fixed-without-extpos] Fixed expression '(034) 661-2458' does not have the 'ExtPos' feature
-[Line 3485 Sent CF35-7 Node 4]: [L3 Warning fixed-without-extpos] Fixed expression '(011) 263-4700' does not have the 'ExtPos' feature
-[Line 4689 Sent CF47-3 Node 29]: [L3 Syntax leaf-det] 'det' not expected to have children (29:o:det --> 31:ocorre:acl)
+[Line 71 Sent CF1-5]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
+[Line 912 Sent CF8-7]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 1181 Sent CF11-4]: [L3 Warning obl-should-be-nmod] The parent (node [2] 'top') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 1332 Sent CF13-3]: [L3 Syntax rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' ('O')
+[Line 1753 Sent CF17-5]: [L3 Warning fixed-without-extpos] Fixed expression 'em favor de' does not have the 'ExtPos' feature
+[Line 2052 Sent CF22-2]: [L3 Warning obl-should-be-nmod] The parent (node [16] 'baterista') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 2114 Sent CF22-5]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 2537 Sent CF27-2]: [L3 Warning fixed-without-extpos] Fixed expression 'nem mesmo' does not have the 'ExtPos' feature
+[Line 2594 Sent CF27-2]: [L3 Warning obl-should-be-nmod] The parent (node [67] 'decorrer') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 2844 Sent CF29-2]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 3001 Sent CF29-9]: [L3 Warning fixed-without-extpos] Fixed expression 'menor que' does not have the 'ExtPos' feature
 ...suppressing further errors regarding Warning
-[Line 13495 Sent CF131-4 Node 7]: [L3 Syntax leaf-det] 'det' not expected to have children (7:os:det --> 9:visados:acl)
-[Line 22152 Sent CF204-5 Node 19]: [L3 Syntax leaf-det] 'det' not expected to have children (19:demais:det --> 24:despolitização:nmod)
-[Line 27964 Sent CF259-5 Node 37]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'a'
-[Line 30094 Sent CF278-2 Node 11]: [L3 Syntax leaf-det] 'det' not expected to have children (11:nossa:det --> 16:tamanho:acl)
-[Line 37971 Sent CF353-2 Node 24]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'de'
-[Line 46126 Sent CF427-5 Node 1]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'Por'
-[Line 62922 Sent CF584-8 Node 12]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' word 'de'
-[Line 68294 Sent CF631-3 Node 7]: [L3 Syntax rel-upos-case] 'case' should not be 'PROPN' word 'Por'
+[Line 4689 Sent CF47-3]: [L3 Syntax leaf-det] 'det' not expected to have children (29:o:det --> 31:ocorre:acl)
+[Line 8392 Sent CF83-2]: [L3 Syntax too-many-objects] Multiple direct objects [62, 65] ('que', 'Receita') under the predicate 'procuraram'.
+[Line 13495 Sent CF131-4]: [L3 Syntax leaf-det] 'det' not expected to have children (7:os:det --> 9:visados:acl)
+[Line 21929 Sent CF202-4]: [L3 Syntax too-many-objects] Multiple direct objects [5, 10] ('que', 'mulher') under the predicate 'indica'.
+[Line 22152 Sent CF204-5]: [L3 Syntax leaf-det] 'det' not expected to have children (19:demais:det --> 24:despolitização:nmod)
+[Line 24144 Sent CF220-6]: [L3 Syntax too-many-objects] Multiple direct objects [7, 16] ('que', 'fundos') under the predicate 'reverterá'.
+[Line 27964 Sent CF259-5]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('a')
+[Line 30094 Sent CF278-2]: [L3 Syntax leaf-det] 'det' not expected to have children (11:nossa:det --> 16:tamanho:acl)
+[Line 37971 Sent CF353-2]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('de')
 ...suppressing further errors regarding Syntax
-Syntax errors: 55
-Warnings: 488
-*** FAILED *** with 55 errors
+Syntax errors: 75
+Warnings: 609
+*** FAILED *** with 75 errors
 Exit code: 1
 Validity: 0.01
-(weight=0.0769230769230769) * (score{features}=0.9) = 0.0692307692307692
-(weight=0.0769230769230769) * (score{genres}=0.0555555555555556) = 0.00427350427350427
-(weight=0.0769230769230769) * (score{lemmas}=0.9) = 0.0692307692307692
-(weight=0.256410256410256) * (score{size}=0.785868397151933) = 0.201504717218444
-(weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
-(weight=0.0769230769230769) * (score{tags}=0.9) = 0.0692307692307692
-(weight=0.307692307692308) * (score{udapi}=0.996137420059958) = 0.30650382155691
-(weight=0.0769230769230769) * (score{udeprels}=0.851351351351351) = 0.0654885654885655
-(TOTAL score=0.836744967511783) * (availability=1) * (validity=0.01) = 0.00836744967511783
+(weight=0.111111111111111) * (score{features}=0.9) = 0.1
+(weight=0.111111111111111) * (score{genres}=0.0555555555555556) = 0.00617283950617284
+(weight=0.111111111111111) * (score{lemmas}=0.9) = 0.1
+(weight=0.37037037037037) * (score{size}=0.785868397151933) = 0.291062369315531
+(weight=0.0740740740740741) * (score{split}=1) = 0.0740740740740741
+(weight=0.111111111111111) * (score{tags}=0.9) = 0.1
+(weight=0.111111111111111) * (score{udeprels}=0.851351351351351) = 0.0945945945945946
+(TOTAL score=0.765903877490372) * (availability=1) * (validity=0.01) = 0.00765903877490372
 STARS = 0
-UD_Portuguese-Bosque	0.00836744967511783	0
+UD_Portuguese-Bosque	0.00765903877490372	0
