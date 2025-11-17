@@ -43,10 +43,10 @@
 # text = Há uma pequena parcela, no entanto, que é catastrofista ao ponto de afirmar que Lula sequer conseguirá tomar posse.
 # sent_id = CF144-3
 # source = CETENFolha n=144 cad=Brasil sec=pol sem=94b
-1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+1	Há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Cxn=Existential-HavePred
 2	uma	um	DET	<arti>|ART|F|S|@>N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 3	pequena	pequeno	ADJ	ADJ|F|S|@>N	Gender=Fem|Number=Sing	4	amod	_	_
-4	parcela	parcela	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	SpaceAfter=No
+4	parcela	parcela	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	1	obj	_	CxnElt=1:Existential-HavePred.Pivot@f|SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	6	punct	_	_
 6-7	no	_	_	_	_	_	_	_	_
 6	em	em	ADP	<sam->|PRP|@N<	ExtPos=CCONJ	1	cc	_	_
@@ -87,8 +87,8 @@
 3	9	9	NUM	<card>|NUM|M|P|@>N	NumType=Card	4	nummod	_	SpaceAfter=No
 4	%	%	SYM	<np-def>|N|M|P|@P<	_	6	obl	_	SpaceAfter=No
 5	,	,	PUNCT	PU|@PU	_	4	punct	_	_
-6	haverá	haver	VERB	<mv>|<first-cjt>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-7	resistências	resistência	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	6	obj	_	_
+6	haverá	haver	VERB	<mv>|<first-cjt>|V|FUT|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	Cxn=Existential-HavePred
+7	resistências	resistência	NOUN	<np-idf>|N|F|P|@<ACC	Gender=Fem|Number=Plur	6	obj	_	CxnElt=6:Existential-HavePred.Pivot@f
 8	mas	mas	CCONJ	<co-fcl>|KC|@CO	_	9	cc	_	_
 9	não	não	ADV	<first-cjt>|ADV|@FS-STA	_	13	advmod	_	_
 10	a	a	ADP	PRP|@A<ARG	ExtPos=SCONJ	13	mark	_	_

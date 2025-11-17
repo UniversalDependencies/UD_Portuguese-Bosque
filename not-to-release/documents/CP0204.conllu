@@ -166,8 +166,8 @@
 # source = CETEMPúblico n=204 sec=clt sem=93a
 1	«	«	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
 2	Não	não	ADV	_	Polarity=Neg	3	advmod	_	_
-3	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	nada	nada	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	3	obj	_	_
+3	há	haver	VERB	<mv>|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Cxn=Existential-HavePred
+4	nada	nada	PRON	<quant>|INDP|M|S|@<ACC	Gender=Masc|Number=Sing|PronType=Ind	3	obj	_	CxnElt=3:Existential-HavePred.Pivot@f
 5-6	nela	_	_	_	_	_	_	_	_
 5	em	em	ADP	<sam->|PRP|@<ADVL	_	6	case	_	_
 6	ela	ela	PRON	<-sam>|PERS|F|3S|PIV|@P<	Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
@@ -185,8 +185,8 @@
 # source = CETEMPúblico n=204 sec=clt sem=93a
 1	Nem	nem	ADP	PRP|@ADVL>	_	2	case	_	_
 2	sequer	sequer	NOUN	N|M|S|@P<	Gender=Masc|Number=Sing	3	obl	_	_
-3	havia	haver	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
-4	proibição	proibição	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	_
+3	havia	haver	VERB	<mv>|V|IMPF|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	Cxn=Existential-HavePred
+4	proibição	proibição	NOUN	<np-idf>|N|F|S|@<ACC	Gender=Fem|Number=Sing	3	obj	_	CxnElt=3:Existential-HavePred.Pivot@f
 5	de	de	ADP	PRP|@N<	_	6	case	_	_
 6	partidos	partido	NOUN	<np-idf>|N|M|P|@P<	Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No
 7	»	»	PUNCT	PU|@PU	_	3	punct	_	SpaceAfter=No
@@ -195,13 +195,13 @@
 # text = Como é que, então, aconteceu a ditadura?
 # sent_id = CP204-9
 # source = CETEMPúblico n=204 sec=clt sem=93a
-1	Como	como	ADV	<interr>|ADV|@ADVL>	_	7	advmod	_	_
+1	Como	como	ADV	<interr>|ADV|@ADVL>	_	7	advmod	_	CxnElt=7:Interrogative-WHInfo-Direct.WHWord
 2	é	ser	AUX	PRP|@ADVL>	ExtPos=INTJ	7	discourse	_	_
 3	que	que	SCONJ	N|M|S|@P<	_	2	fixed	_	SpaceAfter=No
 4	,	,	PUNCT	PU|@PU	_	3	punct	_	_
 5	então	então	ADV	<kc>|ADV|@ADVL>	_	7	advmod	_	SpaceAfter=No
 6	,	,	PUNCT	PU|@PU	_	5	punct	_	_
-7	aconteceu	acontecer	VERB	<mv>|V|PS|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	aconteceu	acontecer	VERB	<mv>|V|PS|3S|IND|@FS-QUE	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	Cxn=Interrogative-WHInfo-Direct|CxnElt=7:Interrogative-WHInfo-Direct.Clause@p
 8	a	o	DET	<artd>|ART|F|S|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
 9	ditadura	ditadura	NOUN	<np-def>|N|F|S|@<SUBJ	Gender=Fem|Number=Sing	7	nsubj	_	SpaceAfter=No
 10	?	?	PUNCT	PU|@PU	_	7	punct	_	_
@@ -334,7 +334,7 @@
 27	não	não	ADV	ADV|@ADVL>	Polarity=Neg	30	advmod	_	_
 28	fosse	ser	AUX	<mv>|V|IMPF|3S|SUBJ|@FS-ADVL>	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	30	cop	_	_
 29	o	o	DET	<artd>|ART|M|S|@>N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
-30	início	início	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	39	advcl	_	_
+30	início	início	NOUN	<np-def>|N|M|S|@<SC	Gender=Masc|Number=Sing	39	advcl	_	CxnElt=39:Conditional-NegativeEpistemic.Protasis@p
 31-32	da	_	_	_	_	_	_	_	_
 31	de	de	ADP	<sam->|PRP|@N<	_	33	case	_	_
 32	a	o	DET	<-sam>|<artd>|ART|@>N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
@@ -344,7 +344,7 @@
 36	,	,	PUNCT	PU|@PU	_	39	punct	_	_
 37	teria	ter	AUX	<aux>|V|COND|3S|@FS-N<PRED	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin	39	aux	_	_
 38	mesmo	mesmo	ADV	<quant>|ADV|@ADVL>	_	39	advmod	_	_
-39	aparecido	aparecer	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	13	acl:relcl	_	_
+39	aparecido	aparecer	VERB	<mv>|V|PCP|@ICL-AUX<	VerbForm=Part	13	acl:relcl	_	Cxn=Conditional-NegativeEpistemic|CxnElt=39:Conditional-NegativeEpistemic.Apodosis@p
 40	como	como	ADP	<com>|PRP|@<ADVL	_	41	case	_	_
 41	alternativa	alternativa	NOUN	<np-idf>|N|F|S|@P<	Gender=Fem|Number=Sing	39	obl	_	_
 42-43	à	_	_	_	_	_	_	_	_
