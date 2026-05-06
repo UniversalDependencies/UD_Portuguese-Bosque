@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_Portuguese-Bosque:
-commit b985635abeabf806086a1ed58d507fcbe17cf8f1
-Merge: 5de7ac340 53bb7584b
+commit 03ea3f8a37b10794a6290e48472c896898457d53
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Tue Nov 11 20:30:24 2025 +0100
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'pt_bosque'
 Language code (from CoNLL-U file name) = 'pt'
@@ -25,85 +25,118 @@ Universal relations: 35 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.9.
 Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-dev.conllu
-[Line 62 Sent CF876-6]: [L3 Warning fixed-without-extpos] Fixed expression 'Pelo menos' does not have the 'ExtPos' feature
-[Line 423 Sent CF878-4]: [L3 Warning fixed-without-extpos] Fixed expression 'nem mesmo' does not have the 'ExtPos' feature
-[Line 887 Sent CF883-4]: [L3 Warning fixed-without-extpos] Fixed expression 'Pelo menos' does not have the 'ExtPos' feature
-[Line 1153 Sent CF886-1]: [L3 Warning fixed-without-extpos] Fixed expression 'bem como' does not have the 'ExtPos' feature
-[Line 1314 Sent CF888-3]: [L3 Syntax too-many-objects] Multiple direct objects [4, 7] ('que', 'registro') under the predicate 'tem'.
-[Line 1445 Sent CF889-5]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
-[Line 1536 Sent CF890-4]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 2770 Sent CF903-2]: [L3 Warning fixed-without-extpos] Fixed expression 'em torno de' does not have the 'ExtPos' feature
-[Line 2884 Sent CF904-2]: [L3 Warning obl-should-be-nmod] The parent (node [17] 'Mundial') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 3631 Sent CF911-4]: [L3 Syntax too-many-objects] Multiple direct objects [13, 19] ('alegria', 'frustração') under the predicate 'trazendo'.
-[Line 3939 Sent CF913-6]: [L3 Warning fixed-without-extpos] Fixed expression 'como se' does not have the 'ExtPos' feature
-[Line 5581 Sent CF926-3]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
-[Line 7785 Sent CF946-4]: [L3 Syntax leaf-det] 'det' not expected to have children (4:aqueles:det --> 6:apreciam:acl)
-...suppressing further errors regarding Warning
-[Line 8092 Sent CF950-2]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('por')
-[Line 13242 Sent CP882-4]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('de')
-[Line 14254 Sent CP887-4]: [L3 Syntax too-many-objects] Multiple direct objects [16, 19] ('pedido', 'comida') under the predicate 'querem'.
-[Line 14839 Sent CP891-2]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN' ('X')
-[Line 14849 Sent CP891-2]: [L3 Syntax rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN' ('VIII')
-[Line 20300 Sent CP918-3]: [L3 Syntax too-many-objects] Multiple direct objects [7, 9] ('conta', 'casos') under the predicate 'dão'.
-[Line 21651 Sent CP925-2]: [L3 Syntax leaf-det] 'det' not expected to have children (16:aqueles:det --> 18:cometeram:acl)
-...suppressing further errors regarding Syntax
-Syntax errors: 21
-Warnings: 119
-*** FAILED *** with 21 errors
+[Line 62 Sent CF876-6]: [L3 WARNING fixed-without-extpos] Fixed expression 'Pelo menos' does not have the 'ExtPos' feature
+[Line 423 Sent CF878-4]: [L3 WARNING fixed-without-extpos] Fixed expression 'nem mesmo' does not have the 'ExtPos' feature
+[Line 887 Sent CF883-4]: [L3 WARNING fixed-without-extpos] Fixed expression 'Pelo menos' does not have the 'ExtPos' feature
+[Line 1153 Sent CF886-1]: [L3 WARNING fixed-without-extpos] Fixed expression 'bem como' does not have the 'ExtPos' feature
+[Line 1314 Sent CF888-3]: [L3 SYNTAX too-many-objects] Multiple direct objects [4, 7] ('que', 'registro') under the predicate 'tem'.
+[Line 1445 Sent CF889-5]: [L3 WARNING fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
+[Line 1536 Sent CF890-4]: [L3 WARNING fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 2770 Sent CF903-2]: [L3 WARNING fixed-without-extpos] Fixed expression 'em torno de' does not have the 'ExtPos' feature
+[Line 2884 Sent CF904-2]: [L3 SYNTAX obl-should-be-nmod] The parent (node [17] 'Mundial') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 3631 Sent CF911-4]: [L3 SYNTAX too-many-objects] Multiple direct objects [13, 19] ('alegria', 'frustração') under the predicate 'trazendo'.
+[Line 3939 Sent CF913-6]: [L3 WARNING fixed-without-extpos] Fixed expression 'como se' does not have the 'ExtPos' feature
+[Line 5581 Sent CF926-3]: [L3 WARNING fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
+[Line 7785 Sent CF946-4]: [L3 SYNTAX leaf-det] 'det' not expected to have children (4:aqueles:det --> 6:apreciam:acl)
+[Line 7919 Sent CF947-2]: [L3 WARNING fixed-without-extpos] Fixed expression 'em torno de' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 8092 Sent CF950-2]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('por')
+[Line 8985 Sent CF958-12]: [L3 WARNING pron-det-without-prontype] The word 'muitas' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 9054 Sent CF958-16]: [L3 WARNING pron-det-without-prontype] The word 'disso' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 9934 Sent CF969-2]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 9933 Sent CF969-2]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 10200 Sent CF971-4]: [L3 WARNING pron-det-without-prontype] The word 'cada' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 12344 Sent CF996-4]: [L3 SYNTAX obl-should-be-nmod] The parent (node [10] 'vida') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 13242 Sent CP882-4]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('de')
+[Line 13523 Sent CP883-6]: [L3 SYNTAX obl-should-be-nmod] The parent (node [11] 'montante') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 13787 Sent CP884-1]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 13786 Sent CP884-1]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 14254 Sent CP887-4]: [L3 SYNTAX too-many-objects] Multiple direct objects [16, 19] ('pedido', 'comida') under the predicate 'querem'.
+[Line 14807 Sent CP890-6]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 14806 Sent CP890-6]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 14839 Sent CP891-2]: [L3 SYNTAX rel-upos-nummod] 'nummod' should be 'NUM' but it is 'PROPN' ('X')
+...suppressing further messages regarding ERROR/SYNTAX
+[Line 16280 Sent CP896-1]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+...suppressing further messages regarding WARNING/MORPHO
+Warnings: 104
+SYNTAX errors: 36
+*** FAILED *** with 36 errors
 Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-test.conllu
-[Line 1268 Sent CF766-10]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
-[Line 1713 Sent CF771-4]: [L3 Syntax too-many-objects] Multiple direct objects [14, 21] ('que', '%') under the predicate 'renderiam'.
-[Line 1908 Sent CF773-4]: [L3 Warning fixed-without-extpos] Fixed expression 'ou não' does not have the 'ExtPos' feature
-[Line 1993 Sent CF774-3]: [L3 Warning flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 1992 Sent CF774-3]: [L3 Warning flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
-[Line 2329 Sent CF778-2]: [L3 Warning fixed-without-extpos] Fixed expression 'tudo o que' does not have the 'ExtPos' feature
-[Line 3094 Sent CF785-5]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 4046 Sent CF795-1]: [L3 Warning obl-should-be-nmod] The parent (node [16] 'restante') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 4629 Sent CF798-4]: [L3 Warning fixed-without-extpos] Fixed expression 'em favor de' does not have the 'ExtPos' feature
-[Line 5118 Sent CF804-1]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 5433 Sent CF807-2]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 5937 Sent CF811-1]: [L3 Syntax leaf-det] 'det' not expected to have children (15:a:det --> 18:políticos:nmod)
-[Line 6089 Sent CF811-7]: [L3 Syntax too-many-objects] Multiple direct objects [6, 14] ('que', 'idéias') under the predicate 'transmitir'.
-...suppressing further errors regarding Warning
-[Line 6606 Sent CF817-2]: [L3 Syntax rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' ('The')
-[Line 9534 Sent CF840-8]: [L3 Syntax rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' ('The')
-[Line 18895 Sent CP783-2]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('apesar')
-[Line 19970 Sent CP790-3]: [L3 Syntax leaf-det] 'det' not expected to have children (51:as:det --> 55:Descobrimentos:nmod)
-[Line 24059 Sent CP812-2]: [L3 Syntax too-many-objects] Multiple direct objects [5, 7] ('animais', 'cobardia') under the predicate 'demonstra'.
-[Line 25206 Sent CP818-2]: [L3 Syntax leaf-det] 'det' not expected to have children (10:poucos:det --> 12:ocuparam:acl)
-[Line 27354 Sent CP831-6]: [L3 Syntax too-many-objects] Multiple direct objects [4, 9] ('uma', 'outra') under the predicate 'enviou'.
-...suppressing further errors regarding Syntax
-Syntax errors: 11
-Warnings: 102
-*** FAILED *** with 11 errors
+[Line 1268 Sent CF766-10]: [L3 WARNING fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
+[Line 1713 Sent CF771-4]: [L3 SYNTAX too-many-objects] Multiple direct objects [14, 21] ('que', '%') under the predicate 'renderiam'.
+[Line 1908 Sent CF773-4]: [L3 WARNING fixed-without-extpos] Fixed expression 'ou não' does not have the 'ExtPos' feature
+[Line 1993 Sent CF774-3]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 1992 Sent CF774-3]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 2329 Sent CF778-2]: [L3 WARNING fixed-without-extpos] Fixed expression 'tudo o que' does not have the 'ExtPos' feature
+[Line 3094 Sent CF785-5]: [L3 WARNING fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 4046 Sent CF795-1]: [L3 SYNTAX obl-should-be-nmod] The parent (node [16] 'restante') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 4629 Sent CF798-4]: [L3 WARNING fixed-without-extpos] Fixed expression 'em favor de' does not have the 'ExtPos' feature
+[Line 5118 Sent CF804-1]: [L3 WARNING fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 5433 Sent CF807-2]: [L3 WARNING fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 5937 Sent CF811-1]: [L3 SYNTAX leaf-det] 'det' not expected to have children (15:a:det --> 18:políticos:nmod)
+[Line 6089 Sent CF811-7]: [L3 SYNTAX too-many-objects] Multiple direct objects [6, 14] ('que', 'idéias') under the predicate 'transmitir'.
+[Line 6332 Sent CF813-3]: [L3 WARNING fixed-without-extpos] Fixed expression 'a fim de que' does not have the 'ExtPos' feature
+[Line 6606 Sent CF817-2]: [L3 SYNTAX rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' ('The')
+[Line 7055 Sent CF822-5]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 7054 Sent CF822-5]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 7788 Sent CF829-3]: [L3 WARNING fixed-without-extpos] Fixed expression 'a favor' does not have the 'ExtPos' feature
+[Line 8593 Sent CF834-8]: [L3 WARNING fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 9534 Sent CF840-8]: [L3 WARNING pron-det-without-prontype] The word 'The' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 9534 Sent CF840-8]: [L3 SYNTAX rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' ('The')
+[Line 9647 Sent CF842-1]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 9646 Sent CF842-1]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 9869 Sent CF844-3]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 9868 Sent CF844-3]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 9870 Sent CF844-3]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+...suppressing further messages regarding WARNING/MORPHO
+[Line 13536 Sent CP753-2]: [L3 SYNTAX obl-should-be-nmod] The parent (node [30] 'necessário') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 18895 Sent CP783-2]: [L3 SYNTAX rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('apesar')
+[Line 19970 Sent CP790-3]: [L3 SYNTAX leaf-det] 'det' not expected to have children (51:as:det --> 55:Descobrimentos:nmod)
+[Line 20571 Sent CP794-3]: [L3 SYNTAX obl-should-be-nmod] The parent (node [9] 'sobreviventes') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+...suppressing further messages regarding ERROR/SYNTAX
+Warnings: 92
+SYNTAX errors: 19
+*** FAILED *** with 19 errors
 Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang pt --max-err=10 UD_Portuguese-Bosque/pt_bosque-ud-train.conllu
-[Line 71 Sent CF1-5]: [L3 Warning fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
-[Line 912 Sent CF8-7]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 1181 Sent CF11-4]: [L3 Warning obl-should-be-nmod] The parent (node [2] 'top') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1332 Sent CF13-3]: [L3 Syntax rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' ('O')
-[Line 1753 Sent CF17-5]: [L3 Warning fixed-without-extpos] Fixed expression 'em favor de' does not have the 'ExtPos' feature
-[Line 2052 Sent CF22-2]: [L3 Warning obl-should-be-nmod] The parent (node [16] 'baterista') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 2114 Sent CF22-5]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 2537 Sent CF27-2]: [L3 Warning fixed-without-extpos] Fixed expression 'nem mesmo' does not have the 'ExtPos' feature
-[Line 2594 Sent CF27-2]: [L3 Warning obl-should-be-nmod] The parent (node [67] 'decorrer') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 2844 Sent CF29-2]: [L3 Warning fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
-[Line 3001 Sent CF29-9]: [L3 Warning fixed-without-extpos] Fixed expression 'menor que' does not have the 'ExtPos' feature
-...suppressing further errors regarding Warning
-[Line 4689 Sent CF47-3]: [L3 Syntax leaf-det] 'det' not expected to have children (29:o:det --> 31:ocorre:acl)
-[Line 8392 Sent CF83-2]: [L3 Syntax too-many-objects] Multiple direct objects [62, 65] ('que', 'Receita') under the predicate 'procuraram'.
-[Line 13495 Sent CF131-4]: [L3 Syntax leaf-det] 'det' not expected to have children (7:os:det --> 9:visados:acl)
-[Line 21929 Sent CF202-4]: [L3 Syntax too-many-objects] Multiple direct objects [5, 10] ('que', 'mulher') under the predicate 'indica'.
-[Line 22152 Sent CF204-5]: [L3 Syntax leaf-det] 'det' not expected to have children (19:demais:det --> 24:despolitização:nmod)
-[Line 24144 Sent CF220-6]: [L3 Syntax too-many-objects] Multiple direct objects [7, 16] ('que', 'fundos') under the predicate 'reverterá'.
-[Line 27964 Sent CF259-5]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('a')
-[Line 30094 Sent CF278-2]: [L3 Syntax leaf-det] 'det' not expected to have children (11:nossa:det --> 16:tamanho:acl)
-[Line 37971 Sent CF353-2]: [L3 Syntax rel-upos-advmod] 'advmod' should be 'ADV' but it is 'ADP' ('de')
-...suppressing further errors regarding Syntax
-Syntax errors: 75
-Warnings: 609
-*** FAILED *** with 75 errors
+[Line 71 Sent CF1-5]: [L3 WARNING fixed-without-extpos] Fixed expression 'de o que' does not have the 'ExtPos' feature
+[Line 912 Sent CF8-7]: [L3 WARNING fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 1181 Sent CF11-4]: [L3 SYNTAX obl-should-be-nmod] The parent (node [2] 'top') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 1332 Sent CF13-3]: [L3 SYNTAX rel-upos-det] 'det' should be 'DET' or 'PRON' but it is 'PROPN' ('O')
+[Line 1753 Sent CF17-5]: [L3 WARNING fixed-without-extpos] Fixed expression 'em favor de' does not have the 'ExtPos' feature
+[Line 2052 Sent CF22-2]: [L3 SYNTAX obl-should-be-nmod] The parent (node [16] 'baterista') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 2114 Sent CF22-5]: [L3 WARNING fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 2537 Sent CF27-2]: [L3 WARNING fixed-without-extpos] Fixed expression 'nem mesmo' does not have the 'ExtPos' feature
+[Line 2594 Sent CF27-2]: [L3 SYNTAX obl-should-be-nmod] The parent (node [67] 'decorrer') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 2844 Sent CF29-2]: [L3 WARNING fixed-without-extpos] Fixed expression 'mais de' does not have the 'ExtPos' feature
+[Line 3001 Sent CF29-9]: [L3 WARNING fixed-without-extpos] Fixed expression 'menor que' does not have the 'ExtPos' feature
+[Line 3134 Sent CF31-2]: [L3 WARNING fixed-without-extpos] Fixed expression 'só que' does not have the 'ExtPos' feature
+[Line 3412 Sent CF35-4]: [L3 WARNING fixed-without-extpos] Fixed expression '(034) 661-2458' does not have the 'ExtPos' feature
+[Line 3485 Sent CF35-7]: [L3 WARNING fixed-without-extpos] Fixed expression '(011) 263-4700' does not have the 'ExtPos' feature
+[Line 4689 Sent CF47-3]: [L3 SYNTAX leaf-det] 'det' not expected to have children (29:o:det --> 31:ocorre:acl)
+[Line 5395 Sent CF54-3]: [L3 SYNTAX obl-should-be-nmod] The parent (node [10] 'iniciativa') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 7925 Sent CF80-2]: [L3 SYNTAX obl-should-be-nmod] The parent (node [36] 'remanescentes') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 8191 Sent CF81-11]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 8190 Sent CF81-11]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 8212 Sent CF82-1]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 8211 Sent CF82-1]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 8253 Sent CF82-2]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 8252 Sent CF82-2]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 8392 Sent CF83-2]: [L3 SYNTAX too-many-objects] Multiple direct objects [62, 65] ('que', 'Receita') under the predicate 'procuraram'.
+[Line 8509 Sent CF85-5]: [L3 SYNTAX obl-should-be-nmod] The parent (node [19] 'noite') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+[Line 9747 Sent CF97-4]: [L3 WARNING pron-det-without-prontype] The word 'cada' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 10696 Sent CF106-4]: [L3 SYNTAX obl-should-be-nmod] The parent (node [12] 'fotos') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
+...suppressing further messages regarding ERROR/SYNTAX
+[Line 14444 Sent CF139-2]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 14443 Sent CF139-2]: [L3 WARNING flat-foreign-upos-feats] The parent of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+[Line 15223 Sent CF147-1]: [L3 WARNING flat-foreign-upos-feats] The child of a flat:foreign relation should have UPOS X and Foreign=Yes (but no other features).
+...suppressing further messages regarding WARNING/MORPHO
+Warnings: 512
+SYNTAX errors: 171
+*** FAILED *** with 171 errors
 Exit code: 1
 Validity: 0.01
 (weight=0.111111111111111) * (score{features}=0.9) = 0.1
